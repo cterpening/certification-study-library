@@ -3,6 +3,244 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mb310-tags",
+      "title": "Financial tags",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected feature enablement, 20-per-entity, procurement version, value types, fixed-list entry validation and ordinary-list nonvalidation sections read. Current fixed-list exception controls over generic no-validation wording. No full feature matrix audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-dimensions",
+      "title": "Financial dimensions and tags",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected dimension service deprecation and scope sections read in English. Optional DMF Ledger import service, not financial dimensions, is deprecated September 11 in 10.0.49; Customer/Vendor/Bank and derived-dimension scenarios excluded. Full dimension setup not audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-fx",
+      "title": "Foreign currency revaluation for General ledger",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Main setup, module exclusion, rate versus balance dates, preview/batch distinction and GL delta versus AR/AP reversal algorithm read. Full historical example tables and reversal options not audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-settlement",
+      "title": "Ledger settlements",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-settlements",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected realized account settings, AR/AP recommendation, reversal and unrealized-follow-up sections read; full year-end awareness and settlement matrices not audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-consolidation",
+      "title": "Financial consolidations and currency translation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-consolidations-currency-translation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected currency translation/revaluation and consolidation-company settings sections read. Full ownership/tax/financial-reporting variants not audited; original elimination exercise is a simplified accounting reconciliation. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-matching",
+      "title": "Accounts payable invoice matching",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Main matching definitions, net unit formula, charges/discounts, amount/percent currency and selected receipts sections read. Detailed product example tables not copied; original simplified exercise checked locally. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-bank-rules",
+      "title": "Bank reconciliation matching rules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected action/setup and default-first-match/manual-ambiguity requirement read; full action-specific rule matrices not audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-bank-process",
+      "title": "Advanced bank reconciliation process",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected Modern feature distinction, import per-account failure and reconcile-after-import scope read. Full ER/configuration and payment-journal procedures not audited or executed. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-netting",
+      "title": "Net customer and vendor balances",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Main journal/agreement, manual/automatic netting, ordering before payment journals, exclusions, reversal and intercompany prerequisites read. Intercompany voucher table not copied into guide or executed. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-deferrals",
+      "title": "Revenue and expense deferrals",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected Equal per period, partial-period prorating, posting method, credit reversal and automatic journal posting parameters read. Full account/default hierarchy and event-template matrices not audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-deferral-schedules",
+      "title": "Deferral schedules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Main recognition cutoff, processing, posted-history and schedule modification sections read. Full termination/event-based options not audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-budget",
+      "title": "Budget control overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Selected formula, document scope, model/rule/account/group configuration, two activation controls, startup/midyear history and 10.0.49 accounting-date feature sections read. Full formula-feature matrices and localizations not audited. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-budget-report",
+      "title": "Budget control statistics versus budget analysis",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-statistics-and-budget-analysis-report",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Complete main report comparison read, including draft versus posted scope and exchange-rate distinction. Guide does not infer a universal equality between reports. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-derived",
+      "title": "Derived books",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/derived-books",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Complete main derived-book overview read; selected transaction types and independent intervals distinction. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-derived-posting",
+      "title": "Post with derived books",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Complete main article read; copied depreciation is not independent recalculation and customer/vendor/tax are primary-only. Feature-specific splits not promoted as unconditional behavior. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-tags-blog",
+      "title": "Financial tags: flexible reporting without dimensions overhead",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/04/26/financial-tags-flexible-reporting-and-analytics-capabilities-without-the-overhead-of-dimensions/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Complete main April 26, 2023 article read. Accept design rationale and original decision exercise, qualify original-release/future-plan claims with current tag docs. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb310-release-plans",
+      "title": "Historical Dynamics 365 release plans",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "September 28 MB-310 deep review: Complete short transition notice read; new releases moved from September, historical plans remain available. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mb230-arc",
       "title": "Modern automatic record creation",
       "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records",
@@ -7718,11 +7956,12 @@
       "authority_class": 2,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "MB-330"
+        "MB-330",
+        "MB-310"
       ],
-      "notes": "September 27 MB-330 deep review: Sameer Verma, September 23, 2026. Relevant SCM/roadmap sections read. Accept a paper supplier-delay impact/approval exercise with preview/future boundaries; no demonstration or deployment tested. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+      "notes": "September 27 MB-330 deep review: Sameer Verma, September 23, 2026. Relevant SCM/roadmap sections read. Accept a paper supplier-delay impact/approval exercise with preview/future boundaries; no demonstration or deployment tested. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Main Finance and roadmap framing read, plus surrounding ERP portfolio text; only Finance exception-evidence worksheet accepted here. Article mixes available and planned through March 2027; no blanket GA or new exam-scope claim. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb330-mobile-blog",
@@ -28729,9 +28968,10 @@
         "MS-102",
         "MS-700",
         "MS-721",
-        "MB-230"
+        "MB-230",
+        "MB-310"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Public shell only. Signed-in schedule, eligibility and duration unverified. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Public login shell only; session eligibility/schedule requires sign-in and was not verified. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 MB-230 deep review: Partner landing/login shell only; current course entitlement/event duration not reverified. See docs/research/2026-09-28-mb-230-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Public shell only. Signed-in schedule, eligibility and duration unverified. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Public login shell only; session eligibility/schedule requires sign-in and was not verified. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 MB-230 deep review: Partner landing/login shell only; current course entitlement/event duration not reverified. See docs/research/2026-09-28-mb-230-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Login/client shell only; no signed-in event or exact schedule verified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -31592,46 +31832,200 @@
       "id": "mb-230-partner-skilling-hub", "title": "Microsoft Partner Skilling Hub", "url": "https://www.skilling-hub.com/en-US", "publisher": "Microsoft Partner Skilling Hub", "authority_class": 2, "source_type": "official-training", "access_model": "partner-restricted", "last_checked": "2026-09-01", "supported_exams": ["MB-230"], "notes": "Partner catalog requires eligible-partner sign-in to confirm the current event, exact published start/end times, seat availability and prerequisites; use the four-day official-course pattern only as a planning estimate."
     },
     {
-      "id": "mb-310-blueprint", "title": "Study guide for Exam MB-310: Microsoft Dynamics 365 Finance Functional Consultant", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Authoritative five-domain blueprint: skills measured as of August 14, 2026; no future update announced. The change log removes cost management and adds budget planning among major revisions."
+      "id": "mb-310-blueprint",
+      "title": "Study guide for Exam MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Authoritative five-domain blueprint: skills measured as of August 14, 2026; no future update announced. The change log removes cost management and adds budget planning among major revisions. September 28 MB-310 deep review: All 96 published objectives and current August 14 baseline read; prior hand-authored 89-row paraphrase/aggregation archived before canonical extraction. No newly announced baseline inferred. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-credential", "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Active intermediate credential; 100-minute exam in English and Japanese, free Practice Assessment, five official paths and no announced retirement."
+      "id": "mb-310-credential",
+      "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Active intermediate credential; 100-minute exam in English and Japanese, free Practice Assessment, five official paths and no announced retirement. September 28 MB-310 deep review: Main lifecycle metadata read: active, 100 minutes, English/Japanese, 12-month renewal; broad audience topics not substituted for blueprint. No booking or assessment execution. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-path-financial", "title": "Set up and configure financial management", "url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Twenty hours 23 minutes across 16 modules on the accounting foundation, journals, currencies, cash/bank, tax and periodic processes."
+      "id": "mb-310-path-financial",
+      "title": "Set up and configure financial management",
+      "url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Twenty hours 23 minutes across 16 modules on the accounting foundation, journals, currencies, cash/bank, tax and periodic processes. September 28 MB-310 deep review: Complete public overview and module titles/descriptions read; count 16. No aggregate runtime visible; no linked units, quiz or labs executed. Adjacent topics explicitly qualified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-path-receivables", "title": "Manage accounts receivable", "url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Ten hours 12 minutes across eight modules on receivables, credit, collections, subscription billing and recognition; includes some cost-management-adjacent material removed from the August blueprint."
+      "id": "mb-310-path-receivables",
+      "title": "Manage accounts receivable",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Ten hours 12 minutes across eight modules on receivables, credit, collections, subscription billing and recognition; includes some cost-management-adjacent material removed from the August blueprint. September 28 MB-310 deep review: Complete public overview and module titles/descriptions read; count 8. No aggregate runtime visible; no linked units, quiz or labs executed. Adjacent topics explicitly qualified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-path-payables", "title": "Manage accounts payable and expenses", "url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Nine hours 56 minutes across six modules; the official syllabus includes Project Operations expense integration as adjacent depth."
+      "id": "mb-310-path-payables",
+      "title": "Manage accounts payable and expenses",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Nine hours 56 minutes across six modules; the official syllabus includes Project Operations expense integration as adjacent depth. September 28 MB-310 deep review: Complete public overview and module titles/descriptions read; count 6. No aggregate runtime visible; no linked units, quiz or labs executed. Adjacent topics explicitly qualified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-path-budgeting", "title": "Perform budgeting and forecasting", "url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Three hours three minutes on basic budgeting, budget control and budget planning."
+      "id": "mb-310-path-budgeting",
+      "title": "Perform budgeting and forecasting",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Three hours three minutes on basic budgeting, budget control and budget planning. September 28 MB-310 deep review: Complete public overview and module titles/descriptions read; count 3. No aggregate runtime visible; no linked units, quiz or labs executed. Adjacent topics explicitly qualified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-path-assets", "title": "Administer fixed assets", "url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Four hours 56 minutes on asset configuration, books, depreciation and lifecycle transactions."
+      "id": "mb-310-path-assets",
+      "title": "Administer fixed assets and inventory",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Four hours 56 minutes on asset configuration, books, depreciation and lifecycle transactions. September 28 MB-310 deep review: Complete public overview and module titles/descriptions read; count 4. No aggregate runtime visible; no linked units, quiz or labs executed. Adjacent topics explicitly qualified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-course", "title": "MB-310T00-A Microsoft Dynamics 365 Finance Functional Consultant", "url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Four-day official instructor-led course; five linked paths total 48 hours 30 minutes."
+      "id": "mb-310-course",
+      "title": "Manage Financial Operations with Dynamics 365 Finance",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Four-day official instructor-led course; five linked paths total 48 hours 30 minutes. September 28 MB-310 deep review: Complete short overview read: Manage Financial Operations with Dynamics 365 Finance, four days, English. Broader audience includes adjacent cost/asset-leasing material. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-labs", "title": "MB-310 Microsoft Dynamics 365 Finance labs", "url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance", "publisher": "MicrosoftLearning", "authority_class": 2, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Public course lab instructions and files with an explicit repository license; individual labs remain subject to current-blueprint and tenant-UI checks."
+      "id": "mb-310-labs",
+      "title": "MB-310 Microsoft Dynamics 365 Finance labs",
+      "url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Public course lab instructions and files with an explicit repository license; individual labs remain subject to current-blueprint and tenant-UI checks. September 28 MB-310 deep review: Repository root/README and public listing inspected; individual lab instructions, commit history and runtime not audited. Linked only; no copied labs or execution. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-practice", "title": "MB-310 Practice Assessment", "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "independent-assessment", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Free official readiness assessment linked from the credential page."
+      "id": "mb-310-practice",
+      "title": "MB-310 Practice Assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "independent-assessment",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Free official readiness assessment linked from the credential page. September 28 MB-310 deep review: Direct URL yielded no substantive body; no assessment attempted. Availability link is not question-content verification. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-docs", "title": "Dynamics 365 Finance documentation", "url": "https://learn.microsoft.com/en-us/dynamics365/finance/", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Current first-party documentation hub for financial management, cash/bank, tax, receivables, subscription billing, payables, expenses, budgeting, assets and troubleshooting."
+      "id": "mb-310-docs",
+      "title": "Dynamics 365 Finance documentation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Current first-party documentation hub for financial management, cash/bank, tax, receivables, subscription billing, payables, expenses, budgeting, assets and troubleshooting. September 28 MB-310 deep review: Documentation landing index fetched; behavioral claims use selected specific product pages. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-pluralsight", "title": "Microsoft Dynamics 365 path", "url": "https://www.pluralsight.com/paths/microsoft-dynamics-365", "publisher": "Pluralsight", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Four-hour broad Dynamics path; not an MB-310 course and not a complete match for the August 2026 objectives."
+      "id": "mb-310-pluralsight",
+      "title": "Microsoft Dynamics 365 path",
+      "url": "https://www.pluralsight.com/paths/microsoft-dynamics-365",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Four-hour broad Dynamics path; not an MB-310 course and not a complete match for the August 2026 objectives. September 28 MB-310 deep review: Public current six-course component catalog read; 303 minutes versus rounded five-hour header. Finance/Project Operations remains coming soon in lower list; stale other Coming soon labels not promoted over published course rows. Paid lessons not accessed. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-udemy-financials", "title": "Dynamics 365 Finance and Operations Overview and Financials Part 1", "url": "https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/", "publisher": "Udemy / D365 Studio", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Four hours eight minutes, updated November 2024; useful for durable general-ledger basics but incomplete and older than the August 2026 blueprint."
+      "id": "mb-310-udemy-financials",
+      "title": "Dynamics 365 Finance and Operations Overview and Financials Part 1",
+      "url": "https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/",
+      "publisher": "Udemy / D365 Studio",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "Four hours eight minutes, updated November 2024; useful for durable general-ledger basics but incomplete and older than the August 2026 blueprint. September 28 MB-310 deep review: Direct fetch blocked. Browser-indexed provider page read: D365 Studio, November 2024, ten sections, 24 lectures, 4h08; public foundation outline only, no paid lessons or knowledge-check answers. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-310-measureup", "title": "Microsoft Practice Test MB-310", "url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "103-question diagnostic released August 2020 and last updated February 2023; its public objectives include cost-management and other stale scope, so use only after mapping to the August 2026 blueprint."
+      "id": "mb-310-measureup",
+      "title": "Microsoft Practice Test MB-310",
+      "url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html",
+      "publisher": "MeasureUp",
+      "authority_class": 3,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-310"
+      ],
+      "notes": "103-question diagnostic released August 2020 and last updated February 2023; its public objectives include cost-management and other stale scope, so use only after mapping to the August 2026 blueprint. September 28 MB-310 deep review: Public product update, count and domain allocation inspected: February 2023 and 103 questions (52/17/8/15/11); generic around-150 boilerplate not adopted. No paid or demo questions inspected. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb-310-partner-skilling-hub", "title": "Microsoft Partner Skilling Hub", "url": "https://www.skilling-hub.com/en-US", "publisher": "Microsoft Partner Skilling Hub", "authority_class": 2, "source_type": "official-training", "access_model": "partner-restricted", "last_checked": "2026-09-01", "supported_exams": ["MB-310"], "notes": "Partner catalog requires eligible-partner sign-in to confirm the current event, exact start/end times, availability and prerequisites; use the four-day official-course pattern only as a planning estimate."
@@ -39508,9 +39902,10 @@
         "AB-410",
         "AB-620",
         "PL-900",
-        "PL-300"
+        "PL-300",
+        "MB-310"
       ],
-      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Complete main August 25 article read. September disclosure transition and planned November 15 Release Planner retirement recorded with future verification; RSS/CSV existence does not mean this repo ingests them. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-at-work-roadmap",
@@ -39527,9 +39922,10 @@
         "AB-410",
         "AB-620",
         "PL-900",
-        "PL-300"
+        "PL-300",
+        "MB-310"
       ],
-      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Landing disclaimer and current announcement metadata inspected; no complete interactive roadmap inventory, feature-status verification, subscription or feed ingestion. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
     },
     {
       "id": "copilot-studio-agent-build-overview",

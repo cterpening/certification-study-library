@@ -1,0 +1,2248 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MB-310",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "3f72c1a86ff309d7c2e09b2e8bdfc016d2c155b3656d615a1c272ff595bdace7",
+  "guide_after_sha256": "ecba021e209cf66f5221a50c341c490f30dd92ab8579ff4d95b61216ddb47f48",
+  "prior_records": {
+    "exam": {
+      "code": "MB-310",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Dynamics 365 Finance Functional Consultant",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+      "guide_path": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Applied accounting and Dynamics 365 Finance experience across general ledger, currencies, journals, cash and bank, tax, receivables, payables, budgeting and fixed assets, plus the ability to reconcile source documents, subledgers and vouchers to the general ledger."
+    },
+    "review": {
+      "id": "mb-310-2026-09-01-source-validation",
+      "exam_code": "MB-310",
+      "guide_path": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mb-310-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f843902addfd9a29b5d0cfa9ae537ecc5a2afef4ca2b402013f08ed26d5e94d7",
+      "objective_coverage": [
+        {
+          "objective_group": "Implement financial management",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Implement accounts receivable, credit, collections, and subscription billing",
+          "guide_sections": [
+            "Section 2",
+            "Subscription-customer scenario",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage accounts payable and expenses",
+          "guide_sections": [
+            "Section 3",
+            "Capital-purchase scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Implement budgeting",
+          "guide_sections": [
+            "Section 4",
+            "Capital-purchase scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Manage fixed assets",
+          "guide_sections": [
+            "Section 5",
+            "Capital-purchase scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 15,
+        "reachable": 14,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every August 14, 2026 subobjective is mapped to an accounting object, configuration, source document, subledger/voucher/ledger effect, control, reconciliation, evidence, failure or recovery decision. Three scenarios, eight labs and 36 original checks cover chart/dimensions/structures/tags/defaulting; ledgers/currencies/revaluation/layers/allocations; journals/Excel/batch/reversal/intercompany; cash/bank/payment/reconciliation/forecast/netting; close/consolidation/elimination/settlement/tax; AR/credit/collections/subscription billing/deferrals; AP/matching/payments/expenses; all three budgeting capabilities; and fixed-asset books/depreciation/acquisition/transfer/disposal. All 15 URLs are cataloged: 14 reachable and Udemy automation-blocked; none missing or broken. The guide records the active 100-minute English/Japanese exam, free Practice Assessment, 48h30 official paths, four-day course, official labs, current product docs, and explicit freshness limits for Pluralsight, Udemy and the February 2023 MeasureUp product."
+    },
+    "sources": [
+      {
+        "id": "mb-310-blueprint",
+        "title": "Study guide for Exam MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Authoritative five-domain blueprint: skills measured as of August 14, 2026; no future update announced. The change log removes cost management and adds budget planning among major revisions."
+      },
+      {
+        "id": "mb-310-credential",
+        "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Active intermediate credential; 100-minute exam in English and Japanese, free Practice Assessment, five official paths and no announced retirement."
+      },
+      {
+        "id": "mb-310-path-financial",
+        "title": "Set up and configure financial management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Twenty hours 23 minutes across 16 modules on the accounting foundation, journals, currencies, cash/bank, tax and periodic processes."
+      },
+      {
+        "id": "mb-310-path-receivables",
+        "title": "Manage accounts receivable",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Ten hours 12 minutes across eight modules on receivables, credit, collections, subscription billing and recognition; includes some cost-management-adjacent material removed from the August blueprint."
+      },
+      {
+        "id": "mb-310-path-payables",
+        "title": "Manage accounts payable and expenses",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Nine hours 56 minutes across six modules; the official syllabus includes Project Operations expense integration as adjacent depth."
+      },
+      {
+        "id": "mb-310-path-budgeting",
+        "title": "Perform budgeting and forecasting",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Three hours three minutes on basic budgeting, budget control and budget planning."
+      },
+      {
+        "id": "mb-310-path-assets",
+        "title": "Administer fixed assets",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Four hours 56 minutes on asset configuration, books, depreciation and lifecycle transactions."
+      },
+      {
+        "id": "mb-310-course",
+        "title": "MB-310T00-A Microsoft Dynamics 365 Finance Functional Consultant",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Four-day official instructor-led course; five linked paths total 48 hours 30 minutes."
+      },
+      {
+        "id": "mb-310-labs",
+        "title": "MB-310 Microsoft Dynamics 365 Finance labs",
+        "url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Public course lab instructions and files with an explicit repository license; individual labs remain subject to current-blueprint and tenant-UI checks."
+      },
+      {
+        "id": "mb-310-practice",
+        "title": "MB-310 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Free official readiness assessment linked from the credential page."
+      },
+      {
+        "id": "mb-310-docs",
+        "title": "Dynamics 365 Finance documentation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Current first-party documentation hub for financial management, cash/bank, tax, receivables, subscription billing, payables, expenses, budgeting, assets and troubleshooting."
+      },
+      {
+        "id": "mb-310-pluralsight",
+        "title": "Microsoft Dynamics 365 path",
+        "url": "https://www.pluralsight.com/paths/microsoft-dynamics-365",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Four-hour broad Dynamics path; not an MB-310 course and not a complete match for the August 2026 objectives."
+      },
+      {
+        "id": "mb-310-udemy-financials",
+        "title": "Dynamics 365 Finance and Operations Overview and Financials Part 1",
+        "url": "https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/",
+        "publisher": "Udemy / D365 Studio",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Four hours eight minutes, updated November 2024; useful for durable general-ledger basics but incomplete and older than the August 2026 blueprint."
+      },
+      {
+        "id": "mb-310-measureup",
+        "title": "Microsoft Practice Test MB-310",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "103-question diagnostic released August 2020 and last updated February 2023; its public objectives include cost-management and other stale scope, so use only after mapping to the August 2026 blueprint."
+      },
+      {
+        "id": "mb-310-partner-skilling-hub",
+        "title": "Microsoft Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-310"
+        ],
+        "notes": "Partner catalog requires eligible-partner sign-in to confirm the current event, exact start/end times, availability and prerequisites; use the four-day official-course pattern only as a planning estimate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "c4ba15ff98ee282a6589ee233fe40ba20d0e428f34e797afbf5a9d3a84a16a84",
+      "guide_sections": "1 / Dimension design and validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "8a63701e6bfc26fb91b0e624ed3e481c31a8f80b1808ff1ac7f01e646ff36d2b",
+      "guide_sections": "1 / Chart of accounts and main accounts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "35c206fd6df9b8f7049a3be77b4a8bb1e4e023e2111b1cc3262fc686923647d1",
+      "guide_sections": "1 / Categories, aliases and balance controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "c415f463d9fff505e43b8904b4b7f9e040113adb75196f29a4bf100fab707431",
+      "guide_sections": "1 / Company overrides",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "c57873fbbfb077700a06aebb20d698c3696d931a802097d8100dacc1a3d53ba4",
+      "guide_sections": "1 / Structures and advanced-rule negative tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "e1e724785c5e137516f7be86129e28054570b8dbd7742fc6396a9efd3500aa6f",
+      "guide_sections": "1 / Tags, fixed lists and supported version",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "a6e2fe9c96b0b62821b3c42c35034668ee20b7674ed670abfee21ff7973680d3",
+      "guide_sections": "1 / Derived dimensions and reusable defaults",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "2992282f7da88028b0f1501834c5ee22a81ad2ab582d7b52e231156877751d2b",
+      "guide_sections": "1 / Exchange types and dated rates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "fdb29ecde8fa3a60b36413082ba6490e579ca0a9a82dde35ca41f41d57b9be2b",
+      "guide_sections": "1 / Revaluation accounts/profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "62a30b18b04f1d7d4bb0535555e945592f5b2dccb73ceaedb51c3b3b7914b82d",
+      "guide_sections": "1 / Accounting/reporting/transaction currency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "7eacea5c8e7f4294ce7eb804005f44282136e31e62d544709bb6e98c2eaf5e6a",
+      "guide_sections": "1 / Ledger, fiscal calendar and access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "776221e4cb03434b95c3f843c78824403dc7f0c4d6c9e9883eaa0f8d6e8a7f23",
+      "guide_sections": "1 / Posting-layer separation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "9743dc619307237ec0a8f7556487b498dde0243cb9fbbda62bf55a0dbeb1bd5c",
+      "guide_sections": "1, example 1 / Allocation basis, offsets and totals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "a7040586a88c2f136a43c71661d2fc9de991b7304b259872527071cdf695966c",
+      "guide_sections": "1 / Journal names and vouchers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "d3d34d60ab55d249d8fade4d5ca05dfbee470612876c4cd797695660ddd5ce3f",
+      "guide_sections": "1 / Journal controls and posting restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "352e3e84d5038340861646499728c8a6dc15fc3b51135890d26bef4dd6d54d10",
+      "guide_sections": "1 / Periodic journals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "1a8310c98127e971b5a69615bf6f4b7b904dd34bf34bd153879ea8105c97b6ee",
+      "guide_sections": "1 / Intercompany due-to/from",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "7bb91b632cdee06a30276207b3b786eff6efb1bdeab44bae73c37644f7b2bc18",
+      "guide_sections": "1 / Excel template and import",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "bc4e03a6cab7cb87c935b805c5b34117fb694804a3e508d20dc26fd9f32116cd",
+      "guide_sections": "1 / Reversal and correction evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "334411547dfd12644cc5b0e268a5b59b772b15b5aa7dc84a4f896c96f6cfd613",
+      "guide_sections": "1 / Manual/Excel validation and posting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "68d9b048e1624a3320064ea19dd5783c340af3788bffd2d5761a6df6b08b0f3d",
+      "guide_sections": "1 / Batch scope, failures and retries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "637c9acc49d4ae3d7cb421b9394e5368fd67c0cdfb6ce5bda497a9996cc34bf8",
+      "guide_sections": "1 / Bank groups and accounts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "b5f1686bfb730ad4be46fccd9d49f877df7ec75bce4e4575a551e5a9f3775597",
+      "guide_sections": "1 / Payment formats",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "ced7afee4067b8859093782e0af67cfc61ab529cd4a05db8eba43fd3f5920811",
+      "guide_sections": "1 / Manual/advanced reconciliation setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "f96a8cbfd8f5d653dadaa80daa5f588ee5120843002e3988e1baa24d7d637b41",
+      "guide_sections": "1 / Forecast liquidity/source/refresh assumptions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "5d7ebd8c6a89f5135e2a8c44c284c73d1522b419e1c17367b452806eb1de83ed",
+      "guide_sections": "1 / Bank-specific FX scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "295649a9876846fa0e8fc63a96fb92c14809b5184f37cde0204139a94139d91d",
+      "guide_sections": "1, lab 3 / Import, match, reconcile and post",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "258433b0c7343ece7fd3b5746fb21ff5de227ab445df9669322f9046a8971242",
+      "guide_sections": "1 / Shared payment company boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "9760a8f5a7c91c7b19a3d94dafdeebb91a86fe15c5915b087120ff5b8a5d7f16",
+      "guide_sections": "1, example 4 / Active netting agreement, residual and reversal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c6be509438465e2733312de9e5447799dfe9ceef1245551f1c8b81d000bf4e8c",
+      "guide_sections": "1 / Close/year-end dependencies, accounts and templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "5c9d66d1747ea75b2f4af2be04b470365477f465fa71c02f90ee72018702820c",
+      "guide_sections": "1, example 8 / Consolidation and elimination",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "d43a41dda15578002f6bc7e8052a646e1f05f9321b32e103d6e0586b997cd6c5",
+      "guide_sections": "1 / Close workspace and schedule",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "180e7ff383803039fb86aea82a01afd017cea898e6e1a898d86958fb8b388e2a",
+      "guide_sections": "1 / Consolidation entity and translation settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "a3868eb3e93d287932119c657a224e58933e70b403eea361ad0d61f4fe64a59f",
+      "guide_sections": "1 / Ledger settlement and realized/unrealized coordination",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "1781a57594cf7054abbe207fc22b41cbcdf27cf4d46db9867bf4f603c786124d",
+      "guide_sections": "1 / Sales tax groups/codes/periods/authorities/exemptions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "c860fb51bcdf0f3b1acc601375844f8df7a30b13366ae169f53b0ba06ed5a3c5",
+      "guide_sections": "1 / Tax ledger posting groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "17704e33aa8cd18c85a605069f1381076d06b78ce1711d274bc405c7ec5b8545",
+      "guide_sections": "1 / Settlement and posting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "123183bf112d765a20cef16cb191f4c7c0a02962b64bf6de17e57a338918c71e",
+      "guide_sections": "1 / Withholding groups/codes/authorities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "cde96834c65002bc84b55fa1431ab26d6cee004fbf60c6dc404abfdc87829b06",
+      "guide_sections": "1, lab 4 / Calculate and adjust tax cases",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "9e402d19324a9b0404d942553772ad59ddd339d763868302cea508f758d19b49",
+      "guide_sections": "2 / Customer groups and shared customers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "7da710460e590166ad6e93333897a45b9679bc823a7401fee06b20b62172ae2a",
+      "guide_sections": "2 / Free-text and recurring invoices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "0896e4786487c66fd993c7b9dde7f4d41b7fd4462b00130f00bc3cea4b0d162b",
+      "guide_sections": "2 / Sales invoices, credits and prepayments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "3d5d4f13b76283b9e670203c69ac1ec266c2093eccce8175facc6e52e4a34b98",
+      "guide_sections": "2 / Customer payment methods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "bfa993a392eaa8fbd933ea87dd643caa3e15c51032a2ce64f05883f5d45eb5a8",
+      "guide_sections": "2 / Receivable charges and invoice effects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "598da1e7a334e3776b8a71b5778eee60382b397f3edf2a1a5eec5633f01d8ada",
+      "guide_sections": "2 / Customer posting profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "72256d509eda86715bb01f3b5f8e9ce82f45e548aedb8b6c0ccc9a514dd4d5d9",
+      "guide_sections": "2 / Payment and settlement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "809756ef26d8310e820865e15a9f2037b398d222eab46423c8a16e997eaa7108",
+      "guide_sections": "1, 2 / AR revaluation versus GL",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "827d612eaa0583cdb8135b9ee31cb7524887c4dbbc5eda21d4532c3db72483cf",
+      "guide_sections": "2 / Billing classifications",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "1fbb77cb94a9a665bb853d5f239778c8c0fb11b3df3b5df956353c1447b896b0",
+      "guide_sections": "2 / Customer bank details",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 11,
+      "objective_sha256": "5f3e5887fb48d3d053282793d6334f2a4b7550ded956b5ea8bdfd737297d7075",
+      "guide_sections": "1, 2 / Intercompany invoices and balances",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "26b3bff5a9aee8c80ae45c3ac5489a17cf2bae2d9c0b7c66edb71ae61b748430",
+      "guide_sections": "2 / Credit rules and risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "98e682c9c8c394cd46426be2fbcd4ba9d1e1f3e55a0d138c571bfb54f0c82118",
+      "guide_sections": "2 / Collection pools, activities and work queues",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "613ae8e08d31192c6da4d67b0cf955797c3ba8a06986ceacdb14c3c5b39c38bd",
+      "guide_sections": "2 / Delinquency and dispute handling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "c99cb4ef5313bb815d56bb506a1c362e46c9a97e0c1a103dbbeaa831c2df5f42",
+      "guide_sections": "2 / Collection letters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "5fec8289522ce175d394946f2ec4e5eb5016769cd82a93ad3408cf6b59035f41",
+      "guide_sections": "2 / Aging definitions and balances",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "53ec90c4b23f0b07402662ae85629cdc851530743a908799eb591073f479d30c",
+      "guide_sections": "2 / Credit holds and authorized release",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "156227918ddbd0846b9592bcce8e036c1bffeec264b1cb203512e4f70f33d8ba",
+      "guide_sections": "2 / Write-off accounts and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "51b59c6a45fc16aa7bb3c490d362dc8e319097b6e0758cee5e829fa7ccec2da3",
+      "guide_sections": "2 / Interest-note policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "6f108f6f8c15c1df0cc4c59e5612b467adcff387355e0704068f8d207c08a92b",
+      "guide_sections": "2 / Schedule-generated sales documents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "1e6b8eb529c8dad29d1185774a83312b17b135aacba50bd28f7c1b0b423d8d96",
+      "guide_sections": "2 / Price, hold and termination",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "9f94f9cfd384770801753fe2344dc6afb66801e1fd3df6ac84765614e9420c2a",
+      "guide_sections": "2 / Contract groups, item groups and milestones",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "e74784599618519ffce360fc73f378f37b9de0dc3a250f68d14cc80598947b33",
+      "guide_sections": "2, example 5 / Revenue/charge deferral and recognition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "f9abaa184917d0c2b3eeec0c4e57c84ad62cfd9b2c953093fa4990fc7814e431",
+      "guide_sections": "2 / Expense deferral and recognition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "fe3c5e26064bf2a4689bcdfa4a786f39db92ac7defddf6f98ca59a3465f65b81",
+      "guide_sections": "2 / Schedule cutoff, modification and posting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "c71ce2b7ea8f1212c64a016b0ebf73fffe9c9667ae3bc155952d992720ee1ec0",
+      "guide_sections": "2 / Deferral default and item settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "d5816f85cfcb0d52c29fa2d13a5cef85a8e6901e7c24a3e400518bd5961bd56b",
+      "guide_sections": "3, example 3 / Invoice policy, two/three-way matching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "7afe586e8362eb30d6a3052214c0c1551ff9441bd8e0b3ae7fae6eab7f5967b1",
+      "guide_sections": "3 / Vendor groups, shared vendors and profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "6bf1ccccd8d41d6ac8ef52d8398ff6c5b1c440ef3d21861657dc0db11bf2e93a",
+      "guide_sections": "3 / PO/non-PO invoices, credits and prepayments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "72d936bd33af30efbe042b6da3fda7ee3a669b644f5e90165ec3109ca8e30632",
+      "guide_sections": "3 / Payment methods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "ea053bf53c660f4b2f46ebc76102d6bab34297362380e490be791096abb73be1",
+      "guide_sections": "3 / AP charges and invoice effects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "8a25df3459bb8c990caf57a8acf50e72e6792a3beac445759bcc67fdc2a4f426",
+      "guide_sections": "3 / Vendor bank controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "3fe74317012e6a64547c1b89d23dc82778e8b4e8967d7883b16fc326b514d5c8",
+      "guide_sections": "1, 3 / AP revaluation scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "52cb9f0fb9559eb1b2640caa30085acbe3e84d6cc0d819f76a65c7ec18897d0a",
+      "guide_sections": "3 / Vendor invoice journal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "5639fdb9c148df9ae4ec2ccf1ba271a152d8f85045efd3a5d998fa101d3608fe",
+      "guide_sections": "3 / Recurring vendor invoices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "25a9924f137e51b300ae64e4dde2a079393182c8f47d81d1d861ce091c48486e",
+      "guide_sections": "3 / Payments, centralization and prepayments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 11,
+      "objective_sha256": "dd9b12954bba7e3d944a13ff34f098d502386ada38e94eb212c9afb063457610",
+      "guide_sections": "1, 3 / Intercompany invoices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "38d59eacaa8e42ae418a1e83983f09ea1e8e826dad3c00cf308b29ca39f1deb1",
+      "guide_sections": "3 / Categories, per diem, mileage, intercompany/personal spend",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "3a61efc68ef97b49f8801616c9e092c8f0eb14bd4bfb5aea0558be79faf364c5",
+      "guide_sections": "3 / Expense reports, policy and exceptions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "2036edbf0a327fd6f89109f58153a4bd8f376ba1b67a3cebe006753d42e913a4",
+      "guide_sections": "4 / Models, codes, allocations and transfers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "dcc586978abb54e2a686bf5a3960f897a4b61978d21fd7bcd6b19de862339919",
+      "guide_sections": "4 / Register entries and approved plan transfer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "6d49b8c07a35a7128355777f05978bac47543d6fd076ecc40e68e7ea1d73a77a",
+      "guide_sections": "4 / Budget-to-actual grain and reporting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "8fc3fe4ade58b39cd2234dbc3e2405665562547d2ed23ba7cc993b9a197148cc",
+      "guide_sections": "4 / Parameters, formula, rules, groups and permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "5c40f6f6b75186ab6200fb2bd41c8dd4b2efb35947dffca3bf47541e42ad9905",
+      "guide_sections": "4, example 6 / Activation, enforcement, reservation and invoice relief",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "edbf84e575be6f6323bd6e2e7f0e36e2f92cba2debd42f8767949f8c72f228d2",
+      "guide_sections": "4 / Plan scenarios and allocation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "8bbfd46dc452e5e2f2db3894363cd519f91565dbae9b88151137fd7dfe31ed2b",
+      "guide_sections": "4 / Organization hierarchy, process and stages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "e67727a7a03066057b2028cd974e05dff7d1476cbda597748dc90553d947de70",
+      "guide_sections": "5 / Asset groups and attributes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "e49658948c7a107b44f521e278411985089cb39246a27359fea49dac4bf2741e",
+      "guide_sections": "5 / Posting profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "c61de1a321969192291b03fecd5bd91ba4b57223baefd29ec97fc28257ed2eec",
+      "guide_sections": "5, example 7 / Books and selected derived transaction types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "481afc423db22b1da775cb222490702c2cd9c0d08e8eba1496d51fc3c43a4f1c",
+      "guide_sections": "5 / Depreciation profiles and conventions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "bc1d4718fa9d9e3e95fb7e7ec5ace5b72044d1e949c8f5ec0e79888d546881b3",
+      "guide_sections": "5 / Asset creation and lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "c16cb7b852178d2132eed3cc44bdab049016bd71d0e4206b7049afcfabae54e4",
+      "guide_sections": "5 / Group/book mappings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "91088acbb6590bb2aa7eb90670e1c8b27539f9ede4a1227a08c0fd2172b89ea2",
+      "guide_sections": "5, example 7 / Free-text invoice sale disposal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "6e09a392b47b9a5bc3292d4293cb2976862c0716f3a2ee1168524500f361d960",
+      "guide_sections": "5 / PO/journal/inventory/project acquisition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "c3cac9ef938d9b7f99b19e1fff880dd022cef228c2f28dc63a075d1cf4a35754",
+      "guide_sections": "5 / Asset budget transfer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "722d3c00d5970e53238bf17cbb7e253cfbb38f2451d28cdc074b67e54b2f8cef",
+      "guide_sections": "5 / Depreciation and multi-company scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "2a55278b7c3759abd252d651f63197e4603a46bc76721191c1abe8e8008e9893",
+      "guide_sections": "5 / Split, reclassification, transfer and disposal journals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MB-310"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MB-310",
+        "title": "Microsoft Dynamics 365 Finance Functional Consultant",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+        "guide_path": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+        "snapshot_path": "data\\objective-snapshots\\mb-310-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mb-310-official-status.json",
+        "previous_sha256": "f843902addfd9a29b5d0cfa9ae537ecc5a2afef4ca2b402013f08ed26d5e94d7",
+        "current_sha256": "d5bbe85cad214566f2ba0cc7b266af0ff612664ba199a5c8ed948e28474d2284",
+        "previous_status_sha256": "e96d42e60002d03c4491745147ef8c9c6229caaa6be4528c200c07dee56485bd",
+        "current_status_sha256": "02da341efe561979456abb2ee0ee3a4666805efb8892bd4d7da6d5461131021a",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of August 14, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 35,
+    "reachable": 34,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mb-310-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+      "checked_at": "2026-09-28T11:29:56.432057+00:00",
+      "health": {
+        "id": "mb-310-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+        "checked_at": "2026-09-28T11:29:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "a4fe84a6e6e07b088c9f0eba6f5505b394c5bb53df320b2a737b6dd14dc511cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+      "sha256": "7b0dd07d9375dd7361e4917978cc4f25da798a6a2cefad4a73632c8aa5958d05",
+      "text_characters": 12302
+    },
+    {
+      "id": "mb-310-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+      "checked_at": "2026-09-28T11:29:56.432599+00:00",
+      "health": {
+        "id": "mb-310-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+        "checked_at": "2026-09-28T11:29:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "bea2139092cf7d1cd6fb76e008d38cab6e0b81927f1804668515b5dd76b550b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+      "sha256": "eb49f672fb78719738790305a5791adff303dd875e88a5f72b1b9708288eb61b",
+      "text_characters": 4437
+    },
+    {
+      "id": "mb-310-path-financial",
+      "url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/",
+      "checked_at": "2026-09-28T11:29:56.432966+00:00",
+      "health": {
+        "id": "mb-310-path-financial",
+        "url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/",
+        "checked_at": "2026-09-28T11:29:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/",
+        "content_type": "text/html",
+        "page_title": "Configure Financial Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/",
+        "duration_signals": [],
+        "signal_fingerprint": "def1549d48c4369e6d269c0029ce77dbae0dcf5dcf9e18560d9e503553ddbccd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/",
+      "sha256": "920408822fbb7b108e93bdc37ab03ca1d697ef5958d1924dd7846f78055689f6",
+      "text_characters": 6406
+    },
+    {
+      "id": "mb-310-path-receivables",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/",
+      "checked_at": "2026-09-28T11:29:56.851731+00:00",
+      "health": {
+        "id": "mb-310-path-receivables",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/",
+        "checked_at": "2026-09-28T11:29:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/",
+        "content_type": "text/html",
+        "page_title": "Manage Accounts Receivable - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/",
+        "duration_signals": [],
+        "signal_fingerprint": "ea772c5b40539ae608729a7ccb9377eaf648b07acfdefc2892fab0e8949eabae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/",
+      "sha256": "7cec5297ee22129d47e6727a7e15f1630a17824ed1756ded781a22179a8b9f67",
+      "text_characters": 4011
+    },
+    {
+      "id": "mb-310-path-payables",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/",
+      "checked_at": "2026-09-28T11:29:56.876609+00:00",
+      "health": {
+        "id": "mb-310-path-payables",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/",
+        "checked_at": "2026-09-28T11:29:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/",
+        "content_type": "text/html",
+        "page_title": "Manage Accounts Payable - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/",
+        "duration_signals": [],
+        "signal_fingerprint": "d6315aa81a8a9d05b4a693827020459a81159ea7823ea41664ddcc1a2f58fd13",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/",
+      "sha256": "0af31eb15f3e48910621fecbfeae32d1fbce22127aaf0cd9999f374ee680167a",
+      "text_characters": 3341
+    },
+    {
+      "id": "mb-310-path-budgeting",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/",
+      "checked_at": "2026-09-28T11:29:56.942975+00:00",
+      "health": {
+        "id": "mb-310-path-budgeting",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/",
+        "checked_at": "2026-09-28T11:29:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/",
+        "content_type": "text/html",
+        "page_title": "Perform Budgeting and Forecasting - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/",
+        "duration_signals": [],
+        "signal_fingerprint": "9b14528492096b1cde20024b5b052e37273bdf8891a32daabe18047636e3cb73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-budgeting/",
+      "sha256": "d6c37c0397a4688064c7ee4598dc4775fe85d27de066e9e40c74e75b192e0fa1",
+      "text_characters": 2048
+    },
+    {
+      "id": "mb-310-path-assets",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/",
+      "checked_at": "2026-09-28T11:29:57.110271+00:00",
+      "health": {
+        "id": "mb-310-path-assets",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/",
+        "content_type": "text/html",
+        "page_title": "Administer Fixed Assets and Inventory - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/",
+        "duration_signals": [],
+        "signal_fingerprint": "0dd285f9a87b63826cf8e5863b216986809b6f3fef04e78bac3f2e14ab00fab1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/",
+      "sha256": "16d8487ef921929aa320a0c0c4e8e053d6ba9a554a5899e2e9674066014cd297",
+      "text_characters": 2071
+    },
+    {
+      "id": "mb-310-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00",
+      "checked_at": "2026-09-28T11:29:57.175645+00:00",
+      "health": {
+        "id": "mb-310-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00",
+        "content_type": "text/html",
+        "page_title": "Course MB-310T00-A: Manage Financial Operations with Dynamics 365 Finance - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00",
+        "duration_signals": [],
+        "signal_fingerprint": "d890143ffecff3f89e7bfe2c9af5b39e9c1e01b9816576e7621f15796dffad3c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-310t00",
+      "sha256": "43489b5af9e92ddb51d986891f6e1663bb475b5e7aef0ad81ef00dd99fe6b4eb",
+      "text_characters": 1818
+    },
+    {
+      "id": "mb-310-labs",
+      "url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+      "checked_at": "2026-09-28T11:29:57.215829+00:00",
+      "health": {
+        "id": "mb-310-labs",
+        "url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+        "canonical_url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+        "duration_signals": [],
+        "signal_fingerprint": "ee3c2ffc957f261651cb231ec3ce750c1975ff1e8ba3c66ec4e79ff2ce62a4e0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance",
+      "sha256": "c6cf91e2e2b7f713b273bd9be2616346890345365d7f2c716b201e46ecca45c1",
+      "text_characters": 3551
+    },
+    {
+      "id": "mb-310-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T11:29:57.417578+00:00",
+      "health": {
+        "id": "mb-310-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "4a3816b1dd3531fb469497dba5b18409508ef4a262adba9c606130dcbb838f6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification",
+      "sha256": "c4b3698b6feb4e2cee4442ca3b658e77a7ffc2574bc6df4128e11e58b3db18f2",
+      "text_characters": 0
+    },
+    {
+      "id": "mb-310-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/",
+      "checked_at": "2026-09-28T11:29:57.444928+00:00",
+      "health": {
+        "id": "mb-310-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/",
+        "content_type": "text/html",
+        "page_title": "Dynamics 365 Finance documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/",
+        "duration_signals": [],
+        "signal_fingerprint": "30a8b3df7fb734303a7a06fa94da97f93a0f6b98126d94b3fdd2dcdf61ef4093",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/",
+      "sha256": "baadffd78796041106bc5f81208971ae64e478300030daa14e5ebed8e2c68dc7",
+      "text_characters": 4730
+    },
+    {
+      "id": "mb-310-pluralsight",
+      "url": "https://www.pluralsight.com/paths/microsoft-dynamics-365",
+      "checked_at": "2026-09-28T11:29:57.683402+00:00",
+      "health": {
+        "id": "mb-310-pluralsight",
+        "url": "https://www.pluralsight.com/paths/microsoft-dynamics-365",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-dynamics-365",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Dynamics 365",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-dynamics-365",
+        "duration_signals": [
+          "10 minutes",
+          "5 Hours"
+        ],
+        "signal_fingerprint": "2a19c24393a83255bbefc55187d48cab46c5ae3fef80a711c69bda7396c19686",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-dynamics-365",
+      "sha256": "23eb5ec9bbe9c1d3536fced22da0e3fc3a72c1ccd3e7b06763fccd671ea4b4ea",
+      "text_characters": 3995
+    },
+    {
+      "id": "mb-310-udemy-financials",
+      "url": "https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/",
+      "checked_at": "2026-09-28T11:29:57.763728+00:00",
+      "health": {
+        "id": "mb-310-udemy-financials",
+        "url": "https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-310-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html",
+      "checked_at": "2026-09-28T11:29:57.865768+00:00",
+      "health": {
+        "id": "mb-310-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html",
+        "checked_at": "2026-09-28T11:29:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d9c6bdf40d2ea81d8dabda1d77ea779ce11cfce8b92d312e75d2735372cba95b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html",
+      "sha256": "e634034c183e93539234d58dbfab4f7ed05349184f9b7cda8e32b99d2d173172",
+      "text_characters": 16724
+    },
+    {
+      "id": "mb-310-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:29:58.533846+00:00",
+      "health": {
+        "id": "mb-310-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb310-tags",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+      "checked_at": "2026-09-28T11:29:58.793020+00:00",
+      "health": {
+        "id": "mb310-tags",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+        "checked_at": "2026-09-28T11:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+        "content_type": "text/html",
+        "page_title": "Financial tags - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+        "duration_signals": [],
+        "signal_fingerprint": "651dbb264cf2f6c38c2866b4a27354f6473802680b8bb8b52861c0cbba2b9fbe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+      "sha256": "a0a21c4076380bba016942e4336a043949ffcba5fd56c809034e88206d3ac627",
+      "text_characters": 22085
+    },
+    {
+      "id": "mb310-dimensions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+      "checked_at": "2026-09-28T11:29:59.089133+00:00",
+      "health": {
+        "id": "mb310-dimensions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+        "content_type": "text/html",
+        "page_title": "Financial dimensions and tags - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+        "duration_signals": [],
+        "signal_fingerprint": "3a47a82ee3231bd687d70e45482e15a92dcad1b88497554374186e849299a889",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+      "sha256": "e9ea536308b15d16dfb32f16ca778e96651392c4e45bceb4e0e58cd527d52d1b",
+      "text_characters": 8842
+    },
+    {
+      "id": "mb310-fx",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+      "checked_at": "2026-09-28T11:29:59.202813+00:00",
+      "health": {
+        "id": "mb310-fx",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+        "content_type": "text/html",
+        "page_title": "Foreign currency revaluation for General ledger - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+        "duration_signals": [],
+        "signal_fingerprint": "3af99ae597cea0ff225ac26206554a471baf72d2170dcd5f2ca009d7be88d117",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+      "sha256": "ce62a7e8ecd6bbeb9c1a9ea0304f7e35ea89acfea2f7aab7c59f730e914fd619",
+      "text_characters": 9938
+    },
+    {
+      "id": "mb310-settlement",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-settlements",
+      "checked_at": "2026-09-28T11:29:59.216726+00:00",
+      "health": {
+        "id": "mb310-settlement",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-settlements",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-settlements",
+        "content_type": "text/html",
+        "page_title": "Ledger settlements - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-settlements",
+        "duration_signals": [],
+        "signal_fingerprint": "241b46dd9e2353bc81d5dc50a4dc1bf338a1174ce68c059f57efe6f600a5f215",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/ledger-settlements",
+      "sha256": "9443fc577885a077d3b73bc3e10dadc5ef7e948d23d7c9ff0a8f4ec621a1ccab",
+      "text_characters": 18433
+    },
+    {
+      "id": "mb310-consolidation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-consolidations-currency-translation",
+      "checked_at": "2026-09-28T11:29:59.344695+00:00",
+      "health": {
+        "id": "mb310-consolidation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-consolidations-currency-translation",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-consolidations-currency-translation",
+        "content_type": "text/html",
+        "page_title": "Financial consolidations and currency translation overview - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-consolidations-currency-translation",
+        "duration_signals": [],
+        "signal_fingerprint": "47d8d22329c6417a0b3ba278ad585cfb56c4572ab78443f5ad74545cb245207d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-consolidations-currency-translation",
+      "sha256": "bfb1c07d437137b1f133ce15ba330ed717ddb3e090dd1922c23c1c7ace2e177f",
+      "text_characters": 16835
+    },
+    {
+      "id": "mb310-matching",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+      "checked_at": "2026-09-28T11:29:59.464357+00:00",
+      "health": {
+        "id": "mb310-matching",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+        "content_type": "text/html",
+        "page_title": "Accounts payable invoice matching overview - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+        "duration_signals": [],
+        "signal_fingerprint": "8a77952f4950714e6320080f94f024cedbb06dc1d448e8fa033462c3089e5a0a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+      "sha256": "17ed94c84b104cfbdd69c3ec9333604745ab1d80ab0b161a29edc11445f5b5f7",
+      "text_characters": 15806
+    },
+    {
+      "id": "mb310-bank-rules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+      "checked_at": "2026-09-28T11:29:59.640447+00:00",
+      "health": {
+        "id": "mb310-bank-rules",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+        "content_type": "text/html",
+        "page_title": "Set up bank reconciliation matching rules - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+        "duration_signals": [],
+        "signal_fingerprint": "bc088320822448db321f49bb5cb3646726f3f7ef77acbc26bc6d8c0e4c428443",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+      "sha256": "03bf87caacf0a68f2284122beeba4d89dd5d119c1a02a6ee180b08168fda1d66",
+      "text_characters": 7030
+    },
+    {
+      "id": "mb310-bank-process",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation",
+      "checked_at": "2026-09-28T11:29:59.672561+00:00",
+      "health": {
+        "id": "mb310-bank-process",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation",
+        "content_type": "text/html",
+        "page_title": "Reconcile bank statements by using advanced bank reconciliation - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation",
+        "duration_signals": [],
+        "signal_fingerprint": "0da56a1a18c147600052628f7aacda13b053cbf701c1dec145e97729c4922b1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation",
+      "sha256": "e9ff5ad041cda945373fe41ce2caff43d9c9c977897d383d04b57af5e041cd84",
+      "text_characters": 16208
+    },
+    {
+      "id": "mb310-netting",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+      "checked_at": "2026-09-28T11:29:59.748013+00:00",
+      "health": {
+        "id": "mb310-netting",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+        "content_type": "text/html",
+        "page_title": "Net customer and vendor balances - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+        "duration_signals": [],
+        "signal_fingerprint": "f348a05a38bd7f6a957a422e3758b7cdde7ae0cd0c8bc4466b8f2aef1e5b5ae1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+      "sha256": "6e10f15b419acf09d49460f20ae506497c53562501d81d5dab4cb4883d0bf5e4",
+      "text_characters": 7943
+    },
+    {
+      "id": "mb310-deferrals",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+      "checked_at": "2026-09-28T11:29:59.916219+00:00",
+      "health": {
+        "id": "mb310-deferrals",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+        "content_type": "text/html",
+        "page_title": "Revenue and expense deferrals in Subscription billing - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+        "duration_signals": [],
+        "signal_fingerprint": "4526a043e41d85bfe636d513ea817b8ff4acc2143b65d73acd77c8a7cbcc40df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+      "sha256": "3b165ee9383180bb45348b4ac63eab96fae00c0768b2727d3919bff3457756b8",
+      "text_characters": 22875
+    },
+    {
+      "id": "mb310-deferral-schedules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules",
+      "checked_at": "2026-09-28T11:29:59.952683+00:00",
+      "health": {
+        "id": "mb310-deferral-schedules",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules",
+        "checked_at": "2026-09-28T11:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules",
+        "content_type": "text/html",
+        "page_title": "Deferral schedules in revenue and expense deferrals - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules",
+        "duration_signals": [],
+        "signal_fingerprint": "55fd73b3e794d811e7ce100607cb64546d804fbf6841c0e15dec074b4d599357",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals-schedules",
+      "sha256": "bedf1b71931845d6f5b1225838c4c4a108e5bdad160926ce5a9b88af23602f5a",
+      "text_characters": 13366
+    },
+    {
+      "id": "mb310-budget",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+      "checked_at": "2026-09-28T11:30:00.001916+00:00",
+      "health": {
+        "id": "mb310-budget",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+        "checked_at": "2026-09-28T11:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+        "content_type": "text/html",
+        "page_title": "Budget control overview - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+        "duration_signals": [],
+        "signal_fingerprint": "9cb853c2fa0cd2d1bc4fe3b5c0a5c730e40b13e7b1689fe7dbf5b5a1fc28f68c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+      "sha256": "ae4c977f6462261e72cec7a39ce81e33099f94c6c444d6a16bf569bbcd4a9aa1",
+      "text_characters": 20536
+    },
+    {
+      "id": "mb310-budget-report",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-statistics-and-budget-analysis-report",
+      "checked_at": "2026-09-28T11:30:00.242111+00:00",
+      "health": {
+        "id": "mb310-budget-report",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-statistics-and-budget-analysis-report",
+        "checked_at": "2026-09-28T11:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-statistics-and-budget-analysis-report",
+        "content_type": "text/html",
+        "page_title": "Budget control statistics report vs. Budget analysis report - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-statistics-and-budget-analysis-report",
+        "duration_signals": [],
+        "signal_fingerprint": "cce4d75da733e86a3fc8e1e96ff73c3921a4cfe32b5049c848de96c881037ced",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-statistics-and-budget-analysis-report",
+      "sha256": "481b8cef97cd0522faf48a147e579900457f77fd5e64552c337c20f00dcb931e",
+      "text_characters": 4006
+    },
+    {
+      "id": "mb310-derived",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/derived-books",
+      "checked_at": "2026-09-28T11:30:00.266472+00:00",
+      "health": {
+        "id": "mb310-derived",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/derived-books",
+        "checked_at": "2026-09-28T11:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/derived-books",
+        "content_type": "text/html",
+        "page_title": "Derived books - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/derived-books",
+        "duration_signals": [],
+        "signal_fingerprint": "a4de0a42247f9aeafe5ed6ea1f80faca9782c3de80652e60450a76144c2d5a49",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/derived-books",
+      "sha256": "59659ee6cdbbf5a751e2b06ad5ff48df3d2ef11a2f29d9466745190ebed94ade",
+      "text_characters": 2111
+    },
+    {
+      "id": "mb310-derived-posting",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+      "checked_at": "2026-09-28T11:30:00.278529+00:00",
+      "health": {
+        "id": "mb310-derived-posting",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+        "checked_at": "2026-09-28T11:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+        "content_type": "text/html",
+        "page_title": "Post with derived books - Finance | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+        "duration_signals": [],
+        "signal_fingerprint": "296518343d72500c21b82cc9c9b97c33e02754064144611ce94aa251c94dd288",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+      "sha256": "70fb89db506366885b254bbc83824cdfcd8efba9d5e5bcbfcca3d1e032343e6a",
+      "text_characters": 3369
+    },
+    {
+      "id": "mb310-tags-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/04/26/financial-tags-flexible-reporting-and-analytics-capabilities-without-the-overhead-of-dimensions/",
+      "checked_at": "2026-09-28T11:30:00.563072+00:00",
+      "health": {
+        "id": "mb310-tags-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/04/26/financial-tags-flexible-reporting-and-analytics-capabilities-without-the-overhead-of-dimensions/",
+        "checked_at": "2026-09-28T11:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/04/26/financial-tags-flexible-reporting-and-analytics-capabilities-without-the-overhead-of-dimensions/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Financial Tags: Flexible reporting and analytics capabilities without the overhead of dimensions - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/04/26/financial-tags-flexible-reporting-and-analytics-capabilities-without-the-overhead-of-dimensions/",
+        "duration_signals": [
+          "3 min",
+          "4 min",
+          "7 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "e27995824232dbe45d1dbbe58eb8e87ade2ec052d41f3681d3a885c58f73dd2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/04/26/financial-tags-flexible-reporting-and-analytics-capabilities-without-the-overhead-of-dimensions/",
+      "sha256": "358941518aa62945235c72abae3bad774528793b2180e873dc0697fbdcce258f",
+      "text_characters": 5571
+    },
+    {
+      "id": "mb330-erp-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+      "checked_at": "2026-09-28T11:30:00.569069+00:00",
+      "health": {
+        "id": "mb330-erp-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+        "checked_at": "2026-09-28T11:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Build the future of agentic ERP with new Microsoft Dynamics 365 capabilities - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "fffaae561901c0078031c29b8c469710e731ca0ae6379bb09d4b8fe67fe1916a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+      "sha256": "a9c7e3e8925a7db75256beef10e50192187219efe13ba8906efd8980f097684f",
+      "text_characters": 15700
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T11:30:00.638589+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T11:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "08e7ff48ef9ca759b0e75db76a3de25102d5eaeb7fa15e3f5b2b40a0c0e0bf6d",
+      "text_characters": 8483
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "checked_at": "2026-09-28T11:30:03.188485+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "checked_at": "2026-09-28T11:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI at Work Roadmap | Microsoft 365",
+        "canonical_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "duration_signals": [],
+        "signal_fingerprint": "8585c764e3a35de4ca8757c6dcdb3de428eb5f5e6c422a9c8d9eb9f0537215cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "sha256": "32eda08c5a45a2e810703f775fef6c68c7d183717d4c58c9db32efc712909a1c",
+      "text_characters": 30784
+    },
+    {
+      "id": "mb310-release-plans",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+      "checked_at": "2026-09-28T11:30:03.962604+00:00",
+      "health": {
+        "id": "mb310-release-plans",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+        "checked_at": "2026-09-28T11:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+        "content_type": "text/html",
+        "page_title": "Release plans for Dynamics 365 and Power Platform - Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+        "duration_signals": [],
+        "signal_fingerprint": "6f270045f7f34bc7f8bde55fdafdd2fcaf4ad43aef908e6feeee6754c04da859",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+      "sha256": "9f43c807c59b1513a3531717c2770840e376317e3f399830456a241414c6d6bf",
+      "text_characters": 1153
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:30:04.221399+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    }
+  ],
+  "added_source_ids": [
+    "mb310-tags",
+    "mb310-dimensions",
+    "mb310-fx",
+    "mb310-settlement",
+    "mb310-consolidation",
+    "mb310-matching",
+    "mb310-bank-rules",
+    "mb310-bank-process",
+    "mb310-netting",
+    "mb310-deferrals",
+    "mb310-deferral-schedules",
+    "mb310-budget",
+    "mb310-budget-report",
+    "mb310-derived",
+    "mb310-derived-posting",
+    "mb310-tags-blog",
+    "mb310-release-plans"
+  ],
+  "findings": [
+    {
+      "id": "mb310-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Condensed snapshot is not the complete objective text",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Previous 89 rows merge or paraphrase current 96 detailed bullets on the same August 14 baseline.",
+      "recommendation": "Archive old objective/status bytes and historical references, then accept canonical full text.",
+      "disposition": "applied",
+      "source_id": "mb-310-blueprint",
+      "resolution": "Archive old objective/status bytes and historical references, then accept canonical full text."
+    },
+    {
+      "id": "mb310-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Financial tags now include a validated fixed-list option",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "10.0.44 adds fixed-list entry validation; 10.0.49 procurement support needs its feature.",
+      "recommendation": "Teach version-specific behavior instead of absolute nonvalidation.",
+      "disposition": "applied",
+      "source_id": "mb310-tags",
+      "resolution": "Teach version-specific behavior instead of absolute nonvalidation."
+    },
+    {
+      "id": "mb310-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Dimension service retirement is narrower than dimension functionality",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 11 deprecation concerns optional large DMF Ledger-import optimization.",
+      "recommendation": "Separate service scope from core account dimensions.",
+      "disposition": "applied",
+      "source_id": "mb310-dimensions",
+      "resolution": "Separate service scope from core account dimensions."
+    },
+    {
+      "id": "mb310-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Repeated revaluation can be overstated or duplicated",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GL uses the delta from its existing balance; subledger-revalued control accounts should be excluded.",
+      "recommendation": "Add original repeat-rate example and explicit scope controls.",
+      "disposition": "applied",
+      "source_id": "mb310-fx",
+      "resolution": "Add original repeat-rate example and explicit scope controls."
+    },
+    {
+      "id": "mb310-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Price agreement does not prove receipt agreement",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Three-way matching checks quantity against selected product receipts.",
+      "recommendation": "Add price-pass/receipt-fail example and separate tolerance types.",
+      "disposition": "applied",
+      "source_id": "mb310-matching",
+      "resolution": "Add price-pass/receipt-fail example and separate tolerance types."
+    },
+    {
+      "id": "mb310-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Amount matches can be ambiguous",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default matching may choose the first matching document.",
+      "recommendation": "Teach reference criteria and manual-ambiguity review.",
+      "disposition": "applied",
+      "source_id": "mb310-bank-rules",
+      "resolution": "Teach reference criteria and manual-ambiguity review."
+    },
+    {
+      "id": "mb310-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Payment journals change the eligible netting population",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Already-included payment transactions are outside the documented flow.",
+      "recommendation": "Run netting first and demonstrate residual/reversal evidence.",
+      "disposition": "applied",
+      "source_id": "mb310-netting",
+      "resolution": "Run netting first and demonstrate residual/reversal evidence."
+    },
+    {
+      "id": "mb310-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Equal periods and recognition posting are distinct controls",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Partial periods prorate and automatic journal posting may be disabled.",
+      "recommendation": "Make original schedule assumptions explicit and verify posted vouchers.",
+      "disposition": "applied",
+      "source_id": "mb310-deferrals",
+      "resolution": "Make original schedule assumptions explicit and verify posted vouchers."
+    },
+    {
+      "id": "mb310-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "An active configuration does not enforce budget control by itself",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Turn On/Off is separate; history and document/formula scope matter.",
+      "recommendation": "Add activation distinction and reservation-to-actual example.",
+      "disposition": "applied",
+      "source_id": "mb310-budget",
+      "resolution": "Add activation distinction and reservation-to-actual example."
+    },
+    {
+      "id": "mb310-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Derived depreciation is copied rather than recalculated",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Different methods should not use derived depreciation to generate their amounts.",
+      "recommendation": "Use separate depreciation calculation in original two-book exercise.",
+      "disposition": "applied",
+      "source_id": "mb310-derived-posting",
+      "resolution": "Use separate depreciation calculation in original two-book exercise."
+    },
+    {
+      "id": "mb310-deep-11",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Historical release plans are no longer the new-feature disclosure source",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MB-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September transition directs new capabilities to AI at Work roadmap.",
+      "recommendation": "Add roadmap/product-document workflow and scheduled retirement check.",
+      "disposition": "applied",
+      "source_id": "mb310-release-plans",
+      "resolution": "Add roadmap/product-document workflow and scheduled retirement check."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mb310-tags-blog",
+      "decision": "accepted-bounded",
+      "author": "Kristi Slininger",
+      "published_on": "2023-04-26",
+      "notes": "Complete main April 26, 2023 article read. Accept design rationale and original decision exercise, qualify original-release/future-plan claims with current tag docs."
+    },
+    {
+      "source_id": "mb330-erp-blog",
+      "decision": "accepted-bounded",
+      "author": "Sameer Verma",
+      "published_on": "2026-09-23",
+      "notes": "Main Finance and roadmap framing read, plus surrounding ERP portfolio text; only Finance exception-evidence worksheet accepted here. Article mixes available and planned through March 2027; no blanket GA or new exam-scope claim."
+    },
+    {
+      "source_id": "microsoft-ai-at-work-roadmap-transition",
+      "decision": "accepted-bounded",
+      "author": "Richard Riley",
+      "published_on": "2026-08-25",
+      "notes": "Complete main August 25 article read. September disclosure transition and planned November 15 Release Planner retirement recorded with future verification; RSS/CSV existence does not mean this repo ingests them."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "35 assertions: allocations, FX deltas, matching, netting, recognition cutoff, reservations, asset books/disposal, elimination and catalog counts."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No Finance tenant, financial transaction, bank/payment file, customer/vendor message, tax filing, paid course or assessment execution.",
+    "Local assertions verify original simplified calculations, dates and public catalog counts; they do not prove Dynamics posting, accounting-policy compliance or localization correctness.",
+    "Long product pages read selectively; full regional, version, security, formula and feature matrices plus linked procedures not exhaustively audited.",
+    "Direct Udemy fetch blocked; indexed metadata is separate evidence. Assessment body empty and partner shell unreadable; O’Reilly/Whizlabs not comprehensively researched again.",
+    "Roadmap entries are estimates; interactive roadmap inventory and RSS/CSV feed ingestion were not implemented or verified. Scheduled review checks the planned November retirement.",
+    "Same-context AI review; independent human review and live lab evidence remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "allocation_fx_matching_netting_deferral_budget_assets_elimination_catalog_assertions": 35,
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/mb-310-2026-09-01-official-objectives.txt",
+    "sha256": "f843902addfd9a29b5d0cfa9ae537ecc5a2afef4ca2b402013f08ed26d5e94d7",
+    "note": "Prior 89-row condensed/paraphrased snapshot; full canonical 96-row August 14 extraction restored without inferring a new blueprint announcement."
+  },
+  "snapshot_comparison": {
+    "previous_condensed_bullets": 89,
+    "current_detailed_bullets": 96,
+    "previous_group_counts": [
+      7,
+      6,
+      8,
+      7,
+      5,
+      5,
+      9,
+      6,
+      7,
+      9,
+      2,
+      3,
+      2,
+      2,
+      6,
+      5
+    ],
+    "current_group_counts": [
+      7,
+      6,
+      8,
+      8,
+      5,
+      5,
+      11,
+      8,
+      7,
+      11,
+      2,
+      3,
+      2,
+      2,
+      6,
+      5
+    ],
+    "baseline": "August 14, 2026",
+    "baseline_change": false,
+    "note": "Prior hand-authored snapshot condensed and paraphrased objectives, including merged cash/bank, receivables, collections and payables bullets. Restore full canonical extraction; seven additional rows are not seven newly announced exam objectives."
+  },
+  "public_learning_path_modules": {
+    "financial": [
+      "Get started with Dynamics 365 Finance",
+      "Configure currencies in Dynamics 365 Finance",
+      "Create fiscal calendars, years, and periods in Dynamics 365 Finance",
+      "Get started with chart of accounts in Dynamics 365 Finance",
+      "Set up chart of accounts in Dynamics 365 Finance",
+      "Set up financial dimensions in Dynamics 365 Finance",
+      "Set up ledgers and journals in Dynamics 365 Finance",
+      "Perform general ledger daily procedures in Dynamics 365 Finance",
+      "Intercompany accounting in Dynamics 365 Finance",
+      "Configure ledger allocations and accruals in Dynamics 365 Finance",
+      "Configure and perform periodic processes in Dynamics 365 Finance",
+      "Work with analytics and reporting in finance and operations apps",
+      "Configure cash and bank management in Dynamics 365 Finance",
+      "Customer and vendor netting in Dynamics 365 Finance",
+      "Set up taxes in Dynamics 365 Finance",
+      "Work with taxes in Dynamics 365 Finance"
+    ],
+    "receivables": [
+      "Set up accounts receivable in Dynamics 365 Finance",
+      "Get started with accounts receivable daily procedures in Dynamics 365 Finance",
+      "Set up credit and collections in Dynamics 365 Finance",
+      "Process credit and collections in Dynamics 365 Finance",
+      "Implement cost management in Dynamics 365 Finance",
+      "Get started with subscription billing in Dynamics 365 Finance",
+      "Recurring contract billing in Dynamics 365 Finance",
+      "Revenue and expense deferrals in Dynamics 365 Finance"
+    ],
+    "payables": [
+      "Configure Accounts payable in Dynamics 365 Finance",
+      "Work with accounts payable daily procedures in Dynamics 365 Finance",
+      "Work with accounting distributions, invoice validations, and settlements in Dynamics 365 Finance",
+      "Set up and use Intelligent OCR for vendor invoices in Dynamics 365 Finance",
+      "Get started with Expense management in Dynamics 365 Project Operations",
+      "Set up and configure Expense management in Dynamics 365 Project Operations"
+    ],
+    "budgeting": [
+      "Set up and use basic budgeting Dynamics 365 Finance",
+      "Set up and use budget control in Dynamics 365 Finance",
+      "Configure and use budget planning in Dynamics 365 Finance"
+    ],
+    "assets": [
+      "Configure fixed assets management in Dynamics 365 Finance",
+      "Set up and acquire fixed assets in Dynamics 365 Finance",
+      "Manage fixed assets in Dynamics 365 Finance",
+      "Work with fixed asset deprecation and disposal in Dynamics 365 Finance"
+    ]
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "mb-310-udemy-financials",
+      "checked_on": "2026-09-28",
+      "method": "Public browser-indexed provider page; direct fetch blocked",
+      "observed_metadata": {
+        "instructor": "D365 Studio",
+        "updated": "November 2024",
+        "sections": 10,
+        "lectures": 24,
+        "runtime": "4h08"
+      },
+      "limitation": "No paid lessons or knowledge-check answers accessed."
+    }
+  ]
+}

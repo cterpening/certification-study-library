@@ -1197,17 +1197,28 @@ Current catalog inspection covers public path/course metadata and selected outli
 
 ### MB-310 — Microsoft Dynamics 365 Finance Functional Consultant
 
-- Official objective map (1–2 hours): [MB-310 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310), using the August 14, 2026 baseline and its change log
-- Five official Microsoft Learn paths (**48 hours 30 minutes listed; allow about 90–140 hours with transactions and reconciliation**) from [MB-310T00](https://learn.microsoft.com/en-us/training/courses/mb-310t00): financial management (20h23), receivables (10h12), payables/expenses (9h56), budgeting (3h03), and fixed assets (4h56)
-- Instructor-led course (4 days): [MB-310T00-A](https://learn.microsoft.com/en-us/training/courses/mb-310t00)
-- Public official labs (allow 10–20 hours selected): [MicrosoftLearning MB-310 repository](https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance); verify individual labs against the August blueprint
-- Free official readiness check (45–90 minutes plus remediation): [MB-310 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification)
-- Broad primer (4 hours): [Pluralsight Microsoft Dynamics 365 path](https://www.pluralsight.com/paths/microsoft-dynamics-365); not an MB-310 course
-- Durable GL supplement (4 hours 8 minutes): [Udemy Financials Part 1](https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/), updated November 2024
-- Dated diagnostic (allow 2–4 hours): [MeasureUp MB-310 practice test](https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html), last updated February 2023 and still containing objectives removed in 2026
-- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, and exact signed-in start/end times control
+Resource details from the [MB-310 guide](../guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose a primary route and trace real accounting journeys from source document through subledger, voucher, ledger, settlement and report. No exact current O'Reilly or Whizlabs MB-310 product was independently verified on September 1, 2026. Treat older products as gap-specific supplements and reject recalled live content, “valid questions,” or pass guarantees.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build several source-document-to-ledger journeys, and add another resource only for a measured gap.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MB-310 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310) | Free | 1–2 hours to map objectives and the August change log |
+| [Configure financial management](https://learn.microsoft.com/en-us/training/paths/set-up-configure-financial-management-work-general-ledger/) | Free | 16 modules; allow 35–55 hours with transactions/reconciliation (editor estimate) |
+| [Manage accounts receivable](https://learn.microsoft.com/en-us/training/paths/implement-accounts-receivable-credit-collections-revenue-recognition/) | Free | 8 modules, including removed cost-management material; allow 18–28 hours with selected practice (editor estimate) |
+| [Manage accounts payable](https://learn.microsoft.com/en-us/training/paths/implement-manage-accounts-payable-expenses/) | Free | 6 modules including OCR and Project Operations expenses; allow 16–24 hours with selected practice (editor estimate) |
+| [Perform budgeting and forecasting](https://learn.microsoft.com/en-us/training/paths/manage-budgeting/) | Free | 3 modules; allow 8–12 hours with all three budgeting capabilities (editor estimate) |
+| [Administer fixed assets and inventory](https://learn.microsoft.com/en-us/training/paths/manage-fixed-assets/) | Free | 4 modules; allow 10–16 hours with lifecycle transactions (editor estimate) |
+| [MB-310T00-A: Manage Financial Operations with Dynamics 365 Finance](https://learn.microsoft.com/en-us/training/courses/mb-310t00) | Paid/provider-dependent | 4 days; English |
+| [Official MicrosoftLearning MB-310 labs](https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance) | Free; MicrosoftLearning license applies | 10–20 hours selected labs; verify each lab against the current blueprint and tenant UI |
+| [Free MB-310 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification) | Free | 45–90 minutes plus review |
+| [Dynamics 365 Finance documentation](https://learn.microsoft.com/en-us/dynamics365/finance/) | Free | 15–35 hours selected implementation and troubleshooting references |
+| [Pluralsight: Microsoft Dynamics 365 path](https://www.pluralsight.com/paths/microsoft-dynamics-365) | Subscription/trial | 6 published courses, 5 hours rounded (5h03 from components); broad product primer, Finance/Project Operations course still listed as coming soon |
+| [Udemy: Dynamics 365 Finance & Operations—Financials Part 1](https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/) | Paid | 4h08, 10 sections/24 lectures; November 2024 update confirmed in public indexed metadata, direct fetch blocked; foundation only |
+| [MeasureUp MB-310 practice test](https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html) | Paid; free demo | 103 questions listed; February 2023 update, older objectives. Allow 2–4 hours with review (editor estimate); no paid questions inspected |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the four-day official-course pattern for planning; verify the signed-in event’s exact start/end time |
+
+The five paths list **37 distinct modules** (16 + 8 + 6 + 3 + 4). Their current public pages do not expose a total runtime, so the earlier 48h30 sum is withdrawn. Cost management remains in the receivables path; expense modules reference Project Operations. Use the current blueprint to select content. The table's study-hour ranges are editorial estimates, not provider runtimes. Allow roughly **100–160 hours** for a new Finance practitioner to complete a primary route, build the labs and remediate the Practice Assessment. No exact O’Reilly or Whizlabs MB-310 product was established in the earlier catalog review; those providers were not comprehensively searched again here. Partner events require signed-in verification and the direct Practice Assessment fetch returned no substantive body. Reject recalled live content, “valid questions,” pass guarantees and any practice source that cannot explain its authorship and update baseline.
 
 ### MB-330 — Microsoft Dynamics 365 Supply Chain Management Functional Consultant
 

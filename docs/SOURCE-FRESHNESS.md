@@ -49,6 +49,22 @@ publishes one, affected exams, catalog status, evidence, confidence, and a bound
 recommended action. If the official source does not publish a date, say so rather
 than guessing.
 
+### Dynamics 365 and Power Platform release discovery
+
+From September 2026, use the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap)
+for new Dynamics 365, Power Platform and Dataverse disclosures. The older Learn release
+plans remain useful historical evidence. Microsoft's [transition announcement](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/)
+announces November 15, 2026 retirement of Release Planner; verify that event after its
+date rather than describing it as already completed.
+
+For an applicable feature, record its ID, product, status, estimated date and source
+observation date. Confirm behavior and support boundaries against current product
+documentation and, where required, the tenant's release state. Roadmap or blog wording
+alone does not establish GA, licensing, regional availability or exam scope. Carry
+material changes into a dated maintenance event and the certification's next review.
+The scheduled repository workflow detects and queues review work; it does not ingest
+the roadmap's RSS/CSV or perform this semantic assessment automatically.
+
 ## Five required checks
 
 Each result records `passed`, `finding`, `blocked`, or `not-applicable`, plus

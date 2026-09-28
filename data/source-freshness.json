@@ -4,6 +4,271 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-mb310-deep-review",
+      "title": "MB-310 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MB-310"
+      ],
+      "results": [
+        {
+          "exam_code": "MB-310",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md",
+          "baseline_sha256": "9ea64d6c13d71f533da21d877b806c2532030ce90e8d85145ad6554df68d6431",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "96 August 14 objectives mapped; canonical extraction replaces archived 89-row condensed snapshot. Credential active, 100 minutes, two languages, annual renewal, no newer announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Review fixed-list tags/service scope, FX exclusion and calculation, matching/netting, recognition cutoff/posting, budget enforcement/reservations and derived books."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Check 10.0.49 version/feature requirements and dimension-service notice; current AI at Work transition replaces reliance on historical wave plans. ERP blog future features remain qualified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "37 distinct modules across five paths; old runtime sum withdrawn. Four-day renamed course, six-course PS303 minutes, indexed Udemy4h08 and old MeasureUp103-question inventory checked within access limits."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Resolve generic tags-never-validate wording with current fixed-list exception; preserve financial dimensions despite service deprecation. Correct implicit active-budget enforcement and copied-depreciation assumptions. Qualify broad audience, coming-soon catalog and roadmap claims."
+            }
+          },
+          "findings": [
+            {
+              "id": "mb310-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Condensed snapshot is not the complete objective text",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Previous 89 rows merge or paraphrase current 96 detailed bullets on the same August 14 baseline.",
+              "recommendation": "Archive old objective/status bytes and historical references, then accept canonical full text.",
+              "disposition": "applied",
+              "source_id": "mb-310-blueprint",
+              "resolution": "Archive old objective/status bytes and historical references, then accept canonical full text."
+            },
+            {
+              "id": "mb310-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Financial tags now include a validated fixed-list option",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "10.0.44 adds fixed-list entry validation; 10.0.49 procurement support needs its feature.",
+              "recommendation": "Teach version-specific behavior instead of absolute nonvalidation.",
+              "disposition": "applied",
+              "source_id": "mb310-tags",
+              "resolution": "Teach version-specific behavior instead of absolute nonvalidation."
+            },
+            {
+              "id": "mb310-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Dimension service retirement is narrower than dimension functionality",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-dimensions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 11 deprecation concerns optional large DMF Ledger-import optimization.",
+              "recommendation": "Separate service scope from core account dimensions.",
+              "disposition": "applied",
+              "source_id": "mb310-dimensions",
+              "resolution": "Separate service scope from core account dimensions."
+            },
+            {
+              "id": "mb310-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Repeated revaluation can be overstated or duplicated",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/foreign-currency-revaluation-general-ledger",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "GL uses the delta from its existing balance; subledger-revalued control accounts should be excluded.",
+              "recommendation": "Add original repeat-rate example and explicit scope controls.",
+              "disposition": "applied",
+              "source_id": "mb310-fx",
+              "resolution": "Add original repeat-rate example and explicit scope controls."
+            },
+            {
+              "id": "mb310-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Price agreement does not prove receipt agreement",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-payable/accounts-payable-invoice-matching",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Three-way matching checks quantity against selected product receipts.",
+              "recommendation": "Add price-pass/receipt-fail example and separate tolerance types.",
+              "disposition": "applied",
+              "source_id": "mb310-matching",
+              "resolution": "Add price-pass/receipt-fail example and separate tolerance types."
+            },
+            {
+              "id": "mb310-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Amount matches can be ambiguous",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/set-up-bank-reconciliation-matching-rules",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default matching may choose the first matching document.",
+              "recommendation": "Teach reference criteria and manual-ambiguity review.",
+              "disposition": "applied",
+              "source_id": "mb310-bank-rules",
+              "resolution": "Teach reference criteria and manual-ambiguity review."
+            },
+            {
+              "id": "mb310-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Payment journals change the eligible netting population",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/cash-bank-management/net-customer-and-vendor-balances",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Already-included payment transactions are outside the documented flow.",
+              "recommendation": "Run netting first and demonstrate residual/reversal evidence.",
+              "disposition": "applied",
+              "source_id": "mb310-netting",
+              "resolution": "Run netting first and demonstrate residual/reversal evidence."
+            },
+            {
+              "id": "mb310-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Equal periods and recognition posting are distinct controls",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/accounts-receivable/sb-deferrals",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Partial periods prorate and automatic journal posting may be disabled.",
+              "recommendation": "Make original schedule assumptions explicit and verify posted vouchers.",
+              "disposition": "applied",
+              "source_id": "mb310-deferrals",
+              "resolution": "Make original schedule assumptions explicit and verify posted vouchers."
+            },
+            {
+              "id": "mb310-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "An active configuration does not enforce budget control by itself",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/budget-control-overview-configuration",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Turn On/Off is separate; history and document/formula scope matter.",
+              "recommendation": "Add activation distinction and reservation-to-actual example.",
+              "disposition": "applied",
+              "source_id": "mb310-budget",
+              "resolution": "Add activation distinction and reservation-to-actual example."
+            },
+            {
+              "id": "mb310-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Derived depreciation is copied rather than recalculated",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/finance/fixed-assets/post-derived-value-models",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Different methods should not use derived depreciation to generate their amounts.",
+              "recommendation": "Use separate depreciation calculation in original two-book exercise.",
+              "disposition": "applied",
+              "source_id": "mb310-derived-posting",
+              "resolution": "Use separate depreciation calculation in original two-book exercise."
+            },
+            {
+              "id": "mb310-deep-11",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Historical release plans are no longer the new-feature disclosure source",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/release-plans/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "MB-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September transition directs new capabilities to AI at Work roadmap.",
+              "recommendation": "Add roadmap/product-document workflow and scheduled retirement check.",
+              "disposition": "applied",
+              "source_id": "mb310-release-plans",
+              "resolution": "Add roadmap/product-document workflow and scheduled retirement check."
+            }
+          ],
+          "notes": "Entire guide and 96 detailed August 14 objectives mapped; archive the previous condensed 89-row snapshot. Add eight worked examples, ten labs and 48 answered checks. Refresh tag validation, dimension-service lifecycle, FX/matching/netting, deferral posting, budget enforcement and derived books, plus three bounded article tasks and current catalogs. 35 local assertions passed; no tenant or paid-content execution. Independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-mb-310-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-mb230-deep-review",
       "title": "MB-230 complete guide and learning-content review",
       "rubric_version": 1,

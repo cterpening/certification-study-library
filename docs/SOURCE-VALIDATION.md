@@ -792,6 +792,8 @@ The review maps every April 20, 2026 subobjective to a business requirement, gra
 
 ## MB-310 coverage record
 
+The September 28 [deep review](research/2026-09-28-mb-310-deep-review.md) maps 96 detailed objectives. Entire guide and 96 detailed August 14 objectives mapped; archive the previous condensed 89-row snapshot. Add eight worked examples, ten labs and 48 answered checks. Refresh tag validation, dimension-service lifecycle, FX/matching/netting, deferral posting, budget enforcement and derived books, plus three bounded article tasks and current catalogs. 35 local assertions passed; no tenant or paid-content execution. Independent human review pending. Current guide citations: 35 registered, 34 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Implement financial management | Section 1, all integrated scenarios, and Labs 1–4 |
