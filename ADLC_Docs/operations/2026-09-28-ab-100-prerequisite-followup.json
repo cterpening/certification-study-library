@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "exam_code": "AB-100",
+  "reviewed_on": "2026-09-28",
+  "scope": "Scheduled prerequisite discrepancy follow-up only; no new full deep-review receipt, objective audit, live lab or human review.",
+  "source_fetches": [
+    {
+      "id": "ab100-exam-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "checked_at": "2026-09-28T05:16:09.245661+00:00",
+      "health": {
+        "id": "ab100-exam-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "checked_at": "2026-09-28T05:16:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "content_type": "text/html",
+        "page_title": "Exam AB-100: Agentic AI Business Solutions Architect Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "duration_signals": [],
+        "signal_fingerprint": "deceeb5ba0f6c7e32a79fb4332ec780dcab5439ab020bc9a1eaa6ee5aac466d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "sha256": "89cd775a7d996bd3b9678190fec3c301f65c905ae2cd32d92f1bf0c996fad714",
+      "text_characters": 11201
+    },
+    {
+      "id": "ab-100-credential-current",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "checked_at": "2026-09-28T05:16:09.600387+00:00",
+      "health": {
+        "id": "ab-100-credential-current",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "checked_at": "2026-09-28T05:16:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "duration_signals": [],
+        "signal_fingerprint": "cc7466999b277962242ee9a34ffedcc49a2328f205a78411c4c34685002cd926",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "sha256": "b6b4ca72a77edf1c5c32fc96bec0de636866158ce386de1b480a7abe6c6eac12",
+      "text_characters": 7765
+    }
+  ],
+  "prerequisite_lists": {
+    "ab100-exam-page": [
+      "MB-280",
+      "PL-200",
+      "MB-330",
+      "PL-400",
+      "MB-230",
+      "MB-310",
+      "MB-500",
+      "MB-800",
+      "MB-820",
+      "AI-300",
+      "AI-103",
+      "AB-620",
+      "AB-210",
+      "AB-410",
+      "AB-250"
+    ],
+    "ab-100-credential-current": [
+      "MB-330",
+      "PL-400",
+      "MB-230",
+      "MB-310",
+      "MB-500",
+      "MB-800",
+      "MB-820",
+      "AI-300",
+      "AI-103",
+      "AB-620",
+      "AB-210",
+      "AB-410",
+      "AB-250"
+    ]
+  },
+  "exam_only": [
+    "MB-280",
+    "PL-200"
+  ],
+  "credential_only": [],
+  "finding": "Exam page still lists MB-280 and PL-200 while credential page omits both. Existing guide caveat remains supported. No ambiguous eligibility declared valid.",
+  "outcome": "unresolved",
+  "previous_event": {
+    "id": "ab100-prerequisite-page-conflict",
+    "exam_codes": [
+      "AB-100"
+    ],
+    "review_on": "2026-09-28",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+    "action": "Recheck conflicting AB-100 prerequisite lists: the exam page includes MB-280/PL-200 while the credential page omits both. Retain the warning until Microsoft clarifies eligibility; do not infer a prerequisite from exam availability."
+  },
+  "next_review_on": "2026-10-05",
+  "validation": {
+    "status": "passed",
+    "unit_tests": 169,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Two public-page fetches and local publication checks; no tenant or eligibility transaction."
+  }
+}

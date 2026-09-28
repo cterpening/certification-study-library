@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: recheck the AB-100 prerequisite discrepancy; both conflicting lists remain published. Keep the blocker open and schedule October 5 follow-up without resetting the full-review receipt. See the [bounded recheck](docs/research/2026-09-27-ab-100-deep-review.md#september-28-scheduled-prerequisite-recheck).
+
 - September 28, 2026: prevent recently reviewed blockers and previously reviewed event dates from repeatedly displacing initial deep reviews. Keep unresolved evidence gaps visible, publish the next eligible review date, and reopen scheduling for changed text, later due events or an expired interval. See the [review process](docs/AUTOMATION.md#one-certification-at-a-time).
 
 - September 28, 2026: deeply review SC-300's 98 objectives; preserve the unresolved official weighting discrepancy. Add five examples, two labs, 48 answers and two bounded blog exercises covering effective roles, baseline scopes, risk migration, downstream access removal, PIM timing and retained evidence. See the [SC-300 report](docs/research/2026-09-28-sc-300-deep-review.md).

@@ -215,3 +215,7 @@ The consumption calculations, incomplete-run percentages, question/answer
 alignment, scenario permissions, and internal navigation were checked. An
 implementation record with before/after guide hashes and validation results is
 stored at `ADLC_Docs/operations/2026-09-27-ab-100-learning-content.json`.
+
+## September 28 scheduled prerequisite recheck
+
+The public [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/) still includes MB-280 and PL-200, and the [credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/) still omits both. The existing guide caveat remains necessary. This bounded recheck leaves the blocker open and schedules another check for October 5; it does not reset the September 27 full-review date or establish prerequisite eligibility. Fetch timestamps, response hashes and the extracted lists are recorded in `ADLC_Docs/operations/2026-09-28-ab-100-prerequisite-followup.json`. No live lab or account-specific eligibility check was performed.
