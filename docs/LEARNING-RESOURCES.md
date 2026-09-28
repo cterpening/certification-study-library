@@ -1281,17 +1281,28 @@ The six paths contain **35 module placements and 34 distinct modules**; the migr
 
 ### MB-800 — Microsoft Dynamics 365 Business Central Functional Consultant
 
-- Official objective map (1–2 hours): [MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800), using the June 30, 2026 baseline and change log
-- Five official Microsoft Learn paths (**43 hours 40 minutes listed; allow 90–150 hours with transactions and reconciliation**) from [MB-800T00](https://learn.microsoft.com/en-us/training/courses/mb-800t00): company setup (5h42), financial configuration (11h06), trade configuration (6h15), trade operations (12h49), and financial operations (7h48)
-- Instructor-led course (5 days): [MB-800T00-A](https://learn.microsoft.com/en-us/training/courses/mb-800t00)
-- Public MIT-licensed labs (allow 15–30 hours): [MicrosoftLearning MB-800](https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant); review current issues and tenant/localization differences
-- Free official readiness check (45–90 minutes plus remediation): [MB-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification)
-- Current broad primer (2 hours 38 minutes): [O’Reilly/Apress Business Central Essentials](https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/), January 2026; useful case-study context, not complete exam depth
-- Current video course (18 hours 43 minutes): [Udemy MB-800 by Dr. Gomathi Srinivasan](https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/), updated February 2026; gap-check June inventory/agent additions
-- Paid diagnostic (2–5 hours): [MeasureUp MB-800](https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html), 132 questions and last updated January 2026; map against the June change log
-- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, and exact signed-in start/end times control
+Resource details from the [MB-800 guide](../guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose a primary route and build one company from setup through close, including corrections and reconciliation. No exact current Pluralsight or Whizlabs MB-800 product was independently verified. Question-bank-only, recalled-content and guaranteed-pass listings were deliberately excluded.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build one company from setup through close, and add a second resource only for a measured gap.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800) | Free | 1–2 hours to map four domains and June change log |
+| [Set up Business Central](https://learn.microsoft.com/en-us/training/paths/set-up-business-central/) | Free | 5 modules; runtime not shown; 12–20 hours with setup/migration/security labs |
+| [Configure financials](https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/) | Free | 15 modules; runtime not shown; 25–40 hours with posting/reconciliation practice |
+| [Configure sales and purchasing](https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/) | Free | 7 modules; runtime not shown; 12–20 hours with price/inventory setup |
+| [Process sales and purchasing](https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/) | Free | 12 modules; runtime not shown; 25–40 hours with full document lifecycles |
+| [Process financial operations](https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/) | Free | 9 modules; runtime not shown; 18–30 hours with close/correction/reconciliation |
+| [MB-800T00-A: Manage business solutions with Microsoft Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-800t00) | Paid/provider-dependent | 5 days; English |
+| [MicrosoftLearning MB-800 labs](https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant) | Free; MIT | 15–30 hours selected; review open issues and current tenant/localization differences |
+| [Free MB-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
+| [Business Central documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/) | Free | 20–50 hours selected implementation/reference reading |
+| [O’Reilly: Business Central Essentials](https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/) | Subscription/trial | 186-page Apress book by Dr. Gomathi S, January 2026; 2h38 platform reading estimate, not video runtime; broad primer |
+| [Udemy MB-800 by Dr. Gomathi Srinivasan](https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/) | Paid | 14 sections, 36 lectures, 18h43; public listing updated February 2026, gap-check against June inventory/agent changes |
+| [MeasureUp MB-800 practice test](https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html) | Paid; free demo | 2–5 hours; 132 questions, last updated January 2026, so map against June changes first |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
+
+The five official paths show **48 module placements** (5/15/7/12/9); the current public pages do not show runtime. The earlier 43h40 total is withdrawn. Linked units were not exhaustively read; budgeted asset and integration material can be adjacent to the detailed exam bullets. Allow roughly **100–170 hours** for a learner without current Business Central implementation experience to configure, transact, reconcile, correct and remediate. No exact current Pluralsight or Whizlabs MB-800 product was independently verified. Question-bank-only, recalled-content and guaranteed-pass listings were excluded.
 
 ### MB-820 — Microsoft Dynamics 365 Business Central Developer
 

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review MB-800’s 123 objectives; add seven worked examples, ten labs and 48 answered checks. Clarify security, inventory/ledger corrections and agent controls; curate useful articles and refresh learning resources. See the [MB-800 report](docs/research/2026-09-28-mb-800-deep-review.md).
+
 - September 28, 2026: deeply review MB-500’s 89 objectives; add six worked examples, ten labs, 48 answered checks and a locally executed replay/rollback model. Correct Batch OData and entity-security assumptions; refresh UDE/migration, X++ contracts, integrations and catalogs. See the [MB-500 report](docs/research/2026-09-28-mb-500-deep-review.md).
 
 - September 28, 2026: deeply review MB-310’s 96 published objectives, preserving the older condensed snapshot. Add eight worked examples, ten labs, 48 answered checks, current Finance behavior, three useful article tasks and refreshed catalogs. See the [MB-310 report](docs/research/2026-09-28-mb-310-deep-review.md).

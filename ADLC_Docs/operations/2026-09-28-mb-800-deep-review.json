@@ -1,0 +1,2529 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MB-800",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "1c72faeaeb38d6dc2d09de2109111a738d7313233f7207178e6f1ac90ca65704",
+  "guide_after_sha256": "2031a157af330803a99956115b1a9f2402d1cd6c122bc2d74773a959b5370583",
+  "prior_records": {
+    "exam": {
+      "code": "MB-800",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Dynamics 365 Business Central Functional Consultant",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+      "guide_path": "guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Applied Business Central functional-consulting experience across company setup and migration, security, dimensions, workflows, financial configuration, posting groups, receivables, payables, fixed assets, sales, purchasing, inventory, journals, corrections and reconciliations, plus the ability to trace documents through subledgers and the general ledger."
+    },
+    "review": {
+      "id": "mb-800-2026-09-01-source-validation",
+      "exam_code": "MB-800",
+      "guide_path": "guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mb-800-official-objectives.txt",
+      "blueprint_snapshot_sha256": "29f5557d525b445ac9b0c44e81dd0298fba788ae62e53fa44e4a50eaeb7c7fff",
+      "objective_coverage": [
+        {
+          "objective_group": "Set up Business Central",
+          "guide_sections": [
+            "Section 1",
+            "Controlled-migration scenario",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Configure financials",
+          "guide_sections": [
+            "Section 2",
+            "Migration and procure-to-pay scenarios",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configure sales and purchasing",
+          "guide_sections": [
+            "Section 3",
+            "Order-to-cash and procure-to-pay scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Perform Business Central operations",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 5 and 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 15,
+        "reachable": 13,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every June 30, 2026 subobjective maps to a company/setup/master record, permission/control, business document, state transition, posting matrix, ledger entry, correction, reconciliation or evidence decision. Three scenarios, eight labs and 36 checks cover all four domains. All 15 URLs are cataloged: 13 reachable, with O'Reilly and Udemy automation-blocked; none missing or broken. The guide records the active 100-minute eight-language exam, free assessment, 43h40 official paths, five-day course, MIT labs, June blueprint changes and current commercial-resource boundaries."
+    },
+    "sources": [
+      {
+        "id": "mb-800-blueprint",
+        "title": "Study guide for Exam MB-800",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Authoritative four-domain blueprint: skills measured as of June 30, 2026; no future update announced."
+      },
+      {
+        "id": "mb-800-credential",
+        "title": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Active intermediate credential; 100-minute exam in eight languages, annual renewal and free Practice Assessment."
+      },
+      {
+        "id": "mb-800-path-setup",
+        "title": "Set up Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/set-up-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Five hours 42 minutes across five modules on company setup, security, numbering, migration and workflows."
+      },
+      {
+        "id": "mb-800-path-financials",
+        "title": "Configure financials in Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Eleven hours six minutes across 15 modules on G/L, chart, posting groups, journals, currency, dimensions, reporting and fixed assets."
+      },
+      {
+        "id": "mb-800-path-trade-setup",
+        "title": "Configure sales and purchasing in Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Six hours 15 minutes across seven modules on items, customers, vendors, locations, SKUs, prices and discounts."
+      },
+      {
+        "id": "mb-800-path-trade-operations",
+        "title": "Process sales and purchasing in Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Twelve hours 49 minutes across 12 modules on interface, purchase/sales lifecycles, prepayments and inventory operations."
+      },
+      {
+        "id": "mb-800-path-financial-operations",
+        "title": "Process financial operations in Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Seven hours 48 minutes across nine modules on analysis, journals, payments, reconciliation, corrections and fixed assets."
+      },
+      {
+        "id": "mb-800-course",
+        "title": "MB-800T00-A Manage business solutions with Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-800t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Five-day official course; its five self-directed paths total 43 hours 40 minutes."
+      },
+      {
+        "id": "mb-800-labs",
+        "title": "MB-800 Business Central Functional Consultant labs",
+        "url": "https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "MIT-licensed public course labs; review current repository issues and tenant/localization differences before use."
+      },
+      {
+        "id": "mb-800-practice",
+        "title": "MB-800 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Free official readiness assessment."
+      },
+      {
+        "id": "mb-800-docs",
+        "title": "Business Central documentation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Current first-party setup, finance, trade, inventory, workflow, Copilot, integration, troubleshooting and administration reference."
+      },
+      {
+        "id": "mb-800-oreilly-essentials",
+        "title": "Microsoft Dynamics 365 Business Central Essentials",
+        "url": "https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/",
+        "publisher": "O'Reilly / Apress",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "January 2026, 186 pages and provider estimate two hours 38 minutes; broad foundation and implementation case study, not full blueprint depth."
+      },
+      {
+        "id": "mb-800-udemy-gomathi",
+        "title": "MB-800 Dynamics 365 BC Functional Consultant Exam Training",
+        "url": "https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/",
+        "publisher": "Udemy / Dr. Gomathi Srinivasan",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Eighteen hours 43 minutes across 36 lectures, updated February 2026; gap-check against the June 2026 inventory and agent changes."
+      },
+      {
+        "id": "mb-800-measureup",
+        "title": "Microsoft Practice Test MB-800",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "132-question practice test last updated January 2026; map gaps against the June 2026 official change log before using diagnostically."
+      },
+      {
+        "id": "mb-800-partner-skilling-hub",
+        "title": "Microsoft Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-800"
+        ],
+        "notes": "Eligible-partner sign-in required to verify exact event start/end times and availability; use five-day course only as a planning estimate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "937ca9e1af338e1e0c9d4f5df7b3bde0b55417299fcfd45c61ca12825d02157e",
+      "guide_sections": "1 / Assisted Setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "a6e91448bcb129fa544bf0a1410f56b66c79b4f0efeff6d58bcbc1fd2f763fd8",
+      "guide_sections": "1 / Configuration worksheet",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "34be71f3554fcf424dd981da079759042338f3ddb9e802c5dbe89d7cc716c96f",
+      "guide_sections": "1 / Configuration packages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "9c4835d1a65951ba9a3b1dde78ab806a7f91a440e5c8b213063c00f7eeca4c90",
+      "guide_sections": "1 / Opening journals and controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "172632c1f2d81a2763458c0102ce319c15a3af813dd2257d1349d1b1605c2c53",
+      "guide_sections": "1 / Migration dependency and reconciliation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "31ca4bf656043e08efff664e39bc8d88b6ae279734c0508b181befdf5743c1a7",
+      "guide_sections": "1 / Profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "fd8f7786bc26cdbde33445d82953ef3e0fb65d64810a8d8abfcf3799ed0aecaf",
+      "guide_sections": "1 / User setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "20fb07fd4f80e8c947fe90860d0923ab5f697b65234cf72e405aa64c8931d591",
+      "guide_sections": "1 / Permissions and sets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "a65a158d826560089bdec3664cb11faacb6d5077b961b4038d3246a4ddbd4937",
+      "guide_sections": "1, example 1 / Combined security filters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "6c8ff8713a1c80d5459679980dd137ff56d1f20d124ddf61b85fb093c5798257",
+      "guide_sections": "1 / Security groups and assignment paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "d506ff3dc04746e639b8509d505abb3a09db799aa697cd870d7111055d6025bb",
+      "guide_sections": "1 / Audit access and changes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "083a82538eae4ee861c4cb4892d4aa9efa9447f773b5e3889e6a6d4d10934f40",
+      "guide_sections": "1 / Reports and layouts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "6da9d4c1f41ebcc9701732e85bc3511e09895c919300f7bf1a5b41fadd2da509",
+      "guide_sections": "1 / Job-queue state and logs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "01f8392e25a6916a2c5c7e1bc727323ec0237713bb1c6b7ecc4596a563a4c509",
+      "guide_sections": "1 / Number series",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "ed0e58450e24bb364c72b723373f33f22d2036197b7b40c2cb785a44e2871ed5",
+      "guide_sections": "1, example 7 / Copilot and agent controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "b0452ebd76b1e2435cc66a0e76b973ca0ab8b1dc6ca4264a4ce08a871c61eb64",
+      "guide_sections": "1 / Dimension values",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "2eb77ceb6df286c04a7f8faf946d180c40fdec6f600898aa4a80dcda2f5bcd9c",
+      "guide_sections": "1 / Global and shortcut dimensions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "2c7ccdd4420c73da59c93063c698287c3ffd3ec1e9e98c4fb95e82f9cc76a66a",
+      "guide_sections": "1 / Master defaults",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "af4b18a35824875459862f1811d4ceaf22fe032d8869972ed5f587efe28dc59b",
+      "guide_sections": "1 / Blocked combinations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "d76a1c651faf80df28bd1965ea1f2fa7fec0fd94c2f1a1541b98bb5c4e7c7b2f",
+      "guide_sections": "1 / Account-type defaults",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "045f8b346c1e092ef9f4d78c218c2ae5ab3c07c956031d818ddc43b43ba3c25f",
+      "guide_sections": "1 / Default priorities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "b0c3bd94dee673e214bd0d71ccf4062bb9fe4ee9b46c5e37ccb3af0e588cc1a6",
+      "guide_sections": "1 / Native workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "61ef191ebd2928bd685f0cd704de654b24d527215ccc5e75714514bde3c29c81",
+      "guide_sections": "1 / Notification ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "a79712ce1b27e9bce6c0fd4af86c561dc4d10d83c7afb1c79f56a1643ed7e5bb",
+      "guide_sections": "1 / Approval users and groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "8979162976531ea017546a64bee6ec47397648b9ad435c4a0a83b3b028ed8cb3",
+      "guide_sections": "2 / General Ledger Setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "194d434b44fd478a004e09d540baa9e80b3713f259f371f93a5f601daf9ec525",
+      "guide_sections": "2, 4 / Period and posting-range controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "790ef7b31e3ab7dd82acbc85fe08d5bb6bf0df52908bd17f28d35261c6df8ef4",
+      "guide_sections": "2 / Payment terms",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "1aa75edc70917145c4b4de2b818eb09153bbb51113e0f19230eb999b30e18633",
+      "guide_sections": "2, example 5 / Deferrals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "29e89f472f6c4ee61196737caa75797f110c50176feda744e0f05695ceb715c0",
+      "guide_sections": "2, 4, example 6 / Currency rates and revaluation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "419b8feb8b8aac899272be956c072b40cc698102c1836634854ff435afc68dae",
+      "guide_sections": "2 / Payment methods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "494d52e541c18c1b581fdb56c0d5e6107871c46270aa3113c40fc2cc4480375d",
+      "guide_sections": "2 / G/L accounts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "a372f1c2284fc991e7caeef912b306e85b3fe39dd4b4b27dcbb811d5d7c928c5",
+      "guide_sections": "2 / Account categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "53541778c241fc68d3224c720ddfc9f689146e8773da82c52a1fd9e685de2729",
+      "guide_sections": "2 / Financial reports",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "4e7ee61ae40b014a00aeb57dfd4a9aa86fa962f158a49db1b459faeba0040f7c",
+      "guide_sections": "2, example 5 / G/L allocations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "016eafdfcccf4ba9e40b4ef9f1407f4bca592a027681bd89b076d3deb34bc6dc",
+      "guide_sections": "2 / Specific posting groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "295b3f739dc0b0465e3082cfbca54d308c7f5c9ea9bf268ddb7f2702292ad356",
+      "guide_sections": "2 / General groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "201c3ca449e6369943e8709b7a35a9854c07c11c404435929a52b6f1cb769ea4",
+      "guide_sections": "2 / General Posting Setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "8455e93eb6f4addacebaff7f374fd659abf71460e71ec91637a6582c40d5207c",
+      "guide_sections": "2, example 2 / Inventory and interim mapping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "d10adfc267b8db4e159dc5f457a27c0f9172fcf928c314b5900f0a2aad73f247",
+      "guide_sections": "2 / Multiple posting groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "e19fd2a6de804783d130a22aa23dfd92888aa84df6711fda13aacad9ad2652d8",
+      "guide_sections": "2 / Bank cards",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "15d77488e194a3fdb2e0e899c89cf7bee7e3392debb2af526f0da1b3735aa634",
+      "guide_sections": "2 / Journal templates and numbering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "c6c2478444e13f51330dc61b23a42c64996ab599ac598ffbbd8a04656c198f09",
+      "guide_sections": "2 / Batches",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "8225d18766c4c9e1c4f239604e8a38a6f68a8ebd3035075efe354d4b43dfe743",
+      "guide_sections": "2, 4 / Recurring templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "178a1ebbde1cd0eeca5ab07fc2af05f00b6f91e6fa1ae672231a5041afb1e039",
+      "guide_sections": "2 / Vendor and bank setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "ee2a3387cc45a58b940823acc3054d5df298538c40ebb81c2152594608fd312b",
+      "guide_sections": "2 / Purchases & Payables Setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "cc27792806166062d5272fc463a07de6547a9afefe9b2adc21bb74ebc12d0937",
+      "guide_sections": "2, 4 / Payment journals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "81f5f4bbe0576a9664aa1e650c45cde37537aba24805b6a7853aeef7abb9d132",
+      "guide_sections": "2, 4 / Vendor and detailed ledger trace",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "06e74698c44e878063144720e9339ff4e49cdef0641e5d73af3238b38b27484a",
+      "guide_sections": "2 / Customer and related setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "a20e60784b28de0f64a0b22c0cee6b1ba41a1ec68520c2976f0892376b5791f6",
+      "guide_sections": "2 / Sales & Receivables Setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "545f6891fbb54b900dc57bb20e71b870091389b89c80230052777373cd913f2e",
+      "guide_sections": "2, 4 / Cash-receipt journals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "4a1583f0432781c4b6ef73fc435526308933190bf1e8db3532cad7f070301ff9",
+      "guide_sections": "2, 4 / Payment Registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "e3254b592cce318c21c42f66f3bcf92673c71c2ca5e9dd8955a947174c8bac45",
+      "guide_sections": "2, 4 / Customer and detailed ledger trace",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "8008c32a3e4d36c1fe01d79002c6bffa2bcea07bccfde688843d6f1e68a77a55",
+      "guide_sections": "2 / Asset setup, books and classifications",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "84e0d660e68441f16918b1ab5555f20f283c2a7a389156904688b73eeb2f8eff",
+      "guide_sections": "2 / Main assets and components",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "c7d9326a8c2c1bfa78dcc04d54219bd5d23e090d06813b6462792c3462bfc196",
+      "guide_sections": "2 / Depreciation methods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "d7a77578559312bc6edd8e4fb965c41317fa37467296543699de9a244ff71d38",
+      "guide_sections": "3 / Inventory adjustment/posting controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "afe48e819f44b2853887c041379882919463e10a6bf26b2b401668d5fc2b4df8",
+      "guide_sections": "3 / Item category, attributes, UOM and variants",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "5d9acd09432e68046fb0fec0f5ba87290df95821f5522538ce404e2a3710fbbd",
+      "guide_sections": "3 / Locations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "dde1f26817f7be5bf4e3408cac81fff4bde92c443dd3b6ce7a57445c02580dee",
+      "guide_sections": "3, example 2 / Item/value/G/L relationship",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "8975bfd9b345512774e40a130dcdb91b0795872f26b261da48126eb1438db26a",
+      "guide_sections": "3 / Costing methods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "f28f77259bedf859631df177c174e3b9b2c6f6093909d49cc3ab7452272ecec2",
+      "guide_sections": "3 / SKU settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "6da3f016372b3e972606887aaf28abceded4eac7a326f87c036de41ef1bf9b2c",
+      "guide_sections": "3 / Customer shipping and location defaults",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "657d323699349bfc57a98898cdec8f4229e3dbed45fcf8d066cfb75f1406477b",
+      "guide_sections": "3 / Vendor order, lead time and location defaults",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "78daf578eb6357ae19776a3f042a3b31f2d5beede1da7af62d265698caa2ab34",
+      "guide_sections": "3 / Purchase prices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "ec7946dd2720a921ed3616eefdfcd4d8cc4d8ce0f7c1139048fc178ca900c6df",
+      "guide_sections": "3 / Purchase discounts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "435da218961737f8922e4e48c6582ea0c4e46e7b4a639b8b6d88292119c52ee8",
+      "guide_sections": "3 / Sales prices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "f68b48ea659c4e09036a8e4ad602bece676ccf41ae4223d5a6bd6c7af0a9eb96",
+      "guide_sections": "3, example 5 / Sales discounts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "47236ed170776468c5a87e88362677d0a1107bd03f33d26e674c4640f9d17876",
+      "guide_sections": "4 / Design/customization/personalization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "fede8e5f769468458a68e25bd5c70d2b1a326fe567bae62e3de66fe1fb503b0f",
+      "guide_sections": "4 / Profile customization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "516f885b0bed638b6788cfd3d9140fd18f70532f33ec524f53ab65a03d4c76c1",
+      "guide_sections": "4 / Filters and views",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "aed90bbc40bf9abe0649e315822f84dfbec4e78e2c59bd44449fceeae8c2422d",
+      "guide_sections": "4 / Related entries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "ff04eef5b6a94ab0d2e96d599e731d62199baaea3abbd77480e07ae90ceea845",
+      "guide_sections": "4 / Page inspection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 6,
+      "objective_sha256": "8aee51d75cf9b3600e2dabdf57808bf212cf05a37998afd2d926722c2a9e7177",
+      "guide_sections": "4 / Edit in Excel",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 7,
+      "objective_sha256": "4a0903b7840ad8b7854c43a0e1f2e8690f6aa282c8200cfae719a74b8d968b31",
+      "guide_sections": "4 / Analysis mode",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 8,
+      "objective_sha256": "f0c6a786ea9279011dc6add43134d0057958c6fa74849d07cba566ae0e62dd0a",
+      "guide_sections": "4 / Personalization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "fddc933a3102369d2b60d2f1dd39d0b84842d8f7a011724d1796f0dbc686890c",
+      "guide_sections": "4 / Purchase quotes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "b7ffddfb39d60220f92312b3086f9da017121a72a7517be278db206c85b65174",
+      "guide_sections": "4 / Purchase orders",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "6d68dc547ff6fd9c4a1db3a9f7d8965863a63181a1c150eeaeb7d5703e2b3f32",
+      "guide_sections": "4 / Receipt state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "08c60f0aa02d3537293562b17304149b623cd7edd3d29424b81cac9eec923a01",
+      "guide_sections": "4, example 3 / Over-receipt and invoice agreement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "42426dde42d4575d08c1ff314c9911210be91b7d156ef4b55864889ffbea1b32",
+      "guide_sections": "4 / Undo Receipt eligibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 6,
+      "objective_sha256": "800f5646899d48ca04bdab8e1cd90c46e780f58c327b6d7a8668446b326bfc3b",
+      "guide_sections": "4 / Purchase invoicing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 7,
+      "objective_sha256": "d651acfd567a7d90b64f4d32ec4f943e30d8a42fd699da7b509332e6c212e99a",
+      "guide_sections": "4 / Recurring purchase lines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 8,
+      "objective_sha256": "bb3928d4310d6bde9b7ecbefd0ff49b1ef028c617150dd207eecc4ccadadcf5b",
+      "guide_sections": "4 / Blanket purchase orders",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 9,
+      "objective_sha256": "f5632f7aa590f9a5973aeab062cd286cfd4cc6fdc7148ee3c4f1288eb4bdc60c",
+      "guide_sections": "4, example 5 / Purchase deferrals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 1,
+      "objective_sha256": "fddc933a3102369d2b60d2f1dd39d0b84842d8f7a011724d1796f0dbc686890c",
+      "guide_sections": "4 / Sales quotes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 2,
+      "objective_sha256": "32cc61cab562e7975d980d33bc057d3f002f23f22be8ad1dcfd13f2ff2adeb92",
+      "guide_sections": "4 / Quote conversion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 3,
+      "objective_sha256": "14611d253a8c044bbfa735ba8a730760706cd8ad06597208d007670433b19ec2",
+      "guide_sections": "4 / Availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 4,
+      "objective_sha256": "ffed57cb46de2fdf7744f3bde12c4e7282a0fa10ef4fa17d37779941c81d79dc",
+      "guide_sections": "4 / Shipment state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 5,
+      "objective_sha256": "fb72d6f73d2f0031f53abfa0943ef70e16356cf9716716dfc6f7a7cab570e55f",
+      "guide_sections": "4 / Undo Shipment eligibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 6,
+      "objective_sha256": "304cfb42557d8d611a98cc221ca9425d1adca607b0cb6e1459ad255f8a415453",
+      "guide_sections": "4 / Sales invoicing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 7,
+      "objective_sha256": "aa08b00588ee5910facbc8885848004429b5b781f3aa5f93035047b9d887fd1f",
+      "guide_sections": "4 / Recurring sales lines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 8,
+      "objective_sha256": "6d626bd095c23ff0fefafafbec103ea1a85fa302e333bbdf9a4d019c3992281c",
+      "guide_sections": "4 / Blanket sales orders",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 9,
+      "objective_sha256": "96a1e70ceb2a20995529207fde539117dccb814a97fa24bbfbd575de459149cb",
+      "guide_sections": "4 / Sales deferrals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 1,
+      "objective_sha256": "2ad4b2074ef368150261b2110531f3a54304aa621d1743eae8be74ee38fefa57",
+      "guide_sections": "4 / Purchase invoice",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 2,
+      "objective_sha256": "b6402e0a9ec200ddf5c0c223039350f66c3cdd1d6f5c2d77b98ea6d531e833d6",
+      "guide_sections": "4 / Purchase credit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 3,
+      "objective_sha256": "da24e284d9e9148c2051820b9559d8c90c44a5730c72450ada71f68a8159fff2",
+      "guide_sections": "4 / Sales invoice",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 4,
+      "objective_sha256": "cac9d86c873c63e7d9cafc8891bc2cf3bedd7fd48b9186cc6078f351d64d82a7",
+      "guide_sections": "4 / Sales credit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 5,
+      "objective_sha256": "28b0e67bd04e179ae5ace7f983b67716d757aa63f1e657c9890a8ab1e2302e3d",
+      "guide_sections": "4 / Combined shipments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 6,
+      "objective_sha256": "55b348a60222fef7474013c1509fd09957e46278573c3a6499d535152d20c19e",
+      "guide_sections": "4 / Combined receipts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 7,
+      "objective_sha256": "34d6954e9295330158289e8c6431f45c38f2c64fd6344903880b9b71a3520f9d",
+      "guide_sections": "4 / Purchase correction constraints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 8,
+      "objective_sha256": "2d4aa6801b089ea06489d0104840d8aefbe48e6e289ad483553a19f75cb036f7",
+      "guide_sections": "4, example 3 / Paid-sale credit path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 9,
+      "objective_sha256": "d83f786ec793f985358755b33fd5fb7338f0816106aa50db7d79fff159a060b8",
+      "guide_sections": "4 / Release/reopen",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 10,
+      "objective_sha256": "f2e067dd9018848c94abd5978be3d6f8a482b3ddca7f537d11fb8f2252155c78",
+      "guide_sections": "4 / Prepayments and corrections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 1,
+      "objective_sha256": "862de27c3112be35879b8816c5c1f61adee98c291e9446e4081e79076bdfa8e2",
+      "guide_sections": "4 / Payment journal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 2,
+      "objective_sha256": "4b3f6e16f2943213b3c99801d3f325a0c1f1f28b3a411c51b618a3ebbb49a725",
+      "guide_sections": "4 / Cash receipt",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 3,
+      "objective_sha256": "3e95af286f68c54ae3827178cd0f8611646e9d50eefedfaf8a67d8daef52e09c",
+      "guide_sections": "4 / Payment Registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 4,
+      "objective_sha256": "ee305ba2b2322287ee2009250961c5cc077c0dde15a2dd01b1d703b8185dbd68",
+      "guide_sections": "4 / Apply/unapply audit chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 5,
+      "objective_sha256": "1e3b28dded31cfd45e228e8b8041abe453c8979c177b3cdb2e3c2e8e25ff2001",
+      "guide_sections": "4 / General-journal reversal and ACY",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 6,
+      "objective_sha256": "95819a8362d9d6aa39ee4482a0b2587da94b3e86f34294c546d68c8f821c3440",
+      "guide_sections": "4, example 4 / Bank reconciliation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 7,
+      "objective_sha256": "c998523b2feb47dfa83bf8266fd7f8a06f0652b8b1f8e67649d52666be7579d1",
+      "guide_sections": "4 / Recurring transactions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 8,
+      "objective_sha256": "5e0074b67348caf26916776adb69900f75148a8048645c253c8361be0160add7",
+      "guide_sections": "4, example 5 / G/L allocation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 9,
+      "objective_sha256": "0b1d04435aaf8b867d746e3851d27d975ad41ff330c4c7f5403c9e0495fde9ba",
+      "guide_sections": "4, example 6 / Currency adjustment scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 10,
+      "objective_sha256": "cd63ad1fb7991b7988a2cfd8f8155dc97e83e687d84375c49e19be34f9e7710b",
+      "guide_sections": "1, 4, example 6 / G/L-only dimension correction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 11,
+      "objective_sha256": "bd917b44f65f048cbe660100be684981800c35b498ed582dbdb4c724cb6a6a8c",
+      "guide_sections": "4, example 6 / G/L source-currency revaluation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 21,
+      "objective_number": 1,
+      "objective_sha256": "d3ad1210fac4264996e1f2580ed2064a9f0d345e3361fc73d2a2ec45043a21d1",
+      "guide_sections": "4 / FA acquisition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 21,
+      "objective_number": 2,
+      "objective_sha256": "2f5632d70144994fba0d44ee989d807294eaf30dcb469846e791554f8b9c39cf",
+      "guide_sections": "4 / FA depreciation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 21,
+      "objective_number": 3,
+      "objective_sha256": "b01e381a144b65f6194e6302cfac200410ee3ec613f6c947bf509b6a147e9fed",
+      "guide_sections": "4 / FA disposal and reconciliation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 22,
+      "objective_number": 1,
+      "objective_sha256": "48b46f961b73c68be3abfbe5d9d19bfa9d05249ba18a2e4d98b4ddb6ea5d98c2",
+      "guide_sections": "4 / Inventory receipts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 22,
+      "objective_number": 2,
+      "objective_sha256": "d70e1abf10a8f01c644ed7acdc18ede469efc4126b0279bca6981e78f8750735",
+      "guide_sections": "4 / Inventory shipments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 22,
+      "objective_number": 3,
+      "objective_sha256": "79ec09ddfa4fd460de43637447913c8de4e991e6b14908b4879a03d5018a80b8",
+      "guide_sections": "4 / Transfers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 22,
+      "objective_number": 4,
+      "objective_sha256": "41404d8b8772a66f01ad4b5200eff7c16ffa58043f6c7ef33494effd62f0a8a6",
+      "guide_sections": "3, 4, example 2 / Cost adjustment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 22,
+      "objective_number": 5,
+      "objective_sha256": "0ae033fcedd611b1873534ef85ecb686bc909c671745e95f5bff98916dd68eec",
+      "guide_sections": "4 / Count difference",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 22,
+      "objective_number": 6,
+      "objective_sha256": "ffbd5af337fb985c2f3576c3b4b84bdd1bba30912690591cc6ccc1abe2c01a5a",
+      "guide_sections": "4 / Reclassification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MB-800"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MB-800",
+        "title": "Microsoft Dynamics 365 Business Central Functional Consultant",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+        "guide_path": "guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md",
+        "snapshot_path": "data\\objective-snapshots\\mb-800-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mb-800-official-status.json",
+        "previous_sha256": "29f5557d525b445ac9b0c44e81dd0298fba788ae62e53fa44e4a50eaeb7c7fff",
+        "current_sha256": "36a7035403d51e3f1558e097e03f5cd4da0949d205420aeb46a8bd2b4ff30a9d",
+        "previous_status_sha256": "c3728e95b29beb246d273086b156eac0cf29efffe374670c16879ddcac543daa",
+        "current_status_sha256": "ac32432c198abf51e0623028c60c07642f727c37e6bf60b443b905b8a391992d",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of June 30, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 41,
+    "reachable": 39,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mb-800-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+      "checked_at": "2026-09-28T11:58:25.605531+00:00",
+      "health": {
+        "id": "mb-800-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+        "checked_at": "2026-09-28T11:58:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MB-800: Microsoft Dynamics 365 Business Central Functional Consultant",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "b6f1ea2b391ccc7baa572e21696203aaa7f4b4b78534de45d15806ce26eb304d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+      "sha256": "8d52c48da4352dd5793461e60d8f00254e1778618ca84683c8110e6e977600c8",
+      "text_characters": 11190
+    },
+    {
+      "id": "mb-800-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+      "checked_at": "2026-09-28T11:58:25.606125+00:00",
+      "health": {
+        "id": "mb-800-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+        "checked_at": "2026-09-28T11:58:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "b0c4afd962aea8e836252d33d425b579a54bcfd4b7b41a9d3d4eef7b8d0839bf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+      "sha256": "4cc35dd32e1bfcf12e033890117c7f570f694d2dda28e2b0fef4e21482c74148",
+      "text_characters": 4650
+    },
+    {
+      "id": "mb-800-path-setup",
+      "url": "https://learn.microsoft.com/en-us/training/paths/set-up-business-central/",
+      "checked_at": "2026-09-28T11:58:25.606524+00:00",
+      "health": {
+        "id": "mb-800-path-setup",
+        "url": "https://learn.microsoft.com/en-us/training/paths/set-up-business-central/",
+        "checked_at": "2026-09-28T11:58:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/set-up-business-central/",
+        "content_type": "text/html",
+        "page_title": "Set Up Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/set-up-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "49d7734da62ab9eafb01f5112f5cd36454dba592fd85bcf0ebfb6c2987fe4523",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/set-up-business-central/",
+      "sha256": "83555a8474f57f252d6571ea1d1abed642ed3b1c6f11c8af1224a03bc946175a",
+      "text_characters": 1853
+    },
+    {
+      "id": "mb-800-path-financials",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/",
+      "checked_at": "2026-09-28T11:58:26.010582+00:00",
+      "health": {
+        "id": "mb-800-path-financials",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/",
+        "content_type": "text/html",
+        "page_title": "Configure Financials in Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "f886aceedc139b5e85283a2734e6864146d65ef8e235bdcc3404c8e88e20d1f0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-financials-business-central/",
+      "sha256": "c91dc3b001b66e902ef008cfa545d30106ae561e4abbe348811fb8bdba6411a8",
+      "text_characters": 5262
+    },
+    {
+      "id": "mb-800-path-trade-setup",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/",
+      "checked_at": "2026-09-28T11:58:26.036049+00:00",
+      "health": {
+        "id": "mb-800-path-trade-setup",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/",
+        "content_type": "text/html",
+        "page_title": "Configure Sales and Purchasing in Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "3ee3700a136e4c164faddc24848cd754bb69137db77e72d3a2893f1080253883",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-purchasing-business-central/",
+      "sha256": "b6467b9c1517650a7a8d9b673cc71b9ee39a8f868a898143b988f3b7b470abe3",
+      "text_characters": 2810
+    },
+    {
+      "id": "mb-800-path-trade-operations",
+      "url": "https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/",
+      "checked_at": "2026-09-28T11:58:26.045430+00:00",
+      "health": {
+        "id": "mb-800-path-trade-operations",
+        "url": "https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/",
+        "content_type": "text/html",
+        "page_title": "Process Sales and Purchasing in Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "f7848039fa40ddc881d9aebc84cadb326b69e272fec5cc2aa02e31dcfbafcb54",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/process-sales-purchasing-business-central/",
+      "sha256": "5f0a7e42be2bedb72ae1acf93a0ff1d9f953cc15e1b22bac24b2da04691fdd14",
+      "text_characters": 4366
+    },
+    {
+      "id": "mb-800-path-financial-operations",
+      "url": "https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/",
+      "checked_at": "2026-09-28T11:58:26.310252+00:00",
+      "health": {
+        "id": "mb-800-path-financial-operations",
+        "url": "https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/",
+        "content_type": "text/html",
+        "page_title": "Process Financial Operations in Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "911f8797b02190c3ba0ce58820ac8aed5bc1d7294beb33a620b8ff23acdfc19f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/process-financial-operations-business-central/",
+      "sha256": "1e85e33e840e8138d36b104eaca167d0395a12eb06b3e51d4efdfbce3e401350",
+      "text_characters": 3474
+    },
+    {
+      "id": "mb-800-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-800t00",
+      "checked_at": "2026-09-28T11:58:26.310666+00:00",
+      "health": {
+        "id": "mb-800-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-800t00",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-800t00",
+        "content_type": "text/html",
+        "page_title": "Course MB-800T00-A: Manage business solutions with Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/mb-800t00",
+        "duration_signals": [],
+        "signal_fingerprint": "08f7fbf16ca8a9d4119bd7471c4de1fe61635cb663ce6e3e538c44313fd1bb6f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-800t00",
+      "sha256": "493d3d8ac23249fdfaa1a4b8e0f4dc7dbeb086ca65311446da4e00ac0ec0e249",
+      "text_characters": 2597
+    },
+    {
+      "id": "mb-800-labs",
+      "url": "https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant",
+      "checked_at": "2026-09-28T11:58:26.311036+00:00",
+      "health": {
+        "id": "mb-800-labs",
+        "url": "https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/MB-800-Business-Central-Functional-Consultant",
+        "canonical_url": "https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant",
+        "duration_signals": [],
+        "signal_fingerprint": "653e94063c4a76e850d9073f69d5cbd2586aa092ee0c602daaec97da045fbc6e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant",
+      "sha256": "fa79649a067f5828887cf002658eb9b8c4e59b8552289bcfb2f3dcda0e997071",
+      "text_characters": 3517
+    },
+    {
+      "id": "mb-800-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T11:58:26.561496+00:00",
+      "health": {
+        "id": "mb-800-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "938ad98912fb6f18c0814f80cf3214e597830f83855ff4feebd4be8523daf048",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification",
+      "sha256": "f1f716d6ca381bf39ed2a2cc563740430746cf6a95e421632791a4fa8d5f182b",
+      "text_characters": 0
+    },
+    {
+      "id": "mb-800-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+      "checked_at": "2026-09-28T11:58:26.584676+00:00",
+      "health": {
+        "id": "mb-800-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Dynamics 365 Business Central documentation - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "97303397ea6d333413369752eaccffde1659e4b75594512d893f02822e91a6a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/",
+      "sha256": "19862365e5163ed15837ac37d55153fb56ccfa10fa727f4f50629453de5ebe83",
+      "text_characters": 3094
+    },
+    {
+      "id": "mb-800-oreilly-essentials",
+      "url": "https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/",
+      "checked_at": "2026-09-28T11:58:26.781339+00:00",
+      "health": {
+        "id": "mb-800-oreilly-essentials",
+        "url": "https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-800-udemy-gomathi",
+      "url": "https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/",
+      "checked_at": "2026-09-28T11:58:26.842678+00:00",
+      "health": {
+        "id": "mb-800-udemy-gomathi",
+        "url": "https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-800-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html",
+      "checked_at": "2026-09-28T11:58:26.928517+00:00",
+      "health": {
+        "id": "mb-800-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test MB-800: Microsoft Dynamics 365 Business Central Functional Consultant",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0bbf2865bf59323968dd0446794681ff75af4c74bd534680f2341efb92594eeb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html",
+      "sha256": "9790f0e735a9c9ba20d6ab64597ee8bdbb97136ee16366761e2c51d32b41d97a",
+      "text_characters": 16779
+    },
+    {
+      "id": "mb-800-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:58:26.933618+00:00",
+      "health": {
+        "id": "mb-800-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:58:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb800-filters",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters",
+      "checked_at": "2026-09-28T11:58:27.527691+00:00",
+      "health": {
+        "id": "mb800-filters",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters",
+        "checked_at": "2026-09-28T11:58:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters",
+        "content_type": "text/html",
+        "page_title": "Using Security Filters - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters",
+        "duration_signals": [],
+        "signal_fingerprint": "8593814db180ff9139ae140ab93a7c8be3988b0c7b44dc48308973e1c05988bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters",
+      "sha256": "c371a5bd622fb53c7337ed084401d4422d2271999673dc7e74bbaf13be0a3129",
+      "text_characters": 12743
+    },
+    {
+      "id": "mb800-dimensions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-troubleshooting-correcting-dimensions",
+      "checked_at": "2026-09-28T11:58:27.604576+00:00",
+      "health": {
+        "id": "mb800-dimensions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-troubleshooting-correcting-dimensions",
+        "checked_at": "2026-09-28T11:58:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-troubleshooting-correcting-dimensions",
+        "content_type": "text/html",
+        "page_title": "Troubleshoot and correct dimensions - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-troubleshooting-correcting-dimensions",
+        "duration_signals": [],
+        "signal_fingerprint": "f86853694ecc2d38b5e240f0dccb520916f2f390f31999e63177b75245c281ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-troubleshooting-correcting-dimensions",
+      "sha256": "cd16c980206bfad9a522eb4de6a101111889ca0c383218ea143d547afadf6040",
+      "text_characters": 11004
+    },
+    {
+      "id": "mb800-posting-groups",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-posting-groups",
+      "checked_at": "2026-09-28T11:58:27.778808+00:00",
+      "health": {
+        "id": "mb800-posting-groups",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-posting-groups",
+        "checked_at": "2026-09-28T11:58:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-posting-groups",
+        "content_type": "text/html",
+        "page_title": "Posting group setup - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-posting-groups",
+        "duration_signals": [],
+        "signal_fingerprint": "fb6631c758f786dd0efa92ee6c6a822decc8ca145ab89434acd1151478a2c3b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-posting-groups",
+      "sha256": "5dd6416ca0ae23b44ab7c02a9de148732476cd9cfb413309df97be2d1b597c9c",
+      "text_characters": 13155
+    },
+    {
+      "id": "mb800-inventory",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-setup-general",
+      "checked_at": "2026-09-28T11:58:27.883139+00:00",
+      "health": {
+        "id": "mb800-inventory",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-setup-general",
+        "checked_at": "2026-09-28T11:58:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-setup-general",
+        "content_type": "text/html",
+        "page_title": "Set up general inventory information - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-setup-general",
+        "duration_signals": [],
+        "signal_fingerprint": "63a4ff188fa8185a01d0195e0ed5d7983f115f3c9ba461c395905264859cfc69",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/inventory-how-setup-general",
+      "sha256": "c9d45f4a3c6bd414a6ed42956eb1cbb55ad47ce0b4604f10fb11d7b7bb8c4a8e",
+      "text_characters": 7216
+    },
+    {
+      "id": "mb800-cost-adjust",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-cost-adjustment",
+      "checked_at": "2026-09-28T11:58:27.992617+00:00",
+      "health": {
+        "id": "mb800-cost-adjust",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-cost-adjustment",
+        "checked_at": "2026-09-28T11:58:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-cost-adjustment",
+        "content_type": "text/html",
+        "page_title": "Design details - Cost adjustment - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-cost-adjustment",
+        "duration_signals": [],
+        "signal_fingerprint": "7aaaa86519c89deeaa743e945744e1900f128b7d7f3b5821ee467446de66d832",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-cost-adjustment",
+      "sha256": "62c49aa78e44cc52cf422995959924fe35e6a7582b0e95acdf26099ea98cbbe6",
+      "text_characters": 10797
+    },
+    {
+      "id": "mb800-expected",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-expected-cost-posting",
+      "checked_at": "2026-09-28T11:58:28.104961+00:00",
+      "health": {
+        "id": "mb800-expected",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-expected-cost-posting",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-expected-cost-posting",
+        "content_type": "text/html",
+        "page_title": "Design details - Expected cost posting - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-expected-cost-posting",
+        "duration_signals": [],
+        "signal_fingerprint": "6cd9ce002b294827bfe9fac8392e0d58dce5a562bb75d59e8cd647e66bf16466",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-expected-cost-posting",
+      "sha256": "f9d61f3cc1256d814ff73dd039ec96acb9276b6c70be169bbe2e6ee001ff9daf",
+      "text_characters": 4497
+    },
+    {
+      "id": "mb800-reconcile",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger",
+      "checked_at": "2026-09-28T11:59:06.440162+00:00",
+      "health": {
+        "id": "mb800-reconcile",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger",
+        "checked_at": "2026-09-28T11:59:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger",
+        "content_type": "text/html",
+        "page_title": "Reconcile inventory costs with the general ledger - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger",
+        "duration_signals": [],
+        "signal_fingerprint": "1488772e0046c4f6cc463647c6cff05c9d93b8ff18162c35509ac3076b6eb676",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger",
+      "sha256": "5ba521036be074622ef4c2732ed07b4231f00a6b499e48905c9f6b7b176bd11b",
+      "text_characters": 9349
+    },
+    {
+      "id": "mb800-revalue",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-revalue-account-balances",
+      "checked_at": "2026-09-28T11:58:28.323593+00:00",
+      "health": {
+        "id": "mb800-revalue",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-revalue-account-balances",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-revalue-account-balances",
+        "content_type": "text/html",
+        "page_title": "Revalue general ledger account balances - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-revalue-account-balances",
+        "duration_signals": [],
+        "signal_fingerprint": "2a821c3c989e4d2a3107f0513ef84519c40b7727576e54f818a4ca202e0f12b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-revalue-account-balances",
+      "sha256": "5f1c6c5c30b2037e42c02bf0ed7ce19945cc358149bb290850a8732d2a030f34",
+      "text_characters": 13456
+    },
+    {
+      "id": "mb800-year-close",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/year-close-account-periods",
+      "checked_at": "2026-09-28T11:59:06.440736+00:00",
+      "health": {
+        "id": "mb800-year-close",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/year-close-account-periods",
+        "checked_at": "2026-09-28T11:59:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/year-close-account-periods",
+        "content_type": "text/html",
+        "page_title": "Close accounting periods for a fiscal year - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/year-close-account-periods",
+        "duration_signals": [],
+        "signal_fingerprint": "4bdade688fafc2c45e0f81dab5b8541825eae862f8e4d46b03502752c4b492b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/year-close-account-periods",
+      "sha256": "46b75753190d7d01d505a24c36212a2649efda5961466a9618d240bb31c6dba5",
+      "text_characters": 2092
+    },
+    {
+      "id": "mb800-jobqueue",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/admin-job-queues-schedule-tasks",
+      "checked_at": "2026-09-28T11:58:28.371055+00:00",
+      "health": {
+        "id": "mb800-jobqueue",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/admin-job-queues-schedule-tasks",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/admin-job-queues-schedule-tasks",
+        "content_type": "text/html",
+        "page_title": "Schedule jobs to run automatically - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/admin-job-queues-schedule-tasks",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "b33f064fc097ebbc1919a308b92773b6a59270502139858820d604145f1ccb6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/admin-job-queues-schedule-tasks",
+      "sha256": "d8257d8d3999870e4dc464f01ed565a13c06bccacdd56a47eee8fab936f8d12e",
+      "text_characters": 14223
+    },
+    {
+      "id": "mb800-sales-correction",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-correct-cancel-sales-invoice",
+      "checked_at": "2026-09-28T11:58:28.482389+00:00",
+      "health": {
+        "id": "mb800-sales-correction",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-correct-cancel-sales-invoice",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-correct-cancel-sales-invoice",
+        "content_type": "text/html",
+        "page_title": "Correct or cancel a posted sales invoice - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-correct-cancel-sales-invoice",
+        "duration_signals": [],
+        "signal_fingerprint": "5283022f29d3340ec9f5c17261f77834aab39be20f1c8546f031862bbc952140",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-correct-cancel-sales-invoice",
+      "sha256": "42abf6ab35ac8946ec0ff7f4076c4c8deaa5d97e5d6c4f74b9510ec28e1cbdfa",
+      "text_characters": 5198
+    },
+    {
+      "id": "mb800-purchase-correction",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-correct-cancel-unpaid-purchase-invoices",
+      "checked_at": "2026-09-28T11:58:28.614774+00:00",
+      "health": {
+        "id": "mb800-purchase-correction",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-correct-cancel-unpaid-purchase-invoices",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-correct-cancel-unpaid-purchase-invoices",
+        "content_type": "text/html",
+        "page_title": "Amend or cancel unpaid purchase invoices - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-correct-cancel-unpaid-purchase-invoices",
+        "duration_signals": [],
+        "signal_fingerprint": "44e62f63cebd4e6ddf73aadde4b98bbf6b1c8075199ed54a7cb2b777559f1be1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-correct-cancel-unpaid-purchase-invoices",
+      "sha256": "7636befd6bbaa959a0f7b48952653453e5ddb8ed065564756e991f6450dbb60a",
+      "text_characters": 3749
+    },
+    {
+      "id": "mb800-reversal",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-reverse-journal-posting",
+      "checked_at": "2026-09-28T11:58:28.679964+00:00",
+      "health": {
+        "id": "mb800-reversal",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-reverse-journal-posting",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-reverse-journal-posting",
+        "content_type": "text/html",
+        "page_title": "Undo a posting using a reversing entry - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-reverse-journal-posting",
+        "duration_signals": [],
+        "signal_fingerprint": "423e866baa1791078e64bfe6ada419414013737c56b903d05fd05b9deb70fa86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-reverse-journal-posting",
+      "sha256": "711859afb2e8734112051d5c29ae89495081294f5efe630b360c82c68759848a",
+      "text_characters": 6768
+    },
+    {
+      "id": "mb800-returns",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-process-sales-returns-cancellations",
+      "checked_at": "2026-09-28T11:58:28.748245+00:00",
+      "health": {
+        "id": "mb800-returns",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-process-sales-returns-cancellations",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-process-sales-returns-cancellations",
+        "content_type": "text/html",
+        "page_title": "Process sales returns or cancellations - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-process-sales-returns-cancellations",
+        "duration_signals": [],
+        "signal_fingerprint": "7857019b237678540de70790e9ee3fb37a27b17bcdb091fa21e35173764aa86c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-process-sales-returns-cancellations",
+      "sha256": "d26fa73428d568d5efef1e909b461e4cbd5d9055bacb9f1c77cb888052a0103b",
+      "text_characters": 10965
+    },
+    {
+      "id": "mb800-overreceipt",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-record-purchases",
+      "checked_at": "2026-09-28T11:58:28.894167+00:00",
+      "health": {
+        "id": "mb800-overreceipt",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-record-purchases",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-record-purchases",
+        "content_type": "text/html",
+        "page_title": "Record purchases with purchase invoices - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-record-purchases",
+        "duration_signals": [],
+        "signal_fingerprint": "489fde8ff1aee4f261a653621a408d59a719daa31903f72e431938949e806505",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/purchasing-how-record-purchases",
+      "sha256": "10cd03fdbe3d6bb79b77a9cb8b02538babc74e8d69f82157655ac0e249cc566b",
+      "text_characters": 16255
+    },
+    {
+      "id": "mb800-payables",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent",
+      "checked_at": "2026-09-28T11:58:28.939536+00:00",
+      "health": {
+        "id": "mb800-payables",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent",
+        "checked_at": "2026-09-28T11:58:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent",
+        "content_type": "text/html",
+        "page_title": "Payables Agent Overview - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "c41c6d3226f964a00517998ccb839490bfd8ba5d33d0137e06b73a8104669a98",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent",
+      "sha256": "6ce594d153f2bdc9228ae9d46f592c41cd60c31163f97d97c3292cdf72c4775d",
+      "text_characters": 13681
+    },
+    {
+      "id": "mb800-payables-setup",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup",
+      "checked_at": "2026-09-28T11:58:29.062103+00:00",
+      "health": {
+        "id": "mb800-payables-setup",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup",
+        "checked_at": "2026-09-28T11:58:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup",
+        "content_type": "text/html",
+        "page_title": "Set up Payables Agent - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup",
+        "duration_signals": [],
+        "signal_fingerprint": "43782f366e2dc25b0ee840f47a0efe3c1bde19c6c226da5130634e5d6c5c5427",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup",
+      "sha256": "0fa408538e4bd53868fde019cf06f9f74ffff1e2078c39e29ebec9d23dde65b4",
+      "text_characters": 17969
+    },
+    {
+      "id": "mb800-senders",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-known-senders",
+      "checked_at": "2026-09-28T11:58:29.183988+00:00",
+      "health": {
+        "id": "mb800-senders",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-known-senders",
+        "checked_at": "2026-09-28T11:58:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-known-senders",
+        "content_type": "text/html",
+        "page_title": "Manage known senders for Payables Agent - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-known-senders",
+        "duration_signals": [],
+        "signal_fingerprint": "e6b0a93025ebac97574e18046866bbcd5829ab803032a9302e8adc4c8faa95d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-known-senders",
+      "sha256": "8385626f2cd061ab29f59cede9b122500a19c66522a09ddff94fd380ff55aa83",
+      "text_characters": 6338
+    },
+    {
+      "id": "mb800-sales-agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent",
+      "checked_at": "2026-09-28T11:58:29.191579+00:00",
+      "health": {
+        "id": "mb800-sales-agent",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent",
+        "checked_at": "2026-09-28T11:58:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent",
+        "content_type": "text/html",
+        "page_title": "Sales Order Agent overview - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "131d4afbfc8e4d3f1c4f98d961b89e3e69f21c560bdf8d45661bc0f8643a3d85",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent",
+      "sha256": "660917517b4b4d34d64ec9e07ffb3705f9db79414fe960a389af87ab4ae9dafb",
+      "text_characters": 18139
+    },
+    {
+      "id": "mb800-supervise",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks",
+      "checked_at": "2026-09-28T11:58:29.371989+00:00",
+      "health": {
+        "id": "mb800-supervise",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks",
+        "checked_at": "2026-09-28T11:58:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks",
+        "content_type": "text/html",
+        "page_title": "Supervise agent activities - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks",
+        "duration_signals": [],
+        "signal_fingerprint": "2929dcb7ca32371791fb6a61acb19270a0f77e0c3e956cff18806169658fafe8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/supervise-agent-tasks",
+      "sha256": "c4598c5ef47f28c939529cf200f0d187a3a42b55fe2977beec8f61e8efeba88b",
+      "text_characters": 9814
+    },
+    {
+      "id": "mb800-bank",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-how-reconcile-bank-accounts-separately",
+      "checked_at": "2026-09-28T11:59:06.441089+00:00",
+      "health": {
+        "id": "mb800-bank",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-how-reconcile-bank-accounts-separately",
+        "checked_at": "2026-09-28T11:59:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-how-reconcile-bank-accounts-separately",
+        "content_type": "text/html",
+        "page_title": "Reconcile bank accounts - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-how-reconcile-bank-accounts-separately",
+        "duration_signals": [],
+        "signal_fingerprint": "917b969807d2f961844d604c21470cad155b99da1086f380c7fc6aac78b1b325",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-how-reconcile-bank-accounts-separately",
+      "sha256": "02688dc4d94c8bd3cc00b0218066bb6e033c8467daebb6beb20aee71004874b4",
+      "text_characters": 28862
+    },
+    {
+      "id": "mb800-discounts",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements",
+      "checked_at": "2026-09-28T11:58:29.569707+00:00",
+      "health": {
+        "id": "mb800-discounts",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements",
+        "checked_at": "2026-09-28T11:58:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements",
+        "content_type": "text/html",
+        "page_title": "Record special sales prices and discounts - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements",
+        "duration_signals": [],
+        "signal_fingerprint": "50f97d1d143eaa7c7ce0e099a0782cd409d85d89c14c3ce040c7c02845d1fc8d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-record-sales-price-discount-payment-agreements",
+      "sha256": "33829928c67241f9a9073f8e35394150149e1ddbdef7022bdd990d00a50afbb2",
+      "text_characters": 25147
+    },
+    {
+      "id": "mb800-inventory-blog",
+      "url": "https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c",
+      "checked_at": "2026-09-28T11:58:29.696911+00:00",
+      "health": {
+        "id": "mb800-inventory-blog",
+        "url": "https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c",
+        "checked_at": "2026-09-28T11:58:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "cmty_blog_detail Your Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c",
+        "duration_signals": [],
+        "signal_fingerprint": "97f0d3ee78a0f7664e3030188040354913d78ed6664d365864591c87e4a596ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://community.dynamics.com/blogs/post/?postid=7989aea7-627b-f011-b4cc-7c1e5248819c",
+      "sha256": "7a39bfd929e94af379a270a3681255273795ea86eae4b303611369a355c1d178",
+      "text_characters": 6938
+    },
+    {
+      "id": "mb800-sales-agent-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/04/03/sales-order-agent-in-microsoft-dynamics-365-business-central-now-in-public-preview/",
+      "checked_at": "2026-09-28T11:58:29.766758+00:00",
+      "health": {
+        "id": "mb800-sales-agent-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/04/03/sales-order-agent-in-microsoft-dynamics-365-business-central-now-in-public-preview/",
+        "checked_at": "2026-09-28T11:58:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/04/03/sales-order-agent-in-microsoft-dynamics-365-business-central-now-in-public-preview/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Sales Order Agent in Microsoft Dynamics 365 Business Central: Now in public preview - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/04/03/sales-order-agent-in-microsoft-dynamics-365-business-central-now-in-public-preview/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "4183069b8f28cb0565d272fdb66323120ad09a40e8b230aa1651a3771e59ea8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/04/03/sales-order-agent-in-microsoft-dynamics-365-business-central-now-in-public-preview/",
+      "sha256": "e5198c3491f0a3d0096084eed720aa08d6d0179983cb12f9b42924914b42a282",
+      "text_characters": 7906
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T11:58:30.068959+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T11:58:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "a8888546f3fbb11441194ba10f2ed973219f626c76e6f727ad8caa57bafc9af0",
+      "text_characters": 8483
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:58:32.567050+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:58:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb800-bank-copilot",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-reconciliation-with-copilot",
+      "checked_at": "2026-09-28T11:59:06.833947+00:00",
+      "health": {
+        "id": "mb800-bank-copilot",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-reconciliation-with-copilot",
+        "checked_at": "2026-09-28T11:59:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-reconciliation-with-copilot",
+        "content_type": "text/html",
+        "page_title": "Reconcile bank accounts with Copilot (preview) - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-reconciliation-with-copilot",
+        "duration_signals": [],
+        "signal_fingerprint": "92620aa2783113da012db9b3fc584089711cf4cfba0c9c970ead4400f5125e71",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/bank-reconciliation-with-copilot",
+      "sha256": "04e32dbe978aa3c7a1afa65b7c9663bbc9c16f064e4d2d8ab2c1fa14072272aa",
+      "text_characters": 10776
+    }
+  ],
+  "added_source_ids": [
+    "mb800-filters",
+    "mb800-dimensions",
+    "mb800-posting-groups",
+    "mb800-inventory",
+    "mb800-cost-adjust",
+    "mb800-expected",
+    "mb800-reconcile",
+    "mb800-revalue",
+    "mb800-year-close",
+    "mb800-jobqueue",
+    "mb800-sales-correction",
+    "mb800-purchase-correction",
+    "mb800-reversal",
+    "mb800-returns",
+    "mb800-overreceipt",
+    "mb800-payables",
+    "mb800-payables-setup",
+    "mb800-senders",
+    "mb800-sales-agent",
+    "mb800-supervise",
+    "mb800-bank",
+    "mb800-discounts",
+    "mb800-inventory-blog",
+    "mb800-sales-agent-blog",
+    "mb800-bank-copilot"
+  ],
+  "findings": [
+    {
+      "id": "mb800-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Previous objective snapshot was a condensed summary",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "22 summary bullets represent123 current detailed objectives on the same June baseline.",
+      "recommendation": "Archive previous evidence and restore canonical text.",
+      "disposition": "applied",
+      "source_id": "mb-800-blueprint",
+      "resolution": "Archive previous evidence and restore canonical text."
+    },
+    {
+      "id": "mb800-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Restrictive set cannot cancel a broader grant",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/security/security-filters",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Combined table filters use least-restrictive permissions.",
+      "recommendation": "Add assignment-union example and negative security cases.",
+      "disposition": "applied",
+      "source_id": "mb800-filters",
+      "resolution": "Add assignment-union example and negative security cases."
+    },
+    {
+      "id": "mb800-deep-3",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Interim accounts use different posting matrices",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/design-details-expected-cost-posting",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Inventory interim uses Inventory Posting Setup; accrual interim uses General Posting Setup.",
+      "recommendation": "Correct the candidate blog mapping with primary documentation.",
+      "disposition": "applied",
+      "source_id": "mb800-expected",
+      "resolution": "Correct the candidate blog mapping with primary documentation."
+    },
+    {
+      "id": "mb800-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Adjusted item cost is not necessarily posted G/L cost",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-how-to-post-inventory-costs-to-the-general-ledger",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Manual posting follows adjustment and the test report can remain unposted.",
+      "recommendation": "Add numeric reconciliation and skipped-entry checks.",
+      "disposition": "applied",
+      "source_id": "mb800-reconcile",
+      "resolution": "Add numeric reconciliation and skipped-entry checks."
+    },
+    {
+      "id": "mb800-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Payment state changes invoice correction",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-how-correct-cancel-sales-invoice",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Partially paid invoices cannot use invoice Cancel/Correct.",
+      "recommendation": "Add full-credit versus remaining-balance case.",
+      "disposition": "applied",
+      "source_id": "mb800-sales-correction",
+      "resolution": "Add full-credit versus remaining-balance case."
+    },
+    {
+      "id": "mb800-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "G/L dimension correction does not propagate to all ledgers",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-troubleshooting-correcting-dimensions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Subledger dimensions remain unchanged.",
+      "recommendation": "Add reporting-source reconciliation example.",
+      "disposition": "applied",
+      "source_id": "mb800-dimensions",
+      "resolution": "Add reporting-source reconciliation example."
+    },
+    {
+      "id": "mb800-deep-7",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Older preview text omits current operating controls",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-setup",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current setup describes GA, auto-billable production trial and credit backlog resumption.",
+      "recommendation": "Use current setup and separate draft creation from approval/posting.",
+      "disposition": "applied",
+      "source_id": "mb800-payables-setup",
+      "resolution": "Use current setup and separate draft creation from approval/posting."
+    },
+    {
+      "id": "mb800-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Known-sender policy has conditional scope",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/payables-agent-known-senders",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Settings and monitored subfolder determine whether policy is used.",
+      "recommendation": "Add scenario matrix and distinct invoice review.",
+      "disposition": "applied",
+      "source_id": "mb800-senders",
+      "resolution": "Add scenario matrix and distinct invoice review."
+    },
+    {
+      "id": "mb800-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Forwarded email and initial quote have specific semantics",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/sales-order-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Sender address drives contact lookup and quote does not reserve stock.",
+      "recommendation": "Add verified contact-association and document-state controls.",
+      "disposition": "applied",
+      "source_id": "mb800-sales-agent",
+      "resolution": "Add verified contact-association and document-state controls."
+    },
+    {
+      "id": "mb800-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "G/L revaluation must not duplicate subledger adjustment",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/finance-revalue-account-balances",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Direct source-currency balances produce grouped journal adjustments.",
+      "recommendation": "Add two-period valuation example with unchanged foreign-currency balance.",
+      "disposition": "applied",
+      "source_id": "mb800-revalue",
+      "resolution": "Add two-period valuation example with unchanged foreign-currency balance."
+    },
+    {
+      "id": "mb800-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Closing periods is not a complete posting lock",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/year-close-account-periods",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-800"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Prior-year entries remain possible within allowed posting ranges.",
+      "recommendation": "Explain irreversible close and required income-close rerun.",
+      "disposition": "applied",
+      "source_id": "mb800-year-close",
+      "resolution": "Explain irreversible close and required income-close rerun."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mb800-inventory-blog",
+      "decision": "accepted-bounded",
+      "author": "Sumit Singh",
+      "published_on": null,
+      "notes": "Complete main author tutorial read. Accept reconciliation questions only; reject incorrect interim-account matrix and generic defaults. Independent SumitSingh content, publication date not established, no Microsoft endorsement inferred."
+    },
+    {
+      "source_id": "mb800-sales-agent-blog",
+      "decision": "accepted-bounded",
+      "author": "Mike Morton",
+      "published_on": "2025-04-03",
+      "notes": "Complete main MikeMorton April3,2025 article read. Accept process-review worksheet; preview/defaults historical, embedded video not watched."
+    },
+    {
+      "source_id": "microsoft-ai-at-work-roadmap-transition",
+      "decision": "accepted-bounded",
+      "author": "Richard Riley",
+      "published_on": "2026-08-25",
+      "notes": "Main RichardRiley August25,2026 announcement read in this sequential review context; September new-disclosure transition and planned November15 retirement retained. No feed ingestion."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "34 assertions across permissions union, inventory cost split, receipt limits, bank timing/fees, discounts/deferral/allocation, FX and catalog arithmetic."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No Business Central tenant, invoice/payment/posting, bank export, agent activation/email, paid-content or exam-assessment execution.",
+    "Offline calculations are simplified models, not proof of platform accounting, access control, rounding or agent behavior.",
+    "Long product references read in specified sections; complete localization/version/permission/feature matrices and linked procedures not audited.",
+    "Community inventory article accepted only for reconciliation prompts; inaccurate setup mapping and generic defaults rejected. Historical agent preview article does not establish current availability.",
+    "Direct commercial fetches blocked; indexed public metadata separately recorded. Practice/partner shells unavailable and Pluralsight/Whizlabs not comprehensively re-searched.",
+    "Same-context AI review; independent human review and live labs remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "permission_inventory_receipt_bank_discount_deferral_fx_catalog_assertions": 34,
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/mb-800-2026-09-01-official-objectives.txt",
+    "sha256": "29f5557d525b445ac9b0c44e81dd0298fba788ae62e53fa44e4a50eaeb7c7fff",
+    "note": "Archive22-row condensed summary; canonical123-objective June30 baseline restored, not newly announced scope."
+  },
+  "snapshot_comparison": {
+    "previous_condensed_bullets": 22,
+    "current_detailed_bullets": 123,
+    "current_group_counts": [
+      5,
+      6,
+      4,
+      6,
+      3,
+      6,
+      4,
+      5,
+      4,
+      4,
+      5,
+      3,
+      6,
+      2,
+      4,
+      8,
+      9,
+      9,
+      10,
+      11,
+      3,
+      6
+    ],
+    "baseline": "June 30, 2026",
+    "baseline_change": false,
+    "note": "Previous snapshot is a 22-row hand-authored summary of four domains; full canonical 123-objective extraction restores detail without claiming a new exam announcement."
+  },
+  "public_learning_path_module_counts": {
+    "setup": 5,
+    "financials": 15,
+    "trade_setup": 7,
+    "trade_operations": 12,
+    "financial_operations": 9,
+    "total_placements": 48,
+    "linked_units_read": false
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "mb-800-udemy-gomathi",
+      "checked_on": "2026-09-28",
+      "method": "Public browser-indexed provider metadata; direct fetch blocked",
+      "observed_metadata": {
+        "instructor": "Dr. Gomathi Srinivasan",
+        "updated": "February2026",
+        "sections": 14,
+        "lectures": 36,
+        "runtime": "18h43"
+      },
+      "limitation": "No paid lesson/question content inspected."
+    },
+    {
+      "source_id": "mb-800-oreilly-essentials",
+      "checked_on": "2026-09-28",
+      "method": "Public browser-indexed metadata/contents; direct fetch blocked",
+      "observed_metadata": {
+        "author": "Dr. Gomathi S",
+        "publisher": "Apress",
+        "published": "January2026",
+        "pages": 186,
+        "platform_reading_estimate": "2h38",
+        "format": "book"
+      },
+      "limitation": "No paid chapters read."
+    }
+  ]
+}

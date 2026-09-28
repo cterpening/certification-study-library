@@ -836,6 +836,8 @@ The review maps every January 30, 2026 subobjective to an architecture/environme
 
 ## MB-800 coverage record
 
+The September 28 [deep review](research/2026-09-28-mb-800-deep-review.md) maps 123 detailed objectives. Entire guide and 123 June 30 objectives reviewed/mapped; prior 22-row summary preserved. Add seven worked examples, ten labs, 48 answered checks and 34 local calculation assertions. Clarify permissions, interim accounts, inventory/correction/reconciliation, GL-only dimensions and current agent controls; refresh bounded blogs and catalogs. No tenant or paid-content execution; independent human review pending. Current guide citations: 41 registered, 39 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Set up Business Central | Section 1, controlled-migration scenario, and Labs 1–3 |
