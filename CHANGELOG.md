@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review DP-420's complete guide and all 56 published October objectives while preserving the current July baseline. Expand retrieval, memory, masking, Agent Kit, copy-job, Fleet and Fabric preparation; correct change-feed bootstrap, TTL, pagination and backlog drain. Add four examples, two labs, 36 answer checkpoints and two qualified blog readings. See the [DP-420 report](docs/research/2026-09-27-dp-420-deep-review.md).
+
 - September 27, 2026: deep-review AZ-802's 115 objectives; correct second-hop, dMSA, GPU-P, File Sync, SMB and monitoring lifecycle boundaries, and remove stale beta wording. Add four worked examples, a ninth lab, six answered checks and two qualified blog readings. Retain the unresolved SSH Direct support gap and training/practice availability discrepancies. See the [AZ-802 report](docs/research/2026-09-27-az-802-deep-review.md).
 
 - September 27, 2026: deep-review all 115 AZ-801 objectives; add current Kerberos RC4 enforcement, OSConfig restoration limits, time-based backup immutability and retired direct telemetry guidance. Add four worked learning examples, a ninth lab, six answered checks and one qualified blog reading; preserve the canonical-blueprint weight discrepancy and dated lifecycle boundaries. See the [AZ-801 report](docs/research/2026-09-27-az-801-deep-review.md).

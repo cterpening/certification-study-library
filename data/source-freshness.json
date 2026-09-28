@@ -4,6 +4,217 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-dp420-deep-review",
+      "title": "DP-420 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DP-420"
+      ],
+      "results": [
+        {
+          "exam_code": "DP-420",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+          "baseline_sha256": "e2b4ec104763d32c9f07d03bcf015ce63510d3e8c923675afdcc1b8a895621f0",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Live English page contains the announced October 6 blueprint with 56 objectives and C#/Python audience. Credential page still lists July scope and future rename. Preserve accepted July snapshots, map October separately and retain activation follow-up."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Complete guide read, existing foundational references retrieved and targeted claims checked. Add retrieval/memory, masking, copy-job, Fleet, Fabric and PPAF boundaries. Correct bootstrap, pagination, TTL and net-drain explanations."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current Agent Kit repository/releases checked against January launch blog; current product feature/preview and lifecycle notices checked, including new-project Synapse Link transition and future exam rename."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Guide links registered and checked; two bounded public Microsoft blogs added. Three paid pages remain blocked, and older catalog titles/durations do not establish October coverage."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Future-only live blueprint separated from retained current baseline. Current implementation docs govern older blog syntax/claims. Explicit support limits for vector/HPK, masking exposure, preview copy jobs, Fleet capacity and Fabric endpoints avoid unsupported guarantees."
+            }
+          },
+          "findings": [
+            {
+              "id": "dp420-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Prepare for the October blueprint without replacing July early",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Live page now presents October 6 scope with C#/Python, retrieval, memory and new operational features.",
+              "recommendation": "Map all 56 future objectives and expand transition teaching; retain dated July snapshot and activation follow-up.",
+              "disposition": "applied",
+              "source_id": "dp-420-blueprint",
+              "resolution": "Map all 56 future objectives and expand transition teaching; retain dated July snapshot and activation follow-up."
+            },
+            {
+              "id": "dp420-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Latest-version mode can bootstrap existing items",
+              "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "It supports a beginning position, but not deleted/intermediate history; all-versions-and-deletes has different start/retention constraints.",
+              "recommendation": "Correct schema-migration/data-movement text and explain processor versus pull and mode selection.",
+              "disposition": "applied",
+              "source_id": "dp420-change-feed-modes",
+              "resolution": "Correct schema-migration/data-movement text and explain processor versus pull and mode selection."
+            },
+            {
+              "id": "dp420-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "TTL query visibility and physical deletion are separate",
+              "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/time-to-live",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Expired items stop appearing in query responses before eventual background deletion; serverless deletion is charged.",
+              "recommendation": "Clarify expiration behavior and add answer checkpoints.",
+              "disposition": "applied",
+              "source_id": "dp-420-time-to-live",
+              "resolution": "Clarify expiration behavior and add answer checkpoints."
+            },
+            {
+              "id": "dp420-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Continuation tokens do not expire with the same SDK version",
+              "url": "https://learn.microsoft.com/en-us/cosmos-db/query/pagination",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Page explicitly documents same-SDK nonexpiration and possible empty result pages.",
+              "recommendation": "Replace generic expiration warning with query/scope and SDK compatibility checks.",
+              "disposition": "applied",
+              "source_id": "dp420-query-pagination",
+              "resolution": "Replace generic expiration warning with query/scope and SDK compatibility checks."
+            },
+            {
+              "id": "dp420-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Masked reads do not prove secrecy across every operation",
+              "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/dynamic-data-masking",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs retain originals, describe unmask permissions and expose limitations for writes, inference, change feed and downstream copies.",
+              "recommendation": "Add role/operation boundary example and a negative-test matrix.",
+              "disposition": "applied",
+              "source_id": "dp420-masking",
+              "resolution": "Add role/operation boundary example and a negative-test matrix."
+            },
+            {
+              "id": "dp420-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Vector-index scope is distinct from authorization",
+              "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/sharded-diskann",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sharding targets a subset of the index; application identity and data authorization remain separate.",
+              "recommendation": "Add colliding-thread tenant example, forged-scope test and current HPK support qualification.",
+              "disposition": "applied",
+              "source_id": "dp420-sharded-diskann",
+              "resolution": "Add colliding-thread tenant example, forged-scope test and current HPK support qualification."
+            },
+            {
+              "id": "dp420-deep-7",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Launch examples are not a current execution contract",
+              "url": "https://github.com/AzureCosmosDB/cosmosdb-agent-kit/releases",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current kit structure and SDK rules have evolved; launch blog includes a constructor syntax error and overbroad partitioning claim.",
+              "recommendation": "Qualify blog and teach revision-pinned proposal review with measurable acceptance tests.",
+              "disposition": "applied",
+              "source_id": "dp420-agent-kit-releases",
+              "resolution": "Qualify blog and teach revision-pinned proposal review with measurable acceptance tests."
+            },
+            {
+              "id": "dp420-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Backlog recovery depends on net processing capacity",
+              "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-processor",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-420"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A continuing stream adds new work during backlog processing; a gross-rate estimate understates recovery.",
+              "recommendation": "Correct the formula and add synthetic 6000/(1000-400) example with equal-rate non-drain case.",
+              "disposition": "applied",
+              "source_id": "dp-420-change-feed-processor",
+              "resolution": "Correct the formula and add synthetic 6000/(1000-400) example with equal-rate non-drain case."
+            }
+          ],
+          "notes": "Whole guide read; 56 published October 6 objectives in 12 groups mapped to existing foundations and expanded transition content. Preserve the July baseline and record the expected live-page difference. Correct change-feed bootstrap, TTL, pagination and net backlog drain; add four worked examples, two labs, 36 answer checkpoints and two qualified blogs. No cloud, kit or infrastructure execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-dp-420-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 8,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-az802-deep-review",
       "title": "AZ-802 complete guide and learning-content review",
       "rubric_version": 1,

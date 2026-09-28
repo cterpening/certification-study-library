@@ -1348,30 +1348,50 @@
       "exam_code": "DP-420",
       "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/dp-420-official-objectives.txt",
       "blueprint_snapshot_sha256": "7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a",
       "objective_coverage": [
         {
           "objective_group": "Design and implement data models",
-          "guide_sections": ["Sections 1–2", "All integrated scenarios", "Labs 1–3"]
+          "guide_sections": [
+            "Sections 1–2",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
         },
         {
           "objective_group": "Design and implement data distribution",
-          "guide_sections": ["Section 3", "Global-commerce scenario", "Lab 4"]
+          "guide_sections": [
+            "Section 3",
+            "Global-commerce scenario",
+            "Lab 4"
+          ]
         },
         {
           "objective_group": "Integrate an Azure Cosmos DB solution",
-          "guide_sections": ["Section 4", "All integrated scenarios", "Labs 5–6"]
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 5–6"
+          ]
         },
         {
           "objective_group": "Optimize an Azure Cosmos DB solution",
-          "guide_sections": ["Section 5", "Commerce and IoT scenarios", "Labs 1–5"]
+          "guide_sections": [
+            "Section 5",
+            "Commerce and IoT scenarios",
+            "Labs 1–5"
+          ]
         },
         {
           "objective_group": "Maintain an Azure Cosmos DB solution",
-          "guide_sections": ["Section 6", "All integrated scenarios", "Labs 6–8"]
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 6–8"
+          ]
         }
       ],
       "checks": {
@@ -1382,12 +1402,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 76,
-        "reachable": 73,
+        "unique_external_links": 92,
+        "reachable": 89,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "All five July 21, 2026 objective groups and every published subobjective are mapped to access-pattern decisions, implementation boundaries, evidence, failure actions, three integrated scenarios, eight independent labs and 30 original knowledge checks. All 76 cited URLs are exact source-catalog entries: 73 were reachable and three O'Reilly/Udemy pages were access-blocked; no cited page was missing or broken. The guide covers document modeling and versioning, natural/synthetic/hierarchical partitioning, throughput, current SDK/query/transaction/server-side patterns, regions/consistency/conflicts, Fabric mirroring and transitional Synapse analytical paths, replay-safe change feed, indexing/cache optimization, observability, backup/PITR, layered security, data movement, and IaC. It explicitly records that Synapse Link is unsupported for new projects while retaining the still-published existing-deployment objectives and directs new analytical designs to Fabric mirroring. No upcoming blueprint change or exam retirement was announced."
+      "notes": "Whole guide read; 56 published October 6 objectives in 12 groups mapped to existing foundations and expanded transition content. Preserve the July baseline and record the expected live-page difference. Correct change-feed bootstrap, TTL, pagination and net backlog drain; add four worked examples, two labs, 36 answer checkpoints and two qualified blogs. No cloud, kit or infrastructure execution; human review pending. See docs/research/2026-09-27-dp-420-deep-review.md"
     },
     {
       "id": "dp-750-2026-08-31-source-validation",

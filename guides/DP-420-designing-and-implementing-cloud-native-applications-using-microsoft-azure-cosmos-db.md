@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-27
 ---
 
 # DP-420 Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and the 56 published October objectives were reviewed September 27, 2026. The July baseline remains in place until the announced change; October preparation is separated below. See the [deep-review findings](../docs/research/2026-09-27-dp-420-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026.<br>
-**Upcoming blueprint change (checked September 17, 2026):** The English exam changes October 6, 2026. The [published future blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 baseline; the transition map below identifies the October study work.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English exam changes October 6, 2026. The [published future blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 baseline; the transition material below prepares for October. The live study-guide page now displays October objectives, while the credential page still describes the current exam.<br>
 **Lifecycle status:** Active. On October 6, 2026, the credential becomes **Azure Cosmos DB AI Developer Associate**; DP-420 remains the exam code. See the [official credential notice](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/).<br>
 **Exam page:** [Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) · 100-minute assessment · annual renewal for the earned specialty certification.<br>
 **Official course:** [DP-420T00 Design and implement cloud-native applications with Microsoft Azure Cosmos DB](https://learn.microsoft.com/en-us/training/courses/dp-420t00) · four instructor-led days.<br>
@@ -42,6 +42,8 @@ Practice with a current Azure Cosmos DB for NoSQL SDK. C# and Java code can appe
 
 The [published October blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) renames the exam to **Building AI Applications with Azure Cosmos DB** and the credential to **Azure Cosmos DB AI Developer Associate**. Its three areas are database development (40–45%), secure/optimized deployment (30–35%), and AI/analytics (20–25%). The July map below still applies to this guide's current baseline.
 
+For October, the audience profile names **C# or Python**, replacing the earlier C#/Java reading expectation. Select material by your exam date and language; a familiar DP-420 course title or practice score does not establish coverage of the new AI domain.
+
 | October area | Reuse from this guide | Additional preparation |
 |---|---|---|
 | Database development | Models, partitions, SDK operations, throughput, change feed | Agent Kit, copy-container jobs, explicit latest/all-versions-and-deletes change-feed choices |
@@ -49,6 +51,38 @@ The [published October blueprint](https://learn.microsoft.com/en-us/credentials/
 | AI and analytics | Integration and correctness principles | Full-text/vector/hybrid retrieval, sharded DiskANN, RAG, durable agent memory, conversation state, semantic memory, Fabric mirroring and Spark integration |
 
 Original design exercise: take a two-tenant support assistant from ingestion through retrieval and conversation storage. For each operation, record partition key, tenant authorization, consistency, RU/latency evidence, retry behavior and retention. Test a request for the other tenant's data and a replayed update. Explain how recovery of the source database differs from rebuilding its retrieval index. This exercise connects existing skills to future scope; verify implementation details against current product documentation before running it.
+
+### Retrieval, grounding and durable agent memory
+
+Treat retrieval as a measured pipeline: approved source → chunk/version → embedding → stored content/index → authorized query → selected evidence → generated answer. Record embedding model/version, dimensions, data type, distance metric and source identity. Re-embedding is a migration requiring comparison and rollback, not a silent replacement of numbers in an unchanged schema.
+
+The [vector-search guide](https://learn.microsoft.com/en-us/azure/cosmos-db/vector-search) distinguishes exact `flat`, compressed `quantizedFlat` and approximate `diskANN` indexes. Check dimensions and index eligibility before creating a container; `flat` supports fewer dimensions. The current minimum-data requirement for the latter two means a tiny lab can scan instead of exercising the intended index. Use real embeddings and measure recall as well as RU and latency. Approximate results can vary across replicas without a consistency failure.
+
+[Full-text search](https://learn.microsoft.com/en-us/cosmos-db/full-text-indexing) uses text-language policy and index paths for lexical matching/ranking. Choose language deliberately; additional language support has preview limitations. Hybrid retrieval combines lexical and vector rankings, for example through reciprocal rank fusion. Compare lexical-only, vector-only and hybrid results on the same questions, corpus and authorization scope. A relevant answer is not evidence that unauthorized source material was excluded.
+
+**Worked example — routing is not authorization:** Two tenants both use thread ID `support-7`. A filter on thread ID alone can mix their records. Derive tenant identity from the authenticated application context, enforce allowed tenant/thread access server-side, and include that scope in point addresses and retrieval predicates. [Sharded DiskANN](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/sharded-diskann) narrows the vector index searched; the partition key routes data. Neither replaces access control when a shared service identity can read the container. Test a forged tenant value and deliberately similar cross-tenant documents. Current docs request product-team guidance for vector search with hierarchical keys; verify that combination before promising a supported deployment.
+
+[Agent-memory guidance](https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agentic-memories) separates conversation turns, summaries and semantically retrieved memories. Keep source/provenance, tenant/thread, ordering/version and retention metadata. Use ETags for concurrent state updates and deterministic IDs for replay. A summary can be stale or incorrect even when durably stored; expired source material can survive in derived summaries or embeddings unless your deletion process covers them. Treat retrieved user/tool content as data with provenance, not as permission to execute instructions.
+
+**Worked example — compare quality before cost:** For one held-out question with ten known relevant documents, a candidate returns eight of those ten. Recall@10 is 0.8 for this example. A cheaper query that retrieves only five has recall 0.5. Compare the same authorized candidate set and aggregate over representative questions; one query is not a benchmark. Then test grounding citations, stale/deleted content and an unanswerable question separately from retrieval recall.
+
+### Change-feed modes, copy jobs and AI-assisted development
+
+Read the [change-feed mode matrix](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes). Latest-version mode can start at the beginning but does not preserve every intermediate version or deleted item. All-versions-and-deletes mode requires continuous backup, has a bounded retention window and currently starts from now or a valid checkpoint, not an arbitrary historical timestamp. Select supported SDK/processor/pull APIs explicitly; pull mode leaves checkpointing and work distribution to your application, while the processor coordinates leases.
+
+[Container copy jobs](https://learn.microsoft.com/en-us/azure/cosmos-db/container-copy) remain preview. Online copy requires the documented backup/change-feed prerequisites and supported account/region configuration. Preconfigure the target's partition key, indexes and container TTL; copying items does not copy every container setting. The [completion procedure](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-container-copy) includes stopping source updates, allowing remaining changes to drain and completing the job. Reconcile content, deletes and original transactions before switching callers. A processed-event count is not a count of distinct matching items or proof of a safe cutover.
+
+The [Cosmos DB Agent Kit](https://github.com/AzureCosmosDB/cosmosdb-agent-kit) supplies development guidance for AI coding assistants; it is different from an application's runtime agent-memory store. In a disposable project, record the kit revision and SDK version, request a partition/model/query review, and inspect every proposed change. Test parameterization, client lifetime, tenant access, concurrency and RU/latency. Keep suggestions that pass those checks; a generated explanation or installed skill is not a deployment test. This review did not install or execute the kit.
+
+### Masking, Fleet capacity and analytics boundaries
+
+[Dynamic data masking](https://learn.microsoft.com/en-us/azure/cosmos-db/dynamic-data-masking) changes read/query projections while original values remain stored. Current guidance requires Entra managed identity and distinguishes `unmask` permission; built-in Data Contributor includes it. Account enablement is irreversible, although policy paths can be removed. Change feed requires unmask permission; backups retain original data. Write responses can expose original values, and complex queries can permit inference. Test those paths and current mirroring compatibility before selecting it.
+
+**Worked example — a masked screen does not prove confidentiality:** A support role sees redacted email in a query. That proves this read path only. Check effective roles, write access/response bodies, logs, exports and downstream copies. If the requirement is that the database service cannot process plaintext, use the eligible client-encryption design from Section 6; masking does not establish that boundary.
+
+[Fleets](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet) group accounts and expose pooled throughput and aggregated analytics. [Pool rules](https://learn.microsoft.com/en-us/azure/cosmos-db/fleet-pools) retain dedicated capacity and require matching region/write configurations; capacity is not shared across regions. Pool headroom does not remove a hot physical-partition limit. Record dedicated versus pooled demand and throttling. Fleet analytics provides hourly trends for cost/usage/configuration; use operational monitoring for immediate incident detection. Verify preview/support and billing boundaries before enabling a paid pool.
+
+Distinguish an Azure Cosmos DB account mirrored into Fabric from a [Cosmos DB database created inside Fabric](https://learn.microsoft.com/en-us/fabric/database/cosmos-db/faq). The latter uses Fabric workspace/capacity governance, automatic OneLake mirroring and currently requires gateway-mode connections; it is not a drop-in match for Azure account topology, identity or throughput settings. Query mirrored JSON through the SQL analytics endpoint or Spark over OneLake and validate replication freshness. The [Cosmos DB Spark connector](https://learn.microsoft.com/en-us/fabric/database/cosmos-db/how-to-use-spark-notebooks) instead reaches the operational endpoint for reads/writes, including reverse ETL. Record endpoint, identity, destination, cost and freshness for each notebook.
 
 ## Objective map
 
@@ -164,7 +198,7 @@ Do not call `id` a relational primary key without qualification. In Azure Cosmos
 
 #### Transactional TTL
 
-[Time to live](https://learn.microsoft.com/en-us/azure/cosmos-db/time-to-live) can be enabled at the container and overridden per item. A positive item TTL counts seconds from the last-modified timestamp; `-1` means no expiration when TTL is enabled. Expiration is a background delete and consumes otherwise available throughput under provisioned throughput behavior. Use TTL for ephemeral sessions, telemetry windows, caches, or retention rules—not as a precise scheduler.
+[Time to live](https://learn.microsoft.com/en-us/azure/cosmos-db/time-to-live) can be enabled at the container and overridden per item. A positive item TTL counts seconds from the last-modified timestamp; `-1` means no expiration when TTL is enabled. Expired items stop appearing in query results even when physical deletion is delayed. Background deletion uses spare provisioned RUs; serverless deletion is charged. Use TTL for ephemeral sessions, telemetry windows, caches, or retention rules—not as a precise workflow scheduler.
 
 Distinguish:
 
@@ -182,7 +216,7 @@ Use a `schemaVersion` and readers that can tolerate known old versions. Common s
 
 - **Lazy/read repair:** transform old items when read; cheap rollout, unpredictable migration completion.
 - **Write-new/read-both:** new writers emit the new form while readers accept both; useful for rolling deployment.
-- **Change-feed migration:** project changed items into a new form/container; gives checkpointed progress but unchanged historical data needs a backfill.
+- **Change-feed migration:** project items into a new form/container with checkpointed progress. A latest-version feed started from the beginning can bootstrap extant items; a consumer started from now needs a separate existing-data backfill. Neither reconstructs deleted or overwritten historical versions.
 - **Bulk backfill:** deterministic migration at throughput cost; needs idempotency, checkpoints, throttling, reconciliation, and rollback.
 
 Never reuse a property with an incompatible meaning while mixed application versions are running. Version event payloads and derived models separately from stored aggregate versions.
@@ -344,7 +378,7 @@ Bulk mode increases throughput by scheduling many independent operations efficie
 
 #### Pagination and continuation
 
-Iterators return pages. A continuation token represents query progress, not a durable business cursor or snapshot-isolation promise across arbitrary concurrent changes. Persist only where the selected SDK/query supports it, bind it to the exact query shape and parameters, protect it as application state, and handle expiration/incompatibility. Set a page size to control response shape, not total RU cost magically.
+Iterators return pages, including potentially empty pages before completion. A continuation token represents query progress, not a snapshot-isolation promise across arbitrary concurrent changes. [Pagination guidance](https://learn.microsoft.com/en-us/cosmos-db/query/pagination) says tokens do not expire while using the same SDK version; SDK/query support still varies. Bind stored tokens to the exact query, parameters and authorized scope, and test SDK upgrades. Set a page size to control response shape, not total RU cost magically.
 
 #### Consistency overrides and session tokens
 
@@ -426,6 +460,8 @@ Build and rehearse:
 7. failback and post-event reconciliation.
 
 Per-partition automatic failover is a newer resilience capability whose eligibility and behavior should be verified in [current documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/per-partition-automatic-failover); do not confuse it with changing the data model or consistency guarantee.
+
+Current PPAF guidance targets provisioned-throughput NoSQL accounts with one write region and configured failover regions. It redirects affected partitions while healthy partitions retain their route. Bounded staleness, serverless and same-account restore are among the documented exclusions; review the full matrix before enabling it. Record region priorities, compatible SDK routing and original application behavior through recovery. A documented recovery target is not evidence that your application's dependencies recovered within it.
 
 ### Design multi-region writes and conflict resolution
 
@@ -600,10 +636,13 @@ Change-feed processing consumes source read RUs and lease-container RUs, plus ta
 Estimate lag and recovery:
 
 ```text
-backlog drain time ≈ pending work / sustainable successful processing rate
+net drain rate = sustainable successful processing rate - new work arrival rate
+backlog drain time ≈ pending work / net drain rate, only when net drain rate > 0
 ```
 
 Include target throttling, handler time, retries, batch size, source partitions, and lease acquisition. The estimator measures pending work; it does not prove side effects succeeded. Alert on lag plus handler failures and target reconciliation.
+
+**Worked example — keep up while recovering:** A synthetic backlog contains 6,000 work units, new work arrives at 400 units/s, and successful processing sustains 1,000 units/s. Net drain is 600 units/s, so the idealized recovery is 10 seconds, not six. At 400 units/s processing, it never drains while arrivals continue. Real timing also needs startup, skew, retries and downstream evidence.
 
 ---
 
@@ -713,7 +752,7 @@ Select from volume, rate, downtime, transform, ordering, delete handling, source
 | Azure Stream Analytics | streaming query/window transformation | input/output compatibility, late/out-of-order events, partitioning, retries |
 | Spark connector | large Spark read/write/transform | transactional versus analytical source, Spark partitioning, RU/capacity pressure |
 | IoT Hub custom Cosmos DB endpoint | direct routed device messages | synthetic partition-key template, identity/network and downstream throughput |
-| change feed | continuous projection/migration | no historical backfill by itself in latest-version mode; leases/replay/idempotency |
+| change feed | continuous projection/migration | latest-version from beginning can bootstrap extant items, but not deleted/intermediate history; leases/replay/idempotency |
 | Fabric mirroring | analytical replica in OneLake | not an operational container-to-container migration |
 
 For bulk movement:
@@ -897,6 +936,25 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 
 ---
 
+### Lab 9: tenant-safe retrieval and memory
+
+1. Before provisioning, choose an eligible account, supported vector/partition combination and real embedding model; record versions, dimensions, corpus size, cost limit and cleanup plan.
+2. Use synthetic records for two tenants with colliding thread IDs and deliberately similar content. Enforce tenant/thread authorization from trusted application context.
+3. Compare lexical, vector and hybrid queries with the same held-out relevance set. Record recall, RU, p95 latency, index state and scope; distinguish a tiny-data scan from the intended index.
+4. Test a forged tenant value, stale summary, deleted source and replayed turn. Capture expected denial, deletion propagation, ETag conflict and idempotent result.
+5. Build a grounded response with source references and an unanswerable case. Retain retrieval and answer-quality results separately.
+
+**Evidence:** policy and SDK versions, authenticated scope, queries, measured results, failed access attempts and cleanup. Without a compatible cloud environment, complete the design worksheet and label execution pending; arithmetic alone does not validate the service.
+
+### Lab 10: review generated changes and operational boundaries
+
+1. In a disposable project, review an Agent Kit proposal against the same access-pattern and failure tests used for a manual change. Record the kit revision, proposed diff, accepted/rejected suggestions and measured evidence.
+2. Design a copy-job cutover with mode prerequisites, target TTL/index settings, source-write pause, drain/completion, reconciliation and rollback. Execute only on disposable resources when prerequisites are available.
+3. Draft a masking test matrix for reader, unmask and writer identities, including write responses and downstream copies. Account enablement is irreversible; use a dedicated disposable account for an executed test.
+4. Evaluate a Fleet design on paper before provisioning: account/region/write compatibility, dedicated demand, pool headroom, partition caps and hourly versus incident monitoring.
+
+**Evidence:** distinguish design-only decisions from executed requests. Do not enable paid Fleet capacity merely to complete a worksheet.
+
 ## 9. Original knowledge checks
 
 These are original prompts, not recalled exam questions. Answer with the decision, dependency chain, evidence, failure mode, and corrective action.
@@ -932,6 +990,50 @@ These are original prompts, not recalled exam questions. Answer with the decisio
 29. Choose among SDK bulk, ADF, Kafka, Stream Analytics, Spark, IoT Hub routing and change feed for three different movement patterns.
 30. Why is a successful ARM deployment insufficient evidence that the application works?
 
+### Answer checkpoints
+
+Use these to check your reasoning after attempting the questions.
+
+1. Cardinality counts distinct values; one value can still dominate storage or requests. Inspect peak demand by logical key and physical range.
+2. Supply both `id` and the complete partition key. A point read addresses the item directly; an ID query adds query work and may fan out.
+3. Embed bounded children read/updated with the parent. Unbounded size and independent/highly contended updates favor references.
+4. Synthetic buckets require deterministic routing or multiple bucket reads. A hierarchy supports prefix routing and deeper distribution; the complete key still governs transactions.
+5. The batch transaction is scoped to one logical partition. Put aggregate and outbox under the same complete key and inspect both operation results.
+6. Bulk operations commit independently. Resume failed work with stable IDs, checkpoints and reconciliation; do not replay side effects blindly.
+7. Send the read ETag as an `If-Match` condition. On 412, reread and reevaluate the business change before another write.
+8. Item TTL supports different retention periods when container TTL is enabled. Query disappearance and eventual physical deletion are separate; neither invokes your workflow exactly on schedule.
+9. It marks supported query progress, not a frozen result set or authorization. Bind it to query/scope; same-SDK tokens do not expire by time alone.
+10. Reuse the account client to avoid repeated metadata, connection and CPU work. Inspect client counts, connection churn and SDK timelines.
+11. Direct mode needs the documented TCP connectivity in addition to metadata access; gateway uses HTTPS. Validate private DNS and the selected SDK's support.
+12. Inspect maximum normalized RU by range, hot logical keys and request skew. An account-wide average hides saturation of one range.
+13. Strong: latest committed value; bounded: bounded ordered lag; session: that session's read-your-writes; prefix: ordered but possibly stale; eventual: convergence with possible reordering. Match each to the business tolerance.
+14. Preserve the appropriate session token across the application's client instances. Preferred region alone does not carry session context.
+15. Concurrent regional changes to one logical item can conflict. Last-writer-wins can discard a valid business update; test domain-specific reconciliation.
+16. Service-managed and manual failover choose regional recovery paths with different triggers; partition failover has a narrower supported scope. Application traffic routing separately sends users to a healthy application instance.
+17. Check source eligibility, permissions/network, replication status/lag and nested-schema mapping; test a known source update at the analytical endpoint.
+18. It remains in the July baseline for existing deployments. Follow the current new-project transition notice and your exam date.
+19. Operational feed drives item-change consumers; analytical CDC concerns the analytical-store path; mirroring maintains a Fabric analytical copy. Compare each path's retention, deletes and replay behavior.
+20. Deduplicate or condition target writes by stable source identity/version; the crash window can replay a successfully written target.
+21. Shared processor names/leases cooperate on one consumer. Independent projections need independently advancing checkpoints.
+22. Wider indexing supports more queries at write/storage cost; exclusions save work but may break routes. Composite path order/direction must match supported query shapes.
+23. Keep the old query path working while the new index transforms, then prove both application versions before removing old coverage.
+24. Eligible repeated reads through the dedicated gateway can hit the cache. Measure staleness after writes, request-shape matching, capacity, failures and total cost.
+25. Management roles govern resources; native data roles govern items/queries. Portal visibility does not prove either every management action or item access.
+26. CMK adds control of at-rest key dependencies; the service still processes plaintext. Client encryption hides eligible plaintext from the service and constrains searchable fields/operators.
+27. Replication serves availability, backup historical recovery, change feed derived processing, Fabric time travel analytical history and TTL expiration. None supplies all five guarantees.
+28. Revalidate endpoint/configuration, roles, network/DNS, key access, diagnostics, integrations and actual application transactions.
+29. Examples: SDK bulk for controlled idempotent backfill; Spark for large transformations; change feed for replay-safe projections. Other choices depend on streaming ecosystem, source/sink support and operational ownership.
+30. ARM success establishes resource deployment. Data-path identity, queries, indexes, retries, consistency and business behavior still need execution evidence.
+
+### October scenario checks
+
+31. **Does a vector shard enforce tenant authorization?** No. It scopes index search; validate caller-to-tenant access and server-side query scope separately, especially with a shared service identity.
+32. **Does a masked query prove a writer cannot see the original field?** No. Current masking documentation excludes write responses from that guarantee and describes other inference/exposure paths.
+33. **Can latest-version feed recover every deleted or intermediate item version?** No. Starting from the beginning can bootstrap surviving latest items; select the appropriate mode/checkpoint and recovery mechanism for history.
+34. **What is the idealized drain time for 6,000 pending units, 1,000 processed/s and 400 arriving/s?** Ten seconds using the net 600 units/s. It does not drain if processing only matches arrivals.
+35. **Why can two vector queries return slightly different top results without a data-consistency defect?** Approximate search and independently built replica indexes can vary. Measure recall and ground truth before blaming consistency.
+36. **Does installing Agent Kit give an application durable memory?** No. It supplies coding guidance; persisted state, retrieval, authorization, retention and runtime tests remain application work.
+
 ---
 
 ## 10. Final readiness checklist
@@ -954,6 +1056,7 @@ These are original prompts, not recalled exam questions. Answer with the decisio
 - [ ] I can select and reconcile SDK, pipeline, streaming, Spark and IoT movement paths.
 - [ ] I can deploy resources/index changes safely with IaC and execute throughput/failover operations through controlled runbooks.
 - [ ] I have rechecked the official blueprint, lifecycle, product support notices, limits and vendor-course freshness before booking.
+- [ ] For October 6 onward, I have mapped the 56 new-version objectives, used the C#/Python audience profile, and completed the retrieval/memory, masking, copy-job, Agent Kit, Fleet and Fabric preparation above.
 
 ---
 
@@ -965,7 +1068,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Authoritative July 21, 2026 scope, weights, update log and links |
+| [Official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Public | 45–75 min for blueprint mapping | Live page now displays October 6 scope; compare your exam date with this guide's retained July baseline |
 | [DP-420 Microsoft Learn course page](https://learn.microsoft.com/en-us/training/courses/dp-420t00) | Public self-study; paid instructor option | 4 instructor-led days; roughly 25–40 hours self-study plus labs (estimate) | Primary structured path across the published domains |
 | [Azure Cosmos DB documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/) | Public | 15–30 hours selectively (estimate) | Current product truth, limits, SDK guidance and deep remediation by objective |
 | Microsoft free Practice Assessment, linked on the [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) | Public; sign-in may be required | 45–90 min per attempt plus review (estimate) | Diagnostic baseline and gap review; explanations are more valuable than memorizing answers |
@@ -1000,9 +1103,16 @@ This is **not a complete list**, and it is not a recommendation to consume every
 2. Complete the Microsoft Learn path or one current structured alternative; do not stack several passive courses.
 3. Build Labs 1–5 and retain RU, diagnostics, partition, index, consistency, and replay evidence.
 4. Read the exact official docs for every failed experiment and uncertain answer; complete Labs 6–8.
-5. Take the free Microsoft Practice Assessment once, review every option, and map gaps back to the July blueprint.
+5. Take the free Microsoft Practice Assessment once, review every option, and map gaps to the blueprint for your exam date. Do not infer October coverage merely from the DP-420 label.
 6. Use one paid practice product only if explanations and current-objective alignment add value.
 7. Recheck the official study guide, credential page, lifecycle, support notices, limits and pricing immediately before the exam.
+
+For October candidates, add Labs 9–10 and targeted C#/Python practice. Allow an estimated 12–20 additional hours for the new material and evidence collection, with more time if embeddings, Fabric or authorization testing are new to you. Older course durations above are historical catalog observations; three paid pages were access-blocked during this review and other catalog access does not prove lesson access or October alignment.
+
+### Focused blog reading
+
+- [Introducing the Azure Cosmos DB Agent Kit](https://devblogs.microsoft.com/cosmosdb/azure-cosmos-db-agent-kit-ai-coding-assistants/), **Sajeetharan Sinnathurai, Microsoft, January 22, 2026**. Estimate 20–30 minutes with the current repository. Read for a review workflow, then identify which suggestions need measurements. Its sample constructor has an unmatched brace, and a tenant/year key can still concentrate current-year writes. Treat examples and performance claims as proposals to test; the kit was not installed or executed here.
+- [Sharded DiskANN for multitenant vector search](https://devblogs.microsoft.com/cosmosdb/sharded-diskann-focused-vector-search-for-better-performance-and-lower-cost/), **James Codella, Shivam Atri and Haiyang Xu, Microsoft, April 24, 2025**. Estimate 25–40 minutes with current search docs. Useful for separating partition routing from index sharding and comparing recall, latency and RU. Published benchmark gains are workload-specific; some query samples put `WHERE` after `ORDER BY`, so use current query syntax. Exercise: design an authorized-tenant comparison with identical data and a held-out relevance set. Samples and benchmark were not executed here.
 
 ---
 

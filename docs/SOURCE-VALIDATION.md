@@ -498,6 +498,8 @@ The review maps every April 24, 2026 subobjective to a platform decision, config
 
 ## DP-420 coverage record
 
+The September 27 [deep review](research/2026-09-27-dp-420-deep-review.md) maps 56 detailed objectives. Whole guide read; 56 published October 6 objectives in 12 groups mapped to existing foundations and expanded transition content. Preserve the July baseline and record the expected live-page difference. Correct change-feed bootstrap, TTL, pagination and net backlog drain; add four worked examples, two labs, 36 answer checkpoints and two qualified blogs. No cloud, kit or infrastructure execution; human review pending. Current guide citations: 92 registered, 89 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Design and implement data models | Sections 1–2, all integrated scenarios, and Labs 1–3 |
