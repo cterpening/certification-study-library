@@ -502,6 +502,34 @@
       "review_on": "2027-05-01",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/edge-security-module-deprecation",
       "action": "Recheck June 1 Defender for IoT device-builder micro-agent retirement and migration guidance. Do not imply retirement of OT network sensors or all Defender for IoT."
+    },
+    {
+      "id": "sc200-sentinel-nrt-eligibility-conflict",
+      "exam_codes": [
+        "SC-200"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "action": "Compare custom-detection supported Sentinel Continuous tables against unified-hunting known issues that still disallow Sentinel NRT. Keep the contradiction visible until authoritative scope/rollout evidence resolves it; no blanket tenant-support claim."
+    },
+    {
+      "id": "sc200-lake-access-and-onboarding",
+      "exam_codes": [
+        "SC-200",
+        "SC-100"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "action": "Reconcile September 23 new-versus-existing onboarding, lake-only versus extended Analytics retention, table-settings hunting warning and Fabric no-backfill preview. Check implications for SC-200 labs and SC-100 architecture guidance without assuming history access or unchanged consumer authorization."
+    },
+    {
+      "id": "sc200-portal-transition",
+      "exam_codes": [
+        "SC-200"
+      ],
+      "review_on": "2027-03-01",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+      "action": "Before March 31 Azure-portal support end, recheck SC-200 lab paths, workspace roles, connector routing, analytic/playbook behavior and data history access."
     }
   ]
 }

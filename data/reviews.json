@@ -1728,26 +1728,38 @@
       "notes": "Whole guide read and 81 October objectives in 14 groups individually mapped; July 28 baseline retained. Correct current prerequisite and agent-policy targets; add five worked examples, two labs, eight new answers (44 total) and two qualified Microsoft blog exercises. Clarify recovery, Sentinel, Key Vault, CSPM/CIEM, policy, network, Copilot and storage boundaries. Thirteen offline arithmetic/set checks passed; no tenant or infrastructure lab execution. Five lifecycle checkpoints added; human review pending. See docs/research/2026-09-27-sc-100-deep-review.md"
     },
     {
-      "id": "sc-200-2026-09-01-source-validation",
+      "id": "sc-200-2026-09-27-source-validation",
       "exam_code": "SC-200",
       "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
-      "outcome": "passed",
+      "reviewed_on": "2026-09-27",
+      "outcome": "blocked",
       "blueprint_snapshot_path": "data/objective-snapshots/sc-200-official-objectives.txt",
       "blueprint_snapshot_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
       "objective_coverage": [
         {
           "objective_group": "Manage a security operations environment",
-          "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–4"]
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
         },
         {
           "objective_group": "Respond to security incidents",
-          "guide_sections": ["Section 2", "All integrated scenarios", "Labs 5–7"]
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
         },
         {
           "objective_group": "Perform threat hunting",
-          "guide_sections": ["Section 3", "Long-horizon scenario", "Labs 4 and 8"]
+          "guide_sections": [
+            "Section 3",
+            "Long-horizon scenario",
+            "Labs 4 and 8"
+          ]
         }
       ],
       "checks": {
@@ -1758,12 +1770,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 48,
-        "reachable": 46,
+        "unique_external_links": 60,
+        "reachable": 58,
         "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "Every subobjective in the July 28, 2026 blueprint is mapped to a configuration boundary, operating decision, query/investigation path, evidence artifact, failure action, or recovery proof. Three integrated scenarios, eight independent labs, and 36 original checks cover Defender XDR notifications/tuning, Endpoint settings/ASR/device groups/custom data collection, AIR and attack disruption, Sentinel automation, roles, data tiers/retention, workbooks and SOC optimization, Windows/AMA/DCR/WEF/Syslog/CEF/Azure/threat-intelligence/custom-table ingestion, Defender and Sentinel detection engineering, cross-domain incident response, Endpoint actions, Purview/Audit/eDiscovery/Graph evidence, KQL and Advanced Hunting, threat analytics, Sentinel Graph, data-lake jobs/summaries/notebooks/MCP, Security Copilot and agentic investigation. All 48 cited URLs are exact catalog entries: 46 were reachable and the O'Reilly and Udemy pages were access-blocked; none was missing or broken. The guide marks older secondary sources as foundations, verifies the active exam, free Practice Assessment and 43 hours 12 minutes of current Learn paths, calls out the March 31, 2027 Sentinel Azure-portal support end, and records no announced blueprint change or retirement."
+      "notes": "Whole guide read; 54 October objectives in nine groups individually mapped while retaining July 28 baseline. Add five worked examples, two labs, eight answers (44 total) and two qualified Microsoft blog exercises. Update September Sentinel onboarding/history/Fabric limits, collection budgets, event identity, automation mapping, ingestion latency, TI versions, Graph/MCP/live-response boundaries and resource metadata. Twelve offline checks passed; no tenant or KQL execution. Two Microsoft documentation conflicts remain open; three follow-up checkpoints added; human review pending. See docs/research/2026-09-27-sc-200-deep-review.md"
     },
     {
       "id": "sc-300-2026-09-01-source-validation",
@@ -9495,6 +9507,56 @@
         "missing_or_error": 0
       },
       "notes": "Every April 20, 2026 subobjective is mapped to an end-to-end analyst decision spanning source, transformation, model, DAX, report, distribution, refresh, and security. Three scenarios, eight labs and 36 original checks cover the complete published scope. All 27 URLs are cataloged: 24 reachable and three commercial pages access-blocked. The September 7 watch treats the AI at Work roadmap as mutable discovery evidence, not a Power BI blueprint, while retaining diverse independent modeling and DAX explanations."
+    },
+    {
+      "id": "sc-200-2026-09-01-source-validation",
+      "exam_code": "SC-200",
+      "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage a security operations environment",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Respond to security incidents",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Perform threat hunting",
+          "guide_sections": [
+            "Section 3",
+            "Long-horizon scenario",
+            "Labs 4 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 48,
+        "reachable": 46,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective in the July 28, 2026 blueprint is mapped to a configuration boundary, operating decision, query/investigation path, evidence artifact, failure action, or recovery proof. Three integrated scenarios, eight independent labs, and 36 original checks cover Defender XDR notifications/tuning, Endpoint settings/ASR/device groups/custom data collection, AIR and attack disruption, Sentinel automation, roles, data tiers/retention, workbooks and SOC optimization, Windows/AMA/DCR/WEF/Syslog/CEF/Azure/threat-intelligence/custom-table ingestion, Defender and Sentinel detection engineering, cross-domain incident response, Endpoint actions, Purview/Audit/eDiscovery/Graph evidence, KQL and Advanced Hunting, threat analytics, Sentinel Graph, data-lake jobs/summaries/notebooks/MCP, Security Copilot and agentic investigation. All 48 cited URLs are exact catalog entries: 46 were reachable and the O'Reilly and Udemy pages were access-blocked; none was missing or broken. The guide marks older secondary sources as foundations, verifies the active exam, free Practice Assessment and 43 hours 12 minutes of current Learn paths, calls out the March 31, 2027 Sentinel Azure-portal support end, and records no announced blueprint change or retirement."
     }
   ]
 }

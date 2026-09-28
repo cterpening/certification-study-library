@@ -1,0 +1,2915 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "SC-200",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "0562bde80bd19b8c2b6c8a13849d50b0c4044116fb4c5006146e2f475a8475d7",
+  "guide_after_sha256": "aba3ea1b30599c40d854f4415df6a28371042e7467c1e50ca468751577764cea",
+  "prior_records": {
+    "exam": {
+      "code": "SC-200",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Security Operations Analyst",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+      "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical security operations across Microsoft Defender XDR, Microsoft Sentinel, Entra ID, Purview and Defender for Cloud, plus KQL, Windows/Linux, Microsoft 365, Azure, incident response, threat hunting, automation, and current AI-agent/Copilot concepts."
+    },
+    "review": {
+      "id": "sc-200-2026-09-01-source-validation",
+      "exam_code": "SC-200",
+      "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage a security operations environment",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Respond to security incidents",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Perform threat hunting",
+          "guide_sections": [
+            "Section 3",
+            "Long-horizon scenario",
+            "Labs 4 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 48,
+        "reachable": 46,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective in the July 28, 2026 blueprint is mapped to a configuration boundary, operating decision, query/investigation path, evidence artifact, failure action, or recovery proof. Three integrated scenarios, eight independent labs, and 36 original checks cover Defender XDR notifications/tuning, Endpoint settings/ASR/device groups/custom data collection, AIR and attack disruption, Sentinel automation, roles, data tiers/retention, workbooks and SOC optimization, Windows/AMA/DCR/WEF/Syslog/CEF/Azure/threat-intelligence/custom-table ingestion, Defender and Sentinel detection engineering, cross-domain incident response, Endpoint actions, Purview/Audit/eDiscovery/Graph evidence, KQL and Advanced Hunting, threat analytics, Sentinel Graph, data-lake jobs/summaries/notebooks/MCP, Security Copilot and agentic investigation. All 48 cited URLs are exact catalog entries: 46 were reachable and the O'Reilly and Udemy pages were access-blocked; none was missing or broken. The guide marks older secondary sources as foundations, verifies the active exam, free Practice Assessment and 43 hours 12 minutes of current Learn paths, calls out the March 31, 2027 Sentinel Azure-portal support end, and records no announced blueprint change or retirement."
+    },
+    "sources": [
+      {
+        "id": "ai-200-john-savill-azure-master-class-repository",
+        "title": "John Savill Azure Master Class repository",
+        "url": "https://github.com/johnthebrit/AzureMasterClass",
+        "publisher": "John Savill",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200",
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-100-partner-skilling-playbook",
+        "title": "Security Skilling Offerings FY26 partner playbook",
+        "url": "https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-100",
+          "SC-200"
+        ],
+        "notes": "Public playbook lists SC-100 and SC-200 among prioritized security credential offerings; underlying course/event access requires Microsoft partner sign-in and schedules vary."
+      },
+      {
+        "id": "sc-200-official-study-guide",
+        "title": "Study guide for Exam SC-200: Microsoft Security Operations Analyst",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Authoritative July 28, 2026 skills measured, weights, audience profile, and change log."
+      },
+      {
+        "id": "sc-200-official-credential",
+        "title": "Microsoft Certified: Security Operations Analyst Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Active credential, renewal, exam duration, languages, sandbox, prep videos, and free Practice Assessment entry point."
+      },
+      {
+        "id": "sc-200-defender-xdr-alert-tuning",
+        "title": "Investigate and tune alerts in Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/investigate-alerts",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-endpoint-advanced-features",
+        "title": "Configure Microsoft Defender for Endpoint advanced features",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/advanced-features",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-asr-deployment",
+        "title": "Attack surface reduction rules deployment overview",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-endpoint-custom-data-collection",
+        "title": "Create and manage custom data collection rules in Microsoft Defender for Endpoint",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Current implementation requirements, supported event tables, dynamic-tag targeting, monitoring, limits, and lifecycle management; volatile capability details require rechecking."
+      },
+      {
+        "id": "sc-200-attack-disruption-configuration",
+        "title": "Configure automatic attack disruption in Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-run-playbooks",
+        "title": "Automate and run Microsoft Sentinel playbooks",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/automation/run-playbooks",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-roles",
+        "title": "Roles and permissions in Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/roles",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-workbooks",
+        "title": "Visualize and monitor data by using workbooks in Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-soc-optimization-reference",
+        "title": "Microsoft Sentinel SOC optimization recommendations types",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-reference",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Also records the March 31, 2027 end of Sentinel support in the Azure portal."
+      },
+      {
+        "id": "sc-200-sentinel-connectors",
+        "title": "Microsoft Sentinel data connectors",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-syslog-cef-ama",
+        "title": "Ingest Syslog and CEF messages to Microsoft Sentinel with AMA",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-cef-syslog-ama",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-azure-diagnostic-settings",
+        "title": "Diagnostic settings in Azure Monitor",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-whats-new",
+        "title": "What's new in Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-defender-custom-detections",
+        "title": "Create custom detection rules in Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-nrt-rules",
+        "title": "Near-real-time analytics rules in Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-defender-cloud-alert-response",
+        "title": "Manage and respond to security alerts in Microsoft Defender for Cloud",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/managing-and-responding-alerts",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-endpoint-response-actions",
+        "title": "Take response actions on a device in Microsoft Defender for Endpoint",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-purview-audit-search",
+        "title": "Search the audit log in Microsoft Purview",
+        "url": "https://learn.microsoft.com/en-us/purview/audit-search",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-graph-activity-logs",
+        "title": "Microsoft Graph activity logs overview",
+        "url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-advanced-hunting-overview",
+        "title": "Advanced Hunting overview in Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-graph-overview",
+        "title": "What is Microsoft Sentinel Graph?",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-job-comparison",
+        "title": "Compare KQL jobs, summary rules, and search jobs in Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-notebooks",
+        "title": "Run notebooks on the Microsoft Sentinel data lake",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-sentinel-mcp-get-started",
+        "title": "Get started with Microsoft Sentinel MCP Server",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ]
+      },
+      {
+        "id": "sc-200-official-course",
+        "title": "SC-200T00-A: Defend against cyberthreats with Microsoft's security operations platform",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-200t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Four-day instructor-led course with self-directed syllabus."
+      },
+      {
+        "id": "sc-200-learn-defender-xdr",
+        "title": "Mitigate threats using Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Six modules, 6 hours 6 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-security-copilot",
+        "title": "Mitigate threats using Microsoft Security Copilot",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Five modules, 4 hours 54 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-purview",
+        "title": "Mitigate threats using Microsoft Purview",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Four modules, 4 hours 19 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-endpoint",
+        "title": "Mitigate threats using Microsoft Defender for Endpoint",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Nine modules, 5 hours 49 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-defender-cloud",
+        "title": "Mitigate threats using Microsoft Defender for Cloud",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Six modules, 4 hours 17 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-kql",
+        "title": "Create queries for Microsoft Sentinel using KQL",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Four modules, 2 hours 10 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-configure-sentinel",
+        "title": "Configure your Microsoft Sentinel environment",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Six modules, 3 hours 45 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-connect-logs",
+        "title": "Connect logs to Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Seven modules, 3 hours 4 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-detections-investigations",
+        "title": "Create detections and perform investigations using Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Eight modules, 6 hours 34 minutes listed."
+      },
+      {
+        "id": "sc-200-learn-threat-hunting",
+        "title": "Perform threat hunting in Microsoft Sentinel",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Four modules, 2 hours 14 minutes listed."
+      },
+      {
+        "id": "sc-200-microsoftlearning-labs",
+        "title": "MicrosoftLearning SC-200 course lab repository",
+        "url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Public MIT-licensed lab instructions intended to accompany the Microsoft course environment."
+      },
+      {
+        "id": "sc-200-pluralsight-path",
+        "title": "Microsoft Security Operations Analyst (SC-200)",
+        "url": "https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Three courses, six hours, and a practice exam; listed course dates range from 2022 to 2024 and predate the current blueprint."
+      },
+      {
+        "id": "sc-200-oreilly-packt-video",
+        "title": "SC-200: Microsoft Security Operations Analyst",
+        "url": "https://www.oreilly.com/videos/sc-200-microsoft-security/9781804611777/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Packt video with Anand Rao Nednur, 12 hours 50 minutes, published June 2022; foundational rather than current-outline coverage."
+      },
+      {
+        "id": "sc-200-oreilly-tim-warner-live",
+        "title": "Exam SC-200 Microsoft Security Operations Analyst Crash Course",
+        "url": "https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Tim Warner live course with two three-hour sessions in the listed agenda; schedule and current-blueprint coverage must be verified."
+      },
+      {
+        "id": "sc-200-microsoft-press-exam-ref-second-edition",
+        "title": "Exam Ref SC-200 Microsoft Security Operations Analyst, Second Edition",
+        "url": "https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595",
+        "publisher": "Microsoft Press Store",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "416-page second edition published in 2026; reconcile its exam-update chapter with the July 28, 2026 blueprint."
+      },
+      {
+        "id": "sc-200-udemy-dean-ellerby-practice",
+        "title": "SC-200 Practice Tests: Security Operations Analyst (2026)",
+        "url": "https://www.udemy.com/course/sc-200-practice-tests-security-operations-analyst-2026/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Dean Ellerby listing updated August 2026 with six tests, 360 original questions, explanations, and documentation links."
+      },
+      {
+        "id": "sc-200-measureup-practice",
+        "title": "Microsoft SC-200 practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "170 original questions, practice/certification modes, explanations/references, demo, and August 2026 update listed."
+      },
+      {
+        "id": "sc-200-cloud360-youtube",
+        "title": "SC-200 Full Course series entry point",
+        "url": "https://www.youtube.com/watch?v=HsqdfQdg08k",
+        "publisher": "Cloud 360 Training",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Free YouTube series entry point published February 2025; the linked first video is a short orientation and the series predates the current blueprint."
+      },
+      {
+        "id": "sc-200-john-savill-channel",
+        "title": "John Savill's Technical Training videos",
+        "url": "https://www.youtube.com/@NTFAQGuy/videos",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-200"
+        ],
+        "notes": "Useful KQL, Sentinel, Defender, and security foundations; no current SC-200-specific end-to-end course was confirmed in this review."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "886b04dc81f77659c666f3e2dbb96fea26b2a1213a57c4ed38910b3b0024540f",
+      "guide_sections": "1 / Notifications and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "17beaefdf8918e573823d265157cd98dbdeae9fa4f2a14b239c66132878156a5",
+      "guide_sections": "1 / Alert tuning/suppression/correlation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "962db0e87a69b5d7365a3bc002a2a66f3b1a18db61fb1c972a590d277ec33299",
+      "guide_sections": "1 / Endpoint advanced features",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "825a58cc274dfd5cf84be51628171119dc849e0f176f928f6ab3f4399448e784",
+      "guide_sections": "1 / Endpoint rules versus detection/collection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "052526a4c7cdf5ebeaccf702dea157e0962d6aa22e9af40ec16f1727bfe80534",
+      "guide_sections": "1 / Custom collection and rolling-budget example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "5d7aa2bbc1c8d3372543f584bdfe8298730fb2dcae456142db973debd29ee0e0",
+      "guide_sections": "1 / ASR deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "7a553681b995edf3e960c0c7a446a039f06abb3e5288f969cd182abbcc6bfbd8",
+      "guide_sections": "1 / AIR and Action center",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "2f2838e3ccfa5fea4b36b59bd5f98a82cbaf937c07aa295d493a2118beabbda1",
+      "guide_sections": "1 / Attack disruption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "bd027bab6f5ae8f94e97155585d438991eefcea6ebef47a376705cac36259db4",
+      "guide_sections": "1 / Device groups/rank/permissions/automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "92446a903c70bff938fca0cc98b9d3181c069515e47937f8813db4630dcfd1b9",
+      "guide_sections": "1 / Automation rules and identity example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "14e02347062fcbe9153cfdf18c73ea5c5c6dbc51c96331e95e55301c9ebcb6dc",
+      "guide_sections": "1 / Playbook identities/triggers/retry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "75b6b058c54a913cdeb45a9a26cfd113310984478e60d904175e91d1bb42a30a",
+      "guide_sections": "1 / Roles and four permission planes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "769e17094ffa4eba14878cff5f8627797358e6453edde308bd0e4be99e2d1e15",
+      "guide_sections": "1 / Retention/cohort/Fabric boundary and history example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "6305ace68984305ba6f03e4e6858bcb8631f1f57a53c705e08d40614958194f8",
+      "guide_sections": "1 / Workbooks and evidence denominator",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "b172c3331a1d7cf65c257dc8e0b41f2b4a85ccffb7c852f4f652e1540b021c28",
+      "guide_sections": "1 / SOC optimization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "34213fa4d6f429d9cef0239aa44fac5831b1465b6e0c8b3a79b0c0a1894e44e1",
+      "guide_sections": "1 / Connector selection and silent-source gap",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3441bed9ca3ec534ec7a1bfcc77266e74bdbbdaf9f9149d06e24842681ad8223",
+      "guide_sections": "1 / Windows Security Events AMA/DCR",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "6835e59083231d75de3d45be29f4a8cc767262599d559b71962fa35594df0ac9",
+      "guide_sections": "1 / WEF collector transport and event tracing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "de98a228b382b3fca9b998a090012307698ae876578b170554de39e6e1f0ba9c",
+      "guide_sections": "1 / Syslog/CEF AMA streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "e878a5c96febc73f66d4c62d71189213704bd7d5f10dfec4727809c8628d6026",
+      "guide_sections": "1 / Azure Activity subscription export, policy and resource diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "b90dafd2e6e2db6f489363032cbe078b6e3f3274a79cd5a9834ac377dbae9387",
+      "guide_sections": "1 / Threat intelligence latest versions/deletion/republishing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "34626c553c83a6096d1f0182a760d6fe7a25f257a80f4cc0262ca8cc76ea37b6",
+      "guide_sections": "1 / Custom tables and schema",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "ba3930284100f736dbd29ebbba06c36d1b8ef5eedccc92fd881cc42d7e9577b3",
+      "guide_sections": "1 / Custom detections and same-event aggregation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "e8c0328b2dd66a7b4634cd9608665f415212a4efdfb0d0fc536014157b7c9031",
+      "guide_sections": "1 / Rule permissions/lookback/scopes/volume/Continuous conflict",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "7755ceecfb13fce7be1dc628c6dd3b0ebe21345028482f6e7b9d7940a02aa4f2",
+      "guide_sections": "1 / Scheduled/NRT/TI/ML rules and ingestion-clock example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "6ca26c152075e1306efc8f4932e3aa9956ac4d294bdbca1b97b5ff984c49f7b1",
+      "guide_sections": "1 / ATT&CK coverage and validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "d3e63566be3ab063d70604702841b9c23d28a1d510d968fde2c8e2e2cf09c1ea",
+      "guide_sections": "1 / Anomalies as investigation input",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "71756943ee52de3d5915d5474d406fc476e871a62fadc8348cad1934b2eaf3a8",
+      "guide_sections": "2 / Office 365 incidents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "3c2f1466a8ff60d67e8286f68f64814c7fb05a9034fe7d4e3ff06d65496240c9",
+      "guide_sections": "2 / Purview incidents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "cb066fb2bc6cd7c9fca01b033f2e40b3ae835de54ec3a1175a18e235f97e4742",
+      "guide_sections": "2 / Defender for Cloud incidents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "5e08817f9b4bf115720078618252002789fc20786d5e297dd560723fd2e86c39",
+      "guide_sections": "2 / Cloud Apps risks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "575d3b78660b545cd3a7950e22f21efa095f881231f254730307fce87eedb5c2",
+      "guide_sections": "2 / Entra identities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "05688d46f35d4b7dac73eeeb886d5ac41b559183e8f03d93e1940b6de608fa5d",
+      "guide_sections": "2 / Defender for Identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "58babaef150fb7dbb4a88e146a658bb043e8002ec5a40d210c22844cac1c64c1",
+      "guide_sections": "2 / Sentinel incidents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "c74a057430dc0533f4a793ae8ca7d94c4733ff6bbdee23b1e82e7c109ff08517",
+      "guide_sections": "2 / Agentic AI and Copilot evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "6c338bec1006791794ebefb09ab78b1c5ee7ccbeb355547faed868f26d101f1e",
+      "guide_sections": "2 / Complex multi-stage/multi-domain/lateral attacks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "ab39ccc0bc0efb7c920baffe0b27a4cfb05b8aa11b83ee77e620fd5ccc034fd0",
+      "guide_sections": "2 / Case management",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "b3cc946880709a740abbe4bd3567445f50e59361e089da3430d60cde99ca62f1",
+      "guide_sections": "2 / Device timeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "3d7b0d33d33951b0955b15b616688d618008a49034265eccba46a39ab57686b9",
+      "guide_sections": "2 / Device actions/live response/packages and platform limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "bfabd0ee1b022b780350f8566cd1b42a0375d2a675ed5ebc65b3bd4cb13320fc",
+      "guide_sections": "2 / Evidence/entity investigation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "67f61fc23ada8da913fe09cde8d3e101f70de04b211936545a846d542ea034b5",
+      "guide_sections": "2 / Attack-disruption follow-up",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "ed77e0d8bc4714606f2128b9193ae258ac67f969f86821796e320cccd8382088",
+      "guide_sections": "2 / Purview Audit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "6a23dff5679254f0a32f55c069f031e7643f07a86f49830cbfb88ac38bb2c77b",
+      "guide_sections": "2 / eDiscovery Content search",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "1cc401425748fa555236f6f0544be6db363d35413a454837ac25837dd98f5618",
+      "guide_sections": "2 / Graph activity request/batch/status evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "8e1a448ca8eba497b406efcdd9b646fd8f37747d09cc3ba69e4fd74d90075a29",
+      "guide_sections": "3 / Table selection and SigninLogs schema",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "c2a9873dc4412e3c06ca13f956b98811879df4ff6bd3f880637a047bb2be4659",
+      "guide_sections": "3 / KQL operators and validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "fdaf7ef98079d4a057493a6b85307e1f01e37d059aacca401c2a2c3638dd1a5c",
+      "guide_sections": "3 / Advanced Hunting queries; 1 / same-event detection example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "03b6e9eb5d8c02d3103e35e01ac204491de06ee54150b90f4ddbc0669f5ed1be",
+      "guide_sections": "3 / Threat analytics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "275a20204fcde5f9f7d45dd60f21b6f471c3aa9530cf30cf669c2bb94403fc1d",
+      "guide_sections": "3 / Hunting graphs/blast-radius inference",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "89c28582842f37a6343c3dd5895c6fd898d26d6c7480346f06883cc2dbdb5df8",
+      "guide_sections": "3 / Sentinel Graph and refresh/history boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "7dc34998cb8baa3b01be368b603888f84048591406582c17a5b50c9156dc4c88",
+      "guide_sections": "3 / Hunting queries/hunts/bookmarks/livestream",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "e983d659cf9d51654b9a7e5375cb07ba2725e98fc9bd9b8301771196f68dd081",
+      "guide_sections": "3 / KQL jobs and September cohort/Fabric paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "0b79825c24f736d48be2107d7e266cc38a31d16327b6110cf9db13ccfb9fd60f",
+      "guide_sections": "3 / Summary tables grain/frequency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "9e95aafe2bbe5e0a5712076b38b3b1d23f47d504bff931bd48c9e524ba25698c",
+      "guide_sections": "3 / Notebook runtime and MCP collection-specific prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SC-200"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SC-200",
+        "title": "Microsoft Security Operations Analyst",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+        "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+        "snapshot_path": "data\\objective-snapshots\\sc-200-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sc-200-official-status.json",
+        "previous_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
+        "current_sha256": "b03a3ed9dfac76ede2eceb81987d4b208c20eee1376f8bba7de1039015fd5bc4",
+        "previous_status_sha256": "e30d4fb5e0caad181ec1103c2b5568e3a48f409355252463a859319e523c6ee7",
+        "current_status_sha256": "4a10a1213107b8b2d03da3e952b2791d172d9e97c4f56de314a5b16424fc466c",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 21, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 60,
+    "reachable": 58,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "ai-200-john-savill-azure-master-class-repository",
+      "url": "https://github.com/johnthebrit/AzureMasterClass",
+      "checked_at": "2026-09-28T03:03:46.531936+00:00",
+      "health": {
+        "id": "ai-200-john-savill-azure-master-class-repository",
+        "url": "https://github.com/johnthebrit/AzureMasterClass",
+        "checked_at": "2026-09-28T03:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/AzureMasterClass",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/AzureMasterClass: Repo for the Azure Master Class",
+        "canonical_url": "https://github.com/johnthebrit/AzureMasterClass",
+        "duration_signals": [],
+        "signal_fingerprint": "b67a304455d9157ff78f2d75f017d33f26aea48265c705dbfc659bd905dece08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/AzureMasterClass",
+      "sha256": "41bbcc52aefcd7b809579ced12378bddd91459ee34810441cd84aa49974729c4",
+      "text_characters": 4999
+    },
+    {
+      "id": "sc-100-partner-skilling-playbook",
+      "url": "https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf",
+      "checked_at": "2026-09-28T03:03:46.532570+00:00",
+      "health": {
+        "id": "sc-100-partner-skilling-playbook",
+        "url": "https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf",
+        "checked_at": "2026-09-28T03:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf",
+      "sha256": "e15de68eb14c49926c7384959f47dfc08c31ccf3a6842a756ef97f24b8016e71",
+      "text_characters": 2964697
+    },
+    {
+      "id": "sc-200-official-study-guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+      "checked_at": "2026-09-28T03:03:46.532989+00:00",
+      "health": {
+        "id": "sc-200-official-study-guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+        "checked_at": "2026-09-28T03:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam SC-200: Microsoft Security Operations Analyst",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "4b90e05b3829b21f8c10a9a24047613f347b3a252e50d2546b01cab6e60ffa82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+      "sha256": "edd100a2fa1b8fc3db89ac746c4bbf8d160ebaf537e520002d4082402544011f",
+      "text_characters": 9835
+    },
+    {
+      "id": "sc-200-official-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "checked_at": "2026-09-28T03:03:46.992640+00:00",
+      "health": {
+        "id": "sc-200-official-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+        "checked_at": "2026-09-28T03:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Security Operations Analyst Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "8eec4f115bacc95b87a325fc177cb9604d62d6c111f2e9e7f6b1c7891e9afd58",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "sha256": "e49813a427531ea890a694f80b8ee6404a6f9efd48abca78efc77c0cb1ad0d35",
+      "text_characters": 4956
+    },
+    {
+      "id": "sc-200-defender-xdr-alert-tuning",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/investigate-alerts",
+      "checked_at": "2026-09-28T03:03:47.240254+00:00",
+      "health": {
+        "id": "sc-200-defender-xdr-alert-tuning",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/investigate-alerts",
+        "checked_at": "2026-09-28T03:03:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/investigate-alerts",
+        "content_type": "text/html",
+        "page_title": "Investigate alerts in Microsoft Defender XDR - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/investigate-alerts",
+        "duration_signals": [],
+        "signal_fingerprint": "863d618134f735ceff7ea743ccc02df8a892477a94cf81133e84ba29ddbde816",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/investigate-alerts",
+      "sha256": "68883ede88bb6003156cb233a429a6e7b73cc69fa1301052cd405f97e09f1aea",
+      "text_characters": 26599
+    },
+    {
+      "id": "sc-200-endpoint-advanced-features",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/advanced-features",
+      "checked_at": "2026-09-28T03:03:47.678014+00:00",
+      "health": {
+        "id": "sc-200-endpoint-advanced-features",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/advanced-features",
+        "checked_at": "2026-09-28T03:03:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/advanced-features",
+        "content_type": "text/html",
+        "page_title": "Configure advanced features in Microsoft Defender for Endpoint - Microsoft Defender for Endpoint",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-endpoint/advanced-features",
+        "duration_signals": [],
+        "signal_fingerprint": "4964cc6e80a09d959bcaa4866b184a9d0f77c417421019d53e8f06bfa963d1db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/advanced-features",
+      "sha256": "24c5f9682d0ed43c0fe85f3e551171e3218ba5ab9e59fbb0a0974550c5ecfbe2",
+      "text_characters": 12379
+    },
+    {
+      "id": "sc-200-asr-deployment",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment",
+      "checked_at": "2026-09-28T03:03:47.950383+00:00",
+      "health": {
+        "id": "sc-200-asr-deployment",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment",
+        "checked_at": "2026-09-28T03:03:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment",
+        "content_type": "text/html",
+        "page_title": "ASR rules deployment guide - Microsoft Defender for Endpoint",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment",
+        "duration_signals": [],
+        "signal_fingerprint": "e124079b6f0f6fca66505bf93864b2d586623fed1738966e198041f478eab0ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment",
+      "sha256": "1a0b54c76464d9e8400fb81bac49ca24d243831052c47e0f237aeeed6d70d04f",
+      "text_characters": 2803
+    },
+    {
+      "id": "sc-200-endpoint-custom-data-collection",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+      "checked_at": "2026-09-28T03:03:48.170570+00:00",
+      "health": {
+        "id": "sc-200-endpoint-custom-data-collection",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+        "content_type": "text/html",
+        "page_title": "Create and manage custom data collection rules in Microsoft Defender for Endpoint - Microsoft Defender for Endpoint",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+        "duration_signals": [
+          "1 hour",
+          "20 minutes",
+          "48 hours"
+        ],
+        "signal_fingerprint": "515240f820c979aca2f98ff66e5bceb86c5a2b04da3ebd26e527b6bcd09d751e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+      "sha256": "bbf84bc7a782335d12cfc2370d96034e480db3bd947b101560d872d5a96c5cae",
+      "text_characters": 9253
+    },
+    {
+      "id": "sc-200-attack-disruption-configuration",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption",
+      "checked_at": "2026-09-28T03:03:48.219204+00:00",
+      "health": {
+        "id": "sc-200-attack-disruption-configuration",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption",
+        "content_type": "text/html",
+        "page_title": "Configure automatic attack disruption in Microsoft Defender XDR - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption",
+        "duration_signals": [],
+        "signal_fingerprint": "ae23dc4c97e22e1dd2c563800ad29ce73cd27b7bd350b6dcd6d1f9aed21a97f2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption",
+      "sha256": "7161d5015b31ef76c69c7ef983e27f45193449761a1c76eadc09533aedcaf5b0",
+      "text_characters": 10443
+    },
+    {
+      "id": "sc-200-sentinel-run-playbooks",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/automation/run-playbooks",
+      "checked_at": "2026-09-28T03:03:48.241587+00:00",
+      "health": {
+        "id": "sc-200-sentinel-run-playbooks",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/automation/run-playbooks",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/automation/run-playbooks",
+        "content_type": "text/html",
+        "page_title": "Automate and run Microsoft Sentinel playbooks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/automation/run-playbooks",
+        "duration_signals": [],
+        "signal_fingerprint": "7b611ceb1ee9c8570a00bb19fd98c16259ae050e59f304c24652fcc6320288a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/automation/run-playbooks",
+      "sha256": "a65b2cba64b18d80a4322049aa33963bf601eb9ef97d771141acca05731fa725",
+      "text_characters": 19016
+    },
+    {
+      "id": "sc-200-sentinel-roles",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/roles",
+      "checked_at": "2026-09-28T03:03:48.469634+00:00",
+      "health": {
+        "id": "sc-200-sentinel-roles",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/roles",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/roles",
+        "content_type": "text/html",
+        "page_title": "Roles and permissions in the Microsoft Sentinel platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/roles",
+        "duration_signals": [],
+        "signal_fingerprint": "db213e60af155a59a5d2e43f8f7d51ba750e618b067d24f11e9eb171e5f8513d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/roles",
+      "sha256": "f7c53d4928b42546d3471f49f9871d544a3e11a9932c234d3067941df5806c57",
+      "text_characters": 11609
+    },
+    {
+      "id": "sc-200-sentinel-workbooks",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data",
+      "checked_at": "2026-09-28T03:03:48.534490+00:00",
+      "health": {
+        "id": "sc-200-sentinel-workbooks",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data",
+        "content_type": "text/html",
+        "page_title": "Visualize your Data by using Workbooks in Microsoft Sentinel",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data",
+        "duration_signals": [
+          "24 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "2a0227a1546040973473ab2e242d38d67310ef925e9ddce1351f3447e020596d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/monitor-your-data",
+      "sha256": "ad0ed811208dbb6b6907174334ddeaf78a4f2d265e854b049bfe5bfe6898e484",
+      "text_characters": 11887
+    },
+    {
+      "id": "sc-200-soc-optimization-reference",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-reference",
+      "checked_at": "2026-09-28T03:03:48.638287+00:00",
+      "health": {
+        "id": "sc-200-soc-optimization-reference",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-reference",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-reference",
+        "content_type": "text/html",
+        "page_title": "SOC optimization reference",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-reference",
+        "duration_signals": [],
+        "signal_fingerprint": "e35c4d48dd6aae7e48f73f4e3940539be14b6b1964437b9feea3df6a5e225dd5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-reference",
+      "sha256": "e8da65532f2fda81a93379f9b196b152c3d08e047d89c31b1d23807903294751",
+      "text_characters": 9793
+    },
+    {
+      "id": "sc-200-sentinel-connectors",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources",
+      "checked_at": "2026-09-28T03:03:48.771845+00:00",
+      "health": {
+        "id": "sc-200-sentinel-connectors",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources",
+        "content_type": "text/html",
+        "page_title": "Microsoft Sentinel data connectors",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources",
+        "duration_signals": [],
+        "signal_fingerprint": "cfb0ba717204c1428e67ec913bb93ca026f8762b3f922bf9fc3f8982cf55fe46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources",
+      "sha256": "410e068086fbaa0c7fd8e99c95509ce3816f11953fc844e8aaa23a28f957083e",
+      "text_characters": 9733
+    },
+    {
+      "id": "sc-200-syslog-cef-ama",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-cef-syslog-ama",
+      "checked_at": "2026-09-28T03:03:48.832522+00:00",
+      "health": {
+        "id": "sc-200-syslog-cef-ama",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-cef-syslog-ama",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-cef-syslog-ama",
+        "content_type": "text/html",
+        "page_title": "Ingest syslog and CEF messages to Microsoft Sentinel - AMA",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-cef-syslog-ama",
+        "duration_signals": [
+          "20 minutes"
+        ],
+        "signal_fingerprint": "3cbb397a3b34abe404d4938b4f5cabc02feb9b8fa968b78f9a97c109f1604e16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-cef-syslog-ama",
+      "sha256": "e16fae5f1cde658363fe001d8401a781a208110298668e5ea74bf5a6dca2075e",
+      "text_characters": 19260
+    },
+    {
+      "id": "sc-200-azure-diagnostic-settings",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings",
+      "checked_at": "2026-09-28T03:03:48.986696+00:00",
+      "health": {
+        "id": "sc-200-azure-diagnostic-settings",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings",
+        "checked_at": "2026-09-28T03:03:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/diagnostic-settings",
+        "content_type": "text/html",
+        "page_title": "Diagnostic Settings in Azure Monitor - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/diagnostic-settings",
+        "duration_signals": [
+          "15 minutes",
+          "24 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "7072378ba0f18479e200af038030a2a472908774605aed6636a96a9cadab0199",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/diagnostic-settings",
+      "sha256": "42c8f0343968c83e1b01b0a807e11bfcb87c7ce38bea8a4fe4286b49a58e2ed1",
+      "text_characters": 19951
+    },
+    {
+      "id": "sc-200-sentinel-whats-new",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "checked_at": "2026-09-28T03:03:49.129352+00:00",
+      "health": {
+        "id": "sc-200-sentinel-whats-new",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+        "checked_at": "2026-09-28T03:03:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft Sentinel",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "1f74e053e4650577a5bfa883931aa832f7f83f37c6d961b0a6d21263a5f11160",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "sha256": "db7fc096562485abf86668c532c15a976feb74706cf7899f8cf8cf1d284ec45c",
+      "text_characters": 51116
+    },
+    {
+      "id": "sc-200-defender-custom-detections",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "checked_at": "2026-09-28T03:03:49.143174+00:00",
+      "health": {
+        "id": "sc-200-defender-custom-detections",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+        "checked_at": "2026-09-28T03:03:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+        "content_type": "text/html",
+        "page_title": "Create custom detection rules in Microsoft Defender XDR - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+        "duration_signals": [
+          "12 hours",
+          "24 hours",
+          "3 hours",
+          "48 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "5fcf48be238d92ff77f7704fdee2e009e0c5dde5fc04d0968014922982f83674",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "sha256": "5ad7a69b1bb3df14cbdc714d1dd4e50cb59821955848c476d37ad135a4f7ed5e",
+      "text_characters": 28421
+    },
+    {
+      "id": "sc-200-sentinel-nrt-rules",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+      "checked_at": "2026-09-28T03:03:49.483489+00:00",
+      "health": {
+        "id": "sc-200-sentinel-nrt-rules",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+        "checked_at": "2026-09-28T03:03:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+        "content_type": "text/html",
+        "page_title": "Quick threat detection with near-real-time (NRT) analytics rules in Microsoft Sentinel",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+        "duration_signals": [
+          "12 hours"
+        ],
+        "signal_fingerprint": "c60d4fff500ed0c705373b147f422a106fe2472cc15fd8257cda763ceacbcc1c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+      "sha256": "41e804ef1c6b186d1cf216225e4c34838cda5343c7de17b3a96709d76b7bd828",
+      "text_characters": 4068
+    },
+    {
+      "id": "sc-200-defender-cloud-alert-response",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/managing-and-responding-alerts",
+      "checked_at": "2026-09-28T03:03:49.522736+00:00",
+      "health": {
+        "id": "sc-200-defender-cloud-alert-response",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/managing-and-responding-alerts",
+        "checked_at": "2026-09-28T03:03:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/manage-respond-alerts",
+        "content_type": "text/html",
+        "page_title": "Manage and Respond to Security Alerts - Microsoft Defender for Cloud",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/manage-respond-alerts",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "20e0453f669bfa0eef34321050a73306c4db9c706b1443ca6e3f8708e845de2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/manage-respond-alerts",
+      "sha256": "82ab13231a1ca1a2b933e226949159feeef31b60f3d6da46a13d9e65013a3273",
+      "text_characters": 6397
+    },
+    {
+      "id": "sc-200-endpoint-response-actions",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts",
+      "checked_at": "2026-09-28T03:03:49.523164+00:00",
+      "health": {
+        "id": "sc-200-endpoint-response-actions",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts",
+        "checked_at": "2026-09-28T03:03:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts",
+        "content_type": "text/html",
+        "page_title": "Take response actions on a device in Microsoft Defender for Endpoint - Microsoft Defender for Endpoint",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "709e47cf51c986d0416ae90acfbce90cfb9add50e9e53ac81b969bee173e472f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts",
+      "sha256": "82d44496918e42d6a4f6d5fbcd390fe3420cb855e713c43a12759d5300aa3c77",
+      "text_characters": 39630
+    },
+    {
+      "id": "sc-200-purview-audit-search",
+      "url": "https://learn.microsoft.com/en-us/purview/audit-search",
+      "checked_at": "2026-09-28T03:03:49.786458+00:00",
+      "health": {
+        "id": "sc-200-purview-audit-search",
+        "url": "https://learn.microsoft.com/en-us/purview/audit-search",
+        "checked_at": "2026-09-28T03:03:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/audit-search",
+        "content_type": "text/html",
+        "page_title": "Search the audit log",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/audit-search",
+        "duration_signals": [
+          "48 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "352d54944c289f495534758cf83603cb9b26f304cb2693c5853e412a5b101966",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/audit-search",
+      "sha256": "cee6b4d9ba94d9da2e489b0c5800dcc413100a91aa44ec656f9ea5881e4642e6",
+      "text_characters": 18105
+    },
+    {
+      "id": "sc-200-graph-activity-logs",
+      "url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+      "checked_at": "2026-09-28T03:03:49.873904+00:00",
+      "health": {
+        "id": "sc-200-graph-activity-logs",
+        "url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+        "checked_at": "2026-09-28T03:03:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+        "content_type": "text/html",
+        "page_title": "Access Microsoft Graph activity logs for tenant monitoring - Microsoft Graph",
+        "canonical_url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+        "duration_signals": [
+          "2 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "35a981557a0a279d39d415f3038fc950b5c8d99933b772139ea68263437f7b95",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+      "sha256": "3e7c69803824e62fa382afe119150a54e737547a29e7cdadb3c6ff53174e20ee",
+      "text_characters": 12203
+    },
+    {
+      "id": "sc-200-advanced-hunting-overview",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview",
+      "checked_at": "2026-09-28T03:03:50.067779+00:00",
+      "health": {
+        "id": "sc-200-advanced-hunting-overview",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview",
+        "content_type": "text/html",
+        "page_title": "Advanced hunting overview in Microsoft Defender XDR - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview",
+        "duration_signals": [
+          "10 minutes",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "fcc32087c170f1d595011f8d6a781cd35465aed42e63887524b390b6e825830c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview",
+      "sha256": "9111c79ab4bae86a110ff3a37dcaf33ff90332709605365cdd86c4dd6acadea2",
+      "text_characters": 8726
+    },
+    {
+      "id": "sc-200-sentinel-graph-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview",
+      "checked_at": "2026-09-28T03:03:50.214344+00:00",
+      "health": {
+        "id": "sc-200-sentinel-graph-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Sentinel graph? - Microsoft Security",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ac3a4388bd62183efefe0cacac2d9b8e0df1842f2f71911a1362eaf7e21ef17e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview",
+      "sha256": "a8ed42324d30c7b8e1cdb0df92c0d05f649060347b88ffd50935918012ba0c9c",
+      "text_characters": 6738
+    },
+    {
+      "id": "sc-200-sentinel-job-comparison",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs",
+      "checked_at": "2026-09-28T03:03:50.249627+00:00",
+      "health": {
+        "id": "sc-200-sentinel-job-comparison",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs",
+        "content_type": "text/html",
+        "page_title": "KQL Jobs, Summary Rules, and Search Jobs - Microsoft Security",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs",
+        "duration_signals": [
+          "1 hour 10 minutes",
+          "20 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "582c7754ef484e52af8d441d78799b7736051017b6edb57644f9dff945031812",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs",
+      "sha256": "5539e38f2b64919ea8551d21be40407320a881be5951fb817d9dc6362ae5d9d0",
+      "text_characters": 4645
+    },
+    {
+      "id": "sc-200-sentinel-notebooks",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks",
+      "checked_at": "2026-09-28T03:03:50.351958+00:00",
+      "health": {
+        "id": "sc-200-sentinel-notebooks",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks",
+        "content_type": "text/html",
+        "page_title": "Running Notebooks on the Microsoft Sentinel Data Lake - Microsoft Security",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks",
+        "duration_signals": [
+          "2 hours",
+          "20 minutes",
+          "30 minutes",
+          "5 mins",
+          "5 minutes",
+          "6 minutes",
+          "7.5 minutes",
+          "8 hours"
+        ],
+        "signal_fingerprint": "0a84b5a10dd41f4275f3fd65cda8289c28088c60be62ed99c90917ccf5994d11",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks",
+      "sha256": "de55424094b1d790073a3463b06bddd6e6ae3fb27f726cf68c5a28c7383adc3e",
+      "text_characters": 14482
+    },
+    {
+      "id": "sc-200-sentinel-mcp-get-started",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started",
+      "checked_at": "2026-09-28T03:03:50.488081+00:00",
+      "health": {
+        "id": "sc-200-sentinel-mcp-get-started",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started",
+        "content_type": "text/html",
+        "page_title": "Get started with Microsoft Sentinel MCP server - Microsoft Security",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "eb3e5f45c83fccc60f1c01dcadac4f3371a7721ed4c9d7dfb1e70055d6e996f6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started",
+      "sha256": "a6e4b4da0e3313bb07579f510484b5043725228784cf38a9928e49c2f44de5e6",
+      "text_characters": 3381
+    },
+    {
+      "id": "sc-200-official-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/sc-200t00",
+      "checked_at": "2026-09-28T03:03:50.512724+00:00",
+      "health": {
+        "id": "sc-200-official-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-200t00",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-200t00",
+        "content_type": "text/html",
+        "page_title": "Course SC-200T00-A: Defend against cyberthreats with Microsoft's security operations platform - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/sc-200t00",
+        "duration_signals": [],
+        "signal_fingerprint": "c7ea9cad84a5c6b25f422d399aeee37d733f43ae4b2c9a2f37bb2296c809bc50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-200t00",
+      "sha256": "4fe4377bc298e1f2992ac888aff359ac04459b2e1acb8b9e0e09d00d5254b5f6",
+      "text_characters": 2520
+    },
+    {
+      "id": "sc-200-learn-defender-xdr",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+      "checked_at": "2026-09-28T03:03:50.700504+00:00",
+      "health": {
+        "id": "sc-200-learn-defender-xdr",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+        "content_type": "text/html",
+        "page_title": "Mitigate threats using Microsoft Defender XDR - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+        "duration_signals": [],
+        "signal_fingerprint": "72f1d69722d96b3821a53897ca4bc7ad385195e081791916fbc206a75bedd065",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/",
+      "sha256": "c941d5b6a6d362e3c96bad502b88e7936fff1f7fd4dbb222ab9f9436ad6a1121",
+      "text_characters": 2216
+    },
+    {
+      "id": "sc-200-learn-security-copilot",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/",
+      "checked_at": "2026-09-28T03:03:50.794305+00:00",
+      "health": {
+        "id": "sc-200-learn-security-copilot",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/",
+        "content_type": "text/html",
+        "page_title": "Mitigate threats using Microsoft Security Copilot - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/",
+        "duration_signals": [],
+        "signal_fingerprint": "40bc063e606d85c620cd0295a16aaeb6a68244c4fbe8e046230fbd642258d6a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/",
+      "sha256": "4e2af04eb3c624de092876b8b5e3516a7b2ad47af4dc4250fe5e4dd01365658d",
+      "text_characters": 2250
+    },
+    {
+      "id": "sc-200-learn-purview",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/",
+      "checked_at": "2026-09-28T03:03:50.844028+00:00",
+      "health": {
+        "id": "sc-200-learn-purview",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/",
+        "checked_at": "2026-09-28T03:03:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/",
+        "content_type": "text/html",
+        "page_title": "Mitigate threats using Microsoft Purview - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/",
+        "duration_signals": [],
+        "signal_fingerprint": "a2ff5b2ab8825b545b3637cb93dfe7887d3e50ef322b653e97204097bff3af7b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/",
+      "sha256": "5eaf96285f0f8e5b5af1e8a2fabeca8e4b300d2bca14c22138698ff24f4987dd",
+      "text_characters": 1955
+    },
+    {
+      "id": "sc-200-learn-endpoint",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/",
+      "checked_at": "2026-09-28T03:03:51.044861+00:00",
+      "health": {
+        "id": "sc-200-learn-endpoint",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/",
+        "checked_at": "2026-09-28T03:03:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/",
+        "content_type": "text/html",
+        "page_title": "Mitigate threats using Microsoft Defender for Endpoint - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/",
+        "duration_signals": [],
+        "signal_fingerprint": "a93a54e5b7ea6b8cba90d91304400eacdfe021632b57e5e542bf101b5927e258",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/",
+      "sha256": "5154e13aa2c0a69e1ffa8ed706e3fb8c54e976907bd2141cea3149fd6483ac76",
+      "text_characters": 2857
+    },
+    {
+      "id": "sc-200-learn-defender-cloud",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/",
+      "checked_at": "2026-09-28T03:03:51.080893+00:00",
+      "health": {
+        "id": "sc-200-learn-defender-cloud",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/",
+        "checked_at": "2026-09-28T03:03:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/",
+        "content_type": "text/html",
+        "page_title": "Mitigate threats using Microsoft Defender for Cloud - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/",
+        "duration_signals": [],
+        "signal_fingerprint": "8c88ecf75823891ae374d38f00f8831a44fcd662f815934663861871b4b0a8b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/",
+      "sha256": "eb39e3730980c6e5216dc5fe57075ca120a76392b788db79a5b201ea9113218c",
+      "text_characters": 1941
+    },
+    {
+      "id": "sc-200-learn-kql",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+      "checked_at": "2026-09-28T03:03:51.126790+00:00",
+      "health": {
+        "id": "sc-200-learn-kql",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+        "checked_at": "2026-09-28T03:03:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+        "content_type": "text/html",
+        "page_title": "Create queries for Microsoft Sentinel using Kusto Query Language (KQL) - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+        "duration_signals": [],
+        "signal_fingerprint": "6769e4eff751ddca5f09f33d7c443af64f6ec58495287eb1620232f4d7a7228c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+      "sha256": "d193935ecb12b1e093b6e8810eb3d2dabc467a67b3869f8d85d3126fbfae6549",
+      "text_characters": 1568
+    },
+    {
+      "id": "sc-200-learn-configure-sentinel",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "checked_at": "2026-09-28T03:03:51.365577+00:00",
+      "health": {
+        "id": "sc-200-learn-configure-sentinel",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+        "checked_at": "2026-09-28T03:03:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+        "content_type": "text/html",
+        "page_title": "Configure your Microsoft Sentinel environment - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+        "duration_signals": [],
+        "signal_fingerprint": "a4c343e8f043dc7d6ed3c0d9efc9699819056c6b86bb75dff249fa88d657fbde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+      "sha256": "b266ac82a4fe48837cd868af319f7db39b4f524dfcb0402c10434a9f7a8f710e",
+      "text_characters": 2080
+    },
+    {
+      "id": "sc-200-learn-connect-logs",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/",
+      "checked_at": "2026-09-28T03:03:51.420426+00:00",
+      "health": {
+        "id": "sc-200-learn-connect-logs",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/",
+        "checked_at": "2026-09-28T03:03:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/",
+        "content_type": "text/html",
+        "page_title": "Connect logs to Microsoft Sentinel - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/",
+        "duration_signals": [],
+        "signal_fingerprint": "312891a4406af2388bf138998b77c634e0997d87322139beba16305312cbde40",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/",
+      "sha256": "9e826b7e6f588d8706b5d15510cabff77a9225ecff13c1905927f931b78e610a",
+      "text_characters": 2355
+    },
+    {
+      "id": "sc-200-learn-detections-investigations",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/",
+      "checked_at": "2026-09-28T03:03:51.735438+00:00",
+      "health": {
+        "id": "sc-200-learn-detections-investigations",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/",
+        "checked_at": "2026-09-28T03:03:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/",
+        "content_type": "text/html",
+        "page_title": "Create detections and perform investigations using Microsoft Sentinel - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/",
+        "duration_signals": [],
+        "signal_fingerprint": "eba51c1d5273e9518b1b364339c0edd24481296b3c792d8e1aa1a7d629f5da7e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/",
+      "sha256": "80f86232b98893837da361ba4e0c65bda8c0a4c20501c3b0352ea6119ec7ca3f",
+      "text_characters": 2329
+    },
+    {
+      "id": "sc-200-learn-threat-hunting",
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/",
+      "checked_at": "2026-09-28T03:03:51.944124+00:00",
+      "health": {
+        "id": "sc-200-learn-threat-hunting",
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/",
+        "checked_at": "2026-09-28T03:03:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/",
+        "content_type": "text/html",
+        "page_title": "Perform threat hunting in Microsoft Sentinel - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/",
+        "duration_signals": [],
+        "signal_fingerprint": "97850f58ae492510c19b22e7f5ed46076b044b9e0779292fa2b48a08cd587c45",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/",
+      "sha256": "26b99e7871c30be8db7a14043d6a9c61c2a923552e06c4dd5d7f85fa4483914f",
+      "text_characters": 1611
+    },
+    {
+      "id": "sc-200-microsoftlearning-labs",
+      "url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
+      "checked_at": "2026-09-28T03:03:52.030072+00:00",
+      "health": {
+        "id": "sc-200-microsoftlearning-labs",
+        "url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
+        "checked_at": "2026-09-28T03:03:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
+        "canonical_url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
+        "duration_signals": [],
+        "signal_fingerprint": "86ace11935b69d70be199dd36dcad7c1985a9ca8101483bba336492f1ba183f7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
+      "sha256": "712d14dd5b8e87126e1f01e8ee5781853a7bb680531c183cb617128ac372c0d0",
+      "text_characters": 3402
+    },
+    {
+      "id": "sc-200-pluralsight-path",
+      "url": "https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200",
+      "checked_at": "2026-09-28T03:03:52.175308+00:00",
+      "health": {
+        "id": "sc-200-pluralsight-path",
+        "url": "https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200",
+        "checked_at": "2026-09-28T03:03:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Security Operations Analyst (SC-200)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200",
+        "duration_signals": [
+          "6 Hours"
+        ],
+        "signal_fingerprint": "ba1b48405b8794807d60d065379f7bcbfbfb72abfce2cdfd5b207197cd1b3875",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200",
+      "sha256": "b2cde1abedb93348931de69df51f555ed47fc31ad8759a8bb9c268bd118b8c46",
+      "text_characters": 3517
+    },
+    {
+      "id": "sc-200-oreilly-packt-video",
+      "url": "https://www.oreilly.com/videos/sc-200-microsoft-security/9781804611777/",
+      "checked_at": "2026-09-28T03:03:52.240131+00:00",
+      "health": {
+        "id": "sc-200-oreilly-packt-video",
+        "url": "https://www.oreilly.com/videos/sc-200-microsoft-security/9781804611777/",
+        "checked_at": "2026-09-28T03:03:52+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/sc-200-microsoft-security/9781804611777/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "sc-200-oreilly-tim-warner-live",
+      "url": "https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/",
+      "checked_at": "2026-09-28T03:03:52.407979+00:00",
+      "health": {
+        "id": "sc-200-oreilly-tim-warner-live",
+        "url": "https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/",
+        "checked_at": "2026-09-28T03:03:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam SC-200 Microsoft Security Operations Analyst Crash Course",
+        "canonical_url": "https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/",
+        "duration_signals": [
+          "10 minutes",
+          "3 hours",
+          "75 minutes",
+          "PT6H"
+        ],
+        "signal_fingerprint": "2303edb21fd032ee17d117c9112408e5130b73bbc46b0b56689198a5d553196b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/",
+      "sha256": "4dabebedb3850b77b95bd0d631a867c0ffa387a66a691aa7430214f325997092",
+      "text_characters": 5026
+    },
+    {
+      "id": "sc-200-microsoft-press-exam-ref-second-edition",
+      "url": "https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595",
+      "checked_at": "2026-09-28T03:03:52.866801+00:00",
+      "health": {
+        "id": "sc-200-microsoft-press-exam-ref-second-edition",
+        "url": "https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595",
+        "checked_at": "2026-09-28T03:03:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam Ref SC-200 Microsoft Security Operations Analyst, 2nd Edition | Microsoft Press Store",
+        "canonical_url": "https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595",
+        "duration_signals": [],
+        "signal_fingerprint": "98df05d492a41ed5d240f6598246fe1a7f21141bfe2e4bf13efe185ce8127cf5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595",
+      "sha256": "b6c53e0fd217fbff11e016f0830cb54fa73aa58a1f9f43840650035ea554b809",
+      "text_characters": 4236
+    },
+    {
+      "id": "sc-200-udemy-dean-ellerby-practice",
+      "url": "https://www.udemy.com/course/sc-200-practice-tests-security-operations-analyst-2026/",
+      "checked_at": "2026-09-28T03:03:53.301009+00:00",
+      "health": {
+        "id": "sc-200-udemy-dean-ellerby-practice",
+        "url": "https://www.udemy.com/course/sc-200-practice-tests-security-operations-analyst-2026/",
+        "checked_at": "2026-09-28T03:03:53+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/sc-200-practice-tests-security-operations-analyst-2026/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "sc-200-measureup-practice",
+      "url": "https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html",
+      "checked_at": "2026-09-28T03:03:53.412919+00:00",
+      "health": {
+        "id": "sc-200-measureup-practice",
+        "url": "https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html",
+        "checked_at": "2026-09-28T03:03:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test SC-200: Microsoft Security Operations Analyst",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "234582ea41957ae94ad7d5db0502290327dcf9ff1b89f976c5c85f19bcb645a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html",
+      "sha256": "58259c8f10fd13335dbf377a431eab67cc69a83b86bee52302c627d94c0bf1b8",
+      "text_characters": 14713
+    },
+    {
+      "id": "sc-200-cloud360-youtube",
+      "url": "https://www.youtube.com/watch?v=HsqdfQdg08k",
+      "checked_at": "2026-09-28T03:03:53.999654+00:00",
+      "health": {
+        "id": "sc-200-cloud360-youtube",
+        "url": "https://www.youtube.com/watch?v=HsqdfQdg08k",
+        "checked_at": "2026-09-28T03:03:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=HsqdfQdg08k",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SC-200: Full Course | Microsoft Security Operations Analyst Training",
+        "canonical_url": "https://www.youtube.com/watch?v=HsqdfQdg08k",
+        "duration_signals": [],
+        "signal_fingerprint": "4c9b8d3a9f561d601214238f0af6d3dffbbea07260a12af4c0250b5b093900b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=HsqdfQdg08k",
+      "sha256": "a2f0a22f0dc5bd574936eac5d6a3250f9b636db60aa2c4e1f5dee0cd41c899c5",
+      "text_characters": 231
+    },
+    {
+      "id": "sc-200-john-savill-channel",
+      "url": "https://www.youtube.com/@NTFAQGuy/videos",
+      "checked_at": "2026-09-28T03:03:54.684298+00:00",
+      "health": {
+        "id": "sc-200-john-savill-channel",
+        "url": "https://www.youtube.com/@NTFAQGuy/videos",
+        "checked_at": "2026-09-28T03:03:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@NTFAQGuy/videos",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "John Savill's Technical Training",
+        "canonical_url": "https://www.youtube.com/channel/UCpIn7ox7j7bH_OFj7tYouOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "3ea7e177926d30b19bd454e7c112994be5e9aae837e8697abb5a5edc1ef7afbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@NTFAQGuy/videos",
+      "sha256": "27ae89fadb9fd97e4a97358b567e07e048fbf93021b9395f232e1dfb8082c08a",
+      "text_characters": 195
+    },
+    {
+      "id": "sc-500-sentinel-defender-portal",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+      "checked_at": "2026-09-28T03:10:56.767773+00:00",
+      "health": {
+        "id": "sc-500-sentinel-defender-portal",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+        "checked_at": "2026-09-28T03:10:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+        "content_type": "text/html",
+        "page_title": "Microsoft Sentinel in the Microsoft Defender portal",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+        "duration_signals": [],
+        "signal_fingerprint": "1a9026c54fe163a4e39a1297d0549946c80dd7cc15bca7387fafc35ca63724e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+      "sha256": "80bfec1367ef2c96b6d6d78d7fe61554fd2871e6d32686a770276693d112ad6a",
+      "text_characters": 11510
+    },
+    {
+      "id": "sc200-onboarding",
+      "url": "https://learn.microsoft.com/en-us/unified-secops/microsoft-sentinel-onboard",
+      "checked_at": "2026-09-28T03:10:56.768561+00:00",
+      "health": {
+        "id": "sc200-onboarding",
+        "url": "https://learn.microsoft.com/en-us/unified-secops/microsoft-sentinel-onboard",
+        "checked_at": "2026-09-28T03:10:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-onboard",
+        "content_type": "text/html",
+        "page_title": "Connect Microsoft Sentinel to the Microsoft Defender portal",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-onboard",
+        "duration_signals": [],
+        "signal_fingerprint": "58c0b77dd47a6ab2b06102a5f46029388bdd351bd86badda86e9e5f0bcbbf88b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-onboard",
+      "sha256": "1825bdf22d4a4d725b5aca7ed377dd1050801466beec04f0463d514e4486eecc",
+      "text_characters": 13038
+    },
+    {
+      "id": "sc200-table-retention",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+      "checked_at": "2026-09-28T03:10:56.769079+00:00",
+      "health": {
+        "id": "sc200-table-retention",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+        "checked_at": "2026-09-28T03:10:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+        "content_type": "text/html",
+        "page_title": "Configure Table Settings in Microsoft Sentinel",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "62b7ca2b2faed2f1e3a061b945bb9989a7e275a03378c2e6f5a81498e3e4c96a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+      "sha256": "a8f26fd229baf78303b3c5918e7bdb7ae8ac9ca7d909b88604222a38b2073c87",
+      "text_characters": 11576
+    },
+    {
+      "id": "sc200-unified-hunting",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+      "checked_at": "2026-09-28T03:10:57.240472+00:00",
+      "health": {
+        "id": "sc200-unified-hunting",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+        "checked_at": "2026-09-28T03:10:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+        "content_type": "text/html",
+        "page_title": "Advanced hunting with Microsoft Sentinel data in Microsoft Defender - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+        "duration_signals": [
+          "48 hours"
+        ],
+        "signal_fingerprint": "b9005af3116212763686561cfa8d6be94b9765949e0e6b6cab3bcd61d07d080d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+      "sha256": "7c5efb221b7de38bebb9bb1eab82d5d16f6e3ab3709d90d25f59abe7c37a80ef",
+      "text_characters": 8965
+    },
+    {
+      "id": "sc200-fabric-mirror",
+      "url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+      "checked_at": "2026-09-28T03:10:57.442438+00:00",
+      "health": {
+        "id": "sc200-fabric-mirror",
+        "url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+        "checked_at": "2026-09-28T03:10:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+        "content_type": "text/html",
+        "page_title": "Tutorial: Configure the Mirror Azure Monitor Solution in Fabric (Preview) - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+        "duration_signals": [
+          "about 15 minutes"
+        ],
+        "signal_fingerprint": "8a7a27e9cb883728ff8a7e02ff9fe6e72a0fcb629882e52e02ffda064abdb633",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+      "sha256": "8bfc37b08d17aaaae56db010d36cc97c3d82dc07990c49e6f7a24307ef97147c",
+      "text_characters": 15269
+    },
+    {
+      "id": "sc200-threat-intelligence",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+      "checked_at": "2026-09-28T03:10:57.448206+00:00",
+      "health": {
+        "id": "sc200-threat-intelligence",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+        "checked_at": "2026-09-28T03:10:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+        "content_type": "text/html",
+        "page_title": "Work with STIX objects and indicators to enhance threat intelligence and threat hunting in Microsoft Sentinel (Preview) - Microsoft Sentinel",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+        "duration_signals": [],
+        "signal_fingerprint": "45652358e58a0f928f051a061e1cfe74b0976fdd4117bdc70b19b2a8824a2325",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+      "sha256": "6d058d931bcb13551b5ea89974978fe625394ddb8188bbbf94de270f04695890",
+      "text_characters": 10259
+    },
+    {
+      "id": "sc200-live-response",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+      "checked_at": "2026-09-28T03:10:57.580796+00:00",
+      "health": {
+        "id": "sc200-live-response",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+        "checked_at": "2026-09-28T03:10:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+        "content_type": "text/html",
+        "page_title": "Investigate entities on devices using live response in Microsoft Defender for Endpoint - Microsoft Defender for Endpoint",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+        "duration_signals": [
+          "10 minutes",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "cbffcc9603b5cd0dcc1c0bfa76cd257d257ba373684efb25bc8c29907be98570",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+      "sha256": "87ea07f0551d5d2e71bac7097814621fecf2935780315821ffe9fb421b643c5e",
+      "text_characters": 15484
+    },
+    {
+      "id": "sc200-mcp-triage",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+      "checked_at": "2026-09-28T03:10:57.735587+00:00",
+      "health": {
+        "id": "sc200-mcp-triage",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+        "checked_at": "2026-09-28T03:10:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+        "content_type": "text/html",
+        "page_title": "Triage Tool Collection in Microsoft Sentinel MCP Server - Microsoft Security",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "ecfc9fce0c494d3f6003d7f97b67bb351e447685e9365c6cd55c4a57e51dcafb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+      "sha256": "147a6fda436ba022cdb77e0ee6f85a0235af34b2eeadd50e3493885fb61a3af1",
+      "text_characters": 13693
+    },
+    {
+      "id": "sc200-signin-schema",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+      "checked_at": "2026-09-28T03:10:57.822070+00:00",
+      "health": {
+        "id": "sc200-signin-schema",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+        "checked_at": "2026-09-28T03:10:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+        "content_type": "text/html",
+        "page_title": "Azure Monitor Logs reference - SigninLogs - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+        "duration_signals": [],
+        "signal_fingerprint": "b18095c8339d629006bf2526d5185e987d47c413fe7372b5006d4b14af7571e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+      "sha256": "7642b21cc3a8cdef3ec6990e8f8eca7677e34e305808f1ce228037f8731c08d7",
+      "text_characters": 12884
+    },
+    {
+      "id": "sc200-activity-connector",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+      "checked_at": "2026-09-28T03:12:00.008204+00:00",
+      "health": {
+        "id": "sc200-activity-connector",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+        "checked_at": "2026-09-28T03:12:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+        "content_type": "text/html",
+        "page_title": "Connect Microsoft Sentinel to other Microsoft services by using diagnostic settings-based connections",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+        "duration_signals": [],
+        "signal_fingerprint": "a7e3bf3bf56db57f241de5a3590ff9ef7d796549b595c86b5ac9ba17d67198de",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+      "sha256": "f6e05a5539cb6d770dd65e1c08b3e0017fc08573ded21e4d12a888aaddb3a31d",
+      "text_characters": 7963
+    },
+    {
+      "id": "sc200-account-mapping-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040",
+      "checked_at": "2026-09-28T03:10:58.069379+00:00",
+      "health": {
+        "id": "sc200-account-mapping-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040",
+        "checked_at": "2026-09-28T03:10:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Update: Changing the Account Name Entity Mapping in Microsoft Sentinel | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040",
+        "duration_signals": [],
+        "signal_fingerprint": "ad9458335c3cb372850e1a69ef0ed07168e8e262128b981309be3278eaa44796",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040",
+      "sha256": "c257f28e5fbf53598854c57bc2cc7fb2fc9face356439796eda5fdf2c4ab1a7e",
+      "text_characters": 96
+    },
+    {
+      "id": "sc100-storm-blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+      "checked_at": "2026-09-28T03:10:58.141376+00:00",
+      "health": {
+        "id": "sc100-storm-blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+        "checked_at": "2026-09-28T03:10:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals | Microsoft Security Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+        "duration_signals": [
+          "12 min",
+          "16 hours",
+          "3 min",
+          "35 minutes",
+          "9 min",
+          "about 15 hours and 30 minutes",
+          "About 30 minutes",
+          "about 7 minutes",
+          "About 90 minutes"
+        ],
+        "signal_fingerprint": "f4e448c81aa621d04fb28fd84cbcadba907806f87b1d0159da21fa9650adb79a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+      "sha256": "da512c66de867c4212a86b46ef9495b80451e8fa43d8924f53b99f5c0effa6e6",
+      "text_characters": 18980
+    }
+  ],
+  "added_source_ids": [
+    "sc200-onboarding",
+    "sc200-table-retention",
+    "sc200-unified-hunting",
+    "sc200-fabric-mirror",
+    "sc200-threat-intelligence",
+    "sc200-live-response",
+    "sc200-mcp-triage",
+    "sc200-signin-schema",
+    "sc200-activity-connector",
+    "sc200-account-mapping-blog"
+  ],
+  "findings": [
+    {
+      "id": "sc200-deep-1",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "September onboarding requires tenant-cohort distinction",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New customers use integrated Sentinel onboarding and Fabric paths; existing lake customers retain prior workflows.",
+      "recommendation": "Add cohort-aware retention, notebooks, scenario and lab decisions.",
+      "disposition": "applied",
+      "source_id": "sc-200-sentinel-whats-new",
+      "resolution": "Add cohort-aware retention, notebooks, scenario and lab decisions."
+    },
+    {
+      "id": "sc200-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New mirror does not recover historical telemetry",
+      "url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview mirrors expose new data only and use connection identity plus Fabric access.",
+      "recommendation": "Add no-backfill, capacity and consumer-authorization checks.",
+      "disposition": "applied",
+      "source_id": "sc200-fabric-mirror",
+      "resolution": "Add no-backfill, capacity and consumer-authorization checks."
+    },
+    {
+      "id": "sc200-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Custom collection has rolling device/rule budget",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "One selected workspace, dynamic tags and 75000 events per device/rule/rolling 24h require planning.",
+      "recommendation": "Add collection-budget example, source scope and deployment validation.",
+      "disposition": "applied",
+      "source_id": "sc-200-endpoint-custom-data-collection",
+      "resolution": "Add collection-budget example, source scope and deployment validation."
+    },
+    {
+      "id": "sc200-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "AccountName no longer reliably contains full UPN",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "July mapping standardizes prefix with separate suffix/full UPN fields.",
+      "recommendation": "Add migration and identity-specific automation example with substring counterexamples.",
+      "disposition": "applied",
+      "source_id": "sc-200-sentinel-whats-new",
+      "resolution": "Add migration and identity-specific automation example with substring counterexamples."
+    },
+    {
+      "id": "sc200-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Aggregation must preserve event and analyst scope",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current guidance recommends event identifiers and requires SentinelScope_CF for scoped alert visibility.",
+      "recommendation": "Add same-event tuple example, permission/lookback/volume and scope guidance.",
+      "disposition": "applied",
+      "source_id": "sc-200-defender-custom-detections",
+      "resolution": "Add same-event tuple example, permission/lookback/volume and scope guidance."
+    },
+    {
+      "id": "sc200-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "NRT does not erase ingestion latency",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Sentinel uses ingestion-time windows, two-minute built-in delay and one-minute cadence; multiple tables differ from Defender Continuous.",
+      "recommendation": "Add two-clock example and separate limits.",
+      "disposition": "applied",
+      "source_id": "sc-200-sentinel-nrt-rules",
+      "resolution": "Add two-clock example and separate limits."
+    },
+    {
+      "id": "sc200-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "TI republishing is not new threat observation",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Legacy ingestion stopped; updated objects republish every 7–10 days and include deletion/version semantics.",
+      "recommendation": "Add latest-before-filter logic and historical/schema preservation limits.",
+      "disposition": "applied",
+      "source_id": "sc200-threat-intelligence",
+      "resolution": "Add latest-before-filter logic and historical/schema preservation limits."
+    },
+    {
+      "id": "sc200-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Connected badge is weaker than operational freshness",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Diagnostic connector status can reflect any ingestion within 14 days; policy assignment differs from resource remediation and data arrival.",
+      "recommendation": "Add subscription/resource distinction and source-inventory freshness test.",
+      "disposition": "applied",
+      "source_id": "sc200-activity-connector",
+      "resolution": "Add subscription/resource distinction and source-inventory freshness test."
+    },
+    {
+      "id": "sc200-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Endpoint response depends on platform/session limits",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Command roles, OS support, session concurrency and transfer/time limits differ.",
+      "recommendation": "Add evidence-first session planning and command-log checks.",
+      "disposition": "applied",
+      "source_id": "sc200-live-response",
+      "resolution": "Add evidence-first session planning and command-log checks."
+    },
+    {
+      "id": "sc200-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Graph request status does not prove content exfiltration",
+      "url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RequestId and batch OperationId differ; logs expose request metadata and potentially sensitive URIs.",
+      "recommendation": "Add request-level correlation and evidence boundaries.",
+      "disposition": "applied",
+      "source_id": "sc-200-graph-activity-logs",
+      "resolution": "Add request-level correlation and evidence boundaries."
+    },
+    {
+      "id": "sc200-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Signin result code is string typed",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SigninLogs ResultType uses string zero for success.",
+      "recommendation": "Use explicit string comparison and qualify nonzero failures and capped IP sets.",
+      "disposition": "applied",
+      "source_id": "sc200-signin-schema",
+      "resolution": "Use explicit string comparison and qualify nonzero failures and capped IP sets."
+    },
+    {
+      "id": "sc200-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "MCP prerequisites differ by collection and tool",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Triage accepts Defender/Endpoint/Sentinel and file tools differ in hash support.",
+      "recommendation": "Add discover-schema-query sequence and tool-specific authorization/input checks.",
+      "disposition": "applied",
+      "source_id": "sc200-mcp-triage",
+      "resolution": "Add discover-schema-query sequence and tool-specific authorization/input checks."
+    },
+    {
+      "id": "sc200-deep-13",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Official Sentinel Continuous eligibility conflicts",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Custom-detection table list includes Sentinel; unified-hunting known issues say Sentinel NRT is unavailable.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "sc200-deep-14",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Official lake-tier hunting statements require reconciliation",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Table settings warn of losing Advanced Hunting; September release/hunting pages describe access with cohort and retention restrictions.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "sc200-account-mapping-blog",
+      "decision": "accepted-bounded",
+      "author": "sagiyagen365 (Microsoft)",
+      "published_on": "2026-02-10",
+      "notes": "July 1 entity payload migration with original identity-specific matching counterexamples. Broad prefix/substring filtering is not authorization."
+    },
+    {
+      "source_id": "sc100-storm-blog",
+      "decision": "accepted-bounded",
+      "author": "Microsoft Security Research, Yossi Weizman and Tushar Mudi",
+      "published_on": "2026-09-25",
+      "notes": "Operator timeline and evidence-source exercise only; no destructive reproduction or claims of confirmed entry path/exfiltration/ransom."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Twelve synthetic arithmetic/event-tuple/identity checks and public module/course/question sums; no KQL or cloud runtime"
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "July 28 accepted snapshot retained; all 54 October 21 bullets mapped separately.",
+    "Defender custom-detection Sentinel Continuous eligibility conflicts with unified-hunting known issues; exact tenant/table support unverified.",
+    "Lake-tier hunting warning conflicts with newer cohort/access guidance; distinguish lake-only from extended Analytics retention and verify supported access. Fabric mirroring preview does not backfill prior data.",
+    "No tenant, endpoint, incident, playbook, connector, KQL, Spark, Fabric, Graph/MCP or destructive action executed. All ten labs remain learner exercises/tabletops.",
+    "Ten Learn landing pages list 59 modules; current module runtimes not independently verified. O'Reilly/Packt and Udemy blocked; YouTube shells; historical metadata qualified. No paid lessons/questions or signed-in assessments reviewed.",
+    "Lab README read, not all individual lab instructions. Partner PDF response did not establish current underlying event availability.",
+    "Blog text read; gated threat intelligence, videos and deployments not reviewed/tested. Preserve uncertain initial-access and unconfirmed exfiltration/ransom in Storm-3168 exercise.",
+    "Same-context AI research/repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "collection_retention_latency_identity_event_and_catalog_assertions": 12
+  }
+}

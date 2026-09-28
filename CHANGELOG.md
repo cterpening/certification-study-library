@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review SC-200's 54 October objectives while retaining July's baseline. Add five worked examples, two labs, eight answers and two qualified Microsoft blog exercises. Update September Sentinel onboarding/history/Fabric paths, collection budgets, event identity, automation, NRT latency and resource metadata. Preserve two Microsoft documentation conflicts and schedule three follow-ups. See the [SC-200 report](docs/research/2026-09-27-sc-200-deep-review.md).
+
 - September 27, 2026: deep-review SC-100's 81 October objectives while retaining July's baseline. Correct the prerequisite list and agent policy targeting; add five worked examples, two labs, eight answers and two qualified Microsoft blog exercises. Clarify recovery, Sentinel migration, Key Vault APIs, CSPM/CIEM, network acquisition, Copilot DLP and malware-result boundaries; schedule five lifecycle checks. See the [SC-100 report](docs/research/2026-09-27-sc-100-deep-review.md).
 
 - September 27, 2026: deep-review MB-330 and map 101 October objectives while retaining June's baseline. Add four examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify quality holds, reservation units, consignment, landed cost, mobile authentication/support and Planning Optimization; qualify stale commercial-resource claims. Update roadmap research guidance and add mobile/CTP/roadmap follow-ups. See the [MB-330 report](docs/research/2026-09-27-mb-330-deep-review.md).

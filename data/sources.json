@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "sc200-onboarding",
+      "title": "Connect Microsoft Sentinel to Defender",
+      "url": "https://learn.microsoft.com/en-us/unified-secops/microsoft-sentinel-onboard",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-table-retention",
+      "title": "Sentinel table tiers and retention",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Retention, permissions, warnings and Table insights sections reviewed. Broad lake-tier Advanced Hunting warning conflicts with new hunting/release guidance; retain unresolved access boundary. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-unified-hunting",
+      "title": "Advanced hunting with Sentinel data",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Full article read. September 23 known issues describe extended Analytics history/search jobs and contradict Sentinel Continuous support listed in custom-detection documentation. No tenant validation. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-fabric-mirror",
+      "title": "Mirror Azure Monitor metadata in Fabric",
+      "url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Prerequisites, connection identity, table selection, preview no-backfill, sharing and query sections reviewed; no Fabric connection or capacity provisioned. Metadata mirroring does not imply free downstream analysis or inherited analyst scopes. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-threat-intelligence",
+      "title": "Work with STIX objects and indicators",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Migration/republishing/schema and example-version logic read; original latest-before-deletion reasoning added. No TI ingestion or query execution. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-live-response",
+      "title": "Defender for Endpoint live response",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Prerequisites, basic/advanced commands, platform and session/transfer limits reviewed. No shell session or endpoint change. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-mcp-triage",
+      "title": "Sentinel MCP triage tools",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Prerequisites, table discovery/schema/query and selected file tools reviewed. Tool-specific hash and permission constraints retained; no MCP connection or invocation. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-signin-schema",
+      "title": "Azure Monitor SigninLogs schema",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: ResultType string and zero-success semantics checked; no KQL runtime test. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-activity-connector",
+      "title": "Connect Azure Activity to Sentinel",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: Final URL is diagnostic settings-based service connections; earlier legacy URL redirected to general catalog. Read policy/remediation, subscription/resource and 14-day indicator boundaries. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc200-account-mapping-blog",
+      "title": "Sentinel Account Name entity mapping change",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "September 27 SC-200 deep review: sagiyagen365 (Microsoft), February 10 2026, July 1 effective date. Public article extracted from page data and read; generic HTML text alone was a shell. Accept payload migration lesson with original identity-specific matching counterexamples; do not equate broad prefix filters with authorization. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "sc100-sentinel-migration",
       "title": "Transition Sentinel to Defender portal",
       "url": "https://learn.microsoft.com/en-us/azure/sentinel/move-to-defender",
@@ -222,9 +362,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "SC-100"
+        "SC-100",
+        "SC-200"
       ],
-      "notes": "September 27 SC-100 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25, 2026. Public article read; accept credential/recovery tabletop, preserving uncertainty about initial access and unconfirmed exfiltration/ransom. No destructive reproduction or gated intelligence review. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25, 2026. Public article read; accept credential/recovery tabletop, preserving uncertainty about initial access and unconfirmed exfiltration/ransom. No destructive reproduction or gated intelligence review. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25 2026. Public investigation reread for operator evidence timeline; no gated research or destructive reproduction. Initial credential path/exfiltration/ransom remain unconfirmed. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb330-units",
@@ -19669,15 +19810,17 @@
     },
     {
       "id": "sc-200-pluralsight-path",
-      "title": "Microsoft Security Operations Analyst (SC-200)",
+      "title": "Pluralsight SC-200 path",
       "url": "https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200",
       "publisher": "Pluralsight",
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-200"],
-      "notes": "Three courses, six hours, and a practice exam; listed course dates range from 2022 to 2024 and predate the current blueprint."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "Public listing: three 2022–2024 courses totaling 6h09; six-hour path figure is rounded. No paid lessons reviewed. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-200-oreilly-packt-video",
@@ -19705,15 +19848,17 @@
     },
     {
       "id": "sc-200-microsoft-press-exam-ref-second-edition",
-      "title": "Exam Ref SC-200 Microsoft Security Operations Analyst, Second Edition",
+      "title": "Microsoft Press Exam Ref SC-200 second edition",
       "url": "https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595",
       "publisher": "Microsoft Press Store",
       "authority_class": 2,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-200"],
-      "notes": "416-page second edition published in 2026; reconcile its exam-update chapter with the July 28, 2026 blueprint."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "Public catalog corrects older guide metadata: Yuri Diogenes and Sarah Young, 320 pages, May 11 2026. Four older domains plus exam-update chapter; full July/October coverage not established from contents. Purchased book not reviewed. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-200-udemy-dean-ellerby-practice",
@@ -19729,15 +19874,17 @@
     },
     {
       "id": "sc-200-measureup-practice",
-      "title": "Microsoft SC-200 practice test",
+      "title": "MeasureUp SC-200 practice test",
       "url": "https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html",
       "publisher": "MeasureUp",
       "authority_class": 3,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-200"],
-      "notes": "170 original questions, practice/certification modes, explanations/references, demo, and August 2026 update listed."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "notes": "Public listing: 170 questions (77+62+31), August 2026 update. Generic FAQs do not establish current exam duration/count or complete objective coverage; no paid questions/demo reviewed. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-200-cloud360-youtube",
@@ -20545,9 +20692,10 @@
       "last_checked": "2026-09-27",
       "supported_exams": [
         "SC-500",
-        "SC-100"
+        "SC-100",
+        "SC-200"
       ],
-      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027. September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027. September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-security-copilot-docs",

@@ -6,13 +6,12 @@ Recorded deep reviews in this program, separate from historical source validatio
 
 50 guides; 37 have review work.
 
-Next batch: SC-200, SC-900, AZ-800.
+Next batch: SC-900, AZ-800, DP-300.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [SC-200](../guides/SC-200-microsoft-security-operations-analyst.md) | pending | Pending | not-recorded |
 | [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | pending | Pending | not-recorded |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | pending | Pending | not-recorded |
@@ -20,6 +19,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [MS-700](../guides/MS-700-managing-microsoft-teams.md) | pending | Pending | not-recorded |
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
+| [SC-200](../guides/SC-200-microsoft-security-operations-analyst.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | reviewed | 2026-09-27 | offline-only |
 | [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | reviewed | 2026-09-27 | offline-only |
@@ -28,6 +28,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [DP-800](../guides/DP-800-developing-ai-enabled-database-solutions.md) | reviewed | 2026-09-27 | offline-only |
 | [MB-330](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md) | reviewed | 2026-09-27 | offline-only |
 | [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | reviewed | 2026-09-27 | offline-only |
+| [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | reviewed | 2026-09-27 | offline-only |
 | [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | pending | Pending | not-recorded |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | pending | Pending | not-recorded |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | pending | Pending | not-recorded |
@@ -60,7 +61,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | pending | Pending | not-recorded |
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | pending | Pending | not-recorded |
 | [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | pending | Pending | not-recorded |
-| [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | reviewed | 2026-09-27 | offline-only |
 | [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | reviewed | 2026-09-27 | offline-only |
 
 ## Completion rule

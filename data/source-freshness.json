@@ -4,6 +4,321 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-sc200-deep-review",
+      "title": "SC-200 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SC-200"
+      ],
+      "results": [
+        {
+          "exam_code": "SC-200",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+          "baseline_sha256": "79e9637ec0c0d5af5ab4e43f5cb2cc648fd28ee1486fea0c6c82ea10670a1f6f",
+          "scanned_on": "2026-09-27",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "54 October bullets in nine groups mapped; July baseline retained. Credential confirms 100-minute assessment, 12-month renewal and ten languages; course four days."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read and collection, automation, detection, ingestion, retention, Graph, live-response, MCP and TI boundaries updated. Five examples, ten labs and 44 answers; twelve offline checks only."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September Sentinel onboarding/Fabric changes and effective July identity mapping checked; March 2027 portal deadline preserved. Three dated follow-ups, including cross-guide SC-100 implications."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide links registered/fetched. Correct book authors/pages/date; ten Learn paths 59 modules; Pluralsight 6h09 and MeasureUp 170 August update; paid/blocked/shell/PDF limitations preserved."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Two official documentation conflicts remain: Sentinel Continuous eligibility and lake-tier hunting access. Guide preserves cohort/table/retention boundaries, avoids blanket support claims, and schedules targeted rechecks."
+            }
+          },
+          "findings": [
+            {
+              "id": "sc200-deep-1",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "September onboarding requires tenant-cohort distinction",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New customers use integrated Sentinel onboarding and Fabric paths; existing lake customers retain prior workflows.",
+              "recommendation": "Add cohort-aware retention, notebooks, scenario and lab decisions.",
+              "disposition": "applied",
+              "source_id": "sc-200-sentinel-whats-new",
+              "resolution": "Add cohort-aware retention, notebooks, scenario and lab decisions."
+            },
+            {
+              "id": "sc200-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New mirror does not recover historical telemetry",
+              "url": "https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preview mirrors expose new data only and use connection identity plus Fabric access.",
+              "recommendation": "Add no-backfill, capacity and consumer-authorization checks.",
+              "disposition": "applied",
+              "source_id": "sc200-fabric-mirror",
+              "resolution": "Add no-backfill, capacity and consumer-authorization checks."
+            },
+            {
+              "id": "sc200-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Custom collection has rolling device/rule budget",
+              "url": "https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "One selected workspace, dynamic tags and 75000 events per device/rule/rolling 24h require planning.",
+              "recommendation": "Add collection-budget example, source scope and deployment validation.",
+              "disposition": "applied",
+              "source_id": "sc-200-endpoint-custom-data-collection",
+              "resolution": "Add collection-budget example, source scope and deployment validation."
+            },
+            {
+              "id": "sc200-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "AccountName no longer reliably contains full UPN",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "July mapping standardizes prefix with separate suffix/full UPN fields.",
+              "recommendation": "Add migration and identity-specific automation example with substring counterexamples.",
+              "disposition": "applied",
+              "source_id": "sc-200-sentinel-whats-new",
+              "resolution": "Add migration and identity-specific automation example with substring counterexamples."
+            },
+            {
+              "id": "sc200-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Aggregation must preserve event and analyst scope",
+              "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current guidance recommends event identifiers and requires SentinelScope_CF for scoped alert visibility.",
+              "recommendation": "Add same-event tuple example, permission/lookback/volume and scope guidance.",
+              "disposition": "applied",
+              "source_id": "sc-200-defender-custom-detections",
+              "resolution": "Add same-event tuple example, permission/lookback/volume and scope guidance."
+            },
+            {
+              "id": "sc200-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "NRT does not erase ingestion latency",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sentinel uses ingestion-time windows, two-minute built-in delay and one-minute cadence; multiple tables differ from Defender Continuous.",
+              "recommendation": "Add two-clock example and separate limits.",
+              "disposition": "applied",
+              "source_id": "sc-200-sentinel-nrt-rules",
+              "resolution": "Add two-clock example and separate limits."
+            },
+            {
+              "id": "sc200-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "TI republishing is not new threat observation",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Legacy ingestion stopped; updated objects republish every 7–10 days and include deletion/version semantics.",
+              "recommendation": "Add latest-before-filter logic and historical/schema preservation limits.",
+              "disposition": "applied",
+              "source_id": "sc200-threat-intelligence",
+              "resolution": "Add latest-before-filter logic and historical/schema preservation limits."
+            },
+            {
+              "id": "sc200-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Connected badge is weaker than operational freshness",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Diagnostic connector status can reflect any ingestion within 14 days; policy assignment differs from resource remediation and data arrival.",
+              "recommendation": "Add subscription/resource distinction and source-inventory freshness test.",
+              "disposition": "applied",
+              "source_id": "sc200-activity-connector",
+              "resolution": "Add subscription/resource distinction and source-inventory freshness test."
+            },
+            {
+              "id": "sc200-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Endpoint response depends on platform/session limits",
+              "url": "https://learn.microsoft.com/en-us/defender-endpoint/live-response",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Command roles, OS support, session concurrency and transfer/time limits differ.",
+              "recommendation": "Add evidence-first session planning and command-log checks.",
+              "disposition": "applied",
+              "source_id": "sc200-live-response",
+              "resolution": "Add evidence-first session planning and command-log checks."
+            },
+            {
+              "id": "sc200-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Graph request status does not prove content exfiltration",
+              "url": "https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RequestId and batch OperationId differ; logs expose request metadata and potentially sensitive URIs.",
+              "recommendation": "Add request-level correlation and evidence boundaries.",
+              "disposition": "applied",
+              "source_id": "sc-200-graph-activity-logs",
+              "resolution": "Add request-level correlation and evidence boundaries."
+            },
+            {
+              "id": "sc200-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Signin result code is string typed",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "SigninLogs ResultType uses string zero for success.",
+              "recommendation": "Use explicit string comparison and qualify nonzero failures and capped IP sets.",
+              "disposition": "applied",
+              "source_id": "sc200-signin-schema",
+              "resolution": "Use explicit string comparison and qualify nonzero failures and capped IP sets."
+            },
+            {
+              "id": "sc200-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "MCP prerequisites differ by collection and tool",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Triage accepts Defender/Endpoint/Sentinel and file tools differ in hash support.",
+              "recommendation": "Add discover-schema-query sequence and tool-specific authorization/input checks.",
+              "disposition": "applied",
+              "source_id": "sc200-mcp-triage",
+              "resolution": "Add discover-schema-query sequence and tool-specific authorization/input checks."
+            },
+            {
+              "id": "sc200-deep-13",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Official Sentinel Continuous eligibility conflicts",
+              "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Custom-detection table list includes Sentinel; unified-hunting known issues say Sentinel NRT is unavailable.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sc200-deep-14",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Official lake-tier hunting statements require reconciliation",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Table settings warn of losing Advanced Hunting; September release/hunting pages describe access with cohort and retention restrictions.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Whole guide read; 54 October objectives in nine groups individually mapped while retaining July 28 baseline. Add five worked examples, two labs, eight answers (44 total) and two qualified Microsoft blog exercises. Update September Sentinel onboarding/history/Fabric limits, collection budgets, event identity, automation mapping, ingestion latency, TI versions, Graph/MCP/live-response boundaries and resource metadata. Twelve offline checks passed; no tenant or KQL execution. Two Microsoft documentation conflicts remain open; three follow-up checkpoints added; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-sc-200-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-27-sc100-deep-review",
       "title": "SC-100 complete guide and learning-content review",
       "rubric_version": 1,

@@ -5,17 +5,17 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-01
+review_status: review-required
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # SC-200 Microsoft Security Operations Analyst Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). The [official SC-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; TWO PRODUCT-DOCUMENTATION CONFLICTS OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; all 54 October objectives were separately mapped while retaining the accepted July baseline. Sentinel Continuous eligibility and lake-tier hunting access still need clarification. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-200-coverage-record). The [official SC-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) is authoritative.
 
-**Current baseline:** Skills measured as of July 28, 2026; official study-guide page last updated June 26, 2026.<br>
+**Current baseline:** Skills measured as of July 28, 2026; accepted objective snapshot retained; the current live page also presents October preparation.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
 **Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. The collection objective explicitly names Azure activity logs. Domain weights are unchanged. Keep control-plane activity logs distinct from resource logs and from the connector or policy used to collect them. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200).<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify your language version before scheduling.<br>
@@ -35,7 +35,7 @@ security question
   -> validation, evidence, tuning, and closure
 ```
 
-Read Sections 1–3, work all three scenarios, complete or tabletop the eight labs, and answer all 36 checks. Keep a current test tenant or Microsoft-provided lab nearby. The July 2026 blueprint includes fast-moving Sentinel platform, graph, data-lake, MCP, Security Copilot, and agentic capabilities, so always resolve a disagreement in favor of the current Microsoft documentation.
+Read Sections 1–3, work all three scenarios, complete or tabletop the ten labs, and answer all 44 checks. Keep a current test tenant or Microsoft-provided lab nearby. The July 2026 blueprint includes fast-moving Sentinel platform, graph, data-lake, MCP, Security Copilot, and agentic capabilities, so compare dated Microsoft sources and record unresolved contradictions. This review found conflicting Sentinel NRT and lake-access statements; the relevant sections explain the limits instead of assuming universal tenant support.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -116,6 +116,10 @@ Custom data collection is a current Endpoint-to-Sentinel telemetry path, not the
 
 The current [Endpoint custom-data-collection guide](https://learn.microsoft.com/en-us/defender-endpoint/create-custom-data-collection-rules) documents Defender for Endpoint Plan 2, a connected/selected Sentinel workspace, dynamic tags, supported Windows versions, deployment timing, per-rule event limits, Sentinel ingestion charges, monitoring queries, and enable/edit/delete behavior. Broad collection can hit a device's rolling limit and create material cost; overly narrow filters create blind spots. **VERIFY CURRENT:** this recently changed capability has had preview/GA and limit changes, so recheck licensing, operating systems, tables, one-workspace constraint, event limit, and portal path before implementation or exam day.
 
+**Worked example — collection budget:** one device generates 5,000 matching custom events per hour under one rule. The documented **75,000 events per device, per rule, per rolling 24 hours** is reached after 15 hours; 18 hours would generate 90,000 candidates. The remaining 15,000 are a potential collection gap, not a promise of later replay. The cap pauses that custom rule's collection, not default EDR telemetry; it is not a midnight reset. Narrow the hypothesis/filters and test volume before wider deployment.
+
+The selected destination is **one Sentinel workspace per tenant**; connecting a workspace alone does not select it for this feature. Dynamic tags must already be effective; static tags are unsupported. Allow the documented 20–60 minute rule deployment and tag propagation, verify supported endpoint/client versions, and distinguish disabling collection from deleting already ingested evidence. The source carries prerelease qualifications; do not assume every listed capability is generally available.
+
 > **Related item:** Prevention, detection, and response overlap but are not interchangeable. ASR may block a behavior; a custom detection may identify it; live response may investigate or remediate it. Strong designs connect all three.
 
 #### AIR, automatic attack disruption, and device automation scope
@@ -153,13 +157,19 @@ For every automation:
 
 A useful low-risk first automation enriches an incident, assigns an owner, adds a tag, and opens a ticket. Auto-isolating a business-critical host without confidence, approval, and recovery design is not a good first automation.
 
+**Worked example — identity-safe automation:** July's mapping change makes `AccountName` the UPN prefix. For `alex@contoso.example`, comparing `AccountName` with the full UPN now fails. A broad `StartsWith("alex")` also matches `alex-admin`, and a suffix substring could match `contoso.example.attacker.example`. Microsoft describes compatibility filters in its [account-entity migration post](https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040). For an identity-specific response, our stricter design is to validate the canonical full UPN where supplied, or normalize and compare the complete prefix/suffix pair, then resolve the tenant and immutable object ID before action. Test old/new payloads, missing fields, guests and duplicate delivery; never treat substring matching as authorization.
+
+Keep the two runtime identities separate: Sentinel needs permission to invoke the playbook; its connection/managed identity needs permission to perform the downstream task. Authoring or manually running the Logic App does not prove that an automation rule can invoke it. Match the incident/alert trigger type and test failure/retry behavior.
+
 > **Related item:** Automation reduces handling time only if its inputs are trustworthy. Schema drift, missing entity mappings, expired connectors, and duplicate incidents can turn a correct playbook into an unsafe action.
 
 ### Configure the Sentinel SIEM and platform
 
 #### Choose portal and workspace boundaries
 
-Sentinel is integrated into the Microsoft Defender portal for unified operations with Defender XDR. Know the current capability boundary and migration prerequisites. Microsoft has announced that [Sentinel support in the Azure portal ends after March 31, 2027](https://learn.microsoft.com/en-us/azure/sentinel/soc-optimization/soc-optimization-reference), so prefer current Defender-portal workflows while recognizing that some configuration or edit experiences may still link to Azure.
+Sentinel is integrated into the Microsoft Defender portal for unified operations with Defender XDR. Know the current capability boundary and migration prerequisites. Microsoft has announced that [Sentinel support in the Azure portal ends after March 31, 2027](https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal), so prefer current Defender-portal workflows while recognizing that some configuration or edit experiences may still link to Azure.
+
+You can [connect Sentinel to the Defender portal](https://learn.microsoft.com/en-us/unified-secops/microsoft-sentinel-onboard) without an E5 license or Defender XDR deployment. Combining XDR capabilities still requires their licenses and permissions. A unified screen does not automatically ingest all raw Defender events into Sentinel; validate connector, primary/secondary workspace and analyst scope separately.
 
 Workspace topology affects access, residency, retention, cost, cross-workspace queries, incident ownership, and delegated operations. Centralization improves correlation and consistency; separate workspaces can satisfy tenant, region, billing, sovereignty, or organizational isolation. Do not create a workspace per team without examining cross-boundary response and data duplication.
 
@@ -186,6 +196,14 @@ The July blueprint explicitly names Analytics, Data lake, and XDR tiers. Think i
 Start with use case, maximum acceptable detection latency, query operators, investigation horizon, regulatory hold, deletion/residency, and expected volume. Then choose table plan and retention. A cheaper table that cannot support the required rule or timely investigation is false economy. Conversely, expensive real-time ingestion of unused verbose data is not coverage.
 
 **VERIFY CURRENT:** table eligibility, tier names, retention limits, query/operator support, ingestion/query pricing, and XDR/Sentinel integration behavior can change. Recheck the source table and region before making a design or cost decision.
+
+**September 23 onboarding boundary:** [Sentinel release notes](https://learn.microsoft.com/en-us/azure/sentinel/whats-new) direct new customers to integrated Sentinel/Defender onboarding and table-level lake retention, without a separate lake onboarding/billing setup. Earlier lake customers can continue their existing experience or adopt the Fabric paths. Record which cohort and experience your lab uses; older VS Code lake-job instructions are not a universal new-tenant setup recipe.
+
+Use [table settings and Table insights](https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention) to inspect tier, retention, last received data and volume changes. Some security tables cannot move out of Analytics. A successful tier change can disable dependent detections, so test consumers before cost optimization.
+
+**Worked example — retained does not mean interactively searchable:** a new tenant keeps `SigninLogs` for 90 days in Analytics and two years overall. Under the September 23 [Advanced Hunting known issues](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender), an event from 120 days ago is 30 days beyond the interactive Analytics window. Use the documented search-job route for that extended-retention data; an empty recent query does not prove absence. Lake-only tables have a different access path. The table-settings page still broadly lists Advanced Hunting among capabilities lost on a lake move, while the newer hunting/release pages describe lake queries. **Unresolved documentation boundary:** verify the actual table type, cohort, time range and supported query surface before asserting access.
+
+[Azure Monitor metadata mirroring in Fabric](https://learn.microsoft.com/en-us/fabric/mirroring/catalog-mirroring/azure-monitor-tutorial) is preview. It exposes selected tables without replicating their storage, but the tutorial says **only new data is mirrored; existing history is not backfilled**. A newly created mirror therefore cannot recover the missing 120-day history. Fabric capacity, connection permissions and workspace/OneLake access still matter. A shared connection uses its configured identity; prove the consumer's permitted access rather than assuming Sentinel analyst scopes carry over. Mirror creation without an extra mirroring fee is not a claim that all Fabric analytics are free.
 
 > **Related item:** Retention is only part of forensic readiness. Validate time synchronization, parsing, stable identity/device/resource keys, integrity, access logging, case export, and legal-hold procedure.
 
@@ -218,7 +236,7 @@ CommonSecurityLog
 | order by MinutesSinceLast desc
 ```
 
-The query must be adapted to the source; its purpose is to establish count, freshness, and recognizable producer. Add field-quality assertions needed by detections.
+The query only returns producers with an event in its 30-minute window. A completely silent producer disappears from these results. Compare with an expected-source inventory or Table insights and test a deliberately silent source; do not interpret an empty result as healthy ingestion. Add field-quality checks needed by detections.
 
 #### Windows Security Events via AMA and WEF
 
@@ -240,9 +258,11 @@ Azure Activity Log records subscription control-plane events; resource logs expo
 
 Use [Azure Monitor diagnostic settings](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings) to distinguish metrics/log categories and destination behavior. Confirm a known resource operation appears with caller, target, action, result, and correlation fields.
 
+The [diagnostic-settings connector guidance](https://learn.microsoft.com/en-us/azure/sentinel/connect-services-diagnostic-setting-based) distinguishes subscription Activity Log export from each resource's diagnostic categories. Apply the correct policy scope/destination and remediate existing resources where required. Its green connector indicator can reflect ingestion within the preceding **14 days**, which is far weaker than a five-minute operational freshness target. Confirm a known control-plane operation in `AzureActivity` and the separate resource-log event needed by the use case.
+
 #### Threat intelligence and custom tables
 
-Ingest threat indicators from supported platforms/connectors using standardized STIX/TAXII or APIs where possible. Preserve type, value, confidence, source, valid-from/until, labels, and revocation. Expire indicators and measure matches; more indicators can increase noise and query cost. Use the current `ThreatIntelIndicators`/`ThreatIntelObjects` schema rather than the retired legacy table, as highlighted in [Sentinel what's new](https://learn.microsoft.com/en-us/azure/sentinel/whats-new).
+Ingest threat indicators from supported platforms/connectors using standardized STIX/TAXII or APIs where possible. Preserve type, value, confidence, source, valid-from/until, labels, and revocation. Expire indicators and measure matches; more indicators can increase noise and query cost. Use `ThreatIntelIndicators`/`ThreatIntelObjects`; [Microsoft documents that ingestion to the legacy table stopped July 31, 2025](https://learn.microsoft.com/en-us/azure/sentinel/work-with-stix-objects-indicators). This is an ingestion cutoff, not proof that all retained historical rows vanished. New-table data is republished every 7–10 days (`LastUpdateMethod == "LogARepublisher"`). Deduplicate versions by identifier, choose the latest version **before** testing deletion/revocation/validity, and distinguish republishing from a newly observed threat. Filtering deleted rows first can resurrect an older active version. Check schema fields explicitly; some long `Data` values are truncated, so the log row is not guaranteed to preserve the full original STIX object.
 
 Create a custom Log Analytics table only after defining schema, transformations, DCR/data collection endpoint, retention/table plan, access, volume, and queries. Use a stable time column and meaningful identifiers. Test type coercion, malformed/missing fields, schema evolution, and ingestion latency. A custom table name normally ends in `_CL`; design it as an owned contract, not a dumping ground.
 
@@ -250,9 +270,25 @@ Create a custom Log Analytics table only after defining schema, transformations,
 
 #### Defender XDR custom detection rules
 
-A Defender custom detection begins with an Advanced Hunting KQL query. The query must meet frequency/lookback and required timestamp/entity-column rules. It can create alerts and optionally act on returned device, file, user, or email entities. Microsoft's [custom detection guide](https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules) recommends validating the query before creating the rule.
+A Defender custom detection begins with an Advanced Hunting KQL query. The query must meet its data-source, frequency/lookback, entity-mapping and action requirements. It can create alerts and optionally act on returned device, file, user, or email entities. Microsoft's [custom detection guide](https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules) recommends validating the query before creating the rule.
 
 For each rule, specify hypothesis, ATT&CK mapping, data/tables, frequency/lookback, entity and alert enrichment, action scope, exclusions, expected volume, owner, test cases, and rollback. A query that returns useful hunt context may still be unsuitable for automated action.
+
+The current custom-detection documentation **recommends** projecting event time and source identifiers; it no longer supports teaching a single universal mandatory-column formula. Retain `DeviceId` and `ReportId` for Endpoint event scoping/process context, and preserve same-event `Timestamp`/`ReportId` for other Defender tables. If event time is omitted, alert timing can fall back to the detection window. With Sentinel row-level scoping configured, project `SentinelScope_CF` as documented; otherwise scoped analysts can lose visibility of the resulting alerts. Never fabricate a scope or combine events across access scopes merely to make a query pass.
+
+**Worked example — preserve one actual event:** device D has events `(10:00, ReportId 900)` and `(10:05, ReportId 100)`. Independent `max(Timestamp)` and `max(ReportId)` produce `(10:05, 900)`, which never happened. `arg_max(Timestamp, ReportId)` retains `(10:05, 100)`. Carry the correct device and any scope grouping through the aggregation; an alert needs traceable evidence, not just the highest values.
+
+```kusto
+DeviceEvents
+| where ActionType == "AntivirusDetection"
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId),
+            Detections=count() by DeviceId
+| where Detections > 5
+```
+
+This is an illustrative query for the rule's configured lookback, not a tested tenant detection. Do not add a contradictory event-time filter without understanding service prefiltering. Tune expected volume: the documented cap is 150 alerts per run. Permissions must cover every queried workload and device scope, not just access to the hunting page.
+
+**Continuous eligibility needs a tenant check:** Defender's custom-detection page lists supported Sentinel tables and requires one supported table, supported operators, no joins/unions/`externaldata`, and no query comments for Continuous (NRT). The unified-hunting known-issues page still says NRT custom detections with Sentinel data are unavailable. These Microsoft pages conflict. Do not promise Sentinel Continuous support; validate the exact table/rule wizard and current documentation or use a supported scheduled route. This remains an open review finding.
 
 #### Sentinel analytics rule types
 
@@ -260,6 +296,10 @@ For each rule, specify hypothesis, ATT&CK mapping, data/tables, frequency/lookba
 - **Near-real-time (NRT)** rules run every minute with a short ingestion-time delay for eligible scenarios. Use them only when the lower latency matters and the query meets constraints. See [NRT rule behavior](https://learn.microsoft.com/en-us/azure/sentinel/near-real-time-rules).
 - **Threat-intelligence matching** compares indicators with relevant event fields; tune indicator quality, expiry, field mapping, and source trust.
 - **Machine-learning/anomaly** detections use Microsoft or configurable anomaly logic depending on feature. Treat anomaly as investigation input: unusual is not necessarily malicious.
+
+**Worked example — two clocks:** a source event occurs at 10:00 and arrives at 10:08. Sentinel NRT evaluates the ingestion-time window with a documented two-minute built-in delay and one-minute cadence, so 10:10 is a useful illustrative earliest point before additional scheduling/processing delay. That is already ten minutes after the event; a five-minute end-to-end target has been missed upstream. NRT cannot undo collection latency. Validate measured arrival and alert times rather than promising that exact alert time.
+
+Sentinel NRT currently permits multiple tables and workspaces; do not import Defender Continuous's single-table restriction. The Sentinel page lists 50 rules per customer, source ingestion delay below 12 hours, and up to 30 single-event alerts. Above that grouping threshold, the first 29 alerts are individual and the 30th summarizes applicable events; this is not necessarily one independent alert per result.
 
 Entity mappings connect alerts to accounts, hosts, IPs, URLs, cloud resources, and other investigation objects. Custom details and dynamic alert properties put decision context in the incident. Alert grouping affects case scope: grouping unrelated events hides parallel attacks; fragmenting one campaign raises workload.
 
@@ -366,6 +406,8 @@ Common actions include isolate device, contain device, run antivirus scan, colle
 
 Live response opens a remote shell for approved investigation/remediation commands. Use role separation, signed-script/library controls, session auditing, a written objective, and minimal commands. Avoid modifying evidence before collecting it. The [Endpoint response-action reference](https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts) lists capabilities and platform constraints.
 
+The [live-response command reference](https://learn.microsoft.com/en-us/defender-endpoint/live-response) distinguishes basic/advanced permissions and operating-system command support. A device supports one live session at a time; a user can start up to five, with 50 concurrent sessions overall. Inactivity expires after 30 minutes; most commands time out after ten minutes, while `getfile`, `findfile` and `run` have 30 minutes. A file within the 3 GB `getfile` limit can still exceed its transfer timeout. Preserve the command log and collected evidence; do not assume an arbitrary local shell command or an unsigned script is permitted.
+
 For an incident touched by attack disruption, review contained entities and Action center history. Automated containment buys time; it does not replace persistence search, scope validation, credential recovery, or root-cause remediation.
 
 ### Investigate Microsoft 365 activities
@@ -381,6 +423,8 @@ Content search finds mailbox and supported site content by location, custodians,
 #### Microsoft Graph activity logs
 
 Microsoft Graph activity logs expose HTTP requests handled by Graph for the tenant and can be sent through Azure Monitor diagnostic settings to supported destinations. They help investigate app/user API access, response status, client/request IDs, IP/user agent, tenant/app identity, permission/scopes, and requested resource paths. Protect sensitive fields and manage volume. Use the [Graph activity-log overview](https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview) to understand availability and schema.
+
+Graph logs require Entra P1/P2 and appropriate diagnostic-setting/destination access. Use `RequestId` for a request and `OperationId` for batch correlation; the latter can be shared by several requests. A successful HTTP response alone is not proof of exfiltration or the full returned content. Protect request URIs as potentially sensitive evidence; never place secrets in directory attributes or query inputs expecting the audit trail to conceal them.
 
 > **Related item:** Entra audit/sign-in logs, Microsoft 365 unified audit, service-specific logs, and Graph activity logs answer different questions. Correlate rather than treating one as a universal audit trail.
 
@@ -409,7 +453,7 @@ let lookback = 24h;
 let threshold = 20;
 SigninLogs
 | where TimeGenerated > ago(lookback)
-| where ResultType != 0
+| where ResultType != "0"
 | summarize Failures=count(), IPs=make_set(IPAddress, 20),
             FirstSeen=min(TimeGenerated), LastSeen=max(TimeGenerated)
             by UserPrincipalName
@@ -417,7 +461,7 @@ SigninLogs
 | order by Failures desc
 ```
 
-This is a learning pattern, not a production detection. A real rule must handle table semantics, result codes, service accounts, ingestion delay, baselines, entity mapping, and validation.
+This is a learning pattern, not a production detection. The [SigninLogs schema](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/signinlogs) defines `ResultType` as a string and `"0"` as success. A nonzero result deserves interpretation; it is not always proof of a bad password or an attack. The capped IP set is context, not a count of every distinct IP. A real rule must handle service accounts, delay, baselines, entity mapping and validation.
 
 Core operator reasoning:
 
@@ -436,11 +480,13 @@ Test query boundaries: empty results, duplicate events, missing fields, late arr
 
 Advanced Hunting supports proactive querying across Defender data. Use the schema pane, sample queries, query resources, and results-to-entity pivots. Confirm retention and whether Sentinel integration extends access to additional tables. The [Advanced Hunting overview](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-overview) is the current feature reference.
 
-A custom detection operationalizes a query; it is not simply a saved hunt. Make the rule return required timestamp and entity identifiers, match frequency/lookback constraints, and include actionable context. Test result rate and permissions, then monitor alert/action results.
+A custom detection operationalizes a query; it is not simply a saved hunt. Preserve recommended event identifiers and required action/scope fields, match frequency/lookback constraints, and include actionable context. Test result rate and permissions, then monitor alert/action results.
 
 Threat analytics reports provide Microsoft research, affected-asset status, related incidents, and detection/mitigation guidance. Use them to form hypotheses and prioritize validation against your environment; “no affected assets” depends on telemetry and product coverage.
 
 Hunting graph visually connects entities and relationships. Blast-radius views show potential impact paths, while Sentinel Graph can connect activity, assets, and threat intelligence. Microsoft's [Sentinel Graph overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-graph-overview) distinguishes pre-breach exposure paths, incident blast radius, and interactive graph hunting. A graph edge expresses a modeled relationship; validate critical edges and timestamps in source data.
+
+Custom Sentinel graphs are separately marked preview. An on-demand graph job retains its graph for 30 days; scheduled jobs rebuild on their configured refresh schedule. Record build/source time: a current potential path does not establish that the attacker actually used that path during an older incident.
 
 ### Hunt on the Sentinel platform
 
@@ -452,7 +498,7 @@ Convert proven, repeatable, time-sensitive logic to an analytic rule with owner,
 
 #### Choose KQL jobs, summary rules, or search jobs
 
-The Sentinel data lake changes long-horizon hunting:
+For the established Sentinel data-lake experience, the July comparison describes these choices. New customers should first apply the September 23 onboarding/access boundary in Section 1 and use the currently documented Fabric paths where applicable:
 
 - **KQL jobs** run one-time or scheduled asynchronous, fuller-KQL queries over data-lake and federated tables and write results to Analytics. They suit historical multi-table investigation or enrichment.
 - **Summary rules** periodically aggregate high-volume data into custom Analytics tables, supporting faster repeated detection/reporting with controlled loss of granularity.
@@ -460,17 +506,21 @@ The Sentinel data lake changes long-horizon hunting:
 
 The current [KQL jobs, summary rules, and search jobs comparison](https://learn.microsoft.com/en-us/azure/sentinel/datalake/kql-jobs-summary-rules-search-jobs) is essential because supported source tiers, joins, scheduling, lookback, timeouts, and cost differ. Choose based on the investigation question, not the newest feature.
 
+In the established job experience, KQL jobs support on-demand/daily/weekly/monthly work; summary rules can run from every 20 minutes to daily; search jobs hydrate a single table. A requirement to aggregate every 20 minutes therefore needs a supported summary workflow or separately designed Fabric schedule, not an assumed 20-minute Sentinel KQL-job setting. Data archived before lake onboarding may still require search jobs. These choices do not recover data that was never collected or has expired.
+
 For a KQL job, define time range, source tables/tier, result table, schedule, cost guardrail, permissions, idempotency/deduplication, and lifecycle. For a summary table, document grain, dimensions, aggregation window, source latency, retained detail, update behavior, and consumer detections. Always retain a path back to raw evidence when required.
 
 #### Use notebooks for advanced, documented analysis
 
-Sentinel data-lake notebooks run in Visual Studio Code with Jupyter, Python, Spark, and the Microsoft Sentinel extension/provider. They suit multi-step transformations, visualization, statistical/ML work, reusable investigation narrative, and scheduled jobs. Select runtime size consciously and treat notebook output/custom tables as governed data.
+The established Sentinel data-lake notebook experience uses Visual Studio Code with Jupyter, Python, Spark and the Microsoft Sentinel extension/provider. September guidance directs new customers toward Fabric notebooks; record the actual runtime and connection model before following code from either experience. They suit multi-step transformations, visualization, statistical/ML work, reusable investigation narrative, and scheduled jobs. Select runtime size consciously and treat notebook output/custom tables as governed data.
 
 Use a clean environment, pin/document logic, protect credentials, separate exploratory from production notebooks, parameterize tenant/time/entity inputs, avoid unnecessary data export, and validate results with KQL/source records. Review current [Sentinel data-lake notebook guidance](https://learn.microsoft.com/en-us/azure/sentinel/datalake/notebooks) for permissions, runtime, library, concurrency, and timeout limits.
 
 #### Connect to the Sentinel MCP Server safely
 
 The hosted Sentinel MCP Server exposes scenario-focused tool collections to compatible AI clients for data exploration, entity analysis, incident triage, hunting, and agent building. Most data-exploration capabilities require Sentinel data-lake onboarding, and the user/client retains permission requirements. The [MCP getting-started guide](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-get-started) lists prerequisites and current clients.
+
+The [triage collection](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool) specifically accepts Defender XDR, Endpoint or Sentinel onboarded to Defender; do not assume every MCP collection needs the same lake prerequisites. The getting-started page calls for Security Reader to list/invoke tools and preserves existing permissions for triage. Start with table discovery, retrieve the selected schema, then run a bounded query. Even file pivots differ: some triage tools accept SHA-256 while file-alert/device tools document SHA-1 only. Do not claim that a natural-language request grants an unavailable permission or hash conversion.
 
 Treat MCP as a governed tool boundary:
 
@@ -521,12 +571,12 @@ A SOC ingests Azure, AWS, firewall CEF, Windows WEF, and Linux Syslog data into 
 
 ### Scenario 3 — Long-horizon identity hunt with AI assistance
 
-Threat intelligence suggests an adversary quietly abuses dormant accounts over nine months. The recent Analytics window is clean; data exists in the Sentinel data lake. An analyst uses a KQL job, notebook, Sentinel Graph, and an MCP-connected assistant.
+Threat intelligence suggests an adversary quietly abuses dormant accounts over nine months. The recent Analytics window is clean; data exists in the Sentinel data lake. An analyst chooses supported jobs/search, a notebook, a graph and an MCP-connected assistant after checking the tenant onboarding cohort and retention path.
 
 **Reasoning path:**
 
 1. State the hypothesis and define dormant-account baseline, time window, authoritative identity/sign-in/activity tables, and exclusions.
-2. Use a bounded KQL job across long-term tables to create a reviewable Analytics result set; record query, cost, schedule, and result table.
+2. Choose a supported retrieval route: an established lake KQL job, a search job for extended Analytics history, or a Fabric workflow whose mirror actually covers the required dates. Record query, cost, schedule, result location and missing history.
 3. Use a notebook for sequence/baseline analysis and Sentinel Graph to inspect privilege and asset relationships; validate high-impact edges against raw records.
 4. Ask the MCP tool to find supporting and disconfirming evidence, then inspect actual tool results and reproduce important findings deterministically.
 5. Open a hunt/case with bookmarks, scope identities/devices/apps, contain only after confidence and business-owner checks, and preserve evidence.
@@ -635,13 +685,33 @@ Use a disposable tenant/subscription and synthetic data. Defender, Purview, Sent
 ### Lab 8 — Long-term hunt, graph, notebook, and MCP
 
 1. State a long-horizon hypothesis and map tables/fields/time/expected benign behavior.
-2. Write/tabletop a KQL job and choose between job, summary rule, and search job.
+2. Record the onboarding cohort and compare a supported KQL job, summary rule, search job and Fabric workflow; verify the historical data is actually reachable.
 3. Create a small parameterized notebook or pseudocode analysis and specify runtime/output governance.
 4. Inspect a hunting/blast-radius graph and validate two edges from source evidence.
 5. Use or tabletop Sentinel MCP prompts that seek both supporting and disconfirming evidence; constrain permissions and tools.
 6. Decide whether the result becomes a bookmark, case, analytic, summary, or documented null hunt.
 
 **Evidence:** hypothesis/query/job, summary grain if used, notebook, graph validation, MCP tool trace, cost/permission record, and operationalization decision.
+
+### Lab 9 — Detection evidence and automation identity
+
+1. Use the synthetic event pair in Section 1 to compare independent maxima with a same-event aggregation. Preserve device and scope boundaries.
+2. Tabletop converting a hunt into a rule: entity fields, workload permissions, configured lookback, alert cap and Continuous eligibility.
+3. Test old/new account payloads, `alex`, `alex-admin`, an attacker-controlled lookalike suffix, and a missing tenant/object ID.
+4. Route ambiguous identity or scope to analyst review; prove duplicate input does not repeat a containment action.
+
+**Evidence:** expected/actual synthetic results, rule design, unresolved availability check, input/output identity contract and replay decision. No live response action is required.
+
+### Lab 10 — Retention, fresh ingestion and cloud-incident evidence
+
+1. Record whether the tenant predates September 23 lake onboarding changes. Map Analytics, lake-only, extended retention and Fabric mirror coverage.
+2. Tabletop the 120-day event with 90-day Analytics retention. Identify the supported historical query route and why a new mirror cannot backfill it.
+3. Compare one active producer with a deliberately silent inventory entry; explain why the 30-minute query alone misses the silent source.
+4. Estimate the custom-collection cap and distinguish source time, ingestion time and NRT alert delay.
+5. Build a benign Storm-3168-inspired evidence matrix: workload sign-ins, `AzureActivity`, service data-plane logs, role assignments and recovery state. Separate attempted, successful and unconfirmed activity.
+
+**Evidence:** cohort/access matrix, missing-history result, source-health test, arithmetic, incident timeline and credential-recovery checklist. Use synthetic records; no destructive cloud operations.
+
 
 ## 7. Knowledge checks
 
@@ -684,6 +754,17 @@ These are original study questions, not recalled exam content.
 35. **When is a notebook better than one KQL query?** For documented multi-step analysis, Spark/Python transformations, statistics/ML, visualization, or scheduled data-lake processing.
 36. **What is the core MCP safety boundary?** The connected identity, allowed tools/workspaces, untrusted retrieved content, action authority, audit, and deterministic verification of important results.
 
+37. **Why can two independent maxima make bad detection evidence?** The selected time and report ID can come from different rows. Preserve a single event with `arg_max` and its device/scope context.
+38. **Does Defender Continuous's one-table rule govern Sentinel NRT?** No. Sentinel NRT supports multiple tables/workspaces under its own limits; Sentinel data in Defender Continuous has conflicting current documentation and needs verification.
+39. **What happens when one device/rule reaches 75,000 custom events in rolling 24 hours?** That custom rule stops collecting until its rolling budget permits collection; default EDR continues. Do not assume midnight reset or replay.
+40. **Why can `StartsWith("alex")` be unsafe for automatic containment?** It can identify several principals. Validate the full normalized identity and tenant/object ID; prefix matching is not authorization.
+41. **Can two years of retention guarantee a 120-day Advanced Hunting result?** No. The documented new-tenant extended-Analytics path with 90-day interactive retention needs search jobs for older data; a new Fabric mirror does not backfill history.
+42. **Does a green connector prove five-minute freshness?** No. Some connector indicators reflect ingestion within 14 days; measure known producer arrival, missing sources and required fields.
+43. **Why deduplicate threat-intelligence versions before filtering deleted rows?** Otherwise an earlier active version can survive after its later deletion; republishing also does not mean a newly observed threat.
+44. **Does a successful Graph request or key-read operation prove data exfiltration?** No. Preserve request identity, result and workload evidence, and explicitly label what was accessed, attempted or unconfirmed.
+
+
+
 ## Places to learn
 
 This is a curated starting point, not a complete list. Do **not** try to consume every resource. Pick a primary path that fits how you learn, use documentation and labs for weak areas, and use assessments to decide what to revisit. Verify every course against the July 28, 2026 blueprint—especially data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
@@ -693,51 +774,62 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 | Resource | Access | Estimated time |
 |---|---|---:|
 | Official blueprint, credential/exam page, and change log | Free | 45–75 minutes |
-| Ten official Microsoft Learn paths in the current course syllabus | Free | 43 hours 12 minutes listed; allow 55–75 hours with exercises and notes |
+| Ten official Microsoft Learn paths in the current course syllabus | Free | Earlier 43h12 total is historical; allow 55–75 hours as a study estimate and inspect current modules |
 | SC-200T00-A instructor-led course | Provider/schedule dependent | 4 days |
 | Microsoft Learn free Practice Assessment | Free; launch from credential page | 45–75 minutes per attempt plus 1–3 hours source review |
 | MicrosoftLearning public SC-200 labs | Free; many expect a prepared tenant | 10–20 hours selected labs; full use depends on environment |
 | Microsoft Exam Readiness Zone SC-200 videos | Free | About 1–2 hours; reconcile the recording date with July 2026 |
-| Pluralsight SC-200 path | Paid/trial | 6 hours listed plus labs/review; courses date 2022–2024 |
-| O'Reilly/Packt SC-200 video | Paid/trial | 12 hours 50 minutes; June 2022 baseline |
+| Pluralsight SC-200 path | Paid/trial | 6h09 summed course durations (path rounds to six hours); 2022–2024 recordings |
+| O'Reilly/Packt SC-200 video | Paid/trial | Earlier 12h50/June 2022 metadata; current page access blocked |
 | O'Reilly live SC-200 crash course by Tim Warner | Paid/subscription; schedule dependent | 2 sessions of 3 hours (6 hours listed) plus review; older domain wording |
-| Microsoft Press Exam Ref SC-200, 2nd Edition | Paid; preview/sample availability varies | 416 pages; allow about 14–22 hours plus labs |
-| Udemy 2026 SC-200 practice tests by Dean Ellerby | Paid | 6 tests / 360 questions; allow about 9–15 hours with explanation/source review |
+| Microsoft Press Exam Ref SC-200, 2nd Edition | Paid; preview/sample availability varies | 320 pages; allow about 12–20 hours plus labs |
+| Udemy 2026 SC-200 practice tests by Dean Ellerby | Paid | Earlier six tests/360 questions; current page access blocked |
 | MeasureUp SC-200 practice test | Paid; demo available | 170 questions; allow about 7–12 hours for diagnostic, review, and timed retest |
 | Partner Skilling Hub SC-200 offering | Microsoft partner login required | Schedule-dependent; allow about 4–5 days for a certification-week format, verify listing |
 
 ### Official Microsoft resources
 
-- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — authoritative July 28, 2026 objectives and change log.
+- [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200) — accepted July 28 baseline, published October 21 revision and change log.
 - [Security Operations Analyst Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) — status, renewal, 100-minute exam, free Practice Assessment, sandbox, and prep-video entry point.
 - [SC-200T00-A course](https://learn.microsoft.com/en-us/training/courses/sc-200t00) — four instructor-led days and the current self-directed syllabus.
-- [Mitigate threats using Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) — 6 hours 6 minutes.
-- [Mitigate threats using Security Copilot](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/) — 4 hours 54 minutes.
-- [Mitigate threats using Microsoft Purview](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/) — 4 hours 19 minutes.
-- [Mitigate threats using Defender for Endpoint](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/) — 5 hours 49 minutes.
-- [Mitigate threats using Defender for Cloud](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/) — 4 hours 17 minutes.
-- [Create Sentinel queries with KQL](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/) — 2 hours 10 minutes.
-- [Configure your Sentinel environment](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/) — 3 hours 45 minutes.
-- [Connect logs to Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/) — 3 hours 4 minutes.
-- [Create detections and investigate with Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/) — 6 hours 34 minutes.
-- [Perform threat hunting in Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — 2 hours 14 minutes.
+- [Mitigate threats using Defender XDR](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) — earlier 6 hours 6 minutes duration is historical; inspect current modules.
+- [Mitigate threats using Security Copilot](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/) — earlier 4 hours 54 minutes duration is historical; inspect current modules.
+- [Mitigate threats using Microsoft Purview](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-purview/) — earlier 4 hours 19 minutes duration is historical; inspect current modules.
+- [Mitigate threats using Defender for Endpoint](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-defender-for-endpoint/) — earlier 5 hours 49 minutes duration is historical; inspect current modules.
+- [Mitigate threats using Defender for Cloud](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-azure-defender/) — earlier 4 hours 17 minutes duration is historical; inspect current modules.
+- [Create Sentinel queries with KQL](https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/) — earlier 2 hours 10 minutes duration is historical; inspect current modules.
+- [Configure your Sentinel environment](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/) — earlier 3 hours 45 minutes duration is historical; inspect current modules.
+- [Connect logs to Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-connect-logs-to-azure-sentinel/) — earlier 3 hours 4 minutes duration is historical; inspect current modules.
+- [Create detections and investigate with Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/) — earlier 6 hours 34 minutes duration is historical; inspect current modules.
+- [Perform threat hunting in Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — earlier 2 hours 14 minutes duration is historical; inspect current modules.
 - [MicrosoftLearning SC-200 lab repository](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst) — public course lab instructions and setup notes.
 - Use the prep-video link on the [credential page](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) for Microsoft's Exam Readiness Zone material; verify the episode date and its objective weights before relying on it.
 
 ### Video, books, and structured courses
 
-- [Pluralsight Microsoft Security Operations Analyst (SC-200)](https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200) — three courses/six hours and a practice exam. The listed courses date from 2022–2024 and still use older product/domain language, so use them for foundations and build a July 2026 gap list.
-- [O'Reilly/Packt SC-200 Microsoft Security Operations Analyst](https://www.oreilly.com/videos/sc-200-microsoft-security/9781804611777/) — 12 hours 50 minutes with Anand Rao Nednur, published June 2022. Useful demonstrations, but it predates Defender-portal unification and the current data-lake, graph, MCP, Copilot, and agentic objectives.
+- [Pluralsight Microsoft Security Operations Analyst (SC-200)](https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200) — three courses totaling 6h09 (1h53 + 2h26 + 1h50), rounded to six path hours, and a practice exam. The listed courses date from 2022–2024 and still use older product/domain language, so use them for foundations and build a July 2026 gap list.
+- [O'Reilly/Packt SC-200 Microsoft Security Operations Analyst](https://www.oreilly.com/videos/sc-200-microsoft-security/9781804611777/) — earlier catalog metadata: 12h50 with Anand Rao Nednur, June 2022. Current access was blocked; content was not reverified. That historical edition predates Defender-portal unification and the current data-lake, graph, MCP, Copilot, and agentic objectives.
 - [O'Reilly live SC-200 crash course](https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/) with Tim Warner — two three-hour sessions in the listed agenda. Verify the next event date and treat its older Microsoft 365 Defender/domain terminology as supplemental.
-- [Microsoft Press Exam Ref SC-200, 2nd Edition](https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595) by Yuri Diogenes, Tom Janetscheck, and Gianni Castaldi — 416 pages, published in 2026. Check its stated exam-update chapter against the July 2026 outline.
-- [Udemy SC-200 practice tests (2026)](https://www.udemy.com/course/sc-200-practice-tests-security-operations-analyst-2026/) by Dean Ellerby — six tests/360 original questions, listed as updated August 2026 with per-option explanations and documentation links. Use practice mode ethically and validate disputed answers against Microsoft sources.
-- [Cloud 360 Training SC-200 course](https://www.youtube.com/watch?v=HsqdfQdg08k) — free YouTube series entry point published February 2025. The first video is only a short orientation and the series predates July 2026; sample its depth before using it and fill the current-objective gaps.
+- [Microsoft Press Exam Ref SC-200, 2nd Edition](https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595) by **Yuri Diogenes and Sarah Young — 320 pages, published May 11, 2026**. Its contents list four older domains plus an exam-updates chapter; the public listing alone does not establish complete July/October coverage. No purchased book content was reviewed.
+- [Udemy SC-200 practice tests (2026)](https://www.udemy.com/course/sc-200-practice-tests-security-operations-analyst-2026/) by Dean Ellerby — earlier catalog metadata: six tests/360 questions and August 2026 update. Current access was blocked, so availability, explanations and objective coverage remain unverified.
+- [Cloud 360 Training SC-200 course](https://www.youtube.com/watch?v=HsqdfQdg08k) — earlier February 2025 series metadata; current retrieval returned a shell. Video content, runtime and current-objective completeness were not reverified.
 - [John Savill's Technical Training channel](https://www.youtube.com/@NTFAQGuy/videos) is excellent for Microsoft security foundations, and his public [Azure Master Class repository](https://github.com/johnthebrit/AzureMasterClass) includes monitoring/security material and downloadable whiteboards. No current SC-200-specific course was confirmed in this review, so use individual KQL, Sentinel, Defender, and security videos only as product background and verify every topic against current documentation.
 
 ### Assessment and partner resources
 
 - Use the free Microsoft Practice Assessment on the [SC-200 credential page](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) as a diagnostic, not a question bank. Research every weak or ambiguous answer in current product documentation.
-- [MeasureUp SC-200 practice test](https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html) — 170 original questions, practice and certification modes, explanations/references, and an August 2026 update listed. A demo is available.
+- [MeasureUp SC-200 practice test](https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html) — 170 questions and an August 2026 update in the current public catalog; listed domain counts are 77 + 62 + 31. The catalog also has generic question-count/duration claims; use Microsoft for exam administration. No paid questions or demo were reviewed, and this count is not a completeness guarantee.
 - [Microsoft Partner Skilling Hub security playbook](https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf) lists Security Operations Analyst (SC-200) among security credential offerings. Partner sign-in is required for underlying event content; dates and duration are schedule-specific.
+
+### Useful blog reading with an operator task
+
+- **sagiyagen365 (Microsoft), February 10, 2026 — [Account Name entity mapping update](https://techcommunity.microsoft.com/blog/microsoftsentinelblog/update-changing-the-account-name-entity-mapping-in-microsoft-sentinel/4489040).** Read the payload change and test the identity examples in Section 1. The July 1 change is already effective. Separate broad compatibility filtering from authorization for a specific principal. Allow 20–30 minutes for reading and synthetic tests.
+- **Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25, 2026 — [Storm-3168 cloud investigation](https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/).** Build an evidence timeline across workload identities, resource operations and service logs. Distinguish failed deletion attempts from successful operations and rotate exposed credentials in the tabletop. The report does not confirm that the publicly exposed secret caused initial access or that exfiltration/ransom occurred. A compromised ordinary service principal is not automatically an Agent ID object. Allow 45–60 minutes; do not reproduce destructive operations.
+
+Public article text was read; gated threat intelligence, videos and customer outcomes were not tested. The ten Learn path landing pages list **59 modules**; individual modules were not completed or timed. The lab repository README was reviewed, not every lab instruction. O'Reilly's public live agenda shows two three-hour sessions, but no next-event availability was verified. Partner PDF retrieval did not establish current underlying event dates. YouTube pages returned shells. No paid lessons, question banks or signed-in Practice Assessment were completed.
+
+The [deep-review record](../docs/research/2026-09-27-sc-200-deep-review.md) maps 54 October objectives and records the open Microsoft documentation conflicts, source observations, follow-up dates and execution limits. Human review remains pending.
+
+
 
 Avoid sites selling “real questions,” dumps, guarantees based on recalled exam content, or unauthorized copies. Use original practice questions, the free official assessment, current documentation, and authorized labs to build transferable security-operations skill.

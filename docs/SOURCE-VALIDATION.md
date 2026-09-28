@@ -600,6 +600,8 @@ The review maps every July 28, 2026 subobjective to a strategy, control boundary
 
 ## SC-200 coverage record
 
+The September 27 [deep review](research/2026-09-27-sc-200-deep-review.md) maps 54 detailed objectives. Whole guide read; 54 October objectives in nine groups individually mapped while retaining July 28 baseline. Add five worked examples, two labs, eight answers (44 total) and two qualified Microsoft blog exercises. Update September Sentinel onboarding/history/Fabric limits, collection budgets, event identity, automation mapping, ingestion latency, TI versions, Graph/MCP/live-response boundaries and resource metadata. Twelve offline checks passed; no tenant or KQL execution. Two Microsoft documentation conflicts remain open; three follow-up checkpoints added; human review pending. Current guide citations: 60 registered, 58 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Manage a security operations environment | Section 1, all integrated scenarios, Labs 1–4 |
