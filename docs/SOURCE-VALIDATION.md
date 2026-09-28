@@ -555,6 +555,8 @@ The review maps every March 12, 2026 subobjective to a requirement, platform dec
 
 ## AI-200 coverage record
 
+The September 28 [deep review](research/2026-09-28-ai-200-deep-review.md) maps 27 detailed objectives. Whole guide and 27 unchanged objectives mapped across nine groups. Add six worked examples, ten labs, 48 explained checks and a Redis engineering blog worksheet; correct identity, data, retry, lifecycle, rotation, sampling and catalog boundaries. Twenty-six offline assertions, five Python syntax checks and one YAML parse passed; only the local reducer executed. Managed Redis conversion-document conflict remains open. No infrastructure/SDK/paid-content execution; independent human review pending. Current guide citations: 75 registered, 71 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Develop containerized solutions on Azure | Sections 1–2, all integrated scenarios, and Labs 1–3 |

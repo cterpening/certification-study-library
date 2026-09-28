@@ -1,0 +1,3334 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AI-200",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "eb29510185f9b4bc02aa3b1fd25d883e0d8270f97ac7ffe2de66299f2bfc4f46",
+  "guide_after_sha256": "1f97e271522eb5413045b48cf3f4fb67e8d36940ba8ba4c79b6fb762f5d4413c",
+  "prior_records": {
+    "exam": {
+      "code": "AI-200",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Developing AI Cloud Solutions on Azure",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+      "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Python and Azure SDKs, container images and orchestration, Cosmos DB and PostgreSQL/pgvector, Managed Redis, messaging and events, Functions, managed identity, Key Vault, OpenTelemetry, KQL, vectors and RAG."
+    },
+    "review": {
+      "id": "ai-200-2026-08-31-source-validation",
+      "exam_code": "AI-200",
+      "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+      "objective_coverage": [
+        {
+          "objective_group": "Develop containerized solutions on Azure",
+          "guide_sections": [
+            "Sections 1–2",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Develop AI solutions by using Azure data management services",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Connect to and consume Azure services",
+          "guide_sections": [
+            "Section 4",
+            "Ingestion and AKS scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Secure, monitor, troubleshoot Azure solutions",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 55,
+        "reachable": 51,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective from the official page last updated May 5, 2026 is mapped to a production dependency, implementation boundary, evidence artifact, failure action, or recovery path. Three scenarios, eight independent labs, and 36 original knowledge checks cover ACR/Tasks, App Service, Container Apps/KEDA, AKS, Cosmos DB/vector/change feed, PostgreSQL/pgvector, Managed Redis, Service Bus, Event Grid, Functions, identity, Key Vault, App Configuration, OpenTelemetry and KQL. All 55 cited URLs are exact catalog entries: 51 were reachable and four commercial-provider pages were access-blocked; none was missing or broken. The guide records no current Microsoft Practice Assessment and the exact Azure Cache for Redis retirement transition. No upcoming exam blueprint change or retirement was announced."
+    },
+    "sources": [
+      {
+        "id": "microsoft-reactor",
+        "title": "Microsoft Reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "AI-901",
+          "AI-103",
+          "AB-100",
+          "AZ-801",
+          "AZ-802",
+          "DP-300",
+          "DP-800",
+          "AI-200",
+          "AI-300",
+          "SC-500",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-cosmos-db-consistency-levels",
+        "title": "Consistency levels in Azure Cosmos DB",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900",
+          "DP-420",
+          "AI-200"
+        ],
+        "notes": "API mappings, throughput implications, and multi-region constraints are volatile."
+      },
+      {
+        "id": "dp-420-exam-sandbox",
+        "title": "Microsoft certification exam sandbox",
+        "url": "https://aka.ms/examdemo",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-420",
+          "DP-750",
+          "DP-800",
+          "AI-200"
+        ]
+      },
+      {
+        "id": "dp-420-index-policy",
+        "title": "Azure Cosmos DB: Index policy",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-420",
+          "AI-200"
+        ]
+      },
+      {
+        "id": "dp-420-change-feed-processor",
+        "title": "Azure Cosmos DB: Change feed processor",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-processor",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-420",
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-blueprint",
+        "title": "official AI-200 study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-certification-page",
+        "title": "Azure AI Cloud Developer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-ai-200t00-develop-ai-cloud-solutions-on-azure",
+        "title": "AI-200T00 Develop AI cloud solutions on Azure",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-acr-overview",
+        "title": "ACR overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-authentication-guidance",
+        "title": "authentication guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-acr-tasks-overview",
+        "title": "ACR Tasks overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-custom-container-guide",
+        "title": "custom container guide",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-managed-identity-image-pull",
+        "title": "managed identity image pull",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux#use-managed-identity-to-pull-image-from-azure-container-registry",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-revisions",
+        "title": "revisions",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-environment-overview",
+        "title": "environment overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-scale-rules",
+        "title": "scale rules",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-deploy-an-application-to-aks",
+        "title": "deploy an application to AKS",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-aks-workload-identity",
+        "title": "AKS workload identity",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-container-apps-logs-and-monitoring",
+        "title": "Container Apps logs and monitoring",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-aks-monitoring-data",
+        "title": "AKS monitoring data",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/monitor-aks",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-python-sdk-examples",
+        "title": "Python SDK examples",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/how-to-python-get-started",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-vector-search-in-cosmos-db-for-nosql",
+        "title": "vector search in Cosmos DB for NoSQL",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-connect-with-python",
+        "title": "connect with Python",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/connect-python",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-service-overview",
+        "title": "service overview",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-pgvector-guidance",
+        "title": "pgvector guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-use-pgvector",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-server-parameters",
+        "title": "server parameters",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-server-parameters",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-pgbouncer",
+        "title": "PgBouncer",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-azure-managed-redis-overview",
+        "title": "Azure Managed Redis overview",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-python-client-connection-guidance",
+        "title": "Python client connection guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/python-get-started",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-azure-cache-for-redis-retirement-faq",
+        "title": "Azure Cache for Redis retirement FAQ",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-vector-search-concepts",
+        "title": "vector search concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/overview#vector-search",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-service-bus-messaging-overview",
+        "title": "Service Bus messaging overview",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-python-sdk-quickstart",
+        "title": "Python SDK quickstart",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-queues",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-dead-letter-queues",
+        "title": "dead-letter queues",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-event-grid-concepts",
+        "title": "Event Grid concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/event-grid/concepts",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-custom-events",
+        "title": "custom events",
+        "url": "https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-delivery-and-retry",
+        "title": "delivery and retry",
+        "url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-functions-python-developer-guide",
+        "title": "Functions Python developer guide",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-deployment-technologies",
+        "title": "deployment technologies",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-functions-best-practices",
+        "title": "Functions best practices",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-key-vault-secrets-quickstart-for-python",
+        "title": "Key Vault secrets quickstart for Python",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-key-vault-security-guidance",
+        "title": "Key Vault security guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/security-features",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-secret-rotation-guidance",
+        "title": "secret rotation guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-python-quickstart",
+        "title": "Python quickstart",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-azure-monitor-opentelemetry-overview",
+        "title": "Azure Monitor OpenTelemetry overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-kql-overview",
+        "title": "KQL overview",
+        "url": "https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-application-insights-data-model",
+        "title": "Application Insights data model",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-azure-architecture-center-ai-architecture",
+        "title": "Azure Architecture Center AI architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-microsoft-azure-samples",
+        "title": "Microsoft Azure samples",
+        "url": "https://github.com/Azure-Samples",
+        "publisher": "Microsoft Azure Samples",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-o-reilly-azure-ai-cloud-developer-associate-ai-200-crash-course",
+        "title": "O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course",
+        "url": "https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-udemy-ai-200-complete-course-by-luke-ginn",
+        "title": "Udemy AI-200 Complete Course by Luke Ginn",
+        "url": "https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-udemy-ai-200-exam-prep-by-kuljot-singh-bakshi",
+        "title": "Udemy AI-200 Exam Prep by Kuljot Singh Bakshi",
+        "url": "https://www.udemy.com/course/azure-ai-cloud-developer/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-udemy-ai-200-course-by-scott-duffy",
+        "title": "Udemy AI-200 course by Scott Duffy",
+        "url": "https://www.udemy.com/course/ai200-azure/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      },
+      {
+        "id": "ai-200-john-savill-azure-master-class-repository",
+        "title": "John Savill Azure Master Class repository",
+        "url": "https://github.com/johnthebrit/AzureMasterClass",
+        "publisher": "John Savill",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200",
+          "SC-200"
+        ]
+      },
+      {
+        "id": "ai-200-udemy-ai-200-practice-tests-by-scott-duffy",
+        "title": "Udemy AI-200 practice tests by Scott Duffy",
+        "url": "https://www.udemy.com/course/ai200-tests/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-200"
+        ]
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "c9b2702a6f155d53cd010171ca66a429e644c6ee18e610693ed7491f8ec701ea",
+      "guide_sections": "2 / Immutable supply chain and ACR permissions mode; labs 1 and 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "d32123fae260d5142fc846629ab7f21a660040dfd225ed7904f0231f2f1bf05d",
+      "guide_sections": "2 / ACR Tasks and source identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "5260eead6ad52500f57c120725c2818a88119952e23efd2b4441046f5ac91a85",
+      "guide_sections": "2 / App Service, sidecar configuration and runtime secrets; 5 / Rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "6bf070f9154e3a55b24fb75a47ecc758abb7e5219e6356222bd8a59ea1ac6a55",
+      "guide_sections": "2 / Environments, app/revision scope and worker activation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "c4ddaa9dd4a8c8175d0d318aab8a0a03b810ebd459308af872c0484a95297e44",
+      "guide_sections": "2 / KEDA; 6 / Example 4; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "6d9ad7ad1179b19782e51bdb08eda3833964fae676f1dfedc5b9781de74917ee",
+      "guide_sections": "2 / AKS Deployment, identity prerequisites and scale; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "fad805b82c17462a60351029d8edc5c96fabbd8d046babfc1207b76e22600f5a",
+      "guide_sections": "2 / Troubleshooting sequence; 5 / Correlated diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e3504fca6c260a7536ddd76404258abbead3715fdd427d4f1481bdc6ad4c45f7",
+      "guide_sections": "3 / Cosmos SDK, point reads and parameterized queries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "88362cf0771137cea94bd69a2a564e92e02e2f70750acad2381cd991dc063650",
+      "guide_sections": "3 / Partition, indexes, consistency and RU",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "b861f2199e93fa16d57532c1b1edef47e316d5fefae1f338e4c2b1b84797b739",
+      "guide_sections": "3 / Embedding schema and index limits; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "375de27168da2a66982b8ffeff9837e4c89e4a267e607db31a00158845b90d05",
+      "guide_sections": "3 / Change-feed implementation/mode/retry; 6 / Example 2; labs 4 and 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "ca85feb1da0667b44a80eabf859ca7800022cd5bfab7627b9e4518c674a5a1b6",
+      "guide_sections": "3 / PostgreSQL connection, identity and query",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "995cc4377f22a6ef6ea30bbad46204a45106cd3fa43363d5938493bba0b70cd3",
+      "guide_sections": "3 / Schema/types/constraints and SQL indexes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "d9e5a8be4f830619eb494fca24dacb963ea28c0a20deb356730f169092c5831a",
+      "guide_sections": "3 / Exact/ANN indexes and filtered recall; 6 / Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "480157e54dd6b2d805553bd0687734f027de6f27ff61853a5fcf0e531cc562f8",
+      "guide_sections": "3 / Compute, memory, storage and statistics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "f386d0a0a56048cb48c095904b08434afef3931d35d17b039077ce7959419c6c",
+      "guide_sections": "3 / pgvector SQL, authorization and RAG metadata filters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "7a65fcb6c7c4c8fb21ea5d45906a7700083e720f105121a5ad96a506a48052bf",
+      "guide_sections": "3 / Bounded pools and PgBouncer; 6 / Example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "302d2a0ea27847f7c4f5b16d18e8336e576a671e3feb06847537ea17246124d7",
+      "guide_sections": "3 / Redis caching, expiration, invalidation and migration; blog worksheet",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "46ecc4cae2258f281a585731b14e66d43f7901d07270d80a46192689b9997c39",
+      "guide_sections": "3 / Clustering/module/eviction and vector indexing; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "fb45a9298faa51639335b84f495bf6d1bb78c8b306ce206764fa66218b194656",
+      "guide_sections": "4 / Queues, subscriptions, locks, dedup and DLQ; lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "cfcdf8929e88a74c1667b083709bb8abeae63a84657c5ab6fbd47c2360964f97",
+      "guide_sections": "4 / Custom events, filter fixtures and destination-specific retry; lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "a0207baead2bcbabc03dd68a55d5e14fe3e5e60b4de774d2bddcb18966b8137f",
+      "guide_sections": "4 / Functions API, trigger/binding semantics and error policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "3ac510f81bbd869654af0c3d1a5eb7775339d19e6c7829e256a1d2a97592f3cb",
+      "guide_sections": "4 / Hosting/runtime/deployment and deadlines; lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "e4cb779495c489ad0372a5c2c978bf3f1cebe06dce34bbed2e41782ff8fe609d",
+      "guide_sections": "5 / Key Vault credentials, rotation/cache and slot references; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "aec8cfe044d77257c6b5706a75eef1804d76fc699bf9e96989829c258abb1773",
+      "guide_sections": "5 / App Configuration labels, sentinel and explicit refresh",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "bcee3fedbdd33b34574f13fb0da1509e60f4f3f13d2d6cff193cd8d6b894e5bb",
+      "guide_sections": "5 / OTel signals, async context, privacy and sampling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "39aa1c7d810966dd6e50bfd6402f4f335fc52cdbd71b5bc19af23cfb9af2e28a",
+      "guide_sections": "5 / KQL sample/poplulation distinction and correlated diagnosis; example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AI-200",
+        "title": "Developing AI Cloud Solutions on Azure",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+        "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+        "snapshot_path": "data\\objective-snapshots\\ai-200-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ai-200-official-status.json",
+        "previous_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+        "current_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+        "previous_status_sha256": "e836db6bf5238223a33740ffec4165b61b923a9fdb68f9e36d3de7196a000977",
+        "current_status_sha256": "e836db6bf5238223a33740ffec4165b61b923a9fdb68f9e36d3de7196a000977",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-05-05; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 75,
+    "reachable": 71,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T07:35:10.875498+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T07:35:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "d440564efdca293842bd7614833cde25487a0597b343c82b733b8f1ece37b063",
+      "text_characters": 180
+    },
+    {
+      "id": "microsoft-cosmos-db-consistency-levels",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+      "checked_at": "2026-09-28T07:35:10.876452+00:00",
+      "health": {
+        "id": "microsoft-cosmos-db-consistency-levels",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "checked_at": "2026-09-28T07:35:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "content_type": "text/html",
+        "page_title": "Consistency level choices - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "duration_signals": [
+          "15 minutes",
+          "240 Minutes"
+        ],
+        "signal_fingerprint": "82693b1e8fda105f7055427e64d374d5c127bc49bf2062d57995d95f556d43d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+      "sha256": "187e24efef6d05b064db6e67f1755948b8f753bd803f3466d8fcd905f230e978",
+      "text_characters": 21135
+    },
+    {
+      "id": "dp-420-exam-sandbox",
+      "url": "https://aka.ms/examdemo",
+      "checked_at": "2026-09-28T07:35:10.877079+00:00",
+      "health": {
+        "id": "dp-420-exam-sandbox",
+        "url": "https://aka.ms/examdemo",
+        "checked_at": "2026-09-28T07:35:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://mscertdemo.starttest.com/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Sandbox - English",
+        "canonical_url": "https://mscertdemo.starttest.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "b2c004182f5b06ff6f420c8b1d45859984cfb511ef6bf8b845364c845afa0b2d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://mscertdemo.starttest.com/",
+      "sha256": "d443e3719c8f05a0e7c36ec111f9d7587187c5eed0fe5db4712071361d45a375",
+      "text_characters": 27
+    },
+    {
+      "id": "dp-420-index-policy",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy",
+      "checked_at": "2026-09-28T07:35:11.405415+00:00",
+      "health": {
+        "id": "dp-420-index-policy",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy",
+        "checked_at": "2026-09-28T07:35:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy",
+        "content_type": "text/html",
+        "page_title": "Indexing policies - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "968ab504fcd2f5f49aa0bf56b091fea155cd45beacb89389587294f5de461a1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy",
+      "sha256": "ffab7c62af557336cce8ee0f11851c1c2a8408bdb9c9158ec2dfc20770c34cdd",
+      "text_characters": 29408
+    },
+    {
+      "id": "dp-420-change-feed-processor",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-processor",
+      "checked_at": "2026-09-28T07:35:11.709580+00:00",
+      "health": {
+        "id": "dp-420-change-feed-processor",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-processor",
+        "checked_at": "2026-09-28T07:35:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor",
+        "content_type": "text/html",
+        "page_title": "Change Feed Processor - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor",
+        "duration_signals": [],
+        "signal_fingerprint": "81f1c8158d58d83a669d768b8d402755be7d422dd2fb214c0baac6ddd390e524",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-processor",
+      "sha256": "6c00a14dd1f20b3f77d9b7af3dae5e58dd7575c6ace5b44add7d63ec24e20f9b",
+      "text_characters": 36845
+    },
+    {
+      "id": "ai-200-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+      "checked_at": "2026-09-28T07:35:12.034956+00:00",
+      "health": {
+        "id": "ai-200-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AI-200: Developing AI Cloud Solutions on Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "bf32414922c6fd997928604b73f15f0efef608d570ddf7809664b906ca961171",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200",
+      "sha256": "1d4529cb0c208599120594c1a754406b251aec68a3f815a2970a703860fcd7c9",
+      "text_characters": 7155
+    },
+    {
+      "id": "ai-200-certification-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      "checked_at": "2026-09-28T07:35:12.180129+00:00",
+      "health": {
+        "id": "ai-200-certification-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure AI Cloud Developer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "1d160868fbcb36429a49522eb54af4efd97c8689923799e5d712034df94001c9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      "sha256": "61c8160732d23e1e406383299445dbeb9228c318535c5165b0ece7ed8ae8b49b",
+      "text_characters": 3860
+    },
+    {
+      "id": "ai-200-ai-200t00-develop-ai-cloud-solutions-on-azure",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+      "checked_at": "2026-09-28T07:35:12.207452+00:00",
+      "health": {
+        "id": "ai-200-ai-200t00-develop-ai-cloud-solutions-on-azure",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+        "content_type": "text/html",
+        "page_title": "Course AI-200T00-A: Develop AI cloud solutions on Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+        "duration_signals": [],
+        "signal_fingerprint": "a7a249c217f4ebdbdbea09749b2c3dad422a6cab9fe980d1e3d579fd452e80ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+      "sha256": "3a080d45fe1d56c2decdbd2d8f5089b035f885f87cdc8928288a0cfa0e25b503",
+      "text_characters": 1843
+    },
+    {
+      "id": "ai-200-acr-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+      "checked_at": "2026-09-28T07:35:12.279778+00:00",
+      "health": {
+        "id": "ai-200-acr-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+        "content_type": "text/html",
+        "page_title": "Introduction to Azure Container Registry - Azure Container Registry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+        "duration_signals": [],
+        "signal_fingerprint": "3e2a07d6348de3d539c7d62c4bb509422620a178a052d7227544915e32c0e50c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+      "sha256": "867981ffd7f9b63f0cca697cf8506e1e660a33d578215890bf4817aee5cb73f9",
+      "text_characters": 4803
+    },
+    {
+      "id": "ai-200-authentication-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication",
+      "checked_at": "2026-09-28T07:35:12.377851+00:00",
+      "health": {
+        "id": "ai-200-authentication-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication",
+        "content_type": "text/html",
+        "page_title": "Azure Container Registry Authentication Options Explained - Azure Container Registry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication",
+        "duration_signals": [
+          "3 hours"
+        ],
+        "signal_fingerprint": "598c851acb7859aa7e7d68ccf5ea35b93531661bcf41ab1ae78d0fa9575b5e18",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication",
+      "sha256": "f59340c18fb14c564a76186e3b911d4471da0dbff2bc9058e52e36629225ac83",
+      "text_characters": 11828
+    },
+    {
+      "id": "ai-200-acr-tasks-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview",
+      "checked_at": "2026-09-28T07:35:12.542100+00:00",
+      "health": {
+        "id": "ai-200-acr-tasks-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview",
+        "content_type": "text/html",
+        "page_title": "Automate Container Builds with Azure Container Registry Tasks - Azure Container Registry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "6ced66aacb23c2080916014bceb760595c1f32e0aaeaa2313fed204f41b0553b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview",
+      "sha256": "1603a03d6f3f93b98abce6c02c356a75eaaa837c80e18d72958cfee6b7eb5c54",
+      "text_characters": 11902
+    },
+    {
+      "id": "ai-200-custom-container-guide",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container",
+      "checked_at": "2026-09-28T07:35:12.542444+00:00",
+      "health": {
+        "id": "ai-200-custom-container-guide",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container",
+        "content_type": "text/html",
+        "page_title": "Configure a Custom Container - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container",
+        "duration_signals": [],
+        "signal_fingerprint": "3cc5cc9435c35f51f1f82fa10421893f21dcd283e25062016a1dea7fa7a5e244",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container",
+      "sha256": "fca851d208f1c37ce58bd0dab1f1c8ceb6a21399e21dd0064d867f8f7d03470f",
+      "text_characters": 28646
+    },
+    {
+      "id": "ai-200-managed-identity-image-pull",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux#use-managed-identity-to-pull-image-from-azure-container-registry",
+      "checked_at": "2026-09-28T07:35:12.667322+00:00",
+      "health": {
+        "id": "ai-200-managed-identity-image-pull",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux#use-managed-identity-to-pull-image-from-azure-container-registry",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux#use-managed-identity-to-pull-image-from-azure-container-registry",
+        "content_type": "text/html",
+        "page_title": "Configure a Custom Container - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container",
+        "duration_signals": [],
+        "signal_fingerprint": "3cc5cc9435c35f51f1f82fa10421893f21dcd283e25062016a1dea7fa7a5e244",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux#use-managed-identity-to-pull-image-from-azure-container-registry",
+      "sha256": "fca851d208f1c37ce58bd0dab1f1c8ceb6a21399e21dd0064d867f8f7d03470f",
+      "text_characters": 28646
+    },
+    {
+      "id": "ai-200-revisions",
+      "url": "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+      "checked_at": "2026-09-28T07:35:12.832355+00:00",
+      "health": {
+        "id": "ai-200-revisions",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+        "content_type": "text/html",
+        "page_title": "Update and deploy changes in Azure Container Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+        "duration_signals": [],
+        "signal_fingerprint": "3a30eb47d7cb32f57f430107603ac78459242829dd5e8a054bdf6f3083e46f43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+      "sha256": "9a7d7c1e6fcbc8309c068d625cd24c91e1ffbcec20af2c660ec841267460046e",
+      "text_characters": 12994
+    },
+    {
+      "id": "ai-200-environment-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+      "checked_at": "2026-09-28T07:35:12.833073+00:00",
+      "health": {
+        "id": "ai-200-environment-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+        "content_type": "text/html",
+        "page_title": "Azure Container Apps environments",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+        "duration_signals": [],
+        "signal_fingerprint": "591500d563136f158a2faed219a760b0a877b7b32aee0490f7eb88098a609986",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+      "sha256": "2bcbc21b0682095ac736be2bd08227ffa524e27f8960f76013fda4bc4938f65d",
+      "text_characters": 6392
+    },
+    {
+      "id": "ai-200-scale-rules",
+      "url": "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+      "checked_at": "2026-09-28T07:35:12.920704+00:00",
+      "health": {
+        "id": "ai-200-scale-rules",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+        "checked_at": "2026-09-28T07:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+        "content_type": "text/html",
+        "page_title": "Scaling in Azure Container Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+        "duration_signals": [],
+        "signal_fingerprint": "85b9c83a9e25df91a5d3ea6962658bdf5fd2de0ee58da4f2e9733f31f066a870",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+      "sha256": "5e7c69c247d1e3b2225e8d375bb125238923e202bdcd9de5118da0f713f918e8",
+      "text_characters": 31053
+    },
+    {
+      "id": "ai-200-deploy-an-application-to-aks",
+      "url": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli",
+      "checked_at": "2026-09-28T07:35:13.097525+00:00",
+      "health": {
+        "id": "ai-200-deploy-an-application-to-aks",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli",
+        "content_type": "text/html",
+        "page_title": "Deploy an Azure Kubernetes Service (AKS) Cluster using Azure CLI - Azure Kubernetes Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "6f4b25f9ff03d6cf760f81a18b9cff705ceb4a4c0f7e61e3d39c15dc6f050f42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli",
+      "sha256": "ed8c2b66ab89e46403ea7d49cdadcc6ee3a7225192836cf806fa12545eaba528",
+      "text_characters": 17164
+    },
+    {
+      "id": "ai-200-aks-workload-identity",
+      "url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+      "checked_at": "2026-09-28T07:35:13.151004+00:00",
+      "health": {
+        "id": "ai-200-aks-workload-identity",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+        "content_type": "text/html",
+        "page_title": "Use a Microsoft Entra Workload ID on Azure Kubernetes Service (AKS) - Azure Kubernetes Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "ed297909c09bfcea01b00ac2069df1fe9604ddf3d8df59caccf78194c8c428dc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+      "sha256": "d52d8148eec4919e3d2c20ec123ff293ebc3ae2b64d86c329b29a9c0a9f2f3ec",
+      "text_characters": 19573
+    },
+    {
+      "id": "ai-200-container-apps-logs-and-monitoring",
+      "url": "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+      "checked_at": "2026-09-28T07:35:13.194467+00:00",
+      "health": {
+        "id": "ai-200-container-apps-logs-and-monitoring",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+        "content_type": "text/html",
+        "page_title": "Monitor logs in Azure Container Apps with Log Analytics",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+        "duration_signals": [],
+        "signal_fingerprint": "47112974bebc7141b6915b056a38fb003190bfe59e1a7f7d5daedcf9d92115ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+      "sha256": "c07b388319137ca619ff63500ec3c2b612f648fe146b1d82ca51df70204d611b",
+      "text_characters": 14780
+    },
+    {
+      "id": "ai-200-aks-monitoring-data",
+      "url": "https://learn.microsoft.com/en-us/azure/aks/monitor-aks",
+      "checked_at": "2026-09-28T07:35:13.369526+00:00",
+      "health": {
+        "id": "ai-200-aks-monitoring-data",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/monitor-aks",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/aks/monitor-aks",
+        "content_type": "text/html",
+        "page_title": "Monitor Azure Kubernetes Service (AKS) - Azure Kubernetes Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/aks/monitor-aks",
+        "duration_signals": [],
+        "signal_fingerprint": "88f7df04b98b05ca6908871dedbb112cc59945db8d6f2814ac32f96ec219c744",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/aks/monitor-aks",
+      "sha256": "68ea477a284c2d51cc98ff8090492bfd8d521c2e613907a6bcbea076ad57d221",
+      "text_characters": 53589
+    },
+    {
+      "id": "ai-200-python-sdk-examples",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/how-to-python-get-started",
+      "checked_at": "2026-09-28T07:35:13.439804+00:00",
+      "health": {
+        "id": "ai-200-python-sdk-examples",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/how-to-python-get-started",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-get-started",
+        "content_type": "text/html",
+        "page_title": "Get started using Python - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-get-started",
+        "duration_signals": [],
+        "signal_fingerprint": "08db1db6f9a7701cd6ecd9082bf84fdd20c7db2e9c047c3010e6fd9e3489cb96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-python-get-started",
+      "sha256": "9dc19cdc9a7137d7aa6f0b4761cb9132ef52bfb7de4109b7e7904ce918c5dd49",
+      "text_characters": 5873
+    },
+    {
+      "id": "ai-200-vector-search-in-cosmos-db-for-nosql",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search",
+      "checked_at": "2026-09-28T07:35:13.549533+00:00",
+      "health": {
+        "id": "ai-200-vector-search-in-cosmos-db-for-nosql",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/vector-search",
+        "content_type": "text/html",
+        "page_title": "Integrated Vector Store - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/vector-search",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "2593dec2a6ffcce0fd6cdd38eb730048a03e8d6269e91f9c811af688040d1c41",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/vector-search",
+      "sha256": "8f1f476fbab11f68273179bd0fa58ea282aa9b2df2fc4a8dfbf38fac70b5d193",
+      "text_characters": 15759
+    },
+    {
+      "id": "ai-200-connect-with-python",
+      "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/connect-python",
+      "checked_at": "2026-09-28T07:35:13.695217+00:00",
+      "health": {
+        "id": "ai-200-connect-with-python",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/connect-python",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-python",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Use Python to Connect and Query Data in Azure Database for PostgreSQL Flexible Server - Azure Database for PostgreSQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-python",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "cd88d4fccf9e00d9c43a5bca6fab7ea59d103b3c53fb8210654ff28cfa719f8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/connectivity/connect-python",
+      "sha256": "0bff30e2188bb615aeccd8b7b207dd1d16255581bff2a64b4a574dba65b4c0d6",
+      "text_characters": 14379
+    },
+    {
+      "id": "ai-200-service-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview",
+      "checked_at": "2026-09-28T07:35:13.876006+00:00",
+      "health": {
+        "id": "ai-200-service-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview",
+        "checked_at": "2026-09-28T07:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/overview",
+        "content_type": "text/html",
+        "page_title": "What Is Azure Database for PostgreSQL flexible server? - Azure Database for PostgreSQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/postgresql/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "f78a53d6b619f30dcd89b60dbc1cd3b17de5d0e8f5a6470a084c8701bf7e3320",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/overview",
+      "sha256": "79598851b1dc4cfb2cf3fb18470b26bca1fb90bae964c5bb0c7e232cf8793da6",
+      "text_characters": 12424
+    },
+    {
+      "id": "ai-200-pgvector-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-use-pgvector",
+      "checked_at": "2026-09-28T07:35:14.113456+00:00",
+      "health": {
+        "id": "ai-200-pgvector-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-use-pgvector",
+        "checked_at": "2026-09-28T07:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector",
+        "content_type": "text/html",
+        "page_title": "Vector Search in Azure Database for PostgreSQL Flexible Server - Azure Database for PostgreSQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector",
+        "duration_signals": [],
+        "signal_fingerprint": "404bf2b57296b6ada85e7986d85b72f33f090548da355b0133a01bc2759c9edc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/extensions/how-to-use-pgvector",
+      "sha256": "0cab841d908be94ddd860d317b9b968799adc4fdca0cf5aea0e333fe2c50c3c9",
+      "text_characters": 8408
+    },
+    {
+      "id": "ai-200-server-parameters",
+      "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-server-parameters",
+      "checked_at": "2026-09-28T07:35:14.267008+00:00",
+      "health": {
+        "id": "ai-200-server-parameters",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-server-parameters",
+        "checked_at": "2026-09-28T07:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/parameters/concepts-parameters",
+        "content_type": "text/html",
+        "page_title": "Parameters in Azure Database for PostgreSQL Flexible Server - Azure Database for PostgreSQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/postgresql/parameters/concepts-parameters",
+        "duration_signals": [],
+        "signal_fingerprint": "48e8779724234138d68325240b66dc0c0af929b49c7cee8a5c0bd1c7cc822f8d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/parameters/concepts-parameters",
+      "sha256": "3e642a19e7368456a9c954c2cfba0b000eeac3d136982962c06f0b85d3ade8fa",
+      "text_characters": 122929
+    },
+    {
+      "id": "ai-200-pgbouncer",
+      "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer",
+      "checked_at": "2026-09-28T07:35:14.348633+00:00",
+      "health": {
+        "id": "ai-200-pgbouncer",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer",
+        "checked_at": "2026-09-28T07:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-pgbouncer",
+        "content_type": "text/html",
+        "page_title": "PgBouncer in Azure Database for PostgreSQL Flexible Server - Azure Database for PostgreSQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-pgbouncer",
+        "duration_signals": [],
+        "signal_fingerprint": "f8a9f8396c9996158d7ef2a591f962495641d136998a7bbfa8df8326827eadb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/connectivity/concepts-pgbouncer",
+      "sha256": "d231fc64813f67c97ad1fc4ad534c74ee74218acf23878458f05fac6d98e13e7",
+      "text_characters": 15321
+    },
+    {
+      "id": "ai-200-azure-managed-redis-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/overview",
+      "checked_at": "2026-09-28T07:35:14.598690+00:00",
+      "health": {
+        "id": "ai-200-azure-managed-redis-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/overview",
+        "checked_at": "2026-09-28T07:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/redis/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Managed Redis? - Azure Managed Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/redis/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "5061ed84aa7eacd789c3bc41838a3aa64a77182d39468984ee4b2e54c63acf03",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/redis/overview",
+      "sha256": "3054fc3288c349bdcf93a010885ed7b1b7100a0d657b30c1ef06469e98511a25",
+      "text_characters": 11592
+    },
+    {
+      "id": "ai-200-python-client-connection-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/python-get-started",
+      "checked_at": "2026-09-28T07:35:14.844961+00:00",
+      "health": {
+        "id": "ai-200-python-client-connection-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/python-get-started",
+        "checked_at": "2026-09-28T07:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/redis/python-get-started",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Create a Python app with Azure Managed Redis - Azure Managed Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/redis/python-get-started",
+        "duration_signals": [],
+        "signal_fingerprint": "37596820c8810eda845267617d95f6a4aedfd434ed5191105c27d394433ab5d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/redis/python-get-started",
+      "sha256": "e7e70353cb89e2fea1da972f55e7b4131fc4caa64c051a29fad06bc07e004451",
+      "text_characters": 4946
+    },
+    {
+      "id": "ai-200-azure-cache-for-redis-retirement-faq",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+      "checked_at": "2026-09-28T07:35:14.948800+00:00",
+      "health": {
+        "id": "ai-200-azure-cache-for-redis-retirement-faq",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+        "checked_at": "2026-09-28T07:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+        "content_type": "text/html",
+        "page_title": "Frequently asked questions (FAQ) on the retirement of Azure Cache for Redis - Azure Cache for Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+        "duration_signals": [],
+        "signal_fingerprint": "bdee5aaa2371edb09765aba90f4341bc48eade09c1b3ff347cf0abe825635ecd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+      "sha256": "2d883866d1ae2ba059c0f953abc51272b8a8b973953d91967b1de436c4f77a93",
+      "text_characters": 11098
+    },
+    {
+      "id": "ai-200-vector-search-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/overview#vector-search",
+      "checked_at": "2026-09-28T07:35:15.181715+00:00",
+      "health": {
+        "id": "ai-200-vector-search-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/overview#vector-search",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/redis/overview#vector-search",
+        "content_type": "text/html",
+        "page_title": "What is Azure Managed Redis? - Azure Managed Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/redis/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "5061ed84aa7eacd789c3bc41838a3aa64a77182d39468984ee4b2e54c63acf03",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/redis/overview#vector-search",
+      "sha256": "3054fc3288c349bdcf93a010885ed7b1b7100a0d657b30c1ef06469e98511a25",
+      "text_characters": 11592
+    },
+    {
+      "id": "ai-200-service-bus-messaging-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+      "checked_at": "2026-09-28T07:35:15.245818+00:00",
+      "health": {
+        "id": "ai-200-service-bus-messaging-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+        "content_type": "text/html",
+        "page_title": "Introduction to Azure Service Bus Messaging - Azure Service Bus",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "5e7614fa59a5bb81a37177b6792ef2ddf669871b357f357e42d8f9306495bcd7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+      "sha256": "08b132c9ecca22c7f2ebff9367fa3a4f9b133b9118a1de5596eac6ab95f61e4d",
+      "text_characters": 12799
+    },
+    {
+      "id": "ai-200-python-sdk-quickstart",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-queues",
+      "checked_at": "2026-09-28T07:35:15.330070+00:00",
+      "health": {
+        "id": "ai-200-python-sdk-quickstart",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-queues",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-queues",
+        "content_type": "text/html",
+        "page_title": "Get Started with Azure Service Bus Queues (Python) - Azure Service Bus",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-queues",
+        "duration_signals": [],
+        "signal_fingerprint": "cdeb66858fed2471e2290708ce364bfa52235c80ff2511546d288caa65a92d76",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-queues",
+      "sha256": "089964f953fc7472bb395e043a27869798eee4d810f23c700fa599c32b3c2fa0",
+      "text_characters": 20161
+    },
+    {
+      "id": "ai-200-dead-letter-queues",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues",
+      "checked_at": "2026-09-28T07:35:15.448589+00:00",
+      "health": {
+        "id": "ai-200-dead-letter-queues",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues",
+        "content_type": "text/html",
+        "page_title": "Service Bus Dead-Letter Queues - Azure Service Bus",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "e3eb74bc5e4a805317a78d04a0ee5655efe1407945c53400689f0f8aee021dcf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues",
+      "sha256": "dae1e2e73f1e5a483beac3a1b705d7f18499cae605936caece2c583e0b509ea0",
+      "text_characters": 15924
+    },
+    {
+      "id": "ai-200-event-grid-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/event-grid/concepts",
+      "checked_at": "2026-09-28T07:35:15.530036+00:00",
+      "health": {
+        "id": "ai-200-event-grid-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/event-grid/concepts",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/event-grid/concepts",
+        "content_type": "text/html",
+        "page_title": "Concepts (push delivery) in Event Grid basic - Azure Event Grid",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/event-grid/concepts",
+        "duration_signals": [],
+        "signal_fingerprint": "7047e3fb253ccf8b80e7d97f2a0d530ab74596519c1dfefa2bc6a116fdedd761",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/event-grid/concepts",
+      "sha256": "3cb9d0e8aceadbd587fcf49a9e1592f54aa3497fe4bda79dad8da785e4b735d5",
+      "text_characters": 9720
+    },
+    {
+      "id": "ai-200-custom-events",
+      "url": "https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart",
+      "checked_at": "2026-09-28T07:35:15.608812+00:00",
+      "health": {
+        "id": "ai-200-custom-events",
+        "url": "https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Send custom events with Event Grid and Azure CLI - Azure Event Grid",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart",
+        "duration_signals": [],
+        "signal_fingerprint": "d87901e09ff8a6a809574f5c6f12b7eb9be29b5a7e181e97b6b8e39c0cf33f82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart",
+      "sha256": "1ab7b913c6ef82b2aaa9ae36cea472bc93f74f120ea28c9c3ab854cc797ad5f8",
+      "text_characters": 9094
+    },
+    {
+      "id": "ai-200-delivery-and-retry",
+      "url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+      "checked_at": "2026-09-28T07:35:15.789798+00:00",
+      "health": {
+        "id": "ai-200-delivery-and-retry",
+        "url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+        "content_type": "text/html",
+        "page_title": "Azure Event Grid Delivery and Retry Explained - Azure Event Grid",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+        "duration_signals": [
+          "1 hour",
+          "1 minute 5 minutes",
+          "10 minutes",
+          "10 minutes 30 minutes",
+          "12 hours",
+          "1440 minutes",
+          "2 minutes",
+          "24 hours",
+          "3 hours",
+          "3 minutes",
+          "30 minutes",
+          "5 minutes",
+          "6 hours"
+        ],
+        "signal_fingerprint": "2acc220af3738a512fae1b791588bbaee5106bb45868625822c668c8c5c93621",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+      "sha256": "0ebb8a05863c64d13d87b83426395e28e80861c2ce4c74aa90f8766c6632c654",
+      "text_characters": 18890
+    },
+    {
+      "id": "ai-200-functions-python-developer-guide",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python",
+      "checked_at": "2026-09-28T07:35:15.869796+00:00",
+      "health": {
+        "id": "ai-200-functions-python-developer-guide",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python",
+        "content_type": "text/html",
+        "page_title": "Python developer reference for Azure Functions",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "b33fb5b59f4cec597a0e026390206c5115287f7214736cdbf46b2787958f8d1a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python",
+      "sha256": "2e5fa11c48e667de668fb40a350fa396c02a88d8a2072801eab4452cb3277e8b",
+      "text_characters": 38845
+    },
+    {
+      "id": "ai-200-deployment-technologies",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies",
+      "checked_at": "2026-09-28T07:35:15.890003+00:00",
+      "health": {
+        "id": "ai-200-deployment-technologies",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies",
+        "checked_at": "2026-09-28T07:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies",
+        "content_type": "text/html",
+        "page_title": "Deployment technologies in Azure Functions",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies",
+        "duration_signals": [],
+        "signal_fingerprint": "e6c4d02b8598ea773daea2f586503bc506cd7657ffb72e93be90fdad9fffe947",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-deployment-technologies",
+      "sha256": "f0370df2f931be5b75b7a2291596b2682dd7fd4889e64de4016212f11aa6bb0f",
+      "text_characters": 25066
+    },
+    {
+      "id": "ai-200-functions-best-practices",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices",
+      "checked_at": "2026-09-28T07:35:16.052439+00:00",
+      "health": {
+        "id": "ai-200-functions-best-practices",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices",
+        "content_type": "text/html",
+        "page_title": "Azure Functions best practices",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices",
+        "duration_signals": [],
+        "signal_fingerprint": "479a4e6c615889bbf39c4deb85a988f3606f30c287d0f7e61228cf5a5e4202a4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-best-practices",
+      "sha256": "437fe075b9bb546a3e4a52aa6d3cf588446816285110869c6e887afb1ed65cb7",
+      "text_characters": 13980
+    },
+    {
+      "id": "ai-200-key-vault-secrets-quickstart-for-python",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python",
+      "checked_at": "2026-09-28T07:35:16.179614+00:00",
+      "health": {
+        "id": "ai-200-key-vault-secrets-quickstart-for-python",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python",
+        "content_type": "text/html",
+        "page_title": "Quickstart – Azure Key Vault Python client library – manage secrets",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python",
+        "duration_signals": [],
+        "signal_fingerprint": "f266fc57df3188b8ac8ee6c81644fed80a7ac8b91c71886f5196713bf7f5e109",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python",
+      "sha256": "a7953cbf0ebeedf1cc81259c3c0e9c1b4ba42c6d31b8c48b8a4d13f43b29b3f7",
+      "text_characters": 9350
+    },
+    {
+      "id": "ai-200-key-vault-security-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/security-features",
+      "checked_at": "2026-09-28T07:35:16.221057+00:00",
+      "health": {
+        "id": "ai-200-key-vault-security-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/security-features",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault",
+        "content_type": "text/html",
+        "page_title": "Secure your Azure Key Vault",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault",
+        "duration_signals": [],
+        "signal_fingerprint": "c6f74afd2757e61f77d7813f7a09ed38998b235ef439795633e751766c7416e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/secure-key-vault",
+      "sha256": "8b885272a8fb1d7f1c6ed972e9bf516cc5136dcceb7ccb16332f86b96abdd1c7",
+      "text_characters": 13664
+    },
+    {
+      "id": "ai-200-secret-rotation-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation",
+      "checked_at": "2026-09-28T07:35:16.298689+00:00",
+      "health": {
+        "id": "ai-200-secret-rotation-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation",
+        "content_type": "text/html",
+        "page_title": "Rotation tutorial for resources with one set of authentication credentials stored in Azure Key Vault",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "b34b4179a1d2c869e54cd95ace7b3a2e37d64f41865fe1d9aba612efb349b813",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation",
+      "sha256": "7f8c0b69e12143fd9a8b83409301811bf3457037683419123564351ba6d963cf",
+      "text_characters": 12563
+    },
+    {
+      "id": "ai-200-python-quickstart",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider",
+      "checked_at": "2026-09-28T07:35:16.452584+00:00",
+      "health": {
+        "id": "ai-200-python-quickstart",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider",
+        "content_type": "text/html",
+        "page_title": "Quickstart for using Azure App Configuration with Python apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider",
+        "duration_signals": [],
+        "signal_fingerprint": "831e241e153aaa1aa91c8c6dd5bb4b41f3b35c7bbfcd4451c94f23372fdf0971",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider",
+      "sha256": "7366cf475f7aca2493bd401d77847812bfb35761dbae26a6456062f9dfbd37c1",
+      "text_characters": 9462
+    },
+    {
+      "id": "ai-200-azure-monitor-opentelemetry-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview",
+      "checked_at": "2026-09-28T07:35:16.560353+00:00",
+      "health": {
+        "id": "ai-200-azure-monitor-opentelemetry-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview#getting-started",
+        "content_type": "text/html",
+        "page_title": "Application Insights OpenTelemetry observability overview - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "0a597fb0661c136f5243da831874e26ff508369bfbcab358855a5fb940c10c60",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview#getting-started",
+      "sha256": "911238c00c583128e9266c213bba96d414267b7d3028b8ee84b67b1bb9247fb9",
+      "text_characters": 11188
+    },
+    {
+      "id": "ai-200-kql-overview",
+      "url": "https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric",
+      "checked_at": "2026-09-28T07:35:16.725013+00:00",
+      "health": {
+        "id": "ai-200-kql-overview",
+        "url": "https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric",
+        "content_type": "text/html",
+        "page_title": "Kusto Query Language (KQL) overview - Kusto",
+        "canonical_url": "https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric",
+        "duration_signals": [],
+        "signal_fingerprint": "c846f6a3402bf25b75b9807deffbead64cc6ffec2ec7f2dd2ccb620193653aa5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric",
+      "sha256": "6fef803ec0d5eab80e69a9828743655b27cc9376016f15fe3b5c16e46c7e0d77",
+      "text_characters": 8592
+    },
+    {
+      "id": "ai-200-application-insights-data-model",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete",
+      "checked_at": "2026-09-28T07:35:16.735381+00:00",
+      "health": {
+        "id": "ai-200-application-insights-data-model",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete",
+        "checked_at": "2026-09-28T07:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete",
+        "content_type": "text/html",
+        "page_title": "Application Insights telemetry data model - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete",
+        "duration_signals": [],
+        "signal_fingerprint": "8096f6a03df9ae37f147c7998537646e9f4be9499b4d3dd4f2b46280b5529251",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete",
+      "sha256": "7ddc01395faa863a89aadf95ded9a8f09882c478fbd9a2d5bffd99aad665f830",
+      "text_characters": 36179
+    },
+    {
+      "id": "ai-200-azure-architecture-center-ai-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/",
+      "checked_at": "2026-09-28T07:35:17.001497+00:00",
+      "health": {
+        "id": "ai-200-azure-architecture-center-ai-architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ai-get-started",
+        "content_type": "text/html",
+        "page_title": "Get Started with AI Architecture Design - Azure Architecture Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ai-get-started",
+        "duration_signals": [],
+        "signal_fingerprint": "5a6631edf8cd1abf5518a091e69abda19ca36a82a4912a36217a8a203035d23e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ai-get-started",
+      "sha256": "b671ba07a713e1562c0a12ade098492a17606b3ddbcd64c0842b33be4932a3d8",
+      "text_characters": 26367
+    },
+    {
+      "id": "ai-200-microsoft-azure-samples",
+      "url": "https://github.com/Azure-Samples",
+      "checked_at": "2026-09-28T07:35:17.044908+00:00",
+      "health": {
+        "id": "ai-200-microsoft-azure-samples",
+        "url": "https://github.com/Azure-Samples",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/Azure-Samples",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Azure Samples",
+        "canonical_url": "https://github.com/Azure-Samples",
+        "duration_signals": [],
+        "signal_fingerprint": "b005a5693eaa0322947abd99d078637a83ee4ee0b020415fbdadda9c482cc729",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/Azure-Samples",
+      "sha256": "ae101edbb95e2acf939c164feaa53f56bc1fec04029548b0a5ad8a0d8f9519d7",
+      "text_characters": 4920
+    },
+    {
+      "id": "ai-200-o-reilly-azure-ai-cloud-developer-associate-ai-200-crash-course",
+      "url": "https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/",
+      "checked_at": "2026-09-28T07:35:17.126162+00:00",
+      "health": {
+        "id": "ai-200-o-reilly-azure-ai-cloud-developer-associate-ai-200-crash-course",
+        "url": "https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Azure AI Cloud Developer Associate (AI-200) Crash Course",
+        "canonical_url": "https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/",
+        "duration_signals": [
+          "15 minutes",
+          "20 minutes",
+          "25 minutes",
+          "30 minutes",
+          "35 minutes",
+          "5 minutes",
+          "PT4H"
+        ],
+        "signal_fingerprint": "8f2114b6c416744eceb383fa79e6d06bd7ccfee2638f9cfaac1bb093cf9bffdd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/",
+      "sha256": "82e14466c6e8cdc0351a5fedd05d97dc70b742ca2b78a307f0beb919367f648a",
+      "text_characters": 5606
+    },
+    {
+      "id": "ai-200-udemy-ai-200-complete-course-by-luke-ginn",
+      "url": "https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/",
+      "checked_at": "2026-09-28T07:35:17.652854+00:00",
+      "health": {
+        "id": "ai-200-udemy-ai-200-complete-course-by-luke-ginn",
+        "url": "https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai-200-udemy-ai-200-exam-prep-by-kuljot-singh-bakshi",
+      "url": "https://www.udemy.com/course/azure-ai-cloud-developer/",
+      "checked_at": "2026-09-28T07:35:17.773841+00:00",
+      "health": {
+        "id": "ai-200-udemy-ai-200-exam-prep-by-kuljot-singh-bakshi",
+        "url": "https://www.udemy.com/course/azure-ai-cloud-developer/",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/azure-ai-cloud-developer/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai-200-udemy-ai-200-course-by-scott-duffy",
+      "url": "https://www.udemy.com/course/ai200-azure/",
+      "checked_at": "2026-09-28T07:35:17.879379+00:00",
+      "health": {
+        "id": "ai-200-udemy-ai-200-course-by-scott-duffy",
+        "url": "https://www.udemy.com/course/ai200-azure/",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai200-azure/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai-200-john-savill-azure-master-class-repository",
+      "url": "https://github.com/johnthebrit/AzureMasterClass",
+      "checked_at": "2026-09-28T07:35:17.893360+00:00",
+      "health": {
+        "id": "ai-200-john-savill-azure-master-class-repository",
+        "url": "https://github.com/johnthebrit/AzureMasterClass",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/AzureMasterClass",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/AzureMasterClass: Repo for the Azure Master Class",
+        "canonical_url": "https://github.com/johnthebrit/AzureMasterClass",
+        "duration_signals": [],
+        "signal_fingerprint": "b67a304455d9157ff78f2d75f017d33f26aea48265c705dbfc659bd905dece08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/AzureMasterClass",
+      "sha256": "1f561f1fddf5f13a692bf61c4f30d9ab5f23246d5f5d6988bdd208b3e392541f",
+      "text_characters": 4999
+    },
+    {
+      "id": "ai-200-udemy-ai-200-practice-tests-by-scott-duffy",
+      "url": "https://www.udemy.com/course/ai200-tests/",
+      "checked_at": "2026-09-28T07:35:17.962057+00:00",
+      "health": {
+        "id": "ai-200-udemy-ai-200-practice-tests-by-scott-duffy",
+        "url": "https://www.udemy.com/course/ai200-tests/",
+        "checked_at": "2026-09-28T07:35:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai200-tests/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai200-acr-abac",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+      "checked_at": "2026-09-28T07:38:35.605818+00:00",
+      "health": {
+        "id": "ai200-acr-abac",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+        "checked_at": "2026-09-28T07:38:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+        "content_type": "text/html",
+        "page_title": "Azure attribute-based access control (Azure ABAC) repository permissions in Azure Container Registry - Azure Container Registry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+        "duration_signals": [],
+        "signal_fingerprint": "211d73f8ca9562605ca2a5d33fc64c7d14055c729be6bf841b694205ba221648",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+      "sha256": "6d7741c498ca7744a66883781a92f8e56135836cd2ff6ad44e47d3b71f638650",
+      "text_characters": 37431
+    },
+    {
+      "id": "ai200-sidecars",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+      "checked_at": "2026-09-28T07:38:35.607048+00:00",
+      "health": {
+        "id": "ai200-sidecars",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+        "checked_at": "2026-09-28T07:38:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+        "content_type": "text/html",
+        "page_title": "Configure sidecars - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+        "duration_signals": [],
+        "signal_fingerprint": "23eb9f910e4608c3048bfd80cdec03e9566df652fc1da7847ee1cf54108d0092",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+      "sha256": "155bc9f5662d64ca9253e715c6da01bea5f568bfcad798e8a13978e8ea8068ff",
+      "text_characters": 8341
+    },
+    {
+      "id": "ai200-kv-reference",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+      "checked_at": "2026-09-28T07:38:35.607746+00:00",
+      "health": {
+        "id": "ai200-kv-reference",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+        "checked_at": "2026-09-28T07:38:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+        "content_type": "text/html",
+        "page_title": "Use Key Vault References as App Settings - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "f0f3f23192877dbf3e85be7cce76c1e92f7f6c316a83f2a490e7409b041b04f1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+      "sha256": "c7b69f67a7a2885206e3d8be0ea7d5d5e3d3c69abf1a115fd8ee2d5d2597b381",
+      "text_characters": 15264
+    },
+    {
+      "id": "ai200-feed-read",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed",
+      "checked_at": "2026-09-28T07:38:36.090162+00:00",
+      "health": {
+        "id": "ai200-feed-read",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed",
+        "checked_at": "2026-09-28T07:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed",
+        "content_type": "text/html",
+        "page_title": "Read Change Feed - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed",
+        "duration_signals": [],
+        "signal_fingerprint": "e26fcffd7530ee1b300c716deb5a36fdb197040fb2847e27946ee1d4a4b32b3f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed",
+      "sha256": "c684b67d173291bbe7e4ddd2627cacf7c8798338483a2a59d8a72f1b85695fbc",
+      "text_characters": 8546
+    },
+    {
+      "id": "ai200-feed-python",
+      "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+      "checked_at": "2026-09-28T07:38:36.100945+00:00",
+      "health": {
+        "id": "ai200-feed-python",
+        "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+        "checked_at": "2026-09-28T07:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+        "content_type": "text/html",
+        "page_title": "Azure Cosmos DB SQL API client library for Python",
+        "canonical_url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "29922057cbaaab380eb30ce2281aeae4efac10ca17669338cfcc87c8a31c4c2d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+      "sha256": "5c3e9af249dd2641b230b1b026a65f55e438c318a2943eb52ed5c076eaf913af",
+      "text_characters": 57154
+    },
+    {
+      "id": "ai200-pgvector",
+      "url": "https://github.com/pgvector/pgvector",
+      "checked_at": "2026-09-28T07:38:36.126382+00:00",
+      "health": {
+        "id": "ai200-pgvector",
+        "url": "https://github.com/pgvector/pgvector",
+        "checked_at": "2026-09-28T07:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/pgvector/pgvector",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - pgvector/pgvector: Open-source vector similarity search for Postgres",
+        "canonical_url": "https://github.com/pgvector/pgvector",
+        "duration_signals": [],
+        "signal_fingerprint": "d9e884260f70433e14c8e43d18753d794a4807810248071506602f8c50fa7170",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/pgvector/pgvector",
+      "sha256": "249539a11034a18e813c5184421cbd8e44bb04d04eaef2eaf371bd79e4a40fb7",
+      "text_characters": 33808
+    },
+    {
+      "id": "ai200-redis-cluster",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+      "checked_at": "2026-09-28T07:40:11.721848+00:00",
+      "health": {
+        "id": "ai200-redis-cluster",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+        "checked_at": "2026-09-28T07:40:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+        "content_type": "text/html",
+        "page_title": "Azure Managed Redis Architecture - Azure Managed Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+        "duration_signals": [],
+        "signal_fingerprint": "dc9d58c1431dc203e2d38104d1ebd9cc240c058142b413128effb2c05d8d90e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+      "sha256": "8b8fc831ab491667450c1e60ae2ba909945b85d801e816c974224c58bbc7cdb5",
+      "text_characters": 14815
+    },
+    {
+      "id": "ai200-bus-lock",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+      "checked_at": "2026-09-28T07:38:36.416189+00:00",
+      "health": {
+        "id": "ai200-bus-lock",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+        "checked_at": "2026-09-28T07:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+        "content_type": "text/html",
+        "page_title": "Message Transfers, Locks, and Settlement - Azure Service Bus",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+        "duration_signals": [
+          "1 minute",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "cac598bed0c4140d5cc80c9bab81583ef7acbbab0769660ef2665e71e9cee87d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+      "sha256": "87f318d35b392d10a4bd8aceb30239aa5990cbe65ef904896ddf54e2ce135c1c",
+      "text_characters": 14253
+    },
+    {
+      "id": "ai200-bus-dedup",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+      "checked_at": "2026-09-28T07:38:36.516099+00:00",
+      "health": {
+        "id": "ai200-bus-dedup",
+        "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+        "checked_at": "2026-09-28T07:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+        "content_type": "text/html",
+        "page_title": "Azure Service Bus duplicate message detection - Azure Service Bus",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "86e05362d9f7dd626987ed7e266dade2af42598fb41457ebdd730488616e6043",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+      "sha256": "ff381c963c4d0b2334bb55f7242b992611283a3c4619f76fbc212092ebcba28f",
+      "text_characters": 6018
+    },
+    {
+      "id": "ai200-function-scale",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+      "checked_at": "2026-09-28T07:38:36.697741+00:00",
+      "health": {
+        "id": "ai200-function-scale",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+        "checked_at": "2026-09-28T07:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+        "content_type": "text/html",
+        "page_title": "Azure Functions Scale and Hosting",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+        "duration_signals": [
+          "10 minutes",
+          "24 hours",
+          "60 minutes"
+        ],
+        "signal_fingerprint": "ae5ad9663b9554a38a0bb86783c54ffbd5b487ba18777b44ae590fffac8cf469",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+      "sha256": "37fda9c8b5e89f0023b1cc11e53b02981469819a67c6355c6e33766093751ce5",
+      "text_characters": 21203
+    },
+    {
+      "id": "ai200-config-refresh",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+      "checked_at": "2026-09-28T07:38:36.796910+00:00",
+      "health": {
+        "id": "ai200-config-refresh",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+        "checked_at": "2026-09-28T07:38:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+        "content_type": "text/html",
+        "page_title": "Use dynamic configuration in Python - Azure App Configuration",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+        "duration_signals": [],
+        "signal_fingerprint": "bd642cb3a9849d55ee2360094a2a66af563ef5983ff7cffa7f461d3951c0e4d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+      "sha256": "3ae4005c9c6527f91b7d078fbea46f192386630df76d07fcc4b8bc10cc32c7f2",
+      "text_characters": 8131
+    },
+    {
+      "id": "ai200-sampling",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+      "checked_at": "2026-09-28T07:38:37.017850+00:00",
+      "health": {
+        "id": "ai200-sampling",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+        "checked_at": "2026-09-28T07:38:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+        "content_type": "text/html",
+        "page_title": "Sampling in Azure Application Insights with OpenTelemetry - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+        "duration_signals": [],
+        "signal_fingerprint": "b5854185a1c5b3536f0e45ea1f05c76cd6ce3473beca4531d1b79ce350504c87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+      "sha256": "8cbbc06b165e9546da650b11c2b8c69cedddf0ef641d3092fb572e0a4874dd56",
+      "text_characters": 5478
+    },
+    {
+      "id": "ai200-redis-blog",
+      "url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+      "checked_at": "2026-09-28T07:38:37.125426+00:00",
+      "health": {
+        "id": "ai200-redis-blog",
+        "url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+        "checked_at": "2026-09-28T07:38:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "From Redis pressure to a healthier service | Power Platform Developer Blog",
+        "canonical_url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+        "duration_signals": [],
+        "signal_fingerprint": "13e8cdc45d1d3fbd6a77ff833d7b3acd1ab9660d1a0694e71a3706e174d500b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+      "sha256": "ba0a16c8a16b54b1382fa3be855c2e1e7a29247da4fabcaa4ec76996126b4761",
+      "text_characters": 14122
+    },
+    {
+      "id": "ai200-tcp-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azurearchitectureblog/blue%E2%80%91green-strategy-for-always%E2%80%91on-tcp-workloads-on-azure-container-apps/4507894",
+      "checked_at": "2026-09-28T07:38:37.297877+00:00",
+      "health": {
+        "id": "ai200-tcp-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azurearchitectureblog/blue%E2%80%91green-strategy-for-always%E2%80%91on-tcp-workloads-on-azure-container-apps/4507894",
+        "checked_at": "2026-09-28T07:38:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azurearchitectureblog/blue%E2%80%91green-strategy-for-always%E2%80%91on-tcp-workloads-on-azure-container-apps/4507894",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Blue‑Green Strategy for Always‑On TCP Workloads on Azure Container Apps | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azurearchitectureblog/blue%e2%80%91green-strategy-for-always%e2%80%91on-tcp-workloads-on-azure-container-apps/4507894",
+        "duration_signals": [],
+        "signal_fingerprint": "c6a098e2f3376f5e692a59cd9b0a05866829a143965969ee9da6f14e7b458d59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azurearchitectureblog/blue%E2%80%91green-strategy-for-always%E2%80%91on-tcp-workloads-on-azure-container-apps/4507894",
+      "sha256": "9a814195839d75c034fc1886ad3d863d350649105aa38c3eb3358f9062dd0e52",
+      "text_characters": 97
+    },
+    {
+      "id": "dp420-change-feed-modes",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes",
+      "checked_at": "2026-09-28T07:40:11.720121+00:00",
+      "health": {
+        "id": "dp420-change-feed-modes",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes",
+        "checked_at": "2026-09-28T07:40:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes",
+        "content_type": "text/html",
+        "page_title": "Change Feed Modes - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "2edbc6846496788123579a710812db6b9bb47cd63c0f8565e455418cef67fa29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed-modes",
+      "sha256": "9f4ab9f7a37f1d6ed129ca5f706529a613c5e3117180ceadb107bb28336e0415",
+      "text_characters": 12246
+    },
+    {
+      "id": "ai200-redis-create",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "checked_at": "2026-09-28T07:40:11.722570+00:00",
+      "health": {
+        "id": "ai200-redis-create",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+        "checked_at": "2026-09-28T07:40:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Create a Managed Redis cache - Azure Managed Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+        "duration_signals": [],
+        "signal_fingerprint": "ce82b4d90c4092ab5149ae42fe3b0edb2355f37efef88ce4a32a32fc86ef3889",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "sha256": "08b3ede33fedf569a52dbeaaca1a42d3a3b2a99d9b1d783164ee59b61cfa6d68",
+      "text_characters": 7025
+    },
+    {
+      "id": "ai200-redis-update",
+      "url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+      "checked_at": "2026-09-28T07:40:12.222649+00:00",
+      "health": {
+        "id": "ai200-redis-update",
+        "url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+        "checked_at": "2026-09-28T07:40:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+        "content_type": "text/html",
+        "page_title": "Databases - Update - REST API (Azure Redis Cache)",
+        "canonical_url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+        "duration_signals": [],
+        "signal_fingerprint": "9b1e5fbdefca5d9419a27df517cc39cff9ddc387c819e80caec77ae81cb1df63",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+      "sha256": "c9aeca4d441a7d8889545a80d64422f7e1ae5ad3140614528efc4eae1a95c25d",
+      "text_characters": 35325
+    },
+    {
+      "id": "ai200-functions-retry",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages",
+      "checked_at": "2026-09-28T07:46:49.998655+00:00",
+      "health": {
+        "id": "ai200-functions-retry",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages",
+        "checked_at": "2026-09-28T07:46:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages",
+        "content_type": "text/html",
+        "page_title": "Azure Functions Error Handling and Retry Guidance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages",
+        "duration_signals": [],
+        "signal_fingerprint": "5ea281282c789c5e297ed66c80f1ead8af6c12d72b16d2f0cf9317fa1dcebc04",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages",
+      "sha256": "9aa6981abd7034470bc8fd3e954633b359cd2c3400fc0a39e6a6355a129e5a57",
+      "text_characters": 20279
+    },
+    {
+      "id": "ai200-trigger-errors",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+      "checked_at": "2026-09-28T07:46:49.999177+00:00",
+      "health": {
+        "id": "ai200-trigger-errors",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+        "checked_at": "2026-09-28T07:46:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+        "content_type": "text/html",
+        "page_title": "Troubleshoot issues with the Azure Functions trigger - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+        "duration_signals": [],
+        "signal_fingerprint": "21d76e89982e33b33ed743a20bcd73884221cb52f5d1aed8382a3f371035b8a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+      "sha256": "56bcc8add4f771f890785bc045a4bfdcaa46155bee9c16170d4449bafa542bf0",
+      "text_characters": 14213
+    },
+    {
+      "id": "ai200-lock-error",
+      "url": "https://learn.microsoft.com/en-us/python/api/azure-servicebus/azure.servicebus.exceptions.messagelocklosterror?view=azure-python",
+      "checked_at": "2026-09-28T07:46:49.999532+00:00",
+      "health": {
+        "id": "ai200-lock-error",
+        "url": "https://learn.microsoft.com/en-us/python/api/azure-servicebus/azure.servicebus.exceptions.messagelocklosterror?view=azure-python",
+        "checked_at": "2026-09-28T07:46:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/python/api/azure-servicebus/azure.servicebus.exceptions.messagelocklosterror?view=azure-python",
+        "content_type": "text/html",
+        "page_title": "azure.servicebus.exceptions.MessageLockLostError class",
+        "canonical_url": "https://learn.microsoft.com/en-us/python/api/azure-servicebus/azure.servicebus.exceptions.messagelocklosterror?view=azure-python",
+        "duration_signals": [],
+        "signal_fingerprint": "55894d45b6cfda24f84aabf3d381ef4d1810595f2b1df2eb1651b637bc436d91",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/python/api/azure-servicebus/azure.servicebus.exceptions.messagelocklosterror?view=azure-python",
+      "sha256": "69a12ffbf75d3b6392ace2cd1ed7f96c08d0eb1fde2b8c1f789d0c8000872f1f",
+      "text_characters": 1685
+    },
+    {
+      "id": "ai200-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/",
+      "checked_at": "2026-09-28T07:52:21.463621+00:00",
+      "health": {
+        "id": "ai200-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/",
+        "checked_at": "2026-09-28T07:52:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI-200: Azure AI Developer course & Practice test | Whizlabs",
+        "canonical_url": "https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "9c6a542c4975370dfabbe1db9bef2617636d29ccc409c656157ba3610ed60b15",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/",
+      "sha256": "b5c8c00fe954c9dfcad5fa6cc38a8a7b276abe504d87f5049ec5ccd1e77ae960",
+      "text_characters": 60
+    }
+  ],
+  "added_source_ids": [
+    "ai200-acr-abac",
+    "ai200-sidecars",
+    "ai200-kv-reference",
+    "ai200-feed-read",
+    "ai200-feed-python",
+    "ai200-pgvector",
+    "ai200-redis-cluster",
+    "ai200-bus-lock",
+    "ai200-bus-dedup",
+    "ai200-function-scale",
+    "ai200-config-refresh",
+    "ai200-sampling",
+    "ai200-redis-blog",
+    "ai200-redis-create",
+    "ai200-redis-update",
+    "ai200-functions-retry",
+    "ai200-trigger-errors",
+    "ai200-lock-error",
+    "ai200-whizlabs"
+  ],
+  "findings": [
+    {
+      "id": "ai200-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Managed Redis clustering conversion documentation conflicts",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Creation guide prohibits changes after creation; REST permits update from NoCluster with constraints.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ai200-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Exam languages expanded",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Exam now lists thirteen languages.",
+      "recommendation": "Correct profile; distinguish twelve course languages.",
+      "disposition": "applied",
+      "source_id": "ai-200-certification-page",
+      "resolution": "Correct profile; distinguish twelve course languages."
+    },
+    {
+      "id": "ai200-deep-3",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Prior self-study duration cannot be reverified",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Short current course page exposes five days but not prior nine-path/32h4 total.",
+      "recommendation": "Remove current-total assertion and label editorial study budget.",
+      "disposition": "applied",
+      "source_id": "ai-200-ai-200t00-develop-ai-cloud-solutions-on-azure",
+      "resolution": "Remove current-total assertion and label editorial study budget."
+    },
+    {
+      "id": "ai200-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy ACR roles fail in ABAC mode",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Legacy roles not honored; repository roles and task source identity required.",
+      "recommendation": "Add role/mode matrix, catalog scope and source-auth guidance.",
+      "disposition": "applied",
+      "source_id": "ai200-acr-abac",
+      "resolution": "Add role/mode matrix, catalog scope and source-auth guidance."
+    },
+    {
+      "id": "ai200-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Sidecar apps use different port/pull configuration",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Legacy Docker app settings do not configure sitecontainers.",
+      "recommendation": "Distinguish models before troubleshooting.",
+      "disposition": "applied",
+      "source_id": "ai200-sidecars",
+      "resolution": "Distinguish models before troubleshooting."
+    },
+    {
+      "id": "ai200-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Example lacked required workload-identity pod label",
+      "url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Token injection needs use=true pod label and configured ServiceAccount.",
+      "recommendation": "Correct manifest and document independent identity prerequisites.",
+      "disposition": "applied",
+      "source_id": "ai-200-aks-workload-identity",
+      "resolution": "Correct manifest and document independent identity prerequisites."
+    },
+    {
+      "id": "ai200-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Vector dimensions and index thresholds affect behavior",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "505/4096 dimension limits; approximate indexes need 1000 vectors.",
+      "recommendation": "Add limits and policy-change/recall caveats.",
+      "disposition": "applied",
+      "source_id": "ai-200-vector-search-in-cosmos-db-for-nosql",
+      "resolution": "Add limits and policy-change/recall caveats."
+    },
+    {
+      "id": "ai200-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Python does not expose processor library",
+      "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Processor unsupported in Python SDK.",
+      "recommendation": "Separate .NET/Java processor, Python managed trigger and pull ownership.",
+      "disposition": "applied",
+      "source_id": "ai200-feed-python",
+      "resolution": "Separate .NET/Java processor, Python managed trigger and pull ownership."
+    },
+    {
+      "id": "ai200-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Trigger failure does not imply automatic application retry",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default unhandled Cosmos-trigger failure is not retried.",
+      "recommendation": "Add explicit retry policy, batch idempotency and durable reconciliation.",
+      "disposition": "applied",
+      "source_id": "ai200-trigger-errors",
+      "resolution": "Add explicit retry policy, batch idempotency and durable reconciliation."
+    },
+    {
+      "id": "ai200-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Filtered ANN can under-return",
+      "url": "https://github.com/pgvector/pgvector",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Post-filter candidate limitation and iterative scan version boundary.",
+      "recommendation": "Add authorized exact baseline and recall worksheet.",
+      "disposition": "applied",
+      "source_id": "ai200-pgvector",
+      "resolution": "Add authorized exact baseline and recall worksheet."
+    },
+    {
+      "id": "ai200-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Stale Redis customer cutoff uncorroborated",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current FAQ retains retirement deadlines but not prior cutoff assertion.",
+      "recommendation": "Remove unsupported date and keep verified retirement boundaries.",
+      "disposition": "applied",
+      "source_id": "ai-200-azure-cache-for-redis-retirement-faq",
+      "resolution": "Remove unsupported date and keep verified retirement boundaries."
+    },
+    {
+      "id": "ai200-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Redis vector search needs compatible provisioning",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RediSearch requires Enterprise clustering, NoEviction and creation-time module.",
+      "recommendation": "Add policy/client/memory requirements and migration lab.",
+      "disposition": "applied",
+      "source_id": "ai200-redis-create",
+      "resolution": "Add policy/client/memory requirements and migration lab."
+    },
+    {
+      "id": "ai200-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Settlement can fail after durable work",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Lock loss prevents valid settlement after side effect.",
+      "recommendation": "Separate successful processing from completion failure; add syntax-valid async pattern.",
+      "disposition": "applied",
+      "source_id": "ai200-bus-lock",
+      "resolution": "Separate successful processing from completion failure; add syntax-valid async pattern."
+    },
+    {
+      "id": "ai200-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Dedup and legacy retirement have bounded scopes",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "History, tier and partition identity differ; Sept 30 legacy SDK/SBMP deadline.",
+      "recommendation": "Add scoped dedup contract and package/protocol inventory.",
+      "disposition": "applied",
+      "source_id": "ai200-bus-dedup",
+      "resolution": "Add scoped dedup contract and package/protocol inventory."
+    },
+    {
+      "id": "ai200-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Event Grid retry differs by destination/mode",
+      "url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Basic webhook nonretry codes and response/TTL limits.",
+      "recommendation": "Add mode-specific failure table guidance.",
+      "disposition": "applied",
+      "source_id": "ai-200-delivery-and-retry",
+      "resolution": "Add mode-specific failure table guidance."
+    },
+    {
+      "id": "ai200-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Runtime and plan retirement dates differ",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Linux v3 stops after September 30 2026; Linux Consumption plan retires 2028.",
+      "recommendation": "Separate deadlines and HTTP/Flex downstream constraints.",
+      "disposition": "applied",
+      "source_id": "ai200-function-scale",
+      "resolution": "Separate deadlines and HTTP/Flex downstream constraints."
+    },
+    {
+      "id": "ai200-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Secret publication does not immediately refresh consumers",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Versionless reference can cache for 24 hours; pinned version persists.",
+      "recommendation": "Add refresh sequence, slot distinction and timing worksheet.",
+      "disposition": "applied",
+      "source_id": "ai200-kv-reference",
+      "resolution": "Add refresh sequence, slot distinction and timing worksheet."
+    },
+    {
+      "id": "ai200-deep-18",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Refresh interval does not start background polling",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Provider requires explicit refresh calls.",
+      "recommendation": "Add invocation and sentinel ordering requirement.",
+      "disposition": "applied",
+      "source_id": "ai200-config-refresh",
+      "resolution": "Add invocation and sentinel ordering requirement."
+    },
+    {
+      "id": "ai200-deep-19",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "KQL row counts were labeled as full request totals",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Sampling weights and trace/metric distinction change interpretation.",
+      "recommendation": "Label sampled rows/percentiles and add weighted denominator example.",
+      "disposition": "applied",
+      "source_id": "ai200-sampling",
+      "resolution": "Label sampled rows/percentiles and add weighted denominator example."
+    },
+    {
+      "id": "ai200-deep-20",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Migration can reduce load before moving services",
+      "url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-200"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Case study identifies redundant L1/remote reads, reconnect and rollback issues.",
+      "recommendation": "Add bounded original engineering worksheet; no savings guarantee.",
+      "disposition": "applied",
+      "source_id": "ai200-redis-blog",
+      "resolution": "Add bounded original engineering worksheet; no savings guarantee."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ai200-redis-blog",
+      "decision": "accepted-bounded",
+      "author": "Sanket Achari",
+      "published_on": "2026-09-15",
+      "notes": "Main article read; original L1/reconnect/warming/rollback worksheet. No .NET code, reported savings or rollout reproduced."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "26 arithmetic/state assertions; five Python blocks compiled; one local reducer executed and one YAML document parsed. No Azure SDK, SQL, KQL, Docker or infrastructure execution."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Managed Redis quickstart and API differ on NoCluster conversion support; confirm an exact migration path before relying on it.",
+    "No Azure tenant, database, cache, broker, model, credential, SDK, API, container build, deployment, SQL, KQL, load test or paid lesson executed.",
+    "Sequential reducer and synthetic arithmetic do not prove concurrent atomicity, exactly-once effects, authorization, recall, timing or capacity.",
+    "Direct Udemy access blocked; indexed metadata does not verify paid material, question originality, exam-update dates or difficulty. Whizlabs/video/catalog shells limited; provider searches bounded.",
+    "Learn syllabus/runtime could not be verified; OReilly event remains future. Only specified sections of long references read; retained general references refreshed without exhaustive reread.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "capacity_replay_recall_rotation_sampling_cache_catalog_assertions": 26,
+    "python_blocks_parsed": 5,
+    "python_blocks_executed": 1,
+    "yaml_blocks_parsed": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "ai-200-udemy-ai-200-complete-course-by-luke-ginn",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline via web search; direct health remains blocked",
+      "observed_metadata": {
+        "updated": "8/2026",
+        "sections": 13,
+        "lectures": 55,
+        "total_runtime": "21h19",
+        "some_walkthroughs": "forthcoming"
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "ai-200-udemy-ai-200-exam-prep-by-kuljot-singh-bakshi",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline via web search; direct health remains blocked",
+      "observed_metadata": {
+        "updated": "6/2026",
+        "sections": 15,
+        "lectures": 135,
+        "total_runtime": "18h5"
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "ai-200-udemy-ai-200-course-by-scott-duffy",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline via web search; direct health remains blocked",
+      "observed_metadata": {
+        "updated": "5/2026",
+        "sections": 11,
+        "lectures": 29,
+        "total_runtime": "3h54"
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "ai-200-udemy-ai-200-practice-tests-by-scott-duffy",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline via web search; direct health remains blocked",
+      "observed_metadata": {
+        "updated": "8/2026",
+        "tests": 4,
+        "questions_per_test": 25,
+        "total_questions": 100,
+        "claimed_exam_update": "2026-08-28",
+        "official_page_date": "2026-05-05"
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    }
+  ],
+  "unaccepted_blog_candidates": [
+    {
+      "url": "https://techcommunity.microsoft.com/blog/azurearchitectureblog/blue%E2%80%91green-strategy-for-always%E2%80%91on-tcp-workloads-on-azure-container-apps/4507894",
+      "decision": "not-accepted",
+      "reason": "Only public shell/search discovery; main article not readable or adopted as evidence."
+    }
+  ]
+}

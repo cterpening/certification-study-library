@@ -4,6 +4,431 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ai200-deep-review",
+      "title": "AI-200 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AI-200"
+      ],
+      "results": [
+        {
+          "exam_code": "AI-200",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+          "baseline_sha256": "d4c29f961896c983b6ae5eaee02f58dd730d680159e1061b13f6f614abd6ebd9",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "27 unchanged objectives; active 120-minute exam, thirteen languages, no Practice Assessment."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted ACR, App Service, AKS, data, change-feed, Redis, messaging, runtime, refresh and sampling corrections; no infrastructure execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September Redis migration engineering article read; synthetic worksheet adopted without savings guarantee. TCP blog shell not accepted."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Five-day/twelve-language course; old Learn outline/runtime unavailable. Four indexed Udemy outlines, future OReilly event, Whizlabs title shell. Provider searches bounded."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Managed Redis quickstart prohibits any clustering change; REST contract permits change from NoCluster and architecture adds constraints. Exact migration support remains to confirm. Other retry/DLQ/vendor-date ambiguities scoped by more specific sources."
+            }
+          },
+          "findings": [
+            {
+              "id": "ai200-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Managed Redis clustering conversion documentation conflicts",
+              "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Creation guide prohibits changes after creation; REST permits update from NoCluster with constraints.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ai200-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Exam languages expanded",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Exam now lists thirteen languages.",
+              "recommendation": "Correct profile; distinguish twelve course languages.",
+              "disposition": "applied",
+              "source_id": "ai-200-certification-page",
+              "resolution": "Correct profile; distinguish twelve course languages."
+            },
+            {
+              "id": "ai200-deep-3",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Prior self-study duration cannot be reverified",
+              "url": "https://learn.microsoft.com/en-us/training/courses/ai-200t00",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Short current course page exposes five days but not prior nine-path/32h4 total.",
+              "recommendation": "Remove current-total assertion and label editorial study budget.",
+              "disposition": "applied",
+              "source_id": "ai-200-ai-200t00-develop-ai-cloud-solutions-on-azure",
+              "resolution": "Remove current-total assertion and label editorial study budget."
+            },
+            {
+              "id": "ai200-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy ACR roles fail in ABAC mode",
+              "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Legacy roles not honored; repository roles and task source identity required.",
+              "recommendation": "Add role/mode matrix, catalog scope and source-auth guidance.",
+              "disposition": "applied",
+              "source_id": "ai200-acr-abac",
+              "resolution": "Add role/mode matrix, catalog scope and source-auth guidance."
+            },
+            {
+              "id": "ai200-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sidecar apps use different port/pull configuration",
+              "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Legacy Docker app settings do not configure sitecontainers.",
+              "recommendation": "Distinguish models before troubleshooting.",
+              "disposition": "applied",
+              "source_id": "ai200-sidecars",
+              "resolution": "Distinguish models before troubleshooting."
+            },
+            {
+              "id": "ai200-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Example lacked required workload-identity pod label",
+              "url": "https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Token injection needs use=true pod label and configured ServiceAccount.",
+              "recommendation": "Correct manifest and document independent identity prerequisites.",
+              "disposition": "applied",
+              "source_id": "ai-200-aks-workload-identity",
+              "resolution": "Correct manifest and document independent identity prerequisites."
+            },
+            {
+              "id": "ai200-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Vector dimensions and index thresholds affect behavior",
+              "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "505/4096 dimension limits; approximate indexes need 1000 vectors.",
+              "recommendation": "Add limits and policy-change/recall caveats.",
+              "disposition": "applied",
+              "source_id": "ai-200-vector-search-in-cosmos-db-for-nosql",
+              "resolution": "Add limits and policy-change/recall caveats."
+            },
+            {
+              "id": "ai200-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Python does not expose processor library",
+              "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Processor unsupported in Python SDK.",
+              "recommendation": "Separate .NET/Java processor, Python managed trigger and pull ownership.",
+              "disposition": "applied",
+              "source_id": "ai200-feed-python",
+              "resolution": "Separate .NET/Java processor, Python managed trigger and pull ownership."
+            },
+            {
+              "id": "ai200-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Trigger failure does not imply automatic application retry",
+              "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default unhandled Cosmos-trigger failure is not retried.",
+              "recommendation": "Add explicit retry policy, batch idempotency and durable reconciliation.",
+              "disposition": "applied",
+              "source_id": "ai200-trigger-errors",
+              "resolution": "Add explicit retry policy, batch idempotency and durable reconciliation."
+            },
+            {
+              "id": "ai200-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Filtered ANN can under-return",
+              "url": "https://github.com/pgvector/pgvector",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Post-filter candidate limitation and iterative scan version boundary.",
+              "recommendation": "Add authorized exact baseline and recall worksheet.",
+              "disposition": "applied",
+              "source_id": "ai200-pgvector",
+              "resolution": "Add authorized exact baseline and recall worksheet."
+            },
+            {
+              "id": "ai200-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Stale Redis customer cutoff uncorroborated",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current FAQ retains retirement deadlines but not prior cutoff assertion.",
+              "recommendation": "Remove unsupported date and keep verified retirement boundaries.",
+              "disposition": "applied",
+              "source_id": "ai-200-azure-cache-for-redis-retirement-faq",
+              "resolution": "Remove unsupported date and keep verified retirement boundaries."
+            },
+            {
+              "id": "ai200-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Redis vector search needs compatible provisioning",
+              "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RediSearch requires Enterprise clustering, NoEviction and creation-time module.",
+              "recommendation": "Add policy/client/memory requirements and migration lab.",
+              "disposition": "applied",
+              "source_id": "ai200-redis-create",
+              "resolution": "Add policy/client/memory requirements and migration lab."
+            },
+            {
+              "id": "ai200-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Settlement can fail after durable work",
+              "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Lock loss prevents valid settlement after side effect.",
+              "recommendation": "Separate successful processing from completion failure; add syntax-valid async pattern.",
+              "disposition": "applied",
+              "source_id": "ai200-bus-lock",
+              "resolution": "Separate successful processing from completion failure; add syntax-valid async pattern."
+            },
+            {
+              "id": "ai200-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Dedup and legacy retirement have bounded scopes",
+              "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "History, tier and partition identity differ; Sept 30 legacy SDK/SBMP deadline.",
+              "recommendation": "Add scoped dedup contract and package/protocol inventory.",
+              "disposition": "applied",
+              "source_id": "ai200-bus-dedup",
+              "resolution": "Add scoped dedup contract and package/protocol inventory."
+            },
+            {
+              "id": "ai200-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Event Grid retry differs by destination/mode",
+              "url": "https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Basic webhook nonretry codes and response/TTL limits.",
+              "recommendation": "Add mode-specific failure table guidance.",
+              "disposition": "applied",
+              "source_id": "ai-200-delivery-and-retry",
+              "resolution": "Add mode-specific failure table guidance."
+            },
+            {
+              "id": "ai200-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Runtime and plan retirement dates differ",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Linux v3 stops after September 30 2026; Linux Consumption plan retires 2028.",
+              "recommendation": "Separate deadlines and HTTP/Flex downstream constraints.",
+              "disposition": "applied",
+              "source_id": "ai200-function-scale",
+              "resolution": "Separate deadlines and HTTP/Flex downstream constraints."
+            },
+            {
+              "id": "ai200-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Secret publication does not immediately refresh consumers",
+              "url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Versionless reference can cache for 24 hours; pinned version persists.",
+              "recommendation": "Add refresh sequence, slot distinction and timing worksheet.",
+              "disposition": "applied",
+              "source_id": "ai200-kv-reference",
+              "resolution": "Add refresh sequence, slot distinction and timing worksheet."
+            },
+            {
+              "id": "ai200-deep-18",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Refresh interval does not start background polling",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Provider requires explicit refresh calls.",
+              "recommendation": "Add invocation and sentinel ordering requirement.",
+              "disposition": "applied",
+              "source_id": "ai200-config-refresh",
+              "resolution": "Add invocation and sentinel ordering requirement."
+            },
+            {
+              "id": "ai200-deep-19",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "KQL row counts were labeled as full request totals",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sampling weights and trace/metric distinction change interpretation.",
+              "recommendation": "Label sampled rows/percentiles and add weighted denominator example.",
+              "disposition": "applied",
+              "source_id": "ai200-sampling",
+              "resolution": "Label sampled rows/percentiles and add weighted denominator example."
+            },
+            {
+              "id": "ai200-deep-20",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Migration can reduce load before moving services",
+              "url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Case study identifies redundant L1/remote reads, reconnect and rollback issues.",
+              "recommendation": "Add bounded original engineering worksheet; no savings guarantee.",
+              "disposition": "applied",
+              "source_id": "ai200-redis-blog",
+              "resolution": "Add bounded original engineering worksheet; no savings guarantee."
+            }
+          ],
+          "notes": "Whole guide and 27 unchanged objectives mapped across nine groups. Add six worked examples, ten labs, 48 explained checks and a Redis engineering blog worksheet; correct identity, data, retry, lifecycle, rotation, sampling and catalog boundaries. Twenty-six offline assertions, five Python syntax checks and one YAML parse passed; only the local reducer executed. Managed Redis conversion-document conflict remains open. No infrastructure/SDK/paid-content execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ai-200-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 19,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ab731-deep-review",
       "title": "AB-731 complete guide and learning-content review",
       "rubric_version": 1,

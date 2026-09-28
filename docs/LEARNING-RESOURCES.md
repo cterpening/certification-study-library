@@ -1716,6 +1716,65 @@ These are supplemental explanations, not exam-authoritative material. Public tex
 
 *This independent guide is based only on public sources and original synthesis. It is not affiliated with or endorsed by Microsoft, GitHub, HashiCorp, or any learning vendor.*
 
+### AI-200 — Developing AI Cloud Solutions on Azure
+
+Resource details from the [AI-200 guide](../guides/AI-200-developing-ai-cloud-solutions-on-azure.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, schedules, access, duration, price and alignment change. Avoid dumps or anything claiming recalled/live exam questions.
+
+#### Start with Microsoft
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Public | 30–60 min | Authoritative objectives, weights and lifecycle |
+| [AI-200T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/ai-200t00) | Public self-study; paid instructor option | 5 instructor-led days; self-study budget 25–40 hours plus labs (editorial estimate) | 12 course languages; current extracted page does not expose a verifiable path/runtime total |
+| [Azure Architecture Center AI architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) | Public | 4–12 hours selectively (estimate) | Production tradeoffs, reliability and service composition |
+| [Microsoft Azure samples](https://github.com/Azure-Samples) | Public | 8–20 hours selectively (estimate) | Current SDK and deployable examples; verify maintenance and security before reuse |
+| [Microsoft exam sandbox](https://aka.ms/examdemo) | Public | 20–30 min | Interface familiarity; no technical questions |
+
+Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on September 28, 2026. Recheck rather than substituting an assessment for a different exam.
+
+#### Courses and video
+
+| Resource | Access | Estimated time | Best use and freshness note |
+|---|---|---:|---|
+| [O'Reilly Azure AI Cloud Developer Associate AI-200 Crash Course](https://www.oreilly.com/live-events/azure-ai-cloud-developer-associate-ai-200-crash-course/0642572385149/0642572385132/) | Paid subscription/live event | 4-hour event window; agenda totals 240 min before separately listed breaks; October 1, 2026 | Blueprint-wide live review with Reza Salehi; upcoming after this guide's validation date, so verify schedule/recording |
+| [Udemy AI-200 Complete Course by Luke Ginn](https://www.udemy.com/course/ai-200-azure-ai-cloud-developer-associate-complete-course/) | Paid; price varies | 21h19 / 55 lectures / 13 sections (indexed outline) | Updated August 2026, broad hands-on coverage; includes adjacent agent content, so map to blueprint |
+| [Udemy AI-200 Exam Prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-cloud-developer/) | Paid; price varies | 18h5 / 135 lectures / 15 sections (indexed outline) | Updated June 2026, objective-oriented demos and labs |
+| [Udemy AI-200 course by Scott Duffy](https://www.udemy.com/course/ai200-azure/) | Paid; price varies | 3h54 / 29 lectures / 11 sections (indexed outline) | Concise overview updated May 2026; supplement with implementation labs |
+| [Microsoft Reactor YouTube](https://www.youtube.com/@MicrosoftReactor) | Public | 3–10 hours selectively (estimate) | Search current Container Apps, Cosmos vector, PostgreSQL/pgvector, Redis, eventing and observability sessions |
+| [John Savill Azure Master Class repository](https://github.com/johnthebrit/AzureMasterClass) | Public | 3–8 hours selectively (estimate) | Broad Azure platform/network/identity architecture and whiteboards; not a complete AI-200 path and may predate current vector/Managed Redis objectives |
+
+A bounded September 28 search did not identify a dedicated current AI-200 Pluralsight path. This is not proof that none exists. Use current service-specific courses only when their release date and terminology match the objective; do not infer certification coverage from an older AZ-204/AI-102 path.
+
+#### Practice and labs
+
+| Resource | Access | Estimated time | Best use and caution |
+|---|---|---:|---|
+| [AI-200 Practice Assessment status on credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/) | Public status; assessment unavailable when checked | Recheck in 1–2 min | Use the official assessment first if Microsoft later publishes it |
+| [Udemy AI-200 practice tests by Scott Duffy](https://www.udemy.com/course/ai200-tests/) | Paid; price varies | Four 25-question tests plus explanation review; 3–6 hours (estimate) | New third-party practice; verify explanations against current Microsoft docs and reject live-question claims |
+| [Whizlabs AI-200 catalog](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) | Paid product; public title shell | Duration/question count unverified | Listing found; inspect current syllabus/sample explanations before selecting |
+| This guide's ten labs | Azure access; costs vary | 28–50 hours for cloud work plus 2–4 hours for offline artifacts (estimates) | End-to-end build, failure, identity, replay, observability and recovery proof |
+| [Azure-Samples GitHub organization](https://github.com/Azure-Samples) | Public; Azure use may cost | 8–20 hours selectively (estimate) | Extend official samples with negative tests, identity, telemetry and cleanup |
+
+The [Whizlabs AI-200 catalog page](https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/) now exists, correcting the previous missing-product note. It exposed only a title shell; question count, lessons, labs and coverage remain unverified. A bounded search did not identify a dedicated MeasureUp product; recheck rather than treating this as proof of absence.
+
+Direct access to all four Udemy listings was blocked; the displayed metadata above comes from indexed public outlines checked September 28. Paid content, coverage, question originality and claimed exam difficulty were not evaluated. Scott Duffy's practice listing shows four 25-question sets, updated August 2026, but its claimed August 28 exam update is not corroborated by the official May 5 baseline. Luke Ginn's indexed outline still labels some walkthroughs as forthcoming. O'Reilly's event is future; attendance/recording was not verified. The older Learn total of nine paths/32h4 was not reproduced from the current page and is no longer presented as current.
+
+#### A practical study sequence
+
+1. Map the official blueprint to one deployable architecture and record the currently unavailable Practice Assessment.
+2. Complete the Microsoft Learn paths or one current structured course; do not stack passive courses.
+3. Build Labs 1–3 until container deployment, identity, rollout, scaling and diagnosis are routine.
+4. Build Labs 4–6 and compare Cosmos, PostgreSQL and Redis using the same corpus/SLO evidence.
+5. Build Labs 7–8 and prove duplicate, retry, DLQ, rotation, distributed trace, KQL and reconciliation behavior; complete Labs 9–10 as review artifacts.
+6. If an official Practice Assessment appears, use it once as a diagnostic; remediate by objective and lab.
+7. Recheck the blueprint, credential page, SDK/service limits, vector/index support, course schedule and Azure Managed Redis transition immediately before the exam.
+
+---
+
+*This independent guide is based only on public sources and original synthesis. It is not affiliated with or endorsed by Microsoft, GitHub, HashiCorp, or any learning vendor.*
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

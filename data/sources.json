@@ -3,6 +3,272 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ai200-acr-abac",
+      "title": "ACR repository ABAC and task identity",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected permissions-mode, repository/catalog role, future-default and task source identity sections read. No CLI/role/task changes; full migration commands not audited. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-sidecars",
+      "title": "App Service sidecar container configuration",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-sidecar",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected main configuration/target-port/legacy-setting sections read; no sitecontainer API or app modification. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-kv-reference",
+      "title": "App Service Key Vault references and rotation",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-key-vault-references",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected rotation/cache, forced refresh, pinned-version and slot-setting sections read; full network/setup walkthrough not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-feed-read",
+      "title": "Cosmos DB change feed consumption methods",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/read-change-feed",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Main push/pull, Functions and checkpoint/error sections read; retry claim qualified by trigger troubleshooting and current retry policy article. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-feed-python",
+      "title": "Cosmos DB Python SDK support",
+      "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/cosmos-readme?view=azure-python",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Unsupported-feature list including change-feed processor read. Long SDK examples and complete API not audited or run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-pgvector",
+      "title": "pgvector project documentation",
+      "url": "https://github.com/pgvector/pgvector",
+      "publisher": "pgvector project",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected filtering, iterative scan, version 0.8.0, tenant partitioning and result-shortfall sections read. No extension install, SQL or benchmark execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-redis-cluster",
+      "title": "Managed Redis clustering policies",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected clustering, RediSearch, ports and size/geo-replication constraints read; no database conversion or network test. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-bus-lock",
+      "title": "Service Bus transfers locks and settlement",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected lock loss, settlement, duration and redelivery sections read. DLQ enablement wording corrected using dedicated DLQ article; no broker execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-bus-dedup",
+      "title": "Service Bus duplicate detection",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/duplicate-detection",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Main dedup tier/window/identity/partition/scheduled-message and legacy library/SBMP deadline sections read. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-function-scale",
+      "title": "Azure Functions hosting scale and runtime limits",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected hosting recommendation, Linux v3/plan deadlines, HTTP response limit and Flex group/quota sections read; full table not exhaustively benchmarked or deployed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-config-refresh",
+      "title": "Python App Configuration dynamic refresh",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/enable-dynamic-configuration-python",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected sentinel update order, explicit refresh call and interval behavior read; no provider/session execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-sampling",
+      "title": "Azure Monitor OpenTelemetry sampling",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Main sampling/signals, metric exclusion, fixed/rate-limited behavior and itemCount guidance read; no exporter or telemetry query run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-redis-blog",
+      "title": "Managed Redis migration engineering lessons",
+      "url": "https://devblogs.microsoft.com/powerplatform/azure-managed-redis-migration/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Main Sanket Achari September 15 article read. Original L1/reconnect/migration worksheet added; reported savings and linked .NET code not reproduced. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-redis-create",
+      "title": "Create Managed Redis and provisioning limits",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Main creation/module/clustering/NoEviction requirements read; conflict with API conversion exception retained as blocker. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-redis-update",
+      "title": "Redis database update REST API",
+      "url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected clustering-policy and creation-only module contract read; NoCluster exception conflicts with quickstart blanket wording. Long SDK examples not audited/run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-functions-retry",
+      "title": "Azure Functions retry policy and error handling",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-error-pages",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected trigger matrix, policy behavior, Python support and maximum-retry limitations read. No trigger/SDK/runtime execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-trigger-errors",
+      "title": "Cosmos DB Functions trigger troubleshooting",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-changefeed-functions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Repeated/missing-change and failed-batch/retry-policy sections read; full diagnostics walkthrough not run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-lock-error",
+      "title": "Service Bus Python MessageLockLostError",
+      "url": "https://learn.microsoft.com/en-us/python/api/azure-servicebus/azure.servicebus.exceptions.messagelocklosterror?view=azure-python",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Short public Python class contract read; exception path syntax checked only, no SDK imported. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai200-whizlabs",
+      "title": "Whizlabs AI-200 training and practice catalog",
+      "url": "https://www.whizlabs.com/microsoft-azure-ai-cloud-developer-associate/",
+      "publisher": "Whizlabs",
+      "authority_class": 4,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Public catalog title shell only (60 characters). Product existence corrected; count, duration, paid content, coverage and originality unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ab731-impact",
       "title": "Copilot impact report and assisted hours",
       "url": "https://learn.microsoft.com/en-us/viva/insights/advanced/analyst/templates/microsoft-365-copilot-impact",
@@ -6497,11 +6763,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-420"
+        "DP-420",
+        "AI-200"
       ],
-      "notes": "September 27 DP-420 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-420-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-420 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-420-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Selected latest/all-versions behavior, deletion/retention, SDK support and account enablement sections read; flattened language table cross-checked against processor/Python references. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp420-query-pagination",
@@ -8824,7 +9091,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -11897,13 +12164,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "DP-900",
         "DP-420",
         "AI-200"
       ],
-      "notes": "API mappings, throughput implications, and multi-region constraints are volatile."
+      "notes": "API mappings, throughput implications, and multi-region constraints are volatile. September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-fabric-documentation-dp900",
@@ -18742,13 +19009,14 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "DP-420",
         "DP-750",
         "DP-800",
         "AI-200"
-      ]
+      ],
+      "notes": "September 28 AI-200 deep review: Public interface landing fetched; no assessment or exam questions inspected. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-420-capacitycalculator",
@@ -19074,11 +19342,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "DP-420",
         "AI-200"
-      ]
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-420-insights-overview",
@@ -19179,11 +19448,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "DP-420",
         "AI-200"
-      ]
+      ],
+      "notes": "September 28 AI-200 deep review: Selected processor language support, leases, delivery and error contract read; full code examples not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-420-how-to-use-change-feed-estimator",
@@ -21238,8 +21508,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: All 27 objectives and lifecycle metadata read and mapped in nine groups; monitor unchanged and prior accepted snapshots retained. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-certification-page",
@@ -21249,8 +21522,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Public exam metadata read: active, 120 minutes, thirteen languages; no Practice Assessment. No booking or assessment execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-ai-200t00-develop-ai-cloud-solutions-on-azure",
@@ -21260,8 +21536,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Full short extracted metadata/overview read: five days, twelve languages; syllabus remained loading and nine-path/32h4 claim not reproducible. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-acr-overview",
@@ -21271,8 +21550,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-authentication-guidance",
@@ -21282,8 +21564,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-acr-tasks-overview",
@@ -21293,8 +21578,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-custom-container-guide",
@@ -21304,8 +21592,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-managed-identity-image-pull",
@@ -21315,8 +21606,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-revisions",
@@ -21326,8 +21620,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-environment-overview",
@@ -21337,8 +21634,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-scale-rules",
@@ -21348,8 +21648,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-deploy-an-application-to-aks",
@@ -21359,8 +21662,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-aks-workload-identity",
@@ -21370,8 +21676,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected cluster prerequisite, pod label, ServiceAccount annotation and restart sections read; full SDK and preview-identity-binding matrix not audited. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-container-apps-logs-and-monitoring",
@@ -21381,8 +21690,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-aks-monitoring-data",
@@ -21392,8 +21704,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-python-sdk-examples",
@@ -21403,8 +21718,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-vector-search-in-cosmos-db-for-nosql",
@@ -21414,8 +21732,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected dimensions, indexing threshold, policy changes and DiskANN/quantization sections read; no vector database execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-connect-with-python",
@@ -21425,8 +21746,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-service-overview",
@@ -21436,8 +21760,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-pgvector-guidance",
@@ -21447,8 +21774,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-server-parameters",
@@ -21458,8 +21788,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-pgbouncer",
@@ -21469,8 +21802,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected pool modes, client/server connection and per-user/database pool settings read; full parameter reference and deployed defaults not verified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-azure-managed-redis-overview",
@@ -21480,8 +21816,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-python-client-connection-guidance",
@@ -21491,8 +21830,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Main Entra/client/scope/SSL endpoint example read; client choice must match clustering. No authentication/client execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-azure-cache-for-redis-retirement-faq",
@@ -21502,8 +21844,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected lifecycle, deadlines, clustering and migration sections read. Prior April 1 new-customer cutoff not supported by current page and removed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-vector-search-concepts",
@@ -21513,8 +21858,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-service-bus-messaging-overview",
@@ -21524,8 +21872,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-python-sdk-quickstart",
@@ -21535,8 +21886,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-dead-letter-queues",
@@ -21546,8 +21900,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected implicit-subqueue, TTL, expiry and delivery-count sections read; replay procedures not executed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-event-grid-concepts",
@@ -21557,8 +21914,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-custom-events",
@@ -21568,8 +21928,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-delivery-and-retry",
@@ -21579,8 +21942,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Selected Basic push endpoint timeout, destination response-code table, retry/TTL and dead-letter sections read; other delivery modes not inferred. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-functions-python-developer-guide",
@@ -21590,8 +21956,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-deployment-technologies",
@@ -21601,8 +21970,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-functions-best-practices",
@@ -21612,8 +21984,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-key-vault-secrets-quickstart-for-python",
@@ -21623,8 +21998,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-key-vault-security-guidance",
@@ -21634,8 +22012,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-secret-rotation-guidance",
@@ -21645,8 +22026,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-python-quickstart",
@@ -21656,8 +22040,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-azure-monitor-opentelemetry-overview",
@@ -21667,8 +22054,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-kql-overview",
@@ -21678,8 +22068,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-application-insights-data-model",
@@ -21689,8 +22082,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-azure-architecture-center-ai-architecture",
@@ -21700,8 +22096,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-microsoft-azure-samples",
@@ -21711,8 +22110,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-o-reilly-azure-ai-cloud-developer-associate-ai-200-crash-course",
@@ -21722,8 +22124,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Public outline/instructor/agenda and embedded event metadata read: October 1 12:00–16:00 UTC, PT4H; agenda adds to 240 minutes before listed breaks. Future delivery/recording unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-udemy-ai-200-complete-course-by-luke-ginn",
@@ -21733,8 +22138,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: August 2026, 13 sections, 55 lectures, 21h19. Some walkthroughs forthcoming; paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-udemy-ai-200-exam-prep-by-kuljot-singh-bakshi",
@@ -21744,8 +22152,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: June 2026, 15 sections, 135 lectures, 18h5. Paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-udemy-ai-200-course-by-scott-duffy",
@@ -21755,8 +22166,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed public outline: May 2026, 11 sections, 29 lectures, 3h54. Paid lessons/coverage unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-john-savill-azure-master-class-repository",
@@ -21766,8 +22180,12 @@
       "authority_class": 2,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200", "SC-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200",
+        "SC-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-udemy-ai-200-practice-tests-by-scott-duffy",
@@ -21777,8 +22195,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "notes": "September 28 AI-200 deep review: Direct blocked; indexed August 2026 listing has four 25-question sets. Claimed August 28 exam update uncorroborated by official baseline; question originality, answers and difficulty unverified. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-blueprint",
