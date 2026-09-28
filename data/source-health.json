@@ -4,6 +4,94 @@
   "generated_on": "2026-09-17",
   "sources": [
     {
+      "id": "sc500-ai-posture",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture",
+      "checked_at": "2026-09-28T12:44:49+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture",
+      "content_type": "text/html",
+      "page_title": "Overview - AI security posture management - Microsoft Defender for Cloud",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture",
+      "duration_signals": [],
+      "signal_fingerprint": "6fea8fe80cb2a024af8097dfbd2202c2ae76ec21b9cb729af60e13d4aab3e74c",
+      "error": ""
+    },
+    {
+      "id": "sc500-scanning",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-agentless-data-collection",
+      "checked_at": "2026-09-28T12:44:49+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-agentless-data-collection",
+      "content_type": "text/html",
+      "page_title": "Agentless machine scanning in Microsoft Defender for Cloud - Microsoft Defender for Cloud",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-agentless-data-collection",
+      "duration_signals": [],
+      "signal_fingerprint": "ae1d6834ecf3a2698dd7993246f94f8ed740db145808522d9c2a886bf46ec912",
+      "error": ""
+    },
+    {
+      "id": "sc500-copilot-roles",
+      "url": "https://learn.microsoft.com/en-us/copilot/security/authentication",
+      "checked_at": "2026-09-28T12:44:49+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/copilot/security/authentication",
+      "content_type": "text/html",
+      "page_title": "Understand authentication in Microsoft Security Copilot",
+      "canonical_url": "https://learn.microsoft.com/en-us/copilot/security/authentication",
+      "duration_signals": [],
+      "signal_fingerprint": "df4756b472b037125b7a8073de083ed4b3ee3561db02ab8047eb44a27f197a49",
+      "error": ""
+    },
+    {
+      "id": "sc500-lake-retention",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboarding",
+      "checked_at": "2026-09-28T12:44:49+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboarding",
+      "content_type": "text/html",
+      "page_title": "Onboard to Microsoft Sentinel Data Lake and Graph - Microsoft Security",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboarding",
+      "duration_signals": [
+        "120 minutes"
+      ],
+      "signal_fingerprint": "9154ac24621ef024d2e7347c8bb00c13813cdff00d57c86239b2120060a29e8d",
+      "error": ""
+    },
+    {
+      "id": "sc500-vault-schema",
+      "url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.keyvault/vaults",
+      "checked_at": "2026-09-28T12:49:05+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.keyvault/vaults",
+      "content_type": "text/html",
+      "page_title": "Microsoft.KeyVault/vaults - Bicep, ARM template & Terraform AzAPI reference",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.keyvault/vaults",
+      "duration_signals": [
+        "4 hours"
+      ],
+      "signal_fingerprint": "65b317cf0afb44c0b6a9dfaa4781e3184d0be288255b4a8ea38b0dc5426be7bd",
+      "error": ""
+    },
+    {
+      "id": "sc500-multicloud-matrix",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix",
+      "checked_at": "2026-09-28T12:55:54+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix",
+      "content_type": "text/html",
+      "page_title": "Microsoft Defender for Cloud multicloud support matrix - Microsoft Defender for Cloud",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix",
+      "duration_signals": [],
+      "signal_fingerprint": "8ea71a35d08b1ef6f1d7818aee29001458452ad005df43f3aae102e92471530f",
+      "error": ""
+    },
+    {
       "id": "pl900-uploaded-knowledge",
       "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-file-upload",
       "checked_at": "2026-09-28T12:31:52+00:00",
@@ -3915,7 +4003,7 @@
     {
       "id": "az104-sas",
       "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
-      "checked_at": "2026-09-28T08:37:40+00:00",
+      "checked_at": "2026-09-28T12:45:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
@@ -8758,7 +8846,7 @@
     {
       "id": "sc100-cloud-release",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
-      "checked_at": "2026-09-28T03:23:51+00:00",
+      "checked_at": "2026-09-28T12:45:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
@@ -8875,7 +8963,7 @@
     {
       "id": "sc100-isoc-blog",
       "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
-      "checked_at": "2026-09-28T02:53:58+00:00",
+      "checked_at": "2026-09-28T12:45:01+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
@@ -8893,7 +8981,7 @@
     {
       "id": "sc100-storm-blog",
       "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
-      "checked_at": "2026-09-28T03:10:58+00:00",
+      "checked_at": "2026-09-28T12:48:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
@@ -22506,7 +22594,7 @@
     {
       "id": "az-700-private-link-overview",
       "url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
-      "checked_at": "2026-09-28T10:18:17+00:00",
+      "checked_at": "2026-09-28T12:42:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
@@ -23009,7 +23097,7 @@
     {
       "id": "az-800-entra-private-access",
       "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access",
-      "checked_at": "2026-09-27T23:47:01+00:00",
+      "checked_at": "2026-09-28T12:42:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access",
@@ -23750,7 +23838,7 @@
     {
       "id": "az-801-doc-05-plan-defender-for-servers-select-plan",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan",
-      "checked_at": "2026-09-28T00:11:33+00:00",
+      "checked_at": "2026-09-28T12:42:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan",
@@ -23891,7 +23979,7 @@
     {
       "id": "az-801-doc-15-disk-encryption-overview",
       "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview",
-      "checked_at": "2026-09-28T00:01:48+00:00",
+      "checked_at": "2026-09-28T12:42:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview",
@@ -44086,7 +44174,7 @@
     {
       "id": "microsoft-entra-conditional-access-overview",
       "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
-      "checked_at": "2026-09-28T10:35:20+00:00",
+      "checked_at": "2026-09-28T12:42:28+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
@@ -44184,7 +44272,7 @@
     {
       "id": "microsoft-entra-pim-configure-sc900",
       "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
-      "checked_at": "2026-09-28T04:08:32+00:00",
+      "checked_at": "2026-09-28T12:42:28+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
@@ -45263,7 +45351,7 @@
     {
       "id": "microsoft-reactor",
       "url": "https://www.youtube.com/@MicrosoftReactor",
-      "checked_at": "2026-09-28T10:35:15+00:00",
+      "checked_at": "2026-09-28T12:42:28+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@MicrosoftReactor",
@@ -55626,7 +55714,7 @@
     {
       "id": "sc-100-agent-conditional-access",
       "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
-      "checked_at": "2026-09-28T05:41:04+00:00",
+      "checked_at": "2026-09-28T12:45:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
@@ -55640,7 +55728,7 @@
     {
       "id": "sc-100-agent-identities",
       "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities",
-      "checked_at": "2026-09-28T02:53:53+00:00",
+      "checked_at": "2026-09-28T12:42:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-identities",
@@ -55728,7 +55816,7 @@
     {
       "id": "sc-100-defender-cspm",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management",
-      "checked_at": "2026-09-28T02:53:53+00:00",
+      "checked_at": "2026-09-28T12:42:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management",
@@ -55742,7 +55830,7 @@
     {
       "id": "sc-100-defender-easm",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-easm",
-      "checked_at": "2026-09-28T02:53:53+00:00",
+      "checked_at": "2026-09-28T12:42:29+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-easm",
@@ -57292,7 +57380,7 @@
     {
       "id": "sc-300-partner-skilling-hub",
       "url": "https://www.skilling-hub.com/en-US",
-      "checked_at": "2026-09-28T12:15:56+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.skilling-hub.com/en-US",
@@ -57730,7 +57818,7 @@
     {
       "id": "sc-500-ai-gateway-capabilities",
       "url": "https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:32+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities",
@@ -57744,7 +57832,7 @@
     {
       "id": "sc-500-ai-threat-protection",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-threat-protection",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:32+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-threat-protection",
@@ -57758,7 +57846,7 @@
     {
       "id": "sc-500-az500-transition",
       "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#keep-skilling-on-track-as-az500-transitions-to-sc500",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#keep-skilling-on-track-as-az500-transitions-to-sc500",
@@ -57772,7 +57860,7 @@
     {
       "id": "sc-500-backup-security",
       "url": "https://learn.microsoft.com/en-us/azure/backup/security-overview",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:31+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/security-overview",
@@ -57786,7 +57874,7 @@
     {
       "id": "sc-500-blueprint",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500",
@@ -57802,7 +57890,7 @@
     {
       "id": "sc-500-copilot-studio-protection",
       "url": "https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:32+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/",
@@ -57816,7 +57904,7 @@
     {
       "id": "sc-500-credential",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
@@ -57833,7 +57921,7 @@
     {
       "id": "sc-500-data-ai-dashboard",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-aware-security-dashboard-overview",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:32+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-aware-security-dashboard-overview",
@@ -57847,7 +57935,7 @@
     {
       "id": "sc-500-defender-databases",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-introduction",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:31+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-introduction",
@@ -57861,7 +57949,7 @@
     {
       "id": "sc-500-defender-foundry-path",
       "url": "https://learn.microsoft.com/en-us/training/paths/defender-for-cloud-ai-foundry-protect/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:32+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/defender-for-cloud-ai-foundry-protect/",
@@ -57875,7 +57963,7 @@
     {
       "id": "sc-500-defender-key-vault",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-key-vault-introduction",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-key-vault-introduction",
@@ -57889,7 +57977,7 @@
     {
       "id": "sc-500-defender-storage",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:31+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction",
@@ -57903,7 +57991,7 @@
     {
       "id": "sc-500-instructor-course",
       "url": "https://learn.microsoft.com/en-us/training/courses/sc-500t00",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-500t00",
@@ -57917,7 +58005,7 @@
     {
       "id": "sc-500-john-savill-az500-cram",
       "url": "https://www.youtube.com/watch?v=6vISzj-z8k4",
-      "checked_at": "2026-09-01T12:43:44+00:00",
+      "checked_at": "2026-09-28T12:42:37+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/watch?v=6vISzj-z8k4",
@@ -57931,7 +58019,7 @@
     {
       "id": "sc-500-key-vault-network-security",
       "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/network-security",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/network-security",
@@ -57947,7 +58035,7 @@
     {
       "id": "sc-500-key-vault-rbac",
       "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide",
@@ -57961,7 +58049,7 @@
     {
       "id": "sc-500-learn-ai-security",
       "url": "https://learn.microsoft.com/en-us/training/paths/implement-ai-security/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-ai-security/",
@@ -57975,7 +58063,7 @@
     {
       "id": "sc-500-learn-app-platform",
       "url": "https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:35+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/",
@@ -57989,7 +58077,7 @@
     {
       "id": "sc-500-learn-defender-posture",
       "url": "https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:35+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/",
@@ -58003,7 +58091,7 @@
     {
       "id": "sc-500-learn-entra-access",
       "url": "https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/",
@@ -58017,7 +58105,7 @@
     {
       "id": "sc-500-learn-governance",
       "url": "https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/",
@@ -58031,7 +58119,7 @@
     {
       "id": "sc-500-learn-key-vault",
       "url": "https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/",
@@ -58045,7 +58133,7 @@
     {
       "id": "sc-500-learn-network",
       "url": "https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/",
@@ -58059,7 +58147,7 @@
     {
       "id": "sc-500-learn-security-copilot",
       "url": "https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:35+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/",
@@ -58073,7 +58161,7 @@
     {
       "id": "sc-500-learn-sentinel-collection",
       "url": "https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:35+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/",
@@ -58087,7 +58175,7 @@
     {
       "id": "sc-500-learn-server-vm",
       "url": "https://learn.microsoft.com/en-us/training/paths/server-vm-security/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:35+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/server-vm-security/",
@@ -58101,7 +58189,7 @@
     {
       "id": "sc-500-learn-sql",
       "url": "https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/",
@@ -58115,7 +58203,7 @@
     {
       "id": "sc-500-learn-storage",
       "url": "https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/",
@@ -58129,7 +58217,7 @@
     {
       "id": "sc-500-managed-identities",
       "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:30+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview",
@@ -58143,7 +58231,7 @@
     {
       "id": "sc-500-network-watcher-diagnostics",
       "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-network-configuration-diagnostics-overview",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:31+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-diagnostics-overview",
@@ -58157,7 +58245,7 @@
     {
       "id": "sc-500-oreilly-az500-legacy",
       "url": "https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:36+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/",
@@ -58171,7 +58259,7 @@
     {
       "id": "sc-500-pluralsight-az500-legacy",
       "url": "https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies",
@@ -58187,7 +58275,7 @@
     {
       "id": "sc-500-policy-effects",
       "url": "https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-basics",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:31+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-basics",
@@ -58201,7 +58289,7 @@
     {
       "id": "sc-500-regulatory-compliance",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/regulatory-compliance-dashboard",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T12:42:31+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/regulatory-compliance-dashboard",
@@ -58217,7 +58305,7 @@
     {
       "id": "sc-500-security-copilot-docs",
       "url": "https://learn.microsoft.com/en-us/copilot/security/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:33+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/copilot/security/",
@@ -58231,7 +58319,7 @@
     {
       "id": "sc-500-sentinel-defender-portal",
       "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
-      "checked_at": "2026-09-28T03:23:51+00:00",
+      "checked_at": "2026-09-28T12:42:32+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
@@ -58245,7 +58333,7 @@
     {
       "id": "sc-500-tim-warner-companion",
       "url": "https://github.com/timothywarner-org/sc500",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:36+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://github.com/timothywarner-org/sc500",
@@ -58261,39 +58349,21 @@
     {
       "id": "sc-500-udemy-alan-rodrigues",
       "url": "https://www.udemy.com/course/exam-azure-2/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-09-28T12:42:36+00:00",
+      "status": "blocked",
+      "http_status": 403,
       "final_url": "https://www.udemy.com/course/exam-azure-2/",
-      "content_type": "text/html; charset=utf-8",
-      "page_title": "SC-500 - Microsoft Certified: Cloud and AI Security Engineer",
-      "canonical_url": "https://www.udemy.com/course/exam-azure-2/",
-      "duration_signals": [
-        "1min",
-        "2hr 33min",
-        "3hr 22min",
-        "3hr 29min",
-        "3hr 53min",
-        "4hr 37min",
-        "5hr 24min",
-        "6hr 26min",
-        "6hr 50min",
-        "PT2H33M",
-        "PT3H22M",
-        "PT3H28M",
-        "PT3H53M",
-        "PT4H36M",
-        "PT5H23M",
-        "PT6H25M",
-        "PT6H50M"
-      ],
-      "signal_fingerprint": "71f783cff6c09f0712d920c4f1598beca16c7df1e4b07954b2090d6d53acc394",
-      "error": ""
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
+      "duration_signals": [],
+      "signal_fingerprint": "",
+      "error": "Forbidden"
     },
     {
       "id": "sc-500-udemy-john-christopher",
       "url": "https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
+      "checked_at": "2026-09-28T12:42:36+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/",
@@ -58307,16 +58377,16 @@
     {
       "id": "sc-500-udemy-practice-duffy",
       "url": "https://www.udemy.com/course/sc500-tests/",
-      "checked_at": "2026-09-01T12:43:43+00:00",
-      "status": "ok",
-      "http_status": 200,
+      "checked_at": "2026-09-28T12:42:36+00:00",
+      "status": "blocked",
+      "http_status": 403,
       "final_url": "https://www.udemy.com/course/sc500-tests/",
-      "content_type": "text/html; charset=utf-8",
-      "page_title": "SC-500 Cloud and AI Security Engineer Practice Tests",
-      "canonical_url": "https://www.udemy.com/course/sc500-tests/",
+      "content_type": "",
+      "page_title": "",
+      "canonical_url": "",
       "duration_signals": [],
-      "signal_fingerprint": "43075fae3a0560ca9193097496e4df5b97b4847a7d1fb2c1f05e3bfbe43d82e4",
-      "error": ""
+      "signal_fingerprint": "",
+      "error": "Forbidden"
     },
     {
       "id": "sc-900-blueprint",

@@ -667,6 +667,8 @@ The review maps every April 27, 2026 subobjective to an identity lifecycle, dele
 
 ## SC-500 coverage record
 
+The September 28 [deep review](research/2026-09-28-sc-500-deep-review.md) maps 87 detailed objectives. All 87 objectives mapped against unchanged May 2026 page baseline. Seven worked examples, ten labs, 48 answered checks and 39 local assertions. Update identity/KeyVault/AI coverage,Sentinel/Copilot boundaries,release dates,blogs and 63-placement training catalog. No live infrastructure or paid-content execution; human review pending. Current guide citations: 62 registered, 58 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Manage identity, access, and governance | Section 1, all integrated scenarios, and Labs 1–3 |

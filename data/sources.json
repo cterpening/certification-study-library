@@ -3,6 +3,90 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "sc500-multicloud-matrix",
+      "title": "Defender multicloud workload support",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Main introductory summary and database-plan support rows read; full server/container/feature matrix not audited. Correct broad use of an introduction URL now specific to open-source relational databases. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc500-vault-schema",
+      "title": "Key Vault resource schema",
+      "url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.keyvault/vaults",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: PublicNetworkAccess property definition checked through primary browser result; full generated API/schema not audited. Explicit trusted-service exception supports qualified guide wording. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc500-ai-posture",
+      "title": "AI security posture",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Complete main AI workload/agent discovery and risk sections read. July1 Agent365 agent-level licensing distinguished from CSPM account/project discovery. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc500-scanning",
+      "title": "Agentless VM scanning",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-agentless-data-collection",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Main capabilities, plan context, snapshot architecture and initial Azure/AWS permissions sections read; complete supported disk/cloud/feature matrix not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc500-copilot-roles",
+      "title": "Security Copilot authentication",
+      "url": "https://learn.microsoft.com/en-us/copilot/security/authentication",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Main platform/source OBO roles, inherited owner/recommended contributor/defaultEveryone, source roles and group restrictions read; full capability matrix and assignment procedures not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc500-lake-retention",
+      "title": "Sentinel data lake retention",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboarding",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Selected encryption/region/workspace/prerequisite, auxiliary-table, billing/identity and onboarding/offboarding sections read; step-by-step execution/role paths not validated. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "pl900-upload-permissions",
       "title": "Uploaded file permissions",
       "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-documents",
@@ -3809,9 +3893,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-104"
+        "AZ-104",
+        "SC-500"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected SAS types, signing, stored-policy eligibility/limit and revocation guidance read. Full REST/version limits not audited; no SAS generated. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected SAS types, signing, stored-policy eligibility/limit and revocation guidance read. Full REST/version limits not audited; no SAS generated. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az104-replication",
@@ -8458,12 +8543,13 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-100",
-        "SC-900"
+        "SC-900",
+        "SC-500"
       ],
-      "notes": "September 27 SC-100 deep review: Targeted July-September 2026 entries read, including new-subscription CSPM opt-in, CIEM unused-action changes, individual recommendations and upcoming VA retirement. No claim to review every historical release entry. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Targeted July new-subscription opt-in and score distinctions reviewed, not every release entry. October change remains future as of review. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Targeted July-September 2026 entries read, including new-subscription CSPM opt-in, CIEM unused-action changes, individual recommendations and upcoming VA retirement. No claim to review every historical release entry. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Targeted July new-subscription opt-in and score distinctions reviewed, not every release entry. October change remains future as of review. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: September,August and selectedJuly entries read:CVEresource,CIEMunusedactions,groupedrecommendations,CSPMopt-in,SQLAPIretirement. Remaining71k-character history not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc100-ciem",
@@ -8573,11 +8659,12 @@
       "authority_class": 2,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-100"
+        "SC-100",
+        "SC-500"
       ],
-      "notes": "September 27 SC-100 deep review: Rob Lefferts, September 23, 2026. Public article read; accept a supervised signal/context/action exercise. ISOC explicitly preview; no video, deployment or performance test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Rob Lefferts, September 23, 2026. Public article read; accept a supervised signal/context/action exercise. ISOC explicitly preview; no video, deployment or performance test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Complete main RobLefferts September23 article read; accept integration/telemetry-to-action discussion, keep preview. Recording and linked whitepaper not accessed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc100-storm-blog",
@@ -8587,12 +8674,13 @@
       "authority_class": 2,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-100",
-        "SC-200"
+        "SC-200",
+        "SC-500"
       ],
-      "notes": "September 27 SC-100 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25, 2026. Public article read; accept credential/recovery tabletop, preserving uncertainty about initial access and unconfirmed exfiltration/ransom. No destructive reproduction or gated intelligence review. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25 2026. Public investigation reread for operator evidence timeline; no gated research or destructive reproduction. Initial credential path/exfiltration/ransom remain unconfirmed. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25, 2026. Public article read; accept credential/recovery tabletop, preserving uncertainty about initial access and unconfirmed exfiltration/ransom. No destructive reproduction or gated intelligence review. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25 2026. Public investigation reread for operator evidence timeline; no gated research or destructive reproduction. Initial credential path/exfiltration/ransom remain unconfirmed. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Main introduction/incident overview/uncertain initial compromise and mitigation section read; detailed detections/IoCs not exhaustively reviewed. Accept defensive credential/scope/recovery exercise; no destructive reproduction. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb330-units",
@@ -13605,7 +13693,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 180-character shell; discovery reference only. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 180-character shell; discovery reference only. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: 180-character channel shell; no current SC500-specific path verified. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -16608,7 +16696,7 @@
         "SC-900",
         "MS-102"
       ],
-      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-domain-services-overview",
@@ -17830,7 +17918,7 @@
         "SC-500",
         "MS-102"
       ],
-      "notes": "September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-id-protection-overview-sc900",
@@ -19809,7 +19897,7 @@
         "AZ-700",
         "SC-500"
       ],
-      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-firewall-documentation",
@@ -21723,8 +21811,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800", "SC-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-800",
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Complete main current overview and QuickAccess/per-app distinction read; linked protocol/client support matrix not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-800-azure-relay",
@@ -22162,8 +22254,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-801", "AZ-802", "SC-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-801",
+        "AZ-802",
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     }
     ,
     {
@@ -22295,9 +22392,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-801", "SC-500"],
-      "notes": "Current documentation includes the September 15, 2028 Azure Disk Encryption retirement and replacement direction."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-801",
+        "SC-500"
+      ],
+      "notes": "Current documentation includes the September 15, 2028 Azure Disk Encryption retirement and replacement direction. September 28 SC-500 deep review: Main encryption-type and September15,2028 retirement sections plus initial table inspected. Migration includesADEbackups; full supportedVM matrix not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     }
     ,
     {
@@ -28785,9 +28885,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100", "SC-500"],
-      "notes": "Agent identity types, licensing, supported flows, and lifecycle behavior are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-100",
+        "SC-500"
+      ],
+      "notes": "Agent identity types, licensing, supported flows, and lifecycle behavior are volatile. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-agent-conditional-access",
@@ -28800,9 +28903,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-100",
-        "AB-650"
+        "AB-650",
+        "SC-500"
       ],
-      "notes": "Policy targeting, licensing, limitations, and supported access patterns are volatile. September 28 AB-650 deep review: Access patterns, subject/audience, blueprint and API-key boundaries read; no token or policy execution. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+      "notes": "Policy targeting, licensing, limitations, and supported access patterns are volatile. September 28 AB-650 deep review: Access patterns, subject/audience, blueprint and API-key boundaries read; no token or policy execution. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Main prerequisites, subjects/audiences, delegated/app-only/agent-user flows and limitations read. All-users excludes agent-user accounts; API-key access bypasses Entra pipeline. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-privileged-access",
@@ -28834,8 +28938,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100", "SC-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-100",
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-exposure-attack-paths",
@@ -28860,8 +28968,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100", "SC-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-100",
+        "SC-500"
+      ],
+      "notes": "September 28 SC-500 deep review: Complete main CSPM/EASM integration and outside-in capabilities read; no independent asset discovery executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-global-secure-access",
@@ -30103,7 +30215,7 @@
         "MB-800",
         "MB-820"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Public shell only. Signed-in schedule, eligibility and duration unverified. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Public login shell only; session eligibility/schedule requires sign-in and was not verified. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 MB-230 deep review: Partner landing/login shell only; current course entitlement/event duration not reverified. See docs/research/2026-09-28-mb-230-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Login/client shell only; no signed-in event or exact schedule verified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution. September 28 MB-500 deep review: Login/client shell only; no event schedule verified. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution. September 28 MB-800 deep review: Login/client shell only; signed-in events not verified. See docs/research/2026-09-28-mb-800-deep-review.md No live infrastructure execution. September 28 MB-820 deep review: Client/login shell only; no signed-in schedule verified. See docs/research/2026-09-28-mb-820-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Public shell only. Signed-in schedule, eligibility and duration unverified. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Public login shell only; session eligibility/schedule requires sign-in and was not verified. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 MB-230 deep review: Partner landing/login shell only; current course entitlement/event duration not reverified. See docs/research/2026-09-28-mb-230-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Login/client shell only; no signed-in event or exact schedule verified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution. September 28 MB-500 deep review: Login/client shell only; no event schedule verified. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution. September 28 MB-800 deep review: Login/client shell only; signed-in events not verified. See docs/research/2026-09-28-mb-800-deep-review.md No live infrastructure execution. September 28 MB-820 deep review: Client/login shell only; no signed-in schedule verified. See docs/research/2026-09-28-mb-820-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: 68-character shell; no signed-in SC500 schedule/curriculum confirmed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -30113,11 +30225,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Authoritative objective list; page last updated May 13, 2026 and publishes no separate skills-effective date."
+      "notes": "Authoritative objective list; page last updated May 13, 2026 and publishes no separate skills-effective date. September 28 SC-500 deep review: All87 objectives across12 groups read and mapped; May13 page-update baseline has no separately published skills-effective date. Objective/status hashes unchanged. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-credential",
@@ -30127,11 +30239,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Active intermediate credential; 120-minute assessment, English currently listed, sandbox available, and Practice Assessment not yet available."
+      "notes": "Active intermediate credential; 120-minute assessment, English currently listed, sandbox available, and Practice Assessment not yet available. September 28 SC-500 deep review: Main overview, duration/language and absent-assessment notice read:120minutes,10 languages, active/nonbeta, no retirement. Eight-week assessment language is usual timing, not guaranteed publication. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-az500-transition",
@@ -30141,11 +30253,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Microsoft announcement that AZ-500 retired August 31, 2026 and SC-500 is the replacement with cloud and AI protection scope."
+      "notes": "Microsoft announcement that AZ-500 retired August 31, 2026 and SC-500 is the replacement with cloud and AI protection scope. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-managed-identities",
@@ -30155,11 +30267,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "System-assigned and user-assigned identity lifecycle, token acquisition, and authorization boundary."
+      "notes": "System-assigned and user-assigned identity lifecycle, token acquisition, and authorization boundary. September 28 SC-500 deep review: Main definition, benefits and lifecycle/type sections read; later complete difference matrix not audited. Reuse expands potential scope but user-assigned identity remains recommended for many services. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-key-vault-rbac",
@@ -30169,11 +30281,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Recommended data-plane RBAC model, roles, scope, and comparison with legacy access policies."
+      "notes": "Recommended data-plane RBAC model, roles, scope, and comparison with legacy access policies. September 28 SC-500 deep review: Selected API2026-02-01 default, control/data plane, built-in roles/scope and model-change permission sections read; full CLI examples not executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-key-vault-network-security",
@@ -30183,11 +30295,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Public access, firewall, service endpoint, private endpoint, trusted-services, and Network Security Perimeter choices."
+      "notes": "Public access, firewall, service endpoint, private endpoint, trusted-services, and Network Security Perimeter choices. September 28 SC-500 deep review: Selected firewall/trusted-service, disabled-public, DNS, data/control-plane and perimeter-limit sections read. Broad private-only wording qualified with explicit exception and resource schema. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-defender-key-vault",
@@ -30197,11 +30309,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Workload threat protection for suspicious Key Vault operations, dependencies, and alert context."
+      "notes": "Workload threat protection for suspicious Key Vault operations, dependencies, and alert context. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-policy-effects",
@@ -30211,11 +30323,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Effect evaluation, supported behavior, and ordering for audit, deny, modify, and deployment effects."
+      "notes": "Effect evaluation, supported behavior, and ordering for audit, deny, modify, and deployment effects. September 28 SC-500 deep review: Main effect list, valid interchange, evaluation order and layered-policy example read; linked effect references not exhaustively reviewed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-regulatory-compliance",
@@ -30225,11 +30337,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Standards, assessments, scope, prerequisites, and compliance-dashboard interpretation."
+      "notes": "Standards, assessments, scope, prerequisites, and compliance-dashboard interpretation. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-backup-security",
@@ -30239,11 +30351,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Soft delete, immutability, multi-user authorization, Resource Guard, encryption, and monitoring controls."
+      "notes": "Soft delete, immutability, multi-user authorization, Resource Guard, encryption, and monitoring controls. September 28 SC-500 deep review: Selected identity/isolation, VM/private-network, encryption and soft-delete/security-posture sections read; full workload/retention matrix not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-defender-storage",
@@ -30253,11 +30365,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Activity monitoring, malware scanning, sensitive-data threat detection, scope, and plan behavior."
+      "notes": "Activity monitoring, malware scanning, sensitive-data threat detection, scope, and plan behavior. September 28 SC-500 deep review: Main feature/enforcement integration and selected pricing/cap sections read; complete per-protocol plan support not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-defender-databases",
@@ -30267,11 +30379,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Database workload-protection family, supported services, alerting, and vulnerability capabilities."
+      "notes": "Database workload-protection family, supported services, alerting, and vulnerability capabilities. September 28 SC-500 deep review: Complete current main page read:now specifically OpenSourceRelationalDatabases, Azure/AWS supported engines and no Arc. Does not serve as a universal SQL-plan support matrix. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-network-watcher-diagnostics",
@@ -30281,11 +30393,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Effective NSG/security-admin-rule evaluation for an intended network flow."
+      "notes": "Effective NSG/security-admin-rule evaluation for an intended network flow. September 28 SC-500 deep review: Complete main NSG-diagnostics overview, priorities and supported target list read. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-copilot-studio-protection",
@@ -30295,11 +30407,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Current official module for configuration in Defender and verification of inventory, alerts, and Advanced Hunting output."
+      "notes": "Current official module for configuration in Defender and verification of inventory, alerts, and Advanced Hunting output. September 28 SC-500 deep review: Complete public module overview, objectives and six-unit list read; linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-ai-gateway-capabilities",
@@ -30309,11 +30421,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Model, agent and tool gateway controls; tier-dependent and preview boundaries including Foundry integration."
+      "notes": "Model, agent and tool gateway controls; tier-dependent and preview boundaries including Foundry integration. September 28 SC-500 deep review: Main model/schema/provider, gateway identity, capability/tier and unified-model-preview sections read; full feature matrix not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-ai-threat-protection",
@@ -30323,11 +30435,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Defender for AI Services runtime coverage, XDR integration, supported services, roles, plans, and availability."
+      "notes": "Defender for AI Services runtime coverage, XDR integration, supported services, roles, plans, and availability. September 28 SC-500 deep review: Complete main overview/support/pricing table read:text-only,supportedAzuremodels,commercialAzure,30day/75billion-token trial cap. No live protection check. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-defender-foundry-path",
@@ -30337,11 +30449,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Supplementary 2-hour-42-minute path covering AI posture, runtime protection, XDR investigation, and Foundry guardrails."
+      "notes": "Supplementary 2-hour-42-minute path covering AI posture, runtime protection, XDR investigation, and Foundry guardrails. September 28 SC-500 deep review: Complete public overview and four module titles/descriptions read; linked units not read/executed, not included in the12-path63-placement count. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-data-ai-dashboard",
@@ -30351,11 +30463,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Asset, sensitive-data, exposure, recommendation, attack-path, alert, and protection-coverage view with plan prerequisites."
+      "notes": "Asset, sensitive-data, exposure, recommendation, attack-path, alert, and protection-coverage view with plan prerequisites. September 28 SC-500 deep review: Main overview, plan/extension/provider prerequisites, data and AI coverage sections read; later complete investigations not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-sentinel-defender-portal",
@@ -30365,14 +30477,14 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500",
         "SC-100",
         "SC-200",
         "SC-900"
       ],
-      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027. September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027. September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 SC-500 deep review: Main availability and March31,2027 transition sections read; full portal comparison matrix not audited. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-security-copilot-docs",
@@ -30382,11 +30494,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Current workspaces, roles, capacity, plugins, promptbooks, agents, and operating documentation."
+      "notes": "Current workspaces, roles, capacity, plugins, promptbooks, agents, and operating documentation. September 28 SC-500 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-instructor-course",
@@ -30396,11 +30508,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Four-day instructor-led course with twelve linked self-paced paths."
+      "notes": "Four-day instructor-led course with twelve linked self-paced paths. September 28 SC-500 deep review: Complete public course overview/language/duration list read:Implement end-to-end security controls for cloud and AI workloads,4days,10languages. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-entra-access",
@@ -30410,11 +30522,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Three modules, 1 hour 30 minutes listed."
+      "notes": "Three modules, 1 hour 30 minutes listed. September 28 SC-500 deep review: Complete public overview and3 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-key-vault",
@@ -30424,11 +30536,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Four modules, 1 hour 44 minutes listed."
+      "notes": "Four modules, 1 hour 44 minutes listed. September 28 SC-500 deep review: Complete public overview and4 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-governance",
@@ -30438,11 +30550,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Six modules, 2 hours 23 minutes listed."
+      "notes": "Six modules, 2 hours 23 minutes listed. September 28 SC-500 deep review: Complete public overview and6 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-storage",
@@ -30452,11 +30564,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Four modules, 1 hour 40 minutes listed."
+      "notes": "Four modules, 1 hour 40 minutes listed. September 28 SC-500 deep review: Complete public overview and4 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-sql",
@@ -30466,11 +30578,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Three modules, 1 hour 2 minutes listed."
+      "notes": "Three modules, 1 hour 2 minutes listed. September 28 SC-500 deep review: Complete public overview and3 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-network",
@@ -30480,12 +30592,12 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500",
         "PANW-CLOUD-SECURITY-PROFESSIONAL"
       ],
-      "notes": "Four modules, 2 hours 52 minutes listed."
+      "notes": "Four modules, 2 hours 52 minutes listed. September 28 SC-500 deep review: Complete public overview and4 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-ai-security",
@@ -30495,11 +30607,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Nine modules, 3 hours 59 minutes listed."
+      "notes": "Nine modules, 3 hours 59 minutes listed. September 28 SC-500 deep review: Complete public overview and9 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-server-vm",
@@ -30509,11 +30621,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Seven modules, 2 hours 57 minutes listed."
+      "notes": "Seven modules, 2 hours 57 minutes listed. September 28 SC-500 deep review: Complete public overview and7 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-app-platform",
@@ -30523,11 +30635,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Six modules, 3 hours 9 minutes listed."
+      "notes": "Six modules, 3 hours 9 minutes listed. September 28 SC-500 deep review: Complete public overview and6 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-defender-posture",
@@ -30537,11 +30649,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Six modules, 3 hours 33 minutes listed."
+      "notes": "Six modules, 3 hours 33 minutes listed. September 28 SC-500 deep review: Complete public overview and6 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-sentinel-collection",
@@ -30551,11 +30663,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Eight modules, 3 hours 38 minutes listed."
+      "notes": "Eight modules, 3 hours 38 minutes listed. September 28 SC-500 deep review: Complete public overview and8 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-learn-security-copilot",
@@ -30565,25 +30677,25 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Three modules, 1 hour 41 minutes listed."
+      "notes": "Three modules, 1 hour 41 minutes listed. September 28 SC-500 deep review: Complete public overview and3 module titles/descriptions read; no runtimes exposed. Linked units not read/executed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-tim-warner-companion",
       "title": "SC-500 Cloud and AI Security Engineer course companion",
       "url": "https://github.com/timothywarner-org/sc500",
       "publisher": "Tim Warner",
-      "authority_class": 2,
+      "authority_class": 5,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "MIT-licensed 15-lesson public companion with demos and an objective map; active development for a separately licensed Pearson/Microsoft Press video course."
+      "notes": "MIT-licensed 15-lesson public companion with demos and an objective map; active development for a separately licensed Pearson/Microsoft Press video course. September 28 SC-500 deep review: Public root and README course outline/usage/prerequisites/license read;15lessons/~10h author claims, in-development. Scripts/lessons/issues not audited. No current publisher course listing established. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-udemy-alan-rodrigues",
@@ -30593,11 +30705,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Alan Rodrigues course lists 36 hours 10 minutes, four new SC-500 sections, and an August 2026 update; independently verify AI coverage."
+      "notes": "Alan Rodrigues course lists 36 hours 10 minutes, four new SC-500 sections, and an August 2026 update; independently verify AI coverage. September 28 SC-500 deep review: Direct blocked; public indexed provider metadata read:September2026,11sections460lectures36h35. Paid syllabus coverage not verified. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-udemy-john-christopher",
@@ -30607,11 +30719,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "John Christopher course lists 18 hours 31 minutes, simulations, and August 2026 update; verify all current AI and Agent ID objectives."
+      "notes": "John Christopher course lists 18 hours 31 minutes, simulations, and August 2026 update; verify all current AI and Agent ID objectives. September 28 SC-500 deep review: Direct blocked; public indexed provider frontend listing read:August2026,17sections151lectures18h31. Paid lessons not viewed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-udemy-practice-duffy",
@@ -30621,11 +30733,11 @@
       "authority_class": 4,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Scott Duffy and Jordi Koenderink; four tests/100 questions, updated August 2026, and explicitly states questions are not actual exam items."
+      "notes": "Scott Duffy and Jordi Koenderink; four tests/100 questions, updated August 2026, and explicitly states questions are not actual exam items. September 28 SC-500 deep review: Direct blocked; public indexed provider metadata read:August2026,four25-question tests,total100. No questions read or attempted. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-pluralsight-az500-legacy",
@@ -30635,11 +30747,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "12 hours 31 minutes and practice exam listed; retired AZ-500 foundation only, not complete for SC-500 AI/agent scope."
+      "notes": "12 hours 31 minutes and practice exam listed; retired AZ-500 foundation only, not complete for SC-500 AI/agent scope. September 28 SC-500 deep review: Complete six-entry course/five-lab public list and runtimes read:46h27courseentries,3h30labs=49h57(header50h). Old12h31 was practice entry alone; paid content not viewed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-oreilly-az500-legacy",
@@ -30649,11 +30761,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "Tim Warner, January 2022, 8 hours 34 minutes; legacy Azure-security foundation that predates SC-500 AI and agent objectives."
+      "notes": "Tim Warner, January 2022, 8 hours 34 minutes; legacy Azure-security foundation that predates SC-500 AI and agent objectives. September 28 SC-500 deep review: Direct blocked; previous8h34/January2022 clearly retained as historical/unverified, no paid video accessed. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-john-savill-az500-cram",
@@ -30663,11 +30775,11 @@
       "authority_class": 2,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-500"
       ],
-      "notes": "2-hour-54-minute legacy AZ-500 foundation; predates SC-500 and all current AI/agent objectives."
+      "notes": "2-hour-54-minute legacy AZ-500 foundation; predates SC-500 and all current AI/agent objectives. September 28 SC-500 deep review: 218-character shell; historical2h54 not re-established, no video watched. See docs/research/2026-09-28-sc-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-102-practice-assessment",

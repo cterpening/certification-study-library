@@ -2128,30 +2128,46 @@
       "notes": "Whole guide read; 98 April objectives in 16 groups mapped, accepted baseline unchanged. Official authentication-domain weight conflict remains open. Add five examples, two labs (ten total), answers to 36 existing checks plus 12 new answered checks (48 total), two qualified blog tasks and six follow-ups. Expand restricted roles, hybrid maintenance, CBA/Kerberos, baseline scopes/risk/workload CA, GSA, managed-identity caching, review removal/PIM timing, file migration and retained evidence. Ten offline checks passed; no tenant or KQL execution; human review pending. See docs/research/2026-09-28-sc-300-deep-review.md"
     },
     {
-      "id": "sc-500-2026-09-01-source-validation",
+      "id": "sc-500-2026-09-28-source-validation",
       "exam_code": "SC-500",
       "guide_path": "guides/SC-500-microsoft-cloud-ai-security-engineer.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/sc-500-official-objectives.txt",
       "blueprint_snapshot_sha256": "9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6",
       "objective_coverage": [
         {
           "objective_group": "Manage identity, access, and governance",
-          "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–3"]
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
         },
         {
           "objective_group": "Secure storage, databases, and networking",
-          "guide_sections": ["Section 2", "All integrated scenarios", "Labs 4–5"]
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4–5"
+          ]
         },
         {
           "objective_group": "Secure compute",
-          "guide_sections": ["Section 3", "AI/platform/hybrid scenarios", "Labs 6–8"]
+          "guide_sections": [
+            "Section 3",
+            "AI/platform/hybrid scenarios",
+            "Labs 6–8"
+          ]
         },
         {
           "objective_group": "Manage and monitor security posture",
-          "guide_sections": ["Section 4", "All integrated scenarios", "Labs 3 and 7–8"]
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3 and 7–8"
+          ]
         }
       ],
       "checks": {
@@ -2162,12 +2178,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 51,
-        "reachable": 49,
-        "access_blocked": 2,
+        "unique_external_links": 62,
+        "reachable": 58,
+        "access_blocked": 4,
         "missing_or_error": 0
       },
-      "notes": "Every objective on the official page last updated May 13, 2026 is mapped to an identity, authorization, data, network, compute, posture, monitoring, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover PIM/Conditional Access/app and workload identity; Key Vault; Policy/compliance/RBAC/Backup/IaC; Storage/SQL/networking; SharePoint, Copilot Studio, Entra Agent ID, AI Gateway, Defender for AI Services, Foundry guardrails, and the Data and AI dashboard; servers/VMs/Arc; containers and application platforms; Defender posture/multicloud/EASM; Sentinel collection/automation/retention/Purview; and Security Copilot. All 51 cited URLs are cataloged: 49 were reachable and the O'Reilly legacy video and one Udemy course returned access-blocked HTTP 403; none was missing or broken. The guide verifies the active exam, 120-minute duration, absent Practice Assessment, August 31, 2026 AZ-500 retirement, 30 hours 8 minutes of current official Learn paths, and the MIT-licensed Tim Warner companion. It labels AZ-500-only resources as incomplete legacy foundations and marks AI, Agent ID, Gateway, Defender plan, disk-encryption, Sentinel portal, and Security Copilot transitions for re-verification. No upcoming blueprint change or SC-500 retirement was announced."
+      "notes": "All 87 objectives mapped against unchanged May 2026 page baseline. Seven worked examples, ten labs, 48 answered checks and 39 local assertions. Update identity/KeyVault/AI coverage,Sentinel/Copilot boundaries,release dates,blogs and 63-placement training catalog. No live infrastructure or paid-content execution; human review pending. See docs/research/2026-09-28-sc-500-deep-review.md"
     },
     {
       "id": "ms-102-2026-09-28-source-validation",
@@ -11962,6 +11978,64 @@
         "missing_or_error": 0
       },
       "notes": "All five weighted objective groups and their July 24, 2026 bullets are mapped to responsibility boundaries, worked request/execution paths, an integrated scenario, and an end-to-end lab. All 46 cited URLs are exact source-catalog entries: 44 reachable and two access-blocked. The September 7 watch adds the AI at Work transition, platform deprecations, current harness terminology, and the Agent 365 product-versus-feature boundary. Plans, licenses, rollout, limits, and preview status remain explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "sc-500-2026-09-01-source-validation",
+      "exam_code": "SC-500",
+      "guide_path": "guides/SC-500-microsoft-cloud-ai-security-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage identity, access, and governance",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Secure storage, databases, and networking",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Secure compute",
+          "guide_sections": [
+            "Section 3",
+            "AI/platform/hybrid scenarios",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Manage and monitor security posture",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3 and 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 51,
+        "reachable": 49,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every objective on the official page last updated May 13, 2026 is mapped to an identity, authorization, data, network, compute, posture, monitoring, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover PIM/Conditional Access/app and workload identity; Key Vault; Policy/compliance/RBAC/Backup/IaC; Storage/SQL/networking; SharePoint, Copilot Studio, Entra Agent ID, AI Gateway, Defender for AI Services, Foundry guardrails, and the Data and AI dashboard; servers/VMs/Arc; containers and application platforms; Defender posture/multicloud/EASM; Sentinel collection/automation/retention/Purview; and Security Copilot. All 51 cited URLs are cataloged: 49 were reachable and the O'Reilly legacy video and one Udemy course returned access-blocked HTTP 403; none was missing or broken. The guide verifies the active exam, 120-minute duration, absent Practice Assessment, August 31, 2026 AZ-500 retirement, 30 hours 8 minutes of current official Learn paths, and the MIT-licensed Tim Warner companion. It labels AZ-500-only resources as incomplete legacy foundations and marks AI, Agent ID, Gateway, Defender plan, disk-encryption, Sentinel portal, and Security Copilot transitions for re-verification. No upcoming blueprint change or SC-500 retirement was announced."
     }
   ]
 }

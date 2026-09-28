@@ -6,21 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # SC-500 Microsoft Cloud and AI Security Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). The [official SC-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-500-coverage-record). The [official SC-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) is authoritative.
 
 **Current baseline:** The official study-guide page was last updated May 13, 2026; Microsoft publishes no separate skills-effective date on that page.<br>
 **Exam state:** Active and no longer labeled beta; the credential page lists no retirement date.<br>
 **Transition:** AZ-500 retired on August 31, 2026. SC-500 is its active successor and adds substantial AI, agent, Microsoft 365, and modern posture content; an AZ-500-only resource is not complete SC-500 preparation. Microsoft documented the transition in its [May 2026 announcement](https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#keep-skilling-on-track-as-az500-transitions-to-sc500).<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Practice Assessment:** Not currently available. Microsoft says one is usually published within eight weeks after an exam leaves beta and becomes generally available. **VERIFY CURRENT** on the credential page.<br>
 **Official source:** [SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500)
+
+The [September deep-review report](../docs/research/2026-09-28-sc-500-deep-review.md) maps all 87 objectives. The blueprint is unchanged; the updates below distinguish current product support, release announcements, and original practice exercises.
 
 ## How to use this guide
 
@@ -37,13 +39,13 @@ business asset and threat
   -> evidence, exception, owner, and revalidation date
 ```
 
-Read Sections 1–4, work the three integrated scenarios, complete or tabletop all eight labs, and answer the 36 original checks. Use disposable tenants and subscriptions, synthetic data, budgets, and explicit teardown plans. Defender plans, Security Copilot, Microsoft 365 security features, private networking, firewalls, and AI services can create license or consumption charges. Never weaken or expose a production environment simply to reproduce an exercise.
+Read Sections 1–4, work the three integrated scenarios, complete or tabletop all ten labs, and answer the 48 original answered checks. Use disposable tenants and subscriptions, synthetic data, budgets, and explicit teardown plans. Defender plans, Security Copilot, Microsoft 365 security features, private networking, firewalls, and AI services can create license or consumption charges. Never weaken or expose a production environment simply to reproduce an exercise.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
 ## Exam profile and complete objective map
 
-The credential is intermediate. Microsoft expects practical Azure and hybrid administration across compute, networking, and storage; strong Microsoft Entra familiarity; and Microsoft 365 administration familiarity. The current credential page lists 120 minutes, English availability, and an exam sandbox, but no Practice Assessment. Confirm administrative details on the [Cloud and AI Security Engineer Associate credential page](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/).
+The credential is intermediate. Microsoft expects practical Azure and hybrid administration across compute, networking, and storage; strong Microsoft Entra familiarity; and Microsoft 365 administration familiarity. The current credential page lists 120 minutes, ten exam languages, and an exam sandbox, but no Practice Assessment. Confirm administrative details on the [Cloud and AI Security Engineer Associate credential page](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/).
 
 | Official domain | Weight | Engineering question |
 |---|---:|---|
@@ -114,9 +116,11 @@ OAuth consent is authorization to call an API, not a general declaration that an
 
 Choose vault ownership, region, recovery, tenant, network access, authorization model, logging, private DNS, and object lifecycle before inserting secrets. Enable soft delete and purge protection according to recovery requirements. Separate control-plane permission to configure the vault from data-plane permission to read keys, secrets, or certificates.
 
-Prefer Azure RBAC for new deployments because it provides a consistent role-assignment model, supports PIM, and separates key, secret, and certificate duties through built-in roles. Legacy vault access policies remain supported in some environments, but a principal with control-plane permission to change access policies may grant itself data-plane access. Do not mix authorization models casually. Microsoft's [Key Vault RBAC guide](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide) explains recommended built-in roles and scope.
+With Key Vault API version **2026-02-01 and later**, RBAC is the default authorization model for newly created vaults; this does not automatically migrate existing access-policy vaults. Prefer Azure RBAC for new deployments because it provides a consistent role-assignment model, supports PIM, and separates key, secret, and certificate duties through built-in roles. Legacy vault access policies remain supported in some environments, but a principal with control-plane permission to change access policies may grant itself data-plane access. Do not mix authorization models casually. Microsoft's [Key Vault RBAC guide](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide) explains recommended built-in roles and scope.
 
 Network controls are independent of identity controls. Public endpoint access can be allowed, restricted to selected networks, or disabled in favor of private endpoints. A private endpoint requires correct VNet routing and private DNS resolution; merely creating it does not stop use of the public endpoint. Service endpoints and trusted-service exceptions have different trust semantics. Verify both allowed and denied paths using the same DNS resolver and network context that the workload uses. See [Key Vault network security](https://learn.microsoft.com/en-us/azure/key-vault/general/network-security).
+
+Do not treat `publicNetworkAccess: Disabled` as proof that every non-private-endpoint path is blocked. The [vault resource schema](https://learn.microsoft.com/en-us/azure/templates/microsoft.keyvault/vaults) and detailed network documentation retain the trusted-service exception. Review the bypass setting and supported service/scenario; Azure DevOps is not generally on that list. The network page’s broad “private endpoint only” wording must be read with this explicit exception. Network Security Perimeter enforcement has different exception behavior. Test the actual caller, DNS, route, and authorization together.
 
 Manage each object as a lifecycle:
 
@@ -150,6 +154,8 @@ Start with data classification and access pattern, then choose account type, red
 
 Prefer Microsoft Entra authorization and data-plane RBAC for supported workloads. Shared Key authorizes broadly and enables account-level SAS, so disable Shared Key when every dependency supports Entra. A service SAS scopes to one service; an account SAS can span services; a user-delegation SAS is signed using an Entra-derived user delegation key and is preferred for Blob scenarios. Limit service, resource type, permission, start/expiry, IP/protocol, and stored access policy where supported. Do not place SAS tokens in source, tickets, shell history, or durable logs.
 
+A [stored access policy](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview) applies to a service SAS, not an account SAS or user-delegation SAS. Choose a revocation strategy that matches the credential type. A resource lock does not prevent data-plane deletion through an otherwise authorized credential.
+
 Storage firewall rules control the public endpoint. Selected VNets, IP rules, resource instance rules, and trusted-service exceptions are distinct decisions. Private endpoints give a private IP for a service subresource such as Blob or File; configure every required subresource and private DNS zone, validate on-premises resolution, and explicitly disable or constrain public access. A service endpoint keeps the PaaS public endpoint but conveys VNet identity; it is not Private Link.
 
 Encryption at rest is enabled by default, but customer-managed keys add Key Vault/Managed HSM availability, identity, version, rotation, and recovery dependencies. Infrastructure encryption adds a second encryption layer for supported accounts. Object versioning, soft delete, point-in-time restore, immutable storage, and backup solve different failure modes. Design retention and legal hold without preventing legitimate lifecycle or recovery operations.
@@ -168,7 +174,7 @@ Constrain network access with firewall rules or private endpoints, private DNS, 
 
 Use transparent data encryption for at-rest database files and backups; customer-managed TDE protectors add key lifecycle and availability responsibility. Always Encrypted protects selected columns from the database engine under supported client patterns. Dynamic data masking reduces casual display but is not an authorization boundary, and row-level security filters rows based on execution context. Choose based on the threat actor and required query behavior.
 
-Azure SQL auditing records selected database events to configured destinations such as Storage, Log Analytics, or Event Hubs. Decide server- versus database-level policy, action groups, identity and destination access, retention, tamper resistance, alerting, query procedure, and failure monitoring. Auditing is evidence, not prevention. Defender for Databases is a family of workload plans across Azure database services; plan selection, vulnerability assessment, alert coverage, and onboarding differ by engine. Confirm the current matrix in [Defender for databases](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-introduction).
+Azure SQL auditing records selected database events to configured destinations such as Storage, Log Analytics, or Event Hubs. Decide server- versus database-level policy, action groups, identity and destination access, retention, tamper resistance, alerting, query procedure, and failure monitoring. Auditing is evidence, not prevention. Defender for Databases is a family of workload plans across Azure database services; plan selection, vulnerability assessment, alert coverage, and onboarding differ by engine. Use the [multicloud support matrix](https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix) for the appropriate database plan and cloud. The older [database introduction URL](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-introduction) now describes open-source relational databases; it is not a universal Azure SQL support reference.
 
 > **Related item:** “Encrypted” is incomplete unless you state at rest, in transit, in use/client-side, or backup; Microsoft-managed or customer-managed key; identity that may unwrap it; and recovery if the key is unavailable.
 
@@ -182,7 +188,7 @@ Virtual WAN centralizes branch, VPN, ExpressRoute, and VNet connectivity. A secu
 
 For VPN, choose point-to-site versus site-to-site, route-based design, gateway SKU, active-active and zone requirements, BGP, authentication, certificate lifecycle, IKE/IPsec policy, and on-premises compatibility. Avoid weakening cryptography merely to make two devices connect. Monitor tunnels, learned routes, throughput, rekey behavior, and failover.
 
-Microsoft Entra Private Access is an identity-centric Security Service Edge capability for access to private TCP applications. It is not simply a VNet private endpoint and not a universal replacement for site-to-site networking. Model connector placement and health, application segments, user/group assignment, Conditional Access, DNS and port requirements, client deployment, and fail-open/fail-closed expectations. **VERIFY CURRENT:** licensing, protocols, connector behavior, and client capability are fast moving; use the [Private Access documentation](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access).
+Microsoft Entra Private Access is an identity-centric Security Service Edge capability for access to supported private applications. It is not simply a VNet private endpoint and not a universal replacement for site-to-site networking. Model connector placement and health, application segments, user/group assignment, Conditional Access, DNS and port requirements, client deployment, and fail-open/fail-closed expectations. **VERIFY CURRENT:** licensing, protocols, connector behavior, and client capability are fast moving; use the [Private Access documentation](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access).
 
 Private endpoints place consumer-side NICs with private IPs in a VNet to reach a supported PaaS resource through Private Link. A Private Link service publishes a provider-owned service behind a Standard Load Balancer for private consumption. In both cases, design DNS and approval lifecycle, disable or restrict unintended public access, and validate each subresource and region. The [Private Link overview](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview) distinguishes service providers and consumers.
 
@@ -214,13 +220,17 @@ Real-time protection for Copilot Studio agents uses current Microsoft Defender c
 
 Microsoft Entra Agent ID gives agents distinct directory identities and lifecycle. Apply Conditional Access only to supported agent scenarios and verify that the policy targets the intended agent identities, resources, and authentication flow. Inventory owner, host, purpose, credentials/federation, permissions, tools, data, user delegation, activity, and deletion state. Defender XDR blast-radius views can connect a risky agent identity to resources, permissions, users, and observed activity, but a graph is only as complete as onboarded telemetry. **VERIFY CURRENT:** Agent ID object models, supported Conditional Access conditions, portal workflow, and Defender correlation remain fast moving; consult [agent identities](https://learn.microsoft.com/en-us/entra/agent-id/agent-identities).
 
+For [Conditional Access on agents](https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id), identify the token subject before choosing the target. Delegated/OBO access targets the user; application-only access targets the agent identity; an agent’s user account is another subject. A blueprint-targeted policy covers derived agent identities, not their agent user accounts. Current documentation says “all users” policies do not include agent user accounts, and API-key calls bypass the Entra token/Conditional Access pipeline. A token for one API is not a general pass to another audience.
+
 Azure API Management AI Gateway applies gateway controls to model, agent, and tool traffic: authentication, routing, quotas/rate limits, token policies, content-safety policies, caching where safe, observability, and back-end credential isolation. Foundry integration and AI Gateway tiers have different availability and preview boundaries. A gateway does not replace back-end RBAC, model safety, data authorization, or secure tool design. Microsoft's current [AI Gateway capabilities](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) explicitly labels tier-dependent and preview features. **VERIFY CURRENT:** tier, region, policy, model-provider, MCP/A2A, and Foundry integration support before designing around it.
 
-Defender for AI Services provides current runtime threat protection for supported Azure AI traffic and integrates alerts with Defender XDR. Confirm supported models, token modalities, cloud/region, pricing, required roles, and whether prompt evidence may be processed or shown to analysts. The [AI threat-protection overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-threat-protection) is the current source. Defender CSPM/AI posture identifies risky configuration and attack paths; threat protection detects activity. Both differ from Foundry guardrails.
+Defender for AI Services provides current runtime threat protection for supported Azure AI traffic and integrates alerts with Defender XDR. Confirm supported models, token modalities, cloud/region, pricing, required roles, and whether prompt evidence may be processed or shown to analysts. The [AI threat-protection overview](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-threat-protection) currently covers supported Azure OpenAI/Model Inference models and **text tokens only**; image and audio tokens are not scanned. It lists commercial Azure support, excluding Azure Government, 21Vianet, and connected AWS accounts. The 30-day trial is capped at 75 billion scanned tokens and can become billable before day 30 if that cap is reached. Recheck these boundaries before enabling a lab. Defender CSPM/AI posture identifies risky configuration and attack paths; threat protection detects activity. Both differ from Foundry guardrails.
 
 Foundry guardrails evaluate prompts and responses through safety controls such as content filters and blocklists. Select thresholds using a risk assessment, evaluate allowed and disallowed cases, test multilingual/encoded/indirect prompt injection, measure false positives and false negatives, version the configuration, and keep application-side authorization and output validation. Guardrails cannot prove factuality, prevent an overprivileged tool from acting, or repair overshared grounding data. The current [Defender/Foundry protection learning path](https://learn.microsoft.com/en-us/training/paths/defender-for-cloud-ai-foundry-protect/) covers posture, runtime protection, and guardrails together.
 
 The Defender for Cloud Data and AI security dashboard combines discovery, protection coverage, recommendations, alerts, attack paths, sensitive-data context, and internet exposure for supported resources. Its completeness depends on enabled plans, extensions, providers, permissions, clouds, and scan coverage. Record the asset and subscription denominator before reporting a percentage. Review the [dashboard documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-aware-security-dashboard-overview).
+
+[AI security posture documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-security-posture) distinguishes cloud-resource discovery from agent-level coverage. Since July 1, 2026, discovery/posture for Foundry agents and third-party cloud agents requires Agent 365 licensing; Defender CSPM continues to discover Foundry accounts and projects. Do not report agent protection from the CSPM plan switch alone.
 
 Microsoft 365 admin center agent management provides inventory and administrative controls for supported agents in the tenant. Correlate an agent record with its owner, publisher, users, licenses, knowledge, actions/connectors, Entra identity, environments, data policies, and Defender/Purview signals. **VERIFY CURRENT:** inventory coverage and controls are changing; validate what custom, shared, Copilot Studio, Foundry, and partner agents appear before claiming completeness.
 
@@ -234,7 +244,7 @@ Azure Bastion provides RDP/SSH connectivity through the Azure portal or supporte
 
 Azure Arc projects non-Azure servers into Azure Resource Manager for inventory, policy, Machine Configuration, Defender, and management extensions. The Connected Machine agent and its identity become security-sensitive. Constrain onboarding credentials, allowed extensions, network endpoints, proxy, local agent permissions, and resource scope. Removing an Arc resource does not necessarily remediate the underlying server.
 
-Defender for Servers plans combine features such as Defender for Endpoint integration, vulnerability assessment, file integrity monitoring, agentless scanning, and other protections depending on plan and current configuration. Plan 1 and Plan 2 are not interchangeable. Agentless scanning complements agent-based EDR and configuration collection; it is periodic and has cloud, disk, encryption, and support limitations. Microsoft Defender Vulnerability Management produces software and vulnerability findings; prioritize using exposure, exploitability, asset criticality, active threat, and compensating control—not CVSS alone. **VERIFY CURRENT:** plan packaging, agent provisioning, unified-agent behavior, scan coverage, and included quotas change; check [Defender for Servers planning](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan).
+Defender for Servers plans combine features such as Defender for Endpoint integration, vulnerability assessment, file integrity monitoring, agentless scanning, and other protections depending on plan and current configuration. Plan 1 and Plan 2 are not interchangeable. Agentless scanning complements agent-based EDR and configuration collection; it is periodic and has cloud, disk, encryption, and support limitations. [Agentless machine scanning](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-agentless-data-collection) uses disk snapshots and is available through Defender CSPM or Defender for Servers Plan 2. It does not establish continuous EDR health. Confirm plan/feature, cloud, disk, and encryption coverage separately. Microsoft Defender Vulnerability Management produces software and vulnerability findings; prioritize using exposure, exploitability, asset criticality, active threat, and compensating control—not CVSS alone. **VERIFY CURRENT:** plan packaging, agent provisioning, unified-agent behavior, scan coverage, and included quotas change; check [Defender for Servers planning](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan).
 
 Trusted Launch security type enables supported secure boot and vTPM protections and supports boot integrity monitoring. Secure boot validates signed boot components; vTPM provides measured-boot and key-protection capabilities; integrity monitoring surfaces health signals. Confirm image, size, generation, disk, extension, and migration support before changing an existing VM. Azure Machine Configuration audits or applies guest-OS configuration through Azure Policy and extensions; it does not replace patching, EDR, local least privilege, or secure images.
 
@@ -313,6 +323,8 @@ Query Microsoft Purview Audit from the Defender XDR experience with the correct 
 
 Security Copilot can use organizational security data and plugins to help analysts investigate, summarize, script, and act. Configure workspace ownership, capacity, data location, retention/diagnostic expectations, sharing, and permitted workflows. Separate Security Copilot roles from permissions in the connected Microsoft products: a user cannot legitimately retrieve source data that their underlying product role does not allow merely because they can prompt Copilot.
 
+The [Security Copilot authorization documentation](https://learn.microsoft.com/en-us/copilot/security/authentication) separates Copilot Owner/Contributor access from source-service permissions. Microsoft plugins use on-behalf-of access; a Contributor may still need Sentinel Reader on the intended workspace. New instances use recommended security roles for default access. Some existing instances retain Everyone; removing it is currently irreversible as an assignment choice. Review inherited access and role-assignable groups rather than assuming the platform role grants all security data. Custom plugin and agent credentials need their own review.
+
 Plugins connect Copilot to Microsoft or third-party data and capabilities. For each plugin, document publisher, connection identity, permissions, data sent/returned, geography, logs, supported prompts, action capability, owner, approval, and revocation. Disable unused plugins. Treat pasted secrets, untrusted threat intelligence, incident content, retrieved documents, and tool output as potentially adversarial input.
 
 Microsoft agents and Security Store agents may automate or specialize security tasks. Before enablement, validate publisher and version, data sources, permissions, triggers, action boundary, human approval, failure mode, cost/capacity, telemetry, rollback, and outcome measurement. Begin read-only in a bounded scope. An agent-generated conclusion is a lead that requires evidence, not an incident fact.
@@ -320,6 +332,21 @@ Microsoft agents and Security Store agents may automate or specialize security t
 **VERIFY CURRENT:** Security Copilot workspace, capacity, licensing, role, plugin, agent, and Security Store behavior evolves frequently. Recheck the [Security Copilot documentation](https://learn.microsoft.com/en-us/copilot/security/) and tenant-specific availability before relying on a UI path or entitlement.
 
 > **Related item:** Promptbooks and agent instructions are operational code. Version them, review data assumptions, test adversarial and ambiguous input, measure accuracy and cost, restrict action scope, and retain a human-owned recovery path.
+
+### Current release and onboarding boundaries
+
+The [Defender for Cloud release notes](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes) distinguish these changes from the unchanged exam objectives:
+
+| Date | Change | Learning and operations consequence |
+|---|---|---|
+| July 31, 2026 | Legacy grouped recommendations removed; individual recommendations replace them | Check queries, reporting, and exemptions instead of expecting old grouped records. |
+| August 6, 2026 | AWS/GCP overprovisioned-identity assessments no longer include unused-action lists | Obtain permission-use evidence from the cloud provider; do not infer a permission is unused because a field disappeared. |
+| August 21, 2026 | Detailed CVE properties move to `microsoft.security/cvedetails` in Azure Resource Graph | Review query joins/schema before concluding vulnerability details are absent. |
+| October 27, 2026, announced | Foundational CSPM becomes opt-in for new Azure subscriptions | Add explicit onboarding checks. Existing subscriptions and AWS/GCP are outside this change. The foundational plan remains free. |
+| December 14, 2026, announced | The grouped vulnerability-assessment-solution recommendation is scheduled for removal | Use individual coverage recommendations and verify automation before the date. |
+| August 16, 2027, announced | Classic Defender for SQL VA/ATP APIs retire | Inventory dependent scripts and plan migration; this does not mean SQL threat protection ends. |
+
+[Sentinel data-lake onboarding](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-lake-onboarding) also changes the operating boundary. The lake uses Microsoft-managed encryption keys; CMK workspaces are not accessible through lake experiences. Connected workspaces in the primary workspace’s region are onboarded together, with regional data-movement implications. Auxiliary tables move out of Advanced Hunting access into lake exploration. Individual workspace offboarding or disabling the lake requires a support request. Review permissions, billing, residency, and query paths before onboarding; it is more than a storage-retention toggle. The separate Sentinel Azure-portal transition remains **after March 31, 2027**.
 
 ## Integrated scenarios
 
@@ -367,6 +394,47 @@ An AKS application uses ACR, Storage, Key Vault, Functions, and a public API. A 
 
 The common failure is a secure front door with a reachable origin, overprivileged workload identity, or unrestricted tool/dependency path behind it.
 
+## Worked examples
+
+These original fixtures and calculations were checked locally. They are design aids, not observed tenant behavior or service performance promises.
+
+### 1. Map the caller before assigning a policy
+
+| Request | Token subject | What to check |
+|---|---|---|
+| An assistant reads a signed-in employee’s document through OBO | Employee, with the calling agent identified | User policy, delegated permission, target audience, and the employee’s source access |
+| A scheduled agent calls a reporting API as itself | Agent identity | Agent-targeted policy and application permission at the API |
+| A digital worker uses its linked agent user account | Agent user account | Explicit supported agent-user targeting; neither a blueprint target nor an all-users policy proves coverage |
+| A tool uses a static API key | Outside the Entra token flow for that call | Key lifecycle and service authorization; Entra Conditional Access cannot assess that key exchange |
+
+An access token for API A is not valid merely because the same agent also needs API B. Model the downstream token exchange and audience, then test an intentionally wrong audience. Do not ask an autonomous application to satisfy a human MFA interaction as if it were a signed-in user.
+
+### 2. Compute effective access without double counting
+
+An identity can reach resources 1–18 through grant A and resources 11–24 through grant B. The overlap is eight resources, so the union is `18 + 14 − 8 = 24`. Its job needs only resources 1–6. The review has **18 unnecessary reachable resources** to investigate, not 26 or 32. This simplified set ignores operation-level and deny conditions; the real review must inspect actions, data actions, inheritance, conditions, and source authorization. Removing a secret from a repository does not revoke it or change these grants.
+
+### 3. State the AI protection denominator
+
+An application receives 1,000 requests: 800 are text-only calls to supported models, 120 are image-only, and 80 are audio-only. Assume every other support prerequisite holds. Only the 800 text requests are eligible for the cited text-token scanning capability. If onboarding actually covers 750 of those, coverage is **93.75% of eligible requests** and **75% of all requests**. Both denominators matter. A successful plan deployment is not evidence that unscanned modalities or unsupported providers are protected.
+
+### 4. Separate scanning from live endpoint protection
+
+An estate contains 120 servers. Recent supported disk scans cover 80; healthy EDR covers 70; 65 appear in both sets. Coverage by at least one method is `80 + 70 − 65 = 85`, leaving **35 servers with neither signal**. Only **65/120 = 54.17%** have both. A “plan enabled” count of 120 hides these operational gaps. Record the scan timestamp, supported disks, sensor state, and reason for every exclusion.
+
+### 5. Prove event completeness and detection time
+
+A source emits 1,000 events with unique stable IDs. The destination has 980 rows, but 40 are duplicates, leaving **940 unique events** and 60 not yet accounted for. Later, 50 distinct delayed events arrive: completeness reaches **990/1,000 = 99%**, with ten still missing. Do not use row count alone as delivery evidence.
+
+For a hypothetical detection, collection takes 4 minutes, the next rule evaluation waits 5 minutes, evaluation takes 2 minutes, and incident publication takes 1 minute. End-to-end delay is **12 minutes**. A five-minute rule schedule is not a five-minute detection promise. Test event time, ingestion time, the lookback window, parsing, and duplicate handling together.
+
+### 6. Check recovery against the whole deadline
+
+A synthetic restore copies 300 GB at a sustained 150 MB/s, using decimal units: `300,000 / 150 = 2,000 seconds`, or **33m20s**. Provisioning takes another 10 minutes and integrity/application checks take 12 minutes. Total recovery is **55m20s**, missing a 45-minute objective by **10m20s**. This model excludes additional contention and delays, so it is not a throughput guarantee. Test the protected recovery path and workload usability; a successful copy is not a completed recovery.
+
+### 7. Gateway success is not backend authorization
+
+Of 200 test requests, the gateway rejects 20 invalid client requests. It forwards 180; the backend denies ten because the gateway’s identity lacks a required permission. The remaining **170 succeed: 85% of all requests, or 94.44% of forwarded requests**. The expected client rejections are useful security evidence, while the unexpected backend denials require investigation. Track both identities and test direct-backend access separately; accepting a client JWT never grants the gateway backend access.
+
 ## Hands-on labs
 
 Perform labs only in authorized disposable environments. Estimate and cap costs before enabling paid plans or provisioning network/AI resources. If licensing prevents execution, tabletop the same artifacts and clearly label simulated evidence.
@@ -403,46 +471,68 @@ Use one Azure VM and an Arc tabletop or test server. Assess encryption choice, T
 
 Model or deploy an AKS/container or App Service/Functions/API path. Secure identity, registry/image, ingress/WAF, APIM back end, private dependencies, secrets, and diagnostics. In Sentinel, document workspace roles, install one Content Hub solution, ingest a known event through AMA/DCR or an Azure connector, create/verify a custom table if relevant, and run a guarded automation rule/playbook. Configure a read-only Security Copilot/plugin/agent scenario if licensed. Evidence: source-to-incident lineage, schema/retention, automation approval/rollback, and Copilot source citations.
 
+### Lab 9: Scope, coverage, and recovery fixtures
+
+Reproduce examples 1–7 on paper or in a local spreadsheet/script. Keep separate identity, eligible-request, server, event, and request populations. Expected evidence: the four caller/policy cases, 24 reachable resources, 750 protected requests, 85 servers with at least one signal, 990 unique delivered events, a 12-minute detection path, and a 55m20s restore. Explain why each result has a different denominator and what a live test would still need to prove.
+
+### Lab 10: Current-control migration review
+
+Create a change register for Key Vault RBAC defaults and trusted-service bypass, Agent 365 agent coverage, Sentinel onboarding/portal migration, the Defender recommendation/CVE changes, and ADE retirement. For each, record affected assets, source/date, owner, prerequisite, negative test, rollback/support path, and next review. Tabletop an exposed application credential: rotate/revoke it, preserve sanitized investigation evidence, assess grants and recovery controls, then validate application recovery. Do not reproduce destructive incident operations. Expected evidence: no claim that an edited disclosure, a green dashboard, or a future release date proves a control works.
+
 ## Original knowledge checks
 
-These are original study questions, not recalled or reconstructed exam items. Answer in your own words, then verify against the cited official documentation and your lab evidence.
+These 48 original questions include answers for self-review; they are not recalled exam items.
 
-1. Why does PIM reduce standing privilege without proving that the eligible role is least privileged?
-2. What recovery controls must exist before enforcing a tenant-wide Conditional Access policy?
-3. When should an application use delegated permission rather than application permission?
-4. How do an app registration, service principal, and enterprise application relate?
-5. Why can a user-assigned managed identity create a larger blast radius than a system-assigned identity?
-6. What is the security difference between Key Vault control-plane permission and data-plane permission?
-7. What must be tested after creating a Key Vault private endpoint?
-8. How do Defender CSPM secret scanning and Defender for Key Vault solve different problems?
-9. Why can a `deny` policy leave existing resources noncompliant?
-10. Which dependencies make `deployIfNotExists` or `modify` remediation succeed?
-11. Why is a resource lock not an authorization or data-protection control?
-12. What evidence proves a backup is recoverable and protected from a compromised administrator?
-13. Why is Entra data-plane authorization normally safer than Shared Key for Storage?
-14. How do a user-delegation SAS and an account SAS differ in issuer and potential scope?
-15. Why does a private endpoint not by itself prove that public Storage access is disabled?
-16. Contrast TDE, Always Encrypted, dynamic data masking, and row-level security by threat addressed.
-17. Which design choices make Azure SQL auditing useful and tamper-resistant evidence?
-18. Why should Defender for Databases be treated as a family of plans rather than one uniform switch?
-19. How do NSGs, security admin rules, Azure Firewall, and WAF differ in layer and precedence?
-20. When is Private Link service appropriate instead of a private endpoint?
-21. Why is Microsoft Entra Private Access not simply another Azure private endpoint?
-22. Which route and DNS evidence proves traffic actually traverses a secured Virtual WAN hub?
-23. Why can SharePoint oversharing become an AI security issue even when Copilot authorization works as designed?
-24. Which controls remain necessary after Foundry guardrails block unsafe prompt content?
-25. What does AI Gateway centralize, and what back-end controls does it not replace?
-26. How do Defender AI posture, Defender for AI Services, and the Data and AI dashboard differ?
-27. Which identity, permission, data, tool, and monitoring records belong in an agent inventory?
-28. Why should Azure Disk Encryption retirement affect a new VM encryption decision today?
-29. How do Bastion and JIT VM access reduce different exposure paths?
-30. Why does agentless VM scanning complement rather than replace EDR?
-31. What must be secured across registry, admission, identity, network, node, and runtime for AKS?
-32. Why does App Service VNet integration not make inbound access private?
-33. What proves that an APIM policy protects the back end rather than only the gateway endpoint?
-34. Why should Defender secure score not be optimized without risk and asset context?
-35. What end-to-end test proves a Sentinel connector is operationally useful?
-36. Which permissions, data paths, failure controls, and evidence must be reviewed before enabling a Security Copilot plugin or agent?
+| # | Question | Answer and reasoning |
+|---:|---|---|
+| 1 | Why does PIM reduce standing privilege without proving that the eligible role is least privileged? | Eligibility removes permanent activation, but the role’s actions and scope may still exceed the task. |
+| 2 | What recovery controls must exist before enforcing a tenant-wide Conditional Access policy? | Tested emergency access, intentional exclusions, report-only results, staged rollout, and a recovery procedure. |
+| 3 | When should an application use delegated permission rather than application permission? | When a signed-in user’s context and rights are required; application permissions suit justified unattended operations. |
+| 4 | How do an app registration, service principal, and enterprise application relate? | Registration defines the app; a service principal represents it in a tenant; enterprise application is its administrative view. |
+| 5 | Why can a user-assigned managed identity create a larger blast radius than a system-assigned identity? | It can be assigned to several workloads and survives any single host, so review reuse and grants. It can still be an appropriate managed-identity choice. |
+| 6 | What is the security difference between Key Vault control-plane permission and data-plane permission? | Management permissions configure the resource; data permissions authorize object operations. Legacy access-policy administration can enable self-granting. |
+| 7 | What must be tested after creating a Key Vault private endpoint? | Private DNS/routing and the actual caller, public restrictions, trusted-service exceptions, authorization, and allowed/denied operations. |
+| 8 | How do Defender CSPM secret scanning and Defender for Key Vault solve different problems? | Secret scanning identifies exposed secrets; Key Vault threat protection detects suspicious activity. Neither substitutes for revocation/rotation. |
+| 9 | Why can a `deny` policy leave existing resources noncompliant? | Deny evaluates applicable create/update requests; it does not automatically repair previously deployed resources. |
+| 10 | Which dependencies make `deployIfNotExists` or `modify` remediation succeed? | A valid effect/definition, assignment scope/parameters, appropriate managed-identity permissions, and remediation for existing resources. |
+| 11 | Why is a resource lock not an authorization or data-protection control? | Locks protect supported management operations; they do not replace RBAC or prevent authorized data-plane changes. |
+| 12 | What evidence proves a backup is recoverable and protected from a compromised administrator? | An isolated restore with integrity/application checks, measured recovery time, and tested deletion controls with separated authority. |
+| 13 | Why is Entra data-plane authorization normally safer than Shared Key for Storage? | It supports scoped identity-based grants and avoids distributing broad account keys; actual authorization and service support still matter. |
+| 14 | How do a user-delegation SAS and an account SAS differ in issuer and potential scope? | A user-delegation SAS uses an Entra-derived delegation key; an account SAS uses an account key and can span services. Neither uses a stored access policy. |
+| 15 | Why does a private endpoint not by itself prove that public Storage access is disabled? | Creation of a private path does not disable the public one; inspect endpoint settings, DNS, firewall, and exceptions. |
+| 16 | Contrast TDE, Always Encrypted, dynamic data masking, and row-level security by threat addressed. | TDE protects stored files; Always Encrypted protects selected client-encrypted columns; masking changes display; row-level security restricts rows. |
+| 17 | Which design choices make Azure SQL auditing useful and tamper-resistant evidence? | Correct events, destination access, retention, timestamps, tamper resistance, failure monitoring, and a known-action retrieval test. |
+| 18 | Why should Defender for Databases be treated as a family of plans rather than one uniform switch? | Engines, hosting models, clouds, onboarding, and vulnerability/threat capabilities differ; verify the applicable plan. |
+| 19 | How do NSGs, security admin rules, Azure Firewall, and WAF differ in layer and precedence? | NSGs filter network flows; security admin rules apply central precedence; Firewall inspects/routes supported traffic; WAF handles HTTP application threats. |
+| 20 | When is Private Link service appropriate instead of a private endpoint? | When publishing a provider-owned service for private consumption; consumers connect using private endpoints. |
+| 21 | Why is Microsoft Entra Private Access not simply another Azure private endpoint? | It provides identity-aware access to private applications through its own connectors/client/control plane. |
+| 22 | Which route and DNS evidence proves traffic actually traverses a secured Virtual WAN hub? | Effective routes, next hop, symmetric return path, DNS, firewall decisions, and a known allowed/denied test from the actual source. |
+| 23 | Why can SharePoint oversharing become an AI security issue even when Copilot authorization works as designed? | Correct authorization can still honor permissions that are too broad. Fix source access and sharing. |
+| 24 | Which controls remain necessary after Foundry guardrails block unsafe prompt content? | Data permissions, identity, tool authorization, transaction limits, network controls, telemetry, output handling, and recovery. |
+| 25 | What does AI Gateway centralize, and what back-end controls does it not replace? | It centralizes supported model/tool traffic controls; backend permissions, direct-path restrictions, and application authorization remain necessary. |
+| 26 | How do Defender AI posture, Defender for AI Services, and the Data and AI dashboard differ? | Posture assesses configuration, runtime protection detects supported activity, and the dashboard summarizes enabled/discovered coverage. |
+| 27 | Which identity, permission, data, tool, and monitoring records belong in an agent inventory? | Owner/purpose, host/identity, user versus app mode, permissions, knowledge, tools, credentials, logs, licenses, and lifecycle state. |
+| 28 | Why should Azure Disk Encryption retirement affect a new VM encryption decision today? | Migration includes supported alternatives and recoverable backups before September 15, 2028; existing ADE disks may fail to unlock after reboots at retirement. |
+| 29 | How do Bastion and JIT VM access reduce different exposure paths? | Bastion provides a management connection path without target public IPs; JIT opens specified management access for a limited time. |
+| 30 | Why does agentless VM scanning complement rather than replace EDR? | Snapshot findings are periodic; EDR health and live behavior require a separate operational signal. |
+| 31 | What must be secured across registry, admission, identity, network, node, and runtime for AKS? | Trusted/scanned images, registry access, admission/pod restrictions, scoped workload identity, segmentation/egress, node maintenance, and runtime telemetry. |
+| 32 | Why does App Service VNet integration not make inbound access private? | It governs outbound connectivity; inbound private access requires its own endpoint and public-access design. |
+| 33 | What proves that an APIM policy protects the back end rather than only the gateway endpoint? | Correct gateway-to-backend identity/permissions plus blocked bypass, and success/denial evidence at the backend. |
+| 34 | Why should Defender secure score not be optimized without risk and asset context? | Scores summarize assessed posture; prioritize actual exposure, exploitability, critical assets, coverage, and accepted exceptions. |
+| 35 | What end-to-end test proves a Sentinel connector is operationally useful? | Generate a known event and trace its stable identity through collection, schema, query, rule, incident, and response, including delay and duplicate cases. |
+| 36 | Which permissions, data paths, failure controls, and evidence must be reviewed before enabling a Security Copilot plugin or agent? | Platform and source roles, connection identity, sent/returned data, action scope, capacity, approval, failure handling, and revocation evidence. |
+| 37 | Does a new Key Vault RBAC default migrate old vaults? | No. The API-version default applies to newly created vaults; inspect and migrate existing authorization deliberately. |
+| 38 | Does publicNetworkAccess Disabled eliminate every Key Vault exception? | No. Check trusted-service bypass and perimeter mode; the explicit schema exception qualifies broad private-only wording. |
+| 39 | Can an account SAS use a stored access policy? | No. Stored access policies apply to service SAS. |
+| 40 | Which policy subject applies to delegated agent access? | The user; separately test the agent’s application identity when it uses app-only access. |
+| 41 | Does an all-users policy prove agent user-account coverage? | No. Current agent documentation excludes agent user accounts from that target and requires supported explicit targeting. |
+| 42 | Does Conditional Access evaluate an API-key-only request? | No. That request bypasses the Entra token issuance path. |
+| 43 | Does Defender CSPM alone establish Foundry agent-level posture licensing? | No. Current agent-level discovery/posture requires Agent 365; account/project discovery is a different scope. |
+| 44 | Are image/audio tokens scanned by the cited AI threat plan? | No. Its documented scanning support is text tokens on supported models/services. |
+| 45 | Is Sentinel data-lake onboarding a reversible per-workspace toggle? | No. Same-region connected workspaces are onboarded together; offboarding requires support. Review CMK and query-access limits first. |
+| 46 | Does Security Copilot Contributor grant Sentinel data access? | No. Source-service permissions such as the appropriate Sentinel workspace role are separately required. |
+| 47 | What changes for new Azure subscriptions on October 27, 2026? | The announced Foundational CSPM default becomes opt-in; existing subscriptions and AWS/GCP are unaffected. |
+| 48 | Does deleting an exposed secret from an issue finish incident response? | No. Revoke/rotate it, assess historical use and effective permissions, and verify dependent applications and recovery controls. |
 
 ## Final readiness checklist
 
@@ -461,28 +551,35 @@ These are original study questions, not recalled or reconstructed exam items. An
 - [ ] I can turn Defender posture findings into prioritized, owned, tested remediation across Azure, AWS, and GCP.
 - [ ] I can prove Sentinel ingestion from source through table, detection, incident, automation, retention, and Purview Audit.
 - [ ] I can configure Security Copilot workspaces, roles, plugins, and agents with least privilege, data governance, human oversight, and rollback.
-- [ ] I completed or tabletop-tested all eight labs and can explain both successful and failed tests.
+- [ ] I completed or tabletop-tested all ten labs and can explain both successful and failed tests.
 
 ## Places to learn
 
-This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the official blueprint as the coverage checklist, and spend at least as much effort on implementation and negative testing as on passive watching. Provider runtimes and catalogs change; estimates below use public listings checked September 1, 2026 and include notes where exact current duration was unavailable.
+This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the official blueprint as the coverage checklist, and spend at least as much effort on implementation and negative testing as on passive watching. Provider runtimes and catalogs change; estimates below use public listings checked September 28, 2026 and include notes where exact current duration was unavailable.
 
-The twelve current official paths are [secure Entra access](https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/) (1h30), [Key Vault security](https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/) (1h44), [security governance and compliance](https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/) (2h23), [Storage security](https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/) (1h40), [Azure SQL security](https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/) (1h02), [network security controls](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/) (2h52), [AI security](https://learn.microsoft.com/en-us/training/paths/implement-ai-security/) (3h59), [server and VM security](https://learn.microsoft.com/en-us/training/paths/server-vm-security/) (2h57), [application-platform security](https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/) (3h09), [Defender for Cloud posture](https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/) (3h33), [Sentinel activity and event collection](https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/) (3h38), and [Security Copilot deployment and operation](https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/) (1h41). Listed times total 30h08 before exercises, setup, review, or note-taking.
+The twelve current official paths are [secure Entra access](https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/), [Key Vault security](https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/), [security governance and compliance](https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/), [Storage security](https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/), [Azure SQL security](https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/), [network security controls](https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/), [AI security](https://learn.microsoft.com/en-us/training/paths/implement-ai-security/), [server and VM security](https://learn.microsoft.com/en-us/training/paths/server-vm-security/), [application-platform security](https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/), [Defender for Cloud posture](https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/), [Sentinel activity and event collection](https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/), and [Security Copilot deployment and operation](https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/). The fetched overviews expose **63 module placements** (3/4/6/4/3/4/9/7/6/6/8/3). Module titles/descriptions were reviewed, not every linked unit. Current runtimes are absent, so the earlier 30h08 sum is withdrawn.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official SC-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/) | Public | 1–2 hours initially; 15 minutes on each recheck |
-| Twelve official Microsoft Learn paths linked from the [SC-500 course syllabus](https://learn.microsoft.com/en-us/training/courses/sc-500t00): Entra access, Key Vault, governance, Storage, SQL, networking, AI, servers/VMs, app platforms, Defender posture, Sentinel collection, and Security Copilot | Public | 30 hours 8 minutes listed; allow 45–65 hours with exercises and notes |
-| [SC-500T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/sc-500t00) | Paid/partner delivery | 4 days listed |
+| Twelve official Microsoft Learn paths linked from the [SC-500 course syllabus](https://learn.microsoft.com/en-us/training/courses/sc-500t00): Entra access, Key Vault, governance, Storage, SQL, networking, AI, servers/VMs, app platforms, Defender posture, Sentinel collection, and Security Copilot | Public | 63 module placements; current runtime not published in fetched pages; budget exercises separately |
+| [SC-500T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/sc-500t00) | Paid/partner delivery | 4 days; ten course languages listed |
 | Microsoft exam sandbox from the [credential page](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/) | Public | 20–40 minutes; repeat once before exam day |
 | Microsoft Practice Assessment | Not yet available | **VERIFY CURRENT**; when published, allow 45–75 minutes per attempt plus source review |
-| [Tim Warner SC-500 course companion](https://github.com/timothywarner-org/sc500) | Public (MIT) | 10–20 hours selectively; 15 lessons and demo material are in active development |
-| Tim Warner’s Pearson/Microsoft Press SC-500 video course described by the companion repo | Paid; product availability varies | About 10 hours planned; verify the current Pearson/O’Reilly/enterprise catalog listing before purchase |
-| [Udemy SC-500 + AZ-500 course by Alan Rodrigues](https://www.udemy.com/course/exam-azure-2/) | Paid | 36 hours 10 minutes listed; use the four new SC-500 sections first and verify AI-objective completeness |
-| [Udemy SC-500/AZ-500 hands-on course by John Christopher](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/) | Paid | 18 hours 31 minutes listed; updated August 2026, but verify every current AI/Agent objective |
-| [Udemy SC-500 practice tests by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/sc500-tests/) | Paid | 3–6 hours across four listed tests and source review; provider explicitly says no actual exam questions |
-| [Pluralsight AZ-500 path](https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies) | Paid/trial | 12 hours 31 minutes plus practice exam listed; retired AZ-500 infrastructure foundation only, not complete SC-500 coverage |
-| [O’Reilly/Pearson AZ-500 video by Tim Warner](https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/) | Paid | 8 hours 34 minutes; January 2022 legacy foundation only—supplement all current SC-500 and AI/agent content |
-| [John Savill AZ-500 Study Cram](https://www.youtube.com/watch?v=6vISzj-z8k4) | Public | 2 hours 54 minutes; useful Azure-security foundation but predates SC-500 and all current AI/agent objectives |
+| [Tim Warner SC-500 course companion](https://github.com/timothywarner-org/sc500) | Public (MIT) | Planning estimate: 10–20 hours selectively; root/README lists 15 lessons in active development. Individual scripts were not audited |
+| Tim Warner’s Pearson/Microsoft Press SC-500 video course described by the companion repo | Paid; product availability varies | About 10 hours claimed by the companion; a current publisher catalog listing was not established in this review |
+| [Udemy SC-500 + AZ-500 course by Alan Rodrigues](https://www.udemy.com/course/exam-azure-2/) | Paid | Public indexed listing: 36h35, 11 sections/460 lectures, September 2026 update; direct fetch blocked, paid coverage unverified |
+| [Udemy SC-500/AZ-500 hands-on course by John Christopher](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/) | Paid | Public indexed listing: 18h31, 17 sections/151 lectures, August 2026; direct fetch blocked, verify current AI/Agent coverage |
+| [Udemy SC-500 practice tests by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/sc500-tests/) | Paid | Planning estimate: 3–6 hours; public indexed listing shows four tests of 25 questions, August 2026. Direct fetch blocked; questions not accessed |
+| [Pluralsight AZ-500 path](https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies) | Paid/trial | Public listing: six course entries 46h27 (including 12h31 practice entry) plus five labs 3h30 = 49h57; rounded header 50h. Retired AZ-500 foundation only |
+| [O’Reilly/Pearson AZ-500 video by Tim Warner](https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/) | Paid | Previously listed 8h34/January 2022; direct fetch blocked and current metadata unverified. Legacy foundation only |
+| [John Savill AZ-500 Study Cram](https://www.youtube.com/watch?v=6vISzj-z8k4) | Public | Previously listed 2h54; current fetch is a shell and video was not watched. Older Azure-security foundation only |
 | [Microsoft Reactor channel](https://www.youtube.com/@MicrosoftReactor) | Public | 2–8 hours selectively for current Azure security, Defender, Sentinel, and AI sessions; no exact SC-500 path confirmed |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Varies by scheduled offering; partner sign-in is required to confirm an SC-500 listing, dates, and exact session duration |
+
+### Articles to turn into practice
+
+- [Storm-3168 and compromised service principals](https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/) — Microsoft Security Research, Yossi Weizman, and Tushar Mudi, September 25, 2026. Use the mitigation section for Lab 10’s credential revocation, least-privilege, and recovery-control review. The article does not establish the initial credential-compromise route; do not turn a possible cause into a proven one. No destructive operations are needed for the exercise.
+- [Reimagining the SOC for the agentic era](https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/) — Rob Lefferts, September 23, 2026. Useful context for connecting telemetry, investigation, and controlled response. Its ISOC announcement is **preview**; it does not establish tenant availability, entitlement, or a new exam domain. Use example 5 to test whether your evidence reaches an actionable outcome.
+
+Treat blogs as context and discovery. Use the current product references to decide which control is supported, what it protects, and how to verify it.
