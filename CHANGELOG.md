@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: map all 48 MO-211 tasks and add six worked examples, ten labs and 32 answered checks covering advanced formulas, calculation freshness and Pivot aggregation. See the [Excel Expert report](docs/research/2026-09-28-mo-211-deep-review.md).
+
 - September 28, 2026: review all 65 MO-210 tasks, correct named-function scope and add six worked examples, ten labs and 32 answered checks with independently checked expected results. See the [Excel Associate report](docs/research/2026-09-28-mo-210-deep-review.md).
 
 - September 28, 2026: review MO-111 against all 47 PDF tasks, expanding templates, fields, macro boundaries and merge validation with five examples, nine labs and 32 answered checks. See the [Word Expert report](docs/research/2026-09-28-mo-111-deep-review.md).

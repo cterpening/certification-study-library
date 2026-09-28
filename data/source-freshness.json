@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-mo211-deep-review",
+      "title": "MO-211 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MO-211"
+      ],
+      "results": [
+        {
+          "exam_code": "MO-211",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+          "baseline_sha256": "f81b927e94a3b99d65a3b79850181c49ee859c6701d3a4f87f0fbf9cff57ac60",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Detailed48-task PDF mapped; unchanged four-domain/status snapshots,no retirement and MOS expiry qualified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Function,validation,macro,stale-calculation and Pivot references read for content changes."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Historical stale-value announcement read in full and compared with current Support limitations."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No dedicated Learn collection listed; help directory inspected without claiming linked lessons or commercial training evaluated."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Add required named functions and chart types; bound supplementary Data Tables/WORKDAY.INTL; show aggregation,lookup,calendar and warning pitfalls."
+            }
+          },
+          "findings": [
+            {
+              "id": "mo211-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Generic function coverage hides specific practice requirements",
+              "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-211"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The existing guide did not name several required functions or Funnel/Sunburst.",
+              "recommendation": "Teach the complete named set and distinguish supplementary tools.",
+              "disposition": "applied",
+              "source_id": "mo211-skills-pdf",
+              "resolution": "Teach the complete named set and distinguish supplementary tools."
+            },
+            {
+              "id": "mo211-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Hidden warning does not imply fresh calculations",
+              "url": "https://support.microsoft.com/en-US/Excel/stale-value-formatting",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-211"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Formatting can be disabled without recalculating; documented coverage gaps remain.",
+              "recommendation": "Add explicit recalculation and external-source checks.",
+              "disposition": "applied",
+              "source_id": "excel-stale-values",
+              "resolution": "Add explicit recalculation and external-source checks."
+            },
+            {
+              "id": "mo211-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Entry alerts do not validate every write path",
+              "url": "https://support.microsoft.com/en-US/Excel/display-or-hide-circles-around-invalid-data",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-211"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Copy,fill,formula and macro writes can bypass alerts.",
+              "recommendation": "Add invalid-data inspection and distinguish clear circles from corrected values.",
+              "disposition": "applied",
+              "source_id": "excel-validation-circles",
+              "resolution": "Add invalid-data inspection and distinguish clear circles from corrected values."
+            },
+            {
+              "id": "mo211-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Calculated-field multiplication can give a wrong business total",
+              "url": "https://support.microsoft.com/en-us/excel/calculate-values-in-a-pivottable",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-211"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Classic fields operate on sums rather than individual row products.",
+              "recommendation": "Add 140 versus300 example and source Revenue reconciliation.",
+              "disposition": "applied",
+              "source_id": "excel-pivot-calculations",
+              "resolution": "Add 140 versus300 example and source Revenue reconciliation."
+            },
+            {
+              "id": "mo211-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Reverse lookup is not duplicate aggregation",
+              "url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-211"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default and reverse directions select different matching rows.",
+              "recommendation": "Add first,last,missing and aggregate expected outcomes.",
+              "disposition": "applied",
+              "source_id": "excel-xlookup",
+              "resolution": "Add first,last,missing and aggregate expected outcomes."
+            }
+          ],
+          "notes": "Read the whole guide and all 48 detailed PDF tasks. Add six examples, ten proposed desktop labs and 32 answered checks; 23 independent local assertions check expected arithmetic, dates, ordering and totals, without Excel execution. Correct named-function coverage and distinguish validation bypass, stale warnings and classic Pivot aggregation. Human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-mo-211-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-mo210-deep-review",
       "title": "MO-210 complete guide and learning-content review",
       "rubric_version": 1,

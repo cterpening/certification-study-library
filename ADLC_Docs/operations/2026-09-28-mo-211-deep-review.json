@@ -1,0 +1,1038 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MO-211",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e3bbe084ad4120cd3ef4aa18aeaff5c074fb012ca93b8eab6a186c2395ba0ede",
+  "guide_after_sha256": "7a1301b8c12ef8b58de1852d7a4dec28c5bb5ea8f5aea5468d0cc5ed20da057e",
+  "prior_records": {
+    "exam": {
+      "code": "MO-211",
+      "level": "expert",
+      "vendor_id": "microsoft-office",
+      "title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+      "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+      "blueprint_last_checked": "2026-09-04",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-04",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite; build approximately 150 hours of hands-on Excel experience with advanced formulas, validation, macros, analytical tables, and specialized workbooks."
+    },
+    "review": {
+      "id": "mo-211-2026-09-04-source-validation",
+      "exam_code": "MO-211",
+      "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-211-official-objectives.txt",
+      "blueprint_snapshot_sha256": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage workbook options and settings",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage and format data",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Create advanced formulas and macros",
+          "guide_sections": [
+            "Section 3",
+            "Forecast and commission scenarios",
+            "Labs 3–6"
+          ]
+        },
+        {
+          "objective_group": "Manage advanced charts and tables",
+          "guide_sections": [
+            "Section 4",
+            "Operations scenario",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All four live MO-211 assessed domains are mapped to controlled analytical workbooks, three scenarios, eight practical labs, 20 original checks, and formula/output auditing. Both cited official Microsoft URLs were reachable."
+    },
+    "sources": [
+      {
+        "id": "mo-211-blueprint",
+        "title": "MO-211 Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-04",
+        "supported_exams": [
+          "MO-211"
+        ],
+        "notes": "Canonical public exam page and assessed-domain authority."
+      },
+      {
+        "id": "microsoft-excel-help",
+        "title": "Excel help and learning",
+        "url": "https://support.microsoft.com/en-us/excel",
+        "publisher": "Microsoft Support",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "MO-210",
+          "MO-211"
+        ],
+        "notes": "Official task-oriented documentation for Excel features used in the guides. September 28 MO-210 deep review: Help directory inspected; linked units not comprehensively read. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "553ad3f1ee610efe6ea2c5a19bff519e17d0243bee7237f3b89193ee955e82e8",
+      "guide_sections": "1,lab9 / Copy VBA module",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "964d03524db394f963f99762c002f86b010525745084e24ee45f283f99f85518",
+      "guide_sections": "1,lab1 / External references and cached values",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "d63984b267d1ee8f2bfb27a03f333be7e600392fc7dd75c16ea85d85dd221e89",
+      "guide_sections": "1 / Macro execution policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "273ad84ea2bee25984f420d197075a6cd3c6bd4b4ec5ec822252c97d2e68fb00",
+      "guide_sections": "1,lab1 / Checkpoints and versions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "288aeaaa9dde790b14006ab52ec9f9fb220e00bb026f6bfc7a37b4206569bb7d",
+      "guide_sections": "1 / Permitted edit actions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "e1175ce62132bb026f219933c45c9b86f6e3e35af9b0c070550362f333ff3f13",
+      "guide_sections": "1,lab1 / Input cells and ranges",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "2d67942ce7e35890f76ddfe00f28fa5327e36aa17f07a9fcb64a5c4721e20dfb",
+      "guide_sections": "1 / Structure protection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "1c2d8de486763273d688dca93a05ed7066d7f7075c9a2488fcfc76d69802ffc0",
+      "guide_sections": "1,lab8 / Calculation and stale values",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "f434d2fb8e64b1415ef5f703c40535b6d82bccf17fbe64a0e00a8148a8160145",
+      "guide_sections": "2,lab2 / Static Flash Fill",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "2c5de1ab012d654fdf9a69b829377740177d258a978dfa6c7ff6a7b904be1cec",
+      "guide_sections": "2,lab2 / Linear,growth,date series",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3904c421fd7be87bc7f2d44855b05a91f5849606018791e6f98dc299d748af01",
+      "guide_sections": "2,lab2 / RANDARRAY dimensions,bounds,type",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "a85ecde4d872e070f49ea963bfde5355765bcf15e3c9544311c1eed121f220a8",
+      "guide_sections": "2,lab3 / Custom formats versus storage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "9ab6396c1c7b8b0fb3684ce0c14ad42399ff5073e205ea1448e7c400bfd320aa",
+      "guide_sections": "2,lab3 / Validation alerts and bypass",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "dc620bbead193f7bd72745ad03eb7c8651b184e8b332ce25e95a75393400d492",
+      "guide_sections": "2,lab3 / Outline grouping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "a7895401028d2204a5c4e57f853b132c8779c1a2a4d325da9bbe7326a06c1cb2",
+      "guide_sections": "2,lab3 / Subtotal grouping and totals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "3cd318340f798a23ceeb6d4b535918f243a660005dc70cde59fcef7f2ce08e02",
+      "guide_sections": "2,lab3 / Duplicate keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "e0eab0efcd984b72816e485f9a9f9a753b1dc75973532b9df373061c89471a0d",
+      "guide_sections": "2,lab4 / Custom conditional rules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "8b3643cfce2e96024f7a7db3fb27fdcea631697e705a407d10e552b17e853a16",
+      "guide_sections": "2,example2 / Formula anchors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "0e16363f133eec89d599f0bf0e43ed76f68ce46390426fddb11908b4a6dfe3db",
+      "guide_sections": "2,lab4 / Order,ranges,Stop If True",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "c1dde69317e67fa22f342645d8cc13e114f4905c26ad95f0c7f4036517e4103c",
+      "guide_sections": "3,example2,lab5 / Named logical/criteria functions and LET",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "38d1359b3bd62fb0695235550456fa0d7065d09eb2cb6c17a7f897e96d6cc62f",
+      "guide_sections": "3,example1,lab5 / Five lookup functions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "8f08bc7739ed16b18a00eb48f87d1cdfee6edd973c89cb11d78a8feeac3edfc9",
+      "guide_sections": "3 / TODAY and NOW",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "5d30ee33c261dda721a8d5e25122401acc00deb80d4506b3fa19ee9ad6222c52",
+      "guide_sections": "3,example5 / WEEKDAY and WORKDAY",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "5624877b19495edd4cc42b7619b2d8bc9a7c432cfe25dc59d10cd2da8a1d17be",
+      "guide_sections": "3,lab7 / Consolidate by position/category",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "a0685e03b3c54c09cea4a0a014a5f38acf83d8ad2b36764f3d64230b42ea9508",
+      "guide_sections": "3,lab7 / Goal Seek versus scenarios",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "27e4e8a310cd23b0577c267cb961593177b4c039a9b63a05f40580c18da33175",
+      "guide_sections": "3,example4 / Logical feasibility and NPER",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "3883521c2e87df10b3bde150d91b0fa93fe667b07853cc7a585efa4fa5fd4af3",
+      "guide_sections": "3,example4 / PMT signs,periods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "83aed38ced9fb92aa9dee964263bec88916ed3520ae7525a5c6abb898720ab9a",
+      "guide_sections": "3,example3 / FILTER Boolean array",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "6e1d15890f0fcebe279cc179f81921e375fd8a38659d0060690da4e777884fbe",
+      "guide_sections": "3,example3 / SORTBY projection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "652ee674762c65f863fa844e01deea650e7cffa2f78e2ceedc21219acf77c60f",
+      "guide_sections": "3,lab8 / Precedents and dependents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "a3fcbeb8e18cac0d9c1f4e5c991ca7264b4de13b55d4b2b377101e4f2d4f37dd",
+      "guide_sections": "3,lab8 / Watch Window",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "30d7832286b6371768a1a16fa1379309b0b5ceaaff07eb2cd4c1f47d7f0a38e9",
+      "guide_sections": "3,lab8 / Error checking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 14,
+      "objective_sha256": "d7d1cec94aa641a1ad10b9ea7a5467ebdda76cf898cfe660fd02331a359da9dd",
+      "guide_sections": "3,lab8 / Evaluate Formula",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 15,
+      "objective_sha256": "8defb97ab642297f0a8b036e4bcd9eb7f3a0a6e268df1a1694ab0a76c7e3cdcb",
+      "guide_sections": "3,lab9 / Record macro",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 16,
+      "objective_sha256": "743eed777172f14326b240e210d0b6395681348c3b2d2d94f5a8e5dd0baabd40",
+      "guide_sections": "3,lab9 / Meaningful macro name",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 17,
+      "objective_sha256": "3131b89476714cf806dd147dc2bc328ef7ef783f932005cb81f8b6cf7cb890d8",
+      "guide_sections": "3,lab9 / Edit macro and retest",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "f0c1d804db4f22184ca9ee7d377d183d6be6d1b5d27fabb33d711b35312ca0d1",
+      "guide_sections": "4,lab10 / Dual axes and units",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "ef2139e9275679a7cc6d9f9b6086a6cec4b6a4e664fa9a6f53cd8af2a2c44756",
+      "guide_sections": "4,lab10 / Six named specialized chart types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "d1324bf3cd9abc0315b70e2cdcb436b0c368c71d43b733e5d4c0cab2b6bb4e5b",
+      "guide_sections": "4,lab10 / Pivot source and creation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "94d327dfb582da6eb5f517de6c8bf209b866db8c582bad5e153e1bd635783d3b",
+      "guide_sections": "4 / Field layout and options",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "a444d66dee39a15ec6d6bcc122739f5fea8084a385208604f7a1b39eae79358d",
+      "guide_sections": "4,lab10 / Slicers/connections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "8cdc99374668a27da78daa7a87ad3d8e91b774df3b133acb019fedc725094a2a",
+      "guide_sections": "4,lab10 / Date/numeric grouping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "578bd3a0b8a4765f738736756eace1650c1effd45868e1978ac10816e6e6eb92",
+      "guide_sections": "4,example6 / Classic calculated fields",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "c2ad4490f5d6ff66cbb149ffab281b8f4aec475f1fc44de7119499f98cc825a9",
+      "guide_sections": "4 / Aggregation,number format,Show Values As",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "5d225fc48154c827c3fb9ec6d437d89a294d349c05dc6bec91c2c35b7b28be14",
+      "guide_sections": "4,lab10 / PivotChart creation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "98a6376b08680352406677f5a66a989defce443968f1655fa25e262bf452b9ba",
+      "guide_sections": "4 / PivotChart fields and filters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "07199d9091e9708bdb27a04e44f1f12c5783cf24967f35a66847422caaff7428",
+      "guide_sections": "4 / PivotChart styles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "142fbae5909bb28399768fbddf16c80e3c9d5e854a6cde44272f2812e4acdba9",
+      "guide_sections": "4,lab10 / Hierarchy drill and context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MO-211"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MO-211",
+        "title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+        "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+        "snapshot_path": ".maintenance\\microsoft-followup-2026-09-28\\candidates\\mo-211-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\microsoft-followup-2026-09-28\\candidates\\mo-211-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+        "previous_status_sha256": null,
+        "current_status_sha256": "0f072c8b3c675f38917a10f3a5aadc709d52c9873e7794436a569f44e21df657",
+        "official_status": {
+          "skills_versions": [
+            "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+            "You will have 50 minutes to complete this assessment.",
+            "Retirement date: none listed"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 16,
+    "reachable": 16,
+    "access_blocked": 0,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mo-211-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+      "checked_at": "2026-09-28T13:43:12.122953+00:00",
+      "health": {
+        "id": "mo-211-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+        "checked_at": "2026-09-28T13:43:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps) - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+        "duration_signals": [
+          "24 hours",
+          "50 minutes",
+          "approximately 150 hours"
+        ],
+        "signal_fingerprint": "0bd718659b2791ada128c5f02b90b01985a35802210a80c7febc87d02115657c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+      "sha256": "5d205919eec20012442f96fb8b9db286dbc64cbbac6e8713b1b5aadca27d3284",
+      "text_characters": 3049
+    },
+    {
+      "id": "microsoft-excel-help",
+      "url": "https://support.microsoft.com/en-us/excel",
+      "checked_at": "2026-09-28T13:43:12.123835+00:00",
+      "health": {
+        "id": "microsoft-excel-help",
+        "url": "https://support.microsoft.com/en-us/excel",
+        "checked_at": "2026-09-28T13:43:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Excel help & learning | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/",
+        "duration_signals": [],
+        "signal_fingerprint": "b3d21212ba6f41c63bbbcba8cf8d1bc1539703811f6457c3188d22f324f74ee0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/",
+      "sha256": "2fc6f383d8991a33b8e23165008300dd7acbb50b2728c2493edcd1f01af57648",
+      "text_characters": 826
+    },
+    {
+      "id": "mo211-skills-pdf",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+      "checked_at": "2026-09-28T13:43:12.124428+00:00",
+      "health": {
+        "id": "mo211-skills-pdf",
+        "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+        "checked_at": "2026-09-28T13:43:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+      "sha256": "f6cc84c4249cc1379a9f80cdb818bf6d2481474955ddfd818507de89f4eb124f",
+      "representation_note": "Actual PDF text separately extracted and read; byte hash preserved."
+    },
+    {
+      "id": "mos-expiration-policy",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "checked_at": "2026-09-28T13:43:12.554797+00:00",
+      "health": {
+        "id": "mos-expiration-policy",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "checked_at": "2026-09-28T13:43:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "content_type": "text/html",
+        "page_title": "Credential expiration policies",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "02be00ecc69bd6d09b0cc1d64114ccd75ee92143ee2f3928f7523e1af9cbbedf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "sha256": "1f9e8aa3c9f4a21ef4f44d75c0ddafb0cd6d57182c3ce2ec4c8f41e9c999b92e",
+      "text_characters": 2379
+    },
+    {
+      "id": "excel-xlookup",
+      "url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+      "checked_at": "2026-09-28T13:43:12.598345+00:00",
+      "health": {
+        "id": "excel-xlookup",
+        "url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+        "checked_at": "2026-09-28T13:43:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "XLOOKUP function | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+        "duration_signals": [],
+        "signal_fingerprint": "e7f6b10b2eadc0defe070d51ff50a98e1f711a2b44b367c8dbcee58fb96dbd76",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+      "sha256": "8c5d8c2cf3ee1831d137274a61ff905aec9248042bf007ee041090a59db02d0b",
+      "text_characters": 5226
+    },
+    {
+      "id": "excel-pivot-calculations",
+      "url": "https://support.microsoft.com/en-us/excel/calculate-values-in-a-pivottable",
+      "checked_at": "2026-09-28T13:43:13.015521+00:00",
+      "health": {
+        "id": "excel-pivot-calculations",
+        "url": "https://support.microsoft.com/en-us/excel/calculate-values-in-a-pivottable",
+        "checked_at": "2026-09-28T13:43:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/calculate-values-in-a-pivottable",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Calculate values in a PivotTable | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/calculate-values-in-a-pivottable",
+        "duration_signals": [],
+        "signal_fingerprint": "5b1b47e247877b78e2ffcf0709af6fef1ca8bb5d39ffcbfdf0821298131eb4c0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/calculate-values-in-a-pivottable",
+      "sha256": "30f08c624093a92780fde9fca6c4428195014a49748959e374402934120e4a20",
+      "text_characters": 22932
+    },
+    {
+      "id": "excel-stale-values",
+      "url": "https://support.microsoft.com/en-US/Excel/stale-value-formatting",
+      "checked_at": "2026-09-28T13:43:13.160224+00:00",
+      "health": {
+        "id": "excel-stale-values",
+        "url": "https://support.microsoft.com/en-US/Excel/stale-value-formatting",
+        "checked_at": "2026-09-28T13:43:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/stale-value-formatting",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Stale Value Formatting | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/stale-value-formatting",
+        "duration_signals": [],
+        "signal_fingerprint": "a1955937197bfd38c124d3d8f3843f8c35939b789c811fcb5792f647758aae28",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/stale-value-formatting",
+      "sha256": "6a6e3c8d45e43782f55a040e16d76bd8b42c0d249cfbe161c6a8ef1bb50f071d",
+      "text_characters": 1928
+    },
+    {
+      "id": "excel-stale-blog",
+      "url": "https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098",
+      "checked_at": "2026-09-28T13:43:13.266164+00:00",
+      "health": {
+        "id": "excel-stale-blog",
+        "url": "https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098",
+        "checked_at": "2026-09-28T13:43:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Announcing Excel Stale Value Formatting",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098",
+        "duration_signals": [],
+        "signal_fingerprint": "e08efaf82358112903cb8c43a580abc931e7bb057fc7392164b4dc78114fe85e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098",
+      "sha256": "fef5a76e370c926473b4ce1f59368bb31f523d91f35f6ef43d65ea0413f45f7f",
+      "text_characters": 39,
+      "representation_note": "Entire public article body read from embedded JSON; main element only has title."
+    },
+    {
+      "id": "excel-pmt",
+      "url": "https://support.microsoft.com/en-us/excel/functions/pmt-function",
+      "checked_at": "2026-09-28T13:43:13.710764+00:00",
+      "health": {
+        "id": "excel-pmt",
+        "url": "https://support.microsoft.com/en-us/excel/functions/pmt-function",
+        "checked_at": "2026-09-28T13:43:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/functions/pmt-function",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PMT function | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/functions/pmt-function",
+        "duration_signals": [],
+        "signal_fingerprint": "d2e6475e7f9244aa0db428979ddc99d91f81e0a9ebae31e3a7f40507228a0e10",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/functions/pmt-function",
+      "sha256": "665c2cd26fd15d75c2ef671323f30fc818812805d1a05b57d8194755e9c76894",
+      "text_characters": 2493
+    },
+    {
+      "id": "excel-nper",
+      "url": "https://support.microsoft.com/en-us/excel/functions/nper-function",
+      "checked_at": "2026-09-28T13:43:13.999128+00:00",
+      "health": {
+        "id": "excel-nper",
+        "url": "https://support.microsoft.com/en-us/excel/functions/nper-function",
+        "checked_at": "2026-09-28T13:43:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/functions/nper-function",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "NPER function | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/functions/nper-function",
+        "duration_signals": [],
+        "signal_fingerprint": "5d2bd85d1bc5ba0f5ff527e5eb95a35a4a8f6b988369b5d9051f56df3908eab9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/functions/nper-function",
+      "sha256": "5ede3410f1a06023d611a1c7737f54bcdbb2c875ef3f275be727f66f5404747a",
+      "text_characters": 2070
+    },
+    {
+      "id": "excel-workday",
+      "url": "https://support.microsoft.com/en-us/excel/functions/workday-function",
+      "checked_at": "2026-09-28T13:43:14.176079+00:00",
+      "health": {
+        "id": "excel-workday",
+        "url": "https://support.microsoft.com/en-us/excel/functions/workday-function",
+        "checked_at": "2026-09-28T13:43:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/functions/workday-function",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "WORKDAY function | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/functions/workday-function",
+        "duration_signals": [],
+        "signal_fingerprint": "875589573fe9be04c96e6e14579dac0a15a68124b819af0a923fcf14425bb224",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/functions/workday-function",
+      "sha256": "9bdad36e36ac1f1b2a5f5d1dd6e3458b0f5b99990fee868fb3f44fafece1be1b",
+      "text_characters": 2675
+    },
+    {
+      "id": "excel-validation-circles",
+      "url": "https://support.microsoft.com/en-US/Excel/display-or-hide-circles-around-invalid-data",
+      "checked_at": "2026-09-28T13:43:14.511747+00:00",
+      "health": {
+        "id": "excel-validation-circles",
+        "url": "https://support.microsoft.com/en-US/Excel/display-or-hide-circles-around-invalid-data",
+        "checked_at": "2026-09-28T13:43:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/display-or-hide-circles-around-invalid-data",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Display or hide circles around invalid data | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/display-or-hide-circles-around-invalid-data",
+        "duration_signals": [],
+        "signal_fingerprint": "dd0a61e52a9ada4db067025597831e16669b00ed0d324ee00f6678d9e698f1c3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/display-or-hide-circles-around-invalid-data",
+      "sha256": "feeeeff91a035e87c49e2c1bcca34895bb58454c92e076324a485156f3f93988",
+      "text_characters": 1587
+    },
+    {
+      "id": "excel-copy-macro",
+      "url": "https://support.microsoft.com/en-us/excel/copy-a-macro-module-to-another-workbook",
+      "checked_at": "2026-09-28T13:43:14.727288+00:00",
+      "health": {
+        "id": "excel-copy-macro",
+        "url": "https://support.microsoft.com/en-us/excel/copy-a-macro-module-to-another-workbook",
+        "checked_at": "2026-09-28T13:43:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/copy-a-macro-module-to-another-workbook",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Copy a macro module to another workbook | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/copy-a-macro-module-to-another-workbook",
+        "duration_signals": [],
+        "signal_fingerprint": "0c39d44a5ad6fbfb41a6903f2dc1d55dabc155bb02f5c48527961c2ef5f79496",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/copy-a-macro-module-to-another-workbook",
+      "sha256": "171f60860dd8fbccbf6b4a6c0f184f2906b6957453bac90a25063004bee71859",
+      "text_characters": 2801
+    },
+    {
+      "id": "excel-filter",
+      "url": "https://support.microsoft.com/en-us/excel/functions/filter-function",
+      "checked_at": "2026-09-28T13:43:15.253422+00:00",
+      "health": {
+        "id": "excel-filter",
+        "url": "https://support.microsoft.com/en-us/excel/functions/filter-function",
+        "checked_at": "2026-09-28T13:43:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/functions/filter-function",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "FILTER function | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/functions/filter-function",
+        "duration_signals": [],
+        "signal_fingerprint": "09a056966ca75a4e8c0fa1ae93bbc441fe1f8866b278a3920229109a43101252",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/functions/filter-function",
+      "sha256": "abcd56c2fa0ac56883e81243bb746184dd4ea7f9beb233739e20310c7a8df95e",
+      "text_characters": 3311
+    },
+    {
+      "id": "excel-sortby",
+      "url": "https://support.microsoft.com/en-us/excel/functions/sortby-function",
+      "checked_at": "2026-09-28T13:43:15.409176+00:00",
+      "health": {
+        "id": "excel-sortby",
+        "url": "https://support.microsoft.com/en-us/excel/functions/sortby-function",
+        "checked_at": "2026-09-28T13:43:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/functions/sortby-function",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SORTBY function | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/functions/sortby-function",
+        "duration_signals": [],
+        "signal_fingerprint": "4b926e5665d93230728fa53c79d3985362f396a0e860a53ddd83cdcba10f8d58",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/functions/sortby-function",
+      "sha256": "edc71a58810a82e954d0f8c69ecb447e9bc350e9bd06b0833f5d77c24c1721e5",
+      "text_characters": 2594
+    },
+    {
+      "id": "excel-randarray",
+      "url": "https://support.microsoft.com/en-us/excel/functions/randarray-function",
+      "checked_at": "2026-09-28T13:43:15.623404+00:00",
+      "health": {
+        "id": "excel-randarray",
+        "url": "https://support.microsoft.com/en-us/excel/functions/randarray-function",
+        "checked_at": "2026-09-28T13:43:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/excel/functions/randarray-function",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "RANDARRAY function | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/excel/functions/randarray-function",
+        "duration_signals": [],
+        "signal_fingerprint": "e273cc3c700699562700cae3fcb84d47b126f69404e754227c0c9dd9bd1d6000",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/excel/functions/randarray-function",
+      "sha256": "621caf720ee19c2a046e45dcba454dac99f24df3956fbeb0acfee17df494e648",
+      "text_characters": 2742
+    }
+  ],
+  "added_source_ids": [
+    "mo211-skills-pdf",
+    "excel-xlookup",
+    "excel-pivot-calculations",
+    "excel-stale-values",
+    "excel-stale-blog",
+    "excel-pmt",
+    "excel-nper",
+    "excel-workday",
+    "excel-validation-circles",
+    "excel-copy-macro",
+    "excel-filter",
+    "excel-sortby",
+    "excel-randarray"
+  ],
+  "findings": [
+    {
+      "id": "mo211-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Generic function coverage hides specific practice requirements",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-211"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The existing guide did not name several required functions or Funnel/Sunburst.",
+      "recommendation": "Teach the complete named set and distinguish supplementary tools.",
+      "disposition": "applied",
+      "source_id": "mo211-skills-pdf",
+      "resolution": "Teach the complete named set and distinguish supplementary tools."
+    },
+    {
+      "id": "mo211-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Hidden warning does not imply fresh calculations",
+      "url": "https://support.microsoft.com/en-US/Excel/stale-value-formatting",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-211"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Formatting can be disabled without recalculating; documented coverage gaps remain.",
+      "recommendation": "Add explicit recalculation and external-source checks.",
+      "disposition": "applied",
+      "source_id": "excel-stale-values",
+      "resolution": "Add explicit recalculation and external-source checks."
+    },
+    {
+      "id": "mo211-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Entry alerts do not validate every write path",
+      "url": "https://support.microsoft.com/en-US/Excel/display-or-hide-circles-around-invalid-data",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-211"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Copy,fill,formula and macro writes can bypass alerts.",
+      "recommendation": "Add invalid-data inspection and distinguish clear circles from corrected values.",
+      "disposition": "applied",
+      "source_id": "excel-validation-circles",
+      "resolution": "Add invalid-data inspection and distinguish clear circles from corrected values."
+    },
+    {
+      "id": "mo211-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Calculated-field multiplication can give a wrong business total",
+      "url": "https://support.microsoft.com/en-us/excel/calculate-values-in-a-pivottable",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-211"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Classic fields operate on sums rather than individual row products.",
+      "recommendation": "Add 140 versus300 example and source Revenue reconciliation.",
+      "disposition": "applied",
+      "source_id": "excel-pivot-calculations",
+      "resolution": "Add 140 versus300 example and source Revenue reconciliation."
+    },
+    {
+      "id": "mo211-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Reverse lookup is not duplicate aggregation",
+      "url": "https://support.microsoft.com/en-us/excel/functions/xlookup-function",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-211"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default and reverse directions select different matching rows.",
+      "recommendation": "Add first,last,missing and aggregate expected outcomes.",
+      "disposition": "applied",
+      "source_id": "excel-xlookup",
+      "resolution": "Add first,last,missing and aggregate expected outcomes."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "excel-stale-blog",
+      "decision": "accepted-bounded",
+      "notes": "Complete public body read from embedded JSON; Joe McDaid,August8,2023. Historical Windows Beta paragraph superseded by current Support for availability. Demonstration not watched."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "desktop_executed": 0,
+    "offline_checks": [
+      "23 independent arithmetic,date,order and aggregation assertions; no Excel engine."
+    ]
+  },
+  "answered_checks": 32,
+  "limitations": [
+    "Same-context AI review; independent human review remains pending.",
+    "No Excel desktop application,calculation engine,macro or exam simulator executed.",
+    "Independent Python calculations check expected examples only; they do not establish Excel compatibility.",
+    "Detailed PDF manual review is separate from the coarse four-domain page monitor.",
+    "Embedded media,complete platform matrices and commercial training were not evaluated."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local repository and independent Python calculations only; no Excel application, workbook engine or macro executed.",
+    "learning_catalog_consistency": "passed",
+    "independent_expected_result_assertions": 23
+  },
+  "detailed_pdf_evidence": {
+    "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-211_OD_MOS365_ExcelExpert.pdf",
+    "sha256": "f6cc84c4249cc1379a9f80cdb818bf6d2481474955ddfd818507de89f4eb124f",
+    "pages": 3
+  },
+  "source_reading_boundaries": {
+    "mo-211-blueprint": "Entire credential page read:50 minutes,seven languages,150-hour recommendation,no Learn collection,60-month label,no retirement notice.",
+    "microsoft-excel-help": "Help directory inspected; no claim of reading all linked lessons.",
+    "mo211-skills-pdf": "All48 detailed PDF tasks read,including wrapped function/chart bullets. Four-domain page snapshot remains separate.",
+    "mos-expiration-policy": "MOS five-year policy read; applicability depends on award date.",
+    "excel-xlookup": "Main syntax,match/search modes and worked examples read; binary ordering and duplicate selection distinguished.",
+    "excel-pivot-calculations": "Main desktop calculation sections read:summary defaults,Show Values As,classic sum-based calculated fields and OLAP restrictions. Complete platform instructions not audited.",
+    "excel-stale-values": "Complete current Support behavior and limitations read,including external values and Data Table dependents not displaying warnings.",
+    "excel-stale-blog": "Complete public body read from embedded JSON; Joe McDaid,August8,2023. Historical Windows Beta paragraph superseded by current Support for availability. Demonstration not watched.",
+    "excel-pmt": "Complete syntax,constant-payment assumptions,period units and examples read.",
+    "excel-nper": "Complete syntax,period/sign assumptions and examples read.",
+    "excel-workday": "Complete syntax,weekend/holiday rules and examples read.",
+    "excel-validation-circles": "Complete entry-bypass and Circle Invalid Data instructions read.",
+    "excel-copy-macro": "Complete module-copy workflow read,including retained file formats and current policy restrictions.",
+    "excel-filter": "Complete syntax,include errors,no-match handling,spill and cross-workbook limits read.",
+    "excel-sortby": "Complete syntax,key dimensions,ordering and cross-workbook limits read.",
+    "excel-randarray": "Complete shape,bounds,type,defaults and spill reference read."
+  }
+}

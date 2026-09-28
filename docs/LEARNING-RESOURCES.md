@@ -2238,6 +2238,23 @@ This is a selective learning path, not a complete list of Excel resources.
 | Microsoft function/task references linked above | Public; reproduce expected outputs | **3–4 hours**, included in targeted practice above |
 | [Data-conversion article](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/control-data-conversions-in-excel-for-windows-and-mac/4215336) | Public; bounded historical workflow explanation | **15 minutes** plus an import comparison |
 
+### MO-211 — Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)
+
+Resource details from the [MO-211 guide](../guides/MO-211-microsoft-excel-expert.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Excel Expert resources. All time estimates below are author suggestions.
+
+Joe McDaid's [Stale Value Formatting announcement](https://techcommunity.microsoft.com/blog/excelblog/stale-value-formatting/3887098), originally published August 8, 2023, explains the calculation-mode problem clearly. Its Windows Beta availability paragraph is historical. Use the current Support reference in section 1 for present behavior and limitations. Read the warning as a prompt to verify calculation, not as ordinary font styling. The article adds useful context; it does not establish an additional exam objective. Its embedded demonstration was not evaluated here.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official credential page and linked detailed outline above | Public | **25 minutes** for scope and logistics |
+| Function and workflow references linked in each section | Public | **3–5 hours**, including small experiments |
+| [Excel help and learning](https://support.microsoft.com/en-us/excel) | Public directory; linked lessons not comprehensively audited | Target gaps as needed |
+| Ten labs and six worked examples in this guide | Suitable Excel desktop environment required | **15–22 hours** plus two timed repeats |
+
+Before a timed attempt, explain every named function, recover from a broken formula, reconcile a filtered Pivot total and deliver a correctly protected workbook. Reserve part of the 50-minute practice session for checking the saved result.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

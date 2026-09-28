@@ -2733,6 +2733,8 @@ The review maps the live expert scope to reusable templates, styles, fields, con
 
 ## MO-211 coverage record
 
+The September 28 [deep review](research/2026-09-28-mo-211-deep-review.md) maps 48 detailed objectives. Read the whole guide and all 48 detailed PDF tasks. Add six examples, ten proposed desktop labs and 32 answered checks; 23 independent local assertions check expected arithmetic, dates, ordering and totals, without Excel execution. Correct named-function coverage and distinguish validation bypass, stale warnings and classic Pivot aggregation. Human review pending. Current guide citations: 16 registered, 16 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 4, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: workbook options/settings; advanced data; advanced formulas/macros; advanced charts/tables
