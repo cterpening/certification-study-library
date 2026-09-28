@@ -2018,18 +2018,50 @@
       "exam_code": "SC-401",
       "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/sc-401-official-objectives.txt",
       "blueprint_snapshot_sha256": "5ca7d97c4a3ab4854779d477e20c4c2f6fc0b3ddeb987c6b63b8211127f51e85",
       "objective_coverage": [
-        {"objective_group": "Implement information protection", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–4"]},
-        {"objective_group": "Implement data loss prevention and retention", "guide_sections": ["Section 2", "All integrated scenarios", "Labs 5–7"]},
-        {"objective_group": "Manage risks, alerts, and activities", "guide_sections": ["Section 3", "All integrated scenarios", "Labs 2, 5, and 8"]}
+        {
+          "objective_group": "Implement information protection",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Implement data loss prevention and retention",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Manage risks, alerts, and activities",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 2, 5, and 8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 24, "reachable": 23, "access_blocked": 1, "missing_or_error": 0},
-      "notes": "Every July 28, 2026 subobjective is mapped to a data requirement, classifier, label, user/device/location context, preventive/detective control, priority, evidence, exception, failure, investigation, or recovery decision. Three scenarios, eight labs and 36 original checks cover built-in/custom SITs, fingerprinting, EDM, trainable classifiers, OCR and explorers; item/container labels, protection, publishing, auto-labeling and Cloud Apps; client/scanner and email encryption; unified and endpoint DLP, Adaptive Protection, precedence and just-in-time protection; retention labels/policies, adaptive scopes, Policy lookup, disposition and recovery; Insider Risk roles/connectors/Defender/signals/templates/policies/forensic evidence/risk levels/cases/notices; Audit, Activity Explorer, DLP/insider/XDR/Cloud Apps alerts and eDiscovery; and Microsoft/third-party AI protection with current versus classic DSPM terminology. All 24 URLs are cataloged: 23 reachable and the Udemy page automation-blocked; none missing or broken. The guide records 20 hours 45 minutes of current Learn paths, four-day course, free Practice Assessment, current MeasureUp metadata, July 2026 gaps in older material, and the absence of independently verified exact Pluralsight, O'Reilly, or Whizlabs pages. September 17, 2026 lifecycle check: added the announced October revision and current date evidence to the guide and catalog. This is a bounded notice update; historical objective snapshot and full-review date remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 35,
+        "reachable": 34,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Whole guide read and all 65 published October objectives in nine groups mapped. Preserve July baseline and unresolved October 28 versus October 14 official date conflict. Correct Data Explorer and JIT boundaries; add Power BI, audit retention, network DLP and priority-cleanup context, four worked examples, a ninth lab, six additional answers and one qualified Purview blog. Four arithmetic assertions checked offline; no tenant execution. Human review pending. Source/objective mapping checks passed; lifecycle freshness remains blocked. See docs/research/2026-09-27-sc-401-deep-review.md"
     },
     {
       "id": "pl-300-2026-09-01-source-validation",

@@ -6,13 +6,12 @@ Recorded deep reviews in this program, separate from historical source validatio
 
 50 guides; 46 have review work.
 
-Next batch: SC-401, PL-400, DP-600.
+Next batch: PL-400, DP-600, DP-700.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | pending | Pending | not-recorded |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | pending | Pending | not-recorded |
 | [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | pending | Pending | not-recorded |
 | [DP-700](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md) | pending | Pending | not-recorded |
@@ -30,6 +29,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | reviewed | 2026-09-27 | offline-only |
+| [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | pending | Pending | not-recorded |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | pending | Pending | not-recorded |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | pending | Pending | not-recorded |

@@ -1,0 +1,2053 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "SC-401",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "6b85be221c79591d9b2b450336d7cca4806d23e9ebccdb9c4e09ceae4a537f09",
+  "guide_after_sha256": "a73db89ae71a2a7300843ce0c7ae127975d7f6d3e0366fd63e396e377b1edb75",
+  "prior_records": {
+    "exam": {
+      "code": "SC-401",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Administering Information Security in Microsoft 365",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical Microsoft 365 and Microsoft Purview administration plus familiarity with PowerShell, Microsoft Entra, Microsoft Defender XDR, and Microsoft Defender for Cloud Apps; hands-on experience with classification, sensitivity labels, DLP, endpoint controls, retention, Insider Risk Management, Audit, eDiscovery, and AI data security is strongly recommended."
+    },
+    "review": {
+      "id": "sc-401-2026-09-01-source-validation",
+      "exam_code": "SC-401",
+      "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-401-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5ca7d97c4a3ab4854779d477e20c4c2f6fc0b3ddeb987c6b63b8211127f51e85",
+      "objective_coverage": [
+        {
+          "objective_group": "Implement information protection",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Implement data loss prevention and retention",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Manage risks, alerts, and activities",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 2, 5, and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 24,
+        "reachable": 23,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every July 28, 2026 subobjective is mapped to a data requirement, classifier, label, user/device/location context, preventive/detective control, priority, evidence, exception, failure, investigation, or recovery decision. Three scenarios, eight labs and 36 original checks cover built-in/custom SITs, fingerprinting, EDM, trainable classifiers, OCR and explorers; item/container labels, protection, publishing, auto-labeling and Cloud Apps; client/scanner and email encryption; unified and endpoint DLP, Adaptive Protection, precedence and just-in-time protection; retention labels/policies, adaptive scopes, Policy lookup, disposition and recovery; Insider Risk roles/connectors/Defender/signals/templates/policies/forensic evidence/risk levels/cases/notices; Audit, Activity Explorer, DLP/insider/XDR/Cloud Apps alerts and eDiscovery; and Microsoft/third-party AI protection with current versus classic DSPM terminology. All 24 URLs are cataloged: 23 reachable and the Udemy page automation-blocked; none missing or broken. The guide records 20 hours 45 minutes of current Learn paths, four-day course, free Practice Assessment, current MeasureUp metadata, July 2026 gaps in older material, and the absence of independently verified exact Pluralsight, O'Reilly, or Whizlabs pages. September 17, 2026 lifecycle check: added the announced October revision and current date evidence to the guide and catalog. This is a bounded notice update; historical objective snapshot and full-review date remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+    },
+    "sources": [
+      {
+        "id": "microsoft-purview-docs-sc900",
+        "title": "Microsoft Purview documentation",
+        "url": "https://learn.microsoft.com/en-us/purview/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AB-900",
+          "SC-401"
+        ]
+      },
+      {
+        "id": "microsoft-purview-audit-overview-sc900",
+        "title": "Learn about Microsoft Purview Audit solutions",
+        "url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Audit events, retention, licensing, and portal workflows are volatile."
+      },
+      {
+        "id": "microsoft-purview-ediscovery-sc900",
+        "title": "Learn about eDiscovery",
+        "url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Portal workflows, cases, review features, licensing, and terminology are volatile."
+      },
+      {
+        "id": "microsoft-purview-insider-risk-management-sc900",
+        "title": "Learn about Insider Risk Management",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Signals, templates, workflows, licensing, and privacy controls are volatile."
+      },
+      {
+        "id": "microsoft-purview-retention-sc900",
+        "title": "Learn about retention policies and retention labels",
+        "url": "https://learn.microsoft.com/en-us/purview/retention",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ]
+      },
+      {
+        "id": "microsoft-purview-sensitivity-labels-sc900",
+        "title": "Learn about sensitivity labels",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Supported protection settings, locations, licensing, and client behavior are volatile."
+      },
+      {
+        "id": "microsoft-purview-dspm-current-ab900",
+        "title": "Learn about Microsoft Purview Data Security Posture Management",
+        "url": "https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-900",
+          "SC-401"
+        ],
+        "notes": "Current versus classic experiences, objectives, assessments, AI coverage, reports, licensing, and portal navigation are volatile."
+      },
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations."
+      },
+      {
+        "id": "ms-102-endpoint-dlp",
+        "title": "Learn about Endpoint data loss prevention",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102",
+          "SC-401"
+        ]
+      },
+      {
+        "id": "sc-401-blueprint",
+        "title": "Study guide for Exam SC-401: Administering Information Security in Microsoft 365",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Authoritative skills measured as of July 28, 2026; no upcoming update announced."
+      },
+      {
+        "id": "sc-401-credential",
+        "title": "Microsoft Certified: Information Security Administrator Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Official active credential page; last updated July 28, 2026, 100-minute exam and annual renewal listed."
+      },
+      {
+        "id": "sc-401-practice",
+        "title": "SC-401 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Free official readiness assessment linked from the credential page."
+      },
+      {
+        "id": "sc-401-edm",
+        "title": "Learn about exact data match based sensitive information types",
+        "url": "https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Current EDM schema, matching, normalization and supported-service concepts."
+      },
+      {
+        "id": "sc-401-document-fingerprinting",
+        "title": "Document fingerprinting",
+        "url": "https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Current fingerprint-SIT concepts, creation, testing and migration guidance."
+      },
+      {
+        "id": "sc-401-ocr",
+        "title": "Learn about optical character recognition in Microsoft Purview",
+        "url": "https://learn.microsoft.com/en-us/purview/ocr-learn-about",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Supported OCR locations, file types, classifiers, roles, billing and limitations are volatile."
+      },
+      {
+        "id": "sc-401-adaptive-protection",
+        "title": "Help dynamically mitigate risks with Adaptive Protection",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Current insider-risk levels, policy integration, expiry and supported preventive controls; distinguish risk levels from alert severity."
+      },
+      {
+        "id": "sc-401-course",
+        "title": "SC-401T00-A Protect sensitive information with Microsoft Purview in the AI era",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-401t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Four-day official course linking six current learning paths."
+      },
+      {
+        "id": "sc-401-path-information-protection",
+        "title": "Implement Microsoft Purview Information Protection",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Nine-module SC-401 path; listed duration 6 hours 16 minutes."
+      },
+      {
+        "id": "sc-401-path-dlp",
+        "title": "Implement and manage Microsoft Purview Data Loss Prevention",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Six-module SC-401 path; listed duration 4 hours 10 minutes."
+      },
+      {
+        "id": "sc-401-path-retention",
+        "title": "Implement and manage Microsoft 365 retention and recovery",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Two-module SC-401 path; listed duration 1 hour 19 minutes."
+      },
+      {
+        "id": "sc-401-path-insider-risk",
+        "title": "Implement and manage Microsoft Purview Insider Risk Management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Six-module SC-401 path; listed duration 3 hours 59 minutes."
+      },
+      {
+        "id": "sc-401-path-audit-search",
+        "title": "Audit and search activity in Microsoft Purview",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-audit-search/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Two-module SC-401 path; listed duration 1 hour 31 minutes."
+      },
+      {
+        "id": "sc-401-path-ai",
+        "title": "Secure AI interactions and environments with Microsoft Purview",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Five-module SC-401 path; listed duration 3 hours 30 minutes."
+      },
+      {
+        "id": "sc-401-exam-readiness-zone",
+        "title": "SC-401 Exam Readiness Zone search",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Official video search linked from the credential page; verify each episode date and July 2026 alignment."
+      },
+      {
+        "id": "sc-401-udemy-john-christopher",
+        "title": "SC-401 Information Security Administrator Associate course",
+        "url": "https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "John Christopher; 8 hours 26 minutes and 91 lectures, updated February 2026; supplement July 2026 changes."
+      },
+      {
+        "id": "sc-401-youtube-john-christopher",
+        "title": "SC-401 course and training orientation",
+        "url": "https://www.youtube.com/watch?v=CqYs-KtJoeQ",
+        "publisher": "John Christopher",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "Free orientation/sample video for the commercial course; not a current end-to-end July 2026 path."
+      },
+      {
+        "id": "sc-401-measureup",
+        "title": "Microsoft SC-401 practice test",
+        "url": "https://www.measureup.com/microsoft-sc-401-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-401"
+        ],
+        "notes": "146 questions and September 2025 release listed; reconcile the July 2026 minor Audit and AI changes."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "024d98af56a217128c38d190f35eb210259e6efa90f2166dc8d1e9a38cf8cccf",
+      "guide_sections": "1 / Requirements inventory",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "42f1f7903a0876a20cb2d259d8ebc8ee48c90da429bb41c9f00c90affb4a02d7",
+      "guide_sections": "1 / Classifier selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "76f9c63f5ed3b0566ca0a3602ece3cbe2b84bfb220ce44c93ea1c5994b829077",
+      "guide_sections": "1 / Custom SIT patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "7b33dfe97a1072feae6b7eced0517b0c00b00adf4f16e41592cfdcb40594dcdd",
+      "guide_sections": "1 / Fingerprinting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "c34463e87079eb7daa718bfde68dd56d91e9ee82296425936de4abedad7aa633",
+      "guide_sections": "1 / EDM normalization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "01294ed842c8d7fae993d937f36543fb83d15dcbefd31db2b3cdc4bc17f74a4f",
+      "guide_sections": "1 / Trainable classifiers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "ec1441efd1190216b681f0f782321cc920d76abdb144fe86568eafe197bd3a01",
+      "guide_sections": "1 / Data/Content Explorer roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "e713245d6d62e95a722b6c6a838cadbb4a6492269b5f431e6207f27bdf41341a",
+      "guide_sections": "1 / OCR support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "47c40be41eb4290ea2dadfa14692057e11d42af3ffe9997e020e8f7d9cb6cc90",
+      "guide_sections": "1 / Label roles and rollout personas",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "b25fb5e097cf0b4f3c4ffa3f32ca82cd70ed99e65c691f6f0a8cdfb4b42c6bf7",
+      "guide_sections": "1 / Item/container label taxonomy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "24d179f476ac00610372027eb84720841b047ca7adc7cdc3c0f91aa5ed440f9a",
+      "guide_sections": "1 / Protection and marking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "5c997a5824deb6fb6318f6c35d49a9a5906576b8a1d423fdbcfefcae9b746b28",
+      "guide_sections": "1 / Publishing policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "8467d2a5f30af33e038677f45b98d0bb42bc07b782e98d596fc4275513f0eaeb",
+      "guide_sections": "1 / Auto-label simulation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "f6dedd7ae5fb7b384255cfe5434e7545470e782093c11334b596ea5784fa3608",
+      "guide_sections": "1 / Container controls and Power BI worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "6f5e155e989eb6b2027b1027040ec268179631f85a51c20df3bf5fe20b77feec",
+      "guide_sections": "1 / Cloud Apps labeling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "6876123d2f2f9010a0c3ae7b866efaa9a94c59b4b2128e18705f74f1fef6f614",
+      "guide_sections": "1 / Information Protection client deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "edf1c509868bd0b6466f363e9ccdc2e2fa5d62ff99bc17b2d1591fb17b6d50af",
+      "guide_sections": "1 / Client file management",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "666cdc7e2b4a6be8c36cc00849d8ee11b3b30472f577f36107bc51177579446a",
+      "guide_sections": "1 / Scanner workflow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "488af10908565a1f6632d133b532ebd96d7f91ccd658c4c3ad3b97175122772e",
+      "guide_sections": "1 / Encrypted-mail workflow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "e8824c052e3c238541127cf4e892bce825a1af065a39740ac897e0a2e19cc4b4",
+      "guide_sections": "1 / Advanced Message Encryption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "1479fa8692ee6d510edc5337d39412d2e8fa6ab21b3cf069f8783e9d9a9f0e1e",
+      "guide_sections": "2 / DLP requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "8b7a89495292108fae6efdbea7b954288b7ae52aed75378251e1f29cfa3d9d53",
+      "guide_sections": "2 / Role separation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "f1a13611651eb30ab5594709bdca113742486ca02ea6648d194f30ce0b09926f",
+      "guide_sections": "2 / Policy/rule design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "18e95840d4c6da872a1dda2cb272d55a1f557975fd4b2a38de23e09ba10e11c9",
+      "guide_sections": "2 / Adaptive Protection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "aea1ccda680f5bd4278d8b792741d47fa188d261644c20734bf122b9691ec19a",
+      "guide_sections": "2 / Policy/rule precedence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "7b3cecc86f558c1b6919d524f5accd4ef24e52bda3784726306feb08d23e1812",
+      "guide_sections": "2 / Cloud Apps file policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "b0635da9417263071d643f7b2e01dab68c37c02629dd2ae81d9b8f641018d85d",
+      "guide_sections": "2 / Endpoint prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "c4e9881345415fa23e92d7358abe16b3c54652f6f42c33a89591862f2d57501a",
+      "guide_sections": "2 / Advanced rules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "b4c4a8609e40f17b0e8d7c88d039a43cc805e6fdd1fbc6f91e50d4ca4e1a32bd",
+      "guide_sections": "2 / Endpoint settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "1d2298ddbe97c4b2b70d77a68dcada005f4ed70acc0ba96560fb528798321e96",
+      "guide_sections": "2 / JIT worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "e99173962309f1b0d838c97384df48def79ee95e34a6afd8af44d9d6dc3e55c6",
+      "guide_sections": "2 / Endpoint event monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "1993dcb11a1f1b5e9e87f5f7efa0baa8523195877ea827dad559347fdabd5108",
+      "guide_sections": "2 / Retention requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "99c6d1ef39ee793a5cec8e0d6c875b5ac865d1cee7a3afd09d0594ea417931e5",
+      "guide_sections": "2 / Adaptive scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "0ed722ef1fd47f2c45ea32463ae822baeae542c10bdf78adf414f3e00db42c6c",
+      "guide_sections": "2 / Retention labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "3e7800c7937d61e4080c988b541dc0915c0c024b10bce8df5dacf41f67957cc3",
+      "guide_sections": "2 / Publishing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "e9ae84392637d7f251335795595011aaa559f16855d8c85c6f17bebc8bdc5d51",
+      "guide_sections": "2 / Auto-apply",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "ffb85b88f197253eb80c4b58cbcd02e0ea50cd1e1a1682a473b2decaa86d831a",
+      "guide_sections": "2 / Retention end-date example and Policy lookup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "1299d5bf3b20f97954358f11b3bdf26d767813a5292ea5cd60020637aac1b217",
+      "guide_sections": "2 / Retention policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "0139ffaa33a430dd2ae900011ce06ce3d4dc6eb8b9acd05d71646ed2329e2a87",
+      "guide_sections": "2 / Recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "82e85f80a3c88538c57af7dfff2df52f197ef1c9434e9a90d283bfbf195e7236",
+      "guide_sections": "3 / Privacy and roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "1871bde459ad8ef920e74abdf368d636abccf3e77dcff8c2737ea5e1e3602aee",
+      "guide_sections": "3 / Connectors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "0ffcacc1ebbfe1ffdb19687e20ef6512e76d9474ca7c57b587a28cf9ea6b6924",
+      "guide_sections": "3 / Defender integration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "f87b33f7309dac796a75e72557053daff2a41993c5c22336249c1793b7689512",
+      "guide_sections": "3 / Settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "64062a0494688ce161426b0f0ddc335ce7d02853aec5cb74cae21085d1ad457e",
+      "guide_sections": "3 / Indicators",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "6048a90fc72d27ccd364668d515c4520bdec043276a4fb56f17dc3459cc5261f",
+      "guide_sections": "3 / Templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "5f70badddf83e4f0ba87550c15f1e4321b0d3189b66406f352d7dbf4ecba57ab",
+      "guide_sections": "3 / Policy workflow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "780f281db0de1bcc2ccc59d1253a609edadc6e8f22ef19ae2ddd529ee064751e",
+      "guide_sections": "3 / Forensic evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "e3648354d5b461a630090481720a4bedf74565a61e85531c40c636d0026a5745",
+      "guide_sections": "3 / Adaptive risk levels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "fab39eb6008cc300644c87f1e857e7b5afd92e01b42450b6308f49cd71c33cee",
+      "guide_sections": "3 / Alerts/cases",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 11,
+      "objective_sha256": "926199f1e29b0dffd27cc759119a38c5b8d6a99a58d78299ed35d4714189ef87",
+      "guide_sections": "3 / Notice workflow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "d934a91c5158ced13fd44f7b94ce4a37e58c1628e11237afba2a9dba336cd450",
+      "guide_sections": "3 / Audit licenses",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "7fd8ddd9baad16a159e95591c7b42950c9927bbd06c79c458c1c65409b534701",
+      "guide_sections": "3 / Audit investigation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "c7daf40fa8c20e790f9eb46944300e9f108c8fa91700c74955478d8aab966c63",
+      "guide_sections": "3 / Audit retention at ingestion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "e854a241d8f8205f6bfb9fcb04b1334b455ded825f65d2b3955884aa1d854899",
+      "guide_sections": "3 / Activity Explorer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "43daeb20a8151a06e7499f8555106d9f0a45a87c5c4474fb4b6a74ccdb31750c",
+      "guide_sections": "3 / DLP alert triage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "36d2abb00dd97f8e76d5f0ac6e4dc43d86320ab4990ac640ea813898c70f7109",
+      "guide_sections": "3 / Insider-risk investigation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "198fca9e645e7d51e23d09ccf9092db9d8e56d212a2cd2067151d1beafa93062",
+      "guide_sections": "3 / XDR correlation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "45aa9a70b10f84b72080bb030281eca1ff3383b5d73e4344fcdf8f0d3612647a",
+      "guide_sections": "3 / Cloud Apps alerts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "985a83dced3657cb01938a77653eca7f9122cceb52bb147625138fd90e8d76f5",
+      "guide_sections": "3 / eDiscovery search",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "ddd5136eb83e5b97e5e26c6e0242bc1eee6fd444f3e729a5b958c5dec7f6e923",
+      "guide_sections": "3 / Purview AI controls and network boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "301b6b4d073a5c480a483221f073d36f69c4325e41e11e8232742695a7699dcb",
+      "guide_sections": "3 / Workload controls and access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "7c5edd0e9e69f59538c982a8fcf0c2a8476a2862a0fb5d4001b7a469a13c8734",
+      "guide_sections": "3 / DSPM prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "bb97e977c703715ffc069a1a5ad78c66be329dfdc7e61436de409e765104dfa1",
+      "guide_sections": "3 / DSPM roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "d2474fb91e30dc808f7be693d861b172e7493b61b0e77c789185fedb4d7d3143",
+      "guide_sections": "3 / DSPM policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "d4d53bcbd5f0faf81db5c3d601d0f1c727056801dad49e6d21b1ec446dc865b6",
+      "guide_sections": "3 / DSPM activity monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SC-401"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SC-401",
+        "title": "Administering Information Security in Microsoft 365",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
+        "snapshot_path": "data\\objective-snapshots\\sc-401-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sc-401-official-status.json",
+        "previous_sha256": "5ca7d97c4a3ab4854779d477e20c4c2f6fc0b3ddeb987c6b63b8211127f51e85",
+        "current_sha256": "3a429460a42a21f18a3156812052e4704a06f828f1beb4e9eaea1d75c74938c6",
+        "previous_status_sha256": "e30d4fb5e0caad181ec1103c2b5568e3a48f409355252463a859319e523c6ee7",
+        "current_status_sha256": "c3322b3815c28102e45a28546e9d16f4ee2b3429498123a46b8ca7f209431e5c",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 28, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 35,
+    "reachable": 34,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "microsoft-purview-docs-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/",
+      "checked_at": "2026-09-28T00:39:13.843930+00:00",
+      "health": {
+        "id": "microsoft-purview-docs-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/",
+        "checked_at": "2026-09-28T00:39:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/",
+        "duration_signals": [],
+        "signal_fingerprint": "771d1ac6f1c0d5a30ab63dd43b5fe11dd21faf994f7e64a0279f87d5b7a562a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/",
+      "sha256": "427fd4aadee057a23efa6ecc641d227eabc340d0ffdf2b4846a367873f3fd41f",
+      "text_characters": 1237
+    },
+    {
+      "id": "microsoft-purview-audit-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+      "checked_at": "2026-09-28T00:39:13.844583+00:00",
+      "health": {
+        "id": "microsoft-purview-audit-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "checked_at": "2026-09-28T00:39:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "content_type": "text/html",
+        "page_title": "Learn about auditing solutions in Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "fb30343a78070457d91b1b0cedd7e71bc02b81b92e23beffc658068b0c1770c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+      "sha256": "01aa106aa92b0ec8cff9a66f382eab667720d401d4e8e01bcb0b07aa2f5c0b2b",
+      "text_characters": 14539
+    },
+    {
+      "id": "microsoft-purview-ediscovery-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+      "checked_at": "2026-09-28T00:39:13.845041+00:00",
+      "health": {
+        "id": "microsoft-purview-ediscovery-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "checked_at": "2026-09-28T00:39:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "content_type": "text/html",
+        "page_title": "Microsoft Purview eDiscovery legacy solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "duration_signals": [],
+        "signal_fingerprint": "6a04474efe937c541b1ef81ea7aab2187e8fa69d826c4cdb3df2d65ce2ef2e1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+      "sha256": "849492ff7fd3f441d273697a5dba7b5339f2581b541729a6240ac67096a57d73",
+      "text_characters": 15725
+    },
+    {
+      "id": "microsoft-purview-insider-risk-management-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+      "checked_at": "2026-09-28T00:39:14.221953+00:00",
+      "health": {
+        "id": "microsoft-purview-insider-risk-management-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "checked_at": "2026-09-28T00:39:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "content_type": "text/html",
+        "page_title": "Learn about Insider Risk Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "duration_signals": [
+          "365 HR"
+        ],
+        "signal_fingerprint": "838c6e7ba001097d424d58f60a072f3f28b39119a6c16fade773cd0972a44711",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+      "sha256": "9e270e43d13a0dcef36b84a6de02b08804a20a70829a828b47140b2f49579559",
+      "text_characters": 18490
+    },
+    {
+      "id": "microsoft-purview-retention-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/retention",
+      "checked_at": "2026-09-28T00:39:14.286978+00:00",
+      "health": {
+        "id": "microsoft-purview-retention-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/retention",
+        "checked_at": "2026-09-28T00:39:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/retention",
+        "content_type": "text/html",
+        "page_title": "Learn about retention policies & labels to retain or delete",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/retention",
+        "duration_signals": [],
+        "signal_fingerprint": "0ba18f954236323f777ace4b28d7efab92f3186f1e8a9c96c31e54347ebd4162",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/retention",
+      "sha256": "645f79da7624c0ca7d999e8b2ff22fde254c8083eb6ebdb9700cde11e6fd4ee3",
+      "text_characters": 59395
+    },
+    {
+      "id": "microsoft-purview-sensitivity-labels-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+      "checked_at": "2026-09-28T00:39:14.500112+00:00",
+      "health": {
+        "id": "microsoft-purview-sensitivity-labels-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "checked_at": "2026-09-28T00:39:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "content_type": "text/html",
+        "page_title": "Learn about sensitivity labels",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c9938fdde0e5919d588891cd080d46415192a6f5262dea31c1f6e119e22a47db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+      "sha256": "93dd9f4723ba1a03f8a55ab8ee7a517427b27ad013dba9f3f308a0bf97a98e86",
+      "text_characters": 30285
+    },
+    {
+      "id": "microsoft-purview-dspm-current-ab900",
+      "url": "https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about",
+      "checked_at": "2026-09-28T00:39:14.661921+00:00",
+      "health": {
+        "id": "microsoft-purview-dspm-current-ab900",
+        "url": "https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about",
+        "checked_at": "2026-09-28T00:39:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about",
+        "content_type": "text/html",
+        "page_title": "Learn about Microsoft Purview Data Security Posture Management (DSPM)",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about",
+        "duration_signals": [],
+        "signal_fingerprint": "f6d44dc89e378b6555f72df339c384bebe2ebc8eebaffcb7b586986d19230866",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about",
+      "sha256": "2158d889031db049f30e993300a9bb7d15a7efd7512c5f9d6f63134efcfff1e2",
+      "text_characters": 14050
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T00:39:14.734060+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T00:39:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "ms-102-endpoint-dlp",
+      "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+      "checked_at": "2026-09-28T00:39:14.893437+00:00",
+      "health": {
+        "id": "ms-102-endpoint-dlp",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "checked_at": "2026-09-28T00:39:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "content_type": "text/html",
+        "page_title": "Learn about Endpoint data loss prevention",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "6a84bd8e5b7d0606977bc223a74cb63bc1af1e4aa987114284062be830bcad47",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+      "sha256": "7389818b2dc925e39db2f6407cdf19180da941ce7090956184d60a2190ba4ef8",
+      "text_characters": 23777
+    },
+    {
+      "id": "sc-401-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "checked_at": "2026-09-28T00:39:14.916769+00:00",
+      "health": {
+        "id": "sc-401-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "checked_at": "2026-09-28T00:39:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam SC-401: Administering Information Security in Microsoft 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "3fc2e03f78ca94538f106916a0d864a39dcdfc5b4e15c32052e0effc123226e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "sha256": "d4f2a2b6fee80ffa0715941404b95a70cd8961768d38d07d5a580fd46fae9e40",
+      "text_characters": 9450
+    },
+    {
+      "id": "sc-401-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      "checked_at": "2026-09-28T00:39:15.182880+00:00",
+      "health": {
+        "id": "sc-401-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Information Security Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "6e7c6d6fd7d1045cb150b24079425424a9fb747f440c0ce73d79caa90a27851c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      "sha256": "9b209bbe5a396b0dac5009833bf9bda478b5d531d2125c16f47a1c2932d62185",
+      "text_characters": 5067
+    },
+    {
+      "id": "sc-401-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T00:39:15.236603+00:00",
+      "health": {
+        "id": "sc-401-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "9819440ca2387708fdcecc91221057a2c4a9cc689708fe1fb50860f2e03c6161",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification",
+      "sha256": "ac3f18903fc16b9378abfe289542ab3798dca6982ade8c7254ca251468464193",
+      "text_characters": 0
+    },
+    {
+      "id": "sc-401-edm",
+      "url": "https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits",
+      "checked_at": "2026-09-28T00:39:15.468472+00:00",
+      "health": {
+        "id": "sc-401-edm",
+        "url": "https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits",
+        "content_type": "text/html",
+        "page_title": "Learn about exact data match based sensitive information types",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits",
+        "duration_signals": [],
+        "signal_fingerprint": "6639864817ee5f2069075ddfb8866eee51edc5271ccbbd9197a97897602948f6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits",
+      "sha256": "a2ac05f21a69f202cd68f36925e7ce60840b1a26dbc3ee848407d5b60bb23054",
+      "text_characters": 12028
+    },
+    {
+      "id": "sc-401-document-fingerprinting",
+      "url": "https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting",
+      "checked_at": "2026-09-28T00:39:15.507533+00:00",
+      "health": {
+        "id": "sc-401-document-fingerprinting",
+        "url": "https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting",
+        "content_type": "text/html",
+        "page_title": "About document fingerprinting",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting",
+        "duration_signals": [],
+        "signal_fingerprint": "979d49b6ec5644dfdc90346e1db11eddc78f993b90bf86fe458f2caa3120ef15",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting",
+      "sha256": "ca536f9076ede26b5b5b09ae706381ffa15d4139296e23e674003464bd4fa5af",
+      "text_characters": 12692
+    },
+    {
+      "id": "sc-401-ocr",
+      "url": "https://learn.microsoft.com/en-us/purview/ocr-learn-about",
+      "checked_at": "2026-09-28T00:39:15.538309+00:00",
+      "health": {
+        "id": "sc-401-ocr",
+        "url": "https://learn.microsoft.com/en-us/purview/ocr-learn-about",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/ocr-learn-about",
+        "content_type": "text/html",
+        "page_title": "Learn about optical character recognition in Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/ocr-learn-about",
+        "duration_signals": [],
+        "signal_fingerprint": "e0729e4a68ebdae4ed64a6c93ccc2f92e0d154a3ed3136e9df839a0e6fa001b8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/ocr-learn-about",
+      "sha256": "e12bdb4510ad1e312255d8ed2a01aeea4662fac73d000d01dd0e63c8c0df90da",
+      "text_characters": 9902
+    },
+    {
+      "id": "sc-401-adaptive-protection",
+      "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection",
+      "checked_at": "2026-09-28T00:39:15.827363+00:00",
+      "health": {
+        "id": "sc-401-adaptive-protection",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection",
+        "content_type": "text/html",
+        "page_title": "Help dynamically mitigate risks with Adaptive Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection",
+        "duration_signals": [
+          "36 hours",
+          "72 hours"
+        ],
+        "signal_fingerprint": "6c3dbf1a89cbcf96e427be8fb043bc17dd1c5ebe6b72f2c78592ee107f54bcd7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection",
+      "sha256": "4d922e089f44059eb099e56821291ca38f30938125cc6fc0c394694d230e3b57",
+      "text_characters": 40883
+    },
+    {
+      "id": "sc-401-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/sc-401t00",
+      "checked_at": "2026-09-28T00:39:15.961982+00:00",
+      "health": {
+        "id": "sc-401-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-401t00",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-401t00",
+        "content_type": "text/html",
+        "page_title": "Course SC-401T00-A: Protect sensitive information with Microsoft Purview in the AI era - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/sc-401t00",
+        "duration_signals": [],
+        "signal_fingerprint": "1e269beffa371d63ecc7a119c80a7660243020ad73ad52ab7a1957f51d2cd206",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-401t00",
+      "sha256": "38bc00e4ae0c18d8f1cebbd27688da3067a08461fd8a7a8999125064286e67e3",
+      "text_characters": 2584
+    },
+    {
+      "id": "sc-401-path-information-protection",
+      "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/",
+      "checked_at": "2026-09-28T00:39:15.981473+00:00",
+      "health": {
+        "id": "sc-401-path-information-protection",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/",
+        "checked_at": "2026-09-28T00:39:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/",
+        "content_type": "text/html",
+        "page_title": "Implement Microsoft Purview Information Protection (SC-401) - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/",
+        "duration_signals": [],
+        "signal_fingerprint": "362594f0884cc4a8183ac8479450944cc12bf40cd13527288ba15f067d0dac80",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/",
+      "sha256": "455e5950f76ddf568fdb245e10fa0ad175bd6ceebabcca0d4d98b78c01c9472b",
+      "text_characters": 3235
+    },
+    {
+      "id": "sc-401-path-dlp",
+      "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/",
+      "checked_at": "2026-09-28T00:39:16.191474+00:00",
+      "health": {
+        "id": "sc-401-path-dlp",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/",
+        "content_type": "text/html",
+        "page_title": "Implement and manage Microsoft Purview Data Loss Prevention (SC-401) - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/",
+        "duration_signals": [],
+        "signal_fingerprint": "01fc1774e4b6bade37a24f56cdb714a07862fd23bf227a79eb51af76af1a06ca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/",
+      "sha256": "930f83768a336606f127a548f5171c4c12097ff40707f988c7d3dc7cd4746028",
+      "text_characters": 2785
+    },
+    {
+      "id": "sc-401-path-retention",
+      "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/",
+      "checked_at": "2026-09-28T00:39:16.203749+00:00",
+      "health": {
+        "id": "sc-401-path-retention",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/",
+        "content_type": "text/html",
+        "page_title": "Implement and manage Microsoft 365 retention and recovery (SC-401) - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/",
+        "duration_signals": [],
+        "signal_fingerprint": "52b9edd17fd4c42b85d44cd6e3ab61bee32fe60c0154e21f1c8fe10c9747aaed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/",
+      "sha256": "852ba00193a63ad271faa50d375932bb0f905921d7858b1c96ef776522883592",
+      "text_characters": 1616
+    },
+    {
+      "id": "sc-401-path-insider-risk",
+      "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/",
+      "checked_at": "2026-09-28T00:39:16.280263+00:00",
+      "health": {
+        "id": "sc-401-path-insider-risk",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/",
+        "content_type": "text/html",
+        "page_title": "Implement and manage Microsoft Purview Insider Risk Management (SC-401) - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/",
+        "duration_signals": [],
+        "signal_fingerprint": "224f568aaa94e6f5c4a6dcbe58867b4cc2bd7f9b09dc4e61797f8f279c3f3ea7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/",
+      "sha256": "2595ddb43425a3048a0252f1823bf761b6e15f99b6bae2cceb6f913201f62911",
+      "text_characters": 2174
+    },
+    {
+      "id": "sc-401-path-audit-search",
+      "url": "https://learn.microsoft.com/en-us/training/paths/purview-audit-search/",
+      "checked_at": "2026-09-28T00:39:16.509884+00:00",
+      "health": {
+        "id": "sc-401-path-audit-search",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-audit-search/",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-audit-search/",
+        "content_type": "text/html",
+        "page_title": "Audit and search activity in Microsoft Purview (SC-401) - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/purview-audit-search/",
+        "duration_signals": [],
+        "signal_fingerprint": "ba6413262378078b59746a96843b14403d5138200855d0368d3a9bb007df1753",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-audit-search/",
+      "sha256": "f453b75bff6afb82f56d51491c7f2fa3285f74f97da3b4db6911c3a4b4e1ff6f",
+      "text_characters": 1212
+    },
+    {
+      "id": "sc-401-path-ai",
+      "url": "https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/",
+      "checked_at": "2026-09-28T00:39:16.510125+00:00",
+      "health": {
+        "id": "sc-401-path-ai",
+        "url": "https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/",
+        "content_type": "text/html",
+        "page_title": "Secure AI Interactions and Environments with Microsoft Purview (SC-401) - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/",
+        "duration_signals": [],
+        "signal_fingerprint": "f9f7603f7dc5f00366f45f9e7e80a1768a5f37c5e911f7814a537b57cb581561",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/",
+      "sha256": "2da36f14efb68e06ea8d054f0f77b0aa91ff4e5c63acb742f4d6ea4c6f9e72d1",
+      "text_characters": 2845
+    },
+    {
+      "id": "sc-401-exam-readiness-zone",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401",
+      "checked_at": "2026-09-28T00:39:16.814845+00:00",
+      "health": {
+        "id": "sc-401-exam-readiness-zone",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401",
+        "content_type": "text/html",
+        "page_title": "Exam Readiness Zone",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/",
+        "duration_signals": [],
+        "signal_fingerprint": "be56c749ee067a8cd45a810ab21b2c1972bc5cd4f47d9e75223782831e616332",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401",
+      "sha256": "2b82f68f85b5e582df00b66e62a6ac7e817aa5c29f5fbf2eb85f1f69cea05cc3",
+      "text_characters": 1074
+    },
+    {
+      "id": "sc-401-udemy-john-christopher",
+      "url": "https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/",
+      "checked_at": "2026-09-28T00:39:16.821431+00:00",
+      "health": {
+        "id": "sc-401-udemy-john-christopher",
+        "url": "https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "sc-401-youtube-john-christopher",
+      "url": "https://www.youtube.com/watch?v=CqYs-KtJoeQ",
+      "checked_at": "2026-09-28T00:39:16.837058+00:00",
+      "health": {
+        "id": "sc-401-youtube-john-christopher",
+        "url": "https://www.youtube.com/watch?v=CqYs-KtJoeQ",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=CqYs-KtJoeQ",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SC-401 course/training: Gain the knowledge needed to pass the SC-401 exam",
+        "canonical_url": "https://www.youtube.com/watch?v=CqYs-KtJoeQ",
+        "duration_signals": [],
+        "signal_fingerprint": "291127b7b765449cb1abf0d6f57daa506e868648feeef1b4166c4586430f5160",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=CqYs-KtJoeQ",
+      "sha256": "a2640021181d7480e6ddd37fbfd96399522134584076aa460e647e8bc93f3ac4",
+      "text_characters": 236
+    },
+    {
+      "id": "sc-401-measureup",
+      "url": "https://www.measureup.com/microsoft-sc-401-practice-test.html",
+      "checked_at": "2026-09-28T00:39:16.926466+00:00",
+      "health": {
+        "id": "sc-401-measureup",
+        "url": "https://www.measureup.com/microsoft-sc-401-practice-test.html",
+        "checked_at": "2026-09-28T00:39:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-sc-401-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test SC-401: Administering Information Security in Microsoft 365",
+        "canonical_url": "https://www.measureup.com/microsoft-sc-401-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e8f077b84c0c7a1598744e7779d1a0716314995eb461ef8649efb96c9eb04fc9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-sc-401-practice-test.html",
+      "sha256": "bcd93b8af3653c409c744fbdb89efd57734690eb25f7f985eebf05fc8486d634",
+      "text_characters": 13623
+    },
+    {
+      "id": "ab900-purview-data-explorer",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "checked_at": "2026-09-28T00:41:40.250359+00:00",
+      "health": {
+        "id": "ab900-purview-data-explorer",
+        "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "checked_at": "2026-09-28T00:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "content_type": "text/html",
+        "page_title": "Get started with data explorer",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "duration_signals": [],
+        "signal_fingerprint": "508ad51d3d8fde746a82c529edcc47034a6eadc3700caa962fbd63eb3f006ea1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "sha256": "57e439e03228ccb65e1ac6f3ea58cd8b846479fc30112d1da36a3a5a791813ba",
+      "text_characters": 8247
+    },
+    {
+      "id": "sc401-jit",
+      "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
+      "checked_at": "2026-09-28T00:41:40.251892+00:00",
+      "health": {
+        "id": "sc401-jit",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
+        "checked_at": "2026-09-28T00:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
+        "content_type": "text/html",
+        "page_title": "Get started with Endpoint DLP Just-in-time protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
+        "duration_signals": [],
+        "signal_fingerprint": "5bf2f012828de6787e36d833f4b1dbb318aca4ebbff259edb77980aad5296efd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
+      "sha256": "f6c220c2c20cb62123d811e1db61ca3cbab42f9ff01fc1eaafc1645755694eaf",
+      "text_characters": 7509
+    },
+    {
+      "id": "sc401-powerbi-labels",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-apply-data-sensitivity-labels",
+      "checked_at": "2026-09-28T00:41:40.252597+00:00",
+      "health": {
+        "id": "sc401-powerbi-labels",
+        "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-apply-data-sensitivity-labels",
+        "checked_at": "2026-09-28T00:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-security-apply-data-sensitivity-labels",
+        "content_type": "text/html",
+        "page_title": "How to apply sensitivity labels in Power BI - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-security-apply-data-sensitivity-labels",
+        "duration_signals": [],
+        "signal_fingerprint": "9f57369db722681dc177483162afbabf89e36e3487708895002a4fe78c62eae4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-security-apply-data-sensitivity-labels",
+      "sha256": "31a3d36f09eb34e5eafccb79d20d7d23f3778cca294da5e6ee9c700539061536",
+      "text_characters": 7697
+    },
+    {
+      "id": "sc401-protected-labels",
+      "url": "https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels",
+      "checked_at": "2026-09-28T00:41:40.788305+00:00",
+      "health": {
+        "id": "sc401-protected-labels",
+        "url": "https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels",
+        "checked_at": "2026-09-28T00:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels",
+        "content_type": "text/html",
+        "page_title": "Protected sensitivity labels in Fabric and Power BI - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels",
+        "duration_signals": [],
+        "signal_fingerprint": "8e96ae9bf145ee9f27208b8794407ed13fd23b7eefe91ae4b6998ab973c48b2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels",
+      "sha256": "df1fa77e3e8e8271ab3e5dd54dae3e263814c535f1d94a0a753fafbdec75bf75",
+      "text_characters": 5395
+    },
+    {
+      "id": "sc401-retention-flow",
+      "url": "https://learn.microsoft.com/en-us/purview/retention-flowchart",
+      "checked_at": "2026-09-28T00:41:40.827956+00:00",
+      "health": {
+        "id": "sc401-retention-flow",
+        "url": "https://learn.microsoft.com/en-us/purview/retention-flowchart",
+        "checked_at": "2026-09-28T00:41:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/retention-flowchart",
+        "content_type": "text/html",
+        "page_title": "Flowchart to determine when an item is retained or deleted",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/retention-flowchart",
+        "duration_signals": [],
+        "signal_fingerprint": "57cae523533ff03857c8798c9582e3725540fe13aea557e106523b30583c3301",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/retention-flowchart",
+      "sha256": "645cfe97ed064e3b21cb5dbd47cfdd73a69b130c39546d924449121b9e20d9fc",
+      "text_characters": 1859
+    },
+    {
+      "id": "sc401-priority-cleanup",
+      "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+      "checked_at": "2026-09-28T00:41:41.102050+00:00",
+      "health": {
+        "id": "sc401-priority-cleanup",
+        "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+        "checked_at": "2026-09-28T00:41:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+        "content_type": "text/html",
+        "page_title": "Permanently delete files with Microsoft Purview Priority Cleanup",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+        "duration_signals": [],
+        "signal_fingerprint": "d57f6b6043e41391068acc51f546ac377d962860a98170a40a3323c4f954b833",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+      "sha256": "5a3f9ca6f0dbea23bd95217bb8f5b280ccc80a43da91beae7c7a6bb957ca10b9",
+      "text_characters": 4286
+    },
+    {
+      "id": "sc401-audit-retention",
+      "url": "https://learn.microsoft.com/en-us/purview/audit-log-retention-policies",
+      "checked_at": "2026-09-28T00:41:41.120593+00:00",
+      "health": {
+        "id": "sc401-audit-retention",
+        "url": "https://learn.microsoft.com/en-us/purview/audit-log-retention-policies",
+        "checked_at": "2026-09-28T00:41:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/audit-log-retention-policies",
+        "content_type": "text/html",
+        "page_title": "Manage audit log retention policies",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/audit-log-retention-policies",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "02460cca5ee6ba81dcce20f6c514983609bf3e5bddcb9ed7400cdac3e4e64953",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/audit-log-retention-policies",
+      "sha256": "cea44794ead698b4ff550f126f7b3e96aa05f9c7cef6014951b2517117511aa3",
+      "text_characters": 12150
+    },
+    {
+      "id": "sc401-trainable-classifiers",
+      "url": "https://learn.microsoft.com/en-us/purview/trainable-classifiers-learn-about",
+      "checked_at": "2026-09-28T00:41:41.161865+00:00",
+      "health": {
+        "id": "sc401-trainable-classifiers",
+        "url": "https://learn.microsoft.com/en-us/purview/trainable-classifiers-learn-about",
+        "checked_at": "2026-09-28T00:41:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/trainable-classifiers-learn-about",
+        "content_type": "text/html",
+        "page_title": "Learn about trainable classifiers",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/trainable-classifiers-learn-about",
+        "duration_signals": [],
+        "signal_fingerprint": "f6ca7e0dba0d214b78e25c1d5e6f2be4e2979d53d64d3eb5847143c989ae9107",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/trainable-classifiers-learn-about",
+      "sha256": "95bb306a7f249f8a2a5bf0efdb1897f4346f934372d96cae084a6ca3e429f7ff",
+      "text_characters": 5104
+    },
+    {
+      "id": "sc401-oversharing-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727",
+      "checked_at": "2026-09-28T00:41:41.396711+00:00",
+      "health": {
+        "id": "sc401-oversharing-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727",
+        "checked_at": "2026-09-28T00:41:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "From Oversharing to Enforcement: A Practical Guide to AI Data Security with Microsoft Purview | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727",
+        "duration_signals": [],
+        "signal_fingerprint": "d6d3767e353420a72ebf14c6f3436481013836c98cebb53bb657089efdef22c0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727",
+      "sha256": "91201db3e5bd17554e78c8748088494a2832df57ae27d4200a63e7b4ec317223",
+      "text_characters": 119
+    },
+    {
+      "id": "ms102-purview-whats-new",
+      "url": "https://learn.microsoft.com/en-us/purview/whats-new",
+      "checked_at": "2026-09-28T00:42:01.218733+00:00",
+      "health": {
+        "id": "ms102-purview-whats-new",
+        "url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "checked_at": "2026-09-28T00:42:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "7fb8cde383bdc0804ed6c1f67f1b3001a6d190c29fcb2f85386749da20e22d26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/whats-new",
+      "sha256": "31dc78dc8902c224098f10b261ea00537ba86dc4d688e1e080111ddc4dc8a93c",
+      "text_characters": 38347
+    },
+    {
+      "id": "sc401-network-data-security",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+      "checked_at": "2026-09-28T00:42:58.303745+00:00",
+      "health": {
+        "id": "sc401-network-data-security",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+        "checked_at": "2026-09-28T00:42:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+        "content_type": "text/html",
+        "page_title": "Learn about Microsoft Purview Network Data Security",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+        "duration_signals": [
+          "24 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "c7395c911fb9f65e045aec7afc8fbea91550dd1c4a9762d80caa17e825be8fa8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+      "sha256": "5ad276af613de1761ea16d8cdfbcfe554717c0e296d7435b2a06d57aa0b0f65c",
+      "text_characters": 13485
+    }
+  ],
+  "added_source_ids": [
+    "sc401-jit",
+    "sc401-powerbi-labels",
+    "sc401-protected-labels",
+    "sc401-retention-flow",
+    "sc401-priority-cleanup",
+    "sc401-audit-retention",
+    "sc401-trainable-classifiers",
+    "sc401-oversharing-blog",
+    "sc401-network-data-security"
+  ],
+  "findings": [
+    {
+      "id": "sc401-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Official revision dates conflict",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The published skills and change log say October 28, 2026; the certification overview says October 14.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "sc401-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Data Explorer includes individual classified items",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current guidance distinguishes list and content viewer access and privileged content visibility.",
+      "recommendation": "Replace aggregate-only description and question; require role-specific evidence.",
+      "disposition": "applied",
+      "source_id": "ab900-purview-data-explorer",
+      "resolution": "Replace aggregate-only description and question; require role-specific evidence."
+    },
+    {
+      "id": "sc401-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "JIT fallback controls classification failure",
+      "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Allow/Block fallback does not select initial JIT Block/Audit; JIT and global Endpoint DLP path exclusions have different effects.",
+      "recommendation": "Add initial/failure worked example and separate exclusions.",
+      "disposition": "applied",
+      "source_id": "sc401-jit",
+      "resolution": "Add initial/failure worked example and separate exclusions."
+    },
+    {
+      "id": "sc401-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Power BI label protection is not blanket access revocation",
+      "url": "https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "In-service label-change rights differ from content permissions, separate protection policies and protected Desktop files.",
+      "recommendation": "Add worked example and verify service, file and export boundaries.",
+      "disposition": "applied",
+      "source_id": "sc401-protected-labels",
+      "resolution": "Add worked example and verify service, file and export boundaries."
+    },
+    {
+      "id": "sc401-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Retention duration must be evaluated from its start date",
+      "url": "https://learn.microsoft.com/en-us/purview/retention-flowchart",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Ordinary retention conflict processing compares actual end dates; an explicit delete instruction does not cancel continuing retention.",
+      "recommendation": "Add creation-versus-modification worked example.",
+      "disposition": "applied",
+      "source_id": "sc401-retention-flow",
+      "resolution": "Add creation-versus-modification worked example."
+    },
+    {
+      "id": "sc401-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Audit record lifetime is determined at ingestion",
+      "url": "https://learn.microsoft.com/en-us/purview/audit-log-retention-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Custom retention priority can shorten the default and later changes do not extend previously committed records.",
+      "recommendation": "Teach generating-user license, priority and ingestion-time boundary.",
+      "disposition": "applied",
+      "source_id": "sc401-audit-retention",
+      "resolution": "Teach generating-user license, priority and ingestion-time boundary."
+    },
+    {
+      "id": "sc401-deep-7",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Priority cleanup is an exceptional destruction workflow",
+      "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "August permanent-deletion preview can override holds/retention and bypass recycle bins but does not remove existing review-set copies.",
+      "recommendation": "Add bounded tabletop-only awareness with simulation and approval separation.",
+      "disposition": "applied",
+      "source_id": "sc401-priority-cleanup",
+      "resolution": "Add bounded tabletop-only awareness with simulation and approval separation."
+    },
+    {
+      "id": "sc401-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Network DLP GA has integration and coverage limits",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-401"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current network docs distinguish collection from inline enforcement, exclude B2B guests and document sizes/delays/provider differences.",
+      "recommendation": "Add current network route, limits and evidence caveats.",
+      "disposition": "applied",
+      "source_id": "sc401-network-data-security",
+      "resolution": "Add current network route, limits and evidence caveats."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "sc401-oversharing-blog",
+      "decision": "accepted-bounded",
+      "author": "George Smyrlis, Microsoft Purview Blog",
+      "published_on": "2026-04-23",
+      "notes": "Embedded public article read; workflow accepted with preview/coverage and effective-control caveats. Original synthetic-site exercise added. No exam-integrity concern in reviewed article; no tenant workflow executed."
+    }
+  ],
+  "labs": {
+    "total": 9,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Four synthetic precision/recall and retention-end-year arithmetic assertions"
+    ]
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Official study guide says October 28 while credential page says October 14; unresolved as of September 27. July 28 accepted baseline and historical snapshots preserved.",
+    "No Microsoft 365, Purview, Power BI, network DLP, audit or other tenant lab executed; priority cleanup is tabletop only.",
+    "One paid course page blocked; public practice shell does not prove assessment completion or signed-in lesson access.",
+    "Same-context research and repair; independent and human review pending.",
+    "Preview, provider, licensing and effective-identity boundaries remain feature specific."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 158,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "classification_and_retention_arithmetic_assertions": 4
+  }
+}

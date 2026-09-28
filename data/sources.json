@@ -3,6 +3,132 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "sc401-jit",
+      "title": "Endpoint DLP just-in-time protection",
+      "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-powerbi-labels",
+      "title": "Apply sensitivity labels in Power BI",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-apply-data-sensitivity-labels",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-protected-labels",
+      "title": "Protected sensitivity labels in Fabric and Power BI",
+      "url": "https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-retention-flow",
+      "title": "Retention and deletion decision flow",
+      "url": "https://learn.microsoft.com/en-us/purview/retention-flowchart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-priority-cleanup",
+      "title": "Priority Cleanup permanent file deletion",
+      "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-audit-retention",
+      "title": "Manage audit log retention policies",
+      "url": "https://learn.microsoft.com/en-us/purview/audit-log-retention-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-trainable-classifiers",
+      "title": "Learn about trainable classifiers",
+      "url": "https://learn.microsoft.com/en-us/purview/trainable-classifiers-learn-about",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-oversharing-blog",
+      "title": "From Oversharing to Enforcement: AI Data Security with Microsoft Purview",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public embedded article read: George Smyrlis, Microsoft Purview Blog, April 23, 2026. Accepted for discover/remediate/prevent/monitor workflow. Broad automation/auditing and preview coverage claims qualified using current product docs; no tenant execution. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc401-network-data-security",
+      "title": "Microsoft Purview Network Data Security",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ab900-scheduled-prompts",
       "title": "Manage scheduled prompts for Microsoft Copilot",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts",
@@ -27278,8 +27404,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-05",
-      "supported_exams": ["AB-900"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-900",
+        "SC-401"
+      ],
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab900-agent-builder",
@@ -27895,9 +28025,12 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["MS-102"],
-      "notes": "Recurring lifecycle feed for Purview compliance and governance changes."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MS-102",
+        "SC-401"
+      ],
+      "notes": "Recurring lifecycle feed for Purview compliance and governance changes. September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-defender-xdr-whats-new",

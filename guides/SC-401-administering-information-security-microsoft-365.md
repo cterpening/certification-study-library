@@ -5,19 +5,19 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-01
+review_status: review-required
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-27
 ---
 
 # SC-401 Administering Information Security in Microsoft 365 Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). The [official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 65 published October objectives were reviewed on September 27, 2026; the conflicting official revision dates remain unresolved. See the [deep-review report](../docs/research/2026-09-27-sc-401-deep-review.md). Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-401-coverage-record). The [official SC-401 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401) is authoritative.
 
 **Current baseline:** Skills measured as of July 28, 2026.<br>
 **Exam state:** Active; the credential page lists no retirement date.<br>
-**Upcoming blueprint change:** A revision is announced, but Microsoft currently gives conflicting dates: the study guide and change log say October 28, 2026, while the certification overview says October 14. The change concerns sensitivity labels for containers and Power BI items; domain weights remain unchanged. Checked September 17, 2026. Confirm the applicable date with Microsoft before an October appointment; this guide still uses the July baseline.<br>
+**Upcoming blueprint change:** A revision is announced, but Microsoft currently gives conflicting dates: the study guide and change log say October 28, 2026, while the certification overview says October 14. The change concerns sensitivity labels for containers and Power BI items; domain weights remain unchanged. Rechecked September 27, 2026. Confirm the applicable date with Microsoft before an October appointment; this guide still uses the July baseline.<br>
 **Practice Assessment:** [Free official assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification).<br>
 **Official source:** [SC-401 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401)
 
@@ -35,7 +35,7 @@ data and business requirement
   -> alert, audit, investigation, retention, and recovery evidence
 ```
 
-Read Sections 1–3, work all three integrated scenarios, complete or tabletop the eight labs, and answer the 36 original checks. Use a disposable Microsoft 365 developer or lab tenant with synthetic data. Purview, Microsoft 365 E5, Defender for Cloud Apps, Defender for Endpoint, OCR, Audit Premium, Insider Risk Management, forensic evidence, and AI security capabilities can require specific licenses, billing, roles, supported clients, and tenant configuration. Verify those prerequisites before a lab and remove test policies afterward.
+Read Sections 1–3, work all three integrated scenarios, complete or tabletop the nine labs, and answer the 42 original checks. Use a disposable Microsoft 365 developer or lab tenant with synthetic data. Purview, Microsoft 365 E5, Defender for Cloud Apps, Defender for Endpoint, OCR, Audit Premium, Insider Risk Management, forensic evidence, and AI security capabilities can require specific licenses, billing, roles, supported clients, and tenant configuration. Verify those prerequisites before a lab and remove test policies afterward.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -82,19 +82,23 @@ Choose the smallest appropriate classifier:
 
 A custom SIT pattern combines a primary element with optional supporting evidence inside a proximity window and assigns a confidence. Tight evidence raises precision but may lower recall. Test known positive, negative, malformed, localized, boundary, duplicate, and image samples. Record the classifier version and expected result so an update can be regression-tested.
 
-Document fingerprinting learns the structure of a form; it is not an image hash and does not mean only byte-identical documents match. EDM uses an uploaded schema and hashed data so organization-specific values can be found more precisely than generic pattern matching. Protect the source dataset, choose primary fields that are sufficiently unique, normalize consistently, monitor upload status, and retest after source or schema changes. Microsoft's [EDM overview](https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits) and [document-fingerprinting guide](https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting) document the different matching models.
+Document fingerprinting learns the structure of a form; it is not an image hash and does not mean only byte-identical documents match. EDM uses an uploaded schema and hashed data so organization-specific values can be found more precisely than generic pattern matching. Its “near-exact” behavior refers to configured normalization such as case or ignored delimiters; do not interpret it as unrestricted fuzzy or semantic matching. Protect the source dataset, choose primary fields that are sufficiently unique, normalize consistently, monitor upload status, and retest after source or schema changes. Microsoft's [EDM overview](https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits) and [document-fingerprinting guide](https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting) document the different matching models.
 
-Trainable classifiers recognize categories such as business or behavioral content using examples. Use only appropriately governed examples; validate on content the model did not train on and review matched items before using the classifier for irreversible action. OCR extends supported classifiers into supported image content and can add pay-as-you-go and location/client dependencies. **VERIFY CURRENT** against the [OCR documentation](https://learn.microsoft.com/en-us/purview/ocr-learn-about).
+[Trainable classifiers](https://learn.microsoft.com/en-us/purview/trainable-classifiers-learn-about) recognize categories such as business or behavioral content using examples. Use only appropriately governed examples; validate on content the model did not train on and review matched items before using the classifier for irreversible action. OCR extends supported classifiers into supported image content and can add pay-as-you-go and location/client dependencies. **VERIFY CURRENT** against the [OCR documentation](https://learn.microsoft.com/en-us/purview/ocr-learn-about).
 
-Data Explorer aggregates classification and label insights; Content Explorer lets sufficiently privileged reviewers inspect matched items. Activity Explorer focuses on events and actions. These are different evidence planes. Scope roles narrowly, account for indexing latency, verify coverage, and never treat an empty dashboard as proof that sensitive data does not exist.
+[Data Explorer](https://learn.microsoft.com/en-us/purview/data-classification-data-explorer) shows classified/labeled items as well as summaries. Distinguish permission to list items from permission to view their contents; privileged content viewing can override ordinary local file permissions. Content Explorer also supports privileged inspection; Activity Explorer records actions and events. Treat a content snapshot and an activity history as different evidence. Scope roles narrowly, account for indexing latency, and never treat an empty dashboard as proof that sensitive data does not exist.
 
 > **Related item:** Precision is the share of matches that are correct; recall is the share of relevant content that the classifier found. A narrow classifier can look accurate while silently missing most sensitive data. Use a labeled test corpus to measure both.
+
+### Worked example — Measure missed records as well as noisy matches
+
+A synthetic test set contains 100 genuinely sensitive records. The classifier finds 80 of them and also flags 10 harmless records: 80 true positives, 20 false negatives and 10 false positives. Precision is `80 / (80 + 10) = 88.9%`; recall is `80 / (80 + 20) = 80%`. Review the 20 misses before tightening a rule simply to reduce alert volume. Repeat the same labeled test set after changing confidence, proximity or normalization.
 
 ### Design and operate sensitivity labels
 
 A label communicates classification and can enforce protection. Define a simple taxonomy from business language, with an owner, examples, handling expectations, scope, protection settings, and review date. Separate labels for items (files/emails), containers (Teams, Microsoft 365 Groups, SharePoint sites), meetings/chats where supported, and data assets where supported; a similarly named label does not necessarily apply the same controls everywhere.
 
-Item-label settings can include encryption, access restrictions, expiry/offline access, content marking, and user permissions. Container labels govern supported container settings such as privacy, external sharing, unmanaged-device access, or authentication context; they do not automatically label or encrypt every file already in the container. Power BI label propagation and enforcement also depend on supported paths and tenant settings. **VERIFY CURRENT** in the [sensitivity-label documentation](https://learn.microsoft.com/en-us/purview/sensitivity-labels).
+Item-label settings can include encryption, access restrictions, expiry/offline access, content marking, and user permissions. Container labels govern supported container settings such as privacy, external sharing, unmanaged-device access, or authentication context; they do not automatically label or encrypt every file already in the container. Power BI label propagation and enforcement also depend on supported paths and tenant settings; the worked example below separates labeling from access control. **VERIFY CURRENT** in the [sensitivity-label documentation](https://learn.microsoft.com/en-us/purview/sensitivity-labels).
 
 Publishing policies determine who sees which labels and can configure defaults, mandatory labeling, downgrade justification, email inheritance, and other supported user experiences. Label priority and policy priority matter. Deploy to a pilot group, verify Office, web, mobile, email, SharePoint, Teams, and Power BI behavior as applicable, then widen scope. Give service desks a decision tree for protected content, external recipients, label mismatch, and lost access.
 
@@ -103,6 +107,12 @@ For auto-labeling, start in simulation, inspect matched and unmatched items, tun
 Microsoft Defender for Cloud Apps can inspect supported cloud-app files and apply governance actions or sensitivity labels. Confirm connector, app, file, ownership, label, encryption, and API limitations. A Cloud Apps file policy complements Purview label and DLP controls; it does not make every third-party SaaS action equivalent to a Microsoft 365 workload.
 
 > **Related item:** Labels and DLP answer different questions. A label describes and may protect an item; DLP evaluates content, context, location, identity, device, and attempted action. Use both when classification must travel with data and risky movement must be controlled.
+
+### Worked example — A Power BI label is not an access-removal operation
+
+A report receives a Confidential label. An existing workspace viewer can still open it: assigning the label alone did not remove that viewer. In the service, protected labels can restrict changing or removing the label; content access requires examining item/workspace permissions and any separately configured protection policies. In Power BI Desktop, a protected PBIX file has a different encryption and usage-rights boundary.
+
+Check who may apply labels, tenant enablement, licensing and edit rights in the [Power BI labeling guide](https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-apply-data-sensitivity-labels), then compare the [protected-label behavior](https://learn.microsoft.com/en-us/fabric/governance/protected-sensitivity-labels). Test the exact export format and recipient: a successful protected PBIX test does not establish identical protection for every exported file.
 
 ### Protect Windows, on-premises repositories, and email
 
@@ -136,7 +146,11 @@ Endpoint DLP requires eligible licensing, supported operating systems, device on
 
 Advanced endpoint rules can evaluate activities such as copy to removable media or network share, print, clipboard, RDP, Bluetooth, and upload to restricted cloud/service domains, subject to platform support. Configure audit, warn, block with override, or block according to risk. Include file path, application, browser, domain, device/user group, classifier/label, and exclusion logic. Test supported and unsupported clients: a browser extension or onboarded-device dependency can create a blind spot that a portal policy alone does not reveal.
 
-Just-in-time protection provides temporary protective handling while policy evaluation catches up for newly created or changed content. Decide whether the environment should audit or block while classification is pending, account for user impact and supported files/activities, and monitor results. **VERIFY CURRENT** before deployment because behavior and prerequisites are fast-moving.
+Just-in-time (JIT) protection handles supported egress while classification completes. JIT scope determines the initial block/audit behavior. The **fallback action** instead determines what happens if classification fails. An Allow fallback does not disable initial JIT blocking. Allow at least an hour for JIT settings, including disablement, to reach clients. Check current platform/client prerequisites in the [JIT deployment guide](https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit).
+
+### Worked example — Initial protection and failure fallback
+
+An in-scope user uploads a newly created candidate file. JIT can pause that action even with an Allow fallback. If classification subsequently fails, that fallback permits the action; a Block fallback would prevent it. Record both the initial event and final outcome. A JIT-only path exclusion skips JIT evaluation while ordinary Endpoint DLP can still apply; a global Endpoint DLP path exclusion removes that broader classification/protection. Do not use the latter merely to tune temporary JIT friction.
 
 Use Activity Explorer, DLP alerts, device timeline, audit records, and local/client evidence to answer: what activity occurred, on which data, under which rule, from which app/device, what action was taken, whether override occurred, and whether the event reached the response workflow. Tune using real false-positive and false-negative evidence, not only alert volume.
 
@@ -147,6 +161,12 @@ Retention is not backup. A retention policy applies one set of retain/delete set
 Define the trigger, duration, start-of-retention event, retain/delete action, immutable or record behavior, disposition reviewer, conflict rule, exception, deletion path, recovery requirement, and legal/eDiscovery relationship. Static scopes enumerate users/sites/groups; adaptive scopes use attributes and queries to update membership. Validate scope membership and delay before assuming content is covered.
 
 Publishing makes labels available for manual/application use; auto-apply finds qualifying content using supported conditions. Both are asynchronous. Retention-policy and label precedence resolves conflicting settings, generally favoring retention over deletion and longer retention over shorter retention in applicable conflicts, with explicit label behavior significant. Do not rely on a slogan: use Policy lookup for the item/location and confirm Microsoft's current rules.
+
+### Worked example — Compare retention end dates
+
+Assume a document was created January 1, 2020 and last modified January 1, 2025. One policy retains it for seven years from creation, ending January 1, 2027; another retains it for five years from modification, ending January 1, 2030. The second obligation ends later despite its smaller year count. With no other hold, retention or priority-cleanup exception, preserve it through the later retention end; then evaluate applicable deletion rules. An explicit delete label does not generally cancel a continuing retention obligation. Use the [retention flowchart](https://learn.microsoft.com/en-us/purview/retention-flowchart) and verify the actual start event.
+
+**Related current capability — priority cleanup:** The [permanent-deletion preview](https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion), introduced August 24, 2026, is an exceptional governed workflow that can override holds/retention and bypass recycle bins. It does not erase copies already added to eDiscovery review sets. Treat required simulation, approval and separation of duties as essential boundaries. Tabletop this exception; the ordinary retention example above does not authorize a destructive cleanup.
 
 Recovery depends on workload and retention state. Retained Exchange, SharePoint, or OneDrive content can be preserved in hidden recovery locations while users no longer see it. Know the supported restore/search route, permissions, time window, version behavior, and what happens after permanent deletion or retention expiry. Run a timed delete-and-recover test and preserve the evidence.
 
@@ -182,13 +202,15 @@ Adaptive Protection maps configured insider-risk evidence to Minor, Moderate, or
 
 Audit Standard and Audit Premium differ in supported retention, investigation capabilities, and licensing. Assign eligible user licenses for Premium features, configure audit-retention policies by workload/user/record type/priority and duration, then test that a known event is searchable. Audit retention is not content retention.
 
+Check the license of the **user who generated the event**, not only the investigator. Under [audit-retention rules](https://learn.microsoft.com/en-us/purview/audit-log-retention-policies), custom policies can take precedence over the default and even shorten it; a lower policy-priority number wins among matching custom policies. Retention is assigned at ingestion, so later license or policy changes do not extend previously committed records. Plan the required evidence window before the incident.
+
 Begin an investigation with an incident question and time range. Preserve alert and policy versions, user/device/item identifiers, workload, correlation IDs, raw audit events, actions, override/justification, and chain of custody. Search broadly enough to find related activity but minimize exposed data. Do not change or rerun the policy before preserving transient evidence.
 
 Use eDiscovery for a governed content search: create/use the correct case, assign minimal roles, identify custodians and noncustodial sources, construct and validate the query, estimate/test results, preserve through holds when authorized, review/export securely, and audit every action. The current [eDiscovery overview](https://learn.microsoft.com/en-us/purview/ediscovery) is authoritative because portal and feature boundaries change.
 
 ### Protect data used by AI services
 
-AI does not create a separate copy of the authorization model. Microsoft 365 Copilot and agents can surface content a user can already access, so oversharing, stale access, broad links, weak labels, missing DLP, and poor retention become AI-readiness risks. Reduce the reachable data first through permissions, access governance, SharePoint controls, labels, DLP, retention, audit, and eDiscovery; then validate prompts, responses, citations, plugins/connectors, agents, and sharing with test identities.
+Microsoft 365 Copilot user-grounded retrieval can surface content the user can already access, so oversharing, stale access, broad links, weak labels, missing DLP, and poor retention become AI-readiness risks. For an agent or connected tool, trace its effective identity, connection and source grants instead of assuming every operation uses that same user context. Reduce the reachable data first through permissions, access governance, SharePoint controls, labels, DLP, retention, audit, and eDiscovery; then validate prompts, responses, citations, plugins/connectors, agents, and sharing with test identities.
 
 Purview controls can classify and label files/emails, apply DLP to supported Microsoft 365 and endpoint interactions, detect risky AI-site use, preserve/search AI activity, and provide investigation signals. Workload controls in SharePoint, Teams, Exchange, OneDrive, Power Platform, Copilot Studio, and agent administration govern what can be reached or shared. Confirm the exact workload and license: “protected by Purview” is not a universal statement across every model, prompt, agent, connector, browser, or third-party AI service.
 
@@ -197,6 +219,8 @@ Microsoft's current documentation distinguishes the newer [Data Security Posture
 For DSPM, establish Purview permissions, classification/labels, audit/activity collection, relevant DLP and insider-risk foundations, supported workload onboarding, and optional Security Copilot prerequisites. Separate Data Security Viewer and administrative duties where supported. Review discovered sensitive data, oversharing, risky AI interaction, policy coverage, recommendations, assessments, alerts, and remediation; validate a recommendation before automating it.
 
 For third-party generative AI accessed from endpoints, supported Endpoint DLP and browser controls can audit, warn, or block sensitive prompts/uploads. Test browser, domain, unmanaged application, copy/paste, file upload, label/classifier, override, and event flow. A blocked website in one browser is not proof that native clients, APIs, personal devices, or unsanctioned proxies are controlled.
+
+**September 2026 network protection:** The [Purview release notes](https://learn.microsoft.com/en-us/purview/whats-new) announce network data security with Entra Global Secure Access as generally available. This is another enforcement route alongside Endpoint DLP. The [network data security documentation](https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn) distinguishes asynchronous collection from inline DLP evaluation. Verify the integrated provider, protocols, app entries and activity support; B2B guest users are excluded. Current inline limits are 4 MB for text and 3 MB for files. Initial policy distribution/data can take up to 24 hours and audit/activity visibility up to 30 minutes after a request. A missing immediate event is not proof of either allowance or prevention. Other providers can have different preview, licensing and billing requirements.
 
 > **Related item:** AI data security needs both an access question (“could this user or agent retrieve the item?”) and a use question (“could the item be pasted, uploaded, summarized, shared, or retained here?”). Permissions address the first; workload, Purview, endpoint, and AI governance controls address the second.
 
@@ -248,15 +272,19 @@ Apply broad retention plus a published or auto-applied label to synthetic Exchan
 
 Model an authorized insider-risk signal and synthetic AI exfiltration event. Trace alert, risk level, DLP action, Audit, Activity Explorer, XDR/Cloud Apps where supported, eDiscovery, notice/escalation, and current DSPM recommendation. **Evidence:** timeline, role/privacy controls, source records, decision, containment, and closure.
 
+### Lab 9 — Prove the control boundary
+
+Use synthetic records to reproduce the classification arithmetic, label a test Power BI item without changing permissions, and predict JIT initial/fallback outcomes. Tabletop the two retention end dates and an audit event ingested before a policy change. For a network DLP design, record the effective identity, supported activity, file/text size, expected result and observation delay. **Evidence:** positive/negative case matrix, predicted versus observed outcome, source/version, and a separate “not executed” entry for each unavailable tenant capability. Do not execute priority cleanup.
+
 ## Knowledge checks
 
 1. **Built-in versus custom SIT?** Use maintained common detection versus organization-specific pattern/evidence logic.
-2. **Fingerprint versus EDM?** Form-structure similarity versus exact/near-exact values from a governed reference table.
+2. **Fingerprint versus EDM?** Form-structure similarity versus reference-table values with configured normalization; EDM “near-exact” is not unrestricted semantic matching.
 3. **Why supporting evidence?** It raises contextual confidence and reduces generic-pattern false positives.
 4. **Why measure recall?** High precision can hide sensitive examples the classifier never finds.
 5. **Trainable-classifier risk?** Unrepresentative examples create unreliable semantic matches; govern data and test independently.
 6. **What does OCR change?** It exposes supported image text to classification, with location, format, billing, and quality dependencies.
-7. **Data versus Content Explorer?** Aggregated classification insights versus privileged inspection of matched items.
+7. **Does Data Explorer show only aggregate counts?** No; it also shows classified/labeled items. Listing and content viewing require distinct permissions; Activity Explorer supplies event history.
 8. **Item versus container label?** File/email protection versus supported site/team/group settings; one does not imply the other.
 9. **Publishing versus auto-label policy?** Expose labels/user defaults versus service-side detection and application.
 10. **Why simulate auto-labeling?** Inspect match quality, scope, and impact before protection is applied at scale.
@@ -267,7 +295,7 @@ Model an authorized insider-risk signal and synthetic AI exfiltration event. Tra
 15. **Adaptive Protection input?** Insider Risk Management-derived user risk levels, distinct from alert severity.
 16. **Why test Cloud Apps separately?** Connected-app API, file, action, and governance coverage differs by service.
 17. **Endpoint DLP prerequisite?** Eligible license, supported/onboarded device, connectivity, and required browser/client support.
-18. **Just-in-time protection?** Temporary handling while classification/policy evaluation catches up; verify current scope and mode.
+18. **Does Allow fallback turn off JIT blocking?** No; scope controls initial JIT behavior, while fallback controls egress when classification fails.
 19. **Retention policy versus label?** Broad location-level lifecycle versus differentiated item-level lifecycle and record/disposition capabilities.
 20. **Static versus adaptive scope?** Explicit membership versus query/attribute-driven membership that updates over time.
 21. **Does retention equal backup?** No; retained content and independent point-in-time recovery solve different problems.
@@ -286,6 +314,13 @@ Model an authorized insider-risk signal and synthetic AI exfiltration event. Tra
 34. **DSPM recommendation versus remediation?** A posture finding/proposed action versus a validated, authorized control change.
 35. **Why test unmanaged AI paths?** Managed-browser success does not prove native app, API, personal device, or proxy coverage.
 36. **Best end-to-end evidence?** Requirement, classifier result, effective policy, user/device action, event/alert, investigation, recovery, and exception record.
+
+37. **80 true matches, 10 false matches, 20 misses: precision and recall?** About 88.9% precision and 80% recall; report both.
+38. **Does a Confidential Power BI label revoke an existing viewer?** Not by label assignment alone; evaluate workspace/item access and separately configured protection policies.
+39. **Is a JIT exclusion the same as a global Endpoint DLP path exclusion?** No; the JIT exclusion can leave ordinary Endpoint DLP classification and protection active.
+40. **Seven years from 2020 or five years from 2025: which ends later?** Five from 2025 ends in 2030; compare end dates, not just configured durations.
+41. **Does today’s longer audit-retention policy extend yesterday’s ingested record?** No; the existing record retains the lifetime assigned at ingestion.
+42. **Does the new network integration protect every user and upload?** No; check identity, supported provider/activity/protocol, content-size limits and app coverage; B2B guests are excluded.
 
 ## Places to learn
 
@@ -306,6 +341,12 @@ This is a curated starting set, **not a complete list** and not a recommendation
 
 No current exam-specific Pluralsight, O'Reilly, or Whizlabs learning page with sufficiently stable public metadata was independently verified on September 1, 2026. That is a discovery gap, not a claim that those libraries contain no relevant Purview content. Search them by the exact exam code and compare the publication/update date and syllabus against all three current domains before purchasing.
 
+### Qualified blog reading — Turn an oversharing finding into evidence
+
+[From Oversharing to Enforcement](https://techcommunity.microsoft.com/blog/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data-security-with-micro/4513727), **George Smyrlis, Microsoft Purview Blog, April 23, 2026**. Allow 20–30 minutes for the article and an original exercise: select one synthetic overshared site, assign a data owner, propose one permission correction and one supported DLP control, then specify positive and negative verification cases and audit evidence.
+
+The discover, remediate, prevent and monitor sequence is useful for Scenario 3. Recheck preview, tenant, role and workload support in current DSPM/network documentation. Broad article claims about automated remediation or complete auditing do not prove that every agent, third-party app or route is covered. The public article was reviewed; its tenant workflow was not executed.
+
 ## Final readiness checklist
 
 - [ ] I can map every July 28, 2026 subobjective to a section, lab, and current first-party source.
@@ -318,7 +359,8 @@ No current exam-specific Pluralsight, O'Reilly, or Whizlabs learning page with s
 - [ ] I can choose Audit, Activity Explorer, DLP/insider/XDR/Cloud Apps alerts, or eDiscovery for a specific investigation question.
 - [ ] I can secure Microsoft and third-party AI use and distinguish current DSPM from classic experiences.
 - [ ] I have completed the official assessment and independently researched every uncertain answer.
-- [ ] I checked the official blueprint, credential page, licenses, portals, and **VERIFY CURRENT** items again shortly before the exam.
+- [ ] I can distinguish JIT scope from failure fallback, compute retention end dates, and verify Power BI and network enforcement boundaries.
+- [ ] I rechecked Microsoft’s conflicting October revision dates, licenses, portals, and **VERIFY CURRENT** items shortly before the exam.
 
 ---
 

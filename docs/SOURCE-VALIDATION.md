@@ -697,6 +697,8 @@ The review maps every July 21, 2026 subobjective to a configuration, identity/ac
 
 ## SC-401 coverage record
 
+The September 27 [deep review](research/2026-09-27-sc-401-deep-review.md) maps 65 detailed objectives. Whole guide read and all 65 published October objectives in nine groups mapped. Preserve July baseline and unresolved October 28 versus October 14 official date conflict. Correct Data Explorer and JIT boundaries; add Power BI, audit retention, network DLP and priority-cleanup context, four worked examples, a ninth lab, six additional answers and one qualified Purview blog. Four arithmetic assertions checked offline; no tenant execution. Human review pending. Current guide citations: 35 registered, 34 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Implement information protection | Section 1, all integrated scenarios, and Labs 1–4 |

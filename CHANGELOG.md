@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review SC-401's whole guide and 65 published October objectives; retain July's baseline and the conflicting official revision dates. Correct Explorer/JIT boundaries and add Power BI, retention, audit and network DLP examples, a ninth lab, 42 answers and one qualified Purview blog. See the [SC-401 report](docs/research/2026-09-27-sc-401-deep-review.md).
+
 - September 27, 2026: deep-review AB-900's complete guide and 53 published October objectives while retaining the July baseline. Add current sharing/revocation, scheduled-prompt, restricted-site, PAYG and pending-version boundaries; four examples, a seventh lab, 14 answers and one qualified Mechanics reading. See the [AB-900 report](docs/research/2026-09-27-ab-900-deep-review.md).
 
 - September 27, 2026: deep-review DP-420's complete guide and all 56 published October objectives while preserving the current July baseline. Expand retrieval, memory, masking, Agent Kit, copy-job, Fleet and Fabric preparation; correct change-feed bootstrap, TTL, pagination and backlog drain. Add four examples, two labs, 36 answer checkpoints and two qualified blog readings. See the [DP-420 report](docs/research/2026-09-27-dp-420-deep-review.md).
