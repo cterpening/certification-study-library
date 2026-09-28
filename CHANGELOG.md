@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AB-731's 39 objectives; add six business calculations, two artifact labs, 48 explained answers and a scoped Microsoft transformation blog exercise. Update value/adoption measurement, commitments, data/provider boundaries, governance and Image Analysis lifecycle. Preserve historical snapshots, synchronize catalogs and schedule two follow-ups. See the [AB-731 report](docs/research/2026-09-28-ab-731-deep-review.md).
+
 - September 28, 2026: deeply review AB-620's 44 objectives; add six worked examples, two labs, 48 answers and two blog exercises. Update course/language metadata, harness and Activity-protocol support, approval routing/ALM, retrieval, cards, evaluation, telemetry and throughput. Preserve prior review evidence, synchronize the learning catalog and schedule two follow-ups. See the [AB-620 report](docs/research/2026-09-28-ab-620-deep-review.md).
 
 - September 28, 2026: deeply review AB-410’s 48 objectives; add six examples, two labs, 48 answers and two focused Power Platform blog exercises. Explain prompt freshness, summary scope, generated-page ALM, query completeness, errors, approvals, credit transition and stale aggregates. Preserve historical snapshots and the SAP support gap; refresh learning catalogs and schedule three checks. See the [AB-410 report](docs/research/2026-09-28-ab-410-deep-review.md).

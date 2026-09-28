@@ -109,6 +109,8 @@ The review maps every subobjective on the official June 18, 2026 guide to a lead
 
 ## AB-731 coverage record
 
+The September 28 [deep review](research/2026-09-28-ab-731-deep-review.md) maps 39 detailed objectives. Whole guide and 39 unchanged detailed objectives mapped across six groups. Add six original worked examples, ten artifact labs, 48 explained answers and a scoped Microsoft transformation blog exercise. Deepen net capacity, accepted-outcome cost, commitments, adoption metrics, comparison cohorts, bottlenecks, governance, provider/data boundaries and Vision lifecycle. Twenty-four offline assertions passed; no tenant, employee data, model, deployment, purchase or paid-content execution; independent human review pending. Current guide citations: 33 registered, 31 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Identify the business value of generative AI solutions | Section 1, all integrated scenarios, and Labs 1–3 and 5 |

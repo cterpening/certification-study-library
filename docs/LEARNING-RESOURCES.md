@@ -1062,16 +1062,29 @@ No exact Whizlabs AB-730 product was independently verified in the earlier Septe
 
 ### AB-731 — AI Transformation Leader
 
-- Three official Microsoft Learn paths (**4 hours 44 minutes listed; allow 10–18 hours with scorecards, design maps and a pilot plan**): [business value](https://learn.microsoft.com/en-us/training/paths/explore-business-value-generative-ai-solutions/), [AI-solution value](https://learn.microsoft.com/en-us/training/paths/drive-value-generative-ai-solutions/), and [business transformation](https://learn.microsoft.com/en-us/training/paths/transform-your-business-with-microsoft-ai/)
-- Instructor-led course (1 day): [AB-731T00-A](https://learn.microsoft.com/en-us/training/courses/ab-731t00)
-- Free readiness check (45–75 minutes per attempt plus remediation): [Microsoft AB-731 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/practice/assessment?assessment-type=practice&assessmentId=13027212&practice-assessment-type=certification)
-- First-party exam preparation (about 1 hour; verify runtime): [Microsoft AB-731 prep session](https://www.youtube.com/live/mj_lyhuWbig)
-- Subscription path (3 hours listed plus practice exam): [Pluralsight AB-731](https://www.pluralsight.com/paths/ab-731-ai-transformation-leader), with three domain courses published May–June 2026
-- Current marketplace course (3 hours 51 minutes plus quizzes/practice): [Udemy AB-731 by Phillip Burton](https://www.udemy.com/course/ab-731-exam-prep-microsoft-ai-transformation-leader/), updated June 2026 and explicitly aligned to July 22
-- Alternative marketplace course (4 hours 15 minutes): [Udemy AB-731 by Alan Rodrigues](https://www.udemy.com/course/ab-731-microsoft-ai-transformation-leader/), updated May 2026
-- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current delivery, exact start/end times, seats, and prerequisites
+Resource details from the [AB-731 guide](../guides/AB-731-ai-transformation-leader.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one primary route, then practice opportunity scoring, value modeling, capability mapping, responsible-AI controls and adoption planning. No exact current AB-731 product from O'Reilly, MeasureUp or Whizlabs was independently verified on September 1, 2026. Reject recalled live questions, “real exam” claims, unsupported giant question banks and pass guarantees.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build the decision artifacts and labs, and add another resource only when it closes a measured gap.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official AB-731 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731) | Free | 1–2 hours to map objectives |
+| [Explore the business value of generative AI solutions](https://learn.microsoft.com/en-us/training/paths/explore-business-value-generative-ai-solutions/) | Free | 2 modules; allow 2–4 hours with exercises (editorial estimate) |
+| [Drive business value with AI solutions](https://learn.microsoft.com/en-us/training/paths/drive-value-generative-ai-solutions/) | Free | 2 modules; allow 2–4 hours with exercises (editorial estimate) |
+| [Transform your business with AI](https://learn.microsoft.com/en-us/training/paths/transform-your-business-with-microsoft-ai/) | Free | 4 modules; allow 4–7 hours with exercises (editorial estimate) |
+| [AB-731T00-A instructor-led course](https://learn.microsoft.com/en-us/training/courses/ab-731t00) | Paid/provider-dependent | 1 day; 13 listed course languages |
+| [Microsoft AB-731 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/practice/assessment?assessment-type=practice&assessmentId=13027212&practice-assessment-type=certification) | Free | 45–75 minutes per attempt plus remediation |
+| [Official AB-731 prep session](https://www.youtube.com/live/mj_lyhuWbig) | Free | Public video shell; runtime not verified in this review |
+| [Pluralsight AB-731 path](https://www.pluralsight.com/paths/ab-731-ai-transformation-leader) | Subscription/trial | 3 courses: 1h08 + 58m + 57m = 3h03; headline rounds to 3 hours |
+| [Udemy AB-731 by Phillip Burton](https://www.udemy.com/course/ab-731-exam-prep-microsoft-ai-transformation-leader/) | Paid; price varies | 3h51; 10 sections/48 lectures; indexed update June 2026 |
+| [Udemy AB-731 by Alan Rodrigues](https://www.udemy.com/course/ab-731-microsoft-ai-transformation-leader/) | Paid; price varies | 4h15; 4 sections/71 lectures; indexed update May 2026 |
+| [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Verify the listed session start/end time after sign-in |
+
+The three official paths contain **eight modules**. Their earlier 4h44 total is historical; the current outlines do not expose verified runtimes. Allow roughly **10–18 hours** for reading and decision artifacts as an editorial budget, adjusting for your experience.
+
+Pluralsight's public outline lists Saravanan Dhandapani's three courses, dated May 7, June 3 and June 22, 2026, and advertises a practice exam; subscription content was not accessed. Both Udemy pages blocked direct retrieval; indexed public outlines supplied the metadata above. A provider update predating the July blueprint should prompt an objective-by-objective comparison, not an assumption that every lesson is obsolete. The Practice Assessment is linked from the current credential page, but the separate endpoint returned an empty shell; no questions or results were inspected. Partner scheduling requires sign-in, and the prep-video shell did not establish runtime.
+
+The earlier O'Reilly, MeasureUp and Whizlabs gaps were not exhaustively rechecked in this pass; no claim of market-wide absence is made. Reject recalled live questions, unsupported exam guarantees and materials that replace explanation with memorization. Supplement your primary route with the sourced blog worksheet and measurement documentation above.
 
 ### AB-210 — Accelerating Sales Pipelines with AI in Dynamics 365
 
