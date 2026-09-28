@@ -1,0 +1,2047 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DEA-C01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e48db2784615fbb2576391f73fb387794b1dfe9afccaeab0226bed4b8a5cb060",
+  "guide_after_sha256": "c1105c6070ebeb8d6021891ffd1a93318981bc78022accc393ae9422b44bef7e",
+  "prior_records": {
+    "exam": {
+      "code": "DEA-C01",
+      "level": "intermediate",
+      "vendor_id": "aws",
+      "title": "AWS Certified Data Engineer - Associate",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+      "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; AWS targets candidates with two to three years of data-engineering experience and one to two years of hands-on AWS experience. Practice SQL, batch/stream/CDC ingestion, distributed processing, store and schema design, orchestration, IaC, data quality, monitoring, IAM, Lake Formation, KMS, privacy, lineage, replay and recovery."
+    },
+    "review": {
+      "id": "dea-c01-2026-09-01-source-validation",
+      "exam_code": "DEA-C01",
+      "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dea-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f",
+      "objective_coverage": [
+        {
+          "objective_group": "Data Ingestion and Transformation",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Store Management",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 1, 3, and 5"
+          ]
+        },
+        {
+          "objective_group": "Data Operations and Support",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Security and Governance",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 28,
+        "reachable": 25,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "The December 12, 2025 version 1.1 DEA-C01 guide was reconciled with four detailed domains, the in-scope list, revision record and live certification page. The guide closes LLM, Iceberg, vector-index/vectorization, Bedrock knowledge-base, SageMaker Catalog/Unified Studio and service-scope additions and labels older training incomplete. Three scenarios, eight labs and 40 original checks cover ingestion/replay, transformation/orchestration, stores/models/catalog/lifecycle/schema, SQL/operations/quality and end-to-end security/governance. All 28 URLs are cataloged: 25 reachable and two O'Reilly books plus Udemy automation-blocked; none missing or broken. Volatile metadata is labeled and no recalled questions are used."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "81651387378a94d969c38eaf5686e9db336b3f4f5378ad38a94d27d909288ae2",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "d3b132cec3e952024980c6be6ee3a93738ad11ccd6afc1843eebabbeb1460199",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4423664f819775126274d30a561bb83f3dc57e224a75d060382fdac776e0bf7e",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "a02bc03464cdea470a85cc1f72e2c299c3ee10610a6bdf45cbb7e17ca42ff0fb",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "df1fcee5b08693d9a22dbbdc1ac61b35aa68a34c9cda62af8d305d57a11a35d8",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "4ce438a0b8540113bc760f1dc5dce23480808c1c51b70f06cea40a1cff9c9b79",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "02a8d5a8113542c9066983f1c831d7544d57cc3e1dd9ce007d0c2716e5df5cff",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "0dbf4104be6f16770908a3415f511b112e4e2d3917399d4bc32b859f9974ef05",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "081a8dea8253b751848c9630fc1524a825afda6de8612741edeb7a37e6e4d7a3",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "20cca885b442dae298db26b779d1758155c1e589b2b933801403408508031147",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "d1a7767c12e7afe427b443e3b7b7a0190001859513b92082c7872fd7fde44f59",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "ff5ae8f3668d1e6363d21c2d6df52b58349dbe787ee6d7d6ca1f2c314cca2da3",
+      "guide_sections": "1 / Choose the ingestion contract; Connections, state and programming choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c883203e6315833864d12340e6bcda0810e3bda4a5f95fa582d60cc4b73b906f",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "646eb45126e764211f1bff36d716400e1a24bca9625364fab414243d15bdf589",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "f6cfeab11bfabf8f98afd65aba981c02584c4f1121e7a1d324877c5eaddbac9c",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "b93bc9957f06c1a7a124668e890c91de586b34db092e4cbcd4dff5381e36709a",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "adfcdd026c4743629457aac1874cac41c024702bd3a669384a0b2aa9634903f6",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "e981169a3a2ccce4dbeaddf50e183500c2a9e9e87de5cfc3864d11db2a82a575",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "4f3f15fcc7146d501257ffa95b0618e58e7b76d03da76818a2fdfbedfb1e5bc7",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "53aa7a9de3f302424f3b4fd15924d0ce33cc9a10bc2a107872cd4401015f95dd",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "7c4452a0410ed641941b935569d4d9e74954a173fe2113711007eea29e99c5fe",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "98302cf64cf39ccdf82674210b99a15a1e45b9f3d72d6b7b9fd8df81d13f6270",
+      "guide_sections": "1 / Transform at the appropriate scale; Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "b22dae2bad3a49b6113366aebdef3bfdf14020246e4e62e5e2fa71d6049b4d0e",
+      "guide_sections": "1 / Orchestrate durable workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "8405efb1271ab944461c9f621a46f34e204498d6f29d9f3256d78ab3c8664117",
+      "guide_sections": "1 / Orchestrate durable workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "4b597fbe00f360d4fd598c97e5a1911a4fcf2a3e67d45cb5d3c1e79465c2488e",
+      "guide_sections": "1 / Orchestrate durable workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "546fdbd3b5674736a8db163e1643fded904d4e575d8845c9f9ac1834b848755a",
+      "guide_sections": "1 / Orchestrate durable workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "54505503c01bee2e90fe9148707c925de78776c53467fa29744340b999242d67",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "e24296efb01e3d4b14f36baeeb260af16c706bd9f1f793e82eb07df1e3dbe756",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "ae988a3b0788fb313c0ec24f4f6288c1569b44b7f0620ad34e96d963f1a98538",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "b17b5f6e13bef67e3dc7b17c6731a0ea5d2eee6d2ed48701b69dd4ad6d4f0b4a",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "1ab816d392ae098a990320fed8211090f946d6b273fb8b93a58837683cdaa4db",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "d855ef993fef9c704ae0b50735e82c2f2153b4eec7f283a9301938a40293b26b",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "553b9cdabdd39edec00ecf647bffefef6550a8aae54923a6d812f1eb80fed26c",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "7b48dd6162ddee6cfa61decd1a4fabd38d86d4b761957fe10e997d32afe4f350",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "7d3f483de236b48e0ca639fa0e42bb851bf04dc5eff8afc9d97276769ae7ea0c",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "8c086b3bca65f679ef74538da12ca92e1d4f40a5296f8e6fb04f4cdd6a9a98c0",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "70ba5832a78440ffde005ffc5dbe5741d6658180aee1017c0e9df9652f4b8930",
+      "guide_sections": "1 / Connections, state and programming choices; Apply engineering practices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "6e19d15d1d30dcd7af5e44ea55aa3a2c954064c388aa64492cfbbfbe49eecdb2",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "a8a717e3be4e33d6bc9d896f4621d60ed1fa219075ece3a6ba33f81c0d68649e",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "ae42f9bd370b711133acc42601a02e490ffc41331cb026528625b979c40edee8",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "858ad184ed39979acb02a0ea2b10026766765399c28b906a64f5e02529ab675f",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "6e703dbfc353d8a98e598b31ad6bcebb4fbe093fc089b8cb841ac8af46c68809",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "26598a4074dc50977fa829096e4caf81a94a2f48d761c15f6ae8478d6dcbb500",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "7109c4f8bae09586beeb866b7275cb0ac7d2ded2fcbb71610c2b820ff1ede457",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "2d1c19cbcb77de2332b62953201388e5f1163eaeb7a1b711963b42bb7ca0f7eb",
+      "guide_sections": "2 / Select from the access pattern; Design lake data intentionally; table/engine comparison; locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "3b4b9564499132bd55f62a2b370f0159442707b60f3a44b9f65e3eb99c35b194",
+      "guide_sections": "2 / Catalog technical and business meaning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "8e69e889c59dab72fc67c8690a26d85f180410bab70a58fa9206e777e95db5cc",
+      "guide_sections": "2 / Catalog technical and business meaning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "5a7621cfa4efca6638589db78104fa4b054a44deeb56ac2c21292acda17744c6",
+      "guide_sections": "2 / Catalog technical and business meaning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "84956d8aff345431dc784977cc3613c1d576856f14ef201e9d9c709a583e7405",
+      "guide_sections": "2 / Catalog technical and business meaning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "03d20f87b8323a5f4aa6f153588a7fee23f74a2e41daed1b955416b38f48976f",
+      "guide_sections": "2 / Catalog technical and business meaning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "52c01ecf79c12d99da0421821fcac9d6ce61162b61053c620e640d98f99f96bb",
+      "guide_sections": "2 / Catalog technical and business meaning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "4a51c7e5330654039b29a0bcec63ef73c2316757fbcc7d50f500a26927bb637a",
+      "guide_sections": "2 / Manage lifecycle and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "d5a275b8c33f60c77d564e90d26121af387704ee2f545331b17e3934e38395ea",
+      "guide_sections": "2 / Manage lifecycle and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "bba043ca0dd96fd67fcc22393a369e3cb3a9b558d993e03b25bb851f8a665b0b",
+      "guide_sections": "2 / Manage lifecycle and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "eff5cf183af1d4945074d5e534d36b0bf88401e103185750eb0ffb3f47616683",
+      "guide_sections": "2 / Manage lifecycle and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "fa471daba7e66234d900a4ec0e1b06a376ae6f4a4832b7879286f25f303acc86",
+      "guide_sections": "2 / Manage lifecycle and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "77d31d8fe40c9e53e3762b56cbd6ffd8bc149b0ca142ddce42315d048ca9da9f",
+      "guide_sections": "2 / Manage lifecycle and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "9f04c947383033f3b8a0f6080834db530509ae3c40c8fbb268c2f58d34507e12",
+      "guide_sections": "2 / Evolve schemas and models safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "6c3a671df92c77f562a459ca8d5571cb1a1aff8b3343b26eca6d65224f922b8c",
+      "guide_sections": "2 / Evolve schemas and models safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "7ee9f7173f8b2c69ca7597df6e8666a0b95276ef650c91131e9a44e49247f553",
+      "guide_sections": "2 / Evolve schemas and models safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "65d4ffdc6782cefa422f60a0300c14e0e9a8759dcb66f6fc6a1aa59fb0a427e2",
+      "guide_sections": "2 / Evolve schemas and models safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "daff8745819fe917489377de7fc96672de83121db6d1b4445b5ee14ecb8c091e",
+      "guide_sections": "2 / Evolve schemas and models safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "18b62e119238af15ba43d062ffe49bf4ae611183e19d4ff28784a4a2287345f0",
+      "guide_sections": "2 / Evolve schemas and models safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "245cb553974c2660f6135b7dc5b0c26224742822a40804e2e8aabd3847b91cfa",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "c1f19867a08fffa708f6cf576d26442e56403cc78921b1d00845079a5fab134d",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "8dad61c59027e99397a9a23241cc9a56b2b2a105fe7919cd71a3bf35cf30b910",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "a984709b3b641b2d5f5ec4deea46b1a51a61e6700c88e52f88f232afae961972",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "511880139f21232be8360c5fe99bc992166dcdb51bf9395e7040181c457d0341",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "521c250595af9af3fb3df55c93a972e1d0c23dca8b61d850005b610231ff55f2",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "3da5a7e6afe34554e06aca000961c7f12f636f220d1afddd4eb1ae3e0bfbe17c",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "d8e74498e73bbe79191b6dced14ed18d78292a60a601da0161637cae564483b7",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "1e01ebb8a74dcea8be87915c9ac0aac9edf23f10c0da8b00348a88d03e63be2e",
+      "guide_sections": "1 / Orchestrate durable workflows; 3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "27cfb4a915f0d9d4f4b196769a4cc541f3bfea72e05416b1d1f7ac6833821938",
+      "guide_sections": "3 / Understand query and engine behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "8fa1b77b97916265c33aad25b372129349813cb26b744f8ff5361d99ead57f86",
+      "guide_sections": "3 / Understand query and engine behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "6b4e187af7a17f5514d7207481c48f3c280cb2aef5072197bf6750844676b2fb",
+      "guide_sections": "3 / Understand query and engine behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "5521ff24ec2587ef7c56964967e902ba4ec51e13788cd681196beb587ffae282",
+      "guide_sections": "3 / Understand query and engine behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "caa15e9b6afb6362e61db3a04516b00331b1dbf8a7dfa6aa7ccc7a7620c3e83d",
+      "guide_sections": "3 / Understand query and engine behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "018b20415af8f5f47fee76ba94a45dead5f3ead6d1083149bd10aa23da09eb9b",
+      "guide_sections": "3 / Understand query and engine behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "f225c863216ee392fdd74dce2158e1328e2615537c4ecca095f9c51facf92693",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "c46f12f5399d7fbcdfe8e131c4a0bb9cca9873f8ae7c87a765b0ee0f2c619009",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "4f5b2fa40e92c4bf942daaa5c1f3c0f2cea6ddf2e6eb43569b7af92fab747ea5",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "7965cbeca381d9d379733c2e5aefb7d9c7990bd58ae316918def1d61e657cdbd",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "c44efc4400281a36cb8a631bf9a946bb637fc10914ebaf09d801df0aa7bd9ad3",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "5ccc7cd24b8b010a7faa8be6b27d82003906f8b2becf6215808de3e47c1e8a67",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "2b26aa3d80041063ac03722523d9bd1d5f6cb027d84f676425b75af01cfd95f9",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "972867333055a3d351a20d5a72c554eed4aadab76a214d1666e64d1432857341",
+      "guide_sections": "3 / Operate outcomes, not job status",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "f3ffa4297db0af13e99641092b3734f7ec38102a2b95f59f6062587598772916",
+      "guide_sections": "3 / Build quality into the pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "7b833a3f0ba3dcda7158c3e7bc3f474b03e65b58dd83eb9d209c46763b7b5eaf",
+      "guide_sections": "3 / Build quality into the pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "418ca1e6636ffc9f02dc1a69722a0693643234bbdf387e1e2251c940cd5d8033",
+      "guide_sections": "3 / Build quality into the pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "f903ef30435325f5884f84082a6c7f30255e1fa0137e949b5205771d6a879ff9",
+      "guide_sections": "3 / Build quality into the pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "b9010bfec2dde10b0b9f98437b01a9027273c3434816cabf9692cffdc23f7c50",
+      "guide_sections": "3 / Build quality into the pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "ccc527a11695c5edda0345f3fff5ce86dd7d2f9e80f21506fa3f390ac17d84b2",
+      "guide_sections": "4 / Separate identity, permission, and path; Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "5d476151bf508b3898aced952a09d541be6bb6290bc96d2c0c9f96191c503d89",
+      "guide_sections": "4 / Separate identity, permission, and path; Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "23e46f186a4a899be101d2d36f8d57938078c275f720c886fb3c32dc9e2fdbcd",
+      "guide_sections": "4 / Separate identity, permission, and path; Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "e41976a67e4f7ef08159f3daa453b8a679a0a2fad3a7a68fe633ed0ec38c6d81",
+      "guide_sections": "4 / Separate identity, permission, and path; Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "344c28c69ccc25b31968bac4a37a88391915a43ea0117504b6500b776cde0376",
+      "guide_sections": "4 / Separate identity, permission, and path; Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "dd9117fafcf0ef2a0f47b7d7748eb4e4d2f1e2191239f90dc969e1780475bef2",
+      "guide_sections": "4 / Separate identity, permission, and path; Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "1d3113d68549b8c6e5125c9e1b040631419a346b65144820520d1ccbaa762c52",
+      "guide_sections": "4 / Separate identity, permission, and path; Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "69ad9641e1d13e223c76acc0c931eb5e41e5590adec87905e4d5937d13d94ff6",
+      "guide_sections": "4 / Separate identity, permission, and path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "c5e8564208df49e36cc59f2fa4cef3449a32af70c59e1a151f0b221f35f897e0",
+      "guide_sections": "4 / Separate identity, permission, and path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "89962765e583230a64888bddd19c4ded3afa0a95f2b57f75e3b1e86f95c6eb9a",
+      "guide_sections": "4 / Separate identity, permission, and path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "da1f8419e59b65cb2d50ff1d35b35d0a4e7935fd4fa8217f42fabe4fcb04713b",
+      "guide_sections": "4 / Separate identity, permission, and path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "ca09874b399ccd2499ae41e4e21189dedb806106aa696a2a942f1aa2b61929f5",
+      "guide_sections": "4 / Separate identity, permission, and path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "f10bf9de4ed8fbbe3da4cc4cb2e8af1d4ca2fc286fe673c922a887c4d55e0f59",
+      "guide_sections": "4 / Separate identity, permission, and path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "be733077594940091a0593feeadfc69358d6f9ea1b8f5e8c532098552ff12a1f",
+      "guide_sections": "4 / Protect data and keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "3d5d24f3167d4f3a7b369e7d23df121d7ab991873d2214a5a1e6a625469024bd",
+      "guide_sections": "4 / Protect data and keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "7838988055c9ea5e6c8db259746e119f96afc215dd0f00271253c35b54753e80",
+      "guide_sections": "4 / Protect data and keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "2c6e283c0346bae355af77d21d5b32c97936f4e1a50af6fb369c150cb1773095",
+      "guide_sections": "4 / Protect data and keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "9ed5233c8ada2e33f0b998b36ae3d77293378c31b291f172e550c7bcbaccf885",
+      "guide_sections": "4 / Produce audit evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "1676421c061a6c28934857088ccd00ca3ab77b04689e2760aed6567136756f83",
+      "guide_sections": "4 / Produce audit evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "63b6ff785988fcd3ea74026b18884a523261e41e1fe2a399cf84e1b15a20ec0e",
+      "guide_sections": "4 / Produce audit evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "d202575df56a4152f67919ed2ddf873a5b80287049e65a8c4c257401df776157",
+      "guide_sections": "4 / Produce audit evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "42eacb16cd36cd9c99bc5f2bd71bbad4bb0409c11b5d5666647b437bd588204b",
+      "guide_sections": "4 / Produce audit evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "6329045fc6154320c93ef73fe38fd609eb3b08dd38e69c86b4a3a442c931f6e8",
+      "guide_sections": "4 / Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "9e2b5a2b5c2438e8d1a0a3cd64b8981762ffd56de6717dd8907262ebe09d16da",
+      "guide_sections": "4 / Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "ce6b9efa80e8983fe3d448e809d49ade6ba6ab07426b0e2732cd4b41de87439d",
+      "guide_sections": "4 / Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "820b59dccf80a8485f727ad52eb097c8371eadd70fa0dc0a513a86975975fe9d",
+      "guide_sections": "4 / Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "e8c410860eb0a34cfd342f601632c7d845cf617cc42703fa9d883130ea37ceea",
+      "guide_sections": "4 / Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 6,
+      "objective_sha256": "8b30abb7f1fbd123343abf8843604e6cf24df4431c1baa477d464652cd7b24e4",
+      "guide_sections": "4 / Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 7,
+      "objective_sha256": "ef9d411fce676fdc5b6064a291570d012973dc23027c2a86338c4080a6983b38",
+      "guide_sections": "4 / Govern sharing, privacy, and sovereignty",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DEA-C01"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DEA-C01",
+        "title": "AWS Certified Data Engineer - Associate",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+        "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\dea-c01-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\dea-c01-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f",
+        "previous_status_sha256": null,
+        "current_status_sha256": "b531deb6e66492da20c30911b33189af8ed78313d4fbd85df5321044bdca349c",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Data Engineer - Associate (DEA-C01)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 38,
+    "reachable": 35,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-soa-c03-iam-evaluation",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "checked_at": "2026-09-28T20:30:09.319671+00:00",
+      "health": {
+        "id": "aws-soa-c03-iam-evaluation",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "content_type": "text/html",
+        "page_title": "Policy evaluation logic - AWS Identity and Access ManagementPolicy evaluation logic - AWS Identity and Access Management",
+        "canonical_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "duration_signals": [],
+        "signal_fingerprint": "74a00cd73b4e5530a5031ba6092c42c9523b74d0128e292dd4185ae20e2ba598",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "sha256": "c89f839064a26a0832b99613f691ef312edd02778f951ff24e577766cb822b2f",
+      "text_characters": 4151
+    },
+    {
+      "id": "aws-dea-c01-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+      "checked_at": "2026-09-28T20:30:10.371022+00:00",
+      "health": {
+        "id": "aws-dea-c01-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Data Engineer - Associate (DEA-C01) - AWS Certified Data Engineer - AssociateAWS Certified Data Engineer - Associate (DEA-C01) - AWS Certified Data Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f008889f3701228272cb29f0312e0c61614b0f8fe646876914391128c15b44ec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+      "sha256": "734820c894f54500f0a519835ed5c446ff3bcf25fb3748d6a0841aec13cbfe84",
+      "text_characters": 7506
+    },
+    {
+      "id": "aws-dea-c01-domain-1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain1.html",
+      "checked_at": "2026-09-28T20:30:10.421412+00:00",
+      "health": {
+        "id": "aws-dea-c01-domain-1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain1.html",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Data Ingestion and Transformation - AWS Certified Data Engineer - AssociateContent Domain 1: Data Ingestion and Transformation - AWS Certified Data Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "132095858736261a87c6a6e9281573a9e795a5a3b88e1ff73ac2f48b3f9d3d68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain1.html",
+      "sha256": "23ce1fe115269addd051a5cd97b5d8d4e7655df3755a3561737376fafe89b70f",
+      "text_characters": 4900
+    },
+    {
+      "id": "aws-dea-c01-domain-2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain2.html",
+      "checked_at": "2026-09-28T20:30:10.438802+00:00",
+      "health": {
+        "id": "aws-dea-c01-domain-2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain2.html",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Data Store Management - AWS Certified Data Engineer - AssociateContent Domain 2: Data Store Management - AWS Certified Data Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3b53daaa99255c0e46a3a2aac840ef5f17013c9acbf4cce53a40fc1f111c558c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain2.html",
+      "sha256": "0971ef055f11ad0e523ce717365a36a1429dd25d53a96a4df643a8b3573d0905",
+      "text_characters": 4046
+    },
+    {
+      "id": "aws-dea-c01-domain-3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain3.html",
+      "checked_at": "2026-09-28T20:30:10.480759+00:00",
+      "health": {
+        "id": "aws-dea-c01-domain-3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain3.html",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Data Operations and Support - AWS Certified Data Engineer - AssociateContent Domain 3: Data Operations and Support - AWS Certified Data Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "013a4c47ab4608034dd74ae3e3c02c754d45cf8be75bc011e135904bfe75de1a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain3.html",
+      "sha256": "4c7c4bc80186fd4df2d1bdaa117d18ae3c23c117003063e913388a4d71865fd3",
+      "text_characters": 3552
+    },
+    {
+      "id": "aws-dea-c01-domain-4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain4.html",
+      "checked_at": "2026-09-28T20:30:10.732451+00:00",
+      "health": {
+        "id": "aws-dea-c01-domain-4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain4.html",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Data Security and Governance - AWS Certified Data Engineer - AssociateContent Domain 4: Data Security and Governance - AWS Certified Data Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6ddb32210a346ed7f45dd620f0bb06e8e1a367fa7fd2caba9befc179f9bf71b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain4.html",
+      "sha256": "5267f775834b57971b77e481ef60145e9f4c702823420b5114c6fe4eec2a95c0",
+      "text_characters": 4023
+    },
+    {
+      "id": "aws-dea-c01-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:10.746490+00:00",
+      "health": {
+        "id": "aws-dea-c01-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Data Engineer - AssociateIn-Scope AWS Services - AWS Certified Data Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8213ce64756e055a31efde641a94c22ea98c34523c7ade1451c5c460b42146e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-in-scope-services.html",
+      "sha256": "73587acaf3562d5229f75db491df09760ee93c4f7b25e7a5257a8eb34da3612b",
+      "text_characters": 3042
+    },
+    {
+      "id": "aws-dea-c01-revisions",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html",
+      "checked_at": "2026-09-28T20:30:10.782350+00:00",
+      "health": {
+        "id": "aws-dea-c01-revisions",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html",
+        "content_type": "text/html",
+        "page_title": "Revisions - AWS Certified Data Engineer - AssociateRevisions - AWS Certified Data Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d4dbd46444077e9e9a757252aa63ded5da2884764508518d3df587e959797c90",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html",
+      "sha256": "a08c19d58be692b282c532c0967e5c11478d006045c8c1ae4bbe0557996527dc",
+      "text_characters": 4987
+    },
+    {
+      "id": "aws-dea-c01-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+      "checked_at": "2026-09-28T20:30:10.787114+00:00",
+      "health": {
+        "id": "aws-dea-c01-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+        "checked_at": "2026-09-28T20:30:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-data-engineer-associate",
+        "canonical_url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "c4a221cfec88967288798d5846c957e42aa5eb164014ca7ccb6e525dcab63d6a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+      "sha256": "ad439c2d90c8e99a49d5f67c000e183f49c5471affd9da0d2f90ed11b1dc621a",
+      "text_characters": 5579
+    },
+    {
+      "id": "aws-dea-c01-glue",
+      "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
+      "checked_at": "2026-09-28T20:30:11.051638+00:00",
+      "health": {
+        "id": "aws-dea-c01-glue",
+        "url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
+        "content_type": "text/html",
+        "page_title": "What is AWS Glue? - AWS GlueWhat is AWS Glue? - AWS Glue",
+        "canonical_url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
+        "duration_signals": [],
+        "signal_fingerprint": "43246a3ab63d0d2c2a3d75c6a7ea5b59b5d43a2be96eea249192125a167aec58",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html",
+      "sha256": "3923e5a6ba762d8373d768b79638d98006b518f08eba9e87c74d1e10201e75eb",
+      "text_characters": 7549
+    },
+    {
+      "id": "aws-dea-c01-kinesis-streams",
+      "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+      "checked_at": "2026-09-28T20:30:11.054957+00:00",
+      "health": {
+        "id": "aws-dea-c01-kinesis-streams",
+        "url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Kinesis Data Streams? - Amazon Kinesis Data StreamsWhat is Amazon Kinesis Data Streams? - Amazon Kinesis Data Streams",
+        "canonical_url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+        "duration_signals": [],
+        "signal_fingerprint": "566117923144c8e5315faea579a8ffe870be4ceb4a539aa56c9eae8854466475",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/streams/latest/dev/introduction.html",
+      "sha256": "fc409fa73adbd1550a3613b79ee2f6ee5019d225ee3760160eaea118d4e69f44",
+      "text_characters": 5435
+    },
+    {
+      "id": "aws-dea-c01-redshift",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+      "checked_at": "2026-09-28T20:30:11.083169+00:00",
+      "health": {
+        "id": "aws-dea-c01-redshift",
+        "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Redshift? - Amazon RedshiftWhat is Amazon Redshift? - Amazon Redshift",
+        "canonical_url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0063b3431aaa8d6ce1c6e252194efc7936b1a496f621bdd7ac91f5d76f2333c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html",
+      "sha256": "b6a42057c53f47f35d85cf040589fd1f4eb71c7e21e42688ef9408d2a65032ce",
+      "text_characters": 3321
+    },
+    {
+      "id": "aws-dea-c01-s3-performance",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html",
+      "checked_at": "2026-09-28T20:30:11.236754+00:00",
+      "health": {
+        "id": "aws-dea-c01-s3-performance",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html",
+        "content_type": "text/html",
+        "page_title": "Best practices design patterns: optimizing Amazon S3 performance - Amazon Simple Storage ServiceBest practices design patterns: optimizing Amazon S3 performance - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html",
+        "duration_signals": [],
+        "signal_fingerprint": "17558387d40b3ce7ced4f7d3dbe2c35f8692fe03227920e721b6f4f4bcc3b675",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html",
+      "sha256": "b227d3dd84cd83c2f6a0f66d75ae4a57b849a345cde87bcadb737232783980fa",
+      "text_characters": 4039
+    },
+    {
+      "id": "aws-dea-c01-athena-iceberg",
+      "url": "https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html",
+      "checked_at": "2026-09-28T20:30:11.349595+00:00",
+      "health": {
+        "id": "aws-dea-c01-athena-iceberg",
+        "url": "https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html",
+        "content_type": "text/html",
+        "page_title": "Query Apache Iceberg tables - Amazon AthenaQuery Apache Iceberg tables - Amazon Athena",
+        "canonical_url": "https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1407ba3bc1c9f0c056c7a6b0431aaf36a75cfa9227ebbade47002b5b570386d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html",
+      "sha256": "98de1dd53a6e008e3691e028bed3dd8e154445c30eb68c54c0a920908906a639",
+      "text_characters": 6250
+    },
+    {
+      "id": "aws-dea-c01-glue-data-quality",
+      "url": "https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.html",
+      "checked_at": "2026-09-28T20:30:11.366758+00:00",
+      "health": {
+        "id": "aws-dea-c01-glue-data-quality",
+        "url": "https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.html",
+        "content_type": "text/html",
+        "page_title": "Evaluating data quality with AWS Glue Studio - AWS GlueEvaluating data quality with AWS Glue Studio - AWS Glue",
+        "canonical_url": "https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ba26f2dd991c58604f64323ecc5a8a19620dbbccf53f79ba85aa2b54ab52526d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.html",
+      "sha256": "98dd8dabd7be8fae81c375c49629555ce36ead435311145ae1c2c7c1347a1a12",
+      "text_characters": 2425
+    },
+    {
+      "id": "aws-dea-c01-macie",
+      "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+      "checked_at": "2026-09-28T20:30:11.402410+00:00",
+      "health": {
+        "id": "aws-dea-c01-macie",
+        "url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Macie? - Amazon MacieWhat is Amazon Macie? - Amazon Macie",
+        "canonical_url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3d595c8d8f798c312afe28659b04cdcc8cdc96c8bae8746f012baaa95b7946a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+      "sha256": "5d02acaf53377d2d893e86d50dd2608465a518e98dab9635c023c7914a9a5b3f",
+      "text_characters": 15611
+    },
+    {
+      "id": "aws-dea-c01-analytics-lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html",
+      "checked_at": "2026-09-28T20:30:11.458887+00:00",
+      "health": {
+        "id": "aws-dea-c01-analytics-lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html",
+        "content_type": "text/html",
+        "page_title": "Data Analytics Lens - Data Analytics LensData Analytics Lens - Data Analytics Lens",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html",
+        "duration_signals": [],
+        "signal_fingerprint": "406ead5802d733e1e95226b9b3c9e80406c0048a2c3bfd79e495c5d4fa6fc5b9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html",
+      "sha256": "d51719d53ed7f69a139296d5dc90a1e6289048b45496ab2145a3de3978ada6e9",
+      "text_characters": 3177
+    },
+    {
+      "id": "aws-dea-c01-skill-builder",
+      "url": "https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01",
+      "checked_at": "2026-09-28T20:30:11.686597+00:00",
+      "health": {
+        "id": "aws-dea-c01-skill-builder",
+        "url": "https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01",
+        "duration_signals": [],
+        "signal_fingerprint": "73569424629d709ef0f9492b7579e73847980254451270f1e61143ce9b6049f4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-dea-c01-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01",
+      "checked_at": "2026-09-28T20:30:11.699837+00:00",
+      "health": {
+        "id": "aws-dea-c01-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Data Engineer - Associate (DEA-C01)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01",
+        "duration_signals": [
+          "17 Hours"
+        ],
+        "signal_fingerprint": "a76f71fbde4a25e91a85ef02b206a8a00767e4a3e9cf0ee49d5335ffbee9703b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01",
+      "sha256": "1a3503fca997fde52f780604b8ea58421dfe7637ad55cec0d260e95fb949b9f7",
+      "text_characters": 5987
+    },
+    {
+      "id": "aws-dea-c01-oreilly",
+      "url": "https://www.oreilly.com/library/view/aws-certified-data/9781098170066/",
+      "checked_at": "2026-09-28T20:30:11.702147+00:00",
+      "health": {
+        "id": "aws-dea-c01-oreilly",
+        "url": "https://www.oreilly.com/library/view/aws-certified-data/9781098170066/",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-data/9781098170066/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dea-c01-oreilly-sybex",
+      "url": "https://www.oreilly.com/library/view/aws-certified-data/9781394286584/",
+      "checked_at": "2026-09-28T20:30:11.745880+00:00",
+      "health": {
+        "id": "aws-dea-c01-oreilly-sybex",
+        "url": "https://www.oreilly.com/library/view/aws-certified-data/9781394286584/",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-data/9781394286584/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dea-c01-udemy-nikolai",
+      "url": "https://www.udemy.com/course/aws-certified-data-engineer-associate-dea-c01/",
+      "checked_at": "2026-09-28T20:30:11.812109+00:00",
+      "health": {
+        "id": "aws-dea-c01-udemy-nikolai",
+        "url": "https://www.udemy.com/course/aws-certified-data-engineer-associate-dea-c01/",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-data-engineer-associate-dea-c01/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dea-c01-coursera",
+      "url": "https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep",
+      "checked_at": "2026-09-28T20:30:11.870879+00:00",
+      "health": {
+        "id": "aws-dea-c01-coursera",
+        "url": "https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Data Engineer Associate Exam Prep",
+        "canonical_url": "https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep",
+        "duration_signals": [
+          "0 minutes",
+          "1 hour",
+          "1 minute",
+          "10 hours",
+          "10 minutes",
+          "100 minutes",
+          "107 minutes",
+          "11 minutes",
+          "113 minutes",
+          "12 minutes",
+          "124 minutes",
+          "13 minutes",
+          "16 minutes",
+          "2 hours",
+          "2 minutes",
+          "3 hours",
+          "3 minutes",
+          "30 minutes",
+          "34 minutes",
+          "4 minutes",
+          "41 minutes",
+          "5 minutes",
+          "57 minutes",
+          "6 minutes",
+          "7 minutes",
+          "71 minutes",
+          "78 minutes",
+          "8 minutes",
+          "9 minutes"
+        ],
+        "signal_fingerprint": "66bce4ee71d0c4d2808c7d3524a8a48ffcb6f799c7950bed22c1833dac59baae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep",
+      "sha256": "0753a0f476f50a7376fb4df1ff557ba99d161f1431e386d8c7c25c4d7f767074",
+      "text_characters": 13967
+    },
+    {
+      "id": "aws-dea-c01-linkedin-learning",
+      "url": "https://www.linkedin.com/learning/aws-certified-data-engineer-associate-dea-c01-cert-prep/the-dea-c01-exam",
+      "checked_at": "2026-09-28T20:30:11.897382+00:00",
+      "health": {
+        "id": "aws-dea-c01-linkedin-learning",
+        "url": "https://www.linkedin.com/learning/aws-certified-data-engineer-associate-dea-c01-cert-prep/the-dea-c01-exam",
+        "checked_at": "2026-09-28T20:30:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/aws-certified-data-engineer-associate-dea-c01-cert-prep/the-dea-c01-exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The DEA-C01 exam - AWS Certified Data Engineer Associate (DEA-C01) Cert Prep Video Tutorial | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/aws-certified-data-engineer-associate-dea-c01-cert-prep/the-dea-c01-exam",
+        "duration_signals": [
+          "PT11M49S"
+        ],
+        "signal_fingerprint": "ac4ff155f251a80a39924501d714519f51d44a4ccd0d471c2fb154c70ae77646",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/aws-certified-data-engineer-associate-dea-c01-cert-prep/the-dea-c01-exam",
+      "sha256": "5e80c66612c5071ff9f7954a800b4060b7dbfdad23447f89321b407860a94c53",
+      "text_characters": 10718
+    },
+    {
+      "id": "aws-dea-c01-tutorials-dojo-video",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/",
+      "checked_at": "2026-09-28T20:30:12.045423+00:00",
+      "health": {
+        "id": "aws-dea-c01-tutorials-dojo-video",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/",
+        "checked_at": "2026-09-28T20:30:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Data Engineer - Associate DEA-C01 Video Course 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "f464a007c550d6901efc87d249ed237f9cf3241ceeae60938062135f9db267fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/",
+      "sha256": "9204f1442e46ee0bffaa4d54862f4c6bafc274820a8efb6e4f7a7a3511f1db77",
+      "text_characters": 13760
+    },
+    {
+      "id": "aws-dea-c01-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/",
+      "checked_at": "2026-09-28T20:30:12.519170+00:00",
+      "health": {
+        "id": "aws-dea-c01-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/",
+        "checked_at": "2026-09-28T20:30:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Data Engineer Associate DEA-C01 Practice Exam 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "30 mins",
+          "72 hours"
+        ],
+        "signal_fingerprint": "2629166dc3935d870663c0ddbed5399056a55295481a0393dba83c7fae4c4e56",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/",
+      "sha256": "84753d01426dcf067fd4cee494b2854a8aa4ebfeaa18b8ac29ca93438a474896",
+      "text_characters": 10510
+    },
+    {
+      "id": "aws-dea-c01-whizlabs",
+      "url": "https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/",
+      "checked_at": "2026-09-28T20:30:12.676269+00:00",
+      "health": {
+        "id": "aws-dea-c01-whizlabs",
+        "url": "https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/",
+        "checked_at": "2026-09-28T20:30:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS Certified Data Engineer - Associate (DEA-C01) Course",
+        "canonical_url": "https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/",
+        "duration_signals": [],
+        "signal_fingerprint": "220353514fe3edad924b921ccc63e6ca30003c1d9d98381c9276354820c5ef3c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/",
+      "sha256": "381e8fde6fa517d62d4f58736a7cdc471ad7ffa1ab6e0a22933435a9b0008bd1",
+      "text_characters": 56
+    },
+    {
+      "id": "aws-dea-c01-johnny-chivers",
+      "url": "https://www.youtube.com/watch?v=6G0bLDIcO7Y",
+      "checked_at": "2026-09-28T20:30:13.032374+00:00",
+      "health": {
+        "id": "aws-dea-c01-johnny-chivers",
+        "url": "https://www.youtube.com/watch?v=6G0bLDIcO7Y",
+        "checked_at": "2026-09-28T20:30:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=6G0bLDIcO7Y",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS Certified Data Engineer - Associate (DEA-C01) [Full Course In 285min]",
+        "canonical_url": "https://www.youtube.com/watch?v=6G0bLDIcO7Y",
+        "duration_signals": [
+          "285min"
+        ],
+        "signal_fingerprint": "ab33810e4a0e83a761e3d5101202a1980e43fead23288da0b3259d053d55baa0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=6G0bLDIcO7Y",
+      "sha256": "942d5c4c44bf80a0fa9f843808b0c5d3f0315997867c97092dbe224cf84376d4",
+      "text_characters": 236
+    },
+    {
+      "id": "mla-c01-aws-service-availability",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "checked_at": "2026-09-28T20:30:34.556339+00:00",
+      "health": {
+        "id": "mla-c01-aws-service-availability",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Service Availability Updates - AWS",
+        "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "duration_signals": [],
+        "signal_fingerprint": "ad8b78fff49d16662086d2644f8def647e67462cebfcd1e11cd0dbcaef4ca87d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "sha256": "82cc441cdb1dc4407ae65a8e51691ff78b90b4e5e6f7103b26815da4087556ef",
+      "text_characters": 2167
+    },
+    {
+      "id": "aws-snowball-availability",
+      "url": "https://aws.amazon.com/snowball/faqs/",
+      "checked_at": "2026-09-28T21:07:02.943409+00:00",
+      "health": {
+        "id": "aws-snowball-availability",
+        "url": "https://aws.amazon.com/snowball/faqs/",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/snowball/faqs/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Snowball FAQs",
+        "canonical_url": "https://aws.amazon.com/snowball/faqs/",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c944382ffd3bcd28f7ddca27041cfc30107427dd8b1315d575106f1f916b862e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/snowball/faqs/",
+      "sha256": "39a5928453230452982f55beeee322e9947aa17fe2f4f767460c266dac5104be",
+      "text_characters": 27232
+    },
+    {
+      "id": "aws-discovery-availability",
+      "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "checked_at": "2026-09-28T21:08:26.281871+00:00",
+      "health": {
+        "id": "aws-discovery-availability",
+        "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "checked_at": "2026-09-28T21:08:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Application Discovery Service availability change - AWS Application Discovery ServiceAWS Application Discovery Service availability change - AWS Application Discovery Service",
+        "canonical_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e3e24fd9b54bdf27261c06b37dacbb307d22d441882682d6b14da5d7d074e2bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "sha256": "a3cbcb728f75a2a71c77d2ae3dbf9b3029063934cc0ee440644c08f2d490e360",
+      "text_characters": 5898
+    },
+    {
+      "id": "aws-quick-overview",
+      "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "checked_at": "2026-09-28T21:28:47.661833+00:00",
+      "health": {
+        "id": "aws-quick-overview",
+        "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Quick? - Amazon QuickWhat is Amazon Quick? - Amazon Quick",
+        "canonical_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d7ad980d06869366db020b50e2ccd16b0f00f71d609579e8606e2e305fff72a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "sha256": "d9b9f053b1fa0b5cf24d39835a53e2eacf6fae7b184e05f9c684fac691307845",
+      "text_characters": 3561
+    },
+    {
+      "id": "aws-redshift-behavior",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
+      "checked_at": "2026-09-28T21:40:43.224516+00:00",
+      "health": {
+        "id": "aws-redshift-behavior",
+        "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
+        "checked_at": "2026-09-28T21:40:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
+        "content_type": "text/html",
+        "page_title": "Behavior changes in Amazon Redshift - Amazon RedshiftBehavior changes in Amazon Redshift - Amazon Redshift",
+        "canonical_url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6a4c1265da8323462009864069604cb0073c313472a95b0d93e59462a90d1608",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
+      "sha256": "ed40460409834271a122d148a2cebfcd5cf2609348299f54144e2a2b5749b165",
+      "text_characters": 29133
+    },
+    {
+      "id": "aws-cloudtrail-lake",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html",
+      "checked_at": "2026-09-28T21:40:43.225148+00:00",
+      "health": {
+        "id": "aws-cloudtrail-lake",
+        "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html",
+        "checked_at": "2026-09-28T21:40:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html",
+        "content_type": "text/html",
+        "page_title": "Working with AWS CloudTrail Lake - AWS CloudTrailWorking with AWS CloudTrail Lake - AWS CloudTrail",
+        "canonical_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html",
+        "duration_signals": [
+          "24 hours",
+          "6 hours",
+          "about 5 minutes"
+        ],
+        "signal_fingerprint": "23c98cef6a029f72a20657efb8d8353078450fee3ed0800cc96fb3c7ce758304",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html",
+      "sha256": "4ad47948bc6cd7f990ab48e073c6e7fde4e601472138de6c5a96ff6bc181fa2d",
+      "text_characters": 10686
+    },
+    {
+      "id": "aws-s3-tables-maintenance",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html",
+      "checked_at": "2026-09-28T21:40:43.225724+00:00",
+      "health": {
+        "id": "aws-s3-tables-maintenance",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html",
+        "checked_at": "2026-09-28T21:40:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html",
+        "content_type": "text/html",
+        "page_title": "S3 Tables maintenance - Amazon Simple Storage ServiceS3 Tables maintenance - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c0a4c4d00df1a1dbc30cd8c28f38d69748d9d6b405b98ddfa4ec0d97ea9256cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html",
+      "sha256": "8cd2354a62e9fb27739d05251f13e07df80281a5609c9df3273060ebe5177574",
+      "text_characters": 1703
+    },
+    {
+      "id": "aws-dea-trino-blog",
+      "url": "https://aws.amazon.com/blogs/big-data/query-amazon-s3-tables-from-amazon-emr-trino-using-the-iceberg-rest-endpoint/",
+      "checked_at": "2026-09-28T21:40:43.226225+00:00",
+      "health": {
+        "id": "aws-dea-trino-blog",
+        "url": "https://aws.amazon.com/blogs/big-data/query-amazon-s3-tables-from-amazon-emr-trino-using-the-iceberg-rest-endpoint/",
+        "checked_at": "2026-09-28T21:40:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/big-data/query-amazon-s3-tables-from-amazon-emr-trino-using-the-iceberg-rest-endpoint/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Query Amazon S3 Tables from Amazon EMR Trino using the Iceberg REST endpoint | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/big-data/query-amazon-s3-tables-from-amazon-emr-trino-using-the-iceberg-rest-endpoint/",
+        "duration_signals": [
+          "approximately 15 minutes"
+        ],
+        "signal_fingerprint": "8bcd5302fc924fd372700215a458a9b836024de6ed02a0db2dfb3120ec151cc1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/big-data/query-amazon-s3-tables-from-amazon-emr-trino-using-the-iceberg-rest-endpoint/",
+      "sha256": "9ba98842c859c167645350d7b6ce4adcfe3e53a52b8643b694e9df5f07f6017d",
+      "text_characters": 18893
+    },
+    {
+      "id": "aws-glue-bookmarks",
+      "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html",
+      "checked_at": "2026-09-28T21:40:43.777695+00:00",
+      "health": {
+        "id": "aws-glue-bookmarks",
+        "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html",
+        "checked_at": "2026-09-28T21:40:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html",
+        "content_type": "text/html",
+        "page_title": "Tracking processed data using job bookmarks - AWS GlueTracking processed data using job bookmarks - AWS Glue",
+        "canonical_url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b97a1088e07221d1d3a10c93e0cc66d69771c87108a3865edeae7e4bc555845a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html",
+      "sha256": "0e493bf5ee88489e40d484b838583a92845bbf17a882862f33b005d9171ca53f",
+      "text_characters": 9745
+    },
+    {
+      "id": "aws-lambda-storage",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html",
+      "checked_at": "2026-09-28T21:40:43.784862+00:00",
+      "health": {
+        "id": "aws-lambda-storage",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html",
+        "checked_at": "2026-09-28T21:40:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html",
+        "content_type": "text/html",
+        "page_title": "Configuring file system access for Lambda functions - AWS LambdaConfiguring file system access for Lambda functions - AWS Lambda",
+        "canonical_url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4ff5048b2fc7ed37babf57433734f83a537604d758b2c5b44f6eaa8eac4e9f02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html",
+      "sha256": "b2b1eb17b4383be4b11fe181e75d1d5c4f0a2368c29233080a1a0ce5acf6d9a2",
+      "text_characters": 1329
+    },
+    {
+      "id": "aws-cloudtrail-lake-availability",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+      "checked_at": "2026-09-28T21:41:41.513950+00:00",
+      "health": {
+        "id": "aws-cloudtrail-lake-availability",
+        "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+        "checked_at": "2026-09-28T21:41:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "CloudTrail Lake availability change - AWS CloudTrailCloudTrail Lake availability change - AWS CloudTrail",
+        "canonical_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c104611d2deb75ddc016d57166e7c46d781fe03f70acec9addd186b6317a76df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+      "sha256": "8959e235d3e541f84a2ffef8ac47bb3622626c636bb076f37967695ec0e70dd7",
+      "text_characters": 10708
+    }
+  ],
+  "added_source_ids": [
+    "aws-redshift-behavior",
+    "aws-cloudtrail-lake",
+    "aws-s3-tables-maintenance",
+    "aws-dea-trino-blog",
+    "aws-glue-bookmarks",
+    "aws-lambda-storage",
+    "aws-cloudtrail-lake-availability"
+  ],
+  "findings": [
+    {
+      "id": "deac01-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Several engineering skills need explicit explanation",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain1.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tasks 1.1/1.2/1.4 cover drivers, state, APIs, structures and mounts.",
+      "recommendation": "Add practical comparison and local relational examples.",
+      "disposition": "applied",
+      "source_id": "aws-dea-c01-domain-1",
+      "resolution": "Add practical comparison and local relational examples."
+    },
+    {
+      "id": "deac01-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Bookmark resets do not clear target output",
+      "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official docs say source tracking/rewind does not clean target files.",
+      "recommendation": "Clarify commit boundary, backfill isolation and reconciliation.",
+      "disposition": "applied",
+      "source_id": "aws-glue-bookmarks",
+      "resolution": "Clarify commit boundary, backfill isolation and reconciliation."
+    },
+    {
+      "id": "deac01-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Managed table storage needs distinction from format",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "S3 Tables automates table/bucket maintenance with configurable defaults.",
+      "recommendation": "Add format/storage/engine comparison and retention obligations.",
+      "disposition": "applied",
+      "source_id": "aws-s3-tables-maintenance",
+      "resolution": "Add format/storage/engine comparison and retention obligations."
+    },
+    {
+      "id": "deac01-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Named audit feature closed to new customers",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "May 31 closure; organization/account EDS expansion differs; trails remain supported.",
+      "recommendation": "Keep exam concept and add accurate availability/alternative lab path.",
+      "disposition": "applied",
+      "source_id": "aws-cloudtrail-lake-availability",
+      "resolution": "Keep exam concept and add accurate availability/alternative lab path."
+    },
+    {
+      "id": "deac01-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Connector and transformation lifecycle changes",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ODBC 1.x extended to December 31; TLS minimum October 31; Python UDF support ended June 30 with phased enforcement; patch-specific LF mutation changes.",
+      "recommendation": "Add dated migration/diagnostic table with scope limits.",
+      "disposition": "applied",
+      "source_id": "aws-redshift-behavior",
+      "resolution": "Add dated migration/diagnostic table with scope limits."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-dea-trino-blog",
+      "published_on": "2026-09-02",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Introduction, architecture/data flow and prerequisites; deployment code not executed.",
+      "value": "Separates query compute, REST catalog metadata and stored table files.",
+      "limits": "Example Trino/EMR minimums, permissions and maintenance remain explicit; no universal interoperability or cost claim adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "Ten assertions: SQLite join/null/idempotent-key examples and replay/scan/quality arithmetic."
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight labs proposed; no AWS deployment, migration, query, live LLM or paid lesson executed.",
+    "Local SQLite cases validate general relational reasoning, not Redshift/Athena syntax or engine-specific transactions.",
+    "Redshift dates/patches and managed-table engine compatibility remain volatile.",
+    "CloudTrail Lake is closed to new customers while remaining an explicit task example."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

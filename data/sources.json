@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-redshift-behavior",
+      "title": "Redshift behavior changes",
+      "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DEA-C01 deep review: Read UDF, ODBC, TLS and patch-202 Lake Formation changes; other release details not independently tested. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-cloudtrail-lake",
+      "title": "CloudTrail Lake availability and overview",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-s3-tables-maintenance",
+      "title": "S3 Tables maintenance",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dea-trino-blog",
+      "title": "Query S3 Tables from EMR Trino",
+      "url": "https://aws.amazon.com/blogs/big-data/query-amazon-s3-tables-from-amazon-emr-trino-using-the-iceberg-rest-endpoint/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DEA-C01 deep review: Read architecture/data flow/prerequisites only; no CloudFormation execution. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-glue-bookmarks",
+      "title": "Glue job bookmarks",
+      "url": "https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-lambda-storage",
+      "title": "Lambda file-system access",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-cloudtrail-lake-availability",
+      "title": "CloudTrail Lake availability change",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-soa-revisions",
       "title": "SOA-C03 revisions",
       "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
@@ -151,10 +249,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "AIF-C01"
+        "AIF-C01",
+        "DEA-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-kiro-docs",
@@ -433,10 +532,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SAP-C02"
+        "SAP-C02",
+        "DEA-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-apprunner-availability",
@@ -504,10 +604,11 @@
       "access_model": "public",
       "supported_exams": [
         "SAP-C02",
-        "CLF-C02"
+        "CLF-C02",
+        "DEA-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 CLF-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-clf-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 CLF-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-clf-c02-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-migrationhub-availability",
@@ -43108,9 +43209,10 @@
       "supported_exams": [
         "MLA-C01",
         "MLA-C02",
-        "AIF-C01"
+        "AIF-C01",
+        "DEA-C01"
       ],
-      "notes": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution. September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution."
+      "notes": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution. September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-aib-c01-technologies-concepts",

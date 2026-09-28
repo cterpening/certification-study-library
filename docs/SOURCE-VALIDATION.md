@@ -1017,6 +1017,8 @@ The review reconciles the current five-domain SOA-C03 blueprint, detailed domain
 
 ## DEA-C01 coverage record
 
+The September 28 [deep review](research/2026-09-28-dea-c01-deep-review.md) maps 120 detailed objectives. Review 120 skills; add 40 answer explanations and five worked cases, fill programming/connection/locking gaps, explain managed tables and bookmark replay, and record Redshift and CloudTrail Lake lifecycle changes. Current guide citations: 38 registered, 35 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Data Ingestion and Transformation | Section 1, all integrated scenarios, and Labs 1–4 and 8 |

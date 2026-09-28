@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # DEA-C01 AWS Certified Data Engineer - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dea-c01-coverage-record). The [official DEA-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 120 numbered skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dea-c01-coverage-record). The [official DEA-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html) is authoritative.
 
 **Current baseline:** DEA-C01 exam guide version 1.1, published December 12, 2025; 50 scored plus 15 unscored questions<br>
-**Upcoming blueprint change:** None announced in the current guide, revisions page, or certification page as of September 1, 2026.<br>
-**Important freshness boundary:** Version 1.1 added LLM-assisted data processing, Apache Iceberg/open-table formats, HNSW and IVF vector indexes, vectorization and Bedrock knowledge-base context, SageMaker Catalog and Unified Studio governance, and related current services. It removed Cloud9, CodeCommit, and AWS SCT from the in-scope service list. Treat version 1.0 courses as gap-fill resources, not complete coverage.<br>
+**Upcoming blueprint change:** None announced in the current guide, revisions page, or certification page as of September 28, 2026; no exam retirement was found in the reviewed sources. See the [deep-review report](../docs/research/2026-09-28-dea-c01-deep-review.md).<br>
+**Important freshness boundary:** Version 1.1 added LLM-assisted data processing, Apache Iceberg/open-table formats, HNSW and IVF vector indexes, vectorization and Bedrock knowledge-base context, SageMaker Catalog and Unified Studio governance, and related current services. It removed Cloud9, CodeCommit, and AWS SCT from the in-scope service list. The non-exhaustive service list does not erase task examples: skill 2.4.3 still names AWS SCT alongside DMS Schema Conversion. Study schema conversion and verify available tooling. Treat version 1.0 courses as gap-fill resources, not complete coverage.<br>
 **Official source:** [AWS Certified Data Engineer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html)
 
 ## How to use this guide
@@ -64,7 +64,7 @@ The official [Domain 1 page](https://docs.aws.amazon.com/aws-certification/lates
 | Change data capture | Ordered database changes must reach another system | Where is the replication position stored? How are DDL, deletes, ordering, and target idempotency handled? |
 | API ingestion | A producer or external service exposes request-driven data | How are pagination, throttling, retries, authentication, and incremental state handled? |
 
-Amazon S3 is a common durable landing zone for batch data. Kinesis Data Streams is a shard-based stream with multiple consumers and configurable retention; Kinesis Data Firehose is managed delivery with buffering and optional transformation; Amazon MSK provides managed Apache Kafka compatibility. DynamoDB Streams captures item-level changes for a bounded retention window. AWS DMS can perform full load plus ongoing changes. These are not interchangeable: choose from source protocol, ownership, ordering, retention, replay, consumer isolation, scale, and operational burden.
+Amazon S3 is a common durable landing zone for batch data. Kinesis Data Streams is a shard-based stream with multiple consumers and configurable retention; Amazon Data Firehose (still called Kinesis Data Firehose in the scope list) is managed delivery with buffering and optional transformation; Amazon MSK provides managed Apache Kafka compatibility. DynamoDB Streams captures item-level changes for a bounded retention window. AWS DMS can perform full load plus ongoing changes. These are not interchangeable: choose from source protocol, ownership, ordering, retention, replay, consumer isolation, scale, and operational burden.
 
 For Kinesis, a partition key controls shard placement and therefore ordering and load distribution. A hot partition key creates a hot shard even when total capacity looks sufficient. Consumers must checkpoint after safely processing data, tolerate retries, and handle records more than once. Enhanced fan-out can isolate consumer throughput; ordinary polling shares read capacity. See the [Kinesis Data Streams developer guide](https://docs.aws.amazon.com/streams/latest/dev/introduction.html) for current mechanics and limits.
 
@@ -84,7 +84,7 @@ Understand these transformation decisions:
 - **Narrow versus wide transformation:** Filters and projections can reduce data early. Joins, aggregations, sorts, and repartitioning often shuffle data; skewed keys can dominate runtime.
 - **Managed versus self-managed compute:** More control increases patching, scaling, security, observability, and recovery ownership.
 
-Glue job bookmarks track previously processed data for supported sources, but they are not a universal deduplication guarantee. Define what the bookmark represents, how resets/backfills work, and whether target writes are idempotent. For Spark, choose partitions from data volume and executor resources; avoid both huge partitions and thousands of tiny output files. Push filters down and select only needed columns when the format/source supports it.
+Glue job bookmarks track previously processed data for supported sources, but they are not a universal deduplication guarantee. The [bookmark documentation](https://docs.aws.amazon.com/glue/latest/dg/monitor-continuations.html) says that rewinding or resetting does not clean target files. Bookmark state is saved at `job.commit`; a target write and that state change are not automatically one cross-system transaction. Define what the bookmark represents, use a separate backfill target or an idempotent merge, and reconcile before publishing. For Spark, choose partitions from data volume and executor resources; avoid both huge partitions and thousands of tiny output files. Push filters down and select only needed columns when the format/source supports it.
 
 ### Orchestrate durable workflows
 
@@ -101,6 +101,14 @@ A production workflow should make these states explicit:
 - retry, timeout, cancellation, compensation, and human escalation recorded.
 
 Retries require backoff, jitter where appropriate, bounded attempts, and classification of transient versus permanent errors. Retrying a non-idempotent write can corrupt data. Dead-letter queues or failure destinations preserve work for investigation but do not themselves replay safely.
+
+### Connections, state and programming choices
+
+- **Source connectivity:** JDBC and ODBC are driver interfaces; diagnose driver/engine compatibility, DNS/route/security groups, TLS, credentials and database grants separately. IP allowlisting alone does not authenticate a caller. Keep secrets in a governed store and plan connection-pool refresh during rotation.
+- **State:** A stateless transformation needs only the current record. A running aggregate, join window or CDC position needs state with a key, lifetime, recovery point and consistency rule. Distributed workers need partition ownership and durable checkpoints; process memory alone is not a recovery plan.
+- **APIs:** Publish a versioned schema, pagination/cursor contract, identity policy, rate limits and errors. Retry transient failures with bounded backoff; preserve stable request/event IDs so retries do not create duplicates.
+- **Structures:** A hash map can support keyed lookup/deduplication, a tree can support ordered search, and a directed graph can represent dependencies or lineage. Choose from operations and memory/scale needs; a dependency cycle is a workflow error, not a reason to keep retrying.
+- **Lambda storage:** Temporary scratch space differs from a shared mounted file system. [Lambda supports EFS or S3 Files](https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html), with one type configured at a time. Validate network, permissions, access points, synchronization and cleanup; a mounted path does not extend the function's execution limits.
 
 ### Apply engineering practices
 
@@ -142,6 +150,14 @@ Apache Iceberg is an open table format that tracks table metadata and snapshots 
 
 **Related item:** A lakehouse is an architectural pattern, not one service. It combines low-cost object storage with table metadata, governance, transaction-like behavior, multiple engines, and warehouse-style management. Interoperability depends on actual feature/version compatibility.
 
+### Table format, managed table storage and engine compatibility
+
+An ordinary S3 bucket can hold Iceberg data/metadata managed by a compatible catalog and engine. **S3 Tables** adds purpose-built table buckets and [managed maintenance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance-overview.html): compaction and snapshot management at table level, and unreferenced-file removal at bucket level. These are enabled by default and configurable. Retention must preserve required time travel, replay and audit evidence; automatic maintenance does not choose the business policy for you.
+
+Check the actual engine/catalog/format version before writing from multiple engines. The current Athena guide specifies Glue optimistic locking, format-v2 query behavior and restrictions for Lake Formation-registered tables. An Iceberg feature in another engine's release announcement does not prove Athena supports it. Never delete referenced data files directly as a shortcut to table maintenance.
+
+The [September 2 EMR Trino/S3 Tables article](https://aws.amazon.com/blogs/big-data/query-amazon-s3-tables-from-amazon-emr-trino-using-the-iceberg-rest-endpoint/) is useful for separating query compute, REST catalog metadata and stored files. Its example requires Trino 475+ and EMR 7.11+; confirm current supported combinations and permissions. Start by drawing those paths and failure points. The CloudFormation deployment and paid infrastructure were not run for this guide; the article's broad interoperability claims do not replace a compatibility check.
+
 ### Catalog technical and business meaning
 
 The Glue Data Catalog stores database, table, schema, location, partition, and related metadata used by Glue, Athena, EMR, Redshift Spectrum, and Lake Formation integrations. Crawlers infer schemas; inference can be wrong or change unexpectedly, so control classifiers, schema-change policy, recrawl scope, and table naming. Partition projection can avoid enumerating predictable partitions; explicit catalog partitions remain appropriate elsewhere.
@@ -158,6 +174,8 @@ A catalog does not guarantee trustworthy data. Ownership, curation, quality, acc
 ### Evolve schemas and models safely
 
 Classify changes as additive, compatible, breaking, semantic, or storage-layout changes. Adding an optional nullable field may be compatible; changing a type, meaning, unit, time zone, key, or required status may not be. Producers and consumers can deploy at different times, so use contracts, compatibility checks, versioning, dual-read/write transitions, backfills, and deprecation periods.
+
+Database lock contention is a separate failure mode from CPU saturation. Identify the blocked statement, lock owner, transaction age and isolation level; commit or roll back the correct unit of work under an approved recovery procedure. Keep transactions short and use consistent lock ordering where possible. Do not terminate arbitrary sessions before understanding partial work. Schema conversion also needs assessment of types, constraints, routines and application semantics, then reconciliation and a rollback boundary.
 
 For analytical modeling, understand facts, dimensions, grain, surrogate/natural keys, slowly changing dimensions, star schemas, and denormalization. For DynamoDB, model items and indexes around requests rather than normal forms. For Redshift, distribution and sort/layout choices influence data movement and pruning, but current automated features can change tuning recommendations—verify behavior and measure.
 
@@ -201,7 +219,20 @@ In Athena, reduce scanned bytes with columnar formats, compression, partition pr
 
 SQL readiness includes joins, set operations, filtering, grouping, aggregations, window functions, conditional logic, null semantics, pivots/unpivots where supported, views, and rolling calculations. Know the intended grain before joining; many-to-many joins can multiply rows without an error. A rolling average needs an ordered window and an explicit frame. `NULL` is unknown, so comparisons and aggregates have rules that differ from empty strings or zero.
 
-Amazon Quick is the current name listed in the DEA-C01 service scope, while detailed objective text may still mention QuickSight. Product names and capabilities are **VERIFY CURRENT**. Visualization is useful for profiling and communicating quality, but charts do not replace deterministic checks or reconciliations.
+[Amazon Quick](https://docs.aws.amazon.com/quick/latest/userguide/what-is.html) is the current scope-list name; Quick Sight is its analytics feature, while task text still says QuickSight. Existing QuickSight APIs/SDKs continue according to the overview. Match the analytics need to the feature instead of assuming a new name changes query semantics. Visualization is useful for profiling and communicating quality, but charts do not replace deterministic checks or reconciliations.
+
+### Redshift changes to check before reusing a tutorial
+
+The [current behavior-change page](https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html) contains several operational boundaries relevant to connectors, transformation and governance:
+
+| Change | Learner action |
+|---|---|
+| Scalar Python UDF support ended after June 30, 2026; enforcement is phased | Evaluate SQL or Lambda UDF alternatives and test permissions, batching, retries, latency and cost |
+| ODBC 1.x support ends December 31, 2026, extended from September 30 | Inventory drivers and test ODBC 2.x before migration; an extension is not indefinite support |
+| TLS 1.0/1.1 connections are rejected from October 31, 2026 | Validate driver/protocol compatibility and actual connection logs; this notice does not itself require all connections to use TLS |
+| Patch 202 changes Lake Formation permissions for Iceberg mutations | DELETE needs DELETE; UPDATE/MERGE need INSERT and DELETE; all Iceberg DML needs ALTER. The notice excludes S3 Tables |
+
+Preserve the exact engine, patch, connection path and error when diagnosing a failed job. Do not broaden every role because a previously working mutation is now denied.
 
 ### Build quality into the pipeline
 
@@ -247,6 +278,8 @@ Masking hides values in approved query or presentation paths. Tokenization subst
 
 CloudTrail answers which supported API activity occurred; CloudWatch Logs stores/query application and service logs; CloudTrail Lake supports event data stores and SQL queries over retained events; AWS Config records supported resource configuration state/change. Preserve time synchronization, region/account coverage, organization trails where applicable, log destination protection, encryption, retention, access separation, validation, and alerting.
 
+Skill 4.4.3 still names CloudTrail Lake. The [availability notice](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html) closed it to new customers on May 31, 2026; existing use continues with restrictions. Organization-level event data stores support added member accounts, while account-level stores do not automatically cover new accounts. CloudTrail trails and other listed CloudTrail capabilities remain supported. AWS points to CloudWatch for migration; compare retention, selectors, access, query behavior and cost rather than assuming identical semantics. New learners can practice audit queries against a governed trail/log dataset without requiring new Lake access.
+
 Audit logging must avoid leaking secrets or sensitive rows. Record identity, action, target, result, time, source context, run/build/version IDs, and approval where appropriate. Separate operators who administer the pipeline from those who can alter audit evidence when the risk requires it.
 
 ### Govern sharing, privacy, and sovereignty
@@ -283,9 +316,19 @@ Stabilize by pausing publication or marking the data stale, preserve failed inpu
 
 ---
 
+## Worked data-engineering decisions
+
+These original examples use synthetic data and hypothetical rates. Ten local SQLite/arithmetic assertions checked their expected results; no AWS pipeline was deployed.
+
+1. **Join grain:** One order has two line items totaling $100 and three shipment events. Joining both child tables on order ID produces six rows and a misleading $300 item total. Aggregate each child to the intended order grain before joining, or report separate measures. `SUM(DISTINCT amount)` is not a general repair because legitimate items can have equal prices.
+2. **Replay after a crash:** Events A=$10 and B=$20 are written, then the worker crashes before checkpointing. Replaying both into an append-only sink produces $60. A transactionally enforced unique event ID or equivalent idempotent operation keeps the business total at $30. A changed event needs a version/correction policy; deduplication must not erase valid corrections.
+3. **Averages and missing data:** Values `[10, NULL, 20]` give `COUNT(*)=3`, `COUNT(value)=2` and `AVG(value)=15`. Filling the missing value with zero changes the mean to 10. Choose the missing-data policy from meaning, not convenience. A three-row window also differs from three calendar days when dates are missing.
+4. **Scan economics:** At a fictional $5 per TB scanned, reducing each query from 1 TB to 0.08 TB changes 100-query scan cost from $500 to $40. The 92% reduction depends on pruning and selected columns actually working. Include compaction/ETL, storage and request costs in the full comparison.
+5. **Quality gates count the right population:** A batch expects 10,000 unique valid records. It receives 9,900 rows, with 40 duplicate excess rows and 60 distinct invalid rows. Assuming those categories do not overlap, at most 9,800 valid unique records remain: 98% of the expected population. A 99% completeness gate fails even if the ingestion job succeeded.
+
 ## Hands-on labs
 
-Use a sandbox account, least privilege, budgets, synthetic data, and cleanup. Service availability and cost are **VERIFY CURRENT**.
+The eight labs below remain proposed; this review executed only the local worked-example checks. Use a sandbox account, least privilege, budgets, synthetic data, and cleanup. Service availability and cost are **VERIFY CURRENT**.
 
 ### Lab 1: Batch contract and catalog
 
@@ -368,6 +411,51 @@ These are independent prompts, not recalled or reconstructed exam items.
 
 ---
 
+## Answer explanations
+
+1. One arrival says nothing about other expected files, duplicates or late inputs. Use a manifest/control total and a completion contract.
+2. Choose a retained stream for independent consumers, replay and partition ordering; managed delivery emphasizes buffered delivery to supported destinations.
+3. A dominant key concentrates writes/reads in one partition even when other partitions have spare capacity; redesign keys without breaking ordering requirements.
+4. Checkpoint after durable processing. A crash between the target write and checkpoint can replay records, so enforce sink idempotency.
+5. Keep source log position, schema/code version, event keys, transaction boundaries and target commit state; reconcile before advancing recovery state.
+6. A manifest specifies exact objects/versions and expected totals, avoiding accidental inclusion of incomplete or unrelated prefix contents.
+7. Bookmarks track supported source progress, not every business key or target cleanup. Rewind/reset can repeat target writes.
+8. A few very long tasks or oversized partitions, uneven shuffle and spill suggest skew; more workers alone may leave the same hot task.
+9. Work exceeding the selected execution mode’s duration, memory, storage or workload constraints may need Glue, EMR, containers or a different decomposition.
+10. Check schema, grounded correctness, privacy, representative evaluation, model/prompt version, cost and fallback; self-reported confidence is insufficient.
+11. Make side effects idempotent or transactionally guarded, distinguish permanent failures and bound retries/backoff.
+12. EventBridge routes matching events; Step Functions represents execution state, ordering, branches, retries and recovery.
+13. Columnar reads, compression and pruning can reduce bytes scanned; verify the actual query and file layout.
+14. Tiny partitions/files increase metadata, planning, listing and request overhead and can reduce effective parallel work.
+15. Redshift can fit repeated governed warehouse workloads; Athena can fit flexible S3 queries with little infrastructure management. Measure concurrency, latency, scan cost and operations.
+16. Keys and indexes must serve known queries efficiently; relational normalization alone does not define an effective DynamoDB design.
+17. Concentrated traffic to a key creates a bottleneck. Caching, bounded sharding, aggregation or redesigned access can help if ordering and consistency remain correct.
+18. Manage engine/catalog compatibility, permissions, compaction, snapshot expiry, orphan cleanup, concurrent commits and recovery evidence.
+19. A new field can change interpretation or processing defaults; changing units, time zones or a field’s meaning can break consumers without a schema error.
+20. Technical metadata locates and parses data; business metadata supplies meaning, stewardship, intended use and quality expectations.
+21. Reproduction also needs source versions, transformations, parameters, run identities, intermediate steps and output snapshots.
+22. HNSW uses graph navigation with memory/build tradeoffs; IVF searches selected trained partitions. Tune and measure recall/latency for the actual engine/data.
+23. Embeddings measure similarity, not truth or entitlement. Enforce retrieval permissions, freshness, source quality and answer evaluation.
+24. Expiration removes eligible data under lifecycle rules; versioning retains object versions; Object Lock constrains deletion under configured retention/legal holds.
+25. TTL expiry is asynchronous; exact deadlines require a designed deletion/control process and evidence across copies.
+26. It does not prove complete, fresh, valid, reconciled, authorized or usable output.
+27. Compare the expected input manifest and source watermark with accepted input, job output and publication watermark; find the first boundary that diverges.
+28. Joining two child collections multiplies rows while remaining valid SQL. Aggregate to the intended grain before combining measures.
+29. Inspect file/object count and size, scanned bytes, planning time, task duration, shuffle volume, spill and partition skew.
+30. Choose from consequence, confidence and recoverability: block unsafe publication, quarantine isolatable bad rows, warn for tolerable variation with an owner.
+31. A rare defect can be absent from a sample. Use deterministic checks where possible and targeted/stratified sampling for high-risk populations.
+32. Record immutable inputs, bounds, code/schema versions, target isolation, deduplication/correction policy, reconciled totals and publication approval.
+33. An explicit deny, SCP/boundary/session/endpoint condition, Lake Formation grant, database permission or unavailable KMS key can still prevent access.
+34. IAM governs AWS actions, Lake Formation governs supported catalog/data access and KMS governs cryptographic use. The relevant checks must all succeed.
+35. Copies, history, logs and broad reader access can expose them. Use runtime roles and governed secret retrieval.
+36. Update the secret and database consistently, refresh consumers/pools, test access, preserve rollback and audit without logging credentials.
+37. Masking controls displayed values; tokenization substitutes controlled references; hashing supports one-way comparison with guessing risks; encryption supports authorized recovery.
+38. It identifies matching sensitive-data evidence in examined S3 content; it does not guarantee discovery completeness, lawful use or remediation of all copies.
+39. Separate log administration/access, protect destinations and keys, use appropriate retention/integrity controls and audit changes to the evidence system.
+40. A copy creates an independent asset that can outlive the original permission or deletion; assign owner and lifecycle controls to that copy.
+
+---
+
 ## Readiness checklist
 
 - [ ] I can map every published task in all four domains to an implementation or decision.
@@ -395,20 +483,20 @@ This is **not a complete list** and is not meant to be consumed in full. Pick on
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official exam guide, four domain pages, in-scope list, and v1.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html) | Free | 3–5 hours to map and gap-check |
-| [AWS Skill Builder DEA-C01 exam-prep plan](https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01) | Mix of free and subscription content | About 6 hours for the standard course; 13+ hours for enhanced prep, plus labs/practice; verify current catalog |
+| [AWS Skill Builder DEA-C01 exam-prep plan](https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01) | Mix of free and subscription content | Plan 15–25 hours selected plus labs; public shell did not verify current course durations |
 | [Pluralsight DEA-C01 path](https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01) | Subscription/trial terms vary | 17 listed hours: six courses, one lab, and practice exam; add 10–20 hours hands-on |
-| [O'Reilly AWS Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/aws-certified-data/9781098170066/) | Subscription or book purchase | 12 hours 52 minutes listed / 476 pages, plus 12–20 hours labs and review |
-| [O'Reilly/Sybex AWS Certified Data Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-data/9781394286584/) | Subscription or book purchase | 18 hours 22 minutes listed / 656 pages, plus practice; gap-check December 2025 additions |
-| [Udemy — Nikolai Schuler](https://www.udemy.com/course/aws-certified-data-engineer-associate-dea-c01/) | Paid; sales/subscription vary | 22 hours 17 minutes video plus 12–25 hours demos and review; updated August 2026 when checked |
-| [Coursera — Neal Davis and Wayde Gilchrist](https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep) | Subscription/audit terms vary | 11 modules and 10 assignments; plan 12–24 hours, recently updated April 2026 |
+| [O'Reilly AWS Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/aws-certified-data/9781098170066/) | Subscription or book purchase | Plan 25–40 hours with exercises; public body blocked, so page count/runtime not reverified |
+| [O'Reilly/Sybex AWS Certified Data Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-data/9781394286584/) | Subscription or book purchase | Plan 25–40 hours with practice; public body blocked; gap-check December 2025 additions |
+| [Udemy — Nikolai Schuler](https://www.udemy.com/course/aws-certified-data-engineer-associate-dea-c01/) | Paid; sales/subscription vary | Plan 30–45 hours with demos and review; public body blocked, runtime/date not reverified |
+| [Coursera — Neal Davis and Wayde Gilchrist](https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep) | Subscription/audit terms vary | 11 modules and 10 assignments; plan 12–24 hours, public page says recently updated; full lesson coverage not independently verified |
 | [LinkedIn Learning DEA-C01 Cert Prep](https://www.linkedin.com/learning/aws-certified-data-engineer-associate-dea-c01-cert-prep/the-dea-c01-exam) | Subscription/trial terms vary | Plan 4–8 hours video/review; verify full runtime and v1.1 coverage after sign-in |
 | [Tutorials Dojo DEA-C01 video course](https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/) | Paid | 16+ video hours, 10+ labs, and one 65-question simulator; add 8–16 hours practice |
 | [Tutorials Dojo DEA-C01 practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/) | Paid | 13 listed quizzes across randomized, timed, review, and domain modes; plan 8–14 hours with explanation review |
-| [Whizlabs DEA-C01 course, labs, and practice](https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/) | Paid/free sample | 134 videos and 38 labs listed; plan 25–45 hours selectively because a stable combined runtime was not exposed |
-| [Johnny Chivers DEA-C01 full course](https://www.youtube.com/watch?v=6G0bLDIcO7Y) | Free YouTube | 4 hours 45 minutes video plus 8–16 hours reproducing selected demos; older baseline, so close all v1.1 gaps |
+| [Whizlabs DEA-C01 course, labs, and practice](https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/) | Paid/free sample | Plan 25–45 hours selectively; public shell did not verify current video/lab counts |
+| [Johnny Chivers DEA-C01 full course](https://www.youtube.com/watch?v=6G0bLDIcO7Y) | Free YouTube | Plan 10–20 hours selectively; limited metadata did not verify runtime or viewed lessons; close all v1.1 gaps |
 | [AWS Analytics Lens](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html) | Free | 3–6 hours selected design review; adjacent architecture depth, not an exam course |
 
-Use official practice question sets, pretests, and practice exams through the current AWS Skill Builder plan when available. No exact current MeasureUp DEA-C01 product was independently verified, so none is inferred. Third-party questions should explain why options are right or wrong and cite documentation; reject any resource advertising recalled, leaked, or “actual” exam items.
+Use official practice question sets, pretests, and practice exams through the current AWS Skill Builder plan when available. No exact current MeasureUp DEA-C01 product was independently verified, so none is inferred. Tutorials Dojo’s public page advertises actual-exam feedback; avoid recalled material. Third-party questions should explain why options are right or wrong and cite documentation; reject any resource advertising recalled, leaked, or “actual” exam items.
 
 ### A practical 6–8 week route
 
@@ -433,6 +521,8 @@ Primary scope and status evidence:
 - [In-scope AWS services](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-in-scope-services.html)
 - [Version 1.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html)
 - [Live certification page](https://aws.amazon.com/certification/certified-data-engineer-associate/)
+
+The wider scope still names services with restricted new-customer access: [Discovery Service](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html) and [Snowball Edge](https://aws.amazon.com/snowball/faqs/) closed to new customers on November 7, 2025; [Kendra](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/) entered maintenance with new-customer closure July 30, 2026. These notices do not retire DEA-C01 or imply that every similarly branded feature has the same lifecycle. Verify eligibility before planning a lab.
 
 Implementation references used for deeper explanation:
 

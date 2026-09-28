@@ -4167,23 +4167,62 @@
       "notes": "Map 53 skills to the complete guide; add AI workload monitoring, composite-alarm limits, S3 Files synchronization, tool-purpose updates, four worked checks and five additional answers. See docs/research/2026-09-28-soa-c03-deep-review.md"
     },
     {
-      "id":"dea-c01-2026-09-01-source-validation",
-      "exam_code":"DEA-C01",
-      "guide_path":"guides/DEA-C01-aws-certified-data-engineer-associate.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/dea-c01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f",
-      "objective_coverage":[
-        {"objective_group":"Data Ingestion and Transformation","guide_sections":["Section 1","All integrated scenarios","Labs 1–4 and 8"]},
-        {"objective_group":"Data Store Management","guide_sections":["Section 2","Integrated scenarios 1–2","Labs 1, 3, and 5"]},
-        {"objective_group":"Data Operations and Support","guide_sections":["Section 3","All integrated scenarios","Labs 3–6 and 8"]},
-        {"objective_group":"Data Security and Governance","guide_sections":["Section 4","All integrated scenarios","Labs 7–8"]}
+      "id": "dea-c01-2026-09-28-source-validation",
+      "exam_code": "DEA-C01",
+      "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dea-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f",
+      "objective_coverage": [
+        {
+          "objective_group": "Data Ingestion and Transformation",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Store Management",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 1, 3, and 5"
+          ]
+        },
+        {
+          "objective_group": "Data Operations and Support",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Data Security and Governance",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":28,"reachable":25,"access_blocked":3,"missing_or_error":0},
-      "notes":"The December 12, 2025 version 1.1 DEA-C01 guide was reconciled with four detailed domains, the in-scope list, revision record and live certification page. The guide closes LLM, Iceberg, vector-index/vectorization, Bedrock knowledge-base, SageMaker Catalog/Unified Studio and service-scope additions and labels older training incomplete. Three scenarios, eight labs and 40 original checks cover ingestion/replay, transformation/orchestration, stores/models/catalog/lifecycle/schema, SQL/operations/quality and end-to-end security/governance. All 28 URLs are cataloged: 25 reachable and two O'Reilly books plus Udemy automation-blocked; none missing or broken. Volatile metadata is labeled and no recalled questions are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 38,
+        "reachable": 35,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Review 120 skills; add 40 answer explanations and five worked cases, fill programming/connection/locking gaps, explain managed tables and bookmark replay, and record Redshift and CloudTrail Lake lifecycle changes. See docs/research/2026-09-28-dea-c01-deep-review.md"
     },
     {
       "id": "dva-c02-2026-09-28-source-validation",
