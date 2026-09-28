@@ -1,0 +1,1807 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DVA-C02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DVA-C02-aws-certified-developer-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "53861cef27c7174ccc4b5dc8b2fe5558c2e54b5bffd43fa96fa80c380526f060",
+  "guide_after_sha256": "d79d30bed0e016abf4af79524f448127dd7ccf135e28804c6cae26150f13f3c0",
+  "prior_records": {
+    "exam": {
+      "code": "DVA-C02",
+      "level": "intermediate",
+      "vendor_id": "aws",
+      "title": "AWS Certified Developer - Associate",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+      "guide_path": "guides/DVA-C02-aws-certified-developer-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "retirement-announced",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; AWS targets developers with at least one year building and maintaining AWS applications. Practice one high-level language, SDK/API use, Lambda, API Gateway, events/messages/streams, DynamoDB, caching, identity/tokens, KMS/secrets, SAM/CloudFormation, testing, deployment strategies, observability, failure injection and measured optimization."
+    },
+    "review": {
+      "id": "dva-c02-2026-09-01-source-validation",
+      "exam_code": "DVA-C02",
+      "guide_path": "guides/DVA-C02-aws-certified-developer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dva-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c",
+      "objective_coverage": [
+        {
+          "objective_group": "Development with AWS Services",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deployment",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenario 2",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting and Optimization",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 3, 7, and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 21,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "The current version 2.1 DVA-C02 guide was reconciled with four weighted domains, technologies/concepts, service scope, revisions and the live exam page. The guide maps all added and removed scope and distinguishes the AI-assisted emerging list as possible unscored pretest content. Three scenarios, eight labs and 40 original checks cover resilient APIs/events/Lambda/data, security/tenancy, artifact/test/release/rollback and evidence-driven troubleshooting/optimization. All 25 URLs are cataloged: 21 reachable and two O'Reilly plus two Udemy pages automation-blocked; none missing or broken. Volatile metadata is labeled and no recalled questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "74ce6a021bb156a9715c9e63a2dcaee7d35fac1da0457264a15e2dfac78cc79f",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "6876f9d0c4088698699ad3e186fa3be81979b4dafaf1fe18ffdd64d770d28a7c",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "6acd5862c36d7d1d861afee4f1cf7e4f81f8ad45896e7c51cb496adabffb2adf",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "feb7d3de472a44dcb4b5afae25a4d321b3124333470de52a139d1c948691ff4c",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "66e3e2d840df5226d5ce04ac6b8b9db463651ec863fd7b3bfff27404e1b74232",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "777c467f378bf8a609f9fbbbbd6700653c4ebd170d911528bd3db54583aa319b",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "07d933a4f99b786710ad90bd43525995af999f7991c39773977306842099042a",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "7d482108600d8ad3ec79d15da42bfb9fd3fcdf134ac582d137a4f820d56eb58c",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "6c61c7365d9060c30762976e9139977ba47e3f0dd55e48c374b8a3137b8f5f5b",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "cab4df80a10b4a439f64fade544503a069c5fd9013350795d1abd908d1ee7882",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "30c6c89039ba3a65f591f4b86954cabc82a8a22add8294853a519e1b0d653ae3",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "d5806f7b5c7c6e2685d960a254609cbaa80937b81355513c15654205ea1c506e",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "f47f0143fd5ae2bca63e77a4ac038f05ac876d2eab75cd8360e1f19662a26016",
+      "guide_sections": "1 / Choose the interaction pattern; Build APIs and event contracts; Use Amazon Q Developer safely; Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "07c19b13a92116a5c4bf22f59f258c9148a3fc368dc05eb6c7f4bcf6245630cf",
+      "guide_sections": "1 / Develop and tune Lambda functions; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "acb048c0e981e720c3266ea690f140dbd6145826ddd5a28f7318954a6ee725b9",
+      "guide_sections": "1 / Develop and tune Lambda functions; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "15d16c205bf7b959069e7e7ce8cbc99f5b4e9efec62c967756bd6e552bfc60da",
+      "guide_sections": "1 / Develop and tune Lambda functions; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "92131f46854ed44fa5e74ca64754cf7ea5a4afe93c4b2d01418d09856cbf7f15",
+      "guide_sections": "1 / Develop and tune Lambda functions; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "dd5ded4199ec25cd983872c8d6c9a425458049992f4872ba074e032651b7b64f",
+      "guide_sections": "1 / Develop and tune Lambda functions; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "7a34fb732c49d62f11aa4d95072a276b9dcef4466adb71b822324e342c6d9772",
+      "guide_sections": "1 / Develop and tune Lambda functions; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "07409b26f844872fc36db9a6a75245f0e7eab32adc9ef0aee52f630bcd2f435d",
+      "guide_sections": "1 / Develop and tune Lambda functions; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "cf84dee062563fd93c33b1fc94870a8b89815582a2a1832214361da4fdc16aa7",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "bec7eac4d8851f5ad6d0e1ff82e8f5ec582bbbb8d9220b8e85b5ca802157f968",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "8edccdee990809d8e44fd3cbeac2d220e7a9bfa48b13e8c97ce8b0229ca717c6",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "26863dd394d989669a6cf94977e7112b6baba9ca6e6cfaf438d9b915446d9540",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "f1a6d34406594e2e49a7e57e42cb0acc816f4a677f78040221c8c70082ff6b50",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "3988df6c38049dfc84e1deb23e94b1b2c7340a6be105ff35be32759dc6c38c9c",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "7b0021bd3f3735a442b19a9471ada943f3b70345d7b95edaed7d5a4a10d9265f",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "f843922e2b3cf224214a41886001c9a641f82cd2d047d91a1e1a8237dc69cf61",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "10341c0c6eac54204b2e57509ed32415977e0b1e4fdc2e1f8ee1a97eb3934d14",
+      "guide_sections": "1 / Use data stores from access patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "0a5ec73ba3b43c2c61d7d5c1e0fa4c7d35596a95ab6e71a8eb5332e4994ba6ff",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "bed66e547f1ed68b34ce60f0e593696785d8ceffd17056ae098d703e00e3883b",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "b096588f9a8e767e4fd0812c47abf866b9a4e6cee5a8c7369c0d36e5e610a70b",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "2ea8520cee7247e9a4ca90e8a1334844012a465094f17ede36985ecc7be3a581",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "d6823b3b2acf2ab29049e7dd2c8041d9c7a5d8a21b5bf9917a6c9dc27586cc4a",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "0df4a4e76cc77f60ed00cf733e95f1e2c7ca2233ebf1ad2d49dd57bbd6610a8f",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "5a86fa1dfe7e9df404af3384a81c064a2d0347daf70cabee59c030b378f270bc",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "d8533b2fd7673c11392e5fb802be0cd1e52ba1b7d016f1dceb34e51ef75341f9",
+      "guide_sections": "2 / Authenticate and authorize deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "6f06cd0da286caec95035d3b86a397802672161a1079895480c67dd206d08abe",
+      "guide_sections": "2 / Encrypt data with usable key controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "398be0fffe3745fd0bd3a2dbe2cbad2b6cc6ab5a332145240a22054e5316091a",
+      "guide_sections": "2 / Encrypt data with usable key controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "67437f3b85a0af27c49f8122f6218d840482ce8d05fac5c48ea779298d8caa7b",
+      "guide_sections": "2 / Encrypt data with usable key controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "9ffa5df8420d89c8d728a0ee12bd6a712b6575db63437141e2387fb93d2d5eaa",
+      "guide_sections": "2 / Encrypt data with usable key controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "bab5ae1cf8a715bd15e72fea511626913e44a3710160a1e4841a4bcfa530f9bf",
+      "guide_sections": "2 / Encrypt data with usable key controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "4a1c1222aaa4cffe15b998e5437da2cca2d6b2cda33cd16fd41c419efba1402e",
+      "guide_sections": "2 / Encrypt data with usable key controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "52a3fb820f40e689d8bb043b5c6df988c7b253e70eaf3b4c46c0bd01bce1f93b",
+      "guide_sections": "2 / Encrypt data with usable key controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "9f10d0ff9fe15e756e2fb04f773b8273d24b0cd5e23c5ae3bd572463595f794f",
+      "guide_sections": "2 / Keep sensitive data out of code and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "edc7beee304b36f78c4b52353fc7a67a6a1ded53ce077bbb8a66e52b93f9641f",
+      "guide_sections": "2 / Keep sensitive data out of code and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "d787722e87447ac230acd1216537e97bead069e8924f6b3176a5b4520b54d6d7",
+      "guide_sections": "2 / Keep sensitive data out of code and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "f1bec4e2bb33ad8509722c9e8946a8680b36ae4d3207393dd0a72f88ad6221dd",
+      "guide_sections": "2 / Keep sensitive data out of code and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "c1ca6a58e964c17782e335381d39a5e5f6442ace551ff35cc6317da840c950f0",
+      "guide_sections": "2 / Keep sensitive data out of code and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "25ef53a39295bae02303113a5ac5d3f1df670d726a5f139df0c90e68b8b8e930",
+      "guide_sections": "2 / Keep sensitive data out of code and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "6c12d0134401a3be5e7d04fa9c347c416fcda9a7fe0f9aa8e875166d0bd6ad61",
+      "guide_sections": "3 / Build immutable, reproducible artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "19bbc58302781a8ce41562b17342100cec11efd22ef5b0ac8e533c4808d2b538",
+      "guide_sections": "3 / Build immutable, reproducible artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "3ed4a0f1079335fe0e27dab35bf589b42da9e15f6ef2cf997d943672f3bc9ddb",
+      "guide_sections": "3 / Build immutable, reproducible artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "20954cd66a65d193e2dc16b61c6673afb09e2c67723225c90daccbf8b73f2968",
+      "guide_sections": "3 / Build immutable, reproducible artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "473a7186aa652952cf20ff6a12b08b953a01f527695345c2752093e65a0b0ec8",
+      "guide_sections": "3 / Build immutable, reproducible artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "6744e0243f373c24751cee0a5139bd064897246d5e2d937c3411a858c7c5fb2c",
+      "guide_sections": "3 / Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "a76ee6963fa182af7904b7be3bfc0baab23a5fa85c68f7efec8b5e8c452c6af8",
+      "guide_sections": "3 / Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "dca9d987f07ce8752d940566422f661cdb0f3fe267bc1152ab7cf6a34ed61a5d",
+      "guide_sections": "3 / Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "0cc4457e6694979072217ae028eac704405d0f7573aee13323df584bc1ca4e10",
+      "guide_sections": "3 / Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "fb2679626283be0100082672ee4e10c43781f06d4793377815d3407d4e4992c2",
+      "guide_sections": "3 / Test contracts and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "74cc3a54897aa79f7d8a6ba15723272e8d4da74b798db5a1905b9038d7e7e1b2",
+      "guide_sections": "3 / Test contracts and failures; Use an existing pipeline safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "168ae308fd1ff854411aab831a7b2dad9342623b317e4433d6f663cf3b6b0776",
+      "guide_sections": "3 / Test contracts and failures; Use an existing pipeline safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "d130ffa11d23aa5d00e55416230ae220e41f7d57065f9f306ee15ff9fb6bfbe1",
+      "guide_sections": "3 / Test contracts and failures; Use an existing pipeline safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "626f22d5e1d4c3175c3819c7fbe3b1728d4188b521615d4e0b736e872e56a103",
+      "guide_sections": "3 / Test contracts and failures; Use an existing pipeline safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "af5bc50d502cc9ce571e58517f4f052cf4f94fe9fc9784217e40d9a1a321526c",
+      "guide_sections": "3 / Test contracts and failures; Use an existing pipeline safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "a8a8239d234dbf38c130585c75ec061e9c9575a817b6092014b945b8430b27a9",
+      "guide_sections": "3 / Test contracts and failures; Use an existing pipeline safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "60363a850dc3480c7d5e53a58b02b5d031ea6fb6b8a339a863ca6907650ef92a",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "8181c0ed7ee24f0388c414d14623bf465a6e8a1d4b871fbb113a3d8fee906e91",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "0810bcccb1061c87975338a7d9a238b847936e815d8ad04d574c91da5a2f5cc0",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "4f21a0b0f75d21e5e14997239585f7a6348ab1cc89c6ef7076ca0af276269aa8",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "1704a0f4ecfad1075199a2c381f517276e5f0dff2838d0ce502ef17cf7d310df",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "0a98719d0d964a02091e9179d19b85a62d7c05bdd095fc96cd3eed17556d109d",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "7a759c11dd31674576d46b1c1fceb44776f56ac620267caba9291b1a03e8e74d",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "f7be7dc01f805e8fac46299b60068e284d39a8b2e402d60a791c75219e38b45b",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "da2ed51f68e65908501ae4d49f6046c1b02e604e74bb752e7a33a8d10af70655",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "5e9f7ef53eeb31050511c32875317e50abce2460c84cbee218fd9187239bc4b9",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 11,
+      "objective_sha256": "6716e6d38800dba96cea1f8987f69d9a68191185cdd6d7df25f1ce2bc244e005",
+      "guide_sections": "3 / Use an existing pipeline safely; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "a2bf0c358dcc1ce82cd884d9e469f19769a8408d7f568df61e6a5ad7ff831cf6",
+      "guide_sections": "4 / Instrument an evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "ab4cc360b975e070489d73c7798f0c3200f3dda78bafd46069b8f08567fbcdc5",
+      "guide_sections": "4 / Instrument an evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "8aea185ba340cd313bf5ca361c1f412c757fed9a77af22f7ff84163e3c5ecd36",
+      "guide_sections": "4 / Instrument an evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "d7517b748010d137fc6c98b7ff16d999170ccd452ca4113d3765f94be100adcf",
+      "guide_sections": "4 / Instrument an evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "b4b20595f8d398cc8587faf2654292362f2b188559edada1743eb8813e58f88b",
+      "guide_sections": "4 / Instrument an evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "55ad4785e49d10970f9728e09d8378b9a75113c0ca195ef7652ee1c1703d90b2",
+      "guide_sections": "4 / Instrument an evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "3052b0cffff222653b8c9d5d9ed9581ae2bd5cc28fe0f6f98977e1f7d2fc3eeb",
+      "guide_sections": "4 / Instrument an evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "d83c79fdfbaa0b916099f5520a1e0f561f15b52353be0ee7b9e56aa75e496fa2",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "cb943c7c7fa4e8c2eb0258a9a07b89b884243316455f5239313ae94525dbd0f8",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "1678fc0446bb4f483e17f1f5a477a9f44bf4236e465e3036ae0e4b03d1e88b47",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "de8a81a28e10bd044a3b45acee2445c96d4c7bc5cea1e79ccb63a0120c2095b5",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "56c77cff6b8f00fe714230a0fb21c2822159dc722922431185ea2815cd4b34bf",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "b8dee1cfa64a8a29f63989e2fcfa1809bccf1cbebf36a20b715d71a52b7fe302",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "1cb6939eed8528b6e1e4592fa422f8af543a7075b68fc3124df45f677adc8c19",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "ccbb408a669185fd07c7f83320013300f79e1a5ab20732d66f0e4d331cd4d8a9",
+      "guide_sections": "4 / Instrument an evidence chain; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "64e9f537a3f135b3eb198927ef53f4d0ebab150ef2ec11db510fcc81aa8eb338",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "6af60fabe1a504f121e8b48f62e7c173fabb75154887c51c405cd38a311ca170",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "e8b4b5a36c39c8a3d5330bafb8df3b42df0cc0e321b9d0d0a71a7fff50bc3460",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "19be49e1b878f7fc9541c40a0c330f61737a87e9dc41f864c29c4512e95a3d7c",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "43d3dc0c016d68a922427a8f068fe71643126ae810582d1eea93ceaff863ec70",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "02c42ba68f344a7d68731a8e988d10f72afe91a00c3a8236330fc31879d4c9b6",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "c8eb2105b9104d31d4c1a6aa3cb012d0fe8e224ea422582c68a9bc01da9d7c8d",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 8,
+      "objective_sha256": "62a29af92cb340cc75de79e71a2a8ef184b0fc88114da2182d1121b61ee75d33",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 9,
+      "objective_sha256": "6f0ffdb3e28a58cc46516159a8d913dfe44c9c2e577e06095deb36bda85773bc",
+      "guide_sections": "4 / Optimize measured constraints; Worked developer decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DVA-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DVA-C02",
+        "title": "AWS Certified Developer - Associate",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+        "guide_path": "guides/DVA-C02-aws-certified-developer-associate.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\dva-c02-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\dva-c02-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c",
+        "previous_status_sha256": null,
+        "current_status_sha256": "d1dadb79db5a1a9d2eac24d312b545f9a5235c9006d3e7cbfe33122b5232398c",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Developer - Associate (DVA-C02)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Isolated candidate initially empty; changed flag alone is not an upstream delta. Accepted snapshots preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 35,
+    "reachable": 31,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-soa-c03-iam-evaluation",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "checked_at": "2026-09-28T20:30:09.319671+00:00",
+      "health": {
+        "id": "aws-soa-c03-iam-evaluation",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "content_type": "text/html",
+        "page_title": "Policy evaluation logic - AWS Identity and Access ManagementPolicy evaluation logic - AWS Identity and Access Management",
+        "canonical_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "duration_signals": [],
+        "signal_fingerprint": "74a00cd73b4e5530a5031ba6092c42c9523b74d0128e292dd4185ae20e2ba598",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "sha256": "c89f839064a26a0832b99613f691ef312edd02778f951ff24e577766cb822b2f",
+      "text_characters": 4151
+    },
+    {
+      "id": "aws-soa-c03-kms",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+      "checked_at": "2026-09-28T20:30:09.413966+00:00",
+      "health": {
+        "id": "aws-soa-c03-kms",
+        "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+        "content_type": "text/html",
+        "page_title": "AWS Key Management Service - AWS Key Management ServiceAWS Key Management Service - AWS Key Management Service",
+        "canonical_url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6a04b15e9997b51aeee7f6c0ee94e430b575db064b71601b379f85c3ef6ab489",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+      "sha256": "07358f157e84adc2521026c9848010a6ca71680063f1bcb79d079d2dbb459d44",
+      "text_characters": 2331
+    },
+    {
+      "id": "aws-dva-c02-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+      "checked_at": "2026-09-28T20:30:13.061907+00:00",
+      "health": {
+        "id": "aws-dva-c02-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+        "checked_at": "2026-09-28T20:30:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Developer - Associate (DVA-C02) - AWS Certified Developer - AssociateAWS Certified Developer - Associate (DVA-C02) - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "65d0de0a524c91bb8f18ba2eb272bcf9b225456b42b81eef02a006c561911182",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+      "sha256": "17217d2da3090b3c5996a06a6618efdbec1db888b7c767f73dca337f4f2444a9",
+      "text_characters": 8585
+    },
+    {
+      "id": "aws-dva-c02-domain-1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain1.html",
+      "checked_at": "2026-09-28T20:30:13.402205+00:00",
+      "health": {
+        "id": "aws-dva-c02-domain-1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain1.html",
+        "checked_at": "2026-09-28T20:30:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Development with AWS Services - AWS Certified Developer - AssociateContent Domain 1: Development with AWS Services - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e4dfc03230e56e0ad312274fd0807affb20cdcfdb6e51059f1367afa3894d8ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain1.html",
+      "sha256": "2c37e523f82ba7557c314d703e81b62727c5b844541809a434fd0f6f3fd272af",
+      "text_characters": 3719
+    },
+    {
+      "id": "aws-dva-c02-domain-2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain2.html",
+      "checked_at": "2026-09-28T20:30:13.706968+00:00",
+      "health": {
+        "id": "aws-dva-c02-domain-2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain2.html",
+        "checked_at": "2026-09-28T20:30:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Security - AWS Certified Developer - AssociateContent Domain 2: Security - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "06a2312157042c640f3f8c3e3527656b9078ee722f7314e34d997ba96dbd9a20",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain2.html",
+      "sha256": "4c72ff28765bbaede2f70c17b159e001c2ee4520f22956c054a16b5296924ca9",
+      "text_characters": 2686
+    },
+    {
+      "id": "aws-dva-c02-domain-3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain3.html",
+      "checked_at": "2026-09-28T20:30:13.707879+00:00",
+      "health": {
+        "id": "aws-dva-c02-domain-3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain3.html",
+        "checked_at": "2026-09-28T20:30:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Deployment - AWS Certified Developer - AssociateContent Domain 3: Deployment - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8b04a8de4a67c35366fa71b84023abbb7a8319c3ea4234df078e32dcd11ca4a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain3.html",
+      "sha256": "a92d1ac8baa560b5bd17f8815f533ddab0978804f90dccbf1eb8f4813428ff35",
+      "text_characters": 4075
+    },
+    {
+      "id": "aws-dva-c02-domain-4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain4.html",
+      "checked_at": "2026-09-28T20:30:14.003840+00:00",
+      "health": {
+        "id": "aws-dva-c02-domain-4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain4.html",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Troubleshooting and Optimization - AWS Certified Developer - AssociateContent Domain 4: Troubleshooting and Optimization - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3fc02ac094bbc498bd867b9bcbf39ad391db3b51119f1adbd8630c691a74f74a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain4.html",
+      "sha256": "f3425c187771e79f70e32fa4d785e882853652a412e2b51c86e811bb1809ca6f",
+      "text_characters": 2795
+    },
+    {
+      "id": "aws-dva-c02-technologies",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-technologies-concepts.html",
+      "checked_at": "2026-09-28T20:30:14.020574+00:00",
+      "health": {
+        "id": "aws-dva-c02-technologies",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-technologies-concepts.html",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-technologies-concepts.html",
+        "content_type": "text/html",
+        "page_title": "Technologies and Concepts - AWS Certified Developer - AssociateTechnologies and Concepts - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-technologies-concepts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "26a32ababec01c35d44d37da43e86023af63ecaec248dc35679eccd4a07d5475",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-technologies-concepts.html",
+      "sha256": "e241e0009f80e6e7e967afa8d91a0f76fa0a0bf2f3ecc54d5fa60721d01a1d37",
+      "text_characters": 1167
+    },
+    {
+      "id": "aws-dva-c02-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:14.282709+00:00",
+      "health": {
+        "id": "aws-dva-c02-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Developer - AssociateIn-Scope AWS Services - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9f3b074077dc37394381243403264b3a7084ea26992848816ae7d92d76de16eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-in-scope-services.html",
+      "sha256": "132aa063386fbb4ec36884d8c8d7a2ec8f551121366076e8440e5fb9493c3cb3",
+      "text_characters": 2521
+    },
+    {
+      "id": "aws-dva-c02-revisions",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html",
+      "checked_at": "2026-09-28T20:30:14.306549+00:00",
+      "health": {
+        "id": "aws-dva-c02-revisions",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html",
+        "content_type": "text/html",
+        "page_title": "Revisions - AWS Certified Developer - AssociateRevisions - AWS Certified Developer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "55150b362f1e16173702c4e82e3ebb4136671c5274de20fc4d7bdf6c8cd657a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html",
+      "sha256": "2ee00135a928b418efcc351b7c5d20f310248ad39f36ea23e324f80d359ba0b5",
+      "text_characters": 3796
+    },
+    {
+      "id": "aws-dva-c02-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-developer-associate/",
+      "checked_at": "2026-09-28T20:30:14.560840+00:00",
+      "health": {
+        "id": "aws-dva-c02-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-developer-associate/",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-developer-associate/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-developer-associate",
+        "canonical_url": "https://aws.amazon.com/certification/certified-developer-associate/",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "85580a60af06c5a0e05d388dd275c358c2b3c3066ab48c6eaef7272273880c64",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-developer-associate/",
+      "sha256": "4233fddaa18dd2d1f06d1a3755df865d1cf3bf4d15946010cdb996890056d1d1",
+      "text_characters": 6588
+    },
+    {
+      "id": "aws-dva-c02-lambda-best-practices",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html",
+      "checked_at": "2026-09-28T20:30:14.617018+00:00",
+      "health": {
+        "id": "aws-dva-c02-lambda-best-practices",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html",
+        "content_type": "text/html",
+        "page_title": "Best practices for working with AWS Lambda functions - AWS LambdaBest practices for working with AWS Lambda functions - AWS Lambda",
+        "canonical_url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html",
+        "duration_signals": [
+          "24 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "baf9584668da0c77778a4707f0ad3df1f7e85d294d9b9426298ded7f978c3f86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html",
+      "sha256": "92d563f3bea835b660f30daa3e7d66e1562162e1c64838d3f99bf13c32f54f4f",
+      "text_characters": 13920
+    },
+    {
+      "id": "aws-dva-c02-eventbridge",
+      "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+      "checked_at": "2026-09-28T20:30:14.906638+00:00",
+      "health": {
+        "id": "aws-dva-c02-eventbridge",
+        "url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+        "content_type": "text/html",
+        "page_title": "What Is Amazon EventBridge? - Amazon EventBridgeWhat Is Amazon EventBridge? - Amazon EventBridge",
+        "canonical_url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6a56b9b4bb13b10085aee2f3578a18449734d5264babc6b90eb60be609f16ec0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+      "sha256": "e1ca5cd7a8ffe54a7c752b94146f2589d6df376cd3699d0bedb6aaca1bed5542",
+      "text_characters": 3531
+    },
+    {
+      "id": "aws-dva-c02-dynamodb",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+      "checked_at": "2026-09-28T20:30:14.956575+00:00",
+      "health": {
+        "id": "aws-dva-c02-dynamodb",
+        "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+        "checked_at": "2026-09-28T20:30:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon DynamoDB? - Amazon DynamoDBWhat is Amazon DynamoDB? - Amazon DynamoDB",
+        "canonical_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0beb2cc8488ece049645ac35d5db13fffa271445e2c8bb87e1b8bd2b9ace4401",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+      "sha256": "6f8e7f11b88d918b911c78978ddecc9e464f9a601e5935cd6f1eba1bd4229c72",
+      "text_characters": 17759
+    },
+    {
+      "id": "aws-dva-c02-secrets-manager",
+      "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+      "checked_at": "2026-09-28T20:30:15.123784+00:00",
+      "health": {
+        "id": "aws-dva-c02-secrets-manager",
+        "url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+        "content_type": "text/html",
+        "page_title": "What is AWS Secrets Manager? - AWS Secrets ManagerWhat is AWS Secrets Manager? - AWS Secrets Manager",
+        "canonical_url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+        "duration_signals": [],
+        "signal_fingerprint": "53918a07ffecea9177f076a5b3632fc669ea65fe5fff61602c4eb6dea06cd048",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+      "sha256": "cc5f063d80825d59ebd305ac9a0e00137f9877a814f9aca75b9ba10db9e5f9f5",
+      "text_characters": 4407
+    },
+    {
+      "id": "aws-dva-c02-sam",
+      "url": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html",
+      "checked_at": "2026-09-28T20:30:15.192609+00:00",
+      "health": {
+        "id": "aws-dva-c02-sam",
+        "url": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html",
+        "content_type": "text/html",
+        "page_title": "What is the AWS Serverless Application Model (AWS SAM)? - AWS Serverless Application ModelWhat is the AWS Serverless Application Model (AWS SAM)? - AWS Serverless Application Model",
+        "canonical_url": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a9609de7b5a651de029b28521cdd312ea9a5088ce552e71460e9019256480490",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html",
+      "sha256": "b49ed667565041dee9311fdb8c97267593c32873e66c04b798528cf471f63441",
+      "text_characters": 4866
+    },
+    {
+      "id": "aws-dva-c02-skill-builder",
+      "url": "https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02",
+      "checked_at": "2026-09-28T20:30:15.313533+00:00",
+      "health": {
+        "id": "aws-dva-c02-skill-builder",
+        "url": "https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02",
+        "duration_signals": [],
+        "signal_fingerprint": "26eef447633dc0802e2efd9e722970df445387b49d13c376dd1731d562ef18ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-dva-c02-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01",
+      "checked_at": "2026-09-28T20:30:15.483315+00:00",
+      "health": {
+        "id": "aws-dva-c02-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Developer - Associate (DVA-C02)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01",
+        "duration_signals": [
+          "34 Hours"
+        ],
+        "signal_fingerprint": "075378c0ab70cb7642b2837bb6ff03a37d10a8d1146d9c422749e5799804efd6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01",
+      "sha256": "691c3049e3d1a1f0216641de3c22a95bdd08465157e51d13b6e9ec5f122182d1",
+      "text_characters": 5977
+    },
+    {
+      "id": "aws-dva-c02-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/",
+      "checked_at": "2026-09-28T20:30:15.520578+00:00",
+      "health": {
+        "id": "aws-dva-c02-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dva-c02-oreilly-course",
+      "url": "https://www.oreilly.com/videos/aws-certified-developer/0642572115197/",
+      "checked_at": "2026-09-28T20:30:15.602537+00:00",
+      "health": {
+        "id": "aws-dva-c02-oreilly-course",
+        "url": "https://www.oreilly.com/videos/aws-certified-developer/0642572115197/",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/aws-certified-developer/0642572115197/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dva-c02-udemy-neal-davis",
+      "url": "https://www.udemy.com/course/aws-certified-developer-associate-exam-training/",
+      "checked_at": "2026-09-28T20:30:15.615158+00:00",
+      "health": {
+        "id": "aws-dva-c02-udemy-neal-davis",
+        "url": "https://www.udemy.com/course/aws-certified-developer-associate-exam-training/",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-developer-associate-exam-training/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dva-c02-udemy-maarek",
+      "url": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
+      "checked_at": "2026-09-28T20:30:15.688163+00:00",
+      "health": {
+        "id": "aws-dva-c02-udemy-maarek",
+        "url": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dva-c02-tutorials-dojo-video",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/",
+      "checked_at": "2026-09-28T20:30:15.693997+00:00",
+      "health": {
+        "id": "aws-dva-c02-tutorials-dojo-video",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Developer Associate DVA-C02 [Video Course]",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "33651569f3f188e6d6b28e4be4f44136183be5f4b980c9d55fd877ced4b3dcdd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/",
+      "sha256": "e90b7f1edee6c1d1ca0a9b797f7bf1e27d06acb45746465c6cdbacdf3ad850f5",
+      "text_characters": 17094
+    },
+    {
+      "id": "aws-dva-c02-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/",
+      "checked_at": "2026-09-28T20:30:15.758602+00:00",
+      "health": {
+        "id": "aws-dva-c02-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/",
+        "checked_at": "2026-09-28T20:30:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Developer Associate DVA-C02 Practice Exams 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "72 hours"
+        ],
+        "signal_fingerprint": "8db0a50453421f06b982cf7921b530f6e7b6a46c7e39787b3375a0cc165c6656",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/",
+      "sha256": "e6a20006f461afd0a9a24f6c5cb52cc111c5908c1d34f0aba9cd0dd46acc12c3",
+      "text_characters": 11380
+    },
+    {
+      "id": "aws-dva-c02-whizlabs",
+      "url": "https://www.whizlabs.com/aws-developer-associate/",
+      "checked_at": "2026-09-28T20:30:16.312784+00:00",
+      "health": {
+        "id": "aws-dva-c02-whizlabs",
+        "url": "https://www.whizlabs.com/aws-developer-associate/",
+        "checked_at": "2026-09-28T20:30:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-developer-associate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "DVA-C02: AWS Certified Developer - Associate Course",
+        "canonical_url": "https://www.whizlabs.com/aws-developer-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "deeb97aecf3652ae704a0c831eafb00e553bd403d78d3e065708b71478275111",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-developer-associate/",
+      "sha256": "79b2a040b6f10b72101b98de406f0aa40f328ed3ffe315b9ed151f61d5cec1a9",
+      "text_characters": 51
+    },
+    {
+      "id": "mla-c01-september-2026-certification-update",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "checked_at": "2026-09-28T20:30:34.460868+00:00",
+      "health": {
+        "id": "mla-c01-september-2026-certification-update",
+        "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Certification updates from AWS Training and Certification: September 2026 | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "duration_signals": [
+          "130 minutes",
+          "170 minutes",
+          "180 minutes"
+        ],
+        "signal_fingerprint": "49d10389204257dd4d405c49fbdd4efc9b65f0e9e35cee7869c7b6d3e7226d50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "sha256": "bf28fbd3005beaffb0866066a54b6f70b9ba450d3d917ffb3a68b20694591aa0",
+      "text_characters": 15179
+    },
+    {
+      "id": "aws-dva-sqs-errors",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html",
+      "checked_at": "2026-09-28T20:55:32.867432+00:00",
+      "health": {
+        "id": "aws-dva-sqs-errors",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html",
+        "checked_at": "2026-09-28T20:55:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html",
+        "content_type": "text/html",
+        "page_title": "Handling errors for an SQS event source in Lambda - AWS LambdaHandling errors for an SQS event source in Lambda - AWS Lambda",
+        "canonical_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8489fce8ab3497b13f5b85321226c7d1fd4d179d78eb5697dd36ffc59a8792dd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html",
+      "sha256": "c889d3a145065c87e431351846fb30ca477f608c54024cf92adb82d24dd784bf",
+      "text_characters": 17137
+    },
+    {
+      "id": "aws-dva-stream-batch",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+      "checked_at": "2026-09-28T20:55:32.874095+00:00",
+      "health": {
+        "id": "aws-dva-stream-batch",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+        "checked_at": "2026-09-28T20:55:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+        "content_type": "text/html",
+        "page_title": "Configuring partial batch response with Kinesis Data Streams and Lambda - AWS LambdaConfiguring partial batch response with Kinesis Data Streams and Lambda - AWS Lambda",
+        "canonical_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+        "duration_signals": [],
+        "signal_fingerprint": "db3f2a4ca662746e21deaba36b8ececed7d38a4f4ccc5e4da235a78867a49565",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+      "sha256": "eea7da0e05fd0de6d1e053cbcfd8579215dcda663d81d64bda13ec5526179bbe",
+      "text_characters": 21802
+    },
+    {
+      "id": "aws-dva-outbox",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "checked_at": "2026-09-28T20:55:32.878498+00:00",
+      "health": {
+        "id": "aws-dva-outbox",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+        "checked_at": "2026-09-28T20:55:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+        "content_type": "text/html",
+        "page_title": "Transactional outbox pattern - AWS Prescriptive GuidanceTransactional outbox pattern - AWS Prescriptive Guidance",
+        "canonical_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fcdd088beba5984d1851f255bb81a2e4d572a786b5c4949bcca69da1b785bb32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "sha256": "8444f45302b4af60a33ae465c2fac9a48190a915a5c2b1f893692799b6546d7f",
+      "text_characters": 11456
+    },
+    {
+      "id": "aws-dva-long-timeout-blog",
+      "url": "https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/",
+      "checked_at": "2026-09-28T20:55:32.882822+00:00",
+      "health": {
+        "id": "aws-dva-long-timeout-blog",
+        "url": "https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/",
+        "checked_at": "2026-09-28T20:55:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Announcing 90-minute function timeout on AWS Lambda Managed Instances | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/",
+        "duration_signals": [
+          "15 minutes",
+          "30 minutes",
+          "5 minutes",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "4607d4590134c10f2a9be5515c6139602362228ff2b21ab39f6ff85abe9f13bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/",
+      "sha256": "42ac03a4e749757a92a6e17aadff839f3cb93e996f0a651b16bf537a9d4a79de",
+      "text_characters": 11400
+    },
+    {
+      "id": "aws-dva-idempotency-blog",
+      "url": "https://aws.amazon.com/blogs/compute/implementing-idempotent-aws-lambda-functions-with-powertools-for-aws-lambda-typescript/",
+      "checked_at": "2026-09-28T20:55:35.547834+00:00",
+      "health": {
+        "id": "aws-dva-idempotency-blog",
+        "url": "https://aws.amazon.com/blogs/compute/implementing-idempotent-aws-lambda-functions-with-powertools-for-aws-lambda-typescript/",
+        "checked_at": "2026-09-28T20:55:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/compute/implementing-idempotent-aws-lambda-functions-with-powertools-for-aws-lambda-typescript/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Implementing idempotent AWS Lambda functions with Powertools for AWS Lambda (TypeScript) | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/compute/implementing-idempotent-aws-lambda-functions-with-powertools-for-aws-lambda-typescript/",
+        "duration_signals": [],
+        "signal_fingerprint": "6d7415d0c750d194139ef2f6aec12d770e5fcbc7467fbc096ff84ebf14abd82f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/compute/implementing-idempotent-aws-lambda-functions-with-powertools-for-aws-lambda-typescript/",
+      "sha256": "88b8e3fe3e3d5449aa4bd25df1b5eb02a2c8f40a81637e4c04d596c0814cb926",
+      "text_characters": 12844
+    },
+    {
+      "id": "aws-dva-xray-migration",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+      "checked_at": "2026-09-28T20:55:35.550233+00:00",
+      "health": {
+        "id": "aws-dva-xray-migration",
+        "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "checked_at": "2026-09-28T20:55:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "content_type": "text/html",
+        "page_title": "Migrating from X-Ray instrumentation to OpenTelemetry instrumentation - AWS X-RayMigrating from X-Ray instrumentation to OpenTelemetry instrumentation - AWS X-Ray",
+        "canonical_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e0f1acffa5ad7eb2e4b6356f1ef1db1b4f1f62af140f3cc88bfa3d21b69339c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+      "sha256": "362e1f7c83acaa267c80fe27cb49b1386253ac2c2a4768d0eaae81ece8bc09b6",
+      "text_characters": 25757
+    },
+    {
+      "id": "aws-dva-lmi-limits",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-best-practices.html",
+      "checked_at": "2026-09-28T20:57:09.282412+00:00",
+      "health": {
+        "id": "aws-dva-lmi-limits",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-best-practices.html",
+        "checked_at": "2026-09-28T20:57:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-best-practices.html",
+        "content_type": "text/html",
+        "page_title": "Best practices for Lambda Managed Instances - AWS LambdaBest practices for Lambda Managed Instances - AWS Lambda",
+        "canonical_url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-best-practices.html",
+        "duration_signals": [
+          "15 minutes",
+          "5 minutes",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "cda501f85c6533018a15a35d4f6641755fb12b8b3afe5b7db45122ebcc2608f6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-best-practices.html",
+      "sha256": "4280ddcabb70da19ed69c15b289ec67aef8350a7935380030277653a2372cddf",
+      "text_characters": 9777
+    },
+    {
+      "id": "aws-dva-xray-timeline",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "checked_at": "2026-09-28T20:57:09.283161+00:00",
+      "health": {
+        "id": "aws-dva-xray-timeline",
+        "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "checked_at": "2026-09-28T20:57:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "content_type": "text/html",
+        "page_title": "X-Ray SDK and Daemon Support timeline - AWS X-RayX-Ray SDK and Daemon Support timeline - AWS X-Ray",
+        "canonical_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "duration_signals": [],
+        "signal_fingerprint": "680e39bf30ee21069c27902d8d0f0c426237913541f9b787e9592489339f0864",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "sha256": "ac6dabcdd43d67893c0b594749c07946704e3a1ac1bdafede17836465a914644",
+      "text_characters": 1425
+    },
+    {
+      "id": "aws-dva-sqs-configuration",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html",
+      "checked_at": "2026-09-28T20:57:09.283658+00:00",
+      "health": {
+        "id": "aws-dva-sqs-configuration",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html",
+        "checked_at": "2026-09-28T20:57:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html",
+        "content_type": "text/html",
+        "page_title": "Creating and configuring an Amazon SQS event source mapping - AWS LambdaCreating and configuring an Amazon SQS event source mapping - AWS Lambda",
+        "canonical_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ecb15df8b0f29d704e84c7f5225af440f1781b69a7fd9a95f7d6ca41bd9e20ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html",
+      "sha256": "b0176db88a44b256d66d8256c44699dfdfa7f6e70452b0e10d8af205d5f70f9e",
+      "text_characters": 8583
+    },
+    {
+      "id": "aws-dva-send-batch",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html",
+      "checked_at": "2026-09-28T20:57:09.284102+00:00",
+      "health": {
+        "id": "aws-dva-send-batch",
+        "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html",
+        "checked_at": "2026-09-28T20:57:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html",
+        "content_type": "text/html",
+        "page_title": "SendMessageBatch - Amazon Simple Queue ServiceSendMessageBatch - Amazon Simple Queue Service",
+        "canonical_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html",
+        "duration_signals": [
+          "2 minutes"
+        ],
+        "signal_fingerprint": "ebbb56e69db629c8ddd37dae0671f67939e3ca1fec0d22ac80cff7a0692762d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html",
+      "sha256": "a6084199430e005d05f6549607ae76c1f4c3bf7387d3f9b3fa9661762465e3b5",
+      "text_characters": 11747
+    }
+  ],
+  "added_source_ids": [
+    "aws-dva-sqs-errors",
+    "aws-dva-stream-batch",
+    "aws-dva-outbox",
+    "aws-dva-long-timeout-blog",
+    "aws-dva-idempotency-blog",
+    "aws-dva-xray-migration",
+    "aws-dva-lmi-limits",
+    "aws-dva-xray-timeline",
+    "aws-dva-sqs-configuration",
+    "aws-dva-send-batch"
+  ],
+  "findings": [
+    {
+      "id": "dvac02-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "C02 last-delivery conflict persists",
+      "url": "https://aws.amazon.com/certification/certified-developer-associate/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DVA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Credential page December 1 versus September announcement November 30.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "dvac02-deep-2",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Order example can lose an event after database commit",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DVA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Separate state write and event publish are not atomic.",
+      "recommendation": "Use atomic state/outbox plus durable relay and consumer idempotency; add failure-injection lab.",
+      "disposition": "applied",
+      "source_id": "aws-dva-outbox",
+      "resolution": "Use atomic state/outbox plus durable relay and consumer idempotency; add failure-injection lab."
+    },
+    {
+      "id": "dvac02-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Partial batch retries differ by event source",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DVA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Kinesis retries from lowest failed checkpoint; standard SQS identifies failed messages; FIFO reports unprocessed records too.",
+      "recommendation": "Add source-specific table-equivalent explanation and worked retry sets.",
+      "disposition": "applied",
+      "source_id": "aws-dva-stream-batch",
+      "resolution": "Add source-specific table-equivalent explanation and worked retry sets."
+    },
+    {
+      "id": "dvac02-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "X-Ray SDK/daemon maintenance needs a learning update",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DVA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current timeline says maintenance since February 25, 2026 and no specified end date.",
+      "recommendation": "Add maintenance boundary and OpenTelemetry migration reference without implying service retirement.",
+      "disposition": "applied",
+      "source_id": "aws-dva-xray-timeline",
+      "resolution": "Add maintenance boundary and OpenTelemetry migration reference without implying service retirement."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-dva-idempotency-blog",
+      "published_on": "2023-09-19",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Public article body and examples.",
+      "value": "Stable keys, in-progress records and expiration.",
+      "limits": "Old code not run; wrapper does not atomically commit remote payments and local state."
+    },
+    {
+      "source_id": "aws-dva-long-timeout-blog",
+      "published_on": "2026-09-09",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Announcement, activation, durable and invocation considerations.",
+      "value": "Execution-mode-specific limits.",
+      "limits": "Conflicting synchronous wording and overbroad stream retry language are not adopted; selected documentation governs."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "10 arithmetic and expected-retry-set assertions"
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Official announcement says November 30 for last C02 delivery; credential page says December 1. Conflict unresolved. C03 objectives are announced for October 27.",
+    "Paid lessons and live AWS labs not executed; provider access blocks/shells limit verification.",
+    "Same-context AI review; independent human review pending.",
+    "AWS broad-domain snapshots do not cover every detailed skill or lifecycle notice.",
+    "Lambda announcement and Managed Instances guidance contain overbroad partial-retry wording; source-specific SQS/Kinesis documentation governs the learner explanation."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

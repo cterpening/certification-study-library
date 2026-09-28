@@ -4,6 +4,143 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-dvac02-deep-review",
+      "title": "DVA-C02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DVA-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "DVA-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/DVA-C02-aws-certified-developer-associate.md",
+          "baseline_sha256": "8017456275790b53848c9dd490f63803e9281e144acf4c51acaefeb6437a7548",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read outbox design and selected examples, SQS/Kinesis retry contracts, batch API response caveat, Managed Instances limits and X-Ray maintenance/migration overview."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Checked September certification announcement and September 9 Lambda update; distinguish announcement context from source-specific behavior."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Refreshed public resource evidence and removed unverified runtimes/update claims; no paid-content audit."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Fix order dual-write gap; differentiate retry sets, add 40 answers and four worked decisions; qualify source contradictions."
+            },
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "All 101 skills, technologies, in-scope list and revisions read. Current broad outline unchanged; final delivery date conflicts remain."
+            }
+          },
+          "findings": [
+            {
+              "id": "dvac02-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "C02 last-delivery conflict persists",
+              "url": "https://aws.amazon.com/certification/certified-developer-associate/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DVA-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Credential page December 1 versus September announcement November 30.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "dvac02-deep-2",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Order example can lose an event after database commit",
+              "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DVA-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Separate state write and event publish are not atomic.",
+              "recommendation": "Use atomic state/outbox plus durable relay and consumer idempotency; add failure-injection lab.",
+              "disposition": "applied",
+              "source_id": "aws-dva-outbox",
+              "resolution": "Use atomic state/outbox plus durable relay and consumer idempotency; add failure-injection lab."
+            },
+            {
+              "id": "dvac02-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Partial batch retries differ by event source",
+              "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DVA-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Kinesis retries from lowest failed checkpoint; standard SQS identifies failed messages; FIFO reports unprocessed records too.",
+              "recommendation": "Add source-specific table-equivalent explanation and worked retry sets.",
+              "disposition": "applied",
+              "source_id": "aws-dva-stream-batch",
+              "resolution": "Add source-specific table-equivalent explanation and worked retry sets."
+            },
+            {
+              "id": "dvac02-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "X-Ray SDK/daemon maintenance needs a learning update",
+              "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DVA-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current timeline says maintenance since February 25, 2026 and no specified end date.",
+              "recommendation": "Add maintenance boundary and OpenTelemetry migration reference without implying service retirement.",
+              "disposition": "applied",
+              "source_id": "aws-dva-xray-timeline",
+              "resolution": "Add maintenance boundary and OpenTelemetry migration reference without implying service retirement."
+            }
+          ],
+          "notes": "Review all 101 skills, repair the order-event dual-write gap, distinguish SQS/FIFO/Kinesis retry behavior, add 40 answer explanations and four worked decisions, and document X-Ray SDK maintenance. Final C02 delivery dates still conflict. Same-context AI review; human review pending. See docs/research/2026-09-28-dva-c02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 3,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-aibc01-deep-review",
       "title": "AIB-C01 complete guide and learning-content review",
       "rubric_version": 1,

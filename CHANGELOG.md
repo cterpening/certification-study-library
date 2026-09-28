@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: review all 101 [DVA-C02 skills](docs/research/2026-09-28-dva-c02-deep-review.md), repair order-event reliability, distinguish partial retries, add 40 answers and four worked decisions, and flag X-Ray SDK maintenance. C02 delivery-date conflict remains.
+
 - September 28, 2026: review all 58 [AIB-C01 skills](docs/research/2026-09-28-aib-c01-deep-review.md), add four worked business cases and 40 answered checks, flag historical CAF-AI guidance and assess practitioner articles. Beta-duration wording remains unresolved.
 
 - September 28, 2026: review all 107 [MLA-C02 skills](docs/research/2026-09-28-mla-c02-deep-review.md), add five examples and 42 answers, refresh credential/service/catalog guidance and evaluate two useful AWS articles. GA-date disagreement remains open.

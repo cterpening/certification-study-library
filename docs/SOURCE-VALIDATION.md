@@ -1022,6 +1022,8 @@ The review reconciles the December 12, 2025 version 1.1 DEA-C01 guide with its f
 
 ## DVA-C02 coverage record
 
+The September 28 [deep review](research/2026-09-28-dva-c02-deep-review.md) maps 101 detailed objectives. Review all 101 skills, repair the order-event dual-write gap, distinguish SQS/FIFO/Kinesis retry behavior, add 40 answer explanations and four worked decisions, and document X-Ray SDK maintenance. Final C02 delivery dates still conflict. Current guide citations: 35 registered, 31 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Development with AWS Services | Section 1, all integrated scenarios, and Labs 1–3 and 8 |

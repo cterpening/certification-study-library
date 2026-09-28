@@ -2371,15 +2371,33 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 ### AWS Certified Developer - Associate (DVA-C02)
 
-- Official route: [DVA-C02 certification page](https://aws.amazon.com/certification/certified-developer-associate/), [current guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html), [version 2.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html), and [Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02) (**15–30 hours selected plus labs/practice**); keep four scored domains separate from the explicitly unscored emerging pretest section
-- Broad structured path: [Pluralsight DVA-C02](https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01) (**34 listed hours**, 12 courses, five labs and practice exam)
-- Detailed reference: [O'Reilly/Sybex AWS Certified Developer Study Guide, 2nd Edition](https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/) (**20 hours 39 minutes / 800 pages**, plus labs; January 2025)
-- Compact current review: [O'Reilly DVA-C02 In-Depth Practice and Certification Prep](https://www.oreilly.com/videos/aws-certified-developer/0642572115197/) (**3 hours 15 minutes plus 10–20 hours labs**; June 2025)
-- Current hands-on routes: [Udemy/Neal Davis](https://www.udemy.com/course/aws-certified-developer-associate-exam-training/) (**17 hours 12 minutes plus labs/review**) or [Udemy/Stéphane Maarek](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/) (**20–35 hours estimated including labs/practice**); both showed August 2026 updates, but verify exact current runtime and emerging-topic coverage
-- Course/practice route: [Tutorials Dojo video](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/) (**about 25–45 hours**, including 11+ video hours, 10+ labs and 17 practice quizzes)
-- Alternate lab/practice route: [Whizlabs DVA-C02](https://www.whizlabs.com/aws-developer-associate/) (**20–40 hours selective planning estimate**); verify live counts and current revision coverage after page/account access
+Resource details from the [DVA-C02 guide](../guides/DVA-C02-aws-certified-developer-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Build one authenticated, event-driven application; force retry, tenant, deployment and observability failures; and use legitimate practice only to direct remediation. No exact current MeasureUp DVA-C02 product was independently verified.
+This is **not a complete list** and is not meant to be consumed in full. Choose one structured route, build the labs, use official documentation to close version 2.1 and emerging-topic gaps, and add one ethical practice source. Times below are planning estimates unless explicitly identified as currently observed public metadata. Paid lesson contents were not reviewed; Skill Builder and Whizlabs returned shells, and O'Reilly/Udemy access was blocked. Access and metadata are **VERIFY CURRENT**.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official guide, domains, service scope, and version 2.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html) | Free | 3–5 hours mapping and gap analysis |
+| [AWS Skill Builder DVA-C02 exam prep](https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02) | Free account plus subscription options | 15–30 hours selected review, practice, labs, pretest and official practice exam; exact entitlement varies |
+| [Pluralsight DVA-C02 path](https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01) | Subscription/trial terms vary | Public outline lists 12 courses; plan 35–50 hours with labs and current-scope gap work; verify entitlement and runtime |
+| [O'Reilly/Sybex AWS Certified Developer Study Guide, 2nd ed.](https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/) | Subscription/book | Plan 30–50 hours reading/labs; edition, pages and runtime were not reverified behind the access block |
+| [O'Reilly DVA-C02 in-depth course](https://www.oreilly.com/videos/aws-certified-developer/0642572115197/) | Subscription | Plan 15–25 hours selected review/labs; live edition and runtime not reverified |
+| [Udemy — Neal Davis DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training/) | Paid; sales/subscription vary | Plan 25–40 hours including labs; live runtime and update date not reverified |
+| [Udemy — Stéphane Maarek DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/) | Paid; sales/subscription vary | Plan 20–35 hours with labs/practice; live runtime, update date and new boundaries not reverified |
+| [Tutorials Dojo DVA-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/) | Paid | Plan 20–35 hours with labs; public outline is available but paid lesson contents/counts are not independently verified |
+| [Tutorials Dojo DVA-C02 practice](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/) | Paid | Plan 10–18 hours with rationale review; public C03 notice is not proof of a complete C03 question bank |
+| [Whizlabs DVA-C02](https://www.whizlabs.com/aws-developer-associate/) | Paid/free sample | Plan 20–40 hours selectively; exact live video, lab, practice and sandbox counts require page/account verification |
+
+No exact current MeasureUp DVA-C02 product was independently verified. Reject content advertising leaked/recalled/actual items, and do not copy vendor questions into notes. A useful practice assessment explains all options and links current documentation.
+
+#### A practical 6–8 week route
+
+- **Week 1:** Official map, one language/SDK, IAM/KMS, HTTP/events, unit testing.
+- **Weeks 2–3:** API Gateway, Lambda, SQS/SNS/EventBridge/Kinesis, DynamoDB/cache; Labs 1–3.
+- **Week 4:** Cognito/tokens, roles, secrets, encryption, tenants; Labs 4–5.
+- **Week 5:** SAM/CloudFormation, artifacts, AppConfig, integration/event tests; Lab 6.
+- **Week 6:** strategies, versions/aliases, pipeline use, rollback; Lab 7.
+- **Weeks 7–8:** observability game day, measured tuning, practice/remediation, and current emerging-topic review.
 
 ### AWS Certified Machine Learning Engineer - Associate (MLA-C01; retiring)
 

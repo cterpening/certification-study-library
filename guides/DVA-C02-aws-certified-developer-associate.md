@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-28
 ---
 
 # DVA-C02 AWS Certified Developer - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dva-c02-coverage-record). The [official DVA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 101 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dva-c02-coverage-record). The [official DVA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html) is authoritative.
 
 **Current baseline:** DVA-C02 version 2.1 skills, four scored domains, and a separately labeled emerging-topic/pretest section<br>
-**Upcoming delivery change:** DVA-C03 registration opens October 27, with delivery beginning December 1, 2026. AWS gives conflicting DVA-C02 last-test dates: its September announcement says November 30, while the live certification page says December 1. Confirm the deadline in the scheduler before booking. Detailed DVA-C03 objectives are announced for October 27; this guide covers DVA-C02. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
+**Upcoming delivery change:** DVA-C03 registration opens October 27, with delivery beginning December 1, 2026. AWS gives conflicting DVA-C02 last-test dates: its September announcement says November 30, while the live certification page says December 1. Confirm the deadline in the scheduler before booking. Detailed DVA-C03 objectives are announced for October 27; this guide covers DVA-C02. Rechecked September 28, 2026; the conflict remains. See the [deep-review report](../docs/research/2026-09-28-dva-c02-deep-review.md).<br>
 **Important freshness boundary:** Version 2.1 added Amazon Q Developer, EventBridge patterns, third-party resilience, near-real-time Lambda transformation, specialized stores, fine-grained and cross-service authorization, masking/multi-tenancy, AppConfig, event-driven tests, health/readiness, caching, and performance analysis. AWS Copilot and CodeGuru were removed from the in-scope list, although one detailed testing example still names Copilot environments. Current AI-assisted development, AI security, test, CI/CD, error-analysis, and optimization topics are explicitly described by AWS as possible **unscored pretest** content.<br>
 **Official source:** [AWS Certified Developer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html)
 
@@ -82,6 +82,12 @@ Invocation modes have different error paths:
 - synchronous callers receive a response/error and decide whether to retry;
 - asynchronous invocation has service-managed retry and destination/DLQ options;
 - event source mappings poll streams/queues, batch records, checkpoint progress, and have source-specific retry/partial-batch behavior.
+
+For [SQS partial responses](https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html), enable `ReportBatchItemFailures` on the event source mapping and return failed **message IDs**. A handler exception fails the entire batch. With FIFO, stop at the first failure and report that message plus unprocessed messages to preserve ordering. [Kinesis partial responses](https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html) instead identify **sequence numbers**: Lambda resumes at the lowest failed checkpoint, so later successful records may run again. Keep downstream effects idempotent.
+
+The [SQS configuration guidance](https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html) recommends visibility of at least six times the function timeout, plus the batching window. Its documented validation rule requires the function timeout not to exceed visibility. Distinguish the recommendation from that validation constraint.
+
+**Related current capability:** The [September 9 Managed Instances announcement](https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/) describes longer Lambda work. Current [Managed Instances guidance](https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-best-practices.html) limits the 90-minute capability to asynchronous and eligible event source mapping invocations; Amazon MQ/DocumentDB mappings, synchronous invocations and initialization remain at 15 minutes. This does not change ordinary Lambda limits or establish new scored DVA-C02 objectives. Verify the execution mode before applying a timeout claim; use the source-specific batch documentation above for retry semantics.
 
 For SQS, align visibility timeout with processing and retries; delete only successfully processed messages. For streams, record ordering and batch checkpoint behavior mean one bad record can impede a shard unless partial-batch/failure handling is designed. Reserved concurrency bounds a function and protects downstream systems; provisioned concurrency reduces cold-start latency for selected workloads. VPC attachment enables private-resource access but requires appropriate subnets, security, routes/endpoints/NAT, IAM, DNS, and connection management.
 
@@ -200,7 +206,7 @@ The official [Domain 4 page](https://docs.aws.amazon.com/aws-certification/lates
 | Deployment/build log | Why did packaging, permissions, tests, IaC, or rollout fail? | Correlate build/artifact/deployment/environment IDs |
 | Audit record | Who changed or called an AWS API? | Use CloudTrail with application evidence; recognize coverage differences |
 
-CloudWatch Logs Insights queries structured fields more reliably than parsing free text. Embedded Metric Format can produce metrics from structured log events, but uncontrolled dimensions create high-cardinality cost/noise. X-Ray and OpenTelemetry-compatible tracing connect service segments and downstream calls under current integrations.
+CloudWatch Logs Insights queries structured fields more reliably than parsing free text. Embedded Metric Format can produce metrics from structured log events, but uncontrolled dimensions create high-cardinality cost/noise. X-Ray and OpenTelemetry-compatible tracing connect service segments and downstream calls under current integrations. The [X-Ray SDK/daemon timeline](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html) places those components in security-fix-only maintenance from February 25, 2026; its current table gives no maintenance end date. This is not an X-Ray service retirement. For new instrumentation, study the [OpenTelemetry migration overview](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html), then validate context propagation, sampling, attributes, export permissions and sensitive-data filtering in the selected runtime.
 
 Start root-cause work with expected vs actual, scope, timeline, last known good, and recent change. Follow request ID from edge through function/container, message/event, dependency, data write, and response. Distinguish application exception, IAM/KMS denial, DNS/network path, timeout, throttling/quota, serialization/schema, stale configuration, deployment mismatch, and downstream unavailability. Change one hypothesis at a time and preserve evidence.
 
@@ -226,7 +232,11 @@ The live guide’s emerging topics include AI-generated error explanations and o
 
 ### Scenario 1: Resilient order API
 
-API Gateway validates and authenticates a request, then Lambda creates an order with a client-provided idempotency key. DynamoDB uses a conditional write to prevent duplicate creation. The function publishes an order-created event to EventBridge; independent targets enqueue fulfillment and analytics work. Each consumer records event ID, handles duplicates, uses bounded retries, and sends poison work to a DLQ with an owned redrive runbook.
+API Gateway validates and authenticates a request, then Lambda creates an order with a client-provided idempotency key. DynamoDB atomically records the order and an outbox item in a transaction, with a conditional business key to prevent duplicate creation. A durable relay publishes the outbox event to EventBridge and records progress; independent targets enqueue fulfillment and analytics work. Each consumer records event ID, handles duplicates, uses bounded retries, and sends poison work to a DLQ with an owned redrive runbook.
+
+A direct database write followed by a publish can lose the event if the process fails between them. Apply the [transactional outbox pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html), or a suitable change-data-capture design, with explicit relay recovery, retention and reconciliation. The relay can send twice after an uncertain response; this design still needs consumer idempotency. If using SQS batch publication, inspect each entry: [SendMessageBatch](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html) can return HTTP 200 with partial failures. Do not delete every outbox row just because the request succeeded.
+
+The [Powertools TypeScript idempotency article](https://aws.amazon.com/blogs/compute/implementing-idempotent-aws-lambda-functions-with-powertools-for-aws-lambda-typescript/) (September 19, 2023) is useful for understanding stable request keys, in-progress state, cached results and expiry. Bind a key to the authenticated tenant and operation; reject reuse with a changed business payload. A wrapper cannot make a remote payment and its local result record one transaction: use the remote provider's idempotency contract and reconcile uncertain outcomes. Recheck library APIs before implementing the older examples.
 
 Tenant context comes from validated identity claims and is included in every key/authorization decision—not trusted from the route alone. Logs contain correlation/order/tenant-safe identifiers, never tokens or payment data.
 
@@ -244,9 +254,18 @@ Do not merely increase Lambda timeout or concurrency; that would hold resources 
 
 ---
 
+## Worked developer decisions
+
+These are original synthetic exercises; the arithmetic and expected retry sets were checked locally. They do not verify AWS execution.
+
+1. **Partial failure:** Standard SQS batch A/B/C has only B fail: report B. For FIFO, stop at B and report B/C because C is unprocessed. Kinesis sequence numbers 101/102/103 with failure at 102 restart from 102, including 103. Reporting a single failure does not mean every source retries a single record.
+2. **Outbox acknowledgement:** Three entries are published in one batch. HTTP 200 contains two successful entries and one failed entry. Mark only the two confirmed entries sent; retain and retry the failed entry appropriately. An unknown timeout outcome requires idempotent replay/reconciliation, not guessing that nothing was sent.
+3. **Memory and cost:** A 512 MiB function taking 0.8 seconds consumes 0.4 GB-seconds; a 1 GiB version taking 0.3 seconds consumes 0.3 GB-seconds, a 25% compute-usage reduction at the same unit rate. This excludes requests, networking and other charges. Compare representative tail latency, correctness and total cost before selecting a setting. At 100 requests/second and 0.3 seconds average duration, average concurrency is about 30; bursts and downstream limits require separate headroom decisions.
+4. **Retry multiplication:** Three layers each making up to three total attempts can generate 27 backend attempts for one logical request. Count initial calls in the attempt budget. Coordinate a deadline and retry owner, use backoff/jitter, and preserve the same business idempotency key across retries.
+
 ## Hands-on labs
 
-Use a sandbox account, least privilege, budgets, synthetic data, and cleanup. Features, limits, and cost are **VERIFY CURRENT**.
+These eight labs are proposed and were not executed in AWS during this review. Use a sandbox account, least privilege, budgets, synthetic data, and cleanup; budgets are alerts, not a hard spending cap. Features, limits, and cost are **VERIFY CURRENT**.
 
 ### Lab 1: SDK resilience
 
@@ -254,7 +273,7 @@ Build a small SDK client that paginates, applies bounded retry/backoff, distingu
 
 ### Lab 2: Event-driven order flow
 
-Implement API/event → Lambda → DynamoDB → EventBridge/SQS with synthetic data. Add a conditional idempotent write, consumer deduplication, DLQ, and correlation IDs. Replay events and prove totals stay stable.
+Implement API/event → Lambda → DynamoDB → EventBridge/SQS with synthetic data. Atomically record the order and outbox event, add relay recovery, consumer deduplication, a DLQ and correlation IDs. Fail between database commit and publication, and again after publication but before relay acknowledgement. Replay and reconcile: each committed order must eventually emit an event, and duplicate delivery must leave business totals stable.
 
 ### Lab 3: Lambda tuning
 
@@ -329,6 +348,49 @@ These prompts are independent and do not reproduce live or vendor questions.
 
 ---
 
+## Answer explanations
+
+1. Buffering isolates temporary consumer failure but adds backlog, delay, duplicates, poison records and replay ownership.
+2. At-least-once delivery and an acknowledgement failure can repeat a completed side effect; deduplicate at the business boundary.
+3. Use the configured timeout, batching window and retry budget; apply the documented six-times recommendation and verify the timeout does not exceed visibility.
+4. Use a bus when content-based routing and independent event consumers fit; queues buffer work and SNS fans notifications to subscriptions.
+5. Orchestration has an explicit workflow owner/state; choreography distributes reactions and requires tracing emergent dependencies.
+6. Retries consume already scarce capacity and can multiply across layers. Bound the total budget and retry only suitable failures.
+7. Repeated transient dependency failures justify opening the circuit, a controlled fallback and limited recovery probes.
+8. Use the runtime workload role and SDK credential chain. Verify precedence; never hard-code long-lived credentials.
+9. The application silently omits later pages and produces incomplete inventory or business results.
+10. Reuse can leak data into later requests; concurrent execution modes also introduce races. Keep request state isolated.
+11. Reserved concurrency allocates and caps concurrent capacity; provisioned concurrency pre-initializes environments to reduce startup latency.
+12. A checkpoint can keep replaying the failed sequence and later records. Isolate/recover failures while respecting order, retention and idempotent effects.
+13. Query selects a key range; Scan reads broadly before filtering. Use access-pattern-appropriate keys and pagination.
+14. Many possible keys help only when traffic distributes among them; a popular key can still create a hot partition.
+15. A workflow requiring immediate visibility of its prior write can make the wrong decision from a stale read. Use supported consistency or a different workflow.
+16. Include every authorized response-varying dimension, including verified tenant/user scope where responses are private; test isolation and invalidation.
+17. Generated code may have wrong contracts, insecure permissions or dependencies. Review it and test independently.
+18. Validate issuer, intended audience, expiry, allowed algorithm/key and relevant scopes/claims; then authorize the actual resource and action.
+19. An attacker can substitute it. Bind resource access to independently validated identity and authorized tenant membership.
+20. It depends on the integration: inspect the execution/service/assumed role or forwarded caller and evaluate its policies, not the original user alone.
+21. Key policy/grants, context conditions or an explicit deny may block decryption despite a separate IAM allow.
+22. Client-side encryption owns encryption and key metadata before upload; server-side encryption delegates storage encryption to the service under selected controls.
+23. Rotation changes key material for future encryption while preserving appropriate old material for decryption; rewriting stored data is separate work.
+24. Rotation, exposure through configuration/debugging and unbounded cached values may require a dedicated secret store and controlled retrieval.
+25. Masking hides presentation, redaction removes output, tokenization substitutes a managed token, hashing is one-way, and encryption is reversible with a key.
+26. Authenticate as Tenant A and request Tenant B objects through API, cache and background paths; assert denial and no leaked data or side effects.
+27. Rebuilding introduces untested differences. Promote the verified digest and supply controlled environment configuration.
+28. Record source commit, locked dependencies, build inputs/toolchain, digest, provenance and test results; demonstrate rebuild behavior where required.
+29. Mocks can accept impossible responses or skip real IAM, timing, retry and serialization behavior. Add controlled contract/integration checks.
+30. Cover duplicate, late, out-of-order, malformed, unauthorized, throttled, poison, partial-batch and replay cases; assert both state and effects.
+31. Publish immutable versions and route alias traffic between them; monitor a meaningful sample and roll back on predefined signals.
+32. New code may already have written data or emitted events that old code cannot handle. Plan compatibility and reconciliation.
+33. Old and new readers/writers must tolerate the transition; use staged expand/migrate/contract schema changes where appropriate.
+34. Liveness tests whether to restart; readiness tests whether to send traffic. Avoid dependency checks that cause cascading restart loops.
+35. Unbounded identifiers create many time series, raising cost and obscuring useful aggregates. Keep detail in controlled logs/traces.
+36. Correlate error codes, logs, traces, duration and audit evidence: a permission denial differs from a request waiting until its deadline.
+37. Extra workers can overload a dependency, trigger retries and deepen queues. Bound throughput to the actual bottleneck.
+38. Filter unwanted event categories using the correct message contract, then test accepted and rejected examples; filtering is not authorization.
+39. Hold workload and correctness criteria constant; compare tail latency, errors, downstream load and total cost with rollback available.
+40. Treat it as a hypothesis: sanitize inputs, inspect the proposed mechanism/permissions, reproduce safely and verify outcome before rollout.
+
 ## Readiness checklist
 
 - [ ] I can map all four scored domains and distinguish the emerging unscored pretest section.
@@ -346,36 +408,6 @@ These prompts are independent and do not reproduce live or vendor questions.
 - [ ] I can optimize concurrency, Lambda, DynamoDB, messages, HTTP/application caches, and SDK use from measurements.
 - [ ] I have gap-checked older training against version 2.1 additions/removals and the current emerging-topic section.
 - [ ] I reject dumps and recalled/“actual” questions.
-
----
-
-## Places to learn
-
-This is **not a complete list** and is not meant to be consumed in full. Choose one structured route, build the labs, use official documentation to close version 2.1 and emerging-topic gaps, and add one ethical practice source. Times combine provider-listed duration with labeled library estimates. Access and metadata are **VERIFY CURRENT**.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| [Official guide, domains, service scope, and version 2.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html) | Free | 3–5 hours mapping and gap analysis |
-| [AWS Skill Builder DVA-C02 exam prep](https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02) | Free account plus subscription options | 15–30 hours selected review, practice, labs, pretest and official practice exam; exact entitlement varies |
-| [Pluralsight DVA-C02 path](https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01) | Subscription/trial terms vary | 34 listed hours, 12 courses, five labs, and practice exam; add version 2.1/emerging-topic gap work |
-| [O'Reilly/Sybex AWS Certified Developer Study Guide, 2nd ed.](https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/) | Subscription/book | 20 hours 39 minutes / 800 pages plus labs; January 2025, gap-check current emerging topics |
-| [O'Reilly DVA-C02 in-depth course](https://www.oreilly.com/videos/aws-certified-developer/0642572115197/) | Subscription | 3 hours 15 minutes plus 10–20 hours labs; compact June 2025 review, not standalone hands-on depth |
-| [Udemy — Neal Davis DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training/) | Paid; sales/subscription vary | 17 hours 12 minutes video plus labs/review; updated August 2026 when checked |
-| [Udemy — Stéphane Maarek DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/) | Paid; sales/subscription vary | Plan 20–35 hours with labs/practice; updated August 2026, verify live runtime and new boundaries |
-| [Tutorials Dojo DVA-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/) | Paid | 11+ video hours, 10+ labs, 14 quizzes and one simulator; add 8–16 hours practice |
-| [Tutorials Dojo DVA-C02 practice](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/) | Paid | 17 quizzes across randomized, timed, review and domain modes; plan 10–18 hours with rationale review |
-| [Whizlabs DVA-C02](https://www.whizlabs.com/aws-developer-associate/) | Paid/free sample | Plan 20–40 hours selectively; exact live video, lab, practice and sandbox counts require page/account verification |
-
-No exact current MeasureUp DVA-C02 product was independently verified. Reject content advertising leaked/recalled/actual items, and do not copy vendor questions into notes. A useful practice assessment explains all options and links current documentation.
-
-### A practical 6–8 week route
-
-- **Week 1:** Official map, one language/SDK, IAM/KMS, HTTP/events, unit testing.
-- **Weeks 2–3:** API Gateway, Lambda, SQS/SNS/EventBridge/Kinesis, DynamoDB/cache; Labs 1–3.
-- **Week 4:** Cognito/tokens, roles, secrets, encryption, tenants; Labs 4–5.
-- **Week 5:** SAM/CloudFormation, artifacts, AppConfig, integration/event tests; Lab 6.
-- **Week 6:** strategies, versions/aliases, pipeline use, rollback; Lab 7.
-- **Weeks 7–8:** observability game day, measured tuning, practice/remediation, and current emerging-topic review.
 
 ---
 
@@ -408,3 +440,35 @@ The weekly monitor should track the canonical guide and status, while source hea
 ## Exam-integrity boundary
 
 This guide is an original synthesis of public objectives and documentation. It contains no recalled exam questions, leaked content, copied vendor banks, or paid-course reproductions. Use legitimate practice to find weak decisions; verify every technical rationale in current first-party documentation.
+
+---
+
+## Places to learn
+
+This is **not a complete list** and is not meant to be consumed in full. Choose one structured route, build the labs, use official documentation to close version 2.1 and emerging-topic gaps, and add one ethical practice source. Times below are planning estimates unless explicitly identified as currently observed public metadata. Paid lesson contents were not reviewed; Skill Builder and Whizlabs returned shells, and O'Reilly/Udemy access was blocked. Access and metadata are **VERIFY CURRENT**.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official guide, domains, service scope, and version 2.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html) | Free | 3–5 hours mapping and gap analysis |
+| [AWS Skill Builder DVA-C02 exam prep](https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02) | Free account plus subscription options | 15–30 hours selected review, practice, labs, pretest and official practice exam; exact entitlement varies |
+| [Pluralsight DVA-C02 path](https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01) | Subscription/trial terms vary | Public outline lists 12 courses; plan 35–50 hours with labs and current-scope gap work; verify entitlement and runtime |
+| [O'Reilly/Sybex AWS Certified Developer Study Guide, 2nd ed.](https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/) | Subscription/book | Plan 30–50 hours reading/labs; edition, pages and runtime were not reverified behind the access block |
+| [O'Reilly DVA-C02 in-depth course](https://www.oreilly.com/videos/aws-certified-developer/0642572115197/) | Subscription | Plan 15–25 hours selected review/labs; live edition and runtime not reverified |
+| [Udemy — Neal Davis DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-exam-training/) | Paid; sales/subscription vary | Plan 25–40 hours including labs; live runtime and update date not reverified |
+| [Udemy — Stéphane Maarek DVA-C02](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/) | Paid; sales/subscription vary | Plan 20–35 hours with labs/practice; live runtime, update date and new boundaries not reverified |
+| [Tutorials Dojo DVA-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/) | Paid | Plan 20–35 hours with labs; public outline is available but paid lesson contents/counts are not independently verified |
+| [Tutorials Dojo DVA-C02 practice](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/) | Paid | Plan 10–18 hours with rationale review; public C03 notice is not proof of a complete C03 question bank |
+| [Whizlabs DVA-C02](https://www.whizlabs.com/aws-developer-associate/) | Paid/free sample | Plan 20–40 hours selectively; exact live video, lab, practice and sandbox counts require page/account verification |
+
+No exact current MeasureUp DVA-C02 product was independently verified. Reject content advertising leaked/recalled/actual items, and do not copy vendor questions into notes. A useful practice assessment explains all options and links current documentation.
+
+### A practical 6–8 week route
+
+- **Week 1:** Official map, one language/SDK, IAM/KMS, HTTP/events, unit testing.
+- **Weeks 2–3:** API Gateway, Lambda, SQS/SNS/EventBridge/Kinesis, DynamoDB/cache; Labs 1–3.
+- **Week 4:** Cognito/tokens, roles, secrets, encryption, tenants; Labs 4–5.
+- **Week 5:** SAM/CloudFormation, artifacts, AppConfig, integration/event tests; Lab 6.
+- **Week 6:** strategies, versions/aliases, pipeline use, rollback; Lab 7.
+- **Weeks 7–8:** observability game day, measured tuning, practice/remediation, and current emerging-topic review.
+
+---

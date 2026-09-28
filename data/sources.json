@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-dva-sqs-errors",
+      "title": "Handling errors for an SQS event source",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-stream-batch",
+      "title": "Reporting Kinesis batch item failures",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-batchfailurereporting.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-outbox",
+      "title": "Transactional outbox pattern",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-long-timeout-blog",
+      "title": "90-minute timeout on Lambda Managed Instances",
+      "url": "https://aws.amazon.com/blogs/compute/announcing-90-minute-function-timeout-on-aws-lambda-managed-instances/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-idempotency-blog",
+      "title": "Implementing idempotent Lambda functions with Powertools TypeScript",
+      "url": "https://aws.amazon.com/blogs/compute/implementing-idempotent-aws-lambda-functions-with-powertools-for-aws-lambda-typescript/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-xray-migration",
+      "title": "Migrating from X-Ray instrumentation to OpenTelemetry",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Read notice, overview, AWS integrations and concept mapping; not every language migration tutorial. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-lmi-limits",
+      "title": "Lambda Managed Instances best practices",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-best-practices.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Read best-practices page; qualify timeout validation and stream retry wording using service-specific pages. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-xray-timeline",
+      "title": "X-Ray SDK and daemon support timeline",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-sqs-configuration",
+      "title": "Configuring Lambda with SQS",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dva-send-batch",
+      "title": "SQS SendMessageBatch API",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessageBatch.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DVA-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-ai-costs-business-blog",
       "title": "You CAN Manage, Forecast, and Evaluate AI Costs",
       "url": "https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/",
@@ -42409,12 +42549,13 @@
       "authority_class": 1,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "MLA-C01",
-        "MLA-C02"
+        "MLA-C02",
+        "DVA-C02"
       ],
-      "notes": "Review the January 14, 2027 MLA-C02 launch and final MLA-C01 retirement-language boundary against both versioned guides."
+      "notes": "Review the January 14, 2027 MLA-C02 launch and final MLA-C01 retirement-language boundary against both versioned guides. September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mla-c01-aws-service-availability",
