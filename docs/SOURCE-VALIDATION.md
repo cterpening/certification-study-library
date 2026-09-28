@@ -80,6 +80,8 @@ The review maps every March 11, 2026 subobjective to a case/data/security state,
 
 ## AB-250 coverage record
 
+The September 28 [deep review](research/2026-09-28-ab-250-deep-review.md) maps 119 detailed objectives. Whole guide read and all 119 unchanged May objectives mapped across 15 groups. Add six synthetic examples, two labs (ten total), 48 answered checks and two bounded WEM blog exercises. Deepen telephony migration, agent/simulation scope, capacity, masking, proactive engagement, WEM, routing, knowledge, quality and diagnostics. Preserve unresolved ACS new-number cutoff/eligibility conflict. Sixteen offline assertions passed; no tenant/telephony/agent/paid-course execution; independent human review pending. Current guide citations: 50 registered, 50 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Deploy Dynamics 365 Contact Center | Section 1, all integrated scenarios, and Lab 1 |

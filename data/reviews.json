@@ -2656,25 +2656,78 @@
       "notes": "Whole guide read and all 46 unchanged June objectives mapped across twelve groups. Add six synthetic worked examples, two labs (ten total), 44 answer checkpoints and two qualified blog exercises. Correct transition citation, resource durations, agent handoff/shutdown assumptions, pricing, assignment, scoring, capacity, knowledge, retirement, research and channel boundaries. Two official support/shutdown contradictions remain open. Twelve offline assertions passed; no tenant or communication lab executed; human review pending. See docs/research/2026-09-28-ab-210-deep-review.md"
     },
     {
-      "id": "ab-250-2026-09-01-source-validation",
+      "id": "ab-250-2026-09-28-source-validation",
       "exam_code": "AB-250",
       "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
-      "outcome": "passed",
+      "reviewed_on": "2026-09-28",
+      "outcome": "blocked",
       "blueprint_snapshot_path": "data/objective-snapshots/ab-250-official-objectives.txt",
-      "blueprint_snapshot_sha256": "465a6902bed4ff612be45f9c72b3e11644c6e42108331debab23b62a37bb5fa5",
+      "blueprint_snapshot_sha256": "852f325868be15013f6b67d2fe5e0152744d4e1d8c1f86a82874b2eecaca5e11",
       "objective_coverage": [
-        {"objective_group": "Deploy Dynamics 365 Contact Center", "guide_sections": ["Section 1", "All integrated scenarios", "Lab 1"]},
-        {"objective_group": "Implement channels", "guide_sections": ["Section 2", "All integrated scenarios", "Labs 2–3 and 8"]},
-        {"objective_group": "Configure agents and AI capabilities", "guide_sections": ["Section 3", "Digital and voice scenarios", "Labs 3 and 5"]},
-        {"objective_group": "Configure work distribution", "guide_sections": ["Section 4", "All integrated scenarios", "Lab 4"]},
-        {"objective_group": "Configure the Dynamics 365 Contact Center representative experience", "guide_sections": ["Section 5", "All integrated scenarios", "Lab 6"]},
-        {"objective_group": "Manage analytics for the Dynamics 365 Contact Center", "guide_sections": ["Section 6", "All integrated scenarios", "Labs 7–8"]}
+        {
+          "objective_group": "Deploy Dynamics 365 Contact Center",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Implement channels",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configure agents and AI capabilities",
+          "guide_sections": [
+            "Section 3",
+            "Digital and voice scenarios",
+            "Labs 3 and 5"
+          ]
+        },
+        {
+          "objective_group": "Configure work distribution",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Configure the Dynamics 365 Contact Center representative experience",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Manage analytics for the Dynamics 365 Contact Center",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 11, "reachable": 11, "access_blocked": 0, "missing_or_error": 0},
-      "notes": "Every subobjective on the official May 15, 2026 guide is mapped to a deployment, channel/journey, identity/data/compliance boundary, agent/Copilot contract, work-distribution decision, representative/supervisor experience, operational metric, evidence, failure or recovery path. Three scenarios, eight labs and 36 original checks cover standalone/embedded/third-party CCaaS, connectors, simulation/Health/transformation agents, Agent hub/solutions/ALM/users/roles/capacity, chat/digital/SDK/API/translation, voice/IVR/numbers/calling/recording/CCaaS API, context/customer ID/transfer/masking/messages/timeline/CIF/attachments, proactive campaigns/dialing/WFM, Copilot/knowledge/plugins/smart assist, voice orchestration/DTMF/NLU/speech/SIP/multilingual, queues/overflow/assignment/routing/diagnostics, profiles/templates/inbox/scripts/macros/APIs/knowledge agent, supervisors/quality, Power BI and Application Insights. All 11 cited URLs were reachable. The guide records the active 120-minute English exam, no official Practice Assessment, 11h40 official paths, three-day course, LinkedIn Learning with an adjacent-content caveat, MB-240 non-direct transition, and no exact verified Pluralsight, O'Reilly, MeasureUp or Whizlabs product."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 50,
+        "reachable": 50,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Whole guide read and all 119 unchanged May objectives mapped across 15 groups. Add six synthetic examples, two labs (ten total), 48 answered checks and two bounded WEM blog exercises. Deepen telephony migration, agent/simulation scope, capacity, masking, proactive engagement, WEM, routing, knowledge, quality and diagnostics. Preserve unresolved ACS new-number cutoff/eligibility conflict. Sixteen offline assertions passed; no tenant/telephony/agent/paid-course execution; independent human review pending. See docs/research/2026-09-28-ab-250-deep-review.md"
     },
     {
       "id": "mb-230-2026-09-01-source-validation",
@@ -10110,6 +10163,80 @@
         "missing_or_error": 0
       },
       "notes": "Every subobjective on the beta blueprint page last updated July 27, 2026 is mapped to tenant, workload, identity, authorization, data, agent/tool, security, operational, evidence, failure, and recovery decisions. Three scenarios, nine labs, and 40 checks include Entra Agent ID lifecycle, tenant agent settings, Agent 365 policy templates, Purview scope, and compliance-gap remediation. All 28 cited URLs are reachable. The September 7 watch separates Agent 365 product GA from individual capability status and adds the recurring Copilot release feed."
+    },
+    {
+      "id": "ab-250-2026-09-01-source-validation",
+      "exam_code": "AB-250",
+      "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-250-2026-09-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "465a6902bed4ff612be45f9c72b3e11644c6e42108331debab23b62a37bb5fa5",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy Dynamics 365 Contact Center",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Implement channels",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configure agents and AI capabilities",
+          "guide_sections": [
+            "Section 3",
+            "Digital and voice scenarios",
+            "Labs 3 and 5"
+          ]
+        },
+        {
+          "objective_group": "Configure work distribution",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Configure the Dynamics 365 Contact Center representative experience",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Manage analytics for the Dynamics 365 Contact Center",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 11,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official May 15, 2026 guide is mapped to a deployment, channel/journey, identity/data/compliance boundary, agent/Copilot contract, work-distribution decision, representative/supervisor experience, operational metric, evidence, failure or recovery path. Three scenarios, eight labs and 36 original checks cover standalone/embedded/third-party CCaaS, connectors, simulation/Health/transformation agents, Agent hub/solutions/ALM/users/roles/capacity, chat/digital/SDK/API/translation, voice/IVR/numbers/calling/recording/CCaaS API, context/customer ID/transfer/masking/messages/timeline/CIF/attachments, proactive campaigns/dialing/WFM, Copilot/knowledge/plugins/smart assist, voice orchestration/DTMF/NLU/speech/SIP/multilingual, queues/overflow/assignment/routing/diagnostics, profiles/templates/inbox/scripts/macros/APIs/knowledge agent, supervisors/quality, Power BI and Application Insights. All 11 cited URLs were reachable. The guide records the active 120-minute English exam, no official Practice Assessment, 11h40 official paths, three-day course, LinkedIn Learning with an adjacent-content caveat, MB-240 non-direct transition, and no exact verified Pluralsight, O'Reilly, MeasureUp or Whizlabs product."
     }
   ]
 }

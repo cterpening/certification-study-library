@@ -1,0 +1,2887 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AB-250",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "5b41b5411ba95902dd255457f407dcaf577b9bc5eb70e0f7020c1ca018662afd",
+  "guide_after_sha256": "ecee8b47d8f7920425965d57834283e0bcbe52afdf7eca4ba7c9645f35855762",
+  "prior_records": {
+    "exam": {
+      "code": "AB-250",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Transforming Contact Center Experiences with AI in Dynamics 365",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+      "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Contact-center/CCaaS implementation knowledge across voice and digital channels, representatives/supervisors, routing and service operations, plus experience with Power Platform, Copilot Studio, Power BI, Teams and Microsoft Foundry."
+    },
+    "review": {
+      "id": "ab-250-2026-09-01-source-validation",
+      "exam_code": "AB-250",
+      "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-250-official-objectives.txt",
+      "blueprint_snapshot_sha256": "465a6902bed4ff612be45f9c72b3e11644c6e42108331debab23b62a37bb5fa5",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy Dynamics 365 Contact Center",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Implement channels",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Configure agents and AI capabilities",
+          "guide_sections": [
+            "Section 3",
+            "Digital and voice scenarios",
+            "Labs 3 and 5"
+          ]
+        },
+        {
+          "objective_group": "Configure work distribution",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Configure the Dynamics 365 Contact Center representative experience",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Manage analytics for the Dynamics 365 Contact Center",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 11,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official May 15, 2026 guide is mapped to a deployment, channel/journey, identity/data/compliance boundary, agent/Copilot contract, work-distribution decision, representative/supervisor experience, operational metric, evidence, failure or recovery path. Three scenarios, eight labs and 36 original checks cover standalone/embedded/third-party CCaaS, connectors, simulation/Health/transformation agents, Agent hub/solutions/ALM/users/roles/capacity, chat/digital/SDK/API/translation, voice/IVR/numbers/calling/recording/CCaaS API, context/customer ID/transfer/masking/messages/timeline/CIF/attachments, proactive campaigns/dialing/WFM, Copilot/knowledge/plugins/smart assist, voice orchestration/DTMF/NLU/speech/SIP/multilingual, queues/overflow/assignment/routing/diagnostics, profiles/templates/inbox/scripts/macros/APIs/knowledge agent, supervisors/quality, Power BI and Application Insights. All 11 cited URLs were reachable. The guide records the active 120-minute English exam, no official Practice Assessment, 11h40 official paths, three-day course, LinkedIn Learning with an adjacent-content caveat, MB-240 non-direct transition, and no exact verified Pluralsight, O'Reilly, MeasureUp or Whizlabs product."
+    },
+    "sources": [
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ab-250-blueprint",
+        "title": "Study guide for Exam AB-250: Transforming Contact Center Experiences with AI in Dynamics 365",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Authoritative six-domain blueprint last updated May 15, 2026; no separate skills-effective date or future update notice is published."
+      },
+      {
+        "id": "ab-250-credential",
+        "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Active intermediate credential with a 120-minute English exam, four official paths and no Practice Assessment on the page."
+      },
+      {
+        "id": "ab-250-partner-transition",
+        "title": "July 2026 Partner Center skilling updates",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AB-250",
+          "AB-210"
+        ],
+        "notes": "Records AB-250 as an addition after MB-240 retirement while explicitly stating it is not a direct replacement. September 28 AB-210 deep review: July 30 specialization skilling section read and corroborates MB-280 to AB-210 mapping. Other July commercial announcements not part of this review. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ab-250-path-implement",
+        "title": "Implement an AI-powered contact center with Dynamics 365",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Two hours 51 minutes across four modules on architecture, deployment, users, ALM, queues and routing."
+      },
+      {
+        "id": "ab-250-path-channels",
+        "title": "Configure channels in Dynamics 365 Contact Center",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Three hours 11 minutes across four modules on chat/digital, voice, channel lifecycle and voice agents."
+      },
+      {
+        "id": "ab-250-path-representatives",
+        "title": "Empower customer service representatives in Dynamics 365 Contact Center",
+        "url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Three hours 52 minutes across five modules on WFM, profiles, productivity, knowledge, agents and Copilot."
+      },
+      {
+        "id": "ab-250-path-monitor",
+        "title": "Monitor and optimize Dynamics 365 Contact Center with AI-driven insights",
+        "url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "One hour 46 minutes across three modules on supervisors, quality, proactive engagement, Power BI and Application Insights."
+      },
+      {
+        "id": "ab-250-course",
+        "title": "AB-250T00-A Transform contact center experiences with AI in Dynamics 365",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Three-day official instructor-led course; linked paths total 11 hours 40 minutes."
+      },
+      {
+        "id": "ab-250-docs",
+        "title": "Dynamics 365 Contact Center documentation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Current first-party deployment, channel, routing, representative, supervisor, AI, WFM, analytics and troubleshooting documentation hub."
+      },
+      {
+        "id": "ab-250-linkedin-learning",
+        "title": "Microsoft Dynamics 365 Contact Center AI Engineer Associate (AB-250) Cert Prep",
+        "url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/",
+        "publisher": "LinkedIn Learning",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-250"
+        ],
+        "notes": "Current 2026 course with transcripts; includes substantial adjacent AI-foundation material, so use the official six-domain blueprint to select relevant lessons. Runtime estimated at roughly six to eight hours from the public lesson listing; verify in the subscriber page."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "dd34ce435486dc4135a3ca5e234e906dd152b3938792424b8ee6a65d939eace5",
+      "guide_sections": "1 / Workspace profiles; 5 / Representative experience",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "cb3c1e41f9937b7002dc511bb28404d15087a45885fed8836ff9cca2a77efdee",
+      "guide_sections": "1 / Any-CRM connector and incremental data contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "ccb6315a1a544e7c4e626374609d2cc7c9348ce8e4955a1fa7335ab4cce7b0ce",
+      "guide_sections": "1 / Embedded Salesforce widget and CRM boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "4bdebaedb5cda1c2ec8c6df54b965e2c44a65c8619cd22d6411fc6c12fcea509",
+      "guide_sections": "1 / Third-party CCaaS plus Copilot architecture",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "817fbb3073a8f2c03d26be1b86d2fb702eed92230c6e717aa259eb85141edad2",
+      "guide_sections": "1 / Preview inbound simulation; example 2; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "1c3074679136749400c4f4424387c11a63a1e9f1bef12c9922e27d798ac5b5c2",
+      "guide_sections": "1 / Blueprint/current agent vocabulary and operational diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "5b48063df6c2d796d74a99150c8460936a34d9cb819dec70f71e541ebf4776da",
+      "guide_sections": "1 / Service Operations supported actions and ALM boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "3c0e80f3bdee86a388e0769b04b85ce144d350616e5b9ce26e5b80d29aa6e282",
+      "guide_sections": "1 / Agent hub and rollout deactivation behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "12938c3eda8a71e987c6b9c0fde1ec7f17ba7c18567f5bd065e4f024873e64e5",
+      "guide_sections": "1 / Solutions and deployment artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "665bcf7eec05440e24cc3e79f6015e993c9a1c1dfc3e1fa5a2c2f34071c64dce",
+      "guide_sections": "1 / Environment governance and calendar exception; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "5492ee5eea76da82da5bd5a3630b53f1a2f3748f5b3efec755a9114902d91c70",
+      "guide_sections": "1 / Environment, telephony, dependencies and rollback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "13e45a4810907dc3425dd6bcfc283680f17343b9c55d0bfe64bd29f592063889",
+      "guide_sections": "1 / User settings, presence and persona",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "ddb6c0d3cd7edfa1ef192e61704c671da1b129858f480a9bed9d71a5bdcf269c",
+      "guide_sections": "1 / Provisioned identities, licensing and bookable resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "407d99cfd65891a11b54b55442fcaf196685a7962173e9ec164bdfe2b30e5926",
+      "guide_sections": "1 / Security roles and separation of duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "2b41147c996298046f5de5238ea854ab87cee0d97aba0ffef906b558c978f12d",
+      "guide_sections": "1 / Profile intersection, release, reset and custom limits; example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "570983f92159f2f8263a227375c69e4e01d536c149f53790f929713422b1e85d",
+      "guide_sections": "2 / Chat and digital workstream design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "0d4ccd196b2cb1e2ef9656e1b5aa19a4361a1a0dcb789611d170af5fc1167766",
+      "guide_sections": "2 / Record channel; 4 / Record routing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "b987ddcb7c7f2188ffc23649158ef51bfc6b57c53062cae46213766dc91e7559",
+      "guide_sections": "2 / Digital providers and lifecycle watch",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "adbaf27a44cbca53f5b193547b808b7e3e52b47c3db38414c47587c13a0f041e",
+      "guide_sections": "2 / Widget branding, embedding and availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "05dbafc760ec9d33e23a6ff1224f680116e4d85d25b9e544da596d26007c24cd",
+      "guide_sections": "2 / Proactive chat invitation conditions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "147fe05c6fd7e211754f64046e9ed386c51e86a437a9a06aac3c184ea5597b6a",
+      "guide_sections": "2 / Pre-chat survey and trust boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "7c117edbd7644758be6dd1a4316e67f39612bddd6924784158c642610af9ac1e",
+      "guide_sections": "2 / Lifecycle quick replies and localized messages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "83e8f63de7fdd17e3a94b9881ad384a867cd06056d62c177df683ce9abb24f60",
+      "guide_sections": "2 / Live Chat SDK boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "71b0a4abb7acf71744aaff5fe99422b4a041cd2105e94190f90985a42cf42fc1",
+      "guide_sections": "2 / Auth settings, JWT provider and authenticated indicator",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "3079edb5bf33165b1754caeb2600930ca3a529fea3bbceb91d1f86440782fb05",
+      "guide_sections": "2 / Native mobile Messaging SDK",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "0c6d5ab3e2d67515b873efe013e7bf0e4a08d3d82af99fd5a98f65d07c18beb0",
+      "guide_sections": "2 / Custom messaging API contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "876a82d30cf51631ca70811c620542a77b52abc8b53ae599431f867dc257295c",
+      "guide_sections": "2 / Translation accuracy, original evidence and escalation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 13,
+      "objective_sha256": "2688e47cd4c17e99ab83efdee713c4997daafd2be0353d847d2ca7a7c8239492",
+      "guide_sections": "2 / Availability, customer context and self-service settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "491e2452c4a61ca28abf66b8e6872fd15b7e7c9ca6f0c2b143aa30e42dacb3be",
+      "guide_sections": "2 / ACS versus Teams Phone extensibility paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "05670df19ae6f233fc37337409b7a3736abfb623bb7094adc1ed417834cd2153",
+      "guide_sections": "2 / External IVR/SIP/context and failure contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "cf3672ffcca01f07d4745432dcad39c6d339827b5cdfb359d1286e4cc298cc91",
+      "guide_sections": "2 / Resource accounts, number sync, migration and eligibility gap",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "900e94b4942f9749b5e1431ab64948c31fb016a0795d764982d793c0ed66d8de",
+      "guide_sections": "2 / Inbound/outbound profiles; proactive dialing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "0e32db397cb50474b6da728fc994675176b4031843c47856e78e82b3b09cf553",
+      "guide_sections": "2 / Recording, transcription, translation and acknowledged pause",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "ac0eb29d118f8994ea1bf9066858232785fa797d72cd576d2358211f214d654f",
+      "guide_sections": "2 / Feedback using Copilot Studio",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "f24b45de0b026ee172f7c0148977ea80aa1fd9ca3284142328092077451e1fe0",
+      "guide_sections": "2 / CCaaS lifecycle API and separate recording controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "34abeb133db8718cd1b9eb293942c43e8e17ecf3e89176482bd9d609a8c3c4f5",
+      "guide_sections": "2 / Typed context variables and scoped handoff",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "12f1cf1b031b01c95e59a91dd95939d28673955e020523858fc1fd23858bd86f",
+      "guide_sections": "2 / Authenticated identification and ambiguous matching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "6e7227bb9deaa465f1e457efc843c7f150a61b4f6757aa13d206fdc2065a61a3",
+      "guide_sections": "2 / Automatic closure and session/capacity lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "90cb062c652d4068034952d600390401d1bd3f4d3c7ba39be716880e2efcc610",
+      "guide_sections": "2 / Consult and transfer evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "745b69a239b19f9475f0bfabef03396b5640f147685c53edfafa9cfdc471594d",
+      "guide_sections": "2 / Message/voice masking scope and timing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "dd75153f6f1f1b28207466a496b717917d06782a75b37bad1aeb479f68ed15a2",
+      "guide_sections": "1 / Presence/capacity; 2 / Custom presence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "06add52ce4188f6e99574786195c6f5aa11fc19eeaefcabbdcb26f124ef423d1",
+      "guide_sections": "2 / Message templates, localization, outbound and stop behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "63903553dc2f74469c5d1cfcd2c7478f274f06915b8932a3b511f7dd098481b2",
+      "guide_sections": "2 / Active conversation lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "90b68e7faa9d1b35baf0f83f3d7afad2a340359f416bcd7356d816f154db8203",
+      "guide_sections": "2 / Timeline and related activities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 10,
+      "objective_sha256": "4d4d15f5279b2b8a9ac46768ab09fbd5c9288b6b9ac3d4706e39cce1c017b009",
+      "guide_sections": "2 / External timeline connector security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 11,
+      "objective_sha256": "a85d9ab087dbcc692bcca20a0ad378822d8062715fc36b1aee92fba9c544ef44",
+      "guide_sections": "2 / Channel Integration Framework boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 12,
+      "objective_sha256": "d96286ccc7eb9042c09d8f9888e97ff835d4293bcfae5e82f79453920afb338a",
+      "guide_sections": "2 / Conversation state, wrap-up and closure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 13,
+      "objective_sha256": "2c331a129b027b17745f0d74247cdcec8eb1976c4a44be0f5474b3c4477302ee",
+      "guide_sections": "2 / Copilot Studio feedback; lifecycle watch removes old toggle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 14,
+      "objective_sha256": "7fae9f9802db152b008b0e41e0b4e8277c787b2c175ff44df89ad7dc1be4e8e3",
+      "guide_sections": "2 / Attachment type/size, inspection, storage and retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 15,
+      "objective_sha256": "acc077f8f255ebc0d50078b16556625ab91cd62c5135688138ee099cd35f7596",
+      "guide_sections": "2 / Proactive engagement contract and cancellation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 16,
+      "objective_sha256": "eaffd595688f99797b296192faa102bd9bb9d858a24501f5c7f227a9f76fad69",
+      "guide_sections": "2 / Workstream/intake/unique ID and trigger",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 17,
+      "objective_sha256": "8404d808d599c908035f5623c569a7c939725c3fec868e64515ea7d1d36b013c",
+      "guide_sections": "2 / Copilot/preview/progressive/predictive modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 18,
+      "objective_sha256": "06eebf6946d3494e8a3c0759872c80b194515bf5d120b578d73e40951e7a0986",
+      "guide_sections": "2 / Campaign outcomes; 6 / Balanced analytics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 19,
+      "objective_sha256": "0b3ee8c0419711f1f814cf2956f3df4ef3573930484a788b9db1410f661d053c",
+      "guide_sections": "2 / WEM forecasting and planning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 20,
+      "objective_sha256": "2017cf5d6621e3e9208452e8ff3fc629747d87d3559275e2135cdde1e35d147c",
+      "guide_sections": "2 / Shifts, scheduling, adherence and request tools",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 21,
+      "objective_sha256": "9329fda17d316534a29c18e459a393c23bf22f347254415f88b4a3fdbacf5842",
+      "guide_sections": "2 / Current WEM scenarios; example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 22,
+      "objective_sha256": "1e4d1d3e2ea473e5a07b9f989f2645262c3de18fd41ff74532f059feb2bd33a6",
+      "guide_sections": "2 / Third-party WFM ownership; WEM blog worksheet",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 23,
+      "objective_sha256": "854296509c8cefd00d52e0ee246ec560fd652aef080aa7e3f32b656c9984001c",
+      "guide_sections": "1 / Architecture, dependencies and TCO",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 24,
+      "objective_sha256": "1484f285d24fc088734d66088bcfe20f49955d08de89920c0c166aadb8ba8231",
+      "guide_sections": "2 / Voice pilot, SIP, carrier and network validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 25,
+      "objective_sha256": "afd8eae86a37fca5d084617218a932914d42b761410743db2eafa7b1a3de65ed",
+      "guide_sections": "1 / Bounded simulation; 3 / Voice model and tool evaluation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 26,
+      "objective_sha256": "14b2feac7cceb0b6de24a6b3354792d85511cd11f443a13dce63f7ce7ddc97a0",
+      "guide_sections": "1 / Total cost categories; 2 / Workforce and consumption boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "c96cc47f932fd96a72a8b882c43c2d231680c95e690d3e0c79deefed031afecf",
+      "guide_sections": "3 / Copilot summaries and scoped context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "80022e553f676b17ee54577fb5223951da83d3f059ca878fcda5da7dbcbe06ad",
+      "guide_sections": "3 / Ask a question and fact verification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "d4328cd8fe664513a203aeec7e02654e5d4256cb1abe5fd178182e0296335aff",
+      "guide_sections": "3 / Approved sources/filters; 5 / Knowledge lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "3083a7b4aee3ca3e0dc93586a17822a4efb0cd11d30d2a269fb8cf64f2052ecd",
+      "guide_sections": "3 / Plugin/tool authorization and schemas",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "6e94aced0d1ab2ffc47e8131c3537df9fad3164453a3baa41e72994cccdfc587",
+      "guide_sections": "3 / Adoption versus outcome metrics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "28fb5b7f68d0c3bde9d30045b297f3896cd4a0452f51172cfafffe67dff599d8",
+      "guide_sections": "3 / Smart assist triggers, suggestions and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "9d541201a31aaa0a5a57066511c424eca5e4eefb88c9e6093d19d2971b0bfe04",
+      "guide_sections": "3 / Classic versus generative IVR and deterministic escalation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "a01c0af0ebd12f1cbe7638f9b55855f318bd72a658570cf0de9861be3f544df0",
+      "guide_sections": "3 / Copilot Studio variable scope/lifetime",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "08f9e999292b424a0399f5b04cf5ddcfd5ca3fc53f9cdea466efe28de3855db2",
+      "guide_sections": "3 / Identity/tool security; 2 / Telephony boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "1b3c99577a23c5f6cf80543e2d1ab793415010d8a6d172ebcf99216a01524004",
+      "guide_sections": "2 / Pause completion and sensitive variables; 3 / Voice limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "23c489e2aba4f599ef45d6e15b1f6ba2ef9fc4dae1fa78b3bce90a680c778e55",
+      "guide_sections": "2 / SIP preservation; 3 / Transfer context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "eca7465314dc61f45149cbd3bbb9b8da453ff0f49a184ae1dd57f5ceb2ca46bd",
+      "guide_sections": "3 / Current real-time model/channel/region limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "05b464453f5792c039f9235806631bda5db2ea9c1ea4e375203ed55ce9a7ba08",
+      "guide_sections": "3 / DTMF/NLU/speech versus simulation support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "528383cf0e61e5306ecc1595be7d46a3df1ad7d38c4c01e4d31e2ef0d58a7ed1",
+      "guide_sections": "3 / Voice triggers and supported conversational paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "06867e6d6930768caaffeb4e14c1f8fdd78426ec0bf6d1871d3b1030fd1f4736",
+      "guide_sections": "3 / Barge-in, noise, tools, safety and fallback; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "e19fcad2e35dc8398eb3c98e54b25ba838f9dfd837d713351edd4ed3fbafadd1",
+      "guide_sections": "3 / Per-language voices, prompts, evidence and tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "c0ed443e6d9a14f938ecebe22e104f83451cf31f9664bef1700e3327c007949e",
+      "guide_sections": "4 / Queue types and membership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "73e6fc406257ea23c69c244affe02daf0e84b1acfbf6e2cd9b8e3f529fb53ccb",
+      "guide_sections": "4 / Lower-number priority and assignment order",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "a260b7361adeb8c06f5b2b106f45347c6a6b3774bc957d4cbe768acc99c70eeb",
+      "guide_sections": "4 / Prequeue/postqueue/playbook overflow and fallback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "01873c794cfad76412a5e2709389cf4aa27be92939c6e41672e6c5fcdb07e894",
+      "guide_sections": "4 / Highest capacity, round robin, least active and eligibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "136fa789ff5c2bf8e0498c5ec953179296a9db4f25caa7d479f8f86fff31708f",
+      "guide_sections": "1 / Calendar ALM; 4 / Hours and default assign-anyway",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "3cb11cbde1b09de6bbe7f5e63c9e406f66586cf1bb8d0d045c3613ecaed914f0",
+      "guide_sections": "4 / Workstream intake/context and agent association",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "8fdc7bc77d14324bb7fcd01baa713d0b3e091e5f225a88d13186f9ed661b703e",
+      "guide_sections": "4 / Classification pipeline and source attributes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "ba357f832e307481340ac68f152cfac4b1c5136cb2b03fc1503068ca1da3e713",
+      "guide_sections": "4 / Engagement behavior and handoff; 2 / Proactive modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "0fc19b8fdec8bc1d112fb1172f11039a40a92e54fa1c38d4918bc82f4b6f0fdf",
+      "guide_sections": "4 / Explicit skills/proficiency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "53580a136d16d54fd71a584eb787354c3813024b1e63bd6fb4d3137a4105fc9e",
+      "guide_sections": "4 / AI-inferred skills and validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "b9b5021cd6c0055371a4c83c524e48846c34afb010857ff827a5e94887bad3ac",
+      "guide_sections": "4 / Intent/LOB scope and reviewed intent library",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "3f97f90b66b57563124bebc43c6c73bc3e4a532a6d79dc9e95f45e5129cd3218",
+      "guide_sections": "4 / Preferred representative availability/fallback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "e058572a8d13bb9f0f2cab53036e0ec67f7a24c31ab8af269c0bee8c8e35f208",
+      "guide_sections": "4 / Record routing and capacity release",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "28acb8aa050ec5d82bd1a18e7f1ff525674080b855210755cb08f23b22cbaa19",
+      "guide_sections": "4 / Basic rules and route-to-queue hit policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "2ef1d5da06a0d3afa7e873aa1868b4acfa2a1cccc49d4994e30484c439aa6237",
+      "guide_sections": "6 / Event-time diagnostics, supported assignment and lag; example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "a233fb1aca6a431d64dfaac028473277e3c96ac4a8c2dc93ae234328b6648ac8",
+      "guide_sections": "5 / Experience-profile persona settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "60dcf65a3ed714a925336a31b2bc7d62d0d140c746ae568cf64d8926a198960f",
+      "guide_sections": "5 / Application tab templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "4e6efaa7bb031bc4403b49a5fe7785d8936f9a4cf52f6d28d251c3071ac3fa99",
+      "guide_sections": "5 / Inbox views/permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "1bf450be35a39f401a7629cc7985177d0e38af71e59979b12962e7f771d46fd5",
+      "guide_sections": "5 / Session context/templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "3ab310ebc78fdb96c0e02593204457bb72844e4985770dc8e3a614e95fe3cd66",
+      "guide_sections": "5 / Notifications, acceptance and accessibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "249d751548f76d5c00189f726196e58584874bb4e3c525af7787fd9dace004e7",
+      "guide_sections": "5 / Custom productivity panels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "8e2268232ed1fd303666d8968e867eec94c301ab625e6b1ec1f9c0fe8dbac216",
+      "guide_sections": "5 / Scripts and dynamic slugs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "dbfb4c332e28ff59c08d3079b9d8da17d17b39596e13d6985c15adfa6dde19a2",
+      "guide_sections": "5 / Macros, state, retries and permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "10c62110903625a8a634846a07561e8aeecc56b2b95ecc064679842e9d046595",
+      "guide_sections": "5 / Teams expert collaboration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "0a77d3640c243d3b38239eb07dbfabf554a6115f18a9bda57505164569d9816e",
+      "guide_sections": "5 / App profile manager API boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "4c6964b603717dfa3afbfbfabe0acb5c07c24c5b80711effd7da473592864604",
+      "guide_sections": "5 / Omnichannel API lifecycle and ALM",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "925844b397d659319d7fee7f72dff189b8e341398b1e10c6a3a023e403e6d595",
+      "guide_sections": "5 / Internal search, article lifecycle and languages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "c44efd57df0ef7700b25be1ab169015b76e4d2661b48f8edecf4a17991edeaa8",
+      "guide_sections": "5 / External indexing, permissions and source freshness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "802ec44ea5d2f689c5a7abbd76fda1f4fb05658caf5c8e72408d48d75d3954c3",
+      "guide_sections": "5 / Knowledge-enabled tables and governance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "f7c13a9bf72a3d5cbd9c66563f3191493b4e21cd9da4df180319e52ad770c3c5",
+      "guide_sections": "5 / Knowledge agent connections, rules, attributes and harvesting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "9a6d9b50c5ecb5f8f120765e7296f321f89d0632a775428648464af55243016d",
+      "guide_sections": "5 / Approved portal audience and publishing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "afb96e1b4786ed2df491957290832214e8a79383f3be6225b3b5135900072c08",
+      "guide_sections": "6 / Supervisor roles and intervention scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "35598d3e7542eae552f346f8af6d7f5dcb37212b49eb851ff58b9594a22df37b",
+      "guide_sections": "6 / Evaluation roles, record types, irreversible scoring and plans",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "828ad4e8fd53c30f143d1686e046fe2d1a72bfd96499094ea77f3c64067b7d85",
+      "guide_sections": "6 / Dashboard/report permissions and telemetry access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "3c2c69c05121f5c5ebdac44457e986517d733feacb858576aec36ebefa502347",
+      "guide_sections": "6 / Monitoring, consult/intervention and evidence boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "12f4f149fb48214567563d5bbc20daff42137facb888767dc13cbe67d7fe1ff5",
+      "guide_sections": "6 / Supervisor persona experience and privacy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "87d503290371a3df535db344d0375327daf84c27dea511b39fcfbcf1bfa32174",
+      "guide_sections": "6 / Embedded Power BI KPI editing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "b1e666b2de3307b94ebbf7cba08bd9cd34f9ac7f893a48e2114ff0cc56c96680",
+      "guide_sections": "6 / Workspace report embedding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "dca6f2f1e2f86a4327c535f36b659d5e06e44936821bcc0df39206acaadc01ba",
+      "guide_sections": "6 / Historical/real-time definitions, refresh and RLS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "0e01fa72f8c6eb571cf8331896083daa9d8eb63a75329867797444ed9426558b",
+      "guide_sections": "6 / Desktop/model extension and governed data",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "b021d38bb4eb2a83fee0893ae234274e5b29a86e9a40ec7ec3d27567a606c0e9",
+      "guide_sections": "6 / Application Insights conversation diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "c14cc1e91b9e92e80b801d6ff1b198103a314e66467a70f5412ab6508a7c7dec",
+      "guide_sections": "6 / Telemetry correlation/retention and embedded operational views",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "AB-250"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AB-250",
+        "title": "Transforming Contact Center Experiences with AI in Dynamics 365",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+        "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+        "snapshot_path": "data\\objective-snapshots\\ab-250-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ab-250-official-status.json",
+        "previous_sha256": "465a6902bed4ff612be45f9c72b3e11644c6e42108331debab23b62a37bb5fa5",
+        "current_sha256": "852f325868be15013f6b67d2fe5e0152744d4e1d8c1f86a82874b2eecaca5e11",
+        "previous_status_sha256": "380505e5fb1feef83bd5ac928031329dcc712d5bcad3f3ffc68720f46bf1e68d",
+        "current_status_sha256": "7dc222606773f391d973212699de4166373bd6eeacd2613a1a8919c7bf1b00be",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-05-15; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 50,
+    "reachable": 50,
+    "access_blocked": 0,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T06:21:38.443741+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T06:21:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "ab-250-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+      "checked_at": "2026-09-28T06:21:38.444420+00:00",
+      "health": {
+        "id": "ab-250-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+        "checked_at": "2026-09-28T06:21:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AB-250: Transforming Contact Center Experiences with AI in Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "726d3f5e7cd7999800056d7fa31fe98c70bc9a5841639568cc3510d7efcbee0e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+      "sha256": "8238a8ed92bf59e94eb8d26d7c3e0e0b42539c492074d3a9a5c688ad52b8d471",
+      "text_characters": 12030
+    },
+    {
+      "id": "ab-250-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+      "checked_at": "2026-09-28T06:21:38.444844+00:00",
+      "health": {
+        "id": "ab-250-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+        "checked_at": "2026-09-28T06:21:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "eb7b32020355792ffe1b8aba8fb60990b49955d69d9a6fae6163e8c85711538c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+      "sha256": "11c4d028811153b23bd9a0e73c604effbf0b0f936b4463fc1d1f57bd840b4339",
+      "text_characters": 5759
+    },
+    {
+      "id": "ab-250-partner-transition",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+      "checked_at": "2026-09-28T06:21:38.848472+00:00",
+      "health": {
+        "id": "ab-250-partner-transition",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+        "checked_at": "2026-09-28T06:21:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+        "content_type": "text/html",
+        "page_title": "July 2026 announcements - Partner Center announcements",
+        "canonical_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+        "duration_signals": [],
+        "signal_fingerprint": "7b384f55ca6ebcdf1c9b851c22d3c3d144117b6bd161f74d22d89a7a2801c004",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+      "sha256": "21bb15a2d72cfaedc6af5f7f0a516b2e9b07807bedb6fe384251e8d450a2ca53",
+      "text_characters": 79053
+    },
+    {
+      "id": "ab-250-path-implement",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+      "checked_at": "2026-09-28T06:21:38.862751+00:00",
+      "health": {
+        "id": "ab-250-path-implement",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+        "checked_at": "2026-09-28T06:21:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+        "content_type": "text/html",
+        "page_title": "Implement an AI-Powered Contact Center with Dynamics 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+        "duration_signals": [],
+        "signal_fingerprint": "dc255d4288e4c6d48238da83261e66ab30a896908c470392ffdc2da43b29cbf0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+      "sha256": "6cfca683a6b489155a9701d5e6b95c731e2d8a9e724e696d4a05d4ed9d556a85",
+      "text_characters": 2990
+    },
+    {
+      "id": "ab-250-path-channels",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/",
+      "checked_at": "2026-09-28T06:21:39.114547+00:00",
+      "health": {
+        "id": "ab-250-path-channels",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/",
+        "content_type": "text/html",
+        "page_title": "Configure Channels in Dynamics 365 Contact Center - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/",
+        "duration_signals": [],
+        "signal_fingerprint": "4e128438badd8d091740a0070baf9982b34c935d6a6c8e35e2aadaa2e72577e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/",
+      "sha256": "a61a1beaad3f92427ce4a65dd6a4a15c67d80e036fc88bb73d10b9f025254943",
+      "text_characters": 3537
+    },
+    {
+      "id": "ab-250-path-representatives",
+      "url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/",
+      "checked_at": "2026-09-28T06:21:39.130273+00:00",
+      "health": {
+        "id": "ab-250-path-representatives",
+        "url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/",
+        "content_type": "text/html",
+        "page_title": "Empower Customer Service Representatives in Dynamics 365 Contact Center - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/",
+        "duration_signals": [],
+        "signal_fingerprint": "6e4c6182c4d43dd219c479cf3fc9c401e821fa7b274e1b6682a614ceaa35f933",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/",
+      "sha256": "2f918cb7b8ee3a7a9500d4e2dad21145ceb9df8312d256216b32dd9125eadd82",
+      "text_characters": 3552
+    },
+    {
+      "id": "ab-250-path-monitor",
+      "url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/",
+      "checked_at": "2026-09-28T06:21:39.196741+00:00",
+      "health": {
+        "id": "ab-250-path-monitor",
+        "url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/",
+        "content_type": "text/html",
+        "page_title": "Monitor and Optimize Dynamics 365 Contact Center with AI-Driven Insights - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/",
+        "duration_signals": [],
+        "signal_fingerprint": "83e4ab51e8d9ed1b28e6417ab7b9cd594ac6f0a6cefd78567e35f453e9f749d1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/",
+      "sha256": "32ecc641b6b1625e5b801e9a266fd10c24bd808bb7cca477fc4795726d3f3126",
+      "text_characters": 2639
+    },
+    {
+      "id": "ab-250-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00",
+      "checked_at": "2026-09-28T06:21:39.323897+00:00",
+      "health": {
+        "id": "ab-250-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00",
+        "content_type": "text/html",
+        "page_title": "Course AB-250T00-A: Transform contact center experiences with AI in Dynamics 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00",
+        "duration_signals": [],
+        "signal_fingerprint": "7ce67f0e0ab04cddbf8903f78d96e02a7a62033d78c6bfaf65b17ee23c76c51a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00",
+      "sha256": "ccff59be534886e863f399844098551dddfa8e6b15ebaafb04d2e84391ef5b72",
+      "text_characters": 2106
+    },
+    {
+      "id": "ab-250-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/",
+      "checked_at": "2026-09-28T06:21:39.405843+00:00",
+      "health": {
+        "id": "ab-250-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/",
+        "content_type": "text/html",
+        "page_title": "Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/",
+        "duration_signals": [],
+        "signal_fingerprint": "0eb5a4af86f901f54d62163a25c48786f3d89c2f0b4448d2e1071c81fcabf950",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/",
+      "sha256": "5459c0ee23c503afbb13232a22555809c1714f068a5e5bb86f8a95d36efc9957",
+      "text_characters": 2658
+    },
+    {
+      "id": "ab-250-linkedin-learning",
+      "url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/",
+      "checked_at": "2026-09-28T06:21:39.431038+00:00",
+      "health": {
+        "id": "ab-250-linkedin-learning",
+        "url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Dynamics 365 Contact Center AI Engineer Associate (AB-250) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep",
+        "duration_signals": [
+          "PT10M30S",
+          "PT10M53S",
+          "PT11M",
+          "PT13M",
+          "PT13M51S",
+          "PT14M15S",
+          "PT1M",
+          "PT1M13S",
+          "PT1M14S",
+          "PT1M15S",
+          "PT1M20S",
+          "PT1M23S",
+          "PT1M25S",
+          "PT1M34S",
+          "PT1M45S",
+          "PT1M6S",
+          "PT1M8S",
+          "PT34S",
+          "PT37S",
+          "PT3M11S",
+          "PT3M14S",
+          "PT3M22S",
+          "PT3M25S",
+          "PT3M29S",
+          "PT3M33S",
+          "PT3M45S",
+          "PT3M46S",
+          "PT3M53S",
+          "PT3M54S",
+          "PT3M58S"
+        ],
+        "signal_fingerprint": "117d0103f35bf791827b602ef8a4bc33726a20cd910aa61de7386ca554275ba2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep",
+      "sha256": "9a9f56833f1745eeb8ed62c77b6c78d512dd5c2cdbd1b7e7c60175f2c0a2b46e",
+      "text_characters": 6784
+    },
+    {
+      "id": "ab250-voice-acs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-acs-resource",
+      "checked_at": "2026-09-28T06:21:39.693463+00:00",
+      "health": {
+        "id": "ab250-voice-acs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-acs-resource",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-acs-resource",
+        "content_type": "text/html",
+        "page_title": "Connect to Azure Communication Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-acs-resource",
+        "duration_signals": [],
+        "signal_fingerprint": "9846a9133f904d50cee0205ec04820fda027a16f4bdce4273d50c4ba1339a264",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-acs-resource",
+      "sha256": "6e5a73bd7c57f2ab05a8d32bfaaadf6c1cd11ace9ede794a7be16c6aa1f6761b",
+      "text_characters": 2087
+    },
+    {
+      "id": "ab250-voice-faq",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-faqs",
+      "checked_at": "2026-09-28T06:21:39.702777+00:00",
+      "health": {
+        "id": "ab250-voice-faq",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-faqs",
+        "checked_at": "2026-09-28T06:21:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-faqs",
+        "content_type": "text/html",
+        "page_title": "FAQ about the voice channel",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-faqs",
+        "duration_signals": [],
+        "signal_fingerprint": "be6aae53de5ab83c1b3888e954f8d98faee35dded25892d4cc2b51fc88a8ca64",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-faqs",
+      "sha256": "6ed6e8e7f923b56faace86f48cc4b849f9dc03aac22612ffdc57d48d7e725edb",
+      "text_characters": 10959
+    },
+    {
+      "id": "ab250-voice-install",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-install",
+      "checked_at": "2026-09-28T06:21:40.048759+00:00",
+      "health": {
+        "id": "ab250-voice-install",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-install",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-install",
+        "content_type": "text/html",
+        "page_title": "Install the voice channel in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-install",
+        "duration_signals": [],
+        "signal_fingerprint": "9e44cc99fd48dbf40002679180b48ee0e4e0a9fc04c708de0b7e036e94a4d74f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-install",
+      "sha256": "0060ce97904911ce4a9886ac4af226d92b61aea22cf405f5453aebcfefa7feb8",
+      "text_characters": 1695
+    },
+    {
+      "id": "ab250-voice-deployment",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/resources/contact-center-deploy-voice-channel-best-practices",
+      "checked_at": "2026-09-28T06:21:40.079661+00:00",
+      "health": {
+        "id": "ab250-voice-deployment",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/resources/contact-center-deploy-voice-channel-best-practices",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/resources/contact-center-deploy-voice-channel-best-practices",
+        "content_type": "text/html",
+        "page_title": "Deployment approaches for voice channel in Dynamics 365 Contact Center - Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/resources/contact-center-deploy-voice-channel-best-practices",
+        "duration_signals": [],
+        "signal_fingerprint": "3fd24fefb04d4688c4e3e5053b182ea6ef7946d6224c6153a69c3761eb3becd5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/resources/contact-center-deploy-voice-channel-best-practices",
+      "sha256": "4f1f721f53a6323c879847cda4b4a4ef10da1f17cfbce232fdc96f939e5ef529",
+      "text_characters": 3657
+    },
+    {
+      "id": "ab250-capacity",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+      "checked_at": "2026-09-28T06:21:40.344322+00:00",
+      "health": {
+        "id": "ab250-capacity",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+        "content_type": "text/html",
+        "page_title": "Create and manage capacity profiles in Dynamics 365 Customer Service and Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "248d363d05b7f3183e6501847652e487823c6c2a285935c26c95503ed5240324",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+      "sha256": "ce352a92eb8f1d8e543ea43840def1613c05a5c71d0ba51177aba24de4f6facb",
+      "text_characters": 14427
+    },
+    {
+      "id": "ab250-hours",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+      "checked_at": "2026-09-28T06:21:40.400258+00:00",
+      "health": {
+        "id": "ab250-hours",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+        "content_type": "text/html",
+        "page_title": "Create and manage operating hours",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+        "duration_signals": [],
+        "signal_fingerprint": "036fa41472e3e56437b2179be2f0776e67341681afa9d0f90bb18c77dee024aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+      "sha256": "68a82027460308123e7c8809ab10ba8cf87790d833003873c45d7de9ff66a1ad",
+      "text_characters": 6813
+    },
+    {
+      "id": "ab250-queues",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel",
+      "checked_at": "2026-09-28T06:21:40.612705+00:00",
+      "health": {
+        "id": "ab250-queues",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel",
+        "content_type": "text/html",
+        "page_title": "Create and manage queues for unified routing",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel",
+        "duration_signals": [],
+        "signal_fingerprint": "9940aaf29681bddab056b8ae01cf24f5c1eeb3b097db552e102b5f6898908987",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel",
+      "sha256": "4bb5eef0617164152aaeaee2f1d020ceae732fbd991f0adf5e6ff421d646f382",
+      "text_characters": 11228
+    },
+    {
+      "id": "ab250-embedded",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/set-up-embedded-experience",
+      "checked_at": "2026-09-28T06:21:40.699665+00:00",
+      "health": {
+        "id": "ab250-embedded",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/set-up-embedded-experience",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/set-up-embedded-experience",
+        "content_type": "text/html",
+        "page_title": "Set up the embedded experience in Salesforce for Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/set-up-embedded-experience",
+        "duration_signals": [],
+        "signal_fingerprint": "21c1a49300228ebada1440735aaf13bd07642e84a66568e168e89f46f46135ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/set-up-embedded-experience",
+      "sha256": "3ee1cd72ac9ceae8f09f9a00c1bce420b384bc99916af2b722f3bd170e2a126c",
+      "text_characters": 3320
+    },
+    {
+      "id": "ab250-connector",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+      "checked_at": "2026-09-28T06:21:40.766461+00:00",
+      "health": {
+        "id": "ab250-connector",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+        "content_type": "text/html",
+        "page_title": "Configure the connector for any CRM solution",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+        "duration_signals": [],
+        "signal_fingerprint": "eca10c9c56fc75111d465b5d6c2bda556594f1bfee499c02f2bebef2f5bbea3b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+      "sha256": "11a133e7fbfc6651f86b1bdc8b551aed0c484b7ec6bd6df5792c36b51b622525",
+      "text_characters": 4101
+    },
+    {
+      "id": "ab250-rollout",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+      "checked_at": "2026-09-28T06:21:40.987354+00:00",
+      "health": {
+        "id": "ab250-rollout",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+        "checked_at": "2026-09-28T06:21:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+        "content_type": "text/html",
+        "page_title": "Create rollout plans to manage AI agents",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+        "duration_signals": [],
+        "signal_fingerprint": "9e731dda37dfa0ceb544e2e8b1e3134f65e2cc0b5b701716d0b05a119a4bbcdc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+      "sha256": "b9adac9cff582214d0441589cac223ff2f8e659d4714d7e652d2e1e2cfa963a5",
+      "text_characters": 3430
+    },
+    {
+      "id": "ab250-service-ops",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+      "checked_at": "2026-09-28T06:21:41.096270+00:00",
+      "health": {
+        "id": "ab250-service-ops",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+        "content_type": "text/html",
+        "page_title": "Use Service Operations Agent in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "fac89d12505d868c5c88dd76f699d6b7005351d78d31e593a95c942a876fdc4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+      "sha256": "b96034ebcbb22160e3774be0a88e362b690d969a2e8b7e35c3a1e2b8ec0819ee",
+      "text_characters": 8525
+    },
+    {
+      "id": "ab250-proactive",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+      "checked_at": "2026-09-28T06:21:41.110782+00:00",
+      "health": {
+        "id": "ab250-proactive",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+        "content_type": "text/html",
+        "page_title": "Configure proactive engagement in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "71aefe8bc9369b261432f8722657f4a86c5a9034f62b233c8f2ff85b085de782",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+      "sha256": "6633508e1a15cec9fd76a2ec0351a17a876c0f6f242f589548a43e4e7311d0fa",
+      "text_characters": 34231
+    },
+    {
+      "id": "ab250-quality-coach",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+      "checked_at": "2026-09-28T06:21:41.294383+00:00",
+      "health": {
+        "id": "ab250-quality-coach",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+        "content_type": "text/html",
+        "page_title": "Configure quality and coaching skill in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+        "duration_signals": [],
+        "signal_fingerprint": "7433e37559b10c2a9c05ea37d6888ace60ae2d86cd6e2ed9b3b4fc7099ef70af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+      "sha256": "55c4261d4c3cd91ed4c0d068e2f9f0719bca4cdf75d8f1633674b0eea4c74df7",
+      "text_characters": 8131
+    },
+    {
+      "id": "ab250-quality",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+      "checked_at": "2026-09-28T06:21:41.405244+00:00",
+      "health": {
+        "id": "ab250-quality",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+        "content_type": "text/html",
+        "page_title": "Manage quality evaluation",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "891a194c82418fb446d408e32a64ae9d383b57de91862dd71a1b0d409dfbd113",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+      "sha256": "32abb588fdd666341b9fe791d709d60156ae3931bf2b5b08532cceec5ad541a6",
+      "text_characters": 9861
+    },
+    {
+      "id": "ab250-intent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+      "checked_at": "2026-09-28T06:21:41.556595+00:00",
+      "health": {
+        "id": "ab250-intent",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+        "content_type": "text/html",
+        "page_title": "Manage Customer Intent Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "5953704cd1fc631491d0c53b7d107a0e02ee9b43d52e3fbe0a2103cd61615192",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+      "sha256": "1b1feea9a7eba2cd9f304bcbcc186d1ae8646cad928b13568231127a64b16ca4",
+      "text_characters": 19501
+    },
+    {
+      "id": "ab250-knowledge",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+      "checked_at": "2026-09-28T06:21:41.662367+00:00",
+      "health": {
+        "id": "ab250-knowledge",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+        "content_type": "text/html",
+        "page_title": "Manage Customer Knowledge Management Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "945df914d713db9becea6ccb7d64d9a7f76451e4920207ee9e1d65f4f39e11ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+      "sha256": "11709a2fdcc736f9eda0de960c889118427a5a541d65fc70ed5373b10eda488b",
+      "text_characters": 20007
+    },
+    {
+      "id": "ab250-diagnose",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+      "checked_at": "2026-09-28T06:21:41.828808+00:00",
+      "health": {
+        "id": "ab250-diagnose",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+        "content_type": "text/html",
+        "page_title": "Diagnose contact center health with the Application Insights dashboard",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+        "duration_signals": [
+          "15 minutes",
+          "2 hours",
+          "24 hours",
+          "approximately 24 hours"
+        ],
+        "signal_fingerprint": "3a0b563a4c556f604ef659453a8e2ced626b41468c9fd90e0d0dceb8f8df5a7e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+      "sha256": "8492e3bc7a9507d097562c056f9ab416cb05cb9155f9c53ed9edde6af9e18911",
+      "text_characters": 9791
+    },
+    {
+      "id": "ab250-realtime",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/transparency-note-real-time-voice-agents",
+      "checked_at": "2026-09-28T06:21:41.863551+00:00",
+      "health": {
+        "id": "ab250-realtime",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/transparency-note-real-time-voice-agents",
+        "checked_at": "2026-09-28T06:21:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/transparency-note-real-time-voice-agents",
+        "content_type": "text/html",
+        "page_title": "Transparency note for real-time agents in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/transparency-note-real-time-voice-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "adbe9aa2e25407a1ff43ff1ad6237da5a73fb5350eb30c3a8cdc7892c90bb714",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/transparency-note-real-time-voice-agents",
+      "sha256": "89d6efa64dc196326d438c5c5fff47b770e21aecd8152f6e388667ac623f91b0",
+      "text_characters": 24145
+    },
+    {
+      "id": "ab250-wem-tools",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+      "checked_at": "2026-09-28T06:21:42.140789+00:00",
+      "health": {
+        "id": "ab250-wem-tools",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+        "checked_at": "2026-09-28T06:21:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+        "content_type": "text/html",
+        "page_title": "Overview of Dynamics 365 Workforce Management MCP tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "f9127883a9f9604c96bb8565dac7366dbedcef17a444c0b8ca06877951006d07",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+      "sha256": "732b3212490fad70183a077ce4410fc3a4fdc02ad1e39e65d535e34193684122",
+      "text_characters": 4663
+    },
+    {
+      "id": "ab250-whatsnew",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/whats-new",
+      "checked_at": "2026-09-28T06:21:42.173217+00:00",
+      "health": {
+        "id": "ab250-whatsnew",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/whats-new",
+        "checked_at": "2026-09-28T06:21:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "27c39f1bb670cf2edd58ccec49063921aa82b247629c36ea1cb218eb19b69c05",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/whats-new",
+      "sha256": "2bc92579c107b0b4e864800b0e38e3388ddddade278be702d9fa6170777efbd8",
+      "text_characters": 1307
+    },
+    {
+      "id": "ab250-wem-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/03/dynamics-365-workforce-engagement-management-mcp-tools/",
+      "checked_at": "2026-09-28T06:21:42.281785+00:00",
+      "health": {
+        "id": "ab250-wem-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/03/dynamics-365-workforce-engagement-management-mcp-tools/",
+        "checked_at": "2026-09-28T06:21:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/03/dynamics-365-workforce-engagement-management-mcp-tools/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Workforce Engagement Management MCP Tools for Service Agent",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/03/dynamics-365-workforce-engagement-management-mcp-tools/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "b71214330414129cb884ca1f2304e9e931905c33a904ceba532e2b9c0ff89c1e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/03/dynamics-365-workforce-engagement-management-mcp-tools/",
+      "sha256": "2e2abb27436115a4550bcf25de27354aaaa437c8de8235df99bff925acad61d6",
+      "text_characters": 8484
+    },
+    {
+      "id": "ab250-wem-ga-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/22/workforce-engagement-management-dynamics-3/",
+      "checked_at": "2026-09-28T06:21:42.510486+00:00",
+      "health": {
+        "id": "ab250-wem-ga-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/22/workforce-engagement-management-dynamics-3/",
+        "checked_at": "2026-09-28T06:21:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/22/workforce-engagement-management-dynamics-3/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Workforce engagement management in Dynamics 365",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/22/workforce-engagement-management-dynamics-3/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "6 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "407d0e77621d8722914eb130ae589d93974ef516a286edc1f3ea9d4badda3f42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/22/workforce-engagement-management-dynamics-3/",
+      "sha256": "6a41c6c2779d3fc8af5d9d3b138c0b17ae76b1ce8725a7ea7dcfb544388a4909",
+      "text_characters": 11557
+    },
+    {
+      "id": "ab250-acs-migration",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+      "checked_at": "2026-09-28T06:24:24.207210+00:00",
+      "health": {
+        "id": "ab250-acs-migration",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+        "content_type": "text/html",
+        "page_title": "Plan migration from Azure Communication Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+        "duration_signals": [],
+        "signal_fingerprint": "dfc50d93c9e14c070e2642c583b1f81cb740f7314328b1cd4918669a53c42270",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+      "sha256": "21cdc9f3e39352fb41d2d41bd702eb96404b230cf2bdde4d9e796b855c9a94aa",
+      "text_characters": 9522
+    },
+    {
+      "id": "ab250-teams-migration",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+      "checked_at": "2026-09-28T06:24:24.207904+00:00",
+      "health": {
+        "id": "ab250-teams-migration",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+        "content_type": "text/html",
+        "page_title": "Migrate from Azure Communication Services Direct Routing to Teams Direct Routing",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+        "duration_signals": [],
+        "signal_fingerprint": "3dd750bd880df4477d4b42b27d4a45f97dc820c9f4bf8fdb312d461f31e8092d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+      "sha256": "12139874bb3e44efc708739d9f4c51a0713f3206882dc36d99ae6148d2ee2821",
+      "text_characters": 8822
+    },
+    {
+      "id": "ab250-teams-voice",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+      "checked_at": "2026-09-28T06:24:24.208149+00:00",
+      "health": {
+        "id": "ab250-teams-voice",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+        "content_type": "text/html",
+        "page_title": "Configure Teams Phone in voice channel",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+        "duration_signals": [],
+        "signal_fingerprint": "9e4edc5c7586555ccb66d8195e8b300685991601b8a05f088dede2b653ef2e4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+      "sha256": "6c0aebd86e5e65b5a73cac349b11eeb7d215d43652fdb70306aac568be39ef0f",
+      "text_characters": 6864
+    },
+    {
+      "id": "ab250-simulation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+      "checked_at": "2026-09-28T06:24:24.583555+00:00",
+      "health": {
+        "id": "ab250-simulation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+        "content_type": "text/html",
+        "page_title": "Use AI-generated conversations for agentic simulations in Dynamics 365 Contact Center (preview)",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "df3375f54433ecf328c2096788af5ef22f41b3bc473a3633a8a0ba9404c3cdf4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+      "sha256": "cdfdbeeb836395d51273fd4cbb2574dbac79d81311c74c58e17a5b0eabc6be1b",
+      "text_characters": 3794
+    },
+    {
+      "id": "ab250-agents",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-contact-center-agents",
+      "checked_at": "2026-09-28T06:24:24.621063+00:00",
+      "health": {
+        "id": "ab250-agents",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-contact-center-agents",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-contact-center-agents",
+        "content_type": "text/html",
+        "page_title": "Overview of contact center agents in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-contact-center-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "315fdca7b7b32a5289a93e07528891d8f13690821b48964ad3bdbdba164e4b31",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-contact-center-agents",
+      "sha256": "6e5f9425302f3b37986d357d053f07e91c0cc9846bf77b60b7f3221d0aa51dc3",
+      "text_characters": 2655
+    },
+    {
+      "id": "ab250-overflow",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+      "checked_at": "2026-09-28T06:24:24.648214+00:00",
+      "health": {
+        "id": "ab250-overflow",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+        "content_type": "text/html",
+        "page_title": "Manage overflow of work items in queues",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+        "duration_signals": [
+          "1 minute",
+          "10 Minutes",
+          "15 minutes",
+          "3 minutes",
+          "60 minutes"
+        ],
+        "signal_fingerprint": "474c4f89c91d781145edeed42d31a6e528405bcefe6f8cc4006127d7b8e9aeab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+      "sha256": "86b4df6501ba2c7657c8256f49c076f5a880c439ffbd3495de8151c5dcacf475",
+      "text_characters": 19012
+    },
+    {
+      "id": "ab250-route-rules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-route-to-queue-rules",
+      "checked_at": "2026-09-28T06:24:24.861354+00:00",
+      "health": {
+        "id": "ab250-route-rules",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-route-to-queue-rules",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-route-to-queue-rules",
+        "content_type": "text/html",
+        "page_title": "Configure route-to-queue rules",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-route-to-queue-rules",
+        "duration_signals": [],
+        "signal_fingerprint": "7c17929ac2608f97646e02dd57f602b7a30a5bc026495f8242a0558590e22f0e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-route-to-queue-rules",
+      "sha256": "bdf0aa563d8816b3daac88a7221867ca7895ad7f01bc10cabd04e07c45cef692",
+      "text_characters": 7486
+    },
+    {
+      "id": "ab250-realtime-setup",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+      "checked_at": "2026-09-28T06:24:24.920978+00:00",
+      "health": {
+        "id": "ab250-realtime-setup",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+        "content_type": "text/html",
+        "page_title": "Real-time agents overview - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "fe84a017ebc8bddd5bb0037399dbf1d07266e6f7b6ccbb2e8867193bf799530c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+      "sha256": "8150b5a3e890eb8b78f922d23b4a9ac6751bb641d09c17b085274ac787f51a60",
+      "text_characters": 6937
+    },
+    {
+      "id": "ab250-masking",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+      "checked_at": "2026-09-28T06:24:24.931663+00:00",
+      "health": {
+        "id": "ab250-masking",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+        "checked_at": "2026-09-28T06:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+        "content_type": "text/html",
+        "page_title": "Create and manage data masking rules",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "14df47229d4ea37d509f7016f658254a761fe430cc4b5731d066d718c470936f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+      "sha256": "3f015f26f334bc057a9e97c0c7c8d76197272be6fbdd42b6e37851642d12b890",
+      "text_characters": 3376
+    },
+    {
+      "id": "ab250-voice-masking",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/agent-sensitive-data-masking",
+      "checked_at": "2026-09-28T06:24:25.122692+00:00",
+      "health": {
+        "id": "ab250-voice-masking",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/agent-sensitive-data-masking",
+        "checked_at": "2026-09-28T06:24:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/agent-sensitive-data-masking",
+        "content_type": "text/html",
+        "page_title": "Configure sensitive variable masking for voice agents",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/agent-sensitive-data-masking",
+        "duration_signals": [],
+        "signal_fingerprint": "a110c4f6c5d7835a2cbe09d365c3e3b8a6dd9e4ba9f1e44c50e8a81e5d00bc3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/agent-sensitive-data-masking",
+      "sha256": "b29f43ad67a2772cc00deadf1a801aa262f51eef06959023f280e006bb03d015",
+      "text_characters": 6522
+    },
+    {
+      "id": "ab250-chat-auth",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-chat-auth-settings",
+      "checked_at": "2026-09-28T06:24:25.197963+00:00",
+      "health": {
+        "id": "ab250-chat-auth",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-chat-auth-settings",
+        "checked_at": "2026-09-28T06:24:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-chat-auth-settings",
+        "content_type": "text/html",
+        "page_title": "Configure authentication settings",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-chat-auth-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "9014be7f8b525018aead661f640ce18f07f80ceafbfd0a8fea45058db373d961",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-chat-auth-settings",
+      "sha256": "42a3441c873305110a7ef474c64c2cc7fa920b337088385c126d0ce5b10e30ca",
+      "text_characters": 15964
+    },
+    {
+      "id": "ab250-record-api",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/api/record-transcription-api",
+      "checked_at": "2026-09-28T06:24:25.205548+00:00",
+      "health": {
+        "id": "ab250-record-api",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/api/record-transcription-api",
+        "checked_at": "2026-09-28T06:24:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/api/record-transcription-api",
+        "content_type": "text/html",
+        "page_title": "Use APIs to pause, resume transcription and recording",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/api/record-transcription-api",
+        "duration_signals": [],
+        "signal_fingerprint": "5cedaf6c63339029a3772a76f315e027d577d7bf1ddc67d9fa9326e1eb359835",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/api/record-transcription-api",
+      "sha256": "ceb3fb85f526ec32257403e7c24e3fcba0c2f5e67d481b98a9755c915766ee95",
+      "text_characters": 1765
+    },
+    {
+      "id": "ab250-release26073",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics365-omnichannel/26073",
+      "checked_at": "2026-09-28T06:24:25.360067+00:00",
+      "health": {
+        "id": "ab250-release26073",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics365-omnichannel/26073",
+        "checked_at": "2026-09-28T06:24:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics365-omnichannel/26073",
+        "content_type": "text/html",
+        "page_title": "Microsoft Dynamics 365 Contact center - Update 26073 - Release Notes",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics365-omnichannel/26073",
+        "duration_signals": [],
+        "signal_fingerprint": "89ba213f2f8e0145b0b442efc93ec361e07b5bdfa1873baa43f878a640dc9a7c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics365-omnichannel/26073",
+      "sha256": "e6ff2589d0a98a2cbf522c75ee897944e354da40f628ae19f5167476462b3ded",
+      "text_characters": 36379
+    },
+    {
+      "id": "ab250-release-wave",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/",
+      "checked_at": "2026-09-28T06:24:25.468826+00:00",
+      "health": {
+        "id": "ab250-release-wave",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/",
+        "checked_at": "2026-09-28T06:24:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/",
+        "content_type": "text/html",
+        "page_title": "Overview of Dynamics 365 Contact Center 2026 release wave 1",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/",
+        "duration_signals": [],
+        "signal_fingerprint": "7240b9a7bdf8f0fddfebf7ec759d4413eacbe16989b7422a7f1a85e1e70ff458",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/",
+      "sha256": "f3d164185ea81abb8ce9f68bea1d2e5ba84fd3dac7097646e703b879ad95ec00",
+      "text_characters": 8911
+    },
+    {
+      "id": "ab250-deprecations",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "checked_at": "2026-09-28T06:25:51.533260+00:00",
+      "health": {
+        "id": "ab250-deprecations",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+        "checked_at": "2026-09-28T06:25:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+        "content_type": "text/html",
+        "page_title": "Deprecations in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+        "duration_signals": [],
+        "signal_fingerprint": "6db741a6234ac0bf9c763462727bc1635045e0df2e25c27b4a94f585dec2aa19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "sha256": "d686efc68cb4f161550c25c9137a92880832d231fe4311f686b55086572cd77e",
+      "text_characters": 4937
+    },
+    {
+      "id": "ab250-acs-retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+      "checked_at": "2026-09-28T06:25:51.533998+00:00",
+      "health": {
+        "id": "ab250-acs-retirement",
+        "url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+        "checked_at": "2026-09-28T06:25:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+        "content_type": "text/html",
+        "page_title": "Retirement and breaking changes guide for Azure Communication Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "7be7f5ef1b1e42de6180f9d9f6ef82c52ecbb90636b9825966a230e5e5615d9c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+      "sha256": "c75675b39ac81f922343ecf04a71600419907aa83aca7865da2758327b6a67f8",
+      "text_characters": 62243
+    },
+    {
+      "id": "ab250-forecast",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+      "checked_at": "2026-09-28T06:26:42.781483+00:00",
+      "health": {
+        "id": "ab250-forecast",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+        "checked_at": "2026-09-28T06:26:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+        "content_type": "text/html",
+        "page_title": "Create and manage forecast scenarios",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+        "duration_signals": [],
+        "signal_fingerprint": "25f8d727de56e31ebbc777f5fa76443e8d60d3fdc4b1d8c1afea0c61bab69838",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+      "sha256": "20ab0567b5ce7f7f4ddfe2ef8be30feaab58cd74332ee9ebd7871c4e7a8dbadb",
+      "text_characters": 6999
+    }
+  ],
+  "added_source_ids": [
+    "ab250-voice-acs",
+    "ab250-voice-faq",
+    "ab250-voice-install",
+    "ab250-voice-deployment",
+    "ab250-capacity",
+    "ab250-hours",
+    "ab250-queues",
+    "ab250-embedded",
+    "ab250-connector",
+    "ab250-rollout",
+    "ab250-service-ops",
+    "ab250-proactive",
+    "ab250-quality-coach",
+    "ab250-quality",
+    "ab250-intent",
+    "ab250-knowledge",
+    "ab250-diagnose",
+    "ab250-realtime",
+    "ab250-wem-tools",
+    "ab250-whatsnew",
+    "ab250-wem-blog",
+    "ab250-wem-ga-blog",
+    "ab250-acs-migration",
+    "ab250-teams-migration",
+    "ab250-teams-voice",
+    "ab250-simulation",
+    "ab250-agents",
+    "ab250-overflow",
+    "ab250-route-rules",
+    "ab250-realtime-setup",
+    "ab250-masking",
+    "ab250-voice-masking",
+    "ab250-chat-auth",
+    "ab250-record-api",
+    "ab250-release26073",
+    "ab250-release-wave",
+    "ab250-deprecations",
+    "ab250-acs-retirement",
+    "ab250-forecast"
+  ],
+  "findings": [
+    {
+      "id": "ab250-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "New ACS number cutoff and eligibility remain inconsistent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 23/30 cutoff conflict and resource-only versus existing-number wording remain across current official pages.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ab250-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Monitor drift is snapshot presentation, not objective change",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "All 119 parsed detailed bullets exactly match the accepted baseline.",
+      "recommendation": "Normalize current snapshots and archive original evidence bytes/paths without changing historical hashes or outcomes.",
+      "disposition": "applied",
+      "source_id": "ab-250-blueprint",
+      "resolution": "Normalize current snapshots and archive original evidence bytes/paths without changing historical hashes or outcomes."
+    },
+    {
+      "id": "ab250-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "ACS retirement differs from immediate loss of existing service",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current affected configurations remain supported through September 30 2028.",
+      "recommendation": "Add migration scope and future planning dates while isolating new-number uncertainty.",
+      "disposition": "applied",
+      "source_id": "ab250-acs-migration",
+      "resolution": "Add migration scope and future planning dates while isolating new-number uncertainty."
+    },
+    {
+      "id": "ab250-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Apple onboarding and old forecasting have near-term removals",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Apple configuration September 30; legacy forecasting October 30.",
+      "recommendation": "Add lifecycle watch, WEM replacement and dated follow-ups.",
+      "disposition": "applied",
+      "source_id": "ab250-deprecations",
+      "resolution": "Add lifecycle watch, WEM replacement and dated follow-ups."
+    },
+    {
+      "id": "ab250-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Voice has separate ACS and Teams Phone extensibility setup paths",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dedicated Teams resource-account/sync procedure qualifies older FAQ.",
+      "recommendation": "Replace generic telephony paragraph with scoped setup table and migration evidence.",
+      "disposition": "applied",
+      "source_id": "ab250-teams-voice",
+      "resolution": "Replace generic telephony paragraph with scoped setup table and migration evidence."
+    },
+    {
+      "id": "ab250-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Direct Routing coexistence cannot reuse one SBC FQDN",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ACS and Teams cannot own the same FQDN simultaneously.",
+      "recommendation": "Add alias/certificate versus cutover decision and validation sequence.",
+      "disposition": "applied",
+      "source_id": "ab250-teams-migration",
+      "resolution": "Add alias/certificate versus cutover decision and validation sequence."
+    },
+    {
+      "id": "ab250-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "CRM synchronization and embedded UI are separate contracts",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Source identifiers, incremental events, pagination and environment scope matter.",
+      "recommendation": "Add connector lifecycle and Salesforce widget boundary.",
+      "disposition": "applied",
+      "source_id": "ab250-connector",
+      "resolution": "Add connector lifecycle and Salesforce widget boundary."
+    },
+    {
+      "id": "ab250-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Conversational setup cannot configure every routing rule",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Unconditional routing supported; classification, conditions, overflow and custom assignment excluded.",
+      "recommendation": "Add current agent responsibilities, prerequisites and manual configuration boundaries.",
+      "disposition": "applied",
+      "source_id": "ab250-service-ops",
+      "resolution": "Add current agent responsibilities, prerequisites and manual configuration boundaries."
+    },
+    {
+      "id": "ab250-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Agent simulation cannot test every journey",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview English inbound voice only, bounded calls and no DTMF.",
+      "recommendation": "Add scope matrix and wall-time/aggregate-time example without billing extrapolation.",
+      "disposition": "applied",
+      "source_id": "ab250-simulation",
+      "resolution": "Add scope matrix and wall-time/aggregate-time example without billing extrapolation."
+    },
+    {
+      "id": "ab250-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Deleting a rollout does not disable every underlying agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Intent/Knowledge settings survive plan deletion; Case Management differs.",
+      "recommendation": "Add feature-specific rollback checks.",
+      "disposition": "applied",
+      "source_id": "ab250-rollout",
+      "resolution": "Add feature-specific rollback checks."
+    },
+    {
+      "id": "ab250-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Multiple profiles intersect and release/reset rules differ",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Every attached profile must fit; manual assignment and custom limits have distinct effects.",
+      "recommendation": "Add capacity example and diagnosis/release boundaries.",
+      "disposition": "applied",
+      "source_id": "ab250-capacity",
+      "resolution": "Add capacity example and diagnosis/release boundaries."
+    },
+    {
+      "id": "ab250-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Operating-hour calendars need explicit target configuration",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Calendar cannot migrate through the documented export/import options.",
+      "recommendation": "Add ALM exception and default-hours/action checks.",
+      "disposition": "applied",
+      "source_id": "ab250-hours",
+      "resolution": "Add ALM exception and default-hours/action checks."
+    },
+    {
+      "id": "ab250-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Masking scope differs by channel, direction and destination",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Message masking is not identical to sensitive-variable or custom-log protection.",
+      "recommendation": "Add masking matrix, first-answer timing and pause-completion tests.",
+      "disposition": "applied",
+      "source_id": "ab250-masking",
+      "resolution": "Add masking matrix, first-answer timing and pause-completion tests."
+    },
+    {
+      "id": "ab250-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Outbound controls depend on path, queue state and customer time zone",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview timing differs on Teams/ACS, missing time zone falls back to UTC, cancellation queued-only.",
+      "recommendation": "Add current dial/intake/retry/stop controls and fixed-offset quiet-hour example.",
+      "disposition": "applied",
+      "source_id": "ab250-proactive",
+      "resolution": "Add current dial/intake/retry/stop controls and fixed-offset quiet-hour example."
+    },
+    {
+      "id": "ab250-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "WEM scenarios replace older forecasting with explicit lifecycle",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Horizon, refresh, immutable inputs, planning groups and snapshots are documented.",
+      "recommendation": "Add supported scenario behavior and bounded staffing arithmetic.",
+      "disposition": "applied",
+      "source_id": "ab250-forecast",
+      "resolution": "Add supported scenario behavior and bounded staffing arithmetic."
+    },
+    {
+      "id": "ab250-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Workforce tool decisions cover time-off only",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "List/detail supports swaps/bids; decision requires pending time-off and reviewer permission.",
+      "recommendation": "Add role/action matrix, replay limits and future-tool distinction.",
+      "disposition": "applied",
+      "source_id": "ab250-wem-tools",
+      "resolution": "Add role/action matrix, replay limits and future-tool distinction."
+    },
+    {
+      "id": "ab250-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Real-time voice and digital agents have different evidence limits",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Digital preview/auth and model/geography/transcript constraints apply.",
+      "recommendation": "Add channel-specific checks, conversion limitation and incomplete-transcript warning.",
+      "disposition": "applied",
+      "source_id": "ab250-realtime-setup",
+      "resolution": "Add channel-specific checks, conversion limitation and incomplete-transcript warning."
+    },
+    {
+      "id": "ab250-deep-18",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Fallback, prequeue and postqueue checks are different",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Fallback bypasses overflow; prequeue runs once; postqueue/playbooks have different reevaluation.",
+      "recommendation": "Add routing sequence, cached-count and continuous-playbook boundaries.",
+      "disposition": "applied",
+      "source_id": "ab250-overflow",
+      "resolution": "Add routing sequence, cached-count and continuous-playbook boundaries."
+    },
+    {
+      "id": "ab250-deep-19",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Intent scope must align chat workstream and business line",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "LOB/rule configuration determines which intent context applies.",
+      "recommendation": "Add scope, reviewed intents and knowledge/authorization boundaries.",
+      "disposition": "applied",
+      "source_id": "ab250-intent",
+      "resolution": "Add scope, reviewed intents and knowledge/authorization boundaries."
+    },
+    {
+      "id": "ab250-deep-20",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Knowledge harvesting needs distinct configuration and input scope",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Connections, flows, publication, source attributes and closed-record triggers differ.",
+      "recommendation": "Add knowledge-agent prerequisites and scoped author/reviewer controls.",
+      "disposition": "applied",
+      "source_id": "ab250-knowledge",
+      "resolution": "Add knowledge-agent prerequisites and scoped author/reviewer controls."
+    },
+    {
+      "id": "ab250-deep-21",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Quality scoring can be irreversible and has distinct record types",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Criteria scoring cannot be turned off; email evaluation remains preview.",
+      "recommendation": "Add prerequisite/role and configuration decision boundaries.",
+      "disposition": "applied",
+      "source_id": "ab250-quality",
+      "resolution": "Add prerequisite/role and configuration decision boundaries."
+    },
+    {
+      "id": "ab250-deep-22",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Guardrail violations are not numeric score components",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Quality library/plan separates indicators, violations, sampling and timing.",
+      "recommendation": "Add weighted sampling/score example and use limitations.",
+      "disposition": "applied",
+      "source_id": "ab250-quality-coach",
+      "resolution": "Add weighted sampling/score example and use limitations."
+    },
+    {
+      "id": "ab250-deep-23",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Diagnostic categories overlap and telemetry has limited scope",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Rejected/no eligible can overlap; OOB assignment-only, transfer/consult excluded, data lags.",
+      "recommendation": "Add event-time investigation, distinct-ID example and correct-containment denominators.",
+      "disposition": "applied",
+      "source_id": "ab250-diagnose",
+      "resolution": "Add event-time investigation, distinct-ID example and correct-containment denominators."
+    },
+    {
+      "id": "ab250-deep-24",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Official learning outlines expose modules but not current total durations",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-250"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The implementation path exposes four modules; the four paths together expose 16. Previously captured path durations are not exposed by the current fetched pages.",
+      "recommendation": "Retain the module count, label older durations historical and distinguish the editorial study budget from provider timing.",
+      "disposition": "applied",
+      "source_id": "ab-250-path-implement",
+      "resolution": "Retain the module count, label older durations historical and distinguish the editorial study budget from provider timing."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ab250-wem-blog",
+      "decision": "accepted-bounded",
+      "author": "Edgar Wilson III",
+      "published_on": "2026-09-03",
+      "notes": "Original persona/request/action worksheet; current three tools versus future V2/V3. No workforce decisions."
+    },
+    {
+      "source_id": "ab250-wem-ga-blog",
+      "decision": "accepted-bounded",
+      "author": "Alan Ross",
+      "published_on": "2026-06-22",
+      "notes": "Original staffing and outcome worksheet; June 30 GA date stated in article; commercial/adaptor claims not independently verified."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Sixteen capacity, simulation-time, fixed-offset quiet-hour, workload/staffing, sampling/score, diagnostic-union, containment and catalog assertions. No service execution."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Current official pages conflict on new-customer ACS phone-number acquisition/port-in dates and eligibility; service sign-up date has a different scope.",
+    "No tenant, telephony, number, carrier, campaign, message, agent, simulation, billing, workforce record, API/SDK or cloud lab executed.",
+    "Offline arithmetic/set models do not test routing, scheduler, random sampling, forecast quality, queueing SLA, billing or service behavior.",
+    "Paid LinkedIn lessons and signed-in partner offerings were not accessed; current path durations not exposed. Bounded catalog search is not exhaustive.",
+    "Two blog main articles read; integrations, linked code/videos, benchmarks and deployment behavior not reproduced. Release and long reference pages reviewed only in specified sections.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "capacity_simulation_quiet_hours_workforce_quality_diagnostics_catalog_assertions": 16,
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/ab-250-2026-09-01-official-objectives.txt",
+    "sha256": "465a6902bed4ff612be45f9c72b3e11644c6e42108331debab23b62a37bb5fa5",
+    "note": "Historical evidence relocated without changing its bytes, date, hash or outcome; the accepted current snapshot is normalized presentation of the same 119 objectives."
+  }
+}

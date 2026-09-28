@@ -4,6 +4,503 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ab250-deep-review",
+      "title": "AB-250 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-250"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-250",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+          "baseline_sha256": "b8d1fa9c566c9268565552fe41e3c21a29c9a6ad1961519d092e3242037726ce",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All 119 May 15 bullets unchanged; canonical snapshot formatting accepted with original bytes archived. Active 120-minute English/no assessment confirmed."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current scoped procedures support implementation additions. Teams integration versus older FAQ, deprecated versus removed messaging, and separate routing/control layers qualified. New-number date/eligibility conflict tracked separately."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current deprecations/migration, targeted 26073 sections, WEM blogs and roadmap transition reviewed; not a full release archive. Three follow-ups scheduled."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "16 Learn modules; old durations historical. Three-day course and LinkedIn 4h38 public runtime verified. Paid lessons/partner schedule unverified; four exact catalog searches empty, not proof of absence."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Contact Center pages disagree on September 23/30 new ACS number cutoff and resource-only eligibility versus ACS FAQ requiring existing numbers. October 23 new retiring-service sign-up rule is a distinct scope; no usable acquisition guarantee inferred."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab250-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "New ACS number cutoff and eligibility remain inconsistent",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 23/30 cutoff conflict and resource-only versus existing-number wording remain across current official pages.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ab250-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Monitor drift is snapshot presentation, not objective change",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "All 119 parsed detailed bullets exactly match the accepted baseline.",
+              "recommendation": "Normalize current snapshots and archive original evidence bytes/paths without changing historical hashes or outcomes.",
+              "disposition": "applied",
+              "source_id": "ab-250-blueprint",
+              "resolution": "Normalize current snapshots and archive original evidence bytes/paths without changing historical hashes or outcomes."
+            },
+            {
+              "id": "ab250-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "ACS retirement differs from immediate loss of existing service",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current affected configurations remain supported through September 30 2028.",
+              "recommendation": "Add migration scope and future planning dates while isolating new-number uncertainty.",
+              "disposition": "applied",
+              "source_id": "ab250-acs-migration",
+              "resolution": "Add migration scope and future planning dates while isolating new-number uncertainty."
+            },
+            {
+              "id": "ab250-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Apple onboarding and old forecasting have near-term removals",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Apple configuration September 30; legacy forecasting October 30.",
+              "recommendation": "Add lifecycle watch, WEM replacement and dated follow-ups.",
+              "disposition": "applied",
+              "source_id": "ab250-deprecations",
+              "resolution": "Add lifecycle watch, WEM replacement and dated follow-ups."
+            },
+            {
+              "id": "ab250-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Voice has separate ACS and Teams Phone extensibility setup paths",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Dedicated Teams resource-account/sync procedure qualifies older FAQ.",
+              "recommendation": "Replace generic telephony paragraph with scoped setup table and migration evidence.",
+              "disposition": "applied",
+              "source_id": "ab250-teams-voice",
+              "resolution": "Replace generic telephony paragraph with scoped setup table and migration evidence."
+            },
+            {
+              "id": "ab250-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Direct Routing coexistence cannot reuse one SBC FQDN",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ACS and Teams cannot own the same FQDN simultaneously.",
+              "recommendation": "Add alias/certificate versus cutover decision and validation sequence.",
+              "disposition": "applied",
+              "source_id": "ab250-teams-migration",
+              "resolution": "Add alias/certificate versus cutover decision and validation sequence."
+            },
+            {
+              "id": "ab250-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "CRM synchronization and embedded UI are separate contracts",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Source identifiers, incremental events, pagination and environment scope matter.",
+              "recommendation": "Add connector lifecycle and Salesforce widget boundary.",
+              "disposition": "applied",
+              "source_id": "ab250-connector",
+              "resolution": "Add connector lifecycle and Salesforce widget boundary."
+            },
+            {
+              "id": "ab250-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Conversational setup cannot configure every routing rule",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Unconditional routing supported; classification, conditions, overflow and custom assignment excluded.",
+              "recommendation": "Add current agent responsibilities, prerequisites and manual configuration boundaries.",
+              "disposition": "applied",
+              "source_id": "ab250-service-ops",
+              "resolution": "Add current agent responsibilities, prerequisites and manual configuration boundaries."
+            },
+            {
+              "id": "ab250-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Agent simulation cannot test every journey",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preview English inbound voice only, bounded calls and no DTMF.",
+              "recommendation": "Add scope matrix and wall-time/aggregate-time example without billing extrapolation.",
+              "disposition": "applied",
+              "source_id": "ab250-simulation",
+              "resolution": "Add scope matrix and wall-time/aggregate-time example without billing extrapolation."
+            },
+            {
+              "id": "ab250-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Deleting a rollout does not disable every underlying agent",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Intent/Knowledge settings survive plan deletion; Case Management differs.",
+              "recommendation": "Add feature-specific rollback checks.",
+              "disposition": "applied",
+              "source_id": "ab250-rollout",
+              "resolution": "Add feature-specific rollback checks."
+            },
+            {
+              "id": "ab250-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Multiple profiles intersect and release/reset rules differ",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Every attached profile must fit; manual assignment and custom limits have distinct effects.",
+              "recommendation": "Add capacity example and diagnosis/release boundaries.",
+              "disposition": "applied",
+              "source_id": "ab250-capacity",
+              "resolution": "Add capacity example and diagnosis/release boundaries."
+            },
+            {
+              "id": "ab250-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Operating-hour calendars need explicit target configuration",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Calendar cannot migrate through the documented export/import options.",
+              "recommendation": "Add ALM exception and default-hours/action checks.",
+              "disposition": "applied",
+              "source_id": "ab250-hours",
+              "resolution": "Add ALM exception and default-hours/action checks."
+            },
+            {
+              "id": "ab250-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Masking scope differs by channel, direction and destination",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Message masking is not identical to sensitive-variable or custom-log protection.",
+              "recommendation": "Add masking matrix, first-answer timing and pause-completion tests.",
+              "disposition": "applied",
+              "source_id": "ab250-masking",
+              "resolution": "Add masking matrix, first-answer timing and pause-completion tests."
+            },
+            {
+              "id": "ab250-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Outbound controls depend on path, queue state and customer time zone",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preview timing differs on Teams/ACS, missing time zone falls back to UTC, cancellation queued-only.",
+              "recommendation": "Add current dial/intake/retry/stop controls and fixed-offset quiet-hour example.",
+              "disposition": "applied",
+              "source_id": "ab250-proactive",
+              "resolution": "Add current dial/intake/retry/stop controls and fixed-offset quiet-hour example."
+            },
+            {
+              "id": "ab250-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "WEM scenarios replace older forecasting with explicit lifecycle",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Horizon, refresh, immutable inputs, planning groups and snapshots are documented.",
+              "recommendation": "Add supported scenario behavior and bounded staffing arithmetic.",
+              "disposition": "applied",
+              "source_id": "ab250-forecast",
+              "resolution": "Add supported scenario behavior and bounded staffing arithmetic."
+            },
+            {
+              "id": "ab250-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Workforce tool decisions cover time-off only",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "List/detail supports swaps/bids; decision requires pending time-off and reviewer permission.",
+              "recommendation": "Add role/action matrix, replay limits and future-tool distinction.",
+              "disposition": "applied",
+              "source_id": "ab250-wem-tools",
+              "resolution": "Add role/action matrix, replay limits and future-tool distinction."
+            },
+            {
+              "id": "ab250-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Real-time voice and digital agents have different evidence limits",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Digital preview/auth and model/geography/transcript constraints apply.",
+              "recommendation": "Add channel-specific checks, conversion limitation and incomplete-transcript warning.",
+              "disposition": "applied",
+              "source_id": "ab250-realtime-setup",
+              "resolution": "Add channel-specific checks, conversion limitation and incomplete-transcript warning."
+            },
+            {
+              "id": "ab250-deep-18",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Fallback, prequeue and postqueue checks are different",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fallback bypasses overflow; prequeue runs once; postqueue/playbooks have different reevaluation.",
+              "recommendation": "Add routing sequence, cached-count and continuous-playbook boundaries.",
+              "disposition": "applied",
+              "source_id": "ab250-overflow",
+              "resolution": "Add routing sequence, cached-count and continuous-playbook boundaries."
+            },
+            {
+              "id": "ab250-deep-19",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Intent scope must align chat workstream and business line",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "LOB/rule configuration determines which intent context applies.",
+              "recommendation": "Add scope, reviewed intents and knowledge/authorization boundaries.",
+              "disposition": "applied",
+              "source_id": "ab250-intent",
+              "resolution": "Add scope, reviewed intents and knowledge/authorization boundaries."
+            },
+            {
+              "id": "ab250-deep-20",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Knowledge harvesting needs distinct configuration and input scope",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Connections, flows, publication, source attributes and closed-record triggers differ.",
+              "recommendation": "Add knowledge-agent prerequisites and scoped author/reviewer controls.",
+              "disposition": "applied",
+              "source_id": "ab250-knowledge",
+              "resolution": "Add knowledge-agent prerequisites and scoped author/reviewer controls."
+            },
+            {
+              "id": "ab250-deep-21",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Quality scoring can be irreversible and has distinct record types",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Criteria scoring cannot be turned off; email evaluation remains preview.",
+              "recommendation": "Add prerequisite/role and configuration decision boundaries.",
+              "disposition": "applied",
+              "source_id": "ab250-quality",
+              "resolution": "Add prerequisite/role and configuration decision boundaries."
+            },
+            {
+              "id": "ab250-deep-22",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Guardrail violations are not numeric score components",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Quality library/plan separates indicators, violations, sampling and timing.",
+              "recommendation": "Add weighted sampling/score example and use limitations.",
+              "disposition": "applied",
+              "source_id": "ab250-quality-coach",
+              "resolution": "Add weighted sampling/score example and use limitations."
+            },
+            {
+              "id": "ab250-deep-23",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Diagnostic categories overlap and telemetry has limited scope",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Rejected/no eligible can overlap; OOB assignment-only, transfer/consult excluded, data lags.",
+              "recommendation": "Add event-time investigation, distinct-ID example and correct-containment denominators.",
+              "disposition": "applied",
+              "source_id": "ab250-diagnose",
+              "resolution": "Add event-time investigation, distinct-ID example and correct-containment denominators."
+            },
+            {
+              "id": "ab250-deep-24",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Official learning outlines expose modules but not current total durations",
+              "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The implementation path exposes four modules; the four paths together expose 16. Previously captured path durations are not exposed by the current fetched pages.",
+              "recommendation": "Retain the module count, label older durations historical and distinguish the editorial study budget from provider timing.",
+              "disposition": "applied",
+              "source_id": "ab-250-path-implement",
+              "resolution": "Retain the module count, label older durations historical and distinguish the editorial study budget from provider timing."
+            }
+          ],
+          "notes": "Whole guide read and all 119 unchanged May objectives mapped across 15 groups. Add six synthetic examples, two labs (ten total), 48 answered checks and two bounded WEM blog exercises. Deepen telephony migration, agent/simulation scope, capacity, masking, proactive engagement, WEM, routing, knowledge, quality and diagnostics. Preserve unresolved ACS new-number cutoff/eligibility conflict. Sixteen offline assertions passed; no tenant/telephony/agent/paid-course execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ab-250-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 23,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ai500-deep-review",
       "title": "AI-500 complete guide and learning-content review",
       "rubric_version": 1,

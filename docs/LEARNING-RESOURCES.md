@@ -1051,13 +1051,30 @@ The four official paths previously listed **12 hours 3 minutes** in total; their
 
 ### AB-250 — Transforming Contact Center Experiences with AI in Dynamics 365
 
-- Four official Microsoft Learn paths (**11 hours 40 minutes listed; allow 35–60 hours with end-to-end journey design and tenant work**): [implementation](https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/), [channels](https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/), [representative experience](https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/), and [operations/analytics](https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/)
-- Instructor-led course (3 days): [AB-250T00-A](https://learn.microsoft.com/en-us/training/courses/ab-250t00)
-- First-party reference (10–25 hours selected reading): [Dynamics 365 Contact Center documentation](https://learn.microsoft.com/en-us/dynamics365/contact-center/)
-- Subscription course (about 6–8 hours estimated; verify runtime): [LinkedIn Learning AB-250 Cert Prep](https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/); use the official blueprint to filter substantial adjacent AI-foundation material
-- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current delivery, exact start/end times, seats, and prerequisites
+Resource details from the [AB-250 guide](../guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. The official credential page does not offer a Practice Assessment. Choose the official paths first and build complete digital, voice, routing, agent, representative and supervisor journeys. No exact current Pluralsight, O'Reilly, MeasureUp or Whizlabs AB-250 product was independently verified on September 1, 2026. Marketplace listings built around hundreds or thousands of questions were deliberately excluded; reject recalled content and pass guarantees.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build representative end-to-end journeys, and add another resource only for a measured gap.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official AB-250 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250) | Free | 1–2 hours to map objectives |
+| [Implement an AI-powered contact center](https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/) | Free | 4 modules; previous 2h 51m runtime not reverified |
+| [Configure Contact Center channels](https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/) | Free | 4 modules; previous 3h 11m runtime not reverified |
+| [Empower service representatives](https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/) | Free | 5 modules; previous 3h 52m runtime not reverified |
+| [Monitor and optimize Contact Center](https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/) | Free | 3 modules; previous 1h 46m runtime not reverified |
+| [AB-250T00-A course](https://learn.microsoft.com/en-us/training/courses/ab-250t00) | Paid/provider-dependent | 3 days |
+| [Dynamics 365 Contact Center documentation](https://learn.microsoft.com/en-us/dynamics365/contact-center/) | Free | 10–25 hours selected implementation/troubleshooting |
+| [LinkedIn Learning AB-250 Cert Prep](https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/) | Subscription/trial | 4h 38m public runtime, July 27, 2026; Tutorials Dojo; paid lessons not viewed |
+| [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Verify current session start/end time after sign-in |
+
+The four official paths expose **16 modules (4 + 4 + 5 + 3)**. Their old **11h 40m** duration total is historical; the fetched current outlines do not expose those totals. Allow roughly **40–70 hours** with journey design and ten labs as an editorial planning estimate. The three-day course remains listed; a partner schedule requires sign-in and was not verified. The official credential page does not offer a Practice Assessment. No exact current AB-250 product from Pluralsight, O'Reilly, MeasureUp or Whizlabs was independently verified on September 28, 2026. These bounded catalog searches do not establish market-wide absence. The LinkedIn outline includes broad Azure/AI material, so map lessons to the actual objectives instead of treating the full runtime as exam-specific coverage. Reject recalled live content, “valid questions” and pass guarantees.
+
+#### Useful blogs and focused exercises
+
+- [Workforce management meets AI: WEM MCP tools](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/03/dynamics-365-workforce-engagement-management-mcp-tools/) — Edgar Wilson III, September 3, 2026. Build a request/action matrix for representative and supervisor personas. Separate list/detail from time-off decisions, then add unauthorized planning-group access, decided-request replay and missing rejection reasons. Keep V2/V3 schedule, leave-balance and clock tools in a future column. Allow 45–60 minutes; use synthetic records and perform no real workforce decisions.
+- [Optimize workforce operations across people and AI agents](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/22/workforce-engagement-management-dynamics-3/) — Alan Ross, June 22, 2026, with a June 30 GA date in the article. Connect demand, staffing assumptions, schedules, adherence and quality in one worksheet. Use worked example 4, then vary volume/AHT/shrinkage and explain why queueing targets still need a proper model. Treat adapter and commercial claims as leads requiring current product verification. Allow 45–75 minutes.
+
+Both main articles were read; linked videos, integrations, tenant behavior and performance claims were not reproduced. Their exercises supplement the blueprint. The [historical release plan](https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/) says new capabilities move to the AI at Work roadmap from September 2026. Use it with current implementation and deprecation pages; a planned release date or a generic [what's-new landing page](https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/whats-new) is not tenant availability evidence. The [26073 release notes](https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics365-omnichannel/26073) provide additional targeted messaging/voice regression ideas; only relevant sections were reviewed, not the entire release archive.
 
 ### MB-230 — Microsoft Dynamics 365 Customer Service Functional Consultant
 

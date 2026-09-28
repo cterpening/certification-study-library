@@ -3,6 +3,552 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ab250-voice-acs",
+      "title": "Connect Contact Center to Azure Communication Services",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-acs-resource",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full short ACS connection article read: instance/resource and number/environment binding. No provisioning or porting. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-voice-faq",
+      "title": "Contact Center voice FAQ",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-faqs",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: General/setup, number/provider and voice-quality sections read. Older no-native-Teams-number statement scoped against dedicated Teams Phone procedure. Remaining FAQ not audited in full. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-voice-install",
+      "title": "Install Contact Center voice",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-install",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Short installation/prerequisite page read, including two-hour maximum call duration. No channel installed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-voice-deployment",
+      "title": "Voice channel deployment approaches",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/resources/contact-center-deploy-voice-channel-best-practices",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full deployment-approach article read; carrier/SBC boundary and SIP context notes used. Pricing/SLA not independently contracted or tested. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-capacity",
+      "title": "Capacity profiles and release behavior",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Profile creation, reset, custom limits, assignment blocking, multiple-profile intersection and release behavior read. Offline arithmetic only. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-hours",
+      "title": "Operating hours and migration limits",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-operating-hours",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Operating-hours setup, queue defaults, holidays/time zones and Calendar migration limitation read. No calendar changed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-queues",
+      "title": "Queues and overflow for unified routing",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/queues-omnichannel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full queue procedure read, including priorities, assignment, fallback, thresholds and optional ownership. No Web API executed; unused ownership option not adopted as a lab result. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-embedded",
+      "title": "Embedded Contact Center experience",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/set-up-embedded-experience",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full Salesforce embedded-widget procedure read. No GitHub sample downloaded, Salesforce access or API setup. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-connector",
+      "title": "Configure a connector for any CRM",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/configure-custom-connector",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full any-CRM connector procedure read. Sync/pagination/source identifiers and environment boundaries applied; no flow, credential or API execution. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-rollout",
+      "title": "AI agent rollout plans",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/create-rollout-plans",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full rollout procedure read. Plan deactivation differs for Intent/Knowledge settings versus Case Management rules; no plan changed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-service-ops",
+      "title": "Service Operations Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/use-service-operations-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full supported-operation and prerequisite procedure read. Unconditional routing versus unsupported condition/classification/overflow/custom assignment limits preserved; no connection reset or agent action. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-proactive",
+      "title": "Configure proactive engagement",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-proactive-engagement",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Dial modes, priorities, unique IDs, quiet hours, retries, CSV processing, contact chains, cancellation and SBC sections reviewed. SMS-specific setup and API examples not exhaustively audited; no campaign, upload or communication. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-quality-coach",
+      "title": "Configure quality and coaching skills",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-quality-coach",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full current quality/coaching procedure read. Numeric indicators and violation guardrails, timing, sampling, activation and use limits kept distinct. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-quality",
+      "title": "Manage Quality Evaluation Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-quality-evaluation-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full September 18 quality-evaluation procedure read, including role separation, prerequisites, email preview, irreversible scoring and summary regeneration. No scoring enabled. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-intent",
+      "title": "Customer Intent Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/manage-customer-intent-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Prerequisites, LOB, discovery, intent review, knowledge and instruction sections reviewed. Not all later configuration sections audited; no discovery or routing execution. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-knowledge",
+      "title": "Customer Knowledge Management Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Prerequisite, connection, harvesting, rules and attribute/custom-table sections read. Long command-button code and later historical-harvesting details not fully audited or executed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-diagnose",
+      "title": "Application Insights contact center diagnostics",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/diagnose-dashboard",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full short dashboard article read: event-time evidence, OOB assignment scope, excluded transfer/consult, sync/lag and overlapping reason counts. No query/telemetry access. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-realtime",
+      "title": "Transparency note for real-time voice agents",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/transparency-note-real-time-voice-agents",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Architecture/capabilities, technical/safety limitations and evaluation boundaries reviewed. Detailed evaluation implementation not reproduced. One-time voice-type choice and transcript/masking limits qualified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-wem-tools",
+      "title": "Workforce Engagement Management MCP tools",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/workforce-mcp-tools-overview-service-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full three-tool catalog read: scope, reviewer permission, pending time-off-only decisions, reason and replay behavior. No workforce record changed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-whatsnew",
+      "title": "Contact Center current changes",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/whats-new",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full short generic landing page read; January page offers no detailed current release ledger and is not sufficient freshness evidence. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-wem-blog",
+      "title": "Workforce management meets AI: WEM MCP tools",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/09/03/dynamics-365-workforce-engagement-management-mcp-tools/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Edgar Wilson III September 3 main article read in full. Three current tools separated from V2/V3 roadmap; original permissions/request worksheet, no workforce actions or linked brief/code verification. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-wem-ga-blog",
+      "title": "Workforce engagement management general availability",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/22/workforce-engagement-management-dynamics-3/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Alan Ross June 22 main article read in full; article specifies June 30 GA. Original staffing/outcome worksheet; commercial/adapter claims and linked media not independently validated. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-acs-migration",
+      "title": "Plan migration from Azure Communication Services",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full September 23 plan read. Existing support through September 2028, Teams/provider migration and September 30 new-number cutoff. Conflicts with deprecation ledger September 23 cutoff. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-teams-migration",
+      "title": "Migrate ACS Direct Routing to Teams Direct Routing",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-azure-communication-services-direct-routing-to-teams-direct-routing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full Direct Routing migration procedure read. SBC FQDN coexistence/cutover and validation used. Its blanket no-longer-SMS/WhatsApp banner qualified by dated existing-channel support in lifecycle pages. No command/cutover. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-teams-voice",
+      "title": "Configure Teams Phone in Contact Center voice",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-teams-phone-in-voice-channel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full dedicated Teams Phone integration procedure read. Path, service-number/resource account, sync and role/permission requirements reviewed; no PowerShell/app consent or license change. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-simulation",
+      "title": "AI-generated conversations for agentic simulations",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/configure-simulation-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full September 21 preview procedure read: English inbound voice, five requested/two concurrent, duration/org limits, no DTMF. Credit estimate not extrapolated as verified per-call price; no simulated call. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-agents",
+      "title": "Overview of contact center agents",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/overview-contact-center-agents",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full current agent-responsibility overview read; current names taught beside blueprint vocabulary without claiming exact renames. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-overflow",
+      "title": "Manage queue overflow",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/manage-overflow",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full overflow procedure read: prequeue once, fallback bypass, cached queue counts, postqueue repeat, continuous playbooks and DID preview. No routing execution. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-route-rules",
+      "title": "Configure route-to-queue rules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-route-to-queue-rules",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full routing procedure read: classification order, hit-all/first, percentage allocation and context. No distribution guarantee for small samples. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-realtime-setup",
+      "title": "Configure real-time voice agents in Copilot Studio",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/voice-realtime-voice-agents",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full current real-time overview read: voice/digital preview, model/region, auth and transcript limits. No package/model or tenant configuration. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-masking",
+      "title": "Conversation message data masking",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/data-masking-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full message masking article read: active regex, ten-rule limit and channel/direction differences. No regex installed or real data processed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-voice-masking",
+      "title": "Voice agent sensitive-variable masking",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/agent-sensitive-data-masking",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full sensitive-variable article read, including first-answer timing and destination-specific limits. Table ambiguity not treated as blanket downstream redaction. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-chat-auth",
+      "title": "Chat authentication settings",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/create-chat-auth-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Authentication-record, channel binding, key endpoint, token provider and custom-portal sections read. Long sample code not executed; no keys created or tokens exchanged. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-record-api",
+      "title": "Pause/resume recording and transcription API",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/extend/api/record-transcription-api",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full short API overview read; separate recording/transcription operations and completion events. No API calls. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-release26073",
+      "title": "Contact Center update 26073",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/released-versions/dynamics365-omnichannel/26073",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Targeted initial messaging/voice reliability sections read for regression ideas. Full 36k-character release note and wider archive not audited; no claim this is the latest deployed tenant version. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-release-wave",
+      "title": "Contact Center historical release wave and roadmap transition",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/service/dynamics365-contact-center/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Overview/notice and relevant planning context reviewed: new disclosure moves to AI at Work roadmap in September; historical plan dates not treated as tenant availability. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-deprecations",
+      "title": "Contact Center deprecations",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "lifecycle-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full September 23 lifecycle ledger read: ACS existing-channel support, conflicting new-number cutoff, October forecasting and September Apple changes. New-number eligibility remains blocked for source clarification. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-acs-retirement",
+      "title": "ACS retirement and breaking changes",
+      "url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "lifecycle-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Overview, retired versus breaking-change matrix, number-management and SMS eligibility sections reviewed. October 23 sign-ups distinct from phone-number rules; resource-only versus existing-number eligibility remains unclear. Other 62k-character FAQ sections not fully audited. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab250-forecast",
+      "title": "Workforce engagement management forecast scenarios",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/use/workforce-management-forecast-scenarios",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "September 28 AB-250 deep review: Full September 15 forecast-scenario procedure read: 42/1095-day horizons, external-data refresh, planning-group scope, snapshots, immutable settings and deletion dependency. No forecast run. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ai500-resilience-blog",
       "title": "Interactive experiences, memory and resilient execution in Agent Framework",
       "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
@@ -22882,7 +23428,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -25146,10 +25692,32 @@
       "id": "ab-210-udemy-khaled", "title": "AB-210 Dynamics 365 Sales AI Consultant - 2026", "url": "https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/", "publisher": "Udemy / Hamdy Khaled", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["AB-210"], "notes": "Four hours 54 minutes across 40 lectures, updated August 2026 and structured around the official five domains."
     },
     {
-      "id": "ab-250-blueprint", "title": "Study guide for Exam AB-250: Transforming Contact Center Experiences with AI in Dynamics 365", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Authoritative six-domain blueprint last updated May 15, 2026; no separate skills-effective date or future update notice is published."
+      "id": "ab-250-blueprint",
+      "title": "Study guide for Exam AB-250: Transforming Contact Center Experiences with AI in Dynamics 365",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Authoritative six-domain blueprint last updated May 15, 2026; no separate skills-effective date or future update notice is published. September 28 AB-250 deep review: Full current groups read; 119 detailed bullets exactly match earlier accepted bullet text. Snapshot presentation normalized, with original bytes archived rather than rewriting historical hashes. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-credential", "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Active intermediate credential with a 120-minute English exam, four official paths and no Practice Assessment on the page."
+      "id": "ab-250-credential",
+      "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Active intermediate credential with a 120-minute English exam, four official paths and no Practice Assessment on the page. September 28 AB-250 deep review: Current credential page read: active, English, 120 minutes, no Practice Assessment. No scheduling or exam purchase. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-250-partner-transition",
@@ -25164,28 +25732,105 @@
         "AB-250",
         "AB-210"
       ],
-      "notes": "Records AB-250 as an addition after MB-240 retirement while explicitly stating it is not a direct replacement. September 28 AB-210 deep review: July 30 specialization skilling section read and corroborates MB-280 to AB-210 mapping. Other July commercial announcements not part of this review. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+      "notes": "Records AB-250 as an addition after MB-240 retirement while explicitly stating it is not a direct replacement. September 28 AB-210 deep review: July 30 specialization skilling section read and corroborates MB-280 to AB-210 mapping. Other July commercial announcements not part of this review. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Retained prior reviewed July partner-transition scope: AB-250 addition is not a direct MB-240 replacement. Full large monthly commercial announcement not audited in this review. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-path-implement", "title": "Implement an AI-powered contact center with Dynamics 365", "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Two hours 51 minutes across four modules on architecture, deployment, users, ALM, queues and routing."
+      "id": "ab-250-path-implement",
+      "title": "Implement an AI-powered contact center with Dynamics 365",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Two hours 51 minutes across four modules on architecture, deployment, users, ALM, queues and routing. September 28 AB-250 deep review: Full current public four-module path outline read; runtime not exposed; linked module lessons not completed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-path-channels", "title": "Configure channels in Dynamics 365 Contact Center", "url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Three hours 11 minutes across four modules on chat/digital, voice, channel lifecycle and voice agents."
+      "id": "ab-250-path-channels",
+      "title": "Configure channels in Dynamics 365 Contact Center",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Three hours 11 minutes across four modules on chat/digital, voice, channel lifecycle and voice agents. September 28 AB-250 deep review: Full current public four-module outline read, including Teams Phone preparation. Runtime not exposed; no lessons or channel lab execution. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-path-representatives", "title": "Empower customer service representatives in Dynamics 365 Contact Center", "url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Three hours 52 minutes across five modules on WFM, profiles, productivity, knowledge, agents and Copilot."
+      "id": "ab-250-path-representatives",
+      "title": "Empower customer service representatives in Dynamics 365 Contact Center",
+      "url": "https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Three hours 52 minutes across five modules on WFM, profiles, productivity, knowledge, agents and Copilot. September 28 AB-250 deep review: Full current five-module outline read; includes WFM, workspace, productivity, knowledge and current agents. Runtime not exposed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-path-monitor", "title": "Monitor and optimize Dynamics 365 Contact Center with AI-driven insights", "url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "One hour 46 minutes across three modules on supervisors, quality, proactive engagement, Power BI and Application Insights."
+      "id": "ab-250-path-monitor",
+      "title": "Monitor and optimize Dynamics 365 Contact Center with AI-driven insights",
+      "url": "https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "One hour 46 minutes across three modules on supervisors, quality, proactive engagement, Power BI and Application Insights. September 28 AB-250 deep review: Full current three-module outline read; operations, proactive and analytics. Runtime not exposed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-course", "title": "AB-250T00-A Transform contact center experiences with AI in Dynamics 365", "url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Three-day official instructor-led course; linked paths total 11 hours 40 minutes."
+      "id": "ab-250-course",
+      "title": "AB-250T00-A Transform contact center experiences with AI in Dynamics 365",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-250t00",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Three-day official instructor-led course; linked paths total 11 hours 40 minutes. September 28 AB-250 deep review: Public course metadata inspected: English, three days. No event occurrence, enrollment or teaching verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-docs", "title": "Dynamics 365 Contact Center documentation", "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Current first-party deployment, channel, routing, representative, supervisor, AI, WFM, analytics and troubleshooting documentation hub."
+      "id": "ab-250-docs",
+      "title": "Dynamics 365 Contact Center documentation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Current first-party deployment, channel, routing, representative, supervisor, AI, WFM, analytics and troubleshooting documentation hub. September 28 AB-250 deep review: Public documentation landing page read for current related implementation links; index not treated as detailed product verification. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-250-linkedin-learning", "title": "Microsoft Dynamics 365 Contact Center AI Engineer Associate (AB-250) Cert Prep", "url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/", "publisher": "LinkedIn Learning", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Current 2026 course with transcripts; includes substantial adjacent AI-foundation material, so use the official six-domain blueprint to select relevant lessons. Runtime estimated at roughly six to eight hours from the public lesson listing; verify in the subscriber page."
+      "id": "ab-250-linkedin-learning",
+      "title": "Microsoft Dynamics 365 Contact Center AI Engineer Associate (AB-250) Cert Prep",
+      "url": "https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/",
+      "publisher": "LinkedIn Learning",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "notes": "Current 2026 course with transcripts; includes substantial adjacent AI-foundation material, so use the official six-domain blueprint to select relevant lessons. Runtime estimated at roughly six to eight hours from the public lesson listing; verify in the subscriber page. September 28 AB-250 deep review: Public title/instructor/date, 4h38 runtime and main syllabus reviewed. Tutorials Dojo July 27 course includes broad Azure/AI material. Paid videos not viewed. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb-230-blueprint", "title": "Study guide for Exam MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-230"], "notes": "Authoritative three-domain blueprint: skills measured as of March 11, 2026; no future update announced."
