@@ -1044,6 +1044,8 @@ The review reconciles the complete retiring MLA-C01 blueprint with all four deta
 
 ## MLA-C02 coverage record
 
+The September 28 [deep review](research/2026-09-28-mla-c02-deep-review.md) maps 107 detailed objectives. Review the complete guide and all107 C02 skills; add five worked decisions and42 answer explanations. Refresh API-key,CodeCommit,service availability and provider guidance; add two bounded practitioner articles. Keep GA-date conflict visible. Current guide citations: 25 registered, 24 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Data Preparation for ML and AI | Section 1, all integrated scenarios, and Labs 1–3 and 8 |

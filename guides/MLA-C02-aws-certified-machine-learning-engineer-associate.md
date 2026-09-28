@@ -6,26 +6,28 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # MLA-C02 AWS Certified Machine Learning Engineer - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, beta warnings, links, and exam-integrity compliance were checked on September 1, 2026—the day registration opened. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mla-c02-coverage-record). The [official MLA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, beta warnings, links, and exam-integrity compliance were reviewed again on September 28, 2026, including all 107 detailed skills. The GA-date conflict remains unresolved. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mla-c02-coverage-record). The [official MLA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html) is authoritative.
 
 **Current baseline:** Initial MLA-C02 four-domain blueprint published September 1, 2026; beta registration is open and English beta delivery begins September 29<br>
 **Beta appointment code:** **ME1-C02**. The guide/version is MLA-C02; AWS currently uses ME1-C02 for the beta scheduling code.<br>
-**Upcoming blueprint/delivery change:** Beta is 170 minutes, 85 multiple-choice/multiple-response questions, USD 75, and English only. AWS says the standard MLA-C02 version reaches general availability on January 14, 2027; standard delivery metadata, learning assets, and any blueprint revision remain **VERIFY CURRENT**.<br>
+**Upcoming blueprint/delivery change:** Beta is 170 minutes, 85 multiple-choice/multiple-response questions, USD 75, and English only. The September announcement plans standard MLA-C02 general availability for January 14, 2027, while the credential page still lists GA dates as TBD; standard delivery metadata, learning assets, and any blueprint revision remain **VERIFY CURRENT**.<br>
 **Important freshness boundary:** This is not a renamed C01. AWS explicitly added vector databases, multimodal data, embeddings, RAG preparation and monitoring, FM data preparation/customization/deployment, Bedrock evaluations and prompt management, human/LLM evaluation, agents/protocols/state/versioning/observability, GPU/AI cost patterns, FM credentials, pipeline vulnerability checks, and Guardrails. Use the official [C01-to-C02 comparison](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html) to gap-check older material.<br>
 **Official source:** [AWS Certified Machine Learning Engineer - Associate MLA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html)
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — September 28, 2026
 
-**Confirmed transition:** AWS's [September 2026 certification update](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/) says MLA-C02 reaches general availability on January 14, 2027. It also preserves MLA-C01 in Japanese, Korean, and Simplified Chinese until that date after English C01 delivery ends September 28, 2026.
+**Scheduling boundary:** The [September announcement](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/) plans GA for January 14, 2027. The credential page still shows TBD for GA registration and delivery, so this is an announced plan with unresolved source disagreement. English C01 ends September 28; Japanese, Korean and Simplified Chinese continue until C02 GA. English beta delivery is scheduled to begin September 29 under **ME1-C02**. A future start date is not evidence that delivery has already begun.
 
-**Concern to recheck:** The January date is confirmed, but the beta can still affect scoring, form construction, learning assets, or delivery details. Use this guide's published domain structure as the current best baseline and revalidate the official exam guide and live scheduling page before booking the standard form.
+**Coverage and resources:** All 107 skills on the four C02 domain pages were reviewed. The automated broad-domain snapshot matches the accepted baseline; it does not track each detailed skill. Provider labels are insufficient: the Tutorials Dojo page now lists C02 domain sections, but still combines 65 questions with 170 minutes, unlike AWS's 85-question beta. Paid-bank coverage remains unverified. See the [review report](../docs/research/2026-09-28-mla-c02-deep-review.md).
+
+**Lab availability:** The [June 30 availability announcement](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/) places the original Amazon Bedrock Agents, now **Agents Classic**, and several SageMaker features in maintenance with July 30 new-customer closure. Do not assume an old action-group or Clarify/Debugger/Model Monitor walkthrough can be created in a new account. Preserve the agent, evaluation and monitoring concepts; select a currently supported implementation and verify account access before a paid lab. AgentCore capabilities have their own contracts and are not a drop-in replacement for every Classic resource.
 
 ## How to use this guide
 
@@ -201,7 +203,7 @@ Agent communication protocols are integration contracts, not an authorization sy
 
 Use CloudFormation/CDK for networks, identities, encryption, repositories, vector infrastructure, endpoints, knowledge bases, build/release components, alarms and budgets where supported. Pin image digests and dependencies, scan images/code, generate provenance/SBOM as required, use non-root minimal containers, restrict secrets and egress, and separate build from runtime roles.
 
-SageMaker Pipelines orchestrates ML processing/training/evaluation/registration. Step Functions coordinates broader AWS and agent/retrieval workflows; MWAA serves Airflow-based estates; CodePipeline with CodeBuild/CodeDeploy/CodeConnections connects repositories and delivery. AWS currently lists CodeCommit in C02 scope, but service availability/onboarding behavior is **VERIFY CURRENT**. Choose by required state, integration, retry/catch, governance and operator skill.
+SageMaker Pipelines orchestrates ML processing/training/evaluation/registration. Step Functions coordinates broader AWS and agent/retrieval workflows; MWAA serves Airflow-based estates; CodePipeline with CodeBuild/CodeDeploy/CodeConnections connects repositories and delivery. CodeCommit is in C02 scope; its [official document history](https://docs.aws.amazon.com/codecommit/latest/userguide/history.html) records reopening to new customers on November 25, 2025. Older July 2024 closure advice is stale. Verify region, repository credentials and pipeline connections for the chosen lab. Choose by required state, integration, retry/catch, governance and operator skill.
 
 A release pipeline should test:
 
@@ -217,6 +219,12 @@ A release pipeline should test:
 Version model registry/MLflow artifacts, Bedrock custom models, prompts, agent aliases/versions, guardrails, tools and knowledge-base/index manifests. Promotion should reference immutable versions and require appropriate approval. Automated retraining, fine-tuning, prompt change, agent deployment or knowledge refresh starts validation; it must not bypass it.
 
 RAG refresh cadence follows source freshness and cost. Detect additions, changes, deletions and access-policy changes; process idempotently; publish only after completeness/retrieval/security checks. FM fine-tune releases need data/model lineage and comparison to the current base/custom version. Agent releases need scenario and side-effect regression suites.
+
+### Verify new-account monitoring and evaluation paths
+
+[Clarify](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html), [Debugger](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-availability-change.html) and [Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html) remain usable by existing customers but are closed to new customers. Their notices describe alternatives including direct bias metrics/SHAP, MLflow, TensorBoard and open-source monitoring with CloudWatch/QuickSight. Select only what the workload needs; a monitoring reference stack needs its own security, cost and validation work.
+
+For agents, the [AWS AgentCore Evaluations article](https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/) distinguishes controlled on-demand evaluation from sampled production evaluation. Start with deterministic checks for tool identity, arguments and authorized side effects; use a calibrated rubric for answer quality. Sampling misses some incidents, so enforce critical permissions in the application. Pin the evaluator configuration and keep trace collection/minimization, processing geography and cost in the release contract. The article's examples were not deployed here.
 
 ### Scale from the actual bottleneck
 
@@ -256,13 +264,13 @@ Track cost per training run, deployed hour, prediction, document indexed, embedd
 
 Traditional optimization includes instance/right-sizing, efficient input, distributed strategy, Spot with checkpoints, batch/async modes, endpoint scaling, multi-model fit and eliminating idle resources. FM optimization includes model routing, prompt/context reduction, output limits, caching where safe, batch, provisioned versus on-demand comparison, quota and retry control. RAG optimization includes chunk/index size, embedding reuse, incremental sync, retrieval top-k/reranking and storage lifecycle. Agents require step/tool/token ceilings and prevention of loops/repeated retrieval.
 
-Cheaper per-token is not cheaper per correct outcome if it increases retries, escalations or errors. Compare quality-latency-cost Pareto tradeoffs against representative tasks. Budgets and alerts cap surprises; they do not substitute for per-request controls. Capacity planning includes GPUs and containers as well as model service quotas, vector query/index throughput, tool APIs, queueing and downstream databases.
+Cheaper per-token is not cheaper per correct outcome if it increases retries, escalations or errors. Compare quality-latency-cost Pareto tradeoffs against representative tasks. Budget alerts are not a hard spending cap. Use them alongside bounded tokens, steps, concurrency and retries; verify the scope and timing of any automated budget action. Capacity planning includes GPUs and containers as well as model service quotas, vector query/index throughput, tool APIs, queueing and downstream databases.
 
 ### Protect identities, data, models, prompts and actions
 
 Separate principals for humans, notebooks, data pipelines, training, evaluation, build, deployment, runtime, knowledge sync and tools. Scope `iam:PassRole`, S3/prefixes, KMS, model invocation, prompt/agent/knowledge-base operations, secrets and logs. Evaluate identity policies, resource policies, key policies/grants, SCPs, boundaries and VPC endpoint policies together.
 
-AWS lists IAM credentials and Bedrock API keys as credential choices. Select from environment, workload identity, lifetime, scope, rotation, audit and supported feature. Prefer temporary role credentials for AWS workloads; never embed keys in code/prompts/images. API-key features and constraints are **VERIFY CURRENT**. Tools must derive authorized user/tenant context from trusted application identity, not model text.
+AWS lists IAM credentials and Bedrock API keys as credential choices. Select from environment, workload identity, lifetime, scope, rotation, audit and supported feature. Prefer temporary role credentials for AWS workloads; never embed keys in code/prompts/images. The [current API-key guide](https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html) recommends short-term keys for production and long-term keys only for exploration. Short-term keys inherit the generating principal’s permissions and expire at the earlier of 12 hours or that session’s expiry. Plan refresh and revocation, and validate the target endpoint/region. A 90-day limit on a long-term service-specific credential does not make it a short-term session token. Tools must derive authorized user/tenant context from trusted application identity, not model text.
 
 Use VPCs/subnets/security groups and supported private endpoints/egress controls; encrypt data/artifacts/indexes/state/logs at rest and in transit; manage secrets; restrict notebooks; and audit API actions. Scan code/dependencies/images with appropriate pipeline tools such as Inspector and supported code-analysis capabilities. Pin/sign artifacts and validate model serialization to reduce supply-chain and replacement attacks.
 
@@ -299,9 +307,35 @@ A recommendation service combines a traditional ranking model, an FM-generated e
 
 ---
 
+## Worked decisions
+
+The following are original synthetic exercises, with 16 local checks of expected results. They do not validate a hosted model or AWS service.
+
+### Example 1: Retrieval quality depends on the authorized denominator
+
+For a tenant-A query, the authorized relevant document set is {a1, a2, a3, a4}. The three retrieved IDs are {a1, a3, a9}. Recall@3 is **2/4 = 50%** and precision@3 is **2/3 = 66.7%**. A fluent answer cannot repair the two missed documents. Retrieving a tenant-B document is an authorization failure even if a judge scores the final answer highly. Apply trusted tenant filters before retrieval and test the returned IDs as well as generated text.
+
+### Example 2: An extra model call can erase token savings
+
+Consider hypothetical prices, not current AWS rates: primary input $4/million tokens; compressor input $1/million and output $2/million. Reducing 10,000 context tokens to 2,000 changes context cost from **$0.040 to $0.022** (0.010 + 0.004 + 0.008). Reducing them only to 6,000 costs **$0.046**, more than the baseline. Count query/system tokens, final output, retries, retrieval, caching and compute in the real comparison.
+
+The [August 21 AWS compression article](https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/) is a useful pattern to investigate, not a guaranteed saving. Preserve source IDs; check each extracted span against its source and retain qualifying/contradictory evidence. Temperature zero does not establish deterministic or faithful extraction. Benchmark quality against the original authorized evidence as well as the shortened context, and measure end-to-end latency.
+
+### Example 3: Tool success and business success differ
+
+An agent calls `create_draft` for tenant A and operation 123. The backend commits, but the response times out. A retry must reuse the same tenant/operation identity and either return the existing result or report its verified status. A fresh random key can create a second draft. Reusing a key with different payload must fail. A tool response saying “success” does not prove the entire customer goal succeeded; check persisted business state, side effects and the user-visible outcome separately.
+
+### Example 4: Evaluate every layer of a release
+
+On 100 labeled requests, 90 retrieve the required evidence and 81 produce a correct answer. End-to-end correctness is **81%**. If all 81 correct answers are among those 90 retrieval successes, conditional generation correctness is **90%**. Reporting only 90% hides retrieval failures. If 20 sessions contain tool actions and 2 actions violate authorization, reject the release regardless of the average language-quality score. Compare judge disagreement against human labels and repeat stochastic scenarios.
+
+### Example 5: Restore compatible artifacts
+
+Release R1 uses embedding E1, index I1, prompt P1, model M1 and tool schema T1. R2 moves to E2/I2/P2/M2/T2. A vector query from E2 cannot safely search I1 merely because the dimensions match: the vector spaces may differ. A rollback must restore a tested compatible manifest, including access/deletion state. Keep externally committed business actions in their own audited state; reverting a model does not undo them.
+
 ## Hands-on lab path
 
-Use synthetic/non-sensitive data in a disposable account with budgets. Verify regions, quotas, model access, price and preview/GA status before creating resources, then delete them.
+These eight cloud labs are proposed and were not executed in this review. First reproduce the local worked decisions and document expected failures. Use synthetic/non-sensitive data in a disposable account with budgets. Verify regions, quotas, model access, price and preview/GA status before creating resources, then delete them.
 
 1. **Data and multimodal contract:** Inventory synthetic tables, PDFs and images; define rights/classification, schema, IDs, event time, retention, ACL and deletion lineage; inject quality failures.
 2. **Feature and RAG preparation:** Build leakage-safe features plus layout-aware chunks/metadata; compare two chunk configurations and document precision/recall/token tradeoffs.
@@ -359,6 +393,51 @@ These are original blueprint-aligned prompts, not recalled beta questions.
 41. Why is a guardrail not a complete safety architecture?
 42. Which evidence supports a kill-switch or rollback decision?
 
+## Answer explanations
+
+1. Record owner, license/consent, permitted use, classification, residency, retention/deletion, entity/time, modality, lineage and access policy.
+2. A relational vector extension can fit transactional metadata and SQL joins; a search engine may better fit combined lexical/vector retrieval and search operations. Benchmark required filters and scale.
+3. A new model changes the vector space, often its dimension too; re-embed and validate a versioned replacement index rather than mixing representations.
+4. Large chunks may retain context but add noise/tokens; overlap reduces boundary losses while duplicating storage and evidence. Tune against labeled queries.
+5. Keep stable source/document/chunk IDs, version, page/section, timestamps, trusted tenant/ACL attributes and deletion lineage.
+6. Unauthorized content can enter rerankers, logs, caches or model context before late filtering. Enforce policy at retrieval and every downstream boundary.
+7. Select features that were valid and available for the original decision, with explicit late-correction and staleness rules.
+8. Check rights, correct pairing, label quality, duplicates, secrets, unsafe content, representativeness and separation from evaluation data.
+9. Masking changes display, redaction removes content, tokenization substitutes values, anonymization addresses re-identification, and encryption controls readability with keys.
+10. Embeddings encode information about the original content and can support inference or linkage; protect the index, query logs and backups accordingly.
+11. Prefer a workflow for mandatory order, clear rules, approvals and bounded state transitions; use agent planning only where flexibility has measured value.
+12. RAG retrieves current/private evidence and provenance; tuning adapts behavior from examples. Neither automatically solves the other problem.
+13. Use representative quality and safety evaluations plus modality, context, latency, region, capacity, customization, terms and total cost.
+14. A leaderboard may use a different population, metric, prompt, cost and risk profile from the application.
+15. Underfitting fails to learn enough; overfitting fails to generalize; catastrophic forgetting loses earlier capabilities during adaptation.
+16. Pin data/splits, code/dependencies, artifacts, model/prompt/retrieval/judge versions, parameters and available seeds; record nondeterminism and repeated outcomes.
+17. Using final-test feedback to choose candidates contaminates the estimate; tune on validation, then evaluate the frozen candidate.
+18. Routing errors can send difficult or sensitive work to an unsuitable model; evaluate routing confidence, subgroup quality, fallback and compounded latency/cost.
+19. Measure authorized relevance, recall/ranking and source freshness separately from answer correctness, groundedness, citations and task completion.
+20. Overlap and semantic similarity can reward a plausible but false answer; compare claims with trusted evidence and the task rubric.
+21. Use clear examples, qualified reviewers, blinded comparisons where practical, agreement measures and adjudication of disagreements.
+22. Judge results can depend on answer order, verbosity, style, model family and rubric wording; test and calibrate these effects.
+23. Shared errors and self-preference can hide failures; combine deterministic checks, human labels and independently assessed judgments.
+24. Include source/chunk snapshot, embedding/index, model, prompt, guardrail, agent, tools, code, dependencies, policies and evaluator configuration.
+25. Use Batch Transform for offline complete-input work with a completion deadline rather than an always-available response.
+26. Predictable sustained demand or a capacity requirement may justify provisioned throughput; verify model/mode support and measured utilization economics.
+27. Verify architecture/format, tokenizer, license, supported import target, runtime outputs, security and performance on representative inputs.
+28. Propagate deletion/access changes, quarantine failed documents, reconcile completeness and publish only a validated index snapshot.
+29. Prompts guide a model; trusted backend identity, authorization and validation must constrain actions even when the model is manipulated.
+30. Session memory supports conversation; durable business records preserve authoritative, auditable state across retries and sessions.
+31. Look for duplicate/missing handoffs, conflicting state, timeouts, tool errors, loops and incomplete streams before blaming language quality.
+32. Treat versions as immutable release artifacts with evaluation, approval, staged deployment and compatible rollback.
+33. Fresh data or a new model can introduce leakage, regressions or access failures; publication needs evidence and explicit gates.
+34. The bottleneck may be memory, input I/O, network synchronization, token quota, warmup or downstream tools; more GPUs do not fix those automatically.
+35. Inspect relevance labels, missed sources, unauthorized IDs, source age and citation mismatches; fluency is not retrieval evidence.
+36. Data drift changes input population; retrieval drift changes corpus/index/relevance behavior; judge drift changes the measurement system itself.
+37. Count all model and embedding calls, input/output/cache tokens, vector/compute/storage, retries, tools, evaluation and human escalation per successful outcome.
+38. Use a tenant/permission-aware key with model/prompt/source versions, freshness/deletion rules and an acceptable retention policy; reject stale or cross-tenant hits.
+39. Prefer temporary workload identity; if bearer keys are required, use scoped short-term production keys with refresh/revocation and no logging or embedded secrets.
+40. Enforce trusted retrieval filters, minimum context, tool authorization, input/output schemas, bounded actions and approval where needed; test malicious source content.
+41. A guardrail cannot replace identity, authorization, secure storage, deterministic validation or operational recovery.
+42. Use breached quality/security/cost/latency gates and reliable trace/state evidence, with a tested compatible rollback and authority to stop execution.
+
 ## Final review checklist
 
 - I can explain the 28/24/24/24 domain weighting and every task in the September 1 blueprint.
@@ -376,19 +455,21 @@ These are original blueprint-aligned prompts, not recalled beta questions.
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed in full. Pick one primary path, build the scenarios that expose your gaps, and use legitimate practice for remediation. MLA-C02 material is launch-day content: verify that a provider maps the September 1 detailed skills—not merely the four familiar C01 domain headings. Times are provider-stated where stable and otherwise transparent estimates.
+This is **not a complete list**, and it is not meant to be consumed in full. Pick one primary path, build the scenarios that expose your gaps, and use legitimate practice for remediation. MLA-C02 preparation is still early: verify that a provider maps the September 1 detailed skills—not merely the four familiar C01 domain headings. Times are provider-stated where stable and otherwise transparent estimates.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MLA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html), detailed domains, and comparison | Public | 4–7 hours for a complete objective/delta map |
 | [AWS certification page](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) | Public | 10–15 minutes; recheck immediately before booking |
 | [AWS MLA-C02 update announcement](https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/) | Public | 10–20 minutes for audience, dates and beta contract |
-| [AWS Official Practice Question Set catalog](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english) | Free AWS account; some related items subscription | 30 minutes plus 45–90 minutes rationale review; 20 C02-aligned questions listed |
+| [AWS Official Practice Question Set catalog](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english) | Free AWS account; some related items subscription | Allow 30–90 minutes as a planning estimate; sign-in is needed to verify the current C02 set and question count |
 | [SageMaker ML lifecycle](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html) and [Pipelines tutorial](https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html) | Public; AWS usage may cost | 6–12 hours selected reading and lab |
 | [Amazon Bedrock user guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) | Public; AWS usage may cost | 12–24 hours selected model, RAG, evaluation, prompt, agent and guardrail labs |
+| [AWS query-aware compression article](https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/) (August 21, 2026) | Public | 45–90 minutes estimated reading and cost/quality exercise; code not executed |
+| [AWS AgentCore Evaluations article](https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/) (March 31, 2026) | Public | 45–90 minutes estimated reading and evaluation-plan exercise; deployment not executed |
 | [AWS Well-Architected Machine Learning Lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html) | Public | 4–8 hours selected lifecycle review |
 | [Pluralsight MLA-C01 path](https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01) | Paid/trial | 20 listed hours for retained traditional-ML/MLOps foundation; then close every C02 comparison addition separately |
-| [O'Reilly/Sybex MLA-C01 Study Guide](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/) | Paid/subscription | 13h 10m / 448 pages for retained C01 foundation; not complete C02 preparation |
-| [Tutorials Dojo MLA-C02-labeled practice page](https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/) | Paid | **Wait/verify before purchase:** page still showed 65-question and C01-labeled internal sets on September 1; recheck until the bank explicitly maps C02 skills |
+| [O'Reilly/Sybex MLA-C01 Study Guide](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/) | Paid/subscription | Allow 15–25 hours as a reading estimate; current edition/length not reverified; retained C01 foundation only |
+| [Tutorials Dojo MLA-C02-labeled practice page](https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/) | Paid | **Wait/verify before purchase:** September 28 public page has C02 domain sections but still mixes 65 questions with 170 minutes; AWS beta is 85. Verify detailed coverage and original-question provenance; paid bank not inspected |
 
-No exact mature MLA-C02 Pluralsight path, O'Reilly title, LinkedIn Learning course, Whizlabs course, MeasureUp assessment, or trustworthy long-form YouTube course was independently verified on launch day. That gap is useful information: use the official blueprint and product labs now, and recheck vendor catalogs weekly rather than filling it with similarly named or dump-like material.
+This review did not establish complete C02 coverage inside any paid course or practice bank. Older C01 catalogs are foundation material; map every C02 addition separately. Public titles, course shells and a renamed exam code do not establish lesson quality or coverage. Avoid recalled-question collections.

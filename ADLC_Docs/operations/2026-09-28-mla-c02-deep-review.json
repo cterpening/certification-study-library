@@ -1,0 +1,1622 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MLA-C02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "18ffb41258d7f3187276d4d0e14ae4e19efd809570097d8bfcb95b80098c5daa",
+  "guide_after_sha256": "36b17e9c68a8cbc3233121eb9817b8652dd1ca7bbddafd23c76151aa9f389e10",
+  "prior_records": {
+    "exam": {
+      "code": "MLA-C02",
+      "level": "intermediate",
+      "vendor_id": "aws",
+      "title": "AWS Certified Machine Learning Engineer - Associate (beta)",
+      "status": "beta",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+      "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; AWS targets candidates with at least one year using SageMaker AI, Amazon Bedrock and related ML engineering services, at least one year in a related engineering/data role, and experience with both traditional ML and generative AI. Practice governed data/features/chunks/embeddings, models/FMs/RAG/evaluation, MLOps/LLMOps, knowledge bases, agents/tools/state, monitoring/cost and layered security."
+    },
+    "review": {
+      "id": "mla-c02-2026-09-01-source-validation",
+      "exam_code": "MLA-C02",
+      "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mla-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+      "objective_coverage": [
+        {
+          "objective_group": "Data Preparation for ML and AI",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "ML Model and Foundation Model Development",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4–5 and 7"
+          ]
+        },
+        {
+          "objective_group": "Deployment and Orchestration of ML and AI Workflows",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Operating, Monitoring, and Securing ML and AI Solutions",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 17,
+        "reachable": 16,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "The initial September 1 MLA-C02 beta guide was reconciled with all four detailed domain pages, exact C01 comparison, live credential page, announcement and current service/training references. It covers every added vector/multimodal/embedding/RAG/FM/evaluation/agent/LLMOps/observability/cost/security skill without dropping retained traditional ML and MLOps. Three scenarios, eight labs and 42 original checks map data/features/chunks/embeddings/vectors; model/FM selection and customization; retrieval/generation/human/judge evaluation; models/knowledge/prompts/agents/tools/state/pipelines; and layered monitoring, unit economics and security. The ME1-C02 beta code, September 29 delivery, 170-minute/85-question/USD-75 contract, result timing and early-2027 GA plan are explicit. All 16 URLs are cataloged: 15 reachable and the O'Reilly C01 foundation book automation-blocked; none missing or broken. The launch-day commercial catalog gap and Tutorials Dojo C01 internals are labeled, and no recalled questions are used."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "608dfd69b2d8ca4ea01db8467375273436844ce716e3724100834c17e6341990",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "228a824962717518c4b86a2cd30ea1c5257d5b64c3f20ae7563ae2a6d9f0a7a7",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "bd708c1ecddc223a46a3cc3a0900b9a226b63f80cd98594920a862a6fc5e8224",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "42da9c8c154e9199daacc2008fcbc35c012dd4713a86c11665a5591237806d4d",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "4a6bea3227ff956039c252692f6842e773c90356c34c56092609afc1d83952ac",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "14c11837b4c1d0c31fb33af3ac6cb17a68ea01e5d3c6643c746098d859bb66d8",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "a08d91012af0dcd0918e41417aa9eb0d89b85a2268d4252af850f154965c8164",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "81d0f71ac8e902e35697c1a3821c303263e4255d2f05cae2b5029a739c758289",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "4cb98fe43b1307e9b5f6515aab8ff26fa1a2c90c0cc833b17fbd7c0f99dd4ef9",
+      "guide_sections": "1 / Build a versioned data and rights contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "198ac4a5a302759e6f02576ac21b229ec55d75afd886e37e375c81878825b67a",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "e3037cd5b47c3195a0ea253daa3057519eab9a5f019f237c7cac3c661f6045d9",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "46a430b04c72f29b6a63cc26864f91f76505f51dab2ccdb83c38f31b4e007c86",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "09b520d296c205bd2e8d353d75f1259a6a2fc9bf0eea90e4223dbc333ceaf7e5",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "63de5a13ac6bfa0fc98c91c75ef0ddc633d8fb6cae87f89af570535bb172b655",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "211b679ac5758ae26b61c51707f86ab255f69df192f714196163a510005cf341",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "d3b1005fa019b43c8585f0ea43e6d24c2ed2f132e3bb0d2a36b1536437c9fcf4",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "e1ed4508c0f32a29991d8933f5443c27c158a62cb256b23e9ba22bae1479fd3f",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "461fd7f2dfc88cbed6270877a9dacca239537868272ace1d70f61d72cd36c304",
+      "guide_sections": "1 / Engineer features, chunks, and embeddings deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "200a1f2d7983180569f8a2937bc2eb43dace5b5664d091d3b751526d5daf50ce",
+      "guide_sections": "1 / Validate quality and bias across modalities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "acf8507b88ce77b97764eee2cd3c0a6c9abd55f111560c675ca583620f77334d",
+      "guide_sections": "1 / Validate quality and bias across modalities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c7dceabd283a5aeb079607134d1b5b849b2149ee9e0ed66534d4d0f1acc9bfdf",
+      "guide_sections": "1 / Validate quality and bias across modalities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "ee24a64d4dd5fcd579bf9ca86a9c4bc358502dfb5e337514cc59c4877a800c2b",
+      "guide_sections": "1 / Validate quality and bias across modalities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "067fb74a26ddfb2fb09e696635069cd23a99f4be09a176aba754eae6dfabb714",
+      "guide_sections": "1 / Validate quality and bias across modalities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "67d877cd0104ae5f07d82a11a90e7105dc50f8645cc738a7d13709d85cf2850a",
+      "guide_sections": "1 / Validate quality and bias across modalities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "627a0e26ac1c633f7fa886a668da515e3d4cb70aabb03635303d98d3e777ec9e",
+      "guide_sections": "1 / Validate quality and bias across modalities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "af92a8ab05e5ec72e445a3e468f0da0b0ead953d7bcc0e7667c10c7b90ebc9d7",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "661c6913d7a0493037a4c6eec82b1b3c9e7ebd4c1c095274546f8f40e8615e42",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "6b0f454f7edbd0f604c6bd8be15dcf853c153d1ed2f2e23993f1e3b5897f4895",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "e57384e7129246422cdd562d85046ccda2a220fef3d2b217b2ebad530a593540",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b648e232aa11c347dc6f8496c7cab814f0e63efd7ee402cfc7809c6cfde309e5",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "f6e85a1a069f8e6374a75cba522d5b58f847b0fa85a1036479cdb43036213620",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "e514c61cacec3b5c0fae11b1e300df459d76779b2c684af620811df997cb6500",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "3c398c5dc8f6e427778595452ddb91e97a57da21cfe33c81440f708224f614c6",
+      "guide_sections": "2 / Choose the solution class before the product",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "19756c54c6c2bd563f7b7a9495eee9d56c8e27b3553e1f0425ea54f2a1759541",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d153b8ea8be2e70f5df34f705605aa66d030f70a9a5c9737058f1952a30c5c34",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "822bb31c0083ff5c18673cd482b018cb04a49fae18e54cb339977ec3132f1ead",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "24424ba87a5b7d5e618dade648ba438acd713f6327e3cd05c1ada782e8551788",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "654e12d9feb0635d8a69e47b0c9fdaec2aa19ecc7e9e1d09bb41ee92853715e0",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "778f195bae1d9c3c99dab9fad277dcdb1551c77968d60584103c3cdabec705f6",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "661afe3b1d52c2baaab6d700ede41f6031482b554a2b48e2d1ba06f0333075aa",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "560cd5de56277a49ed08906fc6aa7fabe4df1f7f8de0aa7bebaf107ba52b1f4c",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "2c09b46ae691292badedc1db21726b2ca96ed31d3ed50b3c8963adb0a50d4514",
+      "guide_sections": "2 / Train and customize reproducibly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "19a3e3e4576227e812a3e30b9a48ff9603e6dde960daa4d8c0ae39f5d8bc23ef",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "1aafdd876877cb4e0ab308188a6c85de5fbb169162b52549504eea9a18d9ee1d",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "4889c5e289e292969bf697423d0177581eb7167c81535b69e235e285037869c3",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "e52be5cfccbb509e75080baae4f5f918f6a4bb7bef1a1871966647dff391bc76",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "84023255645b964c78d515f9424a3ac6147a48d0eec0bc0a9ad1dcdb9e88ca4a",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "1ac29a6c05033966c6d058337dfd20588edc3fcddf08aaced32c9d3affcba62e",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "4a7928034f71b9fe986c53ceaa4465db95f5597970073dcf934ddbadf579ece1",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "ff4da24181146248f77c19a525d259b761a8397b059f0c8ae8ec66b8a460b05f",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "793ad5dba7d7f244e106b794844e818e66aa965a632258651005f20caf2e159a",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4; 3 / Verify new-account monitoring and evaluation paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 10,
+      "objective_sha256": "cb4b4bc164f0c841bb6b329a1f9987882fbaf9b0ab35ff28876d8a9683b95d25",
+      "guide_sections": "2 / Evaluate the complete system; Example 1; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "8cc9125988db5c3479bad0e763cc41d5eb8b0ef1de8248be24a8437ea3dfde55",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "43ecdd8695b35b97970415eb5a0d06dfd84c9ca856dcb97eb093154e9a99b71b",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "101362ca811c34e6182a457f99955a7dc08446b2a0d1d366f640ab15459039ae",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "46315d58e52db4b8cf4cc93eb015e6c37f71ad212c80dcbebf695c51517c0e2e",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "441d5eb81e0d507b92ca5f9b909d88c4935149b0e05baa9b0055fa65ab166764",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "b79f4f69301efa7b1df75645426d8d9a407aa0dc9b8df436ac8dd219460136d9",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "4f03aae32d82dc95de46d32a2dcc767a49eeaedaae949c45649d2eb84e51b5fb",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "1d04732467870debddaefd4786b1c67b8d1a7a3377983e3184008941492aaa3d",
+      "guide_sections": "3 / Select inference, model and capacity mode; Engineer RAG and agents as production systems",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "1433b15fb48a0959829caf779e45c5032ee08977639a7e68dbd67089890b80df",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "2e329dbd02b29e7a8d84f13abd2fc233e70509fba7cb641b837bb6584fe9c54f",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "1d1d3edb1a9de4f326127f6acb02cf6aecc12e8067219d7345efc298cf2d9f14",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "9e4c929f5cdf9d398e1870e5f2d869a02a7fa22184a6e03da5e698c84a891ed9",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "ccd34e393caf36bee649be4a4ff648f863dd294d3fa5593ca970ce2d79c24492",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "2d3ced53d0cc5c84082889da471c84d2c851236054bdfa7e82eb6a5bc1a86a11",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "34cfdc2e4f1f242dcc096d5b97bbc6788387198d91debf330ec60b67cfa5cf02",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "6760d2f745ca82fbbe6b10e7b0a78b8ea9b57efcf6a4dd9cbf23e2cfe78d1ff7",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "6191c5f4a15f9cd017de0ad4eb6ca7b150decc69c4f105beb6e28cb61eb4eb55",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "06eccd1d9aa57e72f27ef60da7f51df8d3ed9bda3b52cca3c1c409c45dc829dd",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 11,
+      "objective_sha256": "4eeca391b05ff26ad4dd7edb2fc0fe02f648bfefd714b02d61ed765df62f27a6",
+      "guide_sections": "3 / Provision and deliver repeatably; Engineer RAG and agents as production systems; Scale from the actual bottleneck",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "cefce3849d3801795b9ef6a52e6c6b56ab2eae60d2305ef388b252e9e8c93423",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "04ada78fcd58b3729b9e0efec85435c494256aafd7bed01ed60d98c76c2602f9",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "1ad55b2057b460b95648d427ec027e3ca671f7162b68fa2c265e60b54571ea33",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "984e04189031d1575f8efb5039325469cc0c8154ea1c3d01a192831d3f1169e4",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "da8cc74f4ad3bdeebf869e3b23de19f1dd244b4fc399490932015700a6b2369a",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "ca09e1f6e361f6453b1e1effb75036bca81fe1a0a4c07c9c7d1b3573ec0131e2",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "a9795c0a29b7f4f4318b6739c2b6f9255004827aa406bf460b634f8e20c1db09",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "05c2e62da8f15b7a72da510dab1a2fc69f7081111a420809abb1ae77b7f52c21",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "5aa9cebff679b11f453306e3b220b66627f0c3d00de2ed0f3e41af10b9b3426c",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 10,
+      "objective_sha256": "9b901ff007c399324af26b7b74664850f44329c5a2cebfde241ece777a897bc2",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 11,
+      "objective_sha256": "72c3a318b57e0269eeee96fb9b36a1417778ffe706f5aa6c437842b4649562b1",
+      "guide_sections": "3 / Provision and deliver repeatably; Example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "0f105cff5a2ad3ab7d80c05cca4209d5639a5a915262e69aa1cbb72383a3e253",
+      "guide_sections": "4 / Observe data, retrieval, model and agent separately; 3 / Verify new-account monitoring and evaluation paths; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "1c67d8025c79ebd98547b5451506ecc320e1998e682bf2d171ab5722ea527b6e",
+      "guide_sections": "4 / Observe data, retrieval, model and agent separately; 3 / Verify new-account monitoring and evaluation paths; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "8f00dc0776015e26a8e734f295210263d1bd70e6bb34681091383fa247a301de",
+      "guide_sections": "4 / Observe data, retrieval, model and agent separately; 3 / Verify new-account monitoring and evaluation paths; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "99b3fd4628646517cc5a7e786e58b92c72c1bba6defe612b5ed2070523b765a3",
+      "guide_sections": "4 / Observe data, retrieval, model and agent separately; 3 / Verify new-account monitoring and evaluation paths; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "20aed5c79eb8deecc1eaad6b9ef1fb3f71c308f74c690767c24787ce282b32e7",
+      "guide_sections": "4 / Observe data, retrieval, model and agent separately; 3 / Verify new-account monitoring and evaluation paths; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "a5e49e6a969939989d2edb4e62260aae653622004aac57df9bfb6215491969fc",
+      "guide_sections": "4 / Observe data, retrieval, model and agent separately; 3 / Verify new-account monitoring and evaluation paths; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "6eff297ca5140827e86912f6ff81e7cf5efb756386db8325590721cff595e658",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "e87173e96ff07c916baa3aebc5cf59e36cc9a1e8f2eaf6f4d7b6017c9c3e1915",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "3a18fa7f573cf55a3eeed4c1e72f2a95d4e6bc3885a8d1f92c2d40ac81b154b6",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "175bd6deb5dee43f48f480f95d05ddc47f3f1e822e3794d22393692b0293e1eb",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "106f5a69a77272a18393c898aa7be4f19cd3fad6becb4463540f1e7c10a44af1",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "d223d0cdada5cac8ece6dcd8724a181624ae603fded28adc7c95c569653a9b4f",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "5f2b24845205961d6694ea0759850a194e80e43acf94e986be109563e88d49ec",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "2c0abe91e24dfc822b656f98f57771183f24800c54e525e40655206a2888f1c9",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 9,
+      "objective_sha256": "64ad3c767b14b180261f47885092784022f429c4d59dceb68d4a5a6e73fa4c4b",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 10,
+      "objective_sha256": "032145f8319e12e612d28233373ec954e2fb153795e873be792451e3f08378c8",
+      "guide_sections": "4 / Manage unit economics and capacity; 3 / Scale from the actual bottleneck; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "dc6afcc0a44c8559664cbf7ea684e6b5d52b84f61c4d8b44ffb252d0ad819d11",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "de21e82b06c4739f34bc7c61929c24561c90fbc5d906adb2e9a017a058256039",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "654fcd104ce5d054a606e65298bbd6caf6a149fdd01b9c806f052b7faa127470",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "fe63ec98a0bbbafe52218475ffeacd174140b40b6fe900d193e3f6c9eb80975a",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "3ebae95c46d9c3a765dfc4d7154b2380895ce9c0b1643264261f47cfea6166a0",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "ed9b30d9e8edfcabb61acb19a490cf1340badbe51fc5540e29de4e23a0d0fd3a",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "480283dcc4fe84e270fe865bc7139a27ee0030429e0ca65e8fe95291bfc24848",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "32f40639aec10207b32be8567871e56a01b06844fe81b7d77b967b9cc0248a2d",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions / Current short-term key guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 9,
+      "objective_sha256": "ec95192bdf02d18da292257431de10831c3982234527907300c39e393d1b2a7f",
+      "guide_sections": "4 / Protect identities, data, models, prompts and actions; Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "code": "MLA-C02",
+    "title": "AWS Certified Machine Learning Engineer - Associate (beta)",
+    "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+    "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+    "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\mla-c02-official-objectives.txt",
+    "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\mla-c02-official-status.json",
+    "previous_sha256": null,
+    "current_sha256": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+    "previous_status_sha256": null,
+    "current_status_sha256": "60f915c9a14c0d8c9147e181a21a8e68c6b64a9030b91ad10e67116e5714a6e4",
+    "official_status": {
+      "skills_versions": [
+        "AWS Certified Machine Learning Engineer - Associate (MLA-C02)"
+      ],
+      "upcoming_announcements": []
+    },
+    "objectives_changed": true,
+    "status_changed": true,
+    "changed": true,
+    "status": "changed",
+    "objectives_written": true,
+    "status_written": true,
+    "written": true,
+    "comparison_note": "Fresh candidate directory has no previous baseline; changed=true alone is not an upstream change.",
+    "accepted_objectives_match": true
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 25,
+    "reachable": 24,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-clf-c02-official-question-set",
+      "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english",
+      "checked_at": "2026-09-28T20:30:01.516017+00:00",
+      "health": {
+        "id": "aws-clf-c02-official-question-set",
+        "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+        "duration_signals": [],
+        "signal_fingerprint": "da0e3260b110a2798a581ff7645d6eb1e6278a0d702432522cf62cb3a436ef87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-aif-c01-bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+      "checked_at": "2026-09-28T20:30:04.150880+00:00",
+      "health": {
+        "id": "aws-aif-c01-bedrock",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "content_type": "text/html",
+        "page_title": "Overview - Amazon BedrockOverview - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3a060fb1bd3606bf52ba0341b73e3d89346e64eb8f579e4257b8e1462233817b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+      "sha256": "7b06004d0fa39f8da787a61476f1adf9f1dc84b5a3e3369486c8f3df501c6175",
+      "text_characters": 5374
+    },
+    {
+      "id": "aws-mla-c01-certification",
+      "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "checked_at": "2026-09-28T20:30:16.368441+00:00",
+      "health": {
+        "id": "aws-mla-c01-certification",
+        "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+        "checked_at": "2026-09-28T20:30:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-machine-learning-engineer-associate",
+        "canonical_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+        "duration_signals": [
+          "170 minutes 130 minutes"
+        ],
+        "signal_fingerprint": "e736be6fdd853fbdb6d02c48e0f55c20db50110283ff5e8cbb901cab74fdd3b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "sha256": "fd7a3412aa8a5cbe7b6f744a87f72c70f3755d9bec206a7ee4c130c6a727cc52",
+      "text_characters": 10424
+    },
+    {
+      "id": "aws-mla-c01-mla-c02-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+      "checked_at": "2026-09-28T20:30:16.973839+00:00",
+      "health": {
+        "id": "aws-mla-c01-mla-c02-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+        "checked_at": "2026-09-28T20:30:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Machine Learning Engineer - Associate (MLA-C02) - AWS Certified Machine Learning Engineer - AssociateAWS Certified Machine Learning Engineer - Associate (MLA-C02) - AWS Certified Machine Learning Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+        "duration_signals": [],
+        "signal_fingerprint": "461c5524f45c5efb0c2eb6f4895c2f3f04e8a8e3e6a3a82d10a999e54331fb74",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+      "sha256": "ed59448553efd670ce02bffb5e882010b7483fc8f5930d71c219cc721f5f918a",
+      "text_characters": 7752
+    },
+    {
+      "id": "aws-mla-c01-sagemaker-lifecycle",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html",
+      "checked_at": "2026-09-28T20:30:17.083675+00:00",
+      "health": {
+        "id": "aws-mla-c01-sagemaker-lifecycle",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html",
+        "checked_at": "2026-09-28T20:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html",
+        "content_type": "text/html",
+        "page_title": "Overview of machine learning with Amazon SageMaker AI - Amazon SageMaker AIOverview of machine learning with Amazon SageMaker AI - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1a899a881a26cb44a2cb517adf0fdae364f2dcc309b087ce3fb027180bde258c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html",
+      "sha256": "ad325d0440181d7fbdd3d5f8b327f3d9a0949cde6716c27464dcdd937997e29f",
+      "text_characters": 5294
+    },
+    {
+      "id": "aws-mla-c01-sagemaker-pipelines",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html",
+      "checked_at": "2026-09-28T20:30:17.100925+00:00",
+      "health": {
+        "id": "aws-mla-c01-sagemaker-pipelines",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html",
+        "checked_at": "2026-09-28T20:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html",
+        "content_type": "text/html",
+        "page_title": "Define a pipeline - Amazon SageMaker AIDefine a pipeline - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html",
+        "duration_signals": [],
+        "signal_fingerprint": "00d52e9e617fde06c783df03a828be6c05719143a085091a2f51eea5909709a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html",
+      "sha256": "c9a2a7fa084575de30bae8325b500b618e26a59baca17c4780b39d08928afbf2",
+      "text_characters": 21654
+    },
+    {
+      "id": "aws-mla-c01-ml-lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html",
+      "checked_at": "2026-09-28T20:30:17.299942+00:00",
+      "health": {
+        "id": "aws-mla-c01-ml-lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html",
+        "checked_at": "2026-09-28T20:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html",
+        "content_type": "text/html",
+        "page_title": "Machine Learning Lens - AWS Well-Architected Framework - Machine Learning LensMachine Learning Lens - AWS Well-Architected Framework - Machine Learning Lens",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5b79d5a09a56533739f4a6047d974ae0bf4eb9a9e9cba16e8dcddf9627595cc5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html",
+      "sha256": "fe7fb4f0708e0d54ca7acfbbd4341cd8666e1e90d3af8440dec47c55d86715e0",
+      "text_characters": 5328
+    },
+    {
+      "id": "aws-mla-c01-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01",
+      "checked_at": "2026-09-28T20:30:17.417635+00:00",
+      "health": {
+        "id": "aws-mla-c01-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01",
+        "checked_at": "2026-09-28T20:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Machine Learning Engineer - Associate (MLA–C01)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01",
+        "duration_signals": [
+          "20 Hours"
+        ],
+        "signal_fingerprint": "9dc07860baa3105e0e902ac29eae6e076abbe0ecec8160617084a115857e9d9b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01",
+      "sha256": "086fce256d21b95c89584edda876a587adcc4decd71b65d7f18b76ad7fcee551",
+      "text_characters": 5085
+    },
+    {
+      "id": "aws-mla-c01-oreilly-sybex",
+      "url": "https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/",
+      "checked_at": "2026-09-28T20:30:17.542860+00:00",
+      "health": {
+        "id": "aws-mla-c01-oreilly-sybex",
+        "url": "https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/",
+        "checked_at": "2026-09-28T20:30:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-mla-c02-announcement",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/",
+      "checked_at": "2026-09-28T20:30:17.813294+00:00",
+      "health": {
+        "id": "aws-mla-c02-announcement",
+        "url": "https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/",
+        "checked_at": "2026-09-28T20:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Updates to AWS Certified Machine Learning Engineer – Associate (MLA-C02) | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/",
+        "duration_signals": [
+          "170 minutes"
+        ],
+        "signal_fingerprint": "34cf117647060e59a050cd006ed3f6f64c8bbb5665c860ae08033c3ec3b15f9e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/",
+      "sha256": "f7563a6883cb7935799dc5c414d751fed337ebe6b6a89dbab9724db03af3fffc",
+      "text_characters": 5117
+    },
+    {
+      "id": "aws-mla-c02-domain1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html",
+      "checked_at": "2026-09-28T20:30:18.294112+00:00",
+      "health": {
+        "id": "aws-mla-c02-domain1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html",
+        "checked_at": "2026-09-28T20:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Data Preparation for ML and AI - AWS Certified Machine Learning Engineer - AssociateContent Domain 1: Data Preparation for ML and AI - AWS Certified Machine Learning Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1ac219c277f233d676762c22f55cbaf4ec0c8f39858455adb334999024bbb28e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain1.html",
+      "sha256": "d2354e9344e31b223ebab2f2fba8b3b489ccdcb06c76d9996bdd443396dc90d4",
+      "text_characters": 4122
+    },
+    {
+      "id": "aws-mla-c02-domain2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html",
+      "checked_at": "2026-09-28T20:30:18.405001+00:00",
+      "health": {
+        "id": "aws-mla-c02-domain2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html",
+        "checked_at": "2026-09-28T20:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: ML Model and Foundation Model (FM) Development - AWS Certified Machine Learning Engineer - AssociateContent Domain 2: ML Model and Foundation Model (FM) Development - AWS Certified Machine Learning Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8f66270eeb5fb92ac4795389a4a81474fa83396e19a3ab8c6d1f12765ca45396",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain2.html",
+      "sha256": "1d64e7a792b6b362610568523939a0c0af8bc97474ebb4033ff75e8bda7a82b4",
+      "text_characters": 4462
+    },
+    {
+      "id": "aws-mla-c02-domain3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html",
+      "checked_at": "2026-09-28T20:30:18.626959+00:00",
+      "health": {
+        "id": "aws-mla-c02-domain3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html",
+        "checked_at": "2026-09-28T20:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Deployment and Orchestration of ML and AI Workflows - AWS Certified Machine Learning Engineer - AssociateContent Domain 3: Deployment and Orchestration of ML and AI Workflows - AWS Certified Machine Learning Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e3eadb7dd1db3c5bb3b9609ffb21cde2551b00d08bf7097d2a6262fb3a4c0ab7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain3.html",
+      "sha256": "59002ea893108178ddaa4bc6aa59ce5342587921b321938bc91ab7f1beeb9784",
+      "text_characters": 4757
+    },
+    {
+      "id": "aws-mla-c02-domain4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html",
+      "checked_at": "2026-09-28T20:30:18.686306+00:00",
+      "health": {
+        "id": "aws-mla-c02-domain4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html",
+        "checked_at": "2026-09-28T20:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Operating, Monitoring, and Securing ML and AI Solutions - AWS Certified Machine Learning Engineer - AssociateContent Domain 4: Operating, Monitoring, and Securing ML and AI Solutions - AWS Certified Machine Learning Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "474ec178e1622690c95efb8a1781ce7292558be0b0178125cc419932825263c9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02-domain4.html",
+      "sha256": "35d71d671ce7c04687542d098e049ae1ac92ca874d652c6a8e935982461271f9",
+      "text_characters": 4183
+    },
+    {
+      "id": "aws-mla-c02-comparison",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html",
+      "checked_at": "2026-09-28T20:30:18.804660+00:00",
+      "health": {
+        "id": "aws-mla-c02-comparison",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html",
+        "checked_at": "2026-09-28T20:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html",
+        "content_type": "text/html",
+        "page_title": "Comparison of MLA-C01 and MLA-C02 - AWS Certified Machine Learning Engineer - AssociateComparison of MLA-C01 and MLA-C02 - AWS Certified Machine Learning Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html",
+        "duration_signals": [],
+        "signal_fingerprint": "298a8be726ea496e61bd12a696fb1e1d09a0409ff6ad23719d0b4d245a129af1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html",
+      "sha256": "0f3908a1fbefc93d3fda0ff0bc41316cfadf25ed1f7cfe0555f8b5062b50bd39",
+      "text_characters": 9749
+    },
+    {
+      "id": "aws-mla-c02-tutorials-dojo",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/",
+      "checked_at": "2026-09-28T20:30:18.929914+00:00",
+      "health": {
+        "id": "aws-mla-c02-tutorials-dojo",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/",
+        "checked_at": "2026-09-28T20:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Machine Learning Engineer Associate Practice Exams MLA-C02 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "170 minutes",
+          "72 hours"
+        ],
+        "signal_fingerprint": "0f1915a4b0dfba3cda4025a9951fe9581c6b2565f68239a39c5b03372ec846cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/",
+      "sha256": "f8d7026e73d4a0557fea8d836e0f837c2a62dfb0474115521e2f926f042f6503",
+      "text_characters": 11412
+    },
+    {
+      "id": "mla-c01-september-2026-certification-update",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "checked_at": "2026-09-28T20:30:34.460868+00:00",
+      "health": {
+        "id": "mla-c01-september-2026-certification-update",
+        "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Certification updates from AWS Training and Certification: September 2026 | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "duration_signals": [
+          "130 minutes",
+          "170 minutes",
+          "180 minutes"
+        ],
+        "signal_fingerprint": "49d10389204257dd4d405c49fbdd4efc9b65f0e9e35cee7869c7b6d3e7226d50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "sha256": "bf28fbd3005beaffb0866066a54b6f70b9ba450d3d917ffb3a68b20694591aa0",
+      "text_characters": 15179
+    },
+    {
+      "id": "mla-c01-aws-service-availability",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "checked_at": "2026-09-28T20:30:34.556339+00:00",
+      "health": {
+        "id": "mla-c01-aws-service-availability",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Service Availability Updates - AWS",
+        "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "duration_signals": [],
+        "signal_fingerprint": "ad8b78fff49d16662086d2644f8def647e67462cebfcd1e11cd0dbcaef4ca87d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "sha256": "82cc441cdb1dc4407ae65a8e51691ff78b90b4e5e6f7103b26815da4087556ef",
+      "text_characters": 2167
+    },
+    {
+      "id": "mla-c01-model-monitor-availability-change",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+      "checked_at": "2026-09-28T20:30:35.626527+00:00",
+      "health": {
+        "id": "mla-c01-model-monitor-availability-change",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+        "checked_at": "2026-09-28T20:30:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "Amazon SageMaker Model Monitor availability change - Amazon SageMaker AIAmazon SageMaker Model Monitor availability change - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bc1bbbd925d01564600f91964831d3b8b39b5a6e850933a6bf6d25da03ed7701",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+      "sha256": "c534ca5a08a92e0a77dd05d3aec93dfbe76bed32c07d4285425fcdf8af796ee0",
+      "text_characters": 17072
+    },
+    {
+      "id": "aws-ml-feature-time-blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/",
+      "checked_at": "2026-09-28T20:31:47.401973+00:00",
+      "health": {
+        "id": "aws-ml-feature-time-blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/",
+        "checked_at": "2026-09-28T20:31:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Build accurate ML training datasets using point-in-time queries with Amazon SageMaker Feature Store and Apache Spark | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/",
+        "duration_signals": [],
+        "signal_fingerprint": "04c93d7c94923c583e6d67b676ae5f6fd0103185719eaa08e0a14d2936eb4566",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/",
+      "sha256": "7579a97ba0d16529aca363c5375d57378644b61c6174092031ebd688f86323a0",
+      "text_characters": 23614
+    },
+    {
+      "id": "aws-ml-clarify-availability",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+      "checked_at": "2026-09-28T20:33:30.321418+00:00",
+      "health": {
+        "id": "aws-ml-clarify-availability",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+        "checked_at": "2026-09-28T20:33:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "Clarify availability change - Amazon SageMaker AIClarify availability change - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e186914e869715b71f35d201576d69c66cca85be9e22ab31b962731067589875",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+      "sha256": "3ae51599cf9033ad6a4d66040bdf363ea103d2fd13de176b6ba45999dbd00a29",
+      "text_characters": 9931
+    },
+    {
+      "id": "aws-ml-debugger-availability",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-availability-change.html",
+      "checked_at": "2026-09-28T20:33:30.321979+00:00",
+      "health": {
+        "id": "aws-ml-debugger-availability",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-availability-change.html",
+        "checked_at": "2026-09-28T20:33:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "Debugger availability change - Amazon SageMaker AIDebugger availability change - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "37b93d811f58da305b2c9ccdb9a01facf1bf6d4a39adb8b5e7536e14504f5e1a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-availability-change.html",
+      "sha256": "bb09318f482b990a8fe353d2b9a75b7803195f4295dde0d36fddafa8d82a342c",
+      "text_characters": 6464
+    },
+    {
+      "id": "aws-bedrock-api-keys",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html",
+      "checked_at": "2026-09-28T20:40:01.286765+00:00",
+      "health": {
+        "id": "aws-bedrock-api-keys",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html",
+        "checked_at": "2026-09-28T20:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html",
+        "content_type": "text/html",
+        "page_title": "API keys - Amazon BedrockAPI keys - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html",
+        "duration_signals": [
+          "12 hours"
+        ],
+        "signal_fingerprint": "ad16634bfe44ff2906e0be36a4515b696c308d95a7873d6a5522a44cffead179",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html",
+      "sha256": "b40bf9aeb23513016261d110cfb65d0d0dbfc871b751b7e9ee93afec3ff0631e",
+      "text_characters": 9341
+    },
+    {
+      "id": "aws-codecommit-history",
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+      "checked_at": "2026-09-28T20:40:01.287311+00:00",
+      "health": {
+        "id": "aws-codecommit-history",
+        "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+        "checked_at": "2026-09-28T20:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+        "content_type": "text/html",
+        "page_title": "AWS CodeCommit User Guide document history - AWS CodeCommitAWS CodeCommit User Guide document history - AWS CodeCommit",
+        "canonical_url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3349bc9f4558625d42e6f3185d3b674044caf3555d2849a13ee958065e8ae6e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+      "sha256": "b742af37f1907b129e35ef4df1e0b7437fd2aab2227f03901239b5e9c01a1184",
+      "text_characters": 19913
+    },
+    {
+      "id": "aws-rag-compression-blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+      "checked_at": "2026-09-28T20:40:01.287699+00:00",
+      "health": {
+        "id": "aws-rag-compression-blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+        "checked_at": "2026-09-28T20:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Reduce RAG costs on Amazon Bedrock with query-aware compression | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+        "duration_signals": [],
+        "signal_fingerprint": "241b36e6e249fa8838648e1a4cbc5ebb3aa2a6d9654043ce9a2910352a74b5cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+      "sha256": "a64fe43c3ae22a381d613b584ef28f4102d245e8dbfa98b503151b2f965775b4",
+      "text_characters": 20475
+    },
+    {
+      "id": "aws-agentcore-evaluation-blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+      "checked_at": "2026-09-28T20:40:01.287976+00:00",
+      "health": {
+        "id": "aws-agentcore-evaluation-blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+        "checked_at": "2026-09-28T20:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Build reliable AI agents with Amazon Bedrock AgentCore Evaluations | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+        "duration_signals": [],
+        "signal_fingerprint": "78242e58cb489a182c3e9805d079e6fdd8bd26d30957ab3ef7ffacba64feda96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+      "sha256": "5cd1dcdcb7fbffaa431e41ace79b38d67999044326dee6241260a8bc499c5e42",
+      "text_characters": 37005
+    }
+  ],
+  "added_source_ids": [
+    "aws-bedrock-api-keys",
+    "aws-codecommit-history",
+    "aws-rag-compression-blog",
+    "aws-agentcore-evaluation-blog"
+  ],
+  "findings": [
+    {
+      "id": "mlac02-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "GA date remains inconsistent across official sources",
+      "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MLA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Credential table showsTBD while September announcement plansJanuary14,2027.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mlac02-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Credential choice needs concrete lifetime and production guidance",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MLA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current docs distinguish session-bounded short-term tokens from exploration-only long-term service credentials.",
+      "recommendation": "Teach permission inheritance,12-hour/session bound,refresh/revocation and long-term distinction.",
+      "disposition": "applied",
+      "source_id": "aws-bedrock-api-keys",
+      "resolution": "Teach permission inheritance,12-hour/session bound,refresh/revocation and long-term distinction."
+    },
+    {
+      "id": "mlac02-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "CodeCommit onboarding uncertainty can be resolved",
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MLA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official history records reopeningNovember25,2025 afterJuly2024 closure.",
+      "recommendation": "Replace outdated uncertainty with dated reopening and region/integration checks.",
+      "disposition": "applied",
+      "source_id": "aws-codecommit-history",
+      "resolution": "Replace outdated uncertainty with dated reopening and region/integration checks."
+    },
+    {
+      "id": "mlac02-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Old agent and SageMaker labs may not be available in new accounts",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MLA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AgentsClassic and listed SageMaker features closed to new customers; underlying engineering concepts remain.",
+      "recommendation": "Add account-access checks and bounded implementation alternatives.",
+      "disposition": "applied",
+      "source_id": "mla-c01-aws-service-availability",
+      "resolution": "Add account-access checks and bounded implementation alternatives."
+    },
+    {
+      "id": "mlac02-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Compression must preserve evidence and earn its total cost",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MLA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Article gives two-call pattern; temperature0 is not proof of deterministic or faithful extraction.",
+      "recommendation": "Add original cost exercise,span checks,original-evidence quality evaluation and latency accounting.",
+      "disposition": "applied",
+      "source_id": "aws-rag-compression-blog",
+      "resolution": "Add original cost exercise,span checks,original-evidence quality evaluation and latency accounting."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-rag-compression-blog",
+      "disposition": "accepted-with-limits",
+      "published_on": "2026-08-21",
+      "read_scope": "Public article body including architecture,cost formula,example calls,methodology,quality and latency caveats.",
+      "value": "Cost/quality tradeoff exercise; explicitly reject temperature-zero determinism assumption.",
+      "limits": "Reported benchmark not independently reproduced; no Lambda/Converse code run. Synthetic guide prices are not AWS pricing."
+    },
+    {
+      "source_id": "aws-agentcore-evaluation-blog",
+      "disposition": "accepted-with-limits",
+      "published_on": "2026-03-31",
+      "read_scope": "Introduction,lifecycle modes,session/trace/span model,evaluator types,sampling and configuration sections; embedded media and full implementation not evaluated.",
+      "value": "Separate tool/answer/business outcomes and controlled tests from sampled production observation.",
+      "limits": "No deployment,trace instrumentation or evaluator benchmark executed; verify processing geography and pricing for selected configuration."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "16 independent arithmetic,set-membership,operation-key and manifest-compatibility assertions"
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "January14,2027 GA remains the announcement plan while the credential page saysTBD; beta is scheduled to startSeptember29, not yet observed delivering.",
+    "Same-context AI review; independent human review pending.",
+    "No hosted model, AWS account, paid course, external repository code or cloud infrastructure lab executed.",
+    "Local synthetic checks demonstrate arithmetic/contracts only, not model quality, authorization enforcement or live rollback.",
+    "Public course labels do not establish complete107-skill coverage; provider exam metadata still conflicts with beta details.",
+    "Automated AWS snapshots cover broad domains rather than all detailed skills; accepted snapshots preserved."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

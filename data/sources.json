@@ -3,6 +3,62 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-bedrock-api-keys",
+      "title": "Bedrock API keys",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MLA-C02"
+      ],
+      "notes": "September 28 MLA-C02 deep review: Read generation,lifetime,refresh,permissions and compromised-key sections. No credentials generated; examples that print keys were not adopted. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-codecommit-history",
+      "title": "CodeCommit document history",
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MLA-C02"
+      ],
+      "notes": "September 28 MLA-C02 deep review: Read reopeningNovember25,2025 and prior closureJuly25,2024; older history not comprehensively audited. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-rag-compression-blog",
+      "title": "Reduce RAG costs on Amazon Bedrock with query-aware compression",
+      "url": "https://aws.amazon.com/blogs/machine-learning/reduce-rag-costs-on-amazon-bedrock-with-query-aware-compression/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MLA-C02"
+      ],
+      "notes": "September 28 MLA-C02 deep review: Public body read; quality/latency/cost methodology assessed, code not executed. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-agentcore-evaluation-blog",
+      "title": "Build reliable AI agents with Amazon Bedrock AgentCore Evaluations",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MLA-C02"
+      ],
+      "notes": "September 28 MLA-C02 deep review: Read lifecycle/evaluator/sampling/configuration sections; no full implementation or embedded media audit. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-ml-feature-time-blog",
       "title": "Build accurate ML training datasets using point-in-time queries",
       "url": "https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/",
@@ -15,7 +71,7 @@
         "MLA-C01",
         "MLA-C02"
       ],
-      "notes": "September 28 MLA-C01 deep review: Public article read; use for timestamp semantics, not a verified current SDK walkthrough. See docs/research/2026-09-28-mla-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-mla-c01-pdf-static",
@@ -44,7 +100,7 @@
         "MLA-C01",
         "MLA-C02"
       ],
-      "notes": "September 28 MLA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-ml-debugger-availability",
@@ -59,7 +115,7 @@
         "MLA-C01",
         "MLA-C02"
       ],
-      "notes": "September 28 MLA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mo310-skills-pdf",
@@ -42340,11 +42396,12 @@
       "authority_class": 1,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "MLA-C01"
+        "MLA-C01",
+        "MLA-C02"
       ],
-      "notes": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint."
+      "notes": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-aib-c01-technologies-concepts",
@@ -42410,11 +42467,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-07",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "MLA-C01"
+        "MLA-C01",
+        "MLA-C02"
       ],
-      "notes": "Review the July 30, 2026 no-new-customer boundary and maintenance status while Model Monitor remains named by the blueprint."
+      "notes": "Review the July 30, 2026 no-new-customer boundary and maintenance status while Model Monitor remains named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-copilot-policy-billing-september-2026",
