@@ -5,6 +5,26 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "MLA-C01",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "05ede5f257fafb42fec6d43317aeb01f36801607c1d29f9bb8db98899ebad7c8",
+      "objective_count": 70,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-28-mla-c01-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-mla-c01-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Current C01 detailed HTML and docs PDF returned 404. Accessible static PDF version 1.0 provides historical coverage only; later objective revisions could not be excluded.",
+        "January14,2027 is the September announcement plan; the credential page still lists GA as TBD. Language-specific booking confirmation is required.",
+        "Same-context AI review; independent human review pending.",
+        "No AWS account, paid course, hosted model or infrastructure lab executed. Local arithmetic is not service validation.",
+        "Some provider pages were blocked or exposed only sign-in/video shells; their lessons and current runtimes were not verified.",
+        "Automated AWS snapshots cover broad domains, not all detailed skills. Accepted snapshots were preserved."
+      ]
+    },
+    {
       "exam_code": "MO-310",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "48458a4732bf6c055fcc269d15847e88e7fa23ec2afac9d2736c5b0d48cf5d8d",

@@ -1031,6 +1031,8 @@ The review reconciles the current version 2.1 DVA-C02 guide with its four weight
 
 ## MLA-C01 coverage record
 
+The September 28 [deep review](research/2026-09-28-mla-c01-deep-review.md) maps 70 detailed objectives. Review the complete guide against 70 skills in the available version1.0 PDF, with current HTML access blocked. Add four worked decisions, 40 answer explanations, available lab alternatives and a bounded practitioner article; reconcile transition-date uncertainty. Current guide citations: 19 registered, 16 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Data Preparation for Machine Learning | Section 1, all integrated scenarios, and Labs 1–3 and 8 |

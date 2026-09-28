@@ -6,24 +6,26 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # MLA-C01 AWS Certified Machine Learning Engineer - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, transition warnings, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mla-c01-coverage-record). The [official MLA-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, transition warnings, links, and exam-integrity compliance were reviewed again on September 28, 2026 against the available official PDF; current HTML blueprint access remains unresolved. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mla-c01-coverage-record). The [official MLA-C01 exam guide](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf) is authoritative.
 
 **Current baseline:** MLA-C01, four scored domains, 50 scored plus 15 unidentified unscored questions, and a 720 minimum scaled score<br>
-**Upcoming blueprint change:** **Retirement announced. September 28, 2026 is the last day to take MLA-C01 in English.** AWS says Korean, Japanese, and Simplified Chinese remain available until MLA-C02 reaches general availability on January 14, 2027. Registration for MLA-C02 opened September 1; its English-only beta delivery code is **ME1-C02**, with delivery beginning September 29. Verify the live [certification page](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) before booking.<br>
+**Upcoming blueprint change:** **Retirement announced. September 28, 2026 is the last day to take MLA-C01 in English.** Korean, Japanese, and Simplified Chinese remain available until MLA-C02 general availability. The September announcement gives **January 14, 2027 as the planned date**, while the credential page still says **TBD**; recheck the language-specific appointment before relying on that date. Registration for MLA-C02 opened September 1; its English-only beta delivery code is **ME1-C02**, with delivery beginning September 29. Verify the live [certification page](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) before booking.<br>
 **Replacement:** [MLA-C02 study guide](MLA-C02-aws-certified-machine-learning-engineer-associate.md), which links its official blueprint. New learners should normally prepare for MLA-C02. This page exists for candidates already scheduled for C01 and for historical/reference use; passing C01 earns the certification, not an automatic exam-version conversion.<br>
 **Important freshness boundary:** MLA-C01 emphasizes traditional ML engineering and MLOps, with limited foundation-model selection/fine-tuning context. MLA-C02 explicitly adds generative AI, Amazon Bedrock, foundation-model development, agentic workflows, and their operations. Do not assume a C01 course covers C02 merely because the credential name is unchanged.<br>
-**Official source:** [AWS Certified Machine Learning Engineer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html)
+**Official source:** [AWS Certified Machine Learning Engineer - Associate exam guide](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf)
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — September 28, 2026
 
-**Confirmed transition:** AWS's [September 2026 certification update](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/) gives January 14, 2027 as MLA-C02 general availability and the end of MLA-C01 delivery in Japanese, Korean, and Simplified Chinese. The English C01 cutoff remains September 28, 2026. Scheduling availability is the practical authority for a particular appointment.
+**Transition evidence:** The [September announcement](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/) gives a January 14, 2027 plan, but the credential page still leaves GA registration and delivery as TBD. English C01 ends September 28; the other three languages follow GA. Existing credentials retain their original validity.
+
+**Blueprint access gap:** The C01 HTML landing page and all four domain pages returned 404 during this review. The [official static PDF, version 1.0](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf), remained accessible: all 70 detailed skill bullets were mapped, with knowledge requirements read alongside them. This is a historical baseline, not confirmation that no later revision exists. Keep the automated HTML check unresolved until AWS restores or identifies its replacement; do not replace C01 objectives with C02's. The [review report](../docs/research/2026-09-28-mla-c01-deep-review.md) records the evidence.
 
 **Confirmed product lifecycle; blueprint still names the concepts:** AWS announced that several services and features moved to maintenance/no-new-customer status on July 30, including SageMaker Clarify, Debugger, and Model Monitor. Existing Model Monitor customers can continue using it, but AWS says there will be no new features and points new customers to an open-source SageMaker monitoring approach with QuickSight and CloudWatch; see the [service availability announcement](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/) and [Model Monitor availability notice](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html).
 
@@ -64,7 +66,7 @@ For every scenario, identify:
 
 ## 1. Data Preparation for Machine Learning — 28%
 
-The official [Domain 1 page](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01-domain1.html) covers ingestion and storage, transformation and feature engineering, and data integrity/readiness.
+The official PDF [Domain 1 page](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf) covers ingestion and storage, transformation and feature engineering, and data integrity/readiness.
 
 ### Frame the data contract before choosing a service
 
@@ -87,6 +89,8 @@ For batch ingestion, make each run idempotent: immutable landing objects, a run 
 
 **Related item:** A data lake is not automatically a governed training dataset. Raw, curated, feature, label, and prediction data need explicit contracts, lineage, access, retention, and reproducibility.
 
+For extraction bottlenecks, measure source read rate, network transfer, serialization and destination write rate separately. S3 Transfer Acceleration addresses a different bottleneck from provisioned EBS IOPS; neither repairs a skewed join or malformed records. File-based training also needs compatible file-system mounts, network paths, permissions and sufficient throughput, not just a readable source URI.
+
 ### Transform without creating leakage or skew
 
 Data preparation includes type coercion, deduplication, missing-value treatment, outlier decisions, normalization/standardization, binning, transformations, categorical encoding, tokenization, image/audio processing, and feature creation. Fit stateful transformations on training data only, persist their parameters, and apply the same transformation artifact to validation, test, and inference data.
@@ -101,7 +105,7 @@ Use Glue Data Quality or equivalent assertions to test schema, completeness, uni
 
 Class imbalance means labels are uneven; selection bias means the sample does not represent the target population; measurement bias means collection/labeling systematically distorts reality. These require different responses. Resampling, class weights, synthetic data, threshold changes, and targeted collection can address imbalance, but none proves fairness. Evaluate impact by relevant subgroups and connect every mitigation to the intended use and error cost.
 
-SageMaker Clarify can calculate pre-training bias metrics and later analyze model bias/explanations. A metric is evidence, not a verdict: confirm label meaning, favorable outcome, facet definition, sample size, and acceptable thresholds with domain owners. Maintain approval and limitation records.
+For existing customers, SageMaker Clarify can calculate pre-training bias metrics and later analyze model bias/explanations. A metric is evidence, not a verdict: confirm label meaning, favorable outcome, facet definition, sample size, and acceptable thresholds with domain owners. Maintain approval and limitation records.
 
 Classify PII, PHI, secrets, confidential business data, licensed data, and residency constraints before moving it. Minimize collection; mask, tokenize, anonymize, or aggregate only with a threat model. Encrypt objects, volumes, databases, file systems, channels, and artifacts as required, and ensure principals can use both the data resource and KMS key. Restrict cross-account and training-role access; retain lineage and audit events without leaking sensitive payloads into logs.
 
@@ -111,7 +115,7 @@ Classify PII, PHI, secrets, confidential business data, licensed data, and resid
 
 ## 2. ML Model Development — 26%
 
-The official [Domain 2 page](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01-domain2.html) covers approach selection, training/refinement, and performance analysis.
+The official PDF [Domain 2 page](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf) covers approach selection, training/refinement, and performance analysis.
 
 ### Choose the least complex approach that meets the contract
 
@@ -142,6 +146,8 @@ Automatic Model Tuning searches a declared hyperparameter space against an objec
 
 Fine-tuning a pretrained model requires representative data, base-model/license review, adaptation method, catastrophic-forgetting controls, evaluation against the unchanged baseline, cost, artifact ownership, and safety/privacy assessment. C01 mentions foundation models, but this is not a substitute for MLA-C02’s expanded FM/GenAI scope.
 
+Ensembling combines predictions; stacking learns a combiner from out-of-fold predictions to avoid leakage; boosting adds models that address previous errors. Each adds inference, explainability and versioning costs. Reduce model size through feature selection, pruning or compatible numeric representations only after rechecking quality and runtime compatibility. When fine-tuning, keep a regression set for earlier capabilities so catastrophic forgetting is measurable.
+
 ### Evaluate the decision, not a vanity metric
 
 For classification:
@@ -158,7 +164,7 @@ For regression, MAE is interpretable and less sensitive to large errors; MSE/RMS
 
 Compare train versus validation behavior to diagnose bias/variance. Use cross-validation when suitable, but preserve group/time constraints. Evaluate by region, cohort, device, product, class, and other relevant slices. Check calibration when probabilities drive decisions. Compare performance, latency, throughput, resource use, and cost—not accuracy alone.
 
-SageMaker Debugger can capture tensors/metrics and identify training issues; Clarify can analyze bias and feature attribution; experiments and lineage make comparisons reproducible. A shadow variant receives production-like traffic without driving the response, enabling realistic comparison; an A/B test exposes variants to users and measures outcomes. Both need assignment, duration, safety, rollback, and statistical interpretation.
+For existing customers, SageMaker Debugger can capture tensors/metrics and identify training issues; Clarify can analyze bias and feature attribution; experiments and lineage make comparisons reproducible. A shadow variant receives production-like traffic without driving the response, enabling realistic comparison; an A/B test exposes variants to users and measures outcomes. Both need assignment, duration, safety, rollback, and statistical interpretation.
 
 **Related item:** Model approval is a risk decision. The winning experiment should not enter production without data, metric, fairness, security, latency, cost, and rollback evidence.
 
@@ -166,7 +172,7 @@ SageMaker Debugger can capture tensors/metrics and identify training issues; Cla
 
 ## 3. Deployment and Orchestration of ML Workflows — 22%
 
-The official [Domain 3 page](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01-domain3.html) covers deployment selection, scripted infrastructure, and CI/CD/orchestration.
+The official PDF [Domain 3 page](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf) covers deployment selection, scripted infrastructure, and CI/CD/orchestration.
 
 ### Match inference mode to traffic and latency
 
@@ -187,6 +193,8 @@ Provided containers reduce maintenance; custom containers control dependencies a
 
 VPC-attached endpoints and jobs require subnet address capacity, security groups, DNS, routing, VPC endpoints or controlled egress, endpoint policies, and least-privilege roles. A private subnet alone does not guarantee private data flow.
 
+For edge deployment, learn the compilation/target-compatibility problem represented by SageMaker Neo in the C01 baseline. Verify device architecture, supported operators, model package, offline update/rollback and measured accuracy/latency; the old service name is not evidence of present onboarding or device support.
+
 ### Provision, scale, and release safely
 
 Use CloudFormation or CDK to define repeatable infrastructure, roles, encryption, networking, alarms, repositories, build projects, pipelines, and endpoints. Parameterize genuine environment differences; avoid uncontrolled console drift. Change sets, policy checks, tests, and rollback make IaC a release mechanism rather than a template archive.
@@ -203,7 +211,7 @@ A production path commonly follows:
 
 `source change or schedule → data validation → processing/features → training → evaluation gates → bias/security checks → registration → approval → staging deployment → integration/load tests → canary → monitor → promote or rollback`
 
-CodePipeline coordinates release stages; CodeBuild executes builds/tests; CodeDeploy supports deployment patterns for compatible compute. Git branch/flow conventions should protect mainline and connect commits to artifacts. Unit tests cover transformation and inference logic; integration tests exercise storage, permissions, containers, endpoints, and orchestration; end-to-end tests validate representative requests and rollback. Include malformed input, schema change, missing feature, duplicate event, timeout, throttling, unauthorized access, corrupt artifact, and failed evaluation.
+CodePipeline coordinates release stages; CodeBuild executes builds/tests; CodeDeploy supports deployment patterns for compatible compute. Git branch/flow conventions should protect mainline and connect commits to artifacts. GitHub Flow typically uses short-lived branches and reviewed mainline integration; Gitflow introduces dedicated release/development branches and therefore additional promotion/merge responsibilities. In either case, bind pipeline triggers to approved commits and prevent pull-request code from receiving deployment secrets. Unit tests cover transformation and inference logic; integration tests exercise storage, permissions, containers, endpoints, and orchestration; end-to-end tests validate representative requests and rollback. Include malformed input, schema change, missing feature, duplicate event, timeout, throttling, unauthorized access, corrupt artifact, and failed evaluation.
 
 Retraining triggers can be schedule-, data-, drift-, performance-, or event-based. A trigger starts evaluation, not automatic promotion. Reuse the approved pipeline, compare to the production baseline, require gates, and preserve rollback. Keep data, feature, code, container, and model versions distinct so an incident can locate the changed component.
 
@@ -213,7 +221,7 @@ Retraining triggers can be schedule-, data-, drift-, performance-, or event-base
 
 ## 4. ML Solution Monitoring, Maintenance, and Security — 24%
 
-The official [Domain 4 page](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01-domain4.html) covers model inference, infrastructure/cost, and security.
+The official PDF [Domain 4 page](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf) covers model inference, infrastructure/cost, and security.
 
 ### Monitor four different systems
 
@@ -222,11 +230,17 @@ The official [Domain 4 page](https://docs.aws.amazon.com/aws-certification/lates
 3. **Service:** request count, errors, model latency, overhead latency, concurrency, queue/backlog, CPU/GPU/memory, disk/network, endpoint/variant health, and dependency behavior.
 4. **Workflow/business:** pipeline duration/failure, skipped/late inputs, approval state, retraining result, deployment result, cost, user impact, and ownership/SLA.
 
-Data drift is a statistical input change; concept drift changes the relationship between input and outcome; label drift changes outcome distribution; model-quality degradation is measured after ground truth arrives. Model Monitor supports data quality, model quality, bias drift, and feature-attribution drift workflows. Establish a representative baseline, capture inference data safely, schedule monitoring, publish constraints/statistics, alarm on meaningful violations, and connect alarms to investigation—not blind retraining.
+Data drift is a statistical input change; concept drift changes the relationship between input and outcome; label drift changes outcome distribution; model-quality degradation is measured after ground truth arrives. For existing customers, Model Monitor supports data quality, model quality, bias drift, and feature-attribution drift workflows. Establish a representative baseline, capture inference data safely, schedule monitoring, publish constraints/statistics, alarm on meaningful violations, and connect alarms to investigation—not blind retraining.
 
 An A/B test measures competing variants on assigned live traffic; shadow testing observes a candidate without affecting responses. Define hypotheses and guardrails before traffic begins. Correlation is not causation when marketing campaigns, seasonality, or population shifts coincide with deployment.
 
 CloudWatch metrics, logs, alarms, dashboards, and Logs Insights show service/workflow behavior. CloudTrail records API activity and can support event-driven response. EventBridge routes operational events. X-Ray helps trace supported request paths. Use correlation IDs across data, workflow, model, endpoint, and application logs while excluding sensitive payloads. An alert needs owner, severity, runbook, evidence query, safe mitigation, and closure criteria.
+
+### Choose an available implementation
+
+The blueprint's named service and an available new-account lab can differ. [Clarify's migration guidance](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html) describes direct bias calculations, SHAP and evaluation alternatives. [Debugger's guidance](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-availability-change.html) points to MLflow for run evidence, TensorBoard for model internals, and CloudWatch for resource telemetry. Neither feature is open to new customers. The June 30 announcement of July changes also includes Ground Truth, Mechanical Turk and A2I; use synthetic, manually adjudicated labels for introductory labs.
+
+For Model Monitor, follow the linked availability notice and assess AWS's open-source monitoring designs before choosing a new implementation. A reference architecture still needs account permissions, cost estimates, dependency/version checks and validation. Practice the portable contract first: prediction ID, model version, timestamp, permitted input statistics, delayed label join, slice metrics, alert owner and recovery action. Existing customers should preserve evidence and prove replacement coverage before disabling schedules or deleting artifacts.
 
 ### Optimize from evidence
 
@@ -266,6 +280,33 @@ Documents contain sensitive data and require explainability. Classify/minimize d
 
 ---
 
+
+## Worked decisions
+
+These small examples are original exercises. The arithmetic was checked locally; no AWS resources were created.
+
+### Example 1: A historical feature can still arrive too late
+
+At 10:00 a prediction runs. Feature A has event time 09:55 and was available to inference at 09:56; feature B describes 09:58 but arrives at 10:05. A historical replay of what the model could know must exclude B. Filter both event time and actual availability time before selecting the latest eligible value. Define how late corrections, deletes and stale values are treated.
+
+The [AWS/GoDaddy feature-history article](https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/) explains event, API and offline-write timestamps. Its example selects corrected history using write time as a tie-breaker. Our availability cutoff is an additional requirement for reproducing the original decision: a later correction may be appropriate for a corrected-history experiment, but must not silently enter an as-served replay. Preserve the experiment's chosen semantics.
+
+### Example 2: Choose a threshold from review capacity
+
+Across 1,000 cases, 100 are actually positive. Threshold A produces TP=80, FP=40, FN=20, TN=860: precision is 80/120 = **66.7%**, recall is **80%**, F1 is **72.7%**, and 120 cases require review. Threshold B produces TP=65, FP=15, FN=35, TN=885: precision is **81.25%**, recall **65%**, F1 **72.2%**, and 80 cases require review.
+
+With capacity for 100 reviews, A exceeds capacity and B fits. B is not automatically acceptable: compare the cost of 15 additional missed positives against 25 fewer false alarms, or redesign capacity/routing. Neither accuracy nor F1 alone settles the business decision. Check slice performance and sampling uncertainty before promotion.
+
+### Example 3: Provisioning cannot repair a release contract
+
+An endpoint can sustain 25 requests/second per instance at the required latency. A forecast of 80 requests/second needs ceil(80/25) = **4 instances** under this measured model. Losing one leaves only 75 requests/second; **5** are needed to preserve the target after one instance loss. Benchmark again under realistic payloads, quotas and startup delay; this arithmetic is not an AWS capacity guarantee.
+
+A canary receiving 10% of 10,000 requests sees only 1,000 requests. If a critical population is 1% of traffic, it may see about 10 examples, too few to establish safety. Add targeted evaluation and an explicit sample/time gate. Keep a deployable prior manifest containing preprocessing, model artifact, image digest, endpoint configuration and permissions; verify rollback against dependencies.
+
+### Example 4: Delayed labels change the denominator
+
+Of 200 predictions, only 50 have matured labels; 45 are correct. Observed accuracy is **90% on labeled cases**, with **25% label coverage**. It is not 90% accuracy across all 200, and 150 unknown outcomes are not automatically failures. If slow labels cluster in harder cases, the early score is biased. Report label age/coverage and compare matched, mature cohorts while separately monitoring schema, distribution, latency and errors.
+
 ## Hands-on lab path
 
 Use a sandbox account and budgets. Destroy billable resources after each lab; do not use production or sensitive data.
@@ -278,6 +319,8 @@ Use a sandbox account and budgets. Destroy billable resources after each lab; do
 6. **Pipeline gate:** Build a SageMaker Pipeline with processing, training, evaluation, conditional threshold, and registration. Make a failed metric prevent registration.
 7. **Canary and monitoring:** Route limited synthetic traffic to a candidate variant, capture permitted data, create baseline/monitoring statistics, inject drift, alarm, and execute rollback.
 8. **Security and incident drill:** Scope S3/KMS/SageMaker roles, deny an unauthorized path, trace the failure with CloudTrail/CloudWatch, repair least privilege, rotate a test secret, and record cleanup evidence.
+
+**Availability adjustment:** For monitoring, bias and convergence labs, use the alternatives above if the account cannot access the legacy features. Start with a local CSV containing prediction IDs, labels and subgroup columns; reproduce Examples 2 and 4 and inject missing/duplicate labels. Proposed cloud labs have not been executed in this review.
 
 For each lab, preserve architecture, assumptions, commands/code, policy, dataset/model versions, expected and actual results, failure injection, cost, cleanup, and what you would change for production.
 
@@ -326,6 +369,49 @@ These are original blueprint-aligned prompts, not recalled exam questions.
 39. Why does private-subnet placement not by itself guarantee private traffic?
 40. Which controls reduce training-data poisoning and model-artifact replacement risk?
 
+## Answer explanations
+
+1. Random splitting can place later observations or the same entity in training and test; use a split that matches future deployment and fit transforms only on training.
+2. Parquet reduces column scans and carries a schema; streaming producers or consumers requiring JSON may outweigh that benefit.
+3. A stable input/run identity and deterministic, deduplicated output make replay produce the same committed result.
+4. A well-distributed key reduces hot partitions; high cardinality alone does not fix a single disproportionately busy key.
+5. Event time describes when the event happened; processing time describes when a system handled it. Late arrivals require an explicit window/replay policy.
+6. The latest value may include future events or corrections unavailable at the original prediction time; apply the appropriate time contract.
+7. Schema checks types/structure; completeness checks required values/records; uniqueness checks duplicate keys; freshness checks acceptable age.
+8. Imbalance concerns label counts; selection bias concerns who enters the dataset; measurement bias concerns how observations or labels are recorded.
+9. Permission to read an S3 object does not necessarily grant permission to use its KMS key; evaluate the relevant identity, resource and key policies.
+10. Document direct/quasi-identifiers, linkage and re-identification tests, permitted use and reviewer approval. Encryption alone does not de-identify data.
+11. Use a managed API when its measured quality, customization, geography, latency and total cost meet requirements with less operating effort.
+12. Use a simple, reproducible rule/seasonal/statistical model on the same uncontaminated split and business metric.
+13. Underfitting often has poor training and validation results; overfitting has good training but materially worse validation, subject to distribution and data-quality checks.
+14. Repeated tuning against test outcomes leaks information into selection; use validation and reserve the final test for the frozen candidate.
+15. Use data parallelism when the model fits a device and useful batch work can be divided; use model parallelism when model size or architecture requires it.
+16. The training job must support resumable checkpoints, an interruption-tolerant deadline and bounded retries; otherwise the discount may be outweighed by lost work.
+17. A small false-positive rate can still overwhelm a rare-positive population. Inspect precision-recall and absolute error counts at the operating threshold.
+18. Compare confusion counts, false-negative/false-positive costs and review capacity on representative validation data; then validate the frozen choice.
+19. Include slice quality, bias/explanation evidence, data lineage, reproducibility, security, latency, cost, operational readiness and rollback.
+20. Shadow inference does not select the user-visible answer; A/B changes user exposure. Shadow still needs privacy, cost and downstream-side-effect controls.
+21. Batch Transform fits offline input files and a completion deadline without keeping an endpoint continuously running.
+22. Async fits supported long-running/large-payload or bursty work where queued completion is acceptable; verify its current limits.
+23. Model loading, cache eviction and shared capacity can produce cold latency and noisy-neighbor effects.
+24. Tags can be reassigned; preserve an immutable image digest alongside code, data, preprocessing and model identities.
+25. Check DNS, routes, endpoints or egress, security groups, NACLs, S3/ECR/log access and authorization including KMS; private placement alone is insufficient.
+26. Metrics, scaling decisions, quotas and instance/model startup all introduce delay; test bursts and provide buffering or planned capacity.
+27. Define traffic/cohorts, minimum evidence, quality and service alarms, bake time, rollback target and the authority to stop promotion.
+28. Pipelines focuses on an ML job/artifact DAG; Step Functions coordinates broader service/workflow state, retries and error handling.
+29. Registration preserves a candidate and its evidence; deployment changes production and requires its own gates and authorization.
+30. Test malformed/stale data, leakage, failed evaluation, unauthorized access, bad images, missing artifacts, timeouts, duplicate events and failed rollback.
+31. Drift may indicate a broken input pipeline or a harmless population shift. Diagnose first; any retrained candidate must pass quality and release gates.
+32. Data drift changes inputs; concept drift changes the input/outcome relationship; label drift changes outcome prevalence; measured degradation needs valid ground truth.
+33. Large easy cohorts can dominate the average while a small, important population fails; inspect meaningful slices and sample sizes.
+34. It provides a versioned, representative reference for constraints and distributions; it must be appropriate to the population and intended comparison.
+35. Trace application, queue, invocation, model processing and downstream timing with correlation IDs; compare resource and error metrics.
+36. A larger instance may complete substantially more useful work per billed hour; measure cost per successful prediction at the required latency.
+37. Include application, environment, owner, model/release, workload stage, cost center and usage volume so shared and idle costs remain visible.
+38. Separate human development, ingestion, training, evaluation, build, deployment and runtime responsibilities; limit PassRole and audit privileged transitions.
+39. Routes, DNS, gateways, service endpoints and allowed egress decide the path; a subnet label does not enforce it.
+40. Validate source provenance and labels, restrict writes, version and hash artifacts, scan dependencies, isolate roles and gate releases with audit evidence.
+
 ## Final review checklist
 
 - I can explain all four domains and their 28/26/22/24 weighting.
@@ -343,22 +429,23 @@ These are original blueprint-aligned prompts, not recalled exam questions.
 
 ## Places to learn
 
-This is **not a complete list**, and it is not meant to be consumed end to end. Pick the explanation style, lab environment, and practice format that close your own gaps. Because C01 retires imminently, do not begin a long paid C01 path unless you already hold a valid C01 appointment; new learners should prefer C02-labeled material. Times are provider-stated when stable and otherwise transparent estimates; access, catalog contents, and runtimes can change.
+This is **not a complete list**, and it is not meant to be consumed end to end. Pick the explanation style, lab environment, and practice format that close your own gaps. Because C01 retires imminently, do not begin a long paid C01 path unless you already hold a valid C01 appointment; new learners should prefer C02-labeled material. On September 28 the public Pluralsight page still listed 20 hours, five courses and eight labs; this is catalog evidence, not a review of the paid lessons. Sign-in shells, blocked pages and video shells cannot confirm their current content. Times are provider-stated when stable and otherwise transparent estimates; access, catalog contents, and runtimes can change.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| [Official MLA-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html) and detailed domain pages | Public | 2–4 hours for a careful objective map |
+| [Official MLA-C01 exam guide](https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf) (version 1.0 fallback; HTML unavailable) | Public | 2–4 hours for a careful objective map |
 | [AWS certification page and transition notice](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) | Public | 10–15 minutes; recheck immediately before booking |
-| [AWS Skill Builder MLA-C01 exam-prep plan](https://skillbuilder.aws/category/exam-prep/machine-learning-engineer-associate-MLA-C01) | Mixed public/subscription | 16h 35m comprehensive plan; separate 26h 10m ML learning plan also listed |
+| [AWS Skill Builder MLA-C01 exam-prep plan](https://skillbuilder.aws/category/exam-prep/machine-learning-engineer-associate-MLA-C01) | Mixed public/subscription | Allow 20–35 hours as a study-planning estimate; current plan contents/runtime require sign-in verification |
 | [SageMaker ML lifecycle overview](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html) | Public | 30–60 minutes plus linked implementation topics |
 | [SageMaker Pipelines tutorial](https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html) | Public; AWS usage may cost | 3–6 hours hands-on |
-| [SageMaker Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html) | Public; AWS usage may cost | 2–4 hours selected reading and lab |
+| [SageMaker Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html) | Public; AWS usage may cost | 2–4 hours; existing-customer service, use the availability alternatives for a new account |
+| [AWS/GoDaddy point-in-time feature-history article](https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/) (June 22, 2021) | Public | 45–90 minutes estimated reading/exercise; useful time-semantics lesson, recheck old SDK code |
 | [Machine Learning Lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html) | Public | 4–8 hours selected lifecycle review |
 | [Pluralsight MLA-C01 path](https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01) | Paid/trial | 20 hours; five courses, eight labs, and practice exam listed |
-| [AWS Certified Machine Learning Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/) by Dario Cabianca | Paid/subscription | 13h 10m provider estimate; 448 pages plus Sybex test bank |
+| [AWS Certified Machine Learning Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/) by Dario Cabianca | Paid/subscription | Allow 15–25 hours as a reading estimate; current edition, length and test-bank access were not reverified |
 | [LinkedIn Learning MLA-C01 Cert Prep](https://www.linkedin.com/learning/aws-certified-machine-learning-engineer-associate-mla-c01-cert-prep) | Paid/trial | 24h 58m plus exercises |
 | [Nikolai Schuler MLA-C01 course](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01-exam-prep/) | Paid | About 25–35 hours including demos and one practice exam; verify displayed runtime |
-| [Stéphane Maarek and Abhishek Singh MLA-C01 practice exams](https://www.udemy.com/course/practice-exams-aws-certified-machine-learning-engineer-associate/) | Paid | About 6–10 hours for three 65-question tests plus careful rationale review |
-| [MLA-C01 full course by Tech With Lucy](https://www.youtube.com/watch?v=bUHJ8IPakQY) | Public | 3h 25m video plus pause-and-practice time |
+| [Stéphane Maarek and Abhishek Singh MLA-C01 practice exams](https://www.udemy.com/course/practice-exams-aws-certified-machine-learning-engineer-associate/) | Paid | Allow 6–10 hours for practice and rationale review; current bank size was not reverified |
+| [MLA-C01 full course by Tech With Lucy](https://www.youtube.com/watch?v=bUHJ8IPakQY) | Public | Allow 4–8 hours including pauses; runtime and video contents were not reverified |
 
 Use practice questions as a diagnostic: explain why each alternative fails the stated requirement, return to official product documentation, and implement the weak concept. Avoid recalled-question collections and any source marketed as an exam dump.
