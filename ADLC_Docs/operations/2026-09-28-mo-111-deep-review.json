@@ -1,0 +1,953 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MO-111",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e33815c154cf512fd7a2913537abe42a58f733caa256f88250eefc5631a096dc",
+  "guide_after_sha256": "5bb107960c4abed991e8ceb7f462fb9231c6bcb7d56f33e787bbbe873e88b7ca",
+  "prior_records": {
+    "exam": {
+      "code": "MO-111",
+      "level": "expert",
+      "vendor_id": "microsoft-office",
+      "title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+      "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+      "blueprint_last_checked": "2026-09-04",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-04",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite; build approximately 150 hours of hands-on Word experience with long, reusable, collaborative, and specialized documents."
+    },
+    "review": {
+      "id": "mo-111-2026-09-04-source-validation",
+      "exam_code": "MO-111",
+      "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-111-official-objectives.txt",
+      "blueprint_snapshot_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage document options and settings",
+          "guide_sections": [
+            "Section 1",
+            "Policy and contract scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Use advanced editing and formatting features",
+          "guide_sections": [
+            "Section 2",
+            "Policy scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Create custom document elements",
+          "guide_sections": [
+            "Section 3",
+            "Policy and contract scenarios",
+            "Labs 1 and 3–4"
+          ]
+        },
+        {
+          "objective_group": "Use advanced Word features",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 4–7"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All four live MO-111 assessed domains are mapped to reusable and dynamic document systems, three scenarios, eight practical labs, 20 original checks, and audited output. Both cited official Microsoft URLs were reachable."
+    },
+    "sources": [
+      {
+        "id": "mo-111-blueprint",
+        "title": "MO-111 Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-04",
+        "supported_exams": [
+          "MO-111"
+        ],
+        "notes": "Canonical public exam page and assessed-domain authority."
+      },
+      {
+        "id": "microsoft-word-help",
+        "title": "Word help and learning",
+        "url": "https://support.microsoft.com/en-us/word",
+        "publisher": "Microsoft Support",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "MO-110",
+          "MO-111"
+        ],
+        "notes": "Official task-oriented documentation for Word features used in the guides. September 28 MO-110 deep review: Help landing directory inspected; linked training content not comprehensively reviewed. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "0a33391a0ea0773cf958ead62f83f3c63107dd72487b113fe847600720546e2e",
+      "guide_sections": "1,example1 / Template ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "e34c6a7eaac266ffcb339236172745374948d513ca158665afc1b9d312e83f2b",
+      "guide_sections": "1,lab6 / Saved versions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "a91b8a928db1bf7cb8953a1dc65d0fbf74d0c329f843738f374c80465b8ab386",
+      "guide_sections": "1,lab6 / Compare/combine",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "392469b0b5bc68f1a12f294f141f1911af0b2b35c9cee3c43b2549aac49b8f0b",
+      "guide_sections": "1,lab6 / External source dependency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "24af9c369e3025723ffdb43d7e1540fcc366985e374426219b2d2f9afb417178",
+      "guide_sections": "4 / Macro trust",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "b102acd5bdd6e343257d6411f94ed7aaa59d664a093dc4b2d5e02ef147dcbc77",
+      "guide_sections": "1,lab1 / Quick Access Toolbar",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "9a07d4b7b0dddc6904f70c294aff982a18a38c625969b4419a3727072d0ef256",
+      "guide_sections": "1,lab1 / Hidden ribbon tabs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "b700526aa7f853b45151586498cd3959208a4280bce8764fe31c89df606be5d7",
+      "guide_sections": "1,example1 / Normal font",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "288aeaaa9dde790b14006ab52ec9f9fb220e00bb026f6bfc7a37b4206569bb7d",
+      "guide_sections": "1,4,lab4 / Editing restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "bc216247e52b57952c6b2e9264283b4d64b46fe4df6118247392196765d6ffb4",
+      "guide_sections": "1 / Open password versus editing control",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "dada5d1f9cbcb9605f08377a2257587bbdbbf1ac1a0c61fcf277ec7816dabd27",
+      "guide_sections": "1,lab9 / Editing versus display language",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "d44e46af191f4fad651017f0420ea548e63d0d49c5d3095e4c70637b69e1cada",
+      "guide_sections": "1,2,lab9 / Proofing and hyphenation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "2932f75737b3c5276a7d78e46867026b65b79569f61f6d2d37b2a556ade174ba",
+      "guide_sections": "2,lab2 / Wildcards and special-character scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "236452fb75589a96c129ef6d7b08a9b7cdbeebe481b597bfae4d50808efcc190",
+      "guide_sections": "2 / Style and formatting search",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "9e805232573a408ca6195d3149530cc013a35001e70d53480f861f8978d868e3",
+      "guide_sections": "2,example2 / Paste options",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "185d3034963f9cb5a1067649130503e1a9a71b40b6813770bcdb4c64edfbc49e",
+      "guide_sections": "2,lab2 / Hyphenation and line numbering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "8275c36db0c5cc28eb89fb0caa2fb73db2f482c2c33d8731223a6c2bc569f2fa",
+      "guide_sections": "2 / Paragraph pagination",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "c6c634d8e293e0f845e582f05b12d9a37fe7465ca635574f87e996e16df37c79",
+      "guide_sections": "2 / Paragraph, character and table styles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "757ad0c009c6f936c2f79be96755ce60d482b872b163eebc464143eea61256a7",
+      "guide_sections": "2 / Style inheritance and modification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "f460501d576cb87911817dd6a6aa3e1479be4c8fc2ad3994dfc9505ff1a5e607",
+      "guide_sections": "2,lab2 / Organizer and destination validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "0014726157169a29691b33209cd25008d500d8704f3c46a88d7876efa4fe1c42",
+      "guide_sections": "3,lab1 / Quick Parts selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "1087ef689780d228eb1ff40d662dac580c64b9b4d6677aed135591d27b09a9d0",
+      "guide_sections": "3 / Gallery/category/template ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c66c21412ee7eef39f5ecdb7465eeb13d95a5646bb685bba15c23f6c318f8d56",
+      "guide_sections": "3 / Theme colors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "25fad9db46b6db79fcc92b3241183592b49348d294c1e2b9978ffd0a3b3acb67",
+      "guide_sections": "3 / Theme fonts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "edef1961adc602641beb11b93999fdbd0635d714fc109845b03e17f2763d84d7",
+      "guide_sections": "3 / Theme composition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "bed1ef376d7f5bd4fd1543209cf26093211840d6caa0fe0957d8f7628e643c89",
+      "guide_sections": "3 / Style sets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "3b86d186273a3ce14d353b668337c0f61753389f93695c8c8720e6ae609e2e76",
+      "guide_sections": "3,lab3 / Main/subentry marking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "55ac15c6831709f010f44f6788391b73f1ff8e4967e61b46c4b64b3868336796",
+      "guide_sections": "3 / Index generation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "025a525bb5e8eb30a6a6a0adf5464e6ae6de4a340d9d5e39c88e54e8feec6daa",
+      "guide_sections": "3 / Index refresh",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "fe5635228df268f6b97555ec2d5c73cb2eba0602b1b228d1362caeb929f734f4",
+      "guide_sections": "3 / Figure/table captions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "17f473e3fba9ce68fae99fbd414076ca81f1774faedde91a6435c7ba5b74307e",
+      "guide_sections": "3 / Caption labels and numbering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "d1f03b655316d1bd70c9e0cc4fc6c50a97d5d65e3fedce7c478f83cf34790c13",
+      "guide_sections": "3 / Figure-list generation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "3c43f24544327a0aca25065e3d095a8f247c26591157bf5fe7b3f8e346395aac",
+      "guide_sections": "3 / Bibliography source records",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 14,
+      "objective_sha256": "c60551804cc8cd8d8af3a87e801e7c0bcabaa0f5c9e7049c102a500ae0f2e644",
+      "guide_sections": "3 / Source-linked citations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 15,
+      "objective_sha256": "70f5198afd574fbb1bb02df7aa56fbffd75786a3b2584fea5cd168fb95a026ea",
+      "guide_sections": "3 / Bibliography generation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "86c358bfd38081e2e9612f15a0f6d9d6c6d979a3a4c43f44b6a7864be92ab1ba",
+      "guide_sections": "4 / Insert field command",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "98377047786d7969c2e223f4c96f2fe10ef534c33add2c9bd2d4c1de42c096f2",
+      "guide_sections": "4 / Code/properties/result",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "3697831117d941be81d730e67fac822b96b2f7a1b4073c2708d48732f5b2c620",
+      "guide_sections": "4,lab4 / Standard content controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "8ee311a0206b92183cb9f74b9ad4c98c7906affc61205b3856941a5978cd8169",
+      "guide_sections": "4 / Type, choices and protection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "8defb97ab642297f0a8b036e4bcd9eb7f3a0a6e268df1a1694ab0a76c7e3cdcb",
+      "guide_sections": "4,lab7 / Simple macro recording",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "743eed777172f14326b240e210d0b6395681348c3b2d2d94f5a8e5dd0baabd40",
+      "guide_sections": "4 / Unambiguous macro name",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "3131b89476714cf806dd147dc2bc328ef7ef783f932005cb81f8b6cf7cb890d8",
+      "guide_sections": "4,lab7 / Procedure inspection/editing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "541b6ff2ebcdc3489e7b897ff663b7d2571bfb5b66f9ec2c12d2e2ee124e5785",
+      "guide_sections": "4,example5 / Organizer copy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "505e2a862ad166ccfe8a5415fab62b61b1f54a57e8e058f9b4386ef04ec79bb9",
+      "guide_sections": "4,example4 / Recipient eligibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "c1813e4b4b99febe39a68ae1039641da5f7286b924389b6a0b41bac722cbffba",
+      "guide_sections": "4 / Source fields and textual identifiers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "7adb62b40f5a7d7bb98b1b03a76c12e666894011ed8a72f2ee36a3dc40c6cd99",
+      "guide_sections": "4,example4 / Individual previews",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "e4d8ee221a563b405075c847c459ee59b3f2408f94b186dafa0be02a0a95ebfd",
+      "guide_sections": "4,lab5 / Letters, labels and envelopes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MO-111"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MO-111",
+        "title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+        "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+        "snapshot_path": ".maintenance\\microsoft-followup-2026-09-28\\candidates\\mo-111-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\microsoft-followup-2026-09-28\\candidates\\mo-111-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+        "previous_status_sha256": null,
+        "current_status_sha256": "b8ee8667b7a0040f13cabb9a663407fcf19b99e70c18ec50b982ae17c32d26bb",
+        "official_status": {
+          "skills_versions": [
+            "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+            "You will have 50 minutes to complete this assessment.",
+            "Retirement date: none listed"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 13,
+    "reachable": 13,
+    "access_blocked": 0,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mo-111-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+      "checked_at": "2026-09-28T13:23:19.628834+00:00",
+      "health": {
+        "id": "mo-111-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+        "checked_at": "2026-09-28T13:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps) - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+        "duration_signals": [
+          "24 hours",
+          "50 minutes",
+          "Approximately 150 hours"
+        ],
+        "signal_fingerprint": "a6e5ae3d0e36f7db108173cf029c1deef532078e255bfc3add4e1a4e172aa588",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+      "sha256": "07a1daea7ce6c58e2a2d65879eed7c8fdcc304f56f2866396e32190371f42fd4",
+      "text_characters": 3034
+    },
+    {
+      "id": "microsoft-word-help",
+      "url": "https://support.microsoft.com/en-us/word",
+      "checked_at": "2026-09-28T13:23:19.629572+00:00",
+      "health": {
+        "id": "microsoft-word-help",
+        "url": "https://support.microsoft.com/en-us/word",
+        "checked_at": "2026-09-28T13:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Word help & learning | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/",
+        "duration_signals": [],
+        "signal_fingerprint": "7d599cfff3c2372e2c718a6e43ad25e016f371a358fda599f4dca5abc76d044b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/",
+      "sha256": "a33d68dd51d4ad564c3f006bc84042e98c74fc05cfe89de2bc8553e600d9c656",
+      "text_characters": 731
+    },
+    {
+      "id": "mo111-skills-pdf",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+      "checked_at": "2026-09-28T13:23:19.630006+00:00",
+      "health": {
+        "id": "mo111-skills-pdf",
+        "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+        "checked_at": "2026-09-28T13:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+      "sha256": "d2786433aad5c9f4264d046d660520c6d64c3225a2434cfd1e55539bebf117db",
+      "representation_note": "PDF parsed with pypdf separately; generic HTML decoding is not semantic evidence."
+    },
+    {
+      "id": "mos-expiration-policy",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "checked_at": "2026-09-28T13:23:20.006707+00:00",
+      "health": {
+        "id": "mos-expiration-policy",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "checked_at": "2026-09-28T13:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "content_type": "text/html",
+        "page_title": "Credential expiration policies",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "02be00ecc69bd6d09b0cc1d64114ccd75ee92143ee2f3928f7523e1af9cbbedf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "sha256": "1f9e8aa3c9f4a21ef4f44d75c0ddafb0cd6d57182c3ce2ec4c8f41e9c999b92e",
+      "text_characters": 2379
+    },
+    {
+      "id": "word-update-fields",
+      "url": "https://support.microsoft.com/en-us/word/update-fields",
+      "checked_at": "2026-09-28T13:23:20.277215+00:00",
+      "health": {
+        "id": "word-update-fields",
+        "url": "https://support.microsoft.com/en-us/word/update-fields",
+        "checked_at": "2026-09-28T13:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/update-fields",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Update fields | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/update-fields",
+        "duration_signals": [],
+        "signal_fingerprint": "5f25c53e2ad36e0c7dcbdbee7f94ddec1d3b9f12c070e5686f3898f453d625e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/update-fields",
+      "sha256": "4918a8657b9fadeb1ee8868f4184b2d733c3cbc2d00aa7060ca54095e5207958",
+      "text_characters": 2235
+    },
+    {
+      "id": "word-table-formulas",
+      "url": "https://support.microsoft.com/en-us/word/use-a-formula-in-a-word-table",
+      "checked_at": "2026-09-28T13:23:20.531034+00:00",
+      "health": {
+        "id": "word-table-formulas",
+        "url": "https://support.microsoft.com/en-us/word/use-a-formula-in-a-word-table",
+        "checked_at": "2026-09-28T13:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/use-a-formula-in-a-word-table",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use a formula in a Word table | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/use-a-formula-in-a-word-table",
+        "duration_signals": [],
+        "signal_fingerprint": "99d949791186fd3759669ca081ae09de8560addaced7fae9ecab981bbf5bf13a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/use-a-formula-in-a-word-table",
+      "sha256": "eb546e524af04c5af640b94380cf16cf5f9d3ecee0ad31080e2dc42054c1eb40",
+      "text_characters": 8859
+    },
+    {
+      "id": "word-merge-data",
+      "url": "https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge",
+      "checked_at": "2026-09-28T13:23:20.584102+00:00",
+      "health": {
+        "id": "word-merge-data",
+        "url": "https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge",
+        "checked_at": "2026-09-28T13:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prepare your Excel data source for a Word mail merge | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge",
+        "duration_signals": [],
+        "signal_fingerprint": "fd68853bd5d150a55416f2abc714fa87e63aae836889b6777cecf1aa7f01e62b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge",
+      "sha256": "7057ea6c0d8d7eaf1ad3a224ea12f848637967f79c4661f5b3b73bda09109458",
+      "text_characters": 5470
+    },
+    {
+      "id": "office-internet-macros",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+      "checked_at": "2026-09-28T13:23:20.700404+00:00",
+      "health": {
+        "id": "office-internet-macros",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+        "checked_at": "2026-09-28T13:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+        "content_type": "text/html",
+        "page_title": "Macros from the internet are blocked by default in Office - Microsoft 365 Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+        "duration_signals": [],
+        "signal_fingerprint": "e992f602f1e6a883e0ee3ef4a7681485bcf7fb4e6a3ae63dfa8309bb08b28fc9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+      "sha256": "b7ee053661e769ac8e21e818a46aa2934aa7cd723227a737838c1e0997ed11c3",
+      "text_characters": 31982
+    },
+    {
+      "id": "word-paste-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/updated-default-paste-option-in-word-for-windows/4225168/",
+      "checked_at": "2026-09-28T13:23:21.025888+00:00",
+      "health": {
+        "id": "word-paste-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/updated-default-paste-option-in-word-for-windows/4225168/",
+        "checked_at": "2026-09-28T13:23:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/updated-default-paste-option-in-word-for-windows/4225168/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Paste text in Word",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/updated-default-paste-option-in-word-for-windows/4225168",
+        "duration_signals": [],
+        "signal_fingerprint": "13f921bb32fbcba4bf65ff09c9df60d9b6b5b53361d9f61b4320cb499814b006",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/updated-default-paste-option-in-word-for-windows/4225168/",
+      "sha256": "c6ad342ebfe98cc7ba9c380b9958d8cc7fc8fd7c97aaaa732199b8084982f457",
+      "text_characters": 18,
+      "representation_note": "Complete public article read from embedded JSON; main element is a title only."
+    },
+    {
+      "id": "word-paste-options",
+      "url": "https://support.microsoft.com/en-us/word/control-the-formatting-when-you-paste-text",
+      "checked_at": "2026-09-28T13:23:21.026243+00:00",
+      "health": {
+        "id": "word-paste-options",
+        "url": "https://support.microsoft.com/en-us/word/control-the-formatting-when-you-paste-text",
+        "checked_at": "2026-09-28T13:23:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/control-the-formatting-when-you-paste-text",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Control the formatting when you paste text | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/control-the-formatting-when-you-paste-text",
+        "duration_signals": [],
+        "signal_fingerprint": "8d632b36ca54c08ecdbf5bc6a7d1266fca8999bb28693068a499fbda6c4d0493",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/control-the-formatting-when-you-paste-text",
+      "sha256": "34f991cb6542d525e3296bac572dc9c507fd031cff86e1db3470e1d511eed956",
+      "text_characters": 7403
+    },
+    {
+      "id": "word-normal-template",
+      "url": "https://support.microsoft.com/en-us/word/change-the-normal-template-normal-dotm",
+      "checked_at": "2026-09-28T13:24:29.946737+00:00",
+      "health": {
+        "id": "word-normal-template",
+        "url": "https://support.microsoft.com/en-us/word/change-the-normal-template-normal-dotm",
+        "checked_at": "2026-09-28T13:24:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/change-the-normal-template-normal-dotm",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Change the Normal template (Normal.dotm ) | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/change-the-normal-template-normal-dotm",
+        "duration_signals": [],
+        "signal_fingerprint": "fefb6f69b1ce44bdebdf9c9147287790c6917286d2472a3db59ffe56b37d383d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/change-the-normal-template-normal-dotm",
+      "sha256": "08436e8b1e7613ed54c453fec6f93dc42da0e40a92cde613d5e5cf70a76a03ce",
+      "text_characters": 1311
+    },
+    {
+      "id": "word-create-macro",
+      "url": "https://support.microsoft.com/en-us/word/create-or-run-a-macro",
+      "checked_at": "2026-09-28T13:24:29.947522+00:00",
+      "health": {
+        "id": "word-create-macro",
+        "url": "https://support.microsoft.com/en-us/word/create-or-run-a-macro",
+        "checked_at": "2026-09-28T13:24:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/create-or-run-a-macro",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create or run a macro | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/create-or-run-a-macro",
+        "duration_signals": [],
+        "signal_fingerprint": "47a6acc8bf3a5177d065482ea3dea9ee2dfd000fc85577a432acaa19ffdeceea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/create-or-run-a-macro",
+      "sha256": "fa34596200522c958c2954af00d940fe9792f5d52d141b5ac8283326a7bfd337",
+      "text_characters": 4964
+    },
+    {
+      "id": "word-merge-preview",
+      "url": "https://support.microsoft.com/en-us/word/mail-merge-preview-results",
+      "checked_at": "2026-09-28T13:24:29.947952+00:00",
+      "health": {
+        "id": "word-merge-preview",
+        "url": "https://support.microsoft.com/en-us/word/mail-merge-preview-results",
+        "checked_at": "2026-09-28T13:24:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/word/mail-merge-preview-results",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Mail merge: Preview Results | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/word/mail-merge-preview-results",
+        "duration_signals": [],
+        "signal_fingerprint": "7dfa4277e2b9acb487bf8ca0df506d44769105c1c88c71dea090e8436648a847",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/word/mail-merge-preview-results",
+      "sha256": "31560c2734dfebbc94bd42c63e084b54267038203b990a8d6efc7b5ab6f5ab14",
+      "text_characters": 632
+    }
+  ],
+  "added_source_ids": [
+    "mo111-skills-pdf",
+    "word-update-fields",
+    "word-table-formulas",
+    "word-merge-data",
+    "office-internet-macros",
+    "word-paste-blog",
+    "word-paste-options",
+    "word-normal-template",
+    "word-create-macro",
+    "word-merge-preview"
+  ],
+  "findings": [
+    {
+      "id": "mo111-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Detailed task coverage missing",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-111"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The linked PDF has 47 tasks beyond the four page headings.",
+      "recommendation": "Expand teaching and task mapping with expected-output labs.",
+      "disposition": "applied",
+      "source_id": "mo111-skills-pdf",
+      "resolution": "Expand teaching and task mapping with expected-output labs."
+    },
+    {
+      "id": "mo111-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Bulk refresh needs inspection",
+      "url": "https://support.microsoft.com/en-us/word/update-fields",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-111"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tables may need individual F9 and missing references need repair.",
+      "recommendation": "Teach field verification and a changed-value example.",
+      "disposition": "applied",
+      "source_id": "word-update-fields",
+      "resolution": "Teach field verification and a changed-value example."
+    },
+    {
+      "id": "mo111-deep-3",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Text-only paste is setting-sensitive",
+      "url": "https://support.microsoft.com/en-us/word/control-the-formatting-when-you-paste-text",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-111"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current support documentation allows retained list markers.",
+      "recommendation": "Qualify the historical article rather than repeating its universal list-removal wording.",
+      "disposition": "applied",
+      "source_id": "word-paste-options",
+      "resolution": "Qualify the historical article rather than repeating its universal list-removal wording."
+    },
+    {
+      "id": "mo111-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Macro format is not execution permission",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-111"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Windows internet-origin blocks and organizational trust can prevent execution.",
+      "recommendation": "Separate storage, selection and trust in macro practice.",
+      "disposition": "applied",
+      "source_id": "office-internet-macros",
+      "resolution": "Separate storage, selection and trust in macro practice."
+    },
+    {
+      "id": "mo111-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Postal identifiers and merge counts need validation",
+      "url": "https://support.microsoft.com/en-us/word/prepare-your-excel-data-source-for-a-word-mail-merge",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-111"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Identifiers need textual import and recipient exclusions affect output.",
+      "recommendation": "Add source-data checks and recipient reconciliation before final delivery.",
+      "disposition": "applied",
+      "source_id": "word-merge-data",
+      "resolution": "Add source-data checks and recipient reconciliation before final delivery."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "word-paste-blog",
+      "decision": "accepted-bounded",
+      "notes": "Complete embedded article body read; Ali Forelli, originally May 7 2024, Windows2405 build17624.20000. Its broad list-removal wording is qualified by current support settings. Media not viewed."
+    }
+  ],
+  "labs": {
+    "total": 9,
+    "desktop_executed": 0,
+    "offline_checks": []
+  },
+  "answered_checks": 32,
+  "limitations": [
+    "Same-context AI review; independent human review remains pending.",
+    "No Word/Excel desktop, VBA procedure, mail merge, exam simulator or paid lesson executed.",
+    "Detailed PDF requires separate review; the automated page adapter compares four domain headings.",
+    "Product references read within recorded boundaries, not a complete build/platform/policy matrix.",
+    "Article media not viewed; suggested lab outcomes are not executed evidence."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local repository and site checks only; no Office desktop, macro or mail merge executed.",
+    "learning_catalog_consistency": "passed"
+  },
+  "detailed_pdf_evidence": {
+    "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
+    "sha256": "d2786433aad5c9f4264d046d660520c6d64c3225a2434cfd1e55539bebf117db",
+    "pages": 3
+  },
+  "source_reading_boundaries": {
+    "mo-111-blueprint": "Full credential overview read: 50 minutes, ten languages, 150-hour recommendation, no dedicated Learn collection, 60-month renewal label and no retirement notice.",
+    "microsoft-word-help": "Landing directory inspected; not a complete audit of linked lessons.",
+    "mo111-skills-pdf": "All 47 tasks on three pages read and mapped; four-domain automatic baseline is unchanged. Separate PDF byte hash retained.",
+    "mos-expiration-policy": "Current main policy read; MOS five-year expiration with no retroactive inference about an individual credential.",
+    "word-update-fields": "Entire main instructions read, including separate table refresh and broken-reference caveats.",
+    "word-table-formulas": "Main insertion and update instructions read; function catalog not exhaustively audited. Used as adjacent field-update practice.",
+    "word-merge-data": "Current Windows import/type preparation and postal-identifier guidance read; no live merge. Do not claim reformatting recovers discarded source digits.",
+    "office-internet-macros": "Main Windows scope and trust-policy sections read; all flowchart/platform/channel combinations not audited. No policy changes performed.",
+    "word-paste-blog": "Complete embedded article body read; Ali Forelli, originally May 7 2024, Windows2405 build17624.20000. Its broad list-removal wording is qualified by current support settings. Media not viewed.",
+    "word-paste-options": "Current paste-context options, result types and list-preservation sections read.",
+    "word-normal-template": "Complete main instructions read; changes affect future documents, original defaults restored after template recreation.",
+    "word-create-macro": "Main recording, naming, keyboard selection, storage, Organizer copy and web limitation read; no macro or VBA executed.",
+    "word-merge-preview": "Complete main instructions read: individual previews, filters and recipient exclusion."
+  }
+}

@@ -2719,6 +2719,8 @@ The review maps the live practical scope to reusable layout, precise object, acc
 
 ## MO-111 coverage record
 
+The September 28 [deep review](research/2026-09-28-mo-111-deep-review.md) maps 47 detailed objectives. Read the entire Word Expert guide and all 47 PDF tasks. Add five worked examples, nine proposed desktop labs and 32 answered checks covering templates, formatting, field refresh, macro execution boundaries and merge verification. The four-domain automatic baseline is unchanged. No Office application, macro or mail merge was executed; independent human review remains pending. Current guide citations: 13 registered, 13 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 4, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: document options/settings; advanced editing/formatting; custom document elements; advanced Word features

@@ -3,6 +3,64 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "mo-111-2026-09-04-source-validation",
+      "exam_code": "MO-111",
+      "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-111-official-objectives.txt",
+      "blueprint_snapshot_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage document options and settings",
+          "guide_sections": [
+            "Section 1",
+            "Policy and contract scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Use advanced editing and formatting features",
+          "guide_sections": [
+            "Section 2",
+            "Policy scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Create custom document elements",
+          "guide_sections": [
+            "Section 3",
+            "Policy and contract scenarios",
+            "Labs 1 and 3–4"
+          ]
+        },
+        {
+          "objective_group": "Use advanced Word features",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 4–7"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All four live MO-111 assessed domains are mapped to reusable and dynamic document systems, three scenarios, eight practical labs, 20 original checks, and audited output. Both cited official Microsoft URLs were reachable."
+    },
+    {
       "id": "mo-110-2026-09-04-source-validation",
       "exam_code": "MO-110",
       "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
@@ -9168,11 +9226,11 @@
       "notes": "All five live MO-310 assessed domains are mapped to presentation design and delivery decisions, three scenarios, eight practical labs, 20 original checks, and delivery-mode inspection. Both cited official Microsoft URLs were reachable."
     },
     {
-      "id": "mo-111-2026-09-04-source-validation",
+      "id": "mo-111-2026-09-28-source-validation",
       "exam_code": "MO-111",
       "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-04",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/mo-111-official-objectives.txt",
       "blueprint_snapshot_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
@@ -9218,12 +9276,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 2,
-        "reachable": 2,
+        "unique_external_links": 13,
+        "reachable": 13,
         "access_blocked": 0,
         "missing_or_error": 0
       },
-      "notes": "All four live MO-111 assessed domains are mapped to reusable and dynamic document systems, three scenarios, eight practical labs, 20 original checks, and audited output. Both cited official Microsoft URLs were reachable."
+      "notes": "Read the entire Word Expert guide and all 47 PDF tasks. Add five worked examples, nine proposed desktop labs and 32 answered checks covering templates, formatting, field refresh, macro execution boundaries and merge verification. The four-domain automatic baseline is unchanged. No Office application, macro or mail merge was executed; independent human review remains pending. See docs/research/2026-09-28-mo-111-deep-review.md"
     },
     {
       "id": "mo-211-2026-09-04-source-validation",

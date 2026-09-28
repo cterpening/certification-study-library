@@ -2208,6 +2208,21 @@ This is a selective learning path, not a complete list of Word resources.
 | Microsoft task references linked in Sections 1–6 | Public; practice the result in Word | **2–3 hours** selected reading, included in targeted study above |
 | [Location-link article](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/link-to-a-location-in-word-for-windows-and-mac/4541663) | Public; optional current-workflow context | **10–15 minutes** reading and reproduction |
 
+### MO-111 — Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)
+
+Resource details from the [MO-111 guide](../guides/MO-111-microsoft-word-expert-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Word Expert resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MO-111 page](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) | Public | **20 minutes** for scope and logistics |
+| [Microsoft Word help and learning](https://support.microsoft.com/en-us/word) | Public | **12–18 hours** for advanced targeted practice |
+| Nine labs in this guide | Microsoft 365 Apps required | **12–18 hours** plus two timed repeats |
+| [Detailed skills PDF](https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf) | Public; task-by-task planning | **30–45 minutes** |
+| Microsoft task references linked above | Public; focused task practice | **3–4 hours**, included in targeted practice above |
+| [Ali Forelli’s paste article](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/updated-default-paste-option-in-word-for-windows/4225168/) | Public; bounded historical workflow explanation | **15 minutes** plus a comparison exercise |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
