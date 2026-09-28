@@ -101,11 +101,11 @@ These are substantial AI-assisted guides, not finished certification products. A
 |---|---|---|---|
 | MO-110 | [Word Associate (Microsoft 365 Apps)](guides/MO-110-microsoft-word-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) | Deep review completed; human review pending |
 | MO-210 | [Excel Associate (Microsoft 365 Apps)](guides/MO-210-microsoft-excel-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) | Deep review completed; human review pending |
-| MO-310 | [PowerPoint Associate (Microsoft 365 Apps)](guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) | Sources/objectives checked; human review pending |
+| MO-310 | [PowerPoint Associate (Microsoft 365 Apps)](guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) | Deep review completed; human review pending |
 | MO-111 | [Word Expert (Microsoft 365 Apps)](guides/MO-111-microsoft-word-expert-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) | Deep review completed; human review pending |
 | MO-211 | [Excel Expert (Microsoft 365 Apps)](guides/MO-211-microsoft-excel-expert.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/) | Deep review completed; human review pending |
 
-This first MOS wave covers the five live Microsoft 365 Apps Word, Excel, and PowerPoint Associate/Expert exams verified September 4, 2026. Each guide uses a practical file-production pattern with three scenarios, eight labs, timed rehearsal, and an explicit output-inspection pass. MO-410 Outlook was still coming soon; Office 2019 and job-specific Excel credentials remain future inventory rather than silently duplicated current-version guides.
+These five Microsoft 365 Apps Word, Excel and PowerPoint guides completed detailed reviews on September 28, 2026. Each maps its official PDF tasks to instruction, worked examples, proposed desktop labs and answered checks. Office application execution and independent human review remain pending. Older Office versions and job-specific credentials are separate inventory decisions. See the [Microsoft review tracker](docs/MICROSOFT-REVIEW-STATUS.md) for all 55 guides and unresolved source blockers.
 
 ## IBM certification expansion
 

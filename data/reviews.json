@@ -3,6 +3,72 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "mo-310-2026-09-04-source-validation",
+      "exam_code": "MO-310",
+      "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-310-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage presentations",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage slides",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Insert and format text, shapes, and images",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Insert tables, charts, SmartArt, 3D models, and media",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Apply transitions and animations",
+          "guide_sections": [
+            "Section 5",
+            "Training and pitch scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five live MO-310 assessed domains are mapped to presentation design and delivery decisions, three scenarios, eight practical labs, 20 original checks, and delivery-mode inspection. Both cited official Microsoft URLs were reachable."
+    },
+    {
       "id": "mo-211-2026-09-04-source-validation",
       "exam_code": "MO-211",
       "guide_path": "guides/MO-211-microsoft-excel-expert.md",
@@ -9284,11 +9350,11 @@
       "notes": "Read the entire guide and all 65 PDF tasks; correct the named-function scope and add six examples, ten proposed labs and 32 answered checks. 20 independent Python/Decimal assertions verify expected arithmetic, sets and text outcomes, not Excel engine behavior. Five-domain page baseline unchanged; no desktop execution and human review pending. See docs/research/2026-09-28-mo-210-deep-review.md"
     },
     {
-      "id": "mo-310-2026-09-04-source-validation",
+      "id": "mo-310-2026-09-28-source-validation",
       "exam_code": "MO-310",
       "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-04",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/mo-310-official-objectives.txt",
       "blueprint_snapshot_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
@@ -9342,12 +9408,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 2,
-        "reachable": 2,
+        "unique_external_links": 18,
+        "reachable": 18,
         "access_blocked": 0,
         "missing_or_error": 0
       },
-      "notes": "All five live MO-310 assessed domains are mapped to presentation design and delivery decisions, three scenarios, eight practical labs, 20 original checks, and delivery-mode inspection. Both cited official Microsoft URLs were reachable."
+      "notes": "Read the entire guide and all 73 PDF tasks; add five worked examples, ten proposed labs and 32 answered checks. 12 local assertions check outline counts, geometry, chart arithmetic and a simplified animation timeline only. Teach omitted Zoom, master, recording and 3D tasks; correct media-preservation and reading-order assumptions. No PowerPoint or assistive technology executed; human review pending. See docs/research/2026-09-28-mo-310-deep-review.md"
     },
     {
       "id": "mo-111-2026-09-28-source-validation",

@@ -1,0 +1,1270 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MO-310",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "edbdd93be8a96c1fc1336984ba4b7f5df8e7e5a066842d20c4c930b78ed31aaa",
+  "guide_after_sha256": "48458a4732bf6c055fcc269d15847e88e7fa23ec2afac9d2736c5b0d48cf5d8d",
+  "prior_records": {
+    "exam": {
+      "code": "MO-310",
+      "level": "intermediate",
+      "vendor_id": "microsoft-office",
+      "title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+      "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+      "blueprint_last_checked": "2026-09-04",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-04",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; Microsoft recommends about 150 hours of instruction and hands-on experience creating and managing practical presentations."
+    },
+    "review": {
+      "id": "mo-310-2026-09-04-source-validation",
+      "exam_code": "MO-310",
+      "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-310-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage presentations",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Manage slides",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Insert and format text, shapes, and images",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Insert tables, charts, SmartArt, 3D models, and media",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Apply transitions and animations",
+          "guide_sections": [
+            "Section 5",
+            "Training and pitch scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five live MO-310 assessed domains are mapped to presentation design and delivery decisions, three scenarios, eight practical labs, 20 original checks, and delivery-mode inspection. Both cited official Microsoft URLs were reachable."
+    },
+    "sources": [
+      {
+        "id": "mo-310-blueprint",
+        "title": "MO-310 Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-04",
+        "supported_exams": [
+          "MO-310"
+        ],
+        "notes": "Canonical public exam page and assessed-domain authority."
+      },
+      {
+        "id": "microsoft-powerpoint-help",
+        "title": "PowerPoint help and learning",
+        "url": "https://support.microsoft.com/en-us/powerpoint",
+        "publisher": "Microsoft Support",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-04",
+        "supported_exams": [
+          "MO-310"
+        ],
+        "notes": "Official task-oriented documentation for PowerPoint features used in the guide."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "f5b145a1670790568ad9fb88f29dc752a120efadbc3bb53c806e45f1b1dc9a5e",
+      "guide_sections": "1,lab2 / Master theme/background",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "ec8f6439f26873ff7bd71f04e52a73bd1a8f5ab91120b8a6754b57cd9ac31f13",
+      "guide_sections": "1,lab2 / Shared master content",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "d81f6a56b063a16b68af4b8f40f016e87565d0cc793b51c917d704a15a0a3025",
+      "guide_sections": "1,lab2 / Create layouts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "96baecf8563fcb6edbee0407003a7aedd013930fe2c6b513c1ea197dbdd93ad3",
+      "guide_sections": "1,lab2 / Modify placeholders/layouts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "37ab6abfa8402ee517e299dad3c17f93b5f7c8ad0287f4c6dd98f152ec7e4680",
+      "guide_sections": "1,lab2 / Handout Master",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "01732d9913f0b112b71336c4c98599be7b53db4c269a5c59c52461b012e27456",
+      "guide_sections": "1,lab2 / Notes Master",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "c1302b9c9c9519405f5e21df328752c482a237051b24bb4b4aaea44bbe38f980",
+      "guide_sections": "1,lab2 / Slide size and fit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "90b457e82f6e1f5f49b69879425fe588a2f750a1cded9aa1d5ef1e083787545c",
+      "guide_sections": "1 / Appropriate views",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "adae604c83dfcf143af5e652030c9e29d67d86dc7966bf8a8e469352a1c8fb40",
+      "guide_sections": "1,lab2 / Title/Author properties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "5cc0ffda835e97dfb5378b3684db1c4bd7a49a183d9ad79056b4d6fb3d242fdd",
+      "guide_sections": "1,lab4 / Slide print selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "137194e0d0a660099d6844270996e130c4c72590236d072622a691c009c5dd99",
+      "guide_sections": "1,lab4 / Notes pages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "870cf8b3e0a86e6b49591244b115578ad8f730a98f4c3b8fdfd57d04a5e3c2bc",
+      "guide_sections": "1,lab4 / Handout pages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "17aeb67ea79b0dada54eb41b4d4dfb3f34d7d305661ba8c701c495b0fb403618",
+      "guide_sections": "1,lab3 / Custom show subset/order",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 14,
+      "objective_sha256": "8c9deeefef2e8bf4e4ccf8401255cbc7100a173521dc2d4fb2fba35e6671e958",
+      "guide_sections": "1 / Show mode options",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 15,
+      "objective_sha256": "85bcbed8e614cfd25ccfd31082168c774567040c06b350172e607d03658b282a",
+      "guide_sections": "1,lab9 / Rehearsed timings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 16,
+      "objective_sha256": "64164a71d93fe28c79a435615709def92780722dd7dd5678e7b43d926ef20a1e",
+      "guide_sections": "1,lab9 / Narration/device/ink settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 17,
+      "objective_sha256": "3b449f9713a8970655a4744f1a2e10e117ac5dfa42a16d264b6584aeb7d16a19",
+      "guide_sections": "1,lab9 / Presenter and audience displays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 18,
+      "objective_sha256": "288aeaaa9dde790b14006ab52ec9f9fb220e00bb026f6bfc7a37b4206569bb7d",
+      "guide_sections": "1,lab10 / Editing controls versus Final",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 19,
+      "objective_sha256": "0992c3ad8b25d782de8f3b303c97404dc05384621f80bc7974264b26573bd54d",
+      "guide_sections": "1,lab10 / Password purpose",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 20,
+      "objective_sha256": "3744ba94270abda118563f5e18e8e061195c687ca7dc3592a72066699bdac934",
+      "guide_sections": "1,lab10 / Inspection on a copy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 21,
+      "objective_sha256": "fd965fa1b94d629217070543d951d98c0e56b6a7ef30bd10e957b3aeaee9b445",
+      "guide_sections": "1,lab10 / Comments/replies/resolution",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 22,
+      "objective_sha256": "0364351961dda240b407139a7418cac105dc5c987fda5e02f716f40656c198be",
+      "guide_sections": "1 / Original,format and content preservation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 23,
+      "objective_sha256": "1ff076aa2176b9c44b958d1c1286d5bd84a70c152cb7a2058ad5dc516992bb97",
+      "guide_sections": "1,lab10 / Output format and verification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "af73caa73ae5a854acbbc4eff4525c4fad835765750b667f2ac25b56aebc383f",
+      "guide_sections": "2,example1,lab1 / Word outline headings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "e76c51bca8ff288f9f10ade19fc8069fbc83439801a573a44f15f1fa4b1f551d",
+      "guide_sections": "2,lab1 / Reuse and formatting choice",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "ee1b667b8f7766b2559d41e9e42940067153607d9b01b1081179a56e1b5f0cb5",
+      "guide_sections": "2,lab1 / New slide/layout",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "5d421542ceec5d7bb7d15b8417c2c836b9febc68971d0b31a165317568000d86",
+      "guide_sections": "2,lab3 / Summary Zoom",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "0158e96ce0d7e828b2aa00deb898bedf325de8dddc0ae128b1eb67b01dca6517",
+      "guide_sections": "2,lab1 / Duplicate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "b5c47b81cd564cf361996ad2cb870cacdcbd51042c5edc60703abfd039e4b17d",
+      "guide_sections": "2,lab1 / Hide/unhide",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "a0ea97d54c67f42b8184906c828298d9d7d3cacf8d85b56afd4951c47272e6c1",
+      "guide_sections": "2 / Per-slide background",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "c574f247bbfb62a8ae723ec171c3973eb369ecc1cd62c400ba9d75affe59d3c7",
+      "guide_sections": "2,lab4 / Slide controls versus notes header",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "7ff65a9c774a28cf41dff5b5ecfc96c014f7d0147077e119f317ab40f263d74f",
+      "guide_sections": "2,lab1 / Sections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "77bd8b2d8f7b74e1d1fdde3757c01b0665c1f9a32afa237f6a7d57c846ab4434",
+      "guide_sections": "2,lab1 / Slide/section ordering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "b0c57ce0799543a30478aba436a76ba06eadd488cc0a20241f6e70d50361428a",
+      "guide_sections": "2,lab1 / Section names",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "403d043eec70134fa4879bf480c1d11a04d76e7d6930094021f2063255dbc666",
+      "guide_sections": "3,lab5 / Text formatting/styles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "8ed75a3eaf4e1613b3ca3e5faa9862ddb643e0b71318e840e790645f5459872c",
+      "guide_sections": "3,lab5 / Text columns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "f08c7886a237a2992298e3660015659f2a9feb3a0628d464bf88da1c4215467e",
+      "guide_sections": "3,lab5 / Bullets and numbering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "992765b3eb63e8dbed28ebc389662f34c8287971f4a9cd4effd8b55ad43c817b",
+      "guide_sections": "3,lab3 / Meaningful hyperlink and destination",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "bb8e366660155b5c463528db82da99aabd1b618093219c7c8b5dae42e9eab251",
+      "guide_sections": "2,example2,lab3 / Section/Slide Zoom",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "fe5cd209f575de0939c83ac159fb485d5303a1d5ec3d4376b86368603ab1ffd6",
+      "guide_sections": "3,example3,lab5 / Crop and aspect ratio",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "633e8fcf21f652ab6d52eb4031ad742885c5bb87e67ab749faaa0c18c80d27da",
+      "guide_sections": "3,lab5 / Picture styles/effects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "3745f3de786f11b940e6dfde80569653f7cfd5df370daeabf7be5d6252b0159a",
+      "guide_sections": "3,lab5 / Screenshot/clipping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "891230c92f0bc5a3b3c3898b03140d39fc0cbc87f69e9729f6cc29eb738cf938",
+      "guide_sections": "3,lab5 / Shapes/icons/graphics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "7a821717f33506560a7e33aceac44b24286e484e36f11cc08a7f9503d116554c",
+      "guide_sections": "3,lab5 / Digital ink",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "41132de993ac4ec490e5a33314a907b555f65ce0ae8b3a5c1866346bdddad058",
+      "guide_sections": "3,lab5 / Text in graphics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "d8244b9706f028bada102b47adf9c7e97b5142f90022355a0241d5e44e4da830",
+      "guide_sections": "3,lab5 / Object dimensions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "9d40e17b834c3be6cd3d66c04de06fea9318266e8b7499329f9cdaa85d1d1cf9",
+      "guide_sections": "3,lab5 / Fill/outline formatting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 14,
+      "objective_sha256": "f9ffe7f525b78d128e97e4fc6e4db6f3beaac32cc2d74f1879deba23c9214cea",
+      "guide_sections": "3,lab5 / Built-in graphic styles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 15,
+      "objective_sha256": "d6a382c58cad0adbeb5a66610edd11093a99990418970e7c4283935310c616f4",
+      "guide_sections": "3,4,lab6 / Alt text and diagram relationships",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 16,
+      "objective_sha256": "45743437704d634d9101b3bf385d99a40d766f11aaf671138bc7e0ecd71f3147",
+      "guide_sections": "3,lab5 / Visual stacking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 17,
+      "objective_sha256": "44213bfdba3031f42f2deaee94b3c5c9cee86afbb3e23ef6fe96d7a0b6a74508",
+      "guide_sections": "3,lab5 / Align/distribute",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 18,
+      "objective_sha256": "173b6f2d7f17a1d9a2d90fb0d27be1609046e890c74cb9802f5e7a09a62a0700",
+      "guide_sections": "3,lab5 / Group and recheck animation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 19,
+      "objective_sha256": "e127147fff2417278db801498bc4befb90e1f67fb2b3f285696bc1acbda2f67e",
+      "guide_sections": "3,lab5 / Guides/gridlines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "1648763c3f774c7475a2205b873117d43efa10e7c0a61a87f23a7a86f58b833d",
+      "guide_sections": "4,lab7 / Table insertion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "c8bd57b1ce3fe703684dee715a0e643e28ecaaa15a4ee1dc8c037b6cca74cd2d",
+      "guide_sections": "4,lab7 / Table row/column changes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "a98158d14b7d56bae8a1f1c66f38934ab10ca8d22951a110103ff89d5fbccbd7",
+      "guide_sections": "4,lab7 / Table styles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "ae09e95f8208a555cce831a3c65d599fb7c86cc1c55b9ce03c98793c1cbe59b9",
+      "guide_sections": "4,example5,lab7 / Chart creation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "93971ee219aeac2b054065c2978d518c31f6c7e753dbf4b2eb1600f21507d65d",
+      "guide_sections": "4,example5,lab7 / Chart source/series/labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "428f28c627f1b72fd8e93a857e3bf21dda3ed058245b31f906b886fea6ce9ed1",
+      "guide_sections": "4,lab7 / SmartArt insertion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "3fa5aac653bce6ad5a4084f2a57da041074da43d637348f242ceb9fb5a71bf51",
+      "guide_sections": "4,lab7 / SmartArt/list conversion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "ed2d05a2529bc33cb29144bbfbcf38081728ed013ab67c708c9be9c38d95d29f",
+      "guide_sections": "4,lab7 / Nodes and hierarchy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "fb1952d6685a43d37b38ebcc60b97bf931e3a3e32565846c073ff1e2b8b70ea0",
+      "guide_sections": "4,lab8 / Insert 3D model",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "0350db125f027e5433d7348e5ed7e8ad6d8d77df4ed111786424077c23d99de4",
+      "guide_sections": "4,lab8 / Viewpoint and frame",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "6f299292f6362ce2a2eb320fb3611d645f00832ccbfcd9f3b74882a7e700952f",
+      "guide_sections": "4,lab10 / Audio/video insertion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "de1593f5e7ec5809f630578f6296501948b0a82b2a60aa201d8026afd6701082",
+      "guide_sections": "4,lab10 / Screen recording and trim",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 13,
+      "objective_sha256": "253c5dd4766faf7963c4018be9b5824365384c16d367787f36b03504a470953f",
+      "guide_sections": "4,lab10 / Start,volume,loop and track checks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "12c775a68c5cbebb0ed822575637da751883e19bca0fbffd85ca29eddf0a1889",
+      "guide_sections": "5,lab8 / Basic/3D slide transition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "3c8936f33c93deaeef2e8ea35faae770a4a577b7cca40541127da7b52b0eb330",
+      "guide_sections": "5,lab8 / Transition options/duration/advance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "4e1c594b2beb68492684081936e31835298e274cdba995acd67822e046e2a29c",
+      "guide_sections": "5,lab9 / Text/graphic effects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "fa31b06a899dbac02135565efee6d347534b369d4d3326dc7f1afa80e4f14cf0",
+      "guide_sections": "4,lab8 / Model animation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "cd22aad8bf1d9e082ffbbd818ee87227e571e4d63a9881f4513c8f04df3deae9",
+      "guide_sections": "5,example4,lab9 / Start,duration,delay",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "61afb91c3a3dcebff248b7810e16c208087e5ee77328279b3b58111c70602b87",
+      "guide_sections": "5,lab8 / Motion path endpoints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "63e517d1a50520b0d77a2b09bc78f04560dd49f72217a269f3decbe2d6a78256",
+      "guide_sections": "5,lab9 / Animation pane ordering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MO-310"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MO-310",
+        "title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+        "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+        "snapshot_path": ".maintenance\\microsoft-followup-2026-09-28\\candidates\\mo-310-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\microsoft-followup-2026-09-28\\candidates\\mo-310-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+        "previous_status_sha256": null,
+        "current_status_sha256": "6537a81add91771a3ca3bbb3f6b548f7bb165e684f4c0df33237cb7893dfdd24",
+        "official_status": {
+          "skills_versions": [
+            "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps) - Certifications | Microsoft Learn",
+            "You will have 50 minutes to complete this assessment.",
+            "Retirement date: none listed"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 18,
+    "reachable": 18,
+    "access_blocked": 0,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mo-310-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+      "checked_at": "2026-09-28T13:51:50.089180+00:00",
+      "health": {
+        "id": "mo-310-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+        "checked_at": "2026-09-28T13:51:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps) - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+        "duration_signals": [
+          "24 hours",
+          "50 minutes",
+          "approximately 150 hours"
+        ],
+        "signal_fingerprint": "8119ce56bd6282e3ba2b77f0c90375d1c0477e04c4faa10f36b5bccdfa593f71",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+      "sha256": "3641847fd210f5f966681098842d08622a8402f71a4e0d87c017fb0b1c40c608",
+      "text_characters": 3234
+    },
+    {
+      "id": "microsoft-powerpoint-help",
+      "url": "https://support.microsoft.com/en-us/powerpoint",
+      "checked_at": "2026-09-28T13:51:50.090555+00:00",
+      "health": {
+        "id": "microsoft-powerpoint-help",
+        "url": "https://support.microsoft.com/en-us/powerpoint",
+        "checked_at": "2026-09-28T13:51:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "PowerPoint help & learning | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/",
+        "duration_signals": [],
+        "signal_fingerprint": "cfe0da17b3cf5258bc2b7883822feb2f4b598d7ff8c59b20a8e187a5a7b4c071",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/",
+      "sha256": "48e40a34847132a2c3ab6bc9ed0450710cf22646111891086d98a78cf022e089",
+      "text_characters": 867
+    },
+    {
+      "id": "mo310-skills-pdf",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf",
+      "checked_at": "2026-09-28T13:54:41.765963+00:00",
+      "health": {
+        "id": "mo310-skills-pdf",
+        "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf",
+        "checked_at": "2026-09-28T13:54:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf",
+      "sha256": "29e1689505e742e8fedea780b0379bbc7327ab6e9d34ee6440b4d523d1b252fb",
+      "representation_note": "Actual PDF text separately extracted and read; byte hash preserved."
+    },
+    {
+      "id": "mos-expiration-policy",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "checked_at": "2026-09-28T13:51:50.715027+00:00",
+      "health": {
+        "id": "mos-expiration-policy",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "checked_at": "2026-09-28T13:51:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "content_type": "text/html",
+        "page_title": "Credential expiration policies",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "02be00ecc69bd6d09b0cc1d64114ccd75ee92143ee2f3928f7523e1af9cbbedf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "sha256": "52327818c10a12821bda827a66f37875e0133b47576a66edc5ca9bb732549586",
+      "text_characters": 2379
+    },
+    {
+      "id": "powerpoint-smartart-accessibility-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653",
+      "checked_at": "2026-09-28T13:51:50.797451+00:00",
+      "health": {
+        "id": "powerpoint-smartart-accessibility-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653",
+        "checked_at": "2026-09-28T13:51:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SmartArt is becoming more accessible in PowerPoint",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653",
+        "duration_signals": [],
+        "signal_fingerprint": "6a72a591609522372ceda957e39db8befa8e549e4fd322cd6448635813d4f4af",
+        "error": ""
+      },
+      "representation_note": "Complete public article body read from embedded JSON; main element only has title.",
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653",
+      "sha256": "bb98fd21162cbd623116eae22c051d9517b0edaab9b8a2c9a163670c22eb8e37",
+      "text_characters": 50
+    },
+    {
+      "id": "powerpoint-zoom",
+      "url": "https://support.microsoft.com/en-us/powerpoint/use-zoom-for-powerpoint-to-bring-your-presentation-to-life",
+      "checked_at": "2026-09-28T13:51:50.999019+00:00",
+      "health": {
+        "id": "powerpoint-zoom",
+        "url": "https://support.microsoft.com/en-us/powerpoint/use-zoom-for-powerpoint-to-bring-your-presentation-to-life",
+        "checked_at": "2026-09-28T13:51:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/use-zoom-for-powerpoint-to-bring-your-presentation-to-life",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use zoom for PowerPoint to bring your presentation to life | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/use-zoom-for-powerpoint-to-bring-your-presentation-to-life",
+        "duration_signals": [],
+        "signal_fingerprint": "85a3af29ec4788bbc2c8eefd05d1882ab887d60fc8f956e9cf2d7e8b3e0d952b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/use-zoom-for-powerpoint-to-bring-your-presentation-to-life",
+      "sha256": "2b08768339c0a4cefce8910bf247f41e5c23e576f2f003dd2086904f5baa48d7",
+      "text_characters": 16145
+    },
+    {
+      "id": "powerpoint-reading-order",
+      "url": "https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane",
+      "checked_at": "2026-09-28T13:51:51.321818+00:00",
+      "health": {
+        "id": "powerpoint-reading-order",
+        "url": "https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane",
+        "checked_at": "2026-09-28T13:51:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Make slides easier to read by using the Reading Order pane | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane",
+        "duration_signals": [],
+        "signal_fingerprint": "aa8b722ae28cd88082e119cf4f643d7186effedd7c397b015bf6f65e578cf8df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane",
+      "sha256": "920c31b08862a42019a04d911563a078a5e645d7a929f8b0ac8d915ed500c69a",
+      "text_characters": 5706
+    },
+    {
+      "id": "powerpoint-selection",
+      "url": "https://support.microsoft.com/en-us/powerpoint/use-the-selection-pane-to-manage-objects-in-documents",
+      "checked_at": "2026-09-28T13:51:51.698950+00:00",
+      "health": {
+        "id": "powerpoint-selection",
+        "url": "https://support.microsoft.com/en-us/powerpoint/use-the-selection-pane-to-manage-objects-in-documents",
+        "checked_at": "2026-09-28T13:51:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/use-the-selection-pane-to-manage-objects-in-documents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use the Selection pane to manage objects in documents | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/use-the-selection-pane-to-manage-objects-in-documents",
+        "duration_signals": [],
+        "signal_fingerprint": "7436fed0ddf3dbbb36d30b4624bbabb422c5f3a1d91987bb1825b52925c63d6a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/use-the-selection-pane-to-manage-objects-in-documents",
+      "sha256": "c5685f1004291b0d9fd95d680303fc4a83e42e3a70ecf6a367d5da4629de6f4c",
+      "text_characters": 8390
+    },
+    {
+      "id": "powerpoint-compress-media",
+      "url": "https://support.microsoft.com/en-us/powerpoint/compress-your-media-files",
+      "checked_at": "2026-09-28T13:51:51.942836+00:00",
+      "health": {
+        "id": "powerpoint-compress-media",
+        "url": "https://support.microsoft.com/en-us/powerpoint/compress-your-media-files",
+        "checked_at": "2026-09-28T13:51:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/compress-your-media-files",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Compress your media files | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/compress-your-media-files",
+        "duration_signals": [],
+        "signal_fingerprint": "707a043da94b6511f29b719d195febb42eafff5ea8a709c818dd31b223018f69",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/compress-your-media-files",
+      "sha256": "cafdc7f8ae5ffa865a88ece5b4d0b63c71c6efd55a7ed308146b3b0e3ce64aaf",
+      "text_characters": 2223
+    },
+    {
+      "id": "powerpoint-captions",
+      "url": "https://support.microsoft.com/en-us/powerpoint/add-closed-captions-or-subtitles-to-media-in-powerpoint",
+      "checked_at": "2026-09-28T13:51:52.437022+00:00",
+      "health": {
+        "id": "powerpoint-captions",
+        "url": "https://support.microsoft.com/en-us/powerpoint/add-closed-captions-or-subtitles-to-media-in-powerpoint",
+        "checked_at": "2026-09-28T13:51:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/add-closed-captions-or-subtitles-to-media-in-powerpoint",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Add closed captions or subtitles to media in PowerPoint | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/add-closed-captions-or-subtitles-to-media-in-powerpoint",
+        "duration_signals": [],
+        "signal_fingerprint": "0af63222fcdc6155064cb1cb8b8bffc600d36db62c6a1366f42e1088de822dad",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/add-closed-captions-or-subtitles-to-media-in-powerpoint",
+      "sha256": "e99d4fbb21335ffe41251e537ef1858188fe0cafdf596e9814b3eba977654f26",
+      "text_characters": 13045
+    },
+    {
+      "id": "powerpoint-media-accessibility",
+      "url": "https://support.microsoft.com/en-us/powerpoint/accessibility-features-in-video-and-audio-playback-on-powerpoint",
+      "checked_at": "2026-09-28T13:51:52.651551+00:00",
+      "health": {
+        "id": "powerpoint-media-accessibility",
+        "url": "https://support.microsoft.com/en-us/powerpoint/accessibility-features-in-video-and-audio-playback-on-powerpoint",
+        "checked_at": "2026-09-28T13:51:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/accessibility-features-in-video-and-audio-playback-on-powerpoint",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Accessibility features in video and audio playback on PowerPoint | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/accessibility-features-in-video-and-audio-playback-on-powerpoint",
+        "duration_signals": [],
+        "signal_fingerprint": "a9cc9ca1d4181c3e927959b20c59e7e28dd8263f33f8a289dc37c16a13f3c7c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/accessibility-features-in-video-and-audio-playback-on-powerpoint",
+      "sha256": "41f8d2a16316c873f06b5e8eda92095cbf766bd42c82a55e48817493fa41dbc4",
+      "text_characters": 2627
+    },
+    {
+      "id": "powerpoint-screen-recording",
+      "url": "https://support.microsoft.com/en-us/powerpoint/training/record-your-screen-in-powerpoint",
+      "checked_at": "2026-09-28T13:53:59.629729+00:00",
+      "health": {
+        "id": "powerpoint-screen-recording",
+        "url": "https://support.microsoft.com/en-us/powerpoint/training/record-your-screen-in-powerpoint",
+        "checked_at": "2026-09-28T13:53:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/training/record-your-screen-in-powerpoint",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Record your screen in PowerPoint | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/training/record-your-screen-in-powerpoint",
+        "duration_signals": [],
+        "signal_fingerprint": "e9571343bbcf2d48ae96dee2b9e0d9829f23588d65d199d544018cd3aeaf8d00",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/training/record-your-screen-in-powerpoint",
+      "sha256": "b4626fae048c9154bee44e656fc76e75c2d5eef3ad7089ed68cd790adcae26df",
+      "text_characters": 2618
+    },
+    {
+      "id": "powerpoint-outline",
+      "url": "https://support.microsoft.com/en-US/PowerPoint/training/create-a-powerpoint-presentation-from-an-outline",
+      "checked_at": "2026-09-28T13:53:59.630763+00:00",
+      "health": {
+        "id": "powerpoint-outline",
+        "url": "https://support.microsoft.com/en-US/PowerPoint/training/create-a-powerpoint-presentation-from-an-outline",
+        "checked_at": "2026-09-28T13:53:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/training/create-a-powerpoint-presentation-from-an-outline",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create a PowerPoint presentation from an outline | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/training/create-a-powerpoint-presentation-from-an-outline",
+        "duration_signals": [],
+        "signal_fingerprint": "48ec5309b16699788648b3af740837547fdd27eee5c36e1c61239e0986541221",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/training/create-a-powerpoint-presentation-from-an-outline",
+      "sha256": "c6acc14c6d43a0778debb8e67abbfd38cb027840812f10e9ca06ad81c1874375",
+      "text_characters": 3711
+    },
+    {
+      "id": "powerpoint-note-headers",
+      "url": "https://support.microsoft.com/en-us/powerpoint/edit-page-numbering-footers-and-headers-for-notes-pages-in-powerpoint",
+      "checked_at": "2026-09-28T13:53:59.631576+00:00",
+      "health": {
+        "id": "powerpoint-note-headers",
+        "url": "https://support.microsoft.com/en-us/powerpoint/edit-page-numbering-footers-and-headers-for-notes-pages-in-powerpoint",
+        "checked_at": "2026-09-28T13:53:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/edit-page-numbering-footers-and-headers-for-notes-pages-in-powerpoint",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Edit page numbering, footers, and headers for Notes pages in PowerPoint | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/edit-page-numbering-footers-and-headers-for-notes-pages-in-powerpoint",
+        "duration_signals": [],
+        "signal_fingerprint": "3170041efef5c048155d92b68c92d6a3fbda03d6a4417c55c7d32ff65955f0ca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/edit-page-numbering-footers-and-headers-for-notes-pages-in-powerpoint",
+      "sha256": "481c147114aea471f67a7e36ed01b88efc1e565be45b03031ce0b3fe44458347",
+      "text_characters": 2966
+    },
+    {
+      "id": "powerpoint-slide-numbers",
+      "url": "https://support.microsoft.com/en-US/PowerPoint/training/add-slide-numbers-page-numbers-or-the-date-and-time",
+      "checked_at": "2026-09-28T13:54:00.354270+00:00",
+      "health": {
+        "id": "powerpoint-slide-numbers",
+        "url": "https://support.microsoft.com/en-US/PowerPoint/training/add-slide-numbers-page-numbers-or-the-date-and-time",
+        "checked_at": "2026-09-28T13:54:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/training/add-slide-numbers-page-numbers-or-the-date-and-time",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Add slide numbers, page numbers, or the date and time | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/training/add-slide-numbers-page-numbers-or-the-date-and-time",
+        "duration_signals": [],
+        "signal_fingerprint": "bf53e5cd64d1cde565a9d7455353b32136106f05ac7b4c8ba8e33b9a0c12055d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/training/add-slide-numbers-page-numbers-or-the-date-and-time",
+      "sha256": "729538ae54cf18dc5a665c522633abc0e05f111e98f42eecd8ee54ae39f79021",
+      "text_characters": 4090
+    },
+    {
+      "id": "office-mark-final",
+      "url": "https://support.microsoft.com/en-us/office/collab-files/help-prevent-changes-to-a-final-version-of-a-file",
+      "checked_at": "2026-09-28T13:54:00.520008+00:00",
+      "health": {
+        "id": "office-mark-final",
+        "url": "https://support.microsoft.com/en-us/office/collab-files/help-prevent-changes-to-a-final-version-of-a-file",
+        "checked_at": "2026-09-28T13:54:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/office/collab-files/help-prevent-changes-to-a-final-version-of-a-file",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Help prevent changes to a final version of a file | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/office/collab-files/help-prevent-changes-to-a-final-version-of-a-file",
+        "duration_signals": [],
+        "signal_fingerprint": "216c39c2a9d77af596c4a8de7234b4e2b525d5a8961c65acf1a30b1a46623485",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/office/collab-files/help-prevent-changes-to-a-final-version-of-a-file",
+      "sha256": "de819f16cc1ca7a862b0083d857a01e9fb9da4f1ab495ee9d19c1667049a9083",
+      "text_characters": 1805
+    },
+    {
+      "id": "powerpoint-3d-animation",
+      "url": "https://support.microsoft.com/en-us/powerpoint/3d-animation-effects-in-powerpoint",
+      "checked_at": "2026-09-28T13:54:00.646039+00:00",
+      "health": {
+        "id": "powerpoint-3d-animation",
+        "url": "https://support.microsoft.com/en-us/powerpoint/3d-animation-effects-in-powerpoint",
+        "checked_at": "2026-09-28T13:54:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/3d-animation-effects-in-powerpoint",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "3D animation effects in PowerPoint | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/3d-animation-effects-in-powerpoint",
+        "duration_signals": [],
+        "signal_fingerprint": "4847aed017487d8d9d59680ee315a876f4a44ae8b5e2ed38d1de7b10e812d4f7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/3d-animation-effects-in-powerpoint",
+      "sha256": "892edb2d6d8df6c9e6b087f6307e4cbb9d09e3e82bcc6be5f45b7c887e5fc0f0",
+      "text_characters": 2788
+    },
+    {
+      "id": "powerpoint-animation-timing",
+      "url": "https://support.microsoft.com/en-us/powerpoint/set-the-start-time-and-speed-of-an-animation-effect",
+      "checked_at": "2026-09-28T13:54:01.126669+00:00",
+      "health": {
+        "id": "powerpoint-animation-timing",
+        "url": "https://support.microsoft.com/en-us/powerpoint/set-the-start-time-and-speed-of-an-animation-effect",
+        "checked_at": "2026-09-28T13:54:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/powerpoint/set-the-start-time-and-speed-of-an-animation-effect",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Set the start time and speed of an animation effect | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/powerpoint/set-the-start-time-and-speed-of-an-animation-effect",
+        "duration_signals": [],
+        "signal_fingerprint": "f79fd2db2bf86a5b7dc352387e6d1fa976c36471921241f2ab8b2156ad911eb8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/powerpoint/set-the-start-time-and-speed-of-an-animation-effect",
+      "sha256": "efe138d3ebb6db1fbb399a673fa2f3c0318e6208698c750249afeea9e2f5c822",
+      "text_characters": 8939
+    }
+  ],
+  "added_source_ids": [
+    "mo310-skills-pdf",
+    "powerpoint-smartart-accessibility-blog",
+    "powerpoint-zoom",
+    "powerpoint-reading-order",
+    "powerpoint-selection",
+    "powerpoint-compress-media",
+    "powerpoint-captions",
+    "powerpoint-media-accessibility",
+    "powerpoint-screen-recording",
+    "powerpoint-outline",
+    "powerpoint-note-headers",
+    "powerpoint-slide-numbers",
+    "office-mark-final",
+    "powerpoint-3d-animation",
+    "powerpoint-animation-timing"
+  ],
+  "findings": [
+    {
+      "id": "mo310-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Broad descriptions omitted concrete tasks",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Zoom variants,screen recording,master variants and3D animations lacked practical treatment.",
+      "recommendation": "Add explicit task teaching,per-objective mapping and completion evidence.",
+      "disposition": "applied",
+      "source_id": "mo310-skills-pdf",
+      "resolution": "Add explicit task teaching,per-objective mapping and completion evidence."
+    },
+    {
+      "id": "mo310-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Compression is not content-neutral",
+      "url": "https://support.microsoft.com/en-us/powerpoint/compress-your-media-files",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Microsoft documents loss of embedded subtitles and alternate audio tracks.",
+      "recommendation": "Retain original and verify accessible playback of final media output.",
+      "disposition": "applied",
+      "source_id": "powerpoint-compress-media",
+      "resolution": "Retain original and verify accessible playback of final media output."
+    },
+    {
+      "id": "mo310-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Visual layer order is not sufficient accessibility evidence",
+      "url": "https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Reading Order uses numbered sequence; grouping animated objects can remove effects.",
+      "recommendation": "Teach separate checks and retest motion after accessibility edits.",
+      "disposition": "applied",
+      "source_id": "powerpoint-reading-order",
+      "resolution": "Teach separate checks and retest motion after accessibility edits."
+    },
+    {
+      "id": "mo310-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Zoom navigation defaults differ",
+      "url": "https://support.microsoft.com/en-us/powerpoint/use-zoom-for-powerpoint-to-bring-your-presentation-to-life",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Section/Summary return by default; Slide Zoom continues by default.",
+      "recommendation": "Add a route exercise with explicit Return to Zoom.",
+      "disposition": "applied",
+      "source_id": "powerpoint-zoom",
+      "resolution": "Add a route exercise with explicit Return to Zoom."
+    },
+    {
+      "id": "mo310-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Recent SmartArt behavior is build-dependent",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MO-310"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "August2026 article describes programmatic accessibility-tree updates on specified Windows subscription builds.",
+      "recommendation": "Add bounded useful article and verify actual spoken relationships.",
+      "disposition": "applied",
+      "source_id": "powerpoint-smartart-accessibility-blog",
+      "resolution": "Add bounded useful article and verify actual spoken relationships."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "powerpoint-smartart-accessibility-blog",
+      "decision": "accepted-bounded",
+      "notes": "Complete public embedded article body read. Shireen Salma,August24,2026;Windows Microsoft365 version2607 build20326.20158 minimum plus rollout caveats. Programmatic accessibility-tree descriptions,not a guarantee of exam build or unreviewed accessibility."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "desktop_executed": 0,
+    "offline_checks": [
+      "12 independent count,geometry,arithmetic and simplified timing assertions; no PowerPoint engine."
+    ]
+  },
+  "answered_checks": 32,
+  "limitations": [
+    "Same-context AI review; independent human review remains pending.",
+    "No PowerPoint desktop,screen capture,screen reader,media playback,exam simulator or live tenant executed.",
+    "Independent Python/Decimal expectations are not PowerPoint rendering,animation or accessibility tests.",
+    "MOS detailed PDF is manually reviewed; automatic page snapshots contain only broad domains.",
+    "Embedded media,complete platform matrices and paid learning content were not evaluated."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local repository and independent Python/Decimal expectations only; no PowerPoint renderer, screen reader, media playback or screen capture executed.",
+    "learning_catalog_consistency": "passed",
+    "independent_expected_result_assertions": 12
+  },
+  "detailed_pdf_evidence": {
+    "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf",
+    "sha256": "29e1689505e742e8fedea780b0379bbc7327ab6e9d34ee6440b4d523d1b252fb",
+    "pages": 3
+  },
+  "source_reading_boundaries": {
+    "mo-310-blueprint": "Entire credential page read:50 minutes,150-hour recommendation,no dedicated Learn collection,no retirement,60-month label. Language list has16 entries/15 unique due to duplicate Dutch.",
+    "microsoft-powerpoint-help": "Help directory inspected; linked lessons not comprehensively audited.",
+    "mo310-skills-pdf": "All73 detailed tasks on three pages read; five-domain automated snapshot unchanged. URL parentheses percent-encoded for Markdown parsing.",
+    "mos-expiration-policy": "Current MOS five-year policy read; no individual historical expiry inferred.",
+    "powerpoint-smartart-accessibility-blog": "Complete public embedded article body read. Shireen Salma,August24,2026;Windows Microsoft365 version2607 build20326.20158 minimum plus rollout caveats. Programmatic accessibility-tree descriptions,not a guarantee of exam build or unreviewed accessibility.",
+    "powerpoint-zoom": "Main Summary/Section/Slide workflows,Return to Zoom and requirements table read; embedded demonstrations not watched.",
+    "powerpoint-reading-order": "Numbered order,decorative flags,grouping/overlap cautions and generated-description review sections read. No screen reader executed.",
+    "powerpoint-selection": "Main visual stacking,selection,visibility/grouping behavior read; full platform matrices not audited.",
+    "powerpoint-compress-media": "Complete current Windows compression instructions read,including embedded-subtitle and alternate-audio loss.",
+    "powerpoint-captions": "Windows creation/insertion/removal and version notes plus Mac/Web sections inspected; no complete matrix audit or media execution. Caption file support differs from live subtitles.",
+    "powerpoint-media-accessibility": "Complete playback-track selection and captions/subtitles/audio-description distinctions read.",
+    "powerpoint-screen-recording": "Complete Windows area,audio/pointer,stop,save and trim steps read; no screen capture performed.",
+    "powerpoint-outline": "Complete heading mapping and import guidance read,including saved/closed source and Windows/Mac/Web differences.",
+    "powerpoint-note-headers": "Complete notes header/footer workflow and separate-output caveat read.",
+    "powerpoint-slide-numbers": "Main Windows Slide versus Notes/Handouts,date and title-exclusion instructions read.",
+    "office-mark-final": "Complete current non-security distinction and reversal workflow read.",
+    "powerpoint-3d-animation": "Main model-effects,option and creation/playback platform limits read; embedded video not watched.",
+    "powerpoint-animation-timing": "Windows start/duration/delay/repeat sections read and corroborated against other platform sections; timing model not renderer execution."
+  }
+}

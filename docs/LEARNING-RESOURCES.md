@@ -2255,6 +2255,22 @@ Joe McDaid's [Stale Value Formatting announcement](https://techcommunity.microso
 
 Before a timed attempt, explain every named function, recover from a broken formula, reconcile a filtered Pivot total and deliver a correctly protected workbook. Reserve part of the 50-minute practice session for checking the saved result.
 
+### MO-310 — Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)
+
+Resource details from the [MO-310 guide](../guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of PowerPoint resources. Times are author suggestions, not provider runtimes or an exam-readiness guarantee.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official credential page and detailed PDF linked above | Public | **30 minutes** for scope and logistics |
+| Task-specific Microsoft Support references linked throughout | Public | **3–4 hours**, with small reproductions |
+| SmartArt accessibility article above | Public; build and rollout bounds apply | **15 minutes** plus a target-build check |
+| [PowerPoint help and learning](https://support.microsoft.com/en-us/powerpoint) | Public directory; not all linked lessons audited | **8–12 hours** of targeted practice |
+| Ten labs and five worked examples in this guide | Suitable PowerPoint desktop environment required | **10–15 hours** plus two timed repeats |
+
+Practice building and checking a mixed task set in 50 minutes. Keep time for reopening the saved file and testing delivery behavior.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -1,0 +1,17 @@
+# MO-310 deep review — September 28, 2026
+
+The whole PowerPoint guide was reviewed against **73 detailed tasks**, in groups of 23/11/19/13/7, from the [official skills PDF](https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf). The receipt preserves its byte hash and individual mappings; the coarse five-domain automated page snapshot remains unchanged. No retirement notice was found. The credential lists 50 minutes, a 150-hour preparation recommendation, no dedicated Learn collection and a 60-month renewal label. Its language list repeats Dutch: 16 entries represent 15 distinct languages. MOS credential expiration is separately qualified.
+
+The guide now covers previously thin Zoom navigation, notes/handout masters, outline import, screen recording and 3D tasks. Five original examples, ten proposed desktop labs and 32 answered checks make the expected outcomes concrete. It distinguishes slide fields from notes headers, visual stacking from reading sequence, show recording from region capture, and model motion from slide transitions. Password/edit controls are distinguished from reversible Mark as Final status.
+
+## Useful current content
+
+Shireen Salma's [SmartArt accessibility article](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653), August 24, 2026, was read in full from its public embedded body. The update generates programmatic accessibility-tree descriptions and lists Windows Microsoft 365 PowerPoint 2607 build 20326.20158 or later, subject to rollout. It is useful workflow context, not evidence that every platform or exam build behaves identically. The guide asks learners to verify relationships in actual assistive output.
+
+Primary Support references substantiate Zoom return defaults, numbered reading order, outline import, 3D creation/playback limits and animation timing. Current caption guidance was preferred over older generalized platform statements. [Compression guidance](https://support.microsoft.com/en-us/powerpoint/compress-your-media-files) explicitly documents embedded-subtitle and alternate-audio losses; the guide now requires retaining an original and checking the final deliverable. Main workflows and stated boundaries were read; full platform matrices and embedded demonstrations were not comprehensively evaluated.
+
+## Verification and portfolio completion
+
+**12 independent Python/Decimal assertions** check original example counts, proportions, chart arithmetic and a simplified animation timeline. They do not execute PowerPoint or establish renderer, media or screen-reader behavior. No desktop application, screen capture, assistive session, tenant or paid exam environment was run. Independent human review remains pending. Repository, catalog, unit, strict-build and generated-site results are recorded after passing.
+
+This completes the remaining five Microsoft 365 Apps deep reviews. Combined with the prior 50-guide pass, all **55 existing Microsoft/Azure and Microsoft Office guides** have recorded deep reviews; 14 prior source blockers remain open. The fresh portfolio scan found no new retirement notices or additional objective changes beyond already-recorded future revisions. The [tracker](../MICROSOFT-REVIEW-STATUS.md) keeps dated follow-ups visible; automatic monitoring does not replace detailed PDF/content review or live lab validation.

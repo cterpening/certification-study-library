@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-mo310-deep-review",
+      "title": "MO-310 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MO-310"
+      ],
+      "results": [
+        {
+          "exam_code": "MO-310",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+          "baseline_sha256": "940dac2b33599dd2127ff27250f07fb5e74c6a7b0e48229849a11403035aa3a3",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "73 detailed tasks mapped; unchanged five-domain/status snapshots; no retirement and MOS expiry separately qualified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current primary references read for navigation,reading/stacking order,media,outline import,protection and animation."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Full August24,2026 SmartArt announcement accepted with build/platform/rollout bounds and target-device verification."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No dedicated Learn collection on credential page; directory inspected without claiming full lesson or paid-course review."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Add omitted task instruction; distinguish header targets,Zoom defaults,stacking/reading order,3D model/slide effects and compression losses."
+            }
+          },
+          "findings": [
+            {
+              "id": "mo310-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Broad descriptions omitted concrete tasks",
+              "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-310_OD_MOS365_PowerPoint-%282%29.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Zoom variants,screen recording,master variants and3D animations lacked practical treatment.",
+              "recommendation": "Add explicit task teaching,per-objective mapping and completion evidence.",
+              "disposition": "applied",
+              "source_id": "mo310-skills-pdf",
+              "resolution": "Add explicit task teaching,per-objective mapping and completion evidence."
+            },
+            {
+              "id": "mo310-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Compression is not content-neutral",
+              "url": "https://support.microsoft.com/en-us/powerpoint/compress-your-media-files",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Microsoft documents loss of embedded subtitles and alternate audio tracks.",
+              "recommendation": "Retain original and verify accessible playback of final media output.",
+              "disposition": "applied",
+              "source_id": "powerpoint-compress-media",
+              "resolution": "Retain original and verify accessible playback of final media output."
+            },
+            {
+              "id": "mo310-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Visual layer order is not sufficient accessibility evidence",
+              "url": "https://support.microsoft.com/en-us/powerpoint/make-slides-easier-to-read-by-using-the-reading-order-pane",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Reading Order uses numbered sequence; grouping animated objects can remove effects.",
+              "recommendation": "Teach separate checks and retest motion after accessibility edits.",
+              "disposition": "applied",
+              "source_id": "powerpoint-reading-order",
+              "resolution": "Teach separate checks and retest motion after accessibility edits."
+            },
+            {
+              "id": "mo310-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Zoom navigation defaults differ",
+              "url": "https://support.microsoft.com/en-us/powerpoint/use-zoom-for-powerpoint-to-bring-your-presentation-to-life",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Section/Summary return by default; Slide Zoom continues by default.",
+              "recommendation": "Add a route exercise with explicit Return to Zoom.",
+              "disposition": "applied",
+              "source_id": "powerpoint-zoom",
+              "resolution": "Add a route exercise with explicit Return to Zoom."
+            },
+            {
+              "id": "mo310-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Recent SmartArt behavior is build-dependent",
+              "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/smartart-is-becoming-more-accessible-in-powerpoint/4507653",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-310"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August2026 article describes programmatic accessibility-tree updates on specified Windows subscription builds.",
+              "recommendation": "Add bounded useful article and verify actual spoken relationships.",
+              "disposition": "applied",
+              "source_id": "powerpoint-smartart-accessibility-blog",
+              "resolution": "Add bounded useful article and verify actual spoken relationships."
+            }
+          ],
+          "notes": "Read the entire guide and all 73 PDF tasks; add five worked examples, ten proposed labs and 32 answered checks. 12 local assertions check outline counts, geometry, chart arithmetic and a simplified animation timeline only. Teach omitted Zoom, master, recording and 3D tasks; correct media-preservation and reading-order assumptions. No PowerPoint or assistive technology executed; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-mo-310-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-mo211-deep-review",
       "title": "MO-211 complete guide and learning-content review",
       "rubric_version": 1,

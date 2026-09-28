@@ -2711,6 +2711,8 @@ The review maps the live practical scope to type, reference, table, formula, cha
 
 ## MO-310 coverage record
 
+The September 28 [deep review](research/2026-09-28-mo-310-deep-review.md) maps 73 detailed objectives. Read the entire guide and all 73 PDF tasks; add five worked examples, ten proposed labs and 32 answered checks. 12 local assertions check outline counts, geometry, chart arithmetic and a simplified animation timeline only. Teach omitted Zoom, master, recording and 3D tasks; correct media-preservation and reading-order assumptions. No PowerPoint or assistive technology executed; human review pending. Current guide citations: 18 registered, 18 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 4, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: presentations; slides; text/shapes/images; data/diagram/3D/media objects; transitions/animations
