@@ -3,6 +3,328 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "dp900-documentdb-releases",
+      "title": "Azure DocumentDB service releases",
+      "url": "https://learn.microsoft.com/en-us/azure/documentdb/release-notes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: November 18, 2025 rename notice and selected adjacent release entries read; complete historical release list not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-documentdb-blog",
+      "title": "Introducing the Azure DocumentDB Blog",
+      "url": "https://devblogs.microsoft.com/documentdb/introducing-azure-documentdb/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Complete main article read: Marko Hotti, May 27, 2026. Accept portfolio/name-boundary task only; marketing savings/migration claims and linked media not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-groupby",
+      "title": "SQL GROUP BY",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Basic grouping and nonaggregate select-column rules read; advanced grouping sets and platform-specific sections not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-keys",
+      "title": "Primary and foreign key constraints",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Primary/composite key, non-null, foreign-key integrity and index distinction sections read. Full cascade/trigger limits not adopted. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-blob",
+      "title": "Blob types",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main use cases, object access and data-lake relationship read; all blob limits/protocol matrices not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-files",
+      "title": "Azure Files overview",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main managed-share overview and SMB/NFS client/use-case table read; no universal protocol support claim. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-table",
+      "title": "Azure Table Storage overview",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main key/attribute model, entities/properties and original Table versus Cosmos Table distinction read. Older HTTP/SDK snippets not copied. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-hns",
+      "title": "Data Lake hierarchical namespace",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main namespace, atomic directory operations, irreversibility and workload-selection sections read; no upgrade executed. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-mysql",
+      "title": "Azure Database for MySQL overview",
+      "url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Selected MySQL flexible-server managed-service capabilities read; no universal restore, scaling or cost promises adopted. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-mongo",
+      "title": "Cosmos DB MongoDB compatibility",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main MongoDB compatibility/API overview read; distinguish wire compatibility from running MongoDB engine. Feature marketing not generalized across APIs. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-documentdb",
+      "title": "Azure DocumentDB overview",
+      "url": "https://learn.microsoft.com/en-us/azure/documentdb/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main DocumentDB overview read; product boundary only, not broad compatibility percentages, migration or zero-loss guarantees. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-cosmos-pg",
+      "title": "Cosmos DB PostgreSQL retirement path",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Retirement-path notice and recommended PostgreSQL Elastic Clusters/NoSQL alternatives read; no exact final retirement date supplied or inferred. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-pointread",
+      "title": "Cosmos DB request optimization",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-cost-queries",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main point-read versus query ranking, size/RU assumptions and strong/bounded consistency cost sections read. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-lake-sql",
+      "title": "Lakehouse SQL analytics endpoint",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main lakehouse read-only Delta-data boundary, supported SQL objects and access-path security sections read; not generalized to every SQL endpoint service. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-eventstream",
+      "title": "Fabric Eventstream overview",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main ingest/transform/route description and selected source connectors read; full connector/status matrix not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-eventhouse",
+      "title": "Fabric Eventhouse overview",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main event/time-series storage/query, KQL-database and scenario sections read; advanced endpoints/management not applied. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-activator",
+      "title": "Fabric Activator introduction",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main rules, per-object events and action roles read; no notifications enabled or universal latency/pricing claim adopted. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-mirroring",
+      "title": "Fabric mirroring overview",
+      "url": "https://learn.microsoft.com/en-us/fabric/mirroring/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main replication and near-real-time analytics sections read; full supported-source/status matrix not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-shortcuts",
+      "title": "OneLake shortcuts",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main reference/target, Tables versus Files, selected identity and cache sections read; no blanket zero-copy or identity-bypass promise. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-semantic",
+      "title": "Fabric semantic model lifecycle",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main automatic-creation end date, existing-model decoupling and model lifecycle sections read. Current documentation controls over older announcement schedules; no universal Direct Lake fallback claim. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-powerbi-compare",
+      "title": "Power BI report versus dashboard",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main dashboard/report definition and comparison table read; license and granular interaction limitations not exhaustively audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-point-blog",
+      "title": "Point reads versus queries",
+      "url": "https://devblogs.microsoft.com/cosmosdb/point-reads-versus-queries/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Complete short main article read: Tim Sander, October 22, 2020. Accept point-read teaching task; current product documentation controls RU assumptions and current NoSQL naming. No sample code copied. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp900-semantic-blog",
+      "title": "Sunsetting default semantic models",
+      "url": "https://blog.fabric.microsoft.com/en-us/blog/sunsetting-default-semantic-models-microsoft-fabric/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Direct fetch blocked; redirect/browser access inconsistent. Earlier public excerpt suggests an older schedule but complete article not verified. Defer blog inclusion and use current primary semantic-model documentation. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az900-budgets",
       "title": "Cost Management budgets and alerts",
       "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
@@ -96,9 +418,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-900"
+        "AZ-900",
+        "DP-900"
       ],
-      "notes": "September 28 AZ-900 deep review: Main expiration policy read, including nonexpiring fundamentals and separate retirement/transcript handling. No annual renewal claim for AZ-900. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-900 deep review: Main expiration policy read, including nonexpiring fundamentals and separate retirement/transcript handling. No annual renewal claim for AZ-900. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Main expiration policy read, including nonexpiring fundamentals and retirement distinction; no annual renewal claim. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az900-vm-states",
@@ -10955,8 +11278,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: All 30 detailed objectives read and individually mapped across eleven groups; unchanged July 21 baseline and objective/status hashes, no upcoming announcement. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pl-900-blueprint",
@@ -11021,15 +11347,17 @@
     },
     {
       "id": "microsoft-dp-900-course",
-      "title": "Microsoft Azure Data Fundamentals",
+      "title": "Introduction to Microsoft Azure Data",
       "url": "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
       "publisher": "Microsoft",
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Official one-day course."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Official one-day course. September 28 DP-900 deep review: Complete short main course metadata read: Introduction to Microsoft Azure Data, one day and 13 languages; linked lessons not completed. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-pl-900-course",
@@ -11098,7 +11426,7 @@
         "AB-900",
         "AI-901"
       ],
-      "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-az-900",
@@ -11122,9 +11450,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Structured path listed at 5 hours plus three labs and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Structured path listed at 5 hours plus three labs and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. September 28 DP-900 deep review: Public path/components read: four courses 3h40 plus three 30-minute labs = 5h10; rounded five-hour header already includes labs. Component dates through April 21, 2026; no paid lessons. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-pl-900",
@@ -11186,9 +11516,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Three-hour, 19-minute video published November 2025."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Three-hour, 19-minute video published November 2025. September 28 DP-900 deep review: Direct fetch blocked; browser metadata/outline read: Reza Salehi, November 2025, 3h19, includes Fabric/Databricks headings. No paid lessons or complete baseline verification. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-pl-900-video",
@@ -11274,9 +11606,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "About seven hours, 47 minutes; shown as updated May 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "About seven hours, 47 minutes; shown as updated May 2026. September 28 DP-900 deep review: Direct fetch blocked; public browser metadata/selected curriculum read: August 2026, 15 sections, 131 lectures, 7h45. No paid lessons; metadata does not verify current lesson accuracy. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-pl-900-phillip-burton",
@@ -11364,9 +11698,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Three hours, 11 minutes; released August 2024."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Three hours, 11 minutes; released August 2024. September 28 DP-900 deep review: Public metadata read: Chris Sorensen/Microsoft Press, August 30, 2024, 3h11. No media playback. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "linkedin-learning-pl-900-microsoft-press",
@@ -11416,9 +11752,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Five-course sequence; provider pace is about four weeks at 10 hours per week."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Five-course sequence; provider pace is about four weeks at 10 hours per week. September 28 DP-900 deep review: Public metadata and selected outline read: five course estimates 9/6/11/4/5 hours = 35, versus four weeks at 10h/week pace. Older Synapse/HDInsight emphasis. Current sandbox and conditional voucher access not verified. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "whizlabs-az-900",
@@ -11479,7 +11817,7 @@
         "AI-103",
         "SC-300"
       ],
-      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Public repository text fetched, not a video/course-content audit; no playback or runtime verification. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-az-900-course-materials",
@@ -11695,9 +12033,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "partner-restricted",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization. September 28 DP-900 deep review: Login shell only; earlier ten-hour estimate and eligibility not reverified. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "skilling-hub-levelup-pl-900",
@@ -12743,9 +13083,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Public listing shows 118 questions and a March 2024 last-update date. Allow about four to eight hours for simulation and explanation review, and perform a current Fabric-focused delta check."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Public listing shows 118 questions and a March 2024 last-update date. Allow about four to eight hours for simulation and explanation review, and perform a current Fabric-focused delta check. September 28 DP-900 deep review: Public metadata read: 118 questions, March 2024 update; no assessment questions accessed. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "measureup-pl-900-practice-test",
@@ -12805,9 +13147,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Mixed training and assessment package. Allow about four to eight hours for practice attempts and explanation review; current instructional runtime and July 2026 Fabric delta coverage were not independently verified."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Mixed training and assessment package. Allow about four to eight hours for practice attempts and explanation review; current instructional runtime and July 2026 Fabric delta coverage were not independently verified. September 28 DP-900 deep review: JavaScript shell only; current bundle, runtime and curriculum not verified. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "whizlabs-pl-900",
@@ -12875,7 +13219,7 @@
         "AZ-801",
         "AZ-802"
       ],
-      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-gh-900-practice-assessment",
@@ -12983,9 +13327,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority. September 28 DP-900 deep review: HTTP response contained no substantive text; credential page links practice route, but launch and questions not reviewed. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-pl-900-practice-assessment",
@@ -13055,7 +13401,7 @@
         "AZ-802",
         "DP-300"
       ],
-      "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review. September 28 AZ-900 deep review: Generic public page shell only; current AZ-900 entitlement/launch details not verified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review. September 28 AZ-900 deep review: Generic public page shell only; current AZ-900 entitlement/launch details not verified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Generic page shell only; current DP900 entitlement and launch details not reverified. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "whizlabs-ab-900",
@@ -14589,8 +14935,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-core-data-concepts-module",
@@ -14600,8 +14949,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-relational-data-path",
@@ -14611,8 +14963,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-relational-concepts-module",
@@ -14622,8 +14977,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-relational-services-module",
@@ -14633,8 +14991,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-nonrelational-data-path",
@@ -14644,8 +15005,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-analytics-path",
@@ -14655,8 +15019,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-large-scale-analytics-module",
@@ -14666,8 +15033,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-stream-processing-module",
@@ -14677,8 +15047,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Public module title, objective/unit and product metadata read: Fabric Real-Time Intelligence and Spark Structured Streaming; unit lessons not completed. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-azure-data-fundamentals-credential",
@@ -14688,8 +15061,11 @@
       "authority_class": 1,
       "source_type": "official-certification",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main credential/exam metadata read: active, 45 minutes and 13 languages; no assessment or booking session. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-azure-sql-documentation",
@@ -14699,8 +15075,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900", "DP-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900",
+        "DP-300"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-azure-sql-options-overview",
@@ -14710,9 +15090,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Feature compatibility, service tiers, and management boundaries can change."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Feature compatibility, service tiers, and management boundaries can change. September 28 DP-900 deep review: Main SQL family and management-boundary sections read. Detailed compatibility, billing, licensing and SLA matrices not exhaustively audited; no blanket automatic recovery promise adopted. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-azure-storage-documentation-dp900",
@@ -14722,8 +15104,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-cosmos-db-documentation",
@@ -14733,11 +15118,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "DP-900",
         "DP-420"
-      ]
+      ],
+      "notes": "September 28 DP-900 deep review: Main landing inventory inspected; PostgreSQL entry checked against separate retirement guidance. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-cosmos-db-api-selection",
@@ -14747,9 +15133,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "API names, compatibility, and availability are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "API names, compatibility, and availability are volatile. September 28 DP-900 deep review: Redirect now resolves to the broad Cosmos landing page; not treated as a detailed API-selection matrix. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-cosmos-db-partitioning-overview",
@@ -14765,7 +15153,7 @@
         "DP-420",
         "AZ-305"
       ],
-      "notes": "Partition limits and supported key features are volatile. September 28 AZ-305 deep review: Intro, logical partition and transaction scope read; later current size/throughput limits not asserted. Worked partition limits are fictional. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "Partition limits and supported key features are volatile. September 28 AZ-305 deep review: Intro, logical partition and transaction scope read; later current size/throughput limits not asserted. Worked partition limits are fictional. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Main logical/physical partition, transaction scope, workload distribution and key-choice sections read; advanced migration/index features not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-cosmos-db-request-units",
@@ -14775,8 +15163,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main RU work and selected point-read/write assumptions read. Exact write charge not generalized; exercise uses invented measured charges. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-cosmos-db-consistency-levels",
@@ -14792,7 +15183,7 @@
         "DP-420",
         "AI-200"
       ],
-      "notes": "API mappings, throughput implications, and multi-region constraints are volatile. September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "API mappings, throughput implications, and multi-region constraints are volatile. September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Selected consistency definitions, read scope and session-token sections read; full regional/API restrictions not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-fabric-documentation-dp900",
@@ -14802,8 +15193,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-fabric-overview-dp900",
@@ -14813,9 +15207,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Fabric workload names, licensing, and capabilities are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Fabric workload names, licensing, and capabilities are volatile. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-fabric-data-storage-options",
@@ -14825,9 +15221,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Storage workload names and feature comparisons are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Storage workload names and feature comparisons are volatile. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
         {
       "id": "microsoft-azure-databricks-documentation-dp900",
@@ -14837,11 +15235,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "DP-900",
         "DP-750"
-      ]
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-azure-databricks-introduction",
@@ -14851,9 +15250,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Platform capabilities, branding, and licensing are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Platform capabilities, branding, and licensing are volatile. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-bi-documentation-dp900",
@@ -14863,8 +15264,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-bi-guided-learning-dp900",
@@ -14874,8 +15278,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-bi-star-schema-guidance",
@@ -14885,8 +15292,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Selected facts/dimensions, consistent grain, normalization and explicit/implicit measure sections read; full advanced dimensional techniques not audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-bi-semantic-models",
@@ -14896,9 +15306,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
-      "notes": "Power BI and Fabric naming, licensing, and service behavior are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-900"
+      ],
+      "notes": "Power BI and Fabric naming, licensing, and service behavior are volatile. September 28 DP-900 deep review: Main model definition/types and selected RLS context read; guide keeps mode-specific freshness distinctions. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-overview-ai103",
@@ -22606,10 +23018,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-420"
-      ]
+        "DP-420",
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: API applicability/model table and dedicated versus shared-throughput sections read; full limits not used for sizing guarantees. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-420-security",
@@ -23504,10 +23918,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-750"
-      ]
+        "DP-750",
+        "DP-900"
+      ],
+      "notes": "September 28 DP-900 deep review: Main incremental engine, source/sink, checkpoint and state overview read; not a universal exactly-once end-to-end guarantee. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-750-schema-enforcement",
@@ -24814,9 +25230,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-200"
+        "AI-200",
+        "DP-900"
       ],
-      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Selected PostgreSQL managed-service and maintenance introduction read; HA, version and region matrices not exhaustively audited. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-pgvector-guidance",

@@ -1,0 +1,2878 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DP-900",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "01d488cc6c845174a318fb4a0ef0fbdc9ea0212ae27bde65c69b61aecc948741",
+  "guide_after_sha256": "3ab634df7d0d9db86be9f2d23da1014ac5ef05e6b701d7a5e494202774474a6e",
+  "prior_records": {
+    "exam": {
+      "code": "DP-900",
+      "level": "beginner",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Azure Data Fundamentals",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+      "guide_path": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; basic relational, non-relational, and analytics vocabulary is helpful."
+    },
+    "review": {
+      "id": "dp-900-2026-08-31-source-validation",
+      "exam_code": "DP-900",
+      "guide_path": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-900-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+      "objective_coverage": [
+        {
+          "objective_group": "Describe core data concepts",
+          "guide_sections": [
+            "Part 1",
+            "Part 5 — Objective-to-scenario drill",
+            "Labs 1 and 4"
+          ]
+        },
+        {
+          "objective_group": "Identify considerations for relational data on Azure",
+          "guide_sections": [
+            "Part 2",
+            "Part 5 — Objective-to-scenario drill",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Describe considerations for working with non-relational data on Azure",
+          "guide_sections": [
+            "Part 3",
+            "Part 5 — Objective-to-scenario drill",
+            "Labs 1 and 3"
+          ]
+        },
+        {
+          "objective_group": "Describe an analytics workload on Azure",
+          "guide_sections": [
+            "Part 4",
+            "Part 5 — Objective-to-scenario drill",
+            "Labs 4 and 5"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 39,
+        "reachable": 38,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted objective groups and their July 21, 2026 bullets are mapped to foundational explanations, a cross-domain scenario drill, and five hands-on labs. All 39 cited URLs are exact source-catalog entries. The O'Reilly DP-900 video-course page returned HTTP 403 to the automated monitor and is treated as access-blocked rather than missing. Service tiers, engine compatibility, Cosmos DB APIs and limits, Fabric workload capabilities, and Power BI licensing remain explicitly marked VERIFY CURRENT."
+    },
+    "sources": [
+      {
+        "id": "dp-900-blueprint",
+        "title": "DP-900 Microsoft Azure Data Fundamentals study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp-900-course",
+        "title": "Microsoft Azure Data Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Official one-day course."
+      },
+      {
+        "id": "microsoft-cloud-product-docs",
+        "title": "Microsoft technical documentation",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901"
+        ],
+        "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pluralsight-dp-900",
+        "title": "Microsoft Azure Data Fundamentals (DP-900)",
+        "url": "https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Structured path listed at 5 hours plus three labs and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review."
+      },
+      {
+        "id": "oreilly-dp-900-video",
+        "title": "Azure Data Fundamentals (DP-900)",
+        "url": "https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/",
+        "publisher": "Reza Salehi on O'Reilly",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Three-hour, 19-minute video published November 2025."
+      },
+      {
+        "id": "udemy-dp-900-in28minutes",
+        "title": "DP-900 Azure Data Fundamentals Certification",
+        "url": "https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/",
+        "publisher": "in28Minutes on Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "About seven hours, 47 minutes; shown as updated May 2026."
+      },
+      {
+        "id": "linkedin-learning-dp-900-microsoft-press",
+        "title": "Microsoft Azure Data Fundamentals DP-900 Cert Prep by Microsoft Press",
+        "url": "https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press",
+        "publisher": "Microsoft Press on LinkedIn Learning",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Three hours, 11 minutes; released August 2024."
+      },
+      {
+        "id": "coursera-microsoft-dp-900-specialization",
+        "title": "Microsoft Azure DP-900 Data Fundamentals Specialization",
+        "url": "https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals",
+        "publisher": "Microsoft on Coursera",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Five-course sequence; provider pace is about four weeks at 10 hours per week."
+      },
+      {
+        "id": "john-savill-certification-materials",
+        "title": "Certification Materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "publisher": "John Savill",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AI-103",
+          "SC-300"
+        ],
+        "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "skilling-hub-levelup-dp-900",
+        "title": "LevelUp: DP-900 Microsoft Azure Data Fundamentals",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058340",
+        "publisher": "Microsoft Partner Skilling Hub / LevelUp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      },
+      {
+        "id": "measureup-dp-900-practice-test",
+        "title": "Microsoft DP-900 Azure Data Fundamentals practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Public listing shows 118 questions and a March 2024 last-update date. Allow about four to eight hours for simulation and explanation review, and perform a current Fabric-focused delta check."
+      },
+      {
+        "id": "whizlabs-dp-900",
+        "title": "Microsoft Azure Data Fundamentals DP-900 certification training and practice test",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-900/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Mixed training and assessment package. Allow about four to eight hours for practice attempts and explanation review; current instructional runtime and July 2026 Fabric delta coverage were not independently verified."
+      },
+      {
+        "id": "microsoft-practice-assessment-catalog",
+        "title": "Practice Assessments for Microsoft Certifications",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "GH-100",
+          "GH-500",
+          "AI-103",
+          "AB-100",
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AZ-801",
+          "AZ-802"
+        ],
+        "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-dp-900-practice-assessment",
+        "title": "DP-900 Microsoft Azure Data Fundamentals Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      },
+      {
+        "id": "oreilly-certification-practice-tests",
+        "title": "O'Reilly certification prep and interactive practice tests",
+        "url": "https://www.oreilly.com/products/certification-prep.html",
+        "publisher": "O'Reilly Learning",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "DP-900",
+          "AZ-802",
+          "DP-300"
+        ],
+        "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review. September 28 AZ-900 deep review: Generic public page shell only; current AZ-900 entitlement/launch details not verified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-dp900-core-data-concepts-path",
+        "title": "Introduction to Microsoft Azure Data core data concepts",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-core-data-concepts-module",
+        "title": "Explore core data concepts",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-relational-data-path",
+        "title": "Introduction to Microsoft Azure Data relational data in Azure",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-relational-concepts-module",
+        "title": "Explore fundamental relational data concepts",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-relational-services-module",
+        "title": "Explore relational database services in Azure",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-nonrelational-data-path",
+        "title": "Introduction to Microsoft Azure Data non-relational data in Azure",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-analytics-path",
+        "title": "Introduction to Microsoft Azure Data analytics in Azure",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-large-scale-analytics-module",
+        "title": "Explore fundamentals of large-scale analytics",
+        "url": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-dp900-stream-processing-module",
+        "title": "Explore fundamentals of real-time analytics",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-azure-data-fundamentals-credential",
+        "title": "Microsoft Certified: Azure Data Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-certification",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-azure-sql-documentation",
+        "title": "Azure SQL documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900",
+          "DP-300"
+        ]
+      },
+      {
+        "id": "microsoft-azure-sql-options-overview",
+        "title": "What is Azure SQL?",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Feature compatibility, service tiers, and management boundaries can change."
+      },
+      {
+        "id": "microsoft-azure-storage-documentation-dp900",
+        "title": "Azure Storage documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-cosmos-db-documentation",
+        "title": "Azure Cosmos DB documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900",
+          "DP-420"
+        ]
+      },
+      {
+        "id": "microsoft-cosmos-db-api-selection",
+        "title": "Choose an API in Azure Cosmos DB",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/choose-api",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "API names, compatibility, and availability are volatile."
+      },
+      {
+        "id": "microsoft-cosmos-db-partitioning-overview",
+        "title": "Partitioning and horizontal scaling in Azure Cosmos DB",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "DP-900",
+          "DP-420",
+          "AZ-305"
+        ],
+        "notes": "Partition limits and supported key features are volatile. September 28 AZ-305 deep review: Intro, logical partition and transaction scope read; later current size/throughput limits not asserted. Worked partition limits are fictional. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-cosmos-db-request-units",
+        "title": "Understand request units consumption in Azure Cosmos DB",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/understand-request-unit-consumption",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-cosmos-db-consistency-levels",
+        "title": "Consistency levels in Azure Cosmos DB",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "DP-900",
+          "DP-420",
+          "AI-200"
+        ],
+        "notes": "API mappings, throughput implications, and multi-region constraints are volatile. September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-fabric-documentation-dp900",
+        "title": "Microsoft Fabric documentation",
+        "url": "https://learn.microsoft.com/en-us/fabric/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-fabric-overview-dp900",
+        "title": "What is Microsoft Fabric?",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Fabric workload names, licensing, and capabilities are volatile."
+      },
+      {
+        "id": "microsoft-fabric-data-storage-options",
+        "title": "Data storage options in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/store-data",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Storage workload names and feature comparisons are volatile."
+      },
+      {
+        "id": "microsoft-azure-databricks-documentation-dp900",
+        "title": "Azure Databricks documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900",
+          "DP-750"
+        ]
+      },
+      {
+        "id": "microsoft-azure-databricks-introduction",
+        "title": "What is Azure Databricks?",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/introduction/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Platform capabilities, branding, and licensing are volatile."
+      },
+      {
+        "id": "microsoft-power-bi-documentation-dp900",
+        "title": "Power BI documentation",
+        "url": "https://learn.microsoft.com/en-us/power-bi/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-power-bi-guided-learning-dp900",
+        "title": "Power BI training",
+        "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-power-bi-star-schema-guidance",
+        "title": "Understand star schema and the importance for Power BI",
+        "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ]
+      },
+      {
+        "id": "microsoft-power-bi-semantic-models",
+        "title": "Power BI semantic models",
+        "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900"
+        ],
+        "notes": "Power BI and Fabric naming, licensing, and service behavior are volatile."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "e7d0bf603f586eebcced597107002a5330f5c0cae7f53c92f51c5669ca435bfd",
+      "guide_sections": "1 / Tabular structured records and schema",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "75bf092a77498b0ccfe17acbf266eff5de71a7ac42589b8f7730b19a67d84dd1",
+      "guide_sections": "1 / JSON/XML fields and flexible validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "f87e44b5c06506910dee6868f90eae71640333bb176d305f735e244caaa0eb2b",
+      "guide_sections": "1 / Images, audio and documents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "8badbeda54d1026af121dedae0c1fa6e15c5495da5db4de460756219d9b2b3b0",
+      "guide_sections": "1 / CSV, JSON, XML, Parquet and Avro formats",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "6373098e8e0d016575458a671b0441bc21e11fa5d5f554d43099cbc95f4d7129",
+      "guide_sections": "1–4 / Relational, document, key/attribute, graph and analytical stores",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "4ffff35f4f80954c413d6cccbff6d0bc891f6d1618c58e050d478c13ee51e4af",
+      "guide_sections": "1–5 / Requirement-first Azure data-service choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e114645783ac8ce0883948501db7d4ab7a432107da30c7ed35b9ba4660b16cc3",
+      "guide_sections": "1–2, 5 exercises 1–2 / OLTP, ACID and constraints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "fab0a3c74e8ffe074f1be8245b65c00cd527a02f2340761c669bf798c12838be",
+      "guide_sections": "1, 4–5 / Broad aggregation and separate analytical serving",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "2c97ebabfe1146c4f7931a78ce63aa77c95957ad240d22f2e5baeb7724bfda09",
+      "guide_sections": "1 / DBA operation, access and recovery duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "750e0f7db9fe793151d8251b036aadbfab446b9b919978dea15b734424836b0a",
+      "guide_sections": "1, 4 / Engineer ingestion, transformation and quality duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "ca738dcb9c07b243119e637ed10512f1deca34cecb0b99bbfb8f392226350c16",
+      "guide_sections": "1, 4 / Analyst models, measures and visualization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "43131caa2d010f06a61ccd6381378b3b7ef6a820a0ccf8ba1bbb38a1e8b72fc7",
+      "guide_sections": "2, 5 exercises 1–2 / Tables, relationships, keys and grain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "882ba074d0a9550a1681821a869b66d8fd412c9bd6e966244e9b46e61b932c6f",
+      "guide_sections": "2 / Anomalies, normalization and deliberate historical snapshots",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "a904f9bad82501e79d3580f72c839ff74604fafaab7bb8d28126b529f54db1ac",
+      "guide_sections": "2, 5 exercises 1–2 / SQL statements, joins, grouping and rollback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "d2fab3cb6680a8c5a4d5778d4b5163c2719945543cb62ea3571e1081d7330bef",
+      "guide_sections": "2 / Tables, views, indexes and procedures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "d78d8f3d46abd12ae3d3c8b628d3f760beca665c83658e2ebc2491c3df85b940",
+      "guide_sections": "2 / SQL Database, Managed Instance and SQL VM control boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "3e7e4f221ad1612f65b01fbe2ac2cdc5d02d35713eba67ec7f76807556982706",
+      "guide_sections": "2–3 / PostgreSQL/MySQL managed services; separate Cosmos PostgreSQL retirement path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "40576f645f47fc43df8b6d249e37c94719667a930a6d238105a72358bda93db1",
+      "guide_sections": "3 / Object storage, data lake and hierarchical namespace",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "77c40dfb5cead7774d22798ef2d9f16dccaa63f43c10daf5a0272159601c1322",
+      "guide_sections": "3 / Managed SMB/NFS file shares",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "2d9b03baab576d11461a87c48f71cd6ba6a6d4193b47e97cdfc0dc62a1cbb1a6",
+      "guide_sections": "3 / Key/attribute entities, partition/row key and Cosmos Table distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "311ba9069370fb5ea4a07bd8a8ff882e82b1572c6ff0b48c183f31697f325bc5",
+      "guide_sections": "3, 5 exercise 3 / Global document access, partition distribution and RU work/rate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "262247ff67e27046f4a537a2d98008c8f7aec99aac9bbe78faad11755c16ca33",
+      "guide_sections": "3 / Five native compatibility APIs, DocumentDB vCore rename and SQL-language distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "1ca3bee8dc5d41aaafc3634654c4e314786c741e0d7948f07fc88820e8c104b0",
+      "guide_sections": "4–5 exercises 4 and 6 / Ingestion, ETL/ELT, replay, quality and freshness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "d5ba168f8daa5e7c5049f4a69e8b8fc2cb2feed52aa0aeb30032b755188f4e15",
+      "guide_sections": "4 / Warehouse/lake/lakehouse, mirror and shortcut choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "3c8e530132eb285c231e07a3aed11c9093e66e114ea11beeb330ff386e6f003a",
+      "guide_sections": "4 / Databricks and Fabric role, item and write-surface choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "e26f5fa6922b1df5ca673c1e9f90a3346c34df4ca037f5ec87f18076a05ea7f1",
+      "guide_sections": "4–5 exercise 4 / Bounded batch versus continuous events; late/duplicate events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "ee910f6ed30fa2f106e87925027d07051ead2bdaff7e827234edddf09550a1bf",
+      "guide_sections": "4 / Eventstream, Eventhouse, Activator, Event Hubs and Spark Structured Streaming",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "36c4a749a838706578f983b7b22d801672ce3661303d4a326dd26c2f1ee882cb",
+      "guide_sections": "4 / Power BI authoring, consumption, report and dashboard",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "ef004fb7288bbf0397afad2c96e502d4ec266fcee0bf79f41c3ed84df7f64509",
+      "guide_sections": "4–5 exercise 5 / Star grain, dimensions, measures, model lifecycle and refresh",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "b75eccc26f6cbe8b776826b7e11543bbecb7e02e99407aa53a9923971ad632a6",
+      "guide_sections": "4, lab 8 / Time trend, category comparison, exact record and chart selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DP-900",
+        "title": "Microsoft Azure Data Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+        "guide_path": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+        "snapshot_path": "data\\objective-snapshots\\dp-900-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dp-900-official-status.json",
+        "previous_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+        "current_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+        "previous_status_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "current_status_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of July 21, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 65,
+    "reachable": 63,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "dp-900-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+      "checked_at": "2026-09-28T10:49:19.617606+00:00",
+      "health": {
+        "id": "dp-900-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+        "checked_at": "2026-09-28T10:49:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam DP-900: Microsoft Azure Data Fundamentals",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "a2e6d52c8896635683a375b3f10dcde8637afd36b64d1b609afaa49627b7067d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+      "sha256": "9f6e81e03c0e456f690975814040ebbd8e5cb792f15c18735b29bdea5317ac0e",
+      "text_characters": 7332
+    },
+    {
+      "id": "microsoft-dp-900-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
+      "checked_at": "2026-09-28T10:49:19.618333+00:00",
+      "health": {
+        "id": "microsoft-dp-900-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
+        "checked_at": "2026-09-28T10:49:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
+        "content_type": "text/html",
+        "page_title": "Course DP-900T00-A: Introduction to Microsoft Azure Data - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
+        "duration_signals": [],
+        "signal_fingerprint": "0dbe5706a8622386427fc3afcb43978d5661255dca5a379688c31d5e549c682b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-900t00",
+      "sha256": "4a7ad4b5e56a47a5e4fce6aa5b9522e79a95804af4207e2d4213c490281b1064",
+      "text_characters": 1698
+    },
+    {
+      "id": "microsoft-cloud-product-docs",
+      "url": "https://learn.microsoft.com/en-us/docs/",
+      "checked_at": "2026-09-28T10:49:19.618770+00:00",
+      "health": {
+        "id": "microsoft-cloud-product-docs",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "checked_at": "2026-09-28T10:49:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/docs/",
+        "content_type": "text/html",
+        "page_title": "Technical documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/docs/",
+        "duration_signals": [],
+        "signal_fingerprint": "f8307f16939ece1f03f8b9b4eefe1ce0ee4e0acd22397e5436f194497e5570ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/docs/",
+      "sha256": "46afcdc31a830a4bf892f7e985a93d32ecc16935bebc766076632340694eed12",
+      "text_characters": 2294
+    },
+    {
+      "id": "pluralsight-dp-900",
+      "url": "https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900",
+      "checked_at": "2026-09-28T10:49:20.082808+00:00",
+      "health": {
+        "id": "pluralsight-dp-900",
+        "url": "https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900",
+        "checked_at": "2026-09-28T10:49:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Azure Data Fundamentals (DP-900)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900",
+        "duration_signals": [
+          "5 Hours"
+        ],
+        "signal_fingerprint": "ef2540d4a9ae161e758390a76b1590983985f6b5a034a501f3f57bd56f1c262b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900",
+      "sha256": "30d5c974866ceeb71406d6231956a03a9b944fd16f4fbe45d806dab223080432",
+      "text_characters": 3322
+    },
+    {
+      "id": "oreilly-dp-900-video",
+      "url": "https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/",
+      "checked_at": "2026-09-28T10:49:20.109945+00:00",
+      "health": {
+        "id": "oreilly-dp-900-video",
+        "url": "https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/",
+        "checked_at": "2026-09-28T10:49:20+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-dp-900-in28minutes",
+      "url": "https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/",
+      "checked_at": "2026-09-28T10:49:20.216875+00:00",
+      "health": {
+        "id": "udemy-dp-900-in28minutes",
+        "url": "https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/",
+        "checked_at": "2026-09-28T10:49:20+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "linkedin-learning-dp-900-microsoft-press",
+      "url": "https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press",
+      "checked_at": "2026-09-28T10:49:20.296697+00:00",
+      "health": {
+        "id": "linkedin-learning-dp-900-microsoft-press",
+        "url": "https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press",
+        "checked_at": "2026-09-28T10:49:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Azure Data Fundamentals (DP-900) Cert Prep by Microsoft Press Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press",
+        "duration_signals": [
+          "PT10M24S",
+          "PT10M2S",
+          "PT11M52S",
+          "PT17M4S",
+          "PT18S",
+          "PT1M25S",
+          "PT1M35S",
+          "PT1M3S",
+          "PT1M48S",
+          "PT21S",
+          "PT22S",
+          "PT23S",
+          "PT29S",
+          "PT2M",
+          "PT2M41S",
+          "PT2M59S",
+          "PT33S",
+          "PT35S",
+          "PT3H11M41S",
+          "PT3M33S",
+          "PT3M3S",
+          "PT46S",
+          "PT4M14S",
+          "PT4M24S",
+          "PT4M26S",
+          "PT4M45S",
+          "PT4M49S",
+          "PT4M55S",
+          "PT4M59S",
+          "PT52S"
+        ],
+        "signal_fingerprint": "74c0aa41fa25255145336f261820808551d60fcc3a805e0c19c3a1cd88805d16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press",
+      "sha256": "0e6a8ae79101bf38f6ef8506371964dee638b5dc05723a1bae9d203be194fab0",
+      "text_characters": 5955
+    },
+    {
+      "id": "coursera-microsoft-dp-900-specialization",
+      "url": "https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals",
+      "checked_at": "2026-09-28T10:49:20.331163+00:00",
+      "health": {
+        "id": "coursera-microsoft-dp-900-specialization",
+        "url": "https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals",
+        "checked_at": "2026-09-28T10:49:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals",
+        "content_type": "text/html",
+        "page_title": "Microsoft Azure Data Fundamentals DP-900 Exam Prep",
+        "canonical_url": "https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals",
+        "duration_signals": [
+          "10 hours",
+          "11 hours",
+          "4 hours",
+          "5 hours",
+          "6 hours",
+          "9 hours",
+          "P1M"
+        ],
+        "signal_fingerprint": "177a406130783678146adf412a1c6bdd05c5cfe44577045a3efddadacbb6f1d9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals",
+      "sha256": "7c0ea1b91945743071a2a3366893808ebe22a06f2df109ff70e6681f800fea6c",
+      "text_characters": 16068
+    },
+    {
+      "id": "john-savill-certification-materials",
+      "url": "https://github.com/johnthebrit/CertificationMaterials",
+      "checked_at": "2026-09-28T10:49:21.125303+00:00",
+      "health": {
+        "id": "john-savill-certification-materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "checked_at": "2026-09-28T10:49:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/CertificationMaterials: A collection of materials related to my certification videos",
+        "canonical_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "duration_signals": [],
+        "signal_fingerprint": "d6d516a3770bdb489dfbcc927eb5ab5fb54a84e092f0a8be465286f256859485",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+      "sha256": "3b0a16a76381463ac94c11e762c3e2b49c7c694e8877f7d87d1761387ff4c8f4",
+      "text_characters": 2153
+    },
+    {
+      "id": "skilling-hub-levelup-dp-900",
+      "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058340",
+      "checked_at": "2026-09-28T10:49:21.236243+00:00",
+      "health": {
+        "id": "skilling-hub-levelup-dp-900",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058340",
+        "checked_at": "2026-09-28T10:49:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058340",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058340",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "measureup-dp-900-practice-test",
+      "url": "https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html",
+      "checked_at": "2026-09-28T10:49:21.615175+00:00",
+      "health": {
+        "id": "measureup-dp-900-practice-test",
+        "url": "https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html",
+        "checked_at": "2026-09-28T10:49:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test DP-900: Microsoft Azure Data Fundamentals",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html",
+        "duration_signals": [],
+        "signal_fingerprint": "393b8ea9726f1a120be5dfa4e77569b45b1b9d7368bbcdd59bbe5599c8674a16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html",
+      "sha256": "a81d8fd566c9f5d5b748a8ad3b7d728534fe71d8c3b4f8d63761c62bbc7242d5",
+      "text_characters": 12785
+    },
+    {
+      "id": "whizlabs-dp-900",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-900/",
+      "checked_at": "2026-09-28T10:49:22.040454+00:00",
+      "health": {
+        "id": "whizlabs-dp-900",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-900/",
+        "checked_at": "2026-09-28T10:49:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-azure-certification-dp-900/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "DP-900: Microsoft Certified: Azure Data FundamentalsCourse",
+        "canonical_url": "https://www.whizlabs.com/microsoft-azure-certification-dp-900/",
+        "duration_signals": [],
+        "signal_fingerprint": "f74615f6eeb78d2aa5df5174c2e35347749aa8ac00b73bbdf4a1d57dede6fc63",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-azure-certification-dp-900/",
+      "sha256": "8f39b54e3724e2971dc463b472d985fe467c59d39cea36cba5761238b70c8592",
+      "text_characters": 58
+    },
+    {
+      "id": "microsoft-practice-assessment-catalog",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "checked_at": "2026-09-28T10:49:22.338416+00:00",
+      "health": {
+        "id": "microsoft-practice-assessment-catalog",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "checked_at": "2026-09-28T10:49:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "content_type": "text/html",
+        "page_title": "Practice Assessments for Microsoft Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "duration_signals": [],
+        "signal_fingerprint": "3b3d08a6c02aa09ec47d9b5aed16e0896e6aa2bf3c6585338229fa25336dbba8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "sha256": "71e82073173e2078d42af6dfd1c2d62b2e60046323914eff1d6d592517126b55",
+      "text_characters": 5931
+    },
+    {
+      "id": "microsoft-dp-900-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T10:49:22.642744+00:00",
+      "health": {
+        "id": "microsoft-dp-900-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T10:49:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "f33552208b9aed9f10103eb6852f69bcc03af7228ba3dcc046feea237c2f1a87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification",
+      "sha256": "9f7852d900b20a349921a1405569d77961e2a40cda173cff12352cffcfae3693",
+      "text_characters": 0
+    },
+    {
+      "id": "oreilly-certification-practice-tests",
+      "url": "https://www.oreilly.com/products/certification-prep.html",
+      "checked_at": "2026-09-28T10:49:22.908809+00:00",
+      "health": {
+        "id": "oreilly-certification-practice-tests",
+        "url": "https://www.oreilly.com/products/certification-prep.html",
+        "checked_at": "2026-09-28T10:49:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/products/certification-prep.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification Prep - O'Reilly Media",
+        "canonical_url": "https://www.oreilly.com/products/certification-prep.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fd777d210877dd6aedc585cb7c2c23aa7695771f0ec79fd82360fd5ce2c5cd7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/products/certification-prep.html",
+      "sha256": "a1293bef40bef6544f4977825732e7e247682fcb2b6233a04e19afc7092c5236",
+      "text_characters": 160
+    },
+    {
+      "id": "microsoft-dp900-core-data-concepts-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "checked_at": "2026-09-28T10:49:23.383531+00:00",
+      "health": {
+        "id": "microsoft-dp900-core-data-concepts-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+        "checked_at": "2026-09-28T10:49:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+        "content_type": "text/html",
+        "page_title": "Introduction to Microsoft Azure Data Core Data Concepts - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+        "duration_signals": [],
+        "signal_fingerprint": "a9be1612d20b3d9f553df69a742405640a96263fddce17ccf323b0114262557f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/",
+      "sha256": "66a12a1241260e1ee75346c14dc486aa7e48df238196911d64a581bfacf8a95d",
+      "text_characters": 1301
+    },
+    {
+      "id": "microsoft-dp900-core-data-concepts-module",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/",
+      "checked_at": "2026-09-28T10:49:23.539534+00:00",
+      "health": {
+        "id": "microsoft-dp900-core-data-concepts-module",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/",
+        "checked_at": "2026-09-28T10:49:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/",
+        "content_type": "text/html",
+        "page_title": "Explore Core Data Concepts - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/",
+        "duration_signals": [],
+        "signal_fingerprint": "f60f5a8d19fe458eb1dcd77bdea0c628616ae7ff94a7d0659d456e985a208e02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-core-data-concepts/",
+      "sha256": "02358a33de9aae9441e02ac46988969c85908d921b84c3861a6362c57b1abe1a",
+      "text_characters": 1257
+    },
+    {
+      "id": "microsoft-dp900-relational-data-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "checked_at": "2026-09-28T10:49:23.705029+00:00",
+      "health": {
+        "id": "microsoft-dp900-relational-data-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/",
+        "checked_at": "2026-09-28T10:49:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/",
+        "content_type": "text/html",
+        "page_title": "Introduction to Microsoft Azure Data relational data in Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/",
+        "duration_signals": [],
+        "signal_fingerprint": "6dd9db6dc46c99e4c52d10fba5a15c905b739aa06efb84d30548832b37fd888f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-relational-data/",
+      "sha256": "4294e4af09685fe11266b0175a4561b8bb0355d2179f2f06cedee945bc0cca52",
+      "text_characters": 1365
+    },
+    {
+      "id": "microsoft-dp900-relational-concepts-module",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+      "checked_at": "2026-09-28T10:49:23.818671+00:00",
+      "health": {
+        "id": "microsoft-dp900-relational-concepts-module",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+        "checked_at": "2026-09-28T10:49:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+        "content_type": "text/html",
+        "page_title": "Explore Fundamental Relational Data Concepts - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+        "duration_signals": [],
+        "signal_fingerprint": "458b1d0863555ad1ab682f6f80303676f70a297d882c21141804f497da56760c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-relational-data-offerings/",
+      "sha256": "123844351f1ecc5959a6deb0e8b624de59e9d3134565e6cbf9a9f0d00e4c4087",
+      "text_characters": 1029
+    },
+    {
+      "id": "microsoft-dp900-relational-services-module",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/",
+      "checked_at": "2026-09-28T10:49:23.975516+00:00",
+      "health": {
+        "id": "microsoft-dp900-relational-services-module",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/",
+        "checked_at": "2026-09-28T10:49:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/",
+        "content_type": "text/html",
+        "page_title": "Explore Relational Database Services in Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/",
+        "duration_signals": [],
+        "signal_fingerprint": "91424b0aa050216e68292339fbe9430bc56750121477734d3bd2f546c3e62b74",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-provision-deploy-relational-database-offerings-azure/",
+      "sha256": "358f98eb98cb23392cdb48e93d66679b326822d4106ac5ca07ef991de986dd91",
+      "text_characters": 1269
+    },
+    {
+      "id": "microsoft-dp900-nonrelational-data-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "checked_at": "2026-09-28T10:49:24.097050+00:00",
+      "health": {
+        "id": "microsoft-dp900-nonrelational-data-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/",
+        "content_type": "text/html",
+        "page_title": "Introduction to Microsoft Azure Data non-relational data in Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/",
+        "duration_signals": [],
+        "signal_fingerprint": "f30b2998f920fbccaa2834486e235dcdb753dadd4245a02eeb5b2105bf2c50b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "sha256": "1e6387583c819c8ea3f0905cd334e162aa85804db0e6d074b6143a1182746b2e",
+      "text_characters": 1223
+    },
+    {
+      "id": "microsoft-dp900-analytics-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/",
+      "checked_at": "2026-09-28T10:49:24.250302+00:00",
+      "health": {
+        "id": "microsoft-dp900-analytics-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/",
+        "content_type": "text/html",
+        "page_title": "Introduction to Microsoft Azure Data analytics in Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/",
+        "duration_signals": [],
+        "signal_fingerprint": "c1153d12eb4db7dcc3f57b752649e41186e743eba6577d1c0cce0dde4450d0b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics/",
+      "sha256": "49fd4f5440622a511ca248e5d9c3c23afe2a32a0f924bb14e64d03697a703be7",
+      "text_characters": 1934
+    },
+    {
+      "id": "microsoft-dp900-large-scale-analytics-module",
+      "url": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/",
+      "checked_at": "2026-09-28T10:49:24.320300+00:00",
+      "health": {
+        "id": "microsoft-dp900-large-scale-analytics-module",
+        "url": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/",
+        "content_type": "text/html",
+        "page_title": "Explore Fundamentals Of Large-Scale Data Analytics - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/",
+        "duration_signals": [],
+        "signal_fingerprint": "575ba3837c57536a90d6b71062b2094fb7ddf4fd4e4f81b8bbc738b9cf5b3d08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/modules/examine-components-of-modern-data-warehouse/",
+      "sha256": "5ba641bc689a41a50f81f71003396f2ef13a92a34a7634bbed5916192b9d9158",
+      "text_characters": 1521
+    },
+    {
+      "id": "microsoft-dp900-stream-processing-module",
+      "url": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+      "checked_at": "2026-09-28T10:49:24.351028+00:00",
+      "health": {
+        "id": "microsoft-dp900-stream-processing-module",
+        "url": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+        "content_type": "text/html",
+        "page_title": "Explore Fundamentals of Real-Time Analytics - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+        "duration_signals": [],
+        "signal_fingerprint": "159d4c11f133999b880e9190692862c4dc07887801c7c79f46768c1fd4a05dc3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/modules/explore-fundamentals-stream-processing/",
+      "sha256": "ab4156a0b45552058bab85cec34f92bc1ce56b248b80c205477364cd820ffe85",
+      "text_characters": 1590
+    },
+    {
+      "id": "microsoft-azure-data-fundamentals-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+      "checked_at": "2026-09-28T10:49:24.541434+00:00",
+      "health": {
+        "id": "microsoft-azure-data-fundamentals-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Data Fundamentals - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+        "duration_signals": [
+          "24 hours",
+          "45 minutes"
+        ],
+        "signal_fingerprint": "07a12f0d8c9a733f6c8f24fda076d34f409c7afb4bf5d548043ca471a6f72712",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+      "sha256": "5c7c7fb69f96e2a07c20d9131e3f901cc0002d47a2685aff92725002763c939d",
+      "text_characters": 4109
+    },
+    {
+      "id": "microsoft-azure-sql-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+      "checked_at": "2026-09-28T10:49:24.561066+00:00",
+      "health": {
+        "id": "microsoft-azure-sql-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Azure SQL documentation - Azure SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "5aa6894f451f5713374fec30a586b5efa24d256459276610cadf0d310fa1c0fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql",
+      "sha256": "c21c4a1905cc127541cb80da51952b05c11ad7b3c764c30a324fe5893e3f7f44",
+      "text_characters": 2719
+    },
+    {
+      "id": "microsoft-azure-sql-options-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview",
+      "checked_at": "2026-09-28T10:49:24.630954+00:00",
+      "health": {
+        "id": "microsoft-azure-sql-options-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "What Is Azure SQL? - Azure SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "a85e32ae0abf7d84163724c305aa90879ee258d490c1b1b4d0fd0f343aa56a82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql",
+      "sha256": "76943cf04361d6058f312296b7ef2f3833ce1c2a8d43811c18c374c52243d9fe",
+      "text_characters": 26714
+    },
+    {
+      "id": "microsoft-azure-storage-documentation-dp900",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/",
+      "checked_at": "2026-09-28T10:49:24.759237+00:00",
+      "health": {
+        "id": "microsoft-azure-storage-documentation-dp900",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/",
+        "checked_at": "2026-09-28T10:49:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/",
+        "content_type": "text/html",
+        "page_title": "Azure Storage Documentation Hub",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/",
+        "duration_signals": [],
+        "signal_fingerprint": "3bfd9c4114349b3de0168016401a055b7ddd764cd829ff08c086d6617b213b5a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/",
+      "sha256": "3e3c91ff80deaaf57a1804800b646729e4cab1badb8002594a21aab68a1732bc",
+      "text_characters": 1263
+    },
+    {
+      "id": "microsoft-cosmos-db-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+      "checked_at": "2026-09-28T10:49:25.017385+00:00",
+      "health": {
+        "id": "microsoft-cosmos-db-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+        "checked_at": "2026-09-28T10:49:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+        "content_type": "text/html",
+        "page_title": "Azure Cosmos DB documentation - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+        "duration_signals": [],
+        "signal_fingerprint": "84c39bd6ac3e05095f62b3262d244fc919fb6c062be9385e7013952babafb78a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+      "sha256": "0a91ab8ad2d47b52e09ad3310157794c4a9c19386b2ea6b3c163352b817ad1b3",
+      "text_characters": 7476
+    },
+    {
+      "id": "microsoft-cosmos-db-api-selection",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/choose-api",
+      "checked_at": "2026-09-28T10:49:25.052175+00:00",
+      "health": {
+        "id": "microsoft-cosmos-db-api-selection",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/choose-api",
+        "checked_at": "2026-09-28T10:49:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+        "content_type": "text/html",
+        "page_title": "Azure Cosmos DB documentation - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+        "duration_signals": [],
+        "signal_fingerprint": "84c39bd6ac3e05095f62b3262d244fc919fb6c062be9385e7013952babafb78a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+      "sha256": "0a91ab8ad2d47b52e09ad3310157794c4a9c19386b2ea6b3c163352b817ad1b3",
+      "text_characters": 7476
+    },
+    {
+      "id": "microsoft-cosmos-db-partitioning-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview",
+      "checked_at": "2026-09-28T10:49:25.164554+00:00",
+      "health": {
+        "id": "microsoft-cosmos-db-partitioning-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview",
+        "checked_at": "2026-09-28T10:49:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning",
+        "content_type": "text/html",
+        "page_title": "Partitioning and horizontal scaling - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning",
+        "duration_signals": [],
+        "signal_fingerprint": "3ececf8aa97140b885a683638de933800bf03a3fac28f6833e0a0b04b926a6f4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning",
+      "sha256": "45540d92a6d19cee62f83fcacce1ea2cb17ae73efbd27c95e398a8860320d982",
+      "text_characters": 21504
+    },
+    {
+      "id": "microsoft-cosmos-db-request-units",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/understand-request-unit-consumption",
+      "checked_at": "2026-09-28T10:49:25.369001+00:00",
+      "health": {
+        "id": "microsoft-cosmos-db-request-units",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/understand-request-unit-consumption",
+        "checked_at": "2026-09-28T10:49:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/understand-request-unit-consumption",
+        "content_type": "text/html",
+        "page_title": "Understanding Request Units Consumption - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/understand-request-unit-consumption",
+        "duration_signals": [],
+        "signal_fingerprint": "7570d69b7d17edf385fc4cc22e60264f118b289add91fbacaac3978420466194",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/understand-request-unit-consumption",
+      "sha256": "ea62045676394cd5b3e593eef235de97c77962effe8183e82137a112a777c321",
+      "text_characters": 10558
+    },
+    {
+      "id": "microsoft-cosmos-db-consistency-levels",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+      "checked_at": "2026-09-28T10:49:25.677285+00:00",
+      "health": {
+        "id": "microsoft-cosmos-db-consistency-levels",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "checked_at": "2026-09-28T10:49:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "content_type": "text/html",
+        "page_title": "Consistency level choices - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+        "duration_signals": [
+          "15 minutes",
+          "240 Minutes"
+        ],
+        "signal_fingerprint": "82693b1e8fda105f7055427e64d374d5c127bc49bf2062d57995d95f556d43d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels",
+      "sha256": "4d0247ee753e18c8bdc6d5c6b15e4b0386703cb2e5cdec83a9659103492e5cb1",
+      "text_characters": 21135
+    },
+    {
+      "id": "microsoft-fabric-documentation-dp900",
+      "url": "https://learn.microsoft.com/en-us/fabric/",
+      "checked_at": "2026-09-28T10:49:25.753170+00:00",
+      "health": {
+        "id": "microsoft-fabric-documentation-dp900",
+        "url": "https://learn.microsoft.com/en-us/fabric/",
+        "checked_at": "2026-09-28T10:49:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Fabric documentation - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/",
+        "duration_signals": [],
+        "signal_fingerprint": "d4e4c2e0d642a71c82ea21f46358b736ec33276c130f889e617aa78376a7cd06",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/",
+      "sha256": "31e25c918a1ec77689070a15391272908929257e42be6e0a63c6028243be4117",
+      "text_characters": 2664
+    },
+    {
+      "id": "microsoft-fabric-overview-dp900",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview",
+      "checked_at": "2026-09-28T10:49:25.820241+00:00",
+      "health": {
+        "id": "microsoft-fabric-overview-dp900",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview",
+        "checked_at": "2026-09-28T10:49:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "94ba1c2094648f4a21a826b88be76d9f73b265979145ebdf024aad349b6ddde3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/microsoft-fabric-overview",
+      "sha256": "d4059db268961b13009a730d2e4e0b62d071b5f3f4fe7e00634c793e1a861f23",
+      "text_characters": 15593
+    },
+    {
+      "id": "microsoft-fabric-data-storage-options",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/store-data",
+      "checked_at": "2026-09-28T10:49:26.010822+00:00",
+      "health": {
+        "id": "microsoft-fabric-data-storage-options",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/store-data",
+        "checked_at": "2026-09-28T10:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/store-data",
+        "content_type": "text/html",
+        "page_title": "Data storage options in Microsoft Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/store-data",
+        "duration_signals": [],
+        "signal_fingerprint": "66d96a9b8ee7f85802cc0c189222379976a2ffc76aef36e05e4bdf4a0a3e9157",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/store-data",
+      "sha256": "bb0715209e45fe43bd1f229c2e6fd27ee97d39b9a292cab5e792fb5b2c364b8f",
+      "text_characters": 12831
+    },
+    {
+      "id": "microsoft-azure-databricks-documentation-dp900",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/",
+      "checked_at": "2026-09-28T10:49:26.039659+00:00",
+      "health": {
+        "id": "microsoft-azure-databricks-documentation-dp900",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "checked_at": "2026-09-28T10:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "content_type": "text/html",
+        "page_title": "Azure Databricks documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "duration_signals": [],
+        "signal_fingerprint": "4f407d660b6f8c1ab80aacb5b5adaa928baf0213c2181b347fc271e22090d345",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/",
+      "sha256": "380e4459fc091c3138b2c92c2f147711a72d5e3714332d02a1055d0a5b49a94b",
+      "text_characters": 838
+    },
+    {
+      "id": "microsoft-azure-databricks-introduction",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/introduction/",
+      "checked_at": "2026-09-28T10:49:26.093946+00:00",
+      "health": {
+        "id": "microsoft-azure-databricks-introduction",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/introduction/",
+        "checked_at": "2026-09-28T10:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/introduction/",
+        "content_type": "text/html",
+        "page_title": "What is Azure Databricks? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/introduction/",
+        "duration_signals": [],
+        "signal_fingerprint": "b267052715bc58c465b8d2128031c5bce4817b5b5cddee289f2354f873258391",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/introduction/",
+      "sha256": "8f72d6690b6ec4587b5abf9409ce84202276e98bba9ff65e4f47d45ecf377f13",
+      "text_characters": 8500
+    },
+    {
+      "id": "microsoft-power-bi-documentation-dp900",
+      "url": "https://learn.microsoft.com/en-us/power-bi/",
+      "checked_at": "2026-09-28T10:49:26.281644+00:00",
+      "health": {
+        "id": "microsoft-power-bi-documentation-dp900",
+        "url": "https://learn.microsoft.com/en-us/power-bi/",
+        "checked_at": "2026-09-28T10:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/",
+        "content_type": "text/html",
+        "page_title": "Power BI documentation - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/",
+        "duration_signals": [],
+        "signal_fingerprint": "bab7a091c62a8c03e7911136b3dcb310ae474bc9005d688bf59a7e757ac08b28",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/",
+      "sha256": "11b596f7fe0a2de030a10f08e67aba2983225200e5d3775b964075519bb96b45",
+      "text_characters": 3069
+    },
+    {
+      "id": "microsoft-power-bi-guided-learning-dp900",
+      "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+      "checked_at": "2026-09-28T10:49:26.319499+00:00",
+      "health": {
+        "id": "microsoft-power-bi-guided-learning-dp900",
+        "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+        "checked_at": "2026-09-28T10:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+        "content_type": "text/html",
+        "page_title": "Training for Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+        "duration_signals": [],
+        "signal_fingerprint": "7ee87bb9533b1b93e98cf77f77870d79aeeac204f0a88467c60171b11e38cf2d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi",
+      "sha256": "b87b07638aad2b1c02fa14e450c907fd6c1836935981311ecc03e49e94a6a8a8",
+      "text_characters": 2017
+    },
+    {
+      "id": "microsoft-power-bi-star-schema-guidance",
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+      "checked_at": "2026-09-28T10:49:26.363539+00:00",
+      "health": {
+        "id": "microsoft-power-bi-star-schema-guidance",
+        "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+        "checked_at": "2026-09-28T10:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+        "content_type": "text/html",
+        "page_title": "Understand star schema and the importance for Power BI - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+        "duration_signals": [],
+        "signal_fingerprint": "3b203e3f2ad64c4f5091b305a2df872fd34ef2926d1c04a54c4c7660c0ed820d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+      "sha256": "949db0855d290a5e2a69b649b7705226c593262a693c8634e609c7985b0c248b",
+      "text_characters": 24721
+    },
+    {
+      "id": "microsoft-power-bi-semantic-models",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand",
+      "checked_at": "2026-09-28T10:49:26.572882+00:00",
+      "health": {
+        "id": "microsoft-power-bi-semantic-models",
+        "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand",
+        "checked_at": "2026-09-28T10:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand",
+        "content_type": "text/html",
+        "page_title": "Semantic Models in the Power BI Service - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand",
+        "duration_signals": [],
+        "signal_fingerprint": "877220c0128004c6909e041d407b53fe4cfe3abc03878f55e28bec052ed1bc2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/service-datasets-understand",
+      "sha256": "1c468cc7e6d0e643f1abe039c88031ea8a899b9ea4313f7492e17dc46d0648c8",
+      "text_characters": 6368
+    },
+    {
+      "id": "az900-lifetime",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy",
+      "checked_at": "2026-09-28T10:52:29.747466+00:00",
+      "health": {
+        "id": "az900-lifetime",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy",
+        "checked_at": "2026-09-28T10:52:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "content_type": "text/html",
+        "page_title": "Credential expiration policies",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "02be00ecc69bd6d09b0cc1d64114ccd75ee92143ee2f3928f7523e1af9cbbedf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "sha256": "33878c765cca11bb19e24534d8af1f50eba2ef1e32b94e5a6b39f8aac1309c8e",
+      "text_characters": 2379
+    },
+    {
+      "id": "dp900-groupby",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+      "checked_at": "2026-09-28T10:52:29.748245+00:00",
+      "health": {
+        "id": "dp900-groupby",
+        "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+        "checked_at": "2026-09-28T10:52:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "GROUP BY (Transact-SQL) - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "9c3da0463c9af01c1bdbc29facfa65f5ae29840708399ad011ab77daf8b6349d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+      "sha256": "1ac1711f1ca6023c0c5eac99144b3ee3a62d863e6a81b994f119c5d2a7079172",
+      "text_characters": 21191
+    },
+    {
+      "id": "dp900-keys",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+      "checked_at": "2026-09-28T10:52:29.748682+00:00",
+      "health": {
+        "id": "dp900-keys",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+        "checked_at": "2026-09-28T10:52:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Primary and foreign key constraints - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "deaf32537a3e3f6aeef7aecf44f421e5e292569879b0e0e8e94bc87f6e99503a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+      "sha256": "b88a02bd1b1c404f1dfc46b2e83bfb8ce36fea65c9c0e5a604abf3fb9f3bb9e2",
+      "text_characters": 11793
+    },
+    {
+      "id": "dp900-blob",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+      "checked_at": "2026-09-28T10:52:30.216640+00:00",
+      "health": {
+        "id": "dp900-blob",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+        "content_type": "text/html",
+        "page_title": "Introduction to Blob (object) Storage - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "ffbb46798d8adf301ec6d0bc3f4944435df2a0ff2d307c88b0386166fb79acca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction",
+      "sha256": "2046877db0cb7f85920110e7ecabd7fed3451650d9227a72dbf3ef58c6c16a35",
+      "text_characters": 8623
+    },
+    {
+      "id": "dp900-files",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
+      "checked_at": "2026-09-28T10:52:30.230282+00:00",
+      "health": {
+        "id": "dp900-files",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
+        "content_type": "text/html",
+        "page_title": "What is Azure Files?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "9f45803ba310e13e81a9978fa34fc97e106fdf8b36c3294f286b44ec60c9c298",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction",
+      "sha256": "30f252718b64c3718fed303b976321829e54f6224e7b3b77a70622052e70334e",
+      "text_characters": 2882
+    },
+    {
+      "id": "dp900-table",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview",
+      "checked_at": "2026-09-28T10:52:30.363036+00:00",
+      "health": {
+        "id": "dp900-table",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview",
+        "content_type": "text/html",
+        "page_title": "Introduction to Table storage - Object storage in Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "32ffb4e31100a4497d2052f87c75a4c4f05c1beb2c13212a72e285b0836e050e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview",
+      "sha256": "a65fb93eb91de6f36ed0722444a33f1401966fefe20cebb31f70eec5ccd9ca58",
+      "text_characters": 4591
+    },
+    {
+      "id": "dp900-hns",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace",
+      "checked_at": "2026-09-28T10:52:30.486814+00:00",
+      "health": {
+        "id": "dp900-hns",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace",
+        "content_type": "text/html",
+        "page_title": "Azure Data Lake Storage hierarchical namespace - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace",
+        "duration_signals": [],
+        "signal_fingerprint": "404545f5c10809f5e7dade9ce4fce5539b9150bea96c0ac35baecb78ec81b730",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace",
+      "sha256": "ea366bd1b9f5b1a2145d3be821bc4aae917a98d4e03f06611926026a09256740",
+      "text_characters": 5451
+    },
+    {
+      "id": "ai-200-service-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview",
+      "checked_at": "2026-09-28T10:52:30.530788+00:00",
+      "health": {
+        "id": "ai-200-service-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/overview",
+        "content_type": "text/html",
+        "page_title": "What Is Azure Database for PostgreSQL flexible server? - Azure Database for PostgreSQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/postgresql/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "f78a53d6b619f30dcd89b60dbc1cd3b17de5d0e8f5a6470a084c8701bf7e3320",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/postgresql/overview",
+      "sha256": "8ca74704c62f7a6c21a42ca217a50379b8e694895ab6f6b07b42cbd25188268d",
+      "text_characters": 12424
+    },
+    {
+      "id": "dp900-mysql",
+      "url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview",
+      "checked_at": "2026-09-28T10:52:30.705923+00:00",
+      "health": {
+        "id": "dp900-mysql",
+        "url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview",
+        "content_type": "text/html",
+        "page_title": "Azure Database for MySQL flexible server - Azure Database for MySQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview",
+        "duration_signals": [
+          "750 hours"
+        ],
+        "signal_fingerprint": "79933992de9b14d0dea36478ab951fd316d11a075602b22851584d0ff70e07e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/mysql/flexible-server/overview",
+      "sha256": "e219f5a7b67ce9a306dab1eb12bf65f0b46c1dfb1855c547c585756812623647",
+      "text_characters": 18942
+    },
+    {
+      "id": "dp900-mongo",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction",
+      "checked_at": "2026-09-28T10:52:30.762578+00:00",
+      "health": {
+        "id": "dp900-mongo",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/introduction",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/overview",
+        "content_type": "text/html",
+        "page_title": "Introduction/Overview - Azure Cosmos DB for MongoDB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "9c3f8b4e6ccfb9d5b6f0f0fcd3789dc8181cbef3bb7f5e72cc6fad2f519c1c8e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/mongodb/overview",
+      "sha256": "f1c453e55cc01ad2fb479eb700f590e53bfd148a5a4eaf533907f2559f0268af",
+      "text_characters": 4424
+    },
+    {
+      "id": "dp900-documentdb",
+      "url": "https://learn.microsoft.com/en-us/azure/documentdb/overview",
+      "checked_at": "2026-09-28T10:52:30.991815+00:00",
+      "health": {
+        "id": "dp900-documentdb",
+        "url": "https://learn.microsoft.com/en-us/azure/documentdb/overview",
+        "checked_at": "2026-09-28T10:52:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/documentdb/overview",
+        "content_type": "text/html",
+        "page_title": "Introduction/overview - Azure DocumentDB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/documentdb/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "563447ef8b65b94f89b018c1f45f8c186eeb692853b0c4b24b23606fc28e1ea5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/documentdb/overview",
+      "sha256": "e947e53b1117ff6fbab17fcfa62ed96a3199b20b80cf34f07b69a262cf6edb57",
+      "text_characters": 4273
+    },
+    {
+      "id": "dp900-cosmos-pg",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates",
+      "checked_at": "2026-09-28T10:52:31.044779+00:00",
+      "health": {
+        "id": "dp900-cosmos-pg",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates",
+        "content_type": "text/html",
+        "page_title": "Product updates for Azure Cosmos DB for PostgreSQL - Azure Cosmos DB for PostgreSQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates",
+        "duration_signals": [],
+        "signal_fingerprint": "8c1f3632e201741be4968a8b4d426514146b08b04375981dde1b134756fade49",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates",
+      "sha256": "4f6d07b352a81fbe2deb523b066bf56f78073ef0ea12eb2babdd7d8a97c9e70d",
+      "text_characters": 11647
+    },
+    {
+      "id": "dp900-pointread",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-cost-queries",
+      "checked_at": "2026-09-28T10:52:31.240867+00:00",
+      "health": {
+        "id": "dp900-pointread",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-cost-queries",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-cost-reads-writes",
+        "content_type": "text/html",
+        "page_title": "Optimize Request Cost - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-cost-reads-writes",
+        "duration_signals": [],
+        "signal_fingerprint": "e21d13ef834cdf11dae32ee36e65199ece66a8a68575214e857bd2e294225288",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-cost-reads-writes",
+      "sha256": "33f6299aee16c462a547e7a7fb2f6f55e441e0cfb2de68d3d7b319d43ba38afa",
+      "text_characters": 10198
+    },
+    {
+      "id": "dp900-lake-sql",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+      "checked_at": "2026-09-28T10:52:31.252721+00:00",
+      "health": {
+        "id": "dp900-lake-sql",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+        "content_type": "text/html",
+        "page_title": "What is the SQL analytics endpoint for a lakehouse? - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+        "duration_signals": [],
+        "signal_fingerprint": "d6543042b9cc6aeba764a2925d941226342e14db4a11b2b8070700c6dabdbf08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+      "sha256": "7be9814f59ec336c630d23623c1e73f25f14c9ecd3f576ef67a77d2406c8b1b7",
+      "text_characters": 8693
+    },
+    {
+      "id": "dp900-eventstream",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview",
+      "checked_at": "2026-09-28T10:52:31.328186+00:00",
+      "health": {
+        "id": "dp900-eventstream",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Fabric Eventstreams Overview - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "bda86337df8efebd5decdf28e7ae005b9b3013095244b5ade2a0d3a5c939cd5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview",
+      "sha256": "38d559c36c2409332823518f7d834949a5c5e9e633d0d1ef176675bf14b12f6f",
+      "text_characters": 20485
+    },
+    {
+      "id": "dp900-eventhouse",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse",
+      "checked_at": "2026-09-28T10:52:31.582598+00:00",
+      "health": {
+        "id": "dp900-eventhouse",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse",
+        "content_type": "text/html",
+        "page_title": "Eventhouse overview - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "1ce7b78ea63aebaecc8370ef2f08b4d7747a334fc9e335f7488bfc331d8d0ff5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/eventhouse",
+      "sha256": "64b26ab88a2bd7cf0c9df7ea9bdd10c4c9448a96e86724081def453c0268da4e",
+      "text_characters": 6261
+    },
+    {
+      "id": "dp900-activator",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "checked_at": "2026-09-28T10:52:31.685275+00:00",
+      "health": {
+        "id": "dp900-activator",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-introduction",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-introduction",
+        "content_type": "text/html",
+        "page_title": "What is Fabric Activator? - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "f9d8396ebf8b510cb473d8a7cdcafee7afb0588f4a6a42897d8666499e1d0faa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "sha256": "1c5ed4e912a70c469b9067108edadd0a9ceb0cbde9907211f727f733f8305ffc",
+      "text_characters": 17970
+    },
+    {
+      "id": "dp-750-structured-streaming",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/",
+      "checked_at": "2026-09-28T10:52:31.716640+00:00",
+      "health": {
+        "id": "dp-750-structured-streaming",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/concepts",
+        "content_type": "text/html",
+        "page_title": "Structured Streaming concepts - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/concepts",
+        "duration_signals": [],
+        "signal_fingerprint": "bd96ad62275ffc3605c78a87b453326dd73a33302d95b7da553a8cee4eabb4fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/concepts",
+      "sha256": "bd41593553064c2dd097e32dd14f50e12b8039a61de76e6569a78940819242d8",
+      "text_characters": 3124
+    },
+    {
+      "id": "dp900-mirroring",
+      "url": "https://learn.microsoft.com/en-us/fabric/mirroring/overview",
+      "checked_at": "2026-09-28T10:52:31.922022+00:00",
+      "health": {
+        "id": "dp900-mirroring",
+        "url": "https://learn.microsoft.com/en-us/fabric/mirroring/overview",
+        "checked_at": "2026-09-28T10:52:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/mirroring/overview",
+        "content_type": "text/html",
+        "page_title": "Mirroring - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/mirroring/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b8f08233d71e9b1bf8137ab55a59fd6443065686e1e415bcaae00367cbdd272a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/mirroring/overview",
+      "sha256": "36cf94d84b663ab40c1994474edb62ddfd251811ed6da86ac63b92be9d463301",
+      "text_characters": 15849
+    },
+    {
+      "id": "dp900-shortcuts",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts",
+      "checked_at": "2026-09-28T10:52:32.065018+00:00",
+      "health": {
+        "id": "dp900-shortcuts",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts",
+        "checked_at": "2026-09-28T10:52:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts",
+        "content_type": "text/html",
+        "page_title": "Unify Data Sources With OneLake Shortcuts - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts",
+        "duration_signals": [],
+        "signal_fingerprint": "a494a8d8fd6f2a1b3647441606482c80ce8abe213cba00f8d9fd193fa0726d00",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts",
+      "sha256": "20880066922202ea7b595eaad10f3a8247d60184c3c5d456ea3b120f34b820c1",
+      "text_characters": 16097
+    },
+    {
+      "id": "dp900-semantic",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models",
+      "checked_at": "2026-09-28T10:52:32.192998+00:00",
+      "health": {
+        "id": "dp900-semantic",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models",
+        "checked_at": "2026-09-28T10:52:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models",
+        "content_type": "text/html",
+        "page_title": "Power BI Semantic Models - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models",
+        "duration_signals": [],
+        "signal_fingerprint": "427e6f268e04ae66e191c37f875b01170070b36ed5166658b8ac42f0b884267d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models",
+      "sha256": "44cb4729b5e2ace87369a4ba39e3c57fbc00db5b932efbc2d34e1d7a64b29185",
+      "text_characters": 6125
+    },
+    {
+      "id": "dp900-powerbi-compare",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards",
+      "checked_at": "2026-09-28T10:52:32.245934+00:00",
+      "health": {
+        "id": "dp900-powerbi-compare",
+        "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards",
+        "checked_at": "2026-09-28T10:52:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards",
+        "content_type": "text/html",
+        "page_title": "Intro to dashboards for Power BI designers - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards",
+        "duration_signals": [],
+        "signal_fingerprint": "207edf0ef128506a7fe95b612de895a06c72256b7a3ab7850be4f1b6b82785e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards",
+      "sha256": "44c3af2d06e65c47de2095e6fabc75c5558b7749dd610c2277d7096ab688588d",
+      "text_characters": 4666
+    },
+    {
+      "id": "dp900-point-blog",
+      "url": "https://devblogs.microsoft.com/cosmosdb/point-reads-versus-queries/",
+      "checked_at": "2026-09-28T10:52:32.365112+00:00",
+      "health": {
+        "id": "dp900-point-blog",
+        "url": "https://devblogs.microsoft.com/cosmosdb/point-reads-versus-queries/",
+        "checked_at": "2026-09-28T10:52:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/cosmosdb/point-reads-versus-queries/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Understanding the difference between point reads and queries in Azure Cosmos DB - Azure Cosmos DB Blog",
+        "canonical_url": "https://devblogs.microsoft.com/cosmosdb/point-reads-versus-queries/",
+        "duration_signals": [],
+        "signal_fingerprint": "4ccff6b165d6dc70ace392669292bc4bf65c83e78b201f129d1cbeaf4e34957a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/cosmosdb/point-reads-versus-queries/",
+      "sha256": "f67e2c23c7a355bcd100347d5cad9e0afc0b58b546e8be3eef63bdd85f24c586",
+      "text_characters": 9883
+    },
+    {
+      "id": "dp900-semantic-blog",
+      "url": "https://blog.fabric.microsoft.com/en-us/blog/sunsetting-default-semantic-models-microsoft-fabric/",
+      "checked_at": "2026-09-28T10:52:32.491422+00:00",
+      "health": {
+        "id": "dp900-semantic-blog",
+        "url": "https://blog.fabric.microsoft.com/en-us/blog/sunsetting-default-semantic-models-microsoft-fabric/",
+        "checked_at": "2026-09-28T10:52:32+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://blog.fabric.microsoft.com/en-us/blog/sunsetting-default-semantic-models-microsoft-fabric/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp900-documentdb-releases",
+      "url": "https://learn.microsoft.com/en-us/azure/documentdb/release-notes",
+      "checked_at": "2026-09-28T10:58:03.300531+00:00",
+      "health": {
+        "id": "dp900-documentdb-releases",
+        "url": "https://learn.microsoft.com/en-us/azure/documentdb/release-notes",
+        "checked_at": "2026-09-28T10:58:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/documentdb/release-notes",
+        "content_type": "text/html",
+        "page_title": "Service release notes - Azure DocumentDB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/documentdb/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "68a3d0483616d1220cb991614007d3df1dbd16a0c5866d61b4ca9745a8102b2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/documentdb/release-notes",
+      "sha256": "76e2b21b03cbc2c19b1d35aed60ebc37758c7721e02400549454dfcb5c927713",
+      "text_characters": 13270
+    },
+    {
+      "id": "dp900-documentdb-blog",
+      "url": "https://devblogs.microsoft.com/documentdb/introducing-azure-documentdb/",
+      "checked_at": "2026-09-28T10:58:03.301205+00:00",
+      "health": {
+        "id": "dp900-documentdb-blog",
+        "url": "https://devblogs.microsoft.com/documentdb/introducing-azure-documentdb/",
+        "checked_at": "2026-09-28T10:58:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/documentdb/introducing-azure-documentdb/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Introducing the Azure DocumentDB Blog - Azure DocumentDB Blog",
+        "canonical_url": "https://devblogs.microsoft.com/documentdb/introducing-azure-documentdb/",
+        "duration_signals": [],
+        "signal_fingerprint": "7d8d67ab11949902dd1e2fd6b60a7f1d9fde21fc40a3fb22b361a9166602c663",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/documentdb/introducing-azure-documentdb/",
+      "sha256": "1161810afbff5d6965d32d4afcca7a6aab3ea1a3f8ddea3751a659a98ad8c6e7",
+      "text_characters": 10272
+    },
+    {
+      "id": "dp-420-resource-model",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+      "checked_at": "2026-09-28T10:58:12.630484+00:00",
+      "health": {
+        "id": "dp-420-resource-model",
+        "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+        "checked_at": "2026-09-28T10:58:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+        "content_type": "text/html",
+        "page_title": "Databases, containers, and items - Azure Cosmos DB",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+        "duration_signals": [],
+        "signal_fingerprint": "578841766fdc1f907d276b54b1244592636a5677e8266ba1e7b52e128417e639",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+      "sha256": "ec8fcae597b1c3bede0e1059481833065ad6a0cb3af2d9e4892684f0e0bb4c6f",
+      "text_characters": 11733
+    }
+  ],
+  "added_source_ids": [
+    "dp900-documentdb-releases",
+    "dp900-documentdb-blog",
+    "dp900-groupby",
+    "dp900-keys",
+    "dp900-blob",
+    "dp900-files",
+    "dp900-table",
+    "dp900-hns",
+    "dp900-mysql",
+    "dp900-mongo",
+    "dp900-documentdb",
+    "dp900-cosmos-pg",
+    "dp900-pointread",
+    "dp900-lake-sql",
+    "dp900-eventstream",
+    "dp900-eventhouse",
+    "dp900-activator",
+    "dp900-mirroring",
+    "dp900-shortcuts",
+    "dp900-semantic",
+    "dp900-powerbi-compare",
+    "dp900-point-blog",
+    "dp900-semantic-blog"
+  ],
+  "findings": [
+    {
+      "id": "dp900-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Grouping on a display name merges different customers",
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver17",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GROUP BY uses grouping column values; display names are not unique customer identities.",
+      "recommendation": "Include CustomerId and add executable original same-name and join-grain examples.",
+      "disposition": "applied",
+      "source_id": "dp900-groupby",
+      "resolution": "Include CustomerId and add executable original same-name and join-grain examples."
+    },
+    {
+      "id": "dp900-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Integrity and query performance are distinct",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints?view=sql-server-ver17",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Foreign keys enforce references but do not automatically create indexes.",
+      "recommendation": "Explain constraints and add a rejected-reference exercise.",
+      "disposition": "applied",
+      "source_id": "dp900-keys",
+      "resolution": "Explain constraints and add a rejected-reference exercise."
+    },
+    {
+      "id": "dp900-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Container throughput can be dedicated or database-shared",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Database shared RU/s is not a separate allocation for each container.",
+      "recommendation": "Qualify the scale-boundary paragraph and add work/rate reasoning.",
+      "disposition": "applied",
+      "source_id": "dp-420-resource-model",
+      "resolution": "Qualify the scale-boundary paragraph and add work/rate reasoning."
+    },
+    {
+      "id": "dp900-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Only the MongoDB vCore product was renamed",
+      "url": "https://learn.microsoft.com/en-us/azure/documentdb/release-notes",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "November 18, 2025 notice identifies the former vCore offering.",
+      "recommendation": "Separate Azure DocumentDB from native Cosmos APIs and RU MongoDB.",
+      "disposition": "applied",
+      "source_id": "dp900-documentdb-releases",
+      "resolution": "Separate Azure DocumentDB from native Cosmos APIs and RU MongoDB."
+    },
+    {
+      "id": "dp900-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "PostgreSQL product is on a retirement path",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/postgresql/product-updates",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Primary notice recommends different current services and gives no final retirement date.",
+      "recommendation": "Add scope and new-project guidance without inventing a deadline.",
+      "disposition": "applied",
+      "source_id": "dp900-cosmos-pg",
+      "resolution": "Add scope and new-project guidance without inventing a deadline."
+    },
+    {
+      "id": "dp900-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Query predicates do not make a query a point read",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/optimize-cost-queries",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The dedicated operation uses ID and partition key; RU cost depends on size and consistency.",
+      "recommendation": "Add operation distinction and bounded worked RU example.",
+      "disposition": "applied",
+      "source_id": "dp900-pointread",
+      "resolution": "Add operation distinction and bounded worked RU example."
+    },
+    {
+      "id": "dp900-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Real-time service recognition needs concrete roles",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Eventstream ingests/transforms/routes; separate stores and rules evaluate downstream.",
+      "recommendation": "Map Eventstream, Eventhouse, Activator and Spark processing to different jobs.",
+      "disposition": "applied",
+      "source_id": "dp900-eventstream",
+      "resolution": "Map Eventstream, Eventhouse, Activator and Spark processing to different jobs."
+    },
+    {
+      "id": "dp900-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Read-only table data still permits SQL objects",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Lakehouse endpoint cannot DML-write Delta data but supports SQL views/functions/procedures.",
+      "recommendation": "Add write-path and access-path security distinctions.",
+      "disposition": "applied",
+      "source_id": "dp900-lake-sql",
+      "resolution": "Add write-path and access-path security distinctions."
+    },
+    {
+      "id": "dp900-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "References and replication have different behavior",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-shortcuts",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Shortcuts reference targets with identity checks; supported external caching keeps local data.",
+      "recommendation": "Compare shortcuts with mirroring without a zero-cache or backup guarantee.",
+      "disposition": "applied",
+      "source_id": "dp900-shortcuts",
+      "resolution": "Compare shortcuts with mirroring without a zero-cache or backup guarantee."
+    },
+    {
+      "id": "dp900-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Older Fabric labs can expect a model that is no longer created",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/semantic-models",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Automatic creation ended September 5, 2025; existing defaults decoupled by November 30.",
+      "recommendation": "Require explicit semantic-model creation and dependency review.",
+      "disposition": "applied",
+      "source_id": "dp900-semantic",
+      "resolution": "Require explicit semantic-model creation and dependency review."
+    },
+    {
+      "id": "dp900-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Measure correctness depends on grain and aggregation",
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/star-schema",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Facts need consistent grain; explicit measures evaluate in query context.",
+      "recommendation": "Add weighted margin and freshness diagnosis exercises.",
+      "disposition": "applied",
+      "source_id": "microsoft-power-bi-star-schema-guidance",
+      "resolution": "Add weighted margin and freshness diagnosis exercises."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "dp900-point-blog",
+      "decision": "accepted-bounded",
+      "author": "Tim Sander",
+      "published_on": "2020-10-22",
+      "notes": "Complete short main article read: Tim Sander, October 22, 2020. Accept point-read teaching task; current product documentation controls RU assumptions and current NoSQL naming. No sample code copied."
+    },
+    {
+      "source_id": "dp900-documentdb-blog",
+      "decision": "accepted-bounded",
+      "author": "Marko Hotti",
+      "published_on": "2026-05-27",
+      "notes": "Complete main article read: Marko Hotti, May 27, 2026. Accept portfolio/name-boundary task only; marketing savings/migration claims and linked media not audited."
+    },
+    {
+      "source_id": "dp900-semantic-blog",
+      "decision": "deferred-access",
+      "notes": "Direct fetch blocked; redirect/browser access inconsistent. Earlier public excerpt suggests an older schedule but complete article not verified. Defer blog inclusion and use current primary semantic-model documentation."
+    }
+  ],
+  "labs": {
+    "total": 8,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "One original Python/SQLite block executed; 31 assertions cover customer identity, joins, rollback, constraints, RU rate, duplicate events, weighted margin, freshness and catalog sums."
+    ]
+  },
+  "answered_checks": 30,
+  "limitations": [
+    "No Azure/Fabric deployment, migration, Power BI publish, alert/action, paid lesson or assessment execution.",
+    "One original in-memory SQLite exercise and 31 local assertions verify relational examples, invented arithmetic and catalog sums; they do not establish Azure SQL feature parity, production concurrency, service costs, throughput or freshness.",
+    "Selected long-page sections read; full API/version/region/compatibility/security matrices and linked procedures not exhaustively audited.",
+    "OReilly/Udemy direct fetches blocked despite public browser metadata. Semantic blog inclusion deferred after inconsistent access. Partner/Whizlabs/assessment shells and current entitlement/sandbox/voucher details remain unverified.",
+    "Same-context AI review; independent human review and live platform labs remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "sql_identity_grain_constraints_ru_events_margin_freshness_catalog_assertions": 31,
+    "python_blocks_executed": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "oreilly-dp-900-video",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "instructor": "Reza Salehi",
+        "published": "November 2025",
+        "runtime": "3h19",
+        "outline_includes": [
+          "Microsoft Fabric",
+          "Azure Databricks"
+        ]
+      },
+      "limitation": "Public metadata and selected outline only; no paid content or complete lesson verification."
+    },
+    {
+      "source_id": "udemy-dp-900-in28minutes",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "instructor": "in28Minutes",
+        "updated": "August 2026",
+        "sections": 15,
+        "lectures": 131,
+        "runtime": "7h45"
+      },
+      "limitation": "Public metadata and selected outline only; no paid content or complete lesson verification."
+    }
+  ]
+}

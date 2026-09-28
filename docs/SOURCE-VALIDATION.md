@@ -342,6 +342,8 @@ The review expanded every domain from service recognition into requirement, resp
 
 ## DP-900 coverage record
 
+The September 28 [deep review](research/2026-09-28-dp-900-deep-review.md) maps 30 detailed objectives. Entire guide and 30 unchanged objectives mapped across eleven groups. Add six worked exercises, eight labs, 30 answered checks and two useful blog tasks; fix SQL identity/grain, clarify Cosmos product/API boundaries and refresh Fabric real-time and semantic-model guidance. Reconcile catalogs. One original in-memory Python/SQLite block and 31 local assertions passed. No cloud deployment, paid-content or assessment execution; independent human review pending. Current guide citations: 65 registered, 63 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Describe core data concepts | Part 1, objective-to-scenario drill, and Labs 1 and 4 |

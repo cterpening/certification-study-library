@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review DP-900’s 30 objectives; add six worked exercises, eight labs, 30 answered checks and two useful blog tasks. Fix SQL identity/grain examples, clarify Cosmos product boundaries and refresh Fabric, Power BI and learning catalogs. See the [DP-900 report](docs/research/2026-09-28-dp-900-deep-review.md).
+
 - September 28, 2026: deeply review AZ-900’s 57 objectives; add six worked examples, seven labs, 30 answered checks and three useful blog exercises. Refresh responsibility, billing, storage, identity and governance distinctions and learning catalogs. See the [AZ-900 report](docs/research/2026-09-28-az-900-deep-review.md).
 
 - September 28, 2026: deeply review AZ-700’s 136 objectives; add six worked examples, ten labs, 48 explained checks and three Microsoft blog exercises. Update NAT/DNS/routing, VPN/ExpressRoute, private access, policy and lifecycle guidance, and learning catalogs. See the [AZ-700 report](docs/research/2026-09-28-az-700-deep-review.md).

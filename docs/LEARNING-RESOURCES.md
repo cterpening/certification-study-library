@@ -210,18 +210,30 @@ See the broader [Places to learn catalog](LEARNING-RESOURCES.md) for selection c
 
 ### DP-900 — Microsoft Azure Data Fundamentals
 
-- Official (1 day): [Microsoft Learn DP-900 course](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft DP-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification); Microsoft account required
-- Partner-restricted official training (10 hours): [Microsoft Partner Skilling Hub LevelUp DP-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058340); **Partner login required** with an eligible partner work account
-- Structured subscription path (5 hours plus 3 labs) and practice exam (about 2–4 additional hours): [Pluralsight DP-900](https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900), updated through April 2026
-- Video course (3 hours 19 minutes): [O'Reilly Azure Data Fundamentals](https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/), Reza Salehi, November 2025
-- Marketplace course (about 7 hours 47 minutes): [Udemy DP-900 by in28Minutes](https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/), shown as updated May 2026
-- Microsoft Press video (3 hours 11 minutes): [LinkedIn Learning DP-900 Cert Prep](https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press), released August 2024
-- Microsoft sequence (provider pace: about 4 weeks at 10 hours/week): [Coursera Microsoft DP-900 specialization](https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals), with sandbox exercises; older Synapse/HDInsight material needs a July 2026 Fabric delta review
-- Assessment supplements (about 4–8 hours each for simulation, targeted practice, and review): [MeasureUp DP-900 practice test](https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html), with 118 questions and a public last-update date of March 2024, and the [Whizlabs DP-900 training and practice package](https://www.whizlabs.com/microsoft-azure-certification-dp-900/). Both require a current Fabric-focused delta check.
-- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a DP-900 interactive practice test
+Resource details from the [DP-900 guide](../guides/DP-900-microsoft-azure-data-fundamentals.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-The Whizlabs listing is included for its assessment component; its current instructional runtime and July 2026 delta coverage were not independently verified.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — DP-900 course](https://learn.microsoft.com/en-us/training/courses/dp-900t00) | Free self-study; instructor-led options vary | 1 instructor day; 13 languages | Course now named Introduction to Microsoft Azure Data; use the current study guide for the objective baseline |
+| [Microsoft — DP-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Credential page links the official practice route; direct assessment returned no substantive text. No questions or launch session were reviewed |
+| [Microsoft Partner Skilling Hub — LevelUp DP-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058340) | Partner login required | Earlier estimate: 10 hours, not reverified | Login shell only in this review; confirm partner eligibility and current duration |
+| [Microsoft Learn DP-900 learning paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/) | Free | About 8–12 hours | Official modules plus knowledge checks; add hands-on SQL and Power BI practice |
+| [Pluralsight — Microsoft Azure Data Fundamentals (DP-900) and practice exam](https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900) | Subscription; practice access depends on plan/library | 3h40 video + three 30-minute labs = 5h10; extra assessment/review time | Rounded five-hour header already includes labs; component dates through April 2026. Public catalog lists practice; July blueprint alignment needs current Learn |
+| [O'Reilly — Azure Data Fundamentals (DP-900)](https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/) | Subscription | 3 hours 19 minutes | Reza Salehi video course published November 2025; use current Learn for July 2026 deltas |
+| [Udemy — DP-900 Azure Data Fundamentals](https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/) | Purchase or subscription | 7h45; 15 sections, 131 lectures | Public browser page now says August 2026; direct fetch blocked. Curriculum metadata does not establish complete current coverage |
+| [LinkedIn Learning — DP-900 Cert Prep by Microsoft Press](https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press) | Subscription | 3 hours 11 minutes | Chris Sorensen course released August 30, 2024; fill Fabric and July 2026 changes from current Learn |
+| [Coursera — Microsoft DP-900 Exam Prep specialization](https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals) | Subscription; audit options vary | 35 hours from five course estimates; advertised pace four weeks at 10h/week | Microsoft-created sequence; older Synapse/HDInsight outline needs a Fabric supplement. Current sandbox access and conditional voucher offer were not verified |
+| [MeasureUp — DP-900 practice test](https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html) | Paid test or subscription; free demo available | About 4–8 hours for simulation and review | Tier 6 assessment with 118 questions; public last update is March 2024, so perform a current Fabric delta check |
+| [Whizlabs — DP-900 training and practice](https://www.whizlabs.com/microsoft-azure-certification-dp-900/) | Paid course or subscription | About 4–8 hours for assessment and review; course total not verified | Use the practice component for gap detection; current instructional runtime and July 2026 delta coverage were not independently verified |
+| [O'Reilly — DP-900 interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | Earlier catalog evidence lists DP-900 Pearson practice; current fetch returned a shell, so entitlement and launch details remain unverified |
+| [Microsoft Fabric documentation](https://learn.microsoft.com/en-us/fabric/) | Free | Select 2–4 hours by gap | Current Fabric explanations and links to role-based learning; broader than the fundamentals objective |
+| [Power BI guided learning](https://learn.microsoft.com/en-us/training/powerplatform/power-bi) | Free | Select 3–6 hours by gap | Hands-on semantic-model and reporting reinforcement |
+
+Public metadata was checked September 28, 2026. Catalog dates and runtimes do not verify lesson quality or full July-baseline alignment; no paid lessons or assessment questions were accessed.
+
+The assessment products above supplement—not replace—explanatory learning and hands-on data work. See the broader [Places to learn catalog](LEARNING-RESOURCES.md).
 
 ### PL-900 — Microsoft Power Platform Fundamentals
 
