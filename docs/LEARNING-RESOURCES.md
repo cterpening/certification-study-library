@@ -2324,6 +2324,23 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 No exact current third-party Vault Associate (003) course or commercial practice exam was added during this review without a verifiable public scope and runtime. That is an open catalog gap. Compare any candidate with the official 003 content list and reject products advertising dumps, “actual questions,” or guaranteed exam content.
 
+### VAULT-OPERATIONS-PROFESSIONAL — Vault Operations Advanced
+
+Resource details from the [VAULT-OPERATIONS-PROFESSIONAL guide](../guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the official material and hands-on scenarios that match your gaps. Times are approximate consumption time at normal speed; repeated cluster builds, failure injection, troubleshooting, and prerequisite repair add substantial time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [HashiCorp Vault Operations Advanced learning path](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-study) | Free reading; full Enterprise exercises may require an authorized trial or licensed environment | About 30–50 hours for linked reading and hands-on repetition (library estimate; the page's seven-minute read time excludes linked work) | Authoritative scenario preparation across Raft, auth/engines, replication, Agent, and access control; pair with the credential page's stated 1.16 baseline |
+| [Advanced exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) | Free | About 3–6 hours for an active documentation pass | Exact objective-to-documentation checklist; use it to select labs rather than passively rereading every link |
+| [Advanced exam orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-overview) | Free | About 30–60 minutes including environment and prerequisite notes | First-party description of lab, hybrid, and multiple-choice tasks, Enterprise binary, trial option, and available documentation |
+| [Vault Associate (003) guide](../guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md) | Free | About 8–14 hours for targeted prerequisite repair | Review auth, policy, token, lease, engine, seal, storage, replication, and Agent fundamentals before operating scenarios |
+| [HashiCorp Vault operations tutorials](https://developer.hashicorp.com/vault/tutorials) | Free; cloud, Kubernetes, HCP, and Enterprise labs can require accounts or licensing | About 2–6 hours per selected objective gap | Build focused practice for Raft, monitoring, DR/performance replication, HSM, namespaces, policies, and Agent |
+| [Vault documentation and API reference](https://developer.hashicorp.com/vault/docs) | Free | About 8–16 hours for an objective-mapped reference pass, plus repeated lookup practice | Primary behavior reference and the style of material available during the exam; select 1.16 when preparing for the stated baseline and mark newer version/edition behavior |
+
+No exact current third-party Vault Operations Advanced course or commercial practice lab was included without a verifiable public objective mapping and runtime. That is an open catalog gap. A general Vault course can repair product gaps but should not be represented as performance-exam preparation unless it includes repeated cluster operations and failure recovery.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [VAULT-OPERATIONS-PROFESSIONAL deep review](docs/research/2026-09-28-vault-operations-professional-deep-review.md): confirm the 1.16 baseline/rename; strengthen audit, health, seal, Sentinel and Agent guidance; add worked decisions and 20 answers; verify local ACL/audit behavior.
+
 - September 28, 2026: [VAULT-ASSOCIATE-003 deep review](docs/research/2026-09-28-vault-associate-003-deep-review.md): map 40 objectives, flag conflicting official Vault versions, clarify policy/KV/token/client controls and add five worked decisions plus 20 answers.
 
 - September 28, 2026: [TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review](docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md): map 27 objectives, restore the Terraform 1.6 boundary, clarify state/testing/governance and Azure availability, add 20 answers, and validate local module migration plus three native tests.

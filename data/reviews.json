@@ -1289,23 +1289,71 @@
       "notes": "Map 40 objectives; preserve the 1.19/1.16 version conflict, teach environment variables/policy priority/KV recovery, clarify token/seal/VSO boundaries and add 20 answers plus five decisions. See docs/research/2026-09-28-vault-associate-003-deep-review.md"
     },
     {
-      "id": "vault-operations-professional-2026-08-31-source-validation",
+      "id": "vault-operations-professional-2026-09-28-source-validation",
       "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
       "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-07",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/vault-operations-professional-official-objectives.txt",
       "blueprint_snapshot_sha256": "9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6",
       "objective_coverage": [
-        {"objective_group": "Create a working Vault server configuration given a scenario", "guide_sections": ["Domain 1", "Labs 1–2"]},
-        {"objective_group": "Monitor a Vault environment", "guide_sections": ["Domain 2", "Labs 3 and 8"]},
-        {"objective_group": "Employ the Vault security model", "guide_sections": ["Domain 3", "Labs 6–7"]},
-        {"objective_group": "Build fault-tolerant Vault environments", "guide_sections": ["Domain 4", "Labs 1, 4, and 5"]},
-        {"objective_group": "Understand the hardware security module integration", "guide_sections": ["Domain 5", "Lab 5"]},
-        {"objective_group": "Scale Vault for performance", "guide_sections": ["Domain 6", "Lab 5"]},
-        {"objective_group": "Configure access control", "guide_sections": ["Domain 7", "Lab 6"]},
-        {"objective_group": "Configure Vault Agent", "guide_sections": ["Domain 8", "Lab 7"]}
+        {
+          "objective_group": "Create a working Vault server configuration given a scenario",
+          "guide_sections": [
+            "Domain 1",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Monitor a Vault environment",
+          "guide_sections": [
+            "Domain 2",
+            "Labs 3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Employ the Vault security model",
+          "guide_sections": [
+            "Domain 3",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Build fault-tolerant Vault environments",
+          "guide_sections": [
+            "Domain 4",
+            "Labs 1, 4, and 5"
+          ]
+        },
+        {
+          "objective_group": "Understand the hardware security module integration",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Scale Vault for performance",
+          "guide_sections": [
+            "Domain 6",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Configure access control",
+          "guide_sections": [
+            "Domain 7",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Configure Vault Agent",
+          "guide_sections": [
+            "Domain 8",
+            "Lab 7"
+          ]
+        }
       ],
       "checks": {
         "official_objectives_mapped": true,
@@ -1315,12 +1363,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 22,
-        "reachable": 22,
-        "access_blocked": 0,
+        "unique_external_links": 32,
+        "reachable": 31,
+        "access_blocked": 1,
         "missing_or_error": 0
       },
-      "notes": "All eight unweighted domains and their Enterprise-aware subobjectives are mapped to server, monitoring, security, availability, HSM, performance, access, and Agent operations plus eight independent labs. The September 7 recheck confirmed the vendor rename to Vault Operations Advanced and the new canonical preparation URLs while all 130 compared objective lines remained unchanged. All 22 cited sources are first-party and reachable. Version, edition, HCP responsibility, seal, replication, metric, licensing, and exam-environment behavior are marked for current verification."
+      "notes": "Map 29 objectives; confirm 1.16 baseline and fall-2026 rename; clarify audit guarantees, health roles, seal dependencies, Sentinel and Agent wrapping; add 20 answers and five decisions; execute a bounded local ACL/audit check. See docs/research/2026-09-28-vault-operations-professional-deep-review.md"
     },
     {
       "id": "az-104-2026-09-28-source-validation",

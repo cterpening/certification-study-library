@@ -457,6 +457,8 @@ The review mapped all nine unweighted domains and their subobjectives to one ide
 
 ## VAULT-OPERATIONS-PROFESSIONAL coverage record
 
+The September 28 [deep review](research/2026-09-28-vault-operations-professional-deep-review.md) maps 29 detailed objectives. Map 29 objectives; confirm 1.16 baseline and fall-2026 rename; clarify audit guarantees, health roles, seal dependencies, Sentinel and Agent wrapping; add 20 answers and five decisions; execute a bounded local ACL/audit check. Current guide citations: 32 registered, 31 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Create a working Vault server configuration given a scenario | Domain 1 and Labs 1–2 |

@@ -3,6 +3,90 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "vault-audit-devices",
+      "title": "Vault audit devices",
+      "url": "https://developer.hashicorp.com/vault/docs/audit",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
+    },
+    {
+      "id": "vault-audit-best-practices",
+      "title": "Vault audit best practices",
+      "url": "https://developer.hashicorp.com/vault/docs/audit/best-practices",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
+    },
+    {
+      "id": "vault-health-api",
+      "title": "Vault health HTTP API",
+      "url": "https://developer.hashicorp.com/vault/api-docs/system/health",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
+    },
+    {
+      "id": "vault-integrated-storage-concepts",
+      "title": "Vault Integrated Storage concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/integrated-storage",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
+    },
+    {
+      "id": "vault-sentinel-policies",
+      "title": "Vault Sentinel policy evaluation",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/sentinel",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
+    },
+    {
+      "id": "hcp-vault-cluster-dr-preview-blog",
+      "title": "HCP Vault Dedicated cluster disaster recovery preview",
+      "url": "https://www.hashicorp.com/en/blog/hcp-vault-dedicated-introduces-cluster-disaster-recovery-public-preview",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
+    },
+    {
       "id": "hashicorp-vault-credential-page",
       "title": "Vault certification status and versions",
       "url": "https://developer.hashicorp.com/certifications/security-automation",
@@ -11,10 +95,11 @@
       "source_type": "credential-page",
       "access_model": "public",
       "supported_exams": [
-        "VAULT-ASSOCIATE-003"
+        "VAULT-ASSOCIATE-003",
+        "VAULT-OPERATIONS-PROFESSIONAL"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 VAULT-ASSOCIATE-003 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-associate-003-deep-review.md No live infrastructure execution."
+      "notes": "September 28 VAULT-ASSOCIATE-003 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-associate-003-deep-review.md No live infrastructure execution. September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
     },
     {
       "id": "vault-cli-reference",
@@ -67,10 +152,11 @@
       "source_type": "release-notes",
       "access_model": "public",
       "supported_exams": [
-        "VAULT-ASSOCIATE-003"
+        "VAULT-ASSOCIATE-003",
+        "VAULT-OPERATIONS-PROFESSIONAL"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 VAULT-ASSOCIATE-003 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-associate-003-deep-review.md No live infrastructure execution."
+      "notes": "September 28 VAULT-ASSOCIATE-003 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-associate-003-deep-review.md No live infrastructure execution. September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
     },
     {
       "id": "vault-agentic-iam-ga-blog",
@@ -21237,9 +21323,12 @@
       "authority_class": 1,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-06",
-      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-      "notes": "Canonical fall-2026 Professional-to-Advanced rename notice. Existing holders transition automatically; exam content and lab-based format are unchanged."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "notes": "Canonical fall-2026 Professional-to-Advanced rename notice. Existing holders transition automatically; exam content and lab-based format are unchanged. September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
     },
     {
       "id": "terraform-hcp-changelog",
@@ -21545,8 +21634,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["VAULT-ASSOCIATE-003"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "VAULT-ASSOCIATE-003",
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "notes": "September 28 VAULT-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-vault-operations-professional-deep-review.md Only the documented local dev-server ACL/audit subset executed; no production or Enterprise execution."
     },
     {
       "id": "vault-storage-configuration",

@@ -6,28 +6,30 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-07
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-07
+upcoming_change_checked: 2026-09-28
 ---
 
 # HashiCorp Certified: Vault Operations Advanced Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were rechecked on September 7, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-operations-professional-coverage-record). The [official Vault Operations Advanced content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 29 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-operations-professional-coverage-record). The [official Vault Operations Advanced content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) is authoritative.
 
-**Current baseline:** Vault Operations Advanced objectives; verified September 7, 2026<br>
-**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of September 7, 2026.<br>
+**Current baseline:** Vault Operations Advanced, 29 detailed objectives; the [credential page](https://developer.hashicorp.com/certifications/security-automation) specifies **Vault 1.16**; reviewed September 28, 2026<br>
+**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of September 28, 2026.<br>
 **Official source:** [Vault Operations Advanced exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review)
 
 HashiCorp does not display a short exam code for this credential. This library retains `VAULT-OPERATIONS-PROFESSIONAL` as a stable internal identifier so links, history, and automation do not break.
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — September 28, 2026
 
 **Confirmed rename:** HashiCorp's [certification catalog](https://developer.hashicorp.com/certifications), content list, orientation, and learning path now call the credential **Vault Operations Advanced**. The earlier `ops-pro-*` URLs redirect to new `ops-advanced-*` canonical pages.
 
 **Confirmed scope stability:** A fresh comparison found the same eight domains and all 130 captured objective/content lines; only the page title changed from Professional to Advanced. The [current content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) remains the authority, so this is a credential-name and URL migration—not evidence of a new exam version or changed weighting.
 
-**Concern to recheck:** HashiCorp has not published a short exam code or a dated rename notice on the pages checked. The library therefore preserves its old internal code and file path, documents the mapping, and will recheck for a future exam identifier or scope announcement.
+**Rename announcement located:** HashiCorp's [Advanced announcement](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update) covers both Vault and Terraform and gives **fall 2026**, with content and format unchanged. It does not supply an exact transition day or short Vault exam code. Preserve this library's stable identifier and the accepted objective snapshots.
+
+**Version boundary — VERIFY CURRENT:** Current Vault documentation and [release notes](https://developer.hashicorp.com/vault/docs/updates/release-notes) cover 2.x. Use the version selector when practicing against the stated 1.16 exam baseline. Newer product capabilities or the Associate guide's separate 1.19/1.16 source conflict do not establish a new Advanced baseline. See the [deep-review evidence](../docs/research/2026-09-28-vault-operations-professional-deep-review.md).
 
 ## How to use this guide
 
@@ -121,10 +123,9 @@ Operational validation includes:
 vault status
 vault secrets list -detailed
 vault auth list -detailed
-vault read sys/health
 ```
 
-Use nonroot test tokens for positive and negative path checks.
+Use nonroot test tokens for positive and negative path checks. Inspect `/v1/sys/health` as an HTTP response with both status and body; a CLI wrapper can present a legitimate standby status as an error. Interpret health using the role table below.
 
 ### Production hardening
 
@@ -141,6 +142,8 @@ High-value controls include:
 - timely, tested upgrades and backups;
 - no secrets in arguments, history, world-readable files, or routine logs.
 
+The hardening reference recommends disabling swap and core dumps. Check the storage backend and platform before setting `disable_mlock`: copying a memory-locking setting can create memory pressure or expose secrets through paging. Disabling Vault memory locking does not itself disable operating-system swap. Record the host-level controls and capacity assumptions together.
+
 ### Integrated Storage and HA
 
 Integrated Storage uses Raft consensus. Configure each node with a unique `node_id`, shared cluster intent, and correct addresses, then join peers through supported retry/join methods. Quorum determines write availability. The [Raft storage reference](https://developer.hashicorp.com/vault/docs/configuration/storage/raft) covers current configuration and operational details.
@@ -152,6 +155,8 @@ Keep three concepts separate:
 | Integrated Storage | Persist Vault data and coordinate a Raft cluster |
 | HA active/standby | One active node handles writes while standbys provide failover |
 | Snapshot | Point-in-time backup artifact for recovery |
+
+A voting majority is `floor(voters / 2) + 1`: three voters require two and tolerate one unavailable voter; five require three and tolerate two. Nonvoters can hold data without increasing voting quorum. Count actual voter roles, not just pods or VMs. The [Integrated Storage concepts](https://developer.hashicorp.com/vault/docs/concepts/integrated-storage) also require seal compatibility when joining: a node using auto unseal needs the cluster's configured seal provider/key. Join nodes one at a time and verify membership before proceeding.
 
 A healthy process is not proof of a healthy peer set. Check `vault operator raft list-peers`, health endpoints, leader state, and storage/log evidence.
 
@@ -172,7 +177,7 @@ The [`operator generate-root`](https://developer.hashicorp.com/vault/docs/comman
 
 ### Auto unseal
 
-Auto unseal delegates protection of the barrier key to a supported KMS/HSM/seal integration. It enables automatic restarts but creates an external service, network, credential, key, and policy dependency. Recovery keys support selected recovery operations; they do not manually unseal a cluster in the same way as Shamir shares.
+Auto unseal delegates protection of the barrier key to a supported KMS/HSM/seal integration. It enables automatic restarts but creates an external service, network, credential, key, and policy dependency. Recovery keys support selected recovery operations; they do not manually unseal a cluster in the same way as Shamir shares. The [seal reference](https://developer.hashicorp.com/vault/docs/concepts/seal) explains that permanent loss of the required seal key can prevent recovery even from backups. A snapshot plus recovery shares does not replace that key; include seal custody and availability in recovery tests.
 
 **VERIFY CURRENT:** supported seal mechanisms, migration procedures, multi-seal behavior, and edition requirements change. Test seal migration and provider outages in an isolated environment before production use.
 
@@ -205,16 +210,33 @@ Metric names and editions are **VERIFY CURRENT**. Alert on a failure hypothesis 
 
 ### Audit devices
 
-Vault audit devices record API requests and responses with sensitive values generally HMAC-protected rather than stored as plaintext. Enable at least one reliable device and usually more than one independent destination where the risk model requires it. Vault can refuse requests when it cannot write to any enabled audit device, making audit availability part of service availability.
+The [audit reference](https://developer.hashicorp.com/vault/docs/audit) guarantees delivery to **at least one** enabled audit device. If every enabled destination fails, Vault refuses the corresponding request. Success does not prove delivery to every destination. Audit is initially disabled and must be configured during bootstrap; some system endpoints, including health, are exempt.
 
-Protect audit logs: HMACs still reveal stable equality relationships and metadata can be sensitive. Restrict access, monitor ingestion, time synchronization, rotation, retention, and tamper evidence.
+The [best-practice guidance](https://developer.hashicorp.com/vault/docs/audit/best-practices) recommends at least two devices with independent failure modes, such as a protected file destination and a remote destination. Monitor delivery errors and disk capacity, and validate permissions on every node that inherits configuration. Combine records across destinations for investigations; deduplicate copies while retaining the separate request and response event types and their shared request ID.
+
+Most string values are HMAC-protected by default; this is not blanket encryption of every field. Non-string values and metadata can disclose information. Hash equality is scoped to the device's hashing key. Disabling a device removes the ability to calculate its old hashes through Vault; enabling the same path creates a new key. Plan evidence preservation before changing audit configuration.
+
+### Interpret health by role
+
+The [health API](https://developer.hashicorp.com/vault/api-docs/system/health) reports more than process liveness. With default status mappings:
+
+| HTTP status | Meaning | Operator decision |
+|---|---|---|
+| 200 | Initialized, unsealed active node | Confirm it can serve the required workload |
+| 429 | Unsealed standby | Expected role; examine forwarding/routing instead of assuming overload |
+| 472 | DR secondary | Normal recovery role; do not send ordinary workload traffic |
+| 473 | Performance standby | Accept only for the intended read/forwarding design |
+| 501 | Not initialized | Verify target and storage before any initialization action |
+| 503 | Sealed | Diagnose seal mechanism and custody requirements |
+
+`standbyok`, `perfstandbyok` and status overrides alter these responses. Document the exact probe parameters and routing intent. **Related item — VERIFY CURRENT:** current docs also describe 474 for lost active-node connectivity and 530 for a removed node; verify availability in the running version. Never infer that every non-200 means the same failure or normalize sealed nodes to healthy responses.
 
 ### Diagnostic sequence
 
 1. Establish incident time, affected clients, and expected operation.
 2. Check process and health endpoint.
 3. Check seal, leader, peer, replication, and storage state.
-4. Correlate request ID across client error, audit record, and operational log.
+4. Match audit request/response IDs, then correlate client and operational evidence using any available IDs, path, node and time. Not every client error or operational line contains a request ID.
 5. Classify authentication, authorization, path, lease, storage, network, TLS, or capacity failure.
 6. Reproduce with the narrowest nonroot request.
 7. Capture evidence before restarting or changing log levels.
@@ -296,9 +318,11 @@ Vault Enterprise can integrate with an HSM for seal/key operations. The [HSM doc
 | Capability | Purpose |
 |---|---|
 | HSM auto unseal | Protect barrier-unseal key material and automate unseal using HSM/PKCS#11 integration |
-| Seal wrap | Add an HSM-backed encryption layer around supported sensitive values before storage |
+| Seal wrap | Add encryption through a supported seal around selected sensitive stored values; objective 5b specifically concerns PKCS#11 |
 
 Design HSM availability, partition/token credentials, slot/key labels, quorum/administration, backup, replacement, latency, and disaster recovery. A highly available Vault cluster can still be unable to restart if every node depends on an unavailable HSM path.
+
+Seal wrap can require the external seal during normal runtime as well as restart. Current documentation also describes KMS-backed seals and independent seal keys across replicated clusters; HSM is not the only implementation. This broader product context does not remove the objective's PKCS#11 focus. Verify entitlement and supported seal/version before designing it.
 
 > **Related item:** FIPS validation, HSM certification, seal wrap, and end-to-end system compliance are different claims. Confirm the exact module, configuration, operational procedure, and compliance boundary.
 
@@ -306,7 +330,7 @@ Design HSM availability, partition/token credentials, slot/key labels, quorum/ad
 
 ### Batch tokens
 
-Batch tokens reduce storage overhead for high-volume, short-lived use but have feature limitations. They cannot be renewed and do not behave like persisted service tokens. Choose them only when client reauthentication and the required engine/features fit their lifecycle.
+Batch tokens reduce storage overhead for high-volume, short-lived use but have feature limitations. They cannot be renewed and do not behave like persisted service tokens. Choose them only when client reauthentication and the required engine/features fit their lifecycle. Do not choose a nonrenewable batch token for a client that depends on extending the same session; design reacquisition and lease handling first.
 
 ### Performance standbys
 
@@ -332,7 +356,7 @@ Ask:
 
 Entities and groups connect external-auth aliases to a logical identity. ACL policies grant capabilities on API paths. Troubleshooting requires inspecting the auth mount accessor, alias, canonical entity, direct and inherited group membership, attached policies, namespace, token metadata, and exact request path.
 
-Write policy from required API calls and test with `vault token capabilities`. `sudo` authorizes selected root-protected operations; it is not equivalent to a root token.
+Write policy from required API calls and test with `vault token capabilities` plus actual allowed and denied requests. Capability inspection alone does not prove that a later Sentinel rule or control group permits completion. `sudo` authorizes selected root-protected operations; it is not equivalent to a root token.
 
 ### Namespaces
 
@@ -351,6 +375,8 @@ Sentinel policies add policy-as-code checks beyond ACL path capabilities. Contro
 | Control group | Have required approvers authorized this specific request? |
 | Namespace | In which delegated administrative scope does evaluation occur? |
 
+The [Sentinel reference](https://developer.hashicorp.com/vault/docs/enterprise/sentinel) distinguishes **RGPs**, attached to tokens/entities/groups, from **EGPs**, attached to endpoints, including supported unauthenticated routes. For an authenticated request, ACL authorization precedes applicable RGPs and EGPs; every required layer must pass. Advisory failures report without enforcing; soft-mandatory policies permit an override; hard-mandatory failures block. Override requests are audit-visible. Root tokens bypass Sentinel, so validate controls with ordinary identities.
+
 Plan failure behavior and emergency access. An approval control without available approvers or a break-glass procedure can become an outage mechanism.
 
 ## 8. Configure Vault Agent
@@ -360,6 +386,8 @@ Vault Agent can authenticate, renew/manage tokens, proxy/cache requests, and ren
 ### Auto-auth and sinks
 
 An auto-auth configuration has a method and one or more sinks. The method obtains a token using workload identity; a sink writes or delivers it. Secure the method credential, sink destination, file permissions, wrapping behavior, and process users.
+
+Response wrapping has two distinct placements. With **method-level wrapping**, Agent cannot renew the hidden token; the receiving client takes lifecycle responsibility. With **sink-level wrapping**, Agent keeps the token and can renew or reauthenticate, but the wrapping creation path is `sys/wrapping/wrap`, not the original auth endpoint. Choose the trust and renewal model explicitly; a wrapped sink alone does not prove origin or successful application delivery.
 
 ### Templates
 
@@ -399,9 +427,25 @@ Use this record for every design or incident:
 | Evidence | Which telemetry, audit record, operational log, snapshot, and change record prove behavior? |
 | Recovery | Who can rekey, generate root, promote DR, restore, reroute, and declare completion? |
 
+## Worked operational decisions and useful reading
+
+These original cases are documentation-based reasoning, not measurements of a production or Enterprise cluster.
+
+1. **Count quorum before maintenance:** Five nodes are three voters and two nonvoters. Taking one voter down leaves the required two; losing another voter loses quorum even though three processes remain. Verify voter membership, storage and network reachability before a rolling operation.
+2. **Investigate partial audit delivery:** A request succeeds while a remote audit sink is down. A file sink may have satisfied the delivery guarantee. Repair and alert on the failed path, collect both destinations and retain request/response pairs. Absence from one sink does not prove the API call never happened.
+3. **Recover the correct dependency:** A restarted node is sealed after losing KMS access. First distinguish unavailable credentials/network from permanent key deletion. Recovery shares cannot decrypt the required seal-protected material. Check the independent recovery cluster's own seal and replicated scope before considering a promotion.
+4. **Diagnose a denied request despite read capability:** Confirm namespace and exact endpoint, then inspect applicable Sentinel rules and control-group status. Adding broader ACL rights or testing with root can conceal the actual enforcement layer.
+5. **Fix a broken Agent lifecycle:** A receiver unwraps a token issued with method-level wrapping and later expires. Agent renewal is not promised in that mode. Either implement the receiver's renewal/reauthentication workflow or choose a supported sink-level design and reassess origin validation. Verify application consumption after every rotation.
+
+**Related item — VERIFY CURRENT:** The June 24, 2026 [HCP Vault Dedicated cluster DR article](https://www.hashicorp.com/en/blog/hcp-vault-dedicated-introduces-cluster-disaster-recovery-public-preview), by Isabela Palanca Aureus, Ishita Chauhan and Dante Okoh, announces a **support-enabled public preview**. Its managed-service workflow is useful context for Domain 4, not evidence that the 1.16 exam changed or that an operator can use a self-service promotion procedure in HCP.
+
+Spend 20–30 minutes comparing who detects an incident, authorizes promotion, changes client routing and validates failback in self-managed Vault versus a managed service. Check current preview eligibility and support terms before planning a drill. The article's operational window is not an independently established RTO or contractual guarantee; no HCP failover was requested here.
+
 ## Hands-on labs
 
 Use disposable personal environments and trial licensing only under HashiCorp's terms. Never practice destructive operations on an employer, customer, shared, or production Vault cluster without authorization.
+
+**Execution boundary:** This review exercised a narrow local portion of Lab 3 on Vault 1.16.3. All other labs, and production/Enterprise portions of Lab 3, remain proposed. A dev server does not validate TLS, durable storage, HA or production recovery.
 
 ### Lab 1: Build a three-node Raft cluster
 
@@ -414,6 +458,8 @@ Initialize a disposable cluster, enable audit, create operator policies and auth
 ### Lab 3: Monitor one failed request end to end
 
 Create a token missing one capability. Make the denied request and correlate client error, audit record, operational log, and relevant telemetry by time/request ID. Add the narrow capability, repeat, and document why the change is least privilege.
+
+**Local check completed September 28:** On a checksum-verified Vault 1.16.3 dev server bound only to loopback, a nonroot token received 403 before policy repair, read the synthetic key after a narrow read grant, remained denied on an unrelated path, and lost access after revocation. Request/response audit pairs were correlated and the stored string was HMAC-protected. The synthetic key and policy were deleted and the server stopped. This checked ACL and audit behavior; it did not produce production telemetry or validate any cluster/Enterprise feature.
 
 ### Lab 4: Snapshot and isolated restore
 
@@ -429,7 +475,7 @@ Create a multi-tenant design for platform, payments, and analytics teams. Define
 
 ### Lab 7: Vault Agent delivery
 
-On a disposable client host, configure auto-auth with a short-lived workload credential, a wrapped/protected file sink, and a template. Verify file permissions, renewal, re-render, application reload, denied-path behavior, Vault outage behavior, and cleanup.
+On a disposable client host, configure auto-auth with a short-lived workload credential, a protected file sink, and a template. If wrapping the sink, distinguish sink-level from method-level wrapping and identify the renewal owner. Verify file permissions, renewal, re-render, application reload, denied-path behavior, Vault outage behavior, and cleanup.
 
 ### Lab 8: Timed incident drill
 
@@ -437,26 +483,26 @@ Introduce one failure—bad TLS name, sealed node, lost leader, wrong namespace,
 
 ## Knowledge checks
 
-1. Which server addresses are client-facing and cluster-facing, and why must they be correct?
-2. Why does enabling a secrets engine not prove it is production-ready?
-3. How do Integrated Storage, HA, and snapshots solve different problems?
-4. Contrast unseal, rekey, barrier-key rotation, and root-token generation.
-5. What external dependency does auto unseal introduce?
-6. Why can audit-device health affect Vault availability?
-7. Which question belongs to telemetry, audit logs, and operational logs respectively?
-8. How do you correlate a denied client request across evidence sources?
-9. What is the secure-introduction problem?
-10. Which Kubernetes actors can expose Vault-delivered secrets?
-11. Why is HA not disaster recovery?
-12. What must be verified after DR promotion beyond “the cluster is unsealed”?
-13. How do HSM auto unseal and seal wrap differ?
-14. Why can an HSM outage prevent restart of an otherwise healthy cluster?
-15. When do batch-token limitations outweigh their scale advantage?
-16. What traffic can performance standbys serve locally?
-17. How can a replication path filter break an application unexpectedly?
-18. Contrast ACL policies, Sentinel, control groups, and namespaces.
-19. Why is a namespace not a separate failure domain?
-20. What proves a Vault Agent rotation completed end to end?
+1. Which server addresses are client-facing and cluster-facing, and why must they be correct? **Answer:** `api_addr` supports client access/redirects; `cluster_addr` supports node communication. Wrong advertised names, trust or reachability can break forwarding and membership despite a running process.
+2. Why does enabling a secrets engine not prove it is production-ready? **Answer:** Its external backend, roles, TTLs, policies, rotation/revocation and monitoring still need configuration and verification.
+3. How do Integrated Storage, HA, and snapshots solve different problems? **Answer:** Raft persists and coordinates data; HA handles active-node failover within the cluster; snapshots support recovery to a saved point. Each still depends on usable seals and tested procedures.
+4. Contrast unseal, rekey, barrier-key rotation, and root-token generation. **Answer:** Unseal opens the existing barrier; rekey changes shares/threshold; rotate changes the barrier encryption key for new writes; generate-root creates temporary emergency authority.
+5. What external dependency does auto unseal introduce? **Answer:** The external seal service/key, access credentials, policy and network. Recovery shares cannot replace permanently lost seal key material.
+6. Why can audit-device health affect Vault availability? **Answer:** Vault requires at least one successful audit destination when devices are enabled. Failure of every enabled destination blocks the corresponding operation.
+7. Which question belongs to telemetry, audit logs, and operational logs respectively? **Answer:** Telemetry: is latency rising? Audit: which identity requested this operation? Operational logs: what did the server, plugin or storage subsystem report?
+8. How do you correlate a denied client request across evidence sources? **Answer:** Match audit request/response IDs and then time, node, path and available client/log identifiers; absence from one destination or log is not proof of no request.
+9. What is the secure-introduction problem? **Answer:** Establish a workload identity and deliver bounded initial access without embedding an unrestricted long-lived token; then plan renewal, reauthentication and theft response.
+10. Which Kubernetes actors can expose Vault-delivered secrets? **Answer:** Cluster/namespace administrators, node-root users and identities that can inspect pods, volumes or Kubernetes Secrets, depending on the delivery architecture.
+11. Why is HA not disaster recovery? **Answer:** Nodes in one cluster can share storage, seal, region and administrative failure causes; a separate promotable replica and backups address additional failures.
+12. What must be verified after DR promotion beyond “the cluster is unsealed”? **Answer:** Correct primary role, acceptable replication state, routing/TLS, seal access, auth/policy/engine behavior, client operations, audit delivery and a failback plan.
+13. How do HSM auto unseal and seal wrap differ? **Answer:** HSM auto unseal protects unlock material; seal wrap adds encryption around selected stored values and can depend on the external seal during normal runtime.
+14. Why can an HSM outage prevent restart of an otherwise healthy cluster? **Answer:** A restart may need the external HSM key to open the barrier; healthy storage and recovery shares do not substitute for access to that key.
+15. When do batch-token limitations outweigh their scale advantage? **Answer:** When a workload needs renewable sessions or other service-token lifecycle features; assess reauthentication and secret-lease behavior first.
+16. What traffic can performance standbys serve locally? **Answer:** Eligible read traffic; operations that require writes or active-node processing still need forwarding. Endpoint semantics matter more than an HTTP GET label.
+17. How can a replication path filter break an application unexpectedly? **Answer:** An application may need data, an engine configuration or related key excluded by the filter, or expect replicated content that is actually cluster-local.
+18. Contrast ACL policies, Sentinel, control groups, and namespaces. **Answer:** ACLs grant path capabilities; Sentinel evaluates additional context; control groups require approvals; namespaces define the administrative/API scope.
+19. Why is a namespace not a separate failure domain? **Answer:** Namespaces share the underlying deployment, storage, resources and seal dependencies; logical tenancy does not create physical resilience.
+20. What proves a Vault Agent rotation completed end to end? **Answer:** Successful acquisition/renewal, protected rendering, application reload, downstream use of the new credential and controlled retirement of the old one.
 
 ## High-value distinctions
 
@@ -510,11 +556,11 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [HashiCorp Vault Operations Advanced learning path](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-study) | Free reading; full Enterprise exercises may require an authorized trial or licensed environment | About 30–50 hours for linked reading and hands-on repetition (library estimate; the page's seven-minute read time excludes linked work) | Authoritative scenario preparation across Raft, auth/engines, replication, Agent, and access control |
+| [HashiCorp Vault Operations Advanced learning path](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-study) | Free reading; full Enterprise exercises may require an authorized trial or licensed environment | About 30–50 hours for linked reading and hands-on repetition (library estimate; the page's seven-minute read time excludes linked work) | Authoritative scenario preparation across Raft, auth/engines, replication, Agent, and access control; pair with the credential page's stated 1.16 baseline |
 | [Advanced exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) | Free | About 3–6 hours for an active documentation pass | Exact objective-to-documentation checklist; use it to select labs rather than passively rereading every link |
 | [Advanced exam orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-overview) | Free | About 30–60 minutes including environment and prerequisite notes | First-party description of lab, hybrid, and multiple-choice tasks, Enterprise binary, trial option, and available documentation |
 | [Vault Associate (003) guide](VAULT-ASSOCIATE-003-hashicorp-vault-associate.md) | Free | About 8–14 hours for targeted prerequisite repair | Review auth, policy, token, lease, engine, seal, storage, replication, and Agent fundamentals before operating scenarios |
 | [HashiCorp Vault operations tutorials](https://developer.hashicorp.com/vault/tutorials) | Free; cloud, Kubernetes, HCP, and Enterprise labs can require accounts or licensing | About 2–6 hours per selected objective gap | Build focused practice for Raft, monitoring, DR/performance replication, HSM, namespaces, policies, and Agent |
-| [Vault documentation and API reference](https://developer.hashicorp.com/vault/docs) | Free | About 8–16 hours for an objective-mapped reference pass, plus repeated lookup practice | Primary behavior reference and the style of material available during the exam; use current docs and mark version/edition changes |
+| [Vault documentation and API reference](https://developer.hashicorp.com/vault/docs) | Free | About 8–16 hours for an objective-mapped reference pass, plus repeated lookup practice | Primary behavior reference and the style of material available during the exam; select 1.16 when preparing for the stated baseline and mark newer version/edition behavior |
 
 No exact current third-party Vault Operations Advanced course or commercial practice lab was included without a verifiable public objective mapping and runtime. That is an open catalog gap. A general Vault course can repair product gaps but should not be represented as performance-exam preparation unless it includes repeated cluster operations and failure recovery.
