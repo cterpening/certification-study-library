@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-clfc02-deep-review",
+      "title": "CLF-C02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CLF-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "CLF-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+          "baseline_sha256": "2eead6df1bb37793aad644658c66e7864c16fbdbe7d8fd10dd7793f8cb453113",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read all 135 knowledge/skill bullets, root/in-scope pages and delivery notice. German/Italian retirement after December 31 unchanged; no broad outline delta."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed current support, legacy-plan retirement, Free Tier eligibility and new signup limitations; qualify migration discovery availability and application-streaming names."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read September 16 simplified-signup announcement against current limited-rollout documentation; distinguish project limits from budget alerts."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Pluralsight 18 hours/five courses/six labs confirmed; current Cloud Quest page confirms free Cloud Practitioner route. Blocked/shell/media sources qualified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Add missing task 3.8 categories, current support plan distinctions, 30 answers and four original worked examples; retain foundational depth."
+            }
+          },
+          "findings": [
+            {
+              "id": "clfc02-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Support plan examples require current names",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLF-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Detailed objectives name Basic, Business Support+, Enterprise Support and Unified Operations.",
+              "recommendation": "Add current plan comparison and distinguish response from resolution.",
+              "disposition": "applied",
+              "source_id": "aws-clf-c02-domain-4",
+              "resolution": "Add current plan comparison and distinguish response from resolution."
+            },
+            {
+              "id": "clfc02-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Older support-plan charts need a retirement boundary",
+              "url": "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLF-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "January 1, 2027 retirement for Developer, Business and Enterprise On-Ramp; GovCloud exception.",
+              "recommendation": "Add dated notice and exception.",
+              "disposition": "applied",
+              "source_id": "aws-support-retirements",
+              "resolution": "Add dated notice and exception."
+            },
+            {
+              "id": "clfc02-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New project spending control differs from a budget alert",
+              "url": "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLF-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Limited signup rollout supports optional paid-project pre-tax spend limits.",
+              "recommendation": "Add scoped explanation and article context without assuming existing-account availability.",
+              "disposition": "applied",
+              "source_id": "aws-new-account-experience",
+              "resolution": "Add scoped explanation and article context without assuming existing-account availability."
+            },
+            {
+              "id": "clfc02-deep-4",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Other service categories need explanatory coverage",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLF-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Task 3.8 includes developer tools, end-user computing, frontend and IoT beyond current table.",
+              "recommendation": "Add category contrasts and current application-streaming terminology.",
+              "disposition": "applied",
+              "source_id": "aws-clf-c02-domain-3",
+              "resolution": "Add category contrasts and current application-streaming terminology."
+            },
+            {
+              "id": "clfc02-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Discovery tools closed to new customers",
+              "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLF-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Discovery Service and Migration Hub access restricted since November 7, 2025.",
+              "recommendation": "Retain exam concepts and point new projects toward evaluated supported tooling.",
+              "disposition": "applied",
+              "source_id": "aws-discovery-availability",
+              "resolution": "Retain exam concepts and point new projects toward evaluated supported tooling."
+            }
+          ],
+          "notes": "Review 135 knowledge/skill bullets, add 30 answer explanations and four worked foundational decisions, fill task 3.8 categories, update current/retiring support plans, and distinguish new project spend limits from AWS Budgets alerts. Same-context AI review; human review pending. See docs/research/2026-09-28-clf-c02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ansc01-deep-review",
       "title": "ANS-C01 complete guide and learning-content review",
       "rubric_version": 1,

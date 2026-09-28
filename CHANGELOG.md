@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [CLF-C02 deep review](docs/research/2026-09-28-clf-c02-deep-review.md): map 135 detailed bullets, add 30 answers and four worked examples, update support-plan retirement and new signup/cost boundaries, and fill service-category gaps.
+
 - September 28, 2026: [ANS-C01 deep review](docs/research/2026-09-28-ans-c01-deep-review.md): correct the passing score, map 177 detailed bullets, add four packet-path exercises, improve routing/multicast/controller coverage and flag App Mesh support end; retain vendor conflicts.
 
 - September 28, 2026: [SAP-C02 deep review](docs/research/2026-09-28-sap-c02-deep-review.md): map 187 knowledge/skill bullets, add four worked cases, qualify migration/platform availability and recovery articles, and preserve unresolved vendor dates.

@@ -988,6 +988,8 @@ The review captures the initial September 1, 2026 four-domain beta blueprint and
 
 ## CLF-C02 coverage record
 
+The September 28 [deep review](research/2026-09-28-clf-c02-deep-review.md) maps 135 detailed objectives. Review 135 knowledge/skill bullets, add 30 answer explanations and four worked foundational decisions, fill task 3.8 categories, update current/retiring support plans, and distinguish new project spend limits from AWS Budgets alerts. Current guide citations: 37 registered, 33 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Cloud Concepts | Section 1, all integrated scenarios, and Labs 2–3 and 7 |

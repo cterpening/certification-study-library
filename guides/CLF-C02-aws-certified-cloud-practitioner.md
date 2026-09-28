@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-28
 ---
 
 # CLF-C02 AWS Certified Cloud Practitioner Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#clf-c02-coverage-record). The [official CLF-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 135 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#clf-c02-coverage-record). The [official CLF-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html) is authoritative.
 
 **Current baseline:** CLF-C02, four domains and 50 scored plus 15 unscored questions<br>
-**Upcoming delivery change:** AWS says the Italian and German language versions retire after December 31, 2026. This is a language-specific delivery change; the CLF-C02 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
+**Upcoming delivery change:** AWS says the Italian and German language versions retire after December 31, 2026. This is a language-specific delivery change; the CLF-C02 blueprint remains the current study baseline. Rechecked September 28, 2026; no additional exam retirement notice was found in the reviewed official sources. See the [deep-review report](../docs/research/2026-09-28-clf-c02-deep-review.md).<br>
 **Official source:** [AWS Certified Cloud Practitioner exam guide](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html)
 
 ## How to use this guide
@@ -85,11 +85,12 @@ The [AWS Cloud Adoption Framework](https://docs.aws.amazon.com/whitepapers/lates
 | Rehost | Move largely as-is | Speed matters and redesign can wait | Old inefficiency and operational assumptions move too |
 | Replatform | Make bounded platform improvements | A managed database or runtime reduces operations without rewriting the application | Compatibility, performance, and rollback |
 | Refactor | Redesign application components | Elasticity, resilience, or delivery speed justifies deeper change | Scope, data consistency, and organizational readiness |
+| Relocate | Move an existing platform environment with limited application changes | Platform compatibility and timing support the move | Dependencies, licenses and target-platform support |
 | Repurchase | Replace with a commercial/SaaS product | A product meets the requirement better than maintaining custom software | Data migration, integration, and exit terms |
 | Retain | Keep in the current environment for now | Latency, regulation, dependency, or timing blocks migration | Permanent deferral without an owner or review date |
 | Retire | Decommission what no longer provides value | Usage and dependency evidence supports removal | Hidden consumers and retention obligations |
 
-Migration Evaluator can help build a cost case; Application Discovery Service and Migration Hub support discovery/tracking; Application Migration Service supports server migration; DMS and Schema Conversion Tool support database moves. The foundational decision is still workload-specific.
+Migration Evaluator can help build a cost case. The outline still names [Application Discovery Service](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html) and [Migration Hub](https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html), but both closed to new customers on November 7, 2025; AWS directs new projects toward AWS Transform. Retain discovery/tracking concepts while checking tool eligibility; Application Migration Service supports server migration; DMS and Schema Conversion Tool support database moves. The foundational decision is still workload-specific.
 
 ### Cloud economics: cost follows configuration and consumption
 
@@ -188,6 +189,8 @@ The largest domain is the official [Cloud Technology and Services domain](https:
 | CloudFormation or other IaC | Repeatable, reviewable infrastructure | Templates need versioning, testing, and drift awareness |
 | Managed service console/API | Product-specific operations | Service configuration still needs least privilege and monitoring |
 
+A cloud deployment runs on a cloud platform; an on-premises deployment uses infrastructure in the organization's facilities; a hybrid deployment deliberately connects those environments. These placement choices do not by themselves define who patches an application or prove compliance.
+
 Prefer repeatable processes for environments that must be rebuilt, reviewed, or promoted. A one-time console action may fit exploration, but it is weak recovery evidence unless documented or automated.
 
 ### Global infrastructure
@@ -275,6 +278,18 @@ A VPC is a logically isolated network boundary in one Region. Subnets are Availa
 | Email sending | Amazon SES | Application email service |
 | Contact center | Amazon Connect | Managed customer-contact capabilities |
 
+Additional category coverage from task 3.8:
+
+| Need | Service/category distinction |
+|---|---|
+| Compile/test code and coordinate release stages | CodeBuild performs build work; CodePipeline coordinates a delivery workflow |
+| Follow a request across components | X-Ray supports distributed tracing; a trace is different from an API audit record |
+| Deliver a remote desktop, application or browser | WorkSpaces for desktops; AppStream 2.0 (the exam name) for application streaming; WorkSpaces Secure Browser for managed browser access |
+| Build and host web/mobile frontends | Amplify; distinguish frontend delivery from a virtual desktop |
+| Connect and exchange messages with devices | IoT Core; distinguish device connectivity from ordinary user email |
+
+The [application-streaming documentation](https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html) now uses **WorkSpaces Applications** at the AppStream documentation path. Recognize both labels when moving between the blueprint and current documentation. A naming change does not make the service a general desktop replacement.
+
 The name is less important than the interaction: queue versus topic, event routing versus workflow, dashboard versus query, and model platform versus conversational service.
 
 ---
@@ -312,9 +327,26 @@ A budget normally alerts; it does not automatically stop services. Consolidated 
 
 Data transfer must be evaluated by direction and location. Incoming transfer is often treated differently from outbound, inter-Region, or Availability Zone transfer. Do not generalize a single “data transfer is free” rule.
 
+### Free offers, alerts and project limits
+
+The [Free Tier FAQ](https://aws.amazon.com/free/free-tier-faqs/) distinguishes a free account plan, credits and usage-limited offers. Eligible new customers receive $100 initially and may earn up to $100 more. The free plan ends after six months or credit exhaustion, whichever comes first; credit expiry is a separate twelve-month boundary. Existing/previous customers, services, Regions and account changes affect eligibility. Check the actual account terms and remaining balance before a lab; “free” is not unlimited usage. Keep a copy of needed learning artifacts before account expiry.
+
+[Micah Walter's September 16 introduction](https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/) is useful context for learners whose console differs from an older tutorial. The [new sign-up documentation](https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html) describes a limited rollout with projects, managed sharing and optional monthly **pre-tax** spend limits on paid projects. The article says reaching a project limit pauses the project; this is separate from AWS Budgets alerting. Do not assume an existing account has this capability. Verify the sign-up route, supported services, payment requirements and effect of activating advanced features before following a tutorial. Simplified administration does not remove responsibility for data, access or application behavior.
+
 ### Support and trusted resources
 
 AWS provides documentation, whitepapers, Prescriptive Guidance, Knowledge Center articles, re:Post, Support Center cases under eligible plans, Health information, and account teams/solutions architects or Professional Services in appropriate engagements. Compare current entitlements on the [AWS Support plans page](https://aws.amazon.com/premiumsupport/plans/).
+
+The [current Support documentation](https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html) and detailed CLF-C02 objectives name these options:
+
+| Option | Foundational distinction |
+|---|---|
+| Basic | Account/billing assistance and self-service resources; not the same as paid workload technical support |
+| Business Support+ | Production technical support with around-the-clock engineer access and contextual assistance |
+| Enterprise Support | Adds designated technical account management and broader proactive guidance |
+| Unified Operations | Adds application-specific operational expertise and deeper proactive engagement for critical workloads |
+
+The [legacy-plan retirement notice](https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html) ends Developer Support, Business Support and Enterprise On-Ramp on January 1, 2027, with an explicit AWS GovCloud (US) exception. Enterprise On-Ramp customers transition during 2026. Check live pricing, severity and entitlement; initial-response targets do not promise resolution within that time. Older plan-comparison charts need a gap check.
 
 - AWS Health describes service/account events relevant to operations.
 - Trusted Advisor provides checks and recommendations; feature availability depends on current plan and service.
@@ -367,9 +399,18 @@ Failure clue: Rehosting without right-sizing or operational redesign can reprodu
 
 ---
 
+## Worked foundational decisions
+
+These original examples use hypothetical amounts; arithmetic was checked locally, without AWS charges or deployments.
+
+1. **Schedule unused compute:** Ten resources at an assumed $0.10/hour cost $720 over a 30-day month when always on. Running each for eight hours on 22 workdays costs $176, saving $544 in that compute component. Storage, addresses, backups and other retained resources can still cost money. Scheduling must fit the workload's actual availability needs.
+2. **Cost per useful transaction:** A bill grows from $2,000 for 100,000 successful transactions to $3,000 for 200,000. Total spend rises 50%, but unit cost falls from $0.02 to $0.015, a 25% improvement. Check error/rework rates and customer outcomes before declaring success.
+3. **Two AZs need enough remaining capacity:** Two zones each sustain 60 requests/second while normal demand is 100. Combined capacity is 120, but losing one leaves a 40-request/second shortfall. Placement reduces a failure dependency; it does not supply missing capacity or prove automatic recovery.
+4. **An alert is a decision point:** A hypothetical paid-account workload consumes $10/day and an $80 budget threshold is reached on day eight. An alert alone leaves resources running; another seven days adds $70. Identify the owner and action. A supported project's separate spend limit has its own pause behavior, availability implications and scope; do not substitute that assumption for an ordinary budget.
+
 ## 6. Hands-on labs
 
-Use a sandbox or an account approved for learning. Configure a budget before creating resources, avoid production data, and delete chargeable resources when finished. AWS interfaces, prices, and free offers change; verify them at the time of each lab.
+These eight labs are proposed and were not executed in AWS during this review. Use a sandbox or an account approved for learning; diagram and document exercises are valid low-cost starting points. Configure a budget before creating resources, avoid production data, and delete chargeable resources when finished. AWS interfaces, prices, and free offers change; verify them at the time of each lab.
 
 ### Lab 1: Secure the learning account and cost boundary
 
@@ -438,6 +479,39 @@ For an AWS disruption, vulnerable package, suspicious API call, high bill, and a
 29. What must be rechecked before relying on a service in a named Region?
 30. Why perform labs when implementation is outside the exam scope?
 
+### Answer explanations
+
+1. The customer patches the EC2 guest OS. Lambda abstracts host/OS operation, while the customer still owns code, dependencies, configuration and data.
+2. Both instances share the AZ failure boundary; use independent zones and enough surviving capacity where required.
+3. Geographic recovery, residency or distant-user latency requirements can justify the extra consistency, operating and cost complexity.
+4. Elasticity changes capacity with demand; high availability addresses failures. A scaling system can still have a single point of failure.
+5. Reliability can improve while cost, sustainability and operational complexity change. Validate the business recovery requirement.
+6. A managed platform can transfer maintenance work to AWS; rehosting largely preserves the original operating tasks.
+7. Use a workload role with temporary credentials and least privilege. Private source control is not a secure credential store.
+8. An SCP sets a permission ceiling. A grant is still required, and explicit denies or other applicable controls can prevent access.
+9. CloudTrail records supported API activity, CloudWatch collects operational telemetry, and Config tracks resource configuration/compliance rules.
+10. It describes AWS controls; customer configuration and operational evidence remain necessary for the workload.
+11. Shield addresses DDoS protection; WAF filters supported web requests. Neither alone implements application authorization.
+12. Secrets Manager stores/rotates the password; KMS controls cryptographic keys and operations. They can work together.
+13. AWS operates more of the database platform, but customers still govern users, network access, data, configuration and recovery choices.
+14. Use EC2 for OS control, Lambda for event-driven functions, ECS/EKS for container orchestration, and Fargate for supported managed container capacity.
+15. S3 is object storage; EBS is persistent block storage; instance store is host-local temporary storage; EFS is shared NFS; FSx provides specialized managed file systems.
+16. A lifecycle rule moves or expires objects and can delete data. Recovery requires suitable versions/backups, access protection and tested restoration.
+17. Relational transactions fit RDS/Aurora; key-value/document access fits DynamoDB; caching fits ElastiCache; warehousing fits Redshift; graph traversal fits Neptune.
+18. Security groups are stateful allow controls; NACLs are ordered stateless subnet allow/deny controls and require return-path rules.
+19. CloudFront caches/delivers content, Global Accelerator optimizes supported network paths, and Route 53 answers DNS queries.
+20. SQS buffers work, SNS fans out notifications, EventBridge routes events, and Step Functions coordinates workflow state.
+21. Athena queries, Glue catalogs/transforms, Kinesis handles streaming, and QuickSight provides BI visualization.
+22. A checkpointed job can resume after interruption; an unprotected singleton database risks disruption/data loss. Design interruption handling first.
+23. Savings Plans discount eligible committed spend; Reserved Instances have service-specific term/attribute rules; Capacity Reservations address capacity, not an automatic discount.
+24. Billing is consolidated while accounts retain identity/resource boundaries. Eligible benefits can be shared under current rules.
+25. Pricing Calculator estimates a proposed configuration; Cost Explorer analyzes recorded usage/cost and forecasts.
+26. The alert is a notification. An explicit supported action or separately configured control is needed to change resources.
+27. Tags need consistent values, activation for billing where required, coverage and an accountable owner; a tag name alone is not useful allocation.
+28. Use Health for AWS events, Trusted Advisor for checks, Support Center for eligible cases, re:Post for community knowledge, and Trust & Safety for abuse reports.
+29. Check the service, feature, Region, account eligibility, quotas, pricing and current support/lifecycle status.
+30. Small exercises connect abstract terms to responsibility and evidence; advanced implementation skill is not a published requirement for CLF-C02.
+
 | Contrast | Remember |
 |---|---|
 | Agility vs elasticity | Faster change versus demand-responsive capacity |
@@ -488,19 +562,19 @@ For an AWS disruption, vulnerable package, suspicious API call, high bill, and a
 
 ## Places to learn
 
-This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you and use the official blueprint to close only your gaps. Times are approximate consumption time at normal speed; labs, note-taking, assessment review, and independent practice add time.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you and use the official blueprint to close only your gaps. Public catalogs were rechecked September 28; paid lessons and videos were not consumed. O'Reilly/Udemy were access-blocked, Skill Builder returned a shell and YouTube exposed only limited metadata. Times below are planning estimates unless explicitly marked as public listed hours; add time for labs and explanation review.
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [AWS CLF-C02 exam page and four-step prep plan](https://aws.amazon.com/certification/certified-cloud-practitioner/) | Public page; Skill Builder account for learning | About 12–20 hours for selected official preparation plus labs | Start with the guide, then use question set, gap learning, labs, and official practice exam; some components require a Skill Builder subscription |
-| [AWS Official Practice Question Set catalog](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english) | Skill Builder account; some prep may require subscription | 30 minutes plus 30–60 minutes review | Public catalog describes a repeatable 20-question CLF-C02 set with explanations; use the full official practice exam later if included in your plan |
+| [AWS Official Practice Question Set catalog](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english) | Skill Builder account; some prep may require subscription | Plan 1–2 hours | Current question count, runtime and entitlement were not exposed by the sign-in shell; distinguish question set from full practice exam |
 | [AWS Cloud Quest: Cloud Practitioner](https://docs.cloudquest.skillbuilder.aws/coming-soon/index.html) | Free foundational role with Skill Builder account | About 8–15 hours estimated for selected assignments | Game-based reinforcement; use the current assignment list and watch for costs outside guided environments |
-| [Pluralsight — AWS Certified Cloud Practitioner CLF-C02](https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02) | Subscription/trial; practice availability depends on plan | 18 hours plus six labs and practice review | Current five-course path with labs and listed practice exam; skip sections you can explain |
-| [O'Reilly — AWS Certified Cloud Practitioner CLF-C02 Certification Guide, 2nd Edition](https://www.oreilly.com/library/view/aws-certified-cloud/9781835464298/) | Subscription or purchase | 15 hours 1 minute provider reading estimate plus labs | August 2026, 598-page scenario-driven reference; use selectively |
-| [Udemy — Ultimate AWS Certified Cloud Practitioner CLF-C02 2026](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/) | Purchase or subscription | 14 hours 35 minutes plus labs and practice review | Stéphane Maarek course shown updated August 2026 with a full practice exam; inspect previews/current outline |
-| [Whizlabs — AWS Certified Cloud Practitioner CLF-C02](https://www.whizlabs.com/aws-certified-cloud-practitioner/) | Paid modules/subscription; trial items vary | 9+ video hours plus 50+ listed labs and practice review | Page shown updated May 2026; use explanations and public docs, never claims of real exam questions |
-| [Tutorials Dojo — CLF-C02 video course](https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/) | Paid; separate practice product | 11.2+ video hours, 10+ labs, and one practice exam | Current exam-focused course with labs, quizzes, flashcards, and 65-question assessment |
+| [Pluralsight — AWS Certified Cloud Practitioner CLF-C02](https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02) | Subscription/trial; practice availability depends on plan | 18 publicly listed hours plus six labs and practice review | Current five-course path with labs and listed practice exam; skip sections you can explain |
+| [O'Reilly — AWS Certified Cloud Practitioner CLF-C02 Certification Guide, 2nd Edition](https://www.oreilly.com/library/view/aws-certified-cloud/9781835464298/) | Subscription or purchase | Plan 20–35 hours reading/labs | Edition, publication date, pages and runtime were not reverified behind the access block |
+| [Udemy — Ultimate AWS Certified Cloud Practitioner CLF-C02 2026](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/) | Purchase or subscription | Plan 20–35 hours with labs/practice | Inspect current outline, runtime and update date; access was blocked |
+| [Whizlabs — AWS Certified Cloud Practitioner CLF-C02](https://www.whizlabs.com/aws-certified-cloud-practitioner/) | Paid modules/subscription; trial items vary | Plan 20–35 hours selectively | Shell did not verify current counts or update date; use legitimate explanations and public docs |
+| [Tutorials Dojo — CLF-C02 video course](https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/) | Paid; separate practice product | Plan 20–30 hours with labs | Public course outline inspected; paid lesson quality/completeness not independently verified |
 | [Tutorials Dojo — CLF-C02 practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-practice-exams/) | Paid; free sampler separately | About 8–14 hours for diagnostic, timed, review, and targeted modes | Review every rationale against AWS docs and avoid memorizing question banks |
-| [freeCodeCamp — AWS Cloud Practitioner 2026 full course](https://www.youtube.com/watch?v=7HKot-brXFE) | Free | About 14 hours estimated from video length; add labs | Andrew Brown/ExamPro 2026 CLF-C02 video; verify services, prices, and interfaces in AWS docs |
+| [freeCodeCamp — AWS Cloud Practitioner 2026 full course](https://www.youtube.com/watch?v=7HKot-brXFE) | Free | Plan 15–25 hours including independent exercises | Public title identifies a 2026 CLF-C02 course; creator, runtime and video content were not verified from the limited response |
 
 No exact current MeasureUp CLF-C02 product was verified during the September 1 review. That absence is not a claim that the vendor will never add one; search the current catalog before purchasing a substitute. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md) for selection criteria and provider notes.

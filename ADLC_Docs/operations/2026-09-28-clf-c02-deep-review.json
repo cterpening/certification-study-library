@@ -1,0 +1,2076 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "CLF-C02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e696c5cfc38add36fdeb55d552ad97c38f33ef38330d535d3bb59c086cb0f710",
+  "guide_after_sha256": "dcea1fab2b21ae2a43c16881252b296bbe4c8739e24f4282efa3bda9212e6c5c",
+  "prior_records": {
+    "exam": {
+      "code": "CLF-C02",
+      "level": "beginner",
+      "vendor_id": "aws",
+      "title": "AWS Certified Cloud Practitioner",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+      "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; basic technology and business vocabulary plus limited AWS exposure are helpful, and a controlled AWS sandbox supports the labs."
+    },
+    "review": {
+      "id": "clf-c02-2026-09-01-source-validation",
+      "exam_code": "CLF-C02",
+      "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/clf-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud Concepts",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 2–3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Security and Compliance",
+          "guide_sections": [
+            "Section 2",
+            "Regulated-analytics scenario",
+            "Labs 1, 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Cloud Technology and Services",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 2–6"
+          ]
+        },
+        {
+          "objective_group": "Billing, Pricing, and Support",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1, 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 25,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "The current official four-domain CLF-C02 guide, its domain pages, in-scope service list and certification page were reconciled on September 1, 2026. The guide maps every published domain to value, responsibility, identity, evidence, service-selection, availability, cost and support decisions. Three integrated scenarios, eight safe labs and 30 original checks cover Well-Architected and cloud adoption context; shared responsibility, IAM, governance, monitoring and data protection; global infrastructure and compute/storage/database/network/service-category choices; and pricing, allocation, budgeting, optimization and support. All 29 guide URLs are cataloged: 25 were reachable and two AWS decision-guide routes, O'Reilly and Udemy were automation-blocked; none was missing or broken. Service behavior, prices, support entitlements and training metadata are explicitly volatile, learning times are labeled, and no recalled exam questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "1523faff6bebf794caea5c36f1e8720db8491ff5cf7fcb8fac44a8cdf73f154f",
+      "guide_sections": "1 / Value: agility, elasticity, reach, and availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "fd1ce47e725c26843e11afb5fce4dc708c6293d067326b5e90cda286cf8aaeef",
+      "guide_sections": "1 / Value: agility, elasticity, reach, and availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "8137ce9f815406263a2bd93663139b51e887a69b249a9f21928b47baeabfda41",
+      "guide_sections": "1 / Value: agility, elasticity, reach, and availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "1fcd1f9bd5a3f7c360c61d4bb5167daea9183cdcfb72dac1747c72158a96fb07",
+      "guide_sections": "1 / Well-Architected is a tradeoff framework",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "8649a9db407e5996418dbf3234fd77c391461bf78e5371758f86e8e56f4ecaec",
+      "guide_sections": "1 / Well-Architected is a tradeoff framework",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "d9c11115a439ee0eb93a8cdfbb96708a6e798da45f07ded4ce1576743fcc2d30",
+      "guide_sections": "1 / Well-Architected is a tradeoff framework",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "f7e796c9cb322f25861eeb5314e3fe821d3cad7bd6818f96922aeb59c182f698",
+      "guide_sections": "1 / Migration is portfolio work, not copying servers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "9335f34fe0c8c16c4cd990f0912b67c928ae02757133e1275282c6e7988d5ddc",
+      "guide_sections": "1 / Migration is portfolio work, not copying servers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "bbe438fca5c338d5bb3f3896e0da129637e4508108bd52d0b2d7e93782a9d24e",
+      "guide_sections": "1 / Migration is portfolio work, not copying servers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "027f16db10a57b85424d8ba97799dbcadd7e624d2f50b970988f7e6690b73b4a",
+      "guide_sections": "1 / Migration is portfolio work, not copying servers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "27984f4b012643bd81a0931fea792a0d596eb87615080ce67ab0678ea1542b23",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "0488487e349e6c0303bb42b892af5b6088382551c9f121140ee0da6a5d3b6ebd",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "3d47804c462400ea64fa97764067da927f8d0a7dca592a12fe996d2ae0c8a4f8",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "fa149f23b5830497e6721283d8ab714457824b8440e22581385bdfb693ab1168",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "103de1aa53039ef191d3d11545d2851bc49af7821a00297d8a715a1906ab688d",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "782ce2f256e6730e7da75d43f3f138f455e3d1beaa15600b58577011a2b97b56",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "2658bcd0fcf0a1333f926ddb4912043129a8691a14f28dfe48fe544bb4ae1853",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "e22da0bdcaf0e88ca3f38e12f1423b3b7e7c1022f48e624a1cc9cb9e8de4fd25",
+      "guide_sections": "1 / Cloud economics: cost follows configuration and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "88e135c61f0c71c893b32ef1f412d3d07d898a986a82216d962874edbc833c0a",
+      "guide_sections": "2 / Shared responsibility changes by service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "4ac617a742348a6f38fd68411a654c66f16e64c9d3ff41011f798c3b83d0c485",
+      "guide_sections": "2 / Shared responsibility changes by service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "fd8891505a4a880968812abe27c4efe07986f118833372adf2a58090a7404a73",
+      "guide_sections": "2 / Shared responsibility changes by service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "5ccd924fc11b9f3f64d0ab4155fe623d5b2ba368a403dd4ab3f79255f56cd9ff",
+      "guide_sections": "2 / Shared responsibility changes by service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "47e5ec374815253d40e3b3c60c55eceb115ae3e398a2f4bcb63140134493bc34",
+      "guide_sections": "2 / Shared responsibility changes by service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "eefd70b5d7febe789f23f5d3eda6843af03764170e65d363313a3351992e8e6b",
+      "guide_sections": "2 / Shared responsibility changes by service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "798f72c808ee251567e1d90f37103521a194a819eeb188e18b7205959e56ef14",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "1537e975755d9bf5e9393931d2c547120fe28e2fde5d05fdf441929031cd1338",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "a78b58d261c19b49315d0de348ed682904d84d16a7928e702dd589357794a15c",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "be641fb0dd56457d294ce9376f5b9bbd98c44f398667cc51b5f42e0120552e41",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "c8e49ac2868431a1e46c9386defd773d880718cc613aeb8c0feb004a454d0d74",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "6a62d567e73f2280cabc5a36a02d1373afb47bc18a8ec942c1ef28266769a507",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "6878a59be629772661180e0a951f12cd26ae64c0951e6ab77b702cba108178a6",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "f7c06ddaccb59b3fd87e3db57c8dae572061bab72f2cdcb7038c10c25ca1a1e6",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "22b1c9b9cd018c12c2d6f9cf96bc561bd0fa24e3a063363a42b61ee685f53458",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; Protect data through layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "58b2c4319e495eeac418d854bf82110b267da900d71e5d3387f7c7e50ec4da43",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "2467735e878ee28b4a9479797cd9f7daeff029ce5a68443701c4628860395ff1",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "7df6e373c45b7c0a10eaf21e3d22823d37f4137f3b9cc6c89e34190635e2afb2",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "3768742d4cefa3e302a79d6fa7ac319100d38887ba8a56e22301a1d2677dc79e",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "5d60d804313c2d01b5ead1e4457f2ad4e6da6ea7e4a759a535ad5a77c0edeeee",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "ecb844ef561425e253a0af3a9a2632d603f4f1906414b421c3fa341bc76d5015",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "f7e5e43a0099eb709b22028599099695f3f73ee1c63842652dd4c8cf29ec8181",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "a10f7e902c74385caf0798becfc7a0167beff8f7301539b29791412ffd85bfbf",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "f1f4de84d21bdb66300c6b0b365d67a57e4603b4c5c3bb9767fc55f5f8ee64f4",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "3b260ed3d933dcf4e9123e1c2705aae20fbec12ba5200c0f09f15682ef286b23",
+      "guide_sections": "2 / Identity: prefer temporary, least-privilege access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "51cb4da26382a98a3957e4afe790150ed97364e1c295619b39a594f47abeae57",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; 4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "fb48d07229a3cca0b5d3b0e9d15437c77ddc064deca48ab08c6bb1e9671ecc66",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; 4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "f4348c0c7e142f7a5afd23987337a67acd019899ee3229c9e1b30dfade7405d7",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; 4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "f362a208f497d9561b9bf4b40e5d34d83773e93237c0dcd92fcf793bf0062944",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; 4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "63e70be31f2707031e6062a1a6e9928a548e73f933f508c1069dd939bc71624f",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; 4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "df897c2d158656b13c0d9bb99590f26752e377b099b53722b5c71901f39f700b",
+      "guide_sections": "2 / Governance, audit, monitoring, and compliance evidence; 4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "bb99c586380a541d90c7fc2bab3f31ac37a740c7f4bdc0b7969128248a51b781",
+      "guide_sections": "3 / Ways to deploy and operate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "4b61c9549806bad2b59e800ccddcd28af6a133718aaa456a7d48c2cbded95ab8",
+      "guide_sections": "3 / Ways to deploy and operate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "4e2a839c272f8c20724daf74f8f50c26a0235ad9d6bcc7aa5b1982cdc3953b87",
+      "guide_sections": "3 / Ways to deploy and operate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "15ab11d2763e5dffd4de45d61c64b164e18a40d24c48e8ea20d5e3e5eec70fe7",
+      "guide_sections": "3 / Ways to deploy and operate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "b3226de002e5fbdcda4773e4d5ee8d229113481d1e2dba97eb2b1e9f4c90b18d",
+      "guide_sections": "3 / Ways to deploy and operate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "e996a48f9c55f3a159c6f7610b6f961e07c539635125ec2bc38b088706f58024",
+      "guide_sections": "3 / Ways to deploy and operate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "256c81b6c1a1745870e65bacd98d7def64703bfca23711bf38ed7cc2f8c9128d",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "a952f775ccfc2009d012835abe9603e95ae664bc7eeef8341cb5e721997f2647",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "663a2dbfa66706c811cb9975ed8212369aa57166228e48bf77eaadbc8d077a68",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "c0f2c4628bbccf0b6b679d603240fa9ac8cdbb349de237c4f7638f80c73d2f63",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "23769b07b2197789ac47be6f524d94fc05cb388aed94e8abc3fe6df274484110",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "9c429433c30b2215b9b09cc842880fdd409e3583c12ff60b92bfee2949db068d",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "d4732006dd195a85880aa1b47a6e0801e96cb73e95016cc06b794d587ba4014b",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "c71aa75faab65f74844f65eae063568c1d50dee4d876536afe2b68617d03d7b6",
+      "guide_sections": "3 / Global infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "8b1db59482a19b8853bde79589c8188f9798c65148249a7151f4cd492ac012bd",
+      "guide_sections": "3 / Compute: control versus abstraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "533e5932c41a75bee2bba73f63127009326fd45f836b4ebea3e04ef94532c651",
+      "guide_sections": "3 / Compute: control versus abstraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "ab9760abc76cef4423921a884baaac983db78ab2d633bed502eff97a68ee770e",
+      "guide_sections": "3 / Compute: control versus abstraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "d9f654e68596d3492f543e752f5c0d13c5d73798dce54075a7affc06a990c5b4",
+      "guide_sections": "3 / Compute: control versus abstraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "caa4e3f3f951524c163e157e54a6fdfc65856058b2c8806b012068550effb9fc",
+      "guide_sections": "3 / Compute: control versus abstraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "38a7ed83daf1923aaa41a4186019fb08625dff3a846eeff9fb6122dbe37dac2b",
+      "guide_sections": "3 / Compute: control versus abstraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "d6c698693ee19233562a2ff6a1a1fb48488824f5f6c7318425228b60f1ac71fc",
+      "guide_sections": "3 / Databases: choose data model and operating boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "62fd888f6c106ff1add6a9c2fc4d061a9b52c1ce1b4d757adf41975c11c884e2",
+      "guide_sections": "3 / Databases: choose data model and operating boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "f81be87f2493ccb2f70eabc4084ecdc515678705036ce7e1dbb6ce153433e3e1",
+      "guide_sections": "3 / Databases: choose data model and operating boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "c8bc20303ea75779481bc9ea8faa3adb203ff0d674b8d841e5d1583488697c0b",
+      "guide_sections": "3 / Databases: choose data model and operating boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "54ca89b2d493228ddec497069b98d270ba906d733bf585e1e81819148c77a7d3",
+      "guide_sections": "3 / Databases: choose data model and operating boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "3c3fd9dcfe177e1d5247112e3d84aa5a654e50999ee059225672e0dd6b1bd8f7",
+      "guide_sections": "3 / Databases: choose data model and operating boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "2eb8543b9bfab61469b1a6b7cf879713f8d3de0a215f39af7dfcf1790fee2c02",
+      "guide_sections": "3 / Databases: choose data model and operating boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "e82793b0f193f86c9cc33c54ef3e5ac19a0a6b921a4ade4addd6ccbb978019c9",
+      "guide_sections": "3 / Networking and content delivery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "ce576a4bc6e480f28e93948c826458a922766426322d0a4cd62c33ddf60683b3",
+      "guide_sections": "3 / Networking and content delivery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "09558c553038e45d08e95b70606be05f7515656153f3113b96c293e2da22e0d4",
+      "guide_sections": "3 / Networking and content delivery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "6ccf12a741aced9718d8a7aa749b2766a1f98146e9f0b18596045509a9a62dbd",
+      "guide_sections": "3 / Networking and content delivery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "af7baadef2ac188eae7f5d441d8af99e394ae005a1f26cb404900402a64a4196",
+      "guide_sections": "3 / Networking and content delivery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "1e96fae2b7d5a9695643f397d35144e5a734ef70dcb288d6600f98650f33722a",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "b62a25f2fbb4b20d0bf78e63a73e9f62860edea6d7c472eee8144e146859e189",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "b09ca9cf59a2f3e9a2449e759b9677b2792449166f3808389d6be5cd762f7c51",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "77e049934cf3f84bf16f2be470455ca38600d6908ae9d44efa0c4aaec41962f2",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "c9d3eb0a3613e1821d5c2357534ea93e3079533d93cbf474692bd334dce679da",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "1360b3ed80c4ad89dd1e991de5a757817efbb4b48045a2f100b46cc15821e3a4",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "b881d62337e09cb73c313313aedbe1dec970840b6aa6f6c5a916b74ea78ded6a",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 8,
+      "objective_sha256": "91fb9740fa159539870e372cd14a6e5affd1c3de450d3267f5429c5fc366aa09",
+      "guide_sections": "3 / Storage: object, block, and file",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "050e528a1fe7ccd8e658584b85a478686cca4c2e74edf5d120faeb7d8338eeb9",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "d6ab46d3dac8742992e5649dedabcd790e7d6baf1e98a6296df3b16202fb62f2",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "68e5ddd2dbd93291888d0d441a99b41764aeb6abdd1f35f65648707278299409",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "abfdf12fb48e45b1654c02216d776b9d02d127f43f4b9cc37eb9c4f86cdd5517",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "b7b56ad11023392459e241efe14b86e083959a1a367e69291617cafb72f2e154",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "b41262d55626c1b106688c78ac2a8c6ed8d6b0763921d2db7ceef7d8434c9a65",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "75853776032741028621d526a148130a3ab56497f0a921d9c01eec95bcc325cc",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "969e523a7d8b5df6cd3bca3dd08c989256c519fb28e65c220250814ebf9c6e4f",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "98c5ad00aadd617c59c7925858ad160ac67803004482e31fcc6096da65678e3b",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 6,
+      "objective_sha256": "1c47f8f58f3c3268b846938fb1353f93912235d1e568a3e6b327992849e90054",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 7,
+      "objective_sha256": "094420f64c9f1e79047b2657e1acda97fa1a69cb3ba568ff6f4599276aa8d058",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 8,
+      "objective_sha256": "a4a0a50a0fcd42b4d28163e4f3d7b44e4648ff8bb4b5171fb577c0178bbf42ae",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 9,
+      "objective_sha256": "277b0951abcc88b871a637f1401ade99ec983939f85ffdebebb80688b7cecd65",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 10,
+      "objective_sha256": "f3c04b1388770b5df79b64dffd2f96a47b3e850ef61837e66191fb1411cd7641",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 11,
+      "objective_sha256": "cb8b93d5a9f580efe85ded10a168def9357f35dc47bdae0dfaf12d706d8510ee",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 12,
+      "objective_sha256": "6a6a8824c47ec5f5d818e8cf817641f2b77736677bd6c7af13757062ea2b91e4",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 13,
+      "objective_sha256": "61d9f35ae3914174a18049a4fb03160fa318ad7b16261faeb2c01c4277c44890",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 14,
+      "objective_sha256": "ff963c3554801954e1f9679488d0f16c9756882646ea14831726d12b6509d155",
+      "guide_sections": "3 / AI/ML, analytics, integration, and other categories",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "eb6f5dd8d8d932e1de63547d359304a0e9d13ec60da26bc874f9bcaf91a9037b",
+      "guide_sections": "4 / Compute purchase models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "2b463e37e415d46d313d6a5e502f91c60dd84241a6130509980028325940c1d1",
+      "guide_sections": "4 / Compute purchase models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "8894d974780d90b62a872044e309c5e70bdc8d45e7ba355a95e62696d32790cd",
+      "guide_sections": "4 / Compute purchase models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "8b28b0661f0ca33bcb5d612c96db8d827b4f48618c7dfe188219c5cbe3366c56",
+      "guide_sections": "4 / Compute purchase models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "1e1020c5a7690b0a42cc7acd551b123963916b2f868eb0b02f807549622e0aff",
+      "guide_sections": "4 / Compute purchase models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 6,
+      "objective_sha256": "739eae4f2b477694634b04cc2d64fa545847e32d242157be72cc1fb840d6b5b0",
+      "guide_sections": "4 / Compute purchase models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 7,
+      "objective_sha256": "d223fce51a3b5f933703d8ad47883acc9d4444f5d4ca67b6809d3ad034aa3d52",
+      "guide_sections": "4 / Compute purchase models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 1,
+      "objective_sha256": "0a59411641311de45f08bc97635237c66814b8d7952243159183413c44ef88e1",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 2,
+      "objective_sha256": "49afdf9dc5e7166761caa928f0af55269b5360dbc436bc9d125af2a681e4274e",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 3,
+      "objective_sha256": "aa1ae1b64751262933787061fcea04002f096ca8f230b0b8ae1d063cf9e7b5b4",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 4,
+      "objective_sha256": "f6d8ecb1d0fb7af8aa8a09dbb57d6299a0f481896008eb3217d19ea79136b4a2",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 5,
+      "objective_sha256": "afabb399ab5d05ac6eb70a9120abb0f318306044ad0473aebb1d419b531d2974",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 6,
+      "objective_sha256": "cfe92c14ea6a53ce0ad1980113f80f625260f0e5bd41fddfe742c5cad39baff9",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 7,
+      "objective_sha256": "03256a3097f642ddb667cceb61132c04028a04509b65e43e17cb3a5df000f33a",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 8,
+      "objective_sha256": "67aa531844db13cb546d1813e0b352f31726185e72b178e8febdae5b161622aa",
+      "guide_sections": "4 / Estimate, observe, allocate, and govern; Free offers, alerts and project limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 1,
+      "objective_sha256": "190acd02032041ba6336712759e9ba383e9a353444ff3c09e96352d7f0424b57",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 2,
+      "objective_sha256": "67e22ce192a3058b6cc34492657bcd576fb5a043d572213a3f4331bf2cabe65e",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 3,
+      "objective_sha256": "9c68b5699cc7cdd5d0a1fde11a598efa3031f2a52690349d24d615d8247fa369",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 4,
+      "objective_sha256": "0fa84133e50f1760e5c5a321b9b3278b9d668db10ad5d4a5d6a30bf2c250ff8f",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 5,
+      "objective_sha256": "1ed881bbda7fa310ba419aab4c73e7a265df42defc800c99adfe41c651a0f133",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 6,
+      "objective_sha256": "80b6e3f9454b7172e2ea4dc0ebda22da34f74f5cb81679332e4c9f06a85300ff",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 7,
+      "objective_sha256": "7d27bf1fdf4cb750a8ce4e02816708040b76a32a8bf866ed5905ee07fedea02d",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 8,
+      "objective_sha256": "a0c7372e71540846aeb152a5f85b94d143a2eb48c21f2b52984380be348581c2",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 9,
+      "objective_sha256": "06ec3a9080cae03e2461a886c448d0a2e008c314a86b137bc28cc814ead62e78",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 10,
+      "objective_sha256": "dd6e926fe54c76afab46352ac8ccb58112643bc2237c67728ed1689ffeb81cc2",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 11,
+      "objective_sha256": "777efdeff0b8b9fd6d11782ced361a77f1f658ecb1a35dc6cbeab133a76de740",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 12,
+      "objective_sha256": "6e050a971d45ab9abb09e7b380f3345b7ca98cffbeaef1d332397fe57ce0eb35",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 13,
+      "objective_sha256": "ea892ec26d3aae1f911905f8baef122fe7658e6bdaa0afbf2f05967c403e0a4f",
+      "guide_sections": "4 / Support and trusted resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "CLF-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CLF-C02",
+        "title": "AWS Certified Cloud Practitioner",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+        "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\clf-c02-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\clf-c02-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da",
+        "previous_status_sha256": null,
+        "current_status_sha256": "f4d5dce60e3fa0619ceb9819ee7fa393696c9621da63e4a40e4ffea4fbee3daf",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Cloud Practitioner (CLF-C02)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 37,
+    "reachable": 33,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-clf-c02-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+      "checked_at": "2026-09-28T20:29:59.856630+00:00",
+      "health": {
+        "id": "aws-clf-c02-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+        "checked_at": "2026-09-28T20:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Cloud Practitioner (CLF-C02) - AWS Certified Cloud PractitionerAWS Certified Cloud Practitioner (CLF-C02) - AWS Certified Cloud Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6c73da64b17d34e51da4508680edc4545ae860cc0a3931c67b761d3222ac8fb6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+      "sha256": "9b1cd1a7576b5559a457ee546754d7867f7bd6a801acb8fb988f9a6789c2f3f1",
+      "text_characters": 5712
+    },
+    {
+      "id": "aws-clf-c02-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      "checked_at": "2026-09-28T20:29:59.857547+00:00",
+      "health": {
+        "id": "aws-clf-c02-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+        "checked_at": "2026-09-28T20:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-cloud-practitioner",
+        "canonical_url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "068b23056c52f0b342a53a4ee51dfd2b77dec4136f42a9da9e3c958b8721f012",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      "sha256": "2e3057d64b0aea9d5276cbce3812f7f36d3c4205ce41ffaa8d87ba91d55010f7",
+      "text_characters": 5722
+    },
+    {
+      "id": "aws-clf-c02-domain-1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html",
+      "checked_at": "2026-09-28T20:29:59.858048+00:00",
+      "health": {
+        "id": "aws-clf-c02-domain-1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html",
+        "checked_at": "2026-09-28T20:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Cloud Concepts - AWS Certified Cloud PractitionerContent Domain 1: Cloud Concepts - AWS Certified Cloud Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f79cad7cd4dd3be05abb3e8597ae06350154d06c0e095ce04240012b2e7ee006",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain1.html",
+      "sha256": "646ed6dc7ad5fc48ac3e3a9196b18a2feba2466177be4c6f1c9558995fdd195a",
+      "text_characters": 3102
+    },
+    {
+      "id": "aws-clf-c02-domain-2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain2.html",
+      "checked_at": "2026-09-28T20:29:59.858437+00:00",
+      "health": {
+        "id": "aws-clf-c02-domain-2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain2.html",
+        "checked_at": "2026-09-28T20:29:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Security and Compliance - AWS Certified Cloud PractitionerContent Domain 2: Security and Compliance - AWS Certified Cloud Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0dbd6ab39d12f1a228e83a5c5c88f1c8f5d66b14cd3ab33e0a763d70ce796108",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain2.html",
+      "sha256": "43fd7dd2c245399c95d5e0911b8dd096376a20a6262893c770d37382384f45c7",
+      "text_characters": 4304
+    },
+    {
+      "id": "aws-clf-c02-domain-3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+      "checked_at": "2026-09-28T20:30:00.398061+00:00",
+      "health": {
+        "id": "aws-clf-c02-domain-3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Cloud Technology and Services - AWS Certified Cloud PractitionerContent Domain 3: Cloud Technology and Services - AWS Certified Cloud Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "45dc8eca209e1f5175367d303ab82b31588a7ea86b060d51cd68972d0bef214a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+      "sha256": "e077ee8bda94c9a5d361217929696edffd4f85fccbea22f64229f748ae4087f1",
+      "text_characters": 6774
+    },
+    {
+      "id": "aws-clf-c02-domain-4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+      "checked_at": "2026-09-28T20:30:00.418268+00:00",
+      "health": {
+        "id": "aws-clf-c02-domain-4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Billing, Pricing, and Support - AWS Certified Cloud PractitionerContent Domain 4: Billing, Pricing, and Support - AWS Certified Cloud Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e8f05500421b00b3a040ea48ac70805a88d5ffbffddccbcc6d182e8e50381578",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+      "sha256": "fa1898495daa2145949511c9d4d63b390f20e7f8ce1cd3e49109e4cb548c830a",
+      "text_characters": 3945
+    },
+    {
+      "id": "aws-clf-c02-in-scope-services",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:00.426728+00:00",
+      "health": {
+        "id": "aws-clf-c02-in-scope-services",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Cloud PractitionerIn-Scope AWS Services - AWS Certified Cloud Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6d48af69177227f3aeecec4ec1fdf35d2d17c61d417108162968442e3653e38d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-in-scope-services.html",
+      "sha256": "d8983e64842a4134f6bce141143e87310d206fa5de8aad1631ecb916ff7054e0",
+      "text_characters": 4226
+    },
+    {
+      "id": "aws-clf-c02-well-architected",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "checked_at": "2026-09-28T20:30:00.458211+00:00",
+      "health": {
+        "id": "aws-clf-c02-well-architected",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "content_type": "text/html",
+        "page_title": "The pillars of the framework - AWS Well-Architected FrameworkThe pillars of the framework - AWS Well-Architected Framework",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c0041c9bdb452daa4c75214be73e54d60f49a1465c13e205fb548ab0517cba12",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "sha256": "417ba40f3fa0bd7e8a6362d539d94128d5e67ea289188e78e34b8d2d391a1a67",
+      "text_characters": 1415
+    },
+    {
+      "id": "aws-clf-c02-caf",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+      "checked_at": "2026-09-28T20:30:00.711346+00:00",
+      "health": {
+        "id": "aws-clf-c02-caf",
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+        "content_type": "text/html",
+        "page_title": "An Overview of the AWS Cloud Adoption Framework - An Overview of the AWS Cloud Adoption FrameworkAn Overview of the AWS Cloud Adoption Framework - An Overview of the AWS Cloud Adoption Framework",
+        "canonical_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1c103ca4f5921dde2ebd119f415caa79310c0349673cf040119b832c9c08ad71",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html",
+      "sha256": "5dcda2793e6e987b7ca2a2d5fd5a120ab975f005f1a6cad760c966e3b333a262",
+      "text_characters": 2949
+    },
+    {
+      "id": "aws-clf-c02-shared-responsibility",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+      "checked_at": "2026-09-28T20:30:00.711562+00:00",
+      "health": {
+        "id": "aws-clf-c02-shared-responsibility",
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+        "content_type": "text/html",
+        "page_title": "Shared responsibility model - Amazon Web Services: Risk and ComplianceShared responsibility model - Amazon Web Services: Risk and Compliance",
+        "canonical_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1d73b205be015e90a8edc2dc80c1d7859e13004287eecf5e312c0336813943ea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html",
+      "sha256": "8939b5453200238c5bb7d34b1d2dd928291a46aede13102f924cdb5b0161127a",
+      "text_characters": 2782
+    },
+    {
+      "id": "aws-clf-c02-iam-best-practices",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+      "checked_at": "2026-09-28T20:30:00.763359+00:00",
+      "health": {
+        "id": "aws-clf-c02-iam-best-practices",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+        "content_type": "text/html",
+        "page_title": "Security best practices in IAM - AWS Identity and Access ManagementSecurity best practices in IAM - AWS Identity and Access Management",
+        "canonical_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+        "duration_signals": [],
+        "signal_fingerprint": "52c7279b9ae95a98bf551677c8931d3e1362c0adbe2a0dd1a275d3e9a55f41a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+      "sha256": "8b97534d790da8647c2b58e497060630ce5f2b01ce46e2d2deac2070ada0f338",
+      "text_characters": 18510
+    },
+    {
+      "id": "aws-clf-c02-global-infrastructure",
+      "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html",
+      "checked_at": "2026-09-28T20:30:00.765831+00:00",
+      "health": {
+        "id": "aws-clf-c02-global-infrastructure",
+        "url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html",
+        "content_type": "text/html",
+        "page_title": "AWS Regions and Availability Zones - AWS Regions and Availability ZonesAWS Regions and Availability Zones - AWS Regions and Availability Zones",
+        "canonical_url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html",
+        "duration_signals": [],
+        "signal_fingerprint": "80361cd84b6b57b4fe71c65add6e3042348a6aed3cedbe2e3671617ecff7bd99",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions-availability-zones.html",
+      "sha256": "1f172d6e220c740279a04165d30d6de3ac639c642b8cda575832c57a085abb87",
+      "text_characters": 3226
+    },
+    {
+      "id": "aws-clf-c02-ec2",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+      "checked_at": "2026-09-28T20:30:00.975168+00:00",
+      "health": {
+        "id": "aws-clf-c02-ec2",
+        "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+        "checked_at": "2026-09-28T20:30:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon EC2? - Amazon Elastic Compute CloudWhat is Amazon EC2? - Amazon Elastic Compute Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a6c192e52e95efdaa0a5bbd3c130e87d51aaccac08aef35d39659ab593698e82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+      "sha256": "55e44e6092826f51f92c091afa5dc87bd9f32477217b6f8eaebe1f36e1de1e6d",
+      "text_characters": 9779
+    },
+    {
+      "id": "aws-clf-c02-lambda",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+      "checked_at": "2026-09-28T20:30:01.001530+00:00",
+      "health": {
+        "id": "aws-clf-c02-lambda",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+        "content_type": "text/html",
+        "page_title": "What is AWS Lambda? - AWS LambdaWhat is AWS Lambda? - AWS Lambda",
+        "canonical_url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+        "duration_signals": [
+          "15 minutes",
+          "8 hours"
+        ],
+        "signal_fingerprint": "a8819bfd93028c8b89fd8520ff65f4a60f0d81f33424ff267afafdc90dacd3a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+      "sha256": "b18c16764c777f3b499efb54addadf1f3777d154addd22c010ffd4eced94b9d9",
+      "text_characters": 3868
+    },
+    {
+      "id": "aws-clf-c02-containers",
+      "url": "https://docs.aws.amazon.com/decision-guides/latest/containers-on-aws-how-to-choose/containers-on-aws-how-to-choose.html",
+      "checked_at": "2026-09-28T20:30:01.028251+00:00",
+      "health": {
+        "id": "aws-clf-c02-containers",
+        "url": "https://docs.aws.amazon.com/decision-guides/latest/containers-on-aws-how-to-choose/containers-on-aws-how-to-choose.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://docs.aws.amazon.com/decision-guides/latest/containers-on-aws-how-to-choose/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-clf-c02-storage",
+      "url": "https://docs.aws.amazon.com/decision-guides/latest/storage-on-aws-how-to-choose/aws-storage-how-to-choose.html",
+      "checked_at": "2026-09-28T20:30:01.057490+00:00",
+      "health": {
+        "id": "aws-clf-c02-storage",
+        "url": "https://docs.aws.amazon.com/decision-guides/latest/storage-on-aws-how-to-choose/aws-storage-how-to-choose.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://docs.aws.amazon.com/decision-guides/latest/storage-on-aws-how-to-choose/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-clf-c02-databases",
+      "url": "https://docs.aws.amazon.com/decision-guides/latest/databases-on-aws-how-to-choose/databases-on-aws-how-to-choose.html",
+      "checked_at": "2026-09-28T20:30:01.177552+00:00",
+      "health": {
+        "id": "aws-clf-c02-databases",
+        "url": "https://docs.aws.amazon.com/decision-guides/latest/databases-on-aws-how-to-choose/databases-on-aws-how-to-choose.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html",
+        "content_type": "text/html",
+        "page_title": "Choosing an AWS database service - AWS Decision GuidesChoosing an AWS database service - AWS Decision Guides",
+        "canonical_url": "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html",
+        "duration_signals": [],
+        "signal_fingerprint": "38e4b091f9dc5c1a0511454f0e8d654f58d481fcbe9b7dc4b3e14072c9bfbab0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/decision-guides/latest/decision-guides/databases-on-aws-how-to-choose.html",
+      "sha256": "19b70c096745d9c31f5e4140de687de9e10ac8c12d228069a2f5e6fa85c722e5",
+      "text_characters": 32399
+    },
+    {
+      "id": "aws-clf-c02-vpc",
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "checked_at": "2026-09-28T20:30:01.202684+00:00",
+      "health": {
+        "id": "aws-clf-c02-vpc",
+        "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon VPC? - Amazon Virtual Private CloudWhat is Amazon VPC? - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "duration_signals": [
+          "750 hours"
+        ],
+        "signal_fingerprint": "30dd2ccc11e53a16b459c0bf6025a09c3fae18713821a4c88b55ea59b1a6310f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "sha256": "229e4d45835eab1cd2f035ee6c549dd2dec86e7f6b9aa0123e02bd8aa20bd320",
+      "text_characters": 7382
+    },
+    {
+      "id": "aws-clf-c02-cost-management",
+      "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+      "checked_at": "2026-09-28T20:30:01.419016+00:00",
+      "health": {
+        "id": "aws-clf-c02-cost-management",
+        "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+        "content_type": "text/html",
+        "page_title": "Use AWS Billing and Cost Management for AWS - AWS Cost ManagementUse AWS Billing and Cost Management for AWS - AWS Cost Management",
+        "canonical_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9a4f4baef7b002ba98675cbe92a5425477092ea75d7a817a8e34ef0cb191b6dc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html",
+      "sha256": "d1ee7fad7796d1e765df2a81c298dcdd472002b191b6964e365e0189f4dd225d",
+      "text_characters": 10559
+    },
+    {
+      "id": "aws-clf-c02-support-plans",
+      "url": "https://aws.amazon.com/premiumsupport/plans/",
+      "checked_at": "2026-09-28T20:30:01.475425+00:00",
+      "health": {
+        "id": "aws-clf-c02-support-plans",
+        "url": "https://aws.amazon.com/premiumsupport/plans/",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/premiumsupport/plans/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Compare AWS Support plans – AWS Support features – AWS",
+        "canonical_url": "https://aws.amazon.com/premiumsupport/plans/",
+        "duration_signals": [
+          "1 hour",
+          "12 hours",
+          "15 mins",
+          "24 hours",
+          "30 mins",
+          "4 hours",
+          "5 mins"
+        ],
+        "signal_fingerprint": "e30bfaf951cfeb5dadc5a8dddcbab54c4e8abccd01ff2848f6cd16ad07d22ba9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/premiumsupport/plans/",
+      "sha256": "f3ff33e6ce11606193d841ec6d02a47e11d3dfb8c7ed5b384e3621dd460f7efb",
+      "text_characters": 4219
+    },
+    {
+      "id": "aws-clf-c02-official-question-set",
+      "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english",
+      "checked_at": "2026-09-28T20:30:01.516017+00:00",
+      "health": {
+        "id": "aws-clf-c02-official-question-set",
+        "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+        "duration_signals": [],
+        "signal_fingerprint": "da0e3260b110a2798a581ff7645d6eb1e6278a0d702432522cf62cb3a436ef87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-clf-c02-cloud-quest",
+      "url": "https://docs.cloudquest.skillbuilder.aws/coming-soon/index.html",
+      "checked_at": "2026-09-28T20:30:01.769127+00:00",
+      "health": {
+        "id": "aws-clf-c02-cloud-quest",
+        "url": "https://docs.cloudquest.skillbuilder.aws/coming-soon/index.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloudquest.skillbuilder.aws/coming-soon/index.html",
+        "content_type": "text/html",
+        "page_title": "The all-new AWS Cloud Quest — now live",
+        "canonical_url": "https://docs.cloudquest.skillbuilder.aws/coming-soon/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f73578ea18610b039bb0fac6b2ca4eadd2be1ed8c9674e249f0baf7cd12143f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloudquest.skillbuilder.aws/coming-soon/index.html",
+      "sha256": "b82e1da90dd730b1965f7cd378179d06e5ce13753323ff9469217df80a64b2b6",
+      "text_characters": 14117
+    },
+    {
+      "id": "aws-clf-c02-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02",
+      "checked_at": "2026-09-28T20:30:01.796293+00:00",
+      "health": {
+        "id": "aws-clf-c02-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Cloud Practitioner (CLF-C02)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02",
+        "duration_signals": [
+          "18 Hours"
+        ],
+        "signal_fingerprint": "16082eec974933263053661f54137cad0bb64eebfcdcef2fcc945595f956a21f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02",
+      "sha256": "45a9f5ba79871eb491e6944d63703755aeb9b1c13705808788889ba917894477",
+      "text_characters": 4586
+    },
+    {
+      "id": "aws-clf-c02-oreilly",
+      "url": "https://www.oreilly.com/library/view/aws-certified-cloud/9781835464298/",
+      "checked_at": "2026-09-28T20:30:01.918996+00:00",
+      "health": {
+        "id": "aws-clf-c02-oreilly",
+        "url": "https://www.oreilly.com/library/view/aws-certified-cloud/9781835464298/",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-cloud/9781835464298/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-clf-c02-udemy",
+      "url": "https://www.udemy.com/course/aws-certified-cloud-practitioner-new/",
+      "checked_at": "2026-09-28T20:30:02.116373+00:00",
+      "health": {
+        "id": "aws-clf-c02-udemy",
+        "url": "https://www.udemy.com/course/aws-certified-cloud-practitioner-new/",
+        "checked_at": "2026-09-28T20:30:02+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-cloud-practitioner-new/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-clf-c02-whizlabs",
+      "url": "https://www.whizlabs.com/aws-certified-cloud-practitioner/",
+      "checked_at": "2026-09-28T20:30:02.212991+00:00",
+      "health": {
+        "id": "aws-clf-c02-whizlabs",
+        "url": "https://www.whizlabs.com/aws-certified-cloud-practitioner/",
+        "checked_at": "2026-09-28T20:30:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-certified-cloud-practitioner/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CLF-C02: AWS Cloud Practitioner Course | Whizlabs",
+        "canonical_url": "https://www.whizlabs.com/aws-certified-cloud-practitioner/",
+        "duration_signals": [],
+        "signal_fingerprint": "c18b738df1f0364e36035549b33d37938a66f019296efe74aaaffcfb910afb89",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-certified-cloud-practitioner/",
+      "sha256": "2ee021c2c3c4e0b51cc6cd289f08f4d0988ef1b2bdbcb2eaf7fd876ec995cc9a",
+      "text_characters": 49
+    },
+    {
+      "id": "aws-clf-c02-tutorials-dojo-course",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/",
+      "checked_at": "2026-09-28T20:30:02.215102+00:00",
+      "health": {
+        "id": "aws-clf-c02-tutorials-dojo-course",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/",
+        "checked_at": "2026-09-28T20:30:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Cloud Practitioner CLF-C02 Video Course 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "f3543d00ab37b138c5babd8b5b6e555c158c68fd77abf6724f2d40ad90940ada",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/",
+      "sha256": "c66e2ce769e7701a4550a95ee5ec422965788bb846c2aac03742b3a57518bc8f",
+      "text_characters": 14637
+    },
+    {
+      "id": "aws-clf-c02-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-practice-exams/",
+      "checked_at": "2026-09-28T20:30:02.296483+00:00",
+      "health": {
+        "id": "aws-clf-c02-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-practice-exams/",
+        "checked_at": "2026-09-28T20:30:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Cloud Practitioner Practice Exams CLF-C02 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "72 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "eb73fdc49fdb380e2fe71d426dae5b6bdb77b872db2f5827d96136be95ae7624",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-practice-exams/",
+      "sha256": "395df6a402fbe893f4cd2b8de79b15f88a5b454224937aa25196089695c517d1",
+      "text_characters": 10596
+    },
+    {
+      "id": "aws-clf-c02-freecodecamp",
+      "url": "https://www.youtube.com/watch?v=7HKot-brXFE",
+      "checked_at": "2026-09-28T20:30:02.515658+00:00",
+      "health": {
+        "id": "aws-clf-c02-freecodecamp",
+        "url": "https://www.youtube.com/watch?v=7HKot-brXFE",
+        "checked_at": "2026-09-28T20:30:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=7HKot-brXFE",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS Certified Cloud Practitioner Certification Course 2026 (CLF-C02) - Pass the Exam!",
+        "canonical_url": "https://www.youtube.com/watch?v=7HKot-brXFE",
+        "duration_signals": [],
+        "signal_fingerprint": "d5d059ed2019a61caf78044ddb2a79e330f3cef960a7c2be8f61fbfb8fa492b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=7HKot-brXFE",
+      "sha256": "43813dca95ed397f5310134553799be7115a3cfce62aa4fd5f63d72725c1f665",
+      "text_characters": 248
+    },
+    {
+      "id": "aws-discovery-availability",
+      "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "checked_at": "2026-09-28T21:08:26.281871+00:00",
+      "health": {
+        "id": "aws-discovery-availability",
+        "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "checked_at": "2026-09-28T21:08:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Application Discovery Service availability change - AWS Application Discovery ServiceAWS Application Discovery Service availability change - AWS Application Discovery Service",
+        "canonical_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e3e24fd9b54bdf27261c06b37dacbb307d22d441882682d6b14da5d7d074e2bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "sha256": "a3cbcb728f75a2a71c77d2ae3dbf9b3029063934cc0ee440644c08f2d490e360",
+      "text_characters": 5898
+    },
+    {
+      "id": "aws-migrationhub-availability",
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+      "checked_at": "2026-09-28T21:08:26.283017+00:00",
+      "health": {
+        "id": "aws-migrationhub-availability",
+        "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+        "checked_at": "2026-09-28T21:08:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Migration Hub availability change - Migration Hub Strategy RecommendationsAWS Migration Hub availability change - Migration Hub Strategy Recommendations",
+        "canonical_url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ce67a979cadf171a91c2d33ca75b145b79b3d0fa8ebe9ea7f0efae895d0930a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+      "sha256": "04de735b20c97e0e8ade474f42625e8d1b0431900854a049a6d7525f17398e09",
+      "text_characters": 4500
+    },
+    {
+      "id": "aws-clf-new-builder-blog",
+      "url": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
+      "checked_at": "2026-09-28T21:18:35.288638+00:00",
+      "health": {
+        "id": "aws-clf-new-builder-blog",
+        "url": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
+        "checked_at": "2026-09-28T21:18:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "AWS reimagines the getting started experience | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
+        "duration_signals": [],
+        "signal_fingerprint": "d767961cc8ac0a4c1ac56a77cca51a15123a01d3bdfa89b0f409c7ab69865ccb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience/",
+      "sha256": "072667e4e55c2652e65745441d2ffaec39f0b245f22e56b779712d554a9fa5fa",
+      "text_characters": 7650
+    },
+    {
+      "id": "aws-support-retirements",
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+      "checked_at": "2026-09-28T21:18:35.289470+00:00",
+      "health": {
+        "id": "aws-support-retirements",
+        "url": "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+        "checked_at": "2026-09-28T21:18:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+        "content_type": "text/html",
+        "page_title": "Developer, Business, and Enterprise On-Ramp end of support - AWS SupportDeveloper, Business, and Enterprise On-Ramp end of support - AWS Support",
+        "canonical_url": "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8cdba8f6d51a4dd01061a39b9da2a05beb3e376e777ff1c0438502d7b583ae91",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+      "sha256": "396e0ff281874127510ab66123221d6676da4f1cf538665974cee479e8bdb24d",
+      "text_characters": 2702
+    },
+    {
+      "id": "aws-support-current",
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+      "checked_at": "2026-09-28T21:18:35.289949+00:00",
+      "health": {
+        "id": "aws-support-current",
+        "url": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+        "checked_at": "2026-09-28T21:18:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+        "content_type": "text/html",
+        "page_title": "AWS Support Plans - AWS SupportAWS Support Plans - AWS Support",
+        "canonical_url": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+        "duration_signals": [
+          "15 minute",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "ecfe0b8dce87071df6bf80a4b9e9f30400617961115a5e95e992c2ba38d88e4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/awssupport/latest/user/aws-support-plans.html",
+      "sha256": "34ec652b96faa6e9a28f1484850adc37fb4cecfe690a2a0a81bd96f4451412cc",
+      "text_characters": 5897
+    },
+    {
+      "id": "aws-free-tier-faq",
+      "url": "https://aws.amazon.com/free/free-tier-faqs/",
+      "checked_at": "2026-09-28T21:18:35.290525+00:00",
+      "health": {
+        "id": "aws-free-tier-faq",
+        "url": "https://aws.amazon.com/free/free-tier-faqs/",
+        "checked_at": "2026-09-28T21:18:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/free/free-tier-faqs/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Free Tier FAQs",
+        "canonical_url": "https://aws.amazon.com/free/free-tier-faqs/",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "64ca4aad4e0ec7b4ac25224d016179efbf516daaed0896ca54a16e6bc25a5b49",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/free/free-tier-faqs/",
+      "sha256": "a59ce47baa9579458ed31c906690e3a3c0d168280266d4b07bb44df59a3c42c9",
+      "text_characters": 9472
+    },
+    {
+      "id": "aws-new-account-experience",
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+      "checked_at": "2026-09-28T21:19:59.040894+00:00",
+      "health": {
+        "id": "aws-new-account-experience",
+        "url": "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+        "checked_at": "2026-09-28T21:19:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+        "content_type": "text/html",
+        "page_title": "Sign up for AWS (new) - AWS Account ManagementSign up for AWS (new) - AWS Account Management",
+        "canonical_url": "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c44bac1d651a81e5fc3447ecc23744ebca494403dab1edabee57132f6b293662",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+      "sha256": "bcc1207183d6ab74408b61f01d510eef0ec5b0ddd689ae7e81de85d614e8ed46",
+      "text_characters": 4644
+    },
+    {
+      "id": "aws-workspaces-applications",
+      "url": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
+      "checked_at": "2026-09-28T21:19:59.041534+00:00",
+      "health": {
+        "id": "aws-workspaces-applications",
+        "url": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
+        "checked_at": "2026-09-28T21:19:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
+        "content_type": "text/html",
+        "page_title": "What Is Amazon WorkSpaces Applications? - Amazon WorkSpaces ApplicationsWhat Is Amazon WorkSpaces Applications? - Amazon WorkSpaces Applications",
+        "canonical_url": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bf090aa7aa5512869a177038b2df9c7e3ca56444d19beea55f934a8ae9a3039d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html",
+      "sha256": "2678e6627565beba389ae49fd6b9dd2c32e6ae733810c7bb344c4b7a1765a619",
+      "text_characters": 2864
+    }
+  ],
+  "added_source_ids": [
+    "aws-clf-new-builder-blog",
+    "aws-support-retirements",
+    "aws-support-current",
+    "aws-free-tier-faq",
+    "aws-new-account-experience",
+    "aws-workspaces-applications"
+  ],
+  "findings": [
+    {
+      "id": "clfc02-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Support plan examples require current names",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain4.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLF-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Detailed objectives name Basic, Business Support+, Enterprise Support and Unified Operations.",
+      "recommendation": "Add current plan comparison and distinguish response from resolution.",
+      "disposition": "applied",
+      "source_id": "aws-clf-c02-domain-4",
+      "resolution": "Add current plan comparison and distinguish response from resolution."
+    },
+    {
+      "id": "clfc02-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Older support-plan charts need a retirement boundary",
+      "url": "https://docs.aws.amazon.com/awssupport/latest/user/support-plans-eos.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLF-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "January 1, 2027 retirement for Developer, Business and Enterprise On-Ramp; GovCloud exception.",
+      "recommendation": "Add dated notice and exception.",
+      "disposition": "applied",
+      "source_id": "aws-support-retirements",
+      "resolution": "Add dated notice and exception."
+    },
+    {
+      "id": "clfc02-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New project spending control differs from a budget alert",
+      "url": "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLF-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Limited signup rollout supports optional paid-project pre-tax spend limits.",
+      "recommendation": "Add scoped explanation and article context without assuming existing-account availability.",
+      "disposition": "applied",
+      "source_id": "aws-new-account-experience",
+      "resolution": "Add scoped explanation and article context without assuming existing-account availability."
+    },
+    {
+      "id": "clfc02-deep-4",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Other service categories need explanatory coverage",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02-domain3.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLF-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Task 3.8 includes developer tools, end-user computing, frontend and IoT beyond current table.",
+      "recommendation": "Add category contrasts and current application-streaming terminology.",
+      "disposition": "applied",
+      "source_id": "aws-clf-c02-domain-3",
+      "resolution": "Add category contrasts and current application-streaming terminology."
+    },
+    {
+      "id": "clfc02-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Discovery tools closed to new customers",
+      "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLF-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Discovery Service and Migration Hub access restricted since November 7, 2025.",
+      "recommendation": "Retain exam concepts and point new projects toward evaluated supported tooling.",
+      "disposition": "applied",
+      "source_id": "aws-discovery-availability",
+      "resolution": "Retain exam concepts and point new projects toward evaluated supported tooling."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-clf-new-builder-blog",
+      "published_on": "2026-09-16",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Complete public body; screenshots represented by extracted captions, not UI execution.",
+      "value": "Explains why signup/projects and spending controls differ from older tutorials.",
+      "limits": "Limited rollout confirmed in docs; no universal availability or free-usage assumption; generated example application not run."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "10 original cost, unit-economics, capacity and alert arithmetic assertions"
+  },
+  "answered_checks": 30,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight labs remain proposed; no AWS account, billing charge, signup, project-limit behavior or paid lesson/video executed.",
+    "New signup is a limited rollout; legacy/new account terms and eligibility must be checked for the actual account.",
+    "Language-specific December 31 retirement remains scheduled; not a retirement of the whole certification.",
+    "AWS automated snapshots cover broad domains and do not establish detailed support-plan changes."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}
