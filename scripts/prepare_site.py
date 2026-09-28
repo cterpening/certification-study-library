@@ -79,6 +79,7 @@ PUBLIC_DOCUMENTS = (
     "docs/research/2026-09-28-ai-300-deep-review.md",
     "docs/research/2026-09-28-ai-901-deep-review.md",
     "docs/research/2026-09-28-az-104-deep-review.md",
+    "docs/research/2026-09-28-az-120-deep-review.md",
     "docs/SSH-DIRECT-EVIDENCE.md",
     "docs/SOURCE-INTAKE.md",
     "docs/SOURCE-FRESHNESS.md",

@@ -171,6 +171,8 @@ The guide maps every July 20, 2026 objective bullet to an end-to-end connection 
 
 ## AZ-120 coverage record
 
+The September 28 [deep review](research/2026-09-28-az-120-deep-review.md) maps 78 detailed objectives. Whole guide and 78 unchanged objectives mapped across ten groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh HANA storage/backup, MANA, RISE/fencing, VIS/telemetry, SDAF/STAF, Sentinel connector lifecycle and catalog guidance. Twenty-seven offline assertions passed; native HSR versus manual-secondary FAQ applicability remains unresolved. No cloud, SAP, guest commands, failover/restore or paid-content execution; human review pending. Current guide citations: 45 registered, 43 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Migrate SAP workloads to Azure | Sections 1–2, ECC and RISE scenarios, and Labs 1–2 |

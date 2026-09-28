@@ -1,0 +1,2344 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AZ-120",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "d101d8956cbdb51732ae105495a1fde6af4b6adad697b33bfcecff2098458e59",
+  "guide_after_sha256": "2ff79da9817625ce10e5daf341982f5606ed3a13d6ab48a6f77600019def9b4a",
+  "prior_records": {
+    "exam": {
+      "code": "AZ-120",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Planning and Administering Microsoft Azure for SAP Workloads",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+      "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "SAP HANA, NetWeaver, Business Suite, Basis, operating-system, database, migration, clustering, backup, and disaster-recovery experience plus Azure Administrator Associate-level compute, storage, networking, identity, governance, monitoring, and infrastructure-as-code knowledge."
+    },
+    "review": {
+      "id": "az-120-2026-08-31-source-validation",
+      "exam_code": "AZ-120",
+      "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-120-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+      "objective_coverage": [
+        {
+          "objective_group": "Migrate SAP workloads to Azure",
+          "guide_sections": [
+            "Sections 1–2",
+            "ECC and RISE scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Design and implement an infrastructure to support SAP workloads on Azure",
+          "guide_sections": [
+            "Section 3",
+            "ECC scenario",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Design and implement high availability and disaster recovery (HADR)",
+          "guide_sections": [
+            "Section 4",
+            "Region-loss scenario",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Maintain SAP workloads on Azure",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 25,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an end-to-end SAP landscape decision model, supportability and sizing controls, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; one O'Reilly page and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The official credential remains active with no announced retirement or blueprint update. VM/storage certification, SAP Notes, OS/database versions, region/zone capacity, quotas, licensing, support, pricing, SLA, ACSS/SDAF features, and preview-sensitive behavior are explicitly marked VERIFY CURRENT."
+    },
+    "sources": [
+      {
+        "id": "az-120-blueprint",
+        "title": "Study guide for Exam AZ-120: Planning and Administering Azure for SAP Workloads",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-credential",
+        "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Official active credential page; last updated April 17, 2026 and no retirement notice was displayed during review."
+      },
+      {
+        "id": "az-120-supported-products",
+        "title": "What SAP software is supported on Azure",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-supported-scenarios",
+        "title": "SAP on Azure supported scenarios with Azure VMs",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-deployment-planning-guide",
+        "title": "Plan and implement an SAP deployment on Azure",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-cloud-adoption-plan",
+        "title": "Plan for SAP cloud adoption on Azure",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-sap-landing-zone",
+        "title": "Azure landing zone for SAP on Azure",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-rise-integration",
+        "title": "Integrate Azure with SAP RISE managed workloads",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-vm-extension",
+        "title": "Implement the Azure VM extension for SAP solutions",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "The page contains version-sensitive recommendations; always reconcile it with current SAP Notes and deployment documentation."
+      },
+      {
+        "id": "az-120-hana-storage",
+        "title": "SAP HANA Azure virtual machine storage configurations",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-ha-architecture",
+        "title": "Azure VMs high-availability architecture and scenarios for SAP NetWeaver",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-availability-zones",
+        "title": "SAP workload configurations with Azure Availability Zones",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-disaster-recovery",
+        "title": "Disaster recovery recommendations for SAP workload",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-hana-hsr-backup",
+        "title": "Back up SAP HANA System Replication databases on Azure VMs using Azure Backup",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-monitor-for-sap",
+        "title": "What is Azure Monitor for SAP solutions?",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-azure-center-sap",
+        "title": "What is Azure Center for SAP solutions?",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-deployment-automation-framework",
+        "title": "Deploy SAP Deployment Automation Framework for enterprise scale",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/automation/tutorial",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-lama-connector",
+        "title": "Set up the SAP LaMa connector for Azure",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ]
+      },
+      {
+        "id": "az-120-microsoft-learn-course",
+        "title": "Course AZ-120T00-A: Planning and Deploying SAP on Azure",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-120t00/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Official page lists a three-day instructor-led course and approximately 29 hours of linked self-paced learning paths."
+      },
+      {
+        "id": "az-120-microsoft-video-series",
+        "title": "SAP on Azure training videos",
+        "url": "https://learn.microsoft.com/en-us/shows/sap-on-azure-training-videos/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Public technical enablement series; select episodes by objective and verify age-sensitive product behavior."
+      },
+      {
+        "id": "az-120-pluralsight-big-picture",
+        "title": "SAP on Azure: The Big Picture",
+        "url": "https://www.pluralsight.com/courses/sap-azure-big-picture",
+        "publisher": "Steve Buchanan via Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Pluralsight displayed 1h 28m and a June 5, 2026 update."
+      },
+      {
+        "id": "az-120-pluralsight-building-deploying",
+        "title": "Building and Deploying Azure for SAP Workloads",
+        "url": "https://www.pluralsight.com/courses/building-deploying-azure-sap-workloads",
+        "publisher": "Tim Warner via Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Pluralsight displayed 2h 52m and a June 5, 2026 update."
+      },
+      {
+        "id": "az-120-pluralsight-infrastructure",
+        "title": "Designing and Implementing Azure Infrastructure to Support SAP Workloads",
+        "url": "https://www.pluralsight.com/courses/azure-infrastructure-designing-implementing-sap-workloads-cert",
+        "publisher": "Steve Buchanan via Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Pluralsight displayed 1h 14m and a June 5, 2026 update."
+      },
+      {
+        "id": "az-120-pluralsight-hadr",
+        "title": "Designing and Implementing High Availability and Disaster Recovery for SAP Workloads on Azure",
+        "url": "https://www.pluralsight.com/courses/azure-sap-workloads-designing-implementing-ha-disaster-recovery-cert",
+        "publisher": "Roosevelt Wilmot via Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Pluralsight displayed 1h 12m and a June 5, 2026 update."
+      },
+      {
+        "id": "az-120-oreilly-implementation-guide",
+        "title": "SAP on Azure Implementation Guide",
+        "url": "https://www.oreilly.com/library/view/sap-on-azure/9781838983987/",
+        "publisher": "Packt via O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "242-page February 2020 book with a displayed 6h 56m estimate; useful for durable context but requires full reconciliation with 2026 objectives and services."
+      },
+      {
+        "id": "az-120-udemy-reteam-labs",
+        "title": "AZ-120: Microsoft Azure for SAP Workloads Exam Preparation",
+        "url": "https://www.udemy.com/course/microsoft-azure-for-sap-workloads-az-120-exam-preparation/",
+        "publisher": "ReTeam Labs via Udemy",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Udemy displayed 5h 42m and a September 2021 update; every objective and product detail needs reconciliation with the April 2026 baseline."
+      },
+      {
+        "id": "az-120-measureup-practice-test",
+        "title": "Microsoft Practice Test AZ-120: Planning and Administering Microsoft Azure for SAP Workloads",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-120-planning-and-administering-microsoft-azure-for-sap-workloads.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-120"
+        ],
+        "notes": "Paid practice test; verify question count, access period and April 2026 objective alignment before purchase."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "6206e287da3fe54ae193140116e4b092682feb4b02403f246ed50dbe5b940b7f",
+      "guide_sections": "1–2 / Sizing, SAPS, HANA memory; lab 1; example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "d324d0d8f74d4d12fed9e5c801ac4f9275ced5d643c9cd6f808cb0810cd9d56e",
+      "guide_sections": "1–2 / Exact supportability and source evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "75531f5da6817e6db8edbb5481d3bb3712b23a0a1738755ef1f699526ef39455",
+      "guide_sections": "2–3 / Compute, I/O and flow requirements; example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "0f8911ac334a469b8a33b461a5f9605378c1da65dcf1603decc37a49b267e645",
+      "guide_sections": "2 / Subscription quota versus zonal physical capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "b8ee6c1aa5613f5dcb17132b39aef5012a9166365fa36dadefd39949631ba236",
+      "guide_sections": "2 / Licenses and migration entitlements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "ec20cf60bca20e46176b8ebf493d5d6d5a14f7c884c61ca1d0bce0cba7d13431",
+      "guide_sections": "2, 5–6 / Cost components and allocation; example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "0c9a41a6df6143351e8576c507ea70cab8e75a12d3c44a3a69df37a8c437de1a",
+      "guide_sections": "2 / Azure and SAP support ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "9f458af8ae14f2992f7145373f4559efe9fba04bf748c02f89805d8d6811a97d",
+      "guide_sections": "2 / Migration-pattern comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "b5a31e5b8993dd5d85216250ad601a64c125f8b6b088e9f662a293144e4fd243",
+      "guide_sections": "2 / Migration factory/tool selection; scenario A; example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "96ec519d0e43129bf859e60794038ed813c232a55b7897ed1a1fd0c76369ccd2",
+      "guide_sections": "2 / Azure and SAP authorization boundaries; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "969dc8bc81006dd413928152345b199118aa69f9c9a445b7f1abd38dc9be70cf",
+      "guide_sections": "2 / Policy effects and evidence; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3f8ac9ccbeb5e1bf3593b7f3eed4ee8b85cf0e3878af2c42a266b7cee656490a",
+      "guide_sections": "2 / OS, database, SAP and Entra authentication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "3bd0316011c50094b26a2eb466639b5af98f77624dee278b977374ef109c3303",
+      "guide_sections": "2 / SaaS federation, provisioning and deprovisioning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "dcdb8fd98aad46f007cf8ea6811b6cc09c7c30102a1221a57e07817ea83db614",
+      "guide_sections": "2 / Management hierarchy and scopes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "b8f6d2ed68db7696e6256858e5265294b1ce0d94828ddf03dac5933518eb2843",
+      "guide_sections": "2 / Landing-zone controls; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "67b3719abf6233dcc2b2418e1f2d0d693b6e6d7919ffc6e76df7a34ac8e0bddf",
+      "guide_sections": "2 / RISE peering, gateway, DNS and ownership; scenario B",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "0debc29c5a033ddee7b42fb7a80f6ca6e0321bc284d7851d64c737e41d143d24",
+      "guide_sections": "2 / Bilateral peering, route and DNS validation; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c3b3d71055f51f4d0ff900e538311d4791709dfa717b51f0f4d09f9e9ac2074e",
+      "guide_sections": "2, 6 / Customer versus SAP estate integration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "47e83a6ff55e8516e9bf04721301873d635b689d9b3b4a8f4543a1c218a3e7c7",
+      "guide_sections": "2 / RISE data and archive integration boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "c907169c59ca6d869c825238affb2a72a0287804d818b0a695921f3a3f2105c1",
+      "guide_sections": "2 / RISE federation and incident ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "ca877d3b4753409a20706ed11c60b6b4781853bd650059b29f37116fe7bdb085",
+      "guide_sections": "1, 3 / Certified VM/OS/HANA combination; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "1d9392c610299a960beffc74e36abf569be3407cc528a8f855e519a69ca422a1",
+      "guide_sections": "3 / VM Agent, SAP extension variants and prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "19b057b07bba29d305690e5e3690dcfc94e939c04f5c0a82f5d3b3c7a98d810b",
+      "guide_sections": "3 / Marketplace support, license and image provenance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "f6f6b9d4d174f37606c809264484a4f5baea96ec572d7d6ced2fe2982c524450",
+      "guide_sections": "3 / Custom image preparation and versioned rebuild",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "167f4763a1a831064b680fdf6b4ad3bdd2954b940ae2100ffe1be14526120402",
+      "guide_sections": "3 / Resource IaC versus SAP configuration; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "5a62d5948cc42cb6505ae31ff6d1da0ab5c136b06ad18e3800b08ecf6de10c4a",
+      "guide_sections": "3 / SDAF layers, pinned release and STAF acceptance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "d0cd6e72559d169a4381b3c327cdca7ed5565153e588c6d1f0af17a0eede8d2c",
+      "guide_sections": "3, 5 / ACSS supported deployment and VIS lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "bd01a81a800e030d11c3b9b93a3c51bbebaac468ccb9c33406394ba86071f886",
+      "guide_sections": "3 / Nonoverlap, segmentation and routing; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "832a03fc321ad267d958a37d418cdffb1f22af87f11b72ebefb64e20be28f157",
+      "guide_sections": "3 / Accelerated Networking and MANA evidence; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "a67a89416486a83711214e075c12f10d9b18ca856d79103f8c77496b929de070",
+      "guide_sections": "3 / PPG latency versus placement/capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "ed9956eb2ca2cebe559709f264fb39ede08094f0ff58288c00210e379b019a28",
+      "guide_sections": "3, 6 / Representative latency measurement; example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "534c622cf0111ce27719902e06053917f0a8946d86d415186dac6ed0c8940643",
+      "guide_sections": "3 / UDR, peering and return traffic",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "1b6209c68d36d7e0281ae2d4d8baa3d309b67788bebfc52364ae712ebdcc5617",
+      "guide_sections": "3 / NSG and firewall controls for each flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "e92b7827259c6d42872c827aff61cb3885a16e6282bc44bccb13f172e5123117",
+      "guide_sections": "3 / Service/private endpoint and DNS boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "0b27dbbb8af4e9e0eb221139d861e339cd6a484f2e889612a64daaf49a1a5a6d",
+      "guide_sections": "2–3 / Hybrid DNS and RISE delegation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "73e47c9a8c03eaf1505dfedb917496d0d5ef9d6a6e96ddcc382b64916b1b3408",
+      "guide_sections": "2–3 / ExpressRoute resilience and gateway transit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "8bd89ff93ff7e5039104c98838ecc2aface9fd1459746736cc6b407e715a9d9c",
+      "guide_sections": "3 / Certified storage and corresponding HSR volumes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "57ae2284cf984a61707783b4a2e639ee326f5170583015bbc4bdeaafe218e58c",
+      "guide_sections": "3 / Striping, simple volumes and shared VM limits; example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "cb56e0b921a768ffa6a491bbb63a6d03971335a72fe46bb0502f0c9fa69b1f2d",
+      "guide_sections": "3 / Storage access and identity controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "9e948d7ba5a9deebe2548475b5ddc4559f36feddda5ceba8d8bf34cfecf1a2ec",
+      "guide_sections": "3–4 / Redundancy, backup and data protection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "f7dc066f1a1273cbc094ca038602051bbf4964edcca8b2734d8b88695b241cc4",
+      "guide_sections": "3 / Cache settings by disk and volume role",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "593441cca5b1fbde98b2f05a556452409600ddc2c02df8a1d4a596e9e9603025",
+      "guide_sections": "3 / Eligible log disks, SKU and Write Accelerator limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "faab64372ff29fe7aa22343b581260b053193fc7c187002311763364a669a7e0",
+      "guide_sections": "3 / At-rest, host and in-transit protection layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "5d061d5df3b5e01457b09732d2f542bd9789fe1a64230153e6de858d2359264a",
+      "guide_sections": "3 / ANF layout, protocol and capacity/performance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "2d77f9fe89a7202dbae22a5c95eb113105ebf101225adbf0056c2bf5e2c85670",
+      "guide_sections": "3 / Azure Files support, protocol and availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "4e63bbd99796de333fa85ae77edee9d6342c05852fcb89c98e65fbaafdc5e345",
+      "guide_sections": "1, 4 / End-to-end availability versus component SLA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "c3e2ec1f561a6d72ab30eed8a8e3d0e3c1f1fd14176ee42733d18cb8858bc475",
+      "guide_sections": "4 / Sets, zones and failure isolation; example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "9197c646e6a8f0d34476dee3a25ae3f6347d75543b00f3717645bfc6602d74f6",
+      "guide_sections": "4 / Internal load balancer, probes and floating IP",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "1edd6d93314be79193a75d4f7d5d5d3e9d94843e28a33db3e7a038bc00d66ba0",
+      "guide_sections": "4 / HANA and ASCS/ERS cluster dependencies; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "0cc4b83e330f5480939580181f01195f679c6ce3f7ff910db7fdb60b144f7f73",
+      "guide_sections": "4 / SQL availability and quorum design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "51284e26ea44ee1d69f1db6641c5adea611c7b953bf28dcf18fdf10a1440c119",
+      "guide_sections": "4 / Pacemaker ownership versus fencing isolation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "ce389ba7dd93bd5fde1789d6c4bac4163c5f4776ecd18325860d5e2a6c4f2fd2",
+      "guide_sections": "4 / Azure fence or shared-disk/iSCSI SBD; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "4488c0153ad65808a743b67f906f01ebb11546f58af5b3a2b0704a59e14d13b9",
+      "guide_sections": "3–4 / Supported replication layer and HSR symmetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "40d7e91277f0477617b3ca79bbf0c52272b1c54038a85c800e4fc671a62b7555",
+      "guide_sections": "4–5 / Ordered restart, cluster control and VIS scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "e549d0a443bfada817ac554ccbe8c45fd7ed164eb1ed5f25e5db74279765f6b3",
+      "guide_sections": "4 / ASR suitability per SAP tier and database replication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "93b22acfecbf7810df2888627cbc66c7eeb4293f05e33e30e1c85cc030c118c0",
+      "guide_sections": "4 / Regional capacity, latency and DR placement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "3ac67f320c8fc7340beef039c611856a31ec64628f9ac427021f63f5144327cb",
+      "guide_sections": "4 / DNS, identity, routes and dependencies; scenario C",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "f46c544ba83467feecc98a995ead9e98d00b8ec21e1d09cd452a4faeae5a7e0f",
+      "guide_sections": "4, 6 / Backup strategy and measured targets; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "7144e99094c8aba6e79342b0f22710c16535d2235ea4a5fad03c910b437468c4",
+      "guide_sections": "4 / Backint full/log versus instance snapshot policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "f8949fec2c97caf342c19359fd2ad3b2ec396f487be0f0681dbe3e54b1355ada",
+      "guide_sections": "4 / Snapshot consistency, permissions and preview scope; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "239023184b7554c028db39f14d32ef59ed3443c5d3014920210402a081251a71",
+      "guide_sections": "4 / Continuous chain and restore validation; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "4ae82d9fd44c6e3766b7c44b786e3fe3c6958bb9927e9e672edc0c9e1e3da474",
+      "guide_sections": "4, 6–7 / Isolated drill and acceptance evidence; labs 6–7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "f42ecf1f5107cdaa50508c3c85db5c9df7b5176759f679029ce0c27047c7d087",
+      "guide_sections": "5 / Advisor recommendations subject to SAP support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "132e1503738740126849596cc3c888073b69bb74b2d18163a438600be41221ee",
+      "guide_sections": "3, 5–6 / Network bottlenecks and measured latency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "6ae2df814c2e3b9d24c06929d0154f780b831cb95f6e205c90b792d94fbf0f13",
+      "guide_sections": "2, 5–6 / Savings/RI commitment versus VM allocation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "2e5eff040ea9376e7926003b9943aced2a9bc2cfcea602e7d29424ca9c2e8477",
+      "guide_sections": "3, 5 / Certified resizing and surviving capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "327d286877f36b40dbecb19d4b339420a8f397a5c2675d554cb5ae8613582510",
+      "guide_sections": "3, 5 / Storage allocation and performance budgets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "756ecf5e700f2cdef9bf112c0fd870761c1b03a6f7995b09ae1219800ec814bb",
+      "guide_sections": "5 / Archive retention and application performance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "b60657df3e607114c58751f852d8559df872aff895ee052e2c5de940c6282cb4",
+      "guide_sections": "5–6 / Application/database tuning, capacity and cost",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "87011904cade358346b105a40e5c234dd152d5aa1a729070ec8198c23459cec0",
+      "guide_sections": "5 / Azure/guest telemetry and evidence ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "43b66f44223b6992715d2b5d79b94becb0bfffadd08cac85c669f619a4b75604",
+      "guide_sections": "4–5 / Cluster state, fencing and failover telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "e76fa2047bb63d66ec27684fe5abcf142c0517895a398d6f6a47d9ee46f7f602",
+      "guide_sections": "5 / Storage IOPS, throughput and latency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "12ba1b5e5deb90646bc85722095d3f6fbf15ba1338f437282edeb394669ff57e",
+      "guide_sections": "3, 5 / Network signals and Network Watcher",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "52d60805147ee9d8bc8ceeb4b7439a9e7e1fc301995c66e2e3aca457b24296d0",
+      "guide_sections": "5 / AMS provider configuration and actual data; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "b9c3c0860cc2160380bb1a7289654e9eeb82bd90f3f72d5c287ca92202062a3b",
+      "guide_sections": "4–5 / Backup/restore evidence and model conflict; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "56734a973afee45fbcde5ef88a521ee70ae61b5aeffea19a62614212f71dd13e",
+      "guide_sections": "5 / VIS application stop versus VM allocation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "d1baed2f809df9ea9bcd198b618e45fdaa6022189ad100a6f70a204a16ed28b2",
+      "guide_sections": "5 / VIS registration, resources and operational prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "d06febb3364031073d9a9baef03b4d93b0680b4e1311c6f5dfa9e759425fbb01",
+      "guide_sections": "5 / LaMa connector and ordered landscape operations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AZ-120",
+        "title": "Planning and Administering Microsoft Azure for SAP Workloads",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+        "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+        "snapshot_path": "data\\objective-snapshots\\az-120-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\az-120-official-status.json",
+        "previous_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+        "current_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+        "previous_status_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "current_status_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of April 17, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 45,
+    "reachable": 43,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "az-120-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+      "checked_at": "2026-09-28T08:56:48.111161+00:00",
+      "health": {
+        "id": "az-120-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AZ-120: Planning and Administering Azure for SAP Workloads",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "dff6268a52767f5fb6a8fca81d95dcb4cd5e523c36c486402edbed8e0ff2cb44",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+      "sha256": "286c41e6a6032e31812d3cfff3f76fb804e46c7416ab2f480e08610dc613e76a",
+      "text_characters": 11036
+    },
+    {
+      "id": "az-120-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+      "checked_at": "2026-09-28T08:56:48.111831+00:00",
+      "health": {
+        "id": "az-120-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure for SAP Workloads Specialty - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "b3228d7a972a036d0004420c4bec47e5eda0e9b7b0d069a30dca0e271aa2edde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+      "sha256": "8833d0066a03f916abd2d937cf1ea3a79605cbb9ceef99734c84b6ce6a536e25",
+      "text_characters": 4304
+    },
+    {
+      "id": "az-120-supported-products",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure",
+      "checked_at": "2026-09-28T08:56:48.112238+00:00",
+      "health": {
+        "id": "az-120-supported-products",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure",
+        "content_type": "text/html",
+        "page_title": "What SAP software is supported on Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure",
+        "duration_signals": [],
+        "signal_fingerprint": "861ab3ceb0cb10b2cdffb44df6dd755ed31bb340ec5863c5261691c3fc5506d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure",
+      "sha256": "c7aea0373a465c43f068454f1eb964c95864bc3904549a43cad61ce712943621",
+      "text_characters": 12874
+    },
+    {
+      "id": "az-120-supported-scenarios",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations",
+      "checked_at": "2026-09-28T08:56:48.540098+00:00",
+      "health": {
+        "id": "az-120-supported-scenarios",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations",
+        "content_type": "text/html",
+        "page_title": "SAP on Azure: Supported Scenarios with Azure VMs",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations",
+        "duration_signals": [],
+        "signal_fingerprint": "f5c4c312fbd64ff29eac9423068816b9fc8eef3131ad916029562490b426bfb0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations",
+      "sha256": "2c5ac770ea4f5ff0757e25be2d75ede71aa323cb699c6dc26db8920662c0210f",
+      "text_characters": 34142
+    },
+    {
+      "id": "az-120-deployment-planning-guide",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide",
+      "checked_at": "2026-09-28T08:56:48.540976+00:00",
+      "health": {
+        "id": "az-120-deployment-planning-guide",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide",
+        "content_type": "text/html",
+        "page_title": "Plan and implement an SAP deployment on Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide",
+        "duration_signals": [],
+        "signal_fingerprint": "561ee9e5fc0027a7ed08996168dbc6d9f6d42dca364ea986e5f6ef8daa334a99",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide",
+      "sha256": "de8a3b75de3e055af14f2cd66bf7fd2b49d2f008e75d25b114b4697820220fc8",
+      "text_characters": 67661
+    },
+    {
+      "id": "az-120-cloud-adoption-plan",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan",
+      "checked_at": "2026-09-28T08:56:48.572847+00:00",
+      "health": {
+        "id": "az-120-cloud-adoption-plan",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan",
+        "content_type": "text/html",
+        "page_title": "Plan for SAP cloud adoption on Azure - Cloud Adoption Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan",
+        "duration_signals": [],
+        "signal_fingerprint": "16a45f8934b1fa527a921d58462a368236fd8bf38c02d3e3550eb3ae7d3450ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan",
+      "sha256": "d2f5e65a83548cecb68e926029064895d9abef21fb92aeadec1ac8f730d20a51",
+      "text_characters": 6335
+    },
+    {
+      "id": "az-120-sap-landing-zone",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready",
+      "checked_at": "2026-09-28T08:56:48.764048+00:00",
+      "health": {
+        "id": "az-120-sap-landing-zone",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready",
+        "content_type": "text/html",
+        "page_title": "Prepare Azure Landing Zones for SAP Migration - Cloud Adoption Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready",
+        "duration_signals": [],
+        "signal_fingerprint": "da9779ef3a4985754c836ff4f4f29cf42549393e750091ae50fcc2015175a8dc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready",
+      "sha256": "30a6aa4c33f8b0c5ae2941b290f9d24302868426daaf202071c0b0d05aa9bff0",
+      "text_characters": 4152
+    },
+    {
+      "id": "az-120-rise-integration",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+      "checked_at": "2026-09-28T08:56:48.809077+00:00",
+      "health": {
+        "id": "az-120-rise-integration",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+        "content_type": "text/html",
+        "page_title": "Integrating Azure with SAP RISE",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+        "duration_signals": [],
+        "signal_fingerprint": "2882b00f9e656a5e098606105f504140683b64da6248f80bde6b5d9ade57b043",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+      "sha256": "34d4467f277c6d71968f73bda96583be288190c59b720b667f890986c63b0f0c",
+      "text_characters": 5257
+    },
+    {
+      "id": "az-120-vm-extension",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap",
+      "checked_at": "2026-09-28T08:56:48.931766+00:00",
+      "health": {
+        "id": "az-120-vm-extension",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap",
+        "checked_at": "2026-09-28T08:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap",
+        "content_type": "text/html",
+        "page_title": "Implement the Azure VM extension for SAP solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap",
+        "duration_signals": [],
+        "signal_fingerprint": "5598526424a6a09d28d8e57c3c8b862b8ec69377611c5dc40605e2198d1636f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/vm-extension-for-sap",
+      "sha256": "9f14d55bf2cc247159d5c6ffc08674d2651bb2c19224b343b958dcff47afe970",
+      "text_characters": 4648
+    },
+    {
+      "id": "az-120-hana-storage",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+      "checked_at": "2026-09-28T08:56:49.036583+00:00",
+      "health": {
+        "id": "az-120-hana-storage",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+        "content_type": "text/html",
+        "page_title": "SAP HANA Azure virtual machine storage configurations",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+        "duration_signals": [],
+        "signal_fingerprint": "a6929988e943a3b46a06bc9a3beb2755a2b210bd346b54bac997500261c447b4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+      "sha256": "10c90395408db9e446d7a99b4465fabdaa0c35b195ba06be2f742fcb5cc8a1fe",
+      "text_characters": 12259
+    },
+    {
+      "id": "az-120-ha-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios",
+      "checked_at": "2026-09-28T08:56:49.037166+00:00",
+      "health": {
+        "id": "az-120-ha-architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios",
+        "content_type": "text/html",
+        "page_title": "Azure VMs HA architecture and scenarios for SAP NetWeaver",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios",
+        "duration_signals": [
+          "200 minutes",
+          "21.6 minutes"
+        ],
+        "signal_fingerprint": "2b046932cdf728aa0f7452a14df184a7351b45cc6d859dcc6368c3ae1f5f2627",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios",
+      "sha256": "36f9e2222bb28c50e4b05de438dd7637561c3d53088ca958981acde7fa6b1440",
+      "text_characters": 22543
+    },
+    {
+      "id": "az-120-availability-zones",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones",
+      "checked_at": "2026-09-28T08:56:49.162927+00:00",
+      "health": {
+        "id": "az-120-availability-zones",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones",
+        "content_type": "text/html",
+        "page_title": "SAP workload configurations with Azure Availability Zones",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones",
+        "duration_signals": [],
+        "signal_fingerprint": "5186f5d07e99e4743e163491bf118175474edd75700e5232f66f8a85c27a78b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones",
+      "sha256": "9eb1d79723054adde76167d72841f70408a1805166c258cf08e73c39f752abe4",
+      "text_characters": 29789
+    },
+    {
+      "id": "az-120-disaster-recovery",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide",
+      "checked_at": "2026-09-28T08:56:49.242697+00:00",
+      "health": {
+        "id": "az-120-disaster-recovery",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide",
+        "content_type": "text/html",
+        "page_title": "Disaster Recovery recommendation for SAP workload",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide",
+        "duration_signals": [],
+        "signal_fingerprint": "b1af238423da0e6f68d12b2e2cf04884f8e302077ace9fd0c97e1d57f3911de1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide",
+      "sha256": "eb5257e51f90406ae889b5e3554482868c43e68f47c3cacd0fdd58f36a2ad3d6",
+      "text_characters": 14745
+    },
+    {
+      "id": "az-120-hana-hsr-backup",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup",
+      "checked_at": "2026-09-28T08:56:49.280443+00:00",
+      "health": {
+        "id": "az-120-hana-hsr-backup",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup",
+        "content_type": "text/html",
+        "page_title": "Back up SAP HANA System Replication databases on Azure VMs using Azure Backup - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup",
+        "duration_signals": [
+          "2 hour"
+        ],
+        "signal_fingerprint": "86407fc9eb12e90c1a6519830e820720224cafcad41dd29435c7e8e1e0da748a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup",
+      "sha256": "67657382d6e033cbfb386cde46dbb55ebd9d097f69c421456222ad75e0617109",
+      "text_characters": 21205
+    },
+    {
+      "id": "az-120-monitor-for-sap",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+      "checked_at": "2026-09-28T08:56:49.403953+00:00",
+      "health": {
+        "id": "az-120-monitor-for-sap",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+        "content_type": "text/html",
+        "page_title": "What is Azure Monitor for SAP solutions?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "a84cbeab5969885eddaf4916fee534bb204ce981e5aef1b8fa0ed9078f0cdc1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+      "sha256": "2ea62ea67325b01f7ace439720f7b6dfeb180243e7dab6c2d6831bd3a57bf4fc",
+      "text_characters": 9421
+    },
+    {
+      "id": "az-120-azure-center-sap",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview",
+      "checked_at": "2026-09-28T08:56:49.455445+00:00",
+      "health": {
+        "id": "az-120-azure-center-sap",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview",
+        "content_type": "text/html",
+        "page_title": "Azure Center for SAP solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ba71240387f2b09af9b62d33d28a9cf6964d86724ee17793898341d9501ae044",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview",
+      "sha256": "a93bbd11144928b950b95599da59ec12e0ffdaa24b70bde432d8bf6a8a95aa14",
+      "text_characters": 4994
+    },
+    {
+      "id": "az-120-deployment-automation-framework",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/automation/tutorial",
+      "checked_at": "2026-09-28T08:56:49.524892+00:00",
+      "health": {
+        "id": "az-120-deployment-automation-framework",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/automation/tutorial",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/automation/tutorial",
+        "content_type": "text/html",
+        "page_title": "Deploy SAP Deployment Automation Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/automation/tutorial",
+        "duration_signals": [
+          "20 minutes"
+        ],
+        "signal_fingerprint": "c2182dd1556ecd71a93368064572f5f8c1bc055c4b1ed2b72139585d5bcd3bdd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/automation/tutorial",
+      "sha256": "11d1f834ac77c5a191366d01a53d56c20c56e2eb6a9c3beed1da69911c21391a",
+      "text_characters": 48297
+    },
+    {
+      "id": "az-120-lama-connector",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation",
+      "checked_at": "2026-09-28T08:56:49.636308+00:00",
+      "health": {
+        "id": "az-120-lama-connector",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation",
+        "content_type": "text/html",
+        "page_title": "Set up the SAP LaMa connector for Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation",
+        "duration_signals": [],
+        "signal_fingerprint": "3539f1e9f60405d9069948aa7e22306edcfeae001e3618d185864e7b328f95e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation",
+      "sha256": "c1fe4902b2c1e51eb9f045dddb7a3ceee944366033ade107195ceb4a79a51bb9",
+      "text_characters": 32216
+    },
+    {
+      "id": "az-120-microsoft-learn-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-120t00/",
+      "checked_at": "2026-09-28T08:56:49.673209+00:00",
+      "health": {
+        "id": "az-120-microsoft-learn-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-120t00/",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/az-120t00",
+        "content_type": "text/html",
+        "page_title": "Course AZ-120T00-A: Planning and Deploying SAP on Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/az-120t00",
+        "duration_signals": [],
+        "signal_fingerprint": "1bafb7a2213372e5a42e7a14131785d632c041f53b859b76ab275e8abb8b748a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/az-120t00",
+      "sha256": "ea3206b7b17f3a8fb3dd3be7b9b733cc0c07ff7c512e0802ad363ca7be926c63",
+      "text_characters": 2067
+    },
+    {
+      "id": "az-120-microsoft-video-series",
+      "url": "https://learn.microsoft.com/en-us/shows/sap-on-azure-training-videos/",
+      "checked_at": "2026-09-28T08:56:49.761144+00:00",
+      "health": {
+        "id": "az-120-microsoft-video-series",
+        "url": "https://learn.microsoft.com/en-us/shows/sap-on-azure-training-videos/",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/sap-on-azure-training-videos/",
+        "content_type": "text/html",
+        "page_title": "SAP on Azure training videos",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/sap-on-azure-training-videos/",
+        "duration_signals": [],
+        "signal_fingerprint": "bc753aa99c1c55d16c05d2eeb71cae6c1f3b55afdc1b5c5ab7aabc69f164c89c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/sap-on-azure-training-videos/",
+      "sha256": "bdbe01a4303e2551d4ce8ff37b533e629b85c620f429ebf26bb4873f483af2eb",
+      "text_characters": 321
+    },
+    {
+      "id": "az-120-pluralsight-big-picture",
+      "url": "https://www.pluralsight.com/courses/sap-azure-big-picture",
+      "checked_at": "2026-09-28T08:56:49.868678+00:00",
+      "health": {
+        "id": "az-120-pluralsight-big-picture",
+        "url": "https://www.pluralsight.com/courses/sap-azure-big-picture",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/sap-azure-big-picture",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "SAP on Azure: The Big Picture",
+        "canonical_url": "https://www.pluralsight.com/courses/sap-azure-big-picture",
+        "duration_signals": [],
+        "signal_fingerprint": "7c8041e34c600a43a50844d3d23c0d23de8ffea616258f0aebb94949cbc02efc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/sap-azure-big-picture",
+      "sha256": "1193b7308690e15c95604f77b87db35a74dc1fd80e864cfd1fa4b55e3270ecc0",
+      "text_characters": 5716
+    },
+    {
+      "id": "az-120-pluralsight-building-deploying",
+      "url": "https://www.pluralsight.com/courses/building-deploying-azure-sap-workloads",
+      "checked_at": "2026-09-28T08:56:49.968479+00:00",
+      "health": {
+        "id": "az-120-pluralsight-building-deploying",
+        "url": "https://www.pluralsight.com/courses/building-deploying-azure-sap-workloads",
+        "checked_at": "2026-09-28T08:56:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/building-deploying-azure-sap-workloads",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Building and Deploying Azure for SAP Workloads",
+        "canonical_url": "https://www.pluralsight.com/courses/building-deploying-azure-sap-workloads",
+        "duration_signals": [],
+        "signal_fingerprint": "162331dc3fbd3a950ef09205107d017802650e09fed9df20b6973d11fe908d2c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/building-deploying-azure-sap-workloads",
+      "sha256": "12cb35fad5d9726ef17f905d9f5bb72c9d4d3ae9900012c35b24c66646cfe241",
+      "text_characters": 8871
+    },
+    {
+      "id": "az-120-pluralsight-infrastructure",
+      "url": "https://www.pluralsight.com/courses/azure-infrastructure-designing-implementing-sap-workloads-cert",
+      "checked_at": "2026-09-28T08:56:50.052920+00:00",
+      "health": {
+        "id": "az-120-pluralsight-infrastructure",
+        "url": "https://www.pluralsight.com/courses/azure-infrastructure-designing-implementing-sap-workloads-cert",
+        "checked_at": "2026-09-28T08:56:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/azure-infrastructure-designing-implementing-sap-workloads-cert",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Designing and Implementing Azure Infrastructure to Support SAP Workloads",
+        "canonical_url": "https://www.pluralsight.com/courses/azure-infrastructure-designing-implementing-sap-workloads-cert",
+        "duration_signals": [],
+        "signal_fingerprint": "ae70a76f1a0f3ed2b2f3e7cf3cce05051251c6d2dae662aa2d78588eb3dd2056",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/azure-infrastructure-designing-implementing-sap-workloads-cert",
+      "sha256": "f580c8ff8178fa5ad706870a53c72689c53a8b3141adee6a449e18e520dbfb06",
+      "text_characters": 4989
+    },
+    {
+      "id": "az-120-pluralsight-hadr",
+      "url": "https://www.pluralsight.com/courses/azure-sap-workloads-designing-implementing-ha-disaster-recovery-cert",
+      "checked_at": "2026-09-28T08:56:50.378919+00:00",
+      "health": {
+        "id": "az-120-pluralsight-hadr",
+        "url": "https://www.pluralsight.com/courses/azure-sap-workloads-designing-implementing-ha-disaster-recovery-cert",
+        "checked_at": "2026-09-28T08:56:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/azure-sap-workloads-designing-implementing-ha-disaster-recovery-cert",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Designing and Implementing High Availability and Disaster Recovery for SAP Workloads on Azure",
+        "canonical_url": "https://www.pluralsight.com/courses/azure-sap-workloads-designing-implementing-ha-disaster-recovery-cert",
+        "duration_signals": [],
+        "signal_fingerprint": "d7f440f385609ce0342e771514848d577507d5df778608dea482734ff93e6210",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/azure-sap-workloads-designing-implementing-ha-disaster-recovery-cert",
+      "sha256": "1ac915e9e09dfb4536c260cb5c77b9e9412278f427cf57690bafd1bbb2c5dd04",
+      "text_characters": 5709
+    },
+    {
+      "id": "az-120-oreilly-implementation-guide",
+      "url": "https://www.oreilly.com/library/view/sap-on-azure/9781838983987/",
+      "checked_at": "2026-09-28T08:56:51.340503+00:00",
+      "health": {
+        "id": "az-120-oreilly-implementation-guide",
+        "url": "https://www.oreilly.com/library/view/sap-on-azure/9781838983987/",
+        "checked_at": "2026-09-28T08:56:51+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/sap-on-azure/9781838983987/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-120-udemy-reteam-labs",
+      "url": "https://www.udemy.com/course/microsoft-azure-for-sap-workloads-az-120-exam-preparation/",
+      "checked_at": "2026-09-28T08:56:51.356569+00:00",
+      "health": {
+        "id": "az-120-udemy-reteam-labs",
+        "url": "https://www.udemy.com/course/microsoft-azure-for-sap-workloads-az-120-exam-preparation/",
+        "checked_at": "2026-09-28T08:56:51+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/microsoft-azure-for-sap-workloads-az-120-exam-preparation/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-120-measureup-practice-test",
+      "url": "https://www.measureup.com/microsoft-practice-test-az-120-planning-and-administering-microsoft-azure-for-sap-workloads.html",
+      "checked_at": "2026-09-28T08:56:51.451612+00:00",
+      "health": {
+        "id": "az-120-measureup-practice-test",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-120-planning-and-administering-microsoft-azure-for-sap-workloads.html",
+        "checked_at": "2026-09-28T08:56:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-az-120-planning-and-administering-microsoft-azure-for-sap-workloads.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test AZ-120: Planning and Administering Microsoft Azure for SAP Workloads",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-az-120-planning-and-administering-microsoft-azure-for-sap-workloads.html",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "19235063e8bd557492a02357add65e4f2036bb7163746ef1fa7a824a652eca61",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-az-120-planning-and-administering-microsoft-azure-for-sap-workloads.html",
+      "sha256": "e5435c8b3d329a9d752affef5bdb6f0f13fcb1431b1d0cb8744ac86e6f8f4096",
+      "text_characters": 15826
+    },
+    {
+      "id": "az120-storage-types",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+      "checked_at": "2026-09-28T08:56:51.497631+00:00",
+      "health": {
+        "id": "az120-storage-types",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+        "checked_at": "2026-09-28T08:56:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+        "content_type": "text/html",
+        "page_title": "Azure storage types for SAP workload",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "be35ca8beff983c13daaebb83788e76e25f3bf5b83cc64a49280db17fe2ffc2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+      "sha256": "8e4553094132e4d9aa14395243f94b7e5637168006998c0310736665a6e87810",
+      "text_characters": 40145
+    },
+    {
+      "id": "az120-premium-v2",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2",
+      "checked_at": "2026-09-28T08:56:51.842177+00:00",
+      "health": {
+        "id": "az120-premium-v2",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2",
+        "checked_at": "2026-09-28T08:56:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2",
+        "content_type": "text/html",
+        "page_title": "SAP HANA Azure virtual machine Premium SSD v2 configurations",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2",
+        "duration_signals": [
+          "24 hour"
+        ],
+        "signal_fingerprint": "16d95dd7eaf289243ec47b9e0a54d2ebf3baf38bdf427a7ac301bb0a262842e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2",
+      "sha256": "fe425f0ec2f85c5c4b3d73f7d8762e20547978008226432923362ed3578fe344",
+      "text_characters": 10387
+    },
+    {
+      "id": "az120-write-accelerator",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+      "checked_at": "2026-09-28T08:56:51.842944+00:00",
+      "health": {
+        "id": "az120-write-accelerator",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+        "checked_at": "2026-09-28T08:56:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+        "content_type": "text/html",
+        "page_title": "Azure Write Accelerator - Azure Virtual Machines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+        "duration_signals": [],
+        "signal_fingerprint": "9891de2db64b6e0dd1e09260a7be62867b054e03b2ee943453de60e20c4b0a62",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+      "sha256": "9679e1bf09c7d6f78425b18a0978d1e08a2665a9a83a098a8497ef2079879187",
+      "text_characters": 15571
+    },
+    {
+      "id": "az120-suse-fence",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker",
+      "checked_at": "2026-09-28T08:56:52.118991+00:00",
+      "health": {
+        "id": "az120-suse-fence",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker",
+        "checked_at": "2026-09-28T08:56:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker",
+        "content_type": "text/html",
+        "page_title": "Set up Pacemaker on SUSE Linux Enterprise Server (SLES) in Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker",
+        "duration_signals": [
+          "2 minutes"
+        ],
+        "signal_fingerprint": "4cffa2f1fdd3928f663bb2aeec7ea14371df25588b4c1bf15f855eab742e44b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker",
+      "sha256": "9e141492953bb67c17a38496f4331018a4b3c6521df2bdc4dc22c7d0cbce1d2c",
+      "text_characters": 29350
+    },
+    {
+      "id": "az120-rhel-fence",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+      "checked_at": "2026-09-28T08:56:52.152315+00:00",
+      "health": {
+        "id": "az120-rhel-fence",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+        "checked_at": "2026-09-28T08:56:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+        "content_type": "text/html",
+        "page_title": "Set up Pacemaker on RHEL in Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+        "duration_signals": [],
+        "signal_fingerprint": "6a0e6d7e8d6f997a138360b09811a78d66953ad32d521d2cafec4c4539bf3148",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+      "sha256": "273406f6afee9997c32ad582201c0b27bd2772ad19e1072e39e889d0bce1ece0",
+      "text_characters": 33650
+    },
+    {
+      "id": "az120-snapshots",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+      "checked_at": "2026-09-28T08:56:52.440688+00:00",
+      "health": {
+        "id": "az120-snapshots",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+        "checked_at": "2026-09-28T08:56:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+        "content_type": "text/html",
+        "page_title": "Back up SAP HANA database instances on Azure VMs - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "5ba617ee475a92c3bf6d5ba1a10d15d1d9346a245a97a98b2fd1a600d7647f62",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+      "sha256": "4b867f205b4d47cc7d2bcb06a8b99320d3fa4a5ba1eb94a900daacca9d55491b",
+      "text_characters": 14957
+    },
+    {
+      "id": "az120-backup-faq",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "checked_at": "2026-09-28T08:56:52.460487+00:00",
+      "health": {
+        "id": "az120-backup-faq",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+        "checked_at": "2026-09-28T08:56:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+        "content_type": "text/html",
+        "page_title": "FAQ — Back up SAP HANA databases on Azure VMs - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "d589a90497b942982283978dbb622a709dc103b9319241f2ab81861462337ea6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "sha256": "d2bb58ffca420701117cfeb497454aa12217b335547822bcbf8c6cb46d810313",
+      "text_characters": 21360
+    },
+    {
+      "id": "az120-acss-register",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system",
+      "checked_at": "2026-09-28T08:56:52.772872+00:00",
+      "health": {
+        "id": "az120-acss-register",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system",
+        "checked_at": "2026-09-28T08:56:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system",
+        "content_type": "text/html",
+        "page_title": "Register an existing SAP system",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system",
+        "duration_signals": [],
+        "signal_fingerprint": "188ceccbf76f6bc657e012565772df651c673f4476792dc5b5c33c48e744f353",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system",
+      "sha256": "2fe7a90a38e8a63072f48664fbb7a17f7a19e7f40f5da33fd292176b65684479",
+      "text_characters": 16019
+    },
+    {
+      "id": "az120-acss-start",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+      "checked_at": "2026-09-28T08:56:52.801181+00:00",
+      "health": {
+        "id": "az120-acss-start",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+        "checked_at": "2026-09-28T08:56:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+        "content_type": "text/html",
+        "page_title": "Start and stop SAP systems, instances, and HANA database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+        "duration_signals": [],
+        "signal_fingerprint": "512937ca0a2f43a9c5135929e3b3db5de1cd2fe08ae80d20cc0a7a0595f0cb0f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+      "sha256": "1cf4ee7a6be2bf031aa98737be09a641849c9c71c12e971ddc89e5d7fc70a826",
+      "text_characters": 5898
+    },
+    {
+      "id": "az120-providers",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+      "checked_at": "2026-09-28T08:56:53.057752+00:00",
+      "health": {
+        "id": "az120-providers",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+        "checked_at": "2026-09-28T08:56:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+        "content_type": "text/html",
+        "page_title": "What are providers in Azure Monitor for SAP solutions?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+        "duration_signals": [],
+        "signal_fingerprint": "1e748677a59b1f6ba39b31e29dc2d87104318f068d927e039b83d23b7077c679",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+      "sha256": "e46f82699a8044769900a6b184146230bbb0cc33cf758baadcd5c8f798949e58",
+      "text_characters": 10898
+    },
+    {
+      "id": "az120-sdaf-news",
+      "url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+      "checked_at": "2026-09-28T08:57:34.590337+00:00",
+      "health": {
+        "id": "az120-sdaf-news",
+        "url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+        "checked_at": "2026-09-28T08:57:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Release v3.23.0.0 · Azure/sap-automation",
+        "canonical_url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+        "duration_signals": [],
+        "signal_fingerprint": "fc244320adbeb368946ea5e7192229d96bd91cd9681fb2261a4f293dd1598210",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+      "sha256": "0e152867b7239fda8d59785c8915eb4fd5b6a5e2965c1646ef6a72cd32f2c28c",
+      "text_characters": 2793
+    },
+    {
+      "id": "az120-mana-linux",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+      "checked_at": "2026-09-28T08:56:53.183185+00:00",
+      "health": {
+        "id": "az120-mana-linux",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+        "checked_at": "2026-09-28T08:56:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+        "content_type": "text/html",
+        "page_title": "Linux VMs with the Microsoft Azure Network Adapter",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+        "duration_signals": [],
+        "signal_fingerprint": "8e8d630d3fed703006be9614fdad63b17ffbc4bc93576433c93723ea052f0845",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+      "sha256": "369a1c355b9263c7ee586da9680eab663366ba8ce07b1705344b29a1c5528ba1",
+      "text_characters": 4267
+    },
+    {
+      "id": "az120-rise-network",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network",
+      "checked_at": "2026-09-28T08:57:34.591328+00:00",
+      "health": {
+        "id": "az120-rise-network",
+        "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network",
+        "checked_at": "2026-09-28T08:57:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network",
+        "content_type": "text/html",
+        "page_title": "Network connectivity options in Azure with SAP RISE",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network",
+        "duration_signals": [],
+        "signal_fingerprint": "3cd223b1c0d0faefcd62b28e488be4ba1ff61d46b6461f9dd2ada09cc32a575f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network",
+      "sha256": "c80ff32c3e5154363206e42bcb1b2199ffa29f256a699ce509b051dd54d09f79",
+      "text_characters": 18183
+    },
+    {
+      "id": "az120-zone-blog",
+      "url": "https://techcommunity.microsoft.com/blog/sapapplications/aligning-sap-application-servers-with-the-hana-primary-zone-on-azure-public-prev/4490925",
+      "checked_at": "2026-09-28T08:56:53.302503+00:00",
+      "health": {
+        "id": "az120-zone-blog",
+        "url": "https://techcommunity.microsoft.com/blog/sapapplications/aligning-sap-application-servers-with-the-hana-primary-zone-on-azure-public-prev/4490925",
+        "checked_at": "2026-09-28T08:56:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/sapapplications/aligning-sap-application-servers-with-the-hana-primary-zone-on-azure-public-prev/4490925",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Aligning SAP application servers with the HANA primary zone on Azure (Public Preview) — Part 1 | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/sapapplications/aligning-sap-application-servers-with-the-hana-primary-zone-on-azure-public-prev/4490925",
+        "duration_signals": [],
+        "signal_fingerprint": "9f013351ad2544e3c5aa7f9dc05a20c1dd7944bd40f4303578d7af3791659523",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/sapapplications/aligning-sap-application-servers-with-the-hana-primary-zone-on-azure-public-prev/4490925",
+      "sha256": "e9b342dacc3af5f13dfa8a954678282e4a6e3c6ffd415e25405432858e40d9dc",
+      "text_characters": 120,
+      "supplementary_article_extraction": {
+        "method": "Article body and author metadata from public HTML __NEXT_DATA__ JSON; rendered main is a shell",
+        "text_characters": 8917,
+        "sha256": "8f186dab59e49d074683360c69ef84045e3dcf2f3c2ad9f160751e3b92bd2b10",
+        "read_boundary": "Main concepts/support/active-passive section read from primary article and public embedded body; Part 2 and linked implementation code not read or run. Public preview/nonproduction only."
+      }
+    },
+    {
+      "id": "az120-sapphire-blog",
+      "url": "https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%E2%80%93-sap-sapphire-2026/4517634",
+      "checked_at": "2026-09-28T08:56:53.446955+00:00",
+      "health": {
+        "id": "az120-sapphire-blog",
+        "url": "https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%E2%80%93-sap-sapphire-2026/4517634",
+        "checked_at": "2026-09-28T08:56:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%E2%80%93-sap-sapphire-2026/4517634",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SAP on Azure Product Announcements Summary – SAP Sapphire 2026 | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%e2%80%93-sap-sapphire-2026/4517634",
+        "duration_signals": [],
+        "signal_fingerprint": "675d2ce08c750370c5bbc695b66c4ee6661f1868be356dfa0b11f5d25623c118",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%E2%80%93-sap-sapphire-2026/4517634",
+      "sha256": "7542681266c29c5685c3745f1d1329268c94efebf5592430baf928ef43b9ece4",
+      "text_characters": 88,
+      "supplementary_article_extraction": {
+        "method": "Article body and author metadata from public HTML __NEXT_DATA__ JSON; rendered main is a shell",
+        "text_characters": 16874,
+        "sha256": "9f5ac4b54e85c449348a0f02f4d3cfa02044c21987c2b161d071a74b43502521",
+        "read_boundary": "Primary public embedded metadata and SDAF/STAF automation section read. Broader customer/AI/product announcements not comprehensively reviewed or adopted."
+      }
+    },
+    {
+      "id": "az120-mana-blog",
+      "url": "https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534",
+      "checked_at": "2026-09-28T08:56:53.498657+00:00",
+      "health": {
+        "id": "az120-mana-blog",
+        "url": "https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534",
+        "checked_at": "2026-09-28T08:56:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MANA support for Existing VM SKUs:Why Now Is the Right Time to Update Linux on your SAP on Azure VMs | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534",
+        "duration_signals": [],
+        "signal_fingerprint": "bc1016e4b8fc3f3c081a9bb66f7e83700bcd52ff35f12c5a10d6e258c3fbc1b8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534",
+      "sha256": "37584d402aa76d4a9ad8c991245dfe54a449c70f3e1bec3e073803e9ff8e7485",
+      "text_characters": 126,
+      "supplementary_article_extraction": {
+        "method": "Article body and author metadata from public HTML __NEXT_DATA__ JSON; rendered main is a shell",
+        "text_characters": 3199,
+        "sha256": "453b1eccf5e80ad8cef25cc4100b506ef83a4695bd178139b49914ff0d30c9f7",
+        "read_boundary": "Entire public embedded main article and author/date metadata read. Original readiness exercise cross-checked with current Linux article; linked exception timelines not comprehensively reviewed."
+      }
+    },
+    {
+      "id": "az120-backup-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+      "checked_at": "2026-09-28T09:04:04.977318+00:00",
+      "health": {
+        "id": "az120-backup-architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+        "checked_at": "2026-09-28T09:04:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+        "content_type": "text/html",
+        "page_title": "Azure Backup architecture for SAP HANA Backup - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+        "duration_signals": [],
+        "signal_fingerprint": "8fa1cb4891b7a6a301d3794a8130be1c4c333d83ad7d0bd99c14703563a09801",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+      "sha256": "5c736fb73a5001ac0707d08346bb40fb98ec09b8e5a0d4528088ff484a8e3347",
+      "text_characters": 10883
+    },
+    {
+      "id": "az120-sentinel-retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+      "checked_at": "2026-09-28T09:04:04.978754+00:00",
+      "health": {
+        "id": "az120-sentinel-retirement",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+        "checked_at": "2026-09-28T09:04:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+        "content_type": "text/html",
+        "page_title": "Deploy the Microsoft Sentinel solution for SAP applications",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "592eda9a972c4ff48c8bb08c27759ad770ca9cbb5f9f8b6f42d3616e21704e80",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+      "sha256": "ae55e4287db18a0989af18ca87c1ff1fbc2b50a63aae7adf9e11d7a25ead10c2",
+      "text_characters": 6012
+    }
+  ],
+  "added_source_ids": [
+    "az120-storage-types",
+    "az120-premium-v2",
+    "az120-write-accelerator",
+    "az120-suse-fence",
+    "az120-rhel-fence",
+    "az120-snapshots",
+    "az120-backup-faq",
+    "az120-acss-register",
+    "az120-acss-start",
+    "az120-providers",
+    "az120-sdaf-news",
+    "az120-mana-linux",
+    "az120-rise-network",
+    "az120-zone-blog",
+    "az120-sapphire-blog",
+    "az120-mana-blog",
+    "az120-backup-architecture",
+    "az120-sentinel-retirement"
+  ],
+  "findings": [
+    {
+      "id": "az120-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "HANA backup FAQ does not clearly scope secondary stop/resume",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Native HSR architecture uses a logical backup item and automatic primary tracking; FAQ recommends manually stopping protection on a secondary.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "az120-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Mixed volume roles do not permit asymmetric replica storage",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current HANA storage guidance allows different certified data/log types but corresponding HSR volumes must match.",
+      "recommendation": "Add volume-role/replica distinction and shared I/O budget example.",
+      "disposition": "applied",
+      "source_id": "az-120-hana-storage",
+      "resolution": "Add volume-role/replica distinction and shared I/O budget example."
+    },
+    {
+      "id": "az120-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "An enabled NIC does not prove MANA traffic",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "MANA requires host hardware, guest driver, binding and increasing VF counters.",
+      "recommendation": "Add driver-readiness worksheet and nonproduction validation boundary.",
+      "disposition": "applied",
+      "source_id": "az120-mana-linux",
+      "resolution": "Add driver-readiness worksheet and nonproduction validation boundary."
+    },
+    {
+      "id": "az120-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "HSR snapshot support remains preview and needs independent log replay",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Standard/Enhanced differ and HSR requires Enhanced; database full/log protection precedes snapshots.",
+      "recommendation": "Add policy and chain distinctions with original RPO/RTO exercise.",
+      "disposition": "applied",
+      "source_id": "az120-snapshots",
+      "resolution": "Add policy and chain distinctions with original RPO/RTO exercise."
+    },
+    {
+      "id": "az120-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "VIS SAP stop leaves underlying VMs running",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SAP application and whole HANA instance actions do not deallocate VMs and have cluster-specific prerequisites.",
+      "recommendation": "Add operation scope and illustrative compute-cost calculation.",
+      "disposition": "applied",
+      "source_id": "az120-acss-start",
+      "resolution": "Add operation scope and illustrative compute-cost calculation."
+    },
+    {
+      "id": "az120-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Monitor resource existence does not establish component telemetry",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Without providers AMS does not collect SAP component data.",
+      "recommendation": "Add provider/ingestion/alert evidence checks.",
+      "disposition": "applied",
+      "source_id": "az120-providers",
+      "resolution": "Add provider/ingestion/alert evidence checks."
+    },
+    {
+      "id": "az120-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Retired SAP connector images have an imminent removal date",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Container connector retired September 14; images removed October 14, 2026.",
+      "recommendation": "Add supported agentless migration and replacement/DR evidence note with dated follow-up.",
+      "disposition": "applied",
+      "source_id": "az120-sentinel-retirement",
+      "resolution": "Add supported agentless migration and replacement/DR evidence note with dated follow-up."
+    },
+    {
+      "id": "az120-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Deployment success alone does not demonstrate acceptance",
+      "url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-120"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Pinned 3.23 release integrates configuration, HA and backup test paths.",
+      "recommendation": "Add a topology-specific test plan and planned-versus-executed coverage exercise.",
+      "disposition": "applied",
+      "source_id": "az120-sdaf-news",
+      "resolution": "Add a topology-specific test plan and planned-versus-executed coverage exercise."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "az120-zone-blog",
+      "decision": "accepted-bounded",
+      "author": "sanoopt",
+      "published_on": "2026-04-28",
+      "notes": "Main concepts/support and active-passive behavior; original capacity/latency exercise; nonproduction public preview. No Part 2/code execution."
+    },
+    {
+      "source_id": "az120-sapphire-blog",
+      "decision": "accepted-bounded",
+      "author": "Hiren_Shah_Azure",
+      "published_on": "2026-05-11",
+      "notes": "Selected primary embedded automation section, cross-checked with August SDAF release; original acceptance matrix."
+    },
+    {
+      "source_id": "az120-mana-blog",
+      "decision": "accepted-bounded",
+      "author": "RalitzaDeltcheva",
+      "published_on": "2026-06-03",
+      "notes": "Main embedded article; current Linux checks support original readiness worksheet. No guest execution."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "27 assertions for migration, I/O, SAPS capacity, latency, recovery, fictional compute cost, test coverage and catalog totals."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Native HSR logical-item procedure and FAQ manual-secondary recipe differ; clarify protection-model applicability with Microsoft before executing the affected recipe.",
+    "No cloud, SAP, VM/guest command, SDK, deployment, identity/driver change, benchmark, backup, restore, failover, preview agent, pipeline test or paid lesson execution.",
+    "Synthetic arithmetic is not SAP certification, measured performance, actual pricing, recovery evidence or application acceptance.",
+    "Only noted portions of long references and blogs read; full SKU/region/OS matrices and linked procedures/code not audited. SAP Notes requiring access were not entered.",
+    "OReilly/Udemy direct access blocked; old runtime/update estimates explicitly unverified. Catalog metadata does not establish paid lesson correctness, current coverage or question originality.",
+    "Same-context AI review; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "migration_io_capacity_latency_recovery_cost_coverage_catalog_assertions": 27,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "az-120-oreilly-implementation-guide",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider listing; direct retrieval remains blocked",
+      "observed_metadata": {
+        "published": "February 2020",
+        "pages": 242
+      },
+      "limitation": "Paid content and current complete syllabus not verified; old duration/update fields not reverified."
+    },
+    {
+      "source_id": "az-120-udemy-reteam-labs",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider listing; direct retrieval remains blocked",
+      "observed_metadata": {
+        "instructor": "ReTeam Labs"
+      },
+      "limitation": "Paid content and current complete syllabus not verified; old duration/update fields not reverified."
+    }
+  ]
+}

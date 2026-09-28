@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AZ-120's 78 objectives; add seven worked examples, ten labs, 48 explained checks and three Microsoft blog exercises. Refresh SAP storage, MANA, backup, operations, automation and learning catalogs; track the unresolved HSR backup procedure scope and October Sentinel connector image deadline. See the [AZ-120 report](docs/research/2026-09-28-az-120-deep-review.md).
+
 - September 28, 2026: deeply review AZ-104's 82 objectives; add seven worked examples, ten labs, 48 explained checks and two Microsoft blog exercises. Update permissions, storage, deployment, encryption, app/certificate/backup, network and recovery guidance; refresh learning metadata and preserve review history. See the [AZ-104 report](docs/research/2026-09-28-az-104-deep-review.md).
 
 - September 28, 2026: deeply review AI-901's 29 objectives; add six worked examples, eight labs, 36 explained checks, two Microsoft blog exercises and a Pluralsight implementation course. Update Foundry clients, speech/voice, vision lifecycle, Content Understanding and catalog evidence; preserve historical reviews and schedule follow-ups. See the [AI-901 report](docs/research/2026-09-28-ai-901-deep-review.md).

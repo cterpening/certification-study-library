@@ -4,9 +4,9 @@ As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 27 have review work or unresolved blockers; 14 are eligible for review now.
+50 guides; 27 have review work or unresolved blockers; 13 are eligible for review now.
 
-Next batch: AZ-120, AZ-140, AZ-305.
+Next batch: AZ-140, AZ-305, AZ-400.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
@@ -25,6 +25,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | 2026-10-05 | offline-only |
 | [AB-410](../guides/AB-410-building-intelligent-applications.md) | reviewed-with-blockers | 2026-09-28 | 2026-10-05 | offline-only |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | reviewed | 2026-09-28 | 2026-09-30 | offline-only |
+| [AZ-120](../guides/AZ-120-planning-administering-azure-sap-workloads.md) | reviewed-with-blockers | 2026-09-28 | 2026-10-05 | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | reviewed | 2026-09-27 | 2026-09-30 | offline-only |
 | [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | reviewed-with-blockers | 2026-09-27 | 2026-10-14 | offline-only |
 | [AB-620](../guides/AB-620-designing-building-integrated-ai-agent-solutions.md) | reviewed | 2026-09-28 | 2026-09-30 | offline-only |
@@ -46,7 +47,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [AZ-104](../guides/AZ-104-microsoft-azure-administrator.md) | reviewed | 2026-09-28 | 2026-10-12 | offline-only |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-09-27 | 2026-10-14 | offline-only |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-09-27 | 2026-10-16 | offline-only |
-| [AZ-120](../guides/AZ-120-planning-administering-azure-sap-workloads.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-140](../guides/AZ-140-configuring-operating-azure-virtual-desktop.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-305](../guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-400](../guides/AZ-400-designing-implementing-microsoft-devops-solutions.md) | pending | Pending | 2026-09-28 | not-recorded |

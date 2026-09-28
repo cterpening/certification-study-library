@@ -3,6 +3,258 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az120-storage-types",
+      "title": "SAP workload storage support by scenario",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected Premium SSD v2 and volume/replica support guidance read; broad feature matrix not used as a universal current SKU guarantee. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-premium-v2",
+      "title": "SAP HANA Premium SSD v2 storage",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Introduction and starting layout/sizing guidance read; full SKU table not audited or benchmarked. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-write-accelerator",
+      "title": "Azure Write Accelerator support and limits",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected eligibility and log-versus-data purpose/striped-volume shutdown guidance read; no host setting changed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-suse-fence",
+      "title": "SUSE Pacemaker and Azure fencing",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Overview and shared-disk/iSCSI/Azure-agent choice, redundancy and egress conditions read. Complete OS setup commands not reviewed or executed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-rhel-fence",
+      "title": "RHEL Pacemaker and Azure fencing",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected SBD and identity/fencing support sections read; full OS command sequence not audited. Do not transfer settings across distributions. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-snapshots",
+      "title": "SAP HANA instance snapshot backup",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected Standard/Enhanced, HSR, consistency, full/log and snapshot policy requirements read. Complete region/restore/security matrix not audited. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-backup-faq",
+      "title": "SAP HANA Azure Backup FAQ",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected HSR manual-secondary and snapshot questions read. Manual stop/resume scope conflicts with native logical HSR guidance; retained as unresolved, not executed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-acss-register",
+      "title": "Register existing SAP systems in Azure Center",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/register-existing-system",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Registration outputs, supported-operation overview and start of prerequisites read; no registration performed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-acss-start",
+      "title": "Start and stop SAP systems using Azure Center",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Supported operations, whole-HANA-instance scope, VM state, cluster prerequisites and 300-second operation limit read; no cloud command executed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-providers",
+      "title": "Monitor for SAP providers",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Provider definition, zero-provider behavior and initial NetWeaver signals read; all provider-specific setup procedures not reviewed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-sdaf-news",
+      "title": "SAP Deployment Automation Framework 3.23 release",
+      "url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Full public v3.23.0.0 release notes read via GitHub API (August 31, 2026); no repository code, plugins, templates or scripts audited/executed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-mana-linux",
+      "title": "MANA support for Linux",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Entire short main article read: enabled NIC, PCI, driver, interface binding and VF counters. Commands inspected, not executed; linked distro support matrix not exhaustively reviewed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-rise-network",
+      "title": "RISE integration networking",
+      "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected ownership, peering/gateway and migration/DNS sections read; full vWAN/firewall scenarios not audited. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-zone-blog",
+      "title": "SAP Zone Resource Agent public preview concepts",
+      "url": "https://techcommunity.microsoft.com/blog/sapapplications/aligning-sap-application-servers-with-the-hana-primary-zone-on-azure-public-prev/4490925",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Main concepts/support/active-passive section read from primary article and public embedded body; Part 2 and linked implementation code not read or run. Public preview/nonproduction only. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-sapphire-blog",
+      "title": "SAP on Azure Sapphire 2026 product announcements",
+      "url": "https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%E2%80%93-sap-sapphire-2026/4517634",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Primary public embedded metadata and SDAF/STAF automation section read. Broader customer/AI/product announcements not comprehensively reviewed or adopted. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-mana-blog",
+      "title": "MANA support for existing SAP VM SKUs",
+      "url": "https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Entire public embedded main article and author/date metadata read. Original readiness exercise cross-checked with current Linux article; linked exception timelines not comprehensively reviewed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-backup-architecture",
+      "title": "SAP HANA Azure Backup architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Streaming architecture and HSR logical-item/failover/log-chain/key sections read. Recovery performance maxima not adopted as measured throughput. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az120-sentinel-retirement",
+      "title": "SAP Sentinel connector deployment and retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected deployment overview, retired-container September 14 and image-removal October 14 dates, agentless prerequisites and compatibility read. No connector deployed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az104-activity-table",
       "title": "AzureActivity table schema",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity",
@@ -15838,8 +16090,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: All 78 objectives read/mapped in ten groups; April 17 baseline unchanged, no upcoming announcement; accepted objective/status snapshots unchanged. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-credential",
@@ -15849,9 +16104,11 @@
       "authority_class": 1,
       "source_type": "credential-page",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Official active credential page; last updated April 17, 2026 and no retirement notice was displayed during review."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Official active credential page; last updated April 17, 2026 and no retirement notice was displayed during review. September 28 AZ-120 deep review: Exam metadata/profile read: 100 minutes, seven languages and renewal. Sandbox offered; no Practice Assessment shown. No actual exam/sandbox entered. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-supported-products",
@@ -15861,8 +16118,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-supported-scenarios",
@@ -15872,8 +16132,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-deployment-planning-guide",
@@ -15883,8 +16146,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-cloud-adoption-plan",
@@ -15894,8 +16160,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-sap-landing-zone",
@@ -15905,8 +16174,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-rise-integration",
@@ -15916,8 +16188,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-vm-extension",
@@ -15927,9 +16202,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "The page contains version-sensitive recommendations; always reconcile it with current SAP Notes and deployment documentation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "The page contains version-sensitive recommendations; always reconcile it with current SAP Notes and deployment documentation. September 28 AZ-120 deep review: Main short article read: VM Agent, SAP prerequisites/support, standard/new variants and management-endpoint requirement. Linked SAP Notes and install guides not entered. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-hana-storage",
@@ -15939,8 +16216,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected mixed-volume/HSR symmetry, shared-volume and throughput recommendations read. Complete stripe/VM sizing table not exhaustively audited. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-ha-architecture",
@@ -15950,8 +16230,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-availability-zones",
@@ -15961,8 +16244,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected topology and measurement guidance; broad latency assertions not adopted as a workload guarantee. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-disaster-recovery",
@@ -15972,8 +16258,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-hana-hsr-backup",
@@ -15983,8 +16272,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected native HSR registration, keys and Enhanced snapshot policy requirements read; complete restore wizard not audited. One support-matrix navigation link points to SQL backup, not used as HANA support evidence. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-monitor-for-sap",
@@ -15994,8 +16286,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected overview and Azure Monitor Logs pipeline read; no provider configured. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-azure-center-sap",
@@ -16005,8 +16300,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Selected VIS overview and supported operational scope read; specific start/stop source controls behavior claims. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-deployment-automation-framework",
@@ -16016,8 +16314,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-lama-connector",
@@ -16027,8 +16328,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "September 28 AZ-120 deep review: Retained contextual reference fetched; complete page and linked implementation procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-microsoft-learn-course",
@@ -16038,9 +16342,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Official page lists a three-day instructor-led course and approximately 29 hours of linked self-paced learning paths."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Official page lists a three-day instructor-led course and approximately 29 hours of linked self-paced learning paths. September 28 AZ-120 deep review: Full short metadata/overview read: three days, three languages; self-paced syllabus loading, exact runtime not reproduced. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-microsoft-video-series",
@@ -16050,9 +16356,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Public technical enablement series; select episodes by objective and verify age-sensitive product behavior."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Public technical enablement series; select episodes by objective and verify age-sensitive product behavior. September 28 AZ-120 deep review: Landing shell retrieved; no individual video/runtime verified. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-pluralsight-big-picture",
@@ -16062,9 +16370,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Pluralsight displayed 1h 28m and a June 5, 2026 update."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Pluralsight displayed 1h 28m and a June 5, 2026 update. September 28 AZ-120 deep review: Public title/author/duration/update fields read: Steve Buchanan, 1h28, June 5, 2026. Paid lessons not opened. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-pluralsight-building-deploying",
@@ -16074,9 +16384,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Pluralsight displayed 2h 52m and a June 5, 2026 update."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Pluralsight displayed 2h 52m and a June 5, 2026 update. September 28 AZ-120 deep review: Public title/author/duration/update fields read: Tim Warner, 2h52, June 5, 2026. Paid lessons not opened. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-pluralsight-infrastructure",
@@ -16086,9 +16398,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Pluralsight displayed 1h 14m and a June 5, 2026 update."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Pluralsight displayed 1h 14m and a June 5, 2026 update. September 28 AZ-120 deep review: Public title/author/duration/update fields read: Steve Buchanan, 1h14, June 5, 2026. Paid lessons not opened. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-pluralsight-hadr",
@@ -16098,9 +16412,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Pluralsight displayed 1h 12m and a June 5, 2026 update."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Pluralsight displayed 1h 12m and a June 5, 2026 update. September 28 AZ-120 deep review: Public title/author/duration/update fields read: Roosevelt Wilmot, 1h12, June 5, 2026. Paid lessons not opened. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-oreilly-implementation-guide",
@@ -16110,9 +16426,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "242-page February 2020 book with a displayed 6h 56m estimate; useful for durable context but requires full reconciliation with 2026 objectives and services."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "242-page February 2020 book with a displayed 6h 56m estimate; useful for durable context but requires full reconciliation with 2026 objectives and services. September 28 AZ-120 deep review: Direct blocked. Indexed public platform/publisher listing confirms February 2020 and 242 pages; earlier 6h56 estimate unverified. No book content read. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-udemy-reteam-labs",
@@ -16122,9 +16440,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Udemy displayed 5h 42m and a September 2021 update; every objective and product detail needs reconciliation with the April 2026 baseline."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Udemy displayed 5h 42m and a September 2021 update; every objective and product detail needs reconciliation with the April 2026 baseline. September 28 AZ-120 deep review: Direct blocked. Indexed public listing found with ReTeam Labs; prior 5h42 and September 2021 metadata not reverified. No lessons opened. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-measureup-practice-test",
@@ -16134,9 +16454,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-120"],
-      "notes": "Paid practice test; verify question count, access period and April 2026 objective alignment before purchase."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "notes": "Paid practice test; verify question count, access period and April 2026 objective alignment before purchase. September 28 AZ-120 deep review: Selected public product metadata/outline/FAQ read: 115 items, December 2021 release, outdated HLI references and conflicting generic count/duration claims. No questions or paid content accessed. See docs/research/2026-09-28-az-120-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-blueprint",

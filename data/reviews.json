@@ -1010,30 +1010,46 @@
       "notes": "All five weighted July 27, 2026 objective groups and their subobjectives are mapped to a bidirectional packet-walk method, service comparisons, failure modes, two scenarios, eight labs, and 24 checks. Section 3 and Lab 4 provide requirements, configuration, validation, and troubleshooting depth for Azure Network Adapter and Azure Extended Network. The September 7 pass adds current virtual network flow-log, NSG flow-log retirement, and agentless Connection troubleshoot preview evidence. All 31 cited URLs are cataloged: 28 reachable, three O'Reilly/Udemy pages access-blocked, and none missing."
     },
     {
-      "id": "az-120-2026-08-31-source-validation",
+      "id": "az-120-2026-09-28-source-validation",
       "exam_code": "AZ-120",
       "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
-      "outcome": "passed",
+      "reviewed_on": "2026-09-28",
+      "outcome": "blocked",
       "blueprint_snapshot_path": "data/objective-snapshots/az-120-official-objectives.txt",
       "blueprint_snapshot_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
       "objective_coverage": [
         {
           "objective_group": "Migrate SAP workloads to Azure",
-          "guide_sections": ["Sections 1–2", "ECC and RISE scenarios", "Labs 1–2"]
+          "guide_sections": [
+            "Sections 1–2",
+            "ECC and RISE scenarios",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Design and implement an infrastructure to support SAP workloads on Azure",
-          "guide_sections": ["Section 3", "ECC scenario", "Labs 3–5"]
+          "guide_sections": [
+            "Section 3",
+            "ECC scenario",
+            "Labs 3–5"
+          ]
         },
         {
           "objective_group": "Design and implement high availability and disaster recovery (HADR)",
-          "guide_sections": ["Section 4", "Region-loss scenario", "Labs 6–7"]
+          "guide_sections": [
+            "Section 4",
+            "Region-loss scenario",
+            "Labs 6–7"
+          ]
         },
         {
           "objective_group": "Maintain SAP workloads on Azure",
-          "guide_sections": ["Section 5", "Integrated scenarios", "Lab 8"]
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
         }
       ],
       "checks": {
@@ -1044,12 +1060,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 27,
-        "reachable": 25,
+        "unique_external_links": 45,
+        "reachable": 43,
         "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an end-to-end SAP landscape decision model, supportability and sizing controls, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; one O'Reilly page and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The official credential remains active with no announced retirement or blueprint update. VM/storage certification, SAP Notes, OS/database versions, region/zone capacity, quotas, licensing, support, pricing, SLA, ACSS/SDAF features, and preview-sensitive behavior are explicitly marked VERIFY CURRENT."
+      "notes": "Whole guide and 78 unchanged objectives mapped across ten groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh HANA storage/backup, MANA, RISE/fencing, VIS/telemetry, SDAF/STAF, Sentinel connector lifecycle and catalog guidance. Twenty-seven offline assertions passed; native HSR versus manual-secondary FAQ applicability remains unresolved. No cloud, SAP, guest commands, failover/restore or paid-content execution; human review pending. See docs/research/2026-09-28-az-120-deep-review.md"
     },
     {
       "id": "az-140-2026-08-31-source-validation",
@@ -10786,6 +10802,64 @@
         "missing_or_error": 0
       },
       "notes": "All five weighted objective groups and their April 17, 2026 bullets are mapped to scope and control-plane mental models, operational decision tables, failure modes, two integrated scenarios, eight independent labs, and 20 original knowledge checks. All 25 cited URLs are exact source-catalog entries. Two O'Reilly pages and one Udemy page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Licensing, supported regions and SKUs, limits, policy and platform behaviors, recovery windows, networking support, and portal surfaces are explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "az-120-2026-08-31-source-validation",
+      "exam_code": "AZ-120",
+      "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-120-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+      "objective_coverage": [
+        {
+          "objective_group": "Migrate SAP workloads to Azure",
+          "guide_sections": [
+            "Sections 1–2",
+            "ECC and RISE scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Design and implement an infrastructure to support SAP workloads on Azure",
+          "guide_sections": [
+            "Section 3",
+            "ECC scenario",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Design and implement high availability and disaster recovery (HADR)",
+          "guide_sections": [
+            "Section 4",
+            "Region-loss scenario",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Maintain SAP workloads on Azure",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 25,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an end-to-end SAP landscape decision model, supportability and sizing controls, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; one O'Reilly page and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The official credential remains active with no announced retirement or blueprint update. VM/storage certification, SAP Notes, OS/database versions, region/zone capacity, quotas, licensing, support, pricing, SLA, ACSS/SDAF features, and preview-sensitive behavior are explicitly marked VERIFY CURRENT."
     }
   ]
 }

@@ -4,6 +4,215 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-az120-deep-review",
+      "title": "AZ-120 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-120"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-120",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+          "baseline_sha256": "d30314b024174fa0f728bcc7f1a6b8b500585ec1d28b085907016d0319bee17e",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "78 unchanged objectives in ten groups; April 17 baseline, active 100-minute seven-language exam; renewal and sandbox landing only."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted storage, networking/driver, fencing, backup, VIS, telemetry and connector-retirement boundaries applied; native HSR/FAQ conflict separately blocked."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Three bounded Microsoft SAP blog exercises; August 31 SDAF release independently read. Preview zone agent and HSR snapshots clearly scoped."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Three-day official course with loading syllabus; four PS durations/June 5 dates; blocked OReilly/Udemy access qualified; old MeasureUp outline and generic claims distinguished from current official objectives."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Native HSR documentation describes logical protection and automatic primary tracking; FAQ describes manual secondary stop/resume without clearly identifying its protection-model scope. Confirm applicability before node-level execution."
+            }
+          },
+          "findings": [
+            {
+              "id": "az120-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "HANA backup FAQ does not clearly scope secondary stop/resume",
+              "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Native HSR architecture uses a logical backup item and automatic primary tracking; FAQ recommends manually stopping protection on a secondary.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "az120-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Mixed volume roles do not permit asymmetric replica storage",
+              "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current HANA storage guidance allows different certified data/log types but corresponding HSR volumes must match.",
+              "recommendation": "Add volume-role/replica distinction and shared I/O budget example.",
+              "disposition": "applied",
+              "source_id": "az-120-hana-storage",
+              "resolution": "Add volume-role/replica distinction and shared I/O budget example."
+            },
+            {
+              "id": "az120-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "An enabled NIC does not prove MANA traffic",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-mana-linux",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "MANA requires host hardware, guest driver, binding and increasing VF counters.",
+              "recommendation": "Add driver-readiness worksheet and nonproduction validation boundary.",
+              "disposition": "applied",
+              "source_id": "az120-mana-linux",
+              "resolution": "Add driver-readiness worksheet and nonproduction validation boundary."
+            },
+            {
+              "id": "az120-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "HSR snapshot support remains preview and needs independent log replay",
+              "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Standard/Enhanced differ and HSR requires Enhanced; database full/log protection precedes snapshots.",
+              "recommendation": "Add policy and chain distinctions with original RPO/RTO exercise.",
+              "disposition": "applied",
+              "source_id": "az120-snapshots",
+              "resolution": "Add policy and chain distinctions with original RPO/RTO exercise."
+            },
+            {
+              "id": "az120-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "VIS SAP stop leaves underlying VMs running",
+              "url": "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/start-stop-sap-systems",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "SAP application and whole HANA instance actions do not deallocate VMs and have cluster-specific prerequisites.",
+              "recommendation": "Add operation scope and illustrative compute-cost calculation.",
+              "disposition": "applied",
+              "source_id": "az120-acss-start",
+              "resolution": "Add operation scope and illustrative compute-cost calculation."
+            },
+            {
+              "id": "az120-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Monitor resource existence does not establish component telemetry",
+              "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Without providers AMS does not collect SAP component data.",
+              "recommendation": "Add provider/ingestion/alert evidence checks.",
+              "disposition": "applied",
+              "source_id": "az120-providers",
+              "resolution": "Add provider/ingestion/alert evidence checks."
+            },
+            {
+              "id": "az120-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Retired SAP connector images have an imminent removal date",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deployment-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Container connector retired September 14; images removed October 14, 2026.",
+              "recommendation": "Add supported agentless migration and replacement/DR evidence note with dated follow-up.",
+              "disposition": "applied",
+              "source_id": "az120-sentinel-retirement",
+              "resolution": "Add supported agentless migration and replacement/DR evidence note with dated follow-up."
+            },
+            {
+              "id": "az120-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Deployment success alone does not demonstrate acceptance",
+              "url": "https://github.com/Azure/sap-automation/releases/tag/v3.23.0.0",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-120"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pinned 3.23 release integrates configuration, HA and backup test paths.",
+              "recommendation": "Add a topology-specific test plan and planned-versus-executed coverage exercise.",
+              "disposition": "applied",
+              "source_id": "az120-sdaf-news",
+              "resolution": "Add a topology-specific test plan and planned-versus-executed coverage exercise."
+            }
+          ],
+          "notes": "Whole guide and 78 unchanged objectives mapped across ten groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh HANA storage/backup, MANA, RISE/fencing, VIS/telemetry, SDAF/STAF, Sentinel connector lifecycle and catalog guidance. Twenty-seven offline assertions passed; native HSR versus manual-secondary FAQ applicability remains unresolved. No cloud, SAP, guest commands, failover/restore or paid-content execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-az-120-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-az104-deep-review",
       "title": "AZ-104 complete guide and learning-content review",
       "rubric_version": 1,

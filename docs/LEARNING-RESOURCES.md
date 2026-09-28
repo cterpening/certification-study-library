@@ -1843,6 +1843,74 @@ This is a curated starting set, not a complete list. Do **not** consume every re
 
 Catalog metadata is not proof of lesson accuracy, exam coverage or question originality. Provider discovery was bounded and paid content was not inspected. Prefer independently authored learning questions with explanations; the listed MeasureUp assessment explicitly omits them. Avoid recalled live-exam material. Use results by objective domain, revisit documentation and labs, then retest with unseen questions.
 
+### AZ-120 — Planning and Administering Microsoft Azure for SAP Workloads
+
+Resource details from the [AZ-120 guide](../guides/AZ-120-planning-administering-azure-sap-workloads.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the combination that fits how you learn and use the official April 17, 2026 objective list as the coverage checklist. Time estimates are planning ranges, not vendor promises; pause-and-practice time is included where useful. Verify subscription access, course freshness and exact duration before purchase.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official AZ-120 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) | Free; authoritative objectives and update history | 45–75 min initially; 10–15 min before exam |
+| [Microsoft Learn AZ-120 course](https://learn.microsoft.com/en-us/training/courses/az-120t00/) | Free self-paced paths; instructor-led delivery may be paid; official page lists 3 days | Exact current self-paced runtime not reproduced from the loading syllabus; plan 38–55 hr with notes and exercises |
+| [SAP on Azure training videos](https://learn.microsoft.com/en-us/shows/sap-on-azure-training-videos/) | Free Microsoft technical video series | Pick relevant episodes; plan 2–6 hr |
+| [Pluralsight: SAP on Azure—The Big Picture](https://www.pluralsight.com/courses/sap-azure-big-picture) | Subscription/trial; Steve Buchanan; updated June 2026 | 1 hr 28 min video; plan 2–3 hr |
+| [Pluralsight: Building and Deploying Azure for SAP Workloads](https://www.pluralsight.com/courses/building-deploying-azure-sap-workloads) | Subscription/trial; Tim Warner; updated June 2026 | 2 hr 52 min video; plan 4–6 hr |
+| [Pluralsight: Designing and Implementing Azure Infrastructure to Support SAP Workloads](https://www.pluralsight.com/courses/azure-infrastructure-designing-implementing-sap-workloads-cert) | Subscription/trial; Steve Buchanan; updated June 2026 | 1 hr 14 min video; plan 2–3 hr |
+| [Pluralsight: Designing and Implementing HA/DR for SAP Workloads](https://www.pluralsight.com/courses/azure-sap-workloads-designing-implementing-ha-disaster-recovery-cert) | Subscription/trial; Roosevelt Wilmot; updated June 2026 | 1 hr 12 min video; plan 2–3 hr |
+| [O'Reilly: SAP on Azure Implementation Guide](https://www.oreilly.com/library/view/sap-on-azure/9781838983987/) | Subscription/book; 2020 Packt title, useful for durable SAP architecture and migration context but pre-dates current objectives and services | 242 pages confirmed through the indexed publisher/platform listing; former 6 hr 56 min platform estimate not reverified; plan 10–16 hr plus current-doc reconciliation |
+| [Udemy: AZ-120 Microsoft Azure for SAP Workloads Exam Preparation](https://www.udemy.com/course/microsoft-azure-for-sap-workloads-az-120-exam-preparation/) | Paid; ReTeam Labs listing found; direct access blocked. Prior 5 hr 42 min / September 2021 metadata not reverified | Plan 8–12 hr and verify every service/objective against 2026 sources |
+| [MeasureUp AZ-120 practice test](https://www.measureup.com/microsoft-practice-test-az-120-planning-and-administering-microsoft-azure-for-sap-workloads.html) | Paid; public page lists 115 questions and December 2021 release; its older outline includes HLI and does not establish complete current coverage | Plan 3–6 hr across baseline, review and retest; reconcile gaps against the current blueprint |
+
+The official credential page did not offer a free Microsoft Practice Assessment for AZ-120 during the September 28, 2026 review. Do not substitute remembered or leaked exam questions for learning. Use legitimate practice questions to expose reasoning gaps, then return to the official documentation and a lab or tabletop exercise.
+
+The four listed Pluralsight pages each show **June 5, 2026**, totaling **6 hr 46 min** of video. Their update labels do not prove complete coverage of current SAP support details. Paid lessons/questions were not accessed. MeasureUp's product-specific 115 count is distinct from its generic FAQ estimates; use Microsoft's 100-minute exam metadata rather than the provider's conflicting duration/question-count claims. The Microsoft course currently lists three days and English, simplified Chinese and Japanese; course languages differ from the seven exam languages.
+
+#### Selected Microsoft blog exercises
+
+| Article | Why read it | Boundary and learner output |
+|---|---|---|
+| [Zone-aligned SAP application servers](https://techcommunity.microsoft.com/blog/sapapplications/aligning-sap-application-servers-with-the-hana-primary-zone-on-azure-public-prev/4490925), sanoopt, April 28, 2026 | Connect latency, app-server capacity and recovery time | Nonproduction public preview; draw active/passive states and calculate the capacity after zone loss |
+| [SAP Sapphire product update](https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%E2%80%93-sap-sapphire-2026/4517634), Hiren_Shah_Azure, May 11, 2026 | Discover SDAF/STAF deployment and acceptance capabilities | Selected automation section, checked against the pinned August release; produce a topology-specific test/evidence matrix |
+| [MANA support for existing VM SKUs](https://techcommunity.microsoft.com/blog/sapapplications/mana-support-for-existing-vm-skuswhy-now-is-the-right-time-to-update-linux-on-yo/4524534), RalitzaDeltcheva, June 3, 2026 | Understand why guest-driver readiness matters during hardware changes | Cross-check current Linux documentation and SAP support; complete the driver-readiness worksheet |
+
+These are supplementary reading tied to decisions and original exercises. They do not extend the official objective list or prove production readiness.
+
+#### Suggested routes
+
+##### SAP professional newer to Azure
+
+1. Azure administrator/networking/storage prerequisites.
+2. Microsoft Learn course and Big Picture course.
+3. Infrastructure plus HA/DR Pluralsight courses.
+4. Labs 2–8 and current Microsoft/SAP support documents.
+5. Legitimate practice test, gap review and retest.
+
+**Planning range:** 70–110 hours, excluding prerequisite Azure training.
+
+##### Azure architect newer to SAP
+
+1. Formal SAP HANA/NetWeaver and Basis fundamentals before exam preparation.
+2. Microsoft Learn course with emphasis on SAP tiers, SAPS, support notes and migration.
+3. Build decision workbooks and complete all ten labs/tabletops.
+4. Review current SAP support sources with an experienced SAP practitioner.
+
+**Planning range:** 90–140 hours after SAP prerequisites; reading Azure service summaries cannot replace SAP experience.
+
+##### Experienced SAP-on-Azure practitioner
+
+1. Diff the April 17, 2026 blueprint against current responsibilities.
+2. Review RISE, ACSS, SDAF, current storage/HA/backup guidance and changed support notes.
+3. Complete Labs 3, 6, 7 and 8; use assessment results to target gaps.
+
+**Planning range:** 30–50 focused hours.
+
+---
+
+#### Currency and integrity note
+
+This guide summarizes public material; it does not reproduce exam questions and is not an exam dump. Microsoft and SAP can change objectives, certification status, support notes, VM/storage certification, products, quotas, pricing and service behavior. Recheck the official blueprint, credential page, SAP Notes/hardware directory and linked product documentation before making a production or exam decision.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
