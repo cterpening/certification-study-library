@@ -922,30 +922,46 @@
       "notes": "Whole guide and 82 unchanged objectives mapped across fifteen groups. Add seven worked examples, ten labs, 48 explained checks and two bounded Microsoft blog exercises. Correct identity/permission, storage/versioning, ARM, encryption, container, App Service, networking, telemetry, recovery and catalog boundaries. Twenty-nine offline assertions passed; one KQL example reviewed but not executed. No cloud, tenant, deployment, SDK, certificate, backup/failover or paid-content execution; independent human review pending. See docs/research/2026-09-28-az-104-deep-review.md"
     },
     {
-      "id": "az-305-2026-08-31-source-validation",
+      "id": "az-305-2026-09-28-source-validation",
       "exam_code": "AZ-305",
       "guide_path": "guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/az-305-official-objectives.txt",
       "blueprint_snapshot_sha256": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2",
       "objective_coverage": [
         {
           "objective_group": "Design identity, governance, and monitoring solutions",
-          "guide_sections": ["Section 2", "Regulated application scenario", "Labs 1–2"]
+          "guide_sections": [
+            "Section 2",
+            "Regulated application scenario",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Design data storage solutions",
-          "guide_sections": ["Section 3", "Integrated scenarios", "Labs 3–4"]
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios",
+            "Labs 3–4"
+          ]
         },
         {
           "objective_group": "Design business continuity solutions",
-          "guide_sections": ["Section 4", "Regulated application scenario", "Lab 5"]
+          "guide_sections": [
+            "Section 4",
+            "Regulated application scenario",
+            "Lab 5"
+          ]
         },
         {
           "objective_group": "Design infrastructure solutions",
-          "guide_sections": ["Section 5", "Migration scenario", "Labs 6–8"]
+          "guide_sections": [
+            "Section 5",
+            "Migration scenario",
+            "Labs 6–8"
+          ]
         }
       ],
       "checks": {
@@ -956,12 +972,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 29,
-        "reachable": 26,
+        "unique_external_links": 52,
+        "reachable": 49,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an architecture decision method, trade-off tables, common failure modes, two integrated scenarios, eight independent design labs, and 24 original knowledge checks. All 29 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. The guide explicitly separates architecture design from AZ-104 implementation detail and marks service tiers, limits, licensing, region/zone support, networking, pricing, and retirement-sensitive product behavior VERIFY CURRENT."
+      "notes": "Whole guide and 49 unchanged objectives mapped across twelve groups. Add seven worked examples, ten labs, 48 explained checks and three bounded blog exercises. Refresh logging, vault/API recovery, data and region boundaries, Service Bus replication/idempotency/SDKs, Functions, APIM, App Configuration, Redis, Front Door and outbound guidance. Thirty-eight offline assertions including one local SQLite transaction/replay example passed; no Azure or paid-content execution. Independent human review pending. See docs/research/2026-09-28-az-305-deep-review.md"
     },
     {
       "id": "az-700-2026-08-31-source-validation",
@@ -10934,6 +10950,64 @@
         "missing_or_error": 0
       },
       "notes": "All four weighted July 20, 2026 objective groups and their published subobjectives are mapped to an end-to-end connection and state-delivery model, implementation decisions, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The guide includes current RDP Shortpath and Multipath, Private Link, Entra SSO and dual Conditional Access evaluation, App Attach, FSLogix, Trusted Launch/confidential VM, Insights, Autoscale, immutable image and multi-region recovery topics. OS/client support, licensing, RDP rollout, identity/storage constraints, security defaults, SKUs, limits, pricing, and preview/retirement-sensitive behavior are explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "az-305-2026-08-31-source-validation",
+      "exam_code": "AZ-305",
+      "guide_path": "guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-305-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2",
+      "objective_coverage": [
+        {
+          "objective_group": "Design identity, governance, and monitoring solutions",
+          "guide_sections": [
+            "Section 2",
+            "Regulated application scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Design data storage solutions",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Design business continuity solutions",
+          "guide_sections": [
+            "Section 4",
+            "Regulated application scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Design infrastructure solutions",
+          "guide_sections": [
+            "Section 5",
+            "Migration scenario",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 29,
+        "reachable": 26,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an architecture decision method, trade-off tables, common failure modes, two integrated scenarios, eight independent design labs, and 24 original knowledge checks. All 29 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. The guide explicitly separates architecture design from AZ-104 implementation detail and marks service tiers, limits, licensing, region/zone support, networking, pricing, and retirement-sensitive product behavior VERIFY CURRENT."
     }
   ]
 }

@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-az305-deep-review",
+      "title": "AZ-305 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-305"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-305",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md",
+          "baseline_sha256": "00f229d349f5d312055541c3ea934b8159693cbbd867ac5bcee16327a256169a",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "49 unchanged April 17 objectives; active credential, AZ-104 certification prerequisite, ten languages and renewal. Exact exam duration unverified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted logging, Key Vault, SQL/Cosmos, regions/FMA, Service Bus/outbox/idempotency, Functions, APIM, App Configuration, cache and network lifecycle boundaries applied."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Two Microsoft GA blog bodies checked against current product matrices; one explicitly personal fault-taxonomy post treated as expert context only. Upcoming Service Bus/Functions, Key Vault, Front Door and Redis dates separated."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Standalone course four days/eight languages, assessment landing, Pluralsight 18h03 component sum, OReilly indexed older metadata, browser Udemy January 2026 and MeasureUp 164 / September 2026. Paid content not audited."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Credential course placeholder resolved using standalone official course; APIM broad launch wording bounded by current missing-feature matrix; v2 versus classic stv2 distinguished. Personal blog likelihoods not treated as Microsoft probabilities; unrelated Udemy aggregator runtime not substituted."
+            }
+          },
+          "findings": [
+            {
+              "id": "az305-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Lower-cost log ingestion changes operational capabilities",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Basic Simple Log Alerts and Auxiliary/Lake alert/replication exclusions differ.",
+              "recommendation": "Add table-plan decision record and cost/query boundary.",
+              "disposition": "applied",
+              "source_id": "az305-log-plans",
+              "resolution": "Add table-plan decision record and cost/query boundary."
+            },
+            {
+              "id": "az305-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New vault RBAC defaults do not migrate existing access",
+              "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2026-02-01 default applies to create; earlier control-plane APIs retire February 27, 2027.",
+              "recommendation": "Separate API upgrade from explicit access-model change.",
+              "disposition": "applied",
+              "source_id": "sc100-keyvault-default",
+              "resolution": "Separate API upgrade from explicit access-model change."
+            },
+            {
+              "id": "az305-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Object backups have a constrained recovery boundary",
+              "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/backup",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Same subscription/geography and per-object backup with version limit.",
+              "recommendation": "Add recovery prerequisites and avoid universal escape-path claim.",
+              "disposition": "applied",
+              "source_id": "az305-vault-backup",
+              "resolution": "Add recovery prerequisites and avoid universal escape-path claim."
+            },
+            {
+              "id": "az305-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Database failover is not end-to-end workload recovery",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Listeners cover database routing; Microsoft recommends customer-managed recovery.",
+              "recommendation": "Add dependency/ownership and client recovery evidence.",
+              "disposition": "applied",
+              "source_id": "dp-300-doc-13",
+              "resolution": "Add dependency/ownership and client recovery evidence."
+            },
+            {
+              "id": "az305-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Namespace replication modes protect different state and availability",
+              "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Geo-Replication includes messages/state; one secondary, partition preview and large-message exclusions remain.",
+              "recommendation": "Compare modes, lag, promotion and duplicate handling.",
+              "disposition": "applied",
+              "source_id": "az305-bus-geo",
+              "resolution": "Compare modes, lag, promotion and duplicate handling."
+            },
+            {
+              "id": "az305-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "SDK retirement and SBMP usability have different effects",
+              "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 30, 2026 SDKs unsupported while SBMP becomes unusable.",
+              "recommendation": "Add scoped migration and deadline follow-up.",
+              "disposition": "applied",
+              "source_id": "ai200-bus-lock",
+              "resolution": "Add scoped migration and deadline follow-up."
+            },
+            {
+              "id": "az305-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "HTTP response deadlines differ from execution timeouts",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "HTTP 230-second response cap; separate Linux v3 September 2026 and hosting 2028 deadlines.",
+              "recommendation": "Teach asynchronous result pattern and scoped runtime inventory.",
+              "disposition": "applied",
+              "source_id": "ai200-function-scale",
+              "resolution": "Teach asynchronous result pattern and scoped runtime inventory."
+            },
+            {
+              "id": "az305-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Premium v2 is not full classic Premium feature parity",
+              "url": "https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Multi-region and automated classic upgrade unavailable; private backend integration not private inbound.",
+              "recommendation": "Add capability/network/recovery comparison with classic Premium.",
+              "disposition": "applied",
+              "source_id": "az305-apim-v2",
+              "resolution": "Add capability/network/recovery comparison with classic Premium."
+            },
+            {
+              "id": "az305-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Replicated configuration is eventually consistent",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Replica endpoints and client/provider behavior matter for failover.",
+              "recommendation": "Add stale/default handling and avoid instant-global-revocation assumption.",
+              "disposition": "applied",
+              "source_id": "az305-config-geo",
+              "resolution": "Add stale/default handling and avoid instant-global-revocation assumption."
+            },
+            {
+              "id": "az305-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Redis retirement is tier-specific",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Enterprise/Flash 2027 and Basic/Standard/Premium 2028 dates differ.",
+              "recommendation": "Add migration inventory and cold-cache load exercise.",
+              "disposition": "applied",
+              "source_id": "ai-200-azure-cache-for-redis-retirement-faq",
+              "resolution": "Add migration inventory and cold-cache load exercise."
+            },
+            {
+              "id": "az305-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Classic ingress requires a staged migration",
+              "url": "https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "March 31, 2027 retirement and postmigration DNS update requirement.",
+              "recommendation": "Add lifecycle/dependency/readiness checks.",
+              "disposition": "applied",
+              "source_id": "az305-frontdoor",
+              "resolution": "Add lifecycle/dependency/readiness checks."
+            },
+            {
+              "id": "az305-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Default outbound change is scoped to new networks and API behavior",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-305"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New VNets private by default for APIs after March 31, 2026; existing networks unchanged.",
+              "recommendation": "Add explicit egress and service dependency checks.",
+              "disposition": "applied",
+              "source_id": "az104-outbound",
+              "resolution": "Add explicit egress and service dependency checks."
+            }
+          ],
+          "notes": "Whole guide and 49 unchanged objectives mapped across twelve groups. Add seven worked examples, ten labs, 48 explained checks and three bounded blog exercises. Refresh logging, vault/API recovery, data and region boundaries, Service Bus replication/idempotency/SDKs, Functions, APIM, App Configuration, Redis, Front Door and outbound guidance. Thirty-eight offline assertions including one local SQLite transaction/replay example passed; no Azure or paid-content execution. Independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-az-305-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-az140-deep-review",
       "title": "AZ-140 complete guide and learning-content review",
       "rubric_version": 1,

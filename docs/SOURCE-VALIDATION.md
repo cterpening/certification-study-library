@@ -198,6 +198,8 @@ The guide maps every July 27, 2026 objective bullet to a bidirectional packet-wa
 
 ## AZ-305 coverage record
 
+The September 28 [deep review](research/2026-09-28-az-305-deep-review.md) maps 49 detailed objectives. Whole guide and 49 unchanged objectives mapped across twelve groups. Add seven worked examples, ten labs, 48 explained checks and three bounded blog exercises. Refresh logging, vault/API recovery, data and region boundaries, Service Bus replication/idempotency/SDKs, Functions, APIM, App Configuration, Redis, Front Door and outbound guidance. Thirty-eight offline assertions including one local SQLite transaction/replay example passed; no Azure or paid-content execution. Independent human review pending. Current guide citations: 52 registered, 49 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Design identity, governance, and monitoring solutions | Section 2, regulated application scenario, and Labs 1–2 |

@@ -3,6 +3,230 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az305-credential",
+      "title": "Azure Solutions Architect Expert credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Profile/prerequisite, ten languages, renewal and public assessment landing read; exact exam duration not shown/verified. Profile course-availability placeholder is superseded for course existence by standalone current course page. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-log-plans",
+      "title": "Azure Monitor Logs table plans",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Intro and all three HTML tables inspected with cells preserved, including Analytics/Basic/Auxiliary-Lake alerts, query costs, scope, replication and supported tables. No KQL run. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-vault-backup",
+      "title": "Key Vault backup and restore boundaries",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/backup",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: First main sections covering per-object backup, same-subscription/geography restore, versions and recovery boundaries read; full commands not audited/executed. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-regions",
+      "title": "Azure paired and nonpaired regions",
+      "url": "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Main paired/nonpaired overview, HA/failover cautions and asymmetric-pair discussion read; complete region inventory not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-bus-geo",
+      "title": "Service Bus data geo-replication",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Selected overview, Premium/one-secondary, modes, lag, promotion and compatibility restrictions read; partitioned support remains preview. Full implementation not executed. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-bus-geodr",
+      "title": "Service Bus metadata geo-disaster recovery",
+      "url": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Main metadata-only overview, one-time alias failover and unreplicated RBAC/network/security settings read; message replication not inferred. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-idempotent",
+      "title": "Idempotent consumer architecture pattern",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/idempotent-consumer",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Initial pattern/problem/solution and stable identity, shared store, atomic marker/effect and external-service boundaries read. Local original SQLite example only. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-outbox",
+      "title": "Transactional outbox with Cosmos DB",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-out-box-cosmos",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Initial Cosmos DB outbox pattern/problem and producer atomic handoff explanation read; implementation/SDK sample not executed or reproduced. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-apim-v2",
+      "title": "API Management v2 tier capabilities",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Almost all main capability/unsupported-feature and networking discussion read; later Q&A only partly read. Current multi-region/classic migration exclusions control launch wording. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-apim-regions",
+      "title": "API Management multiregion deployment",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-deploy-multi-region",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Applies-to Premium, overview and gateway-only multi-region/primary management limitation read; full regional setup not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-config-geo",
+      "title": "App Configuration geo-replication",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Almost all short main replication/endpoints, eventual consistency, provider/client failover and availability discussion read; no client SDK execution. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-frontdoor",
+      "title": "Front Door classic migration",
+      "url": "https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Intro and selected migration prerequisites/compatibility including DNS timing and affinity read; full migration steps not executed. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-faults-blog",
+      "title": "Proactive reliability: Azure fault types",
+      "url": "https://techcommunity.microsoft.com/blog/azurearchitectureblog/proactive-reliability-series-%E2%80%94-article-1-fault-types-in-azure/4507006",
+      "publisher": "Zoran Jovanovic (personal commentary hosted on Microsoft Tech Community)",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Personal, explicitly non-endorsed commentary. Embedded intro/FMA/taxonomy and partial-regional discussion read through first Switzerland incident heading; incident history not verified. Qualitative likelihoods not adopted as probabilities. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-apim-blog",
+      "title": "API Management Premium v2 generally available",
+      "url": "https://techcommunity.microsoft.com/blog/integrationsonazureblog/announcing-the-general-availability-ga-of-the-premium-v2-tier-of-azure-api-manag/4471499",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Embedded main public Premium v2 GA article read, November 19, 2025. Current product matrix controls; launch geography and comprehensive-marketing claim not used as current guarantees. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-bus-blog",
+      "title": "Service Bus Premium geo-replication generally available",
+      "url": "https://techcommunity.microsoft.com/blog/messagingonazureblog/announcing-general-availability-of-geo-replication-for-azure-service-bus-premium/4413164",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Embedded main public Geo-Replication GA article read, December 17, 2025. Exercise uses acknowledgment/promotion trade-offs; current doc controls partition preview/large-message restrictions. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az305-fma",
+      "title": "Well-Architected failure mode analysis",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Initial RE:03 framework, dependency identification, evaluation and mitigation steps read; full implementation practices not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az140-news",
       "title": "Azure Virtual Desktop release updates",
       "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
@@ -782,9 +1006,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-104"
+        "AZ-104",
+        "AZ-305"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected full lifecycle scope, API/date/old-VNet exceptions and explicit-egress methods read. No blanket shutdown of existing VNets claimed; full routing examples not run. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected full lifecycle scope, API/date/old-VNet exceptions and explicit-egress methods read. No blanket shutdown of existing VNets claimed; full routing examples not run. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Current intro and scoped March 31 API/new-private-subnet default read; existing networks not automatically changed; no egress deployment. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az104-vnet-faq",
@@ -1329,9 +1554,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-200"
+        "AI-200",
+        "AZ-305"
       ],
-      "notes": "September 28 AI-200 deep review: Selected lock loss, settlement, duration and redelivery sections read. DLQ enablement wording corrected using dedicated DLQ article; no broker execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected lock loss, settlement, duration and redelivery sections read. DLQ enablement wording corrected using dedicated DLQ article; no broker execution. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Selected lifecycle paragraph read: September 30 SDK retirement versus SBMP end of usability; complete settlement reference not newly audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai200-bus-dedup",
@@ -1357,9 +1583,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-200"
+        "AI-200",
+        "AZ-305"
       ],
-      "notes": "September 28 AI-200 deep review: Selected hosting recommendation, Linux v3/plan deadlines, HTTP response limit and Flex group/quota sections read; full table not exhaustively benchmarked or deployed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected hosting recommendation, Linux v3/plan deadlines, HTTP response limit and Flex group/quota sections read; full table not exhaustively benchmarked or deployed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Selected HTTP response timeout, execution/scale-in footnotes and Linux Consumption v3/hosting retirement notes read; full tier/region support matrix not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai200-config-refresh",
@@ -5308,12 +5535,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-100",
-        "SC-900"
+        "SC-900",
+        "AZ-305"
       ],
-      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: New-vault default versus existing-vault update sections reread; no access model changed. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: New-vault default versus existing-vault update sections reread; no access model changed. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Selected new/existing vault behavior, control-plane API deadline and migration distinction read; no role or vault changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc100-keyvault-api",
@@ -12845,8 +13073,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-compute-decision-guide",
@@ -12856,8 +13088,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-arc-overview",
@@ -12884,7 +13120,7 @@
         "AZ-104",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-resource-locks",
@@ -12983,7 +13219,7 @@
         "AZ-104",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-migrate-services-overview",
@@ -12993,8 +13229,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-networking-documentation",
@@ -13004,8 +13244,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-305", "AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-305",
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-networking-overview",
@@ -13072,7 +13317,7 @@
         "AZ-305",
         "SC-900"
       ],
-      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-shared-responsibility",
@@ -13129,7 +13374,7 @@
         "AZ-104",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected account/primary/secondary and asynchronous read-access distinctions read; complete SKU/region matrix not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected account/primary/secondary and asynchronous read-access distinctions read; complete SKU/region matrix not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-storage-azcopy",
@@ -13456,12 +13701,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "DP-900",
-        "DP-420"
+        "DP-420",
+        "AZ-305"
       ],
-      "notes": "Partition limits and supported key features are volatile."
+      "notes": "Partition limits and supported key features are volatile. September 28 AZ-305 deep review: Intro, logical partition and transaction scope read; later current size/throughput limits not asserted. Worked partition limits are fictional. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-cosmos-db-request-units",
@@ -14244,8 +14490,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900", "AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-900",
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-sentinel-docs-sc900",
@@ -15776,7 +16026,7 @@
         "AZ-305",
         "AZ-801"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-104-microsoft-learn-course",
@@ -15912,8 +16162,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: All 49 detailed objectives read and mapped across twelve groups; April 17 baseline, unchanged objective/status hashes and no upcoming announcement. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-well-architected-framework",
@@ -15923,8 +16176,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-cloud-adoption-framework",
@@ -15934,8 +16190,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305", "SC-100"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305",
+        "SC-100"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-data-model-decision-guidance",
@@ -15945,8 +16205,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-reliability-guidance",
@@ -15956,8 +16219,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-site-recovery-overview",
@@ -15967,8 +16233,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-messaging-decision-guide",
@@ -15978,8 +16247,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-api-management-overview",
@@ -15989,8 +16261,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-load-balancing-decision-guide",
@@ -16000,8 +16275,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305", "AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305",
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-microsoft-learn-course",
@@ -16011,9 +16290,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "Microsoft lists a four-day instructor-led duration and links self-directed preparation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "Microsoft lists a four-day instructor-led duration and links self-directed preparation. September 28 AZ-305 deep review: Short standalone course metadata read: four instructor days and eight languages; runtime not asserted; lessons not executed. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-microsoft-practice-assessment",
@@ -16023,9 +16304,11 @@
       "authority_class": 3,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "Official free readiness assessment; it does not replace training or hands-on design experience."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "Official free readiness assessment; it does not replace training or hands-on design experience. September 28 AZ-305 deep review: Public credential/assessment landing only; no actual assessment questions, results or explanations opened. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-john-savill-study-cram",
@@ -16035,9 +16318,11 @@
       "authority_class": 4,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "Independent approximately four-hour review; the recording predates the April 2026 objective baseline and must be reconciled with current documentation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "Independent approximately four-hour review; the recording predates the April 2026 objective baseline and must be reconciled with current documentation. September 28 AZ-305 deep review: Public fetch returned video shell only; historical four-hour estimate not reverified and recording not watched. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-john-savill-whiteboard",
@@ -16047,9 +16332,11 @@
       "authority_class": 4,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "Public visual companion to the study cram; labels should be checked against the current blueprint and product documentation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "Public visual companion to the study cram; labels should be checked against the current blueprint and product documentation. September 28 AZ-305 deep review: Public GitHub HTML shell retrieved; whiteboard image not visually inspected in this pass. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-pluralsight-path",
@@ -16059,9 +16346,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "Path advertised 18 hours, five courses, three labs, quizzes, and a practice exam when checked."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "Path advertised 18 hours, five courses, three labs, quizzes, and a practice exam when checked. September 28 AZ-305 deep review: Public path and five course/three lab titles, dates and runtimes read: 13h48 course + 4h15 lab = 18h03 versus rounded 18h; course dates 2024–2025 and lab dates 2026, latest September 18. Paid content unopened. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-oreilly-aci-course",
@@ -16071,9 +16360,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "O'Reilly displayed an 18h 46m runtime and May 2024 publication date when checked."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "O'Reilly displayed an 18h 46m runtime and May 2024 publication date when checked. September 28 AZ-305 deep review: Direct fetch blocked; indexed first-party public chapter catalog confirms ACI Learning/Adam Gordon, May 2024 and 18h46. Paid content not accessed. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-oreilly-exam-ref",
@@ -16083,9 +16374,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "192-page November 2022 book; O'Reilly displayed a 5h 32m platform estimate. Pair with current objectives and documentation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "192-page November 2022 book; O'Reilly displayed a 5h 32m platform estimate. Pair with current objectives and documentation. September 28 AZ-305 deep review: Direct blocked; indexed first-party catalog confirms November 2022, 192 pages and 5h32 reading estimate. Paid text not read. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-udemy-christopher-nett",
@@ -16095,9 +16388,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "Udemy displayed 16h 51m and a January 2026 update when checked; the current objectives became effective in April 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "Udemy displayed 16h 51m and a January 2026 update when checked; the current objectives became effective in April 2026. September 28 AZ-305 deep review: Direct fetch blocked; browser provider page read through metadata/initial outline: January 2026, 13 sections, 164 lectures, 16h51. Related catalog aggregator refers to a different course; not substituted. Paid lessons unopened. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-whizlabs-resources",
@@ -16107,9 +16402,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "Public catalog overview links paid self-paced video, lab, sandbox, and practice-test resources; bundle details should be verified before purchase."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "Public catalog overview links paid self-paced video, lab, sandbox, and practice-test resources; bundle details should be verified before purchase. September 28 AZ-305 deep review: Selected public planning paragraphs read; full bundle quantities, lesson alignment and paid questions not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-measureup-practice-test",
@@ -16119,9 +16416,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-305"],
-      "notes": "148-question practice test with practice and certification modes; page metadata showed an April 2024 update, so current objective alignment must be verified."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-305"
+      ],
+      "notes": "148-question practice test with practice and certification modes; page metadata showed an April 2024 update, so current objective alignment must be verified. September 28 AZ-305 deep review: Public product metadata shows 164 questions and September 2026 update, replacing old 148 / April 2024 metadata. No paid questions or objective-completeness audit. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-blueprint",
@@ -19868,10 +20167,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "DP-300"
-      ]
+        "DP-300",
+        "AZ-305"
+      ],
+      "notes": "September 28 AZ-305 deep review: Selected overview, listener, application recovery and customer/Microsoft-managed policy sections read; complete failover procedure not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     }
     ,
     {
@@ -23394,9 +23695,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-200"
+        "AI-200",
+        "AZ-305"
       ],
-      "notes": "September 28 AI-200 deep review: Selected lifecycle, deadlines, clustering and migration sections read. Prior April 1 new-customer cutoff not supported by current page and removed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Selected lifecycle, deadlines, clustering and migration sections read. Prior April 1 new-customer cutoff not supported by current page and removed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Both tier families retirement/disablement dates and Enterprise compatibility sections read. No automatic state migration or disputed NoCluster limits asserted. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-vector-search-concepts",
@@ -23422,9 +23724,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-200"
+        "AI-200",
+        "AZ-305"
       ],
-      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Retained context reference fetched; no exhaustive reread of this whole reference or linked procedures in this pass. Applied changes are supported by separately identified targeted sources. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-200-python-sdk-quickstart",

@@ -1965,6 +1965,37 @@ These exercises turn announcements into decisions and observable evidence. Marke
 
 This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft can change objectives, clients, RDP transport rollout, identity/storage support, images, licensing, security defaults, SKUs, limits, pricing and service behavior. Verify the official blueprint, credential page and linked product documentation before an exam or production decision.
 
+### AZ-305 — Designing Microsoft Azure Infrastructure Solutions
+
+Resource details from the [AZ-305 guide](../guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation and architecture case studies for weak objectives, complete design/lab work, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior Azure experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Microsoft Learn AZ-305 course](https://learn.microsoft.com/en-us/training/courses/az-305t00) | Free self-directed content; instructor delivery varies | Published: 4 instructor-led days; plan 20–30 hours reading or 30–45 with case studies/labs | Best official objective-aligned spine; assumes administration experience |
+| [Microsoft free Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/?practice-assessment-type=certification) | Free account | Plan 45–90 minutes including review | Baseline and gap finding; not a substitute for design practice |
+| [John Savill AZ-305 Study Cram](https://www.youtube.com/watch?v=vq9LuCM4YP4) | Free | Historical estimate: about 4 hours, not reverified from the accessible video shell; plan 5–7 hours with pauses and current-objective checks | High-density review after primary study; recording predates the 2026 baseline |
+| [John Savill AZ-305 whiteboard](https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-305-Whiteboard.png) | Free public GitHub resource | Plan 1–2 hours to annotate and reproduce from memory | Visual recall companion to the study cram; reconcile labels with current docs |
+| [Pluralsight AZ-305 certification path](https://www.pluralsight.com/paths/az-305-designing-microsoft-azure-infrastructure-solutions) | Paid/trial or organization access | Public header: 18 hours; five courses total 13h 48m and three labs 4h 15m (18h 03m combined); plan 24–35 hours with review | 2024–2025 courses with 2026 labs; latest listed lab September 18. Compare older course coverage with current docs |
+| [O'Reilly/ACI Learning AZ-305 course](https://www.oreilly.com/videos/designing-microsoft-azure/9781836200659/) | Paid subscription | Indexed provider metadata: May 2024, 18h 46m; direct retrieval blocked; plan 24–32 hours with design notes | Detailed video alternative; verify older terminology and changed bullets |
+| [O'Reilly Exam Ref AZ-305](https://www.oreilly.com/library/view/exam-ref-az-305/9780137878758/) | Paid subscription/book | Indexed provider metadata: November 2022, 192 pages / reading estimate 5h 32m; direct retrieval blocked; plan 8–14 hours | Compact objective reference; 2022 edition must be paired with current blueprint/docs |
+| [Udemy AZ-305 course by Christopher Nett](https://www.udemy.com/course/az-305-microsoft-azure-solutions-architect-expert-i/) | Paid; frequent discounts | Public provider page via browser: January 2026, 13 sections, 164 lectures, 16h 51m; direct fetch blocked; plan 22–32 hours | Compact video option predating the April baseline; paid lessons and complete coverage not audited |
+| [Whizlabs AZ-305 preparation resources](https://www.whizlabs.com/blog/microsoft-azure-az-305-exam/) | Public overview; linked course/labs/tests are paid | Plan 12–25 hours when selecting videos, labs and practice tests | Targeted lab and assessment supplement; verify bundle quantities/current objective mapping |
+| [MeasureUp AZ-305 practice test](https://www.measureup.com/microsoft-practice-test-az-305-designing-microsoft-azure-infrastructure-solutions.html) | Paid; free demo available | Plan 3–6 hours across timed attempt and explanation review | Product now lists 164 questions and September 2026 update; paid questions, explanations and complete objective alignment not audited |
+
+Practice products should contain independently authored questions and explanations, not recalled live-exam content. Use results by objective domain, revisit primary documentation and design labs, then retest with unseen questions.
+
+#### Blog reading with an architecture deliverable
+
+| Reading | Why it helps | Exercise and boundary |
+|---|---|---|
+| [Proactive reliability: fault types in Azure](https://techcommunity.microsoft.com/blog/azurearchitectureblog/proactive-reliability-series-%E2%80%94-article-1-fault-types-in-azure/4507006) — Zoran Jovanovic, April 1, 2026 | Broadens analysis beyond a total regional outage | Write a fault matrix for request serving, scaling and recovery when only identity or management is unavailable. The author explicitly writes personally, without Microsoft endorsement. Treat the taxonomy as commentary; do not use its qualitative likelihood labels as measured probabilities. Current Well-Architected failure-mode guidance controls. |
+| [API Management Premium v2 GA](https://techcommunity.microsoft.com/blog/integrationsonazureblog/announcing-the-general-availability-ga-of-the-premium-v2-tier-of-azure-api-manag/4471499) — Sreekanth Thirthala, November 19, 2025 | Introduces gateway isolation and zone design choices | Produce separate inbound-gateway, outbound-backend and recovery diagrams. Check today's v2 matrix for missing classic features; the launch region list and broad marketing descriptions are not current coverage guarantees. |
+| [Service Bus Premium Geo-Replication GA](https://techcommunity.microsoft.com/blog/messagingonazureblog/announcing-general-availability-of-geo-replication-for-azure-service-bus-premium/4413164) — Eldert Grootenboer, December 17, 2025 | Explains data/state replication and acknowledgment trade-offs | Compare synchronous and asynchronous operation during a slow secondary, then planned and forced promotion. Specify what an acknowledgment proves, tolerated data loss and replay handling. Current product documentation controls preview and large-message restrictions. |
+
+Blog reading was limited to the recorded sections in the review report. No paid lessons or live-exam questions were used. Use the articles to challenge an ADR, then verify exact support and migration steps in primary documentation.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

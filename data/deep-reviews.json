@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "AZ-305",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "b1f6f924605d862556e950676cc2c7ab19a94a95e1fd4a62640a88605ff65214",
+      "objective_count": 49,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-28-az-305-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-az-305-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "No Azure deployment, tenant/API/role change, SDK integration, network traffic, message delivery, migration, failover, restore, monitoring query or paid-content execution.",
+        "38 offline assertions cover synthetic arithmetic and a local SQLite example only; no concurrency stress test, distributed exactly-once or external payment guarantee.",
+        "Retained references fetched; long pages, complete feature/region matrices and linked procedures not exhaustively audited. Blog reading limited to stated sections; personal fault commentary is not Microsoft endorsement or measured failure probability.",
+        "OReilly and Udemy direct retrieval blocked; indexed/browser public metadata does not verify paid-content quality, completeness or exam-question provenance. Video runtime and whiteboard image not newly inspected; exact exam duration unverified.",
+        "Same-context AI review; independent human review and live labs remain pending."
+      ]
+    },
+    {
       "exam_code": "AZ-140",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "9ecabe2cc51fc705025e7dc3d96829931fb8003046ba991a48ad91473569e337",

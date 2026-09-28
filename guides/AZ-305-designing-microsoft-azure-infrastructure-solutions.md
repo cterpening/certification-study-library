@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # AZ-305 Designing Microsoft Azure Infrastructure Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). The [official AZ-305 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). The [official AZ-305 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Certification prerequisite:** Azure Administrator Associate is required for the Azure Solutions Architect Expert certification; it is not a prerequisite merely to sit AZ-305.<br>
 **Official source:** [AZ-305 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305)
+
+The [September 28 deep-review report](../docs/research/2026-09-28-az-305-deep-review.md) maps all 49 detailed objectives. Seven worked examples, ten labs and 48 explained checks support design practice. Calculations and the local transaction example were tested offline; Azure deployment, failover and paid course content were not tested. Independent human review remains pending.
+
+The [credential profile](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/) lists ten exam languages and certification renewal. Check scheduling for your delivery details; this review did not verify an exact exam duration.
 
 ## How to use this guide
 
@@ -118,6 +122,12 @@ Do not use a metric threshold when absence of data, a multi-resource correlation
 
 > **Related item:** An SLI is the measured behavior, an SLO is the target, and an SLA is a commitment with defined consequences. Azure service SLAs do not automatically become the end-to-end workload SLA; dependencies and application design change the result.
 
+#### Match the log table plan to the operational question
+
+The current [Azure Monitor Logs comparison](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs) separates Analytics, Basic and Auxiliary/Lake. Basic supports Simple Log Alerts; Auxiliary/Lake does not support alerts. Auxiliary/Lake also lacks workspace replication and is intended for less frequent analysis. Basic and Auxiliary queries incur query charges, so cheaper ingestion alone does not establish lower total cost.
+
+For a payment-failure alert, an incident investigation and a long-retention audit, record the required alert type, query scope, table eligibility, retention, replication and expected query frequency separately. Verify the table's supported plan before changing it. An infrequently queried audit copy should not silently become the only source for a time-sensitive alert.
+
 ### Authentication and authorization
 
 Keep identity proof, policy evaluation, and resource authorization separate:
@@ -147,6 +157,12 @@ For hybrid/on-premises access, first identify whether the target trusts Active D
 Storing a secret in Key Vault is incomplete if the deployment pipeline copies it into logs, a template parameter file, or application configuration. Prefer secretless/federated patterns where supported.
 
 > **Related item:** Microsoft Entra Privileged Identity Management makes supported role assignments eligible and time-bound, with controls such as approval or MFA. It reduces standing privilege; it does not repair an over-broad role definition or scope.
+
+#### Key Vault creation and recovery boundaries
+
+With [API version 2026-02-01 and later](https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default), new vaults default to Azure RBAC. Updating an existing vault with that API does not switch its access model. Make the intended authorization model explicit and test caller data permissions. Earlier control-plane API versions retire February 27, 2027; an API upgrade and an access-model migration are separate changes.
+
+[Manual Key Vault backup](https://learn.microsoft.com/en-us/azure/key-vault/general/backup) is per object, not a single whole-vault export. Its encrypted backup must be restored within the same Azure subscription and geography; more than 500 historical versions of one object are unsupported. This is not an arbitrary cross-subscription escape path. Document key versions, certificates, identity, network access and restore prerequisites alongside the data that depends on them.
 
 ### Governance and identity governance
 
@@ -205,6 +221,8 @@ Choose tier and compute from measured CPU, memory, I/O, storage, log rate, concu
 
 Separate high availability from disaster recovery. A zone-redundant database can address an in-region zone failure; geo-replication/failover groups address regional design needs; backups provide point-in-time or longer-term recovery. They have different consistency, data-loss, failover, endpoint, validation, and cost characteristics.
 
+[SQL Database failover groups](https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql) provide stable read/write and read-only listener names. Client reconnects, retry handling and every non-database dependency still need recovery design. Microsoft currently recommends customer-managed failover; Microsoft-managed failover responds to widespread regional outages and should not be assumed to cover an isolated application failure. The SQL Database and Managed Instance procedures differ. Specify who declares an incident, evaluates potential data loss, authorizes failover and validates the application.
+
 ### Semi-structured and unstructured data
 
 | Requirement | Likely design family | Important discriminator |
@@ -220,6 +238,8 @@ For Cosmos DB, a poor partition key can create hot partitions, limited transacti
 For Azure Storage, [redundancy options](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy) protect against specified infrastructure failures; they do not inherently protect against replicated logical deletion or corruption. Add versioning, soft delete, immutability, lifecycle, or backup based on the threat and recovery need.
 
 > **Related item:** Data durability is the probability that data remains intact; availability is the ability to serve a request; consistency defines what version a read may observe. A service can offer high durability while an application is temporarily unavailable or reads an older replica.
+
+For Cosmos DB, a logical partition groups items with the same partition-key value and defines the scope for transactions described in the [partitioning overview](https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview). A large account-wide throughput budget does not fix a heavily skewed key. Evaluate write distribution, point-read routing, cross-partition queries and atomic business operations together. Example 2 uses fictional limits to practice this trade-off without presenting them as Azure service limits.
 
 ### Data integration and analysis
 
@@ -300,6 +320,12 @@ Distinguish automatic local HA, zone redundancy, read replicas, active geo-repli
 
 Storage account redundancy, Cosmos DB region topology/consistency, file-service replication/backup, and cache persistence solve different problems. An active-active application may still have a single-region database or key store. Draw the dependency graph and find the narrowest failure boundary.
 
+#### Region pairs and recovery ownership
+
+[Region pairing](https://learn.microsoft.com/en-us/azure/reliability/regions-paired) does not automatically replicate a workload, provide HA or fail it over. Some services use the paired region; others support different choices. Select locations from the service's replication support, residency, capacity and latency requirements. Record recovery actions for DNS, identity, configuration, keys and deployment tooling as well as data. Microsoft-managed regional recovery is not a substitute for a workload recovery plan.
+
+Use [failure mode analysis](https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis) to examine running operations and recovery operations separately. A healthy data-plane probe can coexist with a failed identity or management dependency that prevents scaling, rotating a key or redeploying. Define a useful degraded mode and evidence that it is working.
+
 ### Availability mathematics and dependency design
 
 For independent serial dependencies, availability is approximately the product of component availabilities. Adding a required dependency can reduce end-to-end availability even when that service has a strong SLA. Parallel redundant paths can improve availability only if traffic actually fails over and shared dependencies do not fail with both paths.
@@ -328,12 +354,14 @@ Use the [Azure compute decision guide](https://learn.microsoft.com/en-us/azure/a
 |---|---|---|
 | OS control, legacy agent, custom appliance, unsupported runtime | Azure VMs / VM Scale Sets | Image, guest patching, hardening, availability, scaling and application operations |
 | Managed web/API runtime with deployment slots | App Service | Application, plan sizing/scaling, identity, configuration, networking and observability |
-| Event-driven short execution | Azure Functions | Trigger behavior, idempotency, timeout/scale plan, dependencies and monitoring |
+| Event-driven functions and orchestrated work | Azure Functions | Trigger behavior, idempotency, timeout/scale plan, dependencies and monitoring |
 | Container without full orchestrator ownership | Container Apps or Container Instances | Image, ingress, revisions/jobs, secrets, scale rules and application health |
 | Kubernetes API/ecosystem and orchestration control | AKS | Cluster/workload design, node strategy, upgrades, policy, networking and observability split |
 | Large parallel or scheduled jobs | Azure Batch or suitable data/compute service | Job/task model, pool/image, data staging, retry, quotas and cost |
 
 Specify CPU architecture, memory, accelerator, ephemeral/persistent storage, network throughput, startup time, state, scale unit, deployment strategy, health probes, maintenance, availability zones/regions, and cost behavior. “Serverless” changes capacity management; it does not make state, latency, limits, retries, or observability disappear.
+
+For Functions, separate the function execution timeout from the caller's deadline. The [hosting guidance](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale) gives an HTTP response limit of 230 seconds regardless of the configured function timeout. Queue-based or Durable Functions patterns can return an accepted-operation response and expose status. A plan without an enforced execution maximum still has platform-update and scale-in interruptions to design for. Apps using the v3 runtime on Linux Consumption stop running after September 30, 2026; migrate those apps to v4. Linux Consumption hosting retires September 30, 2028. These are distinct from Windows Consumption and from the AZ-305 exam lifecycle.
 
 ### Application architecture
 
@@ -350,15 +378,36 @@ The [Azure asynchronous messaging guide](https://learn.microsoft.com/en-us/azure
 - back pressure, throttling and consumer scale;
 - correlation, tracing and audit.
 
+#### Select the Service Bus recovery feature deliberately
+
+| Choice | State protected and design consequence |
+|---|---|
+| [Geo-Disaster Recovery](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr) | Replicates namespace metadata, not queued or dead-lettered messages. Alias failover breaks the pairing. RBAC assignments and several network/security settings need separate preparation. |
+| [Geo-Replication](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-replication) | Premium replication includes messages and state. Currently one secondary; applications use the primary. Synchronous acknowledgment adds latency and dependency on active replicas; asynchronous replication allows a data-loss window and throttles publishing at its lag threshold. |
+
+Geo-Replication cannot be combined with Geo-Disaster Recovery. Partitioned-namespace Geo-Replication remains public preview and large messages are unsupported in the current feature documentation. Planned promotion catches up first; forced promotion can lose or redeliver messages. Inventory access, network and downstream effects separately from namespace availability.
+
+For current implementations, the [Service Bus settlement guidance](https://learn.microsoft.com/en-us/azure/service-bus-messaging/message-transfers-locks-settlement) identifies September 30, 2026 as the retirement of WindowsAzure.ServiceBus, Microsoft.Azure.ServiceBus and com.microsoft.azure.servicebus. Older SDKs can continue without support; SBMP itself cannot be used after the deadline. Plan supported SDK/AMQP migration and verify retry, settlement and duplicate behavior.
+
+The [idempotent consumer pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/idempotent-consumer) requires a stable event identity and an atomic relationship between the processed marker and the business update. A correlation ID shared by several events is insufficient. A [transactional outbox](https://learn.microsoft.com/en-us/azure/architecture/databases/guide/transactional-out-box-cosmos) addresses the producer's database/message handoff; it does not remove the consumer's need to handle repeats. Example 7 demonstrates only a local database transaction. External payment APIs require their own idempotency and reconciliation strategy.
+
 #### API integration
 
 API Management can provide gateway policies, authentication enforcement, transformation, throttling, caching, versioning, developer discovery, and analytics. It does not repair an unreliable or insecure backend. Decide gateway topology, network placement, regional deployment, custom domains/certificates, policy ownership, product/subscription model, backend identity, rate limits, version/revision strategy, and observability. **VERIFY CURRENT:** tiers, v2 capabilities, networking, multi-region support, limits, and retirement notices in the [API Management overview](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts).
+
+Check the [v2 capability matrix](https://learn.microsoft.com/en-us/azure/api-management/v2-service-tiers-overview), not just a tier name. Standard v2/Premium v2 VNet integration connects to private backends; it does not by itself make the gateway, management plane or developer portal private. Premium v2 adds VNet injection for gateway isolation and zone redundancy. Current v2 tiers do not support multi-region deployment or an automated classic-to-v2 upgrade.
+
+Classic [Premium multi-region deployment](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-deploy-multi-region) replicates gateways; management and the developer portal remain in the primary region. Compare gateway continuity, backend recovery and management availability independently. Do not confuse the classic platform's stv2 version with a v2 pricing tier.
 
 #### Caching and configuration
 
 Cache only when access pattern and invalidation behavior are understood. Define source of truth, key, TTL, eviction, stampede protection, consistency tolerance, warm-up, failure behavior, and sensitive-data handling. A cache-aside consumer must tolerate a miss and usually tolerate stale data within a defined bound.
 
 Central configuration services separate deployable code from environment settings. Use managed identity and least privilege, label/version configuration, treat secrets separately, and design application behavior when the configuration service is unavailable. Feature flags need ownership, expiry, telemetry, and removal—not just a toggle.
+
+[App Configuration geo-replication](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-geo-replication) uses separate replica endpoints and eventual consistency. Configure a supported provider's replica discovery/failover, or implement and test equivalent client behavior. Updates can temporarily differ between regions. Design refresh, cached values and safe defaults; a feature flag should not be treated as an instantaneous global security revocation mechanism.
+
+The [Redis retirement FAQ](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq) distinguishes Azure Cache for Redis Enterprise/Enterprise Flash retirement on March 31, 2027 from Basic/Standard/Premium on September 30, 2028; disablement begins the following day for each group. Assess Azure Managed Redis compatibility, region/SKU, clustering, authentication and endpoint changes. Budget for cold-cache load and data semantics; do not infer that a replacement deployment automatically carries over application state.
 
 #### Automated deployment
 
@@ -430,6 +479,14 @@ A private endpoint is an interface for a service subresource. It does not by its
 
 ---
 
+### Current network migration boundaries
+
+For API versions released after March 31, 2026, [new virtual networks default to private subnets](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access). Existing VNets are not automatically changed. Specify NAT Gateway, applicable Load Balancer outbound rules or a designed firewall/NVA egress path and verify DNS, routing and required public dependencies. A private endpoint for one service does not provide general internet egress.
+
+[Front Door classic retires March 31, 2027](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier). Migration to Standard/Premium requires readiness checks such as HTTPS for custom domains and compatible affinity settings. The documented flow avoids DNS changes before/during migration but requires the DNS update afterward; retain verification and rollback decision points appropriate to the actual migration stage.
+
+---
+
 ## 6. Integrated architecture scenarios
 
 ### Scenario A — regulated regional web application
@@ -460,6 +517,101 @@ Requirements: legacy Windows application, SQL Server features, 2 TB file share, 
 6. Group shared dependencies before application waves. Freeze changes, perform final sync, redirect endpoints, validate business transactions and observe.
 7. Retain rollback until acceptance criteria and reconciliation pass. Then decommission source capacity deliberately.
 8. Capture modernization candidates separately so the low-risk migration does not become an accidental permanent architecture.
+
+---
+
+### Worked examples — calculate before choosing a tier
+
+All values below are invented exercise inputs. They are not Azure limits, SLA forecasts, measured capacity or proof of successful recovery. Recheck assumptions against a real workload.
+
+#### Example 1 — serial availability and error budget
+
+Two mandatory, statistically independent components have availability 99.9% and 99.95%. Multiplication gives `0.999 × 0.9995 = 0.9985005`, or **99.85005%**. Over a 30-day, 43,200-minute month, that model implies **64.7784 minutes** unavailable, exceeding the **43.2-minute** budget for 99.9%. Shared dependencies, correlated failures and failover time invalidate a simple independence model. Adding a second region only helps if the user flow and state can actually survive the intended failure.
+
+#### Example 2 — skew defeats aggregate partition capacity
+
+Assume four partitions each support **5,000 work units/s** in a fictional store. Total capacity is 20,000, but one customer key receives 80% of a 10,000-unit/s workload: **8,000 units/s**. That partition overloads even though aggregate demand is below total capacity. A better key or bounded subpartition may spread the work, but explain how reads and multi-item transactions change. Simply buying more aggregate capacity is not a complete answer.
+
+#### Example 3 — a queue absorbs a deficit, not unlimited work
+
+Arrival rate is 2,400 messages/s; processing is 2,000/s for 15 minutes. The backlog grows by `(2400 − 2000) × 900 = 360,000` messages. Raising processing to 3,000/s leaves **600/s** for catch-up while arrivals continue, so draining takes **600 seconds / 10 minutes**. Capacity must account for downstream throttles, retries, lock duration and poison messages. Prefetch is not proof that business processing achieves the advertised rate.
+
+#### Example 4 — a cache failure becomes a database load event
+
+At 2,000 requests/s and a 95% hit rate, the database receives **100 misses/s**. Immediately after a full flush, a no-hit assumption gives **2,000/s**, a **20-fold** increase. Stagger expiry, coalesce concurrent cache fills and limit fallback load where appropriate. For authorization-sensitive data, define safe invalidation and failure behavior instead of serving stale permissions indiscriminately.
+
+#### Example 5 — migration time and ongoing change
+
+Four TiB equals 4,194,304 MiB. At an effective 250 MiB/s, a baseline copy needs **16,777.216 seconds**, about **4h 39m 37s**. In a simplified backlog model where ongoing changes consume 50 MiB/s of that same capacity, net drain is 200 MiB/s: **20,971.52 seconds**, about **5h 49m 32s**. Add 45 minutes of sequential verification and the estimate becomes **6h 34m 32s**, beyond a six-hour window. Real convergence depends on change amplification and tool behavior. Pre-staging can move the baseline copy outside the outage; downtime is then the remaining delta, quiescence, final copy, validation and cutover, not necessarily the full transfer time.
+
+#### Example 6 — recovery uses the critical path
+
+Assume DNS preparation takes 15 minutes in parallel with 35 minutes of infrastructure recovery; then a 40-minute restore and 20-minute validation run sequentially. Total is `max(15, 35) + 40 + 20 = 95 minutes`, missing a 90-minute RTO. Summing everything gives 110 minutes and overstates this particular dependency graph. If the newest usable recovery point is 12:35 and the incident is at 13:00, **25 minutes** of exposure also misses a 15-minute RPO. Faster compute startup alone fixes neither gap.
+
+#### Example 7 — duplicate delivery and a failed transaction
+
+This standard-library Python example uses an in-memory SQLite database. A processed-event marker and an integer-cent balance change commit together. The key includes the consumer, so independent consumers can handle the same event. The event ID must be stable across retries and uniquely identify the business event; reject conflicting payloads for a reused ID in a real application.
+
+```python
+import sqlite3
+
+db = sqlite3.connect(":memory:")
+db.executescript("""
+CREATE TABLE inbox (
+    consumer TEXT NOT NULL,
+    event_id TEXT NOT NULL,
+    PRIMARY KEY (consumer, event_id)
+);
+CREATE TABLE balances (consumer TEXT PRIMARY KEY, cents INTEGER NOT NULL);
+INSERT INTO balances VALUES ('billing', 0), ('reporting', 0);
+""")
+
+def apply(consumer, event_id, cents, *, fail_before_commit=False):
+    if not event_id or type(cents) is not int or cents <= 0:
+        raise ValueError("A stable event ID and positive integer cents are required")
+    with db:
+        inserted = db.execute(
+            "INSERT INTO inbox VALUES (?, ?) ON CONFLICT DO NOTHING",
+            (consumer, event_id),
+        ).rowcount
+        if not inserted:
+            return False
+        changed = db.execute(
+            "UPDATE balances SET cents = cents + ? WHERE consumer = ?",
+            (cents, consumer),
+        ).rowcount
+        if changed != 1:
+            raise ValueError("Unknown consumer")
+        if fail_before_commit:
+            raise RuntimeError("Injected failure before commit")
+    return True  # Acknowledge the transport only after this commit.
+
+def balance(consumer):
+    return db.execute(
+        "SELECT cents FROM balances WHERE consumer = ?", (consumer,)
+    ).fetchone()[0]
+
+assert apply("billing", "order-7", 1250)
+assert balance("billing") == 1250
+assert not apply("billing", "order-7", 1250)
+assert balance("billing") == 1250
+try:
+    apply("billing", "order-8", 250, fail_before_commit=True)
+except RuntimeError:
+    pass
+else:
+    raise AssertionError("The simulated failure must occur")
+assert balance("billing") == 1250
+assert db.execute("SELECT COUNT(*) FROM inbox WHERE event_id = 'order-8'").fetchone()[0] == 0
+assert apply("billing", "order-8", 250)
+assert balance("billing") == 1500
+assert apply("reporting", "order-7", 1250)
+assert balance("reporting") == 1250
+assert not apply("reporting", "order-7", 1250)
+assert balance("billing") == 1500
+```
+
+This verifies rollback and replay in one local database. It does not test Service Bus, concurrent workers or an external payment side effect. Retain deduplication state for the supported replay window and reconcile ambiguous external outcomes. A producer outbox and a consumer inbox solve different failure boundaries.
 
 ---
 
@@ -505,7 +657,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 2. Map every critical dependency: compute, data, identity, keys, DNS, network, images, configuration and external services.
 3. Design zone availability, regional recovery and historical backup separately.
 4. Execute or tabletop a region loss and a compromised-production-identity scenario.
-5. Record actual recovery time, recovery point, manual steps, capacity gaps and corrective actions.
+5. Record measured recovery time/point for executed work, or clearly labeled estimates for a tabletop; include manual steps, capacity gaps and corrective actions.
 
 ### Lab 6 — Compute and deployment decision
 
@@ -530,6 +682,24 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 3. Produce route tables for representative flows and prove symmetric return paths.
 4. Compare VPN and ExpressRoute requirements, including redundancy and coexistence.
 5. Fail one gateway/path and one DNS dependency; document expected detection and recovery.
+
+---
+
+### Lab 9 — application state during regional failure
+
+1. Draw an order flow with API Management, Service Bus, a database, App Configuration and a cache. List data-plane and recovery dependencies.
+2. Compare Geo-Disaster Recovery against Geo-Replication, including message loss, lag, RBAC, private access and promotion ownership.
+3. Run example 7 locally; explain failure before commit and failure after commit but before acknowledgment. Propose retention and reconciliation rules.
+4. Tabletop stale configuration, cold cache and a healthy API gateway with an unavailable backend. Calculate backlog and database fallback demand.
+5. Produce an ADR with allowed data loss, client behavior, recovery evidence and a rollback decision. This design lab is not evidence of a cloud failover.
+
+### Lab 10 — capability and lifecycle review
+
+1. Compare classic Premium and Premium v2 API Management against inbound privacy, private backends, zones, multiple regions and management-plane recovery.
+2. Inventory fictional Key Vault API versions, Redis tiers, Front Door tiers, Functions host/runtime and Service Bus SDK/protocol.
+3. Attach the current primary lifecycle source to each affected item; distinguish support retirement from traffic/execution disablement.
+4. Build a migration order from dependencies and test evidence. Include explicit outbound access and DNS checks after Front Door migration.
+5. Use the blog exercises below to challenge the ADR. Record assumptions and unresolved questions instead of treating launch claims as current feature matrices.
 
 ---
 
@@ -559,6 +729,33 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 22. Private endpoint created: is public access disabled? **Answer:** Not automatically; public access, private DNS, routes, permissions and required subresources remain separate decisions.
 23. Why can forced tunneling cause performance or availability problems? **Answer:** Central inspection paths can bottleneck, add latency, create asymmetric routing or become shared failure points.
 24. What belongs in an ADR? **Answer:** Context, requirements, considered options, decision, trade-offs/consequences, evidence, verification and unresolved risks.
+
+---
+
+25. Does moving an alert table to Auxiliary preserve alerting? **Answer:** No. Check the current table-plan capability matrix, including alert type, query costs and replication; Auxiliary/Lake does not support alerts.
+26. Does updating an existing vault with API 2026-02-01 switch it to RBAC? **Answer:** No. The new-vault default and explicit migration of existing authorization are separate.
+27. Can a Key Vault object backup be restored into any subscription? **Answer:** No. The documented restore boundary is the same Azure subscription and geography.
+28. Does a SQL failover-group listener recover the entire application? **Answer:** No. It redirects database connections; clients, identity, DNS, compute and other state still need recovery.
+29. Does an Azure region pair supply an application failover plan? **Answer:** No. Service-specific replication and workload recovery must be designed and tested.
+30. Can a green data-plane probe hide a recovery dependency failure? **Answer:** Yes. Existing requests may work while identity or control-plane failures prevent scaling or redeployment.
+31. Are 99.9% and 99.95% serial independent components sufficient for a modeled 99.9% flow? **Answer:** No. Their product is 99.85005%; real shared failures need additional analysis.
+32. Can an overloaded partition coexist with spare aggregate capacity? **Answer:** Yes. A hot key can saturate one partition; revisit key distribution and transaction/query requirements.
+33. A queue receives 2,400/s and processes 2,000/s for 15 minutes. Backlog? **Answer:** 360,000 messages. At 3,000/s processing with arrivals continuing, catch-up takes another ten minutes.
+34. Does Service Bus Geo-Disaster Recovery replicate queued messages? **Answer:** No. It protects metadata; message/state replication belongs to the separate Geo-Replication feature.
+35. Is all Service Bus Geo-Replication functionality GA? **Answer:** No. The current document still marks partitioned-namespace support public preview; check feature-specific limits.
+36. Why can asynchronous replication affect publisher availability? **Answer:** Reaching the configured replication-lag threshold can throttle publishing when the secondary cannot keep up.
+37. Does a producer outbox eliminate duplicate consumer effects? **Answer:** No. Dispatch and delivery may repeat; atomically couple the consumer marker with its business update where possible.
+38. Why use consumer plus event ID for a shared inbox? **Answer:** Independent consumers each need to process an event once within their own business boundary.
+39. What happens if the example fails after the balance update but before commit? **Answer:** Both the balance update and inbox marker roll back, so a retry can safely apply the local transaction.
+40. Does the SQLite example prove exactly-once external payments? **Answer:** No. An external API is outside the transaction; use supported idempotency and reconcile ambiguous outcomes.
+41. Does increasing a Functions timeout extend the HTTP response limit? **Answer:** No. The documented 230-second response limit remains; use an asynchronous operation pattern when appropriate.
+42. Does VNet integration alone make API Management v2 private inbound? **Answer:** No. Private backend connectivity and gateway inbound isolation are separate requirements and configurations.
+43. Does Premium v2 imply classic Premium multi-region capability? **Answer:** No. The current v2 matrix excludes multi-region; classic Premium also keeps management and the developer portal in the primary region.
+44. Are App Configuration replica writes instantly consistent worldwide? **Answer:** No. Replication is eventual; configure client failover and safe stale/default behavior.
+45. At 2,000 requests/s and 95% cache hits, what happens to database load after a no-hit flush? **Answer:** It rises from 100/s to 2,000/s, or twenty-fold, under the stated assumptions.
+46. Does a five-hour baseline data copy imply five hours of downtime? **Answer:** No. Pre-staging, ongoing deltas, write quiescence, validation and cutover determine the outage window.
+47. What is RTO for parallel 15/35-minute tasks followed by 40-minute restore and 20-minute validation? **Answer:** 95 minutes, assuming exactly those dependencies; a 90-minute target is missed.
+48. Do the new private-subnet defaults automatically change existing VNets? **Answer:** No. The change applies to new VNets through the relevant API versions; inventory actual egress configuration.
 
 ---
 
@@ -605,13 +802,23 @@ This is a curated starting set, not a complete list. Do **not** consume every re
 |---|---|---:|---|
 | [Microsoft Learn AZ-305 course](https://learn.microsoft.com/en-us/training/courses/az-305t00) | Free self-directed content; instructor delivery varies | Published: 4 instructor-led days; plan 20–30 hours reading or 30–45 with case studies/labs | Best official objective-aligned spine; assumes administration experience |
 | [Microsoft free Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/?practice-assessment-type=certification) | Free account | Plan 45–90 minutes including review | Baseline and gap finding; not a substitute for design practice |
-| [John Savill AZ-305 Study Cram](https://www.youtube.com/watch?v=vq9LuCM4YP4) | Free | Published: about 4 hours; plan 5–7 hours with pauses and current-objective checks | High-density review after primary study; recording predates the 2026 baseline |
+| [John Savill AZ-305 Study Cram](https://www.youtube.com/watch?v=vq9LuCM4YP4) | Free | Historical estimate: about 4 hours, not reverified from the accessible video shell; plan 5–7 hours with pauses and current-objective checks | High-density review after primary study; recording predates the 2026 baseline |
 | [John Savill AZ-305 whiteboard](https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-305-Whiteboard.png) | Free public GitHub resource | Plan 1–2 hours to annotate and reproduce from memory | Visual recall companion to the study cram; reconcile labels with current docs |
-| [Pluralsight AZ-305 certification path](https://www.pluralsight.com/paths/az-305-designing-microsoft-azure-infrastructure-solutions) | Paid/trial or organization access | Published: 18 hours, five courses and three labs; plan 24–35 hours with exercises/review | Current structured video path plus labs and practice exam |
-| [O'Reilly/ACI Learning AZ-305 course](https://www.oreilly.com/videos/designing-microsoft-azure/9781836200659/) | Paid subscription | Published: 18h 46m; plan 24–32 hours with design notes | Detailed video alternative; verify older terminology and changed bullets |
-| [O'Reilly Exam Ref AZ-305](https://www.oreilly.com/library/view/exam-ref-az-305/9780137878758/) | Paid subscription/book | Published: 192 pages / platform estimate 5h 32m; plan 8–14 hours | Compact objective reference; 2022 edition must be paired with current blueprint/docs |
-| [Udemy AZ-305 course by Christopher Nett](https://www.udemy.com/course/az-305-microsoft-azure-solutions-architect-expert-i/) | Paid; frequent discounts | Published: 16h 51m and updated January 2026; plan 22–32 hours with review | Current compact video spine; compare its update date with the April 2026 baseline |
+| [Pluralsight AZ-305 certification path](https://www.pluralsight.com/paths/az-305-designing-microsoft-azure-infrastructure-solutions) | Paid/trial or organization access | Public header: 18 hours; five courses total 13h 48m and three labs 4h 15m (18h 03m combined); plan 24–35 hours with review | 2024–2025 courses with 2026 labs; latest listed lab September 18. Compare older course coverage with current docs |
+| [O'Reilly/ACI Learning AZ-305 course](https://www.oreilly.com/videos/designing-microsoft-azure/9781836200659/) | Paid subscription | Indexed provider metadata: May 2024, 18h 46m; direct retrieval blocked; plan 24–32 hours with design notes | Detailed video alternative; verify older terminology and changed bullets |
+| [O'Reilly Exam Ref AZ-305](https://www.oreilly.com/library/view/exam-ref-az-305/9780137878758/) | Paid subscription/book | Indexed provider metadata: November 2022, 192 pages / reading estimate 5h 32m; direct retrieval blocked; plan 8–14 hours | Compact objective reference; 2022 edition must be paired with current blueprint/docs |
+| [Udemy AZ-305 course by Christopher Nett](https://www.udemy.com/course/az-305-microsoft-azure-solutions-architect-expert-i/) | Paid; frequent discounts | Public provider page via browser: January 2026, 13 sections, 164 lectures, 16h 51m; direct fetch blocked; plan 22–32 hours | Compact video option predating the April baseline; paid lessons and complete coverage not audited |
 | [Whizlabs AZ-305 preparation resources](https://www.whizlabs.com/blog/microsoft-azure-az-305-exam/) | Public overview; linked course/labs/tests are paid | Plan 12–25 hours when selecting videos, labs and practice tests | Targeted lab and assessment supplement; verify bundle quantities/current objective mapping |
-| [MeasureUp AZ-305 practice test](https://www.measureup.com/microsoft-practice-test-az-305-designing-microsoft-azure-infrastructure-solutions.html) | Paid; free demo available | Plan 3–6 hours across timed attempt and explanation review | Independent 148-question bank; last-update metadata was April 2024 when checked, so verify current alignment |
+| [MeasureUp AZ-305 practice test](https://www.measureup.com/microsoft-practice-test-az-305-designing-microsoft-azure-infrastructure-solutions.html) | Paid; free demo available | Plan 3–6 hours across timed attempt and explanation review | Product now lists 164 questions and September 2026 update; paid questions, explanations and complete objective alignment not audited |
 
 Practice products should contain independently authored questions and explanations, not recalled live-exam content. Use results by objective domain, revisit primary documentation and design labs, then retest with unseen questions.
+
+### Blog reading with an architecture deliverable
+
+| Reading | Why it helps | Exercise and boundary |
+|---|---|---|
+| [Proactive reliability: fault types in Azure](https://techcommunity.microsoft.com/blog/azurearchitectureblog/proactive-reliability-series-%E2%80%94-article-1-fault-types-in-azure/4507006) — Zoran Jovanovic, April 1, 2026 | Broadens analysis beyond a total regional outage | Write a fault matrix for request serving, scaling and recovery when only identity or management is unavailable. The author explicitly writes personally, without Microsoft endorsement. Treat the taxonomy as commentary; do not use its qualitative likelihood labels as measured probabilities. Current Well-Architected failure-mode guidance controls. |
+| [API Management Premium v2 GA](https://techcommunity.microsoft.com/blog/integrationsonazureblog/announcing-the-general-availability-ga-of-the-premium-v2-tier-of-azure-api-manag/4471499) — Sreekanth Thirthala, November 19, 2025 | Introduces gateway isolation and zone design choices | Produce separate inbound-gateway, outbound-backend and recovery diagrams. Check today's v2 matrix for missing classic features; the launch region list and broad marketing descriptions are not current coverage guarantees. |
+| [Service Bus Premium Geo-Replication GA](https://techcommunity.microsoft.com/blog/messagingonazureblog/announcing-general-availability-of-geo-replication-for-azure-service-bus-premium/4413164) — Eldert Grootenboer, December 17, 2025 | Explains data/state replication and acknowledgment trade-offs | Compare synchronous and asynchronous operation during a slow secondary, then planned and forced promotion. Specify what an acknowledgment proves, tolerated data loss and replay handling. Current product documentation controls preview and large-message restrictions. |
+
+Blog reading was limited to the recorded sections in the review report. No paid lessons or live-exam questions were used. Use the articles to challenge an ADR, then verify exact support and migration steps in primary documentation.
