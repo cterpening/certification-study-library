@@ -975,6 +975,8 @@ The review reconciles revision 1.0 dated March 26, 2026 with the live certificat
 
 ## AIB-C01 coverage record
 
+The September 28 [deep review](research/2026-09-28-aib-c01-deep-review.md) maps 58 detailed objectives. Review the entire guide and58 skills; add four worked business decisions,retain36 answers and add four checks. Qualify historical CAF-AI and beta duration,refresh resource evidence,and accept two bounded practitioner articles. Current guide citations: 21 registered, 18 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | AI Fundamentals and Literacy | Section 1, all integrated scenarios, and Labs 1 and 5 |

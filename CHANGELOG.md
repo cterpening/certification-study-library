@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: review all 58 [AIB-C01 skills](docs/research/2026-09-28-aib-c01-deep-review.md), add four worked business cases and 40 answered checks, flag historical CAF-AI guidance and assess practitioner articles. Beta-duration wording remains unresolved.
+
 - September 28, 2026: review all 107 [MLA-C02 skills](docs/research/2026-09-28-mla-c02-deep-review.md), add five examples and 42 answers, refresh credential/service/catalog guidance and evaluate two useful AWS articles. GA-date disagreement remains open.
 
 - September 28, 2026: review [MLA-C01](docs/research/2026-09-28-mla-c01-deep-review.md), map 70 skills from the historical PDF, repair reader links and qualify transition/service availability. Add four worked examples and 40 answers; missing current blueprint pages remain a blocker.

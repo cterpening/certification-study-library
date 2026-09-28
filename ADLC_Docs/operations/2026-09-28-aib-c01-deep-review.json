@@ -1,0 +1,1167 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AIB-C01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "f5687b07a8b1458cc96888d44db0c57debcad6898fc85b31789c4f8bae55afac",
+  "guide_after_sha256": "38c625175702c3f0d8e33a62b69b5d29115c793b08d99ad7a4ac4ebf555bc771",
+  "prior_records": {
+    "exam": {
+      "code": "AIB-C01",
+      "level": "intermediate",
+      "vendor_id": "aws",
+      "title": "AWS Certified AI Business Strategist",
+      "status": "beta",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+      "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; AWS recommends basic AI familiarity, strategic awareness of relevant AWS frameworks and tools, and about six months working with or alongside AI initiatives. No coding, AWS implementation experience, or other AWS certification is required."
+    },
+    "review": {
+      "id": "aib-c01-2026-09-01-source-validation",
+      "exam_code": "AIB-C01",
+      "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/aib-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+      "objective_coverage": [
+        {
+          "objective_group": "AI Fundamentals and Literacy",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1 and 5"
+          ]
+        },
+        {
+          "objective_group": "AI Strategy and Business Value Creation",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "AI Governance and Responsible AI Leadership",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Business Readiness, Leadership, and AI Transformation",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 16,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "The initial September 1, 2026 four-domain beta blueprint was reconciled with detailed domain pages, the live certification page and launch post before September 29 delivery. The guide explicitly distinguishes the 170-minute, 85-question beta from the detailed guide's 130-minute standard-duration statement and labels GA details pending. Three scenarios, eight document-based labs and 36 original checks cover solution-type/data decisions; use-case portfolios, build/buy/partner, baselines, TCO/ROI, metrics and durable advantage; responsible-AI tradeoffs, governance/risk tiers and lifecycle evidence; readiness, change, workforce adoption and scaling gates. All 16 URLs are cataloged: 13 reachable and ISO/O'Reilly/Udemy automation-blocked; none missing or broken. Exact AWS resources are separated from adjacent material, the official practice exam is unavailable during beta, and no recalled questions are used."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "a1ce555a75f7735d8dcdb1b5f79321c18f4b17c96dd7e10a06b6762316672bd5",
+      "guide_sections": "1 / Explain AI as a business system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "9fceb414f6b2e239fd04238944f9d6cd0d0062ab5ec34a3286694ba8dafd3ca5",
+      "guide_sections": "1 / Explain AI as a business system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "a1c8a680a60748f99db3def2c2a5698dc3a88d460ec78ea8a0dcf12915efe45d",
+      "guide_sections": "1 / Explain AI as a business system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "908fe661998ada9f3e3c6baaf618d01ea9069af3602633484a376c114317ff1d",
+      "guide_sections": "1 / Explain AI as a business system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "99486d963622990304c09869c15b2515dd55b0ec2269d37752908966b9ad75a7",
+      "guide_sections": "1 / Explain AI as a business system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "0a2ef043762fa337cfcc4b184dc4bc46c82addb7c44a76cb4a2b465b2e078d3d",
+      "guide_sections": "1 / Explain AI as a business system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "bc5ec7fb096b516bcd8454c9c32c47db494814e32449dafdd1ed4726f322cb72",
+      "guide_sections": "1 / Choose the least complex effective approach; Understand practical GenAI choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "c65ff7ecfc4d6b8514c932e0d5aa9a6df4f45da134bfb9f3aa849b7d5a217239",
+      "guide_sections": "1 / Choose the least complex effective approach; Understand practical GenAI choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "10c5c225a4e94b7e6d354e5211ec9ae76787aa9ce2d3c9d4ceb0b9e34358e6cd",
+      "guide_sections": "1 / Choose the least complex effective approach; Understand practical GenAI choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c15afd226ccf3e4178112c51db6644a7e56d2602792dfc7dd2511762a2a5ea2b",
+      "guide_sections": "1 / Choose the least complex effective approach; Understand practical GenAI choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "478d82a8ca1dcdc80aeb3d40fd5a55b7ae3fcd92e5ac45ae46c8540fb1e9ac5d",
+      "guide_sections": "1 / Understand practical GenAI choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "6d43fa7fd22f6728915288330ec61122d220847381f9ffff6bae23abcdb647d0",
+      "guide_sections": "1 / Understand practical GenAI choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "0b7d6bad37fc2c23a9824c63788c479a69b0c3a5eadd69f6873f3038acfb2e61",
+      "guide_sections": "1 / Understand practical GenAI choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e23898b0e64113c3928d8df42c915028af7c25a3ade7dac2d1ef79ba6300cd5b",
+      "guide_sections": "2 / Work backward from outcomes; Build, buy, or partner is an operating-model choice; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "a004426f1146d1dd20954dd7b8bd98a3444ea5ca23d88024aef451b0541587ac",
+      "guide_sections": "2 / Work backward from outcomes; Build, buy, or partner is an operating-model choice; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "3b14a3d851533217545a73f42ea9cca22e665191dc122c694729a5b27f707d20",
+      "guide_sections": "2 / Work backward from outcomes; Build, buy, or partner is an operating-model choice; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "97d64ffa515720398ad462c3eb877d1f4e6cfeadef70170cdb27009c8085ae59",
+      "guide_sections": "2 / Work backward from outcomes; Build, buy, or partner is an operating-model choice; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "4290d56977161d6a57bbe7482e01487c8898cb1041f999eac03612cdfd801423",
+      "guide_sections": "2 / Work backward from outcomes; Build, buy, or partner is an operating-model choice; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "94e048f41392238839a70d3fb8b197da5c8bf0658133ae6b1ece52af4532edb9",
+      "guide_sections": "2 / Make value measurable; Read cost advice critically; Examples 1 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "e067837e2ffbd6b363a90f3e46bfc692572772e1762d443f44b2ec9422794e9f",
+      "guide_sections": "2 / Make value measurable; Read cost advice critically; Examples 1 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "80f51f8d914ae969e59106bd5912f86fe2712f59a8face13a334c2dc0f8bf5d3",
+      "guide_sections": "2 / Make value measurable; Read cost advice critically; Examples 1 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "b07e28601180a46e0a95f4beae92024fa5bc9a31d2f036481001aefcddf1eff1",
+      "guide_sections": "2 / Make value measurable; Read cost advice critically; Examples 1 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "3af7ed765f81662bf96407ad076b9f582418b2791a3fc58c1ee5efeb85533401",
+      "guide_sections": "2 / Make value measurable; Read cost advice critically; Examples 1 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "07458b1ad6aabd561823839a50ce3203c58e33fd377bc84f52f96dce4b71efe8",
+      "guide_sections": "2 / Build defensible advantage; Read cost advice critically",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "19b049dca1bd0a0fefe41f8480fe9d113501c18561773a53fb3139e5b299a88a",
+      "guide_sections": "2 / Build defensible advantage; Read cost advice critically",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "8da09581ad0d47156b6fcce7f2d7a0d4f06c01f56f78a3de0d00f9bb4a0eff47",
+      "guide_sections": "2 / Build defensible advantage; Read cost advice critically",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "8d88c01e3404e6a8f60d512463bf96d6f8cd4f2615d86c38d38ac4917828d61c",
+      "guide_sections": "2 / Build defensible advantage; Read cost advice critically",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "d18c1ae22b33d19f85aa550532b8f7b5e32ac22efcc26d6cb94c1dfb4e4bb239",
+      "guide_sections": "3 / Translate principles into evidence; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "8080c0a462f3b7c4c9e4bf11b792dcbb47d32987312844c30b95530403b032e2",
+      "guide_sections": "3 / Translate principles into evidence; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "ea38c5252fa8105dd5841e107076ec0e540ce64eddd5e66044941cc9661d1ea2",
+      "guide_sections": "3 / Translate principles into evidence; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "d4a66fc117d2cc1ad976b31a731e2ba7efa8a24904728e6239e23f620bc6bc84",
+      "guide_sections": "3 / Translate principles into evidence; Example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "d332ba1d36d51862ae692c6bed10a73f11c3054ca0faabbcb2b6b34f699822a3",
+      "guide_sections": "3 / Create a governance operating model; Govern the lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "ea058102469d39c53cd4527d520b705e14ef165044a72c1bf0747994e0afdb05",
+      "guide_sections": "3 / Create a governance operating model; Govern the lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "7eec7b301bde701d5b713f947d0372854ce527850c1f6f704479cf93f1492f6a",
+      "guide_sections": "3 / Create a governance operating model; Govern the lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "812b1223047baf637fcec6273064fcb54a189f72cd2cb18a88178c921bd0f337",
+      "guide_sections": "3 / Create a governance operating model; Govern the lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "ce7533af599b6526d4c706b9fa7d36f0b4520fa66869666fd3f4f287ca8724dc",
+      "guide_sections": "3 / Govern the lifecycle; Translate principles into evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "7dd6f109ee1db537091abec726ff5058b2a01920df22e3812ffd98534b209a8e",
+      "guide_sections": "3 / Govern the lifecycle; Translate principles into evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "ddaaf98cece5d551796e71098b7ac4aceda30c5c12e669a2d7cc77b19621956f",
+      "guide_sections": "3 / Govern the lifecycle; Translate principles into evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "087586b5736a2e7c5009ec95be0502e6a6701f740c03cf9ecc3e248ceaa8e695",
+      "guide_sections": "3 / Govern the lifecycle; Translate principles into evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "83d99df288c9430170374ab6841f70b75816974a3ee6c6fdf010e933baab3e0f",
+      "guide_sections": "4 / Assess readiness honestly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "70c32c27c4c1399faf17108df04ee6302e2db45bb6559b5503ee1e423207bc8a",
+      "guide_sections": "4 / Assess readiness honestly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "14efbbc0be34f2f729b9e9f0211f9b3ad6ff2c42574427df5038e50951076ae2",
+      "guide_sections": "4 / Assess readiness honestly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "82a7ebd3e1a66b9aaa254da26836bc39a1ef2f00148ccd669a8e5e85b4b49e2d",
+      "guide_sections": "4 / Assess readiness honestly",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "9139f25e2baadac18ba0aaa8c9567b2887857120f5455f756364d1bd52207940",
+      "guide_sections": "4 / Assess readiness honestly; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "6bee3e7a1e1a4ff6344fd76eab773507c518691a1486f208358586a0c2586699",
+      "guide_sections": "4 / Assess readiness honestly; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "383005edd3c31186d0c9e35580c26203bc13f7ab5bdc519bf6cca72e33b68f9a",
+      "guide_sections": "4 / Assess readiness honestly; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "904553516d3ec3e7bc7d830f7b7f880200aee563dcb2b9a607485d262f8804db",
+      "guide_sections": "4 / Treat adoption as outcome work; Examples 2 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "00d616db635b06de72424ee4cfec811a38ad7746225b4d2e9f58890434cbc7f0",
+      "guide_sections": "4 / Treat adoption as outcome work; Examples 2 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "1b06e2ad590dd33b2374d694462e9640d445ae1b47b08439c910e226aacfb159",
+      "guide_sections": "4 / Treat adoption as outcome work; Examples 2 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "7ffe26c72e9072e2afafe4bf8a85118ba121666108c1216a79cef845b0a05b41",
+      "guide_sections": "4 / Treat adoption as outcome work; Examples 2 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "154a03c048dbd1187474227c882f1cf8fec11cf8e452f27d52d17e49a2af8941",
+      "guide_sections": "4 / Treat adoption as outcome work; Examples 2 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "bf6789437c9b292e2434b463c3721ce63710bd0ce3a17918c4a42a9ad7ae0e49",
+      "guide_sections": "4 / Treat adoption as outcome work; Examples 2 and 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "91fa2b974c61b8defb4e10f9b6600d34212e065086d5f7accaad15a5b7cd661a",
+      "guide_sections": "4 / Scale through evidence gates; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "56fca2904e484a48497476db9feefcea5d2ed40bf3a2d591acda3bb00991f751",
+      "guide_sections": "4 / Scale through evidence gates; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "8c31334921e0d234dca116a8870f22318f455dd5591a5c607e99d560357b3856",
+      "guide_sections": "4 / Scale through evidence gates; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "2a2be2e203f66ea74bbd03bd44365adc9a3786783da5de673f59930596d146a6",
+      "guide_sections": "4 / Scale through evidence gates; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "877ab8bba4475e1d4db2ded93a11345ab1e40c165f7bcfa18feaa4c74e151521",
+      "guide_sections": "4 / Scale through evidence gates; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "134fd29e1dfb2c3092e7e5b6ecf73f2ce99fad1e7e0b88aa9d305b097bba0756",
+      "guide_sections": "4 / Scale through evidence gates; Example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "AIB-C01"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AIB-C01",
+        "title": "AWS Certified AI Business Strategist",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+        "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\aib-c01-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\aib-c01-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+        "previous_status_sha256": null,
+        "current_status_sha256": "be59188d6efeb555e3035bb872557220a63bc43a53d1be774e67536203a99c58",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified AI Business Strategist (AIB-C01)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Candidate directory initially empty; changed flag alone is not an upstream delta. Accepted snapshots preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 21,
+    "reachable": 18,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-aif-c01-nist-ai-rmf",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "checked_at": "2026-09-28T20:30:04.778575+00:00",
+      "health": {
+        "id": "aws-aif-c01-nist-ai-rmf",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AI Risk Management Framework",
+        "canonical_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "duration_signals": [],
+        "signal_fingerprint": "75a108a2df92fa648fb28efac890144b2dec8b5278543106f01f1879fae24c4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sha256": "55a46189c7e85e909212269d7c4628692c4942b3c6c6215e275128df551de76f",
+      "text_characters": 7118
+    },
+    {
+      "id": "aws-aib-c01-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+      "checked_at": "2026-09-28T20:30:05.842498+00:00",
+      "health": {
+        "id": "aws-aib-c01-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified AI Business Strategist (AIB-C01) - AWS Certified AI Business StrategistAWS Certified AI Business Strategist (AIB-C01) - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "2d0a1c940907c234451f08b3727d20d36a5d2badfe73c581f59f976762b85b22",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+      "sha256": "557fe833dbbc7017d752a9fef5b17b0d5357838a0dc4aef42edbdbf6544b9407",
+      "text_characters": 9010
+    },
+    {
+      "id": "aws-aib-c01-domain-1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain1.html",
+      "checked_at": "2026-09-28T20:30:06.146700+00:00",
+      "health": {
+        "id": "aws-aib-c01-domain-1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain1.html",
+        "checked_at": "2026-09-28T20:30:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: AI Fundamentals and Literacy - AWS Certified AI Business StrategistContent Domain 1: AI Fundamentals and Literacy - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "20ebb364f9bbd3b6801e026823db105663d436c0b9189d4793ddbacb734c4b23",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain1.html",
+      "sha256": "ba51eb011206c99d22f4c298de01551f92687659dce8f242e2d9eea5612dab74",
+      "text_characters": 2844
+    },
+    {
+      "id": "aws-aib-c01-domain-2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain2.html",
+      "checked_at": "2026-09-28T20:30:06.290033+00:00",
+      "health": {
+        "id": "aws-aib-c01-domain-2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain2.html",
+        "checked_at": "2026-09-28T20:30:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: AI Strategy and Business Value Creation - AWS Certified AI Business StrategistContent Domain 2: AI Strategy and Business Value Creation - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e526b547f38504a465f98108d4c77d7d4b114a8789e7f1c5b64710ba6c4892d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain2.html",
+      "sha256": "8384e336b329bb95e346ddaa827f161cb480908890537ebcf48ad91c57d0af26",
+      "text_characters": 3355
+    },
+    {
+      "id": "aws-aib-c01-domain-3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain3.html",
+      "checked_at": "2026-09-28T20:30:06.412595+00:00",
+      "health": {
+        "id": "aws-aib-c01-domain-3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain3.html",
+        "checked_at": "2026-09-28T20:30:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: AI Governance and Responsible AI Leadership - AWS Certified AI Business StrategistContent Domain 3: AI Governance and Responsible AI Leadership - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "10b62adc69dfcab67c9eb2711b3f965d53535d966a14bd6eea881115203d3f4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain3.html",
+      "sha256": "01e3457cb68f733e1ee96c0d77578b6193d55b9376aeb909bda188d22592a75d",
+      "text_characters": 3029
+    },
+    {
+      "id": "aws-aib-c01-domain-4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain4.html",
+      "checked_at": "2026-09-28T20:30:06.596288+00:00",
+      "health": {
+        "id": "aws-aib-c01-domain-4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain4.html",
+        "checked_at": "2026-09-28T20:30:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Business Readiness, Leadership, and AI Transformation - AWS Certified AI Business StrategistContent Domain 4: Business Readiness, Leadership, and AI Transformation - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ef202e8953174b3b682bcb97f3d33a49d456f879aaa490b289d4e644cb10a3dc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01-domain4.html",
+      "sha256": "0f3084e3ee1ad8fe7db9f476466419137ba8fc765d515b3c2099182e8b194c83",
+      "text_characters": 4689
+    },
+    {
+      "id": "aws-aib-c01-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+      "checked_at": "2026-09-28T20:30:06.729923+00:00",
+      "health": {
+        "id": "aws-aib-c01-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+        "checked_at": "2026-09-28T20:30:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-ai-business-strategist",
+        "canonical_url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+        "duration_signals": [
+          "170 minutes"
+        ],
+        "signal_fingerprint": "9261962b2bf477a26aca52f6832e3e6910415992808e46b1527dad283fecd54b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+      "sha256": "374d357cc5e96142bf78441b101137d777bad711b88483833dc44db622a08b53",
+      "text_characters": 7105
+    },
+    {
+      "id": "aws-aib-c01-launch",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+      "checked_at": "2026-09-28T20:30:06.934624+00:00",
+      "health": {
+        "id": "aws-aib-c01-launch",
+        "url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+        "checked_at": "2026-09-28T20:30:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Introducing AWS Certified AI Business Strategist: Built for the people who scale AI | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+        "duration_signals": [],
+        "signal_fingerprint": "d1b05af4029b426003abae432dc88aad220da6e4b841919a70ddf68e12140ee6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+      "sha256": "aa6c13a74253a5bfe0bb7e097ec9b745d8087f73de54fe63f85df59957d4ae55",
+      "text_characters": 7686
+    },
+    {
+      "id": "aws-aib-c01-learning-plan",
+      "url": "https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN",
+      "checked_at": "2026-09-28T20:30:07.139934+00:00",
+      "health": {
+        "id": "aws-aib-c01-learning-plan",
+        "url": "https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN",
+        "checked_at": "2026-09-28T20:30:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN",
+        "duration_signals": [],
+        "signal_fingerprint": "8892d8f4ae1f5279c6de328c5242715ed30e8459700f42b1ab18a2feb07b7b13",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-aib-c01-exam-prep",
+      "url": "https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01",
+      "checked_at": "2026-09-28T20:30:07.439052+00:00",
+      "health": {
+        "id": "aws-aib-c01-exam-prep",
+        "url": "https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01",
+        "checked_at": "2026-09-28T20:30:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01",
+        "duration_signals": [],
+        "signal_fingerprint": "3f1e408010b90543213fb813de9990a512f6c0ee73d1f2010c1977fbc800c971",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-aib-c01-caf-ai",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html",
+      "checked_at": "2026-09-28T20:30:07.517608+00:00",
+      "health": {
+        "id": "aws-aib-c01-caf-ai",
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html",
+        "checked_at": "2026-09-28T20:30:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html",
+        "content_type": "text/html",
+        "page_title": "AWS Cloud Adoption Framework for Artificial Intelligence, Machine Learning, and Generative AI - AWS Cloud Adoption Framework for Artificial Intelligence, Machine Learning, and Generative AIAWS Cloud Adoption Framework for Artificial Intelligence, Machine Learning, and Generative AI - AWS Cloud Adoption Framework for Artificial Intelligence, Machine Learning, and Generative AI",
+        "canonical_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8e8d5b30f4265fc007368068210af798afecc2da81d312de675203f710b0b652",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html",
+      "sha256": "bfa4a4fb0fea5ad25a295b491168ec32b82a457b43ada97223aa93115bf56467",
+      "text_characters": 8777
+    },
+    {
+      "id": "aws-aib-c01-responsible-ai-lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html",
+      "checked_at": "2026-09-28T20:30:07.693172+00:00",
+      "health": {
+        "id": "aws-aib-c01-responsible-ai-lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html",
+        "checked_at": "2026-09-28T20:30:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html",
+        "content_type": "text/html",
+        "page_title": "Responsible AI Lens - AWS Well-Architected Framework - Responsible AI LensResponsible AI Lens - AWS Well-Architected Framework - Responsible AI Lens",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html",
+        "duration_signals": [],
+        "signal_fingerprint": "16f9902e3d49aee5fbf4d65f99e1e802ab63c7e431819281b639f1d3752c638f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html",
+      "sha256": "4732830385da3879467cf242dc5b57d2b21f514afb9af47db7536c61e13514bd",
+      "text_characters": 8835
+    },
+    {
+      "id": "aws-aib-c01-nist-genai-profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "checked_at": "2026-09-28T20:30:07.821007+00:00",
+      "health": {
+        "id": "aws-aib-c01-nist-genai-profile",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "checked_at": "2026-09-28T20:30:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+        "canonical_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "duration_signals": [],
+        "signal_fingerprint": "3292a6be6abf146ffa752ecf7b207226b505c5c3bf881625ae4ba22e38e5435b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "sha256": "f4e57dc58db95cd4f5d9fca1821c9673b10205e444ba1aaa51868d6e7841fc28",
+      "text_characters": 4710
+    },
+    {
+      "id": "aws-aib-c01-iso-42001",
+      "url": "https://www.iso.org/standard/42001",
+      "checked_at": "2026-09-28T20:30:07.848316+00:00",
+      "health": {
+        "id": "aws-aib-c01-iso-42001",
+        "url": "https://www.iso.org/standard/42001",
+        "checked_at": "2026-09-28T20:30:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.iso.org/standard/42001",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-aib-c01-oreilly-value",
+      "url": "https://www.oreilly.com/library/view/the-secrets-of/9781394233625/",
+      "checked_at": "2026-09-28T20:30:08.005272+00:00",
+      "health": {
+        "id": "aws-aib-c01-oreilly-value",
+        "url": "https://www.oreilly.com/library/view/the-secrets-of/9781394233625/",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/the-secrets-of/9781394233625/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-aib-c01-udemy-strategy",
+      "url": "https://www.udemy.com/course/ai-strategy-for-leaders-generative-ai-risk-governance/",
+      "checked_at": "2026-09-28T20:30:08.015362+00:00",
+      "health": {
+        "id": "aws-aib-c01-udemy-strategy",
+        "url": "https://www.udemy.com/course/ai-strategy-for-leaders-generative-ai-risk-governance/",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai-strategy-for-leaders-generative-ai-risk-governance/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-aib-c01-technologies-concepts",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+      "checked_at": "2026-09-28T20:30:35.026027+00:00",
+      "health": {
+        "id": "aws-aib-c01-technologies-concepts",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+        "checked_at": "2026-09-28T20:30:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+        "content_type": "text/html",
+        "page_title": "Technologies and concepts that might appear on the exam - AWS Certified AI Business StrategistTechnologies and concepts that might appear on the exam - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "eda83b2d2f88e37924b050f16815369ec1c66745c0c13193a7630003518ffbb6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+      "sha256": "b12e2724789c8ed07a2b94414d9f529b1d293eea01b242cc30b3da0b98ed13a3",
+      "text_characters": 3064
+    },
+    {
+      "id": "aws-aib-c01-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:35.239451+00:00",
+      "health": {
+        "id": "aws-aib-c01-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-scope AWS services and features - AWS Certified AI Business StrategistIn-scope AWS services and features - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d9c92e247772c5ae4b00391125dfe39042457d71fb93fd581aadff2b78cdbe78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+      "sha256": "6ce3fd5e152df46abba7f03ff1efff3b8c146f15aeccac7a2783822a29fa2d43",
+      "text_characters": 1699
+    },
+    {
+      "id": "aws-aib-c01-out-of-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+      "checked_at": "2026-09-28T20:30:35.496893+00:00",
+      "health": {
+        "id": "aws-aib-c01-out-of-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+        "checked_at": "2026-09-28T20:30:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "Out-of-scope AWS services and features - AWS Certified AI Business StrategistOut-of-scope AWS services and features - AWS Certified AI Business Strategist",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "dc80e5a846964b9d394f91a68af188507824d8d18f50cf8344a438c1cd8fcc7e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+      "sha256": "b02df633777fa7477749250060012717035561bce4228312fdc103fa32ed4881",
+      "text_characters": 1804
+    },
+    {
+      "id": "aws-ai-costs-business-blog",
+      "url": "https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/",
+      "checked_at": "2026-09-28T20:48:07.241868+00:00",
+      "health": {
+        "id": "aws-ai-costs-business-blog",
+        "url": "https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/",
+        "checked_at": "2026-09-28T20:48:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "You CAN Manage, Forecast, and Evaluate AI Costs | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/",
+        "duration_signals": [
+          "20 minutes",
+          "5 hours"
+        ],
+        "signal_fingerprint": "a8100c23f2331e45a83c2411bcb0e415dad6fb36a46f0fa64a18d3a8db162de5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/",
+      "sha256": "f197110c1f929d78b42420ba45184dab75a536f8f60f903d74336466438f7f15",
+      "text_characters": 8289
+    },
+    {
+      "id": "aws-ai-foundation-blog",
+      "url": "https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/",
+      "checked_at": "2026-09-28T20:48:07.242937+00:00",
+      "health": {
+        "id": "aws-ai-foundation-blog",
+        "url": "https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/",
+        "checked_at": "2026-09-28T20:48:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "You Wanted to Become AI-Native, and All You Got Was a Lousy Foundation | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/",
+        "duration_signals": [],
+        "signal_fingerprint": "c0fc00a3f77a7c855866ea8e4d92e2b27a925af26bf56745751c741561d1e0f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/",
+      "sha256": "4f3ce6f53db9016f2854f04dda48f09cd95c8e8e87a257823cb2146b0d52fb1f",
+      "text_characters": 7309
+    },
+    {
+      "id": "aws-ai-govern-adoption-blog",
+      "url": "https://aws.amazon.com/blogs/migration-and-modernization/govern-ai-adoption-before-it-governs-you/",
+      "checked_at": "2026-09-28T20:48:07.243588+00:00",
+      "health": {
+        "id": "aws-ai-govern-adoption-blog",
+        "url": "https://aws.amazon.com/blogs/migration-and-modernization/govern-ai-adoption-before-it-governs-you/",
+        "checked_at": "2026-09-28T20:48:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/migration-and-modernization/govern-ai-adoption-before-it-governs-you/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Govern AI Adoption Before It Governs You | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/migration-and-modernization/govern-ai-adoption-before-it-governs-you/",
+        "duration_signals": [],
+        "signal_fingerprint": "06a09e23064acbedb9a01555d4723b44c42477e26ee11db2ca5589ff32c7fb79",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/migration-and-modernization/govern-ai-adoption-before-it-governs-you/",
+      "sha256": "d43a9fc6b1cca6a508d17f600a69c43e2d607874de46f0d942580ef44b21bd55",
+      "text_characters": 15776
+    }
+  ],
+  "added_source_ids": [
+    "aws-ai-costs-business-blog",
+    "aws-ai-foundation-blog"
+  ],
+  "findings": [
+    {
+      "id": "aibc01-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Unqualified130-minute blueprint conflicts with170-minute beta page",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIB-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Blueprint duration130 lacks an explicit standard-only qualifier; credential beta page170/85.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "aibc01-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "CAF-AI whitepaper is now explicitly historical",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIB-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Fetched overview displays historical-reference warning.",
+      "recommendation": "Label historical status in body and resource list; retain conceptual coverage and current-source checks.",
+      "disposition": "applied",
+      "source_id": "aws-aib-c01-caf-ai",
+      "resolution": "Label historical status in body and resource list; retain conceptual coverage and current-source checks."
+    },
+    {
+      "id": "aibc01-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Badge and practice availability need precise boundaries",
+      "url": "https://aws.amazon.com/certification/certified-ai-business-strategist/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIB-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Early-adopter badge byFebruary15,2027; official practice exam unavailable in beta.",
+      "recommendation": "Add badge boundary without inferring GA; preserve current beta limits.",
+      "disposition": "applied",
+      "source_id": "aws-aib-c01-exam-page",
+      "resolution": "Add badge boundary without inferring GA; preserve current beta limits."
+    },
+    {
+      "id": "aibc01-deep-4",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Cost discussion needs realized-value and uncertainty tests",
+      "url": "https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIB-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Article advocates outcome-based forecasting but savings figures and falling-cost expectations are workload-dependent.",
+      "recommendation": "Add synthetic adoption/realization/payback sensitivity and qualify article assumptions.",
+      "disposition": "applied",
+      "source_id": "aws-ai-costs-business-blog",
+      "resolution": "Add synthetic adoption/realization/payback sensitivity and qualify article assumptions."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-ai-costs-business-blog",
+      "published_on": "2026-06-25",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Complete public article body.",
+      "value": "Outcome owners,scenario forecasts,cost levers.",
+      "limits": "Do not reuse claimed savings percentages or assume costs fall; commitment decisions require workload evidence."
+    },
+    {
+      "source_id": "aws-ai-foundation-blog",
+      "published_on": "2026-05-07",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Complete public article body; underlying third-party reports not independently reviewed.",
+      "value": "Use-case-led minimum capabilities and incremental reuse.",
+      "limits": "Categorical foundation-first failure claim and third-party statistics not adopted; release prerequisites remain mandatory."
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/migration-and-modernization/govern-ai-adoption-before-it-governs-you/",
+      "published_on": "2026-08-25",
+      "disposition": "not-added",
+      "read_scope": "Public risk/governance/control/rollout discussion inspected; no underlying reports or legal analysis performed.",
+      "reason": "Useful approved-tool concept already covered. Inconsistent adoption percentages and broad legal/product claims would require additional verification; implementation stack exceeds business-exam need."
+    }
+  ],
+  "labs": {
+    "proposed_document_exercises": 8,
+    "stakeholder_workshops_executed": 0,
+    "offline_checks": "17 original capacity,value,ROI,payback and adoption arithmetic assertions"
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Official blueprint says130minutes without an explicit standard-only label; credential page specifies170minutes/85questions for beta. Appointment confirmation and vendor clarification remain necessary.",
+    "September29 beta delivery is still a future announced event; GA not confirmed. TheFebruary15 early-adopter badge deadline is not a GA date.",
+    "CAF-AI whitepaper is labeled historical. Current NIST landing page still describes AI RMF1.0 under revision; no replacement version inferred.",
+    "Same-context AI review; independent human and stakeholder review pending.",
+    "No cloud resources, actual business case/workshop, paid lessons or full ISO standard evaluated.",
+    "Sign-in shells and blocked provider/ISO pages prevent verification of lesson contents, runtime, edition or standard text.",
+    "AWS automated snapshots cover broad domains, not every detailed skill."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

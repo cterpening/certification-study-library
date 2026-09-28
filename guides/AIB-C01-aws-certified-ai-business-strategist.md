@@ -6,25 +6,27 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # AIB-C01 AWS Certified AI Business Strategist Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026, the day AWS announced the certification. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aib-c01-coverage-record). The [official AIB-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed again on September 28, 2026, including all 58 detailed skills. Beta-duration wording remains inconsistent across official pages. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aib-c01-coverage-record). The [official AIB-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) is authoritative.
 
 **Current baseline:** Initial AIB-C01 beta blueprint announced September 1, 2026; four domains; business category<br>
 **Upcoming change:** Beta exam delivery begins September 29, 2026. AWS has not announced the general-availability date or final delivery contract; beta findings can change questions, scoring, format, preparation assets, or the published outline.<br>
 **Beta limitations:** Registration is open, but delivery has not begun as of this review. The official practice exam is unavailable during beta, third-party AIB-C01 catalogs are immature, and candidate experience is not yet established.<br>
 **Official source:** [AWS Certified AI Business Strategist exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html)
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — September 28, 2026
 
 **Confirmed boundary:** This is a business-level exam, not a configuration exam, but “not implementation” does not mean “no AWS awareness.” AWS's nonexhaustive [in-scope services appendix](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html) names Amazon Bedrock, SageMaker AI, Amazon Quick, the AWS Cloud Adoption Framework, shared responsibility, Cost Explorer, AWS Marketplace, and Pricing Calculator. Learn what business problem each supports and the decision boundary—not console procedures.
 
 **Confirmed exclusion:** AWS's [out-of-scope appendix](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html) excludes implementation, configuration, administration, infrastructure and compute, networking, databases and storage, containers, DevOps, and technical security configuration. The [technologies-and-concepts appendix](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html) still expects strategic fluency in prompting, RAG, fine-tuning, agents, monitoring and drift, shadow AI, value and ROI, build/buy/partner choices, responsible AI, governance, human oversight, and change adoption.
+
+**Review evidence:** The [deep-review report](../docs/research/2026-09-28-aib-c01-deep-review.md) records the objective map, scheduling discrepancy and public-source limitations. No new retirement notice was found in the reviewed official credential, blueprint and launch sources.
 
 **Concern to recheck:** The appendices are explicitly nonexhaustive and this is a new beta. Treat the lists as the best current study boundary, not a permanent product inventory; validate them again when AWS publishes the standard exam or revised preparation assets.
 
@@ -32,7 +34,7 @@ upcoming_change_checked: 2026-09-01
 
 AIB-C01 tests business judgment about AI investment, governance, readiness, adoption, and scale. It does **not** test coding or AWS service implementation. AWS recommends basic AI familiarity, strategic awareness of relevant AWS frameworks and tools, and about six months working with or alongside AI initiatives. The intended audience includes product and program managers, business leaders, sales and business-development professionals, consultants, business analysts, and marketers.
 
-The live certification page lists a 170-minute beta exam with 85 multiple-choice or multiple-response questions, English and Japanese delivery, and USD 50 beta pricing versus a stated USD 100 standard price. The detailed exam guide separately says 130 minutes, which appears to describe the standard delivery rather than the longer beta; use the live scheduling flow for the appointment you book. Recheck the [live exam page](https://aws.amazon.com/certification/certified-ai-business-strategist/) before scheduling. Prices, delivery details, language availability, and beta dates are **VERIFY CURRENT**.
+The live certification page lists a 170-minute beta exam with 85 multiple-choice or multiple-response questions, English and Japanese delivery, and USD 50 beta pricing versus a stated USD 100 standard price. The detailed exam guide separately says 130 minutes, without clearly labeling that duration as standard-only. Treat this as unresolved wording, not a confirmed standard-form contract; the credential page and launch information identify the 170-minute beta. Confirm the appointment details in the scheduling flow. Recheck the [live exam page](https://aws.amazon.com/certification/certified-ai-business-strategist/) before scheduling. The credential page also offers an early-adopter badge for earning the certification by February 15, 2027; that deadline is not a GA date. The blueprint lists a 700 scaled passing score; 700/1,000 is not a raw percentage-correct target. Prices, delivery details, language availability, scoring and beta dates are **VERIFY CURRENT**.
 
 Use a repeatable decision chain for every scenario:
 
@@ -139,6 +141,12 @@ Simple ROI is `(benefit - cost) / cost`, but a credible business case also model
 
 Use **leading indicators** such as eligible-user activation, workflow completion, acceptance/override, evaluation pass rate, and time to first value. Use **lagging indicators** such as renewal, revenue, margin, quality, customer satisfaction, or realized cost. Define scale, pause, and stop thresholds in advance so sunk cost does not become the decision rule.
 
+### Read cost advice critically
+
+[Chris Hennesey's AWS cost-management article](https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/) (June 25, 2026) is useful for assigning an outcome owner, forecasting ranges and examining model choice, reuse and batch processing. Its savings percentages and claims about falling unit costs are examples/expectations, not assumptions to insert into a business case. Quality, privacy, freshness and workload fit constrain each optimization. A commitment discount can still make sense for measured, predictable demand; compare it with consumption pricing and unused-capacity risk.
+
+Use [Matthias Patzak's article on building foundations around actual outcomes](https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/) (May 7, 2026) for a portfolio discussion: fund the capabilities a specific use case needs, prove value, then reuse them. Its argument against speculative platforms does not remove the minimum security, data rights, governance or continuity required before release. Do not treat its categorical title or external success statistics as universal evidence.
+
 ### Build defensible advantage
 
 Tool access alone is rarely durable. Advantage may come from proprietary and permissioned data, superior workflow integration, domain expertise, customer distribution, trusted relationships, operational feedback loops, complementary assets, faster learning, or a redesigned business model. Assess competitors, substitutes, customer switching, supplier power, regulatory direction, and industry maturity.
@@ -217,6 +225,8 @@ Assess capabilities, not enthusiasm:
 
 Maturity is not a single badge. One team may operate a governed production service while the enterprise lacks shared data or portfolio governance. Describe current and target capability by dimension, identify dependencies, and fund the gaps that constrain the selected outcomes.
 
+**Historical-source boundary:** AWS now labels the linked CAF-AI whitepaper “for historical reference only.” Use its capability questions as supporting context, check linked implementation advice against current documentation, and use the current Responsible AI Lens for lifecycle questions. This notice does not remove CAF concepts from the exam.
+
 The [AWS CAF for AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html) considers business, people, governance, platform, security, and operations capabilities. Its transformation context is useful, but the exam's judgment is portable beyond AWS. Common maturity movement is from isolated exploration, to repeatable experiments, to governed production, to reusable enterprise capabilities and continuously improved portfolios. Do not scale merely because a proof of concept produced an impressive demo.
 
 ### Treat adoption as outcome work
@@ -260,9 +270,33 @@ An organization wants to license a generative assistant for all employees becaus
 
 ---
 
+## Worked business decisions
+
+These are original synthetic cases. The expected arithmetic was checked locally; no organization, paid course or live AI system was evaluated.
+
+### Example 1: Time saved, realized value and payback
+
+A process handles 100,000 eligible tasks/month. At 60% adoption, each adopted task saves five minutes but adds two minutes of review/rework: net capacity is 60,000 × 3 / 60 = **3,000 hours/month**. At a hypothetical $40/hour, capacity value is $120,000/month. If only half is demonstrably redeployed to valued work or removed from cost, modeled realized benefit is **$60,000/month**. Track the evidence for that 50% assumption; it is not automatically cash savings.
+
+With $100,000 initial cost and $20,000/month recurring cost, first-year benefit is $720,000 and cost is $340,000. Simple first-year ROI is **111.8%**; steady-state payback is **2.5 months** after achieving the assumed adoption. These figures exclude ramp time, discounting and taxes. At 30% adoption, benefit falls to $30,000/month: ROI becomes **5.9%** and payback **10 months**. A business case that omits adoption sensitivity can look much safer than it is.
+
+### Example 2: Human oversight needs capacity
+
+A proposed release requires review of 100 decisions/day at ten minutes each. Three reviewers can each allocate four hours/day: available capacity is **720 minutes**, enough for **72 decisions**, leaving **28** queued. Calling every output “human approved” is untenable. Reduce incoming scope, add capacity, improve the review workflow, or redesign the risk-tier policy with appropriate evidence. Do not bypass the approval gate to meet the volume target. Measure review quality, not merely clicks.
+
+### Example 3: Activation is not completed work
+
+Of 250 eligible users, 200 activate a tool and 50 complete the target workflow that week. Activation is **80%**; eligible-user workflow completion is **20%**; completion among activated users is **25%**. Report the denominator and timeframe. Investigate workflow access, training, confidence, quality and incentives before purchasing another 250 seats. None of these counts alone establishes customer benefit or realized savings.
+
+### Example 4: A high score cannot waive a release blocker
+
+Two candidate projects both score 85/100 on a weighted portfolio scorecard. Project A lacks permitted training data; project B has a named owner, lawful/approved inputs, measured quality and a bounded fallback. A's score does not cancel its missing prerequisite. Defer A pending evidence and evaluate B against the actual release gates.
+
+When switching B to a new provider, prove export/re-import of permitted data, retained access rules, quality on the same evaluation set, new recurring/exit costs, support ownership and a timed fallback. Confirm retention/deletion terms and revalidate any changed purpose or population with the appropriate specialists. A cheaper license alone does not justify cutting over a business-critical workflow.
+
 ## Practice labs
 
-These are document-based exercises; no cloud account or production data is required.
+These eight document-based exercises are proposed; no cloud account or production data is required. Worked-case arithmetic is checked, but a completed stakeholder workshop or independently reviewed business case is still needed to validate the broader decisions.
 
 ### Lab 1: AI-versus-automation decision brief — 60–90 minutes
 
@@ -337,45 +371,10 @@ Use a completed pilot or invented case. Review business outcome, technical quali
 35. What is a sound scale gate? **Measured business, adoption, quality, risk, cost, reliability, ownership, and continuity evidence against predefined thresholds.**
 36. What is a valid outcome for a pilot? **Scale, extend, pause, redesign, or stop—provided the evidence and decision rule are explicit.**
 
----
-
-## Places to learn
-
-This is **not a complete list**, and it is not meant to be consumed end to end. Pick the formats and gaps that work for you, verify dates and live durations, and return to the official blueprint. Because AIB-C01 was announced on September 1, 2026, exact third-party coverage is not mature; adjacent resources below are labeled and should not be mistaken for complete AIB-C01 preparation.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| Official guide and launch materials | Public | 2–4 hours |
-| AWS 13-module learning plan | Free/subscription elements | 12–20 hours estimated |
-| AWS exam-prep plan | Free/subscription elements | 4–8 hours estimated |
-| CAF-AI and Responsible AI Lens | Public | 8–15 hours selected application |
-| NIST AI RMF and GenAI Profile | Public | 5–10 hours selected application |
-| Optional O'Reilly book | Paid | 8 hours 1 minute |
-| Optional adjacent Udemy course | Paid | 1 hour 44 minutes plus exercises |
-
-### Exact AIB-C01 resources
-
-- [Official exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) — **2–4 hours** for scope mapping and notes; free and authoritative.
-- [AWS Skill Builder AI Business Strategist learning plan](https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN) — **about 12–20 hours estimated** across the 13 modules AWS says map to the four domains; free/subscription and exact live durations can vary.
-- [AWS Skill Builder exam-prep plan](https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01) — **about 4–8 hours estimated** for blueprint review, practice question set, walkthroughs, and meeting simulator; the official practice exam is explicitly unavailable during beta.
-- [Launch explanation](https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/) — **10–15 minutes**; useful for audience, intent, beta dates, and the distinction from AI Practitioner.
-
-No exact AIB-C01 Pluralsight, O'Reilly, Whizlabs, MeasureUp, or Tutorials Dojo course/practice product was verified on launch day. Recheck those catalogs later; do not buy a similarly named resource on the assumption that it follows this beta blueprint.
-
-### High-quality adjacent resources
-
-- [AWS CAF for AI, ML, and generative AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html) — **4–7 hours selected reading/workshop**; strong for business, people, governance, platform, security, operations, maturity, and transformation. Free; AWS-specific context, not an exam course.
-- [AWS Responsible AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html) — **4–8 hours selected reading and applying questions**; strong for use-case, benefit/risk, testing, release, guidance, and monitoring. Free; implementation-oriented supporting depth.
-- [NIST AI RMF and Playbook](https://www.nist.gov/itl/ai-risk-management-framework) plus the [Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) — **5–10 hours selected reading/application**; free, vendor-neutral governance vocabulary. Version 1.0 is under revision, so verify the live baseline.
-- [ISO/IEC 42001 overview](https://www.iso.org/standard/42001) — **20–40 minutes** for the public overview; the full 51-page standard is paid and takes longer. Use it to understand management-system intent, not to infer exam wording.
-- [O'Reilly: The Secrets of AI Value Creation](https://www.oreilly.com/library/view/the-secrets-of/9781394233625/) — **8 hours 1 minute provider estimate**, 416 pages; February 2024. Strong adjacent treatment of value, feasibility/adoption risk, strategy, projects, culture, data, and talent; subscription required and not AIB-C01-specific.
-- [Udemy: AI Strategy for Leaders—Generative AI, Risk & Governance](https://www.udemy.com/course/ai-strategy-for-leaders-generative-ai-risk-governance/) — **1 hour 44 minutes plus exercises**; updated August 2026. Adjacent coverage of use cases, build/buy/partner, ROI, governance, risk, and change; not an AIB-C01 course.
-
-### Suggested routes
-
-- **Experienced AI/product leader, 15–25 hours:** blueprint, exam-prep plan, targeted official modules, this guide's checks, Labs 2/3/5/8, then the official question set.
-- **Business leader new to AI, 30–45 hours:** full 13-module plan, this guide, Labs 1–8, selected CAF-AI and Responsible AI Lens sections, then exam-prep activities.
-- **Governance/risk professional, 22–35 hours:** Domain 1 refresh, full Domains 2 and 4 modules, NIST/AWS governance material, value/readiness labs, then official practice questions.
+37. A beta-duration table says 170 minutes while the blueprint says 130. Which number should be silently treated as the final standard contract? **Neither; record the discrepancy and verify the booked beta appointment.**
+38. Why can a high portfolio score still lead to deferral? **Mandatory data, risk or ownership prerequisites are gates, not tradeable scoring points.**
+39. Why separate capacity value from cash savings? **Saved time creates modeled capacity; realization requires documented redeployment, improved outcomes or actual cost reduction.**
+40. What must a provider-switch decision preserve? **Data/access rights, outcome quality, continuity, ownership, total cost, retention/deletion and a tested fallback.**
 
 ---
 
@@ -389,3 +388,49 @@ The official guide and detailed domain pages define scope. The certification pag
 - **Stable reasoning pattern:** outcome and baseline before tool; least complex effective approach; evidence before scale; proportional governance; named accountability; lifecycle monitoring; explicit pause/stop criteria.
 
 This guide uses no recalled exam questions or restricted content. The knowledge checks are original and test published concepts rather than reproducing vendor items.
+
+
+## Places to learn
+
+This is **not a complete list**, and it is not meant to be consumed end to end. Pick the formats and gaps that work for you, verify dates and live durations, and return to the official blueprint. Because AIB-C01 was announced on September 1, 2026, exact third-party coverage is not mature; adjacent resources below are labeled and should not be mistaken for complete AIB-C01 preparation.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official guide and launch materials | Public | 2–4 hours |
+| AWS 13-module learning plan | Free/subscription elements | 12–20 hours estimated |
+| AWS exam-prep plan | Free/subscription elements | 4–8 hours estimated |
+| CAF-AI and Responsible AI Lens | Public | 8–15 hours selected application |
+| NIST AI RMF and GenAI Profile | Public | 5–10 hours selected application |
+| Optional O'Reilly book | Paid | 10–20 hours planning estimate; catalog blocked |
+| Optional adjacent Udemy course | Paid | 2–4 hours planning estimate; catalog blocked |
+
+### Exact AIB-C01 resources
+
+- [Official exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) — **2–4 hours** for scope mapping and notes; free and authoritative.
+- [AWS Skill Builder AI Business Strategist learning plan](https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN) — **about 12–20 hours estimated** across the 13 modules AWS says map to the four domains; free/subscription and exact live durations can vary.
+- [AWS Skill Builder exam-prep plan](https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01) — **about 4–8 hours estimated** for blueprint review, practice question set, walkthroughs, and meeting simulator; the official practice exam is explicitly unavailable during beta.
+- [Launch explanation](https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/) — **10–15 minutes**; useful for audience, intent, beta dates, and the distinction from AI Practitioner.
+
+No complete third-party AIB-C01 course or practice bank was established by this review. The official announcement describes a 13-module plan; the Skill Builder pages exposed sign-in shells, so lesson contents and durations were not independently verified. Verify current coverage before purchase.
+
+### High-quality adjacent resources
+
+- [AWS CAF for AI, ML, and generative AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html) — **4–7 hours selected reading/workshop**; strong for business, people, governance, platform, security, operations, maturity, and transformation. Free; AWS labels this whitepaper historical, so recheck implementation advice and linked resources; not an exam course.
+- [AWS Responsible AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html) — **4–8 hours selected reading and applying questions**; strong for use-case, benefit/risk, testing, release, guidance, and monitoring. Free; implementation-oriented supporting depth.
+- [NIST AI RMF and Playbook](https://www.nist.gov/itl/ai-risk-management-framework) plus the [Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) — **5–10 hours selected reading/application**; free, vendor-neutral governance vocabulary. Version 1.0 is under revision, so verify the live baseline.
+- [ISO/IEC 42001 overview](https://www.iso.org/standard/42001) — **20–40 minutes** estimated for the public overview; its page was access-blocked in this review; the full standard is paid; its current edition and page count were not verified during this review. Use it to understand management-system intent, not to infer exam wording.
+- [O'Reilly: The Secrets of AI Value Creation](https://www.oreilly.com/library/view/the-secrets-of/9781394233625/) — **10–20 hours reading estimate**; current edition, length and access were not reverified on the blocked public page. Strong adjacent treatment of value, feasibility/adoption risk, strategy, projects, culture, data, and talent; subscription required and not AIB-C01-specific.
+- [Udemy: AI Strategy for Leaders—Generative AI, Risk & Governance](https://www.udemy.com/course/ai-strategy-for-leaders-generative-ai-risk-governance/) — **2–4 hours planning estimate**; current runtime and update date were not reverified on the blocked public page. Adjacent coverage of use cases, build/buy/partner, ROI, governance, risk, and change; not an AIB-C01 course.
+
+### Practitioner reading
+
+- [You CAN Manage, Forecast, and Evaluate AI Costs](https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/) — June 25, 2026; **30–45 minutes estimated reading and critique**. Apply its outcome/accountability questions to Example 1; do not adopt generic savings percentages.
+- [You Wanted to Become AI-Native, and All You Got Was a Lousy Foundation](https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/) — May 7, 2026; **30–45 minutes estimated reading and portfolio discussion**. Decide which minimum capabilities the next use case needs before funding a general platform.
+
+### Suggested routes
+
+- **Experienced AI/product leader, 15–25 hours:** blueprint, exam-prep plan, targeted official modules, this guide's checks, Labs 2/3/5/8, then the official question set.
+- **Business leader new to AI, 30–45 hours:** full 13-module plan, this guide, Labs 1–8, selected CAF-AI and Responsible AI Lens sections, then exam-prep activities.
+- **Governance/risk professional, 22–35 hours:** Domain 1 refresh, full Domains 2 and 4 modules, NIST/AWS governance material, value/readiness labs, then official practice questions.
+
+---

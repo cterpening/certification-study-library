@@ -2277,13 +2277,48 @@ AWS learning does not need to mean consuming every available course. Start from 
 
 ### AWS Certified AI Business Strategist (AIB-C01 beta)
 
-- Official baseline: [AIB-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) (**2–4 hours** for scope mapping and notes) and [live certification page](https://aws.amazon.com/certification/certified-ai-business-strategist/); beta delivery begins September 29, 2026 and the official practice exam is unavailable during beta
-- Official learning route: [AWS AI Business Strategist learning plan](https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN) (**about 12–20 hours estimated** across 13 announced modules) plus the [AIB-C01 exam-prep plan](https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01) (**about 4–8 hours estimated**; free/subscription elements and live durations vary)
-- Strategy and readiness reference: [AWS CAF for AI, ML, and generative AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html) (**4–7 hours selected reading/application**; free and adjacent rather than a complete exam course)
-- Governance route: [AWS Responsible AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html) with [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) and its [GenAI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) (**8–16 hours selected reading and application**; NIST 1.0 is being revised)
-- Optional adjacent book: [O'Reilly The Secrets of AI Value Creation](https://www.oreilly.com/library/view/the-secrets-of/9781394233625/) (**8 hours 1 minute provider estimate**, 416 pages; February 2024, subscription required, not AIB-C01-specific)
-- Optional compact course: [Udemy AI Strategy for Leaders: Generative AI, Risk & Governance](https://www.udemy.com/course/ai-strategy-for-leaders-generative-ai-risk-governance/) (**1 hour 44 minutes plus exercises**; August 2026, not AIB-C01-specific)
-- Catalog boundary: no exact Pluralsight, O'Reilly, Whizlabs, MeasureUp, or Tutorials Dojo AIB-C01 product was verified on launch day; recheck later and do not assume a similarly named business-AI course follows the beta blueprint
+Resource details from the [AIB-C01 guide](../guides/AIB-C01-aws-certified-ai-business-strategist.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed end to end. Pick the formats and gaps that work for you, verify dates and live durations, and return to the official blueprint. Because AIB-C01 was announced on September 1, 2026, exact third-party coverage is not mature; adjacent resources below are labeled and should not be mistaken for complete AIB-C01 preparation.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official guide and launch materials | Public | 2–4 hours |
+| AWS 13-module learning plan | Free/subscription elements | 12–20 hours estimated |
+| AWS exam-prep plan | Free/subscription elements | 4–8 hours estimated |
+| CAF-AI and Responsible AI Lens | Public | 8–15 hours selected application |
+| NIST AI RMF and GenAI Profile | Public | 5–10 hours selected application |
+| Optional O'Reilly book | Paid | 10–20 hours planning estimate; catalog blocked |
+| Optional adjacent Udemy course | Paid | 2–4 hours planning estimate; catalog blocked |
+
+#### Exact AIB-C01 resources
+
+- [Official exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) — **2–4 hours** for scope mapping and notes; free and authoritative.
+- [AWS Skill Builder AI Business Strategist learning plan](https://skillbuilder.aws/learning-plan/TSP9R1XQ6P/aws-ai-business-strategist-learning-plan/BDE88AHVZN) — **about 12–20 hours estimated** across the 13 modules AWS says map to the four domains; free/subscription and exact live durations can vary.
+- [AWS Skill Builder exam-prep plan](https://skillbuilder.aws/category/exam-prep/ai-business-strategist-business-AIB-C01) — **about 4–8 hours estimated** for blueprint review, practice question set, walkthroughs, and meeting simulator; the official practice exam is explicitly unavailable during beta.
+- [Launch explanation](https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/) — **10–15 minutes**; useful for audience, intent, beta dates, and the distinction from AI Practitioner.
+
+No complete third-party AIB-C01 course or practice bank was established by this review. The official announcement describes a 13-module plan; the Skill Builder pages exposed sign-in shells, so lesson contents and durations were not independently verified. Verify current coverage before purchase.
+
+#### High-quality adjacent resources
+
+- [AWS CAF for AI, ML, and generative AI](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-for-ai/aws-caf-for-ai.html) — **4–7 hours selected reading/workshop**; strong for business, people, governance, platform, security, operations, maturity, and transformation. Free; AWS labels this whitepaper historical, so recheck implementation advice and linked resources; not an exam course.
+- [AWS Responsible AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html) — **4–8 hours selected reading and applying questions**; strong for use-case, benefit/risk, testing, release, guidance, and monitoring. Free; implementation-oriented supporting depth.
+- [NIST AI RMF and Playbook](https://www.nist.gov/itl/ai-risk-management-framework) plus the [Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) — **5–10 hours selected reading/application**; free, vendor-neutral governance vocabulary. Version 1.0 is under revision, so verify the live baseline.
+- [ISO/IEC 42001 overview](https://www.iso.org/standard/42001) — **20–40 minutes** estimated for the public overview; its page was access-blocked in this review; the full standard is paid; its current edition and page count were not verified during this review. Use it to understand management-system intent, not to infer exam wording.
+- [O'Reilly: The Secrets of AI Value Creation](https://www.oreilly.com/library/view/the-secrets-of/9781394233625/) — **10–20 hours reading estimate**; current edition, length and access were not reverified on the blocked public page. Strong adjacent treatment of value, feasibility/adoption risk, strategy, projects, culture, data, and talent; subscription required and not AIB-C01-specific.
+- [Udemy: AI Strategy for Leaders—Generative AI, Risk & Governance](https://www.udemy.com/course/ai-strategy-for-leaders-generative-ai-risk-governance/) — **2–4 hours planning estimate**; current runtime and update date were not reverified on the blocked public page. Adjacent coverage of use cases, build/buy/partner, ROI, governance, risk, and change; not an AIB-C01 course.
+
+#### Practitioner reading
+
+- [You CAN Manage, Forecast, and Evaluate AI Costs](https://aws.amazon.com/blogs/enterprise-strategy/you-can-manage-forecast-and-evaluate-ai-costs/) — June 25, 2026; **30–45 minutes estimated reading and critique**. Apply its outcome/accountability questions to Example 1; do not adopt generic savings percentages.
+- [You Wanted to Become AI-Native, and All You Got Was a Lousy Foundation](https://aws.amazon.com/blogs/enterprise-strategy/you-wanted-to-become-ai-native-and-all-you-got-was-a-lousy-foundation/) — May 7, 2026; **30–45 minutes estimated reading and portfolio discussion**. Decide which minimum capabilities the next use case needs before funding a general platform.
+
+#### Suggested routes
+
+- **Experienced AI/product leader, 15–25 hours:** blueprint, exam-prep plan, targeted official modules, this guide's checks, Labs 2/3/5/8, then the official question set.
+- **Business leader new to AI, 30–45 hours:** full 13-module plan, this guide, Labs 1–8, selected CAF-AI and Responsible AI Lens sections, then exam-prep activities.
+- **Governance/risk professional, 22–35 hours:** Domain 1 refresh, full Domains 2 and 4 modules, NIST/AWS governance material, value/readiness labs, then official practice questions.
 
 ### AWS Certified Cloud Practitioner (CLF-C02)
 
