@@ -749,7 +749,23 @@ def validate_reviews(
                 row.get("status") in {"missing", "error"} for row in health_rows
             ),
         }
-        if review.get("link_evidence") != expected_evidence:
+        historical = (
+            valid_date(review.get("reviewed_on"))
+            and valid_date(exam.get("blueprint_last_checked"))
+            and review["reviewed_on"] < exam["blueprint_last_checked"]
+        )
+        # Historical link counts describe the guide and source health at that
+        # review, not today's guide. Still check their internal consistency.
+        evidence = review.get("link_evidence")
+        if historical:
+            fields = ("unique_external_links", "reachable", "access_blocked", "missing_or_error")
+            if (
+                not isinstance(evidence, dict)
+                or not all(type(evidence.get(key)) is int and evidence[key] >= 0 for key in fields)
+                or evidence[fields[0]] != sum(evidence[key] for key in fields[1:])
+            ):
+                errors.append(f"Guide review {review_id} has invalid historical link evidence")
+        elif evidence != expected_evidence:
             errors.append(f"Guide review {review_id} link evidence is stale")
 
         if (
@@ -1083,9 +1099,22 @@ def validate_ai_audits(
                     f"{label}/{result_code} lacks a current source-validation record"
                 )
                 continue
+            # Use the latest preserved source review as of the audit. Older
+            # catalogs retained only a current review, so retain that fallback
+            # when no dated historical record exists; hashes must still match.
+            dated_reviews = [
+                review for review in review_rows
+                if isinstance(review, dict)
+                and review.get("exam_code") == result_code
+                and review.get("review_type") == "source-validation"
+                and valid_date(review.get("reviewed_on"))
+                and valid_date(result.get("audited_on"))
+                and review["reviewed_on"] <= result["audited_on"]
+            ]
+            bound_review = max(dated_reviews, key=lambda row: row["reviewed_on"]) if dated_reviews else current_review
             if (
                 result.get("verdict") in {"pass", "pass-with-notes"}
-                and current_review.get("outcome") != "passed"
+                and bound_review.get("outcome") != "passed"
             ):
                 errors.append(
                     f"{label}/{result_code} cannot pass with a blocked "
@@ -1095,10 +1124,10 @@ def validate_ai_audits(
                 "blueprint_snapshot_path",
                 "blueprint_snapshot_sha256",
             ):
-                if result.get(field) != current_review.get(field):
+                if result.get(field) != bound_review.get(field):
                     errors.append(
                         f"{label}/{result_code} {field} does not match the "
-                        "current source-validation record"
+                        "source-validation record applicable to the audit"
                     )
         if len(result_codes) != len(set(result_codes)):
             errors.append(f"{label} contains duplicate result exam codes")

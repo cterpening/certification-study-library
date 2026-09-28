@@ -460,7 +460,7 @@ review_status: ai-generated-draft
 
         self.assertTrue(any("verdict is inconsistent" in error for error in errors))
 
-    def test_ai_audit_rejects_pass_against_blocked_source_validation(self) -> None:
+    def audit_validation_fixture(self):
         snapshot_path = "data/objective-snapshots/gh-900-official-objectives.txt"
         snapshot_hash = sha256(
             (Path(__file__).parents[1] / snapshot_path).read_bytes()
@@ -513,15 +513,18 @@ review_status: ai-generated-draft
             "blueprint_snapshot_path": snapshot_path,
             "blueprint_snapshot_sha256": snapshot_hash,
         }
+        return {"rubric_version": 1, "batches": [batch]}, {"GH-900": exam}, review
+
+    def test_ai_audit_rejects_pass_against_blocked_source_validation(self) -> None:
+        audit_data, exams, review = self.audit_validation_fixture()
         errors: list[str] = []
 
         validator.validate_ai_audits(
-            {"rubric_version": 1, "batches": [batch]},
-            {"GH-900": exam},
+            audit_data,
+            exams,
             [review],
             errors,
         )
-
         self.assertEqual(
             [
                 "AI audit batch test-batch/GH-900 cannot pass with a blocked "
@@ -529,6 +532,86 @@ review_status: ai-generated-draft
             ],
             errors,
         )
+
+    def historical_audit_fixture(self):
+        audit_data, exams, historical = self.audit_validation_fixture()
+        historical["outcome"] = "passed"
+        current = dict(historical, reviewed_on="2026-09-27", outcome="blocked")
+        # A later blueprint has different exact bytes and a separate review.
+        current["blueprint_snapshot_path"] = "data/objective-snapshots/gh-300-official-objectives.txt"
+        current["blueprint_snapshot_sha256"] = sha256(
+            (ROOT / current["blueprint_snapshot_path"]).read_bytes()
+        ).hexdigest()
+        exams["GH-900"]["blueprint_last_checked"] = "2026-09-27"
+        return audit_data, exams, historical, current
+
+    def test_historical_audit_preserves_pass_when_current_review_is_blocked(self) -> None:
+        data, exams, historical, current = self.historical_audit_fixture()
+        for reviews in ([historical, current], [current, historical]):
+            with self.subTest(order=[r["reviewed_on"] for r in reviews]):
+                errors = []
+                validator.validate_ai_audits(data, exams, reviews, errors)
+                self.assertEqual([], errors)
+
+    def test_historical_audit_cannot_use_later_pass_to_hide_blocked_review(self) -> None:
+        data, exams, historical, current = self.historical_audit_fixture()
+        historical["outcome"] = "blocked"
+        current["outcome"] = "passed"
+        errors = []
+        validator.validate_ai_audits(data, exams, [historical, current], errors)
+        self.assertEqual(1, len(errors))
+        self.assertIn("cannot pass with a blocked", errors[0])
+
+    def test_new_audit_cannot_use_superseded_blueprint(self) -> None:
+        data, exams, historical, current = self.historical_audit_fixture()
+        current["outcome"] = "passed"
+        data["batches"][0]["results"][0]["audited_on"] = "2026-09-28"
+        errors = []
+        validator.validate_ai_audits(data, exams, [historical, current], errors)
+        self.assertEqual(2, len(errors))
+        self.assertTrue(all("does not match" in error for error in errors))
+
+    def test_old_audit_needs_preserved_review_for_different_blueprint(self) -> None:
+        data, exams, historical, current = self.historical_audit_fixture()
+        current["outcome"] = "passed"
+        errors = []
+        validator.validate_ai_audits(data, exams, [current], errors)
+        self.assertEqual(2, len(errors))
+        self.assertTrue(all("does not match" in error for error in errors))
+
+    def test_historical_audit_still_checks_actual_snapshot_bytes(self) -> None:
+        data, exams, historical, current = self.historical_audit_fixture()
+        historical["blueprint_snapshot_sha256"] = "a" * 64
+        data["batches"][0]["results"][0]["blueprint_snapshot_sha256"] = "a" * 64
+        errors = []
+        validator.validate_ai_audits(data, exams, [historical, current], errors)
+        self.assertTrue(any("snapshot hash changed" in error for error in errors))
+
+    def test_legacy_audit_without_dated_review_must_match_current_blueprint(self) -> None:
+        data, exams, current = self.audit_validation_fixture()
+        current.update(reviewed_on="2026-09-27", outcome="passed")
+        exams["GH-900"]["blueprint_last_checked"] = "2026-09-27"
+        errors = []
+        validator.validate_ai_audits(data, exams, [current], errors)
+        self.assertEqual([], errors)
+
+    def test_historical_review_keeps_original_link_evidence(self) -> None:
+        data, exams, historical, current = self.historical_audit_fixture()
+        historical.update(
+            id="historical-review",
+            guide_path=exams["GH-900"]["guide_path"],
+            checks={name: True for name in validator.SOURCE_VALIDATION_CHECKS},
+            objective_coverage=[{"objective_group": "Group", "guide_sections": ["Section 1"]}],
+            link_evidence={"unique_external_links": 3, "reachable": 2, "access_blocked": 1, "missing_or_error": 0},
+        )
+        # Today's guide has no external links; the original reviewed guide had 3.
+        errors = []
+        validator.validate_reviews([historical], exams, {"GH-900": "Updated guide"}, {}, {}, errors)
+        self.assertEqual([], errors)
+        historical["link_evidence"]["unique_external_links"] = 4
+        errors = []
+        validator.validate_reviews([historical], exams, {"GH-900": "Updated guide"}, {}, {}, errors)
+        self.assertEqual(["Guide review historical-review has invalid historical link evidence"], errors)
 
     def test_source_freshness_summary_counts_outcomes_and_dispositions(self) -> None:
         results = [

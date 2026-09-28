@@ -3,6 +3,259 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "pl300-calculate",
+      "title": "CALCULATE filter semantics",
+      "url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-distinctcount",
+      "title": "DISTINCTCOUNT totals",
+      "url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-rls",
+      "title": "Power BI RLS",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-page-refresh",
+      "title": "Automatic page refresh",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Reviewed mode/capacity matrix and setup text. Matrix includes Direct Lake while setup text focuses on DirectQuery; guidance requires actual path validation and does not infer unsupported Import refresh. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-refresh",
+      "title": "Scheduled refresh",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-alerts",
+      "title": "Dashboard data alerts",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-labels",
+      "title": "Power BI sensitivity labels",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-sensitivity-label-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-copilot",
+      "title": "Copilot Power BI overview and requirements",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-calculated-columns",
+      "title": "Calculated columns and Expression Context",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300",
+        "DP-600"
+      ],
+      "notes": "September 27 PL-300 deep review: Current Expression Context and materialization table clarifies ordinary Import versus query-time user context, and Direct Lake on OneLake preview/no-relationship boundary. Also used for a bounded DP-600 follow-up. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-table-distinct",
+      "title": "Power Query Table.Distinct",
+      "url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-buffer",
+      "title": "Power Query Table.Buffer",
+      "url": "https://learn.microsoft.com/en-us/powerquery-m/table-buffer",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-qa-limits",
+      "title": "Q&A limitations and retirement notice",
+      "url": "https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-qa-visual",
+      "title": "Q&A visual and retirement notice",
+      "url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-desktop-updates",
+      "title": "Power BI Desktop recent updates",
+      "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Current page redirects to canonical whats-new and presents August 2026; checked relevant modeling, refresh, theme, bookmark and October old file-picker entries. No invented September release or claim all changes tested. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-visual-perf-blog",
+      "title": "Analyzing the performance impact of visual calculations",
+      "url": "https://www.sqlbi.com/articles/analyzing-the-performance-impact-of-visual-calculations/",
+      "publisher": "SQLBI",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Marco Russo and Alberto Ferrari, SQLBI, July 27, 2026. Full available public article text read. Original performance experiment supports measured small/large visual-grain exercise; no downloads, paid whitepaper, screenshots or benchmarks executed. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-qa-update-blog",
+      "title": "Power BI Q&A retirement reminder: February 2027 timeline update",
+      "url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Microsoft Power BI Team account mohammadali, September 2026. Public article text reviewed via web search after direct fetch blocked; no exact publication day inferred from relative UI dates. Explicitly extends December 2026 retirement to February 2027. No claim of platform execution. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-copilot-summary",
+      "title": "Copilot report summary and bookmark support",
+      "url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl300-refresh-data",
+      "title": "Data refresh types and granular controls",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-300"
+      ],
+      "notes": "September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "dp700-copy-job",
       "title": "Copy job overview",
       "url": "https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job",
@@ -222,9 +475,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-600"
+        "DP-600",
+        "PL-300"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-direct-lake-security",
@@ -379,9 +633,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-600"
+        "DP-600",
+        "PL-300"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-dl-blog",
@@ -437,9 +692,10 @@
       "last_checked": "2026-09-27",
       "supported_exams": [
         "DP-600",
-        "DP-700"
+        "DP-700",
+        "PL-300"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution. September 27 PL-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-incremental-config",

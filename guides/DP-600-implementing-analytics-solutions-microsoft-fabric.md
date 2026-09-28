@@ -191,7 +191,7 @@ For Import incremental refresh, use the [configuration procedure](https://learn.
 
 Prefer explicit measures. Use variables to make logic readable and avoid repeated expression evaluation. Understand row context, filter context and context transition. Iterators evaluate an expression per table row; table-filter functions shape the filter set; window functions operate over ordered partitions; information functions expose state/type/context.
 
-Test measures at detail, subtotal, grand total, no-data, multi-select and restricted-user contexts. Avoid calculated columns for logic that should respond to report filters. Reduce high-cardinality text and unnecessary calculated objects.
+Test measures at detail, subtotal, grand total, no-data, multi-select and restricted-user contexts. Avoid ordinary stored Import calculated columns for logic that should respond to report filters. Reduce high-cardinality text and unnecessary calculated objects.
 
 Calculation groups centralize repeated calculation transformations such as time intelligence; precedence matters when groups interact. Dynamic format strings change presentation without converting numeric results to text. Field parameters let report consumers switch dimensions/measures through a generated model construct; secure underlying objects because hiding a field parameter option is not object security.
 
@@ -313,7 +313,7 @@ Compare KQL ingestion, Eventhouse OneLake availability, model framing and report
 26. **Why star schema?** Clear grain and one-to-many filter propagation improve correctness/usability/performance.
 27. **Bridge-table purpose?** Express a genuine many-to-many business relationship at a controlled grain.
 28. **Why avoid broad bidirectional filters?** Ambiguous paths, slower queries and harder security reasoning.
-29. **Measure versus calculated column?** Query-context calculation versus stored row-by-row refresh calculation.
+29. **Measure versus ordinary Import calculated column?** Query-context calculation versus stored row-by-row refresh calculation. Other storage modes and user-context columns can evaluate at query time; check Expression Context and feature support.
 30. **Calculation group purpose?** Reuse calculation transformations across measures with controlled precedence.
 31. **Dynamic format string advantage?** Retains numeric data type while changing display.
 32. **Incremental refresh purpose?** Refresh a policy-defined recent partition window while retaining history.

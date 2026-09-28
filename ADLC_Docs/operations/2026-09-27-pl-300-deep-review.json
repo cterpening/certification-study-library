@@ -1,0 +1,2501 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "PL-300",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "9cc7c0ae225fdc61944f693090e80519af866c25c4f0ba75bcb98fc4677d5a57",
+  "guide_after_sha256": "b6d4a0f04fd84f156294799c1c07eec99e61b438c121737cfee4c1c33655c5bc",
+  "prior_records": {
+    "exam": {
+      "code": "PL-300",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Power BI Data Analyst",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+      "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical data-analysis experience plus hands-on Power BI Desktop and service skills across Power Query, dimensional modeling, DAX, report design, workspaces, apps, gateways, refresh, permissions, row-level security, accessibility, performance, and current Fabric/Copilot integration."
+    },
+    "review": {
+      "id": "pl-300-2026-09-01-source-validation",
+      "exam_code": "PL-300",
+      "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pl-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee",
+      "objective_coverage": [
+        {
+          "objective_group": "Prepare the data",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Model the data",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Visualize and analyze the data",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Manage and secure Power BI",
+          "guide_sections": [
+            "Section 4",
+            "Regional-sales and operations scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 24,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 20, 2026 subobjective is mapped to an end-to-end analyst decision spanning source, transformation, model, DAX, report, distribution, refresh, and security. Three scenarios, eight labs and 36 original checks cover the complete published scope. All 27 URLs are cataloged: 24 reachable and three commercial pages access-blocked. The September 7 watch treats the AI at Work roadmap as mutable discovery evidence, not a Power BI blueprint, while retaining diverse independent modeling and DAX explanations."
+    },
+    "sources": [
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations."
+      },
+      {
+        "id": "pl-300-blueprint",
+        "title": "Study guide for Exam PL-300: Microsoft Power BI Data Analyst",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Authoritative skills measured as of April 20, 2026; no upcoming update announced."
+      },
+      {
+        "id": "pl-300-credential",
+        "title": "Microsoft Certified: Power BI Data Analyst Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Official active credential page; intermediate level, 100-minute exam, April 20, 2026 update and annual renewal listed."
+      },
+      {
+        "id": "pl-300-path-intro",
+        "title": "Get started with Microsoft data analytics",
+        "url": "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Four-module path; listed duration 1 hour 28 minutes."
+      },
+      {
+        "id": "pl-300-path-prepare",
+        "title": "Prepare data for analysis with Power BI",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Three-module path; listed duration 4 hours 33 minutes."
+      },
+      {
+        "id": "pl-300-path-model",
+        "title": "Model data with Power BI",
+        "url": "https://learn.microsoft.com/en-us/training/paths/model-power-bi/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Six-module path; listed duration 5 hours 50 minutes and includes current visual-calculation material."
+      },
+      {
+        "id": "pl-300-power-bi-calculation-options",
+        "title": "Use calculation options in Power BI Desktop",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Authoritative comparison of Power Query custom columns, calculated columns/tables, measures and visual calculations."
+      },
+      {
+        "id": "pl-300-power-bi-visual-calculations",
+        "title": "Visual calculations overview",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Current July 2026 documentation; feature behavior and limitations are volatile."
+      },
+      {
+        "id": "pl-300-power-bi-performance-analyzer",
+        "title": "Use Performance Analyzer to examine report performance",
+        "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/performance-analyzer",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Authoritative visual, DAX query, DirectQuery and display timing guidance."
+      },
+      {
+        "id": "pl-300-power-bi-dax-query-view",
+        "title": "DAX query view",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Current authoring, live-connect and Performance Analyzer integration documentation; UI and Copilot behavior are volatile."
+      },
+      {
+        "id": "pl-300-path-reports",
+        "title": "Design effective reports in Power BI",
+        "url": "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Four-module path; listed duration 5 hours 7 minutes."
+      },
+      {
+        "id": "pl-300-path-manage",
+        "title": "Manage and secure Power BI",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Five-module path; listed duration 2 hours 54 minutes."
+      },
+      {
+        "id": "pl-300-course",
+        "title": "PL-300T00-A Design and manage analytics solutions using Power BI",
+        "url": "https://learn.microsoft.com/en-us/training/courses/pl-300t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Three-day official course linking five current learning paths."
+      },
+      {
+        "id": "pl-300-official-labs",
+        "title": "MicrosoftLearning PL-300 hands-on labs",
+        "url": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Public MIT-licensed lab repository for PL-300T00; use current instructions and data files."
+      },
+      {
+        "id": "pl-300-practice",
+        "title": "PL-300 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/practice/assessment?assessment-type=practice&assessmentId=48&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Free official readiness assessment linked from the credential page."
+      },
+      {
+        "id": "pl-300-reactor-orientation",
+        "title": "Get Certified: PL-300 Power BI Data Analyst",
+        "url": "https://www.youtube.com/watch?v=tDwNtxAB49k",
+        "publisher": "Microsoft Reactor",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "One-hour June 2026 certification orientation covering the four domains and current preparation approach; not an end-to-end course."
+      },
+      {
+        "id": "pl-300-pluralsight",
+        "title": "Microsoft Certified: Microsoft Power BI Data Analyst PL-300 path",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-microsoft-power-bi-data-analyst-pl-300",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Twelve hours, four courses, four labs and practice exam listed; course dates September 2025–January 2026 and labs July 2026."
+      },
+      {
+        "id": "pl-300-oreilly-study-guide",
+        "title": "Microsoft Power BI Data Analyst Associate Study Guide",
+        "url": "https://www.oreilly.com/library/view/microsoft-power-bi/9781098175276/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Paul Turley, March 2026, 478 pages and 12 hours 7 minutes listed; explicitly based on 2025 revisions, so supplement April 2026 additions."
+      },
+      {
+        "id": "pl-300-udemy-schuler",
+        "title": "PL-300 Microsoft Power BI Certification Exam Prep",
+        "url": "https://www.udemy.com/course/pl-300-da-100-microsoft-power-bi-data-analyst-exam-prep/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Nikolai Schuler; 8 hours 57 minutes, 120 lectures and full practice exam, updated August 2026."
+      },
+      {
+        "id": "pl-300-coursera-microsoft",
+        "title": "Microsoft PL-300 Exam Preparation and Practice",
+        "url": "https://www.coursera.org/learn/microsoft-pl-300-exam-preparation-and-practice/",
+        "publisher": "Microsoft / Coursera",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Microsoft-authored guided exam review, activities and mock exam; approximately 38 hours listed."
+      },
+      {
+        "id": "pl-300-whizlabs",
+        "title": "Microsoft Power BI certification PL-300 bundle",
+        "url": "https://www.whizlabs.com/microsoft-power-bi-certification-pl-300/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Course/practice/lab bundle exists, but the public product page did not expose dependable current total duration or question count; verify April 2026 alignment before purchase."
+      },
+      {
+        "id": "pl-300-measureup",
+        "title": "Microsoft PL-300 practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-pl-300-microsoft-power-bi-data-analyst.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "158 questions; released April 2022 and updated February 2026. Its published objectives omit Direct Lake, so supplement April 2026 changes."
+      },
+      {
+        "id": "pl-300-udemy-practice-2026",
+        "title": "PL-300 Microsoft Power BI Data Analyst Practice Tests",
+        "url": "https://www.udemy.com/course/pl300-tests/",
+        "publisher": "Udemy / HawkEye Data",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "Six tests and 330 original questions, updated August 2026; published scope includes visual calculations and current service/security topics."
+      },
+      {
+        "id": "pl-300-youtube-power-bi",
+        "title": "Microsoft Power BI YouTube channel",
+        "url": "https://www.youtube.com/@MicrosoftPowerBI",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300"
+        ],
+        "notes": "First-party product updates, demonstrations and webinars; use selectively by current objective rather than as an exam checklist."
+      },
+      {
+        "id": "pl-300-youtube-guy-in-a-cube",
+        "title": "Guy in a Cube YouTube channel",
+        "url": "https://www.youtube.com/@GuyInACube",
+        "publisher": "Guy in a Cube",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300",
+          "DP-600"
+        ],
+        "notes": "Frequent practical Power BI and Fabric explanations from experienced Microsoft/community practitioners; topical learning, not an exam-objective checklist."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "title": "One always-on roadmap: Dynamics 365, Power Platform, and Dataverse join the AI at Work roadmap",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap",
+        "title": "AI at Work Roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "841e0c46f75ebccf2bb0a531f6b350aa8a00fe5f8da8f15db2c002a16c0dacff",
+      "guide_sections": "1 / Requirements and shared models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "ba0d6af2504efbd905f61dea14d3f1a63782d9f0bc5cd95eaf9f8482fcae8382",
+      "guide_sections": "1 / Credentials/privacy/ADBC",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "60975a70bf31055f4cdfddea9b84742b65aae991755f12b49f8da8e86ce8e131",
+      "guide_sections": "1 / Storage modes and Direct Lake variants",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "d07214a2e4d6ff19e96e8d42d1283288fae83f4885e154837d1cddf2d60477e3",
+      "guide_sections": "1 / Parameters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "32a2eadb7a9092d3e7135d14f37de398364c2373f6c69155ccb3a099279379e2",
+      "guide_sections": "1 / Profiling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "d11334daa869b1118252659a6861bab7c7c3ef82962a1fce0cad0673dd57b526",
+      "guide_sections": "1 / Quality and deterministic duplicates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "bed022d0d1843b16ff378ede4f935659438c35b20598ed032d058391803e0482",
+      "guide_sections": "1 / Import errors and type/locale",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "703e5727dc3332b3a5ab8e29cedb994110ee3c5bb4e7371a273361bd399bd98e",
+      "guide_sections": "1 / Types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "969e9487352dbf8e01843d6352db0cfeac809e9e2e7e1b1f7afba483371110db",
+      "guide_sections": "1 / Power Query columns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "0d00e9f77c0ef93e453e7824b82389f303ea0738f753cb77ea284c3862384653",
+      "guide_sections": "1 / Group and aggregate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "6b6c509abfb091a6b4ba8838bb9c7319fc05afec29ffbb8ebf53e7f6df1b6940",
+      "guide_sections": "1 / Pivot/unpivot/transpose table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "529719684e80726fb409a9be246e3cc0750702b26945d55e46d98817fe47dd54",
+      "guide_sections": "1 / Semi-structured expansion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "d43f7fd342b94601724260db5ea994a145dc7532cc95d57019093e4924589969",
+      "guide_sections": "1 / Fact/dimension grain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "ed973fec0419b97abe587f866edacf389bdcb9cc6e794a608f62d622a7a9c814",
+      "guide_sections": "1 / Reference versus duplicate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "d986b060d08f55e6f6bdaf475bc81695ce973206bb02e57d190d5eeeff9a3c25",
+      "guide_sections": "1 / Merge and append",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "14bc14d3d89998e3e0d4ce23c8ba0be329bf2865c33b5e4e3fa77e3709cfca7b",
+      "guide_sections": "1 / Keys and uniqueness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "1ad48a371ef7e076605aaad33766c2b4ebef059d5df34d8862d254dab99847a8",
+      "guide_sections": "1 / Staging/load settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "603b43af1e36a511121cfe802917e99daa0e13f226a2cb738838b7df60e0b2f4",
+      "guide_sections": "2 / Semantic properties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "2d6890fa4410848579d7ca9f9d6fc5f720f39dcf232840af55d40df62469809a",
+      "guide_sections": "2 / Date roles and RLS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "f310e92d82c5e0080ff454d77c91cebb00abfae930dd6a83b1f107c0503bcfeb",
+      "guide_sections": "2 / Cardinality/filter directions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "d728abfaa0b68eae0c01f9e332abe97078de8cd258a1f79823957acbc672f80d",
+      "guide_sections": "2 / Common date table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "bf33e26c9f786df7311b02c307887e6534de4baa93a21ef1ed59b336aafcdfc0",
+      "guide_sections": "2 / Calculation layers and Expression Context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c48b4a1ec0ee1d6a1060adbdc3bdfa87edc90a50fff21f89ecfdb3331071ab01",
+      "guide_sections": "2 / Aggregation and distinct-total example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "2f420405773cdd02ccf187fe78679352b0a76a5d40ef5b1f079585d352dc7dc1",
+      "guide_sections": "2 / CALCULATE worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "4b9c9cd47578a500dce7ca6c84c53a21f60931e566cba8ca174dd9daf6977ed3",
+      "guide_sections": "2 / Time intelligence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "33910d4bbfae4946955d027a453bcfaf20f6bd330ac37c7984f794d187c270a8",
+      "guide_sections": "2 / Basic statistics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "e94d191c52d61d95e3325b5e318ffd2bcf2f4a833c4ff064fdbf104e2cafc365",
+      "guide_sections": "2 / Semi-additive logic",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "df79f3ad398ea1719deba098f2cb05bc51f0f0f0704d1234d6cb2cbdfb54970e",
+      "guide_sections": "2 / Quick measures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "ff53cb50a6f2b14e83aa524c6255e53688b958160cbc6f8e8376e9e69c609820",
+      "guide_sections": "2 / Calculated columns/tables",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "5eae87b03f6627e97cd89a7c4c522a1c4e40fe53b5c2504c9157bffad15a24c0",
+      "guide_sections": "2 / Calculation groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "8ed3c18cc90956c54ba40e432a5592b569b6047c0d287b0b91a42e9fdfc2c0b9",
+      "guide_sections": "2 / Model size and cardinality",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "100e740222fcc279c9e1b38fb56092869b0ec060656469f16d34e5d46729ff8e",
+      "guide_sections": "2 / Performance Analyzer and query view",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "d1919a44176c4146ef42d90287719ad4a903589c9cdab9cef2178ffe7a0f753b",
+      "guide_sections": "2 / Grain and reduction trade-offs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "cca34d4224539c26be5268a81591822fca0cad1089d5648c8aeb2eeda045fc6f",
+      "guide_sections": "3 / Visual decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "824bdceb37e3effe60ec0db32834b12f08a2e67a2e93f08ef7aa8feb32891cb1",
+      "guide_sections": "3 / Formatting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "0afe0667caea7752e589d834d081138ae5178cbb5b8083a68c4eef98560c8eea",
+      "guide_sections": "3 / Copilot narrative and scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "42508458440e87c2dd961f63c81c7403c2eb2b4ccc6275b248fdde6c4f443f6d",
+      "guide_sections": "3 / Themes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "b3f35d330b1eae078dfaa5076b2251e799688ed1d08f3655dd309fcd8bd16d9f",
+      "guide_sections": "3 / Conditional formatting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "00cd7f5db7b926aaaa6daebe5c796e60e8ed639d797f1c6e734fc12cd7a6cff5",
+      "guide_sections": "3 / Filters and slicers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "e1377ec6f566790651a5ce0ebd51b5e805d1455422e69b9f1e044fa30418498c",
+      "guide_sections": "3 / Copilot page creation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "de134b6198f3abb0a0de8432e46e661f15b169457e8ac91896068d674a4fda42",
+      "guide_sections": "3 / Copilot suggestions and review",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "b7387012c41e2c54cad76fd47a1cfbee02af47b6bc0aa7ecdc4f6a7dcf24931e",
+      "guide_sections": "3 / Page configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "f047682a716f31493c337bdc3267db2049b2af9e24c5430e45682cf9e67ef03e",
+      "guide_sections": "3 / Paginated decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 11,
+      "objective_sha256": "096c2d0d00e7327ef56000f2c62417420c5cba5e72ee843229e01755c0a1ec80",
+      "guide_sections": "2 / Visual calculations and previous-year example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "0e456ae8df2f5942fa2f1e77beb797efb63fa30721bd9b27c4ea2e0d7b184904",
+      "guide_sections": "3 / Bookmarks and Copilot scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "1b5abd692a0440cd572ceb8af864ce7a6deea720474335d202679723093d5299",
+      "guide_sections": "3 / Tooltips",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "366c91a4e969e0b4b4d6a3d1ce2f642219373b16b43502e3fefa6cad977d89a9",
+      "guide_sections": "3 / Interactions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "75aef2e3a85e1c9cf93177cfee501df0f2bea44a7ced1ba685d9b5de1596e673",
+      "guide_sections": "3 / Buttons/navigators",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "521ec8c925d877ba09ec9f5e87727118937f1cc93a2156d0c5766dc012039733",
+      "guide_sections": "3 / Sorting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "f041bea631c1f5419b2314f44a63db6c817ff535b3a7d1b9dc8a8f7b486234d9",
+      "guide_sections": "3 / Sync slicers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "12a55b618d2ff7152b5e92f5112718d4b2a1dd95b45d9177973211fd17ddfa30",
+      "guide_sections": "3 / Selection pane",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "02750675e3cb4aa1056bf49215784256ad4185d5d3cc32fe69fb30a73dd24d14",
+      "guide_sections": "3 / Drillthrough",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "76fe60d99a05112948284b67c5410c530a7b197a8416a94df2ae7309c454765b",
+      "guide_sections": "3, 4 / Export controls and labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "aeefdc4a5ffb462f4c825e4dd089ea9c4e954a1dfe725731f818499c456c1973",
+      "guide_sections": "3 / Mobile layout",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 11,
+      "objective_sha256": "d970cfc69ee8bfb6f126c4cb093ddb20aa306946f10562f3ac4d1f2cc099b667",
+      "guide_sections": "3 / Personalization versus security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 12,
+      "objective_sha256": "2f01daefd603fefe65011c2bdfe1eff0e404f62d0535f0a98059da1548047d4c",
+      "guide_sections": "3 / Accessibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 13,
+      "objective_sha256": "a038669daba53ad18ec602ce686137ca6cb2a7b46ee1c9445d27182272370850",
+      "guide_sections": "3 / Automatic page refresh",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "a69ebbcdcc7db0454e24da83e1b828a08244c492b543fcf5c83768a1df8e2c37",
+      "guide_sections": "3 / Analyze/Explain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "d343a8659bcecbee51743301e764c886cf8dc8b9e82bf9de20234629aa1565b7",
+      "guide_sections": "3 / Group/bin/cluster",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "c5c2738c13205c57086c1b9bd5cbedeefa6df292df024e7db65eacb15af457c8",
+      "guide_sections": "3 / AI visual assumptions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "fce7ee6e37781fd3bb62274322cedd68515dd4fcfeef21c3b090693a8a17dc53",
+      "guide_sections": "3 / Reference/error/forecast",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "a5cb911b53dc1d6de0c53b6b39e03259184b0afa86561c241285bb6bf4fb70cc",
+      "guide_sections": "3 / Outliers and anomalies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "ae3af7cdcae65b2ab3400ae0392261a25a4f62367bb2dec4e66ae3e554f77603",
+      "guide_sections": "3 / Copilot summary and verification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "b71742e67175930f2fca953e7f768742d6dc0368e7d5706abdf7f650e24c10d0",
+      "guide_sections": "4 / Workspaces",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "98de8419ac56f0a325649d1410309b7b84d61618f8bd032eeb05e9e2dfbc8ff8",
+      "guide_sections": "4 / App/audience distribution",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "e7716bfff2fe5540aed195564b2a780f0539394bf9b712eb3dcf87ca4d94e5dc",
+      "guide_sections": "4 / Publish/import/update",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "9b7389da5ef24a1744c9b4177cd849e284d17469e1194d78ba441ec331fe8104",
+      "guide_sections": "4 / Dashboards",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "7c730ce8cbc2ad69ef9c99940f79b2bb99e5d386406653cf9a5fa3870a2909db",
+      "guide_sections": "4 / Distribution table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "5c868d1dec5fb5c130f8ba29bc96110257ee9f8d386c94e4f7a2a3764c1cc8aa",
+      "guide_sections": "4 / Subscriptions and dashboard alerts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "346b04ffadc74eb5571640d7f7f8c9d572ef2b241cac77865515303e666e61b5",
+      "guide_sections": "4 / Endorsement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "7d9d37954077a61c046e1db2821cf9d4df161e2c6125db4e2df1b0e0a3cceb32",
+      "guide_sections": "4 / Gateway path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "fbbbaa650dacad2ab5211e50a23d3ab6eb9e5bbe2c04cde433cc88f0182fb08d",
+      "guide_sections": "4 / Schedule, failure and refresh types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "40a9fab9ad4e3a1e46dc5b1e4a89e0055566cf4741e61a55b0d522050826041e",
+      "guide_sections": "4 / Workspace role effects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "d9bc8d4c39843eea745c10dfccba3054fb2792034456832209d1f97611729dd7",
+      "guide_sections": "4 / Item access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "584f54e4bc2104c6bdb33bb16a3239da41c9a0c58aabe1d46f8c09c353c3b6cd",
+      "guide_sections": "4 / Model permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "9faa7564fe82c1fa326e4042e8576111a88797e476d389105d89bf6ac898d2e0",
+      "guide_sections": "4 / Static/dynamic RLS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "0efaf4b3964ec1e45c19d1bdda32bdf5d87788a399eb9241985dac0e05859973",
+      "guide_sections": "4 / Membership and additive-role example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "c690b8d40e28d295b504d12407689c29aa5d27a0f50aad3bb4a9a00d6d329399",
+      "guide_sections": "4 / Sensitivity labels and exports",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "PL-300"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PL-300",
+        "title": "Microsoft Power BI Data Analyst",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+        "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+        "snapshot_path": "data\\objective-snapshots\\pl-300-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pl-300-official-status.json",
+        "previous_sha256": "4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee",
+        "current_sha256": "c1c6a25ab5e6285ba4cce3603f6e2624f482ff1d6f237d68e6fa79da93d9e8d9",
+        "previous_status_sha256": "08e05896f029d0c7a49fc7ba20810e8601888b235eb0d481c2ae68bf9e7b2383",
+        "current_status_sha256": "08e05896f029d0c7a49fc7ba20810e8601888b235eb0d481c2ae68bf9e7b2383",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of April 20, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": false,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 48,
+    "reachable": 44,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T01:27:08.935391+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T01:27:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "pl-300-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+      "checked_at": "2026-09-28T01:27:08.936005+00:00",
+      "health": {
+        "id": "pl-300-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+        "checked_at": "2026-09-28T01:27:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam PL-300: Microsoft Power BI Data Analyst",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "183f0860b192247673031aa8bb50f129c652d13ad656c716acbeeed9f2edef19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+      "sha256": "c3ea040347d8282f3d22f6c59b1b5c1df5a0254b021ef2f9c5289d0c02475fd3",
+      "text_characters": 8746
+    },
+    {
+      "id": "pl-300-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+      "checked_at": "2026-09-28T01:27:08.936557+00:00",
+      "health": {
+        "id": "pl-300-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+        "checked_at": "2026-09-28T01:27:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Power BI Data Analyst Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "c73b8e1180b369a5ed9b9a1753ac91297bfb225f7b450ffe3b17d11f6d1eaaca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+      "sha256": "a3d2d795247722c07ddaa9897319deb0fe6bdc3c3a16850aa6e478fc3a7e9214",
+      "text_characters": 4406
+    },
+    {
+      "id": "pl-300-path-intro",
+      "url": "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+      "checked_at": "2026-09-28T01:27:09.368068+00:00",
+      "health": {
+        "id": "pl-300-path-intro",
+        "url": "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+        "checked_at": "2026-09-28T01:27:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+        "content_type": "text/html",
+        "page_title": "Get started with Microsoft data analytics - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+        "duration_signals": [],
+        "signal_fingerprint": "16e361be4556a765d40ab11287a921de963ecff95b743bf7c2323b3cf75a6968",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+      "sha256": "b1e549298705af27e01ae3e9a21f01f514bfd0d4d369fd30b64c7193b39369e5",
+      "text_characters": 1513
+    },
+    {
+      "id": "pl-300-path-prepare",
+      "url": "https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/",
+      "checked_at": "2026-09-28T01:27:09.442265+00:00",
+      "health": {
+        "id": "pl-300-path-prepare",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/",
+        "checked_at": "2026-09-28T01:27:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/",
+        "content_type": "text/html",
+        "page_title": "Prepare data for analysis with Power BI - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/",
+        "duration_signals": [],
+        "signal_fingerprint": "f17bed7a29b41d65173fc579cf9f98a57f435d17e9fa362300d498b832035f7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-data-power-bi/",
+      "sha256": "384b1022d4c791673c4865923e107e20b215f01a4d24847424b02e31ce4ea2d2",
+      "text_characters": 1241
+    },
+    {
+      "id": "pl-300-path-model",
+      "url": "https://learn.microsoft.com/en-us/training/paths/model-power-bi/",
+      "checked_at": "2026-09-28T01:27:09.666548+00:00",
+      "health": {
+        "id": "pl-300-path-model",
+        "url": "https://learn.microsoft.com/en-us/training/paths/model-power-bi/",
+        "checked_at": "2026-09-28T01:27:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/model-data-power-bi/",
+        "content_type": "text/html",
+        "page_title": "Model Data with Power BI - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/model-data-power-bi/",
+        "duration_signals": [],
+        "signal_fingerprint": "bb6c7215ec296da90236a2be0f4760cfc122815e9340d17201b4ab6dc3e8bfb0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/model-data-power-bi/",
+      "sha256": "c3f1a40566fd53919e967fbe4bb9f899aef2e43d085273fe21bbc67f4dcee261",
+      "text_characters": 2371
+    },
+    {
+      "id": "pl-300-power-bi-calculation-options",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options",
+      "checked_at": "2026-09-28T01:27:09.718271+00:00",
+      "health": {
+        "id": "pl-300-power-bi-calculation-options",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options",
+        "checked_at": "2026-09-28T01:27:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options",
+        "content_type": "text/html",
+        "page_title": "Use Calculation Options in Power BI Desktop - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options",
+        "duration_signals": [],
+        "signal_fingerprint": "37965ccb82efa9fbf25c34d01a673a2c1573d0a1ad2a6f4e80df421b2ba8116a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculations-options",
+      "sha256": "02d6c1cc841becb7264f19a54070536a0c71fe613ab078004b3fc5fa4c4529ac",
+      "text_characters": 6177
+    },
+    {
+      "id": "pl-300-power-bi-visual-calculations",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+      "checked_at": "2026-09-28T01:27:09.741837+00:00",
+      "health": {
+        "id": "pl-300-power-bi-visual-calculations",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+        "checked_at": "2026-09-28T01:27:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+        "content_type": "text/html",
+        "page_title": "Visual Calculations Overview - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "72c9a4f1464346d288cd268ae5e09d255edf6b493526a11d28abeb5d08c02016",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+      "sha256": "2892483949dcfc409744feb100a11ae1e584d3416bdad34b25a9295f016cfe4d",
+      "text_characters": 17995
+    },
+    {
+      "id": "pl-300-power-bi-performance-analyzer",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/performance-analyzer",
+      "checked_at": "2026-09-28T01:27:10.004333+00:00",
+      "health": {
+        "id": "pl-300-power-bi-performance-analyzer",
+        "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/performance-analyzer",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/performance-analyzer",
+        "content_type": "text/html",
+        "page_title": "Use Performance Analyzer to Examine Report Performance - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/performance-analyzer",
+        "duration_signals": [],
+        "signal_fingerprint": "237be616ecf25ad18c321c05750b328b4f3fdde74164c4523a94717a762a3eb0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/performance-analyzer",
+      "sha256": "4e2e11b9034fb3102a4dd5e44fec16f1a5c49b93019ef648236da259d19a242d",
+      "text_characters": 7626
+    },
+    {
+      "id": "pl-300-power-bi-dax-query-view",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view",
+      "checked_at": "2026-09-28T01:27:10.083641+00:00",
+      "health": {
+        "id": "pl-300-power-bi-dax-query-view",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view",
+        "content_type": "text/html",
+        "page_title": "DAX Query View - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view",
+        "duration_signals": [],
+        "signal_fingerprint": "1e50c86c6e157bf9b00488fb4d10ad549e088ade1116a427abe9e55f1f53f87d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/dax-query-view",
+      "sha256": "e482cc2d30e7f8bb09103f0188e9f150c263b398eddfa71422790789bc050a68",
+      "text_characters": 18895
+    },
+    {
+      "id": "pl-300-path-reports",
+      "url": "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+      "checked_at": "2026-09-28T01:27:10.230269+00:00",
+      "health": {
+        "id": "pl-300-path-reports",
+        "url": "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+        "content_type": "text/html",
+        "page_title": "Design effective reports in Power BI - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+        "duration_signals": [],
+        "signal_fingerprint": "b70534d1d870ba0c406367f493dcda2a4088d55bf34317968c90c60b9d646308",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/power-bi-effective/",
+      "sha256": "7e08e3b2b7bd84872c296af8401618e4ef58e35078b30648aff9418f399a3671",
+      "text_characters": 1304
+    },
+    {
+      "id": "pl-300-path-manage",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/",
+      "checked_at": "2026-09-28T01:27:10.359719+00:00",
+      "health": {
+        "id": "pl-300-path-manage",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/",
+        "content_type": "text/html",
+        "page_title": "Manage and secure Power BI - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/",
+        "duration_signals": [],
+        "signal_fingerprint": "c097f07da1b484740a44f6e9537fed377145c8632bcea13eb282078f0ddd5d8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-power-bi/",
+      "sha256": "50015a2a4a9f9a6b71b5d4522f0488c42055d70cabb09458c0cf8daed9e92ee8",
+      "text_characters": 1991
+    },
+    {
+      "id": "pl-300-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/pl-300t00",
+      "checked_at": "2026-09-28T01:27:10.529245+00:00",
+      "health": {
+        "id": "pl-300-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/pl-300t00",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/pl-300t00",
+        "content_type": "text/html",
+        "page_title": "Course PL-300T00-A: Design and manage analytics solutions using Power BI - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/pl-300t00",
+        "duration_signals": [],
+        "signal_fingerprint": "475934def00a0bfe95a570afe3605a2f6841f681729b632cedbae35c829e6c45",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/pl-300t00",
+      "sha256": "504abc79aa207d893a377bb4c4c986cc836660989a2e6e85edd8565eb973ec0c",
+      "text_characters": 1625
+    },
+    {
+      "id": "pl-300-official-labs",
+      "url": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+      "checked_at": "2026-09-28T01:27:10.569638+00:00",
+      "health": {
+        "id": "pl-300-official-labs",
+        "url": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+        "canonical_url": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+        "duration_signals": [],
+        "signal_fingerprint": "9060aea7fda2e87b3a55fff3c37350ba771d0451efddba429b2d126d6ff469e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+      "sha256": "ba602a174b1c5861e49f2ff3bfe56e8da7be7340c97cff9b661f6091042b95a4",
+      "text_characters": 3888
+    },
+    {
+      "id": "pl-300-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/practice/assessment?assessment-type=practice&assessmentId=48&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T01:27:10.745016+00:00",
+      "health": {
+        "id": "pl-300-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/practice/assessment?assessment-type=practice&assessmentId=48&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/practice/assessment?assessment-type=practice&assessmentId=48&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "1c1a0af503842b21ac6edfcb23f9e994bc34ac47d4b0202d3e8fee875fed7fb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/practice/assessment?assessment-type=practice&assessmentId=48&practice-assessment-type=certification",
+      "sha256": "d17250326a7d6c816687e476ae88b2c330485f2bf81e8a0bda3f6d71a7ac128a",
+      "text_characters": 0
+    },
+    {
+      "id": "pl-300-reactor-orientation",
+      "url": "https://www.youtube.com/watch?v=tDwNtxAB49k",
+      "checked_at": "2026-09-28T01:27:10.861772+00:00",
+      "health": {
+        "id": "pl-300-reactor-orientation",
+        "url": "https://www.youtube.com/watch?v=tDwNtxAB49k",
+        "checked_at": "2026-09-28T01:27:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=tDwNtxAB49k",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Get Certified: (PL-300) Power BI Data Analyst (US/EMEA)",
+        "canonical_url": "https://www.youtube.com/watch?v=tDwNtxAB49k",
+        "duration_signals": [],
+        "signal_fingerprint": "73ed56a5d59b539359e42b88901217d148bf6a17d78f72a71c76c449225d1b53",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=tDwNtxAB49k",
+      "sha256": "9981d400feff96f893241369680e3eba96d2ecb8283bb48d27f4a61d62ae2346",
+      "text_characters": 218
+    },
+    {
+      "id": "pl-300-pluralsight",
+      "url": "https://www.pluralsight.com/paths/microsoft-certified-microsoft-power-bi-data-analyst-pl-300",
+      "checked_at": "2026-09-28T01:27:11.120953+00:00",
+      "health": {
+        "id": "pl-300-pluralsight",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-microsoft-power-bi-data-analyst-pl-300",
+        "checked_at": "2026-09-28T01:27:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-certified-microsoft-power-bi-data-analyst-pl-300",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Certified: Microsoft Power BI Data Analyst (PL-300)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-certified-microsoft-power-bi-data-analyst-pl-300",
+        "duration_signals": [
+          "12 Hours"
+        ],
+        "signal_fingerprint": "fffeed8caa4450055e42e3ce3763d7ac72d98e45ec77cc4d4b5e1b7c2e04ee02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-certified-microsoft-power-bi-data-analyst-pl-300",
+      "sha256": "4282adc84318df21f74ddeeeea5d46bb36b07ae3c3b5aff7d007eecc20740c7d",
+      "text_characters": 4259
+    },
+    {
+      "id": "pl-300-oreilly-study-guide",
+      "url": "https://www.oreilly.com/library/view/microsoft-power-bi/9781098175276/",
+      "checked_at": "2026-09-28T01:27:11.716029+00:00",
+      "health": {
+        "id": "pl-300-oreilly-study-guide",
+        "url": "https://www.oreilly.com/library/view/microsoft-power-bi/9781098175276/",
+        "checked_at": "2026-09-28T01:27:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-power-bi/9781098175276/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pl-300-udemy-schuler",
+      "url": "https://www.udemy.com/course/pl-300-da-100-microsoft-power-bi-data-analyst-exam-prep/",
+      "checked_at": "2026-09-28T01:27:11.858417+00:00",
+      "health": {
+        "id": "pl-300-udemy-schuler",
+        "url": "https://www.udemy.com/course/pl-300-da-100-microsoft-power-bi-data-analyst-exam-prep/",
+        "checked_at": "2026-09-28T01:27:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/pl-300-da-100-microsoft-power-bi-data-analyst-exam-prep/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pl-300-coursera-microsoft",
+      "url": "https://www.coursera.org/learn/microsoft-pl-300-exam-preparation-and-practice/",
+      "checked_at": "2026-09-28T01:27:11.893181+00:00",
+      "health": {
+        "id": "pl-300-coursera-microsoft",
+        "url": "https://www.coursera.org/learn/microsoft-pl-300-exam-preparation-and-practice/",
+        "checked_at": "2026-09-28T01:27:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/learn/microsoft-pl-300-exam-preparation-and-practice/",
+        "content_type": "text/html",
+        "page_title": "Microsoft PL-300 Exam Preparation and Practice",
+        "canonical_url": "https://www.coursera.org/learn/microsoft-pl-300-exam-preparation-and-practice",
+        "duration_signals": [
+          "10 hours",
+          "10 minutes",
+          "11 hours",
+          "15 minutes",
+          "150 minutes",
+          "170 minutes",
+          "18 minutes",
+          "20 minutes",
+          "21 minutes",
+          "210 minutes",
+          "24 minutes",
+          "3 minutes",
+          "30 minutes",
+          "36 minutes",
+          "360 minutes",
+          "395 minutes",
+          "4 hours",
+          "4 minutes",
+          "45 minutes",
+          "5 minutes",
+          "525 minutes",
+          "58 minutes",
+          "6 hours",
+          "6 minutes",
+          "60 minutes",
+          "61 minutes",
+          "66 minutes",
+          "7 minutes",
+          "71 minutes",
+          "8 hours"
+        ],
+        "signal_fingerprint": "e1233068a6d7e00691c1e90b2fcae4423cf71eaeabd9d91911720609e1ac87f7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/learn/microsoft-pl-300-exam-preparation-and-practice/",
+      "sha256": "9de2555c862d35023c92950b4c70e5a8f56e45d488500705d69f875e43e0fc78",
+      "text_characters": 19826
+    },
+    {
+      "id": "pl-300-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-power-bi-certification-pl-300/",
+      "checked_at": "2026-09-28T01:27:11.947242+00:00",
+      "health": {
+        "id": "pl-300-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-power-bi-certification-pl-300/",
+        "checked_at": "2026-09-28T01:27:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-power-bi-certification-pl-300/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300) Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-power-bi-certification-pl-300/",
+        "duration_signals": [],
+        "signal_fingerprint": "789f5a32fc4252f50a5a2d44bec6652abbca2e65a3ef1a56747ea2166ca55b56",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-power-bi-certification-pl-300/",
+      "sha256": "104f051bdfcf37b29e2261e7643b182cd0cc0d68828a8b629d8484b9d674f28b",
+      "text_characters": 68
+    },
+    {
+      "id": "pl-300-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-pl-300-microsoft-power-bi-data-analyst.html",
+      "checked_at": "2026-09-28T01:27:12.328530+00:00",
+      "health": {
+        "id": "pl-300-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-pl-300-microsoft-power-bi-data-analyst.html",
+        "checked_at": "2026-09-28T01:27:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-pl-300-microsoft-power-bi-data-analyst.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test PL-300: Microsoft Power BI Data Analyst",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-pl-300-microsoft-power-bi-data-analyst.html",
+        "duration_signals": [
+          "50 hours"
+        ],
+        "signal_fingerprint": "bbe4805240b080c4660ef669d015015c546eba90a27d26840270d8c810f973b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-pl-300-microsoft-power-bi-data-analyst.html",
+      "sha256": "2124c5c0b76cb294c536e14af1312e7ff38b9fb580014e5cffd2d01240362240",
+      "text_characters": 14155
+    },
+    {
+      "id": "pl-300-udemy-practice-2026",
+      "url": "https://www.udemy.com/course/pl300-tests/",
+      "checked_at": "2026-09-28T01:27:13.282591+00:00",
+      "health": {
+        "id": "pl-300-udemy-practice-2026",
+        "url": "https://www.udemy.com/course/pl300-tests/",
+        "checked_at": "2026-09-28T01:27:13+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/pl300-tests/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pl-300-youtube-power-bi",
+      "url": "https://www.youtube.com/@MicrosoftPowerBI",
+      "checked_at": "2026-09-28T01:27:13.369632+00:00",
+      "health": {
+        "id": "pl-300-youtube-power-bi",
+        "url": "https://www.youtube.com/@MicrosoftPowerBI",
+        "checked_at": "2026-09-28T01:27:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftPowerBI",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Power BI",
+        "canonical_url": "https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg",
+        "duration_signals": [],
+        "signal_fingerprint": "9f930ae8885a6ef5b8766ea270a9526ff9d7c92bf306a1e9acdf1c15e13138a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftPowerBI",
+      "sha256": "e76db4c3e3becb9ba60920c8c39b6e135c3816368f6076229c30fbe8adb99cbe",
+      "text_characters": 181
+    },
+    {
+      "id": "pl-300-youtube-guy-in-a-cube",
+      "url": "https://www.youtube.com/@GuyInACube",
+      "checked_at": "2026-09-28T01:27:13.600207+00:00",
+      "health": {
+        "id": "pl-300-youtube-guy-in-a-cube",
+        "url": "https://www.youtube.com/@GuyInACube",
+        "checked_at": "2026-09-28T01:27:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@GuyInACube",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Guy in a Cube",
+        "canonical_url": "https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w",
+        "duration_signals": [],
+        "signal_fingerprint": "6e8199f4f7b9bb6a4712ddc34e75d47128def194bc6eabab4265b55d40c59614",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@GuyInACube",
+      "sha256": "a8521bdf5df8e594c910d126d250d25a04f0b79ac8f8642be258fbdf3bddd203",
+      "text_characters": 176
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T01:27:13.738085+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T01:27:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "61fc79bcd738e7950404bae2d62bfb74c21d8034a5a1686e1afc0c971d0087f8",
+      "text_characters": 8483
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "checked_at": "2026-09-28T01:27:14.558881+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "checked_at": "2026-09-28T01:27:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI at Work Roadmap | Microsoft 365",
+        "canonical_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "duration_signals": [],
+        "signal_fingerprint": "8585c764e3a35de4ca8757c6dcdb3de428eb5f5e6c422a9c8d9eb9f0537215cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "sha256": "8389434273d190fc21be9550ddb37fc20dbb560d9903b04d39249732e6800012",
+      "text_characters": 30784
+    },
+    {
+      "id": "pl300-calculate",
+      "url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+      "checked_at": "2026-09-28T01:30:17.842746+00:00",
+      "health": {
+        "id": "pl300-calculate",
+        "url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+        "checked_at": "2026-09-28T01:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+        "content_type": "text/html",
+        "page_title": "CALCULATE function (DAX) - DAX",
+        "canonical_url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+        "duration_signals": [],
+        "signal_fingerprint": "64d9f10eefd3e156949994f9bc865098f8318f8f0a28433d8441c3604de04558",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+      "sha256": "1040f9bf7b048fd323328db79f82504dd20977e3788327ea5c1067545ab70bda",
+      "text_characters": 6946
+    },
+    {
+      "id": "pl300-distinctcount",
+      "url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+      "checked_at": "2026-09-28T01:30:17.844147+00:00",
+      "health": {
+        "id": "pl300-distinctcount",
+        "url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+        "checked_at": "2026-09-28T01:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+        "content_type": "text/html",
+        "page_title": "DISTINCTCOUNT function (DAX) - DAX",
+        "canonical_url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+        "duration_signals": [],
+        "signal_fingerprint": "3ec955029194c57a9dcec607a2d8cbaa5354cdb6373c0bd418b2c561c15c7514",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+      "sha256": "12a851f922aeab094c63250963d3c69fcbd7950505daec6e485e278ef7a36fa7",
+      "text_characters": 3213
+    },
+    {
+      "id": "pl300-rls",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls",
+      "checked_at": "2026-09-28T01:29:15.758954+00:00",
+      "health": {
+        "id": "pl300-rls",
+        "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls",
+        "checked_at": "2026-09-28T01:29:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/security/service-admin-row-level-security",
+        "content_type": "text/html",
+        "page_title": "Row-level security (RLS) with Power BI - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/security/service-admin-row-level-security",
+        "duration_signals": [],
+        "signal_fingerprint": "b2d2c941e12e742a69d6c7e5ce7e19f0e0a3a0b6705720d7fc9e928c971c052e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/security/service-admin-row-level-security",
+      "sha256": "bedc40700f2cf36734d6d4fba92cd0198fdf38d22ed446997a9902db78b95cd5",
+      "text_characters": 26956
+    },
+    {
+      "id": "pl300-page-refresh",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh",
+      "checked_at": "2026-09-28T01:29:16.074333+00:00",
+      "health": {
+        "id": "pl300-page-refresh",
+        "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh",
+        "content_type": "text/html",
+        "page_title": "Automatic Page Refresh in Power BI Desktop - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh",
+        "duration_signals": [
+          "20 minutes",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "272f1d4b1f8f802a3066100a03f43ed3b02ebae04e5de1840457c139771d5106",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-automatic-page-refresh",
+      "sha256": "bc02e75218711b965b812e573970de74fc302f21a24379e1cd186903e6da855e",
+      "text_characters": 25286
+    },
+    {
+      "id": "pl300-refresh",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+      "checked_at": "2026-09-28T01:29:16.136873+00:00",
+      "health": {
+        "id": "pl300-refresh",
+        "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+        "content_type": "text/html",
+        "page_title": "Configure scheduled refresh - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "8901cdb54308c643aa135d3839e279a2a4722ffa56471fad8711795c75266677",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+      "sha256": "81499301727a9751bcd0eb96ea1ed4ee36cc5b27e71a402d6f84fc7cc8e556ab",
+      "text_characters": 9204
+    },
+    {
+      "id": "pl300-alerts",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts",
+      "checked_at": "2026-09-28T01:29:16.353204+00:00",
+      "health": {
+        "id": "pl300-alerts",
+        "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts",
+        "content_type": "text/html",
+        "page_title": "Set data alerts in the Power BI service - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts",
+        "duration_signals": [],
+        "signal_fingerprint": "83808c9116550b4dee55ef577b670e1fcc24867beae86734e6aaeda4a8f84b7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/service-set-data-alerts",
+      "sha256": "c4f986357460d18b8b7b5612b605b65081fc50efe8669b50e1a7b4ca53b1a2f9",
+      "text_characters": 5713
+    },
+    {
+      "id": "pl300-labels",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-sensitivity-label-overview",
+      "checked_at": "2026-09-28T01:29:16.412307+00:00",
+      "health": {
+        "id": "pl300-labels",
+        "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-sensitivity-label-overview",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-security-sensitivity-label-overview",
+        "content_type": "text/html",
+        "page_title": "Sensitivity Labels in Power BI - Microsoft Purview Information Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-security-sensitivity-label-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "250179a86906ca9d74d8d2dbec2326b28324d273976976007244bb3ffa4bcea4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/service-security-sensitivity-label-overview",
+      "sha256": "c66f1c2f6f5215ef76c92154c6cebdbbee6409fa7177f9495154e0ba216f346b",
+      "text_characters": 26712
+    },
+    {
+      "id": "pl300-copilot",
+      "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction",
+      "checked_at": "2026-09-28T01:29:16.501246+00:00",
+      "health": {
+        "id": "pl300-copilot",
+        "url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction",
+        "content_type": "text/html",
+        "page_title": "Copilot for Power BI overview - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "1e36baee17da0b2ec7c59ce0517a59e7e53adbb3e0647d8b5096d7d5b726c4ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction",
+      "sha256": "b108a67de9c748648630d81a1ea6ac483350ffe5cd7cc66db7679df5b5c7e7e8",
+      "text_characters": 15749
+    },
+    {
+      "id": "pl300-calculated-columns",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+      "checked_at": "2026-09-28T01:29:16.636640+00:00",
+      "health": {
+        "id": "pl300-calculated-columns",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+        "content_type": "text/html",
+        "page_title": "Using calculated columns in Power BI Desktop - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+        "duration_signals": [],
+        "signal_fingerprint": "b42e36d86d490dd31434d7738ef10d74b024b5074d5f9b19f8afb2791a41fd32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+      "sha256": "8d8dbd0e91d68a177c372fbbcd97b04a23574c08f57cde24cd750b38fd7a5f37",
+      "text_characters": 6010
+    },
+    {
+      "id": "pl300-table-distinct",
+      "url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+      "checked_at": "2026-09-28T01:29:16.811684+00:00",
+      "health": {
+        "id": "pl300-table-distinct",
+        "url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+        "content_type": "text/html",
+        "page_title": "Table.Distinct - PowerQuery M",
+        "canonical_url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+        "duration_signals": [],
+        "signal_fingerprint": "14708d6873ec4bbf8c4a6d619bf4f46d0b381771c75ab8a813bbd3ad48bee280",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+      "sha256": "5daa641723338f1ec8106efb52539cdaa60ad9c6575f823758d7cfc2c842dbc5",
+      "text_characters": 1974
+    },
+    {
+      "id": "pl300-buffer",
+      "url": "https://learn.microsoft.com/en-us/powerquery-m/table-buffer",
+      "checked_at": "2026-09-28T01:29:16.958011+00:00",
+      "health": {
+        "id": "pl300-buffer",
+        "url": "https://learn.microsoft.com/en-us/powerquery-m/table-buffer",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/powerquery-m/table-buffer",
+        "content_type": "text/html",
+        "page_title": "Table.Buffer - PowerQuery M",
+        "canonical_url": "https://learn.microsoft.com/en-us/powerquery-m/table-buffer",
+        "duration_signals": [],
+        "signal_fingerprint": "a89f16b91ac2e1004a12e6301283161bd31a5dd68c7bc89c42c6050adce7d23b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powerquery-m/table-buffer",
+      "sha256": "e93ae5bdd968c000bc85d3b28b1207ac81371a9a551b6f77a27041899945576b",
+      "text_characters": 1838
+    },
+    {
+      "id": "pl300-qa-limits",
+      "url": "https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations",
+      "checked_at": "2026-09-28T01:29:17.192731+00:00",
+      "health": {
+        "id": "pl300-qa-limits",
+        "url": "https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations",
+        "checked_at": "2026-09-28T01:29:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations",
+        "content_type": "text/html",
+        "page_title": "Limitations of Power BI Q&A - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations",
+        "duration_signals": [],
+        "signal_fingerprint": "e3f5bd3525e27751b01dbb2c448d08afd41b71d3c7dd754bf68ce3a10b98808e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations",
+      "sha256": "461a82f5ab1cd9ce17a20674caeff4c4d04095f7178f33852e9a919271c0d96f",
+      "text_characters": 4131
+    },
+    {
+      "id": "pl300-qa-visual",
+      "url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a",
+      "checked_at": "2026-09-28T01:29:17.248936+00:00",
+      "health": {
+        "id": "pl300-qa-visual",
+        "url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a",
+        "checked_at": "2026-09-28T01:29:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a",
+        "content_type": "text/html",
+        "page_title": "Create a Q&A Visual in a Report - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a",
+        "duration_signals": [],
+        "signal_fingerprint": "28b898232a33396cc008eab1b154bc405cd0d3fa1076fc4ad97c1dba9ba832c0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-q-and-a",
+      "sha256": "868482308612d6a299cf307e8388832c8f0a2c1f807f17a005f2fd4ed128a386",
+      "text_characters": 12081
+    },
+    {
+      "id": "pl300-desktop-updates",
+      "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+      "checked_at": "2026-09-28T01:30:17.844800+00:00",
+      "health": {
+        "id": "pl300-desktop-updates",
+        "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+        "checked_at": "2026-09-28T01:30:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+        "content_type": "text/html",
+        "page_title": "See What's New in the August 2026 Power BI Update - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "fbf2e1530ef634328bf150d062d0b3db1ddab528bc99c5101b1fb1ebf3cdb155",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+      "sha256": "a081e6754415efa2cda47e053aa6c19cc65512c0331349171270f6d6cd654463",
+      "text_characters": 10813
+    },
+    {
+      "id": "dp600-direct-lake-how",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+      "checked_at": "2026-09-28T01:29:17.527914+00:00",
+      "health": {
+        "id": "dp600-direct-lake-how",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+        "checked_at": "2026-09-28T01:29:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+        "content_type": "text/html",
+        "page_title": "How Direct Lake works - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+        "duration_signals": [],
+        "signal_fingerprint": "1f304d0f8f16f34f23a8ef74f09f26813f1bdee84c6e13108b854625d94e4287",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+      "sha256": "fcf1863653551a01015d2266f5cbcd0f981778f6f706c17bfba34de0427489a5",
+      "text_characters": 14083
+    },
+    {
+      "id": "dp600-active-relationships",
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+      "checked_at": "2026-09-28T01:29:17.583578+00:00",
+      "health": {
+        "id": "dp600-active-relationships",
+        "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+        "checked_at": "2026-09-28T01:29:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+        "content_type": "text/html",
+        "page_title": "Active vs inactive relationship guidance - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+        "duration_signals": [],
+        "signal_fingerprint": "38145a6db4fc5c2fa7668773d98cd070d2b33a93675e7588ac52fe97c492c960",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+      "sha256": "46262e65e6cf82316fb6f943d935732efab58f79907330885e47926b1f811ee4",
+      "text_characters": 9743
+    },
+    {
+      "id": "dp600-adbc",
+      "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "checked_at": "2026-09-28T01:29:17.860016+00:00",
+      "health": {
+        "id": "dp600-adbc",
+        "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "checked_at": "2026-09-28T01:29:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "content_type": "text/html",
+        "page_title": "Transition from ODBC to ADBC drivers in Power BI and Microsoft Fabric - Power Query",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "a8c3215b4045953a426649bdcdb310921a7ceb752da598bd01abe75e1e6439fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "sha256": "024749d89d4c64e79b70449a3142965fdea0c36931f31fb5472d2f31491959f6",
+      "text_characters": 14877
+    },
+    {
+      "id": "pl300-visual-perf-blog",
+      "url": "https://www.sqlbi.com/articles/analyzing-the-performance-impact-of-visual-calculations/",
+      "checked_at": "2026-09-28T01:29:17.860351+00:00",
+      "health": {
+        "id": "pl300-visual-perf-blog",
+        "url": "https://www.sqlbi.com/articles/analyzing-the-performance-impact-of-visual-calculations/",
+        "checked_at": "2026-09-28T01:29:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.sqlbi.com/articles/analyzing-the-performance-impact-of-visual-calculations/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Analyzing the performance impact of visual calculations - SQLBI",
+        "canonical_url": "https://www.sqlbi.com/articles/analyzing-the-performance-impact-of-visual-calculations/",
+        "duration_signals": [],
+        "signal_fingerprint": "7caa4f5131fde61b46ce593be22b5c7f8a0ba2e5b0c0de88d971fdcc68c1ab9e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.sqlbi.com/articles/analyzing-the-performance-impact-of-visual-calculations/",
+      "sha256": "dd1059adc45e8e144cdc2831c275f9548577eb3578eddb3fd83d7fa4e7a0de05",
+      "text_characters": 10925
+    },
+    {
+      "id": "pl300-qa-update-blog",
+      "url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841",
+      "checked_at": "2026-09-28T01:30:18.223976+00:00",
+      "health": {
+        "id": "pl300-qa-update-blog",
+        "url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841",
+        "checked_at": "2026-09-28T01:30:18+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pl300-copilot-summary",
+      "url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+      "checked_at": "2026-09-28T01:30:18.254327+00:00",
+      "health": {
+        "id": "pl300-copilot-summary",
+        "url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+        "checked_at": "2026-09-28T01:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+        "content_type": "text/html",
+        "page_title": "Summarize a Report With Copilot - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "05cfefadedf77ea2e5e124856315b5745cc91bec07965e7c653dee3179db08f6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+      "sha256": "731a91c5ff9612c599a6666fdd5c25c9d97c0cab9cbb6481ed3bfb58b8743f47",
+      "text_characters": 21981
+    },
+    {
+      "id": "pl300-refresh-data",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data",
+      "checked_at": "2026-09-28T01:30:18.310001+00:00",
+      "health": {
+        "id": "pl300-refresh-data",
+        "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data",
+        "checked_at": "2026-09-28T01:30:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data",
+        "content_type": "text/html",
+        "page_title": "Data refresh in Power BI - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "ff2bd56fd03b91eb2c2192e60828c8c2aadb6d1429d07459c7703fdf77cf5d7e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-data",
+      "sha256": "c0bc341696aa7972b59f6a11c2b37cd74b80797452df8a557d5d322da6dcf606",
+      "text_characters": 49708
+    }
+  ],
+  "added_source_ids": [
+    "pl300-calculate",
+    "pl300-distinctcount",
+    "pl300-rls",
+    "pl300-page-refresh",
+    "pl300-refresh",
+    "pl300-alerts",
+    "pl300-labels",
+    "pl300-copilot",
+    "pl300-calculated-columns",
+    "pl300-table-distinct",
+    "pl300-buffer",
+    "pl300-qa-limits",
+    "pl300-qa-visual",
+    "pl300-desktop-updates",
+    "pl300-visual-perf-blog",
+    "pl300-qa-update-blog",
+    "pl300-copilot-summary",
+    "pl300-refresh-data"
+  ],
+  "findings": [
+    {
+      "id": "pl300-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Calculated columns are not uniformly materialized",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Expression Context and storage mode change evaluation; Direct Lake on OneLake columns are unmaterialized preview and cannot be relationship keys.",
+      "recommendation": "Qualify the calculation table and DP-600 answer; add mode/context checks.",
+      "disposition": "applied",
+      "source_id": "pl300-calculated-columns",
+      "resolution": "Qualify the calculation table and DP-600 answer; add mode/context checks."
+    },
+    {
+      "id": "pl300-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A duplicate survivor needs a deterministic contract",
+      "url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Folding and optimization can change which row Table.Distinct retains; buffering has memory/folding trade-offs.",
+      "recommendation": "Explain keys, order, tie-breakers and source-side versus buffered patterns.",
+      "disposition": "applied",
+      "source_id": "pl300-table-distinct",
+      "resolution": "Explain keys, order, tie-breakers and source-side versus buffered patterns."
+    },
+    {
+      "id": "pl300-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Filter replacement differs from intersection",
+      "url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CALCULATE overwrites ordinary same-column filters unless KEEPFILTERS preserves their intersection.",
+      "recommendation": "Add original Hardware/Software worked example and lab predictions.",
+      "disposition": "applied",
+      "source_id": "pl300-calculate",
+      "resolution": "Add original Hardware/Software worked example and lab predictions."
+    },
+    {
+      "id": "pl300-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Distinct totals are not row sums",
+      "url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Overlapping customers appear once in the total context; BLANK is a counted distinct value.",
+      "recommendation": "Add set-based reconciliation example instead of automatic total replacement.",
+      "disposition": "applied",
+      "source_id": "pl300-distinctcount",
+      "resolution": "Add set-based reconciliation example instead of automatic total replacement."
+    },
+    {
+      "id": "pl300-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Visual-local results have delivery and semantic limits",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Previous axis value need not be previous calendar year; current docs exclude visual result exports and value-change alert triggering.",
+      "recommendation": "Add missing-year example and route checks.",
+      "disposition": "applied",
+      "source_id": "pl-300-power-bi-visual-calculations",
+      "resolution": "Add missing-year example and route checks."
+    },
+    {
+      "id": "pl300-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Roles add permissions and author roles change enforcement",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Multiple roles are additive; Viewer+Build retains RLS while Contributor bypasses consumer RLS. Test-as-role has identity/SSO/Copilot limits.",
+      "recommendation": "Add role-union example and actual-consumer tests.",
+      "disposition": "applied",
+      "source_id": "pl300-rls",
+      "resolution": "Add role-union example and actual-consumer tests."
+    },
+    {
+      "id": "pl300-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "CSV is outside supported label-protected export routes",
+      "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-sensitivity-label-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current docs exclude CSV and unsupported paths from label/protection propagation.",
+      "recommendation": "Specify supported file routes and exported-file/recipient testing.",
+      "disposition": "applied",
+      "source_id": "pl300-labels",
+      "resolution": "Specify supported file routes and exported-file/recipient testing."
+    },
+    {
+      "id": "pl300-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A failed refresh schedule can disable itself",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Four failures or an unrecoverable configuration error can deactivate schedules; inactivity also pauses them.",
+      "recommendation": "Add repair/re-enable and distinct refresh-type evidence.",
+      "disposition": "applied",
+      "source_id": "pl300-refresh",
+      "resolution": "Add repair/re-enable and distinct refresh-type evidence."
+    },
+    {
+      "id": "pl300-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Display-only bookmarks are not security boundaries",
+      "url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Copilot can summarize eligible hidden bookmarked visuals while retaining RLS/OLS.",
+      "recommendation": "Add bookmark prerequisites, citation/filter checks and hidden-field correction.",
+      "disposition": "applied",
+      "source_id": "pl300-copilot-summary",
+      "resolution": "Add bookmark prerequisites, citation/filter checks and hidden-field correction."
+    },
+    {
+      "id": "pl300-deep-10",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Q&A retirement has been extended",
+      "url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September Microsoft announcement explicitly moves December 2026 retirement to February 2027, consistent with updated limitations docs.",
+      "recommendation": "Record extension and old-page discrepancy; add February research checkpoint.",
+      "disposition": "applied",
+      "source_id": "pl300-qa-update-blog",
+      "resolution": "Record extension and old-page discrepancy; add February research checkpoint."
+    },
+    {
+      "id": "pl300-deep-11",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Older Desktop file picker has an October transition",
+      "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "August release notes announce loss of OneDrive/SharePoint save/share for March 2026 and earlier Desktop from October.",
+      "recommendation": "Add update/test guidance and dated research checkpoint without claiming local PBIX retirement.",
+      "disposition": "applied",
+      "source_id": "pl300-desktop-updates",
+      "resolution": "Add update/test guidance and dated research checkpoint without claiming local PBIX retirement."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pl300-visual-perf-blog",
+      "decision": "accepted-bounded",
+      "author": "Marco Russo and Alberto Ferrari, SQLBI",
+      "published_on": "2026-07-27",
+      "notes": "Public original experiment read. Add comparison exercise; no copied benchmark promises, downloads or screenshots tested. No recalled-exam content observed."
+    },
+    {
+      "source_id": "pl300-qa-update-blog",
+      "decision": "accepted-bounded",
+      "author": "mohammadali, Microsoft Power BI Team",
+      "notes": "September 2026 public article reviewed via web search; direct fetch blocked and exact day not independently verified. Explicit extension resolves the December-versus-February notices; capacity and embedded/sovereign limits retained."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Eight synthetic filter-set, distinct-total, previous-visible-year, RLS-union and course-duration assertions"
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "No Power BI Desktop/service tenant, DAX/M engine, gateway, Copilot or export/alert lab executed.",
+    "Paid OReilly and two Udemy pages block retrieval; Microsoft retirement blog also blocks direct fetch, but public article text reviewed through web search.",
+    "Public Learn path module listings did not independently reverify the historical 19h52 duration total; provider metadata and lab repository README are not course/lab completion.",
+    "SQLBI public article reviewed; downloadable model, paid whitepaper, screenshots and performance results not independently executed.",
+    "April objective snapshot updated only after full comparison of editorial changes, with prior text and hashes retained in evidence.",
+    "Automatic-page-refresh setup text remains narrower than its mode matrix; verify actual mode/connection/capacity instead of inferring universal support.",
+    "Same-context AI research and repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "filter_total_role_and_duration_assertions": 8
+  },
+  "objective_baseline_acceptance": {
+    "previous_sha256": "4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee",
+    "accepted_sha256": "c1c6a25ab5e6285ba4cce3603f6e2624f482ff1d6f237d68e6fa79da93d9e8d9",
+    "accepted_on": "2026-09-27",
+    "basis": "Whole accepted/current text compared. All 78 objective bullets and four weighted domains remain present; April 20 effective date unchanged. Audience profile reformatted into bullets and line wrapping changed. No future or substantive objective revision accepted.",
+    "previous_text": "Skills measured as of April 20, 2026\nAudience profile\nAs a candidate for this exam, you should deliver actionable insights by working\nwith available data and applying domain expertise. You should provide meaningful\nbusiness value through easy-to-comprehend data visualizations and enable others\nto perform self-service analytics.\nAs a Power BI data analyst, you work closely with business stakeholders to\nidentify business requirements. You collaborate with analytics engineers and\ndata engineers to identify and acquire data. You use Power BI to prepare the\ndata, model the data, visualize and analyze data, and manage and secure Power BI.\nYou should be proficient at using Power Query and Data Analysis Expressions\n(DAX).\n\nSkills at a glance\nPrepare the data (25–30%)\nModel the data (25–30%)\nVisualize and analyze the data (25–30%)\nManage and secure Power BI (15–20%)\n\nPrepare the data (25–30%)\nGet or connect to data\nIdentify and connect to data sources or a shared semantic model\nChange data source settings, including credentials and privacy levels\nChoose between DirectLake, DirectQuery, and Import\nCreate and modify parameters\n\nProfile and clean the data\nEvaluate data, including data statistics and column properties\nResolve inconsistencies, unexpected or null values, and data quality issues\nResolve data import errors\n\nTransform and load the data\nSelect appropriate column data types\nCreate and transform columns\nGroup and aggregate rows\nPivot, unpivot, and transpose data\nConvert semi-structured data to a table\nCreate fact tables and dimension tables\nIdentify when to use reference or duplicate queries and the resulting impact\nMerge and append queries\nIdentify and create appropriate keys for relationships\nConfigure data loading for queries\n\nModel the data (25–30%)\nDesign and implement a data model\nConfigure table and column properties\nImplement role-playing dimensions\nDefine a relationship's cardinality and cross-filter direction\nCreate a common date table\nIdentify use cases for calculated columns and calculated tables\n\nCreate model calculations by using DAX\nCreate single aggregation measures\nUse the CALCULATE function\nImplement time intelligence measures\nUse basic statistical functions\nCreate semi-additive measures\nCreate a measure by using quick measures\nCreate calculated tables or columns\nCreate calculation groups\n\nOptimize model performance\nImprove performance by identifying and removing unnecessary rows and columns\nIdentify poorly performing measures, relationships, and visuals by using\nPerformance Analyzer and DAX query view\nImprove performance by reducing granularity\n\nVisualize and analyze the data (25–30%)\nCreate reports\nSelect an appropriate visual\nFormat and configure visuals\nCreate a narrative visual with Copilot\nApply and customize a theme\nApply conditional formatting\nApply slicing and filtering\nUse Copilot to create a new report page\nUse Copilot to suggest content for a new report page\nConfigure the report page\nChoose when to use a paginated report\nCreate visual calculations by using DAX\n\nEnhance reports for usability and storytelling\nConfigure bookmarks\nCreate custom tooltips\nEdit and configure interactions between visuals\nConfigure navigation for a report\nApply sorting to visuals\nConfigure sync slicers\nGroup and layer visuals by using the Selection pane\nConfigure drillthrough navigation, including pages, filters, and buttons\nConfigure export settings\nDesign reports for mobile devices\nEnable personalization in a report, including personalized visuals\nDesign and configure Power BI reports for accessibility\nConfigure automatic page refresh\n\nIdentify patterns and trends\nUse the Analyze feature in Power BI\nUse grouping, binning, and clustering\nUse AI visuals\nUse reference lines, error bars, and forecasting\nDetect outliers and anomalies\nUse Copilot to summarize the underlying semantic model\n\nManage and secure Power BI (15–20%)\nCreate and manage workspaces and assets\nCreate and configure a workspace\nConfigure and update an app\nPublish, import, or update items in a workspace\nCreate dashboards\nChoose a distribution method\nConfigure subscriptions and data alerts\nPromote or certify Power BI content\nIdentify when a gateway is required\nConfigure a semantic model scheduled refresh\n\nSecure and govern Power BI items\nAssign workspace roles\nConfigure item-level access\nConfigure access to semantic models\nImplement row-level security roles\nConfigure row-level security group membership\nApply sensitivity labels\n",
+    "archived_snapshot_path": "data/objective-snapshots/archive/pl-300-4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee.txt",
+    "historical_audit_paths_updated": [
+      "microsoft-platform-2026-09-04",
+      "risk-ranked-aws-microsoft-github-redhat-c-2026-09-06-04",
+      "semantic-refresh-2026-09-07-40"
+    ],
+    "history_policy": "Only source paths in older audit results point to the byte-identical archive. Their hashes, dates, checks, findings and verdicts are unchanged. The current September 27 guide review references the accepted current snapshot.",
+    "preserved_source_review_id": "pl-300-2026-09-01-source-validation",
+    "current_source_review_id": "pl-300-2026-09-27-source-validation",
+    "historical_validation": "Use latest retained source review on or before audit date, with exact file hashes checked. Preserve original source review link evidence; legacy fallback requires current snapshot identity. Seven new regression tests cover history, supersession, blocked outcomes, tampered bytes, and link-count consistency."
+  }
+}

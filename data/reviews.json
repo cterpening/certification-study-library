@@ -2025,7 +2025,7 @@
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "Whole guide read and all 41 published October objectives in seven groups mapped; July baseline retained. Correct Direct Lake variant/fallback, OneLake grants, Warehouse constraint, export/freshness and incremental refresh boundaries. Add four worked examples, two labs, eight answers, two qualified blog readings and three planned ADBC milestone rechecks. Six synthetic arithmetic/set assertions passed offline; no Fabric tenant or Power BI engine execution. Human review pending. See docs/research/2026-09-27-dp-600-deep-review.md"
+      "notes": "Whole guide read and all 41 published October objectives in seven groups mapped; July baseline retained. Correct Direct Lake variant/fallback, OneLake grants, Warehouse constraint, export/freshness and incremental refresh boundaries. Add four worked examples, two labs, eight answers, two qualified blog readings and three planned ADBC milestone rechecks. Six synthetic arithmetic/set assertions passed offline; no Fabric tenant or Power BI engine execution. Human review pending. See docs/research/2026-09-27-dp-600-deep-review.md PL-300 follow-up on September 27 qualifies the ordinary Import column explanation; other modes and user-context columns can evaluate at query time. Current calculated-column documentation was reviewed; no engine execution."
     },
     {
       "id": "dp-700-2026-09-01-source-validation",
@@ -2128,23 +2128,62 @@
       "notes": "Whole guide read and all 65 published October objectives in nine groups mapped. Preserve July baseline and unresolved October 28 versus October 14 official date conflict. Correct Data Explorer and JIT boundaries; add Power BI, audit retention, network DLP and priority-cleanup context, four worked examples, a ninth lab, six additional answers and one qualified Purview blog. Four arithmetic assertions checked offline; no tenant execution. Human review pending. Source/objective mapping checks passed; lifecycle freshness remains blocked. See docs/research/2026-09-27-sc-401-deep-review.md"
     },
     {
-      "id": "pl-300-2026-09-01-source-validation",
+      "id": "pl-300-2026-09-27-source-validation",
       "exam_code": "PL-300",
       "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/pl-300-official-objectives.txt",
-      "blueprint_snapshot_sha256": "4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee",
+      "blueprint_snapshot_sha256": "c1c6a25ab5e6285ba4cce3603f6e2624f482ff1d6f237d68e6fa79da93d9e8d9",
       "objective_coverage": [
-        {"objective_group": "Prepare the data", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–2"]},
-        {"objective_group": "Model the data", "guide_sections": ["Section 2", "All integrated scenarios", "Labs 3–4 and 8"]},
-        {"objective_group": "Visualize and analyze the data", "guide_sections": ["Section 3", "All integrated scenarios", "Labs 5–6"]},
-        {"objective_group": "Manage and secure Power BI", "guide_sections": ["Section 4", "Regional-sales and operations scenarios", "Labs 7–8"]}
+        {
+          "objective_group": "Prepare the data",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Model the data",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Visualize and analyze the data",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Manage and secure Power BI",
+          "guide_sections": [
+            "Section 4",
+            "Regional-sales and operations scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 27, "reachable": 24, "access_blocked": 3, "missing_or_error": 0},
-      "notes": "Every April 20, 2026 subobjective is mapped to an end-to-end analyst decision spanning source, transformation, model, DAX, report, distribution, refresh, and security. Three scenarios, eight labs and 36 original checks cover the complete published scope. All 27 URLs are cataloged: 24 reachable and three commercial pages access-blocked. The September 7 watch treats the AI at Work roadmap as mutable discovery evidence, not a Power BI blueprint, while retaining diverse independent modeling and DAX explanations."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 48,
+        "reachable": 44,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Whole guide read and 78 April objectives in eleven groups mapped. Accept the reviewed editorial-only objective snapshot with old text/hashes preserved; date, weights and detailed objectives unchanged. Add four worked examples, two labs, eight answers, SQLBI performance reading and the updated Microsoft Q&A notice. Correct calculation-context, visual export/alert, RLS, refresh and Copilot boundaries; eight synthetic assertions passed, no Power BI engine/tenant labs. Add file-picker/Q&A checkpoints and a bounded DP-600 column clarification. Human review pending. See docs/research/2026-09-27-pl-300-deep-review.md"
     },
     {
       "id": "pl-400-2026-09-01-source-validation",
@@ -9336,6 +9375,64 @@
         "missing_or_error": 0
       },
       "notes": "All six initial beta objective groups are mapped to decision tables, three integrated scenarios, seven safe or tabletop labs, twelve review checks, and a current-source map. All 12 external URLs are registered and returned HTTP 200. Fast-moving hooks, agentic workflows, memory, MCP, custom-agent, enterprise-policy, plan, language, and beta behavior are explicitly marked for recheck; no recalled questions or exam dumps were used."
+    },
+    {
+      "id": "pl-300-2026-09-01-source-validation",
+      "exam_code": "PL-300",
+      "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/archive/pl-300-4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee.txt",
+      "blueprint_snapshot_sha256": "4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee",
+      "objective_coverage": [
+        {
+          "objective_group": "Prepare the data",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Model the data",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Visualize and analyze the data",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Manage and secure Power BI",
+          "guide_sections": [
+            "Section 4",
+            "Regional-sales and operations scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 24,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 20, 2026 subobjective is mapped to an end-to-end analyst decision spanning source, transformation, model, DAX, report, distribution, refresh, and security. Three scenarios, eight labs and 36 original checks cover the complete published scope. All 27 URLs are cataloged: 24 reachable and three commercial pages access-blocked. The September 7 watch treats the AI at Work roadmap as mutable discovery evidence, not a Power BI blueprint, while retaining diverse independent modeling and DAX explanations."
     }
   ]
 }

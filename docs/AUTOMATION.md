@@ -355,6 +355,23 @@ Automated title and duration detection is a change signal, not proof that the li
 
 ## Review checklist for an objective-change PR
 
+When accepting a changed objective snapshot, preserve the text used by historical
+reviews before replacing it. Store the exact prior bytes under
+`data/objective-snapshots/archive/<exam>-<sha256>.txt`. Older audit records may point
+to that byte-identical archive; keep their hashes, dates, checks, findings and
+verdicts unchanged. A newly completed guide review can reference the newly accepted
+snapshot and hash. Retain the original source-validation record under its original
+ID and date, pointing to the archive; give the new review its own dated ID. Validation
+binds historical audits to the latest retained source review on or before their
+audit date. An audit after a replacement review must use that review's baseline.
+Historical link counts retain their original evidence instead of adopting today's
+guide links. Older catalogs without a preserved dated review can use the current
+review only when the snapshot path and hash still match.
+Record the before/after hashes, reason for acceptance and any
+source-path migration in the review evidence. PL-300's September 27 deep-review
+record demonstrates this for editorial-only changes. Future-dated objectives must
+still remain distinct from the current exam baseline until their effective date.
+
 - [ ] Confirm the extraction is genuine and not page-navigation noise.
 - [ ] Record the new skills-version, exam version, or tested-product baseline.
 - [ ] Check whether the page announces a future update or retirement and update the guide status line.

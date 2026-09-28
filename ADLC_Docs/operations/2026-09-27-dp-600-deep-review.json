@@ -10,7 +10,7 @@
   "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
   "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
   "guide_before_sha256": "8c64ac5a8f54f8c073d8c0f75b3fa2caccf194f7a9990d69f5cd7e6cb9e5ad62",
-  "guide_after_sha256": "6b0b1eb8cdd7b5931614732695c303661920c42002822366f366700a32471b38",
+  "guide_after_sha256": "b96e333ee4b1b59249b29d2515ca0915170889e610d4fa9333786a2d3603311a",
   "prior_records": {
     "exam": {
       "code": "DP-600",
@@ -1348,6 +1348,29 @@
       "final_url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
       "sha256": "e49371d4f18760a09ef9cb1ceaa91e5dab0dd634a21ac75717644994c19b7ce7",
       "text_characters": 6129
+    },
+    {
+      "id": "pl300-calculated-columns",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+      "checked_at": "2026-09-28T01:29:16.636640+00:00",
+      "health": {
+        "id": "pl300-calculated-columns",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+        "checked_at": "2026-09-28T01:29:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+        "content_type": "text/html",
+        "page_title": "Using calculated columns in Power BI Desktop - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+        "duration_signals": [],
+        "signal_fingerprint": "b42e36d86d490dd31434d7738ef10d74b024b5074d5f9b19f8afb2791a41fd32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+      "sha256": "8d8dbd0e91d68a177c372fbbcd97b04a23574c08f57cde24cd750b38fd7a5f37",
+      "text_characters": 6010
     }
   ],
   "added_source_ids": [
@@ -1531,6 +1554,24 @@
       "disposition": "applied",
       "source_id": "dp600-adbc",
       "resolution": "Add migration comparison exercise and three automated follow-ups."
+    },
+    {
+      "id": "dp600-pl300-column-follow-up",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Ordinary Import columns are one calculation case",
+      "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current Expression Context/storage-mode table distinguishes materialized ordinary Import columns from query-time user-context columns, including Direct Lake on OneLake preview.",
+      "recommendation": "Qualify generic column guidance and its answer.",
+      "disposition": "applied",
+      "source_id": "pl300-calculated-columns",
+      "resolution": "Qualify section 3 advice and answer 29 to the ordinary Import case; direct readers to storage mode/context support."
     }
   ],
   "blog_intake": [
@@ -1567,12 +1608,41 @@
   ],
   "validation": {
     "status": "passed",
-    "unit_tests": 158,
+    "unit_tests": 165,
     "repository_validation": "passed",
     "strict_site_build": "passed",
     "generated_site_validation": "passed",
     "git_diff_check": "passed",
     "execution_boundary": "Local validation only; no infrastructure lab executed.",
     "join_margin_and_permission_assertions": 6
-  }
+  },
+  "follow_up_reviews": [
+    {
+      "reviewed_on": "2026-09-27",
+      "trigger": "PL-300 calculation-context research",
+      "scope": "Two bounded DP-600 wording corrections; original objective mapping and worked examples unchanged.",
+      "guide_before_sha256": "6b0b1eb8cdd7b5931614732695c303661920c42002822366f366700a32471b38",
+      "guide_after_sha256": "b96e333ee4b1b59249b29d2515ca0915170889e610d4fa9333786a2d3603311a",
+      "source_id": "pl300-calculated-columns",
+      "finding": {
+        "id": "dp600-pl300-column-follow-up",
+        "check": "official_product_documentation",
+        "category": "documentation-gap",
+        "title": "Ordinary Import columns are one calculation case",
+        "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+        "source_type": "product-documentation",
+        "affected_exams": [
+          "DP-600"
+        ],
+        "catalog_status": "registered",
+        "confidence": "high",
+        "evidence": "Current Expression Context/storage-mode table distinguishes materialized ordinary Import columns from query-time user-context columns, including Direct Lake on OneLake preview.",
+        "recommendation": "Qualify generic column guidance and its answer.",
+        "disposition": "applied",
+        "source_id": "pl300-calculated-columns",
+        "resolution": "Qualify section 3 advice and answer 29 to the ordinary Import case; direct readers to storage mode/context support."
+      },
+      "reviewer": "Same-context AI; human review pending; no engine execution."
+    }
+  ]
 }

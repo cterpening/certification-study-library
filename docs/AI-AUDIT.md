@@ -42,6 +42,15 @@ them: the recorded evidence does not establish the precise guide content reviewe
 They no longer suppress the default audit queue. A historical guide-hash mismatch is
 not a corrupt ledger; it means the current guide needs a new audit.
 
+When a blueprint changes, preserve its exact previous bytes in the objective
+snapshot archive and retain its original source-validation record. Only source
+paths may migrate to that byte-identical archive; audit hashes, dates, checks,
+findings and verdicts stay unchanged. Validation uses the latest retained source
+review on or before the audit date, so a later blocked review does not rewrite a
+historical pass and a new audit cannot use a superseded baseline. Legacy catalogs
+without a dated historical review still require the audit to match the current
+review's snapshot path and hash. See the [snapshot acceptance checklist](AUTOMATION.md#review-checklist-for-an-objective-change-pr).
+
 ## Ten required checks
 
 Each result records `passed`, `failed`, `blocked`, or `not-applicable` plus concise evidence for every check.

@@ -56,3 +56,12 @@ and repair used the same AI context; independent and human review remain pending
 Publication uses unit-test, repository, strict site-build, generated-site and diff
 checks. The [Microsoft review tracker](../MICROSOFT-REVIEW-STATUS.md) keeps the
 remaining queue visible.
+
+## PL-300 follow-up
+
+The subsequent PL-300 review clarified section 3 and answer 29: stored refresh-time
+columns describe the ordinary Import case. Other storage modes and user-context
+columns can evaluate at query time. The current [calculated-column documentation](https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns)
+was associated with DP-600, and the evidence preserves the guide hashes before and
+after this bounded correction. No engine execution was added; the publication gates
+cover the correction with the PL-300 change.

@@ -4,6 +4,271 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-pl300-deep-review",
+      "title": "PL-300 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PL-300"
+      ],
+      "results": [
+        {
+          "exam_code": "PL-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+          "baseline_sha256": "5c2992fd7265226e8ff90ed2057bb6c0cd79857c355298004aedfbe0c19048e2",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "78 objectives mapped. April date and all domains/objectives unchanged; only audience formatting and wrapping differ. Reviewed editorial snapshot accepted with previous text/hashes. Credential lists 100 minutes, course three days, no new exam date announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read; targeted current DAX, Power Query, calculations, security, Copilot, refresh and export/alert boundaries checked. Eight synthetic assertions passed; no engine or tenant execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "August Power BI summary is current observed page; relevant updates and September Q&A extension checked. October old-file-picker and February Q&A research checkpoints added; existing ADBC checkpoints retained."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide citations registered. Public path modules/provider metadata reviewed; Coursera overview now about 40 hours, module estimates 37. Paid access blocks and public shells remain explicit."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "New explicit Q&A extension supersedes older December notices. Ordinary Import columns distinguished from user context/Direct Lake preview, hidden presentation from permissions, actual RLS identity from simulation, page refresh from model reload, and visual calculations from exported/model semantics. Page-refresh route remains environment-specific."
+            }
+          },
+          "findings": [
+            {
+              "id": "pl300-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Calculated columns are not uniformly materialized",
+              "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Expression Context and storage mode change evaluation; Direct Lake on OneLake columns are unmaterialized preview and cannot be relationship keys.",
+              "recommendation": "Qualify the calculation table and DP-600 answer; add mode/context checks.",
+              "disposition": "applied",
+              "source_id": "pl300-calculated-columns",
+              "resolution": "Qualify the calculation table and DP-600 answer; add mode/context checks."
+            },
+            {
+              "id": "pl300-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A duplicate survivor needs a deterministic contract",
+              "url": "https://learn.microsoft.com/en-us/powerquery-m/table-distinct",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Folding and optimization can change which row Table.Distinct retains; buffering has memory/folding trade-offs.",
+              "recommendation": "Explain keys, order, tie-breakers and source-side versus buffered patterns.",
+              "disposition": "applied",
+              "source_id": "pl300-table-distinct",
+              "resolution": "Explain keys, order, tie-breakers and source-side versus buffered patterns."
+            },
+            {
+              "id": "pl300-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Filter replacement differs from intersection",
+              "url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CALCULATE overwrites ordinary same-column filters unless KEEPFILTERS preserves their intersection.",
+              "recommendation": "Add original Hardware/Software worked example and lab predictions.",
+              "disposition": "applied",
+              "source_id": "pl300-calculate",
+              "resolution": "Add original Hardware/Software worked example and lab predictions."
+            },
+            {
+              "id": "pl300-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Distinct totals are not row sums",
+              "url": "https://learn.microsoft.com/en-us/dax/distinctcount-function-dax",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Overlapping customers appear once in the total context; BLANK is a counted distinct value.",
+              "recommendation": "Add set-based reconciliation example instead of automatic total replacement.",
+              "disposition": "applied",
+              "source_id": "pl300-distinctcount",
+              "resolution": "Add set-based reconciliation example instead of automatic total replacement."
+            },
+            {
+              "id": "pl300-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Visual-local results have delivery and semantic limits",
+              "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-visual-calculations-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Previous axis value need not be previous calendar year; current docs exclude visual result exports and value-change alert triggering.",
+              "recommendation": "Add missing-year example and route checks.",
+              "disposition": "applied",
+              "source_id": "pl-300-power-bi-visual-calculations",
+              "resolution": "Add missing-year example and route checks."
+            },
+            {
+              "id": "pl300-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Roles add permissions and author roles change enforcement",
+              "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-admin-rls",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Multiple roles are additive; Viewer+Build retains RLS while Contributor bypasses consumer RLS. Test-as-role has identity/SSO/Copilot limits.",
+              "recommendation": "Add role-union example and actual-consumer tests.",
+              "disposition": "applied",
+              "source_id": "pl300-rls",
+              "resolution": "Add role-union example and actual-consumer tests."
+            },
+            {
+              "id": "pl300-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "CSV is outside supported label-protected export routes",
+              "url": "https://learn.microsoft.com/en-us/power-bi/enterprise/service-security-sensitivity-label-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs exclude CSV and unsupported paths from label/protection propagation.",
+              "recommendation": "Specify supported file routes and exported-file/recipient testing.",
+              "disposition": "applied",
+              "source_id": "pl300-labels",
+              "resolution": "Specify supported file routes and exported-file/recipient testing."
+            },
+            {
+              "id": "pl300-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A failed refresh schedule can disable itself",
+              "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/refresh-scheduled-refresh",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Four failures or an unrecoverable configuration error can deactivate schedules; inactivity also pauses them.",
+              "recommendation": "Add repair/re-enable and distinct refresh-type evidence.",
+              "disposition": "applied",
+              "source_id": "pl300-refresh",
+              "resolution": "Add repair/re-enable and distinct refresh-type evidence."
+            },
+            {
+              "id": "pl300-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Display-only bookmarks are not security boundaries",
+              "url": "https://learn.microsoft.com/en-us/power-bi/explore-reports/copilot-pane-summarize-content",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Copilot can summarize eligible hidden bookmarked visuals while retaining RLS/OLS.",
+              "recommendation": "Add bookmark prerequisites, citation/filter checks and hidden-field correction.",
+              "disposition": "applied",
+              "source_id": "pl300-copilot-summary",
+              "resolution": "Add bookmark prerequisites, citation/filter checks and hidden-field correction."
+            },
+            {
+              "id": "pl300-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Q&A retirement has been extended",
+              "url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/power-bi-qa-retirement-reminder-february-2027-timeline-update/5365841",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September Microsoft announcement explicitly moves December 2026 retirement to February 2027, consistent with updated limitations docs.",
+              "recommendation": "Record extension and old-page discrepancy; add February research checkpoint.",
+              "disposition": "applied",
+              "source_id": "pl300-qa-update-blog",
+              "resolution": "Record extension and old-page discrepancy; add February research checkpoint."
+            },
+            {
+              "id": "pl300-deep-11",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Older Desktop file picker has an October transition",
+              "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/whats-new",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August release notes announce loss of OneDrive/SharePoint save/share for March 2026 and earlier Desktop from October.",
+              "recommendation": "Add update/test guidance and dated research checkpoint without claiming local PBIX retirement.",
+              "disposition": "applied",
+              "source_id": "pl300-desktop-updates",
+              "resolution": "Add update/test guidance and dated research checkpoint without claiming local PBIX retirement."
+            }
+          ],
+          "notes": "Whole guide read and 78 April objectives in eleven groups mapped. Accept the reviewed editorial-only objective snapshot with old text/hashes preserved; date, weights and detailed objectives unchanged. Add four worked examples, two labs, eight answers, SQLBI performance reading and the updated Microsoft Q&A notice. Correct calculation-context, visual export/alert, RLS, refresh and Copilot boundaries; eight synthetic assertions passed, no Power BI engine/tenant labs. Add file-picker/Q&A checkpoints and a bounded DP-600 column clarification. Human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-pl-300-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-dp700-deep-review",
       "title": "DP-700 complete guide and learning-content review",
       "rubric_version": 1,
@@ -294,7 +559,7 @@
           "exam_code": "DP-600",
           "vendor_id": "microsoft",
           "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
-          "baseline_sha256": "132985a7dc882a1d58eb64618715ffc5bdba6f09c52f48859bfaa463ce3b71f7",
+          "baseline_sha256": "9f5c908db714784da3710bf6871473b9ac50e974f161a82298a82ccce48ce0aa",
           "scanned_on": "2026-09-27",
           "outcome": "current",
           "checks": {
@@ -481,9 +746,27 @@
               "disposition": "applied",
               "source_id": "dp600-adbc",
               "resolution": "Add migration comparison exercise and three automated follow-ups."
+            },
+            {
+              "id": "dp600-pl300-column-follow-up",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Ordinary Import columns are one calculation case",
+              "url": "https://learn.microsoft.com/en-us/power-bi/transform-model/desktop-calculated-columns",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current Expression Context/storage-mode table distinguishes materialized ordinary Import columns from query-time user-context columns, including Direct Lake on OneLake preview.",
+              "recommendation": "Qualify generic column guidance and its answer.",
+              "disposition": "applied",
+              "source_id": "pl300-calculated-columns",
+              "resolution": "Qualify section 3 advice and answer 29 to the ordinary Import case; direct readers to storage mode/context support."
             }
           ],
-          "notes": "Whole guide read and all 41 published October objectives in seven groups mapped; July baseline retained. Correct Direct Lake variant/fallback, OneLake grants, Warehouse constraint, export/freshness and incremental refresh boundaries. Add four worked examples, two labs, eight answers, two qualified blog readings and three planned ADBC milestone rechecks. Six synthetic arithmetic/set assertions passed offline; no Fabric tenant or Power BI engine execution. Human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-dp-600-deep-review.md"
+          "notes": "Whole guide read and all 41 published October objectives in seven groups mapped; July baseline retained. Correct Direct Lake variant/fallback, OneLake grants, Warehouse constraint, export/freshness and incremental refresh boundaries. Add four worked examples, two labs, eight answers, two qualified blog readings and three planned ADBC milestone rechecks. Six synthetic arithmetic/set assertions passed offline; no Fabric tenant or Power BI engine execution. Human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-dp-600-deep-review.md PL-300 follow-up on September 27 qualifies the ordinary Import column explanation; other modes and user-context columns can evaluate at query time. Current calculated-column documentation was reviewed; no engine execution."
         }
       ],
       "summary": {
@@ -492,7 +775,7 @@
         "review_required": 0,
         "blocked": 0,
         "queued_findings": 0,
-        "applied_findings": 9,
+        "applied_findings": 10,
         "no_action_findings": 0,
         "blocked_findings": 0
       }

@@ -5,6 +5,27 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "PL-300",
+      "reviewed_on": "2026-09-27",
+      "guide_sha256": "b6d4a0f04fd84f156294799c1c07eec99e61b438c121737cfee4c1c33655c5bc",
+      "objective_count": 78,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-27-pl-300-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-27-pl-300-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "No Power BI Desktop/service tenant, DAX/M engine, gateway, Copilot or export/alert lab executed.",
+        "Paid OReilly and two Udemy pages block retrieval; Microsoft retirement blog also blocks direct fetch, but public article text reviewed through web search.",
+        "Public Learn path module listings did not independently reverify the historical 19h52 duration total; provider metadata and lab repository README are not course/lab completion.",
+        "SQLBI public article reviewed; downloadable model, paid whitepaper, screenshots and performance results not independently executed.",
+        "April objective snapshot updated only after full comparison of editorial changes, with prior text and hashes retained in evidence.",
+        "Automatic-page-refresh setup text remains narrower than its mode matrix; verify actual mode/connection/capacity instead of inferring universal support.",
+        "Same-context AI research and repair; independent and human review pending."
+      ]
+    },
+    {
       "exam_code": "DP-700",
       "reviewed_on": "2026-09-27",
       "guide_sha256": "21173e7f8a31d167d83b21b906b72165dce4b47789f897393c9581e051b608c8",
@@ -27,7 +48,7 @@
     {
       "exam_code": "DP-600",
       "reviewed_on": "2026-09-27",
-      "guide_sha256": "6b0b1eb8cdd7b5931614732695c303661920c42002822366f366700a32471b38",
+      "guide_sha256": "b96e333ee4b1b59249b29d2515ca0915170889e610d4fa9333786a2d3603311a",
       "objective_count": 41,
       "outcome": "reviewed",
       "report_path": "docs/research/2026-09-27-dp-600-deep-review.md",
