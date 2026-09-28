@@ -1131,38 +1131,57 @@
       "notes": "Complete guide read and all 53 published October objectives in ten groups mapped. Preserve July baseline and expected future-page hash difference. Add four worked examples, a seventh verification lab, answers to eight existing questions, six new answers and one qualified blog/transcript reading. Clarify permission intersections, agent/file revocation, scheduled-prompt lifecycle, fixed environment DLP, PAYG alerts, pending versions and MCP support. No tenant or infrastructure execution; human review pending. See docs/research/2026-09-27-ab-900-deep-review.md"
     },
     {
-      "id": "terraform-authoring-operations-professional-2026-09-06-source-validation",
+      "id": "terraform-authoring-operations-professional-2026-09-28-source-validation",
       "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
       "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-06",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/terraform-authoring-operations-professional-official-objectives.txt",
       "blueprint_snapshot_sha256": "bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68",
       "objective_coverage": [
         {
           "objective_group": "Manage resource lifecycle",
-          "guide_sections": ["Domain 1", "Integrated professional playbook", "Labs 1–2"]
+          "guide_sections": [
+            "Domain 1",
+            "Integrated professional playbook",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Develop and troubleshoot dynamic configuration",
-          "guide_sections": ["Domain 2", "Labs 2–3"]
+          "guide_sections": [
+            "Domain 2",
+            "Labs 2–3"
+          ]
         },
         {
           "objective_group": "Develop collaborative Terraform workflows",
-          "guide_sections": ["Domain 3", "Lab 4"]
+          "guide_sections": [
+            "Domain 3",
+            "Lab 4"
+          ]
         },
         {
           "objective_group": "Create, maintain, and use Terraform modules",
-          "guide_sections": ["Domain 4", "Labs 2–3"]
+          "guide_sections": [
+            "Domain 4",
+            "Labs 2–3"
+          ]
         },
         {
           "objective_group": "Configure and use Terraform providers",
-          "guide_sections": ["Domain 5", "Lab 5"]
+          "guide_sections": [
+            "Domain 5",
+            "Lab 5"
+          ]
         },
         {
           "objective_group": "Collaborate on infrastructure as code using HCP Terraform",
-          "guide_sections": ["Domain 6", "Lab 6"]
+          "guide_sections": [
+            "Domain 6",
+            "Lab 6"
+          ]
         }
       ],
       "checks": {
@@ -1173,12 +1192,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 21,
-        "reachable": 21,
-        "access_blocked": 0,
+        "unique_external_links": 29,
+        "reachable": 28,
+        "access_blocked": 1,
         "missing_or_error": 0
       },
-      "notes": "All six unweighted Advanced domains and their subobjectives are mapped to lifecycle, dynamic HCL, collaboration, module, provider, and HCP Terraform explanations plus seven independent labs. All 21 cited sources are registered, first-party, and reachable. HashiCorp's Professional-to-Advanced rename, unchanged content and format, current AWS-provider baseline, late-2026 Azure-provider announcement, exam environment, HCP Terraform entitlements, authentication chains, and provider/API behavior are explicit. Refresh-only planning is correctly separated from apply-time state persistence."
+      "notes": "Map 27 objectives; distinguish Terraform 1.6 exam scope from newer features, explain migration/testing/access boundaries, answer 20 checks and verify local module identity and three tests. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md"
     },
     {
       "id": "vault-associate-003-2026-08-31-source-validation",

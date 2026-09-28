@@ -6,16 +6,16 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-06
+last_verified: 2026-09-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-06
+upcoming_change_checked: 2026-09-28
 ---
 
 # HashiCorp Certified: Terraform Authoring and Operations Advanced Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 27 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) is authoritative.
 
-**Current baseline:** Terraform Authoring and Operations Advanced, AWS-provider exam version; verified September 6, 2026<br>
+**Current baseline:** Terraform Authoring and Operations Advanced, Terraform 1.6 and AWS-provider exam version; verified September 28, 2026<br>
 **Upcoming blueprint change:** HashiCorp says an Azure-provider exam version is in active development with expected launch in late 2026. Both versions award one Terraform Advanced credential; verify availability before scheduling.<br>
 **Official source:** [Terraform Authoring and Operations Advanced content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review)
 
@@ -50,9 +50,11 @@ HashiCorp publishes six domains and detailed subobjectives without percentage we
 | 5. Configure and use Terraform providers | Not published | Plugin architecture, aliases, sourcing, upgrades, authentication, and troubleshooting |
 | 6. Collaborate on infrastructure as code using HCP Terraform | Not published | Runs, workspaces, access, dynamic credentials, policy, and governance; multiple-choice only |
 
+The [September 28 review](../docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md) maps all 27 subobjectives; accepted snapshots remain unchanged. The [certification page](https://developer.hashicorp.com/certifications/infrastructure-automation) specifies **Terraform 1.6**, even though Associate (004) tests 1.12. Use the correct documentation version for the selected exam environment. Ephemeral values (1.10+), write-only arguments (1.11+) and test-provider mocking (1.7+) are newer practical context, not usable 1.6 syntax.
+
 ## Exam operating model
 
-The current exam uses AWS resources. HashiCorp's content list names the provider resources and documentation available for that version. The announced Azure version changes provider syntax and cloud-resource behavior, not the durable Terraform domains. **VERIFY CURRENT:** provider-version availability, the resources exposed in the environment, permitted documentation, keyboard constraints, and exam delivery details immediately before scheduling.
+The current exam uses AWS resources. HashiCorp's content list names the provider resources and documentation available for that version. The practice-lab catalog already includes an Azure import exercise; that is preparation material, not proof that the Azure exam can be booked. The announced Azure version changes provider syntax and cloud-resource behavior, not the durable Terraform domains. **VERIFY CURRENT:** provider-version availability, the resources exposed in the environment, permitted documentation, keyboard constraints, and exam delivery details immediately before scheduling. The library will recheck the late-2026 Azure announcement on October 28; this is a review checkpoint, not a vendor launch date.
 
 Treat each lab as a small production change:
 
@@ -91,6 +93,8 @@ Before initializing, identify:
 - whether a backend change should migrate existing state or deliberately start elsewhere.
 
 A common professional failure is initializing successfully against the wrong backend or workspace. Check the backend configuration and current workspace before planning.
+
+`init -migrate-state` attempts to copy existing state to the new backend; `init -reconfigure` discards the saved backend configuration and does not migrate state. Choosing reconfiguration when migration was intended can leave the old bindings behind. Inspect both state locations and the destination before any apply.
 
 ### Plan as a diagnostic artifact
 
@@ -214,11 +218,13 @@ Remote state centralizes the address-to-object record for collaboration. It requ
 
 Split state by lifecycle, ownership, blast radius, and access—not merely by directory aesthetics. Avoid a single state that forces unrelated teams to share credentials and change windows; also avoid fragments connected by fragile chains of remote outputs.
 
+**Related item — VERIFY CURRENT:** Current [S3 backend documentation](https://developer.hashicorp.com/terraform/language/backend/s3) offers opt-in `use_lockfile` locking and deprecates DynamoDB locking. The exam's Terraform 1.6 baseline predates native S3 lockfiles: do not paste a modern backend example into that environment. Follow its version-specific configuration. For production migration, inventory every writer and test compatible locking before changing coordination.
+
 ### Share data across configurations
 
 `terraform_remote_state` exposes root outputs from another state but requires access to the backing state system, which may be broader than the output implies. HCP Terraform's `tfe_outputs` can provide a narrower output-sharing path. Alternatives include publishing identifiers through a configuration registry, DNS, parameter store, or provider data source.
 
-Choose based on ownership, freshness, access boundary, failure behavior, and whether the consumer needs a Terraform-specific coupling.
+The [remote-state data-source warning](https://developer.hashicorp.com/terraform/language/state/remote-state-data) is stronger than output redaction: a principal able to fetch outputs through the state snapshot can also retrieve that snapshot, including its other data. Marking an output sensitive does not create an output-only authorization boundary. Choose based on ownership, freshness, access boundary, failure behavior, and whether the consumer needs a Terraform-specific coupling.
 
 ### Automation workflow
 
@@ -273,7 +279,9 @@ Terraform Core loads provider plugins that define schemas, translate planned ope
 
 ### Aliases and module boundaries
 
-Use aliases for multiple configurations of one provider, such as regions or accounts. Pass aliased configurations explicitly to modules and declare `configuration_aliases` where a child module expects them. A resource that silently uses the default provider can target the wrong environment even when every other value looks correct.
+Use aliases for multiple configurations of one provider, such as regions or accounts. Pass aliased configurations explicitly to modules and declare `configuration_aliases` where a child module expects them. The [module-provider reference](https://developer.hashicorp.com/terraform/language/modules/develop/providers) distinguishes inherited default configurations from aliases, which must be passed explicitly. Keep a provider configuration available until Terraform has destroyed resources that depend on it. Provider requirements select plugins; passing an alias does not replace a child's requirement declaration.
+
+A resource that silently uses the default provider can target the wrong environment even when every other value looks correct.
 
 ### Authentication
 
@@ -312,7 +320,7 @@ Scope teams and permissions to projects/workspaces based on duties. Separate per
 
 ### Policy and extensibility
 
-Policy sets evaluate organization rules against runs. Run tasks integrate external checks; run triggers connect workspace execution dependencies. A control should have a clear enforcement point, failure behavior, ownership, and exception process. See [HCP Terraform policy enforcement](https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement).
+Policy sets evaluate organization rules against runs. The [run-task reference](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks) distinguishes advisory failures, which allow progress, from mandatory failures, which stop the run, including documented timeout/error cases. Match the stage to the control: a post-apply check cannot prevent infrastructure changes that already happened. Project scopes and exclusions require review when moving workspaces.  Run tasks integrate external checks; run triggers connect workspace execution dependencies. A control should have a clear enforcement point, failure behavior, ownership, and exception process. See [HCP Terraform policy enforcement](https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement).
 
 **VERIFY CURRENT:** HCP Terraform editions, entitlements, run modes, agent behavior, project/workspace permissions, policy engines, run-task stages, health features, and Terraform Enterprise parity change independently.
 
@@ -332,7 +340,95 @@ For any scenario, write this compact decision record before changing files:
 
 This record prevents the most common category error: using a correct command for the wrong lifecycle intention.
 
+## Worked authoring and operations decisions
+
+### Preserve identity through a module migration
+
+Suppose two built-in resources at `terraform_data.service[0]` and `[1]` represent `api` and `worker`. The new child module uses `for_each` keys with those names. Record both transitions explicitly:
+
+```hcl
+moved {
+  from = terraform_data.service[0]
+  to   = module.services.terraform_data.service["api"]
+}
+moved {
+  from = terraform_data.service[1]
+  to   = module.services.terraform_data.service["worker"]
+}
+```
+
+The local Terraform 1.6.6 adaptation of Lab 2 produced two no-op resource actions with previous addresses; apply preserved both IDs. Inspect every attribute too: a move records identity, not permission to ignore unrelated changes. The [refactoring guide](https://developer.hashicorp.com/terraform/language/modules/develop/refactoring) explains upgrade paths and why removing old move declarations can break callers who skip releases.
+
+### Test an input contract before applying
+
+For a local adaptation of Lab 3, put this in a child module's `main.tf`. It records names; it does not open network ports:
+
+```hcl
+variable "services" {
+  type = map(object({ port = number }))
+  validation {
+    condition     = alltrue([for s in var.services : s.port >= 1 && s.port <= 65535 && floor(s.port) == s.port])
+    error_message = "Ports must be whole numbers from 1 through 65535."
+  }
+}
+resource "terraform_data" "service" {
+  for_each = var.services
+  input    = each.key
+}
+output "ports" {
+  value = { for name, service in var.services : name => service.port }
+}
+```
+
+Put these original checks in that module's `tests/ports.tftest.hcl`, then run `terraform init` and `terraform test` **from the child module directory**:
+
+```hcl
+run "valid_port" {
+  command = plan
+  variables {
+    services = { api = { port = 443 } }
+  }
+  assert {
+    condition     = output.ports["api"] == 443
+    error_message = "The port mapping must preserve the caller's value."
+  }
+}
+run "invalid_port" {
+  command = plan
+  variables {
+    services = { api = { port = 0 } }
+  }
+  expect_failures = [var.services]
+}
+run "upper_boundary" {
+  command = plan
+  variables {
+    services = { api = { port = 65535 } }
+  }
+  assert {
+    condition     = output.ports["api"] == 65535
+    error_message = "The maximum valid port must be accepted."
+  }
+}
+```
+
+All three runs passed on Terraform 1.6.6. The [test reference](https://developer.hashicorp.com/terraform/language/tests) explains that tests default to `apply`; explicitly selecting `plan` avoids creating resources for these assertions. Plan-based tests can still contact providers/data sources in other configurations. `expect_failures` targets custom-condition failures, not arbitrary type/API errors. Always inspect cleanup output after tests that create real infrastructure.
+
+### Separate an access problem from a quiet plan
+
+An application team needs one published endpoint but the shared state contains credentials. Giving it snapshot access for `terraform_remote_state` grants more exposure than that one output suggests. Choose an output-sharing or configuration-publication mechanism with the required access boundary, then test both permitted access and denied secret access. This is a design case, not a live HCP permission result.
+
+### Choose an enforcement stage
+
+An external scanner is advisory at post-plan and reports a failure. A green apply does not establish policy compliance: advisory behavior deliberately allows continuation. A required preventive check needs an appropriate pre-apply stage and mandatory behavior, with explicit exception ownership. A post-apply failure supports detection/remediation rather than retroactive prevention. This scenario was reviewed against documentation, not executed in HCP.
+
+### Useful article with a version boundary
+
+Dan Barr's October 4, 2023 [Terraform 1.6 testing article](https://www.hashicorp.com/en/blog/terraform-1-6-adds-a-test-framework-for-enhanced-code-validation) explains the native test framework and saved cloud-plan workflow. Use it to design valid, invalid and boundary cases; compare its historical Terraform Cloud terminology with current HCP documentation. Allow about 20–35 minutes for reading and the local test exercise. The release article's cloud workflows were not executed here, and newer test syntax must be checked against the 1.6 baseline.
+
 ## Hands-on labs
+
+**Execution evidence, September 28, 2026:** Local adaptations of Labs 2–3 ran on checksum-verified Terraform 1.6.6 with the built-in provider: both moved IDs were preserved, all three native tests passed, and cleanup left empty managed state. These Windows CLI checks do not establish Linux exam-environment fluency or cloud/HCP correctness. Other labs remain proposed.
 
 Use disposable personal sandboxes only. Review cost and destroy resources when complete. Never use employer, customer, shared, or production credentials without explicit authorization.
 
@@ -366,26 +462,26 @@ Clone a disposable Terraform repository you did not author. Give yourself 45 min
 
 ## Knowledge checks
 
-1. Why can `terraform init` succeed against the wrong operational target?
-2. What evidence distinguishes an in-place update from replacement in a plan?
-3. Why should a targeted plan be followed by a complete plan?
-4. What does import change, and what must configuration still prove afterward?
-5. When is refresh-only mode an acceptance decision rather than a repair?
-6. How does a `moved` block differ from directly changing state?
-7. Why must `for_each` keys normally be known during planning?
-8. When is `depends_on` justified, and what does overuse cost?
-9. Contrast sensitive, ephemeral, and write-only data handling.
-10. What should determine a remote-state boundary?
-11. What security concern exists when consuming another configuration's remote state?
-12. Which revision, inputs, credentials, and plan should an automated apply bind together?
-13. Why is a module that exposes every provider argument often a weak abstraction?
-14. How can module refactoring preserve remote objects?
-15. Contrast provider requirements, provider configurations, and provider aliases.
-16. How do authentication and authorization failures differ?
-17. Why is deleting `.terraform.lock.hcl` a poor first response to provider trouble?
-18. How does an HCP Terraform workspace differ from a CLI workspace?
-19. What trust relationship makes dynamic provider credentials work?
-20. Which HCP control should own a rule: Terraform condition, policy, run task, or approval—and why?
+1. Why can `terraform init` succeed against the wrong operational target? **Answer:** Initialization checks configuration/backend setup, not whether the selected state and identity represent the intended business environment.
+2. What evidence distinguishes an in-place update from replacement in a plan? **Answer:** Read the action list and replacement reason/path, exact address and before/after values; a summary count is insufficient.
+3. Why should a targeted plan be followed by a complete plan? **Answer:** Targeting can omit dependencies or other changes required for full convergence.
+4. What does import change, and what must configuration still prove afterward? **Answer:** It binds an existing remote ID to an address; configuration must still produce the intended full plan without unwanted change.
+5. When is refresh-only mode an acceptance decision rather than a repair? **Answer:** When the remote change is accepted as observation; it writes state but does not repair configuration or necessarily change the object.
+6. How does a `moved` block differ from directly changing state? **Answer:** A moved block records a repeatable migration in code; a state command changes the current mapping immediately.
+7. Why must `for_each` keys normally be known during planning? **Answer:** Terraform must identify instances before scheduling their operations; unknown values can remain in attributes but not unknown instance keys.
+8. When is `depends_on` justified, and what does overuse cost? **Answer:** Use it for a hidden behavioral dependency; broad explicit dependencies can defer reads and propagate unknown values.
+9. Contrast sensitive, ephemeral, and write-only data handling. **Answer:** Sensitive controls display; ephemeral/write-only supported paths omit values from artifacts. The latter are newer than this exam's 1.6 baseline.
+10. What should determine a remote-state boundary? **Answer:** Lifecycle, ownership, permissions, failure scope, recovery and collaboration needs.
+11. What security concern exists when consuming another configuration's remote state? **Answer:** The reader of a backing snapshot may retrieve all its data, not just declared outputs.
+12. Which revision, inputs, credentials, and plan should an automated apply bind together? **Answer:** The approved configuration revision, exact intended inputs, scoped identity, provider selections, state and applicable reviewed plan.
+13. Why is a module that exposes every provider argument often a weak abstraction? **Answer:** It adds indirection without defining a coherent supported capability or useful safety defaults.
+14. How can module refactoring preserve remote objects? **Answer:** Map every old instance address to its new destination and verify no unintended replacement and preserved IDs.
+15. Contrast provider requirements, provider configurations, and provider aliases. **Answer:** Requirements declare source/version; configurations supply target/auth settings; aliases name additional configurations of a plugin.
+16. How do authentication and authorization failures differ? **Answer:** Authentication establishes identity; authorization decides if that identity may perform the requested operation.
+17. Why is deleting `.terraform.lock.hcl` a poor first response to provider trouble? **Answer:** It discards reviewed provider selections and obscures whether the failure was version, checksum, network or schema related.
+18. How does an HCP Terraform workspace differ from a CLI workspace? **Answer:** HCP adds run history, settings and permissions around a managed state; CLI workspaces primarily select alternate states.
+19. What trust relationship makes dynamic provider credentials work? **Answer:** A trusted workload token issuer/audience/subject maps a run to a constrained provider role, with appropriate plan/apply permissions.
+20. Which HCP control should own a rule: Terraform condition, policy, run task, or approval—and why? **Answer:** Choose by scope and enforcement: local condition for an object/input contract, policy for organization rules, task for an external service, approval for authorized judgment.
 
 ## High-value distinctions
 
@@ -442,7 +538,7 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [HashiCorp Advanced learning path](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study) | Free; cloud exercises require an authorized sandbox | About 20–35 hours for linked reading and implementation (library estimate; the landing page's four-minute read time excludes linked work) | Authoritative ordered review of all six domains; production repetition remains necessary |
 | [Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) | Free | About 3–6 hours for an active documentation pass; longer when practicing gaps | Best objective-to-documentation checklist and current provider-version notice |
 | [Advanced exam orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation) | Free | About 20–40 minutes including notes and environment planning | First-party explanation of prerequisites, lab grading, environment, provider version, and permitted references |
-| [HashiCorp Advanced practice labs](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing) | Free; interactive labs and cloud-provider access vary | About 4–10 hours across repeated labs (library estimate because HashiCorp publishes only landing-page read time) | Closest first-party preparation for task execution; repeat from clean environments and verify state plus remote results |
+| [HashiCorp Advanced practice labs](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing) | Free; interactive labs and cloud-provider access vary | About 4–10 hours across repeated labs (library estimate because HashiCorp publishes only landing-page read time) | Public catalog currently lists AWS EC2 and Azure VM import activities; useful for import practice, not a complete seven-lab course or proof Azure exam booking is open. Repeat and verify state plus remote results |
 | [Terraform Associate (004) guide](TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | Free | About 8–14 hours for targeted prerequisite review and selected labs | Repair core workflow, state, module, provider, and HCP gaps before advanced practice; not advanced-level preparation by itself |
 | [HashiCorp Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials) | Free; some exercises require HCP or cloud accounts | About 2–6 hours per selected operational gap | Use narrowly for import, refactoring, testing, automation, state, providers, modules, and HCP Terraform rather than consuming the entire catalog |
 

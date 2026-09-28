@@ -4,6 +4,127 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-terraformauthoringoperationsprofessional-deep-review",
+      "title": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "results": [
+        {
+          "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+          "baseline_sha256": "82e273057fd91b35521f88b38913f0b3287acfea551b613039b33b336e95bb47",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read all 27 objectives, current Terraform 1.6 root, rename and Azure notices; preserve accepted snapshots and add review checkpoint."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read test semantics, module moves/provider propagation, state exposure, initialization and run-task references; local 1.6.6 execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read historical 1.6 release/testing article and September HCP changelog; separate product releases from exam baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official paths/orientation and practice catalog read; two import labs rather than complete practice coverage."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Version-specific syntax, Azure practice versus exam availability, test apply default and access boundaries clarified."
+            }
+          },
+          "findings": [
+            {
+              "id": "terraformauthoringoperationsprofessional-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Advanced baseline was missing",
+              "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current certification root states Terraform 1.6 for Advanced and 1.12 for Associate.",
+              "recommendation": "Add baseline and label newer syntax as practical context.",
+              "disposition": "applied",
+              "source_id": "hashicorp-terraform-advanced-credential",
+              "resolution": "Add baseline and label newer syntax as practical context."
+            },
+            {
+              "id": "terraformauthoringoperationsprofessional-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Test exercises lacked execution defaults",
+              "url": "https://developer.hashicorp.com/terraform/language/tests",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Tests default to apply; mock providers start at 1.7, and expected failures target custom conditions.",
+              "recommendation": "Add 1.6-compatible plan tests and record local results.",
+              "disposition": "applied",
+              "source_id": "terraform-tests-reference",
+              "resolution": "Add 1.6-compatible plan tests and record local results."
+            },
+            {
+              "id": "terraformauthoringoperationsprofessional-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Output sharing needs an explicit trust boundary",
+              "url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Snapshot access can reveal more than outputs.",
+              "recommendation": "Clarify full-state exposure and add access-design case.",
+              "disposition": "applied",
+              "source_id": "terraform-remote-state-data",
+              "resolution": "Clarify full-state exposure and add access-design case."
+            }
+          ],
+          "notes": "Map 27 objectives; distinguish Terraform 1.6 exam scope from newer features, explain migration/testing/access boundaries, answer 20 checks and verify local module identity and three tests. Same-context AI review; human review pending. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 3,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-terraformassociate004-deep-review",
       "title": "TERRAFORM-ASSOCIATE-004 complete guide and learning-content review",
       "rubric_version": 1,

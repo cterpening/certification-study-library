@@ -1,0 +1,1732 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "2a8679f1b270a045bdf5f1fd4926c5ca18b6528fdb3793d5435d63f0bb717804",
+  "guide_after_sha256": "012ac53b8c02111b2ce9e8650c7dea5a92d457d4b3712d49e1d01e275e28563b",
+  "prior_records": {
+    "exam": {
+      "code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+      "level": "expert",
+      "vendor_id": "hashicorp",
+      "title": "Terraform Authoring and Operations Advanced",
+      "status": "changing",
+      "study_guide_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+      "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+      "blueprint_last_checked": "2026-09-06",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-06",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Terraform Associate-level knowledge, Linux terminal fluency, HCL and structured-data experience, cloud credentials and networking knowledge, and extensive production Terraform authoring and operations experience."
+    },
+    "review": {
+      "id": "terraform-authoring-operations-professional-2026-09-06-source-validation",
+      "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+      "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/terraform-authoring-operations-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage resource lifecycle",
+          "guide_sections": [
+            "Domain 1",
+            "Integrated professional playbook",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Develop and troubleshoot dynamic configuration",
+          "guide_sections": [
+            "Domain 2",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Develop collaborative Terraform workflows",
+          "guide_sections": [
+            "Domain 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Create, maintain, and use Terraform modules",
+          "guide_sections": [
+            "Domain 4",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Configure and use Terraform providers",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Collaborate on infrastructure as code using HCP Terraform",
+          "guide_sections": [
+            "Domain 6",
+            "Lab 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 21,
+        "reachable": 21,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All six unweighted Advanced domains and their subobjectives are mapped to lifecycle, dynamic HCL, collaboration, module, provider, and HCP Terraform explanations plus seven independent labs. All 21 cited sources are registered, first-party, and reachable. HashiCorp's Professional-to-Advanced rename, unchanged content and format, current AWS-provider baseline, late-2026 Azure-provider announcement, exam environment, HCP Terraform entitlements, authentication chains, and provider/API behavior are explicit. Refresh-only planning is correctly separated from apply-time state persistence."
+    },
+    "sources": [
+      {
+        "id": "terraform-provider-requirements",
+        "title": "Terraform provider requirements",
+        "url": "https://developer.hashicorp.com/terraform/language/providers/requirements",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-ASSOCIATE-004",
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-functions",
+        "title": "Terraform functions",
+        "url": "https://developer.hashicorp.com/terraform/language/functions",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-ASSOCIATE-004",
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-custom-validation",
+        "title": "Validate Terraform configuration with custom conditions",
+        "url": "https://developer.hashicorp.com/terraform/language/validate",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-ASSOCIATE-004",
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-modules-overview",
+        "title": "Terraform modules overview",
+        "url": "https://developer.hashicorp.com/terraform/language/modules",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-ASSOCIATE-004",
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-state-overview",
+        "title": "Terraform state",
+        "url": "https://developer.hashicorp.com/terraform/language/state",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-ASSOCIATE-004",
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "hcp-terraform-workspaces",
+        "title": "HCP Terraform workspaces",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-ASSOCIATE-004",
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "hcp-terraform-dynamic-credentials",
+        "title": "Dynamic provider credentials in HCP Terraform",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/dynamic-provider-credentials",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-ASSOCIATE-004",
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-professional-blueprint",
+        "title": "Terraform Authoring and Operations Advanced exam content list",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+        "publisher": "HashiCorp",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ],
+        "notes": "Canonical six-domain Advanced objective map. The stable source id retains the former Professional name for data continuity. The current exam uses AWS; an Azure-provider version is expected in late 2026."
+      },
+      {
+        "id": "terraform-professional-learning-path",
+        "title": "Terraform Authoring and Operations Advanced learning path",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
+        "publisher": "HashiCorp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ],
+        "notes": "Official study route; allow about 20 to 35 hours for linked reading and implementation because the published landing-page time excludes the linked work."
+      },
+      {
+        "id": "terraform-professional-orientation",
+        "title": "Terraform Authoring and Operations Advanced exam orientation",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
+        "publisher": "HashiCorp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ],
+        "notes": "Official prerequisites, lab/multiple-choice format, environment constraints, available references, and AWS/Azure version status."
+      },
+      {
+        "id": "terraform-professional-practice-labs",
+        "title": "Terraform Advanced practice labs",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
+        "publisher": "HashiCorp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ],
+        "notes": "Official performance-practice entry point with cloud-provider labs. Allow about 4 to 10 hours for repeated practice; the page does not publish a combined lab runtime."
+      },
+      {
+        "id": "terraform-advanced-announcement",
+        "title": "Terraform Authoring and Operations Advanced announcement",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+        "publisher": "HashiCorp",
+        "authority_class": 1,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ],
+        "notes": "Canonical fall-2026 Professional-to-Advanced rename notice. Existing holders transition automatically; exam content and lab-based format are unchanged."
+      },
+      {
+        "id": "terraform-hcp-changelog",
+        "title": "HCP Terraform changelog",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+          "TERRAFORM-ASSOCIATE-004"
+        ],
+        "notes": "Recurring first-party release ledger for volatile HCP Terraform workspace, run, credential, governance, and platform behavior. September 28 TERRAFORM-ASSOCIATE-004 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-associate-004-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "terraform-tutorial-catalog",
+        "title": "Terraform tutorial catalog",
+        "url": "https://developer.hashicorp.com/terraform/tutorials",
+        "publisher": "HashiCorp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-cli-init-command",
+        "title": "Terraform init command reference",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/init",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-cli-plan-command",
+        "title": "Terraform plan command reference",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-import-blocks",
+        "title": "Terraform import blocks",
+        "url": "https://developer.hashicorp.com/terraform/language/import",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-sensitive-data",
+        "title": "Manage sensitive data in Terraform",
+        "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "terraform-remote-state",
+        "title": "Terraform remote state",
+        "url": "https://developer.hashicorp.com/terraform/language/state/remote",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "hcp-terraform-runs",
+        "title": "HCP Terraform runs",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/run",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "hcp-terraform-policy-enforcement",
+        "title": "HCP Terraform policy enforcement",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+        ]
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "2c0970ccb684c0350ba11ac6cbdcb3d1cefb81181c32f3612085ec93b2be56fe",
+      "guide_sections": [
+        "1. Manage resource lifecycle",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "418d45677beaff8249a8bf7922eb09a6a7aeacfe617ed8387d9d1041fda18c83",
+      "guide_sections": [
+        "1. Manage resource lifecycle",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "2913e8c6c08b6eb8e96d4b0b7edba2601b1cb70c320a7da32efb012d4002c382",
+      "guide_sections": [
+        "1. Manage resource lifecycle",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "bf2b3b48902cb504e7a12040be1662195a54cf384767cdc2892654c7d087a17c",
+      "guide_sections": [
+        "1. Manage resource lifecycle",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "b78d67cb27d5df12673c2cb54032de23e99ceed4c9f8335e1eaeef4bfb05afe0",
+      "guide_sections": [
+        "1. Manage resource lifecycle",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "0f933e26852badaab3d4b2159b6524ea70561359a2934ed510b3aa8fa73ea3db",
+      "guide_sections": [
+        "2. Develop and troubleshoot dynamic configuration",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "3620dac9f06b64e2ccca93ba074df1f1116acf72b54deb7aee5b7b8aaac12225",
+      "guide_sections": [
+        "2. Develop and troubleshoot dynamic configuration",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "ade031ea64ce90e028d339967cfd758826d95d470b35a4812083abbf025d8f83",
+      "guide_sections": [
+        "2. Develop and troubleshoot dynamic configuration",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c8093327b4d26999f8df011c3ea943e6c2d81e50a116173dff686266f696b564",
+      "guide_sections": [
+        "2. Develop and troubleshoot dynamic configuration",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "c38540ae88cbbe12a1c5b2a8e2adaf4479da44f806650d597b8eff7179ca9104",
+      "guide_sections": [
+        "2. Develop and troubleshoot dynamic configuration",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "d81a35034ab000015f1835ed9e8b83d02ff4f2f6ac6075a38fe424cdaa90219c",
+      "guide_sections": [
+        "2. Develop and troubleshoot dynamic configuration",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e67db442f74cdf47f48b1d232de4d52f43cb66783af9bfa9eb77cbed82833694",
+      "guide_sections": [
+        "3. Develop collaborative Terraform workflows",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "e9e80234165cd3bbbd57649ea2de14b30a511acd9905bdc22afd3e3d54c84ac0",
+      "guide_sections": [
+        "3. Develop collaborative Terraform workflows",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "0f2e715afd070daf07100712ca0493a04cfe2cc5733f46890ee9feffaabd04ce",
+      "guide_sections": [
+        "3. Develop collaborative Terraform workflows",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "771f24d948383868edc6e378cad1300fc519f8e23bc284d5af687fd561a9f482",
+      "guide_sections": [
+        "3. Develop collaborative Terraform workflows",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "cabdbb79b9d9319f656e5474325111331bb660d8b3a0cd8e73a2a91793b6f371",
+      "guide_sections": [
+        "4. Create, maintain, and use modules",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "abcf8db808d15ac6ae1c5b6478751946636d174d5c546eb4dc7f943e6d69f4d5",
+      "guide_sections": [
+        "4. Create, maintain, and use modules",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "7cbefc670ae2969243694bbe0fab837f44889794e5b7e0f931ecc1ac5b75aee8",
+      "guide_sections": [
+        "4. Create, maintain, and use modules",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "ea5cb5db49d7fe891fbb5e022dcce0fcbe1784ddeeeb77cffbe858aee74e5f7a",
+      "guide_sections": [
+        "4. Create, maintain, and use modules",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "cbb841c5fe41ee6eed410208e60e6d3e2cc2b0a700d1191d23b2136d2365cc27",
+      "guide_sections": [
+        "5. Configure and use providers",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "888bb0e2703b5c9230f61e6480f8123524a37175d91e80ac0316877eb3c00fae",
+      "guide_sections": [
+        "5. Configure and use providers",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "4ed4795bdfcc985c84cf0b024ed7be2690bc241dd58284ce9acbb8c6cf9fc3a8",
+      "guide_sections": [
+        "5. Configure and use providers",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "7bc0d9cb2a6c72d3e127a7aa33cab4344582e9a531f44f04f630e6298d5bedf6",
+      "guide_sections": [
+        "5. Configure and use providers",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "936422b04521a980543f5ca488c86d1caf0f08bb8011a3ee276c9d91674bd891",
+      "guide_sections": [
+        "6. Collaborate using HCP Terraform",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "212821a3eb8b80963b7694415237b9ea60183e3d410b1a9026bf6deb5c4f5b8a",
+      "guide_sections": [
+        "6. Collaborate using HCP Terraform",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "3eed5bc1521cd1061cf44b9d4d31f90250a781333bd53525890044824383bfc9",
+      "guide_sections": [
+        "6. Collaborate using HCP Terraform",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "c5cee8bbdc3abeff8ba4c9584bcf4e45c9bd6f1e346f500e8bf0e166ab817762",
+      "guide_sections": [
+        "6. Collaborate using HCP Terraform",
+        "Worked authoring and operations decisions",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "title": "Terraform Authoring and Operations Advanced",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+        "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\terraform-authoring-operations-professional-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\terraform-authoring-operations-professional-official-status.json",
+        "previous_sha256": "bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68",
+        "current_sha256": "bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68",
+        "previous_status_sha256": "485ab6a107afbfa3592a6010ff695e5daf4b74751664fc5879e4a4dc4ecf7f23",
+        "current_status_sha256": "485ab6a107afbfa3592a6010ff695e5daf4b74751664fc5879e4a4dc4ecf7f23",
+        "official_status": {
+          "skills_versions": [
+            "Exam Content List - Terraform Authoring and Operations Advanced"
+          ],
+          "upcoming_announcements": [
+            "The Terraform Authoring & Operations Advanced exam currently covers the AWS cloud provider. The Azure provider version is in active development, with expected launch in late 2026."
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 29,
+    "reachable": 28,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "terraform-provider-requirements",
+      "url": "https://developer.hashicorp.com/terraform/language/providers/requirements",
+      "checked_at": "2026-09-28T23:01:07.172658+00:00",
+      "health": {
+        "id": "terraform-provider-requirements",
+        "url": "https://developer.hashicorp.com/terraform/language/providers/requirements",
+        "checked_at": "2026-09-28T23:01:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/providers/requirements",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Provider Requirements - Configuration Language | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/providers/requirements",
+        "duration_signals": [],
+        "signal_fingerprint": "593498a0c81960600bc011b38e9ad5c9f2ad7c5b772797e960e8ec2e2ad49f85",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/providers/requirements",
+      "sha256": "0d01a124eebf0ed13c55a24e3ca032a057818241ab34a1b9431aaaf329675c02",
+      "text_characters": 16673
+    },
+    {
+      "id": "terraform-functions",
+      "url": "https://developer.hashicorp.com/terraform/language/functions",
+      "checked_at": "2026-09-28T23:01:07.173947+00:00",
+      "health": {
+        "id": "terraform-functions",
+        "url": "https://developer.hashicorp.com/terraform/language/functions",
+        "checked_at": "2026-09-28T23:01:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/functions",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Functions - Configuration Language | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/functions",
+        "duration_signals": [],
+        "signal_fingerprint": "a7bc187616261b27e92254f3caccbde74d5ea15721c15ded01acf0c096614bb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/functions",
+      "sha256": "08bbe4f2acaa634e34fdb0d86cb9bee6e667a7bc2dd0b5e8c0a82559ba0cc2d3",
+      "text_characters": 16341
+    },
+    {
+      "id": "terraform-custom-validation",
+      "url": "https://developer.hashicorp.com/terraform/language/validate",
+      "checked_at": "2026-09-28T23:01:07.174563+00:00",
+      "health": {
+        "id": "terraform-custom-validation",
+        "url": "https://developer.hashicorp.com/terraform/language/validate",
+        "checked_at": "2026-09-28T23:01:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/validate",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Validate your infrastructure in Terraform’s configuration language | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/validate",
+        "duration_signals": [],
+        "signal_fingerprint": "962a8a6ab4b8efd3f617174667a5e18279a114aa6db4a45734a2710fa0d4f4b8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/validate",
+      "sha256": "91a07b0304d81bad1c59c4e09b952d46c27518e31ff963bb182eca2d66c8bd6a",
+      "text_characters": 14896
+    },
+    {
+      "id": "terraform-modules-overview",
+      "url": "https://developer.hashicorp.com/terraform/language/modules",
+      "checked_at": "2026-09-28T23:01:07.734956+00:00",
+      "health": {
+        "id": "terraform-modules-overview",
+        "url": "https://developer.hashicorp.com/terraform/language/modules",
+        "checked_at": "2026-09-28T23:01:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/modules",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Modules overview | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/modules",
+        "duration_signals": [],
+        "signal_fingerprint": "efd2a6ec258633a6540e1301f0d2d64133dc9978d28f00f6fd5bfa621d9277e2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/modules",
+      "sha256": "0e3d04a7116108ce002b4dd6df840a007008fc8a72b3c363295a8aef54ecf8b5",
+      "text_characters": 2931
+    },
+    {
+      "id": "terraform-state-overview",
+      "url": "https://developer.hashicorp.com/terraform/language/state",
+      "checked_at": "2026-09-28T23:01:07.782978+00:00",
+      "health": {
+        "id": "terraform-state-overview",
+        "url": "https://developer.hashicorp.com/terraform/language/state",
+        "checked_at": "2026-09-28T23:01:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/state",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "State | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/state",
+        "duration_signals": [],
+        "signal_fingerprint": "12e48aa29374d5a044dc6e3929341fd380bc68bd441b5f8dd343f4cb67644116",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/state",
+      "sha256": "ce991bbaea1a237d70ddd716e3fca3da7fc271fbc70b98ae26db4335b70493f4",
+      "text_characters": 4430
+    },
+    {
+      "id": "hcp-terraform-workspaces",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces",
+      "checked_at": "2026-09-28T23:01:08.108054+00:00",
+      "health": {
+        "id": "hcp-terraform-workspaces",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "HCP Terraform workspaces | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces",
+        "duration_signals": [],
+        "signal_fingerprint": "189543b7f905a715102a544d638fea3954e1f2f3acfabed7f40dd5dbe375ec45",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces",
+      "sha256": "45a47411f8f94b6acd74e6dcaeccb3513b1b97d0d55c07117445cef9f6a0d6aa",
+      "text_characters": 6449
+    },
+    {
+      "id": "hcp-terraform-dynamic-credentials",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/dynamic-provider-credentials",
+      "checked_at": "2026-09-28T23:01:08.109367+00:00",
+      "health": {
+        "id": "hcp-terraform-dynamic-credentials",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/dynamic-provider-credentials",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/dynamic-provider-credentials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Dynamic provider credentials in HCP Terraform | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cloud-docs/dynamic-provider-credentials",
+        "duration_signals": [],
+        "signal_fingerprint": "49f0527246b603249beca65edb6dee71172e4c376f102819c51736d6073af420",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/dynamic-provider-credentials",
+      "sha256": "cc322c3ab5a829bda5b693c335d958418a69629dbf051f4e66d6a09d1c41a2d0",
+      "text_characters": 4534
+    },
+    {
+      "id": "terraform-professional-blueprint",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+      "checked_at": "2026-09-28T23:01:08.142605+00:00",
+      "health": {
+        "id": "terraform-professional-blueprint",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam Content List - Terraform Authoring and Operations Advanced | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+        "duration_signals": [
+          "4min"
+        ],
+        "signal_fingerprint": "baabcbbd7846afcc95fe7b73116f9da73c8584a5841a50379ee38c611e35bdbe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+      "sha256": "3693ae3badb51b043f7c6c8fb37ea7108feb66f12c6d4d77ea13ce0d44e6e618",
+      "text_characters": 5383
+    },
+    {
+      "id": "terraform-professional-learning-path",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
+      "checked_at": "2026-09-28T23:01:08.447604+00:00",
+      "health": {
+        "id": "terraform-professional-learning-path",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Learning Path - Terraform Authoring and Operations Advanced | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
+        "duration_signals": [
+          "4min"
+        ],
+        "signal_fingerprint": "4ca89cbb9239f98a7d9a4a3051fc59da62af217a9e28accfa1f0d800dcd27ac3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
+      "sha256": "d0d4b21a624dc19054fcf322ebf2309b0a747faef1f47acefd0ba9c40697edeb",
+      "text_characters": 4683
+    },
+    {
+      "id": "terraform-professional-orientation",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
+      "checked_at": "2026-09-28T23:01:08.487625+00:00",
+      "health": {
+        "id": "terraform-professional-orientation",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam Orientation - Terraform Authoring & Operations Advanced | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
+        "duration_signals": [
+          "5min"
+        ],
+        "signal_fingerprint": "62e628182bfe459da6ce6e95104662da9a7b444db92aeccc0040000d755c6ae5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
+      "sha256": "14fa5c40ac25b140744f66defd7f7caf456df2c9e3d381b2d0fcdc452b141345",
+      "text_characters": 5913
+    },
+    {
+      "id": "terraform-professional-practice-labs",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
+      "checked_at": "2026-09-28T23:01:08.510230+00:00",
+      "health": {
+        "id": "terraform-professional-practice-labs",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Practice labs - Get started | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
+        "duration_signals": [
+          "1min"
+        ],
+        "signal_fingerprint": "9f0fd1d830eed60964a39d180ba215bdd9570a6925342fd87a30e8f66ea2a12f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
+      "sha256": "d99abb2d067f173d47b686485cfa593f02d97038fce1c55e744202beeb25df71",
+      "text_characters": 1156
+    },
+    {
+      "id": "terraform-advanced-announcement",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+      "checked_at": "2026-09-28T23:01:08.768960+00:00",
+      "health": {
+        "id": "terraform-advanced-announcement",
+        "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Announcement- Terraform Authoring and Operations Advanced | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+        "duration_signals": [
+          "2min"
+        ],
+        "signal_fingerprint": "c466a177ad5c7fceb647c391a6902fd0d1b5e2578a081c94005f07e71987dbac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+      "sha256": "d5fb57fb3c2f54be205839ba27b931ebfdb05a4727af69dac58d6cec266df6fc",
+      "text_characters": 2277
+    },
+    {
+      "id": "terraform-hcp-changelog",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
+      "checked_at": "2026-09-28T23:01:08.835037+00:00",
+      "health": {
+        "id": "terraform-hcp-changelog",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Changelog | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
+        "duration_signals": [],
+        "signal_fingerprint": "d76b051b73fcb1de5a315abd8ec66523335129f6a53d7e722e476209d5209bfc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
+      "sha256": "579cac0657795c823bbc81b18990d847d5adfefa0eb3b4e2c2fcc70fdff24024",
+      "text_characters": 15485
+    },
+    {
+      "id": "terraform-tutorial-catalog",
+      "url": "https://developer.hashicorp.com/terraform/tutorials",
+      "checked_at": "2026-09-28T23:01:08.850289+00:00",
+      "health": {
+        "id": "terraform-tutorial-catalog",
+        "url": "https://developer.hashicorp.com/terraform/tutorials",
+        "checked_at": "2026-09-28T23:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/tutorials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Tutorials | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/tutorials",
+        "duration_signals": [
+          "11min",
+          "12min",
+          "14min",
+          "18min",
+          "23min",
+          "27min"
+        ],
+        "signal_fingerprint": "9044f041a5109ba07b90a0d7cad180f0820da5922691973f2820e89148d4783d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/tutorials",
+      "sha256": "5499c2a34cb2e53b6d5cccf99a17671f0bbc68a49d1d984c0cd7f215d062f099",
+      "text_characters": 3601
+    },
+    {
+      "id": "terraform-cli-init-command",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/init",
+      "checked_at": "2026-09-28T23:01:09.199884+00:00",
+      "health": {
+        "id": "terraform-cli-init-command",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/init",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cli/commands/init",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "terraform init command reference | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cli/commands/init",
+        "duration_signals": [],
+        "signal_fingerprint": "e14f4d3bcce52fae26756362d6975905df45e7e757d530230a8b479d0b355d1c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cli/commands/init",
+      "sha256": "6132ced4425a609549f6953bb12c31f52698a6e298d3eb6459db43d6150878d9",
+      "text_characters": 9635
+    },
+    {
+      "id": "terraform-cli-plan-command",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+      "checked_at": "2026-09-28T23:01:09.223553+00:00",
+      "health": {
+        "id": "terraform-cli-plan-command",
+        "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "terraform plan command reference | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+        "duration_signals": [],
+        "signal_fingerprint": "30a0860c300d17d5162882b9035a54a8a6f21ec77e43c19318390276eafeeb6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+      "sha256": "4ef2870f415437c3f414ae6a37fa7bf359d0151278bd07297f3c7c6eca29ed06",
+      "text_characters": 19938
+    },
+    {
+      "id": "terraform-import-blocks",
+      "url": "https://developer.hashicorp.com/terraform/language/import",
+      "checked_at": "2026-09-28T23:01:09.262433+00:00",
+      "health": {
+        "id": "terraform-import-blocks",
+        "url": "https://developer.hashicorp.com/terraform/language/import",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/import",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Import resources overview | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/import",
+        "duration_signals": [],
+        "signal_fingerprint": "84f0ecff346773586f29a9786dc56d8ee1507f22feefbc6f63a76adebaeecbef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/import",
+      "sha256": "49f26dfc2494f56ae41fc0db3dc2c70b56e5961568b6212f8888720fc240bdb8",
+      "text_characters": 2752
+    },
+    {
+      "id": "terraform-sensitive-data",
+      "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+      "checked_at": "2026-09-28T23:01:09.558879+00:00",
+      "health": {
+        "id": "terraform-sensitive-data",
+        "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Manage sensitive data in your configuration | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+        "duration_signals": [],
+        "signal_fingerprint": "9e77689f40a80cc0dccfafbdc480a2183aebadce967bc5ab37a240028d93286d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+      "sha256": "e086a940b4fc1f8d85706a214436ca8750cc6c96cddb8c8a653bbf4faa3f8963",
+      "text_characters": 12494
+    },
+    {
+      "id": "terraform-remote-state",
+      "url": "https://developer.hashicorp.com/terraform/language/state/remote",
+      "checked_at": "2026-09-28T23:01:09.610322+00:00",
+      "health": {
+        "id": "terraform-remote-state",
+        "url": "https://developer.hashicorp.com/terraform/language/state/remote",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/state/remote",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "State: Remote Storage | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/state/remote",
+        "duration_signals": [],
+        "signal_fingerprint": "799ca70820c486e2109c465d6ef93eccdb6f656cd4b105f5b32bb8b11dfd710b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/state/remote",
+      "sha256": "8e5c48366aaaeb2b95f02d0e7718152cd63eaa4194d3f996961e2643d0af0e19",
+      "text_characters": 2639
+    },
+    {
+      "id": "hcp-terraform-runs",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/run",
+      "checked_at": "2026-09-28T23:01:09.650969+00:00",
+      "health": {
+        "id": "hcp-terraform-runs",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/run",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/run/manage",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Manage and view runs in HCP Terraform | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/run/manage",
+        "duration_signals": [],
+        "signal_fingerprint": "2c4efb6c40790b4759b4db7136c6eb6b2345c726d0c8d67ada6f61b14bc0cb9d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/run/manage",
+      "sha256": "47bce2c4d75886b289309a9a2e8ad5a733c02c4b8d3c72b0dd4c7c8c6a0ff424",
+      "text_characters": 5752
+    },
+    {
+      "id": "hcp-terraform-policy-enforcement",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement",
+      "checked_at": "2026-09-28T23:01:09.964433+00:00",
+      "health": {
+        "id": "hcp-terraform-policy-enforcement",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Policy enforcement overview | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement",
+        "duration_signals": [],
+        "signal_fingerprint": "ed031216e70ea6b5090bf70321a254fe546a86699f9b9327456b9336b48a93e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement",
+      "sha256": "12b4185c8d4546ebbb396237268d1778761267b5bcff555a2ef0111734219373",
+      "text_characters": 4654
+    },
+    {
+      "id": "terraform-associate-004-blueprint",
+      "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+      "checked_at": "2026-09-28T23:01:09.964981+00:00",
+      "health": {
+        "id": "terraform-associate-004-blueprint",
+        "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Infrastructure Automation | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+        "duration_signals": [
+          "1 hour",
+          "4 hours"
+        ],
+        "signal_fingerprint": "77cfc01fe0e9f8d942d10e3a9787155dcad43f8037fef319acd65c1720cbfdee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+      "sha256": "a25376bce3189888c3e5d180ed4ffd4455710c8c1bfef5e38a9a2072c81b19b2",
+      "text_characters": 11050
+    },
+    {
+      "id": "terraform-tests-reference",
+      "url": "https://developer.hashicorp.com/terraform/language/tests",
+      "checked_at": "2026-09-28T23:01:10.358730+00:00",
+      "health": {
+        "id": "terraform-tests-reference",
+        "url": "https://developer.hashicorp.com/terraform/language/tests",
+        "checked_at": "2026-09-28T23:01:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/tests",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Tests - Configuration Language | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/tests",
+        "duration_signals": [],
+        "signal_fingerprint": "a94625e7df821ef681c63ad1592ec1f28b0639e89ee50f76ad791195f949967e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/tests",
+      "sha256": "133eaad5f0af5dd6346d07b7bb413019387f62c06803502f752cf12801e1cc4b",
+      "text_characters": 34346
+    },
+    {
+      "id": "terraform-module-provider-configs",
+      "url": "https://developer.hashicorp.com/terraform/language/modules/develop/providers",
+      "checked_at": "2026-09-28T23:01:10.420615+00:00",
+      "health": {
+        "id": "terraform-module-provider-configs",
+        "url": "https://developer.hashicorp.com/terraform/language/modules/develop/providers",
+        "checked_at": "2026-09-28T23:01:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/modules/develop/providers",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Providers Within Modules - Configuration Language | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/modules/develop/providers",
+        "duration_signals": [],
+        "signal_fingerprint": "ccca7904ed18bfb85f50afa0bbcc3ee62cf8ce51fc61fb32136827cb1efcfdea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/modules/develop/providers",
+      "sha256": "5bf0aba53df4de6c3831bf865d8d49b8b9b5c5d0b81f16967669789b1621c597",
+      "text_characters": 12124
+    },
+    {
+      "id": "terraform-module-refactoring",
+      "url": "https://developer.hashicorp.com/terraform/language/modules/develop/refactoring",
+      "checked_at": "2026-09-28T23:01:10.843658+00:00",
+      "health": {
+        "id": "terraform-module-refactoring",
+        "url": "https://developer.hashicorp.com/terraform/language/modules/develop/refactoring",
+        "checked_at": "2026-09-28T23:01:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/modules/develop/refactoring",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Refactor modules | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/modules/develop/refactoring",
+        "duration_signals": [],
+        "signal_fingerprint": "93506ba485b6a209b41b34061d925b96370d887525e07091f7ec6132d2ba9742",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/modules/develop/refactoring",
+      "sha256": "f36adb4b3f017c94286becb35f1d1fa3a63eb312289a31fa03201b3300810524",
+      "text_characters": 13575
+    },
+    {
+      "id": "terraform-remote-state-data",
+      "url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+      "checked_at": "2026-09-28T23:01:11.002176+00:00",
+      "health": {
+        "id": "terraform-remote-state-data",
+        "url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+        "checked_at": "2026-09-28T23:01:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The terraform_remote_state Data Source | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+        "duration_signals": [],
+        "signal_fingerprint": "17ffb2646e43ac99e818d9f7cfed934df8cde2894758ca46d5df4350a21edb32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+      "sha256": "86bfda3136cc005fa1d972117cf3e4da1b41164ccbdfe9ef0c346306ac12cad6",
+      "text_characters": 8084
+    },
+    {
+      "id": "terraform-16-testing-blog",
+      "url": "https://www.hashicorp.com/en/blog/terraform-1-6-adds-a-test-framework-for-enhanced-code-validation",
+      "checked_at": "2026-09-28T23:01:11.002683+00:00",
+      "health": {
+        "id": "terraform-16-testing-blog",
+        "url": "https://www.hashicorp.com/en/blog/terraform-1-6-adds-a-test-framework-for-enhanced-code-validation",
+        "checked_at": "2026-09-28T23:01:11+00:00",
+        "status": "blocked",
+        "http_status": 429,
+        "final_url": "https://www.hashicorp.com/en/blog/terraform-1-6-adds-a-test-framework-for-enhanced-code-validation",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Too Many Requests"
+      }
+    },
+    {
+      "id": "terraform-s3-backend",
+      "url": "https://developer.hashicorp.com/terraform/language/backend/s3",
+      "checked_at": "2026-09-28T23:01:11.160064+00:00",
+      "health": {
+        "id": "terraform-s3-backend",
+        "url": "https://developer.hashicorp.com/terraform/language/backend/s3",
+        "checked_at": "2026-09-28T23:01:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/language/backend/s3",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Backend Type: s3 | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/language/backend/s3",
+        "duration_signals": [
+          "12 hours",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "8a55ed9676ee2a33e5c7067d47b875b9a75fc2f8483f35020d9ff5a2c4f0c24d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/language/backend/s3",
+      "sha256": "91549d59067b9c39e5f656e2e10c6873f7c808bb6100ff889f265e7de9d765f1",
+      "text_characters": 28208
+    },
+    {
+      "id": "hcp-terraform-run-tasks",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks",
+      "checked_at": "2026-09-28T23:01:11.382714+00:00",
+      "health": {
+        "id": "hcp-terraform-run-tasks",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks",
+        "checked_at": "2026-09-28T23:01:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "HCP Terraform run tasks | Terraform | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks",
+        "duration_signals": [],
+        "signal_fingerprint": "2fa9a1575eccc64c282d51a5ded7cb98fcb496021dfecdbd9b3e1985fae6198d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks",
+      "sha256": "70c76807aaf12a3a606eb7477a4385195cb2d24b326dc9f2ea3f369a3158377f",
+      "text_characters": 7333
+    },
+    {
+      "id": "hashicorp-terraform-advanced-credential",
+      "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+      "checked_at": "2026-09-28T23:01:09.964981+00:00",
+      "health": {
+        "id": "hashicorp-terraform-advanced-credential",
+        "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+        "checked_at": "2026-09-28T23:01:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Infrastructure Automation | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+        "duration_signals": [
+          "1 hour",
+          "4 hours"
+        ],
+        "signal_fingerprint": "77cfc01fe0e9f8d942d10e3a9787155dcad43f8037fef319acd65c1720cbfdee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+      "sha256": "a25376bce3189888c3e5d180ed4ffd4455710c8c1bfef5e38a9a2072c81b19b2",
+      "text_characters": 11050
+    }
+  ],
+  "added_source_ids": [
+    "terraform-tests-reference",
+    "terraform-module-provider-configs",
+    "terraform-module-refactoring",
+    "terraform-remote-state-data",
+    "terraform-16-testing-blog",
+    "hcp-terraform-run-tasks",
+    "hashicorp-terraform-advanced-credential"
+  ],
+  "findings": [
+    {
+      "id": "terraformauthoringoperationsprofessional-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Advanced baseline was missing",
+      "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The current certification root states Terraform 1.6 for Advanced and 1.12 for Associate.",
+      "recommendation": "Add baseline and label newer syntax as practical context.",
+      "disposition": "applied",
+      "source_id": "hashicorp-terraform-advanced-credential",
+      "resolution": "Add baseline and label newer syntax as practical context."
+    },
+    {
+      "id": "terraformauthoringoperationsprofessional-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Test exercises lacked execution defaults",
+      "url": "https://developer.hashicorp.com/terraform/language/tests",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tests default to apply; mock providers start at 1.7, and expected failures target custom conditions.",
+      "recommendation": "Add 1.6-compatible plan tests and record local results.",
+      "disposition": "applied",
+      "source_id": "terraform-tests-reference",
+      "resolution": "Add 1.6-compatible plan tests and record local results."
+    },
+    {
+      "id": "terraformauthoringoperationsprofessional-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Output sharing needs an explicit trust boundary",
+      "url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Snapshot access can reveal more than outputs.",
+      "recommendation": "Clarify full-state exposure and add access-design case.",
+      "disposition": "applied",
+      "source_id": "terraform-remote-state-data",
+      "resolution": "Clarify full-state exposure and add access-design case."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "terraform-16-testing-blog",
+      "published_on": "2023-10-04",
+      "disposition": "accepted-with-limits",
+      "value": "Version-appropriate native test and saved-plan explanation.",
+      "limits": "Historical terminology; cloud features not executed; current reference and local 1.6.6 checks corroborate."
+    }
+  ],
+  "labs": {
+    "status": "passed",
+    "version": "1.6.6",
+    "platform": "windows_amd64",
+    "archive_checksum_verified": true,
+    "commands": [
+      {
+        "command": [
+          "terraform",
+          "init",
+          "-input=false",
+          "-no-color"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "fmt",
+          "-check"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "validate",
+          "-no-color"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-out=initial.tfplan"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "apply",
+          "-input=false",
+          "-no-color",
+          "initial.tfplan"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "show",
+          "-json"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "init",
+          "-input=false",
+          "-no-color"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "fmt",
+          "-recursive",
+          "-check"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "validate",
+          "-no-color"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "plan",
+          "-input=false",
+          "-no-color",
+          "-out=migration.tfplan"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "show",
+          "-json",
+          "migration.tfplan"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "apply",
+          "-input=false",
+          "-no-color",
+          "migration.tfplan"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "show",
+          "-json"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "init",
+          "-input=false",
+          "-no-color"
+        ],
+        "directory": "modules\\services",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "fmt",
+          "-recursive",
+          "-check"
+        ],
+        "directory": "modules\\services",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "test",
+          "-no-color"
+        ],
+        "directory": "modules\\services",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "plan",
+          "-destroy",
+          "-input=false",
+          "-no-color",
+          "-out=cleanup.tfplan"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "apply",
+          "-input=false",
+          "-no-color",
+          "cleanup.tfplan"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "terraform",
+          "state",
+          "list"
+        ],
+        "directory": ".",
+        "exit_code": 0
+      }
+    ],
+    "behavior_assertions": 5,
+    "native_test_runs": 3,
+    "scope": "Local built-in-provider adaptation of module-refactoring and validation labs; no cloud provider or HCP execution; state empty after cleanup."
+  },
+  "answered_checks": 20,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Only local built-in-provider adaptations of Labs 2–3 executed on Windows; Linux/cloud/HCP labs remain unexecuted.",
+    "Azure exam remains announced for late 2026; no precise launch date verified.",
+    "Testing article read through web retrieval; direct HTTP blocked. No paid training or exam content inspected."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local Terraform 1.6.6 module migration and native tests; no cloud/HCP or Linux exam environment.",
+    "native_terraform_tests": 3,
+    "local_behavior_assertions": 5
+  }
+}

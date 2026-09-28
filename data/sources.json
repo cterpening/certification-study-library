@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "hashicorp-terraform-advanced-credential",
+      "title": "HashiCorp Terraform Associate (004) certification and objectives",
+      "url": "https://developer.hashicorp.com/certifications/infrastructure-automation",
+      "publisher": "HashiCorp",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "notes": "Canonical exam page with the current 004 objectives, Terraform 1.12 baseline, exam details, 003-to-004 delta, and recertification information. HashiCorp publishes no percentage weights for the eight domains. September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-tests-reference",
+      "title": "Terraform tests",
+      "url": "https://developer.hashicorp.com/terraform/language/tests",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-module-provider-configs",
+      "title": "Providers within modules",
+      "url": "https://developer.hashicorp.com/terraform/language/modules/develop/providers",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-module-refactoring",
+      "title": "Refactor modules",
+      "url": "https://developer.hashicorp.com/terraform/language/modules/develop/refactoring",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-remote-state-data",
+      "title": "Remote state data source",
+      "url": "https://developer.hashicorp.com/terraform/language/state/remote-state-data",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-16-testing-blog",
+      "title": "Terraform 1.6 test framework",
+      "url": "https://www.hashicorp.com/en/blog/terraform-1-6-adds-a-test-framework-for-enhanced-code-validation",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "hcp-terraform-run-tasks",
+      "title": "HCP Terraform run tasks",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/workspaces/settings/run-tasks",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "terraform-s3-backend",
       "title": "Terraform S3 backend",
       "url": "https://developer.hashicorp.com/terraform/language/backend/s3",
@@ -11,10 +109,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "TERRAFORM-ASSOCIATE-004"
+        "TERRAFORM-ASSOCIATE-004",
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 TERRAFORM-ASSOCIATE-004 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-associate-004-deep-review.md No live infrastructure execution."
+      "notes": "September 28 TERRAFORM-ASSOCIATE-004 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-associate-004-deep-review.md No live infrastructure execution. September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
     },
     {
       "id": "terraform-ephemeral-blog",
@@ -17519,9 +17618,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"],
-      "notes": "Canonical exam page with the current 004 objectives, Terraform 1.12 baseline, exam details, 003-to-004 delta, and recertification information. HashiCorp publishes no percentage weights for the eight domains."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "TERRAFORM-ASSOCIATE-004"
+      ],
+      "notes": "Canonical exam page with the current 004 objectives, Terraform 1.12 baseline, exam details, 003-to-004 delta, and recertification information. HashiCorp publishes no percentage weights for the eight domains. September 28 TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md No live infrastructure execution."
     },
     {
       "id": "terraform-associate-004-content-list",

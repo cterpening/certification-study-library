@@ -2291,6 +2291,23 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 Use assessments to locate gaps, then verify explanations against HashiCorp documentation. The library did not find a separately verifiable current MeasureUp or exact Whizlabs Terraform Associate 004 product page during this review, so neither is listed as an assessment merely because those providers cover other certifications.
 
+### TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL — Terraform Authoring and Operations Advanced
+
+Resource details from the [TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL guide](../guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the official material, labs, instructor, and review format that fit your gaps. Times are approximate consumption time at normal speed; hands-on repetition, troubleshooting, notes, and prerequisite repair add substantial time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [HashiCorp Advanced learning path](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study) | Free; cloud exercises require an authorized sandbox | About 20–35 hours for linked reading and implementation (library estimate; the landing page's four-minute read time excludes linked work) | Authoritative ordered review of all six domains; production repetition remains necessary |
+| [Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) | Free | About 3–6 hours for an active documentation pass; longer when practicing gaps | Best objective-to-documentation checklist and current provider-version notice |
+| [Advanced exam orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation) | Free | About 20–40 minutes including notes and environment planning | First-party explanation of prerequisites, lab grading, environment, provider version, and permitted references |
+| [HashiCorp Advanced practice labs](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing) | Free; interactive labs and cloud-provider access vary | About 4–10 hours across repeated labs (library estimate because HashiCorp publishes only landing-page read time) | Public catalog currently lists AWS EC2 and Azure VM import activities; useful for import practice, not a complete seven-lab course or proof Azure exam booking is open. Repeat and verify state plus remote results |
+| [Terraform Associate (004) guide](../guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | Free | About 8–14 hours for targeted prerequisite review and selected labs | Repair core workflow, state, module, provider, and HCP gaps before advanced practice; not advanced-level preparation by itself |
+| [HashiCorp Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials) | Free; some exercises require HCP or cloud accounts | About 2–6 hours per selected operational gap | Use narrowly for import, refactoring, testing, automation, state, providers, modules, and HCP Terraform rather than consuming the entire catalog |
+
+No current third-party course was included as an exact end-to-end Terraform Authoring and Operations Advanced resource during this review. That is a catalog gap, not a claim that none exists. Evaluate any course against the current AWS/Azure exam-version notice and the official content list before investing substantial time.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

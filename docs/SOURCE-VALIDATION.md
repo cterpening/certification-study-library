@@ -424,6 +424,8 @@ The review checked all 38 published subobjectives without inventing percentage w
 
 ## TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL coverage record
 
+The September 28 [deep review](research/2026-09-28-terraform-authoring-operations-professional-deep-review.md) maps 27 detailed objectives. Map 27 objectives; distinguish Terraform 1.6 exam scope from newer features, explain migration/testing/access boundaries, answer 20 checks and verify local module identity and three tests. Current guide citations: 29 registered, 28 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Manage resource lifecycle | Domain 1, integrated professional playbook, and Labs 1–2 |
