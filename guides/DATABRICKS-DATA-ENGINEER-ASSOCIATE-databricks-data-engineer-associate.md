@@ -6,22 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # Databricks Certified Data Engineer Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 against all 33 detailed PDF objectives and seven weighted domains. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-engineer-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-DATA-ENGINEER-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
-**Current baseline:** Detailed official exam guide effective May 4, 2026; live weighted coverage page checked September 1, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 1, 2026. Databricks asks candidates to recheck the official exam guide close to the appointment.<br>
+**Current baseline:** Detailed official exam guide effective May 4, 2026, with 33 objective bullets; live weighted coverage page and linked PDF checked September 28, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026. Databricks asks candidates to recheck the official exam guide close to the appointment.<br>
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** 45 scored multiple-choice questions, 90 minutes, USD 200, no test aids, online or test-center delivery; English, Japanese, Brazilian Portuguese, and Korean were listed.<br>
 **Prerequisite:** None required. The official PDF recommends related training and six months of hands-on Databricks experience. SQL, basic Python/PySpark, ETL, cloud storage, and identity knowledge make the labs more useful.<br>
 **Code convention:** The official page says SQL is used where possible and Python otherwise.
+
+**VERIFY CURRENT — governance wording:** The PDF's Domain 7 includes `DENY`, but the [SQL DENY reference](https://docs.databricks.com/aws/en/sql/language-manual/security-deny) limits that statement to `hive_metastore`. A separate [Unity Catalog ABAC DENY beta](https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/deny-policies) supports `MANAGE_ACCESS_CONTROL`, not general `DENY SELECT`. Preserve the objective and distinguish these mechanisms; the library will recheck the unclear exam scope October 5. See the [review evidence](../docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md).
 
 ## How to use this guide
 
@@ -95,7 +97,7 @@ The official objectives explicitly include batch, streaming, incremental, local 
 
 ### Implement file ingestion deliberately
 
-`COPY INTO target FROM source FILEFORMAT = ...` tracks previously loaded files and is a simple choice for repeatable incremental batch loads. Understand target existence, source access, validation, schema and format options, and how a forced reload differs from normal idempotent behavior. Review the [COPY INTO reference](https://docs.databricks.com/aws/en/sql/language-manual/delta-copy-into).
+`COPY INTO target FROM source FILEFORMAT = ...` tracks previously loaded files and is a simple choice for repeatable incremental batch loads. Already loaded files are skipped even if their contents later change. A forced reload can create duplicate business records; file tracking is not deduplication by order or customer key. Understand target existence, source access, validation, schema and format options, and how a forced reload differs from normal idempotent behavior. Review the [COPY INTO reference](https://docs.databricks.com/aws/en/sql/language-manual/delta-copy-into).
 
 Auto Loader exposes the `cloudFiles` Structured Streaming source. Its state is not just the target table: checkpoint and schema locations are operational assets. The [Auto Loader overview](https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/) describes directory listing and file-notification modes; current guidance recommends managed file events for most suitable workloads. File notification improves discovery scale but does not guarantee arrival order.
 
@@ -110,6 +112,14 @@ raw = (
 ```
 
 Schema inference guesses a starting contract; schema evolution decides what happens when input changes; enforcement and rescue prevent silent corruption. Make an explicit choice among failing, adding columns, rescuing unexpected fields, quarantining bad records, or controlled type widening. Never equate “the stream ran” with “the data is acceptable.” Compare expected versus actual schema, parse errors, rescued-data rates, duplicates, missing keys, freshness, and source-to-target counts. Use current [schema-evolution guidance](https://docs.databricks.com/aws/en/data-engineering/schema-evolution).
+
+### Separate discovery, triggering and schema recovery
+
+Directory listing and file events describe **how files are discovered**, not whether the query is finite or continuously running. An AvailableNow trigger can drain currently available input through a bounded streaming run. Each independent query needs its own durable checkpoint; deleting or sharing checkpoints changes recovery assumptions.
+
+The [Auto Loader schema reference](https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/schema) documents an operational surprise: `addNewColumns` updates schema state, then stops the stream when it encounters a new field. A restart uses the evolved schema. Plan a supported restart and compatible target-table evolution; retrying cannot repair every type mismatch or missing permission. `rescue` instead captures unexpected fields without adding them to the schema. When an explicit schema is supplied, the default evolution behavior differs; choose it deliberately.
+
+The read snippet above does not start ingestion. A real lab also needs a configured streaming write, checkpoint, trigger and target, plus source/schema/target permissions. Verify persisted target rows and progress after restart; constructing a DataFrame is not proof of a completed load.
 
 ### Land semi-structured and unstructured data safely
 
@@ -145,21 +155,42 @@ For joins, reason about output grain before syntax:
 | left join | right-side duplication can multiply the left grain; unmatched values become null |
 | cross join | Cartesian growth; use only with a bounded intentional design |
 | broadcast join | avoid large shuffle for a genuinely small relation; measure and respect threshold/memory |
-| union | aligns by position unless using a name-aware form; schemas and duplicates need explicit handling |
+| union | SQL `UNION` deduplicates; PySpark `DataFrame.union` preserves duplicates and aligns by position. Choose name-aware alignment when required |
 | deduplication | define duplicate key and winner ordering; `distinct` is not a business survivorship rule |
+
+The [PySpark union reference](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.union.html) confirms that DataFrame union does not remove duplicate rows. `unionByName` addresses column alignment; business-key survivorship is still a separate rule.
+
+The following **batch** example selects the latest event before validating its amount. Assume timestamp/sequence metadata is typed and each `(order_id, source_updated_at, source_sequence)` tuple is unique; detect ambiguous ties first.
 
 ```python
 from pyspark.sql import functions as F, Window
 
-w = Window.partitionBy("order_id").orderBy(F.col("source_updated_at").desc())
-silver = (
-    bronze
-    .withColumn("amount", F.col("amount").cast("decimal(18,2)"))
+metadata_ok = (
+    F.col("order_id").isNotNull()
+    & F.col("source_updated_at").isNotNull()
+    & F.col("source_sequence").isNotNull()
+)
+missing_metadata = bronze.filter(~metadata_ok)
+w = Window.partitionBy("order_id").orderBy(
+    F.col("source_updated_at").desc(), F.col("source_sequence").desc()
+)
+latest = (
+    bronze.filter(metadata_ok)
     .withColumn("winner", F.row_number().over(w))
-    .filter((F.col("winner") == 1) & F.col("order_id").isNotNull())
+    .filter(F.col("winner") == 1)
     .drop("winner")
 )
+checked = latest.withColumn(
+    "amount_value", F.expr("try_cast(amount AS DECIMAL(18,2))")
+)
+amount_ok = F.col("amount_value").isNotNull() & (F.col("amount_value") >= 0)
+silver = checked.filter(amount_ok)
+quarantine = checked.filter(~amount_ok)
 ```
+
+Keep the original `amount` alongside the parsed value for diagnosis. The [TRY_CAST reference](https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast) explains malformed/overflow handling for supported conversions. An ordinary cast under ANSI behavior can fail the query; null substitution must be intentional. If a latest event is invalid, quarantine it rather than silently reviving an older valid value. Negative amounts are rejected here as an explicit exercise rule; a real returns model may allow them.
+
+This batch window is not a streaming deduplication recipe: a streaming workload needs supported state, watermark, late-data and update semantics. Reconcile source rows, missing metadata, superseded versions, accepted latest records and quarantined latest records separately.
 
 Validate row count, key uniqueness, null/type rules, accepted ranges, referential integrity, aggregation reconciliation, and rejected-record behavior. Test empty inputs, duplicate keys, malformed nested data, late arrivals, missing reference rows, and a rerun.
 
@@ -197,6 +228,8 @@ A Lakeflow Job is an orchestration definition; a task is a unit of work; a trigg
 - Define parameters, timeout, retry, notification, concurrency, and compute behavior.
 
 Control flow includes retry policies, `Run if` dependency outcomes, if/else branching, and for-each loops. Retries suit transient failures only when the task is idempotent or compensating. A permanent schema or permission error should fail clearly. Cleanup/notification tasks may need `All done` or failure-specific conditions. Review [job control flow](https://docs.databricks.com/aws/en/jobs/control-flow).
+
+[Run-if semantics](https://docs.databricks.com/aws/en/jobs/run-if) matter after branching. Excluded dependencies are treated differently from failures, and if **all** dependencies are excluded, the downstream task is also excluded regardless of its run-if condition. Thus `All done` is not an unconditional finally block. Give required cleanup an appropriate dependency path and test success, failure and all-excluded branches. Keep publication behind a real quality gate.
 
 ### Select a trigger from the freshness contract
 
@@ -274,6 +307,12 @@ Optimization has a before/after contract. Record workload, data version/volume, 
 
 External does not mean ungoverned. Avoid overlapping paths, bypass access through raw cloud credentials, and unclear ownership. Prefer the three-level namespace and stable owner groups.
 
+### Convert lifecycle deliberately
+
+Domain 7 also asks about conversion. Current [managed-conversion guidance](https://docs.databricks.com/aws/en/tables/convert-to-managed) documents `ALTER TABLE ... SET MANAGED` for an eligible external Delta table, preserving supported metadata and history. An external table uses neither `MOVE` nor `COPY`; those options belong to foreign-table conversion. Confirm source type, ownership, runtime/serverless requirements, clients, storage capacity and dependencies first.
+
+**VERIFY CURRENT:** External-table rollback with `UNSET MANAGED` is a bounded rollback of a prior conversion, currently documented within 14 days. It is not a universal command to turn any managed table into an external table. Do not simulate conversion with an unchecked drop/recreate or assume copied data preserves permissions/history. Add conversion and rollback checks to Lab 8 only in a disposable supported environment.
+
 ### Apply privilege hierarchy and separation of duties
 
 Unity Catalog authorization combines ownership and privileges on securables. A reader commonly needs `USE CATALOG`, `USE SCHEMA`, and `SELECT`; writers need the appropriate modification and traversal privileges; creators need the relevant `CREATE` privilege on a parent. Exact privileges depend on the object and action, so use the current [privileges reference](https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges).
@@ -284,7 +323,7 @@ GRANT USE SCHEMA ON SCHEMA prod_sales.gold TO `grp_sales_readers`;
 GRANT SELECT ON TABLE prod_sales.gold.daily_revenue TO `grp_sales_readers`;
 ```
 
-Grant to account groups and service principals, not individuals. Assign ownership to durable groups. `GRANT`, `REVOKE`, and where supported `DENY` have different semantics; check the applicable hierarchy and privilege model rather than assuming a cloud-IAM rule maps directly. Validate with a positive test and a negative test from the actual user or workload identity.
+Grant to account groups and service principals, not individuals. Assign ownership to durable groups. `REVOKE` removes a grant at its origin; it does not create an overriding denial of access inherited from another grant or group. Inspect the complete privilege path. The PDF's `DENY` wording remains an unresolved scope issue: legacy SQL `DENY` and the current limited ABAC DENY beta are different mechanisms. Do not issue a legacy `DENY SELECT` statement against a Unity Catalog object. Validate with a positive test and a negative test from the actual user or workload identity.
 
 ### Select the fine-grained control
 
@@ -314,7 +353,35 @@ Develop code in a Git folder on a feature branch. Package the transformation, te
 
 A job is green but late; one Spark task runs much longer, the target has duplicates, and analysts can see sensitive columns. Stop treating this as one “performance” issue. Use the Spark UI to prove skew, define a deterministic duplicate winner, revalidate the consumer grain, then measure a join/repartition correction. Apply least-privilege gold access plus a suitable mask or ABAC policy, including negative tests and runtime checks. Reconcile correctness before claiming the optimization succeeded.
 
+## Worked engineering decisions and useful reading
+
+These original cases are study exercises, not copies of vendor sample questions.
+
+1. **Recover a new-column stop:** Auto Loader saves an evolved schema and fails after discovering `promotion_code`. Retain checkpoint/schema state, verify the target accepts the new column and use the supported restart path. Deleting the checkpoint to make the error disappear can create replay problems.
+2. **Avoid stale fallback:** Order 2 has an older valid amount and a newer malformed amount. Rank all eligible events first, then quarantine the invalid latest record. Filtering invalid values before ranking would present obsolete data as current.
+3. **Trace an unexpected reader:** A direct table grant was revoked, but an account group still has catalog-level SELECT. Inspect inherited/group grants and remove access at the intended source. A local revoke is not a deny override; use the appropriate data-control design.
+4. **Prove a cleanup branch:** An if/else branch excludes every parent of an `All done` task. That task is also excluded. Redesign dependencies if cleanup must run for both branches and test the graph, including the no-data path.
+
+The March 24, 2026 [Auto Loader file-events article](https://community.databricks.com/t5/technical-blog/auto-loader-with-file-events-simplified-file-discovery-at-scale/ba-p/151203), by Databricks employee Murali Talluri, is useful for a 20–30-minute discovery-architecture worksheet. Trace storage events through the managed service/cache to independent stream checkpoints. Compare notification-resource ownership and permissions with classic notification mode.
+
+Corroborate the design with the [current file-events reference](https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/file-events-explained): first runs, migration and long inactivity can require directory listing. Managed events do not mean listing disappears or imply that a file-arrival job trigger has the same role as ingestion state. The article was readable through web retrieval; no cloud notifications or migration were executed here.
+
+## Diagnostic questions with answers
+
+1. **Does file-level idempotence prevent duplicate business events?** No. Two different files can carry the same order; forced reload can also repeat records.
+2. **Why can adding a column stop Auto Loader?** In add-new-columns mode it records the evolved schema before failing; recovery includes a supported restart and compatible target schema.
+3. **Are file notifications a streaming trigger?** They discover arrivals. The trigger controls execution cadence or a bounded run; checkpoint state controls progress.
+4. **Why rank before rejecting a bad latest amount?** Otherwise an older valid version can silently replace the current invalid event. Quarantine makes the defect visible.
+5. **Is one timestamp enough for deterministic deduplication?** Only if it uniquely orders each key; otherwise add a meaningful unique tie-breaker or reject ambiguity.
+6. **Does DataFrame union behave like SQL UNION?** It preserves duplicates and aligns by position; SQL UNION removes duplicate result rows.
+7. **Does All done always execute cleanup?** No. All-excluded dependencies exclude the task too; verify the actual branch graph.
+8. **Does bundle validation prove a deployed job works?** No. It checks configuration, while permissions, dependencies and output correctness need deployment/run evidence.
+9. **Can revoking one SELECT remove all read access?** No. Other direct, inherited or group grants may remain.
+10. **Is UNSET MANAGED a universal reverse conversion?** No. Current documentation describes a limited rollback path for a supported prior conversion.
+
 ## Hands-on labs
+
+**Execution boundary, September 28:** Twelve local Python reference-model assertions checked the declared latest-event/quarantine policy, including 25 input permutations. Both Python examples parsed successfully. This was not Spark or Databricks execution, and it does not test casting compatibility, streaming state, permissions or service behavior. All eight service labs remain proposed.
 
 1. **Platform and compute:** Run the same bounded SQL/DataFrame workload on two eligible compute options. Record startup, duration, execution evidence, isolation, supported features, and cost considerations; justify the choice.
 2. **`COPY INTO`:** Load a small file set twice, prove normal idempotent behavior, add one file, validate the increment, and test a malformed-record path.
@@ -364,6 +431,14 @@ A job is green but late; one Spark task runs much longer, the target has duplica
 - [ ] I can solve the three integrated scenarios without relying on product-name recognition alone.
 - [ ] I will recheck the live page and linked official PDF shortly before the exam.
 
+## Final review routine
+
+1. Reopen the official page and its linked PDF; compare title, weights, effective date, question/language/delivery details, and any change notice with this page.
+2. Mark every detailed PDF bullet `explain`, `implement`, `diagnose`, or `recheck`; close only the marked gaps.
+3. Complete at least one ingestion-to-gold build, one bundle deployment, one Spark diagnosis, and one negative-permission test from a fresh environment.
+4. Take one ethical assessment, classify misses by objective and decision error, and return to documentation/labs.
+5. Stop collecting resources when you can explain the mechanism, choose among alternatives, implement safely, and prove the result.
+
 ## Places to learn
 
 This is not a complete list and is not meant to be consumed in full. Pick one primary explanation route, use the official objectives as the gap list, build the labs, and add a practice source only for diagnosis. Times below are provider-listed where the page exposes them; otherwise they are clearly labeled planning estimates. Commercial content can lag the May 2026 blueprint, especially where it still says Repos, Delta Live Tables, or Asset Bundles without the current Git folders, Lakeflow Spark Declarative Pipelines, or Declarative Automation Bundles names.
@@ -375,21 +450,13 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 | [Get Started with Databricks for Data Engineering](https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons) | Free account; current hands-on onboarding | 4–8 hr planning estimate for demos/labs; no reliable public duration displayed |
 | [Databricks Free Edition](https://www.databricks.com/learn/free-edition) plus the eight labs in this guide | Free account; product limits apply | 12–24 hr |
 | [Databricks documentation](https://docs.databricks.com/aws/en/introduction/) | Public; select only objective gaps | 8–20 hr selected reading and implementation |
-| [Databricks Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/) by Derar Alhussein | O’Reilly subscription or purchase; February 2025 baseline | 9 hr 49 min provider estimate; allow 15–25 hr with labs and May 2026 gap check |
+| [Databricks Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/) by Derar Alhussein | O’Reilly subscription or purchase; February 2025 baseline | Previously recorded 9 hr 49 min provider estimate, not reverified because access was blocked; allow 15–25 hr with labs and May 2026 gap check |
 | [O’Reilly Databricks Data Engineer Associate Certification Prep in 2 Weeks](https://www.oreilly.com/live-events/databricks-data-engineer-associate-certification-prep-in-2-weeks/0636920093415/) | O’Reilly subscription/live-event availability | 16 hr provider duration across four sessions; verify current dates and start/end times |
-| [Pluralsight certification path](https://www.pluralsight.com/paths/databricks-certified-data-engineer-associate) | Subscription; path actively being produced | 43 min published now plus practice exam; seven-domain path incomplete on September 1, 2026 |
-| [Udemy preparation course by Derar Alhussein](https://www.udemy.com/course/databricks-certified-data-engineer-associate/) | Paid; updated August 2026 for May 2026 version | 6 hr 4 min video; allow 12–20 hr with exercises |
+| [Pluralsight certification path](https://www.pluralsight.com/paths/databricks-certified-data-engineer-associate) | Subscription; path actively being produced | 43 min published now plus practice exam; seven-domain path incomplete on September 28, 2026 |
+| [Udemy preparation course by Derar Alhussein](https://www.udemy.com/course/databricks-certified-data-engineer-associate/) | Paid; updated August 2026 for May 2026 version | Previously recorded 6 hr 4 min video; access blocked on September 28, so runtime/update metadata needs confirmation; allow 12–20 hr with exercises |
 | [LinkedIn Learning cert prep](https://www.linkedin.com/learning/databricks-certified-data-engineer-associate-cert-prep) | Subscription; released March 2025 | 2 hr 18 min; use as review and gap-check renamed/new May 2026 topics |
-| [Whizlabs certification training and practice](https://www.whizlabs.com/databricks-certified-data-engineer-associate/) | Paid; verify current blueprint, question count, labs, and displayed durations after sign-in | 6–15 hr planning estimate; provider page did not expose stable public totals |
+| [Whizlabs certification training and practice](https://www.whizlabs.com/databricks-certified-data-engineer-associate/) | Paid; verify current blueprint, question count, labs, and displayed durations after sign-in | 6–15 hr library planning estimate; current public retrieval returned no usable course detail, so verify syllabus and runtime |
 | Official sample questions inside the exam-guide PDF | Public; original vendor examples | 30–60 min plus remediation; do not memorize or redistribute |
 | [Databricks YouTube channel](https://www.youtube.com/@Databricks) | Public; select current product sessions | 2–6 hr selected viewing, then reproduce the demonstrations |
 
 No exact current MeasureUp product was independently verified. Avoid products claiming real, leaked, recalled, or guaranteed exam questions. Practice should test reasoning against documentation and hands-on behavior, not reproduce protected exam content.
-
-## Final review routine
-
-1. Reopen the official page and its linked PDF; compare title, weights, effective date, question/language/delivery details, and any change notice with this page.
-2. Mark every detailed PDF bullet `explain`, `implement`, `diagnose`, or `recheck`; close only the marked gaps.
-3. Complete at least one ingestion-to-gold build, one bundle deployment, one Spark diagnosis, and one negative-permission test from a fresh environment.
-4. Take one ethical assessment, classify misses by objective and decision error, and return to documentation/labs.
-5. Stop collecting resources when you can explain the mechanism, choose among alternatives, implement safely, and prove the result.

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review](docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md): map 33 objectives; track DENY scope mismatch; repair schema recovery, deterministic survivorship, union and job-branch guidance; add conversion coverage and bounded model checks.
+
 - September 28, 2026: [DATABRICKS-DATA-ANALYST-ASSOCIATE deep review](docs/research/2026-09-28-databricks-data-analyst-associate-deep-review.md): map 39 detailed objectives; distinguish Genie product terminology and access identities; repair identifier/null examples; add ten answers and verify 18 portable SQL assertions.
 
 - September 28, 2026: [VAULT-OPERATIONS-PROFESSIONAL deep review](docs/research/2026-09-28-vault-operations-professional-deep-review.md): confirm the 1.16 baseline/rename; strengthen audit, health, seal, Sentinel and Agent guidance; add worked decisions and 20 answers; verify local ACL/audit behavior.

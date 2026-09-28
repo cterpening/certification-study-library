@@ -932,6 +932,8 @@ The review reconciles the detailed official PDF current as of October 30, 2025 w
 
 ## Databricks Data Engineer Associate coverage record
 
+The September 28 [deep review](research/2026-09-28-databricks-data-engineer-associate-deep-review.md) maps 33 detailed objectives. Map 33 PDF objectives; track DENY scope mismatch, teach schema restart and lifecycle conversion, repair deterministic batch survivorship and union semantics, explain excluded job branches, and add ten answers plus twelve bounded model assertions. Current guide citations: 37 registered, 34 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Databricks Intelligence Platform | Section 1, all integrated scenarios, and Lab 1 |

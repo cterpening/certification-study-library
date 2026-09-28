@@ -3,6 +3,118 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "databricks-autoloader-schema",
+      "title": "Auto Loader schema inference and evolution",
+      "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/schema",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "databricks-dea-deny-command",
+      "title": "SQL DENY command scope",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/security-deny",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "databricks-dea-abac-deny-beta",
+      "title": "ABAC DENY policy beta scope",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/abac/deny-policies",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "databricks-dea-convert-managed",
+      "title": "Convert external or foreign Delta tables to managed",
+      "url": "https://docs.databricks.com/aws/en/tables/convert-to-managed",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "databricks-job-run-if",
+      "title": "Lakeflow Jobs dependency conditions",
+      "url": "https://docs.databricks.com/aws/en/jobs/run-if",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "databricks-autoloader-file-events",
+      "title": "Auto Loader file event discovery",
+      "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/file-events-explained",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "databricks-dea-file-events-blog",
+      "title": "Auto Loader with File Events: Simplified File Discovery at Scale",
+      "url": "https://community.databricks.com/t5/technical-blog/auto-loader-with-file-events-simplified-file-discovery-at-scale/ba-p/151203",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "databricks-spark-union",
+      "title": "PySpark DataFrame union semantics",
+      "url": "https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.union.html",
+      "publisher": "Apache Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "databricks-genie-agent-setup",
       "title": "Create and manage a Genie Agent",
       "url": "https://docs.databricks.com/aws/en/genie-agents/set-up",
@@ -81,10 +193,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 DATABRICKS-DATA-ANALYST-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-analyst-associate-deep-review.md No live infrastructure execution."
+      "notes": "September 28 DATABRICKS-DATA-ANALYST-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-analyst-associate-deep-review.md No live infrastructure execution. September 28 DATABRICKS-DATA-ENGINEER-ASSOCIATE deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md No live infrastructure execution."
     },
     {
       "id": "databricks-sql-cache",

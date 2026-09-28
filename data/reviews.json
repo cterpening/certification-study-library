@@ -3913,26 +3913,86 @@
       "notes": "Entire guide and 75 June 2025 objectives mapped; prior 17-row summary preserved. Six worked examples, ten labs, 48 answered checks, one executed local recipient model and 32 assertions. Clarify try/commit/API transactions, sandbox read-scale limits, upgrades/permissions, HTTP/deprecations and catalog/blog scope. No AL or tenant execution; independent human review pending. See docs/research/2026-09-28-mb-820-deep-review.md"
     },
     {
-      "id": "databricks-data-engineer-associate-2026-09-01-source-validation",
+      "id": "databricks-data-engineer-associate-2026-09-28-source-validation",
       "exam_code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
       "guide_path": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-engineer-associate-official-objectives.txt",
       "blueprint_snapshot_sha256": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
       "objective_coverage": [
-        {"objective_group": "Databricks Intelligence Platform", "guide_sections": ["Section 1", "All integrated scenarios", "Lab 1"]},
-        {"objective_group": "Data Ingestion and Loading", "guide_sections": ["Section 2", "Governed-incremental-orders scenario", "Labs 2–3"]},
-        {"objective_group": "Data Transformation and Modeling", "guide_sections": ["Section 3", "Governed-incremental-orders and slow-consumer scenarios", "Labs 4 and 7"]},
-        {"objective_group": "Working with Lakeflow Jobs", "guide_sections": ["Section 4", "Governed-incremental-orders scenario", "Lab 5"]},
-        {"objective_group": "Implementing CI/CD", "guide_sections": ["Section 5", "Multi-environment-pipeline scenario", "Lab 6"]},
-        {"objective_group": "Troubleshooting, Monitoring, and Optimization", "guide_sections": ["Section 6", "Slow-and-unsafe-consumer scenario", "Lab 7"]},
-        {"objective_group": "Governance and Security", "guide_sections": ["Section 7", "All integrated scenarios", "Lab 8"]}
+        {
+          "objective_group": "Databricks Intelligence Platform",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Data Ingestion and Loading",
+          "guide_sections": [
+            "Section 2",
+            "Governed-incremental-orders scenario",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Data Transformation and Modeling",
+          "guide_sections": [
+            "Section 3",
+            "Governed-incremental-orders and slow-consumer scenarios",
+            "Labs 4 and 7"
+          ]
+        },
+        {
+          "objective_group": "Working with Lakeflow Jobs",
+          "guide_sections": [
+            "Section 4",
+            "Governed-incremental-orders scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Implementing CI/CD",
+          "guide_sections": [
+            "Section 5",
+            "Multi-environment-pipeline scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting, Monitoring, and Optimization",
+          "guide_sections": [
+            "Section 6",
+            "Slow-and-unsafe-consumer scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Governance and Security",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 28, "reachable": 27, "access_blocked": 1, "missing_or_error": 0},
-      "notes": "The May 4, 2026 detailed PDF and live seven-domain weighted page were reconciled. All objectives map to mechanism, selection, state, identity, evidence, failure and recovery decisions. Three scenarios, eight labs and 36 original checks cover platform/compute, five ingestion patterns, schema/replay, PySpark/SQL transformation, joins/modeling/quality/tuning, Lakeflow Jobs control flow/triggers, Git folders and Declarative Automation Bundles, run/Spark diagnosis, managed/external lifecycle and Unity Catalog privileges/fine-grained controls. All 28 guide URLs are cataloged: 27 reachable and the O'Reilly book automation-blocked; none missing or broken. Commercial duration and freshness limitations are explicit, and vendor sample questions are linked rather than reproduced."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 37,
+        "reachable": 34,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Map 33 PDF objectives; track DENY scope mismatch, teach schema restart and lifecycle conversion, repair deterministic batch survivorship and union semantics, explain excluded job branches, and add ten answers plus twelve bounded model assertions. See docs/research/2026-09-28-databricks-data-engineer-associate-deep-review.md"
     },
     {
       "id": "databricks-data-analyst-associate-2026-09-28-source-validation",

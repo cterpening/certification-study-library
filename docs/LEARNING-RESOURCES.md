@@ -2360,6 +2360,30 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 Use practice questions to diagnose a domain and explain every option from the official guide and documentation. Do not memorize recalled live-exam content. Recheck the live weighted page, linked PDF, course replacement note and volatile AI/BI behavior near the appointment.
 
+### DATABRICKS-DATA-ENGINEER-ASSOCIATE — Databricks Certified Data Engineer Associate
+
+Resource details from the [DATABRICKS-DATA-ENGINEER-ASSOCIATE guide](../guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not meant to be consumed in full. Pick one primary explanation route, use the official objectives as the gap list, build the labs, and add a practice source only for diagnosis. Times below are provider-listed where the page exposes them; otherwise they are clearly labeled planning estimates. Commercial content can lag the May 2026 blueprint, especially where it still says Repos, Delta Live Tables, or Asset Bundles without the current Git folders, Lakeflow Spark Declarative Pipelines, or Declarative Automation Bundles names.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official certification page](https://www.databricks.com/learn/certification/data-engineer-associate) and [May 4, 2026 exam guide](https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf) | Public | 1–2 hr to map objectives and recheck details |
+| Six self-paced courses named in the official PDF through [Databricks Academy](https://customer-academy.databricks.com/) | Free account or customer/partner Academy entitlement; catalog visibility varies | 18–30 hr planning estimate including labs; vendor does not expose a stable public total |
+| [Get Started with Databricks for Data Engineering](https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons) | Free account; current hands-on onboarding | 4–8 hr planning estimate for demos/labs; no reliable public duration displayed |
+| [Databricks Free Edition](https://www.databricks.com/learn/free-edition) plus the eight labs in this guide | Free account; product limits apply | 12–24 hr |
+| [Databricks documentation](https://docs.databricks.com/aws/en/introduction/) | Public; select only objective gaps | 8–20 hr selected reading and implementation |
+| [Databricks Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/) by Derar Alhussein | O’Reilly subscription or purchase; February 2025 baseline | Previously recorded 9 hr 49 min provider estimate, not reverified because access was blocked; allow 15–25 hr with labs and May 2026 gap check |
+| [O’Reilly Databricks Data Engineer Associate Certification Prep in 2 Weeks](https://www.oreilly.com/live-events/databricks-data-engineer-associate-certification-prep-in-2-weeks/0636920093415/) | O’Reilly subscription/live-event availability | 16 hr provider duration across four sessions; verify current dates and start/end times |
+| [Pluralsight certification path](https://www.pluralsight.com/paths/databricks-certified-data-engineer-associate) | Subscription; path actively being produced | 43 min published now plus practice exam; seven-domain path incomplete on September 28, 2026 |
+| [Udemy preparation course by Derar Alhussein](https://www.udemy.com/course/databricks-certified-data-engineer-associate/) | Paid; updated August 2026 for May 2026 version | Previously recorded 6 hr 4 min video; access blocked on September 28, so runtime/update metadata needs confirmation; allow 12–20 hr with exercises |
+| [LinkedIn Learning cert prep](https://www.linkedin.com/learning/databricks-certified-data-engineer-associate-cert-prep) | Subscription; released March 2025 | 2 hr 18 min; use as review and gap-check renamed/new May 2026 topics |
+| [Whizlabs certification training and practice](https://www.whizlabs.com/databricks-certified-data-engineer-associate/) | Paid; verify current blueprint, question count, labs, and displayed durations after sign-in | 6–15 hr library planning estimate; current public retrieval returned no usable course detail, so verify syllabus and runtime |
+| Official sample questions inside the exam-guide PDF | Public; original vendor examples | 30–60 min plus remediation; do not memorize or redistribute |
+| [Databricks YouTube channel](https://www.youtube.com/@Databricks) | Public; select current product sessions | 2–6 hr selected viewing, then reproduce the demonstrations |
+
+No exact current MeasureUp product was independently verified. Avoid products claiming real, leaked, recalled, or guaranteed exam questions. Practice should test reasoning against documentation and hands-on behavior, not reproduce protected exam content.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
