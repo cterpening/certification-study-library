@@ -4,6 +4,179 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-dopc02-deep-review",
+      "title": "DOP-C02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DOP-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "DOP-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+          "baseline_sha256": "ea5c7b3e4da4e1a4da71d299dd0c173946f328ab26b71484a7aaca6acd3baf74",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read root, credential, scope and 140 detailed bullets across 19 tasks; Korean retirement unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read ECS controller/strategy behavior, metric streams, lifecycle notices, X-Ray and queue scaling; correct learner prerequisites."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read September 21 ECS observability notice and selected May 8 blog sections."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Read public Pluralsight and Dojo metadata; qualify legacy labels, practice marketing and blocked/shell content."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "App Runner product page and API notice disagree on historical new-customer closure date; preserve both. Other learner gaps corrected."
+            }
+          },
+          "findings": [
+            {
+              "id": "dopc02-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "ECS native strategies missing",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DOP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ECS controller supports rolling, blue-green, linear and canary alongside separate CodeDeploy controller.",
+              "recommendation": "Add explicit controller/strategy comparison and update older task-set-only wording.",
+              "disposition": "applied",
+              "source_id": "aws-ecs-strategies",
+              "resolution": "Add explicit controller/strategy comparison and update older task-set-only wording."
+            },
+            {
+              "id": "dopc02-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Near-term Proton shutdown missing",
+              "url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DOP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Support ends October 7, 2026; deployed infrastructure remains.",
+              "recommendation": "Add migration and resource-ownership boundary with historical scope context.",
+              "disposition": "applied",
+              "source_id": "aws-proton-retirement",
+              "resolution": "Add migration and resource-ownership boundary with historical scope context."
+            },
+            {
+              "id": "dopc02-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New-account incident lab dependency unavailable",
+              "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DOP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Incident Manager closed to new customers November 7, 2025.",
+              "recommendation": "Separate existing-service recognition from new learner lab route.",
+              "disposition": "applied",
+              "source_id": "aws-incidentmanager-availability",
+              "resolution": "Separate existing-service recognition from new learner lab route."
+            },
+            {
+              "id": "dopc02-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Task 4.1 streaming telemetry gap",
+              "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DOP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Metric streams and log subscriptions transport different signals.",
+              "recommendation": "Add Firehose delivery and metric-filter distinctions.",
+              "disposition": "applied",
+              "source_id": "aws-cloudwatch-metric-streams",
+              "resolution": "Add Firehose delivery and metric-filter distinctions."
+            },
+            {
+              "id": "dopc02-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "New ECS deployment evidence view",
+              "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DOP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 21 release adds native strategy deployment timeline and diagnostic context.",
+              "recommendation": "Add current console evidence pointer without claiming observed deployment success.",
+              "disposition": "applied",
+              "source_id": "aws-ecs-deployment-observability",
+              "resolution": "Add current console evidence pointer without claiming observed deployment success."
+            },
+            {
+              "id": "dopc02-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Conflicting App Runner closure dates",
+              "url": "https://aws.amazon.com/apprunner/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DOP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Product page April 30, 2026; API notice March 31, 2026.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Review 140 detailed bullets; update ECS deployments and lifecycle boundaries, metric streams, queue scaling, and five original operating decisions. Same-context AI review; human review pending. See docs/research/2026-09-28-dop-c02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-saac03-deep-review",
       "title": "SAA-C03 complete guide and learning-content review",
       "rubric_version": 1,

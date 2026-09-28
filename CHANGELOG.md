@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [DOP-C02 deep review](docs/research/2026-09-28-dop-c02-deep-review.md): map 140 bullets, update native ECS deployments and service lifecycle, add five worked operating decisions; retain App Runner date conflict.
+
 - September 28, 2026: [SAA-C03 deep review](docs/research/2026-09-28-saa-c03-deep-review.md): map 189 bullets, record Italian delivery retirement, clarify consistency/storage/scaling, repair order publication and add five worked decisions.
 
 - September 28, 2026: [DEA-C01 deep review](docs/research/2026-09-28-dea-c01-deep-review.md): map 120 skills, add 40 answers and five worked cases, fill pipeline engineering gaps, and update Redshift/CloudTrail Lake and managed-table guidance.

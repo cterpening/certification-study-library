@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-28
 ---
 
 # DOP-C02 AWS Certified DevOps Engineer - Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dop-c02-coverage-record). The [official DOP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 140 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dop-c02-coverage-record). The [official DOP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html) is authoritative.
 
 **Current baseline:** Current six-domain DOP-C02 AWS Certified DevOps Engineer - Professional guide; 65 scored plus 10 unscored questions<br>
-**Upcoming delivery change:** AWS says the Korean language version retires after December 31, 2026. This is a language-specific delivery change; the DOP-C02 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
+**Upcoming delivery change:** AWS says the Korean language version retires after December 31, 2026. This is a language-specific delivery change; the DOP-C02 blueprint remains the current study baseline. Checked September 28, 2026. See the [deep-review report](../docs/research/2026-09-28-dop-c02-deep-review.md).<br>
 **Important freshness boundary:** DOP-C02 remains current, but AWS delivery, observability, governance, container, and security services evolve inside an unchanged exam code. Validate features, regions, quotas, integrations, pricing, and learning metadata. Do not confuse older DOP-C01 domains or legacy service workflows with the current contract.<br>
 **Official source:** [AWS Certified DevOps Engineer - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html)
 
@@ -60,7 +60,7 @@ The official [Domain 1 page](https://docs.aws.amazon.com/aws-certification/lates
 
 A trustworthy pipeline records source revision, dependency lock, build environment, commands, tests, scan results, artifact digest, configuration/infrastructure version, approvals, identity, target, deployment result, and rollback evidence. Build an artifact once and promote the same immutable bytes or image digest through environments. Rebuilding “the same” source for production can change dependencies or tooling and destroys provenance.
 
-CodePipeline can orchestrate stages and actions; CodeBuild supplies managed builds/tests; CodeDeploy manages supported instance, ECS, and Lambda deployment patterns; CodeArtifact stores supported packages; ECR stores container images; S3 can hold pipeline artifacts. Third-party repositories and delivery tools can participate. Choose from organizational integration, runner isolation, cross-account role model, artifact provenance, target platform, deployment control, and supportability—not from an assumption that every pipeline must use every Code service.
+CodePipeline can orchestrate stages and actions; CodeBuild supplies managed builds/tests; CodeDeploy manages supported instance, ECS, and Lambda deployment patterns; CodeArtifact stores supported packages; ECR stores container images; S3 can hold pipeline artifacts. [CodeCommit reopened to new customers on November 25, 2025](https://docs.aws.amazon.com/codecommit/latest/userguide/history.html); older closure advice is obsolete. Third-party repositories and delivery tools can participate. Choose from organizational integration, runner isolation, cross-account role model, artifact provenance, target platform, deployment control, and supportability—not from an assumption that every pipeline must use every Code service.
 
 For multi-account delivery, keep the pipeline/tooling account separate where appropriate, store artifacts under controlled policy/encryption, assume narrowly scoped deployment roles in targets, and let target-side resource policies/key policies trust only required principals. Avoid copying permanent credentials to runners. Record source and destination accounts/Regions and test cross-account KMS/S3/ECR access before production.
 
@@ -95,7 +95,19 @@ EC2 Image Builder can create/test/distribute AMIs and container images through p
 | Canary / linear | Limits initial exposure and gathers evidence | Requires representative traffic, alarms, bake time, gates, and automatic stop |
 | All-at-once | Fast and cheap for tolerant workloads | Largest blast radius and interruption risk |
 
-EC2/Auto Scaling, ECS, EKS, Lambda, and Elastic Beanstalk have different deployment primitives. Define pre/post hooks, health/acceptance signals, maximum unavailable, traffic increments, bake time, alarm set, timeout, database compatibility, and rollback trigger. Lambda aliases and CodeDeploy can shift versions; ECS blue/green uses task sets/traffic routing; Kubernetes adds rollout/controller/readiness behavior that must be observed separately.
+EC2/Auto Scaling, ECS, EKS, Lambda, and Elastic Beanstalk have different deployment primitives. Define pre/post hooks, health/acceptance signals, maximum unavailable, traffic increments, bake time, alarm set, timeout, database compatibility, and rollback trigger. Lambda aliases and CodeDeploy can shift versions; ECS has native deployment strategies as well as a separate CodeDeploy controller; Kubernetes adds rollout/controller/readiness behavior that must be observed separately.
+
+For [ECS deployment controllers and strategies](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html), distinguish the following:
+
+| Controller / strategy | Traffic behavior | Evidence to inspect |
+|---|---|---|
+| ECS / rolling | Scheduler replaces task batches | Capacity, task startup, health, allowed overlap |
+| ECS / blue-green | New service revision, then full traffic shift | Test route, hook result, traffic shift, bake time |
+| ECS / linear | Equal traffic increments | Per-step latency/error signal and stop condition |
+| ECS / canary | Small initial share, then remaining traffic | Representative canary sample before promotion |
+| CodeDeploy / blue-green | Replacement task set with its deployment configuration | CodeDeploy deployment group, hooks, routing and alarms |
+
+Do not copy task-set/controller commands between these workflows without checking compatibility. The [May 8 gradual-deployment article](https://aws.amazon.com/blogs/containers/gradual-deployments-in-amazon-ecs-with-linear-and-canary-strategies/) provides a useful architecture and alarm walkthrough. Read the strategy, observability and prerequisite sections first; the commands were not executed for this guide. A rollback hook can add latency, an error-count metric is not an error rate without a denominator, and switching compute cannot reverse incompatible database writes. The [September 21 console update](https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/) adds a deployment timeline with traffic, health and hook context for native linear/canary/blue-green services; confirm customer recovery through the application too.
 
 Database and event-schema changes should be backward/forward compatible across the overlap window. Use expand/migrate/contract where appropriate: add compatible structures, deploy code that supports both states, migrate/verify, then remove old structures later. A compute rollback cannot undo a destructive schema change.
 
@@ -125,6 +137,14 @@ Systems Manager supports parameter/configuration, inventory, Patch Manager, Stat
 
 Use launch templates, AMIs/images, user data, bootstrap, configuration agents, containers, and SSM according to immutability and runtime needs. Prefer immutable replacement for foundational change where possible; use controlled configuration management for settings that legitimately change in place. Detect/reconcile drift or deliberately import/update the desired state—do not silently accept unmanaged mutations.
 
+### Recognize historical services without building on unavailable tooling
+
+The exam still names OpsWorks, CodeStar and Proton. The [AWS shutdown reference](https://docs.aws.amazon.com/general/latest/gr/elastictranscoder.html) lists OpsWorks and the CodeStar project service as already shut down. Learn their configuration-management and project-orchestration roles, then use supported IaC, Systems Manager and pipeline components in new labs. CodeStar project retirement does not retire every separately named connection API.
+
+[Proton support ends October 7, 2026](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html), after closing to new customers October 7, 2025. Preserve templates, deployment ownership and pipeline definitions when planning migration. Existing deployed CloudFormation infrastructure remains; loss of the delivery/control service is still an operational problem. A replacement needs explicit resource/state ownership rather than duplicate provisioning.
+
+App Runner is also in scope but closed to new customers. Its [product page](https://aws.amazon.com/apprunner/) gives April 30, 2026, while its [API notice](https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html) gives March 31, 2026. The exact historical date remains an unresolved vendor discrepancy. Both dates are past; use an eligible supported deployment route for a new lab.
+
 ### Automate multi-account foundations
 
 AWS Organizations provides account hierarchy and policy governance; Control Tower establishes/governs a landing zone; Organizations APIs/account factory workflows, CloudFormation StackSets, RAM, IAM Identity Center, Config aggregators, CloudTrail organization trails, Security Hub/GuardDuty delegated administration, and centralized logging can support account onboarding.
@@ -147,7 +167,7 @@ The official [Domain 3 page](https://docs.aws.amazon.com/aws-certification/lates
 
 Define availability target, traffic shape, dependency graph, failure modes, RTO/RPO, capacity margin, and data correctness. Multi-AZ placement is useful only when routing, capacity, state, dependencies, and deployment all survive a zone loss. Multi-Region adds data-consistency, routing, identity/key, quota, artifact, observability, and operating complexity.
 
-Auto Scaling policies should use workload-correlated metrics and include min/max/desired, warmup, cooldown, lifecycle hooks, health checks, quotas, subnet space, placement, mixed instances/Spot behavior, and downstream limits. Use queues to absorb bursts and isolate producers/consumers; scale on backlog age/depth where appropriate. Make consumers idempotent and own DLQ redrive.
+Auto Scaling policies should use workload-correlated metrics and include min/max/desired, warmup, cooldown, lifecycle hooks, health checks, quotas, subnet space, placement, mixed instances/Spot behavior, and downstream limits. Use queues to absorb bursts and isolate producers/consumers; use queue age to detect delay and a proportional [backlog-per-instance metric](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) for target tracking where appropriate. Derive its target from acceptable queue delay divided by per-message processing time, then validate arrival rate and worker warmup. Make consumers idempotent and own DLQ redrive.
 
 Use ELB and Route 53 health/routing, CloudFront or Global Accelerator where their edge/path behavior fits, and database/storage availability patterns appropriate to state. Failure drills must include partial dependency degradation, not merely stopped instances.
 
@@ -194,6 +214,10 @@ The official [Domain 4 page](https://docs.aws.amazon.com/aws-certification/lates
 
 Centralize cross-account/Region logs under protected write paths and restricted read/delete access. Organization trails and Config aggregation support governance, while application/service logs require deliberate delivery. Validate destination policy, KMS permissions, partitions/prefixes, retry/failure, integrity/retention, query access, and cost. Separate production evidence from a compromised workload/account where required.
 
+Task 4.1 also expects streaming telemetry. [CloudWatch metric streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html) export metrics continuously through Firehose to supported destinations; a quick S3 setup creates the necessary resources. Choose filters, format, delivery role, buffering and destination controls. Log subscriptions carry log events, while a metric filter derives a numeric signal from matching logs. Streaming one does not automatically configure the other.
+
+The [X-Ray SDK/daemon timeline](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html) places those components in maintenance from February 25, 2026 and gives no fixed end date. This is not an X-Ray service shutdown. [Plan OpenTelemetry migration](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html), checking propagation, sampling, context, export permissions and correlation before replacing instrumentation.
+
 ### Make alarms and dashboards actionable
 
 Choose metric/statistic/percentile, dimensions, period, evaluation window, datapoints-to-alarm, threshold/anomaly model, missing-data behavior, and action. Composite alarms reduce noise or express dependencies. Alarm on customer symptoms and leading resource signals; include owner, severity, runbook, context, and response target.
@@ -224,7 +248,7 @@ The official [Domain 5 page](https://docs.aws.amazon.com/aws-certification/lates
 6. Verify customer outcome, data correctness, backlog recovery, security posture, and monitoring.
 7. Preserve evidence and write blameless learning actions with owners and due dates.
 
-Systems Manager OpsCenter/Incident Manager capabilities, Automation, Lambda, Step Functions, EventBridge, SNS, SQS, Chatbot/chat integrations, and ticketing tools can coordinate response according to current features. Automate enrichment first—resource/account/Region, owner, recent change, metrics/logs, dependencies, and runbook—before automating destructive remediation.
+OpsCenter, Automation, Lambda, Step Functions, EventBridge, SNS, SQS, chat integrations and ticketing tools can coordinate response. [Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html) and [Systems Manager Change Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html) closed to new customers November 7, 2025; do not make either a prerequisite for a new learner account. These notices do not close all of Systems Manager or OpsCenter. Automate enrichment first—resource/account/Region, owner, recent change, metrics/logs, dependencies, and runbook—before automating destructive remediation.
 
 ### Troubleshoot by causal layer
 
@@ -273,7 +297,7 @@ Do not log secrets, tokens, personal data, or sensitive payloads without an expl
 
 ### Make compliance continuous and auditable
 
-Translate requirements into preventive/detective controls, evidence sources, frequency, owner, exception process, remediation target, and retention. Config evaluates supported resource configuration; Audit Manager helps collect organized evidence; CloudTrail records activity; Artifact provides AWS compliance reports; Security Hub evaluates controls/findings. No one service proves full compliance.
+Translate requirements into preventive/detective controls, evidence sources, frequency, owner, exception process, remediation target, and retention. Config evaluates supported resource configuration; Audit Manager helps collect organized evidence; CloudTrail records activity; Artifact provides AWS compliance reports; Security Hub evaluates controls/findings. No one service proves full compliance. [Audit Manager entered maintenance and restricted new setup from April 30, 2026](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html); eligibility depends on existing account/organization/Region configuration. Preserve its evidence-collection concept but use an available path for a new-account exercise.
 
 Use policy-as-code/template scanning before deployment, hooks/guardrails during provisioning, Config/security detection after deployment, and automated remediation within safe bounds. Exceptions need business owner, scope, compensating control, approval, expiration, and periodic review.
 
@@ -297,9 +321,19 @@ A canary passes health checks but queue age and order latency rise. Freeze promo
 
 ---
 
+## Worked operating decisions
+
+These original examples use hypothetical workloads. Ten local arithmetic assertions passed; no AWS deployment or failure experiment was executed.
+
+1. **Avoid a diluted canary alarm:** Of 10,000 requests, 500 reach green and 20 fail there. Green's error rate is 4%; the fleet-wide rate is only 0.2% if blue has no errors. A 1% fleet alarm misses a serious green defect. Dimension the metric to the revision/target, require an adequate sample, and verify the configured rollback path. A 5xx count alone is not a percentage.
+2. **Bound queue delay:** A serial worker takes two seconds per message and the initial delay target is 90 seconds, giving 45 queued messages per worker. A backlog of 450 across five workers is 90 each. Ten workers bring the instantaneous ratio to 45, but warmup, new arrivals and downstream limits must be measured. Queue age remains an outcome alarm.
+3. **Measure the whole restore:** Detection takes three minutes, approval four, provisioning six and validation eight: 21 minutes exceeds a 20-minute RTO. At a 10:30 failure, a usable backup through 10:20 gives ten minutes of potential data loss, satisfying a 15-minute RPO. Passing one objective does not imply passing the other.
+4. **Stop repetitive remediation:** A repeated configuration event must identify the resource, desired version and operation key. If a durable record shows success, re-check current state rather than blindly repeat a disruptive action. If the first attempt failed, retain that evidence and retry only under the runbook's limits. A seen-event flag set before successful action can otherwise suppress recovery permanently.
+5. **Promote compatible bytes:** The production image digest matches staging, but staging's schema added a column while production's removed the old column. Identical bytes do not prove rollback safety. Check the deployed schema/configuration contract, stage expand/migrate/contract, and keep the compatible old runtime available through the measured rollback window.
+
 ## Practice labs
 
-Use an AWS Builder Lab, organization-approved sandbox, or disposable personal training accounts. Set budgets, avoid production data, use least privilege, record resources, and remove billable resources. Current prices and free-tier coverage are **VERIFY CURRENT**.
+The eight labs remain proposed; this review executed only local worked-example arithmetic. Use an AWS Builder Lab, organization-approved sandbox, or disposable personal training accounts. Set budgets, avoid production data, use least privilege, record resources, and remove billable resources. Current prices and free-tier coverage are **VERIFY CURRENT**.
 
 ### Lab 1: Build-once promotion pipeline — 150–240 minutes
 
@@ -358,7 +392,7 @@ Create one policy-as-code pre-deploy check, one preventive provisioning control,
 19. Account onboarding completion proof? **Every baseline control is verified; account creation alone is partial success.**
 20. Safe bulk automation controls? **Idempotency, validation, waves, concurrency/error limits, stop, audit, and verification.**
 21. Multi-AZ means resilient automatically? **No; every critical layer, route, capacity, state, and dependency must survive.**
-22. Queue scaling signal often better than CPU? **Backlog age/depth reflects waiting work and customer delay.**
+22. Queue age versus backlog per worker? **Age shows delay; normalized backlog can support target tracking when the latency/processing-time model is valid.**
 23. What completes self-healing? **Post-action verification and escalation if recovery did not occur.**
 24. Backup success equals recovery proof? **No; restore complete application/data/keys/dependencies within RTO/RPO.**
 25. Pilot light versus warm standby? **Critical core versus reduced functional copy already running.**
@@ -391,16 +425,16 @@ This is **not a complete list**, and it is not meant to be consumed in full. Cho
 | Official guide and AWS four-step plan | Public/free-account/subscription mix | 25–40 hours selected study |
 | Hands-on delivery, operations, and game days | Sandbox/authorized accounts | 40–70 hours |
 | Pluralsight DOP-C02 path | Paid | 35 hours plus labs/practice |
-| Udemy/Stéphane Maarek current course | Paid | 17 hours 3 minutes plus extensive labs |
+| Udemy/Stéphane Maarek current course | Paid | Plan 30–50 hours including labs |
 | Tutorials Dojo video/practice route | Paid | 30–45 hours estimated |
 | Whizlabs course/lab/practice route | Paid | 25–50 hours estimated |
 
 - **Official route:** [AWS certification page and four-step plan](https://aws.amazon.com/certification/certified-devops-engineer-professional/) plus [DOP-C02 Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02) (**about 25–40 hours selected**, plus labs/game days). Use official questions, domain refresh, Builder Labs/Jam/SimuLearn choices, and official practice exam according to entitlement.
-- **Structured domain route:** [Pluralsight DOP-C02 path](https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional) (**35 listed hours**, eight courses and practice exam; modules range from 2024 to August 2026, so check legacy named services/workflows).
-- **Current compact course:** [Udemy/Stéphane Maarek DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/) (**17 hours 3 minutes**, plus hands-on repetition; shown updated August 2026). Its compact runtime assumes associate-level foundation and real AWS experience.
-- **Course/practice route:** [Tutorials Dojo DOP-C02 video course](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/) (**21.2+ video hours, 10+ listed labs, 13 quizzes, and one practice test**) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/) (**about 10–18 hours** across randomized, timed, review, and six domain sets). Note that its video page still labels the included full test as 65 questions even though the live exam has 75 total; verify practice format.
+- **Structured domain route:** [Pluralsight DOP-C02 path](https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional) (**35 listed hours**, eight courses and practice exam; modules range from 2024 to August 2026, so check legacy named services/workflows). Its overview still uses older domain labels and mentions OpsWorks; map the actual modules to the current six domains.
+- **Current compact course:** [Udemy/Stéphane Maarek DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/) (**plan 30–50 hours including hands-on repetition**). Public content was blocked in this review; current runtime and update date were not reverified. Its compact runtime assumes associate-level foundation and real AWS experience.
+- **Course/practice route:** [Tutorials Dojo DOP-C02 video course](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/) (**21.2+ video hours, 10+ listed labs, 13 quizzes, and one practice test**) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/) (**about 10–18 hours** across randomized, timed, review, and six domain sets). Note that its video page still labels the included full test as 65 questions even though the live exam has 75 total; verify practice format. The practice page markets exam-feedback input; use independently authored explanations and avoid recalled material.
 - **Lab/practice alternative:** [Whizlabs DOP-C02](https://www.whizlabs.com/aws-devops-certification-training/) (**about 25–50 hours selected estimated**); the current product resolves, but stable public counts/runtime were not exposed in the review response. Inspect live coverage, labs, sandbox, and practice sets before purchase.
-- **O'Reilly boundary:** no exact current DOP-C02-specific O'Reilly book/video with stable public metadata was independently verified on September 1, 2026. Use its AWS/DevOps library only after mapping chapters to the six official domains.
+- **O'Reilly boundary:** no exact current DOP-C02-specific O'Reilly book/video with stable public metadata was independently verified in this review. Use its AWS/DevOps library only after mapping chapters to the six official domains.
 - **Practice boundary:** no exact current MeasureUp DOP-C02 product was independently verified. Start with official AWS assessment, then choose a legitimate explanation-rich bank rather than large untraceable question collections.
 
 Suggested preparation: someone already owning mature AWS delivery and operations may need **80–120 hours**; a candidate bridging from associate-level knowledge may need **140–220 hours**, including prerequisites and game days.

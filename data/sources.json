@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-ecs-strategies",
+      "title": "ECS deployment controllers and strategies",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DOP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-ecs-gradual-blog",
+      "title": "Gradual ECS linear and canary deployments",
+      "url": "https://aws.amazon.com/blogs/containers/gradual-deployments-in-amazon-ecs-with-linear-and-canary-strategies/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DOP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DOP-C02 deep review: Selected strategy/observability/prerequisite text read; CLI walkthrough not executed. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-ecs-deployment-observability",
+      "title": "ECS console deployment observability September 21",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "DOP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-proton-retirement",
+      "title": "Proton deprecation and migration",
+      "url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DOP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-incidentmanager-availability",
+      "title": "Incident Manager availability change",
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DOP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-change-manager-availability",
+      "title": "Systems Manager Change Manager availability",
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DOP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-cloudwatch-metric-streams",
+      "title": "CloudWatch metric streams",
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DOP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 DOP-C02 deep review: Read usage scenarios, delivery/format and filter overview. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-dynamodb-global-modes",
       "title": "DynamoDB global table consistency modes",
       "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
@@ -67,10 +165,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SAA-C03"
+        "SAA-C03",
+        "DOP-C02"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-s3-requester-pays",
@@ -95,10 +194,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SAA-C03"
+        "SAA-C03",
+        "DOP-C02"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-redshift-behavior",
@@ -408,10 +508,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "AIF-C01"
+        "AIF-C01",
+        "DOP-C02"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-bedrock-evaluations",
@@ -650,10 +751,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SAP-C02"
+        "SAP-C02",
+        "DOP-C02"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-apprunner-api-notice",
@@ -664,10 +766,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SAP-C02"
+        "SAP-C02",
+        "DOP-C02"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-sap-residency-blog",
@@ -824,10 +927,11 @@
       "access_model": "public",
       "supported_exams": [
         "DVA-C02",
-        "SOA-C03"
+        "SOA-C03",
+        "DOP-C02"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 DVA-C02 deep review: Read notice, overview, AWS integrations and concept mapping; not every language migration tutorial. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution. September 28 SOA-C03 deep review: Read maintenance notice and introductory OpenTelemetry migration guidance; did not execute examples. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 DVA-C02 deep review: Read notice, overview, AWS integrations and concept mapping; not every language migration tutorial. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution. September 28 SOA-C03 deep review: Read maintenance notice and introductory OpenTelemetry migration guidance; did not execute examples. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-dva-lmi-limits",
@@ -852,10 +956,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "DVA-C02"
+        "DVA-C02",
+        "DOP-C02"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-dva-sqs-configuration",
@@ -937,9 +1042,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MLA-C02"
+        "MLA-C02",
+        "DOP-C02"
       ],
-      "notes": "September 28 MLA-C02 deep review: Read reopeningNovember25,2025 and prior closureJuly25,2024; older history not comprehensively audited. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MLA-C02 deep review: Read reopeningNovember25,2025 and prior closureJuly25,2024; older history not comprehensively audited. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-rag-compression-blog",

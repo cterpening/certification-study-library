@@ -1,0 +1,2047 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DOP-C02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "0f61e91c7b192efac5536a825bd171d3586b01e7d464b68ca47093d5be47dcb5",
+  "guide_after_sha256": "3194e8f7d7e877b1808b3422dbd389cebb1dac1e1a3f3265d8838987042294aa",
+  "prior_records": {
+    "exam": {
+      "code": "DOP-C02",
+      "level": "expert",
+      "vendor_id": "aws",
+      "title": "AWS Certified DevOps Engineer - Professional",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+      "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite; AWS targets candidates with two or more years provisioning, operating and managing AWS plus SDLC and programming/scripting experience. Practice build-once promotion, testing, multi-account IAM, artifacts, deployment strategies, reusable IaC, account foundations, resilient automation, telemetry, incident response and continuous security/compliance."
+    },
+    "review": {
+      "id": "dop-c02-2026-09-01-source-validation",
+      "exam_code": "DOP-C02",
+      "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dop-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9",
+      "objective_coverage": [
+        {
+          "objective_group": "SDLC Automation",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Configuration Management and IaC",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Resilient Cloud Solutions",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 2, 6–7"
+          ]
+        },
+        {
+          "objective_group": "Monitoring and Logging",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 2 and 5–7"
+          ]
+        },
+        {
+          "objective_group": "Incident and Event Response",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 2–3",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Security and Compliance",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios 1–2",
+            "Labs 1, 4, and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 18,
+        "reachable": 17,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "The current six-domain DOP-C02 guide was reconciled with every detailed domain page, the live 180-minute/75-question/USD-300 certification page and non-exhaustive service list. Three scenarios, eight safe labs and 42 original checks cover build-once artifact provenance, tests and deployment safety; reusable IaC and multi-account desired state; capacity, bounded self-healing and tested recovery; centralized outcome-driven telemetry; evidence-preserving incident response; and supply-chain, identity, data and continuous-compliance controls. All 18 URLs are cataloged: 17 reachable and Udemy automation-blocked; none missing or broken. Current-service/training metadata is labeled and no recalled questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "e2ae0a44304ac8982f718b5b9dfa77c40753adaa0905f9e395e72908d9403ef0",
+      "guide_sections": "1 / Design a promotion system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "34a013bf15c08367f6d179849f1c383cf30f8cd7d4112e1238d55bfefac5a563",
+      "guide_sections": "1 / Design a promotion system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "c19bfcc2836bc88ed0a7ceb558a89d46a0ab2c1f6b053d657e27aaaaa034ea6f",
+      "guide_sections": "1 / Design a promotion system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "c77596ac73b2a3bed1483672f85e9b4143a8136e72cc2d38bf8b812b0552dc13",
+      "guide_sections": "1 / Design a promotion system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "aab2424910fa86047d37a07d560037fa0e9b215324852bfdba9fc9a3e585a651",
+      "guide_sections": "1 / Design a promotion system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "a068c9eb0690b25910073b5eec2193496f5c46189984d7c769e1ba174c724089",
+      "guide_sections": "1 / Design a promotion system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "0a64a4fabccbb1aa91623d87d974f55543b4cb45eb8152a33a35dc85b13a958d",
+      "guide_sections": "1 / Design a promotion system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "065b930e3c742b9d5cebad12dcdeb4e73ffe089b8d3a03eff911082ba884613a",
+      "guide_sections": "1 / Put the right test at the earliest reliable gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "685c0740650f9fb4ebba3f09c86811f0f198cbcdd539ff42fc3c65ac7baa5dde",
+      "guide_sections": "1 / Put the right test at the earliest reliable gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "e895bdc6b29171e8009a3619bbba01ca86e05e0cd9e408d9047a0b7be8483fd6",
+      "guide_sections": "1 / Put the right test at the earliest reliable gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "debdd0d2b1fda6b1372ec2401f9e77259cfe5732f3916250d5c4e916bdca9096",
+      "guide_sections": "1 / Put the right test at the earliest reliable gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "1a44a5a58c58b1addd07e01154209705c81fdc98a595cdf8f3cfd0c61432b258",
+      "guide_sections": "1 / Put the right test at the earliest reliable gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "435ee850ee7fa6285ca45281b857b982fa8be9b15fed87fac07d65b96a7fe032",
+      "guide_sections": "1 / Put the right test at the earliest reliable gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "4855d48a8857916cc30da1fa37d660642fc3370b96a07263fe8387d5e1955c50",
+      "guide_sections": "1 / Put the right test at the earliest reliable gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "d3168a4787b9bd888e0e24a4f1678be0329dde5a32a95c61ebeefd87ed3c95a8",
+      "guide_sections": "1 / Secure and govern artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "01b17a7e558bee2c09c693d79941023f54ff4917b1b1bea43a5516ad52ce7797",
+      "guide_sections": "1 / Secure and govern artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "1d5c19de875a36eaaf2dab699f772b98afc88bf162003fd00977532d30be4d19",
+      "guide_sections": "1 / Secure and govern artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "cbf92563ce6977032bab2c9e4bc8ba18ad65fad30eda2b446b2e2d8a7a0892fc",
+      "guide_sections": "1 / Secure and govern artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "e4730cf5127770bdf085d9b4796392de28450eeec12544595799bcc409710921",
+      "guide_sections": "1 / Secure and govern artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "e5e8771350f58e5f3e79f251716106beb8e21257c6a4833d14dd1c300d158cde",
+      "guide_sections": "1 / Secure and govern artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "4a79b2e2b934ee6138c9f369865e8d30ece1cc9b3dada05fb3221e191644a8cd",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "15b044cb9199936839438bf4a7a2629d0a5433c74ad2a3c13fd7d056884c6046",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "e843f1888177cce6ad742b5ac12609a6c3e009716047dbd34a26f74de8614331",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "a5c89bfe4bfd1df3f0856473c29615f5a71868af43f99b6f76d46430a2bee17c",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "5434a24569312b840938f17434c5a88915aa1aac578e95b4edfb3e0d866d1639",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "b96d356db5d0907bd8f787b1eda86b0d0510755483306fafdba0f83063fe5e45",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "9d68e720f5146ee4b3d440f76611412350e30c9af56683744398b0a644144494",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "d7a854d103cec8d32ecc56c2152ff7eb4c446c97dfadafa508e29783716b6b24",
+      "guide_sections": "1 / Select deployment strategy; native ECS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c98a648e975f53f73dd54cba54c36b683312a948794280ec6af1fb5bdc3c4091",
+      "guide_sections": "2 / Treat desired state as a product; historical services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "5fa3eb3bfba39db2eee251b00a7a3b87e534c15da6f5fddaa16acc67f621c7f7",
+      "guide_sections": "2 / Treat desired state as a product; historical services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "0d54bd6dbf4bdd4e2f224ddbbe87964fab0d223b4595c86645d2ba48bf9da042",
+      "guide_sections": "2 / Treat desired state as a product; historical services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "6dc0a83042e169a9e14028b0c93a9681c26dc5f678a87041513e251d639c6c46",
+      "guide_sections": "2 / Treat desired state as a product; historical services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "8b45bae1aedd502b865cf1071b543d0206cfecc99734744a89b2602bb901d23e",
+      "guide_sections": "2 / Treat desired state as a product; historical services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "cd04ef29b31ee6f2014a1d898f2cd9ab92667efd5aa34778e47fa72ac296799d",
+      "guide_sections": "2 / Treat desired state as a product; historical services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "165b2143d3d2c8760a3d15d036b6607c65c6667826477fdbab2f661ccb110ea7",
+      "guide_sections": "2 / Treat desired state as a product; historical services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "7bea4c655d90db95c3176c934627f02cedabaa21d6fc31e302c4e75e496c2aec",
+      "guide_sections": "2 / Automate multi-account foundations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "129cfedd773ccece189ac903a6c2cf43b9f9b7b01280a3d9ef84dc9ca77bbeff",
+      "guide_sections": "2 / Automate multi-account foundations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "87e08711e5aed940475ede6841f1af89217e386bae465034ce10eb030f4d96b5",
+      "guide_sections": "2 / Automate multi-account foundations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "5ef3cb237a3abed226e85ddb307e50f7b78f2333c3736d6bd36fe9d05d0e7c50",
+      "guide_sections": "2 / Automate multi-account foundations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "42b4e83965a2ea25642a22fcd7e8f07a0dc9514f36414c9cb7f49934f2312033",
+      "guide_sections": "2 / Automate multi-account foundations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "84681515e1ea490c16f277e9959fc427a3e7c309601fd6c9c30955756d93cdf2",
+      "guide_sections": "2 / Engineer large-scale automation safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "7deb46568bef2469a4fc6558291e513a956857331098025be0275150081a0b36",
+      "guide_sections": "2 / Engineer large-scale automation safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "cb3b88c6f12159bf47c43cca093b8ff996c090c9d17a571b810860761a6a119f",
+      "guide_sections": "2 / Engineer large-scale automation safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "97e39be25942190b8a5f724a0bdf7bacdfb992a44fd92dc824e2d2af9a830ce5",
+      "guide_sections": "2 / Engineer large-scale automation safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "4a4dbe0baa458683f6a37098299ffeb9eca88c62c176ed95074dfb771127ed41",
+      "guide_sections": "2 / Engineer large-scale automation safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "004bb18bb5e60598a37a09c8e4ee2f228e28b9fc02d35a7ffb67988e5104317f",
+      "guide_sections": "2 / Engineer large-scale automation safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "11dd627e101abb0c0f9f0c6334c2098b3d1b57888730b042f98630cee2e1be15",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "1792eb6c0ea74e80ad7404ece86caea35c682cc6889e0727f9ff340026139208",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "78ef38d9ccd9f2029d134f65fbeb68a156956fba3b2a871d495338430ad5724c",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "8d4fa33ca83d1657d7cc35a0c2dc449b9c3f584f98e451c5535d58847378e633",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "956a2801dc5266f1fb7ddc6e4aa7cefee3d18aa4ec94e472fc3701c85fba1153",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "452daa6382501de2a6ec95599d4a56a3225aab332fb0b81050244f887cc8e831",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "d6cc4aad051f0a8aad7081b6e7ec242de3347234278ee72ea7625602f14753c5",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "7acfbba1351ee55172a9bf270d37484587046e54f2126345c7d650c029aa3a01",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "ce2d8de6835585f1ecf63c1bd2c1aac5f949b44567ae43c28def28163e6b6a46",
+      "guide_sections": "3 / Turn resilience into automated policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "4aba718ebb7f2da0949c0e4ccaa6fd81a405e5210bb86da9638f934cdd43815a",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "7e440ab117e86b9e6ce70d28fe75bc6b17c4f475aefe3a1af78cacbfa0da73f7",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "4f602a3615eb0737dae8cca3e226dc22ab124d74b56f1a1d765447e357571989",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "75c5b30d7e2b8f39fb1ae9bc9a3452a51b2b8ca9ad568b580eb873560e8d024c",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "cdd8e2d7087945269d5d4462bf293f2edd2ff8f4d6713c17333228eae8ed0bf4",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "4bd73e92b075b78c670b3956888255634cc897093fa6945f384d59aa5b3f3cf4",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "15ee7e8fef8a4a47f9bde3414db29dc3438588b990379853bfb967143326d939",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "3c3323581a2acab2d8004ec9e3056ea46d3ec1c55f7643731b3d20c1674d10f4",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "a45151a59ae7528da342fee0cd36c0b85d41e9ba99ec01a06a16b713d5e5cffa",
+      "guide_sections": "3 / Turn resilience into automated policy; queue worked decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "b429e51208e1ed1b19af6fffde502c861131cea3be0077707353259ba7707b56",
+      "guide_sections": "3 / Prove backup and disaster recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "d2570533d61223a607672464413c9306b6bd2727ee58d2518310bd3addbbc5f2",
+      "guide_sections": "3 / Prove backup and disaster recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "9e48659d6252a6bc30f991dd24c1ebad2554b0b7456477be938b8c4ac0436ed3",
+      "guide_sections": "3 / Prove backup and disaster recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "31bc8e05006d7b4cb6e50daeb00c898fa0782690488ef016b2152a50f67df914",
+      "guide_sections": "3 / Prove backup and disaster recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "e5704a3dc0a319330dca7c056cacf4aa4a62f87d1759867cf981b0dd6444995b",
+      "guide_sections": "3 / Prove backup and disaster recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "492922cef90cebabd3489262ec226cd2e4c87306279cf5ca837adf1a692067e5",
+      "guide_sections": "3 / Prove backup and disaster recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "731c1f22aa5502aac814f9c5254eb621a735e7127d72e5ddece1979fc0037f03",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "0b2886d39e8c7e85430cfd92fface6d808bcae0a38d57731d9661677ba89dcbe",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "de0836106affaaa8388516d0ec26effc6a3992d0d66679fc21592465b009a220",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "ac89f18aee5af5370a163e67ffe2c8b1105ae1ff00cc91140c3006961d7b0eb1",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "b7b9a01e48b42d13aa41665006b178ba30c7fe0dd963d02936055406aa1fc78d",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "877168e5bc1767654b749ceb929cf3df0442c350d751426684b690a6977a150c",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "7644ed8aad3aa819b000acfddbdcb98ecf8abe73df969496dd02d37ba71581ba",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "6badae3d34446303d03000f37d4070e9d732c25e3a21d319f676a0aac33d9a12",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 9,
+      "objective_sha256": "a4ef409c7e3a47cf5261892dcb43f5b53cabb4176602d8e2102c1ad898a62fa7",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 10,
+      "objective_sha256": "eba160b7c24b5d4f07b39707d9840a9cdab9b7e2ff69db0ff66f18bfa87a77a8",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 11,
+      "objective_sha256": "ec34978fe6e69ef790c257f346a1ccbda612b08ebef6fe4def30d22af6c9d8c4",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 12,
+      "objective_sha256": "e1a444c7502c7f2c7b6be43e2489a31fb720979ef318fce43cb6292b977f8c21",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 13,
+      "objective_sha256": "de32512b4d21d4e8946e49c96f23ff27c63d0d3fcb0cf6829e0b0c24dc9c2e86",
+      "guide_sections": "4 / Build telemetry around questions; metric streams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "0c62c0ac3f0ebbd756ce7cb82a9d2d4d266b7d90d58c41961539df79396bf035",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "84447114acde527f7f3fb09208b548fbe9a7c97933584364eae3171abaa94ea6",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "bd849879a0939eae6dab84d016e5b35973d2e7a6c3760a767bb11767cf8a38c4",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "6ad4275f956e360aaf0b8a3da938fe4925db32035ad49a365ea0dc7c7426b753",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "62c7ca1d01eb9771b9f18a73b6bd427249f6aa4012f90cd2b8996517e3b03cfa",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "26aa9785ba211cb64d95c1f998b0ede37fb84deb83613521135901ba587c3b81",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "b0c785aa9ff4119130b9030291ab56e1ec372fa43027ba815c1276e4f16eff29",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "e1b8a98b5abcf1e90a86bc85b59e553dde0dfd6aa377809a53918aedd5e4a672",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 9,
+      "objective_sha256": "109df8fde682426fe447e1c33b7988126c593d20a226422a680c703c155200fe",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 10,
+      "objective_sha256": "d5c982e4d316227f3cd93879688cff8dfba64f8a43dc2a4e87ae79e2a3d61b93",
+      "guide_sections": "4 / Make alarms and dashboards actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "a7882f7dd5b61b2318f8f660f00d3b0eea472e064f3eecea8a932bbd5cab3810",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "26e6f7121690826615d0a2f728595cf5e7d5c28b9c5627e967f200713718dd98",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "b0a22653795a89b04fc1abc354d141569fb491408b0fe04b6b9292ad9858d644",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "1da96c76b7f4b261e8b28e7653ec3f9968b72bb9d51f4f2eab7dc1c59081f95f",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "3c570f312f4395b00bb2b2e4af96b337469a94fa92d2d7a23b7463317fa47879",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "16fa2e55c2e0d4ea2ddee0161f4b167b8c4098a7aea8098bf3bd845d1c987cd0",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "5abe20f0332c62d3a08d0429eb679f3189365d51adef12f611185a8391f4a61d",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 8,
+      "objective_sha256": "a230c15297ce2b713d1f5b9f2654ab261c1e6b6ffb69756f102103c21bd78d35",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 9,
+      "objective_sha256": "036f16f0e35e80c5ba7df33d923c6cf56d03a9d4438037e2b3604569cdf58004",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 10,
+      "objective_sha256": "c85ebb746c3089a2e2d8a221f00a517dec9cd9fb778eb3340314324e1f82d942",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 11,
+      "objective_sha256": "123f8b4165559ccc5500d9717307801724b39580c1b38da18e2ec9fad9b95457",
+      "guide_sections": "4 / Automate event routing without losing events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "2c2d2f6ebdca04391d68e5366bd3b7d95635ea93167cd7b99e1e6675acd7aec4",
+      "guide_sections": "5 / Establish an evidence-preserving response flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "aa3cb28369bf084a2cbb7a86bf826a33d9b1373515774c9d5dee2fcf829cc4f7",
+      "guide_sections": "5 / Establish an evidence-preserving response flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "70b84697070c17a736615c465844938c69bb60eb0f59add9f7cc87872dada0dd",
+      "guide_sections": "5 / Establish an evidence-preserving response flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "54757c98cc7cb40feafb18c6706d9fa7703f1689201248f7da598a5fc2f54e56",
+      "guide_sections": "5 / Establish an evidence-preserving response flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "26d8e3bffd48d146155e9cd434d874707c188d5c9ebc471230b2ecdfec98dda3",
+      "guide_sections": "5 / Design runbooks and game days; bounded automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "4771254dfb1765545305f100fe7cd6396258517df3a5c2260a8c4983ada56fc8",
+      "guide_sections": "5 / Design runbooks and game days; bounded automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "b5e2fbe0a6f4e3b76b733ed0a85c4095ec465a932e619d8bcc85b2b0bb7ca545",
+      "guide_sections": "5 / Design runbooks and game days; bounded automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "8d89e51eb94373a1f91227d2bdf889b8d2652139f8af1910e66538e43da0210b",
+      "guide_sections": "5 / Design runbooks and game days; bounded automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "9ad028c23cc0de5c9528622adba6bddaf378b77b75f74387a20aa573908eea84",
+      "guide_sections": "5 / Design runbooks and game days; bounded automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "97af1f4f235a2b3f7e01079cc22edf71eecbb84a6e74d2770d281b5803eb61ec",
+      "guide_sections": "5 / Troubleshoot by causal layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "3b899e4438d6f8498ea225baec62c32fe2cf9846ddc5b3918f4ee5bcd4db80b4",
+      "guide_sections": "5 / Troubleshoot by causal layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "2789a9ffcae126640ca0bcbb80a775db205b5ad612df89f5b295563bab821909",
+      "guide_sections": "5 / Troubleshoot by causal layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "1a4bb242b4ce04934087175c26defb518ed204a4803ab02ca6c48aa40d59e46d",
+      "guide_sections": "5 / Troubleshoot by causal layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "c4d3fcf14a086f49282863f8d6be4b2b303a81cb5955612510b415268c54d963",
+      "guide_sections": "5 / Troubleshoot by causal layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "f2c1341241faaa5cc4f56100d136fc7f4afff93436d7d0713e6af1993f042717",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "076ece0b9ae815c2be2327c80a8d7543910b9bc7b7255ebed3ecc097cb4d25e3",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "e4d9ce46d93a3074bd83cd950b0898d2606f11d922c797c4c91e8663c6b20cbb",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "050a9358fba1885f8775cfafa4a922c2bb7f0e2d5bc664534e87339925a88f12",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "13aa2c5ac9cec48696255d022999f36d4495219b972263c94cb5b7ee4f1681f2",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 6,
+      "objective_sha256": "ae0b89368e241c8340c4fff51222aeeb85d16c78e63e24d746c02194181929df",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 7,
+      "objective_sha256": "733d80df118a5b7f991aa3785471e22b11359f291ab04fb38033f541a59fe989",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 8,
+      "objective_sha256": "f50b7ef4a9bb8f6159fef1eabafd6d755c48795a48b2918ae83f0727a41ccbb5",
+      "guide_sections": "6 / Make pipeline identity short-lived and scoped",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 1,
+      "objective_sha256": "54ee21b719b629cd3916891fa088eeb08e6b7d252459f8cede9a15d4584d981b",
+      "guide_sections": "6 / Automate layered controls; Protect data and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 2,
+      "objective_sha256": "e562cecbf46fba49476aeb2afda97748bf0b08568e3c754bac43edbb88edc256",
+      "guide_sections": "6 / Automate layered controls; Protect data and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 3,
+      "objective_sha256": "648cc895aba2a89cc05255c9cac49d86a150ba67f0aee44783448f37e9ba3197",
+      "guide_sections": "6 / Automate layered controls; Protect data and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 4,
+      "objective_sha256": "3a9b3f47e9f66b78c90037277606e3b5296caeb7da06b8807de55dcf2116fab5",
+      "guide_sections": "6 / Automate layered controls; Protect data and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 5,
+      "objective_sha256": "a734fd9e82a7f61f3b6923a17f2bd49e5b158ec57fdce07ea3f87bec8ed67f43",
+      "guide_sections": "6 / Automate layered controls; Protect data and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 6,
+      "objective_sha256": "9dd6a80dad9508cbc836956c42654ffa868336b311de5a6acfe50d5a566b3950",
+      "guide_sections": "6 / Automate layered controls; Protect data and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 7,
+      "objective_sha256": "1cce125da838dc1e35c12b254f9e6b0220456738c492903ef6f99ae7a75e3f90",
+      "guide_sections": "6 / Automate layered controls; Protect data and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 1,
+      "objective_sha256": "a4a5cf75ad597573370dc22aea4c124b3726824ea961768422be41cf5278d7e1",
+      "guide_sections": "6 / Make compliance continuous and auditable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 2,
+      "objective_sha256": "1c4d638fecc1848ff6c5104cc1fc7208cf71b7ebfabe99d26ae078c1ba381a99",
+      "guide_sections": "6 / Make compliance continuous and auditable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 3,
+      "objective_sha256": "0e7d1720b69e96d940397d2bcd4abee737dc26f565fab818318481df4dc8680e",
+      "guide_sections": "6 / Make compliance continuous and auditable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 4,
+      "objective_sha256": "ba878459c3c8a7c307ed7856641cad7afe35e076a876316fe1652db0b2c2f0ed",
+      "guide_sections": "6 / Make compliance continuous and auditable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 5,
+      "objective_sha256": "193db958bae89cb65bb3d17970db2d4cf9518bf0045e4d9602d55d4497b5a249",
+      "guide_sections": "6 / Make compliance continuous and auditable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 6,
+      "objective_sha256": "5bc4ae2bc9b1e8bedeca8c6a9761303678f381c6105f2e9f8248c0ff390c8769",
+      "guide_sections": "6 / Make compliance continuous and auditable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 7,
+      "objective_sha256": "bf7f33fe3f343e2e7d3659368068f42c73d9c9fea7d99da972d2bc6ba71645c1",
+      "guide_sections": "6 / Make compliance continuous and auditable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DOP-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DOP-C02",
+        "title": "AWS Certified DevOps Engineer - Professional",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+        "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\dop-c02-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\dop-c02-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9",
+        "previous_status_sha256": null,
+        "current_status_sha256": "b9ce30114a0717a80622d40de31976fc09f59f05a139f574206edbdedf76b484",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified DevOps Engineer - Professional (DOP-C02)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 33,
+    "reachable": 32,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-soa-c03-cloudwatch",
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+      "checked_at": "2026-09-28T20:30:08.749161+00:00",
+      "health": {
+        "id": "aws-soa-c03-cloudwatch",
+        "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon CloudWatch? - Amazon CloudWatchWhat is Amazon CloudWatch? - Amazon CloudWatch",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b7d45bd8f04f708d95e8cbc005cf5dacbf124eaf52321d7ab7c3e95db3fac571",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+      "sha256": "7af0c2d8082d3e83149377af8fdef939848af96f406d18e9159b3ddd070378e5",
+      "text_characters": 11782
+    },
+    {
+      "id": "aws-soa-c03-cloudformation",
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+      "checked_at": "2026-09-28T20:30:09.130654+00:00",
+      "health": {
+        "id": "aws-soa-c03-cloudformation",
+        "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+        "content_type": "text/html",
+        "page_title": "What is CloudFormation? - AWS CloudFormationWhat is CloudFormation? - AWS CloudFormation",
+        "canonical_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a5eb5460cd10e6b3996b76ebe73f9deb5d143404e7e3d8a988213d8aff5efe70",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+      "sha256": "45456ae7648acb2e9c2fb6c140452cf8f0b2d3014fd2a0c84b549d3441af92b7",
+      "text_characters": 4881
+    },
+    {
+      "id": "aws-soa-c03-iam-evaluation",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "checked_at": "2026-09-28T20:30:09.319671+00:00",
+      "health": {
+        "id": "aws-soa-c03-iam-evaluation",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "content_type": "text/html",
+        "page_title": "Policy evaluation logic - AWS Identity and Access ManagementPolicy evaluation logic - AWS Identity and Access Management",
+        "canonical_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "duration_signals": [],
+        "signal_fingerprint": "74a00cd73b4e5530a5031ba6092c42c9523b74d0128e292dd4185ae20e2ba598",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "sha256": "c89f839064a26a0832b99613f691ef312edd02778f951ff24e577766cb822b2f",
+      "text_characters": 4151
+    },
+    {
+      "id": "aws-dop-c02-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+      "checked_at": "2026-09-28T20:30:21.435013+00:00",
+      "health": {
+        "id": "aws-dop-c02-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+        "checked_at": "2026-09-28T20:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified DevOps Engineer - Professional (DOP-C02) - AWS Certified DevOps Engineer - ProfessionalAWS Certified DevOps Engineer - Professional (DOP-C02) - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+        "duration_signals": [],
+        "signal_fingerprint": "71cf1d0a110c3fabc4e79656b45c80969c302633545fd66bfc24450df7a6a40b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+      "sha256": "b0f87a6655d9294107f918573771f9d020672702fea848e3fe8b2c3f5747d6ae",
+      "text_characters": 6477
+    },
+    {
+      "id": "aws-dop-c02-domain1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain1.html",
+      "checked_at": "2026-09-28T20:30:21.472193+00:00",
+      "health": {
+        "id": "aws-dop-c02-domain1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain1.html",
+        "checked_at": "2026-09-28T20:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: SDLC Automation - AWS Certified DevOps Engineer - ProfessionalContent Domain 1: SDLC Automation - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cef52681362e837081deb81f82faaa8ea33c389d73c9a62cb63f1b37fbb8db0f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain1.html",
+      "sha256": "c083713734e0489a550a19123accf3c135190f63a7eb87260ca4fa2cfa7862e1",
+      "text_characters": 3471
+    },
+    {
+      "id": "aws-dop-c02-domain2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain2.html",
+      "checked_at": "2026-09-28T20:30:21.763333+00:00",
+      "health": {
+        "id": "aws-dop-c02-domain2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain2.html",
+        "checked_at": "2026-09-28T20:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Configuration Management and IaC - AWS Certified DevOps Engineer - ProfessionalContent Domain 2: Configuration Management and IaC - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1a1011cba130f5baf4cad654b4ddd0e20e11dcd7486c7a00863cb218b2da6fc5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain2.html",
+      "sha256": "6e27a332d10656d377178ba12458c37c41883a779f67e4e56defd5439776fe9f",
+      "text_characters": 3312
+    },
+    {
+      "id": "aws-dop-c02-domain3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain3.html",
+      "checked_at": "2026-09-28T20:30:21.788778+00:00",
+      "health": {
+        "id": "aws-dop-c02-domain3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain3.html",
+        "checked_at": "2026-09-28T20:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Resilient Cloud Solutions - AWS Certified DevOps Engineer - ProfessionalContent Domain 3: Resilient Cloud Solutions - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "eb46d8bd3b55e0ee4ac6cf9a5d43f6d96e494016776d250ca4608cacae7b6e06",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain3.html",
+      "sha256": "b5ae888c581ca0aa119b292be5fbffb2d716c39e9e7f1f1db05b0d15be29bfb7",
+      "text_characters": 3075
+    },
+    {
+      "id": "aws-dop-c02-domain4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain4.html",
+      "checked_at": "2026-09-28T20:30:22.050855+00:00",
+      "health": {
+        "id": "aws-dop-c02-domain4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain4.html",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Monitoring and Logging - AWS Certified DevOps Engineer - ProfessionalContent Domain 4: Monitoring and Logging - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3600e238e878d6ac449386d39b1d16e7ed936b6f72f98d6b64adb73eb42d2e79",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain4.html",
+      "sha256": "0b2b2f925d99a7f669178fdfd38aa1a6f4472754ef18c941c9ae4b634b9171f2",
+      "text_characters": 4385
+    },
+    {
+      "id": "aws-dop-c02-domain5",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain5.html",
+      "checked_at": "2026-09-28T20:30:22.085232+00:00",
+      "health": {
+        "id": "aws-dop-c02-domain5",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain5.html",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain5.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 5: Incident and Event Response - AWS Certified DevOps Engineer - ProfessionalContent Domain 5: Incident and Event Response - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain5.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d41418a77426a076642d105011493aaa0a5ce770029108f9e6cfa7f126a6b7cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain5.html",
+      "sha256": "caa3bfc9ce9c9186914e9e9294650c20b3efcea7ae18e14befd3e652a7fafcf7",
+      "text_characters": 2442
+    },
+    {
+      "id": "aws-dop-c02-domain6",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain6.html",
+      "checked_at": "2026-09-28T20:30:22.155191+00:00",
+      "health": {
+        "id": "aws-dop-c02-domain6",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain6.html",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain6.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 6: Security and Compliance - AWS Certified DevOps Engineer - ProfessionalContent Domain 6: Security and Compliance - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain6.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1ef1aa37c3149007e3acfd0e9e4b15292b9754b69ab7e6f8c3d118b8aa9fa01d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain6.html",
+      "sha256": "23023464bc3f3459f4d831999e07e93f1aaa20ec26d2b38b0654afe2ecda5a1d",
+      "text_characters": 3590
+    },
+    {
+      "id": "aws-dop-c02-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+      "checked_at": "2026-09-28T20:30:22.514479+00:00",
+      "health": {
+        "id": "aws-dop-c02-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-devops-engineer-professional",
+        "canonical_url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+        "duration_signals": [
+          "180 minutes"
+        ],
+        "signal_fingerprint": "0a038e2e0ad40b6197946e0eabe5ae093b0f80315940d589fc7fb6ca61b11784",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+      "sha256": "bbbae985505a288bd569dd2d7a88cf3974b9d991fc183b44dd61782cd3dc607a",
+      "text_characters": 5649
+    },
+    {
+      "id": "aws-dop-c02-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/dop-02-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:22.546359+00:00",
+      "health": {
+        "id": "aws-dop-c02-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/dop-02-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/dop-02-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified DevOps Engineer - ProfessionalIn-Scope AWS Services - AWS Certified DevOps Engineer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/dop-02-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4071fd9620a4c9218c7c582235af76b64d8266c7cffcaff67c53460d0433dadb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/dop-02-in-scope-services.html",
+      "sha256": "045ff40922e0650504168da19b7d3692168c578974dcf8f2420b3b3e27b57987",
+      "text_characters": 3310
+    },
+    {
+      "id": "aws-dop-c02-skill-builder",
+      "url": "https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02",
+      "checked_at": "2026-09-28T20:30:22.579372+00:00",
+      "health": {
+        "id": "aws-dop-c02-skill-builder",
+        "url": "https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02",
+        "duration_signals": [],
+        "signal_fingerprint": "e58bc8b0d4a49136b608f44a13665e016c918a1b7db3c93433c3ad3f2914a72a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-dop-c02-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional",
+      "checked_at": "2026-09-28T20:30:22.858553+00:00",
+      "health": {
+        "id": "aws-dop-c02-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified DevOps Engineer – Professional (DOP-C02)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional",
+        "duration_signals": [
+          "35 Hours"
+        ],
+        "signal_fingerprint": "cbe40dcc5e5389b48933a804ec03063ff95086316ea7f60ee3c49f0de9d2d38f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional",
+      "sha256": "ef7dce01566f40fea842876df6d1ff4b90c17bf98d0b685f8c77989d06c0a803",
+      "text_characters": 4215
+    },
+    {
+      "id": "aws-dop-c02-udemy-maarek",
+      "url": "https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/",
+      "checked_at": "2026-09-28T20:30:22.950920+00:00",
+      "health": {
+        "id": "aws-dop-c02-udemy-maarek",
+        "url": "https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-dop-c02-tutorials-dojo-video",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/",
+      "checked_at": "2026-09-28T20:30:22.974811+00:00",
+      "health": {
+        "id": "aws-dop-c02-tutorials-dojo-video",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/",
+        "checked_at": "2026-09-28T20:30:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified DevOps Engineer - Professional DOP-C02 Video Course",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "23920fe7b1a3d9ea7e7a474b9ffbdd1b960c0c318d7b68d644b1ae7d5a4b75fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/",
+      "sha256": "115fbca9dc5d150c34b3f7a1a838a31ee0faa257b03488ba355b2fff0ed9e696",
+      "text_characters": 13614
+    },
+    {
+      "id": "aws-dop-c02-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/",
+      "checked_at": "2026-09-28T20:30:23.037548+00:00",
+      "health": {
+        "id": "aws-dop-c02-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/",
+        "checked_at": "2026-09-28T20:30:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified DevOps Engineer Professional Practice Exams DOP-C02 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "72 hours"
+        ],
+        "signal_fingerprint": "b425d8adfd603d34daedf54a4824b0268df306de0053e25009267e703036a823",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/",
+      "sha256": "98629a4ef17f75b402791269b332f43e6b9b9ee12592dab54f62c0746e3434a7",
+      "text_characters": 10374
+    },
+    {
+      "id": "aws-dop-c02-whizlabs",
+      "url": "https://www.whizlabs.com/aws-devops-certification-training/",
+      "checked_at": "2026-09-28T20:30:23.793541+00:00",
+      "health": {
+        "id": "aws-dop-c02-whizlabs",
+        "url": "https://www.whizlabs.com/aws-devops-certification-training/",
+        "checked_at": "2026-09-28T20:30:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-devops-certification-training/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS DevOps Engineer Professional Course (DOP-C02) | Whizlabs",
+        "canonical_url": "https://www.whizlabs.com/aws-devops-certification-training/",
+        "duration_signals": [],
+        "signal_fingerprint": "d5c0cd9e02fc1d4742b664acb98df5bd4a7fcfdcb907fbe73d8b0673a6b6e662",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-devops-certification-training/",
+      "sha256": "1a5d353bc5e138da549925f9a948506a2517155684a3a66cf19e93f75d41eb48",
+      "text_characters": 60
+    },
+    {
+      "id": "aws-codecommit-history",
+      "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+      "checked_at": "2026-09-28T20:40:01.287311+00:00",
+      "health": {
+        "id": "aws-codecommit-history",
+        "url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+        "checked_at": "2026-09-28T20:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+        "content_type": "text/html",
+        "page_title": "AWS CodeCommit User Guide document history - AWS CodeCommitAWS CodeCommit User Guide document history - AWS CodeCommit",
+        "canonical_url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3349bc9f4558625d42e6f3185d3b674044caf3555d2849a13ee958065e8ae6e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/codecommit/latest/userguide/history.html",
+      "sha256": "b742af37f1907b129e35ef4df1e0b7437fd2aab2227f03901239b5e9c01a1184",
+      "text_characters": 19913
+    },
+    {
+      "id": "aws-dva-xray-migration",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+      "checked_at": "2026-09-28T20:55:35.550233+00:00",
+      "health": {
+        "id": "aws-dva-xray-migration",
+        "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "checked_at": "2026-09-28T20:55:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "content_type": "text/html",
+        "page_title": "Migrating from X-Ray instrumentation to OpenTelemetry instrumentation - AWS X-RayMigrating from X-Ray instrumentation to OpenTelemetry instrumentation - AWS X-Ray",
+        "canonical_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e0f1acffa5ad7eb2e4b6356f1ef1db1b4f1f62af140f3cc88bfa3d21b69339c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+      "sha256": "362e1f7c83acaa267c80fe27cb49b1386253ac2c2a4768d0eaae81ece8bc09b6",
+      "text_characters": 25757
+    },
+    {
+      "id": "aws-dva-xray-timeline",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "checked_at": "2026-09-28T20:57:09.283161+00:00",
+      "health": {
+        "id": "aws-dva-xray-timeline",
+        "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "checked_at": "2026-09-28T20:57:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "content_type": "text/html",
+        "page_title": "X-Ray SDK and Daemon Support timeline - AWS X-RayX-Ray SDK and Daemon Support timeline - AWS X-Ray",
+        "canonical_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "duration_signals": [],
+        "signal_fingerprint": "680e39bf30ee21069c27902d8d0f0c426237913541f9b787e9592489339f0864",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "sha256": "ac6dabcdd43d67893c0b594749c07946704e3a1ac1bdafede17836465a914644",
+      "text_characters": 1425
+    },
+    {
+      "id": "aws-apprunner-availability",
+      "url": "https://aws.amazon.com/apprunner/",
+      "checked_at": "2026-09-28T21:07:02.944247+00:00",
+      "health": {
+        "id": "aws-apprunner-availability",
+        "url": "https://aws.amazon.com/apprunner/",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/apprunner/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Managed Container Apps Service - AWS App Runner - AWS",
+        "canonical_url": "https://aws.amazon.com/apprunner/",
+        "duration_signals": [],
+        "signal_fingerprint": "4009b8ce3b4e74e5efdc0c8d1ee212d96fe13fe48522202452647b4833fea344",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/apprunner/",
+      "sha256": "25807fdc4843d596df9c3506d48e24a879e2108e6c50df7852c6d22ddbe95a15",
+      "text_characters": 1921
+    },
+    {
+      "id": "aws-apprunner-api-notice",
+      "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "checked_at": "2026-09-28T21:07:02.944754+00:00",
+      "health": {
+        "id": "aws-apprunner-api-notice",
+        "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "content_type": "text/html",
+        "page_title": "CreateService - AWS App RunnerCreateService - AWS App Runner",
+        "canonical_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3e179f0c80b932971c042d7ae7c68b9bb85a9857999add26a3bb60697084de0d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "sha256": "8e23b0a8b2145c8516ac572809159fc194822e7e2a9be27195feae26ac04ccc4",
+      "text_characters": 12941
+    },
+    {
+      "id": "aws-auditmanager-availability",
+      "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+      "checked_at": "2026-09-28T21:28:48.186310+00:00",
+      "health": {
+        "id": "aws-auditmanager-availability",
+        "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "checked_at": "2026-09-28T21:28:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Audit Manager availability change - AWS Audit ManagerAWS Audit Manager availability change - AWS Audit Manager",
+        "canonical_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5f48011e38a445bb72684bd099d925c8b6c34cf4c122600883d2e40b02bfb1a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+      "sha256": "ba5bdc31ea83234631dd4604b5fde6270c82d2de3349bee90c1cf94bc18a658a",
+      "text_characters": 18704
+    },
+    {
+      "id": "aws-sqs-backlog-scaling",
+      "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+      "checked_at": "2026-09-28T21:46:38.621269+00:00",
+      "health": {
+        "id": "aws-sqs-backlog-scaling",
+        "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+        "checked_at": "2026-09-28T21:46:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+        "content_type": "text/html",
+        "page_title": "Scaling policy based on Amazon SQS - Amazon EC2 Auto ScalingScaling policy based on Amazon SQS - Amazon EC2 Auto Scaling",
+        "canonical_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+        "duration_signals": [],
+        "signal_fingerprint": "060c06602e37c4da530ba62d2574f5572488de0fefbd04509e609b0e287f5133",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+      "sha256": "45d8abd4e5e276c5a37eb2f5debccc7fa506532c9231dba86bbe5155e7c6c615",
+      "text_characters": 6910
+    },
+    {
+      "id": "aws-elastictranscoder-shutdown",
+      "url": "https://docs.aws.amazon.com/general/latest/gr/elastictranscoder.html",
+      "checked_at": "2026-09-28T21:47:42.652340+00:00",
+      "health": {
+        "id": "aws-elastictranscoder-shutdown",
+        "url": "https://docs.aws.amazon.com/general/latest/gr/elastictranscoder.html",
+        "checked_at": "2026-09-28T21:47:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/general/latest/gr/full_shutdown_services.html",
+        "content_type": "text/html",
+        "page_title": "Services in Full Shutdown - AWS General ReferenceServices in Full Shutdown - AWS General Reference",
+        "canonical_url": "https://docs.aws.amazon.com/general/latest/gr/full_shutdown_services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2d9540b6d2da719819d9d4c900d85fed4f7b7482b2ecacd9223669b7f2cef48f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/general/latest/gr/full_shutdown_services.html",
+      "sha256": "4f9d4ea6627d0743ac000144ee491bb03c906a96417114c7d941864882910a01",
+      "text_characters": 3377
+    },
+    {
+      "id": "aws-ecs-strategies",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+      "checked_at": "2026-09-28T21:56:58.631160+00:00",
+      "health": {
+        "id": "aws-ecs-strategies",
+        "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+        "checked_at": "2026-09-28T21:56:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+        "content_type": "text/html",
+        "page_title": "Amazon ECS service deployment controllers and strategies - Amazon Elastic Container ServiceAmazon ECS service deployment controllers and strategies - Amazon Elastic Container Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+        "duration_signals": [],
+        "signal_fingerprint": "24bddc38efee5a9a3cfac8c052470fe234398091f9bf50d9f172195e3316f726",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+      "sha256": "22561dd323caa1a1fc75505daa0ba5cd93545708ce40d6635cbe080f1d1c857b",
+      "text_characters": 14273
+    },
+    {
+      "id": "aws-ecs-gradual-blog",
+      "url": "https://aws.amazon.com/blogs/containers/gradual-deployments-in-amazon-ecs-with-linear-and-canary-strategies/",
+      "checked_at": "2026-09-28T21:56:58.631673+00:00",
+      "health": {
+        "id": "aws-ecs-gradual-blog",
+        "url": "https://aws.amazon.com/blogs/containers/gradual-deployments-in-amazon-ecs-with-linear-and-canary-strategies/",
+        "checked_at": "2026-09-28T21:56:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/containers/gradual-deployments-in-amazon-ecs-with-linear-and-canary-strategies/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Gradual deployments in Amazon ECS with linear and canary strategies | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/containers/gradual-deployments-in-amazon-ecs-with-linear-and-canary-strategies/",
+        "duration_signals": [
+          "15 minutes",
+          "20 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "66119640174e8dc21a66a108dc6c710f0d6f45f9fd1b47bf1727312eb51ec510",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/containers/gradual-deployments-in-amazon-ecs-with-linear-and-canary-strategies/",
+      "sha256": "27276aa5015a0ef7f190f15e1f9a62c1321c7f6be2c3308de5db32133285df72",
+      "text_characters": 21847
+    },
+    {
+      "id": "aws-ecs-deployment-observability",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+      "checked_at": "2026-09-28T21:56:58.632163+00:00",
+      "health": {
+        "id": "aws-ecs-deployment-observability",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+        "checked_at": "2026-09-28T21:56:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Amazon ECS now provides real-time deployment observability in the AWS Management Console - AWS",
+        "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+        "duration_signals": [],
+        "signal_fingerprint": "9e97c282718fa78567bf4d1e5e89d6b6cad462dd77a199b80583381294801732",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+      "sha256": "f911b5df7c034a5c9d1a5fe270f418405de4a5540c8b324b863afe91420355e7",
+      "text_characters": 1848
+    },
+    {
+      "id": "aws-proton-retirement",
+      "url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+      "checked_at": "2026-09-28T21:56:58.632478+00:00",
+      "health": {
+        "id": "aws-proton-retirement",
+        "url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+        "checked_at": "2026-09-28T21:56:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+        "content_type": "text/html",
+        "page_title": "AWS Proton Service Deprecation and Migration Guide - AWS ProtonAWS Proton Service Deprecation and Migration Guide - AWS Proton",
+        "canonical_url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6e6ba9e3d07fda6e0eacc42956275175c2bb949392b60254f3a1c9796d5dfced",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+      "sha256": "ec2916595da2568efc02cdf5b47d08b0711ae60c3b3b51829c202110c2584b6f",
+      "text_characters": 5965
+    },
+    {
+      "id": "aws-incidentmanager-availability",
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+      "checked_at": "2026-09-28T21:56:59.190378+00:00",
+      "health": {
+        "id": "aws-incidentmanager-availability",
+        "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+        "checked_at": "2026-09-28T21:56:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Systems Manager Incident Manager availability change - Incident ManagerAWS Systems Manager Incident Manager availability change - Incident Manager",
+        "canonical_url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "166fa5ffdb7f8cbf281932204d3720c0a74d98a4de1f0915dbf0916e7881bf07",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+      "sha256": "75bf6a2bb8b3dc1c71012a743f4bb928052a39e3553aa2800cdd315e0b175cc4",
+      "text_characters": 2176
+    },
+    {
+      "id": "aws-change-manager-availability",
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+      "checked_at": "2026-09-28T21:56:59.195116+00:00",
+      "health": {
+        "id": "aws-change-manager-availability",
+        "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+        "checked_at": "2026-09-28T21:56:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+        "content_type": "text/html",
+        "page_title": "AWS Systems Manager Change Manager - AWS Systems ManagerAWS Systems Manager Change Manager - AWS Systems Manager",
+        "canonical_url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7adea53bf45e7c629519c844b5bcf38d55e810c26394c02eb20f4656b63c93dd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html",
+      "sha256": "525e4d1e5a1d1577ea3af89be0c1d2372a39166c1be8ca8ec924c44f1b12e465",
+      "text_characters": 17778
+    },
+    {
+      "id": "aws-cloudwatch-metric-streams",
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+      "checked_at": "2026-09-28T21:56:59.205325+00:00",
+      "health": {
+        "id": "aws-cloudwatch-metric-streams",
+        "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+        "checked_at": "2026-09-28T21:56:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+        "content_type": "text/html",
+        "page_title": "Use metric streams - Amazon CloudWatchUse metric streams - Amazon CloudWatch",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3deb060ec6a71c3df3de9dca44c80c0a5b9aa43e030dfefbad6a3ba92a9d23af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+      "sha256": "df5ef60bec495653360be158e345be4ad46c83d9cb340486761fa3d849e34403",
+      "text_characters": 4659
+    }
+  ],
+  "added_source_ids": [
+    "aws-ecs-strategies",
+    "aws-ecs-gradual-blog",
+    "aws-ecs-deployment-observability",
+    "aws-proton-retirement",
+    "aws-incidentmanager-availability",
+    "aws-change-manager-availability",
+    "aws-cloudwatch-metric-streams"
+  ],
+  "findings": [
+    {
+      "id": "dopc02-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "ECS native strategies missing",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DOP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ECS controller supports rolling, blue-green, linear and canary alongside separate CodeDeploy controller.",
+      "recommendation": "Add explicit controller/strategy comparison and update older task-set-only wording.",
+      "disposition": "applied",
+      "source_id": "aws-ecs-strategies",
+      "resolution": "Add explicit controller/strategy comparison and update older task-set-only wording."
+    },
+    {
+      "id": "dopc02-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Near-term Proton shutdown missing",
+      "url": "https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DOP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Support ends October 7, 2026; deployed infrastructure remains.",
+      "recommendation": "Add migration and resource-ownership boundary with historical scope context.",
+      "disposition": "applied",
+      "source_id": "aws-proton-retirement",
+      "resolution": "Add migration and resource-ownership boundary with historical scope context."
+    },
+    {
+      "id": "dopc02-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New-account incident lab dependency unavailable",
+      "url": "https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DOP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Incident Manager closed to new customers November 7, 2025.",
+      "recommendation": "Separate existing-service recognition from new learner lab route.",
+      "disposition": "applied",
+      "source_id": "aws-incidentmanager-availability",
+      "resolution": "Separate existing-service recognition from new learner lab route."
+    },
+    {
+      "id": "dopc02-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Task 4.1 streaming telemetry gap",
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Metric-Streams.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DOP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Metric streams and log subscriptions transport different signals.",
+      "recommendation": "Add Firehose delivery and metric-filter distinctions.",
+      "disposition": "applied",
+      "source_id": "aws-cloudwatch-metric-streams",
+      "resolution": "Add Firehose delivery and metric-filter distinctions."
+    },
+    {
+      "id": "dopc02-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "New ECS deployment evidence view",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-console-deployment-observability/",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "DOP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 21 release adds native strategy deployment timeline and diagnostic context.",
+      "recommendation": "Add current console evidence pointer without claiming observed deployment success.",
+      "disposition": "applied",
+      "source_id": "aws-ecs-deployment-observability",
+      "resolution": "Add current console evidence pointer without claiming observed deployment success."
+    },
+    {
+      "id": "dopc02-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Conflicting App Runner closure dates",
+      "url": "https://aws.amazon.com/apprunner/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DOP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Product page April 30, 2026; API notice March 31, 2026.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-ecs-gradual-blog",
+      "published_on": "2026-05-08",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Strategy, architecture, observability, rollback and prerequisite sections; commands not executed.",
+      "value": "Concrete native deployment and alarm learning route.",
+      "limits": "Do not generalize instant rollback, count metrics as rates, or schema rollback safety."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "Ten arithmetic assertions for original canary, queue and recovery cases."
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Same-context AI review; human review pending.",
+    "No AWS lab, paid course, deployment, failure drill or blog commands executed.",
+    "App Runner exact closure date remains vendor-conflicted.",
+    "Exam scope includes historical services and does not guarantee availability."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

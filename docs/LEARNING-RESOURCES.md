@@ -2528,13 +2528,28 @@ Suggested preparation: an experienced AWS builder may need **60–90 hours**; so
 
 ### AWS Certified DevOps Engineer - Professional (DOP-C02)
 
-- Official route: [AWS certification page and four-step plan](https://aws.amazon.com/certification/certified-devops-engineer-professional/) plus [DOP-C02 Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02) (**about 25–40 hours selected plus labs/game days**); use official questions, domain refresh, Builder Labs/Jam/SimuLearn options and official practice according to entitlement.
-- Structured domain route: [Pluralsight DOP-C02 path](https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional) (**35 listed hours**, eight courses and practice exam); modules span 2024 through August 2026, so verify legacy service/workflow details.
-- Current compact course: [Udemy/Stéphane Maarek DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/) (**17 hours 3 minutes plus extensive hands-on repetition**; updated August 2026 and assumes associate-level foundation).
-- Course/practice route: [Tutorials Dojo DOP-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/) (**about 30–45 hours**, including 21.2+ video hours, 10+ labs and 15 practice modes/quizzes); its included-test label says 65 questions while the live exam has 75 total, so verify format.
-- Lab/practice alternative: [Whizlabs DOP-C02](https://www.whizlabs.com/aws-devops-certification-training/) (**25–50 selected hours estimated**); inspect live video, practice, lab and sandbox totals after access because stable public counts were not exposed.
+Resource details from the [DOP-C02 guide](../guides/DOP-C02-aws-certified-devops-engineer-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one primary route and spend **40–70 hours** on build-once promotion, IaC/account foundations, failure drills, observability, response and compliance evidence. No exact current O'Reilly or MeasureUp DOP-C02 product was independently verified. Reject recalled-question and “actual exam item” claims.
+This is **not a complete list**, and it is not meant to be consumed in full. Choose one current primary route, then spend more time building and failing enterprise-style delivery/operations systems than watching overlapping videos. Use legitimate practice to locate gaps; reject recalled-question or “actual item” claims.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official guide and AWS four-step plan | Public/free-account/subscription mix | 25–40 hours selected study |
+| Hands-on delivery, operations, and game days | Sandbox/authorized accounts | 40–70 hours |
+| Pluralsight DOP-C02 path | Paid | 35 hours plus labs/practice |
+| Udemy/Stéphane Maarek current course | Paid | Plan 30–50 hours including labs |
+| Tutorials Dojo video/practice route | Paid | 30–45 hours estimated |
+| Whizlabs course/lab/practice route | Paid | 25–50 hours estimated |
+
+- **Official route:** [AWS certification page and four-step plan](https://aws.amazon.com/certification/certified-devops-engineer-professional/) plus [DOP-C02 Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02) (**about 25–40 hours selected**, plus labs/game days). Use official questions, domain refresh, Builder Labs/Jam/SimuLearn choices, and official practice exam according to entitlement.
+- **Structured domain route:** [Pluralsight DOP-C02 path](https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional) (**35 listed hours**, eight courses and practice exam; modules range from 2024 to August 2026, so check legacy named services/workflows). Its overview still uses older domain labels and mentions OpsWorks; map the actual modules to the current six domains.
+- **Current compact course:** [Udemy/Stéphane Maarek DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/) (**plan 30–50 hours including hands-on repetition**). Public content was blocked in this review; current runtime and update date were not reverified. Its compact runtime assumes associate-level foundation and real AWS experience.
+- **Course/practice route:** [Tutorials Dojo DOP-C02 video course](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/) (**21.2+ video hours, 10+ listed labs, 13 quizzes, and one practice test**) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/) (**about 10–18 hours** across randomized, timed, review, and six domain sets). Note that its video page still labels the included full test as 65 questions even though the live exam has 75 total; verify practice format. The practice page markets exam-feedback input; use independently authored explanations and avoid recalled material.
+- **Lab/practice alternative:** [Whizlabs DOP-C02](https://www.whizlabs.com/aws-devops-certification-training/) (**about 25–50 hours selected estimated**); the current product resolves, but stable public counts/runtime were not exposed in the review response. Inspect live coverage, labs, sandbox, and practice sets before purchase.
+- **O'Reilly boundary:** no exact current DOP-C02-specific O'Reilly book/video with stable public metadata was independently verified in this review. Use its AWS/DevOps library only after mapping chapters to the six official domains.
+- **Practice boundary:** no exact current MeasureUp DOP-C02 product was independently verified. Start with official AWS assessment, then choose a legitimate explanation-rich bank rather than large untraceable question collections.
+
+Suggested preparation: someone already owning mature AWS delivery and operations may need **80–120 hours**; a candidate bridging from associate-level knowledge may need **140–220 hours**, including prerequisites and game days.
 
 ### AWS Certified Generative AI Developer - Professional (AIP-C01)
 

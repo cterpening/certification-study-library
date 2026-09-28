@@ -1082,6 +1082,8 @@ The review reconciles the current four-domain SAA-C03 blueprint with all detaile
 
 ## DOP-C02 coverage record
 
+The September 28 [deep review](research/2026-09-28-dop-c02-deep-review.md) maps 140 detailed objectives. Review 140 detailed bullets; update ECS deployments and lifecycle boundaries, metric streams, queue scaling, and five original operating decisions. Current guide citations: 33 registered, 32 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | SDLC Automation | Section 1, Integrated scenarios 1 and 3, and Labs 1–2 |

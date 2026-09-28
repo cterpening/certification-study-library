@@ -4457,25 +4457,78 @@
       "notes": "Review 189 detailed bullets; add Italian retirement notice, global-table consistency/region choices, storage/NAT boundaries, reliable order publication, five worked cases and missing architecture comparisons. See docs/research/2026-09-28-saa-c03-deep-review.md"
     },
     {
-      "id":"dop-c02-2026-09-01-source-validation",
-      "exam_code":"DOP-C02",
-      "guide_path":"guides/DOP-C02-aws-certified-devops-engineer-professional.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/dop-c02-official-objectives.txt",
-      "blueprint_snapshot_sha256":"b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9",
-      "objective_coverage":[
-        {"objective_group":"SDLC Automation","guide_sections":["Section 1","Integrated scenarios 1 and 3","Labs 1–2"]},
-        {"objective_group":"Configuration Management and IaC","guide_sections":["Section 2","Integrated scenarios 1–2","Labs 3–4"]},
-        {"objective_group":"Resilient Cloud Solutions","guide_sections":["Section 3","All integrated scenarios","Labs 2, 6–7"]},
-        {"objective_group":"Monitoring and Logging","guide_sections":["Section 4","All integrated scenarios","Labs 2 and 5–7"]},
-        {"objective_group":"Incident and Event Response","guide_sections":["Section 5","Integrated scenarios 2–3","Labs 5–7"]},
-        {"objective_group":"Security and Compliance","guide_sections":["Section 6","Integrated scenarios 1–2","Labs 1, 4, and 8"]}
+      "id": "dop-c02-2026-09-28-source-validation",
+      "exam_code": "DOP-C02",
+      "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dop-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9",
+      "objective_coverage": [
+        {
+          "objective_group": "SDLC Automation",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios 1 and 3",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Configuration Management and IaC",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Resilient Cloud Solutions",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 2, 6–7"
+          ]
+        },
+        {
+          "objective_group": "Monitoring and Logging",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 2 and 5–7"
+          ]
+        },
+        {
+          "objective_group": "Incident and Event Response",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 2–3",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Security and Compliance",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios 1–2",
+            "Labs 1, 4, and 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":18,"reachable":17,"access_blocked":1,"missing_or_error":0},
-      "notes":"The current six-domain DOP-C02 guide was reconciled with every detailed domain page, the live 180-minute/75-question/USD-300 certification page and non-exhaustive service list. Three scenarios, eight safe labs and 42 original checks cover build-once artifact provenance, tests and deployment safety; reusable IaC and multi-account desired state; capacity, bounded self-healing and tested recovery; centralized outcome-driven telemetry; evidence-preserving incident response; and supply-chain, identity, data and continuous-compliance controls. All 18 URLs are cataloged: 17 reachable and Udemy automation-blocked; none missing or broken. Current-service/training metadata is labeled and no recalled questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 33,
+        "reachable": 32,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Review 140 detailed bullets; update ECS deployments and lifecycle boundaries, metric streams, queue scaling, and five original operating decisions. See docs/research/2026-09-28-dop-c02-deep-review.md"
     },
     {
       "id":"aip-c01-2026-09-01-source-validation",
