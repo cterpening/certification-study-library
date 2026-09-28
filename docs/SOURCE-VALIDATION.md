@@ -655,6 +655,8 @@ The review maps every April 28, 2026 subobjective to a tenant, identity, securit
 
 ## AB-650 coverage record
 
+The September 28 [deep review](research/2026-09-28-ab-650-deep-review.md) maps 58 detailed objectives. Whole guide read and all 58 unchanged July objectives mapped across ten groups. Add six synthetic worked examples, two labs (eleven total), 48 answered checks and a bounded InsideTrack operations exercise. Update recovery, network, meetings, risk migration, Cowork access/billing, provider scope, agent identity, templates, registry and Purview boundaries. Second-year Backup restore frequency remains unresolved. Twelve offline assertions passed; no tenant or paid-content execution; human review pending. Current guide citations: 48 registered, 46 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Configure and manage Microsoft 365 tenants and workloads | Section 1, all integrated scenarios, and Labs 1–2 |

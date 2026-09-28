@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ab650-insidetrack-blog",
+      "title": "Implementing Agent 365: How Microsoft governs and manages AI agents",
+      "url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Alex Fleck, August 6 2026, public main article read. Operations worksheet and original inventory arithmetic only; linked videos, internal tenant and scale claims not reproduced. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-cowork-access",
+      "title": "How access to Copilot Cowork is determined",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Full access decision procedure read. Spending scopes and asynchronous enforcement used; older tenant-wide model claim qualified by newer provider/admin documentation. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-spending",
+      "title": "Manage AI experiences enabled by usage-based billing",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Spending scope, precedence, carried consumption, auto-apply services and limit-versus-allocation sections read. Role/licensing/pricing sections not independently audited; no spending activated. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-network-insights",
+      "title": "Microsoft 365 Network Insights",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Location/egress, protocol, service-health notifications and context limitations reviewed. No executable network assessment downloaded or run. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-mailboxes",
+      "title": "About shared mailboxes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Licensing, delegate/direct access and mailbox limits read. No Exchange mailbox or messaging action. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-exam",
+      "title": "Exam AB-650: Administering Microsoft 365 and AI Services",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Current public exam page read: beta, English, no Practice Assessment or current instructor-led course. Fixed exam duration not exposed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-udemy-ellerby",
+      "title": "Dean Ellerby AB-650 practice tests public listing",
+      "url": "https://www.udemy.com/course/ab-650-practice-tests-administering-m365-ai-services/",
+      "publisher": "Udemy / Dean Ellerby",
+      "authority_class": 3,
+      "source_type": "commercial-study-and-practice",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: September 28 web search indexed public description advertises Dean Ellerby, August 2026, six tests/360 questions and documentation explanations. Direct retrieval access-blocked; paid content, originality, coverage, runtime and seller certification claims unverified. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-udemy-khaled",
+      "title": "Hamdy Khaled AB-650 practice exams public listing",
+      "url": "https://www.udemy.com/course/ab-650-practice-exams-300-qs-official-sources/",
+      "publisher": "Udemy / Hamdy Khaled",
+      "authority_class": 3,
+      "source_type": "commercial-study-and-practice",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: September 28 web search indexed public description advertises Hamdy Khaled, August 2026, five tests/300 questions and documentation explanations. Direct retrieval access-blocked; paid content, originality, coverage and runtime unverified. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-ai-provider",
+      "title": "Anthropic models in Microsoft Online Services",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Full public provider-control page read. Newer user/group scope and distinct data-retention opt-in/terms reviewed, no provider enabled or legal interpretation offered. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab650-registry",
+      "title": "Agent registry in the Microsoft 365 admin center",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Custom ZIP upload/publish/deploy, inventory export and preview API sections read. No package uploaded, API invoked or manifest independently tested. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ab210-agent-prereqs",
       "title": "Prerequisites applicable to all Sales agents",
       "url": "https://learn.microsoft.com/en-us/dynamics365/sales/prerequisites-for-all-agents",
@@ -770,9 +910,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "AB-650"
       ],
-      "notes": "September 28 MS-700 deep review: Membership/site/guest-toggle, retention and file-level Conditional Access sections reviewed. No cross-tenant configuration executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Membership/site/guest-toggle, retention and file-level Conditional Access sections reviewed. No cross-tenant configuration executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Membership, B2B direct connect, ownership, site and residual direct file access sections read. Not a full shared-channel compliance audit. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-rooms",
@@ -886,9 +1027,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "MS-700",
-        "MS-721"
+        "MS-721",
+        "AB-650"
       ],
-      "notes": "September 28 MS-700 deep review: Full settings/transcription table read, including default versus enforced values, retention and encryption/cloud limits. No AI session executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh policy/transcription matrix; default/enforced, privacy and encrypted meeting limits reviewed in same session. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Full settings/transcription table read, including default versus enforced values, retention and encryption/cloud limits. No AI session executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh policy/transcription matrix; default/enforced, privacy and encrypted meeting limits reviewed in same session. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Current meeting modes, transcription table and policy defaults/enforcement read; no meeting or retention lab executed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-voice-license",
@@ -1158,9 +1300,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-300"
+        "SC-300",
+        "AB-650"
       ],
-      "notes": "September 28 SC-300 deep review: Separate risk conditions, prerequisites, report-only-to-enforcement migration and current adaptive control sections read; no test tenant or risky sign-in generated. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SC-300 deep review: Separate risk conditions, prerequisites, report-only-to-enforcement migration and current adaptive control sections read; no test tenant or risky sign-in generated. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Full current migration/risk-policy procedure read. October 1 deadline and separate risk conditions applied; no Entra policy changed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc300-log-retention",
@@ -1300,9 +1443,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "AB-650"
       ],
-      "notes": "September 28 MS-102 deep review: Operation/frequency, granular/in-place permissions, destination, workload, geo/hold and test limitations reviewed. First-year frequency does not establish second-year cadence. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Operation/frequency, granular/in-place permissions, destination, workload, geo/hold and test limitations reviewed. First-year frequency does not establish second-year cadence. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Full versus granular selection, first-year frequency, destination permissions, role and limitations sections read. Second-year frequency remains unspecified. No restore performed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-backup-new",
@@ -1314,9 +1458,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "AB-650"
       ],
-      "notes": "September 28 MS-102 deep review: Current capability, FAQ and notice feed read; specific restore instructions supersede old overview coming-soon and April blog in-place roadmap. Launch dates not inferred from older announcement. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Current capability, FAQ and notice feed read; specific restore instructions supersede old overview coming-soon and April blog in-place roadmap. Launch dates not inferred from older announcement. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Public change ledger read, including September recovery-window, preview workload and GA granular-restore entries. No customer launch verified in a tenant. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-backup-policy",
@@ -1328,9 +1473,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "AB-650"
       ],
-      "notes": "September 28 MS-102 deep review: Recovery window, static/dynamic selection, full-workload/custom precedence, exclusions/removal and daily scan sections read. No paid operation or retention reduction performed. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Recovery window, static/dynamic selection, full-workload/custom precedence, exclusions/removal and daily scan sections read. No paid operation or retention reduction performed. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Scope, static/dynamic groups, workload preview, mailbox exclusions and recovery-window procedure read. No policy or retention window changed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-policy-order",
@@ -2176,11 +2322,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-100"
+        "SC-100",
+        "AB-650"
       ],
-      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Full targeting procedure read; agent identity Block-only versus agent-user endpoint/preview controls preserved. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc100-storage-keys",
@@ -2837,11 +2984,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-730"
+        "AB-730",
+        "AB-650"
       ],
-      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AB-730 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-ab-730-deep-review.md No live infrastructure execution. September 28 AB-650 deep review: Current access migration, models, automated task approval, browser and governance sections read. No billing policy, plugin, task or tenant setting changed. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab730-cowork-faq",
@@ -21254,9 +21402,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"],
-      "notes": "Policy targeting, licensing, limitations, and supported access patterns are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-100",
+        "AB-650"
+      ],
+      "notes": "Policy targeting, licensing, limitations, and supported access patterns are volatile. September 28 AB-650 deep review: Access patterns, subject/audience, blueprint and API-key boundaries read; no token or policy execution. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-privileged-access",
@@ -23367,10 +23518,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
-      ]
+        "MS-102",
+        "AB-650"
+      ],
+      "notes": "September 28 AB-650 deep review: Feature/frequency and performance context reviewed; second-year cadence still missing. Not a full capacity or pricing verification. See docs/research/2026-09-28-ab-650-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-102-network-connectivity",

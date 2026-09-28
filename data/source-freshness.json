@@ -4,6 +4,431 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ab650-deep-review",
+      "title": "AB-650 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-650"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-650",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+          "baseline_sha256": "c6843f6d53d0aec59b506a295e09bd6559e2d8674cc9eb058ae9604086420667",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "July 27 objective/status snapshots unchanged; beta/English/no assessment retained. No separate effective date, fixed duration or current instructor-led course verified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Primary procedures substantiate learner additions; latest dedicated template/provider controls qualify older pages. Missing second-year recovery cadence tracked separately."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September Backup ledger and latest September 23 Copilot release entry reviewed, plus Agent 365 GA/integration boundary. Full release archive not audited; four follow-ups scheduled."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Three Learn paths expose 17 modules, old runtime historical. Two exact Udemy search-indexed listings found but direct requests blocked; no paid-content endorsement. Other bounded catalog searches yielded no verified exact offering."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Two-year Backup recovery windows are documented, but frequency tables stop at 365 days/52 weeks. No second-year cadence or restore-point guarantee inferred."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab650-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Second-year recovery cadence remains unspecified",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Two-year policy windows coexist with frequency tables ending at 365 days/52 weeks.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ab650-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Current beta status and preparation limits",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "English and no Practice Assessment/current course remain published; duration not visible.",
+              "recommendation": "Retain beta bounds without inventing timing or GA date.",
+              "disposition": "applied",
+              "source_id": "ab650-exam",
+              "resolution": "Retain beta bounds without inventing timing or GA date."
+            },
+            {
+              "id": "ab650-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Backup September changes affect old labs",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Recovery windows, granular GA and preview full workload differ from older descriptions.",
+              "recommendation": "Add current scope and recovery exercise while preserving unresolved cadence.",
+              "disposition": "applied",
+              "source_id": "ms102-backup-new",
+              "resolution": "Add current scope and recovery exercise while preserving unresolved cadence."
+            },
+            {
+              "id": "ab650-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Backup membership selection is not uniformly dynamic",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Static filters snapshot membership; dynamic preview reevaluates daily and mailbox exclusions apply.",
+              "recommendation": "Explain selection modes and shared-mailbox reconciliation.",
+              "disposition": "applied",
+              "source_id": "ms102-backup-policy",
+              "resolution": "Explain selection modes and shared-mailbox reconciliation."
+            },
+            {
+              "id": "ab650-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Connectivity insights do not establish user entitlement",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Insights describe location/protocol, not user license or device identity.",
+              "recommendation": "Add service-health notification and WebSocket troubleshooting evidence.",
+              "disposition": "applied",
+              "source_id": "ab650-network-insights",
+              "resolution": "Add service-health notification and WebSocket troubleshooting evidence."
+            },
+            {
+              "id": "ab650-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Shared mailbox licensing and sign-in are distinct",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Delegates need licensed mailboxes; direct shared-account sign-in stays blocked.",
+              "recommendation": "Add access and capacity licensing boundaries.",
+              "disposition": "applied",
+              "source_id": "ab650-mailboxes",
+              "resolution": "Add access and capacity licensing boundaries."
+            },
+            {
+              "id": "ab650-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Transcript enforcement differs from defaults",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only-during, during-and-after and Off have separate recording/transcription effects.",
+              "recommendation": "Replace vague verification placeholder with decision table and compliance caveat.",
+              "disposition": "applied",
+              "source_id": "ms700-copilot",
+              "resolution": "Replace vague verification placeholder with decision table and compliance caveat."
+            },
+            {
+              "id": "ab650-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Channel membership removal can leave direct file access",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Direct file/folder grants are separate from shared-channel membership.",
+              "recommendation": "Add identity, ownership and residual-grant review.",
+              "disposition": "applied",
+              "source_id": "ms700-shared",
+              "resolution": "Add identity, ownership and residual-grant review."
+            },
+            {
+              "id": "ab650-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Legacy risk policies retire October 1",
+              "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current procedure migrates separate user/sign-in risk policies with report-only verification.",
+              "recommendation": "Add migration deadline, remediation constraints and follow-up.",
+              "disposition": "applied",
+              "source_id": "sc300-risk-migration",
+              "resolution": "Add migration deadline, remediation constraints and follow-up."
+            },
+            {
+              "id": "ab650-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cowork access comes from spending scope",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Any applicable selecting policy grants access; discovery and small limits do not exclude users.",
+              "recommendation": "Add scoped access exercise and asynchronous-limit caveat.",
+              "disposition": "applied",
+              "source_id": "ab650-cowork-access",
+              "resolution": "Add scoped access exercise and asynchronous-limit caveat."
+            },
+            {
+              "id": "ab650-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Spending policies select one whole policy and preserve usage",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Highest per-user limit wins; group move does not reset consumption.",
+              "recommendation": "Add precedence and carried-consumption arithmetic; review automatic new services.",
+              "disposition": "applied",
+              "source_id": "ab650-spending",
+              "resolution": "Add precedence and carried-consumption arithmetic; review automatic new services."
+            },
+            {
+              "id": "ab650-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Newer provider procedure supports scoped access",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 18 provider procedure and September 14 Cowork admin contradict older tenant-only model wording.",
+              "recommendation": "Use newer dedicated provider scope and distinguish separate data-retention opt-in.",
+              "disposition": "applied",
+              "source_id": "ab650-ai-provider",
+              "resolution": "Use newer dedicated provider scope and distinguish separate data-retention opt-in."
+            },
+            {
+              "id": "ab650-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Agent policy target follows token subject",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Agent identities support Block-only; agent-user preview and delegated user policies differ.",
+              "recommendation": "Add identity/flow table and API-key boundary.",
+              "disposition": "applied",
+              "source_id": "sc100-agent-targeting",
+              "resolution": "Add identity/flow table and API-key boundary."
+            },
+            {
+              "id": "ab650-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sharing controls have narrower scope than their labels",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "No users preserves direct Agent Builder sharing; Microsoft agent types remain visible when disabled.",
+              "recommendation": "Correct settings scope and add answered checks.",
+              "disposition": "applied",
+              "source_id": "ab650-agent-settings",
+              "resolution": "Correct settings scope and add answered checks."
+            },
+            {
+              "id": "ab650-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Existing instances have a separate one-time template operation",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Newer settings add bulk Apply template, excluding blueprints/AI teammates; older FAQ only describes new activations.",
+              "recommendation": "Separate ordinary edit from explicit bulk action and add backlog example.",
+              "disposition": "applied",
+              "source_id": "ab650-agent-settings",
+              "resolution": "Separate ordinary edit from explicit bulk action and add backlog example."
+            },
+            {
+              "id": "ab650-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Custom upload separates validation from publication and deployment",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ZIP upload reviews host, audiences, policies and permissions.",
+              "recommendation": "Add objective-specific upload sequence and enforcement check.",
+              "disposition": "applied",
+              "source_id": "ab650-registry",
+              "resolution": "Add objective-specific upload sequence and enforcement check."
+            },
+            {
+              "id": "ab650-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Block, ownership and firewall behavior vary by platform",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Foundry/SharePoint block limits, multiple individual owners and upstream firewall failures are documented.",
+              "recommendation": "Add scope-aware lifecycle and result verification.",
+              "disposition": "applied",
+              "source_id": "ab-650-agent-actions",
+              "resolution": "Add scope-aware lifecycle and result verification."
+            },
+            {
+              "id": "ab650-deep-18",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "BYO MCP product support and lifecycle remain preview-limited",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Named clients supported; republishing and deletion unsupported.",
+              "recommendation": "Add explicit approval/consent, support and lifecycle boundaries.",
+              "disposition": "applied",
+              "source_id": "ab-650-agent-tools",
+              "resolution": "Add explicit approval/consent, support and lifecycle boundaries."
+            },
+            {
+              "id": "ab650-deep-19",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Audit visibility is broader than documented DLP blocking",
+              "url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Explicit sharing plus VIEW/EXTRACT and generated-label limits apply; human/agent DLP path differs from audit.",
+              "recommendation": "Add permission gates, output protection and coverage exercise.",
+              "disposition": "applied",
+              "source_id": "ab650-purview-agent-365",
+              "resolution": "Add permission gates, output protection and coverage exercise."
+            },
+            {
+              "id": "ab650-deep-20",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Catalog and blog evidence need bounded claims",
+              "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-650"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current paths show 17 modules; old duration absent; public case study is not tenant validation.",
+              "recommendation": "Qualify runtime and new commercial leads; add original operations worksheet and denominator examples.",
+              "disposition": "applied",
+              "source_id": "ab-650-path-ai-services",
+              "resolution": "Qualify runtime and new commercial leads; add original operations worksheet and denominator examples."
+            }
+          ],
+          "notes": "Whole guide read and all 58 unchanged July objectives mapped across ten groups. Add six synthetic worked examples, two labs (eleven total), 48 answered checks and a bounded InsideTrack operations exercise. Update recovery, network, meetings, risk migration, Cowork access/billing, provider scope, agent identity, templates, registry and Purview boundaries. Second-year Backup restore frequency remains unresolved. Twelve offline assertions passed; no tenant or paid-content execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ab-650-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 19,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ab210-deep-review",
       "title": "AB-210 complete guide and learning-content review",
       "rubric_version": 1,

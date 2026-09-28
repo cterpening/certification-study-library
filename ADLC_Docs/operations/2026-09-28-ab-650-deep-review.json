@@ -1,0 +1,2243 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AB-650",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "772dab7f98690329dcc7a34b3e90b3bc1997ec6ff83e1d5caf59f8fa3b021d56",
+  "guide_after_sha256": "4d96d9ec1dc49bf272cfcd04040cc2d0d0474bb801221b9f94ae29807ea6e354",
+  "prior_records": {
+    "exam": {
+      "code": "AB-650",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft 365 and AI Services Administrator Associate",
+      "status": "beta",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+      "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+      "blueprint_last_checked": "2026-09-05",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Hands-on Microsoft 365 administration across Entra ID, Exchange, Teams, SharePoint, Defender and Purview, plus practical Microsoft 365 Copilot, Agent 365, licensing, identity, data governance, incident response, reporting, PowerShell and Microsoft Graph experience."
+    },
+    "review": {
+      "id": "ab-650-2026-09-01-source-validation",
+      "exam_code": "AB-650",
+      "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-05",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-650-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+      "objective_coverage": [
+        {
+          "objective_group": "Configure and manage Microsoft 365 tenants and workloads",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Govern and secure Microsoft 365 tenants and workloads",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3–6"
+          ]
+        },
+        {
+          "objective_group": "Manage and secure AI services in Microsoft 365",
+          "guide_sections": [
+            "Section 3 — Agent identity, settings, policy templates, and Purview protection",
+            "All integrated scenarios",
+            "Labs 2 and 6–9",
+            "Knowledge checks 37–40"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 28,
+        "reachable": 28,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the beta blueprint page last updated July 27, 2026 is mapped to tenant, workload, identity, authorization, data, agent/tool, security, operational, evidence, failure, and recovery decisions. Three scenarios, nine labs, and 40 checks include Entra Agent ID lifecycle, tenant agent settings, Agent 365 policy templates, Purview scope, and compliance-gap remediation. All 28 cited URLs are reachable. The September 7 watch separates Agent 365 product GA from individual capability status and adds the recurring Copilot release feed."
+    },
+    "sources": [
+      {
+        "id": "ab-650-blueprint",
+        "title": "Study guide for Exam AB-650: Administering Microsoft 365 and AI Services",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Authoritative beta objective list; page last updated July 27, 2026 without a separate skills-measured effective date."
+      },
+      {
+        "id": "ab-650-credential",
+        "title": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Official beta credential page; no Practice Assessment or retirement date was listed at review."
+      },
+      {
+        "id": "ab-650-copilot-control-measurement",
+        "title": "Copilot Control System measurement and reporting",
+        "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-control-system/measurement-reporting",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current readiness, adoption, operational, productivity and business-value reporting guidance."
+      },
+      {
+        "id": "ab-650-m365-copilot-docs",
+        "title": "Microsoft 365 Copilot documentation",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Microsoft 365 Copilot documentation hub."
+      },
+      {
+        "id": "ab-650-agent-overview",
+        "title": "Agent overview in Microsoft 365 admin center",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview?view=o365-worldwide",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Agent 365 inventory, activity, request, owner and risk overview."
+      },
+      {
+        "id": "ab-650-agent-actions",
+        "title": "Governance and lifecycle actions for agents",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Agent Registry lifecycle and administrative actions."
+      },
+      {
+        "id": "ab-650-agent-tools",
+        "title": "Manage tools for agents in Microsoft 365 admin center",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Agent Tools registry, requests, MCP server, plugin, skill and observation guidance."
+      },
+      {
+        "id": "ab-650-control-system-overview",
+        "title": "Copilot Control System overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Microsoft 365 framework for Copilot and agent security, controls and measurement."
+      },
+      {
+        "id": "ab-650-copilot-app-settings",
+        "title": "Microsoft Copilot app settings for IT administrators",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Copilot application experience and search settings; defaults and rollout are volatile."
+      },
+      {
+        "id": "ab-650-copilot-search-admin",
+        "title": "Microsoft Copilot Search admin experience",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-search-admin-experience",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Copilot Search configuration, acronyms and bookmarks guidance."
+      },
+      {
+        "id": "ab-650-agent-365-docs",
+        "title": "Microsoft Agent 365 documentation",
+        "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current Microsoft Agent 365 documentation hub."
+      },
+      {
+        "id": "ab-650-sharepoint-readiness",
+        "title": "Get ready for Copilot and agents with SharePoint Advanced Management",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/get-ready-copilot-sharepoint-advanced-management",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Current content governance, readiness, Restricted Access Control and Restricted Content Discovery guidance."
+      },
+      {
+        "id": "ab-650-path-configure",
+        "title": "Configure and manage Microsoft 365 tenants and workloads",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Official AB-650 path; listed duration 7 hours 2 minutes."
+      },
+      {
+        "id": "ab-650-path-govern",
+        "title": "Govern and secure Microsoft 365 tenants and workloads",
+        "url": "https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Official AB-650 path; listed duration 7 hours 39 minutes."
+      },
+      {
+        "id": "ab-650-path-ai-services",
+        "title": "Manage and secure Microsoft 365 AI services",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-650"
+        ],
+        "notes": "Official AB-650 path; listed duration 8 hours 27 minutes."
+      },
+      {
+        "id": "ab-650-john-savill-youtube",
+        "title": "John Savill's Technical Training",
+        "url": "https://www.youtube.com/@NTFAQGuy",
+        "publisher": "John Savill",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AB-650",
+          "MD-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Selective Microsoft identity, security and architecture foundation; no exact AB-650 course was confirmed. September 27 MD-102 deep review: Channel shell only; no exact current MD-102 course established. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; MS-700 playlist content/current completeness unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ab650-entra-agent-id-administration",
+        "title": "Manage Microsoft Entra agent identities",
+        "url": "https://learn.microsoft.com/en-us/entra/agent-id/manage-agent-identities-admin",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-650"
+        ]
+      },
+      {
+        "id": "ab650-agent-settings",
+        "title": "Manage Microsoft 365 Copilot agent settings",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-650"
+        ]
+      },
+      {
+        "id": "ab650-agent-policy-templates",
+        "title": "Microsoft Agent 365 policy templates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-650"
+        ]
+      },
+      {
+        "id": "ab650-purview-agent-365",
+        "title": "Microsoft Purview support for Microsoft Agent 365",
+        "url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-650"
+        ]
+      },
+      {
+        "id": "microsoft-agent-365-ga-announcement",
+        "title": "Microsoft Agent 365 generally available",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-650",
+          "AB-900",
+          "MD-102",
+          "PL-900"
+        ],
+        "notes": "Product-level GA anchor; individual integrations and capabilities retain separate preview and rollout boundaries."
+      },
+      {
+        "id": "microsoft-365-copilot-release-notes",
+        "title": "Microsoft 365 Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-650",
+          "AB-900",
+          "MS-102"
+        ],
+        "notes": "Recurring volatility feed for Copilot, Agent Builder, connectors, administration, and rollout."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "f15ff3f8d0b33bb3aff00c86110f0871dd09202e284cf100b74c32fd9b2d8525",
+      "guide_sections": "1 / Tenant branding and organization profile",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "5efd07df81edde1e81c9facea5fd3d51cd8818be7885bdda39e2a6f13c882849",
+      "guide_sections": "1 / Domain verification and migration distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4050f80ed175d804df6ded25f9caed7513a1a3a78be3f5d65d66623574f490e4",
+      "guide_sections": "1 / Organization settings and administrative responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "d31f9b6f678cfe3071c596745032db4db900d7326c6b1e259550b524adff5202",
+      "guide_sections": "1 / Entitlement chain and license failure states; 3 / Cowork spending",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "75046b05f0383661addfaf1eb184415de155c6e5c97910fffeb9e5c2368b6ff8",
+      "guide_sections": "1 / AI entitlements versus resource authorization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "17b54835b848d4f5df0595a89d2101922774b7c3d6c99ac90c5907768c220319",
+      "guide_sections": "1 / Backup scope, recovery points and connectivity evidence; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "1c4e76b7fa684d7bdec3e78c1c7804bee8210022f27551561eefd04d5e40f892",
+      "guide_sections": "1 / Network Insights location, protocol and notification evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "5b0aaee792ad46893da5343d838fb997a94518cce4ee99d3797758ba78c018bf",
+      "guide_sections": "1 / Health, Message center and support correlation; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "4cca39284c6dd04a9c75ff77d3125518c085f4ad163ae769021d8b9289636521",
+      "guide_sections": "1 / Shared mailbox licensing, direct sign-in and delegate access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "60b1ad877f7a1071e876044369bd9d9a2c5adf3555b7a4fc7111fc7f93649a30",
+      "guide_sections": "1 / Team ownership, shared-channel membership and residual file permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "f29d28ef1d7f14253f15c2c5cb8736d9a16ce14d21de7436c290c240560b20ae",
+      "guide_sections": "1 / Meeting choices, defaults versus enforced transcript policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "394d25394572f6d0cf4fabdf6756ebfd7074885a983c1fb921ff5cf1be04e2d9",
+      "guide_sections": "1 / Site ownership, access, sharing and inheritance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "cf21c5163a4dbc7e5489cd45978138f17fbd0566c7c7c2f4d1819ec74e66904c",
+      "guide_sections": "1 / Advanced Management, search, discovery restrictions and troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "3c657aecf634cd0d549b922d6345e2771822c6eb1cad3e98bf1ae353cbb90376",
+      "guide_sections": "2 / Joiner-mover-leaver evidence chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "24af6cba77692ffc79a6af2f7492e8a79eaf4932d7912b7f6f9f042610e8d8a7",
+      "guide_sections": "2 / Guest/external collaboration and review",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "b851deb93c1f88079fbfb7298406fdb42f2d675f655344d0ab09d82771c8d655",
+      "guide_sections": "2 / Group types and dynamic membership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "5fc1e0ef6f492480b47f94526cc4889dfe633e08cd1907947874cbef9ac447c2",
+      "guide_sections": "2 / Role separation and PIM activation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "a04bc94417bab907406ddf4ffd3458ad55faf4d4a039eaa98057397f4f4f10ac",
+      "guide_sections": "2 / Administrative-unit delegation boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "25343d6b7fa7aa45e8b94c7a236eb380c9e5c04c1641e0bff4484681ae6f46f6",
+      "guide_sections": "2 / Contacts versus authenticated identities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "84b54d48d299197db7b8900d4fd892984dea6788f089bff9f0751802a4a83ea1",
+      "guide_sections": "2 / Scoped CSV, Graph and PowerShell changes; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "8c7769b6866ff69b985e33d4b9410b5db68e7ff7332a46ac6f394151962399a8",
+      "guide_sections": "2 / Authentication method registration and bootstrapping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "309fd09b2469356274398239fcb47f2d2a27ddb49d503733ad5f4bee61ec3a03",
+      "guide_sections": "2 / Password Protection and hybrid agents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "28541ae6017febab8551d9e265170901b2905374853d24e109a4f4dc79ade6d0",
+      "guide_sections": "2 / SSPR scope, registration and writeback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "8ebec43cba73886401a19fefefa0310ca2b70c74ddc776f0edf30840f095af5c",
+      "guide_sections": "2 / Seven-step sign-in investigation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "1264e9b058f497cf1047d1c90d5e661e5b8d9e871b395724c327f14946e608e2",
+      "guide_sections": "2 / Conditional Access, risk remediation and October 1 migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "bd4e1bcee0de00042e33c9f25f80909f6ea5e6ca8cf594f58cbbc9c55f7aaec7",
+      "guide_sections": "2 / Defender alert and entity evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "96f8cdc1d6dac213cbcee6bb006220717e56bb6d22f06241121ee0ec58d4ed4a",
+      "guide_sections": "2 / Preset/custom threat policies and priority",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "55bc2374e681a3c49596c32681b6685789e5593549c15e48d1dedee9d673a2a0",
+      "guide_sections": "2 / Investigation, containment and verification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "1faaf31f419e69ba7c21f28c206a05115ca8bcbcf0f73e52d2250eca4fbc917d",
+      "guide_sections": "2 / Authorized simulation and learning outcomes; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "8499297934c1a1e1f5cd6bd7cc6e9c3c212524d4e5b660eadd0d240688f183ae",
+      "guide_sections": "2 / DLP requirements by workload and interaction path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "d4f5fc82b04dc71a89448a1b02c96eaa7da547f34575b6fb744f1f9e88e4c87c",
+      "guide_sections": "2 / Sensitive information types, labels and publishing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "8d8229f094c7509d6b0d58e0a2f471c6efb2571bc29b7e3d52f6f3e248f63030",
+      "guide_sections": "2 / Retention, records and conflict principles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "fbaf46fb345598438622363cdca81257ee20294e34e76a7aebaefaf9affd07dc",
+      "guide_sections": "2 / DLP alert evidence and response; 3 / Agent owner monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "59c86268e737dffb9cce07e39ee130884079278279a71f7b21db1824c76acefb",
+      "guide_sections": "2 / Current DSPM; 3 / AI observability and coverage gaps",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "74f68b20ea0e7ae8ccfcba6c084753ef9ed65d272180b4aadfcb05f66e78c124",
+      "guide_sections": "3 / Tenant readiness and phased rollout",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "a25f80860808383be800870ce8b6a5f142838eef2b92556efa7a0eb7d48a47f7",
+      "guide_sections": "3 / Source oversharing and information protection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "b11e7c2e1d96c3678a923c26de5019742f8cf4c681ecbd3bb5296bb91ffc1738",
+      "guide_sections": "3 / Web versus work grounding and Chat settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "9f33998f391083edd812ea1a9b88aa08993f425f222946bd950989ac77edc971",
+      "guide_sections": "1 / Search administration and security trimming",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "db839c58a31e9069365c29cbd1b71e06661cab65096ac484339a78d2a064785e",
+      "guide_sections": "3 / App settings, release preferences, self-service, disclaimer and media controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "f4fc3ef0e53fd08f6b0e441fc18bf7e3da880c71b58312b7b83d06467785ecf7",
+      "guide_sections": "3 / Copilot experiences and current app settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "62d2813e4224e9d57563156fe521ecda076582e232ad50f7dbe669b902817e82",
+      "guide_sections": "3 / Cowork scope, tasks and consumption; worked example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "e7a0d08cb120ccf2a60cba2a788407ea4d681bf75e07ca90f65a386176a8bd42",
+      "guide_sections": "3 / AI provider scope and distinct opt-in/terms",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "949d4dee88f285adec88a7925c6b5a543bc7afccbd8e04c08343cf9b406d7045",
+      "guide_sections": "1 / Connector schema, identity, source permissions and lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "66d786e52a3ebef9f9728b969faab4876af346f304c03943708fb85659b3c15e",
+      "guide_sections": "3 / Agent ID owners, sponsors, mover/leaver workflows and retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "377ceec16001f44213c574bd215df4ba02d930c386a65a844e25a86f74dfc2d2",
+      "guide_sections": "3 / Access packages and token-subject Conditional Access table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "a482cf8be27d545dbfe914e95c993886cb8d1b46a6cbf8ee1abb0ab06ca54e37",
+      "guide_sections": "3 / Owner/sponsor distinction, individual co-owners and reassignment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "f58eb3f4782bdb0f34b62afe7489e797b4f108d1360ff23526d56432f1c1797a",
+      "guide_sections": "3 / Allowed types, sharing, user access and templates; example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "bc9509893c9898a278d7b8e0264ab68b08586776fed437d5063eacaae40008fc",
+      "guide_sections": "3 / Registry reconciliation and platform inventory; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "5a32181e2fbf1bb997e36f5cece442bbc67eef6f4058ac11bc98e4025233bce7",
+      "guide_sections": "3 / Requests, assess/approve/reject/publish lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "7545e856df9f666b245d9b5bbb4364a6e49dcc1ef0ab79b471367dad2ce6c351",
+      "guide_sections": "3 / ZIP upload, publish/deploy audiences, installation and block scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "f03e5f54370c0d94822c2d917a4cf5d26a3bb296da25be6cf2c0dd15d5513ba5",
+      "guide_sections": "3 / Tools, MCP preview support, consent and lifecycle limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "12b62a1ab8ab1543f35398147f8a1d1a0fc8c8acfc9f5e3fe6ada726bbf5b1fe",
+      "guide_sections": "3 / Agent activity and cross-service evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "4b35fc8b2715933bb2c9bc9cf3239cd837789ba7438d2d096430625915be5d0f",
+      "guide_sections": "3 / File sharing, VIEW/EXTRACT, labels and DLP; example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "3fa5b2f995956c8790d9f8e706dd8b51dfbd3b7b62ded347f6664acfb8c057a3",
+      "guide_sections": "3 / Six-step gap workflow and coverage matrix; lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "1c857bf1ea30a31586cc35ed1197546aa61d1e134a5021ccd0fc7f637f5aecb8",
+      "guide_sections": "3 / Cowork policy precedence and consumption; example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "4370802a2df3d9a83d7cc01593e416baee67504710c843d6cd889b04cf4779cd",
+      "guide_sections": "3 / Operational reports, workloads and denominator example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "17e21833465df4d876236eb3875b9611b9160a70d6726533b8fbd0d88a59f468",
+      "guide_sections": "3 / Copilot Control System measurement and outcome evidence; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "41d66e5018aeabe5f5db428d3707cfc5e61b6350e9e9a9ec704fe678238d8294",
+      "guide_sections": "1 / Service health; 3 / Local identity/tool/capacity dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AB-650",
+        "title": "Microsoft 365 and AI Services Administrator Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+        "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\ab-650-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ab-650-official-status.json",
+        "previous_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+        "current_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+        "previous_status_sha256": "adf167a50022621b43a5b7e187535fb33957fa98dec398432b8ec76cddcddfbc",
+        "current_status_sha256": "adf167a50022621b43a5b7e187535fb33957fa98dec398432b8ec76cddcddfbc",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-07-27; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 48,
+    "reachable": 46,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "ab-650-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+      "checked_at": "2026-09-28T05:32:13.154317+00:00",
+      "health": {
+        "id": "ab-650-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+        "checked_at": "2026-09-28T05:32:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AB-650: Administering Microsoft 365 and AI Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "850ab8208d05cc508b3535c492c32d1a2a37f34d7460a07a6f3eea5eeecc9124",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650",
+      "sha256": "71f60f1666569d9407fd00662de93ffbd95d027b9f547eda8540e6f7f520ce74",
+      "text_characters": 9548
+    },
+    {
+      "id": "ab-650-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+      "checked_at": "2026-09-28T05:32:13.155027+00:00",
+      "health": {
+        "id": "ab-650-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+        "checked_at": "2026-09-28T05:32:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate (beta) - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "2f4f0511fdd6de9a97bd3b5f5947caed98ce7dca7596cbf681ffa73da86cb5fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+      "sha256": "81bc4dc165d035a6b750960e7a964d837035912f4f149989502877ab1910d374",
+      "text_characters": 4298
+    },
+    {
+      "id": "ab-650-copilot-control-measurement",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-control-system/measurement-reporting",
+      "checked_at": "2026-09-28T05:32:13.155469+00:00",
+      "health": {
+        "id": "ab-650-copilot-control-measurement",
+        "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-control-system/measurement-reporting",
+        "checked_at": "2026-09-28T05:32:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/measurement-reporting",
+        "content_type": "text/html",
+        "page_title": "Copilot controls measurement and reporting",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/measurement-reporting",
+        "duration_signals": [],
+        "signal_fingerprint": "1226a181e41b662276d57463681ab0cb393856a4874a24ee3a95de297e147493",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/measurement-reporting",
+      "sha256": "cacbfd95572c7e313ac0cac2a3669e3c186f3abd8af07c2b5d631c85845fcad6",
+      "text_characters": 5077
+    },
+    {
+      "id": "ab-650-m365-copilot-docs",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/",
+      "checked_at": "2026-09-28T05:32:13.605725+00:00",
+      "health": {
+        "id": "ab-650-m365-copilot-docs",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-copilot/",
+        "checked_at": "2026-09-28T05:32:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Copilot hub",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/",
+        "duration_signals": [],
+        "signal_fingerprint": "9701ba9b5132900f72476567b25ce4ba79265ad71422e9393f603ffb04cff062",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/",
+      "sha256": "d6c0e75951189a55a33c98396cc382cd243c94d083fa653980cf15bbdbbd82da",
+      "text_characters": 1363
+    },
+    {
+      "id": "ab-650-agent-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:32:13.606016+00:00",
+      "health": {
+        "id": "ab-650-agent-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:32:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Agent overview in Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "225ea096ad2ef854bbaabd6e3165a461c2eb93d0ca43de14e239f1d1b59e9c82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview?view=o365-worldwide",
+      "sha256": "7f3bcf0908cc51509312d3b9cad6afe4ddad3392f656512e0d2aa0e2d032331d",
+      "text_characters": 20952
+    },
+    {
+      "id": "ab-650-agent-actions",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:32:13.916294+00:00",
+      "health": {
+        "id": "ab-650-agent-actions",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:32:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Governance and Lifecycle actions for agents available in Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "210267660a59e7f87af4823924ae6f98308c2c6e24c49bb4bf887e34c03bac82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+      "sha256": "76b3f27749f055e06b81eb4404920286f7ab1f5e89ec39b55b2c97bc3b88e656",
+      "text_characters": 20827
+    },
+    {
+      "id": "ab-650-agent-tools",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:32:14.102983+00:00",
+      "health": {
+        "id": "ab-650-agent-tools",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Manage tools for agents in Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "bb2c154832319d911d87764c873925ad447feb0cc6a34ce0fc37d93be67a37d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+      "sha256": "3b7fa5a59db4a0073f0de44301ce9f9a0ce945a6e8a4a01a454603150cb42a58",
+      "text_characters": 29553
+    },
+    {
+      "id": "ab-650-control-system-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/overview",
+      "checked_at": "2026-09-28T05:32:14.155059+00:00",
+      "health": {
+        "id": "ab-650-control-system-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-control-system/overview",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/overview",
+        "content_type": "text/html",
+        "page_title": "Copilot controls overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "97b8650b5760fac772f2f967db1b2b8b979aa7e282521da1668915d0009a0f73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-controls/overview",
+      "sha256": "bcb8cae3ec5b3e26ae60e73aae37d27ceb73f30b233f69ea134c84ec88f86f16",
+      "text_characters": 3262
+    },
+    {
+      "id": "ab-650-copilot-app-settings",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
+      "checked_at": "2026-09-28T05:32:14.252922+00:00",
+      "health": {
+        "id": "ab-650-copilot-app-settings",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
+        "content_type": "text/html",
+        "page_title": "Microsoft Copilot app settings for IT admins",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "6f18909bd8b409da80f2b8bfc6bfec85217ac3517178488e1a4338c2f60b1394",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-app-admin-settings",
+      "sha256": "05befe7343bad9d38eca1526aacc1aa164bbe6853da5279a4ab13fd63f6f12e2",
+      "text_characters": 4588
+    },
+    {
+      "id": "ab-650-copilot-search-admin",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-search-admin-experience",
+      "checked_at": "2026-09-28T05:32:14.479846+00:00",
+      "health": {
+        "id": "ab-650-copilot-search-admin",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-search-admin-experience",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-search-admin-experience",
+        "content_type": "text/html",
+        "page_title": "Copilot Search admin experience",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-search-admin-experience",
+        "duration_signals": [
+          "1 minute"
+        ],
+        "signal_fingerprint": "65894437f5c08a5608696eae7d2903a762d59872752b84e4c9fe0db93d42cf8a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-search-admin-experience",
+      "sha256": "0ad97466e580ca3ae39b6ef746fd0ae8f7835754358d3a2900db6107c4c2499e",
+      "text_characters": 10505
+    },
+    {
+      "id": "ab-650-agent-365-docs",
+      "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/",
+      "checked_at": "2026-09-28T05:32:14.620568+00:00",
+      "health": {
+        "id": "ab-650-agent-365-docs",
+        "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-agent-365/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Agent 365 documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-agent-365/",
+        "duration_signals": [],
+        "signal_fingerprint": "2d2fc60b6409ea2d71594db63ca7201b6eec3240fb07187546bfb465454f2f0a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-agent-365/",
+      "sha256": "75ec682444a521faff4c60738622448302da47fe47f968359d796f6e7d69fc59",
+      "text_characters": 2024
+    },
+    {
+      "id": "ab-650-sharepoint-readiness",
+      "url": "https://learn.microsoft.com/en-us/sharepoint/get-ready-copilot-sharepoint-advanced-management",
+      "checked_at": "2026-09-28T05:32:14.688158+00:00",
+      "health": {
+        "id": "ab-650-sharepoint-readiness",
+        "url": "https://learn.microsoft.com/en-us/sharepoint/get-ready-copilot-sharepoint-advanced-management",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management",
+        "content_type": "text/html",
+        "page_title": "Get ready for Microsoft Copilot with SharePoint Advanced Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management",
+        "duration_signals": [],
+        "signal_fingerprint": "cc588f01df916a7de10a1cf7a86fde320242b00a6d223dfd44e547bfb454a562",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/get-ready-copilot-sharepoint-advanced-management",
+      "sha256": "ed57c1f11221997f8fea0ba99a3af8d186f365317a9f7a5945aa556e4fd146c6",
+      "text_characters": 12586
+    },
+    {
+      "id": "ab-650-path-configure",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/",
+      "checked_at": "2026-09-28T05:32:14.759279+00:00",
+      "health": {
+        "id": "ab-650-path-configure",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/",
+        "content_type": "text/html",
+        "page_title": "Configure and manage Microsoft 365 tenants and workloads - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/",
+        "duration_signals": [],
+        "signal_fingerprint": "20d90219a0e27bd3f01342b920922a12121e2b23d096854d0a7178daff82f63a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/",
+      "sha256": "2c609ddf23551735a7012e123df1b0604eec22447e3d28f3f72f94cdc1ff3d7d",
+      "text_characters": 2248
+    },
+    {
+      "id": "ab-650-path-govern",
+      "url": "https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/",
+      "checked_at": "2026-09-28T05:32:14.847577+00:00",
+      "health": {
+        "id": "ab-650-path-govern",
+        "url": "https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/",
+        "content_type": "text/html",
+        "page_title": "Govern and secure Microsoft 365 tenants and workloads - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/",
+        "duration_signals": [],
+        "signal_fingerprint": "f759317f2084947af9e320585ccc4e5c94b6bb69d21a3df487b11eb8aa835f8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/",
+      "sha256": "35222b8c1f4e1601d66145a929b58c083d2b66781205a4b0bd5ec50d14b95d1f",
+      "text_characters": 2403
+    },
+    {
+      "id": "ab-650-path-ai-services",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+      "checked_at": "2026-09-28T05:32:14.998263+00:00",
+      "health": {
+        "id": "ab-650-path-ai-services",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+        "checked_at": "2026-09-28T05:32:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+        "content_type": "text/html",
+        "page_title": "Manage and secure Microsoft 365 AI services - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+        "duration_signals": [],
+        "signal_fingerprint": "12b34c3b74e47c84aebddfddf86fde591b10108b72ad3518290b4880295ab8ed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+      "sha256": "fa269eb1d0b9fdb7658e35739539f518ec0c4d7344152a8837cd579a2b7d214a",
+      "text_characters": 3521
+    },
+    {
+      "id": "ab-650-john-savill-youtube",
+      "url": "https://www.youtube.com/@NTFAQGuy",
+      "checked_at": "2026-09-28T05:32:15.121261+00:00",
+      "health": {
+        "id": "ab-650-john-savill-youtube",
+        "url": "https://www.youtube.com/@NTFAQGuy",
+        "checked_at": "2026-09-28T05:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@NTFAQGuy",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "John Savill's Technical Training",
+        "canonical_url": "https://www.youtube.com/channel/UCpIn7ox7j7bH_OFj7tYouOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "3ea7e177926d30b19bd454e7c112994be5e9aae837e8697abb5a5edc1ef7afbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@NTFAQGuy",
+      "sha256": "26d495d58b50b70756b5c9cf0ea4f8ee0d70574be67cd23b282040dbb758fd07",
+      "text_characters": 195
+    },
+    {
+      "id": "ab650-entra-agent-id-administration",
+      "url": "https://learn.microsoft.com/en-us/entra/agent-id/manage-agent-identities-admin",
+      "checked_at": "2026-09-28T05:32:15.188971+00:00",
+      "health": {
+        "id": "ab650-entra-agent-id-administration",
+        "url": "https://learn.microsoft.com/en-us/entra/agent-id/manage-agent-identities-admin",
+        "checked_at": "2026-09-28T05:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/agent-id/manage-agent-identities-admin",
+        "content_type": "text/html",
+        "page_title": "Manage agent identities in your organization - Microsoft Entra Agent ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/agent-id/manage-agent-identities-admin",
+        "duration_signals": [],
+        "signal_fingerprint": "ffceb0bcca21cb5ff3fcec97be49e383b533d858b639f54101763f0270e10db4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/agent-id/manage-agent-identities-admin",
+      "sha256": "40e9e4432eb27aa8fdddd8c6e2e66a203da8fecd5bdc5e53559b7dac397480a6",
+      "text_characters": 13143
+    },
+    {
+      "id": "ab650-agent-settings",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:32:15.245720+00:00",
+      "health": {
+        "id": "ab650-agent-settings",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Agent settings in Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "5bddbaab35f2a6c8f4ae255539fdcbcd2052744242c5e4fbeec50889db247bcf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+      "sha256": "b3e1e3d4810652fee72f81676558416a7ad849bd653183b6cfd9ac676173da89",
+      "text_characters": 9935
+    },
+    {
+      "id": "ab650-agent-policy-templates",
+      "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template",
+      "checked_at": "2026-09-28T05:32:15.459923+00:00",
+      "health": {
+        "id": "ab650-agent-policy-templates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template",
+        "checked_at": "2026-09-28T05:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template",
+        "content_type": "text/html",
+        "page_title": "Policy templates",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template",
+        "duration_signals": [],
+        "signal_fingerprint": "054e93c8e27559fcb16802e9ef13924e89b507863ec153498c9b0aa561b2cc4a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template",
+      "sha256": "69a3c4fab9ff9c2ebf918aafe79b21e2a23534ed05c41b140f20501db248a89e",
+      "text_characters": 10783
+    },
+    {
+      "id": "ab650-purview-agent-365",
+      "url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+      "checked_at": "2026-09-28T05:32:15.507549+00:00",
+      "health": {
+        "id": "ab650-purview-agent-365",
+        "url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+        "checked_at": "2026-09-28T05:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+        "content_type": "text/html",
+        "page_title": "Use Microsoft Purview to manage data security & compliance for Microsoft Agent 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+        "duration_signals": [],
+        "signal_fingerprint": "368260590e013d032c81dc817b4b9b8ea91eb9da7e25d5af56d7a040f5a167cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+      "sha256": "df4646bd3803591e1a39d314f66b815735d3c8f0c23f2373ac238f2067bee98e",
+      "text_characters": 14415
+    },
+    {
+      "id": "microsoft-agent-365-ga-announcement",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "checked_at": "2026-09-28T05:32:15.703971+00:00",
+      "health": {
+        "id": "microsoft-agent-365-ga-announcement",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "checked_at": "2026-09-28T05:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Agent 365, now generally available, expands capabilities and integrations | Microsoft Security Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "duration_signals": [
+          "11 min",
+          "2 min",
+          "3 min"
+        ],
+        "signal_fingerprint": "236f7ab804994bee6daef7761d57d8355bf597909c5cf31819ce97be5f593606",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "sha256": "3ac03cbb2f5c1430849c379e54b8e13bff5198a3f5ffe495c08ff93f00ab0e52",
+      "text_characters": 16650
+    },
+    {
+      "id": "microsoft-365-copilot-release-notes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+      "checked_at": "2026-09-28T05:32:15.792052+00:00",
+      "health": {
+        "id": "microsoft-365-copilot-release-notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "checked_at": "2026-09-28T05:32:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "content_type": "text/html",
+        "page_title": "Release Notes for Microsoft 365 Copilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "203c851f5e68bf1f50d1a354fc57bc78abd066d9b0b9061750a36a5da09a87ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+      "sha256": "a01dc492a8aa4ca8600602a1d15cbf07b45950ccde70b650a700ea2302c6e367",
+      "text_characters": 722864
+    },
+    {
+      "id": "ab650-insidetrack-blog",
+      "url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+      "checked_at": "2026-09-28T05:40:46.774062+00:00",
+      "health": {
+        "id": "ab650-insidetrack-blog",
+        "url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+        "checked_at": "2026-09-28T05:40:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Inside Track - Implementing Agent 365: How we’re governing and managing AI agents at Microsoft",
+        "canonical_url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+        "duration_signals": [],
+        "signal_fingerprint": "14e7ffd1140a3c8ff91f9817c83c757da27e3586d49f0409def514646fe9ca32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
+      "sha256": "9f7278e8d045d74d30a8ea3d5677d197024164cf8cb1eb9bbb37149c9e4f7b60",
+      "text_characters": 50268
+    },
+    {
+      "id": "ms700-copilot",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "checked_at": "2026-09-28T05:40:46.774659+00:00",
+      "health": {
+        "id": "ms700-copilot",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "checked_at": "2026-09-28T05:40:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "content_type": "text/html",
+        "page_title": "Manage Microsoft Copilot in Teams meetings and events - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "duration_signals": [],
+        "signal_fingerprint": "edccd70883d0514a2d5a8bbab399e25f2c5e49bbdda141456acb3d3fee4401e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "sha256": "79d992614a53f6e6bd328ad0005df579e297e1edbf3b92586324b4115df57845",
+      "text_characters": 8348
+    },
+    {
+      "id": "ms700-shared",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+      "checked_at": "2026-09-28T05:40:46.775006+00:00",
+      "health": {
+        "id": "ms700-shared",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+        "checked_at": "2026-09-28T05:40:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+        "content_type": "text/html",
+        "page_title": "Shared channels in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+        "duration_signals": [],
+        "signal_fingerprint": "cc430cd1579af5055ef86603c0f00e3417c1e05c84c5803de59b227272f414bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+      "sha256": "625ddff08616363f5be3f492f56d44a10458f05d5a9b3a80a3ffe3e70b4dd7c0",
+      "text_characters": 14312
+    },
+    {
+      "id": "ab730-cowork-admin",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance",
+      "checked_at": "2026-09-28T05:41:04.124503+00:00",
+      "health": {
+        "id": "ab730-cowork-admin",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance",
+        "checked_at": "2026-09-28T05:41:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance",
+        "content_type": "text/html",
+        "page_title": "Manage Copilot Cowork for your organization",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance",
+        "duration_signals": [],
+        "signal_fingerprint": "8e7bb378889be4efaf28f7570621e13a0512eedf6c3948afb43e4a07a117b1b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance",
+      "sha256": "29ef1862867c1e3e179e4578779ae70cd4de78194236117043be3db06a832152",
+      "text_characters": 9725
+    },
+    {
+      "id": "sc-100-agent-conditional-access",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
+      "checked_at": "2026-09-28T05:41:04.124994+00:00",
+      "health": {
+        "id": "sc-100-agent-conditional-access",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
+        "checked_at": "2026-09-28T05:41:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
+        "content_type": "text/html",
+        "page_title": "Conditional Access for Agents in Microsoft Entra - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
+        "duration_signals": [],
+        "signal_fingerprint": "0549992ce0a73edc1f0bedc14889789846f40788e6f567e632489aaff460d13d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
+      "sha256": "4bd5d9cb45df8d4cc2df8c2068ee9ab9b53a493ef12c1ef09e8ecc6e0bd08876",
+      "text_characters": 11724
+    },
+    {
+      "id": "sc100-agent-targeting",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+      "checked_at": "2026-09-28T05:41:04.125323+00:00",
+      "health": {
+        "id": "sc100-agent-targeting",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+        "checked_at": "2026-09-28T05:41:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+        "content_type": "text/html",
+        "page_title": "Target agent identities in Conditional Access policies - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+        "duration_signals": [],
+        "signal_fingerprint": "d92ca1163c841f3f49a10efef07667a09b382a46ebdbea1b6dc201ef8ed4df87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+      "sha256": "c16cf493fc4912d2ab3007e2990edd21bedb6ad601f636dd5ba53af750b1225a",
+      "text_characters": 10912
+    },
+    {
+      "id": "ms102-backup-restore",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:47:12.995656+00:00",
+      "health": {
+        "id": "ms102-backup-restore",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:47:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Restore data in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "duration_signals": [
+          "10 minutes",
+          "10 minutes 10 minutes",
+          "120 minutes",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "b5a258ff5baf910c6d6937aaa3467e9b3bf3892b5dc5d9922ad54c638d760366",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "sha256": "5cdb898bcd8afd840fd1c5601abd9a9c82ac214f7b0e7b2c978fd03dbf62925c",
+      "text_characters": 28311
+    },
+    {
+      "id": "ms102-backup-new",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:47:12.996205+00:00",
+      "health": {
+        "id": "ms102-backup-new",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:47:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "19de4fa48bd5877b3eeaf2733b3a7a079b4eaf5ba2ffa5c05a70c817f9c58201",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "sha256": "dfeec13ea5cc68943abe35ea53b67659c07c2f2ece53a4f28c31646b5bdf4174",
+      "text_characters": 9866
+    },
+    {
+      "id": "ms102-backup-policy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:47:12.996608+00:00",
+      "health": {
+        "id": "ms102-backup-policy",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:47:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Create, view, and edit backup policies in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "duration_signals": [
+          "15 minutes",
+          "24 hours",
+          "25 minutes"
+        ],
+        "signal_fingerprint": "e8dc68d169a4fa6c1b68b41a9c154f9f02873b2a13017b42902dc6c58d3d9fdf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "sha256": "84a433fe5a9bfcd4162bfb039e1291a1d0c2185aca26b15c1917bbfdccb355a7",
+      "text_characters": 26508
+    },
+    {
+      "id": "ms-102-backup-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:47:13.400994+00:00",
+      "health": {
+        "id": "ms-102-backup-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:47:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Overview of Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+        "duration_signals": [
+          "10 minutes",
+          "10 minutes and 120 minutes",
+          "2 hours",
+          "2.5 hours",
+          "20 mins",
+          "3 hours",
+          "30 minutes",
+          "4 hours",
+          "60 minutes",
+          "approximately 15 minutes"
+        ],
+        "signal_fingerprint": "39a990f0bb1b81167d4f449e25075016f4a395e0d835de17bf1e8f6303e718ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+      "sha256": "7abbfc75d35190fedd39c1ac1b3401b9d860787af065a77a23e597fa4f23d470",
+      "text_characters": 15837
+    },
+    {
+      "id": "sc300-risk-migration",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "checked_at": "2026-09-28T05:47:13.443857+00:00",
+      "health": {
+        "id": "sc300-risk-migration",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+        "checked_at": "2026-09-28T05:47:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+        "content_type": "text/html",
+        "page_title": "Risk policies - Microsoft Entra ID Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "3028ca4286392ec9478f709a0e5466e52a36afcadbb09bc75a1a0e790ebafbc1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "sha256": "5e4ca83e8fd22adcfe136771b9ec5d099267f4211f4da0bcb33eef9ce83e0adf",
+      "text_characters": 11207
+    },
+    {
+      "id": "ab650-cowork-access",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+      "checked_at": "2026-09-28T05:47:13.489563+00:00",
+      "health": {
+        "id": "ab650-cowork-access",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+        "checked_at": "2026-09-28T05:47:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+        "content_type": "text/html",
+        "page_title": "Determine access controls for Copilot Cowork",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+        "duration_signals": [],
+        "signal_fingerprint": "436ab0a285cb1afa4932c9f71b8b0a05cbf00183e22903b31443f9a140c41bce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+      "sha256": "c61c90599a75361fba937964fe77d809acdd43bbe758c248c5e9b164c9442fc2",
+      "text_characters": 5107
+    },
+    {
+      "id": "ab650-spending",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+      "checked_at": "2026-09-28T05:47:13.653741+00:00",
+      "health": {
+        "id": "ab650-spending",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+        "checked_at": "2026-09-28T05:47:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+        "content_type": "text/html",
+        "page_title": "Managing AI experiences enabled by usage-based billing",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+        "duration_signals": [
+          "2 hours",
+          "4 hours"
+        ],
+        "signal_fingerprint": "73a95a3ae33f021346785920c0b3e5813149d21f06ea2969865c06a120e62f0a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+      "sha256": "0961eddae3deb923a8bff2a8d6f7f4514dfff949daf525b85f579248f7603dbd",
+      "text_characters": 37182
+    },
+    {
+      "id": "ab650-network-insights",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:47:13.769818+00:00",
+      "health": {
+        "id": "ab650-network-insights",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:47:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Network Insights - Microsoft 365 Enterprise",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "9d48e913327c4db1091b33522fff6a63610d4af14c34f09592b6acbafe40d6b7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+      "sha256": "6c2a4a2d8ee71a651463126068c926e181292d009e38b75188afe783dd262940",
+      "text_characters": 7795
+    },
+    {
+      "id": "ab650-mailboxes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes",
+      "checked_at": "2026-09-28T05:47:13.770019+00:00",
+      "health": {
+        "id": "ab650-mailboxes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes",
+        "checked_at": "2026-09-28T05:47:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "About shared mailboxes in Microsoft 365 - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "578a76bf1c3e092fdc0fdafbbce9dbc0a3688fa05cd27e09f1342f8a20f4e01d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes?view=o365-worldwide",
+      "sha256": "4c6393d7783de287e4412942914e1c6f9fe1feec49818f286db94c4a2c460d84",
+      "text_characters": 7894
+    },
+    {
+      "id": "ab650-exam",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+      "checked_at": "2026-09-28T05:47:13.938512+00:00",
+      "health": {
+        "id": "ab650-exam",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+        "checked_at": "2026-09-28T05:47:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+        "content_type": "text/html",
+        "page_title": "Exam AB-650: Administering Microsoft 365 and AI Services (beta) - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+        "duration_signals": [],
+        "signal_fingerprint": "72276bd1d07d961b71c04c65bd60226147a1ab2a073d6866581953792e59afd5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+      "sha256": "22cf3c65efc9f57c4f7945d716f28884462e431ae44e8e354124e2fd665a5ac5",
+      "text_characters": 4359
+    },
+    {
+      "id": "ab650-udemy-ellerby",
+      "url": "https://www.udemy.com/course/ab-650-practice-tests-administering-m365-ai-services/",
+      "checked_at": "2026-09-28T05:47:14.076352+00:00",
+      "health": {
+        "id": "ab650-udemy-ellerby",
+        "url": "https://www.udemy.com/course/ab-650-practice-tests-administering-m365-ai-services/",
+        "checked_at": "2026-09-28T05:47:14+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ab-650-practice-tests-administering-m365-ai-services/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ab650-udemy-khaled",
+      "url": "https://www.udemy.com/course/ab-650-practice-exams-300-qs-official-sources/",
+      "checked_at": "2026-09-28T05:47:14.183544+00:00",
+      "health": {
+        "id": "ab650-udemy-khaled",
+        "url": "https://www.udemy.com/course/ab-650-practice-exams-300-qs-official-sources/",
+        "checked_at": "2026-09-28T05:47:14+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ab-650-practice-exams-300-qs-official-sources/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ab650-ai-provider",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+      "checked_at": "2026-09-28T05:48:31.819300+00:00",
+      "health": {
+        "id": "ab650-ai-provider",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+        "checked_at": "2026-09-28T05:48:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+        "content_type": "text/html",
+        "page_title": "Anthropic models in Microsoft Online Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+        "duration_signals": [],
+        "signal_fingerprint": "3b6d9195f0ce61124d9077b84f1e9e6ff0a40524fb016482e90651e564067ae7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+      "sha256": "4be7a9fa3756f27d9f4c142233aeeeb6d7cce08cc92ee2ace95e11c65da49d66",
+      "text_characters": 12369
+    },
+    {
+      "id": "ab650-registry",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+      "checked_at": "2026-09-28T05:52:43.533193+00:00",
+      "health": {
+        "id": "ab650-registry",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+        "checked_at": "2026-09-28T05:52:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Agent Registry in Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "e520aa897ac66d0c4d2f501121be91e6b37da28a7f3974d25af6560bd1a961c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+      "sha256": "4f0d671c9755d96d12bc549b266408a1913b879bbe4069df3b858f2abeb58845",
+      "text_characters": 23551
+    }
+  ],
+  "added_source_ids": [
+    "ab650-insidetrack-blog",
+    "ab650-cowork-access",
+    "ab650-spending",
+    "ab650-network-insights",
+    "ab650-mailboxes",
+    "ab650-exam",
+    "ab650-udemy-ellerby",
+    "ab650-udemy-khaled",
+    "ab650-ai-provider",
+    "ab650-registry"
+  ],
+  "findings": [
+    {
+      "id": "ab650-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Second-year recovery cadence remains unspecified",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Two-year policy windows coexist with frequency tables ending at 365 days/52 weeks.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ab650-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Current beta status and preparation limits",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-650/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "English and no Practice Assessment/current course remain published; duration not visible.",
+      "recommendation": "Retain beta bounds without inventing timing or GA date.",
+      "disposition": "applied",
+      "source_id": "ab650-exam",
+      "resolution": "Retain beta bounds without inventing timing or GA date."
+    },
+    {
+      "id": "ab650-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Backup September changes affect old labs",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Recovery windows, granular GA and preview full workload differ from older descriptions.",
+      "recommendation": "Add current scope and recovery exercise while preserving unresolved cadence.",
+      "disposition": "applied",
+      "source_id": "ms102-backup-new",
+      "resolution": "Add current scope and recovery exercise while preserving unresolved cadence."
+    },
+    {
+      "id": "ab650-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Backup membership selection is not uniformly dynamic",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Static filters snapshot membership; dynamic preview reevaluates daily and mailbox exclusions apply.",
+      "recommendation": "Explain selection modes and shared-mailbox reconciliation.",
+      "disposition": "applied",
+      "source_id": "ms102-backup-policy",
+      "resolution": "Explain selection modes and shared-mailbox reconciliation."
+    },
+    {
+      "id": "ab650-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Connectivity insights do not establish user entitlement",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/office-365-network-mac-perf-insights?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Insights describe location/protocol, not user license or device identity.",
+      "recommendation": "Add service-health notification and WebSocket troubleshooting evidence.",
+      "disposition": "applied",
+      "source_id": "ab650-network-insights",
+      "resolution": "Add service-health notification and WebSocket troubleshooting evidence."
+    },
+    {
+      "id": "ab650-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Shared mailbox licensing and sign-in are distinct",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/email/about-shared-mailboxes",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Delegates need licensed mailboxes; direct shared-account sign-in stays blocked.",
+      "recommendation": "Add access and capacity licensing boundaries.",
+      "disposition": "applied",
+      "source_id": "ab650-mailboxes",
+      "resolution": "Add access and capacity licensing boundaries."
+    },
+    {
+      "id": "ab650-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Transcript enforcement differs from defaults",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only-during, during-and-after and Off have separate recording/transcription effects.",
+      "recommendation": "Replace vague verification placeholder with decision table and compliance caveat.",
+      "disposition": "applied",
+      "source_id": "ms700-copilot",
+      "resolution": "Replace vague verification placeholder with decision table and compliance caveat."
+    },
+    {
+      "id": "ab650-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Channel membership removal can leave direct file access",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Direct file/folder grants are separate from shared-channel membership.",
+      "recommendation": "Add identity, ownership and residual-grant review.",
+      "disposition": "applied",
+      "source_id": "ms700-shared",
+      "resolution": "Add identity, ownership and residual-grant review."
+    },
+    {
+      "id": "ab650-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Legacy risk policies retire October 1",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current procedure migrates separate user/sign-in risk policies with report-only verification.",
+      "recommendation": "Add migration deadline, remediation constraints and follow-up.",
+      "disposition": "applied",
+      "source_id": "sc300-risk-migration",
+      "resolution": "Add migration deadline, remediation constraints and follow-up."
+    },
+    {
+      "id": "ab650-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cowork access comes from spending scope",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-access",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Any applicable selecting policy grants access; discovery and small limits do not exclude users.",
+      "recommendation": "Add scoped access exercise and asynchronous-limit caveat.",
+      "disposition": "applied",
+      "source_id": "ab650-cowork-access",
+      "resolution": "Add scoped access exercise and asynchronous-limit caveat."
+    },
+    {
+      "id": "ab650-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Spending policies select one whole policy and preserve usage",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/usage-based-billing-manage-copilot-credits",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Highest per-user limit wins; group move does not reset consumption.",
+      "recommendation": "Add precedence and carried-consumption arithmetic; review automatic new services.",
+      "disposition": "applied",
+      "source_id": "ab650-spending",
+      "resolution": "Add precedence and carried-consumption arithmetic; review automatic new services."
+    },
+    {
+      "id": "ab650-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Newer provider procedure supports scoped access",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connect-to-ai-subprocessor",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 18 provider procedure and September 14 Cowork admin contradict older tenant-only model wording.",
+      "recommendation": "Use newer dedicated provider scope and distinguish separate data-retention opt-in.",
+      "disposition": "applied",
+      "source_id": "ab650-ai-provider",
+      "resolution": "Use newer dedicated provider scope and distinguish separate data-retention opt-in."
+    },
+    {
+      "id": "ab650-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Agent policy target follows token subject",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Agent identities support Block-only; agent-user preview and delegated user policies differ.",
+      "recommendation": "Add identity/flow table and API-key boundary.",
+      "disposition": "applied",
+      "source_id": "sc100-agent-targeting",
+      "resolution": "Add identity/flow table and API-key boundary."
+    },
+    {
+      "id": "ab650-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Sharing controls have narrower scope than their labels",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "No users preserves direct Agent Builder sharing; Microsoft agent types remain visible when disabled.",
+      "recommendation": "Correct settings scope and add answered checks.",
+      "disposition": "applied",
+      "source_id": "ab650-agent-settings",
+      "resolution": "Correct settings scope and add answered checks."
+    },
+    {
+      "id": "ab650-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Existing instances have a separate one-time template operation",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Newer settings add bulk Apply template, excluding blueprints/AI teammates; older FAQ only describes new activations.",
+      "recommendation": "Separate ordinary edit from explicit bulk action and add backlog example.",
+      "disposition": "applied",
+      "source_id": "ab650-agent-settings",
+      "resolution": "Separate ordinary edit from explicit bulk action and add backlog example."
+    },
+    {
+      "id": "ab650-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Custom upload separates validation from publication and deployment",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-registry?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ZIP upload reviews host, audiences, policies and permissions.",
+      "recommendation": "Add objective-specific upload sequence and enforcement check.",
+      "disposition": "applied",
+      "source_id": "ab650-registry",
+      "resolution": "Add objective-specific upload sequence and enforcement check."
+    },
+    {
+      "id": "ab650-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Block, ownership and firewall behavior vary by platform",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-actions?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Foundry/SharePoint block limits, multiple individual owners and upstream firewall failures are documented.",
+      "recommendation": "Add scope-aware lifecycle and result verification.",
+      "disposition": "applied",
+      "source_id": "ab-650-agent-actions",
+      "resolution": "Add scope-aware lifecycle and result verification."
+    },
+    {
+      "id": "ab650-deep-18",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "BYO MCP product support and lifecycle remain preview-limited",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Named clients supported; republishing and deletion unsupported.",
+      "recommendation": "Add explicit approval/consent, support and lifecycle boundaries.",
+      "disposition": "applied",
+      "source_id": "ab-650-agent-tools",
+      "resolution": "Add explicit approval/consent, support and lifecycle boundaries."
+    },
+    {
+      "id": "ab650-deep-19",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Audit visibility is broader than documented DLP blocking",
+      "url": "https://learn.microsoft.com/en-us/purview/ai-agent-365",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Explicit sharing plus VIEW/EXTRACT and generated-label limits apply; human/agent DLP path differs from audit.",
+      "recommendation": "Add permission gates, output protection and coverage exercise.",
+      "disposition": "applied",
+      "source_id": "ab650-purview-agent-365",
+      "resolution": "Add permission gates, output protection and coverage exercise."
+    },
+    {
+      "id": "ab650-deep-20",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Catalog and blog evidence need bounded claims",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-650"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current paths show 17 modules; old duration absent; public case study is not tenant validation.",
+      "recommendation": "Qualify runtime and new commercial leads; add original operations worksheet and denominator examples.",
+      "disposition": "applied",
+      "source_id": "ab-650-path-ai-services",
+      "resolution": "Qualify runtime and new commercial leads; add original operations worksheet and denominator examples."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ab650-insidetrack-blog",
+      "decision": "accepted-bounded",
+      "author": "Alex Fleck",
+      "published_on": "2026-08-06",
+      "notes": "Operations worksheet and original inventory reconciliation. Historical Cowork Frontier status qualified by current admin docs; internal metrics not adopted as promises."
+    }
+  ],
+  "labs": {
+    "total": 11,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Twelve recovery-clock, policy-selection, consumption, template-backlog, permission-set, inventory, adoption and historical catalog arithmetic assertions. No tenant action."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Two-year Backup recovery windows lack a documented second-year frequency table; shared unresolved MS-102 source gap.",
+    "No tenant, mailbox, agent, billing policy, provider opt-in, MCP registration, network probe, restore or infrastructure lab executed.",
+    "Two Udemy direct requests blocked; indexed public catalog descriptions do not verify paid content, originality, coverage, runtime or seller certification claims.",
+    "Blog main article read; linked videos/internal tenant/scale claims not reproduced. Latest Copilot entry reviewed, not the entire historical release archive.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "recovery_policy_consumption_template_permission_inventory_adoption_and_catalog_assertions": 12,
+    "learning_catalog_consistency": "passed"
+  }
+}

@@ -673,14 +673,48 @@ No exact current Whizlabs MS-102 product page was established; none is inferred 
 
 ### AB-650 — Microsoft 365 and AI Services Administrator Associate (beta)
 
-- Three official Microsoft Learn paths (**23 hours 8 minutes listed; allow about 35–55 hours with notes, labs and remediation**): [configure tenants and workloads](https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/), [govern and secure tenants and workloads](https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/), and [manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/)
-- Exam interface practice (20–40 minutes): launch the sandbox from the [AB-650 credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/); Microsoft had not published a Practice Assessment as of September 1, 2026
-- Current product references (6–15 hours selectively): [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/) and [Microsoft Agent 365](https://learn.microsoft.com/en-us/microsoft-agent-365/) documentation
-- Public topical channels (2–8 hours selectively): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy); none was confirmed as a fixed objective-mapped AB-650 course
-- Public whiteboards/code (1–3 hours selectively): [John Savill's GitHub repositories](https://github.com/johnthebrit) supplement his video explanations but are not an AB-650 course
-- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm current AB-650 events and their published start/end times
+Resource details from the [AB-650 guide](../guides/AB-650-ai-services-administrator-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No exact current AB-650 course or practice-exam page from Pluralsight, O'Reilly, Udemy, Whizlabs, or MeasureUp was independently verified during this review. Do not infer beta coverage from a general Copilot course. This is not a complete list and is not meant to be consumed in full: choose one primary route, practice the administrative decisions, and use objective gaps to select supplements.
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary route that fits how you learn, build labs around weak objectives, and use assessments to diagnose gaps. Recheck dates and coverage because AB-650 and several Agent 365 features are beta or rapidly changing.
+
+#### Official primary route
+
+- [Configure and manage Microsoft 365 tenants and workloads](https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/) — 5 modules; former listing: 7 hours 2 minutes.
+- [Govern and secure Microsoft 365 tenants and workloads](https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/) — 5 modules; former listing: 7 hours 39 minutes.
+- [Manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/) — 7 modules; former listing: 8 hours 27 minutes.
+- The three current paths expose **17 modules**. The previous **23 hours 8 minutes** total is historical: September 28 retrieval did not expose current duration totals. Budget roughly **35–55 hours** with notes, portal exploration, labs and remediation as an editorial estimate.
+- Use the [AB-650 credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/) for beta status, scheduling, exam sandbox, language, and assessment availability. The September 28 page still says no Practice Assessment is available; beta results are not immediate. English is the listed exam language.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/) | Public | 1–2 hours initially; 15 minutes on each beta recheck |
+| Three official Microsoft Learn paths | Public | 17 modules; historical total 23 hours 8 minutes; editorial estimate 35–55 hours including practice |
+| Exam sandbox from the credential page | Public | 20–40 minutes; not a knowledge assessment |
+| [Microsoft 365 Copilot documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/) and [Microsoft Agent 365 documentation](https://learn.microsoft.com/en-us/microsoft-agent-365/) | Public | 6–15 hours selectively for current behavior and limitations |
+| [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Public | 2–6 hours selectively; no exact AB-650 path confirmed |
+| [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor) | Public | 2–8 hours selectively; no exact AB-650 path confirmed |
+| [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) and [public repositories](https://github.com/johnthebrit) | Public | 2–8 hours selectively for identity, security, and architecture foundations |
+| [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Schedule dependent; use the event's published start/end time after sign-in |
+
+#### Complementary sources
+
+- [Microsoft 365 Copilot documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/) and [Microsoft Agent 365 documentation](https://learn.microsoft.com/en-us/microsoft-agent-365/) — allow 6–15 hours selectively for current controls, limitations, and release changes.
+- [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) — allow 2–6 hours selectively for official product demonstrations; no fixed AB-650 course was confirmed.
+- [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor) — allow 2–8 hours selectively for Microsoft 365, security, Copilot, and agent sessions; verify each video's date and objective fit.
+- [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) and [public whiteboard/code repositories](https://github.com/johnthebrit) — allow 2–8 hours selectively for Entra, security, identity, and architecture foundations; no complete AB-650-specific course was confirmed.
+- [Partner Skilling Hub](https://www.skilling-hub.com/en-US) — Microsoft partner sign-in is required to confirm current AB-650 events and their start/end times; plan for the published live session length plus lab/review time.
+
+#### Blog reading that produces a useful artifact
+
+Read Alex Fleck’s August 6, 2026 InsideTrack article, [Implementing Agent 365: How we’re governing and managing AI agents at Microsoft](https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/). The public article was reviewed; its linked videos and Microsoft’s tenant were not exercised. Treat its scale figures as a first-party case study, not a deployment promise. Its historical Cowork Frontier description is superseded by current work/school administration guidance.
+
+Spend an estimated 45–75 minutes reading and building a one-page operating worksheet: inventory/identity keys, platform owner, identity sponsor, security/data contacts, approval handoff, response trigger and next review. Apply worked example 5, then assign every missing or ownerless item an action and date. Ask which controls run automatically and which require another team’s action. This turns the article into an administrative skill rather than another bookmark.
+
+#### Practice-test catalog leads and limits
+
+September 28 search results surfaced two exact Udemy listings: [Dean Ellerby’s AB-650 practice tests](https://www.udemy.com/course/ab-650-practice-tests-administering-m365-ai-services/) advertises six tests/360 questions; [Hamdy Khaled’s AB-650 practice exams](https://www.udemy.com/course/ab-650-practice-exams-300-qs-official-sources/) advertises five tests/300 questions. Both public descriptions say August 2026 and documentation-linked explanations. Direct retrieval was access-blocked. These are **leads to inspect**, not verified question banks, coverage endorsements or evidence of exam/renewal rules. No questions were purchased, copied or tested, and no runtime was verified.
+
+Targeted searches did not verify an exact current Pluralsight, O’Reilly, Whizlabs or MeasureUp AB-650 offering. That does not establish absence. Channel/repository links above are supplemental catalogs, not reviewed full courses; partner sessions require sign-in. Before buying, inspect sample originality, explanations, current objective mapping and correction history. Use the official blueprint, not seller marketing, to decide readiness.
 
 ### MD-102 — Endpoint Administrator Associate
 
