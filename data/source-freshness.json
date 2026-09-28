@@ -4,6 +4,177 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-az800-deep-review",
+      "title": "AZ-800 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-800"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-800",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+          "baseline_sha256": "d857ed8fdb8602c7373cc722b156cd309aea74947add0f5d238429417fbb10f3",
+          "scanned_on": "2026-09-27",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "101 detailed objectives mapped; accepted objective/status hashes unchanged; September 30 retirement and AZ-802 replacement path rechecked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted primary documentation corrections applied; unresolved SSH Direct and Conditional Access limitations are recorded in the separate contradiction/gap check."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Windows Server 2025 feature/release-health channels, current SMB documentation and scoped AKS node-image lifecycle checked. Announcements are separated from current support contracts."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide citations registered and live checked; two public blog readings accepted with limitations. Missing historical CentOS artifact remains visible in shared evidence."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Two unresolved official-support gaps remain visible; no clean pass inferred from URL reachability."
+            }
+          },
+          "findings": [
+            {
+              "id": "az800-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Constrained delegation excludes WinRM second hop",
+              "url": "https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/ps-remoting-second-hop",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Both constrained-delegation forms explicitly exclude a WinRM second hop.",
+              "recommendation": "Corrected table and added protocol/identity diagnostic example.",
+              "disposition": "applied",
+              "source_id": "az-800-powershell-second-hop",
+              "resolution": "Corrected table and added protocol/identity diagnostic example."
+            },
+            {
+              "id": "az800-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "dMSA needs an operationally supported migration",
+              "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Discoverable 2025 DC, supported hosts and migration/account retention restrictions are explicit.",
+              "recommendation": "Replaced gMSA-only citation; added a narrowly scoped service migration exercise.",
+              "disposition": "applied",
+              "source_id": "az800-dmsa-faq",
+              "resolution": "Replaced gMSA-only citation; added a narrowly scoped service migration exercise."
+            },
+            {
+              "id": "az800-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SMB defaults depend on client/server direction and edition",
+              "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-signing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Server 2025 requires outbound signing; supported Windows 11 24H2 business editions require both directions.",
+              "recommendation": "Added NAS diagnosis, read-only inspection commands and version boundary.",
+              "disposition": "applied",
+              "source_id": "az800-smb-signing",
+              "resolution": "Added NAS diagnosis, read-only inspection commands and version boundary."
+            },
+            {
+              "id": "az800-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Node-image retirements are platform-specific",
+              "url": "https://learn.microsoft.com/en-us/azure/aks-hybrid-edge/local/hyperconverged/howto-upgrade-windows-os",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AKS on Azure Local lists Windows 2019/2022 node-image retirement and gMSA limitations.",
+              "recommendation": "Added scoped node-pool lifecycle guidance without implying Windows Server OS retirement.",
+              "disposition": "applied",
+              "source_id": "az800-aks-node-os",
+              "resolution": "Added scoped node-pool lifecycle guidance without implying Windows Server OS retirement."
+            },
+            {
+              "id": "az800-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Conditional Access statements conflict",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The article both excludes Conditional Access for the Windows Server extension and describes enforcement; no unambiguous reconciliation found.",
+              "recommendation": "Retain a visible support limitation and seek authoritative clarification.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "az800-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "SSH Direct still lacks current end-to-end support evidence",
+              "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Microsoft transport and historical lab evidence do not establish a current supported host/guest procedure. The exact CentOS package-index URL is now missing.",
+              "recommendation": "Retain a visible support limitation and seek authoritative clarification.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Same-context AI research and repair. Human review pending; no Windows Server/Azure lab or paid-content execution. See docs/research/2026-09-27-az-800-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-27-gh300-ai103-deep-review",
       "title": "GH-300 and AI-103 deep research and learning-content repair",
       "rubric_version": 1,

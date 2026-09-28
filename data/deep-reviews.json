@@ -1,0 +1,74 @@
+{
+  "$schema": "../schemas/deep-review-catalog.schema.json",
+  "schema_version": 1,
+  "started_on": "2026-09-27",
+  "review_interval_days": 30,
+  "reviews": [
+    {
+      "exam_code": "AZ-800",
+      "reviewed_on": "2026-09-27",
+      "guide_sha256": "8c4eb8766de85df82d650fbebb555329f6e327474913e7ad9fdf05cba969a5c3",
+      "objective_count": 101,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-27-az-800-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-27-az-800-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "SSH Direct support evidence incomplete",
+        "Contradictory Entra Conditional Access guidance",
+        "Historical CentOS package artifact missing",
+        "HTTP-success course/video shells do not establish lesson access",
+        "Same-context AI review; human review pending"
+      ]
+    },
+    {
+      "exam_code": "AB-100",
+      "reviewed_on": "2026-09-27",
+      "guide_sha256": "ae0704e1aaea2106938a3eb512d1a5e09d9e16b1acec7d2cee7173664acdb273",
+      "objective_count": 74,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-27-ab-100-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-27-ab-100-deep-review.json",
+        "ADLC_Docs/operations/2026-09-27-ab-100-learning-content.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Human review pending; vendor-service labs not executed.",
+        "Conflicting Microsoft prerequisite lists remain unresolved."
+      ]
+    },
+    {
+      "exam_code": "AI-103",
+      "reviewed_on": "2026-09-27",
+      "guide_sha256": "fb6157742114bdb27457bd6084afb1b23f3d6eac02bb9f1878ae05f69d321706",
+      "objective_count": 64,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-27-gh-300-ai-103-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-27-gh-300-ai-103-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Human review pending; vendor-service labs not executed."
+      ]
+    },
+    {
+      "exam_code": "GH-300",
+      "reviewed_on": "2026-09-27",
+      "guide_sha256": "97c19c67cc989b4f69c2466959be4426e258fe0d3212cc8d5d201a2dbca5ddb6",
+      "objective_count": 41,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-27-gh-300-ai-103-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-27-gh-300-ai-103-deep-review.json"
+      ],
+      "lab_execution": "not-executed",
+      "remaining_limits": [
+        "Human review pending; vendor-service labs not executed."
+      ]
+    }
+  ]
+}

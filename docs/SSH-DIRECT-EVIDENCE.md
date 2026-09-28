@@ -1,9 +1,14 @@
 # SSH Direct evidence and validation boundary
 
-> **VERIFY CURRENT — provisional evidence review, September 7, 2026.** This page
+> **VERIFY CURRENT — provisional evidence review, September 27, 2026.** This page
 > explains the best-supported working model for an AZ-800/AZ-802 objective. It is not
 > Microsoft support documentation, and it does not convert either blocked source review
 > into a pass.
+
+The September 27 AZ-800 deep review rechecked the registered evidence. The specific
+CentOS Stream 9 package-index URL below now returns missing; its earlier observation is
+historical evidence only. The other component-level evidence still does not establish a
+current end-to-end Microsoft SSH Direct support contract. No Hyper-V/Linux lab was executed.
 
 ## What the evidence supports
 
@@ -60,7 +65,7 @@ starting point while keeping the missing Hyper-V-specific proof visible.
 | Debian | Microsoft's experimental Debian 11 MSLab template installs OpenSSH socket activation, listens on `vsock::22`, and loads `hv_sock` | A concrete older Hyper-V guest composition | Current Debian releases, security defaults, package ownership of the units, and Microsoft support |
 | Ubuntu | The Launchpad report records `hvc.exe` working with Ubuntu 22.04 and failing with 24.04 when socket activation was absent | Direct version-sensitive field evidence and a known failure mode | A supported release matrix and whether current updates install/enable the required unit by default |
 | RHEL | Red Hat documents built-in Hyper-V integration for RHEL 7; RHEL 8.5 added `AF_VSOCK` listen/connect support to `socat`; RHEL 10.2 documents current VSOCK namespace behavior | The family has Hyper-V integration and current user-space/kernel VSOCK building blocks | No Red Hat document found for `hvc.exe`, an SSH-on-Hyper-V-socket unit, or a supported RHEL/Windows Server combination |
-| CentOS Stream / Fedora | A current CentOS Stream 9 kernel package index lists `hv_sock.ko`; Fedora 44 packages `sshd.socket`, and current Fedora SELinux policy adds rules for SSHD VSOCK sockets | Strong Red Hat-ecosystem packaging evidence for each layer of the composition | These artifacts are not interchangeable with RHEL, and no end-to-end Hyper-V `hvc.exe` reproduction was found |
+| CentOS Stream / Fedora | A previously observed CentOS Stream 9 kernel index listed `hv_sock.ko`, but its exact URL was missing on September 27; Fedora 44 packages `sshd.socket`, and Fedora SELinux policy adds rules for SSHD VSOCK sockets | Historical CentOS and retrievable Fedora component evidence | These artifacts are not interchangeable with RHEL, and no end-to-end Hyper-V `hvc.exe` reproduction was found |
 | SLES / openSUSE | A current SUSE kernel package changelog includes an `hv_sock` fix; openSUSE Factory's OpenSSH packaging describes an SSHD VSOCK listener for libvirt; SUSE Package Hub's `virtme` package uses SSH over VSOCK | SUSE-family kernels and packages actively carry the socket and SSH-over-VSOCK mechanisms | The published examples target generic/KVM VSOCK rather than Hyper-V SSH Direct; SLES versions, units, AppArmor policy, and `hvc.exe` behavior need testing |
 | Oracle Linux | Oracle documents generic VSOCK configuration for its KVM guests, while Microsoft's historical [LIS 4.1 guide](https://download.microsoft.com/download/7/6/B/76BE7A6E-E39F-436C-9353-F4B44EF966E9/Linux%20Integration%20Services%20v4-1c.pdf) names Oracle Linux with the Red Hat-compatible kernel when loading `hv_sock` | Another enterprise distribution family with relevant components and historical Hyper-V evidence | UEK and RHCK must be tested separately; no current Oracle end-to-end SSH Direct guidance was found |
 

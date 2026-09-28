@@ -29,7 +29,7 @@ channels, retains reports/logs/candidate snapshots for **90 days**, publishes a
 run summary, and creates or refreshes one **Recurring certification maintenance
 review** issue. Its `GITHUB_TOKEN` needs `contents: read` and `issues: write`; no
 external AI service, API key, or paid enrollment is required. The workflow becomes
-active after it is merged to the default branch and Actions is enabled. An issue
+available on the default branch after the September 27 publication. An issue
 permission failure leaves the summary and artifact available and fails visibly.
 
 Existing objective PR, discovery, and source-health workflows remain available.
@@ -82,6 +82,55 @@ blueprints and eligibility, and classify certificates/badges separately from
 certifications. A scheduled fetch does not claim that this review has happened.
 See the [September 17 catalog audit](research/2026-09-17-catalog-audit.md) for the
 initial findings and catalog coverage limits.
+
+## One certification at a time
+
+The [Microsoft review tracker](MICROSOFT-REVIEW-STATUS.md) distinguishes this deep-review
+program from historical source validation. `data/deep-reviews.json` stores dated
+receipts with the reviewed guide hash, objective count, report/evidence paths, lab
+execution level and unresolved limitations. The schema and repository validator check
+the records. A changed guide, a 30-day-old review or an unresolved blocker reopens
+work; lifecycle events and changing/beta exams affect priority. Retired guides are
+archived in this queue while ordinary link monitoring continues.
+
+Prepare a small work packet without changing content or completion records:
+
+```powershell
+python scripts/prepare_deep_review_queue.py --output-dir .maintenance/next-review --size 3
+```
+
+The recurring maintenance command also writes `deep-review/review-queue.json`,
+`review-queue.md` and `next-batch.json`. Packets contain official blueprint links,
+registered sources, queued candidates and the required review steps. The workflow
+includes progress in its maintenance issue. It does not run an unattended AI editor
+or mark a certification reviewed after a successful fetch.
+
+For each certification:
+
+1. Read the complete guide and map every detailed objective to substantive teaching.
+   Recheck the official credential, current/future blueprint, prerequisites and lifecycle.
+2. Inspect current product documentation, release channels and useful public blog articles.
+   Record author, date, relevance, limitations and primary corroboration; reject exam dumps,
+   search-snippet-only evidence and unsupported compatibility claims.
+3. Correct the guide and add original explanations, examples and answer checkpoints where
+   they improve learning. Update affected supporting documentation, source catalog, health
+   evidence, validation record and a dated research report. Keep objective baselines intact
+   unless an actual reviewed blueprint change justifies replacing them.
+4. Record content review, independent/human review and live lab execution separately.
+   Complete research with unresolved vendor conflicts as `reviewed-with-blockers`; preserve
+   the guide's stricter review-required/blocked status until the evidence gap is resolved.
+5. Add the receipt, run the command above with `--publish-status`, and run the shared gate:
+   unit tests, repository validation, site preparation, strict MkDocs build and site validation.
+   Inspect the diff, stage the certification and its supporting changes, commit, and push.
+   Confirm GitHub validation/deployment before treating publication as complete, then move
+   to the next certification. Record any actual failure and repair it before continuing.
+
+The queue is reproducible prioritization, not exhaustive automatic research. Guide hashes
+detect text changes; separate objective, discovery and link monitors detect upstream signals.
+Product changes behind a stable URL still need the scheduled content review. The progress
+page is a deliberately published snapshot; live workflow artifacts can be newer. Append or
+prepend a new receipt rather than rewriting historical evidence; put the latest same-day
+receipt first. A completed AI content review does not satisfy pending human review.
 
 GitHub and Microsoft use the public JSON feeds requested by their current catalog
 websites. These are website interfaces, not guaranteed integration APIs. The

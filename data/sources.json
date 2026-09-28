@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az800-entra-vm-signin",
+      "title": "Sign in to an Azure Windows VM with Microsoft Entra ID",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az800-dmsa-faq",
+      "title": "Delegated managed service accounts FAQ",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-faq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az800-dmsa-setup",
+      "title": "Set up delegated managed service accounts",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-set-up-dmsa",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az800-smb-signing",
+      "title": "Control SMB signing behavior",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-signing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az800-aks-node-os",
+      "title": "Upgrade the OS version for your Windows node pool",
+      "url": "https://learn.microsoft.com/en-us/azure/aks-hybrid-edge/local/hyperconverged/howto-upgrade-windows-os",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az800-file-migration-blog",
+      "title": "Modernizing On-Prem File Servers: Azure Storage Mover and File Sync",
+      "url": "https://techcommunity.microsoft.com/blog/FastTrackforAzureBlog/modernizing-on%E2%80%91prem-file-servers-azure-storage-mover-and-file-sync/4500204",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: SriniThumala, Microsoft; March 8, 2026; no separate update date shown. Public article reviewed. Accepted only for ongoing sync versus migration reasoning. NFS/preview, agent, scale, zero-downtime and backup claims require current product corroboration; current File Sync planning explicitly supports SMB cloud shares only. Original cache/cutover exercise added. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az800-smb-hardening-blog",
+      "title": "SMB security hardening in Windows Server 2025 & Windows 11",
+      "url": "https://techcommunity.microsoft.com/blog/filecab/smb-security-hardening-in-windows-server-2025--windows-11/4226591",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: Ned Pyle, Microsoft; August 23, 2024 preview-era article. Full public article read from embedded __NEXT_DATA__ message:4226591 because the main HTML representation was only 84 characters. Current signing documentation governs edition/direction defaults. Embedded videos not reviewed. Original NAS diagnostic example added. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "gh300-credential",
       "title": "GitHub Copilot certification",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
@@ -10370,10 +10468,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-801"
-      ]
+        "AZ-801",
+        "AZ-800"
+      ],
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
     }
     ,
     {

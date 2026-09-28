@@ -20,6 +20,7 @@ import subprocess
 import sys
 
 from check_certification_discovery import safe
+from prepare_deep_review_queue import write_queue
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -220,6 +221,10 @@ def markdown(report: dict) -> str:
               "3. Run repository tests, repository validation, strict site build and generated-site validation.",
               "4. Accept only reviewed baselines with the corresponding guide change. Preserve historical full-review dates.",
               "5. Resolve or move dated tasks only after recording evidence. A passed date never automatically retires an exam.", ""]
+    if "deep_review" in report:
+        lines += ["## Microsoft content-review queue", "",
+                  f"States: {report['deep_review']['states']}. These are recorded content reviews, separate from monitoring and live lab execution.", "",
+                  "See [the review queue](deep-review/review-queue.md) and `deep-review/next-batch.json` for the next research packets.", ""]
     return "\n".join(lines)
 
 
@@ -276,6 +281,9 @@ def main() -> int:
     report = build_report(read_json(ROOT / "config/exams.json")["exams"],
                           read_json(ROOT / "data/sources.json")["sources"], reports,
                           read_json(ROOT / "config/certification-maintenance.json"), date.today(), errors)
+    queue = write_queue(ROOT, output / "deep-review", date.today(), ["microsoft"])
+    report["deep_review"] = queue["summary"]
+    report["needs_review"] = report["needs_review"] or bool(queue["summary"]["needs_review"])
     (output / "maintenance-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (output / "maintenance-report.md").write_text(markdown(report), encoding="utf-8")
     write_snapshot_diff(output)

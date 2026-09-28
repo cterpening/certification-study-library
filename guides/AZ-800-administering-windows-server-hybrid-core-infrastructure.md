@@ -6,16 +6,16 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-07
+last_verified: 2026-09-27
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-07
+upcoming_change_checked: 2026-09-27
 ---
 
 # AZ-800 Administering Windows Server Hybrid Core Infrastructure Study Guide
 
 > **RETIREMENT ANNOUNCED:** Microsoft will retire AZ-800 on **September 30, 2026, at 5:00 PM Central Standard Time**. AZ-801 retires at the same time. After that transition, [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) will remain the available exam path for the [Windows Server Administrator Associate certification](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/). New learners should normally prepare for AZ-802; use this guide when you are already committed to taking AZ-800 before retirement or need the underlying infrastructure knowledge.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-800-coverage-record). The [official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, detailed objective mapping, citations and learning examples were reviewed on September 27, 2026. SSH Direct support evidence and conflicting Entra Conditional Access guidance remain unresolved; this is not a clean source-validation pass. See the [deep-review findings](../docs/research/2026-09-27-az-800-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-800-coverage-record). The [official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) is authoritative.
 
 **Current baseline:** Skills measured as of January 21, 2026<br>
 **Upcoming blueprint change:** No later blueprint revision is shown, but the exam itself has an announced retirement.<br>
@@ -86,9 +86,13 @@ A synchronized user can represent the same person in AD DS and Entra ID, but the
 |---|---|---|
 | AD DS domain joined | Your writable AD DS domain controllers, DNS, Kerberos/NTLM and domain GPO | Traditional and hybrid Windows Server workloads needing full AD DS capabilities |
 | Entra Domain Services joined | Microsoft-managed domain controllers in the managed domain | Azure-hosted legacy workloads that need domain join/LDAP/Kerberos without self-managed DCs |
-| Microsoft Entra joined | Entra device identity and modern cloud authentication/management capabilities supported for the Windows Server release/scenario | Cloud-first server scenarios that do not require traditional domain services |
+| Microsoft Entra joined | Entra device identity through the supported Azure Windows VM sign-in extension | Supported Azure VM configurations; do not infer general on-premises Windows Server join support |
 
 Before joining, verify edition/version support, DNS points to the directory's resolvers, time is correct, the computer name/site/OU is intentional and the joining identity has only the required delegation. After joining, verify the computer object, secure channel, locator records, applied policy and intended administrative access. Leaving one directory and joining another changes identity and policy dependencies; it is not a cosmetic portal operation.
+
+**Worked example — deploying a VM is different from signing in:** An operator can create an Azure VM but receives a guest-login denial. For the supported Entra sign-in path, inspect the VM's system-assigned managed identity, `AADLoginForWindows` extension and the intended user's **Virtual Machine User Login** or **Virtual Machine Administrator Login** role assignment. Owner/Contributor does not itself grant this guest-login permission. Do not add a second domain join to repair it: this Entra-joined configuration cannot simultaneously join AD DS or Entra Domain Services. Record extension health, role scope and the exact failed sign-in transaction. [Azure Windows VM sign-in requirements](https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows).
+
+**Documentation conflict — September 27:** That same sign-in article both excludes Conditional Access for Windows Server with the extension and describes enforcing it. Treat the client, authentication method and target configuration as unresolved support inputs; confirm the applicable Microsoft guidance before designing a Conditional Access dependency. This guide does not resolve the contradiction by assuming the more permissive statement is correct.
 
 > **Related item:** Microsoft Entra Kerberos can let supported clients obtain Kerberos tickets for specific cloud resources such as Azure Files. That does not turn Entra ID into general-purpose AD DS.
 
@@ -236,7 +240,9 @@ A durable pattern is accounts → global role groups → domain-local resource g
 
 For gMSA, create/validate the KDS root key, restrict the principals allowed to retrieve the managed password, grant only required logon rights and resource access, register correct SPNs and test from each allowed host. The managed password solves rotation; it does not automatically provide least privilege.
 
-**VERIFY CURRENT:** dMSA requirements and application support are Windows Server 2025-era and can evolve. Use the current [service-account documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/group-managed-service-accounts-overview) for the deployed OS and functional level.
+**VERIFY CURRENT:** The [dMSA FAQ](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-faq) requires a discoverable Windows Server 2025 DC and supported participating hosts; extending the schema alone is insufficient. It excludes gMSA-to-dMSA migration and combining several original service accounts into one dMSA.
+
+**Worked example — migrate one service identity:** Inventory the service's hosts, SPNs, resource permissions and rollback owner. Authorize only its intended hosts to retrieve the managed password. Pilot the [documented migration stages](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-set-up-dmsa), capture Kerberos operational evidence, and test an allowed and a denied resource operation. Restart only the service under change in your disposable lab; a broad restart of running services is inappropriate. Keep the original account after completion because the migration retains account links and service configuration dependencies. A green service status alone does not establish correct network authorization.
 
 > **Related item:** Kerberos authenticates a service through an SPN associated with the service identity. Duplicate/missing SPNs can cause ticket failure or NTLM fallback even when the account password is correct.
 
@@ -332,7 +338,7 @@ The second-hop problem is: client connects to Server B, then code on B needs to 
 
 | Method | Benefit | Risk/constraint |
 |---|---|---|
-| Resource-based Kerberos constrained delegation | Target-controlled constrained delegation without storing caller password | Kerberos/domain/configuration requirements; WinRM limitations must be checked |
+| Resource-based Kerberos constrained delegation | Target-controlled constrained delegation without storing caller password | Does not support a WinRM second hop; confirm the actual downstream protocol and Kerberos requirements |
 | CredSSP | Straightforward credential delegation | Credentials are exposed to the intermediate server; use only when it is trusted and justified |
 | JEA virtual account | Constrained commands, often accesses local/network resources as managed machine identity | Endpoint must be carefully authored on each intermediate server |
 | RunAs session configuration | Predictable service identity | Stored/managed credential and shared identity reduce caller attribution |
@@ -340,6 +346,8 @@ The second-hop problem is: client connects to Server B, then code on B needs to 
 | Unconstrained delegation | Broad delegation | Unsafe; do not use as a production shortcut |
 
 Choose the least powerful method that satisfies the transaction. Prove which identity reaches Server C and capture logs at all hops.
+
+**Worked example — draw the second protocol:** `A -> WinRM -> B -> SMB -> C` and `A -> WinRM -> B -> WinRM -> C` are different transactions. Microsoft explicitly excludes a WinRM second hop for both legacy and resource-based constrained delegation. For the SMB case, assess constrained delegation and permissions on the target. For a narrowly scoped maintenance task, consider a JEA endpoint whose service or machine identity has only the needed downstream permission. If C records `B$`, the original caller was not the network identity; retain B's transcript to connect the caller to the action. Validate the intended protocol and principal instead of treating “second hop fixed” as a universal result.
 
 JEA combines a session configuration with role capability files. Define allowed cmdlets/functions/providers, constrain parameters, use virtual accounts or gMSA when appropriate and enable transcripts. Test obvious escape routes: arbitrary scripts, aliases, providers, `Invoke-Expression`, native binaries, output-object methods and writable module paths.
 
@@ -487,6 +495,8 @@ Common network drivers include NAT for local outbound connectivity, transparent/
 For Linux containers on Windows, understand whether the implementation uses WSL 2, a Linux VM or orchestration nodes. A Linux container requires a Linux kernel; Windows does not execute it as a Windows process-isolated container.
 
 AKS on Windows Server/AKS hybrid offerings, supported Kubernetes versions and lifecycle have changed over time. **VERIFY CURRENT:** confirm the supported on-premises Azure Kubernetes product, host OS, node-image and support lifecycle before lab or production selection. The objective names the capability; older training may describe a superseded product name.
+
+**Dated node-image boundary:** The current [AKS on Azure Local Windows node-pool guidance](https://learn.microsoft.com/en-us/azure/aks-hybrid-edge/local/hyperconverged/howto-upgrade-windows-os) lists March 2026 retirement for Windows Server 2019 node images and October 2026 retirement for Windows Server 2022 node images. These are node-pool support statements, not retirement dates for Windows Server itself or every AKS deployment architecture. Record the platform, Kubernetes version, node OS and container base image separately; rebuild and test the application image before replacing its pool. The same page excludes gMSA configuration on the stated Azure Local 23H2/24H2 Windows-node configurations, despite installed components. A generic Kubernetes credential spec therefore does not prove this platform supports your AD-dependent workload.
 
 #### Primary references
 
@@ -715,6 +725,10 @@ For DFS migration, preserve the user-facing DFS Namespace while replacing folder
 - [Choose cloud-tiering policies](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-choose-cloud-tiering-policies)
 - [Monitor Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring)
 
+**Worked example — cache capacity is a constraint:** A branch has a 100 GiB volume, a 20% free-space target, 10 GiB of unrelated files and a measured 90 GiB hot working set. The rough file-cache budget is `100 × 0.80 − 10 = 70 GiB`, before filesystem and operational overhead: 20 GiB short of the working set. This is a planning estimate, not an exact tiering prediction. Test access and recall latency under load, and test WAN loss with both a cached file and a tiered file. File Sync does not make every file available offline or supply independent retention; test a separate backup and restore policy as well.
+
+**Related migration decision:** Keep File Sync when local Windows access and ongoing synchronization remain requirements. Evaluate [Azure Storage Mover](https://learn.microsoft.com/en-us/azure/storage-mover/service-overview) for a migration with a defined target and cutover. Check its current source/target pair, metadata fidelity and agent or agentless requirements. Initial copy, final write freeze, delta verification, client-path change and rollback are separate acceptance points; “copy complete” is not proof that users can safely cut over.
+
 ### Configure Windows Server shares, FSRM and DFS
 
 SMB share design includes path, share name, availability, access-based enumeration, offline caching, encryption, continuously available behavior and share/NTFS permissions. Use SMB signing/encryption based on threat/path and current defaults; measure performance rather than disabling protection reflexively.
@@ -745,6 +759,15 @@ DFS Namespaces gives clients a logical UNC namespace with referrals to folder ta
 SMB over QUIC is available in Windows Server 2025 editions and Windows Server 2022 Datacenter: Azure Edition under current documentation. It replaces TCP transport for this session; it does not bypass SMB authentication or ACLs. Certificate identity, client trust, port/firewall and revocation/lifecycle are operational dependencies.
 
 **VERIFY CURRENT:** SMB signing defaults, QUIC editions, client access control, cipher behavior and feature interactions vary by Windows release. Use the current [SMB feature matrix](https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-feature-descriptions).
+
+**Worked example — an older NAS stops accepting connections after an upgrade:** The [current signing guidance](https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-signing) requires outbound signing by default on Windows Server 2025; Windows 11 24H2 Pro, Enterprise and Education require both directions. Do not generalize those defaults to every edition or treat the server as only an SMB server: copying from the NAS makes it an SMB client. Inspect effective settings without changing them:
+
+```powershell
+Get-SmbClientConfiguration | Select-Object RequireSecuritySignature
+Get-SmbServerConfiguration | Select-Object RequireSecuritySignature
+```
+
+Check the NAS's authenticated access and signing support, the negotiated connection and event logs. Guest access cannot supply the required signing protection. Prefer supported NAS configuration/firmware and authenticated access; disabling signing across the estate hides the incompatibility while weakening protection. These inspection commands are a proposed lab step, not evidence of execution on Windows Server here.
 
 ### Configure disks, volumes and filesystems
 
@@ -897,6 +920,12 @@ For Azure Extended Network, use a paper design by default because it requires ro
 
 ---
 
+### Lab 10 — Prove identities, protocols and storage assumptions
+
+Start with a tabletop worksheet: list the initiating identity, target identity, protocol, effective permission, expected success and expected denial for the VM sign-in and second-hop examples. Compute the branch cache budget, then identify which files must remain available without WAN access. In an authorized disposable environment, execute one allowed and one denied operation for each configured path; inspect SMB settings and capture relevant logs. For a dMSA pilot, use supported hosts and restart only the selected service. Remove test role assignments, delegation and lab resources afterward.
+
+**Evidence:** dated OS/extension versions, identity/protocol diagram, redacted logs and transcripts, cache measurements, a restored test file and cleanup record. Mark each unexecuted step explicitly; completing the worksheet alone is not a successful infrastructure lab.
+
 ## 9. Knowledge checks
 
 1. Why can a synchronized user authenticate to Entra ID but still fail against an AD DS-protected SMB share?
@@ -924,6 +953,12 @@ For Azure Extended Network, use a paper design by default because it requires ro
 23. Which two authorization layers usually govern identity-based Azure Files SMB access?
 24. How do File Sync, DFS Namespace, DFS Replication and Storage Replica solve different problems?
 
+25. An operator has Contributor on an Entra-enabled Azure VM but cannot sign in. Which additional evidence should you inspect?
+26. Why does fixing delegated SMB access from B to C not prove a nested WinRM session will work?
+27. Why is a Windows Server 2025 schema extension insufficient evidence that a dMSA migration can proceed?
+28. In the 100 GiB branch example, what is the estimated cache budget, and what does WAN loss change?
+29. A Windows Server 2025 machine cannot read an older NAS share. Which direction of SMB signing matters, and what repair should you investigate first?
+
 ### Answers
 
 1. Sync links/provisions identities; the SMB path still needs the correct Kerberos authority/ticket, network path, group token, share permission and ACL.
@@ -950,6 +985,11 @@ For Azure Extended Network, use a paper design by default because it requires ro
 22. App Proxy publishes supported web apps through outbound connectors; VPN provides routed network access, while Private Access targets broader identity-aware private application access.
 23. Azure share-level RBAC/default permission and Windows directory/file ACLs; the most restrictive applicable access controls the operation.
 24. File Sync synchronizes Azure Files/server endpoints and can tier; DFSN supplies a stable namespace/referrals; DFSR replicates supported files; Storage Replica copies volumes at block level.
+25. Inspect the supported join configuration, system-assigned identity, extension state, VM User/Administrator Login role and assignment scope; Contributor is a management-plane role, not this guest-login grant. Keep the unresolved Conditional Access support question separate.
+26. They use different downstream protocols. Microsoft's second-hop guidance explicitly excludes WinRM for both constrained-delegation forms; test the actual transaction and principal.
+27. The client must discover a Windows Server 2025 DC, participating hosts must support dMSA, and the migration type/application must qualify. A schema change alone proves none of those operational dependencies.
+28. About 70 GiB before overhead, leaving a 20 GiB shortfall against the 90 GiB working set. WAN loss prevents recall of cloud-only file content; independently retained backup is still necessary.
+29. The Windows Server is the SMB client for that read, so its outbound requirement matters. Investigate NAS signing and authenticated access, firmware and connection evidence before considering any exception.
 
 ---
 
@@ -1012,13 +1052,18 @@ This is **not a complete list**, and it is not a recommendation to consume every
 #### Newer to Windows Server route
 
 1. Start with Windows Server, TCP/IP/subnetting/DNS, PowerShell, Azure fundamentals and identity concepts.
-2. Complete the official learning paths and all eight labs in this guide.
+2. Complete the official learning paths and all ten labs in this guide, marking tabletop work separately from executed lab evidence.
 3. Use one structured course/book, not every vendor; add focused docs where your evidence is weak.
 4. Rebuild one small hybrid environment twice and troubleshoot it from client to identity/network/data path.
 
 **Planning range:** 120–180 hours after foundational operating-system, networking and Azure study. Given AZ-800 retirement, AZ-802 will usually be the more practical certification target.
 
 ---
+
+### Supplementary blog reading with a purpose
+
+- [Modernizing On-Prem File Servers: Azure Storage Mover and File Sync](https://techcommunity.microsoft.com/blog/FastTrackforAzureBlog/modernizing-on%E2%80%91prem-file-servers-azure-storage-mover-and-file-sync/4500204), **SriniThumala, Microsoft FastTrack, March 8, 2026**; no separate update date shown. Plan 15–20 minutes including notes. Useful for comparing a lasting hybrid file service with a migration project. Use the current File Sync planning and Storage Mover docs above for compatibility: the article's NFS/preview, deployment and scale claims are not an implementation contract, and its “no downtime” and backup language needs qualification. Exercise: write cutover, rollback and retained-backup criteria for Scenario C.
+- [SMB security hardening in Windows Server 2025 & Windows 11](https://techcommunity.microsoft.com/blog/filecab/smb-security-hardening-in-windows-server-2025--windows-11/4226591), **Ned Pyle, Microsoft, August 23, 2024**; preview-era article, no separate article update date verified. Plan 20–30 minutes with the current signing documentation. Useful explanations of why signing, authenticated access and protocol controls matter; its preview labels and broad client wording require current edition-specific checks. Exercise: annotate the NAS example with connection direction, effective signing setting and evidence of the authenticated principal. Article text was readable in the public page's embedded data; embedded videos were not reviewed.
 
 ### Currency and integrity note
 

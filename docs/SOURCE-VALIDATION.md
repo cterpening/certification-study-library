@@ -442,6 +442,8 @@ The review maps every July 27, 2026 subobjective to a work-to-production evidenc
 
 ## AZ-800 coverage record
 
+The September 27 [deep review](research/2026-09-27-az-800-deep-review.md) maps 101 detailed objectives and expands the guide to ten labs and 29 answered checks. Five worked examples and two qualified blog readings improve identity, delegation, storage and migration decisions. Current guide citations: 84 registered, 80 reachable, 4 access-blocked, 0 missing/error. Source validation remains blocked by incomplete SSH Direct support evidence and contradictory Entra Conditional Access documentation. No infrastructure lab was executed. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Deploy and manage AD DS in on-premises and cloud environments | Sections 1–2, branch and Azure application scenarios, and Labs 1–3 |

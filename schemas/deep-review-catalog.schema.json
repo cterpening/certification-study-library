@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deep-review program receipts",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "started_on", "review_interval_days", "reviews"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"const": 1},
+    "started_on": {"type": "string", "format": "date"},
+    "review_interval_days": {"type": "integer", "minimum": 1},
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["exam_code", "reviewed_on", "guide_sha256", "objective_count", "outcome", "report_path", "evidence_paths", "lab_execution", "remaining_limits"],
+        "properties": {
+          "exam_code": {"type": "string", "minLength": 1},
+          "reviewed_on": {"type": "string", "format": "date"},
+          "guide_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "objective_count": {"type": "integer", "minimum": 1},
+          "outcome": {"enum": ["reviewed", "reviewed-with-blockers"]},
+          "report_path": {"type": "string", "pattern": "^docs/research/.+\\.md$"},
+          "evidence_paths": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^ADLC_Docs/operations/.+\\.json$"}},
+          "lab_execution": {"enum": ["not-executed", "offline-only", "live-partial", "live-complete"]},
+          "remaining_limits": {"type": "array", "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    }
+  }
+}

@@ -472,6 +472,7 @@ CATALOG_SCHEMAS = {
     "data/source-candidates.json": "schemas/source-candidate-catalog.schema.json",
     "data/source-freshness.json": "schemas/source-freshness-catalog.schema.json",
     "data/reviews.json": "schemas/review-catalog.schema.json",
+    "data/deep-reviews.json": "schemas/deep-review-catalog.schema.json",
     "data/vendors.json": "schemas/vendor-catalog.schema.json",
     "data/sources.json": "schemas/source-catalog.schema.json",
     "data/source-health.json": "schemas/source-health.schema.json",
@@ -1868,6 +1869,11 @@ def validate_catalogs(errors: list[str]) -> None:
         errors,
     )
     validate_ai_audits(audits_data, exam_by_code, reviews, errors)
+    from prepare_deep_review_queue import validate_records
+    try:
+        validate_records(ROOT, list(exam_by_code.values()), load_json(ROOT / "data/deep-reviews.json", errors))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f"Deep-review receipts: {exc}")
 
 
 def validate_markdown(errors: list[str]) -> None:

@@ -25,7 +25,9 @@ jobs:
         with:
           python-version: "3.13"
       - name: Test maintenance reporting
-        run: python3 -m unittest discover -s tests -p test_certification_maintenance.py -v
+        run: |
+          python3 -m unittest discover -s tests -p test_certification_maintenance.py -v
+          python3 -m unittest discover -s tests -p test_deep_review_queue.py -v
       - name: Collect all certification checks
         id: collect
         run: python3 scripts/run_certification_maintenance.py --output-dir .maintenance/current --mode monthly
@@ -61,6 +63,8 @@ jobs:
           if report:
               lines += [f"Checked {report['summary']['guides']} guides; {report['summary']['guides_with_actions']} have review tasks.",
                         f"Collection errors: {report['summary']['collection_errors']}."]
+              if 'deep_review' in report:
+                  lines += [f"Microsoft deep-review states: {report['deep_review']['states']}. See the deep-review artifact for the next batch."]
               if not report['needs_review']:
                   lines += ['No new review signals. Review earlier unresolved findings before closing this task.']
           else:

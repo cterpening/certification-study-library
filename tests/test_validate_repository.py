@@ -61,7 +61,7 @@ class RepositoryValidationTests(unittest.TestCase):
             "config/certification-seeds.json", "config/exams.json",
             "config/collections.json", "config/objective-monitor-limitations.json",
             "data/ai-audits.json",
-            "data/source-candidates.json", "data/source-freshness.json",
+            "data/source-candidates.json", "data/source-freshness.json", "data/deep-reviews.json",
             "data/reviews.json", "data/vendors.json", "data/sources.json",
             "data/source-health.json",
         }
