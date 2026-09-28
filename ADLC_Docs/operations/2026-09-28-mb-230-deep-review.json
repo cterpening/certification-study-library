@@ -1,0 +1,2142 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MB-230",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "6ae26e9aaee988b2a86cfdbdeb70d423923a004d8f3f8df0ea99adc548cd57f9",
+  "guide_after_sha256": "fc595c40de2aa905feb11a2e68914673f7443ab59204b5c7658c29f1b21daae2",
+  "prior_records": {
+    "exam": {
+      "code": "MB-230",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Dynamics 365 Customer Service Functional Consultant",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+      "guide_path": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Applied Dynamics 365 Customer Service and service-management knowledge across cases, knowledge, SLAs, queues, routing, representative workspace and Customer Voice, plus Dataverse, model-driven app, Power Automate, Teams and basic solution-architecture experience."
+    },
+    "review": {
+      "id": "mb-230-2026-09-01-source-validation",
+      "exam_code": "MB-230",
+      "guide_path": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mb-230-official-objectives.txt",
+      "blueprint_snapshot_sha256": "02105f2bbafe2b5a53a2f55604a18cdd0af2d68c842cc5d285ac8abc41a52e7e",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage cases in Customer Service",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–5"
+          ]
+        },
+        {
+          "objective_group": "Configure representative experience and routing",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Extend Customer Service",
+          "guide_sections": [
+            "Section 3",
+            "Warranty-support scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 15,
+        "reachable": 14,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every March 11, 2026 subobjective is mapped to a case/data/security state, knowledge/collaboration/AI contract, SLA clock/action, routing stage, representative experience, extension/feedback decision, evidence, failure or recovery path. Three scenarios, eight labs and 36 original checks cover record rules/monitoring, resolution/roles/timeline, governed knowledge and Teams collaboration, filtered Copilot and controlled Case Management Agent/tools, SLA/item/KPI/KPI-instance/timer and reliable Power Automate behavior, unified routing/capacity/skills/diagnostics, scripts/slugs/macros, workspace templates/profiles/Inbox, Dataverse/UI/search/templates/notifications and Customer Voice. All 15 URLs are cataloged: 14 reachable and Udemy automation-blocked; none missing or broken. The guide records the stale credential-page update messaging, active 100-minute seven-language exam, free Practice Assessment, 29h02 selected official paths, four-day course, current Pluralsight/Udemy supplements, partner learning and no exact verified O'Reilly, MeasureUp or Whizlabs product."
+    },
+    "sources": [
+      {
+        "id": "mb-230-blueprint",
+        "title": "Study guide for Exam MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Authoritative three-domain blueprint: skills measured as of March 11, 2026; no future update announced."
+      },
+      {
+        "id": "mb-230-credential",
+        "title": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Active intermediate credential; 100-minute exam, seven languages, free Practice Assessment and no retirement date. Page metadata still contains stale October 2025 and future-tense March 2026 messaging, so the dated study guide controls objectives."
+      },
+      {
+        "id": "mb-230-path-cases",
+        "title": "Work with cases in Dynamics 365 Customer Service",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Six hours 39 minutes across seven modules, including the current Copilot Service workspace, collaboration, Copilot, Case Management Agent and automatic record rules."
+      },
+      {
+        "id": "mb-230-path-knowledge",
+        "title": "Work with Knowledge Management Solutions in Dynamics 365 Customer Service",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Two hours 38 minutes across three modules covering configuration, lifecycle, translations, internal/external search, AI suggestions and article use."
+      },
+      {
+        "id": "mb-230-path-slas",
+        "title": "Work with entitlements and service level agreements in Dynamics 365 Customer Service",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Two hours one minute; SLA material maps directly, while entitlement content is useful adjacent context rather than an explicit March 2026 objective."
+      },
+      {
+        "id": "mb-230-path-routing",
+        "title": "Route and distribute work in Dynamics 365 Customer Service",
+        "url": "https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Four hours 11 minutes across four modules on basic and unified routing, workstreams, classification, queues, assignment, skills/skill finder, record routing and diagnostics."
+      },
+      {
+        "id": "mb-230-path-productivity",
+        "title": "Help service reps be more productive in Dynamics 365 Customer Service",
+        "url": "https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Six hours 38 minutes across seven modules on experience profiles, session/application-tab templates, workspace, productivity tools, timeline and collaboration."
+      },
+      {
+        "id": "mb-230-path-extend",
+        "title": "Extend Dynamics 365 Customer Service",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extend-customer-service/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "One hour 12 minutes across two modules; useful Power Platform and agent-integration extension context, supplemented by Dataverse practice."
+      },
+      {
+        "id": "mb-230-path-customer-voice",
+        "title": "Create surveys with Dynamics 365 Customer Voice",
+        "url": "https://learn.microsoft.com/en-us/training/paths/create-surveys/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Five hours 43 minutes across six modules; distribution, personalization and automation map directly, while embedding/reporting are adjacent depth."
+      },
+      {
+        "id": "mb-230-course",
+        "title": "MB-230T01-A Implement customer service solutions using Microsoft Dynamics 365 Customer Service",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-230t01",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Four-day official instructor-led course."
+      },
+      {
+        "id": "mb-230-practice",
+        "title": "MB-230 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Free official readiness assessment linked from the study guide and credential page."
+      },
+      {
+        "id": "mb-230-docs",
+        "title": "Dynamics 365 Customer Service documentation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Current first-party case, knowledge, SLA, routing, workspace, Copilot/agent, collaboration, security, extension and troubleshooting hub."
+      },
+      {
+        "id": "mb-230-pluralsight-extend",
+        "title": "Microsoft Dynamics 365 Customer Service: Build and Expand",
+        "url": "https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Current 47-minute May 2026 extension-focused course; useful supplement, not a complete MB-230 path."
+      },
+      {
+        "id": "mb-230-udemy-sharma",
+        "title": "Microsoft Dynamics 365 Customer Service Expert",
+        "url": "https://www.udemy.com/course/dynamics-365-customer-service/",
+        "publisher": "Udemy / Neeraj Sharma",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Four hours 16 minutes across 26 lectures, updated August 2026, with hands-on case, SLA, knowledge, Copilot, Customer Voice and model-driven-app material; gap-check routing/workspace details against the official blueprint."
+      },
+      {
+        "id": "mb-230-partner-skilling-hub",
+        "title": "Microsoft Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-230"
+        ],
+        "notes": "Partner catalog requires eligible-partner sign-in to confirm the current event, exact published start/end times, seat availability and prerequisites; use the four-day official-course pattern only as a planning estimate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "b9eb98b733b695310d9ec74bb5c1e1d88cea5e08106ecb7d4264fe365574f60c",
+      "guide_sections": "1 / Modern ARC conditions, queue scope, activation and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "dd6077ec3e57f3d569e65c94475f7b89570cf472ed7b6fe000134ddece9a7576",
+      "guide_sections": "1 / Lifecycle, closure evidence, state and resolution experience",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "a6891fe397db2e81ee72104e2ca52274e8e86ea0502b499c93eb3b6a62a2a032",
+      "guide_sections": "1, 3 / Table/record/column roles and persona tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "5d473600cbca9ceeabd5a6563eb9d57d883af6ac63eb5ca3548764d49d249e04",
+      "guide_sections": "1 / Timeline records, cards, highlights and secured display",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "925844b397d659319d7fee7f72dff189b8e341398b1e10c6a3a023e403e6d595",
+      "guide_sections": "1 / Internal search, ordinary search versus Copilot filters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "802ec44ea5d2f689c5a7abbd76fda1f4fb05658caf5c8e72408d48d75d3954c3",
+      "guide_sections": "1 / Knowledge-enabled tables, environment boundary and privileges",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "821a2db227ad5380c74eb15cc15a38a19bff22e49c25b26d01b0b094955ff7cf",
+      "guide_sections": "1 / Governed language variants, reviewers and staleness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c44efd57df0ef7700b25be1ab169015b76e4d2661b48f8edecf4a17991edeaa8",
+      "guide_sections": "1 / Federated providers versus sitemap ingestion, freshness and access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "caa07d0323b6c667b1d51b5ebe722c5aad499d9e81b2895a929e919b5a5dfc59",
+      "guide_sections": "1 / Current Copilot/knowledge-agent generation versus retired suggestions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "c7d8848373ff3befde40a1c2cdbdac980ff97277a1e9b62a747b81d45f6053ae",
+      "guide_sections": "1 / Embedded chat, records, users and retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "2e23efc4d57ceb468adda18c748035f64d7ab3a66e458c59d5f31af30764baee",
+      "guide_sections": "1 / Teams call prerequisites, custom profiles, call handoff and recording",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c14b7981001aff25e394c6a9a2d385d677827eaf2c95b675b700a71d90e70943",
+      "guide_sections": "1 / AI/rule suggestions, confidence, availability and fallback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "1667f01fa3849ad5955d78fb657f4bee0416dee349d1e06e65276032bc6b1f5c",
+      "guide_sections": "1 / Linked collaboration, record disposition and access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "d1338feaa3cb0603aa9b073053760724c5d4bce6d4a5790d935370c3848b91ef",
+      "guide_sections": "1 / Ask a Question sources, selected/automated filters and null tags",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "6f5914e3fe62acf3aedf0503464fa74887b46b13bfefe3e86a183cac683d747a",
+      "guide_sections": "1 / Case/timeline/conversation summary context and verification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "36eb5bdfae70eccec2b39c0c80223d009111240ddaa3df634d06e74ec345e959",
+      "guide_sections": "1 / Response drafting, sources and approval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "c212e89de3f10a6353af499b7451a2d3bcad679faca5daf287fdfa33a94a48a0",
+      "guide_sections": "1, exercise 5 / Agent prerequisites, mode, triggers, preview evaluation and billing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "258e33a1e4875c111b255815ccf23a2219de9fdcd2b77dc6f4ed9d2deb5741c3",
+      "guide_sections": "1 / Agent integration, tools, typed inputs, identities and action controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "ebd0efed8498209479d401c5e38f7591059cba4189904dec1e6f8e9ff6a6e5d7",
+      "guide_sections": "1, exercise 1 / Unified Interface setup, dates and calendars",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "6db803adb27b83fd5f52e852add62cebd1ed198f8575e21b87614cb1e568c750",
+      "guide_sections": "1 / Retry-safe warning/failure/success flow actions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "165096a86989ed864d99948e39e2836bab3f0543872d3944953c4d5e508fad71",
+      "guide_sections": "1 / Default/entitlement/customer/automation application",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "1a50cfad565ae88f533407801898770c44ce0022847a10f067fef937a7d33db0",
+      "guide_sections": "1 / Item applicability, KPI association, durations, actions and pause override",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "e90dca97da00ccc847ab401747a93c06d4f4b498d618fa19f07f4f3033ee6231",
+      "guide_sections": "1 / Timer lookup and display versus runtime commitment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "828769e93f078b20361628e9942e260f1d2b5ab7d52f75d6c162f31984e0e2db",
+      "guide_sections": "1 / KPI definition, Applicable From and runtime instance succession",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "78ad41b0241c111564a2c68ba95c2aa2687fc664745b343bbe7980be109e3a27",
+      "guide_sections": "2 / Channel/record workstream intake and distribution",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "13e45a4810907dc3425dd6bcfc283680f17343b9c55d0bfe64bd29f592063889",
+      "guide_sections": "2 / Users, bookable resources and presence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "2b41147c996298046f5de5238ea854ab87cee0d97aba0ffef906b558c978f12d",
+      "guide_sections": "2, exercise 2 / Profiles, limits, resets, blocking and override",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "1f1bb5632d2d28f1a896b24621542ab34db4d030e88f59280b20779673c73a42",
+      "guide_sections": "2 / Classification, queue selection, priority and eligible assignment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "e321d892240035e3323774b423ffdab1aeccffd39d02d69101535ca5e5598d53",
+      "guide_sections": "2 / Basic record-to-queue rules versus unified distribution",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "7a34d7a31d12298d5a17b89059ab35aad63641acd1b2be83d194475940e93d07",
+      "guide_sections": "2 / Skills/proficiency, supported skill finder and fallback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "6f0320fab3512a2839e488825a40046b6a69e6081e11e84e9a6890a444c2808c",
+      "guide_sections": "2 / Membership, ownership, overflow and access independence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "e058572a8d13bb9f0f2cab53036e0ec67f7a24c31ab8af269c0bee8c8e35f208",
+      "guide_sections": "2, exercise 3 / Record work-item identity, telemetry and current analytics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "8e2268232ed1fd303666d8968e867eec94c301ab625e6b1ec1f9c0fe8dbac216",
+      "guide_sections": "2, exercise 4 / Scripts and anchor/current-tab slugs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "dbfb4c332e28ff59c08d3079b9d8da17d17b39596e13d6985c15adfa6dde19a2",
+      "guide_sections": "2, exercise 4 / Sequential macros, context, partial failure and replay",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "1bf450be35a39f401a7629cc7985177d0e38af71e59979b12962e7f771d46fd5",
+      "guide_sections": "2 / Custom session templates, anchor and context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "a233fb1aca6a431d64dfaac028473277e3c96ac4a8c2dc93ae234328b6648ac8",
+      "guide_sections": "2 / Profile assignment/default and security-role prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "206b9e3c055796d21a8b448cdfdfb7b0f11a695b45f40c5bd5426a6fc28f70f4",
+      "guide_sections": "2 / Custom Inbox views, accepted voice behavior and relevant filters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "60dcf65a3ed714a925336a31b2bc7d62d0d140c746ae568cf64d8926a198960f",
+      "guide_sections": "2 / Tabs within a session and current-tab identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "12b82f35d38ffb9d649f2024c25ab2ca98ac4267a8269a42b7011bfa65bf1c37",
+      "guide_sections": "3 / Form input and persona behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "a3063fafc74ff607589ebb3dd50af01bc8c6b19bc402e1db5cc6fcfa7d403878",
+      "guide_sections": "3 / Views and retrieval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "b155c00ecbedee9b6ccf3963d29f84394c744c7ba5b573780ce3e0933fc049d1",
+      "guide_sections": "3 / App components and solution deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "74266e773b2ddf6aa0f7c360dbca7a1c14a3295ae3815cbb7ad95ea531c7c5e4",
+      "guide_sections": "3 / Column types, requiredness, search and audit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "79fc68a92199ae28a866506dfeefb4849e2c1af3f59616dd9573c2dff165ebf2",
+      "guide_sections": "3 / Notification recipient/action/expiry/deduplication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "eb634b42876f46075d973be2eb732298f64941e57d40a8d2af666b10ec26da41",
+      "guide_sections": "3 / Table meaning, ownership and standard-first modeling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "7a9db5c04572f0b01e099894c630ad8f285e520799015b5961bc4331713eab20",
+      "guide_sections": "3 / Relationship cardinality, cascades, sharing and deletion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "6fdea6ff158058b2b809e7eb324199f11bf6db0ac726182f6b6904d2411bc674",
+      "guide_sections": "3 / Search table/column choices and access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "68a16646a109037627b9029463d85ea8f7ea11f96e0848e170ee8b6ad2425534",
+      "guide_sections": "3 / Templates, localization, dynamic values and governance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "990ff67420490ce4c61f585fb71d423a4833c980ba1d506a888e60260d2eac76",
+      "guide_sections": "3, exercise 6 / Eligible trigger, flow retries and invitation policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "d3c9c59d645ba287dcfd53c6644e205b1f90ab6745a34ad70443a596a2c22654",
+      "guide_sections": "3 / Variables, language, defaults and saved fields",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "7b927d6c874bff961fbc4e476e463eee08d796f59aed4186725e6e82865d8a1a",
+      "guide_sections": "3, exercise 6 / Regarding record, Contact recipient and response correlation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MB-230"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MB-230",
+        "title": "Microsoft Dynamics 365 Customer Service Functional Consultant",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+        "guide_path": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+        "snapshot_path": "data\\objective-snapshots\\mb-230-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mb-230-official-status.json",
+        "previous_sha256": "02105f2bbafe2b5a53a2f55604a18cdd0af2d68c842cc5d285ac8abc41a52e7e",
+        "current_sha256": "e5925c65c9de7fad2e0d1d921564490a83ce02092b95ad95382775abd6352b38",
+        "previous_status_sha256": "a3ac151557316ac10fc8709a8bb476343735f7db03afb695d7a6ad9dd10b13b2",
+        "current_status_sha256": "4cf37ffbb9684b28047947f6cc9464d0e6c5ecef7e09d2dacd47be0e087c9c57",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of March 11, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 43,
+    "reachable": 42,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mb-230-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+      "checked_at": "2026-09-28T11:10:12.859785+00:00",
+      "health": {
+        "id": "mb-230-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+        "checked_at": "2026-09-28T11:10:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "0b2a7e0827f737c68ccddca3224ca181f587e58d8485dccedbdf9f29815784ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+      "sha256": "b20a422e19514dfa01ac289894de455b2c6d1ecbdf43ea7b3111284084674434",
+      "text_characters": 7917
+    },
+    {
+      "id": "mb-230-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+      "checked_at": "2026-09-28T11:10:12.860632+00:00",
+      "health": {
+        "id": "mb-230-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+        "checked_at": "2026-09-28T11:10:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "4187b4bbe8b6d90b54d293f0087a7c24b9c7208f91072104349ebaef1a66a760",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+      "sha256": "5bdda19d3352f6c274c8d54ed630d9f0f42abbc58e43d46bc4768888ecf2598b",
+      "text_characters": 4841
+    },
+    {
+      "id": "mb-230-path-cases",
+      "url": "https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/",
+      "checked_at": "2026-09-28T11:10:12.861146+00:00",
+      "health": {
+        "id": "mb-230-path-cases",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/",
+        "checked_at": "2026-09-28T11:10:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/",
+        "content_type": "text/html",
+        "page_title": "Manage cases, workloads, and service commitments in Dynamics 365 Customer Service - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "460946644b289e7e0c410f75ee81bff16f48ff32612aea09690e46d8fc97e05e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/",
+      "sha256": "4fdc6494baa7060117f7d27126ed175199802bb01dfe8d65a671bb9aa0f4b5d4",
+      "text_characters": 3019
+    },
+    {
+      "id": "mb-230-path-knowledge",
+      "url": "https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/",
+      "checked_at": "2026-09-28T11:10:13.293695+00:00",
+      "health": {
+        "id": "mb-230-path-knowledge",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/",
+        "content_type": "text/html",
+        "page_title": "Work with knowledge management in Dynamics 365 Customer Service - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "3578575aaa177970d55c94ed85472678ca16801ef548371edcdab4665589188f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/",
+      "sha256": "3413a0bf8e2098badd49a277fb46981b0a326e64c38fb55c1b2914400716ae1a",
+      "text_characters": 1926
+    },
+    {
+      "id": "mb-230-path-slas",
+      "url": "https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/",
+      "checked_at": "2026-09-28T11:10:13.338765+00:00",
+      "health": {
+        "id": "mb-230-path-slas",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/",
+        "content_type": "text/html",
+        "page_title": "Work with entitlements and service level agreements in Dynamics 365 Customer Service - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "26b6fa3be8bef22fe2ccc25f3ebd8ab66a5aa38f903b432b4ca54eb608fabb62",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/",
+      "sha256": "6a83e7359c55b6116948b710b4b6216cd0217eb2b41bf5f2c2a5ce9e5a6022c8",
+      "text_characters": 1698
+    },
+    {
+      "id": "mb-230-path-routing",
+      "url": "https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/",
+      "checked_at": "2026-09-28T11:10:13.339136+00:00",
+      "health": {
+        "id": "mb-230-path-routing",
+        "url": "https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/",
+        "content_type": "text/html",
+        "page_title": "Route and distribute work in Dynamics 365 Customer Service - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/",
+        "duration_signals": [],
+        "signal_fingerprint": "9876ea0b9e7c4f02a961ff1e5946fcbc031f14b37342d48caff8c2c42333688f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/",
+      "sha256": "79c39e59381b3b82e4ab1b3a2a0c3c4c3e6991fedb109b47a7e6faedfc050c93",
+      "text_characters": 1805
+    },
+    {
+      "id": "mb-230-path-productivity",
+      "url": "https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/",
+      "checked_at": "2026-09-28T11:10:13.477408+00:00",
+      "health": {
+        "id": "mb-230-path-productivity",
+        "url": "https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/",
+        "content_type": "text/html",
+        "page_title": "Help service reps be more productive in Dynamics 365 Customer Service - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "4c78fb2da99419f239b785a331d6c628892fc4d23e7c36e95089abcb50e42f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/",
+      "sha256": "83d2f178203911ae40e4359b372e96b99506d16391498a92b134f2cf45a295dd",
+      "text_characters": 3147
+    },
+    {
+      "id": "mb-230-path-extend",
+      "url": "https://learn.microsoft.com/en-us/training/paths/extend-customer-service/",
+      "checked_at": "2026-09-28T11:10:13.523147+00:00",
+      "health": {
+        "id": "mb-230-path-extend",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extend-customer-service/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/extend-customer-service/",
+        "content_type": "text/html",
+        "page_title": "Extend and analyze Dynamics 365 Customer Service - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/extend-customer-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "d54c871158c1aae652c6303c9e0a1b2f02ec5aa422499b3ff0d048314301861e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/extend-customer-service/",
+      "sha256": "35324690ca2b2db23b8d4629e1141ccefe0c5598c151a2140bf34a3f67c663ec",
+      "text_characters": 1833
+    },
+    {
+      "id": "mb-230-path-customer-voice",
+      "url": "https://learn.microsoft.com/en-us/training/paths/create-surveys/",
+      "checked_at": "2026-09-28T11:10:13.551104+00:00",
+      "health": {
+        "id": "mb-230-path-customer-voice",
+        "url": "https://learn.microsoft.com/en-us/training/paths/create-surveys/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/create-surveys/",
+        "content_type": "text/html",
+        "page_title": "Create surveys with Dynamics 365 Customer Voice - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/create-surveys/",
+        "duration_signals": [],
+        "signal_fingerprint": "dd3e978e597eec1a235c4fb66352fa3e744a538693af3ec9ac8b1eeccb24316d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/create-surveys/",
+      "sha256": "3d1bfbdd06433c265e34c84dc71f3aa25e623e7bd30600e43e5aa4a305cd46e1",
+      "text_characters": 1809
+    },
+    {
+      "id": "mb-230-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-230t01",
+      "checked_at": "2026-09-28T11:10:13.679824+00:00",
+      "health": {
+        "id": "mb-230-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-230t01",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-230t01",
+        "content_type": "text/html",
+        "page_title": "Course MB-230T01-A: Implement customer service solutions using Microsoft Dynamics 365 Customer Service - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/mb-230t01",
+        "duration_signals": [],
+        "signal_fingerprint": "46a3d394459f9872a680b5a53c68b421c574ad53965cce14d3f6ef9d4446c463",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-230t01",
+      "sha256": "b36270a2bc689e8e0a8c6bb1d3d64e2e14dfd0f7bdde3a3cb4bddcfe9e86cd81",
+      "text_characters": 1817
+    },
+    {
+      "id": "mb-230-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72",
+      "checked_at": "2026-09-28T11:10:13.722221+00:00",
+      "health": {
+        "id": "mb-230-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "d84cec994ca94072caa73b8559c9e14377e6e6a16f6d55b80a55b4aa0bdb0a6b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72",
+      "sha256": "d456a75593caaed9d6d149504de4f339cbf9e2a12f07d92af671b8f87c15be0a",
+      "text_characters": 0
+    },
+    {
+      "id": "mb-230-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/",
+      "checked_at": "2026-09-28T11:10:13.756957+00:00",
+      "health": {
+        "id": "mb-230-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/",
+        "content_type": "text/html",
+        "page_title": "Dynamics 365 Customer Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "df1477a698adbf6965cd7c047c5be01ba5f04056b366ea701ecf53da6a7a99bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/",
+      "sha256": "2144eb4cd48cff50890ca63b98e7d9c0192594c431c5913e5af2db36c82d92cc",
+      "text_characters": 3747
+    },
+    {
+      "id": "mb-230-pluralsight-extend",
+      "url": "https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand",
+      "checked_at": "2026-09-28T11:10:13.873719+00:00",
+      "health": {
+        "id": "mb-230-pluralsight-extend",
+        "url": "https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Dynamics 365 Customer Service: Build and Expand",
+        "canonical_url": "https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand",
+        "duration_signals": [],
+        "signal_fingerprint": "48b94c9e07d2f1f80ae583a7136949ea74868cb2d4e72faba8009847945363d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand",
+      "sha256": "9ac3a0b71ac1a449764a4202937d2bdac95a92ffe628872915490397c0fa29ab",
+      "text_characters": 3898
+    },
+    {
+      "id": "mb-230-udemy-sharma",
+      "url": "https://www.udemy.com/course/dynamics-365-customer-service/",
+      "checked_at": "2026-09-28T11:10:13.892179+00:00",
+      "health": {
+        "id": "mb-230-udemy-sharma",
+        "url": "https://www.udemy.com/course/dynamics-365-customer-service/",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/dynamics-365-customer-service/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-230-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:10:13.956810+00:00",
+      "health": {
+        "id": "mb-230-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:10:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:10:14.000707+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:10:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb230-arc",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records",
+      "checked_at": "2026-09-28T11:10:14.298564+00:00",
+      "health": {
+        "id": "mb230-arc",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records",
+        "checked_at": "2026-09-28T11:10:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records",
+        "content_type": "text/html",
+        "page_title": "Automatically create or update records in Dynamics 365 Customer Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records",
+        "duration_signals": [],
+        "signal_fingerprint": "71474901ee8eea99c577cf931885e3ceed3ad589eb344df34696bd7b7b62b8a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records",
+      "sha256": "f08d940a20fe3777f85a87695d9d8bd75e7e8e7367a16f916df05ca0f34e79e5",
+      "text_characters": 16218
+    },
+    {
+      "id": "mb230-sla",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/define-service-level-agreements",
+      "checked_at": "2026-09-28T11:10:14.568230+00:00",
+      "health": {
+        "id": "mb230-sla",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/define-service-level-agreements",
+        "checked_at": "2026-09-28T11:10:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/define-service-level-agreements",
+        "content_type": "text/html",
+        "page_title": "Configure service-level agreements in Dynamics 365 Customer Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/define-service-level-agreements",
+        "duration_signals": [],
+        "signal_fingerprint": "889094f7466376c478b8293de29b9cc5a04bbe489feb5babbe0def8a34620151",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/define-service-level-agreements",
+      "sha256": "a7541855c8c40c11898b4f68429d227f0a9129795f8fda056d2ceb5ff0a1fd03",
+      "text_characters": 14258
+    },
+    {
+      "id": "mb230-sla-pause",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-pause-conditions-sla",
+      "checked_at": "2026-09-28T11:10:14.625120+00:00",
+      "health": {
+        "id": "mb230-sla-pause",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-pause-conditions-sla",
+        "checked_at": "2026-09-28T11:10:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-pause-conditions-sla",
+        "content_type": "text/html",
+        "page_title": "Configure pause conditions for SLA-enabled entities",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-pause-conditions-sla",
+        "duration_signals": [],
+        "signal_fingerprint": "d167ec607494d0e520eeb3d832535deef2c1b4a9e7631b8e494a4a32d528c12d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-pause-conditions-sla",
+      "sha256": "6b41fe870aa396a26d189c1fb9701dbdf479aae3a9aa8022cc49af8e1019be21",
+      "text_characters": 3297
+    },
+    {
+      "id": "mb230-sla-calendar",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/change-schedules",
+      "checked_at": "2026-09-28T11:10:14.717078+00:00",
+      "health": {
+        "id": "mb230-sla-calendar",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/change-schedules",
+        "checked_at": "2026-09-28T11:10:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/change-schedules",
+        "content_type": "text/html",
+        "page_title": "Manage the impact of changes to customer service or holiday schedules of SLA KPIs.",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/change-schedules",
+        "duration_signals": [
+          "12 hours",
+          "5 hours",
+          "7 hours",
+          "8 hours"
+        ],
+        "signal_fingerprint": "52247aaa2211bcd61ea22e94d19333c08043e78ddad2d74ff546280cc3054bee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/change-schedules",
+      "sha256": "67edd715eddfd2f4b12de809c65c119f5ef5b2a2342dc0b5a64a853442f1db7f",
+      "text_characters": 7165
+    },
+    {
+      "id": "ab250-capacity",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+      "checked_at": "2026-09-28T11:10:14.835016+00:00",
+      "health": {
+        "id": "ab250-capacity",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+        "checked_at": "2026-09-28T11:10:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+        "content_type": "text/html",
+        "page_title": "Create and manage capacity profiles in Dynamics 365 Customer Service and Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "248d363d05b7f3183e6501847652e487823c6c2a285935c26c95503ed5240324",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+      "sha256": "ce352a92eb8f1d8e543ea43840def1613c05a5c71d0ba51177aba24de4f6facb",
+      "text_characters": 14427
+    },
+    {
+      "id": "mb230-routing",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing",
+      "checked_at": "2026-09-28T11:10:14.910884+00:00",
+      "health": {
+        "id": "mb230-routing",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing",
+        "checked_at": "2026-09-28T11:10:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing",
+        "content_type": "text/html",
+        "page_title": "Overview of unified routing",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing",
+        "duration_signals": [],
+        "signal_fingerprint": "f398f6c00e216757241df9c54cd0e101075ea30ed582f84af5e306c91ce8e54c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview-unified-routing",
+      "sha256": "f86bd4b1297f8b02de5702ef0936e5e121a71a276f15ce8bb53935c67cff3cb1",
+      "text_characters": 5332
+    },
+    {
+      "id": "mb230-diagnostics",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/unified-routing-diagnostics",
+      "checked_at": "2026-09-28T11:10:58.236696+00:00",
+      "health": {
+        "id": "mb230-diagnostics",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/unified-routing-diagnostics",
+        "checked_at": "2026-09-28T11:10:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/unified-routing-diagnostics",
+        "content_type": "text/html",
+        "page_title": "View diagnostics for unified routing (Dynamics 365 Customer Service)",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/unified-routing-diagnostics",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "96777e41aee45c4f72616ca152e770ce3de2bd1313a66743c06e7cf7d796b9f3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/unified-routing-diagnostics",
+      "sha256": "9aeda9196ae4a204237e3f01d589fc1188b3955c802474b7dadd6f49b370a3aa",
+      "text_characters": 9392
+    },
+    {
+      "id": "mb230-knowledge",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search",
+      "checked_at": "2026-09-28T11:10:15.112732+00:00",
+      "health": {
+        "id": "mb230-knowledge",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search",
+        "content_type": "text/html",
+        "page_title": "Configure knowledge management",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search",
+        "duration_signals": [],
+        "signal_fingerprint": "ce0cdfe128166f9c7fd45b72f9331372e7f550b86229c6d603341169c37e2d12",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search",
+      "sha256": "c635651f99cec87acace7442728c75cf447a0bae28033870a03dac61bbe719bc",
+      "text_characters": 13700
+    },
+    {
+      "id": "mb230-knowledge-filters",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/enable-knowledge-article-search-filters",
+      "checked_at": "2026-09-28T11:10:15.157545+00:00",
+      "health": {
+        "id": "mb230-knowledge-filters",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/enable-knowledge-article-search-filters",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/enable-knowledge-article-search-filters",
+        "content_type": "text/html",
+        "page_title": "Customize knowledge article search filters",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/enable-knowledge-article-search-filters",
+        "duration_signals": [],
+        "signal_fingerprint": "f0636cce59098e4f3ef647bf5daf86e75ead7f8e4cecaf319baddd33f5e659d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/enable-knowledge-article-search-filters",
+      "sha256": "2b60ec4fd8edd60897639a89c82125247e7fbd8d32c666a750fb6f3748db4012",
+      "text_characters": 9650
+    },
+    {
+      "id": "mb230-external",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-search-providers",
+      "checked_at": "2026-09-28T11:10:15.221985+00:00",
+      "health": {
+        "id": "mb230-external",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-search-providers",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-search-providers",
+        "content_type": "text/html",
+        "page_title": "Set up external search providers",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-search-providers",
+        "duration_signals": [],
+        "signal_fingerprint": "4a1ad09ebc9702dbdda03118fcc7d0fbcf1c332f97b3223862ae22a00f2e3b64",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-search-providers",
+      "sha256": "fb1db61ec99b88abcfdb94424c29b2cda6c61db7f90cda2f5e70a12bc5b567d1",
+      "text_characters": 3788
+    },
+    {
+      "id": "mb230-integrated",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/add-search-provider",
+      "checked_at": "2026-09-28T11:10:58.237909+00:00",
+      "health": {
+        "id": "mb230-integrated",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/add-search-provider",
+        "checked_at": "2026-09-28T11:10:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/add-search-provider",
+        "content_type": "text/html",
+        "page_title": "Manage integrated search providers",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/add-search-provider",
+        "duration_signals": [
+          "15 minutes",
+          "2 hours",
+          "2 hours and 15 minutes"
+        ],
+        "signal_fingerprint": "ec845406c105341656bbbe28e0bffb95ebe399a33e170e82057c5a9f3c1e2b44",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/add-search-provider",
+      "sha256": "8e17d561937badc439c7f0049783a61fb8c54f751e5701043a820882145ea9d1",
+      "text_characters": 9743
+    },
+    {
+      "id": "mb230-copilot-filters",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-filters",
+      "checked_at": "2026-09-28T11:10:15.401871+00:00",
+      "health": {
+        "id": "mb230-copilot-filters",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-filters",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-filters",
+        "content_type": "text/html",
+        "page_title": "Use Copilot filters",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-filters",
+        "duration_signals": [],
+        "signal_fingerprint": "49a3faac4204ac34a3009cdbb4d61478ce5dcf5546cba8de03f1abdbf0d18b04",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-filters",
+      "sha256": "9b404a32ce00088dc25dcfeb87b1d62df4fcabb0a264e7bf78ae9c0e6ec205e4",
+      "text_characters": 2683
+    },
+    {
+      "id": "mb230-copilot-pane",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/copilot-enable-help-pane",
+      "checked_at": "2026-09-28T11:10:15.478626+00:00",
+      "health": {
+        "id": "mb230-copilot-pane",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/copilot-enable-help-pane",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/copilot-enable-help-pane",
+        "content_type": "text/html",
+        "page_title": "Configure Copilot features in the help pane",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/copilot-enable-help-pane",
+        "duration_signals": [],
+        "signal_fingerprint": "7d047b6ce41a9f2d2589b8bcf42d1db938badc3c3a3fd6e2abe0923fcf234d29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/copilot-enable-help-pane",
+      "sha256": "282f4331fb0d54fd648d2c64e276786f91ceac1729e93479be75abb549c70146",
+      "text_characters": 20182
+    },
+    {
+      "id": "mb230-agent-resolution",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent",
+      "checked_at": "2026-09-28T11:10:15.541517+00:00",
+      "health": {
+        "id": "mb230-agent-resolution",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent",
+        "content_type": "text/html",
+        "page_title": "Set up Case Management Agent to resolve cases",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "9dfc77e371a50ffdf84d13e6e444142212eccdb6ffc5e1cd3f59e1d76c0594bf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent",
+      "sha256": "ba1cbf5b0ef38fb9830c99cd65b939df87969e5388e614b1445c6dcc41ff31ea",
+      "text_characters": 13408
+    },
+    {
+      "id": "mb230-agent-closure",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-closure",
+      "checked_at": "2026-09-28T11:10:15.783682+00:00",
+      "health": {
+        "id": "mb230-agent-closure",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-closure",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-closure",
+        "content_type": "text/html",
+        "page_title": "Set up Case Management Agent for case follow-up and closure",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-closure",
+        "duration_signals": [
+          "48 hours"
+        ],
+        "signal_fingerprint": "35f978242d6a9cd7712c4ec81f7a50eaebb8651e28213de0dc44b2b6ea8767cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-closure",
+      "sha256": "b333e9c32963a3e7bf2566d13ca78c508b5f75542abffb56bdce85531306be29",
+      "text_characters": 9162
+    },
+    {
+      "id": "ab250-knowledge",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+      "checked_at": "2026-09-28T11:10:15.797795+00:00",
+      "health": {
+        "id": "ab250-knowledge",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+        "checked_at": "2026-09-28T11:10:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+        "content_type": "text/html",
+        "page_title": "Manage Customer Knowledge Management Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "945df914d713db9becea6ccb7d64d9a7f76451e4920207ee9e1d65f4f39e11ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/admin-km-agent",
+      "sha256": "11709a2fdcc736f9eda0de960c889118427a5a541d65fc70ed5373b10eda488b",
+      "text_characters": 20007
+    },
+    {
+      "id": "mb230-teams",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-join-a-teams-call",
+      "checked_at": "2026-09-28T11:10:16.115763+00:00",
+      "health": {
+        "id": "mb230-teams",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-join-a-teams-call",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-join-a-teams-call",
+        "content_type": "text/html",
+        "page_title": "Set up Join a Teams call for customer service representatives",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-join-a-teams-call",
+        "duration_signals": [],
+        "signal_fingerprint": "8cace77351e10d7f5d6de02e431cad65c2355f82084bf5f5da731cf9fd4e1e10",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-join-a-teams-call",
+      "sha256": "9dde2cac14d7ad8e0070eb21e3b320a994051ee09b0c370761772af13673cfc5",
+      "text_characters": 2896
+    },
+    {
+      "id": "mb230-teams-use",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/join-a-teams-call",
+      "checked_at": "2026-09-28T11:10:16.127895+00:00",
+      "health": {
+        "id": "mb230-teams-use",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/join-a-teams-call",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/join-a-teams-call",
+        "content_type": "text/html",
+        "page_title": "Use Join a Teams call to enhance your customer conversations",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/join-a-teams-call",
+        "duration_signals": [],
+        "signal_fingerprint": "9ca1cf190c2e524d54733dfeb8f8aaab38b73618210b01608abf4c953bcb7021",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/join-a-teams-call",
+      "sha256": "9760080b6b4b4ca7cee4004e97171f2465f8ad8490abcfc68f614c968b172c21",
+      "text_characters": 3894
+    },
+    {
+      "id": "mb230-profiles",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview",
+      "checked_at": "2026-09-28T11:10:58.669963+00:00",
+      "health": {
+        "id": "mb230-profiles",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview",
+        "checked_at": "2026-09-28T11:10:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of experience profiles",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "9efb68f76957b2cbec4e6c8934611b998f5af05e9b597e47bdba57dda9d45c7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/overview",
+      "sha256": "910786d2db0874b514b66d28c537b71a3972b5ac12bb79871a7b0ddfa5c6ed4f",
+      "text_characters": 2823
+    },
+    {
+      "id": "mb230-sessions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/session-templates",
+      "checked_at": "2026-09-28T11:10:16.383806+00:00",
+      "health": {
+        "id": "mb230-sessions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/session-templates",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/session-templates",
+        "content_type": "text/html",
+        "page_title": "Manage session templates",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/session-templates",
+        "duration_signals": [],
+        "signal_fingerprint": "4ad38814e53090ce01b6b9cc266a859c225dd2d80ec75b2c9d5904914e1f8137",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/session-templates",
+      "sha256": "a1df44292368973c8154d015a8d1e001674f0c33cce29ca7bad85e7327717d2d",
+      "text_characters": 6480
+    },
+    {
+      "id": "mb230-macros",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/macros",
+      "checked_at": "2026-09-28T11:10:16.425614+00:00",
+      "health": {
+        "id": "mb230-macros",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/macros",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/macros",
+        "content_type": "text/html",
+        "page_title": "Configure macros to improve representative productivity",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/macros",
+        "duration_signals": [],
+        "signal_fingerprint": "4ed72c50f30c35a06eaea54ca9ffe470c56bf3cb8f1f4570c1d5ca906419a48b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/macros",
+      "sha256": "960699cfed57a268927a67deab356e9ee9f0493d8716362aeb2694297dbfcc3d",
+      "text_characters": 6383
+    },
+    {
+      "id": "mb230-inbox",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-inbox",
+      "checked_at": "2026-09-28T11:10:16.430840+00:00",
+      "health": {
+        "id": "mb230-inbox",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-inbox",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-inbox",
+        "content_type": "text/html",
+        "page_title": "Configure the inbox",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-inbox",
+        "duration_signals": [],
+        "signal_fingerprint": "2afcf6c6ab2a83690ccfbfcfd00443aecca1193aa4c002fe0147486e0bd4c088",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-inbox",
+      "sha256": "547a36609aecd41a9352728a075f54cefb677685fafe79b829bb1644733cf149",
+      "text_characters": 10220
+    },
+    {
+      "id": "mb230-survey",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/send-survey-flow",
+      "checked_at": "2026-09-28T11:10:16.714732+00:00",
+      "health": {
+        "id": "mb230-survey",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/send-survey-flow",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/send-survey-flow",
+        "content_type": "text/html",
+        "page_title": "Send a survey by using Power Automate",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/send-survey-flow",
+        "duration_signals": [],
+        "signal_fingerprint": "4d7d9256532ef54c37820f62f6bbca550b21836f5baece3a8503e69696582bba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/send-survey-flow",
+      "sha256": "6ff87dfd8814bf4c99626816bb960b6c3d4bc1d923ea4912b2242ccc76286aff",
+      "text_characters": 6177
+    },
+    {
+      "id": "mb230-survey-settings",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/distribution-settings",
+      "checked_at": "2026-09-28T11:10:16.728123+00:00",
+      "health": {
+        "id": "mb230-survey-settings",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/distribution-settings",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/distribution-settings",
+        "content_type": "text/html",
+        "page_title": "Survey distribution settings",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/distribution-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "62552721db5f3994086a2f477bc16a6a67e7e7320ccc060a9adabc6cd0ac2de1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/distribution-settings",
+      "sha256": "6206e8976963c112b2177b43e07c9b8ce334aef290beab519dbdccdae63d71b5",
+      "text_characters": 9478
+    },
+    {
+      "id": "mb230-survey-variables",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/personalize-survey",
+      "checked_at": "2026-09-28T11:10:16.728422+00:00",
+      "health": {
+        "id": "mb230-survey-variables",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/personalize-survey",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/personalize-survey",
+        "content_type": "text/html",
+        "page_title": "Personalize a survey",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/personalize-survey",
+        "duration_signals": [],
+        "signal_fingerprint": "e43c1c5d3f19961046ebeae691eb27f0f8b50bdd88261a89f7948de4cd4e7831",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/personalize-survey",
+      "sha256": "827d54fabf5b06d2220aa5acd034dde1772be3b7b88ba0def41c637509d0d927",
+      "text_characters": 6475
+    },
+    {
+      "id": "mb230-shadow-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/09/shadow-mode-case-management-agent/",
+      "checked_at": "2026-09-28T11:10:16.989969+00:00",
+      "health": {
+        "id": "mb230-shadow-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/09/shadow-mode-case-management-agent/",
+        "checked_at": "2026-09-28T11:10:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/09/shadow-mode-case-management-agent/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Shadow Mode in Case Management Agent: Validate Before You Automate",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/09/shadow-mode-case-management-agent/",
+        "duration_signals": [
+          "3 min",
+          "4 min",
+          "5 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "621762811fb7d8e46c4fb58b8d7dc5940496232df7a348be0bb2cb85be2ca94c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/09/shadow-mode-case-management-agent/",
+      "sha256": "61bfe23360f05dbb4f09484c0d4e438171473b67a383dcd476b5a50e9c39b976",
+      "text_characters": 6352
+    },
+    {
+      "id": "mb230-service-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/15/service-agent-microsoft-365-copilot-customer-service/",
+      "checked_at": "2026-09-28T11:10:17.077395+00:00",
+      "health": {
+        "id": "mb230-service-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/15/service-agent-microsoft-365-copilot-customer-service/",
+        "checked_at": "2026-09-28T11:10:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/15/service-agent-microsoft-365-copilot-customer-service/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Service Agent in Microsoft 365 Copilot: What's New for Dynamics 365",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/15/service-agent-microsoft-365-copilot-customer-service/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "870b64d7bcc61f76fb589a2de81a71af88748fc8ae10c32721441b2cc160c8e2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/07/15/service-agent-microsoft-365-copilot-customer-service/",
+      "sha256": "faaf569967dc08da26210bc8681b685856b9f7099d33fd9d6706d85e14c8a82b",
+      "text_characters": 8548
+    },
+    {
+      "id": "mb230-deprecations",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service",
+      "checked_at": "2026-09-28T11:10:58.237556+00:00",
+      "health": {
+        "id": "mb230-deprecations",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service",
+        "checked_at": "2026-09-28T11:10:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service",
+        "content_type": "text/html",
+        "page_title": "Deprecations in Dynamics 365 Customer Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service",
+        "duration_signals": [],
+        "signal_fingerprint": "00aeabdaf7fb3d3e4e1d166229cfcb923cd6fc96c9da33dcc271150a2df40d2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service",
+      "sha256": "004120bc066bdfacb957ddfcd26bba89cc4d161cdcae7558a8eeb39c999afb91",
+      "text_characters": 16791
+    },
+    {
+      "id": "mb230-conversation-diagnostics",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-conversation-diagnostics",
+      "checked_at": "2026-09-28T11:12:14.835730+00:00",
+      "health": {
+        "id": "mb230-conversation-diagnostics",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-conversation-diagnostics",
+        "checked_at": "2026-09-28T11:12:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-conversation-diagnostics",
+        "content_type": "text/html",
+        "page_title": "Configure conversation diagnostics",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-conversation-diagnostics",
+        "duration_signals": [],
+        "signal_fingerprint": "adf2a72bb18d6a0203fd3257df2ab9da0897057a762d485c23742af910690bb7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/configure-conversation-diagnostics",
+      "sha256": "ba325e0e764eacf4c9182f327a9f526ccb50b8ceb3ec09465048a6bdebf9f088",
+      "text_characters": 4977
+    },
+    {
+      "id": "mb230-record-analytics",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/rr-overview",
+      "checked_at": "2026-09-28T11:13:25.824189+00:00",
+      "health": {
+        "id": "mb230-record-analytics",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/rr-overview",
+        "checked_at": "2026-09-28T11:13:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/rr-overview",
+        "content_type": "text/html",
+        "page_title": "Overview of real-time analytics for record routing",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/rr-overview",
+        "duration_signals": [
+          "2 hours",
+          "2 hrs",
+          "24 hours"
+        ],
+        "signal_fingerprint": "d32a1ba27cf054d7e2b1613f7626724b0597e3140e7a53f0139a8c8b11c43f2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/rr-overview",
+      "sha256": "f94cc7c84aba2a830a956b98b12ab470d47a5de7605be1646b17ab760098eefb",
+      "text_characters": 5767
+    }
+  ],
+  "added_source_ids": [
+    "mb230-arc",
+    "mb230-sla",
+    "mb230-sla-pause",
+    "mb230-sla-calendar",
+    "mb230-routing",
+    "mb230-record-analytics",
+    "mb230-diagnostics",
+    "mb230-deprecations",
+    "mb230-conversation-diagnostics",
+    "mb230-knowledge",
+    "mb230-knowledge-filters",
+    "mb230-external",
+    "mb230-integrated",
+    "mb230-copilot-filters",
+    "mb230-copilot-pane",
+    "mb230-agent-resolution",
+    "mb230-agent-closure",
+    "mb230-teams",
+    "mb230-teams-use",
+    "mb230-profiles",
+    "mb230-sessions",
+    "mb230-macros",
+    "mb230-inbox",
+    "mb230-survey",
+    "mb230-survey-settings",
+    "mb230-survey-variables",
+    "mb230-shadow-blog",
+    "mb230-service-blog"
+  ],
+  "findings": [
+    {
+      "id": "mb230-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Historical snapshot paraphrased two detailed bullets",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "All 50 meanings match the same March 11 baseline; 48 bullets are byte-for-byte text matches.",
+      "recommendation": "Archive old objective/status bytes and audit references; accept full canonical extraction.",
+      "disposition": "applied",
+      "source_id": "mb-230-blueprint",
+      "resolution": "Archive old objective/status bytes and audit references; accept full canonical extraction."
+    },
+    {
+      "id": "mb230-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Email intake needs active queue-linked rules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/automatically-create-update-records",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Draft rules do not run and queue scopes cannot be converted in place.",
+      "recommendation": "Add concrete setup and troubleshooting boundaries.",
+      "disposition": "applied",
+      "source_id": "mb230-arc",
+      "resolution": "Add concrete setup and troubleshooting boundaries."
+    },
+    {
+      "id": "mb230-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Article relevance controls are not record isolation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-knowledge-management-embedded-knowledge-search",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "KnowledgeArticle boundary is the environment with table privileges; draft/internal content is not a secrets boundary.",
+      "recommendation": "Separate search filters from authorization and test actual access paths.",
+      "disposition": "applied",
+      "source_id": "mb230-knowledge",
+      "resolution": "Separate search filters from authorization and test actual access paths."
+    },
+    {
+      "id": "mb230-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Integrated search copies content rather than only federating",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/add-search-provider",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Static sitemap content is ingested on a refresh schedule.",
+      "recommendation": "Compare copied/federated sources, freshness and governance.",
+      "disposition": "applied",
+      "source_id": "mb230-integrated",
+      "resolution": "Compare copied/federated sources, freshness and governance."
+    },
+    {
+      "id": "mb230-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Teams handoff does not end an existing voice call",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/join-a-teams-call",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The representative must end the existing call; recordings are separate Microsoft 365 artifacts.",
+      "recommendation": "Add prerequisites and transition/retention tests.",
+      "disposition": "applied",
+      "source_id": "mb230-teams-use",
+      "resolution": "Add prerequisites and transition/retention tests."
+    },
+    {
+      "id": "mb230-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "SLA pause/resume can replace the runtime instance",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-pause-conditions-sla",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Resume cancels the old instance and creates a new instance under effective pause precedence.",
+      "recommendation": "Correct integrated scenario and teach correlation rather than invariant instance ID.",
+      "disposition": "applied",
+      "source_id": "mb230-sla-pause",
+      "resolution": "Correct integrated scenario and teach correlation rather than invariant instance ID."
+    },
+    {
+      "id": "mb230-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Calendar edits do not update every active deadline immediately",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/change-schedules",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specific recalculation events use current schedules.",
+      "recommendation": "Add original holiday/pause example and in-flight transition planning.",
+      "disposition": "applied",
+      "source_id": "mb230-sla-calendar",
+      "resolution": "Add original holiday/pause example and in-flight transition planning."
+    },
+    {
+      "id": "mb230-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Capacity is an assignment allowance with overrides",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/capacity-profiles",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Manual assignment, reset behavior and custom limits can leave open work beyond the configured allowance.",
+      "recommendation": "Add negative-capacity and daily-reset examples; avoid absolute overload guarantee.",
+      "disposition": "applied",
+      "source_id": "ab250-capacity",
+      "resolution": "Add negative-capacity and daily-reset examples; avoid absolute overload guarantee."
+    },
+    {
+      "id": "mb230-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Legacy diagnostics and suggestion features are retired",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specific product retirement notice supersedes older enablement references.",
+      "recommendation": "Use current telemetry, record analytics and current Copilot/Teams guidance.",
+      "disposition": "applied",
+      "source_id": "mb230-deprecations",
+      "resolution": "Use current telemetry, record analytics and current Copilot/Teams guidance."
+    },
+    {
+      "id": "mb230-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current tab does not replace anchor session context",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/macros",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Additional tab records are separate from session anchor values.",
+      "recommendation": "Add wrong-record prevention and partial-replay example.",
+      "disposition": "applied",
+      "source_id": "mb230-macros",
+      "resolution": "Add wrong-record prevention and partial-replay example."
+    },
+    {
+      "id": "mb230-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Shadow evaluation has preview and consumption boundaries",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/set-up-case-resolution-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Setup documentation labels simulation/shadow preview and metered; configured confirmation remains a control.",
+      "recommendation": "Add bounded evaluation worksheet without enabling tenant actions or claiming GA execution proof.",
+      "disposition": "applied",
+      "source_id": "mb230-agent-resolution",
+      "resolution": "Add bounded evaluation worksheet without enabling tenant actions or claiming GA execution proof."
+    },
+    {
+      "id": "mb230-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Response limits and anonymous labels do not implement invitation policy",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/customer-voice/distribution-settings",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-230"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Generic links, saved contacts and per-invitation response behavior differ.",
+      "recommendation": "Add stable invitation keys, distribution-route testing and correct outcome denominators.",
+      "disposition": "applied",
+      "source_id": "mb230-survey-settings",
+      "resolution": "Add stable invitation keys, distribution-route testing and correct outcome denominators."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mb230-shadow-blog",
+      "decision": "accepted-bounded",
+      "author": "Madhuri Somara, Peter Bian and Saurabh Gupta",
+      "published_on": "2026-07-09",
+      "notes": "Complete July 9 main article read. Accept original evaluation worksheet; current product pages label shadow mode preview and metered, so do not adopt production-readiness/support guarantee."
+    },
+    {
+      "source_id": "mb230-service-blog",
+      "decision": "accepted-bounded",
+      "author": "Saurabh Gupta and Rushil Vora",
+      "published_on": "2026-07-15",
+      "notes": "Complete July 15 main article read. Accept optional assistance/draft/action comparison. Roadmap, exact tool count and licensing claims not generalized into exam requirements."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "31 local assertions: original business calendar/pause, capacity, case/work-item counts, proposal quality, survey response/idempotency and module-overlap/catalog checks."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No tenant configuration, agent execution, survey/email/Teams communication, telemetry export, Power Automate flow, paid course or assessment execution.",
+    "31 local assertions cover original calendar/arithmetic/count/identity and public catalog examples; they are not a Dynamics runtime, concurrency, delivery, billing or performance test.",
+    "Long product pages read selectively; complete connector, source, channel, role and regional matrices and linked procedures not audited.",
+    "Stale credential banner retained as discrepancy. Preview status and configured confirmation requirements control over broader blog/runtime wording; live tenant behavior remains to be validated.",
+    "Udemy direct fetch blocked and indexed metadata conflicts with earlier observation; current provider runtime is not established. Partner/practice access and other commercial catalog gaps not fully rechecked.",
+    "Same-context AI review; independent human review and live lab evidence remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "calendar_capacity_routing_evaluation_survey_identity_catalog_assertions": 31,
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/mb-230-2026-09-01-official-objectives.txt",
+    "sha256": "02105f2bbafe2b5a53a2f55604a18cdd0af2d68c842cc5d285ac8abc41a52e7e",
+    "note": "50 semantically unchanged objectives; 48 exact and two prior paraphrases restored. Complete source extraction now accepted."
+  },
+  "snapshot_comparison": {
+    "objective_count": 50,
+    "exactly_equal": 48,
+    "prior_paraphrases_restored": [
+      {
+        "previous": "Configure suggested contacts in Microsoft Teams, including AI and rules-based suggestions",
+        "current": "Configure suggested contacts in Microsoft Teams, including by using AI and rules-based suggestions"
+      },
+      {
+        "previous": "Create and manage SLA items including KPIs, warning actions, success actions, and applicability",
+        "current": "Create and manage SLA items including key performance indicators (KPIs), warning actions, success actions, and applicability"
+      }
+    ],
+    "baseline_change": false
+  },
+  "public_learning_path_modules": {
+    "cases": [
+      "Transform service delivery with AI in Dynamics 365",
+      "Manage cases with Copilot Service workspace",
+      "Manage case workloads with Dynamics 365 Customer Service queues",
+      "Work with service-level agreements in Dynamics 365 Customer Service",
+      "Create and manage entitlements in Microsoft Dynamics 365 Customer Service"
+    ],
+    "knowledge": [
+      "Configure knowledge management in Dynamics 365 Customer Service and Contact Center",
+      "Search and filter knowledge articles by using Dynamics 365 Customer Service",
+      "Use knowledge articles to resolve Dynamics 365 Customer Service cases"
+    ],
+    "slas": [
+      "Work with service-level agreements in Dynamics 365 Customer Service",
+      "Create and manage entitlements in Microsoft Dynamics 365 Customer Service"
+    ],
+    "routing": [
+      "Set up unified routing in Dynamics 365 Customer Service",
+      "Configure work classification and assignment in Dynamics 365 Customer Service",
+      "Use skill-based routing in Dynamics 365 Customer Service"
+    ],
+    "productivity": [
+      "Configure experience profiles in Dynamics 365 Customer Service",
+      "Enhance representative productivity with Customer Service workspace",
+      "Manage cases with Copilot Service workspace",
+      "Enhance service representative productivity and personalization in Omnichannel for Customer Service",
+      "Enhance service representative productivity and personalization in Customer Service Hub",
+      "Configure scripts, macros, and productivity tools in Dynamics 365 Customer Service",
+      "Create smart assist solutions in Contact Center for Dynamics 365 Customer Service"
+    ],
+    "extend": [
+      "Create custom apps for Dynamics 365 Customer Service",
+      "Analyze Dynamics 365 Customer Service with reports and dashboards",
+      "Capture customer feedback with Dynamics 365 Customer Voice"
+    ],
+    "customer-voice": [
+      "Capture customer feedback with Dynamics 365 Customer Voice",
+      "Create customer surveys with Dynamics 365 Customer Voice",
+      "Send Dynamics 365 Customer Voice surveys",
+      "Automate Dynamics 365 Customer Voice surveys with Power Automate",
+      "Embed surveys in your website with Dynamics 365 Customer Voice",
+      "Create customer Power BI reports in Dynamics 365 Customer Voice"
+    ]
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "mb-230-udemy-sharma",
+      "checked_on": "2026-09-28",
+      "method": "Public browser-indexed provider page, crawled approximately two months earlier; direct fetch blocked",
+      "observed_metadata": {
+        "instructor": "Neeraj Sharma",
+        "updated": "June 2026",
+        "sections": 15,
+        "lectures": 23,
+        "runtime": "3h38"
+      },
+      "limitation": "Conflicts with prior August 2026/4h16 observation; live current catalog not established. No paid lessons accessed."
+    }
+  ]
+}

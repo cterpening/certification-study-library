@@ -70,6 +70,8 @@ Access-blocked course pages returned HTTP 403 to the automated client. An access
 
 ## MB-230 coverage record
 
+The September 28 [deep review](research/2026-09-28-mb-230-deep-review.md) maps 50 detailed objectives. Entire guide and 50 semantically unchanged objectives mapped across ten groups; restore canonical wording with historical snapshots preserved. Add six worked examples, ten labs, 48 answered checks and two bounded blog tasks. Repair SLA history, capacity and retired-feature guidance; clarify knowledge, routing evidence, macro context, agent evaluation and survey identity. Refresh overlapping learning paths and catalog limits. Thirty-one local assertions passed; no tenant or paid-content execution. Independent human review pending. Current guide citations: 43 registered, 42 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Manage cases in Customer Service | Section 1, all integrated scenarios, and Labs 1–5 |

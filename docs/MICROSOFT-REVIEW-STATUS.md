@@ -4,9 +4,9 @@ As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 21 have review work or unresolved blockers; 7 are eligible for review now.
+50 guides; 20 have review work or unresolved blockers; 6 are eligible for review now.
 
-Next batch: MB-230, MB-310, MB-500.
+Next batch: MB-310, MB-500, MB-800.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
@@ -51,7 +51,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [AZ-104](../guides/AZ-104-microsoft-azure-administrator.md) | reviewed | 2026-09-28 | 2026-10-12 | offline-only |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-09-27 | 2026-10-14 | offline-only |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-09-27 | 2026-10-16 | offline-only |
-| [MB-230](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [MB-310](../guides/MB-310-microsoft-dynamics-365-finance-functional-consultant.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [MB-500](../guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [MB-800](../guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md) | pending | Pending | 2026-09-28 | not-recorded |
@@ -60,6 +59,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-900](../guides/AZ-900-microsoft-azure-fundamentals.md) | reviewed | 2026-09-28 | 2026-10-26 | offline-only |
 | [DP-900](../guides/DP-900-microsoft-azure-data-fundamentals.md) | reviewed | 2026-09-28 | 2026-10-26 | offline-only |
+| [MB-230](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md) | reviewed | 2026-09-28 | 2026-10-26 | offline-only |
 | [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | reviewed | 2026-09-27 | 2026-10-27 | offline-only |
 | [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | reviewed | 2026-09-27 | 2026-10-27 | offline-only |
 

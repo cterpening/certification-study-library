@@ -1170,15 +1170,30 @@ Both main articles were read; linked videos, integrations, tenant behavior and p
 
 ### MB-230 — Microsoft Dynamics 365 Customer Service Functional Consultant
 
-- Official objective map (1–2 hours): [MB-230 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230), using the March 11, 2026 baseline despite stale October 2025 text on the credential surface
-- Selected official paths (29 hours 2 minutes before practice): [cases](https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/), [knowledge](https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/), [SLAs](https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/), [routing](https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/), [representative productivity](https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/), [extension](https://learn.microsoft.com/en-us/training/paths/extend-customer-service/), and [Customer Voice](https://learn.microsoft.com/en-us/training/paths/create-surveys/)
-- Instructor-led course (4 days): [MB-230T01-A](https://learn.microsoft.com/en-us/training/courses/mb-230t01)
-- Free official readiness check (45–90 minutes plus remediation): [MB-230 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72)
-- Focused subscription supplement (47 minutes): [Pluralsight Customer Service: Build and Expand](https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand), current May 2026 but not a complete exam path
-- Current hands-on marketplace supplement (4 hours 16 minutes): [Udemy Dynamics 365 Customer Service Expert](https://www.udemy.com/course/dynamics-365-customer-service/), updated August 2026; gap-check routing, workspace and Customer Voice against the official guide
-- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); use the four-day official-course pattern only for planning, then sign in to verify the exact current event, published start/end time, seats and prerequisites
+Resource details from the [MB-230 guide](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one primary route and build complete case/SLA/routing/workspace/feedback journeys. The official paths include useful adjacent modules, so select against the current blueprint. No exact current O'Reilly, MeasureUp or Whizlabs MB-230 product was independently verified on September 1, 2026. Listings centered on hundreds or thousands of “exam questions” were deliberately excluded; reject recalled content and pass guarantees.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build complete case/SLA/routing/workspace journeys, and add another resource only for a measured gap.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MB-230 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230) | Free | 1–2 hours to map objectives |
+| [Work with cases](https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/) | Free | 5 modules; plan 12–20 hours with tenant practice |
+| [Knowledge Management Solutions](https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/) | Free | 3 modules; plan 5–8 hours with practice |
+| [Entitlements and SLAs](https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/) | Free | 2 modules, also present in the cases path; plan 5–8 hours with clock tests |
+| [Route and distribute work](https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/) | Free | 3 modules; plan 8–14 hours with current telemetry/routing practice |
+| [Help service reps be more productive](https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/) | Free | 7 modules; plan 10–16 hours with workspace practice; mixed newer and legacy contexts |
+| [Extend Customer Service](https://learn.microsoft.com/en-us/training/paths/extend-customer-service/) | Free | 3 modules; now Extend and analyze Customer Service; plan 4–7 hours with solution work |
+| [Create surveys with Customer Voice](https://learn.microsoft.com/en-us/training/paths/create-surveys/) | Free | 6 modules; select relevant material or plan 8–12 hours with automation |
+| [MB-230T01-A course](https://learn.microsoft.com/en-us/training/courses/mb-230t01) | Paid/provider-dependent | 4 instructor days; English |
+| [Free MB-230 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72) | Free | 45–90 minutes plus review |
+| [Dynamics 365 Customer Service documentation](https://learn.microsoft.com/en-us/dynamics365/customer-service/) | Free | 10–25 hours selected implementation/troubleshooting |
+| [Pluralsight: Customer Service Build and Expand](https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand) | Subscription/trial | 47 minutes; Vovwe Enyoyi, May 6, 2026; extension supplement, not a complete exam path |
+| [Udemy: Dynamics 365 Customer Service Expert](https://www.udemy.com/course/dynamics-365-customer-service/) | Paid | Public indexed view: 3h38, 15 sections/23 lectures, June 2026; differs from the earlier August/4h16 listing. Direct access blocked; confirm current metadata and objective gaps |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the four-day official-course pattern for planning; verify the signed-in event’s published start/end time |
+
+The seven current paths contain **29 module placements and 25 distinct modules**: the SLA and entitlement modules appear in both cases and SLA paths, case management appears in productivity too, and Customer Voice feedback appears in both extension and survey paths. Public pages no longer expose the earlier duration totals; do not use the old 29h02 sum as current or add overlapping modules twice. Practice-time ranges here are planning estimates, not provider runtimes. Allow roughly **60–100 hours** for a new practitioner to complete a primary route, build the labs and remediate the Practice Assessment. The earlier search did not verify an exact O’Reilly, MeasureUp or Whizlabs MB-230 product; that market-wide search was not repeated in this review. Listings centered on hundreds or thousands of “exam questions” were excluded. Reject recalled live content, “valid questions” and pass guarantees.
+
+Current catalog inspection covers public path/course metadata and selected outlines, not complete lessons. Direct Udemy access was blocked; the browser copy was indexed about two months earlier and conflicts with the prior observation. The partner page returned a login shell, and the assessment endpoint returned no substantive content. Confirm access, current duration and coverage before paying or reserving study time.
 
 ### MB-310 — Microsoft Dynamics 365 Finance Functional Consultant
 

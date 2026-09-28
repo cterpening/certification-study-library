@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review MB-230’s 50 objectives; add six worked examples, ten labs, 48 answered checks and two useful blog tasks. Refresh SLA/capacity, knowledge access, agent previews, routing evidence, macro/survey behavior and overlapping learning paths. See the [MB-230 report](docs/research/2026-09-28-mb-230-deep-review.md).
+
 - September 28, 2026: deeply review DP-900’s 30 objectives; add six worked exercises, eight labs, 30 answered checks and two useful blog tasks. Fix SQL identity/grain examples, clarify Cosmos product boundaries and refresh Fabric, Power BI and learning catalogs. See the [DP-900 report](docs/research/2026-09-28-dp-900-deep-review.md).
 
 - September 28, 2026: deeply review AZ-900’s 57 objectives; add six worked examples, seven labs, 30 answered checks and three useful blog exercises. Refresh responsibility, billing, storage, identity and governance distinctions and learning catalogs. See the [AZ-900 report](docs/research/2026-09-28-az-900-deep-review.md).
