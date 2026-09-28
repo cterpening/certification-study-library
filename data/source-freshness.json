@@ -4,6 +4,361 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-dp800-deep-review",
+      "title": "DP-800 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DP-800"
+      ],
+      "results": [
+        {
+          "exam_code": "DP-800",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+          "baseline_sha256": "d2099f19514c043dd3062ae00e72fc3212ba5bc8fa74c5a155af61787cebc1fb",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "73 October objectives mapped in eleven groups; March baseline retained and weights unchanged. Correct CES-removal note using live bullets. Credential lists ten languages and 120 minutes; course is three days."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Complete guide read. Targeted SQL/Fabric, RLS, DAB 2.0, Change Tracking/CES/Functions, external model, chunks, vectors and REST documentation reviewed; ten synthetic assertions and one JSON parse only."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "DAB 2.0 release and current vector/CES scope checked against product docs. Preserve platform-specific names, preview limits and month-only AMQP deadline; schedule dimension and protocol follow-ups."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide links registered and fetched. Public course/path metadata, eleven-lab index, seven-session Reactor schedule, four sample READMEs, Pluralsight listings and two blogs reviewed. Path durations historical; O'Reilly/Udemy blocked; practice shells and paid lessons not reviewed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Repair missing RLS update block, untrusted session-context assumptions, external-model completion claim and DAB auth/role defaults. Bound vector dimension documentation disagreement; distinguish SQL authorization from filtered ANN recall and guarded embedding writes from stale completion."
+            }
+          },
+          "findings": [
+            {
+              "id": "dp800-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Live October objectives retain CES",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The currently published change-mechanism objective includes CES; earlier broad-sweep removal wording is no longer supported.",
+              "recommendation": "Correct guide and maintenance action; retain accepted March snapshot.",
+              "disposition": "applied",
+              "source_id": "dp-800-blueprint",
+              "resolution": "Correct guide and maintenance action; retain accepted March snapshot."
+            },
+            {
+              "id": "dp800-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Language availability expanded",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current credential lists ten languages, 120 minutes.",
+              "recommendation": "Replace English-only statement and retain language-specific recheck.",
+              "disposition": "applied",
+              "source_id": "dp-800-certification-page",
+              "resolution": "Replace English-only statement and retain language-specific recheck."
+            },
+            {
+              "id": "dp800-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "RLS writes need an update block",
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A filter and AFTER INSERT block do not prevent moving an existing visible row to another tenant.",
+              "recommendation": "Add AFTER UPDATE block and original tenant 7-to-8 example with denied-update lab.",
+              "disposition": "applied",
+              "source_id": "dp-300-doc-42",
+              "resolution": "Add AFTER UPDATE block and original tenant 7-to-8 example with denied-update lab."
+            },
+            {
+              "id": "dp800-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Session context is not authenticated identity",
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-set-session-context-transact-sql?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Any user can set their own session context; read_only freezes a value without validating its initial provenance.",
+              "recommendation": "Require trusted validated identity, restricted direct DB access and connection initialization.",
+              "disposition": "applied",
+              "source_id": "dp800-session-context",
+              "resolution": "Require trusted validated identity, restricted direct DB access and connection initialization."
+            },
+            {
+              "id": "dp800-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "DAB 2.0 changes authentication and inheritance defaults",
+              "url": "https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-2-0",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New Unauthenticated configuration ignores JWTs; role inheritance and OBO have explicit scope/cache requirements.",
+              "recommendation": "Add default, one-role inheritance, autoentity, OBO and runtime-cache boundaries; lab and answers.",
+              "disposition": "applied",
+              "source_id": "dp800-dab2",
+              "resolution": "Add default, one-role inheritance, autoentity, OBO and runtime-cache boundaries; lab and answers."
+            },
+            {
+              "id": "dp800-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Claim propagation must match the RLS predicate",
+              "url": "https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-sql-row-level-security",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The SQL session-context option and claim keys must match the identity contract; a preferred_username example is not a tenant_id mapping.",
+              "recommendation": "Add explicit claim/predicate contract and negative test.",
+              "disposition": "applied",
+              "source_id": "dp800-dab-rls",
+              "resolution": "Add explicit claim/predicate contract and negative test."
+            },
+            {
+              "id": "dp800-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Expired progress requires reconciliation",
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/work-with-change-tracking-sql-server?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A saved version older than minimum valid version cannot enumerate a complete retained change set; validation/enumeration need a consistent snapshot.",
+              "recommendation": "Add 12/15/20 example, baseline/deletion reconciliation and transaction scope.",
+              "disposition": "applied",
+              "source_id": "dp-800-work-with-change-tracking",
+              "resolution": "Add 12/15/20 example, baseline/deletion reconciliation and transaction scope."
+            },
+            {
+              "id": "dp800-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "CES target names and retirement differ by platform",
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/change-event-streaming/amqp-deprecation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Azure SQL/Fabric use AzureEventHubs for new groups; SQL Server/MI retain ApacheKafka name pending update; existing AMQP groups end in April 2027.",
+              "recommendation": "Clarify names, drain/migration risks and month-only deadline; add two follow-ups.",
+              "disposition": "applied",
+              "source_id": "dp-800-amqp-deprecation-notice",
+              "resolution": "Clarify names, drain/migration risks and month-only deadline; add two follow-ups."
+            },
+            {
+              "id": "dp800-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SQL trigger retries can stop tracking a row",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current documentation says five consecutive function failures cause that row to be ignored for future changes; polling coalesces repeated changes.",
+              "recommendation": "Add reconciliation/monitoring and version-specific recovery, without inventing a dead-letter queue or command.",
+              "disposition": "applied",
+              "source_id": "dp-800-azure-functions-sql-trigger",
+              "resolution": "Add reconciliation/monitoring and version-specific recovery, without inventing a dead-letter queue or command."
+            },
+            {
+              "id": "dp800-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "External model objects currently support embeddings",
+              "url": "https://learn.microsoft.com/en-us/sql/t-sql/statements/create-external-model-transact-sql?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CREATE EXTERNAL MODEL currently supports MODEL_TYPE EMBEDDINGS.",
+              "recommendation": "Remove completion-model object claim and separate completion application/REST calls.",
+              "disposition": "applied",
+              "source_id": "dp-800-create-external-model",
+              "resolution": "Remove completion-model object claim and separate completion application/REST calls."
+            },
+            {
+              "id": "dp800-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Chunk size is character-based",
+              "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-chunks-transact-sql?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FIXED chunk length is characters and overlap is a percentage, not model tokens.",
+              "recommendation": "Add 1000-character/20-percent example and token-budget qualification.",
+              "disposition": "applied",
+              "source_id": "dp-800-ai-generate-chunks",
+              "resolution": "Add 1000-character/20-percent example and token-budget qualification."
+            },
+            {
+              "id": "dp800-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Embedding maintenance needs a version contract",
+              "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-embeddings-transact-sql?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Generation is external work; an old worker result can arrive after source text or required model changes.",
+              "recommendation": "Replace hot synchronous update example with conditional source-hash/model write; preserve deletion and stale-result reconciliation.",
+              "disposition": "applied",
+              "source_id": "dp-800-ai-generate-embeddings",
+              "resolution": "Replace hot synchronous update example with conditional source-hash/model write; preserve deletion and stale-result reconciliation."
+            },
+            {
+              "id": "dp800-deep-13",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Vector dimension documentation differs",
+              "url": "https://learn.microsoft.com/en-us/sql/sql-server/sql-server-2025-release-notes?view=sql-server-ver17",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Release notes describe float16 preview up to 3996, while datatype documentation gives 1998.",
+              "recommendation": "Preserve conservative shared bound and explicit engine/base-type/build/driver verification; schedule clarification.",
+              "disposition": "applied",
+              "source_id": "dp800-sql-release",
+              "resolution": "Preserve conservative shared bound and explicit engine/base-type/build/driver verification; schedule clarification."
+            },
+            {
+              "id": "dp800-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Approximation permission does not force an ANN plan",
+              "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-search-transact-sql?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current VECTOR_SEARCH can select exact search or fall back without a compatible ANN index; latest index/query forms have platform-specific constraints.",
+              "recommendation": "Clarify v3 scope, DML/filter behavior and plan verification; add authorized recall and deterministic exact baseline.",
+              "disposition": "applied",
+              "source_id": "dp-800-vector-search",
+              "resolution": "Clarify v3 scope, DML/filter behavior and plan verification; add authorized recall and deterministic exact baseline."
+            },
+            {
+              "id": "dp800-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SQL security does not automatically secure mirrored copies",
+              "url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RLS, masking and sensitivity labels do not propagate to mirrored OneLake data; columnstore tables have mirroring limitations.",
+              "recommendation": "Separate source SQL controls, copied-data permissions and Fabric table/index support.",
+              "disposition": "applied",
+              "source_id": "dp700-mirror-sql",
+              "resolution": "Separate source SQL controls, copied-data permissions and Fabric table/index support."
+            },
+            {
+              "id": "dp800-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "REST success needs application-level validation",
+              "url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?view=sql-server-ver17",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-800"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Credential REFERENCES permission, redirect restrictions and HTTP/body outcomes matter beyond SQL execution.",
+              "recommendation": "Add permission and status/body boundaries and answered checks.",
+              "disposition": "applied",
+              "source_id": "dp-800-sp-invoke-external-rest-endpoint",
+              "resolution": "Add permission and status/body boundaries and answered checks."
+            }
+          ],
+          "notes": "Whole guide read and all 73 October objectives in eleven groups mapped; March 12 baseline retained. Correct stale CES-removal and English-only statements, RLS update protection, embedding-model scope and DAB 2.0 identity defaults. Add five worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify change retention/retries, embedding version guards, vector retrieval/evaluation and Fabric mirroring boundaries. Ten synthetic assertions and one JSON parse passed; no SQL, DAB or Azure execution. Three research checkpoints added; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-dp-800-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 16,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-dp750-deep-review",
       "title": "DP-750 complete guide and learning-content review",
       "rubric_version": 1,

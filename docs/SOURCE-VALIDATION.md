@@ -529,6 +529,8 @@ The review maps every March 11, 2026 subobjective to an environment, governance,
 
 ## DP-800 coverage record
 
+The September 27 [deep review](research/2026-09-27-dp-800-deep-review.md) maps 73 detailed objectives. Whole guide read and all 73 October objectives in eleven groups mapped; March 12 baseline retained. Correct stale CES-removal and English-only statements, RLS update protection, embedding-model scope and DAB 2.0 identity defaults. Add five worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify change retention/retries, embedding version guards, vector retrieval/evaluation and Fabric mirroring boundaries. Ten synthetic assertions and one JSON parse passed; no SQL, DAB or Azure execution. Three research checkpoints added; human review pending. Current guide citations: 94 registered, 92 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Design and develop database solutions | Sections 1–2, all integrated scenarios, and Labs 1–2 |

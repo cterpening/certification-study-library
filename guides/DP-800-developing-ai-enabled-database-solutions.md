@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # DP-800 Developing AI-Enabled Database Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). The [official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). The [official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
 
-**Current baseline:** Skills measured as of March 12, 2026; official English study-guide page last updated March 11, 2026.<br>
-**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The revision uses ANN versus KNN, removes CES from the data-change orchestration bullet, and updates columnstore/Copilot wording. Domain weights are unchanged. Retain CES as related implementation context; distinguish the revised exam terminology from the earlier ENN wording. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800).<br>
+**Current baseline:** Skills measured as of March 12, 2026; the accepted snapshot records the March 11 page update. The newly fetched October version remains separate preparation until its effective date.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The fetched revision uses ANN versus KNN and updates columnstore/Copilot wording. **CES remains explicitly listed** in the data-change objective on the September 18 version of the page; this corrects the earlier removal note. Domain weights are unchanged. Distinguish revised search terminology from the earlier ENN wording. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800).<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
-**Exam page:** [Microsoft Certified: SQL AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/) · 120-minute assessment · English only on the page checked.<br>
+**Exam page:** [Microsoft Certified: SQL AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/) · 120-minute assessment · ten listed languages: English, Japanese, Simplified and Traditional Chinese, Korean, German, French, Italian, Brazilian Portuguese and Spanish. Check language-specific revision timing when booking.<br>
 **Official course:** [DP-800T00 Develop AI-enabled database solutions](https://learn.microsoft.com/en-us/training/courses/dp-800t00) · three instructor-led days.<br>
 **Practice:** Microsoft's free Practice Assessment is on [AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-f7c226fff388981b97e2bafd239786aba2d62e74bf8e3d50b04d341899bd55f4); sign-in is required to launch it.
 
@@ -40,7 +40,7 @@ Practice on at least two supported SQL platforms where possible. Keep the databa
 
 ### October terminology and practice adjustment
 
-For the October 19 blueprint, explain **KNN** as selecting the k nearest neighbors and distinguish an exact distance-based baseline from an approximate indexed search. The earlier ENN explanation remains useful for measuring recall; a renamed objective does not imply that every KNN implementation uses the same algorithm. Recheck the platform-specific [`VECTOR_SEARCH` documentation](https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-search-transact-sql?view=sql-server-ver17) before choosing syntax or an index. Extend the vector lab by reporting k, metric, filters, recall against exact results, and latency together. Keep CES exercises as related implementation practice after the change; its omission from one blueprint bullet is not a product-retirement announcement.
+For the October 19 blueprint, explain **KNN** as selecting the k nearest neighbors and distinguish an exact distance-based baseline from an approximate indexed search. The earlier ENN explanation remains useful for measuring recall; a renamed objective does not imply that every KNN implementation uses the same algorithm. Recheck the platform-specific [`VECTOR_SEARCH` documentation](https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-search-transact-sql?view=sql-server-ver17) before choosing syntax or an index. Extend the vector lab by reporting k, metric, filters, recall against exact results, and latency together. Continue studying CES alongside CDC, Change Tracking, Functions and Logic Apps: the currently published October objective explicitly includes it.
 
 ## Objective map
 
@@ -67,7 +67,7 @@ Azure SQL shares a common engine, but deployment model capabilities differ. Use 
 
 **VERIFY CURRENT:** SQL AI features evolve faster than conventional relational features. Record the platform, region, engine/build, database compatibility level and documentation date with every experiment. Treat preview features as changeable and unsuitable for a production dependency unless the organization accepts their support terms.
 
-> **Related item:** Fabric source control stores database object definitions, not the table data and not every database-level configuration. Its SQL analytics endpoint is a separate read-only analytical surface. A repository sync is therefore neither a backup nor a complete disaster-recovery plan.
+> **Related item:** Fabric source control stores database object definitions, not the table data and not every database-level configuration. Its SQL analytics endpoint is a separate read-only analytical surface. A repository sync is therefore neither a backup nor a complete disaster-recovery plan. Current Fabric limitations also exclude CDC and Always Encrypted; do not select the Fabric database for labs that require those features. [Mirroring limits](https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations) state that source RLS, masking and sensitivity labels do not propagate into OneLake. Secure the replicated read path separately. Clustered columnstore creation has mirroring restrictions, and such tables are not mirrored even where creating the index is supported.
 
 ### Translate a requirement into evidence
 
@@ -355,11 +355,16 @@ RETURN
 GO
 CREATE SECURITY POLICY Security.TenantPolicy
 ADD FILTER PREDICATE Security.fn_tenant_access(TenantId) ON dbo.CustomerOrder,
-ADD BLOCK PREDICATE Security.fn_tenant_access(TenantId) ON dbo.CustomerOrder AFTER INSERT
+ADD BLOCK PREDICATE Security.fn_tenant_access(TenantId) ON dbo.CustomerOrder AFTER INSERT,
+ADD BLOCK PREDICATE Security.fn_tenant_access(TenantId) ON dbo.CustomerOrder AFTER UPDATE
 WITH (STATE = ON);
 ```
 
-The application must set trusted session context on every pooled connection and prevent users from setting another tenant's value. Test read, insert, update across tenant, administrator/bypass paths, connection reuse and plans. Learn [row-level security](https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17).
+This illustrative policy assumes an existing table and a trusted application connection. [`sp_set_session_context`](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-set-session-context-transact-sql?view=sql-server-ver17) can be called by any user for their session: `read_only=1` prevents subsequent change on that logical connection, but does not authenticate the first value. Derive tenant context from validated identity, restrict direct database access, and initialize it on every pooled connection. Do not use a caller-supplied tenant ID as proof of tenancy. Test read, insert, update across tenant, administrator/bypass paths, connection reuse and plans. Learn [row-level security](https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17).
+
+#### Worked example: a filtered row can move out of sight
+
+Tenant 7 can read its order O1. With only a filter and an `AFTER INSERT` block, an allowed update could change O1 to tenant 8 and make it disappear from tenant 7’s next query. The added `AFTER UPDATE` block rejects that tenant-changing write. Test insert, update, delete, missing context and connection reuse as the actual application principal; merely observing that the row became invisible is not proof the write was prevented.
 
 > **Related item:** RLS bugs are often identity-context bugs. If connection pooling carries stale session state or the app can choose its own tenant value, a correct predicate can still enforce the wrong boundary.
 
@@ -509,7 +514,13 @@ An entity maps a table, view or stored procedure; it controls source mapping, ex
 }
 ```
 
-Treat this as a conceptual fragment and validate against the current DAB schema/version. Use an explicit production role model; “anonymous” or “authenticated” alone may be too broad. Limit exposed fields and operations, use database permissions as defense in depth, validate request limits and avoid placing sensitive filter values in logged URLs.
+Treat this as a conceptual fragment and validate against the current DAB schema/version. **Configure authentication explicitly.** [DAB 2.0](https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-2-0) defaults new configurations to `Unauthenticated`: it does not validate a supplied JWT, and authenticated/custom roles never activate under that provider. A proxy authenticating someone does not automatically make this configuration authenticated. Use an explicit production role model; “anonymous” or “authenticated” alone may be too broad. Limit exposed fields and operations, use database permissions as defense in depth, validate request limits and avoid placing sensitive filter values in logged URLs.
+
+[Authorization](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authorization) evaluates one effective role per request. With a JWT provider, a named role requires `X-MS-API-ROLE` and membership in the token; an invalid token is rejected. DAB 2.0 also inherits missing entity permissions from named role → authenticated → anonymous. Inspect `dab configure --show-effective-permissions`; do not interpret an omitted named-role block as a denial or assume all token roles are unioned.
+
+Autoentities can expose newly matching tables when DAB restarts. Preview include/exclude patterns with `dab auto-config-simulate`, constrain the SQL identity and review the resulting API contract. Purpose-built MCP procedure tools still require review of the procedure’s actual authority and side effects.
+
+For SQL RLS, [DAB claim-to-session-context setup](https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-sql-row-level-security) requires `set-session-context` and an agreed claim key matching the predicate. The username-based sample is not an automatic mapping to this guide’s `tenant_id`. Alternatively, DAB 2.0 OBO authenticates to SQL as the user, with separate user pools and documented app-registration prerequisites. **Runtime caching must be disabled with OBO**; it is not just a performance preference.
 
 #### REST, GraphQL, relationships and query behavior
 
@@ -549,15 +560,21 @@ Alert from a user-impact symptom plus a diagnostic signal, with owner and runboo
 | Logic Apps SQL connector | workflow trigger/action over SQL | low-code approvals/integration and connector-supported polling | polling interval, connector limits, identity, duplicates and long workflows |
 | DML trigger | synchronous code inside source transaction | small invariant/audit operation requiring same atomic transaction | latency, blocking, recursion and integration availability |
 
-Implement Change Tracking with version capture and a transactionally safe enumeration window; if `CHANGE_TRACKING_MIN_VALID_VERSION` has advanced beyond the consumer's watermark, reinitialize rather than silently missing changes. Review [work with Change Tracking](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/work-with-change-tracking-sql-server?view=sql-server-ver17).
+Implement Change Tracking with version capture and a transactionally safe enumeration window; if `CHANGE_TRACKING_MIN_VALID_VERSION` has advanced beyond the consumer's watermark, reinitialize rather than silently missing changes. Microsoft recommends a snapshot transaction covering validation, version capture and enumeration to avoid cleanup/concurrent-change races. Join changed keys to current data while preserving delete records; an inner join can discard deletions. Review [work with Change Tracking](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/work-with-change-tracking-sql-server?view=sql-server-ver17).
+
+#### Worked example: a saved watermark can become unusable
+
+A consumer last committed version 12; the table’s minimum valid version is now 15 and the database current version is 20. Starting at 15 does not repair the missing interval after 12. Reinitialize a consistent baseline, capture its version and reconcile destination deletions before resuming. Persist progress only after the destination commit. Change Tracking supplies changed keys/current state, not every intervening value transition.
 
 CDC exposes capture tables/functions and cleanup; consumers persist the last successfully committed LSN and handle update before/after semantics. Read [Change Data Capture](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-data-capture-sql-server?view=sql-server-ver17).
 
 CES publishes changes to an event stream. Design consumer-group/checkpoint, key/order, schema evolution, duplicate/idempotency, retention/replay, backpressure and monitoring. Use the current [Change Event Streaming overview](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/change-event-streaming/overview?view=sql-server-ver17).
 
-> **Current transition — verify before configuring:** As of August 15, 2026, new Azure SQL Database and Fabric SQL database CES stream groups must use the Kafka-based `AzureEventHubs` option. Older AMQP/Kafka option values are deprecated where still accepted on SQL Server 2025 and Managed Instance; new implementations should use the current Kafka option. Follow the official [AMQP deprecation notice](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/change-event-streaming/amqp-deprecation) for target-specific migration steps.
+> **Current transition — verify before configuring:** As of August 15, 2026, new Azure SQL Database and Fabric SQL database CES stream groups must use the Kafka-based `AzureEventHubs` option. SQL Server 2025 and Managed Instance still accept `AzureEventHubsApacheKafka`; their move to the unified value is a future update with no confirmed date in the notice. Choose the value supported by the actual target/build, not one universal script. Follow the official [AMQP deprecation notice](https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/change-event-streaming/amqp-deprecation) for target-specific migration steps.
 
-For serverless/low-code consumers, inspect [Azure Functions SQL trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger) and [Azure Logic Apps SQL connector](https://learn.microsoft.com/en-us/azure/connectors/connectors-create-api-sqlazure). Neither removes the need for idempotent processing, persisted progress and reconciliation.
+For serverless/low-code consumers, inspect [Azure Functions SQL trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-azure-sql-trigger) and [Azure Logic Apps SQL connector](https://learn.microsoft.com/en-us/azure/connectors/connectors-create-api-sqlazure). Neither removes the need for idempotent processing, persisted progress and reconciliation. The Functions SQL trigger polls Change Tracking and can coalesce repeated changes to a row. Its documented retry behavior ignores a row for future changes after five consecutive failed function executions for that row; do not assume a managed dead-letter queue. Monitor failures, reconcile source/target, and verify recovery for the extension version in use.
+
+Existing CES AMQP groups have an announced **April 2027** support end; no exact day is supplied. Migration must drain pending changes and coordinate writes while moving tables between groups, otherwise unpublished changes can be missed. Check port 9093, target-specific destination names and supported authentication. Changing the publisher protocol does not itself require consumers to change theirs.
 
 > **Related item:** An event is not “exactly once” because a connector hides retries. Give each business/change event a stable identity, make the sink idempotent, commit progress with output where possible and reconcile source-to-target.
 
@@ -592,7 +609,7 @@ Define:
 
 ### Configure external model access
 
-An external model object encapsulates supported endpoint/model metadata and credential association so SQL AI functions can call an embedding or completion model. Follow [`CREATE EXTERNAL MODEL`](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-external-model-transact-sql?view=sql-server-ver17) for exact target syntax and supported providers.
+An external model object encapsulates endpoint/model metadata and credentials for SQL embedding generation. The current syntax accepts `MODEL_TYPE = EMBEDDINGS`; it does not define a general completion-model object. Evaluate completion models separately for the application or supported REST invocation path. Follow [`CREATE EXTERNAL MODEL`](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-external-model-transact-sql?view=sql-server-ver17) for exact target syntax and supported providers.
 
 Evaluate the model against the actual operation:
 
@@ -625,22 +642,31 @@ Never assume the display name identifies immutable model behavior. A deployment 
 
 Embeddings convert meaning into fixed-length numeric vectors. Similar meanings should be near one another under the selected metric, but scores are model- and corpus-dependent; they are not universal percentages.
 
-Use [`AI_GENERATE_CHUNKS`](https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-chunks-transact-sql?view=sql-server-ver17) where supported to split input with configured strategy/size/overlap, or chunk in the application/ETL layer when format-aware parsing, advanced tokenization or provider portability is needed. Preserve headings, source anchors and ACL metadata. Too-large chunks dilute relevance and consume context; too-small chunks lose meaning and increase vector/count/cost. Measure rather than copy a universal size.
+Use [`AI_GENERATE_CHUNKS`](https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-chunks-transact-sql?view=sql-server-ver17) where supported to split input with configured strategy/size/overlap, or chunk in the application/ETL layer when format-aware parsing, advanced tokenization or provider portability is needed. Preserve headings, source anchors and ACL metadata. Current SQL chunking uses `FIXED` character counts, with integer overlap **percentages** from 0 through 50 and compatibility level at least 170. A 1,000-character chunk with 20% overlap repeats 200 characters; this is not a 1,000-token budget. Too-large chunks dilute relevance and consume context; too-small chunks lose meaning and increase vector/count/cost. Measure rather than copy a universal size.
 
 Use [`AI_GENERATE_EMBEDDINGS`](https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-embeddings-transact-sql?view=sql-server-ver17) or a controlled external application to create vectors. The SQL operation still depends on endpoint availability and can be costly; avoid a synchronous model call in a hot user transaction.
 
+For a background worker, capture immutable text, source hash/version, chunker and model/version first. Generate outside the user transaction, validate vector dimensions, then perform a conditional write. This illustrative write assumes those captured parameters and columns exist:
+
 ```sql
--- Conceptual pattern. Verify exact syntax, preview state, model object and dimensions.
-UPDATE c
-SET Embedding = AI_GENERATE_EMBEDDINGS(c.ChunkText USE MODEL ApprovedEmbeddingModel),
+UPDATE dbo.Chunk
+SET Embedding = @validated_vector,
     EmbeddedAt = SYSUTCDATETIME(),
-    SourceHashAtEmbedding = c.SourceHash
-FROM dbo.Chunk AS c
-WHERE c.Embedding IS NULL
-   OR c.SourceHashAtEmbedding <> c.SourceHash;
+    SourceHashAtEmbedding = @captured_source_hash,
+    EmbeddingModelVersion = @captured_model_version
+WHERE ChunkId = @chunk_id
+  AND SourceHash = @captured_source_hash
+  AND RequiredModelVersion = @captured_model_version;
+-- Zero affected rows: source/model changed or row was removed; reconcile/requeue.
 ```
 
+Handle a null stored hash explicitly in the work selector, and include model/chunker changes even when text has not changed. Recheck ACL/deletion at retrieval time, independently of whether an embedding worker has caught up.
+
 Batch with a durable status such as pending/in-progress/succeeded/failed, bounded concurrency and retry classification. A timeout can be ambiguous; make the update idempotent. Quarantine permanent failures and reconcile counts: eligible chunks, current embeddings, wrong dimensions/model, stale source hash and errors.
+
+#### Worked example: an old embedding must not become current
+
+A worker captures source hash A and model v1. While it calls the endpoint, the source becomes hash B or the required model becomes v2. An unconditional write followed by copying the row’s current hash would falsely label the old vector current. The conditional write above affects zero rows; a later worker must use B/v2 as required. A deleted row also stays absent. Stable work IDs and reconciliation handle retries; SQL cannot atomically commit an external model call with its local write.
 
 ### Maintain embeddings when source data changes
 
@@ -661,7 +687,7 @@ Use delete/tombstone processing so deleted or newly restricted text cannot remai
 
 ### Store vectors with an explicit contract
 
-The native [`vector` data type](https://learn.microsoft.com/en-us/sql/t-sql/data-types/vector-data-type?view=sql-server-ver17) stores a fixed dimension and base type. On the checked documentation, maximum dimensions were 1,998 and some base-type/platform combinations remained preview. Verify current limits.
+The native [`vector` data type](https://learn.microsoft.com/en-us/sql/t-sql/data-types/vector-data-type?view=sql-server-ver17) stores a fixed dimension and base type. The data-type reference lists a maximum of 1,998 dimensions and describes `float16` as preview. The [SQL Server 2025 release notes](https://learn.microsoft.com/en-us/sql/sql-server/sql-server-2025-release-notes?view=sql-server-ver17) separately describe up to 3,996 for half precision. **VERIFY CURRENT:** those pages are not aligned on the general limit; validate the exact base type/build/driver before selecting dimensions above the conservative documented limit. Do not truncate an existing model vector to fit. Native vector storage does not imply that every vector-index feature is supported on that platform.
 
 Store alongside the vector:
 
@@ -678,7 +704,7 @@ The [vector functions reference](https://learn.microsoft.com/en-us/sql/t-sql/fun
 - `VECTOR_NORMALIZE` produces a unit vector under the supported norm and can make intended cosine/dot-product behavior explicit; do not normalize blindly if the model/metric requires magnitude.
 - `VECTORPROPERTY` inspects properties such as dimensions/base type as currently supported; use it to validate data and detect an incompatible model output before indexing/search.
 - `VECTOR_DISTANCE` performs exact comparison for the chosen metric.
-- `VECTOR_SEARCH` uses the supported approximate search path/index. Its current syntax and platform restrictions are preview-sensitive.
+- `VECTOR_SEARCH` allows approximate retrieval but can use a kNN path chosen by the optimizer, or fall back when no compatible ANN index exists. Inspect the actual plan and warning; the function name alone does not prove DiskANN ran.
 
 ### Choose exact or approximate vector search
 
@@ -694,7 +720,7 @@ SELECT TOP (@k)
        VECTOR_DISTANCE('cosine', Embedding, @query_vector) AS distance
 FROM dbo.Chunk
 WHERE TenantId = @tenant_id
-ORDER BY distance;
+ORDER BY distance, ChunkId;
 ```
 
 Choose distance metric to match model guidance:
@@ -707,7 +733,7 @@ Lower distance versus higher similarity semantics vary by function. Do not sort 
 
 #### Current vector-index constraints
 
-**VERIFY CURRENT:** As of August 31, 2026, vector index/search features were preview and support differed across SQL Server 2025, Azure SQL Database and Fabric SQL database. Current documentation described DiskANN as the supported index family and a newer index version for Azure SQL/Fabric. Older syntax/index formats were deprecated. Check before using:
+**VERIFY CURRENT:** On September 27, vector index/search documentation still labels the features preview. The latest index version is documented for Azure SQL Database and Fabric SQL database, with staged regional availability; do not transfer those capabilities to SQL Server 2025 or infer Managed Instance indexing from its vector data-type support. DiskANN remains the documented index family. Older formats and syntax are deprecated. Check before using:
 
 - current `CREATE VECTOR INDEX` syntax and supported metric/type/dimensions;
 - minimum populated non-null vector count and required primary/clustered index;
@@ -717,9 +743,15 @@ Lower distance versus higher similarity semantics vary by function. Do not sort 
 - rebuild/recreate requirements after format change;
 - dacpac/bacpac exclusion and post-deployment recreation.
 
+Current version 3 indexes support DML and iterative filtering. They need an integer clustered primary key and at least 100 non-null vectors at creation; indexes cannot be partitioned or included in dacpac/bacpac deployment. Upgrading an older format requires drop/recreation and an availability plan. For the latest version, use `SELECT TOP (N) WITH APPROXIMATE`, omit `TOP_N`, and order by ascending distance only. Base-table columns use the alias inside `TABLE = ...`; the function alias exposes distance. Older-version examples have different behavior.
+
 Build an ENN ground-truth set before tuning ANN. If a selective tenant/category filter is applied after ANN candidate selection, recall can collapse. Prefer supported pre/iterative filtering or search within a properly bounded authorized candidate set, and test worst-case tenants.
 
-> **Related item:** Security filtering must happen before an unauthorized row can become prompt context. Filtering results only after top-k can both leak data and return too few authorized candidates.
+#### Worked example: evaluate recall over the same authorized population
+
+For tenant T, the exact top three eligible IDs are A, B and C. An approximate run returns A, C and D, all authorized: recall@3 is 2/3. If a global top-three search instead finds three other tenants’ rows and SQL then removes them, the result is empty despite eligible T rows elsewhere. That is a candidate/recall problem; correctly enforced SQL filtering has not itself disclosed those removed rows. Passing the unfiltered candidates into a prompt or cache before authorization would create a separate exposure. Record index version, filters, k, ties and plan with every comparison.
+
+> **Related item:** Security filtering must happen before an unauthorized row can become prompt context. Test authorization and retrieval quality independently; a fast query or high recall does not prove correct access control.
 
 ### Combine full-text, vector and relational filtering
 
@@ -738,7 +770,11 @@ A practical hybrid query obtains lexical and vector candidate ranks, applies aut
 rrf_score(document) = sum(1 / (k + rank_in_each_result_list))
 ```
 
-RRF works with ranks rather than incomparable raw BM25/distance scores. Choose fusion constant and per-source candidate count through evaluation. SQL may require application/T-SQL composition rather than a single built-in hybrid operator; the [vector search architecture guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/vector-search) and [intelligent SQL search module](https://learn.microsoft.com/en-us/training/modules/design-implement-intelligent-search-with-sql/) provide decision context.
+RRF works with ranks rather than incomparable raw BM25/distance scores. Use a different name for the fusion constant than retrieval top-k.
+
+#### Worked example: two good ranks can beat one first place
+
+With fusion constant 60, document A ranked 1 and 4 scores `1/61 + 1/64 ≈ 0.032018`; document B ranked 2 and 2 scores `2/62 ≈ 0.032258`, so B ranks higher. Deduplicate by document/chunk identity and contribute only from lists where the item is present. Raw vector distances and lexical scores should not be added as though their units matched. Choose fusion constant and per-source candidate count through evaluation. SQL may require application/T-SQL composition rather than a single built-in hybrid operator; the [vector search architecture guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/vector-search) and [intelligent SQL search module](https://learn.microsoft.com/en-us/training/modules/design-implement-intelligent-search-with-sql/) provide decision context.
 
 ### Build retrieval-augmented generation as a controlled pipeline
 
@@ -757,7 +793,7 @@ Test prompt injection inside retrieved documents, conflicting sources, stale/del
 
 #### Invoke external REST endpoints from SQL
 
-[`sp_invoke_external_rest_endpoint`](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?view=sql-server-ver17) makes an HTTPS request to allowed endpoints and returns response details. SQL Server 2025/Managed Instance and Azure SQL/Fabric can differ in enablement and credential handling. Use a managed identity/database-scoped credential, grant `EXECUTE ANY EXTERNAL ENDPOINT` narrowly, parameterize/escape JSON with SQL JSON functions, validate response status/body and avoid holding locks while waiting.
+[`sp_invoke_external_rest_endpoint`](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?view=sql-server-ver17) makes an HTTPS request to allowed endpoints and returns response details. SQL Server 2025/Managed Instance and Azure SQL/Fabric can differ in enablement and credential handling. Use a managed identity/database-scoped credential, grant `EXECUTE ANY EXTERNAL ENDPOINT` narrowly, parameterize/escape JSON with SQL JSON functions, validate response status/body and avoid holding locks while waiting. Database-scoped credentials also require `REFERENCES` permission for the caller. HTTP redirects are not automatically followed; a successful SQL call is not proof of HTTP or model success. Handle non-JSON/204 responses and endpoint-specific response shape.
 
 ```sql
 DECLARE @response nvarchar(max);
@@ -902,6 +938,24 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 7. Test prompt injection in retrieved text, no evidence, invalid JSON, endpoint failure and stale/deleted ACL.
 8. Record retrieval/answer model and prompt versions, citation validity, relevance, p95 latency and cost; remove endpoints/indexes/resources.
 
+### Lab 9: identity, RLS and DAB upgrade contracts
+
+1. Use two synthetic tenants and test the RLS policy’s read, insert and tenant-changing update paths; compare the update-blocking correction.
+2. Demonstrate why a freely supplied session-context value is not authentication, using isolated identities and approved test data.
+3. Pin DAB 2.0 and set the intended authentication provider; inspect effective permissions for anonymous, authenticated and selected custom roles.
+4. Simulate autoentity patterns before adding a matching table; prove the API exposes exactly the approved objects/fields/actions.
+5. Test claim-key mapping and pooled connections, or the supported OBO path with caching disabled. Verify direct database and MCP access separately.
+6. Inspect an approved procedure exposed as a custom tool; test its actual side effects and denied operations.
+
+### Lab 10: change recovery and retrieval version evidence
+
+1. Simulate an expired Change Tracking watermark and reconcile a consistent full baseline including deletions.
+2. Make an embedding worker finish after a source/model change; prove its conditional write cannot mark the old vector current.
+3. Compare exact and approximate retrieval on the same authorized corpus and record k, ties, index version, query plan, recall and latency.
+4. Reproduce the RRF arithmetic and compare retrieval budgets; distinguish SQL character chunking from model token limits.
+5. Test Functions row failures and a documented recovery procedure in a disposable setup; do not assume failed work reaches a dead-letter queue.
+6. If eligible, document a CES publisher migration with drained changes and coordinated writes, or record the unsupported target/build boundary without running it.
+
 ---
 
 ## 7. Original knowledge checks
@@ -942,8 +996,63 @@ These are original prompts, not recalled exam questions. Answer each with requir
 32. Which metadata proves an embedding is current and compatible with a vector column/index?
 33. Compare ENN and ANN. How do you measure ANN recall rather than assume it?
 34. How do cosine, dot-product and Euclidean semantics affect model/search compatibility and sort direction?
-35. Why can post-filtering ANN results violate both recall and tenant security expectations?
+35. How does post-filtering affect recall, and when does handling unfiltered candidates create a separate authorization failure?
 36. Design a hybrid RAG evaluation covering exact terms, paraphrase, ACL, prompt injection, citation, latency and cost.
+37. Why is an AFTER INSERT block insufficient to prevent an order moving to another tenant?
+38. Can a read-only session-context key authenticate the tenant value supplied by its caller?
+39. What do DAB 2.0’s Unauthenticated default, effective role and inherited permissions imply?
+40. How do automatic entity discovery and OBO change API deployment checks?
+41. What should happen when a worker’s source hash or required model changes before writeback?
+42. Does WITH APPROXIMATE guarantee that DiskANN executes, and which index version supports iterative filtering?
+43. What do SQL chunk size/overlap mean, and why do vector dimensions need a base-type check?
+44. What can five failed Functions executions and a CES group move do to change delivery?
+
+### Answer checkpoints
+
+1. Match management, instance compatibility, operational control and Fabric integration to the requirement; verify each feature’s platform, tier, build, region and preview state.
+2. One order line needs a stable row key plus a protected business identity such as order/line number; foreign keys and checks enforce additional rules.
+3. Rowstore favors selective transactional access; columnstore favors scans/aggregation; nonclustered columnstore adds analytical cost/benefit to rowstore; memory optimization needs measured pressure and support.
+4. A foreign key validates relationships but does not automatically create the child-side access index.
+5. Both can have gaps; a sequence is independently consumed and can serve multiple tables.
+6. Switching/retention can improve without query elimination; prove the predicate and index layout support the intended partition access.
+7. Temporal reconstructs row versions; ledger provides verifiable tamper evidence. Neither replaces backups or proves original input truth.
+8. Graph helps relationship traversal; Fabric mirroring excludes graph node/edge tables, so verify the analytical path separately.
+9. Use relational columns for strong typed operations, JSON for variable aggregates, and child tables for repeated relational entities needing independent constraints/joins.
+10. VALUE extracts a scalar, QUERY an object/array, OPENJSON rows, constructors build JSON and CONTAINS tests containment where supported.
+11. Inline relational expressions can integrate into optimization; multi-statement/scalar behavior depends on estimation and inlining eligibility.
+12. Use sets from inserted/deleted and keep work short; remote-model latency and failure should not govern the user transaction.
+13. Define an anchor, recursive step, termination, cycle protection and tested maximum depth.
+14. Unique tie breakers make ranking repeatable; an explicit ROWS frame avoids unintended peer grouping in cumulative results.
+15. NULL in a NOT IN input can make the predicate UNKNOWN; a correctly correlated NOT EXISTS avoids that trap.
+16. Normalize, bound candidates, evaluate precision/recall, retain provenance and route uncertain matches to review.
+17. Validate platform syntax, authorization, injection, joins/nulls, transaction behavior, destructive changes and actual results/plans in isolation.
+18. Instructions or data can redirect tool use; treat retrieved text as untrusted and enforce permissions and argument validation outside the model.
+19. TDE protects storage, Always Encrypted protects selected values from the engine under its key model, masking limits presentation, RLS constrains rows and audit records events.
+20. Missing or stale context can select another tenant’s scope; set validated context for every logical connection and test reuse.
+21. Passwordless authentication does not grant database actions or constrain outbound destinations by itself.
+22. Locking can block; RCSI versions each statement; snapshot versions a transaction and can conflict on writes; serializable prevents phantoms with stronger locking.
+23. The first write may have committed despite a lost response; a retry needs a stable idempotency key and reconciliation.
+24. Compare actual/estimated rows, memory grants/spills, lookup count, predicates/conversions, reads and representative parameters.
+25. Blocking has a head blocker; a deadlock is a cycle with a victim. Capture transaction/wait evidence versus a deadlock graph, then correct the cause.
+26. Store schema, approved reference data and tests in source; build schema into a dacpac; protect environment credentials; separately validate unsupported artifact creation.
+27. Schema compare finds differences; the deployment report/script shows proposed operations and data-loss/locking implications.
+28. Explicitly authorize entity operations/fields and tenant rules; constrain the SQL identity and test other database/API/MCP entry points.
+29. Cache scope can violate identity/freshness contracts, while unbounded nesting creates workload pressure; test both, and disable runtime cache for OBO.
+30. Change Tracking reports changed keys/current state; CDC retains changes for a window; CES publishes events; Functions polls tracked changes; Logic Apps orchestrates; DML triggers run in the transaction.
+31. New Azure SQL/Fabric groups use AzureEventHubs. SQL Server/MI currently use their supported Kafka option until the announced future update; verify build, auth and network.
+32. Source/chunk hash, model/deployment/version, required dimensions/base type, generation state/time and ACL prove compatibility and freshness together.
+33. Compare ANN IDs to an exact baseline over identical eligible data, metric, k and tie rules; report recall and latency separately.
+34. Cosine compares direction, dot product depends on magnitude/sign convention, and Euclidean measures distance; align model guidance and sort semantics.
+35. A late filter can exhaust candidates without exposing rows if enforced correctly. Sending unfiltered rows to a model/cache first is the separate security failure.
+36. Include exact terms, paraphrases, conflicting/no evidence, stale/deleted ACLs, injected text, citation validity, recall/answer quality, latency and cost.
+37. A filter allows updating a currently visible row into an invisible state. AFTER UPDATE blocks a resulting tenant value that violates the policy.
+38. No. Any user can set their session context; read-only freezes a value on a logical connection but does not verify its origin.
+39. The default provider ignores JWTs; a configured JWT provider selects one role, and missing 2.0 permission entries inherit. Inspect effective permissions and negative tests.
+40. New matching tables can appear after restart. OBO requires supported Entra/SQL configuration, per-user identity and runtime caching disabled.
+41. The conditional write must affect zero rows; reconcile or queue current source/model work instead of labeling the stale vector current.
+42. No; the optimizer can choose kNN. Current Azure SQL/Fabric version 3 supports iterative filtering and DML, subject to regional/support requirements.
+43. FIXED uses characters and overlap percentages. Float16 is preview and the general type page and SQL Server release notes state different maxima; verify the exact build/base type.
+44. The documented Functions behavior can ignore that row after repeated failures. Removing a CES table with unpublished changes can lose delivery; monitor, drain and reconcile.
 
 ---
 
@@ -973,17 +1082,17 @@ These are original prompts, not recalled exam questions. Answer each with requir
 
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the March 2026 blueprint. Avoid dumps or products claiming recalled/live exam questions.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the March baseline and separately to October preparation. Avoid dumps or products claiming recalled/live exam questions.
 
 ### Start with Microsoft
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) | Public | 30–60 min | Authoritative objectives, weights and lifecycle |
-| [DP-800T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/dp-800t00) | Public self-study; paid instructor option | 3 instructor-led days; 18h22 displayed Learn paths plus labs | Primary structured coverage of all three domains |
-| [Design and develop database solutions](https://learn.microsoft.com/en-us/training/paths/design-develop-database-solutions/) | Public | 7h11 displayed / 4 modules | Schema, objects, T-SQL and AI-assisted development |
-| [Secure, optimize, and deploy database solutions](https://learn.microsoft.com/en-us/training/paths/secure-optimize-deploy-database-solutions/) | Public | 7h31 displayed / 4 modules | Security, performance, projects, APIs, monitoring and change |
-| [Implement AI capabilities in database solutions](https://learn.microsoft.com/en-us/training/paths/implement-ai-capabilities-database-solutions/) | Public | 3h40 displayed / 3 modules | Models, embeddings, vectors, search and RAG |
+| [DP-800T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/dp-800t00) | Public self-study; paid instructor option | 3 instructor-led days; 18h22 previously recorded path total, not independently reverified | Primary structured coverage of all three domains |
+| [Design and develop database solutions](https://learn.microsoft.com/en-us/training/paths/design-develop-database-solutions/) | Public | 7h11 previously recorded / 4 modules; duration not reverified | Schema, objects, T-SQL and AI-assisted development |
+| [Secure, optimize, and deploy database solutions](https://learn.microsoft.com/en-us/training/paths/secure-optimize-deploy-database-solutions/) | Public | 7h31 previously recorded / 4 modules; duration not reverified | Security, performance, projects, APIs, monitoring and change |
+| [Implement AI capabilities in database solutions](https://learn.microsoft.com/en-us/training/paths/implement-ai-capabilities-database-solutions/) | Public | 3h40 previously recorded / 3 modules; duration not reverified | Models, embeddings, vectors, search and RAG |
 | [Microsoft Learning DP-800 course labs](https://microsoftlearning.github.io/mslearn-sql-developer/) | Public; Azure/SQL resources may cost | 12–24 hours for all 11 labs (estimate) | Official hands-on companion; retain evidence and clean up resources |
 | [AI Skills Navigator DP-800 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-f7c226fff388981b97e2bafd239786aba2d62e74bf8e3d50b04d341899bd55f4) | Free account; sign-in required | 45–90 min per attempt plus review (estimate) | Official readiness diagnostic and gap finding |
 | [Microsoft Reactor DP-800 series](https://developer.microsoft.com/en-us/reactor/series/s-1683/) | Public/on demand | About 7 hours for 7 sessions; 3–5 hours selectively (estimate) | Domain-by-domain instruction and demonstrations |
@@ -993,10 +1102,10 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
-| [O'Reilly SQL Server 2025 Unveiled](https://www.oreilly.com/library/view/sql-server-2025/9798868818479/) | Paid subscription/book | 10–15 hours selectively (estimate) | Current depth for SQL AI, vector, JSON, regex, CES, REST, security and Fabric; map chapters to DP-800 rather than reading every page |
-| [Pluralsight SQL Server 2025 Fundamentals path](https://www.pluralsight.com/paths/sql-server-2025-fundamentals) | Paid/trial depending plan | 6 hours displayed / 5 courses | Current SQL Server 2025 engine, T-SQL, security, performance and hybrid foundation; not a complete DP-800 path |
-| [Pluralsight Optimizing Vector Search in SQL Server 2025](https://www.pluralsight.com/courses/sql-server-25-optimize-vector-search) | Paid/trial depending plan | 1h19 displayed | Focused vector data, distance and performance supplement; verify preview syntax |
-| [Udemy DP-800 Exam Prep: Microsoft SQL Server AI Developer](https://www.udemy.com/course/dp-800-exam-prep-microsoft-sql-server-ai-developer/) | Paid; price varies | 19h6 displayed / 170 lectures | Dedicated course updated June 2026; compare every preview statement to current Microsoft docs |
+| [O'Reilly SQL Server 2025 Unveiled](https://www.oreilly.com/library/view/sql-server-2025/9798868818479/) | Paid subscription/book | 10–15 hours selectively (estimate) | Earlier listing covers SQL AI, vector, JSON, regex, CES, REST, security and Fabric; current retrieval blocked, so map chapters to DP-800 rather than reading every page |
+| [Pluralsight SQL Server 2025 Fundamentals path](https://www.pluralsight.com/paths/sql-server-2025-fundamentals) | Paid/trial depending plan | 8 hours published / 6 courses | Listing now includes the September 21 AI course alongside engine, T-SQL, security, performance and hybrid topics; not a complete DP-800 path |
+| [Pluralsight Optimize Vector Search with Indexes in SQL Server 2025](https://www.pluralsight.com/courses/sql-server-25-optimize-vector-search) | Paid/trial depending plan | 1h19 published; updated March 30, 2026 | Focused vector data, distance and performance supplement; verify preview syntax |
+| [Udemy DP-800 Exam Prep: Microsoft SQL Server AI Developer](https://www.udemy.com/course/dp-800-exam-prep-microsoft-sql-server-ai-developer/) | Paid; price varies | 19h6 / 170 lectures previously recorded; current access blocked | Earlier listing dated June 2026; paid/current content not reviewed. Compare every preview statement to current Microsoft docs |
 | [Microsoft Reactor YouTube channel](https://www.youtube.com/@MicrosoftReactor) | Public | 3–8 hours selectively (estimate) | Search DP-800, SQL Server 2025, vector and AI-enabled SQL; prefer recent sessions |
 
 ### Practice, samples and implementation references
@@ -1004,21 +1113,28 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
 | [Microsoft DP-800 Practice Assessment](https://aiskillsnavigator.microsoft.com/credentials/cert-f7c226fff388981b97e2bafd239786aba2d62e74bf8e3d50b04d341899bd55f4) | Free account | 45–90 min per attempt plus remediation (estimate) | Use first as the official diagnostic; do not memorize answers |
-| [Whizlabs DP-800 SQL AI Developer Associate](https://www.whizlabs.com/dp-800-microsoft-sql-ai-developer-associate/) | Paid catalog; one free and two paid quizzes listed | 2–4 hours including explanation review (estimate) | Practice supplement; verify objectives and reject recalled/live-question claims |
+| [Whizlabs DP-800 SQL AI Developer Associate](https://www.whizlabs.com/dp-800-microsoft-sql-ai-developer-associate/) | Paid catalog; earlier quiz listing not currently verifiable | 2–4 hours including explanation review (estimate) | Current fetch exposes only a site shell; verify the actual catalog and explanation quality before considering it, and reject recalled/live-question claims |
 | [Azure SQL AI samples](https://github.com/Azure-Samples/SQL-AI-samples) | Public | 6–15 hours selectively (estimate) | Official examples for embeddings, vector search and AI-enabled SQL; inspect platform/version prerequisites |
 | [Azure SQL database chat with Semantic Kernel](https://github.com/Azure-Samples/azure-sql-db-chat-sk) | Public | 3–6 hours (estimate) | End-to-end database chat/RAG architecture; update dependencies and threat-model before reuse |
 | [Azure SQL external REST endpoint samples](https://github.com/Azure-Samples/azure-sql-db-invoke-external-rest-endpoints) | Public | 2–4 hours (estimate) | Endpoint, credential and JSON call patterns; use only approved endpoints and synthetic data |
 | [Microsoft SQL Server samples](https://github.com/microsoft/sql-server-samples) | Public | 4–12 hours selectively (estimate) | Relational, performance and engine experimentation; select current 2025-relevant samples |
-| This guide's eight labs | Azure/SQL/model resources; costs vary | 24–45 hours (estimate) | Cross-domain implementation, failure, security, deployment and evaluation evidence |
+| This guide's ten labs | Azure/SQL/model resources; costs vary | 28–52 hours (estimate) | Cross-domain implementation, failure, security, deployment and evaluation evidence |
 
 No dedicated MeasureUp DP-800 product was found in the public catalog checked on August 31, 2026. Recheck the vendor later rather than substituting an unrelated exam product. No one practice vendor is authoritative; use explanations to identify a source/documentation gap.
+
+### Useful blog reading with an exercise
+
+- [Azure SQL optimizer intelligence for vector search](https://devblogs.microsoft.com/azure-sql/beyond-vector-indexes-azure-sql-brings-optimizer-intelligence-to-vector-search/) — Pooja Kamath, August 17, 2026. Use its filtered-query discussion to compare exact and approximate plans on the same authorized corpus. Verify current index/version/regional requirements; a query accepting approximation does not force ANN or guarantee a particular speedup.
+- [Introducing SQL MCP Server](https://devblogs.microsoft.com/azure-sql/introducing-sql-mcp-server/) — Jerry Nixon, April 8, 2026; public page reviewed September 27. Design a small entity/tool/role matrix, then test a denied read/write and a procedure’s real authority. Its permissive anonymous setup is demonstration scaffolding; choose deliberate authentication and least privilege for your exercise. Current DAB 2.0 documentation controls defaults, inheritance, OBO and cache limits.
+
+These are supplemental explanations, not exam-authoritative material. Public text was read; linked demos, downloads, videos and performance claims were not executed or independently benchmarked.
 
 ### A practical study sequence
 
 1. Read the official blueprint and map every objective to a platform-supported lab in 30–60 minutes.
 2. Complete the three Microsoft Learn paths or one current structured course; do not stack passive courses.
 3. Build Labs 1–4 and remediate SQL design, security and performance with exact reference pages.
-4. Build Labs 5–8 and retain artifact/deployment, API/telemetry, change/embedding and retrieval-evaluation evidence.
+4. Build Labs 5–10 and retain artifact/deployment, API/telemetry, change/embedding and retrieval-evaluation evidence.
 5. Take the official Practice Assessment once; remediate by objective and implementation, not answer memory.
 6. Use one ethical third-party practice resource only if its explanations are current and source-based.
 7. Recheck the official guide, credential page, Applies to sections, preview notices, model/vector limits and CES transition immediately before the exam.

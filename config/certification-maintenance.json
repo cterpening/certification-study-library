@@ -159,7 +159,7 @@
       ],
       "review_on": "2026-10-19",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800",
-      "action": "Reconcile the October 19 English blueprint with the guide and approve its new baseline. The revision uses ANN versus KNN, removes CES from the data-change orchestration bullet, and updates columnstore/Copilot wording. Domain weights are unchanged. Retain CES as related implementation context; distinguish the revised exam terminology from the earlier ENN wording."
+      "action": "Reconcile the October 19 English blueprint and approve its new baseline. September 27 live objectives retain CES in the data-change bullet, correcting the earlier removal note. Use ANN versus KNN and current columnstore/Copilot wording; weights are unchanged. Compare the actual detailed objectives again on the effective date."
     },
     {
       "id": "ab-730-october-blueprint",
@@ -376,6 +376,33 @@
       "review_on": "2026-10-01",
       "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
       "action": "Compare direct-view restrictions with the metastore-policy page that lists views in Beta. Keep the supported base-table policy/session-user view example; do not promote direct-view policies without consistent authoritative support."
+    },
+    {
+      "id": "dp800-vector-float16-limit",
+      "exam_codes": [
+        "DP-800"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/sql/sql-server/sql-server-2025-release-notes?view=sql-server-ver17",
+      "action": "Reconcile the vector type page maximum of 1998 dimensions with SQL Server 2025 release notes describing float16 preview up to 3996. Require matching engine/build/base type and driver support before using the higher limit; do not truncate model vectors to fit."
+    },
+    {
+      "id": "dp800-ces-target-names",
+      "exam_codes": [
+        "DP-800"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/change-event-streaming/amqp-deprecation",
+      "action": "Recheck AzureEventHubs target naming across Azure SQL/Fabric versus SQL Server 2025/Managed Instance. SQL Server/MI continue accepting AzureEventHubsApacheKafka pending a future update; October 1 is a research checkpoint, not a vendor deadline."
+    },
+    {
+      "id": "dp800-ces-amqp-migration",
+      "exam_codes": [
+        "DP-800"
+      ],
+      "review_on": "2027-03-01",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/change-event-streaming/amqp-deprecation",
+      "action": "Before the documented April 2027 end of existing AMQP groups, recheck supported Kafka protocol/authentication and target naming. Plan pending-change draining and coordinated table migration; March 1 is a preparation checkpoint, not an invented exact shutdown date."
     }
   ]
 }

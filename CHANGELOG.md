@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review DP-800 and map 73 October objectives while retaining March's baseline. Correct CES scope, RLS update protection, DAB 2.0 defaults and external-model scope. Add five worked examples, two labs, 44 answers, two qualified Microsoft blog readings and three vector/CES follow-ups. See the [DP-800 report](docs/research/2026-09-27-dp-800-deep-review.md).
+
 - September 27, 2026: deep-review DP-750's 77 October objectives while retaining March's baseline. Correct ten-language availability and SQL paths/order; add four examples, two labs, 44 answers and two qualified Databricks blog readings. Clarify ABAC identities, replay/schema/quality, test isolation, direct-engine migration and maintenance windows; add three follow-up checkpoints. See the [DP-750 report](docs/research/2026-09-27-dp-750-deep-review.md).
 
 - September 27, 2026: deep-review PL-300's 78 April objectives and accept only the compared editorial snapshot, preserving its previous text/hashes. Add four examples, two labs, 44 answers, SQLBI performance reading, the February 2027 Q&A extension, and two maintenance checkpoints. Correct calculation, visual-export, RLS, refresh and Copilot boundaries, including a bounded DP-600 column clarification. See the [PL-300 report](docs/research/2026-09-27-pl-300-deep-review.md).

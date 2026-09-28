@@ -3,6 +3,118 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "dp800-vector-blog",
+      "title": "Optimizer intelligence for Azure SQL vector search",
+      "url": "https://devblogs.microsoft.com/azure-sql/beyond-vector-indexes-azure-sql-brings-optimizer-intelligence-to-vector-search/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Pooja Kamath, August 17, 2026. Public text read via direct retrieval. Accepted for filtered exact/approximate plan and recall exercise, subject to current preview/version/region requirements; no performance claims independently benchmarked. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp800-mcp-blog",
+      "title": "Introducing SQL MCP Server",
+      "url": "https://devblogs.microsoft.com/azure-sql/introducing-sql-mcp-server/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Jerry Nixon, April 8, 2026; body observed September 27 includes current DAB references. Public text read. Entity/tool/role exercise accepted, with demonstration anonymous permissions explicitly qualified by current DAB 2.0 security documentation. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp800-dab2",
+      "title": "Data API builder 2.0 release notes",
+      "url": "https://learn.microsoft.com/en-us/azure/data-api-builder/whats-new/version-2-0",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp800-dab-auth",
+      "title": "Data API builder authorization",
+      "url": "https://learn.microsoft.com/en-us/azure/data-api-builder/concept/security/authorization",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp800-dab-rls",
+      "title": "SQL row-level security with Data API builder",
+      "url": "https://learn.microsoft.com/en-us/azure/data-api-builder/quickstart/authorization-sql-row-level-security",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp800-session-context",
+      "title": "Set session context",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-set-session-context-transact-sql?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp800-vector-overview",
+      "title": "Vector search and indexes in the SQL database engine",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/vectors/vectors-sql-server?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp800-sql-release",
+      "title": "SQL Server 2025 release notes",
+      "url": "https://learn.microsoft.com/en-us/sql/sql-server/sql-server-2025-release-notes?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-800"
+      ],
+      "notes": "September 27 DP-800 deep review: Current SQL Server 2025 release notes describe float16 preview up to 3996 dimensions, while the general vector datatype page gives 1998. Guide preserves the disagreement and conservative bound, with a dated research checkpoint. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "dp750-abac-evaluation",
       "title": "ABAC policy evaluation",
       "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation",
@@ -727,9 +839,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-700"
+        "DP-700",
+        "DP-800"
       ],
-      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution. September 27 DP-800 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-800-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp700-copy-blog",
