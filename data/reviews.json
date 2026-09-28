@@ -335,26 +335,38 @@
       "notes": "All five weighted objective groups and their July 2026 bullets are mapped to guide sections, operations playbooks, failure drills, and labs. Repaired Lab 2 requires an authorized disposable organization and repository, access and plan checks, before-state evidence, bounded changes, restoration and cleanup, plus a tabletop substitute. The September 7 refresh adds the GHES release ledger and a bounded Enterprise Live Migrations versus GEI decision. All 36 cited URLs are cataloged and reachable."
     },
     {
-      "id": "az-900-2026-08-31-source-validation",
+      "id": "az-900-2026-09-28-source-validation",
       "exam_code": "AZ-900",
       "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/az-900-official-objectives.txt",
       "blueprint_snapshot_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
       "objective_coverage": [
         {
           "objective_group": "Describe cloud concepts",
-          "guide_sections": ["Part 1", "Part 5 — Cloud responsibility and benefits", "Labs 2 and 5"]
+          "guide_sections": [
+            "Part 1",
+            "Part 5 — Cloud responsibility and benefits",
+            "Labs 2 and 5"
+          ]
         },
         {
           "objective_group": "Describe Azure architecture and services",
-          "guide_sections": ["Parts 2–3", "Part 5 — Placement, compute, networking, storage, and identity", "Labs 2–4"]
+          "guide_sections": [
+            "Parts 2–3",
+            "Part 5 — Placement, compute, networking, storage, and identity",
+            "Labs 2–4"
+          ]
         },
         {
           "objective_group": "Describe Azure management and governance",
-          "guide_sections": ["Part 4", "Part 5 — Governance, deployment, and monitoring", "Labs 1 and 5"]
+          "guide_sections": [
+            "Part 4",
+            "Part 5 — Governance, deployment, and monitoring",
+            "Labs 1 and 5"
+          ]
         }
       ],
       "checks": {
@@ -365,12 +377,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 49,
-        "reachable": 48,
-        "access_blocked": 1,
+        "unique_external_links": 68,
+        "reachable": 66,
+        "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All three weighted objective groups and their July 20, 2026 bullets are mapped to foundational explanations, decision guidance, and five labs. All 49 cited URLs are exact source-catalog entries. The O'Reilly AZ-900 video-course page returned HTTP 403 to the automated monitor and is treated as access-blocked rather than missing. Pricing, regional/service availability, storage tiers, Defender plans, licensing, UI behavior, and other volatile details remain explicitly marked VERIFY CURRENT."
+      "notes": "Whole guide and 57 unchanged objectives mapped across eleven groups. Add six worked examples, seven labs, 30 answered checks and three bounded blog exercises; reject one unsuitable automation article. Refresh responsibility, VM billing, storage account/tier/smart choices, External ID, budgets/limits, savings plans, tag inheritance, remediation, locks and health distinctions; reconcile learning catalogs. Thirty-five offline assertions passed. No cloud deployment, policy mutation, paid-content or assessment execution; independent human review pending. See docs/research/2026-09-28-az-900-deep-review.md"
     },
     {
       "id": "dp-900-2026-08-31-source-validation",
@@ -11180,6 +11192,56 @@
         "missing_or_error": 0
       },
       "notes": "All five weighted July 27, 2026 objective groups and their subobjectives are mapped to a bidirectional packet-walk method, service comparisons, failure modes, two scenarios, eight labs, and 24 checks. Section 3 and Lab 4 provide requirements, configuration, validation, and troubleshooting depth for Azure Network Adapter and Azure Extended Network. The September 7 pass adds current virtual network flow-log, NSG flow-log retirement, and agentless Connection troubleshoot preview evidence. All 31 cited URLs are cataloged: 28 reachable, three O'Reilly/Udemy pages access-blocked, and none missing."
+    },
+    {
+      "id": "az-900-2026-08-31-source-validation",
+      "exam_code": "AZ-900",
+      "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-900-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+      "objective_coverage": [
+        {
+          "objective_group": "Describe cloud concepts",
+          "guide_sections": [
+            "Part 1",
+            "Part 5 — Cloud responsibility and benefits",
+            "Labs 2 and 5"
+          ]
+        },
+        {
+          "objective_group": "Describe Azure architecture and services",
+          "guide_sections": [
+            "Parts 2–3",
+            "Part 5 — Placement, compute, networking, storage, and identity",
+            "Labs 2–4"
+          ]
+        },
+        {
+          "objective_group": "Describe Azure management and governance",
+          "guide_sections": [
+            "Part 4",
+            "Part 5 — Governance, deployment, and monitoring",
+            "Labs 1 and 5"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 49,
+        "reachable": 48,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All three weighted objective groups and their July 20, 2026 bullets are mapped to foundational explanations, decision guidance, and five labs. All 49 cited URLs are exact source-catalog entries. The O'Reilly AZ-900 video-course page returned HTTP 403 to the automated monitor and is treated as access-blocked rather than missing. Pricing, regional/service availability, storage tiers, Defender plans, licensing, UI behavior, and other volatile details remain explicitly marked VERIFY CURRENT."
     }
   ]
 }

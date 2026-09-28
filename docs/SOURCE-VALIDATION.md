@@ -330,6 +330,8 @@ The September 27 [deep review](research/2026-09-27-ab-100-deep-review.md) read t
 
 ## AZ-900 coverage record
 
+The September 28 [deep review](research/2026-09-28-az-900-deep-review.md) maps 57 detailed objectives. Whole guide and 57 unchanged objectives mapped across eleven groups. Add six worked examples, seven labs, 30 answered checks and three bounded blog exercises; reject one unsuitable automation article. Refresh responsibility, VM billing, storage account/tier/smart choices, External ID, budgets/limits, savings plans, tag inheritance, remediation, locks and health distinctions; reconcile learning catalogs. Thirty-five offline assertions passed. No cloud deployment, policy mutation, paid-content or assessment execution; independent human review pending. Current guide citations: 68 registered, 66 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Describe cloud concepts | Part 1, responsibility/benefit decision guide, and Labs 2 and 5 |

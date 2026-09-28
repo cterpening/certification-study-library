@@ -1,0 +1,3449 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AZ-900",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "5fad95dae62b065e8eff5e58e40fbbf3f4cae2fad819bed45a387857c637fd28",
+  "guide_after_sha256": "f390616206b6788988d00e6f337bc339bef40778295fac471855c09e3869c3fd",
+  "prior_records": {
+    "exam": {
+      "code": "AZ-900",
+      "level": "beginner",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Azure Fundamentals",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+      "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; basic cloud and technology familiarity is helpful."
+    },
+    "review": {
+      "id": "az-900-2026-08-31-source-validation",
+      "exam_code": "AZ-900",
+      "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-900-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+      "objective_coverage": [
+        {
+          "objective_group": "Describe cloud concepts",
+          "guide_sections": [
+            "Part 1",
+            "Part 5 — Cloud responsibility and benefits",
+            "Labs 2 and 5"
+          ]
+        },
+        {
+          "objective_group": "Describe Azure architecture and services",
+          "guide_sections": [
+            "Parts 2–3",
+            "Part 5 — Placement, compute, networking, storage, and identity",
+            "Labs 2–4"
+          ]
+        },
+        {
+          "objective_group": "Describe Azure management and governance",
+          "guide_sections": [
+            "Part 4",
+            "Part 5 — Governance, deployment, and monitoring",
+            "Labs 1 and 5"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 49,
+        "reachable": 48,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All three weighted objective groups and their July 20, 2026 bullets are mapped to foundational explanations, decision guidance, and five labs. All 49 cited URLs are exact source-catalog entries. The O'Reilly AZ-900 video-course page returned HTTP 403 to the automated monitor and is treated as access-blocked rather than missing. Pricing, regional/service availability, storage tiers, Defender plans, licensing, UI behavior, and other volatile details remain explicitly marked VERIFY CURRENT."
+    },
+    "sources": [
+      {
+        "id": "az-900-blueprint",
+        "title": "AZ-900 Microsoft Azure Fundamentals study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "microsoft-az-900-course",
+        "title": "Microsoft Azure Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Official one-day course; the linked self-study paths are the primary free learning route."
+      },
+      {
+        "id": "microsoft-cloud-product-docs",
+        "title": "Microsoft technical documentation",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901"
+        ],
+        "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pluralsight-az-900",
+        "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Structured path listed at 21 hours plus labs and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. Individual course currency varies."
+      },
+      {
+        "id": "oreilly-az-900-video",
+        "title": "AZ-900 Microsoft Azure Fundamentals",
+        "url": "https://www.oreilly.com/videos/az-900-microsoft/9781806387694/",
+        "publisher": "Rithin Skaria and KodeKloud on O'Reilly",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Six-hour, 27-minute video published August 2025; compare with the July 2026 blueprint."
+      },
+      {
+        "id": "udemy-az-900-nikolai-schuler",
+        "title": "AZ-900 Azure Fundamentals Certification Exam Prep",
+        "url": "https://www.udemy.com/course/az-900-azure-certification-exam-prep/",
+        "publisher": "Nikolai Schuler on Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "About eight hours, 17 minutes; shown as updated August 2026."
+      },
+      {
+        "id": "linkedin-learning-az-900-microsoft-press",
+        "title": "Microsoft Azure Fundamentals AZ-900 Cert Prep by Microsoft Press",
+        "url": "https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press",
+        "publisher": "Microsoft Press on LinkedIn Learning",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Four hours, 11 minutes; released September 2024."
+      },
+      {
+        "id": "coursera-microsoft-az-900-specialization",
+        "title": "Microsoft Azure Fundamentals AZ-900 Exam Prep Specialization",
+        "url": "https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep",
+        "publisher": "Microsoft on Coursera",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Four-course sequence; provider pace is about three months at 10 hours per week."
+      },
+      {
+        "id": "whizlabs-az-900",
+        "title": "Microsoft Azure Fundamentals AZ-900 training",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-az-900/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Seven-plus video hours and labs; the library does not endorse real-exam-question claims."
+      },
+      {
+        "id": "john-savill-az-900-study-cram",
+        "title": "AZ-900 Azure Fundamentals Study Cram",
+        "url": "https://www.youtube.com/watch?v=tQp1YkB2Tgs",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Approximately four hours and published for the 2022 scope; use for explanation, then close July 2026 gaps with official Learn."
+      },
+      {
+        "id": "john-savill-certification-materials",
+        "title": "Certification Materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "publisher": "John Savill",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AI-103",
+          "SC-300"
+        ],
+        "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "john-savill-az-900-course-materials",
+        "title": "AZ-900 Azure Fundamentals Certification Course materials",
+        "url": "https://github.com/johnthebrit/AZ900CertCourse",
+        "publisher": "John Savill",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Companion repository containing the course handout and playlist link. No repository license was detected; link to the handout rather than republishing it."
+      },
+      {
+        "id": "microsoft-mechanics",
+        "title": "Microsoft Mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AB-100",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 182-character channel shell; no videos inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-reactor",
+        "title": "Microsoft Reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "AI-901",
+          "AI-103",
+          "AB-100",
+          "AZ-801",
+          "AZ-802",
+          "DP-300",
+          "DP-800",
+          "AI-200",
+          "AI-300",
+          "SC-500",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 180-character shell; discovery reference only. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "skilling-hub-levelup-az-900",
+        "title": "LevelUp: AZ-900 Microsoft Azure Fundamentals",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058307",
+        "publisher": "Microsoft Partner Skilling Hub / LevelUp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      },
+      {
+        "id": "measureup-az-900-practice-test",
+        "title": "Microsoft AZ-900 Azure Fundamentals practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Public listing shows 159 questions, certification and practice modes, explanations, references, and a free demo. Allow about five to nine hours for an initial simulation, targeted practice, and explanation review."
+      },
+      {
+        "id": "microsoft-practice-assessment-catalog",
+        "title": "Practice Assessments for Microsoft Certifications",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "GH-100",
+          "GH-500",
+          "AI-103",
+          "AB-100",
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AZ-801",
+          "AZ-802"
+        ],
+        "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-az-900-practice-assessment",
+        "title": "AZ-900 Microsoft Azure Fundamentals Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      },
+      {
+        "id": "oreilly-certification-practice-tests",
+        "title": "O'Reilly certification prep and interactive practice tests",
+        "url": "https://www.oreilly.com/products/certification-prep.html",
+        "publisher": "O'Reilly Learning",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "DP-900",
+          "AZ-802",
+          "DP-300"
+        ],
+        "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review."
+      },
+      {
+        "id": "azure-advisor-overview",
+        "title": "Introduction to Azure Advisor",
+        "url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-architecture-center",
+        "title": "Azure Architecture Center",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-305"
+        ],
+        "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-compute-decision-guide",
+        "title": "Choose an Azure compute service",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-305"
+        ],
+        "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-arc-overview",
+        "title": "Azure Arc overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-monitor-documentation",
+        "title": "Azure Monitor documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305"
+        ],
+        "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-resource-locks",
+        "title": "Lock Azure resources to protect infrastructure",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "SC-100",
+          "AZ-104"
+        ],
+        "notes": "September 27 SC-100 deep review: Targeted control/data-plane scope and lock behavior read; no destructive lock test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Selected scope, management/data-plane and POST-operation caveats read; full per-resource exception list not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-resource-manager-overview",
+        "title": "What is Azure Resource Manager?",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-resource-organization-guidance",
+        "title": "Azure resource organization guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-finops-guidance",
+        "title": "Microsoft FinOps documentation",
+        "url": "https://learn.microsoft.com/en-us/cloud-computing/finops/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-cost-management-billing-overview",
+        "title": "Azure Cost Management and Billing overview",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Pricing, offers, included allowances, and UI behavior remain VERIFY CURRENT."
+      },
+      {
+        "id": "azure-data-box-overview",
+        "title": "Azure Data Box overview",
+        "url": "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-governance-documentation",
+        "title": "Azure governance documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-policy-overview",
+        "title": "What is Azure Policy?",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305"
+        ],
+        "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-migrate-services-overview",
+        "title": "Azure Migrate services overview",
+        "url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-305"
+        ],
+        "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-networking-documentation",
+        "title": "Azure networking documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-305",
+          "AZ-700"
+        ],
+        "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-networking-overview",
+        "title": "Azure networking overview",
+        "url": "https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-private-endpoint-overview",
+        "title": "What is a private endpoint?",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Overview, approval, client connectivity and DNS sections reviewed; no private endpoint provisioned. Public-exposure setting is a separate verification task. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-reliability-documentation",
+        "title": "Azure reliability documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/reliability/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-regions-list",
+        "title": "List of Azure regions",
+        "url": "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Region, zone, paired-region, and service availability are volatile and must be checked for the target workload."
+      },
+      {
+        "id": "azure-rbac-overview",
+        "title": "What is Azure role-based access control?",
+        "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-shared-responsibility",
+        "title": "Shared responsibility in the cloud",
+        "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AZ-900",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-service-health-overview",
+        "title": "Azure Service Health overview",
+        "url": "https://learn.microsoft.com/en-us/azure/service-health/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-storage-introduction",
+        "title": "Introduction to Azure Storage",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104"
+        ],
+        "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-storage-redundancy",
+        "title": "Azure Storage redundancy",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305"
+        ],
+        "notes": "September 28 AZ-104 deep review: Selected account/primary/secondary and asynchronous read-access distinctions read; complete SKU/region matrix not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-storage-azcopy",
+        "title": "Copy or move data to Azure Storage by using AzCopy v10",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104"
+        ],
+        "notes": "September 28 AZ-104 deep review: Selected v10 scope, transfer types and installation options read; no binary installation, copy or sync execution. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-file-sync-overview",
+        "title": "What is Azure File Sync?",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-802"
+        ]
+      },
+      {
+        "id": "azure-storage-explorer-overview",
+        "title": "Get started with Storage Explorer",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "azure-virtual-machines-overview",
+        "title": "Azure Virtual Machines overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104"
+        ],
+        "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-virtual-network-overview",
+        "title": "Azure Virtual Network overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Targeted VNet, connectivity, filtering and routing overview read. No automatic outbound-access assumption added to guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-az-900-certification-page",
+        "title": "Microsoft Certified: Azure Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ],
+        "notes": "Credential page and learning-path entry point; exam details, scheduling, and linked preparation content are volatile."
+      },
+      {
+        "id": "microsoft-entra-documentation",
+        "title": "Microsoft Entra documentation",
+        "url": "https://learn.microsoft.com/en-us/entra/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AZ-900",
+          "AB-900",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-entra-overview",
+        "title": "What is Microsoft Entra?",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "microsoft-entra-conditional-access-overview",
+        "title": "Microsoft Entra Conditional Access overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "SC-500",
+          "SC-900",
+          "MS-102"
+        ],
+        "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-entra-domain-services-overview",
+        "title": "Microsoft Entra Domain Services overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/domain-services/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900"
+        ]
+      },
+      {
+        "id": "microsoft-purview-overview",
+        "title": "Learn about Microsoft Purview",
+        "url": "https://learn.microsoft.com/en-us/purview/purview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AB-900"
+        ],
+        "notes": "Purview product packaging, portals, and feature availability are volatile."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "326b30909dcc9ecf460dbe1ceffda4a51a4a0eb119ae1957cdf4699c1057ec4f",
+      "guide_sections": "1, 5 / On-demand service and operational model",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "934c16f576fbbed5fd8bd8f5efca529ec7fe8db3dd89ca2530763ccf37aa1a4f",
+      "guide_sections": "1, 5 / Current responsibility matrix and retained data/identity/configuration duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "9731102bc39d563d4ea2ae96d71449e061cb1631e8ca23ff176bd6c6dff4fee0",
+      "guide_sections": "1 / Public, private and hybrid definitions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "749749dc4b25ec932533591e953070689138e01a3d3437eac09ebe2668b046fd",
+      "guide_sections": "1, 5 / Control, location and integration scenarios",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "3de86b725476b698eb7b82fecc88885ebf2ef3805047291e85e0d74710ea4af8",
+      "guide_sections": "1, 4–5 / Consumption units, monitoring and responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "0a15daa3f208173db9ac559a489026b8898acbbaa5222267e315e638b5cef1cc",
+      "guide_sections": "1, 4–5 / CapEx/OpEx, pay-as-you-go, reservations and hourly commitments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "fbef896ec9fd99147f01b56b127836b3a892b5360da96808c2699b28ce1fde67",
+      "guide_sections": "1, 5 / Serverless control boundary, event triggers and retained duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "628493c80e1cbe2c610ac0ae586a0d5f29942109b18cc9229090bf3cb229553f",
+      "guide_sections": "1–2, 5 / Availability, scale, elasticity and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "24a8524cda170eac07b4f83955e81af846aeca38d73f090f861a4842c96062b8",
+      "guide_sections": "1–2, 5 example 5 / Reliability, recovery and measured targets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "7eb18385fdbacaeefc5bdb4e2a7efc6bcfd4a53c64ade3e5abc2f244469e1e31",
+      "guide_sections": "1, 3–5 / Shared responsibility, security and governance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "38bb9257107f3999e2b765b85d4fb686e584ce2423c5274312b181a923007aa1",
+      "guide_sections": "1, 4–5 / Portal, APIs, automation and operational ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "646360dc1f936d90e75010a277d8b754d6d0e53de24be7efed8ef2dede50e102",
+      "guide_sections": "1, 5 / VM/OS control and IaaS responsibilities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "1681eefc2838ab338e5cecdcc13cd1383a5d900eab906423118b41451d6156a4",
+      "guide_sections": "1, 5 / PaaS runtime and customer application duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "ebf1333f7299f1c92ede1c760bee94f2ffe91441ff1712dea3950274f51d2f8a",
+      "guide_sections": "1, 5 / Finished software and tenant/data responsibilities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "b45150f239d4319328cbc49b7045736bbb32b707d12a43a0bdf0a58d9940e9a3",
+      "guide_sections": "1, 5 / Scenario choice across service models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "18f7a6c7a74c4f23e104ad145ff2efa0f9b8ecf3a4cf9611f63a152197cc6171",
+      "guide_sections": "2, 5 / Geography, paired/nonpaired and sovereign-region boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "ec2c18c530a877dec4549af3f0e6cef9611c70885a5f7a33d6689a0f0ab6b174",
+      "guide_sections": "2, 5 / Zones and service-specific resilience",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "d8ab17a509a99be0c23b624b3819cec68332f34d25c2615da4d9d9695b7469af",
+      "guide_sections": "2 / Datacenter and regional infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "a59d2884a1e2fc0178114ab5ca9f5df7779249985d7344782d81aaaaf7bcd462",
+      "guide_sections": "2, 5 / Resource lifecycle, group scope and location",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "3b192c5245495c8b52a88ff558af82fe92df57f493acdb7443a3c7c3d239cb37",
+      "guide_sections": "2, 5 / Subscription billing/quota/management scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "f3f3d5d38276db0730c1cf900000dc643b98979a8960970e6c1c3a6b301fb94c",
+      "guide_sections": "2, 5 / Management-group organization and inherited governance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "96ccbc8a769a633ec33689d8cf9f0e275a4b2ef624e7ff4a60794583c6721d7f",
+      "guide_sections": "2, 5 / Tenant through resource hierarchy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "47cb827ee7d9a84b3d3b31fcfcf664dd7e2d7ed72b1a21b2f37a4411e166a4e1",
+      "guide_sections": "2, 5 / VM/container/function control and execution choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "67586cf0d83a2b01e24154822018516500cd955b32f3271cdc0ad0f07b545d52",
+      "guide_sections": "2, 5 / VM, VMSS, availability sets and AVD",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "06057d8a8a0d478a06a0ef711f0869e03d5fe505c34bedd3b1a88f42f0eedeee",
+      "guide_sections": "2, 5 / VM image, disk, NIC, subnet, identity and billing state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "b758efa947a5c1b75c13d2ca1f7c3133b4309ab088a11b0a12e668c69dbb6358",
+      "guide_sections": "2, 5 / App Service, ACI, AKS and VM hosting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "a9360c5042135d8bad9a0b097cb7f36552e1f4dcd2a201be2456ec1263ec7d68",
+      "guide_sections": "2, 5 / VNet/subnets/peering/DNS/VPN/ExpressRoute and request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "ab346b15222c96844f61db5e34c88cca1f4356d6cf2bbd4f71797e2cc52c89c5",
+      "guide_sections": "2, 5 / Public/private endpoint, DNS and authorization independence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "2fd88cfc1f9fb4d2042d6023086649547b0fc4bca65ab594a7afd556878eaccc",
+      "guide_sections": "2, 5 / Blob, Files, Queue, Table and managed disks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "68200628c29b9a201e416b9db1be76c8b6d0d0f24c2a13aa3a08d81c99a81f80",
+      "guide_sections": "2, 5 example 4 / Online/archive, charging duration and bounded smart-tier context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "a46d3a286f3538647a3deb6feb1004e46eed71f8848b04f5cb8431c3fcbe7be9",
+      "guide_sections": "2, 5 / LRS/ZRS/GRS/GZRS/read access versus historical recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "f5f12debe6062ea95eefe50925e95564b61a8d86aae2fd65a1dc585b2616dbf7",
+      "guide_sections": "2, 5 / GPv2 and specialized premium accounts versus tier/redundancy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "7f8df2051cfc3639d2fe2578bad8628ffca10c03d166c938ed440820f5d614f1",
+      "guide_sections": "2, 5 / AzCopy, Storage Explorer and Windows File Sync",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "f2f01795b60c640121f0c8a15d833eec87de5d368855fada0b9aa69209807b99",
+      "guide_sections": "2, 5 / Azure Migrate versus offline Data Box",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "15bd36c95fb649d1e2ea01a079b83fa7efb1a5e9609f994c1db1ff784b234c44",
+      "guide_sections": "3, 5 / Entra ID versus managed traditional domain services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "873ee2afc8a48f14dc999f8275c11a865b6827d689cc4a5315ba97e5ddd12d40",
+      "guide_sections": "3, 5 / Authentication, SSO, MFA and passwordless",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "5e1929215373deb331ba0820d0f2c88e5f4001a0019c04814d3bb44d9b93ade1",
+      "guide_sections": "3, 5 / Workforce B2B versus external-tenant customer apps",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "9100dd88bdea78675277a5dc7140ed2b5d8122bf329d4692e3e228afb572a3c1",
+      "guide_sections": "3, 5 / Conditional Access signals and decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "b3fdb26b83917ca22ca491043060ac5a39a67cbc2debecc4d77cb48f1784d5d1",
+      "guide_sections": "3, 5 / Principal-role-scope, inheritance and data-plane boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "0f525c66c3222add724aa3a9c85d0dce395051bbb7617b2f8d4d021364557d94",
+      "guide_sections": "3 / Verify explicitly, least privilege and assume breach",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "5f77a401d608e093f72f6c0fe850746b58ddd372fe3da72c5f89e64839c45906",
+      "guide_sections": "3 / Layered independent controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "53d96c0a9a40356a5e881cf5811f1cf0dd9d60a160e2fc30658cce425419ea09",
+      "guide_sections": "3 / Defender posture/protection, recommendations and limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "23b07c38c0b1721013088d95e68441abe1903a6975219d450c3f12e784c82745",
+      "guide_sections": "4–5 / Resource/time/storage/transfer/region/license drivers; examples 1–2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "bf7997fdd0dcbb6c6c24aeb12b90e620b19d744ca7e07cf4aafa29d5ad0cc144",
+      "guide_sections": "4–5 / Planned estimate versus actual cost evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "4542e09fff342ff1192e6a9f2446fde3ad9dd882f727f03df1183a8fd4e0ea4c",
+      "guide_sections": "4–5 / Budget/forecast latency, spending-limit scope, commitments and allocation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "94980db885b93fec5f34c64b114fdb8fa67cf797512533d9d68a00300adc7b30",
+      "guide_sections": "4–5 / Resource tags versus cost-record inheritance; example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "e5d3d5539fe8e32f2b6ae851ed8b63496c0bd3ee37fbb1b8ae9f9a58bde6ca54",
+      "guide_sections": "4–5 / Purview governance, catalog, protection/risk/compliance scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "afe56e5c3b5dbe3e5f8081df1338cd0ab3582b676f2b6fd4c6ba4a11f31e5d09",
+      "guide_sections": "4–5 / Policy effects, initiative, remediation task and identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "8253d0148e9369df4cffa9a92f9d190d540607d1e37e5713236f44faa16da712",
+      "guide_sections": "4–5 example 6 / Delete/ReadOnly inheritance and management/data-plane boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "8ad830ced96c572862243d3a2d98831356610d324cba056477cef2e42a9b27a7",
+      "guide_sections": "4–5 / Portal visual discovery and operations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "ae9d278733575617a1e566bfd14a3f3aa1eeded497c07a51985cc6e6aa3ae693",
+      "guide_sections": "4–5 / Shell context, cost, CLI and PowerShell",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "54eab389ce7ef70d6324005191219693d90a08c911cbbcae9d301f28d8396846",
+      "guide_sections": "4–5 / Arc projects management without relocating machines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "aa8ec92d75ca11fc3d2beae404526a1b246a2055801cddf9e0bc5cc3a9715cc8",
+      "guide_sections": "4–5 / Declarative versus imperative, testing and state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "f4b9f07db9744037e6bf7d087c99143cfbbd1b275e86dbc915bbe47c8afdd408",
+      "guide_sections": "4–5 / ARM management plane, templates and Bicep",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "3ea24abce6cbaf6ee6d4bfb415037fd443d3b9c8f124a25dc837105060136863",
+      "guide_sections": "4–5 / Advisor categories and recommendation limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "d94128b7cd40e4227e23cb155ebc04dde852f9686c57e3f231a2fd4ade15fa89",
+      "guide_sections": "4–5 / Public status, personalized Service Health and individual Resource Health",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "1b9416a93e156a71cfd244efb0841d2e416b84329cf1d4f4cb502b5c9200df63",
+      "guide_sections": "4–5 / Metrics/logs, Log Analytics, alerts/action groups and App Insights",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AZ-900",
+        "title": "Microsoft Azure Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+        "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+        "snapshot_path": "data\\objective-snapshots\\az-900-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\az-900-official-status.json",
+        "previous_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+        "current_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+        "previous_status_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "current_status_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of July 20, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 68,
+    "reachable": 66,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "az-900-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+      "checked_at": "2026-09-28T10:35:11.705666+00:00",
+      "health": {
+        "id": "az-900-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+        "checked_at": "2026-09-28T10:35:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AZ-900: Microsoft Azure Fundamentals",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "0a5be7d1305b2fa707923cdf0a2017b73f6355c0233a7bc4c6c0a215dcc8e6f2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+      "sha256": "8ec0b4ddefe8f6232ad2bfe9601369993a60976f64100215dfd7edacd83a0559",
+      "text_characters": 8249
+    },
+    {
+      "id": "microsoft-az-900-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+      "checked_at": "2026-09-28T10:35:11.706088+00:00",
+      "health": {
+        "id": "microsoft-az-900-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+        "checked_at": "2026-09-28T10:35:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+        "content_type": "text/html",
+        "page_title": "Course AZ-900T00-A: Introduction to Cloud Infrastructure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+        "duration_signals": [],
+        "signal_fingerprint": "e619604ac3e1f3af280b81c87e80e13f0699c11fcc23fd6e17756fc56522a848",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/az-900t00",
+      "sha256": "3853daa312c984424a95481d02ad2624811f5f6c7aae43327a16f7a14bfd917c",
+      "text_characters": 1540
+    },
+    {
+      "id": "microsoft-cloud-product-docs",
+      "url": "https://learn.microsoft.com/en-us/docs/",
+      "checked_at": "2026-09-28T10:35:11.706470+00:00",
+      "health": {
+        "id": "microsoft-cloud-product-docs",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "checked_at": "2026-09-28T10:35:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/docs/",
+        "content_type": "text/html",
+        "page_title": "Technical documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/docs/",
+        "duration_signals": [],
+        "signal_fingerprint": "f8307f16939ece1f03f8b9b4eefe1ce0ee4e0acd22397e5436f194497e5570ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/docs/",
+      "sha256": "46afcdc31a830a4bf892f7e985a93d32ecc16935bebc766076632340694eed12",
+      "text_characters": 2294
+    },
+    {
+      "id": "pluralsight-az-900",
+      "url": "https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900",
+      "checked_at": "2026-09-28T10:35:12.065953+00:00",
+      "health": {
+        "id": "pluralsight-az-900",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900",
+        "checked_at": "2026-09-28T10:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900",
+        "duration_signals": [
+          "21 Hours"
+        ],
+        "signal_fingerprint": "7f5d08af8c959ac60187444d3bd68470b71b28447c32b6b42e575df22f3d156d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900",
+      "sha256": "4154527908b9c9ca45e6b696d7243d41f7b8269998debd330d24947533727478",
+      "text_characters": 3253
+    },
+    {
+      "id": "oreilly-az-900-video",
+      "url": "https://www.oreilly.com/videos/az-900-microsoft/9781806387694/",
+      "checked_at": "2026-09-28T10:35:12.121422+00:00",
+      "health": {
+        "id": "oreilly-az-900-video",
+        "url": "https://www.oreilly.com/videos/az-900-microsoft/9781806387694/",
+        "checked_at": "2026-09-28T10:35:12+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/az-900-microsoft/9781806387694/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-az-900-nikolai-schuler",
+      "url": "https://www.udemy.com/course/az-900-azure-certification-exam-prep/",
+      "checked_at": "2026-09-28T10:35:12.162776+00:00",
+      "health": {
+        "id": "udemy-az-900-nikolai-schuler",
+        "url": "https://www.udemy.com/course/az-900-azure-certification-exam-prep/",
+        "checked_at": "2026-09-28T10:35:12+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/az-900-azure-certification-exam-prep/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "linkedin-learning-az-900-microsoft-press",
+      "url": "https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press",
+      "checked_at": "2026-09-28T10:35:12.272104+00:00",
+      "health": {
+        "id": "linkedin-learning-az-900-microsoft-press",
+        "url": "https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press",
+        "checked_at": "2026-09-28T10:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Azure Fundamentals (AZ-900) Cert Prep by Microsoft Press Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press",
+        "duration_signals": [
+          "PT15M54S",
+          "PT1M11S",
+          "PT1M18S",
+          "PT1M21S",
+          "PT1M22S",
+          "PT1M28S",
+          "PT1M2S",
+          "PT1M32S",
+          "PT1M36S",
+          "PT1M38S",
+          "PT1M3S",
+          "PT1M40S",
+          "PT1M45S",
+          "PT1M46S",
+          "PT1M4S",
+          "PT1M55S",
+          "PT1M56S",
+          "PT1M57S",
+          "PT1M6S",
+          "PT2M17S",
+          "PT2M18S",
+          "PT2M21S",
+          "PT2M30S",
+          "PT2M3S",
+          "PT2M52S",
+          "PT2M5S",
+          "PT2M6S",
+          "PT2M7S",
+          "PT2M9S",
+          "PT3M15S"
+        ],
+        "signal_fingerprint": "e9c234dc954bc644bd14f42161a43592bb7c215cbacb436ad0f2006a898f8791",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press",
+      "sha256": "4e15ef9370979d5ecc0ab97353d358d07d82d5c07c8d093fbbdcd369bbfe9fca",
+      "text_characters": 6714
+    },
+    {
+      "id": "coursera-microsoft-az-900-specialization",
+      "url": "https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep",
+      "checked_at": "2026-09-28T10:35:12.323280+00:00",
+      "health": {
+        "id": "coursera-microsoft-az-900-specialization",
+        "url": "https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep",
+        "checked_at": "2026-09-28T10:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep",
+        "content_type": "text/html",
+        "page_title": "Microsoft Azure Fundamentals AZ-900 Exam Prep",
+        "canonical_url": "https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep",
+        "duration_signals": [
+          "10 hours",
+          "18 hours",
+          "20 hours",
+          "21 hours",
+          "4 hours",
+          "P3M"
+        ],
+        "signal_fingerprint": "702b09d7437433c6eaeb85f5baac0d56fb405afc3cb07ccef2e20d31b3cf9a36",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep",
+      "sha256": "05af9d6b31a81137eedfde7bb127f9b8479f936e0cb0c10d401db3d2d1febd09",
+      "text_characters": 14710
+    },
+    {
+      "id": "whizlabs-az-900",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-az-900/",
+      "checked_at": "2026-09-28T10:35:12.718421+00:00",
+      "health": {
+        "id": "whizlabs-az-900",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-az-900/",
+        "checked_at": "2026-09-28T10:35:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-azure-certification-az-900/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AZ-900: Microsoft Azure Fundamentals Certification Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-azure-certification-az-900/",
+        "duration_signals": [],
+        "signal_fingerprint": "667f005d3b18983c4d77fc598f40018f0db38a3762958bc0c78ca4a6cdc0e1d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-azure-certification-az-900/",
+      "sha256": "29e6444f400e34392f9a56743a01737bba0bf852df52bb9fe030dc7b9336c985",
+      "text_characters": 57
+    },
+    {
+      "id": "john-savill-az-900-study-cram",
+      "url": "https://www.youtube.com/watch?v=tQp1YkB2Tgs",
+      "checked_at": "2026-09-28T10:35:13.463031+00:00",
+      "health": {
+        "id": "john-savill-az-900-study-cram",
+        "url": "https://www.youtube.com/watch?v=tQp1YkB2Tgs",
+        "checked_at": "2026-09-28T10:35:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=tQp1YkB2Tgs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AZ-900 Azure Fundamentals Study Cram - 2022 Edition! - OVER ONE MILLION VIEWS!",
+        "canonical_url": "https://www.youtube.com/watch?v=tQp1YkB2Tgs",
+        "duration_signals": [],
+        "signal_fingerprint": "bdfd51ee0fc37c41e67ca6786435db2e4dfa32d52f2e283186020f7680723de4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=tQp1YkB2Tgs",
+      "sha256": "aaa0dc461b279b82df95af320d0c869c28cefe4c8b28f4515ec75e17d9bf5af9",
+      "text_characters": 241
+    },
+    {
+      "id": "john-savill-certification-materials",
+      "url": "https://github.com/johnthebrit/CertificationMaterials",
+      "checked_at": "2026-09-28T10:35:14.295856+00:00",
+      "health": {
+        "id": "john-savill-certification-materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "checked_at": "2026-09-28T10:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/CertificationMaterials: A collection of materials related to my certification videos",
+        "canonical_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "duration_signals": [],
+        "signal_fingerprint": "d6d516a3770bdb489dfbcc927eb5ab5fb54a84e092f0a8be465286f256859485",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+      "sha256": "a52e009b0b9d652b58a4f2ff8ecc0dd5959649ecbc3feaf4d488e81ef4d6014b",
+      "text_characters": 2153
+    },
+    {
+      "id": "john-savill-az-900-course-materials",
+      "url": "https://github.com/johnthebrit/AZ900CertCourse",
+      "checked_at": "2026-09-28T10:35:14.340356+00:00",
+      "health": {
+        "id": "john-savill-az-900-course-materials",
+        "url": "https://github.com/johnthebrit/AZ900CertCourse",
+        "checked_at": "2026-09-28T10:35:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/AZ900CertCourse",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/AZ900CertCourse: Repo for the AZ-900 Certification Course Handout",
+        "canonical_url": "https://github.com/johnthebrit/AZ900CertCourse",
+        "duration_signals": [],
+        "signal_fingerprint": "c4ad86f4a2b55f72090d0f1dd46694b629becfc70a930dae3355463a3901ef2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/AZ900CertCourse",
+      "sha256": "fb8ab3f083611bce31a9a14b0c31dab0f8b05387c12ef9e08f62db49d815e38f",
+      "text_characters": 1150
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-28T10:35:15.102625+00:00",
+      "health": {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-28T10:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "6e153c603f2844d862347615702cb5f99218239ef0c66eb59014552573b7c08e",
+      "text_characters": 182
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T10:35:15.469436+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T10:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "c9df2567b53e900b2f11dc9537eadf5ffafe35299e1e92f0af4bb3276159c8ee",
+      "text_characters": 180
+    },
+    {
+      "id": "skilling-hub-levelup-az-900",
+      "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058307",
+      "checked_at": "2026-09-28T10:35:15.652442+00:00",
+      "health": {
+        "id": "skilling-hub-levelup-az-900",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058307",
+        "checked_at": "2026-09-28T10:35:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058307",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058307",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "measureup-az-900-practice-test",
+      "url": "https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html",
+      "checked_at": "2026-09-28T10:35:16.183105+00:00",
+      "health": {
+        "id": "measureup-az-900-practice-test",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html",
+        "checked_at": "2026-09-28T10:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test AZ-900: Microsoft Azure Fundamentals",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6272fcbad61835329d8237b04effd626518a7979322befbe5ccfee09dcd0ae04",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html",
+      "sha256": "a0cda997a3edd7fbc19eea4406666cb07df599a451f98a3a92b1c9ab10d92c7c",
+      "text_characters": 15227
+    },
+    {
+      "id": "microsoft-practice-assessment-catalog",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "checked_at": "2026-09-28T10:35:16.545479+00:00",
+      "health": {
+        "id": "microsoft-practice-assessment-catalog",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "checked_at": "2026-09-28T10:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "content_type": "text/html",
+        "page_title": "Practice Assessments for Microsoft Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "duration_signals": [],
+        "signal_fingerprint": "3b3d08a6c02aa09ec47d9b5aed16e0896e6aa2bf3c6585338229fa25336dbba8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "sha256": "71e82073173e2078d42af6dfd1c2d62b2e60046323914eff1d6d592517126b55",
+      "text_characters": 5931
+    },
+    {
+      "id": "microsoft-az-900-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T10:35:16.570392+00:00",
+      "health": {
+        "id": "microsoft-az-900-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T10:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "2fca4fffdebef8c67ecf65cff26aca8d3b8b4f4faac160c6c07d66fe1e42e419",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification",
+      "sha256": "3256c65126239e306557ac90253e8a86d5d8d93871a029d06e4c20c560ea6526",
+      "text_characters": 0
+    },
+    {
+      "id": "oreilly-certification-practice-tests",
+      "url": "https://www.oreilly.com/products/certification-prep.html",
+      "checked_at": "2026-09-28T10:35:16.768667+00:00",
+      "health": {
+        "id": "oreilly-certification-practice-tests",
+        "url": "https://www.oreilly.com/products/certification-prep.html",
+        "checked_at": "2026-09-28T10:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/products/certification-prep.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification Prep - O'Reilly Media",
+        "canonical_url": "https://www.oreilly.com/products/certification-prep.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fd777d210877dd6aedc585cb7c2c23aa7695771f0ec79fd82360fd5ce2c5cd7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/products/certification-prep.html",
+      "sha256": "7a0c67a13421609867a059a395f44c8d31036bce9d21043ee3ea0b5005eaa18c",
+      "text_characters": 160
+    },
+    {
+      "id": "azure-advisor-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview",
+      "checked_at": "2026-09-28T10:35:16.815879+00:00",
+      "health": {
+        "id": "azure-advisor-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview",
+        "checked_at": "2026-09-28T10:35:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview",
+        "content_type": "text/html",
+        "page_title": "Introduction to Azure Advisor - Azure Advisor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "786738173d228a4b961f7419ef6461945b9febda78477228696d9d0556aa1ef6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/advisor/advisor-overview",
+      "sha256": "3863b6da7b52739db7bf8dc4cee44bb43eb7c6a574329306277be5a7f792d754",
+      "text_characters": 5444
+    },
+    {
+      "id": "azure-architecture-center",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "checked_at": "2026-09-28T10:35:17.115089+00:00",
+      "health": {
+        "id": "azure-architecture-center",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/",
+        "checked_at": "2026-09-28T10:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+        "content_type": "text/html",
+        "page_title": "Azure Architecture Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+        "duration_signals": [],
+        "signal_fingerprint": "5e930d51ad5262e7c5335652b9685d89308f99a2bfb77c192e4568c807227abc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "sha256": "af8bd6321b241b587ecf99d585fcb84b79dfeb56ee0bc90ee6c3909c4307113d",
+      "text_characters": 2468
+    },
+    {
+      "id": "azure-compute-decision-guide",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+      "checked_at": "2026-09-28T10:35:17.404467+00:00",
+      "health": {
+        "id": "azure-compute-decision-guide",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+        "checked_at": "2026-09-28T10:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+        "content_type": "text/html",
+        "page_title": "Choose an Azure Compute Service - Azure Architecture Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+        "duration_signals": [],
+        "signal_fingerprint": "fa7e144973c30a692a1abd7323494cadb1e14664613f05578e0e22252b278bf3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree",
+      "sha256": "c664122255f56dc3018930669342bbc137840194f31f0db6fe8c8cc284fcab17",
+      "text_characters": 17350
+    },
+    {
+      "id": "azure-arc-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+      "checked_at": "2026-09-28T10:35:17.631571+00:00",
+      "health": {
+        "id": "azure-arc-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+        "checked_at": "2026-09-28T10:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+        "content_type": "text/html",
+        "page_title": "Azure Arc overview - Azure Arc",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "fae835ca02233d7c239b15df6428fcbe7c13b14e722a052624910b55d74b2d42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-arc/overview",
+      "sha256": "7fdab3c119fe02fa390bce79fb688eab345f9581b4967411e1da5ed70f073506",
+      "text_characters": 7627
+    },
+    {
+      "id": "azure-monitor-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+      "checked_at": "2026-09-28T10:35:17.814219+00:00",
+      "health": {
+        "id": "azure-monitor-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "checked_at": "2026-09-28T10:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "content_type": "text/html",
+        "page_title": "Azure Monitor documentation - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b8042538accb1b4c6598ef0180024e4b6e339af176bad5853229d232ea221d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+      "sha256": "2e3b09dacb53b527686c309ee02d828688b8aeeb936f45394f8a98992794a133",
+      "text_characters": 2069
+    },
+    {
+      "id": "azure-resource-locks",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+      "checked_at": "2026-09-28T10:35:17.883935+00:00",
+      "health": {
+        "id": "azure-resource-locks",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+        "checked_at": "2026-09-28T10:35:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+        "content_type": "text/html",
+        "page_title": "Lock your Azure resources to protect your infrastructure - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "c4de16cdf3560cd0a8d60d01c66c7ebe9dc650be9f829096e801f762b73f9920",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+      "sha256": "53dadf001b65176351fa5390fe065a18008d2c618e67ce2aeba216dfd1f1ffe3",
+      "text_characters": 24299
+    },
+    {
+      "id": "azure-resource-manager-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+      "checked_at": "2026-09-28T10:35:18.026906+00:00",
+      "health": {
+        "id": "azure-resource-manager-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Resource Manager? - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "64832d7903eef552a645e66013ba359ec92d5c5652da03f33408249fe07e7f68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+      "sha256": "669361a915ab01b67b26b9e84ba7a04622b01ca4a6ec83a101433f6fc16d6f91",
+      "text_characters": 13523
+    },
+    {
+      "id": "azure-resource-organization-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+      "checked_at": "2026-09-28T10:35:18.091373+00:00",
+      "health": {
+        "id": "azure-resource-organization-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+        "content_type": "text/html",
+        "page_title": "Organize your Azure resources effectively - Cloud Adoption Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "e71ee4ba1311788f04971ab07f708f9d2a426e4aa4e261accf72f2cf073b5f7b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources",
+      "sha256": "fe342eecbfdd6709110f7d302aa5b20488ba08ebb45352a78565ef4331e954a5",
+      "text_characters": 4976
+    },
+    {
+      "id": "azure-finops-guidance",
+      "url": "https://learn.microsoft.com/en-us/cloud-computing/finops/",
+      "checked_at": "2026-09-28T10:35:18.184732+00:00",
+      "health": {
+        "id": "azure-finops-guidance",
+        "url": "https://learn.microsoft.com/en-us/cloud-computing/finops/",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cloud-computing/finops/",
+        "content_type": "text/html",
+        "page_title": "FinOps documentation - Cloud Computing",
+        "canonical_url": "https://learn.microsoft.com/en-us/cloud-computing/finops/",
+        "duration_signals": [],
+        "signal_fingerprint": "c55a49e4e63f62ea05b646d3805225e4726803c419bf4ba401e0ed1819b293d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cloud-computing/finops/",
+      "sha256": "c5aa82b9db198dbb6f40306ebfe9f66c6d02d12c22c8eb0174d1f29fdc8cf8b3",
+      "text_characters": 1828
+    },
+    {
+      "id": "azure-cost-management-billing-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview",
+      "checked_at": "2026-09-28T10:35:18.373228+00:00",
+      "health": {
+        "id": "azure-cost-management-billing-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview",
+        "content_type": "text/html",
+        "page_title": "Overview of Billing - Microsoft Cost Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview",
+        "duration_signals": [
+          "72 hours"
+        ],
+        "signal_fingerprint": "34d03879c6ab0f26b25500986bf424bfae3ac771477642ffaab7a44d0ebe3084",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview",
+      "sha256": "1ea2de695c93c383c5b5daa46258afa45024357aaee92ce57ded3e727f7e09c8",
+      "text_characters": 13924
+    },
+    {
+      "id": "azure-data-box-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "checked_at": "2026-09-28T10:35:18.377173+00:00",
+      "health": {
+        "id": "azure-data-box-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Azure Data Box overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+        "duration_signals": [
+          "72 hours"
+        ],
+        "signal_fingerprint": "f286203efcb610933ad1e265db5ffd015b86a3dab12a39ee7d53a72b13101df3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databox/data-box-overview",
+      "sha256": "af7dbc92da457f333e6b2ee48b9202323465f56de77a6f40defb1855a73715c7",
+      "text_characters": 21143
+    },
+    {
+      "id": "azure-governance-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/",
+      "checked_at": "2026-09-28T10:35:18.524984+00:00",
+      "health": {
+        "id": "azure-governance-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/governance/",
+        "content_type": "text/html",
+        "page_title": "Azure governance documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/governance/",
+        "duration_signals": [],
+        "signal_fingerprint": "28bd96ce3b6eed61dc2db0b6f1d51b091f2929802bb3bbb4ea1f6506902f8978",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/governance/",
+      "sha256": "40c51ae16d258cab6bce4094d96b851fc783b269dfb4c51fbbf664375ba8d8d7",
+      "text_characters": 1991
+    },
+    {
+      "id": "azure-policy-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+      "checked_at": "2026-09-28T10:35:18.643428+00:00",
+      "health": {
+        "id": "azure-policy-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of Azure Policy - Azure Policy",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "3b25111e7b495d9514b7c556634ebe34b5533258e3d48e8cf89e5e1f6df20e43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+      "sha256": "edd2a86be1e01e6ca14f7aff8a4a978753a87d303449409e07bd89440c3a544a",
+      "text_characters": 20990
+    },
+    {
+      "id": "azure-migrate-services-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+      "checked_at": "2026-09-28T10:35:18.644062+00:00",
+      "health": {
+        "id": "azure-migrate-services-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate",
+        "content_type": "text/html",
+        "page_title": "About Azure Migrate - Azure Migrate",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate",
+        "duration_signals": [],
+        "signal_fingerprint": "0fb70c8b57b94d0c36697ba983c2b17ffde453cc348ca8139107b0c60e46c122",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview?view=migrate",
+      "sha256": "446403b9489996548d762c1cc30d0d367276dcb31e2cc80135ec54645e93f061",
+      "text_characters": 10377
+    },
+    {
+      "id": "azure-networking-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/networking/",
+      "checked_at": "2026-09-28T10:35:18.773095+00:00",
+      "health": {
+        "id": "azure-networking-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "content_type": "text/html",
+        "page_title": "Azure networking documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "duration_signals": [],
+        "signal_fingerprint": "6b08bb2025d276623c2dd9cf2776e805f6651f7e37fca9851410aec916e01efa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/networking/",
+      "sha256": "418628b307c57378d0936ab2ddd375de4dff84ab068cef6ba019f49f0e3d7f92",
+      "text_characters": 2711
+    },
+    {
+      "id": "azure-networking-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview",
+      "checked_at": "2026-09-28T10:35:18.952366+00:00",
+      "health": {
+        "id": "azure-networking-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview",
+        "checked_at": "2026-09-28T10:35:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/networking/networking-overview",
+        "content_type": "text/html",
+        "page_title": "Azure Networking Services and Categories",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/networking/networking-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "e6eb1b927ed3c762f474edbaf9eb84bdc4469a44fa68347b6e1bc91d9ef9f36f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/networking/networking-overview",
+      "sha256": "2d2467a287cd152679c1cdeac2dd27fbe8439d94a9b54cf2e2e9b7dcdcac6814",
+      "text_characters": 18939
+    },
+    {
+      "id": "azure-private-endpoint-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+      "checked_at": "2026-09-28T10:35:19.072744+00:00",
+      "health": {
+        "id": "azure-private-endpoint-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "content_type": "text/html",
+        "page_title": "What is a private endpoint? - Azure Private Link",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "07a2817e306ddbcf9c92585f7e086914e5e713a6819112f09345e2c125ed75f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+      "sha256": "9f7060962c2535b89d39770aae92664aaf6d0dcd610708cde38be801847631e2",
+      "text_characters": 17744
+    },
+    {
+      "id": "azure-reliability-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/reliability/",
+      "checked_at": "2026-09-28T10:35:19.165390+00:00",
+      "health": {
+        "id": "azure-reliability-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/reliability/",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/reliability/",
+        "content_type": "text/html",
+        "page_title": "Azure reliability documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/reliability/",
+        "duration_signals": [],
+        "signal_fingerprint": "cd75aa2e019e640e45a97401f5682320e531634394d38ad8e4066cfbcfa68d1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/reliability/",
+      "sha256": "41ba8716129db1c6e0ec9532d2fdd2740c3b76da0e9387b717b2e0c48a96350e",
+      "text_characters": 21996
+    },
+    {
+      "id": "azure-regions-list",
+      "url": "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+      "checked_at": "2026-09-28T10:35:19.418017+00:00",
+      "health": {
+        "id": "azure-regions-list",
+        "url": "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+        "content_type": "text/html",
+        "page_title": "List of Azure regions",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+        "duration_signals": [],
+        "signal_fingerprint": "f94d2fd11965c1d27d3194e2c9fcccb4df8cb33be43213942c88e49fe6706daa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+      "sha256": "eddbf31ed8b8a8803d15e9e70599624752dd7b0db647f618fb7066268c4d9d2b",
+      "text_characters": 10676
+    },
+    {
+      "id": "azure-rbac-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "checked_at": "2026-09-28T10:35:19.511165+00:00",
+      "health": {
+        "id": "azure-rbac-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure role-based access control (Azure RBAC)?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "98a40df326b84471eaddb068d79cb5cc13ae30ac24140303aadfd49083ce768a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "sha256": "b563aa6883f208bb780ae25c4aabe4eb20d1a6e8b8376639c105858e5044815c",
+      "text_characters": 8331
+    },
+    {
+      "id": "azure-shared-responsibility",
+      "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "checked_at": "2026-09-28T10:35:19.659038+00:00",
+      "health": {
+        "id": "azure-shared-responsibility",
+        "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+        "content_type": "text/html",
+        "page_title": "Shared responsibility in the cloud - Microsoft Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+        "duration_signals": [],
+        "signal_fingerprint": "b3190a6500d2beccb260c8fe4a4a1cfd6fb0c9a3c08f52c510f12ac5efe9a3fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "sha256": "e0ab3f6b2ef6a08f486bb7681f8c5514f1a4e9da9d6ba2a720b86eaed72d91ce",
+      "text_characters": 7354
+    },
+    {
+      "id": "azure-service-health-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/service-health/overview",
+      "checked_at": "2026-09-28T10:35:19.739055+00:00",
+      "health": {
+        "id": "azure-service-health-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/service-health/overview",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/service-health/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Service Health? - Azure Service Health",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/service-health/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "623de61d9093ebc88d8629b3668191ee203423177d578395e9b373d0c96818de",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/service-health/overview",
+      "sha256": "eab240f0fd05b8bcca190dd331141b9b1c6262f66d2790bc32fb3e7f7bed424e",
+      "text_characters": 3382
+    },
+    {
+      "id": "azure-storage-introduction",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "checked_at": "2026-09-28T10:35:19.821482+00:00",
+      "health": {
+        "id": "azure-storage-introduction",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "content_type": "text/html",
+        "page_title": "Introduction to Azure Storage - Cloud storage on Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "c79856e44faa8eb8d2876772762ab101f276d87dad19adc3eb42f94bbe5402f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "sha256": "e47601ad8e9b8f1246ee947288a81f7dec9d060a9ef70c84e59015fbca31e969",
+      "text_characters": 23030
+    },
+    {
+      "id": "azure-storage-redundancy",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "checked_at": "2026-09-28T10:35:19.997942+00:00",
+      "health": {
+        "id": "azure-storage-redundancy",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "checked_at": "2026-09-28T10:35:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "content_type": "text/html",
+        "page_title": "Data redundancy - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "196eb2796c65d0a6e33ef25729aa04030364cf4ab46ca59378fa10aa0855f98a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "sha256": "8ee2079ba428afa9cdb5ae04513667e7a87cd607fd259e957328a29ad91cc401",
+      "text_characters": 20531
+    },
+    {
+      "id": "azure-storage-azcopy",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "checked_at": "2026-09-28T10:35:20.009768+00:00",
+      "health": {
+        "id": "azure-storage-azcopy",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "content_type": "text/html",
+        "page_title": "Copy or move data to Azure Storage by using AzCopy v10",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "duration_signals": [],
+        "signal_fingerprint": "4c4e8aa1aaddffed3199ee9df7a4d860cd8a079fc4817cd405a608b02e6d6103",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "sha256": "b11a9712fefef3c24262ae1db3d3f33f5e9c447b22c909c00cf4ce7ae6991bbb",
+      "text_characters": 8646
+    },
+    {
+      "id": "azure-file-sync-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "checked_at": "2026-09-28T10:35:20.127153+00:00",
+      "health": {
+        "id": "azure-file-sync-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+        "content_type": "text/html",
+        "page_title": "What is Azure File Sync?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "0059583dc5197634ae0c7d0625b4df738f38a816b80eba7ee13f73c0e2cb23a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction",
+      "sha256": "407f51df42e174140f9ad229349f3a91ab8226b35efa345fe76a7aa2abaadc54",
+      "text_characters": 2736
+    },
+    {
+      "id": "azure-storage-explorer-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "checked_at": "2026-09-28T10:35:20.312448+00:00",
+      "health": {
+        "id": "azure-storage-explorer-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+        "content_type": "text/html",
+        "page_title": "Get started with Storage Explorer",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+        "duration_signals": [],
+        "signal_fingerprint": "78c20d89d73aad8c6c07b8fd2f9cd3ed3dbb14978e285c65fc52da19cc9c394d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer",
+      "sha256": "11043077bb734ee00c64004d83a5caf3b249b5491ba625942b9094b38b06b6a7",
+      "text_characters": 13421
+    },
+    {
+      "id": "azure-virtual-machines-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "checked_at": "2026-09-28T10:35:20.394826+00:00",
+      "health": {
+        "id": "azure-virtual-machines-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of virtual machines in Azure - Azure Virtual Machines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "8e75e88ca49ed0780d41b5c9ea2588ea5240274956116cb50f01fb1ac556ea88",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "sha256": "6a0c889a0e2ec9092ee03a91cb1d13d8150168b5eb3ac321a6f325f818d1ff42",
+      "text_characters": 16717
+    },
+    {
+      "id": "azure-virtual-network-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "checked_at": "2026-09-28T10:35:20.610641+00:00",
+      "health": {
+        "id": "azure-virtual-network-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Virtual Network?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "352e34be0a40493d49aadd8630c7b6f7673e337f14cd8db852b523de79799903",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "sha256": "85e686395c40ece0d8d6e574341754eb68e182b144715b4a46c9153f8bd887dc",
+      "text_characters": 8318
+    },
+    {
+      "id": "microsoft-az-900-certification-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification",
+      "checked_at": "2026-09-28T10:35:20.713947+00:00",
+      "health": {
+        "id": "microsoft-az-900-certification-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Fundamentals - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+        "duration_signals": [
+          "24 hours",
+          "45 minutes"
+        ],
+        "signal_fingerprint": "1294dee25803df3656848727ada22d483ce354fa1c4665b2c525c8e708c53bf0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification",
+      "sha256": "d0832469b2ec36a605173c4ee2b30e2b4a2e82979288e87b3299c3c4972dd937",
+      "text_characters": 4037
+    },
+    {
+      "id": "microsoft-entra-documentation",
+      "url": "https://learn.microsoft.com/en-us/entra/",
+      "checked_at": "2026-09-28T10:35:20.714295+00:00",
+      "health": {
+        "id": "microsoft-entra-documentation",
+        "url": "https://learn.microsoft.com/en-us/entra/",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/",
+        "duration_signals": [],
+        "signal_fingerprint": "b0990e11213dbb07758bf862fc37602de88faad53cf9c123946d2290c882a076",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/",
+      "sha256": "018e93cd30dd269cdb825759acf598be6ed7af362d4b402e4c84a306aa19a865",
+      "text_characters": 2742
+    },
+    {
+      "id": "microsoft-entra-overview",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis",
+      "checked_at": "2026-09-28T10:35:20.876496+00:00",
+      "health": {
+        "id": "microsoft-entra-overview",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whatis",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Entra? - Microsoft Entra",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+        "duration_signals": [],
+        "signal_fingerprint": "c04830850e1117a4441b6ae1385dea73767a01f4bc000fa99b87804d517ca905",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+      "sha256": "7ac927cfbbb3398137515d5d076178acea7187f48d4cf0a748733ad26cf5c14a",
+      "text_characters": 8321
+    },
+    {
+      "id": "microsoft-entra-conditional-access-overview",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+      "checked_at": "2026-09-28T10:35:20.968735+00:00",
+      "health": {
+        "id": "microsoft-entra-conditional-access-overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "checked_at": "2026-09-28T10:35:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Conditional Access: Zero Trust Policy Engine - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "cc2493e68987c16a4861a01ff9706f70bea57bad1554d3ee37e491dabc34cb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+      "sha256": "2162beefaae5d968ae9101a92dae08b66a4fc15d073e166d3b696d2a36da1d1b",
+      "text_characters": 7161
+    },
+    {
+      "id": "microsoft-entra-domain-services-overview",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/domain-services/overview",
+      "checked_at": "2026-09-28T10:35:21.004927+00:00",
+      "health": {
+        "id": "microsoft-entra-domain-services-overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/domain-services/overview",
+        "checked_at": "2026-09-28T10:35:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/domain-services/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of Microsoft Entra Domain Services - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/domain-services/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "367d00fba2197f52c0ad00291c295d218a9ef9f1c552580f0328c57ae8597dfd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/domain-services/overview",
+      "sha256": "6910b5e458f41d5031cab8757b243076901ee252310d63b7953ffab17018c8ed",
+      "text_characters": 8928
+    },
+    {
+      "id": "microsoft-purview-overview",
+      "url": "https://learn.microsoft.com/en-us/purview/purview",
+      "checked_at": "2026-09-28T10:35:21.210248+00:00",
+      "health": {
+        "id": "microsoft-purview-overview",
+        "url": "https://learn.microsoft.com/en-us/purview/purview",
+        "checked_at": "2026-09-28T10:35:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/purview",
+        "content_type": "text/html",
+        "page_title": "Learn about Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/purview",
+        "duration_signals": [],
+        "signal_fingerprint": "a63f1f145dc82a676043264698ff4cb997bbfac6712de404dbc9101a5a402e89",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/purview",
+      "sha256": "ef4f40560c5eab5f0176d289573c99356ca33daca819fa2e4667e14b2de32325",
+      "text_characters": 5148
+    },
+    {
+      "id": "az900-budgets",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+      "checked_at": "2026-09-28T10:37:53.226598+00:00",
+      "health": {
+        "id": "az900-budgets",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+        "content_type": "text/html",
+        "page_title": "Tutorial - Create and manage budgets - Microsoft Cost Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+        "duration_signals": [
+          "24 hours",
+          "48 hours"
+        ],
+        "signal_fingerprint": "8e4f5c7d1531bc3eb539ea4c6b713405d64721df72a8ec617b217ed2ed04f56a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+      "sha256": "340a6fc5ab08e7ff7faa365145e1961ad7d10fe5cad09fdec62f23d3859e4e68",
+      "text_characters": 19091
+    },
+    {
+      "id": "az900-spending-limit",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit",
+      "checked_at": "2026-09-28T10:37:53.227402+00:00",
+      "health": {
+        "id": "az900-spending-limit",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit",
+        "content_type": "text/html",
+        "page_title": "Azure spending limit - Microsoft Cost Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit",
+        "duration_signals": [],
+        "signal_fingerprint": "e0240b3212064656259ca72b5b48671d32f1852a77e6f6dd9f0814597bf82105",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit",
+      "sha256": "4e685887329427c6f62cde539f3a681e83c825ba1dd24ce64e72ce62b15c7a01",
+      "text_characters": 7600
+    },
+    {
+      "id": "az900-tags",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources",
+      "checked_at": "2026-09-28T10:37:53.227819+00:00",
+      "health": {
+        "id": "az900-tags",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources",
+        "content_type": "text/html",
+        "page_title": "Use tags to organize your Azure resources and management hierarchy - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "fa530d6c67946b4d735cb5363bf690d7eb9bb426411a71449d3f32c8f8254840",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources",
+      "sha256": "3d934a4dc291fd525eab4f42766235eb411afe6fc68b7e4d3fabd7c9c9310aaf",
+      "text_characters": 7405
+    },
+    {
+      "id": "az900-cost-tags",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance",
+      "checked_at": "2026-09-28T10:37:53.663316+00:00",
+      "health": {
+        "id": "az900-cost-tags",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance",
+        "content_type": "text/html",
+        "page_title": "Group and allocate costs using tag inheritance - Microsoft Cost Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "a6d43c506d4d66205abacb88a24bdfbb3fb5be0b57be194b9af03f13af8609ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance",
+      "sha256": "22c5fa3d9cbfbcb728269bfccee641fb3404b519917baa17414427bb097681e7",
+      "text_characters": 6213
+    },
+    {
+      "id": "az900-tiers",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "checked_at": "2026-09-28T10:37:53.677720+00:00",
+      "health": {
+        "id": "az900-tiers",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+        "content_type": "text/html",
+        "page_title": "Access tiers for blob data - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+        "duration_signals": [
+          "15 hours"
+        ],
+        "signal_fingerprint": "df77abf93a442a726ed65a4301c5d99dfe5fbc7797b8e35421d8ba0bbeae2ecc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "sha256": "56164a3d4cb91601ab5fd87a7cbdee934cd6012c86bf0ec9f7deb2756633ecfc",
+      "text_characters": 18586
+    },
+    {
+      "id": "az900-accounts",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview",
+      "checked_at": "2026-09-28T10:37:53.740831+00:00",
+      "health": {
+        "id": "az900-accounts",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview",
+        "content_type": "text/html",
+        "page_title": "Storage Account Overview - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "840eb97c93730c73336d1766949036408885fd7a3e0dc2d16a4073584e9a62d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview",
+      "sha256": "09bdc9789f8c1238fdcb7f53620b8e281c89571d667255e8ca9a4e15a529460c",
+      "text_characters": 26776
+    },
+    {
+      "id": "az900-lifetime",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy",
+      "checked_at": "2026-09-28T10:37:53.933890+00:00",
+      "health": {
+        "id": "az900-lifetime",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "content_type": "text/html",
+        "page_title": "Credential expiration policies",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "02be00ecc69bd6d09b0cc1d64114ccd75ee92143ee2f3928f7523e1af9cbbedf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "sha256": "33878c765cca11bb19e24534d8af1f50eba2ef1e32b94e5a6b39f8aac1309c8e",
+      "text_characters": 2379
+    },
+    {
+      "id": "az305-regions",
+      "url": "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+      "checked_at": "2026-09-28T10:37:53.968677+00:00",
+      "health": {
+        "id": "az305-regions",
+        "url": "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+        "checked_at": "2026-09-28T10:37:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+        "content_type": "text/html",
+        "page_title": "Azure region pairs and nonpaired regions",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+        "duration_signals": [],
+        "signal_fingerprint": "135d4184cb4b1a94fb0dc7ca578026d5868c742f45aa412aa040c5062f9a2ea2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+      "sha256": "11932e79cb6c83415828b3ac413459718b6ca8b2626ec177a79375b5ecbd6a87",
+      "text_characters": 8657
+    },
+    {
+      "id": "az900-vm-states",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing",
+      "checked_at": "2026-09-28T10:37:54.103304+00:00",
+      "health": {
+        "id": "az900-vm-states",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing",
+        "content_type": "text/html",
+        "page_title": "States and billing status - Azure Virtual Machines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing",
+        "duration_signals": [],
+        "signal_fingerprint": "8e0c3e3c77481da44c745ee8e3ad0e299464e1d686f900cf1cb4c0ec142d5a4b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing",
+      "sha256": "c59eeece26a4024408e3d20ed7e564b21f692315e24e3d4196ddd73795054fcd",
+      "text_characters": 5419
+    },
+    {
+      "id": "az900-cloud-shell",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-shell/overview",
+      "checked_at": "2026-09-28T10:37:54.239098+00:00",
+      "health": {
+        "id": "az900-cloud-shell",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-shell/overview",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cloud-shell/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Cloud Shell? - Azure Cloud Shell",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cloud-shell/overview",
+        "duration_signals": [
+          "20 minutes"
+        ],
+        "signal_fingerprint": "66d30668881f256d7d09ec971c6f1af055986770294d9d4cd96c4d8126c561cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cloud-shell/overview",
+      "sha256": "929ffd3c93c906fa13d5b16638534cff0b38332a2952531d601bd8e5b6fff32f",
+      "text_characters": 2331
+    },
+    {
+      "id": "sc100-policy-remediation",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+      "checked_at": "2026-09-28T10:37:54.399640+00:00",
+      "health": {
+        "id": "sc100-policy-remediation",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+        "content_type": "text/html",
+        "page_title": "Remediate non-compliant resources - Azure Policy",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "48cc540f68dd1cf40ff28a7af257cb8c888a86bdb2ab6f7139245ef548765b73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+      "sha256": "53e5a3597acf4cbdac490dd8bb1855892460e4acf96cbe37d26093ee06512714",
+      "text_characters": 19812
+    },
+    {
+      "id": "az900-external",
+      "url": "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview",
+      "checked_at": "2026-09-28T10:37:54.462660+00:00",
+      "health": {
+        "id": "az900-external",
+        "url": "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra External ID Overview - Microsoft Entra External ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "9c1159c7376dec4a26171a40b2785d4a3fcecc662b3a18a47a73e4666c5c73c3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview",
+      "sha256": "fd2f6a2c49c77f63f98fa13e622a8c8e5260fa3ee2e7e64274dbe7981e456d87",
+      "text_characters": 18068
+    },
+    {
+      "id": "az900-reservations",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "checked_at": "2026-09-28T10:37:54.463204+00:00",
+      "health": {
+        "id": "az900-reservations",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+        "content_type": "text/html",
+        "page_title": "What are Azure Reservations? - Microsoft Cost Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+        "duration_signals": [],
+        "signal_fingerprint": "0d641c0d1cbdcdba0770db0d928c5b9595569b50b0cf0a29682fa8f56ceccaa5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "sha256": "423232fab2be5a7011913b127f2425504853b3e0b32311d92f356cecd3f0c79a",
+      "text_characters": 10001
+    },
+    {
+      "id": "az900-savings",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "checked_at": "2026-09-28T10:37:54.781540+00:00",
+      "health": {
+        "id": "az900-savings",
+        "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview",
+        "content_type": "text/html",
+        "page_title": "What are savings plans? - Microsoft Cost Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "64d837bb9a81d0ffb9c5d6308070e5c9cacaea2e554b902e4a21101766984ee1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-overview",
+      "sha256": "181e333b2029df840f8b4e706fce04c3703a178b498bd86e3464caa324fe2082",
+      "text_characters": 7458
+    },
+    {
+      "id": "az900-forecast-blog",
+      "url": "https://azure.microsoft.com/en-us/blog/prevent-exceeding-azure-budget-with-forecasted-cost-alerts/",
+      "checked_at": "2026-09-28T10:37:54.782088+00:00",
+      "health": {
+        "id": "az900-forecast-blog",
+        "url": "https://azure.microsoft.com/en-us/blog/prevent-exceeding-azure-budget-with-forecasted-cost-alerts/",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://azure.microsoft.com/en-us/blog/prevent-exceeding-azure-budget-with-forecasted-cost-alerts/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Prevent exceeding Azure budget with forecasted cost alerts | Microsoft Azure Blog",
+        "canonical_url": "https://azure.microsoft.com/en-us/blog/prevent-exceeding-azure-budget-with-forecasted-cost-alerts/",
+        "duration_signals": [
+          "1 min",
+          "11 min",
+          "9 min"
+        ],
+        "signal_fingerprint": "34cd344f2382d76ca4fc74818bbeb2ae0acc3c66df8daca552379c307e2e1931",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://azure.microsoft.com/en-us/blog/prevent-exceeding-azure-budget-with-forecasted-cost-alerts/",
+      "sha256": "ef5cdcf3d1f8140902e7a131af6e7cb65efb49bb8954bfb593baab7784c22f36",
+      "text_characters": 2769
+    },
+    {
+      "id": "az900-landing-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-a-finops-ready-azure-landing-zone-infrastructure-foundations-for-cost-o/4411706",
+      "checked_at": "2026-09-28T10:37:54.797026+00:00",
+      "health": {
+        "id": "az900-landing-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-a-finops-ready-azure-landing-zone-infrastructure-foundations-for-cost-o/4411706",
+        "checked_at": "2026-09-28T10:37:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-a-finops-ready-azure-landing-zone-infrastructure-foundations-for-cost-o/4411706",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Building a FinOps-Ready Azure Landing Zone: Infrastructure Foundations for Cost Optimization | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-a-finops-ready-azure-landing-zone-infrastructure-foundations-for-cost-o/4411706",
+        "duration_signals": [],
+        "signal_fingerprint": "6bc9a27ea2caa4bd04e0e6d340805693e88b488cead1d178cc9327f4e466eb9b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-a-finops-ready-azure-landing-zone-infrastructure-foundations-for-cost-o/4411706",
+      "sha256": "1c9e16409ffad287186638b7ade9c8b7719a3407b1051159c99f88d1326eaac1",
+      "text_characters": 118,
+      "supplementary_article_extraction": {
+        "method": "TechCommunity __NEXT_DATA__ main article with public author/date metadata",
+        "text_characters": 5002,
+        "sha256": "eeff150a7f321f89e32a7e3b84b4276970b85d11d7e07c197e15831d17e5e06f",
+        "read_boundary": "Complete extracted main article; comments and linked media not audited; no commands executed."
+      }
+    },
+    {
+      "id": "az900-billing-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azureobservabilityblog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+      "checked_at": "2026-09-28T10:37:55.387512+00:00",
+      "health": {
+        "id": "az900-billing-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azureobservabilityblog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+        "checked_at": "2026-09-28T10:37:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azureobservabilityblog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Understanding billing for the Azure Copilot Observability Agent | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azureobservabilityblog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+        "duration_signals": [],
+        "signal_fingerprint": "859f74650bb9726380f1685b97585e2a592e0ec41b53b6bba8f05c1c82a75e5a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azureobservabilityblog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+      "sha256": "4ebbc6e64bd713e245d409f4e5a8859823f74ca0cad4d45b129627f6a3d37ca7",
+      "text_characters": 89,
+      "supplementary_article_extraction": {
+        "method": "TechCommunity __NEXT_DATA__ main article with public author/date metadata",
+        "text_characters": 6745,
+        "sha256": "f6235e1dcd88c595ce607a7138e45b30d90a8e617212cfbe0524101a4888d266",
+        "read_boundary": "Complete extracted main article; comments and linked media not audited; no commands executed."
+      }
+    },
+    {
+      "id": "az900-smart",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart",
+      "checked_at": "2026-09-28T10:39:55.301286+00:00",
+      "health": {
+        "id": "az900-smart",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart",
+        "checked_at": "2026-09-28T10:39:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart",
+        "content_type": "text/html",
+        "page_title": "Optimize Azure Blob Storage costs with smart tier - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart",
+        "duration_signals": [],
+        "signal_fingerprint": "fcee8995c9f6ac7dabdc7087ef48d39367b46aebaad5a50ab9bc81738b529a3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart",
+      "sha256": "ad28454ac419552cafb1fe7dd91d90c5fc43e54c1ae333d66354d64fb694a596",
+      "text_characters": 9860
+    },
+    {
+      "id": "az900-agent-billing",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing",
+      "checked_at": "2026-09-28T10:39:55.302688+00:00",
+      "health": {
+        "id": "az900-agent-billing",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing",
+        "checked_at": "2026-09-28T10:39:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing",
+        "content_type": "text/html",
+        "page_title": "Billing and cost management for Azure Copilot Observability Agent - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing",
+        "duration_signals": [],
+        "signal_fingerprint": "dbbada94091bb875d5ce83961a5a26c3ee75d4f589e0a725499980b435ab6665",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing",
+      "sha256": "bd4ff6b80eeb28857a1df9828bff06401e7fc0e799017bffcf21d9e5618b844b",
+      "text_characters": 5037
+    },
+    {
+      "id": "az900-smart-blog",
+      "url": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+      "checked_at": "2026-09-28T10:39:55.303461+00:00",
+      "health": {
+        "id": "az900-smart-blog",
+        "url": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+        "checked_at": "2026-09-28T10:39:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Optimize object storage costs automatically with smart tier—now generally available | Microsoft Azure Blog",
+        "canonical_url": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+        "duration_signals": [
+          "5 min",
+          "6 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "b2500148841922a88528375994de2a151af5da1355fa9d838bed3273acb24766",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+      "sha256": "d48fb052a777826b540c04468090758dda3bfd44100c7b1543e067a550c4dac4",
+      "text_characters": 8581
+    }
+  ],
+  "added_source_ids": [
+    "az900-budgets",
+    "az900-spending-limit",
+    "az900-tags",
+    "az900-cost-tags",
+    "az900-tiers",
+    "az900-accounts",
+    "az900-lifetime",
+    "az900-vm-states",
+    "az900-cloud-shell",
+    "az900-external",
+    "az900-reservations",
+    "az900-savings",
+    "az900-forecast-blog",
+    "az900-landing-blog",
+    "az900-billing-blog",
+    "az900-smart",
+    "az900-agent-billing",
+    "az900-smart-blog"
+  ],
+  "findings": [
+    {
+      "id": "az900-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "PaaS and SaaS application responsibilities are shared",
+      "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current primary matrix retains customer data, identities and settings.",
+      "recommendation": "Correct compact table and explain retained application duties.",
+      "disposition": "applied",
+      "source_id": "azure-shared-responsibility",
+      "resolution": "Correct compact table and explain retained application duties."
+    },
+    {
+      "id": "az900-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Stopped and deallocated have different billing effects",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Allocated stopped VMs still bill instance usage; dependent resources can bill after deallocation.",
+      "recommendation": "Add state distinction and original monthly-cost example.",
+      "disposition": "applied",
+      "source_id": "az900-vm-states",
+      "resolution": "Add state distinction and original monthly-cost example."
+    },
+    {
+      "id": "az900-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Azure includes nonpaired regions",
+      "url": "https://learn.microsoft.com/en-us/azure/reliability/regions-paired",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Pairing does not automatically deploy or fail over a workload.",
+      "recommendation": "Qualify placement and recovery guidance.",
+      "disposition": "applied",
+      "source_id": "az305-regions",
+      "resolution": "Qualify placement and recovery guidance."
+    },
+    {
+      "id": "az900-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Account type is distinct from service, tier and redundancy",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GPv2 and specialized premium accounts have different capability combinations.",
+      "recommendation": "Add account-choice table and matrix reference.",
+      "disposition": "applied",
+      "source_id": "az900-accounts",
+      "resolution": "Add account-choice table and matrix reference."
+    },
+    {
+      "id": "az900-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Storage duration charges are not immutable retention",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Online/archive retrieval and ordinary tier charging differ.",
+      "recommendation": "Add deletion-versus-charge and archive-read distinctions.",
+      "disposition": "applied",
+      "source_id": "az900-tiers",
+      "resolution": "Add deletion-versus-charge and archive-read distinctions."
+    },
+    {
+      "id": "az900-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Smart tier manages online placement under specific eligibility",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GPv2 block blobs with zonal redundancy and inherited tiers; sovereign clouds preview.",
+      "recommendation": "Add current feature context and original access-clock exercise without archive claims.",
+      "disposition": "applied",
+      "source_id": "az900-smart",
+      "resolution": "Add current feature context and original access-clock exercise without archive claims."
+    },
+    {
+      "id": "az900-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "External identity has workforce and customer-app designs",
+      "url": "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "B2B workforce collaboration differs from CIAM in an external tenant.",
+      "recommendation": "Close external-identity objective gap.",
+      "disposition": "applied",
+      "source_id": "az900-external",
+      "resolution": "Close external-identity objective gap."
+    },
+    {
+      "id": "az900-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Budget evaluation is delayed and does not stop resources",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "8–24-hour cost-data delay and daily evaluation are separate from action automation.",
+      "recommendation": "Add actual/forecast example and contrast offer-specific spending limits.",
+      "disposition": "applied",
+      "source_id": "az900-budgets",
+      "resolution": "Add actual/forecast example and contrast offer-specific spending limits."
+    },
+    {
+      "id": "az900-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Savings-plan offerings are not all compute-only",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current overview distinguishes compute and database plans and expiring hourly commitment.",
+      "recommendation": "Correct commitment wording and keep scope/eligibility explicit.",
+      "disposition": "applied",
+      "source_id": "az900-savings",
+      "resolution": "Correct commitment wording and keep scope/eligibility explicit."
+    },
+    {
+      "id": "az900-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cost inheritance does not write resource tags",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Parent metadata is applied to supported usage records.",
+      "recommendation": "Add cost-allocation example and resource-policy distinction.",
+      "disposition": "applied",
+      "source_id": "az900-cost-tags",
+      "resolution": "Add cost-allocation example and resource-policy distinction."
+    },
+    {
+      "id": "az900-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Compliance reporting is not completed remediation",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Supported effects need a remediation task and authorized assignment identity.",
+      "recommendation": "Add operation-level governance decisions and explained checks.",
+      "disposition": "applied",
+      "source_id": "sc100-policy-remediation",
+      "resolution": "Add operation-level governance decisions and explained checks."
+    },
+    {
+      "id": "az900-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Management locks are not universal data protection",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ReadOnly can block VM start; storage data-plane deletion is a separate operation.",
+      "recommendation": "Add four-case control table.",
+      "disposition": "applied",
+      "source_id": "azure-resource-locks",
+      "resolution": "Add four-case control table."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "az900-forecast-blog",
+      "decision": "accepted-bounded",
+      "author": "Adam Wise",
+      "published_on": "2021-03-15",
+      "notes": "Complete short March 15, 2021 main article read. Actual/forecast teaching exercise accepted; current budget documentation controls timing/scope and prevents interpreting title as a hard cap."
+    },
+    {
+      "source_id": "az900-smart-blog",
+      "decision": "accepted-bounded",
+      "author": "Aung Oo",
+      "published_on": "2026-04-14",
+      "notes": "Complete April 14, 2026 main article read; publication year confirmed in HTML metadata. Accept online-tier access-clock exercise; do not generalize customer savings or older regional rollout/tooling details."
+    },
+    {
+      "source_id": "az900-billing-blog",
+      "decision": "accepted-bounded",
+      "author": "Noa Kuperberg",
+      "published_on": "2026-07-16",
+      "notes": "Complete extracted July 16 main article read. Accept optional consumption-unit/additive-telemetry-cost exercise only; do not adopt planned future caps or blanket per-operation claims."
+    },
+    {
+      "source_id": "az900-landing-blog",
+      "decision": "rejected",
+      "author": "javedeqbal",
+      "published_on": "2025-05-08",
+      "notes": "Complete extracted May 8, 2025 main article read. Rejected for beginner guide: abbreviated script inputs, expired June 2026 budget end date and generic diagnostic-setting snippet do not provide a tested billing-export setup. No code copied or executed."
+    }
+  ],
+  "labs": {
+    "total": 7,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "35 arithmetic assertions: invented VM cost, classroom forecast, allocation, storage duration/access clock, availability and public catalog sums."
+    ]
+  },
+  "answered_checks": 30,
+  "limitations": [
+    "No live Azure lab, cloud deployment, budget/notification, identity/policy/lock mutation, billing commitment, storage operation, agent investigation, paid course or assessment execution.",
+    "35 local arithmetic/catalog assertions use invented workload/rate assumptions; they do not verify Azure prices, forecasts, performance, SLAs or actual billing.",
+    "Large product/region/offer/role matrices and full deployment scripts were not exhaustively audited; selected reading boundaries are recorded.",
+    "Direct OReilly/Udemy fetches remain blocked despite public browser metadata. Partner/Whizlabs/practice shells, current entitlement and Savill runtime/media remain unverified.",
+    "Same-context AI review; independent human review and live lab evidence remain pending. Advanced billing/cap/size-boundary ambiguities were excluded rather than resolved by assumption."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "cost_forecast_allocation_tier_availability_and_catalog_assertions": 35
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "oreilly-az-900-video",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "instructors": [
+          "KodeKloud",
+          "Rithin Skaria"
+        ],
+        "published": "August 2025",
+        "runtime": "6h27"
+      },
+      "limitation": "Public metadata and selected outline only; no paid content or complete lesson verification."
+    },
+    {
+      "source_id": "udemy-az-900-nikolai-schuler",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "instructor": "Nikolai Schuler",
+        "updated": "September 2026",
+        "sections": 15,
+        "lectures": 148,
+        "runtime": "8h17"
+      },
+      "limitation": "Public metadata and selected outline only; no paid content or complete lesson verification."
+    }
+  ]
+}

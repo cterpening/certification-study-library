@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "AZ-900",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "f390616206b6788988d00e6f337bc339bef40778295fac471855c09e3869c3fd",
+      "objective_count": 57,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-28-az-900-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-az-900-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "No live Azure lab, cloud deployment, budget/notification, identity/policy/lock mutation, billing commitment, storage operation, agent investigation, paid course or assessment execution.",
+        "35 local arithmetic/catalog assertions use invented workload/rate assumptions; they do not verify Azure prices, forecasts, performance, SLAs or actual billing.",
+        "Large product/region/offer/role matrices and full deployment scripts were not exhaustively audited; selected reading boundaries are recorded.",
+        "Direct OReilly/Udemy fetches remain blocked despite public browser metadata. Partner/Whizlabs/practice shells, current entitlement and Savill runtime/media remain unverified.",
+        "Same-context AI review; independent human review and live lab evidence remain pending. Advanced billing/cap/size-boundary ambiguities were excluded rather than resolved by assumption."
+      ]
+    },
+    {
       "exam_code": "AZ-700",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "8b0ec1bd6b8d7a696ee565dca9896ea0456391124dfb0dd802f39ad4170fc236",

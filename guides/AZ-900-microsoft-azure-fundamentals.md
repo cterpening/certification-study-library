@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # AZ-900 Microsoft Azure Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-900-coverage-record). The [official AZ-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-900-coverage-record). The [official AZ-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Official source:** [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
+
+**September 28 deep review:** All 57 detailed objectives remain on the July 20 baseline. The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification) lists a 45-minute assessment in 13 languages. Earned fundamentals certifications [do not expire](https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy); that does not make every older course current. The official AZ-900T00 course is now titled **Introduction to Cloud Infrastructure**, with one instructor day and 13 languages. Course completion, exam booking and earning the certification are separate steps.
+
+This review adds six worked examples, seven labs, 30 answered checks and three blog exercises. The [review report](../docs/research/2026-09-28-az-900-deep-review.md) records sources and limitations. Only local calculations were executed; live Azure labs and independent human review remain pending.
 
 ## How to use this guide
 
@@ -75,10 +79,11 @@ Microsoft is always responsible for physical datacenters, physical networking, a
 |---|---|---|---|---|
 | Physical facility/host | Provider | Provider | Provider | Customer |
 | Operating system | Provider | Provider | Customer | Customer |
-| Application | Mostly provider | Customer | Customer | Customer |
-| Identities, access, devices, data | Shared/customer decisions | Shared/customer decisions | Shared/customer decisions | Customer |
+| Application | Shared | Shared | Customer | Customer |
+| Data, identities, configuration | Customer | Customer | Customer | Customer |
+| Client devices | Shared | Customer | Customer | Customer |
 
-The exact division depends on the service. “Microsoft secures Azure” does not mean Microsoft approves a customer's role assignments, classifies its data, or prevents insecure application logic. Review the official [shared responsibility model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility).
+Shared application responsibility does not transfer the customer’s code, access decisions or tenant configuration to Microsoft. SaaS still requires the customer to govern its data, identities and settings. The exact division depends on the service. “Microsoft secures Azure” does not mean Microsoft approves a customer's role assignments, classifies its data, or prevents insecure application logic. Review the official [shared responsibility model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility).
 
 ### IaaS, PaaS, SaaS, and serverless
 
@@ -120,6 +125,8 @@ A zone is not a backup, and a second region is not automatically a working disas
 
 > **Related item:** Recovery objectives turn “be resilient” into a testable requirement. Recovery time objective describes acceptable restoration time; recovery point objective describes acceptable data loss measured in time.
 
+Not every Azure region has a pair. The [paired/nonpaired region guidance](https://learn.microsoft.com/en-us/azure/reliability/regions-paired) permits resilient designs with either: some services use a predefined pair, while others support a chosen secondary region. Geography and pairing labels are starting points for service-specific residency/recovery checks, not automatic guarantees that all workload data stays in one jurisdiction or fails over successfully.
+
 ### Resource hierarchy and scope
 
 ```text
@@ -151,6 +158,10 @@ Assignments at a parent scope can flow to children. Place a policy or role at th
 | User desktops/apps from Azure | Azure Virtual Desktop | Virtualized desktop/application delivery |
 
 Availability sets distribute VMs across fault and update domains; availability zones separate deployments across physical zones. Scale sets address fleet management and scale. These concepts solve different failure and operating concerns.
+
+#### VM power state is a billing decision
+
+[VM billing states](https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing) distinguish **Stopped (allocated)** from **Stopped (deallocated)**. Shutting down inside the guest OS can leave the VM allocated and its compute bill running. Deallocation releases the host allocation and stops VM instance usage charges, but retained disks and some network resources can still cost money. Inspect the power state and dependent resources; a successful provisioning state is not the same as a running or deallocated VM. Worked example 1 separates those charges.
 
 ### Networking
 
@@ -191,6 +202,21 @@ AzCopy is a command-line data transfer utility; Storage Explorer is a graphical 
 
 ---
 
+#### Account type, access tier and redundancy are separate choices
+
+| Choice | What it controls | Example |
+|---|---|---|
+| Storage service/data shape | API, protocol and object model | Blob versus Files versus Queue versus Table; VM managed disks are a different resource choice. |
+| Account type/performance | Supported services and capabilities | Standard general-purpose v2 is the usual multipurpose account; premium block-blob, file-share and page-blob accounts serve specialized needs. |
+| Blob access tier | Storage/access economics and retrieval behavior | Hot, cool and cold are online; archive is offline. |
+| Redundancy | Location of copies and failure coverage | LRS, ZRS, GRS/GZRS and applicable read-access variants. |
+
+Use the [account-type matrix](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview) before assuming that every performance, protocol, redundancy and tier combination works. Premium does not simply mean “every standard feature, faster.”
+
+For ordinary explicitly tiered block blobs in GPv2, [cool/cold/archive](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview) have 30/90/180-day minimum-duration charging rules. Earlier deletion, overwrite or retiering can incur a prorated charge; this is not a retention lock that prevents deletion. Archive requires rehydration before reading and can take hours, so it cannot meet an immediate-read requirement. Its redundancy support also differs from online tiers; do not assume archive works with ZRS/GZRS. Blob access tiering does not apply to page or append blobs, and premium block-blob accounts cannot simply retier their data into standard hot/cool/cold/archive tiers.
+
+**Related current feature:** [Smart tier](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart) automates hot/cool/cold placement for eligible GPv2 block blobs with zonal redundancy. It remains online and does not use archive. The feature is generally available in public-cloud zonal regions; Government and 21Vianet remain preview. Inherited-tier objects can be managed automatically; explicitly tiered objects are not automatically enrolled. Its monitoring/access/capacity charges differ from ordinary manual tiering, so compare the full workload cost. This is supporting context for storage-tier decisions, not a new exam objective.
+
 ## 3. Identity, access, and security
 
 ### Authentication and authorization
@@ -208,6 +234,10 @@ Authentication establishes who or what an identity is. Authorization determines 
 
 An RBAC assignment combines a security principal, role definition, and scope. Effective access includes inherited assignments and deny controls; removing one visible assignment may not remove all access. Prefer groups and least privilege over many direct user assignments.
 
+#### External users: collaboration versus customer apps
+
+[Microsoft Entra External ID](https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview) covers two different designs. B2B collaboration lets partners/guests access permitted resources in a **workforce tenant**. Customer identity and access management uses an **external tenant** for consumer or business-customer applications, separate from the employee directory. Inviting a guest does not grant all Azure roles, and customer-app sign-in is not a replacement for employee Microsoft 365 access. Choose the user population, application and tenant model before configuring authentication.
+
 ### Zero Trust and defense in depth
 
 Zero Trust uses three principles: verify explicitly, use least privilege, and assume breach. Defense in depth layers controls across physical security, identity, perimeter, network, compute, application, and data. They are related but not identical: Zero Trust guides access decisions; defense in depth reduces dependence on one control.
@@ -224,7 +254,17 @@ Microsoft Defender for Cloud provides cloud security posture management and work
 
 Major cost drivers include resource type and size, running time, storage tier/capacity/transactions, data transfer, region, licensing, and support. The pricing calculator estimates planned Azure workloads; Cost Management analyzes actual/forecast usage, supports budgets, and helps allocate costs. Tags attach metadata such as application, environment, owner, or cost center.
 
-A tag is not a security boundary and not every resource automatically inherits tags. A budget notifies; it does not normally stop resources. Reservations and savings plans exchange commitment for lower eligible compute cost, while Azure Hybrid Benefit applies eligible existing licenses. **VERIFY CURRENT:** prices, eligible services, terms, and benefits.
+A tag is not a security boundary and not every resource automatically inherits tags. A budget notifies; it does not normally stop resources. Reservations and savings plans exchange commitments for eligible discounts, while Azure Hybrid Benefit applies eligible existing licenses. Their scopes and billing units differ; they are not all compute-only offers. **VERIFY CURRENT:** prices, eligible services, terms, and benefits.
+
+#### Budgets, limits, commitments and tags
+
+[Cost Management budgets](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets) can alert on actual or forecast cost. They do not stop consumption by themselves. Cost data commonly arrives 8–24 hours later, budgets evaluate every 24 hours, and notification follows evaluation. Treat the result as delayed financial evidence, not a real-time cutoff. An action group can invoke separately designed automation; a shutdown still requires the right scope, permissions and failure handling.
+
+An Azure [spending limit](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit) is different: eligible credit-based subscriptions can be disabled when credit is exhausted. It is not a custom cap available on every pay-as-you-go subscription, and some separately billed services can still incur charges. For labs, inspect the actual offer, estimate all resources, configure alerts and delete retained resources deliberately.
+
+[Reservations](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations) discount matching usage for specified products/attributes; some cover storage or database capacity, not just VMs. [Savings plans](https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview) use a fixed hourly spend commitment over one or three years, with distinct compute and database offerings. Unused hourly commitment does not roll forward. Neither offer starts, resizes or shuts down resources, and a billing discount is not a capacity reservation. Compare actual eligible steady usage before choosing a commitment.
+
+[Resource tags](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources) do not automatically inherit from a resource group or subscription. Azure Policy can apply supported tagging rules. Separately, [Cost Management tag inheritance](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance) can copy parent tags into **usage records** for supported billing scopes without modifying the resources. Seeing a cost-center tag in a cost report therefore does not prove that a resource satisfies a tag policy.
 
 ### Governance controls
 
@@ -238,6 +278,10 @@ A tag is not a security boundary and not every resource automatically inherits t
 
 Policy evaluates resource state. An initiative groups policy definitions. Remediation can bring supported existing resources toward the desired state, often using a managed identity. A `CanNotDelete` lock permits updates but blocks deletion; `ReadOnly` is more restrictive and can affect operations that require control-plane writes.
 
+A `deny` policy can stop a disallowed deployment without repairing existing resources. For supported `modify` and `deployIfNotExists` policies, [remediation tasks](https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources) use the assignment's managed identity with sufficient permissions. A compliance scan alone is not proof that remediation ran or succeeded.
+
+[Locks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources) restrict management-plane operations even when RBAC permits them. `ReadOnly` can block starting/restarting a VM because these operations write through the management API. A storage-account delete lock does not universally protect blob contents from data-plane deletion. Combine access, policy, locks and actual data-protection features according to the operation being protected.
+
 ### Deployment and management tools
 
 The Azure portal is graphical; Cloud Shell provides a browser-based shell; Azure CLI and Azure PowerShell support repeatable command-line automation. Azure Resource Manager is the management plane and deployment service. ARM JSON templates and Bicep declare desired infrastructure. Terraform is a widely used third-party declarative option.
@@ -246,11 +290,14 @@ Declarative infrastructure describes the desired result; imperative scripts list
 
 Azure Arc projects Azure management and governance to supported resources outside Azure, including servers and Kubernetes. It does not move those machines into an Azure datacenter.
 
+[Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/overview) supplies an authenticated, temporary browser terminal with Bash or PowerShell; its host is free and inactive sessions time out. Persistent storage and resources created through shell commands can incur charges. It operates under your identity and selected subscription, so a browser terminal is not a free isolated Azure lab or permission bypass.
+
 ### Monitoring and service health
 
 | Service | Question answered |
 |---|---|
 | Azure Advisor | What personalized reliability, security, performance, cost, or operational improvements are recommended? |
+| Azure status | Is there a widely affecting Azure incident on the public status page? |
 | Azure Service Health | Is an Azure incident, planned maintenance, or advisory affecting my subscriptions/services? |
 | Resource Health | What is the health of this individual resource? |
 | Azure Monitor | What telemetry exists across applications and infrastructure? |
@@ -446,6 +493,47 @@ The broad [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/
 
 ---
 
+### Worked example 1 — VM hours and costs that remain
+
+Use invented rates, not Azure price quotes: compute costs $0.20/hour and retained disks/network resources cost $12 for the month. A 30-day always-allocated month costs `720 × $0.20 + $12 = $156`. Deallocating outside a 10-hour schedule on 20 workdays reduces compute to 200 hours: `200 × $0.20 + $12 = $52`. Savings are $104, about 66.7%, rather than 100%. Shutting down only inside the guest can leave the original allocation charge. Real commitments, licenses and service-specific charges need separate treatment.
+
+### Worked example 2 — actual cost versus forecast alert
+
+Suppose a $3,000 calendar-month budget shows $1,200 spent after ten days, with no known usage changes. A simple classroom projection for a 30-day month is `$1,200 / 10 × 30 = $3,600`: actual usage is 40% of budget, while projected usage is 120%. An 80% actual-cost threshold has not been reached, but a 100% forecast threshold could warn of a projected $600 overrun. This straight-line calculation is not Azure's forecast algorithm; delayed data and changing usage limit both projections. Neither alert automatically turns resources off.
+
+### Worked example 3 — allocate shared cost without changing access
+
+Team A directly spends $700 and team B $300; a shared service costs $200. An agreed 70/30 allocation adds $140 and $60, yielding $840 and $360, with the $1,200 total preserved. This is an allocation policy chosen by the organization, not an automatic consequence of tags. Distinguish a resource tag, a cost-record inherited tag and a finance allocation. None grants either team access to the shared service.
+
+### Worked example 4 — storage duration and access clocks
+
+For 600 GB explicitly placed in the ordinary cold tier and permanently deleted after 40 days, the 90-day charging minimum leaves 50 days of early-deletion charges: `600 × 50 = 30,000 GB-days` of capacity pricing. No price or soft-delete retention is assumed here. The charge does not stop the deletion.
+
+Now consider a different, eligible 1 MiB object managed by smart tier from day 0. With no access it moves to cool at day 30, then cold at day 90. A metadata-only read on day 40 does not reset that clock. A `Get Blob` on day 100 moves it to hot and resets the cycle; with no further access it reaches cool on day 130 and cold on day 190. Smart tier does not impose the ordinary early-deletion/retrieval fees in the first scenario; monitoring and other applicable charges still matter. Archive rehydration is a separate process.
+
+### Worked example 5 — translate an availability target
+
+**Related reliability exercise:** A 30-day month contains 43,200 minutes. A 99.9% availability target leaves `43,200 × 0.001 = 43.2` minutes unavailable. Twenty unavailable minutes would yield about 99.9537% availability for that defined observation window. State the measured user operation, exclusions and measurement method; this arithmetic is not an Azure SLA entitlement or evidence that a single VM meets the target.
+
+### Worked example 6 — permission, policy, lock and data protection
+
+| Request | Evidence to evaluate | Result under the stated assumptions |
+|---|---|---|
+| Contributor creates a resource in a location denied by policy | Role scope plus applicable policy/exception | RBAC permission does not override the policy denial. |
+| Authorized user starts a VM under a resource-group `ReadOnly` lock | Inherited lock and management operation | The lock can block the start despite the role. |
+| Authorized data user deletes a blob in a delete-locked storage account | Data-plane permission and actual blob protection | The account lock alone does not stop that data-plane operation. |
+| Existing resource lacks a required tag | Compliance finding plus remediation task/identity/result | A finding is not evidence of a repaired tag. |
+
+### Blog exercises that reinforce fundamentals
+
+| Article | Learning exercise | Boundary |
+|---|---|---|
+| [Forecasted cost alerts](https://azure.microsoft.com/en-us/blog/prevent-exceeding-azure-budget-with-forecasted-cost-alerts/), Adam Wise, March 15, 2021 | Apply worked example 2 and define an owner/action for each threshold. | Useful older explanation; current budget documentation controls UI, scope and evaluation delays. The title does not mean alerts prevent every overrun. |
+| [Smart tier general availability](https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/), Aung Oo, April 14, 2026 | Trace the object in example 4 and compare automatic online tiering with archive. | Verify account/redundancy/blob eligibility and complete costs; customer savings stories are not a promised percentage for your workload. |
+| [Observability Agent billing](https://techcommunity.microsoft.com/blog/azureobservabilityblog/understanding-billing-for-the-azure-copilot-observability-agent/4537780), Noa Kuperberg, July 16, 2026 | Identify the consumption unit, billing scope and separate telemetry costs in a monitoring design. | Optional current example, not an added exam objective. Agent work has separate Azure Agent Credit charges; it does not replace ingestion/retention/alert charges. Use [current billing documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing), not a future-feature promise, for operational planning. |
+
+The main article text was reviewed; no linked cloud commands, paid activities or agent investigations were run. A more advanced landing-zone automation article was considered but not added: its abbreviated scripts and expired budget dates do not provide a suitable beginner exercise.
+
 ## 6. Hands-on labs
 
 ### Lab 1: Resource hierarchy and effective governance
@@ -470,15 +558,46 @@ Use the pricing calculator for a simple workload, then find Cost Management, bud
 
 ---
 
+### Lab 6: Offline cost and control worksheet
+
+Recalculate examples 1–5 with different hours, budget, shared allocation and data retention. Label every invented rate and assumption. For example 6, identify the management or data-plane request, role, policy and lock before predicting a result. Keep the worksheet usable without a paid subscription.
+
+### Lab 7: Evidence and learning-resource review
+
+Use the three blog exercises to create a claim/source/date table. Compare the chosen course's chapters with all 57 blueprint objectives, then identify one gap to fill from primary documentation. Record whether each activity is a paper design, local calculation, portal inspection or actual deployment. For any later Azure lab, record dependent billable resources and cleanup evidence; this guide's review did not execute those deployments.
+
 ## 7. Knowledge checks and distinctions
 
-1. A team wants OS access for a legacy driver. Why is a VM a better fit than App Service, and which customer responsibilities return?
-2. A web application must survive a single datacenter failure. What does a zone-aware design add, and what does it not solve?
-3. A user passes MFA but cannot start a VM. Which authentication and authorization evidence should you inspect?
-4. A policy reports noncompliance while RBAC allows deployment. Why is that not contradictory?
-5. A budget reaches 100 percent. Why might resources keep running?
-6. A private endpoint exists, but clients still use a public address. Which network dependency is likely incomplete?
-7. Geo-redundant storage is enabled. Why are backup and restore testing still required?
+1. A team wants OS access for a legacy driver. Why is a VM a better fit than App Service, and which customer responsibilities return? **Answer:** The driver needs guest-OS control. With IaaS the customer handles OS patching, runtime, application/data protection and VM-level configuration/recovery.
+2. A web application must survive a single datacenter failure. What does a zone-aware design add, and what does it not solve? **Answer:** It separates supported deployments across physical zone failure domains. It does not by itself replicate application data, supply backups or recover a whole region.
+3. A user passes MFA but cannot start a VM. Which authentication and authorization evidence should you inspect? **Answer:** Check the successful sign-in/token context, tenant/subscription, role definition, assignment scope and inherited restrictions; MFA proves identity, not permission to start the VM.
+4. A policy reports noncompliance while RBAC allows deployment. Why is that not contradictory? **Answer:** RBAC authorizes an action; Policy evaluates configuration. Audit can report noncompliance without denying, while an applicable deny effect can block an otherwise authorized deployment.
+5. A budget reaches 100 percent. Why might resources keep running? **Answer:** Budgets notify based on evaluated costs; they do not stop consumption by themselves. Separate automation or an eligible credit-based spending limit has different behavior.
+6. A private endpoint exists, but clients still use a public address. Which network dependency is likely incomplete? **Answer:** The client’s DNS resolver, private zone/record/link or hybrid forwarding path may still return the public address. Verify the answer from that client before changing roles.
+7. Geo-redundant storage is enabled. Why are backup and restore testing still required? **Answer:** Replication can copy deletion or corruption, and asynchronous geo-replication can lag. Historical recovery controls and a tested restore protect different failure cases.
+8. Does a Microsoft fundamentals certification require annual renewal? **Answer:** No. Earned fundamentals certifications do not expire, while exam content and course material can change.
+9. Does PaaS transfer all application security to Microsoft? **Answer:** No. Application responsibilities are shared, and customer code, data, identities and settings remain customer responsibilities.
+10. Does every Azure region have a pair? **Answer:** No. Nonpaired regions can also support resilient designs; service-specific replication and recovery choices matter.
+11. Does a resource group require every resource to be in its own region? **Answer:** No. It is a lifecycle/management container, not a regional or network boundary.
+12. What is the billing difference between stopped and deallocated? **Answer:** Stopped but allocated still incurs VM instance charges; deallocation stops those instance charges while retained resources may still bill.
+13. Are Blob, GPv2, cold and GZRS four names for one choice? **Answer:** No. They identify service/data shape, account type, access tier and redundancy respectively.
+14. Can ordinary archive blobs satisfy an immediate-read requirement? **Answer:** No. Their content must first be rehydrated to an online tier, which can take hours.
+15. Does the cold tier’s 90-day minimum prevent earlier deletion? **Answer:** No. It is a charging rule, not an immutable retention policy.
+16. Does smart tier automatically use archive? **Answer:** No. It manages eligible objects across online hot/cool/cold tiers.
+17. Does a metadata-only read reset smart tier’s access clock? **Answer:** No. Get Blob Properties/Metadata/Tags do not count like a Get Blob or Put Blob access.
+18. Is a customer-app external tenant the same design as partner B2B access? **Answer:** No. Customer apps use an external tenant; B2B collaboration grants permitted access in the workforce tenant.
+19. Does a 100% budget alert guarantee no excess spending? **Answer:** No. Data/evaluation delays and continued consumption can cause an overrun; an alert is not a hard cap.
+20. Can every pay-as-you-go subscriber set a custom Azure spending limit? **Answer:** No. The credit-based spending-limit feature is offer-specific and not an arbitrary pay-as-you-go cap.
+21. Can unused savings-plan hourly commitment be saved for tomorrow? **Answer:** No. Unused commitment expires each hour.
+22. Do billing reservations automatically deploy or guarantee compute capacity? **Answer:** No. A billing discount and a capacity reservation are different mechanisms.
+23. Why can a cost report show an inherited tag that the resource lacks? **Answer:** Cost Management tag inheritance applies to usage records; it does not write the tag onto resources.
+24. Does a deny policy repair all existing noncompliant resources? **Answer:** No. Use the appropriate effect and, where supported, a remediation task with an authorized managed identity.
+25. Can a ReadOnly lock affect VM start even for a permitted user? **Answer:** Yes. Start is a management operation that the lock can block.
+26. Does a storage-account delete lock replace blob backup or soft delete? **Answer:** No. It does not universally block data-plane deletion or provide historical recovery.
+27. Does Cloud Shell make commands free and isolated? **Answer:** No. The shell host is free, but created resources and applicable storage can bill; commands use the signed-in identity/context.
+28. Which view is personalized: Azure status or Service Health? **Answer:** Service Health is personalized to relevant services/subscriptions; the public status page emphasizes widespread incidents.
+29. Can an application fail while Resource Health is healthy? **Answer:** Yes. Application code, dependencies, identity or configuration can fail independently; inspect application telemetry.
+30. Does a course completion certificate prove the Microsoft certification was earned? **Answer:** No. Complete the actual Microsoft credential requirements; provider completion, practice results and exam registration are separate.
 
 | Contrast | Remember |
 |---|---|
@@ -526,19 +645,21 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [Microsoft Learn — AZ-900 course](https://learn.microsoft.com/en-us/training/courses/az-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and best scope anchor |
+| [Microsoft Learn — Introduction to Cloud Infrastructure (AZ-900T00)](https://learn.microsoft.com/en-us/training/courses/az-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and best scope anchor |
 | [Microsoft — AZ-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; start here before buying another assessment |
-| [Microsoft Partner Skilling Hub — LevelUp AZ-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058307) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
+| [Microsoft Partner Skilling Hub — LevelUp AZ-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058307) | Partner login required | Earlier 10-hour estimate; current content requires sign-in | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
 | [Microsoft Learn AZ-900 learning paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification) | Free | About 8–12 hours | Read modules and use the free sandbox exercises where available |
-| [John Savill — AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs) and [course handout repository](https://github.com/johnthebrit/AZ900CertCourse) | Free | About 4 hours plus handout review | Clear visual review with a public companion handout; published for the 2022 scope, so fill July 2026 changes from Learn. The repository has no detected license, so link rather than republish the PDF. |
-| [Pluralsight — Microsoft Azure Fundamentals (AZ-900) and practice exam](https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900) | Subscription; practice access depends on plan/library | 21 hours plus labs and about 2–4 hours for assessment/review | Broad structured path updated through 2026; its public page explicitly includes a practice exam, and you should choose only modules that close gaps |
+| [John Savill — AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs) and [course handout repository](https://github.com/johnthebrit/AZ900CertCourse) | Free | Earlier estimate: about 4 hours, not reverified in this pass; add handout review | Clear visual review with a public companion handout; published for the 2022 scope, so fill July 2026 changes from Learn. The repository has no detected license, so link rather than republish the PDF. |
+| [Pluralsight — Microsoft Azure Fundamentals (AZ-900) and practice exam](https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900) | Subscription; practice access depends on plan/library | Header: 21 hours including four labs; component sum 18h 56m courses + 2h labs = 20h 56m. Add assessment/review time | Broad structured path updated through 2026; its public page explicitly includes a practice exam, and you should choose only modules that close gaps |
 | [O'Reilly — AZ-900 Microsoft Azure Fundamentals](https://www.oreilly.com/videos/az-900-microsoft/9781806387694/) | Subscription | 6 hours 27 minutes | Rithin Skaria/KodeKloud video course published August 2025; cross-check July 2026 blueprint |
-| [Udemy — AZ-900 Azure Fundamentals](https://www.udemy.com/course/az-900-azure-certification-exam-prep/) | Purchase or subscription | About 8 hours 17 minutes | Nikolai Schuler course shown as updated August 2026; inspect curriculum and previews before choosing |
-| [Whizlabs — AZ-900 training](https://www.whizlabs.com/microsoft-azure-certification-az-900/) | Paid course or subscription | 7+ video hours plus labs | Use the explanatory videos and labs; disregard any marketing implication that questions reproduce the exam |
-| [MeasureUp — AZ-900 practice test](https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html) | Paid test or subscription; free demo available | About 5–9 hours for simulation and review | Tier 6 assessment supplement with 159 questions, explanations, and references; map misses back to the current blueprint |
+| [Udemy — AZ-900 Azure Fundamentals](https://www.udemy.com/course/az-900-azure-certification-exam-prep/) | Purchase or subscription | About 8 hours 17 minutes | Nikolai Schuler course shown as updated September 2026; inspect curriculum and previews before choosing |
+| [Whizlabs — AZ-900 training](https://www.whizlabs.com/microsoft-azure-certification-az-900/) | Paid course or subscription | Earlier 7+ video-hour estimate; current bundle/runtime unverified | Use the explanatory videos and labs; disregard any marketing implication that questions reproduce the exam |
+| [MeasureUp — AZ-900 practice test](https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html) | Paid test or subscription; free demo available | About 5–9 hours for simulation and review | Assessment supplement with 159 questions and a June 2026 update; map misses back to the current blueprint |
 | [O'Reilly — AZ-900 interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists an AZ-900 Pearson practice test; exact launch details appear after sign-in |
 | [LinkedIn Learning — AZ-900 Cert Prep by Microsoft Press](https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press) | Subscription | 4 hours 11 minutes | Jim Cheshire course released September 2024; useful compact review, then fill July 2026 changes from Learn |
-| [Coursera — Microsoft Azure Fundamentals AZ-900 specialization](https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep) | Subscription; audit options vary | About 3 months at 10 hours/week (provider pace) | Microsoft-created four-course sequence with projects; far broader than a compact exam review, and the final course is practice-focused |
+| [Coursera — Microsoft Azure Fundamentals AZ-900 specialization](https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep) | Subscription; audit options vary | Provider pace: 3 months at 10 hours/week; four course estimates total 63 hours (18 + 21 + 20 + 4) | Microsoft-created four-course sequence with projects; far broader than a compact exam review, and the final course is practice-focused |
 | [Microsoft Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/) | Free | Reference as needed | Goes beyond fundamentals with patterns and decision guides; use for related-item depth |
 
 See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md) for selection criteria and provider notes.
+
+**Catalog boundary, September 28:** Public metadata and contents were compared with the blueprint; no paid lessons, video playback, partner account or assessment questions were accessed. O’Reilly and Udemy blocked direct retrieval, but their public browser pages confirmed the listed metadata; Udemy lists 15 sections/148 lectures. Pluralsight’s path total already includes its four 30-minute labs. LinkedIn’s 4h 11m/September 5, 2024 metadata is unchanged. Coursera’s advertised pace and summed course estimates measure different things. The partner page, direct practice-assessment page, Whizlabs and O’Reilly’s generic practice catalog returned shells or no substantive content, so current entitlement, launch details and bundle contents remain unverified.

@@ -3,6 +3,258 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az900-budgets",
+      "title": "Cost Management budgets and alerts",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-acm-create-budgets",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main purpose, refresh/evaluation timing, offer/scope prerequisites and actual/forecast setup sections read. No budget or notification created. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-spending-limit",
+      "title": "Azure spending limit",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/spending-limit",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main credit-limit, pay-as-you-go exclusion, custom-cap restriction and separate-charge exception sections read; no payment/offer change. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-tags",
+      "title": "Resource tags and inheritance",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main tag access/inheritance and limitations sections read; no policy or tag write. Tags remain metadata rather than permissions. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-cost-tags",
+      "title": "Cost Management tag inheritance",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/enable-tag-inheritance",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main supported billing scopes, usage-record-only inheritance, precedence and processing timing read; no claim resources are mutated. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-tiers",
+      "title": "Blob access tiers",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main online/archive, duration charging, rehydration, redundancy, block-blob scope and account-default sections read; comparison table cells inspected. Specialized smart-tier page controls that feature beyond older default-tier enumeration. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-accounts",
+      "title": "Storage account overview",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main account-type matrix and supported service/performance/redundancy distinctions inspected with HTML cells preserved. Long quotas/endpoint tables fetched; not used to claim exhaustive limits review. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-lifetime",
+      "title": "Microsoft certification expiration policy",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/certification-expiration-policy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main expiration policy read, including nonexpiring fundamentals and separate retirement/transcript handling. No annual renewal claim for AZ-900. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-vm-states",
+      "title": "Virtual machine states and billing",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main power/provisioning state and instance-billing table read; stopped allocated versus deallocated and retained-resource charges applied. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-cloud-shell",
+      "title": "Cloud Shell overview",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-shell/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Short main Cloud Shell overview, temporary host, identity and storage-cost sections read; no shell session or cloud resource created. No universal storage-persistence claim across all shell modes. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-external",
+      "title": "Microsoft Entra External ID overview",
+      "url": "https://learn.microsoft.com/en-us/entra/external-id/external-identities-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main workforce B2B versus external-tenant CIAM definitions and selected comparison entries read; full cross-tenant/identity/license matrix not audited. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-reservations",
+      "title": "Azure reservations overview",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main matching-usage discount, term, billing and selected covered products read; full exchange/refund conditions not audited or recommended. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-savings",
+      "title": "Azure savings plan overview",
+      "url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/savings-plan/savings-plan-compute-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main hourly commitment, expiry, compute/database offer scopes and billing/cancellation sections read; full eligibility/benefit matrix not audited. No commitment purchased. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-forecast-blog",
+      "title": "Forecasted budget alerts",
+      "url": "https://azure.microsoft.com/en-us/blog/prevent-exceeding-azure-budget-with-forecasted-cost-alerts/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Complete short March 15, 2021 main article read. Actual/forecast teaching exercise accepted; current budget documentation controls timing/scope and prevents interpreting title as a hard cap. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-landing-blog",
+      "title": "FinOps-ready landing zone",
+      "url": "https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-a-finops-ready-azure-landing-zone-infrastructure-foundations-for-cost-o/4411706",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Complete extracted May 8, 2025 main article read. Rejected for beginner guide: abbreviated script inputs, expired June 2026 budget end date and generic diagnostic-setting snippet do not provide a tested billing-export setup. No code copied or executed. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-billing-blog",
+      "title": "Observability Agent consumption billing",
+      "url": "https://techcommunity.microsoft.com/blog/azureobservabilityblog/understanding-billing-for-the-azure-copilot-observability-agent/4537780",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Complete extracted July 16 main article read. Accept optional consumption-unit/additive-telemetry-cost exercise only; do not adopt planned future caps or blanket per-operation claims. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-smart",
+      "title": "Blob smart tier",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-smart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main eligibility, GA/sovereign preview, default/inherited versus explicit tiers, access clock and billing sections read; no account mutation. Avoid exact 128 KiB billing-boundary ambiguity; worked object is 1 MiB. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-agent-billing",
+      "title": "Observability Agent billing",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/aiops/observability-agent-billing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main AAC, chat/deep-investigation and cost guidance read. Only separate agent/telemetry consumption lesson adopted; contradictory correlation-cost guidance and per-operation caps not generalized into this fundamentals guide. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az900-smart-blog",
+      "title": "Blob smart tier general availability",
+      "url": "https://azure.microsoft.com/en-us/blog/optimize-object-storage-costs-automatically-with-smart-tier-now-generally-available/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Complete April 14, 2026 main article read; publication year confirmed in HTML metadata. Accept online-tier access-clock exercise; do not generalize customer savings or older regional rollout/tooling details. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az700-credential",
       "title": "Azure Network Engineer Associate credential",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
@@ -740,9 +992,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-305"
+        "AZ-305",
+        "AZ-900"
       ],
-      "notes": "September 28 AZ-305 deep review: Main paired/nonpaired overview, HA/failover cautions and asymmetric-pair discussion read; complete region inventory not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Main paired/nonpaired overview, HA/failover cautions and asymmetric-pair discussion read; complete region inventory not audited. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Main paired/nonpaired, resilience/failover warning and geographic exceptions read; full live regional inventory not audited. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az305-bus-geo",
@@ -6154,11 +6407,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-100"
+        "SC-100",
+        "AZ-900"
       ],
-      "notes": "September 27 SC-100 deep review: Evaluation, assignment identity and remediation-role requirements reviewed; no Azure policy deployment. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Evaluation, assignment identity and remediation-role requirements reviewed; no Azure policy deployment. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Main modify/deployIfNotExists remediation, managed identity/roles and evaluation distinction read; detailed scripts not run. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc100-agent-targeting",
@@ -10687,8 +10941,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: All 57 detailed objectives read and individually mapped across eleven groups. July 20 baseline and objective/status hashes unchanged, no upcoming announcement. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-900-blueprint",
@@ -10756,9 +11013,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Official one-day course; the linked self-study paths are the primary free learning route."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Official one-day course; the linked self-study paths are the primary free learning route. September 28 AZ-900 deep review: Complete short main course overview/metadata read: renamed Introduction to Cloud Infrastructure, one instructor day, 13 languages. Course lessons not completed. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp-900-course",
@@ -10839,7 +11098,7 @@
         "AB-900",
         "AI-901"
       ],
-      "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-az-900",
@@ -10849,9 +11108,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Structured path listed at 21 hours plus labs and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. Individual course currency varies."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Structured path listed at 21 hours plus labs and a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. Individual course currency varies. September 28 AZ-900 deep review: Public main path metadata/components read: five courses 18h56, four 30-minute labs, 20h56 total versus rounded 21h. Dates span 2024–2026; latest lab September 21. No paid lessons consumed. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-dp-900",
@@ -10911,9 +11172,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Six-hour, 27-minute video published August 2025; compare with the July 2026 blueprint."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Six-hour, 27-minute video published August 2025; compare with the July 2026 blueprint. September 28 AZ-900 deep review: Direct fetch blocked; public browser metadata/outline read: KodeKloud/Rithin Skaria, August 2025, 6h27. No paid lessons. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-dp-900-video",
@@ -10997,9 +11260,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "About eight hours, 17 minutes; shown as updated August 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "About eight hours, 17 minutes; shown as updated August 2026. September 28 AZ-900 deep review: Direct fetch blocked; public browser metadata and selected curriculum read: September 2026, 15 sections, 148 lectures, 8h17. Broad automatic-compliance/failover marketing not adopted. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-dp-900-in28minutes",
@@ -11085,9 +11350,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Four hours, 11 minutes; released September 2024."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Four hours, 11 minutes; released September 2024. September 28 AZ-900 deep review: Public metadata read: Microsoft Press/Jim Cheshire, 4h11, September 5, 2024. No video accessed. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "linkedin-learning-dp-900-microsoft-press",
@@ -11135,9 +11402,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Four-course sequence; provider pace is about three months at 10 hours per week."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Four-course sequence; provider pace is about three months at 10 hours per week. September 28 AZ-900 deep review: Public metadata and course outline read: four courses at 18/21/20/4 hours=63 versus advertised three-month 10h/week pace. Conditional voucher offer not promoted as guaranteed. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "coursera-microsoft-dp-900-specialization",
@@ -11159,9 +11428,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Seven-plus video hours and labs; the library does not endorse real-exam-question claims."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Seven-plus video hours and labs; the library does not endorse real-exam-question claims. September 28 AZ-900 deep review: JavaScript shell only; current runtime/bundle not verified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-az-900-study-cram",
@@ -11171,9 +11442,11 @@
       "authority_class": 5,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Approximately four hours and published for the 2022 scope; use for explanation, then close July 2026 gaps with official Learn."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Approximately four hours and published for the 2022 scope; use for explanation, then close July 2026 gaps with official Learn. September 28 AZ-900 deep review: Video page shell only; earlier 4-hour estimate explicitly not reverified. No playback. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-sc-900-study-cram-v2",
@@ -11206,7 +11479,7 @@
         "AI-103",
         "SC-300"
       ],
-      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-az-900-course-materials",
@@ -11216,9 +11489,11 @@
       "authority_class": 5,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Companion repository containing the course handout and playlist link. No repository license was detected; link to the handout rather than republishing it."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Companion repository containing the course handout and playlist link. No repository license was detected; link to the handout rather than republishing it. September 28 AZ-900 deep review: Public repository text fetched; PDF contents not opened/copied or current runtime verified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-devops-master-class-materials",
@@ -11257,7 +11532,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 182-character channel shell; no videos inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 182-character channel shell; no videos inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor",
@@ -11288,7 +11563,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 180-character shell; discovery reference only. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 180-character shell; discovery reference only. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -11406,9 +11681,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "partner-restricted",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization. September 28 AZ-900 deep review: Login shell only; earlier 10-hour estimate and eligibility are explicitly not reverified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "skilling-hub-levelup-dp-900",
@@ -12452,9 +12729,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Public listing shows 159 questions, certification and practice modes, explanations, references, and a free demo. Allow about five to nine hours for an initial simulation, targeted practice, and explanation review."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Public listing shows 159 questions, certification and practice modes, explanations, references, and a free demo. Allow about five to nine hours for an initial simulation, targeted practice, and explanation review. September 28 AZ-900 deep review: Public question-count/update/domain metadata read:159 questions, June 2026, 54/56/49 distribution. No questions or explanations copied. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "measureup-dp-900-practice-test",
@@ -12596,7 +12875,7 @@
         "AZ-801",
         "AZ-802"
       ],
-      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-gh-900-practice-assessment",
@@ -12690,9 +12969,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority. September 28 AZ-900 deep review: Direct fetch returned no substantive text. Separate credential page confirms practice-assessment route; assessment questions/launch not verified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp-900-practice-assessment",
@@ -12764,9 +13045,17 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "DP-900", "AZ-802", "DP-300"],
-      "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "GH-200",
+        "GH-300",
+        "AZ-900",
+        "DP-900",
+        "AZ-802",
+        "DP-300"
+      ],
+      "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review. September 28 AZ-900 deep review: Generic public page shell only; current AZ-900 entitlement/launch details not verified. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "whizlabs-ab-900",
@@ -13779,8 +14068,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-architecture-center",
@@ -13795,7 +14087,7 @@
         "AZ-900",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-compute-decision-guide",
@@ -13810,7 +14102,7 @@
         "AZ-900",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-arc-overview",
@@ -13820,8 +14112,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-monitor-documentation",
@@ -13837,7 +14132,7 @@
         "AZ-104",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-resource-locks",
@@ -13853,7 +14148,7 @@
         "SC-100",
         "AZ-104"
       ],
-      "notes": "September 27 SC-100 deep review: Targeted control/data-plane scope and lock behavior read; no destructive lock test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Selected scope, management/data-plane and POST-operation caveats read; full per-resource exception list not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Targeted control/data-plane scope and lock behavior read; no destructive lock test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Selected scope, management/data-plane and POST-operation caveats read; full per-resource exception list not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Main types/inheritance and selected VM start and Storage control/data-plane examples read; full list of service edge cases not exhaustively audited. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-resource-manager-overview",
@@ -13863,8 +14158,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-resource-organization-guidance",
@@ -13874,8 +14172,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-finops-guidance",
@@ -13885,8 +14186,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-cost-management-billing-overview",
@@ -13896,9 +14200,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Pricing, offers, included allowances, and UI behavior remain VERIFY CURRENT."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Pricing, offers, included allowances, and UI behavior remain VERIFY CURRENT. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-data-box-overview",
@@ -13908,8 +14214,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-governance-documentation",
@@ -13919,8 +14228,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-policy-overview",
@@ -13936,7 +14248,7 @@
         "AZ-104",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-migrate-services-overview",
@@ -13951,7 +14263,7 @@
         "AZ-900",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-networking-documentation",
@@ -13967,7 +14279,7 @@
         "AZ-305",
         "AZ-700"
       ],
-      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-networking-overview",
@@ -13977,8 +14289,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-private-endpoint-overview",
@@ -13994,7 +14309,7 @@
         "AZ-104",
         "SC-900"
       ],
-      "notes": "September 27 SC-900 deep review: Overview, approval, client connectivity and DNS sections reviewed; no private endpoint provisioned. Public-exposure setting is a separate verification task. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Overview, approval, client connectivity and DNS sections reviewed; no private endpoint provisioned. Public-exposure setting is a separate verification task. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-reliability-documentation",
@@ -14004,8 +14319,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-regions-list",
@@ -14015,9 +14333,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Region, zone, paired-region, and service availability are volatile and must be checked for the target workload."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Region, zone, paired-region, and service availability are volatile and must be checked for the target workload. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-rbac-overview",
@@ -14034,7 +14354,7 @@
         "AZ-305",
         "SC-900"
       ],
-      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-shared-responsibility",
@@ -14044,12 +14364,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AZ-900",
         "SC-900"
       ],
-      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Main service-model/retained-duty sections read and full HTML responsibility matrix inspected with table cells preserved; SaaS/PaaS application and device distinctions corrected. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-service-health-overview",
@@ -14059,8 +14379,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Main public status, personalized Service Health and individual Resource Health comparison read. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-storage-introduction",
@@ -14075,7 +14398,7 @@
         "AZ-900",
         "AZ-104"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-storage-redundancy",
@@ -14091,7 +14414,7 @@
         "AZ-104",
         "AZ-305"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected account/primary/secondary and asynchronous read-access distinctions read; complete SKU/region matrix not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected account/primary/secondary and asynchronous read-access distinctions read; complete SKU/region matrix not audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-storage-azcopy",
@@ -14106,7 +14429,7 @@
         "AZ-900",
         "AZ-104"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected v10 scope, transfer types and installation options read; no binary installation, copy or sync execution. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected v10 scope, transfer types and installation options read; no binary installation, copy or sync execution. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-file-sync-overview",
@@ -14116,8 +14439,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-802"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-802"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-storage-explorer-overview",
@@ -14127,8 +14454,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-virtual-machines-overview",
@@ -14143,7 +14473,7 @@
         "AZ-900",
         "AZ-104"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-virtual-network-overview",
@@ -14159,7 +14489,7 @@
         "AZ-104",
         "SC-900"
       ],
-      "notes": "September 27 SC-900 deep review: Targeted VNet, connectivity, filtering and routing overview read. No automatic outbound-access assumption added to guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Targeted VNet, connectivity, filtering and routing overview read. No automatic outbound-access assumption added to guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-az-900-certification-page",
@@ -14169,9 +14499,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"],
-      "notes": "Credential page and learning-path entry point; exam details, scheduling, and linked preparation content are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "Credential page and learning-path entry point; exam details, scheduling, and linked preparation content are volatile. September 28 AZ-900 deep review: Main credential/exam metadata read: 45-minute assessment and 13 languages. No booking, assessment session or questions opened. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-documentation",
@@ -14181,13 +14513,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AZ-900",
         "AB-900",
         "SC-900"
       ],
-      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-overview",
@@ -14197,8 +14529,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-conditional-access-overview",
@@ -14215,7 +14550,7 @@
         "SC-900",
         "MS-102"
       ],
-      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-domain-services-overview",
@@ -14225,8 +14560,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900"
+      ],
+      "notes": "September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-purview-overview",
@@ -14236,9 +14574,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AB-900"],
-      "notes": "Purview product packaging, portals, and feature availability are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "AB-900"
+      ],
+      "notes": "Purview product packaging, portals, and feature availability are volatile. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dp900-core-data-concepts-path",
