@@ -85,6 +85,13 @@ initial findings and catalog coverage limits.
 
 ## One certification at a time
 
+**Notification pilot reservation — September 28, 2026:** hold GH-900, GH-200,
+GH-100, GH-500 and GH-600 for the [five-certificate notification pilot](NOTIFICATION-PILOT.md).
+These are the first five catalog entries without a receipt in the current deep-review
+program. Continue other guide reviews while preserving urgent corrections and normal
+source monitoring for the reserved guides. The pilot starts with manual baselines and
+notification delivery disabled; selection alone does not enable conditional email.
+
 The [Microsoft review tracker](MICROSOFT-REVIEW-STATUS.md) distinguishes this deep-review
 program from historical source validation. `data/deep-reviews.json` stores dated
 receipts with the reviewed guide hash, objective count, report/evidence paths, lab

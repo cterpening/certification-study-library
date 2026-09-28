@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: reserve the first five pending certificates—GH-900, GH-200, GH-100, GH-500 and GH-600—for the [weekly notification pilot](docs/NOTIFICATION-PILOT.md), with manual baselines and five required notification scenarios. Conditional email delivery remains pending.
+
 - September 28, 2026: add [GH-300's runnable boundary/context workshop](docs/labs/gh-300.md), seven requirement tests, verified threshold and boolean mutations, two prompts and a practitioner packet. Copilot session evidence is pending.
 
 - September 28, 2026: add [AI-103's runnable maintenance-assistant contracts](docs/labs/ai-103.md): five retrieval fixtures, approval/asset/duplicate/timeout drills and 13 passing local tests. Azure and multimodal validation remain pending.

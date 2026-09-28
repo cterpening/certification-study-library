@@ -25,6 +25,7 @@ PUBLIC_DOCUMENTS = (
     "docs/AI-AUDIT.md",
     "docs/ARCHITECTURE.md",
     "docs/AUTOMATION.md",
+    "docs/NOTIFICATION-PILOT.md",
     "docs/MICROSOFT-REVIEW-STATUS.md",
     "docs/BACKLOG.md",
     "docs/CONTENT-POLICY.md",
