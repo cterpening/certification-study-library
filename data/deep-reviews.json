@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "AIP-C01",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "241dad96b36cecbdc77abd13535c8c78aeefe5a12ed6b4b536a81c16bb663bc5",
+      "objective_count": 98,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-28-aip-c01-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-aip-c01-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; human review pending.",
+        "No live FM, AWS lab, IAM evaluation, paid lesson or blog deployment executed.",
+        "Synthetic checks validate example arithmetic/predicates only.",
+        "App Runner exact historical closure date remains conflicted.",
+        "Source ingestion and authorization must be tested against the chosen actual service path."
+      ]
+    },
+    {
       "exam_code": "DOP-C02",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "3194e8f7d7e877b1808b3422dbd389cebb1dac1e1a3f3265d8838987042294aa",

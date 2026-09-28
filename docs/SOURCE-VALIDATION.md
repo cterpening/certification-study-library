@@ -1097,6 +1097,8 @@ The review reconciles the current six-domain DOP-C02 blueprint with every detail
 
 ## AIP-C01 coverage record
 
+The September 28 [deep review](research/2026-09-28-aip-c01-deep-review.md) maps 98 detailed objectives. Review 98 skills; add concrete AgentCore boundaries, RAG sync, BDA, cross-Region/caching, five worked decisions and bounded CI evaluation reading. Current guide citations: 33 registered, 31 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Foundation Model Integration, Data Management, and Compliance | Section 1, all integrated scenarios, and Labs 1–3, 7–8 |

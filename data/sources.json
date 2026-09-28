@@ -3,6 +3,90 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-agentcore-evaluations",
+      "title": "AgentCore Evaluations documentation",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "AIP-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-agentcore-ci-blog",
+      "title": "Automated AgentCore evaluation with GitHub Actions",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "AIP-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 AIP-C01 deep review: Selected architecture/evaluation/auth sections read; deployment and commands not executed. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-bedrock-crossregion",
+      "title": "Bedrock cross-Region inference",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "AIP-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-bedrock-prompt-caching",
+      "title": "Bedrock prompt caching",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "AIP-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 AIP-C01 deep review: Read generic implicit/explicit prefix, cache eligibility and TTL overview; no live hit-rate validation. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-bedrock-data-automation",
+      "title": "Bedrock Data Automation overview",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "AIP-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-bedrock-kb-sync",
+      "title": "Bedrock knowledge-base synchronization",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "AIP-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-ecs-strategies",
       "title": "ECS deployment controllers and strategies",
       "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
@@ -451,10 +535,11 @@
       "supported_exams": [
         "AIF-C01",
         "DEA-C01",
-        "SAA-C03"
+        "SAA-C03",
+        "AIP-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-kiro-docs",
@@ -466,10 +551,11 @@
       "access_model": "public",
       "supported_exams": [
         "AIF-C01",
-        "SOA-C03"
+        "SOA-C03",
+        "AIP-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Direct body extraction empty; independently read web-rendered introduction to verify development-environment purpose. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 SOA-C03 deep review: Purpose read through web rendering during AIF review; direct extract remains empty. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Direct body extraction empty; independently read web-rendered introduction to verify development-environment purpose. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 SOA-C03 deep review: Purpose read through web rendering during AIF review; direct extract remains empty. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Direct extraction empty; previously reviewed rendered official introductory documentation supports only role description. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-strands-introduction",
@@ -494,10 +580,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "AIF-C01"
+        "AIF-C01",
+        "AIP-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-auditmanager-availability",
@@ -537,10 +624,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "AIF-C01"
+        "AIF-C01",
+        "AIP-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-clf-new-builder-blog",
@@ -752,10 +840,11 @@
       "access_model": "public",
       "supported_exams": [
         "SAP-C02",
-        "DOP-C02"
+        "DOP-C02",
+        "AIP-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-apprunner-api-notice",
@@ -767,10 +856,11 @@
       "access_model": "public",
       "supported_exams": [
         "SAP-C02",
-        "DOP-C02"
+        "DOP-C02",
+        "AIP-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-sap-residency-blog",
@@ -957,10 +1047,11 @@
       "access_model": "public",
       "supported_exams": [
         "DVA-C02",
-        "DOP-C02"
+        "DOP-C02",
+        "AIP-C01"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-dva-sqs-configuration",
@@ -1116,9 +1207,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "MLA-C01",
-        "MLA-C02"
+        "MLA-C02",
+        "AIP-C01"
       ],
-      "notes": "September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-ml-debugger-availability",
@@ -36533,13 +36625,37 @@
       "id":"aws-aif-c01-sagemaker","title":"What is Amazon SageMaker AI?","url":"https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01"],"notes":"Current custom ML/model lifecycle platform overview."
     },
     {
-      "id":"aws-aif-c01-agentcore","title":"What is Amazon Bedrock AgentCore?","url":"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01"],"notes":"Current agent infrastructure overview; features, release stages, regions, identity behavior and pricing are volatile."
+      "id": "aws-aif-c01-agentcore",
+      "title": "What is Amazon Bedrock AgentCore?",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AIF-C01",
+        "AIP-C01"
+      ],
+      "notes": "Current agent infrastructure overview; features, release stages, regions, identity behavior and pricing are volatile. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"aws-aif-c01-knowledge-bases","title":"Amazon Bedrock Knowledge Bases","url":"https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01"],"notes":"Current managed RAG ingestion, retrieval and generation overview."
     },
     {
-      "id":"aws-aif-c01-guardrails","title":"Amazon Bedrock Guardrails","url":"https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01"],"notes":"Current configurable safeguard overview; guardrails remain one layer in a responsible and secure system."
+      "id": "aws-aif-c01-guardrails",
+      "title": "Amazon Bedrock Guardrails",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AIF-C01",
+        "AIP-C01"
+      ],
+      "notes": "Current configurable safeguard overview; guardrails remain one layer in a responsible and secure system. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"aws-aif-c01-model-evaluation","title":"Amazon Bedrock model evaluation","url":"https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01"],"notes":"Current automatic and human evaluation workflow reference."
@@ -43421,9 +43537,10 @@
         "MLA-C01",
         "MLA-C02",
         "AIF-C01",
-        "DEA-C01"
+        "DEA-C01",
+        "AIP-C01"
       ],
-      "notes": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution. September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+      "notes": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution. September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-aib-c01-technologies-concepts",
@@ -43492,9 +43609,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "MLA-C01",
-        "MLA-C02"
+        "MLA-C02",
+        "AIP-C01"
       ],
-      "notes": "Review the July 30, 2026 no-new-customer boundary and maintenance status while Model Monitor remains named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution."
+      "notes": "Review the July 30, 2026 no-new-customer boundary and maintenance status while Model Monitor remains named by the blueprint. September 28 MLA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-mla-c02-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-copilot-policy-billing-september-2026",

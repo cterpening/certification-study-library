@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # AIP-C01 AWS Certified Generative AI Developer - Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aip-c01-coverage-record). The [official AIP-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 98 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aip-c01-coverage-record). The [official AIP-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html) is authoritative.
 
 **Current baseline:** Current standard five-domain AIP-C01 AWS Certified Generative AI Developer - Professional guide; 65 scored plus 10 unscored questions<br>
-**Upcoming blueprint change:** None announced on the official exam guide or certification page as of September 1, 2026.<br>
-**Important freshness boundary:** AIP-C01 moved from its earlier beta period to a standard exam in March 2026, with the standard scope refreshed for fast-moving services including Amazon Bedrock AgentCore. Use the current `ai-professional-01` guide—not an early beta outline or an unofficial AP1/AIGDP code. Model catalogs, APIs, regions, quotas, pricing, safety features, AgentCore components, Strands, AWS Agent Squad, MCP, and learning products are **VERIFY CURRENT**.<br>
+**Upcoming blueprint change:** None announced on the official exam guide or certification page as of September 28, 2026. See the [deep-review report](../docs/research/2026-09-28-aip-c01-deep-review.md).<br>
+**Important freshness boundary:** AWS announced standard-exam registration in March 2026 and identified March 31 as the final beta day, with the standard scope refreshed for fast-moving services including Amazon Bedrock AgentCore. Use the current `ai-professional-01` guide—not an early beta outline or an unofficial AP1/AIGDP code. Model catalogs, APIs, regions, quotas, pricing, safety features, AgentCore components, Strands, AWS Agent Squad, MCP, and learning products are **VERIFY CURRENT**.<br>
 **Official source:** [AWS Certified Generative AI Developer - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html)
 
 ## How to use this guide
@@ -69,7 +69,7 @@ Compare capability/modalities/language, context/output limits, latency, throughp
 
 [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) offers managed access to multiple FMs and GenAI building capabilities. SageMaker AI supports customer-managed/custom-model deployment patterns. Abstract the model contract—request/response schema, capabilities, parameters, error normalization, metrics, safety policy, and fallback—without pretending providers are behaviorally interchangeable.
 
-Resilience can include exponential backoff with jitter, timeouts, concurrency/rate limits, circuit breakers, queues for asynchronous work, Cross-Region Inference where supported, provider/model fallback, cached/degraded results, and human escalation. A fallback model must pass safety, data, and quality policy; availability alone is insufficient.
+Resilience can include exponential backoff with jitter, timeouts, concurrency/rate limits, circuit breakers, queues for asynchronous work, Cross-Region Inference where supported, provider/model fallback, cached/degraded results, and human escalation. A fallback model must pass safety, data, and quality policy; availability alone is insufficient. [Cross-Region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) profiles can be geographic or global. A geographic profile bounds processing to its supported geography, not necessarily the request's source Region. Global routing can process in supported commercial Regions worldwide. Check destination permissions and SCPs, the specific model/profile and data requirements before selecting it. Traffic staying on the AWS network does not mean it stays in one Region. The source-Region CloudTrail event can identify the processing Region through `additionalEventData.inferenceRegion`.
 
 Model customization options range from prompt/RAG through parameter-efficient adaptation, fine-tuning, or other supported methods. Choose only when evaluation shows the simpler layer cannot meet behavior. Version data, model/base, hyperparameters/adapters, prompt, evaluation, container, endpoint/config, approval, and rollback. The target role deploys/manages customization rather than inventing advanced training algorithms.
 
@@ -80,6 +80,8 @@ Model customization options range from prompt/RAG through parameter-efficient ad
 For text, image, audio, video, or tabular inputs, define source authority/license/consent, owner, classification, lineage, format/size, language, quality, malware/content risk, duplication, update/delete behavior, and retention. Validate schema and content before use. Normalize/segment/transcribe/extract only with traceable transformations; preserve source-to-derived links and deletion propagation.
 
 Model-specific request formats, conversation roles, token/context limits, image/audio constraints, and structured outputs are API contracts. Validate and reject malformed inputs deliberately. Do not silently truncate critical content. Record what was omitted and route oversized work to chunking/summarization/batch workflows according to requirements.
+
+[Bedrock Data Automation](https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html) converts supported document, image, audio and video content into structured information for downstream applications. It is a concrete option for skills 1.3 and 2.5.3. Keep provenance to the original, validate required fields and business rules, and route ambiguous extraction to review. A confidence score or valid JSON is not proof that the extracted invoice total matches the source.
 
 ### Design vector stores and retrieval as one system
 
@@ -100,7 +102,7 @@ RAG flow:
 7. prompt the FM to use evidence and abstain when insufficient;
 8. validate output/citations and record lineage without leaking sensitive content.
 
-Retrieval freshness needs change detection, reprocessing, re-embedding, upsert/delete, index readiness, reconciliation, and lag monitoring. Event-driven updates improve freshness but need duplicate/order/retry handling; scheduled rebuilds can simplify reconciliation. Test revoked access and deleted source propagation.
+Retrieval freshness needs change detection, reprocessing, re-embedding, upsert/delete, index readiness, reconciliation, and lag monitoring. Event-driven updates improve freshness but need duplicate/order/retry handling; scheduled rebuilds can simplify reconciliation. Test revoked access and deleted source propagation. For a connector-based [Bedrock knowledge-base sync](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html), source changes require ingestion; incremental sync processes changed, added and deleted documents. Metadata-only optimization has conditions: non-CSV content, no custom transformation Lambda, and no content change. CSV metadata updates trigger re-ingestion. Confirm ingestion results and query visibility; do not assume an S3 object deletion immediately removes every retrievable copy. Direct-ingestion and managed knowledge-base paths have their own contracts.
 
 **Related item:** Grounding reduces unsupported claims only when retrieval returns relevant, authorized, current evidence and the generation step actually uses it. RAG does not guarantee factuality.
 
@@ -129,7 +131,18 @@ An agent loop observes a request/state, plans or selects a next step, invokes a 
 - human approval before sensitive or irreversible actions;
 - trace, audit, safety filters, and emergency disable.
 
-Bedrock Agents/Flows, AgentCore components, Strands Agents, AWS Agent Squad, Step Functions, Lambda, containers, and custom frameworks can participate according to current capabilities. Names and availability are **VERIFY CURRENT**. Separate orchestration from tool authorization: an FM may propose an action, but deterministic code and IAM must validate caller, parameters, policy, resource scope, state, and approval.
+Bedrock Agents/Flows, AgentCore components, Strands Agents, AWS Agent Squad, Step Functions, Lambda, containers, and custom frameworks can participate according to current capabilities. Names and availability are **VERIFY CURRENT**. Use the [AgentCore overview](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html) to connect the names to responsibilities:
+
+| Component | Responsibility to understand | Boundary to retain |
+|---|---|---|
+| Runtime | Host and isolate agent/tool execution | Your code, actions and data still need authorization |
+| Gateway | Expose supported APIs/tools through a common access path | Tool discovery is not permission to use every tool |
+| Memory | Persist session or longer-lived context | Ownership, retention, correction and deletion remain explicit |
+| Identity | Manage workload/user-related credentials | Credential possession is not unlimited business authority |
+| Policy | Evaluate tool requests at the gateway | Calls outside that path need their own controls |
+| Observability / Evaluations | Capture execution evidence and assess behavior | A trace or judge score does not prove a correct side effect |
+
+This is a learning subset, not a complete component catalog. Separate orchestration from tool authorization: an FM may propose an action, but deterministic code and IAM must validate caller, parameters, policy, resource scope, state, and approval.
 
 MCP standardizes context/tool integration patterns; it does not make a server trustworthy. Authenticate/authorize, validate schemas, allowlist tools, constrain network/filesystem/data, prevent confused deputy and indirect prompt injection, rate-limit, audit, and pin/review implementations. Use Lambda for suitable stateless/lightweight servers and containers for longer-lived or more complex needs according to runtime requirements.
 
@@ -159,7 +172,7 @@ Create a GenAI gateway only if it provides useful centralized model abstraction,
 
 Version code, IaC, dependencies, prompt, model/config, embedding/index schema, chunks/transformers, guardrail/policy, tool schemas, evaluation sets, thresholds, dashboards, and runbooks. Build and scan immutable artifacts; deploy to isolated test; run deterministic plus probabilistic evaluation; canary; monitor; promote or roll back.
 
-Amazon Q Developer can assist code/refactoring/testing, but generated changes require source review, tests, security/licensing checks, and ownership. AI assistance does not replace engineering evidence.
+[Kiro](https://kiro.dev/docs/) is another development-tool entry in the current scope, while [Amazon Quick](https://docs.aws.amazon.com/quick/latest/userguide/what-is.html) provides workplace research, analytics and automation capabilities. Neither name substitutes for understanding the custom application architecture. Amazon Q Developer can assist code/refactoring/testing, but generated changes require source review, tests, security/licensing checks, and ownership. AI assistance does not replace engineering evidence.
 
 ---
 
@@ -182,6 +195,10 @@ The official [Domain 3 page](https://docs.aws.amazon.com/aws-certification/lates
 Prompt injection attempts to make untrusted content override the application's intended control. Treat user input, retrieved documents, websites, tool output, messages, and memory as data—not instructions. Filtering alone is insufficient; enforce authority outside the model. Indirect injection becomes especially dangerous when an agent has tools.
 
 Guardrails can filter denied topics/content, sensitive information, grounding or other supported policy dimensions, but verify current coverage, language/modality, placement, latency, and false positives/negatives. Combine deterministic validation, model-based moderation, grounded evidence, tool boundaries, and humans according to risk.
+
+[AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html), [Policy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html) and [Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) solve different parts of control. Identity manages credentials; Policy checks permitted tool actions and inputs at the gateway; Guardrails evaluates supported content/policy dimensions. Policy supports Cedar and Dogwood, including session-aware conditions such as an approval before an action or a cumulative budget. Review generated policies, test permit and deny cases, and enforce durable transaction limits at the business system too: a session limit alone is not a customer-wide spending limit.
+
+Guardrails documentation excludes reasoning content blocks from its described input/response filtering coverage. Do not assume every captured field is filtered or safe to log. A generated SQL statement also needs parsing/allowlisted operations, caller-bound row access, read-only credentials where appropriate, and resource limits before execution. JSON Schema can validate shape while facts, authorization and query semantics remain wrong.
 
 ### Protect identity, data, and privacy
 
@@ -223,6 +240,8 @@ Optimization levers include:
 - parallelize independent steps while respecting quota/cost and partial failure;
 - remove redundant judge/model/tool calls.
 
+[Bedrock prompt caching](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html) includes implicit reuse of eligible prefixes and explicit model/API-specific cache controls. Put reusable static context before changing content where appropriate. Implicit reuse is best effort, so an identical prompt does not guarantee a hit. Check supported model/API, minimum prefix, TTL and measured cache-read/write usage; do not apply one model's limits to all models.
+
 Prompt caching and semantic caching have different invalidation and privacy risks. A semantic cache can return a plausible but unauthorized or stale answer unless the key includes security and version context.
 
 ### Measure latency and throughput end to end
@@ -262,6 +281,10 @@ Exact-match/ROUGE-style metrics can help deterministic or summarization cases bu
 
 Use offline regression before release, shadow/canary/A-B where ethical and safe, and continuous sampled evaluation after release. A model/prompt winner must meet safety and cost/latency constraints; average improvement cannot hide critical cohort regressions.
 
+[AgentCore Evaluations](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html) assesses instrumented agent behavior and supports built-in or custom evaluators. Choose deterministic checks for exact contracts and calibrated judge/human review for qualitative outcomes. Record the trace, evaluator/version, rubric, dataset, missing results and threshold; an evaluator error should not quietly become a passing score.
+
+The [September 8 CI evaluation article](https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/) is useful selected reading for evaluation gates and authentication tradeoffs. Stored traces measure the captured run, so they do not prove the current PR's behavior. Its live machine-to-machine example intentionally bypasses user-role checks; a passing score therefore cannot validate user authorization. Use scoped machine permissions and separate role-bound positive/negative tests before adapting it. A fixed fixture also does not make an LLM judge deterministic. The linked deployment code was not run for this guide.
+
 ### Troubleshoot by isolating the layer
 
 1. Reproduce with sanitized request and record all versions/IDs/timestamps.
@@ -296,9 +319,19 @@ Images/audio/text enter an asynchronous workflow. Validate file/type/size/malwar
 
 ---
 
+## Worked development decisions
+
+These original examples use synthetic data and hypothetical prices. Sixteen local arithmetic and policy assertions passed. They do not validate Bedrock, IAM, a deployed agent or model quality.
+
+1. **Separate retrieval precision from recall:** A query has four relevant authorized documents. The top three results contain two of them and one irrelevant document. Precision@3 is 2/3; recall@3 is 2/4. Raising k may recover evidence but adds context and possibly irrelevant material. Evaluate answer quality and permissions alongside retrieval metrics.
+2. **Budget the whole prompt:** With an 8,000-token context, 1,500 reserved output, 1,000 instructions, 500 tool schemas and 1,000 history, only 4,000 remain for retrieved context. Six 800-token chunks require 4,800 before wrappers/citations and exceed the budget. Five fit only before that overhead; reserve overhead or use fewer/smaller selected chunks rather than silent truncation.
+3. **Compare cost per success:** A baseline makes 1,000 calls at a fictional $0.01 each, with 800 acceptable outcomes: $10/800 = $0.0125 per success. A candidate costs $0.009 per call but produces only 600 acceptable outcomes: $9/600 = $0.015. Lower call cost raised cost per useful outcome, before retries or review.
+4. **Enforce more than a per-call cap:** A synthetic refund tool requires the caller's tenant to match the order, verified approval, positive integer cents and a per-call maximum of 10,000 cents. Even two separately allowed 8,000-cent refunds exceed a 10,000-cent session budget. Enforce the cumulative check and a durable per-order ledger atomically; resetting a session must not reset the business obligation.
+5. **Detect a hidden cohort regression:** On 200 cases split 180 common/20 rare, baseline results of 162/180 and 18/20 produce 90% overall. A candidate's 171/180 and 10/20 produce 90.5% overall, but the rare cohort falls from 90% to 50%. An average-only gate wrongly rewards the regression. Define cohort and critical-safety gates before measuring candidates.
+
 ## Practice labs
 
-Use an AWS Builder Lab, organization-approved sandbox, or disposable personal training account. Avoid regulated/production data, set budgets, use least privilege, record resources, and remove billable resources. Model/service access and pricing are **VERIFY CURRENT**.
+The eight cloud labs remain proposed; this review ran only synthetic local checks. Use an AWS Builder Lab, organization-approved sandbox, or disposable personal training account. Avoid regulated/production data, set budgets, use least privilege, record resources, and remove billable resources. Model/service access and pricing are **VERIFY CURRENT**.
 
 ### Lab 1: Use-case and model decision record — 90–150 minutes
 
@@ -392,15 +425,15 @@ This is **not a complete list**, and it is not meant to be consumed in full. Cho
 | LinkedIn Learning AIP-C01 Cert Prep | Paid/trial | 30 hours 16 minutes plus labs |
 | Tutorials Dojo video and practice route | Paid | 38–55 hours estimated |
 | Udemy/Maarek-Kane current course | Paid | 25–45 hours estimated plus labs |
-| Udemy/Rahul Trisal architecture route | Paid | 11 hours 22 minutes plus 20–35 hours labs |
+| Udemy/Rahul Trisal architecture route | Paid | Plan 30–50 hours with labs |
 
 - **Official route:** [AWS certification page](https://aws.amazon.com/certification/certified-generative-ai-developer-professional/), [current five-domain guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html), and [AIP-C01 Skill Builder plan](https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01) (**about 30–45 hours selected plus labs/evaluation**). The live page offers an official question set and pretest path; entitlements vary.
 - **Current broad route:** [LinkedIn Learning / Tutorials Dojo AIP-C01 Cert Prep](https://www.linkedin.com/learning/aws-certified-generative-ai-developer-professional-aip-c01-cert-prep) (**30 hours 16 minutes**, advanced, released March 3, 2026; add current AgentCore/service checks).
-- **Course/practice route:** [Tutorials Dojo AIP-C01 video course](https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/) (**27+ video hours, 10+ listed labs, 267 lessons and one 75-question test**) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/) (**about 10–18 hours across randomized, timed, review and domain modes**).
-- **Current comprehensive course:** [Udemy/Frank Kane and Stéphane Maarek AIP-C01](https://www.udemy.com/course/ultimate-aws-certified-generative-ai-developer-professional/) (**25–45 hours estimated plus labs**; shown updated August 2026 with two 75-question tests, but stable runtime was not exposed in the review response).
-- **Compact architecture/lab route:** [Udemy/Rahul Trisal AIP-C01](https://www.udemy.com/course/aws-certified-generative-ai-developer-professional-r/) (**11 hours 22 minutes**, 40+ listed labs and 60+ scenarios; updated July 2026). It is a focused supplement, not a substitute for professional AWS prerequisites.
+- **Course/practice route:** [Tutorials Dojo AIP-C01 video course](https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/) (**27+ video hours, 10+ listed labs, 267 lessons and one 75-question test**) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/) (**about 10–18 hours across randomized, timed, review and domain modes**). Its page advertises exam-feedback-based updates; avoid recalled material and use independently authored, source-backed explanations.
+- **Current comprehensive course:** [Udemy/Frank Kane and Stéphane Maarek AIP-C01](https://www.udemy.com/course/ultimate-aws-certified-generative-ai-developer-professional/) (**25–45 hours estimated plus labs**). Public body was blocked in this review; runtime, current update date and test count were not reverified.
+- **Compact architecture/lab route:** [Udemy/Rahul Trisal AIP-C01](https://www.udemy.com/course/aws-certified-generative-ai-developer-professional-r/) (**plan 30–50 hours with labs**). Public body was blocked; runtime, date, lab and scenario counts were not reverified. It is a focused supplement, not a substitute for professional AWS prerequisites.
 - **Architecture reference:** [AWS Generative AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html) (**6–12 hours selected review/application**; November 2025 publication, verify current services).
-- **Catalog boundary:** no exact current Pluralsight, O'Reilly, Whizlabs, or MeasureUp AIP-C01 product was independently verified on September 1, 2026. Recheck their live catalogs rather than substituting AIF-C01 or generic Bedrock content.
+- **Catalog boundary:** no exact current Pluralsight, O'Reilly, Whizlabs, or MeasureUp AIP-C01 product was independently verified in this review. Recheck their live catalogs rather than substituting AIF-C01 or generic Bedrock content.
 
 Suggested preparation: an experienced production GenAI developer may need **100–150 hours**; someone still building AWS/application prerequisites may need **180–280 hours** including them.
 
@@ -412,6 +445,10 @@ The current root and five detailed domain pages define the standard assessment c
 
 - **VERIFY CURRENT:** model IDs/capabilities/context/pricing, Bedrock APIs, AgentCore, Strands, Agent Squad, MCP features, Knowledge Bases/stores, evaluation, guardrails, Cross-Region Inference, prompt caching, regions and quotas.
 - **VERIFY CURRENT:** service data-use/privacy terms, encryption/network integrations, model customization/deployment, tool/trace behavior, and training metadata before production use.
+The [June 30 service-availability notice](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/) closes several scope-listed services/features to new customers from July 30, including Bedrock Agents Classic, Kendra, Q Business, A2I, Clarify, Ground Truth and Model Monitor. Existing-customer access differs from new-account eligibility. AgentCore is distinct from Agents Classic; choose available tooling for labs while retaining the published conceptual scope. [X-Ray SDK/daemon maintenance](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html) is also distinct from X-Ray service retirement.
+
+App Runner is closed to new customers, but the [product page](https://aws.amazon.com/apprunner/) gives April 30, 2026 and the [API notice](https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html) gives March 31. The precise historical date remains blocked for vendor clarification; neither supports a new-account lab today.
+
 - **Stable system pattern:** outcome/risk contract → measured baseline → governed context/tools → layered controls → versioned delivery → multi-perspective evaluation → continuous observation/improvement.
 
 This guide uses no recalled exam questions or restricted content. The knowledge checks are original and test published concepts rather than reproducing vendor items.

@@ -1,0 +1,1820 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AIP-C01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "73aa76fa6c0d20639ae80ad5172eeb0435e23ebb292f6a29a5fc4220d12ee3b9",
+  "guide_after_sha256": "241dad96b36cecbdc77abd13535c8c78aeefe5a12ed6b4b536a81c16bb663bc5",
+  "prior_records": {
+    "exam": {
+      "code": "AIP-C01",
+      "level": "expert",
+      "vendor_id": "aws",
+      "title": "AWS Certified Generative AI Developer - Professional",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+      "guide_path": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite; AWS targets candidates with two or more years building production applications on AWS or open-source technologies, general AI/ML or data-engineering experience, and one year implementing generative-AI solutions. Practice governed multimodal data, RAG and evaluation, model abstraction, prompts, agents/tools/state, enterprise integration, safety/security, deployment, observability, performance/cost optimization and evidence-driven troubleshooting."
+    },
+    "review": {
+      "id": "aip-c01-2026-09-01-source-validation",
+      "exam_code": "AIP-C01",
+      "guide_path": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/aip-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf",
+      "objective_coverage": [
+        {
+          "objective_group": "Foundation Model Integration, Data Management, and Compliance",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Implementation and Integration",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3–6, 8"
+          ]
+        },
+        {
+          "objective_group": "AI Safety, Security, and Governance",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 1–2, 5, 7–8"
+          ]
+        },
+        {
+          "objective_group": "Operational Efficiency and Optimization for GenAI Applications",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3, 6, and 8"
+          ]
+        },
+        {
+          "objective_group": "Testing, Validation, and Troubleshooting",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 3–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 17,
+        "reachable": 15,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The current standard five-domain AIP-C01 guide was reconciled with every detailed domain page, the live 180-minute/75-question/USD-300 certification page, non-exhaustive service list and March 2026 post-beta scope refresh. Three scenarios, eight safe labs and 42 original checks cover governed multimodal data and retrieval, model/prompt lifecycle, agents/tools/state and enterprise integration, layered safety/security/governance, operational optimization, multi-perspective evaluation and evidence-driven troubleshooting. All 17 unique URLs are cataloged; automated link totals are updated from the source-health run. Fast-changing model/service/training metadata is labeled, the AgentCore-era standard exam is separated from early beta outlines/unofficial codes, and no recalled questions are used."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "e7e292420cee01a80c5c7cdfb11b37a047210b5633f07a36a48f8ba10e3b0a76",
+      "guide_sections": "1 / Start with a use-case and evaluation contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "128e35f78551d9996814dd7217b2d294655c05ff971828f795418a1b35082641",
+      "guide_sections": "1 / Start with a use-case and evaluation contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "ea5995efb6cc4a80744854e4a6964ce588b9fdcd38d276680a7f65c5c575a6be",
+      "guide_sections": "1 / Start with a use-case and evaluation contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "448bc4fa092e58ecea46733a7328264a436cea7f45f681a751c4c7328e8fdbb6",
+      "guide_sections": "1 / Select models by measured fit; cross-Region constraints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "d4f0495cee2645303687b212075dd6462dc2fc2fe297970445742aa74c6dfca6",
+      "guide_sections": "1 / Select models by measured fit; cross-Region constraints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "5ac5d40434e987c558160ac9a21e87b9266846bf056594d2e302fa91f467f4a4",
+      "guide_sections": "1 / Select models by measured fit; cross-Region constraints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "6430ecff21afa80ccae521f2366b60a0a60384a9f6e8de49408112c5fa8d69b1",
+      "guide_sections": "1 / Select models by measured fit; cross-Region constraints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "a2a2d2fdc980efe65e8fa48be9dc0d1b98cd44f973d6e8c0480dc3527429bdf2",
+      "guide_sections": "1 / Govern multimodal input data; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "d8d026d62db864b3f343f1b51ffcb10ea8ef9ab722be12723f37d8ce7f8801e6",
+      "guide_sections": "1 / Govern multimodal input data; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c02fe065297a00321255aae3b26f9a36f602ca8ee11dd3fbf82bf2a0cafe7a7e",
+      "guide_sections": "1 / Govern multimodal input data; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "21afa2793d675620a56b224039e9f719abee6ec7d22f956d80670661af07dcce",
+      "guide_sections": "1 / Govern multimodal input data; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "324bdca5a840d39a8f2e3950b3986ba4a5c6d306a819ec362599cb7e7d106559",
+      "guide_sections": "1 / Design vector stores and retrieval as one system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "fcc0c283973193990c3b1823a18df6b6f2147c87ef3c3121a8efc8fd2e55d3dc",
+      "guide_sections": "1 / Design vector stores and retrieval as one system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "cb514be9623ca1b9c1994dafbfaa4845501881806c96dbd5b97f713e5d5c7285",
+      "guide_sections": "1 / Design vector stores and retrieval as one system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "316c151c26402d4309ac1894f328c80f3cb61be960b7a503552a8295e4184161",
+      "guide_sections": "1 / Design vector stores and retrieval as one system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "bef575227c4c8dc01007127a2dc85bfaadc0ae799b11e9661cf0e949b5d40e73",
+      "guide_sections": "1 / Design vector stores and retrieval as one system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "d9235b86323bff4e1f9b14a2b29717fd44fb19ee3679e20ed23edb6347286e8b",
+      "guide_sections": "1 / Design vector stores and retrieval; synchronization; worked retrieval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d9239184b7e66354ae75ada265db6767b969dd1f7edfb007586335b481452f77",
+      "guide_sections": "1 / Design vector stores and retrieval; synchronization; worked retrieval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "f240c02fa4a6b5af1f9320eb76137bfea46eaa72316a97c8b9cd9b827bf8d75f",
+      "guide_sections": "1 / Design vector stores and retrieval; synchronization; worked retrieval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "bdcecc791dd9261f09d652060a410c380b3ef3da79b247367e2c25ed85f1663c",
+      "guide_sections": "1 / Design vector stores and retrieval; synchronization; worked retrieval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "3a1c4b41665d3cbfdcb49ca342f2d28b23007279a91d6fc9d161e1f498d7e86f",
+      "guide_sections": "1 / Design vector stores and retrieval; synchronization; worked retrieval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "220affd16e649f225f21c0cfc8221f9fb76c027b56b86e73270fe5fd41ad5c30",
+      "guide_sections": "1 / Design vector stores and retrieval; synchronization; worked retrieval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "be3a68b4a1bbe6cd8d3cfad6598c9298db3b9e3044056d87e9924a1de68ad454",
+      "guide_sections": "1 / Version prompts as production artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "0a50c26ac731533787b1937d9642eaaf7e274ef60d87eed30949d4581b3b7a30",
+      "guide_sections": "1 / Version prompts as production artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "65aec2706f9865b0b987a6282acb30c62c727593bd8c5c1fc35d11d91ce47794",
+      "guide_sections": "1 / Version prompts as production artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "da199e3c4bc2bcb8896e0003fd9542a8a4dc621959595061bb84a4c9d0806271",
+      "guide_sections": "1 / Version prompts as production artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "a8ffea09c6058accfa6d7687b930c2bb7c3b4974b549459095c86b88fd932f36",
+      "guide_sections": "1 / Version prompts as production artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "f8d7ec68b988ee0ce260d81bd22122f1f32b8d8c5a5dc4ebcb11284a092e360d",
+      "guide_sections": "1 / Version prompts as production artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "437606172fc210e20eaf944530220b53d752aa4ed8e4d43e178960b8e86ef859",
+      "guide_sections": "2 / Build agents as bounded state machines; component table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "4ac9d45df059f0a13b019d54107f11bdb75ff203c1d265ad8c9f155880079c18",
+      "guide_sections": "2 / Build agents as bounded state machines; component table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "9762cf990e8afddd4ed34adc46629cca49afa77006dac01182b797fb87276960",
+      "guide_sections": "2 / Build agents as bounded state machines; component table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "01c10b079cf9e23a08e5923da2912faaaf57a11a0c89a8b031938a49344dcb03",
+      "guide_sections": "2 / Build agents as bounded state machines; component table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "976495d83420f5c25fb2b67aa1c97987a0f7740e505efebc1f5785c120d15b27",
+      "guide_sections": "2 / Build agents as bounded state machines; component table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "ef9283a68e8c3f0180c9f14e6fe7d2b85a939c2df2abf75bdc4ac50b9b803e3d",
+      "guide_sections": "2 / Build agents as bounded state machines; component table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "083ec3640439a9213a81dfa31ea1decc79b671b57c7e93ec281a8899eaefbfe3",
+      "guide_sections": "2 / Build agents as bounded state machines; component table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "5fda2829a602fc637bcb7fa99e94ca07363362d5290cf39005ab765baba16741",
+      "guide_sections": "2 / Choose inference/deployment deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "ddbc5ad652425bbd6aa838611baad57fdd5d0a8ac6c4e7f038685cb2a9ec9d6c",
+      "guide_sections": "2 / Choose inference/deployment deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "36f4c1c337c98f2ba2c9c926c28488c0a7368128caaa367508a212fef7b06fcc",
+      "guide_sections": "2 / Choose inference/deployment deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "2b90ab9405904c0e08d3b667ce3eb6d030ffa557c3510ea99b6d4a1c8584f46d",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "ebe549c9d0a71d2ea3f83a88b1c4eefa7b6d7cb82046a5ca99a3e728647a1966",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "c9e2adfeba51248295ad46016649915dc15dd2099fef91cfc8221ae2c931a4cb",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "3d3fc73b35955fb926c78abe7349400937371c08cc1789bc306051913b2802b0",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "3255ab5ffb903f0bc7e16242388796422638cc485b314e5608d0b4f81688e944",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "3068a5307da910a0c6f194a388a941581b8117645a483723e11b93e3047cceab",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "6f4e4d94d108e0dcdcbe8b3d74ff44ed3eabf6d84faef39d40b6710d25ee1d09",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "bfb26d5995277c365d9473b60302b94fa3281962d91911db6fc2f6c5fd8fc305",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "793c367353779288e574a60af0188dea1518adaa4fa7660479aa74935ad27fd1",
+      "guide_sections": "2 / Integrate APIs and enterprise workflows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "180b40d8a93d52307669fa43bc79e912558bfe72ef2ebaa98a05e6b55600868a",
+      "guide_sections": "2 / Deliver GenAI components with CI/CD; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "6773a0af6ab721afa23ae4a0937cbfbbdce817a8b049e3ba792f35396d551515",
+      "guide_sections": "2 / Deliver GenAI components with CI/CD; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "c22f63c8d33955cced55aea7c6beca2c631d646c873c5f06b20b70faf541ddca",
+      "guide_sections": "2 / Deliver GenAI components with CI/CD; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "0a8e4eca14059bd46c213879d58b0ea1b87a56c2bb4b2a1f773d8b5cc9f1c7c4",
+      "guide_sections": "2 / Deliver GenAI components with CI/CD; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "e03833f343d3d0dfba0007880956ea3d2fcab1fcf0647b4d0b151d12197fd109",
+      "guide_sections": "2 / Deliver GenAI components with CI/CD; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "b50e2a885aeaad1d15380b1a0051b3587e2d2e85bfa52e6f8d4ab57f72286594",
+      "guide_sections": "2 / Deliver GenAI components with CI/CD; Data Automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "045be7375b630074613805bb0a352942745584a9891b62d78703dd41c5880364",
+      "guide_sections": "3 / Use defense in depth; Guardrails/SQL/schema boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "4fabb1e201af6af79771b8d2e5fe027beed51ed311a50ae40bf8e552a903e5e9",
+      "guide_sections": "3 / Use defense in depth; Guardrails/SQL/schema boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "e7c645ccab16d7fdf043d7be8e4daf9f09ea43e950ec3647871f61dcbf43b301",
+      "guide_sections": "3 / Use defense in depth; Guardrails/SQL/schema boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "a79d090af171eedeed559fdeb688eceabb4363701a8337b81041abc7663e965e",
+      "guide_sections": "3 / Use defense in depth; Guardrails/SQL/schema boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "5d623518f10e4a30429a71127fd2cb2c630ef4f45c0807114b85f9825158bcfb",
+      "guide_sections": "3 / Use defense in depth; Guardrails/SQL/schema boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "a0661137a24402481de3788a6cdb8a35e9e203de12b7df681ff25daf4a5d3c0d",
+      "guide_sections": "3 / Protect identity, data, and privacy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "7c20ba6a5651323d04c53dce1d28943098030dc5bc16b12b21ca52905e73f623",
+      "guide_sections": "3 / Protect identity, data, and privacy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "fa80908989be7ef513e7162e7445b97d1dd8d943908d901de16b6ddfe3601965",
+      "guide_sections": "3 / Protect identity, data, and privacy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "0e1130c96f799b52b4be6400dbc422c89a830b59b7927337c2f380ecd9146bb9",
+      "guide_sections": "3 / Make governance executable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "03f21688e856f85ef55ed71a954f8c50baaacd2ef72cb0ee15b725fc29fb131e",
+      "guide_sections": "3 / Make governance executable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "b040d6c05f47b2ef4463d6ee1ec1ffde5b113b58de80054c812a75e77949ccaa",
+      "guide_sections": "3 / Make governance executable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "6d60d57608f36efb00b87ba70f48c27140ecd7dd20f86f0d9612612983f8f78b",
+      "guide_sections": "3 / Make governance executable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "5ed7f50e695c9e8b9ae7b5e5286c6e44a07c7f3c4232a20315f92d4161c84936",
+      "guide_sections": "3 / Make governance executable; responsible AI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "40a17814e2ce645e04d57501ae2d333a7fb11bc1877e0aa360f1ca306d941e3b",
+      "guide_sections": "3 / Make governance executable; responsible AI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "e3a8c8ef6dc069bd34ba5a8da3e418c518ef02cddbbb0769945e66b666a13d5a",
+      "guide_sections": "3 / Make governance executable; responsible AI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "1405d9b0b22fecdfdd2063818b0eea5f1e870b54d17c4652da948acb82bfb2de",
+      "guide_sections": "4 / Optimize a quality-constrained objective; caching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "1cb0b1023f6b548a18b0894a55c6a443eb8f54a7e7cf904b1d592d57a216c887",
+      "guide_sections": "4 / Optimize a quality-constrained objective; caching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "e01a3efca31332bae7d14b6c57962eb825a95af55575ad70996d6384cb05d380",
+      "guide_sections": "4 / Optimize a quality-constrained objective; caching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "92998a9b8f202e82705d5a687cebc4fb51e10378e66a14b87707e5b37cf0d3f9",
+      "guide_sections": "4 / Optimize a quality-constrained objective; caching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "3c678b5a436fcea0bb53f1bc5fa18b731cee4fa65585c8460f91149bb722d6b4",
+      "guide_sections": "4 / Measure latency and throughput end to end",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "ef993e513b05a8f9c08af0b407429fe9573cbffb701376affc9b33fdb39f2ee6",
+      "guide_sections": "4 / Measure latency and throughput end to end",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "821225654ccae436b6738dacac2160056d700b9b2a799a765e58078b5f0fdaf8",
+      "guide_sections": "4 / Measure latency and throughput end to end",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "099534212a2a6ecad639b0ce886310cd272c964cb89aa32d9733900732abee1d",
+      "guide_sections": "4 / Measure latency and throughput end to end",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "fceb92f2f8cc75493e459609d3855abe821652eb941c39e48e8f14bbd8133342",
+      "guide_sections": "4 / Measure latency and throughput end to end",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 6,
+      "objective_sha256": "51947b7fb35c777f36a5bc4fc36137cb549a4a351259224f135def6b7cbb8e5e",
+      "guide_sections": "4 / Measure latency and throughput end to end",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 1,
+      "objective_sha256": "195b8d5113dec99c7c0e92d1318cb6240f2219915da9d899d9556c0896d39912",
+      "guide_sections": "4 / Observe behavior, not just infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 2,
+      "objective_sha256": "76636c0eb3149151e5e14b7ae5b49b56d388e73d51b2177fce6def7e69544710",
+      "guide_sections": "4 / Observe behavior, not just infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 3,
+      "objective_sha256": "a6ab7e4f722a974a12df2ac853db7ee0cd72c590ca232bf9ee8b00ce3c16db3a",
+      "guide_sections": "4 / Observe behavior, not just infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 4,
+      "objective_sha256": "ed617126be2d28768208e65ac6f9373429359795bff372ac3d490bdefaaf3703",
+      "guide_sections": "4 / Observe behavior, not just infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 5,
+      "objective_sha256": "1e5a8cd9c7d7c99056446676f18aee966818efd4d65ceff44cbc481d54894daf",
+      "guide_sections": "4 / Observe behavior, not just infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 6,
+      "objective_sha256": "eeda8707df2c3e196dc8687d9544b1bb0f1801c4e1a2848aa2bd61b7c1e0d539",
+      "guide_sections": "4 / Observe behavior, not just infrastructure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 1,
+      "objective_sha256": "1dcac21897910a7cb2a4bfab576e41ec6df77c69e5a04a5bd607ca8c2e7ffe15",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 2,
+      "objective_sha256": "af21dd708832683e495402f63e2237ad9ef1619ed633d3c166029d0748346ac1",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 3,
+      "objective_sha256": "756cc330d88ea74cd883ff02f8cfed9de03c764ecb020ea38cc4d9c7e7679f97",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 4,
+      "objective_sha256": "1f3757ff5431ce0e1249f221464e5bfb972d95313e237bf495ad48682cd923fb",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 5,
+      "objective_sha256": "ba351aaf41f71788930fdf6bc8a791aaefef06d740a3ef3902aa632115193f52",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 6,
+      "objective_sha256": "66d6f39f3e45c8c645c45d6a30789c963ce0452e111dfe75ad7e67db167e8ffa",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 7,
+      "objective_sha256": "1c773bb09c061b54212561f0d077a6cf447dd5db7256e1af59293655d683c40b",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 8,
+      "objective_sha256": "cfe194e4ac627f5fa756dbe4236ceb09e70b28cb501cdce6f91b5574d366a6ae",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 9,
+      "objective_sha256": "14f996ae3b0be3d63d02210ab5f13c6eddc4d8426d750fdebd47772a712df19a",
+      "guide_sections": "5 / Evaluate components and complete outcome; CI caveats; worked cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 1,
+      "objective_sha256": "f94e345e27cb283489a819c0a8e5e69e0e598c631af73a7cff86ac85f4cc6c89",
+      "guide_sections": "5 / Troubleshoot by isolating the layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 2,
+      "objective_sha256": "124a25829dbec1ce8c4b41979d8108b803c4dc1376f0fd7f47382616dfd7e668",
+      "guide_sections": "5 / Troubleshoot by isolating the layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 3,
+      "objective_sha256": "2975eb08b7d15a0203f51bfe0e2891692cef21548065c69d6bca5b3d7b4e556c",
+      "guide_sections": "5 / Troubleshoot by isolating the layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 4,
+      "objective_sha256": "b29063ac6417d20a769b52b551128e1c457c09da9473db60ff5c53028f831c4a",
+      "guide_sections": "5 / Troubleshoot by isolating the layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 5,
+      "objective_sha256": "c95f04a1ad57833067108ecfd6ad310a3ade4be25896de5156801b385d24fddd",
+      "guide_sections": "5 / Troubleshoot by isolating the layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "AIP-C01"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AIP-C01",
+        "title": "AWS Certified Generative AI Developer - Professional",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+        "guide_path": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\aip-c01-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\aip-c01-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf",
+        "previous_status_sha256": null,
+        "current_status_sha256": "a14f857b419bda741a839f3130b5e444447906d3f354f391c7697188c95eee87",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Generative AI Developer - Professional (AIP-C01)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 33,
+    "reachable": 31,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-aif-c01-bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+      "checked_at": "2026-09-28T20:30:04.150880+00:00",
+      "health": {
+        "id": "aws-aif-c01-bedrock",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "content_type": "text/html",
+        "page_title": "Overview - Amazon BedrockOverview - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3a060fb1bd3606bf52ba0341b73e3d89346e64eb8f579e4257b8e1462233817b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+      "sha256": "7b06004d0fa39f8da787a61476f1adf9f1dc84b5a3e3369486c8f3df501c6175",
+      "text_characters": 5374
+    },
+    {
+      "id": "aws-aif-c01-agentcore",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+      "checked_at": "2026-09-28T20:30:04.439465+00:00",
+      "health": {
+        "id": "aws-aif-c01-agentcore",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+        "content_type": "text/html",
+        "page_title": "Overview - Amazon Bedrock AgentCoreOverview - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+        "duration_signals": [],
+        "signal_fingerprint": "61aa9582661fac4e4f0b2e4c6049c5b1a638d6d07574ee81767e7b91498cb95c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+      "sha256": "dd182612db47b91d5a5cbe792a06ff8f6f7743d6d5b37e57c2b1a550c2b28ee5",
+      "text_characters": 9842
+    },
+    {
+      "id": "aws-aif-c01-guardrails",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+      "checked_at": "2026-09-28T20:30:04.554361+00:00",
+      "health": {
+        "id": "aws-aif-c01-guardrails",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "content_type": "text/html",
+        "page_title": "Detect and filter harmful content by using Amazon Bedrock Guardrails - Amazon BedrockDetect and filter harmful content by using Amazon Bedrock Guardrails - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1dd646e5638253f7b6dfd4bc9b443336824b12e74309ec5b9c7deb655412a09d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+      "sha256": "77416a82d64121602b69ebe1f3e02e6569b2dab693f50691fdbf87239da97edc",
+      "text_characters": 6436
+    },
+    {
+      "id": "aws-aif-c01-genai-lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+      "checked_at": "2026-09-28T20:30:04.777215+00:00",
+      "health": {
+        "id": "aws-aif-c01-genai-lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+        "content_type": "text/html",
+        "page_title": "Generative AI Lens - AWS Well-Architected Framework - Generative AI LensGenerative AI Lens - AWS Well-Architected Framework - Generative AI Lens",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cd833b164f097204821ac3c0c5831814e6120c70faad9e4c6d3074eca7f628da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+      "sha256": "02d862faf66510c67d3ec47f41b2dccf1cbed68ae264720399e6ab3e7b326114",
+      "text_characters": 6451
+    },
+    {
+      "id": "aws-aip-c01-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+      "checked_at": "2026-09-28T20:30:23.957595+00:00",
+      "health": {
+        "id": "aws-aip-c01-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+        "checked_at": "2026-09-28T20:30:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Generative AI Developer - Professional (AIP-C01) - AWS Certified Generative AI Developer - ProfessionalAWS Certified Generative AI Developer - Professional (AIP-C01) - AWS Certified Generative AI Developer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6fabcc15870aa4d2e5b7800caa381a1a97a581dcda04c9c07610162210f8951e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+      "sha256": "664f540a0b7309d0f39a9d996c913d5e67fe8605a15be1f17930da74e2ea902c",
+      "text_characters": 6509
+    },
+    {
+      "id": "aws-aip-c01-domain1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain1.html",
+      "checked_at": "2026-09-28T20:30:24.003453+00:00",
+      "health": {
+        "id": "aws-aip-c01-domain1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain1.html",
+        "checked_at": "2026-09-28T20:30:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Foundation Model Integration, Data Management, and Compliance - AWS Certified Generative AI Developer - ProfessionalContent Domain 1: Foundation Model Integration, Data Management, and Compliance - AWS Certified Generative AI Developer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "23f6298bb96cdcb4c700f1b57d0be51dae79afb2b8f03d49abec2bc129db393b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain1.html",
+      "sha256": "a471f18437e04da2c563c732ae9f00e6826a709c0b4d6acf7d5caf222ea3ef11",
+      "text_characters": 9667
+    },
+    {
+      "id": "aws-aip-c01-domain2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain2.html",
+      "checked_at": "2026-09-28T20:30:24.233336+00:00",
+      "health": {
+        "id": "aws-aip-c01-domain2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain2.html",
+        "checked_at": "2026-09-28T20:30:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Implementation and Integration - AWS Certified Generative AI Developer - ProfessionalContent Domain 2: Implementation and Integration - AWS Certified Generative AI Developer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "aaee7f35d7e22f52b1d40ee6e7da10efb032b020cdfbe317f2b32b71497cb498",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain2.html",
+      "sha256": "9918f6f8d53fe5cd625d64aa6117e5dad41957f630f257b7f13acdd94b08e622",
+      "text_characters": 8618
+    },
+    {
+      "id": "aws-aip-c01-domain3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain3.html",
+      "checked_at": "2026-09-28T20:30:24.280197+00:00",
+      "health": {
+        "id": "aws-aip-c01-domain3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain3.html",
+        "checked_at": "2026-09-28T20:30:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: AI Safety, Security, and Governance - AWS Certified Generative AI Developer - ProfessionalContent Domain 3: AI Safety, Security, and Governance - AWS Certified Generative AI Developer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ea775165bbec9732e5f8d1e17ae6f6be04f9ab872a0e85207ab6a056341f871a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain3.html",
+      "sha256": "0559f520079dd9c804654aa2002bd3ba3deb6fc423bd9e6cafbf0e2550d29ede",
+      "text_characters": 5845
+    },
+    {
+      "id": "aws-aip-c01-domain4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain4.html",
+      "checked_at": "2026-09-28T20:30:24.557198+00:00",
+      "health": {
+        "id": "aws-aip-c01-domain4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain4.html",
+        "checked_at": "2026-09-28T20:30:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Operational Efficiency and Optimization for GenAI Applications - AWS Certified Generative AI Developer - ProfessionalContent Domain 4: Operational Efficiency and Optimization for GenAI Applications - AWS Certified Generative AI Developer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7eff7fac825c4ae1f96ac9145149eaeadf273097a8503a1f4207a41e7377f004",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain4.html",
+      "sha256": "31fc4b7984c0059fee5ff35b7d02145a1858472b68ceea4effb5b09c1b38427f",
+      "text_characters": 6055
+    },
+    {
+      "id": "aws-aip-c01-domain5",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain5.html",
+      "checked_at": "2026-09-28T20:30:24.572932+00:00",
+      "health": {
+        "id": "aws-aip-c01-domain5",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain5.html",
+        "checked_at": "2026-09-28T20:30:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain5.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 5: Testing, Validation, and Troubleshooting - AWS Certified Generative AI Developer - ProfessionalContent Domain 5: Testing, Validation, and Troubleshooting - AWS Certified Generative AI Developer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain5.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e8c89fd7905e4affba5a33fe02e1da5d468dd3ae2ce275b94b3cc5ea14450d5f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01-domain5.html",
+      "sha256": "a362626440e8e0a4d695c101457bd40cecb471192d2dd4333b7748aac0cff4ab",
+      "text_characters": 4886
+    },
+    {
+      "id": "aws-aip-c01-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+      "checked_at": "2026-09-28T20:30:24.877497+00:00",
+      "health": {
+        "id": "aws-aip-c01-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+        "checked_at": "2026-09-28T20:30:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-generative-ai-developer-professional",
+        "canonical_url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+        "duration_signals": [
+          "180 minutes"
+        ],
+        "signal_fingerprint": "120aa5261bf063488c8b8f4f109966a5e84ec564ba15492dae40a0bf47f218a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+      "sha256": "5981711907be352ba8a0aedca42c61e26714bc792a4e055b987ad1b6979d5830",
+      "text_characters": 5453
+    },
+    {
+      "id": "aws-aip-c01-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/aip-01-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:24.883071+00:00",
+      "health": {
+        "id": "aws-aip-c01-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/aip-01-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/aip-01-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Generative AI Developer - ProfessionalIn-Scope AWS Services - AWS Certified Generative AI Developer - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/aip-01-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f37c7c5d16aac3448ef5b3549a98f1315bb85d915ff7c56cb740d91f32b6c0b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/aip-01-in-scope-services.html",
+      "sha256": "38ede7753981d7caf14ae26b2e60ce4ecd7ed4463ceee983b5bd224e1de21339",
+      "text_characters": 3564
+    },
+    {
+      "id": "aws-aip-c01-standard-release",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/march-2026-new-offerings/",
+      "checked_at": "2026-09-28T20:30:25.008724+00:00",
+      "health": {
+        "id": "aws-aip-c01-standard-release",
+        "url": "https://aws.amazon.com/blogs/training-and-certification/march-2026-new-offerings/",
+        "checked_at": "2026-09-28T20:30:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/training-and-certification/march-2026-new-offerings/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "New courses and certification updates from AWS Training and Certification in March 2026 | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/training-and-certification/march-2026-new-offerings/",
+        "duration_signals": [],
+        "signal_fingerprint": "570aa4879f287eece4e82d0893693c7a483fd4fc588720cbf97d602ecbd31c48",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/training-and-certification/march-2026-new-offerings/",
+      "sha256": "7bc14c4e79c71b53c46f8bb484749f4b358d59cf76d5bb04b160956a46f17a83",
+      "text_characters": 5538
+    },
+    {
+      "id": "aws-aip-c01-skill-builder",
+      "url": "https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01",
+      "checked_at": "2026-09-28T20:30:25.353201+00:00",
+      "health": {
+        "id": "aws-aip-c01-skill-builder",
+        "url": "https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01",
+        "checked_at": "2026-09-28T20:30:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01",
+        "duration_signals": [],
+        "signal_fingerprint": "b93124c286a511ffe2355ae81d7efcb79d6b426e28955a4541a75b844847eedf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-aip-c01-linkedin",
+      "url": "https://www.linkedin.com/learning/aws-certified-generative-ai-developer-professional-aip-c01-cert-prep",
+      "checked_at": "2026-09-28T20:30:25.582643+00:00",
+      "health": {
+        "id": "aws-aip-c01-linkedin",
+        "url": "https://www.linkedin.com/learning/aws-certified-generative-ai-developer-professional-aip-c01-cert-prep",
+        "checked_at": "2026-09-28T20:30:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/aws-certified-generative-ai-developer-professional-aip-c01-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS Certified Generative AI Developer - Professional (AIP-C01) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/aws-certified-generative-ai-developer-professional-aip-c01-cert-prep",
+        "duration_signals": [
+          "PT10M23S",
+          "PT10M2S",
+          "PT10M36S",
+          "PT10M37S",
+          "PT10M44S",
+          "PT10M4S",
+          "PT10M58S",
+          "PT10M9S",
+          "PT11M15S",
+          "PT11M39S",
+          "PT11M40S",
+          "PT11M51S",
+          "PT11M5S",
+          "PT12M15S",
+          "PT12M29S",
+          "PT12M31S",
+          "PT12M41S",
+          "PT12M43S",
+          "PT12M56S",
+          "PT13M",
+          "PT13M25S",
+          "PT13M39S",
+          "PT13M42S",
+          "PT13M54S",
+          "PT14M20S",
+          "PT14M25S",
+          "PT14M30S",
+          "PT15M17S",
+          "PT16M12S",
+          "PT16M41S"
+        ],
+        "signal_fingerprint": "e9eae01d54b8371bab110f2e369ecc3c5a45ef1fc29b37d30fb550d6d7e1b178",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/aws-certified-generative-ai-developer-professional-aip-c01-cert-prep",
+      "sha256": "762a8e595b90370a42bf2a0f9b78a74302b61bd4b95ba8377ce67755ab01b227",
+      "text_characters": 17545
+    },
+    {
+      "id": "aws-aip-c01-tutorials-dojo-video",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/",
+      "checked_at": "2026-09-28T20:30:25.874368+00:00",
+      "health": {
+        "id": "aws-aip-c01-tutorials-dojo-video",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/",
+        "checked_at": "2026-09-28T20:30:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Generative AI Developer Professional AIP-C01 Video Course",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "bcb7a468cd48a97c37636834ba6e1e68f8369619f129f8d60879d3bc3a886a86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/",
+      "sha256": "bd129f5ccb888a1c7bcf24bd1e59935e13af2afd79624659b853190500508b37",
+      "text_characters": 16145
+    },
+    {
+      "id": "aws-aip-c01-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/",
+      "checked_at": "2026-09-28T20:30:26.062659+00:00",
+      "health": {
+        "id": "aws-aip-c01-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/",
+        "checked_at": "2026-09-28T20:30:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Generative AI Developer Professional Practice Exams AIP-C01 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "72 hours"
+        ],
+        "signal_fingerprint": "065d9040829657ef5afabb975ca38042088b7c81fab2c037d94b75adbe2e948c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/",
+      "sha256": "a76f49ed9c82bf9a01ee6a098860ba5b09a21da50a3a4a5cb8ab51d7d147cc3a",
+      "text_characters": 8458
+    },
+    {
+      "id": "aws-aip-c01-udemy-maarek-kane",
+      "url": "https://www.udemy.com/course/ultimate-aws-certified-generative-ai-developer-professional/",
+      "checked_at": "2026-09-28T20:30:26.640364+00:00",
+      "health": {
+        "id": "aws-aip-c01-udemy-maarek-kane",
+        "url": "https://www.udemy.com/course/ultimate-aws-certified-generative-ai-developer-professional/",
+        "checked_at": "2026-09-28T20:30:26+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ultimate-aws-certified-generative-ai-developer-professional/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-aip-c01-udemy-trisal",
+      "url": "https://www.udemy.com/course/aws-certified-generative-ai-developer-professional-r/",
+      "checked_at": "2026-09-28T20:30:26.852087+00:00",
+      "health": {
+        "id": "aws-aip-c01-udemy-trisal",
+        "url": "https://www.udemy.com/course/aws-certified-generative-ai-developer-professional-r/",
+        "checked_at": "2026-09-28T20:30:26+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-generative-ai-developer-professional-r/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mla-c01-aws-service-availability",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "checked_at": "2026-09-28T20:30:34.556339+00:00",
+      "health": {
+        "id": "mla-c01-aws-service-availability",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Service Availability Updates - AWS",
+        "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "duration_signals": [],
+        "signal_fingerprint": "ad8b78fff49d16662086d2644f8def647e67462cebfcd1e11cd0dbcaef4ca87d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "sha256": "82cc441cdb1dc4407ae65a8e51691ff78b90b4e5e6f7103b26815da4087556ef",
+      "text_characters": 2167
+    },
+    {
+      "id": "mla-c01-model-monitor-availability-change",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+      "checked_at": "2026-09-28T20:30:35.626527+00:00",
+      "health": {
+        "id": "mla-c01-model-monitor-availability-change",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+        "checked_at": "2026-09-28T20:30:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "Amazon SageMaker Model Monitor availability change - Amazon SageMaker AIAmazon SageMaker Model Monitor availability change - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bc1bbbd925d01564600f91964831d3b8b39b5a6e850933a6bf6d25da03ed7701",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+      "sha256": "c534ca5a08a92e0a77dd05d3aec93dfbe76bed32c07d4285425fcdf8af796ee0",
+      "text_characters": 17072
+    },
+    {
+      "id": "aws-ml-clarify-availability",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+      "checked_at": "2026-09-28T20:33:30.321418+00:00",
+      "health": {
+        "id": "aws-ml-clarify-availability",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+        "checked_at": "2026-09-28T20:33:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "Clarify availability change - Amazon SageMaker AIClarify availability change - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e186914e869715b71f35d201576d69c66cca85be9e22ab31b962731067589875",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-availability-change.html",
+      "sha256": "3ae51599cf9033ad6a4d66040bdf363ea103d2fd13de176b6ba45999dbd00a29",
+      "text_characters": 9931
+    },
+    {
+      "id": "aws-dva-xray-timeline",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "checked_at": "2026-09-28T20:57:09.283161+00:00",
+      "health": {
+        "id": "aws-dva-xray-timeline",
+        "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "checked_at": "2026-09-28T20:57:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "content_type": "text/html",
+        "page_title": "X-Ray SDK and Daemon Support timeline - AWS X-RayX-Ray SDK and Daemon Support timeline - AWS X-Ray",
+        "canonical_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+        "duration_signals": [],
+        "signal_fingerprint": "680e39bf30ee21069c27902d8d0f0c426237913541f9b787e9592489339f0864",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-daemon-timeline.html",
+      "sha256": "ac6dabcdd43d67893c0b594749c07946704e3a1ac1bdafede17836465a914644",
+      "text_characters": 1425
+    },
+    {
+      "id": "aws-apprunner-availability",
+      "url": "https://aws.amazon.com/apprunner/",
+      "checked_at": "2026-09-28T21:07:02.944247+00:00",
+      "health": {
+        "id": "aws-apprunner-availability",
+        "url": "https://aws.amazon.com/apprunner/",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/apprunner/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Managed Container Apps Service - AWS App Runner - AWS",
+        "canonical_url": "https://aws.amazon.com/apprunner/",
+        "duration_signals": [],
+        "signal_fingerprint": "4009b8ce3b4e74e5efdc0c8d1ee212d96fe13fe48522202452647b4833fea344",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/apprunner/",
+      "sha256": "25807fdc4843d596df9c3506d48e24a879e2108e6c50df7852c6d22ddbe95a15",
+      "text_characters": 1921
+    },
+    {
+      "id": "aws-apprunner-api-notice",
+      "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "checked_at": "2026-09-28T21:07:02.944754+00:00",
+      "health": {
+        "id": "aws-apprunner-api-notice",
+        "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "content_type": "text/html",
+        "page_title": "CreateService - AWS App RunnerCreateService - AWS App Runner",
+        "canonical_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3e179f0c80b932971c042d7ae7c68b9bb85a9857999add26a3bb60697084de0d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "sha256": "8e23b0a8b2145c8516ac572809159fc194822e7e2a9be27195feae26ac04ccc4",
+      "text_characters": 12941
+    },
+    {
+      "id": "aws-quick-overview",
+      "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "checked_at": "2026-09-28T21:28:47.661833+00:00",
+      "health": {
+        "id": "aws-quick-overview",
+        "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Quick? - Amazon QuickWhat is Amazon Quick? - Amazon Quick",
+        "canonical_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d7ad980d06869366db020b50e2ccd16b0f00f71d609579e8606e2e305fff72a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "sha256": "d9b9f053b1fa0b5cf24d39835a53e2eacf6fae7b184e05f9c684fac691307845",
+      "text_characters": 3561
+    },
+    {
+      "id": "aws-kiro-docs",
+      "url": "https://kiro.dev/docs/",
+      "checked_at": "2026-09-28T21:28:47.662291+00:00",
+      "health": {
+        "id": "aws-kiro-docs",
+        "url": "https://kiro.dev/docs/",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kiro.dev/docs/",
+        "content_type": "text/html",
+        "page_title": "Docs - Kiro",
+        "canonical_url": "https://kiro.dev/docs/",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "d28ef09274817668458ba525fd24ee50f33ad0315af90b11877fe4b8a5950b89",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kiro.dev/docs/",
+      "sha256": "851dff86cc74e164b9b54456f31bc45a0394cb311ac1909f15f433f3f052c55e",
+      "text_characters": 0
+    },
+    {
+      "id": "aws-agentcore-policy",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "checked_at": "2026-09-28T21:28:48.184303+00:00",
+      "health": {
+        "id": "aws-agentcore-policy",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "checked_at": "2026-09-28T21:28:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "content_type": "text/html",
+        "page_title": "Policy in Amazon Bedrock AgentCore: Control Agent Interactions - Amazon Bedrock AgentCorePolicy in Amazon Bedrock AgentCore: Control Agent Interactions - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e80f8464a235695396d06d53483d06e85cbb95f76f5ead7f2c386cfaa7200ceb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "sha256": "f77e9ea2892795f8f360899fb5e80e3247fdfd3f0aad450aa71be37cb5632c62",
+      "text_characters": 6687
+    },
+    {
+      "id": "aws-agentcore-identity",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+      "checked_at": "2026-09-28T21:29:58.088653+00:00",
+      "health": {
+        "id": "aws-agentcore-identity",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+        "checked_at": "2026-09-28T21:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+        "content_type": "text/html",
+        "page_title": "Provide identity and credential management for agent applications with Amazon Bedrock AgentCore Identity - Amazon Bedrock AgentCoreProvide identity and credential management for agent applications with Amazon Bedrock AgentCore Identity - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7cbb79e96a82031eea6a2f7465b040eda533b8661c112102d81ae0c263478afe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+      "sha256": "b9083396a095a0bfb8de328596d9dda73d2ef064af75dc4dc0a91581841a9cbe",
+      "text_characters": 2226
+    },
+    {
+      "id": "aws-agentcore-evaluations",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html",
+      "checked_at": "2026-09-28T22:01:17.284873+00:00",
+      "health": {
+        "id": "aws-agentcore-evaluations",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html",
+        "checked_at": "2026-09-28T22:01:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html",
+        "content_type": "text/html",
+        "page_title": "Evaluate agent performance with Amazon Bedrock AgentCore Evaluations - Amazon Bedrock AgentCoreEvaluate agent performance with Amazon Bedrock AgentCore Evaluations - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html",
+        "duration_signals": [],
+        "signal_fingerprint": "814758cf8d05d70aeaf84b8d1a02309f26135f85182f8380c8ecb699068aab7c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html",
+      "sha256": "33b12f875b2f0063e69b2a527a0b5feec0b186562c73f649b6d3bdf93a28fcad",
+      "text_characters": 2598
+    },
+    {
+      "id": "aws-agentcore-ci-blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
+      "checked_at": "2026-09-28T22:01:17.285604+00:00",
+      "health": {
+        "id": "aws-agentcore-ci-blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
+        "checked_at": "2026-09-28T22:01:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Automated agent evaluation with Amazon Bedrock AgentCore and GitHub Actions | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "49f7ad285eca6a4c8bcedf67d5c09d0d5504718ff2eb827d80638a86e3eae927",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
+      "sha256": "e167ac44b2e14b39f8f4d57c6e114e253bee863caec1bf5c0eb003238580a708",
+      "text_characters": 28849
+    },
+    {
+      "id": "aws-bedrock-crossregion",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html",
+      "checked_at": "2026-09-28T22:01:17.286141+00:00",
+      "health": {
+        "id": "aws-bedrock-crossregion",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html",
+        "checked_at": "2026-09-28T22:01:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html",
+        "content_type": "text/html",
+        "page_title": "Route model inference requests across AWS Regions with cross-Region inference - Amazon BedrockRoute model inference requests across AWS Regions with cross-Region inference - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3c35e76da67d4cd6a652b0a34a8c5d418259a41e833f6020ac1186a8ceea9eba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html",
+      "sha256": "53a1135efa0f20bb5d0a216415731269bf27ca6cc80f614fadb4225b2f3aa46e",
+      "text_characters": 4173
+    },
+    {
+      "id": "aws-bedrock-prompt-caching",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html",
+      "checked_at": "2026-09-28T22:01:17.294035+00:00",
+      "health": {
+        "id": "aws-bedrock-prompt-caching",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html",
+        "checked_at": "2026-09-28T22:01:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html",
+        "content_type": "text/html",
+        "page_title": "Prompt caching for faster model inference - Amazon BedrockPrompt caching for faster model inference - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html",
+        "duration_signals": [
+          "1 hour",
+          "30 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "ae2ad9161dac71be783868cc9e2b10c8d1bcadbc6c4ce1f607228212472dc9cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html",
+      "sha256": "fd38389c4cf9daefcd7fda1f64179c027aaa5ab01c87798d47ab1709b68f0d7a",
+      "text_characters": 28254
+    },
+    {
+      "id": "aws-bedrock-data-automation",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html",
+      "checked_at": "2026-09-28T22:02:14.370260+00:00",
+      "health": {
+        "id": "aws-bedrock-data-automation",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html",
+        "checked_at": "2026-09-28T22:02:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html",
+        "content_type": "text/html",
+        "page_title": "Transform unstructured data into meaningful insights using Amazon Bedrock Data Automation - Amazon BedrockTransform unstructured data into meaningful insights using Amazon Bedrock Data Automation - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e0fe5270af96bc133f7952becd7fe3460a1b7e65a6cae089287847042aec1a9e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html",
+      "sha256": "4224f6ece0bfdb0190da2f4b6879da433af53b6a7e0893474ad84e23fe34774b",
+      "text_characters": 2786
+    },
+    {
+      "id": "aws-bedrock-kb-sync",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html",
+      "checked_at": "2026-09-28T22:02:14.371061+00:00",
+      "health": {
+        "id": "aws-bedrock-kb-sync",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html",
+        "checked_at": "2026-09-28T22:02:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html",
+        "content_type": "text/html",
+        "page_title": "Sync your data with your Amazon Bedrock knowledge base - Amazon BedrockSync your data with your Amazon Bedrock knowledge base - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b610506c463af5d1b4046f7f362ea5d13d84419ed2c71f571cc0f6511cee6b1a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html",
+      "sha256": "19b1b4bb89e1d9f0c55e0896991a8a53782acb8c7bd6a4f68a4044f46ad781ab",
+      "text_characters": 8355
+    }
+  ],
+  "added_source_ids": [
+    "aws-agentcore-evaluations",
+    "aws-agentcore-ci-blog",
+    "aws-bedrock-crossregion",
+    "aws-bedrock-prompt-caching",
+    "aws-bedrock-data-automation",
+    "aws-bedrock-kb-sync"
+  ],
+  "findings": [
+    {
+      "id": "aipc01-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Agent control boundaries too abstract",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIP-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Policy supports tool/input and session-aware rules at Gateway; credentials and content filters serve other functions.",
+      "recommendation": "Add component/control map and per-call versus cumulative budget case.",
+      "disposition": "applied",
+      "source_id": "aws-agentcore-policy",
+      "resolution": "Add component/control map and per-call versus cumulative budget case."
+    },
+    {
+      "id": "aipc01-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Ingestion lifecycle lacks concrete behavior",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/kb-data-source-sync-ingest.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIP-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Connector sync incrementally handles source changes; metadata optimizations have exceptions.",
+      "recommendation": "Add sync/deletion and CSV/transformation conditions.",
+      "disposition": "applied",
+      "source_id": "aws-bedrock-kb-sync",
+      "resolution": "Add sync/deletion and CSV/transformation conditions."
+    },
+    {
+      "id": "aipc01-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Named implementation objective missing",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIP-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "BDA structures multimodal input for application workflows.",
+      "recommendation": "Add task 1.3/2.5.3 bridge and extraction-validation boundary.",
+      "disposition": "applied",
+      "source_id": "aws-bedrock-data-automation",
+      "resolution": "Add task 1.3/2.5.3 bridge and extraction-validation boundary."
+    },
+    {
+      "id": "aipc01-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Region choice needs explicit residency boundary",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIP-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Geographic and global profiles route to different possible destinations.",
+      "recommendation": "Add Region permission/data-processing distinction and CloudTrail evidence.",
+      "disposition": "applied",
+      "source_id": "aws-bedrock-crossregion",
+      "resolution": "Add Region permission/data-processing distinction and CloudTrail evidence."
+    },
+    {
+      "id": "aipc01-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "CI evaluation example cannot prove user-role enforcement",
+      "url": "https://aws.amazon.com/blogs/machine-learning/automated-agent-evaluation-with-amazon-bedrock-agentcore-and-github-actions/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIP-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "M2M example bypasses role checks; stored traces describe a prior run.",
+      "recommendation": "Adopt evaluation-gate concept with separate authorization and current-code tests.",
+      "disposition": "applied",
+      "source_id": "aws-agentcore-ci-blog",
+      "resolution": "Adopt evaluation-gate concept with separate authorization and current-code tests."
+    },
+    {
+      "id": "aipc01-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Conflicting App Runner historical closure dates",
+      "url": "https://aws.amazon.com/apprunner/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIP-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Product page April 30, 2026 versus API March 31, 2026.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-agentcore-ci-blog",
+      "published_on": "2026-09-08",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Architecture, evaluation modes, OAuth approaches and three-layer auth description; code not executed.",
+      "value": "Connect CI quality gates to representative authenticated behavior.",
+      "limits": "Stored traces do not validate PR code; role-bypassing M2M path does not validate user authorization; judge scores may vary."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "Sixteen synthetic arithmetic and policy assertions across five worked decisions."
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Same-context AI review; human review pending.",
+    "No live FM, AWS lab, IAM evaluation, paid lesson or blog deployment executed.",
+    "Synthetic checks validate example arithmetic/predicates only.",
+    "App Runner exact historical closure date remains conflicted.",
+    "Source ingestion and authorization must be tested against the chosen actual service path."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}
