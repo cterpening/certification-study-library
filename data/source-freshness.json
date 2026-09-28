@@ -4,6 +4,359 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ms700-deep-review",
+      "title": "MS-700 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MS-700"
+      ],
+      "results": [
+        {
+          "exam_code": "MS-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+          "baseline_sha256": "c5af0e4cd508de181ebfc10fb2a638a9540d9e2823d3092e59417af52293fb48",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Future October 27 revision mapped; accepted July snapshot preserved. Four unchanged domain weights; credential 100 minutes/seven languages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole-guide review with targeted current primary sources and scoped learner exercises; unresolved documentation discrepancy tracked separately."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Updated connector announcement, July Teams article, current VDI/deprecation and client rollout guidance reviewed. Five dated follow-ups; no claim that all tenant features are deployed."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Twenty Learn modules, four-day English course, five Pluralsight course listings and 155-question MeasureUp listing reviewed. Four paid pages blocked; paid/interactive content unreviewed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Private-channel Workflows support differs between the updated announcement and platform overview. Scope cannot be confidently reconciled from the retrieved public prose."
+            }
+          },
+          "findings": [
+            {
+              "id": "ms700-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Private-channel support descriptions disagree",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Platform known issue still says under development; updated developer announcement says supported.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ms700-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Current network diagnostic listing verified",
+              "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public download exists with a current listing; diagnostic is not a stress tool.",
+              "recommendation": "Replace generic tool uncertainty with a bounded current link and execution limitation.",
+              "disposition": "applied",
+              "source_id": "ms700-network-tool",
+              "resolution": "Replace generic tool uncertainty with a bounded current link and execution limitation."
+            },
+            {
+              "id": "ms700-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "QoS classification varies by client",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Source ports and browser/Mac/mobile behavior differ.",
+              "recommendation": "Add marked media classes and actual-path verification.",
+              "disposition": "applied",
+              "source_id": "ms700-qos",
+              "resolution": "Add marked media classes and actual-path verification."
+            },
+            {
+              "id": "ms700-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Policy assignment is not last-write-wins",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Direct assignment outranks ranked group assignments; nested membership does not inherit.",
+              "recommendation": "Add effective-policy example.",
+              "disposition": "applied",
+              "source_id": "ms700-policy",
+              "resolution": "Add effective-policy example."
+            },
+            {
+              "id": "ms700-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Granular federation can replace the tenant domain list",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-external-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Tenant enablement still gates custom policy.",
+              "recommendation": "Add user/group domain scope and anonymous/subdomain boundaries.",
+              "disposition": "applied",
+              "source_id": "ms700-external",
+              "resolution": "Add user/group domain scope and anonymous/subdomain boundaries."
+            },
+            {
+              "id": "ms700-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Channel removal may leave a separate file share",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Shared channel identity, site membership and file permissions differ.",
+              "recommendation": "Add residual-access and file-level CA troubleshooting.",
+              "disposition": "applied",
+              "source_id": "ms700-shared",
+              "resolution": "Add residual-access and file-level CA troubleshooting."
+            },
+            {
+              "id": "ms700-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Room exceptions remain account-wide",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Persistent exception and registration resource exclusion are distinct.",
+              "recommendation": "Add monitored recovery/provisioning scenario and identity distinction.",
+              "disposition": "applied",
+              "source_id": "ms700-device-code",
+              "resolution": "Add monitored recovery/provisioning scenario and identity distinction."
+            },
+            {
+              "id": "ms700-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Windows legacy optimization has two deadlines",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/new-teams-vdi-requirements-deploy",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Support loss precedes unavailability; new-stack failure can render on the VM.",
+              "recommendation": "Add cohort-specific inventory, pilot lab and follow-ups.",
+              "disposition": "applied",
+              "source_id": "ms700-vdi",
+              "resolution": "Add cohort-specific inventory, pilot lab and follow-ups."
+            },
+            {
+              "id": "ms700-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Unblocked does not imply usable by anyone",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Migrated app audience may remain No one; assignment types differ from Teams policy.",
+              "recommendation": "Add distinct-user reconciliation example.",
+              "disposition": "applied",
+              "source_id": "ms700-app-centric",
+              "resolution": "Add distinct-user reconciliation example."
+            },
+            {
+              "id": "ms700-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Consent survives app management migration",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Availability migration is independent of Graph consent.",
+              "recommendation": "Add before/after audience and consent evidence.",
+              "disposition": "applied",
+              "source_id": "ms700-app-migration",
+              "resolution": "Add before/after audience and consent evidence."
+            },
+            {
+              "id": "ms700-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Current event settings determine policy behavior",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Audience optimization selects event policy behavior; capacity changes interaction.",
+              "recommendation": "Retain exam distinctions and add current experience boundary.",
+              "disposition": "applied",
+              "source_id": "ms700-events",
+              "resolution": "Retain exam distinctions and add current experience boundary."
+            },
+            {
+              "id": "ms700-deep-12",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Legacy live-event creation is retired",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existing scheduled events have a separate grace window.",
+              "recommendation": "Replace new-lab assumptions and schedule grace-period recheck.",
+              "disposition": "applied",
+              "source_id": "ms700-live-retirement",
+              "resolution": "Replace new-lab assumptions and schedule grace-period recheck."
+            },
+            {
+              "id": "ms700-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Copilot Off default is not a fixed prohibition",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Policy values separate organizer defaults from enforced transcript mode.",
+              "recommendation": "Add actual-setting, retention and encryption checks.",
+              "disposition": "applied",
+              "source_id": "ms700-copilot",
+              "resolution": "Add actual-setting, retention and encryption checks."
+            },
+            {
+              "id": "ms700-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Resource account license alone does not fund outbound calls",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "On-behalf-of calls and callbacks need current route-specific entitlements.",
+              "recommendation": "Add funding and carrier checks distinct from ordinary user calling.",
+              "disposition": "applied",
+              "source_id": "ms700-voice-license",
+              "resolution": "Add funding and carrier checks distinct from ordinary user calling."
+            },
+            {
+              "id": "ms700-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Callback must finish inside the queue timeline",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Eligibility, music, caller action and representative readiness all take time.",
+              "recommendation": "Add synthetic timeout and margin example.",
+              "disposition": "applied",
+              "source_id": "ms700-queue",
+              "resolution": "Add synthetic timeout and margin example."
+            },
+            {
+              "id": "ms700-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Telemetry scope and retained detail differ",
+              "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current views distinguish session issues, license retention and event presenter scope.",
+              "recommendation": "Add denominators, processing delay and evidence limitations.",
+              "disposition": "applied",
+              "source_id": "ms-700-monitoring",
+              "resolution": "Add denominators, processing delay and evidence limitations."
+            }
+          ],
+          "notes": "Whole guide read; all 97 published October objectives in twelve groups mapped while July accepted baseline remains unchanged. Add five worked examples, two labs (ten total), eight answered checks (44 total), two bounded blog readings and five follow-ups. Refresh network/QoS, policy/federation/app access, device/VDI, events/Copilot, voice funding/callback and telemetry. Private-channel Workflows support conflict remains open. Ten offline checks passed; no tenant, network, media, flow or PSTN execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ms-700-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 15,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-sc300-deep-review",
       "title": "SC-300 complete guide and learning-content review",
       "rubric_version": 1,

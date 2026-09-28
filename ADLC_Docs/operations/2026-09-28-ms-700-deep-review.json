@@ -1,0 +1,2451 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MS-700",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "802e04c9a121383e4ffbda1a82fe6ef6cdd40cffb9ca01e145ac579b9aa44052",
+  "guide_after_sha256": "a3d345a7ffc6c4bb28e6cea565104871a696082f7ead0d2c3d1ac28cda4dbb71",
+  "prior_records": {
+    "exam": {
+      "code": "MS-700",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Managing Microsoft Teams",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+      "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical Microsoft Teams and Microsoft 365 administration across identity, groups, SharePoint, OneDrive, Exchange, Purview, Defender, networking, devices, external collaboration, apps, meetings, Teams Phone, PowerShell, Graph, reporting and troubleshooting."
+    },
+    "review": {
+      "id": "ms-700-2026-09-01-source-validation",
+      "exam_code": "MS-700",
+      "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-700-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061",
+      "objective_coverage": [
+        {
+          "objective_group": "Configure and manage a Teams environment",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Manage teams, channels, chats, and apps",
+          "guide_sections": [
+            "Section 2",
+            "Shared-channel and app scenarios",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Manage meetings and calling",
+          "guide_sections": [
+            "Section 3",
+            "Town-hall scenario",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Monitor, report on, and troubleshoot Teams",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 21,
+        "reachable": 17,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Every July 29, 2026 subobjective is mapped to a Teams/Microsoft 365 object, entitlement, role, identity, policy, media/network, data, application, call flow, evidence, failure, or recovery decision. Three scenarios, eight labs and 36 original checks cover network/QoS/readiness, roles/security/Purview/Defender, group/team/data lifecycle and policy assignment, external/guest/shared-channel/MTO, Teams Rooms/VDI, teams/channels/messaging/apps, meetings/events/Copilot, Teams Phone numbers/resource accounts/auto attendants/queues, reporting/CQD/Call Analytics and client/sign-in/media/AI troubleshooting. All 21 URLs are cataloged: 17 reachable and two O'Reilly plus two Udemy pages automation-blocked; none missing or broken. The guide records 19 hours 1 minute of Learn paths, four-day course, free Practice Assessment and freshness gaps in commercial resources."
+    },
+    "sources": [
+      {
+        "id": "ms-700-blueprint",
+        "title": "Study guide for Exam MS-700: Managing Microsoft Teams",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Authoritative skills measured as of July 29, 2026."
+      },
+      {
+        "id": "ms-700-credential",
+        "title": "Microsoft 365 Certified: Teams Administrator Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Official active credential page; 100-minute exam and annual renewal listed."
+      },
+      {
+        "id": "ms-700-practice",
+        "title": "MS-700 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment?assessment-type=practice&assessmentId=55&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Free official readiness assessment."
+      },
+      {
+        "id": "ms-700-network",
+        "title": "Prepare your organization's network for Microsoft Teams",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Current Teams network, port, protocol and readiness guidance."
+      },
+      {
+        "id": "ms-700-network-test",
+        "title": "Microsoft 365 network connectivity test",
+        "url": "https://connectivity.office.com/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Official network connectivity test portal."
+      },
+      {
+        "id": "ms-700-monitoring",
+        "title": "Monitor and troubleshoot Teams meetings and calls",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Current Teams admin center meeting/call telemetry and troubleshooting guidance."
+      },
+      {
+        "id": "ms-700-course",
+        "title": "MS-700T00 Manage collaboration and communication with Teams",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ms-700t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Four-day course linking four current paths."
+      },
+      {
+        "id": "ms-700-path-start",
+        "title": "Get started with managing Microsoft Teams",
+        "url": "https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Listed duration 3 hours 36 minutes."
+      },
+      {
+        "id": "ms-700-path-environment",
+        "title": "Prepare the environment for a Teams deployment",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Listed duration 3 hours 20 minutes."
+      },
+      {
+        "id": "ms-700-path-collaboration",
+        "title": "Manage chat, teams, channels, and apps in Teams",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Listed duration 3 hours 2 minutes."
+      },
+      {
+        "id": "ms-700-path-meetings",
+        "title": "Manage meetings and calling in Teams",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Listed duration 9 hours 3 minutes."
+      },
+      {
+        "id": "ms-700-pluralsight",
+        "title": "Managing Microsoft Teams MS-700 path",
+        "url": "https://www.pluralsight.com/paths/managing-microsoft-teams",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Five courses and 19 hours listed; most recent core refresh 2024 and voice/device courses 2022."
+      },
+      {
+        "id": "ms-700-oreilly-book",
+        "title": "MS-700 Managing Microsoft Teams Exam Guide Third Edition",
+        "url": "https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/",
+        "publisher": "Packt / O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "August 2024, 502 pages and 10 hours 41 minutes listed; supplement July 2026."
+      },
+      {
+        "id": "ms-700-oreilly-video",
+        "title": "Managing Microsoft Teams MS-700 video",
+        "url": "https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/",
+        "publisher": "ACI Learning / O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Adam Gordon, August 2024, 31 hours 3 minutes; supplement July 2026."
+      },
+      {
+        "id": "ms-700-udemy-course",
+        "title": "MS-700 Managing Microsoft Teams Training and Lab Simulations",
+        "url": "https://www.udemy.com/course/microsoft-teams-examlabpractice/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "John Christopher, updated February 2026; public page did not expose a reliable runtime in search results."
+      },
+      {
+        "id": "ms-700-measureup",
+        "title": "MS-700 Managing Microsoft Teams practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "155 questions listed; last updated September 2025, so reconcile July 2026 changes."
+      },
+      {
+        "id": "ms-700-udemy-practice",
+        "title": "MS-700 Practice Tests Teams Administrator 2026",
+        "url": "https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-700"
+        ],
+        "notes": "Dean Ellerby, 360 original questions, Microsoft Learn references and explicit no-dumps statement; updated August 2026."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "1b9196ee5c85ceafc6e1d2d05564968d9a0303c7ff6b768ff0e1b30873246258",
+      "guide_sections": "1 / Network capacity worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f7c388e76278a90cbe656b6de7f43cea5d5ee4a944d3d158cd7dd111d35e7308",
+      "guide_sections": "1 / Network planner sites/personas",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "479997509ce26dd4314a857c9800c128d7d89ea6d065a0b4823627ca6226006f",
+      "guide_sections": "1 / Media path and QoS source-port table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "1e98e999d617c37b6419aba971ae5a9cc89ac42fb273bbba7ba2d6e3bf34c0eb",
+      "guide_sections": "1 / Network Assessment Tool and connectivity tests; Lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "10a6d2647d5d80c273ff543a283c812384fef3bebb6faee7e41dbf2301853214",
+      "guide_sections": "1 / Security and compliance licensing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "5f56fec6b0d875bc9e051a03e7169ee517e79d99d1bebdb12cff188a458bce12",
+      "guide_sections": "1 / Threat/compliance alerts; Lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "7d961a6bf76bbf42e14129ee5e0555bc26d69ef8e24f923564fb4d147361df35",
+      "guide_sections": "1 / Role matrix and access boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "f49c050e2207b7d64dba20e4ff92494a9cbef35a3775f1128a402bc991706613",
+      "guide_sections": "1 / Defender threat policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "5435a795da27e4b849cb2ddda7bc3f9c650fde07cb757984919d99d7dfae9475",
+      "guide_sections": "1 / Data map and retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "bca7cdc5663e5135386d6616ebe01a3fd2cf8e2dec6f89f55610b0be86209eef",
+      "guide_sections": "1 / Container/content/meeting labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "3d11b578e8a510f0a56922f7769b60efafaebbc64dfc8e6c0e90bee93d810257",
+      "guide_sections": "1 / DLP chat versus files",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "70a9edd718270b6b31e2d118232f4c53104e64125c286b0c5680ca7abb086d9f",
+      "guide_sections": "1 / Teams and dependency Conditional Access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "43128ad5750d8f27eb0a4720e1546048ba36b312f17f505bbcac2d26b4527921",
+      "guide_sections": "1 / Information Barriers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "30e6d81e1472aab02ee91412a42eaaf6f792108284c3fa47eae0931fc37b42a3",
+      "guide_sections": "1 / Communication Compliance versus Insider Risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "7e8fe53275c0ac7b97af3ae81a4c770c43d7ffacd06ea3cbcee6bb359966858b",
+      "guide_sections": "1 / Governance licensing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "5bafdf1bdb75af19708d7adeb73fe91ad5b28a3a1585bb7bfb8da8718abb7c54",
+      "guide_sections": "1 / Workload data map",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "b41fe70c80096b5bf99eeb02833846321369366297ac4a57fe1a39f8eb2790eb",
+      "guide_sections": "1 / Client update rollout",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "b7bd6215532b3f8e27444d6df3e2b41c0670684091b58f37fb6e7fa4a4cf831d",
+      "guide_sections": "1 / Policy packages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "8a31e5717f81c9ba241d0965fa7725f240cfbb3ad57f4393130daec612c80150",
+      "guide_sections": "1 / Policy precedence worked example; Lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "332697eef9428244cbe417905ef32c1f72de59a8b80ab3a70525623075d0d997",
+      "guide_sections": "1 / Group creation governance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "69ffe549acaa3b10bb37d1347ef1242bd1b08ad6b36cc05747ed44e7ced190aa",
+      "guide_sections": "1 / Expiration and renewal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "422e4276e82259465f52de7c86428733c2dd47a1ab6d2c25291a2ed6b4169bcb",
+      "guide_sections": "1 / Naming and blocked words",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "9a2892f504529eba52c71aabd0112c5e64a1f179ccae29d6aebdbfee1c33cd6a",
+      "guide_sections": "1 / Archive/unarchive lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "32568138460824dd9a6395f4ffbff263d562eaaafaf425a73aebfb38437ec59f",
+      "guide_sections": "1 / Group restoration and retention distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "43cf6c5c131fb87fd5876d889dfbdb4dbf9debfe9dc94947776b69dee5ad2ffc",
+      "guide_sections": "1 / Ownership/access reviews",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "0c8cfffd71a5510553cab3278e44f5204369c6bc264b101998908023625096fc",
+      "guide_sections": "1 / PowerShell/Graph operational safeguards; Lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "8fa48bfe994ac94dd34321e59902163b881f4bd09a59cfe126fe015d41952583",
+      "guide_sections": "1 / External model licensing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "1a0eb53dd130def596d816351817007fce5a38effd2d3a5604c4146f7dc356ef",
+      "guide_sections": "1 / SharePoint/OneDrive dependency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "a3490ec19370ef7552206535f5dfdd5e3695dbe43d912bb617fedb31e5f39aaf",
+      "guide_sections": "1 / Federation and domain policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "619c04ad32bfeb11cdf94bb4eca1061272d542dca101ea8a0b4fbf35edd7e666",
+      "guide_sections": "1 / Granular federation custom list behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b235c71f68f6e915f487ba22bd123e083bf68be14167a3ba30b96ee1878571af",
+      "guide_sections": "1 / Entra guest requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "684b3624e378e2b219d696bb1293c011e55c67ff8bef8f33da9feff9beb83350",
+      "guide_sections": "1 / Multi-workload guest access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "c8dfb66fff1c7f1727b510486e644abe39765f1cc2aa985161bb1db91535b44c",
+      "guide_sections": "1 / Labels and guest restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "347915b3cc36dd84f72bee11ee01cd2845964c66db0c8902ab350eea5c20ce68",
+      "guide_sections": "1 / Removal at every applicable layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "c2b9c7f3702ab85540004119acd5ae2cad649fe9180428e08faf8600eb190098",
+      "guide_sections": "1 / Shared channels and residual file sharing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "58e1adc0d914cd977dfc4d12098fc68a9a5570f8f443346436b1713076322a0c",
+      "guide_sections": "1 / B2B direct connect and file CA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "520e29941542d0a83e11e9661cd8fd31476aca9e923c6977a5aa41ec79d5e94f",
+      "guide_sections": "1 / MTO identity lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "fbc00b8230197f85827ca31218a97461da19cfc9c4ee11a854ed1c6d5b77a706",
+      "guide_sections": "1 / Phone/resource account distinction; 3 / Voice funding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "2d13837012dc7cd2d932a195ec9b5e7cb330219a298fb94bee0efa86cd8ab54f",
+      "guide_sections": "1 / Rooms/device licensing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "87802e72b01aa97f602a6b15bb4e86e2e4c64195823ef486b40d7967be3f6536",
+      "guide_sections": "1 / Configuration profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "516c446d6d8890d7f5ef93e3c529c01146492b8d2b6d264e19fd9ca9ce8c9ea8",
+      "guide_sections": "1 / Rooms mailbox/authentication and recovery; Lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "5e53053cd46e56eef24417f5e277cd3f6fdfbc9fe650213453ef908dbf3d676c",
+      "guide_sections": "1 / Firmware/health/update ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "82938a74bf9de2c3561b8469db06a99dfe709cdcf3fa91a010c52e43c6d68de5",
+      "guide_sections": "1 / Device tags",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "1911de805f9d144fb7dcdd4d2af16ca8911c93c932f5439fb447da921077b57a",
+      "guide_sections": "1 / Provisioning/device code flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "31205081c8266aafc1af0e54c2e79983409ac37e0275d6826b2fe950fa119e62",
+      "guide_sections": "1 / VDI cohort/deadlines; Lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "2af71b850e6eec91273697d9c3f37c6691faf0b1e5978d5f8753c05c72022b2f",
+      "guide_sections": "2 / Teams Advisor deployment plans",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "ec6d7c2c5a18f5fe4373efc5144a5c67b5a8ecb23cfb81ff90976519d274fe98",
+      "guide_sections": "2 / Team creation interfaces and automation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "a70483458485ed2997cf6b54b6645a69bcbac8f2afcb82f30d36d80e889fba99",
+      "guide_sections": "2 / Existing groups/sites/teams",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "423cd31a35412e7e665c1c5d44b08ddf590e449a8bc8a2ee7beedf7a243e2045",
+      "guide_sections": "2 / Team creation from template",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "8d18c717d0795c372b46e9d8fa474cd032430cdaa528911749479f3a3796b222",
+      "guide_sections": "2 / Templates and visibility policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "1c0a1558333d047df56e258b5cf4df4225d46d0f1ebfae5b2f927b57f8c475eb",
+      "guide_sections": "2 / Owners/members and lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "82c3244e540bf4eaaa0e46fb6d8c10572b576c4027325b0efbd61967737c044f",
+      "guide_sections": "2 / Administrative management",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "652a5f3481f2555949fb587766e12397d688748ae2c9a23d186b9398f6e8259a",
+      "guide_sections": "2 / Environment settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "2627894fde79cc68e0015a3eec6f51ba5b3d8e97f663ff84074f7f63a2bfc855",
+      "guide_sections": "2 / Privacy/sensitivity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 10,
+      "objective_sha256": "7262d7e47085fc59d17240f9479690d2c590fd51be24c46a124e10565bdd93f4",
+      "guide_sections": "2 / Frontline attributes and offboarding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "33120abce55f4614cb11d0467ce9bf28064f26db446a3292b9d443be0a7afb18",
+      "guide_sections": "2 / Channel selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "c223c8eda1503e8c3265c2c6a6ab63919854d77b1201304965408fc37143cdd8",
+      "guide_sections": "2 / Channel creation/removal/lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "841c17c8a45aed8eb29156c8ed71f177c61aadf17c29936913c13c316276a609",
+      "guide_sections": "2 / Channel settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "cca33ebca86e366a0bcac987784e726e176647a29d05ca4488eba3d271fd3392",
+      "guide_sections": "2 / Creation/sharing policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "0374a7b93c8b4816565c62ac4f216cef64788b4759b21d43c7260a4e389b8cb6",
+      "guide_sections": "2 / Private/shared channel membership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "1327dcf0263af0caa295a356d35b29e59992f3158a85ebe17448d1fccb80b341",
+      "guide_sections": "2 / Messaging policy and meeting chat",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "1acdd33e770341d9ad81d68cea9af64461d63ccd366f1569708fe691c4180bcb",
+      "guide_sections": "2 / App org settings and migration state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "feb3b103c28ab58df187f5dbdedac4ba870562063ebb9c686144bcdb873f7065",
+      "guide_sections": "2 / App availability and setup; audience example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "aad5e977a9fd355acc459290e398587d0e124bf2ee9fa253c8158ab5487ed581",
+      "guide_sections": "2 / Consent/permissions/blocking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "5e5d9e703d22f9c4ee1e6337f16ae241ec6608d371d2543d65364ac26e9b0083",
+      "guide_sections": "2 / Extension types; Workflows ownership/conflict",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "1206621f7920a5a3195c1369a39a39e33e0787ed12aaa4e002301c4c7ce32c28",
+      "guide_sections": "2 / Purchase/licensing review",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "9cf18527bb12c2fa78826b3edd0d59d93c36397c31f13ec2b43261e9f10f2a9b",
+      "guide_sections": "2 / Store discovery/branding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "a3f03cb2f6a786de984b637e8df95fdbd2b045a741a331a8b599a9141d3a257a",
+      "guide_sections": "2 / Custom manifest/upload review; Lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "18a4d4bdca31a7525078d3d3b908ad642aaea1d3b40b93975a2e321b3863c07e",
+      "guide_sections": "3 / Meeting types and current unified Events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "adf3e3928ce3acd59847d825ed70429b092992d4921dd01f11007c1e43466bf6",
+      "guide_sections": "3 / Copilot policy/default/transcript matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "cb51a57929941739608efc89dfb57c16c2a853999882efa049252fe6fb40aaae",
+      "guide_sections": "3 / Templates and template policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "27c6e4c95fbfc865ec1df74f51076d27dcee7b350ad66b485f674e6ac1916a42",
+      "guide_sections": "3 / Meeting policy evaluation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "9e358a3fb7378be270c00c49dce9a4790eea2936c0d5c1938383dd3b0c0b1b0c",
+      "guide_sections": "3 / Branding/customization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "f2b1204c004688c441c1d984be90b79f670024182eea6d181c32e3c28d5394c5",
+      "guide_sections": "3 / Event policy by audience optimization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "6c49fe92522042930e026ead5388a50d2edca238ac2f3663c1db9ab99128aea0",
+      "guide_sections": "3 / Webinar settings and interaction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "89fa18bd80027474bbea622890e8af3eedd06e26764711b6dae61b176c451301",
+      "guide_sections": "3 / Town hall/large audience policy; Lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "3148bfd9cb3c113553e078ca2c06bfaa7fb07026b1f5234598750a775a5adaf0",
+      "guide_sections": "3 / Number provisioning/types/ports",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "341f2500b8e163b448a4b6c5ae70a525f22afd3aaf3c67497265d9b18df93505",
+      "guide_sections": "3 / User/resource account assignment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "b1237666decd1bc42de00d3901cf4679b1a152bb86e1b9ca22e2ea017ddf8eee",
+      "guide_sections": "3 / User voice and route settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "6a60278430cfdbf5cef7016aa60297140b932e2a29e1b19288ef67245532e9db",
+      "guide_sections": "3 / Voicemail policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "7046a7b49af9d86afe44bc04c9ad77794e966dc80c6eed9e9a6ec42b62f64349",
+      "guide_sections": "3 / Auto attendant/queue and callback example; Lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "c7482ce242dcb72e4325f4693b5cf9d416952aa76eec4621c6158ad2b493ce64",
+      "guide_sections": "3 / Calling policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "1d8bb86c5fdd8199f39a827e5ed04bab3d749bd3c98da66322ad3c324e3c0d53",
+      "guide_sections": "4 / Media telemetry and denominator example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "9cb6d8edf45ddf2c6041f65c14a9d8268c37695369e2f8b5cf294ea8485a2c3d",
+      "guide_sections": "4 / Alert ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "aeaca7cc2db324f225edad131b561b7bf957e72171a090078cd74c0f3daa5d28",
+      "guide_sections": "4 / Usage/storage/adoption reports",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "e46f5e3f25f12baeec20a4203959829507c27dc6b9d276efcce13fcdef73a605",
+      "guide_sections": "4 / Audit creation/deletion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "86b49a8db8328762a8a4304ececb16a423d88e62b739a5e27f713cdb3ad47a08",
+      "guide_sections": "4 / Guest audit/lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "fb66b1a528b25e296c5983dbe38feae907c9babf402821f0c0f1eb094fcc666e",
+      "guide_sections": "4 / Connectivity dashboard versus session evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "c5d381da8c9d1f868c017addd95ce199b486366d163e4af154047115e7c5d298",
+      "guide_sections": "4 / Feedback policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "e56e94d1526a2f966bc948a8766369b01617d1a6ebd8d3e2a480d812bade03f2",
+      "guide_sections": "4 / Preserve client logs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "dab2632cfc79be3dec3080050e90355e0e6e7aa0492fb5accb923902a2013a81",
+      "guide_sections": "4 / Cache only after evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "7d1b53d66059911d77b6d3887093165a69f5a4b98ad3115bd4dac42414dd039e",
+      "guide_sections": "4 / Diagnostic sequence/self-help",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "79d3cdd4217d2456689aa9d53bfacbbd28d671e206147719c743ebdfe6659798",
+      "guide_sections": "4 / Installation/update/client versions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "9953fca939b3ce84f879759e66bc96da8ba3e2155ba0d6dc5ae20efb1b057033",
+      "guide_sections": "4 / Client/device health",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "938c4533f3bcaa0c4b2dfda922bdd4c42ab20e1deccf37a87ea17edcfd4d55cb",
+      "guide_sections": "4 / Sign-in and CA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "b97ed43765657004cefde7c42cc39312641fcf490bd89c67c40b23b3ae7b2e0a",
+      "guide_sections": "4 / Copilot and AI prerequisite diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "9edb880d2ea87b8e96a2d90cb48bf898c68a84a5695dd0e2feaa15827afac8dc",
+      "guide_sections": "4 / Join/role/capacity troubleshooting; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MS-700"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MS-700",
+        "title": "Managing Microsoft Teams",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+        "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+        "snapshot_path": "data\\objective-snapshots\\ms-700-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ms-700-official-status.json",
+        "previous_sha256": "7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061",
+        "current_sha256": "4b6fdf9cefc58cdaa8fda057e3f654711ee5f70741c9e819fa6c1f62b2a186fe",
+        "previous_status_sha256": "c68d9e141e28b08cbc4c1f8512ebf10a343a7bc336ab668629f9b441186e3cd8",
+        "current_status_sha256": "6fb682a49f28a788a089159a5e1ccc7bbb3e51a48d1515282421aa0a92d0d20f",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 27, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 45,
+    "reachable": 41,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "ms-700-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+      "checked_at": "2026-09-28T04:35:55.356515+00:00",
+      "health": {
+        "id": "ms-700-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+        "checked_at": "2026-09-28T04:35:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MS-700: Managing Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "6dba38e21a85712fd2c32d64383fd449c3a874e80b1211e3c9fd8e2f82c48155",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+      "sha256": "f125e5f547dc5bb5fb626f62c607c72463d90970f2c4869caf7006ba45d5d72c",
+      "text_characters": 11027
+    },
+    {
+      "id": "ms-700-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+      "checked_at": "2026-09-28T04:35:55.357118+00:00",
+      "health": {
+        "id": "ms-700-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+        "checked_at": "2026-09-28T04:35:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Certified: Teams Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "819d2f842520e88fa262bebf2f1e6c248efc6f2e08d39b1025754a0f2cfdd052",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+      "sha256": "5192666e3f10c63a88cdf7541c10209102960af62b46334db1881f03f5cf32e1",
+      "text_characters": 4332
+    },
+    {
+      "id": "ms-700-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment?assessment-type=practice&assessmentId=55&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T04:35:55.357444+00:00",
+      "health": {
+        "id": "ms-700-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment?assessment-type=practice&assessmentId=55&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T04:35:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment?assessment-type=practice&assessmentId=55&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "7e9b1c012d3a4562904002717b881ad1338c4f9a23985a75f7fd90449e1a632c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment?assessment-type=practice&assessmentId=55&practice-assessment-type=certification",
+      "sha256": "0b723d6873570b6b925a9a093a0347b53fa7c9d6e119d27d8c556a3bbbc7c91b",
+      "text_characters": 0
+    },
+    {
+      "id": "ms-700-network",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+      "checked_at": "2026-09-28T04:35:55.788268+00:00",
+      "health": {
+        "id": "ms-700-network",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+        "checked_at": "2026-09-28T04:35:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+        "content_type": "text/html",
+        "page_title": "Prepare your organization's network for Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+        "duration_signals": [],
+        "signal_fingerprint": "ba51c08715f25e7a35c8beea6f7fac29b41228ecc26f754289f6505dd559d745",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+      "sha256": "063af0c7efe05815103f27e3f2843a4ed05817dffb4e2638279df3b75c93f53d",
+      "text_characters": 13599
+    },
+    {
+      "id": "ms-700-network-test",
+      "url": "https://connectivity.office.com/",
+      "checked_at": "2026-09-28T04:35:55.803763+00:00",
+      "health": {
+        "id": "ms-700-network-test",
+        "url": "https://connectivity.office.com/",
+        "checked_at": "2026-09-28T04:35:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://connectivity.office.com/",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 network connectivity test",
+        "canonical_url": "https://connectivity.office.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "1f53eab5315d54de434ee074fd8a6b0c0f455a2dd050c145329a2801ffb604e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://connectivity.office.com/",
+      "sha256": "bc881080cffce0366299abadc7df21ecdc100f08747d3f6909b1544ca2c42015",
+      "text_characters": 39
+    },
+    {
+      "id": "ms-700-monitoring",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+      "checked_at": "2026-09-28T04:35:55.843092+00:00",
+      "health": {
+        "id": "ms-700-monitoring",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+        "checked_at": "2026-09-28T04:35:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+        "content_type": "text/html",
+        "page_title": "Monitor and troubleshoot Teams meetings and calls from the Teams admin center - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+        "duration_signals": [
+          "2 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "7b09801c170973328c1313ded6545f9800f68eee3fb4f06ddb21c452a77c175e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+      "sha256": "b24863b8ef36f053c4b2bce642dcfa50a6fe984ab8a671abc66b83d38c73f2af",
+      "text_characters": 19400
+    },
+    {
+      "id": "ms-700-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ms-700t00",
+      "checked_at": "2026-09-28T04:35:56.093740+00:00",
+      "health": {
+        "id": "ms-700-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ms-700t00",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ms-700t00",
+        "content_type": "text/html",
+        "page_title": "Course MS-700T00-A: Manage collaboration and communication with Microsoft Teams - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ms-700t00",
+        "duration_signals": [],
+        "signal_fingerprint": "194cec22c573590689c6f519b60aaf1242ee0a4281e240b14fbcfed6c01512e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ms-700t00",
+      "sha256": "d5e9468e641410930215615e48e35b30decfad2d5e6a6e303a7ebfd345599bb5",
+      "text_characters": 2348
+    },
+    {
+      "id": "ms-700-path-start",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/",
+      "checked_at": "2026-09-28T04:35:56.159012+00:00",
+      "health": {
+        "id": "ms-700-path-start",
+        "url": "https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/",
+        "content_type": "text/html",
+        "page_title": "Get started with managing Microsoft Teams - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/",
+        "duration_signals": [],
+        "signal_fingerprint": "a9e611e70494cdd35980fb0237364bf236d4a70ec162c22e5639bd8c2bb04fdd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/get-started-managing-microsoft-teams/",
+      "sha256": "07f2834731393d81f023ad0770c0c3a1f5fa6f32cccff56dc5c72b40e374f4ae",
+      "text_characters": 1776
+    },
+    {
+      "id": "ms-700-path-environment",
+      "url": "https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/",
+      "checked_at": "2026-09-28T04:35:56.366762+00:00",
+      "health": {
+        "id": "ms-700-path-environment",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/",
+        "content_type": "text/html",
+        "page_title": "Prepare the environment for a Microsoft Teams deployment - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/",
+        "duration_signals": [],
+        "signal_fingerprint": "27b30ad970f930b05acdfd2dd1b4ded016bd479fd1bd1f29fb122244588cf705",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-environment-for-microsoft-teams-deployment/",
+      "sha256": "bf3760a4143379874c2c3dfac707c8e684374e5f54922d178c5f0ab2ce5c225e",
+      "text_characters": 1693
+    },
+    {
+      "id": "ms-700-path-collaboration",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/",
+      "checked_at": "2026-09-28T04:35:56.407469+00:00",
+      "health": {
+        "id": "ms-700-path-collaboration",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/",
+        "content_type": "text/html",
+        "page_title": "Manage chat, teams, channels, and apps in Microsoft Teams - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/",
+        "duration_signals": [],
+        "signal_fingerprint": "0011e48657c686b4fa0cc95b74fd4621deb0a52ea32266e27da9ff92cc0b1e93",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-chat-teams-channels-apps-microsoft-teams/",
+      "sha256": "3aeccb1ed9b7c1d830a042240ea9ca76eae723470fcc72b8c59e4d62c2e938d2",
+      "text_characters": 1356
+    },
+    {
+      "id": "ms-700-path-meetings",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/",
+      "checked_at": "2026-09-28T04:35:56.487614+00:00",
+      "health": {
+        "id": "ms-700-path-meetings",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/",
+        "content_type": "text/html",
+        "page_title": "Manage meetings and calling in Microsoft Teams - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/",
+        "duration_signals": [],
+        "signal_fingerprint": "86bd85d6056f9f8d311d63a8bf4d957da6b621f0585051208f2ac3aa216e62d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/",
+      "sha256": "eb2c6aa3331ca673a3f76cdc541b6a0ea24488c7f1d01ce2affb456c4e66430d",
+      "text_characters": 3239
+    },
+    {
+      "id": "ms-700-pluralsight",
+      "url": "https://www.pluralsight.com/paths/managing-microsoft-teams",
+      "checked_at": "2026-09-28T04:35:56.651718+00:00",
+      "health": {
+        "id": "ms-700-pluralsight",
+        "url": "https://www.pluralsight.com/paths/managing-microsoft-teams",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/managing-microsoft-teams",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Managing Microsoft Teams (MS-700)",
+        "canonical_url": "https://www.pluralsight.com/paths/managing-microsoft-teams",
+        "duration_signals": [
+          "10 minutes",
+          "19 Hours"
+        ],
+        "signal_fingerprint": "91511bec1b4ebac9ff6ec57f7a99da3618cf7145d3c75ff964e67c36d029b3d7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/managing-microsoft-teams",
+      "sha256": "6306fa2dadf661b32d70324e4ac75d9b92627b92c2b4bedad5feab9ae432effc",
+      "text_characters": 4898
+    },
+    {
+      "id": "ms-700-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/",
+      "checked_at": "2026-09-28T04:35:56.717267+00:00",
+      "health": {
+        "id": "ms-700-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ms-700-oreilly-video",
+      "url": "https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/",
+      "checked_at": "2026-09-28T04:35:56.789872+00:00",
+      "health": {
+        "id": "ms-700-oreilly-video",
+        "url": "https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ms-700-udemy-course",
+      "url": "https://www.udemy.com/course/microsoft-teams-examlabpractice/",
+      "checked_at": "2026-09-28T04:35:56.884725+00:00",
+      "health": {
+        "id": "ms-700-udemy-course",
+        "url": "https://www.udemy.com/course/microsoft-teams-examlabpractice/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/microsoft-teams-examlabpractice/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ms-700-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html",
+      "checked_at": "2026-09-28T04:35:56.886570+00:00",
+      "health": {
+        "id": "ms-700-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test MS-700: Managing Microsoft Teams",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "010b0f67d4d48bac1735b1af27c1c939d81d19f1a058ea269c3bd3e5b8ec03f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html",
+      "sha256": "e140c54e024c5271cdff71c895755b49ff3dfdf50ab2679ff581e202f4b542a2",
+      "text_characters": 17073
+    },
+    {
+      "id": "ms-700-udemy-practice",
+      "url": "https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/",
+      "checked_at": "2026-09-28T04:35:56.986135+00:00",
+      "health": {
+        "id": "ms-700-udemy-practice",
+        "url": "https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/",
+        "checked_at": "2026-09-28T04:35:56+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ms700-qos",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+      "checked_at": "2026-09-28T04:42:48.990019+00:00",
+      "health": {
+        "id": "ms700-qos",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+        "checked_at": "2026-09-28T04:42:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+        "content_type": "text/html",
+        "page_title": "Implement Quality of Service in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+        "duration_signals": [],
+        "signal_fingerprint": "d8cdb96ee1facfc470cbfe7bfe06b6dd8c1f5d6d0a45094f768ac7bb64ff67b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+      "sha256": "b73c702146c1a1a353d7a8b7f6130a4a9210e7d90d07d4e01d43f47bac99d30c",
+      "text_characters": 14635
+    },
+    {
+      "id": "ms700-policy",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+      "checked_at": "2026-09-28T04:42:48.990704+00:00",
+      "health": {
+        "id": "ms700-policy",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+        "checked_at": "2026-09-28T04:42:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+        "content_type": "text/html",
+        "page_title": "Assign policies to users and groups - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+        "duration_signals": [],
+        "signal_fingerprint": "2ce7b3928059503b4b70ea4faef891f636398a8420a12f6e9c7ceb4c6d192516",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+      "sha256": "8c5fe093865eb18ce6fa298ac7905b7afb59d3c796a1bc1bd1ba0cbf4f6a882a",
+      "text_characters": 19143
+    },
+    {
+      "id": "ms700-external",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-external-access",
+      "checked_at": "2026-09-28T04:42:48.991135+00:00",
+      "health": {
+        "id": "ms700-external",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-external-access",
+        "checked_at": "2026-09-28T04:42:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/trusted-organizations-external-meetings-chat",
+        "content_type": "text/html",
+        "page_title": "IT Admins - Manage external meetings and chat with people and organizations using Microsoft identities - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/trusted-organizations-external-meetings-chat",
+        "duration_signals": [],
+        "signal_fingerprint": "ff1fb59b77d6a9244b078c218ba42caabbffab89b0c1327b59a2d506bc1949a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/trusted-organizations-external-meetings-chat",
+      "sha256": "63b8a3e78828edcf5a8ac38eb02b5ec816cd3d3ec4f8897737062b44df15eac5",
+      "text_characters": 25428
+    },
+    {
+      "id": "ms700-shared",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+      "checked_at": "2026-09-28T04:42:49.423639+00:00",
+      "health": {
+        "id": "ms700-shared",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+        "checked_at": "2026-09-28T04:42:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+        "content_type": "text/html",
+        "page_title": "Shared channels in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+        "duration_signals": [],
+        "signal_fingerprint": "cc430cd1579af5055ef86603c0f00e3417c1e05c84c5803de59b227272f414bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+      "sha256": "4bae150f9f2543a274e4843ece8da9f2979a3057b2521e15a3a841df1ca97e2a",
+      "text_characters": 14312
+    },
+    {
+      "id": "ms700-rooms",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-authentication",
+      "checked_at": "2026-09-28T04:44:30.419953+00:00",
+      "health": {
+        "id": "ms700-rooms",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-authentication",
+        "checked_at": "2026-09-28T04:44:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-authentication",
+        "content_type": "text/html",
+        "page_title": "Authentication in Microsoft Teams Rooms on Windows - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "a4c547bf1164abb41e00254b724297a2225596478d1b5449735367c59f380deb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-authentication",
+      "sha256": "37e5f582faab2280ee7e2078f8fea61f64791dc45d46e82119923966828ded28",
+      "text_characters": 3589
+    },
+    {
+      "id": "ms700-vdi",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/new-teams-vdi-requirements-deploy",
+      "checked_at": "2026-09-28T04:42:49.573020+00:00",
+      "health": {
+        "id": "ms700-vdi",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/new-teams-vdi-requirements-deploy",
+        "checked_at": "2026-09-28T04:42:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-vdi-requirements-deploy",
+        "content_type": "text/html",
+        "page_title": "Microsoft Teams for Virtualized Desktop Infrastructure (VDI) - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-vdi-requirements-deploy",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "09bd3fd5d602642e1ba2a12e10c7d4b01af51e5b8924afa9acd8c6ea98db7d3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-vdi-requirements-deploy",
+      "sha256": "6e5fcea962ad7492ce98861aef44b6b56f06ab4d84dfc953e126dd0ccc82baa8",
+      "text_characters": 42289
+    },
+    {
+      "id": "ms700-app-centric",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+      "checked_at": "2026-09-28T04:42:49.736369+00:00",
+      "health": {
+        "id": "ms700-app-centric",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+        "checked_at": "2026-09-28T04:42:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+        "content_type": "text/html",
+        "page_title": "App centric management to manage user access to Teams apps - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "a250a887224359a75ecceff27f1689a8a21f8cb6a069bffa820580560ee431df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+      "sha256": "fc9b675f6c7eadbbe6930bcd24186dd6f32b6e3793dfcf604465b2e1fb42990c",
+      "text_characters": 22536
+    },
+    {
+      "id": "ms700-app-migration",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+      "checked_at": "2026-09-28T04:42:49.860497+00:00",
+      "health": {
+        "id": "ms700-app-migration",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+        "checked_at": "2026-09-28T04:42:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+        "content_type": "text/html",
+        "page_title": "Best migration practices for app centric management - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+        "duration_signals": [],
+        "signal_fingerprint": "a7dc0cb5102128621cec6f7003f4fb6826831853891ea8fe1556d5d1371c7c66",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+      "sha256": "de868655badeba8e0af456f431656a42b59fc1125eb702885b4f222669fb58a1",
+      "text_characters": 9174
+    },
+    {
+      "id": "ms700-apps",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-apps",
+      "checked_at": "2026-09-28T04:42:50.074761+00:00",
+      "health": {
+        "id": "ms700-apps",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-apps",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-apps",
+        "content_type": "text/html",
+        "page_title": "Manage your apps in the Microsoft Teams admin center - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-apps",
+        "duration_signals": [],
+        "signal_fingerprint": "d15568413b145f1f87dcba7f6273973f3d6227bdaa663ba4805e90640da78c0d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-apps",
+      "sha256": "d76e16f90bfee0a7ad415cba805d5030bed6d0969e48c3feb1ac39b2caa43507",
+      "text_characters": 15110
+    },
+    {
+      "id": "ms700-events",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+      "checked_at": "2026-09-28T04:42:50.123778+00:00",
+      "health": {
+        "id": "ms700-events",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/plan-events",
+        "content_type": "text/html",
+        "page_title": "Plan for Teams events - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/plan-events",
+        "duration_signals": [],
+        "signal_fingerprint": "2e9e13344fa7321e892eec19acc373685a41e2197657a8ba318377cc3b79aeec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/plan-events",
+      "sha256": "af8ffbaf71c2a58fc2eb55608a1420bd07d40e22f7c33b08bad66f277a27cd2d",
+      "text_characters": 33618
+    },
+    {
+      "id": "ms700-live-retirement",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "checked_at": "2026-09-28T04:42:50.243408+00:00",
+      "health": {
+        "id": "ms700-live-retirement",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+        "content_type": "text/html",
+        "page_title": "Plan for live events in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+        "duration_signals": [],
+        "signal_fingerprint": "a4e7cb0abbeb144a7435b6720922e1dfd3f854b82ceb1d00dc0f214b2e8d016c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "sha256": "4aeee8ad1e74c123740173899df62351a05dd9d5ca0cd89d1cd7ff062331e059",
+      "text_characters": 7488
+    },
+    {
+      "id": "ms700-copilot",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "checked_at": "2026-09-28T04:42:50.308194+00:00",
+      "health": {
+        "id": "ms700-copilot",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "content_type": "text/html",
+        "page_title": "Manage Microsoft Copilot in Teams meetings and events - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "duration_signals": [],
+        "signal_fingerprint": "edccd70883d0514a2d5a8bbab399e25f2c5e49bbdda141456acb3d3fee4401e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "sha256": "9460677cbd66b91188ad81f56233975b94938da841a7c3a7ecd1f7364f037590",
+      "text_characters": 8348
+    },
+    {
+      "id": "ms700-voice-license",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+      "checked_at": "2026-09-28T04:42:50.496400+00:00",
+      "health": {
+        "id": "ms700-voice-license",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+        "content_type": "text/html",
+        "page_title": "Reference - Voice applications prerequisites and licensing - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+        "duration_signals": [],
+        "signal_fingerprint": "762cc8154f75644453efaa4908cfd66aa7c0e686090f12a414caeabdc3618569",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+      "sha256": "ae052801e7708f1f74c02ff98dd21e31579225326e30ce52c0c60471abcbdd9e",
+      "text_characters": 11699
+    },
+    {
+      "id": "ms700-queue",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "checked_at": "2026-09-28T04:42:50.564127+00:00",
+      "health": {
+        "id": "ms700-queue",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+        "content_type": "text/html",
+        "page_title": "Setup - Call Queue - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+        "duration_signals": [
+          "15 minutes",
+          "24 hours",
+          "40 minutes",
+          "45 minutes"
+        ],
+        "signal_fingerprint": "58fb79a3c41d7fff66a27144c06e1dd285ddc98b73b8765fffabf53dd6659c48",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "sha256": "4f30eb9031648e6f170bc6b5bfa5889faad84af81c42469ec788ebf69440172e",
+      "text_characters": 32761
+    },
+    {
+      "id": "ms700-network-planner",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+      "checked_at": "2026-09-28T04:42:50.664236+00:00",
+      "health": {
+        "id": "ms700-network-planner",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+        "content_type": "text/html",
+        "page_title": "Use the Network planner for Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+        "duration_signals": [],
+        "signal_fingerprint": "6963d3b7714d9f412578531581c76f98adae62047efa3ab33c2b3ad2d5cc050a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+      "sha256": "f4b3acd65f6621db42044cd68bd7ebf36f2de2025cd166a07e513c01a4f605b0",
+      "text_characters": 4226
+    },
+    {
+      "id": "ms700-advisor",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/use-advisor-teams-roll-out",
+      "checked_at": "2026-09-28T04:42:50.764923+00:00",
+      "health": {
+        "id": "ms700-advisor",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/use-advisor-teams-roll-out",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/use-advisor-teams-roll-out",
+        "content_type": "text/html",
+        "page_title": "Use Advisor for Teams to help you roll out Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/use-advisor-teams-roll-out",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "5070da6dc1e161b02e2e76acbf859efae405a6cbbe4149f66ce019fa6c4cb4b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/use-advisor-teams-roll-out",
+      "sha256": "c07212f9432aa13fedbc944aae5111a93cc7092045910e8e3ac6fefb0a550677",
+      "text_characters": 20102
+    },
+    {
+      "id": "ms700-release",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-update",
+      "checked_at": "2026-09-28T04:42:50.853487+00:00",
+      "health": {
+        "id": "ms700-release",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-update",
+        "checked_at": "2026-09-28T04:42:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-update",
+        "content_type": "text/html",
+        "page_title": "Teams updates - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-update",
+        "duration_signals": [],
+        "signal_fingerprint": "8c4321e5c88ebc8365481456f3997d47599b4db27731de6058aabb381201e226",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-update",
+      "sha256": "f047987fa12101baf0ac31d6dbcd04cc875d0a86430d47a814a08ad66e1d92b4",
+      "text_characters": 11320
+    },
+    {
+      "id": "ms700-webhooks",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+      "checked_at": "2026-09-28T04:42:51.006653+00:00",
+      "health": {
+        "id": "ms700-webhooks",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+        "content_type": "text/html",
+        "page_title": "Webhooks and connectors - Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+        "duration_signals": [],
+        "signal_fingerprint": "945f26aa756ba255ab3b25633f01a351b165ffb858094da9a401bd841a936bb5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+      "sha256": "2d2adcc99f0ad3d3ec958830dd8a7f38b7d42a94072761bfbb04f992000d740a",
+      "text_characters": 9483
+    },
+    {
+      "id": "ms700-roles",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/using-admin-roles",
+      "checked_at": "2026-09-28T04:42:51.019724+00:00",
+      "health": {
+        "id": "ms700-roles",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/using-admin-roles",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/using-admin-roles",
+        "content_type": "text/html",
+        "page_title": "Use Microsoft Teams administrator roles to manage Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/using-admin-roles",
+        "duration_signals": [],
+        "signal_fingerprint": "f062024c50e766b0fcd81e376c21e23d8f65be0278ae940d4f7f69711b31dbf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/using-admin-roles",
+      "sha256": "48d885066bc266d941ccc6dd0e9d48d92b20f079d6f93198cc3dddf3ea563f6c",
+      "text_characters": 7829
+    },
+    {
+      "id": "ms700-compliance",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+      "checked_at": "2026-09-28T04:42:51.132012+00:00",
+      "health": {
+        "id": "ms700-compliance",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+        "content_type": "text/html",
+        "page_title": "Overview of security and compliance - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+        "duration_signals": [
+          "42 min",
+          "54 min"
+        ],
+        "signal_fingerprint": "28c73dcf31e981c211fabf85d5803057bcc673e8d522537b7bba2b44ee57efd8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+      "sha256": "31fd8edd3a2ecdc7395af137a1aff39af0e9976726583350ce5bfebfa220c20f",
+      "text_characters": 13975
+    },
+    {
+      "id": "ms700-connectors-blog",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "checked_at": "2026-09-28T04:42:51.270887+00:00",
+      "health": {
+        "id": "ms700-connectors-blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Retirement of Office 365 connectors within Microsoft Teams - Microsoft 365 Developer Blog",
+        "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "duration_signals": [],
+        "signal_fingerprint": "59b756812369da347697fa16ac0177c90375c397a7b7862639f6e1c01840ce4b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "sha256": "b0c26c0680fee98a478fa08d9a67e435f8120519834d303b85f9d577c9a9fcbe",
+      "text_characters": 22436
+    },
+    {
+      "id": "ms700-july-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+      "checked_at": "2026-09-28T04:42:51.308338+00:00",
+      "health": {
+        "id": "ms700-july-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What’s New in Microsoft Teams | July 2026 | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%e2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+        "duration_signals": [],
+        "signal_fingerprint": "25b9ac8402a4a7f7ffc4712bac69087fa8d3bfbbc675bb1c02e61eb2ecbbb9d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+      "sha256": "239361f6ae59e3234abba7496d60b6d8e638f203f8bf77ed31403198bb7712d1",
+      "text_characters": 67
+    },
+    {
+      "id": "ms700-device-code",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+      "checked_at": "2026-09-28T04:42:51.554989+00:00",
+      "health": {
+        "id": "ms700-device-code",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+        "content_type": "text/html",
+        "page_title": "Restrict device code flow for Microsoft Teams devices with Conditional Access - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+        "duration_signals": [],
+        "signal_fingerprint": "87a5169371332fd17eedf1d06f79d0936e815ba2c37b3546ac9d4107e9f195e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+      "sha256": "c5ec6d0447e926dcdbc46ab7dbfb922dbecc6b581d410e78ebf12425f053a5a5",
+      "text_characters": 13768
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-28T04:42:51.823346+00:00",
+      "health": {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "6580d806fa0db2523d57479250f23abc3d225083e1af7bf4af92a5c4f2e562b5",
+      "text_characters": 182
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T04:42:51.915379+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T04:42:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "a2ca98dd32c2fcf32fb1f1e527c852eca4b991824d88ce85c02817879a854db4",
+      "text_characters": 180
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T04:42:52.908561+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T04:42:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "ab-650-john-savill-youtube",
+      "url": "https://www.youtube.com/@NTFAQGuy",
+      "checked_at": "2026-09-28T04:42:53.089231+00:00",
+      "health": {
+        "id": "ab-650-john-savill-youtube",
+        "url": "https://www.youtube.com/@NTFAQGuy",
+        "checked_at": "2026-09-28T04:42:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@NTFAQGuy",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "John Savill's Technical Training",
+        "canonical_url": "https://www.youtube.com/channel/UCpIn7ox7j7bH_OFj7tYouOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "3ea7e177926d30b19bd454e7c112994be5e9aae837e8697abb5a5edc1ef7afbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@NTFAQGuy",
+      "sha256": "9c11bb0c46d99e82775346d3fef54ce7373306c1faaa1497b4b85dcf3faf6bc5",
+      "text_characters": 195
+    },
+    {
+      "id": "ms700-network-tool",
+      "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+      "checked_at": "2026-09-28T04:45:31.091078+00:00",
+      "health": {
+        "id": "ms700-network-tool",
+        "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+        "checked_at": "2026-09-28T04:45:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Download Microsoft Teams Network Assessment Tool from Official Microsoft Download Center",
+        "canonical_url": "https://www.microsoft.com/content/microsoft/mscom/en-us/dynamic/dlcdetails-basepage",
+        "duration_signals": [],
+        "signal_fingerprint": "a75ca81379881d1db57f3bbb45f9cf459156257f3eb3546fa1302eee83592dbc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+      "sha256": "e765a92347dc45405dd0c63ff2dd9fda2d1631606955584749574ea818beaa26",
+      "text_characters": 2740
+    }
+  ],
+  "added_source_ids": [
+    "ms700-qos",
+    "ms700-policy",
+    "ms700-external",
+    "ms700-shared",
+    "ms700-rooms",
+    "ms700-vdi",
+    "ms700-app-centric",
+    "ms700-app-migration",
+    "ms700-apps",
+    "ms700-events",
+    "ms700-live-retirement",
+    "ms700-copilot",
+    "ms700-voice-license",
+    "ms700-queue",
+    "ms700-network-planner",
+    "ms700-advisor",
+    "ms700-release",
+    "ms700-webhooks",
+    "ms700-roles",
+    "ms700-compliance",
+    "ms700-connectors-blog",
+    "ms700-july-blog",
+    "ms700-device-code",
+    "ms700-network-tool"
+  ],
+  "findings": [
+    {
+      "id": "ms700-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Private-channel support descriptions disagree",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Platform known issue still says under development; updated developer announcement says supported.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ms700-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current network diagnostic listing verified",
+      "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Public download exists with a current listing; diagnostic is not a stress tool.",
+      "recommendation": "Replace generic tool uncertainty with a bounded current link and execution limitation.",
+      "disposition": "applied",
+      "source_id": "ms700-network-tool",
+      "resolution": "Replace generic tool uncertainty with a bounded current link and execution limitation."
+    },
+    {
+      "id": "ms700-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "QoS classification varies by client",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Source ports and browser/Mac/mobile behavior differ.",
+      "recommendation": "Add marked media classes and actual-path verification.",
+      "disposition": "applied",
+      "source_id": "ms700-qos",
+      "resolution": "Add marked media classes and actual-path verification."
+    },
+    {
+      "id": "ms700-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Policy assignment is not last-write-wins",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Direct assignment outranks ranked group assignments; nested membership does not inherit.",
+      "recommendation": "Add effective-policy example.",
+      "disposition": "applied",
+      "source_id": "ms700-policy",
+      "resolution": "Add effective-policy example."
+    },
+    {
+      "id": "ms700-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Granular federation can replace the tenant domain list",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-external-access",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tenant enablement still gates custom policy.",
+      "recommendation": "Add user/group domain scope and anonymous/subdomain boundaries.",
+      "disposition": "applied",
+      "source_id": "ms700-external",
+      "resolution": "Add user/group domain scope and anonymous/subdomain boundaries."
+    },
+    {
+      "id": "ms700-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Channel removal may leave a separate file share",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Shared channel identity, site membership and file permissions differ.",
+      "recommendation": "Add residual-access and file-level CA troubleshooting.",
+      "disposition": "applied",
+      "source_id": "ms700-shared",
+      "resolution": "Add residual-access and file-level CA troubleshooting."
+    },
+    {
+      "id": "ms700-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Room exceptions remain account-wide",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Persistent exception and registration resource exclusion are distinct.",
+      "recommendation": "Add monitored recovery/provisioning scenario and identity distinction.",
+      "disposition": "applied",
+      "source_id": "ms700-device-code",
+      "resolution": "Add monitored recovery/provisioning scenario and identity distinction."
+    },
+    {
+      "id": "ms700-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Windows legacy optimization has two deadlines",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/new-teams-vdi-requirements-deploy",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Support loss precedes unavailability; new-stack failure can render on the VM.",
+      "recommendation": "Add cohort-specific inventory, pilot lab and follow-ups.",
+      "disposition": "applied",
+      "source_id": "ms700-vdi",
+      "resolution": "Add cohort-specific inventory, pilot lab and follow-ups."
+    },
+    {
+      "id": "ms700-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Unblocked does not imply usable by anyone",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Migrated app audience may remain No one; assignment types differ from Teams policy.",
+      "recommendation": "Add distinct-user reconciliation example.",
+      "disposition": "applied",
+      "source_id": "ms700-app-centric",
+      "resolution": "Add distinct-user reconciliation example."
+    },
+    {
+      "id": "ms700-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Consent survives app management migration",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Availability migration is independent of Graph consent.",
+      "recommendation": "Add before/after audience and consent evidence.",
+      "disposition": "applied",
+      "source_id": "ms700-app-migration",
+      "resolution": "Add before/after audience and consent evidence."
+    },
+    {
+      "id": "ms700-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current event settings determine policy behavior",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Audience optimization selects event policy behavior; capacity changes interaction.",
+      "recommendation": "Retain exam distinctions and add current experience boundary.",
+      "disposition": "applied",
+      "source_id": "ms700-events",
+      "resolution": "Retain exam distinctions and add current experience boundary."
+    },
+    {
+      "id": "ms700-deep-12",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Legacy live-event creation is retired",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Existing scheduled events have a separate grace window.",
+      "recommendation": "Replace new-lab assumptions and schedule grace-period recheck.",
+      "disposition": "applied",
+      "source_id": "ms700-live-retirement",
+      "resolution": "Replace new-lab assumptions and schedule grace-period recheck."
+    },
+    {
+      "id": "ms700-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Copilot Off default is not a fixed prohibition",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Policy values separate organizer defaults from enforced transcript mode.",
+      "recommendation": "Add actual-setting, retention and encryption checks.",
+      "disposition": "applied",
+      "source_id": "ms700-copilot",
+      "resolution": "Add actual-setting, retention and encryption checks."
+    },
+    {
+      "id": "ms700-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Resource account license alone does not fund outbound calls",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "On-behalf-of calls and callbacks need current route-specific entitlements.",
+      "recommendation": "Add funding and carrier checks distinct from ordinary user calling.",
+      "disposition": "applied",
+      "source_id": "ms700-voice-license",
+      "resolution": "Add funding and carrier checks distinct from ordinary user calling."
+    },
+    {
+      "id": "ms700-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Callback must finish inside the queue timeline",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Eligibility, music, caller action and representative readiness all take time.",
+      "recommendation": "Add synthetic timeout and margin example.",
+      "disposition": "applied",
+      "source_id": "ms700-queue",
+      "resolution": "Add synthetic timeout and margin example."
+    },
+    {
+      "id": "ms700-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Telemetry scope and retained detail differ",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current views distinguish session issues, license retention and event presenter scope.",
+      "recommendation": "Add denominators, processing delay and evidence limitations.",
+      "disposition": "applied",
+      "source_id": "ms-700-monitoring",
+      "resolution": "Add denominators, processing delay and evidence limitations."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ms700-connectors-blog",
+      "decision": "accepted-bounded",
+      "author": "Microsoft 365 Developer team",
+      "published_on": "2024-07-03",
+      "notes": "Controlling April 14, 2026 update read; current retirement supersedes earlier dates. Private-channel discrepancy kept open."
+    },
+    {
+      "source_id": "ms700-july-blog",
+      "decision": "accepted-bounded",
+      "author": "KerryPerezHeffernan",
+      "published_on": "2026-07-31",
+      "notes": "Main article read; selected app-request and Windows room migration exercises. No comments, demos or fleet-wide deployment assumptions."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Ten synthetic capacity, audience, timeline, denominator and catalog assertions; no service or executable diagnostic run."
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "Private-channel Workflows availability conflicts in official sources; no broad implementation promise or live delivery validation.",
+    "No tenant, app, policy, VDI plugin, room migration, media, flow, event, network test or PSTN lab executed.",
+    "Four paid catalog pages blocked; historic metadata qualified. Paid lessons/questions, videos, interactive practice, originality and complete current course coverage unreviewed.",
+    "July blog main article and updated connector announcement read; comments/demos not used as authority. Legacy Rooms article is not treated as a full new passwordless migration procedure.",
+    "Published October objective text remains future-dated; July accepted snapshots unchanged.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "capacity_audience_callback_telemetry_and_catalog_assertions": 10
+  }
+}

@@ -60,6 +60,12 @@
 
 Notable public changes are recorded here. The project uses semantic version tags for release checkpoints; guide freshness and exam status remain independently dated in the exam catalog and each guide.
 
+## 2026-09-28 — MS-700 deep review
+
+- Map 97 upcoming objectives while preserving the current baseline; refresh Teams administration, events, voice, app migration and diagnostics.
+- Add five worked examples, two labs and eight answered checks; qualify older paid resources and retain the private-channel Workflows source conflict.
+- Add actionable first-party blog readings and dated follow-ups; record source access and local validation evidence.
+
 ## Unreleased
 
 - Add a recurring, review-gated official-source freshness workflow and its first GitHub/Microsoft/Azure scan; queue 23 first-party candidates, correct three GH-300 lifecycle/capability statements, synchronize AB-650's current display name, and recognize a redirected Copilot Studio source's canonical harness overview.

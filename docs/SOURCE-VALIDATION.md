@@ -677,6 +677,8 @@ The September 5 repair adds source-aware alert paths for compliance drift, enrol
 
 ## MS-700 coverage record
 
+The September 28 [deep review](research/2026-09-28-ms-700-deep-review.md) maps 97 detailed objectives. Whole guide read; all 97 published October objectives in twelve groups mapped while July accepted baseline remains unchanged. Add five worked examples, two labs (ten total), eight answered checks (44 total), two bounded blog readings and five follow-ups. Refresh network/QoS, policy/federation/app access, device/VDI, events/Copilot, voice funding/callback and telemetry. Private-channel Workflows support conflict remains open. Ten offline checks passed; no tenant, network, media, flow or PSTN execution; human review pending. Current guide citations: 45 registered, 41 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Configure and manage a Teams environment | Section 1, all integrated scenarios, and Labs 1–4 |

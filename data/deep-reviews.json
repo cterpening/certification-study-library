@@ -5,6 +5,26 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "MS-700",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "a3d345a7ffc6c4bb28e6cea565104871a696082f7ead0d2c3d1ac28cda4dbb71",
+      "objective_count": 97,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-28-ms-700-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-ms-700-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Private-channel Workflows availability conflicts in official sources; no broad implementation promise or live delivery validation.",
+        "No tenant, app, policy, VDI plugin, room migration, media, flow, event, network test or PSTN lab executed.",
+        "Four paid catalog pages blocked; historic metadata qualified. Paid lessons/questions, videos, interactive practice, originality and complete current course coverage unreviewed.",
+        "July blog main article and updated connector announcement read; comments/demos not used as authority. Legacy Rooms article is not treated as a full new passwordless migration procedure.",
+        "Published October objective text remains future-dated; July accepted snapshots unchanged.",
+        "Same-context AI research and repair; independent human review pending."
+      ]
+    },
+    {
       "exam_code": "SC-300",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "af6e129174755766e9a02877f86135081b85a497909d5c72e7ad55b783eb5f41",

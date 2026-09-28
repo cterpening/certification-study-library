@@ -6,18 +6,19 @@ Recorded deep reviews in this program, separate from historical source validatio
 
 50 guides; 34 have review work.
 
-Next batch: AZ-800, MS-102, MS-700.
+Next batch: MS-721, AZ-800, MS-102.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
+| [MS-721](../guides/MS-721-collaboration-communications-systems-engineer.md) | pending | Pending | not-recorded |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [MS-102](../guides/MS-102-microsoft-365-administrator.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
-| [MS-700](../guides/MS-700-managing-microsoft-teams.md) | pending | Pending | not-recorded |
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
+| [MS-700](../guides/MS-700-managing-microsoft-teams.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
 | [SC-200](../guides/SC-200-microsoft-security-operations-analyst.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | reviewed | 2026-09-27 | offline-only |
 | [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
@@ -57,7 +58,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [MB-500](../guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md) | pending | Pending | not-recorded |
 | [MB-800](../guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md) | pending | Pending | not-recorded |
 | [MB-820](../guides/MB-820-microsoft-dynamics-365-business-central-developer.md) | pending | Pending | not-recorded |
-| [MS-721](../guides/MS-721-collaboration-communications-systems-engineer.md) | pending | Pending | not-recorded |
 | [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | pending | Pending | not-recorded |
 | [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | pending | Pending | not-recorded |
 | [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | reviewed | 2026-09-27 | offline-only |

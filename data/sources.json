@@ -3,6 +3,342 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ms700-qos",
+      "title": "Quality of Service in Teams",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Targeted implementation, source-port table, browser/Mac/mobile exceptions and validation sections read. No packet capture or network configuration executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-policy",
+      "title": "Assign Teams policies to users and groups",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Direct/group/global precedence, nested/hidden-group limits and processing sections read; no policy assigned. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-external",
+      "title": "External access in Teams",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-external-access",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Granular-domain behavior, subdomains, anonymous meeting boundary and external-user controls reviewed. No federation changed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-shared",
+      "title": "Shared channel external collaboration",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-channels",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Membership/site/guest-toggle, retention and file-level Conditional Access sections reviewed. No cross-tenant configuration executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-rooms",
+      "title": "Teams Rooms authentication",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-authentication",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Full legacy Windows/ROPC authentication article read. Not assumed complete for newer passwordless deployments; no migration procedure verified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-vdi",
+      "title": "Teams in virtualized desktop environments",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/new-teams-vdi-requirements-deploy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Windows WebRTC support/availability cohort, prerequisites, optimization/fallback and selected limitations read. No endpoint or plugin tested. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-app-centric",
+      "title": "App centric management",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/app-centric-management",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Migration, audience choices, nested groups/guest limits, No one mapping and org defaults reviewed. App availability differs from Teams group-policy inheritance. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-app-migration",
+      "title": "App centric migration practices",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/pre-and-post-migration",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Before/after export, permission preservation and comparison guidance read. Sample scripts not executed or copied as tested commands. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-apps",
+      "title": "Manage Teams apps",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-apps",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: App administration, deprecated policy and unified-management boundaries read; no app, store or consent modified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-events",
+      "title": "Plan Teams events",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Unified Events, audience optimization/policy relationship, capacity/license and monitoring sections reviewed. No event or capacity pack provisioned. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-live-retirement",
+      "title": "Teams live events retirement",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Retirement notice and preexisting-event grace period read; historic event setup instructions not treated as new deployment guidance. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-copilot",
+      "title": "Manage Copilot in Teams meetings",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Full settings/transcription table read, including default versus enforced values, retention and encryption/cloud limits. No AI session executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-voice-license",
+      "title": "Voice application prerequisites and licensing",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Full prerequisite/funding sections read; Calling Plan, Operator Connect and Direct Routing treated separately. No PSTN charges or calls. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-queue",
+      "title": "Configure call queues",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Targeted resource accounts, routing, callback timing/eligibility, overflow/timeout and no-agent sections reviewed. Synthetic timeline only. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-network-planner",
+      "title": "Teams Network planner",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Full planning/configuration article read; model assumptions and personas distinguished from measured peak load. Tool not executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-advisor",
+      "title": "Teams Advisor",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/use-advisor-teams-roll-out",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Deployment-team, workload plans, permissions/license and government-cloud sections read. No plan created. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-release",
+      "title": "Teams client release notes",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-update",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Client update process article read; gradual rollout does not prove installed build or feature presence. Not a complete monthly feature changelog. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-webhooks",
+      "title": "Teams webhooks and connectors",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Ownership/co-owner, card format and known-limit sections read. Private-channel Flow bot statement conflicts with updated first-party announcement; kept open. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-roles",
+      "title": "Teams administrator roles",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/using-admin-roles",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Full Teams role matrix read; role-specific data exclusions and resource-account permission prerequisites distinguished. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-compliance",
+      "title": "Security and compliance in Teams",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Targeted security, distributed storage, auditing, compliance and Conditional Access dependency sections read. Old Wiki references not adopted. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-connectors-blog",
+      "title": "Office 365 connectors retirement updates",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Main article and controlling April 14 update read; superseded dates separated. Comments not relied on; private-channel support conflict retained. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-july-blog",
+      "title": "What is new in Teams July 2026",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: July 31 main article by KerryPerezHeffernan extracted from public page data and read. Selected app-request/Windows room tasks; demos/comments not used as implementation proof. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-device-code",
+      "title": "Restrict Teams device code flow",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Policy flow, persistent account exception, Device Registration Service exclusion and passwordless recovery sections read; no access policy changed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms700-network-tool",
+      "title": "Teams Network Assessment Tool download",
+      "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "September 28 MS-700 deep review: Public 1.9.0.0/March 5 listing and limitations read. Installer not downloaded, installed or executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "sc300-baseline-scopes",
       "title": "Conditional Access baseline-scope enforcement",
       "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
@@ -6124,9 +6460,10 @@
         "AI-901",
         "AB-100",
         "MD-102",
-        "MS-102"
+        "MS-102",
+        "MS-700"
       ],
-      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor",
@@ -6153,9 +6490,10 @@
         "AI-300",
         "SC-500",
         "MD-102",
-        "MS-102"
+        "MS-102",
+        "MS-700"
       ],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -21482,9 +21820,10 @@
         "AB-730",
         "AB-731",
         "MD-102",
-        "MS-102"
+        "MS-102",
+        "MS-700"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -22754,12 +23093,13 @@
       "authority_class": 3,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AB-650",
-        "MD-102"
+        "MD-102",
+        "MS-700"
       ],
-      "notes": "Selective Microsoft identity, security and architecture foundation; no exact AB-650 course was confirmed. September 27 MD-102 deep review: Channel shell only; no exact current MD-102 course established. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+      "notes": "Selective Microsoft identity, security and architecture foundation; no exact AB-650 course was confirmed. September 27 MD-102 deep review: Channel shell only; no exact current MD-102 course established. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; MS-700 playlist content/current completeness unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md-102-blueprint",
@@ -23133,7 +23473,18 @@
       "id": "ms-700-path-meetings", "title": "Manage meetings and calling in Teams", "url": "https://learn.microsoft.com/en-us/training/paths/manage-meetings-calling-microsoft-teams/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Listed duration 9 hours 3 minutes."
     },
     {
-      "id": "ms-700-pluralsight", "title": "Managing Microsoft Teams MS-700 path", "url": "https://www.pluralsight.com/paths/managing-microsoft-teams", "publisher": "Pluralsight", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Five courses and 19 hours listed; most recent core refresh 2024 and voice/device courses 2022."
+      "id": "ms-700-pluralsight",
+      "title": "Managing Microsoft Teams MS-700 path",
+      "url": "https://www.pluralsight.com/paths/managing-microsoft-teams",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "Five public course listings total 18h58 (path rounds to 19h); 2022/2024 dates require current-doc supplements. No paid lessons reviewed. September 28 MS-700 deep review: Five public course listings total 18h58 (path rounds to 19h); 2022/2024 dates require current-doc supplements. No paid lessons reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-700-oreilly-book", "title": "MS-700 Managing Microsoft Teams Exam Guide Third Edition", "url": "https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/", "publisher": "Packt / O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "August 2024, 502 pages and 10 hours 41 minutes listed; supplement July 2026."
@@ -23145,7 +23496,18 @@
       "id": "ms-700-udemy-course", "title": "MS-700 Managing Microsoft Teams Training and Lab Simulations", "url": "https://www.udemy.com/course/microsoft-teams-examlabpractice/", "publisher": "Udemy", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "John Christopher, updated February 2026; public page did not expose a reliable runtime in search results."
     },
     {
-      "id": "ms-700-measureup", "title": "MS-700 Managing Microsoft Teams practice test", "url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "155 questions listed; last updated September 2025, so reconcile July 2026 changes."
+      "id": "ms-700-measureup",
+      "title": "MS-700 Managing Microsoft Teams practice test",
+      "url": "https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html",
+      "publisher": "MeasureUp",
+      "authority_class": 3,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "notes": "Public 155 questions (69/36/31/19), September 2025 update. Paid questions and July/October completeness unreviewed; vendor question-count/duration claims not adopted. September 28 MS-700 deep review: Public 155 questions (69/36/31/19), September 2025 update. Paid questions and July/October completeness unreviewed; vendor question-count/duration claims not adopted. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-700-udemy-practice", "title": "MS-700 Practice Tests Teams Administrator 2026", "url": "https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/", "publisher": "Udemy", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Dean Ellerby, 360 original questions, Microsoft Learn references and explicit no-dumps statement; updated August 2026."
