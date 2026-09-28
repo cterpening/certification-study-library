@@ -246,6 +246,19 @@ announcements for material that is not registered yet. Its findings are recorded
 in `data/source-freshness.json`; unreviewed URLs enter
 `data/source-candidates.json` rather than being silently promoted.
 
+For Dynamics 365, Power Platform and Dataverse, include the
+[AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap)
+alongside current product documentation and release notes. Microsoft's
+[August 25 transition announcement](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/)
+says new roadmap disclosure moves there from September 2026, with Release Planner
+retirement planned by November 15. Older Learn release plans remain historical
+references. Record product, feature ID, observed status/date and source URL;
+verify availability and prerequisites in product documentation before changing a
+guide. A missing roadmap card alone does not prove launch, cancellation or removal.
+CSV/RSS can aid discovery, but roadmap-feed ingestion is not implemented by this
+repository's monitor. Keep feature research separate from credential discovery,
+and use dated maintenance events to revisit rollout claims and support deadlines.
+
 Prepare a recurring risk-ordered batch with:
 
 ```bash

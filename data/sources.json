@@ -3,6 +3,440 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mb330-units",
+      "title": "Warehouse unit and stocking policies",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-lifecycle",
+      "title": "Product lifecycle states",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-dimensions",
+      "title": "Product dimensions and versions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-mobile-support",
+      "title": "Warehouse mobile support policy",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info-v3",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-plans",
+      "title": "Master plans and planning parameters",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-plans",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-positive",
+      "title": "Dynamic positive days",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/dynamic-positive-days",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-negative",
+      "title": "Planning Optimization delay tolerance",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-migration",
+      "title": "Migration to Planning Optimization",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/new-master-planning-engine",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-fit",
+      "title": "Planning Optimization fit analysis",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Targeted fit-analysis scope, limitations and firming behavior reviewed; no legal-entity analysis executed. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-ctp-change",
+      "title": "Optimize confirmed dates for CTP line changes",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Prerequisites and behavior reviewed. Example contains inconsistent dates; do not reproduce those dates. Recheck scheduled. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-ctp-keep",
+      "title": "Keep supply for confirmed demand",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-blocking",
+      "title": "Inventory blocking",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-quality",
+      "title": "Quality orders",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-orders",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-quality-wms",
+      "title": "Quality management for warehouse processes",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Targeted quality setup, sampling, work, registration and Full blocking limitations read; not every example in this long article was independently exercised. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-quarantine",
+      "title": "Quarantine orders",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-reservation",
+      "title": "Flexible warehouse-level dimension reservation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Targeted hierarchy/batch/license-plate and location-directive behavior read; no warehouse work executed. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-mobile-auth",
+      "title": "Warehouse mobile user authentication FAQ",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-mobile-install",
+      "title": "Install the Warehouse Management mobile app",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Installation, authentication and connection-distribution sections read; no platform support assumption based solely on historical minimum OS versions. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-mobile-release",
+      "title": "Warehouse Management mobile release notes",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-close",
+      "title": "Inventory close",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-cost-faq",
+      "title": "Inventory costing questions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-costing-faq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Targeted periodic/perpetual valuation, recalculation/revaluation and posting sections reviewed; no exhaustive FAQ or accounting implementation review claimed. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-consignment",
+      "title": "Consignment inventory",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-landed",
+      "title": "Landed cost overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-transit",
+      "title": "Goods-in-transit processing",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/in-transit-processing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-overunder",
+      "title": "Landed-cost over and under transactions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/over-under-transactions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-bundles",
+      "title": "Set up product bundles",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/product-bundles-setup",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-asset-orders",
+      "title": "Assets and work orders",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-asset-plans",
+      "title": "Schedule maintenance plans",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-freight",
+      "title": "Reconcile freight in Transportation Management",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/reconcile-freight-transportation-management",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-erp-blog",
+      "title": "New Dynamics 365 agentic ERP capabilities",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Sameer Verma, September 23, 2026. Relevant SCM/roadmap sections read. Accept a paper supplier-delay impact/approval exercise with preview/future boundaries; no demonstration or deployment tested. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb330-mobile-blog",
+      "title": "Warehouse mobile version 2.1.23 interaction improvements",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/02/16/optimizing-warehouse-management-unveiling-the-power-of-d365-warehouse-mobile-app-version-2-1-23/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 MB-330 deep review: Michael Fruergaard Pontoppidan and Denis Conway, February 16, 2024. Historical article read for usability/handoff exercise only; current authentication/build/support documentation supersedes old 2.1.23/device-code guidance. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ab730-cowork-customize",
       "title": "Customize Cowork skills and sharing",
       "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize",
@@ -21926,7 +22360,18 @@
       "id": "mb-330-path-planning", "title": "Master planning in Dynamics 365 Supply Chain Management", "url": "https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-330"], "notes": "Seven hours 20 minutes across three modules on setup, Planning Optimization and DDMRP; select the published exam objectives."
     },
     {
-      "id": "mb-330-course", "title": "MB-330T00-A Conceptualize Supply Chain Management", "url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-330"], "notes": "Five-day instructor-led course; syllabus contains additional manufacturing and adjacent paths."
+      "id": "mb-330-course",
+      "title": "Conceptualize Supply Chain Management in Microsoft Dynamics 365",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 public course page: MB-330T00-A, five days, English. Broader module inventory may include adjacent content; map to exam objectives. September 27 MB-330 deep review: Public course metadata checked; no instructor delivery or course labs executed. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb-330-labs", "title": "MB-330 Supply Chain Management labs", "url": "https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management", "publisher": "MicrosoftLearning", "authority_class": 2, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-330"], "notes": "MIT-licensed public course case studies covering all five blueprint domains; UI and fast-moving features require revalidation."
@@ -21941,7 +22386,18 @@
       "id": "mb-330-udemy-wms", "title": "D365 F&O Advanced Warehouse Management Part 1", "url": "https://www.udemy.com/course/mb330-d365-fo-advance-warehouse-management-part1/", "publisher": "Udemy / D365 Studio", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-330"], "notes": "Hands-on WMS supplement updated July 2024; runtime and current mobile-app differences must be verified."
     },
     {
-      "id": "mb-330-measureup", "title": "Microsoft Practice Test MB-330", "url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-330"], "notes": "Paid diagnostic with free demo; verify published update date and exact June 2025 objective mapping before use."
+      "id": "mb-330-measureup",
+      "title": "MeasureUp MB-330 practice test",
+      "url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html",
+      "publisher": "MeasureUp",
+      "authority_class": 3,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MB-330"
+      ],
+      "notes": "September 27 public listing: 154 questions, last update March 2023; obsolete MB-300 prerequisite claim conflicts with current credential. October coverage unproven; no paid questions reviewed. September 27 MB-330 deep review: Public listing only; obsolete MB-300 prerequisite and March 2023 update qualified. No paid question content reviewed. See docs/research/2026-09-27-mb-330-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb-330-partner-skilling-hub", "title": "Microsoft Partner Skilling Hub", "url": "https://www.skilling-hub.com/en-US", "publisher": "Microsoft Partner Skilling Hub", "authority_class": 2, "source_type": "official-training", "access_model": "partner-restricted", "last_checked": "2026-09-01", "supported_exams": ["MB-330"], "notes": "Eligible-partner sign-in is required to confirm exact event start/end times, availability and prerequisites; use the five-day course pattern only as an estimate."

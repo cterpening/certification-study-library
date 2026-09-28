@@ -4,6 +4,361 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-mb330-deep-review",
+      "title": "MB-330 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MB-330"
+      ],
+      "results": [
+        {
+          "exam_code": "MB-330",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+          "baseline_sha256": "11d59cefe5d2a51e847d7f69f781b29a50a53a7e9161e90d4cd5558325970735",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "101 October 21 bullets in 17 groups mapped; June 20 accepted baseline retained. Five weights unchanged, Planning Optimization explicit, output journals no longer listed. Credential 100 minutes English/Japanese, course five days."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read and targeted current PIM, quality, costing, asset, consignment, landed cost, bundles, freight, mobile and planning documentation used to repair content. Ten offline arithmetic assertions only."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Mobile 4.1.5/4.1.6 fixes, May 2026 V3 end of support and May 2027 V4 rolling policy checked. ERP previews qualified; roadmap research updated for September-November transition. Three dated checkpoints."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide citations fetched and registered. Learn durations explicitly historical; course five-day title corrected. MeasureUp 154 March-2023 questions/stale MB-300 statement qualified; Udemy blocked, signed-in assessment/partner content unavailable."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct inspected-versus-blocked quantity, WMS quarantine/full-block support, possession/ownership, purchase/transfer GIT, worker/Entra sessions, legacy/planning-optimization days, and planned/received supply preservation. Do not repeat inconsistent official CTP dates; checkpoint and sandbox limitation visible."
+            }
+          },
+          "findings": [
+            {
+              "id": "mb330-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "October minor revisions require explicit mapping",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Live October 21 page contains 101 bullets and explicitly names Planning Optimization.",
+              "recommendation": "Map every bullet and retain June baseline for earlier appointments.",
+              "disposition": "applied",
+              "source_id": "mb-330-blueprint",
+              "resolution": "Map every bullet and retain June baseline for earlier appointments."
+            },
+            {
+              "id": "mb330-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Location boundary and order-committed reservations affect allocation",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Batch/license-plate demand reservations can constrain warehouse allocation and bypass location directives.",
+              "recommendation": "Correct hierarchy wording and add exceptions and work diagnostics.",
+              "disposition": "applied",
+              "source_id": "mb330-reservation",
+              "resolution": "Correct hierarchy wording and add exceptions and work diagnostics."
+            },
+            {
+              "id": "mb330-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Handling unit is independent of commercial price unit",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "WMS unit sequence requires inventory-unit alignment and configured conversions.",
+              "recommendation": "Add case/each quantity-value example and variant-unit verification.",
+              "disposition": "applied",
+              "source_id": "mb330-units",
+              "resolution": "Add case/each quantity-value example and variant-unit verification."
+            },
+            {
+              "id": "mb330-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Inspection sample is not the inventory hold",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Manual quality-order quantity controls blocking; automatic sampling and full-block settings differ.",
+              "recommendation": "Add 100-unit/10-unit example and explicit reservation/shipping evidence.",
+              "disposition": "applied",
+              "source_id": "mb330-blocking",
+              "resolution": "Add 100-unit/10-unit example and explicit reservation/shipping evidence."
+            },
+            {
+              "id": "mb330-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "WMS quality uses a different work and blocking flow",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "WMS-specific quality association does not support Full blocking; client registration does not create the same sampling work as mobile processing.",
+              "recommendation": "Separate WMS work from basic quality and require proof of full receipt hold.",
+              "disposition": "applied",
+              "source_id": "mb330-quality-wms",
+              "resolution": "Separate WMS work from basic quality and require proof of full receipt hold."
+            },
+            {
+              "id": "mb330-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Quarantine support differs in WMS",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "WMS-enabled quarantine processing is limited to sales returns.",
+              "recommendation": "Bound the quarantine lab and clarify finished versus ended states.",
+              "disposition": "applied",
+              "source_id": "mb330-quarantine",
+              "resolution": "Bound the quarantine lab and clarify finished versus ended states."
+            },
+            {
+              "id": "mb330-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Recalculation is not inventory settlement",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Close settles periodic-model issues to receipts; recalculation adjusts without settlement and adjustments use original posting accounts.",
+              "recommendation": "Clarify model, cutoff and reversal order.",
+              "disposition": "applied",
+              "source_id": "mb330-close",
+              "resolution": "Clarify model, cutoff and reversal order."
+            },
+            {
+              "id": "mb330-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Calendar entry does not prove work-order creation",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Both line and scheduling-dialog auto-create settings are needed; functional-location plan criteria changes remove related entries.",
+              "recommendation": "Add creation controls and schedule regeneration evidence.",
+              "disposition": "applied",
+              "source_id": "mb330-asset-plans",
+              "resolution": "Add creation controls and schedule regeneration evidence."
+            },
+            {
+              "id": "mb330-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Physical possession does not transfer ownership",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Posted ownership-change journal creates company receipt and Consignment-origin PO.",
+              "recommendation": "Trace Owner dimension, journal posting and generated PO invoice.",
+              "disposition": "applied",
+              "source_id": "mb330-consignment",
+              "resolution": "Trace Owner dimension, journal posting and generated PO invoice."
+            },
+            {
+              "id": "mb330-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Transfer voyages cannot reuse purchase GIT setup",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Transfer-order voyages require GIT disabled and post estimated costs at shipment.",
+              "recommendation": "Separate purchase/transfer workflows and add allocation example.",
+              "disposition": "applied",
+              "source_id": "mb330-landed",
+              "resolution": "Separate purchase/transfer workflows and add allocation example."
+            },
+            {
+              "id": "mb330-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Mobile authentication and worker sessions differ",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "User-based interactive option recommended; device-code no longer recommended and logoff/sign-out affect different state.",
+              "recommendation": "Add identity/handoff tests without weakening tenant security.",
+              "disposition": "applied",
+              "source_id": "mb330-mobile-auth",
+              "resolution": "Add identity/handoff tests without weakening tenant security."
+            },
+            {
+              "id": "mb330-deep-12",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Current mobile fixes warrant regression tests",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "4.1.6 fixes quantities above 20 resetting to zero; 4.1.5 fixes duplicate request submission after timeouts.",
+              "recommendation": "Add installed-build quantity and server-completion checks before retry.",
+              "disposition": "applied",
+              "source_id": "mb330-mobile-release",
+              "resolution": "Add installed-build quantity and server-completion checks before retry."
+            },
+            {
+              "id": "mb330-deep-13",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Installed and supported mobile versions differ",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info-v3",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "V3 support ended May 2026; V4 rolling 12-month rule starts May 1 2027.",
+              "recommendation": "Add dated lifecycle guidance, device inventory and follow-up.",
+              "disposition": "applied",
+              "source_id": "mb330-mobile-support",
+              "resolution": "Add dated lifecycle guidance, device inventory and follow-up."
+            },
+            {
+              "id": "mb330-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Planning Optimization always uses dynamic negative-day tolerance",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Engine-specific calculation uses replenishment/due dates plus negative days; legacy toggle has no effect.",
+              "recommendation": "Correct days wording and add day-8/day-9 worked comparison.",
+              "disposition": "applied",
+              "source_id": "mb330-negative",
+              "resolution": "Correct days wording and add day-8/day-9 worked comparison."
+            },
+            {
+              "id": "mb330-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preserved planned supply and received stock use different controls",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Feature requires supported build/flag; actual run can override plan and received stock outside positive days needs another setting.",
+              "recommendation": "Add effective-run evidence and excess/received-stock caveats.",
+              "disposition": "applied",
+              "source_id": "mb330-ctp-keep",
+              "resolution": "Add effective-run evidence and excess/received-stock caveats."
+            },
+            {
+              "id": "mb330-deep-16",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Official example dates are internally inconsistent",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The line-change CTP example has inconsistent ship/receipt date arithmetic.",
+              "recommendation": "Retain prerequisites and general behavior, omit inconsistent dates, and schedule a research recheck with sandbox limitation.",
+              "disposition": "applied",
+              "source_id": "mb330-ctp-change",
+              "resolution": "Retain prerequisites and general behavior, omit inconsistent dates, and schedule a research recheck with sandbox limitation."
+            }
+          ],
+          "notes": "Whole guide read and 101 October objectives in 17 groups individually mapped; June 20 baseline retained. Add four worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify reservation/unit, quality, asset, consignment, landed-cost, mobile and Planning Optimization behavior; qualify stale catalog claims and historical durations. Ten synthetic arithmetic assertions passed; no Dynamics environment or mobile execution. Three checkpoints and roadmap research guidance updated; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-mb-330-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 16,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-ab730-deep-review",
       "title": "AB-730 complete guide and learning-content review",
       "rubric_version": 1,

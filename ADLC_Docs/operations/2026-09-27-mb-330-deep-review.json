@@ -1,0 +1,2564 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "MB-330",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "e8b741e30fe47981595e37e1d0dfbfdaa7297e45d663c3d4629d841604d226d0",
+  "guide_after_sha256": "2301bfba2310232f7e46a5055332e96545d78b043fbd15f2b7d9b5a6b6d48529",
+  "prior_records": {
+    "exam": {
+      "code": "MB-330",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Dynamics 365 Supply Chain Management Functional Consultant",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+      "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Applied supply-chain and Dynamics 365 SCM experience across product/inventory data, procurement, sales, quality, assets, advanced warehouse/mobile execution, transportation, costing and master planning, plus the ability to trace order, inventory, work and planning states end to end."
+    },
+    "review": {
+      "id": "mb-330-2026-09-01-source-validation",
+      "exam_code": "MB-330",
+      "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mb-330-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a",
+      "objective_coverage": [
+        {
+          "objective_group": "Implement product information management",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Implement inventory and asset management",
+          "guide_sections": [
+            "Section 2",
+            "Regulated-inbound and equipment-failure scenarios",
+            "Labs 2–4"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage supply chain processes",
+          "guide_sections": [
+            "Section 3",
+            "Regulated-inbound and customer-order scenarios",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Implement warehouse management and transportation management",
+          "guide_sections": [
+            "Section 4",
+            "Regulated-inbound and customer-order scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Implement master planning",
+          "guide_sections": [
+            "Section 5",
+            "Equipment-failure scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 17,
+        "reachable": 16,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every June 20, 2025 subobjective is mapped to a product, inventory, order, quality, asset, warehouse, mobile, transport or planning object/state, configuration, evidence, failure and recovery decision. Three scenarios, eight labs and 36 original checks cover all five domains. All 17 URLs are cataloged: 16 reachable and Udemy automation-blocked; none missing or broken. The guide records the active 100-minute English/Japanese exam, free Practice Assessment, 50h07 selected official paths, five-day course, MIT course labs and explicit freshness boundaries for the older blueprint and commercial supplements."
+    },
+    "sources": [
+      {
+        "id": "mb-330-blueprint",
+        "title": "Study guide for Exam MB-330",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Authoritative five-domain blueprint: skills measured as of June 20, 2025; no future update announced."
+      },
+      {
+        "id": "mb-330-credential",
+        "title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Active intermediate credential; 100-minute English/Japanese exam, free Practice Assessment and no announced retirement."
+      },
+      {
+        "id": "mb-330-path-products",
+        "title": "Configure and manage products and inventory",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Seven hours 46 minutes across seven modules on product and inventory foundations."
+      },
+      {
+        "id": "mb-330-path-procurement",
+        "title": "Configure and manage procurement and vendors",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Thirteen hours 41 minutes across seven modules; select current blueprint objectives."
+      },
+      {
+        "id": "mb-330-path-asset-config",
+        "title": "Configure Asset Management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-asset-management-dyn365-supply-chain-mgmt/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Three hours 33 minutes across three setup modules."
+      },
+      {
+        "id": "mb-330-path-asset-work",
+        "title": "Work with Asset Management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-asset-management-dyn365-supply-chain-mgmt/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Seven hours 12 minutes across seven execution modules."
+      },
+      {
+        "id": "mb-330-path-landed",
+        "title": "Set up and work with landed cost",
+        "url": "https://learn.microsoft.com/en-us/training/paths/setup-work-landed-cost-dyn365-supply-chain-mgmt/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Two hours 53 minutes across setup and voyage-processing modules."
+      },
+      {
+        "id": "mb-330-path-warehouse",
+        "title": "Configure and work with warehouse management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Five hours 59 minutes across five modules including the Warehouse Management mobile app."
+      },
+      {
+        "id": "mb-330-path-transport",
+        "title": "Configure and work with transportation management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "One hour 43 minutes on carriers, routing, loads and freight reconciliation."
+      },
+      {
+        "id": "mb-330-path-planning",
+        "title": "Master planning in Dynamics 365 Supply Chain Management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Seven hours 20 minutes across three modules on setup, Planning Optimization and DDMRP; select the published exam objectives."
+      },
+      {
+        "id": "mb-330-course",
+        "title": "MB-330T00-A Conceptualize Supply Chain Management",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Five-day instructor-led course; syllabus contains additional manufacturing and adjacent paths."
+      },
+      {
+        "id": "mb-330-labs",
+        "title": "MB-330 Supply Chain Management labs",
+        "url": "https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "MIT-licensed public course case studies covering all five blueprint domains; UI and fast-moving features require revalidation."
+      },
+      {
+        "id": "mb-330-practice",
+        "title": "MB-330 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/practice/assessment?assessment-type=practice&assessmentId=73&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Free official readiness assessment."
+      },
+      {
+        "id": "mb-330-docs",
+        "title": "Dynamics 365 Supply Chain Management documentation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Current first-party product, inventory, procurement, sales, asset, quality, warehouse, transportation and planning reference."
+      },
+      {
+        "id": "mb-330-udemy-wms",
+        "title": "D365 F&O Advanced Warehouse Management Part 1",
+        "url": "https://www.udemy.com/course/mb330-d365-fo-advance-warehouse-management-part1/",
+        "publisher": "Udemy / D365 Studio",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Hands-on WMS supplement updated July 2024; runtime and current mobile-app differences must be verified."
+      },
+      {
+        "id": "mb-330-measureup",
+        "title": "Microsoft Practice Test MB-330",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Paid diagnostic with free demo; verify published update date and exact June 2025 objective mapping before use."
+      },
+      {
+        "id": "mb-330-partner-skilling-hub",
+        "title": "Microsoft Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-330"
+        ],
+        "notes": "Eligible-partner sign-in is required to confirm exact event start/end times, availability and prerequisites; use the five-day course pattern only as an estimate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "3ba1501d4eecfb5ae90ffd3af2eb5b8f6596241e9a74b181b88c5bc837098421",
+      "guide_sections": "1 / Model products and variants",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "68a82ff8458ead463d36290dfe93dfa85fb528eef47fc0619bf208219b0173cb",
+      "guide_sections": "1 / Model products and variants",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4bcd8de0bbdb3345fe46e2e31eaedf0f165930d239fcf290344a83c61746c308",
+      "guide_sections": "1 / Model products and variants",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "f96f9788ef70b45463b0017d5534d206a8fc69c53c222902d93538c61be70800",
+      "guide_sections": "1 / Model products and variants",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "501003768c82ba7cc8af3a2eb696c72397f4619aa1e574a685ea9fb255e56e60",
+      "guide_sections": "1 / Identity, lifecycle and planning exclusion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "3f79ef4b9c5ef76be4e340c4ad3dd3389358b08a3d17cab3481251aebd764358",
+      "guide_sections": "1 / Model products and variants",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "3162d8e97012f30567130976b47a077e6f6ce7f6c7a7823e3026bb5182a380a0",
+      "guide_sections": "1 / Configure inventory behavior; version dimension",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "1b0727b6eb91ad535a7f4256407a988315c3438e3d258a728aab7cf048a41724",
+      "guide_sections": "1 / Configure inventory behavior; cost models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "1300964ace25a21930987fdc4fc7096f1b9f79d06e67650739a781e17e632da8",
+      "guide_sections": "1 / Reservation boundary and demand exceptions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "e584b2e0e9212a14692e10e5d778d36d070a860db5b7855976ce448130eca735",
+      "guide_sections": "1 / Unit sequence and case/each example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "8c73e2c5ecca9850eef7e9a5610a050bdcb7a9c6ec7b740a397cf2bd7de59d86",
+      "guide_sections": "1 / Bar codes and GTIN; case/each example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "0aa524deab206c4a2262d4eeb91e0cc71241ea36852a637b011027a9a147732b",
+      "guide_sections": "1 / Unit sequence and case/each example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "46b011c0c7bb1364b65291d04cf8f74ce6f32b42af44156fab62623b9dbaea99",
+      "guide_sections": "1 / Default order settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "162419afe1bf6944b5bdfdf4cfe1f93c38732c3fbc2b251af78ec55a911d9614",
+      "guide_sections": "1 / Warehouse filter codes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "cd640e511ef3e11d392cd21b40d2ceaedbdb5f55234628d2c6798a63f3ff6d97",
+      "guide_sections": "1 / Manage cost and commercial price",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "6b525d71b5d681830249a36a423855650647ac45cd309f82826aa68e07d8a705",
+      "guide_sections": "1 / Manage cost and commercial price",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "8d379c2c202542996aa316fad36523bc6b39d4932c96354fc8720418550986cd",
+      "guide_sections": "1 / Manage cost and commercial price",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "8a1bbf47702d6080dd9a40322e79b408186f48bb4be13d6f5fc5bc842fb7f14f",
+      "guide_sections": "1 / Manage cost and commercial price",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "9ce30f32bf6572758ac53f0a01519f75307a62ec26362b698693ccde99ce97a0",
+      "guide_sections": "2 / Process and reconcile inventory; October journal scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "3dcfde2684d06768b3bf097a84521099f1b7e6a3d45a379137e2589ef90f35ba",
+      "guide_sections": "2 / Transfer journal/order",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "71717328fd08f2f8c281214373b975e80c94158ea57d1b8b441ab10c6ff3a684",
+      "guide_sections": "2 / Close, recalculation and model limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "abbe726a7961920a3c593207401fa9c7a03087c8871dfa79a840ef624e2cd2af",
+      "guide_sections": "2 / Manual blocking and quantity example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "376a5f2331a08012c09e4c7c703aef63871e165cc46e5a7da3068c0d5bb6d622",
+      "guide_sections": "2 / Batch disposition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "1ffd76c4b6423edb9be7498e4415d6419660ce48b45ae964121e726f442ac2da",
+      "guide_sections": "2 / ABC classification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "6d96a3edfa6a6b909e5f52bdaf8099e4c8750ffe6df95093c5a3f11fd7789b7d",
+      "guide_sections": "2 / Govern quality; nonconformance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "a65507153dfa94179752a8071ecc2ee5ff46a932d9ad6145ac0d2b4d22812d8b",
+      "guide_sections": "2 / Quality associations and event selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "d63298622b5ff7ccbf9592b9a1d8e2a25e33b1158456f29cb0c8d26626a02b2b",
+      "guide_sections": "2 / Tests, instruments and sampling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "4fac7d361ae941e8d4b711656a1358c9e2698f8ba5c21c1d033152cce04ff7b0",
+      "guide_sections": "2 / Quality validation and blocked quantity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "cde5c00af454c228c36720c7e4f3c88a09a0e907f36502a0d2ef6ebfcef3c5b3",
+      "guide_sections": "2 / Basic quarantine and WMS sales-return limitation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "ca1a09c504ccdf7a1fa24e0b454633b0315146b6dfbaf8879ad6ce9098806a78",
+      "guide_sections": "2 / Asset work orders and jobs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "92364442bd81932c67de191995b558b2f8a9a141162be90ce4f79c94a5963c32",
+      "guide_sections": "2 / Assets and asset types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "829139d0509bf15d020d033d2a00a96ebc5209fce26b5f808320a1f252dfd713",
+      "guide_sections": "2 / Scheduling and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "adbfd164eaf591131f43590b44b479dbaee333acaded0e2b18664a9dbaf1c3c8",
+      "guide_sections": "2 / Work-order settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "0ccaf2d72b3eec4ede897267c424da8039cdffbab855a775a651d83e0bfb083b",
+      "guide_sections": "2 / Preventive/reactive scheduling and auto-create",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "8a5be86bf7725dc6a84d2cf7c222a406d98b55c79c1441c987bc36083cbfe63d",
+      "guide_sections": "2 / Asset loans",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "1d4e8a2a07bb05c377f28248ef51f34b23aa1fd64f501765f568ee1e2e1366bb",
+      "guide_sections": "2 / Lifecycle models and states",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "2f5468fc5f3fdcc4d4d0185c33cec5933050d085ccffde38308f36eac0ff6dfe",
+      "guide_sections": "2 / Maintenance-plan creation and scheduling controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "35794544fd8786f163c5cd865d127bb8296a30939db858b1404b241cda787b52",
+      "guide_sections": "2 / Functional locations and schedule invalidation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "1053f0f688f7786291217d75ac23469fd0af146c910b8b6b77e80bc8d6cab145",
+      "guide_sections": "2 / Maintenance requests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "c09e64e0809cfdca04a5b3078422ca70b0d01b11a66659ab7f9a39865df674d6",
+      "guide_sections": "2 / Hours/items/expenses/counters consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "b413627daadd45de3653e36a52d20fe3b639d50b981a288a97a3bf9e3fb83ff1",
+      "guide_sections": "2 / Scheduling/capacity; Lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "69a5cf08d2c183b4ab34d3d903c76ffb9c77863fc0cb51112000d9ac0acdaf5e",
+      "guide_sections": "3 / Vendor master and procurement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "fdbdeb9c82123dbe149c6d7acc0aeee0c3745c08eec0647e7040f3b6f3e1073c",
+      "guide_sections": "3 / Requisition, RFQ and PO",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "944c379d7bd1b4c489b9b6f7b4500ce932f9e069cf85055fbae872a7ea5cd44e",
+      "guide_sections": "3 / Purchase agreements and rebates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "15250ed7513c1914624ee1097e7fb12b16aecf6acb3368fa0b6d4d946ccfd333",
+      "guide_sections": "3 / Consignment ownership change",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "3a282a43c245a44ac4c180c35c4cf263544f0c83d5434eee53253c1798b1e3e7",
+      "guide_sections": "3 / Over/under delivery and schedules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "f8a1501950c40c9aaaf4fc6b0e8abc72659aca2e53a9c2a31941b88235a2c6a4",
+      "guide_sections": "3 / Procurement categories, charges and policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "b17eaaac47f159e5a7d2dfefb11bbccc9ce651e79c9a0ec17fe75274401c8c6e",
+      "guide_sections": "3 / Vendor collaboration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "d21f1341477d60fe963fbc51dfad3d7e76b9ff6ba84d1e3840ea70a4495def4a",
+      "guide_sections": "3 / Vendor returns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "61cb7015c5a53c9985abd0f0213f7a3135684464a0796c65d0a69d843eda83f0",
+      "guide_sections": "3 / Registration and physical receipt",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 10,
+      "objective_sha256": "a4adde16a499b763df6eb8c26f12664c24fb743c99b06161e29fc6e19492ea10",
+      "guide_sections": "3 / Workflow/change management",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "1a1d75e54968f0b6ba0ea643b060bc4d4bb2447ea6625b627d15988a9924edfa",
+      "guide_sections": "3 / Landed-cost parameters and statuses",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "eb7038558168a328a30cc0923b20a9a713e51363c8c55fd429f7fc9f7b15eb3a",
+      "guide_sections": "3 / Purchase voyages versus transfer/GIT restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "4910424639136372b67700d50e6424cd5933a3e9af1aa79acc116db3bdc23511",
+      "guide_sections": "3 / Estimation, tracking, tolerance and journey setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "26a558cf65c8c741078a4134bae31cc65b67de547306cee94d3ccb137fb7a666",
+      "guide_sections": "3 / Cost types, auto costs and allocation example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "72944bc1e1437fbdc9c496eff26428e903c4c95978fab639a8b4775898b53e45",
+      "guide_sections": "3 / Voyage/container/leg and cost evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "cda2ced20cc4a853176d87f227ecd429788c0dfe1c05028876e9e0024799a495",
+      "guide_sections": "3 / Customer master",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "ff6586857b7eb1f91759e1dfd2a74f0d6926665eb97751d7ebb6f71480473ef7",
+      "guide_sections": "3 / Sales agreements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "8073a43d12cbcf88c38cb60e701ffd05074cd6fc9297472223e49dadb20d296a",
+      "guide_sections": "3 / Quotation/order/reservation/return",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "ffd6165dff112aecbfdc9e53b9aebf916cef509c11c3dd5cd3899ecdd4f126ad",
+      "guide_sections": "3 / Sales groups and commissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "9d68c27d26746539d7c3519a2dcafa16ce4b8b0222debcb71de4bd292506480d",
+      "guide_sections": "3 / Intercompany dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "3e564de4f6287dc15365c6d9b6f1fbc411ead77839d10539e81d67597f66d994",
+      "guide_sections": "3 / Customer rebates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "48f5acaa7baf54aaf0569a8e8bc9c4fddae9fa976f7b8ff2591e51cf64422a1a",
+      "guide_sections": "3 / Delivery schedules and ATP/CTP; 5 / CTP prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "b63f01a13e19e33c929532a5effdd75fe417f751736afbe60d1cafb99f0eb5ce",
+      "guide_sections": "3 / Bundle documents/components and requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "14080c5f1b78a8d408e1f744858106c8b7200aeb80aed9cdae18c21c5337e5c5",
+      "guide_sections": "4 / Warehouse layout stack",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "5124fe6c81bfd082f75d0a56c4a362d282ca647d19a2c1b5218625e76ae18328",
+      "guide_sections": "4 / Work policies and breaks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "2c68452237ad242a53d6815c3dde79f84e9b9a052315958310e86454fd394a98",
+      "guide_sections": "4 / Location directives; 1 / Reservation exception",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "a7f609669aa0e1489a758b42611b1bfa0f1dd41bd25e1410ff5b967014144e06",
+      "guide_sections": "4 / Wave/load/work templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "ad4cc53d61e49beba7d699f9d57b0b4cd711a55dc1e2e488822d0ec55a3a7470",
+      "guide_sections": "4 / Product/wave/GS1/license-plate labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "bf0d5031e6e4170b06ecb01a7901591262ea11a02241d171340f2d870c538206",
+      "guide_sections": "4 / Packing dimensions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "26e1b51cdac1f514d4bf2b935d55c9f0fdfba8b8d08c4d91f967b06cb8d3c4e5",
+      "guide_sections": "4 / Inbound flow; 2 / WMS quality work",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "63575e99cd47cfa3c9c2e9d7bd5ed1ecd75b4f9ee68a94a42228e9b4ee0f41f8",
+      "guide_sections": "4 / Outbound flow; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 9,
+      "objective_sha256": "b61992b8c794a8e1d4d0a970b62f7136d9c9e03067d6bc063a4fce4150598950",
+      "guide_sections": "4 / Inventory status; 2 / Blocking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "c13c088cfe37a085819da409f23489a83700ed9eb0cb1280b03c2fdfc6e71476",
+      "guide_sections": "4 / Replenishment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "892a671daa8819c7f5a7f1d7873f35b3438d67956ec3a0e76088dfc890ebb53d",
+      "guide_sections": "4 / Load/shipment planning; Scenario 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "b8cbe291855b7cfc8d5fdf9df90c5c85f0fbb67d6ab3390905e2b6ec82ed1da1",
+      "guide_sections": "4 / Work/location stack and movements; Lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "3e641a4897c65b51ead48371cd3426a763e3604178f86d8b21c919cf08127788",
+      "guide_sections": "4 / Cycle counting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "5473d1283f4216cb61066c879691fd477eecc30f4df1aaae6c08e1fb9592b759",
+      "guide_sections": "4 / Mobile execution; Labs 6 and 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "99b9fad0010e1156b94fa4d2848ac4b996605a56535169970b1c8585a4a091a4",
+      "guide_sections": "4 / Containerization and packaging",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "c8aef00f2922191ae61e7aa79488ef57db334d3c22e81937bf3bd1ce3edc6b87",
+      "guide_sections": "4 / Cross-docking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "f48054b917c760396c9f6edc9e5bb5f0fb0b86a56cffbd7fc6563f54ad26ea46",
+      "guide_sections": "4 / Carriers/groups/services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "46b447d9f3af08f29616b14ab44738d606154abcb3e525994497ac17ae2e0710",
+      "guide_sections": "4 / Load/shipment planning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "3dfdbeb93aefa7d7cbc34f730f58bc83eaf70433593f9ffb523118aabff5bc04",
+      "guide_sections": "4 / Freight-bill generation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "010b3747b6ee6d6ed288c2e933513a9e3ed2252d07bd453043b3673cec29303c",
+      "guide_sections": "4 / Route plans/guides",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "9403be7f2dccc9ce77053402d5f98f4e23f439094c69ea791e60422402a51b69",
+      "guide_sections": "4 / Route/rate engines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "e9804899ad543dbf8a334c301aebe6aeda6c8ba92198d4bb9034a0c778751eeb",
+      "guide_sections": "4 / Dock appointments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "fcf1ecb3e85cbf6095301bc38cfc60933547cf6bdde128740f0d395ff1834136",
+      "guide_sections": "4 / Freight matching, reasons and posting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "da6da84e75b3283c4f73b7d8e033ac8359691a0c3ece7f61a62c5de0a59ecfa3",
+      "guide_sections": "4 / Mobile menus/items/display",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "dccefd21941c558c093c798c008ac7f6fa7df319c936a56e87b4d647d8562388",
+      "guide_sections": "4 / Mobile detours",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "3519ef8ad4e6535848ed26674867c15d6b204bda1d4d3e42df9e5598fc942aec",
+      "guide_sections": "4 / Installation/authentication/build/support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "bc6c7de09731a2dfd4d26934539497fc1e3a2cdfcd648b329fe65dc658592349",
+      "guide_sections": "4 / Warehouse workers, identity and handoff",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "b32336d88611d1af01a966e78316fcd419a8ed8d9cbc5e78a6e7e301c3769b2b",
+      "guide_sections": "5 / Coverage groups and item overrides",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "7880458cbc64a82cf85fd3efacaf33ca6754be48fed8c8d5a59b769856f66810",
+      "guide_sections": "5 / Master plans and effective overrides",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "b506e947f998d56e9b644f14b536a03e62812485e53458ee39b9d89e1228731f",
+      "guide_sections": "5 / Engine-specific days and delay example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "a98e2ab8f327bd5796bee3e5086568a14370940858529fa8b9a52dd844727d46",
+      "guide_sections": "5 / Messages/delay/fences",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "b8e76aa5c5b6a91af43584a955faee0532bc01e8a84fcbf9bd80e3049b6b36ac",
+      "guide_sections": "5 / Period templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "8b070e3b52f3cee20cd9b91a910fda3352bac2b36deb9f0e5e5b1a7b12dd36fe",
+      "guide_sections": "5 / Planning Optimization migration, fit and run evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "fc2ed1cef3574af5de908a7e8ae45fb8103f34ce528347ddbbcfbbf62f750694",
+      "guide_sections": "5 / Planned purchase/transfer orders and firming",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "f2935c09c4a1d47d7d032b5e8e8f38b9b6bfef5d5f0554d9289864ce49822bfa",
+      "guide_sections": "5 / Supply Schedule and pegging",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "945f674a8963386647cd109d670d2eea3253a27f26591122d70f04ced205aa34",
+      "guide_sections": "5 / Safety margins",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "54a81b783aa8f496f06641b8bd0a84ed416718e409590e7ebada6da546c8de6a",
+      "guide_sections": "5 / Safety-stock journals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MB-330"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MB-330",
+        "title": "Microsoft Dynamics 365 Supply Chain Management Functional Consultant",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+        "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+        "snapshot_path": "data\\objective-snapshots\\mb-330-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mb-330-official-status.json",
+        "previous_sha256": "d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a",
+        "current_sha256": "5878ae23ebaad7d65dc7e9d36f2e305fdfee592a5975c15eb9673ad3ae1f9e65",
+        "previous_status_sha256": "910301c9a24fcd3f98374711ce27df638cd9fa325b7db206043c35d425c71048",
+        "current_status_sha256": "4a10a1213107b8b2d03da3e952b2791d172d9e97c4f56de314a5b16424fc466c",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 21, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 48,
+    "reachable": 47,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mb-330-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+      "checked_at": "2026-09-28T02:35:01.169521+00:00",
+      "health": {
+        "id": "mb-330-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MB-330: Microsoft Dynamics 365 Supply Chain Management Functional Consultant",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "1976970dfa9fa15e063c46a666a15c783946834ece1f4d6fc2e82bf03bdd1bf5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+      "sha256": "7071630be96489ede9ab9cf3e4c342a38a88292096751a7c9fc4d506e3ba9b82",
+      "text_characters": 11635
+    },
+    {
+      "id": "mb-330-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+      "checked_at": "2026-09-28T02:35:01.170180+00:00",
+      "health": {
+        "id": "mb-330-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "50ede97f13246267fe4a045c99ca6e70f926f87dbe212ed6ad915da8c1f13eae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+      "sha256": "3a4f0a621243d164be05a801d95567e33fe5f225a36e111a93a79eda516eb06f",
+      "text_characters": 4838
+    },
+    {
+      "id": "mb-330-path-products",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/",
+      "checked_at": "2026-09-28T02:35:01.170518+00:00",
+      "health": {
+        "id": "mb-330-path-products",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/",
+        "content_type": "text/html",
+        "page_title": "Configure and manage products and inventory in Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/",
+        "duration_signals": [],
+        "signal_fingerprint": "d387ff4ecb5a9d29c752a575edfb5c36e648f60f90275aa46387f00668be2c78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/",
+      "sha256": "f63e014f60f779bdc43ec24776252b82d145f07505df847f6dc773eae039e210",
+      "text_characters": 3784
+    },
+    {
+      "id": "mb-330-path-procurement",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/",
+      "checked_at": "2026-09-28T02:35:01.532715+00:00",
+      "health": {
+        "id": "mb-330-path-procurement",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/",
+        "content_type": "text/html",
+        "page_title": "Configure and manage procurement and vendors in Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/",
+        "duration_signals": [],
+        "signal_fingerprint": "c28c1d4a043d292de7ad640bbf73b3c0140e6427e3d58d2edece0a1c4cc63bac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/",
+      "sha256": "1a80f27fd381746b881f33e878a771de368f80a53aceca64ece70c79e838c1f6",
+      "text_characters": 3435
+    },
+    {
+      "id": "mb-330-path-asset-config",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-asset-management-dyn365-supply-chain-mgmt/",
+      "checked_at": "2026-09-28T02:35:01.561823+00:00",
+      "health": {
+        "id": "mb-330-path-asset-config",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-asset-management-dyn365-supply-chain-mgmt/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-asset-management-dyn365-supply-chain-mgmt/",
+        "content_type": "text/html",
+        "page_title": "Configure Asset Management for Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-asset-management-dyn365-supply-chain-mgmt/",
+        "duration_signals": [],
+        "signal_fingerprint": "00d6fc0a74dcc56d99df0d4c798202563243245c26341ff666b9506c985f01e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-asset-management-dyn365-supply-chain-mgmt/",
+      "sha256": "b62d37f654163ff80a9f556b4f231ca53592d9b7bbf8b423630074bd78527583",
+      "text_characters": 1931
+    },
+    {
+      "id": "mb-330-path-asset-work",
+      "url": "https://learn.microsoft.com/en-us/training/paths/work-asset-management-dyn365-supply-chain-mgmt/",
+      "checked_at": "2026-09-28T02:35:01.562021+00:00",
+      "health": {
+        "id": "mb-330-path-asset-work",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-asset-management-dyn365-supply-chain-mgmt/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/work-asset-management-dyn365-supply-chain-mgmt/",
+        "content_type": "text/html",
+        "page_title": "Work with Asset Management for Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/work-asset-management-dyn365-supply-chain-mgmt/",
+        "duration_signals": [],
+        "signal_fingerprint": "1080930bdefd76c7d466b797f9febd48f77690469dbc9f4b6428a649f61a4358",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/work-asset-management-dyn365-supply-chain-mgmt/",
+      "sha256": "6659e6fb41e2db6917c5790ca71301a198cadf9f847780be8958e393809d0795",
+      "text_characters": 3820
+    },
+    {
+      "id": "mb-330-path-landed",
+      "url": "https://learn.microsoft.com/en-us/training/paths/setup-work-landed-cost-dyn365-supply-chain-mgmt/",
+      "checked_at": "2026-09-28T02:35:01.783614+00:00",
+      "health": {
+        "id": "mb-330-path-landed",
+        "url": "https://learn.microsoft.com/en-us/training/paths/setup-work-landed-cost-dyn365-supply-chain-mgmt/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/setup-work-landed-cost-dyn365-supply-chain-mgmt/",
+        "content_type": "text/html",
+        "page_title": "Set up and work with landed cost in Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/setup-work-landed-cost-dyn365-supply-chain-mgmt/",
+        "duration_signals": [],
+        "signal_fingerprint": "4de16cf6b9a819d24eded69e8b5b42e3653257b3174cbe379cc07ecdaf92ef3e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/setup-work-landed-cost-dyn365-supply-chain-mgmt/",
+      "sha256": "526cd9677240b1b1fe971dd311314b7f8f041f4aca18de0b72481afe52f97e32",
+      "text_characters": 1809
+    },
+    {
+      "id": "mb-330-path-warehouse",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/",
+      "checked_at": "2026-09-28T02:35:01.806719+00:00",
+      "health": {
+        "id": "mb-330-path-warehouse",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/",
+        "content_type": "text/html",
+        "page_title": "Configure and work with warehouse management in Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/",
+        "duration_signals": [],
+        "signal_fingerprint": "9aeeeb61bf807ea3d64d0656efc76df09e00d1405a3457184a2c51da47177e39",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-work-warehouse-management-dyn365-supply-chain-mgmt/",
+      "sha256": "7ce8ef34687a659baa19b2313d0b76ff4259a8652f715e1a9a616db69741c117",
+      "text_characters": 2716
+    },
+    {
+      "id": "mb-330-path-transport",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/",
+      "checked_at": "2026-09-28T02:35:01.824811+00:00",
+      "health": {
+        "id": "mb-330-path-transport",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/",
+        "checked_at": "2026-09-28T02:35:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/",
+        "content_type": "text/html",
+        "page_title": "Configure and work with transportation management in Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/",
+        "duration_signals": [],
+        "signal_fingerprint": "6bb6b334b66c3a791a1656244e6e8ad811412e759225088cc3d59dba3d3b04f7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-work-transportation-mgmt-dyn365-supply-chain-mgmt/",
+      "sha256": "209f23e5d2c358ee445a3936cbbbc70cb4fe1e3910471f35dba5003c3f0c7bd5",
+      "text_characters": 1298
+    },
+    {
+      "id": "mb-330-path-planning",
+      "url": "https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/",
+      "checked_at": "2026-09-28T02:35:02.023753+00:00",
+      "health": {
+        "id": "mb-330-path-planning",
+        "url": "https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/",
+        "content_type": "text/html",
+        "page_title": "Master planning in Dynamics 365 Supply Chain Management - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/",
+        "duration_signals": [],
+        "signal_fingerprint": "40738e51ce389a1abb85e97c47632a61cbe48a11794b01263f59e1f6ce6ea1c7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/master-planning-supply-chain-management/",
+      "sha256": "2502913d67e49980deb14e682b1fd49d02af562a84cdf355beb506391799f807",
+      "text_characters": 2887
+    },
+    {
+      "id": "mb-330-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00",
+      "checked_at": "2026-09-28T02:35:02.037196+00:00",
+      "health": {
+        "id": "mb-330-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00",
+        "content_type": "text/html",
+        "page_title": "Course MB-330T00-A: Conceptualize Supply Chain Management in Microsoft Dynamics 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00",
+        "duration_signals": [],
+        "signal_fingerprint": "1fdcd84b7b4f2f9a6d8a57b41bedeab4ee6383bcfe0415b5fda8a3ca18518ac6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-330t00",
+      "sha256": "391d3ce96c5b01db245bdda6a8b4347048ad0d1173a778161b2a9afdea3c1271",
+      "text_characters": 2462
+    },
+    {
+      "id": "mb-330-labs",
+      "url": "https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management",
+      "checked_at": "2026-09-28T02:35:02.077278+00:00",
+      "health": {
+        "id": "mb-330-labs",
+        "url": "https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management",
+        "canonical_url": "https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management",
+        "duration_signals": [],
+        "signal_fingerprint": "943678b8ac5051b21742fcf47ba5c450ccb5b582d6233121e2adc992f3880695",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management",
+      "sha256": "5d93edb4b4e6cc0f82a82fb32c8aca3d853b99c89ee5b2b741a04bb3e6d9d983",
+      "text_characters": 3577
+    },
+    {
+      "id": "mb-330-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/practice/assessment?assessment-type=practice&assessmentId=73&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T02:35:02.250429+00:00",
+      "health": {
+        "id": "mb-330-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/practice/assessment?assessment-type=practice&assessmentId=73&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/practice/assessment?assessment-type=practice&assessmentId=73&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "8e09cb842995c897c2e0a96ee684e151a4f280db2bb3f288e254ff10ae4d27e2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/practice/assessment?assessment-type=practice&assessmentId=73&practice-assessment-type=certification",
+      "sha256": "5c1e83d8a34b9f5983d6e5796d2556bca58be99a2da7c722ab0d5117f89b9775",
+      "text_characters": 0
+    },
+    {
+      "id": "mb-330-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/",
+      "checked_at": "2026-09-28T02:35:02.349927+00:00",
+      "health": {
+        "id": "mb-330-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/",
+        "content_type": "text/html",
+        "page_title": "Dynamics 365 Supply Chain Management documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/",
+        "duration_signals": [],
+        "signal_fingerprint": "d42ef0100d4f3e37ba737fdea3325b72f3cd5c5a0dd7e17c6c5c9d9d65cafb43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/",
+      "sha256": "1f8b6e0d1eb22dbd7e4e55994545e0caeba6aff6257f14e3e79ff209a91d00c5",
+      "text_characters": 6441
+    },
+    {
+      "id": "mb-330-udemy-wms",
+      "url": "https://www.udemy.com/course/mb330-d365-fo-advance-warehouse-management-part1/",
+      "checked_at": "2026-09-28T02:35:02.440746+00:00",
+      "health": {
+        "id": "mb-330-udemy-wms",
+        "url": "https://www.udemy.com/course/mb330-d365-fo-advance-warehouse-management-part1/",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/mb330-d365-fo-advance-warehouse-management-part1/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-330-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html",
+      "checked_at": "2026-09-28T02:35:02.525594+00:00",
+      "health": {
+        "id": "mb-330-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test MB-330: Microsoft Dynamics 365 Supply Chain Management Functional Consultant",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html",
+        "duration_signals": [],
+        "signal_fingerprint": "96110a882e717a126620ee8a96da03ca6703f3ca03359e1cd048e03898d1ad2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html",
+      "sha256": "b5bf62c150dc20d67b929b29e8bcdbb75edd5f6e1c6ebae1ccf057bdfdc78369",
+      "text_characters": 16720
+    },
+    {
+      "id": "mb-330-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T02:35:02.596552+00:00",
+      "health": {
+        "id": "mb-330-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T02:35:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb330-plans",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-plans",
+      "checked_at": "2026-09-28T02:35:03.170386+00:00",
+      "health": {
+        "id": "mb330-plans",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-plans",
+        "checked_at": "2026-09-28T02:35:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-plans",
+        "content_type": "text/html",
+        "page_title": "Master plans overview - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-plans",
+        "duration_signals": [],
+        "signal_fingerprint": "d3e4d9c3ba4784646f29999dbf749920872ed25467d79ba868a6f3249b0be10a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/master-plans",
+      "sha256": "da411c7d3ba2569b2e568857d2bb0082378cb11fc1fa0772dd8a051c4fdc20c9",
+      "text_characters": 15823
+    },
+    {
+      "id": "mb330-positive",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/dynamic-positive-days",
+      "checked_at": "2026-09-28T02:35:03.195059+00:00",
+      "health": {
+        "id": "mb330-positive",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/dynamic-positive-days",
+        "checked_at": "2026-09-28T02:35:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/dynamic-positive-days",
+        "content_type": "text/html",
+        "page_title": "Dynamic positive days for last-minute orders - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/dynamic-positive-days",
+        "duration_signals": [],
+        "signal_fingerprint": "baf98c9c04a1d2e3a8a188c7c1579268447444e8cc86014f39e297910b857551",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/dynamic-positive-days",
+      "sha256": "5d11dc80c409f0f5f67a57339d7b5873d7364db169c67181e3b944e36a4fa441",
+      "text_characters": 6151
+    },
+    {
+      "id": "mb330-negative",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+      "checked_at": "2026-09-28T02:35:03.527972+00:00",
+      "health": {
+        "id": "mb330-negative",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+        "checked_at": "2026-09-28T02:35:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+        "content_type": "text/html",
+        "page_title": "Delay tolerance (negative days) - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+        "duration_signals": [],
+        "signal_fingerprint": "6948a1e5f3bab55bca48b89f96b08b9491f104dffb0e911988b9cf8755e1d992",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+      "sha256": "21eb993a007c701db5faac3cc28032bc5966bb51de7ee733349927a156d43b3a",
+      "text_characters": 4680
+    },
+    {
+      "id": "mb330-migration",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/new-master-planning-engine",
+      "checked_at": "2026-09-28T02:35:03.593215+00:00",
+      "health": {
+        "id": "mb330-migration",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/new-master-planning-engine",
+        "checked_at": "2026-09-28T02:35:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/new-master-planning-engine",
+        "content_type": "text/html",
+        "page_title": "Migration to Planning Optimization for master planning - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/new-master-planning-engine",
+        "duration_signals": [],
+        "signal_fingerprint": "10942ef4773398dbd4d8508c0c21ddab312c5e4c8e16f13cbc6ea281afc22fcd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/new-master-planning-engine",
+      "sha256": "056248b03b8c66ba5337b4845fe3dca766c64b98a1c7935443b3d7ccb014d860",
+      "text_characters": 19056
+    },
+    {
+      "id": "mb330-fit",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis",
+      "checked_at": "2026-09-28T02:35:03.605462+00:00",
+      "health": {
+        "id": "mb330-fit",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis",
+        "checked_at": "2026-09-28T02:35:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis",
+        "content_type": "text/html",
+        "page_title": "Planning Optimization fit analysis - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis",
+        "duration_signals": [],
+        "signal_fingerprint": "1164bd84733e38b875f93d8d52c96b9bd5b9cdc99ca9712a83e3ec605b4ee64e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis",
+      "sha256": "6ce0b40521e4608291c509b94b023e66af725a7addd004d15647cb2c81c3f869",
+      "text_characters": 12028
+    },
+    {
+      "id": "mb330-ctp-change",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+      "checked_at": "2026-09-28T02:35:03.804784+00:00",
+      "health": {
+        "id": "mb330-ctp-change",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+        "checked_at": "2026-09-28T02:35:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+        "content_type": "text/html",
+        "page_title": "Optimize confirmed dates for CTP line changes - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+        "duration_signals": [],
+        "signal_fingerprint": "e5220d4ce045d96304447a67f4b500c7ab6e2d03400fdc1fa637ab7c950dafdb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+      "sha256": "e7f57995fe93b7b129ed9b63744a0068b49ebae54006c919e7c8500a03f4c3a6",
+      "text_characters": 5261
+    },
+    {
+      "id": "mb330-ctp-keep",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+      "checked_at": "2026-09-28T02:35:03.890576+00:00",
+      "health": {
+        "id": "mb330-ctp-keep",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+        "checked_at": "2026-09-28T02:35:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+        "content_type": "text/html",
+        "page_title": "Keep supply for confirmed demand in Planning Optimization - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+        "duration_signals": [],
+        "signal_fingerprint": "7f02852f4ce9efeb97f78095893d40d444ed5c7dc245a17b6964e0841ca25655",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+      "sha256": "e1db3920a3f63a85f3731d6a8b31c7054342c1fcbae6b260eb4a1038ef4bf6e6",
+      "text_characters": 13838
+    },
+    {
+      "id": "mb330-blocking",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+      "checked_at": "2026-09-28T02:35:04.064201+00:00",
+      "health": {
+        "id": "mb330-blocking",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+        "content_type": "text/html",
+        "page_title": "Inventory blocking - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+        "duration_signals": [],
+        "signal_fingerprint": "f1d99cec26598c9b14871c8063751152657c6f066033833694771f83037cf02b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+      "sha256": "32dd57c02ba2db860182c79948c9a7860a774189b3d1183f849deb1d143f3920",
+      "text_characters": 8258
+    },
+    {
+      "id": "mb330-quality",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-orders",
+      "checked_at": "2026-09-28T02:35:04.169955+00:00",
+      "health": {
+        "id": "mb330-quality",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-orders",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-orders",
+        "content_type": "text/html",
+        "page_title": "Quality orders - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-orders",
+        "duration_signals": [],
+        "signal_fingerprint": "8022a97345396e55dd3e5c150936bf0a3ae9c37f8d9a4d1b69e10b26d4c4c8fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-orders",
+      "sha256": "2bd33d9b088bd5f3b538a3371c89cede1bc4eb4bf83abcfe303194a34a067744",
+      "text_characters": 17681
+    },
+    {
+      "id": "mb330-quality-wms",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+      "checked_at": "2026-09-28T02:35:04.223477+00:00",
+      "health": {
+        "id": "mb330-quality-wms",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+        "content_type": "text/html",
+        "page_title": "Quality management for warehouse processes - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+        "duration_signals": [],
+        "signal_fingerprint": "353096834d08e481818e538be65032fae54197eb0c2d3666346ee90e17e814d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+      "sha256": "bbee74c2e51dc8177479db20e338ed8c5c578c8f2305fc3e1fdc671eaafc32b3",
+      "text_characters": 46805
+    },
+    {
+      "id": "mb330-quarantine",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+      "checked_at": "2026-09-28T02:35:04.377669+00:00",
+      "health": {
+        "id": "mb330-quarantine",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+        "content_type": "text/html",
+        "page_title": "Quarantine orders - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+        "duration_signals": [],
+        "signal_fingerprint": "cdf8aecae0e1ef92bd3df685b3d65be12f317be54bec0cfde02292b1e276c8bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+      "sha256": "ea27b2ff8636431db42b9809db1f4e4c6e379ec6399af9d8063702d6a2b00c7d",
+      "text_characters": 4266
+    },
+    {
+      "id": "mb330-reservation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+      "checked_at": "2026-09-28T02:35:04.509926+00:00",
+      "health": {
+        "id": "mb330-reservation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+        "content_type": "text/html",
+        "page_title": "Flexible warehouse-level dimension reservation policy - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+        "duration_signals": [],
+        "signal_fingerprint": "8237f0c92569057773b26698ed00cdfe3342d693c9af65075e30148f386aee34",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+      "sha256": "527273bb77207ebcf4469e4987136d5f183786d308eaed82bb0f4da5e28556ab",
+      "text_characters": 47163
+    },
+    {
+      "id": "mb330-mobile-auth",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "checked_at": "2026-09-28T02:35:04.564641+00:00",
+      "health": {
+        "id": "mb330-mobile-auth",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+        "content_type": "text/html",
+        "page_title": "User-based authentication FAQ - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+        "duration_signals": [],
+        "signal_fingerprint": "ec17feb04ddd664afe427408c5d04c435e2b4bb93e13fcecce528b8b08c59746",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "sha256": "7d00d2cf3ea4712bd901538e10effa2cf87d22b284378e80d8dce57571f27129",
+      "text_characters": 15688
+    },
+    {
+      "id": "mb330-mobile-install",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app",
+      "checked_at": "2026-09-28T02:35:04.684485+00:00",
+      "health": {
+        "id": "mb330-mobile-install",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app",
+        "content_type": "text/html",
+        "page_title": "Install the Warehouse Management mobile app - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app",
+        "duration_signals": [],
+        "signal_fingerprint": "a640771134f04f6dd5660ce5739b51941d914698bd1a49a558e9d7ed6b4310e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app",
+      "sha256": "335365d9923860b517d5cf1d60e3795cd4f80288ab25cc405a202748232544f6",
+      "text_characters": 14912
+    },
+    {
+      "id": "mb330-mobile-release",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+      "checked_at": "2026-09-28T02:35:04.838225+00:00",
+      "health": {
+        "id": "mb330-mobile-release",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new or changed in the Warehouse Management mobile app - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "3dd61818f5425b01d724d53954ada6808853c3a6f8fc648a33917b0612805449",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+      "sha256": "8433d49d685a1b2d4f086ebad5173a62ac0b884c7d45d5214eb81437b2497383",
+      "text_characters": 24312
+    },
+    {
+      "id": "mb330-close",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+      "checked_at": "2026-09-28T02:35:04.947526+00:00",
+      "health": {
+        "id": "mb330-close",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+        "content_type": "text/html",
+        "page_title": "Inventory close - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+        "duration_signals": [],
+        "signal_fingerprint": "a9cbf322592a6d995adc163efef06acf1ce2ad1f2c40c5543bf5132a31957e78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+      "sha256": "8795a7719529df2f1c309883aa2857f99eb0267db29321c49ccf745752241ef9",
+      "text_characters": 7233
+    },
+    {
+      "id": "mb330-cost-faq",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-costing-faq",
+      "checked_at": "2026-09-28T02:35:04.952143+00:00",
+      "health": {
+        "id": "mb330-cost-faq",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-costing-faq",
+        "checked_at": "2026-09-28T02:35:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-costing-faq",
+        "content_type": "text/html",
+        "page_title": "Inventory costing FAQ - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-costing-faq",
+        "duration_signals": [],
+        "signal_fingerprint": "23b945c6560312a3c1b92cacdddc3fa7e954db0196096d86b3e5f8944c72d9d7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-costing-faq",
+      "sha256": "ca8a2d08ad46124c33082ff19bd420085c40ebf881a074b69ab604f217f4d211",
+      "text_characters": 77162
+    },
+    {
+      "id": "mb330-consignment",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+      "checked_at": "2026-09-28T02:35:05.143078+00:00",
+      "health": {
+        "id": "mb330-consignment",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+        "content_type": "text/html",
+        "page_title": "Set up consignment - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+        "duration_signals": [],
+        "signal_fingerprint": "674d8f5419bd04e0630f0ecce13c99f53bb05f0984af650771fabb917e0afe0d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+      "sha256": "24ac987c1393b108ecc646dab8b3c791c5d0853b7dd90a47d35ffd136aa0d37b",
+      "text_characters": 8346
+    },
+    {
+      "id": "mb330-landed",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+      "checked_at": "2026-09-28T02:35:05.298928+00:00",
+      "health": {
+        "id": "mb330-landed",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+        "content_type": "text/html",
+        "page_title": "Landed cost module overview - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "cb1b8290ad2ff31cb47c8d1f4aeae8893a43ae7c8beb17914be95e3589cbdfb1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+      "sha256": "b17b00655619107d4cdcccdd77fed026b6799f3d40bce0a8abe5583d88d1404a",
+      "text_characters": 12447
+    },
+    {
+      "id": "mb330-transit",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/in-transit-processing",
+      "checked_at": "2026-09-28T02:35:05.360009+00:00",
+      "health": {
+        "id": "mb330-transit",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/in-transit-processing",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/in-transit-processing",
+        "content_type": "text/html",
+        "page_title": "Goods-in-transit processing and receiving - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/in-transit-processing",
+        "duration_signals": [],
+        "signal_fingerprint": "8925d65ab0deb76ead129656491f624b301dee2d2fe7283f4b2aa6aa101c0af2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/in-transit-processing",
+      "sha256": "f53999bc8a0f7cb0d55a152446f59dfcaa54b91cdf2fbba27c2365503305e01d",
+      "text_characters": 18006
+    },
+    {
+      "id": "mb330-overunder",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/over-under-transactions",
+      "checked_at": "2026-09-28T02:35:05.577203+00:00",
+      "health": {
+        "id": "mb330-overunder",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/over-under-transactions",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/over-under-transactions",
+        "content_type": "text/html",
+        "page_title": "Process over/under transactions - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/over-under-transactions",
+        "duration_signals": [],
+        "signal_fingerprint": "c153c293faa471ab0d0b96fbc7eb3693cc2ff110c2c8552021982a4efc0183f1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/over-under-transactions",
+      "sha256": "5c0d2904e78148d06d23489d20cf40a5cd17d8aba416e7f5c8653c6a70a2070b",
+      "text_characters": 22145
+    },
+    {
+      "id": "mb330-bundles",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/product-bundles-setup",
+      "checked_at": "2026-09-28T02:35:05.581937+00:00",
+      "health": {
+        "id": "mb330-bundles",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/product-bundles-setup",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/product-bundles-setup",
+        "content_type": "text/html",
+        "page_title": "Enable and set up product bundles - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/product-bundles-setup",
+        "duration_signals": [],
+        "signal_fingerprint": "05a3e66727a3fe0b5aa3ec1cbec02696b674affadf91359b8f12cb647b059b38",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/sales-marketing/product-bundles-setup",
+      "sha256": "02075b7e76418393523049de81bfb6c6af076919ac3aaf974d6d3b7624a753fe",
+      "text_characters": 6326
+    },
+    {
+      "id": "mb330-asset-orders",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders",
+      "checked_at": "2026-09-28T02:35:05.608112+00:00",
+      "health": {
+        "id": "mb330-asset-orders",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders",
+        "content_type": "text/html",
+        "page_title": "Assets and work orders - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders",
+        "duration_signals": [],
+        "signal_fingerprint": "1d828a88ba7b31f5e5a342219f1f7b7698d513ddc4f9b6d5512c61141fb7806b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/overview/objects-and-work-orders",
+      "sha256": "ea3497ac8d4c3adffe74cdfb3e288d564778dda13716d6c0bda0290823d64029",
+      "text_characters": 2921
+    },
+    {
+      "id": "mb330-asset-plans",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+      "checked_at": "2026-09-28T02:35:05.931487+00:00",
+      "health": {
+        "id": "mb330-asset-plans",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+        "content_type": "text/html",
+        "page_title": "Schedule maintenance plans - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+        "duration_signals": [],
+        "signal_fingerprint": "a879ba8e2e13487aa421cff3f54fd985008b7cd42b1e5844999618e9159fc8a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+      "sha256": "416f0e191bd928b3675dc4413659db6e8ba16e6b5290f61cc296119c5713f67e",
+      "text_characters": 5568
+    },
+    {
+      "id": "mb330-freight",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/reconcile-freight-transportation-management",
+      "checked_at": "2026-09-28T02:35:05.931730+00:00",
+      "health": {
+        "id": "mb330-freight",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/reconcile-freight-transportation-management",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/reconcile-freight-transportation-management",
+        "content_type": "text/html",
+        "page_title": "Reconcile freight in transportation management - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/reconcile-freight-transportation-management",
+        "duration_signals": [],
+        "signal_fingerprint": "d29ddab162eead346175e9f1002de497dc1ee1af5b2add40bed7b5b27a3cc516",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/transportation/reconcile-freight-transportation-management",
+      "sha256": "b5f8dff38c007c7c26c35a481dbcbba0c03b65bc452249db63efe0a173641e86",
+      "text_characters": 13628
+    },
+    {
+      "id": "mb330-erp-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+      "checked_at": "2026-09-28T02:35:05.959695+00:00",
+      "health": {
+        "id": "mb330-erp-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+        "checked_at": "2026-09-28T02:35:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Build the future of agentic ERP with new Microsoft Dynamics 365 capabilities - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "fffaae561901c0078031c29b8c469710e731ca0ae6379bb09d4b8fe67fe1916a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/09/23/build-the-future-of-agentic-erp-with-new-microsoft-dynamics-365-capabilities/",
+      "sha256": "a9c7e3e8925a7db75256beef10e50192187219efe13ba8906efd8980f097684f",
+      "text_characters": 15700
+    },
+    {
+      "id": "mb330-mobile-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/02/16/optimizing-warehouse-management-unveiling-the-power-of-d365-warehouse-mobile-app-version-2-1-23/",
+      "checked_at": "2026-09-28T02:35:06.204340+00:00",
+      "health": {
+        "id": "mb330-mobile-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/02/16/optimizing-warehouse-management-unveiling-the-power-of-d365-warehouse-mobile-app-version-2-1-23/",
+        "checked_at": "2026-09-28T02:35:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/02/16/optimizing-warehouse-management-unveiling-the-power-of-d365-warehouse-mobile-app-version-2-1-23/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Optimizing Warehouse Management: Unveiling the Power of D365 Warehouse Mobile App Version 2.1.23 - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/02/16/optimizing-warehouse-management-unveiling-the-power-of-d365-warehouse-mobile-app-version-2-1-23/",
+        "duration_signals": [
+          "2 min",
+          "4 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "8db80e3bd6d1aee3cefd47998c4eaf895ffb0ab2d7eefbb700d2421ef718ecf5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2024/02/16/optimizing-warehouse-management-unveiling-the-power-of-d365-warehouse-mobile-app-version-2-1-23/",
+      "sha256": "ce3f0244c70eb831f9ff7e68cc54919bb18912169a3d8de17785469c1da137db",
+      "text_characters": 6299
+    },
+    {
+      "id": "mb330-units",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+      "checked_at": "2026-09-28T02:37:51.723167+00:00",
+      "health": {
+        "id": "mb330-units",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+        "checked_at": "2026-09-28T02:37:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+        "content_type": "text/html",
+        "page_title": "Unit of measure and stocking policies - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "6eefb6304f6264422526cd567a836090595bb00e8eb3a5804bbd5e1d28465a71",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+      "sha256": "29dd41196404134366347bf14c32858fd243922d0ea85ac1914aa0c3be2ef552",
+      "text_characters": 4658
+    },
+    {
+      "id": "mb330-lifecycle",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle",
+      "checked_at": "2026-09-28T02:37:51.724797+00:00",
+      "health": {
+        "id": "mb330-lifecycle",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle",
+        "checked_at": "2026-09-28T02:37:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle",
+        "content_type": "text/html",
+        "page_title": "Product lifecycle states - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle",
+        "duration_signals": [],
+        "signal_fingerprint": "fc0d71dc3766ef899c5f2641e569c48444af93544797fb76434aba62318f670a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-lifecycle",
+      "sha256": "5078c47806e00359dd867e2a86c9927392b182e77b2aeb0f973c0cf006cd98ca",
+      "text_characters": 12607
+    },
+    {
+      "id": "mb330-dimensions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions",
+      "checked_at": "2026-09-28T02:37:51.725678+00:00",
+      "health": {
+        "id": "mb330-dimensions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions",
+        "checked_at": "2026-09-28T02:37:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions",
+        "content_type": "text/html",
+        "page_title": "Product dimensions - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions",
+        "duration_signals": [],
+        "signal_fingerprint": "29a4dbbff22ebc04866a256bca8372c2e3729a98ba6dae82434943883ab18bd1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/pim/product-dimensions",
+      "sha256": "82041b36458a442f80dbab758381850044f70ffdb5ca9afbcb552c9ad0d8c311",
+      "text_characters": 10959
+    },
+    {
+      "id": "mb330-mobile-support",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info-v3",
+      "checked_at": "2026-09-28T02:37:52.142182+00:00",
+      "health": {
+        "id": "mb330-mobile-support",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info-v3",
+        "checked_at": "2026-09-28T02:37:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info",
+        "content_type": "text/html",
+        "page_title": "Support policy for the Warehouse Management mobile app - Supply Chain Management | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info",
+        "duration_signals": [],
+        "signal_fingerprint": "bcdd77029556082feee0666519148e572c0c5b87e222101b07926b25ed4a1e02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info",
+      "sha256": "7a1ab42b59579accfac9666b15eda0e75c3042841e8c794aae523ab2586beb81",
+      "text_characters": 8476
+    }
+  ],
+  "added_source_ids": [
+    "mb330-units",
+    "mb330-lifecycle",
+    "mb330-dimensions",
+    "mb330-mobile-support",
+    "mb330-plans",
+    "mb330-positive",
+    "mb330-negative",
+    "mb330-migration",
+    "mb330-fit",
+    "mb330-ctp-change",
+    "mb330-ctp-keep",
+    "mb330-blocking",
+    "mb330-quality",
+    "mb330-quality-wms",
+    "mb330-quarantine",
+    "mb330-reservation",
+    "mb330-mobile-auth",
+    "mb330-mobile-install",
+    "mb330-mobile-release",
+    "mb330-close",
+    "mb330-cost-faq",
+    "mb330-consignment",
+    "mb330-landed",
+    "mb330-transit",
+    "mb330-overunder",
+    "mb330-bundles",
+    "mb330-asset-orders",
+    "mb330-asset-plans",
+    "mb330-freight",
+    "mb330-erp-blog",
+    "mb330-mobile-blog"
+  ],
+  "findings": [
+    {
+      "id": "mb330-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "October minor revisions require explicit mapping",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Live October 21 page contains 101 bullets and explicitly names Planning Optimization.",
+      "recommendation": "Map every bullet and retain June baseline for earlier appointments.",
+      "disposition": "applied",
+      "source_id": "mb-330-blueprint",
+      "resolution": "Map every bullet and retain June baseline for earlier appointments."
+    },
+    {
+      "id": "mb330-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Location boundary and order-committed reservations affect allocation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/flexible-warehouse-level-dimension-reservation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Batch/license-plate demand reservations can constrain warehouse allocation and bypass location directives.",
+      "recommendation": "Correct hierarchy wording and add exceptions and work diagnostics.",
+      "disposition": "applied",
+      "source_id": "mb330-reservation",
+      "resolution": "Correct hierarchy wording and add exceptions and work diagnostics."
+    },
+    {
+      "id": "mb330-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Handling unit is independent of commercial price unit",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "WMS unit sequence requires inventory-unit alignment and configured conversions.",
+      "recommendation": "Add case/each quantity-value example and variant-unit verification.",
+      "disposition": "applied",
+      "source_id": "mb330-units",
+      "resolution": "Add case/each quantity-value example and variant-unit verification."
+    },
+    {
+      "id": "mb330-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Inspection sample is not the inventory hold",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/inventory-blocking",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Manual quality-order quantity controls blocking; automatic sampling and full-block settings differ.",
+      "recommendation": "Add 100-unit/10-unit example and explicit reservation/shipping evidence.",
+      "disposition": "applied",
+      "source_id": "mb330-blocking",
+      "resolution": "Add 100-unit/10-unit example and explicit reservation/shipping evidence."
+    },
+    {
+      "id": "mb330-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "WMS quality uses a different work and blocking flow",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quality-management-for-warehouses-processes",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "WMS-specific quality association does not support Full blocking; client registration does not create the same sampling work as mobile processing.",
+      "recommendation": "Separate WMS work from basic quality and require proof of full receipt hold.",
+      "disposition": "applied",
+      "source_id": "mb330-quality-wms",
+      "resolution": "Separate WMS work from basic quality and require proof of full receipt hold."
+    },
+    {
+      "id": "mb330-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Quarantine support differs in WMS",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/quarantine-orders",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "WMS-enabled quarantine processing is limited to sales returns.",
+      "recommendation": "Bound the quarantine lab and clarify finished versus ended states.",
+      "disposition": "applied",
+      "source_id": "mb330-quarantine",
+      "resolution": "Bound the quarantine lab and clarify finished versus ended states."
+    },
+    {
+      "id": "mb330-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Recalculation is not inventory settlement",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/cost-management/inventory-close",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Close settles periodic-model issues to receipts; recalculation adjusts without settlement and adjustments use original posting accounts.",
+      "recommendation": "Clarify model, cutoff and reversal order.",
+      "disposition": "applied",
+      "source_id": "mb330-close",
+      "resolution": "Clarify model, cutoff and reversal order."
+    },
+    {
+      "id": "mb330-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Calendar entry does not prove work-order creation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Both line and scheduling-dialog auto-create settings are needed; functional-location plan criteria changes remove related entries.",
+      "recommendation": "Add creation controls and schedule regeneration evidence.",
+      "disposition": "applied",
+      "source_id": "mb330-asset-plans",
+      "resolution": "Add creation controls and schedule regeneration evidence."
+    },
+    {
+      "id": "mb330-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Physical possession does not transfer ownership",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/inventory/consignment",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Posted ownership-change journal creates company receipt and Consignment-origin PO.",
+      "recommendation": "Trace Owner dimension, journal posting and generated PO invoice.",
+      "disposition": "applied",
+      "source_id": "mb330-consignment",
+      "resolution": "Trace Owner dimension, journal posting and generated PO invoice."
+    },
+    {
+      "id": "mb330-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Transfer voyages cannot reuse purchase GIT setup",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/landed-cost/landed-cost-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Transfer-order voyages require GIT disabled and post estimated costs at shipment.",
+      "recommendation": "Separate purchase/transfer workflows and add allocation example.",
+      "disposition": "applied",
+      "source_id": "mb330-landed",
+      "resolution": "Separate purchase/transfer workflows and add allocation example."
+    },
+    {
+      "id": "mb330-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Mobile authentication and worker sessions differ",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-user-based-auth-faq",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "User-based interactive option recommended; device-code no longer recommended and logoff/sign-out affect different state.",
+      "recommendation": "Add identity/handoff tests without weakening tenant security.",
+      "disposition": "applied",
+      "source_id": "mb330-mobile-auth",
+      "resolution": "Add identity/handoff tests without weakening tenant security."
+    },
+    {
+      "id": "mb330-deep-12",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current mobile fixes warrant regression tests",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-whats-new",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "4.1.6 fixes quantities above 20 resetting to zero; 4.1.5 fixes duplicate request submission after timeouts.",
+      "recommendation": "Add installed-build quantity and server-completion checks before retry.",
+      "disposition": "applied",
+      "source_id": "mb330-mobile-release",
+      "resolution": "Add installed-build quantity and server-completion checks before retry."
+    },
+    {
+      "id": "mb330-deep-13",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Installed and supported mobile versions differ",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-app-support-info-v3",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "V3 support ended May 2026; V4 rolling 12-month rule starts May 1 2027.",
+      "recommendation": "Add dated lifecycle guidance, device inventory and follow-up.",
+      "disposition": "applied",
+      "source_id": "mb330-mobile-support",
+      "resolution": "Add dated lifecycle guidance, device inventory and follow-up."
+    },
+    {
+      "id": "mb330-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Planning Optimization always uses dynamic negative-day tolerance",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/delay-tolerance",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Engine-specific calculation uses replenishment/due dates plus negative days; legacy toggle has no effect.",
+      "recommendation": "Correct days wording and add day-8/day-9 worked comparison.",
+      "disposition": "applied",
+      "source_id": "mb330-negative",
+      "resolution": "Correct days wording and add day-8/day-9 worked comparison."
+    },
+    {
+      "id": "mb330-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preserved planned supply and received stock use different controls",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/keep-supply-for-confirmed-demand",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Feature requires supported build/flag; actual run can override plan and received stock outside positive days needs another setting.",
+      "recommendation": "Add effective-run evidence and excess/received-stock caveats.",
+      "disposition": "applied",
+      "source_id": "mb330-ctp-keep",
+      "resolution": "Add effective-run evidence and excess/received-stock caveats."
+    },
+    {
+      "id": "mb330-deep-16",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Official example dates are internally inconsistent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/optimize-confirmed-dates-for-ctp-line-changes",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-330"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The line-change CTP example has inconsistent ship/receipt date arithmetic.",
+      "recommendation": "Retain prerequisites and general behavior, omit inconsistent dates, and schedule a research recheck with sandbox limitation.",
+      "disposition": "applied",
+      "source_id": "mb330-ctp-change",
+      "resolution": "Retain prerequisites and general behavior, omit inconsistent dates, and schedule a research recheck with sandbox limitation."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mb330-erp-blog",
+      "decision": "accepted-bounded",
+      "author": "Sameer Verma",
+      "published_on": "2026-09-23",
+      "notes": "Relevant public SCM and roadmap sections read. Accept supplier-delay evidence and approval exercise; previews/future features not asserted generally available or added as exam objectives."
+    },
+    {
+      "source_id": "mb330-mobile-blog",
+      "decision": "accepted-bounded",
+      "author": "Michael Fruergaard Pontoppidan and Denis Conway",
+      "published_on": "2024-02-16",
+      "notes": "Historical usability and shift-handoff exercise; current product docs control authentication/build/support. No recommendation to install old binary or enable legacy flow."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Ten synthetic case/unit/value, sample, allocation and delay arithmetic assertions; no business transaction or product execution"
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "Accepted June 20 baseline retained; October 21 objectives mapped separately. Product release notes and previews do not redefine exam scope.",
+    "No Dynamics environment, handheld, authentication, planning, costing, quality, maintenance or inventory transaction was executed. Ten labs remain learner exercises; arithmetic checks are offline only.",
+    "CTP line-change documentation includes inconsistent example dates; guide uses supported prerequisites/behavior without copying those dates and schedules a recheck. Sandbox behavior remains unverified.",
+    "Learn path landing pages checked, not individual modules or current total durations. Earlier 50h07 total is historical. Course-lab README reviewed, not individual handouts.",
+    "MeasureUp metadata last updated March 2023 includes obsolete prerequisite; current objective coverage unproven. Udemy blocked. No paid questions, signed-in Practice Assessment contents or partner event seats reviewed.",
+    "Relevant blog text read; demos, customer outcomes and preview deployment not verified. Roadmap CSV/RSS ingestion remains unimplemented.",
+    "Same-context AI research and repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "unit_value_sample_allocation_and_delay_assertions": 10
+  }
+}

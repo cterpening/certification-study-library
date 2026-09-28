@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review MB-330 and map 101 October objectives while retaining June's baseline. Add four examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify quality holds, reservation units, consignment, landed cost, mobile authentication/support and Planning Optimization; qualify stale commercial-resource claims. Update roadmap research guidance and add mobile/CTP/roadmap follow-ups. See the [MB-330 report](docs/research/2026-09-27-mb-330-deep-review.md).
+
 - September 27, 2026: deep-review AB-730 and map 41 October objectives while retaining July's baseline. Expand model, connector, notebook, meeting and Cowork preparation; add four worked examples, two labs, 44 answers, two Microsoft blog exercises and three rollout follow-ups. Correct current Learn/Pluralsight listings and qualify older paid-resource scope. See the [AB-730 report](docs/research/2026-09-27-ab-730-deep-review.md).
 
 - September 27, 2026: deep-review DP-800 and map 73 October objectives while retaining March's baseline. Correct CES scope, RLS update protection, DAB 2.0 defaults and external-model scope. Add five worked examples, two labs, 44 answers, two qualified Microsoft blog readings and three vector/CES follow-ups. See the [DP-800 report](docs/research/2026-09-27-dp-800-deep-review.md).

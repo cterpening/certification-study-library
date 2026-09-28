@@ -748,6 +748,8 @@ The review maps every August 14, 2026 subobjective to an accounting object, conf
 
 ## MB-330 coverage record
 
+The September 27 [deep review](research/2026-09-27-mb-330-deep-review.md) maps 101 detailed objectives. Whole guide read and 101 October objectives in 17 groups individually mapped; June 20 baseline retained. Add four worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Clarify reservation/unit, quality, asset, consignment, landed-cost, mobile and Planning Optimization behavior; qualify stale catalog claims and historical durations. Ten synthetic arithmetic assertions passed; no Dynamics environment or mobile execution. Three checkpoints and roadmap research guidance updated; human review pending. Current guide citations: 48 registered, 47 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Implement product information management | Section 1, all integrated scenarios, and Labs 1–2 |

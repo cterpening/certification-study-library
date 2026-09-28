@@ -4,15 +4,14 @@ As of 2026-09-27; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 39 have review work.
+50 guides; 38 have review work.
 
-Next batch: MB-330, SC-100, SC-200.
+Next batch: SC-100, SC-200, SC-900.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [MB-330](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md) | pending | Pending | not-recorded |
 | [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | pending | Pending | not-recorded |
 | [SC-200](../guides/SC-200-microsoft-security-operations-analyst.md) | pending | Pending | not-recorded |
 | [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | pending | Pending | not-recorded |
@@ -28,6 +27,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [DP-700](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md) | reviewed | 2026-09-27 | offline-only |
 | [DP-750](../guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md) | reviewed | 2026-09-27 | offline-only |
 | [DP-800](../guides/DP-800-developing-ai-enabled-database-solutions.md) | reviewed | 2026-09-27 | offline-only |
+| [MB-330](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md) | reviewed | 2026-09-27 | offline-only |
 | [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | reviewed | 2026-09-27 | offline-only |
 | [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | pending | Pending | not-recorded |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | pending | Pending | not-recorded |
