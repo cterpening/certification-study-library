@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review MD-102's 83 October objectives while retaining July's baseline. Correct legacy app-grant guidance; add five examples, two labs, eight answers and two qualified blog exercises. Develop deployment/rollback, backup/restore, query freshness, hotpatch, remediation and agent lifecycle boundaries; qualify current catalog evidence and upcoming release entries. See the [MD-102 report](docs/research/2026-09-27-md-102-deep-review.md).
+
 - September 27, 2026: deep-review DP-300's 94 October objectives while retaining April's baseline. Add five worked examples, two labs, eight answers and two qualified Microsoft blog readings. Fill Intelligent Insights coverage; clarify watcher targets, Query Store aggregation, enclave support, compaction, job identity and backup immutability. Refresh course metadata and schedule preview follow-ups. See the [DP-300 report](docs/research/2026-09-27-dp-300-deep-review.md).
 
 - September 27, 2026: deep-review SC-900's 58 October objectives while retaining July's baseline. Add four worked examples, two labs, eighteen answered checks and two qualified passkey blog exercises. Explain workload identities, access-review outcomes, network segmentation, threat intelligence, label publication and retention; qualify current lifecycle and commercial-resource claims. Add five follow-ups. See the [SC-900 report](docs/research/2026-09-27-sc-900-deep-review.md).

@@ -659,6 +659,8 @@ The September 5 repair adds distinct Entra Agent ID lifecycle and blueprint hand
 
 ## MD-102 coverage record
 
+The September 27 [deep review](research/2026-09-27-md-102-deep-review.md) maps 83 detailed objectives. Whole guide read; 83 October objectives in 13 groups individually mapped while retaining July 24 baseline. Add five worked examples, two labs and eight answers (ten labs/47 answered checks total), two qualified blog readings and five dated follow-ups. Correct legacy app-grant guidance and expand deployment rollback, backup/restore, live versus inventory queries, hotpatch, remediation and agent lifecycle/identity. Catalog metadata is qualified and September 28 entries remain upcoming. Ten offline checks passed; no tenant/device execution; human review pending. Current guide citations: 59 registered, 56 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Prepare infrastructure for devices | Section 1, all integrated scenarios, and Labs 1–2 |

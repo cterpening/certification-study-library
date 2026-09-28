@@ -3,6 +3,244 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "md102-app-grant",
+      "title": "Migrate approved client app grant",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Current June 30 read-only note supersedes old March advice and historical editable-policy steps. Enabled legacy policies still enforce; no policy changed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-deployments",
+      "title": "Deployment plans and deployments",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Full overview read: public preview, platform/payload support, timing, cumulative assignments, mutability, group collisions and final virtual-group behavior. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-compliance-create",
+      "title": "Create compliance policies",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Client-driven reevaluation and refresh sections read; no latency SLA inferred. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-remote-help",
+      "title": "Plan Remote Help",
+      "url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Supported modes, roles, device and unattended prerequisites reviewed; no remote session initiated. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-remediations",
+      "title": "Remediations",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Detection contract, requirements, encoding/signature, schedule, output and execution sections reviewed. Synthetic three-state logic only; no script deployed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-backup",
+      "title": "Windows settings backup and restore",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Requirements, version/join, default transition, separate backup/restore, first sign-in and configuration sections reviewed. General disabled-default prose qualified by 26H2 note. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-backup-faq",
+      "title": "Windows backup FAQ",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Targeted settings/file scope and persistent/nonpersistent Cloud PC sections reviewed. Old comparison rows saying OOBE-only are superseded by explicit first-sign-in sections in overview/current FAQ. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-vulnerability-agent",
+      "title": "Vulnerability Remediation Agent",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Overview, preview/platform/license/roles, agentic identity, readiness and transition sections read. No exact tenant-specific transition day inferred from a week-labelled release. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-offboarding-agent",
+      "title": "Device Offboarding Agent",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Specific June 1 removal timeline reviewed and used over stale April overview listing; old setup instructions not treated as currently usable. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-custom-compliance",
+      "title": "Custom compliance settings",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Contract, platform/cloud requirements, Windows retrieval/discovery cadence and monitoring sections reviewed; no custom policy created. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-device-query",
+      "title": "Device query",
+      "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Prerequisites, live WNS path, operator subset and limitations reviewed. Corrected candidate URL before registration; no query run. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-hotpatch",
+      "title": "Windows hotpatch updates",
+      "url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Prerequisites, VBS/CHPE, ineligible fallback, cycle and feature-upgrade sections reviewed. No registry or update policy change. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-app-management-blog",
+      "title": "Windows App Management in Microsoft Intune",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Zachary Cavanell/Microsoft Mechanics with Nicole Zhao demonstration, April 27 2026. Public article/transcript read; video not watched. Current deployment docs supersede private-preview label and prevent conflating auto-update with deployment support. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-backup-blog",
+      "title": "Windows settings backup becoming a new resilience baseline",
+      "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Miranda Leschke, July 6 2026. Main article read; linked video not watched. Scoped default/explicit policy/separate restore exercise accepted without claiming tenant rollout. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-fleet-query",
+      "title": "Device query for multiple devices",
+      "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Inventory, corporate platform/collection prerequisites and sample row shapes reviewed; component rows distinguished from distinct devices. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-deploy-create",
+      "title": "Create and manage deployments",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Targeted pause/resume/cancel and collision/deleted-group sections read; cancellation retains prior assignments. No deployment created. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "md102-windows-compliance",
+      "title": "Windows compliance settings and recalculation",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "September 27 MD-102 deep review: Targeted health-attestation and recalculation sections read, not every setting. Boot-time evidence remains distinct from reevaluation request. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "dp300-insights",
       "title": "Intelligent Insights overview",
       "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
@@ -5487,9 +5725,17 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "PL-900", "SC-900", "AB-900", "AI-901", "AB-100"],
-      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "PL-900",
+        "SC-900",
+        "AB-900",
+        "AI-901",
+        "AB-100",
+        "MD-102"
+      ],
+      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor",
@@ -5499,9 +5745,25 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "AI-901", "AI-103", "AB-100", "AZ-801", "AZ-802", "DP-300", "DP-800", "AI-200", "AI-300", "SC-500"],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA"
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-900",
+        "GH-200",
+        "GH-300",
+        "AZ-900",
+        "AI-901",
+        "AI-103",
+        "AB-100",
+        "AZ-801",
+        "AZ-802",
+        "DP-300",
+        "DP-800",
+        "AI-200",
+        "AI-300",
+        "SC-500",
+        "MD-102"
+      ],
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -13110,9 +13372,15 @@
       "authority_class": 4,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800", "AZ-801", "AZ-802", "DP-300"],
-      "notes": "Public whiteboards and companion materials vary by series; verify the relevant repository and license before reuse."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-801",
+        "AZ-802",
+        "DP-300",
+        "MD-102"
+      ],
+      "notes": "Public whiteboards and companion materials vary by series; verify the relevant repository and license before reuse. September 27 MD-102 deep review: Public profile metadata only; no specific MD-102 repository content reused. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-800-connect-health-sync",
@@ -20751,9 +21019,22 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "partner-restricted",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300", "SC-401", "SC-500", "DP-700", "PL-300", "PL-400", "AB-210", "AB-250", "AB-410", "AB-730", "AB-731"],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-300",
+        "SC-401",
+        "SC-500",
+        "DP-700",
+        "PL-300",
+        "PL-400",
+        "AB-210",
+        "AB-250",
+        "AB-410",
+        "AB-730",
+        "AB-731",
+        "MD-102"
+      ],
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -22021,9 +22302,12 @@
       "authority_class": 3,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-650"],
-      "notes": "Selective Microsoft identity, security and architecture foundation; no exact AB-650 course was confirmed."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-650",
+        "MD-102"
+      ],
+      "notes": "Selective Microsoft identity, security and architecture foundation; no exact AB-650 course was confirmed. September 27 MD-102 deep review: Channel shell only; no exact current MD-102 course established. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md-102-blueprint",
@@ -22321,9 +22605,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["MD-102"],
-      "notes": "Five courses, 13 hours and practice exam listed; four core courses updated March-May 2026."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "MD-102"
+      ],
+      "notes": "Public five-course path runtime sums to 13h19; introduction September 2024 and other courses March–May 2026. No paid lessons reviewed; July/October completeness unverified. September 27 MD-102 deep review: Public course titles/dates/runtimes reviewed and sum checked; no paid lessons/practice examined. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md-102-oreilly",

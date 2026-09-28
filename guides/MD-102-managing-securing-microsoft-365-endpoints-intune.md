@@ -6,17 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # MD-102 Managing and Securing Microsoft 365 Endpoints by Using Intune Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 24, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). The [official MD-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 24, 2026 objectives and cited public sources on September 27, 2026. The [deep review](../docs/research/2026-09-27-md-102-deep-review.md) individually maps 83 October objectives; live labs and independent human review remain pending. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). The [official MD-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
 
 **Current baseline:** Skills measured as of July 24, 2026<br>
 **Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 27, 2026. The revision clarifies Android corporate-owned devices with a work profile and uses current Windows Backup, Microsoft Tunnel VPN Gateway, Apple Business Manager, Managed Google Play, and Remediations terminology. It also corrects local-administrator-password wording. Domain weights are unchanged. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102).<br>
+**Exam:** 100 minutes; seven exam languages; annual certification renewal. The official instructor-led course is five days.
+
 **Official source:** [MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102)
 
 ## How to use this guide
@@ -36,11 +38,13 @@ Do not diagnose from one portal badge. A device can be Entra joined but not Intu
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-### Living-guide watch — September 7, 2026
+### Living-guide watch — September 27, 2026
 
 Use [What's new in Microsoft Intune](https://learn.microsoft.com/en-us/intune/whats-new/) as a weekly service-change feed, not as an expanded exam outline. It currently labels the former Microsoft Intune Suite as **Advanced capabilities** and notes staged tenant rollout. Preserve the blueprint term where needed for recognition, then map it to the current label and verify tenant availability before a lab.
 
 The [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) supplies adjacent control-plane context; it does not prove that every Security Copilot or Intune agent feature is GA. Independent endpoint training in Places to learn is useful for alternate demonstrations, with the weekly feed deciding volatile names and behavior.
+
+The feed already contains a **week of September 28** section. Treat those entries as upcoming relative to this review date and verify rollout in the tenant; do not backdate their availability. September 21 deployment plans are public preview in their detailed documentation. Faster Windows compliance evaluation announced September 14 does not make every exported report real-time.
 
 ## Objective map
 
@@ -106,9 +110,15 @@ Multi-admin approval creates a change-approval workflow for supported high-impac
 
 [Intune compliance policies](https://learn.microsoft.com/en-us/intune/intune-service/protect/device-compliance-get-started) assess requirements such as OS version, password, encryption, jailbreak/root state and threat level where supported. The tenant-wide compliance-policy settings define behavior for devices without an assigned policy and the validity period. A grace period delays the noncompliant effect; it does not make the requirement disappear.
 
-Conditional Access can require a device marked compliant. The access decision consumes compliance; it does not configure encryption or patching itself. Use report-only, explicit assignments, emergency exclusions, controlled pilots and sign-in logs. Plan BYOD carefully: an approved app plus app-protection requirement may meet a mobile data-access need without requiring full device enrollment, while sensitive workflows can require a managed/compliant device.
+Conditional Access can require a device marked compliant. The access decision consumes compliance; it does not configure encryption or patching itself. Use report-only, explicit assignments, emergency exclusions, controlled pilots and sign-in logs. Plan BYOD carefully: an app-protection requirement in a supported app may meet a mobile data-access need without requiring full device enrollment, while sensitive workflows can require a managed/compliant device.
 
 When a device is noncompliant, inspect the device's setting-level result, last check-in, applicable policy, grace period and platform applicability. Then inspect the Conditional Access result for the actual resource sign-in. Do not mark a device manually compliant to hide an unresolved control failure.
+
+#### Worked example — compliance rate needs coverage and time
+
+A report contains 90 compliant and 10 noncompliant devices, while the expected fleet is 120 devices. The reported-device compliance rate is **90/100 = 90%**; confirmed compliant coverage of the expected fleet is **90/120 = 75%**. The other 20 are unobserved, not automatically noncompliant or compliant. Deduplicate by stable device ID and state timestamp before counting. Keep stale, excluded and not-yet-evaluated cohorts visible.
+
+[Client-driven evaluation](https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy) can request reevaluation after supported Windows state changes. That request is not completed enforcement, nor does it accelerate the daily Azure Monitor snapshot into an immediate feed. Some [health-attestation settings](https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-settings), such as the documented BitLocker compliance measurement, still depend on boot-time evidence. Validate the actual setting and sign-in result.
 
 ### Windows Hello, LAPS, and local groups
 
@@ -140,6 +150,8 @@ Choose from requirements, not novelty:
 
 Keep the initial required app/policy set small and reliable. A large blocking list turns one app failure into a provisioning failure. Separate day-zero access/security from day-one convenience. Troubleshoot device identity and policy assignment, then device ESP, user ESP, app detection/requirements/dependencies, certificate/network/time and log evidence.
 
+**Device-preparation limits:** The current comparison lists user-driven and automatic modes, Entra join, up to **25 essential apps and ten scripts**, and device-based OOBE configuration. It supports tenant association without requiring classic hardware-hash registration. Its provisioning group requires the **Intune Provisioning Client** owner. Do not apply classic ESP, hybrid join or user-stage assumptions to device preparation. Supported old build numbers in a feature table do not establish that an OS version remains in lifecycle support.
+
 ### Windows 11 upgrades, Backup/Restore, and Cloud PCs
 
 Before Windows 11 upgrade, assess hardware readiness, application and driver compatibility, firmware/security configuration, capacity, user data, rollback and support. Use update rings for servicing behavior and feature-update policies to control the target version. Pilot by representative hardware and workload rather than only IT volunteers.
@@ -149,6 +161,12 @@ Windows Backup for Organizations and restore settings in Intune can preserve sup
 A [Windows 365 provisioning policy](https://learn.microsoft.com/en-us/windows-365/enterprise/provisioning) combines network choice, join type, image/configuration and assigned user groups to create Cloud PCs. Microsoft-hosted networking reduces customer network dependencies; an Azure network connection is required for specified customer-network and hybrid designs. Use gallery images when possible; custom images add capture, compatibility, replication, update and storage considerations. Validate licenses, policy assignment, ANC health, region/capacity, image state, Entra/AD join, Intune enrollment and user access.
 
 > **Related item:** A Cloud PC is still an endpoint with identity, configuration, compliance, applications, updates, Defender, user-experience and lifecycle concerns. It moves hardware and network responsibility; it does not remove endpoint administration.
+
+#### Worked example — backup enabled does not mean restore ready
+
+[Windows settings backup and restore](https://learn.microsoft.com/en-us/windows/configuration/windows-backup/) is the newer name for Windows Backup for Organizations. On an eligible 26H2 device, the announced default enables backup when policy is Not Configured; an explicit Disabled policy still wins. Restore remains separately enabled by an administrator. A second eligible device with backup Enabled but restore Disabled can collect a profile without offering the intended restore experience. Check version, region/cloud and identity rather than generalizing the default to every Windows PC.
+
+The [backup FAQ](https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq) limits this feature to supported Windows settings and the Microsoft Store app list. Protect user files separately, for example with OneDrive; do not treat this as an image or arbitrary application-data backup. Backup supports joined/hybrid devices; OOBE restore requires Entra join and supported user-driven setup. The newer first-sign-in restore path can support joined/hybrid devices on specified builds after enrollment. Test these paths independently and use the same work account. For nonpersistent VDI/shared Cloud PCs, evaluate profile persistence instead of repeatedly restoring a disposable session.
 
 ### Configuration profiles and targeting
 
@@ -173,6 +191,8 @@ The [Microsoft Intune Suite](https://learn.microsoft.com/en-us/intune/intune-ser
 
 Licensing and availability change. **VERIFY CURRENT:** add-on names, included plans, platform support, role requirements, limits and portal locations.
 
+**Remote Help scope:** [Unattended Windows support](https://learn.microsoft.com/en-us/intune/remote-help/plan) requires a physical, corporate-owned, Intune-managed x64 device with Entra join or hybrid join and a specifically scoped unattended remote-sign-in permission. Windows 365/AVD, BYOD and virtual devices are excluded from that mode even where attended help works. Validate IME, the required AVD agent/bootloader, Remote Desktop and power/network prerequisites. Ordinary full-control permission alone is insufficient; a sleeping device cannot accept the request.
+
 ### Remote actions and support evidence
 
 Choose a remote action from lifecycle intent:
@@ -190,6 +210,14 @@ Choose a remote action from lifecycle intent:
 Bulk actions amplify both benefit and mistake. Validate exact resolved targets, use approval where available, communicate, record the action ID/time/operator, and inspect completion/errors. Never treat “delete from portal” and “securely erase device” as synonyms.
 
 Use device query for near-real-time supported device data with KQL syntax, Intune diagnostics and user-based Troubleshooting to gather state. Correlate Intune audit and operational logs with device-side MDM diagnostics, Windows event logs, app logs, Defender evidence and sign-ins. A stale last check-in often invalidates portal assumptions.
+
+---
+
+### Distinguish live device queries from fleet inventory
+
+[Single-device query](https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query) contacts a supported corporate Windows device through mandatory Windows Push Notification Services. It requires the appropriate query permission, supported join/management and Advanced Analytics entitlement. Failure to reach the device is not a zero-row statement about its health. KQL is a supported subset, with result truncation and query limits; do not blindly transplant a Sentinel query.
+
+[Multiple-device query](https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices) examines collected inventory across supported corporate platforms. Windows needs a properties-catalog collection policy. Check inventory age and missing-device coverage before creating an assignment group from results. Tables can contain several components per device: counting CPU or disk rows is not necessarily counting distinct devices.
 
 ---
 
@@ -225,6 +253,14 @@ Monitor deployment errors, safeguard/compatibility holds, restart deadlines, ver
 
 ---
 
+#### Worked example — hotpatch eligibility is an intersection
+
+For an illustrative 100-device group, 80 have the required baseline, 90 have VBS running, and 75 satisfy both. Only those **75** pass these two prerequisites, not `min(80, 90) = 80`; supported OS, architecture, licensing and policy must also hold. A September hotpatch policy cannot guarantee no restart for the other devices. [Hotpatch guidance](https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates) explains standard cumulative-update fallback and baseline restarts; additional baseline months can occur.
+
+For Arm64, inspect the CHPE requirement and 32-bit application compatibility before disabling CHPE. A supported device that needs incompatible legacy software may require exclusion from hotpatch. A feature-version upgrade during a hotpatch month can return the device to standard updates until the following baseline. Record actual eligibility and restart evidence; do not promise a restart-free year.
+
+---
+
 ## 4. Manage and secure applications
 
 ### Application packaging, assignment, and troubleshooting
@@ -251,6 +287,16 @@ Troubleshoot app deployment:
 
 Quiet Time policies for supported Android/iOS experiences suppress work notifications on configured schedules; they do not uninstall or block the application. Confirm platform/application support and user communication.
 
+### Stage a payload with deployment plans
+
+[Deployment plans](https://learn.microsoft.com/en-us/intune/device-management/deployments/overview) are reusable ring/timing templates; a deployment delivers one selected payload. This is **public preview** for supported Windows Win32/Enterprise App Catalog apps and Settings Catalog/endpoint-security policies. Apps use Required intent; Available/Uninstall are unsupported. Enterprise App Catalog automatic updates cannot be combined with deployments; use the supported supersedence path. Rings need at least one hour between activations.
+
+#### Worked example — expanding assignments is not rollback
+
+Pilot group A contains devices 1–20 and later group B contains devices 16–50. Once both rings activate, the union is **50 devices**, not 55. This device overlap is different from a collision where the same group already occurs in the payload assignments and a ring; Intune pauses that collision for correction. Check both group IDs and resolved device membership.
+
+[Pausing or canceling](https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment) stops future ring progression but retains prior assignments. It does not uninstall an app or restore an old policy. Editing the payload can update devices already assigned and later rings, so ring timing does not freeze a version. Define separate rollback and success checks. A final All devices/All users ring replaces prior Required include-group assignments while preserving exclusions; assess that broad scope before activation.
+
 ### Microsoft 365 Apps lifecycle
 
 Define architecture, apps, languages, update channel, version, shared-computer activation and existing-install migration. Deploy during Autopilot only if reliable day-zero requirements justify provisioning delay. Office Deployment Tool can create controlled installation configurations; Intune and Microsoft 365 Apps admin center can deploy/manage policy and update behavior under current capabilities.
@@ -261,7 +307,7 @@ Separate install configuration from Office cloud policy and security baselines. 
 
 [Intune app protection policies](https://learn.microsoft.com/en-us/intune/intune-service/apps/app-protection-policy) manage organizational data in supported applications, including on enrolled and unenrolled devices. Controls can require PIN/biometric, encrypt app data, restrict copy/paste/save/open-in, require minimum app/OS state and selectively wipe corporate data. MAM protects an application data boundary; it does not make the entire personal device compliant.
 
-Conditional Access can require an approved client app and/or app protection policy for supported mobile access. Build the app policy, deploy to a test population, validate supported applications and broker/authenticator prerequisites, then stage Conditional Access. Preserve a supported onboarding path so the policy does not block the user before protection can apply.
+For new Conditional Access policies, use **Require app protection policy** for supported mobile access. The [approved-client-app migration guidance](https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app) says the old grant became read-only June 30, 2026: policies using it cannot be newly created or edited, but existing enabled policies still enforce and can be disabled/deleted. Earlier March retirement advice and migration instructions describing edits are historical. Plan a replacement policy and test protection/enforcement before retiring the old policy; do not assume its restrictions disappeared. Build the app policy, deploy to a test population, validate supported applications and broker/authenticator prerequisites, then stage Conditional Access. Preserve a supported onboarding path so the policy does not block the user before protection can apply.
 
 App configuration policies deliver application settings. Managed-device configuration uses the MDM channel; managed-app configuration can target the MAM/application channel. A configuration policy does not enforce data transfer rules unless the corresponding app-protection capability does. Confirm key/value schema, application version, target/context and result.
 
@@ -302,6 +348,10 @@ Treat a recommendation as a hypothesis with evidence:
 
 Do not paste sensitive device data into an unapproved AI service. Agent action remains constrained by identity, Intune roles, scope and current product controls; it does not transfer administrator accountability.
 
+**Agent-specific lifecycle and identity matter:** The general agent overview still lists Device Offboarding Agent, but its [specific lifecycle page](https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent) says it was removed June 1, 2026. Use current device-lifecycle/remediation workflows instead of building a lab around that retired agent.
+
+The [Vulnerability Remediation Agent](https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent) remains public preview with Windows/application scope, public-cloud and license/plugin prerequisites. It uses its own agentic user and delegated Intune/Defender permissions; an administrator's access does not automatically transfer. Runs remain disabled until permissions and the readiness check pass. The June release describes a 90-day transition from human identity; check the tenant banner and move existing agents rather than relying on indefinite human-token renewal. Transition is one-way and preserves run history. Marking a suggestion applied records the administrator's action; verify actual device remediation separately.
+
 ### Reporting, Endpoint Analytics, and remediations
 
 Intune reports include operational, organizational and historical views with filters, export and platform-specific detail. Azure Monitor/Log Analytics integration and workbooks can support retained/custom analysis for exported diagnostic categories. Define report freshness, time zone, denominator, ownership and response before building a dashboard.
@@ -313,6 +363,14 @@ Remediations use a detection script and a remediation script on a schedule under
 Advanced Analytics can surface anomalies and risk-based recommendations. Correlation is not root cause. Compare versions, hardware, apps, policy, location and time; reproduce; then pilot the proposed change.
 
 Monitor tenant status and Intune service communications alongside Message center and Microsoft 365 Service Health. Establish operational baselines for enrollment success, compliance drift, policy conflicts, app failure, update currency, check-in, performance and support. Configure alerts/notifications where supported, but assign an owner and response runbook—an unread alert is not a control.
+
+#### Worked example — detection, execution and verification are separate
+
+For a harmless lab setting, use a detector with three outcomes: known correct → exit 0; known incorrect → exit 1; unable to read → a distinct error with diagnostic output. [Remediations](https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations) runs the fix only for detection exit **1**. An access-denied exception must not be casually translated into “setting absent, fix it.” Keep diagnostics short, avoid reboot commands, respect signature/encoding and execution-context requirements, and choose an explicit local-time or UTC schedule.
+
+Of 12 lab devices, eight return correct, three incorrect and one unknown. Three are remediation candidates; the unknown remains an investigation. If all three fixes return success but subsequent detection finds only two corrected, confirmed healthy devices total **ten**, with one unresolved and one unknown. Job success is not proof of the desired state.
+
+[Custom compliance](https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings) uses a different contract: discovery output plus JSON comparison rules. It reports state for compliance/access decisions rather than automatically executing a paired fix. Current docs cover Windows PowerShell and Linux/macOS shell scripts with platform/cloud conditions. Windows discovery normally runs every eight hours; a user's Check Compliance runs discovery without fetching an updated script, and push notifications do not trigger it on demand. Keep this distinct from newer client-driven built-in compliance signals.
 
 ### Alert rules for compliance drift, enrollment failure, and configuration conflict
 
@@ -347,7 +405,7 @@ Keep separate alerts when their source latency or response differs. A once-daily
 
 ### Scenario 1: BYOD mobile access without full enrollment
 
-The business permits Outlook and Teams on personal phones but forbids corporate data in personal apps/storage. Select supported apps, deploy app-protection and managed-app configuration to a pilot, require an approved/protected app with Conditional Access, validate broker/authentication prerequisites, copy/paste/save/open-in and selective wipe across Android/iOS. Test both allowed and denied flows. Do not call the device compliant unless it is actually enrolled and evaluated by compliance policy.
+The business permits Outlook and Teams on personal phones but forbids corporate data in personal apps/storage. Select supported apps, deploy app-protection and managed-app configuration to a pilot, require app protection policy with Conditional Access in a supported app, validate broker/authentication prerequisites, copy/paste/save/open-in and selective wipe across Android/iOS. Test both allowed and denied flows. Do not call the device compliant unless it is actually enrolled and evaluated by compliance policy.
 
 ### Scenario 2: Autopilot provisioning fails after an app update
 
@@ -397,6 +455,21 @@ Use Graph/PowerShell to export a bounded device inventory, handling pagination a
 
 ---
 
+### Lab 9 — Model a staged rollout and its recovery
+
+Create synthetic groups with overlapping device membership, a scoped exclusion and two rings. Calculate the unique target union. In a disposable licensed tenant, or as a tabletop, create a preview deployment for a harmless app; record payload/version, group IDs, timing, permission and approval evidence. Observe assignment versus installation separately. Pause before the later ring, prove earlier assignments remain, and design a separate uninstall/reversion path. Test a same-group assignment collision without expanding production scope.
+
+**Evidence:** target set, exclusion, before/after assignment, installation/detection, pause/cancel and recovery results. **Cleanup:** remove disposable assignments and app/resources; canceling alone does not remove them.
+
+### Lab 10 — Validate recovery and uncertain telemetry
+
+Build a backup/restore matrix for version, join, account, policy and OOBE/first-sign-in path. Test one allowed and one unsupported/unconfigured case on disposable devices if available; separately verify file protection. Compare a single-device query with fleet inventory and label collection age, missing devices and duplicate component rows. Tabletop a detector that returns correct, incorrect and read-error states; verify that only the intended state requests remediation and rerun detection after a fix.
+
+**Evidence:** policy/state matrix, restore scope, distinct-device denominator, detector outcomes and cleanup plan. No device, tenant, Graph mutation, script deployment, restore or preview feature was executed during this repository review.
+
+---
+
+
 ## Knowledge checks
 
 1. **Join versus enrollment?** Join/register creates Entra device identity; enrollment establishes Intune management.
@@ -441,29 +514,52 @@ Use Graph/PowerShell to export a bounded device inventory, handling pagination a
 
 ---
 
+### Additional reasoning checks
+
+40. **Are 90 compliant devices out of 100 reported proof of 90% compliance across a 120-device fleet?** No: 90% of reported devices, 75% confirmed coverage of the expected fleet, and 20 unobserved.
+41. **Does canceling a deployment revert earlier devices?** No; prior assignments remain and rollback is separate.
+42. **Do groups 1–20 and 16–50 target 55 devices?** No, their union has 50 distinct devices.
+43. **Does an eligible default-on backup imply restore is enabled?** No; restore remains independently configured and files need separate protection.
+44. **Does old approved-client-app grant retirement mean existing policies stopped enforcing?** No; current guidance says enabled policies continue enforcing in read-only form. New policies use app protection.
+45. **Can every nonzero detection exit code trigger a remediation?** No; only exit 1 triggers the fix. Preserve read errors as uncertainty rather than false detection.
+46. **Does an empty live query prove no vulnerable devices?** No; first prove connectivity, permission, scope, collection/result completeness and freshness.
+47. **Can 80 baseline-ready and 90 VBS-ready devices establish 80 hotpatch candidates?** No; their intersection may be smaller, and other prerequisites remain.
+
+---
+
+
 ## Places to learn
 
 This is a curated starting point, **not a complete list**. It is not meant to be consumed in full. Choose one current primary route, build a real lab, and use assessment results plus the July 2026 blueprint to select supplements. Older MD-102 courses may omit Intune Suite, device preparation changes, automation/reporting, and Security Copilot agents.
 
-The eight official paths linked from the current MD-102 course total **29 hours 46 minutes** before labs and review.
+The eight official paths currently list **34 modules**. The earlier **29 hours 46 minutes** and per-path times below are historical metadata; current pages did not expose runtimes in this retrieval. Budget separately for labs and review.
 
 They are [prepare infrastructure](https://learn.microsoft.com/en-us/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/) (4h44), [manage and maintain devices](https://learn.microsoft.com/en-us/training/paths/manage-maintain-devices-intune/) (3h56), [manage applications](https://learn.microsoft.com/en-us/training/paths/manage-applications-intune/) (4h45), [protect devices](https://learn.microsoft.com/en-us/training/paths/protect-devices-intune/) (5h02), [automate and optimize](https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/) (2h36), [support operational excellence](https://learn.microsoft.com/en-us/training/paths/support-operational-excellence-intune/) (2h15), [extend with Intune Suite](https://learn.microsoft.com/en-us/training/paths/extend-intune-suite/) (3h13), and [deliver cloud-hosted desktops](https://learn.microsoft.com/en-us/training/paths/deliver-cloud-hosted-desktops/) (3h15).
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/) | Public | 1–2 hours initially; 15 minutes on each recheck |
-| Eight self-paced paths from [MD-102T00](https://learn.microsoft.com/en-us/training/courses/md-102t00) | Public | 29 hours 46 minutes listed; allow 45–70 hours with exercises, device testing and notes |
+| Eight self-paced paths from [MD-102T00](https://learn.microsoft.com/en-us/training/courses/md-102t00) | Public | Historical 29 hours 46 minutes; allow an estimated 45–70 hours with exercises, device testing and notes |
 | MD-102T00 instructor-led course | Paid/partner delivery | 5 days listed |
 | [Microsoft MD-102 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment?assessment-type=practice&assessmentId=76&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
-| [Pluralsight MD-102 path](https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102) with Glenn Weadock | Paid | 13 hours across five courses plus a practice exam; 2026 core courses are current, but verify July agent/automation coverage |
-| [O'Reilly/Packt MD-102 video](https://www.oreilly.com/videos/md-102-endpoint-administrator/9781836208396/) | Paid | 23 hours 14 minutes; May 2024 foundation that needs all July 2026 changes supplemented |
-| [Udemy MD-102 full course](https://www.udemy.com/course/microsoft-certified-endpoint-administrator-md-102/) | Paid | 15 hours 50 minutes; updated February 2026, so supplement the July blueprint changes |
-| [Udemy current-blueprint practice](https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/) by Joshua Ravnjak | Paid | 180 original questions; allow about 6–10 hours for attempts and source-based remediation; updated August 2026 |
+| [Pluralsight MD-102 path](https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102) with Glenn Weadock | Paid | 13h19 across five listed courses (path rounds to 13 hours), plus a practice exam; introduction September 2024, other courses March–May 2026. Public metadata only; July/October coverage unverified |
+| [O'Reilly/Packt MD-102 video](https://www.oreilly.com/videos/md-102-endpoint-administrator/9781836208396/) | Paid | Historical 23h14, May 2024; retrieval blocked. Current availability/content unverified; supplement later objectives |
+| [Udemy MD-102 full course](https://www.udemy.com/course/microsoft-certified-endpoint-administrator-md-102/) | Paid | Historical 15h50, February 2026; retrieval blocked. Current runtime/scope unverified |
+| [Udemy current-blueprint practice](https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/) by Joshua Ravnjak | Paid | Historical listing: 180 questions and August 2026 update; retrieval blocked. Originality/coverage not independently established; 6–10 hours is a planning estimate |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) and [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor) | Public | 2–8 hours selectively for current Intune, Windows, Entra and Defender demonstrations; not a fixed MD-102 course |
 | [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) and [public repositories](https://github.com/johnthebrit) | Public | 2–8 hours selectively for Entra, Conditional Access, Windows 365, security and architecture foundations; no exact current MD-102 path confirmed |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Schedule dependent; use the listed event start/end times after partner sign-in |
 
 No exact current Whizlabs or MeasureUp MD-102 product page was independently verified during this review, so neither is inferred. Never use resources claiming recalled live questions. Start with Microsoft's free Practice Assessment; add a paid bank only when its explanations and question style close a specific gap.
+
+### Two blog readings with a practical task
+
+| Reading | Learning task | Boundaries |
+|---|---|---|
+| [Windows App Management in Microsoft Intune](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194), Zachary Cavanell, Microsoft Mechanics, April 27, 2026; demonstration by Nicole Zhao | Budget 20–30 minutes to read the public transcript and sketch inventory → package → assignment → installation → update evidence. Identify where a mutable payload can affect an earlier ring. | Article/transcript reviewed, video and tenant not tested. Its private-preview deployment label is historical; current detailed docs say public preview. The separate automatic-update and deployment demonstrations do not establish that those options can be combined. |
+| [Windows settings backup becoming a new resilience baseline](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757), Miranda Leschke, Windows IT Pro Blog, July 6, 2026 | Budget 20–30 minutes for a Not Configured/Enabled/Disabled backup-policy table and a separate restore column. Add OS, geography/cloud and file-protection checks. | Main article reviewed, linked video not watched. Default-on is scoped to eligible 26H2 behavior; explicit policy is honored, restore stays separate, and DMA/sovereign restrictions matter. Do not infer every tenant/device already received it. |
+
+Public catalogs and official modules were inspected; paid lessons/questions were not accessed. O'Reilly and both Udemy pages were blocked. Channel/partner responses were shells or profile metadata, and the direct Practice Assessment did not expose question content. Use dated resource metadata to plan study, not as proof of complete current coverage. The existing Agent 365 announcement remains adjacent context, not an Intune-agent availability matrix.
 
 ## Final readiness checklist
 
@@ -475,5 +571,5 @@ No exact current Whizlabs or MeasureUp MD-102 product page was independently ver
 - I can package, assign, detect, update, protect, configure, selectively wipe and troubleshoot applications.
 - I can automate with Graph/PowerShell safely and evaluate Security Copilot agent recommendations with human accountability.
 - I can build, test, and operate distinct alert paths for enrollment failure, compliance drift, and configuration conflict while accounting for source latency and false positives.
-- I completed or tabletop-tested all eight labs and can prove both allowed and denied outcomes.
+- I completed or tabletop-tested all ten labs and can prove both allowed and denied outcomes.
 - I passed an independent readiness check without relying on recalled live-exam content.

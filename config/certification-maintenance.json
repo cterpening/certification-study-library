@@ -597,6 +597,53 @@
       "review_on": "2026-10-27",
       "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql",
       "action": "Recheck compaction preview/update-policy scope, recent PITR immutability exclusions and SQL Database LTR time-based versus legal-hold status. Update examples from product docs; do not auto-enable preview features."
+    },
+    {
+      "id": "md102-september-release-rollout",
+      "exam_codes": [
+        "MD-102"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+      "action": "Recheck future-dated September 28 entries, tenant rollout, deployment preview and Windows compliance signals. Keep daily exports separate from client-driven evaluation; do not backdate availability."
+    },
+    {
+      "id": "md102-legacy-app-grant",
+      "exam_codes": [
+        "MD-102",
+        "SC-300",
+        "MS-102"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "action": "Check approved-client-app June 30 read-only behavior and migration wording. New app-protection policies replace legacy recommendations; enabled legacy policies still enforce. Apply corrections in related exam reviews."
+    },
+    {
+      "id": "md102-agent-identity-transition",
+      "exam_codes": [
+        "MD-102"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+      "action": "Recheck agentic-identity transition/readiness and June release 90-day boundary with tenant notices; do not assume human-token renewal remains available. Keep removed Device Offboarding Agent separate from stale overview listing."
+    },
+    {
+      "id": "md102-backup-default-scope",
+      "exam_codes": [
+        "MD-102"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+      "action": "Recheck 26H2 default-on release, region/cloud restrictions and separate restore policy. Verify first-sign-in/OOBE requirements against current docs rather than historical FAQ comparison rows."
+    },
+    {
+      "id": "md102-arm32-app-support",
+      "exam_codes": [
+        "MD-102"
+      ],
+      "review_on": "2026-11-01",
+      "url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+      "action": "Recheck December 2026 security-update end for 32-bit Microsoft 365 Apps on Arm and current hotpatch CHPE compatibility. Preserve legacy-app exclusions and architecture validation."
     }
   ]
 }

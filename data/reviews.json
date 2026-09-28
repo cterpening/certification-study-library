@@ -1982,16 +1982,52 @@
       "exam_code": "MD-102",
       "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/md-102-official-objectives.txt",
       "blueprint_snapshot_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
       "objective_coverage": [
-        {"objective_group": "Prepare infrastructure for devices", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–2"]},
-        {"objective_group": "Manage and maintain devices", "guide_sections": ["Section 2", "Autopilot scenario", "Labs 3–4"]},
-        {"objective_group": "Protect devices", "guide_sections": ["Section 3", "Agent recommendation scenario", "Lab 5"]},
-        {"objective_group": "Manage and secure applications", "guide_sections": ["Section 4", "BYOD and Autopilot scenarios", "Labs 6–7"]},
-        {"objective_group": "Optimize endpoint operations by using automation, monitoring, and reporting", "guide_sections": ["Section 5 — Alert rules for compliance drift, enrollment failure, and configuration conflict", "All integrated scenarios", "Lab 8", "Knowledge checks 37–39"]}
+        {
+          "objective_group": "Prepare infrastructure for devices",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Manage and maintain devices",
+          "guide_sections": [
+            "Section 2",
+            "Autopilot scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Protect devices",
+          "guide_sections": [
+            "Section 3",
+            "Agent recommendation scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Manage and secure applications",
+          "guide_sections": [
+            "Section 4",
+            "BYOD and Autopilot scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Optimize endpoint operations by using automation, monitoring, and reporting",
+          "guide_sections": [
+            "Section 5 — Alert rules for compliance drift, enrollment failure, and configuration conflict",
+            "All integrated scenarios",
+            "Lab 8",
+            "Knowledge checks 37–39"
+          ]
+        }
       ],
       "checks": {
         "official_objectives_mapped": true,
@@ -2000,8 +2036,13 @@
         "links_and_local_references_valid": true,
         "exam_integrity_policy_passed": true
       },
-      "link_evidence": {"unique_external_links": 42, "reachable": 39, "access_blocked": 3, "missing_or_error": 0},
-      "notes": "Every July 24, 2026 subobjective is mapped to a device identity, enrollment, targeting, policy, application, access, operating, evidence, failure, or recovery decision. Three scenarios, eight labs, and 39 checks include source-aware alert paths and controlled operational evidence. All 42 URLs are cataloged: 39 reachable, three O'Reilly/Udemy pages access-blocked, and none missing. The September 7 watch maps blueprint-era Intune Suite wording to current Advanced capabilities and bounds Agent 365 as adjacent evidence."
+      "link_evidence": {
+        "unique_external_links": 59,
+        "reachable": 56,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Whole guide read; 83 October objectives in 13 groups individually mapped while retaining July 24 baseline. Add five worked examples, two labs and eight answers (ten labs/47 answered checks total), two qualified blog readings and five dated follow-ups. Correct legacy app-grant guidance and expand deployment rollback, backup/restore, live versus inventory queries, hotpatch, remediation and agent lifecycle/identity. Catalog metadata is qualified and September 28 entries remain upcoming. Ten offline checks passed; no tenant/device execution; human review pending. See docs/research/2026-09-27-md-102-deep-review.md"
     },
     {
       "id": "ms-700-2026-09-01-source-validation",

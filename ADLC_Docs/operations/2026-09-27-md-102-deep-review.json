@@ -1,0 +1,2971 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "MD-102",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "b7a2003e1f1970af9b7e57133993fc40f108ab7a449fcb68e81e0f24fdd3e725",
+  "guide_after_sha256": "6a5ffcbc01af8c6839ccac31b5390d7244af71ae6f2c4a7c7df96a49f7060d01",
+  "prior_records": {
+    "exam": {
+      "code": "MD-102",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Managing and Securing Microsoft 365 Endpoints by Using Intune",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+      "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+      "blueprint_last_checked": "2026-09-05",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Strong Windows client and Microsoft 365 administration plus practical Microsoft Intune, Entra device identity and Conditional Access, Autopilot, Android/Apple/macOS enrollment, Defender for Endpoint, application packaging, endpoint security, Windows 365, PowerShell, Graph, reporting and troubleshooting experience."
+    },
+    "review": {
+      "id": "md-102-2026-09-01-source-validation",
+      "exam_code": "MD-102",
+      "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-05",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/md-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+      "objective_coverage": [
+        {
+          "objective_group": "Prepare infrastructure for devices",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Manage and maintain devices",
+          "guide_sections": [
+            "Section 2",
+            "Autopilot scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Protect devices",
+          "guide_sections": [
+            "Section 3",
+            "Agent recommendation scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Manage and secure applications",
+          "guide_sections": [
+            "Section 4",
+            "BYOD and Autopilot scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Optimize endpoint operations by using automation, monitoring, and reporting",
+          "guide_sections": [
+            "Section 5 — Alert rules for compliance drift, enrollment failure, and configuration conflict",
+            "All integrated scenarios",
+            "Lab 8",
+            "Knowledge checks 37–39"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 42,
+        "reachable": 39,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Every July 24, 2026 subobjective is mapped to a device identity, enrollment, targeting, policy, application, access, operating, evidence, failure, or recovery decision. Three scenarios, eight labs, and 39 checks include source-aware alert paths and controlled operational evidence. All 42 URLs are cataloged: 39 reachable, three O'Reilly/Udemy pages access-blocked, and none missing. The September 7 watch maps blueprint-era Intune Suite wording to current Advanced capabilities and bounds Agent 365 as adjacent evidence."
+    },
+    "sources": [
+      {
+        "id": "md-102-blueprint",
+        "title": "Study guide for Exam MD-102",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Authoritative skills measured as of July 24, 2026."
+      },
+      {
+        "id": "md-102-credential",
+        "title": "Microsoft 365 Certified: Endpoint Administrator Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Official active credential page; 100-minute assessment and annual renewal listed."
+      },
+      {
+        "id": "md-102-practice-assessment",
+        "title": "MD-102 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment?assessment-type=practice&assessmentId=76&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Free official readiness assessment; not an exam dump."
+      },
+      {
+        "id": "md-102-entra-devices",
+        "title": "Microsoft Entra device identity overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Registered, joined and hybrid joined device identity boundary."
+      },
+      {
+        "id": "md-102-intune-enrollment",
+        "title": "Microsoft Intune enrollment documentation",
+        "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Cross-platform Intune enrollment hub."
+      },
+      {
+        "id": "md-102-compliance",
+        "title": "Get started with device compliance policies in Intune",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/device-compliance-get-started",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Compliance policy, tenant setting and Conditional Access relationship."
+      },
+      {
+        "id": "md-102-windows-hello",
+        "title": "Windows Hello for Business overview",
+        "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Device-bound strong authentication architecture and deployment guidance."
+      },
+      {
+        "id": "md-102-windows-laps",
+        "title": "Windows LAPS overview",
+        "url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Local administrator password rotation and directory backup guidance."
+      },
+      {
+        "id": "md-102-autopilot-overview",
+        "title": "Windows Autopilot overview",
+        "url": "https://learn.microsoft.com/en-us/autopilot/overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Current classic Windows Autopilot lifecycle overview."
+      },
+      {
+        "id": "md-102-autopilot-compare",
+        "title": "Compare Windows Autopilot device preparation and Windows Autopilot",
+        "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Current capability comparison; last updated August 27, 2026 and explicitly volatile."
+      },
+      {
+        "id": "md-102-windows-365-provisioning",
+        "title": "Provisioning in Windows 365",
+        "url": "https://learn.microsoft.com/en-us/windows-365/enterprise/provisioning",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Provisioning policy, network, image, configuration and assignment concepts."
+      },
+      {
+        "id": "md-102-device-profiles",
+        "title": "Microsoft Intune device configuration profiles",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Cross-platform Intune configuration profile guidance."
+      },
+      {
+        "id": "md-102-intune-suite",
+        "title": "Microsoft Intune add-ons and Intune Suite",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/intune-add-ons",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Current Intune Suite capability and licensing overview."
+      },
+      {
+        "id": "md-102-endpoint-security",
+        "title": "Microsoft Intune endpoint security",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-security",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Endpoint security policy workload and control overview."
+      },
+      {
+        "id": "md-102-defender-integration",
+        "title": "Microsoft Defender for Endpoint with Intune",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Connector, onboarding, risk, EDR and compliance integration guidance."
+      },
+      {
+        "id": "md-102-app-protection",
+        "title": "Microsoft Intune app protection policies",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/apps/app-protection-policy",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "MAM data-protection boundary for managed and unmanaged devices."
+      },
+      {
+        "id": "md-102-graph-intune",
+        "title": "Microsoft Graph Intune API overview",
+        "url": "https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Official automation API overview."
+      },
+      {
+        "id": "md-102-security-copilot-agents",
+        "title": "Security Copilot agents in Intune",
+        "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Current agent overview; availability, roles and capabilities are volatile."
+      },
+      {
+        "id": "md-102-endpoint-analytics",
+        "title": "Endpoint Analytics overview",
+        "url": "https://learn.microsoft.com/en-us/intune/monitor-troubleshoot",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Current Intune monitoring and troubleshooting hub, including Endpoint Analytics and Advanced Analytics."
+      },
+      {
+        "id": "md-102-course",
+        "title": "MD-102T00 Manage and secure Microsoft 365 endpoints using Intune",
+        "url": "https://learn.microsoft.com/en-us/training/courses/md-102t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Five-day course syllabus linking eight current paths."
+      },
+      {
+        "id": "md-102-path-prepare",
+        "title": "Prepare infrastructure for devices using Intune and Entra ID",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 4 hours 44 minutes."
+      },
+      {
+        "id": "md-102-path-manage",
+        "title": "Manage and maintain devices using Intune",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-maintain-devices-intune/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 3 hours 56 minutes."
+      },
+      {
+        "id": "md-102-path-applications",
+        "title": "Manage applications using Intune",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-applications-intune/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 4 hours 45 minutes."
+      },
+      {
+        "id": "md-102-path-protect",
+        "title": "Protect devices using Intune",
+        "url": "https://learn.microsoft.com/en-us/training/paths/protect-devices-intune/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 5 hours 2 minutes."
+      },
+      {
+        "id": "md-102-path-automate",
+        "title": "Automate and optimize endpoint management using Intune",
+        "url": "https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 2 hours 36 minutes."
+      },
+      {
+        "id": "md-102-path-operations",
+        "title": "Support operational excellence and readiness using Intune",
+        "url": "https://learn.microsoft.com/en-us/training/paths/support-operational-excellence-intune/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 2 hours 15 minutes."
+      },
+      {
+        "id": "md-102-path-suite",
+        "title": "Extend endpoint capabilities using Intune Suite",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extend-intune-suite/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 3 hours 13 minutes."
+      },
+      {
+        "id": "md-102-path-cloud-desktops",
+        "title": "Deliver cloud-hosted desktops using Azure Virtual Desktop and Windows 365",
+        "url": "https://learn.microsoft.com/en-us/training/paths/deliver-cloud-hosted-desktops/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Listed duration 3 hours 15 minutes."
+      },
+      {
+        "id": "md-102-pluralsight",
+        "title": "Microsoft Windows Endpoint Administrator MD-102 path",
+        "url": "https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Five courses, 13 hours and practice exam listed; four core courses updated March-May 2026."
+      },
+      {
+        "id": "md-102-oreilly",
+        "title": "MD-102 Endpoint Administrator video",
+        "url": "https://www.oreilly.com/videos/md-102-endpoint-administrator/9781836208396/",
+        "publisher": "Packt / O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "May 2024, 23 hours 14 minutes; supplement all July 2026 changes."
+      },
+      {
+        "id": "md-102-udemy-course",
+        "title": "Microsoft Certified Endpoint Administrator MD-102",
+        "url": "https://www.udemy.com/course/microsoft-certified-endpoint-administrator-md-102/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "15 hours 50 minutes, updated February 2026; supplement July 2026 changes."
+      },
+      {
+        "id": "md-102-udemy-practice",
+        "title": "MD-102 Practice Exams 2026",
+        "url": "https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Joshua Ravnjak, 180 original questions, updated August 2026 and explicitly mapped to July 24 objectives."
+      },
+      {
+        "id": "md102-intune-azure-monitor",
+        "title": "Send Intune log data to Azure Monitor",
+        "url": "https://learn.microsoft.com/en-us/intune/governance/integrate-azure-monitor",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "MD-102"
+        ]
+      },
+      {
+        "id": "md102-intune-compliance-reports",
+        "title": "Monitor Intune device compliance policies",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "MD-102"
+        ]
+      },
+      {
+        "id": "md102-azure-monitor-log-alert",
+        "title": "Create an Azure Monitor log search alert rule",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "MD-102"
+        ]
+      },
+      {
+        "id": "md102-intune-whats-new",
+        "title": "What's new in Microsoft Intune",
+        "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "MD-102"
+        ],
+        "notes": "Weekly service feed for staged Intune changes, including the Advanced capabilities label formerly known as Microsoft Intune Suite."
+      },
+      {
+        "id": "microsoft-agent-365-ga-announcement",
+        "title": "Microsoft Agent 365 generally available",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-650",
+          "AB-900",
+          "MD-102",
+          "PL-900"
+        ],
+        "notes": "Product-level GA anchor; individual integrations and capabilities retain separate preview and rollout boundaries."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "5ee3726065481b93586f97776fbbd7b538b1c85c02c82d2349b7f45fbddb2a6b",
+      "guide_sections": "1 / Device identity comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f443a01f115b7cb26ea57fd81a80e0bafb189f83002192c86ac857e1c345acf0",
+      "guide_sections": "1 / Join and Lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "0e4d44df1fe715e28f7a2950a85977ec44ceb7bfada0b072c9eb7cb39307b4d2",
+      "guide_sections": "1 / Register and Lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "f95b6688ac606a88e4caa9333ee7ed5d6c7c85f3cc26230f3f48ca89cf72c288",
+      "guide_sections": "1 / Dynamic groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "80bdb22f766be2d84a447b8e0eea2ec4f0a4146169dabaec9bb4cac912ecc6ee",
+      "guide_sections": "1 / Enrollment settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "b2beed1ff2547ee3517ee958936ff68cc35f0abeb9613f4d93da393aec507e62",
+      "guide_sections": "1 / Windows automatic enrollment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "dc408c125796023ca6eca55e4750c47530ed36df79f3e73f297efc65c3847923",
+      "guide_sections": "1 / Apple personal enrollment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "d71b31a40f2c489d9e917666c31a9e2a4221e67eb6461e71d93b6896547b9dde",
+      "guide_sections": "1 / Android modes/restrictions/troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "a07bb4f9e06023db3f6f0933a19bd48fdde2e4595d2662e2ee08d8a9e3429408",
+      "guide_sections": "1 / Apple Business Manager",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "8ca4b4428e5de5cefd6efbc4cb83cb602df365d196d615da0e77cfb8997676d2",
+      "guide_sections": "1 / Knox/zero-touch",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e5ee74dddbeca80129f427a90ae6f87d6abb1ee5c1e81c4cf5f8064249febcc9",
+      "guide_sections": "1 / RBAC and Windows 365 roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3ec756472f75e6a74a0dfdee7c2f451d54eb738417956be4bb2e1825846d5d59",
+      "guide_sections": "1 / Scope groups/tags",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "6fa3439f06cc1cf1faa456eb374679e487dfcdc0e104a10ea9910102a773388f",
+      "guide_sections": "1 / Multi-admin approval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "fb299c4fa09f362d12eb339f5ee9939a99ff2ff555bf5cb855555e91b3151b80",
+      "guide_sections": "1 / Compliance and rate example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "a06e9cfc1a763992d302b4567fc9698c1e5eda1cf608d2219eefef092078cba1",
+      "guide_sections": "1 / Compliance/access pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "eeec0ae48a910400b59f8980f2e203dbb26b0fc988cd561c1f9e15de0df3ea8c",
+      "guide_sections": "1 / Hello",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "513f5366bb2ce0bde79b378b07c801c8a4d77afd7ad1f793252cf0b389028961",
+      "guide_sections": "1 / LAPS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "f6f848f2853255a4a019ae397fb5cfd91e3b288ddfce0edd3b1bfcba4a2810f6",
+      "guide_sections": "1 / Local groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "64dbbcef0be5ec9608201c68f915a47be692b5ba458dc98e15f8d99b23e59390",
+      "guide_sections": "2 / Autopilot comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "875f5022af77a5e412fdaf8e94f9cee5123be8c831316ea0d058c1ce6b1937f1",
+      "guide_sections": "2 / Mode requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "089de3fa07ee4f7e83d5102cc653e8fcf33392350158063f3a9a88fc1359bc4f",
+      "guide_sections": "2 / Name templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "d6053897c1dddeeae21d0e591dd53de042dc6eb571daa5b8a1571ebd034fed1b",
+      "guide_sections": "2 / Provisioning and Lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "8bcac33d0bdbf08a526b3fabf2ba47f6212f72223fa17b077a95a202eed8a2e3",
+      "guide_sections": "2 / ESP",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "50fb9fa57a28020c489311f9143e587565b9e7c576410e330557598e702771ec",
+      "guide_sections": "2 / Windows 11 readiness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "531b1c2328977f985ae5defe0e999396ea68a8798f80a771eaf5ab4e4925c157",
+      "guide_sections": "2 / Cloud PC provisioning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "c3268d51b84082e0511969be7ac434c6ac09385faace0b03251ed88d77882220",
+      "guide_sections": "2 / Backup/restore worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "3213d0b9b4ff057c4a7dd72892e6da770e303afc7bb683756b8e7867e7e471a4",
+      "guide_sections": "2 / Windows Settings Catalog/ADMX/GP analytics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "859765de7cf42dc52352987a3f21faf0509ce4e7cc592ceb29c117a69ff67f28",
+      "guide_sections": "2 / Android profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "838e650a726415f9643a5bd50896f09ad43b215ed2d80df2015da86bff2bd328",
+      "guide_sections": "2 / Apple profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "224c22c318ed7357f3e54ebc461ef573664b987a09a71e7f7ea77ccdb18dcc34",
+      "guide_sections": "2 / macOS profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "8385635ac19d042bd858c62b816d29af8ed6e5da7b3caee6ef6208a778c6c33e",
+      "guide_sections": "2 / Specialty devices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "a432edb51bdc96c2291629ccfa1f9c73118b7e55ecdb70fd41dd4f0876854d03",
+      "guide_sections": "2 / Filters/enrollment-time grouping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "c6f2b3348b1ba5ce5d03bd189f9fa303daa43fc9f07f5b8cd0b2c58a5dde57d9",
+      "guide_sections": "2 / EPM",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "2d374051d6b816f89a60af3390133dd4c9964aa924194f70c30bbaa0050df055",
+      "guide_sections": "2 / Enterprise App Catalog; 4 / Deployments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "820ce47c6f5ad9f934a0c889a68de94e4e51b5e7ad49e21b07836b27318e5fd1",
+      "guide_sections": "2 / Remote Help scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "d8b451cd6384d43c2fb00251286be97561f7cb9ab030f2b03ee0f1fa79cb19e9",
+      "guide_sections": "2 / Cloud PKI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "5cc7f34f5bdd80b877806612be9195d230a65d2ce5df2c7d72e7b517d5185b77",
+      "guide_sections": "2 / Tunnel VPN gateway/MAM",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "384027d58799c7f0ca0160f7da1c43cbe6f2c8400dc3318208649822f09fa964",
+      "guide_sections": "2 / Advanced Analytics; 5 / Cohort evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "3cc6e676617430b711a829330b935bb961563b68680df5754ae62d9b8ecd8e66",
+      "guide_sections": "2 / Remote action table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "8906b33c114d59a49c8d136835502eb0ddfd335f041af22c4d90ead745732392",
+      "guide_sections": "2 / Bulk targeting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "61d4fa34be9097ea6a21cd766b6c06653abdf003d530ea69efe026838098d254",
+      "guide_sections": "2 / Defender intelligence action",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "a209d75a6a340e68fcecc274d7ecf586f303214ad356cb40245d6cf22c67ba9e",
+      "guide_sections": "2 / Recovery-key rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "b0b9cb67a54f4ac38cc9279cc31f9b7205271d17628ff2bb86e5d64c17bb11ad",
+      "guide_sections": "2 / LAPS rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "3989c62984c972d03177dbc35139ec37cf281b624a5346db1dc6aacc2b8d4b0f",
+      "guide_sections": "2 / Live/fleet query distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "8bd32d92848922efcce4f82485a8cb83b20cf95bf8ebb41c32b1b2ce08c813aa",
+      "guide_sections": "2 / Diagnostics and Troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "da32e8da03d3ea535d7d2c7daa5fbfc8a9fcd53db1e30c80096635a9233e60c9",
+      "guide_sections": "3 / Antivirus",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "6fd6f430b880ef08e34056bbd7c433ccd44458cab9e6d3254bf8289e44699eea",
+      "guide_sections": "3 / Encryption/recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "0a221411f499d5d5887b009d704ed5e775c1e7806a6bf5a7f7f947c6ebfc6aff",
+      "guide_sections": "3 / Firewall",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "29206e8ac3deb61d01a4f9dc0b18ee68483f12f842255a566efd1f6886f84b96",
+      "guide_sections": "3 / ASR/Zero Trust",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "d6b8f91da388307a0d813e946eaa7e505e663f22b45c9d5a7fd74138971db97f",
+      "guide_sections": "3 / Baselines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "fc29345f00157f77e09490dacae3aa7471d929cd10e4b03d7dd7e069c7ce2481",
+      "guide_sections": "3 / Defender integration/threat evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "9114f41073f94d316864d4be46c663f5f01a5da9f8d858dbf7ca232bd274bbe0",
+      "guide_sections": "3 / Onboarding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "2c109b96281dbfc8f317c6ee2b763ed02bcb156721e59df0991d2f56b60e2b76",
+      "guide_sections": "3 / App Control",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "c3356f4afc89fe91da8877020e769923226522bdece06f998fb87942b47af9fe",
+      "guide_sections": "3 / Cross-platform update design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "bd4b460acc1840698bd3705470809575dec72557c18e312a6e826f94399b9d5e",
+      "guide_sections": "3 / Rings/feature/quality updates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "deb63511e75320e4ef71582c676807085a860831e2b7c24d9617317fc141b7e2",
+      "guide_sections": "3 / Autopatch and hotpatch example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "73c01421710f7abd0083cd81421b70a519ae1d97663cb00a231377a9a64402ad",
+      "guide_sections": "3 / Apple Settings Catalog updates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "0a06b88192b9ce1d72518efc64697bc9e285df2d2029ae63db8cf03b5a2ffdc1",
+      "guide_sections": "3 / Android FOTA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "6e4b22f83f0248b8a3f632545346c1c895fef8aaa94d0d36663cf0128597b759",
+      "guide_sections": "3 / Delivery Optimization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "bd1578fbab80ed61473ba6f69ff9b0d453d5d5d9b0b8544ccf79d9cf41b9df2d",
+      "guide_sections": "3 / Update monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "1a0192cd9e70baa5193ef244fd68bb8eb303ff270953e26e85c4022c732846eb",
+      "guide_sections": "4 / Packaging",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "c977351bd390fd2001f73656f3526ad9be82c95d6d299228975b31ee1a9a934d",
+      "guide_sections": "4 / Win32/LOB/Store",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "1094feabd3d9f2993c22021d1b8e2e938ab30073f5f570eedf1a8dd6842a09c2",
+      "guide_sections": "4 / Quiet Time",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "097f3e68ac2e3d227547e621f36119a649cbb599dea5398a709596caea5a8fe7",
+      "guide_sections": "4 / Microsoft 365 Apps",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "89da21d4118d8eee5d31074655a19545d525447ce076df0a3f2341c7c039f24c",
+      "guide_sections": "4 / App policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "d98a26441499a1034d60fcca873a815d766b6f370e180b01aefce64c66c613ad",
+      "guide_sections": "4 / Autopilot/ODT",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "8467d45851e5da4ba938e6910c97cc802aa0c89e32fb5ff8150a89ed936f70b1",
+      "guide_sections": "4 / Apps admin center",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "00c6d2d201cef3952da6d64376185e3b2d1ce0a5a0098fff3bf55853ea1dc2db",
+      "guide_sections": "4 / Apple/Google stores",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "2a86fef7ba043020d65c0cf4c746a5021ad4e08e2ac06e277e995e108e36f7f3",
+      "guide_sections": "4 / Detection/troubleshooting and deployment example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "29ff5f037915158b0be6dd1682a64bf2f81c758d1f9e8f0822c6fc351e6268ad",
+      "guide_sections": "4 / MAM/BYOD",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "0cf58c118d175940b2507c56a3cc09a9ee620daee5dd61f40ead4b8af96fcf59",
+      "guide_sections": "4 / App-protection grant and legacy migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "e1e98f52444cd3bda4671457b0036e4aa625bfea42e687a80849cb63f225d232",
+      "guide_sections": "4 / Managed-app/device configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "bee75d39e3b1871d3c60d02e886c50a80e5a408ce8eb4a1c3bcd08f59fb88a33",
+      "guide_sections": "5 / PowerShell/Graph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "8a863648dcb880e721f9a3dbd844b66baf10c1c6909d5faae7cf9703ba8ae019",
+      "guide_sections": "5 / Agent vulnerability evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "c0f07bfd9524d7bda2071628cc8b004bef73e01d6e2543c7b36f788ca0455737",
+      "guide_sections": "5 / Agent recommendations/performance cohort",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "06539fc16b952357251657305de2e44d971b51ddbfdf8269e48b99e7c80304fe",
+      "guide_sections": "5 / Human review/readiness/scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "fe4090bfb0c78243efad1049e93a45c05543586169a562b4ddc7470762eba35a",
+      "guide_sections": "5 / Custom compliance discovery/JSON",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "82dc0e018cee4bf326a16689bad87ce1a4d4251aeb38c703a64cbc6171ff4fa9",
+      "guide_sections": "5 / Reports/exports/workbooks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "517902ec5697867c385fc03d901653edfda755e1db56f5070b79ff28172c4c95",
+      "guide_sections": "5 / Endpoint Analytics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "851b70854b99c24fa22882bda1c1180a5fe9acbc5cee784cc9ecd647bb3f7dee",
+      "guide_sections": "5 / Remediation three-state example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "02f76fba90d9956325122a51a13b465862033744a1f0c3b7f2a749976c13c3d4",
+      "guide_sections": "5 / Reliability/cohorts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "e08bc895783ee8d971a0e51ae68cf343a7d9939e97fad53bcbb326807a6f0cee",
+      "guide_sections": "5 / Tenant health/baselines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "88ddc9c6448625c34f036e06e406b409268e156f67262916bf2450fac6e384b1",
+      "guide_sections": "5 / Three alert paths/source latency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MD-102"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MD-102",
+        "title": "Managing and Securing Microsoft 365 Endpoints by Using Intune",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+        "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+        "snapshot_path": "data\\objective-snapshots\\md-102-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\md-102-official-status.json",
+        "previous_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+        "current_sha256": "26e8777b5fae7deaf934748583696fb4b08c54c06a361b6c31c96d3e5f05f8e3",
+        "previous_status_sha256": "4f7cc3fde97bb61f434fda301ec3f0d845c76730b0bb94098ffc55968b57b3e6",
+        "current_status_sha256": "6fb682a49f28a788a089159a5e1ccc7bbb3e51a48d1515282421aa0a92d0d20f",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 27, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 59,
+    "reachable": 56,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "md-102-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+      "checked_at": "2026-09-28T03:49:26.435237+00:00",
+      "health": {
+        "id": "md-102-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+        "checked_at": "2026-09-28T03:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MD-102: Managing and Securing Microsoft 365 Endpoints by using Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "a45d42695c2590cab3f9f453e89cf907075813556023071eb03d0a041f425fbd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+      "sha256": "9f72bfdec3146d0e6a8e6fad3a9ce04a822cd4c715474c94ecf89a15d9861f2b",
+      "text_characters": 14285
+    },
+    {
+      "id": "md-102-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+      "checked_at": "2026-09-28T03:49:26.436171+00:00",
+      "health": {
+        "id": "md-102-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+        "checked_at": "2026-09-28T03:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Certified: Endpoint Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "85534e1b212f5dc5b0e8f07044a6d10ce82e8d6bbdf63ddff36191b7fc991f73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+      "sha256": "6722b016a46e764f454c98e0b5769f14a9f9976703a3fe80d1bdb9534eacb7f2",
+      "text_characters": 5117
+    },
+    {
+      "id": "md-102-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment?assessment-type=practice&assessmentId=76&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T03:49:26.436592+00:00",
+      "health": {
+        "id": "md-102-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment?assessment-type=practice&assessmentId=76&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T03:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment?assessment-type=practice&assessmentId=76&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "74c4f8b67bea9328e7cdb3a3d44c0984d2b905972146af23ef29b958f3fb11ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment?assessment-type=practice&assessmentId=76&practice-assessment-type=certification",
+      "sha256": "63abf2224de08bd20ce60eb99899a7af299c16780618961fc09e158a14b0e01c",
+      "text_characters": 0
+    },
+    {
+      "id": "md-102-entra-devices",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "checked_at": "2026-09-28T03:49:26.796996+00:00",
+      "health": {
+        "id": "md-102-entra-devices",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+        "checked_at": "2026-09-28T03:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+        "content_type": "text/html",
+        "page_title": "What is device identity in Microsoft Entra ID? - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "58c3782226a1d4e0cf91242a468d7d6ebac6f90000a32488baa44e1abac7ba8a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "sha256": "a71418e2e70293b19ec26e16078490f98b3708d34b1429163903050c82e3693e",
+      "text_characters": 2226
+    },
+    {
+      "id": "md-102-intune-enrollment",
+      "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/",
+      "checked_at": "2026-09-28T03:49:26.804625+00:00",
+      "health": {
+        "id": "md-102-intune-enrollment",
+        "url": "https://learn.microsoft.com/en-us/intune/device-enrollment/",
+        "checked_at": "2026-09-28T03:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-enrollment/",
+        "content_type": "text/html",
+        "page_title": "Device enrollment - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-enrollment/",
+        "duration_signals": [],
+        "signal_fingerprint": "52d8d738e92e2ed04de5404795a09c44e54a847c6db072e438c1ceb3cf359169",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-enrollment/",
+      "sha256": "62ae714c222e17f50bae77e9615ec8dac16c132a7068c4e156cd66c403188eab",
+      "text_characters": 2176
+    },
+    {
+      "id": "md-102-compliance",
+      "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/device-compliance-get-started",
+      "checked_at": "2026-09-28T03:49:26.827602+00:00",
+      "health": {
+        "id": "md-102-compliance",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/device-compliance-get-started",
+        "checked_at": "2026-09-28T03:49:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/overview",
+        "content_type": "text/html",
+        "page_title": "Device compliance policies in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "da2e6f8f45f00c89ca6b4183a6a46e19ac40ea66fd47b5d932ea86816d684dfd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/overview",
+      "sha256": "ba0f42edd5aad50539338cb182963e2af28de20dd7b78ce31ee9d742a48328c1",
+      "text_characters": 13332
+    },
+    {
+      "id": "md-102-windows-hello",
+      "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/",
+      "checked_at": "2026-09-28T03:49:27.089228+00:00",
+      "health": {
+        "id": "md-102-windows-hello",
+        "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/",
+        "content_type": "text/html",
+        "page_title": "Windows Hello for Business overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/",
+        "duration_signals": [],
+        "signal_fingerprint": "1ae46523229a97da9e0392dadeaeb63d470be9b9806f41c90f2842fd45b3726e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/",
+      "sha256": "01de8ca8f12d544b168af3356980776c39f182d51ea871a4839a4a91b0e499b2",
+      "text_characters": 10628
+    },
+    {
+      "id": "md-102-windows-laps",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+      "checked_at": "2026-09-28T03:49:27.090000+00:00",
+      "health": {
+        "id": "md-102-windows-laps",
+        "url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+        "content_type": "text/html",
+        "page_title": "Windows LAPS Overview: Manage Admin Passwords",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "caf79bae0e80742e97145ea30c59cb66ee18077d9e6c876a2be3c8283502c215",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview",
+      "sha256": "fe456487522a95635e5b30a9bf4226328e860bacd7e401f0724b65086c02eb55",
+      "text_characters": 13198
+    },
+    {
+      "id": "md-102-autopilot-overview",
+      "url": "https://learn.microsoft.com/en-us/autopilot/overview",
+      "checked_at": "2026-09-28T03:49:27.364774+00:00",
+      "health": {
+        "id": "md-102-autopilot-overview",
+        "url": "https://learn.microsoft.com/en-us/autopilot/overview",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/autopilot/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of Windows Autopilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/autopilot/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "f92cdd86a2a2b9dffccf653439ee824d4d999a3a9968dbd731cc34ae30d7e347",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/autopilot/overview",
+      "sha256": "00b14678ba586da5a17a22597354a51a806c7c531828c7191432cc31745eeab4",
+      "text_characters": 4219
+    },
+    {
+      "id": "md-102-autopilot-compare",
+      "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+      "checked_at": "2026-09-28T03:49:27.416901+00:00",
+      "health": {
+        "id": "md-102-autopilot-compare",
+        "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+        "content_type": "text/html",
+        "page_title": "Compare Windows Autopilot device preparation and Windows Autopilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+        "duration_signals": [],
+        "signal_fingerprint": "4701f741c7791565b2ca58cca07378a6770a34f257307e99cdf324f163f94dd4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+      "sha256": "ff37178fc22bc9c6f23d143a2d9a213788b129cb561ea10404eafed4e34397fd",
+      "text_characters": 4960
+    },
+    {
+      "id": "md-102-windows-365-provisioning",
+      "url": "https://learn.microsoft.com/en-us/windows-365/enterprise/provisioning",
+      "checked_at": "2026-09-28T03:49:27.418323+00:00",
+      "health": {
+        "id": "md-102-windows-365-provisioning",
+        "url": "https://learn.microsoft.com/en-us/windows-365/enterprise/provisioning",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-365/enterprise/provisioning",
+        "content_type": "text/html",
+        "page_title": "Provisioning in Windows 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-365/enterprise/provisioning",
+        "duration_signals": [],
+        "signal_fingerprint": "721dc7e6fc1e325226a49f8b458cf0c57812c3bc67c325ac4ea998f11dcd21e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-365/enterprise/provisioning",
+      "sha256": "8fdd59a64039c166418c4d6c3ea18919cab353ecf3e5546518798287922c4a60",
+      "text_characters": 10072
+    },
+    {
+      "id": "md-102-device-profiles",
+      "url": "https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles",
+      "checked_at": "2026-09-28T03:49:27.660788+00:00",
+      "health": {
+        "id": "md-102-device-profiles",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/configuration/device-profiles",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-configuration/overview",
+        "content_type": "text/html",
+        "page_title": "Device features and settings in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-configuration/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "d3727755ef575cf068660f70307fc28658d1052ea622577b89d87e2e653f88c3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-configuration/overview",
+      "sha256": "b3f1cc618bf603053459563070878729a978909fde6beff7e4002f3e25053e74",
+      "text_characters": 20242
+    },
+    {
+      "id": "md-102-intune-suite",
+      "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/intune-add-ons",
+      "checked_at": "2026-09-28T03:49:27.701383+00:00",
+      "health": {
+        "id": "md-102-intune-suite",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/intune-add-ons",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/fundamentals/advanced-capabilities",
+        "content_type": "text/html",
+        "page_title": "Microsoft Intune advanced capabilities - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/fundamentals/advanced-capabilities",
+        "duration_signals": [],
+        "signal_fingerprint": "7f94ff4ff252bb3bb3a324c1c9cac37a6727d6946ce5fc8fe03048c2e8301091",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/fundamentals/advanced-capabilities",
+      "sha256": "2b43239be3a539910d2523b5ed1ca6da4dfcb0a50975433b0ce124471a18c27d",
+      "text_characters": 4023
+    },
+    {
+      "id": "md-102-endpoint-security",
+      "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-security",
+      "checked_at": "2026-09-28T03:49:27.730445+00:00",
+      "health": {
+        "id": "md-102-endpoint-security",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-security",
+        "checked_at": "2026-09-28T03:49:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-security/endpoint-security-policies",
+        "content_type": "text/html",
+        "page_title": "Endpoint security in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-security/endpoint-security-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "22449a4c06952482e770d3918facbc4bbd9c20620aa847b98e77e3aed53252a4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-security/endpoint-security-policies",
+      "sha256": "fc30788fe80ed23d989064ecd2923c96404ed24b4f25b11195470e434936d3df",
+      "text_characters": 22466
+    },
+    {
+      "id": "md-102-defender-integration",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
+      "checked_at": "2026-09-28T03:49:28.205825+00:00",
+      "health": {
+        "id": "md-102-defender-integration",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
+        "checked_at": "2026-09-28T03:49:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
+        "content_type": "text/html",
+        "page_title": "Integrate Microsoft Defender for Endpoint with Intune for Device Compliance - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "9ea427d87fe28f69c359a1f19e1e977b9edc40fcd3026942c73d0d37fe21f865",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-security/microsoft-defender/overview",
+      "sha256": "4f9d5fd79c801299397a002d6a16e70ceea3e18f9f4200c2c1948730ed9e8197",
+      "text_characters": 6155
+    },
+    {
+      "id": "md-102-app-protection",
+      "url": "https://learn.microsoft.com/en-us/intune/intune-service/apps/app-protection-policy",
+      "checked_at": "2026-09-28T03:49:28.236041+00:00",
+      "health": {
+        "id": "md-102-app-protection",
+        "url": "https://learn.microsoft.com/en-us/intune/intune-service/apps/app-protection-policy",
+        "checked_at": "2026-09-28T03:49:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/app-management/protection/overview",
+        "content_type": "text/html",
+        "page_title": "App Protection Policies Overview - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/app-management/protection/overview",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "4f023184ffff15e95d217850d6185ba0c3a12cd390364fb8a07e1cdbd0937a72",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/app-management/protection/overview",
+      "sha256": "28db82ce4cffc5b66d2c5b672817e3ba80fa1bdeded870b83eda3fb30b20a4db",
+      "text_characters": 43352
+    },
+    {
+      "id": "md-102-graph-intune",
+      "url": "https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview",
+      "checked_at": "2026-09-28T03:49:28.285807+00:00",
+      "health": {
+        "id": "md-102-graph-intune",
+        "url": "https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview",
+        "checked_at": "2026-09-28T03:49:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview?view=graph-rest-1.0",
+        "content_type": "text/html",
+        "page_title": "Working with Intune in Microsoft Graph - Microsoft Graph v1.0",
+        "canonical_url": "https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview?view=graph-rest-1.0",
+        "duration_signals": [],
+        "signal_fingerprint": "67f817caa44d25e365983dde1d527711e8580465f6f2aebfa4fc578ae9e68a0c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/graph/api/resources/intune-graph-overview?view=graph-rest-1.0",
+      "sha256": "3dfc8af182ed8ea0a03b30270df13c3713587cc39c4f18cf609ad4f21ebb00b6",
+      "text_characters": 3581
+    },
+    {
+      "id": "md-102-security-copilot-agents",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/",
+      "checked_at": "2026-09-28T03:49:28.484230+00:00",
+      "health": {
+        "id": "md-102-security-copilot-agents",
+        "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/",
+        "checked_at": "2026-09-28T03:49:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/",
+        "content_type": "text/html",
+        "page_title": "Security Copilot Agents in Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/",
+        "duration_signals": [],
+        "signal_fingerprint": "df0b2e4c81e39c38bc60082f5dbe43bfeb2fd8735909ee9738745db8abf6b62b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/",
+      "sha256": "1326ba6fb8738ef82ac31c2592e5dd99c81f3c1bab3b03e7b1293f7f8b55ac7b",
+      "text_characters": 3312
+    },
+    {
+      "id": "md-102-endpoint-analytics",
+      "url": "https://learn.microsoft.com/en-us/intune/monitor-troubleshoot",
+      "checked_at": "2026-09-28T03:49:28.784740+00:00",
+      "health": {
+        "id": "md-102-endpoint-analytics",
+        "url": "https://learn.microsoft.com/en-us/intune/monitor-troubleshoot",
+        "checked_at": "2026-09-28T03:49:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/monitor-troubleshoot",
+        "content_type": "text/html",
+        "page_title": "Monitor and troubleshoot - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/monitor-troubleshoot",
+        "duration_signals": [],
+        "signal_fingerprint": "43866cfd337fff97eb8fe7e5b8f279c5417d5320c311cf0cecd2fe909b1343a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/monitor-troubleshoot",
+      "sha256": "52c786d5a1ddc2128c8484873175a133fd2e0d7daf35c0db11a06567fa9f0ecb",
+      "text_characters": 933
+    },
+    {
+      "id": "md-102-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/md-102t00",
+      "checked_at": "2026-09-28T03:49:28.808677+00:00",
+      "health": {
+        "id": "md-102-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/md-102t00",
+        "checked_at": "2026-09-28T03:49:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/md-102t00",
+        "content_type": "text/html",
+        "page_title": "Course MD-102T00-A: Manage and secure Microsoft 365 endpoints by using Intune - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/md-102t00",
+        "duration_signals": [],
+        "signal_fingerprint": "3f8d1b6bbca37992b458e5506954207f578170567ca88c633b6ff310ef4be875",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/md-102t00",
+      "sha256": "396ec24491aebf1cce243b2ae58a9348054b6233d09c843a196adb26704b9c44",
+      "text_characters": 2456
+    },
+    {
+      "id": "md-102-path-prepare",
+      "url": "https://learn.microsoft.com/en-us/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "checked_at": "2026-09-28T03:49:28.827149+00:00",
+      "health": {
+        "id": "md-102-path-prepare",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+        "checked_at": "2026-09-28T03:49:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+        "content_type": "text/html",
+        "page_title": "Prepare infrastructure for devices using Microsoft Intune and Microsoft Entra ID - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+        "duration_signals": [],
+        "signal_fingerprint": "e41e95af821bd0e67d9dacffbf60de007592a3aabce0e9eb29da34674ca9908e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-infrastructure-devices-intune-microsoft-entra-id/",
+      "sha256": "b90abf5f77c64b2c353cde74c6499c5476647825b81445126fe8dc815c718f21",
+      "text_characters": 2954
+    },
+    {
+      "id": "md-102-path-manage",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-maintain-devices-intune/",
+      "checked_at": "2026-09-28T03:49:29.082158+00:00",
+      "health": {
+        "id": "md-102-path-manage",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-maintain-devices-intune/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-maintain-devices-intune/",
+        "content_type": "text/html",
+        "page_title": "Manage and maintain devices using Microsoft Intune - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-maintain-devices-intune/",
+        "duration_signals": [],
+        "signal_fingerprint": "10a07bb8c82d406c71a956b420d495f52e902d2a0e3836879e7810d53c2490fe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-maintain-devices-intune/",
+      "sha256": "38921af9a89ee5c8b68d587cee7c38849b885e925022896e7dcd1e838ce48678",
+      "text_characters": 2598
+    },
+    {
+      "id": "md-102-path-applications",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-applications-intune/",
+      "checked_at": "2026-09-28T03:49:29.106629+00:00",
+      "health": {
+        "id": "md-102-path-applications",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-applications-intune/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-applications-intune/",
+        "content_type": "text/html",
+        "page_title": "Manage Applications Using Microsoft Intune - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-applications-intune/",
+        "duration_signals": [],
+        "signal_fingerprint": "151f9f40815989050964fb08cdd316aaa76723a78d04e9a17b677f1915381a36",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-applications-intune/",
+      "sha256": "d390b6e41e2c81856a6392d604f31ea35ca86bf970a8eb8263498d5a84d4d581",
+      "text_characters": 3227
+    },
+    {
+      "id": "md-102-path-protect",
+      "url": "https://learn.microsoft.com/en-us/training/paths/protect-devices-intune/",
+      "checked_at": "2026-09-28T03:49:29.106992+00:00",
+      "health": {
+        "id": "md-102-path-protect",
+        "url": "https://learn.microsoft.com/en-us/training/paths/protect-devices-intune/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/protect-devices-intune/",
+        "content_type": "text/html",
+        "page_title": "Protect Devices Using Microsoft Intune - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/protect-devices-intune/",
+        "duration_signals": [],
+        "signal_fingerprint": "1f00e967f251de45275a4a857db0774fce011353edad2e05058c57043deaf9bf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/protect-devices-intune/",
+      "sha256": "4180719082fb05cc6a34fa9d58967dd425e19814f4826dab6cfc0c26bcedff74",
+      "text_characters": 3524
+    },
+    {
+      "id": "md-102-path-automate",
+      "url": "https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/",
+      "checked_at": "2026-09-28T03:49:29.336756+00:00",
+      "health": {
+        "id": "md-102-path-automate",
+        "url": "https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/",
+        "content_type": "text/html",
+        "page_title": "Automate and Optimize Endpoint Management Using Microsoft Intune - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/",
+        "duration_signals": [],
+        "signal_fingerprint": "80019d24867d1d007f237a3aa69d851712f57ce0535fd9cb5135e9332ed103ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/automate-optimize-endpoint-management-intune/",
+      "sha256": "d98046f34f8a5176f8815b3a1f2d1fc746087e2514f650b15868413a0267c1a5",
+      "text_characters": 2416
+    },
+    {
+      "id": "md-102-path-operations",
+      "url": "https://learn.microsoft.com/en-us/training/paths/support-operational-excellence-intune/",
+      "checked_at": "2026-09-28T03:49:29.390194+00:00",
+      "health": {
+        "id": "md-102-path-operations",
+        "url": "https://learn.microsoft.com/en-us/training/paths/support-operational-excellence-intune/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/support-operational-excellence-intune/",
+        "content_type": "text/html",
+        "page_title": "Support Operational Excellence and Readiness Using Microsoft Intune - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/support-operational-excellence-intune/",
+        "duration_signals": [],
+        "signal_fingerprint": "bda7cc0ba04bab2a3455d64cd176102d59052be94be4f1ebcaa429109f32d0c0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/support-operational-excellence-intune/",
+      "sha256": "3c8932beae6d8b6b5b097badecbf7f5ee7408ff3686cb9fdd631881ab6f535dc",
+      "text_characters": 2417
+    },
+    {
+      "id": "md-102-path-suite",
+      "url": "https://learn.microsoft.com/en-us/training/paths/extend-intune-suite/",
+      "checked_at": "2026-09-28T03:49:29.396093+00:00",
+      "health": {
+        "id": "md-102-path-suite",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extend-intune-suite/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/extend-intune-suite/",
+        "content_type": "text/html",
+        "page_title": "Extend Endpoint Capabilities Using Microsoft Intune Suite - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/extend-intune-suite/",
+        "duration_signals": [],
+        "signal_fingerprint": "03a21e654b800512ffd01ce0fcbbbe546d29697ca4359a49c1c0d9aa0fa96849",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/extend-intune-suite/",
+      "sha256": "22500e41f835d8fb840e574175f2ab6cc33f7189be234703a08282ecd8b27fa4",
+      "text_characters": 3039
+    },
+    {
+      "id": "md-102-path-cloud-desktops",
+      "url": "https://learn.microsoft.com/en-us/training/paths/deliver-cloud-hosted-desktops/",
+      "checked_at": "2026-09-28T03:49:29.620770+00:00",
+      "health": {
+        "id": "md-102-path-cloud-desktops",
+        "url": "https://learn.microsoft.com/en-us/training/paths/deliver-cloud-hosted-desktops/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/deliver-cloud-hosted-desktops/",
+        "content_type": "text/html",
+        "page_title": "Deliver Cloud-Hosted Desktops Using Azure Virtual Desktop and Windows 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/deliver-cloud-hosted-desktops/",
+        "duration_signals": [],
+        "signal_fingerprint": "210ddebbe9b8b42bb3bb962f63bb3012f85835cea88ca775f46d6af39b6806cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/deliver-cloud-hosted-desktops/",
+      "sha256": "3b4d8f119e5f5e745e4d35962e408dbd5c46e872cf4825630ff7a0fcad648f65",
+      "text_characters": 3176
+    },
+    {
+      "id": "md-102-pluralsight",
+      "url": "https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102",
+      "checked_at": "2026-09-28T03:49:29.663358+00:00",
+      "health": {
+        "id": "md-102-pluralsight",
+        "url": "https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Windows Endpoint Administrator (MD-102)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102",
+        "duration_signals": [
+          "13 Hours"
+        ],
+        "signal_fingerprint": "db388e233b3f87e696703dc6c3f7a4c7d5263fee0cbc9633125c152a258f40aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102",
+      "sha256": "66a341b9f972f5a8433c6219b6c642582cc055efb53b177a622ea271a7c34a79",
+      "text_characters": 4238
+    },
+    {
+      "id": "md-102-oreilly",
+      "url": "https://www.oreilly.com/videos/md-102-endpoint-administrator/9781836208396/",
+      "checked_at": "2026-09-28T03:49:29.700204+00:00",
+      "health": {
+        "id": "md-102-oreilly",
+        "url": "https://www.oreilly.com/videos/md-102-endpoint-administrator/9781836208396/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/md-102-endpoint-administrator/9781836208396/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "md-102-udemy-course",
+      "url": "https://www.udemy.com/course/microsoft-certified-endpoint-administrator-md-102/",
+      "checked_at": "2026-09-28T03:49:29.872440+00:00",
+      "health": {
+        "id": "md-102-udemy-course",
+        "url": "https://www.udemy.com/course/microsoft-certified-endpoint-administrator-md-102/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/microsoft-certified-endpoint-administrator-md-102/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "md-102-udemy-practice",
+      "url": "https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/",
+      "checked_at": "2026-09-28T03:49:29.908991+00:00",
+      "health": {
+        "id": "md-102-udemy-practice",
+        "url": "https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "md102-intune-azure-monitor",
+      "url": "https://learn.microsoft.com/en-us/intune/governance/integrate-azure-monitor",
+      "checked_at": "2026-09-28T03:49:29.988234+00:00",
+      "health": {
+        "id": "md102-intune-azure-monitor",
+        "url": "https://learn.microsoft.com/en-us/intune/governance/integrate-azure-monitor",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/governance/integrate-azure-monitor",
+        "content_type": "text/html",
+        "page_title": "Route logs to Azure Monitor using Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/governance/integrate-azure-monitor",
+        "duration_signals": [
+          "24 hours",
+          "30 minutes",
+          "48 hours"
+        ],
+        "signal_fingerprint": "58cc66c938451289d18a3f2e2e0005c1d455fd2c47a150752fb177bae4831056",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/governance/integrate-azure-monitor",
+      "sha256": "8fb6d6a5c9d9af8c5a1664dabc22041411b257348e87345cc8d191fbc893db9c",
+      "text_characters": 14522
+    },
+    {
+      "id": "md102-intune-compliance-reports",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy",
+      "checked_at": "2026-09-28T03:49:29.989979+00:00",
+      "health": {
+        "id": "md102-intune-compliance-reports",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy",
+        "checked_at": "2026-09-28T03:49:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy",
+        "content_type": "text/html",
+        "page_title": "Monitor results of your device compliance policies in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "00a292729fea0b192e1d8030bd88255171d2359b396abb3b7e6628a4fe9e5546",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy",
+      "sha256": "0b45a375ede104cc500b8f94767b1a22a691dc35edbf27bc99099747656dab7f",
+      "text_characters": 21164
+    },
+    {
+      "id": "md102-azure-monitor-log-alert",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule",
+      "checked_at": "2026-09-28T03:49:30.264423+00:00",
+      "health": {
+        "id": "md102-azure-monitor-log-alert",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule",
+        "checked_at": "2026-09-28T03:49:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule",
+        "content_type": "text/html",
+        "page_title": "Create Azure Monitor log search alert rules - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule",
+        "duration_signals": [
+          "1 minute",
+          "10 minutes",
+          "11 hours",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "48 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "ca0b57f1d5c3021a171fc29430b7346979828667b33d528eb346c63545401677",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule",
+      "sha256": "6640d31a33296e4044dadf531b92afaeef7fd71aefa1969e7483feaa74feb348",
+      "text_characters": 24417
+    },
+    {
+      "id": "md102-intune-whats-new",
+      "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+      "checked_at": "2026-09-28T03:49:30.287645+00:00",
+      "health": {
+        "id": "md102-intune-whats-new",
+        "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+        "checked_at": "2026-09-28T03:49:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+        "duration_signals": [],
+        "signal_fingerprint": "2b8607aea42139dcdd90916cca9d0bbca504215f9d3922985a31f48431b46061",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+      "sha256": "6a06bf75453074c3ba2bae9ac017c35d19c93ec7605b91a42f90bc70a608c63e",
+      "text_characters": 148755
+    },
+    {
+      "id": "microsoft-agent-365-ga-announcement",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "checked_at": "2026-09-28T03:49:30.505394+00:00",
+      "health": {
+        "id": "microsoft-agent-365-ga-announcement",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "checked_at": "2026-09-28T03:49:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Agent 365, now generally available, expands capabilities and integrations | Microsoft Security Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "duration_signals": [
+          "11 min",
+          "2 min",
+          "3 min"
+        ],
+        "signal_fingerprint": "236f7ab804994bee6daef7761d57d8355bf597909c5cf31819ce97be5f593606",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "sha256": "1692c903d40b7c0293afe8653eb8a3e3ec6b52c4942eb958dbb9643512b67a2e",
+      "text_characters": 16650
+    },
+    {
+      "id": "md102-app-grant",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "checked_at": "2026-09-28T03:51:52.758733+00:00",
+      "health": {
+        "id": "md102-app-grant",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "checked_at": "2026-09-28T03:51:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "content_type": "text/html",
+        "page_title": "Migrate approved client app to application protection policy in Conditional Access - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "duration_signals": [],
+        "signal_fingerprint": "77bd3f51be1b245f5058c51f4eb4ce422d635adee40c710538be707c415e4659",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "sha256": "f64ee51c599f6c4fc12f7a81fd27f9f763cd985f00d3e93f4b030ed952876ad1",
+      "text_characters": 5201
+    },
+    {
+      "id": "md102-deployments",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+      "checked_at": "2026-09-28T03:51:52.759491+00:00",
+      "health": {
+        "id": "md102-deployments",
+        "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+        "checked_at": "2026-09-28T03:51:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+        "content_type": "text/html",
+        "page_title": "Deployment plans and deployments overview in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b9930b67e69c8907fe6db6470e409bc79f74d91011e2fe4fe19d6abca9a15dce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+      "sha256": "a4ab6edb6c50cdcdb97d1ff38737f5b5f23f1342949c5200fc54897eba019e34",
+      "text_characters": 8320
+    },
+    {
+      "id": "md102-compliance-create",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+      "checked_at": "2026-09-28T03:51:52.759903+00:00",
+      "health": {
+        "id": "md102-compliance-create",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+        "checked_at": "2026-09-28T03:51:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+        "content_type": "text/html",
+        "page_title": "Create device compliance policies in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "53bf88cbd70db5c85e3eeb53e843abba5f5daaa1d05205fa13028d0866e533d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+      "sha256": "3865338a2866026796d0eca32508e0f9a26c1e211e9f1650b606907ae2b9117f",
+      "text_characters": 11462
+    },
+    {
+      "id": "md102-remote-help",
+      "url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+      "checked_at": "2026-09-28T03:51:53.222557+00:00",
+      "health": {
+        "id": "md102-remote-help",
+        "url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+        "content_type": "text/html",
+        "page_title": "Plan for Remote Help with Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+        "duration_signals": [],
+        "signal_fingerprint": "a316509f187962cfc4b4c5a404c0473596ae61f77d58072eb1e3ab435baa5b4b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+      "sha256": "938028a4c03a760252c8b8084cddc5d3a9a8c68a5096e888dbb31ca1ed5e328f",
+      "text_characters": 21043
+    },
+    {
+      "id": "md102-remediations",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+      "checked_at": "2026-09-28T03:51:53.230335+00:00",
+      "health": {
+        "id": "md102-remediations",
+        "url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+        "content_type": "text/html",
+        "page_title": "Use Remediations to Detect and Fix Support Issues - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+        "duration_signals": [
+          "24 hours",
+          "8 hour",
+          "8 hours"
+        ],
+        "signal_fingerprint": "0f374b05646a2761cf4f9f0c189031aa0dfccd1b01ff6b1093901f3c38887a90",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+      "sha256": "de88e1679a6b0f60bfbfea6356988102d18fc2e6f50975d098a0c0a0420050fd",
+      "text_characters": 14089
+    },
+    {
+      "id": "md102-backup",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+      "checked_at": "2026-09-28T03:51:53.234583+00:00",
+      "health": {
+        "id": "md102-backup",
+        "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+        "content_type": "text/html",
+        "page_title": "Windows Backup for Organizations Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+        "duration_signals": [],
+        "signal_fingerprint": "81de70ca8ebe0783852223b5a3e625c4a7d1442d085392de5c0c0e02a95d3350",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+      "sha256": "aed7b1c7f7c4ab1a317d06f5b23ef288dbdf11e4cf441cade70e9a069b1e1c83",
+      "text_characters": 17079
+    },
+    {
+      "id": "md102-backup-faq",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+      "checked_at": "2026-09-28T03:51:53.457540+00:00",
+      "health": {
+        "id": "md102-backup-faq",
+        "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+        "content_type": "text/html",
+        "page_title": "Windows Backup for Organizations Frequently Asked Questions (FAQ)",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+        "duration_signals": [
+          "10 mins"
+        ],
+        "signal_fingerprint": "bb1c4e3dbde8c3e320553a18d8e43531edcbfc71a99cbb9a24ea7e5ed0bd7e02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+      "sha256": "f60ad4b1905a5036473c805191ed4939d206444aa6db52d4a536c7554b974488",
+      "text_characters": 13232
+    },
+    {
+      "id": "md102-vulnerability-agent",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+      "checked_at": "2026-09-28T03:51:53.539410+00:00",
+      "health": {
+        "id": "md102-vulnerability-agent",
+        "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+        "content_type": "text/html",
+        "page_title": "Vulnerability Remediation Agent Overview and Set Up - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "90ae50e340de0d15fad7e5e91a76c7a4825588aa161cb86136fd680afee31ed7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+      "sha256": "fcc2cd2f6e18b418428120ff48fd2b61f80cb1baa0fe188853436e27f4de8a15",
+      "text_characters": 12826
+    },
+    {
+      "id": "md102-offboarding-agent",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+      "checked_at": "2026-09-28T03:51:53.580027+00:00",
+      "health": {
+        "id": "md102-offboarding-agent",
+        "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+        "content_type": "text/html",
+        "page_title": "Get Started with the Device Offboarding Agent - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "b2cc326c56f457f018c77d0bea8a3c477f1d79c66d44abf1c7fd0b7bd18b031d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+      "sha256": "e8839de65cfeef1351ac7d964468a9968174b1169306b6ba6e6f1329bd583e8b",
+      "text_characters": 10579
+    },
+    {
+      "id": "md102-custom-compliance",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+      "checked_at": "2026-09-28T03:51:53.765700+00:00",
+      "health": {
+        "id": "md102-custom-compliance",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+        "content_type": "text/html",
+        "page_title": "Use custom compliance settings in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "b71b11d41a2e9090b08e15f78d06264333749633f616ffa4f25106adf0196048",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+      "sha256": "c1f8c222f7a39c60bf9c64a895d663ca9be085cfc09bbc4f1d03b97d6ef03105",
+      "text_characters": 10065
+    },
+    {
+      "id": "md102-device-query",
+      "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+      "checked_at": "2026-09-28T03:52:36.778970+00:00",
+      "health": {
+        "id": "md102-device-query",
+        "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+        "checked_at": "2026-09-28T03:52:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+        "content_type": "text/html",
+        "page_title": "Device Query - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+        "duration_signals": [],
+        "signal_fingerprint": "5f00d0d3e8b1320f6d9529fa3bc2e65b4717ca3ec1308bd6179a8b61c7e68c02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+      "sha256": "d86a48632cdb0d35373ff039615f60617e6738215d28ac6c39c05ea28a861dea",
+      "text_characters": 10170
+    },
+    {
+      "id": "md102-hotpatch",
+      "url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+      "checked_at": "2026-09-28T03:51:53.917971+00:00",
+      "health": {
+        "id": "md102-hotpatch",
+        "url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+        "checked_at": "2026-09-28T03:51:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+        "content_type": "text/html",
+        "page_title": "Hotpatch updates",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+        "duration_signals": [],
+        "signal_fingerprint": "33abc7ff219678d77e62e64d89f10de6460f2e26314736046dbc7b55b8d99dee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+      "sha256": "0a10166b81ec0816660cd58437b4b4521245ca91077ee7a99343bff371b43356",
+      "text_characters": 13583
+    },
+    {
+      "id": "md102-app-management-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194",
+      "checked_at": "2026-09-28T03:51:54.024992+00:00",
+      "health": {
+        "id": "md102-app-management-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194",
+        "checked_at": "2026-09-28T03:51:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Windows App Management in Microsoft Intune | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194",
+        "duration_signals": [],
+        "signal_fingerprint": "3b12424331e02b85688273a3774e7ef47d84d643ebe9d786d403c5c7b7967090",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/windows-app-management-in-microsoft-intune/4515194",
+      "sha256": "3b4435021c40035130488eadd462389b3f731d40db8e1659a5a5ca48c3ec29d9",
+      "text_characters": 68
+    },
+    {
+      "id": "md102-backup-blog",
+      "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+      "checked_at": "2026-09-28T03:51:54.056258+00:00",
+      "health": {
+        "id": "md102-backup-blog",
+        "url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+        "checked_at": "2026-09-28T03:51:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Windows settings backup becoming a new resilience baseline - Windows IT Pro Blog",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+        "duration_signals": [],
+        "signal_fingerprint": "c576d61c9c2de47d7347841706be83194d4669305d4caa2bc37c15bb93ee5e8e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-settings-backup-becoming-a-new-resilience-baseline/4530757",
+      "sha256": "6a2494f92d9e503489aa43808bd831bb62d3e94e31fd236f9f8bc54ff9d49bb2",
+      "text_characters": 80
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-28T03:51:54.292684+00:00",
+      "health": {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-28T03:51:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "e8db7c59769514111d842e6c644facaf1cb68ef7af410a0ede58471a31191e1b",
+      "text_characters": 182
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T03:51:55.306516+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T03:51:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "a0b840dd35cd998f26978d849f32480801b6e1b28ef4b87eca5e4b36aff9dec4",
+      "text_characters": 180
+    },
+    {
+      "id": "az-800-john-savill-github",
+      "url": "https://github.com/johnthebrit",
+      "checked_at": "2026-09-28T03:51:56.787697+00:00",
+      "health": {
+        "id": "az-800-john-savill-github",
+        "url": "https://github.com/johnthebrit",
+        "checked_at": "2026-09-28T03:51:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "johnthebrit - Overview",
+        "canonical_url": "https://github.com/johnthebrit",
+        "duration_signals": [],
+        "signal_fingerprint": "cb93ee69c087fc9381413f2a9c86e0ae2f73005e810768e36987f6f4cbbeeee8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit",
+      "sha256": "f779044d2f9f2082fd205a5f480ca6ad13412fa378f5619ed750b7e837b93956",
+      "text_characters": 2209
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T03:51:57.776384+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T03:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "ab-650-john-savill-youtube",
+      "url": "https://www.youtube.com/@NTFAQGuy",
+      "checked_at": "2026-09-28T03:51:57.834982+00:00",
+      "health": {
+        "id": "ab-650-john-savill-youtube",
+        "url": "https://www.youtube.com/@NTFAQGuy",
+        "checked_at": "2026-09-28T03:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@NTFAQGuy",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "John Savill's Technical Training",
+        "canonical_url": "https://www.youtube.com/channel/UCpIn7ox7j7bH_OFj7tYouOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "3ea7e177926d30b19bd454e7c112994be5e9aae837e8697abb5a5edc1ef7afbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@NTFAQGuy",
+      "sha256": "eb77be1157cbf96844c7d898fcb869e6decf53c39bb5efda8317c49ade4ea91d",
+      "text_characters": 195
+    },
+    {
+      "id": "md102-fleet-query",
+      "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+      "checked_at": "2026-09-28T03:52:36.779554+00:00",
+      "health": {
+        "id": "md102-fleet-query",
+        "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+        "checked_at": "2026-09-28T03:52:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+        "content_type": "text/html",
+        "page_title": "Device Query for Multiple Devices - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+        "duration_signals": [],
+        "signal_fingerprint": "5023b319190687d85d44bb68ac830664e476d692cd997e84fa234063a6e5cb4b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+      "sha256": "33a112b40b6dd36e81580d4320d220032cb9d82dd91313ece9156a8f29b98be2",
+      "text_characters": 16037
+    },
+    {
+      "id": "md102-deploy-create",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+      "checked_at": "2026-09-28T03:53:43.470181+00:00",
+      "health": {
+        "id": "md102-deploy-create",
+        "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+        "checked_at": "2026-09-28T03:53:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+        "content_type": "text/html",
+        "page_title": "Create and manage a deployment in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+        "duration_signals": [],
+        "signal_fingerprint": "e8acdd9df883c8945a4e6f3946b95922fce00b8fcf6e1395e517ceb9357b221f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+      "sha256": "efecd6d50899c08cd006d573d24a309a6326c2b275949bace8933043d25f1199",
+      "text_characters": 6897
+    },
+    {
+      "id": "md102-windows-compliance",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-settings",
+      "checked_at": "2026-09-28T03:53:43.470767+00:00",
+      "health": {
+        "id": "md102-windows-compliance",
+        "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-settings",
+        "checked_at": "2026-09-28T03:53:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-settings",
+        "content_type": "text/html",
+        "page_title": "Windows compliance settings in Microsoft Intune - Microsoft Intune",
+        "canonical_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "525857fa132f47086e074826b2c326ba4ffd12850b4e15acd00b50d58e6e3f86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-settings",
+      "sha256": "2b13c2149e7745b4905e92f0fe0fae11ff0df31fe3b262755c1c79135e634e75",
+      "text_characters": 20675
+    }
+  ],
+  "added_source_ids": [
+    "md102-app-grant",
+    "md102-deployments",
+    "md102-compliance-create",
+    "md102-remote-help",
+    "md102-remediations",
+    "md102-backup",
+    "md102-backup-faq",
+    "md102-vulnerability-agent",
+    "md102-offboarding-agent",
+    "md102-custom-compliance",
+    "md102-device-query",
+    "md102-hotpatch",
+    "md102-app-management-blog",
+    "md102-backup-blog",
+    "md102-fleet-query",
+    "md102-deploy-create",
+    "md102-windows-compliance"
+  ],
+  "findings": [
+    {
+      "id": "md102-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy app-grant advice outdated",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current specific lifecycle notice states read-only behavior and continued enforcement.",
+      "recommendation": "Use app protection for new policies and a tested replacement migration.",
+      "disposition": "applied",
+      "source_id": "md102-app-grant",
+      "resolution": "Use app protection for new policies and a tested replacement migration."
+    },
+    {
+      "id": "md102-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Device-preparation operational limits",
+      "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Mode, app/script count and enrollment group differ from classic Autopilot.",
+      "recommendation": "Add provisioning group owner, device-based OOBE and feature-versus-lifecycle distinction.",
+      "disposition": "applied",
+      "source_id": "md-102-autopilot-compare",
+      "resolution": "Add provisioning group owner, device-based OOBE and feature-versus-lifecycle distinction."
+    },
+    {
+      "id": "md102-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Deployment template versus execution",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview deployments carry one payload with explicit support limits.",
+      "recommendation": "Add ring/intent/supersedence boundaries and unique-device target example.",
+      "disposition": "applied",
+      "source_id": "md102-deployments",
+      "resolution": "Add ring/intent/supersedence boundaries and unique-device target example."
+    },
+    {
+      "id": "md102-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cancellation is not recovery",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Completed ring assignments remain after cancel or pause.",
+      "recommendation": "Add explicit rollback and mutable-payload evidence.",
+      "disposition": "applied",
+      "source_id": "md102-deploy-create",
+      "resolution": "Add explicit rollback and mutable-payload evidence."
+    },
+    {
+      "id": "md102-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Backup and restore policies differ",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default transition and restore paths are version/identity scoped.",
+      "recommendation": "Add policy-state worked example and separate restore prerequisites.",
+      "disposition": "applied",
+      "source_id": "md102-backup",
+      "resolution": "Add policy-state worked example and separate restore prerequisites."
+    },
+    {
+      "id": "md102-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Settings protection is not file/profile protection",
+      "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Documented scope differs from whole-device and nonpersistent profile recovery.",
+      "recommendation": "Add file protection and persistent/nonpersistent path qualification.",
+      "disposition": "applied",
+      "source_id": "md102-backup-faq",
+      "resolution": "Add file protection and persistent/nonpersistent path qualification."
+    },
+    {
+      "id": "md102-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Live query requires endpoint communication",
+      "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Single-device WNS query is bounded by connectivity and query support.",
+      "recommendation": "Distinguish failed communication from zero findings.",
+      "disposition": "applied",
+      "source_id": "md102-device-query",
+      "resolution": "Distinguish failed communication from zero findings."
+    },
+    {
+      "id": "md102-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Inventory queries have different evidence",
+      "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Fleet results depend on collection policy and component row shape.",
+      "recommendation": "Explain age, coverage and distinct-device counting before assigning results.",
+      "disposition": "applied",
+      "source_id": "md102-fleet-query",
+      "resolution": "Explain age, coverage and distinct-device counting before assigning results."
+    },
+    {
+      "id": "md102-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Eligibility is a conjunction",
+      "url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Baseline/VBS requirements and fallback affect restart outcomes.",
+      "recommendation": "Add intersection example and Arm64 compatibility decision.",
+      "disposition": "applied",
+      "source_id": "md102-hotpatch",
+      "resolution": "Add intersection example and Arm64 compatibility decision."
+    },
+    {
+      "id": "md102-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Remediation trigger is specific",
+      "url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only detection exit 1 runs the paired fix.",
+      "recommendation": "Add three-state uncertainty and verification example.",
+      "disposition": "applied",
+      "source_id": "md102-remediations",
+      "resolution": "Add three-state uncertainty and verification example."
+    },
+    {
+      "id": "md102-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Custom compliance is separate",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Discovery plus JSON reports compliance; Windows custom script cadence differs.",
+      "recommendation": "Separate built-in reevaluation, discovery and remediation.",
+      "disposition": "applied",
+      "source_id": "md102-custom-compliance",
+      "resolution": "Separate built-in reevaluation, discovery and remediation."
+    },
+    {
+      "id": "md102-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Agent listing superseded by lifecycle page",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specific removal notice overrides older available-agent overview.",
+      "recommendation": "Mark Device Offboarding Agent unavailable since June 1.",
+      "disposition": "applied",
+      "source_id": "md102-offboarding-agent",
+      "resolution": "Mark Device Offboarding Agent unavailable since June 1."
+    },
+    {
+      "id": "md102-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Agent identity needs explicit authorization",
+      "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Agentic user needs its own delegated permissions and readiness.",
+      "recommendation": "Describe one-way transition, preserved history and independent outcome verification.",
+      "disposition": "applied",
+      "source_id": "md102-vulnerability-agent",
+      "resolution": "Describe one-way transition, preserved history and independent outcome verification."
+    },
+    {
+      "id": "md102-deep-14",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Published entries can be future-dated",
+      "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 28 section was observed on September 27.",
+      "recommendation": "Label future release entries and schedule rollout recheck.",
+      "disposition": "applied",
+      "source_id": "md102-intune-whats-new",
+      "resolution": "Label future release entries and schedule rollout recheck."
+    },
+    {
+      "id": "md102-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Unattended support has a narrower matrix",
+      "url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Physical corporate x64 prerequisites differ from attended Windows 365/AVD support.",
+      "recommendation": "Clarify targeted permission, agents, power and network requirements.",
+      "disposition": "applied",
+      "source_id": "md102-remote-help",
+      "resolution": "Clarify targeted permission, agents, power and network requirements."
+    },
+    {
+      "id": "md102-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Faster evaluation does not imply instant exports",
+      "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MD-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Client-triggered requests and exported reporting are separate.",
+      "recommendation": "Add 90% reported versus 75% fleet coverage example and setting-specific evidence.",
+      "disposition": "applied",
+      "source_id": "md102-compliance-create",
+      "resolution": "Add 90% reported versus 75% fleet coverage example and setting-specific evidence."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "md102-app-management-blog",
+      "decision": "accepted-bounded",
+      "author": "Zachary Cavanell; demonstration by Nicole Zhao",
+      "published_on": "2026-04-27",
+      "notes": "Article/transcript read; video not watched. Deployment preview scope and auto-update incompatibility reconciled with current product docs."
+    },
+    {
+      "source_id": "md102-backup-blog",
+      "decision": "accepted-bounded",
+      "author": "Miranda Leschke",
+      "published_on": "2026-07-06",
+      "notes": "Main article read; linked video not watched. Policy/default/restore matrix with version and geography boundaries; no tenant rollout claim."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Ten synthetic percentage/coverage/set/intersection/exit-state and catalog arithmetic checks"
+    ]
+  },
+  "answered_checks": 47,
+  "limitations": [
+    "July 24 accepted snapshot preserved; 83 October 27 bullets mapped as future revision.",
+    "No tenant/device action, Graph mutation, remote help, script deployment, backup/restore, preview rollout or hotpatch configuration executed. Ten labs are learner exercises.",
+    "Three commercial item fetches blocked; historical runtimes/scope qualified. Question originality and current objective completeness unverified. Channel/partner shells and profile metadata do not validate underlying content.",
+    "Public article/transcript and backup main article reviewed; videos and linked demonstrations not executed. Existing Agent 365 announcement is adjacent context only.",
+    "September 28 feed entries treated as future; specific product timelines/requirements qualify older general prose. Tenant rollout/agent transition deadline requires current local evidence.",
+    "Same-context AI research and repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "coverage_union_eligibility_detection_and_catalog_assertions": 10
+  }
+}

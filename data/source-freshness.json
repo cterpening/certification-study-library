@@ -4,6 +4,361 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-md102-deep-review",
+      "title": "MD-102 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MD-102"
+      ],
+      "results": [
+        {
+          "exam_code": "MD-102",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+          "baseline_sha256": "ef944c7d52206e743e118da27dc45dd9fb74f4dfab98809352c86098a1026fb4",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "83 October objectives/13 groups mapped; July retained. Credential confirms 100 minutes/seven languages; course five days."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read with targeted current source sections; five examples, ten labs and 47 answers. Ten offline checks; no live execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Intune September 7/14/21 and relevant June/August entries reviewed. September 28 entries explicitly future; five follow-ups preserve volatile scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Eight paths/34 modules; historical runtimes qualified. Pluralsight 13h19 verified from listing; blocked commercial/channel/partner content and question originality unverified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Specific removal timeline supersedes agent overview; explicit first-sign-in and 26H2 notes qualify older general backup prose. June 30 grant note supersedes older March and editable-policy advice. No universal rollout claim."
+            }
+          },
+          "findings": [
+            {
+              "id": "md102-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy app-grant advice outdated",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current specific lifecycle notice states read-only behavior and continued enforcement.",
+              "recommendation": "Use app protection for new policies and a tested replacement migration.",
+              "disposition": "applied",
+              "source_id": "md102-app-grant",
+              "resolution": "Use app protection for new policies and a tested replacement migration."
+            },
+            {
+              "id": "md102-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Device-preparation operational limits",
+              "url": "https://learn.microsoft.com/en-us/autopilot/device-preparation/compare",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Mode, app/script count and enrollment group differ from classic Autopilot.",
+              "recommendation": "Add provisioning group owner, device-based OOBE and feature-versus-lifecycle distinction.",
+              "disposition": "applied",
+              "source_id": "md-102-autopilot-compare",
+              "resolution": "Add provisioning group owner, device-based OOBE and feature-versus-lifecycle distinction."
+            },
+            {
+              "id": "md102-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Deployment template versus execution",
+              "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preview deployments carry one payload with explicit support limits.",
+              "recommendation": "Add ring/intent/supersedence boundaries and unique-device target example.",
+              "disposition": "applied",
+              "source_id": "md102-deployments",
+              "resolution": "Add ring/intent/supersedence boundaries and unique-device target example."
+            },
+            {
+              "id": "md102-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cancellation is not recovery",
+              "url": "https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Completed ring assignments remain after cancel or pause.",
+              "recommendation": "Add explicit rollback and mutable-payload evidence.",
+              "disposition": "applied",
+              "source_id": "md102-deploy-create",
+              "resolution": "Add explicit rollback and mutable-payload evidence."
+            },
+            {
+              "id": "md102-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Backup and restore policies differ",
+              "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default transition and restore paths are version/identity scoped.",
+              "recommendation": "Add policy-state worked example and separate restore prerequisites.",
+              "disposition": "applied",
+              "source_id": "md102-backup",
+              "resolution": "Add policy-state worked example and separate restore prerequisites."
+            },
+            {
+              "id": "md102-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Settings protection is not file/profile protection",
+              "url": "https://learn.microsoft.com/en-us/windows/configuration/windows-backup/faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Documented scope differs from whole-device and nonpersistent profile recovery.",
+              "recommendation": "Add file protection and persistent/nonpersistent path qualification.",
+              "disposition": "applied",
+              "source_id": "md102-backup-faq",
+              "resolution": "Add file protection and persistent/nonpersistent path qualification."
+            },
+            {
+              "id": "md102-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Live query requires endpoint communication",
+              "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Single-device WNS query is bounded by connectivity and query support.",
+              "recommendation": "Distinguish failed communication from zero findings.",
+              "disposition": "applied",
+              "source_id": "md102-device-query",
+              "resolution": "Distinguish failed communication from zero findings."
+            },
+            {
+              "id": "md102-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Inventory queries have different evidence",
+              "url": "https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fleet results depend on collection policy and component row shape.",
+              "recommendation": "Explain age, coverage and distinct-device counting before assigning results.",
+              "disposition": "applied",
+              "source_id": "md102-fleet-query",
+              "resolution": "Explain age, coverage and distinct-device counting before assigning results."
+            },
+            {
+              "id": "md102-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Eligibility is a conjunction",
+              "url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Baseline/VBS requirements and fallback affect restart outcomes.",
+              "recommendation": "Add intersection example and Arm64 compatibility decision.",
+              "disposition": "applied",
+              "source_id": "md102-hotpatch",
+              "resolution": "Add intersection example and Arm64 compatibility decision."
+            },
+            {
+              "id": "md102-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Remediation trigger is specific",
+              "url": "https://learn.microsoft.com/en-us/intune/device-management/tools/deploy-remediations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only detection exit 1 runs the paired fix.",
+              "recommendation": "Add three-state uncertainty and verification example.",
+              "disposition": "applied",
+              "source_id": "md102-remediations",
+              "resolution": "Add three-state uncertainty and verification example."
+            },
+            {
+              "id": "md102-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Custom compliance is separate",
+              "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/custom-settings",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Discovery plus JSON reports compliance; Windows custom script cadence differs.",
+              "recommendation": "Separate built-in reevaluation, discovery and remediation.",
+              "disposition": "applied",
+              "source_id": "md102-custom-compliance",
+              "resolution": "Separate built-in reevaluation, discovery and remediation."
+            },
+            {
+              "id": "md102-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Agent listing superseded by lifecycle page",
+              "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Specific removal notice overrides older available-agent overview.",
+              "recommendation": "Mark Device Offboarding Agent unavailable since June 1.",
+              "disposition": "applied",
+              "source_id": "md102-offboarding-agent",
+              "resolution": "Mark Device Offboarding Agent unavailable since June 1."
+            },
+            {
+              "id": "md102-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Agent identity needs explicit authorization",
+              "url": "https://learn.microsoft.com/en-us/intune/copilot/agents/vulnerability-remediation-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Agentic user needs its own delegated permissions and readiness.",
+              "recommendation": "Describe one-way transition, preserved history and independent outcome verification.",
+              "disposition": "applied",
+              "source_id": "md102-vulnerability-agent",
+              "resolution": "Describe one-way transition, preserved history and independent outcome verification."
+            },
+            {
+              "id": "md102-deep-14",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Published entries can be future-dated",
+              "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 28 section was observed on September 27.",
+              "recommendation": "Label future release entries and schedule rollout recheck.",
+              "disposition": "applied",
+              "source_id": "md102-intune-whats-new",
+              "resolution": "Label future release entries and schedule rollout recheck."
+            },
+            {
+              "id": "md102-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Unattended support has a narrower matrix",
+              "url": "https://learn.microsoft.com/en-us/intune/remote-help/plan",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Physical corporate x64 prerequisites differ from attended Windows 365/AVD support.",
+              "recommendation": "Clarify targeted permission, agents, power and network requirements.",
+              "disposition": "applied",
+              "source_id": "md102-remote-help",
+              "resolution": "Clarify targeted permission, agents, power and network requirements."
+            },
+            {
+              "id": "md102-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Faster evaluation does not imply instant exports",
+              "url": "https://learn.microsoft.com/en-us/intune/device-security/compliance/create-policy",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MD-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Client-triggered requests and exported reporting are separate.",
+              "recommendation": "Add 90% reported versus 75% fleet coverage example and setting-specific evidence.",
+              "disposition": "applied",
+              "source_id": "md102-compliance-create",
+              "resolution": "Add 90% reported versus 75% fleet coverage example and setting-specific evidence."
+            }
+          ],
+          "notes": "Whole guide read; 83 October objectives in 13 groups individually mapped while retaining July 24 baseline. Add five worked examples, two labs and eight answers (ten labs/47 answered checks total), two qualified blog readings and five dated follow-ups. Correct legacy app-grant guidance and expand deployment rollback, backup/restore, live versus inventory queries, hotpatch, remediation and agent lifecycle/identity. Catalog metadata is qualified and September 28 entries remain upcoming. Ten offline checks passed; no tenant/device execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-md-102-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 16,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-dp300-deep-review",
       "title": "DP-300 complete guide and learning-content review",
       "rubric_version": 1,
