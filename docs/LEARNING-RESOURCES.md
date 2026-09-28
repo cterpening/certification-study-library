@@ -2343,13 +2343,23 @@ No exact current MeasureUp CLF-C02 product was verified during the September 1 r
 
 ### AWS Certified AI Practitioner (AIF-C01)
 
-- Official route: [AWS AIF-C01 exam page and four-step prep plan](https://aws.amazon.com/certification/certified-ai-practitioner/) plus the [Standard Exam Prep Plan](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01) (**about 15–25 hours selected study plus labs**; free/subscription elements vary)
-- Domain 1 supplement: [Pluralsight AIF-C01 Fundamentals of AI and ML](https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals) (**2 hours 4 minutes**; November 2024 and not complete current coverage)
-- Compact course: [O'Reilly/Tom Taulli AIF-C01 Certification Course](https://www.oreilly.com/videos/aws-certified-ai/0642572022568/) (**2 hours 36 minutes plus gap work**; March 2026, but compare visible reused labels and agentic additions with revision 1.0)
-- Current long-form route: [Udemy/Stéphane Maarek AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/) (**10 hours 17 minutes plus labs/practice**; shown updated August 2026)
-- Lab/course/practice bundle: [Whizlabs AIF-C01](https://www.whizlabs.com/aws-certified-ai-practitioner/) (**about 10–18 hours estimated plus listed labs and practice review**; inspect live counts and revision coverage)
-- Practice choices: [Tutorials Dojo AIF-C01](https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/) (**about 8–14 hours across modes**) or [MeasureUp AIF-C01](https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html) (**about 6–12 hours across practice/certification modes and review**); verify every rationale against the March 2026 guide
-- Free long-form route: [freeCodeCamp/ExamPro AIF-C01](https://www.youtube.com/watch?v=WZeZZ8_W-M4) (**about 15 hours plus labs**); explicitly add revision 1.0 agentic, MCP, Quick, Kiro, Strands and AgentCore gaps
+Resource details from the [AIF-C01 guide](../guides/AIF-C01-aws-certified-ai-practitioner.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you and use the official March 26, 2026 blueprint to close only your gaps. Times are approximate consumption time at normal speed; labs, notes, assessment review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [AWS AIF-C01 exam page and four-step prep plan](https://aws.amazon.com/certification/certified-ai-practitioner/) | Public page; Skill Builder account for learning | About 15–25 hours selected official preparation plus labs | Start with the current guide, pretest/question set, gap learning, labs, and official practice exam; some components require a subscription |
+| [AWS Standard Exam Prep Plan for AIF-C01](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01) | Skill Builder account; free and subscription elements vary | About 12–20 hours estimated plus practice | Official structured route; confirm it visibly reflects the April 2026 agentic additions |
+| [Pluralsight — AIF-C01 Fundamentals of AI and ML](https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals) | Subscription/trial | 2 hours 4 minutes | Strong Domain 1 supplement last updated November 2024; not complete current coverage and predates the April 2026 agentic revision |
+| [O'Reilly — AIF-C01 Certification Course](https://www.oreilly.com/videos/aws-certified-ai/0642572022568/) | Subscription/trial | Plan 6–12 hours with gap work | Public body blocked on this review; runtime, date and lesson labels not reverified; compare the accessible outline with revision 1.1 |
+| [Udemy — Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/) | Purchase or subscription | Plan 15–25 hours with labs and practice | Public body blocked; current runtime/date not reverified; require explicit April 2026 objective coverage |
+| [Whizlabs — AWS Certified AI Practitioner AIF-C01](https://www.whizlabs.com/aws-certified-ai-practitioner/) | Paid modules/subscription; trial items vary | Plan 15–25 hours selectively | Public shell did not verify current video/lab counts or date; inspect the actual outline before purchase |
+| [Tutorials Dojo — AIF-C01 practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/) | Paid; free sampler may be available | About 8–14 hours for diagnostic, timed, review, section, and randomized modes | Public page lists 16 quizzes and multiple modes, but also markets updates from actual-exam feedback; use only independently authored practice and documentation-based explanations, and avoid recalled-question material |
+| [MeasureUp — AIF-C01 practice test](https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html) | Paid; demo/assessment offers vary | About 6–12 hours across certification/practice modes and review | Public page lists 150 questions and an April 2025 release; verify April 2026 revision coverage and automated-translation limitations before purchase |
+| [freeCodeCamp/ExamPro — AWS AI Practitioner full course](https://www.youtube.com/watch?v=WZeZZ8_W-M4) | Free | Plan 15–25 hours with independent exercises | Limited public metadata did not verify runtime or full coverage; compare the outline with revision 1.1 before relying on it |
+
+See the broader [Places to learn catalog](LEARNING-RESOURCES.md) for provider-selection criteria. Avoid any source claiming real or recalled exam questions; use original practice to test reasoning, then verify explanations against current first-party documentation.
 
 ### AWS Certified CloudOps Engineer - Associate (SOA-C03)
 

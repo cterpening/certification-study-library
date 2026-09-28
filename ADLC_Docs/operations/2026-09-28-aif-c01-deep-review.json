@@ -1,0 +1,1594 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AIF-C01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "d7acb5d598613f0958acf519df52d624270842e15be15710aac9351ade57818b",
+  "guide_after_sha256": "9fe685bec55e1321f849ed9985b61ab5ac6f0235d7c3ef352b4474132c6c2d5e",
+  "prior_records": {
+    "exam": {
+      "code": "AIF-C01",
+      "level": "beginner",
+      "vendor_id": "aws",
+      "title": "AWS Certified AI Practitioner",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+      "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; the target candidate has up to six months of AWS AI/ML exposure and uses but does not necessarily build solutions. Basic AWS services, shared responsibility, IAM and pricing vocabulary are useful."
+    },
+    "review": {
+      "id": "aif-c01-2026-09-01-source-validation",
+      "exam_code": "AIF-C01",
+      "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/aif-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+      "objective_coverage": [
+        {
+          "objective_group": "Fundamentals of AI and ML",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Fundamentals of GenAI",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Applications of Foundation Models",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Guidelines for Responsible AI",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security, Compliance, and Governance for AI Solutions",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 23,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Revision 1.0 dated March 26, 2026 and its five detailed domain pages were reconciled with the live certification page and in-scope list. The guide explicitly covers the new agentic AI, MCP, multi-agent, memory/tool/workflow, Amazon Quick, Kiro, Strands Agents and Bedrock AgentCore scope and flags older training gaps. Three scenarios, eight safe labs and 35 original checks cover rules/traditional ML/FM/agent selection, lifecycle and metrics; tokens/context/adaptation; RAG, prompting and evaluation; responsible AI; and identity, data, application, tool, monitoring and governance controls. All 25 URLs are cataloged: 23 reachable and O'Reilly/Udemy automation-blocked; none missing or broken. Product names, release stages, regions, service behavior, price and course metadata are labeled volatile, and no recalled exam questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "64e075e7680d9d1dd206244eb1300660e5d75a29599ee35da948037bc9852a3a",
+      "guide_sections": "1 / Choose rules, traditional ML, GenAI, or agents deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "6c209873d9be881fb97f64120b2193c0a0683369129359138c471f409d9198d8",
+      "guide_sections": "1 / Choose rules, traditional ML, GenAI, or agents deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "ac2affd28d1169e1169dc9ce50becc1aebfe76b6a26bcb8227a48343bbd30a25",
+      "guide_sections": "1 / Choose rules, traditional ML, GenAI, or agents deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "9d82b07e1806a98fe54a2fb159d15ccc5ce4a4d9f3765d724ba5107e26acfc14",
+      "guide_sections": "1 / Choose rules, traditional ML, GenAI, or agents deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "ac31b5df36cce4c71f6d24a500246fe8b5f2bd045f66b8bf8aa05ac4ad1c321c",
+      "guide_sections": "1 / Choose rules, traditional ML, GenAI, or agents deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "5a0ff9264e1a8ee28bb7c684e983705b5abe6e35c9e4060eefacfcadb3ccfa79",
+      "guide_sections": "1 / Match problem, data, and evaluation; service comparison table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "5d32aa566551570987a212631ddcca08d86d6c580619853715562c34c301b986",
+      "guide_sections": "1 / Match problem, data, and evaluation; service comparison table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "2f0855c258e258cc04fdf7e4409b0c3adfbd3ea31b5c54cf66cc59acc42eb69b",
+      "guide_sections": "1 / Match problem, data, and evaluation; service comparison table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "51f96a40c99578a8d455701ed4be8089b09957c5d3cd6e93cafad3117c229efb",
+      "guide_sections": "1 / Match problem, data, and evaluation; service comparison table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "65e5db870e78e437867d8af7b3f219d070e1febd4b2d3348fa8bd2d6e494c511",
+      "guide_sections": "1 / Match problem, data, and evaluation; service comparison table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "ec4d8782bbbd837106f030dec2491765bb0f760b66299d6ea5e8ad993f76b088",
+      "guide_sections": "1 / Match problem, data, and evaluation; service comparison table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "f4f25f2ffbc3801bc7efdf06109a4c6127b5f421daf5d0383632ad9beb3423db",
+      "guide_sections": "1 / Lifecycle means evidence from idea through retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "82caf7ebbf4d24467ee68e3e3327666f6f679b6b9af580a765b9c4ce1171e433",
+      "guide_sections": "1 / Lifecycle means evidence from idea through retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "a4ac1fae46dba9f24dad49f02cfe206bb8f0c6df561c1b3b38dd95159d29904b",
+      "guide_sections": "1 / Lifecycle means evidence from idea through retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "f5f797a4cad31c51b2cccf67c4727d7eac9a131522755cf0426e6c6bf1325915",
+      "guide_sections": "1 / Lifecycle means evidence from idea through retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "ad57b46a7672d9a5248589b6ef5dd01a9ed7be96cee6cf28af414730cff16624",
+      "guide_sections": "1 / Lifecycle means evidence from idea through retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "29548881744d8f25e6b22a2fd06fa33c3e99700f62678d7e0fa280a521c9740d",
+      "guide_sections": "1 / Lifecycle means evidence from idea through retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "ee2c6aca9743b446c5adbfd4e8e54fa42cdbafcf5ea77cd96b2cf60b9053add7",
+      "guide_sections": "2 / Tokens, embeddings, context, and generation; Agentic AI adds an action boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "401413fa798c4461f958db542adc757cf80d13ecb8ad06e6496d51fca1f996b4",
+      "guide_sections": "2 / Tokens, embeddings, context, and generation; Agentic AI adds an action boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "298b7993b87af2ff9fe4b77b59de7601eba66c1bd35016a3f2d3cd55a3f9766b",
+      "guide_sections": "2 / Tokens, embeddings, context, and generation; Agentic AI adds an action boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "c4766ef75f2c088e370c9f163ad7bcd66a643316d7bf08c80be3c9ebbb259f5e",
+      "guide_sections": "2 / Tokens, embeddings, context, and generation; Agentic AI adds an action boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "525b0e35fb104b5d45687493c81330e2606ff37816affef69b0992f4f56d5048",
+      "guide_sections": "2 / Tokens, embeddings, context, and generation; Agentic AI adds an action boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "ed8fabfc811ea603d7ffdd511ec29a89984df0b3828cc9f1683cb01a2e1d44af",
+      "guide_sections": "2 / Tokens, embeddings, context, and generation; Agentic AI adds an action boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c4e79295d16f8625dd527f5a7a2310fb85990adb19b988a466d35670ace77af2",
+      "guide_sections": "2 / Foundation-model lifecycle and adaptation ladder; 3 / Select the system, not only the model",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "481f810369e9bf2add1dec95ad684a0825cd1290831b6c05982a85a7ba3bf79e",
+      "guide_sections": "2 / Foundation-model lifecycle and adaptation ladder; 3 / Select the system, not only the model",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "f98718be7af6ef7730e5cb308fef6b4538428348fa4fb0abf94f1aa65add40be",
+      "guide_sections": "2 / Foundation-model lifecycle and adaptation ladder; 3 / Select the system, not only the model",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "6d8cb349ce5923994de73ea83bed0ede05abe309a523c9bc4b440fe897955254",
+      "guide_sections": "2 / Foundation-model lifecycle and adaptation ladder; 3 / Select the system, not only the model",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "54cac76f4c8f1e76113a20b1b263d610c2cde00182b431a247fbbc25dcfb0aa1",
+      "guide_sections": "1 / service comparison table; 2 / cost and agent boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "8aaea634e1c5dd8fad9fa717da42ae9f09226bee93f5f663d7fbd8f77307322f",
+      "guide_sections": "1 / service comparison table; 2 / cost and agent boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "cef0c4bb1ce4e0895d7ed05d9b7616b353e70e218a3a4ae4dde2cb2c2059fc5b",
+      "guide_sections": "1 / service comparison table; 2 / cost and agent boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "9ba5b2c6c134ead07c35e82b312e80ce8c1b78ce077acc500531b9a89290c071",
+      "guide_sections": "1 / service comparison table; 2 / cost and agent boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "2919a143945d65ea0dda6e9fc4159471720c476101dbbaa85dd79474c256e92b",
+      "guide_sections": "3 / Select the system, not only the model; RAG is a retrieval contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "a661edb2ef172fbc17c246f757dcdf25fab1d4a1e9ec99fb394932b971c08466",
+      "guide_sections": "3 / Select the system, not only the model; RAG is a retrieval contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "468bc9d7621e931954e01b467965181878a7bd1a3c323c272744c0178b88caf0",
+      "guide_sections": "3 / Select the system, not only the model; RAG is a retrieval contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "6160b146541dc04ce0a2612c6d7232b1859953f9c6c85e60f4a7873233992db9",
+      "guide_sections": "3 / Select the system, not only the model; RAG is a retrieval contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "7d8d02d3f03fb5d7127b7ac95871a2eb2cd84e0daac5cc2a825601a55a7c3464",
+      "guide_sections": "3 / Select the system, not only the model; RAG is a retrieval contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "a3803b9013ad015484b95aeb8f7e8ecc36b17088e0bfdf57b82f900547b67367",
+      "guide_sections": "3 / Select the system, not only the model; RAG is a retrieval contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "44e829d40c5be64f380912a6f0a20b45273c589ac46f473edf765d9a3cb2adf2",
+      "guide_sections": "3 / Prompt engineering is a controlled artifact",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "8eb201a268ff480b162603d5811b1d3a83eb3bca4f0b5e7ed5c6a1352c0cc5eb",
+      "guide_sections": "3 / Prompt engineering is a controlled artifact",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "f77a2578686daf473c684a744e6143724090b192fc6d3a3a1fb8f03f9f420d4e",
+      "guide_sections": "3 / Prompt engineering is a controlled artifact",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "8cce76ad899eed62e7a57a5e4aebba92dc25bdbae505ae3e75b3cc68a4bfb7c2",
+      "guide_sections": "3 / Prompt engineering is a controlled artifact",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "cd42734029d73f7c9b558b5934fb70840bb14e9f5e91c967f545e2e82ea728b5",
+      "guide_sections": "3 / Prompt engineering is a controlled artifact",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "5f29af0737089293c2caedc5c545f9ed162f9b5d61f7154d106580f38d323791",
+      "guide_sections": "3 / Prepare customization data before selecting a training method",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "2fd4be403de704c44e9562c2216186a8a9afb78d8a78ab800e484acb33b8e929",
+      "guide_sections": "3 / Prepare customization data before selecting a training method",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "1661d48711dc645c1603d1462619e68cc4e6ee0ff486ceaad9ba3c30ed838ede",
+      "guide_sections": "3 / Prepare customization data before selecting a training method",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "134e0a93df7d5d37e768e01e328e9646442ce2d759dda9db839a6bd01d6c746d",
+      "guide_sections": "3 / Evaluation must connect quality to consequence; Worked learning examples",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "732973da0b63ce8b1afc7e4b831c69afdf5a7e53c2d5888b328ced01cfde8d67",
+      "guide_sections": "3 / Evaluation must connect quality to consequence; Worked learning examples",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "d4d947ba636c23d9b381d5c697ff32e8fe9a22459a18a5ab30fbd95186a8ad0b",
+      "guide_sections": "3 / Evaluation must connect quality to consequence; Worked learning examples",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "60c056c28aaca410bddf0d0b4df9b6857f4472a1750b118f3c03d31b821f7998",
+      "guide_sections": "3 / Evaluation must connect quality to consequence; Worked learning examples",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "558163a60f395dc9c0ecf32c9141257b14a47f69df9e08a3b1cc6fb91462dce5",
+      "guide_sections": "3 / Evaluation must connect quality to consequence; Worked learning examples",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "ec54cf0fe5a2af197e23abca896f436da2f585f66c943995ba6c956d699bb5b3",
+      "guide_sections": "4 / Responsible AI becomes concrete through tests and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "b97d0a43e215db91b5a67400de9cb973bd3a0f18accc3585a2347de5a696aa70",
+      "guide_sections": "4 / Responsible AI becomes concrete through tests and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "0f6ccee09a5aee8ed9ab6a1411dac13ddb207eeefd5621fe88825bcbd8158ee8",
+      "guide_sections": "4 / Responsible AI becomes concrete through tests and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "c4bce4328cdbe539902e22a1e74e88b138a8765bf72ad215aca98aec02fa5262",
+      "guide_sections": "4 / Responsible AI becomes concrete through tests and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "ced2d146c22cf2cd19208e3d0ff8450c8fcec8917536f3ae63e736e7ce472019",
+      "guide_sections": "4 / Responsible AI becomes concrete through tests and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "569cd3d70cbf64d3b1fe79e73bda93b801d9d032e44d55c888a17dc909dc94a6",
+      "guide_sections": "4 / Responsible AI becomes concrete through tests and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "4af8ae2557cde6d03fd906c2c7a6c32b67c492b7b91006da14a3af40743b2012",
+      "guide_sections": "4 / Responsible AI becomes concrete through tests and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "14d8fb5267f732525258f306427dae2136dbeb35e001a2b4ef6b9ad48c1bc6ac",
+      "guide_sections": "4 / transparency and explainability paragraphs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "07b8e244f89a2878c11ce42c5741d06c31b490e8dd26db6acb56b22729979886",
+      "guide_sections": "4 / transparency and explainability paragraphs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "a5b5d72e8fb8a8aa92fe0fbe1d134bc728be3f361d014fb404d6c2771f02bab7",
+      "guide_sections": "4 / transparency and explainability paragraphs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "2f56efabe62668c6c07b242b400e3a646289860a244483e993fb65cd45056699",
+      "guide_sections": "4 / transparency and explainability paragraphs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "10a4e54f46afe2a3166b3314b0838c2d8bd358a9a48f6fbd9970a0439313b9c9",
+      "guide_sections": "5 / Secure the complete data and action path; identity/policy/guardrail table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "4fb4333914b2475c3b764fae73ebb9c8b85630583c5460b28232969f696104c3",
+      "guide_sections": "5 / Secure the complete data and action path; identity/policy/guardrail table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "40a0e49de8dca94d7ffec1ca6b3ae29f759cbe960f151e287ae1b80d76049aa8",
+      "guide_sections": "5 / Secure the complete data and action path; identity/policy/guardrail table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "6f2647eb38b91f1fe721ce235ee6f66865b316ea4dcc58c10627b6a643929370",
+      "guide_sections": "5 / Secure the complete data and action path; identity/policy/guardrail table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "26aae09ba18f203126843e2ecb6d73b60c0bd9e73a6711478210525b8f10e44f",
+      "guide_sections": "5 / Secure the complete data and action path; identity/policy/guardrail table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "1cf7102d1f74f3a71fd9ef31b28f50416f7183f6c4106a330edc67cdfd37f777",
+      "guide_sections": "5 / Governance is a decision system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "b2db3b71abb1c70a6c91549729382b9523cd958f62d86fb13d6813748f9eef44",
+      "guide_sections": "5 / Governance is a decision system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "575bc46cf0c761189958c64601ba9bfb916d825962ee004e5559ea0074532ea2",
+      "guide_sections": "5 / Governance is a decision system",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "AIF-C01"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AIF-C01",
+        "title": "AWS Certified AI Practitioner",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+        "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\aif-c01-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\aif-c01-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+        "previous_status_sha256": null,
+        "current_status_sha256": "63b00fda128e21acbb158f67ad01048ec990858d71bbdfba141757686cc791d7",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified AI Practitioner (AIF-C01)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 34,
+    "reachable": 32,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-aif-c01-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+      "checked_at": "2026-09-28T20:30:02.929720+00:00",
+      "health": {
+        "id": "aws-aif-c01-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+        "checked_at": "2026-09-28T20:30:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified AI Practitioner (AIF-C01) - AWS Certified AI PractitionerAWS Certified AI Practitioner (AIF-C01) - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8f2e894195f0f5e5dafd9ec1f3172ccc8916bd8a93257d49263288a028ebe049",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+      "sha256": "23db4dcc8786a6e538445c91d24c96c71cec1c2e957315c07a2fe579de4f0346",
+      "text_characters": 6257
+    },
+    {
+      "id": "aws-aif-c01-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      "checked_at": "2026-09-28T20:30:02.935096+00:00",
+      "health": {
+        "id": "aws-aif-c01-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+        "checked_at": "2026-09-28T20:30:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-ai-practitioner",
+        "canonical_url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "7ae22aba7ce9010a0aed82ec99448657a564e13db79bb45cb66b4d0eb84955a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      "sha256": "60dfc5fd923809fac75eae959fc24166753156ad4aa343414abb119b335c6c4b",
+      "text_characters": 6519
+    },
+    {
+      "id": "aws-aif-c01-domain-1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+      "checked_at": "2026-09-28T20:30:03.229342+00:00",
+      "health": {
+        "id": "aws-aif-c01-domain-1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+        "checked_at": "2026-09-28T20:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Fundamentals of AI and ML - AWS Certified AI PractitionerContent Domain 1: Fundamentals of AI and ML - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5a51c5a15c156f6d5dcc095e028bda34c406110e7858959fea10d9aee2447645",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain1.html",
+      "sha256": "ebfb579021d23de031d86c95465add6ee74b8f4a7f3fc7d4faba02dfded7f20e",
+      "text_characters": 3988
+    },
+    {
+      "id": "aws-aif-c01-domain-2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain2.html",
+      "checked_at": "2026-09-28T20:30:03.373767+00:00",
+      "health": {
+        "id": "aws-aif-c01-domain-2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain2.html",
+        "checked_at": "2026-09-28T20:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Fundamentals of GenAI - AWS Certified AI PractitionerContent Domain 2: Fundamentals of GenAI - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "61e5b2852c2bce66769e8f773246fd2b0f33d70d4997dedfc2b0a82677739c2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain2.html",
+      "sha256": "1d3afe969056b718902389a15c1d3730654e866c8b528814dbef480f0316e9e8",
+      "text_characters": 4083
+    },
+    {
+      "id": "aws-aif-c01-domain-3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain3.html",
+      "checked_at": "2026-09-28T20:30:03.559292+00:00",
+      "health": {
+        "id": "aws-aif-c01-domain-3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain3.html",
+        "checked_at": "2026-09-28T20:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Applications of Foundation Models - AWS Certified AI PractitionerContent Domain 3: Applications of Foundation Models - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "239ae30e8a7b3ca3d28bf1d26836e1a3426f0c77adc37b64c1a4f14a2b554669",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain3.html",
+      "sha256": "cc7a391493a5305a2f783bb4b8966161703f70c8766f860648905c17b7f13665",
+      "text_characters": 4530
+    },
+    {
+      "id": "aws-aif-c01-domain-4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain4.html",
+      "checked_at": "2026-09-28T20:30:03.678820+00:00",
+      "health": {
+        "id": "aws-aif-c01-domain-4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain4.html",
+        "checked_at": "2026-09-28T20:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Guidelines for Responsible AI - AWS Certified AI PractitionerContent Domain 4: Guidelines for Responsible AI - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1b23e3ec35a0273dedbecc2442ea3ce857588027a4edf575109160401f1b73f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain4.html",
+      "sha256": "7bcae5af5eaaad5ea183836010de4772d87db5e1533c76bf8b7a11488f2c259e",
+      "text_characters": 2873
+    },
+    {
+      "id": "aws-aif-c01-domain-5",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain5.html",
+      "checked_at": "2026-09-28T20:30:03.840093+00:00",
+      "health": {
+        "id": "aws-aif-c01-domain-5",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain5.html",
+        "checked_at": "2026-09-28T20:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain5.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 5: Security, Compliance, and Governance for AI Solutions - AWS Certified AI PractitionerContent Domain 5: Security, Compliance, and Governance for AI Solutions - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain5.html",
+        "duration_signals": [],
+        "signal_fingerprint": "915d957d4af60b1baa6d3a2b3b3d5f542d12b78ea63b6818f59312369ff4bec7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain5.html",
+      "sha256": "ef96e62b0c1ac58158f8abead28035676811d6ba1ac0143ddeea57f58bc566df",
+      "text_characters": 3058
+    },
+    {
+      "id": "aws-aif-c01-in-scope-services",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:03.965260+00:00",
+      "health": {
+        "id": "aws-aif-c01-in-scope-services",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified AI PractitionerIn-Scope AWS Services - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8fbedd374aaed6675016370fcfda705ae3b5e019321ad4cc5debac7edf5b6ef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-in-scope-services.html",
+      "sha256": "0207b14711dc82f5e9f493ed136ba5927c743be4bb09c0c401880196ac748d4d",
+      "text_characters": 2495
+    },
+    {
+      "id": "aws-aif-c01-bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+      "checked_at": "2026-09-28T20:30:04.150880+00:00",
+      "health": {
+        "id": "aws-aif-c01-bedrock",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "content_type": "text/html",
+        "page_title": "Overview - Amazon BedrockOverview - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3a060fb1bd3606bf52ba0341b73e3d89346e64eb8f579e4257b8e1462233817b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+      "sha256": "7b06004d0fa39f8da787a61476f1adf9f1dc84b5a3e3369486c8f3df501c6175",
+      "text_characters": 5374
+    },
+    {
+      "id": "aws-aif-c01-sagemaker",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+      "checked_at": "2026-09-28T20:30:04.282801+00:00",
+      "health": {
+        "id": "aws-aif-c01-sagemaker",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon SageMaker AI? - Amazon SageMaker AIWhat is Amazon SageMaker AI? - Amazon SageMaker AI",
+        "canonical_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6274ab5ad08f321e80436b157a2715fbf3fde825fe9ad403a7c4e25867057f83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+      "sha256": "4353c208fe9085e373662ec6e5123a4c1f0895ace1bf8a63108ab09a3b167f5e",
+      "text_characters": 4157
+    },
+    {
+      "id": "aws-aif-c01-agentcore",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+      "checked_at": "2026-09-28T20:30:04.439465+00:00",
+      "health": {
+        "id": "aws-aif-c01-agentcore",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+        "content_type": "text/html",
+        "page_title": "Overview - Amazon Bedrock AgentCoreOverview - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+        "duration_signals": [],
+        "signal_fingerprint": "61aa9582661fac4e4f0b2e4c6049c5b1a638d6d07574ee81767e7b91498cb95c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html",
+      "sha256": "dd182612db47b91d5a5cbe792a06ff8f6f7743d6d5b37e57c2b1a550c2b28ee5",
+      "text_characters": 9842
+    },
+    {
+      "id": "aws-aif-c01-knowledge-bases",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+      "checked_at": "2026-09-28T20:30:04.508873+00:00",
+      "health": {
+        "id": "aws-aif-c01-knowledge-bases",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+        "content_type": "text/html",
+        "page_title": "Retrieve data and generate AI responses with Amazon Bedrock Knowledge Bases - Amazon BedrockRetrieve data and generate AI responses with Amazon Bedrock Knowledge Bases - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cae8e5fec0c1283073750b6af1500ab42c8e6f6c76baa1826069462f13bc616e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+      "sha256": "1e03b0316b8000c8ee1d671fcf1e2622e11a5719c9bc73ca21763f058e844fdf",
+      "text_characters": 5277
+    },
+    {
+      "id": "aws-aif-c01-guardrails",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+      "checked_at": "2026-09-28T20:30:04.554361+00:00",
+      "health": {
+        "id": "aws-aif-c01-guardrails",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "content_type": "text/html",
+        "page_title": "Detect and filter harmful content by using Amazon Bedrock Guardrails - Amazon BedrockDetect and filter harmful content by using Amazon Bedrock Guardrails - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1dd646e5638253f7b6dfd4bc9b443336824b12e74309ec5b9c7deb655412a09d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+      "sha256": "77416a82d64121602b69ebe1f3e02e6569b2dab693f50691fdbf87239da97edc",
+      "text_characters": 6436
+    },
+    {
+      "id": "aws-aif-c01-model-evaluation",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html",
+      "checked_at": "2026-09-28T20:30:04.614416+00:00",
+      "health": {
+        "id": "aws-aif-c01-model-evaluation",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/",
+        "content_type": "text/html",
+        "page_title": "Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/",
+        "duration_signals": [],
+        "signal_fingerprint": "de8cd5f4168c0cfe6a63e1a07bd67981e9f175e87a8ab864f0f0d8210d1c359d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/",
+      "sha256": "59b1f7f07d750c9de6f1c6d8717d7d65c98196f2153282a6c668cb2bced39abc",
+      "text_characters": 14
+    },
+    {
+      "id": "aws-aif-c01-prompt-management",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html",
+      "checked_at": "2026-09-28T20:30:04.679248+00:00",
+      "health": {
+        "id": "aws-aif-c01-prompt-management",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html",
+        "content_type": "text/html",
+        "page_title": "Construct and store reusable prompts with Prompt management in Amazon Bedrock - Amazon BedrockConstruct and store reusable prompts with Prompt management in Amazon Bedrock - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html",
+        "duration_signals": [],
+        "signal_fingerprint": "34df1c35a443f9a34ae9fb862a9c41199bebd82fac2ea26985ba389c2d640499",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html",
+      "sha256": "0b2ef9db416605b7d8a206a4d32e58f10f2fbf6964773c13c2856b767bdda690",
+      "text_characters": 3381
+    },
+    {
+      "id": "aws-aif-c01-genai-lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+      "checked_at": "2026-09-28T20:30:04.777215+00:00",
+      "health": {
+        "id": "aws-aif-c01-genai-lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+        "content_type": "text/html",
+        "page_title": "Generative AI Lens - AWS Well-Architected Framework - Generative AI LensGenerative AI Lens - AWS Well-Architected Framework - Generative AI Lens",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cd833b164f097204821ac3c0c5831814e6120c70faad9e4c6d3074eca7f628da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html",
+      "sha256": "02d862faf66510c67d3ec47f41b2dccf1cbed68ae264720399e6ab3e7b326114",
+      "text_characters": 6451
+    },
+    {
+      "id": "aws-aif-c01-nist-ai-rmf",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "checked_at": "2026-09-28T20:30:04.778575+00:00",
+      "health": {
+        "id": "aws-aif-c01-nist-ai-rmf",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AI Risk Management Framework",
+        "canonical_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "duration_signals": [],
+        "signal_fingerprint": "75a108a2df92fa648fb28efac890144b2dec8b5278543106f01f1879fae24c4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "sha256": "55a46189c7e85e909212269d7c4628692c4942b3c6c6215e275128df551de76f",
+      "text_characters": 7118
+    },
+    {
+      "id": "aws-aif-c01-skill-builder-plan",
+      "url": "https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01",
+      "checked_at": "2026-09-28T20:30:04.973026+00:00",
+      "health": {
+        "id": "aws-aif-c01-skill-builder-plan",
+        "url": "https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/ai-practitioner",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/ai-practitioner",
+        "duration_signals": [],
+        "signal_fingerprint": "67ed95116e20138d28112b266facdf0c698985f26141cecfe6be38c8c2dcf275",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/ai-practitioner",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-aif-c01-pluralsight-domain1",
+      "url": "https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals",
+      "checked_at": "2026-09-28T20:30:05.065945+00:00",
+      "health": {
+        "id": "aws-aif-c01-pluralsight-domain1",
+        "url": "https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified AI Practitioner (AIF-C01): Fundamentals of AI and ML",
+        "canonical_url": "https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals",
+        "duration_signals": [],
+        "signal_fingerprint": "02d5a6c02f647134a7dda9953689258c506bfd55c102fe48cc537829c7aaa9e2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals",
+      "sha256": "21d7ee4c32258eef7203ecb5434f82d198c9cc95592a05b9815cd801f6f18eb8",
+      "text_characters": 7077
+    },
+    {
+      "id": "aws-aif-c01-oreilly",
+      "url": "https://www.oreilly.com/videos/aws-certified-ai/0642572022568/",
+      "checked_at": "2026-09-28T20:30:05.154980+00:00",
+      "health": {
+        "id": "aws-aif-c01-oreilly",
+        "url": "https://www.oreilly.com/videos/aws-certified-ai/0642572022568/",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/aws-certified-ai/0642572022568/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-aif-c01-udemy",
+      "url": "https://www.udemy.com/course/aws-ai-practitioner-certified/",
+      "checked_at": "2026-09-28T20:30:05.171160+00:00",
+      "health": {
+        "id": "aws-aif-c01-udemy",
+        "url": "https://www.udemy.com/course/aws-ai-practitioner-certified/",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-ai-practitioner-certified/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-aif-c01-whizlabs",
+      "url": "https://www.whizlabs.com/aws-certified-ai-practitioner/",
+      "checked_at": "2026-09-28T20:30:05.232205+00:00",
+      "health": {
+        "id": "aws-aif-c01-whizlabs",
+        "url": "https://www.whizlabs.com/aws-certified-ai-practitioner/",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-certified-ai-practitioner/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AIF-C01: AWS Certified AI Practitioner Course | Whizlabs",
+        "canonical_url": "https://www.whizlabs.com/aws-certified-ai-practitioner/",
+        "duration_signals": [],
+        "signal_fingerprint": "989d18ba342ff3e85f487c4e6bfcc110795968d462e1dabc2425ed967fc3eb5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-certified-ai-practitioner/",
+      "sha256": "402fd4ec6ec4acb1a59f71d558d321ddaf588dbc435dedc0685ecbcee04613a8",
+      "text_characters": 56
+    },
+    {
+      "id": "aws-aif-c01-tutorials-dojo",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/",
+      "checked_at": "2026-09-28T20:30:05.253946+00:00",
+      "health": {
+        "id": "aws-aif-c01-tutorials-dojo",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified AI Practitioner Practice Exams AIF-C01 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "3 hours",
+          "72 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "056c41aabe3e8543ba2ebd7ae4c0e89f22cee02033e622daf034650a064b8c50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/",
+      "sha256": "dfdd79f2ed45fc11c2b31a556a040b77da874fe981ec9fbf1c2f41276d8c1724",
+      "text_characters": 10482
+    },
+    {
+      "id": "aws-aif-c01-measureup",
+      "url": "https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html",
+      "checked_at": "2026-09-28T20:30:05.571095+00:00",
+      "health": {
+        "id": "aws-aif-c01-measureup",
+        "url": "https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Practice Test AIF-C01: AWS Certified AI Practitioner",
+        "canonical_url": "https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "725b90e761b3733b6d04cd3a1b1c6a4f4613b48ebf227ecf673e679cedb69fdd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html",
+      "sha256": "763485e725905f9a0acb5dfe72e1e55d6679a2b9096d88a5346c5d565936b11b",
+      "text_characters": 22111
+    },
+    {
+      "id": "aws-aif-c01-freecodecamp",
+      "url": "https://www.youtube.com/watch?v=WZeZZ8_W-M4",
+      "checked_at": "2026-09-28T20:30:05.797192+00:00",
+      "health": {
+        "id": "aws-aif-c01-freecodecamp",
+        "url": "https://www.youtube.com/watch?v=WZeZZ8_W-M4",
+        "checked_at": "2026-09-28T20:30:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=WZeZZ8_W-M4",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS Certified AI Practitioner (AIF-C01) – Full Course to PASS the Certification Exam",
+        "canonical_url": "https://www.youtube.com/watch?v=WZeZZ8_W-M4",
+        "duration_signals": [],
+        "signal_fingerprint": "7f5df3b7e8e25495ed2999a05461b6dbac5aebc6a30774a3fcdfe116fd6f498b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=WZeZZ8_W-M4",
+      "sha256": "a1874a192c41c9c20943ba5bc4e3735ae91bbc49cfe52010d7fcbc4d606d90f4",
+      "text_characters": 247
+    },
+    {
+      "id": "mla-c01-aws-service-availability",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "checked_at": "2026-09-28T20:30:34.556339+00:00",
+      "health": {
+        "id": "mla-c01-aws-service-availability",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Service Availability Updates - AWS",
+        "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+        "duration_signals": [],
+        "signal_fingerprint": "ad8b78fff49d16662086d2644f8def647e67462cebfcd1e11cd0dbcaef4ca87d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "sha256": "82cc441cdb1dc4407ae65a8e51691ff78b90b4e5e6f7103b26815da4087556ef",
+      "text_characters": 2167
+    },
+    {
+      "id": "aws-agentcore-evaluation-blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+      "checked_at": "2026-09-28T20:40:01.287976+00:00",
+      "health": {
+        "id": "aws-agentcore-evaluation-blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+        "checked_at": "2026-09-28T20:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Build reliable AI agents with Amazon Bedrock AgentCore Evaluations | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+        "duration_signals": [],
+        "signal_fingerprint": "78242e58cb489a182c3e9805d079e6fdd8bd26d30957ab3ef7ffacba64feda96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/",
+      "sha256": "5cd1dcdcb7fbffaa431e41ace79b38d67999044326dee6241260a8bc499c5e42",
+      "text_characters": 37005
+    },
+    {
+      "id": "aws-aif-revisions",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html",
+      "checked_at": "2026-09-28T21:28:47.660830+00:00",
+      "health": {
+        "id": "aws-aif-revisions",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html",
+        "content_type": "text/html",
+        "page_title": "Revisions - AWS Certified AI PractitionerRevisions - AWS Certified AI Practitioner",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b258f784959a5529db890e5e6c10e0c7e67f9eaf9c6e6ea9c757dac07e044120",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html",
+      "sha256": "eb6042b15e406f5d55db9553ae87cbc602d54a60307ee3564250ad36d747e371",
+      "text_characters": 9973
+    },
+    {
+      "id": "aws-quick-overview",
+      "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "checked_at": "2026-09-28T21:28:47.661833+00:00",
+      "health": {
+        "id": "aws-quick-overview",
+        "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Quick? - Amazon QuickWhat is Amazon Quick? - Amazon Quick",
+        "canonical_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d7ad980d06869366db020b50e2ccd16b0f00f71d609579e8606e2e305fff72a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "sha256": "d9b9f053b1fa0b5cf24d39835a53e2eacf6fae7b184e05f9c684fac691307845",
+      "text_characters": 3561
+    },
+    {
+      "id": "aws-kiro-docs",
+      "url": "https://kiro.dev/docs/",
+      "checked_at": "2026-09-28T21:28:47.662291+00:00",
+      "health": {
+        "id": "aws-kiro-docs",
+        "url": "https://kiro.dev/docs/",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kiro.dev/docs/",
+        "content_type": "text/html",
+        "page_title": "Docs - Kiro",
+        "canonical_url": "https://kiro.dev/docs/",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "d28ef09274817668458ba525fd24ee50f33ad0315af90b11877fe4b8a5950b89",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kiro.dev/docs/",
+      "sha256": "851dff86cc74e164b9b54456f31bc45a0394cb311ac1909f15f433f3f052c55e",
+      "text_characters": 0
+    },
+    {
+      "id": "aws-strands-introduction",
+      "url": "https://strandsagents.com/blog/introducing-strands-agents/",
+      "checked_at": "2026-09-28T21:28:47.662951+00:00",
+      "health": {
+        "id": "aws-strands-introduction",
+        "url": "https://strandsagents.com/blog/introducing-strands-agents/",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://strandsagents.com/blog/introducing-strands-agents/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introducing Strands Agents, an Open Source AI Agents SDK",
+        "canonical_url": "https://aws.amazon.com/blogs/opensource/introducing-strands-agents-an-open-source-ai-agents-sdk/",
+        "duration_signals": [
+          "13 min"
+        ],
+        "signal_fingerprint": "8e65399314955626a38adae28484833da320ee72e89649cba33c0bc43650a6b8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://strandsagents.com/blog/introducing-strands-agents/",
+      "sha256": "e20ecdbb80461811a7cbf126a0405bea9f2daa4276b67845223de99ee2e0345a",
+      "text_characters": 15520
+    },
+    {
+      "id": "aws-agentcore-policy",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "checked_at": "2026-09-28T21:28:48.184303+00:00",
+      "health": {
+        "id": "aws-agentcore-policy",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "checked_at": "2026-09-28T21:28:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "content_type": "text/html",
+        "page_title": "Policy in Amazon Bedrock AgentCore: Control Agent Interactions - Amazon Bedrock AgentCorePolicy in Amazon Bedrock AgentCore: Control Agent Interactions - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e80f8464a235695396d06d53483d06e85cbb95f76f5ead7f2c386cfaa7200ceb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "sha256": "f77e9ea2892795f8f360899fb5e80e3247fdfd3f0aad450aa71be37cb5632c62",
+      "text_characters": 6687
+    },
+    {
+      "id": "aws-auditmanager-availability",
+      "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+      "checked_at": "2026-09-28T21:28:48.186310+00:00",
+      "health": {
+        "id": "aws-auditmanager-availability",
+        "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "checked_at": "2026-09-28T21:28:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Audit Manager availability change - AWS Audit ManagerAWS Audit Manager availability change - AWS Audit Manager",
+        "canonical_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5f48011e38a445bb72684bd099d925c8b6c34cf4c122600883d2e40b02bfb1a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+      "sha256": "ba5bdc31ea83234631dd4604b5fde6270c82d2de3349bee90c1cf94bc18a658a",
+      "text_characters": 18704
+    },
+    {
+      "id": "aws-bedrock-evaluations",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html",
+      "checked_at": "2026-09-28T21:29:58.087964+00:00",
+      "health": {
+        "id": "aws-bedrock-evaluations",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html",
+        "checked_at": "2026-09-28T21:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html",
+        "content_type": "text/html",
+        "page_title": "Evaluate the performance of Amazon Bedrock resources - Amazon BedrockEvaluate the performance of Amazon Bedrock resources - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html",
+        "duration_signals": [],
+        "signal_fingerprint": "60ee18e90d77de7751ed0709f1155cc86d316b1fa114d37fe1ec7f005df374a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html",
+      "sha256": "f5062fd221528a88b0d896a6c8f365f769cff0be0a427611263bd9a3a3dd9d39",
+      "text_characters": 3787
+    },
+    {
+      "id": "aws-agentcore-identity",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+      "checked_at": "2026-09-28T21:29:58.088653+00:00",
+      "health": {
+        "id": "aws-agentcore-identity",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+        "checked_at": "2026-09-28T21:29:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+        "content_type": "text/html",
+        "page_title": "Provide identity and credential management for agent applications with Amazon Bedrock AgentCore Identity - Amazon Bedrock AgentCoreProvide identity and credential management for agent applications with Amazon Bedrock AgentCore Identity - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7cbb79e96a82031eea6a2f7465b040eda533b8661c112102d81ae0c263478afe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html",
+      "sha256": "b9083396a095a0bfb8de328596d9dda73d2ef064af75dc4dc0a91581841a9cbe",
+      "text_characters": 2226
+    }
+  ],
+  "added_source_ids": [
+    "aws-aif-revisions",
+    "aws-quick-overview",
+    "aws-kiro-docs",
+    "aws-strands-introduction",
+    "aws-agentcore-policy",
+    "aws-auditmanager-availability",
+    "aws-bedrock-evaluations",
+    "aws-agentcore-identity"
+  ],
+  "findings": [
+    {
+      "id": "aifc01-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Baseline revision mislabeled",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIF-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "History identifies 1.1 on April 30, 2026; 1.0 was March 26.",
+      "recommendation": "Correct date/version references and older-course gap advice.",
+      "disposition": "applied",
+      "source_id": "aws-aif-revisions",
+      "resolution": "Correct date/version references and older-course gap advice."
+    },
+    {
+      "id": "aifc01-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Foundational customization coverage thin",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01-domain3.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIF-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Task 3.3 calls for curated, governed, representative training data and tuning concepts.",
+      "recommendation": "Add data preparation and leakage example.",
+      "disposition": "applied",
+      "source_id": "aws-aif-c01-domain-3",
+      "resolution": "Add data preparation and leakage example."
+    },
+    {
+      "id": "aifc01-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Tool authorization differs from identity and content filtering",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIF-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Gateway policy evaluates configured requests before tool access.",
+      "recommendation": "Add comparison and action-bound approval example.",
+      "disposition": "applied",
+      "source_id": "aws-agentcore-policy",
+      "resolution": "Add comparison and action-bound approval example."
+    },
+    {
+      "id": "aifc01-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "A2I new-account availability changed",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIF-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "July 30 closure for new customers, existing maintenance.",
+      "recommendation": "Add dated access boundary and accessible human-review alternatives.",
+      "disposition": "applied",
+      "source_id": "mla-c01-aws-service-availability",
+      "resolution": "Add dated access boundary and accessible human-review alternatives."
+    },
+    {
+      "id": "aifc01-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Audit Manager unavailable to new accounts",
+      "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIF-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "April 30 closure with expansion limits and incomplete Config replacement.",
+      "recommendation": "Qualify evidence-tool comparison.",
+      "disposition": "applied",
+      "source_id": "aws-auditmanager-availability",
+      "resolution": "Qualify evidence-tool comparison."
+    },
+    {
+      "id": "aifc01-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Revision history and current examples differ",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AIF-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "History lists Clarify in 4.2.2 and Amazon Q in service additions; current 4.2.2 and in-scope page do not list them in those locations.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-agentcore-evaluation-blog",
+      "published_on": "2026-03-31",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Introduction, evaluation modes and evaluator distinctions; no code execution.",
+      "value": "Separate answer quality, tool action correctness and task completion; repeat trials and calibrate judges.",
+      "limits": "Foundational reading; advanced infrastructure code and regional/privacy claims not adopted."
+    },
+    {
+      "source_id": "aws-strands-introduction",
+      "published_on": "2025-05-16",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Model/tools/prompt conceptual sections.",
+      "value": "Differentiate an SDK from a managed runtime.",
+      "limits": "Historical roadmap not treated as current availability."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "10 arithmetic assertions for four metric/cost cases; fifth case is a reasoning exercise."
+  },
+  "answered_checks": 35,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight labs proposed; no paid lessons, live AWS resources, models or human evaluator study executed.",
+    "Revision history lists service additions not consistently represented in live domain/in-scope pages; exact example-list reconciliation remains unresolved.",
+    "Kiro direct fetch returned no extractable body; independent web rendering supported its development-environment purpose.",
+    "October 15 retirement is language-specific."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

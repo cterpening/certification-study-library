@@ -3977,24 +3977,70 @@
       "notes": "Review 135 knowledge/skill bullets, add 30 answer explanations and four worked foundational decisions, fill task 3.8 categories, update current/retiring support plans, and distinguish new project spend limits from AWS Budgets alerts. See docs/research/2026-09-28-clf-c02-deep-review.md"
     },
     {
-      "id":"aif-c01-2026-09-01-source-validation",
-      "exam_code":"AIF-C01",
-      "guide_path":"guides/AIF-C01-aws-certified-ai-practitioner.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/aif-c01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
-      "objective_coverage":[
-        {"objective_group":"Fundamentals of AI and ML","guide_sections":["Section 1","All integrated scenarios","Labs 1–2"]},
-        {"objective_group":"Fundamentals of GenAI","guide_sections":["Section 2","All integrated scenarios","Labs 3 and 7"]},
-        {"objective_group":"Applications of Foundation Models","guide_sections":["Section 3","All integrated scenarios","Labs 3–5"]},
-        {"objective_group":"Guidelines for Responsible AI","guide_sections":["Section 4","All integrated scenarios","Labs 5–6 and 8"]},
-        {"objective_group":"Security, Compliance, and Governance for AI Solutions","guide_sections":["Section 5","All integrated scenarios","Labs 6–8"]}
+      "id": "aif-c01-2026-09-28-source-validation",
+      "exam_code": "AIF-C01",
+      "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-28",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/aif-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+      "objective_coverage": [
+        {
+          "objective_group": "Fundamentals of AI and ML",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Fundamentals of GenAI",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Applications of Foundation Models",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Guidelines for Responsible AI",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security, Compliance, and Governance for AI Solutions",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 6–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":25,"reachable":23,"access_blocked":2,"missing_or_error":0},
-      "notes":"Revision 1.0 dated March 26, 2026 and its five detailed domain pages were reconciled with the live certification page and in-scope list. The guide explicitly covers the new agentic AI, MCP, multi-agent, memory/tool/workflow, Amazon Quick, Kiro, Strands Agents and Bedrock AgentCore scope and flags older training gaps. Three scenarios, eight safe labs and 35 original checks cover rules/traditional ML/FM/agent selection, lifecycle and metrics; tokens/context/adaptation; RAG, prompting and evaluation; responsible AI; and identity, data, application, tool, monitoring and governance controls. All 25 URLs are cataloged: 23 reachable and O'Reilly/Udemy automation-blocked; none missing or broken. Product names, release stages, regions, service behavior, price and course metadata are labeled volatile, and no recalled exam questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 34,
+        "reachable": 32,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Review 69 objectives; correct April 30 revision 1.1; add five worked examples, 35 answer explanations, tool-purpose and authorization comparisons, customization-data guidance and availability notices. See docs/research/2026-09-28-aif-c01-deep-review.md"
     },
     {
       "id": "aib-c01-2026-09-28-source-validation",

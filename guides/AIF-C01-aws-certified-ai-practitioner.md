@@ -6,17 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-28
 ---
 
 # AIF-C01 AWS Certified AI Practitioner Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aif-c01-coverage-record). The [official AIF-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 69 detailed objective bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aif-c01-coverage-record). The [official AIF-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html) is authoritative.
 
-**Current baseline:** AIF-C01 revision 1.0 dated March 26, 2026; five domains; 50 scored plus 15 unscored questions<br>
-**Upcoming delivery change:** AWS says the Italian and German language versions retire after October 15, 2026. This is a language-specific delivery change; the AIF-C01 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
+**Current baseline:** AIF-C01 revision 1.1 published April 30, 2026; five domains; 50 scored plus 15 unscored questions<br>
+**Upcoming delivery change:** AWS says the Italian and German language versions retire after October 15, 2026. This is a language-specific delivery change; the AIF-C01 blueprint remains the current study baseline. Rechecked September 28, 2026; no additional overall exam retirement was found. See the [deep-review report](../docs/research/2026-09-28-aif-c01-deep-review.md).<br>
+The [revision history](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/aif-01-revisions.html) records revision 1.0 on March 26 and 1.1 on April 30. Use the live domain pages for current examples: the history lists Clarify and Amazon Q additions that are not all present in the corresponding current domain/in-scope lists. This wording difference remains recorded for follow-up; it does not establish a new exam code or permission to skip the underlying concepts.
+
 **Important freshness boundary:** The current guide includes agentic AI, MCP, multi-agent patterns, memory, tool use, workflow orchestration, Amazon Quick, Kiro, Strands Agents, and Amazon Bedrock AgentCore. Older courses may cover the original AIF-C01 outline without these additions.<br>
 **Official source:** [AWS Certified AI Practitioner exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html)
 
@@ -91,7 +93,16 @@ Accuracy can conceal minority-class failure. A fraud model that predicts “not 
 
 Batch inference handles accumulated work; real-time inference serves an interactive request; asynchronous inference decouples longer jobs; serverless inference reduces infrastructure management for suitable traffic. Choose from latency, payload, scale, availability, cost, and control—not from the service label alone.
 
-[Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) supports the broader model lifecycle and custom ML work. Managed task services such as Transcribe, Translate, Comprehend, Lex, Polly, Rekognition, Textract, and Personalize provide higher-level capabilities. [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) provides managed access to foundation models and generative-AI capabilities. The current in-scope list also names Amazon Quick, Kiro, Strands Agents, Amazon Q, and AgentCore; verify their current interfaces and boundaries rather than inferring them from older product names.
+[Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) supports the broader model lifecycle and custom ML work. Managed task services such as Transcribe, Translate, Comprehend, Lex, Polly, Rekognition, Textract, and Personalize provide higher-level capabilities. [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) provides managed access to foundation models and generative-AI capabilities. The current objectives and service lists also discuss Amazon Quick, Kiro, Strands Agents and AgentCore; the revision history also lists Amazon Q, which is absent from the current examples checked here. Distinguish their purposes rather than treating all of them as model-hosting services.
+
+| Need | Suitable starting point | What still needs a decision |
+|---|---|---|
+| Business research, connected information, analytics and business workflows | [Amazon Quick](https://docs.aws.amazon.com/quick/latest/userguide/what-is.html); Quick Sight is its analytics feature | Data connectors, caller access and approval of actions |
+| Assistance planning, writing and testing software | [Kiro](https://kiro.dev/docs/) | Repository/tool permissions, tests and review of generated changes |
+| Build the agent loop around a model, tools and instructions | [Strands Agents](https://strandsagents.com/blog/introducing-strands-agents/) SDK | Tool behavior, safe execution boundaries and deployment choice |
+| Operate agents with managed runtime, identity, memory and monitoring capabilities | [AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html) | Which capabilities are needed, access rules, evaluation and cost |
+
+A framework can run on managed infrastructure; these choices can be combined. MCP describes an integration protocol, not a grant of trust or unrestricted tool access. The Strands introduction is a May 2025 conceptual article; its roadmap statements are historical.
 
 **Related item:** MLOps makes experiments, data, code, configurations, approvals, deployments, monitoring, and retraining reproducible. It is not merely a CI/CD pipeline; model behavior also depends on data and statistical conditions.
 
@@ -182,6 +193,12 @@ Evaluate retrieval separately from generation:
 
 **Related item:** Adding more documents or a larger context window does not repair poor retrieval. It can raise cost and expose irrelevant or unauthorized text.
 
+### Prepare customization data before selecting a training method
+
+Task 3.3 requires understanding data curation and governance as well as technique names. Check permitted use, provenance, sensitive content, label/instruction quality, representative languages and populations, size and duplicates. Separate training examples from held-out evaluation examples by the boundary that could leak information, such as customer, document family or time. Compare the adapted model with a simpler baseline on unseen cases.
+
+Instruction tuning uses examples of requested behavior and good responses; domain adaptation targets relevant specialist material. Continued pretraining learns further from a corpus, while distillation transfers useful behavior from a larger teacher to a smaller student. RLHF uses human preference feedback to improve behavior; preferences can be inconsistent or biased and need clear rubrics and quality review. More data or a higher judge score alone does not establish safer behavior. At this level, explain the choice and evidence; implementing a training pipeline is outside the target role.
+
 ### Prompt engineering is a controlled artifact
 
 A useful prompt separates role, task, context, constraints, allowed sources/tools, output schema, examples, uncertainty behavior, and refusal/escalation. Zero-shot uses instructions alone; single/few-shot adds examples; prompt templates parameterize repeatable use. “Chain-of-thought” is an objective term, but production systems should ask for concise evidence or structured justification rather than expose hidden reasoning as if it were guaranteed truth.
@@ -192,11 +209,13 @@ Prompt injection attempts to alter instructions through untrusted input. Jailbre
 
 ### Evaluation must connect quality to consequence
 
-Use representative, versioned datasets including normal, edge, adversarial, subgroup, refusal, and regression cases. Human evaluation captures usefulness and domain judgment. Automatic metrics can help but each measures a proxy: BLEU and ROUGE compare text overlap, BERTScore uses semantic representations, and LLM-as-a-judge uses another model with its own bias and calibration risks. [Amazon Bedrock model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html) supports current evaluation workflows.
+Use representative, versioned datasets including normal, edge, adversarial, subgroup, refusal, and regression cases. Human evaluation captures usefulness and domain judgment. Automatic metrics can help but each measures a proxy: BLEU and ROUGE compare text overlap, BERTScore uses semantic representations, and LLM-as-a-judge uses another model with its own bias and calibration risks. [Amazon Bedrock model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html) supports current evaluation workflows.
 
 Application measures include task completion, retrieval quality, groundedness, tool success, policy violations, human correction/escalation, latency, tokens/cost per successful task, user satisfaction, and business outcome. “The answer looked good” is not a release gate.
 
 ---
+
+A useful optional article is [Build reliable AI agents with AgentCore Evaluations](https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-agents-with-amazon-bedrock-agentcore-evaluations/) (March 31, 2026). Read the introduction and evaluator distinctions: a tool can receive the right parameters while the final answer is wrong, and a fluent answer can fail the user's goal. Practice scoring the answer, tool call and completed task separately. Repeated trials help expose variation. A model judge needs human calibration; neither one successful trace nor an average score proves safe operation. The article's deployment code was not executed for this guide.
 
 ## 4. Guidelines for Responsible AI — 14%
 
@@ -216,7 +235,7 @@ The official [Domain 4 page](https://docs.aws.amazon.com/aws-certification/lates
 
 Bias can enter through problem framing, sampling, labels, proxies, model choice, evaluation, thresholds, deployment context, and feedback. Variance is sensitivity to data; high variance can overfit. High bias can underfit. “Bias” in statistical fit and “bias” as harmful disparate behavior are related but not interchangeable.
 
-[Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) can apply configurable safeguards, but responsible operation also needs requirements, tests, identity, human controls, monitoring, incident response, and policy. Amazon A2I supports human review patterns. SageMaker Model Cards document intended use, risk, evaluation, and lifecycle evidence.
+[Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) can apply configurable safeguards, but responsible operation also needs requirements, tests, identity, human controls, monitoring, incident response, and policy. Amazon A2I illustrates human review workflows, but the [June 30 service notice](https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/) closed A2I, Clarify and several other SageMaker features to new customers starting July 30, 2026. Existing use continues in maintenance. Learn human review and explainability through accessible workflows; do not make a new-account lab depend on these features. SageMaker Model Cards document intended use, risk, evaluation, and lifecycle evidence.
 
 Transparent does not mean publishing sensitive prompts, weights, or personal data. Explainability must be useful to its audience. A customer may need the reason and appeal route; an operator needs trace/version/retrieval/tool evidence; a regulator may need documented controls and validation.
 
@@ -247,6 +266,18 @@ Threat-model user input, system prompts, retrieved documents, embeddings/vector 
 AWS remains responsible for security of the cloud; the customer remains responsible for identities, data, configuration, application behavior, and every controlled layer in the AI system. Managed services change the division of operational tasks, not accountability for the use case.
 
 Macie helps discover sensitive data in S3; KMS protects keys; Secrets Manager manages supported secrets; Inspector assesses supported workload vulnerabilities; CloudTrail records supported API activity; Config evaluates resource configuration; Artifact provides compliance reports/agreements; Audit Manager helps collect assessment evidence; CloudWatch supplies telemetry; Trusted Advisor provides checks and guidance. Select each from the evidence/control need, not because “it is a security service.”
+
+[Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html) closed new-account setup on April 30, 2026, with limits on expansion for existing customers. AWS points to Config conformance packs for some controls, but explicitly says they do not reproduce all Audit Manager frameworks, evidence sources or reports. Learn the evidence need before choosing the collection tool.
+
+Keep three AI control purposes distinct:
+
+| Control | Main question | Boundary |
+|---|---|---|
+| [AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html) | Which user/agent is authenticated and how does it obtain access credentials? | Authentication does not authorize every action |
+| [Policy in AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html) | Is this tool request allowed under the configured rules? | Enforcement covers traffic through the associated gateway; other paths need controls too |
+| Bedrock Guardrails | Does this input/output meet configured content and safety checks? | Content filtering does not replace tool permissions or business approval |
+
+For a refund tool, bind the approval to the customer, amount and action. If any changes after approval, validate and obtain the required approval again. Log the decision without exposing secrets, and make retries unable to issue duplicate refunds.
 
 ### Governance is a decision system
 
@@ -282,9 +313,19 @@ An agent may retrieve an order, explain policy, and initiate a return. Give each
 
 ---
 
+## Worked learning examples
+
+These original, hypothetical examples build intuition. Arithmetic was checked locally; statistical implementation is outside AIF-C01's target role.
+
+1. **Accuracy can hide complete failure:** Of 1,000 items, 20 are truly positive. Predicting everything negative gives 98% accuracy and 0% recall. A second classifier has 15 true positives, 10 false positives, 5 false negatives and 970 true negatives: accuracy 98.5%, precision 60%, recall 75%, F1 about 66.7%. Choose acceptable tradeoffs from the consequences; do not optimize accuracy alone.
+2. **Retrieval needs separate evidence:** Four authorized passages are relevant to a question. The top five results contain three of them: precision is 3/5 and recall is 3/4. A convincing answer still needs faithful synthesis and valid citations. A permission leak is a separate failure even if relevance improves.
+3. **Cost per useful answer:** Assume 1,000 requests, each with 2,000 input and 300 output tokens, at fictional rates of $1 and $4 per million tokens. Inference costs $3.20. If 800 answers meet the acceptance rubric, inference cost is $0.004 per accepted answer, before retrieval, retries and human correction. Compare systems using the same acceptance standard and full cost scope.
+4. **Aggregate quality hides differences:** Group A has 90 accepted answers out of 100; B has 40 out of 50. Overall acceptance is about 86.7%, but the groups have 90% and 80%. Investigate task mix, sample size, labels and consequences. These percentages alone do not prove discrimination or fairness.
+5. **Keep related data together:** A dataset contains several paraphrases of each customer's support case. Randomly splitting individual rows can place near-duplicates in both training and evaluation. Split by case/customer as appropriate, and use a later-time holdout when the real decision concerns future cases. Report the chosen boundary and remaining limitations.
+
 ## 7. Hands-on labs
 
-Use a controlled sandbox, set a small budget, avoid personal/confidential data, check service/region pricing first, delete resources afterward, and prefer free documentation or no-deployment design work when possible.
+These eight labs are proposed; no AWS resource or live model was used in this review. Use a controlled sandbox, set a small budget, avoid personal/confidential data, check service/region pricing first, delete resources afterward, and prefer free documentation or no-deployment design work when possible.
 
 ### Lab 1: Technique decision matrix
 
@@ -360,11 +401,49 @@ Explain why each answer is true and why the nearest alternative is weaker.
 34. How do lineage, catalog, model card, and audit trail answer different evidence questions?
 35. What evidence should trigger rollback, suspension, retraining, replacement, or retirement?
 
+### Answer explanations
+
+1. Policy code can enforce a specified rule reproducibly; an FM can vary, invent exceptions or misunderstand the rule.
+2. Classification predicts categories, regression predicts numeric values and clustering groups items without predefined labels.
+3. A dominant class can produce high accuracy while the important minority class is missed entirely; inspect class-specific errors.
+4. Missing a serious positive case may be more costly than reviewing false alarms. Higher recall can create more false positives and review work.
+5. Batch processes accumulated work; real-time serves interactive requests; asynchronous decouples longer work; serverless changes infrastructure management. Verify each service’s latency and workload limits.
+6. The provider manages specified infrastructure; the customer still owns permitted data use, access, configuration, application behavior and outcome validation.
+7. A supported task such as transcription or document extraction can use a higher-level service when customization/control needs do not justify building a broader system.
+8. An agent can choose tools, maintain state and take steps toward a goal; a generated chat response alone need not act on external systems.
+9. MCP standardizes connectivity. Authenticate the caller, constrain tool permissions and validate data/actions separately.
+10. A known sequence with mandatory checks and predictable failure handling often benefits from a fixed workflow; additional agents add coordination and authority boundaries.
+11. Tokens consume context and affect inference charges and latency; the relationship to words varies by content/model.
+12. An embedding encodes similarity in a vector. Nearby vectors can describe outdated, false or unauthorized material.
+13. Small chunks can lose context; large chunks can dilute useful evidence. Evaluate retrieval against representative questions.
+14. Instructions, conversation, retrieved sources, memory, tool results, permissions, examples and output requirements all contribute.
+15. RAG fits changing reference knowledge and cited answers; fine-tuning can adapt behavior/style but is not a reliable substitute for current facts or per-user access controls.
+16. Unauthorized material must not enter the model context; filtering only the final answer leaves earlier exposure possible.
+17. Prompting changes context; fine-tuning adapts weights using targeted examples; continued pretraining uses further corpus training; distillation trains a smaller student; from-scratch training creates a new model at much greater data/compute cost.
+18. Temperature changes sampling variation and output limits cap generation length. Neither guarantees accuracy, safety or deterministic behavior.
+19. Behavior depends on their combination. A versioned release makes regressions attributable and rollback reproducible.
+20. Injection inserts instructions through untrusted inputs; jailbreaking tries to bypass restrictions; poisoning corrupts training or retrieval data. Their paths can overlap.
+21. A benchmark may omit actual users, integration failures, unacceptable cost, low adoption or harmful consequences; measure end-to-end outcomes.
+22. BLEU/ROUGE approximate overlap; BERTScore semantic similarity; human review domain usefulness; a judge model rubric-based assessment. None is a universal truth or safety measure.
+23. Retrieval precision/recall, permissions, freshness and provenance precede generation measures such as faithfulness, citation support and acceptable abstention.
+24. A clear statement of insufficient evidence plus a safe next step avoids inventing an answer when evidence or authority is missing.
+25. Sampling, labels, objectives, model selection, thresholds, deployment context and feedback can all create or amplify harmful differences.
+26. Underfit/overfit concern statistical generalization; fairness concerns effects on people. A well-generalizing model can still create unfair outcomes.
+27. A guardrail handles configured checks. Responsible AI also requires data governance, evaluation, human ownership, monitoring and incident decisions.
+28. Customers need understandable limits and recourse; operators need diagnostic evidence; reviewers need traceable controls and decisions, with access appropriate to each role.
+29. Disclosing sensitive data, secrets or exploitable control details can create harm. Provide meaningful explanations without exposing protected information.
+30. Check rights to use data, model/provider terms, permitted redistribution, privacy and output-use obligations; obtain appropriate review for the actual use case.
+31. Apply least privilege, scoped credentials, encryption, retrieval filtering, memory isolation, output validation, protected logs and retention/deletion controls across the entire path.
+32. IAM controls access; KMS keys/encryption; Macie sensitive S3 data; CloudTrail activity; Config configuration; Artifact provider reports; Audit Manager assessment evidence for eligible existing use; Inspector vulnerabilities; CloudWatch telemetry.
+33. Together they restrict authority, reject invalid input, obtain required consent and make retries safe. Bind approval to exact action parameters.
+34. Lineage records origin/transformation; a catalog describes discoverable assets; a model card describes intended use and limits; an audit trail records events and decisions.
+35. Regression, security/privacy failures, harmful subgroup outcomes, changed data/terms, unacceptable cost or unavailable support can trigger action under named owners and thresholds.
+
 ### Readiness checklist
 
 - [ ] I can map each current domain and task statement to a business and technical decision.
 - [ ] I can distinguish rules, traditional ML, GenAI, RAG, workflow, and agent use cases.
-- [ ] I can explain the March 2026 agentic/MCP/Kiro/Strands/AgentCore/Quick additions without relying on an older course.
+- [ ] I can explain the April 2026 agentic/MCP/Kiro/Strands/AgentCore/Quick additions without relying on an older course.
 - [ ] I can select metrics from failure consequence and identify misleading aggregates.
 - [ ] I can compare prompting, RAG, fine-tuning, continued pretraining, distillation, and training from scratch.
 - [ ] I can evaluate retrieval, generation, agent actions, safety, cost, and business value separately.
@@ -394,13 +473,13 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [AWS AIF-C01 exam page and four-step prep plan](https://aws.amazon.com/certification/certified-ai-practitioner/) | Public page; Skill Builder account for learning | About 15–25 hours selected official preparation plus labs | Start with the current guide, pretest/question set, gap learning, labs, and official practice exam; some components require a subscription |
-| [AWS Standard Exam Prep Plan for AIF-C01](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01) | Skill Builder account; free and subscription elements vary | About 12–20 hours estimated plus practice | Official structured route; confirm it visibly reflects the March 2026 agentic additions |
-| [Pluralsight — AIF-C01 Fundamentals of AI and ML](https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals) | Subscription/trial | 2 hours 4 minutes | Strong Domain 1 supplement last updated November 2024; not complete current coverage and predates the March 2026 agentic revision |
-| [O'Reilly — AIF-C01 Certification Course](https://www.oreilly.com/videos/aws-certified-ai/0642572022568/) | Subscription/trial | 2 hours 36 minutes plus gap work | Tom Taulli course dated March 2026; compare its outline carefully with revision 1.0 because visible introductory lessons contain reused Cloud Practitioner labels |
-| [Udemy — Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/) | Purchase or subscription | 10 hours 17 minutes plus labs and practice review | Stéphane Maarek course shown updated August 2026 with a practice exam; verify explicit coverage of every March 2026 addition |
-| [Whizlabs — AWS Certified AI Practitioner AIF-C01](https://www.whizlabs.com/aws-certified-ai-practitioner/) | Paid modules/subscription; trial items vary | About 10–18 hours estimated plus 59 listed labs and practice review | Page shown updated April 2026 with 92 videos, quizzes, labs and practice; public counts are inconsistent in places, so inspect the live outline |
-| [Tutorials Dojo — AIF-C01 practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/) | Paid; free sampler may be available | About 8–14 hours for diagnostic, timed, review, section, and randomized modes | Current page lists 16 quizzes and multiple modes; use each rationale with the March 2026 AWS guide, never recalled-question claims |
-| [MeasureUp — AIF-C01 practice test](https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html) | Paid; separate lower-cost 30-question assessment | About 6–12 hours across certification/practice modes and review | Current exact product with explanations/references; inspect blueprint revision and translation caveats before purchase |
-| [freeCodeCamp/ExamPro — AWS AI Practitioner full course](https://www.youtube.com/watch?v=WZeZZ8_W-M4) | Free | About 15 hours plus labs | Andrew Brown long-form course is a useful foundation; it predates revision 1.0, so add the March 2026 agentic, MCP, Quick, Kiro, Strands, and AgentCore objectives |
+| [AWS Standard Exam Prep Plan for AIF-C01](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01) | Skill Builder account; free and subscription elements vary | About 12–20 hours estimated plus practice | Official structured route; confirm it visibly reflects the April 2026 agentic additions |
+| [Pluralsight — AIF-C01 Fundamentals of AI and ML](https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals) | Subscription/trial | 2 hours 4 minutes | Strong Domain 1 supplement last updated November 2024; not complete current coverage and predates the April 2026 agentic revision |
+| [O'Reilly — AIF-C01 Certification Course](https://www.oreilly.com/videos/aws-certified-ai/0642572022568/) | Subscription/trial | Plan 6–12 hours with gap work | Public body blocked on this review; runtime, date and lesson labels not reverified; compare the accessible outline with revision 1.1 |
+| [Udemy — Ultimate AWS Certified AI Practitioner AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/) | Purchase or subscription | Plan 15–25 hours with labs and practice | Public body blocked; current runtime/date not reverified; require explicit April 2026 objective coverage |
+| [Whizlabs — AWS Certified AI Practitioner AIF-C01](https://www.whizlabs.com/aws-certified-ai-practitioner/) | Paid modules/subscription; trial items vary | Plan 15–25 hours selectively | Public shell did not verify current video/lab counts or date; inspect the actual outline before purchase |
+| [Tutorials Dojo — AIF-C01 practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/) | Paid; free sampler may be available | About 8–14 hours for diagnostic, timed, review, section, and randomized modes | Public page lists 16 quizzes and multiple modes, but also markets updates from actual-exam feedback; use only independently authored practice and documentation-based explanations, and avoid recalled-question material |
+| [MeasureUp — AIF-C01 practice test](https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html) | Paid; demo/assessment offers vary | About 6–12 hours across certification/practice modes and review | Public page lists 150 questions and an April 2025 release; verify April 2026 revision coverage and automated-translation limitations before purchase |
+| [freeCodeCamp/ExamPro — AWS AI Practitioner full course](https://www.youtube.com/watch?v=WZeZZ8_W-M4) | Free | Plan 15–25 hours with independent exercises | Limited public metadata did not verify runtime or full coverage; compare the outline with revision 1.1 before relying on it |
 
 See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md) for provider-selection criteria. Avoid any source claiming real or recalled exam questions; use original practice to test reasoning, then verify explanations against current first-party documentation.

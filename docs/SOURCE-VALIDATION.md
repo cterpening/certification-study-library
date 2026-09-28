@@ -963,6 +963,8 @@ The review reconciles the detailed October 30, 2025 live-version PDF with the cu
 
 ## AIF-C01 coverage record
 
+The September 28 [deep review](research/2026-09-28-aif-c01-deep-review.md) maps 69 detailed objectives. Review 69 objectives; correct April 30 revision 1.1; add five worked examples, 35 answer explanations, tool-purpose and authorization comparisons, customization-data guidance and availability notices. Current guide citations: 34 registered, 32 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Fundamentals of AI and ML | Section 1, all integrated scenarios, and Labs 1–2 |
