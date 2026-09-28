@@ -4,6 +4,307 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-ab730-deep-review",
+      "title": "AB-730 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-730"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-730",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-730-ai-business-professional.md",
+          "baseline_sha256": "e80af4ea42d8f54e93ef919402611f5a7c9475b87477b7f0b3c32832c7a15a1c",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "41 October objectives mapped in eight groups/four domains; July baseline retained. Credential confirms October 20 revision, 45 minutes and 13 languages; course one day."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Complete guide read; targeted current model, connector, memory/history/notebook, meeting and Cowork control documentation reviewed. Four examples, ten labs and 44 answers; eight offline assertions only."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September Copilot and Work IQ announcements checked for staged availability; current connector overview still read-only pending early October write actions. Three follow-ups preserve rollout/preview boundaries."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide URLs fetched/registered. Correct four-module Learn path and two-course Pluralsight path. O'Reilly agenda 180 minutes and MeasureUp 110 questions still three-domain scope. Udemy blocked, sign-in/video content not reviewed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Distinguish notebook sharing from harmless output, saved memory from inferred personalization/retention, shared notes from private catch-up, one-action approval from session/automation authority, and a quality score from verified skill correctness. Exact agent-filter UI remains rollout-qualified."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab730-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "October adds a fourth agent domain",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current October objectives explicitly require model selection, connectors, visual outputs, meeting tools, agent history and Cowork.",
+              "recommendation": "Map every bullet and expand dated preparation without accepting the future baseline early.",
+              "disposition": "applied",
+              "source_id": "ab-730-blueprint",
+              "resolution": "Map every bullet and expand dated preparation without accepting the future baseline early."
+            },
+            {
+              "id": "ab730-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Model choices have app and policy scope",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-chat-considerations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Auto, Quick response and Think deeper address different task needs; available providers and grounding depend on the experience.",
+              "recommendation": "Add selection and same-evidence comparison, with Researcher and Excel boundaries.",
+              "disposition": "applied",
+              "source_id": "ab730-models",
+              "resolution": "Add selection and same-evidence comparison, with Researcher and Excel boundaries."
+            },
+            {
+              "id": "ab730-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Live retrieval and indexed retrieval have different freshness",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Synced connectors index source content; federated retrieval is live, currently read-only with write actions announced for early October.",
+              "recommendation": "Add troubleshooting and missing-evidence reasoning; schedule rollout verification.",
+              "disposition": "applied",
+              "source_id": "ab730-connectors",
+              "resolution": "Add troubleshooting and missing-evidence reasoning; schedule rollout verification."
+            },
+            {
+              "id": "ab730-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Notebook sharing can invite recipients to linked files",
+              "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/add-references-to-your-microsoft-365-copilot-notebook",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sharing a notebook can invite recipients to linked files the sharer can share; grounding scope and reference limits are distinct.",
+              "recommendation": "Add source-scope guidance and synthetic plan/compensation example and lab.",
+              "disposition": "applied",
+              "source_id": "ab730-notebook-references",
+              "resolution": "Add source-scope guidance and synthetic plan/compensation example and lab."
+            },
+            {
+              "id": "ab730-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Personalization has multiple sources",
+              "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/personalize-what-microsoft-365-copilot-remembers",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Saved memory, chat/work inferences and instructions differ; temporary chat does not override organizational retention.",
+              "recommendation": "Add separate controls and history deletion timing caveat.",
+              "disposition": "applied",
+              "source_id": "ab730-memory",
+              "resolution": "Add separate controls and history deletion timing caveat."
+            },
+            {
+              "id": "ab730-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Meeting tools have different audiences and task behavior",
+              "url": "https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Facilitator publishes shared notes and has meeting-type/license limits; task features have preview and sync distinctions.",
+              "recommendation": "Add meeting comparison, note-editability and task acceptance boundaries.",
+              "disposition": "applied",
+              "source_id": "ab730-facilitator",
+              "resolution": "Add meeting comparison, note-editability and task acceptance boundaries."
+            },
+            {
+              "id": "ab730-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Live catch-up does not imply a complete saved transcript",
+              "url": "https://support.microsoft.com/en-us/teams/copilot/catch-up-on-meetings-with-microsoft-365-copilot-in-teams",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only-during mode can use transient speech; post-meeting spoken-content questions need a transcript.",
+              "recommendation": "Add capture/retention distinction and 40-minute/20-minute evidence example.",
+              "disposition": "applied",
+              "source_id": "ab730-catchup",
+              "resolution": "Add capture/retention distinction and 40-minute/20-minute evidence example."
+            },
+            {
+              "id": "ab730-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Recap features and sharing depend on capture and access",
+              "url": "https://support.microsoft.com/en-us/teams/meetings/recap-in-microsoft-teams",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Intelligent recap license, transcript language/length and recording requirements differ; explicit sharing and copying a link have different effects.",
+              "recommendation": "Add feature prerequisites and recipient/source verification.",
+              "disposition": "applied",
+              "source_id": "ab730-recap",
+              "resolution": "Add feature prerequisites and recipient/source verification."
+            },
+            {
+              "id": "ab730-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cowork approval scope can exceed one displayed action",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Session approvals may skip later prompts; editing an existing Office file changes that shared file.",
+              "recommendation": "Add approval-scope example and disposable-file/version-history lab.",
+              "disposition": "applied",
+              "source_id": "ab-730-cowork-use",
+              "resolution": "Add approval-scope example and disposable-file/version-history lab."
+            },
+            {
+              "id": "ab730-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Automation preauthorization and spending access are separate controls",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-admin-governance",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Automated tasks can have preauthorized actions; small spending limits still grant access and model settings do not revoke Cowork service access.",
+              "recommendation": "Add schedule/action review and budget-versus-access distinction.",
+              "disposition": "applied",
+              "source_id": "ab730-cowork-admin",
+              "resolution": "Add schedule/action review and budget-versus-access distinction."
+            },
+            {
+              "id": "ab730-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Shared skills have a version and trust boundary",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-customize",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A skill supplies instructions and can be edited/shared; updates need Re-share and should be tested in a new conversation.",
+              "recommendation": "Add built-in/custom decision, source review and new-session testing; distinguish automated evaluation from certified correctness.",
+              "disposition": "applied",
+              "source_id": "ab730-cowork-customize",
+              "resolution": "Add built-in/custom decision, source review and new-session testing; distinguish automated evaluation from certified correctness."
+            },
+            {
+              "id": "ab730-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Browser execution uses a local signed-in identity",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-local-browser",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Supported Edge and tenant enablement are required; desktop/mobile app route is unsupported and user handoffs handle credentials/human checks.",
+              "recommendation": "Add execution-surface and account verification without treating cloud permission as universal browser support.",
+              "disposition": "applied",
+              "source_id": "ab730-cowork-browser",
+              "resolution": "Add execution-surface and account verification without treating cloud permission as universal browser support."
+            },
+            {
+              "id": "ab730-deep-13",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Linked Learn path changed module inventory",
+              "url": "https://learn.microsoft.com/en-us/training/paths/transform-business-workflows-with-ai/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public path now lists Enhance business workflows with AI and four modules including Cowork rather than the previous six-module listing.",
+              "recommendation": "Update guide and source catalog; withdraw current-duration and full-scope claims.",
+              "disposition": "applied",
+              "source_id": "ab-730-learn-path",
+              "resolution": "Update guide and source catalog; withdraw current-duration and full-scope claims."
+            }
+          ],
+          "notes": "Whole guide read and all 41 October objectives in eight groups mapped; July 22 baseline retained. Add explicit model, connector, notebook, meeting and Cowork preparation; four worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Correct four-module Learn path and two-course Pluralsight listings; qualify stale paid-course scope. Eight synthetic arithmetic/set assertions passed; no Microsoft 365 tenant, agent, meeting or automation execution. Three rollout checkpoints added; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-ab-730-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 13,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-dp800-deep-review",
       "title": "DP-800 complete guide and learning-content review",
       "rubric_version": 1,

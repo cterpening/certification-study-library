@@ -115,6 +115,8 @@ The review maps every July 22, 2026 subobjective to a business outcome, AI/ML/au
 
 ## AB-730 coverage record
 
+The September 27 [deep review](research/2026-09-27-ab-730-deep-review.md) maps 41 detailed objectives. Whole guide read and all 41 October objectives in eight groups mapped; July 22 baseline retained. Add explicit model, connector, notebook, meeting and Cowork preparation; four worked examples, two labs, 44 answers and two qualified Microsoft blog exercises. Correct four-module Learn path and two-course Pluralsight listings; qualify stale paid-course scope. Eight synthetic arithmetic/set assertions passed; no Microsoft 365 tenant, agent, meeting or automation execution. Three rollout checkpoints added; human review pending. Current guide citations: 35 registered, 34 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Understand generative AI fundamentals | Section 1, all integrated scenarios, and Labs 1–2 |

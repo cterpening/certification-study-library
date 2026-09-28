@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review AB-730 and map 41 October objectives while retaining July's baseline. Expand model, connector, notebook, meeting and Cowork preparation; add four worked examples, two labs, 44 answers, two Microsoft blog exercises and three rollout follow-ups. Correct current Learn/Pluralsight listings and qualify older paid-resource scope. See the [AB-730 report](docs/research/2026-09-27-ab-730-deep-review.md).
+
 - September 27, 2026: deep-review DP-800 and map 73 October objectives while retaining March's baseline. Correct CES scope, RLS update protection, DAB 2.0 defaults and external-model scope. Add five worked examples, two labs, 44 answers, two qualified Microsoft blog readings and three vector/CES follow-ups. See the [DP-800 report](docs/research/2026-09-27-dp-800-deep-review.md).
 
 - September 27, 2026: deep-review DP-750's 77 October objectives while retaining March's baseline. Correct ten-language availability and SQL paths/order; add four examples, two labs, 44 answers and two qualified Databricks blog readings. Clarify ABAC identities, replay/schema/quality, test isolation, direct-engine migration and maintenance windows; add three follow-up checkpoints. See the [DP-750 report](docs/research/2026-09-27-dp-750-deep-review.md).
