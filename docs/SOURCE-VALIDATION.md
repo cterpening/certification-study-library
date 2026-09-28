@@ -345,6 +345,8 @@ The review expanded the guide into a requirement-to-solution method covering out
 
 ## SC-900 coverage record
 
+The September 27 [deep review](research/2026-09-27-sc-900-deep-review.md) maps 58 detailed objectives. Whole guide read; 58 October objectives in 14 groups individually mapped while retaining July 28 baseline. Add four worked examples, two labs, and answers for all six old plus twelve new checks (18 total). Clarify workload identities, human/software policy, access-review application, segmentation/NSG flows, label publication, retention and threat-intelligence evidence. Add two qualified passkey blog exercises, current product/lifecycle notes and five checkpoints. Eight offline checks passed; no tenant execution; human review pending. Current guide citations: 66 registered, 64 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Describe the concepts of security, compliance, and identity | Part 1, objective-to-scenario drill, and Labs 3–4 |

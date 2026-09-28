@@ -4,15 +4,14 @@ As of 2026-09-27; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 37 have review work.
+50 guides; 36 have review work.
 
-Next batch: SC-900, AZ-800, DP-300.
+Next batch: AZ-800, DP-300, MD-102.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | pending | Pending | not-recorded |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | pending | Pending | not-recorded |
 | [MD-102](../guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md) | pending | Pending | not-recorded |
@@ -29,6 +28,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [MB-330](../guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md) | reviewed | 2026-09-27 | offline-only |
 | [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | reviewed | 2026-09-27 | offline-only |
 | [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | reviewed | 2026-09-27 | offline-only |
+| [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | reviewed | 2026-09-27 | offline-only |
 | [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | pending | Pending | not-recorded |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | pending | Pending | not-recorded |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | pending | Pending | not-recorded |

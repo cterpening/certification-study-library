@@ -1,0 +1,3213 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "SC-900",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "65a161e2f9bbaf7a6da1a75374fece13fc81c2738b3a2acdda27eeaf5c6a3719",
+  "guide_after_sha256": "f886b3664742cfbde3c525439d00a1abdaba9a50b70a534058d8fd0e53c03396",
+  "prior_records": {
+    "exam": {
+      "code": "SC-900",
+      "level": "beginner",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Security, Compliance, and Identity Fundamentals",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+      "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; basic cloud, identity, and security vocabulary is helpful."
+    },
+    "review": {
+      "id": "sc-900-2026-08-31-source-validation",
+      "exam_code": "SC-900",
+      "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-900-official-objectives.txt",
+      "blueprint_snapshot_sha256": "e2869853685f48f936c2833bda16c5065a629346c7f5d1c9cd5aa91f9d1a3b91",
+      "objective_coverage": [
+        {
+          "objective_group": "Describe the concepts of security, compliance, and identity",
+          "guide_sections": [
+            "Part 1",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Describe the capabilities of Microsoft Entra",
+          "guide_sections": [
+            "Part 2",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Describe the capabilities of Microsoft security solutions",
+          "guide_sections": [
+            "Parts 3–4",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 3 and 5"
+          ]
+        },
+        {
+          "objective_group": "Describe the capabilities of Microsoft compliance solutions",
+          "guide_sections": [
+            "Part 5",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 4–5"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 49,
+        "reachable": 47,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted objective groups and their July 28, 2026 bullets are mapped to product boundaries, worked decision flows, an integrated scenario, and five hands-on labs. All 49 cited URLs are exact source-catalog entries. One O'Reilly and one Udemy SC-900 course page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Agent ID terminology, availability, licensing, service plans, portal surfaces, coverage, pricing, and supported features remain explicitly marked VERIFY CURRENT."
+    },
+    "sources": [
+      {
+        "id": "sc-900-blueprint",
+        "title": "SC-900 Microsoft Security, Compliance, and Identity Fundamentals study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-sc-900-course",
+        "title": "Microsoft Security, Compliance, and Identity Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-900t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Official one-day course."
+      },
+      {
+        "id": "microsoft-cloud-product-docs",
+        "title": "Microsoft technical documentation",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901"
+        ],
+        "notes": "Entry point to the current product references cited directly within each guide."
+      },
+      {
+        "id": "pluralsight-sc-900",
+        "title": "Microsoft Security, Compliance, and Identity Fundamentals (SC-900)",
+        "url": "https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Nine-hour path with a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. Compare its mostly 2023-2024 components with the July 2026 blueprint."
+      },
+      {
+        "id": "oreilly-sc-900-exam-ref",
+        "title": "Exam Ref SC-900, Second Edition",
+        "url": "https://www.oreilly.com/library/view/exam-ref-sc-900/9780138363727/",
+        "publisher": "Microsoft Press on O'Reilly",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "May 2024 book; provider reading estimate is five hours, 41 minutes."
+      },
+      {
+        "id": "udemy-sc-900-kevin-brown",
+        "title": "SC-900 Microsoft Security, Compliance, and Identity",
+        "url": "https://www.udemy.com/course/sc-900-microsoft-security-compliance-and-identity/",
+        "publisher": "Kevin Brown on Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "About eight hours; shown as updated October 2025."
+      },
+      {
+        "id": "linkedin-learning-sc-900-microsoft-press",
+        "title": "Microsoft Security, Compliance, and Identity Fundamentals SC-900 Cert Prep by Microsoft Press",
+        "url": "https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press",
+        "publisher": "Microsoft Press on LinkedIn Learning",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Three hours, 32 minutes; released June 2024."
+      },
+      {
+        "id": "john-savill-sc-900-study-cram-v2",
+        "title": "SC-900 Study Cram v2",
+        "url": "https://www.youtube.com/watch?v=-FJqb60wPSY",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Approximately three to four hours; useful synthesis but not a July 2026 delta course."
+      },
+      {
+        "id": "john-savill-certification-materials",
+        "title": "Certification Materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "publisher": "John Savill",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AI-103",
+          "SC-300"
+        ],
+        "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them."
+      },
+      {
+        "id": "microsoft-mechanics",
+        "title": "Microsoft Mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AB-100"
+        ],
+        "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course."
+      },
+      {
+        "id": "skilling-hub-levelup-sc-900",
+        "title": "LevelUp: SC-900 Microsoft Security, Compliance, and Identity Fundamentals",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058350",
+        "publisher": "Microsoft Partner Skilling Hub / LevelUp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Five-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      },
+      {
+        "id": "measureup-sc-900-practice-test",
+        "title": "Microsoft SC-900 Security, Compliance, and Identity Fundamentals practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-sc-900-microsoft-security-compliance-and-identity-fundamentals.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Public listing shows 124 questions and an August 2025 last-update date. Allow about four to eight hours for simulation and explanation review, and compare with the July 2026 blueprint."
+      },
+      {
+        "id": "whizlabs-sc-900",
+        "title": "Microsoft Security, Compliance, and Identity Fundamentals SC-900 training and practice test",
+        "url": "https://www.whizlabs.com/microsoft-security-compliance-identity-fundamentals-sc-900-certification/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Mixed training and assessment package. Allow about four to eight hours for practice attempts and explanation review; current instructional runtime and July 2026 delta coverage were not independently verified."
+      },
+      {
+        "id": "microsoft-practice-assessment-catalog",
+        "title": "Practice Assessments for Microsoft Certifications",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "GH-100",
+          "GH-500",
+          "AI-103",
+          "AB-100",
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AZ-801",
+          "AZ-802"
+        ],
+        "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator."
+      },
+      {
+        "id": "microsoft-sc-900-practice-assessment",
+        "title": "SC-900 Microsoft Security, Compliance, and Identity Fundamentals Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessment-type=practice&assessmentId=11&practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      },
+      {
+        "id": "microsoft-security-virtual-training-days-sc900",
+        "title": "Microsoft Security Virtual Training Days",
+        "url": "https://www.microsoft.com/en-us/events/category/microsoft-virtual-training-days?filters=product%3Amicrosoft-security&scenario=mvtd",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "The event catalog and schedules are dynamic; exact SC-900 coverage varies by session."
+      },
+      {
+        "id": "azure-bastion-overview-sc900",
+        "title": "What is Azure Bastion?",
+        "url": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AZ-802"
+        ]
+      },
+      {
+        "id": "azure-ddos-protection-overview-sc900",
+        "title": "Azure DDoS Protection overview",
+        "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-defender-for-cloud-docs-sc900",
+        "title": "Microsoft Defender for Cloud documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-defender-for-cloud-introduction-sc900",
+        "title": "What is Microsoft Defender for Cloud?",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Plans, coverage, included capabilities, and pricing are volatile."
+      },
+      {
+        "id": "azure-firewall-overview-sc900",
+        "title": "What is Azure Firewall?",
+        "url": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "azure-key-vault-overview-sc900",
+        "title": "Azure Key Vault overview",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AZ-305"
+        ]
+      },
+      {
+        "id": "microsoft-sentinel-docs-sc900",
+        "title": "Microsoft Sentinel documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-sentinel-overview-sc900",
+        "title": "What is Microsoft Sentinel?",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Portal experience, integrations, and feature availability are volatile."
+      },
+      {
+        "id": "azure-network-security-groups-overview-sc900",
+        "title": "Azure network security groups overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AZ-104",
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "azure-web-application-firewall-overview-sc900",
+        "title": "Azure Web Application Firewall overview",
+        "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "sc900-certification-page",
+        "title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-defender-xdr-docs-sc900",
+        "title": "Microsoft Defender XDR documentation",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AB-900"
+        ]
+      },
+      {
+        "id": "microsoft-defender-xdr-overview-sc900",
+        "title": "What is Microsoft Defender XDR?",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AB-900"
+        ],
+        "notes": "Integrated products, portal experiences, licensing, and response capabilities are volatile."
+      },
+      {
+        "id": "microsoft-entra-agent-identities-sc900",
+        "title": "What are agent identities?",
+        "url": "https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Agent ID terminology, availability, licensing, and capabilities are rapidly evolving."
+      },
+      {
+        "id": "microsoft-entra-overview-sc900",
+        "title": "What is Microsoft Entra?",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-entra-access-reviews-overview-sc900",
+        "title": "What are access reviews?",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-entra-identity-governance-overview-sc900",
+        "title": "What is Microsoft Entra ID Governance?",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-entra-pim-configure-sc900",
+        "title": "What is Privileged Identity Management?",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-500"
+        ]
+      },
+      {
+        "id": "microsoft-entra-id-protection-overview-sc900",
+        "title": "What is Microsoft Entra ID Protection?",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-entra-authentication-overview-sc900",
+        "title": "Microsoft Entra authentication overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ],
+        "notes": "Supported methods and authentication capabilities are volatile."
+      },
+      {
+        "id": "microsoft-purview-docs-sc900",
+        "title": "Microsoft Purview documentation",
+        "url": "https://learn.microsoft.com/en-us/purview/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AB-900",
+          "SC-401"
+        ]
+      },
+      {
+        "id": "microsoft-purview-audit-overview-sc900",
+        "title": "Learn about Microsoft Purview Audit solutions",
+        "url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Audit events, retention, licensing, and portal workflows are volatile."
+      },
+      {
+        "id": "microsoft-purview-compliance-manager-sc900",
+        "title": "Microsoft Purview Compliance Manager",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-purview-data-classification-overview-sc900",
+        "title": "Learn about data classification",
+        "url": "https://learn.microsoft.com/en-us/purview/data-classification-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-purview-dlp-overview-sc900",
+        "title": "Learn about data loss prevention",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AB-900"
+        ],
+        "notes": "Supported locations, actions, licensing, and policy capabilities are volatile."
+      },
+      {
+        "id": "microsoft-purview-ediscovery-sc900",
+        "title": "Learn about eDiscovery",
+        "url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Portal workflows, cases, review features, licensing, and terminology are volatile."
+      },
+      {
+        "id": "microsoft-purview-insider-risk-management-sc900",
+        "title": "Learn about Insider Risk Management",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Signals, templates, workflows, licensing, and privacy controls are volatile."
+      },
+      {
+        "id": "microsoft-purview-retention-sc900",
+        "title": "Learn about retention policies and retention labels",
+        "url": "https://learn.microsoft.com/en-us/purview/retention",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ]
+      },
+      {
+        "id": "microsoft-purview-sensitivity-labels-sc900",
+        "title": "Learn about sensitivity labels",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "SC-401"
+        ],
+        "notes": "Supported protection settings, locations, licensing, and client behavior are volatile."
+      },
+      {
+        "id": "microsoft-zero-trust-docs-sc900",
+        "title": "Microsoft Zero Trust documentation",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-zero-trust-overview-sc900",
+        "title": "Zero Trust overview",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      },
+      {
+        "id": "microsoft-service-trust-portal-sc900",
+        "title": "Microsoft Service Trust Portal",
+        "url": "https://servicetrust.microsoft.com/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900"
+        ]
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "934c16f576fbbed5fd8bd8f5efca529ec7fe8db3dd89ca2530763ccf37aa1a4f",
+      "guide_sections": "1 / Shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "d37bc7bd1082c0abf0cbe1a4386ff083e8a523eeb8851dbf58ce1b802b72b136",
+      "guide_sections": "1 / Defense in depth",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "f14c50106bfc2815421158e499d66bcf09098bebfc6463616f428307fb6ac700",
+      "guide_sections": "1 / Zero Trust principles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "37ecf27aafbf3c94fed8e65fff191cc60a0c6373f0c772ce59b5217cd50543a6",
+      "guide_sections": "1 / Encryption/hashing/certificates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "eadf15d3307c0620c8d07e20726ecea84952d2f95212f45afd33b8a69d9ed71a",
+      "guide_sections": "1 / Governance/risk/compliance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c296599c9baaead8586d6ffd316f65711b96864995846fa14e0644895483eedc",
+      "guide_sections": "1 / Identity-centered boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "5f002e3d234553b85eeb234134127875c85e9ea17b843f3d5347f3d0300258e1",
+      "guide_sections": "1 / Authentication definition; 2 / Methods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "24f260081564098bd66393dac02d592f0ecf0920b0297a0601b249aab7af7ad0",
+      "guide_sections": "1 / Authorization; 2 / Access request",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "4244602e41d7cabd2bb1951f2383d089fac57a801e19bc10f8f124e19db6bbc4",
+      "guide_sections": "1 / Identity provider",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "9a842c7cf321383cd0a37ba929012309c4c1e26e75b555ed1cfb6d5f088671c0",
+      "guide_sections": "1 / Entra/AD DS/Domain Services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "b1448152304db334a19a6af00b05065ae570d1ab3cfb459a3d8b4f06339f508f",
+      "guide_sections": "1 / Federation; 2 / Hybrid identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "1ebfe5783fd8055b42d18f66856ddb028df3f67e579ad26541240ed011fa0169",
+      "guide_sections": "2 / Entra identity types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "0a2dfa7f377e6118170bfe841a3e51401fc6fc2fe849d1f699a42cef8edd4d55",
+      "guide_sections": "2 / Workload application/service principal/managed identity and two-tenant example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "720041158fba127abe98dd73292abb112997d7f0f3ded36998e8b3c44754afc8",
+      "guide_sections": "2 / Hybrid identity and permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "94572ea3d14442e4b9009254a73df6bdab9a35196e932007381a28742f8bc99f",
+      "guide_sections": "2 / Authentication methods and passkey defaults",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "df8ff61f1e3611a139fe2ab559e1e1e0af7198b122aabcc9ba6a4944e6dba0e8",
+      "guide_sections": "2 / MFA versus authentication strength",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "4b513676ac2d3ec3f5d718ba5649c1c0c1fd33a5d588f96e557cf97fe1e70ca0",
+      "guide_sections": "2 / Password protection and self-service reset",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "9100dd88bdea78675277a5dc7140ed2b5d8122bf329d4692e3e228afb572a3c1",
+      "guide_sections": "2 / Conditional Access human/workload scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d5415e1080760f4e519a579b918737e2215fb108ef3d104a7281802ce4db25a2",
+      "guide_sections": "2 / Directory roles versus Azure RBAC and app permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "730f5bf9bc604f8f26e37d48d12e6d8ef453ea68ccb6a8fee1e9c5a1523f6f6c",
+      "guide_sections": "2 / Identity Governance and joiner/mover/leaver",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "c9240cc44dd288e6eb9bf83e69e534b6cb28a4663fdd93fecdc6b7e3a1b3f510",
+      "guide_sections": "2 / Access-review decision/application example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "2582362c2eba6c5847d054a0501bc1488553d4b0a6aa035cc7f46d8828807ee1",
+      "guide_sections": "2 / PIM eligible/active activation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "c7375f8f8872b1afd35483bf28616c7cdc63e874ec27e20b80af31dc1c1ce96b",
+      "guide_sections": "2 / ID Protection risk evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "e759e04ab477b64bb0d36572bec8f1044b2f13ee209dd515cf740e6bdc0336ce",
+      "guide_sections": "3 / DDoS network availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "d132dc7edaf9cf840ed2b05fcfd9e89d0c01f06bd2a31297e9181faccdf5a10b",
+      "guide_sections": "3 / Azure Firewall",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "81d368ed086f6fbe3f347669f6faf30794370bcc4d610dd71b80ea6555c2c8e6",
+      "guide_sections": "3 / WAF HTTP inspection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "535c3d138f379a91e2d4a09a6d579a4a77930b553aa91b705bcd0ae50b2c5b3f",
+      "guide_sections": "3 / VNet/subnet segmentation and explicit traffic controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "2ae32e8dc6e5be90ac6358784ccfb4a89ff49df0f83e21ea262aa6809bcc10b0",
+      "guide_sections": "3 / NSG priorities/state worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "42bd845d646d6f8176e84aa122b1934d101462f79acf9ff1aa63ecb956993e11",
+      "guide_sections": "3 / Bastion administration path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "1442189dbafabff7ca3ade23e804cdbd2f9c209cad3d0514015fa62997d66726",
+      "guide_sections": "3 / Key Vault data/control permission and default",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "251b08787c275c41f2182eabc24094fccb2bcef3f2be3fbfa132cb6ee5f960dc",
+      "guide_sections": "3 / Defender for Cloud",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "dabb64449af42344be390531f27164dc69be0c2e4aba06c290c5a9987e9f1711",
+      "guide_sections": "3 / CSPM",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "0bc56edf8b33a743a01507ff5e79edd2906b5b6f67f0f679acc10300aa58b195",
+      "guide_sections": "3 / Policies/standards/recommendations and score scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "0886eb585975cde721e2778c0f0b9b6ce937760f9ec6a6396197f8f3cc8f99f0",
+      "guide_sections": "3 / Workload protection and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "e8454a7e6ab3461121bf9ed4b480102e99697aa836b34770b4a5583d37e4cbaf",
+      "guide_sections": "4 / SIEM and SOAR",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "e68c696072a706ebe697a0aff8fcfd14d457fa6e8139f47c250d35151f8fc1e8",
+      "guide_sections": "4 / Sentinel detection/mitigation and portal lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "721398f62fb529f4687e87b532a5fc360d14fe80b4515d41d0592aa5423c4595",
+      "guide_sections": "4 / Defender XDR services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "691c58a8b4dc4f82eb8776178222a843583da5f8558e22b991f863068a8ae1b4",
+      "guide_sections": "4 / Office 365 evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "6b03de7364702ecadb668a84de990caf81931a0d5c37cb026ac042e108a14e50",
+      "guide_sections": "4 / Endpoint evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "6d97c73537bdd347b1a07c8caa6d9b21e8495c69df3d060e8726b00414ace7bb",
+      "guide_sections": "4 / Cloud Apps evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "0b6dd7883d48cf8669638bf8c64951b75c7ae492102f3f6475f03ef28fe66304",
+      "guide_sections": "4 / Defender for Identity evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "581048f217c99394a707ac19f8536aee5aed8a00f0744f9f974a4afdd6f5a7ea",
+      "guide_sections": "4 / Vulnerability Management discovery/prioritization/remediation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "7da5f8348291e15479ec9852e630152bc970a88959b71224987c5bc7bfc041b9",
+      "guide_sections": "4 / Microsoft Threat Intelligence report/match/incident distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "4b2de62ec47b6bc51bb7ae2fb73a2aa7101fec1dddb9bf317e154e4cecea2702",
+      "guide_sections": "4 / Defender portal and integrated-service boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "de325efa89064f680776cbf6544e8bb609a12c989d296e11f07e8eac2d2cef71",
+      "guide_sections": "5 / Service Trust Portal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "4fd0d3287f232fd3fca210626da197cc56ec278364cda07317f9494d3da02025",
+      "guide_sections": "5 / Privacy commitments and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "97543504da1182f90043732cf86a32680021da7c2f19cd7be76b4dbed9f1a53a",
+      "guide_sections": "5 / Purview portal and solution map; Lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "88c3b7fa5e0f2c5b28877f37312d741479ff82ccdf0705cde47d458194404060",
+      "guide_sections": "5 / Compliance Manager",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "0217c8b8ab1e9c320b5ebabb0b6b39aa371c74c76038ff72e11e1b6577e1f50c",
+      "guide_sections": "5 / Compliance score and assurance boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "438b09b43eff5cfb5e35b17cc84f043b9f9129bc134f194fc74d27d78d35c672",
+      "guide_sections": "5 / Classification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "1350db74101efa74afa5bf15b5d483d1f95d4090702851d1d22721f4698d15fd",
+      "guide_sections": "5 / Content/Data Explorer permissions and Activity Explorer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "9560e2150300ee4e55cb4b8a4f059425437dfa985051d83fab40e0bb4cdaeb20",
+      "guide_sections": "5 / Sensitivity label versus publishing/application",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "b7b0418248c76b04d1d40d6f7f1dd3a12c6edf6c7c2e5703f6e309b7dbeae252",
+      "guide_sections": "5 / DLP action scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "553f432852d1306af8ef350e25801241d158fd3c0ce31a0adb2417fab4dfc4b8",
+      "guide_sections": "5 / Records and disposition",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "1f8821286319dcd8eee74a762835f71352170a71e8a7368d3a6ff1572d016556",
+      "guide_sections": "5 / Retention policy/label/label policy and end-date example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "80616a1495abfbad49fc4c025f5d8889c9e6a2e042a2e7b9a7bb20b1b099091a",
+      "guide_sections": "5 / Insider Risk privacy/evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "d97e81d123b63b3eae1b461271abc828e93a690571cb96af531f4a88d4805bf1",
+      "guide_sections": "5 / eDiscovery preservation/search/review",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "082e52d56982ffb74746c3a77cd0b267cfc33ff32508ade98bf83b7191d751e0",
+      "guide_sections": "5 / Audit activity evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SC-900"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SC-900",
+        "title": "Microsoft Security, Compliance, and Identity Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+        "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+        "snapshot_path": "data\\objective-snapshots\\sc-900-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sc-900-official-status.json",
+        "previous_sha256": "e2869853685f48f936c2833bda16c5065a629346c7f5d1c9cd5aa91f9d1a3b91",
+        "current_sha256": "63bf7e483cb07e30a23c192e3f41319ea3987492ab5a1066177dfb4a8eb16a81",
+        "previous_status_sha256": "e30d4fb5e0caad181ec1103c2b5568e3a48f409355252463a859319e523c6ee7",
+        "current_status_sha256": "4a10a1213107b8b2d03da3e952b2791d172d9e97c4f56de314a5b16424fc466c",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 21, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 66,
+    "reachable": 64,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "sc-900-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+      "checked_at": "2026-09-28T03:20:49.956063+00:00",
+      "health": {
+        "id": "sc-900-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+        "checked_at": "2026-09-28T03:20:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "70a341e52874fb3655205b4600e454cf254a502eda3fbf986dd50f7a7d528f73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+      "sha256": "fbd8164bf8dc7954e7554ee6bcefbb17bfea9a3804ca9cb8e54c20d44705c3cb",
+      "text_characters": 8707
+    },
+    {
+      "id": "microsoft-sc-900-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/sc-900t00",
+      "checked_at": "2026-09-28T03:20:49.956766+00:00",
+      "health": {
+        "id": "microsoft-sc-900-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-900t00",
+        "checked_at": "2026-09-28T03:20:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-900t00",
+        "content_type": "text/html",
+        "page_title": "Course SC-900T00-A: Introduction to Microsoft Security, Compliance, and Identity - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/sc-900t00",
+        "duration_signals": [],
+        "signal_fingerprint": "107739aeb4320b7dce2828101837804ca9ac3a293a4056d92508bd240287756a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-900t00",
+      "sha256": "227daed14bd213c12ae8764c6b062645750ecb5490cd5968f2c374b03e5bddf1",
+      "text_characters": 1765
+    },
+    {
+      "id": "microsoft-cloud-product-docs",
+      "url": "https://learn.microsoft.com/en-us/docs/",
+      "checked_at": "2026-09-28T03:20:49.957163+00:00",
+      "health": {
+        "id": "microsoft-cloud-product-docs",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "checked_at": "2026-09-28T03:20:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/docs/",
+        "content_type": "text/html",
+        "page_title": "Technical documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/docs/",
+        "duration_signals": [],
+        "signal_fingerprint": "f8307f16939ece1f03f8b9b4eefe1ce0ee4e0acd22397e5436f194497e5570ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/docs/",
+      "sha256": "14bb044c98cc5ede453c437fb555a40823b58edd3a9c08f4604431c6bc1517af",
+      "text_characters": 2294
+    },
+    {
+      "id": "pluralsight-sc-900",
+      "url": "https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900",
+      "checked_at": "2026-09-28T03:20:50.394238+00:00",
+      "health": {
+        "id": "pluralsight-sc-900",
+        "url": "https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900",
+        "checked_at": "2026-09-28T03:20:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Security, Compliance, and Identity Fundamentals (SC-900)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900",
+        "duration_signals": [
+          "9 Hours"
+        ],
+        "signal_fingerprint": "50c513596d1c207ca8fe90668a69e19c3b83fff0b05c842961d5e20520371e4a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900",
+      "sha256": "b817ebf4d00abcddf07531963f6421070d7a63d675d72a23bc256861c92d6b53",
+      "text_characters": 3976
+    },
+    {
+      "id": "oreilly-sc-900-exam-ref",
+      "url": "https://www.oreilly.com/library/view/exam-ref-sc-900/9780138363727/",
+      "checked_at": "2026-09-28T03:20:50.422664+00:00",
+      "health": {
+        "id": "oreilly-sc-900-exam-ref",
+        "url": "https://www.oreilly.com/library/view/exam-ref-sc-900/9780138363727/",
+        "checked_at": "2026-09-28T03:20:50+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/exam-ref-sc-900/9780138363727/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-sc-900-kevin-brown",
+      "url": "https://www.udemy.com/course/sc-900-microsoft-security-compliance-and-identity/",
+      "checked_at": "2026-09-28T03:20:50.441125+00:00",
+      "health": {
+        "id": "udemy-sc-900-kevin-brown",
+        "url": "https://www.udemy.com/course/sc-900-microsoft-security-compliance-and-identity/",
+        "checked_at": "2026-09-28T03:20:50+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/sc-900-microsoft-security-compliance-and-identity/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "linkedin-learning-sc-900-microsoft-press",
+      "url": "https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press",
+      "checked_at": "2026-09-28T03:20:50.569926+00:00",
+      "health": {
+        "id": "linkedin-learning-sc-900-microsoft-press",
+        "url": "https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press",
+        "checked_at": "2026-09-28T03:20:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Security, Compliance, and Identity Fundamentals (SC-900) Cert Prep by Microsoft Press Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press",
+        "duration_signals": [
+          "PT13M",
+          "PT17S",
+          "PT1M10S",
+          "PT1M11S",
+          "PT1M16S",
+          "PT1M19S",
+          "PT1M1S",
+          "PT1M22S",
+          "PT1M27S",
+          "PT1M30S",
+          "PT1M31S",
+          "PT1M33S",
+          "PT1M35S",
+          "PT1M38S",
+          "PT1M41S",
+          "PT1M44S",
+          "PT1M45S",
+          "PT1M49S",
+          "PT1M51S",
+          "PT1M54S",
+          "PT1M5S",
+          "PT1M6S",
+          "PT1M9S",
+          "PT21S",
+          "PT23S",
+          "PT24S",
+          "PT25S",
+          "PT26M52S",
+          "PT26S",
+          "PT28S"
+        ],
+        "signal_fingerprint": "b8be27af36e3be3d01d381792979ef2ea92fb3101daf9b39a6af2be9a6add71e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press",
+      "sha256": "a857dd6194dd950b92c408c7400f01826c12f1b09c36a96fe28df53aefd77023",
+      "text_characters": 9282
+    },
+    {
+      "id": "john-savill-sc-900-study-cram-v2",
+      "url": "https://www.youtube.com/watch?v=-FJqb60wPSY",
+      "checked_at": "2026-09-28T03:20:50.634546+00:00",
+      "health": {
+        "id": "john-savill-sc-900-study-cram-v2",
+        "url": "https://www.youtube.com/watch?v=-FJqb60wPSY",
+        "checked_at": "2026-09-28T03:20:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=-FJqb60wPSY",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SC-900 Microsoft Security, Compliance, and Identity Fundamentals Study Cram V2",
+        "canonical_url": "https://www.youtube.com/watch?v=-FJqb60wPSY",
+        "duration_signals": [],
+        "signal_fingerprint": "68258f09f48993ed971e7d4b590b5f7a8ba87024948d873a2c0343615fedd7d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=-FJqb60wPSY",
+      "sha256": "a242fd1e7cc03e48eff342fe29714f98ef2f92252df350424aa51141dc92be67",
+      "text_characters": 241
+    },
+    {
+      "id": "john-savill-certification-materials",
+      "url": "https://github.com/johnthebrit/CertificationMaterials",
+      "checked_at": "2026-09-28T03:20:51.088765+00:00",
+      "health": {
+        "id": "john-savill-certification-materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "checked_at": "2026-09-28T03:20:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/CertificationMaterials: A collection of materials related to my certification videos",
+        "canonical_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "duration_signals": [],
+        "signal_fingerprint": "d6d516a3770bdb489dfbcc927eb5ab5fb54a84e092f0a8be465286f256859485",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+      "sha256": "a05079bc0c9d835e2c0f52d13e300f9ddf7afcaff539a1f808c281e318a78d21",
+      "text_characters": 2153
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-28T03:20:51.649536+00:00",
+      "health": {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-28T03:20:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "5254a74292ce6a89ff2bdd8745e5f4b4bcd5fbd5c6db5e61c4d68c77b253b4de",
+      "text_characters": 182
+    },
+    {
+      "id": "skilling-hub-levelup-sc-900",
+      "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058350",
+      "checked_at": "2026-09-28T03:20:52.289786+00:00",
+      "health": {
+        "id": "skilling-hub-levelup-sc-900",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058350",
+        "checked_at": "2026-09-28T03:20:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058350",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058350",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "measureup-sc-900-practice-test",
+      "url": "https://www.measureup.com/microsoft-practice-test-sc-900-microsoft-security-compliance-and-identity-fundamentals.html",
+      "checked_at": "2026-09-28T03:20:52.290574+00:00",
+      "health": {
+        "id": "measureup-sc-900-practice-test",
+        "url": "https://www.measureup.com/microsoft-practice-test-sc-900-microsoft-security-compliance-and-identity-fundamentals.html",
+        "checked_at": "2026-09-28T03:20:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-sc-900-microsoft-security-compliance-and-identity-fundamentals.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test SC-900: Microsoft Security, Compliance, and Identity Fundamentals",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-sc-900-microsoft-security-compliance-and-identity-fundamentals.html",
+        "duration_signals": [
+          "50 minutes"
+        ],
+        "signal_fingerprint": "66c7e4c7832af822a75c558daae11694f9bb31b68da4f686c7c93c13c3d51a50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-sc-900-microsoft-security-compliance-and-identity-fundamentals.html",
+      "sha256": "1408a7d74106d90687d599dad5860d9f0923ae0de66f170eaae3f88d069f3ed1",
+      "text_characters": 14640
+    },
+    {
+      "id": "whizlabs-sc-900",
+      "url": "https://www.whizlabs.com/microsoft-security-compliance-identity-fundamentals-sc-900-certification/",
+      "checked_at": "2026-09-28T03:20:52.715506+00:00",
+      "health": {
+        "id": "whizlabs-sc-900",
+        "url": "https://www.whizlabs.com/microsoft-security-compliance-identity-fundamentals-sc-900-certification/",
+        "checked_at": "2026-09-28T03:20:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-security-compliance-identity-fundamentals-sc-900-certification/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SC-900: Microsoft Security, Compliance, and Identity Fundamentals Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-security-compliance-identity-fundamentals-sc-900-certification/",
+        "duration_signals": [],
+        "signal_fingerprint": "f81e0579af6b71603d8aac95ba80911bea41cae2538c17c030846909589c5c86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-security-compliance-identity-fundamentals-sc-900-certification/",
+      "sha256": "cd6afeba3ef7784a3e976e55497ee5334707eebf77cd455a6f631d18392b3e31",
+      "text_characters": 72
+    },
+    {
+      "id": "microsoft-practice-assessment-catalog",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "checked_at": "2026-09-28T03:20:52.999010+00:00",
+      "health": {
+        "id": "microsoft-practice-assessment-catalog",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "checked_at": "2026-09-28T03:20:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "content_type": "text/html",
+        "page_title": "Practice Assessments for Microsoft Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "duration_signals": [],
+        "signal_fingerprint": "3b3d08a6c02aa09ec47d9b5aed16e0896e6aa2bf3c6585338229fa25336dbba8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "sha256": "0e5fef8a4b7f17e215818d35bf6302fa5aedb129073370afc79dc31c92d8a334",
+      "text_characters": 5931
+    },
+    {
+      "id": "microsoft-sc-900-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessment-type=practice&assessmentId=11&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T03:20:53.291068+00:00",
+      "health": {
+        "id": "microsoft-sc-900-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessment-type=practice&assessmentId=11&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T03:20:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessment-type=practice&assessmentId=11&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "d2d3fcd36b7641a588dae7686a87c14f87ae1bbd13999d9bc8a3b7b71c8ce80e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessment-type=practice&assessmentId=11&practice-assessment-type=certification",
+      "sha256": "93a813fabf902a406d6cf01aea00d3496725321cc6d6fff84df7a214df47c4d3",
+      "text_characters": 0
+    },
+    {
+      "id": "microsoft-security-virtual-training-days-sc900",
+      "url": "https://www.microsoft.com/en-us/events/category/microsoft-virtual-training-days?filters=product%3Amicrosoft-security&scenario=mvtd",
+      "checked_at": "2026-09-28T03:20:53.546952+00:00",
+      "health": {
+        "id": "microsoft-security-virtual-training-days-sc900",
+        "url": "https://www.microsoft.com/en-us/events/category/microsoft-virtual-training-days?filters=product%3Amicrosoft-security&scenario=mvtd",
+        "checked_at": "2026-09-28T03:20:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/events/category/microsoft-virtual-training-days?filters=product%3Amicrosoft-security&scenario=mvtd",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Virtual Training Days | Microsoft Events",
+        "canonical_url": "https://www.microsoft.com/en-us/events/category/microsoft-virtual-training-days",
+        "duration_signals": [],
+        "signal_fingerprint": "2f7c5841052b9d2734e9e1460bf6406ffb38230c8e1f92c190b6bec3c643fb12",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/events/category/microsoft-virtual-training-days?filters=product%3Amicrosoft-security&scenario=mvtd",
+      "sha256": "404744a1b34391ce62321f9d51466a9517fc95ac5fd6b9eff78bd1e982605f04",
+      "text_characters": 4485
+    },
+    {
+      "id": "azure-bastion-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+      "checked_at": "2026-09-28T03:20:53.772765+00:00",
+      "health": {
+        "id": "azure-bastion-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+        "checked_at": "2026-09-28T03:20:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Bastion?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "2cfc0c9012583b00220e7c66b4d6cbe1c55b1f85ef5d562a9abb7b946eea0458",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+      "sha256": "e4722823579e5f15cc24f472a52ac22a1f600e8e9699bedf5486d05741db09c6",
+      "text_characters": 5253
+    },
+    {
+      "id": "azure-ddos-protection-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+      "checked_at": "2026-09-28T03:20:53.832087+00:00",
+      "health": {
+        "id": "azure-ddos-protection-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+        "checked_at": "2026-09-28T03:20:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+        "content_type": "text/html",
+        "page_title": "Azure DDoS Protection Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "774395316c3091d66b39cb6fcf5627dd1c4812630f9a6a0226624b39bcd64c01",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+      "sha256": "a453ae1ac34ef9fbb31f133c4a6dfcb7149c3be8e3b3ef70ddc1c3d07bbd8061",
+      "text_characters": 7665
+    },
+    {
+      "id": "microsoft-defender-for-cloud-docs-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
+      "checked_at": "2026-09-28T03:20:54.095688+00:00",
+      "health": {
+        "id": "microsoft-defender-for-cloud-docs-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender for Cloud documentation - Microsoft Defender for Cloud",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
+        "duration_signals": [],
+        "signal_fingerprint": "4ec5bad38577980295f7526d130197b71b6680adf3598b400f236ad19cb67b0c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/",
+      "sha256": "3e454dbbc197a823b5d5180df7433ee854cb8883e9b785c948d8108b37f224e9",
+      "text_characters": 1320
+    },
+    {
+      "id": "microsoft-defender-for-cloud-introduction-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "checked_at": "2026-09-28T03:20:54.230174+00:00",
+      "health": {
+        "id": "microsoft-defender-for-cloud-introduction-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender for Cloud Overview - Microsoft Defender for Cloud",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "830efba4b5e2174fa46d3138f42ee024bf51985ca6ba694873766933c5b01bf8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction",
+      "sha256": "aad09ea7d62206bc2dafac42d4fbe88f4bd6be7e1355fd3b6a46647a7d72494b",
+      "text_characters": 16397
+    },
+    {
+      "id": "azure-firewall-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+      "checked_at": "2026-09-28T03:20:54.349579+00:00",
+      "health": {
+        "id": "azure-firewall-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Firewall?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "f008b05ad5e7d912e506887f0f553a4cac7952cbae1d35ca8785bbbca3b43041",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+      "sha256": "e86f63af20beaa222c23ef31348ea955de7977698d0ddd21b181826d951c8509",
+      "text_characters": 4109
+    },
+    {
+      "id": "azure-key-vault-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+      "checked_at": "2026-09-28T03:20:54.487994+00:00",
+      "health": {
+        "id": "azure-key-vault-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+        "content_type": "text/html",
+        "page_title": "Azure Key Vault Overview - Azure Key Vault",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "eb9bc6ec6505d2b6d46dc6a80374a346d1df483ee5b8abaa2cb9aafc05b03fea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+      "sha256": "8eb3abded6f5248a805b1b4142a58930ddfd41c24a3ada5ff3387b001b6a75b2",
+      "text_characters": 6660
+    },
+    {
+      "id": "microsoft-sentinel-docs-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+      "checked_at": "2026-09-28T03:20:54.553467+00:00",
+      "health": {
+        "id": "microsoft-sentinel-docs-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Sentinel documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+        "duration_signals": [],
+        "signal_fingerprint": "b6df81a917a1c981f5dc5d7b601b8c7b22a1cdf2d671263fb4d74daba9eadc9f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+      "sha256": "b7935dc62f0563f98135f57ba149d3e1cd1386ce13abf75e79b29d49dcb2f7a9",
+      "text_characters": 2011
+    },
+    {
+      "id": "microsoft-sentinel-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+      "checked_at": "2026-09-28T03:20:54.643248+00:00",
+      "health": {
+        "id": "microsoft-sentinel-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Sentinel SIEM?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "0ae2621bf2ad09573f32327f5ffc61f0d374fbbf9182d000dd3b7fcde57c7e19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+      "sha256": "240ba66b00126af3fe49dc30a06c449209b101b1cf64cd0a22369eec0ff2f5c9",
+      "text_characters": 11757
+    },
+    {
+      "id": "azure-network-security-groups-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "checked_at": "2026-09-28T03:20:54.822061+00:00",
+      "health": {
+        "id": "azure-network-security-groups-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "content_type": "text/html",
+        "page_title": "Azure network security groups overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "15f3ddb44a080db1b85b4fe183425847af718255c530b5a8264c8bd39ad870fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "sha256": "1323df32eae853409e09eda6d2dd87c66e9d34d7572654961b88e58ba3953c3b",
+      "text_characters": 16685
+    },
+    {
+      "id": "azure-web-application-firewall-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/overview",
+      "checked_at": "2026-09-28T03:20:54.988015+00:00",
+      "health": {
+        "id": "azure-web-application-firewall-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/overview",
+        "checked_at": "2026-09-28T03:20:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/overview",
+        "content_type": "text/html",
+        "page_title": "Introduction to Azure Web Application Firewall",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "2a5f5389c953323882baf4be4dbf09947a7753c3cf187abdaebc7d9b9c3d6701",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/overview",
+      "sha256": "eb3c562a2d648377cdd0b8173dc9ca3565a2f82c3da6c3132973c63e146d5c84",
+      "text_characters": 2664
+    },
+    {
+      "id": "sc900-certification-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "checked_at": "2026-09-28T03:20:55.001892+00:00",
+      "health": {
+        "id": "sc900-certification-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+        "duration_signals": [
+          "24 hours",
+          "45 minutes"
+        ],
+        "signal_fingerprint": "dc8f54656e4bdc2f19d97965794fd9586927f93fed1fa127bd6ed7901ae242af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "sha256": "d02a36c955abb0173e3f2b52bda04d0e96e54e900eb7b0830d9576ed3afd9183",
+      "text_characters": 4212
+    },
+    {
+      "id": "microsoft-defender-xdr-docs-sc900",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/",
+      "checked_at": "2026-09-28T03:20:55.135418+00:00",
+      "health": {
+        "id": "microsoft-defender-xdr-docs-sc900",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender XDR documentation - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/",
+        "duration_signals": [],
+        "signal_fingerprint": "8a99bbb72c6a25ac4508502dc492033cbaf4b2d4240a8f344132b4d2f04e9955",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/",
+      "sha256": "6f21b51f5cde46db5dbe74900f8fa436071b63cfc2e77e4ac15487a9f445e8ad",
+      "text_characters": 1227
+    },
+    {
+      "id": "microsoft-defender-xdr-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+      "checked_at": "2026-09-28T03:20:55.329424+00:00",
+      "health": {
+        "id": "microsoft-defender-xdr-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Defender XDR? - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+        "duration_signals": [],
+        "signal_fingerprint": "f87781062e8937800b42f26d2e0ab468679004fe3ef435a7d9e34427b275162f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender",
+      "sha256": "47d9ff77df5d634765ff6f9b855a874c588f8db14f280d8f8ec5b1556fa8b435",
+      "text_characters": 6462
+    },
+    {
+      "id": "microsoft-entra-agent-identities-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities",
+      "checked_at": "2026-09-28T03:20:55.348284+00:00",
+      "health": {
+        "id": "microsoft-entra-agent-identities-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities",
+        "content_type": "text/html",
+        "page_title": "What are agent identities? - Microsoft Entra Agent ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities",
+        "duration_signals": [],
+        "signal_fingerprint": "428da124f539e9813d3c8f1b9019d7e331ab641482196015312a063407243036",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/agent-id/what-are-agent-identities",
+      "sha256": "e949fddfb89a113620a8775ddbae94a0bda6706e63552e694e4c044298596cdf",
+      "text_characters": 9257
+    },
+    {
+      "id": "microsoft-entra-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+      "checked_at": "2026-09-28T03:20:55.478457+00:00",
+      "health": {
+        "id": "microsoft-entra-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Entra? - Microsoft Entra",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+        "duration_signals": [],
+        "signal_fingerprint": "c04830850e1117a4441b6ae1385dea73767a01f4bc000fa99b87804d517ca905",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+      "sha256": "2070adfdee0a888801406941e7b1740a15f542d3eb581e1f7c6650740d915748",
+      "text_characters": 8321
+    },
+    {
+      "id": "microsoft-entra-access-reviews-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview",
+      "checked_at": "2026-09-28T03:20:55.755798+00:00",
+      "health": {
+        "id": "microsoft-entra-access-reviews-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview",
+        "content_type": "text/html",
+        "page_title": "What are access reviews? - Microsoft Entra - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "1737b2adbe46e901327bc5c2bfa5fdd0147b2f551872cf2a1967bff47a4f485f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview",
+      "sha256": "41e3ccc655029174471c8d33c2c877db8515792443eee4db52f1a72bcdbd040c",
+      "text_characters": 6345
+    },
+    {
+      "id": "microsoft-entra-identity-governance-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-overview",
+      "checked_at": "2026-09-28T03:20:55.811775+00:00",
+      "health": {
+        "id": "microsoft-entra-identity-governance-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-overview",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra ID Governance - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "30d6c6d30090b23d53e18e8bd9e7335c0efdbf8154b1dc5b94afb7c8231a6b96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-overview",
+      "sha256": "5f9089bb853075745e3a1177b6ae8fd92a55bdc5e28f16063bce423cf41727a3",
+      "text_characters": 14548
+    },
+    {
+      "id": "microsoft-entra-pim-configure-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+      "checked_at": "2026-09-28T03:20:55.821208+00:00",
+      "health": {
+        "id": "microsoft-entra-pim-configure-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "checked_at": "2026-09-28T03:20:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "content_type": "text/html",
+        "page_title": "What is Privileged Identity Management? - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "duration_signals": [],
+        "signal_fingerprint": "dff20b9a75190e6e6ac114d4041d0562daef53b843cb6ee0f6b0b606a76e714a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+      "sha256": "ccc67d164427e77a9570b7787f96c0652636b67165e95f568376b583c8e6f38d",
+      "text_characters": 11257
+    },
+    {
+      "id": "microsoft-entra-id-protection-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+      "checked_at": "2026-09-28T03:20:56.095464+00:00",
+      "health": {
+        "id": "microsoft-entra-id-protection-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Entra ID Protection? - Microsoft Entra ID Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+        "duration_signals": [],
+        "signal_fingerprint": "3b35a19a037852f992625eb6256242ec0e0ee399acf2417494d90e67bee2c444",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+      "sha256": "e785cafc3c4130efc2d888c6fb971a60f3229de73647e0c680fed5722fde91dd",
+      "text_characters": 7367
+    },
+    {
+      "id": "microsoft-entra-authentication-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication",
+      "checked_at": "2026-09-28T03:20:56.111887+00:00",
+      "health": {
+        "id": "microsoft-entra-authentication-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra authentication overview - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "b2ef70817406489b93d2edff32708b8e673e6d677fb0482cae837cd525af027d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication",
+      "sha256": "eea0cd5e9e64508569dd2f959c5e00fd61c0e244e14b46ee206bd52cfce4649c",
+      "text_characters": 5508
+    },
+    {
+      "id": "microsoft-purview-docs-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/",
+      "checked_at": "2026-09-28T03:20:56.159614+00:00",
+      "health": {
+        "id": "microsoft-purview-docs-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/",
+        "duration_signals": [],
+        "signal_fingerprint": "771d1ac6f1c0d5a30ab63dd43b5fe11dd21faf994f7e64a0279f87d5b7a562a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/",
+      "sha256": "5a5b7085fcf6613dcc4f791bdd78dbf0117ad9541a7d16a5397185847b288c8a",
+      "text_characters": 1237
+    },
+    {
+      "id": "microsoft-purview-audit-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+      "checked_at": "2026-09-28T03:20:56.432269+00:00",
+      "health": {
+        "id": "microsoft-purview-audit-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "content_type": "text/html",
+        "page_title": "Learn about auditing solutions in Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "fb30343a78070457d91b1b0cedd7e71bc02b81b92e23beffc658068b0c1770c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/audit-solutions-overview",
+      "sha256": "ab9c4baec5a66d7eabde0703e318b53289238d03dc669907c0371a95b2d9b760",
+      "text_characters": 14539
+    },
+    {
+      "id": "microsoft-purview-compliance-manager-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+      "checked_at": "2026-09-28T03:20:56.443963+00:00",
+      "health": {
+        "id": "microsoft-purview-compliance-manager-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+        "content_type": "text/html",
+        "page_title": "Microsoft Purview Compliance Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+        "duration_signals": [],
+        "signal_fingerprint": "f171c82f909363a7ed2c7287f9934ddda95f97e3d8c2a2730f05fb7458755539",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/compliance-manager",
+      "sha256": "24b2a0332ad921e9eed3349215ac654fa8ea06b06ab6c15db3537a5ab4dfe937",
+      "text_characters": 6617
+    },
+    {
+      "id": "microsoft-purview-data-classification-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-overview",
+      "checked_at": "2026-09-28T03:20:56.497019+00:00",
+      "health": {
+        "id": "microsoft-purview-data-classification-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/data-classification-overview",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-overview",
+        "content_type": "text/html",
+        "page_title": "Classifiers overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/data-classification-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "399f3af2c9fd64b43b2bfbf3dd714b9c7f095a7917b5d61c5164514eddea91dd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-overview",
+      "sha256": "b835de48fa98c15d281992b84c2649d726919212d98ed08230113310a1374a4e",
+      "text_characters": 4182
+    },
+    {
+      "id": "microsoft-purview-dlp-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+      "checked_at": "2026-09-28T03:20:56.691678+00:00",
+      "health": {
+        "id": "microsoft-purview-dlp-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+        "content_type": "text/html",
+        "page_title": "Learn about data loss prevention",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+        "duration_signals": [],
+        "signal_fingerprint": "faf0a3a1ea3593d4214c14e652275646daaccec26c23efc3957c4ca8c1355e4e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+      "sha256": "cb4b1a24e765be34aa1b21220d7edc56009e032734704d3e77c9e980f5b3b327",
+      "text_characters": 21367
+    },
+    {
+      "id": "microsoft-purview-ediscovery-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+      "checked_at": "2026-09-28T03:20:56.758022+00:00",
+      "health": {
+        "id": "microsoft-purview-ediscovery-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "checked_at": "2026-09-28T03:20:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "content_type": "text/html",
+        "page_title": "Microsoft Purview eDiscovery legacy solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+        "duration_signals": [],
+        "signal_fingerprint": "6a04474efe937c541b1ef81ea7aab2187e8fa69d826c4cdb3df2d65ce2ef2e1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/ediscovery",
+      "sha256": "bd12054357e0d31a8c789ca6c5eb887ad5d80b3d1da73a0f418870d2c655bd80",
+      "text_characters": 15725
+    },
+    {
+      "id": "microsoft-purview-insider-risk-management-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+      "checked_at": "2026-09-28T03:20:57.015040+00:00",
+      "health": {
+        "id": "microsoft-purview-insider-risk-management-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "checked_at": "2026-09-28T03:20:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "content_type": "text/html",
+        "page_title": "Learn about Insider Risk Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+        "duration_signals": [
+          "365 HR"
+        ],
+        "signal_fingerprint": "838c6e7ba001097d424d58f60a072f3f28b39119a6c16fade773cd0972a44711",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/insider-risk-management",
+      "sha256": "72bc492de7420a66d09745594a1f5343741ef87e5644d5c8209478d44bdb6117",
+      "text_characters": 18490
+    },
+    {
+      "id": "microsoft-purview-retention-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/retention",
+      "checked_at": "2026-09-28T03:23:49.877028+00:00",
+      "health": {
+        "id": "microsoft-purview-retention-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/retention",
+        "checked_at": "2026-09-28T03:23:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/retention",
+        "content_type": "text/html",
+        "page_title": "Learn about retention policies & labels to retain or delete",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/retention",
+        "duration_signals": [],
+        "signal_fingerprint": "0ba18f954236323f777ace4b28d7efab92f3186f1e8a9c96c31e54347ebd4162",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/retention",
+      "sha256": "db0c9f56cd075d6743c7399690ca22e5b6700bc012319784e121f61fa70492a7",
+      "text_characters": 59395
+    },
+    {
+      "id": "microsoft-purview-sensitivity-labels-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+      "checked_at": "2026-09-28T03:20:57.045883+00:00",
+      "health": {
+        "id": "microsoft-purview-sensitivity-labels-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "checked_at": "2026-09-28T03:20:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "content_type": "text/html",
+        "page_title": "Learn about sensitivity labels",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c9938fdde0e5919d588891cd080d46415192a6f5262dea31c1f6e119e22a47db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+      "sha256": "43d62f64061089b98aa58607825a1d48a0feebbcd89cee8322a2649b211338ad",
+      "text_characters": 30285
+    },
+    {
+      "id": "microsoft-zero-trust-docs-sc900",
+      "url": "https://learn.microsoft.com/en-us/security/zero-trust/",
+      "checked_at": "2026-09-28T03:20:57.338967+00:00",
+      "health": {
+        "id": "microsoft-zero-trust-docs-sc900",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/",
+        "checked_at": "2026-09-28T03:20:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/security/zero-trust/",
+        "content_type": "text/html",
+        "page_title": "Zero Trust Guidance Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/security/zero-trust/",
+        "duration_signals": [],
+        "signal_fingerprint": "ded1d49c93e32e5c2c9f5e173dcc453062746dc4acfb2a5641a71da2016d941e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/security/zero-trust/",
+      "sha256": "4c6d2692f4fce188d8778f0db082188052f3856675fba3dc6eebc24d40f02c0d",
+      "text_characters": 3425
+    },
+    {
+      "id": "microsoft-zero-trust-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+      "checked_at": "2026-09-28T03:20:57.364480+00:00",
+      "health": {
+        "id": "microsoft-zero-trust-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+        "checked_at": "2026-09-28T03:20:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+        "content_type": "text/html",
+        "page_title": "Zero Trust as a security foundation",
+        "canonical_url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "a29afc7333b99468add71bff558e13491c0fa47956d06b07af50368e4a96238b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview",
+      "sha256": "11903546d1aa7064da9ed0db640f53eee498bad0245358a224072dde0058a27f",
+      "text_characters": 5515
+    },
+    {
+      "id": "microsoft-service-trust-portal-sc900",
+      "url": "https://servicetrust.microsoft.com/",
+      "checked_at": "2026-09-28T03:20:57.438891+00:00",
+      "health": {
+        "id": "microsoft-service-trust-portal-sc900",
+        "url": "https://servicetrust.microsoft.com/",
+        "checked_at": "2026-09-28T03:20:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://servicetrust.microsoft.com/",
+        "content_type": "text/html",
+        "page_title": "Service Trust Portal",
+        "canonical_url": "https://servicetrust.microsoft.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "60bb65c2acf2b8534f1106a6d58aa51cbf67e188726765ac0123df418e274f7c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://servicetrust.microsoft.com/",
+      "sha256": "6da80f7f80ada4123f1a146664f1a9ebe18daf61a35c7b94a77b1104d036f55d",
+      "text_characters": 20
+    },
+    {
+      "id": "sc900-workloads",
+      "url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+      "checked_at": "2026-09-28T03:23:49.877789+00:00",
+      "health": {
+        "id": "sc900-workloads",
+        "url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+        "checked_at": "2026-09-28T03:23:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+        "content_type": "text/html",
+        "page_title": "Workload identities - Microsoft Entra Workload ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "3b1d6fc87b2f67536ccc9709eed4317fb7e874468cc2c7473b74f002f17c2dc3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+      "sha256": "a53c95314439b57bc3c9d9200a5a62eaaacf70e30fbf390eb16b41ced44bfe6f",
+      "text_characters": 6408
+    },
+    {
+      "id": "sc900-workload-ca",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+      "checked_at": "2026-09-28T03:23:49.878211+00:00",
+      "health": {
+        "id": "sc900-workload-ca",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+        "checked_at": "2026-09-28T03:23:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Conditional Access for workload identities - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+        "duration_signals": [],
+        "signal_fingerprint": "a3654f0f91f9a48ba3db17b33c8e6b1ad1aa00ef5937b69dd6818ab981e85995",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+      "sha256": "25a8be42f41b6036f0b8a127f3d033b36bd9d733e310a519c28f9f0d2ea0e549",
+      "text_characters": 7196
+    },
+    {
+      "id": "sc900-passkey-transition",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "checked_at": "2026-09-28T03:23:50.354535+00:00",
+      "health": {
+        "id": "sc900-passkey-transition",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "checked_at": "2026-09-28T03:23:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "content_type": "text/html",
+        "page_title": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "duration_signals": [],
+        "signal_fingerprint": "fc6165b2411a519606b8e26910e477fcef51e504aa1068e15aac3bb50ef44d35",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "sha256": "4ec6054fcb3dc2b2de0430b1f0e9ac728dc79ea7c40af64de6a327f27a75b107",
+      "text_characters": 13833
+    },
+    {
+      "id": "sc900-system-preferred",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+      "checked_at": "2026-09-28T03:23:50.355249+00:00",
+      "health": {
+        "id": "sc900-system-preferred",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+        "checked_at": "2026-09-28T03:23:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+        "content_type": "text/html",
+        "page_title": "System-preferred authentication in Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "1a2d2e97f457a5b01187ac0acee13dfc77b786007a6f37bc430110dcdadaacf2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+      "sha256": "94c086e7982a172979ac7c06b31972830d73cd6c63efe507fc315ee074a559ef",
+      "text_characters": 11494
+    },
+    {
+      "id": "sc900-threat-intelligence",
+      "url": "https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+      "checked_at": "2026-09-28T03:23:50.361605+00:00",
+      "health": {
+        "id": "sc900-threat-intelligence",
+        "url": "https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+        "checked_at": "2026-09-28T03:23:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/defender-threat-intelligence",
+        "content_type": "text/html",
+        "page_title": "Threat intelligence in Microsoft Defender - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/defender-threat-intelligence",
+        "duration_signals": [],
+        "signal_fingerprint": "2179c36c21afe8fa8984d0ef7e912b46abaa8bb3d4e63000e96efba515be5aec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/defender-threat-intelligence",
+      "sha256": "81724c4e38778f0c0e8efd429abff0f193a99d6ffecdbbee33f3f50a10d4951e",
+      "text_characters": 5473
+    },
+    {
+      "id": "ms-102-defender-vulnerability-management",
+      "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+      "checked_at": "2026-09-28T03:23:50.638274+00:00",
+      "health": {
+        "id": "ms-102-defender-vulnerability-management",
+        "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+        "checked_at": "2026-09-28T03:23:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender Vulnerability Management - Microsoft Defender Vulnerability Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+        "duration_signals": [],
+        "signal_fingerprint": "f2d6786182a0c6d25f5d6b8d7828c0463119f2a7086cec96c1bedcdfdc613b29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+      "sha256": "132f24d3607a167359048e97513d0a3b2a40243648a8c4a65f07f26030cc0185",
+      "text_characters": 9962
+    },
+    {
+      "id": "azure-private-endpoint-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+      "checked_at": "2026-09-28T03:23:50.925670+00:00",
+      "health": {
+        "id": "azure-private-endpoint-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "checked_at": "2026-09-28T03:23:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "content_type": "text/html",
+        "page_title": "What is a private endpoint? - Azure Private Link",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "07a2817e306ddbcf9c92585f7e086914e5e713a6819112f09345e2c125ed75f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+      "sha256": "865d1aae0e8e4f5b705a6b335b9c6c28d967cd724f63f642a59aa09af52b70f4",
+      "text_characters": 17744
+    },
+    {
+      "id": "sc900-purview-explorer",
+      "url": "https://learn.microsoft.com/en-us/purview/data-explorer",
+      "checked_at": "2026-09-28T03:23:50.930025+00:00",
+      "health": {
+        "id": "sc900-purview-explorer",
+        "url": "https://learn.microsoft.com/en-us/purview/data-explorer",
+        "checked_at": "2026-09-28T03:23:50+00:00",
+        "status": "missing",
+        "http_status": 404,
+        "final_url": "https://learn.microsoft.com/en-us/purview/data-explorer",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Not Found"
+      }
+    },
+    {
+      "id": "sc900-label-policies",
+      "url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+      "checked_at": "2026-09-28T03:23:50.960715+00:00",
+      "health": {
+        "id": "sc900-label-policies",
+        "url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+        "checked_at": "2026-09-28T03:23:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+        "content_type": "text/html",
+        "page_title": "Create and publish sensitivity labels",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+        "duration_signals": [
+          "24 hours",
+          "48 hours",
+          "72 hours"
+        ],
+        "signal_fingerprint": "ed60a419a9aa7f12806b8ccfda27914dc67d518b53189e6576d72033528df978",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+      "sha256": "00122f0644196b729efa1569a74e979e296e15a5a5dba2f82125528595da7819",
+      "text_characters": 22285
+    },
+    {
+      "id": "sc900-review-results",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+      "checked_at": "2026-09-28T03:23:51.091787+00:00",
+      "health": {
+        "id": "sc900-review-results",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+        "checked_at": "2026-09-28T03:23:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+        "content_type": "text/html",
+        "page_title": "Complete an access review of groups & applications - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+        "duration_signals": [],
+        "signal_fingerprint": "ae2b7cae32e7a8ff8dcc506d78655b4dfa93bc4e1054995927fcaf8d8b583d8c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+      "sha256": "6e6081f4cd8aa62a61daf877f4ddaf6300d2cf7b9590479dd36a2f8296d9e004",
+      "text_characters": 10096
+    },
+    {
+      "id": "sc100-keyvault-default",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+      "checked_at": "2026-09-28T03:23:51.271702+00:00",
+      "health": {
+        "id": "sc100-keyvault-default",
+        "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+        "checked_at": "2026-09-28T03:23:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+        "content_type": "text/html",
+        "page_title": "Plan for Azure RBAC as the default access control model in Key Vault",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "5eee5bd9a75ff2883cdf5d5f7909f7650877890e90d6c3c3ab3b6c07c7099232",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+      "sha256": "2133678cfb2c2d932a53a2ad0d9385e51b738c85a607dab450617f337739f31c",
+      "text_characters": 12673
+    },
+    {
+      "id": "sc100-cloud-release",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+      "checked_at": "2026-09-28T03:23:51.292973+00:00",
+      "health": {
+        "id": "sc100-cloud-release",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+        "checked_at": "2026-09-28T03:23:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+        "content_type": "text/html",
+        "page_title": "What's New in Defender for Cloud Features - Microsoft Defender for Cloud",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "dcc72e4e7ce3014a4f9abbb57c4ca25f3855643a0948fac851cd952d12a490ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+      "sha256": "022dea1c192f8aab9c862343711183ba250cd8b8718578eea7061df6b7d05245",
+      "text_characters": 71331
+    },
+    {
+      "id": "sc-500-sentinel-defender-portal",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+      "checked_at": "2026-09-28T03:23:51.352016+00:00",
+      "health": {
+        "id": "sc-500-sentinel-defender-portal",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+        "checked_at": "2026-09-28T03:23:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+        "content_type": "text/html",
+        "page_title": "Microsoft Sentinel in the Microsoft Defender portal",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+        "duration_signals": [],
+        "signal_fingerprint": "1a9026c54fe163a4e39a1297d0549946c80dd7cc15bca7387fafc35ca63724e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+      "sha256": "80bfec1367ef2c96b6d6d78d7fe61554fd2871e6d32686a770276693d112ad6a",
+      "text_characters": 11510
+    },
+    {
+      "id": "sc900-privacy",
+      "url": "https://www.microsoft.com/en-us/trust-center/privacy",
+      "checked_at": "2026-09-28T03:23:51.518825+00:00",
+      "health": {
+        "id": "sc900-privacy",
+        "url": "https://www.microsoft.com/en-us/trust-center/privacy",
+        "checked_at": "2026-09-28T03:23:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/trust-center/privacy",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Privacy Principles | Microsoft Trust Center",
+        "canonical_url": "https://www.microsoft.com/en-us/trust-center/privacy",
+        "duration_signals": [],
+        "signal_fingerprint": "066be2690f8f9bb05fe81fa5094039a69a9f1276fee5db94ede0e9747b61a854",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/trust-center/privacy",
+      "sha256": "910ed66677516858fed383534efcc0f961679a7393be6dd37fb7b25441644341",
+      "text_characters": 5946
+    },
+    {
+      "id": "sc900-passkey-blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+      "checked_at": "2026-09-28T03:23:51.612419+00:00",
+      "health": {
+        "id": "sc900-passkey-blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+        "checked_at": "2026-09-28T03:23:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID | Microsoft Security Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+        "duration_signals": [
+          "2 min",
+          "3 min",
+          "5 min"
+        ],
+        "signal_fingerprint": "8f452f6a57bb2980031427be2a92c920e393a381d968b32e640ecff3e3316891",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+      "sha256": "0b2d81a0c248871ed1646a08075f86da0481dbde975f49bdbeb24564f18b2dfa",
+      "text_characters": 9174
+    },
+    {
+      "id": "sc900-passkey-social-blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+      "checked_at": "2026-09-28T03:23:51.674503+00:00",
+      "health": {
+        "id": "sc900-passkey-social-blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+        "checked_at": "2026-09-28T03:23:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Passkey-themed social engineering leads to identity and cloud compromise | Microsoft Security Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+        "duration_signals": [
+          "0min",
+          "10min",
+          "12 min",
+          "12min",
+          "14min",
+          "15 min",
+          "15min",
+          "16min",
+          "19 min",
+          "1min",
+          "2min",
+          "30 minutes",
+          "3min",
+          "4min",
+          "50min",
+          "9 min"
+        ],
+        "signal_fingerprint": "886b645e5378207f804e4971630e3bad037ec81ad2de8951f25921bae23b8320",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+      "sha256": "b0033a9c7d3853009ec1806dd3dcb9fb9ae645bad277fd5c9a351561f31400dd",
+      "text_characters": 42739
+    },
+    {
+      "id": "azure-rbac-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "checked_at": "2026-09-28T03:23:52.169097+00:00",
+      "health": {
+        "id": "azure-rbac-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "checked_at": "2026-09-28T03:23:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure role-based access control (Azure RBAC)?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "98a40df326b84471eaddb068d79cb5cc13ae30ac24140303aadfd49083ce768a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "sha256": "5bbf0e9ff1c54b5d8b594d23158b960b97a85d312182f10f7e506c72b3900169",
+      "text_characters": 8331
+    },
+    {
+      "id": "azure-shared-responsibility",
+      "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "checked_at": "2026-09-28T03:23:52.481278+00:00",
+      "health": {
+        "id": "azure-shared-responsibility",
+        "url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+        "checked_at": "2026-09-28T03:23:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+        "content_type": "text/html",
+        "page_title": "Shared responsibility in the cloud - Microsoft Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+        "duration_signals": [],
+        "signal_fingerprint": "b3190a6500d2beccb260c8fe4a4a1cfd6fb0c9a3c08f52c510f12ac5efe9a3fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+      "sha256": "e75343fc751fe206a2b98a094bfd4b2074a6165b61bc8d7f26498cadb40fe5a9",
+      "text_characters": 7354
+    },
+    {
+      "id": "microsoft-entra-documentation",
+      "url": "https://learn.microsoft.com/en-us/entra/",
+      "checked_at": "2026-09-28T03:23:52.790001+00:00",
+      "health": {
+        "id": "microsoft-entra-documentation",
+        "url": "https://learn.microsoft.com/en-us/entra/",
+        "checked_at": "2026-09-28T03:23:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/",
+        "duration_signals": [],
+        "signal_fingerprint": "b0990e11213dbb07758bf862fc37602de88faad53cf9c123946d2290c882a076",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/",
+      "sha256": "dfe3ce7b9a93e1e6ed58499a9d04b34e38e04540ba316805e8a3663cc92c1550",
+      "text_characters": 2742
+    },
+    {
+      "id": "microsoft-entra-conditional-access-overview",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+      "checked_at": "2026-09-28T03:23:52.948679+00:00",
+      "health": {
+        "id": "microsoft-entra-conditional-access-overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "checked_at": "2026-09-28T03:23:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Conditional Access: Zero Trust Policy Engine - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "cc2493e68987c16a4861a01ff9706f70bea57bad1554d3ee37e491dabc34cb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+      "sha256": "c5fa133f29ad78574a5029457c5cbc611484bc767584ff7ad37ff7e5cac803d1",
+      "text_characters": 7161
+    },
+    {
+      "id": "ab900-purview-data-explorer",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "checked_at": "2026-09-28T03:25:19.389128+00:00",
+      "health": {
+        "id": "ab900-purview-data-explorer",
+        "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "checked_at": "2026-09-28T03:25:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "content_type": "text/html",
+        "page_title": "Get started with data explorer",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "duration_signals": [],
+        "signal_fingerprint": "508ad51d3d8fde746a82c529edcc47034a6eadc3700caa962fbd63eb3f006ea1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "sha256": "c4b8b8e976d7f86b4e2f982199181e91e2efcc714acc5a62d421544dc060c11d",
+      "text_characters": 8247
+    },
+    {
+      "id": "azure-virtual-network-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "checked_at": "2026-09-28T03:26:25.425575+00:00",
+      "health": {
+        "id": "azure-virtual-network-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "checked_at": "2026-09-28T03:26:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Virtual Network?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "352e34be0a40493d49aadd8630c7b6f7673e337f14cd8db852b523de79799903",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "sha256": "b0a2ebf0c26674f043565c143480205174be360ccd533290d6916fe66c880c30",
+      "text_characters": 8318
+    }
+  ],
+  "added_source_ids": [
+    "sc900-workloads",
+    "sc900-workload-ca",
+    "sc900-passkey-transition",
+    "sc900-system-preferred",
+    "sc900-threat-intelligence",
+    "sc900-label-policies",
+    "sc900-review-results",
+    "sc900-privacy",
+    "sc900-passkey-blog",
+    "sc900-passkey-social-blog"
+  ],
+  "findings": [
+    {
+      "id": "sc900-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "October workload identity and threat intelligence need broader explanation",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New revision names workload identities and Microsoft Threat Intelligence.",
+      "recommendation": "Map all 58 bullets and expand both concepts while retaining July baseline.",
+      "disposition": "applied",
+      "source_id": "sc-900-blueprint",
+      "resolution": "Map all 58 bullets and expand both concepts while retaining July baseline."
+    },
+    {
+      "id": "sc900-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Application definitions and local grants are different objects",
+      "url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Workloads include applications, service principals and managed identities; tenant instances hold local access.",
+      "recommendation": "Add explicit two-tenant example and lifecycle/authorization explanation.",
+      "disposition": "applied",
+      "source_id": "sc900-workloads",
+      "resolution": "Add explicit two-tenant example and lifecycle/authorization explanation."
+    },
+    {
+      "id": "sc900-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Human MFA controls do not apply to all software identities",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Supported service-principal CA uses direct targeting/block controls and excludes managed identities and multitenant/third-party SaaS.",
+      "recommendation": "Add subject-specific policy explanation and answer.",
+      "disposition": "applied",
+      "source_id": "sc900-workload-ca",
+      "resolution": "Add subject-specific policy explanation and answer."
+    },
+    {
+      "id": "sc900-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Retirement deadlines differ by user population",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September Learn distinguishes February 1 most/internal-guest users and July 1 Global Administrator/external users; July blog was broader.",
+      "recommendation": "Add dated current guidance, provider/cloud scope and follow-ups.",
+      "disposition": "applied",
+      "source_id": "sc900-passkey-transition",
+      "resolution": "Add dated current guidance, provider/cloud scope and follow-ups."
+    },
+    {
+      "id": "sc900-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preferred method is not an enforced strength",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "System-preferred can offer strongest registered method while allowing alternatives; CA remains separate.",
+      "recommendation": "Distinguish enablement, registration, preference and requirement.",
+      "disposition": "applied",
+      "source_id": "sc900-system-preferred",
+      "resolution": "Distinguish enablement, registration, preference and requirement."
+    },
+    {
+      "id": "sc900-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Completed reviews need application and source-aware remediation",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Denied decisions do not remove access until applicable results are applied; nested/dynamic/on-premises paths differ.",
+      "recommendation": "Add three-person worked example and effective-access checks.",
+      "disposition": "applied",
+      "source_id": "sc900-review-results",
+      "resolution": "Add three-person worked example and effective-access checks."
+    },
+    {
+      "id": "sc900-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Subnet and rule changes do not prove intended isolation",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NSG default virtual-network allowance, priority and stateful existing-flow behavior matter.",
+      "recommendation": "Add segmentation explanation and new-versus-existing connection example.",
+      "disposition": "applied",
+      "source_id": "azure-network-security-groups-overview-sc900",
+      "resolution": "Add segmentation explanation and new-versus-existing connection example."
+    },
+    {
+      "id": "sc900-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New-resource default does not migrate existing vaults",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "API 2026-02-01 changes new-vault default; existing access configuration is retained.",
+      "recommendation": "Add configuration versus secret-read authorization and default boundary.",
+      "disposition": "applied",
+      "source_id": "sc100-keyvault-default",
+      "resolution": "Add configuration versus secret-read authorization and default boundary."
+    },
+    {
+      "id": "sc900-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Posture coverage and scores need current scope",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New Azure subscriptions require CSPM opt-in from October 27; classic Secure Score and Cloud Score differ.",
+      "recommendation": "Add scoped lifecycle note and blank-dashboard interpretation.",
+      "disposition": "applied",
+      "source_id": "sc100-cloud-release",
+      "resolution": "Add scoped lifecycle note and blank-dashboard interpretation."
+    },
+    {
+      "id": "sc900-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Threat context is distinct from local incident proof",
+      "url": "https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current TI overview includes reports, entities and preview-specific experiences.",
+      "recommendation": "Add report/match/confirmed incident distinction and qualify ISOC prerequisites.",
+      "disposition": "applied",
+      "source_id": "sc900-threat-intelligence",
+      "resolution": "Add report/match/confirmed incident distinction and qualify ISOC prerequisites."
+    },
+    {
+      "id": "sc900-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Vulnerability finding is not confirmed exploitation or installed patch",
+      "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Discovery/prioritization/remediation tracking are distinct operations.",
+      "recommendation": "Explain vulnerability-management purpose at fundamentals depth.",
+      "disposition": "applied",
+      "source_id": "ms-102-defender-vulnerability-management",
+      "resolution": "Explain vulnerability-management purpose at fundamentals depth."
+    },
+    {
+      "id": "sc900-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Label availability does not prove content application",
+      "url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Publishing distributes labels/settings; applying protection is separate.",
+      "recommendation": "Add label/policy/application distinction and answer.",
+      "disposition": "applied",
+      "source_id": "sc900-label-policies",
+      "resolution": "Add label/policy/application distinction and answer."
+    },
+    {
+      "id": "sc900-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Retention needs actual start and end dates",
+      "url": "https://learn.microsoft.com/en-us/purview/retention",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Ordinary retention precedence compares item endpoints, not just nominal number of years.",
+      "recommendation": "Add 2028 versus 2031 example and hold/priority-cleanup limits.",
+      "disposition": "applied",
+      "source_id": "microsoft-purview-retention-sc900",
+      "resolution": "Add 2028 versus 2031 example and hold/priority-cleanup limits."
+    },
+    {
+      "id": "sc900-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Explorer content permissions are privileged and separate",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-900"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "List/content roles are independent; content viewing can supersede item-local permissions under service limits.",
+      "recommendation": "Clarify current Data Explorer terminology while retaining blueprint Content explorer wording.",
+      "disposition": "applied",
+      "source_id": "ab900-purview-data-explorer",
+      "resolution": "Clarify current Data Explorer terminology while retaining blueprint Content explorer wording."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "sc900-passkey-blog",
+      "decision": "accepted-bounded",
+      "author": "Nadim Abdo",
+      "published_on": "2026-07-13",
+      "notes": "Enrollment/preference/enforcement task; September Learn February/July population-specific dates supersede earlier blanket deadline. Rollout not tested."
+    },
+    {
+      "source_id": "sc900-passkey-social-blog",
+      "decision": "accepted-bounded",
+      "author": "Microsoft Security Research, Krithika Ramakrishnan, Bharat Vaghela, Vaibhav Deshmukh, Subhajit Ghosh, Anusha Chakraborty, Akash Chaudhuri, Victor Chingtham and Ivan Macalintal",
+      "published_on": "2026-09-09",
+      "notes": "Introduction, initial-access and mitigation sections reviewed. Helpdesk-verification/evidence-map tabletop; passkey-themed lure is not proof of broken passkey cryptography. No destructive or phishing reproduction."
+    }
+  ],
+  "labs": {
+    "total": 7,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Eight synthetic object/count/set/priority/retention and course/question arithmetic checks; no live service execution"
+    ]
+  },
+  "answered_checks": 18,
+  "limitations": [
+    "Accepted July 28 snapshot preserved; 58 October 21 bullets mapped separately.",
+    "No identity, Conditional Access, access review, NSG, Key Vault, Purview, Sentinel, credential or other tenant action executed. Seven labs are learner exercises/tabletops.",
+    "Current passkey dates are population/provider/cloud specific; enrolled/registered/preferred does not establish enforced authentication strength or tenant rollout.",
+    "Threat-intelligence ISOC and vulnerability-management portal experiences include preview scope. Current tenant access and licensing not independently tested.",
+    "Paid lessons/question banks not reviewed; O'Reilly and Udemy blocked. Partner/Whizlabs/YouTube/Service Trust shells and direct practice empty response do not establish underlying content. Earlier runtimes explicitly historical; current Learn module total not timed.",
+    "First blog public article read; second reviewed only introduction/initial-access/mitigation sections, not all technical queries/indicators. No attack reproduction or gated intelligence access.",
+    "Same-context AI research/repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "identity_review_priority_retention_and_catalog_assertions": 8
+  }
+}

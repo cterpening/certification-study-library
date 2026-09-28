@@ -530,6 +530,55 @@
       "review_on": "2027-03-01",
       "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
       "action": "Before March 31 Azure-portal support end, recheck SC-200 lab paths, workspace roles, connector routing, analytic/playbook behavior and data history access."
+    },
+    {
+      "id": "sc900-passkey-rollout",
+      "exam_codes": [
+        "SC-900"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+      "action": "Recheck September system-preferred/registration rollout and current provider/cloud availability. Keep enabled, registered, preferred and required distinct; do not infer tenant enforcement from an announcement."
+    },
+    {
+      "id": "sc900-sms-voice-first-retirement",
+      "exam_codes": [
+        "SC-900",
+        "SC-300",
+        "MS-102"
+      ],
+      "review_on": "2027-01-01",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "action": "Recheck February 1 Microsoft-provided SMS/voice delivery retirement for most users including internal guests; distinguish July exceptions, customer-managed providers and cloud-specific scope. Update linked identity learning material from current docs."
+    },
+    {
+      "id": "sc900-sms-voice-second-retirement",
+      "exam_codes": [
+        "SC-900",
+        "SC-300",
+        "MS-102"
+      ],
+      "review_on": "2027-06-01",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "action": "Recheck July 1 Microsoft-provided SMS/voice delivery retirement for Global Administrators/external users; verify current exceptions/provider paths and avoid relying on July 2026 blanket-February blog copy."
+    },
+    {
+      "id": "sc900-new-subscription-cspm",
+      "exam_codes": [
+        "SC-900"
+      ],
+      "review_on": "2026-10-28",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+      "action": "Confirm October 27 Foundational CSPM opt-in for new Azure subscriptions; keep existing Azure/AWS/GCP and no-cost status distinct. Retain fundamentals-level coverage and score-evidence explanation."
+    },
+    {
+      "id": "sc900-sentinel-portal-transition",
+      "exam_codes": [
+        "SC-900"
+      ],
+      "review_on": "2027-03-01",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+      "action": "Recheck March 31 Azure-portal support end and SC-900 portal-tour/course caveats. Separate Sentinel portal access from Defender product licensing."
     }
   ]
 }

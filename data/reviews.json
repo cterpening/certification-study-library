@@ -579,26 +579,42 @@
       "exam_code": "SC-900",
       "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/sc-900-official-objectives.txt",
       "blueprint_snapshot_sha256": "e2869853685f48f936c2833bda16c5065a629346c7f5d1c9cd5aa91f9d1a3b91",
       "objective_coverage": [
         {
           "objective_group": "Describe the concepts of security, compliance, and identity",
-          "guide_sections": ["Part 1", "Part 6 — Objective-to-scenario drill", "Labs 3–4"]
+          "guide_sections": [
+            "Part 1",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 3–4"
+          ]
         },
         {
           "objective_group": "Describe the capabilities of Microsoft Entra",
-          "guide_sections": ["Part 2", "Part 6 — Objective-to-scenario drill", "Labs 1–2"]
+          "guide_sections": [
+            "Part 2",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Describe the capabilities of Microsoft security solutions",
-          "guide_sections": ["Parts 3–4", "Part 6 — Objective-to-scenario drill", "Labs 3 and 5"]
+          "guide_sections": [
+            "Parts 3–4",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 3 and 5"
+          ]
         },
         {
           "objective_group": "Describe the capabilities of Microsoft compliance solutions",
-          "guide_sections": ["Part 5", "Part 6 — Objective-to-scenario drill", "Labs 4–5"]
+          "guide_sections": [
+            "Part 5",
+            "Part 6 — Objective-to-scenario drill",
+            "Labs 4–5"
+          ]
         }
       ],
       "checks": {
@@ -609,12 +625,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 49,
-        "reachable": 47,
+        "unique_external_links": 66,
+        "reachable": 64,
         "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All four weighted objective groups and their July 28, 2026 bullets are mapped to product boundaries, worked decision flows, an integrated scenario, and five hands-on labs. All 49 cited URLs are exact source-catalog entries. One O'Reilly and one Udemy SC-900 course page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Agent ID terminology, availability, licensing, service plans, portal surfaces, coverage, pricing, and supported features remain explicitly marked VERIFY CURRENT."
+      "notes": "Whole guide read; 58 October objectives in 14 groups individually mapped while retaining July 28 baseline. Add four worked examples, two labs, and answers for all six old plus twelve new checks (18 total). Clarify workload identities, human/software policy, access-review application, segmentation/NSG flows, label publication, retention and threat-intelligence evidence. Add two qualified passkey blog exercises, current product/lifecycle notes and five checkpoints. Eight offline checks passed; no tenant execution; human review pending. See docs/research/2026-09-27-sc-900-deep-review.md"
     },
     {
       "id": "pl-900-2026-08-31-source-validation",

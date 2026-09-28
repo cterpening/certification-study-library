@@ -4,6 +4,325 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-sc900-deep-review",
+      "title": "SC-900 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SC-900"
+      ],
+      "results": [
+        {
+          "exam_code": "SC-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+          "baseline_sha256": "d37d1c3a61aad411e5eca4c7124e0a9e208d97b43af0b2c98f90189ec565ed65",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "58 October objectives in 14 groups mapped; July retained. Credential confirms 45-minute exam and thirteen languages; course one day."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read. Expand workload, access-review, segmentation, policy/label, retention, privacy and threat-intelligence boundaries with four examples, seven labs and eighteen answers. Eight offline checks only."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Passkey preference/enrollment/retirement, current TI preview, CSPM new-subscription default, Key Vault creation default and Sentinel portal transition checked; five checkpoints added."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Every guide citation associated and fetched, including shared sources. Pluralsight 8h45, LinkedIn 3h32/June 2024 and MeasureUp 124/August 2025 verified as metadata only. Historical/blocked/shell/empty limits explicit."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Use updated September Learn population-specific SMS/voice dates over older July blog broad wording. Preserve current/future exam distinction and preview/licensing limits; do not conflate security signals, decisions and effective controls."
+            }
+          },
+          "findings": [
+            {
+              "id": "sc900-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "October workload identity and threat intelligence need broader explanation",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New revision names workload identities and Microsoft Threat Intelligence.",
+              "recommendation": "Map all 58 bullets and expand both concepts while retaining July baseline.",
+              "disposition": "applied",
+              "source_id": "sc-900-blueprint",
+              "resolution": "Map all 58 bullets and expand both concepts while retaining July baseline."
+            },
+            {
+              "id": "sc900-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Application definitions and local grants are different objects",
+              "url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Workloads include applications, service principals and managed identities; tenant instances hold local access.",
+              "recommendation": "Add explicit two-tenant example and lifecycle/authorization explanation.",
+              "disposition": "applied",
+              "source_id": "sc900-workloads",
+              "resolution": "Add explicit two-tenant example and lifecycle/authorization explanation."
+            },
+            {
+              "id": "sc900-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Human MFA controls do not apply to all software identities",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Supported service-principal CA uses direct targeting/block controls and excludes managed identities and multitenant/third-party SaaS.",
+              "recommendation": "Add subject-specific policy explanation and answer.",
+              "disposition": "applied",
+              "source_id": "sc900-workload-ca",
+              "resolution": "Add subject-specific policy explanation and answer."
+            },
+            {
+              "id": "sc900-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Retirement deadlines differ by user population",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September Learn distinguishes February 1 most/internal-guest users and July 1 Global Administrator/external users; July blog was broader.",
+              "recommendation": "Add dated current guidance, provider/cloud scope and follow-ups.",
+              "disposition": "applied",
+              "source_id": "sc900-passkey-transition",
+              "resolution": "Add dated current guidance, provider/cloud scope and follow-ups."
+            },
+            {
+              "id": "sc900-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preferred method is not an enforced strength",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "System-preferred can offer strongest registered method while allowing alternatives; CA remains separate.",
+              "recommendation": "Distinguish enablement, registration, preference and requirement.",
+              "disposition": "applied",
+              "source_id": "sc900-system-preferred",
+              "resolution": "Distinguish enablement, registration, preference and requirement."
+            },
+            {
+              "id": "sc900-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Completed reviews need application and source-aware remediation",
+              "url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Denied decisions do not remove access until applicable results are applied; nested/dynamic/on-premises paths differ.",
+              "recommendation": "Add three-person worked example and effective-access checks.",
+              "disposition": "applied",
+              "source_id": "sc900-review-results",
+              "resolution": "Add three-person worked example and effective-access checks."
+            },
+            {
+              "id": "sc900-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Subnet and rule changes do not prove intended isolation",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NSG default virtual-network allowance, priority and stateful existing-flow behavior matter.",
+              "recommendation": "Add segmentation explanation and new-versus-existing connection example.",
+              "disposition": "applied",
+              "source_id": "azure-network-security-groups-overview-sc900",
+              "resolution": "Add segmentation explanation and new-versus-existing connection example."
+            },
+            {
+              "id": "sc900-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New-resource default does not migrate existing vaults",
+              "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "API 2026-02-01 changes new-vault default; existing access configuration is retained.",
+              "recommendation": "Add configuration versus secret-read authorization and default boundary.",
+              "disposition": "applied",
+              "source_id": "sc100-keyvault-default",
+              "resolution": "Add configuration versus secret-read authorization and default boundary."
+            },
+            {
+              "id": "sc900-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Posture coverage and scores need current scope",
+              "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New Azure subscriptions require CSPM opt-in from October 27; classic Secure Score and Cloud Score differ.",
+              "recommendation": "Add scoped lifecycle note and blank-dashboard interpretation.",
+              "disposition": "applied",
+              "source_id": "sc100-cloud-release",
+              "resolution": "Add scoped lifecycle note and blank-dashboard interpretation."
+            },
+            {
+              "id": "sc900-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Threat context is distinct from local incident proof",
+              "url": "https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current TI overview includes reports, entities and preview-specific experiences.",
+              "recommendation": "Add report/match/confirmed incident distinction and qualify ISOC prerequisites.",
+              "disposition": "applied",
+              "source_id": "sc900-threat-intelligence",
+              "resolution": "Add report/match/confirmed incident distinction and qualify ISOC prerequisites."
+            },
+            {
+              "id": "sc900-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Vulnerability finding is not confirmed exploitation or installed patch",
+              "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Discovery/prioritization/remediation tracking are distinct operations.",
+              "recommendation": "Explain vulnerability-management purpose at fundamentals depth.",
+              "disposition": "applied",
+              "source_id": "ms-102-defender-vulnerability-management",
+              "resolution": "Explain vulnerability-management purpose at fundamentals depth."
+            },
+            {
+              "id": "sc900-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Label availability does not prove content application",
+              "url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Publishing distributes labels/settings; applying protection is separate.",
+              "recommendation": "Add label/policy/application distinction and answer.",
+              "disposition": "applied",
+              "source_id": "sc900-label-policies",
+              "resolution": "Add label/policy/application distinction and answer."
+            },
+            {
+              "id": "sc900-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Retention needs actual start and end dates",
+              "url": "https://learn.microsoft.com/en-us/purview/retention",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Ordinary retention precedence compares item endpoints, not just nominal number of years.",
+              "recommendation": "Add 2028 versus 2031 example and hold/priority-cleanup limits.",
+              "disposition": "applied",
+              "source_id": "microsoft-purview-retention-sc900",
+              "resolution": "Add 2028 versus 2031 example and hold/priority-cleanup limits."
+            },
+            {
+              "id": "sc900-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Explorer content permissions are privileged and separate",
+              "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "List/content roles are independent; content viewing can supersede item-local permissions under service limits.",
+              "recommendation": "Clarify current Data Explorer terminology while retaining blueprint Content explorer wording.",
+              "disposition": "applied",
+              "source_id": "ab900-purview-data-explorer",
+              "resolution": "Clarify current Data Explorer terminology while retaining blueprint Content explorer wording."
+            }
+          ],
+          "notes": "Whole guide read; 58 October objectives in 14 groups individually mapped while retaining July 28 baseline. Add four worked examples, two labs, and answers for all six old plus twelve new checks (18 total). Clarify workload identities, human/software policy, access-review application, segmentation/NSG flows, label publication, retention and threat-intelligence evidence. Add two qualified passkey blog exercises, current product/lifecycle notes and five checkpoints. Eight offline checks passed; no tenant execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-sc-900-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 14,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-sc200-deep-review",
       "title": "SC-200 complete guide and learning-content review",
       "rubric_version": 1,

@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "sc900-workloads",
+      "title": "Microsoft Entra workload identities",
+      "url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Full overview read; application definition, tenant service principal, managed identity, device and agent distinctions used at fundamentals depth. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-workload-ca",
+      "title": "Conditional Access for workload identities",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Overview, licensing, scope, direct targeting and block-only controls read. No policy deployed; managed identities and multitenant/third-party SaaS exclusions preserved. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-passkey-transition",
+      "title": "Passkey defaults and Microsoft SMS/voice retirement",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: September 23 introduction, population timeline and selected deployment/provider sections reviewed. Current February/July dates refine July blog blanket deadline. Provider options remain separately scoped/preview; no tenant migration. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-system-preferred",
+      "title": "System-preferred authentication",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Modes, gradual rollout and alternate-method/CA limits reviewed. Preference is not a passkey-only requirement. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-threat-intelligence",
+      "title": "Threat intelligence in Microsoft Defender",
+      "url": "https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Full September 23 overview read; current Overview/Intel explorer/entity/report experiences have prerelease/ISOC-specific conditions. No claim of universal preview access. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-label-policies",
+      "title": "Publish and apply sensitivity labels",
+      "url": "https://learn.microsoft.com/en-us/purview/create-sensitivity-labels",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Creation, scope, publishing and propagation sections reviewed; distinguish availability from actual application. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-review-results",
+      "title": "Complete access reviews and apply results",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Overview, completion/application and unsupported membership paths read. Original three-person example illustrates decision/application/effective-access separation. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-privacy",
+      "title": "Microsoft privacy principles",
+      "url": "https://www.microsoft.com/en-us/trust-center/privacy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Commercial-cloud privacy page read for customer control/transparency/protection themes. No legal determination or underlying contract audit. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-passkey-blog",
+      "title": "Passkey default experience announcement",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Nadim Abdo, July 13 2026. Public article read; accept enrollment/preference/enforcement learning task. Current Learn population-specific retirement dates supersede older blanket deadline; no tenant rollout tested. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc900-passkey-social-blog",
+      "title": "Passkey-themed social engineering investigation",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Microsoft Security Research and named authors, September 9 2026. Introduction, initial-access examples and mitigation sections read, not every query/indicator. Accept independent helpdesk verification and evidence-map tabletop; no assertion of broken passkey cryptography. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "sc200-onboarding",
       "title": "Connect Microsoft Sentinel to Defender",
       "url": "https://learn.microsoft.com/en-us/unified-secops/microsoft-sentinel-onboard",
@@ -236,9 +376,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "SC-100"
+        "SC-100",
+        "SC-900"
       ],
-      "notes": "September 27 SC-100 deep review: Targeted July-September 2026 entries read, including new-subscription CSPM opt-in, CIEM unused-action changes, individual recommendations and upcoming VA retirement. No claim to review every historical release entry. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Targeted July-September 2026 entries read, including new-subscription CSPM opt-in, CIEM unused-action changes, individual recommendations and upcoming VA retirement. No claim to review every historical release entry. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Targeted July new-subscription opt-in and score distinctions reviewed, not every release entry. October change remains future as of review. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc100-ciem",
@@ -264,9 +405,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "SC-100"
+        "SC-100",
+        "SC-900"
       ],
-      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: New-vault default versus existing-vault update sections reread; no access model changed. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc100-keyvault-api",
@@ -4859,15 +5001,17 @@
     },
     {
       "id": "pluralsight-sc-900",
-      "title": "Microsoft Security, Compliance, and Identity Fundamentals (SC-900)",
+      "title": "Pluralsight SC-900 path",
       "url": "https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900",
       "publisher": "Pluralsight",
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
-      "notes": "Nine-hour path with a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. Compare its mostly 2023-2024 components with the July 2026 blueprint."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "Public listing: six Vlad Catrinescu courses from December 2023–January 2024 totaling 8h45; nine-hour path rounded. No paid lesson or practice exam completed. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-ab-900",
@@ -5087,15 +5231,17 @@
     },
     {
       "id": "linkedin-learning-sc-900-microsoft-press",
-      "title": "Microsoft Security, Compliance, and Identity Fundamentals SC-900 Cert Prep by Microsoft Press",
+      "title": "LinkedIn Learning SC-900 Microsoft Press course",
       "url": "https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press",
       "publisher": "Microsoft Press on LinkedIn Learning",
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
-      "notes": "Three hours, 32 minutes; released June 2024."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "Current public listing confirms Christopher Wojahn/Microsoft Press, 3h32, June 11 2024. No lessons viewed; current objective coverage not established by listing. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "coursera-microsoft-az-900-specialization",
@@ -5363,15 +5509,17 @@
     },
     {
       "id": "skilling-hub-levelup-sc-900",
-      "title": "LevelUp: SC-900 Microsoft Security, Compliance, and Identity Fundamentals",
+      "title": "Partner Skilling Hub LevelUp SC-900",
       "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2058350",
       "publisher": "Microsoft Partner Skilling Hub / LevelUp",
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "partner-restricted",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
-      "notes": "Five-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "Current retrieval returned a shell; prior five-hour metadata retained only as historical. Underlying event/course content, availability and eligibility not reverified. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "whizlabs-ab-100",
@@ -6389,15 +6537,17 @@
     },
     {
       "id": "measureup-sc-900-practice-test",
-      "title": "Microsoft SC-900 Security, Compliance, and Identity Fundamentals practice test",
+      "title": "MeasureUp SC-900 practice test",
       "url": "https://www.measureup.com/microsoft-practice-test-sc-900-microsoft-security-compliance-and-identity-fundamentals.html",
       "publisher": "MeasureUp",
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
-      "notes": "Public listing shows 124 questions and an August 2025 last-update date. Allow about four to eight hours for simulation and explanation review, and compare with the July 2026 blueprint."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "Current public listing remains 124 questions (19+30+43+32), August 2025 update; generic 150-question FAQ does not override specific product count. July/October 2026 completeness unverified; no paid questions/demo reviewed. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "measureup-ab-900-practice-test",
@@ -6449,15 +6599,17 @@
     },
     {
       "id": "whizlabs-sc-900",
-      "title": "Microsoft Security, Compliance, and Identity Fundamentals SC-900 training and practice test",
+      "title": "Whizlabs SC-900 training and practice",
       "url": "https://www.whizlabs.com/microsoft-security-compliance-identity-fundamentals-sc-900-certification/",
       "publisher": "Whizlabs",
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
-      "notes": "Mixed training and assessment package. Allow about four to eight hours for practice attempts and explanation review; current instructional runtime and July 2026 delta coverage were not independently verified."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900"
+      ],
+      "notes": "Current retrieval returned a shell; content, runtime, practice and July/October scope were not verified. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "whizlabs-ai-901",
@@ -7843,8 +7995,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-104"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-104",
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Overview, approval, client connectivity and DNS sections reviewed; no private endpoint provisioned. Public-exposure setting is a separate verification task. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-reliability-documentation",
@@ -7877,8 +8034,14 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-104", "AZ-305"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-104",
+        "AZ-305",
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-shared-responsibility",
@@ -7888,8 +8051,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-service-health-overview",
@@ -7976,8 +8143,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AZ-104"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "AZ-104",
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Targeted VNet, connectivity, filtering and routing overview read. No automatic outbound-access assumption added to guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-az-900-certification-page",
@@ -7999,8 +8171,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "AB-900"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "AB-900",
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-overview",
@@ -8021,8 +8198,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "SC-500"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "SC-500",
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-entra-domain-services-overview",
@@ -9206,8 +9388,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900", "SC-401"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-900",
+        "SC-401"
+      ],
+      "notes": "September 27 SC-900 deep review: Targeted retention start, ordinary precedence, labeling and priority-cleanup exception sections reread. No hold, deletion or retention policy changed. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-purview-sensitivity-labels-sc900",
@@ -20693,9 +20879,10 @@
       "supported_exams": [
         "SC-500",
         "SC-100",
-        "SC-200"
+        "SC-200",
+        "SC-900"
       ],
-      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027. September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution."
+      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027. September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution. September 27 SC-200 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-200-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-security-copilot-docs",
@@ -21120,10 +21307,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-27",
       "supported_exams": [
-        "MS-102"
-      ]
+        "MS-102",
+        "SC-900"
+      ],
+      "notes": "September 27 SC-900 deep review: Discovery, prioritization, remediation and current/preview portal sections reviewed; no paid capability or tenant coverage tested. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-102-defender-xdr-rbac",
@@ -30058,9 +30247,10 @@
       "last_checked": "2026-09-27",
       "supported_exams": [
         "AB-900",
-        "SC-401"
+        "SC-401",
+        "SC-900"
       ],
-      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution. September 27 SC-900 deep review: Overview and role/encryption/scope sections read. List/content roles separate; privileged content access can supersede ordinary local item permissions. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab900-agent-builder",
