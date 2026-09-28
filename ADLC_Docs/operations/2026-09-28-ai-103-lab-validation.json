@@ -1,0 +1,51 @@
+{
+  "exam": "AI-103",
+  "scope": "local synthetic learning exercise",
+  "executed_at": "2026-09-28T19:17:18.195341+00:00",
+  "python": "3.13.14",
+  "platform": "Windows",
+  "source_hashes": {
+    "labs/ai-103/maintenance.py": "aaa5943ae151b14712c0ad889b6fa75f663f299fdd180db0a96409822116de57",
+    "labs/ai-103/README.md": "0d2673eaf0355d9fc60d8f8289fcfa7b791dedcbdea818d09707c9d41facaaca",
+    "labs/ai-103/retrieval-cases.json": "c2a9597ac4cb9d7fb94611a5bff0b667a31a18e672c664cc5c0719d10efdf4a8",
+    "labs/ai-103/review-record.json": "d96260168a8352bebcc7e7d58caf396cefcb5804be026a8cbea9c244e3915a74",
+    "labs/ai-103/test_maintenance.py": "ace03e6a834c2f6fa71c437f8eab83f76e607948878b6997399be33d3a1d513a"
+  },
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "labs\\ai-103",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_access_breach_cannot_be_hidden_by_good_recall (test_maintenance.RetrievalTests.test_access_breach_cannot_be_hidden_by_good_recall) ... ok\ntest_five_hand_calculated_cases (test_maintenance.RetrievalTests.test_five_hand_calculated_cases) ... ok\ntest_unauthorized_ground_truth_rejected (test_maintenance.RetrievalTests.test_unauthorized_ground_truth_rejected) ... ok\ntest_authorization_is_separate_from_approval (test_maintenance.WorkOrderTests.test_authorization_is_separate_from_approval) ... ok\ntest_changed_description_invalidates_approval (test_maintenance.WorkOrderTests.test_changed_description_invalidates_approval) ... ok\ntest_draft_does_not_write (test_maintenance.WorkOrderTests.test_draft_does_not_write) ... ok\ntest_duplicate_delivery_has_one_effect (test_maintenance.WorkOrderTests.test_duplicate_delivery_has_one_effect) ... ok\ntest_empty_operation_rejected (test_maintenance.WorkOrderTests.test_empty_operation_rejected) ... ok\ntest_operation_id_cannot_be_reused_for_changed_content (test_maintenance.WorkOrderTests.test_operation_id_cannot_be_reused_for_changed_content) ... ok\ntest_submission_without_approval_denied (test_maintenance.WorkOrderTests.test_submission_without_approval_denied) ... ok\ntest_timeout_requires_reconciliation (test_maintenance.WorkOrderTests.test_timeout_requires_reconciliation) ... ok\ntest_unauthorized_reviewer_denied (test_maintenance.WorkOrderTests.test_unauthorized_reviewer_denied) ... ok\ntest_wrong_asset_rejected_even_with_approval (test_maintenance.WorkOrderTests.test_wrong_asset_rejected_even_with_approval) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "labs\\ai-103\\maintenance.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"partial-evidence\": {\n    \"precision\": 0.3333333333333333,\n    \"recall\": 0.5,\n    \"unauthorized_ids\": [],\n    \"eligible_context\": [\n      \"D1\"\n    ],\n    \"abstain\": false\n  },\n  \"duplicate-results\": {\n    \"precision\": 1.0,\n    \"recall\": 1.0,\n    \"unauthorized_ids\": [],\n    \"eligible_context\": [\n      \"D1\",\n      \"D2\"\n    ],\n    \"abstain\": false\n  },\n  \"empty-search\": {\n    \"precision\": 0.0,\n    \"recall\": 0.0,\n    \"unauthorized_ids\": [],\n    \"eligible_context\": [],\n    \"abstain\": true\n  },\n  \"no-answer-in-corpus\": {\n    \"precision\": 0.0,\n    \"recall\": null,\n    \"unauthorized_ids\": [],\n    \"eligible_context\": [],\n    \"abstain\": true\n  },\n  \"restricted-document-leak\": {\n    \"precision\": 0.5,\n    \"recall\": 1.0,\n    \"unauthorized_ids\": [\n      \"SECRET-DOC\"\n    ],\n    \"eligible_context\": [],\n    \"abstain\": true\n  }\n}\nTimeout: outcome unknown to caller until status lookup.\nReconciled: Proposal(operation_id='synthetic-operation-01', asset='P-104', description='Inspect the noisy pump; do not close an existing order.')\nReplay: {'status': 'existing', 'operation_id': 'synthetic-operation-01', 'asset': 'P-104'}\nDestination records: 1\n",
+      "stderr": ""
+    }
+  ],
+  "service_execution": "not-run",
+  "independent_practitioner_review": "pending",
+  "repository_validation": {
+    "repository": "passed",
+    "strict_site_build": "passed",
+    "generated_site": "passed",
+    "diff_check": "passed"
+  }
+}

@@ -5,6 +5,7 @@ These original exercises turn selected guide examples into small, repeatable exp
 | Guide | Runnable exercise | Local result, September 28, 2026 | Service / independent review |
 |---|---|---|---|
 | AB-100 | [Service-case release gate](labs/ab-100.md) | 13 tests passed; starter blocked as expected | Not run / pending |
+| AI-103 | [Maintenance-assistant contracts](labs/ai-103.md) | 13 tests passed, including five retrieval fixtures | Not run / pending |
 
 A passing local suite verifies the limited Python contracts described in each lab. Synthetic trace labels are fixtures, not evidence of a vendor service execution. These labs were developed and checked with AI; they do not confer a **Community reviewed** status on any guide.
 

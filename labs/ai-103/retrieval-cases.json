@@ -1,0 +1,7 @@
+[
+  {"name":"partial-evidence","retrieved":["D1","D3","D4"],"relevant":["D1","D2"],"authorized":["D1","D2","D3","D4"],"expected_precision":0.3333333333333333,"expected_recall":0.5,"expected_breaches":[],"expected_abstain":false},
+  {"name":"duplicate-results","retrieved":["D1","D1","D2"],"relevant":["D1","D2"],"authorized":["D1","D2"],"expected_precision":1.0,"expected_recall":1.0,"expected_breaches":[],"expected_abstain":false},
+  {"name":"empty-search","retrieved":[],"relevant":["D1"],"authorized":["D1"],"expected_precision":0.0,"expected_recall":0.0,"expected_breaches":[],"expected_abstain":true},
+  {"name":"no-answer-in-corpus","retrieved":["D3"],"relevant":[],"authorized":["D3"],"expected_precision":0.0,"expected_recall":null,"expected_breaches":[],"expected_abstain":true},
+  {"name":"restricted-document-leak","retrieved":["D1","SECRET-DOC"],"relevant":["D1"],"authorized":["D1"],"expected_precision":0.5,"expected_recall":1.0,"expected_breaches":["SECRET-DOC"],"expected_abstain":true}
+]
