@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [TERRAFORM-ASSOCIATE-004 deep review](docs/research/2026-09-28-terraform-associate-004-deep-review.md): map 37 objectives, clarify secret/state/governance controls, repair lab sequencing, add 20 answers and four decisions, and execute two local Terraform 1.12.2 labs.
+
 - September 28, 2026: [SCS-C03 deep review](docs/research/2026-09-28-scs-c03-deep-review.md): map 70 skills, add three-language retirement, repair scope link, clarify IAM/KMS/detection, answer 42 checks and add five worked decisions.
 
 - September 28, 2026: [AIP-C01 deep review](docs/research/2026-09-28-aip-c01-deep-review.md): map 98 skills, clarify AgentCore/RAG/evaluation and lifecycle boundaries, add five worked development decisions and bounded CI reading.

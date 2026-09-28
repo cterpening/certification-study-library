@@ -457,46 +457,70 @@
       "notes": "September 27 full-guide deep review maps all 41 detailed objectives in 14 groups. Unchanged official objective/status snapshots preserved. Current guide has 7 labs and 13 original answered checks. Two attributed blog readings added with official corroboration. Live public access checked; HTTP success is not proof of readable course or assessment content. Same-context AI review; no independent/human audit, tenant execution, paid lessons, or assessment questions inspected. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
     },
     {
-      "id": "terraform-associate-004-2026-08-31-source-validation",
+      "id": "terraform-associate-004-2026-09-28-source-validation",
       "exam_code": "TERRAFORM-ASSOCIATE-004",
       "guide_path": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/terraform-associate-004-official-objectives.txt",
       "blueprint_snapshot_sha256": "41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b",
       "objective_coverage": [
         {
           "objective_group": "Infrastructure as Code (IaC) with Terraform",
-          "guide_sections": ["Domain 1", "Labs 1–2"]
+          "guide_sections": [
+            "Domain 1",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Terraform fundamentals",
-          "guide_sections": ["Domain 2", "Labs 1–2"]
+          "guide_sections": [
+            "Domain 2",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Core Terraform workflow",
-          "guide_sections": ["Domain 3", "Labs 1–2"]
+          "guide_sections": [
+            "Domain 3",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Terraform configuration",
-          "guide_sections": ["Domain 4", "Labs 1–5"]
+          "guide_sections": [
+            "Domain 4",
+            "Labs 1–5"
+          ]
         },
         {
           "objective_group": "Terraform modules",
-          "guide_sections": ["Domain 5", "Lab 3"]
+          "guide_sections": [
+            "Domain 5",
+            "Lab 3"
+          ]
         },
         {
           "objective_group": "Terraform state management",
-          "guide_sections": ["Domain 6", "Labs 4–5"]
+          "guide_sections": [
+            "Domain 6",
+            "Labs 4–5"
+          ]
         },
         {
           "objective_group": "Maintain infrastructure with Terraform",
-          "guide_sections": ["Domain 7", "Labs 4–5"]
+          "guide_sections": [
+            "Domain 7",
+            "Labs 4–5"
+          ]
         },
         {
           "objective_group": "HCP Terraform",
-          "guide_sections": ["Domain 8", "Lab 6"]
+          "guide_sections": [
+            "Domain 8",
+            "Lab 6"
+          ]
         }
       ],
       "checks": {
@@ -507,12 +531,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 33,
-        "reachable": 31,
-        "access_blocked": 2,
+        "unique_external_links": 37,
+        "reachable": 32,
+        "access_blocked": 5,
         "missing_or_error": 0
       },
-      "notes": "All eight unweighted objective domains and 38 published subobjectives are mapped to the guide. All 33 cited URLs are exact source-catalog entries. Two O'Reilly Terraform course pages returned HTTP 403 to the automated monitor; they are treated as access-blocked rather than missing. HCP Terraform entitlements, limits, UI labels, and service capabilities remain explicitly marked VERIFY CURRENT."
+      "notes": "Map 37 objectives; clarify provider identity, secret updates, S3 locking and HCP controls; add four worked decisions and 20 answers; execute two local labs. See docs/research/2026-09-28-terraform-associate-004-deep-review.md"
     },
     {
       "id": "gh-200-2026-08-31-source-validation",

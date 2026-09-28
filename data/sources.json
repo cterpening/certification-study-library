@@ -3,6 +3,48 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "terraform-s3-backend",
+      "title": "Terraform S3 backend",
+      "url": "https://developer.hashicorp.com/terraform/language/backend/s3",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-ASSOCIATE-004"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-ASSOCIATE-004 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-associate-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "terraform-ephemeral-blog",
+      "title": "Ephemeral values in Terraform",
+      "url": "https://www.hashicorp.com/en/blog/ephemeral-values-in-terraform",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-ASSOCIATE-004"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-ASSOCIATE-004 deep review: Web retrieval read; direct HTTP blocked. Historical article corroborated with current write-only docs. See docs/research/2026-09-28-terraform-associate-004-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "hcp-terraform-project-run-tasks-blog",
+      "title": "HCP Terraform project-level run tasks",
+      "url": "https://www.hashicorp.com/en/blog/hcp-terraform-adds-project-level-run-tasks",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "TERRAFORM-ASSOCIATE-004"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 TERRAFORM-ASSOCIATE-004 deep review: Web retrieval read; direct HTTP blocked. Public-beta announcement, not evidence of tenant enablement. See docs/research/2026-09-28-terraform-associate-004-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-scs-c03-revisions",
       "title": "SCS-C03 revisions",
       "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html",
@@ -21022,9 +21064,12 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-06",
-      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-      "notes": "Recurring first-party release ledger for volatile HCP Terraform workspace, run, credential, governance, and platform behavior."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "TERRAFORM-ASSOCIATE-004"
+      ],
+      "notes": "Recurring first-party release ledger for volatile HCP Terraform workspace, run, credential, governance, and platform behavior. September 28 TERRAFORM-ASSOCIATE-004 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-terraform-associate-004-deep-review.md No live infrastructure execution."
     },
     {
       "id": "terraform-tutorial-catalog",

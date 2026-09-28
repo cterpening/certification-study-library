@@ -407,6 +407,8 @@ The review corrected the objective-map labels to the published wording and expan
 
 ## TERRAFORM-ASSOCIATE-004 coverage record
 
+The September 28 [deep review](research/2026-09-28-terraform-associate-004-deep-review.md) maps 37 detailed objectives. Map 37 objectives; clarify provider identity, secret updates, S3 locking and HCP controls; add four worked decisions and 20 answers; execute two local labs. Current guide citations: 37 registered, 32 reachable, 5 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Infrastructure as Code (IaC) with Terraform | Domain 1 and Labs 1–2 |

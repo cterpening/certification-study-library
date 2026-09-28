@@ -4,6 +4,109 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-terraformassociate004-deep-review",
+      "title": "TERRAFORM-ASSOCIATE-004 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "TERRAFORM-ASSOCIATE-004"
+      ],
+      "results": [
+        {
+          "exam_code": "TERRAFORM-ASSOCIATE-004",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
+          "baseline_sha256": "1249275cf0ace105ed6c28950e63b5724c40b6dc2835bfcd471995fdd9f1da0d",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All 37 objectives read against certification root and content list; accepted snapshots unchanged, no new retirement notice found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Reviewed provider/state/conditions/write-only sections and S3 locking; ran the two built-in-provider labs."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read HCP September entries plus March 2025 ephemeral and June 2026 project run-task articles; beta/current-version boundaries retained."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Read public Pluralsight/KodeKloud metadata; correct lesson/topic distinction and qualify blocked paid catalogs."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Clarify lack of remote drift for terraform_data, root/module lab sequencing, placeholder resource, and release versus exam scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "terraformassociate004-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Secret changes require an update contract",
+              "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data/write-only",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "TERRAFORM-ASSOCIATE-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Omitted values cannot be diffed; providers define version-trigger behavior.",
+              "recommendation": "Explain version signal, persistence elsewhere and recovery.",
+              "disposition": "applied",
+              "source_id": "terraform-write-only-arguments",
+              "resolution": "Explain version signal, persistence elsewhere and recovery."
+            },
+            {
+              "id": "terraformassociate004-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Remote storage alone does not enable locking",
+              "url": "https://developer.hashicorp.com/terraform/language/backend/s3",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "TERRAFORM-ASSOCIATE-004"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "S3 lockfile is opt-in; DynamoDB locking is deprecated.",
+              "recommendation": "Add lockfile permissions and compatible-writer migration context.",
+              "disposition": "applied",
+              "source_id": "terraform-s3-backend",
+              "resolution": "Add lockfile permissions and compatible-writer migration context."
+            }
+          ],
+          "notes": "Map 37 objectives; clarify provider identity, secret updates, S3 locking and HCP controls; add four worked decisions and 20 answers; execute two local labs. Same-context AI review; human review pending. See docs/research/2026-09-28-terraform-associate-004-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 2,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-scsc03-deep-review",
       "title": "SCS-C03 complete guide and learning-content review",
       "rubric_version": 1,

@@ -5,6 +5,24 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "TERRAFORM-ASSOCIATE-004",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "9def5cd9071becc6e6614ba17359be3da5934ee19d6a9481305220db5533b1ed",
+      "objective_count": 37,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-28-terraform-associate-004-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-terraform-associate-004-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "Only Lab 1 and Lab 4 executed locally with the built-in provider; cloud/HCP and remaining labs unexecuted.",
+        "O'Reilly and Udemy pages access-blocked; prior metadata explicitly qualified.",
+        "Blog pages readable through web retrieval but blocked by the direct HTTP checker; release announcements do not prove tenant availability."
+      ]
+    },
+    {
       "exam_code": "SCS-C03",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "70c86c410be715bb2d3d9455f17bda64b7fc678a9478198e31b1a8768be6ca5c",

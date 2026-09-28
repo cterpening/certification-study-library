@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # HashiCorp Certified: Terraform Associate (004) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-associate-004-coverage-record). The [official HashiCorp certification page](https://developer.hashicorp.com/certifications/infrastructure-automation) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 37 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-associate-004-coverage-record). The [official HashiCorp certification page](https://developer.hashicorp.com/certifications/infrastructure-automation) is authoritative.
 
-**Current baseline:** Terraform Associate (004), testing Terraform 1.12; verified August 31, 2026<br>
-**Upcoming blueprint change:** No future update or retirement announcement was found on the official certification page as of August 31, 2026.<br>
+**Current baseline:** Terraform Associate (004), testing Terraform 1.12; verified September 28, 2026<br>
+**Upcoming blueprint change:** No future update or retirement announcement was found on the official certification page as of September 28, 2026.<br>
 **Official source:** [HashiCorp infrastructure automation certifications and Terraform Associate objectives](https://developer.hashicorp.com/certifications/infrastructure-automation)
 
 HashiCorp presents the credential as **Terraform Associate (004)** rather than a short exam code. This library uses `TERRAFORM-ASSOCIATE-004` as a stable catalog identifier.
@@ -48,6 +48,8 @@ HashiCorp publishes eight numbered domains and detailed subobjectives but does *
 | 6. Terraform state management | Not published | Local and remote state, locking, drift, moved and removed resources |
 | 7. Maintain infrastructure with Terraform | Not published | Import, state inspection, and verbose logging |
 | 8. HCP Terraform | Not published | Workspaces, projects, runs, collaboration, governance, and CLI integration |
+
+The [September 28 deep review](../docs/research/2026-09-28-terraform-associate-004-deep-review.md) maps all 37 subobjectives. The accepted objective/status snapshots are unchanged. Product documentation may default to a newer CLI release; select the **1.12** version when following exam-baseline examples. Newer product features do not automatically expand the blueprint.
 
 ## What changed in 004
 
@@ -140,6 +142,8 @@ data "aws_caller_identity" "secondary" {
   provider = aws.secondary
 }
 ```
+
+Two AWS aliases configure one provider plugin, rather than two different providers. Combining `hashicorp/aws` and `hashicorp/random` requires separate source/version declarations; each then manages its own resource types. The built-in `terraform_data` resource needs no downloaded provider.
 
 The example illustrates syntax; it does not assert that AWS knowledge is required for the certification. Review [provider requirements](https://developer.hashicorp.com/terraform/language/providers/requirements) for source addresses, local names, and constraints.
 
@@ -250,12 +254,16 @@ locals {
   }
 }
 
-resource "example_service" "this" {
+resource "terraform_data" "service_spec" {
   for_each = local.enabled_services
-  name     = each.key
-  port     = each.value.port
+  input = {
+    name = each.key
+    port = each.value.port
+  }
 }
 ```
+
+This built-in resource records a specification locally; it does not start a listening service. Supply a `services` map to plan it. Compare stable keys such as `api` and `worker` before and after inserting another entry.
 
 ### Lifecycle and custom conditions
 
@@ -288,6 +296,8 @@ variable "environment" {
 Marking a variable or output `sensitive` redacts it from normal CLI/UI display. It does **not** by itself prevent the value from being stored in state or a saved plan. Protect backend access, encryption, logs, plan artifacts, and state backups.
 
 Ephemeral values are available during an operation without being persisted to state or plan artifacts in the normal way. Write-only resource arguments let a supporting provider receive a value and then discard it rather than returning it to Terraform for storage. They require compatible Terraform/provider/resource support; a conventional argument does not become write-only merely because its value was marked sensitive. Review [write-only argument behavior and requirements](https://developer.hashicorp.com/terraform/language/manage-sensitive-data/write-only).
+
+Write-only arguments require Terraform 1.11 or later and explicit resource support. Terraform cannot compare an omitted secret between runs; providers commonly use a persisted nonsensitive version argument to trigger an update. Changing only the secret source can leave the destination unchanged. Check that resource's version/update contract, and coordinate secret storage with the consumer. Passing a conventional variable to a write-only argument does not remove other copies of that variable from configuration, artifacts or logs.
 
 Vault can issue or broker secrets, but sending a secret into a normal resource argument can still cause the provider to return and persist it in state. Trace the entire data path.
 
@@ -335,6 +345,8 @@ Backend configuration tells Terraform where state lives. Provider configuration 
 ### Locking and concurrency
 
 When the backend supports it, Terraform automatically locks state for operations that can write it. Not every backend supports locking. A failed lock protects against concurrent writers; disabling locking or force-unlocking without confirming ownership can corrupt coordination. HashiCorp warns that [`force-unlock` should be used only for your own abandoned lock](https://developer.hashicorp.com/terraform/language/state/locking).
+
+**Related item — VERIFY CURRENT:** For an [S3 backend](https://developer.hashicorp.com/terraform/language/backend/s3), state locking is opt-in with `use_lockfile = true`; a remote bucket alone does not enable it. Current documentation deprecates DynamoDB locking. The lock object needs Get/Put/Delete permissions, separate from permissions on the state object. Preserve versioned state for recovery and check every writer's CLI compatibility before migrating lock mechanisms. AWS configuration is supporting context, not a provider-specific exam requirement.
 
 ### Drift, refresh-only, and address changes
 
@@ -434,7 +446,22 @@ Policy sets can apply to an organization, selected projects/workspaces, or tags 
 
 > **Related item:** Remote execution moves trust rather than removing it. The execution agent or managed runner needs controlled network reachability, provider credentials, state access, policy inputs, and protected logs.
 
+## Worked decisions and useful reading
+
+1. **Predict an address change:** A configuration manages `terraform_data.study`. Renaming it without a migration produces separate delete/create actions. Adding the Lab 4 `moved` block preserves its ID and changes the state address. This result was verified locally on Terraform 1.12.2; a move does not suppress unrelated attribute changes.
+2. **Separate validation from operational success:** Lab 1 accepts `dev`, rejects an unknown environment through variable validation, and rejects `prod` through a resource precondition. A successful plan still does not test a cloud credential. These three local outcomes were executed.
+3. **Plan a secret update:** Draw secret store → ephemeral read → supported write-only argument → destination. Mark any conventional variable, output or data source that could retain a copy. Identify the provider's update/version signal and verify the application uses the new credential before revoking the old one. This is a design exercise; no real secret was used.
+4. **Review inherited governance:** Move a hypothetical workspace from a test project to production. Inspect effective permissions, variables, policy scope, external run tasks and exceptions before approving its next run. An organizational grouping alone does not prove the controls are effective.
+
+The March 10, 2025 [ephemeral-values article by Bruno Schaatsbergen and Drew Mullen](https://www.hashicorp.com/en/blog/ephemeral-values-in-terraform) is useful for drawing the secret flow and explaining provider version triggers. Cross-check its examples with current write-only documentation; provider support and secret recovery still require verification. Allow about 20–35 minutes for reading and the drawing exercise. Its cloud example was not executed.
+
+**Related item — VERIFY CURRENT:** Mitchell Ross's June 2, 2026 [project-level run-task announcement](https://www.hashicorp.com/en/blog/hcp-terraform-adds-project-level-run-tasks) explains inherited external checks and exceptions. The announcement identifies public beta; confirm current entitlement, availability and enforcement before relying on it. Run tasks integrate external services; they are distinct from Terraform language conditions. Allow about 15–25 minutes for reading and the governance worksheet. No HCP run task was configured.
+
+The [HCP changelog](https://developer.hashicorp.com/terraform/cloud-docs/changelog) records September 5 tag-based policy targeting and September 10 post-plan policy evaluation for Stacks. Use these as current governance context; do not add Stacks or newer CLI constructs to the exam scope merely because they appear in a release note.
+
 ## Hands-on labs
+
+**Execution evidence, September 28, 2026:** Lab 1 and Lab 4 were run in an isolated directory with Terraform 1.12.2 and the built-in provider: 22 commands returned their expected statuses, eight behavior assertions passed, and cleanup left no managed resources. Other labs remain proposed; no HCP service, cloud provider API or paid sandbox was used.
 
 Use disposable local files and accounts. Never run a lab against an employer, customer, shared subscription, or production environment without authorization. Review every plan and finish with cleanup.
 
@@ -488,7 +515,7 @@ Move the `terraform_data` resource into `modules/study-record`. Give the module 
 
 ### Lab 4: Refactor an address without replacing the object
 
-Rename a local `terraform_data.study` resource to `terraform_data.record`. First run a plan without a `moved` block and observe the proposed destroy/create behavior; do not apply it. Add:
+Start from Lab 1 in its own directory, before moving the resource into the Lab 3 module; the addresses below are root-module addresses. Rename a local `terraform_data.study` resource to `terraform_data.record`. First run a plan without a `moved` block and observe the proposed destroy/create behavior; do not apply it. Add:
 
 ```hcl
 moved {
@@ -501,7 +528,7 @@ Plan again and explain how configuration records the address migration. Inspect 
 
 ### Lab 5: Distinguish drift, forgetting, and deletion
 
-Using the disposable resources from earlier labs, write a prediction table for these actions before executing any:
+A `terraform_data` object has no independently mutable cloud object, so it cannot demonstrate real remote drift. Use an authorized disposable provider resource for that row, or keep the row as a prediction only. Using the disposable resources from earlier labs, write a prediction table for these actions before executing any:
 
 1. change configuration and run a normal plan;
 2. change the remote/local artifact outside Terraform and run a refresh-only plan;
@@ -528,26 +555,26 @@ If you use the live service, **VERIFY CURRENT** plan availability and destroy al
 
 ## Knowledge checks
 
-1. Why can Terraform support one workflow across multiple clouds without making resource definitions portable between them?
-2. What is the difference between `required_providers` and a `provider` block?
-3. Which component does `.terraform.lock.hcl` lock, and which common dependencies does it not lock?
-4. Why can `terraform validate` succeed while `terraform plan` fails?
-5. What changes when `terraform apply` receives a saved plan file rather than generating a new plan?
-6. Why can an apply failure leave infrastructure partially changed?
-7. When is a data source preferable to a resource?
-8. What graph edge is created by `subnet_id = aws_subnet.app.id`, and when might `depends_on` still be needed?
-9. Why can `for_each` preserve instance identity better than `count` for a named collection?
-10. Contrast variable validation, preconditions, postconditions, and check blocks.
-11. Why does `sensitive = true` not guarantee that a secret is absent from state?
-12. What additional support is required before a value can use a write-only resource argument?
-13. How do a module's source and versioning approach differ between a registry and a Git repository?
-14. Why is a remote backend not automatically safe for concurrent writers?
-15. A server changed outside Terraform. How do normal and refresh-only plans express different intentions?
-16. What is the difference between a `moved` block and a `removed` block?
-17. Why must import be followed by a plan and configuration review?
-18. How do an HCP Terraform workspace and project differ, and how is an HCP workspace different from a CLI workspace?
-19. What security problem do dynamic provider credentials reduce, and what trust configuration do they introduce?
-20. Why should verbose Terraform logs be handled like sensitive troubleshooting evidence?
+1. Why can Terraform support one workflow across multiple clouds without making resource definitions portable between them? **Answer:** Providers implement platform-specific APIs and schemas; the workflow is shared, while resource definitions and operational guarantees differ.
+2. What is the difference between `required_providers` and a `provider` block? **Answer:** The requirement declares the plugin source/version contract; the configuration supplies region, endpoint, alias and authentication settings.
+3. Which component does `.terraform.lock.hcl` lock, and which common dependencies does it not lock? **Answer:** It records provider selections and checksums, not the CLI binary or remote module versions.
+4. Why can `terraform validate` succeed while `terraform plan` fails? **Answer:** Validation checks internal consistency; planning also needs input values, provider behavior and often reachable authorized APIs.
+5. What changes when `terraform apply` receives a saved plan file rather than generating a new plan? **Answer:** Terraform applies the recorded proposal without generating a new interactive plan; protect the artifact and verify it is still applicable to the selected state.
+6. Why can an apply failure leave infrastructure partially changed? **Answer:** Independent API operations are not one transaction. Successful actions may remain after another fails; inspect state and replan.
+7. When is a data source preferable to a resource? **Answer:** When you need to read an existing object without owning its lifecycle.
+8. What graph edge is created by `subnet_id = aws_subnet.app.id`, and when might `depends_on` still be needed? **Answer:** The reference creates an implicit dependency on the subnet. A hidden behavioral dependency without a data reference can require depends_on.
+9. Why can `for_each` preserve instance identity better than `count` for a named collection? **Answer:** Named keys can remain stable when another item is inserted; count indices may shift. Changing a for_each key still changes identity.
+10. Contrast variable validation, preconditions, postconditions, and check blocks. **Answer:** Input validation rejects invalid values; preconditions enforce assumptions; postconditions protect dependent work; check failures normally warn. Unknown values can defer evaluation.
+11. Why does `sensitive = true` not guarantee that a secret is absent from state? **Answer:** It controls display redaction, not persistence or encryption; protect state, plans and all other copies.
+12. What additional support is required before a value can use a write-only resource argument? **Answer:** Terraform 1.11 or later and an explicitly supported provider resource argument, plus its documented update/version behavior.
+13. How do a module's source and versioning approach differ between a registry and a Git repository? **Answer:** Registry modules accept a version constraint; Git modules select a source ref. Neither is locked by the provider lock file.
+14. Why is a remote backend not automatically safe for concurrent writers? **Answer:** Backend locking support and configuration vary; all writers need compatible coordination and permissions.
+15. A server changed outside Terraform. How do normal and refresh-only plans express different intentions? **Answer:** A normal plan proposes reconciling objects to configuration. Refresh-only proposes updating state/outputs to observations; it does not rewrite configuration.
+16. What is the difference between a `moved` block and a `removed` block? **Answer:** Moved associates a previous address with a new one. Removed ends management; use destroy=false to forget without deleting the object.
+17. Why must import be followed by a plan and configuration review? **Answer:** Binding an object does not guarantee matching configuration. The next plan may expose unintended updates or replacement.
+18. How do an HCP Terraform workspace and project differ, and how is an HCP workspace different from a CLI workspace? **Answer:** An HCP workspace has managed state, settings and run history; a project groups workspaces and controls. CLI workspaces primarily select state instances for a configuration.
+19. What security problem do dynamic provider credentials reduce, and what trust configuration do they introduce? **Answer:** They reduce long-lived key exposure but require a correctly scoped federation issuer/audience/subject and role trust relationship.
+20. Why should verbose Terraform logs be handled like sensitive troubleshooting evidence? **Answer:** Logs can contain credentials, payloads and infrastructure details; restrict collection, sharing, retention and access.
 
 ## High-value distinctions
 
@@ -609,13 +636,13 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004) | Free; some HCP exercises require a free account and cloud-provider tutorials may require a sandbox | About 18–30 hours (library estimate from the listed reading and tutorials; HashiCorp does not publish one combined runtime) | Authoritative ordered preparation across all eight domains; choose one provider for basic tutorials because provider-specific knowledge is not required |
-| [HashiCorp 004 content list](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004) | Free | About 2–4 hours for one active objective/documentation pass | Best scope checklist and targeted remediation map; the page's displayed five-minute read time does not include following its documentation and tutorial links |
+| [HashiCorp 004 content list](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004) | Free | About 2–4 hours for one active objective/documentation pass | Best scope checklist and targeted remediation map; the page's displayed six-minute read time does not include following its documentation and tutorial links |
 | [HashiCorp 004 sample questions](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-questions-004) | Free | About 30–60 minutes including documentation-backed review | Official format orientation for true/false, multiple-choice, and multiple-answer items; too small to be a complete readiness measure |
 | [HashiCorp — Introduction to Terraform](https://www.youtube.com/watch?v=ZFLWA1kQ3ls) | Free | About 22 minutes | First-party visual orientation to IaC, Terraform, providers, registry, and HCP Terraform; not an objective-complete certification course |
 | [Pluralsight — HashiCorp Terraform Associate (004)](https://www.pluralsight.com/paths/hashicorp-terraform-associate-004) | Subscription; practice-exam access depends on plan/library | 7 hours of video plus about 2–4 hours for the advertised practice exam and review | Current six-course Ned Bellavance path published March–June 2026 and explicitly aligned to Terraform 1.12 |
-| [O'Reilly/Pearson — HashiCorp Certified Terraform Associate (004)](https://www.oreilly.com/videos/hashicorp-certified-terraform/9780135909560/) | Subscription | 22 hours 37 minutes plus lab and assessment review | Detailed Dave Prowse path with labs and quizzes; longer than necessary for an experienced practitioner, so select weak domains rather than automatically watching everything |
-| [O'Reilly/Packt — Terraform Associate (004) Exam Prep Complete Hands-On Guide](https://www.oreilly.com/videos/terraform-associate-004/9781807781156/) | Subscription | 10 hours 8 minutes plus hands-on repetition | More compact 2026 video alternative; compare demonstrations and HCP terminology with the official content list |
-| [KodeKloud — HashiCorp Certified Terraform Associate 004](https://kodekloud.com/courses/hashicorp-certified-terraform-associate-004) | Subscription; some preview/free enrollment controls may vary | 16 hours 40 minutes of video plus labs, quizzes, and practice review | Lab-first Bryan Krausen course with 126 lessons and an advertised practice test; useful when a managed sandbox matters |
-| [Udemy — Terraform Associate 004 by Bryan Krausen](https://www.udemy.com/course/hashicorp-certified-terraform-associate-004/) | Purchase or subscription; lab-cloud access has separate plan requirements | About 15–25 hours (library estimate from the eight-domain curriculum, labs, quizzes, and two practice exams; public page does not expose a reliable runtime) | Updated August 2026 and explicitly mapped to 004; confirm what cloud-lab access is included in the selected purchase or subscription |
+| [O'Reilly/Pearson — HashiCorp Certified Terraform Associate (004)](https://www.oreilly.com/videos/hashicorp-certified-terraform/9780135909560/) | Subscription | About 25–40 hours with labs/review; planning estimate based on the previously recorded 22h37m runtime | Public page was access-blocked September 28; runtime/curriculum were not reverified. Previously cataloged Dave Prowse path with labs and quizzes; longer than necessary for an experienced practitioner, so select weak domains rather than automatically watching everything |
+| [O'Reilly/Packt — Terraform Associate (004) Exam Prep Complete Hands-On Guide](https://www.oreilly.com/videos/terraform-associate-004/9781807781156/) | Subscription | About 15–25 hours with practice; planning estimate based on the previously recorded 10h8m runtime | Public page was access-blocked September 28; runtime and revision were not reverified. Previously cataloged compact video alternative; compare demonstrations and HCP terminology with the official content list |
+| [KodeKloud — HashiCorp Certified Terraform Associate 004](https://kodekloud.com/courses/hashicorp-certified-terraform-associate-004) | Subscription; some preview/free enrollment controls may vary | About 20–30 hours including practice (library estimate from the public topic list; combined runtime not reverified) | Lab-first Bryan Krausen course with 15 lessons, 126 topics and an advertised practice test; useful when a managed sandbox matters |
+| [Udemy — Terraform Associate 004 by Bryan Krausen](https://www.udemy.com/course/hashicorp-certified-terraform-associate-004/) | Purchase or subscription; lab-cloud access has separate plan requirements | About 15–25 hours (library estimate from the eight-domain curriculum, labs, quizzes, and two practice exams; public page does not expose a reliable runtime) | Public page was access-blocked September 28; prior August revision/alignment claims were not reverified; confirm what cloud-lab access is included in the selected purchase or subscription |
 
 Use assessments to locate gaps, then verify explanations against HashiCorp documentation. The library did not find a separately verifiable current MeasureUp or exact Whizlabs Terraform Associate 004 product page during this review, so neither is listed as an assessment merely because those providers cover other certifications.
