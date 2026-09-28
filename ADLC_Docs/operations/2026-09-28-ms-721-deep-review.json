@@ -1,0 +1,3258 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MS-721",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "6607ea0d3892ea9e797df1029dec9cda5173e74df49081b6066d1c7a3204e8ea",
+  "guide_after_sha256": "3af18730e82dab558ceae4426ad391f7fc7876dfed000ae06e41b2e3398c0c88",
+  "prior_records": {
+    "exam": {
+      "code": "MS-721",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Collaboration Communications Systems Engineer",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+      "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical Microsoft Teams and Microsoft 365 administration plus networking, telecommunications, SIP/PSTN, audiovisual and meeting-room fundamentals; hands-on experience with Teams Phone, Direct Routing, emergency calling, meetings/events, Teams Rooms and devices, PowerShell, Call Analytics and CQD is strongly recommended."
+    },
+    "review": {
+      "id": "ms-721-2026-09-01-source-validation",
+      "exam_code": "MS-721",
+      "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-721-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and design collaboration communications systems",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams meetings, webinars, and town halls",
+          "guide_sections": [
+            "Section 2",
+            "Town-hall scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Implement and configure Teams Phone",
+          "guide_sections": [
+            "Section 3",
+            "Phone-migration scenario",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams Rooms and devices",
+          "guide_sections": [
+            "Section 4",
+            "Rooms sign-in scenario",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 18,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 28, 2026 subobjective is mapped to a meeting/event, identity, entitlement, number, policy, PSTN/carrier/SBC, network/media, device/room, evidence, failure, or recovery decision. Three scenarios, eight labs and 36 original checks cover meeting types/policies/templates/Premium/Copilot, Audio Conferencing, webinars/town halls/eCDN, Calling Plans/Operator Connect/Teams Phone Mobile/Direct Routing/Shared Calling/SMS, number lifecycle, SBC/SBA/LBR/LMO/compliance recording/contact centers/Queues app, network/QoS/CQD, voice-user policies, auto attendants/queues, emergency calling, Direct Routing implementation/troubleshooting, Rooms resource accounts/CA/enrollment, Windows/Android/SIP devices, BYOD/bookable desks and device operations. All 19 URLs are cataloged: 18 reachable and the O'Reilly page automation-blocked; none missing or broken. The guide records 14 hours 43 minutes of Learn paths, five-day course, free Practice Assessment and April 2026 freshness gaps in older commercial resources."
+    },
+    "sources": [
+      {
+        "id": "ms-721-blueprint",
+        "title": "Study guide for Exam MS-721: Collaboration Communications Systems Engineer",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Authoritative skills measured as of April 28, 2026; no upcoming update announced."
+      },
+      {
+        "id": "ms-721-credential",
+        "title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Official active credential page; last updated April 28, 2026, 100-minute exam and annual renewal listed."
+      },
+      {
+        "id": "ms-721-practice",
+        "title": "MS-721 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment?assessment-type=practice&assessmentId=78&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Free official readiness assessment linked from the credential page."
+      },
+      {
+        "id": "ms-721-phone-setup",
+        "title": "Set up Teams Phone in your organization",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Current Teams Phone license, PSTN connectivity, number and user-configuration overview."
+      },
+      {
+        "id": "ms-721-direct-routing",
+        "title": "Plan Direct Routing",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-plan",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Current SBC, certificate, DNS, media and Direct Routing topology guidance."
+      },
+      {
+        "id": "ms-721-resource-accounts",
+        "title": "Manage resource accounts for voice applications",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-resource-accounts",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Current auto-attendant/call-queue resource-account identity, license and number guidance."
+      },
+      {
+        "id": "ms-721-room-account",
+        "title": "Create and configure resource accounts for Teams Rooms and panels",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Current shared-device account, room mailbox, license and sign-in guidance."
+      },
+      {
+        "id": "ms-721-room-ca",
+        "title": "Conditional Access and compliance for Microsoft Teams Rooms and panels",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/conditional-access-and-compliance-for-devices",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Current supported Rooms Conditional Access, enrollment and compliance design."
+      },
+      {
+        "id": "ms-721-course",
+        "title": "MS-721T00 Plan, configure, and manage collaboration communications systems with Microsoft Teams",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ms-721t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Five-day course linking two current learning paths."
+      },
+      {
+        "id": "ms-721-path-plan",
+        "title": "MS-721 Plan and design Teams collaboration communications systems",
+        "url": "https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Seven-module path; listed duration 6 hours 38 minutes."
+      },
+      {
+        "id": "ms-721-path-manage",
+        "title": "MS-721 Manage Teams collaboration communications systems",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Eight-module path; listed duration 8 hours 5 minutes."
+      },
+      {
+        "id": "ms-721-pluralsight",
+        "title": "Microsoft Collaboration Communications Systems Engineer MS-721 path",
+        "url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Five courses, 8 hours and practice exam listed; courses dated September 2023 through March 2024, so supplement April 2026."
+      },
+      {
+        "id": "ms-721-oreilly",
+        "title": "Microsoft 365 Certified Collaboration Communications Systems Engineer Associate Certification Companion",
+        "url": "https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/",
+        "publisher": "Apress / O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "Fabrizio Volpe, October 2024, 333 pages and 6 hours 8 minutes listed; supplement April 2026."
+      },
+      {
+        "id": "ms-721-measureup",
+        "title": "MS-721 Collaboration Communications Systems Engineer practice test",
+        "url": "https://www.measureup.com/ms-721-exam.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-721"
+        ],
+        "notes": "167 questions listed; released July 2023 and last updated January 2025, so reconcile April 2026 changes."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "88410be54d9ac9174a2a689a0dfa3703c88c74449887609631ffc1ab0da27e43",
+      "guide_sections": "1 / Meeting/event architecture",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f8d3cc7c8f4ae8259aab1359ee0756eba8ddf6610b8f9975056f2fd8b6dd1ced",
+      "guide_sections": "1 / Meeting policy stack",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "391e3f27d9e22d103aba32f6d6e6e9890465142e05e99f6b377afaee60e1753d",
+      "guide_sections": "1 / Audio Conferencing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "6cfb842ed3e90ee73626837457b2704d8aaf12a95b08685438b252566b621709",
+      "guide_sections": "1 / Premium/Copilot entitlements and matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "0da4feb750cca55c503271d844186058276cdfc41720a301159be012e21394c8",
+      "guide_sections": "1 / Meeting-type comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "7f600fc71f741fd776606ee7ac056b26e80640ab69bf6ba410773311112bb1c0",
+      "guide_sections": "2 / Assignment precedence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "0b92d331c64acf0fc2d9b193d3d855c250696ac7d7c6f1c82270c87d4a00fff3",
+      "guide_sections": "2 / Packages and effective policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "27afd7ac0d26f30fca970990b441d95b59faee83291c26c3f8ccfc19600374c8",
+      "guide_sections": "1 / User/resource/shared-device licenses",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "fe89f5a7e91808c261b82a8b7f71899c4a3ac1e269cb33ac44217664bd4f6c6e",
+      "guide_sections": "1 / PSTN models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "8b2fb3b9ba8d97f7e6e3aa753c462722d1a8211d9cd4e97112065a122ca199e7",
+      "guide_sections": "1 / Teams Phone Mobile",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "bd2bfd7003cf9db547c48eb6a6cfd5b2ffd0914107777cabe450a844c076a3c0",
+      "guide_sections": "1 / Operator Connect",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "91cc2fe59ffe1dfc7dbdec301871d4b923bb1aacca28f307f8187c5e083c8921",
+      "guide_sections": "1 / SMS prerequisites and segment example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "435bcd1b4486b018be43b8f4f1c4ee0f620e95abb15831a814bd1c55ece079cb",
+      "guide_sections": "1 / Calling Plans and consumption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "ca1bdfef245ca5487aa695e85fca00a31f2f184b779f30d5415572173cbddb9d",
+      "guide_sections": "1 / Shared Calling policy separation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "3b672a5836bf1252b8c8b13adbf7706a6b45ef14c1efdc6fe595c58efbcd0490",
+      "guide_sections": "1 / Number-purpose inventory",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "769a7923f9b202df60750490d2b268f0107ece17fe47adc84d8706d91348a85d",
+      "guide_sections": "1 / Acquisition/porting cutover",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "23065818b4f17d67a34f1dabac6130d7d6f3262a382f6a0de9517085c76cec9f",
+      "guide_sections": "3 / Auto attendant/queue flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "b33271cc54cd0152ea2676e820c9ac6030213c8df9386af05ea9304e978c1c69",
+      "guide_sections": "3 / Dynamic emergency calling/LIS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 12,
+      "objective_sha256": "d26c9092261c42b4c14debbf3b84f02f1299621551b93fe1a339a251d56178d0",
+      "guide_sections": "1 / Device selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 13,
+      "objective_sha256": "7272671188dd8694099ad27401a9255f7a49e4fa09b163de8fc118022c693f9d",
+      "guide_sections": "1 / Analog/SIP choices; 4 / SIP limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 14,
+      "objective_sha256": "55bbce80bf411f35d293cd3bf123cd670e9cadf43725458b3c2a07960a59383f",
+      "guide_sections": "1 / SBA continuity/token/emergency limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 15,
+      "objective_sha256": "f8afa50f20b81fb88529dc789d9a5194ab1eb248568a79c312d45d5282658f6c",
+      "guide_sections": "1 / Direct Routing architecture",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 16,
+      "objective_sha256": "b5a7ce906fd2b3f0edd304fa9dd0f11a2eb1dd553a4cc01fc201c258ea2133d3",
+      "guide_sections": "1 / Certified SBC boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 17,
+      "objective_sha256": "c37d257d7604231be3e26bd5d7b9737e140deeb6a3b89950a3693330c9cdcedd",
+      "guide_sections": "1 / Compliance recording solution",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 18,
+      "objective_sha256": "3b22f5fd5bb4a7e9617873d2285209b0ec1d2e123b0e816b7c47a33afcaeb239",
+      "guide_sections": "1 / Certified contact center",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 19,
+      "objective_sha256": "f86f68ec1ffb2bbb88bae780f962762a10d09309cf41092b914fc0dc450fb554",
+      "guide_sections": "1 / Queues app licenses/delegation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e691cbd47248a0bd4ba0b35db986929cf7c89a8d4af5687d61cca0891daa52a5",
+      "guide_sections": "1 / Room design and BYOD",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "7cdb497652d2c66f4ad048eeb973f8bddf276b13576d7945040e819c8e80c210",
+      "guide_sections": "1 / Room requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "522fba2d5550405b182c0ac0ef16a4557cd2ab5850a819fed82ab3c7489afc6a",
+      "guide_sections": "1 / Basic/Pro cap and entitlement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "a8aea85fe589a62a7b4c19055e58e364ea2a984c50df1145875bc98de0bd0a26",
+      "guide_sections": "1 / Windows/Android tradeoffs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "cf43421fafc77c3fc4ef26aa114b4413640abab00759ea69f0ed98b3eca527b9",
+      "guide_sections": "1 / Certified device roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "8d8de15e61664b58a2959120230b9031fbd8ddb54f58e7d564f0e0b85d1bf5a4",
+      "guide_sections": "1 / Room components/acoustics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "d459263720a457d2fccd5db94bcede32bc19199cfbe781ab1be00322f9cd86f0",
+      "guide_sections": "1 / DGJ/CVI/SIP direction and requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "d90a9779d5ee21bdb71ba3a77767c4ff2db61acf18d286d097f2e920f0aaa0d7",
+      "guide_sections": "4 / Room account/calendar",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "8a7d0d9eaf251d251ff9554a24dd5f69ba19c8374607da7b3916cda7bbee2faa",
+      "guide_sections": "4 / Intune enrollment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "39e29c15c17840310fe80117a35fcb24544b2996d063e329b53bd1f1961db815",
+      "guide_sections": "4 / AOSP profile/compliance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "ce75b356b8ba8ef9166ea02dedf68af9e9dae343839d3a9a6438ca76ee394d78",
+      "guide_sections": "4 / Optional shared-device features",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e6c31e59921a63add470ecb01ca42ab46c2c37dc72e489c18dc56959b0b2fc24",
+      "guide_sections": "1 / Network Assessment Tool",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "fa5f229bb14fe22a7b67d43601a16e30feb1be712045d363a406365a47849b3c",
+      "guide_sections": "1 / eCDN worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "3e9ac4e70b76d985b8182d4bdeb4b9071dd5b91a66375d56631a6c3a684ebc4e",
+      "guide_sections": "1 / Certified-device network readiness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "7988e2a748de33a349028e8c3af25e2818435d1de41221dbc298165ed6832bc3",
+      "guide_sections": "1 / Network planner",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "d473d325c6e653bc4432769a9acd4e6a0e582a8bfe26698376575aa7b808bbf6",
+      "guide_sections": "1 / Egress/media architecture",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "7c809cfefe9ca00b614ff3fe0f22331feaec29f8c9e210faca2a0baecf2a0ae1",
+      "guide_sections": "1 / QoS classes and client differences",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "88cfe28586ea82fc9171b35dcb54001c163bdd8dafbf5db7a710888dcef56408",
+      "guide_sections": "1 / QoS end-to-end validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "1addf992f5a3d9d44c527b55d1b3691c2f42464b016c270d7bd1448372d16f83",
+      "guide_sections": "1 / MBR average versus circuit capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "bd9b3f7fe09b318e74a55dbe64b0ed84d14ab488bc617f68b194e225dae5708f",
+      "guide_sections": "1 / Site roaming policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "7907695917139a87366b314310b593ed6e420019c0d538d47b6474098f92a714",
+      "guide_sections": "1 / Network topology and distinct LIS/CQD datasets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "fb1b07ab350540d3fefa84af46c1daca3a1f17aae8467b81e3fa318280142c67",
+      "guide_sections": "1 / CQD tenant data",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "d9a27864edbfe3f23d5e0ab70c49dbb9923dd242f1645aa355fbcccbd0281f2a",
+      "guide_sections": "1 / Call Analytics labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "27c6e4c95fbfc865ec1df74f51076d27dcee7b350ad66b485f674e6ac1916a42",
+      "guide_sections": "2 / Meeting policy configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "b519c81d4b2791b889b3a1d77448ac273771346ad7d77be4b0a3c7b53c9eddf3",
+      "guide_sections": "2 / Tenant meeting settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "0da33646f62f501acc1cc6e25362f193b97430905f95e4bd4eafe4102121abe1",
+      "guide_sections": "1 / Avatars and prerequisite context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "3417239bc3612f70f6eb9b8fe1cee6e8f990de968dda64dc38387de3f3bd7bfe",
+      "guide_sections": "2 / Feature/participant matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "6ba7a4cdb8652ff5d825c2b9625d43324b4a4c150ef5f79d259d0886bbec6588",
+      "guide_sections": "2 / Templates/template policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "2303dd5078c9f12afed951b2287c14bfa68fc87be4b4b6bcf2a954382475ef56",
+      "guide_sections": "2 / Controlled content",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "2a3ecfcb6092eb324e48484372bf3ee8a614aaf4023bf5504ec9754888c0a252",
+      "guide_sections": "1 / CVI; 2 / Meeting-policy controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "93b23e4ff42673dcfc8a947498d93f5715dfc18a7b3b4249d77a76a1b3a64139",
+      "guide_sections": "1 / Copilot transcript policy; 2 / Artifact permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "a84a9da201766d22a5f636230d9abb81b803f4baf2acef9bcbb3d2c606e45dd9",
+      "guide_sections": "2 / Virtual appointments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "ebbcdf94315821c294ec7e023c042053e3e7c2cbb7e4bcfdc28cfd0298b429a3",
+      "guide_sections": "1 / Premium entitlement; 2 / Pilot evaluation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "08f71e3146aa17f6b0403b5821c9389dfed8ff23a5314f2323315adb4b2f19e5",
+      "guide_sections": "2 / Organizer conferencing entitlement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "e59a0f1c6f681d78ad1f01b74b2cbeebf841c45ef5db6747bc3990d6e7e1180b",
+      "guide_sections": "2 / Default bridge",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "4a890a9103e8115445169d0ad219c6a136b69352bf6c08a07781c61df76e202c",
+      "guide_sections": "2 / Bridge number inventory",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "508bb7d6cb23e41722db4b8f726434266d729dc125d821eec85473a8190ef75d",
+      "guide_sections": "2 / Toll-free inventory",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "2998f38a05933fe36df8add52075c2efe6b4df243f6c264edc8cfe5214b6d782",
+      "guide_sections": "2 / User-specific numbers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "b00be2cd203627ce7b12d6b073a99d03c5da39449e462e6f1892dfd21c6c3818",
+      "guide_sections": "2 / Toll-free costs/restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "afd7bd964c7919e459cd5824ac467b3a6a456a21b90d12faa906b4902a77160c",
+      "guide_sections": "2 / Invitation and prior-meeting validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "0fea414d4fe3d21770f968d796efe9deb32e0a5ab5ab16c1f1c170df5dd03035",
+      "guide_sections": "2 / Webinar participant roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "c3784270b0a269154aac1b7e35f1d69554312aa2fcbc105df3c82f1c0567e500",
+      "guide_sections": "2 / Scheduling access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "cca47a21f8cea3eb7910d057d892344df6a2d6c2c1f7acc8a400f261c3458986",
+      "guide_sections": "2 / Webinar policy and unified Events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "13cdf9f2b1d7e61a7579d402580feabb061deec4a4148a32a61a78b852b8575d",
+      "guide_sections": "2 / Public versus in-org registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "36a576d41eadec71140af66dae0410a657494058c6a7932dc9f76a9c62e273c5",
+      "guide_sections": "2 / Advanced feature entitlement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "880508c0224474419cb274a0724ec5cd36afc77a45acc75467b9ea3b85853718",
+      "guide_sections": "2 / Interaction and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "d3cdaf722952b7d1bf46b10dad58a5ce3602dfa77ba30af6f312a985800759f6",
+      "guide_sections": "2 / Town hall settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "1cc03f62d7ce2192aedbecdbd3082721db52f33b87401f51a06025c2f57098e8",
+      "guide_sections": "1 / eCDN example; 2 / Rehearsal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "96689cbcad233cc60ed05a7c64d0dbe8f9e3a5f5e82deab8f8aabf5252d0c614",
+      "guide_sections": "2 / Advanced event features",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "cf540f7859ccb3dc6ee49f5e89b22fd8ef45ad72135bfd18032be6df2ab889a4",
+      "guide_sections": "2 / Distribution/recording/reporting and current events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "49ebbd4cd07826e3591b0b7ef0f747981f9c270a99560e38594447a43c2a33c0",
+      "guide_sections": "3 / Dial plan normalization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "6aa0920cae2b487e0a6f13dd67ffbffb25fca8a0479c906705aeded503fe14d0",
+      "guide_sections": "3 / Calling policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "083833815bdf727b1a8311165c8061e536dec6eed2a88e8fc5cbba855dc38bdb",
+      "guide_sections": "3 / Call park",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "fc038eec086c8b8a92d8820ff880df7c0a87a4c5b848f600cff78844a0b6cba4",
+      "guide_sections": "3 / Caller ID",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "ab27598a7d02a0b1412fc2b65407510e2faf7d7b199151bd01a48c3977526026",
+      "guide_sections": "3 / IP phone policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "b1dd7caa069be2f3ebb1874865c833e6086dc0e1fc0b381ecc3914d1e07416fd",
+      "guide_sections": "3 / Mobile/phone controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "c9d906f64185ce0abf124ddb793e49a2afb9b8888ffc49f870d531063be331fd",
+      "guide_sections": "3 / Voicemail",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "886e08cb06c9c4e637ad495a9bc71b565b486cec35fcfb382a3be0aaca29b8b9",
+      "guide_sections": "3 / Hold and music",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "d7aa49f952266ae22b0a8bee0db83d0c9c1be1116311dbb7692f1549e6a85900",
+      "guide_sections": "3 / Outbound restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 10,
+      "objective_sha256": "d5db3a7abd690c732dcdbbf459550d7d33756fbc2699274b7d15b734cd437069",
+      "guide_sections": "3 / Inbound handling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 11,
+      "objective_sha256": "dc180afb528a7dee8cee5b9355d314fe4c6b59944ae9401307c8710f96941813",
+      "guide_sections": "3 / Unassigned-number routing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 12,
+      "objective_sha256": "f0e462060e809850942ab16c451af5cba5eea8157ccb80f0c7617d57a0c25a22",
+      "guide_sections": "1 / Compliance recording; 3 / Assigned policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 13,
+      "objective_sha256": "efab5dc0bdff57b69a9262f1a1081f83745ee36456659d10d550b04f806af736",
+      "guide_sections": "1 / Shared Calling configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "f40de04b031bcae2fe21f7d2079e931ccbaccdac2aeb7b83d9e63fcb43ca1542",
+      "guide_sections": "3 / Resource-account creation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "05c28822029cbcaa6901f67274bf62be3e7d64084aba1f69d39aa545d93621ce",
+      "guide_sections": "3 / License assignment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "937ba31590920232790c8647c5b785fb71cfac85c0b3f1add4cefac6c46d3fed",
+      "guide_sections": "3 / Service/toll-free number",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "83db4d040d9b83fba03862dfb1fd3946799e7cb9aed104ab918fcf5cb9083340",
+      "guide_sections": "3 / Account/application association",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "7d6cdc9cdd701a9fb3d2c05c3ffcdf1e492ab3f6b736cf31414762ba21c78585",
+      "guide_sections": "3 / Routing/priorities/conference mode",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "8eaa7cfee1bdc54faf493a7311561ca60ceddda01461f941f7e3e80ddd534dbe",
+      "guide_sections": "3 / Business/holiday schedules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "48170f7acf46674edef10af6396759e9938ad8db473b153ef8ceee0b792c3be4",
+      "guide_sections": "3 / Music/prompt rights and timeout",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "7cf30b8815edd5524a79a475b5dd79ce3c3d7dad36cb8f2d639eee8e06aca259",
+      "guide_sections": "3 / Outbound identity/funding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "217f9b8d34b59d572f9ebd3e752107d19931e0a355fa9afee440f454af329879",
+      "guide_sections": "3 / Voice application delegated authority",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "4d502a311eca1917154b74853d2ed77f491119b2153e488b2f2347bf982cb36d",
+      "guide_sections": "3 / Callback timing/eligibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 11,
+      "objective_sha256": "772e775a53ef0560b62880dabdc9ded1a4f8e072e6eaf1879f145ddd4f756024",
+      "guide_sections": "1 / Queues app; 3 / Authorized users",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "508089e8cdce88eec2aa9c21ed78d476122cf6ec9bf7ae91942b8d0b4885ce65",
+      "guide_sections": "3 / Emergency locations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "dab62bf84e109fe2bef760c6a4fcdd7814e42b7f6168033267600673ceee4da1",
+      "guide_sections": "3 / Emergency routing and Shared Calling exception",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "81ec13089756741fb903c8b8affc7dbd08eb46156e8f3cd531e01c1fb42c23c4",
+      "guide_sections": "3 / Calling/security notification policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "e758a9ac51becb9fa106adc26d94dff6feceeace9432e571216d6337c993f50b",
+      "guide_sections": "3 / LIS precedence and worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "564964c6d6379883ded61140a06a89db189d579bf7ed420cd4420b7322ded2c7",
+      "guide_sections": "3 / Carrier-approved validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "042a763e59bf3a41fe722654b690cdbd89109adb14e3b5ae14154cab4fd4ca54",
+      "guide_sections": "3 / Verified address versus actual location",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "52debb8262914c8028b285886ae73954a42592d493a0d69f5cec2e6acb5e8988",
+      "guide_sections": "3 / Dynamic mismatch diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "ced1f8a3bfd418349f5740375b447d2c0c1bb90137d41b50ae2f18a3988ea507",
+      "guide_sections": "3 / Teams Phone user entitlement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "75479430850d632349f6c9955a287c0a2338c50cb7f3246d5c4cb9cce8e87e65",
+      "guide_sections": "3 / Calling Plan entitlement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "4c0147310eaaa8863133fff081a00290195b2aca147fa2bd18af7f9283974605",
+      "guide_sections": "3 / User number assignment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "ceec476178fbc0de9a64d010fbe2071a441cc27a9616f673997ae3cadf906809",
+      "guide_sections": "3 / Safe bulk PowerShell assignment; Lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "3f198eb24ee845445be57255dfe18b8d77f49a42fb78100e99c91f7f80f7420e",
+      "guide_sections": "3 / Effective user policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "1ec1f1caa15c43f0a5c786d3936871302bdd4ac05709ae0e42d4f791a782901a",
+      "guide_sections": "2 / Policy packages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "d4221c4414c33d3d341e117eaeb751dea5fd3f6538caabe007a57e9ee7117d0d",
+      "guide_sections": "2 / Ordinary group inheritance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "5c4ef680eac90b29166084ede8612c294cb330573269c7313efa72f8f2e9c73e",
+      "guide_sections": "3 / Cloud Voicemail",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "72b2e2103b06616892b24b481457bdd4646372354cf958b3ff0097f690177604",
+      "guide_sections": "3 / Group pickup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "e25a06c89abbfa916d3b6a5b2b92e6b4fb9e1a420c239bce0a2d384434634efc",
+      "guide_sections": "3 / Forwarding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "3051ea8e7d8b5a6f904c2aac809eca6a06ce088cdf8e416d2dbc45cf98991937",
+      "guide_sections": "3 / Simultaneous ring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "24480930422c75c6df3649da35395dc97d371f74ebd0b6dc121da942af1b3f0f",
+      "guide_sections": "3 / Delegation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "5877d9a9f57358e1af29be997ff21f4e231f4a359780cbb888f0ed8c6e8b33f2",
+      "guide_sections": "2 / Audio Conferencing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "1169d326b616c917e16bb7c9c5195bcf7695dfffae42693f883493fac4d4f9d5",
+      "guide_sections": "1 / Private line inventory; 3 / Calling features",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "69fc476901782e7c51e27a4b85670bbfb80b59cce41283915fefb1dc02ea48ff",
+      "guide_sections": "3 / SBC connection prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "818731bf0df6fd50d296ed49cc7ef20ab81f20c01f6f8849b6bf7a6a5e53cb16",
+      "guide_sections": "3 / PSTN gateway",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "432beb11adfb502cb877a20b211cdb3c9439947dfda469b21382a6a12f4544eb",
+      "guide_sections": "1 / Ordered usage routing example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "bce282c93b3e6118c3e269e8323a424cb942cbc1c1a72767e6ad21e97934cffd",
+      "guide_sections": "1 / Voice routes and patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "11d9af636cf5a829804e5fe5b79e9ad9572c7f6a326161c91ed07de762c190a8",
+      "guide_sections": "1 / Voice routing policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "d12427d0d38cf6776371d3cc589f5b683b3c2cdf8d52af1c6309eac3056093bb",
+      "guide_sections": "3 / SBC connectivity evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "fe42505be83e8c04c144a6193f0905a23319f360db366342cfd59ac67530cc50",
+      "guide_sections": "1 / LBR scope; 3 / Queue incompatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 8,
+      "objective_sha256": "0558b225b539abe274eeefa9f9ff22c3adb1f5afc67bb56d0be90b1d150c974c",
+      "guide_sections": "1 / LMO versus bypass",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 9,
+      "objective_sha256": "8751729ea08aa75fce9c0bd1dfb0b9ad42fd8b6b16b59b4333d2161a9b1fbf56",
+      "guide_sections": "1 / Translation ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 10,
+      "objective_sha256": "e8da8c1a8ec261322aec3483a453aa9fe4afd6b825a14d23f1b93e7484d9c674",
+      "guide_sections": "1 / On-network conferencing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 11,
+      "objective_sha256": "21022fb2abd97cf3f818d15b659f568c0fb73de6a998a8eb94dc7620ac26b147",
+      "guide_sections": "1 / SBA prerequisites/limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 12,
+      "objective_sha256": "b62c3943939d0f99bf7e876c23eb413c1db8dba88cc594cdd3080146ff256993",
+      "guide_sections": "3 / PIDF/LO and emergency route",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 13,
+      "objective_sha256": "b72c24d13ec9b428a22373c4a36feb760969147be4b33e033538f3c1b0de5253",
+      "guide_sections": "1 / Number inventory; 3 / Assignment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 14,
+      "objective_sha256": "58e153bb731fdd18ccd842245633a8cf439d535523245ebf1526d3cfebddb9ed",
+      "guide_sections": "3 / SIP/carrier trace and transfer example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "84c50df6b6c704d2571e592ed61b0ab1f146ec68ce086e11e106e06310911e20",
+      "guide_sections": "4 / Effective settings/import",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "adbf6b85ce3972dfee4e583fb1c25f26c77ac0ec657851d049472e686dc2c7e4",
+      "guide_sections": "4 / Local network and portal endpoints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "8bf93a061c0e8b9494c5897cb17b1b8662779718c46139f41dbb02099afe047b",
+      "guide_sections": "4 / App/OS/Agent/cloud updates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "2a4be4724528d86aa01a3be30957aa10cfb296d5d81a437f62cae94abd8cbace",
+      "guide_sections": "4 / Supported room CA and device-code exceptions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "51f8a53ee470f6a3be757e340f15991d7c8339508d82f1f758081039e015d6a5",
+      "guide_sections": "4 / Local/portal settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "e11c40394aa2adc0f2bd75d38466dedea90c5c1dbedf474f242cdd2a3bf64df2",
+      "guide_sections": "4 / PMP migration/RBAC",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 7,
+      "objective_sha256": "f5d430f2a92436983454ea1cd38b9e8a9459e7b9b195c2db0c29f8ad6f9b9ab2",
+      "guide_sections": "4 / AOSP/Intune requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 8,
+      "objective_sha256": "8cc191245f9ce8ec3da0c08b4043077b0e7cece53a6884f7aef32e87ed700079",
+      "guide_sections": "4 / Shared/personal/conference device roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 9,
+      "objective_sha256": "eb405e7c843cd192d7a6728138bd95cb2488b8b6bea46f2cf831e003e63b41f7",
+      "guide_sections": "4 / Device tags",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 10,
+      "objective_sha256": "0a5ffb235d791c6ede2c7b90cd8765957d36b452339366e85dd83649e95c2eac",
+      "guide_sections": "4 / SIP Gateway support/offboarding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 11,
+      "objective_sha256": "d01eccc22c9bf9f8dbf7be6301782e9d8ffdc56c4c0e2e2a932472fae11b8203",
+      "guide_sections": "4 / Health and peripheral acceptance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 12,
+      "objective_sha256": "65325eb99f277f6131a27b54b6884d074afad9f6abc29bd41031dc65a610298e",
+      "guide_sections": "4 / Sign-in/token/CA diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 13,
+      "objective_sha256": "2d7e7d55f631eae8d31c0d68e25903fcfe692d5b385e5eb160cb683ec1b7c4c7",
+      "guide_sections": "4 / OEM/version/update diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 14,
+      "objective_sha256": "d03f8afd5b4c286cfba65189622d0de1e988b9de68676d8e6da7029a604f32f7",
+      "guide_sections": "4 / Remote provisioning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 15,
+      "objective_sha256": "11f8d6b4c59a340386a3b62a263a35d7d27f7ebc738d3133bc7902cff4fecd95",
+      "guide_sections": "4 / Proximity/network/peripheral diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "61c169a58e5686d77141ee57af2a31a6bf0360c8db784fbcf8625cd561137764",
+      "guide_sections": "4 / Android IP phone policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "253df236e1ba3c6ecaf9e2bd9a6bebaca7eff922383e19247e53cb4f9743fa1c",
+      "guide_sections": "4 / Profiles/PMP settings templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "fba489018e64aeb4b0eeca1bedf7b8f2896eb5484d942c26c507edda4af786f4",
+      "guide_sections": "4 / Hotline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "127ae71aefdfc5be7c9aee055ca59ba02803b676712ead5fae972d09518e10c5",
+      "guide_sections": "4 / Remote Android deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "5fb2e955b3c7d8141908b8d2ac723ffe6a7f49e61f060239f81ba145832ad880",
+      "guide_sections": "4 / Custom displays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 6,
+      "objective_sha256": "20e3f4f6c21c649340909b866b4faade11f7c1aa51fcc781a1c9bc33eca4f064",
+      "guide_sections": "4 / AOSP profile and MDEP/OEM readiness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "6714bb9490439bd0b318c8a2ba800a8d7c066720ac24fd5e12555b03dd493e91",
+      "guide_sections": "4 / Group Policy exclusions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "c91f68d27f355bb553d46c1e0b93dbbe646b0872bb76b448cb50a8e5e663d14e",
+      "guide_sections": "4 / Windows display/scaling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "8dcbbd0e06197d2e245f4e69eca89cf25803785a033f4798573f8954256dc9cf",
+      "guide_sections": "4 / XML consumption/partial application",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "f86b1309c789f561677afea51586740641374e89cf572dfdeb3f892602fcc825",
+      "guide_sections": "4 / Peripheral configuration/acceptance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 1,
+      "objective_sha256": "2c7304a879604f5aa22b25ffa700e1bb70109e0ed689213a1ead1e855367adc7",
+      "guide_sections": "4 / HDMI ingest",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 2,
+      "objective_sha256": "1f96009855e392bea2d11fe71a345e923541e76fc8ebb11c1f34f1867629330c",
+      "guide_sections": "4 / Content camera",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 3,
+      "objective_sha256": "aeb20c9efd46dafcf4522a9c85597205f3f0500a7f628570a38653aa97b3b45e",
+      "guide_sections": "4 / Casting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 4,
+      "objective_sha256": "bb01d7666e51539ed0256d3cb9d508db3153d85ce48ed6676ebf2775f0b0b5bf",
+      "guide_sections": "4 / Proximity join",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 5,
+      "objective_sha256": "0d35fedc8a2ef9807505c186d3e312936a94d2d435fdca89446e01d7ccae9aa9",
+      "guide_sections": "4 / Room remote",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 6,
+      "objective_sha256": "3c5e65b63a9743cc2d953ea2890db8400caab9633b8b504c7c6322a7c4eb9f37",
+      "guide_sections": "1 / DGJ; 4 / Interop test",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 7,
+      "objective_sha256": "1c08d41aed9b28386bfc8edd9f9ebee9fdc5e607a026568440c905fbbf3ec305",
+      "guide_sections": "4 / Hot desking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 8,
+      "objective_sha256": "10b0b8c958685e2e971098f983791c04e5a9c36de5e565d5df3fe4a4c6a29d77",
+      "guide_sections": "4 / AI voice/video prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 1,
+      "objective_sha256": "a90fe3e91eda45f81a63a9caeb22465c18c464a9080ee63d8826e797291dfd62",
+      "guide_sections": "4 / Physical space/room types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 2,
+      "objective_sha256": "6fe7d8b708745b681cdd8771e7741de91b09b26db24b532a28617389961d74d1",
+      "guide_sections": "4 / Peripheral inventory/discovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 3,
+      "objective_sha256": "02c948ea2d34e2ab711216825bbe5b32549c47bd2b2d2e4272b752b8eebecfe8",
+      "guide_sections": "4 / Space association",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 4,
+      "objective_sha256": "2d844abfa1bb8c00f85365bec9c54ee7fb0ab5d8dcdf43de9861dd9925f30c20",
+      "guide_sections": "4 / Bookable desk unique-user example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 5,
+      "objective_sha256": "96d8c7f5ea7954d0150b53a743ce412586583a7a85fc03927b55be7175463d5b",
+      "guide_sections": "4 / Shared-space monitoring and support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MS-721",
+        "title": "Collaboration Communications Systems Engineer",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+        "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\ms-721-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ms-721-official-status.json",
+        "previous_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
+        "current_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
+        "previous_status_sha256": "b807f0edb8494fd334ef29b3bdf0ca568d364e0a2834f272f6d55a242ef0e0b5",
+        "current_status_sha256": "b807f0edb8494fd334ef29b3bdf0ca568d364e0a2834f272f6d55a242ef0e0b5",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of April 28, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 52,
+    "reachable": 51,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "ms-721-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+      "checked_at": "2026-09-28T04:51:57.331828+00:00",
+      "health": {
+        "id": "ms-721-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+        "checked_at": "2026-09-28T04:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MS-721: Collaboration Communications Systems Engineer",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "ed465dd5e215d1495a927a12b9fbeaf8adf8ffffdfac6a26b2953412f4255024",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+      "sha256": "632cda2bfeef2159227d2bea441d01026c68736f3e416434f023a765630a0ddd",
+      "text_characters": 15912
+    },
+    {
+      "id": "ms-721-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+      "checked_at": "2026-09-28T04:51:57.332631+00:00",
+      "health": {
+        "id": "ms-721-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+        "checked_at": "2026-09-28T04:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "d9e6179f99a263cb11b9d210536f22dd5974859b96d3fb7d018902e29f501e1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+      "sha256": "f6c674a3c9f991f19c697f4870eb80e58578e488e3a7bdeffc57f0e9063cb7b6",
+      "text_characters": 4693
+    },
+    {
+      "id": "ms-721-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment?assessment-type=practice&assessmentId=78&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T04:51:57.333039+00:00",
+      "health": {
+        "id": "ms-721-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment?assessment-type=practice&assessmentId=78&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T04:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment?assessment-type=practice&assessmentId=78&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "8935c19544b3750f8a68f7c67c7b47f0590979d73d212f0945fc40ccf4292c30",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment?assessment-type=practice&assessmentId=78&practice-assessment-type=certification",
+      "sha256": "03e927d2c1451312139099461f19843d3a869f85acef3c5f7eb46fca0f1f2fe6",
+      "text_characters": 0
+    },
+    {
+      "id": "ms-721-phone-setup",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system",
+      "checked_at": "2026-09-28T04:51:57.730969+00:00",
+      "health": {
+        "id": "ms-721-phone-setup",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system",
+        "checked_at": "2026-09-28T04:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system",
+        "content_type": "text/html",
+        "page_title": "Set up Teams Phone in your organization - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system",
+        "duration_signals": [],
+        "signal_fingerprint": "eff05fce7ec4d15b8f6aaf4c16310240dbe2857626426e7a5374ee40094542aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/setting-up-your-phone-system",
+      "sha256": "30ac4a22856b284548619e7120235a8780f5fe4a9443dbd50b57db33531b4d9b",
+      "text_characters": 8883
+    },
+    {
+      "id": "ms-721-direct-routing",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-plan",
+      "checked_at": "2026-09-28T04:51:57.740773+00:00",
+      "health": {
+        "id": "ms-721-direct-routing",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-plan",
+        "checked_at": "2026-09-28T04:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-plan",
+        "content_type": "text/html",
+        "page_title": "Plan Direct Routing - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-plan",
+        "duration_signals": [],
+        "signal_fingerprint": "ef90c15acf9555b86afdc92d0c055353049e64396cd433004ad56bbb1b1921a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-plan",
+      "sha256": "7a725b6b733013deebc331137267df23a49a6f1fa5551787b96415a131720d1a",
+      "text_characters": 13874
+    },
+    {
+      "id": "ms-721-resource-accounts",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-resource-accounts",
+      "checked_at": "2026-09-28T04:51:57.855122+00:00",
+      "health": {
+        "id": "ms-721-resource-accounts",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-resource-accounts",
+        "checked_at": "2026-09-28T04:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-manage-resource-accounts",
+        "content_type": "text/html",
+        "page_title": "Manage - Resource accounts for voice applications - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-manage-resource-accounts",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "c35153dc093161bc218881cd2b2aa5e648d5350662dd0241a03a4c62efdcb945",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-manage-resource-accounts",
+      "sha256": "c47a3f27a90537c19c17e6ae5e20357c3b798355ddc8978ce767e0cd5e87da07",
+      "text_characters": 18555
+    },
+    {
+      "id": "ms-721-room-account",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account",
+      "checked_at": "2026-09-28T04:51:57.987597+00:00",
+      "health": {
+        "id": "ms-721-room-account",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account",
+        "checked_at": "2026-09-28T04:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account",
+        "content_type": "text/html",
+        "page_title": "How to create and configure resource accounts for Teams Rooms and panels - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account",
+        "duration_signals": [],
+        "signal_fingerprint": "358071c137edd22ff69b308933f60998a0d0fbf902c1fa621faa4f7a06267b4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account",
+      "sha256": "f44edbc71ece85619246270bde63c82f20a3fa457773298cfce1dcdba7a32e0f",
+      "text_characters": 18961
+    },
+    {
+      "id": "ms-721-room-ca",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/conditional-access-and-compliance-for-devices",
+      "checked_at": "2026-09-28T04:51:58.018587+00:00",
+      "health": {
+        "id": "ms-721-room-ca",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/conditional-access-and-compliance-for-devices",
+        "checked_at": "2026-09-28T04:51:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/conditional-access-and-compliance-for-devices",
+        "content_type": "text/html",
+        "page_title": "Conditional Access and compliance best practices for Microsoft Teams Rooms - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/conditional-access-and-compliance-for-devices",
+        "duration_signals": [],
+        "signal_fingerprint": "1ea63dfdb4084fe1cf2799924fd7ebe75ddfe4201d7236342c40a20834395217",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/conditional-access-and-compliance-for-devices",
+      "sha256": "9e0a79d7adcf3098e7c3ba44c2ee1882e726353477f68f219ce9029d3541bb4e",
+      "text_characters": 5775
+    },
+    {
+      "id": "ms-721-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ms-721t00",
+      "checked_at": "2026-09-28T04:51:58.311352+00:00",
+      "health": {
+        "id": "ms-721-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ms-721t00",
+        "checked_at": "2026-09-28T04:51:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ms-721t00",
+        "content_type": "text/html",
+        "page_title": "Course MS-721T00-A: Plan, configure, and manage collaboration communications systems with Microsoft Teams - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ms-721t00",
+        "duration_signals": [],
+        "signal_fingerprint": "513ff3dc21b3ebddf045baa3b7d3b7f6c82cd16623a49aae7c9a0f99b9b5a4cc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ms-721t00",
+      "sha256": "9ff43b6b546b384c2208d685f1ec29e848facfb02502625b12b7f06615ad4b5e",
+      "text_characters": 2856
+    },
+    {
+      "id": "ms-721-path-plan",
+      "url": "https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/",
+      "checked_at": "2026-09-28T04:51:58.319193+00:00",
+      "health": {
+        "id": "ms-721-path-plan",
+        "url": "https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/",
+        "checked_at": "2026-09-28T04:51:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/",
+        "content_type": "text/html",
+        "page_title": "MS-721 Plan and design Teams collaboration communications systems - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/",
+        "duration_signals": [],
+        "signal_fingerprint": "1a363b73361681fb6be0d3d201cd08cc43fe7a516b0af2be1568d9965f93fa30",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/",
+      "sha256": "198a9d8b1a3a2fdaa812dddd44af6cef835d573c1b8f3786d51cafceafb7f796",
+      "text_characters": 2907
+    },
+    {
+      "id": "ms-721-path-manage",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/",
+      "checked_at": "2026-09-28T04:51:58.380673+00:00",
+      "health": {
+        "id": "ms-721-path-manage",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/",
+        "checked_at": "2026-09-28T04:51:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/",
+        "content_type": "text/html",
+        "page_title": "MS-721 Manage Teams collaboration communications systems - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/",
+        "duration_signals": [],
+        "signal_fingerprint": "164b861b380b61da81ee002586a2ca4f7c32f51d4c4d71da6e0df888402e12f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/",
+      "sha256": "b87fcef5b3b0760a11372bd8997c02f145c85fdde5e28502701c4b92c5542e24",
+      "text_characters": 3174
+    },
+    {
+      "id": "ms-721-pluralsight",
+      "url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721",
+      "checked_at": "2026-09-28T04:51:58.574531+00:00",
+      "health": {
+        "id": "ms-721-pluralsight",
+        "url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721",
+        "checked_at": "2026-09-28T04:51:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Collaboration Communications Systems Engineer (MS-721)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721",
+        "duration_signals": [
+          "8 Hours"
+        ],
+        "signal_fingerprint": "4bb7abdde723634f071fc8495381be678bd445c1e2eb99fe659c00ee8aa26a15",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721",
+      "sha256": "260bd7b351f3aba3c3e966f4f61f1a5f6f37b0b16035fb2a873ffb0b83184979",
+      "text_characters": 4294
+    },
+    {
+      "id": "ms-721-oreilly",
+      "url": "https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/",
+      "checked_at": "2026-09-28T04:51:58.627282+00:00",
+      "health": {
+        "id": "ms-721-oreilly",
+        "url": "https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/",
+        "checked_at": "2026-09-28T04:51:58+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ms-721-measureup",
+      "url": "https://www.measureup.com/ms-721-exam.html",
+      "checked_at": "2026-09-28T04:51:58.654807+00:00",
+      "health": {
+        "id": "ms-721-measureup",
+        "url": "https://www.measureup.com/ms-721-exam.html",
+        "checked_at": "2026-09-28T04:51:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/ms-721-exam.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test MS-721: Collaboration Communications Systems Engineer",
+        "canonical_url": "https://www.measureup.com/ms-721-exam.html",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "238be814cbbd94b0aa7164135e346009c6cf3ee7e032c275096600c0ae9b2d78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/ms-721-exam.html",
+      "sha256": "cb0a1cc527204e3b4cb2ea1cc55119dcddbdde1566b6abd1fe04d71e3eec61dd",
+      "text_characters": 19541
+    },
+    {
+      "id": "ms721-sms",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
+      "checked_at": "2026-09-28T04:55:10.379370+00:00",
+      "health": {
+        "id": "ms721-sms",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
+        "checked_at": "2026-09-28T04:55:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
+        "content_type": "text/html",
+        "page_title": "Planning for SMS in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "faf411e349c526741aeaa65f0c88acedf99b129533b66db7b20a867d6481fc91",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
+      "sha256": "0547d0c9b00f47776a6fa33a7e480b0a354c57892a7d2e3edc70aec596e5e74c",
+      "text_characters": 12521
+    },
+    {
+      "id": "ms721-shared-plan",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-plan",
+      "checked_at": "2026-09-28T04:55:10.379984+00:00",
+      "health": {
+        "id": "ms721-shared-plan",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-plan",
+        "checked_at": "2026-09-28T04:55:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-plan",
+        "content_type": "text/html",
+        "page_title": "Plan for Shared Calling - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-plan",
+        "duration_signals": [],
+        "signal_fingerprint": "5875203ec072f76ebcd5ce0a2a41a48b278935af7ca0794b3803b4e4a62dd249",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-plan",
+      "sha256": "051aa04fa12d190cfc174321376048f9056a2d2c2f0b4882f2fbc84f825cf6ef",
+      "text_characters": 3879
+    },
+    {
+      "id": "ms721-shared-setup",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup",
+      "checked_at": "2026-09-28T04:55:10.380435+00:00",
+      "health": {
+        "id": "ms721-shared-setup",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup",
+        "checked_at": "2026-09-28T04:55:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup",
+        "content_type": "text/html",
+        "page_title": "Configure Shared Calling - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "109db360f252bdac98d8385f88029436bd0d68dd56797b2ffc7858045a556863",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup",
+      "sha256": "aa4fed5e85f2eb9d86aa102a25122ef31d5832404bda70ab400dd4c9ea3a24b8",
+      "text_characters": 17259
+    },
+    {
+      "id": "ms721-routing",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing",
+      "checked_at": "2026-09-28T04:55:10.798220+00:00",
+      "health": {
+        "id": "ms721-routing",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing",
+        "checked_at": "2026-09-28T04:55:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing",
+        "content_type": "text/html",
+        "page_title": "Configure call routing for Direct Routing - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing",
+        "duration_signals": [],
+        "signal_fingerprint": "d54cb70eadacaf7c53a4eec74ba78f957dc7ebf19a1e6eabd6518afcb712735e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing",
+      "sha256": "7fb88c8b971c77704748ab5b57d113e1765834b75ae9e39522fc2c4b39d98d54",
+      "text_characters": 21809
+    },
+    {
+      "id": "ms721-sba",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+      "checked_at": "2026-09-28T04:55:10.813470+00:00",
+      "health": {
+        "id": "ms721-sba",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+        "checked_at": "2026-09-28T04:55:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+        "content_type": "text/html",
+        "page_title": "Direct Routing SBA - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+        "duration_signals": [
+          "24 hours",
+          "about 30 minutes"
+        ],
+        "signal_fingerprint": "92811c4d6632c118b9a0cd6d7ac1440d485e6c9cbc4a5a56831272541882b208",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+      "sha256": "2c998640446b22c0e992cb9598c492a3ef42e348c1feb4cd2dd49037cd505281",
+      "text_characters": 11414
+    },
+    {
+      "id": "ms721-media",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media",
+      "checked_at": "2026-09-28T04:55:10.831800+00:00",
+      "health": {
+        "id": "ms721-media",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media",
+        "checked_at": "2026-09-28T04:55:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media",
+        "content_type": "text/html",
+        "page_title": "Direct Routing support for media bypass - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media",
+        "duration_signals": [],
+        "signal_fingerprint": "7be13909ad34a3abfd1a2ebdafdc9d5309a4f42c4d31e9c0daa00840b2eae316",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media",
+      "sha256": "9fb1c8d819f03ddd18567fe7b2c09d3ddcd3ddf8dedd886eaebb2cf5907372d3",
+      "text_characters": 9851
+    },
+    {
+      "id": "ms721-emergency",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+      "checked_at": "2026-09-28T04:55:11.064314+00:00",
+      "health": {
+        "id": "ms721-emergency",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+        "content_type": "text/html",
+        "page_title": "Configure dynamic emergency calling - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+        "duration_signals": [],
+        "signal_fingerprint": "cadaaff46e367805495f4d2e18c6cc4a50e5b10a8b7780e4077da3f3c99ef309",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+      "sha256": "092f14dd5c580d600b6443d313162dd4898c67bb1ebea23528e4d0f975bd54a7",
+      "text_characters": 19439
+    },
+    {
+      "id": "ms721-roaming",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy",
+      "checked_at": "2026-09-28T04:55:11.089091+00:00",
+      "health": {
+        "id": "ms721-roaming",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy",
+        "content_type": "text/html",
+        "page_title": "Network roaming policy - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "758f8d4b611d36ac4a8c6e9cfce03218079d92fa507b10b2cb0b708522714800",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy",
+      "sha256": "2c8e9b89b803f61c505145335b43b2fe888c1468485d93a11799e0a0ff13747a",
+      "text_characters": 3029
+    },
+    {
+      "id": "ms721-rooms-license",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing",
+      "checked_at": "2026-09-28T04:55:11.101872+00:00",
+      "health": {
+        "id": "ms721-rooms-license",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing",
+        "content_type": "text/html",
+        "page_title": "Microsoft Teams Rooms licenses - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing",
+        "duration_signals": [
+          "24 hours",
+          "48 hours"
+        ],
+        "signal_fingerprint": "ddfa779c9f53dd39f864d120cba167875c238e5523c0c1ff2298058696f55dd2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing",
+      "sha256": "fad63ede8d69819eefe73b95c65822a1b9c9b02abeb8a062a12470266dd2a84c",
+      "text_characters": 13281
+    },
+    {
+      "id": "ms721-interop",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join",
+      "checked_at": "2026-09-28T04:55:11.450291+00:00",
+      "health": {
+        "id": "ms721-interop",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join",
+        "content_type": "text/html",
+        "page_title": "Third-party meetings on Teams Rooms - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join",
+        "duration_signals": [],
+        "signal_fingerprint": "acafdedc71e407eb66b2b0186b0f23f9efa66cfceb07c1f747c017fd35cdf1d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join",
+      "sha256": "a1b014aff5f837777f55b4ba47cedc48dc76698bba6b3dfa955f721e751dd26a",
+      "text_characters": 11368
+    },
+    {
+      "id": "ms721-devices",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/device-management",
+      "checked_at": "2026-09-28T04:55:11.495620+00:00",
+      "health": {
+        "id": "ms721-devices",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/device-management",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/device-management",
+        "content_type": "text/html",
+        "page_title": "Manage devices in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/device-management",
+        "duration_signals": [],
+        "signal_fingerprint": "5aad10ba6bd831196425695c1bd2682e55a246873f9d8f2462899c32926493f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/device-management",
+      "sha256": "61a20c8523a2dc7703c7898a7ce89a6d3c041af601fc674d99ce24642755bfaf",
+      "text_characters": 16783
+    },
+    {
+      "id": "ms721-device-release",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-device-apps",
+      "checked_at": "2026-09-28T04:55:11.665186+00:00",
+      "health": {
+        "id": "ms721-device-release",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-device-apps",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-device-apps",
+        "content_type": "text/html",
+        "page_title": "Release Notes for Teams Android Devices Management Apps - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-device-apps",
+        "duration_signals": [],
+        "signal_fingerprint": "14d4d4dd2e21c44cd48af2057d1d0f0576243a385d512fcf20eeebc6ce065db1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-device-apps",
+      "sha256": "ac170f1ee9336f671c826f86f3b92a4cf36e2c1761c42d6960eee674b5db55c4",
+      "text_characters": 11423
+    },
+    {
+      "id": "ms721-rooms-release",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+      "checked_at": "2026-09-28T04:55:11.729202+00:00",
+      "health": {
+        "id": "ms721-rooms-release",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+        "content_type": "text/html",
+        "page_title": "Release notes for Microsoft Teams Rooms - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+        "duration_signals": [
+          "11 minutes",
+          "20 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "18d85e52d0b3f7cb6037bc7fa1b36397a582aa1d25d5eda125fd1ef34eae708f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+      "sha256": "000165a4bc18eac1ff016c9b6de50af43baecaa2efff3bd8ab85371bd2c5f173",
+      "text_characters": 97876
+    },
+    {
+      "id": "ms721-xml",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file",
+      "checked_at": "2026-09-28T04:55:11.770814+00:00",
+      "health": {
+        "id": "ms721-xml",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file",
+        "content_type": "text/html",
+        "page_title": "Remotely manage Microsoft Teams Rooms device settings - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file",
+        "duration_signals": [],
+        "signal_fingerprint": "52920a7b0a93465dc86b3670c3a7c935205d83702709b2d5eb92d7e07a533a73",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file",
+      "sha256": "f0033888239cadd1898a5bcfe455bdf7942d0d2ab2dc6f0c884a91fb0e3981ec",
+      "text_characters": 28275
+    },
+    {
+      "id": "ms721-sip",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan",
+      "checked_at": "2026-09-28T04:55:11.932285+00:00",
+      "health": {
+        "id": "ms721-sip",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan",
+        "checked_at": "2026-09-28T04:55:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan",
+        "content_type": "text/html",
+        "page_title": "Plan SIP Gateway - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan",
+        "duration_signals": [],
+        "signal_fingerprint": "8c4aa7d08ff864d4a2e9830df247241f9ca2d0f436ec2d5afe6e688f454e92e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan",
+      "sha256": "7153d6c21345078f78f5d3dd9b974af0ab46b10dc379029e13453f6d3aa1ed4f",
+      "text_characters": 18579
+    },
+    {
+      "id": "ms721-desks",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks",
+      "checked_at": "2026-09-28T04:55:12.055382+00:00",
+      "health": {
+        "id": "ms721-desks",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks",
+        "content_type": "text/html",
+        "page_title": "Setting up Bookable Desks in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks",
+        "duration_signals": [
+          "24 hours",
+          "48 hours"
+        ],
+        "signal_fingerprint": "ff54981666f011c6f644b420742b8c5b8545d7b5f57916cd41cfc46ceaf1ea89",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks",
+      "sha256": "6790c61b8287b5ce6bc0d112a778b765475f594fe3c7b78ce3157b9a264a31cb",
+      "text_characters": 15812
+    },
+    {
+      "id": "ms721-transfer",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers",
+      "checked_at": "2026-09-28T04:55:12.073938+00:00",
+      "health": {
+        "id": "ms721-transfer",
+        "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers",
+        "content_type": "text/html",
+        "page_title": "Issues with call transfers - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers",
+        "duration_signals": [],
+        "signal_fingerprint": "d0d03e03b0308bc97d72c2933c372adfcee3f58e71fd564f5d3d63c5fa412b04",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers",
+      "sha256": "da5a8d218e5ffa4a3c066354cfe50239a3161086e27bddd830fd25367300d6ba",
+      "text_characters": 7456
+    },
+    {
+      "id": "ms721-ecdn",
+      "url": "https://learn.microsoft.com/en-us/ecdn/intro",
+      "checked_at": "2026-09-28T04:55:12.215566+00:00",
+      "health": {
+        "id": "ms721-ecdn",
+        "url": "https://learn.microsoft.com/en-us/ecdn/intro",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ecdn/intro",
+        "content_type": "text/html",
+        "page_title": "Welcome to Microsoft eCDN",
+        "canonical_url": "https://learn.microsoft.com/en-us/ecdn/intro",
+        "duration_signals": [],
+        "signal_fingerprint": "e4976c0ea3a03fb3dcc48a9713e51619217db4afdf20a891ceb06eb9c98eabdd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ecdn/intro",
+      "sha256": "c3c0c39c6e8c56948effebcc0fb732086e4d529a5f4df229475b87ae8a2ec596",
+      "text_characters": 2730
+    },
+    {
+      "id": "ms721-interop-blog",
+      "url": "https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/",
+      "checked_at": "2026-09-28T04:55:12.326107+00:00",
+      "health": {
+        "id": "ms721-interop-blog",
+        "url": "https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Teams Rooms Cloud Video Interop vs. Direct Guest Join vs. Cross-Platform Meetings via SIP",
+        "canonical_url": "https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/",
+        "duration_signals": [
+          "2 min"
+        ],
+        "signal_fingerprint": "d3b9b9f49ed2b1222481c97e85feaadd9a4aafad2d2e3ea7ed4d7b2b7ee00bc2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/",
+      "sha256": "2d8755a7529c90b95b8f5c91e8fc3dc3e86fdd1f5144b7b2aba1f25f7aa8d00f",
+      "text_characters": 4274
+    },
+    {
+      "id": "ms700-qos",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+      "checked_at": "2026-09-28T04:55:12.409436+00:00",
+      "health": {
+        "id": "ms700-qos",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+        "content_type": "text/html",
+        "page_title": "Implement Quality of Service in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+        "duration_signals": [],
+        "signal_fingerprint": "d8cdb96ee1facfc470cbfe7bfe06b6dd8c1f5d6d0a45094f768ac7bb64ff67b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
+      "sha256": "b73c702146c1a1a353d7a8b7f6130a4a9210e7d90d07d4e01d43f47bac99d30c",
+      "text_characters": 14635
+    },
+    {
+      "id": "ms700-policy",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+      "checked_at": "2026-09-28T04:55:12.486452+00:00",
+      "health": {
+        "id": "ms700-policy",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+        "content_type": "text/html",
+        "page_title": "Assign policies to users and groups - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+        "duration_signals": [],
+        "signal_fingerprint": "2ce7b3928059503b4b70ea4faef891f636398a8420a12f6e9c7ceb4c6d192516",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups",
+      "sha256": "8c5fe093865eb18ce6fa298ac7905b7afb59d3c796a1bc1bd1ba0cbf4f6a882a",
+      "text_characters": 19143
+    },
+    {
+      "id": "ms700-vdi",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/new-teams-vdi-requirements-deploy",
+      "checked_at": "2026-09-28T04:55:12.690788+00:00",
+      "health": {
+        "id": "ms700-vdi",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/new-teams-vdi-requirements-deploy",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-vdi-requirements-deploy",
+        "content_type": "text/html",
+        "page_title": "Microsoft Teams for Virtualized Desktop Infrastructure (VDI) - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-vdi-requirements-deploy",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "09bd3fd5d602642e1ba2a12e10c7d4b01af51e5b8924afa9acd8c6ea98db7d3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-client-vdi-requirements-deploy",
+      "sha256": "6e5fcea962ad7492ce98861aef44b6b56f06ab4d84dfc953e126dd0ccc82baa8",
+      "text_characters": 42289
+    },
+    {
+      "id": "ms700-events",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+      "checked_at": "2026-09-28T04:55:12.815556+00:00",
+      "health": {
+        "id": "ms700-events",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+        "checked_at": "2026-09-28T04:55:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/plan-events",
+        "content_type": "text/html",
+        "page_title": "Plan for Teams events - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/plan-events",
+        "duration_signals": [],
+        "signal_fingerprint": "2e9e13344fa7321e892eec19acc373685a41e2197657a8ba318377cc3b79aeec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/plan-events",
+      "sha256": "af8ffbaf71c2a58fc2eb55608a1420bd07d40e22f7c33b08bad66f277a27cd2d",
+      "text_characters": 33618
+    },
+    {
+      "id": "ms700-live-retirement",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "checked_at": "2026-09-28T04:55:13.096650+00:00",
+      "health": {
+        "id": "ms700-live-retirement",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+        "content_type": "text/html",
+        "page_title": "Plan for live events in Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+        "duration_signals": [],
+        "signal_fingerprint": "a4e7cb0abbeb144a7435b6720922e1dfd3f854b82ceb1d00dc0f214b2e8d016c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
+      "sha256": "4aeee8ad1e74c123740173899df62351a05dd9d5ca0cd89d1cd7ff062331e059",
+      "text_characters": 7488
+    },
+    {
+      "id": "ms700-copilot",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "checked_at": "2026-09-28T04:55:13.172425+00:00",
+      "health": {
+        "id": "ms700-copilot",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "content_type": "text/html",
+        "page_title": "Manage Microsoft Copilot in Teams meetings and events - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+        "duration_signals": [],
+        "signal_fingerprint": "edccd70883d0514a2d5a8bbab399e25f2c5e49bbdda141456acb3d3fee4401e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "sha256": "9460677cbd66b91188ad81f56233975b94938da841a7c3a7ecd1f7364f037590",
+      "text_characters": 8348
+    },
+    {
+      "id": "ms700-voice-license",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+      "checked_at": "2026-09-28T04:55:13.278539+00:00",
+      "health": {
+        "id": "ms700-voice-license",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+        "content_type": "text/html",
+        "page_title": "Reference - Voice applications prerequisites and licensing - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+        "duration_signals": [],
+        "signal_fingerprint": "762cc8154f75644453efaa4908cfd66aa7c0e686090f12a414caeabdc3618569",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+      "sha256": "ae052801e7708f1f74c02ff98dd21e31579225326e30ce52c0c60471abcbdd9e",
+      "text_characters": 11699
+    },
+    {
+      "id": "ms700-queue",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "checked_at": "2026-09-28T04:55:13.408415+00:00",
+      "health": {
+        "id": "ms700-queue",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+        "content_type": "text/html",
+        "page_title": "Setup - Call Queue - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+        "duration_signals": [
+          "15 minutes",
+          "24 hours",
+          "40 minutes",
+          "45 minutes"
+        ],
+        "signal_fingerprint": "58fb79a3c41d7fff66a27144c06e1dd285ddc98b73b8765fffabf53dd6659c48",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "sha256": "4f30eb9031648e6f170bc6b5bfa5889faad84af81c42469ec788ebf69440172e",
+      "text_characters": 32761
+    },
+    {
+      "id": "ms700-network-planner",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+      "checked_at": "2026-09-28T04:55:13.448924+00:00",
+      "health": {
+        "id": "ms700-network-planner",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+        "content_type": "text/html",
+        "page_title": "Use the Network planner for Microsoft Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+        "duration_signals": [],
+        "signal_fingerprint": "6963d3b7714d9f412578531581c76f98adae62047efa3ab33c2b3ad2d5cc050a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/network-planner",
+      "sha256": "f4b3acd65f6621db42044cd68bd7ebf36f2de2025cd166a07e513c01a4f605b0",
+      "text_characters": 4226
+    },
+    {
+      "id": "ms700-july-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+      "checked_at": "2026-09-28T04:55:13.615918+00:00",
+      "health": {
+        "id": "ms700-july-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What’s New in Microsoft Teams | July 2026 | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%e2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+        "duration_signals": [],
+        "signal_fingerprint": "25b9ac8402a4a7f7ffc4712bac69087fa8d3bfbbc675bb1c02e61eb2ecbbb9d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+      "sha256": "239361f6ae59e3234abba7496d60b6d8e638f203f8bf77ed31403198bb7712d1",
+      "text_characters": 67
+    },
+    {
+      "id": "ms700-device-code",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+      "checked_at": "2026-09-28T04:55:13.736626+00:00",
+      "health": {
+        "id": "ms700-device-code",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+        "content_type": "text/html",
+        "page_title": "Restrict device code flow for Microsoft Teams devices with Conditional Access - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+        "duration_signals": [],
+        "signal_fingerprint": "87a5169371332fd17eedf1d06f79d0936e815ba2c37b3546ac9d4107e9f195e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow",
+      "sha256": "c5ec6d0447e926dcdbc46ab7dbfb922dbecc6b581d410e78ebf12425f053a5a5",
+      "text_characters": 13768
+    },
+    {
+      "id": "ms700-network-tool",
+      "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+      "checked_at": "2026-09-28T04:55:13.763158+00:00",
+      "health": {
+        "id": "ms700-network-tool",
+        "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+        "checked_at": "2026-09-28T04:55:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Download Microsoft Teams Network Assessment Tool from Official Microsoft Download Center",
+        "canonical_url": "https://www.microsoft.com/content/microsoft/mscom/en-us/dynamic/dlcdetails-basepage",
+        "duration_signals": [],
+        "signal_fingerprint": "a75ca81379881d1db57f3bbb45f9cf459156257f3eb3546fa1302eee83592dbc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/download/details.aspx?id=103017",
+      "sha256": "b617367cd86a39373ca7d383ff2ed77f6c2636d795544703cf849194ce6f1441",
+      "text_characters": 2740
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-28T04:55:14.113221+00:00",
+      "health": {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-28T04:55:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "fe23982a458d93dbbbfef00a5be72bfa434c03d0eb15d81576ecd629a3c3cbcc",
+      "text_characters": 182
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T04:55:14.419560+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T04:55:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "22ed79485f9197a1754cadeb99629f567d19687269b1331b10e65a0dabb1dea0",
+      "text_characters": 180
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T04:55:15.094051+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T04:55:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "ab-650-john-savill-youtube",
+      "url": "https://www.youtube.com/@NTFAQGuy",
+      "checked_at": "2026-09-28T04:55:15.457013+00:00",
+      "health": {
+        "id": "ab-650-john-savill-youtube",
+        "url": "https://www.youtube.com/@NTFAQGuy",
+        "checked_at": "2026-09-28T04:55:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@NTFAQGuy",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "John Savill's Technical Training",
+        "canonical_url": "https://www.youtube.com/channel/UCpIn7ox7j7bH_OFj7tYouOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "3ea7e177926d30b19bd454e7c112994be5e9aae837e8697abb5a5edc1ef7afbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@NTFAQGuy",
+      "sha256": "211e6de58a1e222e20bb2228074eb30a89933a4fdd1d49fa66601fd085ddb210",
+      "text_characters": 195
+    },
+    {
+      "id": "ms-700-network",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+      "checked_at": "2026-09-28T04:55:15.989161+00:00",
+      "health": {
+        "id": "ms-700-network",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+        "checked_at": "2026-09-28T04:55:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+        "content_type": "text/html",
+        "page_title": "Prepare your organization's network for Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+        "duration_signals": [],
+        "signal_fingerprint": "ba51c08715f25e7a35c8beea6f7fac29b41228ecc26f754289f6505dd559d745",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+      "sha256": "063af0c7efe05815103f27e3f2843a4ed05817dffb4e2638279df3b75c93f53d",
+      "text_characters": 13599
+    },
+    {
+      "id": "ms-700-monitoring",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+      "checked_at": "2026-09-28T04:55:16.195767+00:00",
+      "health": {
+        "id": "ms-700-monitoring",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+        "checked_at": "2026-09-28T04:55:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+        "content_type": "text/html",
+        "page_title": "Monitor and troubleshoot Teams meetings and calls from the Teams admin center - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+        "duration_signals": [
+          "2 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "7b09801c170973328c1313ded6545f9800f68eee3fb4f06ddb21c452a77c175e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+      "sha256": "b24863b8ef36f053c4b2bce642dcfa50a6fe984ab8a671abc66b83d38c73f2af",
+      "text_characters": 19400
+    },
+    {
+      "id": "ms721-pmp-transition",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+      "checked_at": "2026-09-28T04:56:48.354909+00:00",
+      "health": {
+        "id": "ms721-pmp-transition",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+        "checked_at": "2026-09-28T04:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+        "content_type": "text/html",
+        "page_title": "Transitioning Teams Android Device Management from Teams Admin Center to the Teams Rooms Pro Management Portal - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+        "duration_signals": [],
+        "signal_fingerprint": "baf96c45a7fd5ff31b1373dd6da396a5a9e31f36b8ed867782d8d4436e507f39",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+      "sha256": "b443ef1e6923857ad9c1722d1638afe4db836f982ba50a4a38533848fca23f91",
+      "text_characters": 21695
+    },
+    {
+      "id": "ms721-aosp",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment",
+      "checked_at": "2026-09-28T04:56:48.355393+00:00",
+      "health": {
+        "id": "ms721-aosp",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment",
+        "checked_at": "2026-09-28T04:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment",
+        "content_type": "text/html",
+        "page_title": "Intune Enrollment for Teams Android Devices - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment",
+        "duration_signals": [],
+        "signal_fingerprint": "20513e0fc731eb2bb5726343b884451aa67876102923ca6f44aa6f9567de83c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment",
+      "sha256": "d6fb15cf20779e80a095e0b083d797446bc398f2e6ea33a98a8f9f7c8ac08c14",
+      "text_characters": 5540
+    },
+    {
+      "id": "ms721-cross-platform",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+      "checked_at": "2026-09-28T04:56:48.355888+00:00",
+      "health": {
+        "id": "ms721-cross-platform",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+        "checked_at": "2026-09-28T04:56:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+        "content_type": "text/html",
+        "page_title": "SIP and H.323 dialing with Teams Rooms - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+        "duration_signals": [],
+        "signal_fingerprint": "54e6050b3a26efd6e6023eeca330aad5bb11515e1c62db33e66d5149ca74ca38",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+      "sha256": "8ebd62ebcdd8f70062930291d730da81fa88b41c2482b8910b053b2f1fd0a70d",
+      "text_characters": 5248
+    }
+  ],
+  "added_source_ids": [
+    "ms721-sms",
+    "ms721-shared-plan",
+    "ms721-shared-setup",
+    "ms721-routing",
+    "ms721-sba",
+    "ms721-media",
+    "ms721-emergency",
+    "ms721-roaming",
+    "ms721-rooms-license",
+    "ms721-interop",
+    "ms721-devices",
+    "ms721-device-release",
+    "ms721-rooms-release",
+    "ms721-xml",
+    "ms721-sip",
+    "ms721-desks",
+    "ms721-transfer",
+    "ms721-ecdn",
+    "ms721-interop-blog",
+    "ms721-pmp-transition",
+    "ms721-aosp",
+    "ms721-cross-platform"
+  ],
+  "findings": [
+    {
+      "id": "ms721-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "SMS registration and segment accounting are separate from voice",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Calling Plan support, approved registration and segment pool matter.",
+      "recommendation": "Add segment-based cost worksheet without prices or guaranteed delivery.",
+      "disposition": "applied",
+      "source_id": "ms721-sms",
+      "resolution": "Add segment-based cost worksheet without prices or guaranteed delivery."
+    },
+    {
+      "id": "ms721-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Shared users and the resource account need different routes",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Ordinary user policy has no usages; DR resource account has valid usages.",
+      "recommendation": "Add global inheritance, extensions and callback distinctions.",
+      "disposition": "applied",
+      "source_id": "ms721-shared-setup",
+      "resolution": "Add global inheritance, extensions and callback distinctions."
+    },
+    {
+      "id": "ms721-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Usage order can override a specific route expectation",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PSTN usage order precedes matching route selection; gateway list is randomized.",
+      "recommendation": "Add synthetic pattern/order case.",
+      "disposition": "applied",
+      "source_id": "ms721-routing",
+      "resolution": "Add synthetic pattern/order case."
+    },
+    {
+      "id": "ms721-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Offline calling has identity and emergency constraints",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Prior contact/tokens/CAE, clients and emergency handling have documented limits.",
+      "recommendation": "Add explicit continuity prerequisites and follow-up.",
+      "disposition": "applied",
+      "source_id": "ms721-sba",
+      "resolution": "Add explicit continuity prerequisites and follow-up."
+    },
+    {
+      "id": "ms721-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Signaling and media address support differ",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ICE Lite candidate scope remains IPv4 in current protocol article.",
+      "recommendation": "Keep signaling support separate from media-bypass claims.",
+      "disposition": "applied",
+      "source_id": "ms721-media",
+      "resolution": "Keep signaling support separate from media-bypass claims."
+    },
+    {
+      "id": "ms721-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "MBR and site policy do not reserve a circuit",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Average media limit and non-voice lookup prerequisite differ from capacity.",
+      "recommendation": "Add site/client scope and measured eCDN example.",
+      "disposition": "applied",
+      "source_id": "ms721-roaming",
+      "resolution": "Add site/client scope and measured eCDN example."
+    },
+    {
+      "id": "ms721-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Assigned address does not prove client location",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "LIS network ID and match precedence differ from topology/report labels.",
+      "recommendation": "Add synthetic subnet/WAP case and client evidence.",
+      "disposition": "applied",
+      "source_id": "ms721-emergency",
+      "resolution": "Add synthetic subnet/WAP case and client evidence."
+    },
+    {
+      "id": "ms721-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Blind transfer acceptance precedes target result",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "June behavior terminates original leg after SBC acceptance.",
+      "recommendation": "Add synthetic SIP timeline and consultative distinction.",
+      "disposition": "applied",
+      "source_id": "ms721-transfer",
+      "resolution": "Add synthetic SIP timeline and consultative distinction."
+    },
+    {
+      "id": "ms721-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Conference mode and LBR have compatibility limits",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Recommended mode does not support the specified LBR gateway route.",
+      "recommendation": "Add callback budget and legacy-mode follow-up.",
+      "disposition": "applied",
+      "source_id": "ms700-queue",
+      "resolution": "Add callback budget and legacy-mode follow-up."
+    },
+    {
+      "id": "ms721-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Voice application funding differs from user minutes",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Outbound resource-account scenarios require route-specific entitlements.",
+      "recommendation": "Add current funding and delegated Queues app boundaries.",
+      "disposition": "applied",
+      "source_id": "ms700-voice-license",
+      "resolution": "Add current funding and delegated Queues app boundaries."
+    },
+    {
+      "id": "ms721-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Device type changes licensing",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Basic cap and panel/multiple-system exclusions matter.",
+      "recommendation": "Add minimum Pro arithmetic and entitlement qualification.",
+      "disposition": "applied",
+      "source_id": "ms721-rooms-license",
+      "resolution": "Add minimum Pro arithmetic and entitlement qualification."
+    },
+    {
+      "id": "ms721-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Interop requires direction and provider scope",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current Windows/Android SIP dialing requires Pro, provider plan and policy.",
+      "recommendation": "Update direction matrix and qualify older blog wording.",
+      "disposition": "applied",
+      "source_id": "ms721-cross-platform",
+      "resolution": "Update direction matrix and qualify older blog wording."
+    },
+    {
+      "id": "ms721-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Missing join button can be calendar processing",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "External invite bodies and URLs drive third-party meeting recognition.",
+      "recommendation": "Add mailbox/link checks and feature parity tests.",
+      "disposition": "applied",
+      "source_id": "ms721-interop",
+      "resolution": "Add mailbox/link checks and feature parity tests."
+    },
+    {
+      "id": "ms721-deep-14",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Automatic inventory is not completed management migration",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Explicit profile imports, access, agent readiness and mandatory updates still apply.",
+      "recommendation": "Add current migration workflow and deadline follow-up.",
+      "disposition": "applied",
+      "source_id": "ms721-pmp-transition",
+      "resolution": "Add current migration workflow and deadline follow-up."
+    },
+    {
+      "id": "ms721-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Enrollment and compliance need Teams-specific preparation",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "One enrollment profile, account-based flow and valid token/entitlement required.",
+      "recommendation": "Add scoped profile/compliance prerequisites.",
+      "disposition": "applied",
+      "source_id": "ms721-aosp",
+      "resolution": "Add scoped profile/compliance prerequisites."
+    },
+    {
+      "id": "ms721-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "XML processing is not atomic enforcement",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Partial application, ignored elements and consumption differ from effective state.",
+      "recommendation": "Add validation/recovery reasoning and preferred new settings surface.",
+      "disposition": "applied",
+      "source_id": "ms721-xml",
+      "resolution": "Add validation/recovery reasoning and preferred new settings surface."
+    },
+    {
+      "id": "ms721-deep-17",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Calendar fix has an OEM exception",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current Android EWS correction excludes Cisco pending another release.",
+      "recommendation": "Add model/build prerequisite before Exchange change and dated recheck.",
+      "disposition": "applied",
+      "source_id": "ms721-rooms-release",
+      "resolution": "Add model/build prerequisite before Exchange change and dated recheck."
+    },
+    {
+      "id": "ms721-deep-18",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "SIP calling does not imply native endpoint parity",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Presence-based routing and stale-device behavior have distinct limits.",
+      "recommendation": "Add feature and reprovisioning checks.",
+      "disposition": "applied",
+      "source_id": "ms721-sip",
+      "resolution": "Add feature and reprovisioning checks."
+    },
+    {
+      "id": "ms721-deep-19",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Event count does not equal distinct association evidence",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Auto-association needs distinct users and supported peripheral identity.",
+      "recommendation": "Add six-event/three-user worked example.",
+      "disposition": "applied",
+      "source_id": "ms721-desks",
+      "resolution": "Add six-event/three-user worked example."
+    },
+    {
+      "id": "ms721-deep-20",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Copilot policy values distinguish default from enforcement",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default Off remains organizer editable.",
+      "recommendation": "Add precise policy/transcript/retention checks.",
+      "disposition": "applied",
+      "source_id": "ms700-copilot",
+      "resolution": "Add precise policy/transcript/retention checks."
+    },
+    {
+      "id": "ms721-deep-21",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current unified Events changes the creation experience",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-721"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Audience optimization controls policy behavior while legacy creation is retired.",
+      "recommendation": "Preserve exam terms and add current event/grace guidance.",
+      "disposition": "applied",
+      "source_id": "ms700-events",
+      "resolution": "Preserve exam terms and add current event/grace guidance."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ms721-interop-blog",
+      "decision": "accepted-bounded",
+      "author": "Tom Arbuthnot with Marius Nilsen (Pexip)",
+      "published_on": "2026-05-11",
+      "notes": "Public synopsis/chapters read; AI-assisted/team-reviewed disclosure retained. Video not watched. Current Microsoft docs validate scoped comparison; vendor outcomes not adopted."
+    },
+    {
+      "source_id": "ms700-july-blog",
+      "decision": "accepted-bounded",
+      "author": "KerryPerezHeffernan",
+      "published_on": "2026-07-31",
+      "notes": "Main article read in same session, fresh retrieval. Windows room identity/Android management task bounded by current docs and deployed-model checks."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Fourteen synthetic segment/routing/capacity/location/timeline/license/association/catalog checks. No tenant, call, configuration or network executable run."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No live tenant, SMS, PSTN, emergency, room, device, VDI, portal migration, interop, network diagnostic or external lab execution.",
+    "One OReilly page blocked; historical runtime qualified. Paid lessons/questions, interactive practice, videos and complete current commercial coverage unreviewed.",
+    "Targeted current Rooms/Agent release entries read, not the complete historical archive or every OEM firmware row. Actual cloud/OEM rollout remains a deployment prerequisite.",
+    "Empowering.Cloud synopsis discloses AI-assisted/team-reviewed summaries and vendor participation; video and benefit claims not independently validated. Current technical boundaries rely on Microsoft sources.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "sms_routing_capacity_location_transfer_license_desk_and_catalog_assertions": 14
+  }
+}

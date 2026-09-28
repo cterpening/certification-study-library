@@ -3,6 +3,314 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ms721-sms",
+      "title": "Plan SMS with Calling Plan numbers",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Registration/licensing/voice enablement, segment accounting/pooling and limitations read. Example uses measured segments, not inferred encoding. No message sent or price assumed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-shared-plan",
+      "title": "Plan Shared Calling",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-plan",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Full overview read; ordinary no-user-number design scoped by current optional extension procedure. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-shared-setup",
+      "title": "Configure Shared Calling",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: User/resource routing, country/number constraints, extension support and emergency callback sections read. Special emergency procedure distinguished from general DR guidance. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-routing",
+      "title": "Configure Direct Routing voice routing",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Architecture, usage/route/gateway order, matching/extension and Calling Plan boundaries reviewed. Two synthetic patterns evaluated offline, not a Teams routing simulation. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-sba",
+      "title": "Direct Routing survivable branch appliance",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Prerequisites, clients, continuity, configuration outline and known limitations read. Physical-client/VDI, prior contact, token/CAE and emergency constraints explicit; no tenant CAE change suggested or executed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-media",
+      "title": "Direct Routing media protocols",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: ICE Lite, forking/early-media and selected format/SDES scenarios read; no packet capture or SIP call. IPv6 signaling not generalized to media candidates. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-emergency",
+      "title": "Configure dynamic emergency calling",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Network/LIS precedence, supported clients, policy/source distinctions and approved test sections read. Synthetic IPv4 prefix example only; no emergency call. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-roaming",
+      "title": "Network roaming policy",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Full settings/assignment/client guidance read; MBR average/site lookup distinguished from bandwidth reservation. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-rooms-license",
+      "title": "Teams Rooms licensing",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: License requirements/cap, panel/room distinctions and migration guidance reviewed. Synthetic cap minimum assumes no advanced requirements. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-interop",
+      "title": "Teams Rooms third-party meeting join",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: DGJ/cross-platform feature matrix and invite/URL processing reviewed. Capabilities qualified by platform/provider; no broad URL-protection disablement. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-devices",
+      "title": "Teams Android device management",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/device-management",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Current transition notice, management operations and partial configuration sections read. No profile/device modified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-device-release",
+      "title": "Device management apps release notes",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-device-apps",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Current September Agent 865 and prior migration Agent entries reviewed, with cloud availability and mandatory update exceptions. No device updated. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-rooms-release",
+      "title": "Teams Rooms release notes",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Targeted current Windows and August/September Android entries reviewed; app/web/OS/OEM distinctions and EWS fix/Cisco exclusion. Full historical release archive not reviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-xml",
+      "title": "Teams Rooms Windows XML configuration",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Current recommendation, processing/permissions and targeted element-reference sections read. New settings favor PMP; malformed files can partially apply. No XML deployed or XML snippet presented as tested. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-sip",
+      "title": "Plan SIP Gateway",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Benefits, licensing, requirements, presence/queue and stale-device limitations read. Full OEM firmware table not exhaustively reviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-desks",
+      "title": "Bookable desks",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Creation, unique-peripheral/auto-association, user opt-in, propagation and reporting sections read. Synthetic unique-user example; no desk provisioned. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-transfer",
+      "title": "Direct Routing call transfer issues",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Full troubleshooting article read; June blind-transfer change distinguished from consultative flow. SIP leg example is synthetic. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-ecdn",
+      "title": "Microsoft eCDN overview",
+      "url": "https://learn.microsoft.com/en-us/ecdn/intro",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Full overview read; browser peer-distribution benefit used for synthetic measured-offload example. No event or silent test executed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-interop-blog",
+      "title": "Teams room interop explained by Pexip",
+      "url": "https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/",
+      "publisher": "Empowering.Cloud",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Public May 11 synopsis/chapters by Tom Arbuthnot with Pexip Marius Nilsen read. Disclosed AI-assisted/team-reviewed summary; video not watched. Current Microsoft primary docs validate technical distinctions, vendor benefit claims not adopted. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-pmp-transition",
+      "title": "Android management transition to Pro portal",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Timeline, prerequisites, explicit profile-import/update/RBAC steps and FAQ read. Explicit readiness instructions take precedence over general migration reassurance; tenant completion unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-aosp",
+      "title": "Teams Android Intune AOSP enrollment",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Full Teams-specific enrollment/compliance article read. One profile, token and QR distinctions; not generalized to other AOSP device workflows. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ms721-cross-platform",
+      "title": "Teams Rooms cross-platform SIP meetings",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "September 28 MS-721 deep review: Full September 16 article read; Windows/Android Pro/provider/policy prerequisites and direction verified. Sample commands not executed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ms700-qos",
       "title": "Quality of Service in Teams",
       "url": "https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams",
@@ -12,9 +320,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Targeted implementation, source-port table, browser/Mac/mobile exceptions and validation sections read. No packet capture or network configuration executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Targeted implementation, source-port table, browser/Mac/mobile exceptions and validation sections read. No packet capture or network configuration executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh retrieval; source ports and client exceptions reviewed in same session, no QoS configured. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-policy",
@@ -26,9 +335,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Direct/group/global precedence, nested/hidden-group limits and processing sections read; no policy assigned. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Direct/group/global precedence, nested/hidden-group limits and processing sections read; no policy assigned. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh retrieval; ordinary direct/group/global precedence and nesting limits reviewed in same session, distinct from emergency site policy. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-external",
@@ -82,9 +392,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Windows WebRTC support/availability cohort, prerequisites, optimization/fallback and selected limitations read. No endpoint or plugin tested. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Windows WebRTC support/availability cohort, prerequisites, optimization/fallback and selected limitations read. No endpoint or plugin tested. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh retrieval of same-session Windows WebRTC support/availability guidance; existing shared MS-700/MS-721 follow-up retained. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-app-centric",
@@ -138,9 +449,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Unified Events, audience optimization/policy relationship, capacity/license and monitoring sections reviewed. No event or capacity pack provisioned. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Unified Events, audience optimization/policy relationship, capacity/license and monitoring sections reviewed. No event or capacity pack provisioned. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh retrieval; unified creation, audience optimization and licensing/policy boundaries reviewed in same session. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-live-retirement",
@@ -152,9 +464,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Retirement notice and preexisting-event grace period read; historic event setup instructions not treated as new deployment guidance. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Retirement notice and preexisting-event grace period read; historic event setup instructions not treated as new deployment guidance. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh retirement/grace notice; new legacy event creation not recommended. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-copilot",
@@ -166,9 +479,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Full settings/transcription table read, including default versus enforced values, retention and encryption/cloud limits. No AI session executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Full settings/transcription table read, including default versus enforced values, retention and encryption/cloud limits. No AI session executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh policy/transcription matrix; default/enforced, privacy and encrypted meeting limits reviewed in same session. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-voice-license",
@@ -180,9 +494,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Full prerequisite/funding sections read; Calling Plan, Operator Connect and Direct Routing treated separately. No PSTN charges or calls. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Full prerequisite/funding sections read; Calling Plan, Operator Connect and Direct Routing treated separately. No PSTN charges or calls. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh route-specific prerequisites/funding and Queues app requirements; no paid service activated. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-queue",
@@ -194,9 +509,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Targeted resource accounts, routing, callback timing/eligibility, overflow/timeout and no-agent sections reviewed. Synthetic timeline only. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Targeted resource accounts, routing, callback timing/eligibility, overflow/timeout and no-agent sections reviewed. Synthetic timeline only. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Resource, callback, conference/LBR and legacy transfer-mode sections reviewed. No queue call executed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-network-planner",
@@ -208,9 +524,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Full planning/configuration article read; model assumptions and personas distinguished from measured peak load. Tool not executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Full planning/configuration article read; model assumptions and personas distinguished from measured peak load. Tool not executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh public planning article; model is not measured capacity. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-advisor",
@@ -306,9 +623,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: July 31 main article by KerryPerezHeffernan extracted from public page data and read. Selected app-request/Windows room tasks; demos/comments not used as implementation proof. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: July 31 main article by KerryPerezHeffernan extracted from public page data and read. Selected app-request/Windows room tasks; demos/comments not used as implementation proof. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Main article read earlier in this session and freshly fetched; Windows passwordless/Android management exercise scoped by current device docs. No demo/video or deployment execution. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-device-code",
@@ -320,9 +638,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Policy flow, persistent account exception, Device Registration Service exclusion and passwordless recovery sections read; no access policy changed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Policy flow, persistent account exception, Device Registration Service exclusion and passwordless recovery sections read; no access policy changed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh policy/exception/recovery guidance read in same session; no CA changed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-network-tool",
@@ -334,9 +653,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "September 28 MS-700 deep review: Public 1.9.0.0/March 5 listing and limitations read. Installer not downloaded, installed or executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Public 1.9.0.0/March 5 listing and limitations read. Installer not downloaded, installed or executed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Fresh public version listing; no installer downloaded or run. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc300-baseline-scopes",
@@ -6461,9 +6781,10 @@
         "AB-100",
         "MD-102",
         "MS-102",
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor",
@@ -6491,9 +6812,10 @@
         "SC-500",
         "MD-102",
         "MS-102",
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -21821,9 +22143,10 @@
         "AB-731",
         "MD-102",
         "MS-102",
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -23097,9 +23420,10 @@
       "supported_exams": [
         "AB-650",
         "MD-102",
-        "MS-700"
+        "MS-700",
+        "MS-721"
       ],
-      "notes": "Selective Microsoft identity, security and architecture foundation; no exact AB-650 course was confirmed. September 27 MD-102 deep review: Channel shell only; no exact current MD-102 course established. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; MS-700 playlist content/current completeness unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "Selective Microsoft identity, security and architecture foundation; no exact AB-650 course was confirmed. September 27 MD-102 deep review: Channel shell only; no exact current MD-102 course established. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; MS-700 playlist content/current completeness unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md-102-blueprint",
@@ -23449,13 +23773,37 @@
       "id": "ms-700-practice", "title": "MS-700 Practice Assessment", "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment?assessment-type=practice&assessmentId=55&practice-assessment-type=certification", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "independent-assessment", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Free official readiness assessment."
     },
     {
-      "id": "ms-700-network", "title": "Prepare your organization's network for Microsoft Teams", "url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Current Teams network, port, protocol and readiness guidance."
+      "id": "ms-700-network",
+      "title": "Prepare your organization's network for Microsoft Teams",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/prepare-network",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700",
+        "MS-721"
+      ],
+      "notes": "Current Teams network, port, protocol and readiness guidance. September 28 MS-721 deep review: Fresh media guidance supports hypothetical bitrate assumptions, not a performance guarantee. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-700-network-test", "title": "Microsoft 365 network connectivity test", "url": "https://connectivity.office.com/", "publisher": "Microsoft", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Official network connectivity test portal."
     },
     {
-      "id": "ms-700-monitoring", "title": "Monitor and troubleshoot Teams meetings and calls", "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Current Teams admin center meeting/call telemetry and troubleshooting guidance."
+      "id": "ms-700-monitoring",
+      "title": "Monitor and troubleshoot Teams meetings and calls",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/monitor-troubleshoot-teams-meetings-calls",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-700",
+        "MS-721"
+      ],
+      "notes": "Current Teams admin center meeting/call telemetry and troubleshooting guidance. September 28 MS-721 deep review: Fresh retrieval of current troubleshooting scope/retention guidance reviewed in same session; no tenant telemetry accessed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-700-course", "title": "MS-700T00 Manage collaboration and communication with Teams", "url": "https://learn.microsoft.com/en-us/training/courses/ms-700t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MS-700"], "notes": "Four-day course linking four current paths."
@@ -23546,13 +23894,35 @@
       "id": "ms-721-path-manage", "title": "MS-721 Manage Teams collaboration communications systems", "url": "https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MS-721"], "notes": "Eight-module path; listed duration 8 hours 5 minutes."
     },
     {
-      "id": "ms-721-pluralsight", "title": "Microsoft Collaboration Communications Systems Engineer MS-721 path", "url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721", "publisher": "Pluralsight", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-721"], "notes": "Five courses, 8 hours and practice exam listed; courses dated September 2023 through March 2024, so supplement April 2026."
+      "id": "ms-721-pluralsight",
+      "title": "Microsoft Collaboration Communications Systems Engineer MS-721 path",
+      "url": "https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "Five public listings total 8h04, May 2023–March 2024. Paid lessons and practice unreviewed. September 28 MS-721 deep review: Five public listings total 8h04, May 2023–March 2024. Paid lessons and practice unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-721-oreilly", "title": "Microsoft 365 Certified Collaboration Communications Systems Engineer Associate Certification Companion", "url": "https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/", "publisher": "Apress / O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-721"], "notes": "Fabrizio Volpe, October 2024, 333 pages and 6 hours 8 minutes listed; supplement April 2026."
     },
     {
-      "id": "ms-721-measureup", "title": "MS-721 Collaboration Communications Systems Engineer practice test", "url": "https://www.measureup.com/ms-721-exam.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MS-721"], "notes": "167 questions listed; released July 2023 and last updated January 2025, so reconcile April 2026 changes."
+      "id": "ms-721-measureup",
+      "title": "MS-721 Collaboration Communications Systems Engineer practice test",
+      "url": "https://www.measureup.com/ms-721-exam.html",
+      "publisher": "MeasureUp",
+      "authority_class": 3,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-721"
+      ],
+      "notes": "Public 167 questions (47/26/59/35), January 2025 update; paid content and complete April 2026 coverage unreviewed. September 28 MS-721 deep review: Public 167 questions (47/26/59/35), January 2025 update; paid content and complete April 2026 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-600-blueprint", "title": "Study guide for Exam DP-600: Implementing Analytics Solutions Using Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-600"], "notes": "Authoritative skills measured as of July 21, 2026; no upcoming update announced."

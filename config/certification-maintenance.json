@@ -814,6 +814,54 @@
       "review_on": "2027-02-01",
       "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events",
       "action": "Recheck February 28 grace end for events scheduled before June 30, 2026 and current unified Events migration guidance. Do not schedule new legacy live-event labs."
+    },
+    {
+      "id": "ms721-android-portal-cutover",
+      "exam_codes": [
+        "MS-721",
+        "MS-700"
+      ],
+      "review_on": "2026-09-30",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1",
+      "action": "Recheck September TAC retirement, PMP visibility/actions/RBAC, profile imports and Agent minimum/cloud readiness. Mandatory Agent migration updates can override pause/ring assumptions; do not infer tenant completion from dates."
+    },
+    {
+      "id": "ms721-android-ews-model-fix",
+      "exam_codes": [
+        "MS-721",
+        "MS-700"
+      ],
+      "review_on": "2026-09-30",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note",
+      "action": "Verify September Android calendar EWS fix and OEM/Cisco exception before changing Exchange access. Recheck exact model, firmware/app availability and actual calendar acceptance."
+    },
+    {
+      "id": "ms721-queue-transfer-mode",
+      "exam_codes": [
+        "MS-721",
+        "MS-700"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+      "action": "Recheck legacy transfer-mode removal notice and conference-mode/LBR compatibility. Avoid inventing a retirement date or assuming conference mode solves all routes."
+    },
+    {
+      "id": "ms721-interop-release-parity",
+      "exam_codes": [
+        "MS-721"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices",
+      "action": "Recheck Windows/Android/provider SIP interop requirements against actual OEM releases and third-party meeting feature matrix; historical blog future wording is not current availability proof."
+    },
+    {
+      "id": "ms721-sba-continuity-limits",
+      "exam_codes": [
+        "MS-721"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance",
+      "action": "Recheck CAE/token/prior-contact, client and emergency behavior limits with vendor-supported continuity guidance. Retain explicit limitations; do not broadly weaken authentication as an assumed fix."
     }
   ]
 }

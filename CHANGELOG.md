@@ -60,6 +60,12 @@
 
 Notable public changes are recorded here. The project uses semantic version tags for release checkpoints; guide freshness and exam status remain independently dated in the exam catalog and each guide.
 
+## 2026-09-28 — MS-721 deep review
+
+- Map all 173 unchanged objectives; expand Teams Phone routing, Shared Calling, SMS, emergency-location and Rooms operational boundaries.
+- Add six worked examples, two labs and twelve answers, with current Android management/AOSP, interop and XML guidance.
+- Qualify blogs and commercial metadata, track dated follow-ups, and record offline-only validation.
+
 ## 2026-09-28 — MS-700 deep review
 
 - Map 97 upcoming objectives while preserving the current baseline; refresh Teams administration, events, voice, app migration and diagnostics.

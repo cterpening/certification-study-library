@@ -6,18 +6,20 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # MS-721 Collaboration Communications Systems Engineer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the April 28, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-721-coverage-record). The [official MS-721 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the April 28, 2026 objectives and cited public sources on September 28, 2026. The whole-guide deep review mapped 173 objectives in 19 groups; live infrastructure and independent human review remain pending. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-721-coverage-record). The [official MS-721 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) is authoritative.
 
 **Current baseline:** Skills measured as of April 28, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Official source:** [MS-721 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721)
+
+The [deep-review report](../docs/research/2026-09-28-ms-721-deep-review.md) records the evidence and limits. The current credential lists 100 minutes; practice vendors’ question counts are not promises about the exam.
 
 ## How to use this guide
 
@@ -59,7 +61,7 @@ Select the collaboration format from audience, interaction, registration, produc
 
 Tenant meeting settings define service-wide capabilities/defaults. Meeting policies apply to organizers or participants depending on the setting. Templates package supported meeting options; template policies determine who can use them. Sensitivity labels can enforce protected meeting settings under applicable licensing. Per-meeting options finish the instance. Determine the controlling layer before changing global policy.
 
-Plan polls, Forms, apps, Q&A, breakout rooms, avatars, controlled content, recording, transcription and Microsoft 365 Copilot together. Copilot behavior can depend on license, effective meeting policy, organizer options, transcript/recording choice, client and feature rollout. Teams Premium adds capabilities such as advanced meeting protection, templates, branding and enhanced event/appointment experiences; verify exact entitlement before promising a feature. **VERIFY CURRENT:** Copilot, Teams Premium and protected-meeting relationships change frequently.
+Plan polls, Forms, apps, Q&A, breakout rooms, avatars, controlled content, recording, transcription and Microsoft 365 Copilot together. Copilot behavior can depend on license, effective meeting policy, organizer options, transcript/recording choice, client and feature rollout. Teams Premium adds capabilities such as advanced meeting protection, templates, branding and enhanced event/appointment experiences; verify exact entitlement before promising a feature. The [current Copilot matrix](https://learn.microsoft.com/en-us/microsoftteams/copilot-teams-transcription) distinguishes the organizer-editable `Disabled` default from the enforced `EnabledWithTranscript` option. During-only speech processing does not imply that compliance copies of prompts/responses vanish. E2EE meetings do not support Copilot. Verify actual participant entitlements, options and transcript access in a rehearsal.
 
 Audio Conferencing brings PSTN dial-in/out capabilities to meetings. Plan licenses, supported countries, default bridge number, toll versus toll-free inventory, dial-out restrictions and numbers shown in invitations. The bridge is a tenant service; a user-specific conferencing number and an organizer's policy/license still affect the invitation and behavior.
 
@@ -78,7 +80,7 @@ Audio Conferencing brings PSTN dial-in/out capabilities to meetings. Plan licens
 
 Calling Plans include domestic, international and pay-as-you-go choices where offered. Teams Phone Mobile is for user numbers; do not assume it supplies Audio Conferencing or voice-application numbers. A tenant can mix connectivity models, but every user/number needs an unambiguous operational and emergency-calling design.
 
-Shared Calling lets eligible users make PSTN calls through a shared resource-account number rather than each receiving a dedicated number. Plan the resource account, number, emergency policy/location, voice routing and user calling policy. It is not a substitute for deciding how inbound calls reach an individual.
+Shared Calling lets eligible users make PSTN calls through a shared resource-account number rather than each receiving a dedicated number. Plan the resource account, number, emergency policy/location, voice routing and user calling policy. [Shared Calling planning](https://learn.microsoft.com/en-us/microsoftteams/shared-calling-plan) uses an auto attendant for inbound reachability and its number for outbound identity. Users still need Teams Phone and voice enablement. [Configuration guidance](https://learn.microsoft.com/en-us/microsoftteams/shared-calling-setup) requires the user’s ordinary voice-routing policy to have **no PSTN usages**, while a Direct Routing resource account needs a policy with the appropriate usages. An inherited global usage list can silently defeat the design. Optional extension dialing is a documented exception to the ordinary “no user number” setup. Moving the shared resource number leaves policy objects present but can break calls.
 
 Inventory number purpose and ownership:
 
@@ -87,6 +89,10 @@ Inventory number purpose and ownership:
 - **resource-account number:** anchors a voice application or Shared Calling design;
 - **private line:** gives an eligible user another inbound route under current limitations;
 - **SMS-capable Calling Plan number:** supports current Teams SMS behavior only in supported markets/configurations.
+
+[SMS planning](https://learn.microsoft.com/en-us/microsoftteams/sms-overview) currently limits this service to eligible Microsoft Calling Plan users/numbers in the US (including Puerto Rico) and Canada, with approved Brand and Campaign registration even for individual business messages. Voice enablement alone is insufficient. Do not infer SMS support for Operator Connect, Direct Routing, toll-free numbers, shared queue inboxes or other clouds from ordinary calling support.
+
+**Worked example 1 — Count SMS segments, not chat bubbles.** Suppose ten Domestic licenses contribute 200 segments each and two PAYG licenses contribute zero: the tenant pool is **2,000 segments**. Measured outbound traffic contains 900 one-segment messages and 300 two-segment messages; inbound traffic adds 650 segments. Total usage is **2,150**, leaving **150 segments over the pool**. Use measured encoding/segment counts and current billing terms; the displayed number of messages or a simple character count can understate usage.
 
 Document acquire versus port, losing/gaining carrier, authorization, emergency address, usage location, assignment date, rollback and validation. Porting is a business cutover: freeze conflicting changes, test temporary and final routing, and retain carrier escalation details.
 
@@ -100,9 +106,13 @@ The outbound decision chain is:
 
 A dial plan changes what number the user meant. A voice route chooses where a normalized call goes. A translation rule at a gateway can adapt the called/calling number for the SBC/carrier. Do not use all three layers to repair the same malformed number without documenting ownership.
 
-Plan redundant SBCs, routes and carriers with explicit priority/capacity and test failure—not only configuration presence. Local Media Optimization (LMO), Location-Based Routing (LBR) and media bypass solve different topology/regulatory/media-path problems. On-network conferencing can route applicable dial-out calls through Direct Routing. A Survivable Branch Appliance (SBA) preserves supported calling during a branch-to-cloud outage; define which calls/features survive, local DNS/network dependencies and failback behavior.
+**Worked example 2 — Usage order can beat a more specific route.** In a synthetic [routing design](https://learn.microsoft.com/en-us/microsoftteams/direct-routing-voice-routing), usage Local contains pattern `^\+1425555[0-9]{4}$` and usage Broad contains `^\+[1-9][0-9]{7,14}$`. Both match `+14255550123`. Ordering Broad first sends this call through Broad; placing Local first selects Local. This is not automatic longest-prefix routing. Gateway order within one route is randomized, so a two-SBC list does not define deterministic primary/secondary preference. Use separate route priorities where needed, and test reachable-but-rejecting gateways as well as outages. Do not treat Calling Plan fallback as proof every Direct Routing failure is recoverable.
 
-Certified compliance recording and contact-center solutions integrate through supported Teams models. Assign policies and validate vendor responsibilities, recording notification/storage/access, agent routing and failure mode. The Queues app provides supported delegated call-queue/auto-attendant management and operational experiences under its licensing and policy model. **VERIFY CURRENT:** product names, license bundles and Queues app capabilities.
+Plan redundant SBCs, routes and carriers with explicit priority/capacity and test failure—not only configuration presence. Local Media Optimization (LMO), Location-Based Routing (LBR) and media bypass solve different topology/regulatory/media-path problems. On-network conferencing can route applicable dial-out calls through Direct Routing. [SBA guidance](https://learn.microsoft.com/en-us/microsoftteams/direct-routing-survivable-branch-appliance) assumes the branch LAN and SBC/PSTN path still work, requires media bypass and a previously assigned survivability policy, and excludes VDI/web clients. Check the actual appliance-mode banner. Current supported functions include local-user VoIP behind the same SBA and selected forwarding/transfer/queue redirects; this does not make the cloud queue service available locally. Validate supported client/vendor versions, notification/recording limitations and failback after active outgoing calls finish.
+
+SBA has material limits: clients need a prior connection within 24 hours; restarting can require a token the offline client cannot obtain. The documentation limits CAE-token operation to roughly 30 minutes. It also excludes dynamic E911 location sharing and emergency call routing policies; emergency strings need valid regular voice-route patterns. Include these limits in the approved continuity design and carrier test plan.
+
+Certified compliance recording and contact-center solutions integrate through supported Teams models. Assign policies and validate vendor responsibilities, recording notification/storage/access, agent routing and failure mode. The Queues app provides supported delegated call-queue/auto-attendant management and operational experiences under its licensing and policy model. [Voice-application licensing](https://learn.microsoft.com/en-us/microsoftteams/aa-cq-reference-prerequisites-licensing) requires Teams Premium for Queues app users; its delegated controls still need authorization. Calling Plan resource-account outbound transfers/callbacks/on-behalf-of calling need current PAYG/credits/overage funding rather than an ordinary minute bundle. Confirm Operator Connect carrier support separately; Direct Routing needs its own voice route.
 
 > **Related item:** A carrier says whether it accepted or delivered a PSTN call; Teams reports policy and cloud call legs; the SBC exposes SIP/TLS/media behavior. A complete Direct Routing incident often needs evidence from all three.
 
@@ -110,24 +120,29 @@ Certified compliance recording and contact-center solutions integrate through su
 
 Start with room purpose, size, layout, acoustics, sightlines, lighting, accessibility, occupancy, join patterns, support model and budget. Then choose certified compute, camera, microphone, speaker, display, console/panel and cabling. A technically certified kit can still fail in a room with poor acoustics or obstructed viewing.
 
-Teams Rooms Basic and Pro differ in entitlement and management features. Windows and Android rooms differ in hardware architecture, enrollment/management and feature timing. Verify the current comparison rather than assuming feature parity. Plan a distinct room resource account, Exchange room mailbox/calendar processing, supported Rooms license, network access, Conditional Access posture, naming/location metadata and ownership.
+Teams Rooms Basic and Pro differ in entitlement and management features. Windows and Android rooms differ in hardware architecture, enrollment/management and feature timing. [Rooms licensing](https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-licensing) limits Basic to 25 systems per organization, excludes panels, and requires Pro for multiple room systems using one account. Shared Space licensing is not a substitute for a Rooms license. For 28 single-system rooms with no advanced requirements, at least **3** need Pro because of the Basic cap; security, management or interop requirements can make more rooms need Pro. Plan a distinct room resource account, Exchange room mailbox/calendar processing, supported Rooms license, network access, Conditional Access posture, naming/location metadata and ownership.
 
 Interoperability choices include:
 
 - Direct Guest Join for supported third-party meeting services;
 - Cloud Video Interop (CVI) for supported legacy/video conferencing endpoints joining Teams meetings;
-- SIP Guest Join for supported SIP/H.323-style room scenarios through the current service;
+- SIP Guest Join extends a CVI provider’s supported legacy SIP-room scenario to external Teams meetings;
+- [cross-platform SIP/H.323 dialing](https://learn.microsoft.com/en-us/microsoftteams/rooms/meetings-with-sip-h323-devices) lets Windows **and Android** Teams Rooms with Pro, a supporting provider plan and the assigned video-teleconferencing policy call other SIP/H.323 endpoints;
 - BYOD rooms, where a user's laptop provides compute and the shared room peripherals/identity/location supply the space experience.
+
+The [third-party join comparison](https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join) distinguishes DGJ’s browser path from SIP interop: examples include up-to-720p versus up-to-1080p video, one versus two displays, and HDMI sending support on the SIP path. These are conditional capabilities, not quality guarantees. Preserve external invitation bodies and verify mailbox processing and rewritten URLs when the join button is missing. Test the exact partner meeting type; a CVI agreement is not evidence every external feature works.
 
 Personal/shared phones, displays, panels, Surface Hub, common-area phones, analog/SIP devices through SIP Gateway, bookable desks and full Teams Rooms are distinct endpoint types. Choose license, enrollment, configuration profile, calling/hotline behavior and management portal by device role.
 
 ### Network and media design
 
-[Prepare the network for Teams](https://learn.microsoft.com/en-us/microsoftteams/prepare-network) before procurement or migration. Model personas, sites, concurrent modalities, direction and headroom. Use Network planner and current assessment/connectivity tools to validate bandwidth, UDP reachability, DNS/egress and path length.
+[Prepare the network for Teams](https://learn.microsoft.com/en-us/microsoftteams/prepare-network) before procurement or migration. Model personas, sites, concurrent modalities, direction and headroom. Use [Network planner](https://learn.microsoft.com/en-us/microsoftteams/network-planner) for assumptions and the current [Network Assessment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=103017) for measured relay/connectivity diagnostics. The latter’s 1.9.0.0 listing is current as of this review; it is not a load/stress generator and was not executed here.
 
-Favor local Internet breakout and a short supported media path. Define VPN split tunneling where appropriate. QoS requires aligned client port ranges, DSCP marking and network trust/queuing; it prioritizes during congestion but cannot add bandwidth. Media Bit Rate policy limits per-user media bandwidth and can protect constrained links at a quality cost.
+Favor local Internet breakout and a short supported media path. Define VPN split tunneling where appropriate. QoS requires aligned client port ranges, DSCP marking and network trust/queuing; it prioritizes during congestion but cannot add bandwidth. [QoS guidance](https://learn.microsoft.com/en-us/microsoftteams/qos-in-teams) separates client source-port marking from service destination requirements; browser ports and Mac/mobile sharing markings differ from the default Windows table. [Network roaming](https://learn.microsoft.com/en-us/microsoftteams/network-roaming-policy) controls IP video and total average audio/video/video-sharing media bitrate at a site on supported Windows/macOS clients. Non-voice-enabled users need meeting-policy network lookup enabled. MBR is not a physical circuit reservation or a per-room capacity guarantee.
 
-Upload tenant data and reporting labels to CQD so subnet/building/site patterns become meaningful. Network roaming policies can apply media settings based on network location. Maintain topology data as subnets change. eCDN reduces duplicate video delivery across constrained corporate networks for applicable town hall/streaming scenarios; validate provider, licensing, topology, capacity and test-event telemetry.
+Upload tenant data and reporting labels to CQD so subnet/building/site patterns become meaningful. Network roaming policies can apply media settings based on network location. Maintain topology data as subnets change. CQD building labels, network policy sites and LIS emergency locations are separate datasets; updating one does not populate the others. eCDN reduces duplicate video delivery across constrained corporate networks for applicable town hall/streaming scenarios; validate provider, licensing, topology, capacity and test-event telemetry.
+
+**Worked example 3 — Measure eCDN offload.** Assume 240 viewers each demand 3 Mbps: unoptimized site delivery is **720 Mbps**. A rehearsal measures 540 Mbps served through peers and 180 Mbps from the WAN: offload is **75%**. With 120 Mbps of other WAN traffic, total is **300 Mbps**. A 350 Mbps link with a chosen 20% reserve permits 280 Mbps, so this sample still misses the target by **20 Mbps**. [Microsoft eCDN](https://learn.microsoft.com/en-us/ecdn/intro) reduces duplicate delivery; it does not remove presenter contribution, Wi-Fi or peer-network constraints. Measure again with the real audience/network layout.
 
 | Metric | Interpretation in context |
 |---|---|
@@ -143,7 +158,7 @@ Upload tenant data and reporting labels to CQD so subnet/building/site patterns 
 
 ### Meeting policy stack and advanced experiences
 
-Configure meeting settings first for tenant-wide behavior, then policies for cohorts, templates/labels for repeatable protected scenarios and meeting options for a specific event. Resolve direct, group/batch/package and global policy assignment and inspect the effective result. Allow propagation time, but do not use propagation as an explanation without evidence.
+Configure meeting settings first for tenant-wide behavior, then policies for cohorts, templates/labels for repeatable protected scenarios and meeting options for a specific event. For ordinary supported Teams policy types, [direct assignment beats ranked group assignment, then global](https://learn.microsoft.com/en-us/microsoftteams/assign-policies-users-and-groups); lower rank numbers win and nested membership does not inherit. Emergency site policy has a different precedence rule described below. Inspect the effective result for each policy type. Allow propagation time, but do not use propagation as an explanation without evidence.
 
 Build a test matrix for organizer, co-organizer, presenter, internal attendee, guest/external attendee and anonymous participant. Validate scheduling, lobby, who can present, content sharing, chat, reactions, apps, recording/transcription, attendance reports, breakout rooms, Q&A and captions. Protected meetings may add watermarking, encryption, recording restrictions or sensitivity-label enforcement under applicable licensing.
 
@@ -158,6 +173,8 @@ Assign the entitlement to organizers who need to create dial-in meetings. Config
 Changing the default bridge does not necessarily rewrite existing meeting invitations. Define when organizers must resend or recreate meetings and test a previously scheduled meeting during migration.
 
 ### Webinars and town halls
+
+The [unified Events experience](https://learn.microsoft.com/en-us/microsoftteams/plan-town-halls) preserves webinar/town-hall policy controls. Optimize for large audience chooses town-hall behavior and is mandatory above 1,000 attendees; disabling it uses webinar controls. Retain the exam’s format distinctions while checking actual interaction and license requirements. [Legacy live events](https://learn.microsoft.com/en-us/microsoftteams/teams-live-events/plan-for-teams-live-events) retired June 30, 2026, with a grace period through February 28, 2027 for previously scheduled events.
 
 For webinars, configure who may schedule, organization-only versus public registration, presenter/co-organizer roles, registration capacity/questions, communications, interaction, recording/publishing and reporting. Teams Premium may add advanced webinar functions; verify current license and organizer requirements.
 
@@ -192,7 +209,7 @@ Call park retains a call against a retrieval code; group call pickup, simultaneo
 
 An auto attendant applies greetings, menus, schedules and routing. A call queue distributes callers to agents. Design them on paper before configuration:
 
-1. create the application and its dedicated resource account;
+1. create the application and its resource account where needed (directly answering applications require one; nested applications can use the parent’s account);
 2. assign the Microsoft Teams Phone Resource Account license;
 3. assign a service number if PSTN callers must reach it;
 4. configure language, greetings/music, business hours and holidays;
@@ -202,13 +219,17 @@ An auto attendant applies greetings, menus, schedules and routing. A call queue 
 
 [Resource-account guidance](https://learn.microsoft.com/en-us/microsoftteams/manage-resource-accounts) distinguishes the identity/number anchor from the application. Do not enable voice-application resource accounts for interactive sign-in. Resource accounts for Rooms are a different device identity type.
 
-Routing methods and call priorities should match work rather than preference: serial, round robin, longest idle or attendant-style behavior can create different fairness and pickup outcomes. Presence-based routing, agent opt-out and callback change capacity assumptions. Use custom music/prompts only with appropriate rights and a fallback.
+Routing methods and call priorities should match work rather than preference: serial, round robin, longest idle or attendant-style behavior can create different fairness and pickup outcomes. Presence-based routing, agent opt-out and callback change capacity assumptions. [Queue configuration](https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue) makes callback eligibility, completion of music, caller response and agent answer share the timeout budget. A callback request can itself time out. Validate E.164 caller eligibility and failure notifications. Conference mode is recommended but incompatible with calls arriving from an LBR-enabled Direct Routing gateway; transfer mode is legacy, so retain a support-plan follow-up. Use custom music/prompts only with appropriate rights and a fallback.
 
 ### Dynamic emergency calling
 
 Treat emergency calling as a life-safety design. Define civic addresses/emergency locations, network sites/subnets/switches/ports/wireless access points, Location Information Service (LIS), trusted IPs, emergency numbers, routing policies, notification/security-desk workflow and carrier/PSTN responsibility. A verified address is a prerequisite for applicable number assignment; it does not prove that a roaming client receives the right dynamic location.
 
-Test only through carrier-approved validation numbers/processes. Validate fixed office, remote user, VPN, branch/SBA, room/common phone and mobile scenarios. Record dispatchable-location behavior, callback, notification, route and failure escalation. Revalidate after network, carrier, SBC, office or number changes.
+**Worked example 4 — Location matching must use the client’s prefix.** A synthetic client reports `10.20.30.170/25`; its network ID is **10.20.30.128/25**. An LIS entry only for `10.20.30.0/24` does not satisfy that documented exact network-ID calculation. If a mapped wireless access point identifies Floor 3 while the subnet says Floor 1, the WAP wins. [Dynamic emergency guidance](https://learn.microsoft.com/en-us/microsoftteams/configure-dynamic-emergency-calling) orders WAP, switch/port, switch, then subnet. Confirm the client’s actual reported location after propagation; successful number assignment does not validate LIS.
+
+Network-site emergency policy overrides the user’s policy at that site. Keep ordinary Direct Routing emergency-route requirements separate from the special Shared Calling procedure: Shared Calling requires a routing policy for every number model, with PSTN usages only for its Direct Routing path. Its emergency callback numbers must be routable, of the right number type/country and not reused across policies. A toll-free shared number cannot supply the empty-list callback fallback.
+
+Test only through carrier-approved validation numbers/processes. Validate fixed office, remote user, VPN, branch/SBA, room/common phone and mobile scenarios. Record dispatchable-location behavior, callback, notification, route and failure escalation. Revalidate after network, carrier, SBC, office or number changes. Dynamic emergency calling/security notifications are not supported by the Teams web client. Direct Routing requires appropriate PIDF/LO support plus the emergency routing provider/ELIN design. Treat emergency-route tests and ordinary PSTN tests as separate acceptance results.
 
 > **Related item:** A dial plan normalizes an ordinary number. Emergency call routing recognizes emergency dial strings and selects emergency behavior/routes. Never hide an emergency-design defect inside a broad normalization rule.
 
@@ -226,9 +247,11 @@ When a call fails, collect UTC time, calling/called number, user, policy, correl
 6. what final SIP response and reason came from each boundary?
 7. if signaling succeeded, did media negotiate and flow both ways?
 
-One-way audio usually points to media path/NAT/firewall/SBC negotiation, not dial-plan matching. A 4xx/5xx/6xx SIP response must be interpreted at the hop that generated it. Use synthetic tests and Call Analytics/CQD trends, then prove failover by disabling a safe test route/gateway rather than waiting for an outage.
+[Current media-protocol guidance](https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-media) still limits the SBC ICE-Lite candidate to IPv4; signaling IPv6 support does not establish IPv6 media-bypass support. Correlate the selected endpoint after forked early responses, final answer and ICE nomination. One-way audio usually points to media path/NAT/firewall/SBC negotiation, not dial-plan matching. A 4xx/5xx/6xx SIP response must be interpreted at the hop that generated it. Use synthetic tests and Call Analytics/CQD trends, then prove failover by disabling a safe test route/gateway rather than waiting for an outage.
 
 ---
+
+**Worked example 5 — Transfer acceptance is not destination answer.** In a synthetic Direct Routing trace, a blind transfer receives `202 Accepted` at 12:00:02 and the original leg ends immediately; the target later returns busy at 12:00:05. [June 2026 transfer behavior](https://learn.microsoft.com/en-us/troubleshoot/microsoftteams/phone-system/direct-routing/issues-with-call-transfers) permits the original-leg termination after SBC acceptance. Diagnose the subsequent target leg instead of treating that BYE alone as premature. Consultative transfers still require their own progress/completion handling. Preserve the Refer-To/Referred-By strings and correlate SIP legs; do not rewrite them as ordinary dial strings.
 
 ## 4. Configure and manage Teams Rooms and devices
 
@@ -238,23 +261,29 @@ Each Teams Room needs its own room resource account/mailbox and supported licens
 
 [Microsoft's room-account guidance](https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account) and [Conditional Access guidance](https://learn.microsoft.com/en-us/microsoftteams/rooms/conditional-access-and-compliance-for-devices) require a device-compatible identity design. Do not apply ordinary interactive MFA, smart-card or certificate prompts to a headless shared-room sign-in. Use supported modern authentication, compliant device, known network/location and scoped Conditional Access. Pilot on test rooms and keep an exclusion/recovery path while proving policy behavior.
 
-Android Teams devices use current AOSP/Microsoft Device Ecosystem Platform (MDEP) enrollment paths and supported Intune policies. Windows Rooms use Windows/Intune enrollment and device-specific configuration. Enrollment is not merely inventory: it supplies device compliance and access context. **VERIFY CURRENT:** AOSP/MDEP eligibility, migration dates, supported compliance controls and license requirements.
+Android Teams devices use current AOSP/Microsoft Device Ecosystem Platform (MDEP) enrollment paths and supported Intune policies. Windows Rooms use Windows/Intune enrollment and device-specific configuration. Enrollment is not merely inventory: it supplies device compliance and access context. [AOSP enrollment](https://learn.microsoft.com/en-us/microsoftteams/devices/teams-aosp-enrollment) uses one corporate-owned, user-associated enrollment profile with For Microsoft Teams devices enabled. Teams devices use account credentials rather than its QR code. An expired token blocks enrollment/sign-in. Intune entitlement and assigned AOSP compliance policy must be ready before compliance-based CA; Basic alone does not include Intune. MDEP/OEM firmware readiness and Intune enrollment are different checks. Scope Teams compliance by enrollment profile when other AOSP devices share the tenant.
+
+The [device-code policy guidance](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow) uses persistent, monitored exceptions for real device accounts and excludes Device Registration Service from the blocking policy. Exceptions are account-wide, not limited to a single room action. Include reprovisioning/recovery even for passwordless devices; confirm the installed authentication design rather than copying a legacy ROPC procedure.
 
 ### Operations and lifecycle
 
-Teams admin center manages supported device inventory, configuration profiles, tags, actions, software/firmware and health. Teams Rooms Pro Management adds proactive operations and managed-room capabilities for eligible Pro rooms. Local settings and XML configuration on Windows can define supported room behavior; centralized configuration should remain the source of truth and avoid configuration drift.
+The [Android management transition](https://learn.microsoft.com/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1) makes Rooms Pro Management the primary portal, with overlapping TAC workflows retiring during September 2026. Devices appear automatically after prerequisites; **configuration profiles must be imported as settings templates**. Portal entitlement does not mean every device needs a new Pro license. Check access/RBAC, required endpoints, minimum Admin Agent and actual device actions; an Entra AU-scoped administrator needs appropriate PMP role delegation. Existing pause settings generally carry over, but mandatory migration Agent updates are non-pausable. Follow the dated transition guidance and cloud-specific release status before relying on a rollout date. [Device management guidance](https://learn.microsoft.com/en-us/microsoftteams/devices/device-management) also distinguishes partial settings application from overwriting a full profile. Compare effective device settings after template import. [The XML reference](https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file) remains relevant to the exam, but Microsoft now recommends PMP settings and no longer publishes new XML settings. A correctly processed `SkypeSettings.xml` is consumed and deleted at startup; malformed XML can apply earlier settings before failure, omitted values stay unchanged, and unknown elements are ignored. File disappearance alone does not prove the intended outcome. Validate supported elements/case, keep a known-good configuration, and inspect effective settings after restart.
 
-Create update rings: pilot representative hardware/peripherals first, observe meetings/sign-in/HDMI/content/camera/audio, then stage production. Keep vendor firmware, Rooms app, OS, drivers and peripherals in a supported combination. A device shown as online is not proof that camera framing, microphone pickup, speaker output, dual display, HDMI ingest or guest join works.
+Create update rings: pilot representative hardware/peripherals first, observe meetings/sign-in/HDMI/content/camera/audio, then stage production. [Current Rooms release notes](https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note) separate installed app updates from web-delivered features. Windows 5.6.210.0 (August 3) enables the Windows 11 25H2 update; an app update can therefore precede an OS change. September Android notes include SIP/H.323 dialing, subject to supported partner/configuration. [Admin Agent 865](https://learn.microsoft.com/en-us/microsoftteams/devices/certified-device-apps) lists provisioning/health fixes, with government-cloud rollout separate from public cloud. Match OEM, app, OS, Agent, cloud and management surface in acceptance evidence. A device shown as online is not proof that camera framing, microphone pickup, speaker output, dual display, HDMI ingest or guest join works.
+
+September Android build `1449/1.0.96.2026249711` also fixes continued EWS calendar use on certain devices. The release excludes Cisco pending a later build. Verify the model-specific fix before disabling Exchange Web Services; a release-note date does not prove the device has migrated.
 
 For Windows Rooms, exclude unsupported domain Group Policy/user security settings that interfere with the appliance account while retaining required device security. Validate custom display layouts and XML syntax/version support. For Android, use configuration profiles for supported settings, IP phone policies, hotline and remote deployment, and verify that the correct account/device type receives them.
 
-SIP Gateway brings supported SIP devices into Teams. Verify device model/firmware, network provisioning, authentication, policy, calling/emergency behavior and feature limitations. Common-area and conference phones, panels and displays need the correct shared-device identity/license and operational profile, not a reused personal account.
+[SIP Gateway](https://learn.microsoft.com/en-us/microsoftteams/devices/sip-gateway-plan) brings supported SIP devices into Teams. It requires a PSTN-enabled phone number, does not publish device presence for presence-based queue routing, and can offboard disconnected signed-in devices after 30 days (signed-out devices after 14). A desk phone in storage may need reprovisioning; basic SIP connectivity does not prove native Teams feature parity. Verify device model/firmware, network provisioning, authentication, policy, calling/emergency behavior and feature limitations. Common-area and conference phones, panels and displays need the correct shared-device identity/license and operational profile, not a reused personal account.
 
 ### Room features and flexible workspaces
 
 Optional room capabilities include HDMI ingest, content camera, casting, proximity join, room remote, speaker recognition/intelligent audio/video, Direct Guest Join and hot desking. For each, record hardware/room/license/client prerequisites, privacy/accessibility effect and support fallback.
 
 For BYOD rooms and bookable desks, define the physical-space inventory, peripheral association/discovery, building/floor/room metadata, booking/resource behavior and user workflow. Import or discover devices and assign them to the correct space; monitor adoption and bad mappings. A BYOD room may rely on a user's device for compute, but shared peripherals and space identity still require governance.
+
+**Worked example 6 — Desk discovery needs distinct signals.** In [bookable desks](https://learn.microsoft.com/en-us/microsoftteams/rooms/bookable-desks), assume an auto-association threshold of three unique users. Alice docks four times, Bob once and Carol once: six events supply **three distinct users**, so the threshold is reached only with Carol. Alice’s repetitions alone do not qualify. Auto-association is for individual desks; pools follow their own mapping/capacity path. Missing, duplicate or invalid peripheral serial numbers are unsupported. Verify the actual desk and peripheral association, allow directory/association propagation, and distinguish a single reserved seat from a pool’s remaining capacity. Work-location updates also depend on policy and user opt-in.
 
 ### Device troubleshooting
 
@@ -282,7 +311,7 @@ Select town hall rather than a meeting from scale/interaction; assign organizers
 
 ## Hands-on labs
 
-Use a test tenant, lab numbers and synthetic data. Do not place test emergency calls except through carrier-approved procedures.
+**Execution boundary:** This review performed offline calculations/decision checks and repository validation only. No tenant, room, SIP, emergency, PSTN, media, SMS, portal migration or network diagnostic was executed. Use a test tenant, lab numbers and synthetic data. Do not place test emergency calls except through carrier-approved procedures.
 
 ### Lab 1 — Architecture and licensing matrix
 
@@ -315,6 +344,16 @@ Create a room account and booking policy, model supported Conditional Access/com
 ### Lab 8 — Device and call-quality incident
 
 Investigate one controlled sign-in/calendar/peripheral issue and one poor-media sample using Pro portal/TAC, Call Analytics, CQD, network and client/device evidence. **Evidence:** timeline, layer isolation, fix and retest.
+
+---
+
+### Lab 9 — Shared Calling and emergency-location evidence
+
+Tabletop user and resource-account routing separately, including inherited global usages, extension dialing, shared-number replacement, emergency callback ownership and the LIS example. If an authorized test environment exists, use only the carrier-approved test process. **Evidence:** user/resource policy matrix, correct client location, return-call route, negative cases and recovery ownership.
+
+### Lab 10 — Device-management and interop migration
+
+Inventory app/OS/OEM/Agent/cloud versions, portal access and AOSP compliance. Reconcile settings-template imports and actual device state; test delegated scope, meeting join, required third-party capabilities and recovery after an unsuccessful configuration. **Evidence:** inventory, before/after settings, precise interop entitlement and feature tests; no completion claim based on devices merely appearing in PMP.
 
 ---
 
@@ -359,25 +398,47 @@ Investigate one controlled sign-in/calendar/peripheral issue and one poor-media 
 
 ---
 
+37. **Does Shared Calling remove the user’s Teams Phone requirement?** No; it shares the number, not the user’s entitlement.
+38. **Which ordinary routing policy should be empty of usages?** The Shared Calling user’s; a Direct Routing resource account needs the proper usages.
+39. **What is the SMS example’s excess?** 150 measured segments over the pooled 2,000.
+40. **Does the most specific number pattern always win?** No; PSTN usage order and route priority matter.
+41. **Is an SBC list an ordered failover pair?** No; gateways within a route are tried in randomized order.
+42. **Is a valid address proof of dynamic location?** No; inspect actual LIS match, client and propagation.
+43. **Can a site emergency policy override a direct user policy?** Yes; ordinary Teams policy precedence cannot be generalized to this case.
+44. **Does a blind-transfer BYE prove the target answered?** No; acceptance and target completion are distinct.
+45. **Does the AOSP profile QR code onboard a Teams room?** No; Teams uses its account-based enrollment path.
+46. **Does deleting the processed XML prove every requested setting applied?** No; compare effective supported settings, including possible partial application.
+47. **Do six dock events mean six distinct auto-association signals?** No; the example contains only three users.
+48. **Does CVI enable every Teams Room to join every third-party meeting?** No; direction, endpoint, plan, policy and platform feature support differ.
+
+---
+
 ## Places to learn
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a lab/topology, and add resources only for measured gaps. Reconcile every older source with the April 28, 2026 blueprint, especially Shared Calling, SMS, Queues app, Copilot, current events, Android enrollment/MDEP, flexible workspaces and room/device features.
 
-The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), totaling **14 hours 43 minutes**.
+The two official paths are [plan and design Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/plan-configure-teams-voice/) (6h38) and [manage Teams collaboration communications systems](https://learn.microsoft.com/en-us/training/paths/manage-teams-voice/) (8h05), a historical total of **14 hours 43 minutes**. Current public pages list **15 modules (7/8)** without those runtimes in retrieved text; use the previous timings only as planning estimates.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MS-721 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/) | Public | 1–2 hours initially; 15 minutes per recheck |
-| Two official paths from [MS-721T00](https://learn.microsoft.com/en-us/training/courses/ms-721t00) | Public | 14 hours 43 minutes listed; allow 30–50 hours with labs and notes |
+| Two official paths from [MS-721T00](https://learn.microsoft.com/en-us/training/courses/ms-721t00) | Public | Historical 14h43; current 15 modules; allow 30–50 hours with labs/notes |
 | MS-721T00 instructor-led course | Paid/partner delivery | 5 days listed |
 | [Microsoft MS-721 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment?assessment-type=practice&assessmentId=78&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
-| [Pluralsight MS-721 path](https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721) | Paid | 8 hours / 5 courses plus practice exam; courses dated 2023–March 2024, so supplement April 2026 changes |
-| [O'Reilly/Apress MS-721 Certification Companion](https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/) by Fabrizio Volpe | Paid | 6 hours 8 minutes / 333 pages listed; October 2024, so supplement April 2026 changes |
-| [MeasureUp MS-721](https://www.measureup.com/ms-721-exam.html) | Paid | 167 questions; last updated January 2025; allow 6–10 hours with remediation and verify April 2026 changes |
+| [Pluralsight MS-721 path](https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721) | Paid | Five public course listings total 8h04 (path rounds to 8h); 2023–March 2024 dates; paid lessons/practice unreviewed |
+| [O'Reilly/Apress MS-721 Certification Companion](https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/) by Fabrizio Volpe | Paid | Historical 6h08 / 333 pages, October 2024; page blocked on recheck, current edition/content unverified |
+| [MeasureUp MS-721](https://www.measureup.com/ms-721-exam.html) | Paid | 167 questions (47/26/59/35), January 2025 update verified publicly; paid content/April completeness unreviewed; allow 6–10 hours |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy) | Public | 2–10 hours selectively; no complete current MS-721 playlist was confirmed |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Schedule dependent; use published start/end times after sign-in |
 
-No exact current Whizlabs MS-721 offering was independently verified. Udemy listed several MS-721 question-only products, but this review did not establish enough provenance and freshness to recommend one. Start with Microsoft's free Practice Assessment; add paid questions only for a different explanation style or measured gap, and reject any provider claiming recalled live exam questions.
+Practice Assessment and video/partner sites returned public shells; no interactive questions or videos were reviewed. No exact current Whizlabs MS-721 offering was independently verified. Udemy listed several MS-721 question-only products, but this review did not establish enough provenance and freshness to recommend one. Start with Microsoft's free Practice Assessment; add paid questions only for a different explanation style or measured gap, and reject any provider claiming recalled live exam questions.
+
+### Blog readings with an output
+
+| Reading | Useful task and boundary |
+|---|---|
+| [Teams Rooms interop comparison](https://empowering.cloud/microsoft-teams-rooms-cloud-video-interop-vs-direct-guest-join-vs-cross-platform-meetings-via-sip/) — Tom Arbuthnot with Pexip’s Marius Nilsen, May 11, 2026 | Draw both calling directions and choose DGJ, CVI/SIP Guest Join or cross-platform SIP from requirements. The public synopsis is AI-assisted and team-reviewed; the video was not watched. Provider claims and older Android availability wording must be checked against current Microsoft documentation. |
+| [What’s new in Teams, July 2026](https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510) — Kerry Perez Heffernan, July 31 | Turn Windows passwordless Rooms and Android settings-management announcements into a device/version/license/policy/recovery acceptance sheet. The main article was read; demos and actual device deployment were not tested. |
 
 ## Final readiness checklist
 

@@ -690,6 +690,8 @@ The review maps every July 29, 2026 subobjective to a Teams/Microsoft 365 object
 
 ## MS-721 coverage record
 
+The September 28 [deep review](research/2026-09-28-ms-721-deep-review.md) maps 173 detailed objectives. Whole guide read; all 173 unchanged April objectives in nineteen groups mapped. Add six worked examples, two labs (ten total), twelve answered checks (48 total), two bounded blog readings and five follow-ups plus existing shared VDI/event dates. Expand Shared Calling/SMS, routing/SBA/emergency/media, events/voice funding, Android portal/AOSP, interop, XML and desk association. Fourteen offline checks passed; no tenant, carrier, emergency, device or network execution. Historical catalog metadata qualified; human review pending. Current guide citations: 52 registered, 51 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Plan and design collaboration communications systems | Section 1, all integrated scenarios, and Labs 1–2 |

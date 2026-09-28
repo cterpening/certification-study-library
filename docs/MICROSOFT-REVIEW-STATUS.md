@@ -4,24 +4,24 @@ As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 34 have review work.
+50 guides; 33 have review work.
 
-Next batch: MS-721, AZ-800, MS-102.
+Next batch: AZ-800, MS-102, AB-100.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [MS-721](../guides/MS-721-collaboration-communications-systems-engineer.md) | pending | Pending | not-recorded |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [MS-102](../guides/MS-102-microsoft-365-administrator.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
-| [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
 | [MS-700](../guides/MS-700-managing-microsoft-teams.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
+| [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
 | [SC-200](../guides/SC-200-microsoft-security-operations-analyst.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | reviewed | 2026-09-27 | offline-only |
 | [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
+| [MS-721](../guides/MS-721-collaboration-communications-systems-engineer.md) | reviewed | 2026-09-28 | offline-only |
 | [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | reviewed | 2026-09-27 | offline-only |
 | [DP-700](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md) | reviewed | 2026-09-27 | offline-only |
 | [DP-750](../guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md) | reviewed | 2026-09-27 | offline-only |

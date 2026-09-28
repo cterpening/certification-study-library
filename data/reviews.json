@@ -2139,19 +2139,58 @@
       "exam_code": "MS-721",
       "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ms-721-official-objectives.txt",
       "blueprint_snapshot_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
       "objective_coverage": [
-        {"objective_group": "Plan and design collaboration communications systems", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–2"]},
-        {"objective_group": "Configure and manage Teams meetings, webinars, and town halls", "guide_sections": ["Section 2", "Town-hall scenario", "Labs 3–4"]},
-        {"objective_group": "Implement and configure Teams Phone", "guide_sections": ["Section 3", "Phone-migration scenario", "Labs 4–6"]},
-        {"objective_group": "Configure and manage Teams Rooms and devices", "guide_sections": ["Section 4", "Rooms sign-in scenario", "Labs 7–8"]}
+        {
+          "objective_group": "Plan and design collaboration communications systems",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams meetings, webinars, and town halls",
+          "guide_sections": [
+            "Section 2",
+            "Town-hall scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Implement and configure Teams Phone",
+          "guide_sections": [
+            "Section 3",
+            "Phone-migration scenario",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage Teams Rooms and devices",
+          "guide_sections": [
+            "Section 4",
+            "Rooms sign-in scenario",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 19, "reachable": 18, "access_blocked": 1, "missing_or_error": 0},
-      "notes": "Every April 28, 2026 subobjective is mapped to a meeting/event, identity, entitlement, number, policy, PSTN/carrier/SBC, network/media, device/room, evidence, failure, or recovery decision. Three scenarios, eight labs and 36 original checks cover meeting types/policies/templates/Premium/Copilot, Audio Conferencing, webinars/town halls/eCDN, Calling Plans/Operator Connect/Teams Phone Mobile/Direct Routing/Shared Calling/SMS, number lifecycle, SBC/SBA/LBR/LMO/compliance recording/contact centers/Queues app, network/QoS/CQD, voice-user policies, auto attendants/queues, emergency calling, Direct Routing implementation/troubleshooting, Rooms resource accounts/CA/enrollment, Windows/Android/SIP devices, BYOD/bookable desks and device operations. All 19 URLs are cataloged: 18 reachable and the O'Reilly page automation-blocked; none missing or broken. The guide records 14 hours 43 minutes of Learn paths, five-day course, free Practice Assessment and April 2026 freshness gaps in older commercial resources."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 52,
+        "reachable": 51,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Whole guide read; all 173 unchanged April objectives in nineteen groups mapped. Add six worked examples, two labs (ten total), twelve answered checks (48 total), two bounded blog readings and five follow-ups plus existing shared VDI/event dates. Expand Shared Calling/SMS, routing/SBA/emergency/media, events/voice funding, Android portal/AOSP, interop, XML and desk association. Fourteen offline checks passed; no tenant, carrier, emergency, device or network execution. Historical catalog metadata qualified; human review pending. See docs/research/2026-09-28-ms-721-deep-review.md"
     },
     {
       "id": "dp-600-2026-09-01-source-validation",
