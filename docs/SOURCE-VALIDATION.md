@@ -205,6 +205,8 @@ The guide maps every April 17, 2026 objective bullet to an architecture decision
 
 ## AZ-104 coverage record
 
+The September 28 [deep review](research/2026-09-28-az-104-deep-review.md) maps 82 detailed objectives. Whole guide and 82 unchanged objectives mapped across fifteen groups. Add seven worked examples, ten labs, 48 explained checks and two bounded Microsoft blog exercises. Correct identity/permission, storage/versioning, ARM, encryption, container, App Service, networking, telemetry, recovery and catalog boundaries. Twenty-nine offline assertions passed; one KQL example reviewed but not executed. No cloud, tenant, deployment, SDK, certificate, backup/failover or paid-content execution; independent human review pending. Current guide citations: 53 registered, 50 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Manage Azure identities and governance | Section 2, integrated scenarios, and Lab 1 |

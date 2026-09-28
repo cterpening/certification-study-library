@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AZ-104's 82 objectives; add seven worked examples, ten labs, 48 explained checks and two Microsoft blog exercises. Update permissions, storage, deployment, encryption, app/certificate/backup, network and recovery guidance; refresh learning metadata and preserve review history. See the [AZ-104 report](docs/research/2026-09-28-az-104-deep-review.md).
+
 - September 28, 2026: deeply review AI-901's 29 objectives; add six worked examples, eight labs, 36 explained checks, two Microsoft blog exercises and a Pluralsight implementation course. Update Foundry clients, speech/voice, vision lifecycle, Content Understanding and catalog evidence; preserve historical reviews and schedule follow-ups. See the [AI-901 report](docs/research/2026-09-28-ai-901-deep-review.md).
 
 - September 28, 2026: deeply review AI-300's 58 objectives; add six worked examples, ten labs, 48 explained checks and two Microsoft blog exercises. Update pipeline reuse, feature lineage, safe rollout, network/capacity, evaluation/telemetry, model lifecycle and learning catalogs; preserve historical evidence and schedule follow-ups. See the [AI-300 report](docs/research/2026-09-28-ai-300-deep-review.md).

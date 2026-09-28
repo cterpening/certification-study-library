@@ -4,6 +4,379 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-az104-deep-review",
+      "title": "AZ-104 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-104"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-104",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-104-microsoft-azure-administrator.md",
+          "baseline_sha256": "d76d3150dce8b3672fd30205aa7ae02d540d6b29eec05f03dad40ab2ce5f6f0a",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "82 unchanged objectives; April 17 baseline, active 100-minute ten-language exam and annual renewal."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted identity, role, storage, ARM, VM, container, app/TLS/backup, networking, telemetry and recovery semantics applied."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Two Microsoft blog exercises bounded by current primary implementation/lifecycle guidance; outdated routing date and broad certificate assurances not adopted."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Four-day course; Pluralsight 34h47 component total/35h header and stale weight paragraph; blocked OReilly/Udemy metadata checked through indexed pages; Whizlabs counts unverified; MeasureUp assessment has no rationales."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Clarify current API-scoped outbound behavior against old blog/overview, ASC 198 days versus blog industry limit, fixed immutability versus retention, and no-rationale assessment versus learning practice."
+            }
+          },
+          "findings": [
+            {
+              "id": "az104-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "License membership changes require effective-state checks",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current procedure excludes nested groups and verifies destination assignment before removal.",
+              "recommendation": "Add safe transition and feature-specific membership boundary.",
+              "disposition": "applied",
+              "source_id": "ms-102-group-licensing",
+              "resolution": "Add safe transition and feature-specific membership boundary."
+            },
+            {
+              "id": "az104-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy SSPR method settings are no longer current",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-enable-sspr",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Authentication methods policy replaces legacy management from September 30, 2025.",
+              "recommendation": "Update method policy, scope and non-admin validation.",
+              "disposition": "applied",
+              "source_id": "az104-sspr",
+              "resolution": "Update method policy, scope and non-admin validation."
+            },
+            {
+              "id": "az104-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Role exclusions are not explicit denies",
+              "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NotActions subtracts locally and other roles can grant; deny assignments differ.",
+              "recommendation": "Add original effective-permission set example.",
+              "disposition": "applied",
+              "source_id": "az104-role-definitions",
+              "resolution": "Add original effective-permission set example."
+            },
+            {
+              "id": "az104-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Replication has prerequisite and destination-write limits",
+              "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Source change feed, bilateral versioning, matching rules and destination constraints.",
+              "recommendation": "Add configuration/verification checklist and separate backup.",
+              "disposition": "applied",
+              "source_id": "az104-replication",
+              "resolution": "Add configuration/verification checklist and separate backup."
+            },
+            {
+              "id": "az104-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Undelete with versioning does not restore the current blob",
+              "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Promote a chosen version; retention and container/account protection differ.",
+              "recommendation": "Add original version timeline and correct lab recovery step.",
+              "disposition": "applied",
+              "source_id": "az104-softdelete",
+              "resolution": "Add original version timeline and correct lab recovery step."
+            },
+            {
+              "id": "az104-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Lifecycle policy changes do not execute immediately",
+              "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Periodic execution and running-policy behavior; archive rehydration unsupported.",
+              "recommendation": "Add timing, filter, whole-policy and recovery boundaries.",
+              "disposition": "applied",
+              "source_id": "az104-lifecycle",
+              "resolution": "Add timing, filter, whole-policy and recovery boundaries."
+            },
+            {
+              "id": "az104-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Incremental resources do not imply incremental properties",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Declared resource configuration is reapplied; omitted properties can reset.",
+              "recommendation": "Add property/resource distinction and current deletion direction.",
+              "disposition": "applied",
+              "source_id": "az104-arm-modes",
+              "resolution": "Add property/resource distinction and current deletion direction."
+            },
+            {
+              "id": "az104-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Disk encryption at host is not a running-guest isolation guarantee",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Host data/caches and encrypted disk path with explicit eligibility/deallocation limits.",
+              "recommendation": "Correct table wording and configuration caveats.",
+              "disposition": "applied",
+              "source_id": "az104-host-encryption",
+              "resolution": "Correct table wording and configuration caveats."
+            },
+            {
+              "id": "az104-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Registry roles depend on permission mode",
+              "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Legacy AcrPull/AcrPush/AcrDelete not honored in ABAC-enabled mode.",
+              "recommendation": "Add role migration/testing boundary.",
+              "disposition": "applied",
+              "source_id": "ai200-acr-abac",
+              "resolution": "Add role migration/testing boundary."
+            },
+            {
+              "id": "az104-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Swap does not move every dependency",
+              "url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Managed identity and VNet integration remain with slots; endpoints not cloned.",
+              "recommendation": "Add per-slot validation and database/worker limitations.",
+              "disposition": "applied",
+              "source_id": "az104-app-slots",
+              "resolution": "Add per-slot validation and database/worker limitations."
+            },
+            {
+              "id": "az104-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Automatic certificate management has external-consumer and validation limits",
+              "url": "https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ASC 198-day issuance/validation window; exported copies and pending validation require action.",
+              "recommendation": "Add inventory exercise and current certificate-type-specific guidance.",
+              "disposition": "applied",
+              "source_id": "az104-cert-changes",
+              "resolution": "Add inventory exercise and current certificate-type-specific guidance."
+            },
+            {
+              "id": "az104-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "App backup does not imply database recovery",
+              "url": "https://learn.microsoft.com/en-us/azure/app-service/manage-backup",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Different backup limits/authentication, Flexible Server exclusion and 2028 linked-backup deadline.",
+              "recommendation": "Add app/database recovery split and follow-up.",
+              "disposition": "applied",
+              "source_id": "az104-app-backup",
+              "resolution": "Add app/database recovery split and follow-up."
+            },
+            {
+              "id": "az104-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Private subnet default scope is API- and VNet-dependent",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New VNet APIs after March 31, 2026 require explicit egress; existing VNets unchanged.",
+              "recommendation": "Add actual-setting verification and qualify old blog/public-IP prose.",
+              "disposition": "applied",
+              "source_id": "az104-outbound",
+              "resolution": "Add actual-setting verification and qualify old blog/public-IP prose."
+            },
+            {
+              "id": "az104-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy network labs include unavailable features",
+              "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New NSG flow logs unavailable and retire in 2027; current LB/PIP references retire Basic SKUs.",
+              "recommendation": "Use supported network labs and preserve record-retention distinction.",
+              "disposition": "applied",
+              "source_id": "az104-nsg-flow",
+              "resolution": "Use supported network labs and preserve record-retention distinction."
+            },
+            {
+              "id": "az104-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Installed agent does not prove guest-data coverage",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Associated DCRs define data and destination.",
+              "recommendation": "Add ingestion fixture/coverage and event-versus-operation example.",
+              "disposition": "applied",
+              "source_id": "az-801-doc-56-azure-monitor-agent-overview",
+              "resolution": "Add ingestion fixture/coverage and event-versus-operation example."
+            },
+            {
+              "id": "az104-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Retention can outlast fixed immutability",
+              "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fixed duration in supported Recovery Services vaults differs from policy retention.",
+              "recommendation": "Add retention-window example, irreversible lock and WORM-scope boundary.",
+              "disposition": "applied",
+              "source_id": "az801-immutable-vault",
+              "resolution": "Add retention-window example, irreversible lock and WORM-scope boundary."
+            },
+            {
+              "id": "az104-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A completed failover is not validated service recovery",
+              "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-104"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Recovery-point choices and isolated drill/cleanup have distinct responsibilities.",
+              "recommendation": "Add RPO/RTO arithmetic and application validation.",
+              "disposition": "applied",
+              "source_id": "az104-asr-test",
+              "resolution": "Add RPO/RTO arithmetic and application validation."
+            }
+          ],
+          "notes": "Whole guide and 82 unchanged objectives mapped across fifteen groups. Add seven worked examples, ten labs, 48 explained checks and two bounded Microsoft blog exercises. Correct identity/permission, storage/versioning, ARM, encryption, container, App Service, networking, telemetry, recovery and catalog boundaries. Twenty-nine offline assertions passed; one KQL example reviewed but not executed. No cloud, tenant, deployment, SDK, certificate, backup/failover or paid-content execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-az-104-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 17,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ai901-deep-review",
       "title": "AI-901 complete guide and learning-content review",
       "rubric_version": 1,

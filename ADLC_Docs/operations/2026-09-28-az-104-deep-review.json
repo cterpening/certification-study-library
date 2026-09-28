@@ -1,0 +1,2768 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AZ-104",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AZ-104-microsoft-azure-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "d44ee694b5d0312f5e17848fff707a406c8810c2db42e88a12b8a6c378512f0a",
+  "guide_after_sha256": "71c1ac653621e80e1a3262a1ce36d7162de548542ce1070d07968659b8b5abd2",
+  "prior_records": {
+    "exam": {
+      "code": "AZ-104",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Azure Administrator",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+      "guide_path": "guides/AZ-104-microsoft-azure-administrator.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Azure fundamentals plus practical operating-system, networking, server, virtualization, PowerShell or Azure CLI, Resource Manager or Bicep, and Microsoft Entra ID experience."
+    },
+    "review": {
+      "id": "az-104-2026-08-31-source-validation",
+      "exam_code": "AZ-104",
+      "guide_path": "guides/AZ-104-microsoft-azure-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-104-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage Azure identities and governance",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage storage",
+          "guide_sections": [
+            "Section 3",
+            "Private web application scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Deploy and manage Azure compute resources",
+          "guide_sections": [
+            "Section 4",
+            "Private web application scenario",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage virtual networking",
+          "guide_sections": [
+            "Section 5",
+            "VM connectivity scenario",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Monitor and maintain Azure resources",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 25,
+        "reachable": 22,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted objective groups and their April 17, 2026 bullets are mapped to scope and control-plane mental models, operational decision tables, failure modes, two integrated scenarios, eight independent labs, and 20 original knowledge checks. All 25 cited URLs are exact source-catalog entries. Two O'Reilly pages and one Udemy page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Licensing, supported regions and SKUs, limits, policy and platform behaviors, recovery windows, networking support, and portal surfaces are explicitly marked VERIFY CURRENT."
+    },
+    "sources": [
+      {
+        "id": "azure-monitor-documentation",
+        "title": "Azure Monitor documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305"
+        ]
+      },
+      {
+        "id": "azure-policy-overview",
+        "title": "What is Azure Policy?",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305"
+        ]
+      },
+      {
+        "id": "azure-private-endpoint-overview",
+        "title": "What is a private endpoint?",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Overview, approval, client connectivity and DNS sections reviewed; no private endpoint provisioned. Public-exposure setting is a separate verification task. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-rbac-overview",
+        "title": "What is Azure role-based access control?",
+        "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-storage-introduction",
+        "title": "Introduction to Azure Storage",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "azure-storage-redundancy",
+        "title": "Azure Storage redundancy",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "AZ-305"
+        ]
+      },
+      {
+        "id": "azure-storage-azcopy",
+        "title": "Copy or move data to Azure Storage by using AzCopy v10",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "azure-virtual-machines-overview",
+        "title": "Azure Virtual Machines overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "azure-virtual-network-overview",
+        "title": "Azure Virtual Network overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-104",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Targeted VNet, connectivity, filtering and routing overview read. No automatic outbound-access assumption added to guide. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-network-security-groups-overview-sc900",
+        "title": "Azure network security groups overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "SC-900",
+          "AZ-104",
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-104-blueprint",
+        "title": "Study guide for Exam AZ-104: Microsoft Azure Administrator",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "az-104-bicep-overview",
+        "title": "What is Bicep?",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "az-104-container-apps-overview",
+        "title": "Azure Container Apps overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "az-104-app-service-overview",
+        "title": "Azure App Service overview",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "az-104-load-balancer-overview",
+        "title": "What is Azure Load Balancer?",
+        "url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "az-104-backup-overview",
+        "title": "Azure Backup overview",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104",
+          "AZ-305",
+          "AZ-801"
+        ]
+      },
+      {
+        "id": "az-104-microsoft-learn-course",
+        "title": "Course AZ-104T00-A: Microsoft Azure Administrator",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-104t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ]
+      },
+      {
+        "id": "az-104-microsoft-practice-assessment",
+        "title": "Microsoft AZ-104 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "Official free readiness assessment; it does not replace training or hands-on experience."
+      },
+      {
+        "id": "az-104-john-savill-study-cram-v2",
+        "title": "AZ-104 Administrator Associate Study Cram v2",
+        "url": "https://www.youtube.com/watch?v=0Knf9nub4-k",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "Independent high-density review; candidates should reconcile older recordings with the current blueprint."
+      },
+      {
+        "id": "az-104-pluralsight-path",
+        "title": "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+        "url": "https://www.pluralsight.com/paths/az-104-microsoft-azure-administrator-certification-prep",
+        "publisher": "Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "Path advertised 36 hours, six courses, eight labs, and a practice exam when checked."
+      },
+      {
+        "id": "az-104-oreilly-exam-ref-second-edition",
+        "title": "Exam Ref AZ-104 Microsoft Azure Administrator, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/exam-ref-az-104/9780138345990/",
+        "publisher": "Microsoft Press via O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "391-page 2024 book; O'Reilly displayed a 10h 34m platform estimate when checked."
+      },
+      {
+        "id": "az-104-oreilly-aci-course",
+        "title": "Microsoft Azure Administrator (AZ-104)",
+        "url": "https://www.oreilly.com/library/view/microsoft-azure-administrator/9781836206132/video1_1.html",
+        "publisher": "ACI Learning via O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "O'Reilly displayed a 27h 23m runtime when checked."
+      },
+      {
+        "id": "az-104-udemy-scott-duffy",
+        "title": "AZ-104 Microsoft Azure Administrator - Complete Exam Prep",
+        "url": "https://www.udemy.com/course/70533-azure/",
+        "publisher": "Scott Duffy via Udemy",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "Udemy displayed 18h 2m and a June 2026 update when checked."
+      },
+      {
+        "id": "az-104-whizlabs",
+        "title": "Exam AZ-104: Microsoft Azure Administrator Associate",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-az-104/",
+        "publisher": "Whizlabs",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "Catalog advertised videos, labs, sandbox access, and practice quizzes; verify the current bundle before purchase."
+      },
+      {
+        "id": "az-104-measureup-assessment",
+        "title": "Assessment AZ-104: Microsoft Azure Administrator",
+        "url": "https://www.measureup.com/assessment-az-104-microsoft-azure-administrator.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-104"
+        ],
+        "notes": "30-question assessment-only product updated June 2026 when checked; explanations and references were not included in this product."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "7e02548403c0c3f10e94dcf511115a20ebfae079281de09939f1245b5e6bd9d3",
+      "guide_sections": "2 / User/group tasks, source and usage location; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "c6971ee7c9d90dd02be5035084fcb16f0e21c9b235cbfedddf128cb10c399c5c",
+      "guide_sections": "2 / Member properties and membership; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "7b2be3d73e13317142d37132ddbe10cc11714d7a900c59573ae5d09baf44f5c7",
+      "guide_sections": "2 / Effective group licensing, nesting and safe transitions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "b1291b88064c6045da5cf06944458113a40be458c0b6267465bca56aeb8af783",
+      "guide_sections": "2 / Guest invitation versus resource permission",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "28541ae6017febab8551d9e265170901b2905374853d24e109a4f4dc79ade6d0",
+      "guide_sections": "2 / Current SSPR methods, eligibility and scoped test",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "a7dde8aee3c640dc9877fd87accf3fb8ffd99f0b443aadf40ffb7ab1e18d7064",
+      "guide_sections": "2 / Built-in roles, planes and role definitions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "cc8210056296c36942a4296db2b7265e4db58a7c1068ddb5579cabfc1f353de5",
+      "guide_sections": "1–2 / Principal, role, inherited scope and least privilege",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "92b2e2739931959b82ad3e347caae7f19b6f29aa3bd87f12ada8027f3769d700",
+      "guide_sections": "2 / NotActions versus deny; worked example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "ea0bc405f3247d50592ef887aa79cea56ba84c554dab622d253f7f0578623c32",
+      "guide_sections": "2 / Policy effects, identity and existing-resource remediation; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "84de78d458b64921a4f8d66ec925a42d6123b2978f7b34dac5d7d2fea05f6377",
+      "guide_sections": "2 / Management-plane locks and inherited effects; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "18e8e6f33ac530f69ee624aba9fbb3e2f55a4742234ddbf7c97233b328317a00",
+      "guide_sections": "2 / Tags and policy/automation inheritance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "ec9055e06b5f71a3dc98e121fbd1e28b63f21040f810829b8a57edd3cfd29caa",
+      "guide_sections": "1–2 / Resource-group lifecycle and isolation limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "24a3f4314e5cc6b7d2a7b3ea89cb5b19047cfac524f57ef832f7931fde5ceab3",
+      "guide_sections": "1–2 / Subscription billing, access and quota boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "053f5c0a56e8ff15637c414868c0c6c00a134bd348cff00012b10fd58a60a145",
+      "guide_sections": "2 / Budgets, alerts and Advisor decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "ff8e7b0e3df3f0d0ab30d4794d086d6078dc0cbbb94804729b47488868c7d37d",
+      "guide_sections": "1–2 / Management-group hierarchy and inherited control",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "b71813acc52a81fc1887b90ca683769754521438573fb539da7191bbfed866d7",
+      "guide_sections": "3 / Storage network gates, firewall and service/private endpoints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "a0a3dc3e7018c457d37a7b8089ef15d605189ec7183bf40c6b5a7ac4ca722df0",
+      "guide_sections": "3 / SAS permission/time/secret/revocation scope; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "ee2ab77ca85bf5235d958dcb0e4157fa2425cf19ede02505e2651e22e1a0dbfb",
+      "guide_sections": "3 / Service-SAS policy support and five-policy limit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "d2c1027d98471d2e1addb3c59bbd9a187d8aa01d459cdc0d53f597b63120728e",
+      "guide_sections": "3 / Alternate-key rotation and signed-SAS invalidation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "bdad605decffa187e458dc10fd427a04e16b7a4b7d37b53a2d158d44bb556f9d",
+      "guide_sections": "3 / SMB identity source, share role, ACL and client/network",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "82a871794012a0275c0412396df3d6512223411e7ddf169bd43a5d717b62209a",
+      "guide_sections": "3 / Account/region/redundancy/encryption choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "9b66782655d92b3bc2624b991d66df81d76f3d1abf581de05e26772a65af7197",
+      "guide_sections": "3 / LRS/ZRS/GRS/GZRS/read-secondary limitations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "fda8e335be360ffa1458ec13338c73e5d4ca7cc4c2aded4387f41921bf2d68b8",
+      "guide_sections": "3 / Replication prerequisites, rule scope and failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "118f5f657aec0d75def967230b3ed75b261a145fd02d95bbf8508901ce65fcc8",
+      "guide_sections": "3 / Service, customer-managed and infrastructure encryption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "db9c4d923b2bba4db50bc3cf30aa47fc7a03f3c6bbd38efa99136468f289edf6",
+      "guide_sections": "3 / Storage Explorer/AzCopy transfer validation; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "255b63e75c5d148566beaf67b81429a48279b6ae1e3ef34f9f5641aeafdc5315",
+      "guide_sections": "3 / File-share creation and protocol/capacity/authentication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "c81594f06b9fe8419a05e4a5c515479a0dc77f20e2e05c899b1fc144f2aa5634",
+      "guide_sections": "3 / Private blob container creation and access validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "b9dcec7f48e58f37f433a8aa72fd9b535c18f69ed6cd1e61de38c136527d641b",
+      "guide_sections": "3 / Blob tiers, archive and rehydration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "b47eb99703057478600b05046aafd5127f17072e1e8016c3d67cdedf93c6ee51",
+      "guide_sections": "3 / Blob/container/account recovery boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "95d4b4717b0945f00147f6702e03fb7ba58cca6a2226489304d69ee0b5e22342",
+      "guide_sections": "3 / File-share snapshot and share soft delete",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "8862a5c214f7b74eb04aae8311b4927a0100ca3a675c73c09e763a4f96d57ba3",
+      "guide_sections": "3 / Periodic lifecycle rules and whole-policy updates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "0cd36788b19f3268d66039e25e6356055e8bd42cb006e384d62b2d7f3b6bb1aa",
+      "guide_sections": "3 / Version/current-blob recovery; worked example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "283707a895c7281b08c9f67a55cfce22d41e005ef0a06240cce54c11a4337bb7",
+      "guide_sections": "4 / Declarative graph, parameters, modules and scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "2d51033d5a61719f3681de4116d595fb695d92aee2e916d1f8e058be95491d86",
+      "guide_sections": "4 / Full resource configuration versus incremental resource handling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "e9f13287f1e8a5aff0530de967df2fd43d5ffc93e64c409eebc672e8ae3602fe",
+      "guide_sections": "4 / Bicep changes, build and what-if; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "d613a50f56f032cac6fd7c52bf732c21d6f8b752b4da9465e28d08c528ce4e58",
+      "guide_sections": "4 / Safe deployment, operations and validation; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "a4107da4f70059fabffa0db706be7a5aa00e426ca5dee032870b460d77c794aa",
+      "guide_sections": "4 / Export/decompile and repair; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "b4a3394c758b1cca17953c557256ce6664c298f4109f84f31242beea9b475391",
+      "guide_sections": "4 / VM dependency graph and deployment; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "96003a16c2da4ea8d37ce7fb21a4247faa15dd250ac1fe329f767f068ee80339",
+      "guide_sections": "4 / Host encryption boundary, eligibility and existing instances",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "4c196198126feb080143167249d521f70bb444990699663e59056acc24e5ff7a",
+      "guide_sections": "4 / Dependency inventory and move versus region migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "0a72f3b62514a4da678ce9be3d24786b8d6d7b9f375c90812c758197eea9aef5",
+      "guide_sections": "4 / Size, restart/capacity; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "4adbfec44d5f5bd694de2112c88a709ab746a2b6510e5db86a99bcaea53d06d2",
+      "guide_sections": "4 / Managed disk design and recovery; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "69517a2eec7d34d1ece3bc8fbeb13f09d6c17fefcf1087800a454dff42c23528",
+      "guide_sections": "4 / Availability-set versus zone placement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "872536f9d213636754198f6fe84385a1db2b7871e7289e737e76d5a2e697292b",
+      "guide_sections": "4 / Scale-set mode, upgrade/health and scaling contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "d60f74ee26db3354d7bcb3c9356fb166f1ac1d0fb4f6cc102be427ed665222ef",
+      "guide_sections": "4 / ACR control/data roles and ABAC mode; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "1f4d65d81cbb6334ae06408ac1ce0ead3bf08c14a2fb1f59fa0b06d22308ac76",
+      "guide_sections": "4 / ACI image, sizing, restart, networking and storage; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "0396a1850695bedfc12ec23fe8fc0d638e31cc32262d7bccf72b472272606bbe",
+      "guide_sections": "4 / Container Apps environment/app/revision; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "16471213746334ba3b940c27aa411f23e509abd2d992015405f6c699dc630a58",
+      "guide_sections": "4 / CPU/memory, replica limits and scaling tests; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "76527147644551998c3a544d7632d9f27cd87290b15f0a41e4f46b8af6eaf181",
+      "guide_sections": "4 / Plan scope and regional compute; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "70b2f243db533fd2dbd94e8915f4025cc39966e00d1b4412a49b8e0dfd09f4b3",
+      "guide_sections": "4 / Up/out and per-worker capacity; example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "ff58c3f80059471638840b5a006e12721ffba3c94fd7986676cdc3f23b9b49d5",
+      "guide_sections": "4 / App configuration/content on the plan; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "dd5a24c6fc066f385fdab60bdcfd0a4e0abc6051de086296a4b7c188d84be48f",
+      "guide_sections": "4 / Certificate/binding and current ASMC/ASC limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "34417a741b7e8a729ca2d2c78df63c6de5d2a3d54b1276a0f081ee03f83714f4",
+      "guide_sections": "4 / DNS ownership, domain and certificate binding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "a5b1b2e1a564ca2009bbe0d5c6568007debafbc4e58ffc7976c97f2962ca7b23",
+      "guide_sections": "4 / Automatic/custom backup and database boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "7dc34c6dbf6f1c1875c91dedf807bd26704ced5bc070e7b0de753e8585de27fa",
+      "guide_sections": "4 / Inbound/outbound and per-slot networking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "25697e92e05f8278fba0c09693d28d960ded966155edfb5a5069d1605e5f9af1",
+      "guide_sections": "4 / Swap/sticky/identity/recycling boundaries; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "f98710b1a13decd62f2f686dec56d20ee58cd27b316185936c7d69c04c7f18ba",
+      "guide_sections": "5 / Non-overlap, reservations and subnet capacity; example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "1c030360abf9c9c20cd6bc282e4c00c6975046388c038a28024d682db30caf3a",
+      "guide_sections": "5 / Non-transitive peering and gateways",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "fd3456bcd58ecd78c04db05b2e1f9e2cbc5cc179042532aaf629e838743ebfd2",
+      "guide_sections": "5 / Public-IP SKU, region, zones, association and DNS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "8e062754cf83e7098ac188ebdd3dd3d4f40e2095444ffd2ffd6e5bbe6f068098",
+      "guide_sections": "5 / Longest-prefix route, UDR and return path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "69a6d060afab1a58be5dcc4b7180f84c51e1bae10930c7c15976d7c9dec72710",
+      "guide_sections": "1, 5, 7 / Layered diagnosis and explicit egress; labs 6–7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "a4891546c7929841f8b8f497f9247e6d2cd9f6bbb68571f87d6dd5e50bea2578",
+      "guide_sections": "5 / NSG and ASG scope/rules; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "6c816713689da86f40387b305fb9bfbd6a3dda648eea12dc437883c457ae7c04",
+      "guide_sections": "5 / Priority, statefulness and all applicable NSGs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "ee96942e6edae3160e022cc950fefca2438471ab4b4ecd8586ebae1fd98ef39a",
+      "guide_sections": "5 / Bastion SKU/subnet/routes and target reachability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "a570c2c33ef46b2ae647170d6d853e95bfd8dc4bd76ef6e1622ba0d49633f0ec",
+      "guide_sections": "3, 5 / Public service endpoint and subnet identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "2f8abc2a9bf4ed83174f2d628e3aaf55e7f4030cd484d14491e6aa39fe93a025",
+      "guide_sections": "3, 5 / Private subresource endpoint and DNS; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "2623c732856d9baedf047c5e1082f6ef1022faae5c6b8d6a32df0e9edaa64dc1",
+      "guide_sections": "5 / Public delegation, private links and hybrid forwarding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "cd7b6458f8b033048bd6620b3a70c41ff5e7532137aaad92813ebfff0c49b4e5",
+      "guide_sections": "5 / Supported public/internal L4 load balancer; lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "d2803eb7e0dec0e95e0b5f68a5e195c9ca0e2f24411825478fed3c883b1b6589",
+      "guide_sections": "5 / Rules, probe, admin state, listener and return path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "2e94d306c1ba32b32f38104876c36832f5cb2fbf1f872a3bfd335edd1667414b",
+      "guide_sections": "6 / Metric dimensions and denominators; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "cb9b8f212eba75df0ceb9080edfae8e88240481f98c1539c368bd5e87f90328b",
+      "guide_sections": "6 / Diagnostic categories and AMA/DCR association",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "7adfad141d21ecff5f3af29bf955831dd042b179061dcc99303be47db1a5b357",
+      "guide_sections": "6 / Bounded AzureActivity KQL and event/operation distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "a7d551ba80a5b00e95a6789019ed64f11baba75c1fc7c0d3109503fcb076e012",
+      "guide_sections": "6 / Alert scope, evaluation, action and processing rules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "427be9937cbd6695f4cdc6fe44afcaab516184ad2a96d52f28ad6b5ff1e96a7c",
+      "guide_sections": "6 / Insights backed by actual collection coverage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "fc62043d8850b9b087e88677bab7301f24ef79142be1cca592dfb4c5129976d6",
+      "guide_sections": "5–6 / Network Watcher/Connection Monitor and flow-log lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "899281ece787350cf93fbd4bede98a44e7126662b5c81ca253f719e7c74955c5",
+      "guide_sections": "6 / Recovery Services vault scope and supported protection; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "374612d94f2f1e36c60fe66424a9ad862003a791524c3c748f0be96666e09d14",
+      "guide_sections": "6 / Backup vault scope and policy-based immutability; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "ca0d65d84cf1b2bea239a1d23144bd99d17c5cfea92198fa9cf097ea10d7ce31",
+      "guide_sections": "6 / Schedule, retention, immutability and policy; example 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "4e1a85e6fc91cb4a6feb58b4963d73284a9c8de593d8b3c43d0f8464a3bb29fb",
+      "guide_sections": "6 / Recovery points, restore validation and timing; lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "2adffee04856919f36ea54b9e173879b053687bfd044fa68af0c3414c4d61fa6",
+      "guide_sections": "6 / Site Recovery dependencies, mappings and failback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "14134eed6d34b045731e3506dd99354197062412404004c7ff67adc22c38cf27",
+      "guide_sections": "6 / Isolated regional test failover and recovery-point choice; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 7,
+      "objective_sha256": "8f25cf197ca2963e0f219f19b3ec20116be9b0c1efbe8b085367ece53b926215",
+      "guide_sections": "6 / Job versus recovery evidence, owned alerts and reports; example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AZ-104",
+        "title": "Microsoft Azure Administrator",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+        "guide_path": "guides/AZ-104-microsoft-azure-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\az-104-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\az-104-official-status.json",
+        "previous_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+        "current_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+        "previous_status_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "current_status_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of April 17, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 53,
+    "reachable": 50,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "azure-monitor-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+      "checked_at": "2026-09-28T08:37:36.870757+00:00",
+      "health": {
+        "id": "azure-monitor-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "checked_at": "2026-09-28T08:37:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "content_type": "text/html",
+        "page_title": "Azure Monitor documentation - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b8042538accb1b4c6598ef0180024e4b6e339af176bad5853229d232ea221d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/",
+      "sha256": "4602cdb2ffa2b35d39ea64a170cea8b7f83a6ea8a32f61916ac3b2a1c0f9e337",
+      "text_characters": 2069
+    },
+    {
+      "id": "azure-policy-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+      "checked_at": "2026-09-28T08:37:36.871321+00:00",
+      "health": {
+        "id": "azure-policy-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "checked_at": "2026-09-28T08:37:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of Azure Policy - Azure Policy",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "3b25111e7b495d9514b7c556634ebe34b5533258e3d48e8cf89e5e1f6df20e43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+      "sha256": "4a02c277a48b5d0b08c0be561e678a24f4386d9e7349aa3181cab5599b7ba65c",
+      "text_characters": 20990
+    },
+    {
+      "id": "azure-private-endpoint-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+      "checked_at": "2026-09-28T08:37:36.871679+00:00",
+      "health": {
+        "id": "azure-private-endpoint-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "checked_at": "2026-09-28T08:37:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "content_type": "text/html",
+        "page_title": "What is a private endpoint? - Azure Private Link",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "07a2817e306ddbcf9c92585f7e086914e5e713a6819112f09345e2c125ed75f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+      "sha256": "e58cd855df11378e1cc6af54c53ecf321211db0070353ab985b9f73f05c47f38",
+      "text_characters": 17744
+    },
+    {
+      "id": "azure-rbac-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "checked_at": "2026-09-28T08:37:37.224298+00:00",
+      "health": {
+        "id": "azure-rbac-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure role-based access control (Azure RBAC)?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "98a40df326b84471eaddb068d79cb5cc13ae30ac24140303aadfd49083ce768a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "sha256": "9ae304181f7b62f30a6cd4ac1cb8348f2b577597f611f2d2cde3cf690bb86b91",
+      "text_characters": 8331
+    },
+    {
+      "id": "azure-storage-introduction",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "checked_at": "2026-09-28T08:37:37.286532+00:00",
+      "health": {
+        "id": "azure-storage-introduction",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "content_type": "text/html",
+        "page_title": "Introduction to Azure Storage - Cloud storage on Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "c79856e44faa8eb8d2876772762ab101f276d87dad19adc3eb42f94bbe5402f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction",
+      "sha256": "ca2eddd32111d8393576fc92d5088373175bcf21c4a21af5459ca5574b7fda8b",
+      "text_characters": 23030
+    },
+    {
+      "id": "azure-storage-redundancy",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "checked_at": "2026-09-28T08:37:37.294403+00:00",
+      "health": {
+        "id": "azure-storage-redundancy",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "content_type": "text/html",
+        "page_title": "Data redundancy - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "196eb2796c65d0a6e33ef25729aa04030364cf4ab46ca59378fa10aa0855f98a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy",
+      "sha256": "7fc3904202042951fd1e4448d8427a94866042080313f39329c9fb5a3ff8a572",
+      "text_characters": 20531
+    },
+    {
+      "id": "azure-storage-azcopy",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "checked_at": "2026-09-28T08:37:37.448280+00:00",
+      "health": {
+        "id": "azure-storage-azcopy",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "content_type": "text/html",
+        "page_title": "Copy or move data to Azure Storage by using AzCopy v10",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+        "duration_signals": [],
+        "signal_fingerprint": "4c4e8aa1aaddffed3199ee9df7a4d860cd8a079fc4817cd405a608b02e6d6103",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10",
+      "sha256": "c24ca4d9ce7f1f3389989593df3f32aa7400afdbd7ab9e3a93d29e9323ee8fcc",
+      "text_characters": 8646
+    },
+    {
+      "id": "azure-virtual-machines-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "checked_at": "2026-09-28T08:37:37.546507+00:00",
+      "health": {
+        "id": "azure-virtual-machines-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of virtual machines in Azure - Azure Virtual Machines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "8e75e88ca49ed0780d41b5c9ea2588ea5240274956116cb50f01fb1ac556ea88",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "sha256": "a703e29bb9dc61274d23bef63a287c91d30cab2eaf1caada9758a755a1d97267",
+      "text_characters": 16717
+    },
+    {
+      "id": "azure-virtual-network-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "checked_at": "2026-09-28T08:37:37.747246+00:00",
+      "health": {
+        "id": "azure-virtual-network-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Virtual Network?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "352e34be0a40493d49aadd8630c7b6f7673e337f14cd8db852b523de79799903",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "sha256": "0a87fa0178180c063370c50628cf80069255dd463282203e6a3ffb56e5ab8eca",
+      "text_characters": 8318
+    },
+    {
+      "id": "azure-network-security-groups-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "checked_at": "2026-09-28T08:37:37.835266+00:00",
+      "health": {
+        "id": "azure-network-security-groups-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "content_type": "text/html",
+        "page_title": "Azure network security groups overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "15f3ddb44a080db1b85b4fe183425847af718255c530b5a8264c8bd39ad870fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "sha256": "226aa9d137270f4ce91b7dac94b316e6443b1e2b7b3eae0b926c2c0cde4a26a6",
+      "text_characters": 16685
+    },
+    {
+      "id": "az-104-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+      "checked_at": "2026-09-28T08:37:37.849477+00:00",
+      "health": {
+        "id": "az-104-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+        "checked_at": "2026-09-28T08:37:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AZ-104: Microsoft Azure Administrator",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "e7ffa5e3bc3a8ea39d07848bf5b490f0fe26834b31ef441fbae942cb8d7d756b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+      "sha256": "0047e1d034332726033a99469d9e176a54ba83ec0fef5fb2dab4600b0300fa6b",
+      "text_characters": 10205
+    },
+    {
+      "id": "az-104-bicep-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview",
+      "checked_at": "2026-09-28T08:37:38.001409+00:00",
+      "health": {
+        "id": "az-104-bicep-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview",
+        "content_type": "text/html",
+        "page_title": "What is Bicep? - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "4d60d0ae6069ae7431f6623c48302129cb00d80e0c4ffb3e8cdda10a23ad4f25",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview",
+      "sha256": "e57c510c3bf4d98f886552fbb7acf328aef3aa9c021fdd3b22d3478c954c8423",
+      "text_characters": 9926
+    },
+    {
+      "id": "az-104-container-apps-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+      "checked_at": "2026-09-28T08:37:38.037305+00:00",
+      "health": {
+        "id": "az-104-container-apps-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+        "content_type": "text/html",
+        "page_title": "Azure Container Apps overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "4716df9087a84a2e69a6f4a3c93a2927f3bf6d5116691c4e8699a29b8798f1cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+      "sha256": "cbb235d0a21ff58111d6ae16b5c2398b874be0ac5d816d622ae8b6adba28b752",
+      "text_characters": 3421
+    },
+    {
+      "id": "az-104-app-service-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "checked_at": "2026-09-28T08:37:38.135845+00:00",
+      "health": {
+        "id": "az-104-app-service-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/overview",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/overview",
+        "content_type": "text/html",
+        "page_title": "Overview of Azure App Service - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "1e118584f4fdb2dfcbbef334dff66ce3fa522903113c0762e645830420d63662",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/overview",
+      "sha256": "7608f82afceda57f49e81e09409a52e930b67ce118a025f6ace327ddaacd5504",
+      "text_characters": 5406
+    },
+    {
+      "id": "az-104-load-balancer-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+      "checked_at": "2026-09-28T08:37:38.188887+00:00",
+      "health": {
+        "id": "az-104-load-balancer-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Load Balancer? - Azure Load Balancer",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "009470e8fa7ea010a0f40659eb5fadaded9e696fac31da60e5d9949fb4768fca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+      "sha256": "c36411aa25213b714895dfe3a402d0891770e02e6af9bca00a42c103ee2bb3d7",
+      "text_characters": 7196
+    },
+    {
+      "id": "az-104-backup-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+      "checked_at": "2026-09-28T08:37:38.215274+00:00",
+      "health": {
+        "id": "az-104-backup-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Backup? - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ac3662dbb99696a18d147f2a228af25ae446072b09470beaa0ad1e4a321572e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+      "sha256": "5489d43a4141181dafb9a75f01dc4480e7359023e36ffc5f13476c87f72dd281",
+      "text_characters": 10285
+    },
+    {
+      "id": "az-104-microsoft-learn-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-104t00",
+      "checked_at": "2026-09-28T08:37:38.363491+00:00",
+      "health": {
+        "id": "az-104-microsoft-learn-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-104t00",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/az-104t00",
+        "content_type": "text/html",
+        "page_title": "Course AZ-104T00-A: Microsoft Azure Administrator - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/az-104t00",
+        "duration_signals": [],
+        "signal_fingerprint": "0d321498ea2a279cb97c87a139be7d409205a84ee63733d1e47d3c970e177258",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/az-104t00",
+      "sha256": "1660e379e7d758aa1269faefd0c3de193cdeee689571036a16e83a69b9d13704",
+      "text_characters": 2041
+    },
+    {
+      "id": "az-104-microsoft-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification",
+      "checked_at": "2026-09-28T08:37:38.384339+00:00",
+      "health": {
+        "id": "az-104-microsoft-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "aa55db7288169d063b5b50b386999edf41b57ca55ae2972ab8db2a3a81b4e4ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification",
+      "sha256": "15796edeb05968eba3dc80986c0dff8f18f248a8acc5538d66a99ff66387eab6",
+      "text_characters": 4509
+    },
+    {
+      "id": "az-104-john-savill-study-cram-v2",
+      "url": "https://www.youtube.com/watch?v=0Knf9nub4-k",
+      "checked_at": "2026-09-28T08:37:38.449584+00:00",
+      "health": {
+        "id": "az-104-john-savill-study-cram-v2",
+        "url": "https://www.youtube.com/watch?v=0Knf9nub4-k",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=0Knf9nub4-k",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AZ-104 Administrator Associate Study Cram v2",
+        "canonical_url": "https://www.youtube.com/watch?v=0Knf9nub4-k",
+        "duration_signals": [],
+        "signal_fingerprint": "aafa045bfa217655421e2efc46bd1766dafc4d9f2d1cf76aca16f8eabd252844",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=0Knf9nub4-k",
+      "sha256": "503ed405b01af62549e30a7488ebe9e2ff4ea0b04d809d39ab1340b42d84da7b",
+      "text_characters": 207
+    },
+    {
+      "id": "az-104-pluralsight-path",
+      "url": "https://www.pluralsight.com/paths/az-104-microsoft-azure-administrator-certification-prep",
+      "checked_at": "2026-09-28T08:37:38.581546+00:00",
+      "health": {
+        "id": "az-104-pluralsight-path",
+        "url": "https://www.pluralsight.com/paths/az-104-microsoft-azure-administrator-certification-prep",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/az-104-microsoft-azure-administrator-certification-prep",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+        "canonical_url": "https://www.pluralsight.com/paths/az-104-microsoft-azure-administrator-certification-prep",
+        "duration_signals": [
+          "35 Hours"
+        ],
+        "signal_fingerprint": "4d2ee57ece80de5fb7a216b75dab04531aea3b31e7267f667fe631caf8e61c09",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/az-104-microsoft-azure-administrator-certification-prep",
+      "sha256": "3dfc1493734653c5d73b60fed9f316b35544738faf3682393d6eaccee51e837a",
+      "text_characters": 6566
+    },
+    {
+      "id": "az-104-oreilly-exam-ref-second-edition",
+      "url": "https://www.oreilly.com/library/view/exam-ref-az-104/9780138345990/",
+      "checked_at": "2026-09-28T08:37:38.663347+00:00",
+      "health": {
+        "id": "az-104-oreilly-exam-ref-second-edition",
+        "url": "https://www.oreilly.com/library/view/exam-ref-az-104/9780138345990/",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/exam-ref-az-104/9780138345990/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-104-oreilly-aci-course",
+      "url": "https://www.oreilly.com/library/view/microsoft-azure-administrator/9781836206132/video1_1.html",
+      "checked_at": "2026-09-28T08:37:38.814331+00:00",
+      "health": {
+        "id": "az-104-oreilly-aci-course",
+        "url": "https://www.oreilly.com/library/view/microsoft-azure-administrator/9781836206132/video1_1.html",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-azure-administrator/9781836206132/video1_1.html",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-104-udemy-scott-duffy",
+      "url": "https://www.udemy.com/course/70533-azure/",
+      "checked_at": "2026-09-28T08:37:38.905922+00:00",
+      "health": {
+        "id": "az-104-udemy-scott-duffy",
+        "url": "https://www.udemy.com/course/70533-azure/",
+        "checked_at": "2026-09-28T08:37:38+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/70533-azure/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-104-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-az-104/",
+      "checked_at": "2026-09-28T08:37:39.029811+00:00",
+      "health": {
+        "id": "az-104-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-az-104/",
+        "checked_at": "2026-09-28T08:37:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-azure-certification-az-104/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AZ-104: Azure Administrator Course & Practice Tests",
+        "canonical_url": "https://www.whizlabs.com/microsoft-azure-certification-az-104/",
+        "duration_signals": [],
+        "signal_fingerprint": "b208c4383c5113dbc77ce1394ccd2dd73629ef4e6ec0e132faabacdd9e7856e0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-azure-certification-az-104/",
+      "sha256": "a343fd0f600a332e4addd02b236b1a541045fa840fba4ecba168f99737c98ed2",
+      "text_characters": 51
+    },
+    {
+      "id": "az-104-measureup-assessment",
+      "url": "https://www.measureup.com/assessment-az-104-microsoft-azure-administrator.html",
+      "checked_at": "2026-09-28T08:37:39.080581+00:00",
+      "health": {
+        "id": "az-104-measureup-assessment",
+        "url": "https://www.measureup.com/assessment-az-104-microsoft-azure-administrator.html",
+        "checked_at": "2026-09-28T08:37:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/assessment-az-104-microsoft-azure-administrator.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Assessment AZ-104: Microsoft Azure Administrator",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-az-104-microsoft-azure-administrator.html",
+        "duration_signals": [],
+        "signal_fingerprint": "9c46d571bbc1cc197e2521a67c62e4ee59b8769397f21626c70640f6a309c0ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/assessment-az-104-microsoft-azure-administrator.html",
+      "sha256": "049e0c92dc5e9309f1653dfdbe6eced48c9bdef36377ed4bb794c1314ff47102",
+      "text_characters": 3323
+    },
+    {
+      "id": "az104-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+      "checked_at": "2026-09-28T08:37:40.033634+00:00",
+      "health": {
+        "id": "az104-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+        "checked_at": "2026-09-28T08:37:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "aa55db7288169d063b5b50b386999edf41b57ca55ae2972ab8db2a3a81b4e4ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+      "sha256": "15796edeb05968eba3dc80986c0dff8f18f248a8acc5538d66a99ff66387eab6",
+      "text_characters": 4509
+    },
+    {
+      "id": "ms-102-group-licensing",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+      "checked_at": "2026-09-28T08:37:40.105629+00:00",
+      "health": {
+        "id": "ms-102-group-licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+        "checked_at": "2026-09-28T08:37:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+        "content_type": "text/html",
+        "page_title": "Assign or unassign licenses to a group in the Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "281f247be3d380713072068530efe762f08ac0b3d0a0b755e432adb603dc1fb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+      "sha256": "2cc4e254704c44a5145acd4abc19aeb8878ad0654661359925704b92f0bbc5f9",
+      "text_characters": 5388
+    },
+    {
+      "id": "az104-sspr",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-enable-sspr",
+      "checked_at": "2026-09-28T08:39:05.878247+00:00",
+      "health": {
+        "id": "az104-sspr",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-enable-sspr",
+        "checked_at": "2026-09-28T08:39:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-enable-sspr",
+        "content_type": "text/html",
+        "page_title": "Enable Microsoft Entra self-service password reset - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-enable-sspr",
+        "duration_signals": [
+          "2 minutes"
+        ],
+        "signal_fingerprint": "6567315c3f3987abef1c400b9d2ae3dd9e06df05b390a61362742ad4690703d9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-enable-sspr",
+      "sha256": "b662424294f235ec5d134b148025474f39b2a2d7d33ee7278bb85b798fabda3a",
+      "text_characters": 12209
+    },
+    {
+      "id": "az104-role-definitions",
+      "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions",
+      "checked_at": "2026-09-28T08:37:40.553612+00:00",
+      "health": {
+        "id": "az104-role-definitions",
+        "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions",
+        "checked_at": "2026-09-28T08:37:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions",
+        "content_type": "text/html",
+        "page_title": "Understand Azure role definitions - Azure RBAC",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions",
+        "duration_signals": [],
+        "signal_fingerprint": "a4ea84e2465820f6bea26cfc2c30c320bf426509b637471dea7e5f33159a9305",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions",
+      "sha256": "2bb356ab84a68a5c27ca1cfe8cfe32a51320aceb5f9a753520c93daf06cddac0",
+      "text_characters": 22011
+    },
+    {
+      "id": "azure-resource-locks",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+      "checked_at": "2026-09-28T08:37:40.856550+00:00",
+      "health": {
+        "id": "azure-resource-locks",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+        "checked_at": "2026-09-28T08:37:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+        "content_type": "text/html",
+        "page_title": "Lock your Azure resources to protect your infrastructure - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+        "duration_signals": [],
+        "signal_fingerprint": "c4de16cdf3560cd0a8d60d01c66c7ebe9dc650be9f829096e801f762b73f9920",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources",
+      "sha256": "ef7867a112d23a9d7b732d8959bb473e4a378e122270a262c2441a9f04055bb0",
+      "text_characters": 24299
+    },
+    {
+      "id": "az104-sas",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
+      "checked_at": "2026-09-28T08:37:40.962807+00:00",
+      "health": {
+        "id": "az104-sas",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
+        "checked_at": "2026-09-28T08:37:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
+        "content_type": "text/html",
+        "page_title": "Grant limited access to data with shared access signatures (SAS) - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
+        "duration_signals": [
+          "1 hour",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "860df5c43e04d43d9132744f9cac0c2a890c0e6a3ce98e8fba48e9cd1ce6a1e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
+      "sha256": "43b94d1b198c2c9d1df5ec5adc287694b18eb141fc204681c064d42b8ee92217",
+      "text_characters": 17506
+    },
+    {
+      "id": "az-800-azure-files-identity",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview",
+      "checked_at": "2026-09-28T08:37:41.172175+00:00",
+      "health": {
+        "id": "az-800-azure-files-identity",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview",
+        "checked_at": "2026-09-28T08:37:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview",
+        "content_type": "text/html",
+        "page_title": "Overview - Azure Files Identity-Based Authentication",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "e6f46c6b006e6a278e53fa1a60ea99355ea35a51446b11ba6e512a45420e4b80",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview",
+      "sha256": "59df3614978f8dd7f40fe05b8dd63f8d2f74eda8aa1c0b82c8b0fa643c6db453",
+      "text_characters": 10741
+    },
+    {
+      "id": "az104-replication",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview",
+      "checked_at": "2026-09-28T08:37:41.296917+00:00",
+      "health": {
+        "id": "az104-replication",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview",
+        "checked_at": "2026-09-28T08:37:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview",
+        "content_type": "text/html",
+        "page_title": "Object replication overview - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview",
+        "duration_signals": [
+          "10 mins",
+          "15 mins",
+          "15 minutes",
+          "2 hrs",
+          "24 hrs",
+          "30 mins 30 mins",
+          "5 mins",
+          "8 hrs"
+        ],
+        "signal_fingerprint": "2de14ef48bc2a6875dee1cdd35216a7ee1275aebc3dbe30a5c095076b40d9e14",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview",
+      "sha256": "d31ba14d678195014303ac3278f14a8e223edd9e93e9b312960a2f77a29018bb",
+      "text_characters": 24291
+    },
+    {
+      "id": "az104-softdelete",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview",
+      "checked_at": "2026-09-28T08:37:41.436897+00:00",
+      "health": {
+        "id": "az104-softdelete",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview",
+        "checked_at": "2026-09-28T08:37:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview",
+        "content_type": "text/html",
+        "page_title": "Soft Delete for Blobs to Recover Data - Azure Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ac96895a64a6aa3dca7a3e12a602db9749f5e9ee3da1ef57c35a0e17e55efadf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview",
+      "sha256": "07d2b89ec14504550d433450d45384f8e4c8e28b2316f3905e7f95c38f2cb89a",
+      "text_characters": 17079
+    },
+    {
+      "id": "az104-lifecycle",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview",
+      "checked_at": "2026-09-28T08:37:41.618899+00:00",
+      "health": {
+        "id": "az104-lifecycle",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview",
+        "checked_at": "2026-09-28T08:37:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview",
+        "content_type": "text/html",
+        "page_title": "Azure Blob Storage lifecycle management overview - Azure Blob Storage",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "2b4f6412ec12692f6c854c0ee86ccc2ccfe4eca47dd98a47ad6c930cbaa21369",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview",
+      "sha256": "ed9698db32e79177ba21e12b42c41e54a73e068991569fc253b7092fac2a60d4",
+      "text_characters": 7711
+    },
+    {
+      "id": "az104-arm-modes",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes",
+      "checked_at": "2026-09-28T08:37:41.767669+00:00",
+      "health": {
+        "id": "az104-arm-modes",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes",
+        "checked_at": "2026-09-28T08:37:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes",
+        "content_type": "text/html",
+        "page_title": "Deployment modes - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes",
+        "duration_signals": [],
+        "signal_fingerprint": "46cac89249b0914e902bf762f0c6e7256ee559110ddd861280ae42d8d7255343",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes",
+      "sha256": "1190e08080fa4f8a0e5d9e8c005dcce1040c3fa2484c0eeefc8c5e5fd598b447",
+      "text_characters": 7469
+    },
+    {
+      "id": "az104-decompile",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/decompile",
+      "checked_at": "2026-09-28T08:37:41.971314+00:00",
+      "health": {
+        "id": "az104-decompile",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/decompile",
+        "checked_at": "2026-09-28T08:37:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/decompile",
+        "content_type": "text/html",
+        "page_title": "Decompile a JSON Azure Resource Manager template to Bicep - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/decompile",
+        "duration_signals": [],
+        "signal_fingerprint": "4a42c8b96b9b6f342d16e8e7e226bbb81305804878d655e3032d81774650f2eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/decompile",
+      "sha256": "3ea295ee4f4370e80a8c0d7673e84aee26373fa164310e6225b4cd218afd5c40",
+      "text_characters": 7024
+    },
+    {
+      "id": "az104-host-encryption",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal",
+      "checked_at": "2026-09-28T08:37:42.040232+00:00",
+      "health": {
+        "id": "az104-host-encryption",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal",
+        "content_type": "text/html",
+        "page_title": "Enable end-to-end encryption using encryption at host - Azure portal - managed disks - Azure Virtual Machines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal",
+        "duration_signals": [],
+        "signal_fingerprint": "6843d6c2cc9b5d3f55110ee12d5ade4c0e1ca4bdb4fbf8cc3e80710e2cdeb4a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal",
+      "sha256": "699e3b598b83a5261645b17f31550d75f23edd83c7639be959148f8f125e4898",
+      "text_characters": 8437
+    },
+    {
+      "id": "ai200-acr-abac",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+      "checked_at": "2026-09-28T08:37:42.071190+00:00",
+      "health": {
+        "id": "ai200-acr-abac",
+        "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+        "content_type": "text/html",
+        "page_title": "Azure attribute-based access control (Azure ABAC) repository permissions in Azure Container Registry - Azure Container Registry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+        "duration_signals": [],
+        "signal_fingerprint": "211d73f8ca9562605ca2a5d33fc64c7d14055c729be6bf841b694205ba221648",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+      "sha256": "9bfba6472ad299839df38a509a7c744a5ada30737968ab2d8f7ba081e9910567",
+      "text_characters": 37431
+    },
+    {
+      "id": "az104-app-certs",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate",
+      "checked_at": "2026-09-28T08:37:42.279096+00:00",
+      "health": {
+        "id": "az104-app-certs",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate",
+        "content_type": "text/html",
+        "page_title": "Install a TLS/SSL Certificate for Your App - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "a52a18f425ae13c5887d61037ae637efd34fe443f0174b3ced3305c4b88d9b2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate",
+      "sha256": "40a0a1a7268ee46f35a030a71c359a0d6b39fba8f99950931c12b77ddff98d1a",
+      "text_characters": 21090
+    },
+    {
+      "id": "az104-app-backup",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/manage-backup",
+      "checked_at": "2026-09-28T08:37:42.398444+00:00",
+      "health": {
+        "id": "az104-app-backup",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/manage-backup",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-backup",
+        "content_type": "text/html",
+        "page_title": "Back Up an App - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-backup",
+        "duration_signals": [
+          "2 hours"
+        ],
+        "signal_fingerprint": "a68ca864c8d0b321874288209a4df5b3595c6d676a17f9493728549120a6bce6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/manage-backup",
+      "sha256": "85c833f8f967fb3144728230af7c6ddb82338b739cf9707f5d5a125b6a0eb628",
+      "text_characters": 22240
+    },
+    {
+      "id": "az104-app-slots",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
+      "checked_at": "2026-09-28T08:37:42.436521+00:00",
+      "health": {
+        "id": "az104-app-slots",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
+        "content_type": "text/html",
+        "page_title": "Set Up Staging Environments - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
+        "duration_signals": [],
+        "signal_fingerprint": "637738b049b52fcb1c5fa4c396bc5b213ce08f87653115ecba12d6707be81b19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
+      "sha256": "df03b9fb376de01abaaacb97e4171ccdc8c5a7cebc4afb6b50d39fa2d7c99d6c",
+      "text_characters": 29607
+    },
+    {
+      "id": "az104-outbound",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+      "checked_at": "2026-09-28T08:37:42.682246+00:00",
+      "health": {
+        "id": "az104-outbound",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+        "content_type": "text/html",
+        "page_title": "Default Outbound Access in Azure - Azure Virtual Network",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+        "duration_signals": [],
+        "signal_fingerprint": "eef4100e8e60545df5b005e0c77191b6f76d00502050774ef8b10c80128cfbe5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+      "sha256": "dbbdd26fe80cfe123f782ef7b4f07e150cc6dc8a578f4bff297b242c6d2bbbfc",
+      "text_characters": 16490
+    },
+    {
+      "id": "az104-vnet-faq",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+      "checked_at": "2026-09-28T08:37:42.736466+00:00",
+      "health": {
+        "id": "az104-vnet-faq",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+        "content_type": "text/html",
+        "page_title": "Azure Virtual Network FAQ",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "c98ec69213d5ff492044e1e47bb8b20942b1630045b1fa51e74570d62afdc541",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+      "sha256": "fd8be76ee7a3ee54b4689efcbbba22768ae870ccb656b07c2e706ab834342566",
+      "text_characters": 45561
+    },
+    {
+      "id": "az104-nsg-flow",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview",
+      "checked_at": "2026-09-28T08:37:42.892086+00:00",
+      "health": {
+        "id": "az104-nsg-flow",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+        "content_type": "text/html",
+        "page_title": "NSG Flow Logs Overview - Azure Network Watcher",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+        "duration_signals": [
+          "30 minutes",
+          "4 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "5ecff649e54fe045499508ba8d969c7ea29cdb954bbc9572e1c5009cdbfaa4e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+      "sha256": "491a9d118e939a33b0d4fd4e9359fd3790e45a643d099b24b9e5f671461203fb",
+      "text_characters": 24593
+    },
+    {
+      "id": "az-801-doc-56-azure-monitor-agent-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+      "checked_at": "2026-09-28T08:37:42.962484+00:00",
+      "health": {
+        "id": "az-801-doc-56-azure-monitor-agent-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+        "checked_at": "2026-09-28T08:37:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+        "content_type": "text/html",
+        "page_title": "Azure Monitor Agent Overview - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "06edfa235be0f720159ec1e9d4d276b737497ac1569016b679c7d016d6b2b35e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+      "sha256": "6d8bdbbb6b667f12c6494f707fcbcf44056126410e51d716789ef9bf8a269efc",
+      "text_characters": 5894
+    },
+    {
+      "id": "az801-immutable-vault",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "checked_at": "2026-09-28T08:37:43.050957+00:00",
+      "health": {
+        "id": "az801-immutable-vault",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+        "checked_at": "2026-09-28T08:37:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+        "content_type": "text/html",
+        "page_title": "Concept of Immutable Vault for Azure Backup - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+        "duration_signals": [],
+        "signal_fingerprint": "bed99de007fc9d5c8283141cf05c8d72ea4fd651946c8eb5cc86bd4c265400d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "sha256": "cdaa7da99e55add238f531229416b75f31043c05aa724005373042f77f3407a7",
+      "text_characters": 9071
+    },
+    {
+      "id": "az104-immutable-manage",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage",
+      "checked_at": "2026-09-28T08:37:43.361828+00:00",
+      "health": {
+        "id": "az104-immutable-manage",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage",
+        "checked_at": "2026-09-28T08:37:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage",
+        "content_type": "text/html",
+        "page_title": "How to manage Azure Backup Immutable vault operations - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage",
+        "duration_signals": [],
+        "signal_fingerprint": "c835616a42916d955c5d03ee4d7ec60744847bfa68b8da5806c691cb9a4c8ae6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-how-to-manage",
+      "sha256": "17c16e65fe4f19e0843367b64bbee1ebdc4ad77f825c9d0cd43455fdfaba418a",
+      "text_characters": 7744
+    },
+    {
+      "id": "az104-asr-test",
+      "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill",
+      "checked_at": "2026-09-28T08:37:43.439499+00:00",
+      "health": {
+        "id": "az104-asr-test",
+        "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill",
+        "checked_at": "2026-09-28T08:37:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill",
+        "content_type": "text/html",
+        "page_title": "Tutorial to run an Azure VM disaster recovery drill with Azure Site Recovery - Azure Site Recovery",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill",
+        "duration_signals": [],
+        "signal_fingerprint": "9635662f31e7be356edb1b5d62ef641f9d403eef27084afa9e547591f56f866f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill",
+      "sha256": "35e06dcb1daf50f911e9689a4c6b39ca403984a2143e663f40ab09529a1792d3",
+      "text_characters": 3996
+    },
+    {
+      "id": "az104-routing-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/routing-options-for-vms-from-private-subnets/4271244",
+      "checked_at": "2026-09-28T08:37:43.644119+00:00",
+      "health": {
+        "id": "az104-routing-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/routing-options-for-vms-from-private-subnets/4271244",
+        "checked_at": "2026-09-28T08:37:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/routing-options-for-vms-from-private-subnets/4271244",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Routing options for VMs from Private Subnets | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/routing-options-for-vms-from-private-subnets/4271244",
+        "duration_signals": [],
+        "signal_fingerprint": "cd03128a8644f6ca49e31064bbd40ae95b4b59716fe1b035dd15ff5ecd9c6412",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/routing-options-for-vms-from-private-subnets/4271244",
+      "sha256": "4b305a595d45102099e46ceeeb6c9916cbbfd9feda83a66dee6e731677a5219d",
+      "text_characters": 70,
+      "supplementary_article_extraction": {
+        "method": "Article body and author metadata from public HTML __NEXT_DATA__ JSON; rendered main is a shell",
+        "text_characters": 20150,
+        "sha256": "3d2b6ac9dca3b58078295549fbcc837f330d08ed06a4fdf39fd9ec9cd13f65ff",
+        "read_boundary": "Embedded public article JSON read through introduction/setup/first two scenarios. Author ulkeba, October 20, 2024. Outdated September 2025 deadline explicitly superseded by current docs; remaining Terraform scenarios/repo not audited/run."
+      }
+    },
+    {
+      "id": "az104-cert-blog",
+      "url": "https://techcommunity.microsoft.com/blog/appsonazureblog/industry-wide-certificate-changes-impacting-azure-app-service-certificates/4477924",
+      "checked_at": "2026-09-28T08:37:43.733511+00:00",
+      "health": {
+        "id": "az104-cert-blog",
+        "url": "https://techcommunity.microsoft.com/blog/appsonazureblog/industry-wide-certificate-changes-impacting-azure-app-service-certificates/4477924",
+        "checked_at": "2026-09-28T08:37:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/appsonazureblog/industry-wide-certificate-changes-impacting-azure-app-service-certificates/4477924",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Industry-Wide Certificate Changes Impacting Azure App Service Certificates | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/appsonazureblog/industry-wide-certificate-changes-impacting-azure-app-service-certificates/4477924",
+        "duration_signals": [],
+        "signal_fingerprint": "93992cec50c9715defb3169adc5728769cf48f6b3e39e488e19bd7350d4eee3e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/appsonazureblog/industry-wide-certificate-changes-impacting-azure-app-service-certificates/4477924",
+      "sha256": "7d557ae54cde9cc6be0146574753ccbcf6738d68f8f63bf0b6883391b50a6d7c",
+      "text_characters": 100,
+      "supplementary_article_extraction": {
+        "method": "Article body and author metadata from public HTML __NEXT_DATA__ JSON; rendered main is a shell",
+        "text_characters": 5603,
+        "sha256": "e7a4235af41bb9f0e7a65186d6390872b0b0525acfc2935358ddb415357e66fa",
+        "read_boundary": "Complete main article extracted from embedded public JSON and read. Author YutangLin, December 15, 2025; visible February 17, 2026 update directs to current Learn page. Original certificate inventory worksheet, no certificate operation."
+      }
+    },
+    {
+      "id": "az104-cert-changes",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes",
+      "checked_at": "2026-09-28T08:39:05.878722+00:00",
+      "health": {
+        "id": "az104-cert-changes",
+        "url": "https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes",
+        "checked_at": "2026-09-28T08:39:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes",
+        "content_type": "text/html",
+        "page_title": "Industry-wide certificate changes impacting Azure App Service - Azure App Service",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes",
+        "duration_signals": [],
+        "signal_fingerprint": "131cd2b389f0094df8dadb78ba313c6aee4f3ec163fed4ff8b531e06a46620c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes",
+      "sha256": "b2f1e1eb06da2093fce892140297b8c93ba91c6b59ca637be71b5ebb51e4fcae",
+      "text_characters": 9414
+    },
+    {
+      "id": "az104-activity-table",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity",
+      "checked_at": "2026-09-28T08:45:41.729663+00:00",
+      "health": {
+        "id": "az104-activity-table",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity",
+        "checked_at": "2026-09-28T08:45:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity",
+        "content_type": "text/html",
+        "page_title": "Azure Monitor Logs reference - AzureActivity - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity",
+        "duration_signals": [],
+        "signal_fingerprint": "a260b9423d29c3036d40f03451966861e92b6d46ee92d7c2f3a2cb9cc37d677b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity",
+      "sha256": "937352ef099180b2bf0d0b3335cebc2317fda94dcb03368d85c2ac5050b3ac58",
+      "text_characters": 9399
+    },
+    {
+      "id": "az-700-public-ip-addresses",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+      "checked_at": "2026-09-28T08:45:56.682978+00:00",
+      "health": {
+        "id": "az-700-public-ip-addresses",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+        "checked_at": "2026-09-28T08:45:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+        "content_type": "text/html",
+        "page_title": "Public IP addresses in Azure - Azure Virtual Network",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+        "duration_signals": [
+          "30 minutes",
+          "4 minutes"
+        ],
+        "signal_fingerprint": "5a5120856d07c974e271a71d72a278b32ebdaeace595e4071972514da8aea243",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+      "sha256": "f32a80c2b3a55ed9289a1e2a3804c120ae01da3e4b273d9bbe4a197f7988e414",
+      "text_characters": 12315
+    }
+  ],
+  "added_source_ids": [
+    "az104-activity-table",
+    "az104-credential",
+    "az104-sspr",
+    "az104-cert-changes",
+    "az104-role-definitions",
+    "az104-sas",
+    "az104-replication",
+    "az104-softdelete",
+    "az104-lifecycle",
+    "az104-arm-modes",
+    "az104-decompile",
+    "az104-host-encryption",
+    "az104-app-certs",
+    "az104-app-backup",
+    "az104-app-slots",
+    "az104-outbound",
+    "az104-vnet-faq",
+    "az104-nsg-flow",
+    "az104-immutable-manage",
+    "az104-asr-test",
+    "az104-routing-blog",
+    "az104-cert-blog"
+  ],
+  "findings": [
+    {
+      "id": "az104-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "License membership changes require effective-state checks",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current procedure excludes nested groups and verifies destination assignment before removal.",
+      "recommendation": "Add safe transition and feature-specific membership boundary.",
+      "disposition": "applied",
+      "source_id": "ms-102-group-licensing",
+      "resolution": "Add safe transition and feature-specific membership boundary."
+    },
+    {
+      "id": "az104-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy SSPR method settings are no longer current",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-enable-sspr",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Authentication methods policy replaces legacy management from September 30, 2025.",
+      "recommendation": "Update method policy, scope and non-admin validation.",
+      "disposition": "applied",
+      "source_id": "az104-sspr",
+      "resolution": "Update method policy, scope and non-admin validation."
+    },
+    {
+      "id": "az104-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Role exclusions are not explicit denies",
+      "url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NotActions subtracts locally and other roles can grant; deny assignments differ.",
+      "recommendation": "Add original effective-permission set example.",
+      "disposition": "applied",
+      "source_id": "az104-role-definitions",
+      "resolution": "Add original effective-permission set example."
+    },
+    {
+      "id": "az104-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Replication has prerequisite and destination-write limits",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/object-replication-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Source change feed, bilateral versioning, matching rules and destination constraints.",
+      "recommendation": "Add configuration/verification checklist and separate backup.",
+      "disposition": "applied",
+      "source_id": "az104-replication",
+      "resolution": "Add configuration/verification checklist and separate backup."
+    },
+    {
+      "id": "az104-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Undelete with versioning does not restore the current blob",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/soft-delete-blob-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Promote a chosen version; retention and container/account protection differ.",
+      "recommendation": "Add original version timeline and correct lab recovery step.",
+      "disposition": "applied",
+      "source_id": "az104-softdelete",
+      "resolution": "Add original version timeline and correct lab recovery step."
+    },
+    {
+      "id": "az104-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Lifecycle policy changes do not execute immediately",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Periodic execution and running-policy behavior; archive rehydration unsupported.",
+      "recommendation": "Add timing, filter, whole-policy and recovery boundaries.",
+      "disposition": "applied",
+      "source_id": "az104-lifecycle",
+      "resolution": "Add timing, filter, whole-policy and recovery boundaries."
+    },
+    {
+      "id": "az104-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Incremental resources do not imply incremental properties",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-modes",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Declared resource configuration is reapplied; omitted properties can reset.",
+      "recommendation": "Add property/resource distinction and current deletion direction.",
+      "disposition": "applied",
+      "source_id": "az104-arm-modes",
+      "resolution": "Add property/resource distinction and current deletion direction."
+    },
+    {
+      "id": "az104-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Disk encryption at host is not a running-guest isolation guarantee",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-host-based-encryption-portal",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Host data/caches and encrypted disk path with explicit eligibility/deallocation limits.",
+      "recommendation": "Correct table wording and configuration caveats.",
+      "disposition": "applied",
+      "source_id": "az104-host-encryption",
+      "resolution": "Correct table wording and configuration caveats."
+    },
+    {
+      "id": "az104-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Registry roles depend on permission mode",
+      "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Legacy AcrPull/AcrPush/AcrDelete not honored in ABAC-enabled mode.",
+      "recommendation": "Add role migration/testing boundary.",
+      "disposition": "applied",
+      "source_id": "ai200-acr-abac",
+      "resolution": "Add role migration/testing boundary."
+    },
+    {
+      "id": "az104-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Swap does not move every dependency",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Managed identity and VNet integration remain with slots; endpoints not cloned.",
+      "recommendation": "Add per-slot validation and database/worker limitations.",
+      "disposition": "applied",
+      "source_id": "az104-app-slots",
+      "resolution": "Add per-slot validation and database/worker limitations."
+    },
+    {
+      "id": "az104-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Automatic certificate management has external-consumer and validation limits",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/industry-wide-certificate-changes",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ASC 198-day issuance/validation window; exported copies and pending validation require action.",
+      "recommendation": "Add inventory exercise and current certificate-type-specific guidance.",
+      "disposition": "applied",
+      "source_id": "az104-cert-changes",
+      "resolution": "Add inventory exercise and current certificate-type-specific guidance."
+    },
+    {
+      "id": "az104-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "App backup does not imply database recovery",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/manage-backup",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Different backup limits/authentication, Flexible Server exclusion and 2028 linked-backup deadline.",
+      "recommendation": "Add app/database recovery split and follow-up.",
+      "disposition": "applied",
+      "source_id": "az104-app-backup",
+      "resolution": "Add app/database recovery split and follow-up."
+    },
+    {
+      "id": "az104-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Private subnet default scope is API- and VNet-dependent",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New VNet APIs after March 31, 2026 require explicit egress; existing VNets unchanged.",
+      "recommendation": "Add actual-setting verification and qualify old blog/public-IP prose.",
+      "disposition": "applied",
+      "source_id": "az104-outbound",
+      "resolution": "Add actual-setting verification and qualify old blog/public-IP prose."
+    },
+    {
+      "id": "az104-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy network labs include unavailable features",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New NSG flow logs unavailable and retire in 2027; current LB/PIP references retire Basic SKUs.",
+      "recommendation": "Use supported network labs and preserve record-retention distinction.",
+      "disposition": "applied",
+      "source_id": "az104-nsg-flow",
+      "resolution": "Use supported network labs and preserve record-retention distinction."
+    },
+    {
+      "id": "az104-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Installed agent does not prove guest-data coverage",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Associated DCRs define data and destination.",
+      "recommendation": "Add ingestion fixture/coverage and event-versus-operation example.",
+      "disposition": "applied",
+      "source_id": "az-801-doc-56-azure-monitor-agent-overview",
+      "resolution": "Add ingestion fixture/coverage and event-versus-operation example."
+    },
+    {
+      "id": "az104-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Retention can outlast fixed immutability",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Fixed duration in supported Recovery Services vaults differs from policy retention.",
+      "recommendation": "Add retention-window example, irreversible lock and WORM-scope boundary.",
+      "disposition": "applied",
+      "source_id": "az801-immutable-vault",
+      "resolution": "Add retention-window example, irreversible lock and WORM-scope boundary."
+    },
+    {
+      "id": "az104-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A completed failover is not validated service recovery",
+      "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-104"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Recovery-point choices and isolated drill/cleanup have distinct responsibilities.",
+      "recommendation": "Add RPO/RTO arithmetic and application validation.",
+      "disposition": "applied",
+      "source_id": "az104-asr-test",
+      "resolution": "Add RPO/RTO arithmetic and application validation."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "az104-routing-blog",
+      "decision": "accepted-bounded",
+      "author": "ulkeba",
+      "published_on": "2024-10-20",
+      "notes": "Embedded public article through first two scenarios; original path worksheet. Outdated 2025 deadline superseded by current API-scoped documentation; sample not executed."
+    },
+    {
+      "source_id": "az104-cert-blog",
+      "decision": "accepted-bounded",
+      "author": "YutangLin",
+      "published_on": "2025-12-15",
+      "updated_on": "2026-02-17",
+      "notes": "Complete main embedded article; original inventory worksheet. Current Learn operational/198-day details take precedence over blog summary."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "29 assertions for permission sets, synthetic versions, subnet/per-worker capacity, coverage/weighted rates, recovery/retention and catalog totals; KQL reviewed only."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No cloud/tenant change, VM/container/app deployment, Bicep compilation/what-if, identity/license mutation, SAS/certificate issuance, query, backup/restore/failover, immutability lock, purchase or paid-content execution.",
+    "Synthetic arithmetic and simplified permission/version examples do not prove Azure effective access, actual storage billing, topology, per-worker workload placement, telemetry completeness or recoverability.",
+    "Only noted sections of long references/blogs read. Other retained broad pages refreshed without exhaustive reread; linked examples/repositories and full region/SKU/workload matrices not audited.",
+    "OReilly/Udemy direct access blocked; indexed metadata does not verify lesson correctness, paid question originality or completeness. Whizlabs current counts and video-shell runtimes unverified. Discovery bounded.",
+    "Microsoft Practice Assessment and sandbox links verified only; no questions/session/results inspected. KQL example not run against a workspace.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "permission_version_capacity_coverage_recovery_retention_catalog_assertions": 29,
+    "kql_examples_reviewed_without_execution": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "az-104-oreilly-exam-ref-second-edition",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked",
+      "observed_metadata": {
+        "author": "Charles Pluta",
+        "published": "July 2024",
+        "pages": 391,
+        "platform_reading_estimate": "10h34"
+      },
+      "limitation": "Paid content, correctness, coverage and question originality unverified."
+    },
+    {
+      "source_id": "az-104-oreilly-aci-course",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked",
+      "observed_metadata": {
+        "instructor": "ACI Learning; Adam Gordon",
+        "published": "May 2024",
+        "total_runtime": "27h23"
+      },
+      "limitation": "Paid content, correctness, coverage and question originality unverified."
+    },
+    {
+      "source_id": "az-104-udemy-scott-duffy",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked",
+      "observed_metadata": {
+        "instructor": "Scott Duffy",
+        "updated": "6/2026",
+        "sections": 26,
+        "lectures": 187,
+        "total_runtime": "18h2"
+      },
+      "limitation": "Paid content, correctness, coverage and question originality unverified."
+    }
+  ]
+}

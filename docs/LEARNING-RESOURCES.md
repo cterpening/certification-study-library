@@ -1823,6 +1823,26 @@ Direct Udemy requests were blocked; the public outlines were reviewed through th
 
 *This independent guide uses public sources and original synthesis and is not endorsed by Microsoft or any vendor.*
 
+### AZ-104 — Microsoft Azure Administrator
+
+Resource details from the [AZ-104 guide](../guides/AZ-104-microsoft-azure-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation for weak objectives, do the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Microsoft Learn AZ-104 course](https://learn.microsoft.com/en-us/training/courses/az-104t00) | Free self-paced; instructor delivery varies | Published: 4 instructor-led days; plan 20–30 hours reading or 30–45 with exercises | Best official objective-aligned spine |
+| [Microsoft free Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification) | Free account | Plan 45–90 minutes including review | Baseline and gap finding; not a substitute for labs |
+| [John Savill AZ-104 Study Cram v2](https://www.youtube.com/watch?v=0Knf9nub4-k) | Free | Historical estimate: about 3.5 hours; current runtime unverified | Video shell only in this pass; useful as a retained review reference after labs, with current objectives checked separately |
+| [Pluralsight AZ-104 certification path](https://www.pluralsight.com/paths/az-104-microsoft-azure-administrator-certification-prep) | Paid/trial or organization access | Six courses: 29h47; eight labs: 5h; 34h47 total, rounded to 35h in the header | September 9 identity/storage and September 23 networking updates. An introductory paragraph still has old weights; use the official blueprint. Budget 40–55 hours with review (editorial estimate) |
+| [O'Reilly Exam Ref AZ-104, 2nd Edition](https://www.oreilly.com/library/view/exam-ref-az-104/9780138345990/) | Paid subscription/book | Published: 391 pages / platform estimate 10h 34m; plan 14–22 hours | Charles Pluta, July 2024; indexed outline/metadata only, direct access blocked. Pair with current docs; book not read in this review |
+| [O'Reilly/ACI Learning AZ-104 course](https://www.oreilly.com/library/view/microsoft-azure-administrator/9781836206132/video1_1.html) | Paid subscription | Published: 27h 23m; plan 32–45 hours with labs and notes | ACI Learning/Adam Gordon, May 2024; indexed public outline only. Older Azure AD/ADE and AKS content needs current-scope filtering; paid lessons not watched |
+| [Udemy AZ-104 course by Scott Duffy](https://www.udemy.com/course/70533-azure/) | Paid; frequent discounts | Published: 18h 2m; plan 24–35 hours with practice | Scott Duffy, June 2026; indexed outline lists 26 sections/187 lectures. Direct access blocked; lesson accuracy and practice originality unverified |
+| [Whizlabs AZ-104 course, labs, and practice tests](https://www.whizlabs.com/microsoft-azure-certification-az-104/) | Paid; limited samples may be free | Current bundle counts/runtime unverified | Product retrieval exposes only a title shell; earlier 107-video/164-lab/22-quiz counts not reproduced. Confirm current entitlements before purchase |
+| [MeasureUp AZ-104 assessment](https://www.measureup.com/assessment-az-104-microsoft-azure-administrator.html) | Paid | Plan 1–2 hours for 30 questions and review | June 2026 listing: 30 questions drawn from its associated practice test, with **no explanations or references**. This assessment-only product is not an explanation-based learning course |
+
+Catalog metadata is not proof of lesson accuracy, exam coverage or question originality. Provider discovery was bounded and paid content was not inspected. Prefer independently authored learning questions with explanations; the listed MeasureUp assessment explicitly omits them. Avoid recalled live-exam material. Use results by objective domain, revisit documentation and labs, then retest with unseen questions.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
