@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # AI-500 Designing and Implementing Multi-Agent AI Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-500-coverage-record). The [official AI-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-500-coverage-record). The [official AI-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500) is authoritative.
 
 **Current baseline:** Official study-guide page last updated July 16, 2026; Microsoft does not publish a separate skills-effective date on that page.<br>
-**Exam state:** Beta, English only, as verified September 1, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Exam state:** Beta, English only, as verified September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Credential prerequisite:** Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103).<br>
 **Training availability:** The exam is already in beta; the separate AI-500T00-A instructor-led course is listed as available September 30, 2026.<br>
 **Official source:** [AI-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500)
@@ -38,17 +38,19 @@ Start with the architecture contract and the four domain maps. Then implement th
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-### Living-guide watch — September 7, 2026
+### Living-guide watch — September 28, 2026
 
-Microsoft's [certification announcement](https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122) targets general availability in October 2026 but does not publish a day. Until the credential page changes, retain the verified beta status and delayed-result expectations; do not manufacture a precise GA date.
+Microsoft's [certification announcement](https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122) previously targeted October 2026 general availability without a day. Its direct page returned a content shell in this review; the month remains a historical announcement, not verified release completion. The current credential and exam pages still say **beta**. AI-103 remains the credential prerequisite, and no official Practice Assessment is available. The September 30 course date remains two days in the future. No fixed exam duration was verified.
 
-The [hosted-agent migration guide](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview) documents retirement of the initial preview backend and changes to identity, endpoints, protocol, and APIs. It is migration evidence, not proof that every older architecture concept is invalid. O'Reilly, Pluralsight, and Udemy material listed later can improve practice variety, but code and terminology must be checked against the current Foundry generation.
+The [hosted-agent migration guide](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview) says support for the initial preview backend ended **August 20, 2026**, with no automatic migration. Older hosted-agent samples require an explicit migration review. This [deep-review report](../docs/research/2026-09-28-ai-500-deep-review.md) maps all 55 objectives and records six worked examples, ten labs, 44 answered checks, source limits and offline verification. No cloud lab, SDK deployment, model inference or paid question bank was executed or accessed.
 
 ### Current Microsoft Foundry versus older material
 
 Unless explicitly marked **FOUNDRY (CLASSIC)**, this guide uses the current Microsoft Foundry resource/project model, current SDK/API generation, Responses-based agents, and current Agent Framework vocabulary. Older courses may say Azure AI Studio, Azure AI Foundry, hubs, `azure-ai-projects` 1.x, Assistants, threads, or runs. Those concepts can help with migration, but do not mix their resource model, SDK objects, endpoints, or portal steps into a current implementation. Use Microsoft’s [classic-to-current migration guide](https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic) as the crosswalk.
 
-The official AI-500 learning path includes migration from Foundry Agents v1 to the current v2/Responses model. Treat version recognition as operational knowledge: first identify the platform generation, then apply guidance written for it.
+Keep version axes separate: a training path's “v2/Responses” generation label, `azure-ai-projects` **2.3.0+**, a service **v1** API and A2A **1.0** are different things. The migration procedure describes current hosted agents as GA on v1; a package can still have a prerelease version. Record each version independently.
+
+The classic migration page also records **August 26, 2026** retirement/sunset dates for `azure-ai-inference` and the Assistants API. Those dates have passed. Migrate to the documented `openai`/Responses path, verify region support, and validate the current endpoint; changing a package name alone does not migrate state or permissions.
 
 ## Exam profile and objective map
 
@@ -146,6 +148,8 @@ Use an autonomy ladder:
 
 Autonomy should follow impact and reversibility, not model fluency.
 
+For human–AI experience (HAX), show whether the system is drafting, waiting or acting, identify the exact proposed change and evidence, make rejection/edit/escalation accessible, and explain uncertainty in task terms. Preserve a correction route and a clear owner when automation stops. Evaluate whether people can detect a wrong proposal and recover without reconstructing an invisible agent conversation.
+
 ### Select an orchestration topology
 
 The current [Agent Framework orchestration documentation](https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/) describes reusable patterns. Know the tradeoff, not just the name.
@@ -161,6 +165,10 @@ The current [Agent Framework orchestration documentation](https://learn.microsof
 | Magentic/dynamic planning | Open-ended task needs adaptive decomposition | Unbounded work and unpredictable cost | Budgets, milestones, approval, and replayable trace |
 
 Choose topology from dependency shape, control needs, latency, and failure ownership. A diagram alone is not a design: define who commits durable state and what happens when any message is late, duplicated, invalid, or unavailable.
+
+### Worked example 1 — Parallel latency still consumes shared capacity
+
+Three independent calls take 6, 9 and 5 seconds. Their sequential call time is **20 seconds**; parallel calls followed by a 2-second aggregator take **11 seconds**, excluding queueing and startup. Aggregate call work remains 20 seconds, plus aggregation. At 30 workflows/minute and three calls each, demand is **90 calls/minute** against a synthetic 60-call/minute limit. The quota alone caps admission at **20 workflows/minute before retries**. If aggregation also calls that endpoint, count it too. Parallelism improves the critical path without creating quota.
 
 ### Design control loops and human-in-the-loop
 
@@ -187,7 +195,11 @@ Use a protocol only where interoperability is worth another boundary.
 | One independent agent communicates with another | Agent-to-Agent (A2A) endpoint/protocol | Agent card/capability, task identity, authentication, artifact and status semantics |
 | Internal workflow components exchange events | Framework message or application event contract | Ordering, duplication, correlation, recovery |
 
-[Azure API Management’s MCP support](https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview) can expose governed APIs as MCP tools and apply gateway policies. It does not remove the need to authorize the downstream operation or validate tool results. Current Foundry [A2A endpoint support](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint) is preview and fast-changing; **VERIFY CURRENT** capabilities, authentication, and regional availability.
+[Azure API Management’s MCP support](https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview) exposes APIs as tools or proxies an existing server. Its current support is **tools only**, without MCP resources/prompts or workspaces. Check the listed supported tiers; Consumption is not listed. Gateway authentication and downstream authorization are separate, and server-level policies can affect all tool operations.
+
+Current Foundry [incoming A2A support](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint) distinguishes **GA v1.0** from **preview v0.3**. An unversioned request defaults to v0.3. Select 1.0 through the version-specific card/client negotiation or an explicit header/query selector; conflicting header and query versions produce an error. The documented v1.0 implementation uses JSON-RPC and text: do not assume streaming, files, gRPC or HTTP+JSON support from the general protocol.
+
+Even agent-card discovery requires Entra authentication. Use the caller's principal object ID and a role such as **Foundry Agent Consumer** at the required agent/project scope; API keys and anonymous access are unsupported. Project scope covers more agents than a single-agent assignment. Tasks and contexts persist for **60 days after the latest write**, which resets that period; this is separate from a compute idle timeout.
 
 ### Apply Zero Trust per agent
 
@@ -204,6 +216,14 @@ Do not give every agent the coordinator’s identity. Map each runtime identity 
 Current Foundry [agent identity concepts](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity) distinguish platform and application identities. For a user-delegated downstream call, the Microsoft Entra Agent ID [on-behalf-of flow](https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow) preserves delegated context. For an application-owned operation, prefer a workload identity and app permission scoped to the operation. API keys identify an application weakly and are difficult to constrain per agent; use them only where the service requires them and protect/rotate them through Key Vault.
 
 > **Related item:** Authentication proves the caller; authorization decides the allowed action. Private networking changes reachability. Guardrails inspect content or behavior. None substitutes for the others.
+
+### Recognize the current hosted-agent boundary
+
+The current migration procedure gives each agent a dedicated Entra identity **when created/deployed**. Grant its downstream access to that identity; the project's managed identity still handles infrastructure duties such as image pulls. Older identity documentation explicitly describes a legacy Agent Application model with shared draft identity and a publication-time switch. Apply that section only to its stated model.
+
+Replace old framework adapters with protocol libraries and the appropriate framework bridge. Current Agent Framework names include `Agent`, `FoundryChatClient`, `@tool` and `ResponsesHostServer`; confirm installed versions before adapting a sample. The hosted migration requires Projects SDK 2.3.0+ and `azd` 1.23.0+ with the agents extension. Configuration moves into `azure.yaml`; older standalone agent manifest files and manual start/stop/replica management do not carry over unchanged.
+
+Each session has a sandbox; its persistent home/files storage survives idle periods. The default **15-minute compute idle timeout is not a data-deletion policy**. Bind invocation to the agent's dedicated endpoint, record the runtime version and identity, and separately test recovery, storage retention and access. Do not assume a successful redeployment migrated old checkpoints.
 
 ### Use a multi-tier state and memory model
 
@@ -281,6 +301,10 @@ Context engineering decides what each call needs and what it must not see. A use
 
 Context accumulation is easy; controlled context is the skill. Long histories can dilute instructions, increase cost, or exceed the window. Use selective retrieval, rolling summaries, entity/state tables, and checkpoints. Preserve important values in typed state instead of hoping a summary retains them.
 
+### Worked example 2 — Reserve space before adding context
+
+For a synthetic 32,000-token window, budget 5,000 instructions, 18,000 retrieved evidence, 6,000 history, 2,000 tool results and 4,000 reserved output tokens. The total is **35,000**, leaving a **3,000-token deficit**. Select fewer passages or compact dispensable history before invoking the model; preserve exact IDs, approvals and authoritative state. A summary that fits but drops the approved amount is still wrong. These are planning numbers, not a tokenizer measurement or a specific model limit.
+
 ### Choose prompting, RAG, memory, or fine-tuning
 
 | Need | Best first move | Why |
@@ -295,7 +319,9 @@ Fine-tuning is not a way to keep frequently changing facts current. Define the t
 
 ### Design secure memory operations
 
-For every write, decide whether the item is eligible for memory, whose scope it belongs to, whether the user can inspect/correct/delete it, and when it expires. For every read, enforce authorization before similarity ranking and return provenance. Never allow cross-tenant nearest-neighbor results because a filter was applied after retrieval.
+For every write, decide whether the item is eligible for memory, whose scope it belongs to, whether the user can inspect/correct/delete it, and when it expires. For every read, derive the scope from trusted identity and enforce it in the data service before results reach a model, caller or unsafe log. Return provenance. Server-side post-filtering can still enforce that scope; it has different recall behavior from pre-filtering. Filtering in application code after unauthorized content entered a prompt is a different, unsafe design.
+
+[LangGraph persistence](https://docs.langchain.com/oss/python/langgraph/durable-execution) separates thread checkpoints from a cross-thread store. An in-memory saver loses state with the process; production recovery needs a durable backend. A thread ID selects state and does not authenticate its owner. Build the storage key from authenticated tenant and subject, not a display name or client-supplied memory scope. Asynchronously extracted facts may appear after the next turn; test lag, correction and deletion across transcripts, derived facts, profiles and retrieval indexes.
 
 Memory failure modes include:
 
@@ -327,6 +353,12 @@ In a multi-agent design, centralize retrieval policy or make every agent enforce
 
 Evaluate retrieval independently with relevance/precision, recall or coverage, ranking quality, authorization correctness, freshness, and citation resolution. Then evaluate grounded response quality. A good answer can hide poor retrieval, and good retrieval can be ruined by synthesis.
 
+### Worked example 3 — Filter mode changes recall, not who is authorized
+
+[Azure AI Search filter modes](https://learn.microsoft.com/en-us/azure/search/vector-search-filters) differ: `preFilter` filters during traversal, `postFilter` filters shard candidates, and preview `strictPostFilter` filters the global top-k. The latter two can return fewer eligible neighbors or miss eligible matches. None lets a caller choose an unauthorized tenant filter.
+
+Suppose a simplified global ranking is `B1, B2, B3, A1, A2`, the caller may read only tenant A, and `k=3`. Strict post-filtering returns **zero**; selecting within the authorized subset returns **A1 and A2**. This deterministic illustration explains the candidate-set problem; it does not execute Search's distributed HNSW algorithm. Avoid interpreting zero results as proof that no authorized answer exists. Separately test that `(tenant-A, subject-7)` and `(tenant-B, subject-7)` address different memory scopes, even if both users display “Alex.”
+
 ### Design function tools
 
 Treat every tool as an API exposed to a potentially mistaken or manipulated caller.
@@ -355,7 +387,7 @@ Azure Functions and Logic Apps can implement integration operations; API Managem
 
 ### Connect existing agents through A2A or MCP
 
-Use MCP when an existing component should expose tools/resources. Use A2A when it behaves as an independently addressable agent with task and artifact semantics. Put an adapter around older agents rather than leaking version-specific conversation objects throughout the new system. Test authentication, capability discovery, timeouts, cancellation, status polling/streaming, duplicate messages, malformed artifacts, and version mismatch.
+Use MCP when an existing component should expose tools/resources. Use A2A when it behaves as an independently addressable agent with task and artifact semantics. Put an adapter around older agents rather than leaking version-specific conversation objects throughout the new system. Test authentication, capability discovery, timeouts, supported cancellation/status operations, duplicate messages, malformed artifacts, and version mismatch. Test rejection or an explicit fallback for unsupported streaming rather than assuming Foundry implements it.
 
 ## 5. Implement orchestration and reusable code
 
@@ -372,6 +404,12 @@ The blueprint names Microsoft Agent Framework, LangChain/LangGraph, and Hugging 
 
 Framework convenience does not own your data classification, authorization, evaluation, SLO, or rollback. Wrap framework-specific objects behind application interfaces where replacement or migration matters.
 
+### Implement a model component behind the orchestration boundary
+
+Use [Transformers pipelines](https://huggingface.co/docs/transformers/main_classes/pipelines) for a bounded classifier, extractor or generation component behind a typed application interface. Pin the task, model/tokenizer revision and package versions; record device, input/output limits and label mapping. `revision` can select a commit; `trust_remote_code=True` permits repository code execution and needs a separate code review. Batch size changes require measurement on representative lengths and hardware; padding or memory pressure can make larger batches worse.
+
+For a specialist classifier, validate input, obtain scores, map only known labels to allowed routes, and escalate low-confidence or invalid results. Compare it with a baseline on held-out examples before substituting it for an agent. Local inference, fine-tuning and serving are separate responsibilities from orchestrating other agents. Lab 2 includes an optional implementation exercise; no model weights were downloaded in this review.
+
 ### Make human intervention a workflow state
 
 Store an approval request containing the exact proposed operation, parameters, evidence, risk reason, expiry, and required approver role. On resume:
@@ -382,6 +420,49 @@ Store an approval request containing the exact proposed operation, parameters, e
 4. execute with an idempotency key;
 5. record the decision and outcome;
 6. route rejection, edit, expiry, or edge case explicitly.
+
+[LangGraph interrupts](https://docs.langchain.com/oss/python/langgraph/interrupts) resume the interrupted node from its beginning. Work before the interrupt can run again. Preserve stable interrupt ordering and serializable payloads, and avoid swallowing the interrupt in a broad exception handler. Put approval and effects into explicit stages; even an effect after approval can repeat if a later failure causes replay. Checkpointing alone does not provide exactly-once external writes.
+
+### Worked example 4 — Retry after an effect but before acknowledgement
+
+The original Python example below models an external service retaining a deduplication ledger while a caller retries. It performs no network or file writes. The ledger is **in memory in one process**, so this is a replay thought experiment, not crash-durable production code. In a real service, atomically persist the key, payload and outcome with the effect, enforce uniqueness under concurrency, and define key retention/reconciliation. Approval and authentication happen separately.
+
+```python
+class FakeActionService:
+    def __init__(self):
+        self.ledger = {}
+        self.effects = []
+
+    def apply(self, key, payload):
+        if key in self.ledger:
+            saved_payload, receipt = self.ledger[key]
+            if saved_payload != payload:
+                raise ValueError("Key reused for a different proposal")
+            return receipt
+        receipt = f"effect-{len(self.effects) + 1}"
+        self.effects.append((key, payload))
+        self.ledger[key] = (payload, receipt)
+        return receipt
+
+
+service = FakeActionService()
+key = ("tenant-A", "workflow-12", "step-3", "proposal-v1")
+payload = ("prepare-ticket", "case-7")  # Immutable synthetic data.
+receipt = service.apply(key, payload)
+assert receipt == "effect-1"
+# Imagine the caller lost the acknowledgement and retries the same request.
+assert service.apply(key, payload) == receipt and len(service.effects) == 1
+conflict_rejected = False
+try:
+    service.apply(key, ("prepare-ticket", "different-case"))
+except ValueError:
+    conflict_rejected = True
+assert conflict_rejected
+other_key = ("tenant-B", "workflow-12", "step-3", "proposal-v1")
+assert service.apply(other_key, payload) == "effect-2" and len(service.effects) == 2
+```
+
+The outcome is one effect for tenant A despite retry, a rejected changed proposal, and a separate tenant B effect. A local workflow checkpoint is not the external service's ledger. If a downstream system has no atomic deduplication capability, choose reconciliation or compensation and describe its limits.
 
 ### Control caching and concurrency
 
@@ -417,6 +498,12 @@ One overall score cannot explain a multi-agent failure. Build an evaluation matr
 | Safety/governance | policy violations, attack success, data leakage, audit completeness | Did controls hold under misuse? |
 
 Foundry supports [generative-AI evaluation](https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app) and risk/safety evaluators. Use human review in Foundry for subjective, high-impact, ambiguous, or calibration cases. Measure agreement and document reviewer guidance rather than treating one reviewer’s preference as ground truth.
+
+Choose the evaluation target deliberately: the current portal supports agent/model runs as well as datasets containing existing outputs. Dataset evaluation can score stored results without rerunning the agent; it therefore cannot prove current tool authorization or deployment behavior. Review full conversations for continuity and individual turns for a localized defect, and retain human calibration for subjective judgments.
+
+### Worked example 5 — An overall pass hides a critical failure
+
+A synthetic suite contains 900 routine cases, with 891 passing, and 100 critical cases, with 60 passing. Overall success is **951/1,000 = 95.1%**, but the critical slice is **60%**. A release requiring at least 95% overall and 90% on critical cases **fails**. These thresholds are an exercise policy. Preserve counts and severity slices; a run that completes without an exception may still produce the wrong action.
 
 ### Test execution behavior
 
@@ -466,6 +553,12 @@ Set hard limits for iterations, tokens, wall time, spawned tasks, concurrent cal
 
 Foundry’s [agent monitoring dashboard](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard) and [trace setup](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup) are current implementation starting points. **VERIFY CURRENT:** preview/support differences can vary by agent type and environment.
 
+The dashboard reads the project's connected Application Insights resource; log views also require workspace access. Its run-success metric records completion and does not establish correctness. Recurring evaluations, red-team scans and alerts are marked preview in the current procedure. Retention/billing follow Application Insights settings; do not infer them from agent conversation retention or treat illustrative latency/success advice as a platform SLA.
+
+### Worked example 6 — Compare cost per valid outcome
+
+Candidate A consumes 50 synthetic cost units and delivers 45 valid outcomes; B consumes 30 units and delivers 20. A costs **1.11 units per valid outcome** and B **1.50**, rounded to two decimals. B spends less overall while costing more per useful result. Include failed runs, retries and attributable human correction consistently, and compare equivalent workloads and quality gates before choosing. These units are not Azure prices.
+
 ## 7. Secure, govern, test, and deploy
 
 ### Build a resource-access matrix
@@ -485,11 +578,15 @@ Microsoft documents [guardrail intervention points](https://learn.microsoft.com/
 | Tool response | Treat output as untrusted, detect injection/data leakage, schema validation | Server trust and result provenance |
 | Final output | Harm/privacy/groundedness/policy check, citation validation | Safe fallback, escalation, audit |
 
+Tool-call and tool-response intervention points are **preview and tool-dependent**. The current list includes Azure AI Search, Azure Functions, OpenAPI, SharePoint Grounding, Fabric Data Agent, Bing Grounding, Bing Custom Search and Browser Automation. For tools outside that list, configured controls at those points **do not take effect**. A generic MCP tool is not automatically covered. Record the actual tool path, support status, blocking versus annotation, failure behavior and independent application/server checks.
+
 Build custom guardrails for domain policy such as prohibited transactions, regulated claims, tenant rules, or required evidence. Generate synthetic normal, edge, adversarial, multilingual, obfuscated, and tool-mediated cases; measure false positives and false negatives. Do not tune only until the test set passes.
 
 ### Shift left with adversarial testing
 
 Use the Foundry [AI Red Teaming Agent](https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent) as one testing capability, not a guarantee of safety. Include direct/indirect prompt injection, data exfiltration, tool misuse, privilege escalation, cross-tenant access, poisoned memory, denial-of-wallet loops, unsafe output, and evasion attempts. Run only in authorized scope with safe targets and protected test data. Convert important findings into regression tests and verify the mitigation does not break legitimate behavior.
+
+The current red-team agent supports text-based testing. Its agent-target matrix includes supported Foundry prompt/hosted-container agents but excludes workflow and non-Foundry agent targets; documented tool limitations include function tools, non-Azure tools, Browser Automation, connected agents and computer use. This is a different matrix from guardrail moderation support. Agent-specific risk scans run in the cloud; synthetic/mock tool data does not make a target a fully isolated sandbox. Plan separate controlled tests for unsupported paths and report them as untested until run. Attack-success rate describes the tested attacks, not every possible attack or production safety.
 
 ### Design environment promotion and release
 
@@ -556,7 +653,7 @@ Pin an in-flight workflow to a compatible version or explicitly migrate its stat
 
 ## 9. Hands-on labs
 
-Use a sandbox subscription and synthetic data. Record architecture, configuration versions, tests, traces, costs, failures, and cleanup. The deliverable matters more than a screenshot of a successful chat.
+Start with offline diagrams, synthetic data and mocks; use a separately authorized sandbox subscription for cloud steps, which can incur charges. Record architecture, configuration versions, tests, traces, costs, failures, and cleanup. Only the standard-library replay example and arithmetic/set checks were executed for this review; all cloud/framework/model steps below are proposed learner exercises.
 
 ### Lab 1 — Architecture and trust boundaries
 
@@ -564,7 +661,7 @@ Decompose one business goal into deterministic stages and at least two justified
 
 ### Lab 2 — Agent Framework orchestration
 
-Implement a sequential or orchestrator–subagent workflow plus one concurrent branch. Add typed results, correlation IDs, termination conditions, time/token/iteration budgets, checkpointing, and one human-intervention state. Simulate timeout and malformed output; prove resume and recovery.
+Implement a sequential or orchestrator–subagent workflow plus one concurrent branch. Add typed results, correlation IDs, termination conditions, time/token/iteration budgets, checkpointing, and one human-intervention state. Simulate timeout and malformed output; prove resume and recovery. Optionally implement a Transformers-backed specialist with pinned model/tokenizer revisions, bounded input, label validation and abstention. Compare against a simple baseline, record hardware/batching behavior, and keep any weight download or remote-code decision explicit.
 
 ### Lab 3 — Identity and tool authorization
 
@@ -572,7 +669,7 @@ Create two tools with different risk. Give each agent a distinct workload identi
 
 ### Lab 4 — Access-aware RAG and memory
 
-Ingest two synthetic tenants with overlapping terminology. Preserve source, tenant, version, and deletion metadata. Enforce scope before retrieval, compare vector with hybrid retrieval, and require citations. Add session state and approved long-term memory. Test cross-tenant queries, deletion, stale facts, sliding-window amnesia, and summary drift.
+Ingest two synthetic tenants with overlapping terminology. Preserve source, tenant, version, and deletion metadata. Enforce trusted scope in the retrieval service, compare pre/post/strict-post filter recall where supported, compare vector with hybrid retrieval, and require citations. Add session state and approved long-term memory. Test cross-tenant queries, deletion, stale facts, sliding-window amnesia, and summary drift.
 
 ### Lab 5 — MCP or governed integration
 
@@ -580,7 +677,7 @@ Expose a narrow synthetic API through an MCP server or API Management-backed MCP
 
 ### Lab 6 — Evaluation and red-team suite
 
-Build a versioned dataset covering normal, boundary, no-answer, unsafe, adversarial, multilingual, long-session, and tool-use cases. Evaluate prompt/model, retrieval, memory, tool, agent, workflow, and safety separately. Add calibrated human review and an LLM judge. Run authorized red-team cases and turn two findings into regression tests.
+Build a versioned dataset covering normal, boundary, no-answer, unsafe, adversarial, multilingual, long-session, and tool-use cases. Evaluate prompt/model, retrieval, memory, tool, agent, workflow, and safety separately. Add calibrated human review and an LLM judge. Record which target/tool combinations the selected red-team service supports. Run only authorized cases, cover unsupported combinations separately, and turn two findings into regression tests. An unsupported or skipped case must not appear as a passed case.
 
 ### Lab 7 — Trace, reliability, and cost operations
 
@@ -589,6 +686,14 @@ Instrument application, agents, model calls, retrieval, tools, and approval with
 ### Lab 8 — CI/CD and controlled rollout
 
 Package code, IaC, prompts, tool schemas, evaluation assets, guardrails, and dashboards. Build gates for lint/security, unit/integration tests, quality/safety/cost thresholds, and approval. Deploy a canary or blue-green version, pin in-flight state, smoke test, and roll back. Document what rollback cannot undo and the compensating action.
+
+### Lab 9 — Recovery after lost acknowledgement
+
+Run worked example 4 locally. Draw two durable systems: workflow checkpoint store and external action ledger. Place a failure after the effect and before acknowledgement, then after acknowledgement but before workflow checkpoint. Explain which requests replay and who suppresses duplicate effects. Test changed proposal versions, expired approvals and different tenants. For an eventual framework implementation, use a durable checkpointer and verify interrupt/restart semantics with synthetic tools; an in-memory demonstration does not pass that deployment test.
+
+### Lab 10 — Capability and memory evidence matrix
+
+List each MCP/A2A/tool path, version, identity, scope, guardrail coverage, red-team support, retention and test result. Include an unversioned A2A call, conflicting selectors, an unsupported moderation tool, a completed-but-wrong run and two tenants sharing a display name. Add delayed memory extraction, corrected facts, deletion and process restart. Mark offline expectations separately from observed product behavior. Use the two blog exercises below to choose additional failure cases, then identify every unexecuted or unsupported cell.
 
 ## 10. Knowledge checks
 
@@ -611,7 +716,7 @@ These are original concept checks, not recalled exam questions.
 10. Why should retrieved content be separated from trusted instructions?
 11. When is fine-tuning a poor choice for knowledge freshness?
 12. What metadata makes an embedding safely governable?
-13. Why must authorization occur before vector ranking in a multi-tenant index?
+13. How do server-side post-filtering and unsafe application-side filtering differ, and what recall problem can post-filtering introduce?
 14. What distinguishes a retriable tool failure from a business rejection?
 15. What risks remain after an API is published as an MCP tool?
 16. When does semantic caching produce an unsafe answer?
@@ -642,6 +747,17 @@ These are original concept checks, not recalled exam questions.
 35. What should an approval record contain?
 36. Why can rolling back application code fail to reverse an incident?
 
+### Current implementation and evidence boundaries
+
+37. Why can an unversioned A2A request still use a preview protocol when v1.0 is GA?
+38. Which identity needs downstream access after migration to current hosted agents?
+39. Why does a 15-minute idle timeout not prove memory deletion?
+40. What can repeat when a LangGraph node resumes after an interrupt?
+41. Why can a configured tool-response guardrail fail to inspect a tool's output?
+42. Does a successful red-team scan cover every workflow and tool?
+43. Why can 95.1% overall evaluation success fail a release gate?
+44. What must accompany a memory-provider `user_id` or a workflow `thread_id` to enforce isolation?
+
 ## 11. Answers and reasoning
 
 1. Separate agents should create measurable specialization, permission isolation, ownership, failure containment, scaling, parallelism, or review separation. Organization-chart symmetry alone is not evidence.
@@ -656,7 +772,7 @@ These are original concept checks, not recalled exam questions.
 10. Untrusted content may contain instructions. Delimiting it as data helps preserve instruction precedence and supports injection defenses.
 11. When facts change frequently. Retrieval or a tool keeps current knowledge external to model weights and easier to govern.
 12. Source and version, tenant/user scope, classification, provenance, embedding/model version, timestamps/TTL, and deletion linkage.
-13. Post-filtering can retrieve or expose unauthorized neighbors before they are discarded and may leak through traces or generated context.
+13. Search can apply a trusted authorization filter server-side after candidate selection and still return only permitted documents; small candidate sets can miss eligible matches. Application filtering after unauthorized evidence reaches prompts/logs is unsafe. Derive filters from trusted identity and test both isolation and recall.
 14. A transient failure may be safely retried with policy and idempotency; a business rejection is a valid negative decision that usually requires changed input or escalation.
 15. Server/software trust, identity, authorization, data handling, parameter/result validation, prompt injection, version change, availability, audit, and supply-chain risk.
 16. When superficially similar requests differ in identity, tenant, freshness, policy, intent, or required side effects.
@@ -680,6 +796,15 @@ These are original concept checks, not recalled exam questions.
 34. A canary serves real outcomes to a limited cohort; a shadow observes duplicated traffic but must not act or affect the user.
 35. Authenticated approver, exact action/parameters, evidence, risk/policy, proposal version, time/expiry, decision, and resulting execution ID/outcome.
 36. The prior version may already have written memory/state, changed an index/schema, or invoked an external side effect; compensation or data migration may be required.
+
+37. Foundry defaults requests without a version selector to v0.3. Select v1.0 explicitly or verify card-driven client negotiation; matching header/query values are required when both are present.
+38. The dedicated Entra agent identity created at deployment, with the required resource roles. The project managed identity still has separate infrastructure responsibilities; legacy publication-switch instructions have narrower scope.
+39. Compute can stop while session files persist. Storage retention/deletion, conversation retention and memory lifecycle need separate policies and evidence.
+40. The node restarts from its beginning, so preceding work can repeat. Later failures can also replay effects; use appropriately durable, atomic external idempotency or reconciliation, not checkpoint assumptions.
+41. Tool-call/response moderation only applies to supported tools. An enabled policy or annotation does not establish blocking for an unsupported path.
+42. No. Record the target/tool support matrix and tested attacks. Unsupported paths and unexecuted scenarios remain coverage gaps; synthetic data is not a complete sandbox boundary.
+43. A high-volume routine slice can hide a critical slice's failure: 60% critical success fails the example's 90% critical threshold despite the overall score.
+44. An authenticated tenant/subject binding, server-side authorization and scoped storage/query enforcement. A caller-supplied string or display name alone is not proof of identity.
 
 ## 12. Readiness checklist
 
@@ -721,36 +846,45 @@ This is a curated starting point, not a complete list. Do **not** try to consume
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| Four official Microsoft Learn paths | Public | About 14–17 hours plus exercises |
+| Four official Microsoft Learn paths | Public | 17 modules; allow 14–20 hours as a planning estimate |
 | AI-500T00-A instructor-led course | Provider/schedule dependent | 4 days; available September 30, 2026 |
-| O'Reilly *Agentic AI with Microsoft Foundry* | Paid subscription | 8 hours 43 minutes provider reading estimate |
+| O'Reilly *Agentic AI with Microsoft Foundry* | Paid subscription | Earlier 8h 43m estimate; current listing access-blocked |
 | O'Reilly *Hands-On Microsoft Foundry* | Paid subscription/event | About 4 instructional hours plus breaks per listed occurrence |
 | Pluralsight *Building Intelligent Applications* | Paid subscription | 1 hour 2 minutes |
 | Microsoft Foundry samples | Public | Select 4–12 hours by lab gap |
-| Eight labs in this guide | Azure usage may cost money | About 12–24 hours |
+| Ten labs in this guide | Offline starts; cloud steps may incur charges | About 16–30 hours, editorial estimate |
+| Two Microsoft engineering blog exercises | Public | 45–75 minutes each, editorial estimate |
 | Udemy AI-500 practice tests | Paid | About 3–6 hours including review |
 
 ### Official foundation and labs
 
-- [Architect production-grade multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/) — 3 hours 21 minutes across four modules.
-- [Build production-grade multi-agent capabilities in Microsoft Foundry](https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/) — 3 hours 48 minutes across four modules.
-- [Deploy and govern agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/) — 3 hours 14 minutes across four modules.
+- [Architect production-grade multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/) — four modules; the previously recorded 3h 21m total was not exposed in this fetch.
+- [Build production-grade multi-agent capabilities in Microsoft Foundry](https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/) — four modules; the previously recorded 3h 48m total was not exposed in this fetch.
+- [Deploy and govern agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/) — four modules; the previously recorded 3h 14m total was not exposed in this fetch.
 - [Monitor, evaluate, and operate multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/) — five modules; Microsoft does not currently publish usable combined duration values, so allow about 4–6 hours plus lab time as a library planning estimate.
 - [AI-500T00-A Designing and implementing multi-agent AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-500t00) — four instructor-led days, listed as available September 30, 2026. This future course date is separate from the already-live beta exam.
 
-The first three paths publish 10 hours 23 minutes combined. With the estimated fourth path, plan roughly 14–17 hours of reading/exercises before deeper labs. Add 12–24 hours to implement, break, observe, and explain the eight labs in this guide.
+The current paths expose **4 + 4 + 4 + 5 = 17 modules**. The former first-three total of 10h 23m is historical, not a current verified runtime. Allow roughly 14–20 hours for path study and 16–30 hours for the ten labs as editorial planning estimates; adapt to your prerequisites and cloud access.
 
 ### Broader current-platform instruction
 
-- [Agentic AI with Microsoft Foundry](https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/) — O’Reilly book, April 2026, 360 pages, with a provider reading estimate of 8 hours 43 minutes. It spans MCP/tools, Azure Functions and Logic Apps, multi-agent patterns, evaluation/red teaming, deployment, security, and scaling; use the blueprint to check exact objective coverage.
-- [Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) — O’Reilly live course by Razi Rais; about four hours of scheduled instruction plus breaks for one occurrence. Verify a current occurrence and schedule before enrolling.
-- [Microsoft Foundry: Building Intelligent Applications](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) — Pluralsight, 1 hour 2 minutes, published February 2026. A short current-platform introduction to RAG, agents/workflows, evaluation, and guardrails; it is not a complete AI-500 path.
+- [Agentic AI with Microsoft Foundry](https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/) — previously cataloged as an April 2026, 360-page book with an 8h 43m reading estimate. The direct listing was access-blocked on September 28; current edition details and paid content were not verified. Check SDK generation and objective coverage before relying on it.
+- [Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) — O’Reilly live course by Razi Rais. The public outline contains four 55-minute blocks plus 20 minutes, totaling four instructional hours before breaks, covering agents, memory, integrations and deployment. No current occurrence date or live teaching was verified; check availability before enrolling.
+- [Building Intelligent Applications with Microsoft Foundry](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) — Pluralsight, Clint Bonnett, 1h 02m, published February 13, 2026; public syllabus inspected, paid lessons not viewed. A short current-platform introduction to RAG, agents/workflows, evaluation, and guardrails; it is not a complete AI-500 path.
 - [Microsoft Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) — free official sample repository. Select examples that match the current SDK generation and a lab objective; examples can change faster than conceptual documentation.
 
-No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 1, 2026. That is a current catalog gap, not a claim that one will not appear after beta.
+No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 28, 2026. These bounded public searches do not prove absence. Recheck after the course date and beta transition.
 
 ### Optional assessment supplement
 
-- [Udemy AI-500 practice tests by Scott Duffy](https://www.udemy.com/course/ai500-tests/) — four tests of 25 questions (100 total), shown as updated August 2026. Allow about 3–6 hours for timed attempts plus explanation/source review. The listing is new and small, and its claim of an August 22 exam update is not corroborated by Microsoft’s study-guide page, which was last updated July 16 and publishes no separate skills-effective date. Use it only as a secondary readiness signal; resolve every conflict against Microsoft’s blueprint and documentation.
+- [Udemy AI-500 practice tests by Scott Duffy](https://www.udemy.com/course/ai500-tests/) — the public search index advertises four tests of 25 questions (100 total) and an August 2026 update. Direct retrieval was access-blocked; question quality, originality and coverage were not inspected. Allow about 3–6 hours as an editorial attempt/review estimate. The seller’s August 22 exam-update claim remains uncorroborated by Microsoft’s July 16 page, which publishes no separate skills-effective date. Use it only as a secondary readiness signal; resolve every conflict against Microsoft’s blueprint and documentation.
 
 Avoid any provider that advertises leaked, “actual,” or memorized exam questions. Practice should measure whether you can reason from documented behavior, not whether you recognize protected exam content.
+
+
+### Useful engineering blogs and focused exercises
+
+- [Interactive experiences, memory, and resilient execution](https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/) — Dan Taylor, September 24, 2026. Read the resilient-hosting section and sketch how response IDs, checkpoint state and stable executor IDs survive a restart. Use Lab 9 to place the lost-acknowledgement failure. The article explicitly leaves external-effect idempotency to the application. Its memory discussion also distinguishes async extraction from immediate availability. Language/runtime features differ; do not assume sample parity or copy a toy approval policy into a consequential tool. Allow 45–75 minutes for the worksheet, not a verified SDK runtime.
+- [Native Agent Memory for Microsoft Agent Framework, powered by Azure Cosmos DB](https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/) — Theo van Kraay, July 24, 2026. Treat the Python memory provider as a preview integration. Draw where turns become facts/profiles, then test delayed visibility, correction, deletion and two-tenant isolation. Derive memory scope from authenticated identity. A clean async shutdown draining work does not prove crash recovery, and a retrieved profile is context rather than authorization. If customizing extraction prompts, preserve their schema and evaluate the resulting memory. Allow 45–75 minutes for the design exercise; no Cosmos DB resource or package was executed here.
+
+Both main articles were read. Their code, videos, benchmark claims and deployment behavior were not independently reproduced; the exercises are original learning tasks grounded in the documented boundaries.

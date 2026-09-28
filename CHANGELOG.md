@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AI-500’s 55 objectives; add six examples, two labs, 44 answers and two engineering blog exercises. Correct hosted migration, A2A versions, retrieval filtering, interrupt replay and tool-support boundaries; qualify learning catalogs and schedule course/beta follow-ups. See the [AI-500 report](docs/research/2026-09-28-ai-500-deep-review.md).
+
 - September 28, 2026: deeply review AB-650’s 58 objectives; add six examples, two labs, 48 answers and a qualified Agent 365 blog exercise. Update Backup, network, meeting, risk migration, Cowork billing, agent identity, templates and Purview guidance; qualify new practice-test leads and preserve the second-year Backup cadence gap. See the [AB-650 report](docs/research/2026-09-28-ab-650-deep-review.md).
 
 - September 28, 2026: synchronize the shared learning catalog with completed guides, including previously missing exam entries. Add a read-only drift check and an explicit update command that preserves other entries and adjusts local links; include it in the review process and publication checks.

@@ -572,6 +572,8 @@ The review maps every subobjective on the official page last updated March 5, 20
 
 ## AI-500 coverage record
 
+The September 28 [deep review](research/2026-09-28-ai-500-deep-review.md) maps 55 detailed objectives. Whole guide read; all 55 unchanged July objectives mapped across 12 groups. Add six worked examples, two labs (ten total), 44 answered checks, and two bounded Microsoft engineering blog exercises. Correct hosted migration/identity, A2A GA versus default preview, Search filtering, interrupt replay, moderation/red-team coverage, evaluation and catalog boundaries. Nineteen offline assertions passed including the original Python replay example; no cloud, framework, model or paid-content execution; independent human review pending. Current guide citations: 40 registered, 38 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Architect multi-agent solutions | Sections 1–2, all integrated scenarios, Labs 1–3 |

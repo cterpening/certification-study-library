@@ -391,18 +391,54 @@ No exact Pluralsight AB-100 certification path was verified during the August 31
 
 ### AI-500 — Designing and Implementing Multi-Agent AI Solutions (beta)
 
-- Official path 1 (3 hours 21 minutes): [Architect production-grade multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/)
-- Official path 2 (3 hours 48 minutes): [Build production-grade multi-agent capabilities in Microsoft Foundry](https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/)
-- Official path 3 (3 hours 14 minutes): [Deploy and govern agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/)
-- Official path 4 (five modules; allow about 4–6 hours as a library estimate): [Monitor, evaluate, and operate multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/); Microsoft does not currently publish usable combined duration values
-- Instructor-led official course (4 days): [AI-500T00-A](https://learn.microsoft.com/en-us/training/courses/ai-500t00), listed as available September 30, 2026. The exam is already in beta; do not confuse the future course date with exam availability.
-- Current broad book (8 hours 43 minutes provider reading estimate): [O'Reilly Agentic AI with Microsoft Foundry](https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/), April 2026, covering MCP/tools, multi-agent patterns, evaluation/red teaming, deployment, security, and scale
-- Current live instruction (about 4 scheduled instructional hours plus breaks for one occurrence): [O'Reilly Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/); verify a current occurrence before enrolling
-- Short supporting course (1 hour 2 minutes): [Pluralsight Microsoft Foundry: Building Intelligent Applications](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications), February 2026. It covers RAG, agents/workflows, evaluation, and guardrails but is not a complete AI-500 path.
-- Hands-on: [Microsoft Foundry samples](https://github.com/azure-ai-foundry/foundry-samples); choose examples matching the current SDK generation and a specific blueprint gap
-- Optional assessment supplement (about 3–6 hours for attempts and explanation/source review): [Udemy AI-500 practice tests by Scott Duffy](https://www.udemy.com/course/ai500-tests/), four 25-question tests. The listing is new and small, and its claimed August 22 exam update is not corroborated by Microsoft's study-guide page; use it only as a secondary readiness signal.
+Resource details from the [AI-500 guide](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-The first three official paths publish 10 hours 23 minutes combined; with the estimated fourth path, allow roughly 14–17 hours plus 12–24 hours for implementation and troubleshooting practice. No complete current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 1, 2026. No exact John Savill or Microsoft Reactor AI-500 course was verified either; use their broader material only when it closes a known objective gap.
+This is a curated starting point, not a complete list. Do **not** try to consume everything. Pick the explanation style, labs, and assessment signals that close your gaps; keep the current official blueprint beside every third-party resource.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Four official Microsoft Learn paths | Public | 17 modules; allow 14–20 hours as a planning estimate |
+| AI-500T00-A instructor-led course | Provider/schedule dependent | 4 days; available September 30, 2026 |
+| O'Reilly *Agentic AI with Microsoft Foundry* | Paid subscription | Earlier 8h 43m estimate; current listing access-blocked |
+| O'Reilly *Hands-On Microsoft Foundry* | Paid subscription/event | About 4 instructional hours plus breaks per listed occurrence |
+| Pluralsight *Building Intelligent Applications* | Paid subscription | 1 hour 2 minutes |
+| Microsoft Foundry samples | Public | Select 4–12 hours by lab gap |
+| Ten labs in this guide | Offline starts; cloud steps may incur charges | About 16–30 hours, editorial estimate |
+| Two Microsoft engineering blog exercises | Public | 45–75 minutes each, editorial estimate |
+| Udemy AI-500 practice tests | Paid | About 3–6 hours including review |
+
+#### Official foundation and labs
+
+- [Architect production-grade multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/) — four modules; the previously recorded 3h 21m total was not exposed in this fetch.
+- [Build production-grade multi-agent capabilities in Microsoft Foundry](https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/) — four modules; the previously recorded 3h 48m total was not exposed in this fetch.
+- [Deploy and govern agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/) — four modules; the previously recorded 3h 14m total was not exposed in this fetch.
+- [Monitor, evaluate, and operate multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/) — five modules; Microsoft does not currently publish usable combined duration values, so allow about 4–6 hours plus lab time as a library planning estimate.
+- [AI-500T00-A Designing and implementing multi-agent AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-500t00) — four instructor-led days, listed as available September 30, 2026. This future course date is separate from the already-live beta exam.
+
+The current paths expose **4 + 4 + 4 + 5 = 17 modules**. The former first-three total of 10h 23m is historical, not a current verified runtime. Allow roughly 14–20 hours for path study and 16–30 hours for the ten labs as editorial planning estimates; adapt to your prerequisites and cloud access.
+
+#### Broader current-platform instruction
+
+- [Agentic AI with Microsoft Foundry](https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/) — previously cataloged as an April 2026, 360-page book with an 8h 43m reading estimate. The direct listing was access-blocked on September 28; current edition details and paid content were not verified. Check SDK generation and objective coverage before relying on it.
+- [Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) — O’Reilly live course by Razi Rais. The public outline contains four 55-minute blocks plus 20 minutes, totaling four instructional hours before breaks, covering agents, memory, integrations and deployment. No current occurrence date or live teaching was verified; check availability before enrolling.
+- [Building Intelligent Applications with Microsoft Foundry](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications) — Pluralsight, Clint Bonnett, 1h 02m, published February 13, 2026; public syllabus inspected, paid lessons not viewed. A short current-platform introduction to RAG, agents/workflows, evaluation, and guardrails; it is not a complete AI-500 path.
+- [Microsoft Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) — free official sample repository. Select examples that match the current SDK generation and a lab objective; examples can change faster than conceptual documentation.
+
+No complete, current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 28, 2026. These bounded public searches do not prove absence. Recheck after the course date and beta transition.
+
+#### Optional assessment supplement
+
+- [Udemy AI-500 practice tests by Scott Duffy](https://www.udemy.com/course/ai500-tests/) — the public search index advertises four tests of 25 questions (100 total) and an August 2026 update. Direct retrieval was access-blocked; question quality, originality and coverage were not inspected. Allow about 3–6 hours as an editorial attempt/review estimate. The seller’s August 22 exam-update claim remains uncorroborated by Microsoft’s July 16 page, which publishes no separate skills-effective date. Use it only as a secondary readiness signal; resolve every conflict against Microsoft’s blueprint and documentation.
+
+Avoid any provider that advertises leaked, “actual,” or memorized exam questions. Practice should measure whether you can reason from documented behavior, not whether you recognize protected exam content.
+
+
+#### Useful engineering blogs and focused exercises
+
+- [Interactive experiences, memory, and resilient execution](https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/) — Dan Taylor, September 24, 2026. Read the resilient-hosting section and sketch how response IDs, checkpoint state and stable executor IDs survive a restart. Use Lab 9 to place the lost-acknowledgement failure. The article explicitly leaves external-effect idempotency to the application. Its memory discussion also distinguishes async extraction from immediate availability. Language/runtime features differ; do not assume sample parity or copy a toy approval policy into a consequential tool. Allow 45–75 minutes for the worksheet, not a verified SDK runtime.
+- [Native Agent Memory for Microsoft Agent Framework, powered by Azure Cosmos DB](https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/) — Theo van Kraay, July 24, 2026. Treat the Python memory provider as a preview integration. Draw where turns become facts/profiles, then test delayed visibility, correction, deletion and two-tenant isolation. Derive memory scope from authenticated identity. A clean async shutdown draining work does not prove crash recovery, and a retrieved profile is context rather than authorization. If customizing extraction prompts, preserve their schema and evaluate the resulting memory. Allow 45–75 minutes for the design exercise; no Cosmos DB resource or package was executed here.
+
+Both main articles were read. Their code, videos, benchmark claims and deployment behavior were not independently reproduced; the exercises are original learning tasks grounded in the documented boundaries.
 
 ### AB-620 — Designing and Building Integrated AI Agent Solutions in Copilot Studio
 

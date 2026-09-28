@@ -1630,26 +1630,42 @@
       "exam_code": "AI-500",
       "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
       "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
       "objective_coverage": [
         {
           "objective_group": "Architect multi-agent solutions",
-          "guide_sections": ["Sections 1–2", "All integrated scenarios", "Labs 1–3"]
+          "guide_sections": [
+            "Sections 1–2",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
         },
         {
           "objective_group": "Develop multi-agent solutions in Azure",
-          "guide_sections": ["Sections 3–5", "All integrated scenarios", "Labs 2–5"]
+          "guide_sections": [
+            "Sections 3–5",
+            "All integrated scenarios",
+            "Labs 2–5"
+          ]
         },
         {
           "objective_group": "Evaluate, optimize, and monitor multi-agent solutions",
-          "guide_sections": ["Section 6", "All integrated scenarios", "Labs 5–7"]
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
         },
         {
           "objective_group": "Secure, govern, and deploy multi-agent solutions",
-          "guide_sections": ["Section 7", "All integrated scenarios", "Labs 3 and 6–8"]
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Labs 3 and 6–8"
+          ]
         }
       ],
       "checks": {
@@ -1660,12 +1676,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 34,
-        "reachable": 32,
+        "unique_external_links": 40,
+        "reachable": 38,
         "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "Every subobjective on the official study-guide page last updated July 16, 2026 is mapped to an architecture, implementation, evaluation, operating, security, governance, or release decision. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover decomposition and topology, Agent Framework and HITL, MCP/A2A, per-agent identity and OBO, multi-tier memory and RAG, prompt/context/fine-tuning choices, tools and middleware, evaluation, continuity, tracing, cost, guardrails, red teaming, and deployment. All 34 cited URLs are cataloged: 32 reachable and two commercial pages access-blocked. The September 7 watch records the October GA target without inventing a date and documents the hosted-agent migration boundary while retaining verified beta status."
+      "notes": "Whole guide read; all 55 unchanged July objectives mapped across 12 groups. Add six worked examples, two labs (ten total), 44 answered checks, and two bounded Microsoft engineering blog exercises. Correct hosted migration/identity, A2A GA versus default preview, Search filtering, interrupt replay, moderation/red-team coverage, evaluation and catalog boundaries. Nineteen offline assertions passed including the original Python replay example; no cloud, framework, model or paid-content execution; independent human review pending. See docs/research/2026-09-28-ai-500-deep-review.md"
     },
     {
       "id": "ab-620-2026-09-01-source-validation",

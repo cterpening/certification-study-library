@@ -1,0 +1,2094 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AI-500",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "a63ac2b47b837099da6d2ec7ed1f9f6cefaeaef17baacf258531f0d436843e3e",
+  "guide_after_sha256": "527088864ff001f3b16a019e43036c15e1bf39ccae997d5b1440d23f26d8f750",
+  "prior_records": {
+    "exam": {
+      "code": "AI-500",
+      "level": "expert",
+      "vendor_id": "microsoft",
+      "title": "Designing and Implementing Multi-Agent AI Solutions",
+      "status": "beta",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+      "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103), plus production Python, Azure compute/network/storage/data, Microsoft Foundry, agent frameworks, MCP, RAG, identity, security, evaluation, observability, and CI/CD experience."
+    },
+    "review": {
+      "id": "ai-500-2026-09-01-source-validation",
+      "exam_code": "AI-500",
+      "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+      "objective_coverage": [
+        {
+          "objective_group": "Architect multi-agent solutions",
+          "guide_sections": [
+            "Sections 1–2",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Develop multi-agent solutions in Azure",
+          "guide_sections": [
+            "Sections 3–5",
+            "All integrated scenarios",
+            "Labs 2–5"
+          ]
+        },
+        {
+          "objective_group": "Evaluate, optimize, and monitor multi-agent solutions",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 5–7"
+          ]
+        },
+        {
+          "objective_group": "Secure, govern, and deploy multi-agent solutions",
+          "guide_sections": [
+            "Section 7",
+            "All integrated scenarios",
+            "Labs 3 and 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 34,
+        "reachable": 32,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official study-guide page last updated July 16, 2026 is mapped to an architecture, implementation, evaluation, operating, security, governance, or release decision. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover decomposition and topology, Agent Framework and HITL, MCP/A2A, per-agent identity and OBO, multi-tier memory and RAG, prompt/context/fine-tuning choices, tools and middleware, evaluation, continuity, tracing, cost, guardrails, red teaming, and deployment. All 34 cited URLs are cataloged: 32 reachable and two commercial pages access-blocked. The September 7 watch records the October GA target without inventing a date and documents the hosted-agent migration boundary while retaining verified beta status."
+    },
+    "sources": [
+      {
+        "id": "ai-500-blueprint",
+        "title": "AI-500 Designing and Implementing Multi-Agent AI Solutions study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-exam-page",
+        "title": "Exam AI-500: Designing and Implementing Multi-Agent AI Solutions (beta)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ],
+        "notes": "Official exam status, language, scheduling, and Practice Assessment availability page; the canonical objective blueprint is the separate AI-500 study-guide source."
+      },
+      {
+        "id": "ai-500-certification-page",
+        "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-course",
+        "title": "AI-500T00 Designing and implementing multi-agent AI solutions",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-learn-architect-path",
+        "title": "Architect production-grade multi-agent AI solutions",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-learn-build-path",
+        "title": "Build production-grade multi-agent capabilities in Microsoft Foundry",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-learn-govern-path",
+        "title": "Deploy and govern agentic AI solutions on Azure",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-learn-operate-path",
+        "title": "Monitor, evaluate, and operate multi-agent AI solutions",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ],
+        "notes": "The page currently lists five modules without usable combined duration values; the guide labels its 4–6 hour planning figure as a library estimate."
+      },
+      {
+        "id": "ai-500-agent-framework-orchestrations",
+        "title": "Agent Framework workflow orchestrations",
+        "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-agent-framework-human-loop",
+        "title": "Agent Framework human-in-the-loop workflows",
+        "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/human-in-the-loop",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-multiple-agent-architecture",
+        "title": "Multiple-agent workflow automation architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multiple-agent-workflow-automation",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-apim-mcp-overview",
+        "title": "Azure API Management MCP server overview",
+        "url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-agent-identity-concepts",
+        "title": "Foundry agent identity concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AB-100",
+          "AI-103",
+          "AI-500"
+        ],
+        "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+      },
+      {
+        "id": "ai-500-agent-a2a-endpoint",
+        "title": "Enable the Agent-to-Agent endpoint for a Foundry agent",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ],
+        "notes": "Preview capability; guide marks it VERIFY CURRENT."
+      },
+      {
+        "id": "ai-500-agent-obo-flow",
+        "title": "Microsoft Entra Agent ID on-behalf-of OAuth flow",
+        "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-guardrail-intervention-points",
+        "title": "Guardrail intervention points in Microsoft Foundry",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-ai-red-teaming-agent",
+        "title": "AI Red Teaming Agent in Microsoft Foundry",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-oreilly-agentic-ai-foundry",
+        "title": "Agentic AI with Microsoft Foundry",
+        "url": "https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ]
+      },
+      {
+        "id": "ai-500-pluralsight-building-intelligent-applications",
+        "title": "Microsoft Foundry: Building Intelligent Applications",
+        "url": "https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ],
+        "notes": "Short current-platform course; not represented as a complete AI-500 path."
+      },
+      {
+        "id": "ai-500-udemy-scott-duffy-practice-tests",
+        "title": "AI-500 practice tests by Scott Duffy",
+        "url": "https://www.udemy.com/course/ai500-tests/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AI-500"
+        ],
+        "notes": "New 100-question commercial bank; guide records the provider-update claim conflict and treats it only as a secondary readiness signal."
+      },
+      {
+        "id": "ai-500-ga-october-2026-announcement",
+        "title": "New Microsoft Certified: Multi-Agent AI Solutions Expert Certification",
+        "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+        "publisher": "Microsoft Tech Community",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AI-500"
+        ],
+        "notes": "Microsoft announcement targets October 2026 general availability without supplying a specific day."
+      },
+      {
+        "id": "ai-500-hosted-agent-migration",
+        "title": "Migrate hosted agents to the latest version",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AI-500"
+        ],
+        "notes": "Migration boundary for the initial hosted-agent preview backend, identity, endpoint, protocol, and API changes."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "90aede88bca9de717d9d60572f020fb187a6279227efbc22379fdb89ba3c6570",
+      "guide_sections": "1 / Goal decomposition and architecture contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "01da96ac94f51d4c0c17d33caf326811ce7ea8359d3fbbf8b6b9fcf356812242",
+      "guide_sections": "1 / Topologies, bounded control loop and HITL",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "2b44179dd655a0fa174f5825663e2877244bfe299154df1868690a4ae9194e80",
+      "guide_sections": "1 / Personas, scope and autonomy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "bae667307cce286bc0187a0c538d176251d507a74072e8720531ead445e8c9bd",
+      "guide_sections": "2 / Per-agent identity; 4 / Function tool permission contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "2b5f10b6e5871496f2bda00fd3b613ff408baa835e4d6e44227e31582c3eb92a",
+      "guide_sections": "2 / MCP and current A2A protocol boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "85b8ee12cae4c9131bbb90e5aaeb9f800df3e817bf760cdfa134341f5f10286e",
+      "guide_sections": "1 / HAX, correction, autonomy and responsible-AI controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "f6a02fd3866efa702019d5a74402b31b7421acf07b93055b541fb868856f233c",
+      "guide_sections": "2 / State tiers; 3 / Memory isolation and lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "57f1405c472408f400c208de3825f952ddf0585019e8904ddd0b7a2217e6ce20",
+      "guide_sections": "2 / Model family selection and fallback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "cb3d269669f3c90dfc37ac9fe60356ca6ebcb77a24efcdcb1e85eb5c61a6974d",
+      "guide_sections": "2 / Integration protocols; 4 / RAG routing and governed tools",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "db58415c284e24557b1751be3d4ca133054703b793abeb899a8db39d6ddd9bea",
+      "guide_sections": "2 / Zero Trust identity/resource matrix; 7 / Access controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "6015279ad14617adcde219093f4693d712bc25a04132084b1471a497f1f80485",
+      "guide_sections": "2 / State tiers; 3 / Checkpointer versus store and tenant scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "1e46366756cf8a8cf148aa187d3b0c6147f4afb42f29f64834a8eb144b745935",
+      "guide_sections": "2 / Compute and current hosted-agent migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "247f3c56dc17d5011ef7be6a4714ca8b9befe9b058978ae3683674af276339a6",
+      "guide_sections": "2 / Correlated observability without hidden reasoning; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "a97f4c4bbef4385ecbf9d0511b976ddf010bfa0d8f0747eed1f356cbc61bcaca",
+      "guide_sections": "6 / Reliability, dashboard, regression and remediation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "43c14c25e89dc904be387e26810b99938d8bf606d682ce162ed1684b8333c550",
+      "guide_sections": "2 / Developer environment, dependencies and AI instructions; lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "9c66d1de35d734c8e71e408f668c232be76fa1c675b861dea543ad5afd3ea3ec",
+      "guide_sections": "3 / Versioned prompts, examples, injection and defense",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "5a37c3300eef26611c5d89260a73ddfcc19b5742b0085dbc57c39889d31a81a6",
+      "guide_sections": "3 / Context pipeline and budget example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "49406a5ca8f086675f9f0d1caa6a27b7f74d5b28bce835f05e9db24098032901",
+      "guide_sections": "3 / Fine-tuning data, retraining triggers and rollback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "4b65ed5015a7846dbd65517f3dcd2edd18eedb337e7c7f40f0f0e102bcf1a09f",
+      "guide_sections": "3 / Context selection, compaction and example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "cea024868452ec9b3524338ac8934641634b751e56aeff45a31f733587c89321",
+      "guide_sections": "2 / Memory tiers; 3 / Security/lifecycle; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "09422b7786b4d3e59ae205fa6b2e63f502ff29469d1da109c89eb11bc406211e",
+      "guide_sections": "4 / Chunking, embeddings, retrieval metrics and filter example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "3dde23dacf31cae5a3317884a5869524498b9529f15e173905f05ecb9665e32b",
+      "guide_sections": "4 / Shared retrieval policy, hybrid search and MCP sources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "ea906393e41f43974b50ccd154c4d25d22a986c32382ae3d37a92acd359c5d22",
+      "guide_sections": "4 / Function tools, forced/dynamic choice and current-state checks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "77ff2128d0df366dc11f1469b18ac987481fa806803705dbac32e7c414c025ff",
+      "guide_sections": "4 / MCP clients/servers, Functions, Logic Apps and APIM limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "08f29167c3d9b4260f7c40ad651562613a491393c06f9efa4f8fd14e2655ec23",
+      "guide_sections": "4 / Error taxonomy, retry/fallback and duplicate handling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "daf70b5da89ba5e7e4b706f8500c480acf0f7ee99503960813fbb82aebf926b8",
+      "guide_sections": "4 / Typed result, schema, quality and provenance checks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "245c4870d7d27bbd1b09daffcd88e5b17c6b3bbc303be6c874cdbc38c0a2ade1",
+      "guide_sections": "1 / Orchestration topology tradeoffs; 5 / Reusable implementation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "b6a2c08465235927d7a51e7c9958c6004a9bc55957b1d1a1c73e2c7a439e3146",
+      "guide_sections": "5 / Approval state, overrides, expiry and interrupt replay",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "a2f364bf61dd2c723d8579c654c3a8bad2050b2ae851a0343cecfe15998f180a",
+      "guide_sections": "5 / Prompt/semantic/response/tool-result cache scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "867a9ff18ac3ffd66d9fdd8d46e2d015185c93e3a271864cd59b8d63f836f998",
+      "guide_sections": "1 / Capacity example 1; 5 / Bounded spawning and concurrency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "3e1395737313e63e156e0bbfe5d41345a450a0744f0531ffcc074f932a98a50f",
+      "guide_sections": "2 / A2A versions and identity; 4 / Existing-agent integration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "4de9dab2c632220d89932ce96ce573a7d522fe4ed183b5cdc6b953dd53f2f6a8",
+      "guide_sections": "5 / Framework roles, LangGraph persistence/interrupts; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "9b3e3497361abf505781be0638f1ea8d460b9d0b0b908378f751254b0e957021",
+      "guide_sections": "5 / Transformers component implementation and optional lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "6a4dd2b0b451bcdd24df608f664ec9773b7eaa09948f75b0880755ff7b1af230",
+      "guide_sections": "5 / Middleware ordering, authorization and exception handling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "9730895a15f5519af4150c36dbebf3e5bbc7acf21ca85ebd43d8360d773cf070",
+      "guide_sections": "6 / Human calibration and Foundry evaluation targets; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "e06eae09191f83b7adbd0473688589be336bf3243ee533955a6c50a12ce3563c",
+      "guide_sections": "6 / Layered evaluation matrix and critical-slice example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "3fd919c3f6f9d3cbd366da6875777f2cad3aaa449b8ba10842369ad2c5f20ef4",
+      "guide_sections": "1 / Critical path and quota example 1; 6 / Failure injection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "6c1862da8ce5d8e934d9b5ac76ba12dc5fb6ddb11d02495c51b36d666ebdd89e",
+      "guide_sections": "3 / Context example 2; 6 / Continuity diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "43f3a29941319cd7ffd7742c5d479e42e0fb91e2bdf192492689a69ed7c8424e",
+      "guide_sections": "6 / Holdout sets, synthetic cases, judges and feedback loops",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "fb64ba955fde4a8143ca27c994930ef2586b8bdd3402dc5fb29a0fa6f392894c",
+      "guide_sections": "6 / Reliability SLOs, coordination, drift and remediation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "24e291b0166aa98e1c298b7d400961ff5d6d5a15aacf1143871fff64c15790e2",
+      "guide_sections": "6 / Platform versus outcome availability and dashboard limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "f6198d301b269392972add9b20c32971b87cd80b7034c0d8774144b6b30ba6f1",
+      "guide_sections": "3 / Token reserve example 2; 6 / Loop/tool budgets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "fc7534dbaa41de4962a902708dd343031526015d1596f196a702e31a7557f19c",
+      "guide_sections": "6 / Quotas, attribution, allocations and cost example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "f7a7b4c999fb8bad98f2545c82c96e3e01dfea2093eecebac4de0592e0168f3c",
+      "guide_sections": "2 / Trace schema; 6 / Foundry monitoring and telemetry; lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "2464b553a2c636a3286f434e9695389f2d8dc2190ad3dc24003a418ca7c91977",
+      "guide_sections": "2 / Current agent identity; 7 / Resource-access matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "cba0e0cfb9a9554b4f71baaed43effda2b0e8f689d3c439134e38bd2fc3d7d5e",
+      "guide_sections": "2 / OAuth/OBO, application identity and API-key limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "9ba61ef56d7d28a1cf04eee7b7f60ae93f8ef29d36691e853cc6c91a43e6a28a",
+      "guide_sections": "7 / Key Vault secrets/certificates, roles, rotation and encryption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "14bbe6302428be1626a8c68dd6941dd988f05a83e9ac012cad22c6cd9f55b438",
+      "guide_sections": "7 / Shift-left red-team target/tool scope and regression; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "f280cca1bb238d1199db0f0ce449f8c34a11b13f97050789d60de530c3b719c9",
+      "guide_sections": "7 / Four intervention points and supported-tool moderation matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "2787417d1dc09c2503bc4a1384c3b93b1c12065e9535dc2d68fc0a243e2fe4e0",
+      "guide_sections": "7 / Domain constraints and companion server controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "54f6b066c0a29205ec728b7bf3877d2fd872ae21f0c12cd087d3b514664179c4",
+      "guide_sections": "7 / Synthetic false-positive/negative validation; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "dae61be545287df2decc01f9da8d8758b6d5972f322699ba6f89401a41c4dbd4",
+      "guide_sections": "7 / DTAP and release-method selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "b237994517da40dee1c5caabfc22fff344b50799d701cc60f4df69117717e442",
+      "guide_sections": "7 / Environment separation, workflow compatibility and rollback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "c37377c59a8527ad356bc57da206e107ebf704c6ae5b8db920556f719890da9a",
+      "guide_sections": "7 / Deterministic, integration, regression and evaluation tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "9eae096b7fa3e9caa4598e4c44d84c9b96beac07ba6ca8c0562ba78976f912c5",
+      "guide_sections": "7 / Artifact manifest, IaC and CI/CD gates; lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AI-500",
+        "title": "Designing and Implementing Multi-Agent AI Solutions",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+        "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+        "snapshot_path": "data\\objective-snapshots\\ai-500-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ai-500-official-status.json",
+        "previous_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+        "current_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+        "previous_status_sha256": "3a4cab19e6ab36b3cdf6e1ee4e089c2b08b2b10ce713149a7177b6087673599b",
+        "current_status_sha256": "3a4cab19e6ab36b3cdf6e1ee4e089c2b08b2b10ce713149a7177b6087673599b",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-07-16; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 40,
+    "reachable": 38,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "ai-500-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+      "checked_at": "2026-09-28T06:00:48.287525+00:00",
+      "health": {
+        "id": "ai-500-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AI-500: Designing and Implementing Multi-Agent AI Solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "6a8a3544a326915c8c49d69bc14e8a281edf9b320cbfe0f2ee962120dcca5850",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500",
+      "sha256": "f35fcbf1eee738af2be2a631857ded3359cc738e30014f34433833762687e2da",
+      "text_characters": 11540
+    },
+    {
+      "id": "ai-500-exam-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+      "checked_at": "2026-09-28T06:00:48.288956+00:00",
+      "health": {
+        "id": "ai-500-exam-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+        "content_type": "text/html",
+        "page_title": "Exam AI-500: Designing and Implementing Multi-Agent AI Solutions (beta) - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+        "duration_signals": [],
+        "signal_fingerprint": "e1fb8e3030c823865297c87bc32b6e5d020274c153b80a86fe0a182832d1546a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+      "sha256": "1f65cdeb6d68f1d39e3d2a1ddc0b1f3ced4d29b7a00e5074620eaaa6ad2f1511",
+      "text_characters": 5551
+    },
+    {
+      "id": "ai-500-certification-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+      "checked_at": "2026-09-28T06:00:48.289647+00:00",
+      "health": {
+        "id": "ai-500-certification-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta) - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+        "duration_signals": [],
+        "signal_fingerprint": "a75ba55026a077f1c2c4efff9eba8da019642be7ccc2aae46c578f56f3057b35",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+      "sha256": "a60ab74d2269b8dc6ce53a4c8899b9161273139a5291c4be207cd459786e999c",
+      "text_characters": 4683
+    },
+    {
+      "id": "ai-500-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
+      "checked_at": "2026-09-28T06:00:48.665964+00:00",
+      "health": {
+        "id": "ai-500-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
+        "content_type": "text/html",
+        "page_title": "Course AI-500T00-A: Design and implement multi-agent AI solutions - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
+        "duration_signals": [],
+        "signal_fingerprint": "2dad44ab765565ebc061f972f377876d6edd8192b3bef55313993788adac3718",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-500t00",
+      "sha256": "feac7f75a995a731667d75739d1cb4bdead10e2be527e6eb120374d3285e8cf9",
+      "text_characters": 1666
+    },
+    {
+      "id": "ai-500-learn-architect-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/",
+      "checked_at": "2026-09-28T06:00:48.670115+00:00",
+      "health": {
+        "id": "ai-500-learn-architect-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/",
+        "content_type": "text/html",
+        "page_title": "Architect Production-Grade Multi-Agent AI Solutions in Azure AI-500 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/",
+        "duration_signals": [],
+        "signal_fingerprint": "f0427a6821cc0e6fe94df97ec98de96c0bc161674740ac608bd19fb1a92562d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/",
+      "sha256": "c14ee01c7b2ff30f249f0496158f48e952bf0852c48df9f01c864259243ea422",
+      "text_characters": 2856
+    },
+    {
+      "id": "ai-500-learn-build-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/",
+      "checked_at": "2026-09-28T06:00:48.679803+00:00",
+      "health": {
+        "id": "ai-500-learn-build-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/",
+        "content_type": "text/html",
+        "page_title": "Build Production-Grade Multi-Agent Capabilities with Microsoft Foundry - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/",
+        "duration_signals": [],
+        "signal_fingerprint": "5df8b69b5be26f6175e009152b5247809f96da3312779e72a7b5d587628e0119",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/",
+      "sha256": "73687fd9aae229142bffb56fdd5f7f28601794c15a0465b1897ca1f7fd984ab5",
+      "text_characters": 3049
+    },
+    {
+      "id": "ai-500-learn-govern-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/",
+      "checked_at": "2026-09-28T06:00:48.870224+00:00",
+      "health": {
+        "id": "ai-500-learn-govern-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/",
+        "content_type": "text/html",
+        "page_title": "Deploy and Govern Enterprise Agentic AI Solutions on Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/",
+        "duration_signals": [],
+        "signal_fingerprint": "00d5ba2ce1f8ff4e4260deee342dddc6dc927bc70908163bda7aae40c0ffe159",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/",
+      "sha256": "c0d66d93f8a84e39ded039d4dbc1d4cb20c8791723af3611f830ddca1ddc9fe7",
+      "text_characters": 3369
+    },
+    {
+      "id": "ai-500-learn-operate-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+      "checked_at": "2026-09-28T06:00:48.870490+00:00",
+      "health": {
+        "id": "ai-500-learn-operate-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+        "content_type": "text/html",
+        "page_title": "Monitor, Evaluate, and Operate Multi-Agent AI Solutions in Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+        "duration_signals": [],
+        "signal_fingerprint": "853da3957e2202c3bb21f8c156c9e20db6e273e4dafd4efe0d8bbb8af26e6df9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+      "sha256": "8b6f9383e7f3c1cc50477d3e04f0622d751f452519787f22951a60154c77abf7",
+      "text_characters": 3820
+    },
+    {
+      "id": "ai-500-agent-framework-orchestrations",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/",
+      "checked_at": "2026-09-28T06:00:48.935428+00:00",
+      "health": {
+        "id": "ai-500-agent-framework-orchestrations",
+        "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/",
+        "checked_at": "2026-09-28T06:00:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/",
+        "content_type": "text/html",
+        "page_title": "Workflow orchestrations in Agent Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/",
+        "duration_signals": [],
+        "signal_fingerprint": "a390e805b0f58ff785657463f3c5a76942ec27c7cab291e061f5d95219cad486",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/",
+      "sha256": "62a0e7f330d5b744b4e5c8b9b119c894b331dffeaa5e21b665443afe4c2cd07f",
+      "text_characters": 1297
+    },
+    {
+      "id": "ai-500-agent-framework-human-loop",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/human-in-the-loop",
+      "checked_at": "2026-09-28T06:00:49.085330+00:00",
+      "health": {
+        "id": "ai-500-agent-framework-human-loop",
+        "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/human-in-the-loop",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/agent-framework/workflows/human-in-the-loop",
+        "content_type": "text/html",
+        "page_title": "Microsoft Agent Framework Workflows - Human-in-the-loop (HITL)",
+        "canonical_url": "https://learn.microsoft.com/en-us/agent-framework/workflows/human-in-the-loop",
+        "duration_signals": [],
+        "signal_fingerprint": "8227bb3dea5b887961f037eeb1ffd5e15c2e70043cccbb0c88b9a5fbb7cc1f23",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/agent-framework/workflows/human-in-the-loop",
+      "sha256": "6db3475c18517370a8abe215da7511dfd039118b4e453de280dcd61913a89466",
+      "text_characters": 11650
+    },
+    {
+      "id": "ai-500-multiple-agent-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multiple-agent-workflow-automation",
+      "checked_at": "2026-09-28T06:00:49.085502+00:00",
+      "health": {
+        "id": "ai-500-multiple-agent-architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multiple-agent-workflow-automation",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multiple-agent-workflow-automation",
+        "content_type": "text/html",
+        "page_title": "Build a Multiple-Agent Workflow Automation Solution by using Microsoft Agent Framework - Azure Architecture Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multiple-agent-workflow-automation",
+        "duration_signals": [],
+        "signal_fingerprint": "a0813a9f1e2bf883ac59cf89963f15f7efb4cbd16931bfe701d2325349d58b00",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/idea/multiple-agent-workflow-automation",
+      "sha256": "cf58617f8d62d4066db3e99f645ba6821ce5f616a9f9a77f6074b6d555256b0c",
+      "text_characters": 15386
+    },
+    {
+      "id": "ai-500-apim-mcp-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+      "checked_at": "2026-09-28T06:00:49.178743+00:00",
+      "health": {
+        "id": "ai-500-apim-mcp-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+        "content_type": "text/html",
+        "page_title": "Overview of MCP servers in Azure API Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "8627a98e7cc8049eae34b9bd05e1a15a4bce42fcb86b487ba973c757a89316da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+      "sha256": "2cce0f6c15a4b9a23de0461ac9e50ba722faec8d2489678ae2b6336b00270b9e",
+      "text_characters": 8513
+    },
+    {
+      "id": "ai-500-agent-identity-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+      "checked_at": "2026-09-28T06:00:49.310724+00:00",
+      "health": {
+        "id": "ai-500-agent-identity-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+        "content_type": "text/html",
+        "page_title": "Agent identity concepts in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+        "duration_signals": [],
+        "signal_fingerprint": "52669771391d71dda2660e7df3664c2105c9972407dc20682902d665b39fab9d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+      "sha256": "e468b9075d55fd4caaba6e1a71e5c717f2da4ddc983e009e423a4fbbf6a98b65",
+      "text_characters": 22377
+    },
+    {
+      "id": "ai-500-agent-a2a-endpoint",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+      "checked_at": "2026-09-28T06:00:49.336322+00:00",
+      "health": {
+        "id": "ai-500-agent-a2a-endpoint",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+        "content_type": "text/html",
+        "page_title": "Enable incoming A2A on a Foundry agent - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+        "duration_signals": [],
+        "signal_fingerprint": "b8d43b0a75b100e140e444f247c54049ae1cc45acf28b466601f5e90c3092d37",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+      "sha256": "7d2b8231b45bbb28e4adf88dd127da3ec5d153df3af0c8bc7c5668db65b35361",
+      "text_characters": 22604
+    },
+    {
+      "id": "ai-500-agent-obo-flow",
+      "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow",
+      "checked_at": "2026-09-28T06:00:49.414769+00:00",
+      "health": {
+        "id": "ai-500-agent-obo-flow",
+        "url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow",
+        "content_type": "text/html",
+        "page_title": "Agent OAuth flows - On-behalf-of flow - Microsoft Entra Agent ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow",
+        "duration_signals": [],
+        "signal_fingerprint": "95121c92c41d89c191a291a61919a9852bd5a9592dc592e02862fa5b3900d257",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/agent-id/agent-on-behalf-of-oauth-flow",
+      "sha256": "0d16bbb8d85dfc75be2e4a6f9482cd0148985ca6b6ba76a6f997d7b941222c9a",
+      "text_characters": 7532
+    },
+    {
+      "id": "ai-500-guardrail-intervention-points",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+      "checked_at": "2026-09-28T06:00:49.562480+00:00",
+      "health": {
+        "id": "ai-500-guardrail-intervention-points",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+        "content_type": "text/html",
+        "page_title": "Intervention points concepts - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+        "duration_signals": [],
+        "signal_fingerprint": "de2480abf38cd2b9c54792bc9ec8561ac2888d84bede5c6af0d6e177a71cd543",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+      "sha256": "9aef9a864543e845597b165db72b24f438b9c2d1da66dcce6be15296cb3f7c7b",
+      "text_characters": 4408
+    },
+    {
+      "id": "ai-500-ai-red-teaming-agent",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+      "checked_at": "2026-09-28T06:00:49.582940+00:00",
+      "health": {
+        "id": "ai-500-ai-red-teaming-agent",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+        "content_type": "text/html",
+        "page_title": "AI Red Teaming Agent - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "5ecb6e18c469e8d4705a10495ac02b8f29617b677b56c6fe99cd3f2c252bbabe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+      "sha256": "4e7adbbb9f8f4d2228828492cbe44b427026c331add3d1dfaed3d956ead72880",
+      "text_characters": 18913
+    },
+    {
+      "id": "ai-500-oreilly-agentic-ai-foundry",
+      "url": "https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/",
+      "checked_at": "2026-09-28T06:00:49.633207+00:00",
+      "health": {
+        "id": "ai-500-oreilly-agentic-ai-foundry",
+        "url": "https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai-500-pluralsight-building-intelligent-applications",
+      "url": "https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications",
+      "checked_at": "2026-09-28T06:00:49.762856+00:00",
+      "health": {
+        "id": "ai-500-pluralsight-building-intelligent-applications",
+        "url": "https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Building Intelligent Applications with Microsoft Foundry",
+        "canonical_url": "https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications",
+        "duration_signals": [],
+        "signal_fingerprint": "2163a5753d57bf231e4ad7c4f7b62fd1008550f5a2129af13aac84bad9773dde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications",
+      "sha256": "05dec0cdf00d535ce9534ccfa4ce6bc9a3c22d18f72f312158eb53b23b0a70a5",
+      "text_characters": 5176
+    },
+    {
+      "id": "ai-500-udemy-scott-duffy-practice-tests",
+      "url": "https://www.udemy.com/course/ai500-tests/",
+      "checked_at": "2026-09-28T06:00:49.773925+00:00",
+      "health": {
+        "id": "ai-500-udemy-scott-duffy-practice-tests",
+        "url": "https://www.udemy.com/course/ai500-tests/",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai500-tests/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai-500-ga-october-2026-announcement",
+      "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+      "checked_at": "2026-09-28T06:00:49.805660+00:00",
+      "health": {
+        "id": "ai-500-ga-october-2026-announcement",
+        "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "New Microsoft Certified: Multi-Agent AI Solutions Expert Certification | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+        "duration_signals": [],
+        "signal_fingerprint": "815d37f67e197504b9e73ba4e859f95744a2744eda06cb7e6d40022affb1085c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122",
+      "sha256": "8d1f1283fbe7450560e016ae0f9c0394fc4fab083cc25028082498df3248f781",
+      "text_characters": 96
+    },
+    {
+      "id": "ai-500-hosted-agent-migration",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+      "checked_at": "2026-09-28T06:00:49.844828+00:00",
+      "health": {
+        "id": "ai-500-hosted-agent-migration",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+        "checked_at": "2026-09-28T06:00:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+        "content_type": "text/html",
+        "page_title": "Migrate hosted agents to the latest version - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+        "duration_signals": [
+          "1 minute 2 minutes",
+          "10 minutes 30 minutes",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "0985913ba0d51ebb065fefdfc2a156e7d22f561ccb660ba4527ddcf4da5327c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+      "sha256": "67efa8e8caa33dcb47c90c95b4ea36097b5a9e3c98243defd83d8a032d944ab4",
+      "text_characters": 29270
+    },
+    {
+      "id": "oreilly-hands-on-microsoft-foundry",
+      "url": "https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/",
+      "checked_at": "2026-09-28T06:00:50.120015+00:00",
+      "health": {
+        "id": "oreilly-hands-on-microsoft-foundry",
+        "url": "https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/",
+        "checked_at": "2026-09-28T06:00:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Hands-On Microsoft Foundry",
+        "canonical_url": "https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/",
+        "duration_signals": [
+          "20 minutes",
+          "55 minutes",
+          "90 minutes",
+          "PT4H"
+        ],
+        "signal_fingerprint": "baf7251d0b69273b1707320fab183e875355954128ea086dc76e0ddc69a83576",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/",
+      "sha256": "8d62f3fc335ba93355471794b9b6b3e7f2d210eb7068ee39c58a5fc77abbf50a",
+      "text_characters": 5722
+    },
+    {
+      "id": "microsoft-foundry-overview-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
+      "checked_at": "2026-09-28T06:00:50.206925+00:00",
+      "health": {
+        "id": "microsoft-foundry-overview-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
+        "checked_at": "2026-09-28T06:00:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Foundry? - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
+        "duration_signals": [],
+        "signal_fingerprint": "ad6f24f959964477fbb8a4de2faf02e1c2005689c6613a9dae90a3eb1eb7c995",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
+      "sha256": "0818442a3c5ff25f5d926e1797b0ecc1441ace171d1fc026e788e9113e31c3ac",
+      "text_characters": 7437
+    },
+    {
+      "id": "microsoft-foundry-classic-migration-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+      "checked_at": "2026-09-28T06:00:50.498012+00:00",
+      "health": {
+        "id": "microsoft-foundry-classic-migration-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+        "checked_at": "2026-09-28T06:00:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+        "content_type": "text/html",
+        "page_title": "Migrate from the Foundry (classic) portal - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+        "duration_signals": [],
+        "signal_fingerprint": "1cdc14b9ac4ee184542325cd6a5e104c3c8b84bacaf772f00a0711e35f2b7454",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+      "sha256": "210e2b720a7a92a27878b70d1f22a22a234239028363ba7f035119cacba2ab1c",
+      "text_characters": 11809
+    },
+    {
+      "id": "microsoft-foundry-model-benchmarks-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks",
+      "checked_at": "2026-09-28T06:00:50.978229+00:00",
+      "health": {
+        "id": "microsoft-foundry-model-benchmarks-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks",
+        "checked_at": "2026-09-28T06:00:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks",
+        "content_type": "text/html",
+        "page_title": "Model benchmarks and leaderboards in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks",
+        "duration_signals": [],
+        "signal_fingerprint": "48aa8f0ee7827136c2ece4f09fa5a97899ac4532a3900965b8b2e5b2d6f5af42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks",
+      "sha256": "62863dabd0c917084cdf32cc36a3ed476c4c211a16614f232aba48531f29e1ce",
+      "text_characters": 20507
+    },
+    {
+      "id": "microsoft-foundry-rbac-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry",
+      "checked_at": "2026-09-28T06:00:51.076538+00:00",
+      "health": {
+        "id": "microsoft-foundry-rbac-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry",
+        "checked_at": "2026-09-28T06:00:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry",
+        "content_type": "text/html",
+        "page_title": "Role-based access control for Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry",
+        "duration_signals": [],
+        "signal_fingerprint": "ba65e4b569b1915056bfa4600c5e9674dd53e4f1374b196eeb86d280ddddfda8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry",
+      "sha256": "670026e4327dda1f57e8b3f86edfe784d10f7740320c3bed6b14685ac84dac90",
+      "text_characters": 28325
+    },
+    {
+      "id": "microsoft-foundry-trace-application-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+      "checked_at": "2026-09-28T06:00:51.232813+00:00",
+      "health": {
+        "id": "microsoft-foundry-trace-application-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+        "checked_at": "2026-09-28T06:00:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+        "content_type": "text/html",
+        "page_title": "Set Up Tracing for AI Agents in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+        "duration_signals": [],
+        "signal_fingerprint": "568c2a6fbd2d3d3b243f5340e2fa7b344531da7bb726d760a3d0701a54d7273f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+      "sha256": "a3cd49be547455df9285eb7c96bddcac989e70576d3475651094b5e07865e8f5",
+      "text_characters": 10163
+    },
+    {
+      "id": "microsoft-foundry-agent-tracing-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept",
+      "checked_at": "2026-09-28T06:00:51.392541+00:00",
+      "health": {
+        "id": "microsoft-foundry-agent-tracing-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept",
+        "checked_at": "2026-09-28T06:00:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept",
+        "content_type": "text/html",
+        "page_title": "Agent tracing overview - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept",
+        "duration_signals": [],
+        "signal_fingerprint": "b189b426121dd569c7ef7982eae418bccd289a6770cc75e10cc7eea3e3902b6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept",
+      "sha256": "d9d05957ead1c3504294c25b79588f2df5f489d0df8339dcacbb0d61b2f07ce6",
+      "text_characters": 8703
+    },
+    {
+      "id": "dp-800-rag-concepts-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "checked_at": "2026-09-28T06:00:51.553242+00:00",
+      "health": {
+        "id": "dp-800-rag-concepts-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+        "checked_at": "2026-09-28T06:00:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+        "content_type": "text/html",
+        "page_title": "Retrieval augmented generation (RAG) and indexes in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+        "duration_signals": [],
+        "signal_fingerprint": "e954eecdfae8dcc104740ed90e336ed0a2ab666c509a5cd4aedc20ca0b294386",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "sha256": "8d4f590ddf7070103e2525cbdefad65a2173383591827b914fa9668f6b4830a3",
+      "text_characters": 9088
+    },
+    {
+      "id": "ai-300-foundry-evaluation",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+      "checked_at": "2026-09-28T06:00:51.731880+00:00",
+      "health": {
+        "id": "ai-300-foundry-evaluation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+        "checked_at": "2026-09-28T06:00:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+        "content_type": "text/html",
+        "page_title": "Run evaluations from the Microsoft Foundry portal - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+        "duration_signals": [],
+        "signal_fingerprint": "cc9801add7cea0cd82c17ee23cf22fd71a2291ebd6d57955c2475e5c72fb9fed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+      "sha256": "f4cf3238df856737e5bf659f4c5f2eae80af03cc8d9f930d57a9163c88379077",
+      "text_characters": 18039
+    },
+    {
+      "id": "ai-300-agent-monitoring-dashboard",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+      "checked_at": "2026-09-28T06:00:51.851828+00:00",
+      "health": {
+        "id": "ai-300-agent-monitoring-dashboard",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+        "checked_at": "2026-09-28T06:00:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+        "content_type": "text/html",
+        "page_title": "Monitor agents with the Agent Monitoring Dashboard - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+        "duration_signals": [],
+        "signal_fingerprint": "ac97efa7e31a9fca2716a3c2fe6387c42f581035ae815c58cece1040f588e69d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+      "sha256": "38faef5fbc12da1cd9f219134ea49721d684df29b9d273069c473f290b32a604",
+      "text_characters": 21219
+    },
+    {
+      "id": "ai-300-foundry-fine-tuning-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "checked_at": "2026-09-28T06:00:52.077880+00:00",
+      "health": {
+        "id": "ai-300-foundry-fine-tuning-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+        "checked_at": "2026-09-28T06:00:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+        "content_type": "text/html",
+        "page_title": "Customize a model with fine-tuning - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+        "duration_signals": [],
+        "signal_fingerprint": "6f3382fa8ad2ed1186b76f9e7be1582ab7731b716c7d2500a5cb64e80dddfe6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "sha256": "edc8d590255e2819870920d0da29edc7bc3c5fce84db65468b94b421d6b49dcd",
+      "text_characters": 134268
+    },
+    {
+      "id": "ai-300-foundry-samples",
+      "url": "https://github.com/azure-ai-foundry/foundry-samples",
+      "checked_at": "2026-09-28T06:00:52.123315+00:00",
+      "health": {
+        "id": "ai-300-foundry-samples",
+        "url": "https://github.com/azure-ai-foundry/foundry-samples",
+        "checked_at": "2026-09-28T06:00:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/microsoft-foundry/foundry-samples",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - microsoft-foundry/foundry-samples: Samples for Microsoft Foundry platform",
+        "canonical_url": "https://github.com/microsoft-foundry/foundry-samples",
+        "duration_signals": [],
+        "signal_fingerprint": "0adef1b692de6c92b7d33bd321afa9334d39ae16f105dc4d1558afdbe9969e05",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/microsoft-foundry/foundry-samples",
+      "sha256": "8ef5766f04246058eb98a16bfde97e15651484ff7fe5a548756902a87d19e055",
+      "text_characters": 2752
+    },
+    {
+      "id": "ai500-resilience-blog",
+      "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+      "checked_at": "2026-09-28T06:00:52.522890+00:00",
+      "health": {
+        "id": "ai500-resilience-blog",
+        "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+        "checked_at": "2026-09-28T06:00:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What’s new in Microsoft Agent Framework: Interactive experiences, memory, and resilient execution | Microsoft Agent Framework",
+        "canonical_url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+        "duration_signals": [],
+        "signal_fingerprint": "ecbda402560a0afb70deb61fcbcd80b3a0a3939bb417f49874f8430152e07cc7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+      "sha256": "4b1ae7f86da2c0a125c03f46cc0c14f5fe0f9c758312b422e9304cf502569999",
+      "text_characters": 18228
+    },
+    {
+      "id": "ai500-memory-blog",
+      "url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+      "checked_at": "2026-09-28T06:00:52.931252+00:00",
+      "health": {
+        "id": "ai500-memory-blog",
+        "url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+        "checked_at": "2026-09-28T06:00:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Native Agent Memory for Microsoft Agent Framework, Powered by Azure Cosmos DB - Azure Cosmos DB Blog",
+        "canonical_url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+        "duration_signals": [],
+        "signal_fingerprint": "df7773330a063f6aa80ae13d5e631cf31e4a70d561923fa0b14f9302868f61c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+      "sha256": "cf1d46e2653ca25803557ba64daea18577de604e83b09c1a78ddd3ff4a0c1a68",
+      "text_characters": 15856
+    },
+    {
+      "id": "ai500-vector-filters",
+      "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+      "checked_at": "2026-09-28T06:00:53.362264+00:00",
+      "health": {
+        "id": "ai500-vector-filters",
+        "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+        "checked_at": "2026-09-28T06:00:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+        "content_type": "text/html",
+        "page_title": "Vector Query Filters - Azure AI Search",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+        "duration_signals": [],
+        "signal_fingerprint": "9b3c775535354c52a642cb7c28afd6fb1d2f0c1a0febaaa7981a1c12359aaf6e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+      "sha256": "ce146660c63a9fd20cbba423af7e7ccc69e49e5ce3fe4fa43c48b64c5d5441e7",
+      "text_characters": 15005
+    },
+    {
+      "id": "ai500-langgraph-durable",
+      "url": "https://docs.langchain.com/oss/python/langgraph/durable-execution",
+      "checked_at": "2026-09-28T06:00:53.653151+00:00",
+      "health": {
+        "id": "ai500-langgraph-durable",
+        "url": "https://docs.langchain.com/oss/python/langgraph/durable-execution",
+        "checked_at": "2026-09-28T06:00:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Persistence - Docs by LangChain",
+        "canonical_url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+        "duration_signals": [],
+        "signal_fingerprint": "e6bed1512ef844a3533cefa416d19192e688eef9fb704875fe13fa84d54b7c56",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "sha256": "55cb11a7cd631d41e40e502e8452ae76a0fab760ae1460c2f11284e3e4e2510a",
+      "text_characters": 4191
+    },
+    {
+      "id": "ai500-langgraph-interrupts",
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "checked_at": "2026-09-28T06:00:53.800411+00:00",
+      "health": {
+        "id": "ai500-langgraph-interrupts",
+        "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+        "checked_at": "2026-09-28T06:00:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Interrupts - Docs by LangChain",
+        "canonical_url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+        "duration_signals": [],
+        "signal_fingerprint": "4258b0b8485e6793a8003038f1bade28ef61aae8a0e4972a45b05c69e1b20fb4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "sha256": "d66863cfcc62ff46265a75c8c66654c1248ac29c4f0dea8836351cad008ff563",
+      "text_characters": 34284
+    },
+    {
+      "id": "ai500-transformers-pipelines",
+      "url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+      "checked_at": "2026-09-28T06:08:00.781414+00:00",
+      "health": {
+        "id": "ai500-transformers-pipelines",
+        "url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+        "checked_at": "2026-09-28T06:08:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Pipelines · Hugging Face",
+        "canonical_url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+        "duration_signals": [],
+        "signal_fingerprint": "9e6f38e00fb681fef355b10ec776f60fce204a6e1bd7944dc3a27c8f9417eaf6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+      "sha256": "8eeec36ce9474fcbb740dff4637ecde99ada9bd5b8bc986e1e00ea62f07a106e",
+      "text_characters": 155048
+    }
+  ],
+  "added_source_ids": [
+    "ai500-resilience-blog",
+    "ai500-memory-blog",
+    "ai500-vector-filters",
+    "ai500-langgraph-durable",
+    "ai500-langgraph-interrupts",
+    "ai500-transformers-pipelines"
+  ],
+  "findings": [
+    {
+      "id": "ai500-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Beta and future course availability remain separate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current exam beta, English, AI-103 prerequisite; course lists September 30; no assessment.",
+      "recommendation": "Retain status and schedule course/beta follow-ups; no fixed duration or exact GA date.",
+      "disposition": "applied",
+      "source_id": "ai-500-exam-page",
+      "resolution": "Retain status and schedule course/beta follow-ups; no fixed duration or exact GA date."
+    },
+    {
+      "id": "ai500-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Initial hosted backend support deadline has passed",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Initial preview supported only through August 20; no automatic migration.",
+      "recommendation": "Add current protocol packages, SDK/CLI, endpoint/configuration and redeployment boundaries.",
+      "disposition": "applied",
+      "source_id": "ai-500-hosted-agent-migration",
+      "resolution": "Add current protocol packages, SDK/CLI, endpoint/configuration and redeployment boundaries."
+    },
+    {
+      "id": "ai500-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Classic inference and Assistants deadlines have passed",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Migration lists August 26 sunsets and current Responses path.",
+      "recommendation": "Distinguish generation, SDK and API version axes; validate regions/state separately.",
+      "disposition": "applied",
+      "source_id": "microsoft-foundry-classic-migration-ai103",
+      "resolution": "Distinguish generation, SDK and API version axes; validate regions/state separately."
+    },
+    {
+      "id": "ai500-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy publication identity differs from current deployment identity",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Legacy Agent Application section describes old shared draft identity; current hosted agents get identity at creation.",
+      "recommendation": "Scope both descriptions and grant downstream access to the current agent identity.",
+      "disposition": "applied",
+      "source_id": "ai-500-agent-identity-concepts",
+      "resolution": "Scope both descriptions and grant downstream access to the current agent identity."
+    },
+    {
+      "id": "ai500-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A2A GA does not change the unversioned default",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GA 1.0 coexists with preview 0.3 default; auth, retention and transport limits apply.",
+      "recommendation": "Replace blanket preview statement with explicit version/auth/capability contract.",
+      "disposition": "applied",
+      "source_id": "ai-500-agent-a2a-endpoint",
+      "resolution": "Replace blanket preview statement with explicit version/auth/capability contract."
+    },
+    {
+      "id": "ai500-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Gateway MCP support is narrower than generic MCP",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tools-only, workspace and listed-tier limits apply.",
+      "recommendation": "Separate inbound/outbound authorization and unsupported MCP features.",
+      "disposition": "applied",
+      "source_id": "ai-500-apim-mcp-overview",
+      "resolution": "Separate inbound/outbound authorization and unsupported MCP features."
+    },
+    {
+      "id": "ai500-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Server-side post-filtering is not equivalent to a prompt leak",
+      "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Search post-filter modes can enforce scope but lose eligible candidates.",
+      "recommendation": "Correct memory, retrieval and answer 13; add candidate-set example.",
+      "disposition": "applied",
+      "source_id": "ai500-vector-filters",
+      "resolution": "Correct memory, retrieval and answer 13; add candidate-set example."
+    },
+    {
+      "id": "ai500-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Checkpoint scope is not authenticated ownership",
+      "url": "https://docs.langchain.com/oss/python/langgraph/durable-execution",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Thread checkpoints and cross-thread stores have different lifecycles; in-memory savers are not durable.",
+      "recommendation": "Add trusted tenant/subject binding, lifecycle and memory-scope checks.",
+      "disposition": "applied",
+      "source_id": "ai500-langgraph-durable",
+      "resolution": "Add trusted tenant/subject binding, lifecycle and memory-scope checks."
+    },
+    {
+      "id": "ai500-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Resume can repeat work from the start of a node",
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Interrupt restart semantics and side-effect retries require explicit idempotency.",
+      "recommendation": "Add original offline deduplication example, production limits and failure-point lab.",
+      "disposition": "applied",
+      "source_id": "ai500-langgraph-interrupts",
+      "resolution": "Add original offline deduplication example, production limits and failure-point lab."
+    },
+    {
+      "id": "ai500-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A local model component still needs an implementation contract",
+      "url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Task/revision/remote-code/batching settings affect reproducibility and execution.",
+      "recommendation": "Add bounded specialist design and optional lab without untested SDK sample claims.",
+      "disposition": "applied",
+      "source_id": "ai500-transformers-pipelines",
+      "resolution": "Add bounded specialist design and optional lab without untested SDK sample claims."
+    },
+    {
+      "id": "ai500-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Stored-output evaluation does not re-run deployment behavior",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Portal supports distinct agent/model and dataset evaluation targets.",
+      "recommendation": "Separate conversation/turn and stored-output evidence; add critical-slice release example.",
+      "disposition": "applied",
+      "source_id": "ai-300-foundry-evaluation",
+      "resolution": "Separate conversation/turn and stored-output evidence; add critical-slice release example."
+    },
+    {
+      "id": "ai500-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Operational success is not business correctness",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Run completion metrics, sampled evaluation, connected telemetry and preview settings differ.",
+      "recommendation": "Add outcome-cost example and retention/SLA/preview boundaries.",
+      "disposition": "applied",
+      "source_id": "ai-300-agent-monitoring-dashboard",
+      "resolution": "Add outcome-cost example and retention/SLA/preview boundaries."
+    },
+    {
+      "id": "ai500-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Tool moderation does not run for unsupported tools",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tool-call/response controls require listed tool support.",
+      "recommendation": "Add explicit coverage matrix and separate companion authorization controls.",
+      "disposition": "applied",
+      "source_id": "ai-500-guardrail-intervention-points",
+      "resolution": "Add explicit coverage matrix and separate companion authorization controls."
+    },
+    {
+      "id": "ai500-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Red-team support differs from moderation support",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Target/tool matrix excludes workflows and several tool paths.",
+      "recommendation": "Add separate coverage/untested labels and synthetic-data isolation limits.",
+      "disposition": "applied",
+      "source_id": "ai-500-ai-red-teaming-agent",
+      "resolution": "Add separate coverage/untested labels and synthetic-data isolation limits."
+    },
+    {
+      "id": "ai500-deep-15",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Recent resilient hosting guidance motivates recovery practice",
+      "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 24 article describes checkpoints, stable IDs and application-owned external idempotency.",
+      "recommendation": "Add bounded restart worksheet; do not adopt performance or execution claims.",
+      "disposition": "applied",
+      "source_id": "ai500-resilience-blog",
+      "resolution": "Add bounded restart worksheet; do not adopt performance or execution claims."
+    },
+    {
+      "id": "ai500-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preview memory extraction has lifecycle and scope limits",
+      "url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "July 24 provider article describes async derived memory and cross-thread user scope.",
+      "recommendation": "Add original lag/correction/deletion/isolation exercise with authenticated scope.",
+      "disposition": "applied",
+      "source_id": "ai500-memory-blog",
+      "resolution": "Add original lag/correction/deletion/isolation exercise with authenticated scope."
+    },
+    {
+      "id": "ai500-deep-17",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Current preparation evidence differs from old runtime totals",
+      "url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current Learn paths expose 17 modules; blocked book/Udemy and public outlines differ in evidentiary strength.",
+      "recommendation": "Qualify durations, seller update claim and catalog gaps; synchronize central catalog.",
+      "disposition": "applied",
+      "source_id": "ai-500-learn-operate-path",
+      "resolution": "Qualify durations, seller update claim and catalog gaps; synchronize central catalog."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ai500-resilience-blog",
+      "decision": "accepted-bounded",
+      "author": "Dan Taylor",
+      "published_on": "2026-09-24",
+      "notes": "Recovery and async-memory worksheet; external-effect idempotency separate from checkpoints. No SDK/hosting or benchmark reproduction."
+    },
+    {
+      "source_id": "ai500-memory-blog",
+      "decision": "accepted-bounded",
+      "author": "Theo van Kraay",
+      "published_on": "2026-07-24",
+      "notes": "Preview memory provider design exercise with authenticated scope, extraction lag and correction/deletion; no resource or model execution."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Nineteen assertions: 15 critical-path/quota/context/filter/scope/evaluation/cost/catalog assertions and four assertions executing the guide standard-library replay example. No cloud or framework execution."
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "No Azure/Foundry/APIM/Cosmos resource, identity/policy, SDK/framework, model/weights, live tool, migration or cloud lab executed.",
+    "Offline replay uses an in-memory single-process fake service; no durable storage, concurrency, real crash or production exactly-once behavior verified.",
+    "Book and Udemy requests access-blocked; indexed catalog descriptions do not verify paid content, originality or coverage. Course remains future and Learn duration totals not exposed.",
+    "Certification announcement returned HTTP 200 content shell; October target treated as historical. Generic large retained references refreshed without exhaustive content/code audit.",
+    "Two blog main articles read; linked code/videos, benchmarks and deployment behavior not reproduced.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "capacity_context_filter_scope_replay_evaluation_cost_catalog_assertions": 19,
+    "python_blocks_executed": 1,
+    "learning_catalog_consistency": "passed"
+  }
+}

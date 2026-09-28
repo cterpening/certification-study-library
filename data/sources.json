@@ -3,6 +3,90 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ai500-resilience-blog",
+      "title": "Interactive experiences, memory and resilient execution in Agent Framework",
+      "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Dan Taylor September 24 main article read in full. Added original recovery worksheet; SDK samples, AG-UI, Hyperlight, benchmarks and hosted execution not reproduced. External idempotency remains application responsibility. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai500-memory-blog",
+      "title": "Native Agent Memory for Microsoft Agent Framework, Powered by Azure Cosmos DB",
+      "url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Theo van Kraay July 24 main article read in full. Preview Python provider, async extraction and scoped memory exercise; no Cosmos resource, SDK, model, sample or linked video execution. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai500-vector-filters",
+      "title": "Vector filters in Azure AI Search",
+      "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Filter modes and comparison sections read; not the benchmark section. Server-side filtering corrected separately from unsafe prompt/log filtering. Original deterministic candidate illustration, not HNSW execution. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai500-langgraph-durable",
+      "title": "LangGraph persistence (durable-execution redirect)",
+      "url": "https://docs.langchain.com/oss/python/langgraph/durable-execution",
+      "publisher": "LangChain",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Requested durable-execution URL resolves to Persistence documentation. Full short current page read: checkpoint/store and in-memory lifecycle. No framework execution or exactly-once guarantee inferred. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai500-langgraph-interrupts",
+      "title": "Interrupts in LangGraph",
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "publisher": "LangChain",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Resume/restart semantics, interrupt ordering, serialization and side-effect/idempotency rules reviewed. Framework code not run; original standard-library mock tested separately. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai500-transformers-pipelines",
+      "title": "Hugging Face Transformers pipeline API",
+      "url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+      "publisher": "Hugging Face",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Pipeline task/revision/remote-code parameters and batching/memory cautions reviewed. Rest of extensive API reference not audited. No installation, weights, inference or remote code execution. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ab650-insidetrack-blog",
       "title": "Implementing Agent 365: How Microsoft governs and manages AI agents",
       "url": "https://www.microsoft.com/insidetrack/blog/implementing-agent-365-how-were-governing-and-managing-ai-agents-at-microsoft/",
@@ -6631,9 +6715,12 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103"],
-      "notes": "Four-hour live workshop based on the published agenda; supporting hands-on Foundry instruction, not a complete AI-103 course. The listing uses nonstandard 'Microsoft Foundry Studio' and goal/planner terminology, so its platform generation remains unverified until the demos can be checked."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-500"
+      ],
+      "notes": "Four-hour live workshop based on the published agenda; supporting hands-on Foundry instruction, not a complete AI-103 course. The listing uses nonstandard 'Microsoft Foundry Studio' and goal/planner terminology, so its platform generation remains unverified until the demos can be checked. September 28 AI-500 deep review: Full public course/instructor outline read: four 55-minute blocks plus 20 minutes. No current event occurrence, enrollment or delivery verified. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-intro-ai-agents-azure",
@@ -10564,9 +10651,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103"],
-      "notes": "Foundry branding, resource models, classic/new experiences, SDKs, and feature status are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-500"
+      ],
+      "notes": "Foundry branding, resource models, classic/new experiences, SDKs, and feature status are volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-classic-migration-ai103",
@@ -10576,9 +10666,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103"],
-      "notes": "Authoritative crosswalk for current versus classic terminology, resources, SDKs, APIs, and portal navigation; migration dates and feature availability are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-500"
+      ],
+      "notes": "Authoritative crosswalk for current versus classic terminology, resources, SDKs, APIs, and portal navigation; migration dates and feature availability are volatile. September 28 AI-500 deep review: Migration dates, generation/SDK and resource/region boundaries reviewed. August 26 inference-package and Assistants dates have passed; no state migration performed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-models-overview-ai103",
@@ -10605,9 +10698,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103"],
-      "notes": "Leaderboard availability, benchmark coverage, and preview status are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-500"
+      ],
+      "notes": "Leaderboard availability, benchmark coverage, and preview status are volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-model-deployment-ai103",
@@ -10629,9 +10725,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103"],
-      "notes": "Foundry role names and classic/new view behavior are transitioning and volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-500"
+      ],
+      "notes": "Foundry role names and classic/new view behavior are transitioning and volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-private-link-ai103",
@@ -10703,9 +10802,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-300"],
-      "notes": "Tracing integrations, SDKs, data capture, and preview status are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-300",
+        "AI-500"
+      ],
+      "notes": "Tracing integrations, SDKs, data capture, and preview status are volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-agent-tracing-ai103",
@@ -10715,9 +10818,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103"],
-      "notes": "Agent-type support, multi-agent conventions, integrations, and preview status are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-500"
+      ],
+      "notes": "Agent-type support, multi-agent conventions, integrations, and preview status are volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-content-safety-prompt-shields-ai103",
@@ -19462,8 +19568,13 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["DP-800", "AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "DP-800",
+        "AI-300",
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-800-vector-data-type",
@@ -20551,8 +20662,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300",
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Prerequisites, targets, full-conversation versus turn choices, and stored-output dataset evaluation sections read. No model/agent/evaluation run. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-risk-and-safety-evaluation",
@@ -20573,8 +20688,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300",
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Prerequisites, connected telemetry, metric definitions and preview settings reviewed. No production metrics, query, alert or continuous-evaluation rule executed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-azure-ai-search-relevance",
@@ -20595,8 +20714,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300",
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-azure-mlops-v2-solution-accelerator",
@@ -20628,8 +20751,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300",
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-o-reilly-mlops-llmops-bootcamp",
@@ -20672,8 +20799,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Full objective groups read and 55 detailed bullets mapped; unchanged objective/status hashes retained. No separate effective date. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-exam-page",
@@ -20683,9 +20813,11 @@
       "authority_class": 1,
       "source_type": "credential-page",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"],
-      "notes": "Official exam status, language, scheduling, and Practice Assessment availability page; the canonical objective blueprint is the separate AI-500 study-guide source."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "Official exam status, language, scheduling, and Practice Assessment availability page; the canonical objective blueprint is the separate AI-500 study-guide source. September 28 AI-500 deep review: Current exam page read: beta, English, no Practice Assessment; course September 30 still future. Fixed duration not exposed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-certification-page",
@@ -20695,8 +20827,11 @@
       "authority_class": 1,
       "source_type": "credential-page",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Current credential/prerequisite sections read; AI-103 prerequisite confirmed. Empty training widget not used as evidence of no Learn paths. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-course",
@@ -20706,8 +20841,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Public course page read: English, four days, listed availability September 30. No instructor-led event attended or booked. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-learn-architect-path",
@@ -20717,8 +20855,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Public path description and four-module outline read; current total duration not exposed. Linked module lessons/labs not completed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-learn-build-path",
@@ -20728,8 +20869,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Public path description and four-module outline read; current total duration not exposed. Linked module lessons/labs not completed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-learn-govern-path",
@@ -20739,8 +20883,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Public path description and four-module outline read; current total duration not exposed. Linked module lessons/labs not completed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-learn-operate-path",
@@ -20750,9 +20897,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"],
-      "notes": "The page currently lists five modules without usable combined duration values; the guide labels its 4–6 hour planning figure as a library estimate."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "The page currently lists five modules without usable combined duration values; the guide labels its 4–6 hour planning figure as a library estimate. September 28 AI-500 deep review: Public path description and five-module outline read; runtime not verified. Linked module lessons/labs not completed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-agent-framework-orchestrations",
@@ -20762,8 +20911,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Short orchestration overview read; individual pattern implementations not executed. Generic architecture patterns distinguished from named framework orchestrations. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-agent-framework-human-loop",
@@ -20773,8 +20925,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Request/response and typed Python/.NET overview reviewed; remaining implementation examples not exhaustively audited or executed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-multiple-agent-architecture",
@@ -20784,8 +20939,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-apim-mcp-overview",
@@ -20795,8 +20953,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Public support/capability and gateway topology sections read: tools-only, tiers, workspace and policy boundaries. No gateway provisioned. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-agent-identity-concepts",
@@ -20806,13 +20967,13 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AB-100",
         "AI-103",
         "AI-500"
       ],
-      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md September 28 AI-500 deep review: Current identity roles and explicitly legacy Agent Application publication model sections read; latest hosted migration scopes the newer deployment-time identity. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-agent-a2a-endpoint",
@@ -20822,9 +20983,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"],
-      "notes": "Preview capability; guide marks it VERIFY CURRENT."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "Preview capability; guide marks it VERIFY CURRENT. September 28 AI-500 deep review: Version negotiation, identities, auth, retention and v1.0 support limits read. Code examples and endpoint behavior not executed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-agent-obo-flow",
@@ -20834,8 +20997,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-guardrail-intervention-points",
@@ -20845,8 +21011,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Entire short intervention/support article read. Tool-dependent moderation and annotation/blocking boundaries applied; no policy invoked. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-ai-red-teaming-agent",
@@ -20856,8 +21025,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Risk, target/tool support, synthetic data and testing limitation sections read. No scan, attack payload or live target executed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-oreilly-agentic-ai-foundry",
@@ -20867,8 +21039,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "September 28 AI-500 deep review: Direct listing access-blocked. Earlier April 2026/360 pages/8h43 metadata now historical; current edition and paid content unverified. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-pluralsight-building-intelligent-applications",
@@ -20878,9 +21053,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"],
-      "notes": "Short current-platform course; not represented as a complete AI-500 path."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "Short current-platform course; not represented as a complete AI-500 path. September 28 AI-500 deep review: Public title, instructor, February 13 date, 1h02 runtime and main syllabus reviewed. Paid lessons not viewed; not a complete AI-500 path. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-udemy-scott-duffy-practice-tests",
@@ -20890,9 +21067,11 @@
       "authority_class": 4,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"],
-      "notes": "New 100-question commercial bank; guide records the provider-update claim conflict and treats it only as a secondary readiness signal."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "New 100-question commercial bank; guide records the provider-update claim conflict and treats it only as a secondary readiness signal. September 28 AI-500 deep review: Direct retrieval blocked. September 28 search index advertises August update and 4x25 questions. Seller August 22 blueprint claim uncorroborated; paid content/originality/coverage unverified. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-blueprint",
@@ -33093,9 +33272,11 @@
       "authority_class": 2,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AI-500"],
-      "notes": "Microsoft announcement targets October 2026 general availability without supplying a specific day."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "Microsoft announcement targets October 2026 general availability without supplying a specific day. September 28 AI-500 deep review: HTTP 200 returned only a 96-character title/content shell. Previously recorded October target retained only as historical, not fresh article-body or GA verification. Current official credential still beta. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-hosted-agent-migration",
@@ -33105,9 +33286,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AI-500"],
-      "notes": "Migration boundary for the initial hosted-agent preview backend, identity, endpoint, protocol, and API changes."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-500"
+      ],
+      "notes": "Migration boundary for the initial hosted-agent preview backend, identity, endpoint, protocol, and API changes. September 28 AI-500 deep review: Migration overview, version/API, identity, lifecycle, CLI and invocation sections read. Not every language sample inspected; no migration or SDK execution. August 20 old-backend deadline has passed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab210-ai-agent-overview",

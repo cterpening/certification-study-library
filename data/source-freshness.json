@@ -4,6 +4,379 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ai500-deep-review",
+      "title": "AI-500 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AI-500"
+      ],
+      "results": [
+        {
+          "exam_code": "AI-500",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+          "baseline_sha256": "f0ed877cda18d4e4c9d7d6026913c93a8062173a74c48ef49066ca743a712a29",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "July 16 objectives/status unchanged; beta/English/AI-103 prerequisite confirmed. Course September 30 still future; no duration or exact GA date inferred."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant primary implementation sections substantiate changes. New and explicitly legacy identity models separated; support matrices scoped independently. Generic retained citations refreshed without claiming full reference audits."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current migration deadlines and September 24/July 24 engineering articles reviewed. Historical certification announcement returned title shell; no fresh GA claim made. Three dated follow-ups scheduled."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Four Learn paths expose 17 modules; runtimes historical/editorial. Public Pluralsight and OReilly live outlines reviewed. Book/Udemy directly blocked; search-indexed seller claims qualified. No exhaustive market coverage claimed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Resolve blanket A2A preview and filter-before-ranking claims using specific current procedures; separate platform generation, SDK/API/protocol versions, legacy identity and incompatible capability matrices. Remaining execution/access limits explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "ai500-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Beta and future course availability remain separate",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current exam beta, English, AI-103 prerequisite; course lists September 30; no assessment.",
+              "recommendation": "Retain status and schedule course/beta follow-ups; no fixed duration or exact GA date.",
+              "disposition": "applied",
+              "source_id": "ai-500-exam-page",
+              "resolution": "Retain status and schedule course/beta follow-ups; no fixed duration or exact GA date."
+            },
+            {
+              "id": "ai500-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Initial hosted backend support deadline has passed",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Initial preview supported only through August 20; no automatic migration.",
+              "recommendation": "Add current protocol packages, SDK/CLI, endpoint/configuration and redeployment boundaries.",
+              "disposition": "applied",
+              "source_id": "ai-500-hosted-agent-migration",
+              "resolution": "Add current protocol packages, SDK/CLI, endpoint/configuration and redeployment boundaries."
+            },
+            {
+              "id": "ai500-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Classic inference and Assistants deadlines have passed",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Migration lists August 26 sunsets and current Responses path.",
+              "recommendation": "Distinguish generation, SDK and API version axes; validate regions/state separately.",
+              "disposition": "applied",
+              "source_id": "microsoft-foundry-classic-migration-ai103",
+              "resolution": "Distinguish generation, SDK and API version axes; validate regions/state separately."
+            },
+            {
+              "id": "ai500-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy publication identity differs from current deployment identity",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Legacy Agent Application section describes old shared draft identity; current hosted agents get identity at creation.",
+              "recommendation": "Scope both descriptions and grant downstream access to the current agent identity.",
+              "disposition": "applied",
+              "source_id": "ai-500-agent-identity-concepts",
+              "resolution": "Scope both descriptions and grant downstream access to the current agent identity."
+            },
+            {
+              "id": "ai500-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A2A GA does not change the unversioned default",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/enable-agent-to-agent-endpoint",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "GA 1.0 coexists with preview 0.3 default; auth, retention and transport limits apply.",
+              "recommendation": "Replace blanket preview statement with explicit version/auth/capability contract.",
+              "disposition": "applied",
+              "source_id": "ai-500-agent-a2a-endpoint",
+              "resolution": "Replace blanket preview statement with explicit version/auth/capability contract."
+            },
+            {
+              "id": "ai500-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Gateway MCP support is narrower than generic MCP",
+              "url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Tools-only, workspace and listed-tier limits apply.",
+              "recommendation": "Separate inbound/outbound authorization and unsupported MCP features.",
+              "disposition": "applied",
+              "source_id": "ai-500-apim-mcp-overview",
+              "resolution": "Separate inbound/outbound authorization and unsupported MCP features."
+            },
+            {
+              "id": "ai500-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Server-side post-filtering is not equivalent to a prompt leak",
+              "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Search post-filter modes can enforce scope but lose eligible candidates.",
+              "recommendation": "Correct memory, retrieval and answer 13; add candidate-set example.",
+              "disposition": "applied",
+              "source_id": "ai500-vector-filters",
+              "resolution": "Correct memory, retrieval and answer 13; add candidate-set example."
+            },
+            {
+              "id": "ai500-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Checkpoint scope is not authenticated ownership",
+              "url": "https://docs.langchain.com/oss/python/langgraph/durable-execution",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Thread checkpoints and cross-thread stores have different lifecycles; in-memory savers are not durable.",
+              "recommendation": "Add trusted tenant/subject binding, lifecycle and memory-scope checks.",
+              "disposition": "applied",
+              "source_id": "ai500-langgraph-durable",
+              "resolution": "Add trusted tenant/subject binding, lifecycle and memory-scope checks."
+            },
+            {
+              "id": "ai500-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Resume can repeat work from the start of a node",
+              "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Interrupt restart semantics and side-effect retries require explicit idempotency.",
+              "recommendation": "Add original offline deduplication example, production limits and failure-point lab.",
+              "disposition": "applied",
+              "source_id": "ai500-langgraph-interrupts",
+              "resolution": "Add original offline deduplication example, production limits and failure-point lab."
+            },
+            {
+              "id": "ai500-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A local model component still needs an implementation contract",
+              "url": "https://huggingface.co/docs/transformers/main_classes/pipelines",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Task/revision/remote-code/batching settings affect reproducibility and execution.",
+              "recommendation": "Add bounded specialist design and optional lab without untested SDK sample claims.",
+              "disposition": "applied",
+              "source_id": "ai500-transformers-pipelines",
+              "resolution": "Add bounded specialist design and optional lab without untested SDK sample claims."
+            },
+            {
+              "id": "ai500-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Stored-output evaluation does not re-run deployment behavior",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Portal supports distinct agent/model and dataset evaluation targets.",
+              "recommendation": "Separate conversation/turn and stored-output evidence; add critical-slice release example.",
+              "disposition": "applied",
+              "source_id": "ai-300-foundry-evaluation",
+              "resolution": "Separate conversation/turn and stored-output evidence; add critical-slice release example."
+            },
+            {
+              "id": "ai500-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Operational success is not business correctness",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Run completion metrics, sampled evaluation, connected telemetry and preview settings differ.",
+              "recommendation": "Add outcome-cost example and retention/SLA/preview boundaries.",
+              "disposition": "applied",
+              "source_id": "ai-300-agent-monitoring-dashboard",
+              "resolution": "Add outcome-cost example and retention/SLA/preview boundaries."
+            },
+            {
+              "id": "ai500-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Tool moderation does not run for unsupported tools",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/intervention-points",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Tool-call/response controls require listed tool support.",
+              "recommendation": "Add explicit coverage matrix and separate companion authorization controls.",
+              "disposition": "applied",
+              "source_id": "ai-500-guardrail-intervention-points",
+              "resolution": "Add explicit coverage matrix and separate companion authorization controls."
+            },
+            {
+              "id": "ai500-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Red-team support differs from moderation support",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Target/tool matrix excludes workflows and several tool paths.",
+              "recommendation": "Add separate coverage/untested labels and synthetic-data isolation limits.",
+              "disposition": "applied",
+              "source_id": "ai-500-ai-red-teaming-agent",
+              "resolution": "Add separate coverage/untested labels and synthetic-data isolation limits."
+            },
+            {
+              "id": "ai500-deep-15",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Recent resilient hosting guidance motivates recovery practice",
+              "url": "https://devblogs.microsoft.com/agent-framework/interactive-experiences-memory-and-resilient-execution/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 24 article describes checkpoints, stable IDs and application-owned external idempotency.",
+              "recommendation": "Add bounded restart worksheet; do not adopt performance or execution claims.",
+              "disposition": "applied",
+              "source_id": "ai500-resilience-blog",
+              "resolution": "Add bounded restart worksheet; do not adopt performance or execution claims."
+            },
+            {
+              "id": "ai500-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preview memory extraction has lifecycle and scope limits",
+              "url": "https://devblogs.microsoft.com/cosmosdb/native-agent-memory-for-microsoft-agent-framework-powered-by-azure-cosmos-db/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "July 24 provider article describes async derived memory and cross-thread user scope.",
+              "recommendation": "Add original lag/correction/deletion/isolation exercise with authenticated scope.",
+              "disposition": "applied",
+              "source_id": "ai500-memory-blog",
+              "resolution": "Add original lag/correction/deletion/isolation exercise with authenticated scope."
+            },
+            {
+              "id": "ai500-deep-17",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Current preparation evidence differs from old runtime totals",
+              "url": "https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current Learn paths expose 17 modules; blocked book/Udemy and public outlines differ in evidentiary strength.",
+              "recommendation": "Qualify durations, seller update claim and catalog gaps; synchronize central catalog.",
+              "disposition": "applied",
+              "source_id": "ai-500-learn-operate-path",
+              "resolution": "Qualify durations, seller update claim and catalog gaps; synchronize central catalog."
+            }
+          ],
+          "notes": "Whole guide read; all 55 unchanged July objectives mapped across 12 groups. Add six worked examples, two labs (ten total), 44 answered checks, and two bounded Microsoft engineering blog exercises. Correct hosted migration/identity, A2A GA versus default preview, Search filtering, interrupt replay, moderation/red-team coverage, evaluation and catalog boundaries. Nineteen offline assertions passed including the original Python replay example; no cloud, framework, model or paid-content execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ai-500-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 17,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ab650-deep-review",
       "title": "AB-650 complete guide and learning-content review",
       "rubric_version": 1,
