@@ -349,6 +349,33 @@
       "review_on": "2027-02-01",
       "url": "https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-limitations",
       "action": "Recheck the extended February 2027 Q&A retirement and affected reports, dashboards, mobile, embedded and setup experiences. February 1 is a checkpoint within the announced month, not an exact vendor cutover date. September announcement supersedes older December 2026 notices; verify supported alternatives and capacity/sovereign/embedded limits."
+    },
+    {
+      "id": "dp750-direct-engine-rollout",
+      "exam_codes": [
+        "DP-750"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+      "action": "Recheck announced September Terraform deployment-engine disablement against actual CLI release/version behavior. Inspect migration and omitted-field defaults; October 1 is a research checkpoint, not an invented vendor cutoff."
+    },
+    {
+      "id": "dp750-auto-cdf-regions",
+      "exam_codes": [
+        "DP-750"
+      ],
+      "review_on": "2026-11-01",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming",
+      "action": "Recheck planned end-of-October automatic CDF regional rollout, Runtime 19/table requirements and legacy migration limits before removing availability caveats. November 1 is a research checkpoint."
+    },
+    {
+      "id": "dp750-abac-direct-view-scope",
+      "exam_codes": [
+        "DP-750"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+      "action": "Compare direct-view restrictions with the metastore-policy page that lists views in Beta. Keep the supported base-table policy/session-user view example; do not promote direct-view policies without consistent authoritative support."
     }
   ]
 }

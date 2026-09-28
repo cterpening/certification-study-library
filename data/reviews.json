@@ -1427,7 +1427,7 @@
       "exam_code": "DP-750",
       "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/dp-750-official-objectives.txt",
       "blueprint_snapshot_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84",
@@ -1473,12 +1473,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 52,
-        "reachable": 48,
+        "unique_external_links": 72,
+        "reachable": 68,
         "access_blocked": 4,
         "missing_or_error": 0
       },
-      "notes": "All four March 11, 2026 objective groups and every published subobjective are mapped to environment, governance, ingestion, processing, delivery, evidence, failure, and recovery decisions. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover compute and libraries, Unity Catalog objects and permissions, ABAC/filters/masks, identity and secrets, lineage/audit/sharing, modeling and layout, batch/stream/CDC ingestion, quality, jobs, Git/testing/bundles, Spark troubleshooting, Delta maintenance, cost, and Azure monitoring. All 52 cited URLs are exact catalog entries: 48 were reachable and four O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide explicitly reconciles current Lakeflow Spark Declarative Pipelines and Declarative Automation Bundles names with legacy DLT and published Asset Bundles wording. No upcoming blueprint change or exam retirement was announced."
+      "notes": "Whole guide read and all 77 October objectives in twelve groups mapped; March baseline retained. Correct ten-language availability, Unity Catalog principal boundaries and SQL volume/order examples. Add four worked examples, two labs, 44 answer checkpoints and two qualified Databricks blog exercises. Clarify ABAC identity/preview scope, file and CDC replay, schema/expectation behavior, pipeline test isolation, bundle engine migration and maintenance windows. Nine synthetic assertions and one Python syntax parse passed; no Azure or Databricks execution. Three research checkpoints added; human review pending. See docs/research/2026-09-27-dp-750-deep-review.md"
     },
     {
       "id": "dp-800-2026-08-31-source-validation",

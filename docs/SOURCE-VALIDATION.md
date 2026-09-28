@@ -516,6 +516,8 @@ The review maps every July 21, 2026 subobjective to an access-pattern decision, 
 
 ## DP-750 coverage record
 
+The September 27 [deep review](research/2026-09-27-dp-750-deep-review.md) maps 77 detailed objectives. Whole guide read and all 77 October objectives in twelve groups mapped; March baseline retained. Correct ten-language availability, Unity Catalog principal boundaries and SQL volume/order examples. Add four worked examples, two labs, 44 answer checkpoints and two qualified Databricks blog exercises. Clarify ABAC identity/preview scope, file and CDC replay, schema/expectation behavior, pipeline test isolation, bundle engine migration and maintenance windows. Nine synthetic assertions and one Python syntax parse passed; no Azure or Databricks execution. Three research checkpoints added; human review pending. Current guide citations: 72 registered, 68 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Set up and configure an Azure Databricks environment | Sections 1–2, all integrated scenarios, and Labs 1–2 |

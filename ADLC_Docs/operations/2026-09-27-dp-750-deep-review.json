@@ -1,0 +1,3392 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "DP-750",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "7eb09e92ce0457ca5dcf24f79c4a89b13f99912803857f197f2765b8f579f773",
+  "guide_after_sha256": "e457b5170d57a96b298eeb18cbf87217c0da071c3da758f3cb98af2a1592c043",
+  "prior_records": {
+    "exam": {
+      "code": "DP-750",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Implementing Data Engineering Solutions Using Azure Databricks",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+      "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical SQL and Python/PySpark, Delta Lake, streaming and batch data engineering, Azure identity/storage/networking, Unity Catalog governance, and production deployment and troubleshooting experience."
+    },
+    "review": {
+      "id": "dp-750-2026-08-31-source-validation",
+      "exam_code": "DP-750",
+      "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-750-official-objectives.txt",
+      "blueprint_snapshot_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84",
+      "objective_coverage": [
+        {
+          "objective_group": "Set up and configure an Azure Databricks environment",
+          "guide_sections": [
+            "Sections 1–2",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Secure and govern Unity Catalog objects",
+          "guide_sections": [
+            "Section 3",
+            "Governed sales and external-sharing scenarios",
+            "Labs 2–3"
+          ]
+        },
+        {
+          "objective_group": "Prepare and process data",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Deploy and maintain data pipelines and workloads",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 52,
+        "reachable": 48,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "All four March 11, 2026 objective groups and every published subobjective are mapped to environment, governance, ingestion, processing, delivery, evidence, failure, and recovery decisions. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover compute and libraries, Unity Catalog objects and permissions, ABAC/filters/masks, identity and secrets, lineage/audit/sharing, modeling and layout, batch/stream/CDC ingestion, quality, jobs, Git/testing/bundles, Spark troubleshooting, Delta maintenance, cost, and Azure monitoring. All 52 cited URLs are exact catalog entries: 48 were reachable and four O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide explicitly reconciles current Lakeflow Spark Declarative Pipelines and Declarative Automation Bundles names with legacy DLT and published Asset Bundles wording. No upcoming blueprint change or exam retirement was announced."
+    },
+    "sources": [
+      {
+        "id": "microsoft-azure-databricks-documentation-dp900",
+        "title": "Azure Databricks documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900",
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-420-exam-sandbox",
+        "title": "Microsoft certification exam sandbox",
+        "url": "https://aka.ms/examdemo",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-420",
+          "DP-750",
+          "DP-800",
+          "AI-200"
+        ]
+      },
+      {
+        "id": "dp-750-practice-assessment",
+        "title": "DP-750 Practice Assessment on AI Skills Navigator",
+        "url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Official free Practice Assessment; Microsoft account sign-in is required."
+      },
+      {
+        "id": "dp-750-azure-diagnostic-log-delivery",
+        "title": "Azure diagnostic log delivery",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-audit-log-system-table",
+        "title": "audit log system table",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-catalog-creation-guide",
+        "title": "catalog creation guide",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-compute-selection",
+        "title": "compute selection",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-photon",
+        "title": "Photon",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-event-hubs-pipeline-source-guidance",
+        "title": "Event Hubs pipeline-source guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Current guidance uses the Event Hubs Kafka-compatible endpoint with the Structured Streaming Kafka connector; Lakeflow pipelines do not support the third-party JVM Event Hubs connector."
+      },
+      {
+        "id": "dp-750-what-is-unity-catalog",
+        "title": "What is Unity Catalog?",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-current-abac-requirements",
+        "title": "current ABAC requirements",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "ABAC requirements and preview/general-availability boundaries are volatile."
+      },
+      {
+        "id": "dp-750-unity-catalog-access-control-overview",
+        "title": "Unity Catalog access-control overview",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-privileges-reference",
+        "title": "privileges reference",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-unity-catalog-lineage",
+        "title": "Unity Catalog lineage",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-row-filters-and-column-masks",
+        "title": "row filters and column masks",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Row-filter and column-mask limitations vary by runtime and workload; verify current restrictions."
+      },
+      {
+        "id": "dp-750-managed-versus-external-assets",
+        "title": "managed versus external assets",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-delta-sharing-documentation",
+        "title": "Delta Sharing documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-sharing/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-liquid-clustering",
+        "title": "liquid clustering",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/clustering",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Liquid clustering recommendations and runtime support are volatile; verify before implementation."
+      },
+      {
+        "id": "dp-750-bundle-documentation",
+        "title": "bundle documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Current Declarative Automation Bundles documentation; the published objective uses the Databricks Asset Bundles name."
+      },
+      {
+        "id": "dp-750-bundle-cli",
+        "title": "bundle CLI",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/bundle-commands",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-databricks-sample-datasets-and-notebooks",
+        "title": "Databricks sample datasets and notebooks",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-curate-an-ai-bi-genie-space",
+        "title": "curate an AI/BI Genie space",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/genie/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-cloud-object-ingestion-guidance",
+        "title": "Cloud-object ingestion guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-lakeflow-connect",
+        "title": "Lakeflow Connect",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-configure-jobs",
+        "title": "configure jobs",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-tasks",
+        "title": "tasks",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-job-notifications",
+        "title": "Job notifications",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-classic-jobs-compute-guidance",
+        "title": "classic jobs compute guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-job-triggers",
+        "title": "Job triggers",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-lakeflow-pipeline-concepts",
+        "title": "Lakeflow pipeline concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Current Lakeflow Spark Declarative Pipelines terminology and concepts; older material may call the product Delta Live Tables."
+      },
+      {
+        "id": "dp-750-expectation-patterns",
+        "title": "expectation patterns",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectation-patterns",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-pipeline-unit-testing",
+        "title": "pipeline unit testing",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-libraries-documentation",
+        "title": "libraries documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/libraries/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-lakehouse-federation",
+        "title": "Lakehouse Federation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/query-federation/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-secret-management",
+        "title": "secret management",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/security/secrets/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-optimize",
+        "title": "OPTIMIZE",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-vacuum",
+        "title": "VACUUM",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-query-profile",
+        "title": "query profile",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-structured-streaming",
+        "title": "Structured Streaming",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-schema-enforcement",
+        "title": "schema enforcement",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-certification-page",
+        "title": "Azure Databricks Data Engineer Associate certification page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-blueprint",
+        "title": "DP-750 official study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-official-course",
+        "title": "DP-750T00 official Microsoft course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-750t00",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-databricks-free-training",
+        "title": "Databricks free training",
+        "url": "https://www.databricks.com/learn/training/home",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-o-reilly-data-engineering-with-azure-databricks",
+        "title": "O'Reilly Data Engineering with Azure Databricks",
+        "url": "https://www.oreilly.com/library/view/data-engineering-with/9781806106370/",
+        "publisher": "O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "April 2026 Azure-specific book; page displayed 412 pages and 10h17m."
+      },
+      {
+        "id": "dp-750-o-reilly-data-governance-with-unity-catalog-on-databricks",
+        "title": "O'Reilly Data Governance with Unity Catalog on Databricks",
+        "url": "https://www.oreilly.com/library/view/data-governance-with/9781098179625/",
+        "publisher": "O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "September 2025 Unity Catalog book; page displayed 384 pages and 11h34m."
+      },
+      {
+        "id": "dp-750-o-reilly-data-engineering-fundamentals-on-databricks",
+        "title": "O'Reilly Data Engineering Fundamentals on Databricks",
+        "url": "https://www.oreilly.com/videos/data-engineering-fundamentals/10001ACADFORD/",
+        "publisher": "O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "July 2025 Databricks course; page displayed 4h31m. Gap-check Azure-specific and current blueprint details."
+      },
+      {
+        "id": "dp-750-pluralsight-manage-data-with-azure-databricks-and-azure-data-lake",
+        "title": "Pluralsight Manage Data with Azure Databricks and Azure Data Lake",
+        "url": "https://www.pluralsight.com/courses/azure-databricks-data-lake-manage-data",
+        "publisher": "Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Focused Azure Databricks and ADLS course rather than a complete DP-750 path; verify current displayed duration."
+      },
+      {
+        "id": "dp-750-udemy-dp-750-topic-search",
+        "title": "Udemy DP-750 topic search",
+        "url": "https://www.udemy.com/courses/search/?q=DP-750",
+        "publisher": "Udemy",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ],
+        "notes": "Catalog search, not an endorsement. Compare update date, blueprint coverage, lab depth, and explanation quality; reject real-question claims."
+      },
+      {
+        "id": "dp-750-databricks-youtube-channel",
+        "title": "Databricks YouTube channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "publisher": "Databricks",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750",
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ]
+      },
+      {
+        "id": "dp-750-microsoft-reactor-databricks-search",
+        "title": "Microsoft Reactor Databricks search",
+        "url": "https://www.youtube.com/@MicrosoftReactor/search?query=Azure%20Databricks",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      },
+      {
+        "id": "dp-750-john-savill-databricks-search",
+        "title": "John Savill Databricks search",
+        "url": "https://www.youtube.com/@NTFAQGuy/search?query=Databricks",
+        "publisher": "John Savill",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750"
+        ]
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "593b18b901e88086bf3d45c3ca73e252e0751705a1eb344bcc37be828d9e2e0b",
+      "guide_sections": "2 / Compute decision table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "efb1e1cfffe5af2cc816594fa88fa4b706fadba3dbc129c4081ce116821910f2",
+      "guide_sections": "2 / Configure performance and cost settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "cb0eb8b6205d0ba4fc6b219e4509f1845e699de26658c2fd9d457aab09453d52",
+      "guide_sections": "2 / Runtime, ML and Photon",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "386d428095de2a6e882e00977874bd774ae099b3ee23ce6ec883241818568d4a",
+      "guide_sections": "2 / Install libraries safely",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "167dffc70bb532094eb8e3457f4ab55eebe49fff27e2b78ae0eaea1446f30af5",
+      "guide_sections": "2 / Compute permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "595c39bbd09efbc9b2504c21534864c84becd10af98f1573620e7a9b852b8f56",
+      "guide_sections": "2 / Naming and isolation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "2d5fb621bfc33422db1f99eefbcd2ff5d1d41522eba2f6d0e38979cae69b8cda",
+      "guide_sections": "2 / Create catalogs, schemas and volumes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "25abdc2b58ead1ac75d491478686c926d3ff4443159581553ee48bff4b994d0f",
+      "guide_sections": "2 / Create catalogs, schemas and volumes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "8300e6b580b38f58089a8a123eb33afb49e9b2f23407e70cfbe1e49f1579c0dd",
+      "guide_sections": "2 / Volumes and complete paths; 4 / SQL examples",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "eb9d6f0e62ac826729e51065d861c338d0e3e837f2edca5b34bc7286345bae0a",
+      "guide_sections": "2 / Tables, views and materialized views",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "b3345c9860d85d8ce077931d38c8df5114ce4c45b51f90172097c07b2ef2a3ce",
+      "guide_sections": "2 / Foreign catalogs and connections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "26d9fa863e28664bdd8e98adb22ca726bac8215ae43d361d0b9a1cb2c7316639",
+      "guide_sections": "2 / Managed versus external DDL; 4 / SQL patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "266dd3d376bb5eeb0e5a081392644c3c1763cf9d57d9bddfb23c02b776ab9fca",
+      "guide_sections": "2 / AI/BI Genie instructions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "4e51e1c55f40d49535e0cadf994c66f1d04ea0606d41980a936764b3c1722208",
+      "guide_sections": "3 / Hierarchy and principal distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "337227406f6c1a7f137402e78860ac14ae075e60aa00766625f12a3e1e70ac2f",
+      "guide_sections": "3 / Fine-grained controls and ABAC identities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "d9edb615cb69a499d189b8ed881edb8ad4a99ca4604684d97147e285190d626d",
+      "guide_sections": "3 / Key Vault secrets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "4dfd93f3a18a87fc3bf6eaa6ca801b48602a7b46c0cbfdf1c110ef21047f3290",
+      "guide_sections": "3 / Authenticate workloads",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "3d3282a967472d1f588ce7c14e2c11c3931b129b68bc351da9923386e751dbcd",
+      "guide_sections": "3 / Access connector and managed-identity storage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "2a032e45933d29849ce62640968b6089a0c6cdab26e79fea4e610533c8aea926",
+      "guide_sections": "3 / Discovery metadata",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "f254093b0f60db3ca1614c8ed0b860d5346677a23bd5dfcf5b7f8d5df31b972a",
+      "guide_sections": "3 / Governed tags and ABAC",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "80113fdcf12925478d0886d5bbdc83ab72a5d620ff8857a9267a93e74ba5a967",
+      "guide_sections": "3 / Filters, masks, views and persisted-result example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "fe309169698ad67a999163ee5578c8d46738a5d8ea27b377d99558c53a0b47c0",
+      "guide_sections": "3 / Retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "5038bf8ae2f0c2343d4b974f551acdc194f237be6df21a863b4d6e8d6cee1749",
+      "guide_sections": "3 / Lineage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "c0cf0eaa464e9a0c6618a7207f63a0999968d57df22f8af4390baf9f228cf0e2",
+      "guide_sections": "3 / Audit activity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "145c72daeb8c511ff6884425fd2b82d0f6fbfeddfafa462e758144c9b2797ddb",
+      "guide_sections": "3 / Secure Delta Sharing and recipient boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c8852298374637d4994179b8b1be07764a6efef8b58882b50f8cc556520c3d3c",
+      "guide_sections": "4 / Source contract and extraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "daf8f4557c4c23a9d34a44680f27d38ae6159742b53d009183f97899270bbc7f",
+      "guide_sections": "4 / Ingestion-tool decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "1faf5c5c2ef6ed3b1c47e1a468a3548b432d4dccdbd9ec2496441d762050a6a0",
+      "guide_sections": "4 / Batch versus streaming",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "27535a4a6b58f54891ccad81dd171266bf8406f91d212b6d5eebce2c78520ea8",
+      "guide_sections": "4 / Format decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "9c10dc72db1df8560dec9d387e31dec40a5c9d5a7b6de67abefd7ba4e05c6dc2",
+      "guide_sections": "4 / Partition and clustering layout",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "9bbd1712b5244e0392d2b1999bb7873275c2564538f7e0cbe3bfee8b31bc41f4",
+      "guide_sections": "4 / SCD types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "9bb88ba583b0bbd5f22b1debf3111636aec2a749cf62ddfce4797fa09dd0194b",
+      "guide_sections": "4 / Fact grain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "9b1317ab2723609663e1c545ce5b9b28741ff0e14dde3e287247ac569514e500",
+      "guide_sections": "4 / Temporal history and ordering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "fe293aee9dffaf1341405b8be9af385be1087ac028e0f73bf6ee15199603f719",
+      "guide_sections": "4 / Liquid clustering and Z-order",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "3daa34b82d0609fd177106360c19fa87e1fcf2bfd1df1290a3f975527abc4a91",
+      "guide_sections": "2 / Managed versus external tables; 4 / Format lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "ba1a0a80dfa99c8bd2b7a60b34bf83ecd0937278bd0caf35c9f6963f2991a9fa",
+      "guide_sections": "4 / Lakeflow Connect",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "7d1c9e3df4aa791f28df277add5fec07b006b714f052e46d411bd04c13043d77",
+      "guide_sections": "4 / Notebook and Auto Loader ingestion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "d70e387c1a70dace42562a4a7d763a780cc6586f5b58a58339eea276500aa10a",
+      "guide_sections": "4 / Corrected CTAS, replacement and COPY INTO examples",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "1d6d5cbbe0b9477ee8b35fc327edc7d00d8b33dca27dc668647e88f22cfe99f9",
+      "guide_sections": "4 / AUTO CDC and CDF modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "4a0e677d39cd67fee289f9fb32216721386be5788c887d0cf40256adecedaa38",
+      "guide_sections": "4 / Structured Streaming",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "a0811b01af6ec0d51fa3998281924dbda8c577e6548a7d83e1a8c664b53326d4",
+      "guide_sections": "4 / Event Hubs Kafka endpoint",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "4e0b503f56f25f0806c22ca1afd8055ffc87b6bfbb0567974e32a8f334746697",
+      "guide_sections": "4 / Pipeline ingestion and Auto Loader schema behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "c73145febb876c8e82fe1a62d23eefe5033b2b7f9a3a6a90754dd4be0fac7150",
+      "guide_sections": "4 / Profile and type data",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "0a929d4b86452c5be9c51d94b66328a2c1253b2fc45700101934608c76f23b25",
+      "guide_sections": "4 / Type decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "e92788d67b6927bb161e860cc1033dea9670f0d8a590e39648d3f6f06f92bfae",
+      "guide_sections": "4 / Duplicate, missing and null contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "97467a683027f7d2d229fc222a27fb9f8b4653e2dde66e41a1b424da7399693c",
+      "guide_sections": "4 / Filtering, grouping and aggregation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "c5faf326e525cdc692566127dd48b32539680bbf5f6a17fc9da00de49771d52c",
+      "guide_sections": "4 / Join and set operations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "7f637450e631cb7a3b4d7becf5caaab530da97db3179d93cb6f4e32e53d759b0",
+      "guide_sections": "4 / Denormalization, pivot and unpivot",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "af4bd477ea2e967b00fbc03a17c524a964cfa101fdb4b6e6099c33cda5e6f691",
+      "guide_sections": "4 / Merge, insert and append; late-change example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "f0bdfed6dc822deda17692b6b65090b72d4d8d8b4aa3e76bbe37790c268a6c54",
+      "guide_sections": "4 / Validation mechanisms and quarantine",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "58b9d9f8ce006a1578c85ffc98041af2818a5c02646d266e72abcd079d10e4a4",
+      "guide_sections": "4 / Type checks and rescue behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "44c4e93ade81aac669f959add3648effdce84239dc629e6d1c38d720de57cfc4",
+      "guide_sections": "4 / Schema enforcement and drift",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "3cc39b9a67c52b2df57bbf2d210ff6a1375348f89558793b97314bb4b14d73d6",
+      "guide_sections": "4 / Expectations and commit-scope example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "05a58d8e04aa4f58e932fef5ec09a29e4270c35b1ddbd8b21c081982458a4eb9",
+      "guide_sections": "5 / Pipeline graph order",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "28c2fe669b4a692e804f6969bee57b3ecb2f6fc7427a092e44318f0b7764f94a",
+      "guide_sections": "5 / Notebook versus pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "d4fd7fc7668a7d40d81f3755c1cbf03ce55f6622aa6de9de09690c7f3434f426",
+      "guide_sections": "5 / Node contracts and task logic",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "db539d9cb6718e694575564393b254005f0de99b3c532ac1f5672f209b1ac95a",
+      "guide_sections": "5 / Failure boundaries and safe retry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "52d23b8c9fa63f73cc90b073aaf489c24783956692709f0fa03bccbf155cc97c",
+      "guide_sections": "5 / Notebook/task graph and dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "2a095b1521f8cba99f8fae96905bfbde6311c178903655cc491c506aab7223e8",
+      "guide_sections": "4 / Declarative ingestion; 5 / Pipeline graph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "4ecdc72ce21b9ca4cdc2c0f7b254c77996450118d79e2963d094bc013317b8f3",
+      "guide_sections": "5 / Configure jobs and tasks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "8885082d255a268844ab567fa04432b2846a72295ec34a2f0790bdbeb4a0ad83",
+      "guide_sections": "5 / Triggers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "53f5ca40f0fc251196948791a930b976bcb18679e024e56e720fea8d0e2fd2a2",
+      "guide_sections": "5 / Schedules, timezone and concurrency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "c8dcd3bccfe528e2370aa5f1f43ae8f330b1956a2b792fbce58c460dabd3bd35",
+      "guide_sections": "5 / Notifications and maintenance destinations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "a954a0088337d30b9b0cd7be6d55dbb7f69cd771dafe09d309a399cba8df7c1a",
+      "guide_sections": "5 / Retry, repair, restart and maintenance; pipeline update choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "d2c777254d0dc51a3ac9b0602cec46a7c7db2b43a73a97fb8cecadc69836cffd",
+      "guide_sections": "5 / Git workflow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "2a3532b5008609553a6e7955f5450252e0e43844760663e578bb79c4390e11fd",
+      "guide_sections": "5 / Branches, pull requests and conflicts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "897d4d96e4114bf385f8fe97d69dc77f9c0e7a71378501d51b1fdfe2960f3742",
+      "guide_sections": "5 / Testing strategy and pipeline framework boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "914948da9a7db659b43898665ed234025d4365154820ee46a25426b592002eae",
+      "guide_sections": "5 / Bundle packaging and targets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "da5b75d1c201b7ece2e12f32a607f98ba5f1a89e86c5be873d2f5c2ce070a9ef",
+      "guide_sections": "5 / Bundle CLI and direct-engine migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "ea12ff4db0eaa14a8e5a64e6e7e6817d600101b8ae2e7fb94f6e6245dc9332e8",
+      "guide_sections": "5 / REST resource lifecycle and invocation; Lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "a6fa715cfd9638b0d1afb33f49ac42b3f7131b9190f885618644db4eabb03e11",
+      "guide_sections": "5 / Consumption, cost and Azure signals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "8ea25843625e52489da5577b1694243cdf72d8fb2c1676e71612396fbdddadf9",
+      "guide_sections": "5 / Failure diagnosis and repair; Lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "057677e88c940c4931477dcf3e37c01a609e40bae36ad8d1c294b1afc5a472f3",
+      "guide_sections": "5 / Spark diagnosis, bottlenecks and restart",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "b5b822e7f2b10b4d23f4d972c81215e7363abce40982ebc103d9b47f95591790",
+      "guide_sections": "5 / DAG, cache, skew, spill and shuffle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "6cd2e81b3f6c9c6d750c274d9dda13068cf400c1b1dd1591e3cb2d0afab5b2c9",
+      "guide_sections": "5 / Delta maintenance and retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "b9010029d0bf9942a546a31e475b62cee904ab2393977755839532d2c1ef2591",
+      "guide_sections": "5 / Azure diagnostic settings and Log Analytics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "442647b900afc3e9fb45fa0f1cd56dee9d0b44804328850b8c61ae17602ea437",
+      "guide_sections": "5 / Azure Monitor rules and owned alert tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DP-750"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DP-750",
+        "title": "Implementing Data Engineering Solutions Using Azure Databricks",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+        "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+        "snapshot_path": "data\\objective-snapshots\\dp-750-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dp-750-official-status.json",
+        "previous_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84",
+        "current_sha256": "d44f3f814718f33dd69dd72f48381609f4cde30d0b5c9fe1656380223fb2571e",
+        "previous_status_sha256": "4cf37ffbb9684b28047947f6cc9464d0e6c5ecef7e09d2dacd47be0e087c9c57",
+        "current_status_sha256": "10ef32f740b30f922754046da34e4338a0d2a0b697049d30b94ace8949226237",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 19, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 72,
+    "reachable": 68,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "microsoft-azure-databricks-documentation-dp900",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/",
+      "checked_at": "2026-09-28T01:39:57.308212+00:00",
+      "health": {
+        "id": "microsoft-azure-databricks-documentation-dp900",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "checked_at": "2026-09-28T01:39:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "content_type": "text/html",
+        "page_title": "Azure Databricks documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/",
+        "duration_signals": [],
+        "signal_fingerprint": "4f407d660b6f8c1ab80aacb5b5adaa928baf0213c2181b347fc271e22090d345",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/",
+      "sha256": "74982e5059b7beb6da43dfe0a2529c58ab88897fb1b6643c201c34da28b57c36",
+      "text_characters": 838
+    },
+    {
+      "id": "dp-420-exam-sandbox",
+      "url": "https://aka.ms/examdemo",
+      "checked_at": "2026-09-28T01:39:57.308931+00:00",
+      "health": {
+        "id": "dp-420-exam-sandbox",
+        "url": "https://aka.ms/examdemo",
+        "checked_at": "2026-09-28T01:39:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://mscertdemo.starttest.com/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Sandbox - English",
+        "canonical_url": "https://mscertdemo.starttest.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "b2c004182f5b06ff6f420c8b1d45859984cfb511ef6bf8b845364c845afa0b2d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://mscertdemo.starttest.com/",
+      "sha256": "d443e3719c8f05a0e7c36ec111f9d7587187c5eed0fe5db4712071361d45a375",
+      "text_characters": 27
+    },
+    {
+      "id": "dp-750-practice-assessment",
+      "url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer",
+      "checked_at": "2026-09-28T01:39:57.309303+00:00",
+      "health": {
+        "id": "dp-750-practice-assessment",
+        "url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer",
+        "checked_at": "2026-09-28T01:39:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer",
+        "content_type": "text/html",
+        "page_title": "AI Skills Navigator",
+        "canonical_url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer",
+        "duration_signals": [],
+        "signal_fingerprint": "ab6ca11b2c1495acb5cfa3c23b3962e4baa369cb2fff12fb25570361c459484a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer",
+      "sha256": "8fb6e0cfd8d6d6f0d36c1e0038d29b54f51befeb15ee8a34d0d9c4fc25f3cc26",
+      "text_characters": 19
+    },
+    {
+      "id": "dp-750-azure-diagnostic-log-delivery",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery",
+      "checked_at": "2026-09-28T01:39:57.698218+00:00",
+      "health": {
+        "id": "dp-750-azure-diagnostic-log-delivery",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery",
+        "checked_at": "2026-09-28T01:39:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery",
+        "content_type": "text/html",
+        "page_title": "Configure diagnostic log delivery - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "1df1a9857fc1f48a983379cb4d06fa9b182d1a99a62131ede600823150860906",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery",
+      "sha256": "fd5151f1e653517eaffba13f08cf4db4c12360fd70ce90c64b76b303dcc7c613",
+      "text_characters": 9129
+    },
+    {
+      "id": "dp-750-audit-log-system-table",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs",
+      "checked_at": "2026-09-28T01:39:57.714087+00:00",
+      "health": {
+        "id": "dp-750-audit-log-system-table",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs",
+        "checked_at": "2026-09-28T01:39:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs",
+        "content_type": "text/html",
+        "page_title": "Audit log system table reference - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs",
+        "duration_signals": [],
+        "signal_fingerprint": "ebe33f9440eed1558c2dff791f7a663aee4a9d75cb30beb8b4cf2931cd1e9e61",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs",
+      "sha256": "574efeeebe88794568de92716d91b73837803708ea71041914bdb4c28fbddb3d",
+      "text_characters": 4109
+    },
+    {
+      "id": "dp-750-catalog-creation-guide",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog",
+      "checked_at": "2026-09-28T01:39:58.057833+00:00",
+      "health": {
+        "id": "dp-750-catalog-creation-guide",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog",
+        "content_type": "text/html",
+        "page_title": "Create catalogs - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog",
+        "duration_signals": [],
+        "signal_fingerprint": "f778984e6a22627491c25eaeb07a59ab6b173cbd4ac3aeba146baba93b2d227b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog",
+      "sha256": "77c38be11ed6fa58beffaeea0abddf095aa209ffdc9cc65b7f46d316a4e4f54e",
+      "text_characters": 10785
+    },
+    {
+      "id": "dp-750-compute-selection",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/",
+      "checked_at": "2026-09-28T01:39:58.127621+00:00",
+      "health": {
+        "id": "dp-750-compute-selection",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/compute/",
+        "content_type": "text/html",
+        "page_title": "Compute - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/compute/",
+        "duration_signals": [],
+        "signal_fingerprint": "0e788635577f2581c4633f1ac6eb98c37225297a95dc2491084d32a920c4d849",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/compute/",
+      "sha256": "d808691ad383b8108620e118799c5af69408781940ade0d16859a6e2f8258424",
+      "text_characters": 3523
+    },
+    {
+      "id": "dp-750-photon",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon",
+      "checked_at": "2026-09-28T01:39:58.447048+00:00",
+      "health": {
+        "id": "dp-750-photon",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon",
+        "content_type": "text/html",
+        "page_title": "What is Photon? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon",
+        "duration_signals": [],
+        "signal_fingerprint": "0cc11ac69aa1a7d450bb35ac8c1d4a674ed55a6ff7e81a82b5f9cbfd2e7a9f2c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon",
+      "sha256": "297ead0adb035f058c67319f22753c4aabb13ede65da8d09c595c8622204ff60",
+      "text_characters": 7771
+    },
+    {
+      "id": "dp-750-event-hubs-pipeline-source-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs",
+      "checked_at": "2026-09-28T01:39:58.469487+00:00",
+      "health": {
+        "id": "dp-750-event-hubs-pipeline-source-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs",
+        "content_type": "text/html",
+        "page_title": "Use Azure Event Hubs as a pipeline data source - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs",
+        "duration_signals": [],
+        "signal_fingerprint": "bf972a30f6582dcd48d4da7443327fe710cf42b0149d790a7b954b9c2a0a4c08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs",
+      "sha256": "d79723c2adee391fe1a39a19960f9be27f327eb5dc069cc41487e6fc1b2766bc",
+      "text_characters": 8319
+    },
+    {
+      "id": "dp-750-what-is-unity-catalog",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/",
+      "checked_at": "2026-09-28T01:39:58.486144+00:00",
+      "health": {
+        "id": "dp-750-what-is-unity-catalog",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/",
+        "content_type": "text/html",
+        "page_title": "What is Unity Catalog? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/",
+        "duration_signals": [],
+        "signal_fingerprint": "ac232debf60ce384cf6c92c93175a00b0f9eef7f033dab383f516e52cc1cf9ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/",
+      "sha256": "4cdcf3b46c320d0c2f009e87d0ee733a74eab77486034078a594ce1d9af4c319",
+      "text_characters": 4503
+    },
+    {
+      "id": "dp-750-current-abac-requirements",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+      "checked_at": "2026-09-28T01:39:58.755270+00:00",
+      "health": {
+        "id": "dp-750-current-abac-requirements",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+        "content_type": "text/html",
+        "page_title": "Requirements, quotas, and limitations for row filter and column mask policies - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+        "duration_signals": [],
+        "signal_fingerprint": "df064d3a397fb3532dcc5da5eea67e0aa998cac91394c20b5cc1869da95ea81b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+      "sha256": "4933cbb106bbd6f34b677c0939063163f0c4f915d8c53574e68fbf7875c86fd4",
+      "text_characters": 7786
+    },
+    {
+      "id": "dp-750-unity-catalog-access-control-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/",
+      "checked_at": "2026-09-28T01:39:58.755534+00:00",
+      "health": {
+        "id": "dp-750-unity-catalog-access-control-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/",
+        "content_type": "text/html",
+        "page_title": "Access control in Unity Catalog - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/",
+        "duration_signals": [],
+        "signal_fingerprint": "c73cc161c3aa343ab11b954f2de992636a7cfb84ca8104842ac55f2f549439f7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/",
+      "sha256": "89b778b07e60c6da14bd9644bf8e75100b3a50761dbd7e792c06544ee659f1ba",
+      "text_characters": 3317
+    },
+    {
+      "id": "dp-750-privileges-reference",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference",
+      "checked_at": "2026-09-28T01:39:58.805485+00:00",
+      "health": {
+        "id": "dp-750-privileges-reference",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference",
+        "checked_at": "2026-09-28T01:39:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference",
+        "content_type": "text/html",
+        "page_title": "Unity Catalog privileges reference - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference",
+        "duration_signals": [],
+        "signal_fingerprint": "13b6f097b193a159fcb999b49af7d21e214bb1cb1713c552106581199fabc599",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference",
+      "sha256": "ad4022f517d729d5005143f9ea6edbff9038a06707c3c06ba6bc5d1331ec496b",
+      "text_characters": 44919
+    },
+    {
+      "id": "dp-750-unity-catalog-lineage",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage",
+      "checked_at": "2026-09-28T01:39:59.049765+00:00",
+      "health": {
+        "id": "dp-750-unity-catalog-lineage",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage",
+        "checked_at": "2026-09-28T01:39:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage",
+        "content_type": "text/html",
+        "page_title": "Lineage in Unity Catalog - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage",
+        "duration_signals": [],
+        "signal_fingerprint": "56482de93c7faf434b01bba06adab600eb7b1720048f09a5a8505d7df5a5904c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage",
+      "sha256": "2c834677ddd51ef93c35c3e4323ed5b88d942ee8d0ba31473b83347ea6ba803c",
+      "text_characters": 12974
+    },
+    {
+      "id": "dp-750-row-filters-and-column-masks",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+      "checked_at": "2026-09-28T01:39:59.062553+00:00",
+      "health": {
+        "id": "dp-750-row-filters-and-column-masks",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+        "checked_at": "2026-09-28T01:39:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+        "content_type": "text/html",
+        "page_title": "Row filters and column masks - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+        "duration_signals": [],
+        "signal_fingerprint": "b6584264fc65207744c217b771fad4075a4304e6e0943f9d76f8531babcd3ef5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+      "sha256": "f6ec62a67c4a2d279a4c352a689804fc2c500812d6cc915dc84f66d9af18447c",
+      "text_characters": 12453
+    },
+    {
+      "id": "dp-750-managed-versus-external-assets",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external",
+      "checked_at": "2026-09-28T01:39:59.246283+00:00",
+      "health": {
+        "id": "dp-750-managed-versus-external-assets",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external",
+        "checked_at": "2026-09-28T01:39:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external",
+        "content_type": "text/html",
+        "page_title": "Managed versus external assets in Unity Catalog - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external",
+        "duration_signals": [],
+        "signal_fingerprint": "06bd2f2fef2897686ed72e5b6da59b49f43277e68412f7aef095c268d0191a39",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external",
+      "sha256": "fd8d49d86f1661c6d3020239348c0bb0793ab7e760fad8e6de51dd216bb34e39",
+      "text_characters": 6407
+    },
+    {
+      "id": "dp-750-delta-sharing-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-sharing/",
+      "checked_at": "2026-09-28T01:39:59.334755+00:00",
+      "health": {
+        "id": "dp-750-delta-sharing-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-sharing/",
+        "checked_at": "2026-09-28T01:39:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-sharing/",
+        "content_type": "text/html",
+        "page_title": "Share data and AI assets securely - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-sharing/",
+        "duration_signals": [],
+        "signal_fingerprint": "96a42819783e895b26b39fb1cc0be83e71c66c35781ed4069aeac6836da30805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-sharing/",
+      "sha256": "250cf94b43a138ebc4b8bd76a0a12175f9b1cf50793354c8a30109dfe294baa6",
+      "text_characters": 3439
+    },
+    {
+      "id": "dp-750-liquid-clustering",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/clustering",
+      "checked_at": "2026-09-28T01:39:59.586940+00:00",
+      "health": {
+        "id": "dp-750-liquid-clustering",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/clustering",
+        "checked_at": "2026-09-28T01:39:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/clustering",
+        "content_type": "text/html",
+        "page_title": "Use liquid clustering for tables - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/clustering",
+        "duration_signals": [],
+        "signal_fingerprint": "8d8931a3c53288e4e0e6d556d7fe0e17cbc4d12ef95bed55f811828e83ad6da9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/clustering",
+      "sha256": "e1b8b1ac814fa66557bcbb2476ad1d5ac51bd5e96516d5b723df49dd66071db5",
+      "text_characters": 35680
+    },
+    {
+      "id": "dp-750-bundle-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+      "checked_at": "2026-09-28T01:39:59.641787+00:00",
+      "health": {
+        "id": "dp-750-bundle-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+        "checked_at": "2026-09-28T01:39:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+        "content_type": "text/html",
+        "page_title": "What are Declarative Automation Bundles? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "75b36a572ed5dce6d989ac7704e072aee2b6af4517eddd2d94e00d219ea4b8fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+      "sha256": "e9aa2e577de26cbb7343b60ef1edbef84dce59baff4ee51680d38b2283a16cff",
+      "text_characters": 7728
+    },
+    {
+      "id": "dp-750-bundle-cli",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/bundle-commands",
+      "checked_at": "2026-09-28T01:39:59.869299+00:00",
+      "health": {
+        "id": "dp-750-bundle-cli",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/bundle-commands",
+        "checked_at": "2026-09-28T01:39:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/bundle-commands",
+        "content_type": "text/html",
+        "page_title": "bundle command group - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/bundle-commands",
+        "duration_signals": [],
+        "signal_fingerprint": "56a858b1ebe13029e269375fb69c71fc0e4fac328385f6ef82fcf534d083dc85",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/bundle-commands",
+      "sha256": "fed400edf8d69d5dd53ebfe0905abb29dfc03ff3b809a7d7e26c7fd569adf25f",
+      "text_characters": 38774
+    },
+    {
+      "id": "dp-750-databricks-sample-datasets-and-notebooks",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets",
+      "checked_at": "2026-09-28T01:40:00.279271+00:00",
+      "health": {
+        "id": "dp-750-databricks-sample-datasets-and-notebooks",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets",
+        "content_type": "text/html",
+        "page_title": "Sample datasets - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets",
+        "duration_signals": [],
+        "signal_fingerprint": "fed35c16460f86f8e88ee6ace3c11e80c885fc603361e36d5805d7a28ae771ea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets",
+      "sha256": "b385f9fe7c572f541ba0268c52a2abc896d7a6cdee7dc749da684dd6cef5fc59",
+      "text_characters": 5659
+    },
+    {
+      "id": "dp-750-curate-an-ai-bi-genie-space",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/genie/",
+      "checked_at": "2026-09-28T01:40:00.305946+00:00",
+      "health": {
+        "id": "dp-750-curate-an-ai-bi-genie-space",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/genie/",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/genie/",
+        "content_type": "text/html",
+        "page_title": "Genie - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/genie/",
+        "duration_signals": [],
+        "signal_fingerprint": "1792d48a03d1475434940202ab7a68f4f6b0175e28eb526544c6ee84c6cbeeb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/genie/",
+      "sha256": "5bf2c5ff39477f79fc2354095b2842c73d1dcb090fd00bde31be16b545f57496",
+      "text_characters": 3103
+    },
+    {
+      "id": "dp-750-cloud-object-ingestion-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/",
+      "checked_at": "2026-09-28T01:40:00.396672+00:00",
+      "health": {
+        "id": "dp-750-cloud-object-ingestion-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/",
+        "content_type": "text/html",
+        "page_title": "Ingest data from cloud object storage - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/",
+        "duration_signals": [
+          "2 minutes"
+        ],
+        "signal_fingerprint": "55c4ed800a0960aa7b5d7856b2818e9ae1c2d64170581d2c510d3de515fad70e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/",
+      "sha256": "48bd1a58e9a426870f5648a9b5d6833eb8db8a0f944dfea42752b61af6039d21",
+      "text_characters": 3853
+    },
+    {
+      "id": "dp-750-lakeflow-connect",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/",
+      "checked_at": "2026-09-28T01:40:00.645111+00:00",
+      "health": {
+        "id": "dp-750-lakeflow-connect",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/",
+        "content_type": "text/html",
+        "page_title": "Lakeflow Connect connector concepts - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/",
+        "duration_signals": [],
+        "signal_fingerprint": "fb933cd483fc26316a7b65db909b8f931423b0759da38dbfdd5f8512f4145953",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/",
+      "sha256": "5ea0a1871cae829b6e1cefc7f2df6d96aed33f557d6ec8c2d6b3f190ad0f44bb",
+      "text_characters": 9541
+    },
+    {
+      "id": "dp-750-configure-jobs",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job",
+      "checked_at": "2026-09-28T01:40:00.669532+00:00",
+      "health": {
+        "id": "dp-750-configure-jobs",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job",
+        "content_type": "text/html",
+        "page_title": "Configure and edit Lakeflow Jobs - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job",
+        "duration_signals": [
+          "48 hours"
+        ],
+        "signal_fingerprint": "606f87fc2d0f57ed25c74aff81f5ff1df0dca17871f1770e6bed86426acdbae3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job",
+      "sha256": "ad0d4999b69555bf1f5eed57ea62e19e3dc1421b89f8ee033a54c92b0e810956",
+      "text_characters": 9716
+    },
+    {
+      "id": "dp-750-tasks",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task",
+      "checked_at": "2026-09-28T01:40:00.728801+00:00",
+      "health": {
+        "id": "dp-750-tasks",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task",
+        "content_type": "text/html",
+        "page_title": "Configure and edit tasks in Lakeflow Jobs - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task",
+        "duration_signals": [],
+        "signal_fingerprint": "7e58848ae777c39db474fea4d44f06a55c0791da9b9adf2422b472b7b5c050bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task",
+      "sha256": "17af3b6dc9721e58f46318ff4b914e79259136e93e4ef103ccb605533847cb1e",
+      "text_characters": 6327
+    },
+    {
+      "id": "dp-750-job-notifications",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications",
+      "checked_at": "2026-09-28T01:40:00.966880+00:00",
+      "health": {
+        "id": "dp-750-job-notifications",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications",
+        "content_type": "text/html",
+        "page_title": "Add notifications on a job - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "12aa891dd8ed60bf86d3259c12dc2a22cfa6f7bd729d476b8703fd484b48907b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications",
+      "sha256": "f677b267bca1db5b7d9749b6ba96762daef4f3ad1a9fb342ddb8a732b50bbdbf",
+      "text_characters": 7506
+    },
+    {
+      "id": "dp-750-classic-jobs-compute-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs",
+      "checked_at": "2026-09-28T01:40:00.990867+00:00",
+      "health": {
+        "id": "dp-750-classic-jobs-compute-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs",
+        "checked_at": "2026-09-28T01:40:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs",
+        "content_type": "text/html",
+        "page_title": "Configure classic compute for Lakeflow Jobs - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs",
+        "duration_signals": [],
+        "signal_fingerprint": "66f375b6a6d16e36dae254b603a44738a8a69f1abc5f8f0316f5b937b9867496",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs",
+      "sha256": "38d3bbaf7b1dbeee1176b81e4e4ad6fd14d7c2b2076976c52964245548650334",
+      "text_characters": 3728
+    },
+    {
+      "id": "dp-750-job-triggers",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers",
+      "checked_at": "2026-09-28T01:40:01.025414+00:00",
+      "health": {
+        "id": "dp-750-job-triggers",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers",
+        "checked_at": "2026-09-28T01:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers",
+        "content_type": "text/html",
+        "page_title": "Automate jobs with schedules and triggers - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers",
+        "duration_signals": [],
+        "signal_fingerprint": "deee5e0dbd41273bc78a9656c418590fc8629e6831bdce62a7e69048c3ff89d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers",
+      "sha256": "a655f8a5a7067f0cacf66474204aac5291ec22f668725f96a9e6abecad237e75",
+      "text_characters": 3524
+    },
+    {
+      "id": "dp-750-lakeflow-pipeline-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/",
+      "checked_at": "2026-09-28T01:40:01.316329+00:00",
+      "health": {
+        "id": "dp-750-lakeflow-pipeline-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/",
+        "checked_at": "2026-09-28T01:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/",
+        "content_type": "text/html",
+        "page_title": "What are Lakeflow pipelines? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/",
+        "duration_signals": [],
+        "signal_fingerprint": "3cab2dedaa21f83e78ef49e89e090e32691fbf0a9cd250015c5aefbdaf6bb00d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/",
+      "sha256": "7af9867855ced48abf04433e9a3f5d941b9cce6824ee368288cc7dc807bf85bb",
+      "text_characters": 9266
+    },
+    {
+      "id": "dp-750-expectation-patterns",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectation-patterns",
+      "checked_at": "2026-09-28T01:40:01.378449+00:00",
+      "health": {
+        "id": "dp-750-expectation-patterns",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectation-patterns",
+        "checked_at": "2026-09-28T01:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectation-patterns",
+        "content_type": "text/html",
+        "page_title": "Expectation recommendations and advanced patterns - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectation-patterns",
+        "duration_signals": [],
+        "signal_fingerprint": "8bb809c22102cfab8200eb86f7eb64ea3efe400377428e7209aab80f9a05aa5f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectation-patterns",
+      "sha256": "b04c1b66bd99735f8c887c495fc6d7f978541e5e06690e977a7211bdcb5d6918",
+      "text_characters": 13519
+    },
+    {
+      "id": "dp-750-pipeline-unit-testing",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+      "checked_at": "2026-09-28T01:40:01.378828+00:00",
+      "health": {
+        "id": "dp-750-pipeline-unit-testing",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+        "checked_at": "2026-09-28T01:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+        "content_type": "text/html",
+        "page_title": "Unit testing for pipelines - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+        "duration_signals": [],
+        "signal_fingerprint": "4b5099954d88ca6cf7b95a8d3afc194ca884fe3d8c5b93fba4631d94dce9e229",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+      "sha256": "1983c8f79cad9e348e8b4fbc029b296507042388bf47dea169be222f7c1b3f2d",
+      "text_characters": 24023
+    },
+    {
+      "id": "dp-750-libraries-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/libraries/",
+      "checked_at": "2026-09-28T01:40:01.670912+00:00",
+      "health": {
+        "id": "dp-750-libraries-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/libraries/",
+        "checked_at": "2026-09-28T01:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/libraries/",
+        "content_type": "text/html",
+        "page_title": "Install libraries - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/libraries/",
+        "duration_signals": [],
+        "signal_fingerprint": "6237c4cb3ee53ba47e42d27346afccb5c78e3f32feaebf65c5a78fca65a75bb8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/libraries/",
+      "sha256": "9b5eed91435c442994d7f138a8da0c95abe2bfee15d5589ba09d97cf3d557f0e",
+      "text_characters": 13139
+    },
+    {
+      "id": "dp-750-lakehouse-federation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/query-federation/",
+      "checked_at": "2026-09-28T01:40:01.792669+00:00",
+      "health": {
+        "id": "dp-750-lakehouse-federation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/query-federation/",
+        "checked_at": "2026-09-28T01:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/query-federation/",
+        "content_type": "text/html",
+        "page_title": "Connect to external databases and catalogs - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/query-federation/",
+        "duration_signals": [],
+        "signal_fingerprint": "09a21f37a75a027e8edbe69dfb43db2fd4fe3664526d5cecf47f31c32ec68cc2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/query-federation/",
+      "sha256": "3600ae6e64001417843286b6977e1686ce8f54e4bd48339441e50246063c7d4d",
+      "text_characters": 5569
+    },
+    {
+      "id": "dp-750-secret-management",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/security/secrets/",
+      "checked_at": "2026-09-28T01:40:01.792950+00:00",
+      "health": {
+        "id": "dp-750-secret-management",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/security/secrets/",
+        "checked_at": "2026-09-28T01:40:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/security/secrets/",
+        "content_type": "text/html",
+        "page_title": "Secret management - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/security/secrets/",
+        "duration_signals": [],
+        "signal_fingerprint": "ce87fd3fd3f093e1166e948dfed1da968b15a3ee4cc8531962c101d3e130f9b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/security/secrets/",
+      "sha256": "65f56bf0b750915ad8ebb6fe29cab2ce3fb2395cb3e9039b337dddbc357487ba",
+      "text_characters": 14004
+    },
+    {
+      "id": "dp-750-optimize",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize",
+      "checked_at": "2026-09-28T01:40:02.070423+00:00",
+      "health": {
+        "id": "dp-750-optimize",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize",
+        "checked_at": "2026-09-28T01:40:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize",
+        "content_type": "text/html",
+        "page_title": "OPTIMIZE - Azure Databricks - Databricks SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize",
+        "duration_signals": [],
+        "signal_fingerprint": "46281190aaa22207fc2c3bd199b99983741b8bd8e2e1d3020a1acb8bd4885143",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize",
+      "sha256": "04c72743b04da7fac58f946203be90b38d1477bc1101a2155e14d0e62771c3d4",
+      "text_characters": 4343
+    },
+    {
+      "id": "dp-750-vacuum",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum",
+      "checked_at": "2026-09-28T01:40:02.252782+00:00",
+      "health": {
+        "id": "dp-750-vacuum",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum",
+        "checked_at": "2026-09-28T01:40:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum",
+        "content_type": "text/html",
+        "page_title": "VACUUM - Azure Databricks - Databricks SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum",
+        "duration_signals": [],
+        "signal_fingerprint": "0f94ecd1a1d211bef66bfb59867ad0cceb11b53a11be80153304b1b2fc8a5862",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum",
+      "sha256": "265a529b4941a32817530c437e1bcb5150ad86f27f4829e10482fc0e8ffe9f28",
+      "text_characters": 4877
+    },
+    {
+      "id": "dp-750-query-profile",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile",
+      "checked_at": "2026-09-28T01:40:02.297228+00:00",
+      "health": {
+        "id": "dp-750-query-profile",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile",
+        "checked_at": "2026-09-28T01:40:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile",
+        "content_type": "text/html",
+        "page_title": "Query profile - Azure Databricks - Databricks SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile",
+        "duration_signals": [],
+        "signal_fingerprint": "b7179bf7b095d171382c133a779bfcc60cc7f27b923df2fc5519843a4b4d0684",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile",
+      "sha256": "56026cdf54b14a051aee678a1debe8d5f7af3297457ff98ec2fcaaa232fd3879",
+      "text_characters": 9292
+    },
+    {
+      "id": "dp-750-structured-streaming",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/",
+      "checked_at": "2026-09-28T01:40:02.365136+00:00",
+      "health": {
+        "id": "dp-750-structured-streaming",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/",
+        "checked_at": "2026-09-28T01:40:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/concepts",
+        "content_type": "text/html",
+        "page_title": "Structured Streaming concepts - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/concepts",
+        "duration_signals": [],
+        "signal_fingerprint": "bd96ad62275ffc3605c78a87b453326dd73a33302d95b7da553a8cee4eabb4fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/concepts",
+      "sha256": "2793137faa7da8a33cbe7bcfc533d39d32446247ae6b5335c37f6b753dbc0cec",
+      "text_characters": 3124
+    },
+    {
+      "id": "dp-750-schema-enforcement",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement",
+      "checked_at": "2026-09-28T01:40:02.565753+00:00",
+      "health": {
+        "id": "dp-750-schema-enforcement",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement",
+        "checked_at": "2026-09-28T01:40:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement",
+        "content_type": "text/html",
+        "page_title": "Schema enforcement - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement",
+        "duration_signals": [],
+        "signal_fingerprint": "decf7c37360383752a583fbb9ecf108c9f0af3cb37921593499e449553b869b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement",
+      "sha256": "58aee820f36c4abf6f161933a55c70da259d331e88a09cdfd4d9c7e08cddf753",
+      "text_characters": 4668
+    },
+    {
+      "id": "dp-750-certification-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "checked_at": "2026-09-28T01:40:02.772197+00:00",
+      "health": {
+        "id": "dp-750-certification-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+        "checked_at": "2026-09-28T01:40:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Databricks Data Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "e849e1faf0f5fac3a2fc3bf7bd3162f009e05bf92a8eb41c863b45b2512e73d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "sha256": "c6a30498a8d79557cff62f7c32b269efd55becbe7c63e36b07ea1c84cbfec109",
+      "text_characters": 4559
+    },
+    {
+      "id": "dp-750-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+      "checked_at": "2026-09-28T01:40:02.959129+00:00",
+      "health": {
+        "id": "dp-750-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+        "checked_at": "2026-09-28T01:40:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+        "content_type": "text/html",
+        "page_title": "Study Guide for Exam DP-750: Implementing Data Engineering Solutions Using Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "dba380c790281ae266aef21583369ec7dfb03c074561e5cd6804381c93a6fef6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+      "sha256": "51f514d2bdeeea8fb6f6edc96c045c2007d0f40294e588039d98ff050ca7b418",
+      "text_characters": 10815
+    },
+    {
+      "id": "dp-750-official-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-750t00",
+      "checked_at": "2026-09-28T01:40:03.079014+00:00",
+      "health": {
+        "id": "dp-750-official-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-750t00",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-750t00",
+        "content_type": "text/html",
+        "page_title": "Course DP-750T00-A: Implement data engineering solutions using Azure Databricks - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/dp-750t00",
+        "duration_signals": [],
+        "signal_fingerprint": "ea57bebfe7d56723bb79870baea08c21a47c5729d13a3e3faa2b0f71247ac07c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-750t00",
+      "sha256": "2892930a7b12a4ce00d32abd75530fe42f1074873f2217dd66ecf9479790e16b",
+      "text_characters": 1964
+    },
+    {
+      "id": "dp-750-databricks-free-training",
+      "url": "https://www.databricks.com/learn/training/home",
+      "checked_at": "2026-09-28T01:40:03.232022+00:00",
+      "health": {
+        "id": "dp-750-databricks-free-training",
+        "url": "https://www.databricks.com/learn/training/home",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/training/home",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Training & Certification",
+        "canonical_url": "https://www.databricks.com/learn/training/home",
+        "duration_signals": [],
+        "signal_fingerprint": "b6c6dd9123e6a482d048c2bafce096c6b38f8b2833f64baa4014d75ac201a73e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/training/home",
+      "sha256": "2862bd87be941da004611cf8ffda9f06dbb94a97f520e0beb915b3d6371d4c7c",
+      "text_characters": 7535
+    },
+    {
+      "id": "dp-750-o-reilly-data-engineering-with-azure-databricks",
+      "url": "https://www.oreilly.com/library/view/data-engineering-with/9781806106370/",
+      "checked_at": "2026-09-28T01:40:03.296917+00:00",
+      "health": {
+        "id": "dp-750-o-reilly-data-engineering-with-azure-databricks",
+        "url": "https://www.oreilly.com/library/view/data-engineering-with/9781806106370/",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/data-engineering-with/9781806106370/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-750-o-reilly-data-governance-with-unity-catalog-on-databricks",
+      "url": "https://www.oreilly.com/library/view/data-governance-with/9781098179625/",
+      "checked_at": "2026-09-28T01:40:03.430713+00:00",
+      "health": {
+        "id": "dp-750-o-reilly-data-governance-with-unity-catalog-on-databricks",
+        "url": "https://www.oreilly.com/library/view/data-governance-with/9781098179625/",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/data-governance-with/9781098179625/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-750-o-reilly-data-engineering-fundamentals-on-databricks",
+      "url": "https://www.oreilly.com/videos/data-engineering-fundamentals/10001ACADFORD/",
+      "checked_at": "2026-09-28T01:40:03.449378+00:00",
+      "health": {
+        "id": "dp-750-o-reilly-data-engineering-fundamentals-on-databricks",
+        "url": "https://www.oreilly.com/videos/data-engineering-fundamentals/10001ACADFORD/",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/data-engineering-fundamentals/10001ACADFORD/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-750-pluralsight-manage-data-with-azure-databricks-and-azure-data-lake",
+      "url": "https://www.pluralsight.com/courses/azure-databricks-data-lake-manage-data",
+      "checked_at": "2026-09-28T01:40:03.509638+00:00",
+      "health": {
+        "id": "dp-750-pluralsight-manage-data-with-azure-databricks-and-azure-data-lake",
+        "url": "https://www.pluralsight.com/courses/azure-databricks-data-lake-manage-data",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/azure-databricks-data-lake-manage-data",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Manage Data with Azure Databricks and Azure Data Lake",
+        "canonical_url": "https://www.pluralsight.com/courses/azure-databricks-data-lake-manage-data",
+        "duration_signals": [],
+        "signal_fingerprint": "7b584f04acde1b645462fa8f6e07e1e797ab4e228060cb92ed1fab543a7f9967",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/azure-databricks-data-lake-manage-data",
+      "sha256": "0dab26a57a8547903eda7536c0613150d8faec52ce1377ebb8ec210136813f11",
+      "text_characters": 6533
+    },
+    {
+      "id": "dp-750-udemy-dp-750-topic-search",
+      "url": "https://www.udemy.com/courses/search/?q=DP-750",
+      "checked_at": "2026-09-28T01:40:03.521448+00:00",
+      "health": {
+        "id": "dp-750-udemy-dp-750-topic-search",
+        "url": "https://www.udemy.com/courses/search/?q=DP-750",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/courses/search/?q=DP-750",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-750-databricks-youtube-channel",
+      "url": "https://www.youtube.com/@Databricks",
+      "checked_at": "2026-09-28T01:40:03.651537+00:00",
+      "health": {
+        "id": "dp-750-databricks-youtube-channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@Databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks",
+        "canonical_url": "https://www.youtube.com/channel/UC3q8O3Bh2Le8Rj1-Q-_UUbA",
+        "duration_signals": [],
+        "signal_fingerprint": "17f4cde1f56732213a2396da2e6df783f4f0ee10a774ee38679645ec7ff9927b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@Databricks",
+      "sha256": "de12d55a54202a880b588b82cf158da7dac48c7b0cfb9aa27169a114c13d4209",
+      "text_characters": 173
+    },
+    {
+      "id": "dp-750-microsoft-reactor-databricks-search",
+      "url": "https://www.youtube.com/@MicrosoftReactor/search?query=Azure%20Databricks",
+      "checked_at": "2026-09-28T01:40:03.874596+00:00",
+      "health": {
+        "id": "dp-750-microsoft-reactor-databricks-search",
+        "url": "https://www.youtube.com/@MicrosoftReactor/search?query=Azure%20Databricks",
+        "checked_at": "2026-09-28T01:40:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor/search?query=Azure%20Databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor/search?query=Azure%20Databricks",
+      "sha256": "47498a72792415c3179756967d37cb96735fce3aeed6ae69a386f1901161e970",
+      "text_characters": 180
+    },
+    {
+      "id": "dp-750-john-savill-databricks-search",
+      "url": "https://www.youtube.com/@NTFAQGuy/search?query=Databricks",
+      "checked_at": "2026-09-28T01:40:04.857821+00:00",
+      "health": {
+        "id": "dp-750-john-savill-databricks-search",
+        "url": "https://www.youtube.com/@NTFAQGuy/search?query=Databricks",
+        "checked_at": "2026-09-28T01:40:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@NTFAQGuy/search?query=Databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "John Savill's Technical Training",
+        "canonical_url": "https://www.youtube.com/channel/UCpIn7ox7j7bH_OFj7tYouOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "3ea7e177926d30b19bd454e7c112994be5e9aae837e8697abb5a5edc1ef7afbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@NTFAQGuy/search?query=Databricks",
+      "sha256": "1cc6a078c36b9777aa16e31f67d0b9d74e59a5198f0e2d2ad49879ba88f00087",
+      "text_characters": 195
+    },
+    {
+      "id": "dp750-abac-evaluation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation",
+      "checked_at": "2026-09-28T01:52:08.521413+00:00",
+      "health": {
+        "id": "dp750-abac-evaluation",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation",
+        "checked_at": "2026-09-28T01:52:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation",
+        "content_type": "text/html",
+        "page_title": "Row filter and column mask policy evaluation and runtime behavior - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation",
+        "duration_signals": [],
+        "signal_fingerprint": "7aa885c8ab279d3f7bd8c79b23a534bec6713594ba854e055a74ca70e88216a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation",
+      "sha256": "3c8a00b31d768f997c1892de2b929f0e54dca45ee878d2b0647c31cfea847f9a",
+      "text_characters": 12650
+    },
+    {
+      "id": "dp750-abac-deny",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+      "checked_at": "2026-09-28T01:52:08.521937+00:00",
+      "health": {
+        "id": "dp750-abac-deny",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+        "checked_at": "2026-09-28T01:52:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+        "content_type": "text/html",
+        "page_title": "ABAC DENY policies (Beta) - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "2fde1a9a6bb147e898d501baa5937cf188d832b94402b5d5413715da305e0d88",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+      "sha256": "8cd49f9df71f85998806c020efbd6e6de3ba376a08067dfdd3fd78280fc0250f",
+      "text_characters": 20806
+    },
+    {
+      "id": "dp750-abac-metastore",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+      "checked_at": "2026-09-28T01:52:08.522291+00:00",
+      "health": {
+        "id": "dp750-abac-metastore",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+        "checked_at": "2026-09-28T01:52:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+        "content_type": "text/html",
+        "page_title": "Metastore-level ABAC policies (Beta) - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "daa9a47189f85e01d537e8854e6e24a7d3a2faf2c734e21f6def0bb412d93d1e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+      "sha256": "b2cb93e2336e77e65d50e65b44a500a1591b538779478bfc2765bd38a5ba3866",
+      "text_characters": 11175
+    },
+    {
+      "id": "dp750-auto-cdf",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed",
+      "checked_at": "2026-09-28T01:52:08.886567+00:00",
+      "health": {
+        "id": "dp750-auto-cdf",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed",
+        "checked_at": "2026-09-28T01:52:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/features/change-data-feed",
+        "content_type": "text/html",
+        "page_title": "Use change data feed on Azure Databricks - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/features/change-data-feed",
+        "duration_signals": [],
+        "signal_fingerprint": "11fb6abe418f30c99cebe82f65f8fede85c1bd92554eb34e825cf93cb34feba8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/tables/features/change-data-feed",
+      "sha256": "6b379f7871c31f5fb09fde4942d577f7a77e8bb94ae12062bf2cf82b01b207e4",
+      "text_characters": 17012
+    },
+    {
+      "id": "dp750-direct-engine",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+      "checked_at": "2026-09-28T01:52:09.415430+00:00",
+      "health": {
+        "id": "dp750-direct-engine",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+        "checked_at": "2026-09-28T01:52:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+        "content_type": "text/html",
+        "page_title": "Migrate to the direct deployment engine - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+        "duration_signals": [],
+        "signal_fingerprint": "745b6ea7a7407142d418d00a9c94b453578cca8d396ff762e4fe0b32d1e70769",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+      "sha256": "1ce334c0123301438a50c0fe7e93871c57bf1ce137f73a6c78d4e1e787db1433",
+      "text_characters": 8466
+    },
+    {
+      "id": "dp750-bundle-plan",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/deployment-state",
+      "checked_at": "2026-09-28T01:52:09.513456+00:00",
+      "health": {
+        "id": "dp750-bundle-plan",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/deployment-state",
+        "checked_at": "2026-09-28T01:52:09+00:00",
+        "status": "missing",
+        "http_status": 404,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/deployment-state",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Not Found"
+      }
+    },
+    {
+      "id": "dp750-copy-into",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+      "checked_at": "2026-09-28T01:52:09.551884+00:00",
+      "health": {
+        "id": "dp750-copy-into",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+        "checked_at": "2026-09-28T01:52:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+        "content_type": "text/html",
+        "page_title": "COPY INTO - Azure Databricks - Databricks SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+        "duration_signals": [],
+        "signal_fingerprint": "ce3773f618c6d00369a53cea1794f33895776a87b99df92430ab927076e1e17c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+      "sha256": "23dd0d626ac5d5a59f1b1da7ca2d010f92f329987e3aad608147c7c3c6fc670b",
+      "text_characters": 8493
+    },
+    {
+      "id": "dp750-autoloader",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/",
+      "checked_at": "2026-09-28T01:52:09.758835+00:00",
+      "health": {
+        "id": "dp750-autoloader",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/",
+        "checked_at": "2026-09-28T01:52:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/",
+        "content_type": "text/html",
+        "page_title": "What is Auto Loader? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/",
+        "duration_signals": [],
+        "signal_fingerprint": "6cd5239f4c6ea8396ce479ec9cbedf1cb07b453c953602793e147cd6cc5001ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/",
+      "sha256": "9e2c7d2ca9c21a614946f47f688788eb73730cb8e2b53a686438de4618330ebf",
+      "text_characters": 7806
+    },
+    {
+      "id": "dp750-auto-schema",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+      "checked_at": "2026-09-28T01:52:10.191549+00:00",
+      "health": {
+        "id": "dp750-auto-schema",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+        "checked_at": "2026-09-28T01:52:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+        "content_type": "text/html",
+        "page_title": "Configure schema inference and evolution in Auto Loader - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+        "duration_signals": [],
+        "signal_fingerprint": "6741a040fc5a53cc4629220f967071a83c6d52277272b11f72c11f95acf4569e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+      "sha256": "003892b66b8b383c7789e4d4285f468e0c161187354dbfe00f94f78e53f3d6c8",
+      "text_characters": 14513
+    },
+    {
+      "id": "dp750-auto-cdc",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+      "checked_at": "2026-09-28T01:52:10.509416+00:00",
+      "health": {
+        "id": "dp750-auto-cdc",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+        "checked_at": "2026-09-28T01:52:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+        "content_type": "text/html",
+        "page_title": "The AUTO CDC APIs: Simplify change data capture with pipelines - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+        "duration_signals": [],
+        "signal_fingerprint": "03f7bab7e9bc4afd7d27b0c41014256fc59eea42235ca88b4f052afd1e083656",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+      "sha256": "69e3966bf51d35230be819f56f8b8ca06a8e2755b4bcb8852e4aeb695ed49f9b",
+      "text_characters": 19514
+    },
+    {
+      "id": "dp750-expectations",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+      "checked_at": "2026-09-28T01:52:10.970659+00:00",
+      "health": {
+        "id": "dp750-expectations",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+        "checked_at": "2026-09-28T01:52:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+        "content_type": "text/html",
+        "page_title": "Manage data quality with pipeline expectations - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+        "duration_signals": [],
+        "signal_fingerprint": "1aee8d96687889f04b900f8e80b7eb9270d8f1fb641429ece800aa1ea99a5023",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+      "sha256": "f29d82b34bbfecbd7964d392199061c72023c19bcb13b456bcac71a8655d19cc",
+      "text_characters": 11773
+    },
+    {
+      "id": "dp750-volumes",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+      "checked_at": "2026-09-28T01:52:11.859198+00:00",
+      "health": {
+        "id": "dp750-volumes",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+        "checked_at": "2026-09-28T01:52:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+        "content_type": "text/html",
+        "page_title": "What are Unity Catalog volumes? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+        "duration_signals": [],
+        "signal_fingerprint": "95418df8fe2022f0e37ba9f20549ba6aef1a537146b1e00383e82a17bf594603",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+      "sha256": "86f4fe7d53908ad5704cd83f37420c68417b62bda04140b33991de2c8bd5c49f",
+      "text_characters": 10292
+    },
+    {
+      "id": "dp750-row-number",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+      "checked_at": "2026-09-28T01:52:12.176835+00:00",
+      "health": {
+        "id": "dp750-row-number",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+        "checked_at": "2026-09-28T01:52:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+        "content_type": "text/html",
+        "page_title": "row_number ranking window function - Azure Databricks - Databricks SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+        "duration_signals": [],
+        "signal_fingerprint": "3cb0ced370db471e46cb2cb2f8574de9a6624874532b2f5f9bd3b06716169215",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+      "sha256": "753485082915cce61048af5d518f920216b2e33f6aeaaa2973913c468d171996",
+      "text_characters": 1449
+    },
+    {
+      "id": "dp750-merge",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+      "checked_at": "2026-09-28T01:52:12.677339+00:00",
+      "health": {
+        "id": "dp750-merge",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+        "checked_at": "2026-09-28T01:52:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+        "content_type": "text/html",
+        "page_title": "Upsert into a Delta Lake table using merge - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+        "duration_signals": [],
+        "signal_fingerprint": "6f44584f3d869c6c14451be2cf51e7c22c3252c84a00a259309136bdac0b661e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+      "sha256": "69dd1ec34e8a0da0fc5d0a44c6f22fc496a0dfbe77012d8a4b8f3c6cd17f3851",
+      "text_characters": 17431
+    },
+    {
+      "id": "dp750-managed-identity",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+      "checked_at": "2026-09-28T01:52:12.725938+00:00",
+      "health": {
+        "id": "dp750-managed-identity",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+        "checked_at": "2026-09-28T01:52:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+        "content_type": "text/html",
+        "page_title": "Use Azure managed identities in Unity Catalog to access storage - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+        "duration_signals": [],
+        "signal_fingerprint": "668baa504a5332fddfadf5143a7e714e74e51fcfec96231916a78bc98c2764ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+      "sha256": "45b814f0c0621761541dc1380b94755758afb55109e61bd614b09d35c84cf641",
+      "text_characters": 16154
+    },
+    {
+      "id": "dp750-continuous-updates",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/updates",
+      "checked_at": "2026-09-28T01:52:13.068691+00:00",
+      "health": {
+        "id": "dp750-continuous-updates",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/updates",
+        "checked_at": "2026-09-28T01:52:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/updates",
+        "content_type": "text/html",
+        "page_title": "Run a pipeline update - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/updates",
+        "duration_signals": [],
+        "signal_fingerprint": "6cace619d4db705a945b46b2f33def12f8c16df8df8f994b7b56e93dc3f8f7e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/updates",
+      "sha256": "388b7ad59def0ca7f3bab97a5fc2dcf5b65677152369059f7f6e273b7ffd2223",
+      "text_characters": 13238
+    },
+    {
+      "id": "dp750-coming",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming",
+      "checked_at": "2026-09-28T01:52:13.204876+00:00",
+      "health": {
+        "id": "dp750-coming",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming",
+        "checked_at": "2026-09-28T01:52:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming",
+        "content_type": "text/html",
+        "page_title": "What's coming? - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming",
+        "duration_signals": [],
+        "signal_fingerprint": "695092bdb058586a3450b1b0d5360ce95f57f335c2455b9612c1e6194ce1c616",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming",
+      "sha256": "0cffe05915240dc4c8fea290d61907e7b190a0c372fa9f5e40c1e8a6ef5dac6b",
+      "text_characters": 34528
+    },
+    {
+      "id": "dp750-september",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/september",
+      "checked_at": "2026-09-28T01:52:13.418322+00:00",
+      "health": {
+        "id": "dp750-september",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/september",
+        "checked_at": "2026-09-28T01:52:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/september",
+        "content_type": "text/html",
+        "page_title": "September 2026 - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/september",
+        "duration_signals": [],
+        "signal_fingerprint": "76922f409659351dc50592fa4bd604fea43b50472866a2db03db8903f3f0b44c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/september",
+      "sha256": "e74573765532ee4cdc403261eb1cbcc3cb6952209caaf4be52a056678e12f84d",
+      "text_characters": 20001
+    },
+    {
+      "id": "dp750-abac-blog",
+      "url": "https://www.databricks.com/blog/abac-row-filtering-and-column-masking-policies-governed-tags-and-data-classification-are-now",
+      "checked_at": "2026-09-28T01:52:13.668399+00:00",
+      "health": {
+        "id": "dp750-abac-blog",
+        "url": "https://www.databricks.com/blog/abac-row-filtering-and-column-masking-policies-governed-tags-and-data-classification-are-now",
+        "checked_at": "2026-09-28T01:52:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/blog/abac-row-filtering-and-column-masking-policies-governed-tags-and-data-classification-are-now",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ABAC row filtering and column masking policies, governed tags, and data classification are now generally available in Unity Catalog",
+        "canonical_url": "https://www.databricks.com/blog/abac-row-filtering-and-column-masking-policies-governed-tags-and-data-classification-are-now",
+        "duration_signals": [],
+        "signal_fingerprint": "93e9e7e36c46d605c8dbb9d8d40e487e0b30ff62ca2a0593c5d9baf83037cefe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/blog/abac-row-filtering-and-column-masking-policies-governed-tags-and-data-classification-are-now",
+      "sha256": "7b1753acea87f6ac2f76a49021a063da87f5e8507f8414907af2a91d1b436df5",
+      "text_characters": 19988
+    },
+    {
+      "id": "dp750-lakeflow-blog",
+      "url": "https://www.databricks.com/blog/modernize-your-data-engineering-platform-lakeflow-azure-databricks",
+      "checked_at": "2026-09-28T01:52:13.908201+00:00",
+      "health": {
+        "id": "dp750-lakeflow-blog",
+        "url": "https://www.databricks.com/blog/modernize-your-data-engineering-platform-lakeflow-azure-databricks",
+        "checked_at": "2026-09-28T01:52:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/blog/modernize-your-data-engineering-platform-lakeflow-azure-databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Modernize your Data Engineering Platform with Lakeflow on Azure Databricks",
+        "canonical_url": "https://www.databricks.com/blog/modernize-your-data-engineering-platform-lakeflow-azure-databricks",
+        "duration_signals": [],
+        "signal_fingerprint": "5a657492671e14919454fa833aa608bc62ab774fe41e2c6d04b16617dce94e96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/blog/modernize-your-data-engineering-platform-lakeflow-azure-databricks",
+      "sha256": "a9e9c921577d5da85aa36709b86c456661386d3a3910df18626bd5ccf9987567",
+      "text_characters": 17926
+    },
+    {
+      "id": "dp750-maintenance-window",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+      "checked_at": "2026-09-28T01:54:31.279806+00:00",
+      "health": {
+        "id": "dp750-maintenance-window",
+        "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+        "checked_at": "2026-09-28T01:54:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+        "content_type": "text/html",
+        "page_title": "Manage updates for continuous pipelines - Azure Databricks",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+        "duration_signals": [],
+        "signal_fingerprint": "e99cd14104c9dc02c8111dde89bcf55d70b456478ba37d99b07c868baac17f70",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+      "sha256": "e30df9fd6fe56a7cbfd472d53ba3ee9a7e3aded5235815ad1ef848ae11d3db20",
+      "text_characters": 6550
+    }
+  ],
+  "added_source_ids": [
+    "dp750-abac-evaluation",
+    "dp750-abac-deny",
+    "dp750-abac-metastore",
+    "dp750-auto-cdf",
+    "dp750-direct-engine",
+    "dp750-copy-into",
+    "dp750-autoloader",
+    "dp750-auto-schema",
+    "dp750-auto-cdc",
+    "dp750-expectations",
+    "dp750-volumes",
+    "dp750-row-number",
+    "dp750-merge",
+    "dp750-managed-identity",
+    "dp750-continuous-updates",
+    "dp750-maintenance-window",
+    "dp750-coming",
+    "dp750-september",
+    "dp750-abac-blog",
+    "dp750-lakeflow-blog"
+  ],
+  "findings": [
+    {
+      "id": "dp750-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Exam language availability expanded",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current credential page lists ten languages rather than English only.",
+      "recommendation": "Replace the outdated statement and preserve language-specific revision recheck.",
+      "disposition": "applied",
+      "source_id": "dp-750-certification-page",
+      "resolution": "Replace the outdated statement and preserve language-specific revision recheck."
+    },
+    {
+      "id": "dp750-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Storage identity is not the query principal",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The Azure access connector authenticates storage on behalf of governed users.",
+      "recommendation": "Separate Azure storage grants from Unity Catalog principal grants and correct readiness wording.",
+      "disposition": "applied",
+      "source_id": "dp750-managed-identity",
+      "resolution": "Separate Azure storage grants from Unity Catalog principal grants and correct readiness wording."
+    },
+    {
+      "id": "dp750-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "ABAC identity affects persisted and shared data",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Views evaluate base-table policies for the session user; pipeline output can persist run-as filtering; provider ABAC does not travel to recipients.",
+      "recommendation": "Add original 120/80 example, sharing and exemption boundaries, and identity lab.",
+      "disposition": "applied",
+      "source_id": "dp-750-current-abac-requirements",
+      "resolution": "Add original 120/80 example, sharing and exemption boundaries, and identity lab."
+    },
+    {
+      "id": "dp750-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "DENY Beta is not a general data-denial privilege",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current DENY scope is MANAGE ACCESS CONTROL and metastore admins are exempt.",
+      "recommendation": "Add specific privilege boundary, separate Beta status and answered check.",
+      "disposition": "applied",
+      "source_id": "dp750-abac-deny",
+      "resolution": "Add specific privilege boundary, separate Beta status and answered check."
+    },
+    {
+      "id": "dp750-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Direct-view preview documentation is inconsistent",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Metastore page lists views in Beta while ABAC requirements exclude applying policies directly to views.",
+      "recommendation": "Retain supported base-table/view behavior, exclude direct-view implementation and add October 1 recheck.",
+      "disposition": "applied",
+      "source_id": "dp750-abac-metastore",
+      "resolution": "Retain supported base-table/view behavior, exclude direct-view implementation and add October 1 recheck."
+    },
+    {
+      "id": "dp750-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "SQL volume paths omitted required namespace levels",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Paths need catalog/schema/volume before a file-relative path.",
+      "recommendation": "Use disposable full paths and state schemas, target table and privilege prerequisites.",
+      "disposition": "applied",
+      "source_id": "dp750-volumes",
+      "resolution": "Use disposable full paths and state schemas, target table and privilege prerequisites."
+    },
+    {
+      "id": "dp750-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current-state selection needs unique ordering",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A timestamp alone cannot choose a deterministic business state when changes tie.",
+      "recommendation": "Replace max-by/struct expansion with ranked explicit columns and an ordering contract.",
+      "disposition": "applied",
+      "source_id": "dp750-row-number",
+      "resolution": "Replace max-by/struct expansion with ranked explicit columns and an ordering contract."
+    },
+    {
+      "id": "dp750-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Loaded files and business-key uniqueness are separate",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Previously loaded files are skipped even when modified; force disables idempotency.",
+      "recommendation": "Add two-versus-four row replay example and file/key reconciliation lab.",
+      "disposition": "applied",
+      "source_id": "dp750-copy-into",
+      "resolution": "Add two-versus-four row replay example and file/key reconciliation lab."
+    },
+    {
+      "id": "dp750-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Schema evolution and parser failure are different",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Defaults differ with an explicit schema; inferred addNewColumns updates metadata then fails for restart; rescued type mismatches need not trigger FAILFAST.",
+      "recommendation": "Add default/restart/rescue boundaries and lab/check answers.",
+      "disposition": "applied",
+      "source_id": "dp750-auto-schema",
+      "resolution": "Add default/restart/rescue boundaries and lab/check answers."
+    },
+    {
+      "id": "dp750-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Source sequencing governs late changes",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AUTO CDC supports structured ordering and source-specific APIs; FROM SNAPSHOT is Python-only.",
+      "recommendation": "Add tied/late arrival example, tombstone retention and API/runtime scope.",
+      "disposition": "applied",
+      "source_id": "dp750-auto-cdc",
+      "resolution": "Add tied/late arrival example, tombstone retention and API/runtime scope."
+    },
+    {
+      "id": "dp750-deep-11",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Automatic and legacy CDF have different prerequisites",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Auto CDF uses read-time metadata with Runtime 19+ on eligible Unity Catalog tables; regional rollout and limitations apply.",
+      "recommendation": "Distinguish feed modes, migration and retention; schedule regional recheck.",
+      "disposition": "applied",
+      "source_id": "dp750-auto-cdf",
+      "resolution": "Distinguish feed modes, migration and retention; schedule regional recheck."
+    },
+    {
+      "id": "dp750-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A flow failure is not a global rollback",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Warn/drop/fail have different writes and metrics; independent triggered flows can succeed.",
+      "recommendation": "Add 100/94/6 example, quarantine/reconciliation and publication-gate reasoning.",
+      "disposition": "applied",
+      "source_id": "dp750-expectations",
+      "resolution": "Add 100/94/6 example, quarantine/reconciliation and publication-gate reasoning."
+    },
+    {
+      "id": "dp750-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Pipeline unit tests do not isolate arbitrary IO",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Named-table redirection does not cover paths, connectors, direct APIs or governance mutations; mocks omit row/mask controls.",
+      "recommendation": "Add Beta/permissions/editor/concurrency/isolation boundaries and dedicated lab checklist.",
+      "disposition": "applied",
+      "source_id": "dp-750-pipeline-unit-testing",
+      "resolution": "Add Beta/permissions/editor/concurrency/isolation boundaries and dedicated lab checklist."
+    },
+    {
+      "id": "dp750-deep-14",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Omitted bundle settings can reset deployed values",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Direct deployment compares configuration snapshots and restores defaults for removed fields; migration depends on CLI version.",
+      "recommendation": "Add test-target plan review and an explicit-settings rule; schedule rollout verification.",
+      "disposition": "applied",
+      "source_id": "dp750-direct-engine",
+      "resolution": "Add test-target plan review and an explicit-settings rule; schedule rollout verification."
+    },
+    {
+      "id": "dp750-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Maintenance windows have a lifetime exception",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-750"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Continuous maintenance normally starts in the window; serverless lifetime can force an outside restart and email is unsupported for maintenance notices.",
+      "recommendation": "Add scope, notification and recovery limitations.",
+      "disposition": "applied",
+      "source_id": "dp750-maintenance-window",
+      "resolution": "Add scope, notification and recovery limitations."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "dp750-abac-blog",
+      "decision": "accepted-bounded",
+      "author": "Adriana Ispas, Kristen Wilder, Jacqueline Li, Corey Sunwold, Menglei Sun and Viswesh Periyasamy",
+      "published_on": "2026-05-13",
+      "notes": "Public article read; use a taxonomy/owner/negative-test matrix. Current Azure documentation controls support and propagation. No recalled exam material or benchmark execution."
+    },
+    {
+      "source_id": "dp750-lakeflow-blog",
+      "decision": "accepted-bounded",
+      "author": "Joanna Zouhour and Katie Cummiskey",
+      "published_on": "2026-02-10",
+      "notes": "Public article read; ingestion/transformation/orchestration mapping exercise accepted. Marketing outcomes, screenshots and linked customer implementations not independently validated."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Nine synthetic ordering/replay/count/identity assertions",
+      "One illustrative Python block parsed with ast; no imports or Spark execution"
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "March 11 baseline remains accepted; October 19 blueprint changes are separately mapped preparation.",
+    "No Azure/Databricks tenant, Spark/SQL engine, CDF, sharing, governance, pipeline, bundle or paid-course execution.",
+    "Three O'Reilly pages and Udemy search blocked automated access; older listing metadata is explicitly historical. Practice Assessment requires sign-in; only the public shell and official credential pointer were observed.",
+    "Direct-view ABAC targets remain excluded from implementation instructions because the metastore Beta page and requirements disagree; a recheck is scheduled. The base-table/view session-user example is supported.",
+    "Pipeline policy evaluation has route-specific limits; trusted ETL exemptions and destination security need integration tests. Beta features and staged CDF/CLI rollouts are not universal support claims.",
+    "Public article text was reviewed; images, videos, linked downloads and marketing performance figures were not independently validated.",
+    "Same-context AI research/repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "ordering_replay_quality_and_identity_assertions": 9,
+    "python_blocks_parsed": 1
+  },
+  "catalog_observations": [
+    [
+      "dp-750-pluralsight-manage-data-with-azure-databricks-and-azure-data-lake",
+      "Public course duration and legacy demonstrations are visible",
+      "Listing shows 1h39 updated July 23, 2025 and includes credential-passthrough/mount topics.",
+      "Use exact published duration and qualify legacy content against current Unity Catalog guidance.",
+      "catalog_comparison"
+    ]
+  ],
+  "catalog_observation_scope": "Public provider metadata reviewed separately from Microsoft/Databricks first-party product freshness. Paid lessons not executed."
+}

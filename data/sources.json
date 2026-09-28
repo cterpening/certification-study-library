@@ -3,6 +3,286 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "dp750-abac-evaluation",
+      "title": "ABAC policy evaluation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/policy-evaluation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Reviewed session identity, dependencies and fail-closed policy behavior. Pipeline exemptions are not generalized to all workloads; compare route-specific materialization and sharing requirements. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-abac-deny",
+      "title": "ABAC DENY policies (Beta)",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-abac-metastore",
+      "title": "Metastore ABAC policies (Beta)",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Metastore policy Beta and Runtime 19+ SQL requirements reviewed. Its direct-view Beta target text differs from the ABAC requirements page; guide teaches the supported base-table/view route and schedules a clarification check. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-auto-cdf",
+      "title": "Automatic and legacy change data feed",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-direct-engine",
+      "title": "Migrate to the direct deployment engine",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-copy-into",
+      "title": "COPY INTO",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-autoloader",
+      "title": "Auto Loader",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-auto-schema",
+      "title": "Auto Loader schema evolution",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-auto-cdc",
+      "title": "AUTO CDC APIs",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-expectations",
+      "title": "Pipeline expectations",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-volumes",
+      "title": "Unity Catalog volume paths and privileges",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-row-number",
+      "title": "row_number ranking function",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-merge",
+      "title": "Merge into Delta Lake",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-managed-identity",
+      "title": "Managed identities for Unity Catalog storage",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-continuous-updates",
+      "title": "Continuous pipeline maintenance",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/updates",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-maintenance-window",
+      "title": "Continuous pipeline maintenance windows",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-coming",
+      "title": "Upcoming Azure Databricks changes",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/whats-coming",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Reviewed bundle deployment-engine announcement and planned automatic-CDF regional rollout. Dates are plans/rollout signals, not evidence that a particular workspace or CLI already changed. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-september",
+      "title": "September 2026 release notes",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/september",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: Targeted relevant September ABAC, automatic CDF and continuous maintenance announcements checked against detailed feature docs; no claim of exhaustively validating unrelated release entries. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-abac-blog",
+      "title": "ABAC row filtering, masks, governed tags and classification GA",
+      "url": "https://www.databricks.com/blog/abac-row-filtering-and-column-masking-policies-governed-tags-and-data-classification-are-now",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: May 13, 2026, Adriana Ispas, Kristen Wilder, Jacqueline Li, Corey Sunwold, Menglei Sun and Viswesh Periyasamy. Public article text read. Accepted for taxonomy/classification/enforcement exercise; immediate-protection wording qualified by current Azure tag-propagation requirements. No accuracy, speed or cost benchmark reproduced. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp750-lakeflow-blog",
+      "title": "Modernize data engineering with Lakeflow on Azure Databricks",
+      "url": "https://www.databricks.com/blog/modernize-your-data-engineering-platform-lakeflow-azure-databricks",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 27 DP-750 deep review: February 10, 2026, Joanna Zouhour and Katie Cummiskey. Public text read. Accepted as an architecture exercise with explicit identity, progress and alert contracts; customer speed/cost claims not adopted as expected results. See docs/research/2026-09-27-dp-750-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "pl300-calculate",
       "title": "CALCULATE filter semantics",
       "url": "https://learn.microsoft.com/en-us/dax/calculate-function-dax",

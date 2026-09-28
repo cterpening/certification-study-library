@@ -4,6 +4,343 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-dp750-deep-review",
+      "title": "DP-750 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DP-750"
+      ],
+      "results": [
+        {
+          "exam_code": "DP-750",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+          "baseline_sha256": "05153d496f6c9c26061631fddac386506868afbfc01178609ed72719e0d58942",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "77 October objectives mapped in twelve groups with unchanged domain weights; retain March baseline and separate October terminology/removal. Credential now lists ten languages and 120 minutes; course is four days."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Complete guide read and targeted current Unity Catalog, ABAC, ingestion, SQL, schema, CDC, expectation, testing, deployment and recovery boundaries reviewed. Nine synthetic assertions and one Python parse; no engine execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Relevant September releases checked against detailed support requirements. CDF GA is distinguished from planned end-of-October regional rollout; CLI migration is version-specific. Research events cover rollout and direct-view documentation disagreement."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide URLs registered and fetched. Public credential/course, practice pointer, free training/sample references, Pluralsight 1h39 July 2025 listing and two blogs inspected. Three paid books and Udemy search blocked; no assessment or paid lessons completed."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Fix English-only metadata and incomplete volume paths; distinguish Databricks principals from Azure connector identity, session-user filters from persisted pipeline output, file progress from business keys, and flow failures from a whole-graph transaction. Do not promote direct-view Beta support while docs disagree."
+            }
+          },
+          "findings": [
+            {
+              "id": "dp750-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Exam language availability expanded",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current credential page lists ten languages rather than English only.",
+              "recommendation": "Replace the outdated statement and preserve language-specific revision recheck.",
+              "disposition": "applied",
+              "source_id": "dp-750-certification-page",
+              "resolution": "Replace the outdated statement and preserve language-specific revision recheck."
+            },
+            {
+              "id": "dp750-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Storage identity is not the query principal",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/connect/unity-catalog/cloud-storage/azure-managed-identities",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The Azure access connector authenticates storage on behalf of governed users.",
+              "recommendation": "Separate Azure storage grants from Unity Catalog principal grants and correct readiness wording.",
+              "disposition": "applied",
+              "source_id": "dp750-managed-identity",
+              "resolution": "Separate Azure storage grants from Unity Catalog principal grants and correct readiness wording."
+            },
+            {
+              "id": "dp750-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "ABAC identity affects persisted and shared data",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Views evaluate base-table policies for the session user; pipeline output can persist run-as filtering; provider ABAC does not travel to recipients.",
+              "recommendation": "Add original 120/80 example, sharing and exemption boundaries, and identity lab.",
+              "disposition": "applied",
+              "source_id": "dp-750-current-abac-requirements",
+              "resolution": "Add original 120/80 example, sharing and exemption boundaries, and identity lab."
+            },
+            {
+              "id": "dp750-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "DENY Beta is not a general data-denial privilege",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/deny-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current DENY scope is MANAGE ACCESS CONTROL and metastore admins are exempt.",
+              "recommendation": "Add specific privilege boundary, separate Beta status and answered check.",
+              "disposition": "applied",
+              "source_id": "dp750-abac-deny",
+              "resolution": "Add specific privilege boundary, separate Beta status and answered check."
+            },
+            {
+              "id": "dp750-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Direct-view preview documentation is inconsistent",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/metastore-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Metastore page lists views in Beta while ABAC requirements exclude applying policies directly to views.",
+              "recommendation": "Retain supported base-table/view behavior, exclude direct-view implementation and add October 1 recheck.",
+              "disposition": "applied",
+              "source_id": "dp750-abac-metastore",
+              "resolution": "Retain supported base-table/view behavior, exclude direct-view implementation and add October 1 recheck."
+            },
+            {
+              "id": "dp750-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SQL volume paths omitted required namespace levels",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/volumes/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Paths need catalog/schema/volume before a file-relative path.",
+              "recommendation": "Use disposable full paths and state schemas, target table and privilege prerequisites.",
+              "disposition": "applied",
+              "source_id": "dp750-volumes",
+              "resolution": "Use disposable full paths and state schemas, target table and privilege prerequisites."
+            },
+            {
+              "id": "dp750-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Current-state selection needs unique ordering",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/functions/row_number",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A timestamp alone cannot choose a deterministic business state when changes tie.",
+              "recommendation": "Replace max-by/struct expansion with ranked explicit columns and an ordering contract.",
+              "disposition": "applied",
+              "source_id": "dp750-row-number",
+              "resolution": "Replace max-by/struct expansion with ranked explicit columns and an ordering contract."
+            },
+            {
+              "id": "dp750-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Loaded files and business-key uniqueness are separate",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-copy-into",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Previously loaded files are skipped even when modified; force disables idempotency.",
+              "recommendation": "Add two-versus-four row replay example and file/key reconciliation lab.",
+              "disposition": "applied",
+              "source_id": "dp750-copy-into",
+              "resolution": "Add two-versus-four row replay example and file/key reconciliation lab."
+            },
+            {
+              "id": "dp750-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Schema evolution and parser failure are different",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/auto-loader/schema",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Defaults differ with an explicit schema; inferred addNewColumns updates metadata then fails for restart; rescued type mismatches need not trigger FAILFAST.",
+              "recommendation": "Add default/restart/rescue boundaries and lab/check answers.",
+              "disposition": "applied",
+              "source_id": "dp750-auto-schema",
+              "resolution": "Add default/restart/rescue boundaries and lab/check answers."
+            },
+            {
+              "id": "dp750-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Source sequencing governs late changes",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/cdc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AUTO CDC supports structured ordering and source-specific APIs; FROM SNAPSHOT is Python-only.",
+              "recommendation": "Add tied/late arrival example, tombstone retention and API/runtime scope.",
+              "disposition": "applied",
+              "source_id": "dp750-auto-cdc",
+              "resolution": "Add tied/late arrival example, tombstone retention and API/runtime scope."
+            },
+            {
+              "id": "dp750-deep-11",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Automatic and legacy CDF have different prerequisites",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/delta-change-data-feed",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Auto CDF uses read-time metadata with Runtime 19+ on eligible Unity Catalog tables; regional rollout and limitations apply.",
+              "recommendation": "Distinguish feed modes, migration and retention; schedule regional recheck.",
+              "disposition": "applied",
+              "source_id": "dp750-auto-cdf",
+              "resolution": "Distinguish feed modes, migration and retention; schedule regional recheck."
+            },
+            {
+              "id": "dp750-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A flow failure is not a global rollback",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Warn/drop/fail have different writes and metrics; independent triggered flows can succeed.",
+              "recommendation": "Add 100/94/6 example, quarantine/reconciliation and publication-gate reasoning.",
+              "disposition": "applied",
+              "source_id": "dp750-expectations",
+              "resolution": "Add 100/94/6 example, quarantine/reconciliation and publication-gate reasoning."
+            },
+            {
+              "id": "dp750-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Pipeline unit tests do not isolate arbitrary IO",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Named-table redirection does not cover paths, connectors, direct APIs or governance mutations; mocks omit row/mask controls.",
+              "recommendation": "Add Beta/permissions/editor/concurrency/isolation boundaries and dedicated lab checklist.",
+              "disposition": "applied",
+              "source_id": "dp-750-pipeline-unit-testing",
+              "resolution": "Add Beta/permissions/editor/concurrency/isolation boundaries and dedicated lab checklist."
+            },
+            {
+              "id": "dp750-deep-14",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Omitted bundle settings can reset deployed values",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/direct",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Direct deployment compares configuration snapshots and restores defaults for removed fields; migration depends on CLI version.",
+              "recommendation": "Add test-target plan review and an explicit-settings rule; schedule rollout verification.",
+              "disposition": "applied",
+              "source_id": "dp750-direct-engine",
+              "resolution": "Add test-target plan review and an explicit-settings rule; schedule rollout verification."
+            },
+            {
+              "id": "dp750-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Maintenance windows have a lifetime exception",
+              "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/maintenance-windows",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-750"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Continuous maintenance normally starts in the window; serverless lifetime can force an outside restart and email is unsupported for maintenance notices.",
+              "recommendation": "Add scope, notification and recovery limitations.",
+              "disposition": "applied",
+              "source_id": "dp750-maintenance-window",
+              "resolution": "Add scope, notification and recovery limitations."
+            }
+          ],
+          "notes": "Whole guide read and all 77 October objectives in twelve groups mapped; March baseline retained. Correct ten-language availability, Unity Catalog principal boundaries and SQL volume/order examples. Add four worked examples, two labs, 44 answer checkpoints and two qualified Databricks blog exercises. Clarify ABAC identity/preview scope, file and CDC replay, schema/expectation behavior, pipeline test isolation, bundle engine migration and maintenance windows. Nine synthetic assertions and one Python syntax parse passed; no Azure or Databricks execution. Three research checkpoints added; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-dp-750-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 15,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-pl300-deep-review",
       "title": "PL-300 complete guide and learning-content review",
       "rubric_version": 1,
