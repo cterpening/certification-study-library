@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
-from datetime import date
+from datetime import date, timedelta
 import hashlib
 import json
 from pathlib import Path
@@ -68,10 +68,11 @@ def build_queue(root: Path, exams: list[dict], program: dict, events: list[dict]
             state = "review-due"
         else:
             state = "reviewed"
-        upcoming = [dict(e, days=(date.fromisoformat(e["review_on"]) - today).days)
-                    for e in events if exam["code"] in e["exam_codes"]
-                    and (date.fromisoformat(e["review_on"]) - today).days <= 30]
-        nearest = min((e["days"] for e in upcoming), default=None)
+        scheduled = [dict(e, days=(date.fromisoformat(e["review_on"]) - today).days)
+                     for e in events if exam["code"] in e["exam_codes"]]
+        upcoming = [e for e in scheduled if e["days"] <= 30]
+        later_events = [e for e in scheduled if not record or e["review_on"] > record["reviewed_on"]]
+        nearest = min((e["days"] for e in later_events if e["days"] <= 30), default=None)
         reasons = [state]
         priority = {"pending": 300, "changed-since-review": 250, "review-due": 150,
                     "reviewed-with-blockers": 100, "reviewed": 0, "archived": 0}[state]
@@ -81,33 +82,49 @@ def build_queue(root: Path, exams: list[dict], program: dict, events: list[dict]
         if exam["status"] in {"beta", "changing"}:
             priority += 75
             reasons.append(f"exam-status:{exam['status']}")
-        needs_review = state != "archived" and (state != "reviewed" or any(e["days"] <= 0 for e in upcoming))
+        # A receipt covers the review dates on or before its own date. Keep those
+        # events and unresolved blockers visible without scheduling the same work
+        # on every monitor run. A later event, changed guide, or interval expiry
+        # makes the guide eligible again; this does not resolve a blocker.
+        due_event = any(e["days"] <= 0 for e in later_events)
+        needs_review = state != "archived" and (state != "reviewed" or due_event)
+        ready_for_review = state != "archived" and (
+            state in {"pending", "changed-since-review", "review-due"}
+            or due_event or (age is not None and age >= program["review_interval_days"]))
+        next_review_on = None
+        if ready_for_review:
+            next_review_on = today.isoformat()
+        elif state != "archived" and record:
+            interval_date = date.fromisoformat(record["reviewed_on"]) + timedelta(days=program["review_interval_days"])
+            next_review_on = min([interval_date, *[date.fromisoformat(e["review_on"]) for e in later_events]]).isoformat()
         rows.append({"exam_code": exam["code"], "title": exam["title"], "vendor_id": exam["vendor_id"],
                      "guide_path": exam["guide_path"], "official_blueprint": exam["study_guide_url"],
                      "current_guide_sha256": current_hash, "state": state, "needs_review": needs_review,
+                     "ready_for_review": ready_for_review, "next_review_on": next_review_on,
                      "reviewed_on": record["reviewed_on"] if record else None,
                      "report_path": record["report_path"] if record else None,
                      "lab_execution": record["lab_execution"] if record else "not-recorded",
                      "remaining_limits": record["remaining_limits"] if record else [],
                      "priority": priority, "reasons": reasons, "events": upcoming})
     rows.sort(key=lambda r: (-r["priority"], r["exam_code"]))
-    selected = [r for r in rows if r["needs_review"]][:size]
+    selected = [r for r in rows if r["ready_for_review"]][:size]
     return {"schema_version": 1, "generated_on": today.isoformat(), "program_started_on": program["started_on"],
             "scope": "Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.",
             "summary": {"guides": len(rows), "states": dict(Counter(r["state"] for r in rows)),
-                        "needs_review": sum(r["needs_review"] for r in rows)},
+                        "needs_review": sum(r["needs_review"] for r in rows),
+                        "ready_for_review": sum(r["ready_for_review"] for r in rows)},
             "next_batch": [r["exam_code"] for r in selected], "exams": rows}
 
 
 def render(report: dict, public: bool = False) -> str:
     lines = ["# Microsoft deep-review progress", "", f"As of {report['generated_on']}; program started {report['program_started_on']}.", "",
-             report["scope"], "", f"{report['summary']['guides']} guides; {report['summary']['needs_review']} have review work.", "",
+             report["scope"], "", f"{report['summary']['guides']} guides; {report['summary']['needs_review']} have review work or unresolved blockers; {report['summary']['ready_for_review']} are eligible for review now.", "",
              "Next batch: " + (", ".join(report["next_batch"]) or "none due") + ".", "",
-             "A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.", "",
-             "| Exam | Deep-review state | Reviewed | Lab execution |", "|---|---|---|---|"]
+             "A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.", "",
+             "| Exam | Deep-review state | Reviewed | Next eligible review | Lab execution |", "|---|---|---|---|---|"]
     for row in report["exams"]:
         label = f"[{row['exam_code']}](../{row['guide_path']})" if public else row["exam_code"]
-        lines.append(f"| {label} | {row['state']} | {row['reviewed_on'] or 'Pending'} | {row['lab_execution']} |")
+        lines.append(f"| {label} | {row['state']} | {row['reviewed_on'] or 'Pending'} | {row['next_review_on'] or 'Archived'} | {row['lab_execution']} |")
     lines += ["", "## Completion rule", "",
               "Read the entire guide and map each detailed objective; inspect official lifecycle, product and release evidence; evaluate useful supplementary articles; apply supported corrections and learning examples; register sources and limitations; run the shared validation gate; then record a review receipt and commit/push that exam's changes.", "",
               "A successful URL check, unchanged objective extraction, or generated work packet never creates a completed receipt. Human review and live lab execution are separate claims. Open each linked guide's review report for unresolved limitations; reviewed-with-blockers records completed research with outstanding evidence gaps, not a clean validation pass.", ""]

@@ -89,8 +89,13 @@ The [Microsoft review tracker](MICROSOFT-REVIEW-STATUS.md) distinguishes this de
 program from historical source validation. `data/deep-reviews.json` stores dated
 receipts with the reviewed guide hash, objective count, report/evidence paths, lab
 execution level and unresolved limitations. The schema and repository validator check
-the records. A changed guide, a 30-day-old review or an unresolved blocker reopens
-work; lifecycle events and changing/beta exams affect priority. Retired guides are
+the records. Changed guide text, a 30-day-old review, or a due event dated after the
+latest receipt makes a guide eligible for the next batch. Unresolved blockers remain
+open, but a recent review waits for that next trigger so initial reviews can progress.
+Events on or before the latest receipt remain visible without scheduling the same
+review repeatedly; set a later event review date when another check is needed.
+The queue reports outstanding work separately from eligibility and shows the next
+eligible review date. Lifecycle events and changing/beta exams affect priority. Retired guides are
 archived in this queue while ordinary link monitoring continues.
 
 Prepare a small work packet without changing content or completion records:
