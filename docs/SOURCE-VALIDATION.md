@@ -357,6 +357,8 @@ The review expanded the guide from service definitions into a repeatable require
 
 ## PL-900 coverage record
 
+The September 28 [deep review](research/2026-09-28-pl-900-deep-review.md) maps 37 detailed objectives. All 37 July2026 objectives mapped; unchanged baseline. Six worked examples, eight proposed labs, 37 answered checks and 27 local assertions. Correct knowledge access and update app/agent surfaces, connector policies, flow/delegation limits and catalog/blog guidance. No tenant or paid-content execution; human review pending. Current guide citations: 55 registered, 53 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Describe the business value of Microsoft Power Platform | Parts 1–2, objective-to-scenario drill, and integrated scenario |

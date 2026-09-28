@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review PL-900’s 37 objectives; add six examples, eight labs and 37 answered checks. Correct uploaded-file access, update app-building/policy/flow boundaries and compare learning catalogs. See the [PL-900 report](docs/research/2026-09-28-pl-900-deep-review.md).
+
 - September 28, 2026: deeply review MB-820’s 75 objectives; add six worked examples, ten labs and 48 answered checks. Correct try/commit, API batching and sandbox replica assumptions; update upgrade, HTTP, deprecation, article and catalog guidance. See the [MB-820 report](docs/research/2026-09-28-mb-820-deep-review.md).
 
 - September 28, 2026: deeply review MB-800’s 123 objectives; add seven worked examples, ten labs and 48 answered checks. Clarify security, inventory/ledger corrections and agent controls; curate useful articles and refresh learning resources. See the [MB-800 report](docs/research/2026-09-28-mb-800-deep-review.md).

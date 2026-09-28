@@ -3,6 +3,90 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "pl900-upload-permissions",
+      "title": "Uploaded file permissions",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-documents",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Main uploaded-file scope, precedence, prerequisites and explicit all-agent-users access warning read; later full format matrix not audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl900-power-series",
+      "title": "Power CAT Power Series labs",
+      "url": "https://aka.ms/PowerSeries/Labs",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Public Microsoft workshop labs directory read through aka.ms redirect; individual labs/prerequisites not inspected or executed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl900-dlp-combined",
+      "title": "Combined data policy effects",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/dlp-combined-effect-multiple-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Main blocked and Business/NonBusiness combination explanation plus policy example read; full consolidated table not exhaustively audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl900-knowledge-overview",
+      "title": "Agent knowledge overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Complete supported-source/authentication table and source-authentication introduction read; later full grounding limits not audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl900-uploaded-knowledge",
+      "title": "Uploaded files as agent knowledge",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-add-file-upload",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Main upload overview/procedure and supported-format/limits sections read; no upload performed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl900-app-building-blog",
+      "title": "Build business apps with Copilot Cowork and Copilot Studio",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Complete main September10 RyanCunningham announcement read; accept distinct Frontier/preview surfaces and governance questions, not universalGA or tenant entitlement. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mb820-try",
       "title": "Try methods and database writes",
       "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
@@ -5175,9 +5259,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-410"
+        "AB-410",
+        "PL-900"
       ],
-      "notes": "September 28 AB-410 deep review: Targeted duration, pending approvals, concurrency, request counting and HTTP timeout sections read. Full endpoint/IP and connector limit tables not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Targeted duration, pending approvals, concurrency, request counting and HTTP timeout sections read. Full endpoint/IP and connector limit tables not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Duration/retention and adjacent inactivity/throttling excerpts read; complete67k-character service limit matrix not audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab410-long-approval",
@@ -5189,9 +5274,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-410"
+        "AB-410",
+        "PL-900"
       ],
-      "notes": "September 28 AB-410 deep review: Approval action/review pattern and long-running/cancellation sections read; no request sent or decision made. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Approval action/review pattern and long-running/cancellation sections read; no request sent or decision made. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Long-running approval and adjacent cancellation/guest sections read; full tutorial not executed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab410-business-rules",
@@ -10534,9 +10620,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "PL-400",
-        "AB-410"
+        "AB-410",
+        "PL-900"
       ],
-      "notes": "September 27 PL-400 deep review: Tiffany Treacy, September 17, 2026. Reviewed feature introduction and developer documentation updates as a discovery/release channel. Followed relevant code-app, Python and coding-plugin primary documentation; not blanket proof that all listed features are GA. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Tiffany Treacy September 17 selected model app-builder, form embedding and preview connector sections read. Full long roundup, linked tools and videos not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 27 PL-400 deep review: Tiffany Treacy, September 17, 2026. Reviewed feature introduction and developer documentation updates as a discovery/release channel. Followed relevant code-app, Python and coding-plugin primary documentation; not blanket proof that all listed features are GA. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Tiffany Treacy September 17 selected model app-builder, form embedding and preview connector sections read. Full long roundup, linked tools and videos not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Selected PowerSeries, canvas templates/controls, model-driven UI, AI app-plan and generative-page sections read. Later extensive link digest not audited. Mixed GA/preview pointers are discovery, not blanket availability evidence. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pl400-dataverse-skills-blog",
@@ -11620,11 +11707,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-100"
+        "AB-100",
+        "PL-900"
       ],
-      "notes": "Corroborates connector/action and MCP server governance boundaries. Workload rollout and connector support remain version-sensitive. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+      "notes": "Corroborates connector/action and MCP server governance boundaries. Workload rollout and connector support remain version-sensitive. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed. September 28 PL-900 deep review: Main principles, types, mixed/ACP-only, scope/configuration/removal and MCP sections read; full later procedures not audited. Mixed mode is enforcement, not report-only. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab100-alm-strategy",
@@ -12642,7 +12730,7 @@
         "PL-900",
         "AB-620"
       ],
-      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-365-copilot-extensibility",
@@ -12663,8 +12751,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AB-100", "PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-100",
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-ai-103-crash-course",
@@ -12891,8 +12983,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: All37 July24,2026 objectives read and mapped. Snapshot/status unchanged; no forthcoming change announced. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-900-blueprint",
@@ -12966,9 +13061,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Official one-day course."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Official one-day course. September 28 PL-900 deep review: Complete public overview and language/duration list read:one day,12 languages; syllabus section does not expose module listings in fetched page. Overview remains broad with PowerPages emphasis. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-sc-900-course",
@@ -13025,7 +13122,7 @@
         "AB-900",
         "AI-901"
       ],
-      "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+      "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-az-900",
@@ -13063,9 +13160,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Nine-hour path with a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. Several components predate the July 2026 blueprint changes."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Nine-hour path with a Pluralsight practice exam; allow about two to four additional hours for an attempt and explanation review. Several components predate the July 2026 blueprint changes. September 28 PL-900 deep review: Complete public eight-course list, titles/authors/dates/runtimes read;536minutes,2024–2025. No videos/paid practice accessed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-sc-900",
@@ -13129,9 +13228,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Sixteen-hour, 40-minute course published November 2023; useful for durable concepts, not current blueprint mapping."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Sixteen-hour, 40-minute course published November 2023; useful for durable concepts, not current blueprint mapping. September 28 PL-900 deep review: Direct blocked; current specific public listing could not be re-established in browser search. Historical runtime clearly labeled unverified. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-sc-900-exam-ref",
@@ -13219,9 +13320,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "About 11 hours; shown as updated August 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "About 11 hours; shown as updated August 2026. September 28 PL-900 deep review: Direct blocked; public browser-indexed provider listing showsSeptember2026,25sections132lectures11h01. Paid coverage not verified. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-sc-900-kevin-brown",
@@ -13311,9 +13414,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Six hours; released March 2025."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Six hours; released March 2025. September 28 PL-900 deep review: Main public course metadata/overview read:CraigZacker,6h,March17,2025; full locked lessons not viewed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "linkedin-learning-sc-900-microsoft-press",
@@ -13416,7 +13521,7 @@
         "AI-103",
         "SC-300"
       ],
-      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Public repository text fetched, not a video/course-content audit; no playback or runtime verification. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Public repository text fetched, not a video/course-content audit; no playback or runtime verification. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-az-900-course-materials",
@@ -13469,7 +13574,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 182-character channel shell; no videos inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution."
+      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 182-character channel shell; no videos inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor",
@@ -13646,9 +13751,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "partner-restricted",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization. September 28 PL-900 deep review: 68-character shell; current eligible-partner syllabus/duration not established. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "skilling-hub-levelup-sc-900",
@@ -14696,9 +14803,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Public listing shows 120 questions and an August 2025 last-update date. Allow about four to eight hours for simulation and explanation review, and use the July 2026 blueprint for agent, Plan designer, and code-app deltas."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Public listing shows 120 questions and an August 2025 last-update date. Allow about four to eight hours for simulation and explanation review, and use the July 2026 blueprint for agent, Plan designer, and code-app deltas. September 28 PL-900 deep review: Public metadata excerpt read:120questions,August2025 update; no questions attempted. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "measureup-sc-900-practice-test",
@@ -14760,9 +14869,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Mixed video and assessment package. Allow about four to eight hours for practice attempts and explanation review; current instructional runtime and July 2026 agent and app-creation delta coverage were not independently verified."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Mixed video and assessment package. Allow about four to eight hours for practice attempts and explanation review; current instructional runtime and July 2026 agent and app-creation delta coverage were not independently verified. September 28 PL-900 deep review: 53-character shell; current runtime/objective coverage not established. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "whizlabs-sc-900",
@@ -14818,7 +14929,7 @@
         "AZ-801",
         "AZ-802"
       ],
-      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution."
+      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution. September 28 AZ-900 deep review: Contextual source fetched for availability; complete page and linked procedures not exhaustively reread. Specific applied-reading boundaries are recorded below. See docs/research/2026-09-28-az-900-deep-review.md No live infrastructure execution. September 28 DP-900 deep review: Contextual source fetched for availability. Full page, linked units/media and procedures not exhaustively reread; specific applied boundaries are recorded separately. See docs/research/2026-09-28-dp-900-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-gh-900-practice-assessment",
@@ -14940,9 +15051,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority. September 28 PL-900 deep review: Empty direct assessment body; no attempt or question content accessed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-sc-900-practice-assessment",
@@ -17424,12 +17537,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AB-100",
         "PL-900"
       ],
-      "notes": "Tool types, MCP, computer use, model selection, and generative orchestration capabilities are volatile."
+      "notes": "Tool types, MCP, computer use, model selection, and generative orchestration capabilities are volatile. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-business-value-ab100",
@@ -17479,9 +17592,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-100", "PL-900"],
-      "notes": "Pillar recommendations and intelligent-application guidance evolve with product capabilities."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-100",
+        "PL-900"
+      ],
+      "notes": "Pillar recommendations and intelligent-application guidance evolve with product capabilities. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-security-virtual-training-days-sc900",
@@ -17898,11 +18014,14 @@
       "title": "Microsoft Certified: Power Platform Fundamentals",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
       "publisher": "Microsoft",
-      "authority_class": 2,
+      "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Main overview, assessed areas,45-minute duration and12 languages read; no retirement displayed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-agent-365-overview-pl900",
@@ -17912,9 +18031,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Availability, prerequisites, licensing, supported agents, registry behavior, and integrations are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Availability, prerequisites, licensing, supported agents, registry behavior, and integrations are volatile. September 28 PL-900 deep review: Complete main observe/govern/secure and commercialGA/prerequisites/licensing sections read. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-docs-pl900",
@@ -17929,7 +18050,7 @@
         "PL-900",
         "AB-620"
       ],
-      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-agent-evaluation-pl900",
@@ -17945,7 +18066,7 @@
         "AB-100",
         "AB-620"
       ],
-      "notes": "Evaluation harnesses, scoring methods, profiles, automation, regions, languages, and feature status are volatile. September 28 AB-620 deep review: Main scope, test types, account and Fabric limitation sections read. Previous blanket no-safety statement removed using current method catalog. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "Evaluation harnesses, scoring methods, profiles, automation, regions, languages, and feature status are volatile. September 28 AB-620 deep review: Main scope, test types, account and Fabric limitation sections read. Previous blanket no-safety statement removed using current method catalog. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Complete main overview, test-set/profile methods, automation, test-chat comparison, GCC and Fabric-agent exclusions read. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-agent-flows-overview-pl900",
@@ -17960,7 +18081,7 @@
         "PL-900",
         "AB-620"
       ],
-      "notes": "Flow formats, triggers, authoring surfaces, licensing, and capacity behavior are volatile. September 28 AB-620 deep review: Selected conversion, capacity, test and license-context sections read. No conversion or billing action. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "Flow formats, triggers, authoring surfaces, licensing, and capacity behavior are volatile. September 28 AB-620 deep review: Selected conversion, capacity, test and license-context sections read. No conversion or billing action. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Main flow overview/action types, capacity/testing and one-way conversion sections read. Rule-based path does not guarantee identical AI/external results. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-overview-pl900",
@@ -17970,9 +18091,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Harnesses, agent and flow formats, channels, orchestration, and availability are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Harnesses, agent and flow formats, channels, orchestration, and availability are volatile. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-docs-pl900",
@@ -17982,8 +18105,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-code-apps-overview-pl900",
@@ -17993,12 +18119,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "PL-900",
         "PL-400"
       ],
-      "notes": "Prerequisites, framework support, platform capabilities, limitations, and lifecycle behavior are volatile. September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+      "notes": "Prerequisites, framework support, platform capabilities, limitations, and lifecycle behavior are volatile. September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Intro/prerequisites/end-user license options/limitations and first managed-capability table read. No PowerPlatform Git integration or secure implicit connections; ordinary Git differs. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-accessible-apps-pl900",
@@ -18008,8 +18134,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Main layout, keyboard, screen-reader, control and multimedia/signature guidance read; linked references not audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-delegation-overview-pl900",
@@ -18024,7 +18153,7 @@
         "PL-900",
         "AB-410"
       ],
-      "notes": "Delegable functions and source-specific support can change. September 28 AB-410 deep review: Query support, limits, collection and lookup sections read. Synthetic prefix arithmetic only, not a Power Fx/connector execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Delegable functions and source-specific support can change. September 28 AB-410 deep review: Query support, limits, collection and lookup sections read. Synthetic prefix arithmetic only, not a Power Fx/connector execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Main explanation, functions, lookup/query limits and local500/2000 limits read; final examples not audited or executed. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-plan-designer-faq-pl900",
@@ -18034,9 +18163,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Generated components, prerequisites, limits, language support, and preview capabilities are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Generated components, prerequisites, limits, language support, and preview capabilities are volatile. September 28 PL-900 deep review: Complete main FAQ read: requirements/roles/components, Dataverse and prompt limits; generated plan needs review. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dataverse-overview-pl900",
@@ -18046,8 +18177,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Main table/metadata/logic overview and terminology read; full integration procedures not audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-model-driven-overview-pl900",
@@ -18057,8 +18191,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-monitor-overview-pl900",
@@ -18073,7 +18210,7 @@
         "PL-900",
         "AB-410"
       ],
-      "notes": "September 28 AB-410 deep review: Freshly retrieved; retained Monitor investigation guidance. No runtime events produced or full UI procedure executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Freshly retrieved; retained Monitor investigation guidance. No runtime events produced or full UI procedure executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-vibe-overview-pl900",
@@ -18083,9 +18220,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "This preview's regions, languages, prerequisites, supported artifacts, models, limits, and lifecycle behavior are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "This preview's regions, languages, prerequisites, supported artifacts, models, limits, and lifecycle behavior are volatile. September 28 PL-900 deep review: Complete main overview read, including preview/default-environment/region/English limits and Cowork/Studio transition banner. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-automate-docs-pl900",
@@ -18095,8 +18234,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-automate-copilot-cloud-flow-pl900",
@@ -18106,9 +18248,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Designer availability, account requirements, languages, regions, generated actions, and AI capabilities are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Designer availability, account requirements, languages, regions, generated actions, and AI capabilities are volatile. September 28 PL-900 deep review: Main creation sequence and prompt examples read; actual flow not generated. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-automate-desktop-flows-intro-pl900",
@@ -18118,8 +18262,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-automate-approvals-pl900",
@@ -18129,8 +18276,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-automate-cloud-flows-overview-pl900",
@@ -18140,9 +18290,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Designers, Copilot behavior, and available flow types and features are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Designers, Copilot behavior, and available flow types and features are volatile. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-docs-pl900",
@@ -18157,7 +18309,7 @@
         "PL-900",
         "AB-410"
       ],
-      "notes": "September 28 AB-410 deep review: Landing/index reachability refreshed; detailed changes supported by the separate implementation pages. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-410 deep review: Landing/index reachability refreshed; detailed changes supported by the separate implementation pages. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-environments-overview-pl900",
@@ -18172,7 +18324,7 @@
         "PL-900",
         "AB-410"
       ],
-      "notes": "Environment types, roles, regions, capacity, and administration experiences are volatile. September 28 AB-410 deep review: Freshly retrieved; existing environment design retained. Full 13k-character reference not re-audited this pass. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Environment types, roles, regions, capacity, and administration experiences are volatile. September 28 AB-410 deep review: Freshly retrieved; existing environment design retained. Full 13k-character reference not re-audited this pass. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-security-docs-pl900",
@@ -18182,8 +18334,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-dlp-pl900",
@@ -18193,9 +18348,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Connector classifications, policy scope, enforcement, and tenant controls are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "Connector classifications, policy scope, enforcement, and tenant controls are volatile. September 28 PL-900 deep review: Main overview, connector types/ACP transitions, connection identity, enforcement and latency sections read. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-dataverse-security-model-pl900",
@@ -18205,8 +18362,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Selected cumulative grants, teams/sharing and record access sections read; ownership-preview matrix not adopted. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-pipelines-pl900",
@@ -18222,7 +18382,7 @@
         "AB-410",
         "AB-620"
       ],
-      "notes": "Pipeline prerequisites, hosts, governance, extensions, and deployment behavior are volatile. September 28 AB-410 deep review: Targeted artifact promotion, data exclusion, Managed Environment and licensing sections read. No pipeline or deployment execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Artifact/data/Managed Environment and licensing boundaries checked during same-day preceding review and refreshed here; no promotion. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "Pipeline prerequisites, hosts, governance, extensions, and deployment behavior are volatile. September 28 AB-410 deep review: Targeted artifact promotion, data exclusion, Managed Environment and licensing sections read. No pipeline or deployment execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Artifact/data/Managed Environment and licensing boundaries checked during same-day preceding review and refreshed here; no promotion. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Selected deployment/configuration/data exclusion, sequential artifact and environment/license FAQ sections read; full extensibility procedures not audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-solution-concepts-pl900",
@@ -18232,8 +18392,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900"
+      ],
+      "notes": "September 28 PL-900 deep review: Main managed/unmanaged, dependency and deletion behavior read; later full lifecycle not audited. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab900-certification-page",
@@ -28161,7 +28324,7 @@
         "PL-900",
         "AB-731"
       ],
-      "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile. September 28 AB-410 deep review: Current harness overview and comparison concepts read. Harness selection, billing and context separate from app-to-agent creation. No harness migration. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current harness comparison read during same-day preceding review and refreshed here; standard/GitHub/chat scopes retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Three-harness comparison read in preceding same-day review and refreshed here; no cross-harness migration inferred. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution."
+      "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile. September 28 AB-410 deep review: Current harness overview and comparison concepts read. Harness selection, billing and context separate from app-to-agent creation. No harness migration. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current harness comparison read during same-day preceding review and refreshed here; standard/GitHub/chat scopes retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Three-harness comparison read in preceding same-day review and refreshed here; no cross-harness migration inferred. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Main harness definitions and considerations read; later complete comparison matrix not audited. GitHubCopilot harness is not the GitHubCopilot service. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-architecture-overview",
@@ -32039,7 +32202,7 @@
         "AB-620",
         "AB-410"
       ],
-      "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist. September 28 AB-410 deep review: Public channel shell fetched; no video watched and no exact exam syllabus established. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Public channel shell fetched; no video watched or exact AB-620 playlist verified. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist. September 28 AB-410 deep review: Public channel shell fetched; no video watched and no exact exam syllabus established. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Public channel shell fetched; no video watched or exact AB-620 playlist verified. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-410-blueprint",
@@ -41383,7 +41546,7 @@
         "MB-800",
         "MB-820"
       ],
-      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Complete main August 25 article read. September disclosure transition and planned November 15 Release Planner retirement recorded with future verification; RSS/CSV existence does not mean this repo ingests them. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution. September 28 MB-500 deep review: Main August 25 article read in this sequential Finance review context. Preserve September new-disclosure transition and planned November15 retirement; no roadmap RSS/CSV ingestion. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution. September 28 MB-800 deep review: Main RichardRiley August25,2026 announcement read in this sequential review context; September new-disclosure transition and planned November15 retirement retained. No feed ingestion. See docs/research/2026-09-28-mb-800-deep-review.md No live infrastructure execution. September 28 MB-820 deep review: Complete main August25 transition announcement read in this sequential review context; September disclosures and planned November15 retirement, no automated feed ingestion. See docs/research/2026-09-28-mb-820-deep-review.md No live infrastructure execution."
+      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Complete main August 25 article read. September disclosure transition and planned November 15 Release Planner retirement recorded with future verification; RSS/CSV existence does not mean this repo ingests them. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution. September 28 MB-500 deep review: Main August 25 article read in this sequential Finance review context. Preserve September new-disclosure transition and planned November15 retirement; no roadmap RSS/CSV ingestion. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution. September 28 MB-800 deep review: Main RichardRiley August25,2026 announcement read in this sequential review context; September new-disclosure transition and planned November15 retirement retained. No feed ingestion. See docs/research/2026-09-28-mb-800-deep-review.md No live infrastructure execution. September 28 MB-820 deep review: Complete main August25 transition announcement read in this sequential review context; September disclosures and planned November15 retirement, no automated feed ingestion. See docs/research/2026-09-28-mb-820-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Main August25 transition announcement previously read in this same sequential review; reused November15 retirement follow-up, not tenant proof. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-at-work-roadmap",
@@ -41403,7 +41566,7 @@
         "PL-300",
         "MB-310"
       ],
-      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Landing disclaimer and current announcement metadata inspected; no complete interactive roadmap inventory, feature-status verification, subscription or feed ingestion. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Landing disclaimer and current announcement metadata inspected; no complete interactive roadmap inventory, feature-status verification, subscription or feed ingestion. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "copilot-studio-agent-build-overview",
@@ -41420,7 +41583,7 @@
         "AB-620",
         "PL-900"
       ],
-      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current overview read in same-day preceding review and refreshed here. No transfer across standard/GitHub; billing and separate service boundaries retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current overview read in same-day preceding review and refreshed here. No transfer across standard/GitHub; billing and separate service boundaries retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md102-intune-whats-new",
@@ -41448,7 +41611,7 @@
         "AB-410",
         "PL-900"
       ],
-      "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations. September 28 AB-410 deep review: Targeted current help-chatbot and mobile-app retirement sections read, plus retained lifecycle index. Full 90k-character historical ledger not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations. September 28 AB-410 deep review: Targeted current help-chatbot and mobile-app retirement sections read, plus retained lifecycle index. Full 90k-character historical ledger not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-agent-365-ga-announcement",
@@ -41458,9 +41621,15 @@
       "authority_class": 2,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AB-100", "AB-650", "AB-900", "MD-102", "PL-900"],
-      "notes": "Product-level GA anchor; individual integrations and capabilities retain separate preview and rollout boundaries."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-100",
+        "AB-650",
+        "AB-900",
+        "MD-102",
+        "PL-900"
+      ],
+      "notes": "Product-level GA anchor; individual integrations and capabilities retain separate preview and rollout boundaries. September 28 PL-900 deep review: Availability fetched; no full-page semantic review claimed unless a reading boundary is explicitly recorded below. See docs/research/2026-09-28-pl-900-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-365-copilot-release-notes",

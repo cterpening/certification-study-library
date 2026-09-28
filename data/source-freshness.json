@@ -4,6 +4,199 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-pl900-deep-review",
+      "title": "PL-900 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PL-900"
+      ],
+      "results": [
+        {
+          "exam_code": "PL-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-900-microsoft-power-platform-fundamentals.md",
+          "baseline_sha256": "b9adc94317b13016504995cbeabed82f7266615d0c817d05bb2c43774ebc4690",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "37 July2026 objectives mapped; unchanged snapshots, active45-minute credential."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "App generation, delegation, grants, classic/advanced policy, pipelines, approval lifecycle, knowledge permissions and agent evaluation checked in recorded sections."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September10 app-building and September17 feature roundup evaluated with current product docs; retain feature-specific preview/harness distinctions."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official one-day overview, eight-course536-minute Pluralsight list, LinkedIn/MeasureUp metadata and indexed Udemy update; historical/blocked durations qualified. PowerSeries directory added."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct universal knowledge-permission implication and avoid universalGA, deterministic-output or exactly-once claims. ACP limitations and course objective gaps remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "pl900-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Uploaded file permissions differ from authenticated retrieval",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-documents",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "File content can be used for all users chatting with the agent regardless of original file access.",
+              "recommendation": "Correct retrieval sequence and add denied-user/source-selection lab.",
+              "disposition": "applied",
+              "source_id": "pl900-upload-permissions",
+              "resolution": "Correct retrieval sequence and add denied-user/source-selection lab."
+            },
+            {
+              "id": "pl900-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "App-building surfaces and release states diverge",
+              "url": "https://learn.microsoft.com/en-us/power-apps/vibe/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preview overview includes restrictions and transition banner.",
+              "recommendation": "Add dated surface-specific guidance; preserve July exam scope.",
+              "disposition": "applied",
+              "source_id": "microsoft-power-apps-vibe-overview-pl900",
+              "resolution": "Add dated surface-specific guidance; preserve July exam scope."
+            },
+            {
+              "id": "pl900-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Connector governance has multiple modes",
+              "url": "https://learn.microsoft.com/en-us/power-platform/admin/advanced-connector-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ACP allowlist and mixed/only modes differ from classic policy; custom/HTTP/virtual support is excluded.",
+              "recommendation": "Add clear governance boundary without blanket migration advice.",
+              "disposition": "applied",
+              "source_id": "ab100-advanced-connector-policies",
+              "resolution": "Add clear governance boundary without blanket migration advice."
+            },
+            {
+              "id": "pl900-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Local filtering can give a false zero",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "500 default and2000 maximum local rows do not cover a2500-row source.",
+              "recommendation": "Add400-missing-result example and boundary fixture.",
+              "disposition": "applied",
+              "source_id": "microsoft-power-apps-delegation-overview-pl900",
+              "resolution": "Add400-missing-result example and boundary fixture."
+            },
+            {
+              "id": "pl900-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Business approval can outlive one flow run",
+              "url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Persisted approval state and separate response flow support long-running business processes.",
+              "recommendation": "Add45-day lifecycle and duplicate-response exercise.",
+              "disposition": "applied",
+              "source_id": "ab410-long-approval",
+              "resolution": "Add45-day lifecycle and duplicate-response exercise."
+            },
+            {
+              "id": "pl900-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Solution deployment excludes business rows",
+              "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pipelines move solution/configuration, not Dataverse table data.",
+              "recommendation": "Add five-component/1000-row deployment and target-binding check.",
+              "disposition": "applied",
+              "source_id": "microsoft-power-platform-pipelines-pl900",
+              "resolution": "Add five-component/1000-row deployment and target-binding check."
+            },
+            {
+              "id": "pl900-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Aggregate score hides weak cohorts",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-900"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Repeatable evaluation and profiles complement test chat and require correct supported harness.",
+              "recommendation": "Add82-percent aggregate versus50-percent edge-case example.",
+              "disposition": "applied",
+              "source_id": "microsoft-copilot-studio-agent-evaluation-pl900",
+              "resolution": "Add82-percent aggregate versus50-percent edge-case example."
+            }
+          ],
+          "notes": "All 37 July2026 objectives mapped; unchanged baseline. Six worked examples, eight proposed labs, 37 answered checks and 27 local assertions. Correct knowledge access and update app/agent surfaces, connector policies, flow/delegation limits and catalog/blog guidance. No tenant or paid-content execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-pl-900-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-mb820-deep-review",
       "title": "MB-820 complete guide and learning-content review",
       "rubric_version": 1,
