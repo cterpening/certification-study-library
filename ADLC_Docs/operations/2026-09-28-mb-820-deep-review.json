@@ -1,0 +1,2215 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MB-820",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "27eedd57906fb35f60234f803c44ef01c851bebe590b2b38445fe24a317b22bf",
+  "guide_after_sha256": "2e6fe4344ecc6c46b33b04960cdb8f597932f536acd7b6b5ec76cba89cb84b2b",
+  "prior_records": {
+    "exam": {
+      "code": "MB-820",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Dynamics 365 Business Central Developer",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+      "guide_path": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Applied Business Central and AL development experience across extension architecture, Visual Studio Code, app configuration/dependencies, tables/pages/reports/XMLports/codeunits/queries/permissions, Business Central data and document patterns, automated testing, telemetry, lifecycle upgrades and secure REST/API integration."
+    },
+    "review": {
+      "id": "mb-820-2026-09-01-source-validation",
+      "exam_code": "MB-820",
+      "guide_path": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mb-820-official-objectives.txt",
+      "blueprint_snapshot_sha256": "dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf",
+      "objective_coverage": [
+        {
+          "objective_group": "Describe Business Central",
+          "guide_sections": [
+            "Section 1",
+            "Compliance-extension scenario",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Install, develop, and deploy for Business Central",
+          "guide_sections": [
+            "Section 2",
+            "Compliance-extension scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Develop by using AL objects",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Develop by using AL",
+          "guide_sections": [
+            "Section 4",
+            "Compliance/document scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Work with development tools",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Integrate Business Central with other applications",
+          "guide_sections": [
+            "Section 6",
+            "Fulfillment-integration scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 18,
+        "reachable": 17,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every June 10, 2025 subobjective maps to an architecture/app/lifecycle boundary, project/configuration, AL object/procedure/pattern, permission, test, telemetry/performance signal or HTTP/API contract. Three scenarios, eight labs and 36 checks cover all six domains. All 18 URLs are cataloged: 17 reachable, with O'Reilly automation-blocked; none missing or broken. The guide records the active 100-minute seven-language exam, free assessment, 50h07 selected official paths, five-day course, MIT labs, live/commercial options and explicit older-blueprint freshness boundaries."
+    },
+    "sources": [
+      {
+        "id": "mb-820-blueprint",
+        "title": "Study guide for Exam MB-820",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Authoritative six-domain blueprint: skills measured as of June 10, 2025; no future update announced."
+      },
+      {
+        "id": "mb-820-credential",
+        "title": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Active intermediate credential; 100-minute exam in seven languages, annual renewal and free Practice Assessment."
+      },
+      {
+        "id": "mb-820-path-best-practices",
+        "title": "Use application development best practices in Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Six hours 17 minutes across seven modules on app types/AppSource, upgrade, performance and testing."
+      },
+      {
+        "id": "mb-820-path-customization",
+        "title": "Discover the foundation of customizing Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Ten hours eight minutes across eight modules on environment, tables/pages/extensions, permissions, Dataverse and debugging/deployment."
+      },
+      {
+        "id": "mb-820-path-reports",
+        "title": "Build reports for Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-reports/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Eight hours two minutes across 11 modules on report data, requests, layouts, language, processing, extensions and analysis."
+      },
+      {
+        "id": "mb-820-path-al",
+        "title": "Learn the application foundation with AL",
+        "url": "https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Nine hours 33 minutes across ten modules on AL types/statements/functions/errors/procedures/codeunits/events/interfaces/data and language."
+      },
+      {
+        "id": "mb-820-path-data",
+        "title": "Learn the data management foundation in Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Three hours 25 minutes across file/stream, XMLport and query modules."
+      },
+      {
+        "id": "mb-820-path-interface",
+        "title": "Interface with Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Four hours 43 minutes across web/REST services, APIs, Azure Functions and other interfaces; select current exam objectives."
+      },
+      {
+        "id": "mb-820-path-ui",
+        "title": "Tailor roles and design the UI for Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Four hours 16 minutes across five modules on onboarding, Role Centers, Assisted Setup, notifications and UI/profile customization."
+      },
+      {
+        "id": "mb-820-path-standards",
+        "title": "Work with essential development standards for Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/paths/essential-development-standards/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Three hours 43 minutes across functional table types, data process, master-data and document standards."
+      },
+      {
+        "id": "mb-820-course",
+        "title": "MB-820T00-A Develop solutions with Business Central",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-820t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Five-day official advanced course; eight selected paths total 50 hours seven minutes."
+      },
+      {
+        "id": "mb-820-labs",
+        "title": "MB-820 Business Central Developer labs",
+        "url": "https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "MIT-licensed public course labs; repository README retains sample-course wording, while its hosted index lists MB-820 extension, upgrade, UI, report and API labs."
+      },
+      {
+        "id": "mb-820-practice",
+        "title": "MB-820 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Free official readiness assessment."
+      },
+      {
+        "id": "mb-820-docs",
+        "title": "AL developer documentation for Business Central",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Current first-party AL language, object, environment, app, lifecycle, test, telemetry, performance and API reference."
+      },
+      {
+        "id": "mb-820-oreilly-companion",
+        "title": "Dynamics 365 Business Central Developer Certification Companion",
+        "url": "https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/",
+        "publisher": "O'Reilly / Apress",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "November 2024, 317 pages and provider estimate three hours 48 minutes; hands-on MB-820 companion requiring June 2025 API/current-runtime supplementation."
+      },
+      {
+        "id": "mb-820-plataan-webinar",
+        "title": "MB-820 Exam Preparation Webinar",
+        "url": "https://app-plataantv-web-prd-euw.azurewebsites.net/en/plataan/training-course/business-central/mb-820-exam-preparation-webinar",
+        "publisher": "Plataan.TV",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Two-day expert webinar with 2026 dates publicly listed, including September 29–30; verify exact time, seat and subscription/member terms."
+      },
+      {
+        "id": "mb-820-community-session",
+        "title": "MB-820 Certification Essentials awareness session",
+        "url": "https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934",
+        "publisher": "Microsoft Community Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "July 2026 public event listing covering objective areas and preparation resources; verify recording/registration availability and duration."
+      },
+      {
+        "id": "mb-820-partner-skilling-hub",
+        "title": "Microsoft Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-820"
+        ],
+        "notes": "Eligible-partner sign-in required to verify exact event start/end times and availability; use five-day course only as a planning estimate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "21b52a72afaa015320d56a5147d21b5a04acaa35fe175452670ff027829f568f",
+      "guide_sections": "1 / Architecture components",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "a1dad5ae3facec0787510caf22f4453fabdb3c25533e453aac549f133916dee0",
+      "guide_sections": "1 / Core and extensions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "8416745e29e25f222bbe422c9a60a0cb7b4fc82e226ec474b0b95f1387f7b682",
+      "guide_sections": "1, 2 / Update/deprecation/upgrade lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "599a7f329026d4484328827a46b3ff62dd1ac913f6bf046bf000f652d9e38e2d",
+      "guide_sections": "1, 5, 6 / Online versus on-premises boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "455c8eb539ce7c1e1e85e955d0a25eeddce38acf14df79224c2a614550517ab0",
+      "guide_sections": "1 / System and Base Application",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "e37addf9955fd11ec96fd6403c76cccdb80e88fdfaaa263747801b8393d8ad6a",
+      "guide_sections": "1 / App functionality/dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "70fd2247022b76975abc98c74a58c3d64f4c7da4a8b93ccef45c0a35db5fc218",
+      "guide_sections": "1 / AppSource validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "23b3e0cd3638bb566f6da6d5ed059acdbaaec507e1b3cee80720b4202942c2bf",
+      "guide_sections": "2 / Development environment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "cb9b4e0085652b0a8c7bc82045de56a18c566a23a17185e742025ba713bca989",
+      "guide_sections": "2 / VSCode, AL and sandbox/container setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "902c4b3f8ff2baa0ba2c05c8b0daafe79f29a5db6460c16a1b34ff5ec2588478",
+      "guide_sections": "2 / app.json and launch/workspace configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "3a3087cdf5a410742e6bf00a6b111930bdbc2283ad34fb610bdc0662a0b93136",
+      "guide_sections": "2 / Multiple extensions and dependency direction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "f52e9ac287785073887a7f3d4122c66b80b02976c772accb5c888af9a61c20c7",
+      "guide_sections": "2 / Debugger and execution context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "e6221b39a9b5156d89d61bb9de7d0e74f9c6b966ce0718d35304a7f424daf7ce",
+      "guide_sections": "1, 2 / Deployment stages and current surfaces",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "5ee8212a2347d2bdeb232efe5bbe2dbad87df77a7cf5e6390caeb47348532866",
+      "guide_sections": "2 / Create/modify/package",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "2dfe45f316aebd20b443321f8f679db3f69488093661f7a8b18654b68f34606b",
+      "guide_sections": "2, 3 / Labels and XLIFF",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "33ac06b70aaa0edc9050f2f5a53563ba1ddfd96e858174a4eb6bda6348f9ac6b",
+      "guide_sections": "1, 2 / Maintenance/obsolete/upgrade tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "66ed5fc0fb43af25dbfdaba7c2c04d5747e5340865458a3e7b66b8b43dc49dc3",
+      "guide_sections": "3 / Role Center cues",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "6aec82c2c67203f8b774f9ffccbdf66412c386bbb15fcd9542971c5287c9c0af",
+      "guide_sections": "3 / Page types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "2a3556b1412a3ca4f36fee49bf91e1d443ab7c0432c1e905dc67dafc11153fae",
+      "guide_sections": "3 / Page and extension objects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "c1420d8e0e71aa1c0a551c9823d2e15a779e322b9fc3730f3e6fbdbdd134130e",
+      "guide_sections": "3 / Tables and extensions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "923ab0ddf50cf4838831fb0bde1e5449d25a97184b5c94d50eaadb873703e1fe",
+      "guide_sections": "3 / Enum compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "87750a0386b3606f4f48da136fdadb8e07b9586d93c53bf4af67f660e4a36e21",
+      "guide_sections": "3 / Report substitution",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "dd45085b630c974cc3e19f18723dba4cdfc3e1b315711c4b5620c43945132090",
+      "guide_sections": "3 / Layouts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "1ab17b253d0bded47e41cb52cf4ce0e106c9f2e1257354950c5507d37d230acd",
+      "guide_sections": "3 / Document report contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "917587b543b4b928f6542f22879ca6d61b7dea5d758d8c973d44d43fd6308710",
+      "guide_sections": "3, example 3 / Report model and grain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "06e3e048d8a8e80fa806e11508dc3a591321e809d71c073e88e757c677d105f9",
+      "guide_sections": "3 / Recipient language",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "4eb2db4fec4bc0a2c5383c86070c1d834b8c502ec1fbd0b9ba4d3e911dfb4031",
+      "guide_sections": "3 / Triggers/functions/processing-only",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "9a088b712929cb640f783d150172be3a51b77d9bbc0f719afd42395b0f339d3e",
+      "guide_sections": "3 / Request page validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "591541f5dc7524ec56b79fd21645f629e827338f7085dc033230a32614f5a33a",
+      "guide_sections": "3 / XMLport format/encoding/direction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "f9d544a075d9fcecd4d1e1c9a4029f08043e018897179c45d4e4835fcefcf7b8",
+      "guide_sections": "3 / Nodes and properties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "6b10cdd32d8f0683b45627b40a74da25bc2c1129689e67f6b829ec5c36c04791",
+      "guide_sections": "3, 4 / AL invocation and transaction duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "7d82dbd0f96b8062741196ea0069b611fad1e33b4c06fd86bc3183b8329aef2c",
+      "guide_sections": "3 / Cohesive codeunits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "12ca2fdd44f2e0401e25c7370f52570bcd2e016b849c78d527f43efed2da848c",
+      "guide_sections": "3, 4 / Events/triggers/IsHandled",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "434b7d3adfc8e71be3264559dc05d09bfb22d813d02f68874e26978d6ec0356c",
+      "guide_sections": "3 / Interfaces",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "5e70694fa4eb9940f1671e67046bfa2557db5301e687bcda9d11decc8dea5834",
+      "guide_sections": "2, 3, example 5 / Install/upgrade codeunits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "35d58a5cbb0f527b8c591fbe7e45a58da4bdd04cf78b2a97d517c7e473d7c322",
+      "guide_sections": "3 / Permission-set objects and extensions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "009a2f63d30178f0b15d075572cc25b7721edaee3ad40768a6ddaaa173cdac8c",
+      "guide_sections": "3 / Inherent scope and same-extension limitation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "bc78a2228710d13a1bee8100511e700f07909daf19bd684fe4cc8a6f114671ea",
+      "guide_sections": "3 / Complete call-path troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "a93d642e4c50553c1b31821325f0af3e52b16c9cbc6139a6f3f840ad20da777f",
+      "guide_sections": "3, example 3 / Join cardinality",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "a2d218e06c04f9776465ae0c131842bfe13ae5a7a3386db9325f00373b9c9ccf",
+      "guide_sections": "3 / Query filters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "fb088a7efd5e85a4c05465e4f35c1587460d48315979000a9925ae98a028ffe5",
+      "guide_sections": "3, 4 / Queries versus record loops",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "9bfd50dd9648dae332a5d65289707e469e546627b056c756fd124005519b5d12",
+      "guide_sections": "3, example 3 / Grouping and aggregation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "34d258e579c9d018d65e4b855da6bdbeb4e33a8779f6fe78918f7b5599a46237",
+      "guide_sections": "3 / Query-backed report",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "3e64cfadf384c8ac991f518f9fd5c135d7eb23799958a45906167e340df96637",
+      "guide_sections": "4 / Profiles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "ca4c1b32abf38dccfc838cb1e8aced07fef6c8a41b22b4eb2a5e6a319ca0a1dd",
+      "guide_sections": "4 / Views",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "ded17050b30e33a79e8a29b13923641f9241ca5f8d71540327fa487686532aca",
+      "guide_sections": "4 / User assistance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "1a0d33179ed101487daa3aee9bde552bb2617b37b7c627a829ec2d40d0c3c439",
+      "guide_sections": "4 / Assisted Setup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "bf8d5392cabc44f839268138507bc775f869bb89c84fed01ccd7234daa21af67",
+      "guide_sections": "4 / Teaching tips and tours",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "efc47b5f6fea7b90c79372b37da927fcc1489b384f3ce44450a0304b244a4ce8",
+      "guide_sections": "4 / Checklist durable completion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "a7bab4f9a3e48de7922b510b6d4200db152781948580c10ec238e47011fda694",
+      "guide_sections": "4 / Data process model",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "93eb68a184a98ef198c9bbea171c7f2dadc9b82bf396c92338c4c071a10cf1e2",
+      "guide_sections": "4 / Functional table types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "cd3f39f0053eb301ec6433feaa3c874410e6b6364a09444c621492adf8ccb528",
+      "guide_sections": "4 / Header/line document standards",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "147a21fda701e662ff4d326652903edbeb3cecd85e7add8ff9546e0c132a4ad9",
+      "guide_sections": "4 / Master data design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "28adc55c9a1a13a62fabe21d5369466ffdd14fe940e4b3367383b96171072f5c",
+      "guide_sections": "4 / Procedures and value/var parameters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "7f96035c2c4641b9360cf82edcea62fed5e947788faecdf9d45fab29828fee92",
+      "guide_sections": "4 / Data types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "b31d03367afa07fc078083519eceed5adbc16e7a7c7afd6cad441e1ec8d529b3",
+      "guide_sections": "4 / Streams and files",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "c350b2daabd129249417d0d4e111c387a7badb540132012ef7c6d9791ca244a4",
+      "guide_sections": "4 / Record methods and validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "3773cae2fbd84f6e87fe8d8ba4f0d14a8ddd536e0e31ced7df94e5e6a82c1a75",
+      "guide_sections": "4 / AL fundamentals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "e07388e1959b9f102f5eeff6b769ba855203fd43ba9589e79632fd2d8302df81",
+      "guide_sections": "4 / Expressions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "be1445633e6377a638771ddefba977e24b9314e57694f3cdda15145fde691523",
+      "guide_sections": "4 / Built-ins and statements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 8,
+      "objective_sha256": "d8d22bee9398fe7b9c5ea64430f9cb703e10b5a30acc7409b72f77c664f9c227",
+      "guide_sections": "4 / Variable scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 9,
+      "objective_sha256": "e5d520f108b20c82ea72739cdc480b664b4d0999895644b245e3a67c4732fa1f",
+      "guide_sections": "4, examples 1, 2, 4 / Error/try/commit/remote boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 10,
+      "objective_sha256": "84a6e0294b5b5a557e6c45ad35f9189f1a6ee40281e72a171aba5ab9036bf30e",
+      "guide_sections": "4 / Access modifiers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "d34651757cbfa05ec2731e350636c150bf805bf7301a76b1c1edea70456f94bd",
+      "guide_sections": "5 / Application tests and environment limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "1d9aad003815dbc70dea113568dd44f8c771c224b9aa106bb5b7129dafdae9cd",
+      "guide_sections": "5 / Test Toolkit/test runners/CI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "4a223dbe96d9f29b7269c486d6d2e954c376c23c14c120c629d42877437336dc",
+      "guide_sections": "5 / Test codeunits, methods and handlers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "62b5fde9b0790042ff9c9251658635f94ceea14f985c20ba63b5ecc193c003b8",
+      "guide_sections": "5, example 6 / Analyze telemetry and denominators",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "be092c2d7c2d9f9f395b957604ea415742de5fbdd36ff93aa4693748a42e5f15",
+      "guide_sections": "5 / Telemetry destinations/configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "ea2e8e1127c7fea312b28590e2149d95734a3e650dd5dd661d3e8a94c9e82141",
+      "guide_sections": "5 / Safe custom signals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "cca5f2be93ed2db05e024adaa7c67fe30c1b3a6facec627982ae9bfdb9333230",
+      "guide_sections": "6 / HTTP types, response and current controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "c0093cb686d57fd7f64412532b3e4ec2c5425148169537c5e50356ff0eee3e10",
+      "guide_sections": "6, example 2 / External REST and replay contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "3987141d9b7bf0833df2c07e309c84b7eae95110dcdafc337ec55a6bd2597c3b",
+      "guide_sections": "6 / JSON schema/error cases",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "2f5502fa659257f5050bb7fe5e101613e3a4eba36029edd23b9042777ec5510a",
+      "guide_sections": "6 / Custom APIs and immutable identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "c72042f0d0988b9076f43690b1af6667b189bdd2bb31c57a6cb99ed64d3ceafe",
+      "guide_sections": "6 / Bound/unbound actions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "d9db776d7fa7b7efbeacd2bcb3f04fd537330324fe702e138ba418b382e968e1",
+      "guide_sections": "6 / Read intent, precedence and sandbox exclusion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MB-820"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MB-820",
+        "title": "Microsoft Dynamics 365 Business Central Developer",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+        "guide_path": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+        "snapshot_path": "data\\objective-snapshots\\mb-820-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mb-820-official-status.json",
+        "previous_sha256": "dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf",
+        "current_sha256": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
+        "previous_status_sha256": "d653036a2299203bed7c73811e7aa7836d7c20b16e873054234b0dd11fee1faf",
+        "current_status_sha256": "5f7834401b5e9e8bfe8aa4ee1b033d0cb961cf280428a7896440642555a7f5ed",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of June 10, 2025"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 39,
+    "reachable": 38,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mb-820-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+      "checked_at": "2026-09-28T12:15:49.940325+00:00",
+      "health": {
+        "id": "mb-820-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+        "checked_at": "2026-09-28T12:15:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MB-820: Microsoft Dynamics 365 Business Central Developer",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "875dc04d15dffd3fbcc34454223b9adc10dea0f738d429ab47df1ec7770b41bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+      "sha256": "1f546aca100e0ad2e6fe11d5fe5bb91e6fd05ad884e8e52f8a91d2bb1a378151",
+      "text_characters": 9235
+    },
+    {
+      "id": "mb-820-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+      "checked_at": "2026-09-28T12:15:49.940942+00:00",
+      "health": {
+        "id": "mb-820-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+        "checked_at": "2026-09-28T12:15:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365 Business Central Developer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "2572b7c2555691dc483ac2b659bd38eb5288e6d9d936d0925720915d6dd4c22e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+      "sha256": "37321fa9601935ab166078dfbad4b4bb1ed3c91de39b9627d061c3168146f358",
+      "text_characters": 5219
+    },
+    {
+      "id": "mb-820-path-best-practices",
+      "url": "https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/",
+      "checked_at": "2026-09-28T12:15:49.941248+00:00",
+      "health": {
+        "id": "mb-820-path-best-practices",
+        "url": "https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/",
+        "checked_at": "2026-09-28T12:15:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/",
+        "content_type": "text/html",
+        "page_title": "Use application development best practices in Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "dc6fc34b79124f4b2552d974c58ca34cd90e6201ed8d0a71f5f4b8e4bcba791f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/",
+      "sha256": "4f68290fa7add744b8761e2eead2e334494f861d7b8f27fda1f3f3eaa72bc871",
+      "text_characters": 2556
+    },
+    {
+      "id": "mb-820-path-customization",
+      "url": "https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/",
+      "checked_at": "2026-09-28T12:15:50.295346+00:00",
+      "health": {
+        "id": "mb-820-path-customization",
+        "url": "https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/",
+        "content_type": "text/html",
+        "page_title": "Discover the foundation of customizing Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "b6c24eae37128c1a13986079cc4a9ad05202b795730ea2aa2ae91230dbabba85",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/",
+      "sha256": "b3f9408c14255d310b5877d009ac772d98b731c2b7cbb5b05252653dd80babe9",
+      "text_characters": 2913
+    },
+    {
+      "id": "mb-820-path-reports",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-reports/",
+      "checked_at": "2026-09-28T12:15:50.317119+00:00",
+      "health": {
+        "id": "mb-820-path-reports",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-reports/",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/build-reports/",
+        "content_type": "text/html",
+        "page_title": "Build reports for Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/build-reports/",
+        "duration_signals": [],
+        "signal_fingerprint": "9cf4457dce03b23627d12b3944a2f1bf6956870f2d60be7798c5c8a4a8d66eab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/build-reports/",
+      "sha256": "89efbfbf497ff63b4d3d3d8dc43151b4b76cd2a748e4d03ed4f9cc81f65a4461",
+      "text_characters": 3400
+    },
+    {
+      "id": "mb-820-path-al",
+      "url": "https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/",
+      "checked_at": "2026-09-28T12:15:50.327446+00:00",
+      "health": {
+        "id": "mb-820-path-al",
+        "url": "https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/",
+        "content_type": "text/html",
+        "page_title": "Learn the application foundation with the AL programming language for Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/",
+        "duration_signals": [],
+        "signal_fingerprint": "a2cd9c930c9a332c435744ba3fd16db1b27bca53a6eeba9e6a71ea53c8e3202a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/",
+      "sha256": "a476dad9b90cbcddad883e558feb2d0b75ffa9075a2d0eb56b525453cba6720f",
+      "text_characters": 3425
+    },
+    {
+      "id": "mb-820-path-data",
+      "url": "https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/",
+      "checked_at": "2026-09-28T12:15:50.591735+00:00",
+      "health": {
+        "id": "mb-820-path-data",
+        "url": "https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/",
+        "content_type": "text/html",
+        "page_title": "Learn about the data management foundation in Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "6ff2a3ad6dc4f842689c25433bd24d3a735326166979507ef4bdcee0b5b4432a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/",
+      "sha256": "f4a8bce5bffd298bedf7842b4c365a281598a49c83f069c39ef8faffb4a9f424",
+      "text_characters": 1371
+    },
+    {
+      "id": "mb-820-path-interface",
+      "url": "https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/",
+      "checked_at": "2026-09-28T12:15:50.645001+00:00",
+      "health": {
+        "id": "mb-820-path-interface",
+        "url": "https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/",
+        "content_type": "text/html",
+        "page_title": "Interface with Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/",
+        "duration_signals": [],
+        "signal_fingerprint": "7e5ece59eaacb61c166c7180593ca769b3e98821d51c01fd2d8aa9b5e5641959",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/",
+      "sha256": "e91c9b2ad2bcb8e98f1aa966e90d9a0e91c432255d0549a0fae31a6f16968f61",
+      "text_characters": 2046
+    },
+    {
+      "id": "mb-820-path-ui",
+      "url": "https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/",
+      "checked_at": "2026-09-28T12:15:50.645475+00:00",
+      "health": {
+        "id": "mb-820-path-ui",
+        "url": "https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/",
+        "content_type": "text/html",
+        "page_title": "Tailor roles and design the UI for Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/",
+        "duration_signals": [],
+        "signal_fingerprint": "a34b772e49addb0fbddea43e1b1bc636b32029e90264b4eb8396f9f99650230f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/",
+      "sha256": "bcfe02d0517e9ba5c2c9662b40721fc16d6219c46b1d3ad95860fb9d067cb9d0",
+      "text_characters": 2133
+    },
+    {
+      "id": "mb-820-path-standards",
+      "url": "https://learn.microsoft.com/en-us/training/paths/essential-development-standards/",
+      "checked_at": "2026-09-28T12:15:50.803936+00:00",
+      "health": {
+        "id": "mb-820-path-standards",
+        "url": "https://learn.microsoft.com/en-us/training/paths/essential-development-standards/",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/essential-development-standards/",
+        "content_type": "text/html",
+        "page_title": "Work with essential development standards for Microsoft Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/essential-development-standards/",
+        "duration_signals": [],
+        "signal_fingerprint": "2324cba64b3c71e3f989f0a46ff1028ca5b584c41cd3583931de5b7f0ca8e6f5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/essential-development-standards/",
+      "sha256": "f762827f429bcb4e8aea01b86cc7349273c9703bb572a173001c643529112f60",
+      "text_characters": 1866
+    },
+    {
+      "id": "mb-820-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-820t00",
+      "checked_at": "2026-09-28T12:15:50.867583+00:00",
+      "health": {
+        "id": "mb-820-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-820t00",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-820t00",
+        "content_type": "text/html",
+        "page_title": "Course MB-820T00-A: Develop solutions with Dynamics 365 Business Central - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/mb-820t00",
+        "duration_signals": [],
+        "signal_fingerprint": "06a33a10fa0204e38ff71688cc9778f757dc3b4308f4738b80d1b30b3a3f9dde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-820t00",
+      "sha256": "b608f5507bd046db24f513b9db357ae784a574e1d12ddf1f76f16d4aeb36d1a8",
+      "text_characters": 1974
+    },
+    {
+      "id": "mb-820-labs",
+      "url": "https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
+      "checked_at": "2026-09-28T12:15:50.929510+00:00",
+      "health": {
+        "id": "mb-820-labs",
+        "url": "https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
+        "checked_at": "2026-09-28T12:15:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
+        "canonical_url": "https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
+        "duration_signals": [],
+        "signal_fingerprint": "9ac980b9becf20d5a5f8bf0271666265bc4b98c90a771d9dc40548cdc18462a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification",
+      "sha256": "d2b172197cf724953fed4b4ca1504ecb5e98f1d037be36a16151d10fd91d896b",
+      "text_characters": 2689
+    },
+    {
+      "id": "mb-820-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T12:15:51.038203+00:00",
+      "health": {
+        "id": "mb-820-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T12:15:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "a5c6c9bd0de3e1caeb5f695da0607195aa65066493e080b15a6c9514edb03ce7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification",
+      "sha256": "44ef3757e8d86f6a6be7fc71f46bf6123a4c35dd134194732bce1ea619bef71a",
+      "text_characters": 0
+    },
+    {
+      "id": "mb-820-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/",
+      "checked_at": "2026-09-28T12:15:51.140626+00:00",
+      "health": {
+        "id": "mb-820-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/",
+        "checked_at": "2026-09-28T12:15:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/",
+        "content_type": "text/html",
+        "page_title": "AL Language reference overview - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/",
+        "duration_signals": [],
+        "signal_fingerprint": "d104678d2ce0fe772e0d847cb873d6620b74a02c1204e26cfe7014fbee6fd017",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/",
+      "sha256": "95ea482b9ba07220af4fab2dec231489e0caa4ef32a701b280ef4b8089fc7d33",
+      "text_characters": 2303
+    },
+    {
+      "id": "mb-820-oreilly-companion",
+      "url": "https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/",
+      "checked_at": "2026-09-28T12:15:51.272884+00:00",
+      "health": {
+        "id": "mb-820-oreilly-companion",
+        "url": "https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/",
+        "checked_at": "2026-09-28T12:15:51+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-820-plataan-webinar",
+      "url": "https://app-plataantv-web-prd-euw.azurewebsites.net/en/plataan/training-course/business-central/mb-820-exam-preparation-webinar",
+      "checked_at": "2026-09-28T12:15:51.376165+00:00",
+      "health": {
+        "id": "mb-820-plataan-webinar",
+        "url": "https://app-plataantv-web-prd-euw.azurewebsites.net/en/plataan/training-course/business-central/mb-820-exam-preparation-webinar",
+        "checked_at": "2026-09-28T12:15:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learning.companial.com/training/webinars/bc-mb820-exam-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MB-820 Exam Prep: Business Central Developer - Webinar",
+        "canonical_url": "https://learning.companial.com/training/webinars/bc-mb820-exam-prep",
+        "duration_signals": [],
+        "signal_fingerprint": "3dbfda4f4f7c1598ed15fefb6c6803c1e9499e88174cb485b9a49f137469f5dd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learning.companial.com/training/webinars/bc-mb820-exam-prep",
+      "sha256": "c3bae9b67bcfb263e7989b2c431201f2473f22633e42f09a7cf58a2be8c91407",
+      "text_characters": 4100
+    },
+    {
+      "id": "mb-820-community-session",
+      "url": "https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934",
+      "checked_at": "2026-09-28T12:15:51.418029+00:00",
+      "health": {
+        "id": "mb-820-community-session",
+        "url": "https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934",
+        "checked_at": "2026-09-28T12:15:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=09213cdc-9f30-4e82-aa6f-9b6e8d82dab3&redirect_uri=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2Fs%2Fauth%2Foauth2callback%2Fproviderid%2Fdefault&response_type=code&state=AynikM_R5WJXeVbWOtKbLg4oo-HYhoIN7bxcFBkh4ZcTxjkm4fAD944Bee3Ow2lK-20JugQnmohKBT8FsZ5cCuad-KDnSg-bVUP2k4y3QTXQkki1yQX4SKxKnDyzgkX9SNVzGPUzDVSBjYKOHxsJX3hybbVi9jTNai-SLF-Ag1da_HOlKie-un1Yw7zMj6dBGNZCNsfk9muw9QvLc9KGRtUK0K5UEwLlJhKzQXltakj8piQeKsvUgBHqXP9m-aF0hoTEjKSLcR0pe7KsSRb8R-ewu-tU_ZpA5OyOUeTRsA_UMCuY7rEF-O1M-jy6T79r&scope=User.Read+openid+email+profile+offline_access&referer=https%3A%2F%2Ftechcommunity.microsoft.com%2Fevent%2Fd3f367f5-77c3-4097-92a4-2bf95e15d11c%2Fmb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr%2F4537934",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Sign in to your account",
+        "canonical_url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=09213cdc-9f30-4e82-aa6f-9b6e8d82dab3&redirect_uri=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2Fs%2Fauth%2Foauth2callback%2Fproviderid%2Fdefault&response_type=code&state=AynikM_R5WJXeVbWOtKbLg4oo-HYhoIN7bxcFBkh4ZcTxjkm4fAD944Bee3Ow2lK-20JugQnmohKBT8FsZ5cCuad-KDnSg-bVUP2k4y3QTXQkki1yQX4SKxKnDyzgkX9SNVzGPUzDVSBjYKOHxsJX3hybbVi9jTNai-SLF-Ag1da_HOlKie-un1Yw7zMj6dBGNZCNsfk9muw9QvLc9KGRtUK0K5UEwLlJhKzQXltakj8piQeKsvUgBHqXP9m-aF0hoTEjKSLcR0pe7KsSRb8R-ewu-tU_ZpA5OyOUeTRsA_UMCuY7rEF-O1M-jy6T79r&scope=User.Read+openid+email+profile+offline_access&referer=https%3A%2F%2Ftechcommunity.microsoft.com%2Fevent%2Fd3f367f5-77c3-4097-92a4-2bf95e15d11c%2Fmb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr%2F4537934",
+        "duration_signals": [],
+        "signal_fingerprint": "04be5cf3d24f09487c09930d5ececd8529995c101a02057b03f950c16234d223",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=09213cdc-9f30-4e82-aa6f-9b6e8d82dab3&redirect_uri=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2Fs%2Fauth%2Foauth2callback%2Fproviderid%2Fdefault&response_type=code&state=Os5T6JtvCoxLoXQqGRFqXxmfR1nn7YVHXNtmei5rMT9wRjVsz_jNJI5SHF3zFKfPTlEL5pTxRaffZ1eaMsh9gH2R9O9R_SmvG24NRnG-ahytHELr3sKKowCOTlZDBAY6ja5Bk9m6_QsyrId1LQq4Z78DIQnhXqZBY_Rs-subLQjR9OCH_8FrYWGPKg3fAP2zF1K6RLj95sLUM5vsLXNSdZBGnIu16gcS9DKgGK6qCtQpt78z5_bCOCqzB07ZVXQrcAVmbg5s0iO68AXf1_7iQ0_-1lHCHcUqXLsOS8Hspy886udTIuEEdfd8UV4wrhbl&scope=User.Read+openid+email+profile+offline_access&referer=https%3A%2F%2Ftechcommunity.microsoft.com%2Fevent%2Fd3f367f5-77c3-4097-92a4-2bf95e15d11c%2Fmb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr%2F4537934",
+      "sha256": "9d5adbf98ebbcd9c61ebedad3d3cefc02972bf104834cf1cd750c0ba0dc7ba60",
+      "text_characters": 23
+    },
+    {
+      "id": "mb-820-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T12:15:51.491544+00:00",
+      "health": {
+        "id": "mb-820-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T12:15:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb820-try",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
+      "checked_at": "2026-09-28T12:15:52.020815+00:00",
+      "health": {
+        "id": "mb820-try",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
+        "checked_at": "2026-09-28T12:15:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
+        "content_type": "text/html",
+        "page_title": "Handling errors using try methods - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
+        "duration_signals": [],
+        "signal_fingerprint": "732669fe02ac151df6c8b116d470a25618d8b2ec7a4df050a5fdb3114c70b08a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
+      "sha256": "f6fd8f09e0a24b6011cc411e09e8c4097b77d74093a697e83617cd2bbdf09a90",
+      "text_characters": 5481
+    },
+    {
+      "id": "mb820-commit",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute",
+      "checked_at": "2026-09-28T12:15:52.313376+00:00",
+      "health": {
+        "id": "mb820-commit",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute",
+        "checked_at": "2026-09-28T12:15:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute",
+        "content_type": "text/html",
+        "page_title": "CommitBehavior attribute - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute",
+        "duration_signals": [],
+        "signal_fingerprint": "6c887093f5bea49ef73275ff33b883ba0ae4bb4a716ba4f3b1d559d592dffcfa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute",
+      "sha256": "f1d4ef2ab559f745c85ba10864b4ed225d64e5608fc8daa25b15dbaefa28947d",
+      "text_characters": 3331
+    },
+    {
+      "id": "mb820-codeunit-run",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method",
+      "checked_at": "2026-09-28T12:15:52.670609+00:00",
+      "health": {
+        "id": "mb820-codeunit-run",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method",
+        "checked_at": "2026-09-28T12:15:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method",
+        "content_type": "text/html",
+        "page_title": "Codeunit.Run(Integer [, var Record]) Method - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method",
+        "duration_signals": [],
+        "signal_fingerprint": "c6b2739fdfa2ef2a47846964e095a8523ebcbd1c1c008a2d16f82c85012d2f7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method",
+      "sha256": "52ae4d7bafa93c2bb948a167030f8e9fdef11d42a44a88b05822cafeaaa5ef15",
+      "text_characters": 2713
+    },
+    {
+      "id": "mb820-http",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient",
+      "checked_at": "2026-09-28T12:15:52.921868+00:00",
+      "health": {
+        "id": "mb820-http",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient",
+        "checked_at": "2026-09-28T12:15:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient",
+        "content_type": "text/html",
+        "page_title": "Call external services with the HttpClient data type - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient",
+        "duration_signals": [],
+        "signal_fingerprint": "85b49ed7f3016e469565802ec37f116db3c05986038e56b8935c6c0721b21856",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient",
+      "sha256": "0f629f8b1620106947224caaca5dda486e14a51569584521a5fcfcdbd5dd7431",
+      "text_characters": 25815
+    },
+    {
+      "id": "mb820-api",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype",
+      "checked_at": "2026-09-28T12:15:53.342841+00:00",
+      "health": {
+        "id": "mb820-api",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype",
+        "checked_at": "2026-09-28T12:15:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype",
+        "content_type": "text/html",
+        "page_title": "API page type - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype",
+        "duration_signals": [],
+        "signal_fingerprint": "3e3e3ee977cc0338deaddb5779a159b724b8d69067e6d6c288c3693218a07de3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype",
+      "sha256": "22158fe12972acb60b63e42226b740de35ab71ade2ca04e25be69887fe0d528b",
+      "text_characters": 3420
+    },
+    {
+      "id": "mb820-api-tips",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips",
+      "checked_at": "2026-09-28T12:15:53.525244+00:00",
+      "health": {
+        "id": "mb820-api-tips",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips",
+        "checked_at": "2026-09-28T12:15:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips",
+        "content_type": "text/html",
+        "page_title": "Tips for working with the APIs - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips",
+        "duration_signals": [],
+        "signal_fingerprint": "b5edee9faf5697405fd0fd927d26723dd75b5d7f00bb2f169ac252163fc6ae41",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips",
+      "sha256": "f2cea59e7d3217d08af69f7d0ebdffc31bbd2b5b69df641f2d8a9f0a37235035",
+      "text_characters": 6218
+    },
+    {
+      "id": "mb820-read-scale",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview",
+      "checked_at": "2026-09-28T12:15:53.600487+00:00",
+      "health": {
+        "id": "mb820-read-scale",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview",
+        "checked_at": "2026-09-28T12:15:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview",
+        "content_type": "text/html",
+        "page_title": "Using Read Scale-Out for Better Performance - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "4d68ab189d2d753eec3af9886a90b352bf02a6e9bf25b5276f658bd6f7d856f4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview",
+      "sha256": "c9ddc8263b0c27d38cb07daa3090784cdc9136462c109e80ed3b931621fbfbd5",
+      "text_characters": 6290
+    },
+    {
+      "id": "mb820-partial",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records",
+      "checked_at": "2026-09-28T12:15:53.822871+00:00",
+      "health": {
+        "id": "mb820-partial",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records",
+        "checked_at": "2026-09-28T12:15:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records",
+        "content_type": "text/html",
+        "page_title": "Using partial records - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records",
+        "duration_signals": [],
+        "signal_fingerprint": "2b3812c77397b3e61c594aadab281eb93f45e2c54eced413be217ee582e59920",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records",
+      "sha256": "b9aecef9df854ea5a22fcb34298034ed9d5937e16463417739aa6ad3c1e962ed",
+      "text_characters": 11979
+    },
+    {
+      "id": "mb820-flowfields",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-flowfields",
+      "checked_at": "2026-09-28T12:15:53.904416+00:00",
+      "health": {
+        "id": "mb820-flowfields",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-flowfields",
+        "checked_at": "2026-09-28T12:15:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-flowfields",
+        "content_type": "text/html",
+        "page_title": "FlowFields overview - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-flowfields",
+        "duration_signals": [],
+        "signal_fingerprint": "23de4e7c305d3cd6636d1796171084a850b27955b5242067cf8b8397e8cabe40",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-flowfields",
+      "sha256": "0d67fa2a7b937de4b238b04568af5a3518f6de38ab546b779206bf373ef87a4f",
+      "text_characters": 4968
+    },
+    {
+      "id": "mb820-inherent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions",
+      "checked_at": "2026-09-28T12:16:43.400767+00:00",
+      "health": {
+        "id": "mb820-inherent",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions",
+        "checked_at": "2026-09-28T12:16:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions",
+        "content_type": "text/html",
+        "page_title": "Inherent Permissions - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions",
+        "duration_signals": [],
+        "signal_fingerprint": "79e1cf134564ae88ef900c0fd3a0cc713d094cbbbae765f83dda03a47144698d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions",
+      "sha256": "f57db74fb13b2dc427888ebedbd3e5cdb0ec364588cc1241ffabf7835d0f1cef",
+      "text_characters": 5142
+    },
+    {
+      "id": "mb820-upgrade",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions",
+      "checked_at": "2026-09-28T12:15:54.085192+00:00",
+      "health": {
+        "id": "mb820-upgrade",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions",
+        "content_type": "text/html",
+        "page_title": "Upgrading Extensions - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions",
+        "duration_signals": [],
+        "signal_fingerprint": "b9586073f62504c19b070d2d8853825e3da32e6924acfcc6adc75a1e9dec9360",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions",
+      "sha256": "b381d73150d1a593961d7b0669dc46e5915bb6cbd717f72330d71a7f6496fc8b",
+      "text_characters": 18706
+    },
+    {
+      "id": "mb820-ishandled",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern",
+      "checked_at": "2026-09-28T12:15:54.106233+00:00",
+      "health": {
+        "id": "mb820-ishandled",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern",
+        "content_type": "text/html",
+        "page_title": "Using the IsHandled pattern - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern",
+        "duration_signals": [],
+        "signal_fingerprint": "24ab3e7905e3688082767d98f6477cdbf7c8271eba6847324871c76ca630ec46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern",
+      "sha256": "1e8b57680f4583c16a00a724e8682a25fe45977ca1d07ecdef22b47d05b3908a",
+      "text_characters": 14657
+    },
+    {
+      "id": "mb820-test",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application",
+      "checked_at": "2026-09-28T12:16:43.401484+00:00",
+      "health": {
+        "id": "mb820-test",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application",
+        "checked_at": "2026-09-28T12:16:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application",
+        "content_type": "text/html",
+        "page_title": "Testing the application overview - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application",
+        "duration_signals": [
+          "15 minutes",
+          "2 minutes"
+        ],
+        "signal_fingerprint": "c063c89a541a7327ee00621d6cafdddc043e94e2fdcf574bc2f2ae326900a538",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application",
+      "sha256": "021bf7f2826ba3ed2bc1a13917edb3a2a5395ccbf94e6f8d0f9db4bc498d93e4",
+      "text_characters": 10302
+    },
+    {
+      "id": "mb820-telemetry",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry",
+      "checked_at": "2026-09-28T12:15:54.430573+00:00",
+      "health": {
+        "id": "mb820-telemetry",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry",
+        "content_type": "text/html",
+        "page_title": "Developing telemetry into your Business Central application - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry",
+        "duration_signals": [],
+        "signal_fingerprint": "8c6c9161f9eb8af658f57e1776afca3d4e4594a8e913f8538947dec95ac5f68c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry",
+      "sha256": "91c63b2047d7bc4a47922feaa150af301407120c64592c88c94879eb858265e2",
+      "text_characters": 4624
+    },
+    {
+      "id": "mb820-deprecated",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+      "checked_at": "2026-09-28T12:15:54.504522+00:00",
+      "health": {
+        "id": "mb820-deprecated",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+        "content_type": "text/html",
+        "page_title": "Deprecated features in the client, server, database - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+        "duration_signals": [],
+        "signal_fingerprint": "5feeca1375fdca8dcbfa98db69e78de8b8d9e8ddab753178c4d7ba6b62bbaeda",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+      "sha256": "1a3507ace024f478858e06d819f86263840caf590f70358a9269205384816067",
+      "text_characters": 38026
+    },
+    {
+      "id": "mb820-api-custom",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api",
+      "checked_at": "2026-09-28T12:15:54.621425+00:00",
+      "health": {
+        "id": "mb820-api-custom",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api",
+        "content_type": "text/html",
+        "page_title": "Developing a custom API - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api",
+        "duration_signals": [],
+        "signal_fingerprint": "b4f9966575c751770721a73823a06567a313b9d34431a402050336c20cb8429d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api",
+      "sha256": "b366b4183ad8287a54418d1dbfe252244928ab304dbd1383ac324a05f3d38740",
+      "text_characters": 21878
+    },
+    {
+      "id": "mb820-outbox-blog",
+      "url": "https://demiliani.com/2026/09/01/why-your-business-central-job-queue-needs-idempotent-external-effects-when-integrating-external-systems/",
+      "checked_at": "2026-09-28T12:15:54.821592+00:00",
+      "health": {
+        "id": "mb820-outbox-blog",
+        "url": "https://demiliani.com/2026/09/01/why-your-business-central-job-queue-needs-idempotent-external-effects-when-integrating-external-systems/",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://demiliani.com/2026/09/01/why-your-business-central-job-queue-needs-idempotent-external-effects-when-integrating-external-systems/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Why your Business Central job queue needs idempotent external effects when integrating external systems.",
+        "canonical_url": "https://demiliani.com/2026/09/01/why-your-business-central-job-queue-needs-idempotent-external-effects-when-integrating-external-systems/",
+        "duration_signals": [],
+        "signal_fingerprint": "60737ec5a539478068028a2947d5317e6330843ba1efc1c1411800ad8052a2c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://demiliani.com/2026/09/01/why-your-business-central-job-queue-needs-idempotent-external-effects-when-integrating-external-systems/",
+      "sha256": "c76606ea18a438a6dd2d6ea043f3f0e1df1490306e0a5ec4ec623b09d0024046",
+      "text_characters": 10594
+    },
+    {
+      "id": "mb820-api-blog",
+      "url": "https://thinkaboutit.be/2026/03/api-pages-vs-api-queries-in-business-central-when-to-use-each/",
+      "checked_at": "2026-09-28T12:15:54.894671+00:00",
+      "health": {
+        "id": "mb820-api-blog",
+        "url": "https://thinkaboutit.be/2026/03/api-pages-vs-api-queries-in-business-central-when-to-use-each/",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://thinkaboutit.be/2026/03/api-pages-vs-api-queries-in-business-central-when-to-use-each/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "API Pages vs API Queries in Business Central: When to Use Each",
+        "canonical_url": "https://thinkaboutit.be/2026/03/api-pages-vs-api-queries-in-business-central-when-to-use-each/",
+        "duration_signals": [],
+        "signal_fingerprint": "8962e8f6b822f34f09b6b7f731c7ae5616626081d04d437ecd13ffb95afdf8d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://thinkaboutit.be/2026/03/api-pages-vs-api-queries-in-business-central-when-to-use-each/",
+      "sha256": "2229349434aa523f33c90bf1bb955e51350ab93a87f753a6c797cce5b7937721",
+      "text_characters": 15929
+    },
+    {
+      "id": "mb820-al-go",
+      "url": "https://github.com/microsoft/AL-Go",
+      "checked_at": "2026-09-28T12:15:54.898881+00:00",
+      "health": {
+        "id": "mb820-al-go",
+        "url": "https://github.com/microsoft/AL-Go",
+        "checked_at": "2026-09-28T12:15:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/microsoft/AL-Go",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - microsoft/AL-Go: The plug-and-play DevOps solution for Business Central app development on GitHub",
+        "canonical_url": "https://github.com/microsoft/AL-Go",
+        "duration_signals": [],
+        "signal_fingerprint": "3e634dcb6a28fc3a8fcfb051d3291ba1da7c162ffd9c6f4df7dbbd70cecdf8e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/microsoft/AL-Go",
+      "sha256": "d43082d717744c905fe8fcd3f50db61674dda07c45ea74d023f9eb6fabf19591",
+      "text_characters": 6273
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T12:15:55.458924+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T12:15:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "2dd6f90eadcc6d9e23b11fd6b7ca1b7c5897df329765c517e042b0339ecbedbc",
+      "text_characters": 8483
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T12:15:56.180552+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T12:15:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb820-batch",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch",
+      "checked_at": "2026-09-28T12:16:43.401981+00:00",
+      "health": {
+        "id": "mb820-batch",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch",
+        "checked_at": "2026-09-28T12:16:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch",
+        "content_type": "text/html",
+        "page_title": "Using OData transactional $batch requests - Business Central",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch",
+        "duration_signals": [],
+        "signal_fingerprint": "7e7ca33b63f621c7e707cbecac410c92043aca228757ffc1af494159a7fb65f5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch",
+      "sha256": "049174200f631ec17ea0241b983c37edb0927c719e603b04dcd83fb681cd88c6",
+      "text_characters": 3956
+    }
+  ],
+  "added_source_ids": [
+    "mb820-try",
+    "mb820-commit",
+    "mb820-codeunit-run",
+    "mb820-http",
+    "mb820-api",
+    "mb820-api-tips",
+    "mb820-read-scale",
+    "mb820-partial",
+    "mb820-flowfields",
+    "mb820-inherent",
+    "mb820-upgrade",
+    "mb820-ishandled",
+    "mb820-test",
+    "mb820-telemetry",
+    "mb820-deprecated",
+    "mb820-api-custom",
+    "mb820-batch",
+    "mb820-outbox-blog",
+    "mb820-api-blog",
+    "mb820-al-go"
+  ],
+  "findings": [
+    {
+      "id": "mb820-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Prior snapshot was condensed",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "17 summary rows represent75 detailed objectives on the unchanged June2025 baseline.",
+      "recommendation": "Preserve previous evidence and restore canonical text.",
+      "disposition": "applied",
+      "source_id": "mb-820-blueprint",
+      "resolution": "Preserve previous evidence and restore canonical text."
+    },
+    {
+      "id": "mb820-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Caught try errors do not imply rollback",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Writes are not automatically rolled back; consumed-return calls differ.",
+      "recommendation": "Correct broad rollback prose and add boundary exercise.",
+      "disposition": "applied",
+      "source_id": "mb820-try",
+      "resolution": "Correct broad rollback prose and add boundary exercise."
+    },
+    {
+      "id": "mb820-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Boolean Codeunit.Run commits successful work",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Existing transaction and implicit commit behavior change atomicity.",
+      "recommendation": "Add explicit contract and avoid casual precommit.",
+      "disposition": "applied",
+      "source_id": "mb820-codeunit-run",
+      "resolution": "Add explicit contract and avoid casual precommit."
+    },
+    {
+      "id": "mb820-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Sandbox cannot demonstrate replica lag",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Read scale-out is unavailable in sandboxes; intent does not guarantee routing.",
+      "recommendation": "Correct lab evidence boundary and explain precedence.",
+      "disposition": "applied",
+      "source_id": "mb820-read-scale",
+      "resolution": "Correct lab evidence boundary and explain precedence."
+    },
+    {
+      "id": "mb820-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Transactional batch depends on commit behavior",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Isolation snapshot shares a session; intervening commits split transactions.",
+      "recommendation": "Add failure/partial-persistence example.",
+      "disposition": "applied",
+      "source_id": "mb820-batch",
+      "resolution": "Add failure/partial-persistence example."
+    },
+    {
+      "id": "mb820-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "HTTP controls have advanced since older training",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Certificate validation and anti-SSRF vary by version/deployment.",
+      "recommendation": "Add supported outbound controls and separate transport/status/payload outcomes.",
+      "disposition": "applied",
+      "source_id": "mb820-http",
+      "resolution": "Add supported outbound controls and separate transport/status/payload outcomes."
+    },
+    {
+      "id": "mb820-deep-7",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Upcoming removals have specific scope",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "v29 Microsoft-page SOAP and data-only permissions; v30 Microsoft-page OData and PTE upload transition.",
+      "recommendation": "Add versioned migration table without claiming all SOAP/OData removed.",
+      "disposition": "applied",
+      "source_id": "mb820-deprecated",
+      "resolution": "Add versioned migration table without claiming all SOAP/OData removed."
+    },
+    {
+      "id": "mb820-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Inherent grant cannot be casually administered away",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Same-extension scope and code-defined permission/entitlement grant.",
+      "recommendation": "Add least-privilege design and output boundary.",
+      "disposition": "applied",
+      "source_id": "mb820-inherent",
+      "resolution": "Add least-privilege design and output boundary."
+    },
+    {
+      "id": "mb820-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Tags require new-company and install handling",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Upgrade order between codeunits is not guaranteed.",
+      "recommendation": "Add scoped migration/replay exercise.",
+      "disposition": "applied",
+      "source_id": "mb820-upgrade",
+      "resolution": "Add scoped migration/replay exercise."
+    },
+    {
+      "id": "mb820-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "IsHandled is not a default override mechanism",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Microsoft recommends minimizing validation/event bypass.",
+      "recommendation": "Correct name and prefer intentional interfaces/additive events.",
+      "disposition": "applied",
+      "source_id": "mb820-ishandled",
+      "resolution": "Correct name and prefer intentional interfaces/additive events."
+    },
+    {
+      "id": "mb820-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Partial record can trigger extra loads",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Pass-by-value and unloaded-field access affect performance/consistency.",
+      "recommendation": "Add measured payload/JIT exercise and bounded claims.",
+      "disposition": "applied",
+      "source_id": "mb820-partial",
+      "resolution": "Add measured payload/JIT exercise and bounded claims."
+    },
+    {
+      "id": "mb820-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Online production cannot run automated tests",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-820"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Sandbox usage is restricted; containers suit large suites.",
+      "recommendation": "Correct test-lab environment expectations.",
+      "disposition": "applied",
+      "source_id": "mb820-test",
+      "resolution": "Correct test-lab environment expectations."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mb820-outbox-blog",
+      "decision": "accepted-bounded",
+      "author": "Stefano Demiliani",
+      "published_on": "2026-09-01",
+      "notes": "Main failure explanation, illustrative snippets, stable recipient-enforced identity and delete discussion read. Accept failure exercise, not blanket rollback/retry/404 semantics. Snippets not compiled; original sequential local model explicitly limited."
+    },
+    {
+      "source_id": "mb820-api-blog",
+      "decision": "accepted-bounded",
+      "author": "Steven Renders",
+      "published_on": "2026-03-17",
+      "notes": "Complete main March17,2026 article read. Accept contract-selection prompts only; reject overly broad SOAP/OData deprecation and guaranteed-replica implications, universal query-first and unmeasured performance rules. Comments/linked sources not exhaustively audited."
+    },
+    {
+      "source_id": "microsoft-ai-at-work-roadmap-transition",
+      "decision": "accepted-bounded",
+      "author": "Richard Riley",
+      "published_on": "2026-08-25",
+      "notes": "Complete main August25 transition announcement read in this sequential review context; September disclosures and planned November15 retirement, no automated feed ingestion."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "32 assertions for actual recipient block, duplicate/conflicting/cross-company identity, SQLite fanout/preaggregation, upgrade/payload/outcome and catalog calculations."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No AL compiler, tenant, container, app deployment, HTTP endpoint, paid-content, webinar or assessment execution.",
+    "Sequential in-memory recipient and SQLite join/calculation examples do not implement durable/concurrent idempotency or prove AL runtime behavior.",
+    "Long sources read in recorded sections; complete platform history, permission/localization/version matrices and linked procedures not exhaustively audited.",
+    "Sandbox read-intent exercise cannot establish replica routing/lag. Blog deprecation/replica generalizations and broad rollback language were not adopted.",
+    "OReilly direct access blocked; public indexed metadata separately recorded. Partner/community/practice shells unavailable and other commercial catalogs not comprehensively searched again.",
+    "Webinar recommendation withheld pending clarity about original question provenance; listing wording alone does not establish misuse.",
+    "Same-context AI review; independent human review and live lab validation remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "replay_identity_join_grain_upgrade_payload_outcome_catalog_assertions": 32,
+    "python_blocks_executed": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/mb-820-2026-09-01-official-objectives.txt",
+    "sha256": "dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf",
+    "note": "Archive17-row summary; restore canonical75-objective June2025 baseline, not new scope."
+  },
+  "snapshot_comparison": {
+    "previous_condensed_bullets": 17,
+    "current_detailed_bullets": 75,
+    "current_group_counts": [
+      4,
+      3,
+      4,
+      5,
+      5,
+      7,
+      3,
+      4,
+      3,
+      5,
+      6,
+      4,
+      10,
+      3,
+      3,
+      3,
+      3
+    ],
+    "baseline": "June 10, 2025",
+    "baseline_change": false,
+    "note": "Previous17-row summary condenses six domains; canonical75-objective extraction restores detail on unchanged baseline."
+  },
+  "public_learning_path_module_counts": {
+    "best_practices": 7,
+    "customization": 8,
+    "reports": 11,
+    "al": 10,
+    "data": 3,
+    "interface": 6,
+    "ui": 5,
+    "standards": 4,
+    "total_placements": 54,
+    "linked_units_read": false
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "mb-820-oreilly-companion",
+      "checked_on": "2026-09-28",
+      "method": "Public browser-indexed metadata/contents; direct fetch blocked",
+      "observed_metadata": {
+        "author": "Dr. Gomathi S",
+        "publisher": "Apress",
+        "published": "November2024",
+        "pages": 317,
+        "platform_reading_estimate": "3h48",
+        "format": "book"
+      },
+      "limitation": "No paid chapters/questions read."
+    },
+    {
+      "source_id": "mb-820-plataan-webinar",
+      "checked_on": "2026-09-28",
+      "method": "Public provider listing",
+      "observed_sessions": [
+        "2026-10-13/2026-10-14",
+        "2026-11-26/2026-11-27"
+      ],
+      "decision": "Remove recommendation pending clarity about original exercise provenance; no session/question access."
+    }
+  ],
+  "local_example_output": "created existing 4\n"
+}

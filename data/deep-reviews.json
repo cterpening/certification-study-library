@@ -5,6 +5,27 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "MB-820",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "2e6fe4344ecc6c46b33b04960cdb8f597932f536acd7b6b5ec76cba89cb84b2b",
+      "objective_count": 75,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-28-mb-820-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-mb-820-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "No AL compiler, tenant, container, app deployment, HTTP endpoint, paid-content, webinar or assessment execution.",
+        "Sequential in-memory recipient and SQLite join/calculation examples do not implement durable/concurrent idempotency or prove AL runtime behavior.",
+        "Long sources read in recorded sections; complete platform history, permission/localization/version matrices and linked procedures not exhaustively audited.",
+        "Sandbox read-intent exercise cannot establish replica routing/lag. Blog deprecation/replica generalizations and broad rollback language were not adopted.",
+        "OReilly direct access blocked; public indexed metadata separately recorded. Partner/community/practice shells unavailable and other commercial catalogs not comprehensively searched again.",
+        "Webinar recommendation withheld pending clarity about original question provenance; listing wording alone does not establish misuse.",
+        "Same-context AI review; independent human review and live lab validation remain pending."
+      ]
+    },
+    {
       "exam_code": "MB-800",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "2031a157af330803a99956115b1a9f2402d1cd6c122bc2d74773a959b5370583",

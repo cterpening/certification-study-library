@@ -849,6 +849,8 @@ The review maps every June 30, 2026 subobjective to a company/setup/master recor
 
 ## MB-820 coverage record
 
+The September 28 [deep review](research/2026-09-28-mb-820-deep-review.md) maps 75 detailed objectives. Entire guide and 75 June 2025 objectives mapped; prior 17-row summary preserved. Six worked examples, ten labs, 48 answered checks, one executed local recipient model and 32 assertions. Clarify try/commit/API transactions, sandbox read-scale limits, upgrades/permissions, HTTP/deprecations and catalog/blog scope. No AL or tenant execution; independent human review pending. Current guide citations: 39 registered, 38 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Describe Business Central | Section 1, compliance-extension scenario, and Lab 1 |

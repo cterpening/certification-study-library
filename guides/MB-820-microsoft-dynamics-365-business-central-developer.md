@@ -6,20 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # MB-820 Microsoft Dynamics 365 Business Central Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Checked against the June 10, 2025 official objective baseline and cited public sources on September 1, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). The [official MB-820 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Checked against the June 10, 2025 official objective baseline and cited public sources on September 28, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mb-820-coverage-record). The [official MB-820 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) is authoritative.
 
 **Current baseline:** Skills measured as of June 10, 2025.<br>
-**Upcoming blueprint change:** None announced as of September 1, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026.<br>
 **Lifecycle:** The [Business Central Developer Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/) is active, renews every 12 months, and has no announced retirement. The exam is 100 minutes, is offered in seven languages, and has a free Practice Assessment.<br>
 **Freshness warning:** The published objective baseline is more than a year old. The 2025 change log mainly revised environment details and APIs; verify current Business Central runtime, AL extension, AppSource, authentication, testing, telemetry and API guidance before implementing a lab.<br>
 **Official source:** [MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820)
+
+The [September deep review](../docs/research/2026-09-28-mb-820-deep-review.md) maps **75 detailed objectives**. The older 17-bullet summary is archived; the June 2025 baseline has not changed. Current runtime behavior and announced future removals are distinguished below.
 
 ## How to use this guide
 
@@ -73,6 +75,19 @@ Design the trial, setup, upgrade, uninstall and data-retention experience as pro
 
 ---
 
+### Current deployment and endpoint transitions
+
+The [platform deprecation register](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform) describes these version boundaries. Record the actual tenant version before reproducing older training:
+
+| Area | Documented boundary | Learning action |
+|---|---|---|
+| SaaS per-tenant app administration | From 2026 wave 1, use Business Central Admin Center or its API; in-client upload/installation is expected to be removed in 2027 wave 1 | Distinguish viewing installed apps from deploying a package; update CI deployment targets |
+| Microsoft UI pages exposed as SOAP | Removal specified for v29 / 2026 wave 2 | Inventory affected endpoints and design supported APIs; this is not a claim that every SOAP endpoint is already removed |
+| Microsoft-published pages exposed as OData | Removal specified for v30 / 2027 wave 1 | Use a purpose-built integration contract; the announced scope is not all OData queries or custom APIs |
+| On-premises data-only permission sets | `UsePermissionSetsFromExtensions=false` ceases to be supported in v29 | Migrate permission definitions to AL objects and test effective access |
+
+These are product changes, not newly added exam objectives. Future release dates are not proof that a particular tenant has been upgraded.
+
 ## 2. Install, develop and deploy for Business Central
 
 ### Configure the development environment
@@ -93,6 +108,10 @@ Translation uses generated XLIFF and stable labels. Localize captions, messages,
 
 ---
 
+**Upgrade proof needs old data.** [Upgrade codeunits](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions) run preconditions, transformation and validation at company or database scope. Order among separate upgrade codeunits is not guaranteed. An upgrade tag prevents repeating a completed migration; register applicable tags for new companies and first-time installations too. Distinguish the installed data version from the target app version. Test a fresh install, every supported upgrade origin, failure/retry and a second company.
+
+[AL-Go for GitHub](https://github.com/microsoft/AL-Go) provides separate PTE and AppSource templates plus build/test/release workflows. Use its documented update mechanism for shared workflow files, review the change and rerun compatibility tests. A successful pipeline is evidence about the tested artifact/environment; it does not replace data-upgrade or business acceptance checks.
+
 ## 3. Develop by using AL objects
 
 ### Tables, enums and pages
@@ -106,6 +125,8 @@ Choose page types by interaction: List/Card for master records, Document/Workshe
 Role Centers combine navigation, activities/cues, lists, headlines and parts around a job. Cues should have a clear filter, time/company scope and drill-through. Avoid expensive synchronous calculations on page open.
 
 > **Related item:** A table defines durable data and rules; a page presents an interaction; a page extension modifies presentation; a profile selects a role experience. Keeping business logic out of pages improves reuse and testing.
+
+**FlowFields are calculations, not stored values.** [FlowField documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-flowfields) explains that hidden page FlowFields can still be calculated. From v26, the Calculate only visible FlowFields feature can change that behavior. Record the feature state before comparing timings, and use explicit calculation when code needs a value. Hiding a field does not revoke access.
 
 ### Reports
 
@@ -123,7 +144,7 @@ Query objects join data items, select/filter/sort columns and aggregate supporte
 
 ### Codeunits, events and interfaces
 
-Codeunits encapsulate business behavior, services, subscribers, tests and lifecycle code. Keep procedures cohesive and expose the smallest stable surface. A table/page trigger belongs to that object's lifecycle; an integration/business event announces an extensibility point; a subscriber reacts without modifying the publisher. Avoid ordering assumptions among independent subscribers. IncludeHandled patterns can be powerful but create coupling and should follow current standard guidance.
+Codeunits encapsulate business behavior, services, subscribers, tests and lifecycle code. Keep procedures cohesive and expose the smallest stable surface. A table/page trigger belongs to that object's lifecycle; an integration/business event announces an extensibility point; a subscriber reacts without modifying the publisher. Avoid ordering assumptions among independent subscribers. The pattern is named `IsHandled`. Microsoft recommends minimizing it because one subscriber can bypass validation and suppress later events. Prefer a meaningful interface or additive event; where the pattern is unavoidable, respect an already handled result and test coexistence with another extension. See [IsHandled guidance](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern).
 
 Interfaces separate contract from implementations and can pair with enums for strategy selection. Define default/unknown behavior so a new extension value does not crash older consumers. Installation codeunits initialize new installs; upgrade codeunits move data based on versions/tags and must be tested with realistic prior data.
 
@@ -134,6 +155,8 @@ Permission-set objects grant object permissions and may include/extend other set
 > **Related item:** An entitlement establishes license-level availability; a permission set grants capabilities to users; inherent permissions apply to code execution. None should substitute for validating record scope or sensitive operations.
 
 ---
+
+**Inherent permission has a narrow but consequential scope.** [InherentPermissions](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions) applies only to objects in the same extension. Its optional scope can cover permissions, entitlements or both; the default is Both. It grants capability during the method/event execution, and administrators cannot remove that grant through ordinary permission-set management. Use small, controlled operations with explicit output boundaries; it is not a blanket override for another publisher's sensitive tables.
 
 ## 4. Develop by using AL
 
@@ -159,11 +182,15 @@ Statements and expressions implement branches, loops and calculations. Built-in 
 
 Files in cloud scenarios generally flow through streams, temporary blobs and upload/download abstractions rather than arbitrary server paths. Validate type/size/encoding, sanitize names, protect content and dispose/clear state. Never store secrets in source, labels or downloadable configuration.
 
-Errors roll back the current transaction under the applicable behavior. Use `Error` for invalid operations, try methods only where recovery is intentional, and error collection where multiple validation findings improve the user experience. Do not swallow exceptions. User messages must explain action, context and remediation without exposing secrets or internals.
+An unhandled error normally aborts the current uncommitted database work; it does not undo earlier commits or remote effects. A caught [try-method error](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods) is different: database writes in that method are not automatically rolled back. Consuming the Boolean return catches the error; calling the same attributed procedure without consuming its return behaves like an ordinary call. Online permits writes inside try methods, while on-premises blocks them by default. Keep recoverable parsing/validation separate from writes.
+
+Consuming the Boolean result of [Codeunit.Run](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method) introduces its own transaction contract: success commits that codeunit's changes, and an existing transaction must be committed before such a call. Do not add that precommit casually to a business operation that must be atomic. [CommitBehavior](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/attributes/devenv-commitbehavior-attribute) affects explicit commits within its scope, not the implicit commit from Codeunit.Run. Use error collection for user-correctable validation findings and preserve actionable error details without secrets.
 
 > **Related item:** Access modifiers limit which AL consumers call code; permission sets limit what a user/code path may access; data classification describes sensitivity. Secure extensions need all three.
 
 ---
+
+For read-heavy loops, [partial records](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records) select required fields before fetching. Touching an unloaded field triggers another load and can expose a concurrent modification/delete. Passing a partial record by value can cause repeated loads because the original iterator is not updated. Select the fields needed by called code; benchmark reads and writes separately instead of adding `SetLoadFields` everywhere.
 
 ## 5. Work with development tools
 
@@ -172,6 +199,8 @@ Errors roll back the current transaction under the applicable behavior. Use `Err
 Install/run the Test Toolkit in an appropriate test environment and know the difference between Microsoft standard tests, your extension tests and user acceptance/page scripting. Test codeunits and test procedures need deterministic setup, action and assertion; use handler functions for UI interactions and isolation/rollback behavior as supported.
 
 Cover happy path, validation, permission, upgrade, localization, concurrency, posting and integration failure. Create data through supported APIs/helpers where possible so tests do not depend on a tenant snapshot. CI should compile with analyzers, run tests, retain results and block incompatible artifacts. Page scripting can accelerate acceptance paths, but it does not replace AL unit/integration tests.
+
+The [testing support matrix](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application) disallows automated tests in Business Central online production. Online sandboxes support bounded manual verification, with restrictions on long or extensive runs; container-based environments are the documented default for large suites and CI gates. Test pages simulate interaction without displaying the actual client UI. Use a test runner and handlers so unexpected dialogs fail the test, and use `ASSERTERROR` only in test code.
 
 ### Telemetry and performance
 
@@ -183,6 +212,8 @@ Start performance work with evidence: slow AL/database calls, long-running repor
 
 ---
 
+Use the supported [custom telemetry destinations](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-instrument-application-for-telemetry): Application Insights for online/on-premises, and Windows event log only on-premises. Define event meaning, correlation and dimensions before writing a signal. Count eventual business outcomes separately from retry attempts; otherwise a healthy recovery mechanism can make an attempt-based chart look like a business failure spike.
+
 ## 6. Integrate Business Central with other applications
 
 ### Call REST services from AL
@@ -190,6 +221,10 @@ Start performance work with evidence: slow AL/database calls, long-running repor
 Use `HttpClient`, request/response/content/header types and JSON types to build a bounded outbound contract. Define method/URI, authentication, headers, timeout, request body, success statuses, response schema, correlation, retry and idempotency before coding. Outbound HTTP calls may need explicit permission/configuration. Keep credentials in an approved secret mechanism, use TLS and least privilege, and never log tokens or payload secrets.
 
 Serialize with `JsonObject`, `JsonArray`, `JsonToken` and `JsonValue`; test missing, null, additional, wrong-type and oversized data. Check both transport completion and HTTP status. Bound retries to transient responses with jitter and idempotency; do not retry validation/authentication failures blindly. Avoid external calls inside a long database transaction because remote latency/failure extends locks and complicates rollback.
+
+**Current outbound controls.** The [HttpClient reference](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient) requires Allow HttpClient Requests for each relevant app, including libraries. Distinguish failure to obtain an HTTP response from a non-success response and from an invalid successful payload. Server-certificate checks default on from v26; v27 removes the old feature-key bypass. Fix the endpoint trust/hostname/chain rather than using disabled validation as the lab solution. A client certificate does not validate the server certificate. Online anti-SSRF controls block internal-IP destinations and cannot be disabled; on-premises behavior depends on supported platform settings. Keep those deployment differences explicit.
+
+An external service may succeed before AL reports a timeout or a later local failure. A retried write needs a stable operation identity and recipient-side deduplication or a genuinely idempotent business operation. A local Processed flag alone cannot close that failure window.
 
 ### Implement Business Central APIs
 
@@ -200,6 +235,70 @@ Bound actions operate on a resource; unbound actions represent service operation
 > **Related item:** An API page exposes an inbound service resource, while `HttpClient` calls an outbound service. Both use HTTP/JSON, but ownership, authentication, retries, versioning and transaction boundaries reverse.
 
 ---
+
+### API compatibility, atomicity and read consistency
+
+[API pages and queries cannot be extended](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-api-pagetype) through ordinary extension objects; publish a new supported API contract when the existing one lacks a field. Follow [custom-API identity guidance](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-develop-custom-api): a stable SystemId GUID and explicit publisher/group/version/entity names make a better integration key than a mutable display number. An API page supports permitted writes; an API query provides a read model. Select based on required operations, joins, shape, subscriptions and measured performance.
+
+For [transactional OData batches](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch), `Isolation: snapshot` runs the inner requests in one session. Atomic rollback depends on the invoked AL code not committing partway through. Explicit commits split the transaction; review implicit Codeunit.Run boundaries too. A batch envelope or successful outer HTTP response alone does not prove every business operation succeeded.
+
+[Data-access intent](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-connect-apps-tips) can be overridden: the Database Access Intent List takes precedence over the request header, which takes precedence over the object's default. Modification requests require ReadWrite. ReadOnly expresses intent and does not guarantee replica routing. Most importantly, [online sandboxes cannot enable read scale-out](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview): their objects run against the primary, so a sandbox cannot demonstrate production replica delay. Use a local lag model for learning and authorized production-like telemetry for an actual routing/consistency claim.
+
+## Worked examples
+
+These original models isolate specific behaviors. The Python example runs locally; no AL compiler, Business Central server or external service was used.
+
+### 1. Trace what an error can still leave behind
+
+Start with an uncommitted update from 100 to 120. If an ordinary unhandled error aborts that transaction, the durable value remains 100. If the update was committed before the error, 120 remains. If a try-method error is caught, do not infer rollback: continuing and later committing can preserve earlier writes. Add a remote shipment to the timeline; a database rollback cannot recall that shipment. Label each boundary before deciding where recovery belongs.
+
+### 2. Retry an external effect with the same identity
+
+The recipient must atomically combine its deduplication record and effect. This single-threaded model demonstrates the contract only; it does not implement concurrency, persistence, authentication or retry scheduling.
+
+```python
+class Recipient:
+    def __init__(self):
+        self.requests = {}
+        self.shipped = 0
+
+    def accept(self, company, operation_id, quantity):
+        key = (company, operation_id)
+        if key in self.requests:
+            if self.requests[key] != quantity:
+                raise ValueError("Same operation ID has different content")
+            return "existing"
+        self.requests[key] = quantity
+        self.shipped += quantity
+        return "created"
+
+recipient = Recipient()
+pending = ("CRONUS-A", "dispatch-17", 4)
+first = recipient.accept(*pending)
+# Assume the sender fails before recording the response; pending survives.
+retry = recipient.accept(*pending)
+print(first, retry, recipient.shipped)  # created existing 4
+```
+
+Generating a new ID on retry would create another four-unit shipment. Reusing the ID with a different quantity must fail rather than silently return an unrelated result. A retained outbox row supplies identity across retries; recreating it requires preserving the original business-operation identity. Do not treat every DELETE 404 as success without checking endpoint and resource identity.
+
+### 3. Joining at the wrong grain doubles a report
+
+An order has two lines worth 100 and 50 and two shipment records. Joining lines to shipments by order alone produces four rows and a line sum of 300. The correct order value is 150. Aggregate each child collection to order grain first, or link by the intended line relationship. A query that executes quickly can still be wrong; reconcile row counts and totals before measuring speed.
+
+### 4. A commit breaks all-or-nothing batching
+
+Suppose a transactional batch sets A to 10, then B to 20, then fails validation, starting from A=B=0. With no intermediate commit, both remain zero after rollback. If the first request commits, A can remain 10 while later work rolls back. Inspect called code and subscribers; CommitBehavior is not a universal shield against every implicit commit. Compare returned inner results with persisted records.
+
+### 5. Upgrade every company exactly once
+
+Company A has 100 legacy records and B has 40. A company-scoped migration must transform 140 records across the two companies, then zero on a completed rerun. A single incorrectly shared completion flag could skip B's 40. Test a failure before completion, successful retry, new company and fresh installation; tag registration is part of the lifecycle, not merely a final line in a migration procedure.
+
+### 6. Measure payload and business outcomes separately
+
+For a hypothetical 1,000-row response, reducing selected data from 1,000 to 160 bytes per row changes the payload model from 1,000,000 to 160,000 bytes: 84% less, excluding protocol overhead. This is not an 84% latency guarantee, and subsequent JIT loads can erase the benefit.
+
+Separately, 100 business operations make 120 HTTP attempts. Eighty succeed first time; twenty retry, fifteen then succeed and five ultimately fail. Eventual success is 95/100 = 95%; successful attempts are 95/120 ≈ 79.17%. Record both denominators and the five unresolved operations. A replica-lag demonstration needs observed lag; a sandbox's immediate primary read cannot establish a production bound.
 
 ## Integrated scenarios
 
@@ -219,53 +318,116 @@ A versioned API page exposes a bounded outbound-order resource with SystemId/ETa
 
 ## Hands-on labs
 
-1. **Architecture/app:** Diagram online/on-prem and platform/System/Base/extension ownership; create dependency/update/AppSource validation and breaking-change policies.
-2. **Environment/lifecycle:** Configure AL project/workspace, symbols, analyzers and source; debug, package, publish, install, upgrade from prior data and test uninstall/data retention.
-3. **Data/UI/security:** Build/extend table, enum, page, Role Center and profile; add keys/relations/FlowField/classification, permission set and least-privilege tests.
-4. **Reports/exchange/query:** Build a document report with request page/two layouts/language, an XMLport and an aggregated query; measure nested-loop replacement.
-5. **Logic/patterns:** Implement codeunit, procedures, event publisher/subscribers and interface strategy using master/document/ledger conventions and transaction-safe errors.
-6. **Onboarding/files:** Add Assisted Setup, teaching tips, tour and checklist; import/export through streams/temp blob with size/type/encoding/error controls.
-7. **Tests/telemetry:** Create test codeunits for validation, permissions, posting, upgrade and failure; run standard/custom tests and add privacy-safe custom telemetry/alert criteria.
-8. **Integration/API:** Build outbound HttpClient/JSON logic and a versioned API page/action with auth, pagination, ETag, retry/idempotency, reconciliation and read-scale consistency tests.
+Use synthetic data in an appropriate development/test environment. These tenant labs were not executed during this review.
 
-## Knowledge checks
+1. **Architecture and release:** Map ownership/dependencies and compare current tenant version with the v29/v30 deprecation scopes. Inventory one endpoint and one deployment job requiring migration.
+2. **Lifecycle:** Build a small extension and test publish/sync/install/upgrade from prior data. Add a company-scoped upgrade tag; prove retry, second company and fresh install behavior.
+3. **Data/UI/security:** Extend a table/page, enum/interface, Role Center and profile. Test validation, permissions and inherent-permission output under a nonadministrator.
+4. **Reports/query/XMLport:** Build a two-layout multilingual report and an import/export. Inject the fan-out from example 3, repair the grain and compare totals; check empty and large inputs.
+5. **Errors/events:** Compare ordinary errors, caught try methods and Boolean Codeunit.Run using disposable records. Observe persisted results and test two subscribers without an ordering dependency.
+6. **Onboarding/files:** Add Assisted Setup, tips and checklist with a durable completion test. Reject malformed/oversized files without leaving partial setup.
+7. **Automated tests:** Use a test runner, handlers and expected-error assertions. Execute a larger suite only in a suitable container/CI setup; retain results for the exact package and version.
+8. **Performance/telemetry:** Benchmark selected fields and intentional JIT loads, test FlowField feature states and count attempt versus eventual outcomes. Keep confidential values out of telemetry.
+9. **Outbound integration:** Reproduce the lost-response/retry model locally, then use an authorized mock service for transport/status/payload errors, idempotency conflict and certificate failure. Verify the stable identity reaches the recipient.
+10. **Inbound API:** Test SystemId, versioning, permissions, concurrency, pagination and bound/unbound actions. Inject a transactional-batch failure with and without a deliberate intermediate commit. Label sandbox read-intent results as primary-only; model lag separately.
 
-1. Which responsibilities differ between Business Central online and on-premises?
-2. How do platform, System Application, Base Application and extensions differ?
-3. Why can a supported dependency still hide behavioral coupling?
-4. How does an AppSource app differ from a per-tenant extension?
-5. Which settings belong in `app.json` versus launch/workspace configuration?
-6. How do multi-project workspaces and dependencies avoid circular coupling?
-7. Compare publish, synchronize, install, upgrade and uninstall.
-8. What makes upgrade code safe across every supported prior version?
-9. When use a table versus table extension?
-10. How do key selection and FlowField/SumIndexField use affect performance?
-11. When should an enum work with an interface?
-12. How do page, page extension, profile and permission set divide responsibility?
-13. What makes a Role Center cue actionable and performant?
-14. How do report data model, request page and layout differ?
-15. When use report extension, substitution or processing-only report?
-16. When is XMLport the right exchange tool?
-17. Why can a query outperform record loops, and when might it not?
-18. Compare object triggers, event publishers and subscribers.
-19. What ordering assumption must independent event subscribers avoid?
-20. How do install and upgrade codeunits differ?
-21. Compare entitlement, permission set and inherent permission.
-22. What paths should least-privilege troubleshooting trace?
-23. How do profiles, views, Assisted Setup, teaching tips and checklists differ?
-24. Why should a checklist have a real completion signal?
-25. Distinguish setup, master, document, journal, ledger and register tables.
-26. Why should posting extensions use standard events rather than parallel ledgers?
-27. When does `Validate` differ materially from assignment?
-28. How should AL filtering and key selection precede loops?
-29. Why are arbitrary server file paths a poor cloud design?
-30. When use try methods or collected errors?
-31. How do standard, extension and acceptance tests complement one another?
-32. What makes custom telemetry safe and actionable?
-33. Which evidence should precede a performance change?
-34. How should an outbound HTTP retry policy classify failures?
-35. What makes an API page a stable versioned contract?
-36. When does Read Scale-Out create an unacceptable consistency risk?
+## Knowledge checks with answers
+
+1. **Online versus on-premises ownership?** Online is managed SaaS; on-premises adds server, database, identity, patching and capacity responsibilities.
+
+2. **System app versus Base app?** Reusable platform-facing modules versus core business application functionality, with declared extension dependencies.
+
+3. **Does compilation prove update compatibility?** No. Test behavior, dependency versions, schema and data upgrades.
+
+4. **PTE versus AppSource?** A tenant customization versus a distributed product with technical, commercial, support and lifecycle validation.
+
+5. **Where should current SaaS PTE deployment run?** Business Central Admin Center or its API; distinguish in-client viewing from the changing upload surface.
+
+6. **Does v29 remove all SOAP?** The cited announced removal concerns Microsoft pages exposed as SOAP; do not widen its scope.
+
+7. **What does the v30 OData removal concern?** Pages in Microsoft-published apps exposed as OData, not all custom APIs and queries.
+
+8. **What belongs in app.json?** Identity/version, dependencies, runtime/application/platform targets, ranges and exposure policy; launch settings describe connection/debug behavior.
+
+9. **How avoid workspace coupling?** Use explicit acyclic dependencies, reproducible symbols/tooling and appropriately scoped public contracts.
+
+10. **Publish, synchronize, install and upgrade?** Package availability, schema compatibility, new-install initialization and existing-data transformation.
+
+11. **What controls migration replay?** Correctly scoped version/tag checks, with fresh-install and new-company registration and failure tests.
+
+12. **Can upgrade codeunits depend on execution order?** No. Separate codeunit order is not guaranteed.
+
+13. **How test multilingual behavior?** Use stable labels/XLIFF, recipient context and layout/grammar tests rather than concatenated messages.
+
+14. **Table versus table extension?** Own a new durable model versus add supported fields/keys to another model without cloning it.
+
+15. **Does direct assignment run field validation?** It differs from Validate; use the supported validation path when business rules must run.
+
+16. **Does hiding a FlowField prevent computation?** Not by default; the v26 visible-FlowFields feature changes the relevant page behavior.
+
+17. **When pair enum and interface?** When named alternatives select implementations of a stable behavioral contract.
+
+18. **Page versus profile versus permission?** Interaction, role experience and access control are separate concerns.
+
+19. **What makes a useful cue?** A defined company/filter/time scope, cheap calculation and correct drill-through.
+
+20. **Dataset, request page and layout?** Data/relationships, user parameters and presentation respectively.
+
+21. **Why reconcile a report after a join?** Child-table fan-out can duplicate values even when the SQL and layout work.
+
+22. **When substitute rather than extend a report?** When the required replacement contract cannot be met through supported dataset/layout extension.
+
+23. **What is a processing-only report?** A report object running logic without rendered output, still requiring transaction and recovery controls.
+
+24. **What must XMLport design specify?** Nodes, format/encoding/direction and validated restartable input/output handling.
+
+25. **Why minimize IsHandled?** It can bypass validation and suppress events; prefer explicit interfaces or additive events.
+
+26. **What ordering can event subscribers assume?** No dependency on the ordering of independent subscribers.
+
+27. **How far can inherent permissions reach?** Only objects in the same extension; choose permission/entitlement scope and constrain output.
+
+28. **Can an admin remove an inherent grant through ordinary sets?** No. The code-defined grant requires a design change, so use it narrowly.
+
+29. **What makes onboarding completion real?** Validated persisted setup, not simply opening a page or clicking Next.
+
+30. **Document, journal, ledger and register?** A business process, prepared postings, posted facts and the grouping of resulting entries.
+
+31. **When do partial records help?** Read-heavy code that selects all needed fields before fetching; omitted fields and write operations can cause extra loads.
+
+32. **Why can pass-by-value hurt partial-record loops?** Loads on the copy do not update the original iterator’s field selection.
+
+33. **How handle files in online code?** Streams and supported upload/download abstractions, with size/type/encoding checks.
+
+34. **Does a caught try-method error roll back writes?** No. Do not treat error capture as an atomic rollback boundary.
+
+35. **What if a try method return is unused?** It behaves as an ordinary call rather than the caught Boolean-return pattern.
+
+36. **What does Boolean Codeunit.Run change?** It commits successful codeunit work and requires an existing transaction to be committed first.
+
+37. **Does CommitBehavior stop implicit Codeunit.Run commits?** No. It controls explicit commits in its scope.
+
+38. **Where run a large automated suite?** A suitable container-based CI environment; online production is disallowed and sandboxes have limits.
+
+39. **Why use handlers and a test runner?** Unexpected UI becomes a test failure and expected UI can be answered and asserted deterministically.
+
+40. **What does telemetry need beyond a message?** Stable event meaning, correlation, safe dimensions, ownership and a metric with a clear denominator.
+
+41. **Which HTTP success levels must be checked?** Transport response obtained, acceptable status and valid business payload/outcome.
+
+42. **Does a client certificate validate the server?** No. Server trust and client authentication are separate.
+
+43. **Can online anti-SSRF be disabled for an internal IP?** No. Use a supported integration architecture and current platform guidance.
+
+44. **What makes an external retry safe?** Stable operation identity plus recipient-side atomic deduplication or an idempotent operation; a local flag alone is insufficient.
+
+45. **Can an API page be extended like a UI page?** No. Create a new versioned contract when needed.
+
+46. **Bound versus unbound action?** An operation tied to a resource instance versus a service operation without that instance binding.
+
+47. **Does Isolation: snapshot guarantee atomicity despite commits?** No. Intermediate commits split the transaction; inspect inner outcomes and stored state.
+
+48. **What does a sandbox prove about read scale-out?** It can exercise the object contract on the primary, but cannot prove replica routing or lag.
 
 ---
 
@@ -276,24 +438,31 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) | Free | 1–2 hours to map six domains and freshness gaps |
-| [Application development best practices](https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/) | Free | 6 hours 17 minutes listed; 12–20 hours with AppSource/upgrade/test work |
-| [Customization foundation](https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/) | Free | 10 hours 8 minutes listed; 22–35 hours building/deploying objects |
-| [Build reports](https://learn.microsoft.com/en-us/training/paths/build-reports/) | Free | 8 hours 2 minutes listed; 15–25 hours with layouts/data/performance |
-| [AL application foundation](https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/) | Free | 9 hours 33 minutes listed; 20–35 hours coding/testing exercises |
-| [Data management foundation](https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/) | Free | 3 hours 25 minutes listed; 8–15 hours with XMLport/query/file builds |
-| [Interface with Business Central](https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/) | Free | 4 hours 43 minutes listed; 12–25 hours with resilient API integrations |
-| [Tailor roles and design the UI](https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/) | Free | 4 hours 16 minutes listed; 8–15 hours with onboarding/accessibility |
-| [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 3 hours 43 minutes listed; 10–20 hours implementing standard patterns |
-| [MB-820T00-A course](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days |
+| [Application development best practices](https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/) | Free | 7 modules; runtime not shown; 12–20 hours with AppSource/upgrade/test work |
+| [Customization foundation](https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/) | Free | 8 modules; runtime not shown; 22–35 hours building/deploying objects |
+| [Build reports](https://learn.microsoft.com/en-us/training/paths/build-reports/) | Free | 11 modules; runtime not shown; 15–25 hours with layouts/data/performance |
+| [AL application foundation](https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/) | Free | 10 modules; runtime not shown; 20–35 hours coding/testing exercises |
+| [Data management foundation](https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/) | Free | 3 modules; runtime not shown; 8–15 hours with XMLport/query/file builds |
+| [Interface with Business Central](https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/) | Free | 6 modules; runtime not shown; 12–25 hours with resilient API integrations |
+| [Tailor roles and design the UI](https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/) | Free | 5 modules; runtime not shown; 8–15 hours with onboarding/accessibility |
+| [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 4 modules; runtime not shown; 10–20 hours implementing standard patterns |
+| [MB-820T00-A: Develop solutions with Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days; English |
 | [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours; repository title/README retain sample-course artifacts, so use hosted lab index and verify current instructions |
 | [Free MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
 | [AL developer documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/) | Free | 25–60 hours selected current reference/troubleshooting |
-| [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 3 hours 48 minutes; November 2024 hands-on companion, gap-check against June 2025 APIs/current runtime |
-| [Plataan MB-820 exam-preparation webinar](https://app-plataantv-web-prd-euw.azurewebsites.net/en/plataan/training-course/business-central/mb-820-exam-preparation-webinar) | Paid/live | 2 days; listed 2026 sessions including September 29–30, verify seats/times |
+| [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 317-page Apress book by Dr. Gomathi S, November 2024; 3h48 platform reading estimate; gap-check current runtime |
 | [Microsoft Community MB-820 awareness session](https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934) | Free registration; event availability varies | About 1–2 hours estimated; verify recording/event access |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
 
-The eight directly relevant official paths total **50 hours 7 minutes** before labs. Allow roughly **120–200 hours** for a developer new to Business Central to build, test, integrate, upgrade and operate the extension portfolio. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Udemy products found during review were dominated by 157–1,500 question banks or guaranteed-pass claims, so none was included.
+The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Current public pages do not expose runtime, so the old 50h07 total is withdrawn. Linked units were not exhaustively read; barcode/control-add-in/Dataverse material can be adjacent to the detailed objective list. Allow roughly **120–200 hours** for a developer new to Business Central to build, test, integrate, upgrade and operate the extension portfolio. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Earlier Udemy discovery did not establish a suitable course; this pass did not comprehensively repeat those commercial searches.
+
+## Useful developer articles
+
+- [Stefano Demiliani: job queues and idempotent external effects](https://demiliani.com/2026/09/01/why-your-business-central-job-queue-needs-idempotent-external-effects-when-integrating-external-systems/) (September 1, 2026) supplies a useful failure scenario. Trace remote success followed by local failure and retry. Use the original local model above; the article's snippets are illustrative and were not compiled, and its broad rollback language must be read alongside current try/commit rules.
+- [Steven Renders: API pages versus API queries](https://thinkaboutit.be/2026/03/api-pages-vs-api-queries-in-business-central-when-to-use-each/) (March 17, 2026) helps frame a contract-selection worksheet. Keep the CRUD/read-model distinction, then measure your actual query and integration. Its broad SOAP/OData retirement statements and unconditional replica-routing implication exceed the primary documentation; do not adopt those claims or a universal query-first performance rule.
+- [Microsoft’s AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) (August 25, 2026) informs release discovery. Confirm announcements against current product documentation and the tenant version before changing implementation instructions.
+
+The [Plataan webinar listing](https://app-plataantv-web-prd-euw.azurewebsites.net/en/plataan/training-course/business-central/mb-820-exam-preparation-webinar) now shows October 13–14 and November 26–27, 2026, rather than the previously recorded September dates. It is removed from the recommended route because its public description refers to real exam questions; the wording does not establish whether its exercises are original. No session or question content was accessed. The community awareness page and partner portal returned only shells, so current recording/event access remains unverified.
 
 ## Final readiness checklist
 

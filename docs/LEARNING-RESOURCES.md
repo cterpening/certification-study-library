@@ -1306,17 +1306,30 @@ The five official paths show **48 module placements** (5/15/7/12/9); the current
 
 ### MB-820 — Microsoft Dynamics 365 Business Central Developer
 
-- Official objective map (1–2 hours): [MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820), using the June 10, 2025 baseline and requiring current runtime/API checks
-- Eight selected official paths (**50 hours 7 minutes listed; allow 110–180 hours with builds/tests**) from [MB-820T00](https://learn.microsoft.com/en-us/training/courses/mb-820t00): best practices/AppSource, customization, reports, AL, data/XMLports/queries, integration, UI/onboarding, and development standards
-- Instructor-led course (5 days): [MB-820T00-A](https://learn.microsoft.com/en-us/training/courses/mb-820t00)
-- Public MIT-licensed labs (allow 12–25 hours): [MicrosoftLearning MB-820](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification); use the hosted lab index and verify current steps because the repository README retains sample-course artifacts
-- Free official readiness check (45–90 minutes plus remediation): [MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification)
-- Hands-on companion (3 hours 48 minutes): [O’Reilly/Apress MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/), November 2024; gap-check June 2025 APIs and current runtime
-- Live expert prep (2 days): [Plataan/Companial MB-820 webinar](https://app-plataantv-web-prd-euw.azurewebsites.net/en/plataan/training-course/business-central/mb-820-exam-preparation-webinar), with publicly listed 2026 dates; verify seats and exact schedule
-- Public awareness session (about 1–2 hours estimated): [Microsoft Community MB-820 Certification Essentials](https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934); verify registration/recording access
-- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, and exact signed-in start/end times control
+Resource details from the [MB-820 guide](../guides/MB-820-microsoft-dynamics-365-business-central-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose a primary route and build, integrate, test, upgrade and operate one least-privilege extension. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Udemy listings found during review were dominated by 157–1,500 question banks or guaranteed-pass claims, so none was included.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and upgrade one secure extension end to end, and add another resource only for a measured gap.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820) | Free | 1–2 hours to map six domains and freshness gaps |
+| [Application development best practices](https://learn.microsoft.com/en-us/training/paths/use-application-development-business-central/) | Free | 7 modules; runtime not shown; 12–20 hours with AppSource/upgrade/test work |
+| [Customization foundation](https://learn.microsoft.com/en-us/training/paths/foundation-customize-business-central/) | Free | 8 modules; runtime not shown; 22–35 hours building/deploying objects |
+| [Build reports](https://learn.microsoft.com/en-us/training/paths/build-reports/) | Free | 11 modules; runtime not shown; 15–25 hours with layouts/data/performance |
+| [AL application foundation](https://learn.microsoft.com/en-us/training/paths/application-foundation-al-language/) | Free | 10 modules; runtime not shown; 20–35 hours coding/testing exercises |
+| [Data management foundation](https://learn.microsoft.com/en-us/training/paths/data-management-foundation-business-central/) | Free | 3 modules; runtime not shown; 8–15 hours with XMLport/query/file builds |
+| [Interface with Business Central](https://learn.microsoft.com/en-us/training/paths/interface-with-business-central/) | Free | 6 modules; runtime not shown; 12–25 hours with resilient API integrations |
+| [Tailor roles and design the UI](https://learn.microsoft.com/en-us/training/paths/tailor-roles-design-ui/) | Free | 5 modules; runtime not shown; 8–15 hours with onboarding/accessibility |
+| [Essential development standards](https://learn.microsoft.com/en-us/training/paths/essential-development-standards/) | Free | 4 modules; runtime not shown; 10–20 hours implementing standard patterns |
+| [MB-820T00-A: Develop solutions with Dynamics 365 Business Central](https://learn.microsoft.com/en-us/training/courses/mb-820t00) | Paid/provider-dependent | 5 days; English |
+| [MicrosoftLearning MB-820 labs](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification) | Free; MIT | 12–25 hours; repository title/README retain sample-course artifacts, so use hosted lab index and verify current instructions |
+| [Free MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
+| [AL developer documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/) | Free | 25–60 hours selected current reference/troubleshooting |
+| [O’Reilly: MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/) | Subscription/trial | 317-page Apress book by Dr. Gomathi S, November 2024; 3h48 platform reading estimate; gap-check current runtime |
+| [Microsoft Community MB-820 awareness session](https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934) | Free registration; event availability varies | About 1–2 hours estimated; verify recording/event access |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use the five-day course pattern for planning; signed-in event start/end times control |
+
+The eight official paths expose **54 module placements** (7/8/11/10/3/6/5/4). Current public pages do not expose runtime, so the old 50h07 total is withdrawn. Linked units were not exhaustively read; barcode/control-add-in/Dataverse material can be adjacent to the detailed objective list. Allow roughly **120–200 hours** for a developer new to Business Central to build, test, integrate, upgrade and operate the extension portfolio. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Earlier Udemy discovery did not establish a suitable course; this pass did not comprehensively repeat those commercial searches.
 
 ### AZ-800 — Administering Windows Server Hybrid Core Infrastructure
 

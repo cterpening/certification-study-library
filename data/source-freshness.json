@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-mb820-deep-review",
+      "title": "MB-820 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MB-820"
+      ],
+      "results": [
+        {
+          "exam_code": "MB-820",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-820-microsoft-dynamics-365-business-central-developer.md",
+          "baseline_sha256": "76f69b78eff05b39dd11d7767403b82f9ad56495e8f18260f851e3f428dd674f",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "75 June2025 objectives mapped; preserve17-row summary and restore canonical text. Active100-minute/seven-language annual-renewal credential."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Try/commit, upgrade tags, inherent permissions, IsHandled, partial records/FlowFields, HTTP, API batching/identity/read intent and test/telemetry boundaries checked."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current platform register scopes v29/v30 removals and PTE deployment transition; version-specific HTTP/FlowField controls and AIatWork discovery checked."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Eight paths54placements and renamed five-day course; withdraw absent timed sum. Indexed317-page book metadata retained, changed webinar schedule recorded but recommendation withheld, shells transparent."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Specific batch docs qualify general tips; sandbox FAQ controls lab feasibility. Blog SOAP/OData/replica overstatements not adopted; no universal rollback or exactly-once claim."
+            }
+          },
+          "findings": [
+            {
+              "id": "mb820-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Prior snapshot was condensed",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "17 summary rows represent75 detailed objectives on the unchanged June2025 baseline.",
+              "recommendation": "Preserve previous evidence and restore canonical text.",
+              "disposition": "applied",
+              "source_id": "mb-820-blueprint",
+              "resolution": "Preserve previous evidence and restore canonical text."
+            },
+            {
+              "id": "mb820-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Caught try errors do not imply rollback",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-handling-errors-using-try-methods",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Writes are not automatically rolled back; consumed-return calls differ.",
+              "recommendation": "Correct broad rollback prose and add boundary exercise.",
+              "disposition": "applied",
+              "source_id": "mb820-try",
+              "resolution": "Correct broad rollback prose and add boundary exercise."
+            },
+            {
+              "id": "mb820-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Boolean Codeunit.Run commits successful work",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/methods-auto/codeunit/codeunit-run-method",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existing transaction and implicit commit behavior change atomicity.",
+              "recommendation": "Add explicit contract and avoid casual precommit.",
+              "disposition": "applied",
+              "source_id": "mb820-codeunit-run",
+              "resolution": "Add explicit contract and avoid casual precommit."
+            },
+            {
+              "id": "mb820-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sandbox cannot demonstrate replica lag",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/database-read-scale-out-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Read scale-out is unavailable in sandboxes; intent does not guarantee routing.",
+              "recommendation": "Correct lab evidence boundary and explain precedence.",
+              "disposition": "applied",
+              "source_id": "mb820-read-scale",
+              "resolution": "Correct lab evidence boundary and explain precedence."
+            },
+            {
+              "id": "mb820-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Transactional batch depends on commit behavior",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-odata-batch",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Isolation snapshot shares a session; intervening commits split transactions.",
+              "recommendation": "Add failure/partial-persistence example.",
+              "disposition": "applied",
+              "source_id": "mb820-batch",
+              "resolution": "Add failure/partial-persistence example."
+            },
+            {
+              "id": "mb820-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "HTTP controls have advanced since older training",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-httpclient",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Certificate validation and anti-SSRF vary by version/deployment.",
+              "recommendation": "Add supported outbound controls and separate transport/status/payload outcomes.",
+              "disposition": "applied",
+              "source_id": "mb820-http",
+              "resolution": "Add supported outbound controls and separate transport/status/payload outcomes."
+            },
+            {
+              "id": "mb820-deep-7",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Upcoming removals have specific scope",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "v29 Microsoft-page SOAP and data-only permissions; v30 Microsoft-page OData and PTE upload transition.",
+              "recommendation": "Add versioned migration table without claiming all SOAP/OData removed.",
+              "disposition": "applied",
+              "source_id": "mb820-deprecated",
+              "resolution": "Add versioned migration table without claiming all SOAP/OData removed."
+            },
+            {
+              "id": "mb820-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Inherent grant cannot be casually administered away",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-inherent-permissions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Same-extension scope and code-defined permission/entitlement grant.",
+              "recommendation": "Add least-privilege design and output boundary.",
+              "disposition": "applied",
+              "source_id": "mb820-inherent",
+              "resolution": "Add least-privilege design and output boundary."
+            },
+            {
+              "id": "mb820-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Tags require new-company and install handling",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-upgrading-extensions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Upgrade order between codeunits is not guaranteed.",
+              "recommendation": "Add scoped migration/replay exercise.",
+              "disposition": "applied",
+              "source_id": "mb820-upgrade",
+              "resolution": "Add scoped migration/replay exercise."
+            },
+            {
+              "id": "mb820-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "IsHandled is not a default override mechanism",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-use-ishandled-pattern",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Microsoft recommends minimizing validation/event bypass.",
+              "recommendation": "Correct name and prefer intentional interfaces/additive events.",
+              "disposition": "applied",
+              "source_id": "mb820-ishandled",
+              "resolution": "Correct name and prefer intentional interfaces/additive events."
+            },
+            {
+              "id": "mb820-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Partial record can trigger extra loads",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-partial-records",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pass-by-value and unloaded-field access affect performance/consistency.",
+              "recommendation": "Add measured payload/JIT exercise and bounded claims.",
+              "disposition": "applied",
+              "source_id": "mb820-partial",
+              "resolution": "Add measured payload/JIT exercise and bounded claims."
+            },
+            {
+              "id": "mb820-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Online production cannot run automated tests",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-testing-application",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-820"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sandbox usage is restricted; containers suit large suites.",
+              "recommendation": "Correct test-lab environment expectations.",
+              "disposition": "applied",
+              "source_id": "mb820-test",
+              "resolution": "Correct test-lab environment expectations."
+            }
+          ],
+          "notes": "Entire guide and 75 June 2025 objectives mapped; prior 17-row summary preserved. Six worked examples, ten labs, 48 answered checks, one executed local recipient model and 32 assertions. Clarify try/commit/API transactions, sandbox read-scale limits, upgrades/permissions, HTTP/deprecations and catalog/blog scope. No AL or tenant execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-mb-820-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-mb800-deep-review",
       "title": "MB-800 complete guide and learning-content review",
       "rubric_version": 1,

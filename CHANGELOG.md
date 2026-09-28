@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review MB-820’s 75 objectives; add six worked examples, ten labs and 48 answered checks. Correct try/commit, API batching and sandbox replica assumptions; update upgrade, HTTP, deprecation, article and catalog guidance. See the [MB-820 report](docs/research/2026-09-28-mb-820-deep-review.md).
+
 - September 28, 2026: deeply review MB-800’s 123 objectives; add seven worked examples, ten labs and 48 answered checks. Clarify security, inventory/ledger corrections and agent controls; curate useful articles and refresh learning resources. See the [MB-800 report](docs/research/2026-09-28-mb-800-deep-review.md).
 
 - September 28, 2026: deeply review MB-500’s 89 objectives; add six worked examples, ten labs, 48 answered checks and a locally executed replay/rollback model. Correct Batch OData and entity-security assumptions; refresh UDE/migration, X++ contracts, integrations and catalogs. See the [MB-500 report](docs/research/2026-09-28-mb-500-deep-review.md).
