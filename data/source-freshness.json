@@ -4,6 +4,177 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-sapc02-deep-review",
+      "title": "SAP-C02 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SAP-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "SAP-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+          "baseline_sha256": "4c71e5389c60e59ac5f0efe18de21dc19f04daeb9e16855d551aca4bb506c701",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read targeted availability notices and recovery architecture evidence; preserve exam concepts while qualifying new deployment choices. App Runner historical closure date conflict remains visible."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read September certification update and selected 2026 recovery articles; no additional exam retirement notice found."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public Pluralsight metadata confirms 49 hours/15 courses/3 labs and rolling/legacy split; qualify blocked/shell provider claims."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Add four worked decisions, preserve 42 answers and clarify recovery evidence and tool eligibility. App Runner historical-date contradiction remains."
+            },
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "Read all 187 knowledge/skill bullets, root blueprint and in-scope appendix. Broad baseline unchanged; last-delivery date conflict persists."
+            }
+          },
+          "findings": [
+            {
+              "id": "sapc02-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Final C02 delivery date conflicts",
+              "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Credential November 17 versus September announcement November 16.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sapc02-deep-2",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "App Runner historical closure dates conflict",
+              "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "API says March 31; product page says April 30; both are past.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sapc02-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Offline migration needs eligibility check",
+              "url": "https://aws.amazon.com/snowball/faqs/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Snowball Edge new-customer access closed November 7, 2025.",
+              "recommendation": "Add eligibility boundary and compare currently eligible transfer alternatives.",
+              "disposition": "applied",
+              "source_id": "aws-snowball-availability",
+              "resolution": "Add eligibility boundary and compare currently eligible transfer alternatives."
+            },
+            {
+              "id": "sapc02-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Migration discovery tools have access limits",
+              "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Discovery Service and Migration Hub no longer accept new customers.",
+              "recommendation": "Retain exam concepts; add AWS Transform evaluation for new projects.",
+              "disposition": "applied",
+              "source_id": "aws-discovery-availability",
+              "resolution": "Retain exam concepts; add AWS Transform evaluation for new projects."
+            },
+            {
+              "id": "sapc02-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Time-series platform choices need engine distinction",
+              "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "LiveAnalytics closed to new customers June 20, 2025.",
+              "recommendation": "Add closure and distinguish InfluxDB alternative.",
+              "disposition": "applied",
+              "source_id": "aws-timestream-availability",
+              "resolution": "Add closure and distinguish InfluxDB alternative."
+            },
+            {
+              "id": "sapc02-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Recovery evidence needs explicit measurement boundaries",
+              "url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAP-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Runbook timing omits detection/decision; consumer connectivity test does not pause S3 replication.",
+              "recommendation": "Add bounded article guidance, recovery budget and lab acceptance evidence.",
+              "disposition": "applied",
+              "source_id": "aws-sap-dr-test-blog",
+              "resolution": "Add bounded article guidance, recovery budget and lab acceptance evidence."
+            }
+          ],
+          "notes": "Review all 187 knowledge/skill bullets and preserve 42 answered checks. Add four worked architecture decisions, qualify five services closed to new customers and assess two recovery articles. Exam delivery and App Runner historical-date conflicts remain. Same-context AI review; human review pending. See docs/research/2026-09-28-sap-c02-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-28-dvac02-deep-review",
       "title": "DVA-C02 complete guide and learning-content review",
       "rubric_version": 1,

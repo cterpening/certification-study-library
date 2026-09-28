@@ -3,6 +3,118 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-snowball-availability",
+      "title": "Snowball current availability",
+      "url": "https://aws.amazon.com/snowball/faqs/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-apprunner-availability",
+      "title": "App Runner availability",
+      "url": "https://aws.amazon.com/apprunner/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-apprunner-api-notice",
+      "title": "App Runner API availability notice",
+      "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-sap-residency-blog",
+      "title": "Recovery strategies for data residency",
+      "url": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-sap-dr-test-blog",
+      "title": "Validating multi-Region DR with AWS FIS",
+      "url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-discovery-availability",
+      "title": "Application Discovery Service availability",
+      "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-migrationhub-availability",
+      "title": "Migration Hub availability",
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-timestream-availability",
+      "title": "Timestream for LiveAnalytics availability",
+      "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SAP-C02"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-dva-sqs-errors",
       "title": "Handling errors for an SQS event source",
       "url": "https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html",
@@ -42553,9 +42665,10 @@
       "supported_exams": [
         "MLA-C01",
         "MLA-C02",
-        "DVA-C02"
+        "DVA-C02",
+        "SAP-C02"
       ],
-      "notes": "Review the January 14, 2027 MLA-C02 launch and final MLA-C01 retirement-language boundary against both versioned guides. September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+      "notes": "Review the January 14, 2027 MLA-C02 launch and final MLA-C01 retirement-language boundary against both versioned guides. September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution. September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mla-c01-aws-service-availability",

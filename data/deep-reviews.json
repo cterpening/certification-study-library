@@ -5,6 +5,25 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "SAP-C02",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "c94364c0d348794ce609a0d4569ee2370fe70321bc765af976da375737e55e7b",
+      "objective_count": 187,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-28-sap-c02-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-sap-c02-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "SAP-C02 final delivery is November 16 in the announcement and November 17 on the credential page; unresolved. C03 detailed objectives announced for October 27.",
+        "App Runner product/API pages disagree on March 31 versus April 30 new-customer closure; both indicate access closed by this review.",
+        "Same-context AI review; independent human review pending.",
+        "No live AWS/Terraform experiment, legal determination or paid lesson executed. Provider blocks/shells limit metadata verification.",
+        "Scope service lists include legacy names; listed objectives are not proof that a new account can provision a service. No exhaustive audit of every linked product manual."
+      ]
+    },
+    {
       "exam_code": "DVA-C02",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "d79d30bed0e016abf4af79524f448127dd7ccf135e28804c6cae26150f13f3c0",

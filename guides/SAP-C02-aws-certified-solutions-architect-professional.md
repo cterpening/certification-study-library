@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-28
 ---
 
 # SAP-C02 AWS Certified Solutions Architect - Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sap-c02-coverage-record). The [official SAP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including 187 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sap-c02-coverage-record). The [official SAP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html) is authoritative.
 
 **Current baseline:** Current four-domain SAP-C02 guide; 65 scored plus 10 unscored questions, with a separate unscored emerging-topic section<br>
-**Upcoming delivery change:** SAP-C03 registration opens October 27, with delivery beginning November 17, 2026. AWS gives conflicting SAP-C02 last-test dates: its September announcement says November 16, while the live certification page says November 17. Confirm the deadline in the scheduler before booking. Detailed SAP-C03 objectives are announced for October 27; this guide covers SAP-C02. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
+**Upcoming delivery change:** SAP-C03 registration opens October 27, with delivery beginning November 17, 2026. AWS gives conflicting SAP-C02 last-test dates: its September announcement says November 16, while the live certification page says November 17. Confirm the deadline in the scheduler before booking. Detailed SAP-C03 objectives are announced for October 27; this guide covers SAP-C02. Rechecked September 28, 2026; the conflict remains. See the [deep-review report](../docs/research/2026-09-28-sap-c02-deep-review.md).<br>
 **Important freshness boundary:** AWS currently lists responsible and agentic-AI controls—Bedrock Guardrails, AgentCore Identity, and human-approval workflows—as possible **unscored pretest** topics, not as a fifth scored domain. The large non-exhaustive service list, product names, interfaces, quotas, pricing, Regions, service availability, and training catalogs are **VERIFY CURRENT**.<br>
 **Official source:** [AWS Certified Solutions Architect - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html)
 
@@ -156,6 +156,8 @@ Quantify latency percentiles, throughput, concurrency, object size, request mix,
 - Use cache only with an ownership, invalidation, staleness, eviction, failure, and stampede plan. Use read replicas for supported read scaling, not to imply synchronous failover.
 - Place CloudFront, Global Accelerator, transfer acceleration, edge compute, replicas, or partitioning only when measurements and geography support the choice.
 
+**Related current availability:** [Timestream for LiveAnalytics](https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html) closed to new customers on June 20, 2025; eligible existing payer accounts have continued access. Timestream for InfluxDB is a separately evaluated alternative, not an interchangeable engine. Compare query language, ingestion, cardinality, retention and operating costs before migration.
+
 ### 2.6 Optimize cost without violating requirements
 
 Model cost across normal, peak, recovery, and growth states. Include request and operation charges, inter-AZ/cross-Region/internet transfer, NAT gateways, load balancers, public IPv4, provisioned capacity, replication, cache, observability, backup, support, and people.
@@ -206,12 +208,14 @@ Classify each workload using the 7 Rs: retire, retain, rehost, relocate, replatf
 
 Build waves around dependencies, landing-zone readiness, data transfer, network/identity/DNS, shared services, vendor constraints, business calendars, test capacity, cutover/rollback, and support. Start with representative learning waves, not necessarily the easiest or most critical workload.
 
+**Availability check:** The exam still names Migration Hub and Application Discovery Service. Both [Migration Hub](https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html) and [Application Discovery Service](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html) closed to new customers on November 7, 2025; AWS directs new projects toward AWS Transform. Preserve the discovery, dependency and wave-planning concepts, then verify tool fit and customer eligibility. This does not announce a retirement of Application Migration Service.
+
 ### 4.2 Choose transfer and migration mechanisms
 
 - **Application/server:** Application Migration Service supports block-level replication/rehost patterns; relocation or platform-native methods may fit VMware, containers, SaaS, or managed platforms.
 - **Database:** DMS can move/replicate supported engines; Schema Conversion Tool and conversion approaches help heterogeneous migration. Validate unsupported objects, data types, CDC lag, consistency, performance, cutover, and rollback.
 - **Online data:** DataSync, Transfer Family, Storage Gateway, S3 transfer features, and service-native replication solve distinct protocols, connectivity, acceleration, hybrid access, and ongoing synchronization needs.
-- **Offline data:** Snow Family can fit volume/bandwidth/time/security constraints. Include appliance lead time, encryption, chain of custody, export/import workflow, and delta synchronization.
+- **Offline data:** Snow Family remains named in the exam, but [Snowball Edge is restricted to existing customers from November 7, 2025](https://aws.amazon.com/snowball/faqs/). New customers should assess DataSync, Data Transfer Terminal or suitable partner transfer options against connectivity, location, logistics, security and delta synchronization. Do not plan a new-account Snowball lab or assume a terminal is available at every site.
 - **Connectivity:** Direct Connect, VPN, internet paths, Transit Gateway, DNS, and identity must be ready and capacity-tested before migration traffic competes with production.
 
 Secure migration staging, replication agents, roles, keys, network paths, snapshots, logs, and temporary exceptions. Define validation totals/checksums, functional/performance tests, cutover authority, rollback point, delta handling, and decommission evidence.
@@ -219,6 +223,8 @@ Secure migration staging, replication agents, roles, keys, network paths, snapsh
 ### 4.3 Choose a target platform from constraints
 
 Evaluate EC2, Elastic Beanstalk/App Runner, ECS/EKS/Fargate, Lambda, Batch, managed databases, and storage based on application/runtime compatibility, control, scaling, availability, portability, skills, licenses, compliance, patching, operational burden, and cost.
+
+**New-account boundary:** [App Runner's product page](https://aws.amazon.com/apprunner/) says new-customer closure began April 30, 2026, while its [API notice](https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html) says March 31. Both dates have passed; the exact historical date remains inconsistent. Existing services continue, with no new features planned according to the product page. Evaluate ECS, including Express Mode where appropriate, or other supported platforms for a new deployment. Keep App Runner concepts where the current exam names them.
 
 Rehost may meet a deadline but preserve operational debt. Replatform can remove some management without deep code change. Refactoring can improve scalability and delivery but raises transformation risk. Establish a two-step roadmap when “migrate now, modernize safely later” best meets the outcome—plus explicit debt, owner, and deadline.
 
@@ -236,6 +242,21 @@ AWS currently says questions about evolving technologies may appear as unscored 
 
 Study the architecture principle, not speculative product trivia: classify harmful or regulated outputs, constrain identity and tool authorization, validate action arguments, require approval for consequential/irreversible work, log traceable decisions, protect private context, and define safe failure. Do not let this small unscored section displace the four scored domains.
 
+## Read recovery articles as evidence
+
+The [August 13 recovery/residency article](https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/) offers a useful discussion of encryption, physical data location and local operational independence. Encryption alone does not establish permission to move data across a border. Confirm the actual policy/legal requirement with its owners; examine who can change key policies and whether recovery depends on an impaired Region. Synthetic restore tests can validate procedures without proving recovery of the real protected data. Do not adopt blanket jurisdictional or key-access assurances from an architecture article.
+
+The [September 9 Terraform Enterprise recovery case](https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/) is useful for identifying recovery scripts that depend on state in the failed Region. Keep configuration available independently and check it for drift. Its reported recovery times belong to that deployment and test: runbook execution excludes detection/decision time; subnet connectivity disruption does not stop service-side S3 replication; a coordinated database test does not establish unplanned-loss behavior. The sample commands/templates were not executed or accepted as a ready-to-run lab.
+
+## Worked architecture decisions
+
+These original synthetic cases have locally checked arithmetic, not live infrastructure results.
+
+1. **Recovery budget:** A 30-minute RTO allows 5 minutes detection, 7 minutes decision/authorization, 12 minutes restoration and 4 minutes verification: 28 minutes, leaving only 2 minutes margin. A 12-minute runbook is not a 12-minute end-to-end recovery. Test tail behavior, dependencies and failback; replication lag is a separate RPO measure.
+2. **Transfer window:** 100 decimal TB over a 1 Gbit/s link at 60% effective throughput needs about 15.43 days before validation or incremental changes. A ten-day window cannot fit. If ongoing writes generate 800 Mbit/s, a 600 Mbit/s effective path cannot catch up at all. Reduce change rate, increase capacity, use an eligible alternative or revise the plan with the owner.
+3. **Network growth:** A full mesh of 20 VPCs requires 190 peering connections, versus 45 for ten VPCs. That count is not a cost comparison: evaluate routes, overlapping addresses, inspection, service boundaries, hub failure modes and processing charges before selecting a topology.
+4. **Commitment utilization:** A hypothetical commitment costs $100/hour for capacity otherwise priced at $150/hour. At only 60% useful utilization, equivalent on-demand use costs $90/hour: the commitment costs $10/hour more. Break-even is two-thirds utilization under these simplified assumptions. Rightsize and check eligibility/term/coverage before purchase; list-price discount is not realized savings.
+
 ## Integrated scenarios
 
 ### Scenario 1: Global regulated enterprise landing zone
@@ -252,7 +273,7 @@ A company must leave a data center in twelve months. Its portfolio includes comm
 
 ## Practice labs
 
-Use disposable accounts/resources, budgets, synthetic data, least privilege, and teardown evidence. Estimated times exclude prerequisite remediation.
+These eight labs remain proposed; none was executed in AWS during this review. Use disposable accounts/resources, budgets, synthetic data, least privilege, and teardown evidence. Budgets do not impose a hard spending cap. Check new-customer availability before provisioning. Estimated times exclude prerequisite remediation.
 
 ### Lab 1: Multi-account decision record — 180–300 minutes
 
@@ -264,7 +285,7 @@ Model two VPCs and simulated on-premises connectivity using Transit Gateway or a
 
 ### Lab 3: Resilience and recovery experiment — 240–360 minutes
 
-Define RTO/RPO for a small application, create dependency/recovery-order diagrams, implement backup/replication appropriate to the lab, perform a restore or failover, measure each recovery phase, verify data, exercise failback, and reconcile results with objectives.
+Define RTO/RPO for a small application, create dependency/recovery-order diagrams, implement backup/replication appropriate to the lab, perform a restore or failover, measure detection/decision as well as each recovery phase, verify data, exercise failback, and reconcile results with objectives. Remove recovery-state dependencies on the impaired Region and distinguish consumer connectivity loss from replication failure.
 
 ### Lab 4: Immutable delivery and data compatibility — 180–300 minutes
 
@@ -376,31 +397,6 @@ Review a disposable workload across all pillars. Turn observations into prioriti
 41. The four weighted domains are scored; the published responsible/agentic-AI items may appear as unidentified unscored pretest content.
 42. Traceable requirements, alternatives, explicit tradeoffs/assumptions, complete lifecycle, measurable tests, cost, ownership, and recovery evidence.
 
-## Places to learn
-
-This is **not a complete list**, and it is not meant to be consumed in full. Pick one current primary route, use references to close measured gaps, complete production-shaped labs, and treat legitimate practice as diagnosis—not as content to memorize.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| AWS four-step Skill Builder route | Public/free-account/subscription mix | 30–50 hours selected plus labs |
-| Pluralsight SAP-C02 path | Paid/trial | 49 listed hours plus labs/review |
-| O'Reilly 2024 Packt exam guide | Paid/trial | 12 hours listed plus exercises/current gap check |
-| Udemy/Stéphane Maarek SAP-C02 | Paid | 16 hours 26 minutes plus 35–60 hours hands-on |
-| Tutorials Dojo course/practice | Paid | 35–60 hours estimated |
-| Whizlabs SAP-C02 route | Paid | 30–60 hours estimated after catalog inspection |
-
-- **Official route:** [AWS certification page](https://aws.amazon.com/certification/certified-solutions-architect-professional/) and [SAP-C02 Skill Builder plan](https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02) (**about 30–50 selected hours plus substantial labs/game days**). Access to Builder Labs, Jam, SimuLearn, and the official practice exam varies by entitlement.
-- **Structured current path:** [Pluralsight SAP-C02](https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02) (**49 listed hours**, 15 courses, three labs and practice exam). It mixes rolling 2025–2026 replacements with labeled legacy modules; select deliberately.
-- **Book route:** [O'Reilly / Packt SAP-C02 Exam Guide](https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/) (**428 pages / 12 hours 1 minute listed**, March 2024). Strong domain structure; close newer service-name and unscored-emerging-topic gaps with official sources.
-- **Video supplement:** [O'Reilly Pearson SAP-C02 video](https://www.oreilly.com/videos/aws-certified-solutions/9780138319205/) (**verify runtime after access**) or the older [Noah Gift 2023 route](https://www.oreilly.com/videos/aws-solutions-architect/10082022VIDEOPAIML/) (**use only selectively with a current gap check**).
-- **Concise review:** [Udemy/Stéphane Maarek SAP-C02](https://www.udemy.com/course/aws-solutions-architect-professional/) (**16 hours 26 minutes**, 203 lectures, shown updated August 2026). The page explicitly says slides only/no hands-on; add substantial architecture work.
-- **Course/practice route:** [Tutorials Dojo SAP-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/) (**about 35–60 hours estimated**; practice page lists randomized, six timed, six review, four domain modes, and flashcards).
-- **Lab/practice alternative:** [Whizlabs SAP-C02](https://www.whizlabs.com/aws-solutions-architect-professional/) (**30–60 selected hours estimated**); inspect exact current course, sandbox, lab, and practice totals after access.
-
-Suggested preparation: an experienced multi-account AWS architect may need **120–180 hours**; a learner still closing associate-level, networking, security, migration, and operations prerequisites may need **220–350 hours**.
-
----
-
 ## Source map and freshness notes
 
 The root guide and four detailed domain pages define scored scope and the current unscored emerging-topic boundary. The certification page defines live delivery. The in-scope list is non-exhaustive and mutable. The Well-Architected and multi-account references supply architecture method; product documentation supplies behavior; learning providers support only their catalog claims.
@@ -410,3 +406,30 @@ The root guide and four detailed domain pages define scored scope and the curren
 - **Freshness check:** explicitly separate four scored domains from unscored emerging topics and gap-check older material against the current official domain and service pages.
 
 This guide uses no recalled exam questions or restricted content. The knowledge checks are original and test published concepts rather than reproducing vendor items.
+
+---
+
+## Places to learn
+
+This is **not a complete list**, and it is not meant to be consumed in full. Public catalog pages were checked on September 28; paid lessons were not reviewed. O'Reilly/Udemy were access-blocked, and Skill Builder/Whizlabs returned limited shells. Treat unverified runtimes and update dates as historical, not newly confirmed. Pick one current primary route, use references to close measured gaps, complete production-shaped labs, and treat legitimate practice as diagnosis—not as content to memorize.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| AWS four-step Skill Builder route | Public/free-account/subscription mix | 30–50 hours selected plus labs |
+| Pluralsight SAP-C02 path | Paid/trial | 49 listed hours plus labs/review |
+| O'Reilly 2024 Packt exam guide | Paid/trial | 20–35 hours estimated; live metadata access-blocked |
+| Udemy/Stéphane Maarek SAP-C02 | Paid | 50–80 hours estimated with hands-on; live metadata access-blocked |
+| Tutorials Dojo course/practice | Paid | 35–60 hours estimated |
+| Whizlabs SAP-C02 route | Paid | 30–60 hours estimated after catalog inspection |
+
+- **Official route:** [AWS certification page](https://aws.amazon.com/certification/certified-solutions-architect-professional/) and [SAP-C02 Skill Builder plan](https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02) (**about 30–50 selected hours plus substantial labs/game days**). Access to Builder Labs, Jam, SimuLearn, and the official practice exam varies by entitlement.
+- **Structured current path:** [Pluralsight SAP-C02](https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02) (**49 listed hours**, 15 courses, three labs and practice exam). It mixes rolling 2025–2026 replacements with labeled legacy modules; select deliberately.
+- **Book route:** [O'Reilly / Packt SAP-C02 Exam Guide](https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/) (**20–35 hours estimated** including exercises). The edition/runtime and lesson contents were not reverified; close service-availability and emerging-topic gaps with official sources.
+- **Video supplement:** [O'Reilly Pearson SAP-C02 video](https://www.oreilly.com/videos/aws-certified-solutions/9780138319205/) (**verify runtime after access**) or the older [Noah Gift 2023 route](https://www.oreilly.com/videos/aws-solutions-architect/10082022VIDEOPAIML/) (**use only selectively with a current gap check**).
+- **Concise review:** [Udemy/Stéphane Maarek SAP-C02](https://www.udemy.com/course/aws-solutions-architect-professional/) (**50–80 hours estimated** including independent architecture labs). Live runtime, lecture count and update date were not reverified; ensure the chosen route includes practical work.
+- **Course/practice route:** [Tutorials Dojo SAP-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/) (**about 35–60 hours estimated**; inspect the public outline and current exam code before purchase; paid questions and completeness were not reviewed).
+- **Lab/practice alternative:** [Whizlabs SAP-C02](https://www.whizlabs.com/aws-solutions-architect-professional/) (**30–60 selected hours estimated**); inspect exact current course, sandbox, lab, and practice totals after access.
+
+Suggested preparation: an experienced multi-account AWS architect may need **120–180 hours**; a learner still closing associate-level, networking, security, migration, and operations prerequisites may need **220–350 hours**.
+
+---

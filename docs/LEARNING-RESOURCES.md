@@ -2482,14 +2482,28 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 ### AWS Certified Solutions Architect - Professional (SAP-C02)
 
-- Official route: [AWS certification page](https://aws.amazon.com/certification/certified-solutions-architect-professional/) and [SAP-C02 Skill Builder plan](https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02) (**about 30–50 selected hours plus substantial labs/game days**); entitlement controls access to some official labs and practice.
-- Structured current path: [Pluralsight SAP-C02](https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02) (**49 listed hours**, 15 courses, three labs and practice exam); deliberately select its rolling 2025–2026 replacements instead of blindly consuming labeled legacy modules.
-- Book route: [O'Reilly / Packt SAP-C02 Exam Guide](https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/) (**428 pages / 12 hours 1 minute listed**, March 2024); close current service and unscored-emerging-topic gaps with AWS sources.
-- Concise review: [Udemy/Stéphane Maarek SAP-C02](https://www.udemy.com/course/aws-solutions-architect-professional/) (**16 hours 26 minutes**, 203 lectures, shown updated August 2026); it is slides-only, so add hands-on architecture and failure work.
-- Course/practice route: [Tutorials Dojo SAP-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/) (**about 35–60 hours estimated**; randomized, six timed, six review and four domain modes are listed).
-- Lab/practice alternative: [Whizlabs SAP-C02](https://www.whizlabs.com/aws-solutions-architect-professional/) (**30–60 selected hours estimated**); inspect exact current course, lab, sandbox and practice totals after access.
+Resource details from the [SAP-C02 guide](../guides/SAP-C02-aws-certified-solutions-architect-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Pick one primary route, spend **50–90 hours** on multi-account, hybrid-network, migration, recovery, performance and cost evidence, and use legitimate practice for diagnosis. No exact current MeasureUp SAP-C02 product was independently verified.
+This is **not a complete list**, and it is not meant to be consumed in full. Public catalog pages were checked on September 28; paid lessons were not reviewed. O'Reilly/Udemy were access-blocked, and Skill Builder/Whizlabs returned limited shells. Treat unverified runtimes and update dates as historical, not newly confirmed. Pick one current primary route, use references to close measured gaps, complete production-shaped labs, and treat legitimate practice as diagnosis—not as content to memorize.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| AWS four-step Skill Builder route | Public/free-account/subscription mix | 30–50 hours selected plus labs |
+| Pluralsight SAP-C02 path | Paid/trial | 49 listed hours plus labs/review |
+| O'Reilly 2024 Packt exam guide | Paid/trial | 20–35 hours estimated; live metadata access-blocked |
+| Udemy/Stéphane Maarek SAP-C02 | Paid | 50–80 hours estimated with hands-on; live metadata access-blocked |
+| Tutorials Dojo course/practice | Paid | 35–60 hours estimated |
+| Whizlabs SAP-C02 route | Paid | 30–60 hours estimated after catalog inspection |
+
+- **Official route:** [AWS certification page](https://aws.amazon.com/certification/certified-solutions-architect-professional/) and [SAP-C02 Skill Builder plan](https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02) (**about 30–50 selected hours plus substantial labs/game days**). Access to Builder Labs, Jam, SimuLearn, and the official practice exam varies by entitlement.
+- **Structured current path:** [Pluralsight SAP-C02](https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02) (**49 listed hours**, 15 courses, three labs and practice exam). It mixes rolling 2025–2026 replacements with labeled legacy modules; select deliberately.
+- **Book route:** [O'Reilly / Packt SAP-C02 Exam Guide](https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/) (**20–35 hours estimated** including exercises). The edition/runtime and lesson contents were not reverified; close service-availability and emerging-topic gaps with official sources.
+- **Video supplement:** [O'Reilly Pearson SAP-C02 video](https://www.oreilly.com/videos/aws-certified-solutions/9780138319205/) (**verify runtime after access**) or the older [Noah Gift 2023 route](https://www.oreilly.com/videos/aws-solutions-architect/10082022VIDEOPAIML/) (**use only selectively with a current gap check**).
+- **Concise review:** [Udemy/Stéphane Maarek SAP-C02](https://www.udemy.com/course/aws-solutions-architect-professional/) (**50–80 hours estimated** including independent architecture labs). Live runtime, lecture count and update date were not reverified; ensure the chosen route includes practical work.
+- **Course/practice route:** [Tutorials Dojo SAP-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/) (**about 35–60 hours estimated**; inspect the public outline and current exam code before purchase; paid questions and completeness were not reviewed).
+- **Lab/practice alternative:** [Whizlabs SAP-C02](https://www.whizlabs.com/aws-solutions-architect-professional/) (**30–60 selected hours estimated**); inspect exact current course, sandbox, lab, and practice totals after access.
+
+Suggested preparation: an experienced multi-account AWS architect may need **120–180 hours**; a learner still closing associate-level, networking, security, migration, and operations prerequisites may need **220–350 hours**.
 
 ### AWS Certified Advanced Networking - Specialty (ANS-C01)
 

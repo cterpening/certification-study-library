@@ -1,0 +1,2231 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "SAP-C02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "2edfe976db406e5a6ca7694db02358a19cb7c28d81d8c6c39b7eefe51fd6b882",
+  "guide_after_sha256": "c94364c0d348794ce609a0d4569ee2370fe70321bc765af976da375737e55e7b",
+  "prior_records": {
+    "exam": {
+      "code": "SAP-C02",
+      "level": "expert",
+      "vendor_id": "aws",
+      "title": "AWS Certified Solutions Architect - Professional",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+      "guide_path": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "retirement-announced",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite; AWS targets candidates with two or more years designing and implementing AWS solutions and providing guidance across multiple applications/projects. Practice enterprise requirement decomposition, multi-account identity/governance, hybrid/global networking, security, distributed reliability, DR, deployment, performance/cost analysis, observability, portfolio assessment, migration mechanics, modernization and decommissioning."
+    },
+    "review": {
+      "id": "sap-c02-2026-09-01-source-validation",
+      "exam_code": "SAP-C02",
+      "guide_path": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sap-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d",
+      "objective_coverage": [
+        {
+          "objective_group": "Design Solutions for Organizational Complexity",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3, 6, and 8"
+          ]
+        },
+        {
+          "objective_group": "Design for New Solutions",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 2–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Continuous Improvement for Existing Solutions",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Accelerate Workload Migration and Modernization",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 2 and 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 18,
+        "reachable": 14,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "The current four-domain SAP-C02 guide was reconciled with every detailed domain page, the live 180-minute/75-question/USD-300 certification page, non-exhaustive service list and separately labeled unscored emerging topics. Three scenarios, eight safe labs and 42 original checks cover enterprise connectivity/DNS, identity/governance, security, resilience, cost, distributed design, deployment, evidence-led improvement, portfolio migration/7Rs/waves, transfer mechanics, modernization and decommissioning. All 18 URLs are cataloged; automated link totals are updated from the source-health run. Current metadata is labeled, responsible/agentic-AI controls remain separated as possible unscored pretest content, and no recalled questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "8899cdd825c104f5803d2551b93acff80c268adb75782c32befc405dcfbc1fb9",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "87ad9807f0c73ad2d75614797b5e868f76c0a75410bfe37a8b71a9c821131e91",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "628839254d3e8016e57ff51fb39cc646ecd239c167505b71149aa9ce71120c7f",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "1185aabba7209ac14ae951e8f4dbf8c2fbd64d96ab28656ae73d12ce659d94ba",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "e5afd50393293c4d43b80c4a621bca8950913ac7a3233041a20c9a4ffc249497",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "4b7f640ba92051b9d9f25f6e76402e6a93786b672e17ffa2b032e8061e9bc982",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "bb8cf730051b40a72c7860507c968e3e015c85069dd2fbd65e9c2166f61e2c3c",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "eb4172237f8d4e29bccac2b31dde0f91d5591867424ae6d38e8f20a64cd7488e",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "a53ce0623c0d4c62ece2a6de2d6fe331fbd1512bff201834c62589c54a8ba7cc",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "8d8c07c13eadf1dc0b8c271036101b761867150f649ca801a8b4d9f4444369fd",
+      "guide_sections": "Section 1.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "ac941a2fceaae727beac6473eee7639907a9835a0a9dfe5390a325a51eba89be",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "1ef0b5e555bd06a337ad420090927c70ab99b5ca0915ef3ecc9107bb49921deb",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "402e1b33687260d1db0aa06abb529592fcb2d751ba2dc1f1ff8eec85a684a9a8",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "bd2d838c93c53e73144fd44902b0dc9078a486fce8ab276ca28cb6c4954309fa",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "169f9cc61c3076859e82a40ab74f70eaf9b61daea2b688c58a9c7ea740e016e5",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "4f31e4e9479bf16d8a1551fb1529fb464bff76bc6d52c9788bb0342e7b3f45d8",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "2d1709fcc7572b1041bca3cacab1610c1db00d2f540109af9f33b9e04ed17474",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "f2e2e46a0d8959058bbbd0281af70f7a6c90fc2281c7dbeb5fdb12de70ca51df",
+      "guide_sections": "Section 1.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "d973e89330f23acd47b0b1e85173002ead8b9184a2df5cde40ac02a8eef014a2",
+      "guide_sections": "Section 1.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "aab22b62730e05cdd5b93c46beff6af6dd2d81d39074e8da1fc5a800d41fecc6",
+      "guide_sections": "Section 1.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "1b9e6f6108596b6dadce7595ac859b33054ef88a08370b4ea3c670513cf06fba",
+      "guide_sections": "Section 1.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "4a6ff4a3dc4bef2c38e087ebe53d8dc4f8a42e97531fdc638f83cb6a6d61a5d8",
+      "guide_sections": "Section 1.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "11bc63eb94829bcf0bc0d96440e36e424df6ed79138244b5cbe8cfcb83a16d6d",
+      "guide_sections": "Section 1.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "9e8c618123d0837989bf7dc12a0b7534ab7478d5dadd28d82d89461405775fa9",
+      "guide_sections": "Section 1.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "4e270ec6ee17de95e1c3c4621c9f2783fe81855af42d67b80fc4dea46ac60e1b",
+      "guide_sections": "Section 1.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "63c7dd6e8c74bf94e0a51695f1379e31a197c4c8efb93b4d6b06631b7b72c854",
+      "guide_sections": "Section 1.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "14969744324a2877ef058b2afc02d02f416f928e90ef6ecd3726dbdcd489ad85",
+      "guide_sections": "Section 1.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "dde059979be6343961e1a2654d825b807b83440a7835a3c3c8b74432570d6750",
+      "guide_sections": "Section 1.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "0abf0630f8747ca3b6216727491d96a3261094c4da6666de318a860fb1549019",
+      "guide_sections": "Section 1.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "7a9b181322155cf3a4c31a8e28ba591bbb01266fb340c5b4c64b5bb1659da881",
+      "guide_sections": "Section 1.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "21084f52f79b1318efd8691ea623e965ad3e51f0c3306408593198469f5a1627",
+      "guide_sections": "Section 1.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "e58750dfcc11a5e8dec9e26a0b8d6ec447a9683ac113cf105968730a83b1854e",
+      "guide_sections": "Section 1.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "41eed8047447bdba325ae6934bba5770e9fa8438175a5435ad26d39edb37a027",
+      "guide_sections": "Section 1.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "113330bae5bf273b0038e79f7950b17115fa97614dce89ff852375ca3863a472",
+      "guide_sections": "Section 1.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "6d767bf7c777038af0412fcc187f68fbff0adf5fcedaebbdff1324dbefe2bdde",
+      "guide_sections": "Section 1.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "b5770ab297da557a5a09eb9fdb83b3234f74160a0d17d23f9fdc6027d1ca6fd5",
+      "guide_sections": "Section 1.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "ae8dfab12de29752f3890b53b9663fb62443f8c26934f21b71348057e1645e75",
+      "guide_sections": "Section 1.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "5ebdd908f0923b567ac27e37682fb43a272fbf202d64df844c37fcb7f341e529",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "83ebfe92105e068369eeeaa6f46d1a46bea3fe6139ee523e6a811eddea32a4cc",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "a50fc4a8f97e6d6af9cbacdd297f676845359eb7078ea6d625658e498af5fd17",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "95bee70ea7cc046a1d546a17b2374a928dc916639849b5123748ee8698f5d2c3",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "9e83fb852a8ca34601e674418ac226662253936657474f0db0f6f55b8c5def22",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "7623407b9deb703777e192e56ee414aa355ce19d9bdc9e656bfd9c8ed5fec032",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "64476c89aaf4020b19378ddde0a6520ea14541645d40d977044966e4f317f1a8",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "932a64063b84f6005366ef05ab15c755361be4d212fb75848c3d9631bb96b542",
+      "guide_sections": "Section 2.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "8899cdd825c104f5803d2551b93acff80c268adb75782c32befc405dcfbc1fb9",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "a4f54cf610ed8d952b4d4f728931e01efe2e09fd3ccce578ab2e1b0aad2db295",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "313b85195ee4d94763f8577f0a5b91a19d7a12c8302329b87fe2e3d37e9554e3",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "d65af6e7f0c8b9cb52072faa1fb6a88838e74a784650c57af00e347e7cf6c71d",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "acccd5f8e9420cdb2ed867ed9b4f2dd5eaac12e43702911d7a85184b5b2dc984",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "ed3c8c200e643d7a8531828db531081d84253537ffa4b41aa5726381f2fc7b72",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "5f03ac13809e328d4eab85e839badbd2a8ee4f860b7c89822d28bf9fe3131b5e",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "00c588dfa27bbbb678fc195500d03bbf4052e53ea8ec9aff9ebf6f1d4d7f3b3a",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "4e7aea1a99ebda0af2b134c515bddc92f31189d706ce853333104caaa9bfd0b4",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "25885d9c47cecf0623b485020b94c5d4aea0b9c51f3ba17878c5c548dd7d89dc",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 11,
+      "objective_sha256": "c43fe839c2221b9a71f945cf7a3cfb374bdf020c271686cca5309651cb05b593",
+      "guide_sections": "Section 2.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "49b0d150c95b567c3635e8b0f0941da11bd0ca1797780ee922bf8bd6edee8c8f",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "1ef0b5e555bd06a337ad420090927c70ab99b5ca0915ef3ecc9107bb49921deb",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "49e06a8e46b4b0067c4dbf943dec96e64e7d77cdcdd6f86ab1e56d42b16f7abf",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "8bb12b66ba3ec10a3d248c8aca605fdbef1e873b928f206f0f1c5ebaa445583e",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "097a39c36e1fc1e7aeab69bd900b4f31195eb9aa334940fd1eb317b866ec3f5d",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "847f497d34e7d31aee55c6a1fca7ed7ad1467e3e39136591a5b19d276a1736db",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "130a2e3e0111ff012d3cebd0d528a5575ef9b805bffbcca8a768b814440da1e1",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "2af19f6c8ae4fde775a6e2070981c37956a2a7f3dacff86209e0fdadbe7b2d34",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "a52a682c18a870f9639f88d537bfffa0608b6931703f8a213d53a0401d94559a",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "66eefda83a41e5795642fbadfb3b0698b9c99a751597f6d816b21f81a2103e73",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 11,
+      "objective_sha256": "efc6f50a2dbff18586cbb26104e4413e245a2176f2066a0c0a88519075922bea",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 12,
+      "objective_sha256": "c189fe48192d0c86a00f599e75203e112d55ba84b4705acbb02d69668f1bdaf2",
+      "guide_sections": "Section 2.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "8899cdd825c104f5803d2551b93acff80c268adb75782c32befc405dcfbc1fb9",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "cf9fd46b910e2c4fd75c59ec9fa66faff995d3ff8065252ed97e105f3983fc89",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "a2a66f04ef1a532db2b75030f59d155b92d2b1161e3805d0f89654f77295a6db",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "abfdab76b2602c34931e4d9355eafacac6a2b2c1fd8c504a04945e645ab288d7",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "7f76258091173c0ef5bdd820e330679ed3ad493f174a433d91411e52c0f7eceb",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "6e60072c141ccca20c09807aa3d3c0e16e146c0189db8ccc43dedb5b1e3c9027",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "9a18bc5be0a393ac22e442a8e8e01893d8240ce031a4d0b643b4d7d5a43ad8b8",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "fd16ddf13425dab8af9a7ed36509fd316e69479310a4adb708e8124a7b78ab6c",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "3c470159f1f6d52cb0d63208ee125e8891d879b6ff0524b5e1203c7ca56c47ac",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 10,
+      "objective_sha256": "89a4aa011916031b11eb62c647aea3d4548dff37bef786248a944a16f5345028",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 11,
+      "objective_sha256": "0432a249c4b4281627777879a9d816a5e84d18090964ceb183f8cad63da470c2",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 12,
+      "objective_sha256": "23d73b6fbc2629fbc271fc64aed5b332fe690ac381aef8f0d171426f83e925db",
+      "guide_sections": "Section 2.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "ef568e909c9c25baf2ae33665d915dbe6249b0256bf6f7848fa526f79bbd443b",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "39a8fab04ace27fc41051065f98cbd1a2015d2c607dc937fdffc5415b2f173d2",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "bb395109e20757fbb79d9a5a604a0e60a8200b6bea4e5b15e38cabce085c7c8d",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "1ff8da275f813ff7b74d090e3eaf05bfb7f1022a71f5538517c30350c9405736",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "343c0a7cd7dd30eb599d76686897373b26c9eaf29c713049e70bc7c803840aa0",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "751bb3f41348c56cf52821c0a016259a3dc9c0ab5928b6441218b355b2a38d6e",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "e3337636e9f2e4ffeadfb42bd0348a1c68dd73d38b214498b2b45908e1998cca",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "e70d203bf94fdc0a40bd5679741fedec1a68225257c35c19664df49a02f068c7",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "4b99c0ebbab280f4844b470a7701d3f58b7b661896973556e2661bf6f65a25e4",
+      "guide_sections": "Section 2.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "89efd0c3e3eaf5436e38434926a088340379b38d3e5503ca2aa7f2e7935f0100",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "b40bdb451957b2c259a6ce373e8aa283d6663196f78ba3b539ab91eddb9260ba",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "438fa59ed5090e38dec936072e7eeb65857e2c17ff38b0cd63898597ed8b73b5",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "6207b2b88d9053253ed170548813ed725f5a9ab2f59d4155c36e5b1cbf3021dc",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "9ded12c0776a9e460fd08b611e858ce51dec8dbc71bcae334e20f209a431d216",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "0ecb722cd9426844dee3146bbe316d51f98e04221955e3bea6a15d120de1bcb9",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "3a1b5f090e16cda1bacf5b97e81d70d2e85c029d30f24437292382787b7f0874",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "1c2242064bd24477f82824913ae0ea54e53b890ee17ae4cf9a8cd168ad4998ef",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 9,
+      "objective_sha256": "f5d4f48da827b3275b21ee40a2a2c7218785cb816c3842f0c3611f729cb2d411",
+      "guide_sections": "Section 2.6; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "78f1eeaabb8dfc777378fa5bdad03fb75ac76227997c449908c4ac52fd197142",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "e78e4dc1fa27bbcad00d7c91d59eca09d34e676e7ed2e0ffba153a61b2edeb95",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "85e8508d1894f269f4dd90201c202bae42e665d7915d8588f1028fc32aee19f5",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "36fb3d17e77dcbf33b098f1d0cb5549b45a81f95034f22dc913304bfdad8ab24",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "95bee70ea7cc046a1d546a17b2374a928dc916639849b5123748ee8698f5d2c3",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "60acbf9d630502855507e3e40e43ea2590e3fec5bf10f889ae3c769ef849f7e8",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "eacacba6670d56b20dc263199bf645b9da1113fa11c141661aa7e933cf51bf68",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "934461b6d8b160343fa8e3e74789532ea1cbe5d0beab7d87f7e156a78f96c946",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 9,
+      "objective_sha256": "a896f4eb74ca4639260140e7b92b4beef3f927cc6bd26dd888c1068a57facffc",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 10,
+      "objective_sha256": "6e6c438e71a0f1f93cf20fa6d8b100f4eb391e989d529d341a436123534a3d42",
+      "guide_sections": "Section 3.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "37927a443c2c41225cb0e40fb6c21b6044d142deb6efe7212f3a80f98c83b3f9",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "76f5e7f897fda95c4167f785614fcd6d1e77ceec2964706e8084651dd362bdd5",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "e9d5ac71b5688ae5f91de53d5b6af6ca40547b20433d732fed9f74f628d776ac",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "6b1daae8d911de231ed959961c9ade1a31c2da3ebd307aeb7f7f8591453f9122",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "59a13cb1e04ae1b7737ae1ab474dd4ec9f0268073eb3598ad91742283ece56fb",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "6dd43275086fbcb5dcb813c391a5a6bfb21be0f66c2fc6481cd9c227f592d63d",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "57bb3bb6efd8e4693838e78fbd04e60d7fb545e75081973fad1241b5f1d7decd",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 8,
+      "objective_sha256": "bdefbb814bda7204f37447e8cdfa9e140e47390e2ab5d194532c6c2069c69dfe",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 9,
+      "objective_sha256": "d64e01e017285d38dc8c5e143f2a0dc74c5d28b0f03a3b5cd60d37bb0c7c0806",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 10,
+      "objective_sha256": "62aedaf370fde863038df59d0a1be617c5669d2827aef5ee451fe63df44c1078",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 11,
+      "objective_sha256": "c06984c27e18a4d8e3445a75ae85d45c6ec24a7f7979ec2dccd81aa880e30a9f",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 12,
+      "objective_sha256": "af2d0fb24cc82d17f92b9d5adcc961e1d725a3f86af8149e29d07af06cb538a3",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 13,
+      "objective_sha256": "11bf5d2498087fe7fcb36ff3430ace563a7224a9d3db66a163e277a1554f3367",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 14,
+      "objective_sha256": "cdb602bf47f9efec8117f6dbc80efd42d0d56592a3d64bc1ac343cb7272a1af1",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 15,
+      "objective_sha256": "ff60f222b1bedff679392ac6e8cb1d9ccc4fa0db9f82a5ade0763525355f5626",
+      "guide_sections": "Section 3.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "75f09ef3dec8b7f2adc77c39c7624e0eba762b406cbbfbee093040b89450f33b",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "df343e938f8793fa0b43b614c5ef62f82b70842cbacd47340bcd5f9ed40f29d1",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "ed2deaa173df820c23f9cdf081447aaee6580bec7a54d046e75f01d2d6622a1c",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "0e3567cae915dffbd55d761de66e0b762241cff6673b5be56319adee4b62b3f6",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "541214a3e6049c6fdde2f546522924c72f923b15557cc70838d2ba43a205feb6",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "cf84b0c9110da7064f38b4a7cce2c21e95b9c9da3c88bff6c5eee7e10da98d0c",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "ad0172836dd0b59da22ee360eafabfade1138a8f6865cbc25050bd4975ddb47a",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 8,
+      "objective_sha256": "f756c55b0192d74cb033b8c8315e43d268fd86a0bdafd49315fd982b12a2ef19",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 9,
+      "objective_sha256": "6929c690f6262a08c03a69be794b233d740a637f8b063245bf8013e6a2ffb187",
+      "guide_sections": "Section 3.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "8899cdd825c104f5803d2551b93acff80c268adb75782c32befc405dcfbc1fb9",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "2b52381d995d80be8b4713259bd24dae0aa993cd65d72f8e31973d3c0b5831cf",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "f1e9ce90344c5643af6dec26b6cd215ee4535b18533d4fb4a8826b3e0bc67008",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "5b9338688512870d10297110b971a9ddff34888470f20b5d112436436724f628",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "6a6e209dfed4fe6ed21c69ba9f744956e88b59e717f72440cd36831829e17145",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "6e60072c141ccca20c09807aa3d3c0e16e146c0189db8ccc43dedb5b1e3c9027",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 7,
+      "objective_sha256": "8a5b58603ffa2087d4e8bc787b5bf43211112865ff0a6c8d249c32fe8912c093",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 8,
+      "objective_sha256": "5e5b8b11cc9209dd26e8a632f1e0ea9e687892dea32be99f1b88d3ee6879ad6d",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 9,
+      "objective_sha256": "9481d6e967d94d626fb84f1fa51a08ea69b13fed58097bd6fe1dbf3a083cc709",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 10,
+      "objective_sha256": "18d9ead01e4572a2d5b498115b1c0ab9d1a57b0596817069eedf20ca057ebb29",
+      "guide_sections": "Section 3.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "795eed925a98c29e03eac96218989272761344c842b698e00343565482b91e5f",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "e7fd13b8250cd6fc70d7405dfced58f47e32f8b5864f6c3204ebb541b29f3cee",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "b4de3514046ac5f2f7fc95de664b59c516cf2b94d8f4b51e847706a8159e46ec",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "0d0b6158d1ca05565919a5a1e6c090f586bbae34170ec3177b321b71bb11a1ca",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "067dd05a76388d514e096474c1c3db06cbd5478c59d6b891d3754e030f8aa3de",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 6,
+      "objective_sha256": "0b535acd879dc01b4bb2aae215b01e5b772b1978262efb8957ccd806efe17e05",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 7,
+      "objective_sha256": "151b750ca5847d4bab899499774e9b20a7755c4428ae1f9c60d5d01c5d7d03b2",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 8,
+      "objective_sha256": "145aa740a0ea75aa7b881cc1d7071e7fc8a943d08d783b96dca2ec2421845b6c",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 9,
+      "objective_sha256": "ebead8453c5d2cfa56660cd982b793aa85bc02cee5348d76d2309b945564f13c",
+      "guide_sections": "Section 3.5; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "18c2bfa0c5aba2ad791dba003cefd5655979d2df898d1d1d1ef62c8f5412b1ba",
+      "guide_sections": "Section 4.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "f560334890810b9776c30cc374b4dd1007d7bd44ede6b3372af25d0c8efc1ec6",
+      "guide_sections": "Section 4.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "6c9835d57956e0ffc14374f5df1ae612ed37b2ca0cc672ae1161894f5b2fa5be",
+      "guide_sections": "Section 4.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "d802a2f65979b103e7f31c3e18ebb9575e3a5115ff9a5216d8534297580fceb6",
+      "guide_sections": "Section 4.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "e2007cf4c4706590979253ed6e60eba81a9c10d1a5018ee175e91f54406a5209",
+      "guide_sections": "Section 4.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 6,
+      "objective_sha256": "6544cf4cebda0404faca66ee1e896e170f5ed255fdc176a15bb64b02b00f1824",
+      "guide_sections": "Section 4.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 7,
+      "objective_sha256": "2bdd83da1cabdf5e7d080b0a3133b9e6b121c24035e2f40a82eb363b3f82fa6c",
+      "guide_sections": "Section 4.1; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 1,
+      "objective_sha256": "aa9a92458fa97f40d0d1d477b267030d72c50835708b3cb5853c0f2c363c42f8",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 2,
+      "objective_sha256": "f2a2997c432a4cca431f8acab3f3fbbebfe2942a566a82e9c3c8acbf656623c8",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 3,
+      "objective_sha256": "8b76ce6623903ea6c42b3405896cf1c7f54ae26cccc7f98d48085591ceb43dd0",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 4,
+      "objective_sha256": "224c98e29880c02900219f920d5dd477c2c59603cfe4f5edb0f0074a81006fa7",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 5,
+      "objective_sha256": "5730c73707b8738895293ba0e46d01bcbdb0a512c723911db8459578c570c88f",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 6,
+      "objective_sha256": "137aad862efd37de13b33c962c74221f343aa7af159c26ff9472f038de825f17",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 7,
+      "objective_sha256": "9ada072902620f8d6ee9cfde947fdf23e3cbf2c865b82c7ebf0d4b1a83123218",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 8,
+      "objective_sha256": "ec0f6199a57761040622b8cfd932e901e63a8578cd8367c90e76cc46bf9b446b",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 9,
+      "objective_sha256": "dc2b5e410ffc81205ab4bc915c7219cf833a6367c3d4d2b0e13e4819c32abaf0",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 10,
+      "objective_sha256": "1e0d30d6a2ff01ee4a4b30cc1f1ca687d92fcc6d154f5560761d73fcbb579ce0",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 11,
+      "objective_sha256": "4257f78dcedc117113ef4ac5277fc79f7c59daaeee9a0da660952ae1a115043b",
+      "guide_sections": "Section 4.2; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 1,
+      "objective_sha256": "0eaed8c769c98c2619bf094cf6eb7086d9243b9c2c8d0c38a4d83fe31ab71d92",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 2,
+      "objective_sha256": "54e15eed3107798dffaf20708f77ed3d5f4ea77ae6771c9e881e3564582b9b8d",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 3,
+      "objective_sha256": "bfd6730ebe25eb221089486a6d30c0a68e99347e35e134d558267cbfc5a0ac4d",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 4,
+      "objective_sha256": "cfd21598feb4f4a70a65129b4210525dd1180d613424d3af205d58a1ab870359",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 5,
+      "objective_sha256": "4544edcc06c50c8122f3808704b8f8f544c3aab537786658b674705cafc46b81",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 6,
+      "objective_sha256": "b53cbedec1a904398e8108d61a25034f32e8805f03c721645744105978747a73",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 7,
+      "objective_sha256": "abd93062e593545d956d3527309d02ee7c491beb37209bd6306511fad8bdb475",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 8,
+      "objective_sha256": "39855637a3ac757a014c40b11eb6533f22aae49ed2a1cdfb1d700567f600d130",
+      "guide_sections": "Section 4.3; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 1,
+      "objective_sha256": "d969d5e68f76cfb09b0b51467f5a0530965bc38ffb75e9984e3cae83661299d1",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 2,
+      "objective_sha256": "11e0911e1b17baad224863b5e1b7e96359dd7d26176aad78061d8bcd0648e97a",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 3,
+      "objective_sha256": "268f10f4f04a85345e8197321382d1eef346b0682e950acb4426a69b90265672",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 4,
+      "objective_sha256": "00686f41912fcba079baefbe421b8d293aa881093888596cd39c01abd9ee3e8f",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 5,
+      "objective_sha256": "d05613ccee2cb7130f737a44dab91021f3040d1c7d83069910cb133eaa8e377a",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 6,
+      "objective_sha256": "36ae9ed065522bd37d9b141a73105ef4c148f909db1b91f2edba76e66ff5dc87",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 7,
+      "objective_sha256": "e3c7b4b57fb44a61fb1d7cca32058fac082a1246ad10a9fe0f2db66225dfc1ac",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 8,
+      "objective_sha256": "37a6ec7bb036210342564177afcc4a70e314116c35e57a0a8dbbfc38b02b0cd7",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 9,
+      "objective_sha256": "d8ca5148c8392e3c89f0bf547970f9f1c306068927b2b9230ab2be2c21ebea60",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 10,
+      "objective_sha256": "d90afe0e613e85a9ca722b102b0f5ceabcf99349d580d37c2292d318bdbecdd7",
+      "guide_sections": "Section 4.4; Worked architecture decisions; corresponding proposed labs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SAP-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SAP-C02",
+        "title": "AWS Certified Solutions Architect - Professional",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+        "guide_path": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\sap-c02-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\sap-c02-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d",
+        "previous_status_sha256": null,
+        "current_status_sha256": "414dbfd3401a8f9761eff7ef0329d957ed7baba5390ba29475f68387ce138b5d",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Solutions Architect - Professional (SAP-C02)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 26,
+    "reachable": 22,
+    "access_blocked": 4,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-sap-c02-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+      "checked_at": "2026-09-28T20:30:26.973084+00:00",
+      "health": {
+        "id": "aws-sap-c02-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+        "checked_at": "2026-09-28T20:30:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Solutions Architect - Professional (SAP-C02) - AWS Certified Solutions Architect - ProfessionalAWS Certified Solutions Architect - Professional (SAP-C02) - AWS Certified Solutions Architect - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7a95c6a8af8cf16e496b2f29c0c694bcace9d256626b26df98c352e33cb9b877",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+      "sha256": "eddb7d1d3d98da25ae6dbffc4bcfa350140034de38c089ed9d6e4084d281edf0",
+      "text_characters": 7073
+    },
+    {
+      "id": "aws-sap-c02-domain1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain1.html",
+      "checked_at": "2026-09-28T20:30:27.493700+00:00",
+      "health": {
+        "id": "aws-sap-c02-domain1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain1.html",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Design Solutions for Organizational Complexity - AWS Certified Solutions Architect - ProfessionalContent Domain 1: Design Solutions for Organizational Complexity - AWS Certified Solutions Architect - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8bd16d8aabf3757b215e3b346dcaf8fc069484a2dd01ad6345750b6a1195fc02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain1.html",
+      "sha256": "222470bcf0f7b504e20e295941a1abfb7fd5e8290daebe253bd30ee1393223bd",
+      "text_characters": 4444
+    },
+    {
+      "id": "aws-sap-c02-domain2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain2.html",
+      "checked_at": "2026-09-28T20:30:27.494925+00:00",
+      "health": {
+        "id": "aws-sap-c02-domain2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain2.html",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Design for New Solutions - AWS Certified Solutions Architect - ProfessionalContent Domain 2: Design for New Solutions - AWS Certified Solutions Architect - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "155ef59c8b2a5cfc0e0377e546841d55519d49b4e119e2778ce0d68fb394faec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain2.html",
+      "sha256": "d34d24aed202daa18582428d31027066b6a7666eeb9da8240a2696130d9cf963",
+      "text_characters": 6041
+    },
+    {
+      "id": "aws-sap-c02-domain3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain3.html",
+      "checked_at": "2026-09-28T20:30:27.499156+00:00",
+      "health": {
+        "id": "aws-sap-c02-domain3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain3.html",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Continuous Improvement for Existing Solutions - AWS Certified Solutions Architect - ProfessionalContent Domain 3: Continuous Improvement for Existing Solutions - AWS Certified Solutions Architect - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "876a9b2837d2311f912be4380a1a55df752ad69c099e76fbfec9d79224ae88c9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain3.html",
+      "sha256": "0fec0eda8759051f39d339f155dae53c89931ced12c44040db084c0f6bd8ae78",
+      "text_characters": 5020
+    },
+    {
+      "id": "aws-sap-c02-domain4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain4.html",
+      "checked_at": "2026-09-28T20:30:27.567834+00:00",
+      "health": {
+        "id": "aws-sap-c02-domain4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain4.html",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Accelerate Workload Migration and Modernization - AWS Certified Solutions Architect - ProfessionalContent Domain 4: Accelerate Workload Migration and Modernization - AWS Certified Solutions Architect - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3e6f87fd92c7ead8982a1bb9642ad848f90022bc5ce03770ac6f60647d24eec8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02-domain4.html",
+      "sha256": "60f8531ab6a30cbf776dd044b5a1faba195d2cf6deec6ea7c0823bff4d2388f5",
+      "text_characters": 4186
+    },
+    {
+      "id": "aws-sap-c02-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+      "checked_at": "2026-09-28T20:30:27.812219+00:00",
+      "health": {
+        "id": "aws-sap-c02-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-solutions-architect-professional",
+        "canonical_url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+        "duration_signals": [
+          "180 minutes"
+        ],
+        "signal_fingerprint": "19df50a7f3dd9714f2dcc6e4bb4936c9ecc091b746491e2d3ea284a316429b8e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+      "sha256": "af9c3b30c4086ea0e5b126118da7b07a75583c4c83cb42682f61341514d899f7",
+      "text_characters": 5830
+    },
+    {
+      "id": "aws-sap-c02-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/sap-02-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:27.838339+00:00",
+      "health": {
+        "id": "aws-sap-c02-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/sap-02-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/sap-02-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Solutions Architect - ProfessionalIn-Scope AWS Services - AWS Certified Solutions Architect - Professional",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/sap-02-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5ddfba9034f1b98f49ca84692f2692a05d36f77c4c8abeb0a2af0b1ccd44dc2e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/sap-02-in-scope-services.html",
+      "sha256": "822bdd0b9cdb5cf557d23ab0d441567e0b97b8f41aa79232fc585fb4726cd9b2",
+      "text_characters": 5375
+    },
+    {
+      "id": "aws-sap-c02-well-architected",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+      "checked_at": "2026-09-28T20:30:27.882090+00:00",
+      "health": {
+        "id": "aws-sap-c02-well-architected",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+        "content_type": "text/html",
+        "page_title": "AWS Well-Architected Framework - AWS Well-Architected FrameworkAWS Well-Architected Framework - AWS Well-Architected Framework",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e90bac06b3686e62e9c393459effaded73914a993687769d6e4cd0d0870937cf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+      "sha256": "00307549a1ed178139a39148be987336b304cce5866159938af78b5780ed507a",
+      "text_characters": 3750
+    },
+    {
+      "id": "aws-sap-c02-multi-account",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html",
+      "checked_at": "2026-09-28T20:30:27.934815+00:00",
+      "health": {
+        "id": "aws-sap-c02-multi-account",
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html",
+        "checked_at": "2026-09-28T20:30:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html",
+        "content_type": "text/html",
+        "page_title": "Organizing Your AWS Environment Using Multiple Accounts - Organizing Your AWS Environment Using Multiple AccountsOrganizing Your AWS Environment Using Multiple Accounts - Organizing Your AWS Environment Using Multiple Accounts",
+        "canonical_url": "https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5a5c412c396978a5e7e9346588f50b0707701164fc90f9daa54649a06d35fe1c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html",
+      "sha256": "1d70a63c8bc204b382ffbb4e91978f1a4e524289f38d3e3ae96d3bf29e6dc5f4",
+      "text_characters": 9829
+    },
+    {
+      "id": "aws-sap-c02-skill-builder",
+      "url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02",
+      "checked_at": "2026-09-28T20:30:28.254348+00:00",
+      "health": {
+        "id": "aws-sap-c02-skill-builder",
+        "url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02",
+        "duration_signals": [],
+        "signal_fingerprint": "a281f9c100f3cb9af18b0db624cfb186a658b575b55fd8e8165cca8539f0b8d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-sap-c02-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02",
+      "checked_at": "2026-09-28T20:30:28.255661+00:00",
+      "health": {
+        "id": "aws-sap-c02-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Solutions Architect -- Professional (SAP-C02)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02",
+        "duration_signals": [
+          "49 Hours"
+        ],
+        "signal_fingerprint": "39eca37f8dd4bc7396dbdf324a94b20c8ce27ace571b62362e002d4c2f280127",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02",
+      "sha256": "c2d277baf6d3ce270084f1d808133e757b06436dc7fe27c85005e7b85682d1ca",
+      "text_characters": 6595
+    },
+    {
+      "id": "aws-sap-c02-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/",
+      "checked_at": "2026-09-28T20:30:28.256224+00:00",
+      "health": {
+        "id": "aws-sap-c02-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-sap-c02-oreilly-pearson-video",
+      "url": "https://www.oreilly.com/videos/aws-certified-solutions/9780138319205/",
+      "checked_at": "2026-09-28T20:30:28.339328+00:00",
+      "health": {
+        "id": "aws-sap-c02-oreilly-pearson-video",
+        "url": "https://www.oreilly.com/videos/aws-certified-solutions/9780138319205/",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/aws-certified-solutions/9780138319205/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-sap-c02-oreilly-gift-video",
+      "url": "https://www.oreilly.com/videos/aws-solutions-architect/10082022VIDEOPAIML/",
+      "checked_at": "2026-09-28T20:30:28.390617+00:00",
+      "health": {
+        "id": "aws-sap-c02-oreilly-gift-video",
+        "url": "https://www.oreilly.com/videos/aws-solutions-architect/10082022VIDEOPAIML/",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/aws-solutions-architect/10082022VIDEOPAIML/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-sap-c02-udemy-maarek",
+      "url": "https://www.udemy.com/course/aws-solutions-architect-professional/",
+      "checked_at": "2026-09-28T20:30:28.443877+00:00",
+      "health": {
+        "id": "aws-sap-c02-udemy-maarek",
+        "url": "https://www.udemy.com/course/aws-solutions-architect-professional/",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-solutions-architect-professional/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-sap-c02-tutorials-dojo-video",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/",
+      "checked_at": "2026-09-28T20:30:28.496477+00:00",
+      "health": {
+        "id": "aws-sap-c02-tutorials-dojo-video",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Solutions Architect - Professional SAP-C02 Video Course 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "4461e0f8d8e3929e9aa49ed8ce6c2e640925236c2054741d89b41ece683fb657",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/",
+      "sha256": "1f93088bef3cd947aaf352fdf73b5c68c1c07e6ef0cb49a4ee5e7084e25e0bac",
+      "text_characters": 14568
+    },
+    {
+      "id": "aws-sap-c02-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/",
+      "checked_at": "2026-09-28T20:30:28.530789+00:00",
+      "health": {
+        "id": "aws-sap-c02-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Solutions Architect Professional Practice Exams 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "72 hours"
+        ],
+        "signal_fingerprint": "87afa79359d79cf7340e4e8ff3ff895f7c54cb5b5485e0559bb8adbd049de827",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/",
+      "sha256": "d1d4b7e43ed435ee6dc0a524483d59f79f996766193621f79d1358399acbb33c",
+      "text_characters": 11903
+    },
+    {
+      "id": "aws-sap-c02-whizlabs",
+      "url": "https://www.whizlabs.com/aws-solutions-architect-professional/",
+      "checked_at": "2026-09-28T20:30:28.632800+00:00",
+      "health": {
+        "id": "aws-sap-c02-whizlabs",
+        "url": "https://www.whizlabs.com/aws-solutions-architect-professional/",
+        "checked_at": "2026-09-28T20:30:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-solutions-architect-professional/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SAP-C02: AWS Certified Solutions Architect - Professional",
+        "canonical_url": "https://www.whizlabs.com/aws-solutions-architect-professional/",
+        "duration_signals": [],
+        "signal_fingerprint": "8df839aa78ea4ef7ded9eecf6bad46ef81a9123b5c89b9a65fdb5af22f85063c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-solutions-architect-professional/",
+      "sha256": "6ba6cc85749b336f3862bb2fd136ca6ffc2bf5b07b87cb7618c034dc9e003088",
+      "text_characters": 57
+    },
+    {
+      "id": "mla-c01-september-2026-certification-update",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "checked_at": "2026-09-28T20:30:34.460868+00:00",
+      "health": {
+        "id": "mla-c01-september-2026-certification-update",
+        "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Certification updates from AWS Training and Certification: September 2026 | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+        "duration_signals": [
+          "130 minutes",
+          "170 minutes",
+          "180 minutes"
+        ],
+        "signal_fingerprint": "49d10389204257dd4d405c49fbdd4efc9b65f0e9e35cee7869c7b6d3e7226d50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "sha256": "bf28fbd3005beaffb0866066a54b6f70b9ba450d3d917ffb3a68b20694591aa0",
+      "text_characters": 15179
+    },
+    {
+      "id": "aws-snowball-availability",
+      "url": "https://aws.amazon.com/snowball/faqs/",
+      "checked_at": "2026-09-28T21:07:02.943409+00:00",
+      "health": {
+        "id": "aws-snowball-availability",
+        "url": "https://aws.amazon.com/snowball/faqs/",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/snowball/faqs/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Snowball FAQs",
+        "canonical_url": "https://aws.amazon.com/snowball/faqs/",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c944382ffd3bcd28f7ddca27041cfc30107427dd8b1315d575106f1f916b862e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/snowball/faqs/",
+      "sha256": "39a5928453230452982f55beeee322e9947aa17fe2f4f767460c266dac5104be",
+      "text_characters": 27232
+    },
+    {
+      "id": "aws-apprunner-availability",
+      "url": "https://aws.amazon.com/apprunner/",
+      "checked_at": "2026-09-28T21:07:02.944247+00:00",
+      "health": {
+        "id": "aws-apprunner-availability",
+        "url": "https://aws.amazon.com/apprunner/",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/apprunner/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Managed Container Apps Service - AWS App Runner - AWS",
+        "canonical_url": "https://aws.amazon.com/apprunner/",
+        "duration_signals": [],
+        "signal_fingerprint": "4009b8ce3b4e74e5efdc0c8d1ee212d96fe13fe48522202452647b4833fea344",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/apprunner/",
+      "sha256": "25807fdc4843d596df9c3506d48e24a879e2108e6c50df7852c6d22ddbe95a15",
+      "text_characters": 1921
+    },
+    {
+      "id": "aws-apprunner-api-notice",
+      "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "checked_at": "2026-09-28T21:07:02.944754+00:00",
+      "health": {
+        "id": "aws-apprunner-api-notice",
+        "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "content_type": "text/html",
+        "page_title": "CreateService - AWS App RunnerCreateService - AWS App Runner",
+        "canonical_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3e179f0c80b932971c042d7ae7c68b9bb85a9857999add26a3bb60697084de0d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "sha256": "8e23b0a8b2145c8516ac572809159fc194822e7e2a9be27195feae26ac04ccc4",
+      "text_characters": 12941
+    },
+    {
+      "id": "aws-sap-residency-blog",
+      "url": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
+      "checked_at": "2026-09-28T21:07:02.945098+00:00",
+      "health": {
+        "id": "aws-sap-residency-blog",
+        "url": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Recovery strategies to meet data residency requirements | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
+        "duration_signals": [],
+        "signal_fingerprint": "d29caa7d2a9d329778c27d3a5d6f99265e24e31b3a3aabed60838c0183378ee5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/architecture/recovery-strategies-to-meet-data-residency-requirements/",
+      "sha256": "7a3980359c0fa9c35d6de8a30761bf669f5a1ade0e93bbac06d29c654ad5b3d3",
+      "text_characters": 15994
+    },
+    {
+      "id": "aws-sap-dr-test-blog",
+      "url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+      "checked_at": "2026-09-28T21:07:03.554894+00:00",
+      "health": {
+        "id": "aws-sap-dr-test-blog",
+        "url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+        "checked_at": "2026-09-28T21:07:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Validating multi-Region DR for Terraform Enterprise with AWS FIS | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+        "duration_signals": [
+          "1 minute",
+          "10 minutes",
+          "14 minute",
+          "14 minutes",
+          "2 minutes",
+          "3 minutes",
+          "30 minutes",
+          "5 minutes",
+          "approximately 20 minutes",
+          "approximately 5 minutes"
+        ],
+        "signal_fingerprint": "71af7afe58f6267a5b52998a976511a9f396eca9859e3ffd273dced2313823d9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+      "sha256": "407de6b0df0b522f26194fa68a48ddc0f16de60ba5a2fc5df3fcad7beb58ebcd",
+      "text_characters": 28291
+    },
+    {
+      "id": "aws-discovery-availability",
+      "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "checked_at": "2026-09-28T21:08:26.281871+00:00",
+      "health": {
+        "id": "aws-discovery-availability",
+        "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "checked_at": "2026-09-28T21:08:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Application Discovery Service availability change - AWS Application Discovery ServiceAWS Application Discovery Service availability change - AWS Application Discovery Service",
+        "canonical_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e3e24fd9b54bdf27261c06b37dacbb307d22d441882682d6b14da5d7d074e2bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "sha256": "a3cbcb728f75a2a71c77d2ae3dbf9b3029063934cc0ee440644c08f2d490e360",
+      "text_characters": 5898
+    },
+    {
+      "id": "aws-migrationhub-availability",
+      "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+      "checked_at": "2026-09-28T21:08:26.283017+00:00",
+      "health": {
+        "id": "aws-migrationhub-availability",
+        "url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+        "checked_at": "2026-09-28T21:08:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Migration Hub availability change - Migration Hub Strategy RecommendationsAWS Migration Hub availability change - Migration Hub Strategy Recommendations",
+        "canonical_url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ce67a979cadf171a91c2d33ca75b145b79b3d0fa8ebe9ea7f0efae895d0930a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/migrationhub-availability-change.html",
+      "sha256": "04de735b20c97e0e8ade474f42625e8d1b0431900854a049a6d7525f17398e09",
+      "text_characters": 4500
+    },
+    {
+      "id": "aws-timestream-availability",
+      "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+      "checked_at": "2026-09-28T21:08:26.283693+00:00",
+      "health": {
+        "id": "aws-timestream-availability",
+        "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+        "checked_at": "2026-09-28T21:08:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "Amazon Timestream for LiveAnalytics availability change - Amazon TimestreamAmazon Timestream for LiveAnalytics availability change - Amazon Timestream",
+        "canonical_url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d730e7778387d10d6dbb4ed93a566ee774a1f37e515badef0f296045b4f180b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+      "sha256": "99425fba1306c52099b366683fb17e167b161b774b485740242eb5bfc27802a1",
+      "text_characters": 1704
+    }
+  ],
+  "added_source_ids": [
+    "aws-snowball-availability",
+    "aws-apprunner-availability",
+    "aws-apprunner-api-notice",
+    "aws-sap-residency-blog",
+    "aws-sap-dr-test-blog",
+    "aws-discovery-availability",
+    "aws-migrationhub-availability",
+    "aws-timestream-availability"
+  ],
+  "findings": [
+    {
+      "id": "sapc02-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Final C02 delivery date conflicts",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Credential November 17 versus September announcement November 16.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "sapc02-deep-2",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "App Runner historical closure dates conflict",
+      "url": "https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "API says March 31; product page says April 30; both are past.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "sapc02-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Offline migration needs eligibility check",
+      "url": "https://aws.amazon.com/snowball/faqs/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Snowball Edge new-customer access closed November 7, 2025.",
+      "recommendation": "Add eligibility boundary and compare currently eligible transfer alternatives.",
+      "disposition": "applied",
+      "source_id": "aws-snowball-availability",
+      "resolution": "Add eligibility boundary and compare currently eligible transfer alternatives."
+    },
+    {
+      "id": "sapc02-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Migration discovery tools have access limits",
+      "url": "https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Discovery Service and Migration Hub no longer accept new customers.",
+      "recommendation": "Retain exam concepts; add AWS Transform evaluation for new projects.",
+      "disposition": "applied",
+      "source_id": "aws-discovery-availability",
+      "resolution": "Retain exam concepts; add AWS Transform evaluation for new projects."
+    },
+    {
+      "id": "sapc02-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Time-series platform choices need engine distinction",
+      "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "LiveAnalytics closed to new customers June 20, 2025.",
+      "recommendation": "Add closure and distinguish InfluxDB alternative.",
+      "disposition": "applied",
+      "source_id": "aws-timestream-availability",
+      "resolution": "Add closure and distinguish InfluxDB alternative."
+    },
+    {
+      "id": "sapc02-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Recovery evidence needs explicit measurement boundaries",
+      "url": "https://aws.amazon.com/blogs/architecture/validating-multi-region-dr-for-terraform-enterprise-with-aws-fis/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAP-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Runbook timing omits detection/decision; consumer connectivity test does not pause S3 replication.",
+      "recommendation": "Add bounded article guidance, recovery budget and lab acceptance evidence.",
+      "disposition": "applied",
+      "source_id": "aws-sap-dr-test-blog",
+      "resolution": "Add bounded article guidance, recovery budget and lab acceptance evidence."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-sap-residency-blog",
+      "published_on": "2026-08-13",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Public article body.",
+      "value": "Separate physical data, cryptographic access and operational independence.",
+      "limits": "No legal/jurisdictional or absolute key-security claims adopted; regulatory assessment not performed."
+    },
+    {
+      "source_id": "aws-sap-dr-test-blog",
+      "published_on": "2026-09-09",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Public architecture, experiments, timing, state dependency and conclusion; selected sample fragments inspected.",
+      "value": "Independent recovery configuration and bounded failure evidence.",
+      "limits": "Commands/templates not validated; measured outcomes are specific to reported experiment and exclude detection/decision."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "10 original recovery, bandwidth, mesh and utilization arithmetic assertions"
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "SAP-C02 final delivery is November 16 in the announcement and November 17 on the credential page; unresolved. C03 detailed objectives announced for October 27.",
+    "App Runner product/API pages disagree on March 31 versus April 30 new-customer closure; both indicate access closed by this review.",
+    "Same-context AI review; independent human review pending.",
+    "No live AWS/Terraform experiment, legal determination or paid lesson executed. Provider blocks/shells limit metadata verification.",
+    "Scope service lists include legacy names; listed objectives are not proof that a new account can provision a service. No exhaustive audit of every linked product manual."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

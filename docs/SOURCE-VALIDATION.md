@@ -1097,6 +1097,8 @@ The review reconciles the current standard five-domain AIP-C01 blueprint with ev
 
 ## SAP-C02 coverage record
 
+The September 28 [deep review](research/2026-09-28-sap-c02-deep-review.md) maps 187 detailed objectives. Review all 187 knowledge/skill bullets and preserve 42 answered checks. Add four worked architecture decisions, qualify five services closed to new customers and assess two recovery articles. Exam delivery and App Runner historical-date conflicts remain. Current guide citations: 26 registered, 22 reachable, 4 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Design Solutions for Organizational Complexity | Section 1, all integrated scenarios, and Labs 1–3, 6, and 8 |
