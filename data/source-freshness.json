@@ -4,6 +4,343 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-sc100-deep-review",
+      "title": "SC-100 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SC-100"
+      ],
+      "results": [
+        {
+          "exam_code": "SC-100",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-100-microsoft-cybersecurity-architect.md",
+          "baseline_sha256": "bb1a21ea649b3e6346e16bc2ba51aabcf7c2d6e481bb760475573c15eab723e4",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "81 October 21 bullets mapped in 14 groups; July baseline retained. Correct Cloud and AI Security Engineer prerequisite. Ten exam languages and four-day course verified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read; current identity, recovery, policy, Sentinel, network, Key Vault, Copilot and storage control boundaries reviewed and explained. Five examples, ten labs, 44 answers; thirteen offline checks only."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current Defender/Key Vault/Sentinel/IoT timelines and documented preview limits reviewed. Five research checkpoints added. Product announcements do not expand exam objectives."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide URLs registered/fetched. Four Learn paths 19 modules, Pluralsight 4h58 and Coursera 39-hour course estimates qualified. MeasureUp 148 November-2025 questions; blocked/paywalled/shell/PDF limits preserved."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Distinguish human/agent policy coverage, source instructions from enforcement, portal migration from unchanged backend, CSPM default changes from existing subscriptions, data-plane actions from locks, and result tags from version-bound release authorization."
+            }
+          },
+          "findings": [
+            {
+              "id": "sc100-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Prerequisite credential list changed",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current official prerequisite list includes Cloud and AI Security Engineer, not the guide's older Azure Security Engineer entry.",
+              "recommendation": "Correct the current requirement and distinguish older course advice.",
+              "disposition": "applied",
+              "source_id": "sc-100-credential",
+              "resolution": "Correct the current requirement and distinguish older course advice."
+            },
+            {
+              "id": "sc100-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "All-users policies exclude agent user accounts",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/agent-id",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Agent identity, OBO user and agent user are distinct policy subjects.",
+              "recommendation": "Add flow table and three-subject exercise, explicit targeting and preview scope.",
+              "disposition": "applied",
+              "source_id": "sc-100-agent-conditional-access",
+              "resolution": "Add flow table and three-subject exercise, explicit targeting and preview scope."
+            },
+            {
+              "id": "sc100-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Device-less agents cannot supply endpoint signals",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Agent users and endpoint-specific conditions differ; agent identities currently support block controls.",
+              "recommendation": "Add policy-signal availability and exclusion checks.",
+              "disposition": "applied",
+              "source_id": "sc100-agent-targeting",
+              "resolution": "Add policy-signal availability and exclusion checks."
+            },
+            {
+              "id": "sc100-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Retention can exceed immutable protection",
+              "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Time-based protection is limited by configured duration and vault support; locked state is irreversible.",
+              "recommendation": "Add recovery boundary, support distinctions and RTO/RPO example.",
+              "disposition": "applied",
+              "source_id": "az801-immutable-vault",
+              "resolution": "Add recovery boundary, support distinctions and RTO/RPO example."
+            },
+            {
+              "id": "sc100-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Recovery authorization needs independent permissions",
+              "url": "https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Resource Guard has operation scope, exclusions and separate role assignments.",
+              "recommendation": "Describe least-privilege approval and inheritance review without blanket restore-approval claims.",
+              "disposition": "applied",
+              "source_id": "sc100-backup-mua",
+              "resolution": "Describe least-privilege approval and inheritance review without blanket restore-approval claims."
+            },
+            {
+              "id": "sc100-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Current benchmark is preview guidance",
+              "url": "https://learn.microsoft.com/en-us/security/benchmark/azure/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "MCSB v2 is preview; control mappings do not establish full compliance or automated implementation.",
+              "recommendation": "Add dated AI-principle and evidence guidance with service-level verification.",
+              "disposition": "applied",
+              "source_id": "sc-100-mcsb-overview",
+              "resolution": "Add dated AI-principle and evidence guidance with service-level verification."
+            },
+            {
+              "id": "sc100-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Portal transition changes automation and CMK boundaries",
+              "url": "https://learn.microsoft.com/en-us/azure/sentinel/move-to-defender",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Routing/correlation change, CMK coverage differs and incident updates can batch or arrive late.",
+              "recommendation": "Add migration acceptance tests and four-minute response example.",
+              "disposition": "applied",
+              "source_id": "sc100-sentinel-migration",
+              "resolution": "Add migration acceptance tests and four-minute response example."
+            },
+            {
+              "id": "sc100-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Management API retirement differs from data-plane lifecycle",
+              "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Control-plane versions before 2026-02-01 retire February 27 2027; existing vaults and data-plane APIs differ.",
+              "recommendation": "Add inventory and dated follow-up; separate new-vault default from access migration.",
+              "disposition": "applied",
+              "source_id": "sc100-keyvault-api",
+              "resolution": "Add inventory and dated follow-up; separate new-vault default from access migration."
+            },
+            {
+              "id": "sc100-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Policy evaluation alone does not repair existing resources",
+              "url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existing-resource remediation requires task and authorized assignment identity; definition changes do not update identity grants automatically.",
+              "recommendation": "Add existing/new resource and permission validation.",
+              "disposition": "applied",
+              "source_id": "sc100-policy-remediation",
+              "resolution": "Add existing/new resource and permission validation."
+            },
+            {
+              "id": "sc100-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "New subscription posture defaults and recommendation shapes change",
+              "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "October 27 Foundational CSPM opt-in and December 14 grouped VA recommendation retirement require onboarding/report review.",
+              "recommendation": "Add scoped change dates, coverage example and two checkpoints.",
+              "disposition": "applied",
+              "source_id": "sc100-cloud-release",
+              "resolution": "Add scoped change dates, coverage example and two checkpoints."
+            },
+            {
+              "id": "sc100-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Unused-action detail removed for AWS/GCP CIEM",
+              "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-permissions-management",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Overprovisioned identity recommendations remain but detailed unused actions no longer appear.",
+              "recommendation": "Require provider-native evidence before permission removal.",
+              "disposition": "applied",
+              "source_id": "sc100-ciem",
+              "resolution": "Require provider-native evidence before permission removal."
+            },
+            {
+              "id": "sc100-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Forwarding alone does not enforce user Conditional Access",
+              "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Clientless branch forwarding differs from client-based policy and Private Access app targeting.",
+              "recommendation": "Add acquisition/enforcement and tenant-identity test matrix.",
+              "disposition": "applied",
+              "source_id": "sc-300-gsa-limitations",
+              "resolution": "Add acquisition/enforcement and tenant-identity test matrix."
+            },
+            {
+              "id": "sc100-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Copilot DLP actions cover different data paths",
+              "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Web search, prompt processing, source exclusions and uploads have different behavior and limits.",
+              "recommendation": "Add separate synthetic tests and preview/propagation caveats.",
+              "disposition": "applied",
+              "source_id": "sc100-copilot-dlp",
+              "resolution": "Add separate synthetic tests and preview/propagation caveats."
+            },
+            {
+              "id": "sc100-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Mutable scan tags do not prove current content safety",
+              "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/introduction-malware-scanning",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Results can be error/not-scanned and tags are writable; overwrites require current result validation.",
+              "recommendation": "Add original version-bound release example and explicit service limits.",
+              "disposition": "applied",
+              "source_id": "sc100-storage-scan",
+              "resolution": "Add original version-bound release example and explicit service limits."
+            },
+            {
+              "id": "sc100-deep-15",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "IoT retirement applies to device-builder micro agent",
+              "url": "https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/edge-security-module-deprecation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "June 1 2027 planned retirement does not establish retirement of OT network sensors.",
+              "recommendation": "Bound the component claim and add a follow-up.",
+              "disposition": "applied",
+              "source_id": "sc100-iot-retirement",
+              "resolution": "Bound the component claim and add a follow-up."
+            }
+          ],
+          "notes": "Whole guide read and 81 October objectives in 14 groups individually mapped; July 28 baseline retained. Correct current prerequisite and agent-policy targets; add five worked examples, two labs, eight new answers (44 total) and two qualified Microsoft blog exercises. Clarify recovery, Sentinel, Key Vault, CSPM/CIEM, policy, network, Copilot and storage boundaries. Thirteen offline arithmetic/set checks passed; no tenant or infrastructure lab execution. Five lifecycle checkpoints added; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-sc-100-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 15,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-mb330-deep-review",
       "title": "MB-330 complete guide and learning-content review",
       "rubric_version": 1,

@@ -4,15 +4,14 @@ As of 2026-09-27; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 38 have review work.
+50 guides; 37 have review work.
 
-Next batch: SC-100, SC-200, SC-900.
+Next batch: SC-200, SC-900, AZ-800.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | pending | Pending | not-recorded |
 | [SC-200](../guides/SC-200-microsoft-security-operations-analyst.md) | pending | Pending | not-recorded |
 | [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | pending | Pending | not-recorded |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
@@ -61,6 +60,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | pending | Pending | not-recorded |
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | pending | Pending | not-recorded |
 | [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | pending | Pending | not-recorded |
+| [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | reviewed | 2026-09-27 | offline-only |
 | [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | reviewed | 2026-09-27 | offline-only |
 
 ## Completion rule

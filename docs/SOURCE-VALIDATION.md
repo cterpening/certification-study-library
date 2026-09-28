@@ -587,6 +587,8 @@ The review maps every subobjective on the official page last updated April 21, 2
 
 ## SC-100 coverage record
 
+The September 27 [deep review](research/2026-09-27-sc-100-deep-review.md) maps 81 detailed objectives. Whole guide read and 81 October objectives in 14 groups individually mapped; July 28 baseline retained. Correct current prerequisite and agent-policy targets; add five worked examples, two labs, eight new answers (44 total) and two qualified Microsoft blog exercises. Clarify recovery, Sentinel, Key Vault, CSPM/CIEM, policy, network, Copilot and storage boundaries. Thirteen offline arithmetic/set checks passed; no tenant or infrastructure lab execution. Five lifecycle checkpoints added; human review pending. Current guide citations: 56 registered, 53 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Design solutions that align with security best practices and priorities | Section 1, all integrated scenarios, Labs 1–2 |

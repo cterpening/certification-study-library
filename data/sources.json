@@ -3,6 +3,230 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "sc100-sentinel-migration",
+      "title": "Transition Sentinel to Defender portal",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/move-to-defender",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Targeted prerequisites, routing, CMK, correlation and automation/latency sections reviewed; no live portal or workspace migration. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-ai-controls",
+      "title": "MCSB v2 artificial intelligence controls",
+      "url": "https://learn.microsoft.com/en-us/security/benchmark/azure/mcsb-v2-artificial-intelligence-security",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Overview, seven principles and selected implementation sections read. Article disclaims certification/attestation and says content last reviewed December 1, 2025; guidance is not a guarantee of current enforcement. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-backup-mua",
+      "title": "Azure Backup Resource Guard authorization",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/multi-user-authorization",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Targeted prerequisites, role separation, excluded operations and PIM approval sections read; no role or immutable-vault mutation. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-policy-remediation",
+      "title": "Remediate resources with Azure Policy",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/policy/how-to/remediate-resources",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Evaluation, assignment identity and remediation-role requirements reviewed; no Azure policy deployment. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-agent-targeting",
+      "title": "Target agent identities in Conditional Access",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-target-agent-identities",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-storage-keys",
+      "title": "Prevent Shared Key authorization for Storage",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/common/shared-key-authorization-prevent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Targeted authorization/SAS/client-compatibility sections read; no storage configuration changed. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-cloud-release",
+      "title": "Defender for Cloud release notes",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Targeted July-September 2026 entries read, including new-subscription CSPM opt-in, CIEM unused-action changes, individual recommendations and upcoming VA retirement. No claim to review every historical release entry. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-ciem",
+      "title": "Enable Defender CSPM entitlement management",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-permissions-management",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-keyvault-default",
+      "title": "Key Vault access control defaults",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/access-control-default",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-keyvault-api",
+      "title": "Migrate Key Vault control-plane APIs",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/migrate-api-version",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-tenant-restrictions",
+      "title": "Universal tenant restrictions",
+      "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-universal-tenant-restrictions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-copilot-dlp",
+      "title": "Purview DLP for Microsoft 365 Copilot",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-storage-scan",
+      "title": "Defender for Storage malware scanning",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/introduction-malware-scanning",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Current result channels, mutability, resource dependencies and support limits reviewed. Version/ETag release gate is an original application-design exercise, not built-in Defender behavior. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-iot-retirement",
+      "title": "Defender for IoT feature retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-iot/device-builders/edge-security-module-deprecation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-isoc-blog",
+      "title": "ISOC preview and agentic security operations",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Rob Lefferts, September 23, 2026. Public article read; accept a supervised signal/context/action exercise. ISOC explicitly preview; no video, deployment or performance test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc100-storm-blog",
+      "title": "Storm-3168 compromised service-principal investigation",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Microsoft Security Research, Yossi Weizman and Tushar Mudi, September 25, 2026. Public article read; accept credential/recovery tabletop, preserving uncertainty about initial access and unconfirmed exfiltration/ransom. No destructive reproduction or gated intelligence review. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mb330-units",
       "title": "Warehouse unit and stocking policies",
       "url": "https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/unit-measure-stocking-policies",
@@ -2700,9 +2924,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-801"
+        "AZ-801",
+        "SC-100"
       ],
-      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution. September 27 SC-100 deep review: Current immutable-vault modes, support matrix and time-based retention distinction reread for SC-100. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az800-entra-vm-signin",
@@ -7351,8 +7576,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-900",
+        "SC-100"
+      ],
+      "notes": "September 27 SC-100 deep review: Targeted control/data-plane scope and lock behavior read; no destructive lock test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-resource-manager-overview",
@@ -18916,15 +19145,17 @@
     },
     {
       "id": "sc-100-pluralsight-path",
-      "title": "Microsoft Cybersecurity Architect (SC-100)",
+      "title": "Pluralsight Microsoft Cybersecurity Architect SC-100 path",
       "url": "https://www.pluralsight.com/paths/microsoft-cybersecurity-architect-sc-100",
       "publisher": "Pluralsight",
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"],
-      "notes": "Four Tim Warner courses, five hours listed, plus a practice exam; course dates are December 2024 through January 2025."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 public page: four Tim Warner courses (52m, 1h51, 1h20, 55m) total 4h58, rounded to five path hours; December 2024-January 2025 dates. No paid lessons reviewed; gap-check 2026 objectives. September 27 SC-100 deep review: Public course titles/dates/durations only; no paid lessons reviewed. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-oreilly-exam-ref",
@@ -18964,27 +19195,31 @@
     },
     {
       "id": "sc-100-whizlabs-coursera-specialization",
-      "title": "Exam Prep SC-100 Microsoft Cybersecurity Architect Expert specialization",
+      "title": "Whizlabs SC-100 Coursera specialization",
       "url": "https://www.coursera.org/specializations/exam-prep-sc100-microsoft-certified-cyber-security-architect-expert",
       "publisher": "Whizlabs via Coursera",
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"],
-      "notes": "Four-course advanced specialization listed at five months and four hours per week."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 listing: four courses estimated at 9, 12, 12 and 6 hours (39 total), distinct from five-month/four-hours-weekly pacing. No lesson runtime or current objective completeness independently verified. September 27 SC-100 deep review: Public course estimates total 39 hours, distinct from pacing; no lesson completion or current-objective certification. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-measureup-practice",
-      "title": "Microsoft SC-100 practice test",
+      "title": "MeasureUp SC-100 practice test",
       "url": "https://www.measureup.com/microsoft-practice-test-sc-100-cybersecurity-architect-grc.html",
       "publisher": "MeasureUp",
       "authority_class": 3,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"],
-      "notes": "Approximately 150 original practice questions with certification/practice modes, explanations, and references; a demo is listed."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-100"
+      ],
+      "notes": "September 27 public listing: 148 questions, last update November 2025; generic copy still says approximately 150. Current July/October objective completeness unproven; no paid questions reviewed. September 27 SC-100 deep review: Public catalog metadata only; no paid questions reviewed. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-partner-skilling-playbook",
@@ -19716,9 +19951,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300"],
-      "notes": "Client, traffic acquisition, access-control, DNS, remote-network, and Private Access constraints; highly volatile."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SC-300",
+        "SC-100"
+      ],
+      "notes": "Client, traffic acquisition, access-control, DNS, remote-network, and Private Access constraints; highly volatile. September 27 SC-100 deep review: Targeted client/remote-network/access-control limitations read; no exhaustive platform matrix validation or live network test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-300-managed-identities-faq",
@@ -20304,11 +20542,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-27",
       "supported_exams": [
-        "SC-500"
+        "SC-500",
+        "SC-100"
       ],
-      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027."
+      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027. September 27 SC-100 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-security-copilot-docs",
