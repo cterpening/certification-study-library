@@ -6,16 +6,16 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-07
+last_verified: 2026-09-27
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-07
+upcoming_change_checked: 2026-09-27
 ---
 
 # AZ-801 Configuring Windows Server Hybrid Advanced Services Study Guide
 
 > **RETIREMENT ANNOUNCED:** Microsoft will retire AZ-801 on **September 30, 2026, at 5:00 PM Central Standard Time**. AZ-800 retires at the same time. After that transition, [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) will remain the available exam path for the [Windows Server Administrator Associate certification](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/). New learners should normally prepare for AZ-802; use this guide when you are already committed to taking AZ-801 before retirement or need its advanced-services knowledge.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-801-coverage-record). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The full guide, all 115 detailed objectives, citations and learning examples were reviewed on September 27, 2026. This does not establish live lab execution or guarantee future currency. See the [deep-review findings](../docs/research/2026-09-27-az-801-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-801-coverage-record). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
 
 **Current baseline:** Skills measured as of October 6, 2025<br>
 **Upcoming blueprint change:** No later skills-measured revision is shown, but the exam itself has an announced retirement.<br>
@@ -151,6 +151,8 @@ OSConfig provides role-aware Windows Server 2025 baselines and drift control. Ap
 
 **VERIFY CURRENT:** Baseline contents and OSConfig module versions evolve. Recheck [Windows Server 2025 OSConfig baseline guidance](https://learn.microsoft.com/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines) and test protocol, RDP, SMB, service, and application behavior before production enforcement.
 
+**Worked example — policy keeps changing back:** A local administrator repairs a setting, but it reverts after drift enforcement. Inventory every writer: OSConfig, GPO, machine configuration and any local script. Assign one authority for the disputed setting and implement the approved exception through that authority. Capture the actual configuration before applying a baseline: removing an OSConfig assignment does **not** guarantee restoration of every prior value. Use the scenario names supplied by the installed module and current documentation; the documented member-server example is `SecurityBaseline/WS2025/MemberServer`. Prove application access, management access and rollback in a disposable pilot rather than assuming that assignment removal undoes the change.
+
 > **Related item:** A baseline is a controlled starting point, not proof of security. Exceptions need a business reason, compensating controls, owner, review date, and evidence that the effective configuration matches the approved state.
 
 #### Windows LAPS
@@ -212,6 +214,12 @@ NTLM remains a compatibility path for scenarios that cannot use Kerberos, but it
 7. Retest administrative, cluster, backup, restore, migration, and outage workflows.
 
 An IP address, missing/duplicate SPN, untrusted domain path, or broken DNS can force fallback even when both endpoints support Kerberos. Treat NTLM use as a symptom to explain.
+
+#### Kerberos encryption and the 2026 RC4 change
+
+**Dated support boundary:** [KB5073381](https://support.microsoft.com/en-us/topic/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2026-20833-1ebcda33-720a-4da8-93c1-b0496e1910dc) ties the default assumed encryption-type change to the DC's installed updates: April 14, 2026 updates introduce enforcement with temporary rollback; July 2026 and later updates remove the `RC4DefaultDisablementPhase` rollback switch. Explicit encryption settings still affect behavior. This is not proof that every account has stopped using RC4, and an old registry rollback recipe is not a current repair plan.
+
+**Worked example — service fails after DC patching:** The service runs but authentication fails. Separate the service account's advertised encryption types, available keys, requested ticket and session-key encryption. Inspect relevant Security events 4768/4769 and KDCSVC System events with the update level and failure time. A policy that permits AES does not create missing AES keys. Coordinate supported account-password/key remediation with every dependent service, then retest the actual application and a denied identity. Follow the [current detection/remediation procedure](https://learn.microsoft.com/en-us/windows-server/security/kerberos/detect-remediate-rc4-kerberos); avoid resetting shared service credentials or re-enabling weak defaults across the domain as an unexplained shortcut.
 
 ### Use Azure security services
 
@@ -518,6 +526,8 @@ A Recovery Services vault is the management and recovery-point container used by
 
 Changing a policy does not necessarily rewrite the lifecycle of all existing recovery points in the intuitive way. Inspect current policy and recovery-point behavior before promising retention.
 
+**September 2026 update — retention and immutability can have different durations:** The [Azure Backup release notes](https://learn.microsoft.com/en-us/azure/backup/whats-new) introduce time-based immutability for Recovery Services vaults. The [immutable-vault documentation](https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept) distinguishes policy-length protection from a fixed duration. For an original planning example, a 90-day retention policy with 14-day immutability protects a new point against deletion for the first 14 days; after that it can remain retained without being immutable. The policy cannot be reduced below that fixed duration. Check vault, workload, region and WORM availability separately; operational backups are outside this immutability scope. Enabling immutability is reversible until locked; locking is irreversible. Use a tabletop decision for the lock and retention commitment, not a casual cleanup lab.
+
 ### Protect and recover Azure VMs
 
 Enable backup at the VM, policy, vault, or governed-at-scale level. Confirm the VM is in a supported region/subscription relationship, the guest/VM agent and extension are healthy, network and encryption prerequisites are met, and application-consistent processing works where required. Azure Backup creates snapshot-tier recovery points for faster restore and transfers points to the vault according to policy.
@@ -570,6 +580,8 @@ A recovery plan groups replicated machines, orders startup groups, and can inclu
 Run test failover regularly, validate the business transaction and data, record actual RTO/RPO, and clean up test resources. Planned failover is appropriate when the source is available and data can be synchronized deliberately. Unplanned failover accepts that the source may be unavailable and requires selection of the safest usable recovery point. Commit finalizes the selected point; reprotect reverses or establishes replication for the post-failover direction.
 
 Use the [Azure-to-Azure ASR architecture](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture) and [enable-replication tutorial](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication) for current implementation details.
+
+**Worked example — measure the whole recovery:** A synthetic incident begins at 10:00. The latest trusted usable point is 09:47; VM recovery takes 18 minutes, dependency/DNS repair another 12, and application validation another 10. With these sequential steps and no other delay, the observed recovery takes **40 minutes** and the recovery-point age at failure is **13 minutes**. Against a 30-minute RTO and 5-minute RPO, both objectives fail even though the VM restore job succeeded. Record detection, authorization and any additional delays in a real exercise; inspect application consistency and committed transactions before treating point age as a complete business-data-loss measurement.
 
 ### Protect VMs with Hyper-V Replica
 
@@ -851,6 +863,8 @@ A data collection rule defines supported data sources, transformations/data flow
 Azure Monitor metric alerts evaluate numeric platform or custom metrics. Log search alerts evaluate a query result. Activity Log alerts detect control-plane events. Alerts use action groups for email, SMS, push, voice, webhook, ITSM, Automation, Functions, Logic Apps, or other supported actions. Configure evaluation window/frequency, threshold, dimensions, severity, suppression/processing rules, and ownership; then fire a safe synthetic test.
 
 **VERIFY CURRENT:** DCR data-source schemas, transformations, AMA support, table plans, ingestion/retention pricing, alert features, and Arc requirements change. Use [Azure Monitor Agent overview](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview) and [DCR documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview) for current design.
+
+**Retired collection path:** The preview that sent VM telemetry directly to Storage/Event Hubs using DCR kind `AgentDirectToStore` retired July 31, 2026; Microsoft says existing configurations stop sending data. Inspect rule kind and associations when investigating a collection gap. For Event Hubs, the documented replacement routes AMA data to Azure Monitor Logs and then uses supported data export; direct AMA upload has no replacement. Check supported tables, destination settings and actual record arrival at both stages. See the [retirement notice and alternatives](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage). Old creation examples remaining on that page do not override its retirement notice.
 
 #### VM Insights
 
@@ -1169,6 +1183,12 @@ The public [MicrosoftLearning AZ-801 lab instructions](https://microsoftlearning
 
 ---
 
+### Lab 9: Review a hardening and recovery change before execution
+
+Build a tabletop change record for the OSConfig, Kerberos, backup-duration and recovery-timeline examples. State the policy owner, exact platform/update version, expected success and denial, source of logs, rollback boundary, and business acceptance criterion. Recalculate RTO/RPO from the supplied timeline. Explain the outcome for recovery points aged 7 and 20 days under the 14-day immutability example. Do not lock a vault during this exercise.
+
+If an authorized disposable environment is available, test one baseline change and restoration, one supported authentication path, and an isolated restore with a verified application transaction. Treat these as separate optional executions and record any missing credentials or infrastructure. Retain evidence before cleanup; a completed worksheet is not a live lab result.
+
 ## 9. Knowledge checks
 
 These are original learning checks written from the public objectives. They are not recalled exam questions and do not predict the live exam.
@@ -1231,6 +1251,20 @@ These are original learning checks written from the public objectives. They are 
 
 24. **A hybrid user is present in Entra ID but cannot sign in to an app. Why is “sync works” insufficient?** Object provisioning, authentication method/agent/federation, token issuance, Conditional Access, and application authorization are separate stages. Trace the user through each stage and its logs.
 
+### Current-operation scenarios
+
+25. **Does removing an OSConfig baseline reliably restore every previous setting?** No. Save the starting configuration and test restoration explicitly; remove competing policy writers and implement exceptions through the chosen authority.
+
+26. **Can a July 2026-or-later DC use the old `RC4DefaultDisablementPhase` rollback switch?** The support article says those updates remove support for that switch. Diagnose keys, supported encryption types and actual events; the default change does not remove every explicit RC4 configuration.
+
+27. **Does AES being allowed by policy prove an old service account has an AES key?** No. Capability, available keys and actual ticket/session encryption are separate evidence. Coordinate key remediation and all dependent service updates.
+
+28. **A vault retains points for 90 days with 14-day fixed immutability. Is a 20-day-old point still protected by that immutability window?** No; it can remain retained after its immutability expires. Locking the configuration does not make every point immutable for the entire retention period.
+
+29. **Does the 18-minute VM restore meet the example's 30-minute service RTO?** No. The sequential recovery and validation total 40 minutes. The 13-minute usable-point age also exceeds the 5-minute RPO target, subject to application-consistency and transaction checks.
+
+30. **An old direct-to-Event-Hubs DCR exists but produces no data. What lifecycle check comes before reinstalling AMA?** Check for the retired `AgentDirectToStore` path, then design and verify the supported Logs-to-export route and its destination/table constraints.
+
 ### Readiness prompts
 
 You are ready to move from broad review to targeted remediation when you can do all of the following without relying on product-name recognition:
@@ -1285,6 +1319,10 @@ Practice products should be used to expose weak domains and reasoning errors, no
 | [Microsoft Windows Server YouTube channel](https://www.youtube.com/@MicrosoftWindowsServer) | Free | Pick by gap; 30–90 min per selected session | Product demonstrations and feature context rather than a single exam path |
 
 ### Suggested selective plans
+
+#### Focused blog reading
+
+[Beyond RC4 for Windows authentication](https://www.microsoft.com/en-us/windows-server/blog/2025/12/03/beyond-rc4-for-windows-authentication/), **Matthew Palko, Microsoft, December 3, 2025; updated February 4, 2026**, connects Kerberos event fields, account keys and staged remediation. Plan 20–30 minutes with the current support article and the guide's service-failure example. Its forward-looking rollout wording is historical: use KB5073381 for the actual update phases. Exercise: explain why advertised AES support, available AES keys and an observed AES service ticket are three different observations. The public article was read; linked scripts were not executed.
 
 #### Experienced Windows Server administrator, limited Azure experience
 

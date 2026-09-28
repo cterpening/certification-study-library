@@ -4,6 +4,145 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-az801-deep-review",
+      "title": "AZ-801 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-801"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-801",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+          "baseline_sha256": "a47f9a8c7b523291fffa46e74cbce727631fdd88683b77ab7ae6f33402d19481",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "115 objectives in 19 groups mapped; October 6, 2025 objective and retirement snapshots unchanged. Existing weights discrepancy retained with canonical-blueprint authority explicit."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Full guide read; current primary evidence checked for baselines, authentication, encrypted recovery, backup immutability, migration and monitoring. Supported changes and bounded original examples applied."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current Windows Server and Azure Monitor feeds, Kerberos rollout KB and September Azure Backup releases checked; monitoring retirement and time-based immutability added."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide URLs registered and live checked; accepted public blog separately corroborated; a conflicting hardening blog not recommended."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Canonical blueprint governs conflicting exam-page weights; retirement notice supersedes remaining preview creation examples; installed-patch phases supersede historical future wording. Source choices and limits explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "az801-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Baseline removal is not guaranteed restoration",
+              "url": "https://learn.microsoft.com/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-801"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current OSConfig instructions warn about competing policy writers and incomplete restoration.",
+              "recommendation": "Added policy-authority and restoration example.",
+              "disposition": "applied",
+              "source_id": "az-801-doc-01-osconfig-how-to-configure-security-baselines",
+              "resolution": "Added policy-authority and restoration example."
+            },
+            {
+              "id": "az801-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "2026 update phases supersede old RC4 rollback recipes",
+              "url": "https://support.microsoft.com/en-us/topic/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2026-20833-1ebcda33-720a-4da8-93c1-b0496e1910dc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-801"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "April enforcement and July removal of the temporary rollback switch depend on installed DC updates.",
+              "recommendation": "Added dated support boundary and account-key diagnostic example.",
+              "disposition": "applied",
+              "source_id": "az801-kerberos-rc4-rollout",
+              "resolution": "Added dated support boundary and account-key diagnostic example."
+            },
+            {
+              "id": "az801-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Fixed immutability and retention are separate durations",
+              "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-801"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs distinguish fixed-duration immutability, policy retention, irreversible lock and operational backup exclusions.",
+              "recommendation": "Added 90-day/14-day example and answer checkpoint.",
+              "disposition": "applied",
+              "source_id": "az801-immutable-vault",
+              "resolution": "Added 90-day/14-day example and answer checkpoint."
+            },
+            {
+              "id": "az801-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Direct AMA telemetry preview retired",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-801"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The July 31, 2026 notice says existing AgentDirectToStore configurations stop sending data.",
+              "recommendation": "Added destination-route troubleshooting and documented replacement.",
+              "disposition": "applied",
+              "source_id": "az801-monitor-direct-retirement",
+              "resolution": "Added destination-route troubleshooting and documented replacement."
+            }
+          ],
+          "notes": "Complete guide review adds four worked learning examples, a ninth evidence lab, six answered checks and one qualified blog reading. All 115 objectives are mapped; the accepted blueprint and retirement snapshots are unchanged. Preserve the explicit canonical-blueprint versus exam-page weight discrepancy. Nine labs and 30 answers total; only arithmetic checked offline, no infrastructure execution or human review. Same-context AI review; human review pending. See docs/research/2026-09-27-az-801-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-az800-deep-review",
       "title": "AZ-800 complete guide and learning-content review",
       "rubric_version": 1,

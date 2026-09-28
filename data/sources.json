@@ -3,6 +3,90 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az801-rc4-blog",
+      "title": "Beyond RC4 for Windows authentication",
+      "url": "https://www.microsoft.com/en-us/windows-server/blog/2025/12/03/beyond-rc4-for-windows-authentication/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "September 27 AZ-801 deep review: Matthew Palko, December 3, 2025; updated February 4, 2026. Public body reviewed; useful account-key/event reasoning. Historical rollout wording is superseded by current KB5073381 phases. No linked script execution or recalled exam content. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az801-monitor-direct-retirement",
+      "title": "Retirement of direct VM telemetry upload to Event Hubs and Storage",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az801-kerberos-rc4-rollout",
+      "title": "Kerberos KDC RC4 service-account ticket issuance hardening",
+      "url": "https://support.microsoft.com/en-us/topic/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2026-20833-1ebcda33-720a-4da8-93c1-b0496e1910dc",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az801-kerberos-rc4-remediation",
+      "title": "Detect and remediate RC4 usage in Kerberos",
+      "url": "https://learn.microsoft.com/en-us/windows-server/security/kerberos/detect-remediate-rc4-kerberos",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az801-backup-whats-new",
+      "title": "What's new in Azure Backup",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/whats-new",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az801-immutable-vault",
+      "title": "Immutable vault for Azure Backup",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az800-entra-vm-signin",
       "title": "Sign in to an Azure Windows VM with Microsoft Entra ID",
       "url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",

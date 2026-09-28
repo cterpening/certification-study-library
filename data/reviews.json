@@ -1154,30 +1154,50 @@
       "exam_code": "AZ-801",
       "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-07",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/az-801-official-objectives.txt",
       "blueprint_snapshot_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
       "objective_coverage": [
         {
           "objective_group": "Secure Windows Server on-premises and hybrid infrastructures",
-          "guide_sections": ["Sections 1–2", "Secure file-service and cyber-recovery scenarios", "Lab 1"]
+          "guide_sections": [
+            "Sections 1–2",
+            "Secure file-service and cyber-recovery scenarios",
+            "Lab 1"
+          ]
         },
         {
           "objective_group": "Implement and manage Windows Server high availability",
-          "guide_sections": ["Section 3", "Secure file-service scenario", "Labs 2–3"]
+          "guide_sections": [
+            "Section 3",
+            "Secure file-service scenario",
+            "Labs 2–3"
+          ]
         },
         {
           "objective_group": "Implement disaster recovery",
-          "guide_sections": ["Section 4", "Secure file-service and cyber-recovery scenarios", "Labs 4–5"]
+          "guide_sections": [
+            "Section 4",
+            "Secure file-service and cyber-recovery scenarios",
+            "Labs 4–5"
+          ]
         },
         {
           "objective_group": "Migrate servers and workloads",
-          "guide_sections": ["Section 5", "Legacy application migration scenario", "Labs 6–7"]
+          "guide_sections": [
+            "Section 5",
+            "Legacy application migration scenario",
+            "Labs 6–7"
+          ]
         },
         {
           "objective_group": "Monitor and troubleshoot Windows Server environments",
-          "guide_sections": ["Section 6", "All integrated scenarios", "Lab 8"]
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
         }
       ],
       "checks": {
@@ -1188,12 +1208,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 87,
-        "reachable": 84,
+        "unique_external_links": 93,
+        "reachable": 90,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "All five canonical October 6, 2025 objective groups and every published subobjective are mapped to requirement, dependency, control, evidence, failure action, and recovery proof, with three integrated scenarios, eight labs, and 24 original knowledge checks. The September 7 pass adds Windows Server and Azure Monitor change feeds and separates unaffected VM Insights performance monitoring from the June 30, 2028 Map and Dependency Agent retirement. The guide retains its retirement, blueprint-weight discrepancy, AMA/DCR, ADMT, and Azure Disk Encryption boundaries. All 87 cited URLs are cataloged: 84 reachable, two O'Reilly books and one Udemy page access-blocked, and none missing."
+      "notes": "Complete guide review adds four worked learning examples, a ninth evidence lab, six answered checks and one qualified blog reading. All 115 objectives are mapped; the accepted blueprint and retirement snapshots are unchanged. Preserve the explicit canonical-blueprint versus exam-page weight discrepancy. Nine labs and 30 answers total; only arithmetic checked offline, no infrastructure execution or human review. See docs/research/2026-09-27-az-801-deep-review.md"
     },
     {
       "id": "az-802-2026-08-31-source-validation",

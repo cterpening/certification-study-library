@@ -456,6 +456,8 @@ The September 5 repair corrects Azure Extended Network's on-premises-subnet-to-A
 
 ## AZ-801 coverage record
 
+The September 27 [deep review](research/2026-09-27-az-801-deep-review.md) maps 115 detailed objectives. Complete guide review adds four worked learning examples, a ninth evidence lab, six answered checks and one qualified blog reading. All 115 objectives are mapped; the accepted blueprint and retirement snapshots are unchanged. Preserve the explicit canonical-blueprint versus exam-page weight discrepancy. Nine labs and 30 answers total; only arithmetic checked offline, no infrastructure execution or human review. Current guide citations: 93 registered, 90 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Secure Windows Server on-premises and hybrid infrastructures | Sections 1–2, secure file-service and cyber-recovery scenarios, and Lab 1 |

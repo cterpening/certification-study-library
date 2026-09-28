@@ -4,6 +4,98 @@
   "generated_on": "2026-09-17",
   "sources": [
     {
+      "id": "az801-rc4-blog",
+      "url": "https://www.microsoft.com/en-us/windows-server/blog/2025/12/03/beyond-rc4-for-windows-authentication/",
+      "checked_at": "2026-09-28T00:04:24+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/windows-server/blog/2025/12/03/beyond-rc4-for-windows-authentication/",
+      "content_type": "text/html; charset=UTF-8",
+      "page_title": "Beyond RC4 for Windows authentication | Microsoft Windows Server Blog",
+      "canonical_url": "https://www.microsoft.com/en-us/windows-server/blog/2025/12/03/beyond-rc4-for-windows-authentication/",
+      "duration_signals": [
+        "2 min",
+        "4 min",
+        "5 min",
+        "8 min"
+      ],
+      "signal_fingerprint": "d6a36859b69c0f2ce9bc28951e266d7ebe0df84928f12490a19f5453064618dd",
+      "error": ""
+    },
+    {
+      "id": "az801-kerberos-rc4-rollout",
+      "url": "https://support.microsoft.com/en-us/topic/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2026-20833-1ebcda33-720a-4da8-93c1-b0496e1910dc",
+      "checked_at": "2026-09-28T00:04:24+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/servicing/os/windows/2025/11/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2",
+      "content_type": "text/html; charset=utf-8",
+      "page_title": "How to manage Kerberos KDC usage of RC4 for service account ticket issuance changes related to CVE-2026-20833 | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+      "canonical_url": "https://support.microsoft.com/en-us/servicing/os/windows/2025/11/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2",
+      "duration_signals": [],
+      "signal_fingerprint": "346029f1d3c30eea897b703880f2d2b7d1e2613c287d8b4c133ee219cc60229c",
+      "error": ""
+    },
+    {
+      "id": "az801-kerberos-rc4-remediation",
+      "url": "https://learn.microsoft.com/en-us/windows-server/security/kerberos/detect-remediate-rc4-kerberos",
+      "checked_at": "2026-09-28T00:04:24+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/security/kerberos/detect-remediate-rc4-kerberos",
+      "content_type": "text/html",
+      "page_title": "Detect and Remediate RC4 Usage in Kerberos",
+      "canonical_url": "https://learn.microsoft.com/en-us/windows-server/security/kerberos/detect-remediate-rc4-kerberos",
+      "duration_signals": [],
+      "signal_fingerprint": "9d31f294f40b94386c2d87e0ea4132c4054a58de17e17a36bd10ba7bb359b62b",
+      "error": ""
+    },
+    {
+      "id": "az801-backup-whats-new",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/whats-new",
+      "checked_at": "2026-09-28T00:04:25+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/whats-new",
+      "content_type": "text/html",
+      "page_title": "What's new in the Azure Backup service - Azure Backup",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/whats-new",
+      "duration_signals": [
+        "15 minutes",
+        "4 hours"
+      ],
+      "signal_fingerprint": "5565270f994bb6fb100eaef48132675fab085b21eb75a270b62efe3454c9ef54",
+      "error": ""
+    },
+    {
+      "id": "az801-immutable-vault",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "checked_at": "2026-09-28T00:04:25+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "content_type": "text/html",
+      "page_title": "Concept of Immutable Vault for Azure Backup - Azure Backup",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "duration_signals": [],
+      "signal_fingerprint": "bed99de007fc9d5c8283141cf05c8d72ea4fd651946c8eb5cc86bd4c265400d4",
+      "error": ""
+    },
+    {
+      "id": "az801-monitor-direct-retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage",
+      "checked_at": "2026-09-28T00:07:26+00:00",
+      "status": "ok",
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage",
+      "content_type": "text/html",
+      "page_title": "Send data to Event Hubs and Storage (Preview) - Azure Monitor",
+      "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage",
+      "duration_signals": [],
+      "signal_fingerprint": "2c2f31997083f723fbdfe11d2e330dd74405f3627fdbfdf5bb2d2f8435eefa82",
+      "error": ""
+    },
+    {
       "id": "az800-entra-vm-signin",
       "url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
       "checked_at": "2026-09-27T23:52:39+00:00",
@@ -8821,7 +8913,7 @@
     {
       "id": "az-104-backup-overview",
       "url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
-      "checked_at": "2026-08-31T18:57:01-04:00",
+      "checked_at": "2026-09-28T00:01:40+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
@@ -11548,7 +11640,7 @@
     {
       "id": "az-800-john-savill-github",
       "url": "https://github.com/johnthebrit",
-      "checked_at": "2026-09-27T23:47:05+00:00",
+      "checked_at": "2026-09-28T00:01:41+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://github.com/johnthebrit",
@@ -11562,7 +11654,7 @@
     {
       "id": "az-800-john-savill-youtube",
       "url": "https://www.youtube.com/@NTFAQGuy/search?query=Windows%20Server",
-      "checked_at": "2026-09-27T23:47:04+00:00",
+      "checked_at": "2026-09-28T00:01:41+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@NTFAQGuy/search?query=Windows%20Server",
@@ -11678,7 +11770,7 @@
     {
       "id": "az-800-official-retirement-list",
       "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
-      "checked_at": "2026-09-27T23:46:55+00:00",
+      "checked_at": "2026-09-28T00:01:41+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
@@ -11822,7 +11914,7 @@
     {
       "id": "az-800-replacement-credential",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
-      "checked_at": "2026-09-27T23:46:56+00:00",
+      "checked_at": "2026-09-28T00:01:41+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
@@ -11983,7 +12075,7 @@
     {
       "id": "az-801-blueprint",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:43+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801",
@@ -11999,7 +12091,7 @@
     {
       "id": "az-801-doc-01-osconfig-how-to-configure-security-baselines",
       "url": "https://learn.microsoft.com/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:44+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines",
@@ -12015,7 +12107,7 @@
     {
       "id": "az-801-doc-02-laps-concepts-overview",
       "url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-concepts-overview",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:44+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-concepts-overview",
@@ -12029,7 +12121,7 @@
     {
       "id": "az-801-doc-03-architecture",
       "url": "https://learn.microsoft.com/en-us/defender-for-identity/architecture",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:45+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/defender-for-identity/what-is",
@@ -12043,7 +12135,7 @@
     {
       "id": "az-801-doc-04-azure-monitor-agent-migration",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:45+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration",
@@ -12057,7 +12149,7 @@
     {
       "id": "az-801-doc-05-plan-defender-for-servers-select-plan",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T00:01:46+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan",
@@ -12071,7 +12163,7 @@
     {
       "id": "az-801-doc-06-disk-encryption-windows",
       "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-windows",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:46+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-windows",
@@ -12085,7 +12177,7 @@
     {
       "id": "az-801-doc-07-disk-encryption-migrate",
       "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:46+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate",
@@ -12099,7 +12191,7 @@
     {
       "id": "az-801-doc-08-restore-azure-encrypted-virtual-machines",
       "url": "https://learn.microsoft.com/en-us/azure/backup/restore-azure-encrypted-virtual-machines",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:46+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/restore-azure-encrypted-virtual-machines",
@@ -12113,7 +12205,7 @@
     {
       "id": "az-801-doc-10-app-control-for-business",
       "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/",
-      "checked_at": "2026-09-01T00:43:50+00:00",
+      "checked_at": "2026-09-28T00:01:46+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/",
@@ -12127,7 +12219,7 @@
     {
       "id": "az-801-doc-11-credential-guard",
       "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:47+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/",
@@ -12141,7 +12233,7 @@
     {
       "id": "az-801-doc-12-concept-password-ban-bad-on-premises",
       "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:47+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
@@ -12155,7 +12247,7 @@
     {
       "id": "az-801-doc-13-windows-firewall",
       "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:47+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/",
@@ -12169,7 +12261,7 @@
     {
       "id": "az-801-doc-14-windows-security-events-via-ama",
       "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors/windows-security-events-via-ama",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:47+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference#windows-security-events-via-ama",
@@ -12198,7 +12290,7 @@
     {
       "id": "az-801-doc-15-disk-encryption-overview",
       "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview",
-      "checked_at": "2026-09-01T12:43:42+00:00",
+      "checked_at": "2026-09-28T00:01:48+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview",
@@ -12212,7 +12304,7 @@
     {
       "id": "az-801-doc-16-failover-clustering-overview",
       "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:49+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
@@ -12226,7 +12318,7 @@
     {
       "id": "az-801-doc-17-what-is-quorum-witness",
       "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/what-is-quorum-witness",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:51+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/what-is-quorum-witness",
@@ -12240,7 +12332,7 @@
     {
       "id": "az-801-doc-18-manage-network-atc",
       "url": "https://learn.microsoft.com/en-us/windows-server/networking/network-atc/manage-network-atc",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/networking/network-atc/manage-network-atc",
@@ -12254,7 +12346,7 @@
     {
       "id": "az-801-doc-19-deploy-storage-spaces-direct",
       "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-storage-spaces-direct",
-      "checked_at": "2026-09-01T00:53:48+00:00",
+      "checked_at": "2026-09-28T00:01:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-storage-spaces-direct",
@@ -12268,7 +12360,7 @@
     {
       "id": "az-801-doc-20-cluster-aware-updating",
       "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-aware-updating",
-      "checked_at": "2026-09-01T00:53:48+00:00",
+      "checked_at": "2026-09-28T00:01:52+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-aware-updating",
@@ -12282,7 +12374,7 @@
     {
       "id": "az-801-doc-22-deploy-quorum-witness",
       "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/deploy-quorum-witness",
-      "checked_at": "2026-09-01T00:45:48+00:00",
+      "checked_at": "2026-09-28T00:01:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/deploy-quorum-witness",
@@ -12296,7 +12388,7 @@
     {
       "id": "az-801-doc-23-quorum",
       "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/quorum",
-      "checked_at": "2026-09-01T00:45:49+00:00",
+      "checked_at": "2026-09-28T00:01:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/quorum",
@@ -12310,7 +12402,7 @@
     {
       "id": "az-801-doc-24-clustering-requirements",
       "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/clustering-requirements",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/clustering-requirements",
@@ -12324,7 +12416,7 @@
     {
       "id": "az-801-doc-25-sofs-overview",
       "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/sofs-overview",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/sofs-overview",
@@ -12340,7 +12432,7 @@
     {
       "id": "az-801-doc-26-manage-failover-clusters",
       "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-failover-clusters",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-failover-clusters",
@@ -12354,7 +12446,7 @@
     {
       "id": "az-801-doc-27-backup-support-matrix",
       "url": "https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:53+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix",
@@ -12370,7 +12462,7 @@
     {
       "id": "az-801-doc-28-backup-support-matrix-mars-agent",
       "url": "https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent",
@@ -12384,7 +12476,7 @@
     {
       "id": "az-801-doc-29-backup-azure-microsoft-azure-backup",
       "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup",
@@ -12400,7 +12492,7 @@
     {
       "id": "az-801-doc-30-backup-instant-restore-capability",
       "url": "https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability",
@@ -12416,7 +12508,7 @@
     {
       "id": "az-801-doc-31-backup-azure-arm-restore-vms",
       "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:54+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms",
@@ -12434,7 +12526,7 @@
     {
       "id": "az-801-doc-32-azure-to-azure-architecture",
       "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:55+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture",
@@ -12450,23 +12542,21 @@
     {
       "id": "az-801-doc-33-azure-to-azure-tutorial-enable-replication",
       "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:55+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication",
       "content_type": "text/html",
       "page_title": "Tutorial to set up Azure VM disaster recovery with Azure Site Recovery - Azure Site Recovery",
       "canonical_url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication",
-      "duration_signals": [
-        "24 hours"
-      ],
-      "signal_fingerprint": "6811f2b669b0713182db2d80aada92af81d3f1043524a28dafa95ee03be10395",
+      "duration_signals": [],
+      "signal_fingerprint": "08eecb4c2bce2edce391df4bd86eb7210cf56848f9d26404699c37fda94b90f1",
       "error": ""
     },
     {
       "id": "az-801-doc-34-configure-replication-single-host",
       "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/configure-replication-single-host",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:55+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/configure-replication-single-host",
@@ -12480,7 +12570,7 @@
     {
       "id": "az-801-doc-35-azure-backup",
       "url": "https://learn.microsoft.com/en-us/azure/backup/",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:55+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/",
@@ -12494,7 +12584,7 @@
     {
       "id": "az-801-doc-36-back-up-file-data",
       "url": "https://learn.microsoft.com/en-us/azure/backup/back-up-file-data",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:56+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/backup/back-up-file-data",
@@ -12508,7 +12598,7 @@
     {
       "id": "az-801-doc-37-site-recovery",
       "url": "https://learn.microsoft.com/en-us/azure/site-recovery/",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:56+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/site-recovery/",
@@ -12522,7 +12612,7 @@
     {
       "id": "az-801-doc-38-recovery-plan-overview",
       "url": "https://learn.microsoft.com/en-us/azure/site-recovery/recovery-plan-overview",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:56+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/site-recovery/recovery-plan-overview",
@@ -12536,7 +12626,7 @@
     {
       "id": "az-801-doc-39-set-up-hyper-v-replica",
       "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica",
-      "checked_at": "2026-09-01T00:53:05+00:00",
+      "checked_at": "2026-09-28T00:01:56+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/replication-overview",
@@ -12553,7 +12643,7 @@
     {
       "id": "az-801-doc-40-storage-migration-service-overview",
       "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview",
-      "checked_at": "2026-09-01T00:53:06+00:00",
+      "checked_at": "2026-09-28T00:01:56+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview",
@@ -12567,7 +12657,7 @@
     {
       "id": "az-801-doc-41-migrate-data",
       "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/migrate-data",
-      "checked_at": "2026-09-01T00:53:06+00:00",
+      "checked_at": "2026-09-28T00:01:57+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/migrate-data",
@@ -12581,7 +12671,7 @@
     {
       "id": "az-801-doc-42-server-migrate-overview",
       "url": "https://learn.microsoft.com/en-us/azure/migrate/server-migrate-overview",
-      "checked_at": "2026-09-01T00:53:06+00:00",
+      "checked_at": "2026-09-28T00:01:57+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/migrate/server-migrate-overview?view=migrate",
@@ -12595,7 +12685,7 @@
     {
       "id": "az-801-doc-43-tutorial-migrate-physical-virtual-machines",
       "url": "https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines",
-      "checked_at": "2026-09-01T00:53:06+00:00",
+      "checked_at": "2026-09-28T00:01:58+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines?view=migrate",
@@ -12611,7 +12701,7 @@
     {
       "id": "az-801-doc-44-upgrade-overview",
       "url": "https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-overview",
-      "checked_at": "2026-09-01T00:53:07+00:00",
+      "checked_at": "2026-09-28T00:01:58+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/get-started/install-upgrade-migrate",
@@ -12625,7 +12715,7 @@
     {
       "id": "az-801-doc-45-appcat-overview",
       "url": "https://learn.microsoft.com/en-us/azure/migrate/appcat/overview",
-      "checked_at": "2026-09-01T00:53:07+00:00",
+      "checked_at": "2026-09-28T00:01:58+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/migrate/appcat/overview?view=migrate",
@@ -12639,7 +12729,7 @@
     {
       "id": "az-801-doc-46-app-service-asp-net-migration",
       "url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-asp-net-migration",
-      "checked_at": "2026-09-01T00:53:07+00:00",
+      "checked_at": "2026-09-28T00:01:59+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-asp-net-migration",
@@ -12653,7 +12743,7 @@
     {
       "id": "az-801-doc-47-support-policy-and-known-issues-for-admt",
       "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/support-policy-and-known-issues-for-admt",
-      "checked_at": "2026-09-01T00:53:07+00:00",
+      "checked_at": "2026-09-28T00:02:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/support-policy-and-known-issues-for-admt",
@@ -12667,7 +12757,7 @@
     {
       "id": "az-801-doc-48-azure-migrate",
       "url": "https://learn.microsoft.com/en-us/azure/migrate/",
-      "checked_at": "2026-09-01T00:53:07+00:00",
+      "checked_at": "2026-09-28T00:02:00+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/migrate/?view=migrate",
@@ -12681,7 +12771,7 @@
     {
       "id": "az-801-doc-49-migrate-appliance",
       "url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance",
-      "checked_at": "2026-09-01T00:53:08+00:00",
+      "checked_at": "2026-09-28T00:02:02+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance?view=migrate",
@@ -12703,7 +12793,7 @@
     {
       "id": "az-801-doc-51-cutover",
       "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/cutover",
-      "checked_at": "2026-09-01T00:53:08+00:00",
+      "checked_at": "2026-09-28T00:02:02+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/cutover",
@@ -12717,7 +12807,7 @@
     {
       "id": "az-801-doc-52-service-overview",
       "url": "https://learn.microsoft.com/en-us/azure/storage-mover/service-overview",
-      "checked_at": "2026-09-27T23:52:39+00:00",
+      "checked_at": "2026-09-28T00:02:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/storage-mover/service-overview",
@@ -12731,7 +12821,7 @@
     {
       "id": "az-801-doc-53-active-directory-functional-levels",
       "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels",
-      "checked_at": "2026-09-01T00:50:33+00:00",
+      "checked_at": "2026-09-28T00:02:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels",
@@ -12745,7 +12835,7 @@
     {
       "id": "az-801-doc-54-troubleshoot-issues-performance-monitor",
       "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor",
-      "checked_at": "2026-09-01T00:53:08+00:00",
+      "checked_at": "2026-09-28T00:02:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor",
@@ -12759,7 +12849,7 @@
     {
       "id": "az-801-doc-55-system-insights-overview",
       "url": "https://learn.microsoft.com/en-us/windows-server/manage/system-insights/overview",
-      "checked_at": "2026-09-01T00:53:08+00:00",
+      "checked_at": "2026-09-28T00:02:03+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/manage/system-insights/overview",
@@ -12773,7 +12863,7 @@
     {
       "id": "az-801-doc-56-azure-monitor-agent-overview",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
-      "checked_at": "2026-09-01T00:53:08+00:00",
+      "checked_at": "2026-09-28T00:02:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
@@ -12787,7 +12877,7 @@
     {
       "id": "az-801-doc-57-data-collection-rule-overview",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview",
-      "checked_at": "2026-09-01T00:53:09+00:00",
+      "checked_at": "2026-09-28T00:02:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview",
@@ -12801,7 +12891,7 @@
     {
       "id": "az-801-doc-58-vminsights-overview",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview",
-      "checked_at": "2026-09-01T00:53:09+00:00",
+      "checked_at": "2026-09-28T00:02:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-vm",
@@ -12815,7 +12905,7 @@
     {
       "id": "az-801-doc-59-ad-forest-recovery-procedures",
       "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-procedures",
-      "checked_at": "2026-09-01T00:53:09+00:00",
+      "checked_at": "2026-09-28T00:02:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-procedures",
@@ -12829,7 +12919,7 @@
     {
       "id": "az-801-doc-60-manage-windows-server",
       "url": "https://learn.microsoft.com/en-us/windows-server/administration/manage-windows-server",
-      "checked_at": "2026-09-01T00:51:35+00:00",
+      "checked_at": "2026-09-28T00:02:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/administration/manage-windows-server",
@@ -12843,7 +12933,7 @@
     {
       "id": "az-801-doc-61-manage-servers",
       "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-servers",
-      "checked_at": "2026-09-01T00:51:36+00:00",
+      "checked_at": "2026-09-28T00:02:04+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-servers",
@@ -12857,7 +12947,7 @@
     {
       "id": "az-801-doc-62-alerts-overview",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
-      "checked_at": "2026-09-01T00:53:09+00:00",
+      "checked_at": "2026-09-28T00:02:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
@@ -12879,7 +12969,7 @@
     {
       "id": "az-801-doc-63-welcome-virtual-machines-windows",
       "url": "https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/windows/welcome-virtual-machines-windows",
-      "checked_at": "2026-09-01T00:51:52+00:00",
+      "checked_at": "2026-09-28T00:02:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/windows/welcome-virtual-machines-windows",
@@ -12893,7 +12983,7 @@
     {
       "id": "az-801-doc-64-windows-time-service-tools-and-settings",
       "url": "https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings",
-      "checked_at": "2026-09-01T00:51:52+00:00",
+      "checked_at": "2026-09-28T00:02:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings",
@@ -12914,7 +13004,7 @@
     {
       "id": "az-801-doc-65-ad-forest-recovery-determine-how-to-recover",
       "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-determine-how-to-recover",
-      "checked_at": "2026-09-01T00:51:52+00:00",
+      "checked_at": "2026-09-28T00:02:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-determine-how-to-recover",
@@ -12928,7 +13018,7 @@
     {
       "id": "az-801-exam-page",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-801/",
-      "checked_at": "2026-09-01T00:52:45+00:00",
+      "checked_at": "2026-09-28T00:01:44+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-801/",
@@ -12942,7 +13032,7 @@
     {
       "id": "az-801-exam-readiness-zone",
       "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-801",
-      "checked_at": "2026-09-01T00:52:04+00:00",
+      "checked_at": "2026-09-28T00:02:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-801",
@@ -12956,7 +13046,7 @@
     {
       "id": "az-801-measureup-practice",
       "url": "https://www.measureup.com/microsoft-practice-test-az-801-configuring-windows-server-hybrid-advanced-services.html",
-      "checked_at": "2026-09-01T00:52:07+00:00",
+      "checked_at": "2026-09-28T00:02:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.measureup.com/microsoft-practice-test-az-801-configuring-windows-server-hybrid-advanced-services.html",
@@ -12970,7 +13060,7 @@
     {
       "id": "az-801-microsoft-windows-server-youtube",
       "url": "https://www.youtube.com/@MicrosoftWindowsServer",
-      "checked_at": "2026-09-01T00:52:07+00:00",
+      "checked_at": "2026-09-28T00:02:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@MicrosoftWindowsServer",
@@ -12984,7 +13074,7 @@
     {
       "id": "az-801-official-course",
       "url": "https://learn.microsoft.com/en-us/training/courses/az-801t00",
-      "checked_at": "2026-09-01T00:51:53+00:00",
+      "checked_at": "2026-09-28T00:02:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/training/courses/az-801t00",
@@ -12998,7 +13088,7 @@
     {
       "id": "az-801-official-labs",
       "url": "https://microsoftlearning.github.io/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/",
-      "checked_at": "2026-09-01T00:51:53+00:00",
+      "checked_at": "2026-09-28T00:02:05+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://microsoftlearning.github.io/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/",
@@ -13012,7 +13102,7 @@
     {
       "id": "az-801-oreilly-exam-ref",
       "url": "https://www.oreilly.com/library/view/exam-ref-az-801/9780137729524/",
-      "checked_at": "2026-09-01T00:52:06+00:00",
+      "checked_at": "2026-09-28T00:02:06+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/exam-ref-az-801/9780137729524/",
@@ -13026,7 +13116,7 @@
     {
       "id": "az-801-oreilly-packt-book",
       "url": "https://www.oreilly.com/library/view/configuring-windows-server/9781804615096/",
-      "checked_at": "2026-09-01T00:52:05+00:00",
+      "checked_at": "2026-09-28T00:02:06+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.oreilly.com/library/view/configuring-windows-server/9781804615096/",
@@ -13040,7 +13130,7 @@
     {
       "id": "az-801-oreilly-tim-warner-live",
       "url": "https://www.oreilly.com/live-events/exam-az-801-configuring-windows-server-hybrid-advanced-services-crash-course/0636920065018/",
-      "checked_at": "2026-09-01T00:52:06+00:00",
+      "checked_at": "2026-09-28T00:02:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.oreilly.com/live-events/exam-az-801-configuring-windows-server-hybrid-advanced-services-crash-course/0636920065018/",
@@ -13058,7 +13148,7 @@
     {
       "id": "az-801-pluralsight-path",
       "url": "https://www.pluralsight.com/paths/administering-windows-server-hybrid-advanced-services-az-801",
-      "checked_at": "2026-09-01T00:52:05+00:00",
+      "checked_at": "2026-09-28T00:02:06+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.pluralsight.com/paths/administering-windows-server-hybrid-advanced-services-az-801",
@@ -13074,7 +13164,7 @@
     {
       "id": "az-801-udemy-john-christopher",
       "url": "https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/",
-      "checked_at": "2026-09-01T00:52:06+00:00",
+      "checked_at": "2026-09-28T00:02:06+00:00",
       "status": "blocked",
       "http_status": 403,
       "final_url": "https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/",
@@ -13088,15 +13178,15 @@
     {
       "id": "az-801-whizlabs",
       "url": "https://www.whizlabs.com/az-801-configuring-windows-server-hybrid-advanced-services/",
-      "checked_at": "2026-09-17T18:36:44+00:00",
+      "checked_at": "2026-09-28T00:02:07+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.whizlabs.com/az-801-configuring-windows-server-hybrid-advanced-services/",
       "content_type": "text/html; charset=utf-8",
-      "page_title": "AZ-801: Configuring Windows Server Hybrid Advanced Services",
+      "page_title": "AZ-801: Configuring Windows Server Hybrid Advanced Services Course",
       "canonical_url": "https://www.whizlabs.com/az-801-configuring-windows-server-hybrid-advanced-services/",
       "duration_signals": [],
-      "signal_fingerprint": "8d96ae99e3a9d87902e00e024a4607f2a8a1c2275d63431da066a1b12625d60c",
+      "signal_fingerprint": "9ffb84aa9aa5824204a44ceb44fc36ea0d5d2bff67b09f9ea91acc8059bee93c",
       "error": ""
     },
     {
@@ -13698,7 +13788,7 @@
     {
       "id": "az801-azure-monitor-whats-new",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new",
-      "checked_at": "2026-09-07T14:44:59+00:00",
+      "checked_at": "2026-09-28T00:02:09+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new",
@@ -13715,7 +13805,7 @@
     {
       "id": "az801-vm-insights-map-retirement",
       "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement",
-      "checked_at": "2026-09-07T14:44:59+00:00",
+      "checked_at": "2026-09-28T00:02:09+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement",
@@ -33415,7 +33505,7 @@
     {
       "id": "microsoft-practice-assessment-catalog",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
-      "checked_at": "2026-09-27T23:16:41+00:00",
+      "checked_at": "2026-09-28T00:01:40+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
@@ -33604,7 +33694,7 @@
     {
       "id": "microsoft-reactor",
       "url": "https://www.youtube.com/@MicrosoftReactor",
-      "checked_at": "2026-09-27T23:15:46+00:00",
+      "checked_at": "2026-09-28T00:01:40+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://www.youtube.com/@MicrosoftReactor",
@@ -50862,7 +50952,7 @@
     {
       "id": "windows-server-2025-whats-new",
       "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
-      "checked_at": "2026-09-27T23:47:08+00:00",
+      "checked_at": "2026-09-28T00:02:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
@@ -50876,7 +50966,7 @@
     {
       "id": "windows-server-release-health",
       "url": "https://learn.microsoft.com/en-us/windows/release-health/",
-      "checked_at": "2026-09-27T23:47:08+00:00",
+      "checked_at": "2026-09-28T00:02:08+00:00",
       "status": "ok",
       "http_status": 200,
       "final_url": "https://learn.microsoft.com/en-us/windows/release-health/",
