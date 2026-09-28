@@ -1,0 +1,3401 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AZ-700",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "474ff108ce605ed616cae043792e546c4fc8440666bc64fcd5831e5f00549315",
+  "guide_after_sha256": "8b0ec1bd6b8d7a696ee565dca9896ea0456391124dfb0dd802f39ad4170fc236",
+  "prior_records": {
+    "exam": {
+      "code": "AZ-700",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Designing and Implementing Microsoft Azure Networking Solutions",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+      "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Hands-on Azure compute, storage, and networking administration plus strong TCP/IP, CIDR/subnetting, DNS, routing, VPN, firewall, load-balancing, encryption, high-availability, and troubleshooting fundamentals."
+    },
+    "review": {
+      "id": "az-700-2026-08-31-source-validation",
+      "exam_code": "AZ-700",
+      "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
+      "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement core networking infrastructure",
+          "guide_sections": [
+            "Sections 1–2",
+            "Hub-and-spoke scenario",
+            "Labs 1–3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Design, implement, and manage connectivity services",
+          "guide_sections": [
+            "Section 3",
+            "Hub-and-spoke scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Design and implement application delivery services",
+          "guide_sections": [
+            "Section 4",
+            "Global web scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Design and implement private access to Azure services",
+          "guide_sections": [
+            "Section 5",
+            "Hub-and-spoke scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Design and implement Azure network security services",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 28,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted July 27, 2026 objective groups and their subobjectives are mapped to a bidirectional packet-walk method, service comparisons, failure modes, two scenarios, eight labs, and 24 checks. Section 3 and Lab 4 provide requirements, configuration, validation, and troubleshooting depth for Azure Network Adapter and Azure Extended Network. The September 7 pass adds current virtual network flow-log, NSG flow-log retirement, and agentless Connection troubleshoot preview evidence. All 31 cited URLs are cataloged: 28 reachable, three O'Reilly/Udemy pages access-blocked, and none missing."
+    },
+    "sources": [
+      {
+        "id": "azure-networking-documentation",
+        "title": "Azure networking documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "AZ-305",
+          "AZ-700"
+        ],
+        "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "azure-network-security-groups-overview-sc900",
+        "title": "Azure network security groups overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-900",
+          "AZ-104",
+          "AZ-700"
+        ],
+        "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "az-305-load-balancing-decision-guide",
+        "title": "Load-balancing options",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-305",
+          "AZ-700"
+        ],
+        "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "az-700-blueprint",
+        "title": "Study guide for Exam AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-public-ip-addresses",
+        "title": "Public IP addresses in Azure",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-700",
+          "AZ-104"
+        ],
+        "notes": "September 28 AZ-104 deep review: Selected resource association, static Standard configuration, zone/SKU compatibility and Basic retirement notice read; stale general implicit-egress paragraph qualified by newer outbound reference. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "az-700-dns-private-resolver",
+        "title": "Azure DNS Private Resolver overview",
+        "url": "https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700",
+          "AZ-802"
+        ]
+      },
+      {
+        "id": "az-700-virtual-network-routing",
+        "title": "Azure virtual network traffic routing",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-nat-gateway-overview",
+        "title": "Azure NAT Gateway overview",
+        "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-network-watcher-overview",
+        "title": "Azure Network Watcher monitoring overview",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-vpn-gateway-documentation",
+        "title": "Azure VPN Gateway documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-expressroute-documentation",
+        "title": "Azure ExpressRoute documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/expressroute/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-virtual-wan-overview",
+        "title": "Azure Virtual WAN overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-front-door-documentation",
+        "title": "Azure Front Door documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/frontdoor/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-private-link-overview",
+        "title": "Azure Private Link overview",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700",
+          "SC-500"
+        ]
+      },
+      {
+        "id": "az-700-firewall-documentation",
+        "title": "Azure Firewall documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/firewall/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-waf-documentation",
+        "title": "Azure Web Application Firewall documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ]
+      },
+      {
+        "id": "az-700-microsoft-learn-course",
+        "title": "Course AZ-700T00-A: Design and Implement Microsoft Azure Network Solutions",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-700t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Microsoft lists a three-day instructor-led duration and links self-directed preparation."
+      },
+      {
+        "id": "az-700-microsoft-practice-assessment",
+        "title": "Microsoft AZ-700 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Official free readiness assessment; it does not replace training or packet-path labs."
+      },
+      {
+        "id": "az-700-john-savill-study-guide",
+        "title": "AZ-700 Designing and Implement Azure Networking Study Super Guide",
+        "url": "https://www.youtube.com/watch?v=nVZYDhB_M64",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Independent approximately 2h 50m review; the recording predates the July 2026 objective baseline."
+      },
+      {
+        "id": "az-700-john-savill-whiteboard",
+        "title": "John Savill AZ-700 study-cram whiteboard",
+        "url": "https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png",
+        "publisher": "John Savill",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Public visual companion; reconcile every label with the July 2026 blueprint and current product documentation."
+      },
+      {
+        "id": "az-700-pluralsight-path",
+        "title": "Microsoft Certified: Designing and Implementing Microsoft Azure Networking Solutions (AZ-700)",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700",
+        "publisher": "Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Catalog displayed 44 hours, seven refreshed modular courses, one lab, a 32h 27m legacy course, and a practice exam. Avoid duplicating both course generations."
+      },
+      {
+        "id": "az-700-oreilly-kirk-whetton-course",
+        "title": "Azure Network Engineer Associate (AZ-700) Certification Course",
+        "url": "https://www.oreilly.com/videos/azure-network-engineer/0642572086336/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "O'Reilly displayed an 11h 2m runtime, July 2025 publication, quizzes, sandbox, and badge when checked."
+      },
+      {
+        "id": "az-700-oreilly-packt-book",
+        "title": "Designing and Implementing Microsoft Azure Networking Solutions",
+        "url": "https://www.oreilly.com/library/view/designing-and-implementing/9781803242033/",
+        "publisher": "Packt via O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "524-page August 2023 book; O'Reilly displayed an 11h 20m platform estimate. Pair with current objectives and documentation."
+      },
+      {
+        "id": "az-700-udemy-alan-rodrigues",
+        "title": "AZ-700: Designing and Implementing Azure Networking Solutions",
+        "url": "https://www.udemy.com/course/azure-exam-700/",
+        "publisher": "Alan Rodrigues via Udemy",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Udemy displayed 33h 23m and a March 2026 update; verify coverage of the July 2026 objective additions."
+      },
+      {
+        "id": "az-700-whizlabs-course",
+        "title": "Microsoft Azure Network Engineer Associate (AZ-700) Course",
+        "url": "https://www.whizlabs.com/microsoft-azure-exam-az-700/",
+        "publisher": "Whizlabs",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Course catalog page; verify current videos, labs, practice tests, access period, and objective mapping before purchase."
+      },
+      {
+        "id": "az-700-measureup-practice-test",
+        "title": "Microsoft Practice Test AZ-700: Designing and Implementing Azure Networking Solutions",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "118-question practice test with practice and certification modes; page metadata showed a January 2025 update, so July 2026 objective alignment must be verified."
+      },
+      {
+        "id": "windows-azure-network-adapter",
+        "title": "Connect Windows Server to Azure with Azure Network Adapter",
+        "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AZ-700",
+          "AZ-800"
+        ]
+      },
+      {
+        "id": "windows-azure-extended-network",
+        "title": "Azure Extended Network for Windows Server",
+        "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AZ-700",
+          "AZ-800"
+        ]
+      },
+      {
+        "id": "az700-vnet-flow-logs-overview",
+        "title": "Virtual network flow logs",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Current VNet-scoped flow-log behavior, schema, limitations, availability, and cost boundary."
+      },
+      {
+        "id": "az700-nsg-flow-logs-retirement",
+        "title": "Flow logging for network security groups",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Authoritative no-new-creation and September 30, 2027 retirement boundary for legacy NSG flow logs."
+      },
+      {
+        "id": "az700-connection-troubleshoot-overview",
+        "title": "Connection troubleshoot overview",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AZ-700"
+        ],
+        "notes": "Current Network Watcher troubleshooting behavior; retain the agentless experience's preview qualification."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "ef5d591c606ad64cf694a58abd93a603e0175456e1cf75f3ca3a2952ee56c9f7",
+      "guide_sections": "2, 7 example 1 / Nonoverlapping address inventory and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "ed2358af1bb76baa8d659249ae7d8cc8dd645a8e9f8605a798f8a77f2d4c11ed",
+      "guide_sections": "2 / VNet prefixes and deployment inventory; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "f4693af3a284dcc92462ea052e20cbc97e2d7e2646119c494c90396c511f952d",
+      "guide_sections": "2, 6 / Gateway, endpoint, firewall, App Gateway and Bastion subnet constraints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "78a8bf1914f01bcc935592f8a3a70ffe1768a4f87eaca664c1fd801c9e054db1",
+      "guide_sections": "2 / Delegation versus private access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "f6641951dec15eb61781cc40dc0b91e30ebcef8d6d0fab2abe945a524efbcbbb",
+      "guide_sections": "2 / Shared versus dedicated subnet trade-offs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "e35ac05ee6b285702392c5ef416e1d7500c5f10168542d829d0dc03f7e5e69bf",
+      "guide_sections": "2 / Public prefix creation and association",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "8cedebfb890a1a8002239b75bc29016404724e01fa2a7c77aaf7f05615016c9b",
+      "guide_sections": "2 / Stable contiguous egress/allowlist requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "def3265773d8aae55724014a27d8885503e6da3cc8f641bfb613572ade5f94b5",
+      "guide_sections": "2 / BYOIP ownership, validation and advertisement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "f259eadd5adb9f822b044046b28ab6be41f1f95a12294633a254d0183abcf3ba",
+      "guide_sections": "2 / Public IP SKU, allocation and zone choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "97f34b3316f8b96e25b4342fbe59acd260e22c7064ab26bbacf012f52327e941",
+      "guide_sections": "2 / Public IP association and compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "7a8881d7270372fbf32cd81363072251a668940a0361bc6b24c52c6c92110dd9",
+      "guide_sections": "2 / Resolver choice and query path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "d9cc0185e728828f99c19bc55903295a33d53fd044190e8562dbdbe71fb59f9d",
+      "guide_sections": "2 / VNet custom DNS and client behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "2ca5fbac4151db20b326a062addd70d3defecf792e45622e752a4c23edec959e",
+      "guide_sections": "2 / Public authoritative zone and parent delegation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "dcd0598130b0a3e5f95ba3d79d58c02978bd7a3ed71233f61de84b1dae7227c5",
+      "guide_sections": "2 / Private namespace and split DNS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "d78e180243568377c689368976ce0855f8c7a08dc58f064d47bc10618c0ca291",
+      "guide_sections": "2 / Zone records and deployment; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "55b9dab6b4ae6dc43781fd1b62eebf01d4529d184a34edf6ceb785356c5473c2",
+      "guide_sections": "2 / Zone links and registration versus ruleset links",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "7f12139b0a96c12c9717ba08e6a9bc070730bc1d1171ff77363b2f332bdbc0be",
+      "guide_sections": "2 / Inbound/outbound direction, rulesets, loops and fallback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "b98026c01b0b52eb326273b45210e24d6d82475030e6c0697dc51a542a5983ab",
+      "guide_sections": "2 / Service chaining, forwarded traffic and gateway transit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "7df8b96643caf659f80722634cf555e6f734e2963f41ab50dd42ca710faaddaf",
+      "guide_sections": "2 / Peering and nontransitivity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "9ee77e62696851c16127be9cf3244ec852d9f98138f0257e2cf85946a61f1703",
+      "guide_sections": "2 / Network Manager topology and scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "1db972ae243d2e03f288de26ff355b94f95ec609e28f746b114ab440c0b4e6df",
+      "guide_sections": "2, 7 example 2 / UDR prefix/source, exceptions and symmetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "3c590095056ea7d9c6d51702e972f943d01ca35360cfb3e0f3e5958722f17a0b",
+      "guide_sections": "2 / Subnet association and effective routes; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "dc2581104caeaad932f406f626b12c2f3600cf0c1c80971ede7ed98b50d0bc46",
+      "guide_sections": "2 / Default route, dependencies and route propagation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "896e649ae0ae4304bef3147a435d8693a8632316c9ab82363e8fc16bdfb4713b",
+      "guide_sections": "1–2 / Effective routes, next hop and return path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "aa01b0014c5bfdc25a3d04ef8a0a3e0ed24a19c8daa16d5fd3c391c6a56bb92c",
+      "guide_sections": "2 / Route Server control plane and coexistence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "844ef724d61dec0bab7ed8ff2bc24745769762bac9afc154909a90c68bb7835b",
+      "guide_sections": "2 / Explicit egress, SNAT and firewall distinctions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "17347d161916d4331783bddb0072e1a53e827414007e63a67595636e78ff0158",
+      "guide_sections": "2, 7 example 3 / NAT SKUs, public IPs, subnet association, limits and migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "1ebfa3fe7eefe03d3db907ab9a6c340e093b11aa2a9fbd0d7f900cb69273547d",
+      "guide_sections": "2 / Watcher tools, scope and current flow logs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "cc5a5561e7d3ea66afde9b880c5ebd17def2078487008c44efe0346fef70ccde",
+      "guide_sections": "1–2 / Correlated five-tuple and diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "4ba1ee851abbc1f82e24e4fdda2c166c0124227fb64a3e635e8d76a0b4dbe833",
+      "guide_sections": "2 / Monitor metrics, alerts and dashboards",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "af0b2a3a608f1cd9a9b9571969a88bffbaea491a9a0229dc5bb2ed5b08b4729c",
+      "guide_sections": "2, 6 / DDoS activation, supported resources and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "d143f5d249fcc0d73eac804bfd36a06fa3e5bd86149c39f41a5ae6beb456ecd0",
+      "guide_sections": "2 / Secure Score recommendations and priorities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "10b3d8a4aae4322ff4b686d5adb0ed7065194d6ff531d39327c03ad052e2012b",
+      "guide_sections": "2 / Attack paths and exposure context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "ee0dc4568a66d6c2a6eb10924b61b23a060ebf6aede199a6881f976e6fdbca26",
+      "guide_sections": "2 / Cloud Security Explorer inventory and investigation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "e1833375d128285e2233a70e82a2e45987e5f7193424ebce3cc2162a9e315caf",
+      "guide_sections": "3 / Redundant customer devices, links and Azure gateway",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "0fdf1964d52664a5fd5c1585d634ce1bbaf383e56a75dae2b40b838c7853d711",
+      "guide_sections": "3 / Gateway SKU, generation, IP SKU and migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "26b7a4ef393f816927ba41a0498f509ec0cecf80e603f9f8a4eccac869e1bb04",
+      "guide_sections": "3 / S2S deployment and connection dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "1a8634ead2b5fc3a903139ded9618632ae9b0ea6b30b8e6f49d50c1fcf6b7544",
+      "guide_sections": "3 / Policy-based versus route-based design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "72d3d65c400119449cbe0ed1691dbd36524ef3735ee437d934f69472bb633ad0",
+      "guide_sections": "3 / Local gateway address spaces, device IP and BGP",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "3e53e17e4eb7cedf3cf08ba0d70585f60b4d45d263956dab5cde01775d80234d",
+      "guide_sections": "3 / Matching IPsec/IKE and device requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "e24af8dd2076853d8399d716c72b23efe0c228468a0253ab8622dfd23a659feb",
+      "guide_sections": "3 / Gateway subnet, SKU, IP and configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "529c94a9f17ccc41650f8d89d885a4a711ca273956ebdd3d85bac5af568674fd",
+      "guide_sections": "1, 3 / Prefix, route, policy, tunnel and return-path diagnosis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "da53fe24d7fe2564f9fa2aa4f5d89d8b1e624c05d25dab83c7ad12acfb88cba2",
+      "guide_sections": "3 / Extended Network appliances, WAC, VXLAN and current availability; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "285597b530dc7ed590e8cd715f27b93d0a14494cc0e3cb84c89ce1c5a76cc9b4",
+      "guide_sections": "3 / P2S gateway requirements and scale",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "ff743a48afbd175f9301fca66acd8f04dc8e560db29c649542da0ff9e26a668c",
+      "guide_sections": "3 / Client/protocol/OS compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "bddc9752d29def4c7ebbed1aa3bd6d3b982d08918c671b4bd7190c923e4d018e",
+      "guide_sections": "3 / Certificate, Entra or RADIUS selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "5b9000f2ee9168045baf547c74d16f0a23c0dd8d4fc61d40377c189246b1b444",
+      "guide_sections": "3 / RADIUS reachability and identity troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "5a13f2cef55fda1ccad727d3582d9684526aa82f730536fd75953a13329231e7",
+      "guide_sections": "3 / Entra OpenVPN/Azure VPN Client requirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "fdddedc93f451d75c85e93b9e7148e133231407df141f9322b88ccee1076e7dc",
+      "guide_sections": "3 / Profile generation/import and route refresh",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "38c0f89c41042298e1227ecbf469c2a753147df1079f12554513614ed58bec17",
+      "guide_sections": "1, 3 / Auth, profile, DNS and routes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "38e87d8d48cb8ef9c0954a4ec8823988d424c8ea1260ba78afee04de8965fe36",
+      "guide_sections": "3 / Always On device/user distinction and IKEv2 computer certificates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "aa7321c205295fd979206932aa0466d688928f34f3c42c2b1f16bf026c3d3ca0",
+      "guide_sections": "3 / Per-server WAC adapter prerequisites and cleanup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "76c99f28815cbcc1ed640c52c23245007133c7ac10421bb56960bbb9d9548e36",
+      "guide_sections": "3 / Provider connectivity versus Direct",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "e681beeeaf78277ecdc1a0b4920594b9563e78b8e7e3da65d8083644fa20f2c4",
+      "guide_sections": "3 / Circuit SKU, tier and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "c1289041af91a1bbdc2fa1c67ef7d78fecea219f1e1b72121e9f1f1cf09d4969",
+      "guide_sections": "3, 7 example 4 / Location redundancy, backup load and failback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "c8bcf7ec218702fc48f7ad26b81917930f1cf8b14d04bb038d84fc726caa22d1",
+      "guide_sections": "3 / Global Reach, FastPath feature boundaries and Direct",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "6c505651637b8d8dd7885c5dffbfd55312bb7502dcbecac56e61e258825896e2",
+      "guide_sections": "3 / Private versus Microsoft peering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "4c7f3e1d2d0ee46cb5d9e3055f8af916019164d9a058146cc11ef04404a40fb6",
+      "guide_sections": "3 / Private prefixes and gateway connection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "1e2a0663048d199d23ccf3e131ed21ded64aa22272c57d8ab5cc1da94c1cdb86",
+      "guide_sections": "3 / Microsoft peering, public prefixes and filters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "475125bc12bd93eed3cd39dff28873341d3ae2c06f0e91612de7657249f6ec09",
+      "guide_sections": "3 / Gateway SKU, zone and connection requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "0fc3ae7c752478314c750232b0031acf7c90050af0ae3b59791520a0d3d8c898",
+      "guide_sections": "3 / Circuit authorization and VNet connection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "8e5591eeee951b40403dde130d741352e45012830d602911e5878c9088cf6a94",
+      "guide_sections": "3 / Prefix alignment, BGP and route preference",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 11,
+      "objective_sha256": "494f533e0bb519323e3d0de2f2deb105d519b43ef4216e907ca84abf5fce18e4",
+      "guide_sections": "3 / MACsec/IPsec scope and device support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 12,
+      "objective_sha256": "3e170552c1978922d7a5d30d105a7c054ba06cb63e7b6a86cf10408127129fc1",
+      "guide_sections": "3 / BFD versus end-to-end convergence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 13,
+      "objective_sha256": "073746e253032a63e2488aefa93d457583a3373ee71a7e70ce2772b058f35847",
+      "guide_sections": "1, 3 / Circuit, BGP, propagation, symmetry and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "85e8f841bc91190690fa1f9c68436e8d4d6c4515fb4bd0a8edd485d400f80be0",
+      "guide_sections": "3 / Basic versus Standard WAN capabilities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "b1cd41b0178469e2695647d5b0afd9909633d711b15d16305e0a866a817b5f23",
+      "guide_sections": "3 / Managed hub architecture and regions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "91f71f184a6190a1c77fb8a37893c5d172a74b2adb8e683ac5429086076d9b4b",
+      "guide_sections": "3 / Hub creation and address plan",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "8b583e9f2810005358e2f8d2f6a54c69baf5e0da0fb120fe822058413405b554",
+      "guide_sections": "3 / Per-gateway scaling and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "fd0a323ff1abb784c3f749871409227fc0573cc5e0398280830d4eb60c01ea3e",
+      "guide_sections": "3 / VPN, ER and user VPN gateway deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "8e91c7c39dee6bf72f9ce75d77a5dbc2a1fbb976bcc7b8ace9ab48e5138ea179",
+      "guide_sections": "3 / Association, propagation, default route and routing intent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "3ef5ca4f8908f3b324c240037bbbacdcbebe30d96d355d2bf0722344367e3aef",
+      "guide_sections": "3, 6 / Supported hub NVA integration and security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "9ea35b98f73fd2ef9b55ec3cb12a577362b3162b9da1210f9da1b169ed197c29",
+      "guide_sections": "4 / Layer, scope, protocol and health requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "42dc47371d4c77e93607f5e0940fa1ee12e6f1095d4f09cc3ac3e78e053e9a40",
+      "guide_sections": "4 / Layer 4 application use cases",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "9b7555e3b51747364fe637d069e02836adfcc2e1c7b4826169ee58f94c214269",
+      "guide_sections": "4 / Supported SKU/tier and limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "2d95d5a2694f60336cb4f66c99640233e073c5461b5437f7a57992fdb0f6d7df",
+      "guide_sections": "4 / Public versus private frontend",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "56c93330f170690cc68eabd994a932dbcb7842d4598cf97fb2da05385044a117",
+      "guide_sections": "4 / Regional versus cross-region design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "049640d6250fbf5c8a37061c5648a1daeca2fcdc081555d505b5d0002222a58b",
+      "guide_sections": "4 / Frontend, backend and probe",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "40d3a63ffbb099eef2b767423537c2d7c0dc731d253f184418fdd42039b22c2e",
+      "guide_sections": "4 / DNS routing and caching behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "f19fe13168f4bea690d25368b568bc7ebd6b7436e02ebcf81ce54115409eee7d",
+      "guide_sections": "4 / Gateway LB appliance chaining",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "4b03a39d6aa0d1dee0e5bc16485d1db2cbfd1bf1583f92f70d2106c8306636a3",
+      "guide_sections": "4 / Load-balancing rule and ports",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 10,
+      "objective_sha256": "2f09ad2cbde1f409dbfc4f3445c486f019b784a66fc01d0c455a344bbce0234b",
+      "guide_sections": "4 / Inbound NAT mapping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 11,
+      "objective_sha256": "c6188be4942ff46cba6df5e7a0eeb4949015cc92726d1a5d778669b7bbdc93f4",
+      "guide_sections": "2, 4 / Explicit outbound/SNAT versus NAT Gateway",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "9a2b85808d8f2455810acf72c1f9d7c4c83d8a58ff3926435aadca42b9c1fbbd",
+      "guide_sections": "4 / Regional web routing, TLS and WAF capabilities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "9d6aef28656184a58ca587a786fede955f760982553bda3c7fa3c9c17a6684ff",
+      "guide_sections": "4 / Host/path and private frontend requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "ea5813937a2e7e336024d28ced7ff4ac6be5e70413649c932ead9ef8b2602c88",
+      "guide_sections": "4 / Autoscale/manual capacity and subnet headroom",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "c5af6ed38a86f825f390cebf938b6af0568b6e16f81149f8a3623b5bcd5c3ad5",
+      "guide_sections": "4 / Backend membership and health",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "d040fb76d31fb3c6a3d3b0191ad0d02b0611de5b0e48ad6812d93dcdf44b6b36",
+      "guide_sections": "4 / Probe host, path, protocol and association",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "9441caf82acf57b9974fa80f62f2a5e2a76456a38ca878af251e8ee25722851d",
+      "guide_sections": "4 / Listener host/port/TLS settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "03e56304cf39c7b64fc30b6c7bcf2eddc59f20583a1bb4415f5cd89ddbe542e5",
+      "guide_sections": "4 / Routing priority and paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "7595d105cc269c1bac9d88d59b8c7e62fa35975ea372c26721dda3c7dbf825df",
+      "guide_sections": "4 / HTTP backend configuration and draining",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "7bd7f027d766f949bc958d8b223b83ae338897fa40b04750d35bb6ebd9c1e88b",
+      "guide_sections": "4 / Frontend/backend TLS trust, expiry and SNI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "ef34db987b9e77e2d1d6c49cca9acbd46a7143d60bf85930edfc9058fa3accfb",
+      "guide_sections": "4 / Rewrite scope and testing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "4e772bc43ce59990bb2dfe8bc1036827f1625f584ecd4394338234f67bdb197f",
+      "guide_sections": "4 / Global edge Layer 7 requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "6fc95b82827173c906352ab298ee0c482f72e0fc9be621746b8b851ac9a8ec77",
+      "guide_sections": "4, 7 scenario B / Global origins and failover",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "6b0a182c786e7a5e160af079dc2ebea5dea8a0ad90198a0783131e2ae6b05873",
+      "guide_sections": "4, 6 / Standard/Premium, WAF and Private Link",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "e14ef494fb8bddd377285724b77069ba26a9b4ae71c611873ed49c11f8fa49a9",
+      "guide_sections": "4 / Endpoint, route and origin-group settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "f21835c2d8958095fc7c445c6b9fee5e3c385306c5275401c7255921c586232f",
+      "guide_sections": "4 / Termination and end-to-end encryption",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "da2162ec032fb0bd7c470c450bec4b55e4f0980910015c42bbc2fe45e8d81163",
+      "guide_sections": "4 / Cache safety, keys and purge",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "224a0a065590eb393499f5c6c2d73a2b2463755055b7c03efad84fcb6268f8d5",
+      "guide_sections": "4 / Edge acceleration versus DNS routing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "2470d82becfb436c9f61c0ffa978a015291a847a4da5edd3bc058360497ba3b7",
+      "guide_sections": "4 / Rules engine, redirect and rewrite",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 9,
+      "objective_sha256": "2361ad21e4ba21dc194c0b9e754ad3292e550875982b2c32de2bacd8eca92949",
+      "guide_sections": "4 / Private origin path versus public client edge",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "efc82e2cf4df73ab16f82c34562a6f8a1cbb9e1bb1bd477059eba2d6732bb5a3",
+      "guide_sections": "5 / Placement, subresource, address and approval",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "f4f9f7f72abd485c26c8ee3a8efe53a4dd306db512bdacb1a8a95658413c6b29",
+      "guide_sections": "5 / Endpoint and target configuration; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "358ec3cfc59ef3c0bb75f73a5ac04b12cf8b0673eddbddc568d40609c48ee1d6",
+      "guide_sections": "5 / DNS, route/filter and identity gates; endpoint policy exception",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "27b556a8557996b890b59e5b7ceabc12635ad7497e6df3266aa84b42f4f8a4de",
+      "guide_sections": "5 / Conventional PLS versus bounded Direct Connect preview",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "e479090aff1eaf525cf7d6130c8cd7f375a4b5895f8c96c67339d69ed402b5e7",
+      "guide_sections": "2, 5, 7 example 5 / CNAME, zones, links and hybrid resolver",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "286be5f286cca2a43526f05dec4768f846259b82714ecaae6721ca8fab6e4630",
+      "guide_sections": "3, 5 / On-premises path and preview ER-placement limit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "109563e5d000c4eed6fe46e84d6ebce50f4bb03cc13b920bbe68c39dee02859e",
+      "guide_sections": "5 / Service endpoint versus private IP requirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "2575384d502cc6fcb3d724525606624b798cddfa6472ba68aeb0647bbd93e062",
+      "guide_sections": "5 / Subnet enablement plus service network rule",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "02645c238379cdc2cb7bffc7f64a7261ca096ad05e6514d214018f202b320441",
+      "guide_sections": "5 / Storage destination-account allowlist",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "ca1bd76bae044ea6f7d1d6ca9a3a74d3fa3df1aaa27bf5907b07e702b5e043cf",
+      "guide_sections": "5 / Subnet identity, target network rules and data authorization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "722c232eb80a8d3ab20795b600c294dc16d1b408cd6286023bee516fc518f453",
+      "guide_sections": "6 / NSG statefulness and deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "8e73f26770161012c00b28dbb28eba7cb4b5ded4c6b9d1cee9825da686e47d56",
+      "guide_sections": "6 / Subnet/NIC associations and combined rules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "e49617824094978c09b2dc7798b3ae9ecd808337c95f85e73eef88cb059d36b4",
+      "guide_sections": "6 / Logical ASG membership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "5ca6abb928368e8dbb735cdc575aeebed93a54909397552f928e15e63aef1ac1",
+      "guide_sections": "6 / ASG NIC associations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "95df503777483dd608720ebd9afc549393bb1380a597a17a30f620fc62ca3b14",
+      "guide_sections": "6 / Direction, priority, tuple and effective rules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "b39387751d8ce8a5cef33e838a8723bf1852903715c2ccf79a4ea70f2b2f798d",
+      "guide_sections": "2, 6 / VNet flow logs and NSG retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "d68207f832970678e682349cc17b7bc9cf60bd116b206eda229223e7a1938b22",
+      "guide_sections": "2, 6 / Allowed/denied metadata and duplicate recording",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 8,
+      "objective_sha256": "8b1c0c2c2d3b985597ed75840e82f819a2c75f0280f96e0fa8b0e99da2a57d82",
+      "guide_sections": "1–2, 6 / IP flow verify and limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 9,
+      "objective_sha256": "b975246c93d74321b11e3ba85ad0e9720d3ba84a9fc47e221cd6fc96cbd130d3",
+      "guide_sections": "6 / Bastion subnet/public-access requirements and admin paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 10,
+      "objective_sha256": "94f243c1ece37faf9d2f6435f439cecf06d9990537738b65a17e9e3673595b28",
+      "guide_sections": "6, 7 example 6 / Admin Allow, Always Allow, Deny and deployment scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "52d2c355b06cfaaa91eb001292f4f08681ac613e02c2103f5b2bccbba67ccb5d",
+      "guide_sections": "6 / Stateful inspection, application/network and threat needs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "b2cba214d44fdbe53d324fdb1469a3f95798f817d07f4c1ecc68fab271d31f91",
+      "guide_sections": "6 / SKU-specific TLS inspection/IDPS and limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "a7caf0e3029cc41a09b3cab3468f551ee8212cee35ab795f294cbf400e588571",
+      "guide_sections": "6 / Hub, zones, subnet and symmetric paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "362b0c05866303ae569464fc569d28bec49ecb6112ec73adcabf613c65138715",
+      "guide_sections": "6 / Deployment dependencies and diagnostics; lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "50c45b72b1eb8ff838412627129d5836772ce6afbcaa7eaefff8ab8e2219dec5",
+      "guide_sections": "6, 7 example 6 / Type order, priority, DNS and SNAT distinctions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "60286d5b823f907bed22d4221803a3550f5fbff9327b29f8880073981aa5d37b",
+      "guide_sections": "6 / Parent/child policy and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 7,
+      "objective_sha256": "0b85b3e0eb830ef1b8a96471874ab5dd070cb38bdf25af7c9395288a49ac24fe",
+      "guide_sections": "3, 6 / Secured WAN hub and routing intent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "a26f7d44dac78b1052978bd4686b44011605b1334ef2fdc63a7c9663218d4ca3",
+      "guide_sections": "6 / HTTP attack and feature requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "4deefcab9c5f55403d628651c473127459b3cc64f6cc971c5a9b6e54441fe198",
+      "guide_sections": "4, 6 / Edge/regional policy placement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "29774fde0029af2ff10fe0e1efe456a87ccfb71937d88f44fe2ad93966c50380",
+      "guide_sections": "6 / Detection observations then prevention criteria",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "f89334650e2bd6db90da10685eda2e0924a6dd7809332b90964bdc5c24c80dad",
+      "guide_sections": "6 / Front Door tier, custom/managed and DDoS exception",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "fefca3dcd051e053adfbd8d645653706e77f14ecb144e04107e34bbe1f31aaa5",
+      "guide_sections": "4, 6 / App Gateway WAF rules and exclusions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 6,
+      "objective_sha256": "6e6c2f36b83c226e9689e163851a18ef2c68785a0bf115db149843af549d6470",
+      "guide_sections": "6 / Policy creation, narrow exclusions and monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 7,
+      "objective_sha256": "208f55196646355a79aed8f627ca67d68b3a865d072ed8039c99c9c4063a82e3",
+      "guide_sections": "6 / Policy association/scope and effective request evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AZ-700",
+        "title": "Designing and Implementing Microsoft Azure Networking Solutions",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+        "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+        "snapshot_path": "data\\objective-snapshots\\az-700-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\az-700-official-status.json",
+        "previous_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+        "current_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+        "previous_status_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "current_status_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of July 27, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 61,
+    "reachable": 58,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "azure-networking-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/networking/",
+      "checked_at": "2026-09-28T10:18:16.083477+00:00",
+      "health": {
+        "id": "azure-networking-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "content_type": "text/html",
+        "page_title": "Azure networking documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/networking/",
+        "duration_signals": [],
+        "signal_fingerprint": "6b08bb2025d276623c2dd9cf2776e805f6651f7e37fca9851410aec916e01efa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/networking/",
+      "sha256": "418628b307c57378d0936ab2ddd375de4dff84ab068cef6ba019f49f0e3d7f92",
+      "text_characters": 2711
+    },
+    {
+      "id": "azure-network-security-groups-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "checked_at": "2026-09-28T10:18:16.084049+00:00",
+      "health": {
+        "id": "azure-network-security-groups-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "content_type": "text/html",
+        "page_title": "Azure network security groups overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "15f3ddb44a080db1b85b4fe183425847af718255c530b5a8264c8bd39ad870fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "sha256": "b86f4357a76a7b1a33702b20dc6b2d1a3ca43751f5a1d1daf0d1c939c7a3ff2d",
+      "text_characters": 16685
+    },
+    {
+      "id": "az-305-load-balancing-decision-guide",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview",
+      "checked_at": "2026-09-28T10:18:16.084370+00:00",
+      "health": {
+        "id": "az-305-load-balancing-decision-guide",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview",
+        "content_type": "text/html",
+        "page_title": "Load Balancing Options - Azure Architecture Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "25724588616132b0ef42dfbf78149bef57ea767476e7999ae53057b20c27b53e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview",
+      "sha256": "7433f3490772f83e6a460edb0febca3158fff45dea039c967298c572d5197552",
+      "text_characters": 17207
+    },
+    {
+      "id": "az-700-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+      "checked_at": "2026-09-28T10:18:16.428220+00:00",
+      "health": {
+        "id": "az-700-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "9ba868e13f3fcb6b701735f6aa8ae4fdad61f5864bc1e9b00551056f8e1cb6e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+      "sha256": "5dfbfe8c1f22a6080f40eba70592b3edf13775c39afdc36914f0d14d6b70499b",
+      "text_characters": 13425
+    },
+    {
+      "id": "az-700-public-ip-addresses",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+      "checked_at": "2026-09-28T10:18:16.438061+00:00",
+      "health": {
+        "id": "az-700-public-ip-addresses",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+        "content_type": "text/html",
+        "page_title": "Public IP addresses in Azure - Azure Virtual Network",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+        "duration_signals": [
+          "30 minutes",
+          "4 minutes"
+        ],
+        "signal_fingerprint": "5a5120856d07c974e271a71d72a278b32ebdaeace595e4071972514da8aea243",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses",
+      "sha256": "f5e9d90656a448af24a6fbaeacc957e647005c1b9651e0d41a3000dd0d19b456",
+      "text_characters": 12315
+    },
+    {
+      "id": "az-700-dns-private-resolver",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview",
+      "checked_at": "2026-09-28T10:18:16.455904+00:00",
+      "health": {
+        "id": "az-700-dns-private-resolver",
+        "url": "https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview",
+        "content_type": "text/html",
+        "page_title": "Azure DNS Private Resolver Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "2a62f8868bed05560d0f85081e85c15f3f25bcb21ca930f800eae266822be8ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview",
+      "sha256": "9c5371458b10df4025ee46a386e3b8fd67d896cedf23896db51fb48fb5378e94",
+      "text_characters": 9108
+    },
+    {
+      "id": "az-700-virtual-network-routing",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview",
+      "checked_at": "2026-09-28T10:18:16.651245+00:00",
+      "health": {
+        "id": "az-700-virtual-network-routing",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview",
+        "content_type": "text/html",
+        "page_title": "Azure virtual network traffic routing",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "d65cf7b8701661d513190f498df461ead4f99e8d0dfd402fcfb48ad7d6eb9d34",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview",
+      "sha256": "7e92a004175d57a93a54a89c09e0367a395684c103ba68a65bf14e03a17caa01",
+      "text_characters": 36419
+    },
+    {
+      "id": "az-700-nat-gateway-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+      "checked_at": "2026-09-28T10:18:16.671366+00:00",
+      "health": {
+        "id": "az-700-nat-gateway-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+        "content_type": "text/html",
+        "page_title": "What Is Azure NAT Gateway?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+        "duration_signals": [
+          "120 minutes",
+          "4 minutes"
+        ],
+        "signal_fingerprint": "1b758e168856edc6cc4832c06aa693c9c0a54b08de6e809fc1ad2025488a7930",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+      "sha256": "8148f0ef22d2b5296d285616326bc2cf8be21edb130abe1e6496ec90df9d86c3",
+      "text_characters": 16223
+    },
+    {
+      "id": "az-700-network-watcher-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview",
+      "checked_at": "2026-09-28T10:18:16.676810+00:00",
+      "health": {
+        "id": "az-700-network-watcher-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview",
+        "content_type": "text/html",
+        "page_title": "Azure Network Watcher Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "64b1e13e8dadadf35d9b15aca2dcda3b9bd8028a8ec72fb2a574fcfa0e99c6bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview",
+      "sha256": "28247eb2abfd712a0c1205d64a169bcf3d5d7a3ea49276c33fbc47ae865e0ab3",
+      "text_characters": 8274
+    },
+    {
+      "id": "az-700-vpn-gateway-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/",
+      "checked_at": "2026-09-28T10:18:16.864235+00:00",
+      "health": {
+        "id": "az-700-vpn-gateway-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/",
+        "content_type": "text/html",
+        "page_title": "VPN Gateway documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/",
+        "duration_signals": [],
+        "signal_fingerprint": "027773df5e728a3aa4bc2fb52560fcd3335f26b5870798950515cbec2bb5ce69",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/",
+      "sha256": "fa230b5b0f3fdeb71fb10bf2dadd4ddc7ac8d0eb1c36b3da4af5501a73ea8ca8",
+      "text_characters": 1808
+    },
+    {
+      "id": "az-700-expressroute-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/expressroute/",
+      "checked_at": "2026-09-28T10:18:16.903972+00:00",
+      "health": {
+        "id": "az-700-expressroute-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/expressroute/",
+        "checked_at": "2026-09-28T10:18:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/expressroute/",
+        "content_type": "text/html",
+        "page_title": "ExpressRoute documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/expressroute/",
+        "duration_signals": [],
+        "signal_fingerprint": "4a1563050eec0b3b766fa9d83d0512136b76c7f21dee7d58c721a034781d0938",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/expressroute/",
+      "sha256": "c2d6529ed7aeff9b6bcc0fcbbdcaabaedb141ad380b0c16c74863ba478364aa5",
+      "text_characters": 2256
+    },
+    {
+      "id": "az-700-virtual-wan-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about",
+      "checked_at": "2026-09-28T10:18:17.041872+00:00",
+      "health": {
+        "id": "az-700-virtual-wan-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about",
+        "content_type": "text/html",
+        "page_title": "Azure Virtual WAN Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about",
+        "duration_signals": [],
+        "signal_fingerprint": "63eceb0a2b105666e3431b66e4be0c8206c32816c63f2112eb18a52bbafb5a1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about",
+      "sha256": "b09851793c586f8f05869c2f3b3c0f81117671e5a758445ccfd53e37002afa85",
+      "text_characters": 13081
+    },
+    {
+      "id": "az-700-front-door-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/frontdoor/",
+      "checked_at": "2026-09-28T10:18:17.046747+00:00",
+      "health": {
+        "id": "az-700-front-door-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/frontdoor/",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/frontdoor/",
+        "content_type": "text/html",
+        "page_title": "Azure Front Door and CDN Documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/frontdoor/",
+        "duration_signals": [],
+        "signal_fingerprint": "75c14c22493f10d0c46e2b2b73ed6dc7a04b5437c318f7f7fcea2924b5e25995",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/frontdoor/",
+      "sha256": "292f3116304350e74ed141e0e85c015490d8bfaf0a20953fd921cf2dde6bd59d",
+      "text_characters": 1642
+    },
+    {
+      "id": "az-700-private-link-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
+      "checked_at": "2026-09-28T10:18:17.122724+00:00",
+      "health": {
+        "id": "az-700-private-link-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Private Link?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "346bc29e93aa8002532c2565b880d33100843ffc16d61903d4facbae28efdb8d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview",
+      "sha256": "ddacab372ce1820265b08be4a28be9958a77b3942f8ee80004312732295caff0",
+      "text_characters": 6169
+    },
+    {
+      "id": "az-700-firewall-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/firewall/",
+      "checked_at": "2026-09-28T10:18:17.254557+00:00",
+      "health": {
+        "id": "az-700-firewall-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/firewall/",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/firewall/",
+        "content_type": "text/html",
+        "page_title": "Azure Firewall documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/firewall/",
+        "duration_signals": [],
+        "signal_fingerprint": "41da30d9fc7f8d2b1aff107bce142454893121685c276420ae0db5ad52e855c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/firewall/",
+      "sha256": "ce78cbf4cf2560c68ab790bfe9a564966c53e87155f0122250ae19900f7a4530",
+      "text_characters": 2156
+    },
+    {
+      "id": "az-700-waf-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/",
+      "checked_at": "2026-09-28T10:18:17.288858+00:00",
+      "health": {
+        "id": "az-700-waf-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/",
+        "content_type": "text/html",
+        "page_title": "Web Application Firewall documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/",
+        "duration_signals": [],
+        "signal_fingerprint": "2e242d1fc1d6293da5dfe5894bfeaa461ac142548be6624117444e0525eee0da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/",
+      "sha256": "512c467c11fb94283bddbb55cf59dd585bbddab3595b7569a4c612d98f4e2ab0",
+      "text_characters": 1959
+    },
+    {
+      "id": "az-700-microsoft-learn-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-700t00",
+      "checked_at": "2026-09-28T10:18:17.368068+00:00",
+      "health": {
+        "id": "az-700-microsoft-learn-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-700t00",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/az-700t00",
+        "content_type": "text/html",
+        "page_title": "Course AZ-700T00-A: Design and Implement Microsoft Azure Network Solutions - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/az-700t00",
+        "duration_signals": [],
+        "signal_fingerprint": "9d48222bcfbe32bdddb0970d6ea455fb079c19c8755e8b0eadc803e8e43414fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/az-700t00",
+      "sha256": "f6bd7a63e095e8e5cfbc3d22e5ece6c341c9a398ebba607818479ef5001a8faa",
+      "text_characters": 2446
+    },
+    {
+      "id": "az-700-microsoft-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification",
+      "checked_at": "2026-09-28T10:18:17.445116+00:00",
+      "health": {
+        "id": "az-700-microsoft-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Network Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "fb6fbc188944e8643cec9dc0d3836dabf57ffe1b80aaa44763fe353e09c67645",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification",
+      "sha256": "0ef4c7d9e1de750c474f86728fb6a8129a795eebf4399e2bdfa3ffe4cc89f7ec",
+      "text_characters": 4869
+    },
+    {
+      "id": "az-700-john-savill-study-guide",
+      "url": "https://www.youtube.com/watch?v=nVZYDhB_M64",
+      "checked_at": "2026-09-28T10:18:17.468357+00:00",
+      "health": {
+        "id": "az-700-john-savill-study-guide",
+        "url": "https://www.youtube.com/watch?v=nVZYDhB_M64",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=nVZYDhB_M64",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AZ-700 Designing and Implement Azure Networking Study SUPER Guide!",
+        "canonical_url": "https://www.youtube.com/watch?v=nVZYDhB_M64",
+        "duration_signals": [],
+        "signal_fingerprint": "468b9f9cda3d3c80f7434f90c737510f24bcbab129440973f5a2778331b6abd3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=nVZYDhB_M64",
+      "sha256": "cc1c67340f0d8ec8c245ad2a2cf0aca4a121cc36ba56bec7327cfbb4bcb06775",
+      "text_characters": 229
+    },
+    {
+      "id": "az-700-john-savill-whiteboard",
+      "url": "https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png",
+      "checked_at": "2026-09-28T10:18:17.554180+00:00",
+      "health": {
+        "id": "az-700-john-savill-whiteboard",
+        "url": "https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertificationMaterials/whiteboards/AZ-700-Whiteboard.png at main · johnthebrit/CertificationMaterials",
+        "canonical_url": "https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png",
+        "duration_signals": [],
+        "signal_fingerprint": "1683c8ec531521876ffa1100ab61833826c99df93f48a6246b1f50ab266e28e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png",
+      "sha256": "9bd48875edf5eb89a06401f53d6b1229d499a0cae1b5c74a5b832fceb065ef5a",
+      "text_characters": 618
+    },
+    {
+      "id": "az-700-pluralsight-path",
+      "url": "https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700",
+      "checked_at": "2026-09-28T10:18:17.681944+00:00",
+      "health": {
+        "id": "az-700-pluralsight-path",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700",
+        "checked_at": "2026-09-28T10:18:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Certified: Designing and Implementing Microsoft Azure Networking Solutions (AZ-700)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700",
+        "duration_signals": [
+          "44 Hours"
+        ],
+        "signal_fingerprint": "9142c62807823d710c8163eeb4a552b72cfa1fbc8ae58c1e9bbf0d2d6126da19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700",
+      "sha256": "c0b749634ae8b119f758af01bb9781744cd7621b1fb5ec97fdd9922a476b4718",
+      "text_characters": 5839
+    },
+    {
+      "id": "az-700-oreilly-kirk-whetton-course",
+      "url": "https://www.oreilly.com/videos/azure-network-engineer/0642572086336/",
+      "checked_at": "2026-09-28T10:18:18.529151+00:00",
+      "health": {
+        "id": "az-700-oreilly-kirk-whetton-course",
+        "url": "https://www.oreilly.com/videos/azure-network-engineer/0642572086336/",
+        "checked_at": "2026-09-28T10:18:18+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/azure-network-engineer/0642572086336/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-700-oreilly-packt-book",
+      "url": "https://www.oreilly.com/library/view/designing-and-implementing/9781803242033/",
+      "checked_at": "2026-09-28T10:18:18.678350+00:00",
+      "health": {
+        "id": "az-700-oreilly-packt-book",
+        "url": "https://www.oreilly.com/library/view/designing-and-implementing/9781803242033/",
+        "checked_at": "2026-09-28T10:18:18+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/designing-and-implementing/9781803242033/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-700-udemy-alan-rodrigues",
+      "url": "https://www.udemy.com/course/azure-exam-700/",
+      "checked_at": "2026-09-28T10:18:18.742520+00:00",
+      "health": {
+        "id": "az-700-udemy-alan-rodrigues",
+        "url": "https://www.udemy.com/course/azure-exam-700/",
+        "checked_at": "2026-09-28T10:18:18+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/azure-exam-700/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-700-whizlabs-course",
+      "url": "https://www.whizlabs.com/microsoft-azure-exam-az-700/",
+      "checked_at": "2026-09-28T10:18:18.749167+00:00",
+      "health": {
+        "id": "az-700-whizlabs-course",
+        "url": "https://www.whizlabs.com/microsoft-azure-exam-az-700/",
+        "checked_at": "2026-09-28T10:18:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-azure-exam-az-700/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AZ-700: Microsoft Azure Network Engineer Associate Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-azure-exam-az-700/",
+        "duration_signals": [],
+        "signal_fingerprint": "32f970651fdb124e5b58a8b9f00e746d451c29bd7387026a85af04009c9e37a4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-azure-exam-az-700/",
+      "sha256": "2123ab0eb1d7a815ce289d917bd6c89b119cd8e5f32b610f3287b002381b41c1",
+      "text_characters": 57
+    },
+    {
+      "id": "az-700-measureup-practice-test",
+      "url": "https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html",
+      "checked_at": "2026-09-28T10:18:18.865550+00:00",
+      "health": {
+        "id": "az-700-measureup-practice-test",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html",
+        "checked_at": "2026-09-28T10:18:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test AZ-700: Designing and Implementing Azure Networking Solutions",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c5dfcaeae6eb28aa8a3f251ea24dc7a40c880c460efe6f9e5e919357d4672476",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html",
+      "sha256": "a0cbc030f8d8fd24bf68e99d45d32c195dba4560a3c7314a7d12583fad55797f",
+      "text_characters": 19397
+    },
+    {
+      "id": "windows-azure-network-adapter",
+      "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter",
+      "checked_at": "2026-09-28T10:18:19.127818+00:00",
+      "health": {
+        "id": "windows-azure-network-adapter",
+        "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter",
+        "checked_at": "2026-09-28T10:18:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter",
+        "content_type": "text/html",
+        "page_title": "Connect server to Azure Virtual Network - Azure Network Adapter",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter",
+        "duration_signals": [
+          "25 minutes"
+        ],
+        "signal_fingerprint": "c7852395cd4a97f59135592dd418c32c8a2d76c08c87e11f7193ddbc3a4f1ea5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter",
+      "sha256": "dcc498edca01e80c0cbdda976245525430555e28b39bacecf2fa9ef098cb054b",
+      "text_characters": 4877
+    },
+    {
+      "id": "windows-azure-extended-network",
+      "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network",
+      "checked_at": "2026-09-28T10:18:19.355814+00:00",
+      "health": {
+        "id": "windows-azure-extended-network",
+        "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network",
+        "checked_at": "2026-09-28T10:18:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network",
+        "content_type": "text/html",
+        "page_title": "Extend your on-premises subnets into Azure using extended network for Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "928c0d5eea9d7419cd54baa68a6c158caf8f18344e67313289bedaf76ebe32fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network",
+      "sha256": "a2a272d59b3723b6b9cfede9b7e4f2c44fe50778b144d2525542ff7b911a1fae",
+      "text_characters": 11842
+    },
+    {
+      "id": "az700-vnet-flow-logs-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+      "checked_at": "2026-09-28T10:18:19.603726+00:00",
+      "health": {
+        "id": "az700-vnet-flow-logs-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+        "checked_at": "2026-09-28T10:18:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+        "content_type": "text/html",
+        "page_title": "Virtual Network Flow Logs - Azure Network Watcher",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "268582c58114415ebf2e50b5a486e6d32f609e8fecf4981b57ed9389d9f30c97",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+      "sha256": "035e894563a16a5de630f88419727b672b96d4b7bebe92538bb90d487a6498ee",
+      "text_characters": 21032
+    },
+    {
+      "id": "az700-nsg-flow-logs-retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+      "checked_at": "2026-09-28T10:18:19.837397+00:00",
+      "health": {
+        "id": "az700-nsg-flow-logs-retirement",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+        "checked_at": "2026-09-28T10:18:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+        "content_type": "text/html",
+        "page_title": "NSG Flow Logs Overview - Azure Network Watcher",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+        "duration_signals": [
+          "30 minutes",
+          "4 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "5ecff649e54fe045499508ba8d969c7ea29cdb954bbc9572e1c5009cdbfaa4e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+      "sha256": "5a2a03034f6d40b3c8ab572d92ac11d478d1e7b1556540a975847cf173f90df1",
+      "text_characters": 24593
+    },
+    {
+      "id": "az700-connection-troubleshoot-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+      "checked_at": "2026-09-28T10:18:19.965995+00:00",
+      "health": {
+        "id": "az700-connection-troubleshoot-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+        "checked_at": "2026-09-28T10:18:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+        "content_type": "text/html",
+        "page_title": "Connection Troubleshoot Overview - Azure Network Watcher",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "6ff0949c46c0ea47262e5147da0a517adb5109f48b7f166cfc8b36fb6d879271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+      "sha256": "4a25cafa85ab3a4f1e990de77d598b2dcc8b847e83e86bd686c3e2ac4c0b71b2",
+      "text_characters": 17463
+    },
+    {
+      "id": "az700-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+      "checked_at": "2026-09-28T10:18:19.975872+00:00",
+      "health": {
+        "id": "az700-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+        "checked_at": "2026-09-28T10:18:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Network Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "fb6fbc188944e8643cec9dc0d3836dabf57ffe1b80aaa44763fe353e09c67645",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+      "sha256": "0ef4c7d9e1de750c474f86728fb6a8129a795eebf4399e2bdfa3ffe4cc89f7ec",
+      "text_characters": 4869
+    },
+    {
+      "id": "az104-outbound",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+      "checked_at": "2026-09-28T10:18:20.095720+00:00",
+      "health": {
+        "id": "az104-outbound",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+        "content_type": "text/html",
+        "page_title": "Default Outbound Access in Azure - Azure Virtual Network",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+        "duration_signals": [],
+        "signal_fingerprint": "eef4100e8e60545df5b005e0c77191b6f76d00502050774ef8b10c80128cfbe5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+      "sha256": "cf2358bdde667bce130d3fa3b8b914d5444ff22c71fc03621d984b50f88acb13",
+      "text_characters": 16490
+    },
+    {
+      "id": "az700-nat-resource",
+      "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+      "checked_at": "2026-09-28T10:18:20.211741+00:00",
+      "health": {
+        "id": "az700-nat-resource",
+        "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+        "content_type": "text/html",
+        "page_title": "NAT Gateway Resource",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+        "duration_signals": [
+          "120 minutes",
+          "2 hours",
+          "4 minutes"
+        ],
+        "signal_fingerprint": "831ece2b8247fc009d7d9c6092dd79ae6d81c6b77759210c682a3543786b3336",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+      "sha256": "f74b718245370da5be2925335a211b13ca6381d642021c53df3571779e462449",
+      "text_characters": 16348
+    },
+    {
+      "id": "az700-nat-snat",
+      "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat",
+      "checked_at": "2026-09-28T10:18:20.361375+00:00",
+      "health": {
+        "id": "az700-nat-snat",
+        "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat",
+        "content_type": "text/html",
+        "page_title": "Source Network Address Translation (SNAT) with Azure NAT Gateway",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat",
+        "duration_signals": [],
+        "signal_fingerprint": "5b9529952a4dec2e4add1f4dc39a93837a34e052af4c5a2f968a84987615cf50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat",
+      "sha256": "b843f2c57131a5be62ab42119670d80ac02922c45a889c8899aaea0b7e2e990d",
+      "text_characters": 8055
+    },
+    {
+      "id": "az700-dns-endpoints",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+      "checked_at": "2026-09-28T10:18:20.380365+00:00",
+      "health": {
+        "id": "az700-dns-endpoints",
+        "url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+        "content_type": "text/html",
+        "page_title": "Azure DNS Private Resolver endpoints and rulesets",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+        "duration_signals": [],
+        "signal_fingerprint": "2972ffd6b30b7b8ae59ea7321761e35d883175da192c96c69a3f16709266d4bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+      "sha256": "c9ccca6cb6f914cf09bf61b52a39363b83ffc0192bfc912c664aea148fde717a",
+      "text_characters": 12838
+    },
+    {
+      "id": "az700-dns-fallback",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+      "checked_at": "2026-09-28T10:18:20.508182+00:00",
+      "health": {
+        "id": "az700-dns-fallback",
+        "url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+        "content_type": "text/html",
+        "page_title": "Fallback to internet for Azure Private DNS zones - Azure DNS",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+        "duration_signals": [],
+        "signal_fingerprint": "0cf159f856d987388fd055eef2a91c6096133329415ce50ec92bb1d4629df316",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+      "sha256": "88f7a713ce62006af199e5e541710c3633f64aee3fa752b2de83b229e0e649da",
+      "text_characters": 9510
+    },
+    {
+      "id": "az700-pe-dns",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns",
+      "checked_at": "2026-09-28T10:18:20.646292+00:00",
+      "health": {
+        "id": "az700-pe-dns",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns",
+        "content_type": "text/html",
+        "page_title": "Azure Private Endpoint private DNS zone values",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns",
+        "duration_signals": [],
+        "signal_fingerprint": "abc992ff1af3818550f52088aac8119ec554c76179548c176b1699d8699ec0e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns",
+      "sha256": "db3b2ac88cfc9b09055966c4a562b220ce949c3335dcbed8c47b930dd6b81d30",
+      "text_characters": 39560
+    },
+    {
+      "id": "az700-pe-policies",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+      "checked_at": "2026-09-28T10:18:20.804384+00:00",
+      "health": {
+        "id": "az700-pe-policies",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+        "content_type": "text/html",
+        "page_title": "Manage network policies for private endpoints - Azure Private Link",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "dacae2762786127ba7b3c8efd62578da19e8a3ff933d3c165974fc9981e5e452",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+      "sha256": "27bd614a409d551f20dfdefb9bbe8ff784075a0c0982526814ae6e1d9f11096e",
+      "text_characters": 6555
+    },
+    {
+      "id": "az700-pls-direct",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+      "checked_at": "2026-09-28T10:18:20.919707+00:00",
+      "health": {
+        "id": "az700-pls-direct",
+        "url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+        "content_type": "text/html",
+        "page_title": "Configure Private Link service Direct Connect - Azure Private Link",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+        "duration_signals": [],
+        "signal_fingerprint": "fc0fa5517b3c315c9f924224b660ee80aa6bd64b28fe6d3cd5beb8244b218488",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+      "sha256": "0ba54f3e88ac2614a257125143256dce6d8c8186b5157dcf7a9d44386a29c2ee",
+      "text_characters": 18393
+    },
+    {
+      "id": "az700-vpn-skus",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+      "checked_at": "2026-09-28T10:18:20.976893+00:00",
+      "health": {
+        "id": "az700-vpn-skus",
+        "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+        "checked_at": "2026-09-28T10:18:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+        "content_type": "text/html",
+        "page_title": "Gateway SKU Mappings - Azure VPN Gateway",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+        "duration_signals": [],
+        "signal_fingerprint": "8107eeefc2a130a1f1ca7195f86d27dbd77b09e793da3851f6d3a991f0076820",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+      "sha256": "f07103b6c1ededed01154c6519d50b59201f891e213e9437c0642b2bb295e097",
+      "text_characters": 7302
+    },
+    {
+      "id": "az700-p2s",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about",
+      "checked_at": "2026-09-28T10:18:21.071645+00:00",
+      "health": {
+        "id": "az700-p2s",
+        "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about",
+        "content_type": "text/html",
+        "page_title": "About Azure Point-to-Site VPN connections - Azure VPN Gateway",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about",
+        "duration_signals": [],
+        "signal_fingerprint": "9b1819e10e44a19d43355c67b259f147e3ac0296c2c378413b26318baf544437",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about",
+      "sha256": "f5a6e6b3cddb562f5f83f07520cd9a963078853398d03e7c1a913a20d3a3dc46",
+      "text_characters": 14636
+    },
+    {
+      "id": "az700-always-on",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+      "checked_at": "2026-09-28T10:18:21.163637+00:00",
+      "health": {
+        "id": "az700-always-on",
+        "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+        "content_type": "text/html",
+        "page_title": "Configure an Always-On VPN tunnel - Azure VPN Gateway",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+        "duration_signals": [],
+        "signal_fingerprint": "379b180ac2df33f007049ffd985c0e6ac94d907b2f75f068d1f2e78168ed2dbd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+      "sha256": "f9653fd020ee013fc1d068efba5b5cfdab36f50ddbef32f5c027b8f6fce974ff",
+      "text_characters": 7562
+    },
+    {
+      "id": "az700-er-guard",
+      "url": "https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model",
+      "checked_at": "2026-09-28T10:18:21.246506+00:00",
+      "health": {
+        "id": "az700-er-guard",
+        "url": "https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model",
+        "content_type": "text/html",
+        "page_title": "ExpressRoute Resiliency Guard (Preview) - ExpressRoute",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model",
+        "duration_signals": [],
+        "signal_fingerprint": "50254ca7b22fac884a97833c3b953deebe2d83934b0f2c59be474d60fc350b5a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model",
+      "sha256": "cebd2abddfac88cc661fa7f6eb3f693e1952e7c6c68073f4f9f6ef63de009cc0",
+      "text_characters": 4832
+    },
+    {
+      "id": "az700-er-failover",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+      "checked_at": "2026-09-28T10:18:21.425609+00:00",
+      "health": {
+        "id": "az700-er-failover",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+        "content_type": "text/html",
+        "page_title": "Use Site-to-Site VPN as Failover for Azure ExpressRoute - Azure Architecture Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+        "duration_signals": [],
+        "signal_fingerprint": "727de2fd84d49e5ee2b0b36afbe64383d45827034896b2c9049c3228c29d34f2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+      "sha256": "a7f8d2b8a84e48446b90ad35291373d5164d7e2076383a632e2d73b15552dc00",
+      "text_characters": 12635
+    },
+    {
+      "id": "az700-er-fastpath",
+      "url": "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath",
+      "checked_at": "2026-09-28T10:18:21.439045+00:00",
+      "health": {
+        "id": "az700-er-fastpath",
+        "url": "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath",
+        "content_type": "text/html",
+        "page_title": "Azure ExpressRoute FastPath: Features, availability, and limitations",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath",
+        "duration_signals": [],
+        "signal_fingerprint": "d6e388731d982fefda582481807728e6e449b28afc22af9f6b1e32ae87a0e095",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath",
+      "sha256": "05c2437496b62bc3764ddd682d98ed158ec25eb99603a7b185cd2b5230a94818",
+      "text_characters": 8563
+    },
+    {
+      "id": "az700-routing-intent",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+      "checked_at": "2026-09-28T10:18:21.495018+00:00",
+      "health": {
+        "id": "az700-routing-intent",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+        "content_type": "text/html",
+        "page_title": "How to configure Virtual WAN Hub routing policies - Azure Virtual WAN",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "e4819479db80045b4dbd51a5267f1dc2e1a1356416f692a05b735e682ee203f4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+      "sha256": "0f172fc29360563b79f0ba4fd5d4b4551386830ca57394f75379d7bdf7a5ec47",
+      "text_characters": 49529
+    },
+    {
+      "id": "az700-appgw-tls",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+      "checked_at": "2026-09-28T10:18:21.668469+00:00",
+      "health": {
+        "id": "az700-appgw-tls",
+        "url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+        "content_type": "text/html",
+        "page_title": "Azure Application Gateway Backend Settings configuration",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+        "duration_signals": [
+          "24 hours",
+          "4 minutes"
+        ],
+        "signal_fingerprint": "ceb331bb28818f1dcfa14f3fbc6a8d7ad08dc58c4366a0c7de00b16f5252b6cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+      "sha256": "ec24df777de606c3aaaa2cf30483c4fdbd4dc0aa093c65fc705e1d3af6190053",
+      "text_characters": 19213
+    },
+    {
+      "id": "az700-appgw-probe",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-probe-overview",
+      "checked_at": "2026-09-28T10:18:21.724291+00:00",
+      "health": {
+        "id": "az700-appgw-probe",
+        "url": "https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-probe-overview",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-probe-overview",
+        "content_type": "text/html",
+        "page_title": "Health monitoring overview for Azure Application Gateway",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-probe-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "673946a9faac29e5660b27494503947915eb2da10e2430fe1398273344392cea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-probe-overview",
+      "sha256": "c21e50257cac60953afb2fb9fdb6c9234a5bb3719d910f530e3a95753eb0f9ff",
+      "text_characters": 11929
+    },
+    {
+      "id": "az700-appgw-v1",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+      "checked_at": "2026-09-28T10:18:21.824641+00:00",
+      "health": {
+        "id": "az700-appgw-v1",
+        "url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+        "content_type": "text/html",
+        "page_title": "Application Gateway V1 retirement and migration to V2 - Azure Application Gateway",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+        "duration_signals": [],
+        "signal_fingerprint": "ec6b3c662269c76fef5dc0a198ac69dc4b3c57cb36d13214a99a34fbd5b236bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+      "sha256": "c00c623bace2ebe206d274cac640c550196e6a18bf61ee44916878fd2ce3cb04",
+      "text_characters": 2498
+    },
+    {
+      "id": "az305-frontdoor",
+      "url": "https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier",
+      "checked_at": "2026-09-28T10:18:21.973214+00:00",
+      "health": {
+        "id": "az305-frontdoor",
+        "url": "https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier",
+        "checked_at": "2026-09-28T10:18:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier",
+        "content_type": "text/html",
+        "page_title": "Migrate Azure Front Door (classic) to Standard or Premium Tier",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier",
+        "duration_signals": [],
+        "signal_fingerprint": "bca8876e34618ce431799f08e8185defa94eb4fe49d873af689706fb9e15cc2e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier",
+      "sha256": "c3f3a3a0b74f1aeefbecaf5a1a8f3640b8899ed17bd90b6140b7675276068cf8",
+      "text_characters": 7920
+    },
+    {
+      "id": "az700-frontdoor-origin",
+      "url": "https://learn.microsoft.com/en-us/azure/frontdoor/origin-security",
+      "checked_at": "2026-09-28T10:18:22.020090+00:00",
+      "health": {
+        "id": "az700-frontdoor-origin",
+        "url": "https://learn.microsoft.com/en-us/azure/frontdoor/origin-security",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/frontdoor/origin-security",
+        "content_type": "text/html",
+        "page_title": "Secure traffic to origins - Azure Front Door",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/frontdoor/origin-security",
+        "duration_signals": [],
+        "signal_fingerprint": "968fd4ebe2deec1806605a7cbbb4b4da2a5a20a7483b74cda9e1e468585ece5c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/frontdoor/origin-security",
+      "sha256": "d8af8e738ba19f3d787635ea37d2b99e163d8b8f454cf7555d18a064b015f43a",
+      "text_characters": 8838
+    },
+    {
+      "id": "az700-lb-probe",
+      "url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+      "checked_at": "2026-09-28T10:18:22.136448+00:00",
+      "health": {
+        "id": "az700-lb-probe",
+        "url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+        "content_type": "text/html",
+        "page_title": "Azure Load Balancer health probes",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+        "duration_signals": [
+          "2 minutes"
+        ],
+        "signal_fingerprint": "a1f349b7b50401f8ef9e4bf4e2e277a650ce3f4d3d33d7cde8441cd641b79edf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+      "sha256": "25fb85de83648208726a3e26b0b14c8b168ebd813df1377005199f326639685b",
+      "text_characters": 17049
+    },
+    {
+      "id": "az700-firewall-order",
+      "url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+      "checked_at": "2026-09-28T10:18:22.253422+00:00",
+      "health": {
+        "id": "az700-firewall-order",
+        "url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+        "content_type": "text/html",
+        "page_title": "Azure Firewall rule processing logic",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+        "duration_signals": [],
+        "signal_fingerprint": "763c87d4d1d2474a7aa5f7e85f22d93c5f3eab5bb9f53c0059a7c22f2b8c0db7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+      "sha256": "92336e8cbd5273dfebec0ecbb767de5d5079bf2851a732323668027bd0ace2ec",
+      "text_characters": 13013
+    },
+    {
+      "id": "az700-firewall-snat",
+      "url": "https://learn.microsoft.com/en-us/azure/firewall/snat-private-range",
+      "checked_at": "2026-09-28T10:18:22.291720+00:00",
+      "health": {
+        "id": "az700-firewall-snat",
+        "url": "https://learn.microsoft.com/en-us/azure/firewall/snat-private-range",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/firewall/snat-private-range",
+        "content_type": "text/html",
+        "page_title": "Azure Firewall SNAT private IP address ranges",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/firewall/snat-private-range",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "d1eae1e32f91923aa8324ac546c4f4507993287cf45702a0300d06e8bb0bea31",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/firewall/snat-private-range",
+      "sha256": "f71fe4c0de80284627d00e051d6b4f4545c5425c947debdf9e12ebc97250156b",
+      "text_characters": 15865
+    },
+    {
+      "id": "az700-frontdoor-waf",
+      "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview",
+      "checked_at": "2026-09-28T10:18:22.396022+00:00",
+      "health": {
+        "id": "az700-frontdoor-waf",
+        "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview",
+        "content_type": "text/html",
+        "page_title": "What Is Azure Web Application Firewall on Azure Front Door?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "50da30856d0708e856dcb44b1737e219498586dfed41062f491e4e8f17cca3cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview",
+      "sha256": "2e6f321608af756ba8ad8b62e73088053f6abfb6365764e4cbd49f155c52fd82",
+      "text_characters": 12069
+    },
+    {
+      "id": "az700-admin-rules",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+      "checked_at": "2026-09-28T10:18:22.515079+00:00",
+      "health": {
+        "id": "az700-admin-rules",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+        "content_type": "text/html",
+        "page_title": "Security admin rules in Azure Virtual Network Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+        "duration_signals": [],
+        "signal_fingerprint": "4bef808463678eda7ae02977b3fe45db3337e01068f8f1a1360df6dc081d0455",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+      "sha256": "92840133b7d7f9a13352b2753c4999b21f414c6b40765e7954a4ff338978fb1c",
+      "text_characters": 14921
+    },
+    {
+      "id": "az700-bastion",
+      "url": "https://learn.microsoft.com/en-us/azure/bastion/configuration-settings",
+      "checked_at": "2026-09-28T10:18:22.582145+00:00",
+      "health": {
+        "id": "az700-bastion",
+        "url": "https://learn.microsoft.com/en-us/azure/bastion/configuration-settings",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/bastion/configuration-settings",
+        "content_type": "text/html",
+        "page_title": "About Azure Bastion configuration settings",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/bastion/configuration-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "4f2b3b7b77d8dd838a5a7db69674e937618091bbf4804faa3dcc4418d323cf16",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/bastion/configuration-settings",
+      "sha256": "c1eaee23af242bcc6a22f98a1bdb3a90b77ea086ca2bfcca4c9f6b1ae8f7a747",
+      "text_characters": 7606
+    },
+    {
+      "id": "az700-endpoints-policy",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview",
+      "checked_at": "2026-09-28T10:18:22.667212+00:00",
+      "health": {
+        "id": "az700-endpoints-policy",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview",
+        "content_type": "text/html",
+        "page_title": "Azure virtual network service endpoint policies",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "bee6c1eec66d2e97fc3599b5f38bde416f1f75ddb7f5312931eae4104cc53916",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview",
+      "sha256": "43bc2f49ba1b80da9505b2ae3ae002aa4abc36e561bd1192ae78105f6fb7108a",
+      "text_characters": 10506
+    },
+    {
+      "id": "az700-outbound-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/private-subnets-by-default-in-azure-virtual-networks-what-changed-and-how-to-use/4513778",
+      "checked_at": "2026-09-28T10:18:22.849392+00:00",
+      "health": {
+        "id": "az700-outbound-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/private-subnets-by-default-in-azure-virtual-networks-what-changed-and-how-to-use/4513778",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/private-subnets-by-default-in-azure-virtual-networks-what-changed-and-how-to-use/4513778",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Private subnets by default in Azure Virtual Networks: What changed and how to use NAT Gateway | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/private-subnets-by-default-in-azure-virtual-networks-what-changed-and-how-to-use/4513778",
+        "duration_signals": [],
+        "signal_fingerprint": "cb0b23fa6bd16447e4e81303088116e476e1212e18b97a7ac14d6f972ffb920c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/private-subnets-by-default-in-azure-virtual-networks-what-changed-and-how-to-use/4513778",
+      "sha256": "71626dd23f9f44529257399ec6da8a0667d9e5b2e70a60bf4b2a1605db868dc2",
+      "text_characters": 119,
+      "supplementary_article_extraction": {
+        "method": "TechCommunity __NEXT_DATA__ article body and public author/date metadata",
+        "text_characters": 9210,
+        "sha256": "56b1f45202d76d4b85799aa32587491e606b3fcdb14e08b3081285e2947a42ba",
+        "read_boundary": "Complete extracted main article; comments, linked media and deployment procedures not executed."
+      }
+    },
+    {
+      "id": "az700-dns-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/dns-best-practices-for-implementation-in-azure-landing-zones/4420567",
+      "checked_at": "2026-09-28T10:18:22.849858+00:00",
+      "health": {
+        "id": "az700-dns-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/dns-best-practices-for-implementation-in-azure-landing-zones/4420567",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/dns-best-practices-for-implementation-in-azure-landing-zones/4420567",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "DNS best practices for implementation in Azure Landing Zones | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/dns-best-practices-for-implementation-in-azure-landing-zones/4420567",
+        "duration_signals": [],
+        "signal_fingerprint": "81d3f07246bb555d98c6421adc43f079dece7b0bae83f5694c910a0f5ba2405e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/dns-best-practices-for-implementation-in-azure-landing-zones/4420567",
+      "sha256": "0dc0bec12b51405d3033f193578221c6b1ba9858a7f801c22f0ef82ced9d23fb",
+      "text_characters": 86,
+      "supplementary_article_extraction": {
+        "method": "TechCommunity __NEXT_DATA__ article body and public author/date metadata",
+        "text_characters": 5420,
+        "sha256": "a1e06e351ddc401093f891fc8970d17a91cabb8e542005b83d661fea4ec0aacc",
+        "read_boundary": "Complete extracted main article; comments, linked media and deployment procedures not executed."
+      }
+    },
+    {
+      "id": "az700-icmp-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/icmp-support-for-azure-standardv2-nat-gateway/4528374",
+      "checked_at": "2026-09-28T10:18:22.953319+00:00",
+      "health": {
+        "id": "az700-icmp-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/icmp-support-for-azure-standardv2-nat-gateway/4528374",
+        "checked_at": "2026-09-28T10:18:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/icmp-support-for-azure-standardv2-nat-gateway/4528374",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ICMP Support for Azure StandardV2 NAT Gateway | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/icmp-support-for-azure-standardv2-nat-gateway/4528374",
+        "duration_signals": [],
+        "signal_fingerprint": "8d9b2c4db073619fc64839c908943533128fdc9395147affeb5ba0cbf8622a4a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/icmp-support-for-azure-standardv2-nat-gateway/4528374",
+      "sha256": "a7dc3973f7e97f3e24c4d68561857762e48728e4f760169dada8c9cad505601e",
+      "text_characters": 71,
+      "supplementary_article_extraction": {
+        "method": "TechCommunity __NEXT_DATA__ article body and public author/date metadata",
+        "text_characters": 5340,
+        "sha256": "46f08dc81491a4a2a45acf5c3dd555af5bcba90f76254b0eaf9795a4da407964",
+        "read_boundary": "Complete extracted main article; comments, linked media and deployment procedures not executed."
+      }
+    },
+    {
+      "id": "az104-vnet-faq",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+      "checked_at": "2026-09-28T10:25:40.969936+00:00",
+      "health": {
+        "id": "az104-vnet-faq",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+        "checked_at": "2026-09-28T10:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+        "content_type": "text/html",
+        "page_title": "Azure Virtual Network FAQ",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "c98ec69213d5ff492044e1e47bb8b20942b1630045b1fa51e74570d62afdc541",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq",
+      "sha256": "55e4934341cae6870fc5d0d632ea8beba86f32facfca1f96eecdff0126ef6885",
+      "text_characters": 45561
+    }
+  ],
+  "added_source_ids": [
+    "az700-credential",
+    "az700-nat-resource",
+    "az700-nat-snat",
+    "az700-dns-endpoints",
+    "az700-dns-fallback",
+    "az700-pe-dns",
+    "az700-pe-policies",
+    "az700-pls-direct",
+    "az700-vpn-skus",
+    "az700-p2s",
+    "az700-always-on",
+    "az700-er-guard",
+    "az700-er-failover",
+    "az700-er-fastpath",
+    "az700-routing-intent",
+    "az700-appgw-tls",
+    "az700-appgw-probe",
+    "az700-appgw-v1",
+    "az700-frontdoor-origin",
+    "az700-lb-probe",
+    "az700-firewall-order",
+    "az700-firewall-snat",
+    "az700-frontdoor-waf",
+    "az700-admin-rules",
+    "az700-bastion",
+    "az700-endpoints-policy",
+    "az700-outbound-blog",
+    "az700-dns-blog",
+    "az700-icmp-blog"
+  ],
+  "findings": [
+    {
+      "id": "az700-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "NAT capacity and protocol behavior differ by SKU",
+      "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "StandardV2 Echo support and 50,000 same-destination connections per public IP are explicit; port count is different.",
+      "recommendation": "Add SKU/limit table and worked capacity exercise.",
+      "disposition": "applied",
+      "source_id": "az700-nat-resource",
+      "resolution": "Add SKU/limit table and worked capacity exercise."
+    },
+    {
+      "id": "az700-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "StandardV2 migration can disrupt existing connections",
+      "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current limitations qualify the older blog no-interruption statement.",
+      "recommendation": "Add replacement, public-IP compatibility and controlled-cutover lesson.",
+      "disposition": "applied",
+      "source_id": "az-700-nat-gateway-overview",
+      "resolution": "Add replacement, public-IP compatibility and controlled-cutover lesson."
+    },
+    {
+      "id": "az700-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Default outbound change does not affect every existing VNet",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New private-by-default API behavior leaves existing VNets unchanged.",
+      "recommendation": "Scope the lifecycle lesson and require explicit egress for public dependencies.",
+      "disposition": "applied",
+      "source_id": "az104-outbound",
+      "resolution": "Scope the lifecycle lesson and require explicit egress for public dependencies."
+    },
+    {
+      "id": "az700-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "DNS ruleset links and application routes are independent",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Endpoint direction and forwarding-loop constraints differ from peering.",
+      "recommendation": "Add two DNS design patterns and loop diagnosis.",
+      "disposition": "applied",
+      "source_id": "az700-dns-endpoints",
+      "resolution": "Add two DNS design patterns and loop diagnosis."
+    },
+    {
+      "id": "az700-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Internet fallback is not a universal private DNS repair",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NxDomainRedirect applies to Private Link zones at VNet-link scope.",
+      "recommendation": "Add DNS versus network/identity gates and qualified blog exercise.",
+      "disposition": "applied",
+      "source_id": "az700-dns-fallback",
+      "resolution": "Add DNS versus network/identity gates and qualified blog exercise."
+    },
+    {
+      "id": "az700-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Non-AZ gateway consolidation excludes Basic retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Gateway, IP SKU and generation determine the applicable migration process.",
+      "recommendation": "Add inventory-first migration distinctions and region/zone caveat.",
+      "disposition": "applied",
+      "source_id": "az700-vpn-skus",
+      "resolution": "Add inventory-first migration distinctions and region/zone caveat."
+    },
+    {
+      "id": "az700-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Always On device tunnels need a different authentication stack",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Built-in IKEv2 computer-certificate device tunnel differs from Entra OpenVPN user access.",
+      "recommendation": "Close objective gap with prerequisites and explained check.",
+      "disposition": "applied",
+      "source_id": "az700-always-on",
+      "resolution": "Close objective gap with prerequisites and explained check."
+    },
+    {
+      "id": "az700-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "VPN backup capacity and failure boundaries need validation",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Same-location circuit links share a failure domain; private-peering backup capacity can be degraded.",
+      "recommendation": "Add survivor-demand exercise and failback/route evidence.",
+      "disposition": "applied",
+      "source_id": "az700-er-failover",
+      "resolution": "Add survivor-demand exercise and failback/route evidence."
+    },
+    {
+      "id": "az700-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Routing intent cannot preserve arbitrary custom hub routing",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Prerequisites and no automatic configuration rollback require planning.",
+      "recommendation": "Add export, route compatibility and symmetric-path constraints.",
+      "disposition": "applied",
+      "source_id": "az700-routing-intent",
+      "resolution": "Add export, route compatibility and symmetric-path constraints."
+    },
+    {
+      "id": "az700-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Private endpoint routes have a specific UDR exception",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Policy must be enabled and /0 alone cannot override endpoint routing.",
+      "recommendation": "Qualify general route lesson and endpoint policy requirements.",
+      "disposition": "applied",
+      "source_id": "az700-pe-policies",
+      "resolution": "Qualify general route lesson and endpoint policy requirements."
+    },
+    {
+      "id": "az700-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Direct Connect adds a bounded PLS preview",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "No load balancer required, with destination, region, network-policy, ER and billing restrictions.",
+      "recommendation": "Qualify conventional PLS description and add preview comparison.",
+      "disposition": "applied",
+      "source_id": "az700-pls-direct",
+      "resolution": "Qualify conventional PLS description and add preview comparison."
+    },
+    {
+      "id": "az700-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Backend TLS and probe success are separate observations",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Trust, expiry, SNI, association and test-probe behavior affect backend health.",
+      "recommendation": "Add diagnosis before changing production validation.",
+      "disposition": "applied",
+      "source_id": "az700-appgw-tls",
+      "resolution": "Add diagnosis before changing production validation."
+    },
+    {
+      "id": "az700-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Application Gateway v1 is already retired",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "April 28 retirement means unsupported resources and possible hardware decommission disruption.",
+      "recommendation": "Use supported v2 labs and date the migration warning.",
+      "disposition": "applied",
+      "source_id": "az700-appgw-v1",
+      "resolution": "Use supported v2 labs and date the migration warning."
+    },
+    {
+      "id": "az700-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Firewall type order constrains rule priority",
+      "url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A matching network allow can precede an application deny regardless of collection numbering.",
+      "recommendation": "Add effective-policy example and distinguish application SNAT.",
+      "disposition": "applied",
+      "source_id": "az700-firewall-order",
+      "resolution": "Add effective-policy example and distinguish application SNAT."
+    },
+    {
+      "id": "az700-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Central Allow and Always Allow have different NSG effects",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Allow continues to NSG evaluation while Always Allow terminates it.",
+      "recommendation": "Add decision explanation and checks.",
+      "disposition": "applied",
+      "source_id": "az700-admin-rules",
+      "resolution": "Add decision explanation and checks."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "az700-outbound-blog",
+      "decision": "accepted-bounded",
+      "author": "Aimee Littleton",
+      "published_on": "2026-04-22",
+      "notes": "Complete extracted main April 22 article read. Accept explicit-egress exercise; reject stale Terraform exception and unconditional no-interruption claim in favor of current StandardV2 limitations."
+    },
+    {
+      "source_id": "az700-dns-blog",
+      "decision": "accepted-bounded",
+      "author": "Ashish Rana",
+      "published_on": "2025-06-12",
+      "notes": "Complete extracted main June 12, 2025 article read. Accept DNS architecture exercise; constrain fallback to Private Link, prove firewall routing separately, and do not generalize AD replication advice."
+    },
+    {
+      "source_id": "az700-icmp-blog",
+      "decision": "accepted-bounded",
+      "author": "Malaika Nazim",
+      "published_on": "2026-06-17",
+      "notes": "Complete extracted main June 17 article read and protocol scope cross-checked with current NAT resource documentation. Echo success does not establish application health or override filtering."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "30 assertions covering subnet capacity, ordinary route ranking, SNAT lower bounds, degraded backup demand and public catalog sums. No published cloud code executed."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No live Azure infrastructure, VPN/ExpressRoute failover, DNS/TLS query, packet capture, network policy mutation, migration, practice assessment or paid-content execution.",
+    "30 local assertions check original arithmetic, ordinary route-selection examples and catalog sums only; no real throughput or cloud-routing simulation.",
+    "Long service/region/SKU matrices, full deployment scripts and linked media were not exhaustively audited; selected reading boundaries are recorded per source.",
+    "OReilly/Udemy direct fetches remain blocked despite public browser metadata; Savill runtime/media and Whizlabs bundle remain unverified.",
+    "Preview and retirement behavior requires dated rechecks; same-context AI review is not independent human review."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "subnet_route_snat_backup_and_catalog_assertions": 30
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "az-700-oreilly-kirk-whetton-course",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "instructor": "Kirk Whetton",
+        "published": "July 2025",
+        "total_runtime": "11h02"
+      },
+      "limitation": "Public metadata only; no paid content or full course/book coverage verification."
+    },
+    {
+      "source_id": "az-700-oreilly-packt-book",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "author": "David Okeyode",
+        "published": "August 2023",
+        "pages": 524,
+        "reading_estimate": "11h20"
+      },
+      "limitation": "Public metadata only; no paid content or full course/book coverage verification."
+    },
+    {
+      "source_id": "az-700-udemy-alan-rodrigues",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "instructor": "Alan Rodrigues",
+        "updated": "March 2026",
+        "sections": 13,
+        "lectures": 368,
+        "total_runtime": "33h23"
+      },
+      "limitation": "Public metadata only; no paid content or full course/book coverage verification."
+    }
+  ]
+}

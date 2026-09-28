@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AZ-700’s 136 objectives; add six worked examples, ten labs, 48 explained checks and three Microsoft blog exercises. Update NAT/DNS/routing, VPN/ExpressRoute, private access, policy and lifecycle guidance, and learning catalogs. See the [AZ-700 report](docs/research/2026-09-28-az-700-deep-review.md).
+
 - September 28, 2026: deeply review AZ-400's 86 objectives; add seven worked examples, ten labs, 48 explained checks and three Microsoft blog exercises. Update pipeline trust, artifact permissions, runtime/policy/retention changes, Azure DevOps identity and lifecycle, CodeQL, telemetry and learning catalogs. See the [AZ-400 report](docs/research/2026-09-28-az-400-deep-review.md).
 
 - September 28, 2026: deeply review AZ-305's 49 objectives; add seven worked examples, ten labs, 48 explained checks and three bounded blog exercises. Refresh application recovery, APIM/Service Bus capabilities, current lifecycle changes and learning catalogs. See the [AZ-305 report](docs/research/2026-09-28-az-305-deep-review.md).

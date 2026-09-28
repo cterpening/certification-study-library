@@ -3,6 +3,412 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az700-credential",
+      "title": "Azure Network Engineer Associate credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Public credential overview, 100-minute assessment, ten exam languages and annual renewal read. No assessment session or questions opened. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-nat-resource",
+      "title": "NAT Gateway SKU and resource limits",
+      "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected public IP inventory, SNAT, zone, protocol, timer, bandwidth, same-destination and total-flow/PPS limits read. Five-tuple capacity is not port inventory. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-nat-snat",
+      "title": "NAT Gateway SNAT behavior",
+      "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main port allocation, reuse, same-destination and cooldown examples read. No live SNAT load test. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-dns-endpoints",
+      "title": "Private Resolver endpoints and rulesets",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main inbound/outbound, ruleset links, forwarding selection, loop restrictions and centralized/distributed design sections read. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-dns-fallback",
+      "title": "Private DNS internet fallback",
+      "url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main property, trigger, scope, examples and limitations read. NXDOMAIN fallback bounded to Private Link zones and VNet links, with access still independent. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-pe-dns",
+      "title": "Private endpoint DNS configuration",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Reference fetched and selected public-zone-forwarder entries inspected; full service/region/subresource matrix not audited. Blog and resolver guidance support bounded hybrid-query lesson. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-pe-policies",
+      "title": "Private endpoint network policies",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main policy types and route-override exception read; sample configuration skimmed, not executed. /0 is insufficient; preview PLS exception separately distinguished. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-pls-direct",
+      "title": "Private Link service Direct Connect",
+      "url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main preview/prerequisites/requirements/limitations/considerations read through start of deployment procedure; full PowerShell/CLI/Terraform scripts not audited. October 15 billing start recorded without freezing a price. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-vpn-skus",
+      "title": "VPN Gateway SKU consolidation",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main migration timeline, non-AZ/Basic/legacy distinctions, generation and public-IP handling sections read; no migration executed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-p2s",
+      "title": "VPN Gateway point-to-site scenarios",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected tunnel/authentication matrix and Entra client requirements read; full client/RADIUS procedures not audited. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-always-on",
+      "title": "Always On VPN device tunnel",
+      "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main tunnel distinctions, Windows recommendation and device-tunnel prerequisites read; full profile script not executed or adopted. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-er-guard",
+      "title": "ExpressRoute Resiliency Guard preview",
+      "url": "https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main preview scope, multi/single homing, eligibility and configuration guidance read; no form submitted or gateway changed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-er-failover",
+      "title": "ExpressRoute with VPN failover architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main architecture, peering scope, reliability/capacity/failback and route-preference guidance read; no circuit failover drill. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-er-fastpath",
+      "title": "ExpressRoute FastPath",
+      "url": "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Intro and selected Direct/provider feature and gateway-control-plane boundaries read; full SKU/region/feature matrix not audited. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-routing-intent",
+      "title": "Virtual WAN routing intent",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected purpose, restrictions, prerequisites, backup/export and inter-hub symmetry sections read; long configuration guide not exhaustively read. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-appgw-tls",
+      "title": "Application Gateway backend settings",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected draining, backend validation/SNI/trust, probe association and test-probe caveats read; no TLS or gateway changes. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-appgw-probe",
+      "title": "Application Gateway health probes",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-probe-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-appgw-v1",
+      "title": "Application Gateway v1 retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main retirement statement, unsupported/no-SLA state and migration guidance read; no claim every deployment stopped on the same day. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-frontdoor-origin",
+      "title": "Front Door origin security",
+      "url": "https://learn.microsoft.com/en-us/azure/frontdoor/origin-security",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected public-origin IP plus FDID restrictions and private-origin/preview context read; no universal claim that private endpoints disable all service public access. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-lb-probe",
+      "title": "Load Balancer health probes",
+      "url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-firewall-order",
+      "title": "Azure Firewall rule processing",
+      "url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main type ordering, priority and inheritance sections read; long example rule tables not exhaustively replayed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-firewall-snat",
+      "title": "Azure Firewall private ranges and SNAT",
+      "url": "https://learn.microsoft.com/en-us/azure/firewall/snat-private-range",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main network-rule private-range versus application-rule SNAT boundaries read; configuration procedures not executed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-frontdoor-waf",
+      "title": "WAF on Front Door overview",
+      "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main Standard/Premium, custom/managed ordering, HTTP DDoS exception, scope and modes sections read; full ruleset feature matrix not audited. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-admin-rules",
+      "title": "Virtual Network Manager security admin rules",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected admin/NSG evaluation, actions, deployment scope and service exclusions read; no policy deployment. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-bastion",
+      "title": "Azure Bastion configuration settings",
+      "url": "https://learn.microsoft.com/en-us/azure/bastion/configuration-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected subnet, public-IP, scaling and private-only/session-recording settings read; full SKU/zone matrix not audited. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-endpoints-policy",
+      "title": "Virtual network service endpoint policies",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected Storage allowlist scope, default behavior and global endpoint policy boundaries read; full service restrictions not audited. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-outbound-blog",
+      "title": "Private subnets by default and NAT Gateway",
+      "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/private-subnets-by-default-in-azure-virtual-networks-what-changed-and-how-to-use/4513778",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Complete extracted main April 22 article read. Accept explicit-egress exercise; reject stale Terraform exception and unconditional no-interruption claim in favor of current StandardV2 limitations. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-dns-blog",
+      "title": "DNS best practices in Azure landing zones",
+      "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/dns-best-practices-for-implementation-in-azure-landing-zones/4420567",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Complete extracted main June 12, 2025 article read. Accept DNS architecture exercise; constrain fallback to Private Link, prove firewall routing separately, and do not generalize AD replication advice. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az700-icmp-blog",
+      "title": "ICMP support for StandardV2 NAT Gateway",
+      "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/icmp-support-for-azure-standardv2-nat-gateway/4528374",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Complete extracted main June 17 article read and protocol scope cross-checked with current NAT resource documentation. Echo success does not establish application health or override filtering. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az400-node24",
       "title": "GitHub Actions Node 20 removal",
       "url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
@@ -446,9 +852,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-305"
+        "AZ-305",
+        "AZ-700"
       ],
-      "notes": "September 28 AZ-305 deep review: Intro and selected migration prerequisites/compatibility including DNS timing and affinity read; full migration steps not executed. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Intro and selected migration prerequisites/compatibility including DNS timing and affinity read; full migration steps not executed. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Previously reviewed current classic retirement/migration boundary reconfirmed through current origin-security notice; full migration procedure not executed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az305-faults-blog",
@@ -1287,9 +1694,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "AZ-104",
-        "AZ-305"
+        "AZ-305",
+        "AZ-700"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected full lifecycle scope, API/date/old-VNet exceptions and explicit-egress methods read. No blanket shutdown of existing VNets claimed; full routing examples not run. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Current intro and scoped March 31 API/new-private-subnet default read; existing networks not automatically changed; no egress deployment. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected full lifecycle scope, API/date/old-VNet exceptions and explicit-egress methods read. No blanket shutdown of existing VNets claimed; full routing examples not run. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-305 deep review: Current intro and scoped March 31 API/new-private-subnet default read; existing networks not automatically changed; no egress deployment. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Current scope/impact, existing VNet behavior, explicit egress and deallocation sections read. Exact API version comes from the dated official blog. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az104-vnet-faq",
@@ -1301,9 +1709,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AZ-104"
+        "AZ-104",
+        "AZ-700"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected IPv4 reserved addresses/subnet-size facts read; broad FAQ/legacy cloud-service sections not fully audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected IPv4 reserved addresses/subnet-size facts read; broad FAQ/legacy cloud-service sections not fully audited. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Selected address overlap/reservation and networking constraints read; full long FAQ not audited. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az104-nsg-flow",
@@ -13558,7 +13967,7 @@
         "AZ-305",
         "AZ-700"
       ],
-      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-networking-overview",
@@ -14842,7 +15251,7 @@
         "AZ-104",
         "AZ-700"
       ],
-      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Retained contextual reference fetched; whole page and linked procedures not exhaustively reread this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-web-application-firewall-overview-sc900",
@@ -16588,7 +16997,7 @@
         "AZ-305",
         "AZ-700"
       ],
-      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-305 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted source boundaries below support applied changes. See docs/research/2026-09-28-az-305-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-305-microsoft-learn-course",
@@ -16738,8 +17147,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: All 136 objectives read and individually mapped across sixteen groups; July 27 baseline and objective/status hashes unchanged, no upcoming announcement. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-public-ip-addresses",
@@ -16754,7 +17166,7 @@
         "AZ-700",
         "AZ-104"
       ],
-      "notes": "September 28 AZ-104 deep review: Selected resource association, static Standard configuration, zone/SKU compatibility and Basic retirement notice read; stale general implicit-egress paragraph qualified by newer outbound reference. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AZ-104 deep review: Selected resource association, static Standard configuration, zone/SKU compatibility and Basic retirement notice read; stale general implicit-egress paragraph qualified by newer outbound reference. See docs/research/2026-09-28-az-104-deep-review.md No live infrastructure execution. September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-dns-private-resolver",
@@ -16764,8 +17176,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700", "AZ-802"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700",
+        "AZ-802"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-virtual-network-routing",
@@ -16775,8 +17191,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected route-selection, preferred system-route exceptions, gateway UDR eligibility and propagation sections read; examples not deployed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-nat-gateway-overview",
@@ -16786,8 +17205,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Main SKU, NAT64, public-IP compatibility and migration/IPv6/outbound-disruption limitations read; regional availability not generalized. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-network-watcher-overview",
@@ -16797,8 +17219,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-vpn-gateway-documentation",
@@ -16808,8 +17233,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-expressroute-documentation",
@@ -16819,8 +17247,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-virtual-wan-overview",
@@ -16830,8 +17261,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-front-door-documentation",
@@ -16841,8 +17275,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-private-link-overview",
@@ -16852,8 +17289,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700", "SC-500"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700",
+        "SC-500"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-firewall-documentation",
@@ -16863,8 +17304,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-waf-documentation",
@@ -16874,8 +17318,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-microsoft-learn-course",
@@ -16885,9 +17332,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "Microsoft lists a three-day instructor-led duration and links self-directed preparation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Microsoft lists a three-day instructor-led duration and links self-directed preparation. September 28 AZ-700 deep review: Main short course overview, audience, three-day duration and eight-language metadata read; course lessons not completed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-microsoft-practice-assessment",
@@ -16897,9 +17346,11 @@
       "authority_class": 3,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "Official free readiness assessment; it does not replace training or packet-path labs."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Official free readiness assessment; it does not replace training or packet-path labs. September 28 AZ-700 deep review: Credential and assessment landing metadata only; no questions or explanations opened. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-john-savill-study-guide",
@@ -16909,9 +17360,11 @@
       "authority_class": 4,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "Independent approximately 2h 50m review; the recording predates the July 2026 objective baseline."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Independent approximately 2h 50m review; the recording predates the July 2026 objective baseline. September 28 AZ-700 deep review: Video page shell only; earlier runtime is explicitly not reverified and no video was watched. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-john-savill-whiteboard",
@@ -16921,9 +17374,11 @@
       "authority_class": 4,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "Public visual companion; reconcile every label with the July 2026 blueprint and current product documentation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Public visual companion; reconcile every label with the July 2026 blueprint and current product documentation. September 28 AZ-700 deep review: Page fetched as shell; image not independently opened or reviewed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-pluralsight-path",
@@ -16933,9 +17388,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "Catalog displayed 44 hours, seven refreshed modular courses, one lab, a 32h 27m legacy course, and a practice exam. Avoid duplicating both course generations."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Catalog displayed 44 hours, seven refreshed modular courses, one lab, a 32h 27m legacy course, and a practice exam. Avoid duplicating both course generations. September 28 AZ-700 deep review: Public path/course/lab metadata read: six refreshed courses total 11h08 plus 30-minute lab, one 32h27 legacy course, seven courses total; aggregate 44h05 versus rounded 44h header. No paid lessons consumed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-oreilly-kirk-whetton-course",
@@ -16945,9 +17402,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "O'Reilly displayed an 11h 2m runtime, July 2025 publication, quizzes, sandbox, and badge when checked."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "O'Reilly displayed an 11h 2m runtime, July 2025 publication, quizzes, sandbox, and badge when checked. September 28 AZ-700 deep review: Direct retrieval blocked; public browser metadata confirms July 2025, 11h02, Kirk Whetton and public contents. No paid lessons accessed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-oreilly-packt-book",
@@ -16957,9 +17416,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "524-page August 2023 book; O'Reilly displayed an 11h 20m platform estimate. Pair with current objectives and documentation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "524-page August 2023 book; O'Reilly displayed an 11h 20m platform estimate. Pair with current objectives and documentation. September 28 AZ-700 deep review: Direct retrieval blocked; public browser metadata confirms David Okeyode, August 2023, 524 pages and 11h20 platform reading estimate. Full book not accessed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-udemy-alan-rodrigues",
@@ -16969,9 +17430,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "Udemy displayed 33h 23m and a March 2026 update; verify coverage of the July 2026 objective additions."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Udemy displayed 33h 23m and a March 2026 update; verify coverage of the July 2026 objective additions. September 28 AZ-700 deep review: Direct retrieval blocked; public browser metadata confirms March 2026, 13 sections, 368 lectures and 33h23. Paid content not accessed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-whizlabs-course",
@@ -16981,9 +17444,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "Course catalog page; verify current videos, labs, practice tests, access period, and objective mapping before purchase."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Course catalog page; verify current videos, labs, practice tests, access period, and objective mapping before purchase. September 28 AZ-700 deep review: Only short JavaScript shell obtained; current bundle not verified. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-700-measureup-practice-test",
@@ -16993,9 +17458,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"],
-      "notes": "118-question practice test with practice and certification modes; page metadata showed a January 2025 update, so July 2026 objective alignment must be verified."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "118-question practice test with practice and certification modes; page metadata showed a January 2025 update, so July 2026 objective alignment must be verified. September 28 AZ-700 deep review: Public metadata confirms 118 questions and January 2025 update; no practice questions copied or assessed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-120-blueprint",
@@ -37240,8 +37707,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-05",
-      "supported_exams": ["AZ-700", "AZ-800"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700",
+        "AZ-800"
+      ],
+      "notes": "September 28 AZ-700 deep review: Contextual reference fetched for availability; the complete page and linked procedures were not exhaustively reread in this pass. Specific applied-source boundaries are recorded separately. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "windows-azure-extended-network",
@@ -37251,8 +37722,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-05",
-      "supported_exams": ["AZ-700", "AZ-800"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700",
+        "AZ-800"
+      ],
+      "notes": "September 28 AZ-700 deep review: Selected current WAC extension-unavailable note and appliance dependencies reconfirmed. Paper design retained; deployment not claimed. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab650-entra-agent-id-administration",
@@ -37947,9 +38422,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AZ-700"],
-      "notes": "Current VNet-scoped flow-log behavior, schema, limitations, availability, and cost boundary."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Current VNet-scoped flow-log behavior, schema, limitations, availability, and cost boundary. September 28 AZ-700 deep review: Selected flow scope and duplicate NSG/VNet logging cautions read; sample records not executed or treated as packet captures. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az700-nsg-flow-logs-retirement",
@@ -37959,9 +38436,11 @@
       "authority_class": 2,
       "source_type": "lifecycle-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AZ-700"],
-      "notes": "Authoritative no-new-creation and September 30, 2027 retirement boundary for legacy NSG flow logs."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Authoritative no-new-creation and September 30, 2027 retirement boundary for legacy NSG flow logs. September 28 AZ-700 deep review: Current main retirement/no-new-creation notice and retained Storage-record distinction read. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az700-connection-troubleshoot-overview",
@@ -37971,9 +38450,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AZ-700"],
-      "notes": "Current Network Watcher troubleshooting behavior; retain the agentless experience's preview qualification."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-700"
+      ],
+      "notes": "Current Network Watcher troubleshooting behavior; retain the agentless experience's preview qualification. September 28 AZ-700 deep review: Selected current agentless preview, source-type and TCP/ICMP support sections read; full source/destination matrix not audited. See docs/research/2026-09-28-az-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "windows-server-release-health",

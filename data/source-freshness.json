@@ -4,6 +4,343 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-az700-deep-review",
+      "title": "AZ-700 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-700"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+          "baseline_sha256": "03e26462568e38002be22f162f5e65eb1d950785c134b768833137be0886c5c7",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "136 unchanged objectives across sixteen groups; July 27 baseline, active credential, 100-minute assessment, ten languages and annual renewal."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted routing exceptions, DNS, NAT SKU/capacity/migration, VPN scope, Always On, ER backup/preview, WAN intent, TLS, private access, policy and security boundaries applied."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current NAT ICMP/default-subnet announcements, VPN consolidation, retired App Gateway v1, future Front Door classic/NSG flow-log retirement and PLS preview billing; three blog exercises bounded by product documentation."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official three-day/eight-language course, refreshed versus legacy PS sums, browser OReilly/Udemy metadata, unchanged MeasureUp and explicit shell/media limitations."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Reject blog no-interruption and broad fallback assumptions; separate Basic VPN gateway from non-AZ consolidation, PLS preview policy from ordinary PE policy, and SNAT ports from same-destination capacity. No unresolved blocker for the applied claims."
+            }
+          },
+          "findings": [
+            {
+              "id": "az700-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "NAT capacity and protocol behavior differ by SKU",
+              "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "StandardV2 Echo support and 50,000 same-destination connections per public IP are explicit; port count is different.",
+              "recommendation": "Add SKU/limit table and worked capacity exercise.",
+              "disposition": "applied",
+              "source_id": "az700-nat-resource",
+              "resolution": "Add SKU/limit table and worked capacity exercise."
+            },
+            {
+              "id": "az700-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "StandardV2 migration can disrupt existing connections",
+              "url": "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current limitations qualify the older blog no-interruption statement.",
+              "recommendation": "Add replacement, public-IP compatibility and controlled-cutover lesson.",
+              "disposition": "applied",
+              "source_id": "az-700-nat-gateway-overview",
+              "resolution": "Add replacement, public-IP compatibility and controlled-cutover lesson."
+            },
+            {
+              "id": "az700-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Default outbound change does not affect every existing VNet",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New private-by-default API behavior leaves existing VNets unchanged.",
+              "recommendation": "Scope the lifecycle lesson and require explicit egress for public dependencies.",
+              "disposition": "applied",
+              "source_id": "az104-outbound",
+              "resolution": "Scope the lifecycle lesson and require explicit egress for public dependencies."
+            },
+            {
+              "id": "az700-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "DNS ruleset links and application routes are independent",
+              "url": "https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Endpoint direction and forwarding-loop constraints differ from peering.",
+              "recommendation": "Add two DNS design patterns and loop diagnosis.",
+              "disposition": "applied",
+              "source_id": "az700-dns-endpoints",
+              "resolution": "Add two DNS design patterns and loop diagnosis."
+            },
+            {
+              "id": "az700-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Internet fallback is not a universal private DNS repair",
+              "url": "https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NxDomainRedirect applies to Private Link zones at VNet-link scope.",
+              "recommendation": "Add DNS versus network/identity gates and qualified blog exercise.",
+              "disposition": "applied",
+              "source_id": "az700-dns-fallback",
+              "resolution": "Add DNS versus network/identity gates and qualified blog exercise."
+            },
+            {
+              "id": "az700-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Non-AZ gateway consolidation excludes Basic retirement",
+              "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Gateway, IP SKU and generation determine the applicable migration process.",
+              "recommendation": "Add inventory-first migration distinctions and region/zone caveat.",
+              "disposition": "applied",
+              "source_id": "az700-vpn-skus",
+              "resolution": "Add inventory-first migration distinctions and region/zone caveat."
+            },
+            {
+              "id": "az700-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Always On device tunnels need a different authentication stack",
+              "url": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Built-in IKEv2 computer-certificate device tunnel differs from Entra OpenVPN user access.",
+              "recommendation": "Close objective gap with prerequisites and explained check.",
+              "disposition": "applied",
+              "source_id": "az700-always-on",
+              "resolution": "Close objective gap with prerequisites and explained check."
+            },
+            {
+              "id": "az700-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "VPN backup capacity and failure boundaries need validation",
+              "url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Same-location circuit links share a failure domain; private-peering backup capacity can be degraded.",
+              "recommendation": "Add survivor-demand exercise and failback/route evidence.",
+              "disposition": "applied",
+              "source_id": "az700-er-failover",
+              "resolution": "Add survivor-demand exercise and failback/route evidence."
+            },
+            {
+              "id": "az700-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Routing intent cannot preserve arbitrary custom hub routing",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Prerequisites and no automatic configuration rollback require planning.",
+              "recommendation": "Add export, route compatibility and symmetric-path constraints.",
+              "disposition": "applied",
+              "source_id": "az700-routing-intent",
+              "resolution": "Add export, route compatibility and symmetric-path constraints."
+            },
+            {
+              "id": "az700-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Private endpoint routes have a specific UDR exception",
+              "url": "https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Policy must be enabled and /0 alone cannot override endpoint routing.",
+              "recommendation": "Qualify general route lesson and endpoint policy requirements.",
+              "disposition": "applied",
+              "source_id": "az700-pe-policies",
+              "resolution": "Qualify general route lesson and endpoint policy requirements."
+            },
+            {
+              "id": "az700-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Direct Connect adds a bounded PLS preview",
+              "url": "https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "No load balancer required, with destination, region, network-policy, ER and billing restrictions.",
+              "recommendation": "Qualify conventional PLS description and add preview comparison.",
+              "disposition": "applied",
+              "source_id": "az700-pls-direct",
+              "resolution": "Qualify conventional PLS description and add preview comparison."
+            },
+            {
+              "id": "az700-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Backend TLS and probe success are separate observations",
+              "url": "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Trust, expiry, SNI, association and test-probe behavior affect backend health.",
+              "recommendation": "Add diagnosis before changing production validation.",
+              "disposition": "applied",
+              "source_id": "az700-appgw-tls",
+              "resolution": "Add diagnosis before changing production validation."
+            },
+            {
+              "id": "az700-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Application Gateway v1 is already retired",
+              "url": "https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "April 28 retirement means unsupported resources and possible hardware decommission disruption.",
+              "recommendation": "Use supported v2 labs and date the migration warning.",
+              "disposition": "applied",
+              "source_id": "az700-appgw-v1",
+              "resolution": "Use supported v2 labs and date the migration warning."
+            },
+            {
+              "id": "az700-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Firewall type order constrains rule priority",
+              "url": "https://learn.microsoft.com/en-us/azure/firewall/rule-processing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A matching network allow can precede an application deny regardless of collection numbering.",
+              "recommendation": "Add effective-policy example and distinguish application SNAT.",
+              "disposition": "applied",
+              "source_id": "az700-firewall-order",
+              "resolution": "Add effective-policy example and distinguish application SNAT."
+            },
+            {
+              "id": "az700-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Central Allow and Always Allow have different NSG effects",
+              "url": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Allow continues to NSG evaluation while Always Allow terminates it.",
+              "recommendation": "Add decision explanation and checks.",
+              "disposition": "applied",
+              "source_id": "az700-admin-rules",
+              "resolution": "Add decision explanation and checks."
+            }
+          ],
+          "notes": "Whole guide and 136 unchanged objectives mapped across sixteen groups. Add six worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh NAT, DNS, routing, VPN migration/Always On, ExpressRoute backup, WAN intent, TLS, private-access preview, policy behavior and lifecycle; reconcile learning catalogs. Thirty offline assertions passed. No cloud deployment, migration, packet capture, failover drill, assessment or paid-content execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-az-700-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 15,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-az400-deep-review",
       "title": "AZ-400 complete guide and learning-content review",
       "rubric_version": 1,

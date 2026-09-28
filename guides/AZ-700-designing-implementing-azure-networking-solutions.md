@@ -6,20 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-07
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-07
+upcoming_change_checked: 2026-09-28
 ---
 
 # AZ-700 Designing and Implementing Microsoft Azure Networking Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). The [official AZ-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). The [official AZ-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Official source:** [AZ-700 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700)
 
 > **Living-guide watch — September 7, 2026:** The current blueprint names virtual network flow logs and Network Watcher troubleshooting, but older learning material can still center NSG flow logs or assume the Network Watcher VM extension is always required. Microsoft no longer permits creation of new [NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview) and will retire them on September 30, 2027; use [virtual network flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview) for new work and account for their scope, unsupported scenarios, storage, duplicate-ingestion, and cost boundaries. [Connection troubleshoot](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) now has an agentless experience, but Microsoft still labels it preview. Keep extension-based and agentless prerequisites separate, verify the live page before a lab, and treat third-party diagrams or courses as explanations rather than scope authority.
+
+**September 28 deep review:** All 136 detailed objectives remain on the July 27 baseline. The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/) lists a 100-minute assessment, ten exam languages and annual renewal. The three-day instructor course is a separate time commitment. See the [deep-review report](../docs/research/2026-09-28-az-700-deep-review.md) for objective mapping, source limitations and local checks; infrastructure labs and independent human review remain pending.
+
+Current operational additions below cover explicit egress, StandardV2 NAT Gateway, hybrid DNS, VPN migration, private-endpoint policy exceptions and retired application-delivery SKUs. Preview features are labeled and are supporting context, not additions to the published exam objectives.
 
 ## How to use this guide
 
@@ -97,6 +101,8 @@ A subnet delegation grants a supported service permissions to manage resources i
 
 Public IPs are Azure resources with SKU, regional/zonal, allocation, routing-preference and association behavior. A public IP prefix reserves a contiguous Azure-provided block for predictable allocation. Custom IP prefix/BYOIP requires ownership validation and staged commissioning before use. **VERIFY CURRENT:** IPv4/IPv6, prefix sizes, tier/SKU, availability zones, routing preference and association support in the [public IP documentation](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses).
 
+For ordinary IPv4 subnet planning, subtract Azure's first four and last reserved addresses, then budget service-specific reservations, upgrades and overlap separately. [Virtual Network FAQ](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-faq) explains the reservation rule. A service's required dedicated subnet size still applies even when your address arithmetic fits; see worked example 1.
+
 ### Name resolution
 
 Design DNS by namespace and query origin:
@@ -116,6 +122,14 @@ Use `nslookup`, `Resolve-DnsName`, `dig`, resolver logs where available, and que
 
 See [Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) for current endpoint and ruleset behavior.
 
+#### Resolver direction, loops and negative answers
+
+An inbound endpoint has a reachable private IP that clients or on-premises forwarders can query. An outbound endpoint connects a forwarding ruleset to destination DNS servers; it does not provide a client-facing DNS server IP. Keep the endpoint subnets dedicated. A ruleset link can enable DNS resolution without VNet peering, but that does not create a route to the application. A ruleset that forwards a zone to a hub inbound endpoint must not also link back to that endpoint's own VNet: that can loop. Use the [endpoint and ruleset guidance](https://learn.microsoft.com/en-us/azure/dns/private-resolver-endpoints-rulesets) to distinguish a distributed ruleset-link design from a centralized custom-DNS design.
+
+For on-premises Private Link resolution, forward the service's public namespace, such as `blob.core.windows.net`, into Azure's resolver path; trace the CNAME chain to the private zone. Creating a private zone alone does not change a client's configured resolver. Check each service's [private-endpoint DNS configuration](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns).
+
+[Internet fallback](https://learn.microsoft.com/en-us/azure/dns/private-dns-fallback) uses `resolutionPolicy: NxDomainRedirect` on an individual VNet link to a **Private Link private DNS zone**. An authoritative NXDOMAIN can then trigger public recursion. It is not a general fallback for every private zone, timeout or application error. A public answer neither grants service authorization nor changes disabled public-network access. Decide whether public resolution is intended before enabling it; a missing record for your own private endpoint may need repair instead.
+
 ### VNet connectivity, routing and egress
 
 #### Peering and gateway transit
@@ -128,12 +142,12 @@ Azure Virtual Network Manager can group networks and deploy connectivity or secu
 
 #### Route selection
 
-Azure creates system routes, learns BGP routes from gateways/Route Server, and applies user-defined routes (UDRs). Longest prefix match is evaluated first; route-source rules decide between equally specific candidates. Inspect **effective routes** rather than only the route-table resource.
+Azure creates system routes, learns BGP routes from gateways/Route Server, and applies user-defined routes (UDRs). Longest prefix match normally selects a route; for identical prefixes, UDR then BGP then system route is the general priority. Preferred VNet/peering/service-endpoint system routes and private-endpoint policies have documented exceptions. Inspect **effective routes** rather than only the route-table resource.
 
 | Next hop | Use | Caution |
 |---|---|---|
 | Virtual network | Within VNet | Address space changes affect system routes |
-| Virtual network gateway | VPN/ExpressRoute learned or explicit path | Propagation and gateway coexistence matter |
+| Virtual network gateway | Learned gateway path; explicit UDR next hop supported for a VPN gateway | Do not target ExpressRoute, Route Server or a Virtual WAN hub router with this UDR next-hop type |
 | Virtual appliance | Firewall/router/NVA | Appliance IP forwarding, health and symmetric return path |
 | Internet | Azure internet edge path | Public exposure and platform egress behavior remain separate |
 | None | Drop matching traffic | More-specific routes can still win |
@@ -145,6 +159,21 @@ Azure Route Server exchanges BGP routes with supported NVAs so routes can change
 Azure NAT Gateway provides scalable, explicit outbound SNAT for supported subnet flows. It does not accept unsolicited inbound connections or act as a firewall. Subnet association, public IP/prefix, idle timeout, zone model and port consumption matter. Avoid depending on implicit/default outbound access; design egress explicitly using [NAT Gateway guidance](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview).
 
 > **Related item:** SNAT port exhaustion is a state-capacity problem. Connection reuse, destination tuple distribution, idle timeouts, scale and the number of frontend addresses affect it. Adding compute without fixing outbound translation can worsen pressure.
+
+#### Explicit egress and NAT Gateway capacity
+
+[Default outbound access guidance](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/default-outbound-access) scopes the private-by-default change to new VNets using API version `2025-07-01` or later, released after March 31, 2026. Inspect the deployed subnet and tooling/API version; existing VNets did not all lose outbound connectivity on that date. Private subnets need an explicit method for required public dependencies. A `0.0.0.0/0` UDR to a firewall/NVA takes precedence over subnet NAT Gateway egress.
+
+| NAT decision | Current boundary to explain |
+|---|---|
+| Standard versus StandardV2 | Standard is zonal; StandardV2 is zone redundant and supports IPv4/IPv6. Published aggregate throughput is 50 versus 100 Gbps; Standard has separate 25 Gbps outbound and response limits. These are ceilings, not measured application throughput. |
+| Public IP compatibility | StandardV2 needs StandardV2 public IPs/prefixes. Moving from Standard requires a new gateway and reassociation; it is not an in-place SKU upgrade. |
+| SNAT capacity | Ports are shared on demand across associated subnets. Each public IP supplies 64,512 ports per transport inventory, but the concurrent same-destination limit is 50,000 connections per public IP; do not equate the two numbers. |
+| Ping | StandardV2 supports outbound IPv4/IPv6 Echo Request/Reply. Other ICMP types are unsupported; Standard does not gain this capability. A successful ping does not prove DNS, HTTPS or authorization. |
+| IPv6-only clients to IPv4 services | NAT64 uses `64:ff9b::/96`; a separate third-party DNS64 service must synthesize the AAAA answer. NAT Gateway is not that DNS64 service. |
+| Migration | Existing Load Balancer, Firewall or VM public-IP connections can be interrupted when adding StandardV2. IPv6 Load Balancer outbound rules also have a documented disruption limitation. Plan and test the cutover. |
+
+Use the current [resource limits and protocols](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-resource), [SNAT reuse explanation](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-gateway-snat) and [overview limitations](https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview). Different destinations can reuse a port; closed connections have reuse timers. Connection pooling, bursts, packets per second and total active flows still matter after adding IPs.
 
 ### Monitor and troubleshoot networks
 
@@ -196,6 +225,12 @@ For high availability, consider active-active gateways, zone-redundant SKUs, mul
 
 Custom IPsec/IKE policies must match encryption, integrity, Diffie-Hellman/PFS, SA lifetime and selector expectations. A tunnel can be “connected” while application traffic fails because prefixes, BGP, UDR, NSG, MTU/MSS, NAT or return routes are wrong. Use [VPN Gateway documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/) and device-specific guidance.
 
+#### VPN migration is scoped by gateway SKU and public-IP SKU
+
+The [VPN Gateway consolidation guidance](https://learn.microsoft.com/en-us/azure/vpn-gateway/gateway-sku-consolidation) ends new non-AZ `VpnGw1`–`VpnGw5` creation and describes migration to AZ SKUs. Existing non-AZ gateways remain supported until migrated; the page schedules deprecation after September 2026. **Basic gateway SKU is not retiring**, and Gen1 has no announced retirement. Legacy Standard/HighPerformance gateways have a separate migration program.
+
+Inventory gateway SKU, generation, public-IP SKU and region before selecting a procedure. A Basic gateway using a Basic public IP must not use the VpnGw migration tool. An AZ SKU in a region without availability zones is regional until zone support exists. SKU naming alone is not evidence of a deployed zone-resilient topology; rehearse verification and rollback for the actual combination.
+
 ### Azure Extended Network
 
 [Azure Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network) uses a bidirectional VXLAN tunnel between on-premises and Azure virtual appliances to stretch one selected on-premises subnet into an Azure VNet. Its narrow purpose is to let selected VMs retain on-premises private IP addresses during migration when renumbering is not possible. Prefer a normal routed migration into an Azure-only subnet when addresses can change.
@@ -223,6 +258,12 @@ P2S connects individual clients to a VNet. Select:
 - routes advertised to the client and transit expectations;
 - client package/profile distribution, versioning and revocation;
 - DNS resolution and access controls after tunnel establishment.
+
+#### Always On device tunnel versus Entra user authentication
+
+The [Always On device-tunnel procedure](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-always-on-device-tunnel) uses the Windows built-in VPN client, IKEv2 and a computer certificate in the Local Machine store, configured under LOCAL SYSTEM on a domain-joined Enterprise/Education device. Only one device tunnel is supported per device. It connects before user sign-in; a user tunnel has a separate profile and purpose. Microsoft recommends Windows 11 following Windows 10's October 2025 end of support.
+
+For Azure P2S, [Microsoft Entra authentication](https://learn.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about) requires OpenVPN and Azure VPN Client. It is not an IKEv2 authentication option. Match tunnel, authentication, operating system, client and profile together; selecting multiple gateway authentication methods does not make every combination valid.
 
 ### Azure Network Adapter requirements
 
@@ -253,6 +294,10 @@ BGP advertisements must be intentional. Avoid accepting or advertising more-spec
 
 > **Related item:** VPN over ExpressRoute or other encryption designs add tunnel overhead, MTU, throughput and operational dependencies. “Private circuit” and “encrypted data in transit” are different requirements.
 
+Two connections in one ExpressRoute circuit still share a peering-location failure domain. [VPN failover guidance](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover) treats the VPN as a potentially degraded-capacity path: test route convergence, session reconnection and failback. VPN backup carries private-peering traffic; Microsoft-peering traffic reaches services over the internet instead. Keep prefix advertisements aligned because a more-specific route can defeat the intended ExpressRoute preference.
+
+**Related preview:** [ExpressRoute Resiliency Guard](https://learn.microsoft.com/en-us/azure/expressroute/resiliency-model) helps configure multi-homing through circuits at different physical locations or Metro circuits. It is public preview for ExpressRoute VNet gateways and does not currently support Virtual WAN gateways. The configuration aid does not prove backup capacity or application recovery. FastPath bypasses the gateway for supported data traffic while retaining the control-plane gateway; check the [Direct/provider feature matrix](https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath) before assuming peering, UDR or Private Link support.
+
 ### Azure Virtual WAN
 
 Virtual WAN provides Microsoft-managed virtual hubs for branch, P2S, ExpressRoute, VNet and supported NVA/security integration. Standard versus Basic capabilities differ. Plan:
@@ -280,6 +325,8 @@ An association chooses the hub route table used to route a connection’s traffi
 - Configuring Virtual WAN routing labels without tracing associations and propagation end to end.
 
 ---
+
+**Routing-intent boundary:** [Virtual WAN routing intent](https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-routing-policies) manages connection associations and propagation. It requires removal of incompatible custom route tables and default-table static routes whose next hop is a VNet connection. Export the existing configuration before changing it; previous settings are not automatically restored. Internet/private policies and inter-hub inspection require a complete symmetric-path design.
 
 ## 4. Design and implement application delivery services (15–20%)
 
@@ -316,6 +363,10 @@ Plan a dedicated subnet, frontend visibility, autoscale/manual capacity, zones, 
 
 TLS termination decrypts at the gateway. End-to-end TLS re-encrypts to the backend, which requires correct certificate trust and hostname. A backend certificate can be valid yet fail if the configured host name/SNI does not match. Application Gateway WAF is a separate policy decision, discussed in the security domain.
 
+[Application Gateway backend settings](https://learn.microsoft.com/en-us/azure/application-gateway/configuration-http-settings) distinguish client-to-gateway TLS from gateway-to-backend TLS. Check backend certificate chain, expiry and SNI/hostname, plus the custom probe's host, path and association. Keep production certificate validation enabled; suppressing validation can hide the cause of a failed backend handshake. A portal test probe can differ from periodic probe behavior. Configure connection draining for planned removal and allow enough time for expected transfers.
+
+**Lifecycle:** [Application Gateway v1 retired April 28, 2026](https://learn.microsoft.com/en-us/azure/application-gateway/v1-retirement). Remaining v1 resources have no support/SLA and can lose traffic as hardware is decommissioned. New labs should use supported v2 configurations; a still-running v1 instance is not evidence of continued support.
+
 ### Azure Front Door
 
 Front Door terminates/proxies HTTP(S) at Microsoft’s global edge and chooses an origin by route, health, priority, weight and latency. Plan:
@@ -344,6 +395,8 @@ Caching can serve stale or inappropriate content if cache keys and dynamic/priva
 
 ---
 
+For public Front Door origins, combine the `AzureFrontDoor.Backend` address restriction with validation of **your** `X-Azure-FDID`. Shared Front Door addresses alone do not identify your profile, while a header alone can be imitated on an unrestricted origin. [Origin security guidance](https://learn.microsoft.com/en-us/azure/frontdoor/origin-security) explains the combination. Front Door classic retires March 31, 2027; plan a [supported-tier migration](https://learn.microsoft.com/en-us/azure/frontdoor/migrate-tier) and verify DNS/certificates and origin access after cutover.
+
 ## 5. Design and implement private access to Azure services (10–15%)
 
 ### Private endpoint and Private Link service
@@ -359,9 +412,15 @@ AND service/data authorization permits the caller
 
 Plan endpoint placement, address capacity, policies, service subresources, multiple regions, endpoint approval, public-network access, DNS zones/records, VNet links, Private Resolver/on-prem forwarding, service firewall, monitoring and lifecycle. Storage may require separate private endpoints for blob, file, queue, table, web or DFS behaviors used by the workload.
 
-A Private Link service publishes a customer-owned service behind a Standard Load Balancer so consumers can create private endpoints to it. Design NAT/source behavior, visibility/auto-approval, alias, frontend/backend, health, quotas and provider/consumer responsibility. It is different from consuming a Microsoft PaaS private endpoint.
+The conventional Private Link service design publishes a customer-owned service behind a Standard Load Balancer so consumers can create private endpoints to it. Design NAT/source behavior, visibility/auto-approval, alias, frontend/backend, health, quotas and provider/consumer responsibility. It is different from consuming a Microsoft PaaS private endpoint.
 
 See the [Private Link overview](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview).
+
+#### Endpoint network policies and the Direct Connect preview
+
+For an ordinary private endpoint, enable the required NSG and/or route-table policy on its hosting subnet before expecting those policies to apply. The [private-endpoint routing exception](https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy) allows eligible UDRs with a prefix at least as specific as the endpoint VNet address space to override its default `/32` route when route policy is enabled. A catch-all `0.0.0.0/0` does not achieve this. Inspect effective routes and the return path; do not extrapolate from an ordinary longest-prefix exercise.
+
+**Related preview:** [Private Link service Direct Connect](https://learn.microsoft.com/en-us/azure/private-link/configure-private-link-service-direct-connect) can target a privately routable static IP without a Standard Load Balancer. Current preview restrictions include limited regions, at least two IP configurations in pairs, no private endpoint as destination, same-region client/endpoint/service, and no enabled private-endpoint network policies for associated endpoints. ExpressRoute on-premises access requires the PLS and gateway in the same VNet. It needs a new PLS rather than migration of an existing service. Billing starts October 15, 2026; recheck current pricing and restrictions before a deployment.
 
 ### Service endpoints and policies
 
@@ -391,6 +450,8 @@ Do not choose solely on cost. Use reachability, exfiltration control, on-premise
 
 ---
 
+For [Azure Storage service endpoint policies](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview), an account/resource-group/subscription allowlist constrains destination accounts. An NSG Storage service tag alone permits a broader service address set. Keep the destination policy separate from the target account's own network rules and the caller's data permissions.
+
 ## 6. Design and implement Azure network security services (15–20%)
 
 ### NSGs, ASGs and flow logs
@@ -402,6 +463,8 @@ Use service tags for Microsoft-managed address sets and application security gro
 Azure Virtual Network Manager security admin rules can establish centrally managed allow, always-allow or deny intent across managed networks, evaluated in relation to NSGs according to documented order. Verify current semantics before rollout; a central rule can have broad impact.
 
 Use virtual network flow logs and IP flow verification for evidence, but remember that an allowed flow does not prove route, listener, TLS or application success. Review the [NSG overview](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview).
+
+[Security admin rule evaluation](https://learn.microsoft.com/en-us/azure/virtual-network-manager/concept-security-admins) precedes NSGs. **Allow** continues to NSG evaluation; **Always Allow** bypasses subsequent NSG evaluation; **Deny** terminates the flow. Verify deployment scope and service exclusions before relying on a central rule. For administrative access, [Bastion settings](https://learn.microsoft.com/en-us/azure/bastion/configuration-settings) require a dedicated `/26` or larger `AzureBastionSubnet` for current non-Developer deployments; ordinary deployments and private-only deployments have different public-IP requirements.
 
 ### Azure Firewall and Firewall Manager
 
@@ -422,6 +485,10 @@ Rule processing order matters. DNAT, network and application rules serve differe
 Firewall Manager centralizes policies for secured virtual hubs and hub VNets. Parent/child policy inheritance supports central baselines with scoped additions, but teams need ownership and change/testing boundaries. A secure Virtual WAN hub combines managed hub routing and security; inspect routing intent and effective routes to prevent bypass.
 
 Use [Azure Firewall documentation](https://learn.microsoft.com/en-us/azure/firewall/) for current SKU and policy behavior.
+
+[Firewall rule processing](https://learn.microsoft.com/en-us/azure/firewall/rule-processing) evaluates DNAT, then network, then application rules; rule type order is not overridden by a lower numeric priority on an application collection. Parent-policy collections take precedence within that processing structure. A broad network allow can therefore prevent a narrower application rule from being reached. [SNAT private-range configuration](https://learn.microsoft.com/en-us/azure/firewall/snat-private-range) affects network rules; application rules always use SNAT through the proxy. Do not diagnose return routing using the network-rule source-preservation assumption for an application-rule flow.
+
+For [Front Door WAF](https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview), Standard supports custom rules while Premium provides the full managed-rule capability. Custom rules normally precede managed rules, with a documented HTTP DDoS ruleset exception. Record tier, applicable policy scope, mode and rule action when explaining what protected a request.
 
 ### Web Application Firewall
 
@@ -481,6 +548,45 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 7. Fail one origin and measure probe interval, routing convergence, capacity, data behavior and recovery/failback.
 
 ---
+
+### Worked example 1 — subnet growth and upgrade overlap
+
+Assume 40 one-IP instances, 25% growth and an upgrade that temporarily doubles that grown fleet. Demand is `40 × 1.25 × 2 = 100` addresses. An ordinary Azure IPv4 `/26` offers `64 − 5 = 59`, so it fails; `/25` offers `128 − 5 = 123`, leaving 23 addresses before any additional service reservations. These are invented workload assumptions, not a universal service sizing rule.
+
+### Worked example 2 — route source cannot beat every prefix
+
+For an ordinary destination `10.20.1.9`, suppose eligible routes are UDR `0.0.0.0/0 → firewall`, BGP `10.20.0.0/16 → VPN` and UDR `10.20.1.0/24 → NVA`. The `/24` wins. Remove it and the BGP `/16` wins over the default UDR. Add an eligible UDR for the same `/16` and it wins the equal-prefix tie. This example excludes preferred system/service-endpoint routes and the private-endpoint exception. The observed effective route and return path remain the deployment evidence.
+
+### Worked example 3 — SNAT ports versus same-destination capacity
+
+Assume 120,000 concurrent TCP connections all reach one external IP and port. Using the documented 50,000-per-public-IP ceiling gives a theoretical minimum `ceil(120,000 / 50,000) = 3` public IPs. Two IPs provide 129,024 SNAT ports, yet their same-destination connection ceiling is only 100,000. Three provide a 150,000 ceiling, so this demand consumes 80% of that ceiling. This is a lower-bound capacity exercise, not a throughput guarantee: add burst/reuse headroom, validate distribution and consider total-flow, PPS, bandwidth and endpoint limits. Prefer connection reuse where the application supports it.
+
+### Worked example 4 — a connected backup can still be undersized
+
+An invented workload needs 1.2 Gbps during an ExpressRoute outage. A tested VPN path sustains 0.8 Gbps under the same traffic mix. The shortfall is 0.4 Gbps, or one third of demand. Defer a 0.5 Gbps batch workload and the remaining 0.7 Gbps fits with only 0.1 Gbps headroom. Check latency, encryption overhead, routes and session recovery as well as this arithmetic; no gateway SKU throughput is assumed here.
+
+### Worked example 5 — DNS recovery is only one gate
+
+| Observation | Meaning and next evidence |
+|---|---|
+| Private Link zone returns NXDOMAIN for a resource you own | Inspect the endpoint's record/zone group and the resolver's zone link before enabling public fallback. |
+| Intended cross-tenant resource resolves publicly after `NxDomainRedirect` | DNS now has an answer; check whether public network access is permitted, then route/filter and service authorization. |
+| Private IP resolves but TCP fails | Query success does not prove a route or allowed transport; inspect effective routes, policies and destination listener. |
+| TCP succeeds but HTTPS fails | Inspect hostname/SNI, certificate trust/expiry and application response. |
+
+### Worked example 6 — effective policy and layer boundaries
+
+For a matching central admin **Allow** and a matching NSG **Deny**, the flow is denied. Change the applicable admin action to **Always Allow** and NSG evaluation is bypassed; this still does not prove the application's listener, TLS or authorization. Separately, a Firewall network allow for TCP 443 can terminate rule evaluation before an application FQDN deny. Tighten the correct rule layer instead of assigning the application rule an arbitrarily lower number.
+
+### Three useful blog exercises
+
+| Article and date | Exercise | Current-documentation boundary |
+|---|---|---|
+| [Private subnets by default](https://techcommunity.microsoft.com/blog/azurenetworkingblog/private-subnets-by-default-in-azure-virtual-networks-what-changed-and-how-to-use/4513778), Aimee Littleton, April 22, 2026 | Contrast an existing VNet and a new private VNet; identify explicit paths for updates and a public API, then draw a migration checklist. | Verify the actual API/provider version. Do not reuse the article's dated Terraform exception or its unconditional no-interruption statement: current StandardV2 documentation lists disruption cases. |
+| [DNS in Azure landing zones](https://techcommunity.microsoft.com/blog/azurenetworkingblog/dns-best-practices-for-implementation-in-azure-landing-zones/4420567), Ashish Rana, June 12, 2025 | Draw centralized custom-DNS and distributed zone/ruleset-link alternatives; trace one query in each direction and identify a possible forwarding loop. | Hub-only zone links do not themselves force firewall inspection; routing must do that. Scope fallback to Private Link zones. Treat AD forwarder replication as an environment-specific design decision, not a universal prohibition. |
+| [StandardV2 ICMP support](https://techcommunity.microsoft.com/blog/azurenetworkingblog/icmp-support-for-azure-standardv2-nat-gateway/4528374), Malaika Nazim, June 17, 2026 | Explain both “ping fails, HTTPS works” and “ping works, HTTPS fails”; list the next test for each. | Echo support is SKU-specific, not all ICMP. Independent NSG/firewall/destination filtering still applies; an Echo reply is not an application health check. |
+
+The articles supply learning scenarios; the linked product documentation controls support, lifecycle and configuration details. Their complete main text was reviewed, including the qualifications above; linked deployments and media were not executed.
 
 ## 8. Hands-on labs
 
@@ -551,6 +657,21 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 
 ---
 
+### Lab 9 — Offline capacity and failure worksheet
+
+1. Recalculate worked examples 1–4 with a 60-instance fleet, a different route and a second destination endpoint.
+2. Explain why the NAT same-destination calculation cannot be replaced with a count of SNAT ports.
+3. Draw normal, failover and failback paths, including DNS and stateful return routing.
+4. Identify which assumptions require a load test or effective-route observation before deployment.
+
+### Lab 10 — Blog claim and migration review
+
+1. Complete the three blog exercises and keep a claim/source/date table.
+2. Compare the NAT migration article with current StandardV2 interruption limitations.
+3. Classify a VPN inventory by gateway SKU, generation, IP SKU and regional zone support; choose the appropriate current procedure without executing it.
+4. Compare conventional PLS with Direct Connect preview; record region, endpoint policies, ExpressRoute placement, billing and cleanup constraints.
+5. Write acceptance evidence for DNS, transport, TLS, authorization, telemetry and rollback separately. Use paper designs first; any later cloud exercise needs a cost-capped isolated environment.
+
 ## 9. Original knowledge checks
 
 1. Why reserve more subnet space than today’s instance count? **Answer:** Azure reservations, autoscale, upgrades, blue-green capacity, private endpoints and future service constraints consume addresses.
@@ -579,6 +700,31 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 24. Best first troubleshooting artifact? **Answer:** A precise failing five-tuple and timestamp plus expected DNS/address/path, so every subsequent signal can be correlated.
 
 ---
+
+25. How many ordinary Azure IPv4 addresses can a /25 allocate? **Answer:** 123 before additional service-specific reservations: 128 minus five.
+26. Do 50 grown instances fit an overlapping double-size deployment in /26? **Answer:** No. One hundred addresses exceed its 59 usable addresses.
+27. Does a default firewall UDR beat every more-specific BGP route? **Answer:** No. The ordinary longest-prefix decision comes first; inspect documented exceptions and effective routes.
+28. Can a Virtual Network Gateway UDR target an ExpressRoute gateway? **Answer:** No. That explicit UDR next-hop type is supported for a VPN gateway, not ExpressRoute, Route Server or a Virtual WAN hub router.
+29. Does a ruleset link establish application connectivity? **Answer:** No. It can enable DNS resolution without peering; the application still needs a routed, permitted path.
+30. Where should a rule forwarding to a hub inbound endpoint not be linked? **Answer:** Its own endpoint VNet, where that rule can cause a DNS forwarding loop.
+31. Does NXDOMAIN fallback repair every private DNS failure? **Answer:** No. NxDomainRedirect is a VNet-link policy for Private Link zones and an authoritative NXDOMAIN; it does not fix arbitrary timeouts or application access.
+32. Does a public DNS answer override disabled public access? **Answer:** No. Service network access and identity permissions are separate gates.
+33. Did every existing VNet lose default outbound access in March 2026? **Answer:** No. The change is scoped to new VNets and the newer API behavior; inspect actual subnet configuration.
+34. Can two NAT public IPs sustain 120,000 concurrent connections to one destination? **Answer:** Not under the current 50,000-per-IP same-destination ceiling, even though their combined port inventory exceeds 120,000.
+35. Does StandardV2 ping success prove HTTPS success? **Answer:** No. It proves an Echo request/reply path; TLS, HTTP and authorization are separate.
+36. Does StandardV2 provide DNS64 automatically? **Answer:** No. NAT64 requires a separate DNS64 solution for synthesized IPv6 answers.
+37. Is a Standard-to-StandardV2 gateway migration an in-place, interruption-free upgrade? **Answer:** No. Create the new gateway/IP resources and plan reassociation; documented existing-flow disruption cases apply.
+38. Does non-AZ VpnGw consolidation retire Basic VPN Gateway? **Answer:** No. Basic is explicitly excluded from that retirement claim; use its own public-IP handling procedure.
+39. Does an AZ gateway SKU guarantee zones in every region? **Answer:** No. It is regional in regions without availability-zone support.
+40. Can Entra P2S authentication use IKEv2? **Answer:** No. It uses OpenVPN and Azure VPN Client; the Always On device tunnel instead uses IKEv2/computer certificates.
+41. Are the two links of one standard ExpressRoute circuit two peering locations? **Answer:** No. A location-wide failure can affect both; plan a separate failure boundary.
+42. Is a healthy VPN backup necessarily equivalent to ExpressRoute? **Answer:** No. Validate tested capacity, routing, sessions and degraded-mode priorities.
+43. Can custom hub route tables remain unchanged when enabling routing intent? **Answer:** No. Check its prerequisites and export the current associations, propagation and routes for a deliberate rollback.
+44. Does a default /0 UDR force ordinary private-endpoint traffic through a firewall? **Answer:** No. Enable the relevant endpoint subnet policy and use an eligible prefix under the documented endpoint-routing exception.
+45. Does every current PLS design require a Standard Load Balancer? **Answer:** The conventional design does; Direct Connect public preview has a different destination model and explicit restrictions.
+46. What happens after an admin Allow when an NSG denies? **Answer:** NSG evaluation still occurs and denies; Always Allow has different terminating semantics.
+47. Does a lower-numbered Firewall application rule outrank a matching network rule? **Answer:** No. Rule-type processing order still evaluates network rules before application rules.
+48. Are Front Door IP filtering alone or an unrestricted FDID header check enough? **Answer:** Use both for a public origin: address filtering constrains the sender network and the expected FDID identifies the intended Front Door profile.
 
 ## 10. Readiness checklist
 
@@ -623,13 +769,15 @@ This is a curated starting set, not a complete list. Do **not** consume every re
 |---|---|---:|---|
 | [Microsoft Learn AZ-700 course](https://learn.microsoft.com/en-us/training/courses/az-700t00) | Free self-directed content; instructor delivery varies | Published: 3 instructor-led days; plan 18–28 hours reading or 30–45 with labs | Best official objective-aligned spine |
 | [Microsoft free Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification) | Free account | Plan 45–90 minutes including review | Baseline and gap finding; not a substitute for packet-path labs |
-| [John Savill AZ-700 Study Super Guide](https://www.youtube.com/watch?v=nVZYDhB_M64) | Free | Published: about 2h 50m; plan 4–6 hours with pauses and current-objective reconciliation | High-density visual review; recording predates July 2026 additions |
+| [John Savill AZ-700 Study Super Guide](https://www.youtube.com/watch?v=nVZYDhB_M64) | Free | Earlier catalog estimate: about 2h 50m, not reverified in this pass; plan 4–6 hours with pauses and current-objective reconciliation | High-density visual review; recording predates July 2026 additions |
 | [John Savill AZ-700 whiteboard](https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png) | Free public GitHub resource | Plan 1–2 hours to annotate and redraw | Visual recall companion; check all terms against current docs |
-| [Pluralsight AZ-700 certification path](https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700) | Paid/trial or organization access | Published: 44 hours including legacy course, seven current courses and one lab; plan 18–30 hours if selecting the refreshed path only | Modular 2025–2026 videos, lab and practice exam; avoid duplicating legacy/current series |
-| [O'Reilly AZ-700 course by Kirk Whetton](https://www.oreilly.com/videos/azure-network-engineer/0642572086336/) | Paid subscription | Published: 11h 2m; plan 16–24 hours with sandbox and notes | Current detailed video alternative with quizzes/sandbox |
+| [Pluralsight AZ-700 certification path](https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700) | Paid/trial or organization access | Header: 44 hours; seven courses total, including one legacy course, plus one lab. Refreshed courses total 11h 08m, or 11h 38m with the lab; plan 18–30 hours with practice | Modular 2025–2026 videos, lab and practice exam; avoid duplicating legacy/current series |
+| [O'Reilly AZ-700 course by Kirk Whetton](https://www.oreilly.com/videos/azure-network-engineer/0642572086336/) | Paid subscription | Published: 11h 2m; plan 16–24 hours with sandbox and notes | July 2025 video alternative with quizzes/sandbox; reconcile against July 2026 objectives |
 | [O'Reilly/Packt Azure Networking book](https://www.oreilly.com/library/view/designing-and-implementing/9781803242033/) | Paid subscription/book | Published: 524 pages / platform estimate 11h 20m; plan 18–30 hours with exercises | Deep hands-on reference; 2023 publication needs current-doc checks |
 | [Udemy AZ-700 course by Alan Rodrigues](https://www.udemy.com/course/azure-exam-700/) | Paid; frequent discounts | Published: 33h 23m and updated March 2026; plan 40–55 hours with labs | Extensive video/lab spine; compare with July 2026 objective additions |
 | [Whizlabs AZ-700 course and practice resources](https://www.whizlabs.com/microsoft-azure-exam-az-700/) | Paid; samples may be free | Plan 12–25 hours based on selected video, lab and practice components | Targeted exercises and assessment; verify current bundle details |
 | [MeasureUp AZ-700 practice test](https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html) | Paid; free demo available | Plan 3–6 hours across timed attempt and explanation review | 118-question independent bank; page showed January 2025 update, so verify July 2026 alignment |
 
 Practice products should contain independently authored questions and explanations, not recalled live-exam content. Use results by objective domain, reproduce failures in a lab, revisit primary documentation, then retest with unseen questions.
+
+**Catalog check, September 28:** Official course metadata lists three instructor days and eight languages. Pluralsight’s six refreshed courses plus the 30-minute lab total 11h 38m; adding its 32h 27m legacy course yields 44h 05m, rounded to 44 hours in the header. O’Reilly public browser metadata confirms Kirk Whetton’s July 2025 11h 02m course and David Okeyode’s August 2023, 524-page book (11h 20m reading estimate). Udemy lists 13 sections, 368 lectures, 33h 23m and March 2026. Direct O’Reilly/Udemy retrieval was blocked; public metadata does not verify paid lessons. MeasureUp still lists 118 questions and January 2025. Savill media and Whizlabs bundle contents were not independently verified or consumed.

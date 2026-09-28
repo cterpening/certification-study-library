@@ -2051,6 +2051,29 @@ This guide is an independent synthesis of public sources. It does not reproduce 
 
 Only the noted public sections were reviewed; linked sample repositories and cloud commands were not executed. Treat examples and launch posts as starting points to evaluate against the current primary documentation.
 
+### AZ-700 — Designing and Implementing Microsoft Azure Networking Solutions
+
+Resource details from the [AZ-700 guide](../guides/AZ-700-designing-implementing-azure-networking-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use current documentation for weak objectives, build and break the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior networking experience, gateway deployment time, exercises, cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Microsoft Learn AZ-700 course](https://learn.microsoft.com/en-us/training/courses/az-700t00) | Free self-directed content; instructor delivery varies | Published: 3 instructor-led days; plan 18–28 hours reading or 30–45 with labs | Best official objective-aligned spine |
+| [Microsoft free Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/?practice-assessment-type=certification) | Free account | Plan 45–90 minutes including review | Baseline and gap finding; not a substitute for packet-path labs |
+| [John Savill AZ-700 Study Super Guide](https://www.youtube.com/watch?v=nVZYDhB_M64) | Free | Earlier catalog estimate: about 2h 50m, not reverified in this pass; plan 4–6 hours with pauses and current-objective reconciliation | High-density visual review; recording predates July 2026 additions |
+| [John Savill AZ-700 whiteboard](https://github.com/johnthebrit/CertificationMaterials/blob/main/whiteboards/AZ-700-Whiteboard.png) | Free public GitHub resource | Plan 1–2 hours to annotate and redraw | Visual recall companion; check all terms against current docs |
+| [Pluralsight AZ-700 certification path](https://www.pluralsight.com/paths/microsoft-certified-designing-and-implementing-microsoft-azure-networking-solutions-az-700) | Paid/trial or organization access | Header: 44 hours; seven courses total, including one legacy course, plus one lab. Refreshed courses total 11h 08m, or 11h 38m with the lab; plan 18–30 hours with practice | Modular 2025–2026 videos, lab and practice exam; avoid duplicating legacy/current series |
+| [O'Reilly AZ-700 course by Kirk Whetton](https://www.oreilly.com/videos/azure-network-engineer/0642572086336/) | Paid subscription | Published: 11h 2m; plan 16–24 hours with sandbox and notes | July 2025 video alternative with quizzes/sandbox; reconcile against July 2026 objectives |
+| [O'Reilly/Packt Azure Networking book](https://www.oreilly.com/library/view/designing-and-implementing/9781803242033/) | Paid subscription/book | Published: 524 pages / platform estimate 11h 20m; plan 18–30 hours with exercises | Deep hands-on reference; 2023 publication needs current-doc checks |
+| [Udemy AZ-700 course by Alan Rodrigues](https://www.udemy.com/course/azure-exam-700/) | Paid; frequent discounts | Published: 33h 23m and updated March 2026; plan 40–55 hours with labs | Extensive video/lab spine; compare with July 2026 objective additions |
+| [Whizlabs AZ-700 course and practice resources](https://www.whizlabs.com/microsoft-azure-exam-az-700/) | Paid; samples may be free | Plan 12–25 hours based on selected video, lab and practice components | Targeted exercises and assessment; verify current bundle details |
+| [MeasureUp AZ-700 practice test](https://www.measureup.com/microsoft-practice-test-az-700-designing-and-implementing-azure-networking-solutions.html) | Paid; free demo available | Plan 3–6 hours across timed attempt and explanation review | 118-question independent bank; page showed January 2025 update, so verify July 2026 alignment |
+
+Practice products should contain independently authored questions and explanations, not recalled live-exam content. Use results by objective domain, reproduce failures in a lab, revisit primary documentation, then retest with unseen questions.
+
+**Catalog check, September 28:** Official course metadata lists three instructor days and eight languages. Pluralsight’s six refreshed courses plus the 30-minute lab total 11h 38m; adding its 32h 27m legacy course yields 44h 05m, rounded to 44 hours in the header. O’Reilly public browser metadata confirms Kirk Whetton’s July 2025 11h 02m course and David Okeyode’s August 2023, 524-page book (11h 20m reading estimate). Udemy lists 13 sections, 368 lectures, 33h 23m and March 2026. Direct O’Reilly/Udemy retrieval was blocked; public metadata does not verify paid lessons. MeasureUp still lists 118 questions and January 2025. Savill media and Whizlabs bundle contents were not independently verified or consumed.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

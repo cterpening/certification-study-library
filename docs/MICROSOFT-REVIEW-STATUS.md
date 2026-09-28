@@ -4,9 +4,9 @@ As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 24 have review work or unresolved blockers; 10 are eligible for review now.
+50 guides; 23 have review work or unresolved blockers; 9 are eligible for review now.
 
-Next batch: AZ-700, AZ-900, DP-900.
+Next batch: AZ-900, DP-900, MB-230.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
@@ -42,6 +42,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | reviewed | 2026-09-27 | 2026-10-01 | offline-only |
 | [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | reviewed | 2026-09-27 | 2026-10-01 | offline-only |
 | [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | reviewed | 2026-09-27 | 2026-10-01 | offline-only |
+| [AZ-700](../guides/AZ-700-designing-implementing-azure-networking-solutions.md) | reviewed | 2026-09-28 | 2026-10-05 | offline-only |
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | reviewed | 2026-09-27 | 2026-10-06 | offline-only |
 | [AB-730](../guides/AB-730-ai-business-professional.md) | reviewed | 2026-09-27 | 2026-10-08 | offline-only |
 | [AB-731](../guides/AB-731-ai-transformation-leader.md) | reviewed | 2026-09-28 | 2026-10-12 | offline-only |
@@ -50,7 +51,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [AZ-104](../guides/AZ-104-microsoft-azure-administrator.md) | reviewed | 2026-09-28 | 2026-10-12 | offline-only |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-09-27 | 2026-10-14 | offline-only |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-09-27 | 2026-10-16 | offline-only |
-| [AZ-700](../guides/AZ-700-designing-implementing-azure-networking-solutions.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-900](../guides/AZ-900-microsoft-azure-fundamentals.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [DP-900](../guides/DP-900-microsoft-azure-data-fundamentals.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [MB-230](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md) | pending | Pending | 2026-09-28 | not-recorded |

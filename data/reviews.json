@@ -980,34 +980,54 @@
       "notes": "Whole guide and 49 unchanged objectives mapped across twelve groups. Add seven worked examples, ten labs, 48 explained checks and three bounded blog exercises. Refresh logging, vault/API recovery, data and region boundaries, Service Bus replication/idempotency/SDKs, Functions, APIM, App Configuration, Redis, Front Door and outbound guidance. Thirty-eight offline assertions including one local SQLite transaction/replay example passed; no Azure or paid-content execution. Independent human review pending. See docs/research/2026-09-28-az-305-deep-review.md"
     },
     {
-      "id": "az-700-2026-08-31-source-validation",
+      "id": "az-700-2026-09-28-source-validation",
       "exam_code": "AZ-700",
       "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-07",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
       "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
       "objective_coverage": [
         {
           "objective_group": "Design and implement core networking infrastructure",
-          "guide_sections": ["Sections 1–2", "Hub-and-spoke scenario", "Labs 1–3 and 7"]
+          "guide_sections": [
+            "Sections 1–2",
+            "Hub-and-spoke scenario",
+            "Labs 1–3 and 7"
+          ]
         },
         {
           "objective_group": "Design, implement, and manage connectivity services",
-          "guide_sections": ["Section 3", "Hub-and-spoke scenario", "Lab 4"]
+          "guide_sections": [
+            "Section 3",
+            "Hub-and-spoke scenario",
+            "Lab 4"
+          ]
         },
         {
           "objective_group": "Design and implement application delivery services",
-          "guide_sections": ["Section 4", "Global web scenario", "Lab 5"]
+          "guide_sections": [
+            "Section 4",
+            "Global web scenario",
+            "Lab 5"
+          ]
         },
         {
           "objective_group": "Design and implement private access to Azure services",
-          "guide_sections": ["Section 5", "Hub-and-spoke scenario", "Lab 6"]
+          "guide_sections": [
+            "Section 5",
+            "Hub-and-spoke scenario",
+            "Lab 6"
+          ]
         },
         {
           "objective_group": "Design and implement Azure network security services",
-          "guide_sections": ["Section 6", "Integrated scenarios", "Labs 7–8"]
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios",
+            "Labs 7–8"
+          ]
         }
       ],
       "checks": {
@@ -1018,12 +1038,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 31,
-        "reachable": 28,
+        "unique_external_links": 61,
+        "reachable": 58,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "All five weighted July 27, 2026 objective groups and their subobjectives are mapped to a bidirectional packet-walk method, service comparisons, failure modes, two scenarios, eight labs, and 24 checks. Section 3 and Lab 4 provide requirements, configuration, validation, and troubleshooting depth for Azure Network Adapter and Azure Extended Network. The September 7 pass adds current virtual network flow-log, NSG flow-log retirement, and agentless Connection troubleshoot preview evidence. All 31 cited URLs are cataloged: 28 reachable, three O'Reilly/Udemy pages access-blocked, and none missing."
+      "notes": "Whole guide and 136 unchanged objectives mapped across sixteen groups. Add six worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh NAT, DNS, routing, VPN migration/Always On, ExpressRoute backup, WAN intent, TLS, private-access preview, policy behavior and lifecycle; reconcile learning catalogs. Thirty offline assertions passed. No cloud deployment, migration, packet capture, failover drill, assessment or paid-content execution; independent human review pending. See docs/research/2026-09-28-az-700-deep-review.md"
     },
     {
       "id": "az-120-2026-09-28-source-validation",
@@ -11094,6 +11114,72 @@
         "missing_or_error": 0
       },
       "notes": "All five weighted July 27, 2026 objective groups and every published subobjective are mapped to an end-to-end work-to-production evidence model, comparisons, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 40 cited URLs are exact source-catalog entries; one Udemy page returned HTTP 403 and is treated as access-blocked rather than missing. The guide covers both GitHub and Azure DevOps, including Git/branch/repository scaling, package and test strategy, reusable YAML, hosted and self-hosted execution, progressive delivery, database compatibility, IaC and desired state, identity federation, security scanning, OpenTelemetry, KQL and delivery-system metrics. It explicitly records the September 30, 2027 Azure Automation State Configuration retirement and the July 1, 2027 applicable Azure DevOps WIF issuer retirement with their current transition destinations."
+    },
+    {
+      "id": "az-700-2026-08-31-source-validation",
+      "exam_code": "AZ-700",
+      "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
+      "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement core networking infrastructure",
+          "guide_sections": [
+            "Sections 1–2",
+            "Hub-and-spoke scenario",
+            "Labs 1–3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Design, implement, and manage connectivity services",
+          "guide_sections": [
+            "Section 3",
+            "Hub-and-spoke scenario",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Design and implement application delivery services",
+          "guide_sections": [
+            "Section 4",
+            "Global web scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Design and implement private access to Azure services",
+          "guide_sections": [
+            "Section 5",
+            "Hub-and-spoke scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Design and implement Azure network security services",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 28,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted July 27, 2026 objective groups and their subobjectives are mapped to a bidirectional packet-walk method, service comparisons, failure modes, two scenarios, eight labs, and 24 checks. Section 3 and Lab 4 provide requirements, configuration, validation, and troubleshooting depth for Azure Network Adapter and Azure Extended Network. The September 7 pass adds current virtual network flow-log, NSG flow-log retirement, and agentless Connection troubleshoot preview evidence. All 31 cited URLs are cataloged: 28 reachable, three O'Reilly/Udemy pages access-blocked, and none missing."
     }
   ]
 }

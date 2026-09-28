@@ -186,6 +186,8 @@ The guide maps every April 17, 2026 objective bullet to an end-to-end SAP landsc
 
 ## AZ-700 coverage record
 
+The September 28 [deep review](research/2026-09-28-az-700-deep-review.md) maps 136 detailed objectives. Whole guide and 136 unchanged objectives mapped across sixteen groups. Add six worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh NAT, DNS, routing, VPN migration/Always On, ExpressRoute backup, WAN intent, TLS, private-access preview, policy behavior and lifecycle; reconcile learning catalogs. Thirty offline assertions passed. No cloud deployment, migration, packet capture, failover drill, assessment or paid-content execution; independent human review pending. Current guide citations: 61 registered, 58 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Design and implement core networking infrastructure | Sections 1–2, hub-and-spoke scenario, and Labs 1–3 and 7 |
