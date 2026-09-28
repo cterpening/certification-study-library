@@ -2699,6 +2699,8 @@ The review validates the 50-minute live practical baseline and maps every publis
 
 ## MO-210 coverage record
 
+The September 28 [deep review](research/2026-09-28-mo-210-deep-review.md) maps 65 detailed objectives. Read the entire guide and all 65 PDF tasks; correct the named-function scope and add six examples, ten proposed labs and 32 answered checks. 20 independent Python/Decimal assertions verify expected arithmetic, sets and text outcomes, not Excel engine behavior. Five-domain page baseline unchanged; no desktop execution and human review pending. Current guide citations: 16 registered, 16 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 4, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: worksheets/workbooks; cells/ranges; tables; formulas/functions; charts

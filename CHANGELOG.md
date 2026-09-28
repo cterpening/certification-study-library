@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: review all 65 MO-210 tasks, correct named-function scope and add six worked examples, ten labs and 32 answered checks with independently checked expected results. See the [Excel Associate report](docs/research/2026-09-28-mo-210-deep-review.md).
+
 - September 28, 2026: review MO-111 against all 47 PDF tasks, expanding templates, fields, macro boundaries and merge validation with five examples, nine labs and 32 answered checks. See the [Word Expert report](docs/research/2026-09-28-mo-111-deep-review.md).
 
 - September 28, 2026: review MO-110 against all 70 detailed PDF tasks, add practical Word guidance and include Microsoft Office in the recurring review queue. Refresh the Microsoft portfolio retirement/objective scan; existing notices and future revisions remain unchanged. See the [MO-110 report](docs/research/2026-09-28-mo-110-deep-review.md).

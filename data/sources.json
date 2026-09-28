@@ -3,6 +3,188 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mo210-skills-pdf",
+      "title": "MO-210 detailed skills outline (credential-linked PDF)",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: All65 tasks on three pages read. Official credential links a misleading security-analyst filename whose actual content is MO-210; preserve URL and byte hash. Five-domain page baseline unchanged. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-dynamic-arrays",
+      "title": "Dynamic arrays and spilled behavior",
+      "url": "https://support.microsoft.com/en-us/excel/dynamic-array-formulas-and-spilled-array-behavior",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Main spill behavior, editable anchor, table exclusion and blocked output guidance read; no Excel engine run. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-countblank",
+      "title": "COUNTBLANK function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/countblank-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Complete syntax, empty-string and zero-value rules read. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-counta",
+      "title": "COUNTA function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/counta-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Main syntax and remarks read, including error and empty-string inclusion. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-sequence",
+      "title": "SEQUENCE function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/sequence-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Main syntax and row/column/start/step defaults plus spill and workbook limits read. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-randbetween",
+      "title": "RANDBETWEEN function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/randbetween-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Complete syntax, inclusive bounds and recalculation guidance read. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-sort",
+      "title": "SORT function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/sort-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Main syntax and returned-array behavior read; example combinations with FILTER are not extra claimed exam objectives. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-unique",
+      "title": "UNIQUE function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/unique-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Main syntax, distinct versus exactly_once and examples read; no claim that input cells are deleted. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-leading-zeroes",
+      "title": "Keeping leading zeros and large numbers",
+      "url": "https://support.microsoft.com/en-us/excel/keeping-leading-zeros-and-large-numbers",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Automatic conversion scope and import-as-text guidance read; custom formats cannot recover lost source information. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-comments-notes",
+      "title": "Threaded comments versus notes",
+      "url": "https://support.microsoft.com/en-us/excel/the-difference-between-threaded-comments-and-notes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Main distinction, resolution/reopening and annotation behavior read; complete platform comparison not audited. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-conversions-blog",
+      "title": "Control data conversions in Excel for Windows and Mac",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/control-data-conversions-in-excel-for-windows-and-mac/4215336",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Entire public article body read from embedded JSON. Chirag Fifadra,originalOctober19,2023; Windows2309/Mac16.77 boundaries,macro exclusion. Not new exam scope; embedded media not viewed. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-textjoin",
+      "title": "TEXTJOIN function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/textjoin-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Syntax, delimiter and ignore-empty argument plus examples read. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "excel-table-totals",
+      "title": "Total the data in an Excel table",
+      "url": "https://support.microsoft.com/en-us/excel/get-started/total-the-data-in-an-excel-table",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "September 28 MO-210 deep review: Main Total Row workflow and SUBTOTAL formula behavior read; videos not viewed. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mo111-skills-pdf",
       "title": "MO-111 detailed skills outline",
       "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-111_OD_MOS365_WordExpert.pdf",
@@ -167,9 +349,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "MO-110",
-        "MO-111"
+        "MO-111",
+        "MO-210"
       ],
-      "notes": "September 28 MO-110 deep review: Complete main policy read; current MOS/MCE five-year expiration. No claim about retroactive effect on historical credentials. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution. September 28 MO-111 deep review: Current main policy read; MOS five-year expiration with no retroactive inference about an individual credential. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MO-110 deep review: Complete main policy read; current MOS/MCE five-year expiration. No claim about retroactive effect on historical credentials. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution. September 28 MO-111 deep review: Current main policy read; MOS five-year expiration with no retroactive inference about an individual credential. See docs/research/2026-09-28-mo-111-deep-review.md No live infrastructure execution. September 28 MO-210 deep review: Current MOS five-year policy read; no historical individual-date inference. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
     },
     {
       "id": "word-repeated-headers",
@@ -40769,9 +40952,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-09-04",
-      "supported_exams": ["MO-210"],
-      "notes": "Canonical public exam page and assessed-domain authority."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210"
+      ],
+      "notes": "Canonical public exam page and assessed-domain authority. September 28 MO-210 deep review: Complete credential page read:50 minutes,15 languages,150-hour recommendation,no dedicated Learn collection,60-month label,no retirement. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mo-310-blueprint",
@@ -40834,9 +41019,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-04",
-      "supported_exams": ["MO-210", "MO-211"],
-      "notes": "Official task-oriented documentation for Excel features used in the guides."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-210",
+        "MO-211"
+      ],
+      "notes": "Official task-oriented documentation for Excel features used in the guides. September 28 MO-210 deep review: Help directory inspected; linked units not comprehensively read. See docs/research/2026-09-28-mo-210-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-powerpoint-help",

@@ -2223,6 +2223,21 @@ This is a selective learning path, not a complete list of Word Expert resources.
 | Microsoft task references linked above | Public; focused task practice | **3–4 hours**, included in targeted practice above |
 | [Ali Forelli’s paste article](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/updated-default-paste-option-in-word-for-windows/4225168/) | Public; bounded historical workflow explanation | **15 minutes** plus a comparison exercise |
 
+### MO-210 — Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)
+
+Resource details from the [MO-210 guide](../guides/MO-210-microsoft-excel-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Excel resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MO-210 page](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) | Public | **20 minutes** for scope and logistics |
+| [Microsoft Excel help and learning](https://support.microsoft.com/en-us/excel) | Public | **10–15 hours** for formulas, tables, formatting, charts, and troubleshooting |
+| Ten labs in this guide | Microsoft 365 Apps required | **12–16 hours** plus two timed repeats |
+| [Detailed skills PDF](https://arch-center.azureedge.net/Learning/Credentials/microsoft-certified-security-operations-analyst-skills-measured.pdf) | Public; confirm the MO-210 heading inside the file | **30–45 minutes** |
+| Microsoft function/task references linked above | Public; reproduce expected outputs | **3–4 hours**, included in targeted practice above |
+| [Data-conversion article](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/control-data-conversions-in-excel-for-windows-and-mac/4215336) | Public; bounded historical workflow explanation | **15 minutes** plus an import comparison |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

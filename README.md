@@ -100,7 +100,7 @@ These are substantial AI-assisted guides, not finished certification products. A
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
 | MO-110 | [Word Associate (Microsoft 365 Apps)](guides/MO-110-microsoft-word-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) | Deep review completed; human review pending |
-| MO-210 | [Excel Associate (Microsoft 365 Apps)](guides/MO-210-microsoft-excel-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) | Sources/objectives checked; human review pending |
+| MO-210 | [Excel Associate (Microsoft 365 Apps)](guides/MO-210-microsoft-excel-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) | Deep review completed; human review pending |
 | MO-310 | [PowerPoint Associate (Microsoft 365 Apps)](guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) | Sources/objectives checked; human review pending |
 | MO-111 | [Word Expert (Microsoft 365 Apps)](guides/MO-111-microsoft-word-expert-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) | Deep review completed; human review pending |
 | MO-211 | [Excel Expert (Microsoft 365 Apps)](guides/MO-211-microsoft-excel-expert.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/) | Sources/objectives checked; human review pending |
