@@ -667,22 +667,35 @@
       "exam_code": "AB-900",
       "guide_path": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ab-900-official-objectives.txt",
       "blueprint_snapshot_sha256": "8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90",
       "objective_coverage": [
         {
           "objective_group": "Identify the core features and objects of Microsoft 365 services",
-          "guide_sections": ["Parts 1–3", "Part 7 — Objective-to-scenario drill", "Labs 1–2"]
+          "guide_sections": [
+            "Parts 1–3",
+            "Part 7 — Objective-to-scenario drill",
+            "Labs 1–2"
+          ]
         },
         {
           "objective_group": "Understand data protection and governance tasks for Microsoft 365 and Copilot",
-          "guide_sections": ["Parts 4–5", "Part 4 — Discover and classify data", "Part 7 — Objective-to-scenario drill", "Lab 4 and knowledge check 7"]
+          "guide_sections": [
+            "Parts 4–5",
+            "Part 4 — Discover and classify data",
+            "Part 7 — Objective-to-scenario drill",
+            "Lab 4 and knowledge check 7"
+          ]
         },
         {
           "objective_group": "Perform basic administrative tasks for Copilot and agents",
-          "guide_sections": ["Part 6 — Agent lifecycle", "Part 7 — Objective-to-scenario drill", "Labs 5–6 and knowledge check 8"]
+          "guide_sections": [
+            "Part 6 — Agent lifecycle",
+            "Part 7 — Objective-to-scenario drill",
+            "Labs 5–6 and knowledge check 8"
+          ]
         }
       ],
       "checks": {
@@ -693,12 +706,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 39,
-        "reachable": 36,
+        "unique_external_links": 42,
+        "reachable": 39,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "All three weighted objective groups and their July 22, 2026 bullets are mapped to administrative responsibility boundaries, worked request/evidence flows, an objective drill, six labs, and eight checks. The repaired coverage explicitly teaches Purview Data Explorer and the Agent Builder create, test, private-by-default, approval, and distribution boundaries. All 39 cited URLs are cataloged: 36 reachable and three O'Reilly/Udemy pages access-blocked; none are missing. The September 7 watch separates Agent 365 product GA from capability rollout and adds the Copilot release feed. September 17, 2026 lifecycle check: added the announced October revision and current date evidence to the guide and catalog. This is a bounded notice update; historical objective snapshot and full-review date remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+      "notes": "Complete guide read and all 53 published October objectives in ten groups mapped. Preserve July baseline and expected future-page hash difference. Add four worked examples, a seventh verification lab, answers to eight existing questions, six new answers and one qualified blog/transcript reading. Clarify permission intersections, agent/file revocation, scheduled-prompt lifecycle, fixed environment DLP, PAYG alerts, pending versions and MCP support. No tenant or infrastructure execution; human review pending. See docs/research/2026-09-27-ab-900-deep-review.md"
     },
     {
       "id": "terraform-authoring-operations-professional-2026-09-06-source-validation",

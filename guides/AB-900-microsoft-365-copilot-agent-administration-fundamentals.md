@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-27
 ---
 
 # AB-900 Microsoft 365 Copilot and Agent Administration Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 22, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). The [official AB-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 53 published October objectives were reviewed September 27, 2026. The July baseline remains in place until the announced revision. See the [deep-review findings](../docs/research/2026-09-27-ab-900-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). The [official AB-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change:** Microsoft publishes an October 14, 2026 revision, including the Enterprise applications wording. Domain weights remain unchanged. Checked September 17, 2026. This guide still uses the July baseline; compare the official revision for an October appointment.<br>
+**Upcoming blueprint change:** The live study-guide page now displays the October 14, 2026 revision, including Enterprise applications wording. Domain weights remain unchanged. Checked September 27, 2026. This guide retains the July baseline; Section 2 already distinguishes app registrations from tenant service principals for the October wording.<br>
 **Official source:** [AB-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900)
 
 ## How to use this guide
@@ -36,9 +36,11 @@ Avoid “fixes” that erase evidence or lower protection broadly. If one user c
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-### Living-guide watch — September 7, 2026
+### Living-guide watch — September 27, 2026
 
 Microsoft [announced Agent 365 generally available](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/), but product-level GA does not make every registry, connector, identity, or governance feature generally available in every tenant. Follow the [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes), preserve feature-specific preview and rollout labels, and confirm the owning admin surface before changing a tenant.
+
+The September 23 release notes describe a dedicated Copilot **License Requests** page. A request, its approval, the assigned license/service plan and successful feature access are separate evidence points. Rollout is gradual; an absent menu is not proof that a tenant has no requests or that a user lacks a license.
 
 No blueprint change is inferred from those product updates. Pluralsight, O'Reilly, Udemy, John Savill, and Whizlabs resources in Places to learn provide diverse explanations; use them for reinforcement, then resolve disagreements with the blueprint and current Microsoft documentation. Do not use any source that reproduces recalled exam questions.
 
@@ -261,6 +263,8 @@ Use an oversharing remediation loop:
 
 > **Related item:** Restricted Content Discovery affects discovery in supported search/Copilot scenarios and is useful as temporary containment; restricted access control changes whether an out-of-group user can access the site/content. Know whether the requirement is “do not surface during review” or “deny access.”
 
+**Worked example — two gates for restricted site access:** Ana has file permission and belongs to an allowed restriction group; Ben has file permission but is outside that group; Cy belongs to the group but has no file permission. Ana passes both gates, Ben fails the restriction, and Cy still needs an ordinary permission grant. Group inclusion does not create file permission. Current guidance also requires separate restriction configuration for a team's private/shared channel sites; restricting the parent team site does not cover them automatically.
+
 ---
 
 ## 6. Copilot and agent administration
@@ -277,7 +281,9 @@ Never memorize a price for the exam. Understand the decision:
 - who owns the Azure subscription/billing policy if pay-as-you-go is used;
 - how usage, capacity, budget, and business value will be monitored.
 
-The [Copilot pay-as-you-go setup](https://learn.microsoft.com/en-us/microsoft-365/copilot/pay-as-you-go/setup) uses a billing policy associated with eligible users/groups and a supported Copilot service, with Azure subscription/resource-group prerequisites under the current model. A budget can be an alerting/management mechanism rather than a hard stop, so monitor actual spending and know how to disable the service. **VERIFY CURRENT:** eligible services, meters/credits, included entitlements, roles, limits, propagation, billing surfaces, and budget behavior.
+The [Copilot pay-as-you-go setup](https://learn.microsoft.com/en-us/microsoft-365/copilot/pay-as-you-go/setup) uses a billing policy associated with eligible users/groups and a supported Copilot service, with Azure subscription/resource-group prerequisites under the current model. Its budget sends notifications; it does **not** enforce a spending cap. Disabling PAYG can take up to two hours to stop access for users of an active agent. Monitor consumption and verify actual disablement. **VERIFY CURRENT:** eligible services, meters/credits, included entitlements, roles, limits, propagation, billing surfaces, and budget behavior.
+
+**Worked example — alert threshold versus spending cap:** A fictional billing policy has a $100 budget and records $120 of usage. The $20 overrun is compatible with an alert-only budget; it is not evidence that a hard cap malfunctioned. Record the notification owner, response time, disabling control and actual post-change usage. These figures illustrate arithmetic, not product pricing or a promise about reporting latency.
 
 Separate four decisions: a base Microsoft 365 license supplies workload access; a Microsoft 365 Copilot user license supplies eligible per-user Copilot capabilities; pay-as-you-go enables eligible metered scenarios; an agent can also consume capacity or require its own prerequisites. Never infer data permission from any of these entitlements.
 
@@ -294,6 +300,10 @@ Administrators manage licenses, settings, release controls, agents, reporting, a
 Measure a chain: **eligible → assigned → activated → active use → scenario adoption → quality/safety → business outcome → sustained value**. A low activation rate is a deployment/adoption signal; a high prompt count is not an ROI calculation. Pair usage data with process measures such as cycle time, rework, decision quality, satisfaction, and risk incidents.
 
 Users can save, share, schedule, and delete prompts or prompt-related content in supported current experiences. Those actions have different objects and consequences: deleting a saved prompt/template does not necessarily delete historical interaction records; deleting a scheduled definition is different from deleting past runs; sharing a prompt can expose instructions without granting its referenced data. **VERIFY CURRENT:** Prompt Gallery/Copilot/Cowork surfaces, scheduling limits, retention, export, sharing scope, and administrative controls.
+
+**Worked example — hiding scheduling is not stopping a schedule:** An administrator disables the relevant connected-experiences setting and the scheduling icon disappears. The [current scheduled-prompts guidance](https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts) says existing schedules can continue until they finish and past sessions remain. Identify and manage the actual schedule, then verify future runs. Since August 2026, this experience uses **Connected Experiences**, not Optional Connected Experiences; disabling it affects other Office features too. Legacy preview schedules remain managed in Power Automate. Identify the runtime before borrowing a Cowork or legacy procedure.
+
+The supporting [Microsoft 365 Power Platform environment](https://learn.microsoft.com/en-us/microsoft-365/copilot/scheduled-prompts-environment) is automatically provisioned, has a fixed connector/DLP policy and does not accept ordinary tenant/environment DLP customization. Users do not receive general Environment Maker rights by default. Deleting the environment is not a durable disablement control because later use can recreate it. Keep this special environment distinct from an ordinary Copilot Studio development environment.
 
 ### Agent lifecycle
 
@@ -322,6 +332,10 @@ The [agent workload in the Microsoft 365 admin center](https://learn.microsoft.c
 
 Use approval as a risk decision, not a publishing click. Review the agent's owner/publisher, audience, data/knowledge, tools and MCP servers, delegated or app-only permissions, DLP, external data destinations, cost model, evaluation, incident disablement, and retirement. The current [agent request workflow](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-requests) can expose pending review/update/activation decisions and audience scoping; exact states and actions are volatile.
 
+**Worked example — revoke both access paths:** An agent owner shares a FAQ agent and selected SharePoint files with a colleague. Later, removing the colleague from the agent does not remove the file permissions granted separately. Review agent access and source ACLs independently. Current Agent Builder sharing guidance also says restrictions on new sharing do not revoke previously shared access. Inventory and remediate existing grants; changing a future-sharing toggle is not retrospective cleanup.
+
+For a submitted store update awaiting approval, the previously approved version remains usable. Review the permission/knowledge/tool difference as well as the new version's tests. If the existing version poses an immediate problem, separately use its supported containment control; rejecting an update does not itself withdraw that earlier version. Direct sharing, owner-controlled org-wide sharing and an administrator-published catalog version have distinct management paths.
+
 Monitor at two levels. The Microsoft 365 admin center/Agent 365 layer tracks the estate, ownership, deployment, access, risk, lifecycle, and operational insights. The Power Platform/Copilot Studio layer tracks the authoring environment, capacity, conversation/outcome analytics, tools, flow failures, and maker lifecycle. Evidence can overlap, but the portals do not have identical inventory or purpose.
 
 > **Related item:** An agent is both an application and a potential actor. Govern its software supply chain, identity, knowledge permissions, tools, action authority, and operational behavior—not only its conversational content.
@@ -341,6 +355,8 @@ For an agent action, ask:
 A tool description helps the model select and call a capability. It does not enforce permission or business rules. Use least privilege, narrow actions, approval for consequential work, idempotency, timeouts, and audit evidence.
 
 [Agent tool administration](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-tools-for-agent) can include registry and request/approval controls for supported tools such as MCP servers. Tool approval and agent approval answer different questions: a tool may be allowed in the tenant while a particular agent should not receive it, and an approved agent still needs narrow downstream authorization.
+
+**Current support boundary:** The BYO remote MCP flow in that guidance remains preview and lists supported client surfaces. It currently excludes Microsoft 365 declarative agents and Foundry from that specific flow. Do not infer compatibility with every agent merely from successful registry approval; check the exact client, authentication method and invocation evidence. No MCP server was registered or invoked for this review.
 
 ---
 
@@ -408,6 +424,12 @@ In a permitted sandbox, use Agent Builder or a documented equivalent to create a
 
 Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate action. Document owner, audience, data, permissions, DLP, action limits, approval, evaluation, monitoring, capacity, incident disablement, and retirement.
 
+### Lab 7: Prove what an administration change actually changed
+
+Complete a worksheet for the four worked examples: the restricted-site permission gates, alert-only budget, scheduled-prompt lifecycle and separate agent/file grants. For each, name the changed object, expected success and denial, remaining access or execution, authoritative setting, propagation check and rollback. Add a pending agent update and distinguish the submitted version from the version users can still run.
+
+Use synthetic identities and data. Without a licensed disposable tenant, mark the worksheet as tabletop only. In an authorized tenant, capture before/after permission and schedule state, lower-privileged results, audit/usage evidence and cleanup. A missing icon, accepted policy change or budget email does not alone establish the intended outcome. Do not enable paid consumption solely to demonstrate an alert.
+
 ---
 
 ## 9. Knowledge checks and distinctions
@@ -420,6 +442,26 @@ Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate 
 6. A sensitivity label protects a file, while retention preserves it. Why are both controls valid?
 7. Data Explorer shows a sensitive item. What does that prove, which roles expose its list or content, and why does Activity Explorer answer a different question?
 8. You tested a private FAQ agent successfully. Which separate creation, sharing, approval, deployment, source-permission, and cleanup decisions remain?
+
+### Answer checkpoints
+
+1. Coordinate session/access revocation, license/service lifecycle, data ownership/transfer and required retention. Blocking sign-in alone does not transfer or preserve every workload object.
+2. The user already had source access. Review the source's audience, links, memberships, ownership and applicable protection; repair inappropriate authorization and retest.
+3. Inspect the target identity, token/scopes, resource permission and relevant policy using request evidence. Connector allowance does not grant target-service authorization; 403 alone does not identify the precise cause.
+4. Measure a defined business outcome and baseline, such as time saved with equal quality, rework, satisfaction and risk. Activity counts alone do not prove value.
+5. Identify accountable owner/publisher, exact app-only access and purpose, target data, external destinations, evaluation, revocation and monitoring. Review the grant's scope before tenant consent.
+6. Sensitivity protection governs classification and permitted use; retention governs preservation/deletion. Neither automatically supplies the other's function.
+7. It proves an item appears in the supported classified/labeled snapshot, subject to coverage and timing. List and content viewer rights are separate; Activity Explorer describes events over time.
+8. Decide audience, sharing or catalog publication, approval/deployment path, source/tool rights, ownership, monitoring and cleanup. A private successful test is not authorization for broader release.
+
+### Current administration checks
+
+9. **Does adding Cy to a restricted-access group grant file access?** No. Cy must also have ordinary site/content permission. Both gates must pass.
+10. **Should a $100 PAYG budget stop usage at $100?** No. The documented budget notifies; it does not impose a hard spending cap.
+11. **Does removing an agent user remove their separately shared source-file access?** No. Review and revoke the source grant separately when appropriate.
+12. **Does disabling connected experiences cancel existing scheduled prompts?** No. Current guidance says existing schedules can continue; inventory and manage the actual schedule and verify runs.
+13. **Does rejecting an agent update remove the approved version?** No. Users can continue using the previous version; containment is a separate action.
+14. **Can ordinary environment DLP policy govern the scheduled-prompts Microsoft 365 environment?** No. This special environment has its own fixed policy; do not apply an ordinary maker-environment assumption.
 
 | Contrast | Remember |
 |---|---|
@@ -485,3 +527,9 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [Whizlabs — AB-900 course and practice tests](https://www.whizlabs.com/ab-900-microsoft-365-copilot-and-agent-administration/) | Paid course or subscription | About 3–6 hours for assessment and review; instructional time not published | Whizlabs identifies a mixed course/practice offering, but its public product page does not expose a reliable item count or total runtime; pair it with explanatory official learning |
 
 Whizlabs identifies its AB-900 listing as a course and practice-test offering, but its public page does not expose enough detail to validate the instructional depth. All assessment products above are gap-detection supplements, not technical authority. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
+
+### Focused blog and transcript reading
+
+[Agent management updates in the Copilot Control System](https://techcommunity.microsoft.com/blog/microsoftmechanicsblog/agent-management-updates-in-the-copilot-control-system/4414790), **Microsoft Mechanics, posted by Zachary-Cavanell, May 19, 2025; presented by Jeremy Chapman**. Estimate 15–25 minutes for the public article/transcript and a control map. It connects discovery, usage, deployment, billing and investigation. Its older navigation and message-based billing terminology must be reconciled with current Agent 365 and Copilot Credits documentation. Exercise: identify the separate evidence needed to approve an agent, authorize a tool and stop metered use. The article and transcript were read; the video was not played and tenant steps were not executed.
+
+The three O'Reilly/Udemy pages were access-blocked on September 27; retained durations are historical catalog observations. Public practice-assessment navigation was reachable, but no signed-in assessment session was completed. Recheck October wording and current feature support when selecting resources.

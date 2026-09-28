@@ -352,6 +352,8 @@ The review expanded the control-map premise into repeatable asset, actor, threat
 
 ## AB-900 coverage record
 
+The September 27 [deep review](research/2026-09-27-ab-900-deep-review.md) maps 53 detailed objectives. Complete guide read and all 53 published October objectives in ten groups mapped. Preserve July baseline and expected future-page hash difference. Add four worked examples, a seventh verification lab, answers to eight existing questions, six new answers and one qualified blog/transcript reading. Clarify permission intersections, agent/file revocation, scheduled-prompt lifecycle, fixed environment DLP, PAYG alerts, pending versions and MCP support. No tenant or infrastructure execution; human review pending. Current guide citations: 42 registered, 39 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Identify the core features and objects of Microsoft 365 services | Parts 1–3, objective-to-scenario drill, and Labs 1–2 |
