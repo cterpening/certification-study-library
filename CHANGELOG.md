@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [ANS-C01 deep review](docs/research/2026-09-28-ans-c01-deep-review.md): correct the passing score, map 177 detailed bullets, add four packet-path exercises, improve routing/multicast/controller coverage and flag App Mesh support end; retain vendor conflicts.
+
 - September 28, 2026: [SAP-C02 deep review](docs/research/2026-09-28-sap-c02-deep-review.md): map 187 knowledge/skill bullets, add four worked cases, qualify migration/platform availability and recovery articles, and preserve unresolved vendor dates.
 
 - September 28, 2026: review all 101 [DVA-C02 skills](docs/research/2026-09-28-dva-c02-deep-review.md), repair order-event reliability, distinguish partial retries, add 40 answers and four worked decisions, and flag X-Ray SDK maintenance. C02 delivery-date conflict remains.

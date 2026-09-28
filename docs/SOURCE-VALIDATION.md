@@ -1111,6 +1111,8 @@ The review reconciles the current four-domain SAP-C02 blueprint with every detai
 
 ## ANS-C01 coverage record
 
+The September 28 [deep review](research/2026-09-28-ans-c01-deep-review.md) maps 177 detailed objectives. Review 177 detailed knowledge/skill bullets, correct the passing score to 750, add multicast/controller coverage, qualify policy routing and Regional NAT, flag imminent App Mesh support end, and add four worked decisions while preserving 42 answers. Current guide citations: 26 registered, 23 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Network Design | Section 1, all integrated scenarios, and Labs 1–7 |

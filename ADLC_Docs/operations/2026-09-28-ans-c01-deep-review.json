@@ -1,0 +1,2166 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "ANS-C01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "fb0abbeb09088a4e78814b140d8e07e28524c8eaa98e35fc4e08f63badf05850",
+  "guide_after_sha256": "2d40f94812c06ff6e3eb619cb62e7c7da23e494a37cd8a0736deda57ba98b72e",
+  "prior_records": {
+    "exam": {
+      "code": "ANS-C01",
+      "level": "expert",
+      "vendor_id": "aws",
+      "title": "AWS Certified Advanced Networking - Specialty",
+      "status": "changing",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "retirement-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite; AWS targets candidates with five or more years of networking and two or more years of cloud/hybrid networking. Practice packet-path analysis, routing/BGP, Direct Connect/VPN, multi-account/Region/VPC topologies, DNS, edge/load balancing/service insertion, automation, observability, performance, cost, filtering, audit and encryption. The exam retires December 31, 2026 and no replacement is announced."
+    },
+    "review": {
+      "id": "ans-c01-2026-09-01-source-validation",
+      "exam_code": "ANS-C01",
+      "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ans-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+      "objective_coverage": [
+        {
+          "objective_group": "Network Design",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–7"
+          ]
+        },
+        {
+          "objective_group": "Network Implementation",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network Management and Operation",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 1–3 and 5–8"
+          ]
+        },
+        {
+          "objective_group": "Network Security, Compliance, and Governance",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1–2 and 5–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 14,
+        "access_blocked": 5,
+        "missing_or_error": 0
+      },
+      "notes": "The current four-domain ANS-C01 guide was reconciled with every detailed domain page, non-exhaustive service list and live English lifecycle page. It records the extended December 31 retirement, superseded localized August date and absence of a named replacement. Three scenarios, eight safe labs and 42 original checks cover edge/DNS/load balancing, BGP/DX/VPN, multi-account/Region/VPC routing, IaC, packet troubleshooting, performance/cost, network enforcement/audit and in-transit encryption. All 16 URLs are cataloged; automated link totals are updated from source health. Current metadata is labeled and no recalled questions are used."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "b176269d5351a13a5bb077cb40c83bbe1b3aeb2f5dabb11fc8e57670989a8453",
+      "guide_sections": "Section 1.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "a5e3c7e4b527eb1205c8bf6b65b9ca14d33a775dffe6d4197bfca1ec0563bcc8",
+      "guide_sections": "Section 1.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "d4e226c3b7f4fea7eb25cc88cbf54c67a89427496bb0ad1772394b6c0af1a4e3",
+      "guide_sections": "Section 1.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "19d3aac4c4a074c986ce301ebff168f0e8eef9b123877cbf25a401e37a0b19d3",
+      "guide_sections": "Section 1.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "6019e6d04fbdd56ad1b01dd6afce9ad1ec0ece65a00cf46456261c6fd896dd18",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "b6c880b508b216158245484dbc781ae5a858f12e5e664af2e8ba1ca6e22bc23f",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "46325da331efec007e7f1715e809008ae1c29862e589dbb2263ef8b26285c724",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "afbe27a459e9ff28574fd8c3650adad7004695186083136d1692fd39fc5e906d",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "d828c8baa964fdf39f504a86d8e32325b76d3f3886269ea7c9a58338af70bc2f",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "1b8cfa3746b4e1d6111e0f22491ce8e074a165993a8e93a143f5203c7b1e611f",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "c39a8fcef6bd666074a6d9581846b2e23a03ddc16924415f18300e4c801b998f",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "a4dd58586655438024f9d2a8d211130ee6a93005394abc5e4e8bdf60395faa6e",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "9893f81e48fd87c13b68f84dc68670c55f870a22507245befe3db33595f16ec5",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "5a01918df6a8d3b8100a6455aecaedf79f835848d715e5fdb7ab8f8b6f4dacdd",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "8bc9f6d8a4dfa8d5ed3f58526cde483ac512b43ff5724e25ea00edd205b1d846",
+      "guide_sections": "Section 1.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "7bb55ce48f339654f6b240fe5f69a776fd041c68404aade5b3af7430a8773e0e",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "7571d56746502bb6d6ad56448e6c9e34720e06034917eaba78038ffaedbb3b2d",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "201a5bf5c0e93a8e3187434a39ee6cbbeb1b7807337a01de6c15b16a75c62b3c",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "bd832943c005295df689f2c0fc9084e5f1dee15854d1d9c0d242043095c16445",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "26bb0d8324575c59c07df0ed5de7880ede95e06ba72944ee6764b343e2bc2ff9",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "2c2e08ab1365663e5b0fd3ce75f4edcac11ca4b60b00a929f7f578ebf2e32adc",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "90dc65f4d8c64c8ff66862132f2f2fa5da80e05fc705c82988c1e7af92153387",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "f31ccc71adf7543982d7cce8ec040439919416182f37b47040e934e0980f6c44",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "b9f9c8831081236a8f42ca3bfaabe8186e68d816b233e8f6d2e6ab19ba65f227",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "da7321b7e0eee3399e6f8ba7c5ec5d11612d4f974b31b00c536ea1a962b2e01c",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "349145fbdd5d282104ca93734477df8e7ff2f7342664197e5c7f958ae97bcde2",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "ebf3d8024cd51d82f73ae96a23e4787011ab57e6b4757faa2b4423f60a83c551",
+      "guide_sections": "Section 1.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "7aa678a809bce8e2185eb565d7647252f9e4f82a88999d2d14a14b40df173f9f",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "3570bfb49865efdb62fea934b34c65ac34c35d7bdb3ce6bfa17f49463b4318f5",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "649262a9c9f833006ff732300ca34f9d6a29567a98bbbc7ff3f7f45bd9b080ab",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "07d18c8a24bedb98a9594d54084600bd54d16fec351e038e49d9c9e2bebe07ac",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "c558874eab62c4ba07826c0f71b29c815bef54d02b2d33e64ee25a4b13a0f389",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "d32881f5d237c4615c498cea08d30d73df9bd5edc6b6aff96c213f6ec70704b0",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "05de11854e4e5387e1cd5302dc136b1dfd3340d3b99fe3f279d1bee74427eb12",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "9a2c02af2b3d47f73aad18f170c8a4cc8df0a95d1e13ca64def14767e823effc",
+      "guide_sections": "Section 1.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "1672152cf0fc5c83e89dc9fe5127254421e922e3ae2d174b5af9455651f228f5",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "a9f2904b881d28cee652749d594ceafb5f5df2467723bb8321522747ab8f4775",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "a9619acc40d89814fa8080426b4a6f5204ba2db329cc754f11437c9331869221",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "278cccd644e5ac716c03f3ac63d5ffa881ec91c5af767d88fd434ab21b374c76",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "2d97626c98f8206cd6e690c1178091e4113775e6b5293714f0f82dcf3de66a76",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "ad5e1ba3a19738026be6025b9231534dc71146bafb320b93a58c7889acc7b126",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "daf097b75d460a15a2f07bc14ebc24255655ba76a4d23111567a3721633d5806",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "1955caca2192e4318a2d5cab9e389524d76319a43dddaa77481ac07a48d5e09c",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "e5964f222b8f65c02a14b5f8dba55c30f7c1bf76222b5c95e63257d2f75b9e55",
+      "guide_sections": "Section 1.5; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "2bb89fab740ad9254962299b72eddff4fb5685bdcd2d76be521b0b713faf803a",
+      "guide_sections": "Section 1.6; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "66369631fbb6898a8f83978478afb2c2e43032a1ca0097b8bf09e483c19cc654",
+      "guide_sections": "Section 1.6; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "732e697c8d10f1e4991e93fca50470997f4b9fea8daf95b94b65882bca9968cd",
+      "guide_sections": "Section 1.6; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "0c974bf3948ef6c3f0f46750c46a49c4c0e31423d5129b0c8b4163a44770e72f",
+      "guide_sections": "Section 1.6; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "05f8363f46427e62e9165382ee19f442323e405cdbd4ddb7a21f8102a48a2d6a",
+      "guide_sections": "Section 1.6; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "b2d20873f9599fe3dfe621ad393b84600305e570708cb079fb754ee19f7e2bbc",
+      "guide_sections": "Section 1.6; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "f592afa852ec2c170eb21eceee9d8748e2fa8abf9a47671e43f5a69046e29cb3",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "deff67503943252e7b73a68cda36beefdfe94a824cf3a918b3d26e7d1a2cf4b3",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "8f4c1b83e5156457cfe3e90dcc14e9da6861e8f0cd3277541c2494b29f7a4c92",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "e4b44c71287cf9853d918c8db1e4d3b422f0a02c9de4119fe2b93cc249d15e20",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "bc46f9b7bbb8ed04ea9c9e96ec436cf9bce3fe9747052f7b073540db3d459394",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "5a0af2518244f30ef0bf4b715c1f4bf7111c11c42cb4bc7ffd9146fb78a70a7a",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "ee0c9494c43b69a9d3abf2c3602fd742c5075d19b93ce8815e3296be50a5012f",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "954ef9dfb33c7990aa6b3c6cbccc5da4e139945013465391752d554c78cb8de7",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "16b2239222a6516d5a892f3d00a5f4d291900e4f744b334477492fea17dd602b",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "e440bf63c84cfbdc894cf534c435db32b22b8a2a369ad5ebdf42fdec79e5289d",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 11,
+      "objective_sha256": "80968a2f5e3d425e32ae945eae64795d74de15b373e9f28f52dc5f0334fb9f3d",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 12,
+      "objective_sha256": "fe4adb770fb0925a13aaace57f3a14438af88c30b7f290458b7ecad2c501e8f8",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 13,
+      "objective_sha256": "4f262b475253d47b7bf64de913c906bc9902d12f508436c200d113f822c689e1",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 14,
+      "objective_sha256": "fcdb20c0657ce95ab4aa7135d1aec07ec82641b77c8c7a533bb9e60f50aa29c1",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 15,
+      "objective_sha256": "f58882d476617313d9eff550ad568c27cda9f03f83e64e5b9a73338e4c6a8a65",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 16,
+      "objective_sha256": "c44f95190ada177b3face6ae7bdf76ec671ea08255403d642a46cd80f787957d",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 17,
+      "objective_sha256": "b219a6e128e8675e6b4c8a19d597044adfb3bac1f01474ef8223eae217ec7627",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 18,
+      "objective_sha256": "b959e055ff9a887f523990e2a3d3e8ee67d2d88e954d8e51032d514d587bf612",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 19,
+      "objective_sha256": "31818c5e7885d05ad7f84dad6a81baefce79a10a5a936484eb08572f6012ac52",
+      "guide_sections": "Section 2.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "6c5363999341f08dc4f7e802c2d1a9ba9eb98db9c4185cc96e48a251b39c20a6",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "0b68e2a9573fd9c429c12fd83e9064962d40146ef99d9eea9c3240fbcb6efc4a",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "6a1f0dce591a97025aeaa389af214d8e5a9441ae11ab759fd32cc8646d4f32b5",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "0090fdb15b60b1ee16aae3a2dc06def457e98340e358dab8c09bc9147cad57bc",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "16b2239222a6516d5a892f3d00a5f4d291900e4f744b334477492fea17dd602b",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "e2b0c824903e8cfbae640aaf0c3245dd9facb9d51ad6e363687380ca9f99fec5",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "3e2d9c069e8cad2bba491b9942a14b12fe7a31d20891934748ebcd1c9291d479",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "1c8bcbdef4b1edb984e671668d445d683d7cf68e8282cace42f0191bee33af9d",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "c9f9c86f2312ff632cb0190d6cf1ccf0a46b8eeb3f61ad37d96c06686c89978a",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "77d80ff1fdd71a5f808648eccf55cee1d2729e673f55e33cc53e83690132700e",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 11,
+      "objective_sha256": "f007388230bb53e6ea4cd5768365ca34ef23e4de9b7120c7f91543384c236cd4",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 12,
+      "objective_sha256": "5373ffa35c81d31b2788958fd964ce3ae61f08e857a10bd845247d438916e22a",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 13,
+      "objective_sha256": "dc36de606eb306272e46906aaf00ba31f4198c2ec19b6407d9e7c9601c0b4fa7",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 14,
+      "objective_sha256": "d562b767d3dccd0fc10a8fbcfec9ffb54a8e10b2099e51a43feee06131806950",
+      "guide_sections": "Section 2.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "15df896257b748b793f175bb1020ba64d3b05efe8995a6979c011b035b157648",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "bbbe4d3355f10c0000976156ef965910488377ac2c537c93153ff5da3114d351",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "fd6b0a2233ed836acac8aff0f46014cd07fa3466d43e6179594b480336e65fbe",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "955e66a347be10411b74c212b424ef268b6f174b9646c2e87e43c632b90715ab",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "89bd6c576a63bbb962d2cb03f3c14d4a72caa0bc0f68c62884322a15c360918e",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "e317827bb744693788c7c10fc483de5e94614fcc158411446bb652ca00d699bc",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "c588c29c9040f3eac962351e1f176599107272ca75a6982e427361e29c42c643",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "a482a14167044fcacc9fc12283470f897f2d7aa37a697420adf0e4ff821901dc",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "8ba0364e4dc87db77b244dc3cc7abff6f1defd8cebbb98ad8c3dfc28d9b5d4f8",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 10,
+      "objective_sha256": "0e0474e208f849ba92c575cf2ab153ecc5d43510d2e9dcd36ab3c1043c487c4f",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 11,
+      "objective_sha256": "43bedb439d96348238ac68ea074b7bd30e2d83bd6c338f94a7ebf529d69517a6",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 12,
+      "objective_sha256": "d5215caa23e24b6c20b59781ed3519ec8056d5aad9276403ef8a7d59d1e11e75",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 13,
+      "objective_sha256": "f6c98ecfe557ba1a512e6cc3c5163f4001ee592aa6496cf882695d01d6bf40e2",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 14,
+      "objective_sha256": "46d54ba729856c54412003c1e78a3f22b099dbc90849b1092ee0893034000755",
+      "guide_sections": "Section 2.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "b3bea17e3bbcc9641333ca70206123ebfe88a3c36c20e46f9703715440287fa8",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "a0692489ad1e2096321ff4874efe3018bca6576fce8106149e9ef33bb07ae856",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "f175745e72029ef57d810b7819e7420d676948b8819bb90d4924cf824caa2ae0",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "e23a876512c07931890b89e11314fc282f88fa4d21ed57115dd7aea0c93d8546",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "58b4605429aaa6740bcd55fe4b2d0f96ab1f6499c44be8775b704bcb33e72c5a",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "54513d86b7db03f5241421606a3a3fa91dbdbe8ebc1c833ecc6fba58263e115d",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "b6de967d0b49989f77808fc233a665aeb54a5af9f98a456eff267c12542d5399",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "ee252980abdcf87b78996cbacd411cab190a9de2cfc82e5d51a9cae446e2c696",
+      "guide_sections": "Section 2.4; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "0d87b3c93b4c3bb05ceee3abef768a63dd477f967dd7cb8050b92e6cd80a5ed3",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "9deebf573342c22918a2ae6818d57699983675c0ae7843603cd0e54ba2d92aae",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "87f106366ff5d0fa95f2d9b7cd8059d81093acbdffdedcff13505aebf9912e6a",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "96904c2d37af7a826c074635586be15bc451d5e8a411bee728f4803084255a50",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "9c2a6f11f4d0f8512637451c76f32b63ef9d9497553467df25fae7588b18902b",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "2e0bef05edcb9e22b4ab5c3db51bd2b861c6ce7f24298bf9624b7c2f612ec139",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "dd96c47f71fcba2435e6742e85d685f9ee32c328e79bfdc4a2144d30999d7ca7",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "dab5be85da2402d92d6638999b87ea783d897f991275edca87fabf79066d5665",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 9,
+      "objective_sha256": "91c70ddcf2492f7c76f5eb4070b68b8c87559e2143223d82b2f18446c9c4a583",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 10,
+      "objective_sha256": "7bc20e1006b3feb1b97d1a5243e40699d8e0b479d2344029d5bb48ead486c976",
+      "guide_sections": "Section 3.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "9783c63b01af5a93bc14c9157fce2e885dcf63b6964dd1f04c8e34fbc65129fa",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "6e43cc04e9d9937e934e310c4904ed90fbe01e1f9adf20a0f2e5cbdede6d7465",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "e47015eac42139535d26ce343afb729df76d1bccd8e9c35d9a60977752a4194b",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "ac66556234a3213b7aa5922ef577d0ad4f7bbaef3fc80b4eb3c0199b8415a985",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "d9ca16632bed3bcd759f1c7e20ce91d27f0ba77368b833072065c4db8a8bce32",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "c242361c9831363b507c76a53fe9234540be3c4fe0c28e750abdc3c902904685",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "328055c5a32de0e20666718731352426aaf3d78f4a0a3d48debca55d192e23d5",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "07eab63b2f8a6e5588bfed191ea5367140309b1bed226a0d9d6601ec95c703a5",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 9,
+      "objective_sha256": "67945d5be5b0fbee32eb292012d4bbfeb37ceb01a4b61e9674b71fcb2c7dc8f0",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 10,
+      "objective_sha256": "9171b4db59c4af43c831316fa0f7bf9aa96f7e0fadcde6342d07ea2b90be9033",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 11,
+      "objective_sha256": "5be91a66f22b796059d7b11b812171fbadf8a72e301df044073b0b5ae28f4fe9",
+      "guide_sections": "Section 3.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "02d9acc74f0370abd6de43fdc3d043823408e3d6685a879f9a6c287a55987108",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "f24bb92dbcf92311749570624ff82d4567073374c703efa3f6905245a41ff4ac",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "45dc04068253849d28209f8d921826479f155ad6ebf728a5ac409eaa1cf495bb",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "50e2bc6e09065f311d4f1928189b78dc4b34c72ca6939c784e0356a721715f0d",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "dc3239b35ef9279c24db55b9af3f1779bad94c49d1c3ac7ce414eb90288b9708",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "4f76fdc326b3b6a4964d83cb961eb0fd0aa697da2274069981acf7afb8eb4049",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "c32dbdd3ac472670a94340e28827567e117483cd2ca77711f602325f26086146",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 8,
+      "objective_sha256": "70c70cf25e1587c91ccb65dd2fd13b0900dfa1d89ad272d8b69bc49f7400ba56",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 9,
+      "objective_sha256": "e4041a503eaa62987391aed714f8c5f23d12a3de5142eeb02c6d9b8c464a212e",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 10,
+      "objective_sha256": "ad593afe8ab076b9a9483610a1118109663613a67852aec66c64972ab677451b",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 11,
+      "objective_sha256": "d4250bc32a801631152995912b51c6d9e69c0dad44413e94afdad7535b03e1cf",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 12,
+      "objective_sha256": "de9aa17bc9a854ce997f19335fc37e628d4adf17053d03c7dcd366b064b37831",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 13,
+      "objective_sha256": "275a66e9fafd788da38b46c2fd7d8b6ea8f88aa654d1d9d25cbd7279f33c0e68",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 14,
+      "objective_sha256": "262ff6d07b4798eaf502f646597395c0886cfae76e23afd9e9ac761595da7fcf",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 15,
+      "objective_sha256": "d4304ef8519bf28e977d80e7a8a014c5788c6e1f0c996753f413eda85d6fa101",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 16,
+      "objective_sha256": "677f6e62e6596ea2abe5fb449b73a5251d4c14c9aa7b014fc949830b88c1849e",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 17,
+      "objective_sha256": "9f21dcc4a3a0efd690b6bb43372ea1a99b3d5e62f6bd9dd5d811476b462bab50",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 18,
+      "objective_sha256": "5320ef86daad806950fcda1ccb54ea9b299abc18ee63e19ce82e3c8c50115eb0",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 19,
+      "objective_sha256": "0a155859c12fa75d19fd09a7547a7745ee3ec7e3cea77b3eb2688fb7e9462934",
+      "guide_sections": "Section 3.3; Worked packet-path decisions; Labs 1–8 as applicable; Multicast is a separate forwarding contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "7d7df16e0b055ac23bc62f1f5c556cbbba74d1b51cf0ec50903f8b20ead92741",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "e70e229eae218ec0930f6a9cca01b56d87f514a517c29ee3f9023eef1b646ef4",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "4940f3b7012eca274e6cf8528af97bb50d0a65ff613b0a797c49922b725c9a42",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "73d37da352e93a40213ff56767acef670307f95d95b3c23fcecc3e1fb5a478f8",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "e511ca0ca607935979ee03c6548454c13cd1c27eb441b864be3c64428a235b65",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "b303fa5fe25037ac3690b381416ae1ad5589365fb282f0cf65b5ef773d03035b",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "6f0cce601d275c72c60013e2eed055bd6321e28a139aab53c78cc78919f782cc",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 8,
+      "objective_sha256": "21d648c5c6a6c446f1f22c34ffeb4a5be7e6696e7ed5a8e19202dc4ed1cdad1a",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 9,
+      "objective_sha256": "9c7bec716a3288ed5da3719a928b11c639949046c705db60ee9bd3e94e1bc432",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 10,
+      "objective_sha256": "cfba7063fc6a2e3a40f3051145b0aa70147ca4844d41ea5e2f8a84684cbf34c8",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 11,
+      "objective_sha256": "ac8a9bc2e6f29158726e90c052c143ebe87c5aabbdec37025f95c7590691820c",
+      "guide_sections": "Section 4.1; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "a5bd898fb6efc95d97dc477d0ddf35b20da2989b26ff93d5dd373e267938aaa1",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "3ef66fc9b851ec38f9455e763bad91705b082349976cb44a43d4229a872d745f",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "c1e7943de8dba6ff2fc013c25b0530e609977092d220414f0801a61453d62c77",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "3733aaae1815fedd8f8b627733979bbba757777894de7798dd8a770b416b6ffd",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "e5bb7a66119862fdd9b0495dc85d9899c13bd58a32850e1aaa49439898940e96",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "fa4d7ada2880d54fe41cbe38c7a432c5ca61eee983cd897f967a8a37e1e43999",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 7,
+      "objective_sha256": "30f9109456d1bd774d99dd7c61130a27d22903eca052eec0f5237b24f9efaf4b",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 8,
+      "objective_sha256": "97fab05e70ee71a434adcc24998ca156346183d43386d0bfd5b0b85214ebfe5c",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 9,
+      "objective_sha256": "cd528578ee2041cff904a3e9fa823c3734563f06ee53d3b7c6d0a88a509fd773",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 10,
+      "objective_sha256": "dbe29696aa086ae6d1c6a5cb896558ba89a43ba5401719867eeef09bc3095714",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 11,
+      "objective_sha256": "39eed88c558a3898c3f5274b28cd135612efafdcc846d9ef860c7ab567021926",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 12,
+      "objective_sha256": "b6e55ef24816d05daa17a0601d839d571cfed9e53cf6f632c2f8a059c4344f73",
+      "guide_sections": "Section 4.2; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "1b056d060a23e5494847b45adfb5a69fa7113fe29c5a621499cb1e060f3d9638",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "44f243c8ce10f2ab847fe3c92aaa91f9ef50f2c3d6136fb442c1371e9adc8dc8",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "21b046ec1d0d0bc22a4d988d6a2f9de60565613d3ba9af6cda0b242fa1e4d696",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "b62abfc27f51e750b0b75bdf7564b926047ba5a6411e49820641131ced1d75dd",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "1a2b96c4e3d93415d24bea31a0d582cb0d0fd91b8ac4e9992cf74c57998a3f8d",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 6,
+      "objective_sha256": "a4fe9e58d6d3571a918839ff1bd2bf8ada62e035eb0558651e49cb529dc88d9f",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 7,
+      "objective_sha256": "0a7cb8cb3dc9e36ea90bde05865e643e238775cd2950797bc2a2623c3f9800ca",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 8,
+      "objective_sha256": "ee292e2cbda016f82fc195fdc72c225a6ef087f8c318f36288cb11b07376a875",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 9,
+      "objective_sha256": "4ba859fab7d9317e04a2af89004fe0723850246c391dd3035ac53a47e0135465",
+      "guide_sections": "Section 4.3; Worked packet-path decisions; Labs 1–8 as applicable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "ANS-C01"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "ANS-C01",
+        "title": "AWS Certified Advanced Networking - Specialty",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+        "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\ans-c01-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\ans-c01-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+        "previous_status_sha256": null,
+        "current_status_sha256": "abfe3de8ede38d8e5cc876303dcd601fa37932afd1890b431ed03f5706ced14f",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Advanced Networking - Specialty (ANS-C01)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 26,
+    "reachable": 23,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-ans-c01-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      "checked_at": "2026-09-28T20:30:29.421383+00:00",
+      "health": {
+        "id": "aws-ans-c01-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+        "checked_at": "2026-09-28T20:30:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Advanced Networking - Specialty (ANS-C01) - AWS Certified Advanced Networking - SpecialtyAWS Certified Advanced Networking - Specialty (ANS-C01) - AWS Certified Advanced Networking - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+        "duration_signals": [],
+        "signal_fingerprint": "033fd40853fed22fb52e82003021f34a6b65566ebba6258917a11e6fc338962e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      "sha256": "6b42fa7b873dd6ce0b0120f4e861c80aba51a70956439ce596e4ff7bebb88551",
+      "text_characters": 5923
+    },
+    {
+      "id": "aws-ans-c01-domain1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain1.html",
+      "checked_at": "2026-09-28T20:30:29.521112+00:00",
+      "health": {
+        "id": "aws-ans-c01-domain1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain1.html",
+        "checked_at": "2026-09-28T20:30:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Network Design - AWS Certified Advanced Networking - SpecialtyContent Domain 1: Network Design - AWS Certified Advanced Networking - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "903134f1320485adf50ce1f86968ed8219f01e49ac193764e68eb523d1e029ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain1.html",
+      "sha256": "52410a0cafee0fe01160189267c63466474d235b487d0d54bbcfec79c34432e1",
+      "text_characters": 7205
+    },
+    {
+      "id": "aws-ans-c01-domain2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain2.html",
+      "checked_at": "2026-09-28T20:30:29.526774+00:00",
+      "health": {
+        "id": "aws-ans-c01-domain2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain2.html",
+        "checked_at": "2026-09-28T20:30:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Network Implementation - AWS Certified Advanced Networking - SpecialtyContent Domain 2: Network Implementation - AWS Certified Advanced Networking - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ce5e03ff1e9d2f1f3f32d7eac0e010a59b302e8d46c457ecc22667878ba87c27",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain2.html",
+      "sha256": "21dd20242243202a150bb301907937ea916eb839982db5693fcbf2d2589f6d70",
+      "text_characters": 5799
+    },
+    {
+      "id": "aws-ans-c01-domain3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain3.html",
+      "checked_at": "2026-09-28T20:30:29.757422+00:00",
+      "health": {
+        "id": "aws-ans-c01-domain3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain3.html",
+        "checked_at": "2026-09-28T20:30:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Network Management and Operation - AWS Certified Advanced Networking - SpecialtyContent Domain 3: Network Management and Operation - AWS Certified Advanced Networking - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "60b20fa6e5db718bb823938fce2b0c25f4fda011171fa94bcab42730a73cfd59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain3.html",
+      "sha256": "a335272f91fe7c07c0383e22d34459330689bec3449ff573b7269c769edc50b1",
+      "text_characters": 5649
+    },
+    {
+      "id": "aws-ans-c01-domain4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain4.html",
+      "checked_at": "2026-09-28T20:30:29.812702+00:00",
+      "health": {
+        "id": "aws-ans-c01-domain4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain4.html",
+        "checked_at": "2026-09-28T20:30:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Network Security, Compliance, and Governance - AWS Certified Advanced Networking - SpecialtyContent Domain 4: Network Security, Compliance, and Governance - AWS Certified Advanced Networking - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "38405d1f2e768cb6fb2074c692595ac7e3a0a473d63b0a1de2a567cae952476c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01-domain4.html",
+      "sha256": "9b311cff6c2731d3a13edc0ceaf5bbd271586af24d61fb2a8fefe780a39f4179",
+      "text_characters": 4633
+    },
+    {
+      "id": "aws-ans-c01-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+      "checked_at": "2026-09-28T20:30:29.827079+00:00",
+      "health": {
+        "id": "aws-ans-c01-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+        "checked_at": "2026-09-28T20:30:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Advanced Networking Specialty Certification",
+        "canonical_url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+        "duration_signals": [
+          "170 minutes"
+        ],
+        "signal_fingerprint": "fe3939eee81451267746662592f99e9a71a52ce21558d4df1386a9171d6c2497",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+      "sha256": "e286155fcc100dbcc6bc665540da4645d35024f28751cecc73d4f4eee15f03fb",
+      "text_characters": 5500
+    },
+    {
+      "id": "aws-ans-c01-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/ans-01-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:30.086492+00:00",
+      "health": {
+        "id": "aws-ans-c01-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/ans-01-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/ans-01-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Advanced Networking - SpecialtyIn-Scope AWS Services - AWS Certified Advanced Networking - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/ans-01-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8011436259c0fa28cd8db75f4915169f189242ca0ce60084d2969df271d84bf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/ans-01-in-scope-services.html",
+      "sha256": "06df554ea2b3a0bde580ac7a15d701c6be577562a51bcbc6f4a93cff002a9c66",
+      "text_characters": 2710
+    },
+    {
+      "id": "aws-ans-c01-study-areas",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/",
+      "checked_at": "2026-09-28T20:30:30.146755+00:00",
+      "health": {
+        "id": "aws-ans-c01-study-areas",
+        "url": "https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "10 study areas for the AWS Certified Advanced Networking – Specialty exam | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/",
+        "duration_signals": [],
+        "signal_fingerprint": "25ef04abeaa02fed5acc52578198d4170b8ef70fd10ea804b763e92490e65774",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/",
+      "sha256": "68044e4164e3d665b086028455282242896af7d1537b7f2fb4ae4bd9754538cb",
+      "text_characters": 14129
+    },
+    {
+      "id": "aws-ans-c01-skill-builder",
+      "url": "https://explore.skillbuilder.aws/learn/public/learning_plan/view/89/networking-learning-plan",
+      "checked_at": "2026-09-28T20:30:30.157998+00:00",
+      "health": {
+        "id": "aws-ans-c01-skill-builder",
+        "url": "https://explore.skillbuilder.aws/learn/public/learning_plan/view/89/networking-learning-plan",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/search?searchText=networking-learning-plan&showRedirectNotFoundBanner=true",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/search?searchText=networking-learning-plan&showRedirectNotFoundBanner=true",
+        "duration_signals": [],
+        "signal_fingerprint": "d13f423d1c6b2c8c319ee115728b1d75becbca425612e05c56d0af77ceffbdd1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/search?searchText=networking-learning-plan&showRedirectNotFoundBanner=true",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-ans-c01-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01",
+      "checked_at": "2026-09-28T20:30:30.244137+00:00",
+      "health": {
+        "id": "aws-ans-c01-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Advanced Networking - Specialty (ANS-C01)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01",
+        "duration_signals": [
+          "53 Hours"
+        ],
+        "signal_fingerprint": "a27b63e788647f5b0f0d4e31e8694cdb42120dc3e6adc98e3fe4735ebc0994ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01",
+      "sha256": "86294c453274cdd3685b7d1b4aa1c1e9983820c033534bb268411c77c29c4d05",
+      "text_characters": 6565
+    },
+    {
+      "id": "aws-ans-c01-oreilly-packt",
+      "url": "https://www.oreilly.com/library/view/aws-certified-advanced/9781835080832/",
+      "checked_at": "2026-09-28T20:30:30.539005+00:00",
+      "health": {
+        "id": "aws-ans-c01-oreilly-packt",
+        "url": "https://www.oreilly.com/library/view/aws-certified-advanced/9781835080832/",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-advanced/9781835080832/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-ans-c01-oreilly-sybex",
+      "url": "https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/",
+      "checked_at": "2026-09-28T20:30:30.614310+00:00",
+      "health": {
+        "id": "aws-ans-c01-oreilly-sybex",
+        "url": "https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-ans-c01-oreilly-video",
+      "url": "https://www.oreilly.com/library/view/aws-certified-advanced/9780138319311/",
+      "checked_at": "2026-09-28T20:30:30.706931+00:00",
+      "health": {
+        "id": "aws-ans-c01-oreilly-video",
+        "url": "https://www.oreilly.com/library/view/aws-certified-advanced/9780138319311/",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-advanced/9780138319311/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-ans-c01-udemy-maarek-agrawal",
+      "url": "https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/",
+      "checked_at": "2026-09-28T20:30:30.913045+00:00",
+      "health": {
+        "id": "aws-ans-c01-udemy-maarek-agrawal",
+        "url": "https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "[NEW] AWS Certified Advanced Networking Specialty 2026",
+        "canonical_url": "https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/",
+        "duration_signals": [
+          "1hr 3min",
+          "1hr 8min",
+          "1min",
+          "29min",
+          "2hr 32min",
+          "2hr 44min",
+          "2hr 45min",
+          "31min",
+          "48min",
+          "PT15M",
+          "PT1H11M",
+          "PT1H16M",
+          "PT1H1M",
+          "PT1H21M",
+          "PT1H2M",
+          "PT1H48M",
+          "PT1H8M",
+          "PT29M",
+          "PT2H10M",
+          "PT2H31M",
+          "PT2H43M",
+          "PT2H44M",
+          "PT2H52M",
+          "PT30M",
+          "PT31M",
+          "PT37M",
+          "PT3H2M",
+          "PT41M",
+          "PT48M",
+          "PT4H33M"
+        ],
+        "signal_fingerprint": "74784eb2d2a517739d55fa661739e260b2e5a249acb251c8a3619cf94d2e0b2f",
+        "error": ""
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "aws-ans-c01-udemy-davis",
+      "url": "https://www.udemy.com/course/aws-advanced-networking-specialty-ans/",
+      "checked_at": "2026-09-28T20:30:30.970252+00:00",
+      "health": {
+        "id": "aws-ans-c01-udemy-davis",
+        "url": "https://www.udemy.com/course/aws-advanced-networking-specialty-ans/",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.udemy.com/course/aws-advanced-networking-specialty-ans/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS Certified Advanced Networking Specialty Course [ANS-CO1]",
+        "canonical_url": "https://www.udemy.com/course/aws-advanced-networking-specialty-ans/",
+        "duration_signals": [
+          "10min",
+          "11 HOURS",
+          "11 hours",
+          "1hr 31min",
+          "1hr 32min",
+          "1hr 38min",
+          "1hr 54min",
+          "2hr 21min",
+          "2hr 29min",
+          "2min",
+          "30min",
+          "PT10M",
+          "PT1H31M",
+          "PT1H32M",
+          "PT1H37M",
+          "PT1H53M",
+          "PT1M",
+          "PT2H20M",
+          "PT2H29M",
+          "PT30M"
+        ],
+        "signal_fingerprint": "2df64e4bab1fb7ba0b9efe6b003ee826c6a4c93cfa5399e26ae5e1aaffdd28f0",
+        "error": ""
+      },
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "aws-ans-c01-whizlabs",
+      "url": "https://www.whizlabs.com/aws-advanced-networking-speciality/",
+      "checked_at": "2026-09-28T20:30:30.982689+00:00",
+      "health": {
+        "id": "aws-ans-c01-whizlabs",
+        "url": "https://www.whizlabs.com/aws-advanced-networking-speciality/",
+        "checked_at": "2026-09-28T20:30:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-advanced-networking-speciality/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ANS-C01: AWS Certified Advanced Networking - Specialty Course",
+        "canonical_url": "https://www.whizlabs.com/aws-advanced-networking-speciality/",
+        "duration_signals": [],
+        "signal_fingerprint": "e40bb29d4697819d2773b0532719b35380012468be76225c14f32f5cf19244d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-advanced-networking-speciality/",
+      "sha256": "cfa06583653de92c5128db389d1e6e09a4b2c06df68f55191e9d94e33bbd7a3d",
+      "text_characters": 61
+    },
+    {
+      "id": "ansc01-tgw-pbr-announcement",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+      "checked_at": "2026-09-28T20:30:33.854407+00:00",
+      "health": {
+        "id": "ansc01-tgw-pbr-announcement",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+        "checked_at": "2026-09-28T20:30:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS announces general availability of Policy-Based Routing on AWS Transit Gateway - AWS",
+        "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+        "duration_signals": [],
+        "signal_fingerprint": "faf9f118557b57db2347aa822158b6be4ce0de66814fbbe259e41b8a63218618",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+      "sha256": "309940f170c409a3381a3fb36e41659a2e2afee54c12495675888e2f5fd4d87c",
+      "text_characters": 1849
+    },
+    {
+      "id": "ansc01-tgw-policy-tables",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+      "checked_at": "2026-09-28T20:30:34.457055+00:00",
+      "health": {
+        "id": "ansc01-tgw-policy-tables",
+        "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+        "checked_at": "2026-09-28T20:30:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+        "content_type": "text/html",
+        "page_title": "Transit gateway policy tables in AWS Transit Gateway - Amazon VPCTransit gateway policy tables in AWS Transit Gateway - Amazon VPC",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+        "duration_signals": [],
+        "signal_fingerprint": "03c0de75f905a94215cc98317edfe36594341e1737ce863f507d630df3ba2fd3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+      "sha256": "3e0c1554a79b5820d031feb76b3ae71ab908fbd93e9bf2267a06e2bae610d8bc",
+      "text_characters": 2433
+    },
+    {
+      "id": "ansc01-reachability-analyzer",
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+      "checked_at": "2026-09-28T20:30:35.505319+00:00",
+      "health": {
+        "id": "ansc01-reachability-analyzer",
+        "url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+        "checked_at": "2026-09-28T20:30:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+        "content_type": "text/html",
+        "page_title": "How Reachability Analyzer works - Amazon Virtual Private CloudHow Reachability Analyzer works - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ccf919e6412269866bcdb7b4c0482d38be2af5593f5d453e4a15c95f8b009a06",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+      "sha256": "43bd285802fa9809a9dadb1b3382b84d39ab246472a8fb586e64ac5ba70f7af6",
+      "text_characters": 6768
+    },
+    {
+      "id": "aws-ans-regional-nat-blog",
+      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/",
+      "checked_at": "2026-09-28T21:12:54.497167+00:00",
+      "health": {
+        "id": "aws-ans-regional-nat-blog",
+        "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/",
+        "checked_at": "2026-09-28T21:12:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Introducing Amazon VPC Regional NAT Gateway | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/",
+        "duration_signals": [
+          "20 minutes",
+          "60 minutes",
+          "approximately 1 hour",
+          "approximately 5 minutes"
+        ],
+        "signal_fingerprint": "4bec0e85445a727dfeb870e3daf2957102968107e7a7f5be4049cc302183396c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/",
+      "sha256": "1209f1bdaa368f0b936320fec127381167b813af7f1778d8e397dfad8b68dd0d",
+      "text_characters": 13537
+    },
+    {
+      "id": "aws-regional-nat",
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+      "checked_at": "2026-09-28T21:12:54.498276+00:00",
+      "health": {
+        "id": "aws-regional-nat",
+        "url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "checked_at": "2026-09-28T21:12:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "content_type": "text/html",
+        "page_title": "Regional NAT gateways for automatic multi-AZ expansion - Amazon Virtual Private CloudRegional NAT gateways for automatic multi-AZ expansion - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "a76a24ad0f52178629334b541f0ae8ecd6710d66b6df94fdbe1ae43d3d75ce68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+      "sha256": "8958236413c05e3547308b3db6e947b2b0e2bcb74f3a9448d92f399e923ab3ec",
+      "text_characters": 7522
+    },
+    {
+      "id": "aws-ans-exam-ja",
+      "url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+      "checked_at": "2026-09-28T21:12:54.498900+00:00",
+      "health": {
+        "id": "aws-ans-exam-ja",
+        "url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+        "checked_at": "2026-09-28T21:12:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Advanced Networking Specialty 認定",
+        "canonical_url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+        "duration_signals": [],
+        "signal_fingerprint": "e543ccb12576f4dc59f2b83764072e4c4f79bef63cf5af7e0d85a06111f66fcf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+      "sha256": "850f73f13d472d4e8b406bf4474182dd33370feaf84b82b199fcf42527072919",
+      "text_characters": 2960
+    },
+    {
+      "id": "aws-ans-multicast",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+      "checked_at": "2026-09-28T21:13:38.900175+00:00",
+      "health": {
+        "id": "aws-ans-multicast",
+        "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+        "checked_at": "2026-09-28T21:13:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+        "content_type": "text/html",
+        "page_title": "Multicast in AWS Transit Gateway - Amazon VPCMulticast in AWS Transit Gateway - Amazon VPC",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+        "duration_signals": [
+          "12 hours"
+        ],
+        "signal_fingerprint": "f59477e06aee7486ca9ac6d12859175d662e3cf43c315994feb6f4aa885ae4d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+      "sha256": "6b03ae08aeb152eb28ef9c1ff1b42b15ca30eba7b35432acfd013e298e9722e3",
+      "text_characters": 8865
+    },
+    {
+      "id": "aws-eks-lb-controller",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html",
+      "checked_at": "2026-09-28T21:13:38.900592+00:00",
+      "health": {
+        "id": "aws-eks-lb-controller",
+        "url": "https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html",
+        "checked_at": "2026-09-28T21:13:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html",
+        "content_type": "text/html",
+        "page_title": "Route internet traffic with AWS Load Balancer Controller - Amazon EKSRoute internet traffic with AWS Load Balancer Controller - Amazon EKS",
+        "canonical_url": "https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d048f16cc0ffcc89034cd38f422081a504aca8626a2204239476a81a20a8c094",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html",
+      "sha256": "6013feb7a9319d4e69c5a3b81e777c62855ff16eab238c04737dc739a776d7f0",
+      "text_characters": 5520
+    },
+    {
+      "id": "aws-appmesh-lifecycle",
+      "url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+      "checked_at": "2026-09-28T21:13:38.900905+00:00",
+      "health": {
+        "id": "aws-appmesh-lifecycle",
+        "url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+        "checked_at": "2026-09-28T21:13:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+        "content_type": "text/html",
+        "page_title": "What Is AWS App Mesh? - AWS App MeshWhat Is AWS App Mesh? - AWS App Mesh",
+        "canonical_url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+        "duration_signals": [],
+        "signal_fingerprint": "95ea26a14510bd489f0054da52e1b416195ce58438aa1c5f3ce065f5bb42c2fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+      "sha256": "23c394eed32893cedc5b5ee430d93e099fa963b19969a00e1cc007f6b46516fa",
+      "text_characters": 8497
+    },
+    {
+      "id": "aws-ans-policy-concepts",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+      "checked_at": "2026-09-28T21:14:24.598765+00:00",
+      "health": {
+        "id": "aws-ans-policy-concepts",
+        "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+        "checked_at": "2026-09-28T21:14:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+        "content_type": "text/html",
+        "page_title": "Policy table concepts in AWS Transit Gateway - Amazon VPCPolicy table concepts in AWS Transit Gateway - Amazon VPC",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "36c829ff4bb8875f94a323dcedd8eeb6043705818934ce72a6a22a0189e904d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+      "sha256": "6c9089882a67506c4801c6ba75f9cd2bba6d28cd26f1e5abc3b5344563494d88",
+      "text_characters": 7703
+    }
+  ],
+  "added_source_ids": [
+    "aws-ans-regional-nat-blog",
+    "aws-regional-nat",
+    "aws-ans-exam-ja",
+    "aws-ans-multicast",
+    "aws-eks-lb-controller",
+    "aws-appmesh-lifecycle",
+    "aws-ans-policy-concepts"
+  ],
+  "findings": [
+    {
+      "id": "ansc01-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Localized retirement date conflict persists",
+      "url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "ANS-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Japanese August 25 versus English December 31.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ansc01-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Exam-format wording differs",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "ANS-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Detailed blueprint multiple-response/matching; credential overview multiple-choice/multiple-response.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ansc01-deep-3",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Guide minimum passing score is incorrect",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "ANS-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current detailed blueprint specifies 750; previous guide stated 700.",
+      "recommendation": "Correct to 750 and distinguish scaled from raw score.",
+      "disposition": "applied",
+      "source_id": "aws-ans-c01-blueprint",
+      "resolution": "Correct to 750 and distinguish scaled from raw score."
+    },
+    {
+      "id": "ansc01-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Body association rule omits policy tables",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "ANS-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Policy association replaces route-table association; system entries precede customer rules and unmatched traffic drops.",
+      "recommendation": "Correct body and answer 18; add worked policy/route example.",
+      "disposition": "applied",
+      "source_id": "aws-ans-policy-concepts",
+      "resolution": "Correct body and answer 18; add worked policy/route example."
+    },
+    {
+      "id": "ansc01-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "App Mesh support ends before the exam",
+      "url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "ANS-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Notice specifies September 30, 2026 and inaccessible console/resources afterward.",
+      "recommendation": "Keep exam concept but flag imminent support end and avoid new App Mesh lab.",
+      "disposition": "applied",
+      "source_id": "aws-appmesh-lifecycle",
+      "resolution": "Keep exam concept but flag imminent support end and avoid new App Mesh lab."
+    },
+    {
+      "id": "ansc01-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Multicast objective needs explicit treatment",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "ANS-C01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Detailed objective includes multicast; hybrid unicast paths do not imply native multicast support.",
+      "recommendation": "Add domain/membership/attachment/MTU constraints and controller/domain-registration coverage.",
+      "disposition": "applied",
+      "source_id": "aws-ans-multicast",
+      "resolution": "Add domain/membership/attachment/MTU constraints and controller/domain-registration coverage."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-ans-regional-nat-blog",
+      "published_on": "2025-11-20",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Public body, routing examples and launch caveats.",
+      "value": "Forward/return inspection diagram and automatic versus manual mode.",
+      "limits": "No absolute protection/security guarantee adopted; current documentation governs support and migration interruption; commands not run."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "8 original address, MTU and bandwidth-delay assertions"
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "English retirement December 31 versus Japanese August 25 remains unresolved for language-specific booking; no replacement named.",
+    "Detailed blueprint multiple-response/matching format differs from credential overview multiple-choice/multiple-response wording.",
+    "Same-context AI review; independent human review pending.",
+    "No AWS network, Kubernetes controller, NAT migration or paid lesson executed.",
+    "Broad objective snapshots omit detailed skills, exam score/format and separate lifecycle notices."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

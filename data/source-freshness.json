@@ -4,6 +4,177 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ansc01-deep-review",
+      "title": "ANS-C01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "ANS-C01"
+      ],
+      "results": [
+        {
+          "exam_code": "ANS-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+          "baseline_sha256": "fb74dabdfed7868256a8c964aa4dd3edd7aec0cbb19d963ce42aad1962f6dc68",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read routing concepts, multicast constraints, controller overview, NAT behavior and App Mesh notice; correct association explanation and fill coverage gaps."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Rechecked July PBR announcement and November 2025 Regional NAT article; flag September 30 App Mesh support end separately from exam retirement."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Pluralsight public page confirms 53 hours/six courses/two labs. Replace blocked/shell provider precision with labeled estimates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct passing score to 750, preserve 42 answers, add four worked decisions and distinguish current product context from exam revision."
+            },
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "Read all 177 knowledge/skill bullets, root/in-scope pages and English/Japanese lifecycle notices. Broad baseline unchanged; localized date and format wording conflict."
+            }
+          },
+          "findings": [
+            {
+              "id": "ansc01-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Localized retirement date conflict persists",
+              "url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Japanese August 25 versus English December 31.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ansc01-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Exam-format wording differs",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Detailed blueprint multiple-response/matching; credential overview multiple-choice/multiple-response.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ansc01-deep-3",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Guide minimum passing score is incorrect",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current detailed blueprint specifies 750; previous guide stated 700.",
+              "recommendation": "Correct to 750 and distinguish scaled from raw score.",
+              "disposition": "applied",
+              "source_id": "aws-ans-c01-blueprint",
+              "resolution": "Correct to 750 and distinguish scaled from raw score."
+            },
+            {
+              "id": "ansc01-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Body association rule omits policy tables",
+              "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Policy association replaces route-table association; system entries precede customer rules and unmatched traffic drops.",
+              "recommendation": "Correct body and answer 18; add worked policy/route example.",
+              "disposition": "applied",
+              "source_id": "aws-ans-policy-concepts",
+              "resolution": "Correct body and answer 18; add worked policy/route example."
+            },
+            {
+              "id": "ansc01-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "App Mesh support ends before the exam",
+              "url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Notice specifies September 30, 2026 and inaccessible console/resources afterward.",
+              "recommendation": "Keep exam concept but flag imminent support end and avoid new App Mesh lab.",
+              "disposition": "applied",
+              "source_id": "aws-appmesh-lifecycle",
+              "resolution": "Keep exam concept but flag imminent support end and avoid new App Mesh lab."
+            },
+            {
+              "id": "ansc01-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Multicast objective needs explicit treatment",
+              "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Detailed objective includes multicast; hybrid unicast paths do not imply native multicast support.",
+              "recommendation": "Add domain/membership/attachment/MTU constraints and controller/domain-registration coverage.",
+              "disposition": "applied",
+              "source_id": "aws-ans-multicast",
+              "resolution": "Add domain/membership/attachment/MTU constraints and controller/domain-registration coverage."
+            }
+          ],
+          "notes": "Review 177 detailed knowledge/skill bullets, correct the passing score to 750, add multicast/controller coverage, qualify policy routing and Regional NAT, flag imminent App Mesh support end, and add four worked decisions while preserving 42 answers. Same-context AI review; human review pending. See docs/research/2026-09-28-ans-c01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-28-sapc02-deep-review",
       "title": "SAP-C02 complete guide and learning-content review",
       "rubric_version": 1,

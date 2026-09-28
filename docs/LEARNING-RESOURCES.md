@@ -2507,16 +2507,27 @@ Suggested preparation: an experienced multi-account AWS architect may need **120
 
 ### AWS Certified Advanced Networking - Specialty (ANS-C01)
 
-**Retirement boundary:** the English AWS page now says December 31, 2026 is the last testing date; some localized pages still show the superseded August 25 date. No replacement certification is announced. Verify scheduling before buying an exam-specific course.
+Resource details from the [ANS-C01 guide](../guides/ANS-C01-aws-certified-advanced-networking-specialty.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-- Official route: [live retiring certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/), [AWS study areas](https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/), and [Skill Builder plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/89/networking-learning-plan) (**about 35–60 selected hours plus deep labs**); the English plan is labeled retiring December 31.
-- Structured path: [Pluralsight ANS-C01](https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01) (**about 13 hours current 2025–2026 modular courses plus labs, or 40 hours 4 minutes legacy**); choose modules deliberately.
-- Current book: [O'Reilly / Packt ANS-C01 Certification Guide](https://www.oreilly.com/library/view/aws-certified-advanced/9781835080832/) (**650 pages / 16 hours 52 minutes**, February 2025) or [Sybex 2nd Edition](https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/) (**592 pages / 17 hours 34 minutes**, October 2023; gap-check current features).
-- Long-form course: [Udemy/Stéphane Maarek and Chetan Agrawal ANS-C01](https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/) (**35 hours 28 minutes**, 267 lectures and hands-on content; shown updated August 2026).
-- Compact alternative: [Udemy/Neal Davis ANS-C01](https://www.udemy.com/course/aws-advanced-networking-specialty-ans/) (**12 hours 7 minutes**, 116 lectures, exercises and practice exam; shown updated August 2026).
-- Lab/practice route: [Whizlabs ANS-C01](https://www.whizlabs.com/aws-advanced-networking-speciality/) (**45–80 selected hours estimated**; page lists 103 videos, 54 labs, nine practice quizzes and sandbox).
+This is **not a complete list**, and it is not meant to be consumed in full. Because ANS-C01 retires December 31, only start an exam-specific plan if the remaining schedule is realistic. The technical content remains useful after certification retirement. Public catalogs were checked September 28; paid lessons were not reviewed. O'Reilly/Udemy were blocked and Skill Builder/Whizlabs returned shells, so their precise runtimes, update dates and entitlements are not newly verified.
 
-This is not a complete list and is not meant to be consumed in full. Choose one route and spend **60–100 hours** tracing, implementing, breaking and measuring hybrid/global packet paths. No exact current Tutorials Dojo or MeasureUp product was independently verified September 1. The networking knowledge remains valuable after exam retirement.
+| Resource | Access | Estimated time |
+|---|---|---:|
+| AWS exam guide and retiring Skill Builder plan | Public/free-account/subscription mix | 35–60 hours selected plus labs |
+| Pluralsight ANS-C01 path | Paid/trial | 53+ hours including legacy path; select current modules |
+| O'Reilly 2025 Packt certification guide | Paid/trial | 30–50 hours estimated reading/labs |
+| Udemy/Maarek-Agrawal current course | Paid | 50–80 hours estimated including labs |
+| Whizlabs course/practice/labs | Paid | 45–80 hours estimated |
+
+- **Official route:** current guide, live [retiring certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/), [AWS networking study areas](https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/), and the [Skill Builder networking/ANS plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/89/networking-learning-plan) (**about 35–60 selected hours plus deep labs**). The Skill Builder shell did not expose current plan metadata; use the credential page for the announced exam date.
+- **Structured path:** [Pluralsight ANS-C01](https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01) (**53 listed hours, six courses and two labs**, including legacy content). Prefer the 2025–2026 domain modules; add substantial labs.
+- **Current book:** [O'Reilly / Packt ANS-C01 Certification Guide](https://www.oreilly.com/library/view/aws-certified-advanced/9781835080832/) (**30–50 hours estimated**, edition/runtime not reverified) or [Sybex 2nd Edition](https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/) (**30–50 hours estimated**; verify edition and current feature gaps).
+- **Compact video supplement:** [O'Reilly / Chad Smith ANS-C01](https://www.oreilly.com/library/view/aws-certified-advanced/9780138319311/) (**8–15 hours estimated** with independent scenario work; runtime not reverified); use for scenario review, not as the sole route.
+- **Current long-form course:** [Udemy/Stéphane Maarek and Chetan Agrawal ANS-C01](https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/) (**50–80 hours estimated** including labs; runtime/lecture count/update date not reverified).
+- **Compact alternative:** [Udemy/Neal Davis ANS-C01](https://www.udemy.com/course/aws-advanced-networking-specialty-ans/) (**25–45 hours estimated** including labs; runtime and update date not reverified).
+- **Lab/practice route:** [Whizlabs ANS-C01](https://www.whizlabs.com/aws-advanced-networking-speciality/) (**45–80 selected hours estimated**; current video/lab/practice counts and sandbox entitlement need account verification).
+
+No exact current Tutorials Dojo or MeasureUp ANS-C01 product was independently verified September 1. Avoid recalled-question products. Suggested preparation is **140–220 hours** for an experienced network engineer and **250–400 hours** when core routing/BGP, DNS, security and hybrid prerequisites are still developing—subject to the retirement deadline.
 
 ### Databricks Certified Data Analyst Associate
 

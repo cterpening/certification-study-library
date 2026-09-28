@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-ans-regional-nat-blog",
+      "title": "Introducing VPC Regional NAT Gateway",
+      "url": "https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 ANS-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-regional-nat",
+      "title": "Regional NAT Gateway current documentation",
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 ANS-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-ans-exam-ja",
+      "title": "Japanese networking certification page",
+      "url": "https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 ANS-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-ans-multicast",
+      "title": "Transit Gateway multicast",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 ANS-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-eks-lb-controller",
+      "title": "AWS Load Balancer Controller",
+      "url": "https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 ANS-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-appmesh-lifecycle",
+      "title": "App Mesh support notice",
+      "url": "https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 ANS-C01 deep review: Read support notice and service overview; not linked migration implementation. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-ans-policy-concepts",
+      "title": "Transit Gateway policy table concepts",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 ANS-C01 deep review: Read table association, first-match, system precedence and no-match behavior; no deployed policy test. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-snowball-availability",
       "title": "Snowball current availability",
       "url": "https://aws.amazon.com/snowball/faqs/",

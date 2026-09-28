@@ -6,25 +6,29 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # ANS-C01 AWS Certified Advanced Networking - Specialty Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ans-c01-coverage-record). The [official ANS-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 177 detailed knowledge/skill bullets. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ans-c01-coverage-record). The [official ANS-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html) is authoritative.
 
 **Current baseline:** Current four-domain ANS-C01 guide; 50 scored plus 15 unscored questions<br>
-**Upcoming blueprint change:** **RETIREMENT ANNOUNCED.** The live English certification page says December 31, 2026 is the last testing date. AWS says credentials earned before retirement retain their normal three-year validity and points future networking learners to Skill Builder; it does not name a replacement certification.<br>
-**Important lifecycle conflict:** AWS had announced August 25, 2026, and several localized pages still display that superseded date. The English page now shows December 31. Verify the [live certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/) and actual scheduling availability before paying or beginning an exam-specific plan.<br>
+**Upcoming exam retirement:** **RETIREMENT ANNOUNCED.** The live English certification page says December 31, 2026 is the last testing date. AWS says credentials earned before retirement retain their normal three-year validity and points future networking learners to Skill Builder; it does not name a replacement certification.<br>
+**Important lifecycle conflict:** The [Japanese certification page](https://aws.amazon.com/jp/certification/certified-advanced-networking-specialty/) still displays August 25, 2026, while the English page shows December 31. This discrepancy was rechecked September 28; do not infer that every language has identical appointment availability. Verify the [live certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/) and actual scheduling availability before paying or beginning an exam-specific plan.<br>
 **Official source:** [AWS Certified Advanced Networking - Specialty exam guide](https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html)
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — September 28, 2026
 
 **Confirmed product change; exam relevance not explicitly confirmed:** AWS made [Transit Gateway policy-based routing generally available](https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/) on July 30, 2026. A policy table evaluates ordered rules by source/destination IP, source/destination port, and protocol, uses the first match, and selects a Transit Gateway route table. An attachment can be associated with a policy table or a route table, but not both, according to the current [policy-table documentation](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html). This is useful current networking knowledge under the existing Transit Gateway objectives; AWS has not published a revised ANS-C01 outline that specifically names policy tables.
 
 **Confirmed troubleshooting limitation:** Reachability Analyzer models configuration rather than sending packets or observing the data plane, and its current [behavior documentation](https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html) does not support paths that use Transit Gateway policy tables. For those paths, inspect policy order/matches, the selected route table, routes, logs, and an active data-plane test instead of treating a reachability result as proof.
+
+**Additional lifecycle notice:** The in-scope service list still names App Mesh, but [AWS App Mesh support ends September 30, 2026](https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html); AWS says its console/resources will be inaccessible afterward. Retain service-mesh concepts, avoid a new App Mesh lab, and evaluate a supported platform-specific alternative. This service date is separate from the exam retirement.
+
+**Review evidence:** See the [deep-review report](../docs/research/2026-09-28-ans-c01-deep-review.md).
 
 **Concern to recheck:** ANS-C01 is retiring, so this note deliberately preserves useful adjacent product behavior without claiming that a new feature changed the frozen exam weighting. Reconfirm the live service documentation when designing production networks.
 
@@ -32,7 +36,7 @@ upcoming_change_checked: 2026-09-01
 
 ANS-C01 validates design, implementation, operation, automation, and security of AWS and hybrid networks at scale. AWS targets candidates with five or more years of networking experience and two or more years of cloud/hybrid networking. This is a packet-path exam: learn to follow source → name resolution → route selection → security/encryption → middlebox/load balancer → target → return path, then identify the control and evidence at each hop.
 
-The live page lists 170 minutes, 65 questions, USD 300, and English, Japanese, Korean, and Simplified Chinese. The detailed guide identifies 50 scored and 15 unidentified unscored items, multiple-response and matching interactions, compensatory scoring, and a 700 minimum scaled score. The retirement window makes the live page and scheduler authoritative for delivery.
+The live page lists 170 minutes, 65 questions, USD 300, and English, Japanese, Korean, and Simplified Chinese. The detailed guide identifies 50 scored and 15 unidentified unscored items, multiple-response and matching interactions, compensatory scoring, and a **750 minimum scaled score**. This corrects the earlier 700 claim; a scaled score is not a raw percentage-correct target. The credential overview still says multiple choice/multiple response, whereas the detailed blueprint lists multiple response/matching; keep the format discrepancy visible and check the appointment guidance. The retirement window makes the live page and scheduler authoritative for delivery.
 
 For every design or incident, record:
 
@@ -83,6 +87,8 @@ Understand authoritative zones, recursive resolution, delegation, record types, 
 - Use delegation to assign a child zone to another authority/account. Validate parent NS/DS relationships and key rollover if DNSSEC is required.
 - Traffic policies—simple, weighted, latency, failover, geolocation, geoproximity, multivalue, and IP-based where supported—solve different routing requirements. DNS answers are not real-time per-packet steering.
 
+For domain registration, distinguish the registrar from authoritative DNS hosting. Track registrant contacts, renewal/payment, transfer locks and authorization, parent delegation and DNSSEC key transitions. A hosted zone alone does not register or renew a domain.
+
 Document query source, suffix, resolver path, forwarding direction, network/security requirements for endpoints, expected authority, TTL/cache, failure response, logs, and ownership. Avoid forwarding loops.
 
 ### 1.3 Design load balancing and service insertion
@@ -90,6 +96,8 @@ Document query source, suffix, resolver path, forwarding direction, network/secu
 Choose OSI layer and behavior before product. ALB understands HTTP requests and can integrate WAF and application routing. NLB preserves Layer-4 semantics and supports TCP/UDP/TLS patterns, static IPs/EIPs and PrivateLink provider endpoints. GWLB distributes IP flows across appliances and requires correct GENEVE, route, appliance, health, symmetry, and fail-open/closed reasoning.
 
 Target groups may use instances, IPs, Lambda, ALBs, or other supported targets depending on load balancer type. Consider target-registration scope, cross-zone distribution, zonal shift/current features, client IP, Proxy Protocol, TLS policy/certificates, idle timeout, deregistration delay, slow start, stickiness, health intervals and draining. For Kubernetes, understand how the AWS Load Balancer Controller translates Ingress/Service intent into AWS constructs and security/target behavior.
+
+For Kubernetes, the [AWS Load Balancer Controller](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html) reconciles supported Service/Ingress resources into AWS load balancers; ALB Ingress and NLB LoadBalancer Service are distinct contracts. Check the installed controller, selected class, target type, annotations, IAM permissions, subnet discovery, pod/node reachability and health checks. An existing Kubernetes object does not prove that AWS reconciliation succeeded. Inspect both controller events and ELB target state; verify current Gateway API support separately.
 
 ### 1.4 Design visibility before incidents
 
@@ -140,7 +148,9 @@ Route tables exist at VPC subnets, TGW attachments, virtual gateways/devices, on
 
 ### 2.2 Implement multi-account and multi-Region paths
 
-For a TGW hub, create attachment ownership/sharing, route-table association, controlled propagation/static routes, inspection and egress attachments, blackhole/isolation behavior, DNS support and cross-Region peering. A TGW attachment associates with one TGW route table but can propagate to multiple tables. VPC subnet route tables still must point to the TGW.
+For a TGW hub, create attachment ownership/sharing, route-table association, controlled propagation/static routes, inspection and egress attachments, blackhole/isolation behavior, DNS support and cross-Region peering. With ordinary route-table association, an attachment uses one TGW route table and can propagate into multiple tables. Policy-based routing instead associates the attachment with a policy table that selects the route table; it cannot simultaneously have both association types. VPC subnet route tables still must point to the TGW.
+
+The [policy-table concepts](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-concepts.html) add a crucial ordering detail: applicable system-managed entries take precedence, then customer rules use ascending numbers and the first match. With no matching system/customer entry, traffic is dropped. A matching policy selects a route table; that table still needs a valid route. Inspect both stages and the return path. A broad earlier rule can hide a later inspection rule.
 
 For centralized inspection, use routes and appliance mode/current capabilities to preserve symmetry across AZs and flows. With GWLB, build endpoint/service, appliance targets, health, GENEVE reachability, route chains and failure posture. Validate both return directions and bypass prevention.
 
@@ -184,6 +194,10 @@ Use a consistent sequence:
 8. Make the smallest reversible change, validate intended and forbidden paths, then record cause and prevention.
 
 Flow Logs are metadata, not payload capture; `ACCEPT` means the logged interface policy accepted the flow, not that the application replied. Traffic Mirroring has source/target/filter/support and cost constraints. Reachability Analyzer analyzes configuration, not live packet success or external device state.
+
+### Multicast is a separate forwarding contract
+
+[Transit Gateway multicast](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-multicast-overview.html) uses multicast domains associated with subnets and groups of participating interfaces. Distinguish static membership from supported IGMP membership; allow required membership and data traffic, and verify sender/receiver and Region support. Current documentation excludes multicast routing over Direct Connect, Site-to-Site VPN, peering and Connect attachments. A working unicast hybrid path therefore does not prove native multicast delivery to on-premises; evaluate a supported relay/encapsulation design and its failure behavior. Fragmented multicast packets are dropped, so validate packet size as well as membership.
 
 ### 3.3 Optimize throughput, reliability, and cost
 
@@ -232,6 +246,21 @@ Use ACM for supported public certificates and ACM Private CA for managed private
 
 **Related item:** Encryption can obscure inspection. Choose termination and inspection points deliberately, minimize decrypted exposure, restrict operator access, and preserve metadata/evidence required by compliance.
 
+## Regional NAT: useful current operational context
+
+The [Regional NAT Gateway introduction](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-amazon-vpc-regional-nat-gateway/) (November 20, 2025) is useful for drawing outbound and return inspection paths. Use the [current documentation](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) for limits: regional mode is VPC-level, needs no hosting public subnet, and can automatically expand into workload AZs. Expansion can take up to 60 minutes, with temporary cross-AZ processing. Manual mode leaves AZ/address management to you. Private NAT still requires zonal mode.
+
+Migration can reset connections; preserving an existing EIP can require an interruption. Plan partner allowlists, return routes, quotas, cost and rollback. Automatic address allocation reduces manual work but cannot guarantee unlimited connections or eliminate exposure risk. This is adjacent product knowledge, not evidence of a revised ANS-C01 weighting.
+
+## Worked packet-path decisions
+
+These original synthetic exercises were checked locally; no packets were sent through AWS.
+
+1. **Policy before route:** Assuming no matching system entry, customer rule 100 sends source `10.20.0.0/16` TCP/443 traffic to inspection; rule 200 is a catch-all selecting a shared table. A request from `10.20.8.9` on TCP/443 selects inspection. A more specific route in the shared table cannot override that policy selection. If inspection lacks a valid destination route, adding a route only to the shared table does not repair this path. Test the reversed flow independently.
+2. **Longest prefix:** In the already selected route table, `10.20.8.0/24` is more specific than `10.20.0.0/16` for `10.20.8.9`. If the /24 is a blackhole, a broader /16 route is not an automatic fallback. Separate policy-rule precedence from route-prefix precedence.
+3. **MTU budget:** An assumed 1,500-byte IP path MTU minus a 20-byte IPv4 header and 20-byte TCP header leaves a 1,460-byte TCP payload before options or tunnel overhead. This is an illustration, not a universal VPN MSS setting. Measure the actual path and encapsulation; permit the necessary PMTUD feedback or configure an appropriate MSS policy.
+4. **Bandwidth-delay product:** A 200 Mbit/s path with 80 ms round-trip latency has 16 Mbit, or 2 decimal MB, in flight at full utilization. A 256 KiB effective TCP window caps ideal throughput near 26.2 Mbit/s before other bottlenecks. Adding link capacity alone will not fix that constraint; validate congestion behavior, window scaling and application parallelism.
+
 ## Integrated scenarios
 
 ### Scenario 1: Global multi-account application
@@ -248,7 +277,7 @@ Clients see sporadic resets and large transfers fail after a firewall insertion.
 
 ## Practice labs
 
-Use disposable accounts/resources, synthetic data, budgets and teardown evidence. Direct Connect can be modeled when physical access is impractical; label what was simulated.
+These eight labs remain proposed and were not run in AWS during this review. Use disposable accounts/resources, synthetic data, budgets and teardown evidence; budgets do not enforce a hard spending cap. Direct Connect can be modeled when physical access is impractical; label what was simulated.
 
 ### Lab 1: Packet-path workbook — 120–180 minutes
 
@@ -256,7 +285,7 @@ For internet-to-ALB, VPC-to-S3 endpoint, spoke-to-spoke through TGW, and hybrid 
 
 ### Lab 2: Multi-account Transit Gateway segmentation — 180–300 minutes
 
-Create or model prod, nonprod, shared-service and inspection attachments with distinct route tables, associations/propagations and RAM ownership. Prove required paths and blocked paths, introduce a route leak, detect it, roll back and calculate hourly/per-GB costs.
+Create or model prod, nonprod, shared-service and inspection attachments with distinct route tables, associations/propagations and RAM ownership. Compare ordinary and policy-table association; include system-entry precedence, first match, unmatched drop and selected-table routes. Prove required paths and blocked paths with active tests where modeled analysis is unsupported, introduce a route leak, detect it, roll back and calculate hourly/per-GB costs.
 
 ### Lab 3: Hybrid BGP and failure simulation — 180–300 minutes
 
@@ -346,7 +375,7 @@ Version a reusable VPC/TGW/DNS or firewall module. Add lint/policy tests, CIDR c
 15. Identical destinations are ambiguous; isolate behind services/proxies, translate, or renumber.
 16. Central network ownership/consistency improves, but subnet/routes versus participant workload/security responsibilities must be explicit.
 17. Source subnet route, source/target attachment behavior, associated TGW route table/propagation/static route, target subnet route and any inspection/appliance routes.
-18. Association selects the table used to route traffic arriving from an attachment; propagation publishes attachment routes into selected tables.
+18. Ordinary association selects the route table used for arriving traffic; propagation publishes routes into selected tables. A policy-table association instead classifies traffic to choose a route table, with the ordering and drop rules described above.
 19. Convergence, symmetry, sessions and on-prem/AWS policy may differ by failure and recovery direction.
 20. Required paths, forbidden paths, advertisement boundaries, return symmetry, inspection and active application behavior.
 21. Old positive or negative answers can persist until TTL/cache expiry even after authoritative state changes.
@@ -369,39 +398,41 @@ Version a reusable VPC/TGW/DNS or firewall module. Add lint/policy tests, CIDR c
 38. Validation, secure key handling, deployment, renewal/rotation, revocation/status, expiry monitoring, audit and failure recovery.
 39. Decryption is needed for some content inspection but expands plaintext exposure; termination, re-encryption, access and evidence must be designed.
 40. The exam is scheduled to retire December 31, 2026; older/localized sources may still show August 25, so verify live scheduling.
-41. No; AWS points to continued Skill Builder networking education but names no replacement certification as of September 1.
+41. No; AWS points to continued Skill Builder networking education but names no replacement certification in the English page reviewed September 28.
 42. A precise symptom, timestamped multi-hop evidence, tested hypotheses, smallest reversible fix, validation of allowed/denied paths and documented prevention.
-
-## Places to learn
-
-This is **not a complete list**, and it is not meant to be consumed in full. Because ANS-C01 retires December 31, only start an exam-specific plan if the remaining schedule is realistic. The technical content remains valuable after certification retirement.
-
-| Resource | Access | Estimated time |
-|---|---|---:|
-| AWS exam guide and retiring Skill Builder plan | Public/free-account/subscription mix | 35–60 hours selected plus labs |
-| Pluralsight ANS-C01 path | Paid/trial | 53+ hours including legacy path; select current modules |
-| O'Reilly 2025 Packt certification guide | Paid/trial | 16 hours 52 minutes listed plus labs |
-| Udemy/Maarek-Agrawal current course | Paid | 35 hours 28 minutes plus labs |
-| Whizlabs course/practice/labs | Paid | 45–80 hours estimated |
-
-- **Official route:** current guide, live [retiring certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/), [AWS networking study areas](https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/), and the [Skill Builder networking/ANS plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/89/networking-learning-plan) (**about 35–60 selected hours plus deep labs**). Skill Builder labels the English plan as retiring December 31.
-- **Structured path:** [Pluralsight ANS-C01](https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01) (**about 13 hours current modular courses plus listed labs, or 40 hours 4 minutes for the legacy course**). Prefer the 2025–2026 domain modules; add substantial labs.
-- **Current book:** [O'Reilly / Packt ANS-C01 Certification Guide](https://www.oreilly.com/library/view/aws-certified-advanced/9781835080832/) (**650 pages / 16 hours 52 minutes listed**, February 2025) or [Sybex 2nd Edition](https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/) (**592 pages / 17 hours 34 minutes**, October 2023; gap-check current features).
-- **Compact video supplement:** [O'Reilly / Chad Smith ANS-C01](https://www.oreilly.com/library/view/aws-certified-advanced/9780138319311/) (**4 hours 19 minutes**, November 2023); use for scenario review, not as the sole route.
-- **Current long-form course:** [Udemy/Stéphane Maarek and Chetan Agrawal ANS-C01](https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/) (**35 hours 28 minutes**, 267 lectures, hands-on content; shown updated August 2026).
-- **Compact alternative:** [Udemy/Neal Davis ANS-C01](https://www.udemy.com/course/aws-advanced-networking-specialty-ans/) (**12 hours 7 minutes**, practical exercises and practice exam; shown updated August 2026).
-- **Lab/practice route:** [Whizlabs ANS-C01](https://www.whizlabs.com/aws-advanced-networking-speciality/) (**45–80 selected hours estimated**; page lists 103 videos, 54 labs, nine practice quizzes and sandbox access).
-
-No exact current Tutorials Dojo or MeasureUp ANS-C01 product was independently verified September 1. Avoid recalled-question products. Suggested preparation is **140–220 hours** for an experienced network engineer and **250–400 hours** when core routing/BGP, DNS, security and hybrid prerequisites are still developing—subject to the retirement deadline.
-
----
 
 ## Source map and freshness notes
 
-The root and four domain pages define the current technical assessment contract; the English certification page defines the retirement and live delivery contract. Several localized pages still show the earlier August 25 date, so the English page and scheduler take precedence for a candidate booking now. No replacement certification is announced.
+The root and four domain pages define the current technical assessment contract; the English certification page defines the retirement and live delivery contract. The Japanese page still shows August 25 while the English page shows December 31; confirm the actual language/date in the scheduler before booking. No replacement certification is announced.
 
 - **VERIFY CURRENT:** December 31 availability, service/features, route preference, supported Regions, quotas, bandwidth/packet/connection limits, MTU, encryption, logging fields, pricing and training availability.
 - **Stable troubleshooting pattern:** exact flow/name → control-plane route/DNS → state/security/translation → forward and return data plane → measured evidence → smallest reversible correction → regression/intent automation.
 - **After retirement:** retain this page as a high-value AWS networking reference while clearly removing it from active-certification recommendations.
 
 This guide uses no recalled exam questions or restricted content. The knowledge checks are original and test published concepts rather than reproducing vendor items.
+
+---
+
+## Places to learn
+
+This is **not a complete list**, and it is not meant to be consumed in full. Because ANS-C01 retires December 31, only start an exam-specific plan if the remaining schedule is realistic. The technical content remains useful after certification retirement. Public catalogs were checked September 28; paid lessons were not reviewed. O'Reilly/Udemy were blocked and Skill Builder/Whizlabs returned shells, so their precise runtimes, update dates and entitlements are not newly verified.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| AWS exam guide and retiring Skill Builder plan | Public/free-account/subscription mix | 35–60 hours selected plus labs |
+| Pluralsight ANS-C01 path | Paid/trial | 53+ hours including legacy path; select current modules |
+| O'Reilly 2025 Packt certification guide | Paid/trial | 30–50 hours estimated reading/labs |
+| Udemy/Maarek-Agrawal current course | Paid | 50–80 hours estimated including labs |
+| Whizlabs course/practice/labs | Paid | 45–80 hours estimated |
+
+- **Official route:** current guide, live [retiring certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/), [AWS networking study areas](https://aws.amazon.com/blogs/training-and-certification/10-study-areas-for-the-aws-certified-advanced-networking-specialty-exam/), and the [Skill Builder networking/ANS plan](https://explore.skillbuilder.aws/learn/public/learning_plan/view/89/networking-learning-plan) (**about 35–60 selected hours plus deep labs**). The Skill Builder shell did not expose current plan metadata; use the credential page for the announced exam date.
+- **Structured path:** [Pluralsight ANS-C01](https://www.pluralsight.com/paths/aws-certified-advanced-networking-specialty-ans-c01) (**53 listed hours, six courses and two labs**, including legacy content). Prefer the 2025–2026 domain modules; add substantial labs.
+- **Current book:** [O'Reilly / Packt ANS-C01 Certification Guide](https://www.oreilly.com/library/view/aws-certified-advanced/9781835080832/) (**30–50 hours estimated**, edition/runtime not reverified) or [Sybex 2nd Edition](https://www.oreilly.com/library/view/aws-certified-advanced/9781394171859/) (**30–50 hours estimated**; verify edition and current feature gaps).
+- **Compact video supplement:** [O'Reilly / Chad Smith ANS-C01](https://www.oreilly.com/library/view/aws-certified-advanced/9780138319311/) (**8–15 hours estimated** with independent scenario work; runtime not reverified); use for scenario review, not as the sole route.
+- **Current long-form course:** [Udemy/Stéphane Maarek and Chetan Agrawal ANS-C01](https://www.udemy.com/course/aws-certified-advanced-networking-specialty-ans/) (**50–80 hours estimated** including labs; runtime/lecture count/update date not reverified).
+- **Compact alternative:** [Udemy/Neal Davis ANS-C01](https://www.udemy.com/course/aws-advanced-networking-specialty-ans/) (**25–45 hours estimated** including labs; runtime and update date not reverified).
+- **Lab/practice route:** [Whizlabs ANS-C01](https://www.whizlabs.com/aws-advanced-networking-speciality/) (**45–80 selected hours estimated**; current video/lab/practice counts and sandbox entitlement need account verification).
+
+No exact current Tutorials Dojo or MeasureUp ANS-C01 product was independently verified September 1. Avoid recalled-question products. Suggested preparation is **140–220 hours** for an experienced network engineer and **250–400 hours** when core routing/BGP, DNS, security and hybrid prerequisites are still developing—subject to the retirement deadline.
+
+---
