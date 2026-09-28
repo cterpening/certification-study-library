@@ -121,11 +121,18 @@ For each certification:
    they improve learning. Update affected supporting documentation, source catalog, health
    evidence, validation record and a dated research report. Keep objective baselines intact
    unless an actual reviewed blueprint change justifies replacing them.
+   Synchronize its shared resource entry with
+   `python scripts/sync_learning_resources.py --exam-code AB-210 --write`
+   (replace the example code), and reconcile the README's review status. This copies the
+   guide's resource section with adjusted local links; it does not fetch sources or create
+   a review receipt. `--reviewed --write` reconciles all currently matching review receipts.
 4. Record content review, independent/human review and live lab execution separately.
    Complete research with unresolved vendor conflicts as `reviewed-with-blockers`; preserve
    the guide's stricter review-required/blocked status until the evidence gap is resolved.
 5. Add the receipt, run the command above with `--publish-status`, and run the shared gate:
-   unit tests, repository validation, site preparation, strict MkDocs build and site validation.
+   unit tests, repository validation, `python scripts/sync_learning_resources.py --reviewed`,
+   site preparation, strict MkDocs build and site validation. The resource command checks
+   for drift without writing by default; CI checks it before validation/deployment proceeds.
    Inspect the diff, stage the certification and its supporting changes, commit, and push.
    Confirm GitHub validation/deployment before treating publication as complete, then move
    to the next certification. Record any actual failure and repair it before continuing.

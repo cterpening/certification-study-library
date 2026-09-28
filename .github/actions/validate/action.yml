@@ -23,6 +23,10 @@ runs:
       shell: bash
       run: python3 scripts/validate_repository.py
 
+    - name: Check reviewed learning catalog for drift
+      shell: bash
+      run: python3 scripts/sync_learning_resources.py --reviewed
+
     - name: Prepare and build static site
       shell: bash
       run: |
