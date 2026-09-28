@@ -12,6 +12,8 @@ An independent, AI-assisted, source-driven library of certification study guides
 
 ## What this library is
 
+Try the [runnable learning labs](docs/LAB-VALIDATION.md) for starter files, deliberate failure cases, recorded local results, and practitioner review checklists.
+
 People learn in different ways. This project does not prescribe one learning path or claim that one resource is best for everyone. It provides several ways to approach the same published objective:
 
 - concise notes for review;

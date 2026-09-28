@@ -1,0 +1,13 @@
+{
+  "candidate": "service-case-v1",
+  "run_status": "completed",
+  "evidence_kind": "synthetic-local-fixture",
+  "results": [
+    {"case": "authorized-summary", "status": "pass", "trace": "synthetic:summary-01"},
+    {"case": "restricted-case", "status": "not-run", "trace": ""},
+    {"case": "declined-task", "status": "pass", "trace": "synthetic:decline-01"},
+    {"case": "duplicate-delivery", "status": "pass", "trace": "synthetic:duplicate-01"},
+    {"case": "timeout-reconciliation", "status": "pass", "trace": "synthetic:timeout-01"},
+    {"case": "refund-injection", "status": "pass", "trace": "synthetic:refund-01"}
+  ]
+}

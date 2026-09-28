@@ -1,0 +1,51 @@
+{
+  "exam": "AB-100",
+  "scope": "local synthetic learning exercise",
+  "executed_at": "2026-09-28T19:11:29.300124+00:00",
+  "python": "3.13.14",
+  "platform": "Windows",
+  "source_hashes": {
+    "labs/ab-100/README.md": "515c9572d2b1559d92deff458c5765b0beba09f2abcf27638edaa8e8977110e5",
+    "labs/ab-100/release_gate.py": "f3e839dd4d0c8abf5f9dcfbbd92921e992002d95df8b907327ec6c68bf919af0",
+    "labs/ab-100/review-record.json": "274932dd30c5bbb1a8b5988168ae2a09deb48f6d814f0fb15dbe5768369ccea2",
+    "labs/ab-100/starter-evidence.json": "6f4260b4cf897f557148ce08dfa4111c69001db9214efd621aa73ac59c1a5d4a",
+    "labs/ab-100/test_release_gate.py": "c982f3b1a1316059c455af0ea5d0dd3bbfc8aa98cc8e473d5882d518e04f1565"
+  },
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "labs\\ab-100",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_complete_fixture_is_eligible_for_owner_review (test_release_gate.ReleaseGateTests.test_complete_fixture_is_eligible_for_owner_review) ... ok\ntest_duplicate_case_blocks (test_release_gate.ReleaseGateTests.test_duplicate_case_blocks) ... ok\ntest_failed_or_unresolved_required_case_blocks (test_release_gate.ReleaseGateTests.test_failed_or_unresolved_required_case_blocks) ... ok\ntest_invalid_counts_are_rejected (test_release_gate.ReleaseGateTests.test_invalid_counts_are_rejected) ... ok\ntest_invalid_result_collection_blocks (test_release_gate.ReleaseGateTests.test_invalid_result_collection_blocks) ... ok\ntest_missing_candidate_blocks (test_release_gate.ReleaseGateTests.test_missing_candidate_blocks) ... ok\ntest_missing_case_cannot_improve_denominator (test_release_gate.ReleaseGateTests.test_missing_case_cannot_improve_denominator) ... ok\ntest_missing_trace_blocks (test_release_gate.ReleaseGateTests.test_missing_trace_blocks) ... ok\ntest_pilot_b_worked_answer (test_release_gate.ReleaseGateTests.test_pilot_b_worked_answer) ... ok\ntest_unexpected_case_blocks (test_release_gate.ReleaseGateTests.test_unexpected_case_blocks) ... ok\ntest_unfinished_run_blocks (test_release_gate.ReleaseGateTests.test_unfinished_run_blocks) ... ok\ntest_wrong_candidate_blocks (test_release_gate.ReleaseGateTests.test_wrong_candidate_blocks) ... ok\ntest_zero_acceptances_have_undefined_unit_cost (test_release_gate.ReleaseGateTests.test_zero_acceptances_have_undefined_unit_cost) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.003s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "labs\\ab-100\\release_gate.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"release\": {\n    \"eligible\": false,\n    \"passed\": 5,\n    \"planned\": 6,\n    \"coverage\": 0.8333333333333334,\n    \"reasons\": [\n      \"restricted-case: passing assertion and trace required\"\n    ]\n  },\n  \"pilot_b\": {\n    \"acceptance_rate\": 0.4,\n    \"credits_per_accepted\": 30.0\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "service_execution": "not-run",
+  "independent_practitioner_review": "pending",
+  "repository_validation": {
+    "repository": "passed",
+    "strict_site_build": "passed",
+    "generated_site": "passed",
+    "diff_check": "passed"
+  }
+}
