@@ -3,6 +3,146 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "dp300-insights",
+      "title": "Intelligent Insights overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Overview, operation, destinations, regional exclusions and diagnostics sections read. Distinguish SQLInsights log from retired SQL Insights; no insight generated. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-compaction",
+      "title": "Automatic index compaction",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Support, enable/disable, operation, maintenance comparisons, statistics, limitations and monitoring sections reviewed; no preview execution. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-connectivity-tests",
+      "title": "MI automatic internal connectivity tests",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Overview, May deployment, subnet capacity and audit/XEvents/error-log signatures reviewed. Username-only matching is insufficient; no internal test performed. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-sqldb-release",
+      "title": "Azure SQL Database release notes",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Preview/GA and 2026 release entries reviewed; Entra principals, compaction, backup/LTR, watcher and CES boundaries considered. Not every linked feature tested. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-mi-release",
+      "title": "Azure SQL Managed Instance release notes",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Preview/GA and current update-policy/backup/connectivity entries reviewed; implementation documentation used to constrain summaries. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-compaction-blog",
+      "title": "Stop defragmenting and start living: introducing auto index compaction",
+      "url": "https://techcommunity.microsoft.com/blog/azuresqlblog/stop-defragmenting-and-start-living-introducing-auto-index-compaction/4500089",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Dimitri Furman, March 18 2026. Narrative and experiment results read; appendix linked but not reviewed end to end or executed. Learning exercise qualified against current product limits. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-watcher-blog",
+      "title": "Introducing database watcher for Azure SQL",
+      "url": "https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-database-watcher-for-azure-sql/4085637",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Dimitri Furman, March 20 2024. Main article reviewed; roadmap and old SQL Insights status historical, current alerts/status from docs. Comment queries not treated as validated lab code. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-enclave-client",
+      "title": "Develop applications using Always Encrypted with secure enclaves",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Product/attestation matrix and driver prerequisites read; normal MI Always Encrypted support does not establish enclave support. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-querystore-runtime",
+      "title": "Query Store runtime statistics reference",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Identity/grouping, active-interval rows, execution types, units and count/average columns reviewed; no SQL execution. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp300-backup-immutable",
+      "title": "Automatic backup immutability",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "September 27 DP-300 deep review: Entire overview and limitations read; retention and supported policy/tier distinguished. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "sc900-workloads",
       "title": "Microsoft Entra workload identities",
       "url": "https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview",
@@ -15063,11 +15203,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-27",
       "supported_exams": [
         "DP-300"
       ],
-      "notes": "Commercial DP-300 practice test; verify current objective date and question count before purchase."
+      "notes": "Public listing: 160 questions (34+34+38+23+31), December 2022 last update. Current April/October coverage not established; no questions or paid access reviewed. September 27 DP-300 deep review: Public product count, domain allocation and December 2022 update inspected; no paid questions reviewed. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
     }
     ,
     {
@@ -15108,11 +15248,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
+      "last_checked": "2026-09-27",
       "supported_exams": [
         "DP-300"
       ],
-      "notes": "Page displayed four courses, one lab, seven hours and a practice exam, with course updates through July 2026."
+      "notes": "Public listing: five courses (9h11) and 30-minute lab; ten path hours rounded. HA/DR added September 14 2026. No dedicated planning/deployment course title displayed; paid contents not reviewed. September 27 DP-300 deep review: Public path metadata inspected and runtime summed; no paid course content or lab executed. See docs/research/2026-09-27-dp-300-deep-review.md No live infrastructure execution."
     }
     ,
     {

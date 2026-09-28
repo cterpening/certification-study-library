@@ -4,16 +4,15 @@ As of 2026-09-27; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 36 have review work.
+50 guides; 35 have review work.
 
-Next batch: AZ-800, DP-300, MD-102.
+Next batch: AZ-800, MD-102, MS-700.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
-| [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | pending | Pending | not-recorded |
 | [MD-102](../guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md) | pending | Pending | not-recorded |
 | [MS-700](../guides/MS-700-managing-microsoft-teams.md) | pending | Pending | not-recorded |
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
@@ -61,6 +60,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | pending | Pending | not-recorded |
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | pending | Pending | not-recorded |
 | [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | pending | Pending | not-recorded |
+| [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | reviewed | 2026-09-27 | offline-only |
 | [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | reviewed | 2026-09-27 | offline-only |
 
 ## Completion rule

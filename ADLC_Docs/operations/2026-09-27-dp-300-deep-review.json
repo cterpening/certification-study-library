@@ -1,0 +1,3707 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "DP-300",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "cfc93171f991488c2d2fda1af7b9738f8450cc6a5734ef6aee8d3f1c0948d246",
+  "guide_after_sha256": "04654d565f258e5484778111f18a7ea2088161ef6af46783a7ea039c7e4186f2",
+  "prior_records": {
+    "exam": {
+      "code": "DP-300",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Administering Microsoft Azure SQL Solutions",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+      "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical SQL Server and Azure SQL administration, T-SQL, relational engine fundamentals, security, performance tuning, automation, backup and restore, migration, and high availability experience."
+    },
+    "review": {
+      "id": "dp-300-2026-08-31-source-validation",
+      "exam_code": "DP-300",
+      "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and implement data platform resources",
+          "guide_sections": [
+            "Sections 1–2",
+            "Migration scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Implement a secure environment",
+          "guide_sections": [
+            "Section 3",
+            "Migration and recovery scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Monitor, configure, and optimize database resources",
+          "guide_sections": [
+            "Section 4",
+            "Performance scenario",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Configure and manage automation of tasks",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Plan and configure a high availability and disaster recovery (HA/DR) environment",
+          "guide_sections": [
+            "Section 6",
+            "Migration and recovery scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 65,
+        "reachable": 62,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five April 24, 2026 objective groups and every published subobjective are mapped to platform choices, dependency paths, configuration boundaries, evidence, failure actions, three integrated scenarios, eight independent labs and 28 original knowledge checks. All 65 cited URLs are exact source-catalog entries: 62 were reachable and three O'Reilly/Udemy pages were access-blocked; no cited page was missing or broken. The guide covers Azure SQL Database, Managed Instance, SQL Server on Azure VMs and hybrid SQL, SQL database in Fabric, both Arc SQL models, automated deployment, partitioning/sharding/compression, current migration methods, Entra/SQL authorization, network/encryption/compliance controls, database watcher/Query Store/Extended Events/DMVs, query and resource tuning, Agent/elastic jobs/Azure automation, and platform-specific backup/HA/DR. It explicitly marks Azure Data Studio as retired February 28, 2026 and directs readers to supported current migration/tool experiences. No upcoming blueprint change or retirement was announced on the official pages."
+    },
+    "sources": [
+      {
+        "id": "microsoft-reactor",
+        "title": "Microsoft Reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "AI-901",
+          "AI-103",
+          "AB-100",
+          "AZ-801",
+          "AZ-802",
+          "DP-300",
+          "DP-800",
+          "AI-200",
+          "AI-300",
+          "SC-500"
+        ],
+        "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA"
+      },
+      {
+        "id": "oreilly-certification-practice-tests",
+        "title": "O'Reilly certification prep and interactive practice tests",
+        "url": "https://www.oreilly.com/products/certification-prep.html",
+        "publisher": "O'Reilly Learning",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "DP-900",
+          "AZ-802",
+          "DP-300"
+        ],
+        "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review."
+      },
+      {
+        "id": "microsoft-azure-sql-documentation",
+        "title": "Azure SQL documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-900",
+          "DP-300"
+        ]
+      },
+      {
+        "id": "az-800-john-savill-github",
+        "title": "John Savill public GitHub repositories",
+        "url": "https://github.com/johnthebrit",
+        "publisher": "John Savill",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-800",
+          "AZ-801",
+          "AZ-802",
+          "DP-300"
+        ],
+        "notes": "Public whiteboards and companion materials vary by series; verify the relevant repository and license before reuse."
+      },
+      {
+        "id": "az-802-doc-automation-runbook-types",
+        "title": "Azure Automation runbook types",
+        "url": "https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-802",
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-01",
+        "title": "Azure Arc-enabled data-services planning",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-02",
+        "title": "Bicep overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-03",
+        "title": "ARM deployment operations",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-04",
+        "title": "database watcher overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-05",
+        "title": "Active geo-replication",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-06",
+        "title": "SQL Database auditing",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-07",
+        "title": "Microsoft Entra service principals with Azure SQL",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-08",
+        "title": "automated backups",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-09",
+        "title": "Automatic tuning for Azure SQL Database",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-10",
+        "title": "Business continuity with Azure SQL Database",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-11",
+        "title": "elastic jobs guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-12",
+        "title": "configuration tutorial",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-13",
+        "title": "Failover groups overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-14",
+        "title": "Azure SQL Database firewall rules",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-15",
+        "title": "LTR",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-16",
+        "title": "Azure SQL monitoring and tuning",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-17",
+        "title": "Monitor performance with DMVs",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300",
+          "DP-800"
+        ]
+      },
+      {
+        "id": "dp-300-doc-18",
+        "title": "Private Link for Azure SQL Database",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-19",
+        "title": "Restore Azure SQL Database from backup",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-20",
+        "title": "Secure Azure SQL Database",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-21",
+        "title": "Transparent data encryption",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-22",
+        "title": "copy or move a Managed Instance database",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-23",
+        "title": "Azure SQL Managed Instance overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-24",
+        "title": "Migrate to Azure SQL",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-25",
+        "title": "Always On availability groups on Azure VMs",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-26",
+        "title": "Failover cluster instances on Azure VMs",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-27",
+        "title": "Azure Database Migration Service",
+        "url": "https://learn.microsoft.com/en-us/azure/dms/dms-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-credential",
+        "title": "Azure Database Administrator Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-practice-assessment",
+        "title": "Microsoft free DP-300 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Free official readiness assessment linked from the credential and study-guide pages; use diagnostically."
+      },
+      {
+        "id": "dp-300-blueprint",
+        "title": "official DP-300 study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-28",
+        "title": "SQL Server to Azure SQL Database migration overview",
+        "url": "https://learn.microsoft.com/en-us/data-migration/sql-server/database/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-29",
+        "title": "SQL database in Fabric overview",
+        "url": "https://learn.microsoft.com/en-us/fabric/database/sql/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300",
+          "DP-800"
+        ]
+      },
+      {
+        "id": "dp-300-data-exposed",
+        "title": "Data Exposed",
+        "url": "https://learn.microsoft.com/en-us/shows/data-exposed/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Microsoft product-team data show used selectively for current Azure SQL and SQL Server explanations."
+      },
+      {
+        "id": "dp-300-exam-readiness-zone",
+        "title": "Exam Readiness Zone DP-300 search",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=DP-300",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Official objective-review video search; verify recording dates against the April 2026 blueprint."
+      },
+      {
+        "id": "dp-300-doc-30",
+        "title": "Log shipping",
+        "url": "https://learn.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-31",
+        "title": "SQL Server backup and restore",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-32",
+        "title": "Data compression",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-33",
+        "title": "Extended Events overview",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/extended-events/extended-events?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-34",
+        "title": "Table and index partitioning",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300",
+          "DP-800"
+        ]
+      },
+      {
+        "id": "dp-300-doc-35",
+        "title": "Execution plans",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-36",
+        "title": "Intelligent Query Processing",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-37",
+        "title": "Query Store usage scenarios",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-38",
+        "title": "Resource Governor",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-39",
+        "title": "Always Encrypted overview",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300",
+          "DP-800"
+        ]
+      },
+      {
+        "id": "dp-300-doc-40",
+        "title": "secure-enclave guidance",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-41",
+        "title": "Ledger overview",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300",
+          "DP-800"
+        ]
+      },
+      {
+        "id": "dp-300-doc-42",
+        "title": "Row-level security",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300",
+          "DP-800"
+        ]
+      },
+      {
+        "id": "dp-300-doc-43",
+        "title": "SQL Server documentation",
+        "url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-44",
+        "title": "SQL Server Agent",
+        "url": "https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-45",
+        "title": "Microsoft's retirement guidance",
+        "url": "https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-doc-46",
+        "title": "SSMS migration component",
+        "url": "https://learn.microsoft.com/en-us/ssms/migrate/migrate-sql-server-azure-sql",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-official-course",
+        "title": "DP-300T00 Implement scalable database solutions using Azure SQL",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ]
+      },
+      {
+        "id": "dp-300-measureup",
+        "title": "MeasureUp DP-300 practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Commercial DP-300 practice test; verify current objective date and question count before purchase."
+      },
+      {
+        "id": "dp-300-oreilly-study-companion",
+        "title": "O'Reilly/Apress DP-300 study companion",
+        "url": "https://www.oreilly.com/library/view/administering-microsoft-azure/9798868815850/",
+        "publisher": "O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Geoff Hiten, September 2025; page displayed 388 pages and 9h44m. Reconcile with the April 2026 blueprint and current tooling."
+      },
+      {
+        "id": "dp-300-oreilly-video",
+        "title": "O'Reilly Administering Microsoft Azure SQL video",
+        "url": "https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/",
+        "publisher": "O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Mikey Bronowski, September 2024; page displayed 1h44m. Compact older overview, not complete April 2026 coverage."
+      },
+      {
+        "id": "dp-300-pluralsight-path",
+        "title": "Pluralsight DP-300 path",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate",
+        "publisher": "Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Page displayed four courses, one lab, seven hours and a practice exam, with course updates through July 2026."
+      },
+      {
+        "id": "dp-300-udemy-phillip-burton",
+        "title": "Udemy DP-300 course by Phillip Burton",
+        "url": "https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/",
+        "publisher": "Udemy / Phillip Burton",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Page displayed 173 lectures, 17h40m and explicit April 24, 2026 objective alignment."
+      },
+      {
+        "id": "dp-300-whizlabs",
+        "title": "Whizlabs DP-300",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-300/",
+        "publisher": "Whizlabs",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Commercial training/practice/lab page; verify current duration, counts and April 2026 alignment before purchase."
+      },
+      {
+        "id": "dp-300-azure-sql-youtube",
+        "title": "Azure SQL YouTube channel",
+        "url": "https://www.youtube.com/@AzureSQL",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Microsoft Azure SQL product channel; select current videos by objective."
+      },
+      {
+        "id": "dp-300-john-savill-youtube",
+        "title": "John Savill Azure SQL YouTube search",
+        "url": "https://www.youtube.com/@NTFAQGuy/search?query=Azure%20SQL",
+        "publisher": "John Savill",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-300"
+        ],
+        "notes": "Supplemental Azure SQL architecture search, not an end-to-end DP-300 course."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "ac6298fd4d38c3372c90adf55c02af6a3100cfc31299c3786a5c96c1bc7ac89f",
+      "guide_sections": "2 / Choose target",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "ccb77a858dc42f409ce121eb6cbce7bb5191992ccc2bdb2741b472e2216293d4",
+      "guide_sections": "2 / Deployment methods; 5 / ARM/Bicep",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4d6cdb77b7e5fce8a1a7a4b5257d3a9dcdb3e473b40d8e94e8ca1e7567b4d68a",
+      "guide_sections": "2 / Arc hybrid",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "718b7c39160b3a286ae8f2f9c201faeb96e15bc845ad5f3561edf8cca95de621",
+      "guide_sections": "2 / Fabric SQL",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "1822d88e525c5e44b98a4dc68183fa86d59fffb297996471945b26e2255da200",
+      "guide_sections": "2 / Partition design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "19618f7b05b78897965e0e284aa16da0bdca14357e70f23df6c00b9e968ed12a",
+      "guide_sections": "2 / Sharding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "10fab863a47cde0c85fe453f7b06d94522bc90425909368ed6219c7cb1d2288e",
+      "guide_sections": "2 / Deploy resources; Lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "725d747584792d89fe5a826b954cb17b4639ffb2536a8590ff43034e626fc6f0",
+      "guide_sections": "2 / Hybrid deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "e4b46fb30ebc0e7d1d6a86857071d822620dd369ee55c0a26f0f98e3d83449be",
+      "guide_sections": "2 / Patch/update",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "da6f6bb308cf9c4570e2dae33e421b1cd2e3aed2f34f290cf605dd6ea73af631",
+      "guide_sections": "2 / SQL Database scaling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "2889e342ac95cbf3552ed4d032fdef029ff44c78e9b4a9db63e164b23a7fcd96",
+      "guide_sections": "2 / MI scaling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "25c3a1c1b1a6113d36b6924e47ed7c80fc14dc819a27365002bba58100a85de2",
+      "guide_sections": "2 / VM performance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "a6bf4d6839d782a3cc01f8ff75b2d965b8eecd841a553aa52a4c4848ac5b977e",
+      "guide_sections": "2 / Partitioning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "7247ae55ddefd096a7d7f22a3a227031e6daf56fe2b2b924cdf7d400b1d02d7a",
+      "guide_sections": "2 / Data compression",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "55fc9beeb83029a71fc58cdcf9ef341ff7405a5a1265fc97fffbc4cf575f0ced",
+      "guide_sections": "2 / Migration assessment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "b36c24c0e0515426aac664f5c392bdf17afaed92a0c7c96388fed17ad1c200d9",
+      "guide_sections": "2 / Offline/online decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "b31a8a0b0f9bed557d2305e7a4688353aecfcc76c342048bfe6c6c63914dcd94",
+      "guide_sections": "2 / Online replication/cutover",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "6d1de1c07d66a9bdcc26d7325e10d6b1435c21f18eefffe9b96b6a6b651b5711",
+      "guide_sections": "2 / Offline restore/import",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "98cd6476edaf778857c9aa545bb7dc85ae6fdc3f3e3c31946f69aa2d8c5f82a8",
+      "guide_sections": "2 / Execute migration; Lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "4d786c2732c01c077a7390c2b8276ef87a61703d58bfbbef1c9ffd61db37ba2d",
+      "guide_sections": "2 / Azure-to-Azure support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "03ddf80cf3ef0464f3a5f93417dadf8d3c4cd5f6a1f3999754faa6dd96086185",
+      "guide_sections": "2 / MI copy/move worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "cd2edcce329614db583ed67b4950ec72e400969057b47fa244ee30caed354f61",
+      "guide_sections": "2 / Migration failure patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "04bb5602a84763d28659fdefbea760e53034b28fae60ff5a1d33111322ba84f0",
+      "guide_sections": "3 / Entra authentication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "fc7a5902660d9fc881968af333b0b9fe7cfd558b43ecab1cba197858d591c523",
+      "guide_sections": "3 / SQL VM/MI authentication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "0154ed010a36e96d553e944a00c68469ddba3a52e168868704914d2862876378",
+      "guide_sections": "3 / SQL authorization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "931b19f19b040d6f3c537ffb473d0073ecabd6052cb860aa3b36ec544e461b13",
+      "guide_sections": "3 / Entra users",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "e01783f87006457c5b69b009a1c890d8cae98f6fbdaa9ef11a909787ddbd363c",
+      "guide_sections": "3 / Permissions; Lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "db73a9dce12b718d42b0ffe9493352e7496d7711bf7fafa54f766b6286fa27c8",
+      "guide_sections": "3 / Schemas and least privilege",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "99b47e8bf864c7c4aa0b05becb5b3d32592d1dace221a66c54852b105bc288ad",
+      "guide_sections": "3 / Authentication troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "a2a079525900aafcc2194c9c3c1f7da2878bd90bc79f6ae9eab84a983b8c1165",
+      "guide_sections": "3 / GRANT/DENY and Lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "ccbbf45a9d5fecc459c38049e669edfdcd2d680a7cb91680e8febf9c8a10ecff",
+      "guide_sections": "3 / TDE keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "69f0c63d6bf833ff5067e038e5e52ea3ebc008687e11e3a16af32ba9a5cf783b",
+      "guide_sections": "3 / Encryption matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "ff87dc2890c81e52f0f83aeea4741c7393cdec3ba8d30fe9d65e9b96ac876ef4",
+      "guide_sections": "3 / Firewalls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "1325c22626f47c141e475a34157246dcc117bc4bd2fdb26520dc186db64b87da",
+      "guide_sections": "3 / Always Encrypted",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "bbe62a8cedeb4800ef5783934cbbd6acf888bdc3a98b383503c4b3ce0829b571",
+      "guide_sections": "3 / Enclave/client matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "547be8a3a4eda083d2a54d03a2faa4629bfa2466ff381045e9b945010776080a",
+      "guide_sections": "3 / Private Link/service endpoints",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "2943729460207cd6dc917c266e467b7cc02d6f91317072aa16bd46cde633cea6",
+      "guide_sections": "3 / Classification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "b71afd3fa7e5affc674b2874752bc07e11327ccb1e6ecea92dde2f5797c0747f",
+      "guide_sections": "3 / Auditing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "f0ea9662134085d1f5bd409b10c77a2b476bce8525c2621086f01280214cdda3",
+      "guide_sections": "3 / Change tracking/CDC",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "4e1b75ae2949c6a0bcab7bea153ce3407d2759905edf13f69d40ad6a5a2d90da",
+      "guide_sections": "3 / Masking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "19fdec8536fc986eaa6071b2c026abb8b8a76ab302bcaacf8e2786a1d308feb9",
+      "guide_sections": "3 / Ledger",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "364a014b6ea934ff8ad72daa908778a37a9eff2183c3ba9c9ccda593b0c9180d",
+      "guide_sections": "3 / RLS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "355aa014fcdd3814fb791bbd8b92dc55b571a39018fec48e039b9eaec1e74c90",
+      "guide_sections": "4 / Baseline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "f57869f1091a94780c707cdc69f275b8bfc8af57791008f3bee0584cb51fb58e",
+      "guide_sections": "4 / Signal sources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "f169a271d46aebd291a879bc75b9d2c98b877a73985da436e1dae7db969237b4",
+      "guide_sections": "4 / Baseline and performance failure patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "3aad818d52091a084f317410c48aa8127e99cdfe354744d66798b4a37e4170fc",
+      "guide_sections": "4 / Configure monitoring; Lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "180d6ed01ea25fe416be0e249e209229200428aa2764bb183efb56c0fb1d8574",
+      "guide_sections": "4 / Watcher target worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "398a3dd3d656a78fe49ce667cc01752179144e997ab871ac33b8ae547f1155e9",
+      "guide_sections": "4 / Extended Events; Lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "7448d74bcc248ac7032984fbeccaead8f564675029ab6f739029319e63590a3f",
+      "guide_sections": "4 / Configure Query Store",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "47028eeff2e30f4cf2ef854681b3fb439dca163b24354f45c65b8639b4419c52",
+      "guide_sections": "4 / Weighted Query Store example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "87792c4b53dec312ce7614fdfb6c8f3f61b214beb1601fc085b7fa5d82c83de6",
+      "guide_sections": "4 / Blocking/deadlocks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "1fed3ba3484f8be6c338d12aed04ad2f74604d37f2c68b84ebf18923460a8f31",
+      "guide_sections": "4 / DMVs and waits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "41a929b5b3aa2ef2c334e6f2234c6756d1164da70e247b7fc2145c70e8f7bec3",
+      "guide_sections": "4 / Index decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "18202ebe99b6fa61ecea852ffcd974a082471f571b374f62fabaed1f1d04643d",
+      "guide_sections": "4 / Query constructs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "7cec76c1e45c1819de5aeaaa221f5f28ead822bce611d892b078bd0c3081ec11",
+      "guide_sections": "4 / Execution plans",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "085a2dabc3adceb48cdab2c8998915b8da4b524a10bad726d9159900f292e0a6",
+      "guide_sections": "4 / Intelligent Insights",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "0ed39acd20c6e1def9827a5f17e1bf50088542052e2c3d29fee1a2115014afc6",
+      "guide_sections": "4 / Index maintenance and compaction example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "81c98e284846f1530b09d7b59ca1af4f46f314742e5787b1ef9381213c31e2d7",
+      "guide_sections": "4 / Statistics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "ee6a47167e53a132bef8f69402ccd0f0e6f5e2f0454dc495037cc83717c4b202",
+      "guide_sections": "4 / Integrity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "4f0e5ceca0a7819bffd93990a8a27ed4c03d5eadbda48067298aa67f27289363",
+      "guide_sections": "4 / Automatic tuning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "f3f1e48f249bbe5268c3f48e163005a2bc6771ed9a47ccf540905334c09ab5b1",
+      "guide_sections": "4 / Server settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "1bf58f33dc099486c9e797f3893fd23f4f0f5e1ffcd24ef02a43a8dff89b2f7a",
+      "guide_sections": "4 / Resource Governor",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "1e382319226b7b5865a505767e9c7c23fafbe7f19fe67c78c3ecc0f86bb86dc8",
+      "guide_sections": "4 / Database-scoped settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "d01b081d7154b2e1f628ed70640970e5dd6fd32f38aa25c280b7d7a58e7a1bfc",
+      "guide_sections": "2 / Scale; 4 / Resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "467094a45d7495459c577f2e8d4774d34c0b67317fcf633bf57015018b66483d",
+      "guide_sections": "4 / IQP",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "b72432a5905418a5454a54a928a23dba605074f4f9daa4c8624a2a3903a4dd44",
+      "guide_sections": "5 / Agent schedules",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "e8753e3f388261e94d95fc34e9b834589d95b839d3206584296a076bec1812f3",
+      "guide_sections": "5 / Operators/alerts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "c8c626d5d0e919d0029731c210936f0eb6284b566414a58f0c2f94563991dcb2",
+      "guide_sections": "5 / Agent failures; Lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "d0cdc32a0646b6d73398b46684b37c84b4fdae2fd720ed9590a0a0b5cc64cc22",
+      "guide_sections": "5 / ARM/Bicep",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "6d96302691a227f15c8d587988205c3df090feabfd344ca52fd7693d4f9e547a",
+      "guide_sections": "5 / PowerShell",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "1c48c879251931689881c514ec3173366ae6a66c54c38b04fafdebb9d2f38008",
+      "guide_sections": "5 / CLI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "16cc1b3a332fd24fd3b6a443a62eb9ae2db3c41b5ae06bdaab74330d1b71d467",
+      "guide_sections": "5 / Deployment troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "905e50177ec5b5d88b84948eb84e174abff671bf7f5cb8042766274a61516d51",
+      "guide_sections": "5 / Elastic jobs/identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "02ed93bd1079100d905c9977146f05b5159867355a14ee5efd23ed0ff4d67774",
+      "guide_sections": "5 / Azure Automation tasks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "146203c225eb98feb89daf8ca77e1f3a462e85dc2001c624218688e0b7c42988",
+      "guide_sections": "5 / Automation alerts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "0ab1fa7447dda6d201ccff829aacccfa73fef93fab703d9ea28ba8cd333cdbaa",
+      "guide_sections": "5 / Failure patterns; Lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "d8818d3a240d31a9e597f4cc4d392ffe73a040cf6afef3e475ae6120a4d21dd8",
+      "guide_sections": "6 / RPO/RTO and recovery example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "f66596945ffc80416e2aca2312b3db267378b79d6fa711d2d2aeaaae45e3905d",
+      "guide_sections": "6 / Hybrid SQL HA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "d03fa7bdc42aea575934c2766afc8454adee50041f223f8ddf3d48cb199dc0c7",
+      "guide_sections": "6 / Azure continuity options",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "eceea6b141e0c75ea0ffc322a1d5f8a8aad4e0b0a5b190738c84f49f7d223a3d",
+      "guide_sections": "6 / Full recovery test; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "79ac5f876dfbb2c4e80a8f03929db5ed3ea808360b5aa4cb82150dbdf628ca19",
+      "guide_sections": "6 / Backup strategy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "17056c9a071c5019567a47271b24adf86692730869685fbee3bcdb05e2301cc7",
+      "guide_sections": "6 / Native backup; Lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "1c21723b02931d967788bb862160fa621ff6a5e0f58e01b9dcbe805f1d3513ef",
+      "guide_sections": "6 / Native restore; Lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "0fc15ad2c99c927c999e6cf2733fbfd922b583519094294d7a9e66c01bb84b6d",
+      "guide_sections": "6 / PITR",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "a90adb31e1a354e1a68a26825caa50aedd6c393732793ac08ca3fe0cbc696f45",
+      "guide_sections": "6 / LTR/immutability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "b1da215667376da94d2a4ced4b3aa58ff48c6f564ffa59562161e726739f9c8b",
+      "guide_sections": "6 / T-SQL backup/restore; Lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "1ae0040b9f7e0b7c4f87568794e35d4333d0c0dc22dbf7e144e584d5b7877e11",
+      "guide_sections": "6 / URL/cloud storage backup",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "b1701cb0ab02508afa30655ea17cca2d09068bfbcd19356b7cee911d1be77ada",
+      "guide_sections": "6 / Active geo-replication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "738a99e25483953445b77f174016f3a89385b825ffca1d9037a872ce4f11d042",
+      "guide_sections": "6 / AGs/MI link",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "a75ace6df5b599415848a339588cf556995985d454b7032def3b5ad360296b0a",
+      "guide_sections": "6 / Failover groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "3a0e29c7966291183ba22ed9783df81055f7febeb2a6ab98bb01f1a49f1c09c4",
+      "guide_sections": "6 / FCI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "8c4d63ac5a8762b9a20f9c7f10a3c9be56fec0643cb79058c51f1f9be805baa7",
+      "guide_sections": "6 / Log shipping",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "7d261a705f75c7ef7d10977cab6414a080e4a51f3c10fa791b773187602d0a08",
+      "guide_sections": "6 / HA monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 7,
+      "objective_sha256": "fe0c387995d3b00352b0a904bd7b3c634cb01a6d7addd72ecb36ebc8a161b145",
+      "guide_sections": "6 / HA failure patterns; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DP-300"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DP-300",
+        "title": "Administering Microsoft Azure SQL Solutions",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+        "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+        "snapshot_path": "data\\objective-snapshots\\dp-300-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dp-300-official-status.json",
+        "previous_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b",
+        "current_sha256": "f9f0c06f1a6e639035fd75d0db063dd6edcb30f50079e5a5157255ed4408ae57",
+        "previous_status_sha256": "74610ff56b280a6c327f1ab3fe585d24ca5f4bfed081b7db9d97fc2e312c511d",
+        "current_status_sha256": "6fb682a49f28a788a089159a5e1ccc7bbb3e51a48d1515282421aa0a92d0d20f",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 27, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 75,
+    "reachable": 72,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T03:33:10.336122+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T03:33:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "aca3cc11c9bb41b32eae3c11b2d637ce8f514c035af6e341b568e418798aefb8",
+      "text_characters": 180
+    },
+    {
+      "id": "oreilly-certification-practice-tests",
+      "url": "https://www.oreilly.com/products/certification-prep.html",
+      "checked_at": "2026-09-28T03:33:10.336808+00:00",
+      "health": {
+        "id": "oreilly-certification-practice-tests",
+        "url": "https://www.oreilly.com/products/certification-prep.html",
+        "checked_at": "2026-09-28T03:33:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/products/certification-prep.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification Prep - O'Reilly Media",
+        "canonical_url": "https://www.oreilly.com/products/certification-prep.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fd777d210877dd6aedc585cb7c2c23aa7695771f0ec79fd82360fd5ce2c5cd7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/products/certification-prep.html",
+      "sha256": "29a267543b629a77285b26b79a6b45230bfbd5073b7fee2e974040e2f29728bd",
+      "text_characters": 160
+    },
+    {
+      "id": "microsoft-azure-sql-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+      "checked_at": "2026-09-28T03:33:10.337248+00:00",
+      "health": {
+        "id": "microsoft-azure-sql-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/",
+        "checked_at": "2026-09-28T03:33:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Azure SQL documentation - Azure SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "5aa6894f451f5713374fec30a586b5efa24d256459276610cadf0d310fa1c0fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/?view=azuresql",
+      "sha256": "635da8ad7e9595864a0f79d34e12a641c3c74a64b5a5104def842b9e3f6ae283",
+      "text_characters": 2719
+    },
+    {
+      "id": "az-800-john-savill-github",
+      "url": "https://github.com/johnthebrit",
+      "checked_at": "2026-09-28T03:33:11.309334+00:00",
+      "health": {
+        "id": "az-800-john-savill-github",
+        "url": "https://github.com/johnthebrit",
+        "checked_at": "2026-09-28T03:33:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "johnthebrit - Overview",
+        "canonical_url": "https://github.com/johnthebrit",
+        "duration_signals": [],
+        "signal_fingerprint": "cb93ee69c087fc9381413f2a9c86e0ae2f73005e810768e36987f6f4cbbeeee8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit",
+      "sha256": "673fb2ac94a71a45925e0e89c50496c9f9770446e6dc3de93df2f8e825886623",
+      "text_characters": 2209
+    },
+    {
+      "id": "az-802-doc-automation-runbook-types",
+      "url": "https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types",
+      "checked_at": "2026-09-28T03:33:11.310555+00:00",
+      "health": {
+        "id": "az-802-doc-automation-runbook-types",
+        "url": "https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types",
+        "checked_at": "2026-09-28T03:33:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types",
+        "content_type": "text/html",
+        "page_title": "Azure Automation Runbook Types",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "b28a3185d78e647ef6a0bb89ba1ae66b7ff4961f9c9be407773b710693260294",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/automation/automation-runbook-types",
+      "sha256": "5b62dbffb4fad3271e70dd27dc5640a42e3bb7bcd2d58d0748973aa84712970f",
+      "text_characters": 30466
+    },
+    {
+      "id": "dp-300-doc-01",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services",
+      "checked_at": "2026-09-28T03:33:11.540405+00:00",
+      "health": {
+        "id": "dp-300-doc-01",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services",
+        "checked_at": "2026-09-28T03:33:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services",
+        "content_type": "text/html",
+        "page_title": "Plan an Azure Arc-enabled data services deployment - Azure Arc",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services",
+        "duration_signals": [],
+        "signal_fingerprint": "f5763554087b0776e04141c0a5525135f47dcf213d0b724b0c137d24fff0f48c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services",
+      "sha256": "b28755eeb234ff4fda6ef987ed1971f8fa0191b6cfa6ec0f4de42804c4181f90",
+      "text_characters": 9279
+    },
+    {
+      "id": "dp-300-doc-02",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+      "checked_at": "2026-09-28T03:33:11.607158+00:00",
+      "health": {
+        "id": "dp-300-doc-02",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+        "checked_at": "2026-09-28T03:33:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+        "content_type": "text/html",
+        "page_title": "What is Bicep? - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "4d60d0ae6069ae7431f6623c48302129cb00d80e0c4ffb3e8cdda10a23ad4f25",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+      "sha256": "ddd1f634f12c0809f1f2df973d269bd11872626347c4ee97c9ad43d814ffafb1",
+      "text_characters": 9926
+    },
+    {
+      "id": "dp-300-doc-03",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal",
+      "checked_at": "2026-09-28T03:33:11.857130+00:00",
+      "health": {
+        "id": "dp-300-doc-03",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal",
+        "checked_at": "2026-09-28T03:33:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal",
+        "content_type": "text/html",
+        "page_title": "Deployment history - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history",
+        "duration_signals": [],
+        "signal_fingerprint": "74df75fa0f3718f9af06dba21b54aac029a447e6373d2583b1305b9831e54d3b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal",
+      "sha256": "48760dd6ee5b7c209aa1248a567307e7def65f10e7ed82420eb4eaee8321cb0a",
+      "text_characters": 14232
+    },
+    {
+      "id": "dp-300-doc-04",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:11.932756+00:00",
+      "health": {
+        "id": "dp-300-doc-04",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Monitor Azure SQL workloads with database watcher - Azure SQL Database & SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "9c418787aad39a02128a124428ac2358120df3fb2b986407faeaf48d976d82d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+      "sha256": "fce53e30852eb2eb01df466cf63ee28cd8a6b8e9c9d216615231027852e5f706",
+      "text_characters": 36396
+    },
+    {
+      "id": "dp-300-doc-05",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db",
+      "checked_at": "2026-09-28T03:33:12.156739+00:00",
+      "health": {
+        "id": "dp-300-doc-05",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db",
+        "content_type": "text/html",
+        "page_title": "Active Geo-Replication - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "6288b7c83a9457fbf13c0e6aaaf7901be8d06dd31bfb87a9e0cbe1f9155cb760",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db",
+      "sha256": "8c68742127a5959b3376eddeab3bdfce6e7be1cbc77ddd7d0a832d813fcfa501",
+      "text_characters": 25236
+    },
+    {
+      "id": "dp-300-doc-06",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:12.243806+00:00",
+      "health": {
+        "id": "dp-300-doc-06",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Auditing - Azure SQL Database and Azure Synapse Analytics",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "22c5ffc0e5c6e90db0300f8c86ebeec2f01c0ec197a3a1a3d3a19f9ab26d29da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql",
+      "sha256": "8fa12cc3a53f573e794b048031548fbe6d84859564d641c34c0d953a9c4647ef",
+      "text_characters": 13677
+    },
+    {
+      "id": "dp-300-doc-07",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql",
+      "checked_at": "2026-09-28T03:33:12.417503+00:00",
+      "health": {
+        "id": "dp-300-doc-07",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Create Microsoft Entra Users Using Service Principals - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "824bda63b9c7e2b15957eaa74d1342ddeea437a31fb677ea8155225d8d8140b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql",
+      "sha256": "7666afec4f8a8b26ce5398c0a3505338fc1d6c95e29f98af7e8cc41feade2ce3",
+      "text_characters": 13914
+    },
+    {
+      "id": "dp-300-doc-08",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:12.525607+00:00",
+      "health": {
+        "id": "dp-300-doc-08",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Automatic, Geo-Redundant Backups - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql",
+        "duration_signals": [
+          "10 minutes",
+          "12 hours",
+          "24 hours",
+          "30 minutes",
+          "48 hours"
+        ],
+        "signal_fingerprint": "2a67b3d8fb8b3165af1c821a3d27211fab1bfd20e6563420b3052a1fb3ff74da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql",
+      "sha256": "8b95426fe6ed564170defc6963bce6279638a6d6e5ae0796e0e2dcf76452e312",
+      "text_characters": 34642
+    },
+    {
+      "id": "dp-300-doc-09",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:12.546716+00:00",
+      "health": {
+        "id": "dp-300-doc-09",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Automatic Tuning Overview - Azure SQL & SQL database in Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+        "duration_signals": [
+          "30 minutes",
+          "48 hours",
+          "72 hours"
+        ],
+        "signal_fingerprint": "b20fda8ea46a2889fd83042369fe7c9aacd616844f63962c760be06767edaac2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+      "sha256": "3595b445a154cb63362f9620deb4a39b0738606dfb41d1b06585db88dcdb7e7e",
+      "text_characters": 9071
+    },
+    {
+      "id": "dp-300-doc-10",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:12.792722+00:00",
+      "health": {
+        "id": "dp-300-doc-10",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Cloud Business Continuity - Disaster Recovery - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+        "duration_signals": [
+          "10 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "306d13df058317b2e9fe36c0dddd29be816040d6d7deda25d8ff7cbd8c4262b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+      "sha256": "ac22fd2c32debefd124aa5f08a94ac43f3200d18b7189448c723f9a0fcda6f29",
+      "text_characters": 9825
+    },
+    {
+      "id": "dp-300-doc-11",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:12.818771+00:00",
+      "health": {
+        "id": "dp-300-doc-11",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Elastic Jobs Overview - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "2f206ebf37259b266f447a20bb3686d3d52a1507ae3dffc1a4c68b5f0cf8d2a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+      "sha256": "8579bbca691d4ed778bab98c0247806df6f930368673b3e81dc4eb888b080367",
+      "text_characters": 27593
+    },
+    {
+      "id": "dp-300-doc-12",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql",
+      "checked_at": "2026-09-28T03:33:12.843635+00:00",
+      "health": {
+        "id": "dp-300-doc-12",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql",
+        "checked_at": "2026-09-28T03:33:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Create, configure, and manage elastic jobs - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "7602a4d54d00cfb2bcb027bb7582c23c8efe8bbb93a74fee377a6adb06122bb5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql",
+      "sha256": "de350d6ddd5c0627a13d03d1f82796695c88d7d88fe454adf82c25379fe15337",
+      "text_characters": 15696
+    },
+    {
+      "id": "dp-300-doc-13",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.092445+00:00",
+      "health": {
+        "id": "dp-300-doc-13",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Failover Groups Overview & Best Practices - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "30fcb0fbd767d9eea94b755c0145798feacf3ece1d7458a3224fdb641b9b7bf4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+      "sha256": "a34729866cdc6ed460678aa9a8837f033fb1e57d4d3a674774525319f34d1701",
+      "text_characters": 26889
+    },
+    {
+      "id": "dp-300-doc-14",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.127310+00:00",
+      "health": {
+        "id": "dp-300-doc-14",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "IP Firewall Rules - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql",
+        "duration_signals": [
+          "5 minute",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "2c26efdc12f21a58b0ec0da87a2a8c3f28ceef4b5417e5597f9db557193938a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql",
+      "sha256": "4c5b6800fb45a5247318821b47c3f578a3676d216bb365a19792da403d9c1231",
+      "text_characters": 18998
+    },
+    {
+      "id": "dp-300-doc-15",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.143305+00:00",
+      "health": {
+        "id": "dp-300-doc-15",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Long-Term Retention Backups - Azure SQL Database & Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "719a094d71ea9259775e9fffd853e8bd486a889c4e268772e4f1f45248b0e4bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql",
+      "sha256": "eeca15cc9e5de22e03e37771c14da6f3717d9538529939975a1c8c4921a7215a",
+      "text_characters": 10724
+    },
+    {
+      "id": "dp-300-doc-16",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.417944+00:00",
+      "health": {
+        "id": "dp-300-doc-16",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Monitoring and tuning documentation - Azure SQL Database & Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "e258f38583094ce2a19cdaf2267c11d982954a62f18f5df86bded465f56787e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql",
+      "sha256": "50ce5cceca5f10d161ec80ae56c2271042c8d104f3b1fd0a562b5a6f84fc2aae",
+      "text_characters": 2080
+    },
+    {
+      "id": "dp-300-doc-17",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.426142+00:00",
+      "health": {
+        "id": "dp-300-doc-17",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Monitor Performance Using DMVs - Azure SQL Database & SQL database in Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql",
+        "duration_signals": [
+          "15 minutes",
+          "2 hours",
+          "2.5 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "884441dec447ffc1d02f3c5e6d1a5ee9d13fdaaf303a0a46eb96cf70d24824e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql",
+      "sha256": "aa198cbb172baa526fde915af5fd007a59ddd93769cc6feab6a10ab72f1563ec",
+      "text_characters": 42170
+    },
+    {
+      "id": "dp-300-doc-18",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.459670+00:00",
+      "health": {
+        "id": "dp-300-doc-18",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Azure Private Link - Azure SQL Database & Azure Synapse Analytics",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "d247468778cd0a16c586591dcebb65e779c65ca0883eb44f9ac6b119f5050efc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql",
+      "sha256": "7833b405b63ed2cfb9135014927c368bee8f1534e11909286c6eaf714c547914",
+      "text_characters": 15070
+    },
+    {
+      "id": "dp-300-doc-19",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.748277+00:00",
+      "health": {
+        "id": "dp-300-doc-19",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Restore a Database from a Backup - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "164f9860f4fbe0f0460b05d8ce2a6a3a876f3fda6b8636eacc9b6c3a1f7bfc8e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql",
+      "sha256": "c15473f84278695f7831d7f4bbe380bad6d6e0c810673c12464c8b8a824e42a5",
+      "text_characters": 17528
+    },
+    {
+      "id": "dp-300-doc-20",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.756410+00:00",
+      "health": {
+        "id": "dp-300-doc-20",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Secure your Azure SQL Database - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "0c87bb4a722f5b653e16ee8509e8feb217cb0ea7acfdfc2c7694eea20754dcde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql",
+      "sha256": "17e82c61e86f350779495415defcb9164cae4bbb0bada66d13c3e12d2a7a4e5e",
+      "text_characters": 15373
+    },
+    {
+      "id": "dp-300-doc-21",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:13.764102+00:00",
+      "health": {
+        "id": "dp-300-doc-21",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Transparent Data Encryption - Azure SQL Database & Azure SQL Managed Instance & Azure Synapse Analytics",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "351c9b607cf981f72fbc4cefa22d503abeeee21e53ef5c204794d9f677006c23",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql",
+      "sha256": "9e0517f96bd59e7741acfb999ebbda3f8d9a66df5778cdbe86a08db1bff99547",
+      "text_characters": 13312
+    },
+    {
+      "id": "dp-300-doc-22",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+      "checked_at": "2026-09-28T03:33:14.029846+00:00",
+      "health": {
+        "id": "dp-300-doc-22",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Copy or Move a Database - Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "0c3c072b1346d985538406f61c739ef0564cfbc3b1d9e1f2ea242cd975809f93",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+      "sha256": "855d348f75cdc18c629ecf94e670aa0364492ad60118aea9d450096d4f85b635",
+      "text_characters": 16006
+    },
+    {
+      "id": "dp-300-doc-23",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:14.050356+00:00",
+      "health": {
+        "id": "dp-300-doc-23",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "What is Azure SQL Managed Instance? - Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "d7294a01a31a9ef26b684dd0b108072d224c9271c011448a491a035663d8093f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql",
+      "sha256": "d360df379d3546cbb6c3b650a6075faaa2fa408a364e7f26bb866d0215a6fe0c",
+      "text_characters": 28021
+    },
+    {
+      "id": "dp-300-doc-24",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql",
+      "checked_at": "2026-09-28T03:33:14.062972+00:00",
+      "health": {
+        "id": "dp-300-doc-24",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Migrate to Azure SQL - Azure SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "2e8f6bda2c7c88746878ff77687dd45f7b304e1c640e73201acbba7bfe5a603c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql",
+      "sha256": "1604901732a8cb0038235c412476ae176d0f85fd845709a4257edfed3edac3b9",
+      "text_characters": 692
+    },
+    {
+      "id": "dp-300-doc-25",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:14.297483+00:00",
+      "health": {
+        "id": "dp-300-doc-25",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Overview of SQL Server Always on Availability Groups - SQL Server on Azure VMs",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "2805335b7472caa5d16b67548cbbb8b6e4d4a563f51d9cf4f9648b73e7118741",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql",
+      "sha256": "fa295eac4bfcbb5d2d154a126812a9e5a523ccba9444bba1a9068e586eaaccfa",
+      "text_characters": 13460
+    },
+    {
+      "id": "dp-300-doc-26",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:33:14.313647+00:00",
+      "health": {
+        "id": "dp-300-doc-26",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Failover Cluster Instances - SQL Server on Azure VMs",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "2d9df8df16f11cbb2e476afb8ae60759fcffe6d400267905f12f919453aae4fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql",
+      "sha256": "f14043d4e7fa8cafce1996e72629f4257fc9a9ff256546f42cb43428d30e2aec",
+      "text_characters": 12036
+    },
+    {
+      "id": "dp-300-doc-27",
+      "url": "https://learn.microsoft.com/en-us/azure/dms/dms-overview",
+      "checked_at": "2026-09-28T03:33:14.365631+00:00",
+      "health": {
+        "id": "dp-300-doc-27",
+        "url": "https://learn.microsoft.com/en-us/azure/dms/dms-overview",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/dms/dms-overview",
+        "content_type": "text/html",
+        "page_title": "What Is Azure Database Migration Service?",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/dms/dms-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "1493105e26abee3a49f65ea9a175f8233c2f43b85d34456644be0ef5ed6f60e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/dms/dms-overview",
+      "sha256": "ffc9790f55440aae47f652724aa06da2365f5b66770a849cd462f8a9933dc6a3",
+      "text_characters": 3937
+    },
+    {
+      "id": "dp-300-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+      "checked_at": "2026-09-28T03:33:14.546097+00:00",
+      "health": {
+        "id": "dp-300-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Database Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "68f43045d82de0596107df13e330322248b82d6443e86095cdbcf33fff7dff22",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+      "sha256": "a0619cca53e77fc0bd8da57ace291181c753f896bbc7944d83677873ecffc162",
+      "text_characters": 5463
+    },
+    {
+      "id": "dp-300-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58",
+      "checked_at": "2026-09-28T03:33:14.587778+00:00",
+      "health": {
+        "id": "dp-300-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "fe398ab0253035a3a41463353ee9457a604aa40d6b1f6b41a42df2e993bb5cfa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58",
+      "sha256": "4e508d4af044f7c393d0c8e4afc724c243188b5de84a8ba4e1d639097de5abba",
+      "text_characters": 0
+    },
+    {
+      "id": "dp-300-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+      "checked_at": "2026-09-28T03:33:14.644010+00:00",
+      "health": {
+        "id": "dp-300-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam DP-300: Administering Microsoft Azure SQL Solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "4093a3615a08082efc3dee0a094378ac25b3faa01456fa8abd1d25add26af9d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+      "sha256": "a820335145deb81fb51e150d49c33606a5721370eab4cd4757bdc785dc44e3ff",
+      "text_characters": 10678
+    },
+    {
+      "id": "dp-300-doc-28",
+      "url": "https://learn.microsoft.com/en-us/data-migration/sql-server/database/overview",
+      "checked_at": "2026-09-28T03:33:14.805191+00:00",
+      "health": {
+        "id": "dp-300-doc-28",
+        "url": "https://learn.microsoft.com/en-us/data-migration/sql-server/database/overview",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/data-migration/sql-server/database/overview",
+        "content_type": "text/html",
+        "page_title": "SQL Server to Azure SQL Database: Migration Overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/data-migration/sql-server/database/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "1ab1b13157d3a687799353d0de4fb17ec9d440589e8885d844fa656fee9a70b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/data-migration/sql-server/database/overview",
+      "sha256": "8edd0f0828a7779649423c7e4c0f0bec6e5b2569f9e98ff78930957a897852e6",
+      "text_characters": 17476
+    },
+    {
+      "id": "dp-300-doc-29",
+      "url": "https://learn.microsoft.com/en-us/fabric/database/sql/overview",
+      "checked_at": "2026-09-28T03:33:14.807933+00:00",
+      "health": {
+        "id": "dp-300-doc-29",
+        "url": "https://learn.microsoft.com/en-us/fabric/database/sql/overview",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/database/sql/overview",
+        "content_type": "text/html",
+        "page_title": "SQL database Overview - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/database/sql/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "2ecc11271292753af65fb89b478ede8069eac27deaf9b7f784f8a7ad4dc9859b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/database/sql/overview",
+      "sha256": "c0b1dbbf60139a2afda0cb492831f8b3fada526ca903ab883a2aba69d4f8f655",
+      "text_characters": 11721
+    },
+    {
+      "id": "dp-300-data-exposed",
+      "url": "https://learn.microsoft.com/en-us/shows/data-exposed/",
+      "checked_at": "2026-09-28T03:33:14.902394+00:00",
+      "health": {
+        "id": "dp-300-data-exposed",
+        "url": "https://learn.microsoft.com/en-us/shows/data-exposed/",
+        "checked_at": "2026-09-28T03:33:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/data-exposed/",
+        "content_type": "text/html",
+        "page_title": "Data Exposed",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/data-exposed/",
+        "duration_signals": [],
+        "signal_fingerprint": "2da0d38067f0658563cd659bb8c098360e39d076134b08f6528fb554c15336c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/data-exposed/",
+      "sha256": "f4367dc47970ef2575a8d0159714cc5e90b44653126588978ccdc8a55d576f2a",
+      "text_characters": 758
+    },
+    {
+      "id": "dp-300-exam-readiness-zone",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=DP-300",
+      "checked_at": "2026-09-28T03:33:15.102743+00:00",
+      "health": {
+        "id": "dp-300-exam-readiness-zone",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=DP-300",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=DP-300",
+        "content_type": "text/html",
+        "page_title": "Exam Readiness Zone",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/",
+        "duration_signals": [],
+        "signal_fingerprint": "be56c749ee067a8cd45a810ab21b2c1972bc5cd4f47d9e75223782831e616332",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=DP-300",
+      "sha256": "67e1644c4e69e0a688ab4e39769eb1db58a1f1cee24ca7463c65616c55863382",
+      "text_characters": 1074
+    },
+    {
+      "id": "dp-300-doc-30",
+      "url": "https://learn.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.124667+00:00",
+      "health": {
+        "id": "dp-300-doc-30",
+        "url": "https://learn.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "About Log Shipping (SQL Server) - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "f02a27d918419312e1b1efbd8f001a442e9489236efd7a66b1a562feb7e9cd4b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server?view=sql-server-ver17",
+      "sha256": "c0b01bcb2209fee1c7eeabd06ae78027ea3f122b7885f510a47ac0882699ae7b",
+      "text_characters": 9107
+    },
+    {
+      "id": "dp-300-doc-31",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.138454+00:00",
+      "health": {
+        "id": "dp-300-doc-31",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Back up and Restore of SQL Server Databases - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "12a8ed4602ab50f3993a0202445672e22132ddc78cd96342b07597728c65f0ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+      "sha256": "812dc3edbb8e2ea13bb5b1e7745e503da3873c3ced8f5a41c45d850f6184b46e",
+      "text_characters": 19121
+    },
+    {
+      "id": "dp-300-doc-32",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.329952+00:00",
+      "health": {
+        "id": "dp-300-doc-32",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Data compression - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "1f637739bd15a909811632043c104a7ab1a706e8b8133ee63065c47fb8d32a0b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression?view=sql-server-ver17",
+      "sha256": "5db683a3d43b1ab8dff5c333508e8eb574568536d76c9f2c46ecb55ba6a7f9cc",
+      "text_characters": 17162
+    },
+    {
+      "id": "dp-300-doc-33",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/extended-events/extended-events?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.365364+00:00",
+      "health": {
+        "id": "dp-300-doc-33",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/extended-events/extended-events?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/extended-events/extended-events?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Extended Events Overview - SQL Server, Azure SQL Database, Azure SQL Managed Instance, and SQL Database in Fabric - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/extended-events/extended-events?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "680641bc66689f4642d906ac78bfa58b769ac28dda304599362f79729edcfc02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/extended-events/extended-events?view=sql-server-ver17",
+      "sha256": "846a786a36e3094633a464031985595d6d15fb567f6dbfe8016bce01ff934cde",
+      "text_characters": 17703
+    },
+    {
+      "id": "dp-300-doc-34",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.437382+00:00",
+      "health": {
+        "id": "dp-300-doc-34",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Partitioned Tables and Indexes - SQL Server, Azure SQL Database, Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "da5f246714bc577e45f40b181536b1f28ab8a3afc28ed885756b031f918d8703",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17",
+      "sha256": "8f6a784c1683b1314b16ca9e77ff3a9a33f07431371ef5428d03f051222f5081",
+      "text_characters": 21438
+    },
+    {
+      "id": "dp-300-doc-35",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.592582+00:00",
+      "health": {
+        "id": "dp-300-doc-35",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Execution Plan Overview - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "6aebc213f175761dc3c01e5032c1d09d8152ae161e10dce9e8d33401d909137e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17",
+      "sha256": "e08ee99b79a8fdf3cc7afd69634d233b0e0b7684bb204d84230ad7702b744357",
+      "text_characters": 3797
+    },
+    {
+      "id": "dp-300-doc-36",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.651636+00:00",
+      "health": {
+        "id": "dp-300-doc-36",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Intelligent Query Processing - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "eb2db23477751c3fe571bfbe1140b43214f9faa3029954dbdb518ac7e9f23ca7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing?view=sql-server-ver17",
+      "sha256": "680a32c24012e949929395a0afc554c77db94d78d5d4f13396447e81d507e70d",
+      "text_characters": 17701
+    },
+    {
+      "id": "dp-300-doc-37",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.696998+00:00",
+      "health": {
+        "id": "dp-300-doc-37",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Query Store Usage Scenarios - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "fc6f7b9d2f98c3b0694159562f2665018d07b3597e365d612ca777672ce392b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17",
+      "sha256": "dbdf0ed8f587ce232507096a3843ff9fd81f5b04043c3654acdfd77377a6bbb4",
+      "text_characters": 14502
+    },
+    {
+      "id": "dp-300-doc-38",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.884372+00:00",
+      "health": {
+        "id": "dp-300-doc-38",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Resource Governor - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "effe0eafef9320328cddad4d7c2949ba723b67823479ec4c56ed0b5f34ca415c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor?view=sql-server-ver17",
+      "sha256": "2989b06a914865fd036ccaba26c9d31b9a00ec808b5fcd0242d2ea540c7ecbca",
+      "text_characters": 8663
+    },
+    {
+      "id": "dp-300-doc-39",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:15.936293+00:00",
+      "health": {
+        "id": "dp-300-doc-39",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Always Encrypted - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "c7ce1a31cd49a90d56f148e9d21cde9c6a0a7a14093cbceb914aebe2dd0d3f8c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17",
+      "sha256": "77cd54f2ff004d28c5ff2c0971dc7cc4f456d1f756cf1136389e861269908368",
+      "text_characters": 16428
+    },
+    {
+      "id": "dp-300-doc-40",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:16.049543+00:00",
+      "health": {
+        "id": "dp-300-doc-40",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Always Encrypted with secure enclaves - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "cd90694ea1dff2d832a25501c0dc8bd6c5aa1f071c82398a3c5a3ae40c05d9af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17",
+      "sha256": "1fae5c705d451374bf87f7d99c2122cd06db4df094fef97b9d456555116fed61",
+      "text_characters": 21592
+    },
+    {
+      "id": "dp-300-doc-41",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:16.156750+00:00",
+      "health": {
+        "id": "dp-300-doc-41",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Ledger Overview - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "76d4c25fcd1e00a8ca2df53586c8f8c974a4d62eb8fc42e4da217846f1effe82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17",
+      "sha256": "171d03e244814e75d6a7b051bfe1be56ffd0f778ab5eca363f47d595a0690628",
+      "text_characters": 11075
+    },
+    {
+      "id": "dp-300-doc-42",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:16.205730+00:00",
+      "health": {
+        "id": "dp-300-doc-42",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Row-Level Security - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "2c7f06814c297d85c7ef42a70a9371251feb909b1a94bde85f59bda802e3e19f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+      "sha256": "af06026a4be3e0b2e2bff2910ba2ab403ac88cc6d366856f141c7548181eeac4",
+      "text_characters": 35020
+    },
+    {
+      "id": "dp-300-doc-43",
+      "url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:16.395773+00:00",
+      "health": {
+        "id": "dp-300-doc-43",
+        "url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "SQL Server Technical Documentation - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "a105c9bfe433d019ac1287551744032130662bd8ac1625442921af8c94f14b07",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17",
+      "sha256": "a6db1479f719c38d00cd5e8c8a4fd52b1c5559dabe0e758082968811a1692535",
+      "text_characters": 2028
+    },
+    {
+      "id": "dp-300-doc-44",
+      "url": "https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:16.502864+00:00",
+      "health": {
+        "id": "dp-300-doc-44",
+        "url": "https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ssms/agent/sql-server-agent?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "SQL Server Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/ssms/agent/sql-server-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "a746c1bd5620780e20e44894da7a14183e5daf18e92daa223cf73e9b3d649dca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ssms/agent/sql-server-agent?view=sql-server-ver17",
+      "sha256": "0320a4438b55dd3dc604f2316561095c0a10e2cbc5558c2ac47abb599fc5c674",
+      "text_characters": 14166
+    },
+    {
+      "id": "dp-300-doc-45",
+      "url": "https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:33:16.632161+00:00",
+      "health": {
+        "id": "dp-300-doc-45",
+        "url": "https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "What's Happening with Azure Data Studio - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "f55959a2b0c3e7978cc6e0d4d7e04199fdbe4e2f900d9829ea905518f4c0240a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17",
+      "sha256": "f8d5fce0280ffcfdc2a1bc8e7c970ba791a673c219ff4fc3129abf85c718610c",
+      "text_characters": 7872
+    },
+    {
+      "id": "dp-300-doc-46",
+      "url": "https://learn.microsoft.com/en-us/ssms/migrate/migrate-sql-server-azure-sql",
+      "checked_at": "2026-09-28T03:33:16.837873+00:00",
+      "health": {
+        "id": "dp-300-doc-46",
+        "url": "https://learn.microsoft.com/en-us/ssms/migrate/migrate-sql-server-azure-sql",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ssms/migrate/migrate-sql-server-azure-sql",
+        "content_type": "text/html",
+        "page_title": "Migrate SQL Server to Azure SQL",
+        "canonical_url": "https://learn.microsoft.com/en-us/ssms/migrate/migrate-sql-server-azure-sql",
+        "duration_signals": [],
+        "signal_fingerprint": "1714c897c5633a3eb4f255c0594934a1163af932ce2a262e9d54b62dbdb52010",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ssms/migrate/migrate-sql-server-azure-sql",
+      "sha256": "fc3a96bdf81e39e055a87fd1948444d78f38c11eb4659e7e79364f1202007a16",
+      "text_characters": 10494
+    },
+    {
+      "id": "dp-300-official-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+      "checked_at": "2026-09-28T03:33:16.965302+00:00",
+      "health": {
+        "id": "dp-300-official-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+        "checked_at": "2026-09-28T03:33:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+        "content_type": "text/html",
+        "page_title": "Course DP-300T00-A: Implement scalable database solutions using Azure SQL - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+        "duration_signals": [],
+        "signal_fingerprint": "c2888d624d8a68c8b64f575ac590e4bc2022875caea5ccdf55a85525848eec7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+      "sha256": "a4637af39e4a7671ce358822be7f40c05ea358f10e8a501346c09661f0927763",
+      "text_characters": 1649
+    },
+    {
+      "id": "dp-300-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html",
+      "checked_at": "2026-09-28T03:33:17.030388+00:00",
+      "health": {
+        "id": "dp-300-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html",
+        "checked_at": "2026-09-28T03:33:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test DP-300: Administering Microsoft Azure SQL Solutions",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f38d81d47906e0e38e9e33453aa9bf63a9adc779083aeae4781913d0b9eb1673",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html",
+      "sha256": "64e79236a1530204a9ba1f86d3dfd87f5d08edfe04ab1cc2cacda82f80f7e208",
+      "text_characters": 16020
+    },
+    {
+      "id": "dp-300-oreilly-study-companion",
+      "url": "https://www.oreilly.com/library/view/administering-microsoft-azure/9798868815850/",
+      "checked_at": "2026-09-28T03:33:17.159112+00:00",
+      "health": {
+        "id": "dp-300-oreilly-study-companion",
+        "url": "https://www.oreilly.com/library/view/administering-microsoft-azure/9798868815850/",
+        "checked_at": "2026-09-28T03:33:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/administering-microsoft-azure/9798868815850/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-300-oreilly-video",
+      "url": "https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/",
+      "checked_at": "2026-09-28T03:33:17.228677+00:00",
+      "health": {
+        "id": "dp-300-oreilly-video",
+        "url": "https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/",
+        "checked_at": "2026-09-28T03:33:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-300-pluralsight-path",
+      "url": "https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate",
+      "checked_at": "2026-09-28T03:33:17.236483+00:00",
+      "health": {
+        "id": "dp-300-pluralsight-path",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate",
+        "checked_at": "2026-09-28T03:33:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Azure Database Administrator Associate (DP-300)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate",
+        "duration_signals": [
+          "10 Hours"
+        ],
+        "signal_fingerprint": "4dc5b8543d2b116ee9ca929dcc2bc713717793491c57134a3c8a2428b448da96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate",
+      "sha256": "d5d03889a41df4bf2bfcb2a868db75ae0fd804a1078ebab5774d7f5e0aef8174",
+      "text_characters": 5000
+    },
+    {
+      "id": "dp-300-udemy-phillip-burton",
+      "url": "https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/",
+      "checked_at": "2026-09-28T03:33:17.310425+00:00",
+      "health": {
+        "id": "dp-300-udemy-phillip-burton",
+        "url": "https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/",
+        "checked_at": "2026-09-28T03:33:17+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-300-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-300/",
+      "checked_at": "2026-09-28T03:33:17.416568+00:00",
+      "health": {
+        "id": "dp-300-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-300/",
+        "checked_at": "2026-09-28T03:33:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-azure-certification-dp-300/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Certified: Azure Database Administrator Associate (DP-300) Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-azure-certification-dp-300/",
+        "duration_signals": [],
+        "signal_fingerprint": "43d0104e0253fcc239cfca7055ac61f72931b624e797732fb50d738101f08e38",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-azure-certification-dp-300/",
+      "sha256": "a1c567df36b614ce1408428a956a73507f6b54e7767a72f54b23b9cc62f3bd7f",
+      "text_characters": 75
+    },
+    {
+      "id": "dp-300-azure-sql-youtube",
+      "url": "https://www.youtube.com/@AzureSQL",
+      "checked_at": "2026-09-28T03:33:18.296666+00:00",
+      "health": {
+        "id": "dp-300-azure-sql-youtube",
+        "url": "https://www.youtube.com/@AzureSQL",
+        "checked_at": "2026-09-28T03:33:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@AzureSQL",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft SQL",
+        "canonical_url": "https://www.youtube.com/channel/UCNsev6sULZ_Zp06VL7uktuA",
+        "duration_signals": [],
+        "signal_fingerprint": "30903fd813323ba6e415d48b6aae200765a492cc40225f21b1b5e161aac868d7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@AzureSQL",
+      "sha256": "38068aeb8aef25e7310396b42735dc39e71bb82e419b7ce3b1bc1ad0a96bc70f",
+      "text_characters": 176
+    },
+    {
+      "id": "dp-300-john-savill-youtube",
+      "url": "https://www.youtube.com/@NTFAQGuy/search?query=Azure%20SQL",
+      "checked_at": "2026-09-28T03:33:18.448469+00:00",
+      "health": {
+        "id": "dp-300-john-savill-youtube",
+        "url": "https://www.youtube.com/@NTFAQGuy/search?query=Azure%20SQL",
+        "checked_at": "2026-09-28T03:33:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@NTFAQGuy/search?query=Azure%20SQL",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "John Savill's Technical Training",
+        "canonical_url": "https://www.youtube.com/channel/UCpIn7ox7j7bH_OFj7tYouOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "3ea7e177926d30b19bd454e7c112994be5e9aae837e8697abb5a5edc1ef7afbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@NTFAQGuy/search?query=Azure%20SQL",
+      "sha256": "8d93a613ea557a1b1783bbf3cfe4a32c84020ee8f61e0821aaf1751904c16482",
+      "text_characters": 195
+    },
+    {
+      "id": "dp300-insights",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:41:06.061481+00:00",
+      "health": {
+        "id": "dp300-insights",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Monitor database performance with Intelligent Insights (preview) - Azure SQL Database & Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "c031d480395d8d5eb2b95abca341165b37626f24d663434935a7a49c4d054183",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
+      "sha256": "339a655bc0ffa1d20311520788e7701f4f865a803ea6cea6e78d73a456a28974",
+      "text_characters": 14021
+    },
+    {
+      "id": "dp300-compaction",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:41:06.062164+00:00",
+      "health": {
+        "id": "dp300-compaction",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=fabric-sqldb&viewFallbackFrom=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Automatic Index Compaction - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=fabric-sqldb",
+        "duration_signals": [
+          "10 minutes",
+          "20 minutes"
+        ],
+        "signal_fingerprint": "ec81883f64f4f3019faac1d5623d727dc4a70df0fb5aa618584af541661be6b9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=fabric-sqldb&viewFallbackFrom=sql-server-ver17",
+      "sha256": "ab047f41044fbfbab2d16a1811391479b4322a56657f47dbfb3a4c5c22096cf0",
+      "text_characters": 21062
+    },
+    {
+      "id": "dp300-connectivity-tests",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql",
+      "checked_at": "2026-09-28T03:41:06.062546+00:00",
+      "health": {
+        "id": "dp300-connectivity-tests",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Automatic Internal Connectivity Tests - Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "5585f5e265895827cd646fb27d42fb504ca618e10cd1dc36796185febda77f36",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql",
+      "sha256": "a8bcac3082eb6dd118f80f7971cf232f9ff5a4716146fbb6675bca63658c3caf",
+      "text_characters": 5905
+    },
+    {
+      "id": "dp300-sqldb-release",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql",
+      "checked_at": "2026-09-28T03:41:06.521233+00:00",
+      "health": {
+        "id": "dp300-sqldb-release",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "What's New? - Azure SQL Database",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "06f08a58c518932a1353f799853ead992d6f52bfbe311c6d8a8cd42b7917a05f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql",
+      "sha256": "189287d1f2124ce75f6f58478ab51bf53cd3a7bbb6ae51c25deab2454c2b99a7",
+      "text_characters": 14984
+    },
+    {
+      "id": "dp300-mi-release",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql",
+      "checked_at": "2026-09-28T03:41:06.551814+00:00",
+      "health": {
+        "id": "dp300-mi-release",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "What's new? - Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "42f29c7a0664cdacaf58352ba5879ab155a63deb82d9de41e5b5870dc11006f6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql",
+      "sha256": "e815beb9e9fbeaf96424c8ea2ab1d3bd26507aead08aa14c22b006d60d39a3ea",
+      "text_characters": 16939
+    },
+    {
+      "id": "dp300-compaction-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azuresqlblog/stop-defragmenting-and-start-living-introducing-auto-index-compaction/4500089",
+      "checked_at": "2026-09-28T03:41:06.735482+00:00",
+      "health": {
+        "id": "dp300-compaction-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azuresqlblog/stop-defragmenting-and-start-living-introducing-auto-index-compaction/4500089",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azuresqlblog/stop-defragmenting-and-start-living-introducing-auto-index-compaction/4500089",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Stop defragmenting and start living: introducing auto index compaction | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azuresqlblog/stop-defragmenting-and-start-living-introducing-auto-index-compaction/4500089",
+        "duration_signals": [],
+        "signal_fingerprint": "e45002b3e51ae923a7ad2849fcf6872da1128d9f95a6c811c714f3fa9e0677a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azuresqlblog/stop-defragmenting-and-start-living-introducing-auto-index-compaction/4500089",
+      "sha256": "ae090d338ca884f42255acd3be8610084cfa65d544a464ce0ebff33d9c0b1def",
+      "text_characters": 96
+    },
+    {
+      "id": "dp300-watcher-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-database-watcher-for-azure-sql/4085637",
+      "checked_at": "2026-09-28T03:41:06.838505+00:00",
+      "health": {
+        "id": "dp300-watcher-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-database-watcher-for-azure-sql/4085637",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-database-watcher-for-azure-sql/4085637",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introducing database watcher for Azure SQL | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-database-watcher-for-azure-sql/4085637",
+        "duration_signals": [],
+        "signal_fingerprint": "a3ee73166b03a5c5e336f5d210248c8d799d16dff110c565875904733fc71690",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-database-watcher-for-azure-sql/4085637",
+      "sha256": "ea8a1698f5f11c760a651b483051952ec2a30b9d0ac80a786b2e142052a6ab3b",
+      "text_characters": 68
+    },
+    {
+      "id": "dp300-enclave-client",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:41:06.854246+00:00",
+      "health": {
+        "id": "dp300-enclave-client",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:41:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "Develop applications using Always Encrypted with secure enclaves - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "b85507dceb8838b35b7d85ed8c311f20188870288d9cf55df9e2cd91485b50eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17",
+      "sha256": "d808f2b944359b88d913f2263542ce8248d39c57bae87ef462142835c5c48c70",
+      "text_characters": 5613
+    },
+    {
+      "id": "dp300-querystore-runtime",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17",
+      "checked_at": "2026-09-28T03:41:07.186284+00:00",
+      "health": {
+        "id": "dp300-querystore-runtime",
+        "url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17",
+        "checked_at": "2026-09-28T03:41:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17",
+        "content_type": "text/html",
+        "page_title": "sys.query_store_runtime_stats (Transact-SQL) - SQL Server",
+        "canonical_url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17",
+        "duration_signals": [],
+        "signal_fingerprint": "db540fbd108c53f3481a6130794fd8c8faef496c03f463f349cf62d792bdd0b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17",
+      "sha256": "1d12a95ddcbbe9bfb4050a46e07ff311184c3a3b12f8be94928575e8c82abca6",
+      "text_characters": 17789
+    },
+    {
+      "id": "dp300-backup-immutable",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+      "checked_at": "2026-09-28T03:42:18.394878+00:00",
+      "health": {
+        "id": "dp300-backup-immutable",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+        "checked_at": "2026-09-28T03:42:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+        "content_type": "text/html",
+        "page_title": "Automatic backup immutability - Azure SQL Database & Azure SQL Managed Instance",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+        "duration_signals": [],
+        "signal_fingerprint": "80fcf3169b08d5fb8a1b0226cd7188a53598f40754806b2abab1d11eca901665",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+      "sha256": "47e413e8ddaf194b68b1aef67fee97d4783db7796c2fe1adb75a894bc66ee110",
+      "text_characters": 3739
+    }
+  ],
+  "added_source_ids": [
+    "dp300-insights",
+    "dp300-compaction",
+    "dp300-connectivity-tests",
+    "dp300-sqldb-release",
+    "dp300-mi-release",
+    "dp300-compaction-blog",
+    "dp300-watcher-blog",
+    "dp300-enclave-client",
+    "dp300-querystore-runtime",
+    "dp300-backup-immutable"
+  ],
+  "findings": [
+    {
+      "id": "dp300-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Missing Intelligent Insights coverage",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The detailed blueprint includes this separately from watcher and IQP.",
+      "recommendation": "Add log, baseline, export, regional and corroborating-evidence explanation.",
+      "disposition": "applied",
+      "source_id": "dp300-insights",
+      "resolution": "Add log, baseline, export, regional and corroborating-evidence explanation."
+    },
+    {
+      "id": "dp300-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Watcher target inventory",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview target count includes readable replicas.",
+      "recommendation": "Add 110-target/two-watcher example and missing-sample proof.",
+      "disposition": "applied",
+      "source_id": "dp-300-doc-04",
+      "resolution": "Add 110-target/two-watcher example and missing-sample proof."
+    },
+    {
+      "id": "dp300-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Weighted runtime aggregation",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Counts, units and active-interval grouping affect interpretation.",
+      "recommendation": "Add weighted mean and outlier/interval handling example.",
+      "disposition": "applied",
+      "source_id": "dp300-querystore-runtime",
+      "resolution": "Add weighted mean and outlier/interval handling example."
+    },
+    {
+      "id": "dp300-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "MI migration completion state",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Seeding and manual completion have different consequences; copy is not ongoing replication.",
+      "recommendation": "Add completion deadline, cancellation, source removal and backup-chain example.",
+      "disposition": "applied",
+      "source_id": "dp-300-doc-22",
+      "resolution": "Add completion deadline, cancellation, source removal and backup-chain example."
+    },
+    {
+      "id": "dp300-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Enclave support differs by platform",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Ordinary Always Encrypted support is broader than enclave support.",
+      "recommendation": "Add enclave and attestation matrix for October wording.",
+      "disposition": "applied",
+      "source_id": "dp300-enclave-client",
+      "resolution": "Add enclave and attestation matrix for October wording."
+    },
+    {
+      "id": "dp300-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Compaction is not all maintenance",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview support and background page work have defined boundaries.",
+      "recommendation": "Add density exercise and keep statistics/integrity tasks separate.",
+      "disposition": "applied",
+      "source_id": "dp300-compaction",
+      "resolution": "Add density exercise and keep statistics/integrity tasks separate."
+    },
+    {
+      "id": "dp300-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Automatic and manual tuning differ",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Automatic index actions and validation differ by platform/application route.",
+      "recommendation": "Clarify MI plan correction, protected unique indexes and manual T-SQL rollback responsibility.",
+      "disposition": "applied",
+      "source_id": "dp-300-doc-09",
+      "resolution": "Clarify MI plan correction, protected unique indexes and manual T-SQL rollback responsibility."
+    },
+    {
+      "id": "dp300-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Elastic-job identity and path",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Entra jobs require user-assigned identity; service-managed endpoints require approval.",
+      "recommendation": "Explain target user, credential enumeration and per-server connectivity verification.",
+      "disposition": "applied",
+      "source_id": "dp-300-doc-11",
+      "resolution": "Explain target user, credential enumeration and per-server connectivity verification."
+    },
+    {
+      "id": "dp300-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Backup protection is scoped",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Recent PITR immutability excludes some policies/tiers and is separate from retention.",
+      "recommendation": "Add exclusions and avoid treating all retained days as immutable.",
+      "disposition": "applied",
+      "source_id": "dp300-backup-immutable",
+      "resolution": "Add exclusions and avoid treating all retained days as immutable."
+    },
+    {
+      "id": "dp300-deep-10",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Feature-level release status",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Entra logins and LTR mechanisms have different GA/preview status.",
+      "recommendation": "Distinguish logins from server roles and time-based from legal-hold LTR.",
+      "disposition": "applied",
+      "source_id": "dp300-sqldb-release",
+      "resolution": "Distinguish logins from server roles and time-based from legal-hold LTR."
+    },
+    {
+      "id": "dp300-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Expected internal probe failures",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Internal tests deliberately fail authentication; records have a documented signature.",
+      "recommendation": "Add scoped classification lab without granting the probe user or suppressing all login errors.",
+      "disposition": "applied",
+      "source_id": "dp300-connectivity-tests",
+      "resolution": "Add scoped classification lab without granting the probe user or suppressing all login errors."
+    },
+    {
+      "id": "dp300-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Application recovery timing",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Database promotion is one component of recovery.",
+      "recommendation": "Add 18-minute versus 15-minute RTO example and observation-versus-guarantee RPO distinction.",
+      "disposition": "applied",
+      "source_id": "dp-300-doc-10",
+      "resolution": "Add 18-minute versus 15-minute RTO example and observation-versus-guarantee RPO distinction."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "dp300-compaction-blog",
+      "decision": "accepted-bounded",
+      "author": "Dimitri Furman",
+      "published_on": "2026-03-18",
+      "notes": "Narrative/results reviewed. Original controlled-comparison task; appendix not run or fully code-reviewed. Current maintenance/support limits constrain headline."
+    },
+    {
+      "source_id": "dp300-watcher-blog",
+      "decision": "accepted-bounded",
+      "author": "Dimitri Furman",
+      "published_on": "2024-03-20",
+      "notes": "Main article reviewed. Telemetry diagram and coverage task; historical roadmap and older product status superseded by current docs."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Ten synthetic deadline, target, weighted mean, density, recovery and catalog arithmetic checks"
+    ]
+  },
+  "answered_checks": 36,
+  "limitations": [
+    "April 24 accepted snapshot preserved; October 27 observation is future, not accepted as current.",
+    "No SQL, Azure, migration, restore, preview, authentication or infrastructure lab executed; ten labs are learner exercises.",
+    "Paid lessons/questions and video transcripts not reviewed. Two O'Reilly item pages and Udemy blocked; catalogs/channels/practice responses may be shells. Historical metadata explicitly qualified.",
+    "Compaction blog narrative/results and watcher main article reviewed; compaction appendix not reviewed end to end or run; blog roadmap is historical.",
+    "Platform, preview, region, update policy and backup support must be rechecked; two dated follow-ups added.",
+    "Same-context AI review and repair; independent/human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "deadline_target_aggregation_density_recovery_and_catalog_assertions": 10
+  }
+}

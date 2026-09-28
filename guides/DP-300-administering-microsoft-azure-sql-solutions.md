@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # DP-300 Administering Microsoft Azure SQL Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). The [official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026. The [deep review](../docs/research/2026-09-27-dp-300-deep-review.md) maps all 94 October objectives; live database labs and independent human review remain pending. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). The [official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 24, 2026.<br>
 **Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 27, 2026. The Always Encrypted objective now refers to secure enclaves rather than specifically VBS enclaves. Domain weights are unchanged. Compare the enclave options supported by the target SQL platform before selecting an implementation. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300).<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
-**Exam page:** [Azure Database Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) · 100-minute assessment · annual renewal for the earned role-based certification.<br>
+**Exam page:** [Azure Database Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) · 100-minute assessment · ten exam languages · annual renewal for the earned role-based certification.<br>
 **Official course:** [DP-300T00 Implement scalable database solutions using Azure SQL](https://learn.microsoft.com/en-us/training/courses/dp-300t00) · four instructor-led days.<br>
 **Practice:** A free Microsoft Practice Assessment is linked from the credential and study-guide pages.
 
@@ -200,6 +200,12 @@ Base the choice on allowed downtime, data change rate, network throughput/latenc
 
 Azure SQL Managed Instance online copy/move maintains near-real-time replication until completion. A move removes the source at completion and starts a new backup chain on the destination; a copy leaves independent databases. Review current prerequisites and the 24-hour completion window in [copy or move a Managed Instance database](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql).
 
+#### Worked example — completion is a separate migration step
+
+An MI move starts seeding on Monday at 08:00 and reaches **ready for completion** at 13:00. The documented 24-hour completion window is measured after seeding, making Tuesday 13:00 the illustrative deadline; it is not a promised 24-hour migration duration. Set an earlier operational deadline and verify the service's actual state. If you do not complete in time, the operation cancels and removes the destination copy. Completing a move drops the source; completing a copy stops synchronization and leaves two independent databases. A copy is therefore no substitute for ongoing DR replication.
+
+Before approving completion, reconcile data, dependencies, endpoint changes and target recovery. Existing source PITR backups do not accompany a move; verify the new destination backup chain. Record source/destination subscriptions in the same tenant and required inter-instance network paths.
+
 #### Migration failure patterns
 
 | Symptom | Avoid conclusion | Inspect first |
@@ -251,6 +257,8 @@ identity source
 
 For SQL Server on Azure VM/on-premises, distinguish Windows authentication, SQL authentication and supported Entra authentication configuration. Domain reachability, SPNs, Kerberos delegation, certificates, Entra application/server identities and SQL build/platform support are separate dependencies.
 
+**September 2026 scope:** Microsoft Entra server principals for Azure SQL Database reached GA in June; do not carry an old blanket preview label into the login design. A server login still needs the intended database authorization. The separate fixed-server-role feature has its own release status. See [Azure SQL Database release notes](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql).
+
 #### Model SQL authorization
 
 Server principals/logins authenticate to an instance; database users map identities into a database. Contained database users reduce instance-level mapping and improve database mobility where supported. Roles collect permissions. Ownership chains and module signing/execution context can allow access without direct permission, while `DENY` normally overrides a `GRANT` at the same hierarchy subject to ownership/sysadmin behavior.
@@ -300,6 +308,18 @@ For TDE with customer-managed keys, include managed identity, Key Vault key/vers
 Always Encrypted has a column master key (key-protecting key, normally outside the database) and column encryption keys stored as encrypted metadata. Deterministic encryption enables equality-style operations but reveals equality patterns; randomized encryption provides stronger pattern protection with fewer operations unless a secure enclave enables supported richer queries. The application driver must be Always Encrypted-aware.
 
 Use the current [Always Encrypted overview](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17) and [secure-enclave guidance](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17). Supported enclaves, regions, drivers, attestation modes and query operators change.
+
+#### Select the enclave and client together
+
+The October objective broadens the wording beyond VBS. Use this [client/attestation matrix](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves-client-development?view=sql-server-ver17):
+
+| Platform | Enclave | Client attestation protocol |
+|---|---|---|
+| SQL Server 2019+ on supported Windows configurations | VBS | Host Guardian Service or None |
+| Azure SQL Database, DC-series | Intel SGX | Microsoft Azure Attestation |
+| Azure SQL Database with supported VBS configuration | VBS | None |
+
+Ordinary Always Encrypted support in MI does not establish secure-enclave support there. Check the enclave feature's platform matrix, driver version, enabled keys, query operation and region. A Key Vault key alone does not configure an enclave or make a driver enclave-aware.
 
 ### Apply compliance controls without confusing their guarantees
 
@@ -404,7 +424,19 @@ Plan:
 
 After deployment, generate a known workload, verify samples in the expected dataset/table, inspect dashboard/query, create an actionable alert and test its action group. A provisioned watcher without target connectivity is not monitoring.
 
-**VERIFY CURRENT:** Microsoft's documentation still labels some database-watcher pages or datasets preview even while the DP-300 objective explicitly names the service. Supported regions, target types, data stores, datasets, private connectivity and alert templates change. Start with the [database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql).
+**VERIFY CURRENT (September 27):** The database watcher overview and both Azure SQL release channels explicitly label the service preview; appearing in the blueprint does not make it GA. Supported regions, target types, data stores, datasets, private connectivity and alert templates change. Start with the [database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql).
+
+#### Worked example — count targets and prove collection
+
+A fleet has 80 primary databases and 30 readable secondaries to monitor. Each replica is a separate target: **110 targets**, exceeding the current 100-per-watcher limit. Use at least two watchers, with an explicit target inventory and permissions. A shared data store does not remove each watcher's limit. Targets can span subscriptions in the same Entra tenant. Include data-store, alert and network charges even though the watcher itself is free.
+
+After a known test workload, compare expected target IDs with fresh samples. One healthy dashboard does not establish that all 110 targets are collecting. Preserve collection time, replica identity and missing-target evidence; an empty dataset is not evidence of zero activity.
+
+### Monitor with Intelligent Insights
+
+[Intelligent Insights](https://learn.microsoft.com/en-us/azure/azure-sql/database/intelligent-insights-overview?view=azuresql) is a separate preview capability for Azure SQL Database and MI. It compares the recent hour with a seven-day workload baseline and also detects threshold problems. Export its **SQLInsights** resource log through database diagnostic settings to a supported destination. Inspect the affected database, time window, query hashes, symptoms and suggested cause; correlate with Query Store/waits and workload changes before remediation.
+
+Do not confuse this log with the retired Azure Monitor SQL Insights product, database watcher's collected datasets, automatic tuning actions, or optimizer IQP features. The overview currently excludes West Europe, North Europe, West US 1 and East US 1; confirm regional availability before planning a lab. Diagnostic export configuration and a known sample are separate evidence. Absence of an insight does not prove the database has no performance problem.
 
 ### Use Extended Events with narrow intent
 
@@ -440,6 +472,12 @@ Regression workflow:
 5. Correct the root cause; remove temporary forcing when safe.
 
 A plan that was good yesterday can be wrong after data or workload changes. Plan forcing is operational state that must be inventoried and reviewed.
+
+#### Worked example — an average of averages hides the workload
+
+For the same plan and successful execution type, interval A has 100 executions averaging 10 ms; interval B has one execution taking 1,000 ms. The combined mean is **(100 × 10 + 1 × 1,000) / 101 = 19.80 ms**, not 505 ms. Also report the slow execution and its interval; the mean does not describe tail latency.
+
+In [Query Store runtime statistics](https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-query-store-runtime-stats-transact-sql?view=sql-server-ver17), durations are in microseconds. Weight each row by `count_executions`, divide by the total count, and convert units explicitly. The active interval can contain persisted and in-memory rows: aggregate by plan, execution type and interval. Keep successful, client-aborted and exception-aborted executions distinguishable; define interval-boundary handling before comparing windows.
 
 ### Diagnose blocking, deadlocks and waits
 
@@ -483,11 +521,19 @@ Columnstore organizes column segments and is strong for scans/analytics; rowgrou
 
 Never use repair options as a routine response. Preserve damaged databases/logs/backups, identify recovery options, and restore from a known-good copy when possible.
 
+#### Worked example — compaction is one maintenance decision
+
+**Related item, preview:** [Automatic index compaction](https://learn.microsoft.com/en-us/sql/relational-databases/indexes/automatic-index-compaction?view=sql-server-ver17) is opt-in for Azure SQL Database, MI with Always-up-to-date policy, and Fabric SQL database. It improves page density on recently modified eligible B-tree leaf pages; it does not process every untouched page, update statistics or eliminate logical fragmentation. Heaps, LOB pages and compressed columnstore rowgroups are outside its scope.
+
+An illustrative index falls from 10,000 to 6,000 used pages: 40% fewer pages. That is not a promised 40% query speedup or a smaller allocated file. Compare logical reads, latency, log/CPU overhead and concurrency under the same workload. Keep needed statistics and integrity work; evaluate any remaining targeted index work separately. Disabling compaction stops future work rather than restoring the former page layout.
+
 ### Use automatic tuning and Intelligent Query Processing safely
 
 Azure SQL automatic tuning can create/drop indexes or force last good plans according to platform and configuration. Understand recommendation state, action, validation/revert behavior, scope, inherited/server settings and operational ownership. Monitor automatic actions like any other change; exclude or disable deliberately only with evidence.
 
 Intelligent Query Processing is a family of compatibility-level and version-dependent features such as adaptive behaviors, memory-grant feedback, scalar UDF inlining, table-variable deferred compilation, parameter-sensitive plan optimization and newer capabilities. Know the problem each feature addresses and validate using Query Store/actual workload. A compatibility-level change can enable multiple optimizer behaviors at once; use controlled rollout and Query Store regression protection.
+
+Automatic tuning also has distinct platform limits: SQL Database supports index recommendations and plan correction; MI supports automatic plan correction, not automatic create/drop index. In SQL Database, automatic `DROP_INDEX` protects unique indexes and considers 90 days of nonuse; Premium/Business Critical only drop duplicates through this option. A recommendation manually applied through T-SQL does **not** receive the automatic service's performance verification and reversal. Record a rollback and compare before/after evidence. See [automatic tuning](https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql).
 
 ### Configure server and database performance settings
 
@@ -580,6 +626,8 @@ Elastic jobs run T-SQL across one or many Azure SQL Database targets. Core objec
 Design each step for retry and partial failure. A target group can change between executions; schema or data commands must be safe when some databases are already updated. Limit concurrency/batch impact, route output to a controlled database, and prove which exact targets succeeded.
 
 Use [elastic jobs guidance](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql) for current authentication, capacity, limits and private-endpoint behavior, and the [configuration tutorial](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql) for supported setup paths.
+
+For elastic jobs, Entra authentication uses a **user-assigned** managed identity; system-assigned identity is unsupported. Create and authorize its user in each target database. The credentials route has a separate master-database enumeration requirement when targeting servers/pools. A service-managed elastic-job private endpoint requires approval per target/output server; an application's private endpoint does not automatically supply the agent's path. Test one permitted and one denied target before expanding the group.
 
 ### Automate database tasks in Azure
 
@@ -678,6 +726,10 @@ Azure SQL creates automated backups for PITR according to platform. Restore prod
 
 Do not memorize limits from an old course. As of validation, current docs describe SQL Database short-term retention up to 35 days for applicable tiers and LTR up to ten years, but exact tier/platform/immutability/API behavior is volatile. Verify [automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql) and [LTR](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) before design.
 
+**September backup update:** [Automatic backup immutability](https://learn.microsoft.com/en-us/azure/azure-sql/automatic-backup-immutability?view=azuresql) protects up to the latest seven days of PITR backups on supported SQL Database/MI configurations by default, with no extra feature charge. SQL Database Hyperscale and MI on the SQL Server 2022 update policy are excluded; MI Always-up-to-date/SQL Server 2025 policies are supported. A 35-day PITR retention setting does not imply 35 immutable days, and this capability does not establish long-term retention. Configure and test the required recovery window separately.
+
+For SQL Database LTR, distinguish **time-based immutability (GA)** from **legal-hold immutability (preview)**. MI's managed LTR backups do not support that configurable immutability; this is separate from recent automatic PITR protection. An LTR retention-policy change applies to future backups, not retroactively to existing ones. Confirm platform, retention and lock behavior in [release notes](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) and the [LTR overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql).
+
 #### Restore validation
 
 1. Select a recovery point known to precede the incident and preserve evidence.
@@ -720,6 +772,10 @@ A credible HA/DR test includes:
 - measured actual RTO/RPO and remediation owners.
 
 > **Related item:** A stable database listener does not guarantee stable application state. Connection pools may retain dead sockets, DNS may cache, tokens/keys may be region-bound, and message/storage services may have different recovery. The database is one dependency in the service recovery plan.
+
+#### Worked example — time the application recovery
+
+The objective is RTO 15 minutes and RPO 2 minutes. A rehearsal takes 3 minutes to detect/authorize, 4 to promote the database, 6 to recover DNS/connections/identity dependencies, and 5 to validate the business transaction: **18 minutes**, missing RTO by 3. A four-minute database promotion alone does not meet the application objective. A replica lag measurement of 90 seconds is below 120 seconds at that observation; it is not a guaranteed loss bound at a later forced failover. Measure lag continuously, choose the appropriate planned/forced procedure and reconcile actual recovery-point evidence.
 
 ### HA/DR failure patterns
 
@@ -844,6 +900,23 @@ Choose active geo-replication/failover group in an Azure sandbox or AG/log shipp
 
 ---
 
+### Lab 9 — Diagnose monitoring evidence and internal probes
+
+In a disposable supported environment, inventory watcher targets and prove a known workload reaches the expected dataset. Compare Query Store results with weighted aggregation. Where available, enable Intelligent Insights export and explain a sample's time/query identity; document lack of an emitted sample rather than inventing one. Inspect MI logs for the documented internal connectivity tests, which intentionally use a nonexistent `AzureSQLConnectivityChecker` login and expect error 18456.
+
+Match principal, instance, source subnet, cadence and documented event signature before classifying an event. A username alone is not proof of trusted origin. Do not create that login, allow external access, or suppress all 18456 failures. These internal probes do not test the application's external path or authorization. [Current MI test documentation](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/connectivity-testing-overview?view=azuresql) describes two additional addresses per VM group and tests that need free subnet capacity; results are internal, not Service/Resource Health status.
+
+**Evidence:** target coverage, timestamps, aggregation calculation, probe classification and an unrelated failure retained for investigation. **Cleanup:** disable lab exports/watchers/alerts and remove disposable storage/resources after preserving the evidence.
+
+### Lab 10 — Compare maintenance and recovery policies
+
+Use a disposable supported preview database, or complete the planning exercise if unavailable. Inventory index type, page density, statistics, update policy and backup coverage. Follow the linked Microsoft compaction example selectively, measuring a repeatable workload before/after and retaining required statistics/integrity tasks. Separately rehearse the MI copy/move state machine on disposable data; prefer copy until the source-deletion consequence is understood and authorized for the lab. Verify target recovery points and the full application timeline.
+
+**Evidence:** support matrix, before/after measurements, completion/cancellation state, recovery-point availability and RPO/RTO result. **Cleanup:** remove disposable replicas/databases, stop jobs and confirm backup/data-store retention costs. No live SQL, migration, preview or recovery exercise was executed during this repository review.
+
+---
+
+
 ## 9. Knowledge checks
 
 These are original reasoning checks based on public objectives, not recalled exam questions.
@@ -893,6 +966,20 @@ These are original reasoning checks based on public objectives, not recalled exa
 
 ---
 
+### Additional reasoning checks
+
+29. **Is Intelligent Insights the retired Azure Monitor SQL Insights product?** No. Its SQLInsights diagnostic log remains a separately documented preview feature; verify region and destination.
+30. **Can one watcher cover 80 primaries plus 30 readable secondaries?** No under the current 100-target limit: plan at least two watchers and verify all 110 targets.
+31. **What is the combined mean of 100 ten-millisecond executions and one one-second execution?** About 19.80 ms; retain the outlier separately and avoid an unweighted 505-ms mean.
+32. **Does compaction replace statistics and integrity checks?** No; evaluate page-density benefits and maintain independent tasks as required.
+33. **Can an MI SQL Server 2022 policy assume recent automatic backup immutability?** No; the current feature supports Always-up-to-date/SQL Server 2025 MI policies, and also excludes SQL Database Hyperscale.
+34. **A move is ready Monday at 13:00. What does Tuesday 13:00 represent?** The illustrative end of its 24-hour completion window, not total migration duration. Noncompletion cancels and removes the destination; successful move completion removes the source.
+35. **Can a system-assigned identity run elastic jobs through Entra authentication?** No; use the supported user-assigned identity and target database permissions.
+36. **Does four-minute database promotion prove a 15-minute application RTO?** No; the worked example's detection, dependencies and validation total 18 minutes.
+
+---
+
+
 ## 10. Final review checklist
 
 - [ ] I can select Azure SQL Database, elastic pool/serverless/Hyperscale, Managed Instance, SQL VM, Fabric SQL or an Arc SQL option from requirements.
@@ -903,7 +990,7 @@ These are original reasoning checks based on public objectives, not recalled exa
 - [ ] I can configure firewall/service endpoint/private endpoint/TLS paths and diagnose DNS before changing SQL permissions.
 - [ ] I can compare TDE, object encryption, Always Encrypted, secure enclaves and TLS by threat/key boundary.
 - [ ] I can implement and explain classification, audit, change tracking/CDC, DDM, ledger and RLS without overstating them.
-- [ ] I can build a baseline and choose metrics, watcher, DMVs, Query Store, Extended Events, plan or application evidence.
+- [ ] I can build a baseline and choose metrics, watcher, Intelligent Insights, DMVs, Query Store, Extended Events, plan or application evidence.
 - [ ] I can diagnose blocking/deadlocks/waits, plans/cardinality, indexes/statistics, integrity, automatic tuning, IQP and capacity.
 - [ ] I can implement SQL Agent, elastic jobs, ARM/Bicep, PowerShell/CLI and Azure workflow automation with least privilege and safe retry.
 - [ ] I can derive Azure SQL geo/PITR/LTR, Managed Instance, AG, FCI, log shipping and native backup choices from RPO/RTO.
@@ -924,7 +1011,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; authoritative April 24, 2026 objectives | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
+| [Official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Free; April baseline and observed October 27 revision | 45–75 min to map; 10–15 min weekly | Coverage checklist, weights, changes and official links |
 | [Azure Database Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) | Free | 20–30 min; recheck before scheduling | Current status, 100-minute exam, practice and renewal links |
 | [DP-300T00 course and self-directed modules](https://learn.microsoft.com/en-us/training/courses/dp-300t00) | Modules free; instructor-led access varies | **4 instructor-led days**; plan 35–55 hr self-paced with labs | Structured official path across all five domains |
 | [Microsoft free DP-300 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58) | Free; sign-in may be required | 45–90 min per attempt; 4–8 hr with remediation | Baseline, then diagnose weak objectives from explanations |
@@ -935,13 +1022,13 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 | Resource | Access | Estimated time | Notes |
 |---|---|---:|---|
-| [Pluralsight DP-300 path](https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate) | Paid; four courses, one lab, practice exam displayed | **7 hr** displayed; plan 12–20 hr with lab/docs | Recent 2025–July 2026 content; verify whether every planning and HA/DR objective is present in the current path |
-| [O'Reilly/Apress DP-300 study companion](https://www.oreilly.com/library/view/administering-microsoft-azure/9798868815850/) | Paid subscription; Geoff Hiten, September 2025 | **9h 44m**, 388 pages; plan 15–24 hr with exercises/current diff | Broad exam-aligned book; reconcile April 2026 objective additions and retired Azure Data Studio |
-| [O'Reilly Administering Microsoft Azure SQL video](https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/) | Paid subscription; Mikey Bronowski, September 2024 | **1h 44m** plus 2–4 hr practice/docs | Compact overview, not sufficient alone; older tooling/monitoring needs reconciliation |
+| [Pluralsight DP-300 path](https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate) | Paid; five courses, one lab, practice exam displayed | **9h 11m** listed course runtime plus 30-min lab; path rounds to 10 hr | New HA/DR course dated September 14, 2026; no dedicated planning/deployment course title displayed. Public listing only; paid coverage unverified |
+| [O'Reilly/Apress DP-300 study companion](https://www.oreilly.com/library/view/administering-microsoft-azure/9798868815850/) | Paid subscription; prior listing: Geoff Hiten, September 2025; blocked on recheck | **9h 44m**, 388 pages; plan 15–24 hr with exercises/current diff | Broad exam-aligned book; reconcile April 2026 objective additions and retired Azure Data Studio |
+| [O'Reilly Administering Microsoft Azure SQL video](https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/) | Paid subscription; prior listing: Mikey Bronowski, September 2024; blocked on recheck | **1h 44m** plus 2–4 hr practice/docs | Compact overview, not sufficient alone; older tooling/monitoring needs reconciliation |
 | [O'Reilly DP-300 certification-prep catalog](https://www.oreilly.com/products/certification-prep.html) | Paid; catalog lists DP-300 book, guide, practice and on-demand formats | Verify selected item; plan 2–4 hr per practice attempt plus review | Use the current item page to confirm version and blueprint alignment |
-| [Udemy DP-300 course by Phillip Burton](https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/) | Paid; page showed April 2026 alignment, 173 lectures | **17h 40m** video; plan 25–40 hr with labs | Current commercial structured option; independently verify every claim with official docs |
+| [Udemy DP-300 course by Phillip Burton](https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/) | Paid; historical listing claimed April 2026 alignment and 173 lectures; blocked on recheck | **17h 40m** video; plan 25–40 hr with labs | Historical runtime/scope only; current content and availability unverified |
 | [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to April 2026 blueprint and use practice diagnostically |
-| [MeasureUp DP-300 practice test](https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html) | Paid | Estimate 4–8 hr across baseline, explanation review and retest | Verify current objective date/question count; use explanations for remediation, not memorization |
+| [MeasureUp DP-300 practice test](https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html) | Paid | Estimate 4–8 hr across baseline, explanation review and retest | Public listing: 160 questions (34+34+38+23+31), last update December 2022. Current objective alignment unverified; use diagnostically alongside current docs |
 
 ### Supplemental experts and channels
 
@@ -952,6 +1039,17 @@ Estimated times describe content consumption or a reasonable assessment session,
 | [John Savill Azure SQL YouTube search](https://www.youtube.com/@NTFAQGuy/search?query=Azure%20SQL) | Free | Select 2–6 hr | Architecture/context supplement; validate detailed operational steps in official docs |
 | [John Savill public GitHub repositories](https://github.com/johnthebrit) | Free; license varies by repository/file | 1–2 hr to find matching whiteboards/materials | Link or reuse only under the actual repository/file license |
 | [Microsoft Reactor YouTube channel](https://www.youtube.com/@MicrosoftReactor) | Free | Select 2–8 hr; sessions often 45–120 min | Azure/data community sessions; verify date, service version and objective fit |
+
+### Two useful blog readings
+
+| Reading | Why it helps | Exercise and current boundary |
+|---|---|---|
+| [Stop defragmenting and start living](https://techcommunity.microsoft.com/blog/azuresqlblog/stop-defragmenting-and-start-living-introducing-auto-index-compaction/4500089), Dimitri Furman, Microsoft Azure SQL Blog, March 18, 2026 | Connects page density to workload cost through an illustrated experiment | Budget 30–45 minutes for narrative and measurement design. Identify controls and compare your own repeated workload; the author's measurements are not a guaranteed speedup. Reconcile the headline with the current compaction limitations and statistics requirements. Narrative/results reviewed; appendix linked, not executed. |
+| [Introducing database watcher for Azure SQL](https://techcommunity.microsoft.com/blog/azuresqlblog/introducing-database-watcher-for-azure-sql/4085637), Dimitri Furman, Microsoft Azure SQL Blog, March 20, 2024 | Explains the telemetry path and why managing a monitoring VM can be undesirable | Budget 20–30 minutes. Draw target → watcher → store → dashboard/alert and identify permission, cost and missing-sample evidence. Its roadmap is historical: current docs already describe alerts, and old SQL Insights status is outdated. Read current target limits/preview status before Lab 9. |
+
+**Resource verification:** Public listings and documentation were checked, not paid lessons, practice questions or video transcripts. The three O'Reilly/Udemy item fetches were blocked; their old dates/runtimes are historical. Whizlabs, O'Reilly's general certification catalog, practice-assessment and several channel pages returned only shells or metadata. Displayed study-hour ranges are our planning estimates, not newly measured course durations. Both blogs supplement the blueprint; they do not define exam scope.
+
+For ongoing product changes use the [SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/doc-changes-updates-release-notes-whats-new?view=azuresql) and [MI release channels](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?view=azuresql). Recheck platform/update policy, GA versus preview and official implementation details before adopting an announcement.
 
 ### Suggested selective plans
 
@@ -968,7 +1066,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 1. Learn relational/transaction/log, SQL security, indexing/statistics, plans/waits/blocking, recovery models and native backup foundations: 35–60 hours.
 2. Complete the official path or one complete mapped course/book: 35–55 hours.
-3. Complete all eight labs and repeat the query, security and restore labs with new faults: 50–75 hours.
+3. Complete all ten labs and repeat the query, security and restore labs with new faults: 50–75 hours.
 4. Use assessments to drive documentation and hands-on remediation: 12–25 hours.
 
 **Planning range:** approximately 135–210 hours depending on existing T-SQL, networking and operations experience.

@@ -494,6 +494,8 @@ Six objective groups and the documented portions of the virtual-machine group ma
 
 ## DP-300 coverage record
 
+The September 27 [deep review](research/2026-09-27-dp-300-deep-review.md) maps 94 detailed objectives. Whole guide read; 94 October 27 objectives in 15 groups individually mapped while retaining April 24 baseline. Fill Intelligent Insights gap, add five worked examples, two labs and eight answers (ten labs/36 answered checks total), two qualified Microsoft blog readings, current course metadata and two dated checkpoints. Clarify watcher target coverage, weighted Query Store data, MI completion, enclave/client support, preview compaction, automatic tuning, job identity and backup scope. Ten offline checks passed; no SQL/infrastructure execution; human review pending. Current guide citations: 75 registered, 72 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Plan and implement data platform resources | Sections 1–2, migration scenario, and Labs 1–2 |
