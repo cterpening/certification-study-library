@@ -1,0 +1,1986 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "5f4ff84e5229787a603ae5894f908050986acfbb6fc7068a15c260294a12dfa0",
+  "guide_after_sha256": "63f1ef01d24904d148664467c9720f55c1fa9fa22fd444f16c0269ef765259b0",
+  "prior_records": {
+    "exam": {
+      "code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+      "level": "intermediate",
+      "vendor_id": "databricks",
+      "title": "Databricks Certified Data Analyst Associate",
+      "status": "active",
+      "study_guide_url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+      "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; the official exam guide recommends related training and six months of hands-on Databricks experience. Practice ANSI SQL, relational and dimensional modeling, data quality, SQL warehouses, query diagnosis, AI/BI dashboards, Genie and Unity Catalog governance."
+    },
+    "review": {
+      "id": "databricks-data-analyst-associate-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+      "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-analyst-associate-official-objectives.txt",
+      "blueprint_snapshot_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+      "objective_coverage": [
+        {
+          "objective_group": "Understanding of Databricks Data + AI Platform",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Managing Data",
+          "guide_sections": [
+            "Section 2",
+            "Executive-dashboard scenario",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Importing Data",
+          "guide_sections": [
+            "Section 3",
+            "Supplier-data scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Executing queries using Databricks SQL and Databricks SQL Warehouses",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Analyzing Queries",
+          "guide_sections": [
+            "Section 5",
+            "Supplier-data scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Creating Dashboards and Visualizations in Databricks",
+          "guide_sections": [
+            "Section 6",
+            "Executive-dashboard scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Developing, Sharing, and Maintaining AI/BI Genie spaces",
+          "guide_sections": [
+            "Section 7",
+            "Trusted-sales-Genie scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Data Modeling with Databricks SQL",
+          "guide_sections": [
+            "Section 8",
+            "Executive-dashboard and trusted-sales-Genie scenarios",
+            "Labs 3 and 7"
+          ]
+        },
+        {
+          "objective_group": "Securing Data",
+          "guide_sections": [
+            "Section 9",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 26,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "The October 30, 2025 detailed PDF and live nine-domain weighted page were reconciled. Every objective maps to a platform, data, SQL, model, compute, evidence, sharing, identity, failure or recovery decision. Three scenarios, eight labs and 36 original checks cover Catalog Explorer/Marketplace/lineage; governed cleanup and intake; ANSI SQL, warehouses, joins/sets/aggregates/objects/federation/history; query profiles/Photon/cache/clustering; AI/BI dashboards, parameters, sharing, refresh and alerts; grounded Genie spaces, Trusted Assets, benchmarks and feedback; star/snowflake/Data Vault; and layered Unity Catalog security. All 27 guide URLs are cataloged: 26 reachable and the community forum automation-blocked; none missing or broken. The Academy course replacement is labeled as a learning-catalog transition, commercial freshness and duration boundaries are explicit, and vendor sample questions are linked rather than reproduced."
+    },
+    "sources": [
+      {
+        "id": "dp-750-databricks-youtube-channel",
+        "title": "Databricks YouTube channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "publisher": "Databricks",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "DP-750",
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+        ]
+      },
+      {
+        "id": "databricks-dea-platform-docs",
+        "title": "Databricks documentation introduction",
+        "url": "https://docs.databricks.com/aws/en/introduction/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current first-party platform documentation; cloud-specific details must be checked in the practiced cloud."
+      },
+      {
+        "id": "databricks-dea-unity-catalog",
+        "title": "Unity Catalog overview",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
+        ],
+        "notes": "Current first-party governance-layer and namespace overview."
+      },
+      {
+        "id": "databricks-dea-liquid-clustering",
+        "title": "Use liquid clustering for tables",
+        "url": "https://docs.databricks.com/aws/en/delta/clustering",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current liquid and automatic clustering guidance; runtime support is volatile."
+      },
+      {
+        "id": "databricks-dea-uc-privileges",
+        "title": "Unity Catalog privileges and securable objects",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current privilege hierarchy and action reference."
+      },
+      {
+        "id": "databricks-dea-academy",
+        "title": "Databricks Academy",
+        "url": "https://customer-academy.databricks.com/",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+        ],
+        "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      },
+      {
+        "id": "databricks-dea-free-edition",
+        "title": "Databricks Free Edition",
+        "url": "https://www.databricks.com/learn/free-edition",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+        ],
+        "notes": "No-cost hands-on environment; feature, capacity and region limitations apply."
+      },
+      {
+        "id": "databricks-daa-blueprint",
+        "title": "Databricks Certified Data Analyst Associate",
+        "url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Canonical live nine-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+      },
+      {
+        "id": "databricks-daa-exam-guide-oct-2025",
+        "title": "Databricks Certified Data Analyst Associate exam guide — October 30, 2025",
+        "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+        "publisher": "Databricks",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Detailed official nine-page objective baseline; includes a planned Academy course transition and original vendor sample questions."
+      },
+      {
+        "id": "databricks-daa-sql-docs",
+        "title": "Databricks SQL documentation",
+        "url": "https://docs.databricks.com/aws/en/sql/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current first-party SQL warehouse, editor, query, dashboard, alert and SQL-reference hub."
+      },
+      {
+        "id": "databricks-daa-catalog-explorer",
+        "title": "Catalog Explorer",
+        "url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current object discovery, metadata, history, permission and lineage surface."
+      },
+      {
+        "id": "databricks-daa-lineage",
+        "title": "Data lineage in Unity Catalog",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current supported lineage capture, visibility and permission behavior."
+      },
+      {
+        "id": "databricks-daa-marketplace",
+        "title": "Databricks Marketplace",
+        "url": "https://docs.databricks.com/aws/en/marketplace/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current provider/listing/consumer concepts and Delta Sharing relationship."
+      },
+      {
+        "id": "databricks-daa-data-sharing",
+        "title": "Share data and AI assets securely",
+        "url": "https://docs.databricks.com/aws/en/data-sharing/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current Delta Sharing provider, share and recipient decision hub."
+      },
+      {
+        "id": "databricks-daa-sql-warehouses",
+        "title": "SQL warehouses",
+        "url": "https://docs.databricks.com/aws/en/compute/sql-warehouse/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current warehouse types, sizing, scaling, channels, permissions and lifecycle guidance."
+      },
+      {
+        "id": "databricks-daa-federation",
+        "title": "Lakehouse Federation",
+        "url": "https://docs.databricks.com/aws/en/query-federation/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        ],
+        "notes": "Current connection, foreign-catalog, pushdown and cross-system query model."
+      },
+      {
+        "id": "databricks-daa-materialized",
+        "title": "Materialized views and streaming tables in Databricks SQL",
+        "url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current persisted and incremental object behavior; serverless and feature requirements are volatile."
+      },
+      {
+        "id": "databricks-daa-history",
+        "title": "Work with Delta Lake table history",
+        "url": "https://docs.databricks.com/aws/en/tables/history",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current DESCRIBE HISTORY, version/timestamp query and retention boundaries."
+      },
+      {
+        "id": "databricks-daa-photon",
+        "title": "What is Photon?",
+        "url": "https://docs.databricks.com/aws/en/compute/photon",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current vectorized engine benefits, workload support and fallback boundary."
+      },
+      {
+        "id": "databricks-daa-query-profile",
+        "title": "Query profile",
+        "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-profile",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current operator, scan, shuffle, join and skew diagnosis surface."
+      },
+      {
+        "id": "databricks-daa-query-history",
+        "title": "Query history",
+        "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-history",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current SQL execution history, filters and detail behavior."
+      },
+      {
+        "id": "databricks-daa-dashboards",
+        "title": "AI/BI dashboards",
+        "url": "https://docs.databricks.com/aws/en/dashboards/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current datasets, pages, widgets, publication, refresh, subscription and sharing hub."
+      },
+      {
+        "id": "databricks-daa-dashboard-parameters",
+        "title": "Dashboard filters and parameters",
+        "url": "https://docs.databricks.com/aws/en/dashboards/manage/filters/parameters",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current field-filter and query-parameter configuration and safety guidance."
+      },
+      {
+        "id": "databricks-daa-dashboard-sharing",
+        "title": "Share a published dashboard",
+        "url": "https://docs.databricks.com/aws/en/dashboards/share/share",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current workspace/account/external viewer and data-credential boundary; verify entitlement behavior."
+      },
+      {
+        "id": "databricks-daa-genie",
+        "title": "What is an AI/BI Genie space?",
+        "url": "https://docs.databricks.com/aws/en/genie/",
+        "publisher": "Databricks",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Current space, data, warehouse, instruction, Trusted Asset, benchmark, sharing and maintenance hub; behavior is fast-moving."
+      },
+      {
+        "id": "databricks-daa-pluralsight",
+        "title": "Databricks Certified Data Analyst Associate path",
+        "url": "https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Five-course, approximately seven-hour 2025 path with practice exam; predates the October 2025 expanded Genie/objective baseline and needs a gap check."
+      },
+      {
+        "id": "databricks-daa-whizlabs",
+        "title": "Databricks Certified Data Analyst Associate training and practice",
+        "url": "https://www.whizlabs.com/databricks-certified-data-analyst-associate/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Training/practice product verified by title; stable public totals were not exposed, so verify after sign-in and avoid recalled-question claims."
+      },
+      {
+        "id": "databricks-certification-community",
+        "title": "Databricks Community certification forum",
+        "url": "https://community.databricks.com/t5/certifications/ct-p/databricks-certifications",
+        "publisher": "Databricks Community",
+        "authority_class": 3,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+        ],
+        "notes": "Useful for current program announcements and support threads; technical claims require confirmation in official sources."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "3651e9a7f2741059d4122cb7430199ac67b0fbb4e0aed6c539f23f470f8e226f",
+      "guide_sections": [
+        "1. Understanding the Databricks Data + AI Platform (11%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "fc266d939804aef0344e12a89e05fc2379cc8ccd18961bbdec1bd65cb62eddbc",
+      "guide_sections": [
+        "1. Understanding the Databricks Data + AI Platform (11%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "b2eda2d0c7f01187614b511b05e646225699b23042169ae93d4b10ef1a171af7",
+      "guide_sections": [
+        "1. Understanding the Databricks Data + AI Platform (11%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "975a33130f7c7e5213fbc6e6187a67a100a7e67033ad287a0d1eab375e0f1ab7",
+      "guide_sections": [
+        "2. Managing Data (8%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "a1b9009b2aa73c833bff4055e06a27bc8a4db4d0f7ee6ce5fa87b5d00b9b13b8",
+      "guide_sections": [
+        "2. Managing Data (8%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "cf858d99e48d715c6e162158339b0f79c2fc8677c01e6edd9b129c8ee1d90fa8",
+      "guide_sections": [
+        "2. Managing Data (8%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "4d22e1fdd9212b0b0ed406a31a32f7a36e6626870dd95182a6becc04a8507988",
+      "guide_sections": [
+        "3. Importing Data (5%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "531072d471099e0f233006d581f4f4260af03e0a6d75738f48ad4367a5923198",
+      "guide_sections": [
+        "3. Importing Data (5%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "644a946a038096839f35a238f73a7b8fb6895c947f46bf45a79275dabc476b1b",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "0c21cae6e90b5cbec312afffa70f86e42bd76e5d8790833006c36580a099645b",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "c200d87d6a1225fb2a8cf989f0e28347fd2a66e390e3fc173ef03ee51213d870",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "d1a194f078418de1f08f964b01559056b0c7453cdce37c42f7a468567783703b",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "f3bdb14b409d1e5fb040fbd274ac2a668a23d1db4ce24c72f01776f326abee4e",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "8167d504e9024799db351866db6564971caf3d0cde904cd4d412fab7add111bf",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "4390cb509b528a0050833f2f6b3dd9ccc46a55c310cdd9209ca6e2be078da1d0",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "76fe8386134042309a3b3ab36173e51d5f4d0bfd2eb9e67032bed4e631ac2d98",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "93ffa8ae1f7f87b50b561b145f048857f0c497808f716148c9017cfc2520fca5",
+      "guide_sections": [
+        "4. Executing queries with Databricks SQL and SQL warehouses (20%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "27b31ca59fd694a138296a75331c1c0958efc8ab91f880996eb38190e8e71a36",
+      "guide_sections": [
+        "5. Analyzing Queries (15%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "31c19b830cdae9734f9d33a63ec5acc38994da43c73f29724630e991890ebc02",
+      "guide_sections": [
+        "5. Analyzing Queries (15%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "51e62eccec317e6e5f943d68f1f8106f6a42fc393819ed669fdbc81ee4457ea4",
+      "guide_sections": [
+        "5. Analyzing Queries (15%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "a5528d65d84f0b55a329ad78948542c5bb6efae288cb1a911d7990756afd7d91",
+      "guide_sections": [
+        "5. Analyzing Queries (15%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "87cbee4bd00972566920761dbcc1d0021883d103c8ec09b9d333ac11b5223c90",
+      "guide_sections": [
+        "5. Analyzing Queries (15%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "61aa00b69a2239a5491b392b1835d34940480b1cf4aac32ac2393cbf1b9ce43d",
+      "guide_sections": [
+        "5. Analyzing Queries (15%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "14654b0a73dd2461442184edd6f399cfa7093b98a45071e86a65f481d3458ff2",
+      "guide_sections": [
+        "6. Creating dashboards and visualizations (16%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "cc7ed075f49eeea5469a1c0f10f15a6df47918a1de74d389f841a0c5d60f27bf",
+      "guide_sections": [
+        "6. Creating dashboards and visualizations (16%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "6d51b743a8217ad2530b3a9b23f199ab069eea76912bb5657bb2c3e4e43b6ca4",
+      "guide_sections": [
+        "6. Creating dashboards and visualizations (16%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "7295aa9f75e05758de8213424b8babe2436f1f472d75f170462af5e6a841e105",
+      "guide_sections": [
+        "6. Creating dashboards and visualizations (16%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "fc4f1cfe60ba1a65ecbf618fbebe8f8e87b7720496effb9a08926b12be3d0e05",
+      "guide_sections": [
+        "6. Creating dashboards and visualizations (16%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "3540d8ba8f98815bc4a19aa7e70b42593b0dfe1794442813519950075b0ee297",
+      "guide_sections": [
+        "6. Creating dashboards and visualizations (16%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "1234dbc664bb72f433c920c1fea4d21b5896e422b0dd831d31085ab2e0c49fa8",
+      "guide_sections": [
+        "6. Creating dashboards and visualizations (16%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "56edbfb5fe3472ef6b0b18c6c3e44a2b2a49978dbc73133a8a2d29b17f2d3af4",
+      "guide_sections": [
+        "7. Developing, sharing and maintaining AI/BI Genie spaces (12%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "e95876f373816067ab1d17f289c078a73fe8546fbd890a083d0f4640f72d72f8",
+      "guide_sections": [
+        "7. Developing, sharing and maintaining AI/BI Genie spaces (12%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "1540e9b395d156f0b1953bb197c4025249ce5eb64cfef07366c8d5095eac0e96",
+      "guide_sections": [
+        "7. Developing, sharing and maintaining AI/BI Genie spaces (12%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "79884329ab023d3a57480f2d7b77a1260b695cc3aec04c92a1ef596c6f91b96f",
+      "guide_sections": [
+        "7. Developing, sharing and maintaining AI/BI Genie spaces (12%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "1de41eebf767043b89ef38c086d8a63012d46dbfe47624baca5728da1b5ce6bb",
+      "guide_sections": [
+        "8. Data Modeling with Databricks SQL (5%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "7192b5ef0193632b51e3787f4aff3e2f5c599f54f83573b9301ba54c00525644",
+      "guide_sections": [
+        "8. Data Modeling with Databricks SQL (5%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "1bff4b468c28ad09001b6ad77130b8027c757db855a996710f9061e0eefa0241",
+      "guide_sections": [
+        "9. Securing Data (8%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "57706e71cd49d646da74ba67c90c947b9612cc2bc9dfccc866a1faa7b569e397",
+      "guide_sections": [
+        "9. Securing Data (8%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "4f7339231d816a9604c452ac3e5babbb3758f63f09cd1c75020e78104cb218bc",
+      "guide_sections": [
+        "9. Securing Data (8%)",
+        "Worked analyst decisions and current reading",
+        "Diagnostic questions with answers"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "title": "Databricks Certified Data Analyst Associate",
+        "url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+        "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\databricks-data-analyst-associate-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\databricks-data-analyst-associate-official-status.json",
+        "previous_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+        "current_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+        "previous_status_sha256": "cc0570864a2c283f9b203d8a411203270b4651dda0f0501687b83f8fc54368c9",
+        "current_status_sha256": "cc0570864a2c283f9b203d8a411203270b4651dda0f0501687b83f8fc54368c9",
+        "official_status": {
+          "skills_versions": [
+            "Databricks Certified Data Analyst Associate — public certification page",
+            "Type: Proctored certification",
+            "Total number of scored questions: 45",
+            "Time limit: 90 minutes",
+            "Question types: Multiple choice",
+            "Languages: English",
+            "Delivery Method: Online or test center",
+            "Recommended experience: 6+ months of hands-on experience performing the data analysis tasks outlined in the exam guide",
+            "Validity period: 2 years"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 34,
+    "reachable": 33,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "dp-750-databricks-youtube-channel",
+      "url": "https://www.youtube.com/@Databricks",
+      "checked_at": "2026-09-28T23:25:36.777027+00:00",
+      "health": {
+        "id": "dp-750-databricks-youtube-channel",
+        "url": "https://www.youtube.com/@Databricks",
+        "checked_at": "2026-09-28T23:25:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@Databricks",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks",
+        "canonical_url": "https://www.youtube.com/channel/UC3q8O3Bh2Le8Rj1-Q-_UUbA",
+        "duration_signals": [],
+        "signal_fingerprint": "17f4cde1f56732213a2396da2e6df783f4f0ee10a774ee38679645ec7ff9927b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@Databricks",
+      "sha256": "a47d0d0305712569b2f66dbf964f295aac312086c8a2ae8ed7bab622bc5ae00a",
+      "text_characters": 173
+    },
+    {
+      "id": "databricks-dea-platform-docs",
+      "url": "https://docs.databricks.com/aws/en/introduction/",
+      "checked_at": "2026-09-28T23:25:36.777945+00:00",
+      "health": {
+        "id": "databricks-dea-platform-docs",
+        "url": "https://docs.databricks.com/aws/en/introduction/",
+        "checked_at": "2026-09-28T23:25:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/introduction/",
+        "content_type": "text/html",
+        "page_title": "What is Databricks? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/introduction/",
+        "duration_signals": [],
+        "signal_fingerprint": "ea1883da7311bc9a4a7f21e88ef2b3c9e0aeac89eb28af1977c27c685df83ed7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/introduction/",
+      "sha256": "0d6edf714d3b7e756419567a9d49e9229672c725d3f5cf4c429776f12ab330f3",
+      "text_characters": 8272
+    },
+    {
+      "id": "databricks-dea-unity-catalog",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+      "checked_at": "2026-09-28T23:25:36.778529+00:00",
+      "health": {
+        "id": "databricks-dea-unity-catalog",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+        "checked_at": "2026-09-28T23:25:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+        "content_type": "text/html",
+        "page_title": "What is Unity Catalog? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+        "duration_signals": [],
+        "signal_fingerprint": "4547cce572992300080453416d12015480ab3d50fb9775abd67750aada058273",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/",
+      "sha256": "28ab33358b8aedf8f6dd225f219b81eecd2400867a6f57a5edbe704321db3726",
+      "text_characters": 4051
+    },
+    {
+      "id": "databricks-dea-liquid-clustering",
+      "url": "https://docs.databricks.com/aws/en/delta/clustering",
+      "checked_at": "2026-09-28T23:25:37.184480+00:00",
+      "health": {
+        "id": "databricks-dea-liquid-clustering",
+        "url": "https://docs.databricks.com/aws/en/delta/clustering",
+        "checked_at": "2026-09-28T23:25:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/tables/clustering",
+        "content_type": "text/html",
+        "page_title": "Use liquid clustering for tables | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/tables/clustering",
+        "duration_signals": [],
+        "signal_fingerprint": "d79b1606e5b15e77e5ee807cc5acc8194e23375e0bd801480f0bc62883f054fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/tables/clustering",
+      "sha256": "0932cede1bb14797b4e5e4266fa04e6b4e7896fc7334a488f4d57c86e96aed86",
+      "text_characters": 39122
+    },
+    {
+      "id": "databricks-dea-uc-privileges",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges",
+      "checked_at": "2026-09-28T23:25:37.252172+00:00",
+      "health": {
+        "id": "databricks-dea-uc-privileges",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges",
+        "checked_at": "2026-09-28T23:25:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+        "content_type": "text/html",
+        "page_title": "Unity Catalog privileges reference | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+        "duration_signals": [],
+        "signal_fingerprint": "13dd842edfa76d74ff790e89f8abca78631d5d9db4571d106ec60790990e1e6a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/privileges-reference",
+      "sha256": "61b44394778481bf4e219a83e2aaee96bd7b13f7997de40dc401f175a1ece2bd",
+      "text_characters": 55752
+    },
+    {
+      "id": "databricks-dea-academy",
+      "url": "https://customer-academy.databricks.com/",
+      "checked_at": "2026-09-28T23:25:37.638899+00:00",
+      "health": {
+        "id": "databricks-dea-academy",
+        "url": "https://customer-academy.databricks.com/",
+        "checked_at": "2026-09-28T23:25:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://customer-academy.databricks.com/learn",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Loading",
+        "canonical_url": "https://customer-academy.databricks.com/learn",
+        "duration_signals": [],
+        "signal_fingerprint": "1dce398a1aa27fcf333c855d182c5c5ced7396d33bb07d51c89b8e50683ae480",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://customer-academy.databricks.com/learn",
+      "sha256": "14f89b57c71f6fff15e67ea2b452b2e5f796e19a3dd9c6c89a368c9d99df63d5",
+      "text_characters": 7
+    },
+    {
+      "id": "databricks-dea-free-edition",
+      "url": "https://www.databricks.com/learn/free-edition",
+      "checked_at": "2026-09-28T23:25:37.858156+00:00",
+      "health": {
+        "id": "databricks-dea-free-edition",
+        "url": "https://www.databricks.com/learn/free-edition",
+        "checked_at": "2026-09-28T23:25:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/free-edition",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Free Edition",
+        "canonical_url": "https://www.databricks.com/learn/free-edition",
+        "duration_signals": [],
+        "signal_fingerprint": "5d84d0d489f224bc5539c2062a71dfe847744f1c82b09fb9be7adb02932f7e24",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/free-edition",
+      "sha256": "3b49e1a3362ef0cc2e48b160b0268797400261dd33c6ad8562f463f74d364de7",
+      "text_characters": 5062
+    },
+    {
+      "id": "databricks-daa-blueprint",
+      "url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+      "checked_at": "2026-09-28T23:25:38.431326+00:00",
+      "health": {
+        "id": "databricks-daa-blueprint",
+        "url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+        "checked_at": "2026-09-28T23:25:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks Certified Data Analyst Associate | Databricks",
+        "canonical_url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "3190e96ee12d02a72316f3ee07765e7c5c860bf60121b2a021e5a9366d98a882",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/learn/certification/data-analyst-associate",
+      "sha256": "22e4d3e4948835b5df155d543b84d2c2a82ea203481108acb0a3283d48aedd5a",
+      "text_characters": 3407
+    },
+    {
+      "id": "databricks-daa-exam-guide-oct-2025",
+      "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+      "checked_at": "2026-09-28T23:25:38.524685+00:00",
+      "health": {
+        "id": "databricks-daa-exam-guide-oct-2025",
+        "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+        "checked_at": "2026-09-28T23:25:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+      "sha256": "8b8cac935964d4c2412996a5f64dde5cb71aad4570be096988c564e2d0f1cbe9",
+      "text_characters": 4833,
+      "representation_note": "Original response is a PDF. Separately decoded with pypdf; objective bullets from first four pages reviewed, vendor samples not reproduced. HTML visible-text extraction is not used as objective evidence."
+    },
+    {
+      "id": "databricks-daa-sql-docs",
+      "url": "https://docs.databricks.com/aws/en/sql/",
+      "checked_at": "2026-09-28T23:25:38.922418+00:00",
+      "health": {
+        "id": "databricks-daa-sql-docs",
+        "url": "https://docs.databricks.com/aws/en/sql/",
+        "checked_at": "2026-09-28T23:25:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/",
+        "content_type": "text/html",
+        "page_title": "Data warehousing on Databricks | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/",
+        "duration_signals": [],
+        "signal_fingerprint": "22039a49935d0323444a05e18b5e21e5df2f5495980962395d82281eb8e9863c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/",
+      "sha256": "1a6bae28466176755b7a6ac8e632d7fc5912a58185177547c8873697eaee5ebc",
+      "text_characters": 2661
+    },
+    {
+      "id": "databricks-daa-catalog-explorer",
+      "url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+      "checked_at": "2026-09-28T23:25:39.008769+00:00",
+      "health": {
+        "id": "databricks-daa-catalog-explorer",
+        "url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+        "content_type": "text/html",
+        "page_title": "What is Catalog Explorer? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+        "duration_signals": [],
+        "signal_fingerprint": "1a7afc364cf10c123c84a298cf7001a634ea59901526be53b49573d2612f80d9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/catalog-explorer/",
+      "sha256": "8c61461a48a72b3f73ae8de795d78c6b342110d792ec87fe50fa1a8530964b9f",
+      "text_characters": 1723
+    },
+    {
+      "id": "databricks-daa-lineage",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+      "checked_at": "2026-09-28T23:25:39.261580+00:00",
+      "health": {
+        "id": "databricks-daa-lineage",
+        "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+        "content_type": "text/html",
+        "page_title": "Lineage in Unity Catalog | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+        "duration_signals": [],
+        "signal_fingerprint": "19d0b768c0176bd6592dc2560673b720ed1976dd7f5e82b92ecec17d9fcdb97f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+      "sha256": "7d518254ad09980065d244f34e66b681d71aa42be1a45e946d907001326ad3a0",
+      "text_characters": 12641
+    },
+    {
+      "id": "databricks-daa-marketplace",
+      "url": "https://docs.databricks.com/aws/en/marketplace/",
+      "checked_at": "2026-09-28T23:25:39.268926+00:00",
+      "health": {
+        "id": "databricks-daa-marketplace",
+        "url": "https://docs.databricks.com/aws/en/marketplace/",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/marketplace/",
+        "content_type": "text/html",
+        "page_title": "What is Databricks Marketplace? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/marketplace/",
+        "duration_signals": [],
+        "signal_fingerprint": "46327ace00b9f5249955982d5113230f34b29ec0ff5a5dee16abc321d66650d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/marketplace/",
+      "sha256": "b66dd041dd89f319e7c6634f53c798d21e3cef22d8b7ce6c95199492cca6b17f",
+      "text_characters": 5818
+    },
+    {
+      "id": "databricks-daa-data-sharing",
+      "url": "https://docs.databricks.com/aws/en/data-sharing/",
+      "checked_at": "2026-09-28T23:25:39.521231+00:00",
+      "health": {
+        "id": "databricks-daa-data-sharing",
+        "url": "https://docs.databricks.com/aws/en/data-sharing/",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/data-sharing/",
+        "content_type": "text/html",
+        "page_title": "Share data and AI assets securely | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/data-sharing/",
+        "duration_signals": [],
+        "signal_fingerprint": "a45fb887b1068314e3cd4279de86a752d780b990c8377df64c8758fc87b7bce6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/data-sharing/",
+      "sha256": "1108b2e63b55327fcbe5d361d79580ec91bbe54814c50310d03d90060b3da93b",
+      "text_characters": 2875
+    },
+    {
+      "id": "databricks-daa-sql-warehouses",
+      "url": "https://docs.databricks.com/aws/en/compute/sql-warehouse/",
+      "checked_at": "2026-09-28T23:25:39.541142+00:00",
+      "health": {
+        "id": "databricks-daa-sql-warehouses",
+        "url": "https://docs.databricks.com/aws/en/compute/sql-warehouse/",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/compute/sql-warehouse/",
+        "content_type": "text/html",
+        "page_title": "Connect to a SQL warehouse | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/compute/sql-warehouse/",
+        "duration_signals": [],
+        "signal_fingerprint": "e7a00ad58ee1ac69acde4a9a2c747d38d8d19c15a5eca021a9bca1ebf017b858",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/compute/sql-warehouse/",
+      "sha256": "4d6802e1e9e56758d789dfd737b41badfd68a5d295485382d0e4c92be5829563",
+      "text_characters": 5121
+    },
+    {
+      "id": "databricks-daa-federation",
+      "url": "https://docs.databricks.com/aws/en/query-federation/",
+      "checked_at": "2026-09-28T23:25:39.778415+00:00",
+      "health": {
+        "id": "databricks-daa-federation",
+        "url": "https://docs.databricks.com/aws/en/query-federation/",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/query-federation/",
+        "content_type": "text/html",
+        "page_title": "Connect to external databases and catalogs | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/query-federation/",
+        "duration_signals": [],
+        "signal_fingerprint": "ccac8ff0497fbf4d3045268ba76b512b9b259e6be2970cf4061de66c82fe76af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/query-federation/",
+      "sha256": "0a2bc5b626dfd026e5bc6213e7d91e432f22690d60672b6c388167a3d77c4b13",
+      "text_characters": 8025
+    },
+    {
+      "id": "databricks-daa-materialized",
+      "url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized",
+      "checked_at": "2026-09-28T23:25:39.855411+00:00",
+      "health": {
+        "id": "databricks-daa-materialized",
+        "url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized",
+        "content_type": "text/html",
+        "page_title": "Use standalone materialized views | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "620ef6b0a08ebc9c2e62e6631c3b16954e6b328772b74584dce99a898823687b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized",
+      "sha256": "e71119ce300b01ce18b92da3ea438d02b7ac647d1cb3e39456553bd8745f34e6",
+      "text_characters": 18111
+    },
+    {
+      "id": "databricks-daa-history",
+      "url": "https://docs.databricks.com/aws/en/tables/history",
+      "checked_at": "2026-09-28T23:25:39.865222+00:00",
+      "health": {
+        "id": "databricks-daa-history",
+        "url": "https://docs.databricks.com/aws/en/tables/history",
+        "checked_at": "2026-09-28T23:25:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/tables/history",
+        "content_type": "text/html",
+        "page_title": "Work with table history | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/tables/history",
+        "duration_signals": [
+          "12 hours"
+        ],
+        "signal_fingerprint": "6fe542128380a332230fa435fb51d440f16ecc0d58e9b36d4a130a242f267094",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/tables/history",
+      "sha256": "667a44c0ad9b3e33df4f45b2b927800b970dbba29d54b9a03e968db8381a1da3",
+      "text_characters": 13790
+    },
+    {
+      "id": "databricks-daa-photon",
+      "url": "https://docs.databricks.com/aws/en/compute/photon",
+      "checked_at": "2026-09-28T23:25:40.126748+00:00",
+      "health": {
+        "id": "databricks-daa-photon",
+        "url": "https://docs.databricks.com/aws/en/compute/photon",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/compute/photon",
+        "content_type": "text/html",
+        "page_title": "What is Photon? | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/compute/photon",
+        "duration_signals": [],
+        "signal_fingerprint": "4eed6846f41c547ffc00e0b7d1e70f84a021458abfb0c8b188fad08f4ad78918",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/compute/photon",
+      "sha256": "b19a3cdf32ce0b05a636a8f996b3f81ac068bf8a40f9a87a19ce35e1cbe9dc6b",
+      "text_characters": 7779
+    },
+    {
+      "id": "databricks-daa-query-profile",
+      "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-profile",
+      "checked_at": "2026-09-28T23:25:40.181834+00:00",
+      "health": {
+        "id": "databricks-daa-query-profile",
+        "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-profile",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-profile",
+        "content_type": "text/html",
+        "page_title": "Query profile | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-profile",
+        "duration_signals": [],
+        "signal_fingerprint": "767c3ff3efefad5cfb153efa85569dba891e07107720878dea57eebcf0f5c2ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-profile",
+      "sha256": "11fa99c397918f73b5767752d5f299c461f435e2107a9c6dba725fad7bc9feb5",
+      "text_characters": 9061
+    },
+    {
+      "id": "databricks-daa-query-history",
+      "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-history",
+      "checked_at": "2026-09-28T23:25:40.252908+00:00",
+      "health": {
+        "id": "databricks-daa-query-history",
+        "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-history",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-history",
+        "content_type": "text/html",
+        "page_title": "Query history | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-history",
+        "duration_signals": [],
+        "signal_fingerprint": "c25dfedab1bdd46c113b3e7a51e06f0b906c6d2e6bc7477ec9c228bb6589554a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-history",
+      "sha256": "4dc0c80b39aaaa69c76559c59b04232b25272801be5aeb1782f08405a09ec737",
+      "text_characters": 4362
+    },
+    {
+      "id": "databricks-daa-dashboards",
+      "url": "https://docs.databricks.com/aws/en/dashboards/",
+      "checked_at": "2026-09-28T23:25:40.420778+00:00",
+      "health": {
+        "id": "databricks-daa-dashboards",
+        "url": "https://docs.databricks.com/aws/en/dashboards/",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dashboards/",
+        "content_type": "text/html",
+        "page_title": "Dashboards | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dashboards/",
+        "duration_signals": [],
+        "signal_fingerprint": "9e216bc1c6b7baee9a364d711904c4e664f47039a0456b76d345394e11730898",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dashboards/",
+      "sha256": "6d5e0deff9337cc8c2574bbdfc0acfed507c4172dee97ae73dfcd4e9e7c131d4",
+      "text_characters": 3334
+    },
+    {
+      "id": "databricks-daa-dashboard-parameters",
+      "url": "https://docs.databricks.com/aws/en/dashboards/manage/filters/parameters",
+      "checked_at": "2026-09-28T23:25:40.544668+00:00",
+      "health": {
+        "id": "databricks-daa-dashboard-parameters",
+        "url": "https://docs.databricks.com/aws/en/dashboards/manage/filters/parameters",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dashboards/manage/filters/parameters",
+        "content_type": "text/html",
+        "page_title": "Work with dashboard parameters | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dashboards/manage/filters/parameters",
+        "duration_signals": [],
+        "signal_fingerprint": "864a68a5326686245ee513ff9dd6981f75fdec02defe66e9967f712d2c91d362",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dashboards/manage/filters/parameters",
+      "sha256": "090d6981b5506a7c0bdbb3a79417e146b1f0d417d351f26b05f50017d776a902",
+      "text_characters": 18036
+    },
+    {
+      "id": "databricks-daa-dashboard-sharing",
+      "url": "https://docs.databricks.com/aws/en/dashboards/share/share",
+      "checked_at": "2026-09-28T23:25:40.576576+00:00",
+      "health": {
+        "id": "databricks-daa-dashboard-sharing",
+        "url": "https://docs.databricks.com/aws/en/dashboards/share/share",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/dashboards/share/share",
+        "content_type": "text/html",
+        "page_title": "Share a dashboard | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/dashboards/share/share",
+        "duration_signals": [],
+        "signal_fingerprint": "901d3f13de8ba599670b77685407569538dc9ccac23cd249f75b4522c8349e96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/dashboards/share/share",
+      "sha256": "def3fc5feeeea73fcb5bab6573582882df64816cb700c8f0311d79e442f9a51b",
+      "text_characters": 12007
+    },
+    {
+      "id": "databricks-daa-genie",
+      "url": "https://docs.databricks.com/aws/en/genie/",
+      "checked_at": "2026-09-28T23:25:40.686560+00:00",
+      "health": {
+        "id": "databricks-daa-genie",
+        "url": "https://docs.databricks.com/aws/en/genie/",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/genie/",
+        "content_type": "text/html",
+        "page_title": "Genie | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/genie/",
+        "duration_signals": [],
+        "signal_fingerprint": "058265cf876cb8731c8e7b3f28a4d20a96907cb249c50fcc599c88056f52f854",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/genie/",
+      "sha256": "3b86c4cd1aef93b9776442ff8f62733215ada94208306cb459ae6965d342f6d9",
+      "text_characters": 2572
+    },
+    {
+      "id": "databricks-daa-pluralsight",
+      "url": "https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate",
+      "checked_at": "2026-09-28T23:25:40.885265+00:00",
+      "health": {
+        "id": "databricks-daa-pluralsight",
+        "url": "https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Databricks Certified Data Analyst Associate",
+        "canonical_url": "https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate",
+        "duration_signals": [
+          "7 Hours"
+        ],
+        "signal_fingerprint": "a2d35421889668e858d2ad6716e4cc2bff33578000b0f784570752e888e3a2a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate",
+      "sha256": "4c3797fdb18fef3e09dcce35e3fa23c06db82a3ba4355f4e229b4cd90049038a",
+      "text_characters": 3688
+    },
+    {
+      "id": "databricks-daa-whizlabs",
+      "url": "https://www.whizlabs.com/databricks-certified-data-analyst-associate/",
+      "checked_at": "2026-09-28T23:25:40.911934+00:00",
+      "health": {
+        "id": "databricks-daa-whizlabs",
+        "url": "https://www.whizlabs.com/databricks-certified-data-analyst-associate/",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/databricks-certified-data-analyst-associate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Databricks Certified Data Analyst Associate Certification",
+        "canonical_url": "https://www.whizlabs.com/databricks-certified-data-analyst-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "c427c1609ba96d02939f6bc6f84c815d4ce6c4bfb458c470c09d8b262354de21",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/databricks-certified-data-analyst-associate/",
+      "sha256": "c5cb93a8c8e94dae93aef81e9f8ad5895f48d33a90af97fc59d491ef18b42917",
+      "text_characters": 57
+    },
+    {
+      "id": "databricks-certification-community",
+      "url": "https://community.databricks.com/t5/certifications/ct-p/databricks-certifications",
+      "checked_at": "2026-09-28T23:25:40.918276+00:00",
+      "health": {
+        "id": "databricks-certification-community",
+        "url": "https://community.databricks.com/t5/certifications/ct-p/databricks-certifications",
+        "checked_at": "2026-09-28T23:25:40+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://community.databricks.com/t5/certifications/ct-p/databricks-certifications",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "databricks-genie-agent-setup",
+      "url": "https://docs.databricks.com/aws/en/genie-agents/set-up",
+      "checked_at": "2026-09-28T23:27:43.116140+00:00",
+      "health": {
+        "id": "databricks-genie-agent-setup",
+        "url": "https://docs.databricks.com/aws/en/genie-agents/set-up",
+        "checked_at": "2026-09-28T23:27:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/genie-agents/set-up",
+        "content_type": "text/html",
+        "page_title": "Create and manage a Genie Agent | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/genie-agents/set-up",
+        "duration_signals": [],
+        "signal_fingerprint": "3e3760d85c1c24af77293cff131904de53cbf395f70f811d9c411db337d1c4b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/genie-agents/set-up",
+      "sha256": "764e6a9aefc46d0ae098cdd86ca908c24f8cab9f867415b350c2061bcaee2c91",
+      "text_characters": 15760
+    },
+    {
+      "id": "databricks-genie-agent-monitor",
+      "url": "https://docs.databricks.com/aws/en/genie-agents/monitor",
+      "checked_at": "2026-09-28T23:27:43.117075+00:00",
+      "health": {
+        "id": "databricks-genie-agent-monitor",
+        "url": "https://docs.databricks.com/aws/en/genie-agents/monitor",
+        "checked_at": "2026-09-28T23:27:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/genie-agents/monitor",
+        "content_type": "text/html",
+        "page_title": "Test and monitor a Genie Agent | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/genie-agents/monitor",
+        "duration_signals": [],
+        "signal_fingerprint": "42f8d7268788f162a3fc245d5c26a79af11e9452b60bc1400051a7445c3661a0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/genie-agents/monitor",
+      "sha256": "8f591671ca3cc011cac1a6aa61d9cc9bfb163d2fdca245d4c309af0d1d806312",
+      "text_characters": 19592
+    },
+    {
+      "id": "databricks-genie-announcement-june-2026",
+      "url": "https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents",
+      "checked_at": "2026-09-28T23:27:43.117678+00:00",
+      "health": {
+        "id": "databricks-genie-announcement-june-2026",
+        "url": "https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents",
+        "checked_at": "2026-09-28T23:27:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introducing Genie One, Genie Agents, and Genie Ontology",
+        "canonical_url": "https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "cc826dfb070227d82d6cf97e14ffbc13fafa9e658ae305204dd615379ba8eb03",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents",
+      "sha256": "08d626d0a3561b6df7ab483a2ad38053d895d5a0827bf2c6a600d105308d0d90",
+      "text_characters": 15910
+    },
+    {
+      "id": "databricks-sql-release-notes",
+      "url": "https://docs.databricks.com/aws/en/sql/release-notes",
+      "checked_at": "2026-09-28T23:27:43.518999+00:00",
+      "health": {
+        "id": "databricks-sql-release-notes",
+        "url": "https://docs.databricks.com/aws/en/sql/release-notes",
+        "checked_at": "2026-09-28T23:27:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/release-notes",
+        "content_type": "text/html",
+        "page_title": "Databricks SQL release notes | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/release-notes/",
+        "duration_signals": [],
+        "signal_fingerprint": "10c4ce3ad100f881b7871a8cd7178c39404c221a5983a8d6d8ebf34fd2c775fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/release-notes",
+      "sha256": "6cf937fac107d7e2d1fc5cd21b7046b5c129f5288bff1e44ced818c6025020b9",
+      "text_characters": 4815
+    },
+    {
+      "id": "databricks-sql-null-semantics",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-null-semantics",
+      "checked_at": "2026-09-28T23:27:43.592717+00:00",
+      "health": {
+        "id": "databricks-sql-null-semantics",
+        "url": "https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-null-semantics",
+        "checked_at": "2026-09-28T23:27:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-null-semantics",
+        "content_type": "text/html",
+        "page_title": "NULL semantics | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-null-semantics",
+        "duration_signals": [],
+        "signal_fingerprint": "8b928757b0e2f458d636aec333162984a4fc49c890a52725f815b8bb929c2dbd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-null-semantics",
+      "sha256": "7712da4ce5624a1bff2301ec3012be19415109cd6aefafb5d2b80bee8bb590fb",
+      "text_characters": 14742
+    },
+    {
+      "id": "databricks-sql-try-cast",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast",
+      "checked_at": "2026-09-28T23:27:43.818305+00:00",
+      "health": {
+        "id": "databricks-sql-try-cast",
+        "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast",
+        "checked_at": "2026-09-28T23:27:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast",
+        "content_type": "text/html",
+        "page_title": "try_cast function | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast",
+        "duration_signals": [],
+        "signal_fingerprint": "653d1959f7ca46c832b2bb95cb2b75cc0cf8d27ff1c14749a7e302b37e5dd91a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast",
+      "sha256": "5e3a1ac29793b4dfa9a73c1112306d6d50e968b9231449835b81c757bce68c50",
+      "text_characters": 1544
+    },
+    {
+      "id": "databricks-sql-cache",
+      "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-caching",
+      "checked_at": "2026-09-28T23:27:43.933435+00:00",
+      "health": {
+        "id": "databricks-sql-cache",
+        "url": "https://docs.databricks.com/aws/en/sql/user/queries/query-caching",
+        "checked_at": "2026-09-28T23:27:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-caching",
+        "content_type": "text/html",
+        "page_title": "Query caching | Databricks on AWS",
+        "canonical_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-caching",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "96790e20a73bd0aab898aa4d422518370241e951db37044e96f13dc82d7a3087",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.databricks.com/aws/en/sql/user/queries/query-caching",
+      "sha256": "f51a0e72a15c8dcc632e5f7a99d96e46dd133eba988bef70db331098b376876d",
+      "text_characters": 5136
+    }
+  ],
+  "added_source_ids": [
+    "databricks-genie-agent-setup",
+    "databricks-genie-agent-monitor",
+    "databricks-genie-announcement-june-2026",
+    "databricks-sql-release-notes",
+    "databricks-sql-null-semantics",
+    "databricks-sql-try-cast",
+    "databricks-sql-cache"
+  ],
+  "findings": [
+    {
+      "id": "databricksdataanalystassociate-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current product terminology and access model need precision",
+      "url": "https://docs.databricks.com/aws/en/genie-agents/set-up",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Setup reference identifies former Genie Spaces name and separates author compute credentials from end-user data authorization.",
+      "recommendation": "Cross-reference Agents while preserving exam wording; add identity and warehouse requirements.",
+      "disposition": "applied",
+      "source_id": "databricks-genie-agent-setup",
+      "resolution": "Cross-reference Agents while preserving exam wording; add identity and warehouse requirements."
+    },
+    {
+      "id": "databricksdataanalystassociate-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cleaning example erased identifier semantics",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The existing postal-code integer conversion could erase leading zeros and reject letters.",
+      "recommendation": "Keep postal codes as text and constrain TRY_CAST advice to genuinely numeric fields.",
+      "disposition": "applied",
+      "source_id": "databricks-sql-try-cast",
+      "resolution": "Keep postal codes as text and constrain TRY_CAST advice to genuinely numeric fields."
+    },
+    {
+      "id": "databricksdataanalystassociate-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Dashboard publication identity was underspecified",
+      "url": "https://docs.databricks.com/aws/en/dashboards/share/share",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Published shared-data permissions use publisher data privileges; individual mode uses viewers; both share publisher compute access.",
+      "recommendation": "Add mode table and draft/published test cases.",
+      "disposition": "applied",
+      "source_id": "databricks-daa-dashboard-sharing",
+      "resolution": "Add mode table and draft/published test cases."
+    },
+    {
+      "id": "databricksdataanalystassociate-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "NULL and anti-join reasoning lacked worked cases",
+      "url": "https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-null-semantics",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Three-valued logic, aggregate treatment and NOT IN can change the analyzed population.",
+      "recommendation": "Add explained failures and locally checked relational cases.",
+      "disposition": "applied",
+      "source_id": "databricks-sql-null-semantics",
+      "resolution": "Add explained failures and locally checked relational cases."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "databricks-genie-announcement-june-2026",
+      "published_on": "2026-06-16",
+      "disposition": "accepted-with-limits",
+      "value": "Current terminology/context and authorization worksheet.",
+      "limits": "Product announcement does not alter October 2025 blueprint; vendor benchmark not treated as local evidence."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "portable_subset_executed": 1,
+    "reasoning_cases": 4,
+    "local_validation": {
+      "engine": "Python stdlib SQLite 3.50.4",
+      "mode": "in-memory portable SQL semantics only",
+      "assertion_count": 18,
+      "assertions": [
+        "Base rows and nonnull amount count",
+        "Zero imputation changes average",
+        "Left join preserves unmatched order",
+        "Inner join excludes unmatched order",
+        "Post-join filter removes null-extended rows",
+        "Join condition retains left rows",
+        "NULL cannot be compared with equality",
+        "IS NULL finds missing value",
+        "NOT IN with NULL filters all candidates",
+        "NOT EXISTS preserves nonmatching customers",
+        "UNION removes duplicate rows",
+        "UNION ALL preserves duplicate rows",
+        "Window tie-break selects deterministic latest row",
+        "Empty cleaned string becomes null",
+        "Duplicate dimension inflates join result",
+        "Duplicate key check finds join fanout cause",
+        "Distinct measures do not repair duplicate join",
+        "Correct total preserves separate equal-value orders"
+      ],
+      "lab": "Lab 3 portable subset and Domain 2 deduplication; no Databricks runtime",
+      "limits": [
+        "No Databricks workspace, warehouse, Delta, Photon, Unity Catalog, dashboard or Genie execution.",
+        "TRY_CAST, approximate distinct and service permissions were reviewed against official docs, not tested in SQLite."
+      ],
+      "cleanup": "In-memory database closed; no external writes or service resources."
+    }
+  },
+  "answered_checks": 10,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eighteen SQLite assertions cover portable relational semantics only; no Databricks, Delta, Photon, Unity Catalog, dashboard or Genie execution.",
+    "Signed-in Academy and paid lessons not inspected; Whizlabs public content not usable.",
+    "Live monitor captures nine weighted domains; all 39 detailed PDF objectives separately read and mapped, without modifying accepted snapshots."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Eighteen portable SQL assertions in SQLite; no Databricks workspace or service lab executed.",
+    "portable_sql_assertions": 18,
+    "learning_catalog_consistency": "passed"
+  },
+  "detailed_objective_pdf": {
+    "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-data-analyst-associate-oct-2025.pdf",
+    "sha256": "8b8cac935964d4c2412996a5f64dde5cb71aad4570be096988c564e2d0f1cbe9",
+    "pages": 9,
+    "objective_count": 39,
+    "samples_reproduced": false
+  }
+}

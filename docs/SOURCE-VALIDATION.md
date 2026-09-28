@@ -914,6 +914,8 @@ The review reconciles the detailed official live-version PDF dated July 3, 2026 
 
 ## Databricks Data Analyst Associate coverage record
 
+The September 28 [deep review](research/2026-09-28-databricks-data-analyst-associate-deep-review.md) maps 39 detailed objectives. Review all 39 PDF objectives plus nine weighted domains; preserve exam wording while mapping Genie Agents, repair postal-code and SQL-null examples, specify sharing identities, add ten answers and four decisions, and verify 18 portable SQL assertions. Current guide citations: 34 registered, 33 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Understanding of Databricks Data + AI Platform | Section 1, all integrated scenarios, and Lab 1 |

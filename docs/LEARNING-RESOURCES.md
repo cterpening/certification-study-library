@@ -2341,6 +2341,25 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 No exact current third-party Vault Operations Advanced course or commercial practice lab was included without a verifiable public objective mapping and runtime. That is an open catalog gap. A general Vault course can repair product gaps but should not be represented as performance-exam preparation unless it includes repeated cluster operations and failure recovery.
 
+### DATABRICKS-DATA-ANALYST-ASSOCIATE — Databricks Certified Data Analyst Associate
+
+Resource details from the [DATABRICKS-DATA-ANALYST-ASSOCIATE guide](../guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the explanation, lab environment, course, or assessment that closes a demonstrated gap; spend at least as much time producing and testing SQL, dashboards and Genie evidence as watching video. Durations are library planning estimates unless a provider runtime is identified. Public metadata was checked September 28, 2026; signed-in catalogs and paid lessons were not inspected.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official certification page and detailed exam guide](https://www.databricks.com/learn/certification/data-analyst-associate) | Free | 1–2 hours to map objectives and inspect linked sample format; do not reproduce vendor questions |
+| [Databricks Academy](https://customer-academy.databricks.com/) — search for *AI/BI for Data Analysts* and *SQL Analytics on Databricks* | Free account or customer/partner entitlement varies | Approximately 8–16 hours selected learning, plus labs; verify current catalog durations after sign-in |
+| [Databricks Free Edition](https://www.databricks.com/learn/free-edition) | Free account | 12–24 hours across the eight labs and targeted experiments |
+| [Databricks SQL documentation](https://docs.databricks.com/aws/en/sql/) | Free | 4–8 hours selected reading and reproduction |
+| [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 2–5 hours of selected current SQL, dashboards, Genie and Unity Catalog sessions |
+| [Pluralsight: Databricks Certified Data Analyst Associate path](https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate) | Paid/trial; includes practice exam | Provider lists five courses / 7 hours (listed lesson runtimes total 6h 47m), plus 1–2 hours library-estimated review; Jan–Mar 2025 coverage needs a Genie/nine-domain gap check |
+| [Whizlabs: Databricks Certified Data Analyst Associate](https://www.whizlabs.com/databricks-certified-data-analyst-associate/) | Paid; training/practice product | Current retrieval returned no usable course details; prior library budget 4–10 hours is unverified. Verify syllabus/runtime before purchase and reject recalled-question claims |
+| [Databricks Community certification forum](https://community.databricks.com/t5/certifications/ct-p/databricks-certifications) | Free | 30–90 minutes for current program announcements; community answers are secondary evidence |
+
+Use practice questions to diagnose a domain and explain every option from the official guide and documentation. Do not memorize recalled live-exam content. Recheck the live weighted page, linked PDF, course replacement note and volatile AI/BI behavior near the appointment.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -6,22 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # Databricks Certified Data Analyst Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-analyst-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-analyst-associate) and its linked exam guide are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 against all 39 detailed PDF objectives and the nine live weighted domains. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#databricks-data-analyst-associate-coverage-record). The [official certification page](https://www.databricks.com/learn/certification/data-analyst-associate) and its linked exam guide are authoritative.
 
 **Library identifier:** `DATABRICKS-DATA-ANALYST-ASSOCIATE`; Databricks does not publish a short exam code on the official page checked.<br>
-**Current baseline:** Detailed official exam guide current as of October 30, 2025; live nine-domain weighted coverage page checked September 1, 2026.<br>
-**Upcoming blueprint change:** None announced as of September 1, 2026. The detailed PDF says its self-paced *Data Analysis with Databricks* course was being replaced by *AI/BI for Data Analysts* and *SQL Analytics on Databricks*; that is a learning-catalog transition, not evidence of a scheduled exam change.<br>
+**Current baseline:** Detailed official exam guide current as of October 30, 2025, with 39 objectives; live nine-domain weighted coverage page and its linked PDF checked September 28, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026. The detailed PDF says its self-paced *Data Analysis with Databricks* course was being replaced by *AI/BI for Data Analysts* and *SQL Analytics on Databricks*; that is a learning-catalog transition, not evidence of a scheduled exam change.<br>
 **Lifecycle status:** Active; valid for two years, with the currently live exam required for recertification.<br>
 **Assessment:** 45 scored multiple-choice questions, 90 minutes, USD 200, no test aids, English, online or test-center delivery.<br>
 **Prerequisite:** None required. The official guide recommends related training and six months of hands-on Databricks experience.<br>
 **Code convention:** Exam SQL is ANSI SQL. Practice writing and reading SQL without depending on a vendor-specific shortcut when a standard construct is available.
+
+**Product terminology — VERIFY CURRENT:** The exam still names **AI/BI Genie spaces**. Current [setup documentation](https://docs.databricks.com/aws/en/genie-agents/set-up) calls them **Genie Agents** and explicitly identifies the former name. Keep the published exam wording when mapping objectives, and use the current name when finding product instructions. This product change does not establish a new exam blueprint. The [deep-review record](../docs/research/2026-09-28-databricks-data-analyst-associate-deep-review.md) preserves the distinction.
 
 ## How to use this guide
 
@@ -125,12 +127,14 @@ WITH ranked AS (
 )
 SELECT customer_id,
        NULLIF(TRIM(email), '') AS email,
-       TRY_CAST(postal_code AS INT) AS postal_code
+       NULLIF(TRIM(postal_code), '') AS postal_code
 FROM ranked
 WHERE rn = 1;
 ```
 
-This query makes the survivor rule explicit, but it still needs checks for null conversion, duplicate rate and unintended loss. Do not turn malformed values into nulls without counting and routing them.
+Postal codes are identifiers: preserve leading zeros and alphabetic characters rather than casting them to integers. This query also assumes `updated_at` and the tie-breaker `ingest_id` define a unique ordering within each customer. Quarantine missing business keys before deduplication; otherwise unrelated null keys can collapse into one partition.
+
+For a genuinely numeric field, [TRY_CAST](https://docs.databricks.com/aws/en/sql/language-manual/functions/try_cast) can turn malformed or overflowing supported conversions into null. It still rejects unsupported source/target combinations and has documented nested-type restrictions. Count failed conversions separately from source nulls, retain original values for diagnosis, and apply a business rule before substituting zero.
 
 > **Related item:** Medallion names are quality contracts, not mandatory database names. Bronze normally preserves reproducible source evidence, silver applies validated conformance, and gold serves a consumer-shaped model. A cleanup query belongs where its ownership, replay and quality evidence are clear.
 
@@ -196,6 +200,12 @@ Validate row count, distinct business keys, unmatched keys and aggregate totals 
 - Use `GROUP BY` at the requested grain. Window functions calculate over a partition without collapsing all detail rows.
 - Apply stable sorting when output order matters. A `LIMIT` without deterministic order is not a top-N definition.
 
+### NULL and anti-join failures
+
+SQL uses three-valued logic. A comparison with null is unknown, and a `WHERE` clause retains only true conditions. Use `IS NULL` for missing values. The [NULL semantics reference](https://docs.databricks.com/aws/en/sql/language-manual/sql-ref-null-semantics) explains why `NOT IN` is dangerous when its comparison set contains null: a nonmatching value can still evaluate to unknown and disappear. Use a correlated `NOT EXISTS` when the requirement is absence of a matching row, and decide how null business keys should be handled.
+
+With amounts 40, 60 and null, `COUNT(*)` is 3, `COUNT(amount)` is 2, `SUM(amount)` is 100 and `AVG(amount)` is 50. Replacing null with zero changes the average to about 33.33. Neither interpretation is automatically correct; the business definition must choose. Likewise, `SUM(DISTINCT amount)` is not a repair for join duplication: two legitimate orders worth 40 each must still total 80.
+
 ### Create and query durable objects
 
 Know how to create a managed or external table, a view, and a table from a query. Choose CSV, Parquet or Delta from the contract: Delta supplies transactional table behavior; Parquet is a file format; CSV requires explicit delimiter/header/type discipline. Use three-part names and explicit target locations only where the external-lifecycle requirement justifies them.
@@ -238,7 +248,9 @@ Query Insights may surface likely causes and recommendations; the profile suppli
 
 [Photon](https://docs.databricks.com/aws/en/compute/photon) is Databricks' vectorized engine for supported SQL and DataFrame workloads. It can accelerate supported operators, joins, aggregations and Delta/Parquet processing. Verify compute and operation support; unsupported parts can fall back. Photon does not repair Cartesian joins, incorrect filters, bad grain or an overloaded remote federated source.
 
-Caching can reduce repeat work but creates freshness and scope questions. A result cache, disk cache and remote-source cache are not interchangeable promises. First determine whether the observed speedup is cache-dependent; then decide whether that dependency is acceptable.
+The [query-caching reference](https://docs.databricks.com/aws/en/sql/user/queries/query-caching) distinguishes returned-result caches from local copies of source files. A local result cache ends with its cluster, while serverless remote result caching can survive a warehouse restart. Therefore, restarting a warehouse alone does not establish a cold benchmark. `SET use_cached_result = false` disables result reuse for a benchmark session; it does not establish that every disk or application cache is cold. Record cache settings, data version and repeated results, then restore normal settings. AI/BI dashboards have their own caching behavior; the legacy SQL UI cache is not their contract.
+
+**Related item — VERIFY CURRENT:** [SQL release notes](https://docs.databricks.com/aws/en/sql/release-notes) distinguish the Current and Preview warehouse channels from ongoing web UI updates. Rollouts are staged, so a published release is not proof of availability in your workspace. Record the warehouse channel/version when reproducing a result.
 
 ### Use history, clustering and audit evidence deliberately
 
@@ -281,6 +293,19 @@ Publishing creates a consumable snapshot of dashboard configuration; sharing det
 - A scheduled refresh changes data freshness; it does not email every consumer by itself.
 - An alert evaluates a query/threshold on a schedule and sends configured notifications. Define threshold, evaluation frequency, destination, empty/error behavior and owner.
 
+### Prove the publication identity
+
+The sharing reference distinguishes two published data-permission modes:
+
+| Mode | Data permission used | Validation case |
+|---|---|---|
+| Shared data permissions | Publisher's permissions | A viewer without direct table access may still see the published data; approve the exposed result deliberately |
+| Individual data permissions | Each viewer's permissions | Test viewers with different row/data access and confirm the intended differences |
+
+Compute access uses the publisher's credentials in both modes. Draft dashboards use the viewer's data permissions, so successful draft testing does not prove the published mode is correct. Publishing snapshots configuration; changing the draft does not update that snapshot until republished. Data refresh is a separate operation.
+
+Account sharing requires registered account identities; a link does not by itself create anonymous access. Account-only users also have restrictions for workspace-bound securables. Check folder inheritance as well as direct dashboard grants.
+
 **VERIFY CURRENT:** AI/BI dashboard publishing, external sharing, embedding, subscriptions and alert capabilities can change independently. Recheck exact entitlement and credential behavior before production use.
 
 > **Related item:** Dashboard access and Unity Catalog data access are separate layers. Document which identity executes the dataset and whether consumers need direct source privileges; otherwise a dashboard may be overexposed or fail after publication.
@@ -311,11 +336,15 @@ For representative questions:
 4. Capture whether the miss came from metadata, instructions, data, a relationship, ambiguous language or SQL generation.
 5. Improve the smallest appropriate artifact: descriptions, instructions, sample question, benchmark, curated source or Trusted Asset.
 
-User thumbs-up/down feedback is a signal, not ground truth. Benchmarks supply a repeatable question/expected-answer evaluation set. Refresh Unity Catalog metadata when schemas or descriptions change, and retire instructions or trusted examples that no longer match the source.
+User thumbs-up/down feedback is a signal, not ground truth; it does not automatically train or update the agent. The [current monitoring reference](https://docs.databricks.com/aws/en/genie-agents/monitor) distinguishes benchmark Chat mode, which compares query results against a supplied SQL answer, from Agent mode, which uses an LLM judge and optional evaluation notes. Validate any generated answer key independently.
+
+Benchmark questions start new conversations, so a passing single-question test does not validate a multi-turn conversation. Test follow-up context separately. Keep business definitions, data snapshot, evaluation mode and expected results with the test. Benchmarks supply a repeatable question/expected-answer evaluation set. Refresh Unity Catalog metadata when schemas or descriptions change, and retire instructions or trusted examples that no longer match the source.
 
 ### Share with the same care as a dashboard
 
-Grant space access to intended users/groups and verify the warehouse and data-execution model. External-app embedding needs an explicit supported integration and identity design. Do not paste secrets, personal data or unrestricted source tables into instructions to work around governance.
+Grant space access to intended users/groups and verify the warehouse and data-execution model. Current Genie Agent setup documentation specifies **pro or serverless SQL warehouses**, with the configuring author's embedded credentials granting compute access. Data authorization uses each end user's own Unity Catalog identity. A consumer does not need direct warehouse permission merely because they use the agent, but still needs the required data access and agent permission. This differs from a dashboard published with shared data permissions. Test both allowed and denied consumers.
+
+External-app embedding needs an explicit supported integration and identity design. Do not paste secrets, personal data or unrestricted source tables into instructions to work around governance.
 
 **VERIFY CURRENT:** Genie Trusted Assets, benchmarks, monitoring, embedding and sharing evolve rapidly. Recheck the product documentation and workspace UI near study and deployment time.
 
@@ -378,7 +407,33 @@ Business users want natural-language pipeline analysis. Curate a narrow star-sha
 
 ---
 
+## Worked analyst decisions and current reading
+
+These are original learning cases, not vendor sample questions or recalled exam items.
+
+1. **Find a fanout error:** Orders 1 and 2 contain amounts 40 and 60, and order 3 has a null amount. Their total is 100. If customer 10 has two dimension rows, an unconstrained left join duplicates order 1 and produces four rows totaling 140. Check dimension-key uniqueness or use a valid effective-date join; do not conceal the error with distinct measures.
+2. **Preserve unmatched rows:** A left join followed by `WHERE dimension.region = 'East'` removes unmatched rows. Put that predicate in `ON` if the requirement is to keep every fact and attach only matching East attributes. Decide this from the requested population before tuning performance.
+3. **Choose the sharing contract:** A viewer lacks SELECT on a sensitive table. A published dashboard using publisher data permissions can still expose its result. A current Genie Agent evaluates the viewer's own data identity. Verify each surface separately and choose the publication mode deliberately.
+4. **Evaluate an apparent Genie improvement:** A new instruction changes a total from 100 to 140 and receives positive user feedback. Reconcile the join and independently verified answer key before marking the benchmark good. Repeat under the same data snapshot, then test paraphrases and follow-up questions separately.
+
+**Related item — VERIFY CURRENT:** The June 16, 2026 [Genie One, Agents and Ontology announcement](https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents), by Sydney Sundell, Ken Wong and Elise Georis, explains the broader product direction. Spend 20–30 minutes mapping its context sources, authorization and action boundaries. The current setup documentation corroborates the Spaces-to-Agents terminology. Broader integrations and autonomous actions are adjacent context, not additions to this exam's October 2025 objectives. Vendor benchmark results do not establish accuracy for your own dataset; build a representative evaluation set.
+
+## Diagnostic questions with answers
+
+1. **Why keep a postal code as text?** It identifies a location and can contain leading zeros or letters; arithmetic is not its meaning.
+2. **Why can deduplication discard unrelated customers?** Missing keys group together, or incomplete ordering chooses an arbitrary survivor. Reject missing keys and supply a stable tie-breaker.
+3. **Why can a larger warehouse leave an incorrect total unchanged?** Compute capacity does not repair fact grain, fanout or business rules.
+4. **Why does `NOT IN` sometimes return no rows?** A null in the comparison set can turn otherwise nonmatching results into unknown; define null behavior and consider `NOT EXISTS`.
+5. **Does restarting serverless prove a cold query?** No. Remote result caching may survive; explicitly control result reuse and record other cache assumptions.
+6. **Does a dashboard link grant direct SELECT?** No. Published shared-permission results may be visible without direct table grants; the permission mode determines data execution.
+7. **Do shared dashboard and Genie credentials mean the same thing?** No. Genie embeds compute access while using the end user's data permissions; a dashboard can share publisher data permissions.
+8. **Does a thumbs-up teach Genie a new rule?** Feedback signals a review opportunity; improve validated instructions/examples and retest.
+9. **Does a benchmark passing one question prove follow-up handling?** No. Benchmark questions start fresh conversations; test contextual follow-ups separately.
+10. **Does the new Genie product name change the exam outline?** The checked exam PDF and weighted page still use spaces; preserve their scope and cross-reference current terminology.
+
 ## Hands-on lab sequence
+
+**Execution boundary, September 28:** Eighteen portable SQL assertions ran in a local in-memory SQLite database, covering a subset of Lab 3 and the deduplication example. They checked nulls, aggregates, anti-joins, outer joins, fanout, set operations, ordering and preservation of `02108`. This validates those relational examples only. No Databricks workspace, Delta operation, warehouse performance, Unity Catalog grant, dashboard or Genie feature was executed; the service labs below remain proposed.
 
 1. **Catalog evidence:** In Catalog Explorer, find a certified dataset; record owner, type, tags, schema, history and upstream/downstream lineage. Explain which signals imply trust and which do not.
 2. **Controlled upload:** Upload a small CSV, override at least one inferred type, create a governed table and document how production intake would replace the manual route. Test a malformed and duplicate row.
@@ -436,7 +491,7 @@ Business users want natural-language pipeline analysis. Curate a narrow star-sha
 
 ## Places to learn
 
-This is **not a complete list**, and it is not a recommendation to consume everything. Pick the explanation, lab environment, course, or assessment that closes a demonstrated gap; spend at least as much time producing and testing SQL, dashboards and Genie evidence as watching video. Durations are planning estimates checked September 1, 2026 and may change.
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the explanation, lab environment, course, or assessment that closes a demonstrated gap; spend at least as much time producing and testing SQL, dashboards and Genie evidence as watching video. Durations are library planning estimates unless a provider runtime is identified. Public metadata was checked September 28, 2026; signed-in catalogs and paid lessons were not inspected.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -445,8 +500,8 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Databricks Free Edition](https://www.databricks.com/learn/free-edition) | Free account | 12–24 hours across the eight labs and targeted experiments |
 | [Databricks SQL documentation](https://docs.databricks.com/aws/en/sql/) | Free | 4–8 hours selected reading and reproduction |
 | [Databricks YouTube](https://www.youtube.com/@Databricks) | Free | 2–5 hours of selected current SQL, dashboards, Genie and Unity Catalog sessions |
-| [Pluralsight: Databricks Certified Data Analyst Associate path](https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate) | Paid/trial; includes practice exam | About 7 hours for five courses, plus 1–2 hours for assessment/review; 2025 material needs an October 2025 Genie/objective gap check |
-| [Whizlabs: Databricks Certified Data Analyst Associate](https://www.whizlabs.com/databricks-certified-data-analyst-associate/) | Paid; training/practice product | Provider totals were not stably exposed publicly; budget 4–10 hours, verify after sign-in and reject recalled-question claims |
+| [Pluralsight: Databricks Certified Data Analyst Associate path](https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate) | Paid/trial; includes practice exam | Provider lists five courses / 7 hours (listed lesson runtimes total 6h 47m), plus 1–2 hours library-estimated review; Jan–Mar 2025 coverage needs a Genie/nine-domain gap check |
+| [Whizlabs: Databricks Certified Data Analyst Associate](https://www.whizlabs.com/databricks-certified-data-analyst-associate/) | Paid; training/practice product | Current retrieval returned no usable course details; prior library budget 4–10 hours is unverified. Verify syllabus/runtime before purchase and reject recalled-question claims |
 | [Databricks Community certification forum](https://community.databricks.com/t5/certifications/ct-p/databricks-certifications) | Free | 30–90 minutes for current program announcements; community answers are secondary evidence |
 
 Use practice questions to diagnose a domain and explain every option from the official guide and documentation. Do not memorize recalled live-exam content. Recheck the live weighted page, linked PDF, course replacement note and volatile AI/BI behavior near the appointment.
