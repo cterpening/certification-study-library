@@ -1,0 +1,3167 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AZ-400",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "54b2154c99aa24570c9ba461d930710c6dbff649da781c07aab8d50183ee738d",
+  "guide_after_sha256": "a048de1216925f464e3a8658fc1aaec6d5833d47e835c452813248b213e37fd4",
+  "prior_records": {
+    "exam": {
+      "code": "AZ-400",
+      "level": "expert",
+      "vendor_id": "microsoft",
+      "title": "Designing and Implementing Microsoft DevOps Solutions",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+      "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Hands-on Azure administration or development, Git and source-control workflows, CI/CD, testing, identity and security, infrastructure as code, monitoring, and experience implementing both GitHub and Azure DevOps solutions."
+    },
+    "review": {
+      "id": "az-400-2026-08-31-source-validation",
+      "exam_code": "AZ-400",
+      "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-400-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement processes and communications",
+          "guide_sections": [
+            "Sections 1–2",
+            "Hybrid delivery scenario",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a source control strategy",
+          "guide_sections": [
+            "Section 3",
+            "Hybrid delivery scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Design and implement build and release pipelines",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios",
+            "Labs 3–6"
+          ]
+        },
+        {
+          "objective_group": "Develop a security and compliance plan",
+          "guide_sections": [
+            "Section 5",
+            "Compromised-runner scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Implement an instrumentation strategy",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 40,
+        "reachable": 39,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted July 27, 2026 objective groups and every published subobjective are mapped to an end-to-end work-to-production evidence model, comparisons, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 40 cited URLs are exact source-catalog entries; one Udemy page returned HTTP 403 and is treated as access-blocked rather than missing. The guide covers both GitHub and Azure DevOps, including Git/branch/repository scaling, package and test strategy, reusable YAML, hosted and self-hosted execution, progressive delivery, database compatibility, IaC and desired state, identity federation, security scanning, OpenTelemetry, KQL and delivery-system metrics. It explicitly records the September 30, 2027 Azure Automation State Configuration retirement and the July 1, 2027 applicable Azure DevOps WIF issuer retirement with their current transition destinations."
+    },
+    "sources": [
+      {
+        "id": "john-savill-devops-master-class",
+        "title": "DevOps Master Class",
+        "url": "https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "AZ-400"
+        ],
+        "notes": "Supporting Git, GitHub, CI/CD, secrets, OIDC, and DevOps concepts; the 2021 material requires reconciliation with the July 2026 AZ-400 blueprint and current product behavior."
+      },
+      {
+        "id": "john-savill-devops-master-class-materials",
+        "title": "DevOps Master Class materials",
+        "url": "https://github.com/johnthebrit/DevOpsMC",
+        "publisher": "John Savill",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "AZ-400"
+        ],
+        "notes": "Companion handouts, whiteboards, workflows, and code examples for the 2021 video series. No repository license was detected; use as linked supporting material, not a current exam map or reusable content bundle."
+      },
+      {
+        "id": "github-docs-github-flow",
+        "title": "GitHub flow",
+        "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-300",
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "github-docs-writing-on-github",
+        "title": "Writing on GitHub",
+        "url": "https://docs.github.com/en/get-started/writing-on-github",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "github-docs-branch-protection",
+        "title": "About protected branches",
+        "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-blueprint",
+        "title": "Study guide for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-credential",
+        "title": "Microsoft Certified: DevOps Engineer Expert",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Official page showed AZ-400 active with no retirement date and identified Azure Administrator Associate or Azure Developer Associate as a prerequisite certification during review."
+      },
+      {
+        "id": "az-400-boards-github-integration",
+        "title": "Connect Azure Boards to GitHub",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-analytics-widgets",
+        "title": "Widgets based on Analytics data",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-github-mermaid",
+        "title": "Creating diagrams with Mermaid on GitHub",
+        "url": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-github-lfs",
+        "title": "About Git Large File Storage",
+        "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Plan-specific file limits and billing are volatile and must be verified before implementation."
+      },
+      {
+        "id": "az-400-github-large-files",
+        "title": "About large files on GitHub",
+        "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Repository and file recommendations or limits can change and should be rechecked."
+      },
+      {
+        "id": "az-400-artifacts-concepts",
+        "title": "Azure Artifacts key concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-test-analytics",
+        "title": "Test Analytics in Azure Pipelines",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-code-coverage",
+        "title": "Review and configure code coverage results in Azure Pipelines",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-github-actions-concepts",
+        "title": "Concepts for GitHub Actions",
+        "url": "https://docs.github.com/en/actions/concepts",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-github-self-hosted-runners",
+        "title": "Self-hosted runners",
+        "url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-pipeline-approvals-checks",
+        "title": "Define approvals and checks in Azure Pipelines",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-app-configuration-feature-management",
+        "title": "Feature management overview",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Switch, rollout and experiment capabilities are current but SDK and plan details remain volatile."
+      },
+      {
+        "id": "az-400-bicep-what-if",
+        "title": "Bicep What-If: Preview changes before deployment",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-automation-state-migration",
+        "title": "Azure Automation State Configuration to Machine Configuration migration planning",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Official notice states Azure Automation State Configuration retires September 30, 2027 and identifies Azure Machine Configuration as the transition destination."
+      },
+      {
+        "id": "az-400-deployment-environments-concepts",
+        "title": "Azure Deployment Environments key concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-pipeline-reports",
+        "title": "Pipeline reports in Azure Pipelines",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-github-actions-metrics",
+        "title": "About GitHub Actions metrics",
+        "url": "https://docs.github.com/en/actions/concepts/metrics",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-github-oidc-azure",
+        "title": "Configuring OpenID Connect in Azure",
+        "url": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-azure-wif-service-connection",
+        "title": "Connect to Azure with an Azure Resource Manager service connection",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Microsoft recommends WIF and announces the applicable legacy Azure DevOps issuer retirement on July 1, 2027."
+      },
+      {
+        "id": "az-400-github-security-features",
+        "title": "GitHub security features",
+        "url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+        "publisher": "GitHub",
+        "authority_class": 2,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Product packaging, repository eligibility and licensing are volatile."
+      },
+      {
+        "id": "az-400-defender-devops-security",
+        "title": "Overview of Microsoft Defender for Cloud DevOps security",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Connector, scanner, plan and code-to-cloud feature availability can change."
+      },
+      {
+        "id": "az-400-application-insights-opentelemetry",
+        "title": "Enable Azure Monitor OpenTelemetry for applications",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-azure-monitor-kql",
+        "title": "Get started with log queries in Azure Monitor Logs",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ]
+      },
+      {
+        "id": "az-400-microsoft-learn-course",
+        "title": "Course AZ-400T00-A: Design and Implement Microsoft DevOps solutions",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Official instructor-led duration is four days; the 30–45 hour self-paced planning range in the guide is an estimate including practice."
+      },
+      {
+        "id": "az-400-microsoft-practice-assessment",
+        "title": "Microsoft AZ-400 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Official free readiness assessment; it does not substitute for hands-on delivery experience."
+      },
+      {
+        "id": "az-400-exam-readiness-zone",
+        "title": "Microsoft Exam Readiness Zone AZ-400 search",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Short review videos may target an older blueprint and should be reconciled with July 2026 objectives."
+      },
+      {
+        "id": "az-400-azure-devops-labs",
+        "title": "Azure DevOps Labs",
+        "url": "https://azuredevopslabs.com/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Select labs by objective and verify each lab's product currency before use."
+      },
+      {
+        "id": "az-400-pluralsight-path",
+        "title": "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
+        "url": "https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions",
+        "publisher": "Pluralsight",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Page displayed six courses, three labs, 36 hours and a practice exam; individual content dated 2024–2026 and needs July 2026 reconciliation."
+      },
+      {
+        "id": "az-400-oreilly-tim-warner-crash-course",
+        "title": "Exam AZ-400: Microsoft Azure DevOps Solutions Crash Course",
+        "url": "https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/",
+        "publisher": "Tim Warner via O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Two-day agenda totals about six hours. The page contains stale prerequisite/product wording, so use as a selective supplement and reconcile with the July 2026 blueprint."
+      },
+      {
+        "id": "az-400-udemy-alan-rodrigues",
+        "title": "AZ-400 Designing and Implementing DevOps Certification",
+        "url": "https://www.udemy.com/course/azure100/",
+        "publisher": "Alan Rodrigues via Udemy",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Udemy displayed 20h 46m, 258 lectures and a September 2025 update; reconcile with the July 2026 blueprint."
+      },
+      {
+        "id": "az-400-whizlabs",
+        "title": "Microsoft Azure AZ-400 certification training and practice",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-az-400/",
+        "publisher": "Whizlabs",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Course, practice-test and lab packaging or duration was not reliably visible during review; verify current contents and July 2026 alignment before purchase."
+      },
+      {
+        "id": "az-400-measureup-practice-test",
+        "title": "Microsoft Practice Test AZ-400: Microsoft Azure DevOps Solutions",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "MeasureUp displayed 139 questions and an August 2024 update; reconcile with the July 2026 blueprint before purchase."
+      },
+      {
+        "id": "az-400-microsoft-reactor-agentic-devops",
+        "title": "Microsoft Reactor Agentic DevOps Live series",
+        "url": "https://developer.microsoft.com/en-us/reactor/series/s-1625/",
+        "publisher": "Microsoft Reactor",
+        "authority_class": 4,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-400"
+        ],
+        "notes": "Six on-demand one-hour 2026 sessions supplement hybrid GitHub/Azure DevOps, DevSecOps and incident topics; not full AZ-400 coverage."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "1e47ef407c45b2437b90a1f9b3e997b9b83a20ca25b0b194bf880ace58ed6637",
+      "guide_sections": "2 / Flow models, small changes and GitHub Flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "fc9214cdb8f9a42396d3f23685042ef4be28483084c69cc940cce0f21ccc5282",
+      "guide_sections": "2 / Feedback speeds, issues, actionable notifications",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "e9bcdaa33ebfc74debc04e208579359ebe9f3068a563c17e906e7b20ebeb8c5f",
+      "guide_sections": "1–2 / GitHub/Azure Boards integrations and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "58ac336501fd5c95314ac727a38532ef0901c20584fe68e241f677509192436e",
+      "guide_sections": "1–2, 7 / Linked source, work, test and release evidence; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "4a105a5fe853aba0f2d3ef6dd3c46b745c45c73c2fc9b8355d72cb6b99c5639a",
+      "guide_sections": "2, 7 / Defined populations/states, flow/recovery dashboards",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "45b6f4c4e7694658b555be10a0c5f6b9d19fe3f2a3483b2663dd782837732766",
+      "guide_sections": "2 / Planning WIP, aging and forecast metrics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "98732c2d67ffbd7e20f7e1e9d28694b7b9affa97f01b0eff9a8ead479df5058c",
+      "guide_sections": "2, 4.7 / Review/change/queue metrics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "995e5961639808fdaa5a161997a135d53c67481d378077f9d1e5e8f5421b60af",
+      "guide_sections": "2, 4.2, 7 / Testing, flaky rate and retries; example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "8408d593b38513418cbdde0acd88edb1dfbe4fb54f92ff429eabe1845835608f",
+      "guide_sections": "2, 5 / Security exposure, remediation and exception age",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "baa39bbbd096f8564a33ebda6cc2ec13444399910cb577268edd3d0dbd491bd3",
+      "guide_sections": "2, 4, 7 / Deployment lead time, failure and critical path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "ad40ceffa1a6d957818fd154c5ee97bbc82b5cd7160b1eefccc901a7419975f2",
+      "guide_sections": "2, 6–7 / SLO, detection/recovery, saturation and budget; example 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "840d712c340cfdd2866006dd9d24e3d8cd40d8a858fdf1ded103ce8c8c5d8077",
+      "guide_sections": "2 / Wiki, Markdown, Mermaid and versioned ADRs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "0d4f198d1941a201c2a082a759abdc365aeadbe107417a4233e65c5c45fbe6e6",
+      "guide_sections": "2 / Release notes, API docs and durable ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "601530bd2345f0f71515bcac1538da85a7f2db8867b66fab6f6769e556b0e887",
+      "guide_sections": "2 / Git history with reviewed labels/metadata",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "0881527a78f25d4016d03681d50a07dbb5fc94fe661eabe1107216e502bf00c3",
+      "guide_sections": "2 / Webhook verification, retry and failure handling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "1d3eaef338f414605b4d575cbe2f4dce4e17acda303fc225fcc327423464493a",
+      "guide_sections": "2 / Boards/GitHub connection scope and traceability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "6ea0255e826ea087ac7a54ac2ab9f6353ccea074ec252fec1bc8644f52beee57",
+      "guide_sections": "2 / Native apps versus retired connector/Workflows and card behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "8df02b146903eab27b3afce8aec22ea5ccc30de227b58983f9003c188070daa0",
+      "guide_sections": "3 / Trunk, feature/release branch trade-offs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "aaeb4576c99269664e3bc809288e1c68f3e66cd6023fd70e46353855f38e3f09",
+      "guide_sections": "3 / PR reviews, checks, stale approval and merge queue",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "e41002c8975cd7047b8ce49b52c33bffa68e2f16a4e34f62852402c96355b20a",
+      "guide_sections": "3 / Protected branches/rulesets, bypass and queue commit checks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "7dfa0670f963dcb56888d73a608f3028d36387cb00f9a840dd279aed8bcf04ba",
+      "guide_sections": "3 / LFS and git-fat storage/operational boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "3844a090a9ebf3f5e64982dadff06445e73a4f855ea63923aadaf0d3ce4e17c3",
+      "guide_sections": "3 / Scalar, sparse/partial clone and cross-repo sharing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "60230650b34721d402ca455b6fc24834ec363bdb06b0252192db774dd8c77f2a",
+      "guide_sections": "3 / Roles, teams, automation and public-project retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "5e7b7e8d93eb77b1bb17056d1ac72db24991915d872cf0d11eef9cbf9f6089ab",
+      "guide_sections": "3 / Protected tags, releases and artifact provenance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "339b049f573e852b05902c56effb9652ca795a068bc26765d91010f86a8fd571",
+      "guide_sections": "3 / Restore, revert, reset and reflog",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "4dac461154ba823167d409effaffe8903991b838c13d6582568baa7fa98067da",
+      "guide_sections": "3 / Credential rotation, history rewrite and distributed copies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "3c3b47a5f4b02e8d75b30d4047e5cea29e16e2c80fc8f254428485be2bf2fa0a",
+      "guide_sections": "4.1 / GitHub Packages versus Azure Artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "da31d4bf851661fe6ec9ffb246b1b0133b016f230df2753eb5c25ae09545edd3",
+      "guide_sections": "4.1 / Feed/view/upstream access, promotion and demotion limit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "8a63dd08592acf3a983186288501123cb24ae1d5a7c414036f176d379858c953",
+      "guide_sections": "4.1 / SemVer/CalVer, lockfiles and compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "33a002115de1ab3b7d22911bcae631c51e4d779027e870453528a175faaf12c6",
+      "guide_sections": "1, 4.1 / Commit/run/version/digest and provenance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "f4955b17f33be23c7f157b85dfc22358044e339505af642b560da3fb3daf810e",
+      "guide_sections": "4.2, 4.4–5, 7 / Layered policy and evidence; local gate example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "3e0f9bd46507ab17e4b9869a21e8e2ed7cc06ecd24c6394f0fe791e6f78db062",
+      "guide_sections": "4.2 / Unit, integration, load and resilience placement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "ecd6fa82870a5b9ade328720d8d3ae4d1c611a4d1044b3c97933c7c72ddcefeb",
+      "guide_sections": "4.2, 4.7 / Test agents, result publishing and failure evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "7a70d68e1ca3b7a0efbcdd6fa630bca08d3709ddabeeaecf9e9710a0a965885d",
+      "guide_sections": "4.2 / Coverage scope, risk and assertion quality",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "0ace400dd0ff7e0f26589049c39d55146e69ff3c98b42daf22639b2709a91b7a",
+      "guide_sections": "4.3 / Platform choice and hybrid ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "98eea6d01b4e324317d1770ab58e982f1a69cd522d21985d1790cc1b8f3eedb8",
+      "guide_sections": "4.3, 4.7, 7 / Hosted/self-hosted, runtime, capacity and cost; example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "68412cb2baca76dae00b992369a96a248c5738889d1191ac7a4dfcd76b23bf4f",
+      "guide_sections": "1–2, 4.3, 7 / GitHub source with Azure Pipelines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "697ad0b36c784864832b07968dc138fecb1ae73484a5f107eb35cf7ad2df836b",
+      "guide_sections": "3, 4.4 / PR/push/schedule/merge queue and execution policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "f125bd8b7f80cb104ae95dffa5ed69ba82122ea2d25254687ee5ddefdcb7503f",
+      "guide_sections": "4.4 / Stages, jobs, steps, templates and conditions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "075fc509f619dcb17bfe4cffe642eb1b3c7c8d320244b5cb8cb2c0990cd989bb",
+      "guide_sections": "4.4, 7 / Explicit graph and critical path; example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "b751aeca044fb91f2e5ff845ec95833fe776d2797125312934368d7b8bf7da01",
+      "guide_sections": "4.3–4.4 / Hybrid, custom VM execution and trust boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "c18eb9637c28e06e2c215c497359217f650fc290ade110db8a17d96e7aea907a",
+      "guide_sections": "4.4 / Reusable workflows/templates and variable evaluation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "364238ee6feee1f03b1c545db31fb0834f4c2ae319bec2ff4fda96e8cc723035",
+      "guide_sections": "4.4 / Resource checks outside YAML, fixed approvers and exclusive locks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "3879c49d33ab0143a251082c508808c1ea86043327d24efcea9fe445138f171e",
+      "guide_sections": "4.5, 7 / Rolling, blue-green, canary/ring, flags and experiments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "efc041298de09eee96542fb0fb93d31ec1928e317eff368f4b2844fbf704c8d0",
+      "guide_sections": "4.4–4.5 / Dependency graph, success and readiness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "95b3f069aa48440124bc4c2e8f4c292fb520e0da5ba4d3c932b3d1480a17efe4",
+      "guide_sections": "4.5 / Draining, surge, rolling and slot behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "e3a47f4534e203ae40c65e3afa507359dc345879022d1005a4fc57703eb03bd7",
+      "guide_sections": "4.5 / Hotfix evidence, reviewers, forward merge and audit",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "fba3134ffb932b701c1957fbd1cec4b02b120b9270a2aaa806c1e52601b717e6",
+      "guide_sections": "4.5, 7 / Partial failure, stop, rollback and state compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "43d733dab0199fc0a9f438a9f1d816b354c369c73570bfd0efade2e53e665e08",
+      "guide_sections": "4.5 / App Configuration flags and independent exposure",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "8663e6729232a2a52678db9dc878e4f402288f9ad00406389eb8888a8da3e833",
+      "guide_sections": "4.5, 7 / Same package/image/binary deployment and scripts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "124293f915f82cd3ba15881764e2ef577a6a80ce6b6767d3b3ad2daee8194fe9",
+      "guide_sections": "4.5, 7 / Expand-migrate-contract and rollback windows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "04a72354f921cd1b1a86e62c48f8cdc3a1e69fcce724fc6669d36fc8cd3fd41c",
+      "guide_sections": "4.6 / ARM/Bicep, Machine Configuration and scripts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "baf90ff36e8ab82a0fdd80669b926624f0a03a1334a582fe8d3b21c55ddaec00",
+      "guide_sections": "4.6 / Ownership, desired state and drift controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "72db07e09ec4d465f18ae321ba0db2a9f99ce9c5d40810bdc8334ef47ee7c64c",
+      "guide_sections": "4.6 / Versioned review, testing, preflight and deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "add0ee68f641698807351bd9efe47a62f9d3634da00df68a788f1ea0a386dbe2",
+      "guide_sections": "4.6 / Automation State Configuration lifecycle and Machine Configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "6ca5bd2978ab4c6f3acf21aa7266070dec4b04fda2d40d1f62ee0a49b4cfc7df",
+      "guide_sections": "4.6 / Deployment Environments catalogs and governed self-service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "f52871e00346080146c778a0c38e0c39f0514a47030125dcafd4954bcb81e38f",
+      "guide_sections": "4.7, 7 / Queue/task tails, flaky rates and first-attempt results",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "0123b447ca4251a10460f471c0f01b8f4fdfc37efdd81b7e163b7de6d8e2379a",
+      "guide_sections": "4.7 / Remove waste, critical path, cache and runner maintenance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "d920e2e3e92d369323369b46dbb65ceac2d852d4297923c051319417f1ae0259",
+      "guide_sections": "4.7, 7 / Worker time versus elapsed time and capacity; examples 1–2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "9a41837c367c151cfb7aae96c109c40a06ca42ffe5ee6cdbecf753f4d888addc",
+      "guide_sections": "4.1, 4.7 / Immutable packages and platform-specific evidence retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "e824dc185bddd07230223149cd5e0b10853b88c9c616a8878b790913ec22fe90",
+      "guide_sections": "4.7 / Classic inventory, YAML equivalence, checks and cutover",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "f8931c37d2c9814dd33155a5809d974a104f773e93075d4005f307787f7f68d4",
+      "guide_sections": "5.1 / System/user-assigned identities versus service principals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "77ddb510af9a801fedb42846b35a48a125f284ac6e114c18b95a5ad490b99bbe",
+      "guide_sections": "5.1 / GitHub App, token and PAT permissions/lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "6e1b0ee5de7944c076db179fbecbe55dae57c7cce72cb82060837d6335b703e5",
+      "guide_sections": "5.1 / ARM versus Azure DevOps connections, WIF issuer and membership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "30931d91886cab2538c55f79d58f50fa8999c3708e2620762414a16e28b29720",
+      "guide_sections": "3, 5.1 / GitHub roles/teams/allowlists and actor/event policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "fb60cd03a8c0bf3ea3728c56a6749e77d46afd43e07b79d50ee6adcf0cbb382e",
+      "guide_sections": "5.1 / Azure DevOps groups/resource permissions versus Entra permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "82404fa7300abaf699e6c01de0ca2e4fc75904e1cc157e1fc666335a3cee2625",
+      "guide_sections": "5.1 / Licensed access, application identities and outside collaborators",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "39329e193e35b8050073d4e950c9af4ccf872591042e4d9f2bcb55da555f6274",
+      "guide_sections": "5.1 / Project/team membership and scoped administration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "cd91f7f554807ab33232012f4110da849c636368f1d0a1b9550a8c1b44b54689",
+      "guide_sections": "5.2 / Key Vault identity, scope, network, rotation and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "18b75e2d2a55a13e8321560889f497757843ce0fcf02335915c7472b14d6d0c7",
+      "guide_sections": "5.1–5.2 / OIDC/WIF trust and issuer lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "0b4d50f83538f76e6e6ca09c9c31682583a3c64a9c775a7911cecb10ef5367d6",
+      "guide_sections": "5.2 / Secure files, job/workspace copies and access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "c705fa1469c6b68f891859662ef4fffd0a99a1d679f448f55f6c0aeeebd476bf",
+      "guide_sections": "4.3–5.2 / Untrusted input/code, logs, caches, artifacts and exfiltration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "aebba292c53846ace0975e2eddde488ed138cbe2f3e8f29ad336b7cbaf2399c5",
+      "guide_sections": "5.3 / Secret, source, dependency/license and runtime scan layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "bd9f45742e211730850798bdbc301f9de6b59c7ebcd5fef19d782a2527c7ae50",
+      "guide_sections": "5.3 / Defender code-to-cloud connectors and posture",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "483dd323e6d3f54c63ef9b815497c70439008589163f6eeb7032d25198ae6710",
+      "guide_sections": "5.3 / GitHub versus Azure DevOps products, default/advanced CodeQL",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "9626f4b3eda86f669bfc10377cb41e914ced32b3865e1895a224c1ca72294ace",
+      "guide_sections": "5.3 / Defender integration boundaries and licensing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "da31ef3c33fb41189698e9554cc42067aecfd5267129dd56f886f6528c7323f0",
+      "guide_sections": "5.3 / Final image digest, container scan and CodeQL database/results",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "1c7688aee2c57e01a59d4f9cf52ddf04b7b9051d760512058d4f788c4b7968ed",
+      "guide_sections": "5.3 / Dependabot alerts, security updates and tested compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "451244fd6748df7b8bc3e3221d98f9d4b9cab803c2bd7061f62e23e42d8f0657",
+      "guide_sections": "6 / Correlated delivery/application/platform signals and Azure Monitor",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "82c51264ac3077b55551f2a340ee8d08b334832412c4c5d9477d623193528bb0",
+      "guide_sections": "6 / App Insights/OpenTelemetry and VM/container/storage/network insights",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "c01f96a70f9d431618755565e0d8baf1ca6842217d308c15d19c1ac694a7aa74",
+      "guide_sections": "2, 6 / GitHub charts, dashboards and usable population definitions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "38f526785d12fa8afc4ced2af2a51209ec28c5496b804cade3da0366d79defb1",
+      "guide_sections": "4.7, 6 / Pipeline/run health alerts and actionable ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "e525bf03108888e24a1f8e8ce2d0616aed1fc83e65f1f898e756fa8a746d50be",
+      "guide_sections": "6 / CPU, memory, disk/network saturation versus user impact",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "675ff168584d6401629209fdec23eeccf3ec3fe768f5525ed8545b62260ffa3b",
+      "guide_sections": "6–7 / Version/cohort, unsampled metrics and weighted sampling; examples 3, 6–7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "20d70410ec3d2520728c68bfa6d6ba6fad6f2342bf3f2eca49ac3ad0605378f7",
+      "guide_sections": "6 / Context propagation, dependency tracing and release identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "65048d2961275a1bf9f97ad7556860923970fe33b244185b30b9cf6d77a7fa30",
+      "guide_sections": "6 / Bounded KQL, schema, itemCount and retained-row percentile caveat",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AZ-400",
+        "title": "Designing and Implementing Microsoft DevOps Solutions",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+        "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+        "snapshot_path": "data\\objective-snapshots\\az-400-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\az-400-official-status.json",
+        "previous_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+        "current_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+        "previous_status_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "current_status_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of July 27, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 65,
+    "reachable": 64,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "john-savill-devops-master-class",
+      "url": "https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq",
+      "checked_at": "2026-09-28T09:58:13.817418+00:00",
+      "health": {
+        "id": "john-savill-devops-master-class",
+        "url": "https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq",
+        "checked_at": "2026-09-28T09:58:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "DevOps Master Class",
+        "canonical_url": "http://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq",
+        "duration_signals": [],
+        "signal_fingerprint": "9beb8eabdbde2da97f2f91b51def92d1cac75a4b39b6b9ecb993745d9c43f780",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq",
+      "sha256": "bfe7153eb75d9baf55faddd032505924ab3deb25a804f3663b053150492217b0",
+      "text_characters": 182
+    },
+    {
+      "id": "john-savill-devops-master-class-materials",
+      "url": "https://github.com/johnthebrit/DevOpsMC",
+      "checked_at": "2026-09-28T09:58:13.818078+00:00",
+      "health": {
+        "id": "john-savill-devops-master-class-materials",
+        "url": "https://github.com/johnthebrit/DevOpsMC",
+        "checked_at": "2026-09-28T09:58:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/DevOpsMC",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/DevOpsMC: DevOps Master Class Public Repo",
+        "canonical_url": "https://github.com/johnthebrit/DevOpsMC",
+        "duration_signals": [],
+        "signal_fingerprint": "2da5c81153da21a71d5aedfe1c80b8c7ff58feb9101f7ca3f2870a98f71e149d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/DevOpsMC",
+      "sha256": "8c5d18dd5ec1a9a4872e1e93fddf30eda5b5bdf76bbc7e07e51b2f4f7a3dc676",
+      "text_characters": 2724
+    },
+    {
+      "id": "github-docs-github-flow",
+      "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+      "checked_at": "2026-09-28T09:58:13.818472+00:00",
+      "health": {
+        "id": "github-docs-github-flow",
+        "url": "https://docs.github.com/en/get-started/using-github/github-flow",
+        "checked_at": "2026-09-28T09:58:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/get-started/using-github/github-flow",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub flow - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/get-started/using-github/github-flow",
+        "duration_signals": [],
+        "signal_fingerprint": "ee7bb80fe4a37e5dc620eea9e35a3802ee557d96bc484de0f3f5b81e8d275cb6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/get-started/using-github/github-flow",
+      "sha256": "0f803128f04f073f28875505064596bd50587a5a366d0c8897bd6a53d8e07a56",
+      "text_characters": 6452
+    },
+    {
+      "id": "github-docs-writing-on-github",
+      "url": "https://docs.github.com/en/get-started/writing-on-github",
+      "checked_at": "2026-09-28T09:58:14.194332+00:00",
+      "health": {
+        "id": "github-docs-writing-on-github",
+        "url": "https://docs.github.com/en/get-started/writing-on-github",
+        "checked_at": "2026-09-28T09:58:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/get-started/writing-on-github",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Writing on GitHub - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/get-started/writing-on-github",
+        "duration_signals": [],
+        "signal_fingerprint": "db6eae36fa6cd086d3cb0af5f5e6f800809e5729e9c536afbb3d416a1d043c8e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/get-started/writing-on-github",
+      "sha256": "621c0ee5a709701a47305954059acff119ff14b08f6bd0aaca3bae267668a82b",
+      "text_characters": 1100
+    },
+    {
+      "id": "github-docs-branch-protection",
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "checked_at": "2026-09-28T09:58:14.378556+00:00",
+      "health": {
+        "id": "github-docs-branch-protection",
+        "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+        "checked_at": "2026-09-28T09:58:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About protected branches - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+        "duration_signals": [],
+        "signal_fingerprint": "b73d0e2480527dfca10860b4ea3913a1bfb52664a12041f67944531e483704e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "sha256": "aac57027c45fd91d831efe9e9409ee3ec6ce4828f046af2757d97d83dbb9d7d8",
+      "text_characters": 18304
+    },
+    {
+      "id": "az-400-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+      "checked_at": "2026-09-28T09:58:14.443271+00:00",
+      "health": {
+        "id": "az-400-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+        "checked_at": "2026-09-28T09:58:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "f29d21cf78b9c60a4922886f8335ab3d71e6ae4b34d56fa8e97ae6bd85f8b261",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+      "sha256": "135b9f6bbb870a00dd09913e2cc2f198f9455b660c7566ee323f2a46d806cb09",
+      "text_characters": 13816
+    },
+    {
+      "id": "az-400-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+      "checked_at": "2026-09-28T09:58:14.610158+00:00",
+      "health": {
+        "id": "az-400-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+        "checked_at": "2026-09-28T09:58:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: DevOps Engineer Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+        "duration_signals": [],
+        "signal_fingerprint": "fa215b716dc3d8c74644a1cdaeb0319651f341909ec91f99b6f3fb15ffa39dab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+      "sha256": "a2ddff48f1e81d2fd2bad0a81ecce7c1b12cfdacc1000550eeb77cab267e37d5",
+      "text_characters": 4480
+    },
+    {
+      "id": "az-400-boards-github-integration",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:14.733316+00:00",
+      "health": {
+        "id": "az-400-boards-github-integration",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Connect an Azure Boards or Azure DevOps project to a GitHub repository - Azure Boards",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "bf138ce833022a079c31095f056272c96c04b3429462431fcce74273b8ee6ec6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops",
+      "sha256": "960e6e09cf74a8b3ed4874734c8768a7c99e0565c51081463810cd4ecb4d02b5",
+      "text_characters": 16173
+    },
+    {
+      "id": "az-400-analytics-widgets",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:14.881511+00:00",
+      "health": {
+        "id": "az-400-analytics-widgets",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Analytics Widgets Overview for Azure DevOps - Azure DevOps",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "788d43b39a73271c406e1c4ae787b7315c928846137b55428035db9588e14ce3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops",
+      "sha256": "82aa9563b56bf2c29691531274d7fbec8d4afb95603f24c530760e3b37c93345",
+      "text_characters": 5781
+    },
+    {
+      "id": "az-400-github-mermaid",
+      "url": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams",
+      "checked_at": "2026-09-28T09:58:14.974138+00:00",
+      "health": {
+        "id": "az-400-github-mermaid",
+        "url": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams",
+        "checked_at": "2026-09-28T09:58:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Creating diagrams - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams",
+        "duration_signals": [],
+        "signal_fingerprint": "6107e78a1c4547217432965c906adf93443bd5344d3441c673845bb1e68c4197",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams",
+      "sha256": "73d953382dffbc39056ccf801e94f97d5a62a37825092d1e582add2606e9536e",
+      "text_characters": 3671
+    },
+    {
+      "id": "az-400-github-lfs",
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+      "checked_at": "2026-09-28T09:58:15.109503+00:00",
+      "health": {
+        "id": "az-400-github-lfs",
+        "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About Git Large File Storage - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+        "duration_signals": [],
+        "signal_fingerprint": "4fbbd9081d090354358482420e4d42e6db817e7ee94de63cb0a9d28e2d6de282",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+      "sha256": "7fcbf007bff442e7f54c396cd49e6b9353e4ea90ba281c6ad82942b108c2930e",
+      "text_characters": 1943
+    },
+    {
+      "id": "az-400-github-large-files",
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+      "checked_at": "2026-09-28T09:58:15.218375+00:00",
+      "health": {
+        "id": "az-400-github-large-files",
+        "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About large files on GitHub - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+        "duration_signals": [],
+        "signal_fingerprint": "a1ac0b71ef5ef128d0ad54fafc58cc051e5806f44204856c460460e3e8060d08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+      "sha256": "19ff7415719e30a493b00ba45cf090de3fa0fb961c3da08d03fa6270ced742b7",
+      "text_characters": 5401
+    },
+    {
+      "id": "az-400-artifacts-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:15.308628+00:00",
+      "health": {
+        "id": "az-400-artifacts-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Azure Artifacts key concepts - Azure Artifacts",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "8657282d5d618a77fc0764af0bcd28ff9ef394249d493c9f2be85a80d0b62467",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops",
+      "sha256": "8da3037239df649d088c8da1dc91adc1510ae7967925019e794e0044be81b060",
+      "text_characters": 5790
+    },
+    {
+      "id": "az-400-test-analytics",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:15.397257+00:00",
+      "health": {
+        "id": "az-400-test-analytics",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Test Analytics - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "4b3c03e3590c9aa18a2e7725e5bd2f6ead4abfce21852e73a57618c5447f2f10",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops",
+      "sha256": "c7d8dc434f070eaca81de9e3d037450474365d55d7c5ced9fc058b8686dd820b",
+      "text_characters": 4983
+    },
+    {
+      "id": "az-400-code-coverage",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:15.419495+00:00",
+      "health": {
+        "id": "az-400-code-coverage",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Review and configure code coverage results in Azure Pipelines - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "f61ef70cc353e4bb8ab5e36268a13865b954efb4682bfcbfc8f12334afc48b24",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops",
+      "sha256": "964b73b04aee3c6b6562d93167c9874b10e0fd3e6804de18dfdd792711ee923a",
+      "text_characters": 14653
+    },
+    {
+      "id": "az-400-github-actions-concepts",
+      "url": "https://docs.github.com/en/actions/concepts",
+      "checked_at": "2026-09-28T09:58:15.534965+00:00",
+      "health": {
+        "id": "az-400-github-actions-concepts",
+        "url": "https://docs.github.com/en/actions/concepts",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/actions/concepts",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Concepts for GitHub Actions - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/actions/concepts",
+        "duration_signals": [],
+        "signal_fingerprint": "a40c748a663505b31f06960eecd22c996edab72dada66bae55c38e65260a64ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/actions/concepts",
+      "sha256": "9178fb748904187e2a0cbca717d038a5d0facae83facd90322a263cb3f671e84",
+      "text_characters": 1037
+    },
+    {
+      "id": "az-400-github-self-hosted-runners",
+      "url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+      "checked_at": "2026-09-28T09:58:15.616111+00:00",
+      "health": {
+        "id": "az-400-github-self-hosted-runners",
+        "url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Self-hosted runners - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+        "duration_signals": [],
+        "signal_fingerprint": "2e1f0b4b974cd45a5441e944702c406c9342d60d737681cf899a029c4e504115",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+      "sha256": "c9137ada12dde0fa0d620a8a47cf849db351421956dc2eeb72d06acd7c09180e",
+      "text_characters": 1839
+    },
+    {
+      "id": "az-400-pipeline-approvals-checks",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:15.642043+00:00",
+      "health": {
+        "id": "az-400-pipeline-approvals-checks",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Pipeline deployment approvals - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops",
+        "duration_signals": [
+          "5 minutes",
+          "7 minutes"
+        ],
+        "signal_fingerprint": "706501d95663bc060774ca14c9ae4ea04ec8a117a7dd727b6f97b37dc4c11ea5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops",
+      "sha256": "478d450ba47db5e51e180352b7eeb9c1ea920ee2e12276d1c192321dad131dda",
+      "text_characters": 19911
+    },
+    {
+      "id": "az-400-app-configuration-feature-management",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management",
+      "checked_at": "2026-09-28T09:58:15.774740+00:00",
+      "health": {
+        "id": "az-400-app-configuration-feature-management",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management",
+        "content_type": "text/html",
+        "page_title": "Understand feature management using Azure App Configuration - Azure App Configuration",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management",
+        "duration_signals": [],
+        "signal_fingerprint": "306f808def6fb45f4b1fff9369529c927e9d3e50c302f4eac24862947f11fe92",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management",
+      "sha256": "45c7796c672022e32bc40404ac71918c3a3aee329b8c298d1fbb5c105d3391bc",
+      "text_characters": 7658
+    },
+    {
+      "id": "az-400-bicep-what-if",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+      "checked_at": "2026-09-28T09:58:15.854882+00:00",
+      "health": {
+        "id": "az-400-bicep-what-if",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+        "content_type": "text/html",
+        "page_title": "Bicep What-If: Preview Changes Before Deployment - Azure Resource Manager",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "0c5774c52954f9d103e802fbde0b74c28caac8c24f07627fe9fac51b629813f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+      "sha256": "8da69745eab12618a9e3ec94c6f6213ff68b8a759811f45bcc076f63407df988",
+      "text_characters": 20687
+    },
+    {
+      "id": "az-400-automation-state-migration",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation",
+      "checked_at": "2026-09-28T09:58:15.896085+00:00",
+      "health": {
+        "id": "az-400-automation-state-migration",
+        "url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation",
+        "checked_at": "2026-09-28T09:58:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation",
+        "content_type": "text/html",
+        "page_title": "Azure Automation State Configuration to machine configuration migration planning - Azure Machine Configuration",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation",
+        "duration_signals": [],
+        "signal_fingerprint": "ca1a4960dbf45968784bc9213e25c361c861f6706c747f9c284901be4a9d7d96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation",
+      "sha256": "6cd6cd99fa67e1bef6b15a672d5074bb2bb8590cba6c232726d5c21402d0f644",
+      "text_characters": 15626
+    },
+    {
+      "id": "az-400-deployment-environments-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts",
+      "checked_at": "2026-09-28T09:58:16.028856+00:00",
+      "health": {
+        "id": "az-400-deployment-environments-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts",
+        "content_type": "text/html",
+        "page_title": "Key Concepts and Roles - Azure Deployment Environments",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts",
+        "duration_signals": [],
+        "signal_fingerprint": "9cbd81aebd824684c493477a351f21798d6fce4615f9866a278b641e342a69ad",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts",
+      "sha256": "91d5469a73eab39197ad108c1bb38a9f6f9b1f83570529a18efc7e97fb13329e",
+      "text_characters": 7669
+    },
+    {
+      "id": "az-400-pipeline-reports",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:16.147211+00:00",
+      "health": {
+        "id": "az-400-pipeline-reports",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Pipeline reports - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "dc8b056ce1a1488a8b19e1bed978c6820f619839e4fdd71642da0460dd628e1f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops",
+      "sha256": "c6b723dae4adc7a5e21f23d5a0778b747d23df6a94325f454576ebd48318f530",
+      "text_characters": 2996
+    },
+    {
+      "id": "az-400-github-actions-metrics",
+      "url": "https://docs.github.com/en/actions/concepts/metrics",
+      "checked_at": "2026-09-28T09:58:16.147495+00:00",
+      "health": {
+        "id": "az-400-github-actions-metrics",
+        "url": "https://docs.github.com/en/actions/concepts/metrics",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/actions/concepts/metrics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About GitHub Actions metrics - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/actions/concepts/metrics",
+        "duration_signals": [],
+        "signal_fingerprint": "f1a28c4ec47deb3604cd3eab25c4bf29645422bb3bb35000be675dfea2e2bbde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/actions/concepts/metrics",
+      "sha256": "3f2dfa4c000b04ee481c6dc71327f0ed039936d86200ebe572d0433e508cd69b",
+      "text_characters": 3727
+    },
+    {
+      "id": "az-400-github-oidc-azure",
+      "url": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure",
+      "checked_at": "2026-09-28T09:58:16.248755+00:00",
+      "health": {
+        "id": "az-400-github-oidc-azure",
+        "url": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-azure",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configuring OpenID Connect in Azure - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-azure",
+        "duration_signals": [],
+        "signal_fingerprint": "1ca78d4b5c333e8a2c2615cb7b4794617e49b6c85182f414862f8bf2ff15fe64",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-azure",
+      "sha256": "13099660f56a6c2751ab500c8ae82862acab4d71d3f805b667ea52a43ba50698",
+      "text_characters": 5744
+    },
+    {
+      "id": "az-400-azure-wif-service-connection",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:16.375827+00:00",
+      "health": {
+        "id": "az-400-azure-wif-service-connection",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Use an Azure Resource Manager service connection - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "63b50646c9ec1b2755017c8e1b6c2c4da07b9f332dfb0062d4e245fd2f42f4a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops",
+      "sha256": "b1d72cb79f5b3f983bc40ec559d4786b9ecda0d89baeece275ee3d80f4098183",
+      "text_characters": 18719
+    },
+    {
+      "id": "az-400-github-security-features",
+      "url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+      "checked_at": "2026-09-28T09:58:16.402509+00:00",
+      "health": {
+        "id": "az-400-github-security-features",
+        "url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub security features - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+        "duration_signals": [],
+        "signal_fingerprint": "63a7fc088bde3c5416782d2401f2eb3fda9aca8b28f7c9f725c3e94db13ae0a8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+      "sha256": "8d563d99432af2fe57820e11de66575adba9e8986f632c708eea3cb4878b5e44",
+      "text_characters": 10337
+    },
+    {
+      "id": "az-400-defender-devops-security",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction",
+      "checked_at": "2026-09-28T09:58:16.628953+00:00",
+      "health": {
+        "id": "az-400-defender-devops-security",
+        "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender for Cloud DevOps Security Benefits - Microsoft Defender for Cloud",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "8b2104daaceefa26ecb0e113cfe6eac53b7610d639e853076d7704014aa737aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction",
+      "sha256": "a94cac546c6e2ec4e672efc4e6f3b80eaa5e17917b5f2fdbadc8ba1d06a4e89a",
+      "text_characters": 5346
+    },
+    {
+      "id": "az-400-application-insights-opentelemetry",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+      "checked_at": "2026-09-28T09:58:16.691459+00:00",
+      "health": {
+        "id": "az-400-application-insights-opentelemetry",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+        "content_type": "text/html",
+        "page_title": "Enable OpenTelemetry in Application Insights - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+        "duration_signals": [],
+        "signal_fingerprint": "f2a6839fa84c49c2d14b528d69d4f81362bfa9a8a3b7beb3941d05f31d347349",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+      "sha256": "e0de610070d51b63f7d457f28f68b9c999e1b4a8b2a6f501e4b4a06d835b6781",
+      "text_characters": 19411
+    },
+    {
+      "id": "az-400-azure-monitor-kql",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries",
+      "checked_at": "2026-09-28T09:58:16.696270+00:00",
+      "health": {
+        "id": "az-400-azure-monitor-kql",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries",
+        "content_type": "text/html",
+        "page_title": "Get started with log queries in Azure Monitor Logs - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries",
+        "duration_signals": [
+          "24 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "faa429d12543efae6b833ec09059c515f8ee54e72c5a815d3211b059e1b9b925",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries",
+      "sha256": "5e36ea1d6412ec13c127d482b0aaae88bc00f420a7af8ae241a9de51735013c2",
+      "text_characters": 17368
+    },
+    {
+      "id": "az-400-microsoft-learn-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+      "checked_at": "2026-09-28T09:58:16.905580+00:00",
+      "health": {
+        "id": "az-400-microsoft-learn-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+        "checked_at": "2026-09-28T09:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+        "content_type": "text/html",
+        "page_title": "Course AZ-400T00-A: Design and Implement Microsoft DevOps solutions - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+        "duration_signals": [],
+        "signal_fingerprint": "41adbbcae9ed02e734c80e216bac98a90deab546cff50a899c73c65e3bc58a43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+      "sha256": "91495889283f14a5feeb107660081e23a65239db81abb6ee559ecdbde9426ddc",
+      "text_characters": 1441
+    },
+    {
+      "id": "az-400-microsoft-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification",
+      "checked_at": "2026-09-28T09:58:17.002271+00:00",
+      "health": {
+        "id": "az-400-microsoft-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification",
+        "checked_at": "2026-09-28T09:58:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: DevOps Engineer Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+        "duration_signals": [],
+        "signal_fingerprint": "fa215b716dc3d8c74644a1cdaeb0319651f341909ec91f99b6f3fb15ffa39dab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification",
+      "sha256": "a2ddff48f1e81d2fd2bad0a81ecce7c1b12cfdacc1000550eeb77cab267e37d5",
+      "text_characters": 4480
+    },
+    {
+      "id": "az-400-exam-readiness-zone",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400",
+      "checked_at": "2026-09-28T09:58:17.002561+00:00",
+      "health": {
+        "id": "az-400-exam-readiness-zone",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400",
+        "checked_at": "2026-09-28T09:58:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400",
+        "content_type": "text/html",
+        "page_title": "Exam Readiness Zone",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/",
+        "duration_signals": [],
+        "signal_fingerprint": "be56c749ee067a8cd45a810ab21b2c1972bc5cd4f47d9e75223782831e616332",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400",
+      "sha256": "e3fc2d6b2aefb849c84c9ec052c1f64084a6fcb6d54e2cd709725b995bdae3d1",
+      "text_characters": 1074
+    },
+    {
+      "id": "az-400-azure-devops-labs",
+      "url": "https://azuredevopslabs.com/",
+      "checked_at": "2026-09-28T09:58:17.199253+00:00",
+      "health": {
+        "id": "az-400-azure-devops-labs",
+        "url": "https://azuredevopslabs.com/",
+        "checked_at": "2026-09-28T09:58:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://azuredevopslabs.com/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Azure DevOps Hands-On Labs",
+        "canonical_url": "https://azuredevopslabs.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "4dff5ccf35b8ff92318fc046dab76511111a5a7542722563f51a59ad99b2999c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://azuredevopslabs.com/",
+      "sha256": "8a7ebf4b71c07cfec2e4275b35b2b2e4a07147e7793b2f6c9c5beb2c8a302f07",
+      "text_characters": 4807
+    },
+    {
+      "id": "az-400-pluralsight-path",
+      "url": "https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions",
+      "checked_at": "2026-09-28T09:58:17.259255+00:00",
+      "health": {
+        "id": "az-400-pluralsight-path",
+        "url": "https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions",
+        "checked_at": "2026-09-28T09:58:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
+        "canonical_url": "https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions",
+        "duration_signals": [
+          "36 Hours"
+        ],
+        "signal_fingerprint": "963952121387c91d55b12fca0f3fccc810c8336374fadc5f9a9acb9f6d7a1f17",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions",
+      "sha256": "a43e6c85562e0f83fc79c5b90e4812197e9797bae5f5f909e92df5653a04994f",
+      "text_characters": 6633
+    },
+    {
+      "id": "az-400-oreilly-tim-warner-crash-course",
+      "url": "https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/",
+      "checked_at": "2026-09-28T09:58:17.298875+00:00",
+      "health": {
+        "id": "az-400-oreilly-tim-warner-crash-course",
+        "url": "https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/",
+        "checked_at": "2026-09-28T09:58:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam AZ-400: Microsoft Azure DevOps Solutions Crash Course",
+        "canonical_url": "https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/",
+        "duration_signals": [
+          "10 minutes",
+          "3 hours",
+          "50 minutes",
+          "75 minutes",
+          "PT6H"
+        ],
+        "signal_fingerprint": "58a1ddd1782f9739a92098ffa876a8dee38bf56793aaedee019729d98995617b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/",
+      "sha256": "0b5270d3da0f83a6826d47030ac41882f07fc85c56945c137add244e9ece4ac0",
+      "text_characters": 4657
+    },
+    {
+      "id": "az-400-udemy-alan-rodrigues",
+      "url": "https://www.udemy.com/course/azure100/",
+      "checked_at": "2026-09-28T09:58:18.077367+00:00",
+      "health": {
+        "id": "az-400-udemy-alan-rodrigues",
+        "url": "https://www.udemy.com/course/azure100/",
+        "checked_at": "2026-09-28T09:58:18+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/azure100/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-400-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-az-400/",
+      "checked_at": "2026-09-28T09:58:18.104585+00:00",
+      "health": {
+        "id": "az-400-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-azure-certification-az-400/",
+        "checked_at": "2026-09-28T09:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-azure-certification-az-400/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AZ-400: Microsoft DevOps Engineer Expert Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-azure-certification-az-400/",
+        "duration_signals": [],
+        "signal_fingerprint": "97609072f76ab39c814815d96b64ff3230eb493ca04448f873b12004def1525d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-azure-certification-az-400/",
+      "sha256": "76cee5b4e4061015ea29cd8761ead2aa59b504bdb4b526b132daf905094a397b",
+      "text_characters": 47
+    },
+    {
+      "id": "az-400-measureup-practice-test",
+      "url": "https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html",
+      "checked_at": "2026-09-28T09:58:18.179087+00:00",
+      "health": {
+        "id": "az-400-measureup-practice-test",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html",
+        "checked_at": "2026-09-28T09:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "d59e916c5eb21cc533515368fdaeea92c009786c7ff876c14b878016eb3347c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html",
+      "sha256": "67c0e87195b35af7e15d2fb494bd538e9203c23c504b169d016ddb978b305889",
+      "text_characters": 17628
+    },
+    {
+      "id": "az-400-microsoft-reactor-agentic-devops",
+      "url": "https://developer.microsoft.com/en-us/reactor/series/s-1625/",
+      "checked_at": "2026-09-28T09:58:18.781077+00:00",
+      "health": {
+        "id": "az-400-microsoft-reactor-agentic-devops",
+        "url": "https://developer.microsoft.com/en-us/reactor/series/s-1625/",
+        "checked_at": "2026-09-28T09:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.microsoft.com/en-us/reactor/series/s-1625/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agentic DevOps Live | Microsoft Reactor",
+        "canonical_url": "https://developer.microsoft.com/en-us/reactor/series/S-1625/",
+        "duration_signals": [],
+        "signal_fingerprint": "6954a475f8e43c8f3abbad6ad4b7ace7c710d10f15ddf5f1cd8ce8fbf12bdcaa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.microsoft.com/en-us/reactor/series/s-1625/",
+      "sha256": "5974c11e8a45ba5123d4dcbab7ccc129ae356e54af9834264945c2348a682175",
+      "text_characters": 18974
+    },
+    {
+      "id": "az400-node24",
+      "url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+      "checked_at": "2026-09-28T09:58:19.329261+00:00",
+      "health": {
+        "id": "az400-node24",
+        "url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+        "checked_at": "2026-09-28T09:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Node 20 is no longer available in GitHub Actions - GitHub Changelog",
+        "canonical_url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+        "duration_signals": [
+          "1 minute"
+        ],
+        "signal_fingerprint": "5cc71faf50a00198b1a0c2066c6ee41615cdf7c3ea3a32584eb3a8a5417f0ba1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+      "sha256": "ef5ab5844b3842d64b73bc299084bdcf88d2f4c0bcc7e954f4dd824f14aaad7a",
+      "text_characters": 2306
+    },
+    {
+      "id": "az400-execution-ga",
+      "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+      "checked_at": "2026-09-28T09:58:19.368034+00:00",
+      "health": {
+        "id": "az400-execution-ga",
+        "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+        "checked_at": "2026-09-28T09:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Workflow execution protections in GitHub Actions generally available - GitHub Changelog",
+        "canonical_url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+        "duration_signals": [
+          "2 minute"
+        ],
+        "signal_fingerprint": "b5b138b24132ba2a27b7cf1b1945718634eed6f4b531fe961cb35f3114a9eb72",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+      "sha256": "a2088f73127d81e4d2f63d945f9add0df82f60df82939dc69f743fffc82ec941",
+      "text_characters": 4718
+    },
+    {
+      "id": "az400-execution",
+      "url": "https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution",
+      "checked_at": "2026-09-28T09:58:19.387731+00:00",
+      "health": {
+        "id": "az400-execution",
+        "url": "https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution",
+        "checked_at": "2026-09-28T09:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Controlling who can execute GitHub Actions workflows - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution",
+        "duration_signals": [],
+        "signal_fingerprint": "f14973786ed882aa5bebdb3ffdfbe231c6d709ec89f3654d58ea8db54cf0e137",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution",
+      "sha256": "13b4c2475e33bc7e410d4f2ca301c3ed9e49472c513564f942cb541ed701c7f5",
+      "text_characters": 4888
+    },
+    {
+      "id": "az400-cache-mode",
+      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+      "checked_at": "2026-09-28T09:58:19.824841+00:00",
+      "health": {
+        "id": "az400-cache-mode",
+        "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+        "checked_at": "2026-09-28T09:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Control GitHub Actions cache access with cache-mode - GitHub Changelog",
+        "canonical_url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+        "duration_signals": [
+          "1 minute"
+        ],
+        "signal_fingerprint": "2fe068538cd4c921cd410611ebe40ce876f347ae001398b53d01766a48b3a189",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+      "sha256": "38c212d9b5f83b5a3a24a55b9ddf447874b00e092af2e523d393acb268ac85e4",
+      "text_characters": 2979
+    },
+    {
+      "id": "github-actions-retention-expansion-2026",
+      "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+      "checked_at": "2026-09-28T09:58:19.858062+00:00",
+      "health": {
+        "id": "github-actions-retention-expansion-2026",
+        "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+        "checked_at": "2026-09-28T09:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Actions retention will cover checks, workflow runs, and statuses - GitHub Changelog",
+        "canonical_url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+        "duration_signals": [
+          "2 minute"
+        ],
+        "signal_fingerprint": "646b60f85a45a34b8265cf322e463074c6fc10efe5c53876986485447dfd9f0f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+      "sha256": "8216827fdd268903297b669482acc66c5b24ca91b326654463ea76da96478849",
+      "text_characters": 5157
+    },
+    {
+      "id": "github-actions-early-september-2026",
+      "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+      "checked_at": "2026-09-28T09:58:20.085799+00:00",
+      "health": {
+        "id": "github-actions-early-september-2026",
+        "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+        "checked_at": "2026-09-28T09:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "GitHub Actions: Early September 2026 updates - GitHub Changelog",
+        "canonical_url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+        "duration_signals": [
+          "1 minute"
+        ],
+        "signal_fingerprint": "043e6bc95ab537e2ccc51fa6616db58c1960e3a5310127c2147b22d753a2cf5a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+      "sha256": "63bebe02e805e5e4ad173f69615d57e5c08384a097ce6cccb10da6e891998e08",
+      "text_characters": 3866
+    },
+    {
+      "id": "github-docs-actions-secure-use",
+      "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "checked_at": "2026-09-28T09:58:20.299847+00:00",
+      "health": {
+        "id": "github-docs-actions-secure-use",
+        "url": "https://docs.github.com/en/actions/reference/security/secure-use",
+        "checked_at": "2026-09-28T09:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/actions/reference/security/secure-use",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Secure use reference - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/actions/reference/security/secure-use",
+        "duration_signals": [],
+        "signal_fingerprint": "972bd3c63f6064f7078d0b5af1446d2131506341f337adb74d31ece919a9280a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/actions/reference/security/secure-use",
+      "sha256": "e6286b1f9c070dba2f6f559a319e634194e4d655353998b1fbbf67079d81ce7c",
+      "text_characters": 30830
+    },
+    {
+      "id": "az400-merge-queue",
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+      "checked_at": "2026-09-28T09:58:20.734623+00:00",
+      "health": {
+        "id": "az400-merge-queue",
+        "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+        "checked_at": "2026-09-28T09:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Managing a merge queue - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+        "duration_signals": [],
+        "signal_fingerprint": "5d6d0eb2591b5d4b3ee77e45e46656cea0c538c2a88e12f983e26ca31d910d4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+      "sha256": "acb6e62f2e94cad43f553855759607f90a7a6a92e01da733e6cec159a3c6b927",
+      "text_characters": 11309
+    },
+    {
+      "id": "az400-attest",
+      "url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations",
+      "checked_at": "2026-09-28T09:59:31.770008+00:00",
+      "health": {
+        "id": "az400-attest",
+        "url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations",
+        "checked_at": "2026-09-28T09:59:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Using artifact attestations to establish provenance for builds - GitHub Docs",
+        "canonical_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations",
+        "duration_signals": [],
+        "signal_fingerprint": "37a31ea02ee14e6727a16f67797cbfb6e09124dac853495e7838485597a832e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations",
+      "sha256": "49f04283ab004ac4ae7cc8931a6b07a3c9b1749f60b7f7603a7291a3ac6ab5f0",
+      "text_characters": 9168
+    },
+    {
+      "id": "az400-pipeline-retention",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:21.507724+00:00",
+      "health": {
+        "id": "az400-pipeline-retention",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Retention Policies - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "790c1b4105484b498ee09b7faabf64e21f4c6c29bd718f2fc641363faaacbc5f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops",
+      "sha256": "58dab3c34fd68f02879e2f4c3b4353d793395e2bbd651139304d6a083a0b43bf",
+      "text_characters": 16224
+    },
+    {
+      "id": "az400-feed-permissions",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:21.621124+00:00",
+      "health": {
+        "id": "az400-feed-permissions",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Manage permissions - Azure Artifacts",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "2356b5bc642b3577ffc4e523b9868dba339ed5240b4e7008213c9211d335d859",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+      "sha256": "6b5d18452e3bae4cf6a7a8b38a1a349b7084b940c088fd9f89132b5a0f35ac28",
+      "text_characters": 7219
+    },
+    {
+      "id": "az400-conditions",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:21.901986+00:00",
+      "health": {
+        "id": "az400-conditions",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Pipeline conditions - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "54b98f6408289ab1ac61a1e87a5bf94d6c784017ab81c08d29b22392800749b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+      "sha256": "5f38d112a6f88302c8ab7d3610971b2bc07d8542215c51ffac049f5123e2b54b",
+      "text_characters": 16595
+    },
+    {
+      "id": "az400-variables",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:22.017708+00:00",
+      "health": {
+        "id": "az400-variables",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Define variables - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "c9fe8975303ea3d91ed904a7907e776d18d569b672e767e42bcd4aab238d2768",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops",
+      "sha256": "9c2dd8ed8608e7df237a8e768be90275f4a81503b325320ed8d7d284df415534",
+      "text_characters": 57942
+    },
+    {
+      "id": "az400-devops-connection",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:22.174814+00:00",
+      "health": {
+        "id": "az400-devops-connection",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Access Azure DevOps with Microsoft Entra workload identity - Azure Pipelines",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "24 hours",
+          "approximately 1 hour"
+        ],
+        "signal_fingerprint": "d9e7723ca520138fdf9a0ff614ead6f007e05f3bdb1d7011ec5b00a3639adb71",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops",
+      "sha256": "23096210d18bab925a7636f6c2a056acf769e6071fcd4e15b8049d063e89f756",
+      "text_characters": 14909
+    },
+    {
+      "id": "az400-devops-identities",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:22.330816+00:00",
+      "health": {
+        "id": "az400-devops-identities",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Use Service Principals and Managed Identities - Azure DevOps",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "254f8c6965a4c87b15d650957a59aab93ab65fd787108e0bfc0ba25a4c4aa1e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+      "sha256": "66cbd8b8e48d3ce40c6c06fe34112f5b48904bdb83050d56ced17b6832006dcb",
+      "text_characters": 11938
+    },
+    {
+      "id": "az400-issuer-blog",
+      "url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+      "checked_at": "2026-09-28T09:58:22.390701+00:00",
+      "health": {
+        "id": "az400-issuer-blog",
+        "url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Retirement of Azure DevOps issuer in Workload identity federation service connections - Azure DevOps Blog",
+        "canonical_url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+        "duration_signals": [],
+        "signal_fingerprint": "2a508a11f103b8f2225effc8ed7e9776b39186d1a6d9f61bdb1a2f086a5ee3fe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+      "sha256": "9081984b691ab1e02d87d744db0d29b8af46f90dce719877f09e9f25f4cd02b3",
+      "text_characters": 13797
+    },
+    {
+      "id": "az400-connection-blog",
+      "url": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/",
+      "checked_at": "2026-09-28T09:58:22.412174+00:00",
+      "health": {
+        "id": "az400-connection-blog",
+        "url": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "You can now use the Azure DevOps Service Connection instead of a PAT or Build Session token - Azure DevOps Blog",
+        "canonical_url": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/",
+        "duration_signals": [],
+        "signal_fingerprint": "dbf2d54b0be480e8e7ccff1b4f014dcde576595d8643dac7df6fe314876d026d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/",
+      "sha256": "e40b7a3d0d7d13cfe32163091331adc3517c4e4ef2476292c223166d622dd284",
+      "text_characters": 9669
+    },
+    {
+      "id": "az400-promotion-blog",
+      "url": "https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/",
+      "checked_at": "2026-09-28T09:58:22.656588+00:00",
+      "health": {
+        "id": "az400-promotion-blog",
+        "url": "https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Azure Developer CLI: From Dev to Prod with Azure DevOps Pipelines - Azure DevOps Blog",
+        "canonical_url": "https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/",
+        "duration_signals": [],
+        "signal_fingerprint": "81a85c74c3ecb9143d995764655eaa8a7fd620f808980158949f1c4871a1e562",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/",
+      "sha256": "fca14640713a39abe7a70b9c88819bdc85238b0ca8523c353d35857e0e996f2a",
+      "text_characters": 12665
+    },
+    {
+      "id": "az400-codeql-default",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+      "checked_at": "2026-09-28T09:59:31.771598+00:00",
+      "health": {
+        "id": "az400-codeql-default",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+        "checked_at": "2026-09-28T09:59:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Set up code scanning for GitHub Advanced Security for Azure DevOps - Azure Repos",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "716a618a8d3a2cd3f724118242dba886464b0ba6bd0496fd87030213ef25e1f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+      "sha256": "29bf2d6586a7d1b50697b0c235d05688838b7a21dc1d2dc5b37be29ac1afe9b6",
+      "text_characters": 18279
+    },
+    {
+      "id": "az400-sprint276",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-276-update",
+      "checked_at": "2026-09-28T09:58:22.875345+00:00",
+      "health": {
+        "id": "az400-sprint276",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-276-update",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-276-update",
+        "content_type": "text/html",
+        "page_title": "Faster security scanning with CodeQL default setup and expanded Autofix controls",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-276-update",
+        "duration_signals": [],
+        "signal_fingerprint": "a80658c1a48d2c3158ced44b99dd7c11691f76fc232e61e5cff3b785f26b9534",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-276-update",
+      "sha256": "4172d9b78ed2fedc6e32b2aa899b9bcc0681929e12708a5be2e90a43ba2e4bcc",
+      "text_characters": 9654
+    },
+    {
+      "id": "ai200-sampling",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+      "checked_at": "2026-09-28T09:58:22.998312+00:00",
+      "health": {
+        "id": "ai200-sampling",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+        "checked_at": "2026-09-28T09:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+        "content_type": "text/html",
+        "page_title": "Sampling in Azure Application Insights with OpenTelemetry - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+        "duration_signals": [],
+        "signal_fingerprint": "b5854185a1c5b3536f0e45ea1f05c76cd6ce3473beca4531d1b79ce350504c87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling",
+      "sha256": "282fedf5835d926e542e224f2ad3a0ec0eb3e03c653393cecc5ab1dd35e5bf76",
+      "text_characters": 5478
+    },
+    {
+      "id": "az400-sampling-classic",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api",
+      "checked_at": "2026-09-28T09:58:23.017767+00:00",
+      "health": {
+        "id": "az400-sampling-classic",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api",
+        "checked_at": "2026-09-28T09:58:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/previous-versions/azure/azure-monitor/app/sampling-classic-api",
+        "content_type": "text/html",
+        "page_title": "Telemetry sampling in Azure Application Insights - Azure Monitor",
+        "canonical_url": "https://learn.microsoft.com/en-us/previous-versions/azure/azure-monitor/app/sampling-classic-api",
+        "duration_signals": [],
+        "signal_fingerprint": "ba62209c936cee307e48e24efdff434a2566554db744aa59629d8fd2de78ff46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/previous-versions/azure/azure-monitor/app/sampling-classic-api",
+      "sha256": "01488c0ad4f5fb10aba71cbe3d3ab999adc81341915d83a26d14cfc9a75a1b57",
+      "text_characters": 35513
+    },
+    {
+      "id": "az400-artifact-promotion",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+      "checked_at": "2026-09-28T09:58:23.139095+00:00",
+      "health": {
+        "id": "az400-artifact-promotion",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+        "checked_at": "2026-09-28T09:58:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Promote packages and manage feed views - Azure Artifacts",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "1fe03f4e15db859518bf8b705ecd045717083d4f656e712465753df86df89210",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+      "sha256": "14785840dc2a5916f7729260e34542d17cf69cb38a96f693603313cee1087709",
+      "text_characters": 8739
+    },
+    {
+      "id": "ms700-connectors-blog",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "checked_at": "2026-09-28T09:59:46.441250+00:00",
+      "health": {
+        "id": "ms700-connectors-blog",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "checked_at": "2026-09-28T09:59:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Retirement of Office 365 connectors within Microsoft Teams - Microsoft 365 Developer Blog",
+        "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "duration_signals": [],
+        "signal_fingerprint": "59b756812369da347697fa16ac0177c90375c397a7b7862639f6e1c01840ce4b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "sha256": "b0c26c0680fee98a478fa08d9a67e435f8120519834d303b85f9d577c9a9fcbe",
+      "text_characters": 22436
+    },
+    {
+      "id": "az400-public-projects",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+      "checked_at": "2026-09-28T10:00:22.840483+00:00",
+      "health": {
+        "id": "az400-public-projects",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+        "checked_at": "2026-09-28T10:00:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+        "content_type": "text/html",
+        "page_title": "Public projects retirement in Azure DevOps - Azure DevOps Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+        "duration_signals": [],
+        "signal_fingerprint": "c32a460108c16d9e24cd2bcd53f262a4e8b45a01b7cb681db89d569cd91783c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+      "sha256": "3c4dbbd6ce3018dd92ff1074c6bd9a4c42e35c42e72b936b863d5424e3880078",
+      "text_characters": 5709
+    }
+  ],
+  "added_source_ids": [
+    "az400-node24",
+    "az400-execution-ga",
+    "az400-execution",
+    "az400-cache-mode",
+    "az400-merge-queue",
+    "az400-attest",
+    "az400-pipeline-retention",
+    "az400-feed-permissions",
+    "az400-conditions",
+    "az400-variables",
+    "az400-devops-connection",
+    "az400-devops-identities",
+    "az400-issuer-blog",
+    "az400-connection-blog",
+    "az400-promotion-blog",
+    "az400-codeql-default",
+    "az400-sprint276",
+    "az400-sampling-classic",
+    "az400-artifact-promotion",
+    "az400-public-projects"
+  ],
+  "findings": [
+    {
+      "id": "az400-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Merge queue requires checks on a different commit",
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "merge_group/external queue branches must produce required checks.",
+      "recommendation": "Add trigger/commit boundary and stalled queue diagnosis.",
+      "disposition": "applied",
+      "source_id": "az400-merge-queue",
+      "resolution": "Add trigger/commit boundary and stalled queue diagnosis."
+    },
+    {
+      "id": "az400-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "View permissions are an additional package access path",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "View access can download without direct feed access; empty selected list inherits.",
+      "recommendation": "Add feed/view and pipeline-role review.",
+      "disposition": "applied",
+      "source_id": "az400-feed-permissions",
+      "resolution": "Add feed/view and pipeline-role review."
+    },
+    {
+      "id": "az400-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Promotion does not support demotion",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Publish to base feed and promote existing version; no demotion rollback.",
+      "recommendation": "Separate immutable version selection from view promotion.",
+      "disposition": "applied",
+      "source_id": "az400-artifact-promotion",
+      "resolution": "Separate immutable version selection from view promotion."
+    },
+    {
+      "id": "az400-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "GitHub JavaScript actions no longer use Node20",
+      "url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September23 Node24 change ends temporary insecure opt-out.",
+      "recommendation": "Add action/runner migration scope, distinct from app runtime.",
+      "disposition": "applied",
+      "source_id": "az400-node24",
+      "resolution": "Add action/runner migration scope, distinct from app runtime."
+    },
+    {
+      "id": "az400-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Workflow policies add actor/event controls and a dated default rollout",
+      "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GA targeting and November2 affected-public-repository pull_request_target enforcement.",
+      "recommendation": "Add plan-scoped policy review without blanket private-repo claims.",
+      "disposition": "applied",
+      "source_id": "az400-execution-ga",
+      "resolution": "Add plan-scoped policy review without blanket private-repo claims."
+    },
+    {
+      "id": "az400-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Cache writes are a separate trust boundary",
+      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Explicit write mode can override low-trust read default; called workflow cannot increase caller access.",
+      "recommendation": "Add cache permission decision and poisoning boundary.",
+      "disposition": "applied",
+      "source_id": "az400-cache-mode",
+      "resolution": "Add cache permission decision and poisoning boundary."
+    },
+    {
+      "id": "az400-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A custom condition replaces default success requirements",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Branch-only conditions can permit downstream work after failure.",
+      "recommendation": "Add success/branch composition and evaluation-time lesson.",
+      "disposition": "applied",
+      "source_id": "az400-conditions",
+      "resolution": "Add success/branch composition and evaluation-time lesson."
+    },
+    {
+      "id": "az400-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "What-if completeness and validation depth must be inspected",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ProviderNoRbac/Template levels and short-circuit diagnostics differ.",
+      "recommendation": "Avoid treating empty output as successful deployment or permission proof.",
+      "disposition": "applied",
+      "source_id": "az-400-bicep-what-if",
+      "resolution": "Avoid treating empty output as successful deployment or permission proof."
+    },
+    {
+      "id": "az400-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Actions retention scope expands October1",
+      "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Checks, runs and statuses expire with configured retention, including relevant third-party metadata.",
+      "recommendation": "Add archive/rollback-evidence review and dated follow-up.",
+      "disposition": "applied",
+      "source_id": "github-actions-retention-expansion-2026",
+      "resolution": "Add archive/rollback-evidence review and dated follow-up."
+    },
+    {
+      "id": "az400-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Entra membership does not confer Azure DevOps authorization",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Access level, DevOps groups/resource permissions, per-org licenses and cleanup required.",
+      "recommendation": "Separate Azure/Entra permissions from DevOps resource authorization.",
+      "disposition": "applied",
+      "source_id": "az400-devops-identities",
+      "resolution": "Separate Azure/Entra permissions from DevOps resource authorization."
+    },
+    {
+      "id": "az400-deep-11",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Issuer retirement excludes specified clouds/application types",
+      "url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "July1,2027 applies to public-cloud single-tenant and managed-identity connections.",
+      "recommendation": "Add scoped inventory and conversion validation before old trust removal.",
+      "disposition": "applied",
+      "source_id": "az400-issuer-blog",
+      "resolution": "Add scoped inventory and conversion validation before old trust removal."
+    },
+    {
+      "id": "az400-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Default CodeQL setup is not universal PR/build coverage",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default branch, supported languages and no custom build; advanced covers other requirements.",
+      "recommendation": "Explain selection and agent/concurrency planning, using current GA release.",
+      "disposition": "applied",
+      "source_id": "az400-codeql-default",
+      "resolution": "Explain selection and agent/concurrency planning, using current GA release."
+    },
+    {
+      "id": "az400-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Raw KQL counts can misstate sampled traffic",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "itemCount weights estimate totals; retained-row percentiles remain sample percentiles.",
+      "recommendation": "Revise query and teach sampling example/unsampled release signals.",
+      "disposition": "applied",
+      "source_id": "az400-sampling-classic",
+      "resolution": "Revise query and teach sampling example/unsampled release signals."
+    },
+    {
+      "id": "az400-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Public DevOps projects will require authentication",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New public creation retired; existing2027 conversion affects links, packages and pipelines.",
+      "recommendation": "Add dependency inventory and banner-date follow-up.",
+      "disposition": "applied",
+      "source_id": "az400-public-projects",
+      "resolution": "Add dependency inventory and banner-date follow-up."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "az400-connection-blog",
+      "decision": "accepted-bounded",
+      "author": "Eric van Wijk",
+      "published_on": "2026-08-06",
+      "notes": "August 6 intro/prerequisites, cross-org tenant boundary and selected repository/feed/REST/CLI examples read. Later complete script not audited; preview-labeled UI not represented as unconditional GA."
+    },
+    {
+      "source_id": "az400-issuer-blog",
+      "decision": "accepted-bounded",
+      "author": "Eric van Wijk",
+      "published_on": "2026-06-22",
+      "notes": "Main June 22 announcement, exact cloud/application exclusions, timeline, conversion and FAQ read; linked scripts not executed."
+    },
+    {
+      "source_id": "az400-promotion-blog",
+      "decision": "accepted-bounded",
+      "author": "PuiChee and Kristen",
+      "published_on": "2025-08-13",
+      "notes": "August 13, 2025 intro/artifact rationale and selected stage/package/deploy/validation snippets read; TODO/sleep gate explicitly illustrative. Linked repository and full commands not executed or audited."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "47 assertions: 35 arithmetic/catalog checks and 12 published Python gate checks; one Python block executed locally; KQL reviewed without execution."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No Azure/GitHub organization policy or identity change, cloud pipeline, SDK integration, deployment, artifact attestation, package promotion, security scan, migration, KQL workspace query or paid-content execution.",
+    "47 local assertions cover invented arithmetic/catalog values and a release-decision predicate only; no authenticated telemetry, statistical significance, cloud health or production approval guarantee.",
+    "Long references, complete licensing/feature matrices, every task version and linked sample repositories not exhaustively audited; blog review bounded to stated sections.",
+    "Exact exam duration, actual future OReilly booking, specific Readiness Zone/Savill video runtimes and Whizlabs bundle unverified. Udemy direct retrieval blocked; browser metadata does not verify paid content.",
+    "Same-context AI review; independent human review and live labs remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "critical_path_capacity_cohort_retries_evidence_sampling_budget_catalog_assertions": 47,
+    "python_blocks_executed": 1,
+    "kql_examples_reviewed_without_execution": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "az-400-udemy-alan-rodrigues",
+      "checked_on": "2026-09-28",
+      "method": "Public provider browser page; direct fetch remains blocked",
+      "observed_metadata": {
+        "instructor": "Alan Rodrigues",
+        "updated": "September 2025",
+        "sections": 10,
+        "lectures": 258,
+        "total_runtime": "20h46"
+      },
+      "limitation": "No paid content or complete coverage/correctness verification."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204",
+      "checked_on": "2026-09-28",
+      "method": "Indexed primary study-guide retirement warning",
+      "observed_metadata": {
+        "retired_on": "2026-07-31"
+      },
+      "limitation": "Retirement verification only; no additional AZ204 content review."
+    }
+  ]
+}

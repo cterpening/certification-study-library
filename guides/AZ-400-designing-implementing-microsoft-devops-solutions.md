@@ -6,20 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # AZ-400 Designing and Implementing Microsoft DevOps Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). The [official AZ-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). The [official AZ-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
-**Certification lifecycle:** Active; no retirement or replacement is announced on the [official DevOps Engineer Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Certification lifecycle:** Active; no retirement or replacement is announced on the [official DevOps Engineer Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/) as of September 28, 2026.<br>
 **Credential prerequisite:** The official credential page requires Azure Administrator Associate or Azure Developer Associate. The AZ-204 exam used to earn the latter retired July 31, 2026, so a new candidate should verify the currently accepted path before scheduling; AZ-104 remains an active route as of this review.<br>
 **Official source:** [AZ-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400)
+
+The [September 28 deep review](../docs/research/2026-09-28-az-400-deep-review.md) maps all 86 detailed objectives. Seven worked examples, ten labs and 48 explained checks develop the reasoning behind pipeline choices. Local arithmetic and one release-gate example were executed; cloud pipelines, identity changes, deployment and paid content were not. Independent human review remains pending.
+
+The credential profile lists ten exam languages and renewal. The standalone Microsoft Learn course lists four instructor days and eight languages even though the credential page has an empty training placeholder. Exact exam duration was not verified in this review.
 
 ## How to use this guide
 
@@ -142,6 +146,10 @@ Use [GitHub-flavored Markdown](https://docs.github.com/en/get-started/writing-on
 
 Webhooks push signed event payloads to endpoints; polling queries on a schedule. With webhooks, validate signatures, restrict secrets, make handlers idempotent, tolerate retries/out-of-order delivery and monitor dead letters or failures. For Teams integrations, decide which events require an interactive card/action and which belong only in dashboards or work items.
 
+#### Keep integration lifecycle separate from its destination
+
+For Teams notifications, identify the actual integration: a native Azure DevOps/GitHub app, a legacy Office 365 connector or a Power Automate workflow. The [connector retirement notice](https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/) now identifies May 18–22, 2026 as the final disablement rollout. It directs connector-based webhooks to Workflows and notes that MessageCard action buttons do not work there; interactive scenarios need Adaptive Cards and response handling. This is not a retirement notice for every Teams integration. Test payload, identity, delivery failure, ownership and escalation for the mechanism you actually use.
+
 #### Failure patterns
 
 | Symptom | Likely design problem | Better evidence/action |
@@ -179,6 +187,8 @@ GitHub [branch protection and rulesets](https://docs.github.com/en/repositories/
 
 > **Related item:** A merge queue tests a proposed merge against current branch state, reducing the “each PR was green independently, but the combined branch is broken” race.
 
+For a [GitHub merge queue](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue), required GitHub Actions checks need the `merge_group` trigger as well as ordinary PR validation. External CI must handle the queue's temporary branch convention and report on its commit. A green check on the PR commit does not satisfy a different merge-group commit. Verify plan/organization eligibility before proposing this control.
+
 ### Configure repositories, permissions and tags
 
 Grant repository access through teams/groups and roles, keep administrators few, protect automation identities separately, and review dormant/outside access. Distinguish Git tags from product labels: a signed/annotated tag can identify a source version; a repository label categorizes work.
@@ -192,6 +202,8 @@ Repository topology trades autonomy against coordination:
 | Monorepo | Atomic cross-component change and shared tooling dominate | Checkout/build scope, permissions and ownership boundaries |
 | Multiple repositories | Independent ownership, lifecycle and access dominate | Version coordination, duplicated pipelines and cross-repo change |
 | Shared templates/modules repo | Central paved road with governed consumers | Breaking changes and unpinned references |
+
+[Azure DevOps public projects](https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops) no longer accept new public-project creation; existing public projects convert to private in 2027, with exact dates communicated in product banners. Inventory anonymous source/wiki links, badges, package consumers and pipeline capacity before conversion. Public feed consumers will need authentication or a supported public distribution destination. Do not infer that Azure DevOps private enterprise projects are retiring.
 
 ### Manage large repositories and files
 
@@ -246,6 +258,14 @@ Protect against dependency confusion and supply-chain drift: control source orde
 
 > **Related item:** Package promotion is an authorization decision about an immutable object. Copying/rebuilding a package for each stage breaks the strongest source-to-production chain of custody.
 
+#### Promotion, access and provenance are separate controls
+
+[Azure Artifacts promotion](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops) adds a package version to a view; publishing still goes to the base feed. Promotion cannot be undone by demoting a package. A deployment rollback selects a retained earlier version rather than assuming view demotion is available.
+
+[View permissions](https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops) can allow downloading a package even without direct feed access. Restrict both surfaces. A view set to “Specific people” with no people selected falls back to parent-feed permissions; an empty selection is not a deny-all rule. Distinguish reading packages, saving upstream packages and publishing/promoting packages when assigning the pipeline identity.
+
+[Artifact attestations](https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations) establish provenance. Verify the actual binary or image digest against the expected repository and applicable signer policy before consuming it; merely producing an attestation is insufficient. An SBOM predicate and build-provenance predicate answer different questions. Neither proves that tests are meaningful or the artifact has no vulnerabilities. Record the verified artifact, source, build identity, scan result and deployment together.
+
 ### 4.2 Testing and quality gates
 
 Design tests by failure boundary:
@@ -286,6 +306,14 @@ Never let untrusted pull-request code run on a persistent privileged runner with
 
 **VERIFY CURRENT:** hosted image contents, runner/agent SKUs, concurrency/minutes, licensing, private networking, autoscaling and deprecation notices.
 
+#### September 2026 runner and workflow changes
+
+[GitHub removed the Node 20 JavaScript-action runtime on September 23, 2026](https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/). Actions now run on Node 24 and the temporary insecure-runtime opt-out is gone on github.com and GitHub with Data Residency. This is the runtime used by JavaScript actions, not automatically the Node version of the application you build. Update action releases and self-hosted runner OS/architecture compatibility; test application runtimes separately.
+
+[Workflow execution protections](https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution) allow actor/event policies with workflow-file targeting. Availability depends on repository visibility and plan; Evaluate mode requires Enterprise Cloud. The [GA announcement](https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/) schedules November 2, 2026 enforcement of the default `pull_request_target` block for affected public repositories using the default policy. Inspect the actual policy and insights; private/internal repositories are outside that default rollout.
+
+These policies complement the [secure-use guidance](https://docs.github.com/en/actions/reference/security/secure-use): do not check out or execute untrusted PR code in privileged `pull_request_target` or `workflow_run` jobs. Treat downloaded artifacts from another run as untrusted inputs until verified. Pin reviewed actions to full commit SHAs; pinning does not itself establish that the pinned code is safe. Pass untrusted text as data through a safely quoted argument/environment boundary instead of embedding expressions into shell source.
+
 ### 4.4 Author reliable YAML pipelines
 
 Build the dependency graph deliberately:
@@ -317,6 +345,14 @@ Reusable elements should have versioned contracts:
 Variables are configuration strings, not automatically secrets. Variable groups centralize values, while secure secret systems and federation are preferred for credentials. Templates are expanded/compiled differently from runtime conditions; understand evaluation timing before debugging an “empty” value.
 
 Use GitHub environments or Azure Pipelines environments for deployment history and scoped protection. In Azure Pipelines, resource owners configure [approvals and checks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops) outside the consuming YAML, which helps prevent a pipeline author from weakening the gate in the same change.
+
+#### Conditions, evaluation time and resource checks
+
+Setting an Azure Pipelines [custom condition](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops) replaces the default success condition. A branch-only condition can permit work after an earlier failure; combine required success and branch checks, for example `and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))`. Reserve `always()` for appropriate cleanup/evidence work and account for parent-stage cancellation/skips.
+
+[Template expressions, macros and runtime expressions](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops) are evaluated at different times. A value set during a job cannot decide whether that same job starts. Typed template parameters differ from string variables; expose cross-job values through declared outputs and dependencies.
+
+Resource checks remain outside consuming YAML. In the current [approval/lock documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops), approvers are fixed when checks begin; a changed group/list is not dynamically substituted into that pending approval. An exclusive lock with `runLatest` differs from `sequential`: superseded waiting deployments versus every queued deployment in order. Choose deliberately for stateful migrations, and retain the identity/reason for any authorized check bypass.
 
 ### 4.5 Design deployments and exposure
 
@@ -358,6 +394,8 @@ The blueprint still names Azure Automation State Configuration. Microsoft states
 
 > **Related item:** Desired state does not mean “rerun until green.” A safe controller understands ownership, drift, destructive change, secret handling and whether reconciliation can interrupt service.
 
+For [Bicep what-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if), record the validation level and diagnostics. `Provider` includes deployment permission checks; `ProviderNoRbac` uses read permission checks for resources; `Template` performs static validation without provider preflight checks. Unresolved external state can exclude a resource or module from analysis. A short or empty diff is not proof of complete coverage, successful deployment or working data-plane permissions.
+
 ### 4.7 Maintain and optimize pipelines
 
 Measure queue time, execution time, pass rate, retry/flaky rate, top failing tasks, runner utilization, cache effectiveness, artifact transfer and cost. Azure Pipelines [pipeline reports](https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops) expose pass-rate and duration trends; GitHub [Actions metrics](https://docs.github.com/en/actions/concepts/metrics) include job duration, queue time and failure rate.
@@ -374,6 +412,16 @@ Optimize in this order:
 More concurrency can increase cost, downstream throttling and test collision. An overly broad cache can poison builds or conceal missing dependency declarations. Retain artifacts, packages, logs, test/security evidence and deployments according to rollback, audit, legal and cost needs; do not apply one retention period to all objects.
 
 Migrate classic pipelines to YAML by inventorying triggers, variables/secrets, service connections, agents, tasks/extensions, artifacts, approvals, schedules and retention. Reproduce behavior in versioned YAML, run parallel comparison, preserve environment checks outside YAML, document the cutover/rollback and retire the classic definition only after evidence agrees.
+
+#### Cache access and evidence retention
+
+[GitHub `cache-mode`](https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/) now controls restores/saves at workflow or job scope: `read`, `write`, `write-only` or `none`. A called reusable workflow cannot gain cache access beyond its caller. Explicit write access on a low-trust event can override the read-only default, so assess that trust boundary. Cache data remains a performance input, not an immutable release artifact.
+
+From [October 1, 2026](https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/), GitHub Actions retention also governs checks, workflow runs and statuses, including relevant third-party checks/statuses. Public repositories have a 90-day maximum; organization/enterprise caps still apply. Archive required release evidence before expiry. Raising a setting cannot recover data already deleted.
+
+[Azure Pipelines retention](https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops) is configured at project scope for YAML/classic build pipelines; classic releases and test data have additional policies. Inventory the artifact, logs, tests, scans, approvals and deployment evidence needed for rollback and audit. Keeping a tag alone does not preserve the tested package.
+
+For reusable GitHub workflows, the [September job-context additions](https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/) distinguish `job.workflow_sha`/`job.workflow_ref` for the file defining the job from the caller's workflow identity. Record both when auditing a central build workflow. These new job properties are not available on GitHub Enterprise Server.
 
 #### Pipeline failure patterns
 
@@ -417,7 +465,11 @@ System-assigned managed identity shares the Azure resource lifecycle; user-assig
 
 Prefer short-lived workload identity federation. GitHub Actions can use [OIDC with Azure](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure) so the workflow exchanges a constrained identity assertion instead of storing a client secret. Constrain issuer, audience and subject to intended organization/repository/branch/environment.
 
-Azure Pipelines recommends [workload identity federation for Azure Resource Manager service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops). **VERIFY CURRENT:** Microsoft has announced that applicable Azure DevOps-issuer WIF connections transition to the Microsoft Entra issuer before July 1, 2027; inventory and migrate rather than treating “secretless” as maintenance-free.
+Azure Pipelines recommends [workload identity federation for Azure Resource Manager service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops). The [Azure DevOps issuer retirement](https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/) on July 1, 2027 applies to public-cloud connections using single-tenant applications or managed identities. Non-public clouds and multi-tenant applications are explicitly excluded from this announcement. Convert affected existing connections using the documented workflow and preserve pipeline references; verify the replacement federated credential before removing the old trust. Secretless authentication still has an issuer and trust lifecycle.
+
+The new [Azure DevOps workload-identity service connection](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops) authenticates to Azure DevOps resources, rather than being an ARM connection to deploy Azure resources. Create/add the identity to each target organization and grant the required access level, resource permissions and per-pipeline connection authorization. Cross-organization use requires the supported tenant relationship; the launch UI calls the connection preview, so verify rollout/support in your organization.
+
+[Application identities in Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops) use Azure DevOps permissions, not Entra application permissions, for authorization. Azure Repos needs Basic or an appropriate higher functional access level; paid access consumes a license in each organization. Deleting the Entra identity does not automatically remove its Azure DevOps membership. Include both in deprovisioning.
 
 In GitHub, model enterprise/organization/repository roles, teams, outside collaborators and base permissions. In Azure DevOps, model organization/project/team, access level, security groups and object permissions. Access level (such as Stakeholder) controls licensed capabilities; a security permission controls an operation. Test effective permissions, deny inheritance and service identities.
 
@@ -459,6 +511,8 @@ Container scanning should inspect the final image by digest, minimize base packa
 
 > **Related item:** Compliance evidence should be produced by the delivery system—approved change, immutable artifact, scan result, authorized identity and deployment record—not reconstructed manually after release.
 
+[CodeQL default setup for Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops) is now GA according to the [sprint 276 release](https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-276-update). It scans the default branch with automatic setup and no custom build steps. Go and Swift require advanced setup in the current matrix. Choose advanced setup for custom builds, additional branches or specialized queries; do not equate default setup with PR validation for every language. Current default-setup scheduling/agent options and concurrency consumption also require capacity planning.
+
 #### Primary references
 
 - [GitHub Actions OIDC with Azure](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure)
@@ -496,11 +550,14 @@ Example reasoning query (replace table/fields with your schema):
 ```kusto
 requests
 | where timestamp > ago(2h)
-| summarize requests=count(), failures=countif(success == false),
-            p95=percentile(duration, 95)
+| summarize estimatedRequests=sum(itemCount),
+            estimatedFailures=sumif(itemCount, success == false),
+            sampledP95=percentile(duration, 95)
   by bin(timestamp, 5m), cloud_RoleName, application_Version
 | order by timestamp asc
 ```
+
+For the classic `requests` schema above, [sampling guidance](https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api) requires `itemCount` weights for estimated totals. The displayed percentile is still calculated from retained rows; do not treat it as a corrected population percentile. Confirm the schema and sampler before adapting the query. [OpenTelemetry sampling](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-sampling) varies by language/version, and preaggregated metrics are not sampled. Prefer appropriate unsampled metrics for release guardrails, while sampled traces support diagnosis. These KQL statements were reviewed, not run against a workspace.
 
 Correlate a metric spike with deployment annotation/version, trace to the slow/failing dependency, inspect logs for cause and create owned remediation. CPU/memory/disk/network show saturation symptoms; application traces show request path; business metrics show impact.
 
@@ -570,6 +627,76 @@ A persistent production runner executed a workflow changed by an untrusted pull 
 
 ---
 
+### Worked examples — verify the release decision
+
+These are fictional inputs and original exercises, not service limits, real measurements or production validation.
+
+#### Example 1 — critical path versus worker consumption
+
+Assume independent build, unit and security jobs take 6, 8 and 12 minutes. Integration then takes 5 minutes, deployment 2, and an approval wait adds 15. Elapsed time is `max(6, 8, 12) + 5 + 2 + 15 = 34 minutes`; running all three initial jobs sequentially takes **48 minutes**. Worker execution totals **33 minutes** either way under this model; reducing elapsed time does not automatically reduce compute usage. Approval waiting remains a separate process bottleneck.
+
+#### Example 2 — runner capacity at steady state
+
+Thirty runs/hour averaging 12 worker-minutes each require `30 × 12 / 60 = 6` continuously occupied slots. Six slots imply 100% utilization with no room for arrival or duration variability. Eight slots average **75% utilization** under those assumptions. This is a capacity estimate, not a queue-latency guarantee; include concurrency licensing, security scans, peak arrivals and private dependency limits.
+
+#### Example 3 — an aggregate can hide a failed canary
+
+The control serves 100,000 requests with 200 failures (**0.2%**). The candidate serves 1,000 with 20 failures (**2%**). Combined failure rate is only `220 / 101000 × 100 ≈ 0.2178%`, hiding a tenfold candidate regression. Use the correct version/cohort and a declared observation window.
+
+This local Python function illustrates a health decision that rejects missing, malformed, stale, sampled or wrong-version observations. Its thresholds are exercise policy: at least 500 requests over 15 minutes, data no older than two minutes, failures at most 0.5% and p95 at most 300 ms. It assumes trusted, correctly aggregated telemetry; it does not authenticate evidence, verify artifacts, prove statistical significance or deploy anything.
+
+```python
+import math
+
+def may_promote(observed, expected_version):
+    if observed.get("version") != expected_version or observed.get("sampled") is not False:
+        return False
+    requests, failures = observed.get("requests"), observed.get("failures")
+    if type(requests) is not int or type(failures) is not int:
+        return False
+    if requests < 500 or not 0 <= failures <= requests:
+        return False
+    window, age, p95 = (observed.get(k) for k in ("window_seconds", "age_seconds", "p95_ms"))
+    if any(type(x) not in (int, float) or not math.isfinite(x) for x in (window, age, p95)):
+        return False
+    return window >= 900 and 0 <= age <= 120 and 0 < p95 <= 300 and failures / requests <= .005
+
+healthy = dict(version="release-42", sampled=False, requests=1000, failures=2,
+               window_seconds=900, age_seconds=30, p95_ms=180)
+assert may_promote(healthy, "release-42")
+assert not may_promote({**healthy, "failures": 20}, "release-42")
+assert not may_promote(healthy, "release-41")
+assert not may_promote({**healthy, "requests": 0}, "release-42")
+assert not may_promote({**healthy, "requests": True}, "release-42")
+assert not may_promote({**healthy, "failures": -1}, "release-42")
+assert not may_promote({**healthy, "failures": 1001}, "release-42")
+assert not may_promote({**healthy, "sampled": True}, "release-42")
+assert not may_promote({**healthy, "age_seconds": 121}, "release-42")
+assert not may_promote({**healthy, "window_seconds": 899}, "release-42")
+assert not may_promote({**healthy, "p95_ms": float("nan")}, "release-42")
+assert not may_promote({k: v for k, v in healthy.items() if k != "p95_ms"}, "release-42")
+```
+
+In a real gate, bind the observation to the deployed digest, environment, cohort and query interval, verify telemetry completeness and source, and define rollback ownership. A low-volume or missing signal should not silently be treated as healthy.
+
+#### Example 4 — retries can hide flaky tests
+
+For 100 independent tests each with a 0.5% false-failure probability, the chance of an entirely green first run is `0.995 ** 100 ≈ 60.58%`. Retrying each failed test once, assuming independent failures, raises the chance of an eventually green suite to `(1 − 0.005 ** 2) ** 100 ≈ 99.75%`. That change improves the displayed pass rate without repairing the tests. Report first-attempt results, retries and quarantine scope separately; correlated failures invalidate this simple model.
+
+#### Example 5 — complete evidence is an intersection
+
+For release IDs 1–20, suppose artifact identity is verified for 1–18, security results exist for 4–19, and deployment records exist for 6–20. Individual coverage is **90%, 80% and 75%**. Complete linked evidence exists only for IDs 6–18: **13/20 = 65%**. Neither the average nor the smallest individual coverage equals the intersection. Investigate the missing links before claiming release traceability.
+
+#### Example 6 — retained rows are not request counts
+
+Suppose nine retained successful rows each represent ten requests, while one retained failed row represents one. Raw counts report **1/10 = 10%** failure. Weighted estimates give **1/(9×10+1) ≈ 1.10%**, over 91 estimated requests. This illustrates why `itemCount` matters; it does not make a biased or broken sample trustworthy. Use the actual schema and sampler, and keep appropriate unsampled metrics for decisions that need them.
+
+#### Example 7 — remaining error budget
+
+A fictional monthly request SLO is 99.9% over 30 million requests: **30,000 failed requests** are allowed. If 18,000 have already failed, 12,000 remain. At 10,000 requests/minute and a 1% error rate, failures consume **100/minute**, exhausting that remaining budget in **120 minutes** if conditions stay constant. The observed error rate is **10 times** the allowed 0.1% rate. This estimate supports a release decision; it is not a promise that future traffic or impact will stay constant.
+
+---
+
 ## 8. Hands-on labs
 
 ### Lab 1 — Work-to-production traceability
@@ -622,6 +749,20 @@ Instrument a small service with Application Insights/OpenTelemetry, include appl
 
 ---
 
+### Lab 9 — trust and evidence across pipeline boundaries
+
+Inventory workflow events, actors, runner pools, cache modes, token permissions, reusable workflow SHAs and cloud trust subjects. Tabletop an untrusted PR artifact arriving at a privileged follow-up job. Require expected run/source/digest/provenance checks before consuming it. Trace package feed and view permissions separately, then verify retained release evidence covers the rollback window.
+
+**Evidence:** trust diagram, expected versus observed identities, artifact verification policy, policy insights and a retention gap register. No actual compromise or privileged job execution is needed for the tabletop.
+
+### Lab 10 — replace a placeholder promotion gate
+
+Use the promotion blog below as a design exercise. Replace its simulated validation with explicit test/security/health evidence, protected deployment resources and failure/cancellation behavior. Run example 3 locally, vary one condition at a time and explain each rejection. Add database compatibility, missing telemetry, public package access migration and issuer conversion to the tabletop.
+
+**Evidence:** reviewed decision policy, local gate results, rollback ownership, compatibility assumptions and migration acceptance criteria. A passing local predicate is not proof that a cloud release succeeded.
+
+---
+
 ## 9. Knowledge checks
 
 1. Why is a green build not proof of a successful release?
@@ -649,6 +790,31 @@ Instrument a small service with Application Insights/OpenTelemetry, include appl
 23. How do Defender for Cloud DevOps security and repository scanners relate?
 24. What dimensions let telemetry connect a production symptom to a deployment?
 
+25. Why can a PR check pass while a merge queue stalls?
+26. Does the Azure DevOps public-project retirement retire private enterprise projects?
+27. Can a package consumer bypass a restricted feed through a permitted view?
+28. Can Azure Artifacts promotion be rolled back by demoting the package?
+29. Does generating an attestation prove the deployed bytes are approved?
+30. Does the Node 24 action-runtime migration upgrade application code automatically?
+31. Do workflow execution policies replace safe event and runner design?
+32. Can a called reusable workflow receive more cache access than its caller?
+33. Which workflow identity do the new job.workflow_* properties describe?
+34. Why is a branch-only Azure Pipelines condition insufficient for deployment?
+35. Can a variable computed during a job decide whether that job starts?
+36. Does changing an approver group rewrite a pending Azure Pipelines approval?
+37. runLatest versus sequential for an exclusive lock?
+38. Does Template-level what-if prove provider readiness and deployment permissions?
+39. Will retaining a Git tag preserve expiring Actions checks and artifacts?
+40. Does the July 2027 Azure DevOps issuer announcement apply to every cloud and application type?
+41. Does adding an Entra identity automatically authorize Azure DevOps repository access?
+42. Is Azure DevOps CodeQL default setup equivalent to scanning all PR branches and languages?
+43. How much elapsed time does example 1 save by parallelizing the first three jobs?
+44. Does six average occupied runner slots justify a six-slot pool with no queue risk?
+45. Why reject the candidate in example 3 despite a low global error rate?
+46. Does a 99.75% pass rate after retries prove the flaky suite is repaired?
+47. Why is complete evidence coverage 65% when individual coverage is 90%, 80% and 75%?
+48. Can count() replace weighted request totals under sampling?
+
 ### Answers
 
 1. It proves configured build steps passed; deployment, configuration, exposure, runtime health and user outcome can still fail.
@@ -675,6 +841,33 @@ Instrument a small service with Application Insights/OpenTelemetry, include appl
 22. Access level licenses/enables broad features; permissions authorize specific actions on scoped objects.
 23. Repository scanners produce findings near code; Defender can aggregate/prioritize DevOps posture and correlate code to cloud, subject to configured products/connectors.
 24. At least service, environment, region, application/artifact version, instance, trace/operation ID and deployment ID/cohort.
+
+---
+
+25. Required checks must also run for the merge-group commit; GitHub Actions needs merge_group and external CI needs the queue branch/event handling.
+26. No. It changes public creation/access; inventory anonymous consumers and the 2027 conversion notice.
+27. Yes. Restrict both feed and view access; an empty Specific people list inherits feed permissions.
+28. No. Promotion cannot be demoted; deploy a retained earlier immutable version when rollback is appropriate.
+29. No. Verify the actual artifact against trusted provenance and policy, and separately inspect test/security evidence.
+30. No. JavaScript action execution and the application runtime/toolchain are separate.
+31. No. Actor/event allowlists do not make privileged execution of untrusted code safe.
+32. No. The cache service enforces that boundary; explicitly granting writes to low-trust events still creates risk.
+33. The workflow file defining that job; it can differ from the caller in a reusable workflow.
+34. A custom condition replaces the default success condition; require dependency success as well as the branch.
+35. No. Evaluation time differs; use prior-job outputs and declared dependencies for that decision.
+36. No. The approver list is fixed when checks begin.
+37. runLatest allows the latest competing run; sequential processes all queued runs in order. Choose for the stateful operation, not merely speed.
+38. No. It is static validation; inspect the chosen level and any resources/modules excluded from analysis.
+39. No. Audit and rollback evidence need their own retention/export; October 2026 expands Actions retention to checks, runs and statuses.
+40. No. Its scope is public-cloud connections with single-tenant applications or managed identities; specified sovereign/multi-tenant cases are excluded.
+41. No. Add it to the target organization and assign the required access level, Azure DevOps permissions and connection authorization.
+42. No. It scans the default branch with documented language/build limits; advanced setup handles other requirements.
+43. 14 minutes, from 48 to 34; modeled worker consumption remains 33 minutes.
+44. No. That is 100% average utilization and leaves no capacity for variation or added scans.
+45. Its own cohort fails at 2%, ten times the control rate; aggregation hides the regression.
+46. No. First-attempt failures and retry counts expose the underlying instability.
+47. Only 13 of the 20 releases have all three linked evidence sets; completeness is their intersection.
+48. No. It counts retained rows; use documented weights for estimates and appropriate unsampled metrics for release decisions.
 
 ---
 
@@ -709,15 +902,15 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Official AZ-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) | Free; authoritative scope and change log | 60–90 min initially; 10–15 min before exam |
 | [Microsoft Learn AZ-400 course](https://learn.microsoft.com/en-us/training/courses/az-400t00) | Free self-paced collection; instructor-led delivery may be paid; official instructor-led duration 4 days | Plan 30–45 hr self-paced with notes/labs, or 4 instructor-led days plus review |
 | [Microsoft free AZ-400 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification) | Free with Microsoft Learn account | 45–90 min per attempt; plan 3–5 hr with remediation |
-| [Microsoft AZ-400 Exam Readiness Zone](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400) | Free short objective-review videos; verify age against July 2026 scope | About 1–2 hr video; plan 2–4 hr with blueprint reconciliation |
+| [Microsoft AZ-400 Exam Readiness Zone](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400) | Free short objective-review videos; verify age against July 2026 scope | Selected-video runtime unverified from the series shell; plan 2–4 hr for a focused selection and blueprint reconciliation |
 | [Azure DevOps Labs](https://azuredevopslabs.com/) | Free Microsoft-authored/maintained hands-on labs; choose by gap | 1–2 hr per selected lab; plan 8–16 hr for a focused set |
-| [Pluralsight AZ-400 certification path](https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions) | Paid path with six courses, three labs and practice exam; includes John Savill security content | 36 hr displayed; plan 42–55 hr with exercises and July 2026 reconciliation |
-| [O'Reilly: Exam AZ-400 Microsoft Azure DevOps Solutions Crash Course](https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/) | Paid/subscription live event by Tim Warner; schedule may vary and page contains some stale prerequisite wording | About 6 hr scheduled instruction; plan 10–14 hr with labs/current-doc review |
-| [Udemy: AZ-400 Designing and Implementing DevOps Certification](https://www.udemy.com/course/azure100/) | Paid; Alan Rodrigues; updated September 2025 on review date | 20 hr 46 min video; plan 30–40 hr with labs and July 2026 reconciliation |
-| [Whizlabs AZ-400 training and practice](https://www.whizlabs.com/microsoft-azure-certification-az-400/) | Paid; course/practice/lab bundle availability can change | Verify current duration; plan 15–30 hr plus targeted remediation |
+| [Pluralsight AZ-400 certification path](https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions) | Paid path: legacy 2023 full course, five 2024–2025 domain courses and three April 2026 labs; includes John Savill security content | 36 hr heading; components total 35h 36m, including a 15h 22m legacy course. Five domain courses plus labs total 20h 14m; avoid duplicate coverage |
+| [O'Reilly: Exam AZ-400 Microsoft Azure DevOps Solutions Crash Course](https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/) | Paid/subscription Tim Warner event; public agenda accessible but contains AZ-500/Security Engineer and obsolete exam-name errors; current booking date unverified | Two 3-hour agenda days, including breaks; older catalog option, not a verified current booking or complete 2026 course |
+| [Udemy: AZ-400 Designing and Implementing DevOps Certification](https://www.udemy.com/course/azure100/) | Paid; Alan Rodrigues; browser provider page confirms September 2025, 10 sections and 258 lectures; direct fetch blocked | 20 hr 46 min video; plan 30–40 hr with labs and July 2026 reconciliation |
+| [Whizlabs AZ-400 training and practice](https://www.whizlabs.com/microsoft-azure-certification-az-400/) | Paid; public fetch returned a JavaScript shell, so current bundle contents were not verified | Verify current duration; plan 15–30 hr plus targeted remediation |
 | [MeasureUp AZ-400 practice test](https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html) | Paid; 139 questions displayed, last updated August 2024; reconcile with July 2026 objectives | Plan 4–7 hr across baseline, review and retest |
-| [John Savill DevOps Master Class playlist](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [public whiteboards/materials](https://github.com/johnthebrit/DevOpsMC) | Free; broad durable concepts and Azure DevOps/GitHub demonstrations; 2021 content needs current-product reconciliation | 12 hr 39 min video; plan 16–22 hr with notes and updated-doc checks |
-| [Microsoft Reactor Agentic DevOps Live series](https://developer.microsoft.com/en-us/reactor/series/s-1625/) | Free/on-demand Microsoft sessions; current supplement, not full AZ-400 coverage | About 6 hr for six listed one-hour sessions; select 1–6 hr by gap |
+| [John Savill DevOps Master Class playlist](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [public whiteboards/materials](https://github.com/johnthebrit/DevOpsMC) | Free; broad durable concepts and Azure DevOps/GitHub demonstrations; 2021 content needs current-product reconciliation | Historical 12h 39m estimate not reverified from the playlist shell; plan 16–22 hr with notes/current docs |
+| [Microsoft Reactor Agentic DevOps Live series](https://developer.microsoft.com/en-us/reactor/series/s-1625/) | Free/on-demand Microsoft sessions; current supplement, not full AZ-400 coverage | Twelve distinct one-hour scheduled sessions, January 27–April 21, 2026; select 1–6 hr by gap; recordings not watched |
 
 #### Experienced delivery/platform engineer route
 
@@ -731,7 +924,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 #### Newer to DevOps route
 
 1. Learn Git, pull requests, testing, Azure identity/RBAC, networking and basic application deployment first.
-2. Complete the Microsoft Learn course and all eight labs in this guide.
+2. Complete the Microsoft Learn course and all ten labs in this guide.
 3. Use one structured video path, John Savill’s concepts and targeted Azure DevOps Labs—do not consume every course.
 4. Practice one complete system repeatedly: work item to progressive production exposure to trace/rollback.
 
@@ -742,3 +935,13 @@ This is **not a complete list**, and it is not a recommendation to consume every
 ### Currency and integrity note
 
 This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft and GitHub can change objectives, credential prerequisites, product names, security/licensing plans, hosted images, runner/agent behavior, limits, identity issuers, pipeline tasks, Azure service capabilities and retirement dates. Verify the official blueprint, credential page, retirement notices and linked product documentation before an exam or production decision.
+
+### Blog reading with a pipeline review exercise
+
+| Reading | Learning value | Deliverable and boundary |
+|---|---|---|
+| [PAT-free Azure DevOps service connection](https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/) — Eric van Wijk, August 6, 2026 | Connects secretless authentication to cross-organization repositories, feeds and APIs | Map identity membership, licensed access, permissions, federation and pipeline authorization. The launch uses a preview-labeled connection; current task versions and service availability control implementation. |
+| [Azure DevOps issuer retirement](https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/) — Eric van Wijk, June 22, 2026 | Shows that a secretless pipeline still needs trust maintenance | Inventory issuer, cloud and application type. Plan conversion validation before deleting old trust, with special attention to excluded clouds/multi-tenant identities. |
+| [Dev-to-prod with Azure DevOps and Azure Developer CLI](https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/) — PuiChee and Kristen, August 13, 2025 | Demonstrates immutable package promotion across stages | Trace the same package into both targets, then replace the article's TODO/sleep validation with actual checks. Add protected deployment resources, provenance verification, pinned tooling and failure handling. The demonstration is not a completed production gate. |
+
+Only the noted public sections were reviewed; linked sample repositories and cloud commands were not executed. Treat examples and launch posts as starting points to evaluate against the current primary documentation.

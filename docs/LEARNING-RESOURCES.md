@@ -1996,6 +1996,61 @@ Practice products should contain independently authored questions and explanatio
 
 Blog reading was limited to the recorded sections in the review report. No paid lessons or live-exam questions were used. Use the articles to challenge an ADR, then verify exact support and migration steps in primary documentation.
 
+### AZ-400 — Designing and Implementing Microsoft DevOps Solutions
+
+Resource details from the [AZ-400 guide](../guides/AZ-400-designing-implementing-microsoft-devops-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 27, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can still teach durable concepts, but reconcile every product screen, feature, identity method and objective against current documentation.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official AZ-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) | Free; authoritative scope and change log | 60–90 min initially; 10–15 min before exam |
+| [Microsoft Learn AZ-400 course](https://learn.microsoft.com/en-us/training/courses/az-400t00) | Free self-paced collection; instructor-led delivery may be paid; official instructor-led duration 4 days | Plan 30–45 hr self-paced with notes/labs, or 4 instructor-led days plus review |
+| [Microsoft free AZ-400 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification) | Free with Microsoft Learn account | 45–90 min per attempt; plan 3–5 hr with remediation |
+| [Microsoft AZ-400 Exam Readiness Zone](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400) | Free short objective-review videos; verify age against July 2026 scope | Selected-video runtime unverified from the series shell; plan 2–4 hr for a focused selection and blueprint reconciliation |
+| [Azure DevOps Labs](https://azuredevopslabs.com/) | Free Microsoft-authored/maintained hands-on labs; choose by gap | 1–2 hr per selected lab; plan 8–16 hr for a focused set |
+| [Pluralsight AZ-400 certification path](https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions) | Paid path: legacy 2023 full course, five 2024–2025 domain courses and three April 2026 labs; includes John Savill security content | 36 hr heading; components total 35h 36m, including a 15h 22m legacy course. Five domain courses plus labs total 20h 14m; avoid duplicate coverage |
+| [O'Reilly: Exam AZ-400 Microsoft Azure DevOps Solutions Crash Course](https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/) | Paid/subscription Tim Warner event; public agenda accessible but contains AZ-500/Security Engineer and obsolete exam-name errors; current booking date unverified | Two 3-hour agenda days, including breaks; older catalog option, not a verified current booking or complete 2026 course |
+| [Udemy: AZ-400 Designing and Implementing DevOps Certification](https://www.udemy.com/course/azure100/) | Paid; Alan Rodrigues; browser provider page confirms September 2025, 10 sections and 258 lectures; direct fetch blocked | 20 hr 46 min video; plan 30–40 hr with labs and July 2026 reconciliation |
+| [Whizlabs AZ-400 training and practice](https://www.whizlabs.com/microsoft-azure-certification-az-400/) | Paid; public fetch returned a JavaScript shell, so current bundle contents were not verified | Verify current duration; plan 15–30 hr plus targeted remediation |
+| [MeasureUp AZ-400 practice test](https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html) | Paid; 139 questions displayed, last updated August 2024; reconcile with July 2026 objectives | Plan 4–7 hr across baseline, review and retest |
+| [John Savill DevOps Master Class playlist](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [public whiteboards/materials](https://github.com/johnthebrit/DevOpsMC) | Free; broad durable concepts and Azure DevOps/GitHub demonstrations; 2021 content needs current-product reconciliation | Historical 12h 39m estimate not reverified from the playlist shell; plan 16–22 hr with notes/current docs |
+| [Microsoft Reactor Agentic DevOps Live series](https://developer.microsoft.com/en-us/reactor/series/s-1625/) | Free/on-demand Microsoft sessions; current supplement, not full AZ-400 coverage | Twelve distinct one-hour scheduled sessions, January 27–April 21, 2026; select 1–6 hr by gap; recordings not watched |
+
+##### Experienced delivery/platform engineer route
+
+1. Diff the July 2026 blueprint and complete Microsoft Learn modules only for weak domains.
+2. Implement Labs 3–8 using the pipeline platform you know least.
+3. Study current federation, GitHub/Azure hybrid, Deployment Environments, Machine Configuration and Defender changes directly from docs.
+4. Use practice assessments to choose remediation; reproduce each weak design in YAML or a tabletop.
+
+**Planning range:** 55–85 focused hours after Azure administration/development prerequisites.
+
+##### Newer to DevOps route
+
+1. Learn Git, pull requests, testing, Azure identity/RBAC, networking and basic application deployment first.
+2. Complete the Microsoft Learn course and all ten labs in this guide.
+3. Use one structured video path, John Savill’s concepts and targeted Azure DevOps Labs—do not consume every course.
+4. Practice one complete system repeatedly: work item to progressive production exposure to trace/rollback.
+
+**Planning range:** 110–170 hours after foundational Git, Azure and software-delivery study.
+
+---
+
+#### Currency and integrity note
+
+This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft and GitHub can change objectives, credential prerequisites, product names, security/licensing plans, hosted images, runner/agent behavior, limits, identity issuers, pipeline tasks, Azure service capabilities and retirement dates. Verify the official blueprint, credential page, retirement notices and linked product documentation before an exam or production decision.
+
+#### Blog reading with a pipeline review exercise
+
+| Reading | Learning value | Deliverable and boundary |
+|---|---|---|
+| [PAT-free Azure DevOps service connection](https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/) — Eric van Wijk, August 6, 2026 | Connects secretless authentication to cross-organization repositories, feeds and APIs | Map identity membership, licensed access, permissions, federation and pipeline authorization. The launch uses a preview-labeled connection; current task versions and service availability control implementation. |
+| [Azure DevOps issuer retirement](https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/) — Eric van Wijk, June 22, 2026 | Shows that a secretless pipeline still needs trust maintenance | Inventory issuer, cloud and application type. Plan conversion validation before deleting old trust, with special attention to excluded clouds/multi-tenant identities. |
+| [Dev-to-prod with Azure DevOps and Azure Developer CLI](https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/) — PuiChee and Kristen, August 13, 2025 | Demonstrates immutable package promotion across stages | Trace the same package into both targets, then replace the article's TODO/sleep validation with actual checks. Add protected deployment resources, provenance verification, pinned tooling and failure handling. The demonstration is not a completed production gate. |
+
+Only the noted public sections were reviewed; linked sample repositories and cloud commands were not executed. Treat examples and launch posts as starting points to evaluate against the current primary documentation.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

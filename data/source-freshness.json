@@ -4,6 +4,325 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-az400-deep-review",
+      "title": "AZ-400 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-400"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-400",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+          "baseline_sha256": "dda9c062ec53e2461a981ea19784311132b4426eaa8ff469388dae946e6e6274",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "86 unchanged July 27 objectives; active credential with ten languages/renewal and administrator/developer prerequisite. AZ204 retirement verified; no automatic new substitute claimed. Exact exam duration unverified."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted merge queue, feeds/views, provenance, execution/cache policy, YAML conditions/checks, what-if, retention, DevOps identities/WIF, CodeQL and sampling boundaries applied."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September GitHub Node24/cache/workflow/job-context changes; October1 retention and November2 default-policy rollout; scoped July2027 issuer retirement, public-project2027 and Teams connector latest notice; three bounded Microsoft blog exercises."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official four-day/eight-language course and assessment landing; PS legacy overlap and component sums; accessible OReilly agenda errors; browser Udemy metadata; unchanged139/August2024 MeasureUp;12 distinct Reactor hours versus previous6. No paid content or videos audited."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Current primary matrices control GA/default branch/language limits and actor/event plan scope; current retirement pages control older issuer/public-project/Teams wording. Blog TODO/sleep gate identified as incomplete demo, not successful production validation; retired AZ204 and vendor catalog errors not adopted."
+            }
+          },
+          "findings": [
+            {
+              "id": "az400-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Merge queue requires checks on a different commit",
+              "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "merge_group/external queue branches must produce required checks.",
+              "recommendation": "Add trigger/commit boundary and stalled queue diagnosis.",
+              "disposition": "applied",
+              "source_id": "az400-merge-queue",
+              "resolution": "Add trigger/commit boundary and stalled queue diagnosis."
+            },
+            {
+              "id": "az400-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "View permissions are an additional package access path",
+              "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "View access can download without direct feed access; empty selected list inherits.",
+              "recommendation": "Add feed/view and pipeline-role review.",
+              "disposition": "applied",
+              "source_id": "az400-feed-permissions",
+              "resolution": "Add feed/view and pipeline-role review."
+            },
+            {
+              "id": "az400-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Promotion does not support demotion",
+              "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Publish to base feed and promote existing version; no demotion rollback.",
+              "recommendation": "Separate immutable version selection from view promotion.",
+              "disposition": "applied",
+              "source_id": "az400-artifact-promotion",
+              "resolution": "Separate immutable version selection from view promotion."
+            },
+            {
+              "id": "az400-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "GitHub JavaScript actions no longer use Node20",
+              "url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September23 Node24 change ends temporary insecure opt-out.",
+              "recommendation": "Add action/runner migration scope, distinct from app runtime.",
+              "disposition": "applied",
+              "source_id": "az400-node24",
+              "resolution": "Add action/runner migration scope, distinct from app runtime."
+            },
+            {
+              "id": "az400-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Workflow policies add actor/event controls and a dated default rollout",
+              "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "GA targeting and November2 affected-public-repository pull_request_target enforcement.",
+              "recommendation": "Add plan-scoped policy review without blanket private-repo claims.",
+              "disposition": "applied",
+              "source_id": "az400-execution-ga",
+              "resolution": "Add plan-scoped policy review without blanket private-repo claims."
+            },
+            {
+              "id": "az400-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Cache writes are a separate trust boundary",
+              "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Explicit write mode can override low-trust read default; called workflow cannot increase caller access.",
+              "recommendation": "Add cache permission decision and poisoning boundary.",
+              "disposition": "applied",
+              "source_id": "az400-cache-mode",
+              "resolution": "Add cache permission decision and poisoning boundary."
+            },
+            {
+              "id": "az400-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A custom condition replaces default success requirements",
+              "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Branch-only conditions can permit downstream work after failure.",
+              "recommendation": "Add success/branch composition and evaluation-time lesson.",
+              "disposition": "applied",
+              "source_id": "az400-conditions",
+              "resolution": "Add success/branch composition and evaluation-time lesson."
+            },
+            {
+              "id": "az400-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "What-if completeness and validation depth must be inspected",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ProviderNoRbac/Template levels and short-circuit diagnostics differ.",
+              "recommendation": "Avoid treating empty output as successful deployment or permission proof.",
+              "disposition": "applied",
+              "source_id": "az-400-bicep-what-if",
+              "resolution": "Avoid treating empty output as successful deployment or permission proof."
+            },
+            {
+              "id": "az400-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Actions retention scope expands October1",
+              "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Checks, runs and statuses expire with configured retention, including relevant third-party metadata.",
+              "recommendation": "Add archive/rollback-evidence review and dated follow-up.",
+              "disposition": "applied",
+              "source_id": "github-actions-retention-expansion-2026",
+              "resolution": "Add archive/rollback-evidence review and dated follow-up."
+            },
+            {
+              "id": "az400-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Entra membership does not confer Azure DevOps authorization",
+              "url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Access level, DevOps groups/resource permissions, per-org licenses and cleanup required.",
+              "recommendation": "Separate Azure/Entra permissions from DevOps resource authorization.",
+              "disposition": "applied",
+              "source_id": "az400-devops-identities",
+              "resolution": "Separate Azure/Entra permissions from DevOps resource authorization."
+            },
+            {
+              "id": "az400-deep-11",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Issuer retirement excludes specified clouds/application types",
+              "url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "July1,2027 applies to public-cloud single-tenant and managed-identity connections.",
+              "recommendation": "Add scoped inventory and conversion validation before old trust removal.",
+              "disposition": "applied",
+              "source_id": "az400-issuer-blog",
+              "resolution": "Add scoped inventory and conversion validation before old trust removal."
+            },
+            {
+              "id": "az400-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Default CodeQL setup is not universal PR/build coverage",
+              "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default branch, supported languages and no custom build; advanced covers other requirements.",
+              "recommendation": "Explain selection and agent/concurrency planning, using current GA release.",
+              "disposition": "applied",
+              "source_id": "az400-codeql-default",
+              "resolution": "Explain selection and agent/concurrency planning, using current GA release."
+            },
+            {
+              "id": "az400-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Raw KQL counts can misstate sampled traffic",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "itemCount weights estimate totals; retained-row percentiles remain sample percentiles.",
+              "recommendation": "Revise query and teach sampling example/unsampled release signals.",
+              "disposition": "applied",
+              "source_id": "az400-sampling-classic",
+              "resolution": "Revise query and teach sampling example/unsampled release signals."
+            },
+            {
+              "id": "az400-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Public DevOps projects will require authentication",
+              "url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New public creation retired; existing2027 conversion affects links, packages and pipelines.",
+              "recommendation": "Add dependency inventory and banner-date follow-up.",
+              "disposition": "applied",
+              "source_id": "az400-public-projects",
+              "resolution": "Add dependency inventory and banner-date follow-up."
+            }
+          ],
+          "notes": "Whole guide and 86 unchanged objectives mapped across sixteen groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh merge queue, artifact access/provenance, GitHub runtime/execution/cache/retention, YAML gates, what-if, Azure DevOps identity/issuer/public-project lifecycle, CodeQL and telemetry sampling; reconcile learning catalogs. Forty-seven offline assertions passed, including one original Python release-decision predicate. KQL reviewed without execution. No cloud pipeline, tenant, SDK, deployment or paid-content execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-az-400-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 14,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-az305-deep-review",
       "title": "AZ-305 complete guide and learning-content review",
       "rubric_version": 1,

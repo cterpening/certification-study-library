@@ -3,6 +3,286 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az400-node24",
+      "title": "GitHub Actions Node 20 removal",
+      "url": "https://github.blog/changelog/2026-09-23-node-20-is-no-longer-available-in-github-actions/",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Complete main September 23 notice read: JavaScript-action runtime Node 24, insecure opt-out gone, macOS/ARM32 and github.com/data-residency scope. Application runtime distinguished. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-execution-ga",
+      "title": "GitHub workflow execution protections GA",
+      "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Complete main September 17 GA announcement read; November 2 default-policy rollout scope, workflow targeting/insights; detailed product doc controls plan/Evaluate eligibility. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-execution",
+      "title": "Control GitHub workflow execution",
+      "url": "https://docs.github.com/en/actions/how-tos/administer/control-workflow-execution",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Entire short main workflow-execution policy doc read, including public/private plan availability, Evaluate Enterprise Cloud, actor/event combination and built-in feature exceptions. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-cache-mode",
+      "title": "GitHub Actions cache-mode controls",
+      "url": "https://github.blog/changelog/2026-09-10-control-github-actions-cache-access-with-cache-mode/",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Entire main September 10 announcement read: modes, event defaults, override risk and reusable-workflow ceiling. No policy mutation. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-merge-queue",
+      "title": "GitHub merge queue configuration",
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Main purpose, eligibility and GitHub Actions/external-CI trigger/commit sections read; full queue limits/settings not audited. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-attest",
+      "title": "GitHub artifact attestation verification",
+      "url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Intro/eligibility, basic generation and selected digest, SBOM and CLI verification sections read; linked policies/advanced workflows not executed. Initial guessed URL 404 corrected before registration. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-pipeline-retention",
+      "title": "Azure Pipelines retention policies",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/policies/retention?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Selected project/build policy and classic-release/test separation/recovery/export boundaries read; full matrix/license prerequisites not audited or generalized. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-feed-permissions",
+      "title": "Azure Artifacts feed and view permissions",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Main feed roles, per-view access/inheritance and pipeline identity sections read; table cells not used for unsupported role inference. No role changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-conditions",
+      "title": "Azure Pipelines conditions",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/conditions?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Selected defaults/custom override, cancellation, evaluation and dependencies read; complete examples not executed. Job runtime cannot select its own start. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-variables",
+      "title": "Azure Pipelines variables and evaluation",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Intro and selected macro/template/runtime evaluation, precedence and resource-key limitations read; 58k-character reference not exhaustively read. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-devops-connection",
+      "title": "Azure DevOps Entra workload identity service connection",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/add-devops-entra-service-connection?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Intro, supported scenarios, prerequisites and identity-membership setup read; complete AzureCLI v3/REST/publishing examples not executed; rollout note retained. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-devops-identities",
+      "title": "Azure DevOps service principals and managed identities",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/service-principal-managed-identity?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Selected tenant/organization membership, authorization, access/licensing and lifecycle sections read. Azure RBAC/Entra app permissions not confused with DevOps authorization. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-issuer-blog",
+      "title": "Azure DevOps WIF issuer retirement",
+      "url": "https://devblogs.microsoft.com/devops/retirement-of-azure-devops-issuer-in-workload-identity-federation-service-connections/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Main June 22 announcement, exact cloud/application exclusions, timeline, conversion and FAQ read; linked scripts not executed. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-connection-blog",
+      "title": "PAT-free Azure DevOps service connection",
+      "url": "https://devblogs.microsoft.com/devops/you-can-now-use-the-azure-devops-service-connection-instead-of-a-pat-or-build-session-token/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: August 6 intro/prerequisites, cross-org tenant boundary and selected repository/feed/REST/CLI examples read. Later complete script not audited; preview-labeled UI not represented as unconditional GA. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-promotion-blog",
+      "title": "Build once with Azure DevOps and Azure Developer CLI",
+      "url": "https://devblogs.microsoft.com/devops/azure-developer-cli-from-dev-to-prod-with-azure-devops-pipelines/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: August 13, 2025 intro/artifact rationale and selected stage/package/deploy/validation snippets read; TODO/sleep gate explicitly illustrative. Linked repository and full commands not executed or audited. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-codeql-default",
+      "title": "Azure DevOps CodeQL default setup",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-code-scanning?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Current main setup comparison, supported/default-excluded languages, agent/schedule/init-run sections read. Default-branch versus advanced/custom-build scope applied. Initial guessed URL 404 corrected before registration. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-sprint276",
+      "title": "Azure DevOps sprint 276 release notes",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/release-notes/2026/sprint-276-update",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Selected CodeQL GA/initial run, service connection issuer and manual-test actual-result release sections read; entire release not audited. Earlier April preview delay is historical. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-sampling-classic",
+      "title": "Application Insights sampling",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/sampling-classic-api",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Selected intro weighting, itemCount and retained-percentage/preaggregated-metric caveats read; full SDK-specific reference not audited. KQL revised but not run. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-artifact-promotion",
+      "title": "Azure Artifacts promote packages to a view",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/feeds/views?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Main base-feed/local-view/promotion/demotion boundaries and public-project notice read; REST sample not executed or adopted. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az400-public-projects",
+      "title": "Azure DevOps public projects retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/organizations/projects/public-projects-retirement?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Main retirement, dates/banner qualifier, access/feed/CI effects read. Current dedicated retirement notice controls older about-projects policy wording; exact 2027 date unspecified. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az305-credential",
       "title": "Azure Solutions Architect Expert credential",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
@@ -1612,9 +1892,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-200"
+        "AI-200",
+        "AZ-400"
       ],
-      "notes": "September 28 AI-200 deep review: Main sampling/signals, metric exclusion, fixed/rate-limited behavior and itemCount guidance read; no exporter or telemetry query run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-200 deep review: Main sampling/signals, metric exclusion, fixed/rate-limited behavior and itemCount guidance read; no exporter or telemetry query run. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AZ-400 deep review: Main OpenTelemetry sampling purpose, language/version defaults, fixed/rate-limited types, custom sampler and unsampled metrics sections read; SDK not executed. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai200-redis-blog",
@@ -4312,9 +4593,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-700"
+        "MS-700",
+        "AZ-400"
       ],
-      "notes": "September 28 MS-700 deep review: Main article and controlling April 14 update read; superseded dates separated. Comments not relied on; private-channel support conflict retained. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-700 deep review: Main article and controlling April 14 update read; superseded dates separated. Comments not relied on; private-channel support conflict retained. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 AZ-400 deep review: Latest April 14 update and May 18–22 final disablement/Workflow payload limitation sections read; historical comments not used as current dates. Scope is legacy connectors, not every Teams integration. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms700-july-blog",
@@ -9547,9 +9829,13 @@
       "authority_class": 5,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["GH-900", "GH-200", "AZ-400"],
-      "notes": "Supporting Git, GitHub, CI/CD, secrets, OIDC, and DevOps concepts; the 2021 material requires reconciliation with the July 2026 AZ-400 blueprint and current product behavior."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "GH-200",
+        "AZ-400"
+      ],
+      "notes": "Supporting Git, GitHub, CI/CD, secrets, OIDC, and DevOps concepts; the 2021 material requires reconciliation with the July 2026 AZ-400 blueprint and current product behavior. September 28 AZ-400 deep review: Playlist shell only; historical 12h39 runtime not reverified, recordings not watched. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-devops-master-class-git",
@@ -10533,9 +10819,13 @@
       "authority_class": 5,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "AZ-400"],
-      "notes": "Companion handouts, whiteboards, workflows, and code examples for the 2021 video series. No repository license was detected; use as linked supporting material, not a current exam map or reusable content bundle."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "GH-200",
+        "AZ-400"
+      ],
+      "notes": "Companion handouts, whiteboards, workflows, and code examples for the 2021 video series. No repository license was detected; use as linked supporting material, not a current exam map or reusable content bundle. September 28 AZ-400 deep review: Public repository context fetched; whiteboards not visually inspected and linked samples not executed. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-mechanics",
@@ -10802,8 +11092,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "GH-200",
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Selected script-injection, untrusted PR/workflow_run artifact, full-SHA and self-hosted trust sections read; whole long security reference not audited. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-docs-code-security",
@@ -10934,8 +11229,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-300", "AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "GH-300",
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-docs-writing-on-github",
@@ -10945,8 +11245,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-docs-issues-overview",
@@ -11055,8 +11359,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-docs-rulesets",
@@ -17453,8 +17761,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: All 86 objectives read/mapped across sixteen groups; July 27 baseline and objective/status hashes unchanged, no upcoming announcement. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-credential",
@@ -17464,9 +17775,11 @@
       "authority_class": 1,
       "source_type": "credential-page",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Official page showed AZ-400 active with no retirement date and identified Azure Administrator Associate or Azure Developer Associate as a prerequisite certification during review."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Official page showed AZ-400 active with no retirement date and identified Azure Administrator Associate or Azure Developer Associate as a prerequisite certification during review. September 28 AZ-400 deep review: Public profile/prerequisite, ten languages, renewal and assessment metadata read. Exact exam duration unverified; course placeholder does not override standalone training page. Separate primary AZ-204 study-guide search confirms July 31 retirement; no invented alternative prerequisite. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-boards-github-integration",
@@ -17476,8 +17789,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-analytics-widgets",
@@ -17487,8 +17803,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-mermaid",
@@ -17498,8 +17817,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-lfs",
@@ -17509,9 +17831,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Plan-specific file limits and billing are volatile and must be verified before implementation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Plan-specific file limits and billing are volatile and must be verified before implementation. September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-large-files",
@@ -17521,9 +17845,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Repository and file recommendations or limits can change and should be rechecked."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Repository and file recommendations or limits can change and should be rechecked. September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-artifacts-concepts",
@@ -17533,8 +17859,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-test-analytics",
@@ -17544,8 +17873,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-code-coverage",
@@ -17555,8 +17887,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-actions-concepts",
@@ -17566,8 +17901,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-self-hosted-runners",
@@ -17577,8 +17915,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-pipeline-approvals-checks",
@@ -17588,8 +17929,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Main resource ownership/order, fixed approvers, deferred/bypass and exclusive-lock sections read. Complete dynamic check procedures not audited. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-app-configuration-feature-management",
@@ -17599,9 +17943,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Switch, rollout and experiment capabilities are current but SDK and plan details remain volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Switch, rollout and experiment capabilities are current but SDK and plan details remain volatile. September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-bicep-what-if",
@@ -17611,8 +17957,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Selected validation levels, minimum tooling and short-circuit diagnostics read; full examples not executed. Runtime/data-plane success not inferred. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-automation-state-migration",
@@ -17622,9 +17971,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Official notice states Azure Automation State Configuration retires September 30, 2027 and identifies Azure Machine Configuration as the transition destination."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Official notice states Azure Automation State Configuration retires September 30, 2027 and identifies Azure Machine Configuration as the transition destination. September 28 AZ-400 deep review: Current intro lifecycle/destination/capability sections reread; September 30, 2027 retirement unchanged; no configuration conversion. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-deployment-environments-concepts",
@@ -17634,8 +17985,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-pipeline-reports",
@@ -17645,8 +17999,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-actions-metrics",
@@ -17656,8 +18013,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-oidc-azure",
@@ -17667,8 +18027,11 @@
       "authority_class": 2,
       "source_type": "security-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-azure-wif-service-connection",
@@ -17678,9 +18041,11 @@
       "authority_class": 2,
       "source_type": "security-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Microsoft recommends WIF and announces the applicable legacy Azure DevOps issuer retirement on July 1, 2027."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Microsoft recommends WIF and announces the applicable legacy Azure DevOps issuer retirement on July 1, 2027. September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-github-security-features",
@@ -17690,9 +18055,11 @@
       "authority_class": 2,
       "source_type": "security-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Product packaging, repository eligibility and licensing are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Product packaging, repository eligibility and licensing are volatile. September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-defender-devops-security",
@@ -17702,9 +18069,11 @@
       "authority_class": 2,
       "source_type": "security-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Connector, scanner, plan and code-to-cloud feature availability can change."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Connector, scanner, plan and code-to-cloud feature availability can change. September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-application-insights-opentelemetry",
@@ -17714,8 +18083,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-azure-monitor-kql",
@@ -17725,8 +18097,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "September 28 AZ-400 deep review: Retained contextual reference fetched; full page and linked procedures not exhaustively reread in this pass. Targeted sources below support applied changes. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-microsoft-learn-course",
@@ -17736,9 +18111,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Official instructor-led duration is four days; the 30–45 hour self-paced planning range in the guide is an estimate including practice."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Official instructor-led duration is four days; the 30–45 hour self-paced planning range in the guide is an estimate including practice. September 28 AZ-400 deep review: Entire short main public course overview/metadata read: four instructor days, eight languages. Lessons not opened or executed. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-microsoft-practice-assessment",
@@ -17748,9 +18125,11 @@
       "authority_class": 3,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Official free readiness assessment; it does not substitute for hands-on delivery experience."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Official free readiness assessment; it does not substitute for hands-on delivery experience. September 28 AZ-400 deep review: Credential/assessment landing only; no assessment session, questions, results or explanations opened. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-exam-readiness-zone",
@@ -17760,9 +18139,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Short review videos may target an older blueprint and should be reconciled with July 2026 objectives."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Short review videos may target an older blueprint and should be reconciled with July 2026 objectives. September 28 AZ-400 deep review: Public series introduction/shell only; specific AZ-400 episodes/runtimes unverified. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-azure-devops-labs",
@@ -17772,9 +18153,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Select labs by objective and verify each lab's product currency before use."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Select labs by objective and verify each lab's product currency before use. September 28 AZ-400 deep review: Public landing lab index partly read; individual step-by-step labs not executed. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-pluralsight-path",
@@ -17784,9 +18167,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Page displayed six courses, three labs, 36 hours and a practice exam; individual content dated 2024–2026 and needs July 2026 reconciliation."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Page displayed six courses, three labs, 36 hours and a practice exam; individual content dated 2024–2026 and needs July 2026 reconciliation. September 28 AZ-400 deep review: Public path metadata and all six course/three lab titles/dates/runtimes read; legacy 2023 full course 15h22 overlaps five 2024–2025 domain courses 17h59. Labs 2h15; whole 35h36 versus 36h heading. Domain+labs 20h14. Paid content unopened. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-oreilly-tim-warner-crash-course",
@@ -17796,9 +18181,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Two-day agenda totals about six hours. The page contains stale prerequisite/product wording, so use as a selective supplement and reconcile with the July 2026 blueprint."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Two-day agenda totals about six hours. The page contains stale prerequisite/product wording, so use as a selective supplement and reconcile with the July 2026 blueprint. September 28 AZ-400 deep review: Public introduction, prerequisites, complete two-day agenda and instructor metadata read. Six agenda hours include breaks. AZ-500/Security Engineer and obsolete exam wording not adopted; actual upcoming booking/paid delivery unverified. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-udemy-alan-rodrigues",
@@ -17808,9 +18195,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Udemy displayed 20h 46m, 258 lectures and a September 2025 update; reconcile with the July 2026 blueprint."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Udemy displayed 20h 46m, 258 lectures and a September 2025 update; reconcile with the July 2026 blueprint. September 28 AZ-400 deep review: Direct blocked; public provider browser page metadata/initial outline confirms September 2025, 10 sections, 258 lectures, 20h46. Paid lessons not read. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-whizlabs",
@@ -17820,9 +18209,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Course, practice-test and lab packaging or duration was not reliably visible during review; verify current contents and July 2026 alignment before purchase."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Course, practice-test and lab packaging or duration was not reliably visible during review; verify current contents and July 2026 alignment before purchase. September 28 AZ-400 deep review: Fetch succeeded only as 47-character JavaScript shell; current bundle/duration not verified. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-measureup-practice-test",
@@ -17832,9 +18223,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "MeasureUp displayed 139 questions and an August 2024 update; reconcile with the July 2026 blueprint before purchase."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "MeasureUp displayed 139 questions and an August 2024 update; reconcile with the July 2026 blueprint before purchase. September 28 AZ-400 deep review: Selected public product metadata: 139 questions, August 2024 update unchanged; paid questions and July 2026 coverage not audited. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-microsoft-reactor-agentic-devops",
@@ -17844,9 +18237,11 @@
       "authority_class": 4,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-400"],
-      "notes": "Six on-demand one-hour 2026 sessions supplement hybrid GitHub/Azure DevOps, DevSecOps and incident topics; not full AZ-400 coverage."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-400"
+      ],
+      "notes": "Six on-demand one-hour 2026 sessions supplement hybrid GitHub/Azure DevOps, DevSecOps and incident topics; not full AZ-400 coverage. September 28 AZ-400 deep review: Public schedule titles/dates/times inspected: 12 unique one-hour sessions January 27–April 21, 2026; HTML repeats the list, so 24 rows are not 24 sessions. First six descriptions read and later selected descriptions; recordings not watched. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-800-official-blueprint",
@@ -37219,13 +37614,14 @@
       "authority_class": 1,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "GH-100",
         "GH-200",
-        "GH-500"
+        "GH-500",
+        "AZ-400"
       ],
-      "notes": "Current evidence for runner-deprecation visibility, least-privilege Dependabot alert access, and reusable-workflow job identity."
+      "notes": "Current evidence for runner-deprecation visibility, least-privilege Dependabot alert access, and reusable-workflow job identity. September 28 AZ-400 deep review: Main release sections read; new job workflow identities and GHES exclusion used, runner API/Dependabot permission retained context. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-actions-retention-expansion-2026",
@@ -37235,12 +37631,13 @@
       "authority_class": 1,
       "source_type": "lifecycle-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "GH-100",
-        "GH-200"
+        "GH-200",
+        "AZ-400"
       ],
-      "notes": "Dated October 1, 2026 retention-scope change; informs evidence export, caps, and storage tradeoffs."
+      "notes": "Dated October 1, 2026 retention-scope change; informs evidence export, caps, and storage tradeoffs. September 28 AZ-400 deep review: Main announcement, changed scope, billing/retention and preparation sections read, including September 15 clarification and October 1 start. No claim retention already enforced on September 28. See docs/research/2026-09-28-az-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "github-actions-node20-removal-2026",

@@ -1142,34 +1142,54 @@
       "notes": "Whole guide and 78 unchanged objectives mapped across twelve groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh classic/client/Teams lifecycle, managed identity, host management/update, Hybrid, transport, profile/FSLogix, App Attach, autoscale/servicing and learning catalogs. Thirty offline assertions passed. Dedicated primary timelines resolve the guide interpretation of a conflicting Teams overview; exact conflicting client minima are not asserted. No cloud, tenant, endpoint, SDK, storage, media, update or paid-content execution; independent human review pending. See docs/research/2026-09-28-az-140-deep-review.md"
     },
     {
-      "id": "az-400-2026-08-31-source-validation",
+      "id": "az-400-2026-09-28-source-validation",
       "exam_code": "AZ-400",
       "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/az-400-official-objectives.txt",
       "blueprint_snapshot_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
       "objective_coverage": [
         {
           "objective_group": "Design and implement processes and communications",
-          "guide_sections": ["Sections 1–2", "Hybrid delivery scenario", "Lab 1"]
+          "guide_sections": [
+            "Sections 1–2",
+            "Hybrid delivery scenario",
+            "Lab 1"
+          ]
         },
         {
           "objective_group": "Design and implement a source control strategy",
-          "guide_sections": ["Section 3", "Hybrid delivery scenario", "Lab 2"]
+          "guide_sections": [
+            "Section 3",
+            "Hybrid delivery scenario",
+            "Lab 2"
+          ]
         },
         {
           "objective_group": "Design and implement build and release pipelines",
-          "guide_sections": ["Section 4", "Integrated scenarios", "Labs 3–6"]
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios",
+            "Labs 3–6"
+          ]
         },
         {
           "objective_group": "Develop a security and compliance plan",
-          "guide_sections": ["Section 5", "Compromised-runner scenario", "Lab 7"]
+          "guide_sections": [
+            "Section 5",
+            "Compromised-runner scenario",
+            "Lab 7"
+          ]
         },
         {
           "objective_group": "Implement an instrumentation strategy",
-          "guide_sections": ["Section 6", "Integrated scenarios", "Lab 8"]
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
         }
       ],
       "checks": {
@@ -1180,12 +1200,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 40,
-        "reachable": 39,
+        "unique_external_links": 65,
+        "reachable": 64,
         "access_blocked": 1,
         "missing_or_error": 0
       },
-      "notes": "All five weighted July 27, 2026 objective groups and every published subobjective are mapped to an end-to-end work-to-production evidence model, comparisons, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 40 cited URLs are exact source-catalog entries; one Udemy page returned HTTP 403 and is treated as access-blocked rather than missing. The guide covers both GitHub and Azure DevOps, including Git/branch/repository scaling, package and test strategy, reusable YAML, hosted and self-hosted execution, progressive delivery, database compatibility, IaC and desired state, identity federation, security scanning, OpenTelemetry, KQL and delivery-system metrics. It explicitly records the September 30, 2027 Azure Automation State Configuration retirement and the July 1, 2027 applicable Azure DevOps WIF issuer retirement with their current transition destinations."
+      "notes": "Whole guide and 86 unchanged objectives mapped across sixteen groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh merge queue, artifact access/provenance, GitHub runtime/execution/cache/retention, YAML gates, what-if, Azure DevOps identity/issuer/public-project lifecycle, CodeQL and telemetry sampling; reconcile learning catalogs. Forty-seven offline assertions passed, including one original Python release-decision predicate. KQL reviewed without execution. No cloud pipeline, tenant, SDK, deployment or paid-content execution; independent human review pending. See docs/research/2026-09-28-az-400-deep-review.md"
     },
     {
       "id": "az-800-2026-08-31-source-validation",
@@ -11008,6 +11028,72 @@
         "missing_or_error": 0
       },
       "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an architecture decision method, trade-off tables, common failure modes, two integrated scenarios, eight independent design labs, and 24 original knowledge checks. All 29 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. The guide explicitly separates architecture design from AZ-104 implementation detail and marks service tiers, limits, licensing, region/zone support, networking, pricing, and retirement-sensitive product behavior VERIFY CURRENT."
+    },
+    {
+      "id": "az-400-2026-08-31-source-validation",
+      "exam_code": "AZ-400",
+      "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-400-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement processes and communications",
+          "guide_sections": [
+            "Sections 1–2",
+            "Hybrid delivery scenario",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a source control strategy",
+          "guide_sections": [
+            "Section 3",
+            "Hybrid delivery scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Design and implement build and release pipelines",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios",
+            "Labs 3–6"
+          ]
+        },
+        {
+          "objective_group": "Develop a security and compliance plan",
+          "guide_sections": [
+            "Section 5",
+            "Compromised-runner scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Implement an instrumentation strategy",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 40,
+        "reachable": 39,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted July 27, 2026 objective groups and every published subobjective are mapped to an end-to-end work-to-production evidence model, comparisons, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 40 cited URLs are exact source-catalog entries; one Udemy page returned HTTP 403 and is treated as access-blocked rather than missing. The guide covers both GitHub and Azure DevOps, including Git/branch/repository scaling, package and test strategy, reusable YAML, hosted and self-hosted execution, progressive delivery, database compatibility, IaC and desired state, identity federation, security scanning, OpenTelemetry, KQL and delivery-system metrics. It explicitly records the September 30, 2027 Azure Automation State Configuration retirement and the July 1, 2027 applicable Azure DevOps WIF issuer retirement with their current transition destinations."
     }
   ]
 }

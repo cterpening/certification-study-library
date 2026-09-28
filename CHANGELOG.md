@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AZ-400's 86 objectives; add seven worked examples, ten labs, 48 explained checks and three Microsoft blog exercises. Update pipeline trust, artifact permissions, runtime/policy/retention changes, Azure DevOps identity and lifecycle, CodeQL, telemetry and learning catalogs. See the [AZ-400 report](docs/research/2026-09-28-az-400-deep-review.md).
+
 - September 28, 2026: deeply review AZ-305's 49 objectives; add seven worked examples, ten labs, 48 explained checks and three bounded blog exercises. Refresh application recovery, APIM/Service Bus capabilities, current lifecycle changes and learning catalogs. See the [AZ-305 report](docs/research/2026-09-28-az-305-deep-review.md).
 
 - September 28, 2026: deeply review AZ-140's 78 objectives; add seven worked examples, ten labs, 48 explained checks and three Microsoft blog exercises. Update imminent classic/client/Teams deadlines, managed host lifecycle, Hybrid, profiles, autoscale, servicing and learning catalogs. See the [AZ-140 report](docs/research/2026-09-28-az-140-deep-review.md).

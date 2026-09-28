@@ -456,6 +456,8 @@ The review mapped all eight unweighted Enterprise-aware domains to explicit serv
 
 ## AZ-400 coverage record
 
+The September 28 [deep review](research/2026-09-28-az-400-deep-review.md) maps 86 detailed objectives. Whole guide and 86 unchanged objectives mapped across sixteen groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh merge queue, artifact access/provenance, GitHub runtime/execution/cache/retention, YAML gates, what-if, Azure DevOps identity/issuer/public-project lifecycle, CodeQL and telemetry sampling; reconcile learning catalogs. Forty-seven offline assertions passed, including one original Python release-decision predicate. KQL reviewed without execution. No cloud pipeline, tenant, SDK, deployment or paid-content execution; independent human review pending. Current guide citations: 65 registered, 64 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Design and implement processes and communications | Sections 1–2, hybrid delivery scenario, and Lab 1 |
