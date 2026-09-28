@@ -1,0 +1,2165 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AI-901",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "168de287cd4d4d691298c78e315b7104dbb86b8e7a686c954168ad12eb69893e",
+  "guide_after_sha256": "15e19f3c7196a1011bb4f6eeb70595bf7a472354de842d5bba4f58dc859a14a0",
+  "prior_records": {
+    "exam": {
+      "code": "AI-901",
+      "level": "beginner",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Azure AI Fundamentals",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+      "guide_path": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; basic Azure and cloud concepts are helpful for the Foundry portions."
+    },
+    "review": {
+      "id": "ai-901-2026-08-31-source-validation",
+      "exam_code": "AI-901",
+      "guide_path": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-901-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+      "objective_coverage": [
+        {
+          "objective_group": "Identify AI concepts and capabilities",
+          "guide_sections": [
+            "Parts 1–2",
+            "Part 8 — Objective-to-scenario drill",
+            "Labs 1 and 5"
+          ]
+        },
+        {
+          "objective_group": "Implement AI solutions by using Microsoft Foundry",
+          "guide_sections": [
+            "Parts 3–8",
+            "Labs 1–6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 23,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Both weighted objective groups and all April 15, 2026 bullets are mapped to concepts, Foundry implementation decisions, an integrated scenario drill, and six hands-on labs. All 26 cited URLs are exact source-catalog entries. The O'Reilly AI-901 course and both Udemy AI-901 course landing pages returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Foundry naming, project/resource surfaces, models, deployments, SDKs, agent types, modalities, analyzer modes, regions, quotas, pricing, and preview status remain explicitly marked VERIFY CURRENT."
+    },
+    "sources": [
+      {
+        "id": "microsoft-foundry-docs",
+        "title": "Microsoft Foundry documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AI-103",
+          "AB-100",
+          "AI-901",
+          "AI-300"
+        ],
+        "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-foundry-agent-service",
+        "title": "Foundry Agent Service overview",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AI-103",
+          "AB-100",
+          "AI-901"
+        ]
+      },
+      {
+        "id": "azure-content-safety-docs",
+        "title": "Azure AI Content Safety documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ]
+      },
+      {
+        "id": "microsoft-ai-show",
+        "title": "The AI Show",
+        "url": "https://learn.microsoft.com/en-us/shows/ai-show/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "Official product demonstrations and discussions; select episodes by objective rather than treating the show as one exam course."
+      },
+      {
+        "id": "john-savill-ai-900-study-cram-v2",
+        "title": "AI-900 Study Cram v2",
+        "url": "https://www.youtube.com/watch?v=bTkUTkXrqOQ",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "Optional AI fundamentals refresh; AI-900 retired June 30, 2026, and the video does not cover the current AI-901 or AI-103 Foundry implementation scope."
+      },
+      {
+        "id": "ai-901-blueprint",
+        "title": "AI-901 Microsoft Azure AI Fundamentals study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ]
+      },
+      {
+        "id": "microsoft-ai-901-course",
+        "title": "Microsoft Azure AI Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Official one-day course for the credential that replaced AI-900."
+      },
+      {
+        "id": "microsoft-cloud-product-docs",
+        "title": "Microsoft technical documentation",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901"
+        ],
+        "notes": "Entry point to the current product references cited directly within each guide."
+      },
+      {
+        "id": "oreilly-ai-901-video",
+        "title": "Azure AI Fundamentals AI-901",
+        "url": "https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/",
+        "publisher": "Anand Rao Nednur on O'Reilly",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Four-hour, four-minute video published April 2026."
+      },
+      {
+        "id": "udemy-ai-901-christopher-nett",
+        "title": "AI-901 Azure AI Fundamentals",
+        "url": "https://www.udemy.com/course/ai-901-azure-ai-fundamentals/",
+        "publisher": "Christopher Nett on Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Six hours, 20 minutes; shown as updated June 2026."
+      },
+      {
+        "id": "udemy-ai-901-kuljot-bakshi",
+        "title": "Azure AI Fundamentals AI-901 Exam Prep",
+        "url": "https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/",
+        "publisher": "Kuljot Singh Bakshi on Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Six hours, 54 minutes; shown as updated July 2026."
+      },
+      {
+        "id": "john-savill-certification-materials",
+        "title": "Certification Materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "publisher": "John Savill",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AI-103",
+          "SC-300"
+        ],
+        "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them."
+      },
+      {
+        "id": "microsoft-mechanics",
+        "title": "Microsoft Mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AZ-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AB-100",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-reactor",
+        "title": "Microsoft Reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "AI-901",
+          "AI-103",
+          "AB-100",
+          "AZ-801",
+          "AZ-802",
+          "DP-300",
+          "DP-800",
+          "AI-200",
+          "AI-300",
+          "SC-500",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "whizlabs-ai-901",
+        "title": "Microsoft Azure AI Fundamentals AI-901 course and practice tests",
+        "url": "https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Public listing shows 63 videos and three quizzes but no total video runtime. Allow about three to six hours for the quizzes and explanation review, plus the unpublished video time."
+      },
+      {
+        "id": "microsoft-practice-assessment-catalog",
+        "title": "Practice Assessments for Microsoft Certifications",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "GH-100",
+          "GH-500",
+          "AI-103",
+          "AB-100",
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AZ-801",
+          "AZ-802"
+        ],
+        "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator."
+      },
+      {
+        "id": "microsoft-ai-901-practice-assessment",
+        "title": "AI-901 Microsoft Azure AI Fundamentals Practice Assessment",
+        "url": "https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4",
+        "publisher": "Microsoft AI Skills Navigator",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Free official readiness assessment launched through AI Skills Navigator; sign-in is required. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      },
+      {
+        "id": "microsoft-foundry-models-overview-ai103",
+        "title": "Microsoft Foundry Models overview",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AI-103",
+          "AI-901",
+          "AI-300",
+          "AB-100"
+        ],
+        "notes": "Catalog models, modalities, providers, availability, and deployment choices are volatile. September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-foundry-model-deployment-ai103",
+        "title": "Deploy Microsoft Foundry Models in the Foundry portal",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "Model availability, deployment types, quota, and regions are volatile."
+      },
+      {
+        "id": "microsoft-content-understanding-overview-ai103",
+        "title": "Azure Content Understanding overview",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "Analyzer modes, supported modalities, models, regions, and availability are volatile."
+      },
+      {
+        "id": "microsoft-content-understanding-quickstart-ai103",
+        "title": "Azure Content Understanding multimodal quickstart",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "API versions, analyzer identifiers, supported inputs, and polling behavior are volatile."
+      },
+      {
+        "id": "microsoft-speech-documentation-ai103",
+        "title": "Azure Speech documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "Languages, voices, SDKs, custom models, regions, and feature support are volatile."
+      },
+      {
+        "id": "microsoft-foundry-image-generation-editing-ai103",
+        "title": "Deploy and use MAI image models in Microsoft Foundry",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "Eligible models, edit operations, authentication, regions, and APIs are volatile."
+      },
+      {
+        "id": "microsoft-foundry-vision-models-ai103",
+        "title": "Use vision-enabled chat models in Microsoft Foundry",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-103",
+          "AI-901"
+        ],
+        "notes": "Eligible models, media inputs, detail controls, limitations, and pricing are volatile."
+      },
+      {
+        "id": "microsoft-ai901-credential",
+        "title": "Microsoft Certified: Azure AI Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ]
+      },
+      {
+        "id": "microsoft-ai900-retirement-study-guide",
+        "title": "AI-900 retired study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "AI-900 retired June 30, 2026; use only to understand the predecessor scope."
+      },
+      {
+        "id": "microsoft-responsible-ai-principles-ai901",
+        "title": "Microsoft responsible AI principles and approach",
+        "url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ]
+      },
+      {
+        "id": "microsoft-azure-language-documentation-ai901",
+        "title": "Azure Language in Foundry Tools documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Capability names, SDKs, language support, limits, regions, and pricing are volatile."
+      },
+      {
+        "id": "microsoft-ai-concepts-learning-path-ai901",
+        "title": "AI concepts for developers and technology professionals",
+        "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Current public page lists seven modules and an estimated duration of 3 hours 51 minutes."
+      },
+      {
+        "id": "microsoft-ai-apps-agents-learning-path-ai901",
+        "title": "Get started with AI applications and agents on Azure",
+        "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Current public page lists seven modules and an estimated duration of 5 hours 37 minutes."
+      },
+      {
+        "id": "microsoft-foundry-capability-map-ai901",
+        "title": "Microsoft Foundry product and capability map",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-901"
+        ],
+        "notes": "Product names, recommended build paths, SDKs, agent types, and preview status are volatile."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "4243e358e409e7a84e2b48011d4c51a045a8bcf60b8631bb7a189463276fcd7d",
+      "guide_sections": "2 / Group disparity and worked example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "82ae857902f767db1375f55a9eacd12e1d9d53c2df8fea42e5f2923676a28e87",
+      "guide_sections": "2 / Safety/reliability and failure controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "0b0936dd4a0dc8efd313c2bbfbda2e1873a64e73804f11c9099c365be95c2590",
+      "guide_sections": "2 / Source access, privacy and traces",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "3ce983e3ceb19aa8156adba334ed7dd458a32eec9318cc132c2f005299641ff2",
+      "guide_sections": "2 / Accessibility and alternatives; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "e051e1b20a980c2f8e7ba055206b4523d8cd5858d5a661d888049fe5cd9269eb",
+      "guide_sections": "2 / AI disclosure, evidence and limitations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "7585839b2e7de533212da9a343ee68d3e8889ec9b20a264f706db599ee7e609d",
+      "guide_sections": "2 / Ownership, oversight and incident accountability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "4a3a40f18bf6c8005cc3c68b70c9265415a15bb493768e9c81decacf63b80d7e",
+      "guide_sections": "1 / Token generation, training/inference and adaptation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "81d8baca80e837173ec056901e9e2ffadbcc8db43617de9ec61904f94aa52366",
+      "guide_sections": "1, 3 / Capability/constraint comparison; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3a8d98cbd2196908a214c98639f80872ae4b5331fcb04c80d5d827628effb088",
+      "guide_sections": "3 / Catalog versus deployment, endpoint and parameters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "9e4aa2cf0b1b28c101cc98f3b16ab408a6aac24da494d05f00216e6cce4f393d",
+      "guide_sections": "1 / Workload/input/output decision matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "6e8695d5649c961b8a8fe3a9cae39b3078162223da59e0856ee0edc83c34188a",
+      "guide_sections": "5 / Text technique distinctions and errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "0ef599a705b01cc1b42738b389b4287dc1216a329e881f08fbd50ad784a0c22e",
+      "guide_sections": "5 / Recognition, synthesis and voice paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "b07e3464aeafcdfee05125427097d29ff35f788b738a126ab0863a69f1137c21",
+      "guide_sections": "6 / Vision understanding versus generation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "a9626548b50135c1cccaa787823534ac83605276f90f4fb863f0165ee70873a4",
+      "guide_sections": "7 / Recognition, structure, fields and evidence across media",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "46a02d4deb908aaa62e64d20edf2e18d7c076f89eb323e02d9d0a3e648529a99",
+      "guide_sections": "3 / Prompt roles, evidence and missing-answer path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "3a7217ae16e3241d2441139c52f8a33eee0168b535987f52ce60c54135748d83",
+      "guide_sections": "3 / Portal-to-client progression; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "34aaaaf8de076a835e8542b356023a12a93164a45a8df8bf09f61ecf4ad7b37c",
+      "guide_sections": "3 / Concrete Projects/Responses client; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "06962f79329d1ada60c7dcdb1f2892dd263f31d5a6ba710e81566393bab749e9",
+      "guide_sections": "4 / Portal prompt-agent configuration and test; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "b28a81f1a52ba2ab18f54f98144c7a160fe7a93fed6a59af74b899af1d3daeb5",
+      "guide_sections": "4 / Named-agent client, conversation and version boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "2ac3c4258170a2d804fa172877aaf6eb37eca561f92644bba34850134c62faf5",
+      "guide_sections": "5 / Language sentiment client and per-item failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "dbefb789fd1f5dd13861e92d1f11f00639417d519d275360477e24795009f016",
+      "guide_sections": "5 / Direct multimodal voice model and interaction contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "dd44fe3742016d21ff1e4eb4b640d8b0340d9886a0d44a157fb4d0562e73de84",
+      "guide_sections": "5 / Speech one-shot result handling; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "1eaadadf6c73903477de704e3303f69b456c0bde794610e7683ed653058c6ccc",
+      "guide_sections": "6 / Image-input client workflow, focused visual prompt; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "0b7251f119c2ba0437263642ae6cdd9e7dc00d6b0292c4e016a0cfec5d94cd41",
+      "guide_sections": "6 / Separate generation operation and reviewed output; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "e2063f9da8eb4bfcae428b71522ddf038fe6fdfa44d6312afa20bed40b61262b",
+      "guide_sections": "6 / Validation, SDK/media contract and unsupported-input test; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "e197979ee1c267e6afaefd9a895c74f1e85b930cffa23fc31f48d24f3b2bdec4",
+      "guide_sections": "7 / Document/form analyzers, fields and invoice validation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "88ad5352a4c991d63bc3a87cbe412327e9a638af537ca9fcab5c6f1c1e3e906d",
+      "guide_sections": "7 / Image analyzers, recognition/layout and schema",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "0fa184ee12980935eb498921139a033695b09f112f5bac50162f6eb8c150954a",
+      "guide_sections": "7 / Audio/video transcripts, segments and timestamps",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "f10dbc18bb48feec903014cf10c21f7ec765562444cccff008a74eae099532d4",
+      "guide_sections": "7 / Version/model/operation/validation flow; labs 6–7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AI-901",
+        "title": "Microsoft Azure AI Fundamentals",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+        "guide_path": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
+        "snapshot_path": "data\\objective-snapshots\\ai-901-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ai-901-official-status.json",
+        "previous_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+        "current_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+        "previous_status_sha256": "ec3c1638addefd3d9def791e2dfa6b177519cdafa28273ca81fb6a2ee32313e1",
+        "current_status_sha256": "ec3c1638addefd3d9def791e2dfa6b177519cdafa28273ca81fb6a2ee32313e1",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of April 15, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 39,
+    "reachable": 36,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "microsoft-foundry-docs",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+      "checked_at": "2026-09-28T08:13:54.094174+00:00",
+      "health": {
+        "id": "microsoft-foundry-docs",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Foundry documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "duration_signals": [],
+        "signal_fingerprint": "14d8ac1f3fa62d79ee454253c8af0b1706cd7a0cc18baf32fd48ab5dd22e3912",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+      "sha256": "643894036983f2981126471d430885355403ad8bc41f7f9446f6373dc2f60b79",
+      "text_characters": 2269
+    },
+    {
+      "id": "microsoft-foundry-agent-service",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "checked_at": "2026-09-28T08:13:54.094882+00:00",
+      "health": {
+        "id": "microsoft-foundry-agent-service",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Foundry Agent Service? - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "11512d26366f0a19e155b37e3b930c187345cae6815b3fdeae93946715674160",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "sha256": "d805adde4e841d041605f2cd5bb3ce3af2412bc7ddd490cd490b8d4b01cfb6af",
+      "text_characters": 19621
+    },
+    {
+      "id": "azure-content-safety-docs",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+      "checked_at": "2026-09-28T08:13:54.095270+00:00",
+      "health": {
+        "id": "azure-content-safety-docs",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure AI Content Safety? - Azure AI services",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "49acced9924e875bff77f0f18226b9de76c3ad049f3c2ac687f0e9435c727810",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview",
+      "sha256": "323034aa17ee2f278b62c0b285fe575b29ebe13a122d6243f0d435ed6576e705",
+      "text_characters": 12087
+    },
+    {
+      "id": "microsoft-ai-show",
+      "url": "https://learn.microsoft.com/en-us/shows/ai-show/",
+      "checked_at": "2026-09-28T08:13:54.634882+00:00",
+      "health": {
+        "id": "microsoft-ai-show",
+        "url": "https://learn.microsoft.com/en-us/shows/ai-show/",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/ai-show/",
+        "content_type": "text/html",
+        "page_title": "AI Show",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/ai-show/",
+        "duration_signals": [],
+        "signal_fingerprint": "a24b37b84abe3bc86a2c444894d5857697c4954858593288d6f81f4702cf2e30",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/ai-show/",
+      "sha256": "4ec734cbe64e0c37d2c15efee9b10955d224ab6e85c8a464ebdf941db7a546da",
+      "text_characters": 749
+    },
+    {
+      "id": "john-savill-ai-900-study-cram-v2",
+      "url": "https://www.youtube.com/watch?v=bTkUTkXrqOQ",
+      "checked_at": "2026-09-28T08:13:54.645176+00:00",
+      "health": {
+        "id": "john-savill-ai-900-study-cram-v2",
+        "url": "https://www.youtube.com/watch?v=bTkUTkXrqOQ",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=bTkUTkXrqOQ",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI-900 Study Cram v2 (the non-Generative AI bits)",
+        "canonical_url": "https://www.youtube.com/watch?v=bTkUTkXrqOQ",
+        "duration_signals": [],
+        "signal_fingerprint": "57bb33d49a88f4720ab69b69446ab523d20a7063fa8d50f0f633ee61168f610f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=bTkUTkXrqOQ",
+      "sha256": "44ba7d38cc03e96522c8f3c0ba8f9fa4618fe761b8fd4e1fec1e97c30bdb54fb",
+      "text_characters": 212
+    },
+    {
+      "id": "ai-901-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+      "checked_at": "2026-09-28T08:13:54.692281+00:00",
+      "health": {
+        "id": "ai-901-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AI-901: Microsoft Azure AI Fundamentals",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "62ccc26cbbb396c6fc247e880dd976d2ec40f7485fc5c4c4d56a0b31bd9c36db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+      "sha256": "efa144bce6bb91e9792fff93dc74b4f39e1edcc9e7be59811db2dc89e58b1a2e",
+      "text_characters": 7100
+    },
+    {
+      "id": "microsoft-ai-901-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
+      "checked_at": "2026-09-28T08:13:54.957957+00:00",
+      "health": {
+        "id": "microsoft-ai-901-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
+        "content_type": "text/html",
+        "page_title": "Course AI-901T00-A: Introduction to AI in Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
+        "duration_signals": [],
+        "signal_fingerprint": "748ee1385355441cf1546ee377292a774d20c62a36b0e81eb5bd17a0c0d41775",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
+      "sha256": "b4265ede6a04b55d8846878eaf162bcd94dd6604021f39e81449239bc71f5a49",
+      "text_characters": 1488
+    },
+    {
+      "id": "microsoft-cloud-product-docs",
+      "url": "https://learn.microsoft.com/en-us/docs/",
+      "checked_at": "2026-09-28T08:13:54.981991+00:00",
+      "health": {
+        "id": "microsoft-cloud-product-docs",
+        "url": "https://learn.microsoft.com/en-us/docs/",
+        "checked_at": "2026-09-28T08:13:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/docs/",
+        "content_type": "text/html",
+        "page_title": "Technical documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/docs/",
+        "duration_signals": [],
+        "signal_fingerprint": "f8307f16939ece1f03f8b9b4eefe1ce0ee4e0acd22397e5436f194497e5570ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/docs/",
+      "sha256": "8239c6cdb92021c7a7ea8848bedfc950ff6b4aef419d96851f34aebfb7aba102",
+      "text_characters": 2294
+    },
+    {
+      "id": "oreilly-ai-901-video",
+      "url": "https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/",
+      "checked_at": "2026-09-28T08:13:55.266809+00:00",
+      "health": {
+        "id": "oreilly-ai-901-video",
+        "url": "https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/",
+        "checked_at": "2026-09-28T08:13:55+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-ai-901-christopher-nett",
+      "url": "https://www.udemy.com/course/ai-901-azure-ai-fundamentals/",
+      "checked_at": "2026-09-28T08:13:55.377528+00:00",
+      "health": {
+        "id": "udemy-ai-901-christopher-nett",
+        "url": "https://www.udemy.com/course/ai-901-azure-ai-fundamentals/",
+        "checked_at": "2026-09-28T08:13:55+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai-901-azure-ai-fundamentals/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-ai-901-kuljot-bakshi",
+      "url": "https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/",
+      "checked_at": "2026-09-28T08:13:55.475277+00:00",
+      "health": {
+        "id": "udemy-ai-901-kuljot-bakshi",
+        "url": "https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/",
+        "checked_at": "2026-09-28T08:13:55+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "john-savill-certification-materials",
+      "url": "https://github.com/johnthebrit/CertificationMaterials",
+      "checked_at": "2026-09-28T08:13:55.540964+00:00",
+      "health": {
+        "id": "john-savill-certification-materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "checked_at": "2026-09-28T08:13:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/CertificationMaterials: A collection of materials related to my certification videos",
+        "canonical_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "duration_signals": [],
+        "signal_fingerprint": "d6d516a3770bdb489dfbcc927eb5ab5fb54a84e092f0a8be465286f256859485",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+      "sha256": "fbef8a41f281572c15bfb95eded87498f7d6e45a9432ca5438b51ac643817481",
+      "text_characters": 2153
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-28T08:13:55.566733+00:00",
+      "health": {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-28T08:13:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "45779b8045a1c2d3691cf12d7bd7133d842140bd475e6783fd3afe32794dcfd1",
+      "text_characters": 182
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T08:13:56.169899+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T08:13:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "d65f159110f1b9b83e28e16a23ed4bd646d3b33efb14957ecf49ad59b89adf16",
+      "text_characters": 180
+    },
+    {
+      "id": "whizlabs-ai-901",
+      "url": "https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/",
+      "checked_at": "2026-09-28T08:13:56.688639+00:00",
+      "health": {
+        "id": "whizlabs-ai-901",
+        "url": "https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/",
+        "checked_at": "2026-09-28T08:13:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI-901: Microsoft Azure AI Fundamentals Course | Whizlabs",
+        "canonical_url": "https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/",
+        "duration_signals": [],
+        "signal_fingerprint": "79544419ffd583f977e91d8a96e6bd62d64f2c11fb1c35e60be0a1a497a38c8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/",
+      "sha256": "258e783fecd394b8476ead74e4a35e8d635e0a27b94aae760aba4e705598e89c",
+      "text_characters": 57
+    },
+    {
+      "id": "microsoft-practice-assessment-catalog",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "checked_at": "2026-09-28T08:13:56.775029+00:00",
+      "health": {
+        "id": "microsoft-practice-assessment-catalog",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "checked_at": "2026-09-28T08:13:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "content_type": "text/html",
+        "page_title": "Practice Assessments for Microsoft Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "duration_signals": [],
+        "signal_fingerprint": "3b3d08a6c02aa09ec47d9b5aed16e0896e6aa2bf3c6585338229fa25336dbba8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "sha256": "37d8ff751fa8adafc44d3b454596b8c98511dd0691e44ed5fd3072ca55e4557c",
+      "text_characters": 5931
+    },
+    {
+      "id": "microsoft-ai-901-practice-assessment",
+      "url": "https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4",
+      "checked_at": "2026-09-28T08:13:57.085828+00:00",
+      "health": {
+        "id": "microsoft-ai-901-practice-assessment",
+        "url": "https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4",
+        "checked_at": "2026-09-28T08:13:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4",
+        "content_type": "text/html",
+        "page_title": "AI Skills Navigator",
+        "canonical_url": "https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4",
+        "duration_signals": [],
+        "signal_fingerprint": "bd7131f8e7bca8c02b0e141abaa17dd4c245724392c812439faab5ef089dc96a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4",
+      "sha256": "8fb6e0cfd8d6d6f0d36c1e0038d29b54f51befeb15ee8a34d0d9c4fc25f3cc26",
+      "text_characters": 19
+    },
+    {
+      "id": "microsoft-foundry-models-overview-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "checked_at": "2026-09-28T08:13:57.148981+00:00",
+      "health": {
+        "id": "microsoft-foundry-models-overview-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "checked_at": "2026-09-28T08:13:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Foundry Models overview - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "56b073c1532219906b959b1c13e9a85007746d91cf93aa6889a637caf7275bdf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "sha256": "413f5f37a117f0c63a203828eb4e282fc870a4a1de4279fd4cdfec3f618c36b1",
+      "text_characters": 22692
+    },
+    {
+      "id": "microsoft-foundry-model-deployment-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models",
+      "checked_at": "2026-09-28T08:13:57.381314+00:00",
+      "health": {
+        "id": "microsoft-foundry-model-deployment-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models",
+        "checked_at": "2026-09-28T08:13:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models",
+        "content_type": "text/html",
+        "page_title": "Deploy Microsoft Foundry Models in the Foundry portal - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models",
+        "duration_signals": [],
+        "signal_fingerprint": "0062ebd85c40cfdedab3407d94bc60f56193e35f46d9229a53fc237e1b7e7e44",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models",
+      "sha256": "3f2137cad218733cefd671ed1509d88f348b745ce5acab6b0bc4cd7d4c50eaf5",
+      "text_characters": 7307
+    },
+    {
+      "id": "microsoft-content-understanding-overview-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview",
+      "checked_at": "2026-09-28T08:13:57.445219+00:00",
+      "health": {
+        "id": "microsoft-content-understanding-overview-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview",
+        "checked_at": "2026-09-28T08:13:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview",
+        "content_type": "text/html",
+        "page_title": "What is Azure Content Understanding in Foundry Tools? - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "d49fe8292df720830251d22af306dea5be838b3aa8718cb315d4860e681ed6b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview",
+      "sha256": "6316e0ae15900772656f0efde6d3250efe439f3c4ba0aafea577e2d17921e938",
+      "text_characters": 14487
+    },
+    {
+      "id": "microsoft-content-understanding-quickstart-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api",
+      "checked_at": "2026-09-28T08:13:57.631590+00:00",
+      "health": {
+        "id": "microsoft-content-understanding-quickstart-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api",
+        "checked_at": "2026-09-28T08:13:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Azure Content Understanding in Foundry Tools - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api",
+        "duration_signals": [
+          "000 hours",
+          "39 hours",
+          "50 hours",
+          "60 hours"
+        ],
+        "signal_fingerprint": "94fc25e0070f49e63eb95e276e723747cea0014044002946405c30b2dbdffd4a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api",
+      "sha256": "2b75c15f1bae8affddeb5d0e164aab45672b8db853e64945a0f2b5c3e6fa0aee",
+      "text_characters": 105993
+    },
+    {
+      "id": "microsoft-speech-documentation-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+      "checked_at": "2026-09-28T08:13:57.829365+00:00",
+      "health": {
+        "id": "microsoft-speech-documentation-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+        "checked_at": "2026-09-28T08:13:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+        "content_type": "text/html",
+        "page_title": "Azure Speech Documentation - Tutorials, API Reference - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "1f1388115c57dd2080eae9d482a3586773bcaa15c9ca560469ca43ddf85e2508",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/",
+      "sha256": "ff8e48f24490c7f4ad75f1c6fbe4a02ee7a97de7c049de25b2bc180644a607be",
+      "text_characters": 1785
+    },
+    {
+      "id": "microsoft-foundry-image-generation-editing-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+      "checked_at": "2026-09-28T08:13:58.028872+00:00",
+      "health": {
+        "id": "microsoft-foundry-image-generation-editing-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+        "content_type": "text/html",
+        "page_title": "Deploy and use MAI image models in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+        "duration_signals": [],
+        "signal_fingerprint": "b8799a920ab6fbc69ee2cbaaf90267b3cfe86d45b0350c8fc2148beae3979e83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image",
+      "sha256": "1c95ecb6d3f5362c7a463c585d7c73a93fdb90858cb77937620b24eecfd1cd47",
+      "text_characters": 20860
+    },
+    {
+      "id": "microsoft-foundry-vision-models-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+      "checked_at": "2026-09-28T08:13:58.087401+00:00",
+      "health": {
+        "id": "microsoft-foundry-vision-models-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+        "content_type": "text/html",
+        "page_title": "How to use vision-enabled chat models - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+        "duration_signals": [],
+        "signal_fingerprint": "d5e338746eb446c104d22738fcb4b8456e633246316bd95c184a9cced61051bf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+      "sha256": "be1a2f6474339e74c4c66511f2a8308c7e3ad2de1dd09e8834afe60a4edf4db3",
+      "text_characters": 44221
+    },
+    {
+      "id": "microsoft-ai901-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "checked_at": "2026-09-28T08:13:58.180763+00:00",
+      "health": {
+        "id": "microsoft-ai901-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure AI Fundamentals - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+        "duration_signals": [],
+        "signal_fingerprint": "b03f9282728fc533da9aaf25df25e40963c84f1656f716e0b949a9a7bf4ec831",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "sha256": "7e5369265cc8d6c04bb9c8095950ae5dc0f8940fa6d7cacd52241456d0f44180",
+      "text_characters": 4041
+    },
+    {
+      "id": "microsoft-ai900-retirement-study-guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+      "checked_at": "2026-09-28T08:13:58.376346+00:00",
+      "health": {
+        "id": "microsoft-ai900-retirement-study-guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AI-900: Microsoft Azure AI Fundamentals",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "709b9d33ddb3d5e0c556bf8e2e38614071880f9ce3e2c0c83ff601298c0a5302",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+      "sha256": "79fa14c95291febe65a9cdded7f7b5174ee65da72343e70f4d145dd9920da955",
+      "text_characters": 8796
+    },
+    {
+      "id": "microsoft-responsible-ai-principles-ai901",
+      "url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+      "checked_at": "2026-09-28T08:13:58.487213+00:00",
+      "health": {
+        "id": "microsoft-responsible-ai-principles-ai901",
+        "url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Responsible AI Principles and Approach | Microsoft AI",
+        "canonical_url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+        "duration_signals": [],
+        "signal_fingerprint": "84683170b75cd7252525ec4f5d949124b833d972e3c292b4cf28b0b956466502",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+      "sha256": "bbce6a46876b329c37a208baaebb5378ff893a1e2f2e8db4cd4a578a91bf2e23",
+      "text_characters": 10926
+    },
+    {
+      "id": "microsoft-azure-language-documentation-ai901",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/",
+      "checked_at": "2026-09-28T08:13:58.512249+00:00",
+      "health": {
+        "id": "microsoft-azure-language-documentation-ai901",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/",
+        "content_type": "text/html",
+        "page_title": "Azure Language documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/",
+        "duration_signals": [],
+        "signal_fingerprint": "a5b4932d19948ab7b9ead6e22e309b67af6b5d369fde487efbf7a17b4deff7c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/",
+      "sha256": "6ac75ac1398906d629f6cc7c6a63e69c8cd184da9d7987b3c4f0be34e5459bc6",
+      "text_characters": 3758
+    },
+    {
+      "id": "microsoft-ai-concepts-learning-path-ai901",
+      "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+      "checked_at": "2026-09-28T08:13:58.719441+00:00",
+      "health": {
+        "id": "microsoft-ai-concepts-learning-path-ai901",
+        "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+        "content_type": "text/html",
+        "page_title": "AI concepts for developers and technology professionals - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+        "duration_signals": [],
+        "signal_fingerprint": "c40a38228ab792491e853b1655e6e6e2dfc67d0d9e93a03c244db722d5427d45",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+      "sha256": "cc155ecaa81010a08d2f1432a88c6bac5503cc7efda2ab8b8eedcf791f539052",
+      "text_characters": 2042
+    },
+    {
+      "id": "microsoft-ai-apps-agents-learning-path-ai901",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "checked_at": "2026-09-28T08:13:58.822945+00:00",
+      "health": {
+        "id": "microsoft-ai-apps-agents-learning-path-ai901",
+        "url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+        "checked_at": "2026-09-28T08:13:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+        "content_type": "text/html",
+        "page_title": "Get started with AI applications and agents on Azure - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+        "duration_signals": [],
+        "signal_fingerprint": "de36f2e11c18a2c1355b0b60f58a93e7a4db2c673feea23d146112ab3fcd276a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/",
+      "sha256": "afa2e9ca965497ca905bfd8971038821ec37c6b76821ae96503169fed399d078",
+      "text_characters": 1982
+    },
+    {
+      "id": "microsoft-foundry-capability-map-ai901",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities",
+      "checked_at": "2026-09-28T08:13:59.057396+00:00",
+      "health": {
+        "id": "microsoft-foundry-capability-map-ai901",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities",
+        "checked_at": "2026-09-28T08:13:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities",
+        "content_type": "text/html",
+        "page_title": "Microsoft Foundry product and capability map - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities",
+        "duration_signals": [],
+        "signal_fingerprint": "477cfee3176de0e50b6a1320aca8f4134be0d8a35b131434908054fb45e371b7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities",
+      "sha256": "e0f8cb651c6226c8dddf2a60c6b595e67eabb0e82b048b35d68b6af0b50a8a4b",
+      "text_characters": 6691
+    },
+    {
+      "id": "ai901-responses",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api",
+      "checked_at": "2026-09-28T08:18:06.126740+00:00",
+      "health": {
+        "id": "ai901-responses",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Build agents using the Responses API - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api",
+        "duration_signals": [],
+        "signal_fingerprint": "390da16dd20b8f44cbd7912c17da1e432ac2fb208d05dd2c6e514722d6928d54",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api",
+      "sha256": "f80be3eef206846eda2377207fa9cb06a021658653e23ab4cac943401649c75a",
+      "text_characters": 16321
+    },
+    {
+      "id": "ai901-prompt-agent",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent",
+      "checked_at": "2026-09-28T08:18:06.127515+00:00",
+      "health": {
+        "id": "ai901-prompt-agent",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Create a prompt agent - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent",
+        "duration_signals": [
+          "90 minutes"
+        ],
+        "signal_fingerprint": "6bb269ea87c86dc1a3dc29d846e8dce4b915244fca47f6dc48191ce52be76350",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent",
+      "sha256": "b5b9a02ce04f0e3024bb4819f8e5f81d8759ffd988d55169c3bf97bc1d54e825",
+      "text_characters": 18333
+    },
+    {
+      "id": "ai901-language-client",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart",
+      "checked_at": "2026-09-28T08:18:06.127960+00:00",
+      "health": {
+        "id": "ai901-language-client",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Use the Sentiment Analysis client library and REST API - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart",
+        "duration_signals": [],
+        "signal_fingerprint": "6ae6df4bae5b60e9d4b279bc08835fcf1a9f77044094fb08e088982aecb59f08",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart",
+      "sha256": "5c440da5611fb5b35bada0e4729274a0b2d75faefa8204f224824f058c9f427c",
+      "text_characters": 52369
+    },
+    {
+      "id": "ai901-speech-client",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+      "checked_at": "2026-09-28T08:18:06.606397+00:00",
+      "health": {
+        "id": "ai901-speech-client",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+        "content_type": "text/html",
+        "page_title": "Speech to text quickstart - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+        "duration_signals": [],
+        "signal_fingerprint": "a5083d87d1faf3ecb88d1bdb0f71ea55dc57d8f13ecc7690316e2a89ffdbc2d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+      "sha256": "b452c837ee59563b742efaa3333a2d5987ab28746fdaf1cd537d88b89173df7d",
+      "text_characters": 75542
+    },
+    {
+      "id": "ai901-voice-agent",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent",
+      "checked_at": "2026-09-28T08:18:06.634861+00:00",
+      "health": {
+        "id": "ai901-voice-agent",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Create a voice-based prompt agent - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "df40959ddcee7f2ca4ff408be6e60484807211f5c8bd677ae3df2c7c32c2cdf1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent",
+      "sha256": "aac476683a4072c2e758b7ca25808f68cd9442231bdaeda8b8a4da63fc7372d4",
+      "text_characters": 37682
+    },
+    {
+      "id": "ai901-cu-models",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments",
+      "checked_at": "2026-09-28T08:18:06.658827+00:00",
+      "health": {
+        "id": "ai901-cu-models",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments",
+        "content_type": "text/html",
+        "page_title": "Model deployment options for Content Understanding analyzers - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments",
+        "duration_signals": [],
+        "signal_fingerprint": "d9904b1042a5e054f3356f4653f1637c61dbb85a532d80e4391789bdcfa8b78b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments",
+      "sha256": "d343da54fee94f8ea19d14c3fe234b650082dc38b4b8d411dba2106475679be7",
+      "text_characters": 8680
+    },
+    {
+      "id": "ai901-cu-analyzers",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+      "checked_at": "2026-09-28T08:18:06.947947+00:00",
+      "health": {
+        "id": "ai901-cu-analyzers",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+        "content_type": "text/html",
+        "page_title": "Azure Content Understanding in Foundry Tools - What is an analyzer? Configuration and reference - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+        "duration_signals": [],
+        "signal_fingerprint": "8bc715e18c9ae546b9f0102b945677391c76df424f89e47cd66d192e6cde9811",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+      "sha256": "5b5d70246ba878549db27b2940f4ac7d9cf6c3741d5a3ce257942c296257e5bb",
+      "text_characters": 27694
+    },
+    {
+      "id": "ai901-cu-fields",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview",
+      "checked_at": "2026-09-28T08:18:06.958024+00:00",
+      "health": {
+        "id": "ai901-cu-fields",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview",
+        "content_type": "text/html",
+        "page_title": "Azure Content Understanding in Foundry Tools Document Overview - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "69d8041abd4fa23d79c89f5584a253617be4aea3e5b83ee1101ae84299c87b78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview",
+      "sha256": "9cb599316d97e97ecc8b5e8434fd1dd22b4c11c7291d864432bdeb8d41ed555b",
+      "text_characters": 9516
+    },
+    {
+      "id": "ai901-foundry-blog",
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026/",
+      "checked_at": "2026-09-28T08:18:06.958659+00:00",
+      "health": {
+        "id": "ai901-foundry-blog",
+        "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026/",
+        "checked_at": "2026-09-28T08:18:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What's new in Microsoft Foundry: July and August 2026 | Microsoft Foundry Blog",
+        "canonical_url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026/",
+        "duration_signals": [],
+        "signal_fingerprint": "3032971affa74e84df0caae9e8a4916c97ac1436f2061daf4bfa5be03ab1b719",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026/",
+      "sha256": "787947bddfa423bba99951cac8a9ddd0e3d5d9d4157f3d2c172a8e9d5f0565fb",
+      "text_characters": 26094
+    },
+    {
+      "id": "ai103-content-understanding-whats-new",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+      "checked_at": "2026-09-28T08:22:22.954107+00:00",
+      "health": {
+        "id": "ai103-content-understanding-whats-new",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+        "checked_at": "2026-09-28T08:22:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Content Understanding? - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+        "duration_signals": [
+          "4 hours"
+        ],
+        "signal_fingerprint": "fc6b99ef66682d3ed16dbb1e53d1fae8fdf2d9c192b6c4fd7ada5407a7d54453",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+      "sha256": "64cacf8f45df44cc18d256096be130f1218c9165b2308930371451d9c9a88e45",
+      "text_characters": 29240
+    },
+    {
+      "id": "ab731-vision",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options",
+      "checked_at": "2026-09-28T08:22:22.955310+00:00",
+      "health": {
+        "id": "ab731-vision",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options",
+        "checked_at": "2026-09-28T08:22:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options",
+        "content_type": "text/html",
+        "page_title": "Migrate from Azure Vision in Foundry Tools - Image Analysis - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options",
+        "duration_signals": [],
+        "signal_fingerprint": "2d663917925a9f62ffb4ad64b3bccf6f65c43f113398e60e1e9585ee545eed92",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options",
+      "sha256": "b238685ca889594def9cf8cca5e8b13ae4ee916f20cb5cedebc8a0c971089b3e",
+      "text_characters": 4984
+    },
+    {
+      "id": "ai103-cu-august-blog",
+      "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
+      "checked_at": "2026-09-28T08:22:22.956002+00:00",
+      "health": {
+        "id": "ai103-cu-august-blog",
+        "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
+        "checked_at": "2026-09-28T08:22:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "From Sync APIs to support for the GPT-5 model series and agentic workflows: What's new in Azure Content Understanding - August 2026 | Microsoft Foundry Blog",
+        "canonical_url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
+        "duration_signals": [],
+        "signal_fingerprint": "6a7731f3f939ab0ecabec1d65e016a96949665bef90fb9659e3aba7faedafd59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
+      "sha256": "583406661800c622b149e1dfecfebf0829be1746975e9e01b7521fba3b7499d9",
+      "text_characters": 17421
+    },
+    {
+      "id": "ai901-sdk",
+      "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python",
+      "checked_at": "2026-09-28T08:24:24.103653+00:00",
+      "health": {
+        "id": "ai901-sdk",
+        "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python",
+        "checked_at": "2026-09-28T08:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python",
+        "content_type": "text/html",
+        "page_title": "Azure AI Projects client library for Python",
+        "canonical_url": "https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python",
+        "duration_signals": [],
+        "signal_fingerprint": "ebf2b19fa3226efb6f18953e5084bb61273b754355f88bd87e58034786246891",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python",
+      "sha256": "7eaa3efbe3bc32ffc3407750399f8ba2f326fa0cc4583bc8a200192ab11e6591",
+      "text_characters": 13861
+    },
+    {
+      "id": "ai901-pluralsight",
+      "url": "https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901",
+      "checked_at": "2026-09-28T08:24:24.104306+00:00",
+      "health": {
+        "id": "ai901-pluralsight",
+        "url": "https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901",
+        "checked_at": "2026-09-28T08:24:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Implement AI Solutions by Using Microsoft Foundry (AI-901)",
+        "canonical_url": "https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901",
+        "duration_signals": [],
+        "signal_fingerprint": "766db4cebd0de2300bac3d99a80b24bb6f9fa12e7ec13f78f3952dbe77250030",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901",
+      "sha256": "d9840e0010c0ae1ad38aa69d1404b1f4e0e056f970361387a19351e818c5be60",
+      "text_characters": 6189
+    }
+  ],
+  "added_source_ids": [
+    "ai901-sdk",
+    "ai901-pluralsight",
+    "ai901-responses",
+    "ai901-prompt-agent",
+    "ai901-language-client",
+    "ai901-speech-client",
+    "ai901-voice-agent",
+    "ai901-cu-models",
+    "ai901-cu-analyzers",
+    "ai901-cu-fields",
+    "ai901-foundry-blog"
+  ],
+  "findings": [
+    {
+      "id": "ai901-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Foundry client placeholder lacks an implementation path",
+      "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current SDK documents Entra-authenticated project client and Responses operations.",
+      "recommendation": "Add concrete single-turn client with dependency, identity, validation and execution limits.",
+      "disposition": "applied",
+      "source_id": "ai901-sdk",
+      "resolution": "Add concrete single-turn client with dependency, identity, validation and execution limits."
+    },
+    {
+      "id": "ai901-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Agent invocation and resource creation are different operations",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Named-agent-bound client invokes an existing portal resource.",
+      "recommendation": "Add agent client and conversation/version/retention distinctions.",
+      "disposition": "applied",
+      "source_id": "ai901-prompt-agent",
+      "resolution": "Add agent client and conversation/version/retention distinctions."
+    },
+    {
+      "id": "ai901-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Batch request success can hide failed documents",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Python API returns per-document is_error results.",
+      "recommendation": "Preserve errors in a small client example and coverage calculations.",
+      "disposition": "applied",
+      "source_id": "ai901-language-client",
+      "resolution": "Preserve errors in a small client example and coverage calculations."
+    },
+    {
+      "id": "ai901-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "One-shot speech recognition is bounded",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Up to 30 seconds or silence with no-match and canceled outcomes.",
+      "recommendation": "Add result handling, longer-audio boundary and original speech metrics.",
+      "disposition": "applied",
+      "source_id": "ai901-speech-client",
+      "resolution": "Add result handling, longer-audio boundary and original speech metrics."
+    },
+    {
+      "id": "ai901-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Related GA announcements do not establish voice prompt-agent GA",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Feature quickstart explicitly preview with project/region and SDK prerequisites.",
+      "recommendation": "Keep separate feature scope and direct multimodal versus Speech pipeline.",
+      "disposition": "applied",
+      "source_id": "ai901-voice-agent",
+      "resolution": "Keep separate feature scope and direct multimodal versus Speech pipeline."
+    },
+    {
+      "id": "ai901-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Specific Image Analysis API has a retirement date",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 25, 2028 including cloud and containers.",
+      "recommendation": "Add scoped lifecycle and scenario-based alternatives without all-vision retirement claim.",
+      "disposition": "applied",
+      "source_id": "ab731-vision",
+      "resolution": "Add scoped lifecycle and scenario-based alternatives without all-vision retirement claim."
+    },
+    {
+      "id": "ai901-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Not every analyzer has the same operation and model requirements",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview synchronous Read/Layout; Read/Layout no-model exception; other workflows retain contracts.",
+      "recommendation": "Add GA/preview choice table and operation/model dependency boundary.",
+      "disposition": "applied",
+      "source_id": "ai103-content-understanding-whats-new",
+      "resolution": "Add GA/preview choice table and operation/model dependency boundary."
+    },
+    {
+      "id": "ai901-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Prebuilt model aliases need actual deployment mappings",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Resource defaults or per-request modelDeployments with override precedence.",
+      "recommendation": "Add aliases, supportedModels and billing boundary.",
+      "disposition": "applied",
+      "source_id": "ai901-cu-models",
+      "resolution": "Add aliases, supportedModels and billing boundary."
+    },
+    {
+      "id": "ai901-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Structured fields and confidence are not verified business outcomes",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Opt-in field evidence; normalization; signature region detection.",
+      "recommendation": "Add evidence settings, local invoice validator and conservative interpretation.",
+      "disposition": "applied",
+      "source_id": "ai901-cu-fields",
+      "resolution": "Add evidence settings, local invoice validator and conservative interpretation."
+    },
+    {
+      "id": "ai901-deep-10",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Earlier duration total not reproduced",
+      "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current concept and implementation outlines each expose seven modules but no aggregate runtime.",
+      "recommendation": "Use explicit editorial time budgets and current module counts.",
+      "disposition": "applied",
+      "source_id": "microsoft-ai-concepts-learning-path-ai901",
+      "resolution": "Use explicit editorial time budgets and current module counts."
+    },
+    {
+      "id": "ai901-deep-11",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Empty training widgets do not mean no course exists",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Direct course and two paths are available despite credential widgets.",
+      "recommendation": "Direct learners to verified resources and separate unverified exam timing.",
+      "disposition": "applied",
+      "source_id": "microsoft-ai901-credential",
+      "resolution": "Direct learners to verified resources and separate unverified exam timing."
+    },
+    {
+      "id": "ai901-deep-12",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Feature announcements can become practical beginner exercises",
+      "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-901"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GA/preview extraction and evidence choices map to safe experiments.",
+      "recommendation": "Add original selection worksheet without adopting marketing benchmark guarantees.",
+      "disposition": "applied",
+      "source_id": "ai103-cu-august-blog",
+      "resolution": "Add original selection worksheet without adopting marketing benchmark guarantees."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ai103-cu-august-blog",
+      "decision": "accepted-bounded",
+      "author": "Peyton Fraser; Krishnakumar Muthukrishnan; Joe Filcik",
+      "published_on": "2026-08-12",
+      "notes": "Main update read; original API/version/evidence worksheet; no benchmark guarantee or cloud execution."
+    },
+    {
+      "source_id": "ai901-foundry-blog",
+      "decision": "accepted-bounded",
+      "author": "Nick Brady",
+      "published_on": "2026-09-09",
+      "notes": "Selected hosted-agent/Voice Live sections; original interruption/control event sequence; not full roundup audit."
+    }
+  ],
+  "labs": {
+    "total": 8,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "25 assertions for context budget, group scores, WER, latency, invoice validator negative cases, completion/accuracy and catalog arithmetic; five Python blocks parsed, one local validator executed."
+    ]
+  },
+  "answered_checks": 36,
+  "limitations": [
+    "No cloud resource, SDK, inference, microphone/audio, API, model deployment, agent/tool execution, extraction, purchase or paid lesson exercised. Cloud snippets syntax-checked only.",
+    "Synthetic arithmetic and local validation do not prove deployed controls, actual quality, confidence calibration, latency, price, capacity or audio interaction.",
+    "Only identified sections of long product references/blogs inspected; other retained references fetched without exhaustive reread.",
+    "OReilly and two Udemy direct retrievals blocked; indexed catalog metadata is not lesson quality or coverage evidence. Whizlabs counts and official Learn runtimes unverified. Provider discovery bounded.",
+    "Practice Assessment sign-in shell only; no questions/results inspected. Current exam duration not established from retrieved primary page.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "context_group_wer_latency_invoice_coverage_catalog_assertions": 25,
+    "python_blocks_parsed": 5,
+    "python_blocks_executed": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "oreilly-ai-901-video",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked",
+      "observed_metadata": {
+        "instructor": "Anand Rao Nednur",
+        "published": "April 2026",
+        "total_runtime": "4h4"
+      },
+      "limitation": "Paid lessons, current SDK accuracy, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "udemy-ai-901-christopher-nett",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked",
+      "observed_metadata": {
+        "instructor": "Christopher Nett",
+        "updated": "6/2026",
+        "sections": 12,
+        "lectures": 49,
+        "total_runtime": "6h20"
+      },
+      "limitation": "Paid lessons, current SDK accuracy, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "udemy-ai-901-kuljot-bakshi",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked",
+      "observed_metadata": {
+        "instructor": "Kuljot Singh Bakshi",
+        "updated": "7/2026",
+        "sections": 11,
+        "lectures": 47,
+        "total_runtime": "6h54"
+      },
+      "limitation": "Paid lessons, current SDK accuracy, coverage and difficulty unverified."
+    }
+  ]
+}

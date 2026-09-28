@@ -378,6 +378,8 @@ The review corrected the objective labels to the published wording and expanded 
 
 ## AI-901 coverage record
 
+The September 28 [deep review](research/2026-09-28-ai-901-deep-review.md) maps 29 detailed objectives. Whole guide and 29 unchanged objectives mapped across seven groups. Add six worked examples, eight labs, 36 explained checks, two Microsoft blog exercises and a newly verified Pluralsight course. Correct Foundry clients, per-item errors, voice preview, vision lifecycle, Content Understanding contracts and catalog uncertainty. Twenty-five offline assertions passed; five Python blocks parsed and one local validator executed. No cloud, SDK, model, audio, extraction or paid-content execution; independent human review pending. Current guide citations: 39 registered, 36 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Identify AI concepts and capabilities | Parts 1–2, objective-to-scenario drill, and Labs 1 and 5 |

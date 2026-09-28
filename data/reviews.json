@@ -485,22 +485,29 @@
       "notes": "September 27 full-guide deep review maps all 64 detailed objectives in 14 groups. Unchanged official objective/status snapshots preserved. Current guide has 8 labs and 12 original answered checks. Two attributed blog readings added with official corroboration. Live public access checked; HTTP success is not proof of readable course or assessment content. Same-context AI review; no independent/human audit, tenant execution, paid lessons, or assessment questions inspected. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
     },
     {
-      "id": "ai-901-2026-08-31-source-validation",
+      "id": "ai-901-2026-09-28-source-validation",
       "exam_code": "AI-901",
       "guide_path": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ai-901-official-objectives.txt",
       "blueprint_snapshot_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
       "objective_coverage": [
         {
           "objective_group": "Identify AI concepts and capabilities",
-          "guide_sections": ["Parts 1–2", "Part 8 — Objective-to-scenario drill", "Labs 1 and 5"]
+          "guide_sections": [
+            "Parts 1–2",
+            "Part 8 — Objective-to-scenario drill",
+            "Labs 1 and 5"
+          ]
         },
         {
           "objective_group": "Implement AI solutions by using Microsoft Foundry",
-          "guide_sections": ["Parts 3–8", "Labs 1–6"]
+          "guide_sections": [
+            "Parts 3–8",
+            "Labs 1–6"
+          ]
         }
       ],
       "checks": {
@@ -511,12 +518,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 26,
-        "reachable": 23,
+        "unique_external_links": 39,
+        "reachable": 36,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "Both weighted objective groups and all April 15, 2026 bullets are mapped to concepts, Foundry implementation decisions, an integrated scenario drill, and six hands-on labs. All 26 cited URLs are exact source-catalog entries. The O'Reilly AI-901 course and both Udemy AI-901 course landing pages returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Foundry naming, project/resource surfaces, models, deployments, SDKs, agent types, modalities, analyzer modes, regions, quotas, pricing, and preview status remain explicitly marked VERIFY CURRENT."
+      "notes": "Whole guide and 29 unchanged objectives mapped across seven groups. Add six worked examples, eight labs, 36 explained checks, two Microsoft blog exercises and a newly verified Pluralsight course. Correct Foundry clients, per-item errors, voice preview, vision lifecycle, Content Understanding contracts and catalog uncertainty. Twenty-five offline assertions passed; five Python blocks parsed and one local validator executed. No cloud, SDK, model, audio, extraction or paid-content execution; independent human review pending. See docs/research/2026-09-28-ai-901-deep-review.md"
     },
     {
       "id": "ab-100-2026-08-31-source-validation",
@@ -10652,6 +10659,47 @@
         "missing_or_error": 0
       },
       "notes": "Every official subobjective is mapped to infrastructure, reproducibility, lifecycle, deployment, monitoring, evaluation, optimization and failure evidence. Three scenarios, eight labs and 36 checks cover Azure ML MLOps plus Microsoft Foundry GenAIOps. All 41 URLs are cataloged: 39 reachable and two commercial pages blocked; none broken. No upcoming exam change or retirement was announced."
+    },
+    {
+      "id": "ai-901-2026-08-31-source-validation",
+      "exam_code": "AI-901",
+      "guide_path": "guides/AI-901-microsoft-azure-ai-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-901-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+      "objective_coverage": [
+        {
+          "objective_group": "Identify AI concepts and capabilities",
+          "guide_sections": [
+            "Parts 1–2",
+            "Part 8 — Objective-to-scenario drill",
+            "Labs 1 and 5"
+          ]
+        },
+        {
+          "objective_group": "Implement AI solutions by using Microsoft Foundry",
+          "guide_sections": [
+            "Parts 3–8",
+            "Labs 1–6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 23,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Both weighted objective groups and all April 15, 2026 bullets are mapped to concepts, Foundry implementation decisions, an integrated scenario drill, and six hands-on labs. All 26 cited URLs are exact source-catalog entries. The O'Reilly AI-901 course and both Udemy AI-901 course landing pages returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Foundry naming, project/resource surfaces, models, deployments, SDKs, agent types, modalities, analyzer modes, regions, quotas, pricing, and preview status remain explicitly marked VERIFY CURRENT."
     }
   ]
 }

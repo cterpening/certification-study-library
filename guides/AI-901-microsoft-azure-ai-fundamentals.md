@@ -6,20 +6,24 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # AI-901 Microsoft Azure AI Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). The [official AI-901 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). The [official AI-901 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
 
 **Current baseline:** Skills measured as of April 15, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Official source:** [AI-901 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901)
 
 > **Replacement note:** AI-900 retired on June 30, 2026. AI-901 is the active Azure AI Fundamentals exam and has a substantially more implementation-oriented Foundry scope. Older AI-900 resources can refresh concepts but are not an AI-901 study plan.
+
+The September 28 [deep-review report](../docs/research/2026-09-28-ai-901-deep-review.md) maps all **29 detailed objectives** across seven groups. This guide adds six worked examples, eight labs and 36 explained checks. Cloud examples were syntax-checked only; the invoice validator and synthetic arithmetic were checked locally. No Azure lab or paid lesson was executed or watched.
+
+The [certification page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) lists 13 exam languages and links the sign-in Practice Assessment. Its empty training widgets do not invalidate the directly available course and learning paths below. The retrieved page did not establish a current exam duration; confirm appointment details when scheduling.
 
 ## How to use this guide
 
@@ -99,6 +103,10 @@ Sampling parameters such as temperature can alter output variability but cannot 
 
 > **Related item:** A model version and its deployment configuration form part of the evaluated system. Changing either can change quality, latency, safety behavior, or cost even when the application code stays the same.
 
+### Worked example 1: Fit evidence into a context budget
+
+A fictional text model allows 8,192 tokens in total. Reserve 1,024 for output, 500 for instructions, 1,800 for the user/history and 400 for tool definitions. That leaves **4,468 tokens** for evidence. Four 1,200-token chunks need 4,800 tokens and exceed the budget by 332; three need 3,600 and leave 868 spare. Select relevant evidence and preserve citations before trimming trusted instructions. Count actual serialized requests with the selected model's rules; image/audio and reasoning-token accounting can differ. These numbers are an exercise, not a model specification.
+
 ### Agents
 
 An agent combines a model with instructions, state, knowledge, tools, and an orchestration loop. It observes the request/state, selects a step, invokes a capability, interprets the result, and continues or stops. Agents are useful when the path cannot be completely predetermined; a workflow is safer when steps and rules are known.
@@ -173,6 +181,10 @@ The principles overlap but are not interchangeable. Encryption supports privacy/
 
 ---
 
+### Worked example 2: An average can hide a failing group
+
+Suppose a text classifier is correct on 90 of 100 examples for group A and 5 of 10 for group B. The overall score is **95/110 = 86.36%**, while B is at **50%**. Reporting only the average hides a useful investigation target. Check labeling, language/input coverage and error consequences; collect more representative B examples before interpreting a small sample as a precise population estimate or proof of a cause. Assign an owner and a follow-up evaluation. Fairness, reliability, transparency and accountability all contribute here.
+
 ## 3. Microsoft Foundry foundations
 
 Microsoft Foundry supplies a platform for discovering models, creating projects, deploying models, building applications and agents, connecting tools/data, evaluating behavior, and operating AI workloads. Product naming and SDKs are evolving; use the current [Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/) immediately before the exam.
@@ -241,18 +253,32 @@ Separate prompt roles conceptually:
 
 A prompt should say what to do when evidence is missing. “Always answer” encourages fabrication; an abstention or clarification path is often the correct behavior. Few-shot examples can demonstrate the output, but poor or contradictory examples become part of the problem.
 
-#### Minimal interaction pattern
+#### A lightweight chat client
+
+The [Python Projects SDK reference](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python) documents the project-client pattern below. Use a compatible 2.x `azure-ai-projects` package and `azure-identity`, an existing Foundry project/deployment, and an authorized Entra identity. Record the exact resolved package versions in your lab. The reference currently describes 2.7.0 and requires at least 2.3.0 for its main examples; stable packages can still expose preview features. Do not mix classic 1.x samples with this interface.
+
+Set `FOUNDRY_PROJECT_ENDPOINT` to the project's `https://<resource>.services.ai.azure.com/api/projects/<project>` URL and `FOUNDRY_MODEL_NAME` to the **deployment name**. A local CLI sign-in can supply a development identity; production should use an appropriate workload identity and role. `DefaultAzureCredential` obtains a token; it does not grant access.
 
 ```python
+import os
+from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
 
-credential = DefaultAzureCredential()
-# Create the current documented Foundry/project or model client here.
-# Supply a deployment name, bounded request, timeout, and correlation ID.
-# Validate the response before using it.
+with DefaultAzureCredential() as credential:
+    with AIProjectClient(
+        endpoint=os.environ["FOUNDRY_PROJECT_ENDPOINT"], credential=credential
+    ) as project:
+        with project.get_openai_client() as client:
+            response = client.responses.create(
+                model=os.environ["FOUNDRY_MODEL_NAME"],
+                input="Explain the difference between a transcript and a summary.",
+            )
+            if not response.output_text.strip():
+                raise ValueError("No text answer; inspect the response outcome")
+            print(response.output_text)
 ```
 
-The exact client package and method names are **VERIFY CURRENT** because Foundry SDKs are changing. The durable pattern is credential → client → deployment → structured request → validated response → telemetry.
+This is a minimal single-turn public-prompt example, not a production error handler. Add configured request/output budgets, timeouts, supported response-status checks, bounded retries and safe correlation telemetry for your model/client version. Nonempty output is not evidence of correctness. [Foundry Responses guidance](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api) recommends Agent Framework for orchestration; the SDK example here isolates the exam's lightweight client objective. Project and resource endpoints have different capability scopes.
 
 ---
 
@@ -302,6 +328,32 @@ user request
 
 If a turn fails, identify whether the wrong context arrived, the model selected the wrong tool, arguments were invalid, authorization failed, the tool timed out, the result was misinterpreted, or the loop did not terminate. “The agent failed” is not yet a diagnosis.
 
+#### Invoke an agent created in the portal
+
+Create and test a **prompt agent** in the portal, using an eligible model deployment and a narrow instruction. Start without tools, then add a read-only tool and test its authorization and failure paths. Record its name, version and configuration. In a separate client script, reuse that resource instead of creating a new version on every request. This follows the [prompt-agent quickstart](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent).
+
+```python
+import os
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+
+with DefaultAzureCredential() as credential:
+    with AIProjectClient(
+        endpoint=os.environ["FOUNDRY_PROJECT_ENDPOINT"], credential=credential
+    ) as project:
+        with project.get_openai_client(
+            agent_name=os.environ["FOUNDRY_AGENT_NAME"]
+        ) as client:
+            conversation = client.conversations.create()
+            response = client.responses.create(
+                conversation=conversation.id,
+                input="Explain when this assistant should ask for human review.",
+            )
+            print(response.output_text)
+```
+
+This selects an agent by name; it does not demonstrate version pinning or tool execution. Inspect the actual configuration/version served, validate the response, and manage conversation retention/cleanup. A conversation ID is sensitive state, not authorization. A persisted prompt agent, a hosted runtime and an application-owned Responses loop have different deployment/state responsibilities.
+
 ### Evaluation
 
 Create normal, edge, unsafe, adversarial, and unauthorized cases. Evaluate task completion, relevance, groundedness, safety, tool selection, argument accuracy, latency, and cost. An average can hide a critical failure slice; define release thresholds for high-risk cases separately.
@@ -337,6 +389,23 @@ Define allowed labels or a JSON schema. Test negation, ambiguity, long input, mu
 
 Use the current [Azure Language documentation](https://learn.microsoft.com/en-us/azure/ai-services/language-service/) for specialized capability names and supported behavior. **VERIFY CURRENT:** languages, SDKs, models, limits, regions, and pricing.
 
+#### Keep per-document failures visible
+
+The [Language SDK quickstart](https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart) calls `TextAnalyticsClient.analyze_sentiment`. Its Python example uses `azure-ai-textanalytics`; a Foundry chat client does not replace that client's endpoint/authentication contract. With an already configured Language client:
+
+```python
+def sentiment_rows(client, documents):
+    rows = []
+    for result in client.analyze_sentiment(documents):
+        if result.is_error:
+            rows.append({"id": result.id, "status": "error", "code": result.error.code})
+        else:
+            rows.append({"id": result.id, "status": "ok", "sentiment": result.sentiment})
+    return rows
+```
+
+Also handle request-level exceptions at the caller. Test mixed sentiment, negation, unsupported inputs and a failed item in an otherwise successful batch. Silently dropping errors can inflate apparent success. Sentiment labels describe expressed attitude; they do not establish factual accuracy or authorize an action.
+
 ### Speech workloads
 
 Speech to text transcribes audio. Text to speech synthesizes audio. Speech translation combines recognition and translation. Voice applications also need microphone/audio format, language, latency, partial results, turn detection, interruption, error recovery, consent, and transcript protection.
@@ -351,6 +420,34 @@ microphone/audio → endpoint/turn detection → speech recognition
 ```
 
 Good transcript accuracy does not guarantee a responsive voice experience. Budget latency per stage, handle silence and interruptions, and do not speak an unconfirmed side effect as completed.
+
+#### Recognition results and direct spoken prompts
+
+The [Speech quickstart](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text) uses the separate `azure-cognitiveservices-speech` package. With a configured recognizer and permitted short audio, distinguish recognized speech, no match and cancellation:
+
+```python
+import azure.cognitiveservices.speech as speechsdk
+
+def transcribe_short(recognizer):
+    result = recognizer.recognize_once_async().get()
+    if result.reason == speechsdk.ResultReason.RecognizedSpeech:
+        return {"status": "ok", "text": result.text}
+    if result.reason == speechsdk.ResultReason.NoMatch:
+        return {"status": "no-match", "text": None}
+    return {"status": "error", "text": None}
+```
+
+Record a sanitized cancellation diagnostic separately; do not treat no-match/error as an empty successful transcript. The quickstart's one-shot operation ends on silence or after up to 30 seconds. Choose continuous or another supported transcription path for longer input. This fragment does not configure audio, credentials, cancellation or synthesis.
+
+A deployed multimodal voice model can accept spoken prompts without your application chaining separate STT and TTS services. Confirm its input/output audio formats and model support, test silence/interruptions and protect transcripts. The [voice prompt-agent quickstart](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent) is **preview**, requires project/region access and uses a different voice SDK surface; its current examples require Projects 2.7.0 or later. A hosted Voice Live integration's GA announcement is not proof that this separate feature is GA.
+
+### Worked example 3: Measure speech errors and meaning
+
+A 20-word reference transcript has two substitutions, one deletion and one insertion. Word error rate is **(2 + 1 + 1) / 20 = 20%**. Also score critical names, amounts and negation: deleting “not” can reverse the request even when most words are correct. Compare equivalent audio conditions and languages; a low overall WER does not prove intent preservation.
+
+### Worked example 4: Budget voice response time
+
+For a fictional sequential pipeline, turn detection takes 300 ms, recognition 400 ms, model generation 700 ms, synthesis 200 ms and transport 100 ms: **1,700 ms** in total. A streaming pipeline can overlap stages, so measure the actual trace and time to first audible response. Do not add independent p95 measurements and label their sum the end-to-end p95. When a user interrupts, stop queued playback and reconcile any already-started action; interrupted speech is not a canceled backend operation.
 
 ### Translation
 
@@ -377,6 +474,10 @@ Generation workflows require prompt/reference rights, safety filtering, output p
 For visual understanding, preserve the image and question used for evaluation. A broad caption, concise alt text, field extraction, and answer to a visual question have different success criteria. For generation, record prompt/reference identifiers, configuration, safety result, and output when provenance or review matters.
 
 Use current product guidance for [vision-enabled models](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision) and [image generation/editing](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image). **VERIFY CURRENT:** eligible models, media limits, supported generation/edit operations, regions, safety controls, and prices.
+
+For a lightweight vision app, validate the permitted image and attach it using the selected SDK/API's image-input structure alongside a focused question. Compare the result with a known answer and preserve the input identifier. A generation model needs a separate supported generation/edit operation: receiving images does not imply producing them. Decode/store the documented output type and review it before display. Lab 5 requires both paths and a deliberately unsupported input.
+
+**Lifecycle check:** the [Image Analysis migration notice](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/migration-options) retires the Image Analysis API on **September 25, 2028**, including supported cloud and container deployments. This is not a retirement of all vision capabilities. Choose OCR/document extraction, multimodal reasoning or structured image analysis by requirement and retest output contracts; alternatives are not automatic drop-in replacements.
 
 Accessible alt text describes the information needed for the page's purpose. Decorative images may require empty alt text; complex diagrams may need a concise label and a long description. Generated descriptions require contextual human review.
 
@@ -417,11 +518,49 @@ The current [Content Understanding quickstart](https://learn.microsoft.com/en-us
 
 1. upload or reference a permitted public sample;
 2. invoke a prebuilt or custom analyzer;
-3. poll the asynchronous operation using bounded intervals/timeouts;
+3. follow the chosen API contract: poll an asynchronous operation with a deadline, or consume a supported synchronous response;
 4. validate returned fields and confidence/evidence;
 5. show the source region to a reviewer;
 6. handle unsupported/corrupt input and partial results;
 7. record safe telemetry without copying sensitive content unnecessarily.
+
+### Choose the version, analyzer and model configuration
+
+| Contract | Learner decision |
+|---|---|
+| GA `2025-11-01` | Start with the documented asynchronous analysis flow; accepted work is not a completed result |
+| Preview `2026-06-01-preview` | Synchronous **Read/Layout** returns eligible small-document/image results directly; it does not make every analyzer synchronous |
+| Preview agentic document analysis | Multistep reasoning with one input file per request in the initial preview; continue validating calculations and evidence |
+
+Check the [release history](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) for feature-specific support. Read/Layout does not require an LLM deployment. For model-dependent analyzers, inspect `supportedModels` and map supported names/aliases to actual deployments. [Model configuration guidance](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments) supports resource defaults or per-request `modelDeployments`; request mappings override defaults. Prebuilt aliases such as `prebuilt-analyzer-completion` are not deployment names. Account for both model token charges and Content Understanding usage.
+
+For document fields, [confidence and grounding](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview) are opt-in via analyzer `estimateFieldSourceAndConfidence` or field `estimateSourceAndConfidence`. They apply to supported extract, classify and generate fields. Supported typed values are normalized automatically; the API does not provide a configurable raw-versus-normalized pair. Preserve source evidence and verify critical values independently. Signature detection locates a signature region; it does not establish signer identity or authenticity.
+
+### Worked example 5: Valid JSON can still contain the wrong total
+
+An invoice has subtotal 100.00 and tax 8.00. An extracted total of 100.00 is incorrect even if its confidence is 0.99 and the JSON schema is valid. The following **original local validator** checks a deliberately narrow, single-currency invoice contract: exactly three nonnegative money strings, at most two decimal places, total = subtotal + tax. An application adapter must first map service fields into this contract. Discounts, currencies, credits and rounding policies need explicit additional rules.
+
+```python
+import re
+from decimal import Decimal
+
+def invoice_is_consistent(fields):
+    keys = {"subtotal", "tax", "total"}
+    if not isinstance(fields, dict) or set(fields) != keys:
+        return False
+    if any(not isinstance(v, str) or
+           re.fullmatch(r"[0-9]+(?:\.[0-9]{1,2})?", v) is None or len(v) > 12
+           for v in fields.values()):
+        return False
+    values = {k: Decimal(v) for k, v in fields.items()}
+    return values["subtotal"] + values["tax"] == values["total"]
+```
+
+Route a false result to review; never repair it by inventing a value. A true result proves only this arithmetic contract, not that the figures came from the right invoice or that payment is authorized. Bounding string length keeps this example inside Decimal's default precision.
+
+### Worked example 6: Completion, accuracy and coverage differ
+
+Of 1,000 accepted analyses, 950 finish successfully, 30 fail and 20 remain in progress at the deadline. Completion coverage is **95%**, not 100%. Reviewers verify 940 of the 950 completed outputs as correct: that is **98.95% among completed outputs**, but only **94% of all planned requests** have a verified correct output. Keep failures and unfinished work visible. Neither HTTP acceptance nor a successful operation status certifies field correctness.
 
 > **Related item:** Human review should be risk-based. Low confidence is one trigger, but high-confidence extraction of a high-impact value may still require verification.
 
@@ -452,7 +591,16 @@ Use this exam-question sequence:
 
 ---
 
+### Two useful Microsoft blog exercises
+
+- [Content Understanding August updates](https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/) — Peyton Fraser, Krishnakumar Muthukrishnan and Joe Filcik, August 12, 2026. Build a one-page choice record for GA asynchronous extraction versus preview synchronous Read/Layout. Add a sample invoice's source, validation rule, review decision and latency measurement. Confirm the feature contract in current documentation. Published performance percentages are not guarantees for your documents.
+- [Foundry July/August roundup](https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026/) — Nick Brady, September 9, 2026. Use its hosted-agent and Voice Live sections to draw the audio-event sequence. Mark where interrupted playback stops, where tool approval occurs and how the app distinguishes requested, started and completed work. Check preview status for each actual feature; the article is broader than this exam.
+
+These are original exercises informed by selected announcement sections. They are adjacent implementation practice, not new exam objectives or evidence that linked samples have been executed.
+
 ## 9. Hands-on labs
+
+Use only permitted non-sensitive fixtures. For every lab, keep configuration/version, input ID, expected outcome, observed result, failure diagnosis and cleanup evidence. A written plan or syntax check is not cloud execution. Record failed and skipped cases. Cloud resources and model calls can incur charges.
 
 ### Lab 1: Model comparison
 
@@ -472,26 +620,133 @@ Transcribe a short public-domain audio sample, summarize it, translate a passage
 
 ### Lab 5: Visual accessibility
 
-Use public images to create short alt text and detailed descriptions. Include an infographic, decorative image, and image containing misleading embedded instructions. Review against page purpose.
+Use public images to create short alt text and detailed descriptions. Include an infographic, decorative image, and image containing misleading embedded instructions. Review against page purpose. Build a lightweight image-input client and a separate image-generation call for a new illustration; record supported format, model, output type, safety result and an unsupported-input failure. Do not infer accuracy from a plausible caption.
 
 ### Lab 6: Content extraction
 
 Analyze public forms/documents/media with Content Understanding. Validate structured fields, inspect page/region evidence, introduce a low-quality scan, and route uncertain/high-impact values to review.
 
+### Lab 7: Validate a batch offline
+
+Run the invoice validator with correct, mismatched, missing, malformed, negative and boolean inputs. Reproduce examples 1–6 with your own numbers. Build a batch ledger that retains failed/incomplete outcomes and displays both completion coverage and verified correctness. Explain why passing arithmetic is insufficient for invoice approval.
+
+### Lab 8: Trace a voice interruption
+
+Start with a paper event log: speech begins, turn ends, model responds, playback starts, user interrupts, a tool completes. Mark what must stop and what still needs reconciliation. Then, if your environment supports the chosen voice feature, reproduce with a harmless read-only tool; record first-audio/end-to-end latency and no-match/canceled cases. Compare the direct multimodal path with a separate Speech pipeline and label any preview dependencies.
+
 ---
 
 ## 10. Knowledge checks and distinctions
 
-1. A generated answer is fluent but unsupported. Which evaluation property failed?
-2. A model selects a refund tool correctly but exceeds the user's limit. Which control cannot be delegated to the model?
-3. A smaller model meets the task threshold with lower cost and latency. What reason remains to choose the larger model?
-4. OCR text is accurate but an invoice total field is wrong. Which later stage should be inspected?
-5. An image contains instructions telling the agent to reveal data. Why should those words remain untrusted?
-6. A voice agent produces good text but feels unusable. Which real-time interaction requirements might be missing?
-7. A model card has the best benchmark score, but another model performs better on the product's evaluation set. Which evidence should drive deployment?
-8. A form's OCR text is correct, but the `Total` field points to a subtotal. Which extraction layer failed?
-9. A user can reach an endpoint but receives an authorization error. Why is that not proof of a networking problem?
-10. An agent asks the user to confirm a refund, but its API accepts amounts over policy. Which layer must enforce the invariant?
+These original practice scenarios are not recalled exam questions. Explain your answer before reading the rationale.
+
+1. **A generated answer is fluent but unsupported. What failed?**
+   Groundedness: its claims lack evidence. Fluency and harm filtering do not verify facts.
+
+2. **A correctly selected refund tool receives an amount above policy. Where must it be stopped?**
+   The application or target API must enforce the authorized amount independently of model intent.
+
+3. **A smaller model meets quality, safety, latency and cost requirements. Must you use the larger model?**
+   No. Change only for a demonstrated unmet requirement; a larger model is not inherently a better fit.
+
+4. **OCR is accurate but an invoice total maps to the subtotal. What should you inspect?**
+   Field interpretation and source association, then application validation. Correct characters do not establish correct field meaning.
+
+5. **An image asks the agent to reveal private data. How should the app treat that text?**
+   As untrusted image content. It cannot override trusted instructions or source/tool permissions.
+
+6. **Good voice response text still feels unusable. What might be wrong?**
+   Turn detection, first-audio latency, audio format, interruptions or playback handling. Text quality alone is insufficient.
+
+7. **A model-card benchmark winner loses on representative product cases. Which evidence guides selection?**
+   The product evaluation and constraints, after checking its quality and coverage. Generic benchmarks are screening evidence.
+
+8. **What distinguishes extraction from OCR?**
+   OCR recognizes text; extraction maps source content into defined fields or other structured outputs.
+
+9. **An endpoint is reachable but access is denied. What does that show?**
+   Network reachability is separate from successful identity authentication and authorization at the needed scope.
+
+10. **A refund confirmation screen exists. Can the backend omit policy checks?**
+   No. The backend must authorize and validate every operation; a UI can be bypassed or stale.
+
+11. **Does adding retrieved evidence retrain the model?**
+   No. RAG supplies request context; fine-tuning changes learned weights.
+
+12. **What goes in FOUNDRY_MODEL_NAME in the example?**
+   The deployed model target name in the project, not an arbitrary catalog marketing name.
+
+13. **Does DefaultAzureCredential assign an Azure role?**
+   No. It discovers credentials and obtains tokens; permissions must already be assigned.
+
+14. **Why should a client avoid creating an agent version every turn?**
+   Creation is configuration work. Invoking an existing agent avoids unintended version changes and separates deployment from conversation.
+
+15. **Does a conversation ID grant access or guarantee a pinned agent version?**
+   Neither. Enforce identity and verify the actual agent/version configuration separately.
+
+16. **What fits in example 1: three or four 1,200-token chunks?**
+   Three fit within 4,468 remaining tokens; four exceed the budget by 332.
+
+17. **Does the overall 86.36% score in example 2 describe both groups well?**
+   No. Group B scores 50% on only ten examples. Investigate errors and improve representative sample coverage.
+
+18. **Which principle calls for screen-reader and alternative-input testing?**
+   Inclusiveness. Also preserve reliability and privacy across these interaction modes.
+
+19. **Which principle requires identifying a responsible incident owner?**
+   Accountability. A disclosure alone does not assign responsibility.
+
+20. **Can positive sentiment prove that a claim is true or safe?**
+   No. Sentiment measures expressed attitude, not truth, intent or policy compliance.
+
+21. **Why retain text-analysis errors in a batch report?**
+   Dropping failed documents changes the denominator and hides coverage gaps.
+
+22. **What is WER for two substitutions, one deletion and one insertion over 20 reference words?**
+   20%. Also evaluate critical meaning, because different word errors have different consequences.
+
+23. **Can the one-shot Speech example transcribe an hour-long meeting as written?**
+   No. It stops at silence or up to 30 seconds; choose a documented longer-audio path.
+
+24. **Is a no-match result an empty successful transcript?**
+   No. Preserve its distinct outcome so the app can retry appropriately or ask for another input.
+
+25. **Why is 1,700 ms in example 4 not a guaranteed streaming latency?**
+   It sums a fictional sequential path. Streaming overlaps work; measure actual end-to-end traces.
+
+26. **Does stopping spoken playback undo a completed tool call?**
+   No. Reconcile backend state and use approval/idempotency controls appropriate to the action.
+
+27. **Are all voice prompt agents GA because a related Voice Live integration is GA?**
+   No. Feature-specific documentation still marks voice prompt agents preview.
+
+28. **Can every image-input model generate images?**
+   No. Check separate input/output modalities and the supported generation operation.
+
+29. **Does the Image Analysis retirement end all Azure vision services in 2026?**
+   No. Its specific API retirement date is September 25, 2028; scope alternatives separately.
+
+30. **Does synchronous Content Understanding eliminate polling for all analyzers?**
+   No. Preview synchronous support applies to eligible Read/Layout operations; other flows retain their documented operation contract.
+
+31. **Must every Content Understanding analyzer have a model deployment?**
+   No. Read/Layout is an exception. Model-dependent analyzers need supported deployment mappings.
+
+32. **Are a prebuilt completion alias and an actual deployment name interchangeable?**
+   No. Map the supported alias to a real deployment; a per-request mapping can override resource defaults.
+
+33. **Does confidence 0.99 override an invoice arithmetic failure?**
+   No. Review source evidence and the failed rule; confidence is not proof of correctness.
+
+34. **Can an extracted signature prove who signed?**
+   No. Locating a signature region does not authenticate identity or legal validity.
+
+35. **How do you enable supported document field confidence/grounding?**
+   Use the documented analyzer-wide or per-field opt-in settings, then calibrate review policy on representative examples.
+
+36. **Why report both 98.95% and 94% in example 6?**
+   The first is correctness among completed outputs; the second counts verified correct outputs over all planned requests. Missing work remains visible.
 
 | Contrast | Remember |
 |---|---|
@@ -549,13 +804,14 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [Microsoft Learn — AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and implementation sequence |
 | [Microsoft — AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
 | [Microsoft Learn AI-901 certification material](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) | Free | About 10–14 hours | Official scope anchor; complete current Foundry exercises rather than relying on AI-900 modules |
-| [Microsoft Learn — AI concepts](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) | Free | 3 hours 51 minutes | Current seven-module concepts path across the workloads in the first domain |
-| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | 5 hours 37 minutes | Current seven-module implementation path across Foundry, apps/agents, text, speech, vision, extraction, and retrieval |
-| [O'Reilly — Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/) | Subscription | 4 hours 4 minutes | Anand Rao Nednur course published April 2026 and aligned to the replacement exam |
-| [Udemy — AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/) | Purchase or subscription | About 6 hours 20 minutes | Course shown as updated June 2026; inspect demos and current SDK usage |
-| [Udemy — AI-901 exam prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/) | Purchase or subscription | About 6 hours 54 minutes | Alternative shown as updated July 2026; inspect previews and hands-on depth |
-| [Whizlabs — AI-901 instruction and practice](https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/) | Paid course or subscription | About 3–6 hours for 3 quizzes and review; video total not published | Public listing shows 63 videos and three quizzes; use the assessment after learning and verify explanations against the current blueprint |
+| [Microsoft Learn — AI concepts](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) | Free | Budget 4–6 hours including notes (editorial estimate) | Seven modules; current total runtime not exposed. Concepts path across the workloads in the first domain |
+| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and retrieval |
+| [O'Reilly — Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/) | Subscription | 4 hours 4 minutes | Anand Rao Nednur, April 2026; indexed public outline only, direct access blocked. Verify current SDK demos before purchase |
+| [Udemy — AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/) | Purchase or subscription | About 6 hours 20 minutes | Christopher Nett; indexed outline: June 2026, 12 sections/49 lectures. Direct access blocked; lessons not watched |
+| [Udemy — AI-901 exam prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/) | Purchase or subscription | About 6 hours 54 minutes | Kuljot Singh Bakshi; indexed outline: July 2026, 11 sections/47 lectures. Direct access blocked; lessons not watched |
+| [Whizlabs — AI-901 instruction and practice](https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/) | Paid course or subscription | Duration and current counts unverified | Direct and indexed pages expose only a title shell; earlier 63-video/three-quiz counts were not reproduced. Verify the current bundle before purchase |
+| [Pluralsight — Implement AI Solutions by Using Microsoft Foundry](https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901) | Subscription | 1 hour 59 minutes | Clint Bonnett, September 16, 2026. Public outline targets the implementation domain; pair with concepts study. Paid lessons not watched |
 | [Microsoft AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Select 2–5 hours by gap | Official product demonstrations; choose current Foundry, agents, speech, vision, and extraction episodes |
 | [John Savill — AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ) | Free | About 3 hours | Optional legacy concept refresher only; AI-900 retired and this does not cover AI-901 implementation scope |
 
-No exact Pluralsight path or standalone MeasureUp AI-901 practice test was verified on August 31, 2026. The free Microsoft assessment above and the Whizlabs mixed bundle provide two different readiness checks. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
+A matching Pluralsight implementation course is now verified; no exact standalone MeasureUp AI-901 listing was found in the bounded September 28 search. This is not proof that none exists. The Microsoft assessment remains sign-in gated, so its questions and coverage were not inspected. Paid resources were evaluated only from public metadata, not lesson quality or question originality. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).

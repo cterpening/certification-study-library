@@ -3,6 +3,160 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ai901-sdk",
+      "title": "Foundry Python Projects client reference",
+      "url": "https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme?view=azure-python",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected Python 2.7.0 introduction, stable/preview boundary, Entra/project prerequisites, context-manager setup and Responses example read. Other operation samples not audited or run. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-pluralsight",
+      "title": "Implement AI solutions using Foundry AI-901",
+      "url": "https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901",
+      "publisher": "Pluralsight",
+      "authority_class": 4,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Public metadata and six-module implementation outline read: Clint Bonnett, September 16, 2026, 1h59. Domain-two course, not full-path coverage; no paid lesson watched. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-responses",
+      "title": "Foundry Responses API quickstart",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/responses-api",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected endpoint capabilities, recommended framework, Python setup/application loop and SDK alternative read. Code not run; full .NET examples not audited. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-prompt-agent",
+      "title": "Foundry prompt agent creation and chat",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected prerequisites and Python create/chat examples read: 2.3+; named-agent-bound client and conversation. Other-language samples and full cleanup procedures not audited/run. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-language-client",
+      "title": "Azure Language sentiment SDK quickstart",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/sentiment-opinion-mining/quickstart",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected Python package/setup and sentiment/opinion example read. Guide preserves per-document errors; other-language samples not audited; no SDK installed. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-speech-client",
+      "title": "Azure Speech recognition quickstart",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Python microphone/setup/result/remarks section read: one-shot up to 30 seconds or silence, distinct no-match/cancel outcomes. No microphone access, SDK install or audio processing. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-voice-agent",
+      "title": "Voice-based prompt agent quickstart",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/prompt-voice-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected preview, project/region/role and Python 2.7 prerequisites read. Full telephony/voice scripts not audited/run. Preview voice prompt agents separated from GA hosted Voice Live integration. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-cu-models",
+      "title": "Content Understanding models and deployments",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/models-deployments",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Complete main model/deployment configuration article read, including aliases, supportedModels, resource defaults, per-request overrides, billing and guardrail notes. No deployments or API calls. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-cu-analyzers",
+      "title": "Content Understanding analyzer reference",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected introduction, analyzer types, schema/configuration and preview notes read; full long examples not audited or run. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-cu-fields",
+      "title": "Content Understanding document fields and grounding",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Complete main document article read: confidence opt-in, typed normalization, extraction methods, preview agentic scope and signature detection. No extraction performed. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai901-foundry-blog",
+      "title": "Microsoft Foundry July and August 2026 operations roundup",
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected intro/TLDR, hosted-agent and Voice Live sections read, including interruption/playback. Full roundup/remaining linked samples not audited. Original event-sequence exercise. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ai300-sdk-v1",
       "title": "Azure ML SDK v1 lifecycle",
       "url": "https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1",
@@ -572,9 +726,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-731"
+        "AB-731",
+        "AI-901"
       ],
-      "notes": "September 28 AB-731 deep review: Retirement scope, planning milestone and alternative scenarios read. September 2026 planning differs from September 2028 shutdown; no endpoint migration. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AB-731 deep review: Retirement scope, planning milestone and alternative scenarios read. September 2026 planning differs from September 2028 shutdown; no endpoint migration. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: Retirement scope/date and scenario alternatives read: Image Analysis API September 25, 2028, including cloud/containers; not all vision services. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab731-govern",
@@ -7384,14 +7539,15 @@
       "title": "Azure Content Understanding updates August 2026",
       "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
       "publisher": "Microsoft",
-      "authority_class": 5,
-      "source_type": "expert-resource",
+      "authority_class": 2,
+      "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-103"
+        "AI-103",
+        "AI-901"
       ],
-      "notes": "September 27 GH-300/AI-103 deep review: Peyton Fraser, Krishnakumar Muthukrishnan and Joe Filcik; published August 12, 2026; no separate update date visible. Strength: separates GA refresh and preview opportunities. Limits: internal benchmark figures are not workload guarantees; use Content Understanding release notes and agentic-mode docs for version constraints. Original invoice-validation example added. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+      "notes": "September 27 GH-300/AI-103 deep review: Peyton Fraser, Krishnakumar Muthukrishnan and Joe Filcik; published August 12, 2026; no separate update date visible. Strength: separates GA refresh and preview opportunities. Limits: internal benchmark figures are not workload guarantees; use Content Understanding release notes and agentic-mode docs for version constraints. Original invoice-validation example added. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md September 28 AI-901 deep review: Main August 12 announcement read; GA/preview scopes and original decision worksheet accepted. Benchmarks not generalized; linked preview/toolkit examples not executed. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab100-blog-mcp-connectors",
@@ -8448,7 +8604,7 @@
         "AI-901",
         "AI-300"
       ],
-      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-agent-service",
@@ -8458,8 +8614,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AI-103", "AB-100", "AI-901"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AB-100",
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Selected current agent-type/hosting overview read; prompt, voice-prompt and hosted resources distinguished from application-owned Responses loop. Not a full service/tool catalog audit. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-ai-search-docs",
@@ -8480,8 +8641,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AI-103", "AI-901"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "azure-content-understanding-docs",
@@ -8687,9 +8852,12 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "Official product demonstrations and discussions; select episodes by objective rather than treating the show as one exam course."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "Official product demonstrations and discussions; select episodes by objective rather than treating the show as one exam course. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-ai-900-study-cram-v2",
@@ -8699,9 +8867,12 @@
       "authority_class": 5,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "Optional AI fundamentals refresh; AI-900 retired June 30, 2026, and the video does not cover the current AI-901 or AI-103 Foundry implementation scope."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "Optional AI fundamentals refresh; AI-900 retired June 30, 2026, and the video does not cover the current AI-901 or AI-103 Foundry implementation scope. September 28 AI-901 deep review: 212-character video shell only. Retained explicitly as legacy AI-900 concept refresher; playback/runtime not reverified. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-generative-ai-foundations",
@@ -8778,8 +8949,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: All 29 detailed objectives and lifecycle mapped across seven groups. April 15 skills baseline, no future announcement; objective/status snapshots unchanged. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-az-900-course",
@@ -8849,9 +9023,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Official one-day course for the credential that replaced AI-900."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Official one-day course for the credential that replaced AI-900. September 28 AI-901 deep review: Main metadata and overview read: one day, 13 languages, useful Python/cloud prerequisites; syllabus loading, no runtime established. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-cloud-product-docs",
@@ -8861,9 +9037,16 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "DP-900", "PL-900", "SC-900", "AB-900", "AI-901"],
-      "notes": "Entry point to the current product references cited directly within each guide."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "DP-900",
+        "PL-900",
+        "SC-900",
+        "AB-900",
+        "AI-901"
+      ],
+      "notes": "Entry point to the current product references cited directly within each guide. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-az-900",
@@ -9007,9 +9190,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Four-hour, four-minute video published April 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Four-hour, four-minute video published April 2026. September 28 AI-901 deep review: Direct blocked; indexed public course/lesson outline read: Anand Rao Nednur, April 2026, 4h4. Current SDK accuracy and paid lessons unverified. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-az-900-nikolai-schuler",
@@ -9079,9 +9264,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Six hours, 20 minutes; shown as updated June 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Six hours, 20 minutes; shown as updated June 2026. September 28 AI-901 deep review: Direct blocked; indexed public outline read: Christopher Nett, June 2026, 12 sections, 49 lectures, 6h20. Paid content/coverage unverified. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-ai-901-kuljot-bakshi",
@@ -9091,9 +9278,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Six hours, 54 minutes; shown as updated July 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Six hours, 54 minutes; shown as updated July 2026. September 28 AI-901 deep review: Direct blocked; indexed public outline read: Kuljot Singh Bakshi, July 2026, 11 sections, 47 lectures, 6h54. Paid content/coverage unverified. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "linkedin-learning-az-900-microsoft-press",
@@ -9213,9 +9402,18 @@
       "authority_class": 5,
       "source_type": "expert-resource",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900", "DP-900", "PL-900", "SC-900", "AB-900", "AI-901", "AI-103", "SC-300"],
-      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-900",
+        "DP-900",
+        "PL-900",
+        "SC-900",
+        "AB-900",
+        "AI-901",
+        "AI-103",
+        "SC-300"
+      ],
+      "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "john-savill-az-900-course-materials",
@@ -9262,7 +9460,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course. September 27 MD-102 deep review: Channel shell only; no video transcript from the channel retrieved. Specific selected article transcript separately reviewed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; underlying videos not inspected. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 182-character channel shell; no videos inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor",
@@ -9293,7 +9491,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: 180-character shell; discovery reference only. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -10551,9 +10749,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Public listing shows 63 videos and three quizzes but no total video runtime. Allow about three to six hours for the quizzes and explanation review, plus the unpublished video time."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Public listing shows 63 videos and three quizzes but no total video runtime. Allow about three to six hours for the quizzes and explanation review, plus the unpublished video time. September 28 AI-901 deep review: Direct 57-character title shell and indexed title only; prior 63-video/three-quiz counts not reproduced. No current duration/content quality verified. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-practice-assessment-catalog",
@@ -10563,9 +10763,25 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "GH-100", "GH-500", "AI-103", "AB-100", "AZ-900", "DP-900", "PL-900", "SC-900", "AB-900", "AI-901", "AZ-801", "AZ-802"],
-      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "GH-900",
+        "GH-200",
+        "GH-300",
+        "GH-100",
+        "GH-500",
+        "AI-103",
+        "AB-100",
+        "AZ-900",
+        "DP-900",
+        "PL-900",
+        "SC-900",
+        "AB-900",
+        "AI-901",
+        "AZ-801",
+        "AZ-802"
+      ],
+      "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-gh-900-practice-assessment",
@@ -10719,9 +10935,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Free official readiness assessment launched through AI Skills Navigator; sign-in is required. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Free official readiness assessment launched through AI Skills Navigator; sign-in is required. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority. September 28 AI-901 deep review: Only 19-character public/sign-in shell; assessment questions and results not inspected. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-certification-practice-tests",
@@ -12526,7 +12744,7 @@
         "AI-300",
         "AB-100"
       ],
-      "notes": "Catalog models, modalities, providers, availability, and deployment choices are volatile. September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+      "notes": "Catalog models, modalities, providers, availability, and deployment choices are volatile. September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-model-benchmarks-ai103",
@@ -12551,9 +12769,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "Model availability, deployment types, quota, and regions are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "Model availability, deployment types, quota, and regions are volatile. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-rbac-ai103",
@@ -12683,9 +12904,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "Analyzer modes, supported modalities, models, regions, and availability are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "Analyzer modes, supported modalities, models, regions, and availability are volatile. September 28 AI-901 deep review: Selected overview and workload sections read; no universal accuracy guarantees adopted. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-content-understanding-quickstart-ai103",
@@ -12695,9 +12919,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "API versions, analyzer identifiers, supported inputs, and polling behavior are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "API versions, analyzer identifiers, supported inputs, and polling behavior are volatile. September 28 AI-901 deep review: Selected setup, deployment defaults, GA/preview API, operation/poll and diagnostic examples inspected; very long request/result samples not fully audited or run. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-speech-documentation-ai103",
@@ -12707,9 +12934,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "Languages, voices, SDKs, custom models, regions, and feature support are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "Languages, voices, SDKs, custom models, regions, and feature support are volatile. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-translator-overview-ai103",
@@ -12767,9 +12997,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "Eligible models, edit operations, authentication, regions, and APIs are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "Eligible models, edit operations, authentication, regions, and APIs are volatile. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-video-generation-ai103",
@@ -12791,9 +13024,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901"],
-      "notes": "Eligible models, media inputs, detail controls, limitations, and pricing are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AI-901"
+      ],
+      "notes": "Eligible models, media inputs, detail controls, limitations, and pricing are volatile. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai901-credential",
@@ -12803,8 +13039,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Public profile/languages/assessment sections read: active exam, 13 languages, linked sign-in assessment. Empty training widgets conflict with directly available course/paths; exam duration not established. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai900-retirement-study-guide",
@@ -12814,9 +13053,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "AI-900 retired June 30, 2026; use only to understand the predecessor scope."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "AI-900 retired June 30, 2026; use only to understand the predecessor scope. September 28 AI-901 deep review: Retirement notice read: June 30, 2026. Historical AI-900 objective body not audited as AI-901 scope. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-responsible-ai-principles-ai901",
@@ -12826,8 +13067,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-azure-language-documentation-ai901",
@@ -12837,9 +13081,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Capability names, SDKs, language support, limits, regions, and pricing are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Capability names, SDKs, language support, limits, regions, and pricing are volatile. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-concepts-learning-path-ai901",
@@ -12849,9 +13095,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Current public page lists seven modules and an estimated duration of 3 hours 51 minutes."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Current public page lists seven modules and an estimated duration of 3 hours 51 minutes. September 28 AI-901 deep review: All seven module titles/descriptions read; prior 3h51 total not reproduced. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-apps-agents-learning-path-ai901",
@@ -12861,9 +13109,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Current public page lists seven modules and an estimated duration of 5 hours 37 minutes."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Current public page lists seven modules and an estimated duration of 5 hours 37 minutes. September 28 AI-901 deep review: All seven module titles/descriptions read; prior 5h37 total not reproduced. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-capability-map-ai901",
@@ -12873,9 +13123,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-901"],
-      "notes": "Product names, recommended build paths, SDKs, agent types, and preview status are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-901"
+      ],
+      "notes": "Product names, recommended build paths, SDKs, agent types, and preview status are volatile. September 28 AI-901 deep review: Retained contextual reference fetched; no exhaustive reread of the entire page, video or linked procedures this pass. Applied changes have separately identified targeted sources. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-caf-ai-overview-ab100",
@@ -35657,11 +35909,12 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "AI-103"
+        "AI-103",
+        "AI-901"
       ],
-      "notes": "Recurring lifecycle source for the GA service, preview APIs and SDKs, agentic mode, and analyzer changes."
+      "notes": "Recurring lifecycle source for the GA service, preview APIs and SDKs, agentic mode, and analyzer changes. September 28 AI-901 deep review: Selected current September–July release items and January Read/Layout no-model exception read; older release archive not fully reread. See docs/research/2026-09-28-ai-901-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-at-work-roadmap-transition",

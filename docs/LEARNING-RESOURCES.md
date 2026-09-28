@@ -288,16 +288,26 @@ The three O'Reilly/Udemy pages were access-blocked on September 27; retained dur
 
 ### AI-901 — Microsoft Azure AI Fundamentals
 
-- Official (1 day): [Microsoft Learn AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
-- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4); Microsoft account required
-- Video course (4 hours 4 minutes): [O'Reilly Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/), Anand Rao Nednur, April 2026
-- Marketplace course (about 6 hours 20 minutes): [Udemy AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/), shown as updated June 2026
-- Marketplace alternative (about 6 hours 54 minutes): [Udemy AI-901 by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/), shown as updated July 2026
-- Instruction and assessment bundle: [Whizlabs AI-901](https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/), whose public listing shows 63 videos and three quizzes. Allow about 3–6 hours for the quizzes and explanation review; the provider does not publish a total video runtime.
-- Official demos (select 2–5 hours): [Microsoft AI Show](https://learn.microsoft.com/en-us/shows/ai-show/), choosing current Foundry, agent, speech, vision, and Content Understanding episodes
-- Optional legacy refresh (about 3 hours): [John Savill's AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ); AI-900 retired June 30, 2026, and this does not cover AI-901's Foundry implementation scope
+Resource details from the [AI-901 guide](../guides/AI-901-microsoft-azure-ai-fundamentals.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-No exact Pluralsight path or standalone MeasureUp AI-901 practice test was verified during this review.
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [Microsoft Learn — AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and implementation sequence |
+| [Microsoft — AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
+| [Microsoft Learn AI-901 certification material](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) | Free | About 10–14 hours | Official scope anchor; complete current Foundry exercises rather than relying on AI-900 modules |
+| [Microsoft Learn — AI concepts](https://learn.microsoft.com/en-us/training/paths/ai-concepts/) | Free | Budget 4–6 hours including notes (editorial estimate) | Seven modules; current total runtime not exposed. Concepts path across the workloads in the first domain |
+| [Microsoft Learn — AI applications and agents](https://learn.microsoft.com/en-us/training/paths/get-started-ai-apps-agents/) | Free | Budget 6–10 hours including labs (editorial estimate) | Seven modules; current total runtime not exposed. Implementation path across Foundry, apps/agents, text, speech, vision, extraction, and retrieval |
+| [O'Reilly — Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/) | Subscription | 4 hours 4 minutes | Anand Rao Nednur, April 2026; indexed public outline only, direct access blocked. Verify current SDK demos before purchase |
+| [Udemy — AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/) | Purchase or subscription | About 6 hours 20 minutes | Christopher Nett; indexed outline: June 2026, 12 sections/49 lectures. Direct access blocked; lessons not watched |
+| [Udemy — AI-901 exam prep by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/) | Purchase or subscription | About 6 hours 54 minutes | Kuljot Singh Bakshi; indexed outline: July 2026, 11 sections/47 lectures. Direct access blocked; lessons not watched |
+| [Whizlabs — AI-901 instruction and practice](https://www.whizlabs.com/ai-901-microsoft-azure-ai-fundamentals/) | Paid course or subscription | Duration and current counts unverified | Direct and indexed pages expose only a title shell; earlier 63-video/three-quiz counts were not reproduced. Verify the current bundle before purchase |
+| [Pluralsight — Implement AI Solutions by Using Microsoft Foundry](https://www.pluralsight.com/courses/implement-ai-solutions-by-using-microsoft-foundry--ai-901) | Subscription | 1 hour 59 minutes | Clint Bonnett, September 16, 2026. Public outline targets the implementation domain; pair with concepts study. Paid lessons not watched |
+| [Microsoft AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Select 2–5 hours by gap | Official product demonstrations; choose current Foundry, agents, speech, vision, and extraction episodes |
+| [John Savill — AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ) | Free | About 3 hours | Optional legacy concept refresher only; AI-900 retired and this does not cover AI-901 implementation scope |
+
+A matching Pluralsight implementation course is now verified; no exact standalone MeasureUp AI-901 listing was found in the bounded September 28 search. This is not proof that none exists. The Microsoft assessment remains sign-in gated, so its questions and coverage were not inspected. Paid resources were evaluated only from public metadata, not lesson quality or question originality. See the broader [Places to learn catalog](LEARNING-RESOURCES.md).
 
 ### AI-103 — Developing AI Apps and Agents on Azure
 

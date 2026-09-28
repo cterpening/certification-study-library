@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AI-901's 29 objectives; add six worked examples, eight labs, 36 explained checks, two Microsoft blog exercises and a Pluralsight implementation course. Update Foundry clients, speech/voice, vision lifecycle, Content Understanding and catalog evidence; preserve historical reviews and schedule follow-ups. See the [AI-901 report](docs/research/2026-09-28-ai-901-deep-review.md).
+
 - September 28, 2026: deeply review AI-300's 58 objectives; add six worked examples, ten labs, 48 explained checks and two Microsoft blog exercises. Update pipeline reuse, feature lineage, safe rollout, network/capacity, evaluation/telemetry, model lifecycle and learning catalogs; preserve historical evidence and schedule follow-ups. See the [AI-300 report](docs/research/2026-09-28-ai-300-deep-review.md).
 
 - September 28, 2026: deeply review AI-200's 27 objectives; add six worked examples, ten labs, 48 explained answers and a Redis engineering blog worksheet. Correct ACR/AKS identity, change-feed/retry, vector/cache, runtime deadlines, secret refresh, telemetry sampling and learning catalogs; retain the Redis conversion documentation gap with dated follow-ups. See the [AI-200 report](docs/research/2026-09-28-ai-200-deep-review.md).
