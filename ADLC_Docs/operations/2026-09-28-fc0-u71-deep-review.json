@@ -1,0 +1,1494 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "FC0-U71",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "d6ca4400ca81ba85c284c998ac59ee0643f9f317452a851f83acf30e5cea641f",
+  "guide_after_sha256": "153f51866fa4a155201d9dfe6f30df741da70a11743f3c50e3867803f1213306",
+  "prior_records": {
+    "exam": {
+      "code": "FC0-U71",
+      "level": "beginner",
+      "vendor_id": "comptia",
+      "title": "CompTIA Tech+",
+      "status": "active",
+      "study_guide_url": "https://www.comptia.org/en-us/certifications/tech/",
+      "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No prior experience is required. Build practical technology literacy across computing and notation, devices/components/storage/interfaces, virtualization/cloud/networking, operating systems/applications/browsers/AI, basic programming logic, data/databases/backups, troubleshooting, and security; verify the FC0-U71 versus FC0-U71-CE lifecycle choice during purchase."
+    },
+    "review": {
+      "id": "fc0-u71-2026-09-01-source-validation",
+      "exam_code": "FC0-U71",
+      "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/fc0-u71-official-objectives.txt",
+      "blueprint_snapshot_sha256": "454e6bd5ab99966ebdbfda2b06dcbd4949a4bffea30cfe7b75a731e4526a3791",
+      "objective_coverage": [
+        {
+          "objective_group": "Tech concepts and terminology (13%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3, 5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Infrastructure (24%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 1, 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Applications and software (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1 and 3",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Software development concepts (13%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 2",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Data and database fundamentals (13%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenario 2",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Security (19%)",
+          "guide_sections": [
+            "Section 6",
+            "All integrated scenarios",
+            "Labs 6 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six weighted V6 domains and public subtopics are mapped to connected explanations, three scenarios, eight safe labs and 40 original checks. The official no-expiration FC0-U71/five-year FC0-U71-CE wording is preserved. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objective PDF, course content, or recalled questions are used."
+    },
+    "sources": [
+      {
+        "id": "comptia-fc0-u71-blueprint",
+        "title": "CompTIA Tech+ V6",
+        "url": "https://www.comptia.org/en-us/certifications/tech/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71"
+        ],
+        "notes": "Canonical six-domain weighted outline and delivery/lifecycle page. Lists up to 70 questions in 60 minutes, 650/900 passing score, English/Japanese, no-expiration FC0-U71 and five-year FC0-U71-CE."
+      },
+      {
+        "id": "comptia-certmaster-learn",
+        "title": "CompTIA CertMaster Learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official self-paced learning platform; exact certification availability, bundle, price, duration and access vary."
+      },
+      {
+        "id": "comptia-certmaster-labs",
+        "title": "CompTIA CertMaster Labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official browser-based practical environment; verify exam inclusion and current bundle details."
+      },
+      {
+        "id": "comptia-certmaster-practice",
+        "title": "CompTIA CertMaster Practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official adaptive assessment and remediation platform; not a source of actual exam items."
+      },
+      {
+        "id": "comptia-fc0-u71-pluralsight",
+        "title": "CompTIA Tech+ FC0-U71 path",
+        "url": "https://www.pluralsight.com/paths/comptia-tech-fc0-u71",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71"
+        ],
+        "notes": "Thirteen hours, nine courses, three 2026 labs and a practice exam listed; covers all six domains."
+      },
+      {
+        "id": "comptia-fc0-u71-linkedin",
+        "title": "CompTIA Tech+ FC0-U71 Cert Prep",
+        "url": "https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep",
+        "publisher": "LinkedIn Learning / Total Seminars",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71"
+        ],
+        "notes": "Four hours 50 minutes, released March 2025, with 14 quizzes; compact current-domain route."
+      },
+      {
+        "id": "comptia-fc0-u71-oreilly",
+        "title": "TOTAL CompTIA Tech+ FC0-U71",
+        "url": "https://www.oreilly.com/library/view/total-comptia/9781837021550/",
+        "publisher": "O'Reilly / Total Seminars",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71"
+        ],
+        "notes": "Subscription video aligned to FC0-U71; public page did not expose a stable total runtime during review."
+      },
+      {
+        "id": "comptia-fc0-u71-udemy-chapple",
+        "title": "CompTIA Tech+ Complete Course FC0-U71",
+        "url": "https://www.udemy.com/course/certmike-comptia-it-fundamentals-itf/",
+        "publisher": "Udemy / Mike Chapple",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71"
+        ],
+        "notes": "Four hours six minutes, 70 lectures, updated May 2026; claims all six current domains."
+      },
+      {
+        "id": "comptia-fc0-u71-measureup",
+        "title": "CompTIA Tech+ FC0-U71 practice test",
+        "url": "https://www.measureup.com/comptia-tech-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71"
+        ],
+        "notes": "171 questions and May 2025 release listed, with practice/certification modes and explanation references; use for remediation, not item memorization."
+      },
+      {
+        "id": "comptia-fc0-u71-youtube-tia",
+        "title": "CompTIA Tech+ FC0-U71 full course",
+        "url": "https://www.youtube.com/watch?v=uk7uhpyNmhE",
+        "publisher": "Technical Institute of America",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71"
+        ],
+        "notes": "Free full-course video published December 2025; map sections to the current official outline and add hands-on practice."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "498228366f024dc4c9077de4140c269b2078c2a113acfc35bc328e1c135aaaf6",
+      "guide_sections": [
+        "1. Tech concepts and terminology — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "6fbf6ce083c47fd8ca98a1bc1ab16ba2fd8286b3abcd7415e57a6ea9606f3ba5",
+      "guide_sections": [
+        "1. Tech concepts and terminology — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "6512ed207eec00ed2bad9fce96967837e581349b5ceef0c36a45072b1b89ecfd",
+      "guide_sections": [
+        "1. Tech concepts and terminology — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "1301bd3df46b6349835a029434f9f3f9f7bea2ebb8dc1a011d77819a3f6351f6",
+      "guide_sections": [
+        "1. Tech concepts and terminology — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c1e0ce53bff66423e4c3769cec54818172aa549e55840192df2cab7eb2cc1a2a",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "02866df2df83b57d575051946b89b8cfb231ac3f94368dfd2385c26bddcb5b58",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "559c17314e14f34d0ece9263825aac1bde6624a68e9872109b5beeea7fb4204b",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "9c448052da0b9138fac7b56e19092ea129254f328b883369222c593c61a202ab",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "b77b4f1ed735c1666432729a23b6e317e3b8429fa254b93fda73d053835b612f",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "a2fb9dc6f5cbf6fb405f36da3261b98e4665eb83e624e7b173118182f0cfb24e",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "3c9cbd665be48543209d476693bc2185bb3b0e01515084b131325e493df5a576",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "3fdeedbba4c1e2930a781e176c54961be9a9e04c326df497985775d04e0010c0",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "8e97a2eecd27880f7f706f426e106f4eaf958322905819d9e7e0bf969c5a6453",
+      "guide_sections": [
+        "2. Infrastructure — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "78c02203d4dbfc08cdb7cae8912ce0e65c0e1e2022fc13f33494808808076f94",
+      "guide_sections": [
+        "3. Applications and software — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "8f713f109e16ee2a8520b794258c992aa087d1673c1822fc97d336b1890f465e",
+      "guide_sections": [
+        "3. Applications and software — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "96bc84211df580b327d57cfe574b899985860fe8f0c8cbe234b31846d3bd565c",
+      "guide_sections": [
+        "3. Applications and software — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "87881cb7444482b7266ebdcae5bf074369be89689c8ffe7605565557914eed59",
+      "guide_sections": [
+        "3. Applications and software — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "7fb6dbbe6f727c6110879dc87c6a6ce8f9ffe7b9584ba793fda896a2ddb0f57d",
+      "guide_sections": [
+        "3. Applications and software — 18%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "b277026e62eaa38f2ec337216c8a57ea0a1b87082f0d573c6bb5f3c56a6c5b62",
+      "guide_sections": [
+        "4. Software development concepts — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "361cb87c7b709eeb6d9b22665bae84fa90eccafbc70c4f02b1e0b6b2fd808989",
+      "guide_sections": [
+        "4. Software development concepts — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "24f03ddda72e158b86a9e955ce1e204f42075d529bed7a3b3daf8aaa539eb6e2",
+      "guide_sections": [
+        "4. Software development concepts — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "031a83de76da9d278774eccbaf2e74e80a3af75ca48241363163036da7ef094c",
+      "guide_sections": [
+        "4. Software development concepts — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "a5ee56b366ce21005320f42b9da6651e60ae4c8f5c9280bdbb43c92d887a7387",
+      "guide_sections": [
+        "5. Data and database fundamentals — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "ac5700d9ed378b631ecacb306aaac23a941ccd0c45f8a48ad13525b48ddcf52d",
+      "guide_sections": [
+        "5. Data and database fundamentals — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "93af73adef325b15f2c87fc9d68df737fa7745c86366aaecd3f38f33fb4dbe76",
+      "guide_sections": [
+        "5. Data and database fundamentals — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "066e7260b1275cf6a2999058972d7737482ff748f73edc0891ec9d3ed0596f64",
+      "guide_sections": [
+        "5. Data and database fundamentals — 13%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "b91c1d79b6b099cad50cf55b2e374fcc337f86fe695fc15df65ffd5b5010f930",
+      "guide_sections": [
+        "6. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "b06b1da676cdf6d72e353ff6f13b92d79d37c1e5849e974204bc5017ab27fa17",
+      "guide_sections": [
+        "6. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "3126a76aba71deaae7e36781e3f1f817ccfad57be7250e36895accff7d18d711",
+      "guide_sections": [
+        "6. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "b4924411448f23f248f286de9f989e63263e1cd3eb5eea28577bab3c27f0a5de",
+      "guide_sections": [
+        "6. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "f45e500ec409cf2bf798a42a806d2df8a5ca7f08c6e817e4209e40b99870dbed",
+      "guide_sections": [
+        "6. Security — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "FC0-U71"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "FC0-U71",
+        "title": "CompTIA Tech+",
+        "url": "https://www.comptia.org/en-us/certifications/tech/",
+        "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\fc0-u71-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\fc0-u71-official-status.json",
+        "previous_sha256": "454e6bd5ab99966ebdbfda2b06dcbd4949a4bffea30cfe7b75a731e4526a3791",
+        "current_sha256": "ae1e3de08f84f5e8042cc58522867fa14f85cfe2285e456fbc969df9bba4c168",
+        "previous_status_sha256": "143eb05175539ed43dc09dbe271ec04d7fc5ee2f4a0a9440887c508388a5acaa",
+        "current_status_sha256": "8ee3ccf6e315c1679147a13b2fa9d960e5a4ae638da11f696e934d6f4909ee98",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V6",
+            "Exam series code: FC0-U71 (no expiration), FC0-U71-CE (valid for 5 years)",
+            "Launch date: July 16, 2024",
+            "Number of questions: maximum of 70 questions",
+            "Duration: 60 minutes",
+            "Passing score: 650 (on a scale of 900)",
+            "Languages: English, Japanese"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 20,
+    "reachable": 18,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "comptia-fc0-u71-blueprint",
+      "url": "https://www.comptia.org/en-us/certifications/tech/",
+      "checked_at": "2026-09-29T03:07:59.021980+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-blueprint",
+        "url": "https://www.comptia.org/en-us/certifications/tech/",
+        "checked_at": "2026-09-29T03:07:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/tech/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Tech+ (Plus) Certification | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/tech/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "60 minutes"
+        ],
+        "signal_fingerprint": "40f23414fa1079049fcf7bab694f91843fb251c7f397bffd04b0afc476227a48",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/tech/",
+      "sha256": "bf2bdf7399ce49302d29f83ad9cfc5bd8e134817c5b8565c935f632598ddcc62",
+      "text_characters": 6775
+    },
+    {
+      "id": "comptia-certmaster-learn",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "checked_at": "2026-09-29T03:07:59.022633+00:00",
+      "health": {
+        "id": "comptia-certmaster-learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "checked_at": "2026-09-29T03:07:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Learn",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "duration_signals": [],
+        "signal_fingerprint": "65786e0e6431fcfe2e58ba358241f9cdb456812d6ade43fbd74876ee340cfef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "sha256": "9bee308577f1977bd0f56dca8d4bae5b76f9c414dd50ad6eefa6ce5961e80e06",
+      "text_characters": 1692
+    },
+    {
+      "id": "comptia-certmaster-labs",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "checked_at": "2026-09-29T03:07:59.023028+00:00",
+      "health": {
+        "id": "comptia-certmaster-labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "checked_at": "2026-09-29T03:07:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Labs | CompTIA UK",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b7552b7bda3589184d03b2dfcb4182095d6fc6dfc7d5cfddea7650446126f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "sha256": "37496f082d45d2dc2e76ce2d12a62de9f2e4b77bcf222b42cceb0c52f93d10e6",
+      "text_characters": 1552
+    },
+    {
+      "id": "comptia-certmaster-practice",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "checked_at": "2026-09-29T03:08:00.206282+00:00",
+      "health": {
+        "id": "comptia-certmaster-practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "checked_at": "2026-09-29T03:08:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Practice",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "duration_signals": [],
+        "signal_fingerprint": "87ff57590e3cf2e101143725a522c14d9cbd91afd9e8d02bb27f86e7af1751c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "sha256": "8d8ab7b20b45cc2623ce1437a79c68745eeb183d210d537fd32ce9839f994bf9",
+      "text_characters": 3505
+    },
+    {
+      "id": "comptia-fc0-u71-pluralsight",
+      "url": "https://www.pluralsight.com/paths/comptia-tech-fc0-u71",
+      "checked_at": "2026-09-29T03:08:00.508410+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-pluralsight",
+        "url": "https://www.pluralsight.com/paths/comptia-tech-fc0-u71",
+        "checked_at": "2026-09-29T03:08:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/comptia-tech-fc0-u71",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CompTIA Tech+ (FC0-U71)",
+        "canonical_url": "https://www.pluralsight.com/paths/comptia-tech-fc0-u71",
+        "duration_signals": [
+          "13 Hours"
+        ],
+        "signal_fingerprint": "98f7532ba4d344bc825e4ea69206931a41eacf2e50d0885b7fa4f5a496252f0b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/comptia-tech-fc0-u71",
+      "sha256": "dd1e3e297e10a9f9e3c614265f58a34f766475a6229cf2fa2e9fae5533c43872",
+      "text_characters": 7442
+    },
+    {
+      "id": "comptia-fc0-u71-linkedin",
+      "url": "https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep",
+      "checked_at": "2026-09-29T03:08:04.029883+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-linkedin",
+        "url": "https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep",
+        "checked_at": "2026-09-29T03:08:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA Tech+ (FC0-U71) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep",
+        "duration_signals": [
+          "PT11M39S",
+          "PT12M20S",
+          "PT1M10S",
+          "PT1M34S",
+          "PT1M41S",
+          "PT1M46S",
+          "PT1M50S",
+          "PT1M52S",
+          "PT2M12S",
+          "PT2M14S",
+          "PT2M17S",
+          "PT2M1S",
+          "PT2M23S",
+          "PT2M28S",
+          "PT2M33S",
+          "PT2M35S",
+          "PT2M37S",
+          "PT2M40S",
+          "PT2M44S",
+          "PT2M49S",
+          "PT2M53S",
+          "PT2M57S",
+          "PT2M6S",
+          "PT3M17S",
+          "PT3M19S",
+          "PT3M20S",
+          "PT3M22S",
+          "PT3M23S",
+          "PT3M25S",
+          "PT3M32S"
+        ],
+        "signal_fingerprint": "483439de33cac11a8656d0b9ca9e73dc3efffe3f73a08bde84c50c847dbb8514",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep",
+      "sha256": "88ae6bdf3b937fdc36140625aa8cd0113eef3cbd52d42e603f05881b726330a1",
+      "text_characters": 6489
+    },
+    {
+      "id": "comptia-fc0-u71-oreilly",
+      "url": "https://www.oreilly.com/library/view/total-comptia/9781837021550/",
+      "checked_at": "2026-09-29T03:08:05.058194+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-oreilly",
+        "url": "https://www.oreilly.com/library/view/total-comptia/9781837021550/",
+        "checked_at": "2026-09-29T03:08:05+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/total-comptia/9781837021550/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-fc0-u71-udemy-chapple",
+      "url": "https://www.udemy.com/course/certmike-comptia-it-fundamentals-itf/",
+      "checked_at": "2026-09-29T03:08:05.338876+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-udemy-chapple",
+        "url": "https://www.udemy.com/course/certmike-comptia-it-fundamentals-itf/",
+        "checked_at": "2026-09-29T03:08:05+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/certmike-comptia-it-fundamentals-itf/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-fc0-u71-measureup",
+      "url": "https://www.measureup.com/comptia-tech-practice-test.html",
+      "checked_at": "2026-09-29T03:08:05.368791+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-measureup",
+        "url": "https://www.measureup.com/comptia-tech-practice-test.html",
+        "checked_at": "2026-09-29T03:08:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/comptia-tech-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Practice Test CompTIA FC0-U71: CompTIA Tech+",
+        "canonical_url": "https://www.measureup.com/comptia-tech-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bf3395aeb95670bdd0f287b893a6f11c0485c64975029891057798e03dc8c887",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/comptia-tech-practice-test.html",
+      "sha256": "08ea1577f6193b00e8f2034f69bafdb35524d49baea31f686c96c82c6526f0c0",
+      "text_characters": 25202
+    },
+    {
+      "id": "comptia-fc0-u71-youtube-tia",
+      "url": "https://www.youtube.com/watch?v=uk7uhpyNmhE",
+      "checked_at": "2026-09-29T03:08:05.503031+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-youtube-tia",
+        "url": "https://www.youtube.com/watch?v=uk7uhpyNmhE",
+        "checked_at": "2026-09-29T03:08:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=uk7uhpyNmhE",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA Tech+ FC0-U71 - Full Course",
+        "canonical_url": "https://www.youtube.com/watch?v=uk7uhpyNmhE",
+        "duration_signals": [],
+        "signal_fingerprint": "3db14c0e3c5b4163bf1ad4588b2ddce057d85881ebbd94068e6ebf2add07de7b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=uk7uhpyNmhE",
+      "sha256": "4acf0263391dd56c566e1ab8828372020abe91281347fded68205599da33b202",
+      "text_characters": 198,
+      "content_review_note": "198-character shell only. Video content and runtime not verified."
+    },
+    {
+      "id": "comptia-partner-resources",
+      "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "checked_at": "2026-09-29T03:16:06.855203+00:00",
+      "health": {
+        "id": "comptia-partner-resources",
+        "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "checked_at": "2026-09-29T03:16:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Partner Resources",
+        "canonical_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "be631fe463c6d0a7c5e51dfcf4ec7e4813a2eeae48c6ca7bc993534faf97d57e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "sha256": "14576ecf6117f8f05f0462c05865386b5da334d76d89e1da2474161210a21a35",
+      "text_characters": 4747
+    },
+    {
+      "id": "python313-control-flow",
+      "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "checked_at": "2026-09-29T03:16:06.855947+00:00",
+      "health": {
+        "id": "python313-control-flow",
+        "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "checked_at": "2026-09-29T03:16:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "content_type": "text/html",
+        "page_title": "4. More Control Flow Tools",
+        "canonical_url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "duration_signals": [],
+        "signal_fingerprint": "80fc72cdf98a887730e8bfc2b67d55483d1807974f5a6849bf34f6570e9eadd2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "sha256": "0a404a92dbc75f99f328b5d904dea0dae9e9259eac0d00cec796e626e3e7aa6b",
+      "text_characters": 36778
+    },
+    {
+      "id": "python313-sqlite3",
+      "url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "checked_at": "2026-09-29T03:16:06.856341+00:00",
+      "health": {
+        "id": "python313-sqlite3",
+        "url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "checked_at": "2026-09-29T03:16:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+        "content_type": "text/html",
+        "page_title": "sqlite3 — DB-API 2.0 interface for SQLite databases",
+        "canonical_url": "https://docs.python.org/3/library/sqlite3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "731da9a47040f7dd9c7b7508d358e75f75c3c6f2c963f66c2f41fe9b0b62ff76",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/sqlite3.html",
+      "sha256": "755e12bec8e8f950d336f75e6b38cae3f0395077e8d0c961041a66eee4045968",
+      "text_characters": 72366
+    },
+    {
+      "id": "sqlite-foreign-keys",
+      "url": "https://www.sqlite.org/foreignkeys.html",
+      "checked_at": "2026-09-29T03:16:08.030266+00:00",
+      "health": {
+        "id": "sqlite-foreign-keys",
+        "url": "https://www.sqlite.org/foreignkeys.html",
+        "checked_at": "2026-09-29T03:16:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.sqlite.org/foreignkeys.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SQLite Foreign Key Support",
+        "canonical_url": "https://www.sqlite.org/foreignkeys.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1231f627d6605ebd4313d16334bec237885998a4754378b5944609fb617f8348",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.sqlite.org/foreignkeys.html",
+      "sha256": "f9cc6cefbdf18e07893b036365a2f3ca2a9a81fa41ed0849c7e4df214ccca8c0",
+      "text_characters": 34522
+    },
+    {
+      "id": "mozilla-private-browsing",
+      "url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+      "checked_at": "2026-09-29T03:16:08.144511+00:00",
+      "health": {
+        "id": "mozilla-private-browsing",
+        "url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+        "checked_at": "2026-09-29T03:16:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Client Challenge",
+        "canonical_url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+        "duration_signals": [],
+        "signal_fingerprint": "8ccf91ba22c8dfd71577e39883d2871545a4426a95408ad33ebf9a20208436b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "text_characters": 226,
+      "content_review_note": "Generic local fetch returned226-character shell. Separate web retrieval read full article including history/cookies versus saved downloads/bookmarks and anonymity limitations; no browser execution."
+    },
+    {
+      "id": "nist-binary-prefixes",
+      "url": "https://physics.nist.gov/cuu/Units/binary.html",
+      "checked_at": "2026-09-29T03:16:08.405720+00:00",
+      "health": {
+        "id": "nist-binary-prefixes",
+        "url": "https://physics.nist.gov/cuu/Units/binary.html",
+        "checked_at": "2026-09-29T03:16:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://physics.nist.gov/cuu/Units/binary.html",
+        "content_type": "text/html",
+        "page_title": "Definitions of the SI units: The binary prefixes",
+        "canonical_url": "https://physics.nist.gov/cuu/Units/binary.html",
+        "duration_signals": [],
+        "signal_fingerprint": "56099403ef9e9fc99e7b577fad70aeafff1a2029598cf5802f7ca5049c885b68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://physics.nist.gov/cuu/Units/binary.html",
+      "sha256": "e8bc387efcee0be32629d06a3ae44322b0fe095708775b7e6ff698278b824b35",
+      "text_characters": 5585
+    },
+    {
+      "id": "comptia-troubleshooting-blog",
+      "url": "https://www.comptia.org/blog/troubleshooting-methodology",
+      "checked_at": "2026-09-29T03:16:53.569065+00:00",
+      "health": {
+        "id": "comptia-troubleshooting-blog",
+        "url": "https://www.comptia.org/blog/troubleshooting-methodology",
+        "checked_at": "2026-09-29T03:16:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/blog/use-a-troubleshooting-methodology-for-more-efficient-it-support/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use a Troubleshooting Methodology for More Efficient IT Support | CompTIA Blog",
+        "canonical_url": "https://www.comptia.org/en-us/blog/use-a-troubleshooting-methodology-for-more-efficient-it-support/",
+        "duration_signals": [
+          "4 min"
+        ],
+        "signal_fingerprint": "8e453bd3f205750bb629df5fd8f7f5973ca04404210300a2dd000fbba6f7a802",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/blog/use-a-troubleshooting-methodology-for-more-efficient-it-support/",
+      "sha256": "ab92c0371d71de16c79d4061d62f3ea3d71bbecfddc5253d9b254c911dd7e17c",
+      "text_characters": 11583
+    },
+    {
+      "id": "nist-800-63b-4",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "checked_at": "2026-09-29T03:16:53.569638+00:00",
+      "health": {
+        "id": "nist-800-63b-4",
+        "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "checked_at": "2026-09-29T03:16:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "content_type": "text/html",
+        "page_title": "NIST Special Publication 800-63B",
+        "canonical_url": "/800-63-4/sp800-63b.html",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "12 hours",
+          "15 minutes",
+          "24 hours",
+          "24 hours and 10 minutes"
+        ],
+        "signal_fingerprint": "5ddbbdf4604797a1f84ba2134130ae1d3b228955b507c77d2c1b48e269f67805",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "sha256": "6ef2cf942e00b137c62c6b567b88ebac9d40b11773ae3bffa824191e135dc813",
+      "text_characters": 253608
+    },
+    {
+      "id": "microsoft-wifi-security-warning",
+      "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/wi-fi-network-not-secure-in-windows",
+      "checked_at": "2026-09-29T03:16:53.570009+00:00",
+      "health": {
+        "id": "microsoft-wifi-security-warning",
+        "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/wi-fi-network-not-secure-in-windows",
+        "checked_at": "2026-09-29T03:16:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/wi-fi-network-not-secure-in-windows",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Wi-Fi network not secure in Windows | Microsoft SupportYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/wi-fi-network-not-secure-in-windows",
+        "duration_signals": [],
+        "signal_fingerprint": "e9a164ed629043a49b7e82ae2f96c2c4ff062cb862ce983bb1ed66b2b7157b4e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/wi-fi-network-not-secure-in-windows",
+      "sha256": "04847d89eb316eebcae14f3a28a3094eefe3bf4d372e03cb387fd1bbf81648cf",
+      "text_characters": 1175
+    },
+    {
+      "id": "comptia-fc0-u71-objectives-pdf",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+      "checked_at": "2026-09-29T03:21:57.877510+00:00",
+      "health": {
+        "id": "comptia-fc0-u71-objectives-pdf",
+        "url": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+        "checked_at": "2026-09-29T03:21:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "sha256": "4d05dcafca1f864ae8bb84d9ebc08f48cd1537227b74de2d00e2a274fec3f5a8",
+      "bytes": 359393,
+      "pdf_pages": 16,
+      "text_characters": 21840,
+      "representation_note": "Public PDF bytes fetched directly and all31numbered objectives/bullets read with pypdf; no paid content. Discovery chain saved."
+    }
+  ],
+  "added_source_ids": [
+    "comptia-partner-resources",
+    "comptia-fc0-u71-objectives-pdf",
+    "python313-control-flow",
+    "python313-sqlite3",
+    "sqlite-foreign-keys",
+    "mozilla-private-browsing",
+    "nist-binary-prefixes",
+    "comptia-troubleshooting-blog",
+    "nist-800-63b-4",
+    "microsoft-wifi-security-warning"
+  ],
+  "findings": [
+    {
+      "id": "fc0u71-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Full objectives needed finer teaching coverage",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "FC0-U71"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The PDF contains31 numbered objectives, including 2.7 internet services and 6.5 wireless configuration, versus29 summary rows on the main page.",
+      "recommendation": "Map all 31 IDs and add internet-service comparison, explicit wireless setup/verification, fuller device/browser/privacy details and two checks.",
+      "disposition": "applied",
+      "source_id": "comptia-fc0-u71-objectives-pdf",
+      "resolution": "Map all 31 IDs and add internet-service comparison, explicit wireless setup/verification, fuller device/browser/privacy details and two checks."
+    },
+    {
+      "id": "fc0u71-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Units needed worked calculations and notation correction",
+      "url": "https://physics.nist.gov/cuu/Units/binary.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "FC0-U71"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "NIST distinguishes decimal MB from binary MiB and bits from bytes; PDF1.3uses a mixed Terabytes/Tbps example.",
+      "recommendation": "Teach explicit units, binary/hex/octal conversion and a 100 MB at 80 Mbps calculation without copying the typo.",
+      "disposition": "applied",
+      "source_id": "nist-binary-prefixes",
+      "resolution": "Teach explicit units, binary/hex/octal conversion and a 100 MB at 80 Mbps calculation without copying the typo."
+    },
+    {
+      "id": "fc0u71-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Database relationships and backups needed observable behavior",
+      "url": "https://www.sqlite.org/foreignkeys.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "FC0-U71"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SQLite foreign-key enforcement must be enabled per connection before a transaction; a declared key alone is insufficient.",
+      "recommendation": "Add actual constraint failures, a left-join/COUNT distinction, independent backup and reopened synthetic restore checks.",
+      "disposition": "applied",
+      "source_id": "sqlite-foreign-keys",
+      "resolution": "Add actual constraint failures, a left-join/COUNT distinction, independent backup and reopened synthetic restore checks."
+    },
+    {
+      "id": "fc0u71-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Exam password vocabulary needed current-policy context",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "FC0-U71"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Objectives mention expiration and complexity; current NIST centrally verified password guidance rejects periodic rotation and composition rules while requiring compromise-driven change.",
+      "recommendation": "Explain the terms without making universal rotation advice; retain scoped 15/8 minimums, unique secrets, MFA and recovery.",
+      "disposition": "applied",
+      "source_id": "nist-800-63b-4",
+      "resolution": "Explain the terms without making universal rotation advice; retain scoped 15/8 minimums, unique secrets, MFA and recovery."
+    },
+    {
+      "id": "fc0u71-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Private browsing did not fully explain persistent artifacts",
+      "url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "FC0-U71"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current Firefox reference distinguishes session data from saved downloads/bookmarks and does not claim internet anonymity.",
+      "recommendation": "Add explicit artifact and synchronization boundaries; browser lab remains proposed.",
+      "disposition": "applied",
+      "source_id": "mozilla-private-browsing",
+      "resolution": "Add explicit artifact and synchronization boundaries; browser lab remains proposed."
+    },
+    {
+      "id": "fc0u71-deep-6",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Learning time estimates differed from the provider listing",
+      "url": "https://www.comptia.org/en-us/certifications/tech/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "FC0-U71"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current Tech+ page listsLearn 25–40,Practice 10–20 andLabs 15–25hours.",
+      "recommendation": "Label these as current provider estimates, not guaranteed personal completion times.",
+      "disposition": "applied",
+      "source_id": "comptia-fc0-u71-blueprint",
+      "resolution": "Label these as current provider estimates, not guaranteed personal completion times."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "comptia-troubleshooting-blog",
+      "author": "Damon M. Garn",
+      "published_on": "2024-12-18",
+      "disposition": "accepted-with-limits",
+      "value": "Evidence gathering, reversible plans, complete functional verification and documentation.",
+      "limits": "Opening list splits planning/implementation but body combines them; canonical objective 1.4 governs scope. No full blog reproduction or unneeded scanning-tool advice adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 30,
+      "failed": 0,
+      "checks": [
+        "binary to decimal 45",
+        "hexadecimal 2d",
+        "octal 55",
+        "100 decimal MB at80Mbps is10s",
+        "MiB differs fromMB",
+        "80Mbps equals10MB/s",
+        "ready boundary",
+        "empty",
+        "zero and maximum",
+        "repeated values count independently",
+        "reject -1",
+        "reject 101",
+        "reject '80'",
+        "reject 80.0",
+        "reject True",
+        "reject None",
+        "left join retains zero-attendance member",
+        "synthetic source loss occurs",
+        "reopened restore has expected report",
+        "club.sqlite attendance persists",
+        "backup.sqlite attendance persists",
+        "restored.sqlite attendance persists",
+        "foreign keys enabled on new connection",
+        "orphan attendance rejected",
+        "duplicate attendance rejected",
+        "required name enforced",
+        "referenced parent deletion rejected",
+        "failed writes preserved rows",
+        "parameterized query treats text as data",
+        "foreign key consistency"
+      ],
+      "python": "3.13.14",
+      "sqlite": "3.50.4",
+      "public_python_blocks_executed": 3,
+      "stdout": "45 2d 55\n10.0\n1048576 1000000\n2\n0\n[('Ari', 2), ('Bo', 1), ('Cy', 0)]\n[('Ari', 0), ('Bo', 0), ('Cy', 0)]\n[('Ari', 2), ('Bo', 1), ('Cy', 0)]\n",
+      "sources": {
+        "notation_example.py": "e8013ceb26238c648276d6f48ae03d549fce3be1c6f8e7f297da8866fc7ed579",
+        "logic_example.py": "7a2a2919b6a4ac48eafdbc6f662fda9fff79fc1745d80240945ddfe8af81902f",
+        "database_example.py": "d54841dd88312ca0e069a1e559b858b6d868772b866cd39ec140a3a76af7d34b"
+      },
+      "limits": [
+        "Local synthetic SQLite backup/restore on one machine; no offsite backup or disaster recovery tested.",
+        "No browser, router, peripheral, VM, cloud service, identity or security setting altered.",
+        "All eight complete device/platform labs remain proposed."
+      ]
+    }
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Three original Python examples and 30 local assertions executed; no physical device, browser, Wi-Fi, router, VM, cloud, account or security settings altered.",
+    "Synthetic SQLite restore tested locally on one machine; no offsite recovery, recovery-time guarantee, power failure or concurrent production workload tested.",
+    "All eight complete device/platform labs remain proposed; only their local programming/data/rate components were exercised.",
+    "Paid lesson interiors not reviewed; OReilly/Udemy blocked and YouTube yielded only a shell.",
+    "Canonical webpage remains the exam/lifecycle authority;31 numbered PDF objectives supplement its29 summary rows. Source PDF notation typo corrected in teaching, not treated as a vendor transition."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "learning_catalog_consistency": "passed",
+    "passed": 30,
+    "failed": 0,
+    "checks": [
+      "binary to decimal 45",
+      "hexadecimal 2d",
+      "octal 55",
+      "100 decimal MB at80Mbps is10s",
+      "MiB differs fromMB",
+      "80Mbps equals10MB/s",
+      "ready boundary",
+      "empty",
+      "zero and maximum",
+      "repeated values count independently",
+      "reject -1",
+      "reject 101",
+      "reject '80'",
+      "reject 80.0",
+      "reject True",
+      "reject None",
+      "left join retains zero-attendance member",
+      "synthetic source loss occurs",
+      "reopened restore has expected report",
+      "club.sqlite attendance persists",
+      "backup.sqlite attendance persists",
+      "restored.sqlite attendance persists",
+      "foreign keys enabled on new connection",
+      "orphan attendance rejected",
+      "duplicate attendance rejected",
+      "required name enforced",
+      "referenced parent deletion rejected",
+      "failed writes preserved rows",
+      "parameterized query treats text as data",
+      "foreign key consistency"
+    ],
+    "python": "3.13.14",
+    "sqlite": "3.50.4",
+    "public_python_blocks_executed": 3,
+    "stdout": "45 2d 55\n10.0\n1048576 1000000\n2\n0\n[('Ari', 2), ('Bo', 1), ('Cy', 0)]\n[('Ari', 0), ('Bo', 0), ('Cy', 0)]\n[('Ari', 2), ('Bo', 1), ('Cy', 0)]\n",
+    "sources": {
+      "notation_example.py": "e8013ceb26238c648276d6f48ae03d549fce3be1c6f8e7f297da8866fc7ed579",
+      "logic_example.py": "7a2a2919b6a4ac48eafdbc6f662fda9fff79fc1745d80240945ddfe8af81902f",
+      "database_example.py": "d54841dd88312ca0e069a1e559b858b6d868772b866cd39ec140a3a76af7d34b"
+    },
+    "limits": [
+      "Local synthetic SQLite backup/restore on one machine; no offsite backup or disaster recovery tested.",
+      "No browser, router, peripheral, VM, cloud service, identity or security setting altered.",
+      "All eight complete device/platform labs remain proposed."
+    ]
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/fc0-u71-2026-09-01-official-objectives.txt",
+    "sha256": "454e6bd5ab99966ebdbfda2b06dcbd4949a4bffea30cfe7b75a731e4526a3791",
+    "historical_audit_paths_updated": 1,
+    "note": "Byte-identical earlier snapshot; historical hashes/dates/conclusions retained."
+  },
+  "prior_status": {
+    "skills_versions": [
+      "Exam version: V6",
+      "Exam series code: FC0-U71 (no expiration), FC0-U71-CE (valid for 5 years)",
+      "Launch date: July 16, 2024",
+      "Number of questions: maximum of 70 questions",
+      "Passing score: 650 (on a scale of 900)",
+      "Languages: English, Japanese"
+    ],
+    "upcoming_announcements": []
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "FC0-U71"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "FC0-U71",
+        "title": "CompTIA Tech+",
+        "url": "https://www.comptia.org/en-us/certifications/tech/",
+        "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\fc0-u71-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\fc0-u71-official-status.json",
+        "previous_sha256": "454e6bd5ab99966ebdbfda2b06dcbd4949a4bffea30cfe7b75a731e4526a3791",
+        "current_sha256": "ae1e3de08f84f5e8042cc58522867fa14f85cfe2285e456fbc969df9bba4c168",
+        "previous_status_sha256": "143eb05175539ed43dc09dbe271ec04d7fc5ee2f4a0a9440887c508388a5acaa",
+        "current_status_sha256": "8ee3ccf6e315c1679147a13b2fa9d960e5a4ae638da11f696e934d6f4909ee98",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V6",
+            "Exam series code: FC0-U71 (no expiration), FC0-U71-CE (valid for 5 years)",
+            "Launch date: July 16, 2024",
+            "Number of questions: maximum of 70 questions",
+            "Duration: 60 minutes",
+            "Passing score: 650 (on a scale of 900)",
+            "Languages: English, Japanese"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "objective_diff": "--- \n\n+++ \n\n@@ -2,6 +2,7 @@\n\n Exam series code: FC0-U71 (no expiration), FC0-U71-CE (valid for 5 years)\n Launch date: July 16, 2024\n Number of questions: maximum of 70 questions\n+Duration: 60 minutes\n Passing score: 650 (on a scale of 900)\n Languages: English, Japanese\n Tech+ (V6) exam objectives",
+  "version_specific_pdf_review": {
+    "url": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+    "discovery_page": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+    "collection_url": "https://lecbyo.collections.cmp.optimizely.com/api/library-collection/b9074fb6207711f08b1d2e4ad712ca04",
+    "asset": {
+      "guid": "1e77e02ebef111efbcf946d2fe8fe33a",
+      "title": "CompTIA Tech+ FC0-U71 Exam Objectives (4.0).pdf",
+      "type": "raw_file",
+      "mimeType": "application/pdf",
+      "thumbnailUrl": "https://images4.cmp.optimizely.com/Zz02YmZkYjE0MmNhMzExMWYwOWFjMTIyYzdkYzE2MzUwMw==",
+      "previewUrl": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+      "mediaUrl": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+      "transcodedUrl": "",
+      "description": "",
+      "lastModified": "2025-11-25T19:03:27",
+      "lastModifiedRelative": "10 months ago",
+      "createdAt": "2024-12-20T16:40:28",
+      "custom_labels": {},
+      "fields": []
+    },
+    "sha256": "4d05dcafca1f864ae8bb84d9ebc08f48cd1537227b74de2d00e2a274fec3f5a8",
+    "bytes": 359393,
+    "pages": 16,
+    "status": 200
+  },
+  "mapping_basis": "31 numbered objectives in public version 4.0 PDF; objective text hashes use original paraphrases prefixed with published IDs. Main page has29 summary rows. PDF and current main page reviewed together."
+}

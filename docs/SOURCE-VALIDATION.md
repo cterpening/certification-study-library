@@ -1238,6 +1238,8 @@ The review reconciles all public EX267 tasks with the Red Hat OpenShift AI 3.3 a
 
 ## FC0-U71 coverage record
 
+The September 28 [deep review](research/2026-09-28-fc0-u71-deep-review.md) maps 31 detailed objectives. Mapped all 31 numbered objectives in the officially linked version 4.0 PDF against the 29 main-page summary rows. Added internet-service and wireless-configuration depth, three original Python/SQLite examples with 30 actual local checks, 42 answers and current password/browser/unit distinctions. All eight full device/platform labs remain proposed; no new exam transition identified. Current guide citations: 20 registered, 18 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: six weighted V6 domains—Tech concepts and terminology (13%), Infrastructure (24%), Applications and software (18%), Software development concepts (13%), Data and database fundamentals (13%), and Security (19%)

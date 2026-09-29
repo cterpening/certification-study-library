@@ -4,6 +4,181 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-fc0u71-deep-review",
+      "title": "FC0-U71 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "FC0-U71"
+      ],
+      "results": [
+        {
+          "exam_code": "FC0-U71",
+          "vendor_id": "comptia",
+          "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+          "baseline_sha256": "1b1199e1619fb62b39609d1e0bc40c5749a95f0d9856f3f0b29d761f690a2d4c",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Canonical page retains V6,13/24/18/13/13/19 weights and FC0-U71 no-expiration/FC0-U71-CE five-year wording. Read all 31 numbered PDF objectives and bullets. Monitor changes only add Duration: 60 minutes, already taught; explicitly accept after comparison and archive earlier objective bytes/history."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read Python 3.13 control-flow/sqlite3 sections, SQLite foreign-key enforcement, NIST binary prefixes and 800-63B-4 password section, Microsoft Wi-Fi warning guidance. Mozilla full article read through separate web retrieval after local fetch returned a shell. No UI or router execution inferred."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Checked current exam metadata and objectives document identifiers separately:V6 exam versus 4.0 PDF. No new exam transition on canonical page. NIST password guidance and current browser/wireless documentation supply implementation boundaries, not an expansion of exam scope."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Current CertMaster estimates 25–40/10–20/15–25h labeled provider estimates. Pluralsight 9 courses / 3 labs / 13h, LinkedIn 4h50 / release March 13, 2025 and MeasureUp 171 questions confirmed. OReilly/Udemy blocked; YouTube shell gives no content/runtime verification. Places to learn final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Public summary compresses objectives 2.7 internet services and 6.5 wireless configuration; both now explicit. Correct the PDF Tbps/terabytes label using unit conventions. Keep password expiration/complexity as exam concepts while separating current implementation policy. Blog step-count formatting does not override objective 1.4."
+            }
+          },
+          "findings": [
+            {
+              "id": "fc0u71-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Full objectives needed finer teaching coverage",
+              "url": "https://lecbyo.files.cmp.optimizely.com/download/1e77e02ebef111efbcf946d2fe8fe33a?checkExpiry=false",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "FC0-U71"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The PDF contains31 numbered objectives, including 2.7 internet services and 6.5 wireless configuration, versus29 summary rows on the main page.",
+              "recommendation": "Map all 31 IDs and add internet-service comparison, explicit wireless setup/verification, fuller device/browser/privacy details and two checks.",
+              "disposition": "applied",
+              "source_id": "comptia-fc0-u71-objectives-pdf",
+              "resolution": "Map all 31 IDs and add internet-service comparison, explicit wireless setup/verification, fuller device/browser/privacy details and two checks."
+            },
+            {
+              "id": "fc0u71-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Units needed worked calculations and notation correction",
+              "url": "https://physics.nist.gov/cuu/Units/binary.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "FC0-U71"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NIST distinguishes decimal MB from binary MiB and bits from bytes; PDF1.3uses a mixed Terabytes/Tbps example.",
+              "recommendation": "Teach explicit units, binary/hex/octal conversion and a 100 MB at 80 Mbps calculation without copying the typo.",
+              "disposition": "applied",
+              "source_id": "nist-binary-prefixes",
+              "resolution": "Teach explicit units, binary/hex/octal conversion and a 100 MB at 80 Mbps calculation without copying the typo."
+            },
+            {
+              "id": "fc0u71-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Database relationships and backups needed observable behavior",
+              "url": "https://www.sqlite.org/foreignkeys.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "FC0-U71"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "SQLite foreign-key enforcement must be enabled per connection before a transaction; a declared key alone is insufficient.",
+              "recommendation": "Add actual constraint failures, a left-join/COUNT distinction, independent backup and reopened synthetic restore checks.",
+              "disposition": "applied",
+              "source_id": "sqlite-foreign-keys",
+              "resolution": "Add actual constraint failures, a left-join/COUNT distinction, independent backup and reopened synthetic restore checks."
+            },
+            {
+              "id": "fc0u71-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Exam password vocabulary needed current-policy context",
+              "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "FC0-U71"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objectives mention expiration and complexity; current NIST centrally verified password guidance rejects periodic rotation and composition rules while requiring compromise-driven change.",
+              "recommendation": "Explain the terms without making universal rotation advice; retain scoped 15/8 minimums, unique secrets, MFA and recovery.",
+              "disposition": "applied",
+              "source_id": "nist-800-63b-4",
+              "resolution": "Explain the terms without making universal rotation advice; retain scoped 15/8 minimums, unique secrets, MFA and recovery."
+            },
+            {
+              "id": "fc0u71-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Private browsing did not fully explain persistent artifacts",
+              "url": "https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "FC0-U71"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current Firefox reference distinguishes session data from saved downloads/bookmarks and does not claim internet anonymity.",
+              "recommendation": "Add explicit artifact and synchronization boundaries; browser lab remains proposed.",
+              "disposition": "applied",
+              "source_id": "mozilla-private-browsing",
+              "resolution": "Add explicit artifact and synchronization boundaries; browser lab remains proposed."
+            },
+            {
+              "id": "fc0u71-deep-6",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Learning time estimates differed from the provider listing",
+              "url": "https://www.comptia.org/en-us/certifications/tech/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "FC0-U71"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current Tech+ page listsLearn 25–40,Practice 10–20 andLabs 15–25hours.",
+              "recommendation": "Label these as current provider estimates, not guaranteed personal completion times.",
+              "disposition": "applied",
+              "source_id": "comptia-fc0-u71-blueprint",
+              "resolution": "Label these as current provider estimates, not guaranteed personal completion times."
+            }
+          ],
+          "notes": "Mapped all 31 numbered objectives in the officially linked version 4.0 PDF against the 29 main-page summary rows. Added missing internet-service and wireless-configuration depth, three original Python/SQLite examples with 30 actual local checks,42 answers and current password/browser/unit distinctions. All eight full device/platform labs remain proposed; no new exam transition identified. Same-context AI review; human review pending. See docs/research/2026-09-28-fc0-u71-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ex267-deep-review",
       "title": "EX267 complete guide and learning-content review",
       "rubric_version": 1,

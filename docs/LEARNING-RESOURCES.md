@@ -3078,16 +3078,28 @@ No exact current EX378 MeasureUp, Whizlabs, official practice test, or complete 
 
 ### CompTIA Tech+ (FC0-U71)
 
-- Official baseline and delivery: [CompTIA Tech+ V6](https://www.comptia.org/en-us/certifications/tech/) (**2–4 hours for scope mapping and sample investigation**); the page lists up to 70 questions in 60 minutes and distinguishes no-expiration FC0-U71 from five-year FC0-U71-CE
-- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/) (**20–35 hours estimated**), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/) (**8–15 selected hours estimated**), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**4–8 remediation hours estimated**); exact Tech+ access and bundles vary
-- Structured path: [Pluralsight FC0-U71](https://www.pluralsight.com/paths/comptia-tech-fc0-u71) (**13 listed hours plus 8–15 practice hours**), with nine courses, three labs, and a practice exam
-- Compact alternative: [LinkedIn Learning / Total Seminars](https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep) (**4 hours 50 minutes plus 8–15 practice hours**)
-- Subscription alternative: [O'Reilly TOTAL Tech+](https://www.oreilly.com/library/view/total-comptia/9781837021550/) (**about 5–8 hours estimated; verify current runtime**)
-- Marketplace course: [Udemy / Mike Chapple](https://www.udemy.com/course/certmike-comptia-it-fundamentals-itf/) (**4 hours 6 minutes plus labs/review**, updated May 2026)
-- Explanation-led assessment: [MeasureUp Tech+](https://www.measureup.com/comptia-tech-practice-test.html) (**171 questions listed; allow 4–8 hours across attempts and remediation**)
-- Free video route: [Technical Institute of America FC0-U71 full course](https://www.youtube.com/watch?v=uk7uhpyNmhE) (**verify current runtime; allow 8–15 hours with notes and hands-on repetition**)
+Resource details from the [FC0-U71 guide](../guides/FC0-U71-comptia-tech-plus.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one current primary route, handle real devices/files/networks and small programs/data sets, then use one ethical explanation-led assessment for remediation. No exact current Whizlabs Tech+ product was independently verified; reject recalled-question claims.
+This is not a complete list and is not meant to be consumed in full. Choose one coherent primary course or book, add hands-on practice and one explanation-led assessment, and use the official objectives as the final scope checklist.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [CompTIA CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/) | Paid official learning platform | Provider estimate: 25–40 hours; add your own notes/review |
+| [CompTIA CertMaster Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/) | Paid official labs; availability/bundle varies | Provider estimate: 15–25 hours |
+| [CompTIA CertMaster Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) | Paid official adaptive practice | Provider estimate: 10–20 hours |
+| [Pluralsight Tech+ FC0-U71 path](https://www.pluralsight.com/paths/comptia-tech-fc0-u71) | Subscription; 9 courses, 3 labs, practice exam | 13 listed hours plus 8–15 practice hours |
+| [LinkedIn Learning Tech+ Cert Prep](https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep) | Subscription; Total Seminars; March 13, 2025 release listed | 4 hours 50 minutes plus 8–15 practice hours |
+| [O'Reilly TOTAL Tech+ FC0-U71](https://www.oreilly.com/library/view/total-comptia/9781837021550/) | Subscription video | About 5–8 hours estimated; verify current listed runtime |
+| [Udemy Tech+ by Mike Chapple](https://www.udemy.com/course/certmike-comptia-it-fundamentals-itf/) | Paid marketplace course | Current runtime unverified (page blocked); budget separate lab/review time |
+| [MeasureUp Tech+ practice test](https://www.measureup.com/comptia-tech-practice-test.html) | Paid; 171-question bank listed | About 4–8 hours across attempts and explanation review |
+| [Technical Institute of America full course](https://www.youtube.com/watch?v=uk7uhpyNmhE) | Free YouTube course | Verify current video runtime; allow 8–15 hours with notes and labs |
+
+The CertMaster estimates above are shown on the current Tech+ page; they are provider estimates, not personal completion promises. The Pluralsight path and LinkedIn/MeasureUp public metadata were rechecked. O'Reilly and Udemy blocked automated access; the YouTube fetch exposed only a short shell, so video content/runtime were not verified. No paid lesson interiors were reviewed.
+
+- **Troubleshooting method:** Damon M. Garn’s December 18, 2024 [CompTIA article](https://www.comptia.org/blog/troubleshooting-methodology) supports evidence gathering, a rollback plan and full functional verification. Its opening list splits planning and implementation, while its body combines them; use objective 1.4 for Tech+ scope and practice the actions rather than a blog’s step count.
+- **Focused practice:** pair the Python/SQLite references above with the original examples, and the browser/wireless references with authorized device labs. Product-specific syntax is implementation practice, not an extra exam requirement.
+
+No exact current Whizlabs Tech+ product was independently verified. Practice questions should diagnose concepts and explain alternatives, not promise recalled exam content. Provider prices, bundles, question counts, runtimes, access, and revision dates are volatile—verify before purchase.
 
 ### CompTIA A+ Core 1 (220-1201)
 
