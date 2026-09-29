@@ -3,6 +3,286 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mongodb-developer-learning-paths",
+      "title": "MongoDB developer learning paths",
+      "url": "https://learn.mongodb.com/pages/mongodb-developer-learning-paths",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct50-character shell; complete browser main read. Five20-hour language paths and advertised50%completiondiscount; no eligibility/account verification or claim all paths have equal visiblecard totals. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-certification-program-guide",
+      "title": "MongoDB certification program guide",
+      "url": "https://learn.mongodb.com/courses/program-guide",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct50-character shell; full browser landing15minutes/free/register and linked public viewer wrapper read. Policy document interior not retrieved; no enrollment/account action or retake/pass-score claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atomicity-transactions",
+      "title": "Atomicity and transactions",
+      "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete3806-character main/browser read. Single-document filter recheck,expected-current-value/overwrite risk,$inc andmulti-documentnon-atomicity. No actual server/concurrent workload or sample commands run. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-elemmatch-query",
+      "title": "MongoDB element-match query predicate",
+      "url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete5056-character main and examples read. One arrayelement mustsatisfyallconditions;non-arraydifference andsinglecondition/$ne examples. Original fixture uses different data; no copiedvendorcode orruntimeproof. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-index-unique",
+      "title": "MongoDB unique indexes",
+      "url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Full8356-character direct main read except no linked interiors. Single/compound/multikey uniqueness,existingviolations,null/missing,partialfilter andsharded_id boundaries. No index creation or topology test. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-index-esr",
+      "title": "Equality, sort and range index guideline",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete8172-character main read in browser plusdirecttail. Equalityfirst,ESR/ERS tradeoff,sortprefix andversion-sensitive201-element$in threshold. No measuredplan/performance claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-index-multikey",
+      "title": "MongoDB multikey indexes",
+      "url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete6858-character main read. One indexedarrayfieldperdocument,uniquewithindocument/otherdocument distinction,coveringrestrictions and9.0-specificquerykill note. Whole-array section shows scalarquery inconsistentwithitsprose; not copied as exact-array code. No9.0availability claim orruntime. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-bson-types",
+      "title": "MongoDB BSON types",
+      "url": "https://www.mongodb.com/docs/manual/reference/bson-types/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete10479-character main read. Type table,ObjectId/time/date distinction,decimalprecision andcodec cautions. A displayed0.1+0.1example has erroneous output; originalPythoncheck verifies0.2. Constructor/API examples and incorrect arithmetical output not copied. No BSON roundtrip. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-pymongo-pools",
+      "title": "PyMongo connection pools",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/connection-options/connection-pools/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete3952-character main/table/browser read:capacityversusmaxConnecting andconnect/socket/waitqueuewaits. No actual pool,overload or connection test; defaults not generalized to other drivers. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-pymongo-update",
+      "title": "PyMongo document updates",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/update/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete7519-character main read. update_one/update_many/options/resultfields includingmatched/modified/upserted. No PyMongoinstalled orconnected; broad privilege/schema-bypass options not enacted. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-pymongo-cursors",
+      "title": "PyMongo cursors",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/query/cursors/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete5938-character main read across browser anddirecttail. Iteration/materialization,close,tailing anderrornotes. No infinite polling example run; no copied ambiguous async to_list helper. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-pymongo-release-notes",
+      "title": "PyMongo release notes",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/reference/release-notes/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected current4.18.1/4.18 through4.13 entries read; start4.12 seen. Not entire historic release list or linkedchange/security pages. Version/API awareness only; no universalGA/upgrade recommendation or installation. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-server-90-release-notes",
+      "title": "MongoDB 9.0 release notes and upcoming labels",
+      "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected openingpatchheadings andGeneralChanges through earlymetrics read,notfull19617-characterreleasebody.9.0.0/9.0.1/9.0.2 labeledUpcoming althoughmanualselectorcurrent; treatavailabilityasunresolveddeployment-specificwatch. No serverfeature installation or examversionchange inferred. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-null-missing",
+      "title": "Null and missing field queries",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/query-for-null-fields/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct487-character main andbrowserinteractivebody incomplete; full indexedprimarymain read separately. Scalar null/missing/type/existence rule used; version9.0dottedarraychanges explicitlynotmodeled orclaimeddeployed. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-findone-projection",
+      "title": "Find one document and projection rules",
+      "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findone/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected first125directlines:definition,selectionbyplan,returnnull/document,parametersandcompleteprojectionrules. Laterexample snippets seen;notentire9002-characterbody. No assumptionfindOnehasbusinessorderingwithoutsort. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-updateone",
+      "title": "Single document update and upsert semantics",
+      "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.updateone/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected definition/syntax,upsertparameter/resultfields andupsertbehavior/examples read from32110-characterbody. Not all sharding/transaction sections independentlyreconciled; no universalshard-keyrecipe. No server execution. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-embedded-query",
+      "title": "Query embedded documents",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/query-embedded-documents/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct588-character main andbrowser(with/withoutlanguageparameter)omitinteractiveexamples. Historicalv7.0/v8.2 indexed excerpts seen; currentfield-orderclaiminsteadcorroboratedbycompletecurrentDocumentreference. No currentinteractiveexampleaudit claimed. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-documents",
+      "title": "MongoDB document limits and field ordering",
+      "url": "https://www.mongodb.com/docs/manual/core/document/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete9199-character main read:documentstructure,fieldrestrictions,positions,16MiB,fieldordering,_id/time-series/drivergenerationnotes. No databasevalidation/sizeencodingrun. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-array-updates",
+      "title": "MongoDB array update operators",
+      "url": "https://www.mongodb.com/docs/manual/reference/operator/update-array/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Fullshortprimaryoperator/modifiertables read inbrowser; direct1334-character capture. Did not readeverylinkedoperatorrestriction; guidecallsfor exactformtesting. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-insertmany",
+      "title": "MongoDB ordered and unordered insertion",
+      "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.insertmany/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selectedprimarydefinition,syntax,ordered/unorderedhandling,results,batching,_id anderrors throughtransactioncontext read. Notfull12728-characterexamplebody; no batch/serverexecution. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "salesforce-agentforce-testing-center",
       "title": "Agentforce Testing Center and mutation boundaries",
       "url": "https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5",
@@ -50291,31 +50571,132 @@
       "notes": "Current product-change context. Salesforce states Agentforce changes as often as weekly; use to maintain implementation awareness, not to replace the Spring '26 exam guide. September 29 SALESFORCE-AGENTFORCE-SPECIALIST deep review: Direct61-character shell. Full current release article not audited; retained discovery entry with explicit limitation. Exact weekly cadence not reasserted. Release awareness instead supported by read maintenance introduction and versioned Flow documentation. See docs/research/2026-09-29-salesforce-agentforce-specialist-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-developer-exam","title":"MongoDB Associate Developer Exam","url":"https://learn.mongodb.com/pages/mongodb-associate-developer-exam","publisher":"MongoDB University","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Current public 53-question, 75-minute, USD150, English, online-proctored contract and C#/Java/Node.js/PHP/Python selection."
+      "id": "mongodb-associate-developer-exam",
+      "title": "MongoDB Associate Developer Exam",
+      "url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Current public 53-question, 75-minute, USD150, English, online-proctored contract and C#/Java/Node.js/PHP/Python selection. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct50-character application shell; complete browser main and language selection read.53questions,75minutes,onlineproctored,English,no prerequisites,USD150 andfivevariants. No published passing percentage on this page; no booking or policy-interior claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-developer-study-guide","title":"MongoDB Associate Developer Exam Study Guide","url":"https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide","publisher":"MongoDB University","authority_class":1,"source_type":"exam-blueprint","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Canonical 30-minute six-domain objective guide; free enrollment/email capture is required."
+      "id": "mongodb-associate-developer-study-guide",
+      "title": "MongoDB Associate Developer Exam Study Guide",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Canonical 30-minute six-domain objective guide; free enrollment/email capture is required. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct50-character shell; complete public browser landing read:30minutes/free/enrollment. Followed publicly linked GettheGuide viewer:500; public embedded document asset:403. No document contents acquired, enrollment/login submitted or access controls altered. Eighteen saved September2 statements retained, not freshly revalidated. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-python-developer-path","title":"MongoDB Python Developer Path","url":"https://learn.mongodb.com/learning-paths/mongodb-python-developer-path","publisher":"MongoDB University","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Free 20-hour official path. Equivalent C#, Java, Node.js and PHP paths should be selected to match the registered exam variant."
+      "id": "mongodb-python-developer-path",
+      "title": "MongoDB Python Developer Path",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Free 20-hour official path. Equivalent C#, Java, Node.js and PHP paths should be selected to match the registered exam variant. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct50-character shell; complete browser grid/main read.20-hour headline; nine required cards765minutes, three elective learningcards210minutes, separate exam75minutes. Public50%discount advertisement, conditions not independently checked. No lessons/assessments or enrollment. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-developer-practice-questions","title":"Associate Developer Certification Practice Questions","url":"https://learn.mongodb.com/pages/mongodb-developer-practice-questions","publisher":"MongoDB University","authority_class":1,"source_type":"official-practice","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Official language-specific practice collections, generally listed at one hour; use explanations and objective gaps rather than memorizing items."
+      "id": "mongodb-developer-practice-questions",
+      "title": "Associate Developer Certification Practice Questions",
+      "url": "https://learn.mongodb.com/pages/mongodb-developer-practice-questions",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-practice",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Official language-specific practice collections, generally listed at one hour; use explanations and objective gaps rather than memorizing items. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Direct50-character shell; complete short browser public catalog read. C#/Java/PHP/Python listonehour;Node.js cardhasnoduration. No question or explanation interiors accessed/copied. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-manual","title":"MongoDB Manual","url":"https://www.mongodb.com/docs/manual/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Canonical current server, CRUD, aggregation, data-modeling, index, security and operational documentation; confirm version-sensitive behavior."
+      "id": "mongodb-manual",
+      "title": "MongoDB Manual",
+      "url": "https://www.mongodb.com/docs/manual/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Canonical current server, CRUD, aggregation, data-modeling, index, security and operational documentation; confirm version-sensitive behavior. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete4450-character main overview read. Preview/9.x context observed. Marketing generalizations about downtime, failover and every data model not adopted as guarantees. Specific references govern types, queries and atomicity. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-driver-documentation","title":"MongoDB Driver Documentation","url":"https://www.mongodb.com/docs/drivers/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Canonical language-specific client, URI, BSON, CRUD, aggregation, cursor, pooling and error references."
+      "id": "mongodb-driver-documentation",
+      "title": "MongoDB Driver Documentation",
+      "url": "https://www.mongodb.com/docs/drivers/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Canonical language-specific client, URI, BSON, CRUD, aggregation, cursor, pooling and error references. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete1356-character library directory read. Official drivers distinguished from community libraries including Mongoose; linked non-Python API interiors not comprehensively reviewed. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-official-mongodb-guide","title":"The Official MongoDB Guide","url":"https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/","publisher":"O'Reilly / Packt / MongoDB subject-matter experts","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER","MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"September 2025, 374-page/8h51m listed guide written by MongoDB subject-matter experts, with Atlas sizing, scaling, security, networking, resilience and tooling depth beyond the associate scope."
+      "id": "oreilly-official-mongodb-guide",
+      "title": "The Official MongoDB Guide",
+      "url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+      "publisher": "O'Reilly / Packt / MongoDB subject-matter experts",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "September 2025, 374-page/8h51m listed guide written by MongoDB subject-matter experts, with Atlas sizing, scaling, security, networking, resilience and tooling depth beyond the associate scope. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier8h51/374pages/September2025 not reverified; no paid interior or quality claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-query-modify-data-mongodb","title":"Query and Modify Data in MongoDB","url":"https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb","publisher":"Pluralsight","authority_class":3,"source_type":"commercial-learning-path","access_model":"paid","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER"],"notes":"Current 11-hour listed course/lab path covering visual exploration, queries, CRUD, aggregation and search; use selected modules and supplement official-driver syntax."
+      "id": "pluralsight-query-modify-data-mongodb",
+      "title": "Query and Modify Data in MongoDB",
+      "url": "https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Current 11-hour listed course/lab path covering visual exploration, queries, CRUD, aggregation and search; use selected modules and supplement official-driver syntax. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete6184-character public path main/cards read. Seven courses504minutes,fourlabs142minutes,total646minutes versus11-hour header. Dates span2025-05-30 to2026-09-21. No lesson/practice interiors or trial. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-mongodb-complete-developer-guide-academind","title":"MongoDB — The Complete Developer's Guide","url":"https://www.udemy.com/course/mongodb-the-complete-developers-guide/","publisher":"Udemy / Academind","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DEVELOPER","MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Approximately 17.5-hour broad course listed as updated January 2026; select relevant modeling/index sections, distinguish official drivers from frameworks, and reconcile behavior with current official documentation."
+      "id": "udemy-mongodb-complete-developer-guide-academind",
+      "title": "MongoDB - The Complete Developer's Guide",
+      "url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+      "publisher": "Udemy / Academind",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER"
+      ],
+      "notes": "Approximately 17.5-hour broad course listed as updated January 2026; select relevant modeling/index sections, distinguish official drivers from frameworks, and reconcile behavior with current official documentation. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier17.5hours/January2026 metadata and coverage not reverified. Repaired replacement character in catalog title without inventing a new title. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"mongodb-associate-data-modeler-exam","title":"MongoDB Associate Data Modeler Exam","url":"https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam","publisher":"MongoDB University","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-DATA-MODELER"],"notes":"Current public 75-question, 110-minute, USD150, English, online-proctored contract. An older course route still exposes 70 questions/105 minutes and is not treated as current."
@@ -56228,9 +56609,11 @@
       "authority_class": 2,
       "source_type": "security-guidance",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["MONGODB-ASSOCIATE-DEVELOPER"],
-      "notes": "Vendor-neutral NoSQL input, driver, access, secret, monitoring, and backup guidance; supporting security practice, not MongoDB exam scope."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "notes": "Vendor-neutral NoSQL input, driver, access, secret, monitoring, and backup guidance; supporting security practice, not MongoDB exam scope. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete10100-character capture including main read. Adopt typed constrained queries and separate identity scope. Example driver objects/dollar-string rejection are not complete validation; broad NoSQL-versus-relational risk and obsolete/config-specific shorthand not adopted. No example installed or live query executed. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-performance-data-modeling-memory-sizing",

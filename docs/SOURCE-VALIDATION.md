@@ -1745,6 +1745,8 @@ The review maps every public objective through approved use case and identity â†
 
 ## MONGODB-ASSOCIATE-DEVELOPER coverage record
 
+The September 29 [deep review](research/2026-09-29-mongodb-associate-developer-deep-review.md) maps 18 detailed objectives. Retained18 historical objective statements with the current enrolled body still unavailable. Added40 answered prompts,38 executed Python predictions and a syntax-checked unexecuted shell exercise. Clarified array/null/projection semantics,guarded reservation,replay,index anddriver contracts; reconciled catalog durations. Live database,policy/paid interiors,release availability andhuman review remain limited. Current guide citations: 30 registered, 28 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: MongoDB Overview and the Document Model (8%), CRUD (51%), Indexes (17%), Data Modeling (4%), Tools and Tooling (2%), and language-specific Drivers (18%)

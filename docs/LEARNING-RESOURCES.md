@@ -3096,6 +3096,31 @@ This is **not a complete list** and is not meant to be consumed in full. Select 
 
 Reject guaranteed-pass products, “actual question” files, VCE collections and unexplained answer banks. Use original practice and public documentation; no recalled exam item, paid question bank or shared superbadge solution was used in this review.
 
+### MONGODB-ASSOCIATE-DEVELOPER — MongoDB Associate Developer
+
+Resource details from the [MONGODB-ASSOCIATE-DEVELOPER guide](../guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Choose material for the registered language and identified gaps. Public catalog metadata does not establish lesson quality or current exam alignment. No paid lessons, practice-question interiors, enrollment, trial or purchase was accessed.
+
+The [developer-path directory](https://learn.mongodb.com/pages/mongodb-developer-learning-paths) lists five 20-hour paths and advertises a 50% exam discount on completion; verify eligibility before budgeting. The Python path's visible required cards total 12h45 (765 minutes), with 3h30 of elective learning and a separate 75-minute exam card. Thus visible learning totals 16h15, or 17h30 with that exam card, while the page headline remains 20 hours. These are different published measures, not a calculated promise of completion time or an exam fee waiver.
+
+Pluralsight currently lists seven courses and four labs: course cards total 8h24, labs 2h22, combined 10h46 against an 11-hour headline. Their dates span May 2025 through September 21, 2026. The path emphasizes querying and data analysis, so add the official selected-driver and application consistency work. Paid lesson interiors were not evaluated.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Associate Developer exam page](https://learn.mongodb.com/pages/mongodb-associate-developer-exam) — current public contract and language choices | Public | Our reading estimate: 10–20 min |
+| [Official exam study guide](https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide) — canonical scope; body unavailable in this review | Free enrollment advertised | 30 min listed; current objective body not reverified |
+| [Certification program guide](https://learn.mongodb.com/courses/program-guide) — recheck policy before booking | Free enrollment advertised | 15 min listed; interior not reviewed |
+| [Python Developer Path](https://learn.mongodb.com/learning-paths/mongodb-python-developer-path) — choose the corresponding registered-language path | Free enrollment | 20-hour headline; Python visible learning cards 16h15; exam card additional |
+| [Official developer practice catalog](https://learn.mongodb.com/pages/mongodb-developer-practice-questions) — use explanations and gap analysis | Free enrollment | 1 hr listed for C#/Java/PHP/Python; Node.js card shows no duration in this capture |
+| [Manual](https://www.mongodb.com/docs/manual/) and [official drivers](https://www.mongodb.com/docs/drivers/) — exact behavior and API/version contracts | Public | Our selected-reading estimate: 6–12 hr plus tests |
+| [OWASP NoSQL Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html) — supplement with typed input and identity tests | Public | Our estimate: 45–90 min plus tests |
+| [The Official MongoDB Guide](https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/) — broader reference, subject to current catalog verification | Paid; HTTP 403 | Earlier 8h51 / 374-page / September 2025 metadata not reverified |
+| [Query and Modify Data in MongoDB](https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb) — selected data-query/analysis gaps | Paid | 11-hour headline; current seven-course/four-lab cards total 10h46 |
+| [MongoDB — The Complete Developer's Guide](https://www.udemy.com/course/mongodb-the-complete-developers-guide/) — compare driver and framework coverage before purchase | Paid; HTTP 403 | Earlier ~17.5-hour / January 2026 metadata not reverified |
+
+Reject guaranteed-pass offers, copied or recalled exam questions, and unexplained answer banks. Prefer original explanations, documented alternatives and reproducible application evidence.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

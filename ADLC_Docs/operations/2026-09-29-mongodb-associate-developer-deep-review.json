@@ -1,0 +1,1676 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "7f2dd4e5829f9e42f25fc50e76c604373ce81df1b63467993fb24b0a4bf161b4",
+  "guide_after_sha256": "908b357eab714f762a6fb3144aff6bb1c61e7e36f76bcb935766f142f4f54145",
+  "prior_records": {
+    "exam": {
+      "code": "MONGODB-ASSOCIATE-DEVELOPER",
+      "level": "intermediate",
+      "vendor_id": "mongodb",
+      "title": "MongoDB Associate Developer",
+      "status": "active",
+      "study_guide_url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+      "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. MongoDB recommends software-engineering experience and MongoDB training or equivalent application use. Select C#, Java, Node.js, PHP or Python, then practice BSON/document behavior, precise CRUD and aggregation results, workload-driven indexes and modeling, Atlas exploration, and the exact official-driver syntax, types, pooling, cursors and errors."
+    },
+    "review": {
+      "id": "mongodb-associate-developer-2026-09-07-source-validation",
+      "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+      "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-developer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+      "objective_coverage": [
+        {
+          "objective_group": "MongoDB Overview and the Document Model (8%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "CRUD (51%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 2–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Indexes (17%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Data Modeling (4%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Tools and Tooling (2%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenario 3",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Drivers (18%)",
+          "guide_sections": [
+            "Section 6",
+            "Scenarios 1–2",
+            "Labs 1 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six September 2 weighted domains are mapped through BSON/flexible-document behavior, precise CRUD and aggregation state, query-shaped indexes, workload-based modeling, current Atlas exploration, and selected-language official-driver URI/pooling/types/cursors/errors. Three application scenarios, eight authorized labs and 40 original checks are included. The public exam contract still renders, but the enrolled objective body could not be deterministically re-audited on September 7; that blocker and the dated weight baseline are explicit. OWASP NoSQL guidance adds secure application practice without being treated as MongoDB exam scope. No recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "mongodb-associate-developer-exam",
+        "title": "MongoDB Associate Developer Exam",
+        "url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-certification-page",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Current public 53-question, 75-minute, USD150, English, online-proctored contract and C#/Java/Node.js/PHP/Python selection."
+      },
+      {
+        "id": "mongodb-associate-developer-study-guide",
+        "title": "MongoDB Associate Developer Exam Study Guide",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Canonical 30-minute six-domain objective guide; free enrollment/email capture is required."
+      },
+      {
+        "id": "mongodb-python-developer-path",
+        "title": "MongoDB Python Developer Path",
+        "url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Free 20-hour official path. Equivalent C#, Java, Node.js and PHP paths should be selected to match the registered exam variant."
+      },
+      {
+        "id": "mongodb-developer-practice-questions",
+        "title": "Associate Developer Certification Practice Questions",
+        "url": "https://learn.mongodb.com/pages/mongodb-developer-practice-questions",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-practice",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Official language-specific practice collections, generally listed at one hour; use explanations and objective gaps rather than memorizing items."
+      },
+      {
+        "id": "mongodb-manual",
+        "title": "MongoDB Manual",
+        "url": "https://www.mongodb.com/docs/manual/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Canonical current server, CRUD, aggregation, data-modeling, index, security and operational documentation; confirm version-sensitive behavior."
+      },
+      {
+        "id": "mongodb-driver-documentation",
+        "title": "MongoDB Driver Documentation",
+        "url": "https://www.mongodb.com/docs/drivers/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Canonical language-specific client, URI, BSON, CRUD, aggregation, cursor, pooling and error references."
+      },
+      {
+        "id": "oreilly-official-mongodb-guide",
+        "title": "The Official MongoDB Guide",
+        "url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+        "publisher": "O'Reilly / Packt / MongoDB subject-matter experts",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER",
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "September 2025, 374-page/8h51m listed guide written by MongoDB subject-matter experts, with Atlas sizing, scaling, security, networking, resilience and tooling depth beyond the associate scope."
+      },
+      {
+        "id": "pluralsight-query-modify-data-mongodb",
+        "title": "Query and Modify Data in MongoDB",
+        "url": "https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "commercial-learning-path",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Current 11-hour listed course/lab path covering visual exploration, queries, CRUD, aggregation and search; use selected modules and supplement official-driver syntax."
+      },
+      {
+        "id": "udemy-mongodb-complete-developer-guide-academind",
+        "title": "MongoDB — The Complete Developer's Guide",
+        "url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+        "publisher": "Udemy / Academind",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER",
+          "MONGODB-ASSOCIATE-DATA-MODELER"
+        ],
+        "notes": "Approximately 17.5-hour broad course listed as updated January 2026; select relevant modeling/index sections, distinguish official drivers from frameworks, and reconcile behavior with current official documentation."
+      },
+      {
+        "id": "owasp-nosql-security-cheat-sheet",
+        "title": "OWASP NoSQL Security Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+        "publisher": "OWASP Cheat Sheet Series",
+        "authority_class": 2,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER"
+        ],
+        "notes": "Vendor-neutral NoSQL input, driver, access, secret, monitoring, and backup guidance; supporting security practice, not MongoDB exam scope."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "942f47af91d9ba55ad312772d7f9a04ef3671261253e406bfb9f7c3c906c6d1d",
+      "guide_sections": [
+        "1. MongoDB Overview and the Document Model — 8%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "121a15566a9841fe0dd85010fdce9fb24352101882eb7ab11d414dc5c49a1a23",
+      "guide_sections": [
+        "1. MongoDB Overview and the Document Model — 8%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "d55dbc523d507eb66a5524762e57951467d734962e02e5b78f717fdc9a08090e",
+      "guide_sections": [
+        "2. CRUD — 51%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "036c6167ed3dae057aa85a1109e0e047d894387c6ae28f5117ccea6bcc2a5a25",
+      "guide_sections": [
+        "2. CRUD — 51%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "70b53d84f7a9bde9362ed19ca390b3f2023e3f25e7da258e60a5be7379549995",
+      "guide_sections": [
+        "2. CRUD — 51%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "24f34c52444311865148380b0a982dec4cd5d4d10a434fe5a0dbd61fa082842b",
+      "guide_sections": [
+        "2. CRUD — 51%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "4fcb7bd32a156a6b47e3884db1d8a19526de1662e94907c1e0a9292995c45c1f",
+      "guide_sections": [
+        "2. CRUD — 51%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "d48cb80a2f238933865e4e8d513e2b427c3f70c445e87c71b1af2cd4e0a29d81",
+      "guide_sections": [
+        "2. CRUD — 51%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "52696840b5a22f60703d65cdba5e9367a239797ebca394e2f009cb63d913758f",
+      "guide_sections": [
+        "2. CRUD — 51%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "232a529fe25ba5ed15cc9665e22b8d88c9ddecbdcf5ab5e68c49c7fe0c34aa35",
+      "guide_sections": [
+        "3. Indexes — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "f4505a25709454ac98db639f40246a3a36b1e30084885dfcf4e37a8d1bec1f98",
+      "guide_sections": [
+        "3. Indexes — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "187376a2ab746bc218600ec470c2a71ceb4aabfeb2c0fdcd1fd36938602d3fed",
+      "guide_sections": [
+        "3. Indexes — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "c042a7f31a69af74fb8bbcdbcb262900555ef64b38a49dfb77f07f9b1241ecdf",
+      "guide_sections": [
+        "4. Data Modeling — 4%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "f9f377b49ceb7c4d2e9263fa5c281f88e9424ca6da5a2e0b34baf8bfb86f67f5",
+      "guide_sections": [
+        "5. Tools and Tooling — 2%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "3e9b6dbe7d4004d487101afd80da0a5181129c038d2d85a410d2b93b4514c987",
+      "guide_sections": [
+        "6. Language-specific Drivers — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "1bb7a46c45f0b0aff3c4d72318cd6c0a5841768e2f527e14ce9a921c11e8f7f1",
+      "guide_sections": [
+        "6. Language-specific Drivers — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "867cb86bb5ea23a1a3b9fbb942bb075d8b53541bcf7809ffcd5d71d37c7abca8",
+      "guide_sections": [
+        "6. Language-specific Drivers — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "c65e9ff30d27fd8b072049aee4519c746e2f837a268975968b2a334babebc220",
+      "guide_sections": [
+        "6. Language-specific Drivers — 18%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "MONGODB-ASSOCIATE-DEVELOPER"
+    ],
+    "results": [
+      {
+        "code": "MONGODB-ASSOCIATE-DEVELOPER",
+        "title": "MongoDB Associate Developer",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+        "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+        "snapshot_path": "data\\objective-snapshots\\mongodb-associate-developer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mongodb-associate-developer-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find MongoDB study-guide identity or objectives",
+        "manual_review_reason": "The reachable public MongoDB response is an enrollment shell and does not expose the reviewed study-guide identity or objectives without its browser application.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 30,
+    "reachable": 28,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mongodb-associate-developer-exam",
+      "url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+      "checked_at": "2026-09-29T15:28:37.739286+00:00",
+      "health": {
+        "id": "mongodb-associate-developer-exam",
+        "url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+        "checked_at": "2026-09-29T15:28:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Associate Developer Course Exam | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+        "duration_signals": [
+          "75 Minutes"
+        ],
+        "signal_fingerprint": "eb5d61c41263178e7061e5926e227841e9c4a82e0f9f9936782c249ca76834e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+      "sha256": "ba4a0ffe36b985e94b69d84930bdf06b5af63a61742f87135ceee99d64a2db31",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-associate-developer-study-guide",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+      "checked_at": "2026-09-29T15:28:37.740100+00:00",
+      "health": {
+        "id": "mongodb-associate-developer-study-guide",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+        "checked_at": "2026-09-29T15:28:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Associate Developer Exam Study Guide",
+        "canonical_url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+        "duration_signals": [
+          "30 Minutes"
+        ],
+        "signal_fingerprint": "8090645ec96242044bd8a9f1c1e5186f765050d1d78653cc0f5b3129d7815d30",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+      "sha256": "64f8e819f4bcc391799e086c594513806d634213fa20a27233f3c0103192da8c",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-python-developer-path",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+      "checked_at": "2026-09-29T15:28:37.740612+00:00",
+      "health": {
+        "id": "mongodb-python-developer-path",
+        "url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+        "checked_at": "2026-09-29T15:28:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Courses and Trainings | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+        "duration_signals": [
+          "1 Hour",
+          "1.25 Hours",
+          "1.5 Hours",
+          "1.75 Hours",
+          "15 Minutes",
+          "2 Hours",
+          "2.25 Hours",
+          "20 Hours",
+          "75 Minutes"
+        ],
+        "signal_fingerprint": "26f57a3818bd8b7376e490a47c9c21c3e74e68f2da8fbc125d7334e2033b9e53",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+      "sha256": "765d5e7ebe8c3bce25920d3a894c5fddf3773a9e2eec9af3f2ec3485a4a4fa74",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-developer-practice-questions",
+      "url": "https://learn.mongodb.com/pages/mongodb-developer-practice-questions",
+      "checked_at": "2026-09-29T15:28:38.629436+00:00",
+      "health": {
+        "id": "mongodb-developer-practice-questions",
+        "url": "https://learn.mongodb.com/pages/mongodb-developer-practice-questions",
+        "checked_at": "2026-09-29T15:28:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/pages/mongodb-developer-practice-questions",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Associate Developer Exam Practice | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/pages/mongodb-developer-practice-questions",
+        "duration_signals": [
+          "1 Hour"
+        ],
+        "signal_fingerprint": "e27f1fd903f07f55482d296d131b4e4a77d0fd28f56594a239f90c204fcae30c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/pages/mongodb-developer-practice-questions",
+      "sha256": "e327f2a97b7bb44ab0ebddb3e0590bcba02eee11a4e66697935dd45d481ea3f4",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-manual",
+      "url": "https://www.mongodb.com/docs/manual/",
+      "checked_at": "2026-09-29T15:28:38.677276+00:00",
+      "health": {
+        "id": "mongodb-manual",
+        "url": "https://www.mongodb.com/docs/manual/",
+        "checked_at": "2026-09-29T15:28:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What is MongoDB? - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/",
+        "duration_signals": [],
+        "signal_fingerprint": "ace40596b7946f9d9477099c5e102a75f09a20ea21211704ab91158bf8d9fc52",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/",
+      "sha256": "176fc4a3388d3973048ab5a08d00e2856d8bc35f0cffd32c5c10ee08f85e4229",
+      "text_characters": 4450
+    },
+    {
+      "id": "mongodb-driver-documentation",
+      "url": "https://www.mongodb.com/docs/drivers/",
+      "checked_at": "2026-09-29T15:28:39.006017+00:00",
+      "health": {
+        "id": "mongodb-driver-documentation",
+        "url": "https://www.mongodb.com/docs/drivers/",
+        "checked_at": "2026-09-29T15:28:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/drivers/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Start Developing with MongoDB - Client Libraries - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/drivers/",
+        "duration_signals": [],
+        "signal_fingerprint": "b8e2e1118e7098206c9353bb36f1ab31bba0434415739f71af86979951f62518",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/drivers/",
+      "sha256": "ccd567db08063595d378ffe47c6209add28a013be82ebd5c020f8fad0d25dd8b",
+      "text_characters": 1356
+    },
+    {
+      "id": "oreilly-official-mongodb-guide",
+      "url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+      "checked_at": "2026-09-29T15:28:39.458115+00:00",
+      "health": {
+        "id": "oreilly-official-mongodb-guide",
+        "url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+        "checked_at": "2026-09-29T15:28:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pluralsight-query-modify-data-mongodb",
+      "url": "https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb",
+      "checked_at": "2026-09-29T15:28:39.618583+00:00",
+      "health": {
+        "id": "pluralsight-query-modify-data-mongodb",
+        "url": "https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb",
+        "checked_at": "2026-09-29T15:28:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Query and Modify Data in MongoDB",
+        "canonical_url": "https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb",
+        "duration_signals": [
+          "10 minutes",
+          "11 Hours"
+        ],
+        "signal_fingerprint": "f3a4325df82a460fc6c5734fb462697b92ceecabd402fe2ed8d69eccd4dbe224",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb",
+      "sha256": "95d3399b9a40c65beb964e24c5eee3da4f42cdc17a37a8896492ee3ec11e4763",
+      "text_characters": 6184
+    },
+    {
+      "id": "udemy-mongodb-complete-developer-guide-academind",
+      "url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+      "checked_at": "2026-09-29T15:28:40.098896+00:00",
+      "health": {
+        "id": "udemy-mongodb-complete-developer-guide-academind",
+        "url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+        "checked_at": "2026-09-29T15:28:40+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/mongodb-the-complete-developers-guide/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "owasp-nosql-security-cheat-sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+      "checked_at": "2026-09-29T15:28:40.232088+00:00",
+      "health": {
+        "id": "owasp-nosql-security-cheat-sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+        "checked_at": "2026-09-29T15:28:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "NoSQL Security - OWASP Cheat Sheet Series",
+        "canonical_url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+        "duration_signals": [],
+        "signal_fingerprint": "160ff08df065560f95643076846e6575198b130c6332b6677ac2dd70a380291b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+      "sha256": "606ef65b2e2c3d1b5e48bba679fe55519f4d4afbe7bd1ca0cba10b3c92758cd3",
+      "text_characters": 10100
+    },
+    {
+      "id": "mongodb-developer-learning-paths",
+      "url": "https://learn.mongodb.com/pages/mongodb-developer-learning-paths",
+      "checked_at": "2026-09-29T15:31:04.311579+00:00",
+      "health": {
+        "id": "mongodb-developer-learning-paths",
+        "url": "https://learn.mongodb.com/pages/mongodb-developer-learning-paths",
+        "checked_at": "2026-09-29T15:31:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/pages/mongodb-developer-learning-paths",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Developer Learning Paths | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/pages/mongodb-developer-learning-paths",
+        "duration_signals": [
+          "20 Hours"
+        ],
+        "signal_fingerprint": "4eb1d1c082b086b5d4aa51e434e8281e7748d0362833bd5d83033c7af9cc6826",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/pages/mongodb-developer-learning-paths",
+      "sha256": "7367d62939d5f294cd27b7f60e90d88bef8b8f7b374defd8f2ba77804b6d0333",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-certification-program-guide",
+      "url": "https://learn.mongodb.com/courses/program-guide",
+      "checked_at": "2026-09-29T15:31:04.312244+00:00",
+      "health": {
+        "id": "mongodb-certification-program-guide",
+        "url": "https://learn.mongodb.com/courses/program-guide",
+        "checked_at": "2026-09-29T15:31:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/program-guide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification Program Guide - MongoDB",
+        "canonical_url": "https://learn.mongodb.com/courses/program-guide",
+        "duration_signals": [
+          "15 Minutes"
+        ],
+        "signal_fingerprint": "f6d3dbc1a4673a94295e826879d32eefe8c6b7bedfc4db53a76d9560134d6a72",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/program-guide",
+      "sha256": "79d72cf8a34af4bdd9a5cdd2455994942d9273c8ccea4088b2134d69927601f8",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-atomicity-transactions",
+      "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "checked_at": "2026-09-29T15:31:04.312614+00:00",
+      "health": {
+        "id": "mongodb-atomicity-transactions",
+        "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "checked_at": "2026-09-29T15:31:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Atomicity and Transactions - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "duration_signals": [],
+        "signal_fingerprint": "9767f5e42a5c1fa64422b82abe1fb25f328ede159341d0ac3119ac86a177ebe2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "sha256": "698f128a48ef55c4baaac26e7cba777f5037851b38f1b257fc428eeac9b59fdb",
+      "text_characters": 3806
+    },
+    {
+      "id": "mongodb-elemmatch-query",
+      "url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/",
+      "checked_at": "2026-09-29T15:31:05.146412+00:00",
+      "health": {
+        "id": "mongodb-elemmatch-query",
+        "url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/",
+        "checked_at": "2026-09-29T15:31:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "$elemMatch (query predicate operator) - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/",
+        "duration_signals": [],
+        "signal_fingerprint": "cfa028fdb8849e77f6a37d85b3c9c4857326fde1e394423b12de0e1198e71a29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/",
+      "sha256": "30ea23dbff9a1fef693f86a5c9e47c651d5b2306ab899deae6bd41289be438be",
+      "text_characters": 5056
+    },
+    {
+      "id": "mongodb-index-unique",
+      "url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+      "checked_at": "2026-09-29T15:31:05.218122+00:00",
+      "health": {
+        "id": "mongodb-index-unique",
+        "url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+        "checked_at": "2026-09-29T15:31:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Unique Indexes - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+        "duration_signals": [],
+        "signal_fingerprint": "7b58485527962803db33d77b47c843a04c42582edafc06f1024b894711e559d6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+      "sha256": "2b535182179c0b454da17ead65462cc1a77453aa98987325d5b02e7ce1e853b6",
+      "text_characters": 8356
+    },
+    {
+      "id": "mongodb-index-esr",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+      "checked_at": "2026-09-29T15:31:05.333768+00:00",
+      "health": {
+        "id": "mongodb-index-esr",
+        "url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "checked_at": "2026-09-29T15:31:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The ESR (Equality, Sort, Range) Guideline - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "42414de43e0b31260d7fd4df46f8ce82eae425bf2db22326a56135597bdb886c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+      "sha256": "1c043dac880a0794d3e6661e73bd591f75137e314c01d00d4b22f4e93b65bc39",
+      "text_characters": 8172
+    },
+    {
+      "id": "mongodb-index-multikey",
+      "url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+      "checked_at": "2026-09-29T15:31:05.938953+00:00",
+      "health": {
+        "id": "mongodb-index-multikey",
+        "url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+        "checked_at": "2026-09-29T15:31:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Multikey Indexes - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+        "duration_signals": [],
+        "signal_fingerprint": "75dc7d0692da96ed7e1e04dc64f58fffa2ccc0c93eb8c23fefc403aa8a3323cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/indexes/index-types/index-multikey/",
+      "sha256": "cad538fb88a51caf611bbb329f91f5af4c9c585810a5b1ce722dd99b9645967a",
+      "text_characters": 6858
+    },
+    {
+      "id": "mongodb-bson-types",
+      "url": "https://www.mongodb.com/docs/manual/reference/bson-types/",
+      "checked_at": "2026-09-29T15:31:06.229631+00:00",
+      "health": {
+        "id": "mongodb-bson-types",
+        "url": "https://www.mongodb.com/docs/manual/reference/bson-types/",
+        "checked_at": "2026-09-29T15:31:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/bson-types/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB BSON Types - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/bson-types/",
+        "duration_signals": [],
+        "signal_fingerprint": "0f4493a4dba3ff0f090f1105a0781e2fe66d7394a3f4843086a705e992d42da8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/bson-types/",
+      "sha256": "f393e9345129510dc62adf0b98401fa1cf9996069fe9daa66a71e97a1d783e72",
+      "text_characters": 10479
+    },
+    {
+      "id": "mongodb-pymongo-pools",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/connection-options/connection-pools/",
+      "checked_at": "2026-09-29T15:31:06.487656+00:00",
+      "health": {
+        "id": "mongodb-pymongo-pools",
+        "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/connection-options/connection-pools/",
+        "checked_at": "2026-09-29T15:31:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/connection-options/connection-pools/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Connection Pools - PyMongo Driver - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/connection-options/connection-pools/",
+        "duration_signals": [],
+        "signal_fingerprint": "8c4b7e7651444ab18f102a2a62b3000901c47ebfc11e8417f72c955cf7c70d82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/connect/connection-options/connection-pools/",
+      "sha256": "e956ad7ad32c22035f4d06b1235f1cd2cda31d440c4e7ba97a8a35ca46cf776e",
+      "text_characters": 3952
+    },
+    {
+      "id": "mongodb-pymongo-update",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/update/",
+      "checked_at": "2026-09-29T15:31:06.829496+00:00",
+      "health": {
+        "id": "mongodb-pymongo-update",
+        "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/update/",
+        "checked_at": "2026-09-29T15:31:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/update/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Update Documents - PyMongo Driver - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/update/",
+        "duration_signals": [],
+        "signal_fingerprint": "e40ea5bafc7826d9a41efc329658b84bfbfe2b1a2d5020594069dcdb1cb4286b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/update/",
+      "sha256": "f2307ad04425f0017cb9febf8988e430db0ea1a8ba56c6de139a21d881424f4e",
+      "text_characters": 7519
+    },
+    {
+      "id": "mongodb-pymongo-cursors",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/query/cursors/",
+      "checked_at": "2026-09-29T15:31:07.350119+00:00",
+      "health": {
+        "id": "mongodb-pymongo-cursors",
+        "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/query/cursors/",
+        "checked_at": "2026-09-29T15:31:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/query/cursors/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Access Data From a Cursor - PyMongo Driver - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/query/cursors/",
+        "duration_signals": [],
+        "signal_fingerprint": "af335f783d0f1264fce0723ec59aa79478e2dbebf788433a3358eb8e217d7f19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/crud/query/cursors/",
+      "sha256": "bcecc453ae878627e225b90a5f5dd7c9f188cc87e1382def7a4231924caeabab",
+      "text_characters": 5938
+    },
+    {
+      "id": "mongodb-pymongo-release-notes",
+      "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/reference/release-notes/",
+      "checked_at": "2026-09-29T15:31:07.575202+00:00",
+      "health": {
+        "id": "mongodb-pymongo-release-notes",
+        "url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/reference/release-notes/",
+        "checked_at": "2026-09-29T15:31:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/reference/release-notes/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Release Notes - PyMongo Driver - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/reference/release-notes/",
+        "duration_signals": [],
+        "signal_fingerprint": "6d6e63c0a46a3ae31114335e941d6319f1753b7e9e46f6ccccd67f7530a9af4d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/languages/python/pymongo-driver/current/reference/release-notes/",
+      "sha256": "d4dcefd72d2e9565097f7e194507b341ac2057e8c5f30dc2ddf391e8d2241f66",
+      "text_characters": 14640
+    },
+    {
+      "id": "mongodb-server-90-release-notes",
+      "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "checked_at": "2026-09-29T15:31:07.893916+00:00",
+      "health": {
+        "id": "mongodb-server-90-release-notes",
+        "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+        "checked_at": "2026-09-29T15:31:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/release-notes/9/",
+        "duration_signals": [],
+        "signal_fingerprint": "3370cf8d96dad70d884039f309c86029690b25821636a212c33d7c2d45eb185d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "sha256": "3a6a0f8e49020b49002d2020d4ba3c9fbe5369a37abfae15f174272bb8a60d83",
+      "text_characters": 19617
+    },
+    {
+      "id": "mongodb-null-missing",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/query-for-null-fields/",
+      "checked_at": "2026-09-29T15:34:12.890005+00:00",
+      "health": {
+        "id": "mongodb-null-missing",
+        "url": "https://www.mongodb.com/docs/manual/tutorial/query-for-null-fields/",
+        "checked_at": "2026-09-29T15:34:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/tutorial/query-for-null-fields/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Query for Null or Missing Fields - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/tutorial/query-for-null-fields/",
+        "duration_signals": [],
+        "signal_fingerprint": "1ed74dff8584ac60e95f6a8d9cd603126656b20ed1da6b6b1bb1804c860d7496",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/tutorial/query-for-null-fields/",
+      "sha256": "cc9b38881ab2b0d6c9c55f209512e4f6bff2da29f6dfe169eb5da81406605673",
+      "text_characters": 487
+    },
+    {
+      "id": "mongodb-findone-projection",
+      "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findone/",
+      "checked_at": "2026-09-29T15:34:12.890883+00:00",
+      "health": {
+        "id": "mongodb-findone-projection",
+        "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findone/",
+        "checked_at": "2026-09-29T15:34:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findone/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/method/db/",
+        "duration_signals": [],
+        "signal_fingerprint": "896d399243b8d55a17531c8a5fdea2a505c74ca854f160daaa6fa48bba8da0a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.findone/",
+      "sha256": "39712772fd1af5d0fabbf36bca31a40ffc04f2f122c317d8b9334424b594310a",
+      "text_characters": 9002
+    },
+    {
+      "id": "mongodb-updateone",
+      "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.updateone/",
+      "checked_at": "2026-09-29T15:34:12.891359+00:00",
+      "health": {
+        "id": "mongodb-updateone",
+        "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.updateone/",
+        "checked_at": "2026-09-29T15:34:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.updateone/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/method/db/",
+        "duration_signals": [],
+        "signal_fingerprint": "896d399243b8d55a17531c8a5fdea2a505c74ca854f160daaa6fa48bba8da0a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.updateone/",
+      "sha256": "20a9ca4c06a188a6e52fbb537320d5971b6e1236d7d7824c5f234f8d103f9612",
+      "text_characters": 32110
+    },
+    {
+      "id": "mongodb-embedded-query",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/query-embedded-documents/",
+      "checked_at": "2026-09-29T15:34:14.182259+00:00",
+      "health": {
+        "id": "mongodb-embedded-query",
+        "url": "https://www.mongodb.com/docs/manual/tutorial/query-embedded-documents/",
+        "checked_at": "2026-09-29T15:34:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/tutorial/query-embedded-documents/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Query on Embedded/Nested Documents - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/tutorial/query-embedded-documents/",
+        "duration_signals": [],
+        "signal_fingerprint": "5c9b44c9c2d0fd60b16f342d44c474fcf1f9f4def644dd8aa02600bfce6b729a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/tutorial/query-embedded-documents/",
+      "sha256": "366b2783eb86e42c8ba9e2a13ba64b33777c30d87535e173d85ffd2890c6fc10",
+      "text_characters": 588
+    },
+    {
+      "id": "mongodb-documents",
+      "url": "https://www.mongodb.com/docs/manual/core/document/",
+      "checked_at": "2026-09-29T15:34:59.632415+00:00",
+      "health": {
+        "id": "mongodb-documents",
+        "url": "https://www.mongodb.com/docs/manual/core/document/",
+        "checked_at": "2026-09-29T15:34:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/document/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Documents - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/document/",
+        "duration_signals": [],
+        "signal_fingerprint": "374770bc13c7743f83691580d0a416445556e931bb6527bc68ccec885484439f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/document/",
+      "sha256": "c09e5cc8dc659ae9b11bbce3225e97bf84599f947dbc5a5583a8c446598b82e1",
+      "text_characters": 9199
+    },
+    {
+      "id": "mongodb-array-updates",
+      "url": "https://www.mongodb.com/docs/manual/reference/operator/update-array/",
+      "checked_at": "2026-09-29T15:40:03.546816+00:00",
+      "health": {
+        "id": "mongodb-array-updates",
+        "url": "https://www.mongodb.com/docs/manual/reference/operator/update-array/",
+        "checked_at": "2026-09-29T15:40:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/operator/update-array/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Array Update Operators - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/operator/update-array/",
+        "duration_signals": [],
+        "signal_fingerprint": "b2dbf9ad66b31ca9ca47e5c6695f29f49ba46f6ebd7a8f35556cc0ee4ce37e3c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/operator/update-array/",
+      "sha256": "3cb864fa4298ef0d54406f506ad779b7c9532cf115e9ecdf177d7402fd49dfae",
+      "text_characters": 1334
+    },
+    {
+      "id": "mongodb-insertmany",
+      "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.insertmany/",
+      "checked_at": "2026-09-29T15:40:03.547443+00:00",
+      "health": {
+        "id": "mongodb-insertmany",
+        "url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.insertmany/",
+        "checked_at": "2026-09-29T15:40:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.insertmany/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/method/db/",
+        "duration_signals": [],
+        "signal_fingerprint": "896d399243b8d55a17531c8a5fdea2a505c74ca854f160daaa6fa48bba8da0a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/method/db.collection.insertmany/",
+      "sha256": "d07de000c2712731be15f218dfc1ed74997bbbcb37aed05a5bbfd2e4eeafb9d2",
+      "text_characters": 12728
+    }
+  ],
+  "added_source_ids": [
+    "mongodb-developer-learning-paths",
+    "mongodb-certification-program-guide",
+    "mongodb-atomicity-transactions",
+    "mongodb-elemmatch-query",
+    "mongodb-index-unique",
+    "mongodb-index-esr",
+    "mongodb-index-multikey",
+    "mongodb-bson-types",
+    "mongodb-pymongo-pools",
+    "mongodb-pymongo-update",
+    "mongodb-pymongo-cursors",
+    "mongodb-pymongo-release-notes",
+    "mongodb-server-90-release-notes",
+    "mongodb-null-missing",
+    "mongodb-findone-projection",
+    "mongodb-updateone",
+    "mongodb-embedded-query",
+    "mongodb-documents",
+    "mongodb-array-updates",
+    "mongodb-insertmany"
+  ],
+  "findings": [
+    {
+      "id": "mongodbassociatedeveloper-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Enrolled objective body unavailable",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Public viewer500 anddocumentasset403; saved18statementoutline cannot be confirmed unchanged.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mongodbassociatedeveloper-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A positive balance can hide over-allocation",
+      "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Four of six constrained split-read/write schedules accept8units from5while storing1.",
+      "recommendation": "Add originalconservationcounterexample and distinguishguardedmodel fromliveMongoDBconcurrency.",
+      "disposition": "applied",
+      "source_id": "mongodb-atomicity-transactions",
+      "resolution": "Add originalconservationcounterexample and distinguishguardedmodel fromliveMongoDBconcurrency."
+    },
+    {
+      "id": "mongodbassociatedeveloper-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Array selection and returned shape differ",
+      "url": "https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Separate predicates canmatchdifferentarrayelements;documentselectiondoesnottrimarrayprojection.",
+      "recommendation": "Teach A/Bcounterexample,explicitprojection andunwindgrain.",
+      "disposition": "applied",
+      "source_id": "mongodb-elemmatch-query",
+      "resolution": "Teach A/Bcounterexample,explicitprojection andunwindgrain."
+    },
+    {
+      "id": "mongodbassociatedeveloper-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Uniqueness and covering have scope limits",
+      "url": "https://www.mongodb.com/docs/manual/core/index-unique/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Null/missing,multikey andshardingrulesdefeatunqualifiedunique/coveredclaims.",
+      "recommendation": "Add explicitindexhypotheses andrequireactualplans/results.",
+      "disposition": "applied",
+      "source_id": "mongodb-index-unique",
+      "resolution": "Add explicitindexhypotheses andrequireactualplans/results."
+    },
+    {
+      "id": "mongodbassociatedeveloper-deep-5",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Published path measures differ",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-python-developer-path",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "20-hourheadline;765required+210electivelearningminutes;75-minuteexamseparate.",
+      "recommendation": "Show bothpublishedheadlineandcardtotals withaccessboundary.",
+      "disposition": "applied",
+      "source_id": "mongodb-python-developer-path",
+      "resolution": "Show bothpublishedheadlineandcardtotals withaccessboundary."
+    },
+    {
+      "id": "mongodbassociatedeveloper-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Current manual label does not establish availability",
+      "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "9.0releaseopeningstilllabelsseveralpatchesUpcoming;overviewdescribespreviewcontext.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mongodbassociatedeveloper-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Do not reproduce an erroneous arithmetic example",
+      "url": "https://www.mongodb.com/docs/manual/reference/bson-types/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Displayed0.1+0.1output is inconsistentwiththeoriginalPythonresult0.2.",
+      "recommendation": "Use executedoriginalarithmetic andseparateDecimalfromBSONcodecproof.",
+      "disposition": "applied",
+      "source_id": "mongodb-bson-types",
+      "resolution": "Use executedoriginalarithmetic andseparateDecimalfromBSONcodecproof."
+    },
+    {
+      "id": "mongodbassociatedeveloper-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Query objects still need typed input validation",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-DEVELOPER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A scalar inputslot canreceiveanoperatorobjectunlessvalidated.",
+      "recommendation": "Use fixedschema/types,denyextra tenantfield andseparate trustedidentity.",
+      "disposition": "applied",
+      "source_id": "owasp-nosql-security-cheat-sheet",
+      "resolution": "Use fixedschema/types,denyextra tenantfield andseparate trustedidentity."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "owasp-nosql-security-cheat-sheet",
+      "review": "Supporting public security guidance read and qualified; no publication date asserted andno exam-scope expansion."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 38,
+      "python_blocks_executed": 1,
+      "javascript_blocks_syntax_checked": 1,
+      "python_version": "3.13.14",
+      "node_version": "v24.18.1",
+      "public_example_sha256": "3893cf194f57b086b3998602f2478c1d81d83e51d6857517e70e7151e4de4118",
+      "shell_example_sha256": "d3844ea9c0318811f432f412041d547cb7ab0b22c0e2b74187293b466ad94ac4",
+      "results": {
+        "passed": 38,
+        "checks": [
+          "separate existential predicates admit the split-element counterexample",
+          "one element satisfying both predicates is more selective",
+          "an empty array has no satisfying element",
+          "tenant restriction excludes another tenant's matching document",
+          "scalar membership differs from whole-array equality",
+          "whole-array equality rejects an extra value",
+          "scalar null-or-missing fixture",
+          "explicit scalar null fixture",
+          "existence is distinct from truthiness",
+          "a total ordering resolves tied creation values",
+          "same snapshot next page",
+          "offset pagination repeats a row after an earlier insertion",
+          "keyset continuation skips the new earlier row",
+          "changing the sort key can repeat a row even with keyset pagination",
+          "declared output projection contains no nested items",
+          "three open orders include one empty array",
+          "unwound line count is three",
+          "orders represented by line rows exclude the empty order",
+          "line arithmetic preserves integer cents",
+          "display conversion uses exact decimal arithmetic",
+          "exact decimal input avoids a binary fraction artifact",
+          "ordinary addition is not the erroneous documentation example",
+          "all interleavings respect each caller's read-before-write",
+          "four split read/write schedules violate inventory conservation",
+          "over-allocation can occur while stored inventory stays positive",
+          "indivisible guarded transitions preserve inventory in both orders",
+          "typed allowlisted input accepted",
+          "operator object is not a SKU string",
+          "Boolean is not an integer quantity in this contract",
+          "negative quantity rejected",
+          "client cannot inject a tenant field",
+          "first request reserves once",
+          "replay returns recorded result",
+          "replay does not reserve again",
+          "same request ID with changed intent rejected",
+          "supplied trusted scope is checked separately from query input",
+          "new request cannot exceed remaining stock",
+          "failed reservation preserves stock"
+        ],
+        "split_schedules": 6,
+        "violating_schedules": 4,
+        "revenue_cents": 8250,
+        "remaining_inventory": 1
+      },
+      "execution_stdout": "{\n  \"passed\": 38,\n  \"checks\": [\n    \"separate existential predicates admit the split-element counterexample\",\n    \"one element satisfying both predicates is more selective\",\n    \"an empty array has no satisfying element\",\n    \"tenant restriction excludes another tenant's matching document\",\n    \"scalar membership differs from whole-array equality\",\n    \"whole-array equality rejects an extra value\",\n    \"scalar null-or-missing fixture\",\n    \"explicit scalar null fixture\",\n    \"existence is distinct from truthiness\",\n    \"a total ordering resolves tied creation values\",\n    \"same snapshot next page\",\n    \"offset pagination repeats a row after an earlier insertion\",\n    \"keyset continuation skips the new earlier row\",\n    \"changing the sort key can repeat a row even with keyset pagination\",\n    \"declared output projection contains no nested items\",\n    \"three open orders include one empty array\",\n    \"unwound line count is three\",\n    \"orders represented by line rows exclude the empty order\",\n    \"line arithmetic preserves integer cents\",\n    \"display conversion uses exact decimal arithmetic\",\n    \"exact decimal input avoids a binary fraction artifact\",\n    \"ordinary addition is not the erroneous documentation example\",\n    \"all interleavings respect each caller's read-before-write\",\n    \"four split read/write schedules violate inventory conservation\",\n    \"over-allocation can occur while stored inventory stays positive\",\n    \"indivisible guarded transitions preserve inventory in both orders\",\n    \"typed allowlisted input accepted\",\n    \"operator object is not a SKU string\",\n    \"Boolean is not an integer quantity in this contract\",\n    \"negative quantity rejected\",\n    \"client cannot inject a tenant field\",\n    \"first request reserves once\",\n    \"replay returns recorded result\",\n    \"replay does not reserve again\",\n    \"same request ID with changed intent rejected\",\n    \"supplied trusted scope is checked separately from query input\",\n    \"new request cannot exceed remaining stock\",\n    \"failed reservation preserves stock\"\n  ],\n  \"split_schedules\": 6,\n  \"violating_schedules\": 4,\n  \"revenue_cents\": 8250,\n  \"remaining_inventory\": 1\n}",
+      "execution_boundary": "Actual standard-library Python predictions and exhaustive enumeration of six constrained event schedules. JavaScript syntax only checked with Node. No MongoDB server, shell, driver, BSON codec, Atlas account, index, network, paid credit or deployment execution.",
+      "model_limits": "Trusted fixture tenant labels are not authentication. Scalar null cases do not model array/dotted-path behavior. Python equality/arithmetic is not BSON/MQL emulation. Indivisible guarded transition is assumed, not observed database concurrency. Replay model is sequential, process-local and non-durable; cached-decline behavior is a chosen policy. No performance, real cursor/pool, durability or production authorization claim."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Current canonical objective document unavailable: eighteen saved September 2 statements mapped, not confirmed unchanged. Public viewer500 andasset403; no account or enrollment action.",
+    "Detailed certification-policy interior and two paid catalog interiors not reviewed. Public cards do not prove current exam alignment or lesson quality.",
+    "Manual current/preview context and9.0Upcoming release labels do not establish production availability or examversion. Selected release sections read, not complete historical channel audit.",
+    "38localPythonpredictionchecks andoneJavaScriptsyntaxcheck only. No MongoDB/PyMongo/BSON/Atlas,realconcurrency,indexplan,performance,durability,authentication ordeployment validation.",
+    "Eight vendor-service activities and independent human review remain pending. No installs,auth/permission/runtime/service/reboot changes,paid credits or external messages. Five reserved GitHub guides anddisablednotificationpilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library Python predictions and exhaustive enumeration of six constrained event schedules. JavaScript syntax only checked with Node. No MongoDB server, shell, driver, BSON codec, Atlas account, index, network, paid credit or deployment execution.",
+    "passed": 38,
+    "python_blocks_executed": 1,
+    "javascript_blocks_syntax_checked": 1,
+    "python_version": "3.13.14",
+    "node_version": "v24.18.1",
+    "public_example_sha256": "3893cf194f57b086b3998602f2478c1d81d83e51d6857517e70e7151e4de4118",
+    "shell_example_sha256": "d3844ea9c0318811f432f412041d547cb7ab0b22c0e2b74187293b466ad94ac4",
+    "results": {
+      "passed": 38,
+      "checks": [
+        "separate existential predicates admit the split-element counterexample",
+        "one element satisfying both predicates is more selective",
+        "an empty array has no satisfying element",
+        "tenant restriction excludes another tenant's matching document",
+        "scalar membership differs from whole-array equality",
+        "whole-array equality rejects an extra value",
+        "scalar null-or-missing fixture",
+        "explicit scalar null fixture",
+        "existence is distinct from truthiness",
+        "a total ordering resolves tied creation values",
+        "same snapshot next page",
+        "offset pagination repeats a row after an earlier insertion",
+        "keyset continuation skips the new earlier row",
+        "changing the sort key can repeat a row even with keyset pagination",
+        "declared output projection contains no nested items",
+        "three open orders include one empty array",
+        "unwound line count is three",
+        "orders represented by line rows exclude the empty order",
+        "line arithmetic preserves integer cents",
+        "display conversion uses exact decimal arithmetic",
+        "exact decimal input avoids a binary fraction artifact",
+        "ordinary addition is not the erroneous documentation example",
+        "all interleavings respect each caller's read-before-write",
+        "four split read/write schedules violate inventory conservation",
+        "over-allocation can occur while stored inventory stays positive",
+        "indivisible guarded transitions preserve inventory in both orders",
+        "typed allowlisted input accepted",
+        "operator object is not a SKU string",
+        "Boolean is not an integer quantity in this contract",
+        "negative quantity rejected",
+        "client cannot inject a tenant field",
+        "first request reserves once",
+        "replay returns recorded result",
+        "replay does not reserve again",
+        "same request ID with changed intent rejected",
+        "supplied trusted scope is checked separately from query input",
+        "new request cannot exceed remaining stock",
+        "failed reservation preserves stock"
+      ],
+      "split_schedules": 6,
+      "violating_schedules": 4,
+      "revenue_cents": 8250,
+      "remaining_inventory": 1
+    },
+    "execution_stdout": "{\n  \"passed\": 38,\n  \"checks\": [\n    \"separate existential predicates admit the split-element counterexample\",\n    \"one element satisfying both predicates is more selective\",\n    \"an empty array has no satisfying element\",\n    \"tenant restriction excludes another tenant's matching document\",\n    \"scalar membership differs from whole-array equality\",\n    \"whole-array equality rejects an extra value\",\n    \"scalar null-or-missing fixture\",\n    \"explicit scalar null fixture\",\n    \"existence is distinct from truthiness\",\n    \"a total ordering resolves tied creation values\",\n    \"same snapshot next page\",\n    \"offset pagination repeats a row after an earlier insertion\",\n    \"keyset continuation skips the new earlier row\",\n    \"changing the sort key can repeat a row even with keyset pagination\",\n    \"declared output projection contains no nested items\",\n    \"three open orders include one empty array\",\n    \"unwound line count is three\",\n    \"orders represented by line rows exclude the empty order\",\n    \"line arithmetic preserves integer cents\",\n    \"display conversion uses exact decimal arithmetic\",\n    \"exact decimal input avoids a binary fraction artifact\",\n    \"ordinary addition is not the erroneous documentation example\",\n    \"all interleavings respect each caller's read-before-write\",\n    \"four split read/write schedules violate inventory conservation\",\n    \"over-allocation can occur while stored inventory stays positive\",\n    \"indivisible guarded transitions preserve inventory in both orders\",\n    \"typed allowlisted input accepted\",\n    \"operator object is not a SKU string\",\n    \"Boolean is not an integer quantity in this contract\",\n    \"negative quantity rejected\",\n    \"client cannot inject a tenant field\",\n    \"first request reserves once\",\n    \"replay returns recorded result\",\n    \"replay does not reserve again\",\n    \"same request ID with changed intent rejected\",\n    \"supplied trusted scope is checked separately from query input\",\n    \"new request cannot exceed remaining stock\",\n    \"failed reservation preserves stock\"\n  ],\n  \"split_schedules\": 6,\n  \"violating_schedules\": 4,\n  \"revenue_cents\": 8250,\n  \"remaining_inventory\": 1\n}",
+    "model_limits": "Trusted fixture tenant labels are not authentication. Scalar null cases do not model array/dotted-path behavior. Python equality/arithmetic is not BSON/MQL emulation. Indivisible guarded transition is assumed, not observed database concurrency. Replay model is sequential, process-local and non-durable; cached-decline behavior is a chosen policy. No performance, real cursor/pool, durability or production authorization claim.",
+    "learning_catalog_consistency": "passed"
+  },
+  "public_objective_groups": [
+    {
+      "title": "MongoDB Overview and the Document Model",
+      "weight": "8%",
+      "objectives": [
+        "Identify BSON value types.",
+        "Given differently shaped documents, identify which can coexist in one collection."
+      ]
+    },
+    {
+      "title": "CRUD",
+      "weight": "51%",
+      "objectives": [
+        "Identify valid and invalid insert operations for structured documents.",
+        "Predict database state and results for document replacement and operator updates.",
+        "Select an update with upsert behavior when no matching document exists.",
+        "Select correct multi-document update and delete operations.",
+        "Predict atomic find-and-modify behavior under concurrent operations.",
+        "Select read operations for equality, arrays, embedded documents, projection, sorting, and result limits.",
+        "Trace common MongoDB Query Language and aggregation operations used to retrieve and transform data."
+      ]
+    },
+    {
+      "title": "Indexes",
+      "weight": "17%",
+      "objectives": [
+        "Explain the purpose, benefits, and write/storage costs of indexes.",
+        "Select and create appropriate single-field, compound, multikey, and unique indexes for query shapes.",
+        "Interpret explain-plan evidence and identify index-supported and covered behavior."
+      ]
+    },
+    {
+      "title": "Data Modeling",
+      "weight": "4%",
+      "objectives": [
+        "Given relationships and access patterns, select embedding or referencing and explain the atomicity and growth tradeoffs."
+      ]
+    },
+    {
+      "title": "Tools and Tooling",
+      "weight": "2%",
+      "objectives": [
+        "Given a scenario, load Atlas sample data and use a MongoDB data exploration tool to locate a specified document."
+      ]
+    },
+    {
+      "title": "Drivers",
+      "weight": "18%",
+      "objectives": [
+        "Explain the selected official language driver and how an application uses it.",
+        "Identify MongoClient URI components and connection-pooling benefits.",
+        "Identify selected-language syntax for insert, update, delete, find, and aggregation operations.",
+        "Distinguish MongoDB Query Language syntax from selected-driver language syntax."
+      ]
+    }
+  ],
+  "historical_baseline_boundary": {
+    "reviewed_on": "2026-09-29",
+    "result": "Current objective body not retrieved; no unchanged claim. Retained eighteen September 2 statements and six weighted headings, with the September 7 validation record as historical evidence.",
+    "automated_monitor": "manual-review: direct canonical route returned client/enrollment shell",
+    "browser_route": "Canonical landing lists 30-minute free enrollment; Get the Guide linked a public viewer. Viewer returned500; its published asset returned403. No login, enrollment or token alteration.",
+    "objective_counts": [
+      2,
+      7,
+      3,
+      1,
+      1,
+      4
+    ],
+    "weights": [
+      8,
+      51,
+      17,
+      4,
+      2,
+      18
+    ],
+    "retained_blueprint_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+    "retained_status_sha256": "ec8100f67249cac4276efe1b398de25c0c681780a7709fdea74cef05fbe80d83",
+    "current_contract": "Public browser exam page:53multiple-choice,75minutes,English,online proctored,no prerequisite,USD150,C#/Java/Node.js/PHP/Python. Passing percentage absent from that page; detailed program policies not read."
+  },
+  "source_reading_boundaries": {
+    "mongodb-associate-developer-exam": "Direct50-character application shell; complete browser main and language selection read.53questions,75minutes,onlineproctored,English,no prerequisites,USD150 andfivevariants. No published passing percentage on this page; no booking or policy-interior claim.",
+    "mongodb-associate-developer-study-guide": "Direct50-character shell; complete public browser landing read:30minutes/free/enrollment. Followed publicly linked GettheGuide viewer:500; public embedded document asset:403. No document contents acquired, enrollment/login submitted or access controls altered. Eighteen saved September2 statements retained, not freshly revalidated.",
+    "mongodb-python-developer-path": "Direct50-character shell; complete browser grid/main read.20-hour headline; nine required cards765minutes, three elective learningcards210minutes, separate exam75minutes. Public50%discount advertisement, conditions not independently checked. No lessons/assessments or enrollment.",
+    "mongodb-developer-practice-questions": "Direct50-character shell; complete short browser public catalog read. C#/Java/PHP/Python listonehour;Node.js cardhasnoduration. No question or explanation interiors accessed/copied.",
+    "mongodb-manual": "Complete4450-character main overview read. Preview/9.x context observed. Marketing generalizations about downtime, failover and every data model not adopted as guarantees. Specific references govern types, queries and atomicity.",
+    "mongodb-driver-documentation": "Complete1356-character library directory read. Official drivers distinguished from community libraries including Mongoose; linked non-Python API interiors not comprehensively reviewed.",
+    "oreilly-official-mongodb-guide": "HTTP403. Earlier8h51/374pages/September2025 not reverified; no paid interior or quality claim.",
+    "pluralsight-query-modify-data-mongodb": "Complete6184-character public path main/cards read. Seven courses504minutes,fourlabs142minutes,total646minutes versus11-hour header. Dates span2025-05-30 to2026-09-21. No lesson/practice interiors or trial.",
+    "udemy-mongodb-complete-developer-guide-academind": "HTTP403. Earlier17.5hours/January2026 metadata and coverage not reverified. Repaired replacement character in catalog title without inventing a new title.",
+    "owasp-nosql-security-cheat-sheet": "Complete10100-character capture including main read. Adopt typed constrained queries and separate identity scope. Example driver objects/dollar-string rejection are not complete validation; broad NoSQL-versus-relational risk and obsolete/config-specific shorthand not adopted. No example installed or live query executed.",
+    "mongodb-developer-learning-paths": "Direct50-character shell; complete browser main read. Five20-hour language paths and advertised50%completiondiscount; no eligibility/account verification or claim all paths have equal visiblecard totals.",
+    "mongodb-certification-program-guide": "Direct50-character shell; full browser landing15minutes/free/register and linked public viewer wrapper read. Policy document interior not retrieved; no enrollment/account action or retake/pass-score claim.",
+    "mongodb-atomicity-transactions": "Complete3806-character main/browser read. Single-document filter recheck,expected-current-value/overwrite risk,$inc andmulti-documentnon-atomicity. No actual server/concurrent workload or sample commands run.",
+    "mongodb-elemmatch-query": "Complete5056-character main and examples read. One arrayelement mustsatisfyallconditions;non-arraydifference andsinglecondition/$ne examples. Original fixture uses different data; no copiedvendorcode orruntimeproof.",
+    "mongodb-index-unique": "Full8356-character direct main read except no linked interiors. Single/compound/multikey uniqueness,existingviolations,null/missing,partialfilter andsharded_id boundaries. No index creation or topology test.",
+    "mongodb-index-esr": "Complete8172-character main read in browser plusdirecttail. Equalityfirst,ESR/ERS tradeoff,sortprefix andversion-sensitive201-element$in threshold. No measuredplan/performance claim.",
+    "mongodb-index-multikey": "Complete6858-character main read. One indexedarrayfieldperdocument,uniquewithindocument/otherdocument distinction,coveringrestrictions and9.0-specificquerykill note. Whole-array section shows scalarquery inconsistentwithitsprose; not copied as exact-array code. No9.0availability claim orruntime.",
+    "mongodb-bson-types": "Complete10479-character main read. Type table,ObjectId/time/date distinction,decimalprecision andcodec cautions. A displayed0.1+0.1example has erroneous output; originalPythoncheck verifies0.2. Constructor/API examples and incorrect arithmetical output not copied. No BSON roundtrip.",
+    "mongodb-pymongo-pools": "Complete3952-character main/table/browser read:capacityversusmaxConnecting andconnect/socket/waitqueuewaits. No actual pool,overload or connection test; defaults not generalized to other drivers.",
+    "mongodb-pymongo-update": "Complete7519-character main read. update_one/update_many/options/resultfields includingmatched/modified/upserted. No PyMongoinstalled orconnected; broad privilege/schema-bypass options not enacted.",
+    "mongodb-pymongo-cursors": "Complete5938-character main read across browser anddirecttail. Iteration/materialization,close,tailing anderrornotes. No infinite polling example run; no copied ambiguous async to_list helper.",
+    "mongodb-pymongo-release-notes": "Selected current4.18.1/4.18 through4.13 entries read; start4.12 seen. Not entire historic release list or linkedchange/security pages. Version/API awareness only; no universalGA/upgrade recommendation or installation.",
+    "mongodb-server-90-release-notes": "Selected openingpatchheadings andGeneralChanges through earlymetrics read,notfull19617-characterreleasebody.9.0.0/9.0.1/9.0.2 labeledUpcoming althoughmanualselectorcurrent; treatavailabilityasunresolveddeployment-specificwatch. No serverfeature installation or examversionchange inferred.",
+    "mongodb-null-missing": "Direct487-character main andbrowserinteractivebody incomplete; full indexedprimarymain read separately. Scalar null/missing/type/existence rule used; version9.0dottedarraychanges explicitlynotmodeled orclaimeddeployed.",
+    "mongodb-findone-projection": "Selected first125directlines:definition,selectionbyplan,returnnull/document,parametersandcompleteprojectionrules. Laterexample snippets seen;notentire9002-characterbody. No assumptionfindOnehasbusinessorderingwithoutsort.",
+    "mongodb-updateone": "Selected definition/syntax,upsertparameter/resultfields andupsertbehavior/examples read from32110-characterbody. Not all sharding/transaction sections independentlyreconciled; no universalshard-keyrecipe. No server execution.",
+    "mongodb-embedded-query": "Direct588-character main andbrowser(with/withoutlanguageparameter)omitinteractiveexamples. Historicalv7.0/v8.2 indexed excerpts seen; currentfield-orderclaiminsteadcorroboratedbycompletecurrentDocumentreference. No currentinteractiveexampleaudit claimed.",
+    "mongodb-documents": "Complete9199-character main read:documentstructure,fieldrestrictions,positions,16MiB,fieldordering,_id/time-series/drivergenerationnotes. No databasevalidation/sizeencodingrun.",
+    "mongodb-array-updates": "Fullshortprimaryoperator/modifiertables read inbrowser; direct1334-character capture. Did not readeverylinkedoperatorrestriction; guidecallsfor exactformtesting.",
+    "mongodb-insertmany": "Selectedprimarydefinition,syntax,ordered/unorderedhandling,results,batching,_id anderrors throughtransactioncontext read. Notfull12728-characterexamplebody; no batch/serverexecution."
+  },
+  "public_document_access_attempt": {
+    "url": "https://ti-pdf-uploads.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f4qfo0cl1yf8-UpdatedMongodDBAssociateDeveloperExamGuide.docx3.pdf",
+    "source_route": "Public canonical landing -> Get the Guide -> public embedded viewer asset; viewer returned500; download-disabled flag false. No enrollment/login/token change.",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "catalog_findings": {
+    "python_path": {
+      "required_minutes": [
+        75,
+        75,
+        105,
+        60,
+        90,
+        120,
+        60,
+        105,
+        75
+      ],
+      "elective_minutes": [
+        15,
+        60,
+        135
+      ],
+      "exam_minutes": 75,
+      "headline_minutes": 1200
+    },
+    "pluralsight": {
+      "course_minutes": [
+        74,
+        45,
+        84,
+        80,
+        78,
+        65,
+        78
+      ],
+      "lab_minutes": [
+        51,
+        45,
+        20,
+        26
+      ],
+      "headline_hours": 11
+    },
+    "access_boundary": "Public metadata only; no paid lessons, practice interiors, enrollment or trials."
+  },
+  "technical_source_discrepancies": [
+    {
+      "source_id": "mongodb-bson-types",
+      "observation": "Displayed 0.1 + 0.1 result is erroneous.",
+      "response": "Original Python assertion establishes 0.2. No source code copied; Decimal arithmetic is not BSON serialization proof."
+    },
+    {
+      "source_id": "mongodb-index-multikey",
+      "observation": "Whole-array section displays a scalar query operand while describing exact-array equality.",
+      "response": "Distinguish scalar membership and whole-array equality in original fixtures. Live MongoDB results remain untested."
+    },
+    {
+      "source_id": "mongodb-server-90-release-notes",
+      "observation": "Opening patch headings are Upcoming while other manual navigation says current and overview discusses preview.",
+      "response": "Do not infer general availability, deployed compatibility or a changed exam version."
+    },
+    {
+      "source_id": "owasp-nosql-security-cheat-sheet",
+      "observation": "A query object can still contain client-supplied operator objects when scalar values are not validated.",
+      "response": "Use fixed schema and types, construct operators, and obtain tenant scope separately from trusted identity. No complete security validation claim."
+    }
+  ]
+}
