@@ -3,6 +3,160 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "c11-n1570",
+      "title": "WG14 N1570 C11 committee draft",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "publisher": "ISO/IEC JTC1/SC22/WG14",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Direct PDF download and health request timed out. Public web-reader PDF has 701 pages, April 12, 2011 WG14 committee draft. Selected text read: hosted startup/termination 5.1.2.2.1–3; 6.3.1.1–4 conversions; 6.3.2.1 array/lvalue conversion; 6.4.4.4 ordinary-character semantics; 6.5 paragraphs 1–5 and footnotes; 6.5.3.1–4 increment/address/unary/sizeof including VLA exception; 6.5.4–7 casts/division/pointer arithmetic/shifts; selected 6.7.6.3 prototype/void/array-parameter paragraphs; 7.12.9.6 round description; 7.21.6.2 formatted-input paragraphs 1–16 with examples/context; 7.22.3 allocation overview/calloc/free/malloc; 7.24.2.3 strcpy and 7.24.3.1 strcat. Not full standard review or a claim of current exam-required version. No local genuine PDF capture succeeded; source reading occurred through public web tool. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cert-c-err34",
+      "title": "SEI CERT C numeric conversion errors",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+      "publisher": "Carnegie Mellon Software Engineering Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Read introduction and atoi/sscanf/strtol noncompliant/compliant conversion sections through risk summary, plus beginning of analyzer table only. Complete 7929-character page not audited. Conversion errors, remaining suffix, ERANGE and destination range support original parser; source snippets not copied or treated as standalone complete programs. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cert-c-int05",
+      "title": "SEI CERT C bounded numeric input",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/integers-int/int05-c/",
+      "publisher": "Carnegie Mellon Software Engineering Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Complete 4254-character page read, including Linux-specific scanf errno workaround and portable character-input/strtol approach. Platform workaround not adopted as C11 guarantee. Source trailing-character policy is stricter than the explicitly different original surrounding-whitespace contract. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cert-c-mem35",
+      "title": "SEI CERT C sufficient allocation size",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+      "publisher": "Carnegie Mellon Software Engineering Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Read introduction and pointer/integer allocation examples through before Risk Assessment. Size type, multiply-before-allocate guard and sizeof pointed-to object support original code. Placeholder error comments need real control flow; unevaluated-sizeof shorthand qualified for VLA. Full analyzer/CWE/bibliography sections not audited. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cert-c-str31",
+      "title": "SEI CERT C string storage and terminators",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+      "publisher": "Carnegie Mellon Software Engineering Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Read introduction and off-by-one issue, selected compliant off-by-one/fgets/getchar/fscanf/snprintf sections. Full 23243-character page not audited. Destination capacity and terminator, partial-line handling and bounded character input adopted in original design. Off-by-one sample needs nonzero-capacity contract; displayed snprintf sample is malformed and is not adopted as a compilable/general truncation check. No source snippets executed. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cert-c-arr30",
+      "title": "SEI CERT C array and pointer bounds",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+      "publisher": "Carnegie Mellon Software Engineering Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Read entire material before Risk Assessment: forming/following invalid pointers, one-past dereference, table sizing, multidimensional row bounds, flexible-array and null-pointer arithmetic examples. Broader vulnerability/analyzer/CWE claims not adopted. Some illustrative snippets are incomplete or contain error-handling placeholders; original bounds/control paths are separately executed. No vulnerable source program executed. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "cert-c-mem30",
+      "title": "SEI CERT C freed memory lifetime",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem30-c/",
+      "publisher": "Carnegie Mellon Software Engineering Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Read all material before Risk Assessment: indeterminate dangling pointers, linked-list lifetime, post-free copy, zero-size realloc and moved-allocation examples. Full 11383-character page not audited. No stale pointer evaluation in original programs; no source vulnerabilities or actual exhaustion executed. Zero-size realloc detail is context, not a general cross-version claim. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-c-round",
+      "title": "Microsoft C runtime round",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/round-roundf-roundl?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Complete 3806-character reference read: round takes/returns double in ordinary C use, nearest integral value and halfway away from zero. C++ overloads, type-generic macro, platform exception tables and Microsoft long-double/example formatting behavior are not adopted as portable C11 requirements. Original small exact-fraction checks executed remotely, not the vendor sample. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-c-floor",
+      "title": "Microsoft C runtime floor",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Complete 2669-character reference read. Direction toward negative infinity and floating return distinguish it from integer truncation; original positive/negative checks executed. SSE/global-state and type-generic/overload details are context only, no settings changed. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-c-ceil",
+      "title": "Microsoft C runtime ceil",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Complete 2046-character reference read. Direction toward positive infinity and floating return used in original checks. Microsoft implementation settings, overloads and linked example not executed. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "msvc-c-scanf",
+      "title": "Microsoft C runtime scanf",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l?view=msvc-170",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 CLE-10-01 deep review: Complete 4727-character reference read. Assignment count, matching pointer types and bounded text input adopted with N1570 numeric-overflow clarification. Microsoft invalid-parameter handlers, _l/TCHAR/UWP/%C/%S and secure-CRT recommendations remain platform-specific. Vendor sample can read unassigned destinations after failed input; not copied or executed. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mdn-js-grammar-types",
       "title": "MDN JavaScript grammar and types",
       "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
@@ -431,10 +585,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "CPE-20-01"
+        "CPE-20-01",
+        "CLE-10-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 CPE-20-01 deep review: Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 CPE-20-01 deep review: Direct GitHub health request timed out; complete public API documentation read via web reader. Compiler list and GCC 14.2/Clang 19.1 compile/execute endpoints actually used for original public programs only, no account, saved-code shortener or publishing action. Exact requests/results and code hashes captured. Remote execution is not local/offline compilation. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Direct documentation health request failed. Public API list-compilers and compile/execute request sections read via web reader; full documentation previously read for CPE. Actual C compiler list returned cg142 and cclang1910. Original public C11 programs submitted with allowStoreCodeDebug=false, no account or saved-code shortlink; exact request/result receipts retained. Remote execution is not local compilation. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cpp17-multiplicative",
@@ -54996,7 +55151,7 @@
         "CPA-21-02",
         "CPP-22-02"
       ],
-      "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+      "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out. Entry-level policy read completely via web reader in this review; associate/professional section previously read completely during CPE and revisited for context. CLE/CPE TestNow proctoring and seven-day failed-retake wait differ from the Pearson associate/professional section and its 15-day rule. Admission, NDA, security and accommodation text were research only; no account or exam action. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "cpp-institute-certification-catalog",
@@ -55008,9 +55163,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "CPE-20-01"
+        "CPE-20-01",
+        "CLE-10-01"
       ],
-      "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement. September 29 CPE-20-01 deep review: Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+      "notes": "Current C and C++ track/level inventory, delivery overview, recommended progression and lifetime/version-preserving certificate statement. September 29 CPE-20-01 deep review: Direct request timed out; complete certification-exams catalog read through web reader. CPE remains entry-level, lifetime credential retains completed version, no replacement announcement found on examined pages. General Pearson/OnVUE language does not override CPE-specific TestNow. No unseen release channel or future availability inferred. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution. September 29 CLE-10-01 deep review: Fresh direct request timed out; complete public catalog read via web reader. Entry CLE remains listed; lifetime credentials retain completed version. General Pearson/OnVUE program language does not override CLE-specific TestNow. No replacement found on examined pages, not a claim about every unseen release channel. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "openedg-cpp-essentials-1",
@@ -55284,31 +55440,135 @@
       "notes": "Popular free approximately 3h27m 2018 beginner video. Useful for syntax practice but older and not exact current JSE coverage. September 29 JSE-40-01 deep review: HTTP200 with 207-character title/shell body. No transcript or playback; prior approximately 3h27m duration not verified. Title-level availability is not content review. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cle-10-01-syllabus","title":"CLE C Certified Entry-Level Programmer","url":"https://cppinstitute.org/cle","publisher":"OpenEDG C++ Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLE-10-01"],"notes":"Canonical active exam page with the July 24, 2025 eight-block 13.25/13.25/13.25/13.25/16.5/16.5/7/7 syllabus, delivery details, aligned training and minimally qualified candidate profile."
+      "id": "cle-10-01-syllabus",
+      "title": "CLE C Certified Entry-Level Programmer",
+      "url": "https://cppinstitute.org/cle",
+      "publisher": "OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "notes": "Canonical active exam page with the July 24, 2025 eight-block 13.25/13.25/13.25/13.25/16.5/16.5/7/7 syllabus, delivery details, aligned training and minimally qualified candidate profile. September 29 CLE-10-01 deep review: Direct fetch and objective monitor timed out. Full canonical page read via public web reader: active CLE-10-01, July 24, 2025 syllabus, 36 objectives 6/5/5/4/4/5/4/3; weights 13.25/13.25/13.25/13.25/16.5/16.5/7/7, items 4/4/4/4/5/5/2/2. Thirty questions, 45 minutes plus approximately five NDA/tutorial, English, TestNow, 70% cumulative threshold and stated 30-point maximum with different item values; no prerequisite, USD69/86. Manual retained-snapshot comparison, no successful automatic hash comparison or booking UI review. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-c-essentials-1","title":"C Essentials - Part 1","url":"https://edube.org/study/ce1","publisher":"OpenEDG C++ Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CLE-10-01","CLA-11-03"],"notes":"Free official C foundation with a 42-hour listed study time; directly aligned to CLE and prerequisite repair for CLA."
+      "id": "openedg-c-essentials-1",
+      "title": "C Essentials - Part 1",
+      "url": "https://edube.org/study/ce1",
+      "publisher": "OpenEDG C++ Institute / Edube",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01",
+        "CLA-11-03"
+      ],
+      "notes": "Free official C foundation with a 42-hour listed study time; directly aligned to CLE and prerequisite repair for CLA. September 29 CLE-10-01 deep review: Complete 5673-character public landing read locally and via web reader: 42 hours, seven/week suggestion, English, beginner/free, modules 0–5, CLE alignment and no prerequisite. Basics/Beginner versus Intermediate labels and prose equating pointers/arrays conflict; precise language rules govern. Enrollment, lessons and assessments not entered; broad marketing/dated Linux-size claims not adopted. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cppreference-c-language","title":"C Language Reference","url":"https://en.cppreference.com/w/c/language.html","publisher":"cppreference.com","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLE-10-01"],"notes":"Detailed independent language reference; use targeted lookups and verify the selected C standard and compiler implementation."
+      "id": "cppreference-c-language",
+      "title": "C Language Reference",
+      "url": "https://en.cppreference.com/w/c/language.html",
+      "publisher": "cppreference.com",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "notes": "Detailed independent language reference; use targeted lookups and verify the selected C standard and compiler implementation. September 29 CLE-10-01 deep review: Complete 2516-character community language index read, including C11/C23 version labels. Navigation/context only, not sole authority for material repairs; linked technical chapters not audited. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"microsoft-c-language-reference","title":"C Language Reference","url":"https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170","publisher":"Microsoft Learn","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLE-10-01","CLA-11-03"],"notes":"Current Microsoft C implementation documentation useful for targeted syntax and library review; implementation-specific and not the exam authority."
+      "id": "microsoft-c-language-reference",
+      "title": "C Language Reference",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01",
+        "CLA-11-03"
+      ],
+      "notes": "Current Microsoft C implementation documentation useful for targeted syntax and library review; implementation-specific and not the exam authority. September 29 CLE-10-01 deep review: Complete 1115-character index read despite generic authorization banner. It describes Microsoft C with ANSI C89 organization plus extensions, so it is not treated as sole portable C11 authority. Linked chapters not generally audited; selected runtime references separately registered. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"sei-cert-c-coding-standard","title":"SEI CERT C Coding Standard","url":"https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/","publisher":"Carnegie Mellon University Software Engineering Institute","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-17","supported_exams":["CLE-10-01","CLA-11-03","CLP-12-01"],"notes":"Authoritative secure-coding reference for pointer, memory, input, concurrency and undefined-behavior risks; use targeted rules at the appropriate exam level."
+      "id": "sei-cert-c-coding-standard",
+      "title": "SEI CERT C Coding Standard",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/",
+      "publisher": "Carnegie Mellon University Software Engineering Institute",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01",
+        "CLA-11-03",
+        "CLP-12-01"
+      ],
+      "notes": "Authoritative secure-coding reference for pointer, memory, input, concurrency and undefined-behavior risks; use targeted rules at the appropriate exam level. September 29 CLE-10-01 deep review: Complete 3770-character development index read, including explicit warning that pages can be incomplete or contain errors and distinction from published 2016 C11 edition. Linked rules selectively reviewed and registered separately; not a complete coding-standard audit. No analyzer or conformance certification run. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-c-essentials-1","title":"C Essentials 1","url":"https://www.netacad.com/courses/c-essentials-1","publisher":"Cisco Networking Academy / OpenEDG C++ Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CLE-10-01"],"notes":"Official partner course linked by C++ Institute. Plan approximately 35 to 45 hours and verify current access and runtime on the live listing."
+      "id": "cisco-c-essentials-1",
+      "title": "C Essentials 1",
+      "url": "https://www.netacad.com/courses/c-essentials-1",
+      "publisher": "Cisco Networking Academy / OpenEDG C++ Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "notes": "Official partner course linked by C++ Institute. Plan approximately 35 to 45 hours and verify current access and runtime on the live listing. September 29 CLE-10-01 deep review: HTTP200 with 55-character application shell only. No rendered curriculum or provider duration verified. 35–45 hours is an author estimate; no account/enrollment. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-effective-c-second-edition","title":"Effective C, 2nd Edition","url":"https://www.oreilly.com/library/view/effective-c/9781098144778/","publisher":"O'Reilly / No Starch Press / Robert C. Seacord","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CLE-10-01","CLA-11-03"],"notes":"Modern professional C reference. Select fundamentals for CLE or declarations, pointers, allocation and I/O for CLA; secure and modern-practice material extends beyond both blueprints."
+      "id": "oreilly-effective-c-second-edition",
+      "title": "Effective C, 2nd Edition",
+      "url": "https://www.oreilly.com/library/view/effective-c/9781098144778/",
+      "publisher": "O'Reilly / No Starch Press / Robert C. Seacord",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01",
+        "CLA-11-03"
+      ],
+      "notes": "Modern professional C reference. Select fundamentals for CLE or declarations, pointers, allocation and I/O for CLA; secure and modern-practice material extends beyond both blueprints. September 29 CLE-10-01 deep review: HTTP403. Current paid contents, edition details and duration not reverified; five to eight selective hours is an author planning estimate. No subscription content accessed. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-c-programming-for-beginners","title":"C Programming For Beginners - Master the C Language","url":"https://www.udemy.com/course/c-programming-for-beginners-/","publisher":"Udemy / Tim Buchalka's Learn Programming Academy","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["CLE-10-01"],"notes":"Broad beginner marketplace course. Select syllabus-matching sections for roughly 15 to 25 hours and retain the official syllabus as scope authority."
+      "id": "udemy-c-programming-for-beginners",
+      "title": "C Programming For Beginners - Master the C Language",
+      "url": "https://www.udemy.com/course/c-programming-for-beginners-/",
+      "publisher": "Udemy / Tim Buchalka's Learn Programming Academy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "notes": "Broad beginner marketplace course. Select syllabus-matching sections for roughly 15 to 25 hours and retain the official syllabus as scope authority. September 29 CLE-10-01 deep review: HTTP403. Current lessons, curriculum and runtime not reverified; 15–25 selective hours is an author estimate. No paid question or lesson access. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"youtube-freecodecamp-c-beginner","title":"C Programming Tutorial for Beginners","url":"https://www.youtube.com/watch?v=KJgsSFOSQv0","publisher":"freeCodeCamp.org / Giraffe Academy","authority_class":3,"source_type":"third-party-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLE-10-01"],"notes":"Popular free approximately 3h46m 2018 introduction. Useful for fundamentals but older and not exact current CLE coverage."
+      "id": "youtube-freecodecamp-c-beginner",
+      "title": "C Programming Tutorial for Beginners",
+      "url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+      "publisher": "freeCodeCamp.org / Giraffe Academy",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "CLE-10-01"
+      ],
+      "notes": "Popular free approximately 3h46m 2018 introduction. Useful for fundamentals but older and not exact current CLE coverage. September 29 CLE-10-01 deep review: HTTP200 with 199-character title/shell body. No transcript or playback; prior approximately 3h46m runtime not verified. Landing success is not lesson review. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"pcap-31-03-syllabus","title":"PCAP-31-03 Exam Syllabus","url":"https://pythoninstitute.org/pcap-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAP-31-03"],"notes":"Canonical five-section 12/14/18/34/22 syllabus, detailed objectives and March 7, 2022 baseline for the current PCAP-31-03 exam."

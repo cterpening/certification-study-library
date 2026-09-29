@@ -3508,6 +3508,29 @@ The official practice product describes multiple launches but the current captur
 
 No exact current MeasureUp or Whizlabs JSE-40-01 product was verified. The OpenEDG practice kit explicitly identifies the active version; avoid third-party practice that does not state its blueprint and provenance.
 
+### CLE-10-01 — CLE C Certified Entry-Level Programmer
+
+Resource details from the [CLE-10-01 guide](../guides/CLE-10-01-c-certified-entry-level-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add targeted references where they explain a difficult objective better, and spend at least as much time writing, tracing, testing, and debugging as watching. Reconcile third-party material with the current official syllabus.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official CLE page and syllabus](https://cppinstitute.org/cle) | Free canonical blueprint | 1–2 hours to map and recheck |
+| [C++ Institute exam policies](https://cppinstitute.org/exam-policies) | Free official policy | 20–40 minutes before scheduling |
+| [OpenEDG C Essentials Part 1](https://edube.org/study/ce1) | Free account; officially aligned | 42 hours listed |
+| [Cisco Networking Academy C Essentials 1](https://www.netacad.com/courses/c-essentials-1) | Free account; only a 55-character application shell retrieved | 35–45 hours is an author estimate; provider duration unverified |
+| [SEI CERT C Coding Standard](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/) | Free; development index and selected rules read; broader than exam | 3–6 hours is an author lookup estimate |
+| [Microsoft C language reference](https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170) | Free implementation reference; index describes a C89 base plus extensions | 4–8 hours is an author estimate; use pinned C11 primary clauses for differences |
+| [cppreference C language](https://en.cppreference.com/w/c/language.html) | Free community index; linked technical chapters not reviewed here | 3–6 hours is an author lookup estimate |
+| [O'Reilly Effective C](https://www.oreilly.com/library/view/effective-c/9781098144778/) | Subscription; HTTP403, current contents not reverified | 5–8 hours of selected foundational reading is an author estimate |
+| [Udemy C Programming for Beginners](https://www.udemy.com/course/c-programming-for-beginners-/) | Paid marketplace; HTTP403, current contents not reverified | 15–25 selective hours is an author estimate |
+| [freeCodeCamp C Programming Tutorial for Beginners](https://www.youtube.com/watch?v=KJgsSFOSQv0) | Free; 199-character title/shell, no transcript or playback review | Prior approximately 3h46m not reverified; add coding time |
+
+No exact current MeasureUp or Whizlabs CLE-10-01 practice product was verified. Prefer official course assessments and original code exercises over practice products that do not name the active exam version.
+
+**Source boundaries.** OpenEDG's full public landing lists 42 hours, suggested seven hours/week, English and six modules (0–5). Its Beginner/Basics versus Intermediate labels and shorthand equating arrays/pointers are inconsistent; the canonical syllabus and precise language rules govern this guide. Course lessons were not entered. SEI's development index warns that pages may be incomplete; selected rule examples contain placeholders or malformed/incomplete snippets. The original programs here do not copy those snippets or treat their error comments as working branches. In particular, the off-by-one illustration needs a nonzero-capacity contract, sizeof's unevaluated-operand shorthand has a VLA exception, and snprintf's displayed example is not a compilable general truncation check. Broader exploit histories, analyzer claims and library extensions are outside this review's teaching changes. No paid course interior, current booking, video transcript, sanitizer session or human review was completed.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

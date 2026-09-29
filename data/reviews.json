@@ -11139,27 +11139,102 @@
       "notes": "Mapped all 30 canonical scope bullets across six unweighted blocks, separating practice-kit percentages. Reviewed and improved all 40 original answers; eight public JavaScript blocks executed in Chrome, with 114 core checks also passing in Node, 109 scenario checks, 19 scenario and 16 introductory dialog cases, scope/timing probes and actual debugger state/source-repair evidence. Resource metadata, vendor copy errors, access limits and pending human review remain explicit. See docs/research/2026-09-29-jse-40-01-deep-review.md"
     },
     {
-      "id":"cle-10-01-2026-09-02-source-validation",
-      "exam_code":"CLE-10-01",
-      "guide_path":"guides/CLE-10-01-c-certified-entry-level-programmer.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cle-10-01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9",
-      "objective_coverage":[
-        {"objective_group":"Basic Concepts (13.25%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
-        {"objective_group":"Data Types, Evaluations, and Basic I/O Operations (13.25%)","guide_sections":["Section 2","Scenario 1","Lab 3"]},
-        {"objective_group":"Arithmetic, Logical, and Bitwise Operators (13.25%)","guide_sections":["Section 3","All scenarios","Lab 4"]},
-        {"objective_group":"Decision-Making Statements (13.25%)","guide_sections":["Section 4","Scenarios 1 and 3","Lab 5"]},
-        {"objective_group":"Loops (16.50%)","guide_sections":["Section 5","All scenarios","Lab 5"]},
-        {"objective_group":"Arrays, Pointers, and Memory Management (16.50%)","guide_sections":["Section 6","All scenarios","Labs 6–7"]},
-        {"objective_group":"String Manipulation (7%)","guide_sections":["Section 7","Scenario 2","Lab 8"]},
-        {"objective_group":"Functions (7%)","guide_sections":["Section 8","All scenarios","Lab 8"]}
+      "id": "cle1001-2026-09-29-source-validation",
+      "exam_code": "CLE-10-01",
+      "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9",
+      "objective_coverage": [
+        {
+          "objective_group": "Block 1 - Basic Concepts (4 items; 13.25%)",
+          "guide_sections": [
+            "1. Basic concepts — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 2 - Data Types, Evaluations, and Basic I/O Operations (4 items; 13.25%)",
+          "guide_sections": [
+            "2. Data types, conversions, and basic I/O — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 3 - Arithmetic, Logical, and Bitwise Operators (4 items; 13.25%)",
+          "guide_sections": [
+            "3. Operators — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 4 - Flow Control: Decision-Making Statements (4 items; 13.25%)",
+          "guide_sections": [
+            "4. Decision-making — 13.25%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 5 - Flow Control: Loops (5 items; 16.50%)",
+          "guide_sections": [
+            "5. Loops — 16.50%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 6 - Arrays, Pointers, and Memory Management (5 items; 16.50%)",
+          "guide_sections": [
+            "6. Arrays, pointers, and memory — 16.50%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 7 - String Manipulation (2 items; 7%)",
+          "guide_sections": [
+            "7. Strings — 7%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        },
+        {
+          "objective_group": "Block 8 - The Basics of Functions (2 items; 7%)",
+          "guide_sections": [
+            "8. Functions — 7%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answer key"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":7,"access_blocked":2,"missing_or_error":1},
-      "notes":"All eight CLE-10-01 syllabus blocks are mapped through translation stages, literals and data representation, declarations/types/conversions/formatted I/O, operator and control-flow tracing, arrays and pointer bounds, allocation lifetimes, null-terminated strings, and value-versus-pointer function parameters. Three scenarios, eight labs and 30 original checks are included. The guide uses precise C terminology where the official syllabus is informal, labels implementation and language-version boundaries, and treats the SEI, O'Reilly and Udemy pages as automation-blocked rather than broken. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 23,
+        "reachable": 16,
+        "access_blocked": 2,
+        "missing_or_error": 5
+      },
+      "notes": "Mapped all 36 numbered objectives, repaired numeric input overflow/prefix handling, explicit rounding, array-row bounds, ownership and string capacity. Reviewed/improved all 30 original answers. Eight complete public C programs executed remotely; GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks, plus nine sum-boundary checks on GCC. Paid/source access limits, incomplete vendor snippets and human review remain explicit. See docs/research/2026-09-29-cle-10-01-deep-review.md"
     },
     {
       "id": "pcap-31-03-2026-09-02-source-validation",

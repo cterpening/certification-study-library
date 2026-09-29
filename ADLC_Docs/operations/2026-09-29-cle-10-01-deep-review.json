@@ -1,0 +1,2884 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "CLE-10-01",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "576bcd6274c2caf1c4873b3780943054dd5a12e2d7f4724aef2d0e481e9408a5",
+  "guide_after_sha256": "813167772f9948d3a10eb48fb13cb90d9532366f469d852f7a0a60b3ccbba229",
+  "prior_records": {
+    "exam": {
+      "code": "CLE-10-01",
+      "level": "beginner",
+      "vendor_id": "cpp-institute",
+      "title": "CLE C Certified Entry-Level Programmer",
+      "status": "active",
+      "study_guide_url": "https://cppinstitute.org/cle",
+      "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. Practice compiling, tracing, testing, and debugging small C programs across types and conversions, formatted I/O, operators, decisions, loops, arrays, pointers, dynamic memory, strings, and functions. Use a conforming compiler with strong warnings, track object bounds and lifetimes explicitly, and verify the active exam version before purchase."
+    },
+    "review": {
+      "id": "cle-10-01-2026-09-02-source-validation",
+      "exam_code": "CLE-10-01",
+      "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cle-10-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9",
+      "objective_coverage": [
+        {
+          "objective_group": "Basic Concepts (13.25%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1 and 3",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Data Types, Evaluations, and Basic I/O Operations (13.25%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenario 1",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Arithmetic, Logical, and Bitwise Operators (13.25%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Decision-Making Statements (13.25%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Loops (16.50%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Arrays, Pointers, and Memory Management (16.50%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "String Manipulation (7%)",
+          "guide_sections": [
+            "Section 7",
+            "Scenario 2",
+            "Lab 8"
+          ]
+        },
+        {
+          "objective_group": "Functions (7%)",
+          "guide_sections": [
+            "Section 8",
+            "All scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 1
+      },
+      "notes": "All eight CLE-10-01 syllabus blocks are mapped through translation stages, literals and data representation, declarations/types/conversions/formatted I/O, operator and control-flow tracing, arrays and pointer bounds, allocation lifetimes, null-terminated strings, and value-versus-pointer function parameters. Three scenarios, eight labs and 30 original checks are included. The guide uses precise C terminology where the official syllabus is informal, labels implementation and language-version boundaries, and treats the SEI, O'Reilly and Udemy pages as automation-blocked rather than broken. No recalled/live item, answer dump or copied course question is used. September 17, 2026 link-only maintenance: the SEI reference moved to the official cmu-sei.github.io site and is reachable; link counts were refreshed. This does not represent a new full-content or practitioner review. September 29 CPE source-health refresh updated shared-link counts only; this guide content and review date were not re-reviewed."
+    },
+    "sources": [
+      {
+        "id": "cpp-institute-exam-policies",
+        "title": "C++ Institute Exam Policies",
+        "url": "https://cppinstitute.org/exam-policies",
+        "publisher": "OpenEDG C++ Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "CPE-20-01",
+          "CLE-10-01",
+          "CLA-11-03",
+          "CLP-12-01",
+          "CPA-21-02",
+          "CPP-22-02"
+        ],
+        "notes": "Identification, NDA, accommodations, security and retake rules across TestNow and Pearson VUE delivery; exam-specific pages remain authoritative for channel and format. September 29 CPE-20-01 deep review: Direct request timed out; complete public policy read via web reader. July 23, 2025 policy separately covers CLE/CPE TestNow and associate/professional Pearson VUE delivery: seven-day failed-retake wait for CLE/CPE versus 15 days in the other section. Admission/security/accommodation context read, not a personal booking determination. No account, exam or settings action. See docs/research/2026-09-29-cpe-20-01-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "cle-10-01-syllabus",
+        "title": "CLE C Certified Entry-Level Programmer",
+        "url": "https://cppinstitute.org/cle",
+        "publisher": "OpenEDG C++ Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01"
+        ],
+        "notes": "Canonical active exam page with the July 24, 2025 eight-block 13.25/13.25/13.25/13.25/16.5/16.5/7/7 syllabus, delivery details, aligned training and minimally qualified candidate profile."
+      },
+      {
+        "id": "openedg-c-essentials-1",
+        "title": "C Essentials - Part 1",
+        "url": "https://edube.org/study/ce1",
+        "publisher": "OpenEDG C++ Institute / Edube",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01",
+          "CLA-11-03"
+        ],
+        "notes": "Free official C foundation with a 42-hour listed study time; directly aligned to CLE and prerequisite repair for CLA."
+      },
+      {
+        "id": "cppreference-c-language",
+        "title": "C Language Reference",
+        "url": "https://en.cppreference.com/w/c/language.html",
+        "publisher": "cppreference.com",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01"
+        ],
+        "notes": "Detailed independent language reference; use targeted lookups and verify the selected C standard and compiler implementation."
+      },
+      {
+        "id": "microsoft-c-language-reference",
+        "title": "C Language Reference",
+        "url": "https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01",
+          "CLA-11-03"
+        ],
+        "notes": "Current Microsoft C implementation documentation useful for targeted syntax and library review; implementation-specific and not the exam authority."
+      },
+      {
+        "id": "sei-cert-c-coding-standard",
+        "title": "SEI CERT C Coding Standard",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/",
+        "publisher": "Carnegie Mellon University Software Engineering Institute",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-17",
+        "supported_exams": [
+          "CLE-10-01",
+          "CLA-11-03",
+          "CLP-12-01"
+        ],
+        "notes": "Authoritative secure-coding reference for pointer, memory, input, concurrency and undefined-behavior risks; use targeted rules at the appropriate exam level."
+      },
+      {
+        "id": "cisco-c-essentials-1",
+        "title": "C Essentials 1",
+        "url": "https://www.netacad.com/courses/c-essentials-1",
+        "publisher": "Cisco Networking Academy / OpenEDG C++ Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01"
+        ],
+        "notes": "Official partner course linked by C++ Institute. Plan approximately 35 to 45 hours and verify current access and runtime on the live listing."
+      },
+      {
+        "id": "oreilly-effective-c-second-edition",
+        "title": "Effective C, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/effective-c/9781098144778/",
+        "publisher": "O'Reilly / No Starch Press / Robert C. Seacord",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01",
+          "CLA-11-03"
+        ],
+        "notes": "Modern professional C reference. Select fundamentals for CLE or declarations, pointers, allocation and I/O for CLA; secure and modern-practice material extends beyond both blueprints."
+      },
+      {
+        "id": "udemy-c-programming-for-beginners",
+        "title": "C Programming For Beginners - Master the C Language",
+        "url": "https://www.udemy.com/course/c-programming-for-beginners-/",
+        "publisher": "Udemy / Tim Buchalka's Learn Programming Academy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01"
+        ],
+        "notes": "Broad beginner marketplace course. Select syllabus-matching sections for roughly 15 to 25 hours and retain the official syllabus as scope authority."
+      },
+      {
+        "id": "youtube-freecodecamp-c-beginner",
+        "title": "C Programming Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+        "publisher": "freeCodeCamp.org / Giraffe Academy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "CLE-10-01"
+        ],
+        "notes": "Popular free approximately 3h46m 2018 introduction. Useful for fundamentals but older and not exact current CLE coverage."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "c9f5f5930253bad0fd2b3634a1272194808110894f25bd6e803d05cf56a2e911",
+      "guide_sections": [
+        "1. Basic concepts — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "57bccedd4896db8601f97cee65d61c90ee41124a8f72690f09a0f219b530a75e",
+      "guide_sections": [
+        "1. Basic concepts — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4e57854ad21c78feb31b57bbd9118ed0000e7f8815803bba0dacc468d17eb51e",
+      "guide_sections": [
+        "1. Basic concepts — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "cf999586803aa7fc201556b46fe352fa223cb7160023f19d75ddcc28286be319",
+      "guide_sections": [
+        "1. Basic concepts — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "1ac0c2537a292e97bf3f63581876b4950503e866d7ce8efaa88434df9d4f088c",
+      "guide_sections": [
+        "1. Basic concepts — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "ce45f7ba7690c3bf576b8d339fae179603e7d97e57eda82e1f1620eb9554b071",
+      "guide_sections": [
+        "1. Basic concepts — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "5a81cd423a7bed12e24f1f40b24f4ec4e29f05827c05ad0e65d2250cf65158b1",
+      "guide_sections": [
+        "2. Data types, conversions, and basic I/O — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "0d4fd6729693f73e2644d95716ca70451eb4f6456803cbb1b3d8633166c5b0ab",
+      "guide_sections": [
+        "2. Data types, conversions, and basic I/O — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "9d65176376decb032f859eb96cd651eb221a3f0989dc8974cfa58e75c292984e",
+      "guide_sections": [
+        "2. Data types, conversions, and basic I/O — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "1cc4f1a2a92139649890b0d190b3106b21569421da65a41b5dae54368eeb3b8b",
+      "guide_sections": [
+        "2. Data types, conversions, and basic I/O — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "84ea897c75fe3d14ab033c7d0024d2679ac6f1e48eb72d27cafc226106898fc1",
+      "guide_sections": [
+        "2. Data types, conversions, and basic I/O — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "97144c605d9b984f49f82b884c2afd07afb2f8a5774a760ad298366aca2da30c",
+      "guide_sections": [
+        "3. Operators — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "92cf43eab21bce6948ee3ec5ae4cec477fa3608c42f8a979a8bde97471e336fd",
+      "guide_sections": [
+        "3. Operators — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "7eedf637ac5c6c05c083d0362d53cc797f0e392cd7e11e2d12a52bedf482e5c3",
+      "guide_sections": [
+        "3. Operators — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "ced39c8c1b87e8951357f8c22d5aadf288624fdfb41ccb0a828ddda723a569a2",
+      "guide_sections": [
+        "3. Operators — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "59276d294fb73dfa061a0f47fe1fcd8a08823417d3b5e6c7f7d75e24cf713fba",
+      "guide_sections": [
+        "3. Operators — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "1fd36e24acfc3325f7b05d4222ace7b2fee0cfe72df840abdef46a578ff00f64",
+      "guide_sections": [
+        "4. Decision-making — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "6fedf867c56529d80c861c1b5d0d4d26efeac6cf8582e8cbd2330cb148faeb82",
+      "guide_sections": [
+        "4. Decision-making — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "0e76e4c5de753da463f5519bd86bd5f8b70771b802797c0afa9c55aaa22c9138",
+      "guide_sections": [
+        "4. Decision-making — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "7bc04a0ff30ad62dc5bf5d8c4bd5aea791074dc4047f7b431868749d13ec7b52",
+      "guide_sections": [
+        "4. Decision-making — 13.25%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "60a988c9036ba68196449bbb16ffe833289a6801de65acc0734201950f6f18c5",
+      "guide_sections": [
+        "5. Loops — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "2a3425a355a8012be01f2f9a21b40c9a916122987133176f24545f5f3c50c6b5",
+      "guide_sections": [
+        "5. Loops — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "4f6a36f4dfdae9bcee9ece812980442a41e32d5365d57e31c0cfbb5c7f944c25",
+      "guide_sections": [
+        "5. Loops — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "0062b264ffe8465a0e6e586a355b34fc9861e048912f662c164bd410db113ab9",
+      "guide_sections": [
+        "5. Loops — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "fb614aaf9e93f92d22e5babe9cd6b269fe699280411a3176f78d7b456141d5f6",
+      "guide_sections": [
+        "6. Arrays, pointers, and memory — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "ff5a858d00fa3c06a5c20cc069a3df1acb9896e39a0fc2928ef18c791bbfab23",
+      "guide_sections": [
+        "6. Arrays, pointers, and memory — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "47dbeb8019fd152858e18ee07d9593ed694a569f3f4a55708ed6d750bd9571df",
+      "guide_sections": [
+        "6. Arrays, pointers, and memory — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "5e8fd2f2e5759a28304bd139f943b94b63b523b68bb56c1ec60d1722ce5b6c5f",
+      "guide_sections": [
+        "6. Arrays, pointers, and memory — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "ebfef20968ce7b9f88ca845d6f26fbebefad94479617155712614814059b9b76",
+      "guide_sections": [
+        "6. Arrays, pointers, and memory — 16.50%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "8b6a222734f9f904b27ec89bf9b5a66e27f3bd4121110d9c623970065b037a6e",
+      "guide_sections": [
+        "7. Strings — 7%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "0748605ed6bf63876ab1d71a9c5dac343c8cdb7631910f73e1b39fde9ec01432",
+      "guide_sections": [
+        "7. Strings — 7%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "71cfc736e756a5a5301ef9f09768344c6b78f95715295f74a323efa939582dc7",
+      "guide_sections": [
+        "7. Strings — 7%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "2b7a77f65a13f2d2f78841efe9e4a82b1bff6a4813f3a9444b4544084f18f220",
+      "guide_sections": [
+        "7. Strings — 7%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "4d605ee370a10820735fbf9bab9d7bfa908203cdbf0e4c51e1438a922290de79",
+      "guide_sections": [
+        "8. Functions — 7%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "52683aa4208b233c453838e83c2d8ffdb94c76e988ed3283d553fa8b022faf07",
+      "guide_sections": [
+        "8. Functions — 7%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "67aad7fa42bb676eb0dd7fc2757844692d36299c168618058a43ae82a12ffbba",
+      "guide_sections": [
+        "8. Functions — 7%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answer key"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "CLE-10-01"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "CLE-10-01",
+        "title": "CLE C Certified Entry-Level Programmer",
+        "url": "https://cppinstitute.org/cle",
+        "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+        "snapshot_path": "data\\objective-snapshots\\cle-10-01-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\cle-10-01-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 23,
+    "reachable": 16,
+    "access_blocked": 2,
+    "missing_or_error": 5
+  },
+  "source_fetches": [
+    {
+      "id": "cpp-institute-exam-policies",
+      "url": "https://cppinstitute.org/exam-policies",
+      "checked_at": "2026-09-29T20:48:32.687935+00:00",
+      "health": {
+        "id": "cpp-institute-exam-policies",
+        "url": "https://cppinstitute.org/exam-policies",
+        "checked_at": "2026-09-29T20:48:32+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cppinstitute.org/exam-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "cle-10-01-syllabus",
+      "url": "https://cppinstitute.org/cle",
+      "checked_at": "2026-09-29T20:48:32.688800+00:00",
+      "health": {
+        "id": "cle-10-01-syllabus",
+        "url": "https://cppinstitute.org/cle",
+        "checked_at": "2026-09-29T20:48:32+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cppinstitute.org/cle",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "openedg-c-essentials-1",
+      "url": "https://edube.org/study/ce1",
+      "checked_at": "2026-09-29T20:48:32.689330+00:00",
+      "health": {
+        "id": "openedg-c-essentials-1",
+        "url": "https://edube.org/study/ce1",
+        "checked_at": "2026-09-29T20:48:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/ce1",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: C Essentials ‒ Part 1",
+        "canonical_url": "https://edube.org/study/ce1",
+        "duration_signals": [
+          "42 hours",
+          "7 hours"
+        ],
+        "signal_fingerprint": "318c61c0721dba463f9a5257cddc0ab4e32ceb01258b7ee0ca33e3d73eaa3075",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/ce1",
+      "sha256": "7559c45470ef8d441a39dec2c6d88a2fe5c25b9bbd66ad915244a808de207ea1",
+      "text_characters": 5673
+    },
+    {
+      "id": "cppreference-c-language",
+      "url": "https://en.cppreference.com/w/c/language.html",
+      "checked_at": "2026-09-29T20:48:33.514736+00:00",
+      "health": {
+        "id": "cppreference-c-language",
+        "url": "https://en.cppreference.com/w/c/language.html",
+        "checked_at": "2026-09-29T20:48:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://en.cppreference.com/c/language",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "C language - cppreference.com",
+        "canonical_url": "https://en.cppreference.com/c/language",
+        "duration_signals": [],
+        "signal_fingerprint": "08a139e6d44dae8b0cd0251f4fabb84c4ef3541e9d8896798c59a16234dca9b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://en.cppreference.com/c/language",
+      "sha256": "a16c39356fd9cd49828e53f8f396751436b46d58951a47641fdd682ce38a51b8",
+      "text_characters": 2516
+    },
+    {
+      "id": "microsoft-c-language-reference",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170",
+      "checked_at": "2026-09-29T20:48:34.417737+00:00",
+      "health": {
+        "id": "microsoft-c-language-reference",
+        "url": "https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170",
+        "checked_at": "2026-09-29T20:48:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "C Language Reference",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "6661f98a25be0b598d20f2e75445a17812dcc4558111c765fac822aeadf44387",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170",
+      "sha256": "088c1e980ab77f9779605cae75db7987fbfb5f0f88ceac80acf06253a61c3088",
+      "text_characters": 1115
+    },
+    {
+      "id": "sei-cert-c-coding-standard",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/",
+      "checked_at": "2026-09-29T20:48:34.970242+00:00",
+      "health": {
+        "id": "sei-cert-c-coding-standard",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/",
+        "checked_at": "2026-09-29T20:48:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SEI CERT C Coding Standard | CERT Secure Coding",
+        "canonical_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/",
+        "duration_signals": [],
+        "signal_fingerprint": "c759c22d985b553b47feece4694cdd195610d1ec59388f011e6e0414fbb592d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/",
+      "sha256": "3f7a26739497579c455f2036a276d0c67fac4b5d45ceccba0ae13400d95665de",
+      "text_characters": 3770
+    },
+    {
+      "id": "cisco-c-essentials-1",
+      "url": "https://www.netacad.com/courses/c-essentials-1",
+      "checked_at": "2026-09-29T20:48:35.440077+00:00",
+      "health": {
+        "id": "cisco-c-essentials-1",
+        "url": "https://www.netacad.com/courses/c-essentials-1",
+        "checked_at": "2026-09-29T20:48:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/courses/c-essentials-1",
+        "content_type": "text/html",
+        "page_title": "C Essentials 1: Learn the Fundamentals of C Programming",
+        "canonical_url": "https://www.netacad.com/courses/c-essentials-1",
+        "duration_signals": [],
+        "signal_fingerprint": "54d839aa871322e56c81b514c825c192283e0ebd4138b434e5032fd5d643f990",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/courses/c-essentials-1",
+      "sha256": "2b6575c34faced54e1631c39bf1873b6d8a7ebea06a1580e9143041fac361cca",
+      "text_characters": 55
+    },
+    {
+      "id": "oreilly-effective-c-second-edition",
+      "url": "https://www.oreilly.com/library/view/effective-c/9781098144778/",
+      "checked_at": "2026-09-29T20:48:35.699848+00:00",
+      "health": {
+        "id": "oreilly-effective-c-second-edition",
+        "url": "https://www.oreilly.com/library/view/effective-c/9781098144778/",
+        "checked_at": "2026-09-29T20:48:35+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/effective-c/9781098144778/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-c-programming-for-beginners",
+      "url": "https://www.udemy.com/course/c-programming-for-beginners-/",
+      "checked_at": "2026-09-29T20:48:35.889598+00:00",
+      "health": {
+        "id": "udemy-c-programming-for-beginners",
+        "url": "https://www.udemy.com/course/c-programming-for-beginners-/",
+        "checked_at": "2026-09-29T20:48:35+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/c-programming-for-beginners-/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "youtube-freecodecamp-c-beginner",
+      "url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+      "checked_at": "2026-09-29T20:48:36.004639+00:00",
+      "health": {
+        "id": "youtube-freecodecamp-c-beginner",
+        "url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+        "checked_at": "2026-09-29T20:48:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "C Programming Tutorial for Beginners",
+        "canonical_url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+        "duration_signals": [],
+        "signal_fingerprint": "bc880f57048f732f75e27a7904717df799139693ee3d5dbca14acc985379165d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+      "sha256": "ec5d2d00e34bcf5daa1c497ba76a2f4e6b207dde8db96d836a30a91d6f23e389",
+      "text_characters": 199
+    },
+    {
+      "id": "cpp-institute-certification-catalog",
+      "url": "https://cppinstitute.org/certification-exams",
+      "checked_at": "2026-09-29T20:54:42.981097+00:00",
+      "health": {
+        "id": "cpp-institute-certification-catalog",
+        "url": "https://cppinstitute.org/certification-exams",
+        "checked_at": "2026-09-29T20:54:42+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cppinstitute.org/certification-exams",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "c11-n1570",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "checked_at": "2026-09-29T20:54:42.982640+00:00",
+      "health": {
+        "id": "c11-n1570",
+        "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+        "checked_at": "2026-09-29T20:54:42+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "compiler-explorer-api",
+      "url": "https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md",
+      "checked_at": "2026-09-29T20:54:42.983333+00:00",
+      "health": {
+        "id": "compiler-explorer-api",
+        "url": "https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md",
+        "checked_at": "2026-09-29T20:54:42+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://github.com/compiler-explorer/compiler-explorer/blob/main/docs/API.md",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "cert-c-err34",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+      "checked_at": "2026-09-29T20:55:01.113653+00:00",
+      "health": {
+        "id": "cert-c-err34",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ERR34-C. Detect errors when converting a string to a number | CERT Secure Coding",
+        "canonical_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+        "duration_signals": [],
+        "signal_fingerprint": "ba92f5adeaf909069a61d9ae23c9d8abd0ff3991b34c99e3981860023571a55c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+      "sha256": "785b786206b69d0618e53e9967123d3e4ff98f288734f2abef0c51908b23c65b",
+      "text_characters": 7929
+    },
+    {
+      "id": "cert-c-int05",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/integers-int/int05-c/",
+      "checked_at": "2026-09-29T20:55:01.113831+00:00",
+      "health": {
+        "id": "cert-c-int05",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/integers-int/int05-c/",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/integers-int/int05-c/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "INT05-C. Do not use input functions to convert character data if they cannot handle all possible inputs | CERT Secure Coding",
+        "canonical_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/integers-int/int05-c/",
+        "duration_signals": [],
+        "signal_fingerprint": "abd4b63bd6e3533eb9440e595a87bed75a9615c980f4aaa4c27d3075fa8e3d02",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/recommendations/integers-int/int05-c/",
+      "sha256": "027e66bc870a1d1c3a9a7b7a4e301a0c90dfb593a6efee4513f9ec75137a2d69",
+      "text_characters": 4254
+    },
+    {
+      "id": "cert-c-mem35",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+      "checked_at": "2026-09-29T20:55:01.393755+00:00",
+      "health": {
+        "id": "cert-c-mem35",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MEM35-C. Allocate sufficient memory for an object | CERT Secure Coding",
+        "canonical_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+        "duration_signals": [],
+        "signal_fingerprint": "bb5b68516f870c04e85c8490d88365907ad5395696cf01c841e09c38519a83ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+      "sha256": "48d605e7abacdb792a07588370067d197b8c210cb08525ffbf068fdb86c9c435",
+      "text_characters": 10165
+    },
+    {
+      "id": "cert-c-str31",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+      "checked_at": "2026-09-29T20:55:01.442110+00:00",
+      "health": {
+        "id": "cert-c-str31",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "STR31-C. Guarantee that storage for strings has sufficient space for character data and the null terminator | CERT Secure Coding",
+        "canonical_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+        "duration_signals": [],
+        "signal_fingerprint": "f8b37092a49ef773c777d14993247286eafd0625dd9d3f711f859484caa000ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+      "sha256": "a7db216058024a05be21b9a4683e9da389372298dc903a3d3f7c3afbab7c01a1",
+      "text_characters": 23243
+    },
+    {
+      "id": "cert-c-arr30",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+      "checked_at": "2026-09-29T20:55:01.506491+00:00",
+      "health": {
+        "id": "cert-c-arr30",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "ARR30-C. Do not form or use out-of-bounds pointers or array subscripts | CERT Secure Coding",
+        "canonical_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+        "duration_signals": [],
+        "signal_fingerprint": "578673d5903dabab1f15805a5217ac25639165a8d86baf7fb722b6751246f2fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+      "sha256": "d5d4ac944ee44528beb90dbd9e983a604c35c9e5f4222e66de100bf0f94ac5bd",
+      "text_characters": 22642
+    },
+    {
+      "id": "cert-c-mem30",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem30-c/",
+      "checked_at": "2026-09-29T20:55:01.863678+00:00",
+      "health": {
+        "id": "cert-c-mem30",
+        "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem30-c/",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem30-c/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MEM30-C. Do not access freed memory | CERT Secure Coding",
+        "canonical_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem30-c/",
+        "duration_signals": [],
+        "signal_fingerprint": "48a1fce6e82311206c6cdc37bafabbda83702b47f43af4a2cc433ef9ad963e4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem30-c/",
+      "sha256": "195554c632cab7953930280a3fb330977fcbc884e0137bb723e1310510c1d3ea",
+      "text_characters": 11383
+    },
+    {
+      "id": "msvc-c-round",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/round-roundf-roundl?view=msvc-170",
+      "checked_at": "2026-09-29T20:55:01.865080+00:00",
+      "health": {
+        "id": "msvc-c-round",
+        "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/round-roundf-roundl?view=msvc-170",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/round-roundf-roundl?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "round, roundf, roundl",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/round-roundf-roundl?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "e40de2e1ee37e2209336de614f92341e6eb3602ebb59c5a768006b8c44000715",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/round-roundf-roundl?view=msvc-170",
+      "sha256": "042fcac08b2e6ae8929fc578d914f9ad588186e04c1dff98aee7c0a525526960",
+      "text_characters": 3806
+    },
+    {
+      "id": "msvc-c-floor",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=msvc-170",
+      "checked_at": "2026-09-29T20:55:01.865364+00:00",
+      "health": {
+        "id": "msvc-c-floor",
+        "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=msvc-170",
+        "checked_at": "2026-09-29T20:55:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "floor, floorf, floorl",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "4fbad459dbbb546f78731951946755618d207ead2cf78418e36101c9bf735643",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/floor-floorf-floorl?view=msvc-170",
+      "sha256": "bbb6dba09a614a494a2d1430d70b48d40b47abfb4d9e5f1511905d086766515a",
+      "text_characters": 2669
+    },
+    {
+      "id": "msvc-c-ceil",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill?view=msvc-170",
+      "checked_at": "2026-09-29T20:55:02.165954+00:00",
+      "health": {
+        "id": "msvc-c-ceil",
+        "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill?view=msvc-170",
+        "checked_at": "2026-09-29T20:55:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "ceil, ceilf, ceill",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "b0813f103168f7600148aff5bcd56f7339bbb5e43ea6ccabc2005d7fa471fdb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/ceil-ceilf-ceill?view=msvc-170",
+      "sha256": "0c20979d01ee5b954ad71cfdbe5eb41f3dfa889500bc0c5d8b26e57de43a805f",
+      "text_characters": 2046
+    },
+    {
+      "id": "msvc-c-scanf",
+      "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l?view=msvc-170",
+      "checked_at": "2026-09-29T20:55:02.323922+00:00",
+      "health": {
+        "id": "msvc-c-scanf",
+        "url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l?view=msvc-170",
+        "checked_at": "2026-09-29T20:55:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l?view=msvc-170",
+        "content_type": "text/html",
+        "page_title": "scanf, _scanf_l, wscanf, _wscanf_l",
+        "canonical_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l?view=msvc-170",
+        "duration_signals": [],
+        "signal_fingerprint": "7bc477c0cfcb94e9fa79423593a7fb53f7a60700ac99832dfaa49b7141a1b6ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l?view=msvc-170",
+      "sha256": "6b76d56acddece22f46950ac7afef1abc5575d864341228db0854d8a2291103c",
+      "text_characters": 4727
+    }
+  ],
+  "added_source_ids": [
+    "c11-n1570",
+    "cert-c-err34",
+    "cert-c-int05",
+    "cert-c-mem35",
+    "cert-c-str31",
+    "cert-c-arr30",
+    "cert-c-mem30",
+    "msvc-c-round",
+    "msvc-c-floor",
+    "msvc-c-ceil",
+    "msvc-c-scanf"
+  ],
+  "findings": [
+    {
+      "id": "cle1001-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Rounding is an explicit objective",
+      "url": "https://cppinstitute.org/cle",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLE-10-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Objective 3.2 explicitly includes rounding; existing prose mainly covered integer division and generic conversion.",
+      "recommendation": "Add a sourced floor/ceil/round/cast comparison and execute exact positive/negative halfway and non-halfway examples.",
+      "disposition": "applied",
+      "source_id": "cle-10-01-syllabus",
+      "resolution": "Add a sourced floor/ceil/round/cast comparison and execute exact positive/negative halfway and non-halfway examples."
+    },
+    {
+      "id": "cle1001-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Assignment counts do not handle numeric overflow",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLE-10-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "scanf-family numeric conversion can be undefined when the value is unrepresentable, and a successful prefix does not validate the complete text.",
+      "recommendation": "Use bounded character input plus strtol with suffix/range checks, preserving output on rejection; retain safe scanf-family traces for the explicit objective.",
+      "disposition": "applied",
+      "source_id": "cert-c-err34",
+      "resolution": "Use bounded character input plus strtol with suffix/range checks, preserving output on rejection; retain safe scanf-family traces for the explicit objective."
+    },
+    {
+      "id": "cle1001-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Portable C explanations require an explicit practice version",
+      "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLE-10-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "C11 distinguishes int character constants, grouping/sequencing, signed/unsigned conversions, sizeof VLA cases and function prototypes. Microsoft index is organized around C89 plus extensions.",
+      "recommendation": "Pin original practice to C11 without claiming the exam mandates it; explain specific portable contracts and execute defined traces.",
+      "disposition": "applied",
+      "source_id": "c11-n1570",
+      "resolution": "Pin original practice to C11 without claiming the exam mandates it; explain specific portable contracts and execute defined traces."
+    },
+    {
+      "id": "cle1001-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Adjacent multidimensional storage does not erase row bounds",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLE-10-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Out-of-range row subscripts and forming out-of-range pointers can be undefined even when nearby storage appears accessible.",
+      "recommendation": "Teach pointer-to-row types, same-array arithmetic and protected insertion-sort indexing with executed boundary checks.",
+      "disposition": "applied",
+      "source_id": "cert-c-arr30",
+      "resolution": "Teach pointer-to-row types, same-array arithmetic and protected insertion-sort indexing with executed boundary checks."
+    },
+    {
+      "id": "cle1001-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Allocation examples need real failure and size paths",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLE-10-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Size multiplication, zero count and null allocation results require explicit control flow and initialization before reads.",
+      "recommendation": "Replace a file-scope statement fragment with a complete program; implement release paths and a bounded injected-null allocation test.",
+      "disposition": "applied",
+      "source_id": "cert-c-mem35",
+      "resolution": "Replace a file-scope statement fragment with a complete program; implement release paths and a bounded injected-null allocation test."
+    },
+    {
+      "id": "cle1001-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "String helpers require terminator and capacity contracts",
+      "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLE-10-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "A terminated source and destination capacity must include final NUL; illustrative snippets and placeholder error comments are not a general complete parser.",
+      "recommendation": "Add original full-line and text programs with explicit capacity, NUL, disjoint-source and output-preservation contracts, then execute normal/boundary rejection cases.",
+      "disposition": "applied",
+      "source_id": "cert-c-str31",
+      "resolution": "Add original full-line and text programs with explicit capacity, NUL, disjoint-source and output-preservation contracts, then execute normal/boundary rejection cases."
+    },
+    {
+      "id": "cle1001-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "External content and reference quality remain limited",
+      "url": "https://cppinstitute.org/cle",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "CLE-10-01"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Paid interiors and current booking not inspected; direct source requests fail and several public snippets or course labels require qualification.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "cpp-institute-certification-catalog",
+      "review": "Full current certification catalog and dated exam/policy pages examined. No separate unseen release/news channel adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "remote_c_builds_and_runs": 12,
+    "public_code_blocks": 8,
+    "reasoning_cases": 3,
+    "remote_validation": {
+      "passed": true,
+      "public_blocks": 8,
+      "remote_builds_and_runs": 12,
+      "public_example_sha256": [
+        "4501ba5ab87b4319e41b349d4b460884c26b3473fb283ba1aefe57a1fb218de3",
+        "5df6988b7c929a4e1c57f73c9b3edc4443d6ca5147a3f58fc6607b1e1cbff01b",
+        "f4c7e1d9ff26cf1b03a1cf2cfce9f19dcccb74a754eaa7eaa0d8af60f7b7916e",
+        "9ae2e0f829e3452f12a08f78445388b7098282b6178e87a6ba47627039cc504f",
+        "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+        "ecc01104dffbf4a88f9d450b0f6b263ff34ceb35aa72e6cb4ebf92a57072b45b",
+        "b1e30988dcfee58b7202c98cafd3cd0ed7b3bab4675a07f2938271d2a00df4dd",
+        "3b4f1b1cd15f714ee3532c5e8ab1ae98069ef514375dc1259c6eadff739167fd"
+      ],
+      "results": [
+        {
+          "name": "workbook-gcc",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "72 core checks passed",
+          "source_sha256": "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+          "receipt_sha256": "2c67293495eb07c6f976c26f9a6279650b4917e90f232e47e1693b86437eddd6"
+        },
+        {
+          "name": "workbook-clang",
+          "compiler": "cclang1910",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "72 core checks passed",
+          "source_sha256": "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+          "receipt_sha256": "2a5df7b44d89c2f3518a9ded741dfac69e41745e600947ad745829fe4d1ac9b0"
+        },
+        {
+          "name": "input",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "Quantity: 12",
+          "source_sha256": "5df6988b7c929a4e1c57f73c9b3edc4443d6ca5147a3f58fc6607b1e1cbff01b",
+          "receipt_sha256": "6843b882ce16715d1cd9474dcf53b8427043cb1b0e54b0e520fa6ba5745a6176"
+        },
+        {
+          "name": "inventory",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "Total cents: 550",
+          "source_sha256": "ecc01104dffbf4a88f9d450b0f6b263ff34ceb35aa72e6cb4ebf92a57072b45b",
+          "receipt_sha256": "3a5ffa26d1d545f897af1a733f64a961f390f134d3bd3c1ebdf3c4da6f86ec72"
+        },
+        {
+          "name": "text",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "14 bytes, 2 words\n  red  blue  \t | checked",
+          "source_sha256": "b1e30988dcfee58b7202c98cafd3cd0ed7b3bab4675a07f2938271d2a00df4dd",
+          "receipt_sha256": "58294b80efbe51a1df87f32982f9e2882f7247c9b5c14d10e729bb1cc34b82cc"
+        },
+        {
+          "name": "menu",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "Values: -2 3 3",
+          "source_sha256": "3b4f1b1cd15f714ee3532c5e8ab1ae98069ef514375dc1259c6eadff739167fd",
+          "receipt_sha256": "65d5258b809ddf73f8bf486c885524bc8df7361ec77d4f2d0266a674a1a93681"
+        },
+        {
+          "name": "scenario-gcc",
+          "compiler": "cg142",
+          "mode": "Exact public shared/helper/scenario bodies; entry mains excluded; original boundary driver with temporary files in remote sandbox",
+          "passed": true,
+          "stdout": "118 scenario checks passed",
+          "source_sha256": "fdd8b8a95a061c0c5b9dd47d541feb382d145d2fbfbb6ed34248b0bcd45d0b92",
+          "receipt_sha256": "3b4821e34a08a07e46ba16fa6dba6024789c09be7d8650c1ebfc805633c72e38"
+        },
+        {
+          "name": "scenario-clang",
+          "compiler": "cclang1910",
+          "mode": "Exact public shared/helper/scenario bodies; entry mains excluded; original boundary driver with temporary files in remote sandbox",
+          "passed": true,
+          "stdout": "118 scenario checks passed",
+          "source_sha256": "fdd8b8a95a061c0c5b9dd47d541feb382d145d2fbfbb6ed34248b0bcd45d0b92",
+          "receipt_sha256": "f538e847e4e1e7ebd83e8841361a8d5185e1ba54ce6d9d763afcad148edf912e"
+        },
+        {
+          "name": "hello",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "count = 3",
+          "source_sha256": "4501ba5ab87b4319e41b349d4b460884c26b3473fb283ba1aefe57a1fb218de3",
+          "receipt_sha256": "c73494cebfcbfa347c67ae92816885c178d9c97179c28e2bcfd9b1e64976edd0"
+        },
+        {
+          "name": "allocation",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "Total: 28; owner reset: 1",
+          "source_sha256": "f4c7e1d9ff26cf1b03a1cf2cfce9f19dcccb74a754eaa7eaa0d8af60f7b7916e",
+          "receipt_sha256": "f3914eb7573aadb3d6a14762bb966e6b3bb46bce128d06f08d9be91a98c9370c"
+        },
+        {
+          "name": "sum",
+          "compiler": "cg142",
+          "mode": "complete original program",
+          "passed": true,
+          "stdout": "Sum: 10",
+          "source_sha256": "9ae2e0f829e3452f12a08f78445388b7098282b6178e87a6ba47627039cc504f",
+          "receipt_sha256": "b977a3e08271e854ae5c7c23f0e9b19f29f431cf776f9b3d47a7479dad71e136"
+        },
+        {
+          "name": "sum-boundaries",
+          "compiler": "cg142",
+          "mode": "Exact public checked_sum and renamed original main, plus bounded original driver",
+          "passed": true,
+          "stdout": "9 sum boundary checks passed",
+          "source_sha256": "96ade71f8b2a831390c1cc4dd7dcbabf08aef1d1cde12bd93ca0089d6633ece6",
+          "receipt_sha256": "d227994e0c5f08b3d6c9c03b81469d61b4240e598d8872067108a5b9c83760d5"
+        }
+      ],
+      "core_checks_per_compiler": 72,
+      "scenario_checks_per_compiler": 118,
+      "sum_boundary_checks": 9,
+      "compiler_options": "-std=c11 -Wall -Wextra -pedantic -lm",
+      "execution_boundary": "Remote Compiler Explorer C11 execution using C compilers GCC14.2 and Clang19.1. All eight exact public blocks are complete programs; scenario harness consolidates identical shared helpers and excludes entry mains, then uses temporary files inside remote sandbox. Nine additional checked_sum boundary checks. Only original public code submitted; no local C toolchain, install, account, actual memory exhaustion, deliberately undefined execution, sanitizer or interactive debugger. Eight broader learner activities remain proposed."
+    }
+  },
+  "answered_checks": 30,
+  "limitations": [
+    "Direct institute/PDF/API-documentation requests and objective monitor failed; public web-reader evidence supports manual scope comparison and selected standard clauses. Existing snapshots retained; no successful automatic hash comparison or local genuine PDF capture claimed.",
+    "Source reading is section-specific. Paid OReilly/Udemy inaccessible, Cisco/YouTube shells, and public course/reference copy errors remain qualified. Lessons, transcripts, account and booking UI not reviewed.",
+    "Eight exact public C blocks are complete programs executed remotely through Compiler Explorer. GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks; nine checked_sum boundaries additionally passed on GCC. Twelve build/run receipts, no final compiler warnings. This is live-partial remote code execution, not local compilation or infrastructure labs.",
+    "Scenario harness consolidates identical helpers and uses temporary streams in the remote sandbox. Allocation failure is an injected null return, not actual memory exhaustion. No deliberately undefined run, sanitizer, interactive debugger or all-platform guarantee. Eight broader learner activities remain proposed.",
+    "C11 is an author practice choice, not an exam-required version claim. Demo business rules are fictional; callers still owe valid pointers, capacities and lifetimes. No installation, service/runtime/permission change, account, purchase, exam attempt, external message or human review."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Remote Compiler Explorer C11 execution using C compilers GCC14.2 and Clang19.1. All eight exact public blocks are complete programs; scenario harness consolidates identical shared helpers and excludes entry mains, then uses temporary files inside remote sandbox. Nine additional checked_sum boundary checks. Only original public code submitted; no local C toolchain, install, account, actual memory exhaustion, deliberately undefined execution, sanitizer or interactive debugger. Eight broader learner activities remain proposed.",
+    "passed": true,
+    "public_blocks": 8,
+    "remote_builds_and_runs": 12,
+    "public_example_sha256": [
+      "4501ba5ab87b4319e41b349d4b460884c26b3473fb283ba1aefe57a1fb218de3",
+      "5df6988b7c929a4e1c57f73c9b3edc4443d6ca5147a3f58fc6607b1e1cbff01b",
+      "f4c7e1d9ff26cf1b03a1cf2cfce9f19dcccb74a754eaa7eaa0d8af60f7b7916e",
+      "9ae2e0f829e3452f12a08f78445388b7098282b6178e87a6ba47627039cc504f",
+      "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+      "ecc01104dffbf4a88f9d450b0f6b263ff34ceb35aa72e6cb4ebf92a57072b45b",
+      "b1e30988dcfee58b7202c98cafd3cd0ed7b3bab4675a07f2938271d2a00df4dd",
+      "3b4f1b1cd15f714ee3532c5e8ab1ae98069ef514375dc1259c6eadff739167fd"
+    ],
+    "results": [
+      {
+        "name": "workbook-gcc",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "72 core checks passed",
+        "source_sha256": "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+        "receipt_sha256": "2c67293495eb07c6f976c26f9a6279650b4917e90f232e47e1693b86437eddd6"
+      },
+      {
+        "name": "workbook-clang",
+        "compiler": "cclang1910",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "72 core checks passed",
+        "source_sha256": "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+        "receipt_sha256": "2a5df7b44d89c2f3518a9ded741dfac69e41745e600947ad745829fe4d1ac9b0"
+      },
+      {
+        "name": "input",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "Quantity: 12",
+        "source_sha256": "5df6988b7c929a4e1c57f73c9b3edc4443d6ca5147a3f58fc6607b1e1cbff01b",
+        "receipt_sha256": "6843b882ce16715d1cd9474dcf53b8427043cb1b0e54b0e520fa6ba5745a6176"
+      },
+      {
+        "name": "inventory",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "Total cents: 550",
+        "source_sha256": "ecc01104dffbf4a88f9d450b0f6b263ff34ceb35aa72e6cb4ebf92a57072b45b",
+        "receipt_sha256": "3a5ffa26d1d545f897af1a733f64a961f390f134d3bd3c1ebdf3c4da6f86ec72"
+      },
+      {
+        "name": "text",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "14 bytes, 2 words\n  red  blue  \t | checked",
+        "source_sha256": "b1e30988dcfee58b7202c98cafd3cd0ed7b3bab4675a07f2938271d2a00df4dd",
+        "receipt_sha256": "58294b80efbe51a1df87f32982f9e2882f7247c9b5c14d10e729bb1cc34b82cc"
+      },
+      {
+        "name": "menu",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "Values: -2 3 3",
+        "source_sha256": "3b4f1b1cd15f714ee3532c5e8ab1ae98069ef514375dc1259c6eadff739167fd",
+        "receipt_sha256": "65d5258b809ddf73f8bf486c885524bc8df7361ec77d4f2d0266a674a1a93681"
+      },
+      {
+        "name": "scenario-gcc",
+        "compiler": "cg142",
+        "mode": "Exact public shared/helper/scenario bodies; entry mains excluded; original boundary driver with temporary files in remote sandbox",
+        "passed": true,
+        "stdout": "118 scenario checks passed",
+        "source_sha256": "fdd8b8a95a061c0c5b9dd47d541feb382d145d2fbfbb6ed34248b0bcd45d0b92",
+        "receipt_sha256": "3b4821e34a08a07e46ba16fa6dba6024789c09be7d8650c1ebfc805633c72e38"
+      },
+      {
+        "name": "scenario-clang",
+        "compiler": "cclang1910",
+        "mode": "Exact public shared/helper/scenario bodies; entry mains excluded; original boundary driver with temporary files in remote sandbox",
+        "passed": true,
+        "stdout": "118 scenario checks passed",
+        "source_sha256": "fdd8b8a95a061c0c5b9dd47d541feb382d145d2fbfbb6ed34248b0bcd45d0b92",
+        "receipt_sha256": "f538e847e4e1e7ebd83e8841361a8d5185e1ba54ce6d9d763afcad148edf912e"
+      },
+      {
+        "name": "hello",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "count = 3",
+        "source_sha256": "4501ba5ab87b4319e41b349d4b460884c26b3473fb283ba1aefe57a1fb218de3",
+        "receipt_sha256": "c73494cebfcbfa347c67ae92816885c178d9c97179c28e2bcfd9b1e64976edd0"
+      },
+      {
+        "name": "allocation",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "Total: 28; owner reset: 1",
+        "source_sha256": "f4c7e1d9ff26cf1b03a1cf2cfce9f19dcccb74a754eaa7eaa0d8af60f7b7916e",
+        "receipt_sha256": "f3914eb7573aadb3d6a14762bb966e6b3bb46bce128d06f08d9be91a98c9370c"
+      },
+      {
+        "name": "sum",
+        "compiler": "cg142",
+        "mode": "complete original program",
+        "passed": true,
+        "stdout": "Sum: 10",
+        "source_sha256": "9ae2e0f829e3452f12a08f78445388b7098282b6178e87a6ba47627039cc504f",
+        "receipt_sha256": "b977a3e08271e854ae5c7c23f0e9b19f29f431cf776f9b3d47a7479dad71e136"
+      },
+      {
+        "name": "sum-boundaries",
+        "compiler": "cg142",
+        "mode": "Exact public checked_sum and renamed original main, plus bounded original driver",
+        "passed": true,
+        "stdout": "9 sum boundary checks passed",
+        "source_sha256": "96ade71f8b2a831390c1cc4dd7dcbabf08aef1d1cde12bd93ca0089d6633ece6",
+        "receipt_sha256": "d227994e0c5f08b3d6c9c03b81469d61b4240e598d8872067108a5b9c83760d5"
+      }
+    ],
+    "core_checks_per_compiler": 72,
+    "scenario_checks_per_compiler": 118,
+    "sum_boundary_checks": 9,
+    "compiler_options": "-std=c11 -Wall -Wextra -pedantic -lm",
+    "learning_catalog_consistency": "passed"
+  },
+  "source_reading_boundaries": {
+    "cle-10-01-syllabus": "Direct fetch and objective monitor timed out. Full canonical page read via public web reader: active CLE-10-01, July 24, 2025 syllabus, 36 objectives 6/5/5/4/4/5/4/3; weights 13.25/13.25/13.25/13.25/16.5/16.5/7/7, items 4/4/4/4/5/5/2/2. Thirty questions, 45 minutes plus approximately five NDA/tutorial, English, TestNow, 70% cumulative threshold and stated 30-point maximum with different item values; no prerequisite, USD69/86. Manual retained-snapshot comparison, no successful automatic hash comparison or booking UI review.",
+    "cpp-institute-exam-policies": "Fresh direct request timed out. Entry-level policy read completely via web reader in this review; associate/professional section previously read completely during CPE and revisited for context. CLE/CPE TestNow proctoring and seven-day failed-retake wait differ from the Pearson associate/professional section and its 15-day rule. Admission, NDA, security and accommodation text were research only; no account or exam action.",
+    "openedg-c-essentials-1": "Complete 5673-character public landing read locally and via web reader: 42 hours, seven/week suggestion, English, beginner/free, modules 0–5, CLE alignment and no prerequisite. Basics/Beginner versus Intermediate labels and prose equating pointers/arrays conflict; precise language rules govern. Enrollment, lessons and assessments not entered; broad marketing/dated Linux-size claims not adopted.",
+    "cisco-c-essentials-1": "HTTP200 with 55-character application shell only. No rendered curriculum or provider duration verified. 35–45 hours is an author estimate; no account/enrollment.",
+    "sei-cert-c-coding-standard": "Complete 3770-character development index read, including explicit warning that pages can be incomplete or contain errors and distinction from published 2016 C11 edition. Linked rules selectively reviewed and registered separately; not a complete coding-standard audit. No analyzer or conformance certification run.",
+    "microsoft-c-language-reference": "Complete 1115-character index read despite generic authorization banner. It describes Microsoft C with ANSI C89 organization plus extensions, so it is not treated as sole portable C11 authority. Linked chapters not generally audited; selected runtime references separately registered.",
+    "cppreference-c-language": "Complete 2516-character community language index read, including C11/C23 version labels. Navigation/context only, not sole authority for material repairs; linked technical chapters not audited.",
+    "oreilly-effective-c-second-edition": "HTTP403. Current paid contents, edition details and duration not reverified; five to eight selective hours is an author planning estimate. No subscription content accessed.",
+    "udemy-c-programming-for-beginners": "HTTP403. Current lessons, curriculum and runtime not reverified; 15–25 selective hours is an author estimate. No paid question or lesson access.",
+    "youtube-freecodecamp-c-beginner": "HTTP200 with 199-character title/shell body. No transcript or playback; prior approximately 3h46m runtime not verified. Landing success is not lesson review.",
+    "cpp-institute-certification-catalog": "Fresh direct request timed out; complete public catalog read via web reader. Entry CLE remains listed; lifetime credentials retain completed version. General Pearson/OnVUE program language does not override CLE-specific TestNow. No replacement found on examined pages, not a claim about every unseen release channel.",
+    "c11-n1570": "Direct PDF download and health request timed out. Public web-reader PDF has 701 pages, April 12, 2011 WG14 committee draft. Selected text read: hosted startup/termination 5.1.2.2.1–3; 6.3.1.1–4 conversions; 6.3.2.1 array/lvalue conversion; 6.4.4.4 ordinary-character semantics; 6.5 paragraphs 1–5 and footnotes; 6.5.3.1–4 increment/address/unary/sizeof including VLA exception; 6.5.4–7 casts/division/pointer arithmetic/shifts; selected 6.7.6.3 prototype/void/array-parameter paragraphs; 7.12.9.6 round description; 7.21.6.2 formatted-input paragraphs 1–16 with examples/context; 7.22.3 allocation overview/calloc/free/malloc; 7.24.2.3 strcpy and 7.24.3.1 strcat. Not full standard review or a claim of current exam-required version. No local genuine PDF capture succeeded; source reading occurred through public web tool.",
+    "compiler-explorer-api": "Direct documentation health request failed. Public API list-compilers and compile/execute request sections read via web reader; full documentation previously read for CPE. Actual C compiler list returned cg142 and cclang1910. Original public C11 programs submitted with allowStoreCodeDebug=false, no account or saved-code shortlink; exact request/result receipts retained. Remote execution is not local compilation.",
+    "cert-c-err34": "Read introduction and atoi/sscanf/strtol noncompliant/compliant conversion sections through risk summary, plus beginning of analyzer table only. Complete 7929-character page not audited. Conversion errors, remaining suffix, ERANGE and destination range support original parser; source snippets not copied or treated as standalone complete programs.",
+    "cert-c-int05": "Complete 4254-character page read, including Linux-specific scanf errno workaround and portable character-input/strtol approach. Platform workaround not adopted as C11 guarantee. Source trailing-character policy is stricter than the explicitly different original surrounding-whitespace contract.",
+    "cert-c-mem35": "Read introduction and pointer/integer allocation examples through before Risk Assessment. Size type, multiply-before-allocate guard and sizeof pointed-to object support original code. Placeholder error comments need real control flow; unevaluated-sizeof shorthand qualified for VLA. Full analyzer/CWE/bibliography sections not audited.",
+    "cert-c-str31": "Read introduction and off-by-one issue, selected compliant off-by-one/fgets/getchar/fscanf/snprintf sections. Full 23243-character page not audited. Destination capacity and terminator, partial-line handling and bounded character input adopted in original design. Off-by-one sample needs nonzero-capacity contract; displayed snprintf sample is malformed and is not adopted as a compilable/general truncation check. No source snippets executed.",
+    "cert-c-arr30": "Read entire material before Risk Assessment: forming/following invalid pointers, one-past dereference, table sizing, multidimensional row bounds, flexible-array and null-pointer arithmetic examples. Broader vulnerability/analyzer/CWE claims not adopted. Some illustrative snippets are incomplete or contain error-handling placeholders; original bounds/control paths are separately executed. No vulnerable source program executed.",
+    "cert-c-mem30": "Read all material before Risk Assessment: indeterminate dangling pointers, linked-list lifetime, post-free copy, zero-size realloc and moved-allocation examples. Full 11383-character page not audited. No stale pointer evaluation in original programs; no source vulnerabilities or actual exhaustion executed. Zero-size realloc detail is context, not a general cross-version claim.",
+    "msvc-c-round": "Complete 3806-character reference read: round takes/returns double in ordinary C use, nearest integral value and halfway away from zero. C++ overloads, type-generic macro, platform exception tables and Microsoft long-double/example formatting behavior are not adopted as portable C11 requirements. Original small exact-fraction checks executed remotely, not the vendor sample.",
+    "msvc-c-floor": "Complete 2669-character reference read. Direction toward negative infinity and floating return distinguish it from integer truncation; original positive/negative checks executed. SSE/global-state and type-generic/overload details are context only, no settings changed.",
+    "msvc-c-ceil": "Complete 2046-character reference read. Direction toward positive infinity and floating return used in original checks. Microsoft implementation settings, overloads and linked example not executed.",
+    "msvc-c-scanf": "Complete 4727-character reference read. Assignment count, matching pointer types and bounded text input adopted with N1570 numeric-overflow clarification. Microsoft invalid-parameter handlers, _l/TCHAR/UWP/%C/%S and secure-CRT recommendations remain platform-specific. Vendor sample can read unassigned destinations after failed input; not copied or executed."
+  },
+  "public_examples": [
+    {
+      "language": "c",
+      "code": "#include <stdio.h>\n\nint main(void) {\n    int count = 3;\n    printf(\"count = %d\\n\", count);\n    return 0;\n}\n",
+      "sha256": "4501ba5ab87b4319e41b349d4b460884c26b3473fb283ba1aefe57a1fb218de3"
+    },
+    {
+      "language": "c",
+      "code": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\nint main(void) {\n    char line[64];\n    long quantity;\n    if (cle_read_line(stdin, line, sizeof line) != 1 ||\n        !cle_parse_long(line, 0, 1000, &quantity)) {\n        puts(\"Expected one decimal quantity in 0..1000\");\n        return 1;\n    }\n    printf(\"Quantity: %ld\\n\", quantity);\n    return 0;\n}\n",
+      "sha256": "5df6988b7c929a4e1c57f73c9b3edc4443d6ca5147a3f58fc6607b1e1cbff01b"
+    },
+    {
+      "language": "c",
+      "code": "#include <stdint.h>\n#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    size_t count = 8;\n    int *values;\n    if (count == 0 || count > SIZE_MAX / sizeof *values) return 1;\n    values = malloc(count * sizeof *values);\n    if (values == NULL) return 1;\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        values[i] = (int)i;\n        total += values[i];\n    }\n    free(values);\n    values = NULL;\n    printf(\"Total: %ld; owner reset: %d\\n\", total, values == NULL);\n    return 0;\n}\n",
+      "sha256": "f4c7e1d9ff26cf1b03a1cf2cfce9f19dcccb74a754eaa7eaa0d8af60f7b7916e"
+    },
+    {
+      "language": "c",
+      "code": "#include <stddef.h>\n#include <stdio.h>\n\n/* Caller provides count live elements. Output changes only on success. */\nint checked_sum(const int *values, size_t count, long *output) {\n    if (output == NULL || count > 100 || (count != 0 && values == NULL)) return 0;\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        if (values[i] < -1000 || values[i] > 1000) return 0;\n        total += values[i];\n    }\n    *output = total;\n    return 1;\n}\nint main(void) {\n    int values[] = {7, -2, 5};\n    long total;\n    if (!checked_sum(values, sizeof values / sizeof values[0], &total)) return 1;\n    printf(\"Sum: %ld\\n\", total);\n    return 0;\n}\n",
+      "sha256": "9ae2e0f829e3452f12a08f78445388b7098282b6178e87a6ba47627039cc504f"
+    },
+    {
+      "language": "c",
+      "code": "#include <ctype.h>\n#include <limits.h>\n#include <math.h>\n#include <stddef.h>\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstatic unsigned checks;\nstatic void check(int condition, const char *label) {\n    if (!condition) { fprintf(stderr, \"Failed: %s\\n\", label); exit(EXIT_FAILURE); }\n    ++checks;\n}\nstatic int by_value(int value) { value += 2; return value; }\nstatic void by_pointer(int *value) { if (value != NULL) *value += 2; }\nstatic long bounded_sum(const int *values, size_t count) {\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) total += values[i];\n    return total;\n}\nint main(int argc, char *argv[]) {\n    check(argc >= 0 && argv[argc] == NULL, \"hosted main sentinel\");\n    check(sizeof 'A' == sizeof(int), \"ordinary character constant has int size\");\n    check(sizeof \"A\" == 2, \"string literal includes terminator\");\n    check('9' - '0' == 9, \"decimal digit codes are consecutive\");\n    check(010 == 8 && 0x10 == 16, \"literal bases\");\n    check(2.5e2 == 250.0, \"scientific notation\");\n    check(sizeof(char) == 1 && CHAR_BIT >= 8, \"C byte and minimum bits\");\n    check(INT_MAX >= 32767 && LONG_MAX >= 2147483647L, \"minimum integer ranges\");\n    check(7 / 2 == 3 && -7 / 2 == -3, \"integer division truncates toward zero\");\n    check(-7 % 2 == -1 && 7 % -2 == 1, \"remainder follows dividend\");\n    check((double)7 / 2 == 3.5, \"conversion before division\");\n    check((double)(7 / 2) == 3.0, \"conversion cannot recover discarded fraction\");\n    check((int)-2.75 == -2, \"representable cast truncates\");\n    check(floor(-2.75) == -3.0 && floor(2.75) == 2.0, \"floor direction\");\n    check(ceil(-2.75) == -2.0 && ceil(2.75) == 3.0, \"ceil direction\");\n    check(round(-2.5) == -3.0 && round(2.5) == 3.0, \"halfway away from zero\");\n    check(round(2.25) == 2.0 && round(-2.25) == -2.0, \"nearest integer value\");\n    unsigned maximum = UINT_MAX;\n    check(maximum + 1u == 0u, \"unsigned arithmetic is modular\");\n    int negative = -1;\n    check((unsigned)negative == UINT_MAX, \"negative to unsigned conversion\");\n    check(2 + 3 * 4 == 14 && (2 + 3) * 4 == 20, \"operator grouping\");\n    int counter = 4;\n    int old = counter++;\n    int fresh = ++counter;\n    check(old == 4 && fresh == 6 && counter == 6, \"separate increments\");\n    counter *= 2;\n    check(counter == 12, \"compound assignment\");\n    int calls = 0;\n    int no_call = 0 && ++calls;\n    check(no_call == 0 && calls == 0, \"and short circuit\");\n    int yes = 7 || ++calls;\n    check(yes == 1 && calls == 0, \"or short circuit and normalized result\");\n    for (int a = 0; a <= 1; ++a) {\n        for (int b = 0; b <= 1; ++b) {\n            check((a && b) == a * b, \"and truth table\");\n            check((a || b) == (a + b != 0), \"or truth table\");\n        }\n    }\n    check((!0) == 1 && (!5) == 0, \"logical not\");\n    unsigned flags = 5u;\n    check((flags & 1u) != 0u && (flags & 2u) == 0u, \"test masks\");\n    flags |= 2u;\n    check(flags == 7u, \"set mask\");\n    flags &= ~1u;\n    check(flags == 6u, \"clear mask\");\n    flags ^= 2u;\n    check(flags == 4u, \"toggle mask\");\n    check((1u << 3) == 8u && (8u >> 2) == 2u, \"bounded unsigned shifts\");\n    unsigned left = 5u, right = 2u;\n    check((left & right) == 0u && (left && right) == 1, \"bitwise versus logical\");\n    check((0 ? 10 : 20) == 20, \"conditional expression\");\n    int branch = 0;\n    if (1) { if (0) branch = 1; else branch = 2; }\n    check(branch == 2, \"nested else ownership\");\n    int choice = 2;\n    switch (choice) {\n        case 1: branch = 11; break;\n        case 2: branch = 22; break;\n        default: branch = 99; break;\n    }\n    check(branch == 22, \"switch selection\");\n    int visits = 0;\n    while (visits < 0) ++visits;\n    check(visits == 0, \"while may run zero times\");\n    do { ++visits; } while (visits < 0);\n    check(visits == 1, \"do runs before test\");\n    int total = 0;\n    for (int i = 0; i < 6; ++i) {\n        if (i == 2) continue;\n        if (i == 5) break;\n        total += i;\n    }\n    check(total == 8, \"continue still reaches for update\");\n    visits = 0;\n    for (int row = 0; row < 2; ++row)\n        for (int column = 0; column < 3; ++column) ++visits;\n    check(visits == 6, \"nested loop extent\");\n    int values[4] = {2, 4};\n    check(values[2] == 0 && values[3] == 0, \"remaining aggregate elements zero initialized\");\n    check(sizeof values / sizeof values[0] == 4, \"array extent at declaration\");\n    int *pointer = values;\n    check(pointer == &values[0] && *(pointer + 1) == 4, \"element addressing\");\n    check((values + 4) - values == 4, \"one-past subtraction without dereference\");\n    check(*(values + 4 - 1) == 0, \"step back from one past\");\n    int grid[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int (*row_pointer)[3] = grid;\n    check(row_pointer[1][2] == 6, \"pointer to complete row\");\n    total = 0;\n    for (size_t row = 0; row < 2; ++row)\n        for (size_t column = 0; column < 3; ++column) total += grid[row][column];\n    check(total == 21, \"multidimensional bounds\");\n    int amount = 5;\n    check(by_value(amount) == 7 && amount == 5, \"parameter is a copy\");\n    by_pointer(&amount);\n    check(amount == 7, \"write through pointer\");\n    by_pointer(NULL);\n    check(amount == 7, \"explicit null pointer policy\");\n    check(bounded_sum(values, 4) == 6, \"array plus explicit length\");\n    check(bounded_sum(NULL, 0) == 0, \"empty count prevents any pointer use\");\n    size_t count = 4;\n    int *allocated = malloc(count * sizeof *allocated);\n    check(allocated != NULL, \"small allocation succeeded in this run\");\n    for (size_t i = 0; i < count; ++i) allocated[i] = (int)i;\n    check(bounded_sum(allocated, count) == 6, \"initialize before reading allocation\");\n    free(allocated);\n    allocated = NULL;\n    check(allocated == NULL, \"owner reset after release\");\n    free(allocated);\n    char text[12] = \"cat\";\n    check(strlen(text) == 3 && sizeof text == 12, \"length versus capacity\");\n    check(text[3] == '\\0', \"terminator stored\");\n    char copy[12];\n    check(strcpy(copy, text) == copy && strcmp(copy, \"cat\") == 0, \"bounded copy result\");\n    check(strcat(copy, \"s\") == copy && strcmp(copy, \"cats\") == 0, \"bounded append result\");\n    check(strlen(copy) == 4 && copy[4] == '\\0', \"append moves terminator\");\n    int parsed = 0;\n    char suffix = '\\0';\n    check(sscanf(\"12x\", \"%d%c\", &parsed, &suffix) == 2 && parsed == 12 && suffix == 'x', \"known-safe prefix conversion\");\n    check(sscanf(\"word\", \"%d\", &parsed) == 0 && parsed == 12, \"matching failure preserves destination\");\n    check(sscanf(\"\", \"%d\", &parsed) == EOF, \"input failure before assignment\");\n    char small[4];\n    check(sscanf(\"abcdef\", \"%3s\", small) == 1 && strcmp(small, \"abc\") == 0, \"text width leaves terminator space\");\n    float single = 0;\n    double wider = 0;\n    check(sscanf(\"1.5 2.5\", \"%f %lf\", &single, &wider) == 2 && single == 1.5f && wider == 2.5, \"distinct floating destination types\");\n    check(isspace((unsigned char)' ') != 0 && isspace((unsigned char)'x') == 0, \"character classification contract\");\n    printf(\"%u core checks passed\\n\", checks);\n    return 0;\n}\n",
+      "sha256": "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242"
+    },
+    {
+      "language": "c",
+      "code": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line and cle_parse_long from the input example above. */\n#include <stdint.h>\n\nlong *inv_allocate(size_t count, int simulate_failure) {\n    if (count == 0 || count > SIZE_MAX / sizeof(long) || simulate_failure) return NULL;\n    return malloc(count * sizeof(long));\n}\nint inv_run(FILE *input, FILE *output, int simulate_failure) {\n    char line[64];\n    long requested;\n    if (cle_read_line(input, line, sizeof line) != 1 ||\n        !cle_parse_long(line, 0, 8, &requested)) {\n        fputs(\"Invalid item count\\n\", output);\n        return 1;\n    }\n    size_t count = (size_t)requested;\n    if (count == 0) { fputs(\"Total cents: 0\\n\", output); return 0; }\n    long *totals = inv_allocate(count, simulate_failure);\n    if (totals == NULL) { fputs(\"Allocation unavailable\\n\", output); return 1; }\n    long long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        long quantity, cents;\n        if (cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000, &quantity) ||\n            cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000000, &cents)) {\n            free(totals);\n            fputs(\"Invalid item\\n\", output);\n            return 1;\n        }\n        totals[i] = quantity * cents;\n        total += totals[i];\n    }\n    fprintf(output, \"Total cents: %lld\\n\", total);\n    free(totals);\n    return 0;\n}\nint main(void) { return inv_run(stdin, stdout, 0); }\n",
+      "sha256": "ecc01104dffbf4a88f9d450b0f6b263ff34ceb35aa72e6cb4ebf92a57072b45b"
+    },
+    {
+      "language": "c",
+      "code": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line from the input example above. */\n#include <string.h>\n\n/* Destination capacity is real; source is a valid, disjoint C string. */\nint text_append(char *destination, size_t capacity, const char *source) {\n    if (destination == NULL || source == NULL || capacity == 0) return 0;\n    size_t used = 0;\n    while (used < capacity && destination[used] != '\\0') ++used;\n    if (used == capacity || strlen(source) > capacity - used - 1) return 0;\n    strcat(destination, source);\n    return 1;\n}\nsize_t text_words(const char *text) {\n    size_t words = 0;\n    int inside = 0;\n    for (size_t i = 0; text[i] != '\\0'; ++i) {\n        if (isspace((unsigned char)text[i])) inside = 0;\n        else if (!inside) { ++words; inside = 1; }\n    }\n    return words;\n}\nint text_run(FILE *input, FILE *output) {\n    char line[64], report[80];\n    if (cle_read_line(input, line, sizeof line) != 1) {\n        fputs(\"Expected a line of at most 63 bytes without NUL\\n\", output);\n        return 1;\n    }\n    strcpy(report, line); /* At most 63 data bytes plus the terminator fit in 80. */\n    if (!text_append(report, sizeof report, \" | checked\")) return 1;\n    fprintf(output, \"%zu bytes, %zu words\\n%s\\n\", strlen(line), text_words(line), report);\n    return 0;\n}\nint main(void) { return text_run(stdin, stdout); }\n",
+      "sha256": "b1e30988dcfee58b7202c98cafd3cd0ed7b3bab4675a07f2938271d2a00df4dd"
+    },
+    {
+      "language": "c",
+      "code": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line and cle_parse_long from the input example above. */\n\n/* The caller supplies count live long elements; count zero uses no element. */\nvoid menu_sort(long *values, size_t count) {\n    for (size_t i = 1; i < count; ++i) {\n        long key = values[i];\n        size_t j = i;\n        while (j > 0 && values[j - 1] > key) {\n            values[j] = values[j - 1];\n            --j;\n        }\n        values[j] = key;\n    }\n}\nint menu_run(FILE *input, FILE *output) {\n    long values[8];\n    size_t count = 0;\n    char line[64];\n    int done = 0;\n    do {\n        int status = cle_read_line(input, line, sizeof line);\n        if (status == 0) break;\n        if (status != 1 || line[0] == '\\0' || line[1] != '\\0') {\n            fputs(\"Use one command: a, p, s, q\\n\", output); return 1;\n        }\n        switch (line[0]) {\n            case 'a':\n                if (count == 8) { fputs(\"Full\\n\", output); return 1; }\n                if (cle_read_line(input, line, sizeof line) != 1 ||\n                    !cle_parse_long(line, -1000, 1000, &values[count])) {\n                    fputs(\"Invalid value\\n\", output); return 1;\n                }\n                ++count;\n                break;\n            case 'p':\n                fputs(\"Values:\", output);\n                for (size_t i = 0; i < count; ++i) fprintf(output, \" %ld\", values[i]);\n                fputc('\\n', output);\n                break;\n            case 's': menu_sort(values, count); break;\n            case 'q': done = 1; break;\n            default: fputs(\"Unknown command\\n\", output); return 1;\n        }\n    } while (!done);\n    return 0;\n}\nint main(void) { return menu_run(stdin, stdout); }\n",
+      "sha256": "3b4f1b1cd15f714ee3532c5e8ab1ae98069ef514375dc1259c6eadff739167fd"
+    }
+  ],
+  "remote_execution_receipts": [
+    {
+      "name": "workbook-gcc",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:03:13.841047+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+      "request": {
+        "source": "#include <ctype.h>\n#include <limits.h>\n#include <math.h>\n#include <stddef.h>\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstatic unsigned checks;\nstatic void check(int condition, const char *label) {\n    if (!condition) { fprintf(stderr, \"Failed: %s\\n\", label); exit(EXIT_FAILURE); }\n    ++checks;\n}\nstatic int by_value(int value) { value += 2; return value; }\nstatic void by_pointer(int *value) { if (value != NULL) *value += 2; }\nstatic long bounded_sum(const int *values, size_t count) {\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) total += values[i];\n    return total;\n}\nint main(int argc, char *argv[]) {\n    check(argc >= 0 && argv[argc] == NULL, \"hosted main sentinel\");\n    check(sizeof 'A' == sizeof(int), \"ordinary character constant has int size\");\n    check(sizeof \"A\" == 2, \"string literal includes terminator\");\n    check('9' - '0' == 9, \"decimal digit codes are consecutive\");\n    check(010 == 8 && 0x10 == 16, \"literal bases\");\n    check(2.5e2 == 250.0, \"scientific notation\");\n    check(sizeof(char) == 1 && CHAR_BIT >= 8, \"C byte and minimum bits\");\n    check(INT_MAX >= 32767 && LONG_MAX >= 2147483647L, \"minimum integer ranges\");\n    check(7 / 2 == 3 && -7 / 2 == -3, \"integer division truncates toward zero\");\n    check(-7 % 2 == -1 && 7 % -2 == 1, \"remainder follows dividend\");\n    check((double)7 / 2 == 3.5, \"conversion before division\");\n    check((double)(7 / 2) == 3.0, \"conversion cannot recover discarded fraction\");\n    check((int)-2.75 == -2, \"representable cast truncates\");\n    check(floor(-2.75) == -3.0 && floor(2.75) == 2.0, \"floor direction\");\n    check(ceil(-2.75) == -2.0 && ceil(2.75) == 3.0, \"ceil direction\");\n    check(round(-2.5) == -3.0 && round(2.5) == 3.0, \"halfway away from zero\");\n    check(round(2.25) == 2.0 && round(-2.25) == -2.0, \"nearest integer value\");\n    unsigned maximum = UINT_MAX;\n    check(maximum + 1u == 0u, \"unsigned arithmetic is modular\");\n    int negative = -1;\n    check((unsigned)negative == UINT_MAX, \"negative to unsigned conversion\");\n    check(2 + 3 * 4 == 14 && (2 + 3) * 4 == 20, \"operator grouping\");\n    int counter = 4;\n    int old = counter++;\n    int fresh = ++counter;\n    check(old == 4 && fresh == 6 && counter == 6, \"separate increments\");\n    counter *= 2;\n    check(counter == 12, \"compound assignment\");\n    int calls = 0;\n    int no_call = 0 && ++calls;\n    check(no_call == 0 && calls == 0, \"and short circuit\");\n    int yes = 7 || ++calls;\n    check(yes == 1 && calls == 0, \"or short circuit and normalized result\");\n    for (int a = 0; a <= 1; ++a) {\n        for (int b = 0; b <= 1; ++b) {\n            check((a && b) == a * b, \"and truth table\");\n            check((a || b) == (a + b != 0), \"or truth table\");\n        }\n    }\n    check((!0) == 1 && (!5) == 0, \"logical not\");\n    unsigned flags = 5u;\n    check((flags & 1u) != 0u && (flags & 2u) == 0u, \"test masks\");\n    flags |= 2u;\n    check(flags == 7u, \"set mask\");\n    flags &= ~1u;\n    check(flags == 6u, \"clear mask\");\n    flags ^= 2u;\n    check(flags == 4u, \"toggle mask\");\n    check((1u << 3) == 8u && (8u >> 2) == 2u, \"bounded unsigned shifts\");\n    unsigned left = 5u, right = 2u;\n    check((left & right) == 0u && (left && right) == 1, \"bitwise versus logical\");\n    check((0 ? 10 : 20) == 20, \"conditional expression\");\n    int branch = 0;\n    if (1) { if (0) branch = 1; else branch = 2; }\n    check(branch == 2, \"nested else ownership\");\n    int choice = 2;\n    switch (choice) {\n        case 1: branch = 11; break;\n        case 2: branch = 22; break;\n        default: branch = 99; break;\n    }\n    check(branch == 22, \"switch selection\");\n    int visits = 0;\n    while (visits < 0) ++visits;\n    check(visits == 0, \"while may run zero times\");\n    do { ++visits; } while (visits < 0);\n    check(visits == 1, \"do runs before test\");\n    int total = 0;\n    for (int i = 0; i < 6; ++i) {\n        if (i == 2) continue;\n        if (i == 5) break;\n        total += i;\n    }\n    check(total == 8, \"continue still reaches for update\");\n    visits = 0;\n    for (int row = 0; row < 2; ++row)\n        for (int column = 0; column < 3; ++column) ++visits;\n    check(visits == 6, \"nested loop extent\");\n    int values[4] = {2, 4};\n    check(values[2] == 0 && values[3] == 0, \"remaining aggregate elements zero initialized\");\n    check(sizeof values / sizeof values[0] == 4, \"array extent at declaration\");\n    int *pointer = values;\n    check(pointer == &values[0] && *(pointer + 1) == 4, \"element addressing\");\n    check((values + 4) - values == 4, \"one-past subtraction without dereference\");\n    check(*(values + 4 - 1) == 0, \"step back from one past\");\n    int grid[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int (*row_pointer)[3] = grid;\n    check(row_pointer[1][2] == 6, \"pointer to complete row\");\n    total = 0;\n    for (size_t row = 0; row < 2; ++row)\n        for (size_t column = 0; column < 3; ++column) total += grid[row][column];\n    check(total == 21, \"multidimensional bounds\");\n    int amount = 5;\n    check(by_value(amount) == 7 && amount == 5, \"parameter is a copy\");\n    by_pointer(&amount);\n    check(amount == 7, \"write through pointer\");\n    by_pointer(NULL);\n    check(amount == 7, \"explicit null pointer policy\");\n    check(bounded_sum(values, 4) == 6, \"array plus explicit length\");\n    check(bounded_sum(NULL, 0) == 0, \"empty count prevents any pointer use\");\n    size_t count = 4;\n    int *allocated = malloc(count * sizeof *allocated);\n    check(allocated != NULL, \"small allocation succeeded in this run\");\n    for (size_t i = 0; i < count; ++i) allocated[i] = (int)i;\n    check(bounded_sum(allocated, count) == 6, \"initialize before reading allocation\");\n    free(allocated);\n    allocated = NULL;\n    check(allocated == NULL, \"owner reset after release\");\n    free(allocated);\n    char text[12] = \"cat\";\n    check(strlen(text) == 3 && sizeof text == 12, \"length versus capacity\");\n    check(text[3] == '\\0', \"terminator stored\");\n    char copy[12];\n    check(strcpy(copy, text) == copy && strcmp(copy, \"cat\") == 0, \"bounded copy result\");\n    check(strcat(copy, \"s\") == copy && strcmp(copy, \"cats\") == 0, \"bounded append result\");\n    check(strlen(copy) == 4 && copy[4] == '\\0', \"append moves terminator\");\n    int parsed = 0;\n    char suffix = '\\0';\n    check(sscanf(\"12x\", \"%d%c\", &parsed, &suffix) == 2 && parsed == 12 && suffix == 'x', \"known-safe prefix conversion\");\n    check(sscanf(\"word\", \"%d\", &parsed) == 0 && parsed == 12, \"matching failure preserves destination\");\n    check(sscanf(\"\", \"%d\", &parsed) == EOF, \"input failure before assignment\");\n    char small[4];\n    check(sscanf(\"abcdef\", \"%3s\", small) == 1 && strcmp(small, \"abc\") == 0, \"text width leaves terminator space\");\n    float single = 0;\n    double wider = 0;\n    check(sscanf(\"1.5 2.5\", \"%f %lf\", &single, &wider) == 2 && single == 1.5f && wider == 2.5, \"distinct floating destination types\");\n    check(isspace((unsigned char)' ') != 0 && isspace((unsigned char)'x') == 0, \"character classification contract\");\n    printf(\"%u core checks passed\\n\", checks);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "72 core checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 26,
+        "processExecutionResultTime": 0.017653999850153923,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 124,
+          "processExecutionResultTime": 0.0017329994589090347,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerTYW9H2/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 39
+        },
+        "queueTime": 8
+      }
+    },
+    {
+      "name": "workbook-clang",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:03:14.407137+00:00",
+      "url": "https://godbolt.org/api/compiler/cclang1910/compile",
+      "source_sha256": "e51d272332484b0e662acac191e7fc1757485ec2fb25a856095b4198b08fa242",
+      "request": {
+        "source": "#include <ctype.h>\n#include <limits.h>\n#include <math.h>\n#include <stddef.h>\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstatic unsigned checks;\nstatic void check(int condition, const char *label) {\n    if (!condition) { fprintf(stderr, \"Failed: %s\\n\", label); exit(EXIT_FAILURE); }\n    ++checks;\n}\nstatic int by_value(int value) { value += 2; return value; }\nstatic void by_pointer(int *value) { if (value != NULL) *value += 2; }\nstatic long bounded_sum(const int *values, size_t count) {\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) total += values[i];\n    return total;\n}\nint main(int argc, char *argv[]) {\n    check(argc >= 0 && argv[argc] == NULL, \"hosted main sentinel\");\n    check(sizeof 'A' == sizeof(int), \"ordinary character constant has int size\");\n    check(sizeof \"A\" == 2, \"string literal includes terminator\");\n    check('9' - '0' == 9, \"decimal digit codes are consecutive\");\n    check(010 == 8 && 0x10 == 16, \"literal bases\");\n    check(2.5e2 == 250.0, \"scientific notation\");\n    check(sizeof(char) == 1 && CHAR_BIT >= 8, \"C byte and minimum bits\");\n    check(INT_MAX >= 32767 && LONG_MAX >= 2147483647L, \"minimum integer ranges\");\n    check(7 / 2 == 3 && -7 / 2 == -3, \"integer division truncates toward zero\");\n    check(-7 % 2 == -1 && 7 % -2 == 1, \"remainder follows dividend\");\n    check((double)7 / 2 == 3.5, \"conversion before division\");\n    check((double)(7 / 2) == 3.0, \"conversion cannot recover discarded fraction\");\n    check((int)-2.75 == -2, \"representable cast truncates\");\n    check(floor(-2.75) == -3.0 && floor(2.75) == 2.0, \"floor direction\");\n    check(ceil(-2.75) == -2.0 && ceil(2.75) == 3.0, \"ceil direction\");\n    check(round(-2.5) == -3.0 && round(2.5) == 3.0, \"halfway away from zero\");\n    check(round(2.25) == 2.0 && round(-2.25) == -2.0, \"nearest integer value\");\n    unsigned maximum = UINT_MAX;\n    check(maximum + 1u == 0u, \"unsigned arithmetic is modular\");\n    int negative = -1;\n    check((unsigned)negative == UINT_MAX, \"negative to unsigned conversion\");\n    check(2 + 3 * 4 == 14 && (2 + 3) * 4 == 20, \"operator grouping\");\n    int counter = 4;\n    int old = counter++;\n    int fresh = ++counter;\n    check(old == 4 && fresh == 6 && counter == 6, \"separate increments\");\n    counter *= 2;\n    check(counter == 12, \"compound assignment\");\n    int calls = 0;\n    int no_call = 0 && ++calls;\n    check(no_call == 0 && calls == 0, \"and short circuit\");\n    int yes = 7 || ++calls;\n    check(yes == 1 && calls == 0, \"or short circuit and normalized result\");\n    for (int a = 0; a <= 1; ++a) {\n        for (int b = 0; b <= 1; ++b) {\n            check((a && b) == a * b, \"and truth table\");\n            check((a || b) == (a + b != 0), \"or truth table\");\n        }\n    }\n    check((!0) == 1 && (!5) == 0, \"logical not\");\n    unsigned flags = 5u;\n    check((flags & 1u) != 0u && (flags & 2u) == 0u, \"test masks\");\n    flags |= 2u;\n    check(flags == 7u, \"set mask\");\n    flags &= ~1u;\n    check(flags == 6u, \"clear mask\");\n    flags ^= 2u;\n    check(flags == 4u, \"toggle mask\");\n    check((1u << 3) == 8u && (8u >> 2) == 2u, \"bounded unsigned shifts\");\n    unsigned left = 5u, right = 2u;\n    check((left & right) == 0u && (left && right) == 1, \"bitwise versus logical\");\n    check((0 ? 10 : 20) == 20, \"conditional expression\");\n    int branch = 0;\n    if (1) { if (0) branch = 1; else branch = 2; }\n    check(branch == 2, \"nested else ownership\");\n    int choice = 2;\n    switch (choice) {\n        case 1: branch = 11; break;\n        case 2: branch = 22; break;\n        default: branch = 99; break;\n    }\n    check(branch == 22, \"switch selection\");\n    int visits = 0;\n    while (visits < 0) ++visits;\n    check(visits == 0, \"while may run zero times\");\n    do { ++visits; } while (visits < 0);\n    check(visits == 1, \"do runs before test\");\n    int total = 0;\n    for (int i = 0; i < 6; ++i) {\n        if (i == 2) continue;\n        if (i == 5) break;\n        total += i;\n    }\n    check(total == 8, \"continue still reaches for update\");\n    visits = 0;\n    for (int row = 0; row < 2; ++row)\n        for (int column = 0; column < 3; ++column) ++visits;\n    check(visits == 6, \"nested loop extent\");\n    int values[4] = {2, 4};\n    check(values[2] == 0 && values[3] == 0, \"remaining aggregate elements zero initialized\");\n    check(sizeof values / sizeof values[0] == 4, \"array extent at declaration\");\n    int *pointer = values;\n    check(pointer == &values[0] && *(pointer + 1) == 4, \"element addressing\");\n    check((values + 4) - values == 4, \"one-past subtraction without dereference\");\n    check(*(values + 4 - 1) == 0, \"step back from one past\");\n    int grid[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int (*row_pointer)[3] = grid;\n    check(row_pointer[1][2] == 6, \"pointer to complete row\");\n    total = 0;\n    for (size_t row = 0; row < 2; ++row)\n        for (size_t column = 0; column < 3; ++column) total += grid[row][column];\n    check(total == 21, \"multidimensional bounds\");\n    int amount = 5;\n    check(by_value(amount) == 7 && amount == 5, \"parameter is a copy\");\n    by_pointer(&amount);\n    check(amount == 7, \"write through pointer\");\n    by_pointer(NULL);\n    check(amount == 7, \"explicit null pointer policy\");\n    check(bounded_sum(values, 4) == 6, \"array plus explicit length\");\n    check(bounded_sum(NULL, 0) == 0, \"empty count prevents any pointer use\");\n    size_t count = 4;\n    int *allocated = malloc(count * sizeof *allocated);\n    check(allocated != NULL, \"small allocation succeeded in this run\");\n    for (size_t i = 0; i < count; ++i) allocated[i] = (int)i;\n    check(bounded_sum(allocated, count) == 6, \"initialize before reading allocation\");\n    free(allocated);\n    allocated = NULL;\n    check(allocated == NULL, \"owner reset after release\");\n    free(allocated);\n    char text[12] = \"cat\";\n    check(strlen(text) == 3 && sizeof text == 12, \"length versus capacity\");\n    check(text[3] == '\\0', \"terminator stored\");\n    char copy[12];\n    check(strcpy(copy, text) == copy && strcmp(copy, \"cat\") == 0, \"bounded copy result\");\n    check(strcat(copy, \"s\") == copy && strcmp(copy, \"cats\") == 0, \"bounded append result\");\n    check(strlen(copy) == 4 && copy[4] == '\\0', \"append moves terminator\");\n    int parsed = 0;\n    char suffix = '\\0';\n    check(sscanf(\"12x\", \"%d%c\", &parsed, &suffix) == 2 && parsed == 12 && suffix == 'x', \"known-safe prefix conversion\");\n    check(sscanf(\"word\", \"%d\", &parsed) == 0 && parsed == 12, \"matching failure preserves destination\");\n    check(sscanf(\"\", \"%d\", &parsed) == EOF, \"input failure before assignment\");\n    char small[4];\n    check(sscanf(\"abcdef\", \"%3s\", small) == 1 && strcmp(small, \"abc\") == 0, \"text width leaves terminator space\");\n    float single = 0;\n    double wider = 0;\n    check(sscanf(\"1.5 2.5\", \"%f %lf\", &single, &wider) == 2 && single == 1.5f && wider == 2.5, \"distinct floating destination types\");\n    check(isspace((unsigned char)' ') != 0 && isspace((unsigned char)'x') == 0, \"character classification contract\");\n    printf(\"%u core checks passed\\n\", checks);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "72 core checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 29,
+        "processExecutionResultTime": 0.014799999073147774,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 126,
+          "processExecutionResultTime": 0.0021580010652542114,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerD3rCb3/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "--gcc-toolchain=/opt/compiler-explorer/gcc-13.2.0",
+            "-fcolor-diagnostics",
+            "-fno-crash-diagnostics",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-13.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-13.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/clang-19.1.0/lib",
+            "/opt/compiler-explorer/clang-19.1.0/lib32",
+            "/opt/compiler-explorer/clang-19.1.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 42
+        },
+        "queueTime": 6
+      }
+    },
+    {
+      "name": "input",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:00:25.269522+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "5df6988b7c929a4e1c57f73c9b3edc4443d6ca5147a3f58fc6607b1e1cbff01b",
+      "request": {
+        "source": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\nint main(void) {\n    char line[64];\n    long quantity;\n    if (cle_read_line(stdin, line, sizeof line) != 1 ||\n        !cle_parse_long(line, 0, 1000, &quantity)) {\n        puts(\"Expected one decimal quantity in 0..1000\");\n        return 1;\n    }\n    printf(\"Quantity: %ld\\n\", quantity);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": " 12 \n"
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "Quantity: 12"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 23,
+        "processExecutionResultTime": 0.03797700023278594,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 107,
+          "processExecutionResultTime": 0.003169999923557043,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerhFxpdq/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 40
+        },
+        "queueTime": 5
+      }
+    },
+    {
+      "name": "inventory",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:00:25.754512+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "ecc01104dffbf4a88f9d450b0f6b263ff34ceb35aa72e6cb4ebf92a57072b45b",
+      "request": {
+        "source": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line and cle_parse_long from the input example above. */\n#include <stdint.h>\n\nlong *inv_allocate(size_t count, int simulate_failure) {\n    if (count == 0 || count > SIZE_MAX / sizeof(long) || simulate_failure) return NULL;\n    return malloc(count * sizeof(long));\n}\nint inv_run(FILE *input, FILE *output, int simulate_failure) {\n    char line[64];\n    long requested;\n    if (cle_read_line(input, line, sizeof line) != 1 ||\n        !cle_parse_long(line, 0, 8, &requested)) {\n        fputs(\"Invalid item count\\n\", output);\n        return 1;\n    }\n    size_t count = (size_t)requested;\n    if (count == 0) { fputs(\"Total cents: 0\\n\", output); return 0; }\n    long *totals = inv_allocate(count, simulate_failure);\n    if (totals == NULL) { fputs(\"Allocation unavailable\\n\", output); return 1; }\n    long long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        long quantity, cents;\n        if (cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000, &quantity) ||\n            cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000000, &cents)) {\n            free(totals);\n            fputs(\"Invalid item\\n\", output);\n            return 1;\n        }\n        totals[i] = quantity * cents;\n        total += totals[i];\n    }\n    fprintf(output, \"Total cents: %lld\\n\", total);\n    free(totals);\n    return 0;\n}\nint main(void) { return inv_run(stdin, stdout, 0); }\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": "2\n2\n125\n3\n100\n"
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "Total cents: 550"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 29,
+        "processExecutionResultTime": 0.01975799910724163,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 98,
+          "processExecutionResultTime": 0.0029589999467134476,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compiler1SC7jO/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 38
+        },
+        "queueTime": 6
+      }
+    },
+    {
+      "name": "text",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:00:27.008028+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "b1e30988dcfee58b7202c98cafd3cd0ed7b3bab4675a07f2938271d2a00df4dd",
+      "request": {
+        "source": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line from the input example above. */\n#include <string.h>\n\n/* Destination capacity is real; source is a valid, disjoint C string. */\nint text_append(char *destination, size_t capacity, const char *source) {\n    if (destination == NULL || source == NULL || capacity == 0) return 0;\n    size_t used = 0;\n    while (used < capacity && destination[used] != '\\0') ++used;\n    if (used == capacity || strlen(source) > capacity - used - 1) return 0;\n    strcat(destination, source);\n    return 1;\n}\nsize_t text_words(const char *text) {\n    size_t words = 0;\n    int inside = 0;\n    for (size_t i = 0; text[i] != '\\0'; ++i) {\n        if (isspace((unsigned char)text[i])) inside = 0;\n        else if (!inside) { ++words; inside = 1; }\n    }\n    return words;\n}\nint text_run(FILE *input, FILE *output) {\n    char line[64], report[80];\n    if (cle_read_line(input, line, sizeof line) != 1) {\n        fputs(\"Expected a line of at most 63 bytes without NUL\\n\", output);\n        return 1;\n    }\n    strcpy(report, line); /* At most 63 data bytes plus the terminator fit in 80. */\n    if (!text_append(report, sizeof report, \" | checked\")) return 1;\n    fprintf(output, \"%zu bytes, %zu words\\n%s\\n\", strlen(line), text_words(line), report);\n    return 0;\n}\nint main(void) { return text_run(stdin, stdout); }\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": "  red  blue  \t\n"
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "14 bytes, 2 words"
+          },
+          {
+            "text": "  red  blue  \t | checked"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 24,
+        "processExecutionResultTime": 0.02847500005736947,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 845,
+          "processExecutionResultTime": 0.005607000086456537,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerA7tjSo/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 45
+        },
+        "queueTime": 9
+      }
+    },
+    {
+      "name": "menu",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:00:27.537861+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "3b4f1b1cd15f714ee3532c5e8ab1ae98069ef514375dc1259c6eadff739167fd",
+      "request": {
+        "source": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line and cle_parse_long from the input example above. */\n\n/* The caller supplies count live long elements; count zero uses no element. */\nvoid menu_sort(long *values, size_t count) {\n    for (size_t i = 1; i < count; ++i) {\n        long key = values[i];\n        size_t j = i;\n        while (j > 0 && values[j - 1] > key) {\n            values[j] = values[j - 1];\n            --j;\n        }\n        values[j] = key;\n    }\n}\nint menu_run(FILE *input, FILE *output) {\n    long values[8];\n    size_t count = 0;\n    char line[64];\n    int done = 0;\n    do {\n        int status = cle_read_line(input, line, sizeof line);\n        if (status == 0) break;\n        if (status != 1 || line[0] == '\\0' || line[1] != '\\0') {\n            fputs(\"Use one command: a, p, s, q\\n\", output); return 1;\n        }\n        switch (line[0]) {\n            case 'a':\n                if (count == 8) { fputs(\"Full\\n\", output); return 1; }\n                if (cle_read_line(input, line, sizeof line) != 1 ||\n                    !cle_parse_long(line, -1000, 1000, &values[count])) {\n                    fputs(\"Invalid value\\n\", output); return 1;\n                }\n                ++count;\n                break;\n            case 'p':\n                fputs(\"Values:\", output);\n                for (size_t i = 0; i < count; ++i) fprintf(output, \" %ld\", values[i]);\n                fputc('\\n', output);\n                break;\n            case 's': menu_sort(values, count); break;\n            case 'q': done = 1; break;\n            default: fputs(\"Unknown command\\n\", output); return 1;\n        }\n    } while (!done);\n    return 0;\n}\nint main(void) { return menu_run(stdin, stdout); }\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": "a\n3\na\n-2\na\n3\ns\np\nq\n"
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "Values: -2 3 3"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 32,
+        "processExecutionResultTime": 0.0157860005274415,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 107,
+          "processExecutionResultTime": 0.0018070004880428314,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerk9iGyr/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 43
+        },
+        "queueTime": 4
+      }
+    },
+    {
+      "name": "scenario-gcc",
+      "context": "Exact public shared/helper/scenario bodies; entry mains excluded; original boundary driver with temporary files in remote sandbox",
+      "checked_at": "2026-09-29T21:03:14.543091+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "fdd8b8a95a061c0c5b9dd47d541feb382d145d2fbfbb6ed34248b0bcd45d0b92",
+      "request": {
+        "source": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line and cle_parse_long from the input example above. */\n#include <stdint.h>\n\nlong *inv_allocate(size_t count, int simulate_failure) {\n    if (count == 0 || count > SIZE_MAX / sizeof(long) || simulate_failure) return NULL;\n    return malloc(count * sizeof(long));\n}\nint inv_run(FILE *input, FILE *output, int simulate_failure) {\n    char line[64];\n    long requested;\n    if (cle_read_line(input, line, sizeof line) != 1 ||\n        !cle_parse_long(line, 0, 8, &requested)) {\n        fputs(\"Invalid item count\\n\", output);\n        return 1;\n    }\n    size_t count = (size_t)requested;\n    if (count == 0) { fputs(\"Total cents: 0\\n\", output); return 0; }\n    long *totals = inv_allocate(count, simulate_failure);\n    if (totals == NULL) { fputs(\"Allocation unavailable\\n\", output); return 1; }\n    long long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        long quantity, cents;\n        if (cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000, &quantity) ||\n            cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000000, &cents)) {\n            free(totals);\n            fputs(\"Invalid item\\n\", output);\n            return 1;\n        }\n        totals[i] = quantity * cents;\n        total += totals[i];\n    }\n    fprintf(output, \"Total cents: %lld\\n\", total);\n    free(totals);\n    return 0;\n}\n/* Use cle_read_line from the input example above. */\n#include <string.h>\n\n/* Destination capacity is real; source is a valid, disjoint C string. */\nint text_append(char *destination, size_t capacity, const char *source) {\n    if (destination == NULL || source == NULL || capacity == 0) return 0;\n    size_t used = 0;\n    while (used < capacity && destination[used] != '\\0') ++used;\n    if (used == capacity || strlen(source) > capacity - used - 1) return 0;\n    strcat(destination, source);\n    return 1;\n}\nsize_t text_words(const char *text) {\n    size_t words = 0;\n    int inside = 0;\n    for (size_t i = 0; text[i] != '\\0'; ++i) {\n        if (isspace((unsigned char)text[i])) inside = 0;\n        else if (!inside) { ++words; inside = 1; }\n    }\n    return words;\n}\nint text_run(FILE *input, FILE *output) {\n    char line[64], report[80];\n    if (cle_read_line(input, line, sizeof line) != 1) {\n        fputs(\"Expected a line of at most 63 bytes without NUL\\n\", output);\n        return 1;\n    }\n    strcpy(report, line); /* At most 63 data bytes plus the terminator fit in 80. */\n    if (!text_append(report, sizeof report, \" | checked\")) return 1;\n    fprintf(output, \"%zu bytes, %zu words\\n%s\\n\", strlen(line), text_words(line), report);\n    return 0;\n}\n/* Use cle_read_line and cle_parse_long from the input example above. */\n\n/* The caller supplies count live long elements; count zero uses no element. */\nvoid menu_sort(long *values, size_t count) {\n    for (size_t i = 1; i < count; ++i) {\n        long key = values[i];\n        size_t j = i;\n        while (j > 0 && values[j - 1] > key) {\n            values[j] = values[j - 1];\n            --j;\n        }\n        values[j] = key;\n    }\n}\nint menu_run(FILE *input, FILE *output) {\n    long values[8];\n    size_t count = 0;\n    char line[64];\n    int done = 0;\n    do {\n        int status = cle_read_line(input, line, sizeof line);\n        if (status == 0) break;\n        if (status != 1 || line[0] == '\\0' || line[1] != '\\0') {\n            fputs(\"Use one command: a, p, s, q\\n\", output); return 1;\n        }\n        switch (line[0]) {\n            case 'a':\n                if (count == 8) { fputs(\"Full\\n\", output); return 1; }\n                if (cle_read_line(input, line, sizeof line) != 1 ||\n                    !cle_parse_long(line, -1000, 1000, &values[count])) {\n                    fputs(\"Invalid value\\n\", output); return 1;\n                }\n                ++count;\n                break;\n            case 'p':\n                fputs(\"Values:\", output);\n                for (size_t i = 0; i < count; ++i) fprintf(output, \" %ld\", values[i]);\n                fputc('\\n', output);\n                break;\n            case 's': menu_sort(values, count); break;\n            case 'q': done = 1; break;\n            default: fputs(\"Unknown command\\n\", output); return 1;\n        }\n    } while (!done);\n    return 0;\n}\nstatic unsigned scenario_checks;\nstatic void test(int condition, const char *label) {\n    if (!condition) { fprintf(stderr, \"Failed: %s\\n\", label); exit(2); }\n    ++scenario_checks;\n}\nstatic FILE *fixture(const char *data, size_t length) {\n    FILE *stream = tmpfile();\n    if (stream == NULL || fwrite(data, 1, length, stream) != length) exit(3);\n    rewind(stream);\n    return stream;\n}\nstatic void run_case(int which, const char *input, size_t length, int expected_code,\n                     const char *expected, int simulate_failure) {\n    FILE *in = fixture(input, length), *out = tmpfile();\n    if (out == NULL) exit(3);\n    int result = which == 0 ? inv_run(in, out, simulate_failure) :\n                 which == 1 ? text_run(in, out) : menu_run(in, out);\n    rewind(out);\n    char actual[1024];\n    size_t got = fread(actual, 1, sizeof actual - 1, out);\n    actual[got] = '\\0';\n    test(result == expected_code && got == strlen(expected) && strcmp(actual, expected) == 0,\n         \"entry point exit and complete output\");\n    fclose(in); fclose(out);\n}\nstatic void console_case(int which, const char *input, int expected_code, const char *expected) {\n    run_case(which, input, strlen(input), expected_code, expected, 0);\n}\nint main(void) {\n    long output = 77;\n    const char *valid[] = {\"0\", \"-1000\", \"1000\", \"+2\", \"0012\", \" \\t-4 \\r\\n\"};\n    const long expected[] = {0, -1000, 1000, 2, 12, -4};\n    for (size_t i = 0; i < sizeof valid / sizeof valid[0]; ++i)\n        test(cle_parse_long(valid[i], -1000, 1000, &output) && output == expected[i], \"valid decimal contract\");\n    const char *invalid[] = {\"\", \"   \", \"12x\", \"1.5\", \"1e3\", \"0x10\", \"--1\", \"+\", \"1001\", \"-1001\", \"999999999999999999999999999999999999999999\"};\n    for (size_t i = 0; i < sizeof invalid / sizeof invalid[0]; ++i) {\n        output = 77;\n        test(!cle_parse_long(invalid[i], -1000, 1000, &output) && output == 77, \"rejected parse preserves output\");\n    }\n    test(!cle_parse_long(NULL, 0, 1, &output), \"null parse input\");\n    test(!cle_parse_long(\"0\", 0, 1, NULL), \"null parse output\");\n    test(!cle_parse_long(\"0\", 2, 1, &output), \"inverted range\");\n    char line[64];\n    FILE *in = fixture(\"\\n\", 1);\n    test(cle_read_line(in, line, sizeof line) == 1 && line[0] == '\\0', \"empty line valid\"); fclose(in);\n    in = fixture(\"\", 0);\n    test(cle_read_line(in, line, sizeof line) == 0 && line[0] == '\\0', \"EOF before data\"); fclose(in);\n    in = fixture(\"end\", 3);\n    test(cle_read_line(in, line, sizeof line) == 1 && strcmp(line, \"end\") == 0, \"final line without newline\"); fclose(in);\n    char exact[65]; memset(exact, 'x', 63); exact[63] = '\\n'; exact[64] = '\\0';\n    in = fixture(exact, 64);\n    test(cle_read_line(in, line, sizeof line) == 1 && strlen(line) == 63, \"capacity minus one data bytes\"); fclose(in);\n    char long_line[69]; memset(long_line, 'x', 64); memcpy(long_line + 64, \"\\nok\\n\", 5);\n    in = fixture(long_line, 68);\n    test(cle_read_line(in, line, sizeof line) == -1, \"long line rejected\");\n    test(cle_read_line(in, line, sizeof line) == 1 && strcmp(line, \"ok\") == 0, \"rejected line consumed\"); fclose(in);\n    const char binary[] = {'a', '\\0', 'b', '\\n', 'z', '\\n'};\n    in = fixture(binary, sizeof binary);\n    test(cle_read_line(in, line, sizeof line) == -1, \"embedded NUL rejected\");\n    test(cle_read_line(in, line, sizeof line) == 1 && strcmp(line, \"z\") == 0, \"NUL line consumed\"); fclose(in);\n    in = fixture(\"\\n\", 1);\n    char tiny[1] = {'x'};\n    test(cle_read_line(in, tiny, 1) == 1 && tiny[0] == '\\0', \"one-byte empty buffer\"); fclose(in);\n    in = fixture(\"a\\n\", 2);\n    test(cle_read_line(in, tiny, 1) == -1 && tiny[0] == '\\0', \"one-byte rejects data\"); fclose(in);\n    test(cle_read_line(NULL, line, sizeof line) == -1, \"null stream rejected\");\n    in = fixture(\"a\\n\", 2);\n    tiny[0] = 'x';\n    test(cle_read_line(in, tiny, 0) == -1 && tiny[0] == 'x', \"zero capacity no write\"); fclose(in);\n    test(inv_allocate(0, 0) == NULL, \"empty allocation policy\");\n    test(inv_allocate(SIZE_MAX, 0) == NULL, \"size multiplication rejected before allocation\");\n    test(inv_allocate(8, 1) == NULL, \"injected allocation failure\");\n    long *allocated = inv_allocate(8, 0);\n    test(allocated != NULL, \"bounded allocation\");\n    for (size_t i = 0; i < 8; ++i) allocated[i] = (long)i;\n    test(allocated[0] == 0 && allocated[7] == 7, \"allocation endpoints initialized\");\n    free(allocated);\n    console_case(0, \"0\\n\", 0, \"Total cents: 0\\n\");\n    run_case(0, \"0\\n\", 2, 0, \"Total cents: 0\\n\", 1);\n    run_case(0, \"1\\n\", 2, 1, \"Allocation unavailable\\n\", 1);\n    console_case(0, \"2\\n2\\n125\\n3\\n100\\n\", 0, \"Total cents: 550\\n\");\n    console_case(0, \"1\\n0\\n1000000\\n\", 0, \"Total cents: 0\\n\");\n    console_case(0, \"1\\n1000\\n1000000\", 0, \"Total cents: 1000000000\\n\");\n    console_case(0, \"8\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n\", 0, \"Total cents: 8000000000\\n\");\n    const char *bad_counts[] = {\"\", \"\\n\", \"-1\\n\", \"9\\n\", \"1x\\n\", \"9999999999999999999999999999999999\\n\"};\n    for (size_t i = 0; i < sizeof bad_counts / sizeof bad_counts[0]; ++i)\n        console_case(0, bad_counts[i], 1, \"Invalid item count\\n\");\n    const char *bad_items[] = {\"1\\n\", \"1\\n2\\n\", \"1\\n-1\\n0\\n\", \"1\\n1001\\n0\\n\", \"1\\n2x\\n0\\n\", \"1\\n1\\n-1\\n\", \"1\\n1\\n1000001\\n\", \"1\\n1\\n2.5\\n\", \"1\\n1\\n999999999999999999999999999999999999\\n\"};\n    for (size_t i = 0; i < sizeof bad_items / sizeof bad_items[0]; ++i)\n        console_case(0, bad_items[i], 1, \"Invalid item\\n\");\n    test(text_words(\"\") == 0 && text_words(\" \\t\\r\\n\") == 0, \"empty word counts\");\n    test(text_words(\"one\") == 1 && text_words(\"  one\\t two  three \") == 3, \"whitespace word transitions\");\n    char append[5] = \"ab\";\n    test(text_append(append, sizeof append, \"cd\") && strcmp(append, \"abcd\") == 0, \"exact append capacity\");\n    test(!text_append(append, sizeof append, \"e\") && strcmp(append, \"abcd\") == 0, \"append failure preserves destination\");\n    test(text_append(append, sizeof append, \"\") && strcmp(append, \"abcd\") == 0, \"empty append\");\n    char unterminated[2] = {'a', 'b'};\n    test(!text_append(unterminated, sizeof unterminated, \"c\") && unterminated[0] == 'a' && unterminated[1] == 'b', \"bounded destination terminator search\");\n    test(!text_append(append, 0, \"x\") && !text_append(NULL, 1, \"x\") && !text_append(append, 5, NULL), \"invalid append arguments\");\n    console_case(1, \"\\n\", 0, \"0 bytes, 0 words\\n | checked\\n\");\n    console_case(1, \"red blue\\n\", 0, \"8 bytes, 2 words\\nred blue | checked\\n\");\n    console_case(1, \"one\", 0, \"3 bytes, 1 words\\none | checked\\n\");\n    console_case(1, \"\", 1, \"Expected a line of at most 63 bytes without NUL\\n\");\n    console_case(1, long_line, 1, \"Expected a line of at most 63 bytes without NUL\\n\");\n    run_case(1, binary, sizeof binary, 1, \"Expected a line of at most 63 bytes without NUL\\n\", 0);\n    char expected_text[128];\n    exact[63] = '\\0';\n    snprintf(expected_text, sizeof expected_text, \"63 bytes, 1 words\\n%s | checked\\n\", exact);\n    console_case(1, exact, 0, expected_text);\n    const long unsorted[][8] = {{3, 2, 1, 0, -1, -2, -3, -4}, {-4, -3, -2, -1, 0, 1, 2, 3}, {2, 2, -1, 0, 2, -1, 0, 0}};\n    const long sorted[][8] = {{-4, -3, -2, -1, 0, 1, 2, 3}, {-4, -3, -2, -1, 0, 1, 2, 3}, {-1, -1, 0, 0, 0, 2, 2, 2}};\n    for (size_t row = 0; row < 3; ++row) {\n        long data[8]; memcpy(data, unsorted[row], sizeof data); menu_sort(data, 8);\n        for (size_t i = 0; i < 8; ++i) test(data[i] == sorted[row][i], \"sort order and multiset\");\n    }\n    menu_sort(NULL, 0);\n    long single = 7; menu_sort(&single, 1); test(single == 7, \"empty/single sort\");\n    console_case(2, \"\", 0, \"\");\n    console_case(2, \"p\\ns\\np\\nq\\n\", 0, \"Values:\\nValues:\\n\");\n    console_case(2, \"a\\n3\\na\\n-2\\na\\n3\\ns\\np\\nq\\n\", 0, \"Values: -2 3 3\\n\");\n    console_case(2, \"a\\n-1000\\na\\n1000\\np\", 0, \"Values: -1000 1000\\n\");\n    console_case(2, \"x\\n\", 1, \"Unknown command\\n\");\n    console_case(2, \"\\n\", 1, \"Use one command: a, p, s, q\\n\");\n    console_case(2, \"q extra\\n\", 1, \"Use one command: a, p, s, q\\n\");\n    for (size_t i = 0; i < sizeof invalid / sizeof invalid[0]; ++i) {\n        char command[128]; snprintf(command, sizeof command, \"a\\n%s\\n\", invalid[i]);\n        console_case(2, command, 1, \"Invalid value\\n\");\n    }\n    console_case(2, \"a\\n\", 1, \"Invalid value\\n\");\n    console_case(2, \"a\\n1\\na\\n2\\na\\n3\\na\\n4\\na\\n5\\na\\n6\\na\\n7\\na\\n8\\np\\na\\n9\\n\", 1, \"Values: 1 2 3 4 5 6 7 8\\nFull\\n\");\n    printf(\"%u scenario checks passed\\n\", scenario_checks);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "118 scenario checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 22,
+        "processExecutionResultTime": 0.0228110000025481,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 803,
+          "processExecutionResultTime": 0.0040779998525977135,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerdZaxWJ/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 45
+        },
+        "queueTime": 4
+      }
+    },
+    {
+      "name": "scenario-clang",
+      "context": "Exact public shared/helper/scenario bodies; entry mains excluded; original boundary driver with temporary files in remote sandbox",
+      "checked_at": "2026-09-29T21:03:15.114171+00:00",
+      "url": "https://godbolt.org/api/compiler/cclang1910/compile",
+      "source_sha256": "fdd8b8a95a061c0c5b9dd47d541feb382d145d2fbfbb6ed34248b0bcd45d0b92",
+      "request": {
+        "source": "#include <ctype.h>\n#include <errno.h>\n#include <stdio.h>\n#include <stdlib.h>\n\n/* 1: complete line; 0: EOF before data; -1: rejected line/read error.\n   The caller supplies capacity writable bytes. Rejected lines are consumed. */\nint cle_read_line(FILE *input, char *buffer, size_t capacity) {\n    if (input == NULL || buffer == NULL || capacity == 0) return -1;\n    size_t used = 0;\n    int ch, seen = 0, rejected = 0;\n    while ((ch = fgetc(input)) != '\\n' && ch != EOF) {\n        seen = 1;\n        if (ch == '\\0' || used == capacity - 1) rejected = 1;\n        else buffer[used++] = (char)ch;\n    }\n    buffer[used] = '\\0';\n    if (ferror(input) || rejected) return -1;\n    return ch == EOF && !seen ? 0 : 1;\n}\n\n/* Decimal integer, optional sign and surrounding whitespace; output on success only. */\nint cle_parse_long(const char *text, long low, long high, long *output) {\n    if (text == NULL || output == NULL || low > high) return 0;\n    char *end;\n    errno = 0;\n    long value = strtol(text, &end, 10);\n    if (end == text || errno == ERANGE || value < low || value > high) return 0;\n    while (isspace((unsigned char)*end)) ++end;\n    if (*end != '\\0') return 0;\n    *output = value;\n    return 1;\n}\n\n/* Use cle_read_line and cle_parse_long from the input example above. */\n#include <stdint.h>\n\nlong *inv_allocate(size_t count, int simulate_failure) {\n    if (count == 0 || count > SIZE_MAX / sizeof(long) || simulate_failure) return NULL;\n    return malloc(count * sizeof(long));\n}\nint inv_run(FILE *input, FILE *output, int simulate_failure) {\n    char line[64];\n    long requested;\n    if (cle_read_line(input, line, sizeof line) != 1 ||\n        !cle_parse_long(line, 0, 8, &requested)) {\n        fputs(\"Invalid item count\\n\", output);\n        return 1;\n    }\n    size_t count = (size_t)requested;\n    if (count == 0) { fputs(\"Total cents: 0\\n\", output); return 0; }\n    long *totals = inv_allocate(count, simulate_failure);\n    if (totals == NULL) { fputs(\"Allocation unavailable\\n\", output); return 1; }\n    long long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        long quantity, cents;\n        if (cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000, &quantity) ||\n            cle_read_line(input, line, sizeof line) != 1 ||\n            !cle_parse_long(line, 0, 1000000, &cents)) {\n            free(totals);\n            fputs(\"Invalid item\\n\", output);\n            return 1;\n        }\n        totals[i] = quantity * cents;\n        total += totals[i];\n    }\n    fprintf(output, \"Total cents: %lld\\n\", total);\n    free(totals);\n    return 0;\n}\n/* Use cle_read_line from the input example above. */\n#include <string.h>\n\n/* Destination capacity is real; source is a valid, disjoint C string. */\nint text_append(char *destination, size_t capacity, const char *source) {\n    if (destination == NULL || source == NULL || capacity == 0) return 0;\n    size_t used = 0;\n    while (used < capacity && destination[used] != '\\0') ++used;\n    if (used == capacity || strlen(source) > capacity - used - 1) return 0;\n    strcat(destination, source);\n    return 1;\n}\nsize_t text_words(const char *text) {\n    size_t words = 0;\n    int inside = 0;\n    for (size_t i = 0; text[i] != '\\0'; ++i) {\n        if (isspace((unsigned char)text[i])) inside = 0;\n        else if (!inside) { ++words; inside = 1; }\n    }\n    return words;\n}\nint text_run(FILE *input, FILE *output) {\n    char line[64], report[80];\n    if (cle_read_line(input, line, sizeof line) != 1) {\n        fputs(\"Expected a line of at most 63 bytes without NUL\\n\", output);\n        return 1;\n    }\n    strcpy(report, line); /* At most 63 data bytes plus the terminator fit in 80. */\n    if (!text_append(report, sizeof report, \" | checked\")) return 1;\n    fprintf(output, \"%zu bytes, %zu words\\n%s\\n\", strlen(line), text_words(line), report);\n    return 0;\n}\n/* Use cle_read_line and cle_parse_long from the input example above. */\n\n/* The caller supplies count live long elements; count zero uses no element. */\nvoid menu_sort(long *values, size_t count) {\n    for (size_t i = 1; i < count; ++i) {\n        long key = values[i];\n        size_t j = i;\n        while (j > 0 && values[j - 1] > key) {\n            values[j] = values[j - 1];\n            --j;\n        }\n        values[j] = key;\n    }\n}\nint menu_run(FILE *input, FILE *output) {\n    long values[8];\n    size_t count = 0;\n    char line[64];\n    int done = 0;\n    do {\n        int status = cle_read_line(input, line, sizeof line);\n        if (status == 0) break;\n        if (status != 1 || line[0] == '\\0' || line[1] != '\\0') {\n            fputs(\"Use one command: a, p, s, q\\n\", output); return 1;\n        }\n        switch (line[0]) {\n            case 'a':\n                if (count == 8) { fputs(\"Full\\n\", output); return 1; }\n                if (cle_read_line(input, line, sizeof line) != 1 ||\n                    !cle_parse_long(line, -1000, 1000, &values[count])) {\n                    fputs(\"Invalid value\\n\", output); return 1;\n                }\n                ++count;\n                break;\n            case 'p':\n                fputs(\"Values:\", output);\n                for (size_t i = 0; i < count; ++i) fprintf(output, \" %ld\", values[i]);\n                fputc('\\n', output);\n                break;\n            case 's': menu_sort(values, count); break;\n            case 'q': done = 1; break;\n            default: fputs(\"Unknown command\\n\", output); return 1;\n        }\n    } while (!done);\n    return 0;\n}\nstatic unsigned scenario_checks;\nstatic void test(int condition, const char *label) {\n    if (!condition) { fprintf(stderr, \"Failed: %s\\n\", label); exit(2); }\n    ++scenario_checks;\n}\nstatic FILE *fixture(const char *data, size_t length) {\n    FILE *stream = tmpfile();\n    if (stream == NULL || fwrite(data, 1, length, stream) != length) exit(3);\n    rewind(stream);\n    return stream;\n}\nstatic void run_case(int which, const char *input, size_t length, int expected_code,\n                     const char *expected, int simulate_failure) {\n    FILE *in = fixture(input, length), *out = tmpfile();\n    if (out == NULL) exit(3);\n    int result = which == 0 ? inv_run(in, out, simulate_failure) :\n                 which == 1 ? text_run(in, out) : menu_run(in, out);\n    rewind(out);\n    char actual[1024];\n    size_t got = fread(actual, 1, sizeof actual - 1, out);\n    actual[got] = '\\0';\n    test(result == expected_code && got == strlen(expected) && strcmp(actual, expected) == 0,\n         \"entry point exit and complete output\");\n    fclose(in); fclose(out);\n}\nstatic void console_case(int which, const char *input, int expected_code, const char *expected) {\n    run_case(which, input, strlen(input), expected_code, expected, 0);\n}\nint main(void) {\n    long output = 77;\n    const char *valid[] = {\"0\", \"-1000\", \"1000\", \"+2\", \"0012\", \" \\t-4 \\r\\n\"};\n    const long expected[] = {0, -1000, 1000, 2, 12, -4};\n    for (size_t i = 0; i < sizeof valid / sizeof valid[0]; ++i)\n        test(cle_parse_long(valid[i], -1000, 1000, &output) && output == expected[i], \"valid decimal contract\");\n    const char *invalid[] = {\"\", \"   \", \"12x\", \"1.5\", \"1e3\", \"0x10\", \"--1\", \"+\", \"1001\", \"-1001\", \"999999999999999999999999999999999999999999\"};\n    for (size_t i = 0; i < sizeof invalid / sizeof invalid[0]; ++i) {\n        output = 77;\n        test(!cle_parse_long(invalid[i], -1000, 1000, &output) && output == 77, \"rejected parse preserves output\");\n    }\n    test(!cle_parse_long(NULL, 0, 1, &output), \"null parse input\");\n    test(!cle_parse_long(\"0\", 0, 1, NULL), \"null parse output\");\n    test(!cle_parse_long(\"0\", 2, 1, &output), \"inverted range\");\n    char line[64];\n    FILE *in = fixture(\"\\n\", 1);\n    test(cle_read_line(in, line, sizeof line) == 1 && line[0] == '\\0', \"empty line valid\"); fclose(in);\n    in = fixture(\"\", 0);\n    test(cle_read_line(in, line, sizeof line) == 0 && line[0] == '\\0', \"EOF before data\"); fclose(in);\n    in = fixture(\"end\", 3);\n    test(cle_read_line(in, line, sizeof line) == 1 && strcmp(line, \"end\") == 0, \"final line without newline\"); fclose(in);\n    char exact[65]; memset(exact, 'x', 63); exact[63] = '\\n'; exact[64] = '\\0';\n    in = fixture(exact, 64);\n    test(cle_read_line(in, line, sizeof line) == 1 && strlen(line) == 63, \"capacity minus one data bytes\"); fclose(in);\n    char long_line[69]; memset(long_line, 'x', 64); memcpy(long_line + 64, \"\\nok\\n\", 5);\n    in = fixture(long_line, 68);\n    test(cle_read_line(in, line, sizeof line) == -1, \"long line rejected\");\n    test(cle_read_line(in, line, sizeof line) == 1 && strcmp(line, \"ok\") == 0, \"rejected line consumed\"); fclose(in);\n    const char binary[] = {'a', '\\0', 'b', '\\n', 'z', '\\n'};\n    in = fixture(binary, sizeof binary);\n    test(cle_read_line(in, line, sizeof line) == -1, \"embedded NUL rejected\");\n    test(cle_read_line(in, line, sizeof line) == 1 && strcmp(line, \"z\") == 0, \"NUL line consumed\"); fclose(in);\n    in = fixture(\"\\n\", 1);\n    char tiny[1] = {'x'};\n    test(cle_read_line(in, tiny, 1) == 1 && tiny[0] == '\\0', \"one-byte empty buffer\"); fclose(in);\n    in = fixture(\"a\\n\", 2);\n    test(cle_read_line(in, tiny, 1) == -1 && tiny[0] == '\\0', \"one-byte rejects data\"); fclose(in);\n    test(cle_read_line(NULL, line, sizeof line) == -1, \"null stream rejected\");\n    in = fixture(\"a\\n\", 2);\n    tiny[0] = 'x';\n    test(cle_read_line(in, tiny, 0) == -1 && tiny[0] == 'x', \"zero capacity no write\"); fclose(in);\n    test(inv_allocate(0, 0) == NULL, \"empty allocation policy\");\n    test(inv_allocate(SIZE_MAX, 0) == NULL, \"size multiplication rejected before allocation\");\n    test(inv_allocate(8, 1) == NULL, \"injected allocation failure\");\n    long *allocated = inv_allocate(8, 0);\n    test(allocated != NULL, \"bounded allocation\");\n    for (size_t i = 0; i < 8; ++i) allocated[i] = (long)i;\n    test(allocated[0] == 0 && allocated[7] == 7, \"allocation endpoints initialized\");\n    free(allocated);\n    console_case(0, \"0\\n\", 0, \"Total cents: 0\\n\");\n    run_case(0, \"0\\n\", 2, 0, \"Total cents: 0\\n\", 1);\n    run_case(0, \"1\\n\", 2, 1, \"Allocation unavailable\\n\", 1);\n    console_case(0, \"2\\n2\\n125\\n3\\n100\\n\", 0, \"Total cents: 550\\n\");\n    console_case(0, \"1\\n0\\n1000000\\n\", 0, \"Total cents: 0\\n\");\n    console_case(0, \"1\\n1000\\n1000000\", 0, \"Total cents: 1000000000\\n\");\n    console_case(0, \"8\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n1000\\n1000000\\n\", 0, \"Total cents: 8000000000\\n\");\n    const char *bad_counts[] = {\"\", \"\\n\", \"-1\\n\", \"9\\n\", \"1x\\n\", \"9999999999999999999999999999999999\\n\"};\n    for (size_t i = 0; i < sizeof bad_counts / sizeof bad_counts[0]; ++i)\n        console_case(0, bad_counts[i], 1, \"Invalid item count\\n\");\n    const char *bad_items[] = {\"1\\n\", \"1\\n2\\n\", \"1\\n-1\\n0\\n\", \"1\\n1001\\n0\\n\", \"1\\n2x\\n0\\n\", \"1\\n1\\n-1\\n\", \"1\\n1\\n1000001\\n\", \"1\\n1\\n2.5\\n\", \"1\\n1\\n999999999999999999999999999999999999\\n\"};\n    for (size_t i = 0; i < sizeof bad_items / sizeof bad_items[0]; ++i)\n        console_case(0, bad_items[i], 1, \"Invalid item\\n\");\n    test(text_words(\"\") == 0 && text_words(\" \\t\\r\\n\") == 0, \"empty word counts\");\n    test(text_words(\"one\") == 1 && text_words(\"  one\\t two  three \") == 3, \"whitespace word transitions\");\n    char append[5] = \"ab\";\n    test(text_append(append, sizeof append, \"cd\") && strcmp(append, \"abcd\") == 0, \"exact append capacity\");\n    test(!text_append(append, sizeof append, \"e\") && strcmp(append, \"abcd\") == 0, \"append failure preserves destination\");\n    test(text_append(append, sizeof append, \"\") && strcmp(append, \"abcd\") == 0, \"empty append\");\n    char unterminated[2] = {'a', 'b'};\n    test(!text_append(unterminated, sizeof unterminated, \"c\") && unterminated[0] == 'a' && unterminated[1] == 'b', \"bounded destination terminator search\");\n    test(!text_append(append, 0, \"x\") && !text_append(NULL, 1, \"x\") && !text_append(append, 5, NULL), \"invalid append arguments\");\n    console_case(1, \"\\n\", 0, \"0 bytes, 0 words\\n | checked\\n\");\n    console_case(1, \"red blue\\n\", 0, \"8 bytes, 2 words\\nred blue | checked\\n\");\n    console_case(1, \"one\", 0, \"3 bytes, 1 words\\none | checked\\n\");\n    console_case(1, \"\", 1, \"Expected a line of at most 63 bytes without NUL\\n\");\n    console_case(1, long_line, 1, \"Expected a line of at most 63 bytes without NUL\\n\");\n    run_case(1, binary, sizeof binary, 1, \"Expected a line of at most 63 bytes without NUL\\n\", 0);\n    char expected_text[128];\n    exact[63] = '\\0';\n    snprintf(expected_text, sizeof expected_text, \"63 bytes, 1 words\\n%s | checked\\n\", exact);\n    console_case(1, exact, 0, expected_text);\n    const long unsorted[][8] = {{3, 2, 1, 0, -1, -2, -3, -4}, {-4, -3, -2, -1, 0, 1, 2, 3}, {2, 2, -1, 0, 2, -1, 0, 0}};\n    const long sorted[][8] = {{-4, -3, -2, -1, 0, 1, 2, 3}, {-4, -3, -2, -1, 0, 1, 2, 3}, {-1, -1, 0, 0, 0, 2, 2, 2}};\n    for (size_t row = 0; row < 3; ++row) {\n        long data[8]; memcpy(data, unsorted[row], sizeof data); menu_sort(data, 8);\n        for (size_t i = 0; i < 8; ++i) test(data[i] == sorted[row][i], \"sort order and multiset\");\n    }\n    menu_sort(NULL, 0);\n    long single = 7; menu_sort(&single, 1); test(single == 7, \"empty/single sort\");\n    console_case(2, \"\", 0, \"\");\n    console_case(2, \"p\\ns\\np\\nq\\n\", 0, \"Values:\\nValues:\\n\");\n    console_case(2, \"a\\n3\\na\\n-2\\na\\n3\\ns\\np\\nq\\n\", 0, \"Values: -2 3 3\\n\");\n    console_case(2, \"a\\n-1000\\na\\n1000\\np\", 0, \"Values: -1000 1000\\n\");\n    console_case(2, \"x\\n\", 1, \"Unknown command\\n\");\n    console_case(2, \"\\n\", 1, \"Use one command: a, p, s, q\\n\");\n    console_case(2, \"q extra\\n\", 1, \"Use one command: a, p, s, q\\n\");\n    for (size_t i = 0; i < sizeof invalid / sizeof invalid[0]; ++i) {\n        char command[128]; snprintf(command, sizeof command, \"a\\n%s\\n\", invalid[i]);\n        console_case(2, command, 1, \"Invalid value\\n\");\n    }\n    console_case(2, \"a\\n\", 1, \"Invalid value\\n\");\n    console_case(2, \"a\\n1\\na\\n2\\na\\n3\\na\\n4\\na\\n5\\na\\n6\\na\\n7\\na\\n8\\np\\na\\n9\\n\", 1, \"Values: 1 2 3 4 5 6 7 8\\nFull\\n\");\n    printf(\"%u scenario checks passed\\n\", scenario_checks);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "118 scenario checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 33,
+        "processExecutionResultTime": 0.019713999703526497,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 169,
+          "processExecutionResultTime": 0.001713000237941742,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerYKNtnE/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "--gcc-toolchain=/opt/compiler-explorer/gcc-13.2.0",
+            "-fcolor-diagnostics",
+            "-fno-crash-diagnostics",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-13.2.0/lib64",
+            "-Wl,-rpath,/opt/compiler-explorer/gcc-13.2.0/lib32"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/clang-19.1.0/lib",
+            "/opt/compiler-explorer/clang-19.1.0/lib32",
+            "/opt/compiler-explorer/clang-19.1.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 36
+        },
+        "queueTime": 11
+      }
+    },
+    {
+      "name": "hello",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:08:10.772785+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "4501ba5ab87b4319e41b349d4b460884c26b3473fb283ba1aefe57a1fb218de3",
+      "request": {
+        "source": "#include <stdio.h>\n\nint main(void) {\n    int count = 3;\n    printf(\"count = %d\\n\", count);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "count = 3"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 18,
+        "processExecutionResultTime": 0.02222799975425005,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 665,
+          "processExecutionResultTime": 0.0031019998714327812,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerqyTXaV/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 55
+        },
+        "queueTime": 5
+      }
+    },
+    {
+      "name": "allocation",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:08:11.328361+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "f4c7e1d9ff26cf1b03a1cf2cfce9f19dcccb74a754eaa7eaa0d8af60f7b7916e",
+      "request": {
+        "source": "#include <stdint.h>\n#include <stdio.h>\n#include <stdlib.h>\n\nint main(void) {\n    size_t count = 8;\n    int *values;\n    if (count == 0 || count > SIZE_MAX / sizeof *values) return 1;\n    values = malloc(count * sizeof *values);\n    if (values == NULL) return 1;\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        values[i] = (int)i;\n        total += values[i];\n    }\n    free(values);\n    values = NULL;\n    printf(\"Total: %ld; owner reset: %d\\n\", total, values == NULL);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "Total: 28; owner reset: 1"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 23,
+        "processExecutionResultTime": 0.019838999956846237,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 76,
+          "processExecutionResultTime": 0.003963001072406769,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerwmzu2Q/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 48
+        },
+        "queueTime": 6
+      }
+    },
+    {
+      "name": "sum",
+      "context": "complete original program",
+      "checked_at": "2026-09-29T21:08:12.539156+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "9ae2e0f829e3452f12a08f78445388b7098282b6178e87a6ba47627039cc504f",
+      "request": {
+        "source": "#include <stddef.h>\n#include <stdio.h>\n\n/* Caller provides count live elements. Output changes only on success. */\nint checked_sum(const int *values, size_t count, long *output) {\n    if (output == NULL || count > 100 || (count != 0 && values == NULL)) return 0;\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        if (values[i] < -1000 || values[i] > 1000) return 0;\n        total += values[i];\n    }\n    *output = total;\n    return 1;\n}\nint main(void) {\n    int values[] = {7, -2, 5};\n    long total;\n    if (!checked_sum(values, sizeof values / sizeof values[0], &total)) return 1;\n    printf(\"Sum: %ld\\n\", total);\n    return 0;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "Sum: 10"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 23,
+        "processExecutionResultTime": 0.0153590003028512,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 791,
+          "processExecutionResultTime": 0.003641999326646328,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilerCV0Ffg/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 36
+        },
+        "queueTime": 5
+      }
+    },
+    {
+      "name": "sum-boundaries",
+      "context": "Exact public checked_sum and renamed original main, plus bounded original driver",
+      "checked_at": "2026-09-29T21:08:13.060699+00:00",
+      "url": "https://godbolt.org/api/compiler/cg142/compile",
+      "source_sha256": "96ade71f8b2a831390c1cc4dd7dcbabf08aef1d1cde12bd93ca0089d6633ece6",
+      "request": {
+        "source": "#include <stddef.h>\n#include <stdio.h>\n\n/* Caller provides count live elements. Output changes only on success. */\nint checked_sum(const int *values, size_t count, long *output) {\n    if (output == NULL || count > 100 || (count != 0 && values == NULL)) return 0;\n    long total = 0;\n    for (size_t i = 0; i < count; ++i) {\n        if (values[i] < -1000 || values[i] > 1000) return 0;\n        total += values[i];\n    }\n    *output = total;\n    return 1;\n}\nint public_sum_entry(void) {\n    int values[] = {7, -2, 5};\n    long total;\n    if (!checked_sum(values, sizeof values / sizeof values[0], &total)) return 1;\n    printf(\"Sum: %ld\\n\", total);\n    return 0;\n}\n\nstatic int checks;\nstatic void test(int condition) { if(!condition) { fputs(\"sum mismatch\\n\", stderr); return; } ++checks; }\nint main(void) {\n    long out = 77;\n    int values[101];\n    for (size_t i = 0; i < 101; ++i) values[i] = 1000;\n    test(checked_sum(values, 100, &out) && out == 100000);\n    out = 77;\n    test(!checked_sum(values, 101, &out) && out == 77);\n    values[99] = 1001;\n    test(!checked_sum(values, 100, &out) && out == 77);\n    values[99] = -1001;\n    test(!checked_sum(values, 100, &out) && out == 77);\n    test(!checked_sum(NULL, 1, &out) && out == 77);\n    test(!checked_sum(values, 1, NULL));\n    test(checked_sum(NULL, 0, &out) && out == 0);\n    values[0] = -1000;\n    test(checked_sum(values, 1, &out) && out == -1000);\n    test(checked_sum(values, 0, &out) && out == 0);\n    printf(\"%d sum boundary checks passed\\n\", checks);\n    return checks == 9 ? 0 : 1;\n}\n",
+        "lang": "c",
+        "allowStoreCodeDebug": false,
+        "options": {
+          "userArguments": "-std=c11 -Wall -Wextra -pedantic -lm",
+          "compilerOptions": {
+            "executorRequest": true
+          },
+          "filters": {
+            "execute": true
+          },
+          "executeParameters": {
+            "args": [],
+            "stdin": ""
+          }
+        }
+      },
+      "response": {
+        "code": 0,
+        "okToCache": true,
+        "timedOut": false,
+        "stdout": [
+          {
+            "text": "9 sum boundary checks passed"
+          }
+        ],
+        "stderr": [],
+        "truncated": false,
+        "execTime": 34,
+        "processExecutionResultTime": 0.02503100037574768,
+        "didExecute": true,
+        "buildResult": {
+          "inputFilename": "example.c",
+          "code": 0,
+          "okToCache": true,
+          "timedOut": false,
+          "stdout": [],
+          "stderr": [],
+          "truncated": false,
+          "execTime": 102,
+          "processExecutionResultTime": 0.0021240003407001495,
+          "instructionSet": "amd64",
+          "downloads": [],
+          "executableFilename": "/nosym/tmp/compiler-explorer-compilera2FOsd/output.s",
+          "compilationOptions": [
+            "-g",
+            "-o",
+            "/app/output.s",
+            "-fno-verbose-asm",
+            "-fdiagnostics-color=always",
+            "-std=c11",
+            "-Wall",
+            "-Wextra",
+            "-pedantic",
+            "-lm",
+            "/app/example.c",
+            "-L./lib",
+            "-Wl,-rpath,./lib"
+          ],
+          "preparedLdPaths": [
+            "/opt/compiler-explorer/gcc-14.2.0/lib",
+            "/opt/compiler-explorer/gcc-14.2.0/lib32",
+            "/opt/compiler-explorer/gcc-14.2.0/lib64"
+          ],
+          "defaultExecOptions": {
+            "timeoutMs": 20000,
+            "maxErrorOutput": 5000,
+            "env": {
+              "LD_LIBRARY_PATH": "",
+              "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
+              "HOME": "/home/ce"
+            }
+          },
+          "packageStoreTime": 36
+        },
+        "queueTime": 20
+      }
+    }
+  ],
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-29",
+    "method": "Full public web-reader canonical page after direct timeout; manual retained-snapshot comparison",
+    "objectives": 36,
+    "per_block": [
+      6,
+      5,
+      5,
+      4,
+      4,
+      5,
+      4,
+      3
+    ],
+    "weights": [
+      13.25,
+      13.25,
+      13.25,
+      13.25,
+      16.5,
+      16.5,
+      7,
+      7
+    ],
+    "items": [
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      2,
+      2
+    ],
+    "active_code": "CLE-10-01",
+    "syllabus_date": "2025-07-24",
+    "snapshot_action": "Retained; no successful automated hash comparison",
+    "groups": [
+      {
+        "title": "Block 1 - Basic Concepts (4 items; 13.25%)",
+        "objectives": [
+          "1.1 Compilation, compilers, and IDEs",
+          "1.2 Language elements, lexis, syntax, semantics, and portability",
+          "1.3 Character, numeric, string, and scientific-notation literals",
+          "1.4 printf(), puts(), main(), and return",
+          "1.5 Binary, octal, decimal, and hexadecimal numeral systems",
+          "1.6 Variables and basic arithmetic"
+        ]
+      },
+      {
+        "title": "Block 2 - Data Types, Evaluations, and Basic I/O Operations (4 items; 13.25%)",
+        "objectives": [
+          "2.1 Primary and derived types and type modifiers",
+          "2.2 Casts and conversions",
+          "2.3 Declarations, assignment, and constants",
+          "2.4 scanf(), puts(), printf(), and format specifiers",
+          "2.5 Headers and basic calculations"
+        ]
+      },
+      {
+        "title": "Block 3 - Arithmetic, Logical, and Bitwise Operators (4 items; 13.25%)",
+        "objectives": [
+          "3.1 Unary and binary operators, precedence, and associativity",
+          "3.2 Arithmetic and rounding",
+          "3.3 Increment, decrement, and compound assignment",
+          "3.4 Bit shifts and logical operators",
+          "3.5 Truth tables"
+        ]
+      },
+      {
+        "title": "Block 4 - Flow Control: Decision-Making Statements (4 items; 13.25%)",
+        "objectives": [
+          "4.1 if, if-else, and chained alternatives",
+          "4.2 Multiple and nested conditions",
+          "4.3 switch, case, and default",
+          "4.4 Control instructions"
+        ]
+      },
+      {
+        "title": "Block 5 - Flow Control: Loops (5 items; 16.50%)",
+        "objectives": [
+          "5.1 while, for, and do-while",
+          "5.2 Sequence iteration and infinite-loop recognition",
+          "5.3 Loop structure, nesting, and execution",
+          "5.4 break and continue"
+        ]
+      },
+      {
+        "title": "Block 6 - Arrays, Pointers, and Memory Management (5 items; 16.50%)",
+        "objectives": [
+          "6.1 Single- and multidimensional arrays",
+          "6.2 Initializers and array sorting",
+          "6.3 Pointers, NULL, arithmetic, address, and dereference",
+          "6.4 Array-versus-pointer distinctions",
+          "6.5 malloc() and free()"
+        ]
+      },
+      {
+        "title": "Block 7 - String Manipulation (2 items; 7%)",
+        "objectives": [
+          "7.1 Character arrays and ASCII",
+          "7.2 String initialization and processing",
+          "7.3 strcpy(), strlen(), and strcat()",
+          "7.4 String-related headers"
+        ]
+      },
+      {
+        "title": "Block 8 - The Basics of Functions (2 items; 7%)",
+        "objectives": [
+          "8.1 Function definition, declaration, and invocation",
+          "8.2 Parameters and return values",
+          "8.3 Selected C standard-library functions"
+        ]
+      }
+    ]
+  },
+  "source_health_boundary": "23 direct receipts: 16 HTTP200, 2 HTTP403 and 5 errors. Institute pages, selected WG14 draft clauses and API documentation read through web fallback. Cisco/YouTube successes were shells. No local genuine draft PDF capture, complete standard audit, paid interiors or authenticated page review.",
+  "review_provenance": "All 30 existing answers reviewed/improved. Eight complete public C blocks executed remotely; GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks, plus nine checked_sum boundaries on GCC. Twelve final build/run receipts have no compiler warnings. Scenario inputs/outputs used temporary files within remote sandbox; allocation failure was injected null, not exhaustion. No local toolchain, undefined-behavior run, sanitizer, interactive debugger or human review. Eight broader activities proposed."
+}

@@ -2008,6 +2008,8 @@ answer dump or copied course content is used. Blueprint SHA-256:
 
 ## CLE-10-01 coverage record
 
+The September 29 [deep review](research/2026-09-29-cle-10-01-deep-review.md) maps 36 detailed objectives. Mapped all 36 numbered objectives, repaired numeric input overflow/prefix handling, explicit rounding, array-row bounds, ownership and string capacity. Reviewed/improved all 30 original answers. Eight complete public C programs executed remotely; GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks, plus nine sum-boundary checks on GCC. Paid/source access limits, incomplete vendor snippets and human review remain explicit. Current guide citations: 23 registered, 16 reachable, 2 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Basic Concepts (13.25%); Data Types, Evaluations, and Basic I/O Operations (13.25%); Arithmetic, Logical, and Bitwise Operators (13.25%); Decision-Making Statements (13.25%); Loops (16.50%); Arrays, Pointers, and Memory Management (16.50%); String Manipulation (7%); Functions (7%)

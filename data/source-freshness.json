@@ -4,6 +4,197 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cle1001-deep-review",
+      "title": "CLE-10-01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CLE-10-01"
+      ],
+      "results": [
+        {
+          "exam_code": "CLE-10-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+          "baseline_sha256": "524055c82b79350660e8093965ce34a1ca0ef5d6ab023f4455f2a3086fd77303",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete canonical CLE page read via web fallback after direct timeout. Active CLE-10-01 July 24, 2025 syllabus has 36 objectives in 6/5/5/4/4/5/4/3 groups; weights/item counts retained after manual comparison. No successful automated hash comparison."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected C11 draft clauses, SEI rules and complete Microsoft runtime references read with boundaries. Eight complete original C blocks execute; each remote compiler passes 72 core and 118 scenario checks. Numeric overflow and other undefined executions excluded."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current exam/catalog/policy pages examined. CLE remains active with lifetime/version-specific credential wording; no replacement announced on examined pages. No unseen release feed, booking availability or exam-required compiler standard inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Complete OpenEDG six-module/42-hour public listing, SEI development index, MSVC C89-based index and community language index read. Paid contents and video transcript unavailable; author time estimates labeled."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Direct primary/PDF/API-doc fetches failed despite web-reader content; OReilly/Udemy HTTP403, Cisco/YouTube shells. Public course labels and incomplete reference snippets require qualifications. Human and current account/booking review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "cle1001-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Rounding is an explicit objective",
+              "url": "https://cppinstitute.org/cle",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective 3.2 explicitly includes rounding; existing prose mainly covered integer division and generic conversion.",
+              "recommendation": "Add a sourced floor/ceil/round/cast comparison and execute exact positive/negative halfway and non-halfway examples.",
+              "disposition": "applied",
+              "source_id": "cle-10-01-syllabus",
+              "resolution": "Add a sourced floor/ceil/round/cast comparison and execute exact positive/negative halfway and non-halfway examples."
+            },
+            {
+              "id": "cle1001-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Assignment counts do not handle numeric overflow",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/error-handling-err/err34-c/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "scanf-family numeric conversion can be undefined when the value is unrepresentable, and a successful prefix does not validate the complete text.",
+              "recommendation": "Use bounded character input plus strtol with suffix/range checks, preserving output on rejection; retain safe scanf-family traces for the explicit objective.",
+              "disposition": "applied",
+              "source_id": "cert-c-err34",
+              "resolution": "Use bounded character input plus strtol with suffix/range checks, preserving output on rejection; retain safe scanf-family traces for the explicit objective."
+            },
+            {
+              "id": "cle1001-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Portable C explanations require an explicit practice version",
+              "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "C11 distinguishes int character constants, grouping/sequencing, signed/unsigned conversions, sizeof VLA cases and function prototypes. Microsoft index is organized around C89 plus extensions.",
+              "recommendation": "Pin original practice to C11 without claiming the exam mandates it; explain specific portable contracts and execute defined traces.",
+              "disposition": "applied",
+              "source_id": "c11-n1570",
+              "resolution": "Pin original practice to C11 without claiming the exam mandates it; explain specific portable contracts and execute defined traces."
+            },
+            {
+              "id": "cle1001-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Adjacent multidimensional storage does not erase row bounds",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/arrays-arr/arr30-c/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Out-of-range row subscripts and forming out-of-range pointers can be undefined even when nearby storage appears accessible.",
+              "recommendation": "Teach pointer-to-row types, same-array arithmetic and protected insertion-sort indexing with executed boundary checks.",
+              "disposition": "applied",
+              "source_id": "cert-c-arr30",
+              "resolution": "Teach pointer-to-row types, same-array arithmetic and protected insertion-sort indexing with executed boundary checks."
+            },
+            {
+              "id": "cle1001-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Allocation examples need real failure and size paths",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/memory-management-mem/mem35-c/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Size multiplication, zero count and null allocation results require explicit control flow and initialization before reads.",
+              "recommendation": "Replace a file-scope statement fragment with a complete program; implement release paths and a bounded injected-null allocation test.",
+              "disposition": "applied",
+              "source_id": "cert-c-mem35",
+              "resolution": "Replace a file-scope statement fragment with a complete program; implement release paths and a bounded injected-null allocation test."
+            },
+            {
+              "id": "cle1001-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "String helpers require terminator and capacity contracts",
+              "url": "https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/rules/characters-and-strings-str/str31-c/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "A terminated source and destination capacity must include final NUL; illustrative snippets and placeholder error comments are not a general complete parser.",
+              "recommendation": "Add original full-line and text programs with explicit capacity, NUL, disjoint-source and output-preservation contracts, then execute normal/boundary rejection cases.",
+              "disposition": "applied",
+              "source_id": "cert-c-str31",
+              "resolution": "Add original full-line and text programs with explicit capacity, NUL, disjoint-source and output-preservation contracts, then execute normal/boundary rejection cases."
+            },
+            {
+              "id": "cle1001-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "External content and reference quality remain limited",
+              "url": "https://cppinstitute.org/cle",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Paid interiors and current booking not inspected; direct source requests fail and several public snippets or course labels require qualification.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 36 numbered objectives, repaired numeric input overflow/prefix handling, explicit rounding, array-row bounds, ownership and string capacity. Reviewed/improved all 30 original answers. Eight complete public C programs executed remotely; GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks, plus nine sum-boundary checks on GCC. Paid/source access limits, incomplete vendor snippets and human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-29-cle-10-01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-jse4001-deep-review",
       "title": "JSE-40-01 complete guide and learning-content review",
       "rubric_version": 1,
