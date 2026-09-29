@@ -2058,6 +2058,8 @@ used. Blueprint SHA-256:
 
 ## JSA-41-01 coverage record
 
+The September 29 [deep review](research/2026-09-29-jsa-41-01-deep-review.md) maps 40 detailed objectives. Mapped all 40 numbered objectives and improved all 40 answer explanations. Seven exact public JavaScript blocks verified: 143 core and 84 catalog/normalization checks in both Node 24.18.1 and Chrome 154.0.8037.58, plus 36 real browser API/UI checks with intercepted synthetic responses and three introductory examples. Corrected descriptors, copying, sparse arrays, Unicode/date/JSON/regex boundaries and promise/cancellation contracts. Channel policy and inaccessible/paid content limits remain explicit; eight broader activities proposed. Current guide citations: 40 registered, 33 reachable, 2 access-blocked, 5 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Classless Objects (25%); Classes and Class-Based Approach (23%); Built-in Objects (27%); Advanced Functions (25%)

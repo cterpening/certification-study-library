@@ -3,6 +3,328 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "js-institute-pvue-policies",
+      "title": "JS Institute Pearson VUE testing policies",
+      "url": "https://jsinstitute.org/pvue-testing-policies",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete indexed public policy read after direct failure. Fifteen-day failed retake, no same-version passed retake,24-hour qualified scheduling/cancel context and free-retake eligibility wording retained by channel. Product 295/345 pricing does not establish voucher eligibility; generic reschedule/cancel phrasing qualified. No checkout or account action. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "js-institute-roadmap",
+      "title": "JS Institute certification overview",
+      "url": "https://jsinstitute.org/certification-tracks",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Correct canonical certification-tracks overview read completely through indexed fallback after direct failure. ActiveJSA 295 USD and Spanish TestNow qualification compared with credential page. Guessed certification-roadmap URL corrected before publication. No replacement announced on inspected exam/syllabus/overview, not an unseen feed or inferred release audit. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-define-property",
+      "title": "MDN Object.defineProperty",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Description, creating/modifying-property including flag subtopics, and adding-properties/default-values sections read. New false defaults distinguished from preserved omitted existing attributes. One source example annotates existing-property defaults misleadingly; original tests follow the precise text. Source global Object.prototype freeze example not executed. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-object-assign",
+      "title": "MDN Object.assign",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Selected description, clone/merge, accessor/descriptor copying and partial-write-on-throw content read; full-body output had a small truncated primitive/merge portion, so no full 7490-character audit claimed. Original getter/setter/materialized-value/partial-mutation checks executed. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-object-freeze",
+      "title": "MDN Object.freeze",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 8327-character body read. Shallow data descriptors, nested mutation and surviving accessor effects taught/tested. No copied deepFreeze traversal or global prototype freezing; no claim to secure arbitrary object graphs. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-object-create",
+      "title": "MDN Object.create",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 5576-character body read: explicit/null prototype and new descriptor defaults. Original null-dictionary/prototype checks executed; empty-constructor comparison not generalized to all constructors. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-date",
+      "title": "MDN Date",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Epoch/invalid-date, components/timezones, standard date-time format and elapsed-time sections read. Not full 22345-character body. Original UTC dates/rollover/strict date-only roundtrip checks, including leap centuries and 0000/9999; no local timezone/DST or cross-engine nonstandard parsing claims. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-map",
+      "title": "MDN Map",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Description, key equality, objects-versus-maps and instance-method summaries read. Not full 14872-character page. Identity, SameValueZero, update/reinsert ordering, clear and lookup tested; no constant-time guarantee or newly listed getOrInsert exam objective inferred. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-set",
+      "title": "MDN Set",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Description, key equality and instance-method summaries read. Not full 12754-character body. Original uniqueness/order/add/delete/clear tests; newly listed set-algebra methods remain outside claimed numbered API scope. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-js-math",
+      "title": "MDN Math",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 5633-character body read for named API/constant descriptions including radians. Original exact/toleranced checks; separate round/random pages support precise ties and generator boundaries. No numeric analysis/statistical quality certification. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-regexp-exec",
+      "title": "MDN RegExp.exec",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 7039-character body read. Global/sticky lastIndex state, failed reset, captures and zero-length-loop warning applied. Original state across different strings and constructor escaping tested. No adversarial-regex performance guarantee. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-json-stringify",
+      "title": "MDN JSON.stringify",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Description, exceptions and circular-reference section read; not full 15128-character page. Original object omission/arraynull/rootundefined/Map loss/BigInt/cycle checks and parsed-shape boundary. No custom BigInt prototype modification or arbitrary deep clone claim. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-function-bind",
+      "title": "MDN Function.bind",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Description, partial arguments and bound-constructors sections read; not full 12748-character article. Original receiver retention, apply array-like andnew ignoring bound receiver tested. No claim that arrows can be rebound. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-iteration-protocols",
+      "title": "MDN iteration protocols",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Iterable and iterator protocols, built-in iterables, syntax consumers and generator example sections read; not full 24340-character body or async-iteration chapter. Original generator exhaustion/return-value exclusion, restartable iterable andfinally-on-break tested. New iterator-helper API not inferred as exam scope. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-promise-all",
+      "title": "MDN Promise.all",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Return-value anddescription sections read. Ordered results, empty fulfilled array andfail-fast noncancellation explained and tested. No full 10945-character article audit or scheduler-performance claim. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-promise-any",
+      "title": "MDN Promise.any",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/any",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Return-value anddescription sections read. First fulfillment, empty AggregateError and input-ordered rejection reasons tested. Not full 5649-character page. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-promise-race",
+      "title": "MDN Promise.race",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Return-value anddescription sections read. First settlement including rejection, asynchronous reactions andempty permanently pending contract taught. Finite sentinel test observes pending only over that comparison; not an empirical proof of infinite duration. Not full 9909-character page. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-promise-finally",
+      "title": "MDN Promise.finally",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 5203-character body read. Cleanup callback gets no settlement value; ordinary return ignored, throw/rejection replaces and returned promise delays. Original preservation/replacement examples tested. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-xhr-guide",
+      "title": "MDN XMLHttpRequest guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API/Using_XMLHttpRequest",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Types of requests, response overview, progress/events andsecurity sections read; not full 12403-character article. Misleading security cross-site-scripting wording is not adopted: CORS controls cross-origin read access. Original asynchronous XHR handlesload status, error, abort andtimeout with listener cleanup; no sync document request or actualserver/CORS test. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-abort-controller",
+      "title": "MDN AbortController",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 1592-character page read. Real browser AbortController used for pre/in-flight cancellation oforiginal Fetch/XHR requests. Cancellation ofbody consumption documented but not separately forced mid-stream; no library installation or productionnetwork action. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-math-round",
+      "title": "MDN Math.round",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 2467-character body read. Negative half ties toward positive infinity and negative zero preserved; original assertions executed. No adoption of floor(x+0.5) as an exact universal replacement. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-math-random",
+      "title": "MDN Math.random",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 3713-character body read. [0,1), approximate uniformity, no user-selected seed API, no secrecy and scaled endpoint rounding discussed. One observed range check per workbook run is not a statistical randomness test; no generator state modifications. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mdn-xhr-timeout",
+      "title": "MDN XMLHttpRequest.timeout",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 JSA-41-01 deep review: Complete 1477-character body read. Defaultzero means no timeout; asynchronous XHR timeout event used. Actual 40 ms bounded fixture timeout fired; duration is a test setting, not measured performance guarantee. No synchronous request or persistent server. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "python-pcap-testnow-policies",
       "title": "Python Institute PCAP TestNow policies",
       "url": "https://www.pythoninstitute.org/pcap-testing-policies",
@@ -361,10 +683,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "JSE-40-01"
+        "JSE-40-01",
+        "JSA-41-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 JSE-40-01 deep review: Read number_encoding, number_coercion including subsections, and integer_range_for_number. Conversion of null/blank/undefined, full-string numeric conversion and explicit Number(BigInt) informed traces. Safe-integer guarantee concerns adjacent distinct values; some larger integers remain exactly representable, qualifying imprecise shorthand. Full page not audited. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 JSE-40-01 deep review: Read number_encoding, number_coercion including subsections, and integer_range_for_number. Conversion of null/blank/undefined, full-string numeric conversion and explicit Number(BigInt) informed traces. Safe-integer guarantee concerns adjacent distinct values; some larger integers remain exactly representable, qualifying imprecise shorthand. Full page not audited. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution. September 29 JSA-41-01 deep review: Encoding, coercion, static properties/static methods and instance-method summaries read; not full 10972-character body. EPSILON interpreted from exact encoding context as spacing at 1, rather than overbroad minimum-gap shorthand. Original blank conversion, noncoercing checks, safe range, wrapper, MIN_VALUE and formatting probes. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mdn-js-bigint",
@@ -389,10 +712,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "JSE-40-01"
+        "JSE-40-01",
+        "JSA-41-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 JSE-40-01 deep review: Read character_access, comparing_strings and UTF16/code-point/grapheme sections. Strict indexed assignment, immutable strings and code-unit length versus code-point iteration checked. Full locale/text-processing reference not audited or added to scope. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 JSE-40-01 deep review: Read character_access, comparing_strings and UTF16/code-point/grapheme sections. Strict indexed assignment, immutable strings and code-unit length versus code-point iteration checked. Full locale/text-processing reference not audited or added to scope. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution. September 29 JSA-41-01 deep review: Character access, comparison, primitive versus wrapper, UTF16/code-point/grapheme distinction and instance-method summaries read. Not full 18686-character reference. Original length/iteration/split/replace/comparison/padding examples executed; no locale-specific collation guarantee. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mdn-js-array",
@@ -403,10 +727,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "JSE-40-01"
+        "JSE-40-01",
+        "JSA-41-01"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 JSE-40-01 deep review: Read description, length/numerical-properties relation, copying/mutating methods, copy/append/pop/unshift/indexOf/merge examples. Return values, shallow references, delete holes and length shrinking tested. Full 38564-character reference not audited; broad JSON-deep-copy advice not adopted. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+      "notes": "September 29 JSE-40-01 deep review: Read description, length/numerical-properties relation, copying/mutating methods, copy/append/pop/unshift/indexOf/merge examples. Return values, shallow references, delete holes and length shrinking tested. Full 38564-character reference not audited; broad JSON-deep-copy advice not adopted. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution. September 29 JSA-41-01 deep review: Description, index/length relationships, empty slots, copying versus mutation and iterative-method sections read. Not full 38564-character reference. Original sparse map/find/spread, empty predicates/reduce, sort and parseInt callback checks executed. New unrelated APIs not added to blueprint. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mdn-js-operator-precedence",
@@ -55497,9 +55822,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "JSE-40-01"
+        "JSE-40-01",
+        "JSA-41-01"
       ],
-      "notes": "Current entry-level default delivery mode, NDA/security, accommodation, age and seven-day failed-attempt wait policies. September 29 JSE-40-01 deep review: Direct timeout; complete public policy read via web reader. Opening section calls entry-level delivery non-proctored by default, but later generic delivery text calls proctoring the global default. Conflict disclosed; no determination of current booking. Failed-retake wait seven days with another voucher potentially required. Admission/NDA/security/accommodation context read; no account or exam action. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+      "notes": "Current entry-level default delivery mode, NDA/security, accommodation, age and seven-day failed-attempt wait policies. September 29 JSE-40-01 deep review: Direct timeout; complete public policy read via web reader. Opening section calls entry-level delivery non-proctored by default, but later generic delivery text calls proctoring the global default. Conflict disclosed; no determination of current booking. Failed-retake wait seven days with another voucher potentially required. Admission/NDA/security/accommodation context read; no account or exam action. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution. September 29 JSA-41-01 deep review: Direct request failed; fresh indexed policy sections read for delivery, retake, rescheduling, accommodation and age/security context. AssociateJSA proctored delivery and 7-day failed retake distinguished fromPearson 15 days. Generic entry/proctored wording is not applied as a JSA conflict; no full booking UI/diagnostics review. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "openedg-jse-40-01-practice",
@@ -55589,7 +55915,7 @@
       "id": "oreilly-javascript-definitive-guide-7",
       "title": "JavaScript: The Definitive Guide, 7th Edition",
       "url": "https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/",
-      "publisher": "O'Reilly / David Flanagan",
+      "publisher": "OpenEDG JS Institute",
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
@@ -55598,7 +55924,7 @@
         "JSE-40-01",
         "JSA-41-01"
       ],
-      "notes": "May 2020, 706-page, 21h15m intermediate-to-advanced reference. Select language, object, class, collection, function, and asynchronous chapters against the active exam scope; verify modern API behavior in MDN. September 29 JSE-40-01 deep review: HTTP403. Prior 21h15m runtime and paid contents not reverified. Eight to 12 selective hours is an author planning estimate. Shared source health does not imply a new JSA guide review. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution."
+      "notes": "May 2020, 706-page, 21h15m intermediate-to-advanced reference. Select language, object, class, collection, function, and asynchronous chapters against the active exam scope; verify modern API behavior in MDN. September 29 JSE-40-01 deep review: HTTP403. Prior 21h15m runtime and paid contents not reverified. Eight to 12 selective hours is an author planning estimate. Shared source health does not imply a new JSA guide review. See docs/research/2026-09-29-jse-40-01-deep-review.md No live infrastructure execution. September 29 JSA-41-01 deep review: Direct HTTP403. Historical seventh-edition title retained, but old page count/runtime removed as not freshly verified. No subscriber contents or lessons read; selected hours are author estimates. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
       "id": "udemy-complete-javascript-schmedtmann",
@@ -55894,43 +56220,186 @@
       "notes": "Broad Python 3 path rather than an exact PCAP course. Select approximately 12 to 20 hours based on objective gaps. September 29 PCAP-31-03 deep review: Complete 12961-character public path page read: 16 courses, 21 labs and 53 total hours, with public titles/dates/durations and prerequisites. Broad database/API/regex/design-pattern content is not PCAP scope. Original code does not copy course labs; paid interiors/playback not reviewed. Selected 12–20 hours is an author budget. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"jsa-41-01-syllabus","title":"JSA-41-01 Exam Syllabus","url":"https://jsinstitute.org/jsa-exam-syllabus","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Canonical active exam syllabus with all 40 named objectives, four weighted blocks, item distribution, passing requirement, minimally qualified candidate profile and September 22, 2025 baseline."
+      "id": "jsa-41-01-syllabus",
+      "title": "JSA-41-01 Exam Syllabus",
+      "url": "https://jsinstitute.org/jsa-exam-syllabus",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Canonical active exam syllabus with all 40 named objectives, four weighted blocks, item distribution, passing requirement, minimally qualified candidate profile and September 22, 2025 baseline. September 29 JSA-41-01 deep review: Direct fetch, web open and objective monitor failed. Complete indexed current English syllabus read: active 41-01, September 22 2025 baseline, all 40 numbered objectives in 11/7/12/10 groups, weights 25/23/27/25 and item counts 11/7/12/10. Manual subject comparison supports retaining abbreviated-ID snapshot; no successful fresh automated hash comparison. Older 2022 PDF only indexed cover and selected page excerpts, not current full-PDF evidence. No equal-item scoring shortcut inferred. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"jsa-certification-page","title":"JSA Certified Associate JavaScript Programmer","url":"https://jsinstitute.org/jsa-certification","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current version, prerequisites, duration, item count, format, score, languages, price, delivery channels, policies and associated learning resources."
+      "id": "jsa-certification-page",
+      "title": "JSA Certified Associate JavaScript Programmer",
+      "url": "https://jsinstitute.org/jsa-certification",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current version, prerequisites, duration, item count, format, score, languages, price, delivery channels, policies and associated learning resources. September 29 JSA-41-01 deep review: Complete indexed public credential page read after direct/open failure: active 41-01,40 questions,60+5 minutes,70 percent,295/345 USD delivery metadata and recommended JSE/no formal prerequisite. Python credential label and generic holder prose are copy errors, not scope changes. No explicit validity claim found/adopted; no booking/account/checkout inspected. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"js-institute-javascript-essentials-2","title":"JavaScript Essentials 2","url":"https://jsinstitute.org/javascript-essentials-2","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Free official self-study course aligned to the associate JavaScript scope; the provider lists about 50 hours."
+      "id": "js-institute-javascript-essentials-2",
+      "title": "JavaScript Essentials 2",
+      "url": "https://jsinstitute.org/javascript-essentials-2",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Free official self-study course aligned to the associate JavaScript scope; the provider lists about 50 hours. September 29 JSA-41-01 deep review: Complete indexed public course landing read after direct failure: free intermediate 50 hours,4 modules, picks up after JE1. Public module bullets are shorter than 40 objective syllabus, including incomplete advanced async listing; no full lesson-by-lesson alignment or course completion claimed. No enrollment or assessment interiors. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-javascript-essentials-2","title":"JavaScript Essentials 2","url":"https://www.netacad.com/courses/javascript-essentials-2","publisher":"Cisco Networking Academy / OpenEDG JS Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Official partner delivery of JavaScript Essentials 2. Verify the current enrollment and runtime shown after login."
+      "id": "cisco-javascript-essentials-2",
+      "title": "JavaScript Essentials 2",
+      "url": "https://www.netacad.com/courses/javascript-essentials-2",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Official partner delivery of JavaScript Essentials 2. Verify the current enrollment and runtime shown after login. September 29 JSA-41-01 deep review: HTTP200 but only 23-character application shell. Partner access, actual curriculum/runtime/account flow unreviewed. Fifty hours in this row is explicitly an author planning estimate. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-javascript-guide","title":"JavaScript Guide","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current broad tutorial/reference for objects, classes, collections, functions and promises; select only syllabus-relevant chapters."
+      "id": "mdn-javascript-guide",
+      "title": "JavaScript Guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current broad tutorial/reference for objects, classes, collections, functions and promises; select only syllabus-relevant chapters. September 29 JSA-41-01 deep review: Complete 3410-character public guide index read; navigation/reference context only, not every linked chapter. Selected exact pages below supply semantics; no newly added language feature inferred as an exam objective. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-working-with-objects","title":"Working with Objects","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current object-property, method, getter/setter, comparison and prototype reference used to check technical explanations."
+      "id": "mdn-working-with-objects",
+      "title": "Working with Objects",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current object-property, method, getter/setter, comparison and prototype reference used to check technical explanations. September 29 JSA-41-01 deep review: Complete 19998-character article body read in parts. Original property/identity/receiver examples retained and tested; no vendor examples copied. Overbroad inherited-object shorthand qualified with Object.create(null). See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-js-classes-guide","title":"Using Classes","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current class syntax, fields, private elements, inheritance and evaluation reference; some modern context exceeds the published scope."
+      "id": "mdn-js-classes-guide",
+      "title": "Using Classes",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current class syntax, fields, private elements, inheritance and evaluation reference; some modern context exceeds the published scope. September 29 JSA-41-01 deep review: Selected declaring/constructing/class-hoisting/class-expression, constructor, instance-methods/accessors/public-fields/statics and extends/inheritance sections read. Not full 28086-character article or private-field chapter. Original tests cover TDZ, new, per-instance fields, prototype placement, super/static factory; private fields remain adjacent context. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-js-global-objects","title":"JavaScript Standard Built-in Objects","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current reference for the Number, String, Date, Array, Set, Map, JSON, Math, RegExp and Promise APIs named in the syllabus."
+      "id": "mdn-js-global-objects",
+      "title": "JavaScript Standard Built-in Objects",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current reference for the Number, String, Date, Array, Set, Map, JSON, Math, RegExp and Promise APIs named in the syllabus. September 29 JSA-41-01 deep review: Complete 3540-character index read for API navigation; not an audit of all linked built-ins. Global-object summary does not establish that module/lexical declarations become globalThis properties; guide makes no such claim. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-using-promises","title":"Using Promises","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current promise construction, chaining, error handling, composition and timing reference."
+      "id": "mdn-using-promises",
+      "title": "Using Promises",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current promise construction, chaining, error handling, composition and timing reference. September 29 JSA-41-01 deep review: Selected chaining, error handling, nesting, chain-after-catch, rejection events, composition, cancellation, callback adaptation, guarantees, task/microtask and collision sections read. Not every linked page. Overbroad asynchronous-error/concurrency shorthand qualified; original adapters explicitly reject callback errors and aggregates do not cancel underlying work. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-async-function","title":"async function","url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current async-function and await behavior reference used to check control-flow claims."
+      "id": "mdn-async-function",
+      "title": "async function",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current async-function and await behavior reference used to check control-flow claims. September 29 JSA-41-01 deep review: Complete 12075-character body read. Original traces verify synchronous prefix, continuation, promise outcome versus identity and aggregate handling. No vendor timer examples executed/copied or inference that async moves CPU work to another thread. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mdn-fetch-api","title":"Using the Fetch API","url":"https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch","publisher":"MDN Web Docs","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Current Fetch request, response, status, body, credential and cancellation behavior reference."
+      "id": "mdn-fetch-api",
+      "title": "Using the Fetch API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+      "publisher": "Mozilla",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Current Fetch request, response, status, body, credential and cancellation behavior reference. September 29 JSA-41-01 deep review: Selected making-request, cancellation, status/type/header/body checks, locked/disturbed streams and cross-origin request sections read. Not complete 22140-character page. Actual Fetch used synthetic same-origin responses; no external transport, CORS deployment, credentials, streaming parser or service worker audit. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"javascript-info","title":"The Modern JavaScript Tutorial","url":"https://javascript.info/","publisher":"javascript.info","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Free broad tutorial with exercises. Select Objects and Advanced Functions topics rather than consuming the entire browser-development curriculum."
+      "id": "javascript-info",
+      "title": "The Modern JavaScript Tutorial",
+      "url": "https://javascript.info/",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Free broad tutorial with exercises. Select Objects and Advanced Functions topics rather than consuming the entire browser-development curriculum. September 29 JSA-41-01 deep review: Public 5804-character contents captured; opening navigation through promises and final network/regex/footer portions read. Middle contents and linked lessons not fully audited. Community navigation resource only; primary MDN supplies technical semantics, selected-hour range is author estimate. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-modern-javascript-beginning","title":"Modern JavaScript From The Beginning 2.0","url":"https://www.udemy.com/course/modern-javascript-from-the-beginning/","publisher":"Udemy / Brad Traversy","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Broad approximately 40-hour marketplace project course. Select object-oriented and asynchronous sections after reconciling them with the official syllabus."
+      "id": "udemy-modern-javascript-beginning",
+      "title": "Modern JavaScript From The Beginning 2.0",
+      "url": "https://www.udemy.com/course/modern-javascript-from-the-beginning/",
+      "publisher": "OpenEDG JS Institute",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "JSA-41-01"
+      ],
+      "notes": "Broad approximately 40-hour marketplace project course. Select object-oriented and asynchronous sections after reconciling them with the official syllabus. September 29 JSA-41-01 deep review: Direct HTTP403. Paid lessons, current curriculum/runtime and question provenance not inspected. Prior unverified 40-hour claim replaced by author-selected 15–25 hour budget. See docs/research/2026-09-29-jsa-41-01-deep-review.md No live infrastructure execution."
     },
     {
       "id":"wde-40-01-syllabus","title":"WDE-40-01 Exam Syllabus","url":"https://jsinstitute.org/wde-exam-syllabus","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["WDE-40-01"],"notes":"Canonical active five-block syllabus with 40 named objectives, 15/20/20/25/20 weighting, passing requirement, candidate profile and September 18, 2025 baseline."

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [JSA-41-01 deep review](docs/research/2026-09-29-jsa-41-01-deep-review.md): Mapped 40 objectives and improved 40 answers. Seven exact public blocks verified: 143 core and 84 scenario checks in Node/Chrome plus 36 browser API/UI checks. Descriptor, sparse-array, validation and promise contracts corrected; channel/access limits and eight proposed broader activities remain explicit.
+
 - September 29, 2026: [PCAP-31-03 deep review](docs/research/2026-09-29-pcap-31-03-deep-review.md): Mapped 21 Python objectives, improved 27 answers and completed three runnable scenarios. Twelve public blocks passed 78 core and 98 additional checks on CPython 3.13.14. Provider duration and import/sampling/exception/string/I-O contracts corrected; policy/access conflicts and human review remain explicit.
 
 - September 29, 2026: [CLE-10-01 deep review](docs/research/2026-09-29-cle-10-01-deep-review.md): Mapped all 36 C objectives, improved 30 answers and completed three worked programs. Eight public blocks executed remotely; 72 core and 118 scenario checks passed on both compilers plus nine sum boundaries. Resource/access and reference-quality limits documented; human review pending.

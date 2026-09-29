@@ -3552,6 +3552,27 @@ OpenEDG’s course listing also covers PIP, generators and additional libraries;
 
 No exact current PCAP-31-03 course or practice exam from MeasureUp or Whizlabs was independently verified. Marketplace courses can lag an exam transition; verify their exact code, syllabus coverage, runtime, and update date before purchase.
 
+### JSA-41-01 — JSA Certified Associate JavaScript Programmer
+
+Resource details from the [JSA-41-01 guide](../guides/JSA-41-01-certified-associate-javascript-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused documentation and a second explanation only where useful, and spend at least as much time writing and debugging code as watching. Commercial resources are supplementary; reconcile them with the current official syllabus.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official JSA-41-01 syllabus](https://jsinstitute.org/jsa-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
+| [Official JSA certification page and policies](https://jsinstitute.org/jsa-certification) | Free exam/version/delivery reference | 30–60 minutes before purchase |
+| [OpenEDG JavaScript Essentials 2](https://jsinstitute.org/javascript-essentials-2) | Free official intermediate course; public listing states JSA alignment and four modules; lesson interiors unreviewed | 50 provider-listed hours; public module summaries are not a complete objective crosswalk |
+| [Cisco Networking Academy JavaScript Essentials 2](https://www.netacad.com/courses/javascript-essentials-2) | Partner listing returned a small application shell; account/lesson access unreviewed | About 50 hours is an author planning budget here; verify live listing |
+| [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) | Free current reference/tutorial; broader than JSA in places | 20–30 hours for relevant objects, classes, collections, functions, and promises |
+| [javascript.info](https://javascript.info/) | Free community tutorial; broad browser coverage | Select Objects and Advanced Functions, 20–30 hours with exercises |
+| [O'Reilly JavaScript: The Definitive Guide, 7th Edition](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/) | Subscription; direct request HTTP403; historical edition/title retained, fresh page count/runtime and paid interior unverified | 12–18 hours for chapters matching JSA; verify modern API changes in MDN |
+| [Udemy Modern JavaScript From The Beginning 2.0](https://www.udemy.com/course/modern-javascript-from-the-beginning/) | Paid marketplace course; HTTP403, current curriculum/runtime and paid interior unverified | Author budget: 15–25 selected hours; verify current OOP/async coverage |
+
+All selected-hour ranges are author planning estimates unless explicitly labeled provider totals. JavaScript Essentials 2 publicly lists 50 hours and four modules, but the visible module bullets are shorter than the 40-objective syllabus; no claim of reading all course lessons or assessments is made. Cisco shell, O’Reilly/Udemy blocks and unreviewed tutorial chapters remain access limits.
+
+No exact current MeasureUp or Whizlabs JSA-41-01 product was verified. Reject any practice source that cannot identify the active version and explain its question provenance; use practice for diagnosis, not memorization.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

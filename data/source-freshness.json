@@ -4,6 +4,215 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-jsa4101-deep-review",
+      "title": "JSA-41-01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "JSA-41-01"
+      ],
+      "results": [
+        {
+          "exam_code": "JSA-41-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSA-41-01-certified-associate-javascript-programmer.md",
+          "baseline_sha256": "d08b8436a87916349f2fc780d367f92955ea7686de5dd5718a0674fa4e5141f0",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete indexed current English syllabus manually compared with retained snapshot: active 41-01,40 objectives in11/7/12/10 groups. Automated fetch/hash comparison failed; older PDF only partially available. No equal-score shortcut or current booking availability inferred."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Section-specific primary MDN reading supports original language and browser API changes. All seven public blocks verified; 143 core + 84 scenario checks in each of existing Node/Chrome plus36 browser network/UI checks. Intercepted responses are synthetic, not live external transport."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current public credential, syllabus and certification overview indexed content read. No JSA replacement on these inspected pages; no unseen news feed, booking availability or exam-requiredNode/Chrome patch version inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official JE2 public 50-hour/four-module listing read; visible summary is not a complete40-objective lesson audit. MDN navigation and selected javascript.info contents read. Cisco shell and OReilly/Udemy403 limit fresh duration/interior verification; author budgets labeled."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Direct official requests/monitor failed; manual indexed evidence retained. TestNow 7/Pearson 15day retakes are channel-specific; free-retake eligibility versus295/345product prices requires actual voucher verification. Credential Python copy label ignored; paid interiors, booking and human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "jsa4101-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Forty objectives require concrete code evidence",
+              "url": "https://jsinstitute.org/jsa-exam-syllabus",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The four groups cover object mechanics, built-ins and asynchronous HTTP; prior scenarios were short sketches.",
+              "recommendation": "Add seven verified public blocks,143 core + 84 scenario checks in both runtimes and36 browser API/UI checks; improve all 40 answers and retain eight broader activities as proposed.",
+              "disposition": "applied",
+              "source_id": "jsa-41-01-syllabus",
+              "resolution": "Add seven verified public blocks,143 core + 84 scenario checks in both runtimes and36 browser API/UI checks; improve all 40 answers and retain eight broader activities as proposed."
+            },
+            {
+              "id": "jsa4101-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Descriptor defaults depend on whether the property exists",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New omitted flags default false; omitted attributes of an existing property retain their values. One source example obscures this distinction.",
+              "recommendation": "Correct teaching/answer 6, test new versus existing flags, conflicting descriptor kinds, non-configurable writes and final writable lock.",
+              "disposition": "applied",
+              "source_id": "mdn-define-property",
+              "resolution": "Correct teaching/answer 6, test new versus existing flags, conflicting descriptor kinds, non-configurable writes and final writable lock."
+            },
+            {
+              "id": "jsa4101-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Shallow copying also invokes behavior and can partially mutate",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Source getters, target assignment setters and preceding writes remain observable when a later assign write fails.",
+              "recommendation": "Explain values versus descriptors, spread differences, nested aliases and null-prototype dictionaries; execute original boundary probes.",
+              "disposition": "applied",
+              "source_id": "mdn-object-assign",
+              "resolution": "Explain values versus descriptors, spread differences, nested aliases and null-prototype dictionaries; execute original boundary probes."
+            },
+            {
+              "id": "jsa4101-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sparse slots differ from explicit undefined values",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Map and several predicates skip holes, find visits them and spread materializes undefined; callback index affects parseInt.",
+              "recommendation": "Teach method-specific contracts and execute sparse/empty arrays, sort/reduce and explicit conversion callbacks.",
+              "disposition": "applied",
+              "source_id": "mdn-js-array",
+              "resolution": "Teach method-specific contracts and execute sparse/empty arrays, sort/reduce and explicit conversion callbacks."
+            },
+            {
+              "id": "jsa4101-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Successful parsing does not establish an application-valid record",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Blank numeric text coerces to zero, dates can normalize and JSON accepts primitives/loses unsupported values.",
+              "recommendation": "Build strict decimal/date/row validation with bounded totals, first-valid duplicate policy and diagnostics; test original fixtures and exact public code.",
+              "disposition": "applied",
+              "source_id": "mdn-js-date",
+              "resolution": "Build strict decimal/date/row validation with bounded totals, first-valid duplicate policy and diagnostics; test original fixtures and exact public code."
+            },
+            {
+              "id": "jsa4101-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Empty promise combinators and cancellation are distinct",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "All([]) fulfills, any([]) rejects and race([]) stays pending; settling an aggregate does not cancel its other operations.",
+              "recommendation": "Add empty/failure/order/finally/async traces and actual AbortController/XHR timeout tests with synthetic browser responses.",
+              "disposition": "applied",
+              "source_id": "mdn-promise-race",
+              "resolution": "Add empty/failure/order/finally/async traces and actual AbortController/XHR timeout tests with synthetic browser responses."
+            },
+            {
+              "id": "jsa4101-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "HTTP success, body parsing andschema validity require separate checks",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fetch resolves on HTTP errors; XHR load is not an HTTP success guarantee; body use/cancellation/errors differ.",
+              "recommendation": "Add complete Fetch/XHR clients andsafe-text retry UI; test 36 browser cases including status, syntax, shape, timeout, abort andloading/recovery.",
+              "disposition": "applied",
+              "source_id": "mdn-fetch-api",
+              "resolution": "Add complete Fetch/XHR clients andsafe-text retry UI; test 36 browser cases including status, syntax, shape, timeout, abort andloading/recovery."
+            },
+            {
+              "id": "jsa4101-deep-8",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Source access andpurchase details remain incomplete",
+              "url": "https://jsinstitute.org/jsa-certification",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Direct official fetches fail; channel retake terms differ and free-retake eligibility cannot be inferred from product pricing. Paid interiors and human review unperformed.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 40 numbered objectives and improved all 40 answer explanations. Seven exact public JavaScript blocks verified: 143 core and 84 catalog/normalization checks in both Node 24.18.1 and Chrome 154.0.8037.58, plus 36 real browser API/UI checks with intercepted synthetic responses and three introductory examples. Corrected descriptors, copying, sparse arrays, Unicode/date/JSON/regex boundaries and promise/cancellation contracts. Channel policy and inaccessible/paid content limits remain explicit; eight broader activities proposed. Same-context AI review; human review pending. See docs/research/2026-09-29-jsa-41-01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-pcap3103-deep-review",
       "title": "PCAP-31-03 complete guide and learning-content review",
       "rubric_version": 1,
