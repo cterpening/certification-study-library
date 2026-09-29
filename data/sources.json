@@ -3,6 +3,188 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mongodb-atlas-course-exam",
+      "title": "Atlas Administrator course exam contract",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Direct50-character shell; complete83linebrowsermain read.70multiplechoice95minUSD150Englishno prerequisiteonlineproctored; historicalavailableMay2,2024label notnewversionannouncement. Agreesmain,notpath120mincard. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-private-endpoints",
+      "title": "Atlas private endpoint concepts and restrictions",
+      "url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/?cloud-provider=aws",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete8929-character direct main read. M10+/FreeFlexlimits,publicpathcoexistence,regionalizedconnectionchanges/possible downtime,multicloudregionalconstraints. Newnon-port-mappedGCPendpointsApril30,2027disablewatch. AWSconditionalportbodynotrenderedindirectcapture; indexedAWSexcerpton1024–65535seen butnoportrecipeadopted. Noactualnetworkchanges. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-network-guidance",
+      "title": "Atlas architecture network security guidance",
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete20801-character main read includingexampleblocks. SeparateAPI/data-planeIP lists;introductionmislabelsIPfilteringasauthentication;TerraformAPI-keyaccessresourceunderprojectwording notdatabaseallowlistproof. Providerpeering/privateDNSconceptsread,not allcurrentlimitsindependentlyverified. No vendorcode copied/run orpermissiongrant. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-alert-basics",
+      "title": "Atlas alert basics and version-specific overload metrics",
+      "url": "https://www.mongodb.com/docs/atlas/alert-basics/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete7135-character main read. Version7.0+dynamic tickets ->queuedreaders/writers foroverload;latergenericticketthresholdmustnotoverrideversioncaveat. Examplethresholdsnotworkloadlimits. Noalertengine/notificationrun. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-backup-compliance",
+      "title": "Atlas backup compliance policy",
+      "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/backup-compliance-policy/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete15336-character main read in2chunks. Support/namedrepresentativeverification fordisable,empty-projectexception,retention/deletion/minimums/cost/terminatedcluster consequences. Extra-retentionafterprotectedperiodallowsauthorizeddeletion. No policyenabled orlegalcomplianceguarantee. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-restore-overview",
+      "title": "Atlas restore compatibility and status",
+      "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete4246-character main read. Coreonly,stopclientrequests,version/topologyconstraints,backup-specificviewroles. ErroneousCLIsectionplacesaccessListscreateunderrestoredetails andmislabelsdescribeaslist;notcopied/run. DedicatedCLIreferencesusedforsyntax;rolecontradictionleftunresolved. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-backup-guidance",
+      "title": "Atlas architecture backup guidance",
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete16768-character main read inclCLI/Terraformexamples. Snapshot/oplog/PIT/recoverywarmingconcepts,policy/cost/distribution. Broadinstantaccess/minuteRPOguarantees andblanketdevtestno-backup recommendationqualified; noservicebenchmark. Provider2.xexamplesnotvalidated/copied/run; normalizedcapturecanomitduplicatebraces,notproofupstreamsyntaxerror. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-kms",
+      "title": "Atlas customer key management",
+      "url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete17697-character main read. Networkunreachabilitydiffersfrominvalidcredentials/disabledkeys,nextvalidationbehavior,perclusterconfiguration,searchrebuild,InfiniteAWSonly/crossprojectrestorelimits. No KMSoutage/restart/keychange/test; no widenednetwork workaround adopted. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-api-auth",
+      "title": "Atlas administration API authentication",
+      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Direct32800-character largelyAPI navigation; selectedterminalauthenticationsectionread. Complete indexedprimaryintroread separately:OAuth2clientcredentials recommended,legacyDigest,1hourtoken,tokenissuanceIPversusAPIcallallowlist distinction,Sep22,2026docupdate. Not allAPIendpointinteriors. No tokens/credentials/networkAPIrequest. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-cli-dbusers-list",
+      "title": "Atlas CLI database-user inventory command",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-dbusers-list/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete2006-character main read. Explicitproject/profile,ProjectReadOnly,listpagination100default500max,resultsversuscompactarray. No actualCLI/binaryparse/liveinventory. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-cli-restores-list",
+      "title": "Atlas CLI list restore jobs",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete1977-character main read. Dedicatedpluralcommandheading/syntax,listclusterarg/pagination;older singularsample differs. ProjectOwnerstatedhereversusbackuprolesoverview unresolved; no automaticgrant orCLIrun. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-cli-restores-describe",
+      "title": "Atlas CLI describe restore job",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-describe/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete1485-character main read. Dedicatedpluralcommandheading/syntax,jobIDandrequiredclusterName;older singularsample. Rolemismatchwithoverviewrecorded; syntaxtemplatesunexecuted. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mongodb-atlas-cli-release-notes",
+      "title": "Atlas CLI release notes",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-changelog/",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Initialguessedrelease-notesroute404retainedprivateearlierreceipt,correctedusingCLIhomeReadReleaseNoteslinktoatlas-cli-changelog. Fresh39751-character capture; selectedfirst95linesread current1.58.3September10,2026 through1.53.2March26,2026. Oldbrowserstable-routecachelooked9monthsold;currentdirectcaptureandhomeselectorcorroborateversion. Notcompletehistory; no install/upgrade. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mongodb-data-modeling-certification-path",
       "title": "Data Modeling certification path linked by current exam page",
       "url": "https://learn.mongodb.com/learning-paths/mongodb-data-modeling-certification-learning-path",
@@ -208,10 +390,11 @@
       "access_model": "public",
       "supported_exams": [
         "MONGODB-ASSOCIATE-DEVELOPER",
-        "MONGODB-ASSOCIATE-DATA-MODELER"
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete3806-character main/browser read. Single-document filter recheck,expected-current-value/overwrite risk,$inc andmulti-documentnon-atomicity. No actual server/concurrent workload or sample commands run. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh3806-character capture; complete main reading reused from immediately preceding same-session Developer review. Single-document filter recheck/expected-value and multi-document non-atomicity. No actual concurrency/server. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete3806-character main/browser read. Single-document filter recheck,expected-current-value/overwrite risk,$inc andmulti-documentnon-atomicity. No actual server/concurrent workload or sample commands run. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh3806-character capture; complete main reading reused from immediately preceding same-session Developer review. Single-document filter recheck/expected-value and multi-document non-atomicity. No actual concurrency/server. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Fresh3806-character capture; complete mainreading reused from precedingDeveloper review. Single-documentguard/expectedvalue andmulti-documentnon-atomicity. No MongoDBconcurrencyexecution. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-elemmatch-query",
@@ -252,10 +435,11 @@
       "access_model": "public",
       "supported_exams": [
         "MONGODB-ASSOCIATE-DEVELOPER",
-        "MONGODB-ASSOCIATE-DATA-MODELER"
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete8172-character main read in browser plusdirecttail. Equalityfirst,ESR/ERS tradeoff,sortprefix andversion-sensitive201-element$in threshold. No measuredplan/performance claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh8172-character capture; complete main reading reused from preceding Developer review. ESR/ERSselectivity/sortprefix,version-sensitive$in threshold. No measured optimality. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Complete8172-character main read in browser plusdirecttail. Equalityfirst,ESR/ERS tradeoff,sortprefix andversion-sensitive201-element$in threshold. No measuredplan/performance claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh8172-character capture; complete main reading reused from preceding Developer review. ESR/ERSselectivity/sortprefix,version-sensitive$in threshold. No measured optimality. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Fresh8172-character capture; complete mainreading reused from precedingDeveloper/DataModeler sequence. ESR/ERSselectivity/sortprefix/version-sensitive$inthreshold. No actualindex orbenchmark. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-index-multikey",
@@ -352,10 +536,11 @@
       "access_model": "public",
       "supported_exams": [
         "MONGODB-ASSOCIATE-DEVELOPER",
-        "MONGODB-ASSOCIATE-DATA-MODELER"
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected openingpatchheadings andGeneralChanges through earlymetrics read,notfull19617-characterreleasebody.9.0.0/9.0.1/9.0.2 labeledUpcoming althoughmanualselectorcurrent; treatavailabilityasunresolveddeployment-specificwatch. No serverfeature installation or examversionchange inferred. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh19617-character capture; selected openingpatchheadings/GeneralChanges through earlymetrics reading reused from preceding Developer review.9.0.0/9.0.1/9.0.2Upcoming versus manual current/preview context. Not complete history, GA/examversion inference or installation. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+      "notes": "September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: Selected openingpatchheadings andGeneralChanges through earlymetrics read,notfull19617-characterreleasebody.9.0.0/9.0.1/9.0.2 labeledUpcoming althoughmanualselectorcurrent; treatavailabilityasunresolveddeployment-specificwatch. No serverfeature installation or examversionchange inferred. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Fresh19617-character capture; selected openingpatchheadings/GeneralChanges through earlymetrics reading reused from preceding Developer review.9.0.0/9.0.1/9.0.2Upcoming versus manual current/preview context. Not complete history, GA/examversion inference or installation. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Fresh19617-character capture; selectedopeningpatchheadings/GeneralChanges throughearlymetrics reused from precedingDeveloper review. Upcoming9.0.0/9.0.1/9.0.2versusmanualcurrent/preview; noavailability/examversioninference. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-null-missing",
@@ -50841,7 +51026,7 @@
         "MONGODB-ASSOCIATE-DEVELOPER",
         "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
       ],
-      "notes": "September 2025, 374-page/8h51m listed guide written by MongoDB subject-matter experts, with Atlas sizing, scaling, security, networking, resilience and tooling depth beyond the associate scope. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier8h51/374pages/September2025 not reverified; no paid interior or quality claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      "notes": "September 2025, 374-page/8h51m listed guide written by MongoDB subject-matter experts, with Atlas sizing, scaling, security, networking, resilience and tooling depth beyond the associate scope. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier8h51/374pages/September2025 not reverified; no paid interior or quality claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: HTTP403. Earlier8h51/2025 metadata not reverified; no paid interior or quality/currentalignment claim. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pluralsight-query-modify-data-mongodb",
@@ -50941,7 +51126,7 @@
         "MONGODB-ASSOCIATE-DATA-MODELER",
         "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
       ],
-      "notes": "August 18, 2026 announcement aligning Data Modeler, Database Administrator and Atlas Administrator learning paths with skill badges and a completion discount; it does not announce replacement exams. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete7049-character main read including date/authors. August18,2026 HeatherDavis/JoelLord announcement lists4minute reading, skillbadge/path alignment and50% full-path completion discount. Marketing claims are not course-quality or exam-replacement evidence. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+      "notes": "August 18, 2026 announcement aligning Data Modeler, Database Administrator and Atlas Administrator learning paths with skill badges and a completion discount; it does not announce replacement exams. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete7049-character main read including date/authors. August18,2026 HeatherDavis/JoelLord announcement lists4minute reading, skillbadge/path alignment and50% full-path completion discount. Marketing claims are not course-quality or exam-replacement evidence. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Fresh7049-character capture; complete main/date/authors reading reused from immediately preceding DataModeler review. August18,2026 HeatherDavis/JoelLord,4minpublisherreading,path/badgealignment andadvertised50%fullpathdiscount. No examreplacement/eligibility claim. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mongodb-designing-schema",
@@ -50981,9 +51166,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "MONGODB-ASSOCIATE-DATA-MODELER"
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
       ],
-      "notes": "Current execution-plan field and stage reference for validating index and model decisions; output varies by version and query engine. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Selected first110 direct lines and lines441–468,639–663 read from33197-character body. Plan-cache isolation, classic/SBE/stage overview and nReturned/executionTimeMillis/keys/docs counters plus covering conditions. Not full reference or actual plan/benchmark. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+      "notes": "Current execution-plan field and stage reference for validating index and model decisions; output varies by version and query engine. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Selected first110 direct lines and lines441–468,639–663 read from33197-character body. Plan-cache isolation, classic/SBE/stage overview and nReturned/executionTimeMillis/keys/docs counters plus covering conditions. Not full reference or actual plan/benchmark. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Fresh33197-character capture; selectedplan-cache/engine/counter/coveringreading reused from precedingDataModeler review. Notfullreference,realplan orperformanceproof. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id": "oreilly-high-performance-mongodb",
@@ -51028,37 +51214,158 @@
       "notes": "Approximately ten-minute official visual overview of access patterns, relationships and schema choices; concise orientation rather than complete exam coverage. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: 199-character title/footer only. Earlierabout10minute duration not reverified; video not played or transcript audited. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-atlas-administrator-exam","title":"MongoDB Atlas Administrator Exam","url":"https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam","publisher":"MongoDB University","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Current public 70-question, 95-minute, USD150, English, online-proctored contract."
+      "id": "mongodb-associate-atlas-administrator-exam",
+      "title": "MongoDB Atlas Administrator Exam",
+      "url": "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Current public 70-question, 95-minute, USD150, English, online-proctored contract. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Direct50-character shell. Firstbrowserattempttimeout then complete publicbrowsermain read:70questions95minonlineproctoredEnglishno prerequisiteUSD150; no passing score/policyinterior orbooking. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-atlas-administrator-study-guide","title":"MongoDB Associate Atlas Administrator Exam Study Guide","url":"https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide","publisher":"MongoDB University","authority_class":1,"source_type":"exam-blueprint","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Canonical 30-minute detailed objective guide; free enrollment/email capture is required and public pages do not expose objective weights."
+      "id": "mongodb-associate-atlas-administrator-study-guide",
+      "title": "MongoDB Associate Atlas Administrator Exam Study Guide",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Canonical 30-minute detailed objective guide; free enrollment/email capture is required and public pages do not expose objective weights. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Direct50-character shell; full browserlanding30min/free/enrollment. PublicGetGuide viewer500/publishedasset403 retainedseparately. No content/account/enrollment oraccesscontrolalteration.13publicscope summaries remain not detailed examobjectives. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-atlas-administrator-path","title":"MongoDB Atlas Administrator Path","url":"https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path","publisher":"MongoDB University","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Current free 13-hour path with 13 required skills; it supersedes the 11.5-hour v1 path flagged for replacement May 29, 2026. Its embedded two-hour exam card lags the live 95-minute landing page."
+      "id": "mongodb-atlas-administrator-path",
+      "title": "MongoDB Atlas Administrator Path",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Current free 13-hour path with 13 required skills; it supersedes the 11.5-hour v1 path flagged for replacement May 29, 2026. Its embedded two-hour exam card lags the live 95-minute landing page. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Direct50-character shell; complete295linebrowsermain/grid read.13requiredcards845min versus13hheadline;separate120minexamcard.50%fullpathdiscount advertisednoteligibilityverification; no interiors. Historicalv1May29replacementnotrechecked. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-associate-atlas-administrator-practice","title":"Atlas Administrator Practice Questions","url":"https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions","publisher":"MongoDB University","authority_class":1,"source_type":"official-practice","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Official six-hour practice resource. Use explanations and objective gaps rather than memorizing items."
+      "id": "mongodb-associate-atlas-administrator-practice",
+      "title": "Atlas Administrator Practice Questions",
+      "url": "https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions",
+      "publisher": "MongoDB University",
+      "authority_class": 1,
+      "source_type": "official-practice",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Official six-hour practice resource. Use explanations and objective gaps rather than memorizing items. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Direct50-character shell; complete shortbrowserlanding read.6hours/free/enrollment; no question/explanation interiors. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-atlas-documentation","title":"MongoDB Atlas Documentation","url":"https://www.mongodb.com/docs/atlas/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Canonical current Atlas deployment, identity, networking, monitoring, backup, scaling, automation, billing and limit documentation."
+      "id": "mongodb-atlas-documentation",
+      "title": "MongoDB Atlas Documentation",
+      "url": "https://www.mongodb.com/docs/atlas/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Canonical current Atlas deployment, identity, networking, monitoring, backup, scaling, automation, billing and limit documentation. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete7223-character main read. Corecoupledcompute/storage versusInfinitepublicpreview,edition-specific feature/region/restorelimits. No universalzero-downtime/resilience/optimality guarantee orpreviewdeployment. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-atlas-security-features","title":"Configure Security Features for Clusters","url":"https://www.mongodb.com/docs/atlas/setup-cluster-security/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Official layered Atlas identity, database access, network, encryption, shared-responsibility and audit-control entry point; feature eligibility varies."
+      "id": "mongodb-atlas-security-features",
+      "title": "Configure Security Features for Clusters",
+      "url": "https://www.mongodb.com/docs/atlas/setup-cluster-security/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Official layered Atlas identity, database access, network, encryption, shared-responsibility and audit-control entry point; feature eligibility varies. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete14393-character main read includingcontrolplaneinbound/outbound/gateway/TLS/OCSPnotes. Sharedresponsibility,databaseuser/networkdistinction andtransport/storageencryption. No credentials,perms,OCSPdisable orruntimechange. Broad feature availability not generalized across editions. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-atlas-monitoring-alerts","title":"Monitor and Improve Performance","url":"https://www.mongodb.com/docs/atlas/monitoring-alerts/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Official metrics, logs, alert, query insight and performance-tool documentation entry point."
+      "id": "mongodb-atlas-monitoring-alerts",
+      "title": "Monitor and Improve Performance",
+      "url": "https://www.mongodb.com/docs/atlas/monitoring-alerts/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Official metrics, logs, alert, query insight and performance-tool documentation entry point. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete2938-character overview main read. Querytools,metrics,alerts/logexport/currentvslegacyintegrationlinks. Linkedinteriors not all audited; no metricscollection ornotification. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-atlas-cloud-backup","title":"Atlas Cloud Backup","url":"https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Official current backup eligibility, snapshot, continuous/point-in-time, retention, restore and constraint documentation."
+      "id": "mongodb-atlas-cloud-backup",
+      "title": "Atlas Cloud Backup",
+      "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Official current backup eligibility, snapshot, continuous/point-in-time, retention, restore and constraint documentation. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete3376-character main read. Freeunavailable/Flexandhigheroverview,providerregionredundancy,requiredroles,shardedtopologyrestorelimits. No blanketPITeligibility orregionfailureguarantee inferred. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"mongodb-atlas-cli-documentation","title":"Atlas CLI Documentation","url":"https://www.mongodb.com/docs/atlas/cli/current/","publisher":"MongoDB","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Canonical Atlas CLI setup, authentication, organization/project scoping, commands, configuration and automation reference."
+      "id": "mongodb-atlas-cli-documentation",
+      "title": "Atlas CLI Documentation",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/",
+      "publisher": "MongoDB",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Canonical Atlas CLI setup, authentication, organization/project scoping, commands, configuration and automation reference. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete1604-character main plus currentbrowserpage read. atlas setup createsaccount/auth/database/user/IPentry/sampledata/shellconnection,notinventory. Browserselectorcurrent1.58.3. No install/setup/auth/localdeployment commands executed. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-mongodb-8-in-action-third","title":"MongoDB 8.0 in Action, Third Edition","url":"https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/","publisher":"O'Reilly / Manning","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"July 2025, 576-page/16h46m listed hands-on book covering Atlas CLI, replication/sharding, backup, security and query performance; select relevant chapters."
+      "id": "oreilly-mongodb-8-in-action-third",
+      "title": "MongoDB 8.0 in Action, Third Edition",
+      "url": "https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/",
+      "publisher": "O'Reilly / Manning",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "July 2025, 576-page/16h46m listed hands-on book covering Atlas CLI, replication/sharding, backup, security and query performance; select relevant chapters. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: HTTP403. Earlier16h46metadata not reverified; no paidcontents/currentalignment claim. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-complete-mongodb-administration-guide","title":"Complete MongoDB Administration Guide","url":"https://www.udemy.com/course/mongodb-essentials-m/","publisher":"Udemy","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],"notes":"Broad task-oriented MongoDB administration course with Atlas deployment content; listing duration is approximately 11 hours and should be verified. Reconcile feature eligibility and UI with official Atlas docs."
+      "id": "udemy-complete-mongodb-administration-guide",
+      "title": "Complete MongoDB Administration Guide",
+      "url": "https://www.udemy.com/course/mongodb-essentials-m/",
+      "publisher": "Udemy",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "Broad task-oriented MongoDB administration course with Atlas deployment content; listing duration is approximately 11 hours and should be verified. Reconcile feature eligibility and UI with official Atlas docs. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: HTTP403. Earlierabout11hourmetadata not reverified; no lessons/quality claim. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id":"servicenow-csa-mainline-blueprint","title":"Certified System Administrator Mainline Exam Blueprint","url":"https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554","publisher":"ServiceNow","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SERVICENOW-CSA"],"notes":"Canonical January 2026 six-domain weighted scope, detailed subtopics, 60-question/90-minute contract, Pearson delivery, candidate experience, registration, conditional scoring, undisclosed cut score and maintenance statements. Complete indexed text was recoverable September 7 even though simple clients may still see a loading shell."
@@ -56933,9 +57240,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],
-      "notes": "AWS-specific multi-AZ, PrivateLink, least-privilege, secrets, and Terraform reference pattern; a lab design, not MongoDB exam scope or a multi-cloud default."
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "notes": "AWS-specific multi-AZ, PrivateLink, least-privilege, secrets, and Terraform reference pattern; a lab design, not MongoDB exam scope or a multi-cloud default. September 29 MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR deep review: Complete14779-character main read in2chunks. AuthorsIgorAlekseevAWS/AnujPanchalMongoDB. Architecture/epics include broadAdministratorAccessstaticAWSkey despiteleastprivilegelanguage; no-interruption/PrivateLinkencryption claims qualified, useAtlasTLS requirement. No linkedrepo/code cloned,Terraform/deploy/destroy orcredentials. No publicationdate asserted. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id": "salesforce-well-architected-secure",

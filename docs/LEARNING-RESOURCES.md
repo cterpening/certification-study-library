@@ -3145,6 +3145,30 @@ This is not a complete list or a prescription to consume everything. Public outl
 
 The required path cards list CRUD 90, relational-to-document 75, patterns 60, advanced patterns 60, optimization 60, transformation 50, indexing 60 and performance 60 minutes: 515 total. The separate exam card lists 105 minutes, reproducing the course-route discrepancy with the main exam page's 110. These are visible catalog measures, not observed completion times.
 
+### MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR — MongoDB Associate Atlas Administrator
+
+Resource details from the [MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR guide](../guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list or a prescription to consume everything. Public outlines and metadata are not proof of lesson quality or exam completeness. Publisher times are labeled; other ranges are study estimates. No paid lesson, practice interior or enrollment was accessed.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Main exam page](https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam) and [course route](https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam): agree on current public contract | Public browser pages; direct captures are shells | 10–15 min review estimate; both list 95-minute exam |
+| [Official study guide](https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide): detailed scope still requires reconciliation | Free enrollment listed; public viewer failed and published asset returned 403 | Publisher lists 30 min; objective body unavailable here |
+| [Atlas Administrator Path](https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path): public 13-skill outline, not a substitute for detailed objectives | Free/account learning; advertised 50% full-path completion discount, eligibility unverified | Headline 13 hr; required cards 845 min (14h05); separate 120-min exam card makes 16h05 |
+| [Official practice questions](https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions): public landing only | Free enrollment; questions/explanations not read | Publisher lists 6 hr, plus personal review |
+| [August 18 path announcement](https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications): badge/path context | Public; reading reused from preceding Data Modeler review | Publisher lists 4 min |
+| [Atlas overview](https://www.mongodb.com/docs/atlas/) and [security features](https://www.mongodb.com/docs/atlas/setup-cluster-security/): editions, shared responsibility and layered controls | Public; main pages read, not every linked feature | 2–4 hr selected reading/design estimate |
+| [Monitoring overview](https://www.mongodb.com/docs/atlas/monitoring-alerts/) and [alert basics](https://www.mongodb.com/docs/atlas/alert-basics/): diagnosis and version-aware signals | Public; no alerts sent or metrics collected | 2–4 hr selected lab estimate |
+| [Cloud Backup](https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/) and [Core restore overview](https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/): eligibility and recovery evidence | Public; restore command discrepancy recorded | 1–2 hr reading, plus an authorized restore exercise |
+| [CLI overview](https://www.mongodb.com/docs/atlas/cli/current/) and [changelog](https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-changelog/): verify version, command purpose and output | Public; selected current changelog entries; no install/auth/CLI execution | 2–4 hr selected lab estimate |
+| [AWS landing-zone pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html): supporting architecture by Igor Alekseev and Anuj Panchal; broad example credentials require redesign | Public main read; repository/code not cloned or deployed | 2–4 hr selected reading/paper-lab estimate |
+| [The Official MongoDB Guide](https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/): optional broader depth | Paid/O’Reilly; request returned 403, no interior review | Earlier 8h51/2025 metadata not reverified |
+| [MongoDB 8.0 in Action, Third Edition](https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/): optional administration context | Paid/O’Reilly; request returned 403, no current alignment verified | Earlier 16h46 metadata not reverified |
+| [Complete MongoDB Administration Guide](https://www.udemy.com/course/mongodb-essentials-m/): optional task-oriented format | Paid/Udemy; request returned 403, no interior review | Earlier about 11 hr not reverified |
+
+Visible required card minutes are overview 60, CRUD 90, transformation 50, indexing 60, query optimization 90, sharding 90, monitoring 60, performance 60, resilience 45, reliability 90, authentication/authorization 60, networking 45 and encryption 45: 845 minutes. The 13-hour headline and two-hour exam card are separate published measures, not observed study times. The historical May 29 replacement note for the earlier v1 path was not revalidated during this review; use the currently linked path.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

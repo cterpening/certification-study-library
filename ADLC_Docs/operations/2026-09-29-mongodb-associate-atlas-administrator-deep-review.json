@@ -1,0 +1,1720 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "1b3a25ba86604c22807dc2ec2ee7bbd93f3ba89e7e7cf98fd707edadd548bba0",
+  "guide_after_sha256": "3b87440cf944e499156cfb5f3a02535f438d94fe735ac7044a4e38069514a1a4",
+  "prior_records": {
+    "exam": {
+      "code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+      "level": "intermediate",
+      "vendor_id": "mongodb",
+      "title": "MongoDB Associate Atlas Administrator",
+      "status": "active",
+      "study_guide_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+      "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+      "blueprint_last_checked": "2026-09-07",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-07",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published. Practice designing, securing, monitoring, automating, scaling and recovering a small-to-medium single-region/single-provider Atlas environment. The detailed objectives require free enrollment; reconcile them with the current public 13-skill learning path before scheduling."
+    },
+    "review": {
+      "id": "mongodb-associate-atlas-administrator-2026-09-07-source-validation",
+      "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+      "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-atlas-administrator-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+      "objective_coverage": [
+        {
+          "objective_group": "MongoDB Overview, CRUD, Data Transformation and Indexing",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1–2",
+            "Labs 1 and 6"
+          ]
+        },
+        {
+          "objective_group": "Sharding Strategies and Atlas deployment/scale",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Authentication and Authorization",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1 and 3",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Networking Security and Encryption at Rest",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 1 and 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Monitoring Tooling, Performance Tools and Techniques",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 1–2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Data Resilience and Cluster Reliability",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Atlas administration through UI, CLI, API and managed configuration",
+          "guide_sections": [
+            "Section 7",
+            "Scenarios 1 and 3",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 13,
+        "reachable": 10,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "The 13 required skills in the current public 13-hour official path are treated as mappable public learning-path scope and covered through seven sections, three integrated operational scenarios, eight authorized labs and 40 original checks. MongoDB keeps the detailed objective body behind enrollment, and it could not be deterministically re-audited on September 7; the guide explicitly requires enrolled reconciliation and invents no weights. The current 70-question/95-minute contract, stale two-hour card, superseded path, August alignment, and AWS-specific limits of the added landing-zone lab are explicit. No recalled/live item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "oreilly-official-mongodb-guide",
+        "title": "The Official MongoDB Guide",
+        "url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+        "publisher": "O'Reilly / Packt / MongoDB subject-matter experts",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DEVELOPER",
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "September 2025, 374-page/8h51m listed guide written by MongoDB subject-matter experts, with Atlas sizing, scaling, security, networking, resilience and tooling depth beyond the associate scope. September 29 MONGODB-ASSOCIATE-DEVELOPER deep review: HTTP403. Earlier8h51/374pages/September2025 not reverified; no paid interior or quality claim. See docs/research/2026-09-29-mongodb-associate-developer-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "mongodb-certification-path-update-2026",
+        "title": "Introducing a More Connected, Flexible Path to MongoDB Certifications",
+        "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-DATA-MODELER",
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "August 18, 2026 announcement aligning Data Modeler, Database Administrator and Atlas Administrator learning paths with skill badges and a completion discount; it does not announce replacement exams. September 29 MONGODB-ASSOCIATE-DATA-MODELER deep review: Complete7049-character main read including date/authors. August18,2026 HeatherDavis/JoelLord announcement lists4minute reading, skillbadge/path alignment and50% full-path completion discount. Marketing claims are not course-quality or exam-replacement evidence. See docs/research/2026-09-29-mongodb-associate-data-modeler-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "mongodb-associate-atlas-administrator-exam",
+        "title": "MongoDB Atlas Administrator Exam",
+        "url": "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-certification-page",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Current public 70-question, 95-minute, USD150, English, online-proctored contract."
+      },
+      {
+        "id": "mongodb-associate-atlas-administrator-study-guide",
+        "title": "MongoDB Associate Atlas Administrator Exam Study Guide",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Canonical 30-minute detailed objective guide; free enrollment/email capture is required and public pages do not expose objective weights."
+      },
+      {
+        "id": "mongodb-atlas-administrator-path",
+        "title": "MongoDB Atlas Administrator Path",
+        "url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Current free 13-hour path with 13 required skills; it supersedes the 11.5-hour v1 path flagged for replacement May 29, 2026. Its embedded two-hour exam card lags the live 95-minute landing page."
+      },
+      {
+        "id": "mongodb-associate-atlas-administrator-practice",
+        "title": "Atlas Administrator Practice Questions",
+        "url": "https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions",
+        "publisher": "MongoDB University",
+        "authority_class": 1,
+        "source_type": "official-practice",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Official six-hour practice resource. Use explanations and objective gaps rather than memorizing items."
+      },
+      {
+        "id": "mongodb-atlas-documentation",
+        "title": "MongoDB Atlas Documentation",
+        "url": "https://www.mongodb.com/docs/atlas/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Canonical current Atlas deployment, identity, networking, monitoring, backup, scaling, automation, billing and limit documentation."
+      },
+      {
+        "id": "mongodb-atlas-security-features",
+        "title": "Configure Security Features for Clusters",
+        "url": "https://www.mongodb.com/docs/atlas/setup-cluster-security/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Official layered Atlas identity, database access, network, encryption, shared-responsibility and audit-control entry point; feature eligibility varies."
+      },
+      {
+        "id": "mongodb-atlas-monitoring-alerts",
+        "title": "Monitor and Improve Performance",
+        "url": "https://www.mongodb.com/docs/atlas/monitoring-alerts/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Official metrics, logs, alert, query insight and performance-tool documentation entry point."
+      },
+      {
+        "id": "mongodb-atlas-cloud-backup",
+        "title": "Atlas Cloud Backup",
+        "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Official current backup eligibility, snapshot, continuous/point-in-time, retention, restore and constraint documentation."
+      },
+      {
+        "id": "mongodb-atlas-cli-documentation",
+        "title": "Atlas CLI Documentation",
+        "url": "https://www.mongodb.com/docs/atlas/cli/current/",
+        "publisher": "MongoDB",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Canonical Atlas CLI setup, authentication, organization/project scoping, commands, configuration and automation reference."
+      },
+      {
+        "id": "oreilly-mongodb-8-in-action-third",
+        "title": "MongoDB 8.0 in Action, Third Edition",
+        "url": "https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/",
+        "publisher": "O'Reilly / Manning",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "July 2025, 576-page/16h46m listed hands-on book covering Atlas CLI, replication/sharding, backup, security and query performance; select relevant chapters."
+      },
+      {
+        "id": "udemy-complete-mongodb-administration-guide",
+        "title": "Complete MongoDB Administration Guide",
+        "url": "https://www.udemy.com/course/mongodb-essentials-m/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "Broad task-oriented MongoDB administration course with Atlas deployment content; listing duration is approximately 11 hours and should be verified. Reconcile feature eligibility and UI with official Atlas docs."
+      },
+      {
+        "id": "aws-mongodb-atlas-landing-zone",
+        "title": "Build an AWS landing zone that includes MongoDB Atlas",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+        "publisher": "Amazon Web Services Prescriptive Guidance",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+        ],
+        "notes": "AWS-specific multi-AZ, PrivateLink, least-privilege, secrets, and Terraform reference pattern; a lab design, not MongoDB exam scope or a multi-cloud default."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "b1e3dcb145317acc891f15061c18ee0a83224770ce9fea7225510c619c612cfb",
+      "guide_sections": [
+        "1. MongoDB foundations",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "0fc3dffcde07fb1b0b6dda88277dc562726a5ace55bf07b7451856f46f4ed9d5",
+      "guide_sections": [
+        "1. MongoDB foundations",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "003ac7f8bf13264dd842a0f34222165a62d99852c373e99604326abdd8a806ba",
+      "guide_sections": [
+        "1. MongoDB foundations",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "9256b932bea7114520b5fa4c7f531fbe34f27f082f15525ff24424135f8c878b",
+      "guide_sections": [
+        "1. MongoDB foundations",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "b1dd27e9515483f57bdedccbe303b98dba749f9e287f66ca1c6041bb6bbd5120",
+      "guide_sections": [
+        "5. Monitoring, logging, and performance",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "53b16bf0ae257faade9bb1c63ac0028c8fff3fb8d660b0700a34dc4ac470bfb1",
+      "guide_sections": [
+        "2. Atlas topology, deployment, and scale",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "79f29e962b4f750256fb73baca99b55730c4aa179a00cd40940bfce2ba62cdf9",
+      "guide_sections": [
+        "5. Monitoring, logging, and performance",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "d0ad0ef74a99266d24518cdd97bc91fd8a00ebb71ace42699c8088a5c83c253c",
+      "guide_sections": [
+        "5. Monitoring, logging, and performance",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "6ca264d6523cbbc39f21cfd47fe292c5a8dad13b0e83d7c60a5dc789dfa79009",
+      "guide_sections": [
+        "6. Resilience, backup, recovery, and maintenance",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "e3cedc3e8ceb9c6744f8f5f76227e15d824fe682dfb3b2f7599e87aa8fcfbcde",
+      "guide_sections": [
+        "6. Resilience, backup, recovery, and maintenance",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "0d292eed9787ed99bab4a8048830539b9b55845670c304b1bea4361fbd5b1d95",
+      "guide_sections": [
+        "3. Identity and authorization",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "62aafcef4cc83a8d66560be707153f7de8fb26a63e7ffc204976b65b4841cb1c",
+      "guide_sections": [
+        "4. Network security and encryption",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "bee16121cf63905f1d88b5bf4b00c1867769a02fbbfdd1bce8147b5980d3d1c2",
+      "guide_sections": [
+        "4. Network security and encryption",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [
+      "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+    ],
+    "results": [
+      {
+        "code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "title": "MongoDB Associate Atlas Administrator",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+        "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\mongodb-associate-atlas-administrator-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mongodb-associate-atlas-administrator-official-status.json",
+        "status": "manual-review",
+        "changed": false,
+        "error": "ValueError: Could not find MongoDB study-guide identity or objectives",
+        "manual_review_reason": "The reachable public MongoDB response is an enrollment shell and does not expose the reviewed study-guide identity or objectives without its browser application.",
+        "review_route": "docs/SOURCE-FRESHNESS.md"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 31,
+    "reachable": 28,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "oreilly-official-mongodb-guide",
+      "url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+      "checked_at": "2026-09-29T16:05:29.176913+00:00",
+      "health": {
+        "id": "oreilly-official-mongodb-guide",
+        "url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+        "checked_at": "2026-09-29T16:05:29+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mongodb-certification-path-update-2026",
+      "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+      "checked_at": "2026-09-29T16:05:29.177664+00:00",
+      "health": {
+        "id": "mongodb-certification-path-update-2026",
+        "url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "checked_at": "2026-09-29T16:05:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introducing a More Connected, Flexible Path to MongoDB Certifications",
+        "canonical_url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+        "duration_signals": [
+          "4 min"
+        ],
+        "signal_fingerprint": "b4782a9daa42deea348088d8b8be4c121bf570c3286231a02bcc495dded51705",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/company/blog/news/introducing-a-more-connected-flexible-path-to-certifications",
+      "sha256": "1c1e64d9ee83bc0ae9c4feff996d376c05fda56f30a52bd016a718e5a6cf045d",
+      "text_characters": 7049
+    },
+    {
+      "id": "mongodb-associate-atlas-administrator-exam",
+      "url": "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam",
+      "checked_at": "2026-09-29T16:05:29.178049+00:00",
+      "health": {
+        "id": "mongodb-associate-atlas-administrator-exam",
+        "url": "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam",
+        "checked_at": "2026-09-29T16:05:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Atlas Administrator Exam | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/pages/mongodb-atlas-administrator-exam",
+        "duration_signals": [
+          "95 Minutes"
+        ],
+        "signal_fingerprint": "e76ffc6d605d49e9d0ca86aa8d67da26ac81180e4423d6c0b7c47c62fe24ca85",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/pages/mongodb-atlas-administrator-exam",
+      "sha256": "c2389adc601df94d90357169ecc22fc834d45f96814a12d87c044ee553ea6235",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-associate-atlas-administrator-study-guide",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+      "checked_at": "2026-09-29T16:05:29.459636+00:00",
+      "health": {
+        "id": "mongodb-associate-atlas-administrator-study-guide",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+        "checked_at": "2026-09-29T16:05:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB",
+        "canonical_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+        "duration_signals": [
+          "30 Minutes"
+        ],
+        "signal_fingerprint": "4281047f15b46e35b80d6c8c6cacf62aa1856fec5a1ed1ffd0acdb38a98d1aee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+      "sha256": "c9bc9302a760fd4d0082a49e79ef2332500a292fe93871b540f80af558ada894",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-atlas-administrator-path",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+      "checked_at": "2026-09-29T16:05:29.658311+00:00",
+      "health": {
+        "id": "mongodb-atlas-administrator-path",
+        "url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+        "checked_at": "2026-09-29T16:05:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Atlas Administrator Path | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+        "duration_signals": [
+          "1 Hour",
+          "1.5 Hours",
+          "13 Hours",
+          "2 Hours",
+          "45 Minutes",
+          "50 Minutes"
+        ],
+        "signal_fingerprint": "ff47576883009f4e6916c6fe33452f996e2f8929f43947e232fae8bd95d200f4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+      "sha256": "e118eff860667e7800b13cd9c13896a2dbea9f32958067b20554581978f65d35",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-associate-atlas-administrator-practice",
+      "url": "https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions",
+      "checked_at": "2026-09-29T16:05:30.226077+00:00",
+      "health": {
+        "id": "mongodb-associate-atlas-administrator-practice",
+        "url": "https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions",
+        "checked_at": "2026-09-29T16:05:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Associate Atlas Administrator Course Practice Questions | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions",
+        "duration_signals": [
+          "6 Hours"
+        ],
+        "signal_fingerprint": "bb5d9bf233454d91a5ae72521ad633f2dd5666667234202e8471f80e1d829d81",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/associate-atlas-administrator-practice-questions",
+      "sha256": "9ccf09a07cf1b0613ec9efb329e5e846ec90a09b66276d186c73abe1e0ab2783",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-atlas-documentation",
+      "url": "https://www.mongodb.com/docs/atlas/",
+      "checked_at": "2026-09-29T16:05:30.275670+00:00",
+      "health": {
+        "id": "mongodb-atlas-documentation",
+        "url": "https://www.mongodb.com/docs/atlas/",
+        "checked_at": "2026-09-29T16:05:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Atlas: Multi-Cloud Database Service - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/",
+        "duration_signals": [],
+        "signal_fingerprint": "0fb0062708dfe6fc978b4de7fd107b108cbb277d02d9f20c81c1d7fdb270031b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/",
+      "sha256": "a5fd2d93ba3840edb143441a4d40367c6e3f0ab3a87c4b0b5b4a55967ea0c1ad",
+      "text_characters": 7223
+    },
+    {
+      "id": "mongodb-atlas-security-features",
+      "url": "https://www.mongodb.com/docs/atlas/setup-cluster-security/",
+      "checked_at": "2026-09-29T16:05:30.936126+00:00",
+      "health": {
+        "id": "mongodb-atlas-security-features",
+        "url": "https://www.mongodb.com/docs/atlas/setup-cluster-security/",
+        "checked_at": "2026-09-29T16:05:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/setup-cluster-security/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure Security Features for Clusters - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/setup-cluster-security/",
+        "duration_signals": [
+          "24 hour"
+        ],
+        "signal_fingerprint": "6054cf2e5793f121f12b50c4e3d7fee0d03ea0f846f493974844ac1fe7768bbf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/setup-cluster-security/",
+      "sha256": "b4a639e7dfb78d06632c61923caf49cc93d6956a845f1b14f243b89f02a0fac1",
+      "text_characters": 14393
+    },
+    {
+      "id": "mongodb-atlas-monitoring-alerts",
+      "url": "https://www.mongodb.com/docs/atlas/monitoring-alerts/",
+      "checked_at": "2026-09-29T16:05:31.515424+00:00",
+      "health": {
+        "id": "mongodb-atlas-monitoring-alerts",
+        "url": "https://www.mongodb.com/docs/atlas/monitoring-alerts/",
+        "checked_at": "2026-09-29T16:05:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/monitoring-alerts/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Monitor Your Clusters - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/monitoring-alerts/",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "aba28a4423073c8cd42b0cde108f4d8c1e1d38a3f3bf6a7391138ab92f4d5a29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/monitoring-alerts/",
+      "sha256": "6d5a40387b53aae8b9c65909e3025bc798df2097f192add125993e2045909814",
+      "text_characters": 2938
+    },
+    {
+      "id": "mongodb-atlas-cloud-backup",
+      "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/",
+      "checked_at": "2026-09-29T16:05:31.535572+00:00",
+      "health": {
+        "id": "mongodb-atlas-cloud-backup",
+        "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/",
+        "checked_at": "2026-09-29T16:05:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Back Up Your Cluster - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/",
+        "duration_signals": [],
+        "signal_fingerprint": "6f639624183159cc33d81f31c75e6076a32f30baa2e02dfabbc502e483a499d0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/",
+      "sha256": "86951592566350c9488bd2d026e750c7bf4cc49606a44993e14393dc0fbc7ede",
+      "text_characters": 3376
+    },
+    {
+      "id": "mongodb-atlas-cli-documentation",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/",
+      "checked_at": "2026-09-29T16:05:31.774632+00:00",
+      "health": {
+        "id": "mongodb-atlas-cli-documentation",
+        "url": "https://www.mongodb.com/docs/atlas/cli/current/",
+        "checked_at": "2026-09-29T16:05:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/cli/current/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What is the Atlas CLI? - Atlas CLI - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/cli/current/",
+        "duration_signals": [],
+        "signal_fingerprint": "436729f1a6204994ccb3bee20b81d13bdc5294498b8ca8e20f75cb5b80d64bbd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/cli/current/",
+      "sha256": "a4d5204cbe128c3fe2601a886c5075f30222bd28f34d3db5af81ac02e47357e0",
+      "text_characters": 1604
+    },
+    {
+      "id": "oreilly-mongodb-8-in-action-third",
+      "url": "https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/",
+      "checked_at": "2026-09-29T16:05:32.433562+00:00",
+      "health": {
+        "id": "oreilly-mongodb-8-in-action-third",
+        "url": "https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/",
+        "checked_at": "2026-09-29T16:05:32+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-complete-mongodb-administration-guide",
+      "url": "https://www.udemy.com/course/mongodb-essentials-m/",
+      "checked_at": "2026-09-29T16:05:32.513603+00:00",
+      "health": {
+        "id": "udemy-complete-mongodb-administration-guide",
+        "url": "https://www.udemy.com/course/mongodb-essentials-m/",
+        "checked_at": "2026-09-29T16:05:32+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/mongodb-essentials-m/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-mongodb-atlas-landing-zone",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+      "checked_at": "2026-09-29T16:05:32.587727+00:00",
+      "health": {
+        "id": "aws-mongodb-atlas-landing-zone",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+        "checked_at": "2026-09-29T16:05:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+        "content_type": "text/html",
+        "page_title": "Build an AWS landing zone that includes MongoDB Atlas - AWS Prescriptive GuidanceBuild an AWS landing zone that includes MongoDB Atlas - AWS Prescriptive Guidance",
+        "canonical_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+        "duration_signals": [],
+        "signal_fingerprint": "32792ca1eaabc289020330b60decff81227851592983b0c3eb887d91aafeb45b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+      "sha256": "b1eee568a653972b9f1085576def7e1b2247670ea8bd64b6eecd6472a9cf7985",
+      "text_characters": 14779
+    },
+    {
+      "id": "mongodb-atlas-course-exam",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam",
+      "checked_at": "2026-09-29T16:05:32.635775+00:00",
+      "health": {
+        "id": "mongodb-atlas-course-exam",
+        "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam",
+        "checked_at": "2026-09-29T16:05:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MongoDB Courses and Trainings | MongoDB University",
+        "canonical_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam",
+        "duration_signals": [
+          "95 Minutes"
+        ],
+        "signal_fingerprint": "f2c046ad4f0c906981014eb24ccf88f558d15d3114e4f2b29350612fefe69721",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam",
+      "sha256": "8d7283ece710ca4baee89ea349d7b7b4839c55e1f7de3fb6a46a6667a824c3c6",
+      "text_characters": 50
+    },
+    {
+      "id": "mongodb-atlas-private-endpoints",
+      "url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/?cloud-provider=aws",
+      "checked_at": "2026-09-29T16:05:32.746691+00:00",
+      "health": {
+        "id": "mongodb-atlas-private-endpoints",
+        "url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/?cloud-provider=aws",
+        "checked_at": "2026-09-29T16:05:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/?cloud-provider=aws",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Learn About Private Endpoints in Atlas - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/",
+        "duration_signals": [],
+        "signal_fingerprint": "1402e3833bc17cdb781a35b853ee7ef3d4f48087dd9d8203a91d6c349f93188f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/?cloud-provider=aws",
+      "sha256": "de8f1cd0c9eeff809dc4e67e972cfe5b604a0a6a440c6079c31a133161b49858",
+      "text_characters": 8929
+    },
+    {
+      "id": "mongodb-atlas-network-guidance",
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+      "checked_at": "2026-09-29T16:05:32.890782+00:00",
+      "health": {
+        "id": "mongodb-atlas-network-guidance",
+        "url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+        "checked_at": "2026-09-29T16:05:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Guidance for Atlas Network Security - Atlas Architecture Center - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+        "duration_signals": [],
+        "signal_fingerprint": "c916ebcd282c82a0b10fc5d82e132a7ed05775897ec46b784cd0678ddb11b069",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+      "sha256": "51b68d94a606b6625478acbe546c88193bc17cebfcd3342ae1ecf44fc67e8ed7",
+      "text_characters": 20801
+    },
+    {
+      "id": "mongodb-atlas-alert-basics",
+      "url": "https://www.mongodb.com/docs/atlas/alert-basics/",
+      "checked_at": "2026-09-29T16:05:33.556215+00:00",
+      "health": {
+        "id": "mongodb-atlas-alert-basics",
+        "url": "https://www.mongodb.com/docs/atlas/alert-basics/",
+        "checked_at": "2026-09-29T16:05:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/alert-basics/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Atlas Alert Basics - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/alert-basics/",
+        "duration_signals": [],
+        "signal_fingerprint": "3575d010bc6b2fa1e500597d721e798a5c56afa3f72e31c98fdca18ef5059015",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/alert-basics/",
+      "sha256": "17f965e9c1d75faec5e12201bab065fe088d11049fc2880ee6c2bd3485c185c0",
+      "text_characters": 7135
+    },
+    {
+      "id": "mongodb-atlas-backup-compliance",
+      "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/backup-compliance-policy/",
+      "checked_at": "2026-09-29T16:05:33.943401+00:00",
+      "health": {
+        "id": "mongodb-atlas-backup-compliance",
+        "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/backup-compliance-policy/",
+        "checked_at": "2026-09-29T16:05:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/backup-compliance-policy/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Configure a Backup Compliance Policy - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/backup-compliance-policy/",
+        "duration_signals": [],
+        "signal_fingerprint": "d5367691b43863d22927b83724a9d8986dc19ec51532dac8725b6d02d37d401e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/backup-compliance-policy/",
+      "sha256": "68c0238e233ce49493b0620ce7ebbad962eaed73798b5408308f8f98538ef296",
+      "text_characters": 15336
+    },
+    {
+      "id": "mongodb-atlas-restore-overview",
+      "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+      "checked_at": "2026-09-29T16:05:34.684842+00:00",
+      "health": {
+        "id": "mongodb-atlas-restore-overview",
+        "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+        "checked_at": "2026-09-29T16:05:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Restore Your Cluster - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+        "duration_signals": [],
+        "signal_fingerprint": "6a9daaf48676926e880216245195ed02e41c306d9a15733eef3018c92081feb5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+      "sha256": "621f1aecbf5caf441a0172dd9e9d4fe388027cea21ec61062c8d5d210c2f0c10",
+      "text_characters": 4246
+    },
+    {
+      "id": "mongodb-atlas-backup-guidance",
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+      "checked_at": "2026-09-29T16:05:34.831523+00:00",
+      "health": {
+        "id": "mongodb-atlas-backup-guidance",
+        "url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+        "checked_at": "2026-09-29T16:05:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Guidance for Atlas Backups - Atlas Architecture Center - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+        "duration_signals": [
+          "1 minute",
+          "12 hours",
+          "6 hours"
+        ],
+        "signal_fingerprint": "8869d6055bd4a3049a7fade1d0b5844680b1fa7a45bb8513feecb4ee9ac55caf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+      "sha256": "4d5dfc3d211c8b1b391f70e27b3ac1dafea16c2ad1ddf7092ffe1b5e4d276d7c",
+      "text_characters": 16768
+    },
+    {
+      "id": "mongodb-atlas-kms",
+      "url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+      "checked_at": "2026-09-29T16:05:35.014260+00:00",
+      "health": {
+        "id": "mongodb-atlas-kms",
+        "url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+        "checked_at": "2026-09-29T16:05:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Encryption at Rest using Customer Key Management - Atlas - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "5470bcc2b890f44a8781f32faf7a3a44b674eeb3c61ed37591ca790903f2113c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+      "sha256": "8952e5a8f19af22e5e089a8f8c28a67a7f09e5476de65ee36222061c99b4abe3",
+      "text_characters": 17697
+    },
+    {
+      "id": "mongodb-atlas-api-auth",
+      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+      "checked_at": "2026-09-29T16:05:35.765497+00:00",
+      "health": {
+        "id": "mongodb-atlas-api-auth",
+        "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+        "checked_at": "2026-09-29T16:05:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Authentication | Atlas Admin API v2 documentation",
+        "canonical_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "91a252bc381788f68bc9a767d463a3c7e271023ed073d6172e0f4bbddb162a07",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+      "sha256": "5304490d3680c2e09cbd7a6c72c78714359038f1f5310f8be91d50bdccf4d9f1",
+      "text_characters": 32800
+    },
+    {
+      "id": "mongodb-atlas-cli-dbusers-list",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-dbusers-list/",
+      "checked_at": "2026-09-29T16:05:35.937356+00:00",
+      "health": {
+        "id": "mongodb-atlas-cli-dbusers-list",
+        "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-dbusers-list/",
+        "checked_at": "2026-09-29T16:05:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-dbusers-list/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "atlas dbusers list - Atlas CLI - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-dbusers-list/",
+        "duration_signals": [],
+        "signal_fingerprint": "8f0c43f21f9296cf96181a592884ee4ed7bc28471fa163506f37299a7099f670",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-dbusers-list/",
+      "sha256": "560870bd83767d68359f2f600586758f31a28860d9bab98fc227210368b38675",
+      "text_characters": 2006
+    },
+    {
+      "id": "mongodb-atlas-cli-restores-list",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+      "checked_at": "2026-09-29T16:05:36.131231+00:00",
+      "health": {
+        "id": "mongodb-atlas-cli-restores-list",
+        "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+        "checked_at": "2026-09-29T16:05:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "atlas backups restores list - Atlas CLI - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+        "duration_signals": [],
+        "signal_fingerprint": "ebd84e9801f8e1dd1b93402ea68f81feb9d6de9b2c364c6f4601d24c2ec2c010",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+      "sha256": "8c894163bb5f66eb240ad7225656edee8b6595a49af7c19fa2f6a7c5d00dfae0",
+      "text_characters": 1977
+    },
+    {
+      "id": "mongodb-atlas-cli-restores-describe",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-describe/",
+      "checked_at": "2026-09-29T16:05:36.787837+00:00",
+      "health": {
+        "id": "mongodb-atlas-cli-restores-describe",
+        "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-describe/",
+        "checked_at": "2026-09-29T16:05:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-describe/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "atlas backups restores describe - Atlas CLI - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-describe/",
+        "duration_signals": [],
+        "signal_fingerprint": "d82942d20bbb75b4e21ab7202dc0290109cc4c328e26df472ad7871c65586a54",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-describe/",
+      "sha256": "c259608375ebfa1f7e69de70b507d10040457998e471283c949d65675ae4d5e0",
+      "text_characters": 1485
+    },
+    {
+      "id": "mongodb-atlas-cli-release-notes",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-changelog/",
+      "checked_at": "2026-09-29T16:06:28.408108+00:00",
+      "health": {
+        "id": "mongodb-atlas-cli-release-notes",
+        "url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-changelog/",
+        "checked_at": "2026-09-29T16:06:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-changelog/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Atlas CLI Changelog - Atlas CLI - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-changelog/",
+        "duration_signals": [],
+        "signal_fingerprint": "3f3bbd657c0497f3d331f5b7ef22ad477e3eac6d943e5c8cfc0bb3934cde3c59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-changelog/",
+      "sha256": "3b31d82064b12b1d2023e182034fe84d1d0a116c072d71f54b95dc4f5205b161",
+      "text_characters": 39751
+    },
+    {
+      "id": "mongodb-atomicity-transactions",
+      "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "checked_at": "2026-09-29T16:05:37.120395+00:00",
+      "health": {
+        "id": "mongodb-atomicity-transactions",
+        "url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "checked_at": "2026-09-29T16:05:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Atomicity and Transactions - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+        "duration_signals": [],
+        "signal_fingerprint": "9767f5e42a5c1fa64422b82abe1fb25f328ede159341d0ac3119ac86a177ebe2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/core/write-operations-atomicity/",
+      "sha256": "75e63044a27a5a0b0bd4db87ccda7807c50d5e6686020c5896b34ca6405fb583",
+      "text_characters": 3806
+    },
+    {
+      "id": "mongodb-index-esr",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+      "checked_at": "2026-09-29T16:05:37.715009+00:00",
+      "health": {
+        "id": "mongodb-index-esr",
+        "url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "checked_at": "2026-09-29T16:05:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The ESR (Equality, Sort, Range) Guideline - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "42414de43e0b31260d7fd4df46f8ce82eae425bf2db22326a56135597bdb886c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/tutorial/equality-sort-range-guideline/",
+      "sha256": "fa3e38f3f64a7a59c75b0edfd0abc70c7f8bb00c27d55a4651d4c31f896ae4b8",
+      "text_characters": 8172
+    },
+    {
+      "id": "mongodb-server-90-release-notes",
+      "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "checked_at": "2026-09-29T16:05:37.944885+00:00",
+      "health": {
+        "id": "mongodb-server-90-release-notes",
+        "url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+        "checked_at": "2026-09-29T16:05:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/release-notes/9/",
+        "duration_signals": [],
+        "signal_fingerprint": "3370cf8d96dad70d884039f309c86029690b25821636a212c33d7c2d45eb185d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/release-notes/9.0/",
+      "sha256": "33ca6df3c06464bacae41cbd48d8a8ebbea61336818cef3aeeaefdc9d495da60",
+      "text_characters": 19617
+    },
+    {
+      "id": "mongodb-explain-results",
+      "url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+      "checked_at": "2026-09-29T16:05:38.270486+00:00",
+      "health": {
+        "id": "mongodb-explain-results",
+        "url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+        "checked_at": "2026-09-29T16:05:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Explain Results - Database Manual - MongoDB Docs",
+        "canonical_url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+        "duration_signals": [],
+        "signal_fingerprint": "f7701373461bd031a072786a0c0294e024d60801c83867f421832ae8e9533b7a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.mongodb.com/docs/manual/reference/explain-results/",
+      "sha256": "085d32b84e2d5f91caf006f801610d63d41ae19c7e4aaa740937ab1532ef75a6",
+      "text_characters": 33197
+    }
+  ],
+  "added_source_ids": [
+    "mongodb-atlas-course-exam",
+    "mongodb-atlas-private-endpoints",
+    "mongodb-atlas-network-guidance",
+    "mongodb-atlas-alert-basics",
+    "mongodb-atlas-backup-compliance",
+    "mongodb-atlas-restore-overview",
+    "mongodb-atlas-backup-guidance",
+    "mongodb-atlas-kms",
+    "mongodb-atlas-api-auth",
+    "mongodb-atlas-cli-dbusers-list",
+    "mongodb-atlas-cli-restores-list",
+    "mongodb-atlas-cli-restores-describe",
+    "mongodb-atlas-cli-release-notes"
+  ],
+  "findings": [
+    {
+      "id": "mongodbassociateatlasadministrator-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Detailed objective body unavailable",
+      "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "13publicskill summaries cannot establish detailedweightedexamscope;viewer500asset403.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Path timing differs from visible cards and exam",
+      "url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Required845min versus13hheadline;120minexamcardversus95minexamroute.",
+      "recommendation": "Show allpublishedmeasures andpublicreadingboundary.",
+      "disposition": "applied",
+      "source_id": "mongodb-atlas-administrator-path",
+      "resolution": "Show allpublishedmeasures andpublicreadingboundary."
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Restore status section includes an unrelated mutation",
+      "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OverviewusesaccessListscreateforrestoredetails anddescribeaslist.",
+      "recommendation": "Use dedicatedlistsyntax/detailreferences andmarktemplatesunexecuted; neverrununrelatedmutation.",
+      "disposition": "applied",
+      "source_id": "mongodb-atlas-restore-overview",
+      "resolution": "Use dedicatedlistsyntax/detailreferences andmarktemplatesunexecuted; neverrununrelatedmutation."
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-4",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Restore role and example syntax differ between pages",
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CLIstatesProjectOwner whileoverviewlistsbackupviewroles;older singularsamplesversuspluralheadings.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Source permission is not identity and scopes differ",
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "IntroIPauthenticationwordingandAPI-keyTerraformresourceunderprojectaccesscontextcanmislead.",
+      "recommendation": "Teachseparatecontrol/dataplaneIP lists,identity andeffectiveactiontests.",
+      "disposition": "applied",
+      "source_id": "mongodb-atlas-network-guidance",
+      "resolution": "Teachseparatecontrol/dataplaneIP lists,identity andeffectiveactiontests."
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "KMS connectivity failure is not identical to invalid key",
+      "url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Currentreference distinguishesnetworkoutagefrominvalidcredentials/deletedkeyatvalidation.",
+      "recommendation": "Preservespecificfailurebehavior andedition/restorelimits withoutavailabilityguarantee.",
+      "disposition": "applied",
+      "source_id": "mongodb-atlas-kms",
+      "resolution": "Preservespecificfailurebehavior andedition/restorelimits withoutavailabilityguarantee."
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Restore completion alone is incomplete recovery evidence",
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Snapshotreplay,validation,warming/cutover andexactidentitiesmatter;genericRPOlanguageisnotmeasured.",
+      "recommendation": "Add actualSQLitecounterexample and47minuteassumedtimeline withAtlasboundary.",
+      "disposition": "applied",
+      "source_id": "mongodb-atlas-backup-guidance",
+      "resolution": "Add actualSQLitecounterexample and47minuteassumedtimeline withAtlasboundary."
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Example broad credentials conflict with least-privilege goal",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PatternasksAWSAdministratorAccessstatickeydespiteleastprivilegeframing.",
+      "recommendation": "Use architectureascontext; requireexplicitnarrowroles anddo notcopy/executecredentialrecipe.",
+      "disposition": "applied",
+      "source_id": "aws-mongodb-atlas-landing-zone",
+      "resolution": "Use architectureascontext; requireexplicitnarrowroles anddo notcopy/executecredentialrecipe."
+    },
+    {
+      "id": "mongodbassociateatlasadministrator-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Private endpoint creation does not close public route",
+      "url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/?cloud-provider=aws",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Othermethodsremainpossible;non-port-mappedGCPendpointsdeprecatedApril30,2027.",
+      "recommendation": "Inventoryallroutes andtreatdateddeprecationasproductwatch.",
+      "disposition": "applied",
+      "source_id": "mongodb-atlas-private-endpoints",
+      "resolution": "Inventoryallroutes andtreatdateddeprecationasproductwatch."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mongodb-certification-path-update-2026",
+      "review": "FirstpartyAugust18,2026pathannouncement reused;noexamreplacement."
+    },
+    {
+      "source_id": "aws-mongodb-atlas-landing-zone",
+      "review": "FirstpartyAWSarchitecturesupport; publicationdatenotasserted, broadcredential/availabilityclaimsqualified."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 36,
+      "python_blocks_executed": 1,
+      "python_version": "3.13.14",
+      "sqlite_version": "3.50.4",
+      "public_example_sha256": "46a16756c2ea42419d3bc9fb55ec0bbd2a3bbeac657f2a10e4150953faa4f929",
+      "results": {
+        "passed": 36,
+        "checks": [
+          "application read allowed",
+          "application cannot edit control plane",
+          "observer cannot read application data",
+          "network is not authentication",
+          "identity does not supply reachability",
+          "token does not bypass API source rule",
+          "allowed test address",
+          "outside test address",
+          "private route does not remove public route",
+          "pool budget can exceed ceiling",
+          "planning cap",
+          "cap fits selected target",
+          "next cap exceeds selected target",
+          "compound identity preserves three users",
+          "username alone loses identities",
+          "first page is incomplete",
+          "duplicate page rejected",
+          "changed count requires reconciliation",
+          "known good post-snapshot state",
+          "bad write is visible",
+          "actual SQLite restore integrity",
+          "snapshot total",
+          "snapshot misses later good write",
+          "explicit fixture replay repairs good write",
+          "restore did not mutate source",
+          "count and sum can both agree",
+          "identity comparison catches wrong restore",
+          "snapshot recovery gap",
+          "assumed continuous recovery gap",
+          "end-to-end recovery time",
+          "restore job alone understates recovery",
+          "three regular high samples",
+          "single spike is insufficient",
+          "missing sample breaks evidence",
+          "time gap breaks evidence",
+          "threshold equality is not above"
+        ],
+        "results": {
+          "pool_cap_per_process_per_server": 11,
+          "compound_inventory_count": 3,
+          "restored_cents": 350,
+          "snapshot_gap_minutes": 17,
+          "continuous_gap_minutes": 2,
+          "assumed_recovery_minutes": 47
+        }
+      },
+      "execution_stdout": "{\n  \"passed\": 36,\n  \"checks\": [\n    \"application read allowed\",\n    \"application cannot edit control plane\",\n    \"observer cannot read application data\",\n    \"network is not authentication\",\n    \"identity does not supply reachability\",\n    \"token does not bypass API source rule\",\n    \"allowed test address\",\n    \"outside test address\",\n    \"private route does not remove public route\",\n    \"pool budget can exceed ceiling\",\n    \"planning cap\",\n    \"cap fits selected target\",\n    \"next cap exceeds selected target\",\n    \"compound identity preserves three users\",\n    \"username alone loses identities\",\n    \"first page is incomplete\",\n    \"duplicate page rejected\",\n    \"changed count requires reconciliation\",\n    \"known good post-snapshot state\",\n    \"bad write is visible\",\n    \"actual SQLite restore integrity\",\n    \"snapshot total\",\n    \"snapshot misses later good write\",\n    \"explicit fixture replay repairs good write\",\n    \"restore did not mutate source\",\n    \"count and sum can both agree\",\n    \"identity comparison catches wrong restore\",\n    \"snapshot recovery gap\",\n    \"assumed continuous recovery gap\",\n    \"end-to-end recovery time\",\n    \"restore job alone understates recovery\",\n    \"three regular high samples\",\n    \"single spike is insufficient\",\n    \"missing sample breaks evidence\",\n    \"time gap breaks evidence\",\n    \"threshold equality is not above\"\n  ],\n  \"results\": {\n    \"pool_cap_per_process_per_server\": 11,\n    \"compound_inventory_count\": 3,\n    \"restored_cents\": 350,\n    \"snapshot_gap_minutes\": 17,\n    \"continuous_gap_minutes\": 2,\n    \"assumed_recovery_minutes\": 47\n  }\n}",
+      "execution_boundary": "Actual standard-library Python and in-memory SQLite backup/restore/integrity/replay operations. CLI text templates reviewed against documentation but not installed, runtime-parsed or executed. No MongoDB/Atlas account, server, network rule, API credential/token, KMS, alert delivery, paid credit or deployment.",
+      "model_limits": "SQLite recovery is not Atlas backup/PIT or MongoDB oplog replay. Times/pool limits are fictional assumptions, not benchmarks/tier limits. Boolean gates use trusted labels, not authentication. Inventory uses known local pages/count, not consistent live API snapshot. Alert policy is a chosen sample model, not Atlas engine; 0/60/120second observations span2minutes."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Current detailed objective document unavailable;13publicpathskill summaries retained,notweightedexamobjectives. Viewer500asset403;noaccount/enrollment.",
+    "Main/course95minuteexam versuspath120mincard;actualbooking/detailedpolicynotverified.13hheadlineversus14h05requiredcardtotal.",
+    "Restoreoverviewcommanderrorcorrectedthroughdedicatedreferences;CLIrole/legacyaliasdiscrepanciesnotruntimeverified. Infinitepreview/GCP2027deprecation/server9Upcomingrequiredeployment-specificchecks.",
+    "36localPythonSQLitechecks only;noAtlas/MongoDBruntime,APIauth,network/KMS/alerts,actualPITrestore,performance,serviceRPO/RTO orproductionsecurityproof.",
+    "Threepaidrequestsblocked;noquestionorpaidlessoninteriors. Eightdeploymentlabs andindependenthumanreviewpending.",
+    "No installs,auth/permissions/runtime/service/rebootchanges,paidcredits orexternalmessages. Five reservedGitHubguides anddisablednotificationpilot untouched."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Actual standard-library Python and in-memory SQLite backup/restore/integrity/replay operations. CLI text templates reviewed against documentation but not installed, runtime-parsed or executed. No MongoDB/Atlas account, server, network rule, API credential/token, KMS, alert delivery, paid credit or deployment.",
+    "passed": 36,
+    "python_blocks_executed": 1,
+    "python_version": "3.13.14",
+    "sqlite_version": "3.50.4",
+    "public_example_sha256": "46a16756c2ea42419d3bc9fb55ec0bbd2a3bbeac657f2a10e4150953faa4f929",
+    "results": {
+      "passed": 36,
+      "checks": [
+        "application read allowed",
+        "application cannot edit control plane",
+        "observer cannot read application data",
+        "network is not authentication",
+        "identity does not supply reachability",
+        "token does not bypass API source rule",
+        "allowed test address",
+        "outside test address",
+        "private route does not remove public route",
+        "pool budget can exceed ceiling",
+        "planning cap",
+        "cap fits selected target",
+        "next cap exceeds selected target",
+        "compound identity preserves three users",
+        "username alone loses identities",
+        "first page is incomplete",
+        "duplicate page rejected",
+        "changed count requires reconciliation",
+        "known good post-snapshot state",
+        "bad write is visible",
+        "actual SQLite restore integrity",
+        "snapshot total",
+        "snapshot misses later good write",
+        "explicit fixture replay repairs good write",
+        "restore did not mutate source",
+        "count and sum can both agree",
+        "identity comparison catches wrong restore",
+        "snapshot recovery gap",
+        "assumed continuous recovery gap",
+        "end-to-end recovery time",
+        "restore job alone understates recovery",
+        "three regular high samples",
+        "single spike is insufficient",
+        "missing sample breaks evidence",
+        "time gap breaks evidence",
+        "threshold equality is not above"
+      ],
+      "results": {
+        "pool_cap_per_process_per_server": 11,
+        "compound_inventory_count": 3,
+        "restored_cents": 350,
+        "snapshot_gap_minutes": 17,
+        "continuous_gap_minutes": 2,
+        "assumed_recovery_minutes": 47
+      }
+    },
+    "execution_stdout": "{\n  \"passed\": 36,\n  \"checks\": [\n    \"application read allowed\",\n    \"application cannot edit control plane\",\n    \"observer cannot read application data\",\n    \"network is not authentication\",\n    \"identity does not supply reachability\",\n    \"token does not bypass API source rule\",\n    \"allowed test address\",\n    \"outside test address\",\n    \"private route does not remove public route\",\n    \"pool budget can exceed ceiling\",\n    \"planning cap\",\n    \"cap fits selected target\",\n    \"next cap exceeds selected target\",\n    \"compound identity preserves three users\",\n    \"username alone loses identities\",\n    \"first page is incomplete\",\n    \"duplicate page rejected\",\n    \"changed count requires reconciliation\",\n    \"known good post-snapshot state\",\n    \"bad write is visible\",\n    \"actual SQLite restore integrity\",\n    \"snapshot total\",\n    \"snapshot misses later good write\",\n    \"explicit fixture replay repairs good write\",\n    \"restore did not mutate source\",\n    \"count and sum can both agree\",\n    \"identity comparison catches wrong restore\",\n    \"snapshot recovery gap\",\n    \"assumed continuous recovery gap\",\n    \"end-to-end recovery time\",\n    \"restore job alone understates recovery\",\n    \"three regular high samples\",\n    \"single spike is insufficient\",\n    \"missing sample breaks evidence\",\n    \"time gap breaks evidence\",\n    \"threshold equality is not above\"\n  ],\n  \"results\": {\n    \"pool_cap_per_process_per_server\": 11,\n    \"compound_inventory_count\": 3,\n    \"restored_cents\": 350,\n    \"snapshot_gap_minutes\": 17,\n    \"continuous_gap_minutes\": 2,\n    \"assumed_recovery_minutes\": 47\n  }\n}",
+    "model_limits": "SQLite recovery is not Atlas backup/PIT or MongoDB oplog replay. Times/pool limits are fictional assumptions, not benchmarks/tier limits. Boolean gates use trusted labels, not authentication. Inventory uses known local pages/count, not consistent live API snapshot. Alert policy is a chosen sample model, not Atlas engine; 0/60/120second observations span2minutes.",
+    "learning_catalog_consistency": "passed"
+  },
+  "public_learning_path_groups": [
+    {
+      "title": "MongoDB Overview",
+      "objectives": [
+        "Understand the document model, dynamic schema, distributed architecture, and nested/semi-structured data."
+      ]
+    },
+    {
+      "title": "CRUD Operations in MongoDB",
+      "objectives": [
+        "Perform create, read, update, and delete operations."
+      ]
+    },
+    {
+      "title": "Fundamentals of Data Transformation",
+      "objectives": [
+        "Build aggregation pipelines to process, transform, and analyze data."
+      ]
+    },
+    {
+      "title": "Indexing Design Fundamentals",
+      "objectives": [
+        "Design indexes that improve supported queries and reduce resource consumption."
+      ]
+    },
+    {
+      "title": "Query Optimization",
+      "objectives": [
+        "Diagnose and improve slow or inefficient queries."
+      ]
+    },
+    {
+      "title": "Sharding Strategies",
+      "objectives": [
+        "Design, implement, and manage sharded clusters for scale and performance."
+      ]
+    },
+    {
+      "title": "Monitoring Tooling",
+      "objectives": [
+        "Use monitoring tools, interpret CPU/query metrics, and configure alerts."
+      ]
+    },
+    {
+      "title": "Performance Tools and Techniques",
+      "objectives": [
+        "Use profiling, slow-query analysis, index/cache evidence, and system metrics."
+      ]
+    },
+    {
+      "title": "Data Resilience: Atlas",
+      "objectives": [
+        "Design resilient Atlas deployments with failover, backups, security, compliance, and workload isolation."
+      ]
+    },
+    {
+      "title": "Cluster Reliability",
+      "objectives": [
+        "Diagnose and resolve replication, sharding, availability, and performance issues."
+      ]
+    },
+    {
+      "title": "Secure MongoDB Atlas: Authentication and Authorization",
+      "objectives": [
+        "Configure authentication and authorization for Atlas and database access."
+      ]
+    },
+    {
+      "title": "Networking Security: Atlas",
+      "objectives": [
+        "Use IP access lists, peering, private endpoints, and encryption in transit."
+      ]
+    },
+    {
+      "title": "Encryption at Rest",
+      "objectives": [
+        "Configure Atlas encryption at rest and customer-managed key integration where required."
+      ]
+    }
+  ],
+  "historical_baseline_boundary": {
+    "reviewed_on": "2026-09-29",
+    "result": "Thirteen required public learning-path skill areas reconfirmed via full browser grid. Historical summaries retained as paraphrased public scope, not detailed exam objectives; current canonical document unavailable. No weighted objective or freshly unchanged detailed blueprint claim.",
+    "automated_monitor": "manual-review: canonical direct50-character shell lacks objective identity/body",
+    "browser_route": "Canonical landing30minutes/free/enrollment; publicly linked viewer500 andpublished asset403. No account/enrollment/token alteration.",
+    "public_skill_count": 13,
+    "objective_weights": null,
+    "retained_blueprint_sha256": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+    "retained_status_sha256": "d9bfa9f5fa33daa5402c14cac9b4dd53cbd6596b01e55c98234fd43c384adeb6",
+    "current_contract": "Main andcourse pages agree70questions95minutesonlineproctoredEnglishno prerequisiteUSD150; coursemultiplechoice. Pathseparateexam120minutes differs. No passing percentage/detailedpolicyinterior/bookingverification."
+  },
+  "source_reading_boundaries": {
+    "oreilly-official-mongodb-guide": "HTTP403. Earlier8h51/2025 metadata not reverified; no paid interior or quality/currentalignment claim.",
+    "mongodb-certification-path-update-2026": "Fresh7049-character capture; complete main/date/authors reading reused from immediately preceding DataModeler review. August18,2026 HeatherDavis/JoelLord,4minpublisherreading,path/badgealignment andadvertised50%fullpathdiscount. No examreplacement/eligibility claim.",
+    "mongodb-associate-atlas-administrator-exam": "Direct50-character shell. Firstbrowserattempttimeout then complete publicbrowsermain read:70questions95minonlineproctoredEnglishno prerequisiteUSD150; no passing score/policyinterior orbooking.",
+    "mongodb-associate-atlas-administrator-study-guide": "Direct50-character shell; full browserlanding30min/free/enrollment. PublicGetGuide viewer500/publishedasset403 retainedseparately. No content/account/enrollment oraccesscontrolalteration.13publicscope summaries remain not detailed examobjectives.",
+    "mongodb-atlas-administrator-path": "Direct50-character shell; complete295linebrowsermain/grid read.13requiredcards845min versus13hheadline;separate120minexamcard.50%fullpathdiscount advertisednoteligibilityverification; no interiors. Historicalv1May29replacementnotrechecked.",
+    "mongodb-associate-atlas-administrator-practice": "Direct50-character shell; complete shortbrowserlanding read.6hours/free/enrollment; no question/explanation interiors.",
+    "mongodb-atlas-documentation": "Complete7223-character main read. Corecoupledcompute/storage versusInfinitepublicpreview,edition-specific feature/region/restorelimits. No universalzero-downtime/resilience/optimality guarantee orpreviewdeployment.",
+    "mongodb-atlas-security-features": "Complete14393-character main read includingcontrolplaneinbound/outbound/gateway/TLS/OCSPnotes. Sharedresponsibility,databaseuser/networkdistinction andtransport/storageencryption. No credentials,perms,OCSPdisable orruntimechange. Broad feature availability not generalized across editions.",
+    "mongodb-atlas-monitoring-alerts": "Complete2938-character overview main read. Querytools,metrics,alerts/logexport/currentvslegacyintegrationlinks. Linkedinteriors not all audited; no metricscollection ornotification.",
+    "mongodb-atlas-cloud-backup": "Complete3376-character main read. Freeunavailable/Flexandhigheroverview,providerregionredundancy,requiredroles,shardedtopologyrestorelimits. No blanketPITeligibility orregionfailureguarantee inferred.",
+    "oreilly-mongodb-8-in-action-third": "HTTP403. Earlier16h46metadata not reverified; no paidcontents/currentalignment claim.",
+    "udemy-complete-mongodb-administration-guide": "HTTP403. Earlierabout11hourmetadata not reverified; no lessons/quality claim.",
+    "mongodb-atlas-cli-documentation": "Complete1604-character main plus currentbrowserpage read. atlas setup createsaccount/auth/database/user/IPentry/sampledata/shellconnection,notinventory. Browserselectorcurrent1.58.3. No install/setup/auth/localdeployment commands executed.",
+    "aws-mongodb-atlas-landing-zone": "Complete14779-character main read in2chunks. AuthorsIgorAlekseevAWS/AnujPanchalMongoDB. Architecture/epics include broadAdministratorAccessstaticAWSkey despiteleastprivilegelanguage; no-interruption/PrivateLinkencryption claims qualified, useAtlasTLS requirement. No linkedrepo/code cloned,Terraform/deploy/destroy orcredentials. No publicationdate asserted.",
+    "mongodb-atlas-course-exam": "Direct50-character shell; complete83linebrowsermain read.70multiplechoice95minUSD150Englishno prerequisiteonlineproctored; historicalavailableMay2,2024label notnewversionannouncement. Agreesmain,notpath120mincard.",
+    "mongodb-atlas-private-endpoints": "Complete8929-character direct main read. M10+/FreeFlexlimits,publicpathcoexistence,regionalizedconnectionchanges/possible downtime,multicloudregionalconstraints. Newnon-port-mappedGCPendpointsApril30,2027disablewatch. AWSconditionalportbodynotrenderedindirectcapture; indexedAWSexcerpton1024–65535seen butnoportrecipeadopted. Noactualnetworkchanges.",
+    "mongodb-atlas-network-guidance": "Complete20801-character main read includingexampleblocks. SeparateAPI/data-planeIP lists;introductionmislabelsIPfilteringasauthentication;TerraformAPI-keyaccessresourceunderprojectwording notdatabaseallowlistproof. Providerpeering/privateDNSconceptsread,not allcurrentlimitsindependentlyverified. No vendorcode copied/run orpermissiongrant.",
+    "mongodb-atlas-alert-basics": "Complete7135-character main read. Version7.0+dynamic tickets ->queuedreaders/writers foroverload;latergenericticketthresholdmustnotoverrideversioncaveat. Examplethresholdsnotworkloadlimits. Noalertengine/notificationrun.",
+    "mongodb-atlas-backup-compliance": "Complete15336-character main read in2chunks. Support/namedrepresentativeverification fordisable,empty-projectexception,retention/deletion/minimums/cost/terminatedcluster consequences. Extra-retentionafterprotectedperiodallowsauthorizeddeletion. No policyenabled orlegalcomplianceguarantee.",
+    "mongodb-atlas-restore-overview": "Complete4246-character main read. Coreonly,stopclientrequests,version/topologyconstraints,backup-specificviewroles. ErroneousCLIsectionplacesaccessListscreateunderrestoredetails andmislabelsdescribeaslist;notcopied/run. DedicatedCLIreferencesusedforsyntax;rolecontradictionleftunresolved.",
+    "mongodb-atlas-backup-guidance": "Complete16768-character main read inclCLI/Terraformexamples. Snapshot/oplog/PIT/recoverywarmingconcepts,policy/cost/distribution. Broadinstantaccess/minuteRPOguarantees andblanketdevtestno-backup recommendationqualified; noservicebenchmark. Provider2.xexamplesnotvalidated/copied/run; normalizedcapturecanomitduplicatebraces,notproofupstreamsyntaxerror.",
+    "mongodb-atlas-kms": "Complete17697-character main read. Networkunreachabilitydiffersfrominvalidcredentials/disabledkeys,nextvalidationbehavior,perclusterconfiguration,searchrebuild,InfiniteAWSonly/crossprojectrestorelimits. No KMSoutage/restart/keychange/test; no widenednetwork workaround adopted.",
+    "mongodb-atlas-api-auth": "Direct32800-character largelyAPI navigation; selectedterminalauthenticationsectionread. Complete indexedprimaryintroread separately:OAuth2clientcredentials recommended,legacyDigest,1hourtoken,tokenissuanceIPversusAPIcallallowlist distinction,Sep22,2026docupdate. Not allAPIendpointinteriors. No tokens/credentials/networkAPIrequest.",
+    "mongodb-atlas-cli-dbusers-list": "Complete2006-character main read. Explicitproject/profile,ProjectReadOnly,listpagination100default500max,resultsversuscompactarray. No actualCLI/binaryparse/liveinventory.",
+    "mongodb-atlas-cli-restores-list": "Complete1977-character main read. Dedicatedpluralcommandheading/syntax,listclusterarg/pagination;older singularsample differs. ProjectOwnerstatedhereversusbackuprolesoverview unresolved; no automaticgrant orCLIrun.",
+    "mongodb-atlas-cli-restores-describe": "Complete1485-character main read. Dedicatedpluralcommandheading/syntax,jobIDandrequiredclusterName;older singularsample. Rolemismatchwithoverviewrecorded; syntaxtemplatesunexecuted.",
+    "mongodb-atlas-cli-release-notes": "Initialguessedrelease-notesroute404retainedprivateearlierreceipt,correctedusingCLIhomeReadReleaseNoteslinktoatlas-cli-changelog. Fresh39751-character capture; selectedfirst95linesread current1.58.3September10,2026 through1.53.2March26,2026. Oldbrowserstable-routecachelooked9monthsold;currentdirectcaptureandhomeselectorcorroborateversion. Notcompletehistory; no install/upgrade.",
+    "mongodb-explain-results": "Fresh33197-character capture; selectedplan-cache/engine/counter/coveringreading reused from precedingDataModeler review. Notfullreference,realplan orperformanceproof.",
+    "mongodb-index-esr": "Fresh8172-character capture; complete mainreading reused from precedingDeveloper/DataModeler sequence. ESR/ERSselectivity/sortprefix/version-sensitive$inthreshold. No actualindex orbenchmark.",
+    "mongodb-atomicity-transactions": "Fresh3806-character capture; complete mainreading reused from precedingDeveloper review. Single-documentguard/expectedvalue andmulti-documentnon-atomicity. No MongoDBconcurrencyexecution.",
+    "mongodb-server-90-release-notes": "Fresh19617-character capture; selectedopeningpatchheadings/GeneralChanges throughearlymetrics reused from precedingDeveloper review. Upcoming9.0.0/9.0.1/9.0.2versusmanualcurrent/preview; noavailability/examversioninference."
+  },
+  "public_document_access_attempt": {
+    "url": "https://ti-pdf-uploads.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/8bhimmwz1f6c-2026_AtlasAdministratorExamGuide.pdf",
+    "source_route": "Canonical public landing -> Get the Guide -> published embedded viewer; viewer500. Published asset with download allowed; no account/enrollment/token modification.",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "catalog_findings": {
+    "required_minutes": [
+      60,
+      90,
+      50,
+      60,
+      90,
+      90,
+      60,
+      60,
+      45,
+      90,
+      60,
+      45,
+      45
+    ],
+    "required_total_minutes": 845,
+    "headline_minutes": 780,
+    "separate_exam_card_minutes": 120,
+    "learning_plus_card_minutes": 965,
+    "main_and_course_exam_minutes": 95,
+    "practice_landing_minutes": 360,
+    "studyguide_landing_minutes": 30,
+    "access_boundary": "Publicmain/cardmetadataonly; noquestion/paidlessoninteriors/enrollment/discounteligibility."
+  },
+  "mapping_scope": "13unweightedpubliclearningpathskills;notdetailedexamobjectives",
+  "technical_source_discrepancies": [
+    {
+      "source_id": "mongodb-atlas-restore-overview",
+      "observation": "Restore status section includes unrelated accessListscreate mutation andmislabelsdetailcommand.",
+      "response": "Dedicatedsyntaxreferencesused;templatesunexecuted."
+    },
+    {
+      "source_id": "mongodb-atlas-cli-restores-list",
+      "observation": "ProjectOwnerCLIroleversusbackup-specificoverviewviewroles;singularexamplesversuspluralheadings.",
+      "response": "Verifyactualversion/endpointauthorization;nograntorCLIrun."
+    },
+    {
+      "source_id": "mongodb-atlas-network-guidance",
+      "observation": "IPfilteringcalledauthentication;API-keyTerraformresourceunderprojectwording.",
+      "response": "Separatesource/identity/actionandcontrol/dataplanes;nocodecopy."
+    },
+    {
+      "source_id": "aws-mongodb-atlas-landing-zone",
+      "observation": "AdministratorAccessstatic-keyexampleunderleastprivilegemessaging.",
+      "response": "Architecturecontextonly;noaccount/key/Terraformaction."
+    }
+  ]
+}

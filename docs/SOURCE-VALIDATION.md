@@ -1771,6 +1771,8 @@ The review maps all eight weighted domains through requirements and ownership, e
 
 ## MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR coverage record
 
+The September 29 [deep review](research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md) maps 13 unweighted public learning-path skills; detailed exam objectives remain unavailable. Reconfirmed13public path skills while detailed current objectives remain unavailable. Added40 answered prompts,36 actual Python/SQLitechecks,threeworkedscenarios andeightproposedlabs. Clarifiedcontrol/dataaccess,pagination,poolbudgets,alerts,edition/KMS/backupboundaries andrecoveryidentity/timing; correctedrestorecommandguidance andcatalogdurations. LiveAtlas,detailedscope,paidinteriors andhumanreview remainpending. Current guide citations: 31 registered, 28 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 7, 2026
 - Outcome: **public sources + official learning-path scope checked; enrolled-objective reconciliation still required**
 - Official public scope: 13 current required path skills—MongoDB Overview; CRUD Operations; Fundamentals of Data Transformation; Indexing Design Fundamentals; Query Optimization; Sharding Strategies; Monitoring Tooling; Performance Tools and Techniques; Data Resilience: Atlas; Cluster Reliability; Secure MongoDB Atlas: AuthN and AuthZ; Networking Security: Atlas; and Encryption at Rest

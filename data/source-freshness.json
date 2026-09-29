@@ -4,6 +4,231 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-mongodbassociateatlasadministrator-deep-review",
+      "title": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "results": [
+        {
+          "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+          "baseline_sha256": "3934d05bbd3c5b7772081c0e8bdfa0b230e0b60fd6fb2d47ed841a50f0ea2966",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "13publicskillareaspresent,notdetailedobjectives. Canonicalviewer500asset403;historicalsnapshotsretained. Main/course70/95agree;path120minexamcarddiffers."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "PrimaryAtlasnetwork/security/backup/restore/KMS/alert/CLIreferencesreadwithper-sourcebounds;36actualPythonSQLitechecks,noliveAtlas."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "CLI1.58.3Sep10changelogselectedentries,currentInfiniteprevieweditioncontext,GCPendpointApril30,2027watch andserver9Upcomingcontextrecorded. Noexamscopeinference."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Required845min14h05versus13hheadline;120minexamcardversus95minmain/course. Practice6hlandingonly;3paid403oldmetadataunverified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Detailedcanonicalbodyunavailable;restoreoverviewwrongCLIcommand androle/samplediscrepancies recorded. AWSbroadgrant,networkIP/authwording andbackupruntimeclaimsqualified;livehumanpending."
+            }
+          },
+          "findings": [
+            {
+              "id": "mongodbassociateatlasadministrator-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Detailed objective body unavailable",
+              "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "13publicskill summaries cannot establish detailedweightedexamscope;viewer500asset403.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Path timing differs from visible cards and exam",
+              "url": "https://learn.mongodb.com/learning-paths/mongodb-atlas-admin-certification-learning-path",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Required845min versus13hheadline;120minexamcardversus95minexamroute.",
+              "recommendation": "Show allpublishedmeasures andpublicreadingboundary.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-administrator-path",
+              "resolution": "Show allpublishedmeasures andpublicreadingboundary."
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Restore status section includes an unrelated mutation",
+              "url": "https://www.mongodb.com/docs/atlas/backup/cloud-backup/restore-overview/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "OverviewusesaccessListscreateforrestoredetails anddescribeaslist.",
+              "recommendation": "Use dedicatedlistsyntax/detailreferences andmarktemplatesunexecuted; neverrununrelatedmutation.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-restore-overview",
+              "resolution": "Use dedicatedlistsyntax/detailreferences andmarktemplatesunexecuted; neverrununrelatedmutation."
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-4",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Restore role and example syntax differ between pages",
+              "url": "https://www.mongodb.com/docs/atlas/cli/current/command/atlas-backups-restores-list/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CLIstatesProjectOwner whileoverviewlistsbackupviewroles;older singularsamplesversuspluralheadings.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Source permission is not identity and scopes differ",
+              "url": "https://www.mongodb.com/docs/atlas/architecture/current/network-security/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IntroIPauthenticationwordingandAPI-keyTerraformresourceunderprojectaccesscontextcanmislead.",
+              "recommendation": "Teachseparatecontrol/dataplaneIP lists,identity andeffectiveactiontests.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-network-guidance",
+              "resolution": "Teachseparatecontrol/dataplaneIP lists,identity andeffectiveactiontests."
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "KMS connectivity failure is not identical to invalid key",
+              "url": "https://www.mongodb.com/docs/atlas/security-kms-encryption/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Currentreference distinguishesnetworkoutagefrominvalidcredentials/deletedkeyatvalidation.",
+              "recommendation": "Preservespecificfailurebehavior andedition/restorelimits withoutavailabilityguarantee.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-kms",
+              "resolution": "Preservespecificfailurebehavior andedition/restorelimits withoutavailabilityguarantee."
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Restore completion alone is incomplete recovery evidence",
+              "url": "https://www.mongodb.com/docs/atlas/architecture/current/backups/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Snapshotreplay,validation,warming/cutover andexactidentitiesmatter;genericRPOlanguageisnotmeasured.",
+              "recommendation": "Add actualSQLitecounterexample and47minuteassumedtimeline withAtlasboundary.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-backup-guidance",
+              "resolution": "Add actualSQLitecounterexample and47minuteassumedtimeline withAtlasboundary."
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Example broad credentials conflict with least-privilege goal",
+              "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PatternasksAWSAdministratorAccessstatickeydespiteleastprivilegeframing.",
+              "recommendation": "Use architectureascontext; requireexplicitnarrowroles anddo notcopy/executecredentialrecipe.",
+              "disposition": "applied",
+              "source_id": "aws-mongodb-atlas-landing-zone",
+              "resolution": "Use architectureascontext; requireexplicitnarrowroles anddo notcopy/executecredentialrecipe."
+            },
+            {
+              "id": "mongodbassociateatlasadministrator-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Private endpoint creation does not close public route",
+              "url": "https://www.mongodb.com/docs/atlas/security-private-endpoint/?cloud-provider=aws",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Othermethodsremainpossible;non-port-mappedGCPendpointsdeprecatedApril30,2027.",
+              "recommendation": "Inventoryallroutes andtreatdateddeprecationasproductwatch.",
+              "disposition": "applied",
+              "source_id": "mongodb-atlas-private-endpoints",
+              "resolution": "Inventoryallroutes andtreatdateddeprecationasproductwatch."
+            }
+          ],
+          "notes": "Reconfirmed13public path skills while detailed current objectives remain unavailable. Added40 answered prompts,36 actual Python/SQLitechecks,threeworkedscenarios andeightproposedlabs. Clarifiedcontrol/dataaccess,pagination,poolbudgets,alerts,edition/KMS/backupboundaries andrecoveryidentity/timing; correctedrestorecommandguidance andcatalogdurations. LiveAtlas,detailedscope,paidinteriors andhumanreview remainpending. Same-context AI review; human review pending. See docs/research/2026-09-29-mongodb-associate-atlas-administrator-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-29-mongodbassociatedatamodeler-deep-review",
       "title": "MONGODB-ASSOCIATE-DATA-MODELER complete guide and learning-content review",
       "rubric_version": 1,
