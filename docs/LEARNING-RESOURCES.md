@@ -3531,6 +3531,27 @@ No exact current MeasureUp or Whizlabs CLE-10-01 practice product was verified. 
 
 **Source boundaries.** OpenEDG's full public landing lists 42 hours, suggested seven hours/week, English and six modules (0–5). Its Beginner/Basics versus Intermediate labels and shorthand equating arrays/pointers are inconsistent; the canonical syllabus and precise language rules govern this guide. Course lessons were not entered. SEI's development index warns that pages may be incomplete; selected rule examples contain placeholders or malformed/incomplete snippets. The original programs here do not copy those snippets or treat their error comments as working branches. In particular, the off-by-one illustration needs a nonzero-capacity contract, sizeof's unevaluated-operand shorthand has a VLA exception, and snprintf's displayed example is not a compilable general truncation check. Broader exploit histories, analyzer claims and library extensions are outside this review's teaching changes. No paid course interior, current booking, video transcript, sanitizer session or human review was completed.
 
+### PCAP-31-03 — PCAP Certified Associate Python Programmer
+
+Resource details from the [PCAP-31-03 guide](../guides/PCAP-31-03-python-certified-associate-python-programmer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list and is not meant to be consumed in full. Choose one coherent primary course, build multi-module programs for every section, and use an explanation-led assessment only to locate gaps. Reconcile every resource against the official syllabus, especially during the PCAP-31-04 transition.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [PCAP-31-03 syllabus](https://pythoninstitute.org/pcap-exam-syllabus) | Free official blueprint | 2–3 hours to map and recheck |
+| [Python Essentials 2](https://edube.org/study/pe2) | Free official aligned course; public four-module listing read; account for study | Provider lists 58 hours, suggested 7/week |
+| [Cisco Python Essentials 2](https://www.netacad.com/courses/python-essentials-2) | Official partner link; direct response was a shell, curriculum not inspected | Author budget 40–60 hours; runtime unverified |
+| [Official PCAP practice-test compendium](https://ums.edube.org/products/1-pi-pcap-3103-pt) | Paid official practice; public product details only, no questions inspected | Author budget 5–8 hours including remediation |
+| [Python tutorial](https://docs.python.org/3/tutorial/) and [library reference](https://docs.python.org/3/library/) | Free primary documentation; use the pinned topic links above | Author budget 12–20 selected hours plus coding |
+| [Python 3 Object-Oriented Programming, 4th ed.](https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/) | O'Reilly subscription/book; request blocked, current contents/edition not verified | Author budget 15–25 selected hours |
+| [Pluralsight: Python 3 path](https://www.pluralsight.com/paths/python-3) | Subscription; public 16-course/21-lab path, broad rather than PCAP aligned | Provider total 53 hours; author suggests 12–20 selected hours |
+| [CS50's Introduction to Programming with Python](https://cs50.harvard.edu/python/) | Free ten-week OpenCourseWare; account for submission/feedback; public landing reviewed | Author budget 20–35 selected hours |
+
+OpenEDG’s course listing also covers PIP, generators and additional libraries; those do not override the 21 numbered exam objectives. Its retained 31-02/31-03 alignment merits checking during the transition. The practice landing lists USD 49, a 12-month redemption period and five launches per test, with no official exam attempt included (**VERIFY CURRENT**). Its Test Candidate redemption wording conflicts with the credential page’s Learner instructions; current account navigation was not verified. No enrollment, voucher, checkout, paid questions or external message was used in this review.
+
+No exact current PCAP-31-03 course or practice exam from MeasureUp or Whizlabs was independently verified. Marketplace courses can lag an exam transition; verify their exact code, syllabus coverage, runtime, and update date before purchase.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

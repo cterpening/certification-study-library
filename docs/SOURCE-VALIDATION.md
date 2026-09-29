@@ -2033,6 +2033,8 @@ SHA-256:
 
 ## PCAP-31-03 coverage record
 
+The September 29 [deep review](research/2026-09-29-pcap-31-03-deep-review.md) maps 21 detailed objectives. Mapped all 21 numbered objectives and improved all 27 answers. Twelve exact public Python blocks executed, including a real seven-file report package, strict Unicode/checksum program and unique-ID sampler. CPython 3.13.14 passed 78 core and 98 additional scenario/language checks. Corrected import caching, sample identity, classification, exception flow, MRO and stream boundaries; provider duration updated to 58 hours. Source/policy conflicts, paid access and human review remain explicit. Current guide citations: 31 registered, 23 reachable, 1 access-blocked, 7 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Modules and Packages (12%); Exceptions (14%); Strings (18%); Object-Oriented Programming (34%); Comprehensions, Lambdas, Closures, and I/O (22%)

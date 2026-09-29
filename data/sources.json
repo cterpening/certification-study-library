@@ -3,6 +3,188 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "python-pcap-testnow-policies",
+      "title": "Python Institute PCAP TestNow policies",
+      "url": "https://www.pythoninstitute.org/pcap-testing-policies",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Direct fetch and web open failed; complete indexed policy content read. PCAP proctored delivery and 15-day failed retake are explicit, but generic Additional Information footer says usually seven days after fail/pass. November 18 2025 revision shown. Exam-specific rule retained with visible contradiction. Admission/security/technical descriptions were read, not account or diagnostic execution. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python-pvue-policies",
+      "title": "Python Institute Pearson VUE policies",
+      "url": "https://pythoninstitute.org/pvue-testing-policies",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Direct/open failed. Indexed public excerpts read for available PCAP-31-03, proctored center/OnVUE delivery, scheduling, accommodations and retakes: fifteen days after failure, no same-version passed retake. Not a full policy audit, system requirement verification or current booking UI review. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pcap-japanese-credential",
+      "title": "Python Institute Japanese PCAP credential page",
+      "url": "https://pythoninstitute.org/ja/pcap",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Direct request failed. Indexed public localized credential table read for current/announced codes and lifetime validity. It differs from English five-year wording; localized content is a contradiction signal, not a replacement English baseline or complete Japanese site audit. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pcap-syllabus-pdf",
+      "title": "Python Institute PCAP-31-03 syllabus PDF",
+      "url": "https://pythoninstitute.org/assets/627e61fa6fe27591613128.pdf",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Direct request and web PDF open failed. Indexed cover/table excerpt only read: March7 2022, active 31-03, five item/weight/section raw-score totals. No full PDF content, local genuine PDF, page screenshot or whole-PDF scope comparison claimed. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-modules",
+      "title": "Python 3.13 modules and packages",
+      "url": "https://docs.python.org/3.13/tutorial/modules.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Complete chapter body read: import variants, module globals/caching, direct entry, search path, pycache, dir, packages, star exports and relative imports. Original temporary package and independent fixture modules executed; no vendor sample copied. Tutorial shorthand about main/relative imports is qualified by actual python -m package-context demonstration. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-math",
+      "title": "Python 3.13 math library",
+      "url": "https://docs.python.org/3.13/library/math.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Selected complete entries ceil, floor, trunc, factorial, sqrt and hypot read; not the full 24177-character module. Integral-valued floats rejected by factorial since 3.10; original exact-value/domain checks executed on 3.13.14. No higher math/numeric accuracy guarantees inferred. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-random",
+      "title": "Python 3.13 random library",
+      "url": "https://docs.python.org/3.13/library/random.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Complete selected entries seed, choice, sample, random and reproducibility section read; not the full 25913-character module. Repeated population values remain possible; sample requires a sequence in 3.13. Compatible-seeder random() guarantee does not promise all sample algorithms across versions. Original isolated-generator tests check same-runtime replay/population/global-state preservation; not statistical quality or secrecy. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-platform",
+      "title": "Python 3.13 platform library",
+      "url": "https://docs.python.org/3.13/library/platform.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Seven scoped entry descriptions read: platform, machine, processor, system, version, python_implementation, python_version_tuple. Not a full 12713-character platform audit. Original calls executed, validating reported value types without hardcoding OS/processor strings or parsing human display output. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-io-tutorial",
+      "title": "Python 3.13 file input and output",
+      "url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Complete Reading and Writing Files section7.2 read, including methods and structured-data context. Encoding, newline, EOF, closure and write-count contracts applied. JSON/pickle context read but not added as exam objectives; no full 19739-character chapter audit. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-io",
+      "title": "Python 3.13 stream library",
+      "url": "https://docs.python.org/3.13/library/io.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Selected complete RawIOBase.readinto, BufferedIOBase.readinto and TextIOBase.write entries read; not full 40475-character stream reference. Actual blocking regular files and bytearray valid-prefix reads tested. Nonblocking None/BlockingIOError differences documented as out-of-demo scope, not exercised. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-errno",
+      "title": "Python 3.13 symbolic error numbers",
+      "url": "https://docs.python.org/3.13/library/errno.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Selected ENOENT, EACCES and EEXIST entries read. Original missing-file exception/ENOENT and exclusive-create failure exercised. No actual permission change, broad error recovery, full 9691-character errno audit or OS failure injection. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-compound",
+      "title": "Python 3.13 try statement",
+      "url": "https://docs.python.org/3.13/reference/compound_stmts.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Complete try-statement section read, including except, except-star, else and finally. Guide uses ordinary handlers; exception groups are context only. Normal fall-through excludes return/break/continue. Actual traces and re-raise traceback check executed; no full 56960-character compound-statement audit. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "python313-csv",
+      "title": "Python 3.13 CSV library",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "publisher": "Python Software Foundation",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 PCAP-31-03 deep review: Complete writer and writerow entry descriptions read. Original one-column renderer round-tripped commas/quotes/newlines/Unicode/empty values through actual writer/reader. Not full 22245-character reference or spreadsheet-application audit; CSV is supporting scenario context, not an additional objective. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "c11-n1570",
       "title": "WG14 N1570 C11 committee draft",
       "url": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf",
@@ -726,10 +908,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "PCEP-30-02"
+        "PCEP-30-02",
+        "PCAP-31-03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCEP-30-02 deep review: Selected sections read: all More on Lists subsections, del, tuples, dictionaries, looping techniques and conditions. Mutating method return differences, shallow copying, tuple-contained mutables and mapping membership incorporated. Set/deque/zip references seen as supporting context, not added exam requirements; entire chapter not claimed. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCEP-30-02 deep review: Selected sections read: all More on Lists subsections, del, tuples, dictionaries, looping techniques and conditions. Mutating method return differences, shallow copying, tuple-contained mutables and mapping membership incorporated. Set/deque/zip references seen as supporting context, not added exam requirements; entire chapter not claimed. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Complete list-comprehensions and nested-list-comprehensions sections read. Not full 23868-character chapter. Original tuple-order/filter checks executed; no copied vendor examples. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-expressions",
@@ -754,10 +937,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "PCEP-30-02"
+        "PCEP-30-02",
+        "PCAP-31-03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCEP-30-02 deep review: Sections 8.1–8.4 read: syntax, runtime exceptions, handling and raising. NameError versus syntax rejection, first matching handler and propagation through function boundaries incorporated. Fixed original snippets executed; linked or later exception-group chapters not adopted. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCEP-30-02 deep review: Sections 8.1–8.4 read: syntax, runtime exceptions, handling and raising. NameError versus syntax rejection, first matching handler and propagation through function boundaries incorporated. Fixed original snippets executed; linked or later exception-group chapters not adopted. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Selected handling, raising, user-defined, cleanup and predefined-cleanup sections read completely. Original hierarchy/control-flow/file-cleanup traces executed. No full 22087-character chapter audit, no adoption of broader exception-group objectives. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-exceptions",
@@ -782,10 +966,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "PCEP-30-02"
+        "PCEP-30-02",
+        "PCAP-31-03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCEP-30-02 deep review: Sections 9.1–9.2 including scopes example and 9.9 generators read. Names/objects, assignment, global scope, deferred generator body and StopIteration inform original traces. Classes, inheritance and nonlocal examples are supporting reference context, not added PCEP scope. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCEP-30-02 deep review: Sections 9.1–9.2 including scopes example and 9.9 generators read. Names/objects, assignment, global scope, deferred generator body and StopIteration inform original traces. Classes, inheritance and nonlocal examples are supporting reference context, not added PCEP scope. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Selected class objects, instance objects, method objects, class/instance variables, inheritance including multiple inheritance, and private variables read. Not whole 34814-character chapter. Original MRO and state/mangling examples executed; inherited initialization and lookup boundaries explained without treating tutorial shorthand as a universal descriptor algorithm. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-lexical",
@@ -824,10 +1009,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "PCEP-30-02"
+        "PCEP-30-02",
+        "PCAP-31-03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCEP-30-02 deep review: Complete compile, input, int, float and print entries read. Fixed string compilation, actual input with simulated stdin and captured prompts, integer truncation and conversion failures exercised. Full built-in catalog not audited; no untrusted code execution. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCEP-30-02 deep review: Complete compile, input, int, float and print entries read. Fixed string compilation, actual input with simulated stdin and captured prompts, integer truncation and conversion failures exercised. Full built-in catalog not audited; no untrusted code execution. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Selected hasattr, isinstance, sorted, map, filter and super entries read completely. Not whole 77893-character reference. Actual lookup errors, lazy consumption and sibling cooperative MRO tested. Version-specific later additions not inferred from unversioned docs. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-types",
@@ -838,10 +1024,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "PCEP-30-02"
+        "PCEP-30-02",
+        "PCAP-31-03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 PCEP-30-02 deep review: Selected string upper/find/split, dictionary view objects, truth value testing and common sequence operations read. Return types, dynamic views, repetition aliases and slicing inform traces. Full 173181-character reference capture is not a full-document reading claim. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "September 29 PCEP-30-02 deep review: Selected string upper/find/split, dictionary view objects, truth value testing and common sequence operations read. Return types, dynamic views, repetition aliases and slicing inform traces. Full 173181-character reference capture is not a full-document reading claim. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Selected complete str entries isalpha, isalnum, isdecimal, isdigit, isnumeric, islower, isupper, isspace, isascii, join, split, strip, find, rfind and index read. Not whole 173181-character built-in types reference. Empty/cased/numeric-classification repairs tested on original strings; no wholeUnicode-standard audit. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "crisc-2025-update",
@@ -9108,10 +9295,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "XK0-006"
+        "XK0-006",
+        "PCAP-31-03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 XK0-006 deep review: Targeted SHA-256 and file_digest API for actual synthetic-file checks; a hash is not independent proof of origin. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution."
+      "notes": "September 29 XK0-006 deep review: Targeted SHA-256 and file_digest API for actual synthetic-file checks; a hash is not independent proof of origin. See docs/research/2026-09-29-xk0-006-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Usage subsection read: byte input and digest versus hexadecimal representation. Not full 27649-character hashing reference. Original catalog SHA256 digest checked for exact captured raw bytes including whitespace/newlines and empty input. Checksum is not authenticity; no cryptographic implementation/security assessment. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "comptia-sy0-701-objectives-pdf",
@@ -10067,10 +10255,11 @@
       "access_model": "public",
       "supported_exams": [
         "FC0-U71",
-        "PCEP-30-02"
+        "PCEP-30-02",
+        "PCAP-31-03"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 29 PCEP-30-02 deep review: Selected sections read: if, for, range, break/continue, loop else, pass, defining functions, default arguments and keyword arguments. Explicit return/exception loop exits and one-time mutable default evaluation inform repairs. Full tutorial chapter and linked advanced sections not claimed. Versioned 3.13 page displays 3.13.15; local execution uses 3.13.14. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 FC0-U71 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-fc0-u71-deep-review.md No live infrastructure execution. September 29 PCEP-30-02 deep review: Selected sections read: if, for, range, break/continue, loop else, pass, defining functions, default arguments and keyword arguments. Explicit return/exception loop exits and one-time mutable default evaluation inform repairs. Full tutorial chapter and linked advanced sections not claimed. Versioned 3.13 page displays 3.13.15; local execution uses 3.13.14. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Lambda Expressions section read completely, including enclosing-scope example and callback use. Not full 36778-character chapter. Original late/default capture and factory behavior executed; default object binding distinguished from a deep copy. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "python313-sqlite3",
@@ -54991,7 +55180,7 @@
         "PCEP-30-02",
         "PCAP-31-03"
       ],
-      "notes": "Authoritative current Python 3 language tutorial for validating stable syntax and behavior; broader than the entry-level boundary. September 29 PCEP-30-02 deep review: Complete tutorial index/introduction read; capture displays Python 3.14.7. It explicitly targets programmers new to Python and does not claim to be exhaustive. Index retrieval is not full tutorial completion. Detailed behavior was researched in separately registered versioned 3.13 pages; existing local interpreter is 3.13.14. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "Authoritative current Python 3 language tutorial for validating stable syntax and behavior; broader than the entry-level boundary. September 29 PCEP-30-02 deep review: Complete tutorial index/introduction read; capture displays Python 3.14.7. It explicitly targets programmers new to Python and does not claim to be exhaustive. Index retrieval is not full tutorial completion. Detailed behavior was researched in separately registered versioned 3.13 pages; existing local interpreter is 3.13.14. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Complete 7108-character public tutorial landing and contents read. It targets programmers new to Python, not necessarily first-time programmers. The landing is Python 3.14.7; selected separately registered 3.13 chapters support tested examples. No claim that all linked chapters were read. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "openedg-python-essentials-1",
@@ -55095,7 +55284,7 @@
       "id": "harvard-cs50-python",
       "title": "CS50's Introduction to Programming with Python",
       "url": "https://cs50.harvard.edu/python/",
-      "publisher": "Harvard University / CS50",
+      "publisher": "OpenEDG Python Institute",
       "authority_class": 2,
       "source_type": "third-party-training",
       "access_model": "public",
@@ -55104,7 +55293,7 @@
         "PCEP-30-02",
         "PCAP-31-03"
       ],
-      "notes": "Free OpenCourseWare with lectures, notes, transcripts and problems. It is not certification-aligned; select the portions that match the current objective map. September 29 PCEP-30-02 deep review: Direct HTTP timeout; complete current public landing read through web reader. Ten-week free OpenCourseWare, first four topics functions/variables, conditionals, loops and exceptions. No lectures, problem sets, final project, account or submission. Selective 15–25 hours is author judgment, not a provider duration. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      "notes": "Free OpenCourseWare with lectures, notes, transcripts and problems. It is not certification-aligned; select the portions that match the current objective map. September 29 PCEP-30-02 deep review: Direct HTTP timeout; complete current public landing read through web reader. Ten-week free OpenCourseWare, first four topics functions/variables, conditionals, loops and exceptions. No lectures, problem sets, final project, account or submission. Selective 15–25 hours is author judgment, not a provider duration. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution. September 29 PCAP-31-03 deep review: Direct request timed out. Complete public course landing read through indexed web fallback: ten weeks 0–9 plus final project, free OpenCourseWare, edX account for submission/feedback and optional certificate. Course topics include broader regex/testing. No lectures, problem interiors, submissions or paid certificate reviewed; 20–35 selected hours is an author estimate. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "youtube-freecodecamp-python-beginner",
@@ -55571,31 +55760,138 @@
       "notes": "Popular free approximately 3h46m 2018 introduction. Useful for fundamentals but older and not exact current CLE coverage. September 29 CLE-10-01 deep review: HTTP200 with 199-character title/shell body. No transcript or playback; prior approximately 3h46m runtime not verified. Landing success is not lesson review. See docs/research/2026-09-29-cle-10-01-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcap-31-03-syllabus","title":"PCAP-31-03 Exam Syllabus","url":"https://pythoninstitute.org/pcap-exam-syllabus","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAP-31-03"],"notes":"Canonical five-section 12/14/18/34/22 syllabus, detailed objectives and March 7, 2022 baseline for the current PCAP-31-03 exam."
+      "id": "pcap-31-03-syllabus",
+      "title": "PCAP-31-03 Exam Syllabus",
+      "url": "https://pythoninstitute.org/pcap-exam-syllabus",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "notes": "Canonical five-section 12/14/18/34/22 syllabus, detailed objectives and March 7, 2022 baseline for the current PCAP-31-03 exam. September 29 PCAP-31-03 deep review: Direct request and objective monitor failed; web open also failed, but indexed public English syllabus content was returned completely and read. Active 31-03, March 7 2022 baseline, all 21 numbered objectives in 5/2/3/6/5 groups. Weights 12/14/18/34/22 and items 6/5/8/12/9 manually compared with retained snapshot. HTML per-item maximum wording differs from PDF cover section raw totals; no inferred equal scoring or successful automated hash comparison. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pcap-certification-page","title":"PCAP Certified Associate Python Programmer","url":"https://pythoninstitute.org/pcap","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAP-31-03"],"notes":"Current version, delivery, price, languages, validity, prerequisites, retake policy, aligned training and PCAP-31-04 Q3 2026 transition announcement."
+      "id": "pcap-certification-page",
+      "title": "PCAP Certified Associate Python Programmer",
+      "url": "https://pythoninstitute.org/pcap",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "notes": "Current version, delivery, price, languages, validity, prerequisites, retake policy, aligned training and PCAP-31-04 Q3 2026 transition announcement. September 29 PCAP-31-03 deep review: Complete current English credential page read via web reader after direct timeout. Active 31-03, 31-04 still in development with Q3 2026 announcement; no calendar-derived launch. Five-year validity conflicts with Japanese lifetime wording. Exam/channel/pricing/retake metadata are dated; generic PCEP FAQ label is a copy issue. Practice redemption says Learner, unlike public store Test Candidate wording. No booking/account/checkout or salary/job-market marketing adopted. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"python-3-documentation","title":"Python 3 Documentation","url":"https://docs.python.org/3/","publisher":"Python Software Foundation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAP-31-03","PCPP-32-101","PCED-30-02","PCAD-31-02","PCES-30-01","PANW-XSOAR-ENGINEER"],"notes":"Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus."
+      "id": "python-3-documentation",
+      "title": "Python 3 Documentation",
+      "url": "https://docs.python.org/3/",
+      "publisher": "Python Software Foundation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03",
+        "PCPP-32-101",
+        "PCED-30-02",
+        "PCAD-31-02",
+        "PCES-30-01",
+        "PANW-XSOAR-ENGINEER"
+      ],
+      "notes": "Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus. September 29 PCAP-31-03 deep review: Complete 3232-character documentation index read: unversioned landing is 3.14.7 and exposes other versions. This is release/documentation context, not evidence of an exam-required version or an audit of all linked change logs. Existing local CPython 3.13.14 was used without installation. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"python-3-library-reference","title":"Python Standard Library","url":"https://docs.python.org/3/library/","publisher":"Python Software Foundation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PCAP-31-03","PCPP-32-101","PCEA-30-01"],"notes":"Canonical library reference for targeted operations, I/O, GUI, networking, persistence, data formats, logging, configuration and environment behavior."
+      "id": "python-3-library-reference",
+      "title": "Python Standard Library",
+      "url": "https://docs.python.org/3/library/",
+      "publisher": "Python Software Foundation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03",
+        "PCPP-32-101",
+        "PCEA-30-01"
+      ],
+      "notes": "Canonical library reference for targeted operations, I/O, GUI, networking, persistence, data formats, logging, configuration and environment behavior. September 29 PCAP-31-03 deep review: Fresh 13544-character index captured. Introduction and opening navigation through functional-programming modules read; remaining library table not audited. Index supports navigation only; separately registered exact topic pages carry technical claims. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-python-essentials-2","title":"Python Essentials - Part 2","url":"https://edube.org/study/pe2","publisher":"OpenEDG Python Institute / Edube","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["PCAP-31-03"],"notes":"Free officially aligned intermediate course. Plan approximately 40 to 50 hours including labs and verify the live course details."
+      "id": "openedg-python-essentials-2",
+      "title": "Python Essentials - Part 2",
+      "url": "https://edube.org/study/pe2",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "notes": "Free officially aligned intermediate course. Plan approximately 40 to 50 hours including labs and verify the live course details. September 29 PCAP-31-03 deep review: Complete 3876-character public landing read: free intermediate course, four modules, 58 hours and seven/week recommendation; lists both retired 31-02 and 31-03 alignment. PIP, generators and extra os/datetime/time/calendar topics extend beyond the numbered PCAP scope. Old 40–50-hour estimate replaced with provider total. No enrollment, lesson, assessment or account review. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"openedg-pcap-31-03-practice","title":"PCAP-31-03 Practice Test Compendium","url":"https://ums.edube.org/products/1-pi-pcap-3103-pt","publisher":"OpenEDG Python Institute","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCAP-31-03"],"notes":"Official USD 49 exam-version-specific practice product with study pages, section sets, and up to five practice launches. Use it to identify weak domains, not to define technical truth."
+      "id": "openedg-pcap-31-03-practice",
+      "title": "PCAP-31-03 Practice Test Compendium",
+      "url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "notes": "Official USD 49 exam-version-specific practice product with study pages, section sets, and up to five practice launches. Use it to identify weak domains, not to define technical truth. September 29 PCAP-31-03 deep review: Complete 3333-character public store metadata read. USD49 practice-only product, no official attempt; twelve-month redemption and up to five launches per test stated. Test Candidate redemption wording conflicts with English main Learner instruction. Static cart modal text is page markup, not a purchase action. Paid questions, answer explanations, actual timing, navigation and checkout not inspected; 5–8 hours is author budget. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"cisco-python-essentials-2","title":"Python Essentials 2","url":"https://www.netacad.com/courses/python-essentials-2","publisher":"Cisco Networking Academy / OpenEDG Python Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["PCAP-31-03"],"notes":"Official partner course aligned to the associate path. Plan approximately 40 hours and verify current access and runtime on the live listing."
+      "id": "cisco-python-essentials-2",
+      "title": "Python Essentials 2",
+      "url": "https://www.netacad.com/courses/python-essentials-2",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "notes": "Official partner course aligned to the associate path. Plan approximately 40 hours and verify current access and runtime on the live listing. September 29 PCAP-31-03 deep review: HTTP200 with only a 60-character shell. Partner link remains, but course curriculum/runtime/account access not inspected. Forty–sixty hours is an author planning budget, not verified provider runtime. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-python-3-object-oriented-fourth","title":"Python 3 Object-Oriented Programming, 4th Edition","url":"https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/","publisher":"O'Reilly / Packt / Dusty Phillips, Steven F. Lott","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCAP-31-03","PCPP-32-101"],"notes":"Broad object-oriented Python book. Select 15–25 hours for PCAP or advanced OOP/design material for PCPP1; much of the book exceeds either single blueprint."
+      "id": "oreilly-python-3-object-oriented-fourth",
+      "title": "Python 3 Object-Oriented Programming, 4th Edition",
+      "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03",
+        "PCPP-32-101"
+      ],
+      "notes": "Broad object-oriented Python book. Select 15–25 hours for PCAP or advanced OOP/design material for PCPP1; much of the book exceeds either single blueprint. September 29 PCAP-31-03 deep review: HTTP403. Retained historical resource title is not a fresh edition/contents verification. No subscriber interior accessed; 15–25 selected hours is an author estimate. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-python-3-path","title":"Python 3","url":"https://www.pluralsight.com/paths/python-3","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["PCAP-31-03"],"notes":"Broad Python 3 path rather than an exact PCAP course. Select approximately 12 to 20 hours based on objective gaps."
+      "id": "pluralsight-python-3-path",
+      "title": "Python 3",
+      "url": "https://www.pluralsight.com/paths/python-3",
+      "publisher": "OpenEDG Python Institute",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "PCAP-31-03"
+      ],
+      "notes": "Broad Python 3 path rather than an exact PCAP course. Select approximately 12 to 20 hours based on objective gaps. September 29 PCAP-31-03 deep review: Complete 12961-character public path page read: 16 courses, 21 labs and 53 total hours, with public titles/dates/durations and prerequisites. Broad database/API/regex/design-pattern content is not PCAP scope. Original code does not copy course labs; paid interiors/playback not reviewed. Selected 12–20 hours is an author budget. See docs/research/2026-09-29-pcap-31-03-deep-review.md No live infrastructure execution."
     },
     {
       "id":"jsa-41-01-syllabus","title":"JSA-41-01 Exam Syllabus","url":"https://jsinstitute.org/jsa-exam-syllabus","publisher":"OpenEDG JS Institute","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["JSA-41-01"],"notes":"Canonical active exam syllabus with all 40 named objectives, four weighted blocks, item distribution, passing requirement, minimally qualified candidate profile and September 22, 2025 baseline."

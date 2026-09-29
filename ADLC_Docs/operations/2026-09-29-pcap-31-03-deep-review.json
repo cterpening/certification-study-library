@@ -1,0 +1,1922 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "PCAP-31-03",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "b7b76a3b545673253ff5115225fcdf7029cbc7ae17696d4508602297b3a7a25d",
+  "guide_after_sha256": "3b0e33642296709af65411b2700b0586362b059fab67ea664e18b54b6baa3bbd",
+  "prior_records": {
+    "exam": {
+      "code": "PCAP-31-03",
+      "level": "intermediate",
+      "vendor_id": "python-institute",
+      "title": "PCAP Certified Associate Python Programmer",
+      "status": "active",
+      "study_guide_url": "https://pythoninstitute.org/pcap-exam-syllabus",
+      "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published, but PCEP-level Python knowledge is recommended. Practice building and debugging multi-module programs across packages, exceptions, Unicode strings, object-oriented design, comprehensions, functional tools, closures, and text/binary I/O. Recheck whether PCAP-31-03 or the announced PCAP-31-04 is current before purchase."
+    },
+    "review": {
+      "id": "pcap-31-03-2026-09-02-source-validation",
+      "exam_code": "PCAP-31-03",
+      "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85",
+      "objective_coverage": [
+        {
+          "objective_group": "Modules and Packages (12%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenarios 1 and 3",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Exceptions (14%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Strings (18%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Object-Oriented Programming (34%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenario 1",
+            "Labs 7–8"
+          ]
+        },
+        {
+          "objective_group": "Comprehensions, Lambdas, Closures, and I/O (22%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 9–10"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 11,
+        "reachable": 9,
+        "access_blocked": 1,
+        "missing_or_error": 1
+      },
+      "notes": "All five PCAP-31-03 sections are mapped through module/package namespace behavior and named standard-library calls, exception matching and custom hierarchies, Unicode/string operations, class/instance state and inheritance, comprehensions/functional tools/closures, and text/binary I/O. Three scenarios, ten labs and 27 original checks are included. The announced PCAP-31-04 Q3 2026 version remains a prominent transition watch while the live credential page identifies 31-03 as current. The initially supplied practice URL was rejected after a 404 and replaced with the verified live OpenEDG product page. O'Reilly is automation-blocked; no guide link is missing. No recalled/live item, answer dump or copied course question is used. September 29 PCEP source-health refresh updated shared-link counts only; PCAP content and review date were not re-reviewed."
+    },
+    "sources": [
+      {
+        "id": "python-3-tutorial",
+        "title": "The Python Tutorial",
+        "url": "https://docs.python.org/3/tutorial/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCEP-30-02",
+          "PCAP-31-03"
+        ],
+        "notes": "Authoritative current Python 3 language tutorial for validating stable syntax and behavior; broader than the entry-level boundary. September 29 PCEP-30-02 deep review: Complete tutorial index/introduction read; capture displays Python 3.14.7. It explicitly targets programmers new to Python and does not claim to be exhaustive. Index retrieval is not full tutorial completion. Detailed behavior was researched in separately registered versioned 3.13 pages; existing local interpreter is 3.13.14. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "harvard-cs50-python",
+        "title": "CS50's Introduction to Programming with Python",
+        "url": "https://cs50.harvard.edu/python/",
+        "publisher": "Harvard University / CS50",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "PCEP-30-02",
+          "PCAP-31-03"
+        ],
+        "notes": "Free OpenCourseWare with lectures, notes, transcripts and problems. It is not certification-aligned; select the portions that match the current objective map. September 29 PCEP-30-02 deep review: Direct HTTP timeout; complete current public landing read through web reader. Ten-week free OpenCourseWare, first four topics functions/variables, conditionals, loops and exceptions. No lectures, problem sets, final project, account or submission. Selective 15–25 hours is author judgment, not a provider duration. See docs/research/2026-09-29-pcep-30-02-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pcap-31-03-syllabus",
+        "title": "PCAP-31-03 Exam Syllabus",
+        "url": "https://pythoninstitute.org/pcap-exam-syllabus",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03"
+        ],
+        "notes": "Canonical five-section 12/14/18/34/22 syllabus, detailed objectives and March 7, 2022 baseline for the current PCAP-31-03 exam."
+      },
+      {
+        "id": "pcap-certification-page",
+        "title": "PCAP Certified Associate Python Programmer",
+        "url": "https://pythoninstitute.org/pcap",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03"
+        ],
+        "notes": "Current version, delivery, price, languages, validity, prerequisites, retake policy, aligned training and PCAP-31-04 Q3 2026 transition announcement."
+      },
+      {
+        "id": "python-3-documentation",
+        "title": "Python 3 Documentation",
+        "url": "https://docs.python.org/3/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101",
+          "PCED-30-02",
+          "PCAD-31-02",
+          "PCES-30-01",
+          "PANW-XSOAR-ENGINEER"
+        ],
+        "notes": "Canonical documentation hub for current stable Python 3; newer features are not automatically part of a dated exam syllabus."
+      },
+      {
+        "id": "python-3-library-reference",
+        "title": "Python Standard Library",
+        "url": "https://docs.python.org/3/library/",
+        "publisher": "Python Software Foundation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101",
+          "PCEA-30-01"
+        ],
+        "notes": "Canonical library reference for targeted operations, I/O, GUI, networking, persistence, data formats, logging, configuration and environment behavior."
+      },
+      {
+        "id": "openedg-python-essentials-2",
+        "title": "Python Essentials - Part 2",
+        "url": "https://edube.org/study/pe2",
+        "publisher": "OpenEDG Python Institute / Edube",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03"
+        ],
+        "notes": "Free officially aligned intermediate course. Plan approximately 40 to 50 hours including labs and verify the live course details."
+      },
+      {
+        "id": "openedg-pcap-31-03-practice",
+        "title": "PCAP-31-03 Practice Test Compendium",
+        "url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
+        "publisher": "OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03"
+        ],
+        "notes": "Official USD 49 exam-version-specific practice product with study pages, section sets, and up to five practice launches. Use it to identify weak domains, not to define technical truth."
+      },
+      {
+        "id": "cisco-python-essentials-2",
+        "title": "Python Essentials 2",
+        "url": "https://www.netacad.com/courses/python-essentials-2",
+        "publisher": "Cisco Networking Academy / OpenEDG Python Institute",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03"
+        ],
+        "notes": "Official partner course aligned to the associate path. Plan approximately 40 hours and verify current access and runtime on the live listing."
+      },
+      {
+        "id": "oreilly-python-3-object-oriented-fourth",
+        "title": "Python 3 Object-Oriented Programming, 4th Edition",
+        "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+        "publisher": "O'Reilly / Packt / Dusty Phillips, Steven F. Lott",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03",
+          "PCPP-32-101"
+        ],
+        "notes": "Broad object-oriented Python book. Select 15–25 hours for PCAP or advanced OOP/design material for PCPP1; much of the book exceeds either single blueprint."
+      },
+      {
+        "id": "pluralsight-python-3-path",
+        "title": "Python 3",
+        "url": "https://www.pluralsight.com/paths/python-3",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "PCAP-31-03"
+        ],
+        "notes": "Broad Python 3 path rather than an exact PCAP course. Select approximately 12 to 20 hours based on objective gaps."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "1d803b2f3e588b7f29f752e201015dbedfddf14da3daeeb54c925906b38a2b16",
+      "guide_sections": [
+        "1. Modules and packages — 12%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "b03a55916fb698b5fdcf6a426e477cfa046a9c2f06e72d8caf1461e1cb59a75c",
+      "guide_sections": [
+        "1. Modules and packages — 12%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "81b2f5dae64d7858f2f15aedb0af2c7fb0ff14d7fcab2af84b98a9f67695f095",
+      "guide_sections": [
+        "1. Modules and packages — 12%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "43eff343f56440c81a419e3ec1f9f053fc6e89b13dd3e63fd8ad0c4329872371",
+      "guide_sections": [
+        "1. Modules and packages — 12%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "79f4fea2a9e9305472ce1860acc9dc206f1f3814666ff12e5d9b5b71b65b8819",
+      "guide_sections": [
+        "1. Modules and packages — 12%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "353ad2251a94b71e5296667eb73578de7b505caa1d8a81d35cb48b89bc20ba45",
+      "guide_sections": [
+        "2. Exceptions — 14%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "05ba49f5b91b251efe9f9bcf56c26d80eae8b5d3a07a1c832b0d65dc09cef84a",
+      "guide_sections": [
+        "2. Exceptions — 14%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "bea10c7812ac6a13b5e0df6ff7df0240154a4554c575a44c7aaf28cf412a052e",
+      "guide_sections": [
+        "3. Strings — 18%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "63dbbb5058c6a0f068e5100567415654bac65743e551e3b0342527dd600ed8e4",
+      "guide_sections": [
+        "3. Strings — 18%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "fc30d8ba48c51ba8d66f03218553de4a883d1393e7fecc1a7bd4f8cc9d27c5ab",
+      "guide_sections": [
+        "3. Strings — 18%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "928f87f739b20cfccf0b6a25010d098732748f79c9f046399074a327c8e1ab73",
+      "guide_sections": [
+        "4. Object-oriented programming — 34%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "5f985c8df9592653b6161fd92220f731c623ab6ac51a4f02338946e10da344f2",
+      "guide_sections": [
+        "4. Object-oriented programming — 34%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "5e5341c63346191f019e3751e02d8d9acc1b6f3ba59239f3e3c84b5715858c44",
+      "guide_sections": [
+        "4. Object-oriented programming — 34%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "ddfcde7d16a7a78874b12469e00a1d9f25ed24c44b6604ec7f2aa4a854473d25",
+      "guide_sections": [
+        "4. Object-oriented programming — 34%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "29baba667535834e2183bcfc68864a924e82bad84988cd887544e7c9049dd212",
+      "guide_sections": [
+        "4. Object-oriented programming — 34%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "d2f128065cd9e283af3a9d8499e83dd88880285a23eca8442960ca1ed2eecf22",
+      "guide_sections": [
+        "4. Object-oriented programming — 34%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "5ca9596c603dac32f97f32a3381e6e77add6caddbf62192b6c9d717b292d61c8",
+      "guide_sections": [
+        "5. Comprehensions, lambdas, closures, and I/O — 22%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "deaa104c396693baaee0f943931698903e01639d38c141325afd1d19d08059e6",
+      "guide_sections": [
+        "5. Comprehensions, lambdas, closures, and I/O — 22%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "986428d5a792969d0c7d6d7ab8d91a3a25da4c76ef4aac0838da5ebbbcd5a941",
+      "guide_sections": [
+        "5. Comprehensions, lambdas, closures, and I/O — 22%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "e5a245b835973bacb294f9c74749586d8dfb15d7c92b77a9dea0b43bc06785d4",
+      "guide_sections": [
+        "5. Comprehensions, lambdas, closures, and I/O — 22%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "d24cd59c7fafd41015edb7951905441cc19076a5f151dff1c43def266724a1e7",
+      "guide_sections": [
+        "5. Comprehensions, lambdas, closures, and I/O — 22%",
+        "Executed core workbook",
+        "Integrated scenarios",
+        "Answers and reasoning"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [
+      "PCAP-31-03"
+    ],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PCAP-31-03",
+        "title": "PCAP Certified Associate Python Programmer",
+        "url": "https://pythoninstitute.org/pcap-exam-syllabus",
+        "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+        "snapshot_path": "data\\objective-snapshots\\pcap-31-03-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pcap-31-03-official-status.json",
+        "status": "error",
+        "changed": false,
+        "error": "URLError: <urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 31,
+    "reachable": 23,
+    "access_blocked": 1,
+    "missing_or_error": 7
+  },
+  "source_fetches": [
+    {
+      "id": "python-3-tutorial",
+      "url": "https://docs.python.org/3/tutorial/",
+      "checked_at": "2026-09-29T21:12:18.277103+00:00",
+      "health": {
+        "id": "python-3-tutorial",
+        "url": "https://docs.python.org/3/tutorial/",
+        "checked_at": "2026-09-29T21:12:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/tutorial/",
+        "content_type": "text/html",
+        "page_title": "The Python Tutorial",
+        "canonical_url": "https://docs.python.org/3/tutorial/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b58e930004bfc98b8cf20279a440b5e116881060ca526084ee4f8c1c73bfbdae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/tutorial/",
+      "sha256": "637e34ba8e004a7f5815c2665140657e29097bbcecbab5ebd8c78ad5347352b1",
+      "text_characters": 7108
+    },
+    {
+      "id": "harvard-cs50-python",
+      "url": "https://cs50.harvard.edu/python/",
+      "checked_at": "2026-09-29T21:12:18.277976+00:00",
+      "health": {
+        "id": "harvard-cs50-python",
+        "url": "https://cs50.harvard.edu/python/",
+        "checked_at": "2026-09-29T21:12:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://cs50.harvard.edu/python/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcap-31-03-syllabus",
+      "url": "https://pythoninstitute.org/pcap-exam-syllabus",
+      "checked_at": "2026-09-29T21:12:18.278538+00:00",
+      "health": {
+        "id": "pcap-31-03-syllabus",
+        "url": "https://pythoninstitute.org/pcap-exam-syllabus",
+        "checked_at": "2026-09-29T21:12:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcap-exam-syllabus",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcap-certification-page",
+      "url": "https://pythoninstitute.org/pcap",
+      "checked_at": "2026-09-29T21:12:18.731524+00:00",
+      "health": {
+        "id": "pcap-certification-page",
+        "url": "https://pythoninstitute.org/pcap",
+        "checked_at": "2026-09-29T21:12:18+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pcap",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python-3-documentation",
+      "url": "https://docs.python.org/3/",
+      "checked_at": "2026-09-29T21:12:36.901288+00:00",
+      "health": {
+        "id": "python-3-documentation",
+        "url": "https://docs.python.org/3/",
+        "checked_at": "2026-09-29T21:12:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/",
+        "content_type": "text/html",
+        "page_title": "Python 3.14 documentation",
+        "canonical_url": "https://docs.python.org/3/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "50b9d442c370445bef6759fa6081fdbb19b350ce94cf3dd9c82305f5c39b16d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/",
+      "sha256": "43310a2d16a6b78d4ab845c0ad1617355c40c5fe5361ed8c53e9b0d72311ff89",
+      "text_characters": 3232
+    },
+    {
+      "id": "python-3-library-reference",
+      "url": "https://docs.python.org/3/library/",
+      "checked_at": "2026-09-29T21:12:36.901633+00:00",
+      "health": {
+        "id": "python-3-library-reference",
+        "url": "https://docs.python.org/3/library/",
+        "checked_at": "2026-09-29T21:12:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3/library/",
+        "content_type": "text/html",
+        "page_title": "The Python standard library",
+        "canonical_url": "https://docs.python.org/3/library/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fb5698791e269424f8395b8c00bf002faf2e0c21325f7fbab09036f8f86e585c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3/library/",
+      "sha256": "91842a18d0888eb8cb0d6185e9f85492abcb99be45e47cef231e2429a9466a70",
+      "text_characters": 13544
+    },
+    {
+      "id": "openedg-python-essentials-2",
+      "url": "https://edube.org/study/pe2",
+      "checked_at": "2026-09-29T21:12:37.080074+00:00",
+      "health": {
+        "id": "openedg-python-essentials-2",
+        "url": "https://edube.org/study/pe2",
+        "checked_at": "2026-09-29T21:12:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://edube.org/study/pe2",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Edube Interactive :: Python Essentials - Part 2",
+        "canonical_url": "https://edube.org/study/pe2",
+        "duration_signals": [
+          "58 hours"
+        ],
+        "signal_fingerprint": "ec505d73b66bfe576316298b9830e8275c3e24fb0569d546efe24e17ece774c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://edube.org/study/pe2",
+      "sha256": "b8cfb372d6690545cb29771d64c546c9f3762eb60f18ebea5ccc003cd7b02ba1",
+      "text_characters": 3876
+    },
+    {
+      "id": "openedg-pcap-31-03-practice",
+      "url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
+      "checked_at": "2026-09-29T21:12:37.189283+00:00",
+      "health": {
+        "id": "openedg-pcap-31-03-practice",
+        "url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
+        "checked_at": "2026-09-29T21:12:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "OpenEDG - Store",
+        "canonical_url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
+        "duration_signals": [],
+        "signal_fingerprint": "df048670cf286aad6a194b1aa60fb272f8c65511bb0769b95a6ea54f5e9b3042",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://ums.edube.org/products/1-pi-pcap-3103-pt",
+      "sha256": "5cae4ab3bac9137f774c0fc633c1d173b23704bf6d7a7012a6ee2506450bb6e8",
+      "text_characters": 3333
+    },
+    {
+      "id": "cisco-python-essentials-2",
+      "url": "https://www.netacad.com/courses/python-essentials-2",
+      "checked_at": "2026-09-29T21:12:37.834030+00:00",
+      "health": {
+        "id": "cisco-python-essentials-2",
+        "url": "https://www.netacad.com/courses/python-essentials-2",
+        "checked_at": "2026-09-29T21:12:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/courses/python-essentials-2",
+        "content_type": "text/html",
+        "page_title": "Python Essentials 2 – Skills for All",
+        "canonical_url": "https://www.netacad.com/courses/python-essentials-2",
+        "duration_signals": [],
+        "signal_fingerprint": "9b62d74855e9b60eb8da39429c1202d84afc7ef3c77770955cf7438c110153d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/courses/python-essentials-2",
+      "sha256": "5c281488e34e8230dca3b04faf022ebbdc732cc570c27313b2b3bfd414f748bd",
+      "text_characters": 60
+    },
+    {
+      "id": "oreilly-python-3-object-oriented-fourth",
+      "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+      "checked_at": "2026-09-29T21:12:37.902036+00:00",
+      "health": {
+        "id": "oreilly-python-3-object-oriented-fourth",
+        "url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+        "checked_at": "2026-09-29T21:12:37+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/python-3-object-oriented/9781804611864/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pluralsight-python-3-path",
+      "url": "https://www.pluralsight.com/paths/python-3",
+      "checked_at": "2026-09-29T21:12:38.087825+00:00",
+      "health": {
+        "id": "pluralsight-python-3-path",
+        "url": "https://www.pluralsight.com/paths/python-3",
+        "checked_at": "2026-09-29T21:12:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/python-3",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Python 3",
+        "canonical_url": "https://www.pluralsight.com/paths/python-3",
+        "duration_signals": [
+          "10 minutes",
+          "53 Hours"
+        ],
+        "signal_fingerprint": "75435f155191ff589bebd8a61827f4024291e634f3d4d69d7a9ac5f6c194c214",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/python-3",
+      "sha256": "2b126bb80357e96bf1344a770c504f0f56ea03425fb998161e5ab0f75c77820b",
+      "text_characters": 12961
+    },
+    {
+      "id": "python-pcap-testnow-policies",
+      "url": "https://www.pythoninstitute.org/pcap-testing-policies",
+      "checked_at": "2026-09-29T21:20:16.234267+00:00",
+      "health": {
+        "id": "python-pcap-testnow-policies",
+        "url": "https://www.pythoninstitute.org/pcap-testing-policies",
+        "checked_at": "2026-09-29T21:20:16+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://www.pythoninstitute.org/pcap-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python-pvue-policies",
+      "url": "https://pythoninstitute.org/pvue-testing-policies",
+      "checked_at": "2026-09-29T21:20:16.235223+00:00",
+      "health": {
+        "id": "python-pvue-policies",
+        "url": "https://pythoninstitute.org/pvue-testing-policies",
+        "checked_at": "2026-09-29T21:20:16+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/pvue-testing-policies",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcap-japanese-credential",
+      "url": "https://pythoninstitute.org/ja/pcap",
+      "checked_at": "2026-09-29T21:20:16.235852+00:00",
+      "health": {
+        "id": "pcap-japanese-credential",
+        "url": "https://pythoninstitute.org/ja/pcap",
+        "checked_at": "2026-09-29T21:20:16+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/ja/pcap",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "pcap-syllabus-pdf",
+      "url": "https://pythoninstitute.org/assets/627e61fa6fe27591613128.pdf",
+      "checked_at": "2026-09-29T21:20:34.768197+00:00",
+      "health": {
+        "id": "pcap-syllabus-pdf",
+        "url": "https://pythoninstitute.org/assets/627e61fa6fe27591613128.pdf",
+        "checked_at": "2026-09-29T21:20:34+00:00",
+        "status": "error",
+        "http_status": null,
+        "final_url": "https://pythoninstitute.org/assets/627e61fa6fe27591613128.pdf",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<urlopen error timed out>"
+      }
+    },
+    {
+      "id": "python313-modules",
+      "url": "https://docs.python.org/3.13/tutorial/modules.html",
+      "checked_at": "2026-09-29T21:20:34.768523+00:00",
+      "health": {
+        "id": "python313-modules",
+        "url": "https://docs.python.org/3.13/tutorial/modules.html",
+        "checked_at": "2026-09-29T21:20:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/modules.html",
+        "content_type": "text/html",
+        "page_title": "6. Modules",
+        "canonical_url": "https://docs.python.org/3/tutorial/modules.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b867ee7a3b56c5bb2b353fbff13d4a6c0ccb65dd9d0e46d7aca73e101429b5b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/modules.html",
+      "sha256": "814587e5e08793fbb86119752d0512782a3a049468d22ede2ec8d779c8c00b7e",
+      "text_characters": 23863
+    },
+    {
+      "id": "python313-math",
+      "url": "https://docs.python.org/3.13/library/math.html",
+      "checked_at": "2026-09-29T21:20:34.768743+00:00",
+      "health": {
+        "id": "python313-math",
+        "url": "https://docs.python.org/3.13/library/math.html",
+        "checked_at": "2026-09-29T21:20:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/math.html",
+        "content_type": "text/html",
+        "page_title": "math — Mathematical functions",
+        "canonical_url": "https://docs.python.org/3/library/math.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6534134c5905c6855058c4ed5fe44899bd94cd3bdf005175db210d2f930e4819",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/math.html",
+      "sha256": "f9c105e7d64c64cdf805e47574c0a0cae870a34575b1b46ebef62e77930a5600",
+      "text_characters": 24177
+    },
+    {
+      "id": "python313-random",
+      "url": "https://docs.python.org/3.13/library/random.html",
+      "checked_at": "2026-09-29T21:20:34.991385+00:00",
+      "health": {
+        "id": "python313-random",
+        "url": "https://docs.python.org/3.13/library/random.html",
+        "checked_at": "2026-09-29T21:20:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/random.html",
+        "content_type": "text/html",
+        "page_title": "random — Generate pseudo-random numbers",
+        "canonical_url": "https://docs.python.org/3/library/random.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0c730510475943036ca0960feb79842a162d090210786d57ec3c512af8275389",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/random.html",
+      "sha256": "d0a1703565652d816520b73228a65e00a48e4f2735ba5af3f8422cc8c77e8c05",
+      "text_characters": 25913
+    },
+    {
+      "id": "python313-platform",
+      "url": "https://docs.python.org/3.13/library/platform.html",
+      "checked_at": "2026-09-29T21:20:35.067605+00:00",
+      "health": {
+        "id": "python313-platform",
+        "url": "https://docs.python.org/3.13/library/platform.html",
+        "checked_at": "2026-09-29T21:20:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/platform.html",
+        "content_type": "text/html",
+        "page_title": "platform — Access to underlying platform’s identifying data",
+        "canonical_url": "https://docs.python.org/3/library/platform.html",
+        "duration_signals": [],
+        "signal_fingerprint": "93a8bb1f97ca99b07ecd85623c02d15b213b4593ba903055203cbc827b118489",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/platform.html",
+      "sha256": "0fb7c8d876c03dfc0154c16fe65e6578ab912334547959cc9a47d13bd7baa5a7",
+      "text_characters": 12713
+    },
+    {
+      "id": "python313-errors",
+      "url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "checked_at": "2026-09-29T21:20:35.259054+00:00",
+      "health": {
+        "id": "python313-errors",
+        "url": "https://docs.python.org/3.13/tutorial/errors.html",
+        "checked_at": "2026-09-29T21:20:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/errors.html",
+        "content_type": "text/html",
+        "page_title": "8. Errors and Exceptions",
+        "canonical_url": "https://docs.python.org/3/tutorial/errors.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b40ac60cabe17dfbe924f42f7068d420dcba816dd64e25336ad6a9851da689b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "sha256": "620f996d50f0cea528b37123710102cac29be5396fce18b08889d019196be572",
+      "text_characters": 22087
+    },
+    {
+      "id": "python313-classes",
+      "url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "checked_at": "2026-09-29T21:20:35.319015+00:00",
+      "health": {
+        "id": "python313-classes",
+        "url": "https://docs.python.org/3.13/tutorial/classes.html",
+        "checked_at": "2026-09-29T21:20:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/classes.html",
+        "content_type": "text/html",
+        "page_title": "9. Classes",
+        "canonical_url": "https://docs.python.org/3/tutorial/classes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d29475fe35cb575c3c06dac14271a90a6be0320e6d2f9da774021df8ae5d8e9a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "sha256": "e04b535cba9bad4df94a8ca704c5cb29ca83905ce97d0be3f236dc28159497fe",
+      "text_characters": 34814
+    },
+    {
+      "id": "python313-types",
+      "url": "https://docs.python.org/3.13/library/stdtypes.html",
+      "checked_at": "2026-09-29T21:20:35.544928+00:00",
+      "health": {
+        "id": "python313-types",
+        "url": "https://docs.python.org/3.13/library/stdtypes.html",
+        "checked_at": "2026-09-29T21:20:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/stdtypes.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Types",
+        "canonical_url": "https://docs.python.org/3/builtins/stdtypes.html",
+        "duration_signals": [],
+        "signal_fingerprint": "00330b7d3715c9f679c07698c5fb340f4efd818ce9cb90292160a7de65ceb478",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/stdtypes.html",
+      "sha256": "7766ee556e921ae8e488de50993de6578b5e2d7931e7146b15e1cccdeb8fae51",
+      "text_characters": 173181
+    },
+    {
+      "id": "python313-builtins",
+      "url": "https://docs.python.org/3.13/library/functions.html",
+      "checked_at": "2026-09-29T21:20:35.634954+00:00",
+      "health": {
+        "id": "python313-builtins",
+        "url": "https://docs.python.org/3.13/library/functions.html",
+        "checked_at": "2026-09-29T21:20:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+        "content_type": "text/html",
+        "page_title": "Built-in Functions",
+        "canonical_url": "https://docs.python.org/3/builtins/functions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "39038bbc67029ad5b5517e724a69dd482b9d1f95c81f69163b6f29707153c8f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/builtins/functions.html",
+      "sha256": "ad2c5431711b8c91747c6abc1e2443f2138876f86eb24ad0fa441342e6e20e4e",
+      "text_characters": 77893
+    },
+    {
+      "id": "python313-datastructures",
+      "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "checked_at": "2026-09-29T21:20:36.368479+00:00",
+      "health": {
+        "id": "python313-datastructures",
+        "url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "checked_at": "2026-09-29T21:20:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+        "content_type": "text/html",
+        "page_title": "5. Data Structures",
+        "canonical_url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2c8eec6117bd1e7629d54154623a7ff35b4b25c3bd33f6b04d214869b1c42d2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "sha256": "8ddcad0b748bb5ed8e964244621464fde665d5d510989c246845a52e77166437",
+      "text_characters": 23868
+    },
+    {
+      "id": "python313-control-flow",
+      "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "checked_at": "2026-09-29T21:20:36.370286+00:00",
+      "health": {
+        "id": "python313-control-flow",
+        "url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "checked_at": "2026-09-29T21:20:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+        "content_type": "text/html",
+        "page_title": "4. More Control Flow Tools",
+        "canonical_url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "duration_signals": [],
+        "signal_fingerprint": "80fc72cdf98a887730e8bfc2b67d55483d1807974f5a6849bf34f6570e9eadd2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "sha256": "829fd049c2c23737535aa2f224856ae92f5aceafe042cf560c11e8589a256cd4",
+      "text_characters": 36778
+    },
+    {
+      "id": "python313-io-tutorial",
+      "url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+      "checked_at": "2026-09-29T21:20:36.714349+00:00",
+      "health": {
+        "id": "python313-io-tutorial",
+        "url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "checked_at": "2026-09-29T21:20:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+        "content_type": "text/html",
+        "page_title": "7. Input and Output",
+        "canonical_url": "https://docs.python.org/3/tutorial/inputoutput.html",
+        "duration_signals": [],
+        "signal_fingerprint": "aa99b49c6e7783f09cc26ff31586b57d25aa3e2274df88d7a6f78992866c6568",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+      "sha256": "ece5da92d27c8d18ae14337204182e2d70ee764e2ee556269a1fa8aecf7365a4",
+      "text_characters": 19739
+    },
+    {
+      "id": "python313-io",
+      "url": "https://docs.python.org/3.13/library/io.html",
+      "checked_at": "2026-09-29T21:20:36.715016+00:00",
+      "health": {
+        "id": "python313-io",
+        "url": "https://docs.python.org/3.13/library/io.html",
+        "checked_at": "2026-09-29T21:20:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/io.html",
+        "content_type": "text/html",
+        "page_title": "io — Core tools for working with streams",
+        "canonical_url": "https://docs.python.org/3/library/io.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6dfd6c4d77d502910fa0ddc770402e3c08cf661c3555ed88450b23963c91b41c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/io.html",
+      "sha256": "bf3a955335b2729652e93bba812e1e9a47fef5b83cd24cda38a0ad7e3508b1e4",
+      "text_characters": 40475
+    },
+    {
+      "id": "python313-errno",
+      "url": "https://docs.python.org/3.13/library/errno.html",
+      "checked_at": "2026-09-29T21:20:37.033170+00:00",
+      "health": {
+        "id": "python313-errno",
+        "url": "https://docs.python.org/3.13/library/errno.html",
+        "checked_at": "2026-09-29T21:20:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/errno.html",
+        "content_type": "text/html",
+        "page_title": "errno — Standard errno system symbols",
+        "canonical_url": "https://docs.python.org/3/library/errno.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5866b3ecd70aa74c230e007c00b2c6d8d698b8207b22993c05904a613432c8e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/errno.html",
+      "sha256": "c573bb76625361f8db7242d35c96f686f92b734697ca31272dabb6f8ea19256d",
+      "text_characters": 9691
+    },
+    {
+      "id": "python313-compound",
+      "url": "https://docs.python.org/3.13/reference/compound_stmts.html",
+      "checked_at": "2026-09-29T21:23:06.680792+00:00",
+      "health": {
+        "id": "python313-compound",
+        "url": "https://docs.python.org/3.13/reference/compound_stmts.html",
+        "checked_at": "2026-09-29T21:23:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/reference/compound_stmts.html",
+        "content_type": "text/html",
+        "page_title": "8. Compound statements",
+        "canonical_url": "https://docs.python.org/3/reference/compound_stmts.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7c46e0caf7e5009408cdc8498f62c205f02ee20bd330e976721b45c12f316663",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/reference/compound_stmts.html",
+      "sha256": "74bc3b4f35fedab2c4198fbc1cba47e5fe9f4fea8f8f14fc6e17ce2c78989c5c",
+      "text_characters": 56960
+    },
+    {
+      "id": "python313-csv",
+      "url": "https://docs.python.org/3.13/library/csv.html",
+      "checked_at": "2026-09-29T21:23:06.681704+00:00",
+      "health": {
+        "id": "python313-csv",
+        "url": "https://docs.python.org/3.13/library/csv.html",
+        "checked_at": "2026-09-29T21:23:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/csv.html",
+        "content_type": "text/html",
+        "page_title": "csv — CSV File Reading and Writing",
+        "canonical_url": "https://docs.python.org/3/library/csv.html",
+        "duration_signals": [],
+        "signal_fingerprint": "86499c6a09d3131a422c0c6b0c4784d620964719ebb01792199ac575e9391283",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/csv.html",
+      "sha256": "3e4d6a97d847f8fc5d985a0f16ce7d7e9caea751ce8fd9372cb2f90e606bb65a",
+      "text_characters": 22245
+    },
+    {
+      "id": "python313-hashlib",
+      "url": "https://docs.python.org/3.13/library/hashlib.html",
+      "checked_at": "2026-09-29T21:23:06.682263+00:00",
+      "health": {
+        "id": "python313-hashlib",
+        "url": "https://docs.python.org/3.13/library/hashlib.html",
+        "checked_at": "2026-09-29T21:23:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/hashlib.html",
+        "content_type": "text/html",
+        "page_title": "hashlib — Secure hashes and message digests",
+        "canonical_url": "https://docs.python.org/3/library/hashlib.html",
+        "duration_signals": [],
+        "signal_fingerprint": "46075f87cce2166cae3d3483b4917244d6204a0481190c2089d905e5a60fb1fe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/hashlib.html",
+      "sha256": "2ba6be8fbc46ecf3cb244f8a92202d64db107b89c60b84c733c79e6ecb63574c",
+      "text_characters": 27649
+    }
+  ],
+  "added_source_ids": [
+    "python-pcap-testnow-policies",
+    "python-pvue-policies",
+    "pcap-japanese-credential",
+    "pcap-syllabus-pdf",
+    "python313-modules",
+    "python313-math",
+    "python313-random",
+    "python313-platform",
+    "python313-io-tutorial",
+    "python313-io",
+    "python313-errno",
+    "python313-compound",
+    "python313-csv"
+  ],
+  "findings": [
+    {
+      "id": "pcap3103-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Numbered scope needs executable evidence",
+      "url": "https://pythoninstitute.org/pcap-exam-syllabus",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Twenty-one objectives cover named library calls and multi-module/OOP/I-O behavior; three prior scenarios were sketches.",
+      "recommendation": "Add exact objective group mapping, original workbook, real nested package and complete catalog/sampler modules; execute public code and boundary fixtures.",
+      "disposition": "applied",
+      "source_id": "pcap-31-03-syllabus",
+      "resolution": "Add exact objective group mapping, original workbook, real nested package and complete catalog/sampler modules; execute public code and boundary fixtures."
+    },
+    {
+      "id": "pcap3103-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Sampling occurrences is not uniqueness of values",
+      "url": "https://docs.python.org/3.13/library/random.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Duplicate population values can both be selected; seed replay does not guarantee all sample algorithms across releases.",
+      "recommendation": "Require unique nonempty string IDs in the scenario, isolate Random state, reject invalid sizes/types and test same-runtime replay without cross-version/secrets claims.",
+      "disposition": "applied",
+      "source_id": "python313-random",
+      "resolution": "Require unique nonempty string IDs in the scenario, isolate Random state, reject invalid sizes/types and test same-runtime replay without cross-version/secrets claims."
+    },
+    {
+      "id": "pcap3103-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "String classification has distinct empty and cased rules",
+      "url": "https://docs.python.org/3.13/library/stdtypes.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Cased predicates ignore uncased characters; empty isascii succeeds; decimal/digit/numeric sets differ.",
+      "recommendation": "Replace one generic rule with explicit contracts and execute empty, punctuation, superscript, fraction and Unicode examples.",
+      "disposition": "applied",
+      "source_id": "python313-types",
+      "resolution": "Replace one generic rule with explicit contracts and execute empty, punctuation, superscript, fraction and Unicode examples."
+    },
+    {
+      "id": "pcap3103-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Exception else needs normal fall-through",
+      "url": "https://docs.python.org/3.13/reference/compound_stmts.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "No exception is insufficient when return/break/continue leaves try; finally can replace outcomes.",
+      "recommendation": "Teach exact control-flow exclusions and execute handled/unhandled/return/loop-exit traces plus re-raise traceback and file cleanup.",
+      "disposition": "applied",
+      "source_id": "python313-compound",
+      "resolution": "Teach exact control-flow exclusions and execute handled/unhandled/return/loop-exit traces plus re-raise traceback and file cleanup."
+    },
+    {
+      "id": "pcap3103-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Package examples need actual import and execution semantics",
+      "url": "https://docs.python.org/3.13/tutorial/modules.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Cached module objects, from-import binding, __all__ and relative package context are distinct.",
+      "recommendation": "Build a seven-file package with actual imports and python -m execution, verify silent import, bytecode, rebinding/mutation and deliberate bare-file relative-import failure.",
+      "disposition": "applied",
+      "source_id": "python313-modules",
+      "resolution": "Build a seven-file package with actual imports and python -m execution, verify silent import, bytecode, rebinding/mutation and deliberate bare-file relative-import failure."
+    },
+    {
+      "id": "pcap3103-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Lookup and cooperative inheritance require boundaries",
+      "url": "https://docs.python.org/3.13/library/functions.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "hasattr performs real attribute lookup; super follows the instance MRO and can reach a sibling.",
+      "recommendation": "Explain side effects/nonAttributeError propagation, optional instance dictionaries and cooperative MRO; execute original probes.",
+      "disposition": "applied",
+      "source_id": "python313-builtins",
+      "resolution": "Explain side effects/nonAttributeError propagation, optional instance dictionaries and cooperative MRO; execute original probes."
+    },
+    {
+      "id": "pcap3103-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Reusable buffers require a valid-prefix boundary",
+      "url": "https://docs.python.org/3.13/library/io.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The last readinto chunk may be shorter than the buffer and retain stale bytes; text EOF differs from blank lines.",
+      "recommendation": "Add exact-prefix binary reads and a strict Unicode catalog, execute short/final/empty chunks and real files, and qualify nonblocking/atomicity limits.",
+      "disposition": "applied",
+      "source_id": "python313-io",
+      "resolution": "Add exact-prefix binary reads and a strict Unicode catalog, execute short/final/empty chunks and real files, and qualify nonblocking/atomicity limits."
+    },
+    {
+      "id": "pcap3103-deep-8",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Current source and access conflicts remain unresolved",
+      "url": "https://pythoninstitute.org/pcap",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PCAP-31-03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Localized validity, generic retake and practice-account wording conflict; PDF/scoring access and paid/account detail remain incomplete.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pcap-certification-page",
+      "review": "Current full English exam page and localized indexed metadata compared; Python version index read. No unseen vendor feed or inferred release."
+    }
+  ],
+  "labs": {
+    "proposed": 10,
+    "live_labs_executed": 0,
+    "public_code_blocks": 12,
+    "python_validation": {
+      "passed": true,
+      "python_version": "3.13.14",
+      "implementation": "CPython",
+      "core_checks": 78,
+      "scenario_and_language_checks": 98,
+      "process_receipts": [
+        {
+          "arguments": [
+            "catalog.py"
+          ],
+          "exit_code": 0,
+          "stdout": "{'é': ['éclair'], 'e': ['emoji🙂']}\n32 digest bytes\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "sampler.py"
+          ],
+          "exit_code": 0,
+          "stdout": "['r4', 'r2']\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "workbook.py"
+          ],
+          "exit_code": 0,
+          "stdout": "78 core checks passed\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "-m",
+            "reports"
+          ],
+          "exit_code": 0,
+          "stdout": "pear\nplum\n\"pear, plum\"\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "-c",
+            "import reports; import reports.__main__; import reports.renderers.csv_report"
+          ],
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "reports/__main__.py"
+          ],
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\chris\\AppData\\Local\\Temp\\pcap-original-phjg174y\\reports\\__main__.py\", line 1, in <module>\n    from .renderers.text import TextReport\nImportError: attempted relative import with no known parent package\n"
+        },
+        {
+          "arguments": [
+            "-O",
+            "-c",
+            "assert False; print(\"assert removed\")"
+          ],
+          "exit_code": 0,
+          "stdout": "assert removed\n",
+          "stderr": ""
+        }
+      ],
+      "bytecode_cache_observation": [
+        "__pycache__\\bindings.cpython-313.pyc",
+        "__pycache__\\catalog.cpython-313.pyc",
+        "__pycache__\\ordinary.cpython-313.pyc",
+        "__pycache__\\sampler.cpython-313.pyc",
+        "reports\\__pycache__\\base.cpython-313.pyc",
+        "reports\\__pycache__\\errors.cpython-313.pyc",
+        "reports\\__pycache__\\__init__.cpython-313.pyc",
+        "reports\\__pycache__\\__main__.cpython-313.pyc",
+        "reports\\renderers\\__pycache__\\csv_report.cpython-313.pyc",
+        "reports\\renderers\\__pycache__\\text.cpython-313.pyc",
+        "reports\\renderers\\__pycache__\\__init__.cpython-313.pyc"
+      ],
+      "execution_boundary": "Original Python executed locally in a disposable temporary package and files; no paid lessons, exam UI, infrastructure deployment or human review. Ten broader learner activities remain proposed.",
+      "public_code_blocks": 12,
+      "public_example_sha256": [
+        "590d59f328b44a9dc743052dde930e183a2cfe6aca2e54313545e9864533e6f6",
+        "01ed37bb74380b39b7b56e696f08dfdee4eda900936b9ba99aaf0decf3316469",
+        "c498f747aa245959a071703cefddbbc59ee685d10335fbafc19b99ca8a82f1ea",
+        "f1dc0bb190cd64d51e9f833ad7d6a023a2aeac8587d20304220a014e1b988f89",
+        "3ddd4c54e7b679298645839174dd19aefaded898d56361e5ab9bb66084a69652",
+        "6fa528e7cc1412dff1254a1fbdb81ed5e4284dba2da8768d5208d541adca4f9f",
+        "43c5720e4d1d37b5f2f2b66dcbbed0199fa83c6d50e1d3d530ad4050489b62af",
+        "f4ceaaa82b5e8f617a8c467a134f90bcb4f2f727a370ee5f40bf2987ed0693ef",
+        "48b4600037360e770a2906e7b99349072caa4508e129ee09c91edab33331c4be",
+        "7dde3a36c2f2960906e3ccf69f396fd4a83884d8a7b890ca44b4f15e925c1855",
+        "c03c98cb8a3af09a69c07825fbf97b24657ef0549085397f28c4e9ebeee67cc7",
+        "e350f6231a77c04df8c4c4c1a31890e5c6afdd598e522af171db784df40051e4"
+      ],
+      "public_module_paths": [
+        "workbook.py",
+        "reports/__init__.py",
+        "reports/errors.py",
+        "reports/base.py",
+        "reports/renderers/__init__.py",
+        "reports/renderers/text.py",
+        "reports/renderers/csv_report.py",
+        "reports/__main__.py",
+        "catalog.py",
+        "sampler.py"
+      ]
+    },
+    "reasoning_cases": 3
+  },
+  "answered_checks": 27,
+  "limitations": [
+    "Direct objective/source requests failed despite public web/indexed evidence. Existing snapshots retained after manual 21-objective comparison; no successful fresh automated hash comparison or complete PDF read/capture.",
+    "English versus localized credential validity, specific versus generic retake timing, practice redemption profile and scoring presentation remain qualified; current booking/account terms require confirmation. No account, voucher, checkout or exam action.",
+    "Twelve exact public Python blocks executed on existing CPython 3.13.14, including seven-file package, workbook and catalog/sampler demos. 78 core and 98 additional scenario/language checks passed using disposable local modules/files; this is live-partial original-code work, not infrastructure deployment.",
+    "Ten broader learner activities remain proposed. No interactive debugger session, OS permission/disk failure injection, cross-platform/cross-version guarantee, statistical security assessment or full external course completion.",
+    "Technical reading is section-specific. Cisco shell, OReilly HTTP403 and paid course/practice interiors remain limits; durations distinguish public provider totals and author estimates. Same-context AI review, human review pending; no installation/service/runtime/auth/permission change or external message."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 180,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Original Python executed locally in a disposable temporary package and files; no paid lessons, exam UI, infrastructure deployment or human review. Ten broader learner activities remain proposed.",
+    "passed": true,
+    "python_version": "3.13.14",
+    "implementation": "CPython",
+    "core_checks": 78,
+    "scenario_and_language_checks": 98,
+    "process_receipts": [
+      {
+        "arguments": [
+          "catalog.py"
+        ],
+        "exit_code": 0,
+        "stdout": "{'é': ['éclair'], 'e': ['emoji🙂']}\n32 digest bytes\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "sampler.py"
+        ],
+        "exit_code": 0,
+        "stdout": "['r4', 'r2']\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "workbook.py"
+        ],
+        "exit_code": 0,
+        "stdout": "78 core checks passed\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "-m",
+          "reports"
+        ],
+        "exit_code": 0,
+        "stdout": "pear\nplum\n\"pear, plum\"\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "-c",
+          "import reports; import reports.__main__; import reports.renderers.csv_report"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "reports/__main__.py"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\chris\\AppData\\Local\\Temp\\pcap-original-phjg174y\\reports\\__main__.py\", line 1, in <module>\n    from .renderers.text import TextReport\nImportError: attempted relative import with no known parent package\n"
+      },
+      {
+        "arguments": [
+          "-O",
+          "-c",
+          "assert False; print(\"assert removed\")"
+        ],
+        "exit_code": 0,
+        "stdout": "assert removed\n",
+        "stderr": ""
+      }
+    ],
+    "bytecode_cache_observation": [
+      "__pycache__\\bindings.cpython-313.pyc",
+      "__pycache__\\catalog.cpython-313.pyc",
+      "__pycache__\\ordinary.cpython-313.pyc",
+      "__pycache__\\sampler.cpython-313.pyc",
+      "reports\\__pycache__\\base.cpython-313.pyc",
+      "reports\\__pycache__\\errors.cpython-313.pyc",
+      "reports\\__pycache__\\__init__.cpython-313.pyc",
+      "reports\\__pycache__\\__main__.cpython-313.pyc",
+      "reports\\renderers\\__pycache__\\csv_report.cpython-313.pyc",
+      "reports\\renderers\\__pycache__\\text.cpython-313.pyc",
+      "reports\\renderers\\__pycache__\\__init__.cpython-313.pyc"
+    ],
+    "public_code_blocks": 12,
+    "public_example_sha256": [
+      "590d59f328b44a9dc743052dde930e183a2cfe6aca2e54313545e9864533e6f6",
+      "01ed37bb74380b39b7b56e696f08dfdee4eda900936b9ba99aaf0decf3316469",
+      "c498f747aa245959a071703cefddbbc59ee685d10335fbafc19b99ca8a82f1ea",
+      "f1dc0bb190cd64d51e9f833ad7d6a023a2aeac8587d20304220a014e1b988f89",
+      "3ddd4c54e7b679298645839174dd19aefaded898d56361e5ab9bb66084a69652",
+      "6fa528e7cc1412dff1254a1fbdb81ed5e4284dba2da8768d5208d541adca4f9f",
+      "43c5720e4d1d37b5f2f2b66dcbbed0199fa83c6d50e1d3d530ad4050489b62af",
+      "f4ceaaa82b5e8f617a8c467a134f90bcb4f2f727a370ee5f40bf2987ed0693ef",
+      "48b4600037360e770a2906e7b99349072caa4508e129ee09c91edab33331c4be",
+      "7dde3a36c2f2960906e3ccf69f396fd4a83884d8a7b890ca44b4f15e925c1855",
+      "c03c98cb8a3af09a69c07825fbf97b24657ef0549085397f28c4e9ebeee67cc7",
+      "e350f6231a77c04df8c4c4c1a31890e5c6afdd598e522af171db784df40051e4"
+    ],
+    "public_module_paths": [
+      "workbook.py",
+      "reports/__init__.py",
+      "reports/errors.py",
+      "reports/base.py",
+      "reports/renderers/__init__.py",
+      "reports/renderers/text.py",
+      "reports/renderers/csv_report.py",
+      "reports/__main__.py",
+      "catalog.py",
+      "sampler.py"
+    ],
+    "learning_catalog_consistency": "passed"
+  },
+  "source_reading_boundaries": {
+    "python-3-tutorial": "Complete 7108-character public tutorial landing and contents read. It targets programmers new to Python, not necessarily first-time programmers. The landing is Python 3.14.7; selected separately registered 3.13 chapters support tested examples. No claim that all linked chapters were read.",
+    "harvard-cs50-python": "Direct request timed out. Complete public course landing read through indexed web fallback: ten weeks 0–9 plus final project, free OpenCourseWare, edX account for submission/feedback and optional certificate. Course topics include broader regex/testing. No lectures, problem interiors, submissions or paid certificate reviewed; 20–35 selected hours is an author estimate.",
+    "pcap-31-03-syllabus": "Direct request and objective monitor failed; web open also failed, but indexed public English syllabus content was returned completely and read. Active 31-03, March 7 2022 baseline, all 21 numbered objectives in 5/2/3/6/5 groups. Weights 12/14/18/34/22 and items 6/5/8/12/9 manually compared with retained snapshot. HTML per-item maximum wording differs from PDF cover section raw totals; no inferred equal scoring or successful automated hash comparison.",
+    "pcap-certification-page": "Complete current English credential page read via web reader after direct timeout. Active 31-03, 31-04 still in development with Q3 2026 announcement; no calendar-derived launch. Five-year validity conflicts with Japanese lifetime wording. Exam/channel/pricing/retake metadata are dated; generic PCEP FAQ label is a copy issue. Practice redemption says Learner, unlike public store Test Candidate wording. No booking/account/checkout or salary/job-market marketing adopted.",
+    "python-3-documentation": "Complete 3232-character documentation index read: unversioned landing is 3.14.7 and exposes other versions. This is release/documentation context, not evidence of an exam-required version or an audit of all linked change logs. Existing local CPython 3.13.14 was used without installation.",
+    "python-3-library-reference": "Fresh 13544-character index captured. Introduction and opening navigation through functional-programming modules read; remaining library table not audited. Index supports navigation only; separately registered exact topic pages carry technical claims.",
+    "openedg-python-essentials-2": "Complete 3876-character public landing read: free intermediate course, four modules, 58 hours and seven/week recommendation; lists both retired 31-02 and 31-03 alignment. PIP, generators and extra os/datetime/time/calendar topics extend beyond the numbered PCAP scope. Old 40–50-hour estimate replaced with provider total. No enrollment, lesson, assessment or account review.",
+    "openedg-pcap-31-03-practice": "Complete 3333-character public store metadata read. USD49 practice-only product, no official attempt; twelve-month redemption and up to five launches per test stated. Test Candidate redemption wording conflicts with English main Learner instruction. Static cart modal text is page markup, not a purchase action. Paid questions, answer explanations, actual timing, navigation and checkout not inspected; 5–8 hours is author budget.",
+    "cisco-python-essentials-2": "HTTP200 with only a 60-character shell. Partner link remains, but course curriculum/runtime/account access not inspected. Forty–sixty hours is an author planning budget, not verified provider runtime.",
+    "oreilly-python-3-object-oriented-fourth": "HTTP403. Retained historical resource title is not a fresh edition/contents verification. No subscriber interior accessed; 15–25 selected hours is an author estimate.",
+    "pluralsight-python-3-path": "Complete 12961-character public path page read: 16 courses, 21 labs and 53 total hours, with public titles/dates/durations and prerequisites. Broad database/API/regex/design-pattern content is not PCAP scope. Original code does not copy course labs; paid interiors/playback not reviewed. Selected 12–20 hours is an author budget.",
+    "python-pcap-testnow-policies": "Direct fetch and web open failed; complete indexed policy content read. PCAP proctored delivery and 15-day failed retake are explicit, but generic Additional Information footer says usually seven days after fail/pass. November 18 2025 revision shown. Exam-specific rule retained with visible contradiction. Admission/security/technical descriptions were read, not account or diagnostic execution.",
+    "python-pvue-policies": "Direct/open failed. Indexed public excerpts read for available PCAP-31-03, proctored center/OnVUE delivery, scheduling, accommodations and retakes: fifteen days after failure, no same-version passed retake. Not a full policy audit, system requirement verification or current booking UI review.",
+    "pcap-japanese-credential": "Direct request failed. Indexed public localized credential table read for current/announced codes and lifetime validity. It differs from English five-year wording; localized content is a contradiction signal, not a replacement English baseline or complete Japanese site audit.",
+    "pcap-syllabus-pdf": "Direct request and web PDF open failed. Indexed cover/table excerpt only read: March7 2022, active 31-03, five item/weight/section raw-score totals. No full PDF content, local genuine PDF, page screenshot or whole-PDF scope comparison claimed.",
+    "python313-modules": "Complete chapter body read: import variants, module globals/caching, direct entry, search path, pycache, dir, packages, star exports and relative imports. Original temporary package and independent fixture modules executed; no vendor sample copied. Tutorial shorthand about main/relative imports is qualified by actual python -m package-context demonstration.",
+    "python313-math": "Selected complete entries ceil, floor, trunc, factorial, sqrt and hypot read; not the full 24177-character module. Integral-valued floats rejected by factorial since 3.10; original exact-value/domain checks executed on 3.13.14. No higher math/numeric accuracy guarantees inferred.",
+    "python313-random": "Complete selected entries seed, choice, sample, random and reproducibility section read; not the full 25913-character module. Repeated population values remain possible; sample requires a sequence in 3.13. Compatible-seeder random() guarantee does not promise all sample algorithms across versions. Original isolated-generator tests check same-runtime replay/population/global-state preservation; not statistical quality or secrecy.",
+    "python313-platform": "Seven scoped entry descriptions read: platform, machine, processor, system, version, python_implementation, python_version_tuple. Not a full 12713-character platform audit. Original calls executed, validating reported value types without hardcoding OS/processor strings or parsing human display output.",
+    "python313-errors": "Selected handling, raising, user-defined, cleanup and predefined-cleanup sections read completely. Original hierarchy/control-flow/file-cleanup traces executed. No full 22087-character chapter audit, no adoption of broader exception-group objectives.",
+    "python313-classes": "Selected class objects, instance objects, method objects, class/instance variables, inheritance including multiple inheritance, and private variables read. Not whole 34814-character chapter. Original MRO and state/mangling examples executed; inherited initialization and lookup boundaries explained without treating tutorial shorthand as a universal descriptor algorithm.",
+    "python313-types": "Selected complete str entries isalpha, isalnum, isdecimal, isdigit, isnumeric, islower, isupper, isspace, isascii, join, split, strip, find, rfind and index read. Not whole 173181-character built-in types reference. Empty/cased/numeric-classification repairs tested on original strings; no wholeUnicode-standard audit.",
+    "python313-builtins": "Selected hasattr, isinstance, sorted, map, filter and super entries read completely. Not whole 77893-character reference. Actual lookup errors, lazy consumption and sibling cooperative MRO tested. Version-specific later additions not inferred from unversioned docs.",
+    "python313-datastructures": "Complete list-comprehensions and nested-list-comprehensions sections read. Not full 23868-character chapter. Original tuple-order/filter checks executed; no copied vendor examples.",
+    "python313-control-flow": "Lambda Expressions section read completely, including enclosing-scope example and callback use. Not full 36778-character chapter. Original late/default capture and factory behavior executed; default object binding distinguished from a deep copy.",
+    "python313-io-tutorial": "Complete Reading and Writing Files section7.2 read, including methods and structured-data context. Encoding, newline, EOF, closure and write-count contracts applied. JSON/pickle context read but not added as exam objectives; no full 19739-character chapter audit.",
+    "python313-io": "Selected complete RawIOBase.readinto, BufferedIOBase.readinto and TextIOBase.write entries read; not full 40475-character stream reference. Actual blocking regular files and bytearray valid-prefix reads tested. Nonblocking None/BlockingIOError differences documented as out-of-demo scope, not exercised.",
+    "python313-errno": "Selected ENOENT, EACCES and EEXIST entries read. Original missing-file exception/ENOENT and exclusive-create failure exercised. No actual permission change, broad error recovery, full 9691-character errno audit or OS failure injection.",
+    "python313-compound": "Complete try-statement section read, including except, except-star, else and finally. Guide uses ordinary handlers; exception groups are context only. Normal fall-through excludes return/break/continue. Actual traces and re-raise traceback check executed; no full 56960-character compound-statement audit.",
+    "python313-csv": "Complete writer and writerow entry descriptions read. Original one-column renderer round-tripped commas/quotes/newlines/Unicode/empty values through actual writer/reader. Not full 22245-character reference or spreadsheet-application audit; CSV is supporting scenario context, not an additional objective.",
+    "python313-hashlib": "Usage subsection read: byte input and digest versus hexadecimal representation. Not full 27649-character hashing reference. Original catalog SHA256 digest checked for exact captured raw bytes including whitespace/newlines and empty input. Checksum is not authenticity; no cryptographic implementation/security assessment."
+  },
+  "public_examples": [
+    {
+      "language": "python",
+      "code": "class PricingError(Exception):\n    pass\n\nclass UnknownCurrencyError(PricingError):\n    pass\n",
+      "sha256": "590d59f328b44a9dc743052dde930e183a2cfe6aca2e54313545e9864533e6f6"
+    },
+    {
+      "language": "python",
+      "code": "class Report:\n    category = \"general\"\n\n    def __init__(self, title):\n        self.title = title\n\n    def render(self):\n        return self.title\n\n    def __str__(self):\n        return f\"Report({self.title!r})\"\n\nclass LabeledReport(Report):\n    def render(self):\n        return f\"Title: {self.title}\"\n",
+      "sha256": "01ed37bb74380b39b7b56e696f08dfdee4eda900936b9ba99aaf0decf3316469"
+    },
+    {
+      "language": "python",
+      "code": "\"\"\"Original PCAP practice. Run normally, not with -O.\"\"\"\nimport math\nimport platform\nimport random\n\nchecks = 0\n\n\ndef check(condition):\n    global checks\n    if not condition:\n        raise AssertionError(f\"Check {checks + 1} failed\")\n    checks += 1\n\n\ndef rejects(error, function, *args):\n    try:\n        function(*args)\n    except error:\n        check(True)\n    else:\n        raise AssertionError(f\"Expected {error.__name__}\")\n\n\nfor value, expected in [(-2.75, (-2, -3, -2)), (2.75, (3, 2, 2))]:\n    check((math.ceil(value), math.floor(value), math.trunc(value)) == expected)\ncheck(math.factorial(0) == 1)\ncheck(math.factorial(6) == 720)\nrejects(ValueError, math.factorial, -1)\nrejects(TypeError, math.factorial, 6.0)\ncheck(math.sqrt(81) == 9)\nrejects(ValueError, math.sqrt, -1)\ncheck(math.hypot(5, 12) == 13)\nrng = random.Random(91)\ncheck(0 <= rng.random() < 1)\ncheck(rng.choice([\"only\"]) == \"only\")\nrejects(IndexError, rng.choice, [])\ncheck(rng.sample([\"same\", \"same\"], 2) == [\"same\", \"same\"])\nrejects(ValueError, rng.sample, [1], 2)\nrng.seed(19)\nfirst = [rng.random() for _ in range(4)]\nrng.seed(19)\ncheck(first == [rng.random() for _ in range(4)])\nfor name in (\"platform\", \"machine\", \"processor\", \"system\", \"version\",\n             \"python_implementation\"):\n    check(isinstance(getattr(platform, name)(), str))\nversion = platform.python_version_tuple()\ncheck(len(version) == 3 and all(isinstance(part, str) for part in version))\n\n\nclass DataError(Exception):\n    pass\n\n\nclass EmptyError(DataError):\n    pass\n\n\ndef trace(mode, events):\n    try:\n        events.append(\"try\")\n        if mode == \"child\":\n            raise EmptyError(\"empty\", 0)\n        if mode == \"parent\":\n            raise DataError(\"bad\")\n        if mode == \"return\":\n            return \"early\"\n        if mode == \"unhandled\":\n            raise TypeError(\"wrong type\")\n    except EmptyError as exc:\n        events.append((\"child\", exc.args))\n    except DataError:\n        events.append(\"parent\")\n    else:\n        events.append(\"else\")\n    finally:\n        events.append(\"finally\")\n    return \"end\"\n\n\nfor mode, expected in [\n    (\"ok\", [\"try\", \"else\", \"finally\"]),\n    (\"child\", [\"try\", (\"child\", (\"empty\", 0)), \"finally\"]),\n    (\"parent\", [\"try\", \"parent\", \"finally\"]),\n    (\"return\", [\"try\", \"finally\"]),\n]:\n    events = []\n    check(trace(mode, events) == (\"early\" if mode == \"return\" else \"end\"))\n    check(events == expected)\nevents = []\nrejects(TypeError, trace, \"unhandled\", events)\ncheck(events == [\"try\", \"finally\"])\n\ncheck(ord(\"Z\") == 90 and chr(90) == \"Z\")\ncheck(len(\"e\\u0301\") == 2 and len(\"é\".encode(\"utf-8\")) == 2)\ncheck(\"é\" != \"e\\u0301\")\ncheck(\"trail\"[-1] == \"l\" and \"trail\"[50:] == \"\")\nrejects(IndexError, \"trail\".__getitem__, 50)\ncheck(\"ab\" * 2 == \"abab\" and \"ab\" + \"c\" == \"abc\")\ncheck(\"Z\" < \"a\" and \"ail\" in \"trail\" and \"x\" not in \"trail\")\ncheck(\"12\" != 12)\nrejects(TypeError, lambda: \"12\" < 12)\nfor text, expected in [(\"\", (False, False, False)),\n                       (\"7\", (True, True, True)),\n                       (\"²\", (False, True, True)),\n                       (\"⅓\", (False, False, True))]:\n    check((text.isdecimal(), text.isdigit(), text.isnumeric()) == expected)\ncheck(\"é\".isalpha() and \"é7\".isalnum())\ncheck(\"a7!\".islower() and \"A7!\".isupper())\ncheck(not \"7!\".islower() and not \"\".isupper())\ncheck(\" \\t\".isspace() and not \"\".isspace())\ncheck(\"\".isascii() and not \"é\".isascii())\ncheck(\"|\".join([\"a\", \"b\"]) == \"a|b\")\nrejects(TypeError, \"|\".join, [\"a\", 1])\ncheck(\"a,,b,\".split(\",\") == [\"a\", \"\", \"b\", \"\"])\ncheck(\" \\ta  b \".split() == [\"a\", \"b\"])\ncheck(\"\".split() == [] and \"\".split(\",\") == [\"\"])\ncheck(\"abbaXba\".strip(\"ab\") == \"X\")\ncheck(\"ababa\".find(\"ba\") == 1 and \"ababa\".rfind(\"ba\") == 3)\ncheck(\"ababa\".find(\"x\") == -1)\nrejects(ValueError, \"ababa\".index, \"x\")\ncheck(sorted(\"cba\") == [\"a\", \"b\", \"c\"])\nrejects(AttributeError, getattr, \"cba\", \"sort\")\n\n\nclass Record:\n    category = \"shared\"\n\n    def __init__(self, name):\n        self.name = name\n        self.tags = []\n        self.__token = \"internal\"\n\n    def __str__(self):\n        return self.name\n\n\none, two = Record(\"one\"), Record(\"two\")\none.tags.append(\"new\")\ncheck(two.tags == [] and one.tags is not two.tags)\ncheck(\"category\" not in one.__dict__ and Record.__dict__[\"category\"] == \"shared\")\none.category = \"local\"\ncheck(one.category == \"local\" and two.category == \"shared\")\ncheck(one.__dict__[\"_Record__token\"] == \"internal\")\ncheck(not hasattr(one, \"__token\") and hasattr(one, \"_Record__token\"))\ncheck(str(one) == \"one\" and Record.__name__ == \"Record\")\ncheck(Record.__bases__ == (object,))\n\n\nclass Root:\n    def route(self):\n        return [\"Root\"]\n\n\nclass Left(Root):\n    def route(self):\n        return [\"Left\"] + super().route()\n\n\nclass Right(Root):\n    def route(self):\n        return [\"Right\"] + super().route()\n\n\nclass Join(Left, Right):\n    pass\n\n\njoined = Join()\ncheck(joined.route() == [\"Left\", \"Right\", \"Root\"])\ncheck(Join.__mro__ == (Join, Left, Right, Root, object))\ncheck(isinstance(joined, Root) and type(joined) is Join)\ncheck(joined is joined and joined is not Join())\ncheck([(x, y) for x in [1, 2] for y in [2, 3] if x != y]\n      == [(1, 2), (1, 3), (2, 3)])\nmapped = map(lambda n: n * 3, [1, 2])\ncheck(list(mapped) == [3, 6] and list(mapped) == [])\ncheck(list(filter(lambda n: n > 0, [-1, 0, 2])) == [2])\nlate = [lambda: i for i in range(3)]\nearly = [lambda i=i: i for i in range(3)]\ncheck([f() for f in late] == [2, 2, 2])\ncheck([f() for f in early] == [0, 1, 2])\n\n\ndef threshold(minimum):\n    return lambda value: value >= minimum\n\n\ncheck(threshold(3)(3) and not threshold(3)(2))\nprint(f\"{checks} core checks passed\")\n",
+      "sha256": "c498f747aa245959a071703cefddbbc59ee685d10335fbafc19b99ca8a82f1ea"
+    },
+    {
+      "language": "python",
+      "code": "\"\"\"Original report package; importing it prints nothing.\"\"\"\n",
+      "sha256": "f1dc0bb190cd64d51e9f833ad7d6a023a2aeac8587d20304220a014e1b988f89"
+    },
+    {
+      "language": "python",
+      "code": "class ReportError(Exception):\n    pass\n\n\nclass ReportFormatError(ReportError):\n    pass\n",
+      "sha256": "3ddd4c54e7b679298645839174dd19aefaded898d56361e5ab9bb66084a69652"
+    },
+    {
+      "language": "python",
+      "code": "from .errors import ReportFormatError\n\n\nclass Report:\n    category = \"plain data\"\n\n    def __init__(self, rows):\n        if not isinstance(rows, (list, tuple)):\n            raise ReportFormatError(\"rows must be a list or tuple\")\n        if not all(isinstance(row, str) for row in rows):\n            raise ReportFormatError(\"every row must be text\")\n        self.rows = tuple(rows)\n\n    def render(self):\n        raise NotImplementedError(\"choose a concrete renderer\")\n\n    def __str__(self):\n        return f\"{type(self).__name__}({len(self.rows)} rows)\"\n",
+      "sha256": "6fa528e7cc1412dff1254a1fbdb81ed5e4284dba2da8768d5208d541adca4f9f"
+    },
+    {
+      "language": "python",
+      "code": "\"\"\"Renderers are imported explicitly from their modules.\"\"\"\n",
+      "sha256": "43c5720e4d1d37b5f2f2b66dcbbed0199fa83c6d50e1d3d530ad4050489b62af"
+    },
+    {
+      "language": "python",
+      "code": "from ..base import Report\n\n\nclass TextReport(Report):\n    def render(self):\n        return \"\\n\".join(self.rows) + (\"\\n\" if self.rows else \"\")\n",
+      "sha256": "f4ceaaa82b5e8f617a8c467a134f90bcb4f2f727a370ee5f40bf2987ed0693ef"
+    },
+    {
+      "language": "python",
+      "code": "import csv\nfrom io import StringIO\nfrom ..base import Report\n\n\nclass CsvReport(Report):\n    def render(self):\n        output = StringIO(newline=\"\")\n        writer = csv.writer(output, lineterminator=\"\\n\")\n        for row in self.rows:\n            writer.writerow([row])\n        return output.getvalue()\n",
+      "sha256": "48b4600037360e770a2906e7b99349072caa4508e129ee09c91edab33331c4be"
+    },
+    {
+      "language": "python",
+      "code": "from .renderers.text import TextReport\nfrom .renderers.csv_report import CsvReport\n\n\ndef main():\n    for report in (TextReport([\"pear\", \"plum\"]), CsvReport([\"pear, plum\"])):\n        print(report.render(), end=\"\")\n\n\nif __name__ == \"__main__\":\n    main()\n",
+      "sha256": "7dde3a36c2f2960906e3ccf69f396fd4a83884d8a7b890ca44b4f15e925c1855"
+    },
+    {
+      "language": "python",
+      "code": "\"\"\"Small, trusted local catalog; one product per LF-delimited line.\"\"\"\nimport hashlib\n\n\nclass CatalogError(Exception):\n    pass\n\n\ndef load_catalog(source, digest_destination):\n    # Read once: names and digest describe the same captured bytes.\n    with open(source, \"rb\") as stream:\n        raw = stream.read()\n    text = raw.decode(\"utf-8\")  # Strict decoding; no silent replacement.\n    lines = text.split(\"\\n\")\n    if lines[-1] == \"\":\n        lines.pop()  # Empty file or one final LF, not interior blank rows.\n    groups = {}\n    for number, line in enumerate(lines, 1):\n        name = line.strip()\n        if not name:\n            raise CatalogError(f\"empty product on line {number}\")\n        groups.setdefault(name[0], []).append(name)\n    digest = hashlib.sha256(raw).digest()\n    # Exclusive creation preserves any existing destination.\n    with open(digest_destination, \"xb\") as stream:\n        stream.write(digest)\n    return groups\n\n\ndef read_payload(path, chunk_size=7):\n    if type(chunk_size) is not int or chunk_size <= 0:\n        raise ValueError(\"chunk_size must be a positive integer\")\n    result = bytearray()\n    buffer = bytearray(chunk_size)\n    with open(path, \"rb\") as stream:\n        while True:\n            count = stream.readinto(buffer)\n            if count == 0:\n                break\n            result.extend(buffer[:count])  # Tail bytes may be stale.\n    return bytes(result)\n\n\nif __name__ == \"__main__\":\n    from pathlib import Path\n    from tempfile import TemporaryDirectory\n    with TemporaryDirectory(prefix=\"pcap-catalog-\") as directory:\n        source = Path(directory) / \"products.txt\"\n        destination = Path(directory) / \"digest.bin\"\n        source.write_bytes(\"éclair\\nemoji🙂\\n\".encode(\"utf-8\"))\n        print(load_catalog(source, destination))\n        print(len(read_payload(destination)), \"digest bytes\")\n",
+      "sha256": "c03c98cb8a3af09a69c07825fbf97b24657ef0549085397f28c4e9ebeee67cc7"
+    },
+    {
+      "language": "python",
+      "code": "\"\"\"Select unique string IDs from a small in-memory list or tuple.\"\"\"\nimport random\n\n\nclass SamplingError(Exception):\n    pass\n\n\ndef select_ids(record_ids, k, seed):\n    if not isinstance(record_ids, (list, tuple)):\n        raise SamplingError(\"IDs must be a list or tuple\")\n    if any(not isinstance(item, str) or not item for item in record_ids):\n        raise SamplingError(\"each ID must be a nonempty string\")\n    if len(set(record_ids)) != len(record_ids):\n        raise SamplingError(\"duplicate IDs\")\n    if type(k) is not int or not 0 <= k <= len(record_ids):\n        raise SamplingError(\"k must be an integer within the population size\")\n    if type(seed) is not int:\n        raise SamplingError(\"seed must be an integer\")\n    return random.Random(seed).sample(record_ids, k)\n\n\nif __name__ == \"__main__\":\n    selected = select_ids([\"r1\", \"r2\", \"r3\", \"r4\"], 2, 17)\n    print(selected)\n",
+      "sha256": "e350f6231a77c04df8c4c4c1a31890e5c6afdd598e522af171db784df40051e4"
+    }
+  ],
+  "original_verification_harness": "from hashi_helpers import *\nimport contextlib, csv, errno, hashlib, importlib, io, platform, random, shutil, subprocess, tempfile\no=R/f'.maintenance/deep-pcap-31-03-{D}'\nguide=(R/'guides/PCAP-31-03-python-certified-associate-python-programmer.md').read_text(encoding='utf-8')\nblocks=re.findall(r'```python\\n(.*?)```',guide,re.S)\nassert len(blocks)==12\nnames=['workbook.py','reports/__init__.py','reports/errors.py','reports/base.py','reports/renderers/__init__.py','reports/renderers/text.py','reports/renderers/csv_report.py','reports/__main__.py','catalog.py','sampler.py']\nfor name,block in zip(names,blocks[2:]):assert block==(o/name).read_text(encoding='utf-8').rstrip()+'\\n',name\ncount=0; receipts=[]\ndef check(condition, label):\n    global count\n    if not condition:raise AssertionError(label)\n    count+=1\ndef rejects(kind, function, *args):\n    try:function(*args)\n    except kind as exc:check(True,kind.__name__);return exc\n    else:raise AssertionError('Expected '+kind.__name__)\ndef run(args,cwd):\n    r=subprocess.run([sys.executable,'-X','utf8',*args],cwd=cwd,capture_output=True,text=True,encoding='utf-8',timeout=30)\n    receipts.append(dict(arguments=args,exit_code=r.returncode,stdout=r.stdout,stderr=r.stderr))\n    return r\nwith tempfile.TemporaryDirectory(prefix='pcap-original-') as temporary:\n    root=Path(temporary)\n    shutil.copytree(o/'reports',root/'reports',ignore=shutil.ignore_patterns('__pycache__'))\n    for name in ['catalog.py','sampler.py','workbook.py']:shutil.copyfile(o/name,root/name)\n    # Overwrite with the exact public fenced bytes, then execute those files.\n    for name,block in zip(names,blocks[2:]):(root/name).write_text(block,encoding='utf-8')\n    for i,block in enumerate(blocks[:2]):\n        namespace={'__name__':'pcap_intro_'+str(i)};exec(compile(block,'public-intro-'+str(i)+'.py','exec'),namespace)\n        if i==0:check(issubclass(namespace['UnknownCurrencyError'],namespace['PricingError']),'intro hierarchy')\n        else:\n            report=namespace['Report']('a');labeled=namespace['LabeledReport']('b')\n            check([v.render() for v in [report,labeled]]==['a','Title: b'],'intro plain polymorphism')\n            check(str(report)==\"Report('a')\",'intro str')\n    r=run(['catalog.py'],root)\n    check(r.returncode==0 and r.stdout==\"{'é': ['éclair'], 'e': ['emoji🙂']}\\n32 digest bytes\\n\" and not r.stderr,'public catalog demo')\n    r=run(['sampler.py'],root)\n    check(r.returncode==0 and r.stdout==\"['r4', 'r2']\\n\" and not r.stderr,'public sampler demo')\n    r=run(['workbook.py'],root);check(r.returncode==0 and r.stdout=='78 core checks passed\\n' and not r.stderr,'workbook')\n    r=run(['-m','reports'],root);check(r.returncode==0 and r.stdout=='pear\\nplum\\n\"pear, plum\"\\n' and not r.stderr,'module execution')\n    r=run(['-c','import reports; import reports.__main__; import reports.renderers.csv_report'],root)\n    check(r.returncode==0 and r.stdout=='' and not r.stderr,'silent imports')\n    r=run(['reports/__main__.py'],root)\n    check(r.returncode!=0 and 'attempted relative import with no known parent package' in r.stderr,'direct execution relative import boundary')\n    # This process imports only original code from its temporary package.\n    sys.path.insert(0,str(root))\n    try:\n        from reports.base import Report\n        from reports.errors import ReportError, ReportFormatError\n        from reports.renderers.text import TextReport\n        from reports.renderers.csv_report import CsvReport\n        from catalog import CatalogError, load_catalog, read_payload\n        from sampler import SamplingError, select_ids\n        rows=['comma, value','quote \"here\"','line\\nbreak','é','']\n        csv_text=CsvReport(rows).render()\n        check(list(csv.reader(io.StringIO(csv_text,newline='')))==[[v] for v in rows],'CSV actual roundtrip')\n        check(TextReport(['a','b']).render()=='a\\nb\\n','plain lines')\n        check(TextReport([]).render()==CsvReport([]).render()=='','empty reports')\n        check(TextReport(['a\\nb']).render()=='a\\nb\\n','text is display, not reversible rows')\n        check(str(TextReport(['x']))=='TextReport(1 rows)','inherited str')\n        check(TextReport.__module__=='reports.renderers.text','qualified class module')\n        check(TextReport.__bases__==(Report,),'direct base')\n        check(isinstance(CsvReport([]),Report),'polymorphic base')\n        check([r.render() for r in [TextReport(['x']),CsvReport(['x,y'])]]==['x\\n','\"x,y\"\\n'],'render contract')\n        for bad in ['abc',None,[1],['a',None]]:rejects(ReportFormatError,TextReport,bad)\n        check(issubclass(ReportFormatError,ReportError),'domain hierarchy')\n        rejects(NotImplementedError,Report([]).render)\n        mutable=['old'];report=TextReport(mutable);mutable.append('new')\n        check(report.rows==('old',),'snapshot rows')\n        for module,expected in [('reports.renderers.text',{'reports'}),('from reports.renderers import text',{'text'}),('from reports.renderers.text import TextReport',{'TextReport'}),('import reports.renderers.text as local',{'local'})]:\n            statement='import '+module if module.startswith('reports') else module\n            namespace={};exec(statement,namespace)\n            check(set(namespace)-{'__builtins__'}==expected,'import binding '+statement)\n        import reports.renderers.text as text_module\n        check(importlib.import_module('reports.renderers.text') is text_module,'cached module identity')\n        check('TextReport' in dir(text_module),'dir module')\n        check(text_module.__name__=='reports.renderers.text','module name')\n        # An original fixture tests star exports and rebinding versus mutation.\n        (root/'bindings.py').write_text('value=1\\nitems=[]\\n_hidden=4\\n__all__=[\"value\",\"items\",\"_hidden\"]\\n',encoding='utf-8')\n        importlib.invalidate_caches()\n        scope={};exec('from bindings import *',scope)\n        import bindings\n        check(set(scope)-{'__builtins__'}=={'value','items','_hidden'},'explicit all includes underscore')\n        bindings.value=2;bindings.items.append('shared')\n        check(scope['value']==1 and bindings.value==2,'rebinding is local')\n        check(scope['items'] is bindings.items and scope['items']==['shared'],'shared object mutation')\n        (root/'ordinary.py').write_text('visible=1\\n_hidden=2\\n',encoding='utf-8');importlib.invalidate_caches()\n        ordinary={};exec('from ordinary import *',ordinary)\n        check(set(ordinary)-{'__builtins__'}=={'visible'},'default star omits underscore')\n        caches=[str(p.relative_to(root)) for p in root.rglob('*.pyc')]\n        check(any('bindings.' in p for p in caches),'observed bytecode cache')\n        source=root/'products.txt';dest=root/'digest.bin'\n        raw='  éclair \\r\\nemoji🙂\\ne\\u0301clair\\nÉclair\\n'.encode('utf-8')\n        source.write_bytes(raw)\n        result=load_catalog(source,dest)\n        check(result=={'é':['éclair'],'e':['emoji🙂','e\\u0301clair'],'É':['Éclair']},'case and normalization retained')\n        check(dest.read_bytes()==hashlib.sha256(raw).digest(),'raw captured bytes digest')\n        for size in [1,7,32,40]:check(read_payload(dest,size)==dest.read_bytes(),'readinto valid prefix '+str(size))\n        rejects(FileExistsError,load_catalog,source,dest)\n        check(dest.read_bytes()==hashlib.sha256(raw).digest(),'exclusive output preserved')\n        for number,raw in enumerate([b'\\n',b'one\\n\\n',b'  \\t\\r\\n',b'a\\n \\nb']):\n            source.write_bytes(raw);bad_dest=root/f'bad{number}.bin'\n            rejects(CatalogError,load_catalog,source,bad_dest)\n            check(not bad_dest.exists(),'no output before validation')\n        source.write_bytes(b'\\xff');bad_dest=root/'invalid.bin'\n        rejects(UnicodeDecodeError,load_catalog,source,bad_dest);check(not bad_dest.exists(),'strict decode')\n        source.write_bytes(b'');empty_dest=root/'empty.bin'\n        check(load_catalog(source,empty_dest)=={},'empty catalog valid')\n        check(empty_dest.read_bytes()==hashlib.sha256(b'').digest(),'empty digest')\n        check(read_payload(source)==b'','empty payload')\n        source.write_bytes('🙂 fruit'.encode('utf-8'));last_dest=root/'last.bin'\n        check(load_catalog(source,last_dest)=={'🙂':['🙂 fruit']},'unterminated last line emoji')\n        exc=rejects(FileNotFoundError,load_catalog,root/'missing.txt',root/'missing.bin')\n        check(exc.errno==errno.ENOENT,'symbolic missing path errno')\n        for size in [0,-1,True,1.5]:rejects(ValueError,read_payload,dest,size)\n        ids=['r1','r2','r3','r4'];before=ids[:];state=random.getstate()\n        selected=select_ids(ids,2,17)\n        check(selected==select_ids(ids,2,17),'same-runtime seed replay')\n        check(len(selected)==2 and len(set(selected))==2 and set(selected)<=set(ids),'unique IDs')\n        check(ids==before,'caller population unchanged')\n        check(random.getstate()==state,'global generator unchanged')\n        check(select_ids([],0,1)==[],'empty sample')\n        check(set(select_ids(ids,4,1))==set(ids),'full population')\n        for bad_ids,k,seed in [(['a','a'],1,0),([''],0,0),([1],1,0),('abc',1,0),({'a'},1,0),(ids,-1,0),(ids,5,0),(ids,True,0),(ids,1.0,0),(ids,1,True),(ids,1,'seed')]:\n            rejects(SamplingError,select_ids,bad_ids,k,seed)\n        # Additional language boundaries, using real objects/control flow.\n        class Lookup:\n            def __getattr__(self,name):\n                if name=='absent':raise AttributeError(name)\n                raise RuntimeError('lookup executed')\n        check(not hasattr(Lookup(),'absent'),'hasattr AttributeError false')\n        rejects(RuntimeError,hasattr,Lookup(),'other')\n        class Slotted:\n            __slots__=()\n        check(not hasattr(Slotted(),'__dict__'),'dict not universal')\n        events=[]\n        for i in [0,1]:\n            try:\n                if i==0:continue\n                break\n            except ValueError:events.append('except')\n            else:events.append('else')\n            finally:events.append('finally')\n        check(events==['finally','finally'],'continue and break omit else')\n        def reraised(named):\n            try:raise ReportError('original')\n            except ReportError as exc:\n                if named:raise exc\n                raise\n        lengths=[]\n        for named in [False,True]:\n            exc=rejects(ReportError,reraised,named);tb=exc.__traceback__;n=0\n            while tb:n+=1;tb=tb.tb_next\n            lengths.append(n)\n        check(lengths[1]==lengths[0]+1,'named raise adds traceback site')\n        io_path=root/'text.txt'\n        with open(io_path,'w',encoding='utf-8',newline='\\n') as stream:\n            check(stream.write('é\\n\\nlast')==7,'write counts code points')\n        check(stream.closed,'closed on success')\n        with open(io_path,encoding='utf-8') as stream:\n            check(stream.readline()=='é\\n','first line')\n            check(stream.readline()=='\\n','blank line differs from EOF')\n            check(stream.readlines()==['last'],'remaining unterminated line')\n            check(stream.read()=='','text EOF')\n        try:\n            with open(io_path,encoding='utf-8') as stream:raise ReportError('leave')\n        except ReportError:pass\n        check(stream.closed,'closed on exception')\n        rejects(ValueError,stream.read)\n        r=run(['-O','-c','assert False; print(\"assert removed\")'],root)\n        check(r.returncode==0 and r.stdout=='assert removed\\n','optimization removes assert')\n    finally:\n        sys.path.remove(str(root))\n        for name in list(sys.modules):\n            if name in {'catalog','sampler','bindings','ordinary'} or name=='reports' or name.startswith('reports.'):\n                del sys.modules[name]\nlocal=dict(passed=True,python_version=platform.python_version(),implementation=platform.python_implementation(),core_checks=78,scenario_and_language_checks=count,process_receipts=receipts,bytecode_cache_observation=caches,execution_boundary='Original Python executed locally in a disposable temporary package and files; no paid lessons, exam UI, infrastructure deployment or human review. Ten broader learner activities remain proposed.')\nlocal['public_code_blocks']=len(blocks)\nlocal['public_example_sha256']=[hashlib.sha256(block.encode()).hexdigest() for block in blocks]\nlocal['public_module_paths']=names\nwrite(o/'local-checks.json',local)\nprint('Passed',count,'scenario/language checks plus 78 core checks on',platform.python_version())\n",
+  "python_execution_receipt": {
+    "passed": true,
+    "python_version": "3.13.14",
+    "implementation": "CPython",
+    "core_checks": 78,
+    "scenario_and_language_checks": 98,
+    "process_receipts": [
+      {
+        "arguments": [
+          "catalog.py"
+        ],
+        "exit_code": 0,
+        "stdout": "{'é': ['éclair'], 'e': ['emoji🙂']}\n32 digest bytes\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "sampler.py"
+        ],
+        "exit_code": 0,
+        "stdout": "['r4', 'r2']\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "workbook.py"
+        ],
+        "exit_code": 0,
+        "stdout": "78 core checks passed\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "-m",
+          "reports"
+        ],
+        "exit_code": 0,
+        "stdout": "pear\nplum\n\"pear, plum\"\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "-c",
+          "import reports; import reports.__main__; import reports.renderers.csv_report"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "reports/__main__.py"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\chris\\AppData\\Local\\Temp\\pcap-original-phjg174y\\reports\\__main__.py\", line 1, in <module>\n    from .renderers.text import TextReport\nImportError: attempted relative import with no known parent package\n"
+      },
+      {
+        "arguments": [
+          "-O",
+          "-c",
+          "assert False; print(\"assert removed\")"
+        ],
+        "exit_code": 0,
+        "stdout": "assert removed\n",
+        "stderr": ""
+      }
+    ],
+    "bytecode_cache_observation": [
+      "__pycache__\\bindings.cpython-313.pyc",
+      "__pycache__\\catalog.cpython-313.pyc",
+      "__pycache__\\ordinary.cpython-313.pyc",
+      "__pycache__\\sampler.cpython-313.pyc",
+      "reports\\__pycache__\\base.cpython-313.pyc",
+      "reports\\__pycache__\\errors.cpython-313.pyc",
+      "reports\\__pycache__\\__init__.cpython-313.pyc",
+      "reports\\__pycache__\\__main__.cpython-313.pyc",
+      "reports\\renderers\\__pycache__\\csv_report.cpython-313.pyc",
+      "reports\\renderers\\__pycache__\\text.cpython-313.pyc",
+      "reports\\renderers\\__pycache__\\__init__.cpython-313.pyc"
+    ],
+    "execution_boundary": "Original Python executed locally in a disposable temporary package and files; no paid lessons, exam UI, infrastructure deployment or human review. Ten broader learner activities remain proposed.",
+    "public_code_blocks": 12,
+    "public_example_sha256": [
+      "590d59f328b44a9dc743052dde930e183a2cfe6aca2e54313545e9864533e6f6",
+      "01ed37bb74380b39b7b56e696f08dfdee4eda900936b9ba99aaf0decf3316469",
+      "c498f747aa245959a071703cefddbbc59ee685d10335fbafc19b99ca8a82f1ea",
+      "f1dc0bb190cd64d51e9f833ad7d6a023a2aeac8587d20304220a014e1b988f89",
+      "3ddd4c54e7b679298645839174dd19aefaded898d56361e5ab9bb66084a69652",
+      "6fa528e7cc1412dff1254a1fbdb81ed5e4284dba2da8768d5208d541adca4f9f",
+      "43c5720e4d1d37b5f2f2b66dcbbed0199fa83c6d50e1d3d530ad4050489b62af",
+      "f4ceaaa82b5e8f617a8c467a134f90bcb4f2f727a370ee5f40bf2987ed0693ef",
+      "48b4600037360e770a2906e7b99349072caa4508e129ee09c91edab33331c4be",
+      "7dde3a36c2f2960906e3ccf69f396fd4a83884d8a7b890ca44b4f15e925c1855",
+      "c03c98cb8a3af09a69c07825fbf97b24657ef0549085397f28c4e9ebeee67cc7",
+      "e350f6231a77c04df8c4c4c1a31890e5c6afdd598e522af171db784df40051e4"
+    ],
+    "public_module_paths": [
+      "workbook.py",
+      "reports/__init__.py",
+      "reports/errors.py",
+      "reports/base.py",
+      "reports/renderers/__init__.py",
+      "reports/renderers/text.py",
+      "reports/renderers/csv_report.py",
+      "reports/__main__.py",
+      "catalog.py",
+      "sampler.py"
+    ]
+  },
+  "manual_objective_confirmation": {
+    "checked_on": "2026-09-29",
+    "method": "Complete indexed public English syllabus plus full English credential web page, after direct/objective-monitor failures; manual retained-snapshot comparison",
+    "numbered_objectives": 21,
+    "per_section": [
+      5,
+      2,
+      3,
+      6,
+      5
+    ],
+    "weights": [
+      12,
+      14,
+      18,
+      34,
+      22
+    ],
+    "items": [
+      6,
+      5,
+      8,
+      12,
+      9
+    ],
+    "active_code": "PCAP-31-03",
+    "syllabus_date": "2022-03-07",
+    "snapshot_action": "Retained; no successful new automated hash comparison",
+    "announced_next": "PCAP-31-04 in development, Q3 2026 announcement does not establish launch",
+    "groups": [
+      {
+        "title": "Section 1: Modules and Packages — 6 items, 12%",
+        "objectives": [
+          "1.1 Import and use modules and packages: import variants, qualification, dir(), sys.path.",
+          "1.2 Use math: ceil(), floor(), trunc(), factorial(), hypot(), sqrt().",
+          "1.3 Use random: random(), seed(), choice(), sample().",
+          "1.4 Discover host properties with platform.",
+          "1.5 Create and use modules/packages: __pycache__, __name__, visibility convention, __init__.py, search paths, nesting."
+        ]
+      },
+      {
+        "title": "Section 2: Exceptions — 5 items, 14%",
+        "objectives": [
+          "2.1 Handle Python-defined exceptions: try/except, hierarchy, raise, assert, args, else, finally.",
+          "2.2 Define custom exceptions and integrate them into a hierarchy."
+        ]
+      },
+      {
+        "title": "Section 3: Strings — 8 items, 18%",
+        "objectives": [
+          "3.1 Character representation: ASCII, Unicode, UTF-8, code points, escapes.",
+          "3.2 String operations: ord(), chr(), indexing, slicing, immutability, iteration, comparison, membership.",
+          "3.3 String methods: is* methods, join(), split(), strip(), index(), find(), rfind(), sorted()."
+        ]
+      },
+      {
+        "title": "Section 4: Object-Oriented Programming — 12 items, 34%",
+        "objectives": [
+          "4.1 OOP concepts: class, object, property, method, encapsulation, inheritance.",
+          "4.2 Instance/class variables, __dict__, private components and name mangling.",
+          "4.3 Methods and self.",
+          "4.4 Introspection: hasattr(), __name__, __module__, __bases__.",
+          "4.5 Single/multiple inheritance, isinstance(), identity, overriding, polymorphism, __str__(), diamond problems.",
+          "4.6 Constructors and object initialization."
+        ]
+      },
+      {
+        "title": "Section 5: Miscellaneous — 9 items, 22%",
+        "objectives": [
+          "5.1 Conditional and nested list comprehensions.",
+          "5.2 Lambdas, higher-order functions, map(), filter().",
+          "5.3 Closures.",
+          "5.4 I/O terminology: modes, streams, handles, text/binary.",
+          "5.5 File I/O: open(), errno, close/read/write/readline/readlines, bytearray buffers."
+        ]
+      }
+    ]
+  },
+  "review_provenance": "All 27 original answers reviewed/improved. Twelve exact public blocks executed on existing CPython3.13.14 with78core and98additional checks, including real temporary seven-file package, UTF8/binary files and sampler. Selected source sections only; paid interiors, account/booking UI and human review pending. Ten broader learner activities proposed. No interactive debugger, installation, infrastructure execution or external messages."
+}

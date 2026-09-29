@@ -11237,53 +11237,58 @@
       "notes": "Mapped all 36 numbered objectives, repaired numeric input overflow/prefix handling, explicit rounding, array-row bounds, ownership and string capacity. Reviewed/improved all 30 original answers. Eight complete public C programs executed remotely; GCC 14.2 and Clang 19.1 each passed 72 core and 118 scenario checks, plus nine sum-boundary checks on GCC. Paid/source access limits, incomplete vendor snippets and human review remain explicit. See docs/research/2026-09-29-cle-10-01-deep-review.md"
     },
     {
-      "id": "pcap-31-03-2026-09-02-source-validation",
+      "id": "pcap-31-03-2026-09-29-source-validation",
       "exam_code": "PCAP-31-03",
       "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-02",
+      "reviewed_on": "2026-09-29",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
       "blueprint_snapshot_sha256": "189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85",
       "objective_coverage": [
         {
-          "objective_group": "Modules and Packages (12%)",
+          "objective_group": "Section 1: Modules and Packages — 6 items, 12%",
           "guide_sections": [
-            "Section 1",
-            "Scenarios 1 and 3",
-            "Labs 1–2"
+            "1. Modules and packages — 12%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answers and reasoning"
           ]
         },
         {
-          "objective_group": "Exceptions (14%)",
+          "objective_group": "Section 2: Exceptions — 5 items, 14%",
           "guide_sections": [
-            "Section 2",
-            "All scenarios",
-            "Labs 3–4"
+            "2. Exceptions — 14%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answers and reasoning"
           ]
         },
         {
-          "objective_group": "Strings (18%)",
+          "objective_group": "Section 3: Strings — 8 items, 18%",
           "guide_sections": [
-            "Section 3",
-            "Scenario 2",
-            "Labs 5–6"
+            "3. Strings — 18%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answers and reasoning"
           ]
         },
         {
-          "objective_group": "Object-Oriented Programming (34%)",
+          "objective_group": "Section 4: Object-Oriented Programming — 12 items, 34%",
           "guide_sections": [
-            "Section 4",
-            "Scenario 1",
-            "Labs 7–8"
+            "4. Object-oriented programming — 34%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answers and reasoning"
           ]
         },
         {
-          "objective_group": "Comprehensions, Lambdas, Closures, and I/O (22%)",
+          "objective_group": "Section 5: Miscellaneous — 9 items, 22%",
           "guide_sections": [
-            "Section 5",
-            "All scenarios",
-            "Labs 9–10"
+            "5. Comprehensions, lambdas, closures, and I/O — 22%",
+            "Executed core workbook",
+            "Integrated scenarios",
+            "Answers and reasoning"
           ]
         }
       ],
@@ -11295,12 +11300,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 11,
-        "reachable": 9,
+        "unique_external_links": 31,
+        "reachable": 23,
         "access_blocked": 1,
-        "missing_or_error": 1
+        "missing_or_error": 7
       },
-      "notes": "All five PCAP-31-03 sections are mapped through module/package namespace behavior and named standard-library calls, exception matching and custom hierarchies, Unicode/string operations, class/instance state and inheritance, comprehensions/functional tools/closures, and text/binary I/O. Three scenarios, ten labs and 27 original checks are included. The announced PCAP-31-04 Q3 2026 version remains a prominent transition watch while the live credential page identifies 31-03 as current. The initially supplied practice URL was rejected after a 404 and replaced with the verified live OpenEDG product page. O'Reilly is automation-blocked; no guide link is missing. No recalled/live item, answer dump or copied course question is used. September 29 PCEP source-health refresh updated shared-link counts only; PCAP content and review date were not re-reviewed."
+      "notes": "Mapped all 21 numbered objectives and improved all 27 answers. Twelve exact public Python blocks executed, including a real seven-file report package, strict Unicode/checksum program and unique-ID sampler. CPython 3.13.14 passed 78 core and 98 additional scenario/language checks. Corrected import caching, sample identity, classification, exception flow, MRO and stream boundaries; provider duration updated to 58 hours. Source/policy conflicts, paid access and human review remain explicit. See docs/research/2026-09-29-pcap-31-03-deep-review.md"
     },
     {
       "id":"jsa-41-01-2026-09-02-source-validation",

@@ -4,6 +4,215 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-pcap3103-deep-review",
+      "title": "PCAP-31-03 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCAP-31-03"
+      ],
+      "results": [
+        {
+          "exam_code": "PCAP-31-03",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+          "baseline_sha256": "4173ebc5e5f9e28a667a5d678fda992c4a88c9134356aa103f4afd15c81da84f",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Public indexed English syllabus completely read after direct/open failures. All 21 numbered objectives manually match retained snapshot;31-03 active while 31-04 still in development announcedQ3 2026. No successful automated hash comparison or booking availability inferred."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Full modules chapter and precisely selected pinned 3.13 primary sections read. Twelve exact public blocks executed on existing CPython 3.13.14;78 core plus 98 scenario/language checks. No paid content or new interpreter installed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current English exam information and Python documentation version index read. Announced 31-04 quarter is not a launch; current unversioned docs 3.14.7 do not establish exam-required behavior. No unseen news feed or whole change-log review claimed."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public OpenEDG course/practice listings and Pluralsight path completely read; Harvard public landing via web fallback. Course 58 hours and path 53 hours separated from author-selected budgets. Cisco shell and OReilly 403 do not establish interior quality or runtime."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "English five-year versus Japanese lifetime validity, TestNow specific 15-day versus generic 7-day retake wording, practice Learner versus TestCandidate redemption and scoring presentation conflicts remain visible. Direct source/PDF failure, paid interiors, account/booking and human review pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "pcap3103-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Numbered scope needs executable evidence",
+              "url": "https://pythoninstitute.org/pcap-exam-syllabus",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Twenty-one objectives cover named library calls and multi-module/OOP/I-O behavior; three prior scenarios were sketches.",
+              "recommendation": "Add exact objective group mapping, original workbook, real nested package and complete catalog/sampler modules; execute public code and boundary fixtures.",
+              "disposition": "applied",
+              "source_id": "pcap-31-03-syllabus",
+              "resolution": "Add exact objective group mapping, original workbook, real nested package and complete catalog/sampler modules; execute public code and boundary fixtures."
+            },
+            {
+              "id": "pcap3103-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sampling occurrences is not uniqueness of values",
+              "url": "https://docs.python.org/3.13/library/random.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Duplicate population values can both be selected; seed replay does not guarantee all sample algorithms across releases.",
+              "recommendation": "Require unique nonempty string IDs in the scenario, isolate Random state, reject invalid sizes/types and test same-runtime replay without cross-version/secrets claims.",
+              "disposition": "applied",
+              "source_id": "python313-random",
+              "resolution": "Require unique nonempty string IDs in the scenario, isolate Random state, reject invalid sizes/types and test same-runtime replay without cross-version/secrets claims."
+            },
+            {
+              "id": "pcap3103-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "String classification has distinct empty and cased rules",
+              "url": "https://docs.python.org/3.13/library/stdtypes.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Cased predicates ignore uncased characters; empty isascii succeeds; decimal/digit/numeric sets differ.",
+              "recommendation": "Replace one generic rule with explicit contracts and execute empty, punctuation, superscript, fraction and Unicode examples.",
+              "disposition": "applied",
+              "source_id": "python313-types",
+              "resolution": "Replace one generic rule with explicit contracts and execute empty, punctuation, superscript, fraction and Unicode examples."
+            },
+            {
+              "id": "pcap3103-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Exception else needs normal fall-through",
+              "url": "https://docs.python.org/3.13/reference/compound_stmts.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "No exception is insufficient when return/break/continue leaves try; finally can replace outcomes.",
+              "recommendation": "Teach exact control-flow exclusions and execute handled/unhandled/return/loop-exit traces plus re-raise traceback and file cleanup.",
+              "disposition": "applied",
+              "source_id": "python313-compound",
+              "resolution": "Teach exact control-flow exclusions and execute handled/unhandled/return/loop-exit traces plus re-raise traceback and file cleanup."
+            },
+            {
+              "id": "pcap3103-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Package examples need actual import and execution semantics",
+              "url": "https://docs.python.org/3.13/tutorial/modules.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Cached module objects, from-import binding, __all__ and relative package context are distinct.",
+              "recommendation": "Build a seven-file package with actual imports and python -m execution, verify silent import, bytecode, rebinding/mutation and deliberate bare-file relative-import failure.",
+              "disposition": "applied",
+              "source_id": "python313-modules",
+              "resolution": "Build a seven-file package with actual imports and python -m execution, verify silent import, bytecode, rebinding/mutation and deliberate bare-file relative-import failure."
+            },
+            {
+              "id": "pcap3103-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Lookup and cooperative inheritance require boundaries",
+              "url": "https://docs.python.org/3.13/library/functions.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "hasattr performs real attribute lookup; super follows the instance MRO and can reach a sibling.",
+              "recommendation": "Explain side effects/nonAttributeError propagation, optional instance dictionaries and cooperative MRO; execute original probes.",
+              "disposition": "applied",
+              "source_id": "python313-builtins",
+              "resolution": "Explain side effects/nonAttributeError propagation, optional instance dictionaries and cooperative MRO; execute original probes."
+            },
+            {
+              "id": "pcap3103-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Reusable buffers require a valid-prefix boundary",
+              "url": "https://docs.python.org/3.13/library/io.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The last readinto chunk may be shorter than the buffer and retain stale bytes; text EOF differs from blank lines.",
+              "recommendation": "Add exact-prefix binary reads and a strict Unicode catalog, execute short/final/empty chunks and real files, and qualify nonblocking/atomicity limits.",
+              "disposition": "applied",
+              "source_id": "python313-io",
+              "resolution": "Add exact-prefix binary reads and a strict Unicode catalog, execute short/final/empty chunks and real files, and qualify nonblocking/atomicity limits."
+            },
+            {
+              "id": "pcap3103-deep-8",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Current source and access conflicts remain unresolved",
+              "url": "https://pythoninstitute.org/pcap",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PCAP-31-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Localized validity, generic retake and practice-account wording conflict; PDF/scoring access and paid/account detail remain incomplete.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped all 21 numbered objectives and improved all 27 answers. Twelve exact public Python blocks executed, including a real seven-file report package, strict Unicode/checksum program and unique-ID sampler. CPython 3.13.14 passed 78 core and 98 additional scenario/language checks. Corrected import caching, sample identity, classification, exception flow, MRO and stream boundaries; provider duration updated to 58 hours. Source/policy conflicts, paid access and human review remain explicit. Same-context AI review; human review pending. See docs/research/2026-09-29-pcap-31-03-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cle1001-deep-review",
       "title": "CLE-10-01 complete guide and learning-content review",
       "rubric_version": 1,
