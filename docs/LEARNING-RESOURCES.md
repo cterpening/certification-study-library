@@ -3375,6 +3375,35 @@ Use only authorized practice material. Reject products advertised as dumps, reca
 
 **Resource review boundary:** Public listings are not course-quality or question-bank validation. The free quiz introduction, first item/explanation and start of the second were visible during a bounded page preview; the quiz was not completed or submitted and its wording is not reproduced. Paid QAE items, ITAF package contents, O’Reilly/Udemy interiors and video playback remain unreviewed.
 
+### CISM — Certified Information Security Manager
+
+Resource details from the [CISM guide](../guides/CISM-isaca-certified-information-security-manager.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Choose resources for your measured gaps and intended exam date. Estimates are study budgets unless an observed duration is explicitly labeled. Older courses can teach transferable concepts; they do not establish complete November alignment.
+
+| Best use and version boundary | Resource | Access | Estimated time |
+|---|---|---|---:|
+| Current 35 subtopics and 37 tasks; recheck before scheduling | [Official outline](https://www.isaca.org/credentialing/cism/cism-exam-content-outline) | Public | 30–60 min |
+| Confirmed November date, weights and architecture additions; not the complete future tasks | [September 10 update](https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities) | Public | 10–15 min |
+| Detailed future explanation remains blocked in this review | [2026 job-practice FAQ](https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026) | Public route; timed out | Verify availability |
+| Policies and 2022 CISM appendix; selected pages read | [Candidate guide](https://www.isaca.org/credentialing/-/media/fa494652c5f149289af38cef18328650.ashx) | Public PDF | 60–90 min |
+| Public listing retains old-material warning; verify the exact version and access | [Online review course](https://www.isaca.org/store2/product/CISM-ORC-C) | Paid; public description read | About 16 hr stated; 20–30 hr study budget |
+| Current manual route returned a shell; exact edition/interior not verified | [Review manual](https://www.isaca.org/store2/product/CISM-RM-C) | Paid | 20–35 hr study budget |
+| Landing page advertises 1,047 items/six months; current product route unreadable, so verify November alignment and pool | [Certification and QAE route](https://www.isaca.org/credentialing/cism) | Public/paid | 25–45 hr study budget |
+| Ten-item style sample advertised; item contents/submission not reviewed | [Official free quiz](https://www.isaca.org/credentialing/cism/cism-practice-quiz) | Public/form | 15–25 min |
+| Supplementary explanations; access returned 403 and prior duration was not reverified | [O'Reilly — Peter H. Gregory](https://www.oreilly.com/videos/certified-information-security/0642572021955/) | Paid | Prior 8 hr 2 min; verify live |
+| Supplementary explanations; access returned 403 and prior duration was not reverified | [O'Reilly/Packt — ACI Learning](https://www.oreilly.com/videos/certified-information-security/9781835881309/) | Paid | Prior 13 hr 49 min; verify live |
+| Public Cybrary listing/TOC, May 20, 2025; no November alignment or lesson-quality verification | [LinkedIn Learning CISM Cert Prep](https://www.linkedin.com/learning/isaca-certified-information-security-manager-cism-cert-prep) | Paid/trial | 9 hr 22 min stated |
+| Access blocked; exact revision, duration and lessons unverified | [Udemy — Hemang Doshi](https://www.udemy.com/course/hemang-doshi-cism/) | Paid | Verify live duration |
+| Governance and outcomes; related practice, not exam scope | [NIST CSF 2.0](https://www.nist.gov/cyberframework) | Public | 1–2 hr selected |
+| Risk-register meaning, ownership and enterprise reporting; selected PDF pages read | [NIST IR 8286 Rev. 1](https://csrc.nist.gov/pubs/ir/8286/r1/final) | Public | 3–6 hr selected |
+| Readiness, response authority, evidence and recovery; selected PDF pages read | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 3–5 hr selected |
+| Experience/application versus sitting the exam; no personal eligibility decision | [Certification requirements](https://www.isaca.org/credentialing/cism/get-cism-certified) | Public | 10–15 min |
+| Current obligations and dated transition; personal cycle remains unverified | [Maintenance](https://www.isaca.org/credentialing/cism/maintain-cism-certification) and [2027 CPE policy](https://www.isaca.org/credentialing/cpe-2027) | Public | 20–30 min |
+| Objectivity, competence, significant facts and confidentiality | [ISACA ethics](https://www.isaca.org/code-of-professional-ethics) | Public | 10–15 min |
+
+Reject dumps, recalled or “actual” questions and guaranteed-pass products. Match materials to the date-specific official scope; neither a marketing title nor a large question pool proves complete coverage.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

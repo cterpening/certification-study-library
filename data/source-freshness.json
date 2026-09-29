@@ -4,6 +4,161 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-cism-deep-review",
+      "title": "CISM complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CISM"
+      ],
+      "results": [
+        {
+          "exam_code": "CISM",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+          "baseline_sha256": "98fe3da496ae9fa1d542834a6a6a2585f0cf53bb108581a6a86476abac94e154",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Complete current outline, candidate CISM appendix and dated central announcement read. 72 current entries mapped; November weights and architecture areas confirmed separately. Current snapshots unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected genuine NIST 8286r1/800-61r3 PDF pages, ethics and CPE material reviewed. Original 47-check workbook distinguishes joint loss, point estimates, decision authority, denominator coverage and modeled recovery."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September 10 central announcement resolves previously unavailable future weights. September 1 material availability and November 3 exam effective date distinguished from January 2027 CPE policy."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Rendered public course and LinkedIn metadata compared with old guide. Current QAE/manual routes remain shells and exact edition/pool not inferred. Resource table explicitly states blocked metadata and unreviewed paid content."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Detailed future outline support article repeatedly times out. Product pages retain old warnings or render shells; exact November purchase alignment unresolved. Personal eligibility/CPE transition, paid content, broader activities and human review remain pending."
+            }
+          },
+          "findings": [
+            {
+              "id": "cism-deep-1",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Future weights are now published",
+              "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-updates-cism-exam-content-outline-factoring-in-todays-technologies-security-responsibilities",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISM"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 10 central announcement confirms November weights 18/20/33/29 and two architecture content areas.",
+              "recommendation": "Replace old unpublished-weight claim with date-separated table and architecture bridge; preserve current canonical snapshot.",
+              "disposition": "applied",
+              "source_id": "cism-2026-update-announcement",
+              "resolution": "Replace old unpublished-weight claim with date-separated table and architecture bridge; preserve current canonical snapshot."
+            },
+            {
+              "id": "cism-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Risk reporting needs normalized definitions and dependencies",
+              "url": "https://csrc.nist.gov/pubs/ir/8286/r1/final",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISM"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Selected current publication material connects register/detail record, authority and enterprise aggregation.",
+              "recommendation": "Teach current versus target exposure, uncertainty, ownership and original common-cause calculations.",
+              "disposition": "applied",
+              "source_id": "nist-ir-8286-rev1",
+              "resolution": "Teach current versus target exposure, uncertainty, ownership and original common-cause calculations."
+            },
+            {
+              "id": "cism-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Incident management integrates with ongoing risk management",
+              "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISM"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Revision 3 uses CSF 2.0 functions, documented authority and verified recovery.",
+              "recommendation": "Add decision latency, shared responsibility and end-to-end business validation with explicitly modeled times.",
+              "disposition": "applied",
+              "source_id": "splk-5003-source-1",
+              "resolution": "Add decision latency, shared responsibility and end-to-end business validation with explicitly modeled times."
+            },
+            {
+              "id": "cism-deep-4",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CPE transition differs from the exam change",
+              "url": "https://www.isaca.org/credentialing/cpe-2027",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISM"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "January 2027 framework retains 120 total, at least 90 aligned and up to 30 other qualifying hours.",
+              "recommendation": "Explain separate dates, annual minimum and unresolved personal recordkeeping transition.",
+              "disposition": "applied",
+              "source_id": "isaca-cpe-2027",
+              "resolution": "Explain separate dates, annual minimum and unresolved personal recordkeeping transition."
+            },
+            {
+              "id": "cism-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Complete future task coverage remains unverified",
+              "url": "https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "CISM"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Central support article times out; announcement lists broad changes without every subtopic/task.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Mapped 35 current subtopics and 37 supporting tasks. Corrected the November change with confirmed 18/20/33/29 weights and architecture additions; exact future tasks remain blocked. Added 40 answer notes, three worked scenarios, eight proposed activities and 47 executed management-workbook checks. Product-version ambiguity, paid interiors, personal eligibility and human review remain pending. Same-context AI review; human review pending. See docs/research/2026-09-29-cism-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 4,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-cisa-deep-review",
       "title": "CISA complete guide and learning-content review",
       "rubric_version": 1,
@@ -33670,7 +33825,7 @@
               "url": "https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026",
               "source_type": "official-announcement",
               "affected_exams": ["CISM"],
-              "catalog_status": "not-registered",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official support page was reachable only as an application shell; its substantive article content could not be audited.",
               "recommendation": "Recheck when the official article is publicly readable; do not infer unpublished weights or objectives.",
@@ -35094,7 +35249,7 @@
             "affected_exams": [
               "CISM"
             ],
-            "catalog_status": "not-registered",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The official support page was reachable only as an application shell; its substantive article content could not be audited.",
             "recommendation": "Recheck when the official article is publicly readable; do not infer unpublished weights or objectives.",
@@ -44565,7 +44720,7 @@
               "affected_exams": [
                 "CISM"
               ],
-              "catalog_status": "not-registered",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official endpoint returns HTTP 200 but only a generic ISACA Support Page application shell; no article title, replacement domains, weights, or objectives are present in auditable static content.",
               "recommendation": "Recheck when ISACA publishes a readable article or the replacement outline; continue using the current outline until the announced November 3, 2026 change.",
@@ -47230,7 +47385,7 @@
               "url": "https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026",
               "source_type": "official-announcement",
               "affected_exams": ["CISM"],
-              "catalog_status": "not-registered",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The central update route still provides no auditable future domain, task, or weight content.",
               "recommendation": "Keep the current outline bounded through November 2 and recheck the central outline before any post-change exam or material purchase.",

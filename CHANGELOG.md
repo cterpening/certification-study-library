@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [CISM deep review](docs/research/2026-09-29-cism-deep-review.md): Mapped 72 current entries; corrected November weights/architecture changes and added 40 answers, three worked scenarios and 47 executed management checks.
+
 - September 29, 2026: [CISA deep review](docs/research/2026-09-29-cisa-deep-review.md): Mapped 60 subtopics and 43 tasks; added 40 answers and 47 executed checks including SQLite backup/restore, and updated ITAF, QAE and 2027 CPE guidance.
 
 - September 29, 2026: [SPLK-5001 deep review](docs/research/2026-09-29-splk-5001-deep-review.md): Mapped 24 objectives; added 40 answers and 49 executed checks, with corrections for renewal, summary completeness, entity identity and version-specific detection behavior.

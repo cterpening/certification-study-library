@@ -10699,23 +10699,76 @@
       "notes": "Mapped 60 subtopics and 43 supporting tasks. Added 40 answer notes, three worked scenarios, eight proposed activities and 47 executed Python/SQLite checks including a disposable database backup/restore. Updated QAE location, ITAF edition and 2027 CPE distinctions; clarified evidence completeness, sampling and recovery. Gated standards/course contents, personal eligibility and human review remain pending. See docs/research/2026-09-29-cisa-deep-review.md"
     },
     {
-      "id":"cism-2026-09-07-source-validation",
-      "exam_code":"CISM",
-      "guide_path":"guides/CISM-isaca-certified-information-security-manager.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-07",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/cism-official-objectives.txt",
-      "blueprint_snapshot_sha256":"4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
-      "objective_coverage":[
-        {"objective_group":"Information Security Governance (17%)","guide_sections":["Section 1","All scenarios","Labs 1–2"]},
-        {"objective_group":"Information Security Risk Management (20%)","guide_sections":["Section 2","All scenarios","Labs 3–4"]},
-        {"objective_group":"Information Security Program (33%)","guide_sections":["Section 3","All scenarios","Labs 5–6"]},
-        {"objective_group":"Incident Management (30%)","guide_sections":["Section 4","Scenarios 1–2","Labs 7–8"]}
+      "id": "cism-2026-09-29-source-validation",
+      "exam_code": "CISM",
+      "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/cism-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
+      "objective_coverage": [
+        {
+          "objective_group": "Information Security Governance (17%)",
+          "guide_sections": [
+            "1. Information Security Governance (17%)",
+            "Worked results for the three scenarios",
+            "Executed offline management workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Information Security Risk Management (20%)",
+          "guide_sections": [
+            "2. Information Security Risk Management (20%)",
+            "Worked results for the three scenarios",
+            "Executed offline management workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Information Security Program (33%)",
+          "guide_sections": [
+            "3. Information Security Program (33%)",
+            "Worked results for the three scenarios",
+            "Executed offline management workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Incident Management (30%)",
+          "guide_sections": [
+            "4. Incident Management (30%)",
+            "Worked results for the three scenarios",
+            "Executed offline management workbook",
+            "Answer notes"
+          ]
+        },
+        {
+          "objective_group": "Supporting tasks across the four current domains",
+          "guide_sections": [
+            "1. Information Security Governance (17%)",
+            "2. Information Security Risk Management (20%)",
+            "3. Information Security Program (33%)",
+            "4. Incident Management (30%)",
+            "Answer notes"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":17,"reachable":14,"access_blocked":3,"missing_or_error":0},
-      "notes":"All four 2022 job-practice domains and 37 supporting tasks are mapped through enterprise governance and strategy, business-scenario risk and owned treatment, an integrated control/program lifecycle, and exercised incident readiness, operations, recovery and improvement. Three scenarios, eight safe management labs and 40 original checks are included. The November 3, 2026 outline switch is prominent and the still-unpublished replacement weights are not guessed. An affiliated ISACA Ireland course supplies a provisional architecture/strategy signal, while NIST IR 8286 Rev. 1 and SP 800-61 Rev. 3 add transferable practice; none is treated as replacement scope. Passing is separated from CISM's verified management experience and application/maintenance duties. No recalled/live item, dump or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 15,
+        "access_blocked": 3,
+        "missing_or_error": 1
+      },
+      "notes": "Mapped 35 current subtopics and 37 supporting tasks. Corrected the November change with confirmed 18/20/33/29 weights and architecture additions; exact future tasks remain blocked. Added 40 answer notes, three worked scenarios, eight proposed activities and 47 executed management-workbook checks. Product-version ambiguity, paid interiors, personal eligibility and human review remain pending. See docs/research/2026-09-29-cism-deep-review.md"
     },
     {
       "id":"crisc-2026-09-02-source-validation",
