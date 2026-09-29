@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-solc01-deep-review",
+      "title": "SOL-C01 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SOL-C01"
+      ],
+      "results": [
+        {
+          "exam_code": "SOL-C01",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/SOL-C01-snowpro-associate-platform.md",
+          "baseline_sha256": "16b6ae7324683824475e45c717d98b33917eefa29accc8a08501297d00cef0a8",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Sixarchivedpublicabilitiesmapped;originala930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57frozen. Retiredmonitorintentionallyreturnsnoresults,notunchangedverification. Actual2pageFAQfullyreadMay5transition/free/nonexpiringbadge/holderexpiry;May4datefromarchivedpage. No detailedretiredPDF orreplacementassessmentblueprint recovered."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selectedofficialarchitecture/roles/loading/COPY/null/constraint/protection/sharing/warehouse/Cortex docs. Currentworkspacescompute/context andAIgrantpaths explained. Exactpublic45checkPythonSQLiteworkbook;noSnowflakeexecution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "April10.12standardCHECKGA,September1LegacyNotebookcreation/Novemberplannedexecutionchange andAugust–NovembermodelRBACtransition read. Current2026_07disableddefault statusqualifiesmilestonedates;noaccountstateassumption. First-partyMay20eventclosedregistration retained asdatedcontext."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "OD-SPTfullpubliclisting4h/30daylabaccess;actual4page25A24halfday9modulePDF. Badge1separatecourse6hheader/8–12hbody;closedMay20four-hourtrainingnotupcomingorassessmentduration. Udemy403oldmetadataunverified;no paidinteriors/enrollment/questions."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correctedlive-versusarchivedscope wording,notebookcreationcontext,standardCHECK/key distinction,64dayfilemetadata/businessidentity,nullparseambiguity,primary/secondarycreation,temporaryshadowing,warehousecostboundary,Cortexbroadgrant/bootstrap/bundleandcoursehours.42answers8proposedlabs45actualchecks."
+            }
+          },
+          "findings": [
+            {
+              "id": "solc01-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Retired monitor skip is not a current unchanged-blueprint check",
+              "url": "https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ActualmonitorresultsareemptybecauseSOL-C01isretired; frozenpagecontains6abilities andMay4date;FAQMay5transition.",
+              "recommendation": "Preservefrozenhash andexplicitlyseparatearchivedscopefromliveFAQ/productreview.",
+              "disposition": "applied",
+              "source_id": "snowflake-platform-badge-transition",
+              "resolution": "Preservefrozenhash andexplicitlyseparatearchivedscopefromliveFAQ/productreview."
+            },
+            {
+              "id": "solc01-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "The active replacement course has verifiable public duration and lab terms",
+              "url": "https://learn.snowflake.com/en/courses/OD-SPT/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CurrentOD-SPTlistingstates4hestimatedeffort,30daylabs andPlatformAssessment/Badgeaftercourse.",
+              "recommendation": "Replaceunattributed8–15hdurationwith4hproviderobservation andseparatestudybudget/accesslimits.",
+              "disposition": "applied",
+              "source_id": "snowflake-platform-on-demand",
+              "resolution": "Replaceunattributed8–15hdurationwith4hproviderobservation andseparatestudybudget/accesslimits."
+            },
+            {
+              "id": "solc01-deep-3",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Badge1 is a distinct learning route with conflicting effort estimates",
+              "url": "https://learn.snowflake.com/en/courses/uni-essdww101/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Publicpage6hheaderand8–12htypicalcompletion;Hands-OnEssentialsnotPlatformSkillsreplacement.",
+              "recommendation": "Namecourseandbothestimateswithoutconflatingbadges.",
+              "disposition": "applied",
+              "source_id": "snowflake-data-warehousing-badge",
+              "resolution": "Namecourseandbothestimateswithoutconflatingbadges."
+            },
+            {
+              "id": "solc01-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Old notebook creation guidance needs a current workflow boundary",
+              "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/un-bundled/bcr-disable-legacy-notebooks",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "NewLegacyNotebookcreationdisabledSeptember1;run/editremovalplannedNovember.",
+              "recommendation": "Directpractice toWorkspaces,migrationandcompute/contextdifferences;noexecutedmigrationclaim.",
+              "disposition": "applied",
+              "source_id": "snowflake-legacy-notebook-retirement",
+              "resolution": "Directpractice toWorkspaces,migrationandcompute/contextdifferences;noexecutedmigrationclaim."
+            },
+            {
+              "id": "solc01-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Old only-NOT-NULL enforcement assumptions are incomplete",
+              "url": "https://docs.snowflake.com/en/sql-reference/constraints-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CurrentstandardtablesenforceNOTNULLandCHECK;PK/FK/UNIQUEremainunenforced.",
+              "recommendation": "Teachcurrentmatrix andAprilGA;explicitlydifferentiateSQLiteexerciseconstraints.",
+              "disposition": "applied",
+              "source_id": "snowflake-constraints",
+              "resolution": "Teachcurrentmatrix andAprilGA;explicitlydifferentiateSQLiteexerciseconstraints."
+            },
+            {
+              "id": "solc01-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "File-load tracking is not an indefinite business-event ledger",
+              "url": "https://docs.snowflake.com/en/user-guide/data-load-considerations-load",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "COPYmetadataexpires64days;unknownoldfilesskipbydefault;FORCEcanreload.",
+              "recommendation": "Addfile/eventidentity,reconciliation andactuallocalconflict/rollbackexercise withoutCOPYemulationclaim.",
+              "disposition": "applied",
+              "source_id": "snowflake-load-metadata",
+              "resolution": "Addfile/eventidentity,reconciliation andactuallocalconflict/rollbackexercise withoutCOPYemulationclaim."
+            },
+            {
+              "id": "solc01-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Null-looking results can conceal a parse failure",
+              "url": "https://docs.snowflake.com/en/sql-reference/functions/is_null_value",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "MissingpathandTRY_PARSE_JSONfailurecanproduceSQLNULL,distinctfromJSONnullandstringnull.",
+              "recommendation": "Preserverawinput/parseoutcome andteachthreewaypredicate;localPythonstateslabeledseparately.",
+              "disposition": "applied",
+              "source_id": "snowflake-json-null",
+              "resolution": "Preserverawinput/parseoutcome andteachthreewaypredicate;localPythonstateslabeledseparately."
+            },
+            {
+              "id": "solc01-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Effective read access differs from object-creation authority",
+              "url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CREATEusesprimaryrolechain;otheractionsaggregateactiveprimary/secondary;owningrole notinheritance.",
+              "recommendation": "Adddeliberatesecondaryrole/ownership/grantpath testsandanswers.",
+              "disposition": "applied",
+              "source_id": "snowflake-access-control",
+              "resolution": "Adddeliberatesecondaryrole/ownership/grantpath testsandanswers."
+            },
+            {
+              "id": "solc01-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Full qualification does not bypass a same-name temporary table",
+              "url": "https://docs.snowflake.com/en/user-guide/tables-temp-transient",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Temporaryobjecttakesprecedencewithinsessioneveninsamedatabase/schema.",
+              "recommendation": "Requireobject/sessionidentity anduniquelabnamesbeforewrite/drop/restore.",
+              "disposition": "applied",
+              "source_id": "snowflake-table-protection",
+              "resolution": "Requireobject/sessionidentity anduniquelabnamesbeforewrite/drop/restore."
+            },
+            {
+              "id": "solc01-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Warehouse controls do not cap all account consumption",
+              "url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Monitorsdonotcoverserverless/AIandmayovershootwhilewarehousehalts.",
+              "recommendation": "Separatewarehouse/storage/serverless/notebookcompute costobservations andbudgetmechanisms.",
+              "disposition": "applied",
+              "source_id": "snowflake-resource-monitors",
+              "resolution": "Separatewarehouse/storage/serverless/notebookcompute costobservations andbudgetmechanisms."
+            },
+            {
+              "id": "solc01-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Removing a narrow AI permission can leave broad access intact",
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "BlanketORperfunctiongrants,databaseroles andmodelbootstrapapplicationrole provide distinctpaths.",
+              "recommendation": "TeachAI_COMPLETE-specificgates andauditallinheritedpaths;do notuniversalizefeatureexceptions.",
+              "disposition": "applied",
+              "source_id": "snowflake-ai-function-access",
+              "resolution": "TeachAI_COMPLETE-specificgates andauditallinheritedpaths;do notuniversalizefeatureexceptions."
+            },
+            {
+              "id": "solc01-deep-12",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "A transition milestone does not prove account-wide enforcement",
+              "url": "https://docs.snowflake.com/en/release-notes/bcr-bundles/2026_07_bundle",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SOL-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Cortexnoticephasedtimeline versuscurrentbundleDisabledbyDefault.",
+              "recommendation": "Retainbothsourcesandrequireactualaccountbundle/grantverificationwithoutchangingthem.",
+              "disposition": "applied",
+              "source_id": "snowflake-2026-07-bundle",
+              "resolution": "Retainbothsourcesandrequireactualaccountbundle/grantverificationwithoutchangingthem."
+            }
+          ],
+          "notes": "Preserved six archived public abilities and frozen retired baseline; fully read actual two-page transition FAQ andfour-page trainingdatasheet. Updated currentPlatformcourse4h/30dayaccess,LegacyNotebookmigration,standardCHECKconstraints,COPYreplay/null handling,roleauthorization,cost/sharing andCortexaccess/bundle boundaries. Added45 executedlocalCSV/JSON/SQLitetransaction checks,42answers andeightconcretelabplans. NoSnowflakeaccount orcloudlabexecution;independenthumanreviewpending. Same-context AI review; human review pending. See docs/research/2026-09-29-sol-c01-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-200901-deep-review",
       "title": "200-901 complete guide and learning-content review",
       "rubric_version": 1,

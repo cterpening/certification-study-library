@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [SOL-C01 deep review](docs/research/2026-09-29-sol-c01-deep-review.md): Preserved retired scope, verified the replacement course, updated notebook/constraint/load/role/Cortex guidance and added 45 executed local checks with 42 answers.
+
 - September 29, 2026: [200-901 deep review](docs/research/2026-09-29-200-901-deep-review.md): Mapped 61 objectives, fixed Boolean parsing and incomplete API collection, added 67 executed checks and 48 answers, clarified protocol/tool limits and refreshed learning evidence.
 
 - September 29, 2026: [200-301 deep review](docs/research/2026-09-29-200-301-deep-review.md): Mapped 53 current and 29 future objectives separately, corrected DHCP transition and routing/LACP/ACL teaching, added 48 executed checks and 48 answers, and refreshed catalog evidence.

@@ -2741,6 +2741,29 @@ For Webex, use the current [webhook guide](https://developer.webex.com/meeting/d
 
 Verify edition, revision, access, lab availability and detailed objective coverage before purchase. Avoid providers advertising live questions, guaranteed passes or unexplained answer banks.
 
+### SOL-C01 — SnowPro Associate: Platform
+
+Resource details from the [SOL-C01 guide](../guides/SOL-C01-snowpro-associate-platform.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Use the current replacement course and measured practice gaps to choose additional resources. Public information was checked September 29, 2026. Study budgets are estimates; public course descriptions do not establish lesson quality or completion.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Platform On-Demand Training, OD-SPT](https://learn.snowflake.com/en/courses/OD-SPT/) | Free; public listing links the Platform Assessment/Badge to course completion; curated labs advertised for 30 days | Four hours provider estimated effort; add practice as needed, not a verified assessment duration |
+| [Transition FAQ](https://publish-p93462-e887935.adobeaemcloud.com/content/dam/SnowProAssociateCertificationTransitionSnowflakeUniversityPlatformSkillsBadgeFAQs.pdf) | Public; actual two-page PDF fully read | 15–30m study estimate |
+| [Snowflake University catalog](https://learn.snowflake.com/) | Public catalog; course access/enrollment varies | 30–60m planning estimate |
+| [Platform training datasheet](https://www.snowflake.com/wp-content/uploads/2024/12/standard_spt_datasheet.pdf) | Public four-page document, course code 25A24; nine modules and historical function names | Half-day instructor-led description; not the replacement assessment runtime |
+| [Data Warehousing Workshop, Badge 1](https://learn.snowflake.com/en/courses/uni-essdww101/) | Free separate Hands-On Essentials course; public outline/grading description only | Same page says six hours estimated effort and 8–12h typical completion; keep both observations |
+| [Architecture](https://docs.snowflake.com/en/user-guide/intro-key-concepts) and [access control](https://docs.snowflake.com/en/user-guide/security-access-control-overview) | Public; selected architecture/role sections read | 4–8h reading plus 6–10h practice, study estimates |
+| [Data loading overview](https://docs.snowflake.com/en/user-guide/data-load-overview) and [COPY reference](https://docs.snowflake.com/en/sql-reference/sql/copy-into-table) | Public; choose the relevant load mode, file options and limits | 2–4h reading plus 4–8h practice, study estimates |
+| [Secure Data Sharing](https://docs.snowflake.com/en/user-guide/data-sharing-intro) | Public; main provider/consumer/reader-account explanation read; account availability untested | 1–2h reading plus 2–4h lab/design, study estimates |
+| [Current Cortex AI Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions) | Public; function, access, model, feature-state and region details require current checks | 2–4h reading plus 3–6h practice, study estimates |
+| [Udemy retired SOL-C01 course](https://www.udemy.com/course/snowpro-associate-platform/) | Paid; current fetch HTTP403, no lessons or current outline reviewed | Earlier 3h19m/April 2026 metadata unverified; no active-exam preparation claim |
+
+The [May 20, 2026 instructor-led event](https://www.snowflake.com/en/webinars/virtual-hands-on-lab/snowflake-platform-training-2026-05-20/) corroborates the beginner training/badge route but registration is closed; it is not an available upcoming class. Its four-hour event window and the older half-day datasheet do not measure the assessment. The active OD-SPT listing independently displays four hours and 30-day lab access. The prior 8–15h figure was a study budget, not an official duration.
+
+Badge 1 is a separate Hands-On Essentials offering, not another name for the Platform Skills replacement. Its page recommends waiting for the course's instructions before creating a trial account. No enrollment, course video, assessment, DORA-graded exercise, commercial lesson or private training file was accessed. Do not buy a retired voucher or use products advertising actual exam questions or guaranteed passes.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

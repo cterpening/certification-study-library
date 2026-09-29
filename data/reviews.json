@@ -8105,25 +8105,78 @@
       "notes": "Mapped all61 numbered objectives/supporting bullets from the actual three-page v1.1 PDF; retained official version/language conflicts and separated Associate rename from Professional redesign. Fixed false-string Boolean parsing, added67 executed Requests fixture checks and48 answers, clarified pagination/retry/NETCONF/RESTCONF/check-mode/build-secret boundaries and refreshed catalog evidence. Reviewed navigation-only monitor difference and preserved prior evidence. Eight infrastructure labs and independent human review remain pending. See docs/research/2026-09-29-200-901-deep-review.md"
     },
     {
-      "id":"sol-c01-2026-09-02-source-validation",
-      "exam_code":"SOL-C01",
-      "guide_path":"guides/SOL-C01-snowpro-associate-platform.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/SOL-C01-official-objectives.txt",
-      "blueprint_snapshot_sha256":"a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
-      "objective_coverage":[
-        {"objective_group":"Set up and navigate the UI and Snowflake Notebooks","guide_sections":["Section 1","All scenarios","Labs 1–2 and 8"]},
-        {"objective_group":"Create databases and stages, and use compute","guide_sections":["Section 2","Scenarios 1–2","Labs 1–3 and 8"]},
-        {"objective_group":"Load structured, semi-structured and unstructured data","guide_sections":["Section 3","Scenarios 1–2","Labs 3–4 and 8"]},
-        {"objective_group":"Understand roles and data access management","guide_sections":["Section 4","All scenarios","Labs 1 and 5–8"]},
-        {"objective_group":"Understand and manage account structure","guide_sections":["Sections 1 and 5","All scenarios","Labs 1, 5–7"]},
-        {"objective_group":"Use Snowflake Cortex LLM functions","guide_sections":["Section 6","Scenario 3","Lab 8"]}
+      "id": "sol-c01-2026-09-02-source-validation",
+      "exam_code": "SOL-C01",
+      "guide_path": "guides/SOL-C01-snowpro-associate-platform.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/SOL-C01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
+      "objective_coverage": [
+        {
+          "objective_group": "Set up and navigate the UI and Snowflake Notebooks",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Create databases and stages, and use compute",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1–2",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Load structured, semi-structured and unstructured data",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1–2",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Understand roles and data access management",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 1 and 5–8"
+          ]
+        },
+        {
+          "objective_group": "Understand and manage account structure",
+          "guide_sections": [
+            "Sections 1 and 5",
+            "All scenarios",
+            "Labs 1, 5–7"
+          ]
+        },
+        {
+          "objective_group": "Use Snowflake Cortex LLM functions",
+          "guide_sections": [
+            "Section 6",
+            "Scenario 3",
+            "Lab 8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":7,"reachable":7,"access_blocked":0,"missing_or_error":0},
-      "notes":"The six last published capabilities are preserved without invented weights and mapped to current technical documentation. Retirement, replacement date, badge non-expiry, holder treatment and badge-versus-SnowPro distinction come from the official transition FAQ. Three scenarios, eight authorized labs and 36 checks are included. The former landing page disappeared during validation, so the dated snapshot is frozen and all seven surviving URLs were rechecked as reachable. No recalled item, dump or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 25,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Preserved six archived public abilities and frozen retired baseline; fully read actual two-page transition FAQ andfour-page trainingdatasheet. Updated currentPlatformcourse4h/30dayaccess,LegacyNotebookmigration,standardCHECKconstraints,COPYreplay/null handling,roleauthorization,cost/sharing andCortexaccess/bundle boundaries. Added45 executedlocalCSV/JSON/SQLitetransaction checks,42answers andeightconcretelabplans. NoSnowflakeaccount orcloudlabexecution;independenthumanreviewpending. See docs/research/2026-09-29-sol-c01-deep-review.md"
     },
     {
       "id":"cof-c03-2026-09-02-source-validation",

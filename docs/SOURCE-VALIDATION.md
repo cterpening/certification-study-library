@@ -1550,6 +1550,8 @@ The review maps every detailed v1.1 objective through intent → data/API contra
 
 ## SOL-C01 coverage record
 
+The September 29 [deep review](research/2026-09-29-sol-c01-deep-review.md) maps 6 detailed objectives. Preserved six archived public abilities and frozen retired baseline; fully read actual two-page transition FAQ andfour-page trainingdatasheet. Updated currentPlatformcourse4h/30dayaccess,LegacyNotebookmigration,standardCHECKconstraints,COPYreplay/null handling,roleauthorization,cost/sharing andCortexaccess/bundle boundaries. Added45 executedlocalCSV/JSON/SQLitetransaction checks,42answers andeightconcretelabplans. NoSnowflakeaccount orcloudlabexecution;independenthumanreviewpending. Current guide citations: 26 registered, 25 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: retired May 4, 2026; six preserved public abilities covering UI/notebooks, objects/stages/compute, structured/semi-structured/unstructured loading, roles/access, account structure, and Cortex LLM functions; no stable detailed weights are invented
