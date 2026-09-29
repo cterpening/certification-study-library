@@ -2578,6 +2578,25 @@ A current [Pluralsight PCA path](https://www.pluralsight.com/paths/google-certif
 
 When a resource predates the current guide, independently close: Gemini Enterprise Agent Platform, Agent Platform Pipelines/data integration, Agent Builder and Model Garden; Gemini Enterprise agents and NotebookLM; Gemini Cloud Assist; AI Hypercomputer and GPU/TPU consumption; Model Armor/Sensitive Data Protection and secure AI; current Cloud Run functions branding; current Well-Architected sustainability pillar; Migration Center; Chrome Enterprise Premium/context-aware access; software supply chain; and all four V6.1 official case studies.
 
+### GOOGLE-PROFESSIONAL-DATA-ENGINEER — Professional Data Engineer
+
+Resource details from the [GOOGLE-PROFESSIONAL-DATA-ENGINEER guide](../guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not meant to be consumed in full. Select one route, map it to the five standard-exam domains, and use first-party docs/labs for gaps. Public metadata was checked September 29, 2026. Suggested reading/practice budgets are planning estimates, not measured completion times.
+
+| Resource | Access | Estimated time | Best use / currency note |
+|---|---|---|---|
+| [Official exam guide](https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf) | Public | Suggested 1–2h then weekly | Canonical scope; actual five-page PDF reviewed; map every consideration to evidence |
+| [Google Skills Data Engineer path](https://www.skills.google/paths/16) | Account; labs may require credits | 13 activities; current per-activity durations not exposed | First-party modular route. The earlier 77h45m total was not reverified; the page's relative four-month update age is not a duration |
+| [Official sample questions](https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform) | Public | Suggested 30–60m plus review | Familiarity with format; form landing page checked, question contents not used in this review |
+| [Google Cloud Coursera certificate](https://www.coursera.org/professional-certificates/gcp-data-engineering) | Paid/subscription; audit varies | Five cards: 5+11+8+7+2 = 33h; landing estimate 4 weeks at 10h/week | Lakes/warehouses, batch, streaming, smart analytics/ML and Gemini Notebook study preparation. FAQ still says 3.5 months at 5h/week and names a starting course absent from the five cards; verify enrollment view |
+| [Pluralsight PDE path](https://www.pluralsight.com/paths/google-cloud-professional-data-engineer-by-pluralsight) | Paid/subscription | Five courses 12h20m plus three 30m labs = 13h50m; header rounds to 14h | Janani Ravi courses February–May 2026; April labs cover partitioning/RLS, Dataflow/DLQs and Bigtable. All five domain titles are visible but an “actively in production” notice remains. Public metadata only |
+| [Official Google Cloud Certified Professional Data Engineer Study Guide](https://www.oreilly.com/library/view/official-google-cloud/9781119618454/) | Paid O'Reilly | Suggested 12–18h reading plus practice; historical record: 2019, 352 pages | Current page returned 403; edition/page metadata not independently reverified. Older foundations need a current-domain gap check |
+| [Whizlabs Professional Data Engineer](https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/) | Paid; limited free items may vary | Suggested 25–45h selected study; current catalog duration unavailable | Direct fetch exposed only a title. Current lesson/lab coverage and counts were not verified; no practice questions read |
+| [Google Cloud data analytics documentation](https://cloud.google.com/docs/data) | Public | Suggested 12–30h targeted | Index for official product docs; follow the cited behavior-specific pages and practice the failure cases |
+
+No PDE-specific MeasureUp listing was verified in this review. Older routes need an explicit gap check for BigLake/AlloyDB, Knowledge Catalog versus exam-era Dataplex names, Dataform assertion dependencies, CDC ordering/staleness, BigQuery Editions, point-in-time feature preparation, permission-aware RAG and regional recovery. Provider metadata does not certify that any course covers every current behavior.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

@@ -3,6 +3,230 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "gcp-dataflow-exactly-once",
+      "title": "Exactly-once in Dataflow",
+      "url": "https://docs.cloud.google.com/dataflow/docs/concepts/exactly-once",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Complete article text read; adopted pipelinecommit/sideeffect/latecompleteness/logging distinctions. No externalruntime or oldPubSubLiteexample recommendation. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-dataflow-streaming",
+      "title": "Dataflow streaming pipeline concepts",
+      "url": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Complete concepts text read for windows/watermarks/triggers;modelisdeliberatelyrestricted and notBeamexecution. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bq-write-api",
+      "title": "BigQuery Storage Write API introduction",
+      "url": "https://docs.cloud.google.com/bigquery/docs/write-api",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: First210lines read:overview,default/app-created/pending/committed/bufferedtypes,offsetprinciple,finalize,connectionbasics. No fullsdk/laterquota sections or client execution. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bq-cdc",
+      "title": "BigQuery change data capture ingestion",
+      "url": "https://docs.cloud.google.com/bigquery/docs/change-data-capture",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: First155and239–330lines read:prerequisites,changes,staleness/runtime merge,customsequenceformat/comparison/ties/missingvalues,reservationassignmenttypes. No fulloperationalSQLexecution or delete-retentiontable review. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-datastream-events",
+      "title": "Datastream event ordering and delivery",
+      "url": "https://docs.cloud.google.com/datastream/docs/events-and-streams",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Ordering/consistencysection471–523read across source types; eventmetadataformatlistingnotfullyread. No stream created. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bq-primary-foreign-keys",
+      "title": "BigQuery primary and foreign keys",
+      "url": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Complete page read including unenforcedconstraints,joinoptimization and limitations; noBigQuery execution. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-dataform-assertions",
+      "title": "Dataform assertions and dependency checks",
+      "url": "https://docs.cloud.google.com/dataform/docs/assertions",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Assertionsections33–173read includingnonNull,rowConditions,uniqueKey/uniqueKeys/manualzero-row. Laterunit-testfeature/examplesnotreviewed or executed. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bq-disaster-recovery",
+      "title": "BigQuery managed disaster recovery",
+      "url": "https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Overviewandlimitations first~122linesread; EnterprisePlus/pairedbackfill/hardsoft/ACL/baseline/autoscale/schedules/historyboundaries. Fullregiontable/latercommandsnotreviewed or executed. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bq-time-travel",
+      "title": "BigQuery time travel and fail-safe",
+      "url": "https://docs.cloud.google.com/bigquery/docs/time-travel",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: First151linesread for retention/recovery/formerRLS/fail-safe; targetedlimitations confirms metadata not restored. Billingexamples notfullyreviewed. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bigtable-schema",
+      "title": "Bigtable schema design",
+      "url": "https://docs.cloud.google.com/bigtable/docs/schema-design",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Concepts27–81androwkey225–353read for lexicalorder,rowatomicity,prefix/range,encoding,timestamphotspots. Noalltable/family/aggregateexampleorrealschemabenchmark. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-knowledge-catalog",
+      "title": "Knowledge Catalog overview and naming",
+      "url": "https://docs.cloud.google.com/dataplex/docs/introduction",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Directoverviewbanner/corecontext/lifecycle sectionsread selectively; retainedDataplexAPI/CLI/IAMnaming. No exactexamtransitiondate,completecapabilitycertification,AIaccuracyguarantee or migrationexecution. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-knowledge-catalog-2026",
+      "title": "Introducing the Google Cloud Knowledge Catalog",
+      "url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Full April22,2026 announcementread;ChaiPydimukkala/SamMcVeety. Aggregation,enrichment,searchcontextaccepted;marketingprecisionclaimsnotadopted,listedpreview/GAstagesnotuniversallyassumedcurrent. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "airflow-best-practices",
+      "title": "Apache Airflow best practices",
+      "url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+      "publisher": "Apache Software Foundation",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: First61linesonly:taskretry/stableinterval/sharedstorage/connectionsecretsandtop-levelintro;notwhole51kcharacterbestpracticesguide. NoAirfloworComposerexecution. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sqlite-upsert",
+      "title": "SQLite UPSERT",
+      "url": "https://www.sqlite.org/lang_upsert.html",
+      "publisher": "SQLite",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Complete public explanatorytextread;nativeUPSERTexecutedonlyinlocalin-memorySQLite. SourceisSQLite,notGoogleorBigQuery. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-pde-pluralsight",
+      "title": "Google Cloud Professional Data Engineer by Pluralsight",
+      "url": "https://www.pluralsight.com/paths/google-cloud-professional-data-engineer-by-pluralsight",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Completepublicpathtextread:5JananiRavicourses740minutesFeb6/25Mar13Apr2May27,2026;3April30minlabs90minutes,total830min13h50vs14header;productionnotice. Paidlessons/labs/practicequestionsnotread. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-dataform-dependencies",
+      "title": "Dataform assertion dependencies",
+      "url": "https://docs.cloud.google.com/dataform/docs/dependencies",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Overview/ref/config andassertiondependencysectionsread via directcache andprimaryweb;directassertions/per-actionprecedence adopted. NoSQLXcompilerorcloudactionexecuted. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "gcp-dr-planning",
       "title": "Disaster recovery planning guide",
       "url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
@@ -43630,22 +43854,77 @@
       "id":"google-pde-certification","title":"Professional Data Engineer certification","url":"https://cloud.google.com/learn/certification/data-engineer","publisher":"Google Cloud","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"Canonical live capability, delivery, renewal and preparation page; monitored by the Google Cloud certification adapter."
     },
     {
-      "id":"google-pde-exam-guide","title":"Professional Data Engineer certification exam guide","url":"https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"Detailed five-page five-domain 22/25/20/15/18 baseline with current governance, Gemini/query, RAG, BigLake, Dataplex and BigQuery capacity scope; no visible publication date."
+      "id": "google-pde-exam-guide",
+      "title": "Professional Data Engineer certification exam guide",
+      "url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "notes": "Detailed five-page five-domain 22/25/20/15/18 baseline with current governance, Gemini/query, RAG, BigLake, Dataplex and BigQuery capacity scope; no visible publication date. September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Actual five-page standardPDF fully read with layout and hash receipt;67main considerations19headings,fournestedtransformationbulletsretainedwithinparent. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-pde-skills-path","title":"Professional Data Engineer learning path","url":"https://www.skills.google/paths/16","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"Thirteen first-party activities total about 77h45m across engineering, lakes/warehouse, batch/stream/Dataflow, mesh and Gemini; labs may require credits."
+      "id": "google-pde-skills-path",
+      "title": "Professional Data Engineer learning path",
+      "url": "https://www.skills.google/paths/16",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "notes": "September29 confirms13activities,relative4monthupdate; current activity durations not exposed. Earlier77h45m not reverified. September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: September29 confirms13activities,relative4monthupdate; current activity durations not exposed. Earlier77h45m not reverified. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-pde-sample-questions","title":"Professional Data Engineer official sample questions","url":"https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform","publisher":"Google Cloud","authority_class":1,"source_type":"independent-assessment","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"Official untimed repeatable sample questions; not predictive of exam result."
     },
     {
-      "id":"google-pde-coursera","title":"Preparing for Google Cloud Certification: Cloud Data Engineer","url":"https://www.coursera.org/professional-certificates/gcp-data-engineering","publisher":"Coursera / Google Cloud","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"Six-course first-party program; page estimates about two months at ten hours weekly. Subscription and audit terms vary."
+      "id": "google-pde-coursera",
+      "title": "Preparing for Google Cloud Certification: Cloud Data Engineer",
+      "url": "https://www.coursera.org/professional-certificates/gcp-data-engineering",
+      "publisher": "Coursera / Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "notes": "September29 public five course cards5/11/8/7/2=33h, landing40h estimate; FAQ3.5months at5h/week and first-course recommendation disagree with current cards. Allfive public learning outcomes read; paid contents not reviewed. September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: September29 public five course cards5/11/8/7/2=33h, landing40h estimate; FAQ3.5months at5h/week and first-course recommendation disagree with current cards. Allfive public learning outcomes read; paid contents not reviewed. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-pde-oreilly-official","title":"Official Google Cloud Certified Professional Data Engineer Study Guide","url":"https://www.oreilly.com/library/view/official-google-cloud/9781119618454/","publisher":"O'Reilly / Sybex / Dan Sullivan","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"2019, 352-page foundational reference; substantially predates current BigLake, Dataplex, Gemini, RAG and capacity/governance scope."
+      "id": "google-pde-oreilly-official",
+      "title": "Official Google Cloud Certified Professional Data Engineer Study Guide",
+      "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119618454/",
+      "publisher": "O'Reilly / Sybex / Dan Sullivan",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "notes": "Historical2019/352page metadata unverified because current page returned403; no paid book text reviewed. September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-pde-whizlabs","title":"Google Cloud Professional Data Engineer course and practice","url":"https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/","publisher":"Whizlabs","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"Commercial course, practice and lab page; verify explanations and current five-domain alignment against first-party sources."
+      "id": "google-pde-whizlabs",
+      "title": "Google Cloud Professional Data Engineer course and practice",
+      "url": "https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/",
+      "publisher": "Whizlabs",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "notes": "September29 direct fetch exposes56-character title only; current lesson/lab metadata and question contents not reviewed. September 29 GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review: September29 direct fetch exposes56-character title only; current lesson/lab metadata and question contents not reviewed. See docs/research/2026-09-29-google-professional-data-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-pde-data-docs","title":"Google Cloud data analytics documentation","url":"https://cloud.google.com/docs/data","publisher":"Google Cloud","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-DATA-ENGINEER"],"notes":"First-party current entry point for data analytics, databases, governance and AI-ready data product documentation."

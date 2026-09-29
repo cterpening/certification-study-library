@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [GOOGLE-PROFESSIONAL-DATA-ENGINEER deep review](docs/research/2026-09-29-google-professional-data-engineer-deep-review.md): 67 mapped considerations, 40 executed local SQL/window checks, 48 answers, eight proposed cloud labs and refreshed course/catalog evidence.
+
 - September 29, 2026: [GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT deep review](docs/research/2026-09-29-google-professional-cloud-architect-deep-review.md): 101 mapped statements, four case analyses, 32 executed local architecture checks, 48 answers, eight proposed labs and current learning-resource evidence.
 
 - September 29, 2026: [GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review](docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md): 94 mapped considerations,32 executed local operations checks,50 answers,eight proposed cloud labs,explicit lifecycle-baseline initialization and current resource comparison.

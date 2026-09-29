@@ -1,0 +1,1979 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "f306986a568df3e394b21bdb35ac7704d6a231ce4e12a3c7e1f8339f3ea2a487",
+  "guide_after_sha256": "ad65bb8018f8dd97106c10559c68a2e6e3deaa79682822f68fd6fe6e11938dc1",
+  "prior_records": {
+    "exam": {
+      "code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+      "level": "expert",
+      "vendor_id": "google-cloud",
+      "title": "Professional Data Engineer",
+      "status": "active",
+      "study_guide_url": "https://cloud.google.com/learn/certification/data-engineer",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; Google recommends three or more years of industry experience including at least one year designing and managing Google Cloud data solutions. Practice governed contracts, batch/stream semantics, BigQuery/lake/platform modeling, Dataflow/Dataproc/Dataform/Composer, migration/CDC, BI/ML/RAG preparation, sharing, capacity/cost, CI/CD, observability, backfill/replay and tested recovery."
+    },
+    "review": {
+      "id": "google-professional-data-engineer-2026-09-02-source-validation",
+      "exam_code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+      "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/google-professional-data-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+      "objective_coverage": [
+        {
+          "objective_group": "Designing data processing systems (~22%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Ingesting and processing the data (~25%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2, 5–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Storing the data (~20%)",
+          "guide_sections": [
+            "Section 3",
+            "All scenarios",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Preparing and using data for analysis (~15%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 3, 5 and 7"
+          ]
+        },
+        {
+          "objective_group": "Maintaining and automating data workloads (~18%)",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 2–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 8,
+        "reachable": 7,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five detailed current domains are mapped through governed data contracts, batch/stream semantics, storage/warehouse/lake/platform decisions, BI/ML/RAG preparation, sharing, orchestration and production capacity/observability/recovery. Three scenarios, eight labs and 36 checks are included. All eight URLs are cataloged: seven reachable and O'Reilly automation-blocked; none missing or broken. No proprietary bank, recalled item or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "google-pde-certification",
+        "title": "Professional Data Engineer certification",
+        "url": "https://cloud.google.com/learn/certification/data-engineer",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "Canonical live capability, delivery, renewal and preparation page; monitored by the Google Cloud certification adapter."
+      },
+      {
+        "id": "google-pde-exam-guide",
+        "title": "Professional Data Engineer certification exam guide",
+        "url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "Detailed five-page five-domain 22/25/20/15/18 baseline with current governance, Gemini/query, RAG, BigLake, Dataplex and BigQuery capacity scope; no visible publication date."
+      },
+      {
+        "id": "google-pde-skills-path",
+        "title": "Professional Data Engineer learning path",
+        "url": "https://www.skills.google/paths/16",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "Thirteen first-party activities total about 77h45m across engineering, lakes/warehouse, batch/stream/Dataflow, mesh and Gemini; labs may require credits."
+      },
+      {
+        "id": "google-pde-sample-questions",
+        "title": "Professional Data Engineer official sample questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "Official untimed repeatable sample questions; not predictive of exam result."
+      },
+      {
+        "id": "google-pde-coursera",
+        "title": "Preparing for Google Cloud Certification: Cloud Data Engineer",
+        "url": "https://www.coursera.org/professional-certificates/gcp-data-engineering",
+        "publisher": "Coursera / Google Cloud",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "Six-course first-party program; page estimates about two months at ten hours weekly. Subscription and audit terms vary."
+      },
+      {
+        "id": "google-pde-oreilly-official",
+        "title": "Official Google Cloud Certified Professional Data Engineer Study Guide",
+        "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119618454/",
+        "publisher": "O'Reilly / Sybex / Dan Sullivan",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "2019, 352-page foundational reference; substantially predates current BigLake, Dataplex, Gemini, RAG and capacity/governance scope."
+      },
+      {
+        "id": "google-pde-whizlabs",
+        "title": "Google Cloud Professional Data Engineer course and practice",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "Commercial course, practice and lab page; verify explanations and current five-domain alignment against first-party sources."
+      },
+      {
+        "id": "google-pde-data-docs",
+        "title": "Google Cloud data analytics documentation",
+        "url": "https://cloud.google.com/docs/data",
+        "publisher": "Google Cloud",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+        ],
+        "notes": "First-party current entry point for data analytics, databases, governance and AI-ready data product documentation."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "8afe73cc970512ddb09552b37c7139b3f8ad046a8c615dc3577207200f300b1c",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "248de0886d36c8a211dc482672b8031f0fd51b7f4e3fbfa889ac398eb040b8d4",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "79f4afc0b1f794b9d13cd2e683a7ad10854b965c996046525dcbd342094bde01",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "c951beac5dec310b0ecd1833def538abefc0f226634f4098076cee08aea46f4a",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "a82dc207bfa28a905ab094b6bc871b116800849ee980854771e9793e5318f361",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "92c7ca7427880c111c89fc3e669854aa8ecaa47707956a14614d86fd332d7de9",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "5fa1aea0d3a3d83e0453093d2376e9098bca4c74055c5290d15ba503671ec8a3",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "7a2028b1ad5ff429826e661f59ec2c1051cd566dacdbe3df94e91aedd885d93f",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "61829b3c62ebb190134aa3663edcfe277842ed4926c50a580824a01f037fecc0",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "4254deff5989f3885aa94043d7defb577119bb9f7d720f44e8050c5fa0db382a",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "e6cd6a4abdd423e7979426669aa2db1268dc28b605156e140c57a89a3c8ff537",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "8b3355abe78bc6a13729ce9970d84d8b9c23aac9c00dd4407fa25c1673ce8f0d",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "cc21f537621f4607fdb61baa0e153707176c1b55e1fb504f7998f30771dde114",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 14,
+      "objective_sha256": "9261281346e378aca43af88c6e38ed84d575f4d8167f9ddd9c55ab535a586830",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 15,
+      "objective_sha256": "a35fa2bfad618a5b2ff1eb247e95be9dcfcd04ddac0d8bc5d8b52955c30aaf14",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 16,
+      "objective_sha256": "5e3a04a0a8f2ec2406427143e12bf87072a8ba6625344fa1eaa2a91f65f5e4af",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 17,
+      "objective_sha256": "5b3fb286460ac0e00423099a1496cbfb3bc9fd6a52f7c9c475241fd1336d3794",
+      "guide_sections": [
+        "1. Designing data processing systems — about 22%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "c6895a69a71542ccf38e01c4bbbd25b4e4bdd3a9d125577a5cac65953887dfd5",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "56bbaaa4b5672d01132311b4e5b4d0d7006d284a24c4ff316abe4dbf3f61215f",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "8acff655ecded5a96e96699ab82238888d15d406a8084b3ccd97264daa3e2be8",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "e05cd6bae8767e78b7a979e30f9dbee85d30f685358f351d867baf3aee6aaa45",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "3302f739f7622468e290654b6fac1cb649fd2201a6ac92f2359a777eb40aa2f7",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "b9020e2e83589f0d2b94ecb7b4b1079a850fa21c16c9944ba4ea7d533188323f",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "d79b232e54e7a0c9a3036a6870e031825f614265ce507d3c149108908d19d2eb",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "aca586084d3bc10ebd521756e972dc4cb2171cc6316dbc156135ab10a79351cb",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "f9b6e92ba17c00acbd0f3cfe7f401a2c49e4819f76c73f6131fd75c7d669c690",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "e0e704360de1c4df3b2fcc6d23b254acf0e565d0dce82e2d335a5fb723d8ba46",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 11,
+      "objective_sha256": "f9e30622216683575e1b640ca7663b71258d9594021f213f07c0958e0e0d21c8",
+      "guide_sections": [
+        "2. Ingesting and processing — about 25%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "b5f96cb9c364436202001abf79c84d442eacc8bd0c0f264eee773165fe9c9088",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "39177b83bb8c2c4b0ed40328e6d93588473227efb511d72157dec3fca6210c05",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "da3d2ea3a4214a436ce72c3bed963c316db57440bb9bcd9a38ae23658a0b838d",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "9d4fba197906b20b91773ca928ded75d657321fbbb19249076c5709e8c8bacd5",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "4608d9fbb842b7f9915f7e4848aea991f2fecdef6822fe0f5afc499ce5a2e802",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "739c63072b86bae76677c7e8b8b9c98f60702b7d1318351a40d2921e8242dc9d",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "c9ee96c039fc6b2a9f6b6ae3356d3f6fe59a289ba145413283e63bedcf048b77",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "0b6802160723c272d9f2461382b5d28e6d2223eaf016f0acacee1f1c33c72b77",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "6632644b0d039618f9bf77b0d6372f61296d47438121d93159fc679c1944271b",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "4772aed97c0eb7c09d29e5e281a517e09058c872becff1461cd0a38cd3d2e140",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "e199edcc586c421b261ae0b05e3c57a98235a2e8763d5d99fd89840426ce4d17",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 12,
+      "objective_sha256": "996f1f150954680340ca9d20b594bcc23176321729ba136ec8c093a729364aaa",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 13,
+      "objective_sha256": "f11d1556450ad20a232d66cbeeafb4263d8c82ed66dc2ee885082b0ec46066bd",
+      "guide_sections": [
+        "3. Storing data — about 20%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "09ca0d63bf734f3fc66261a310f30aada0cdde94a6d0b562aecd6787f1bed73c",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "26a98f3cbbba2ee2fcf6043424aa83c32111f7e198f524619df6247e631d8f67",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "6cc8e008dbec1e8ef5c2a85e1986c3cbef91fc886897b47660307fdd56669563",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "774826fb0de8026aa86652ba8c660613c464d239b526b72d83e2aebff34defd0",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "7ed68ca7a1301e6dd8c031101457ed94fd33d029cedf0de15eb63b52c96429fc",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "9bc3b2fc3bd14d337aa0d9c9329183c7493a63684e3ce57c4292f1436afc2066",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "4e292b68940db6eee20a8b68f1653442c42396ce955fb0a830c2138b8aac69f7",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "8091d5c4b4c31028a2d8e8d80c17907179bf1a217b860af017dd42d0dae21a87",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "ff13aa78f0bcd52efb4e146668966fe25d9368449fa348f4a1c465f93df6017e",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "6ee99166bd4470f1130348e651bb7d1ae91ec27173b156029ae4ef63cf41db0a",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "dea9dc59d3c87c434a7dd6eb587dd4fa1a5f57e782627d1d42442229c9e41a77",
+      "guide_sections": [
+        "4. Preparing and using data for analysis — about 15%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "31624dc3b53eea7d77ffd3dd1b920eb8676348c6bd0932155bbc259ea87c61c8",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "fdc022a6f6835587df6d1144726dad13674b656d5dbc8348c07902eb91098226",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "6185dc34d39f9bc2a3f3fda9ba9cc56df7e19bd548cfa4e592b20919dbad718a",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "cb0ef300221ed3b5058f1e7f39fb6bb918d0018e9714470d4eacb8cb20603e7e",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "0902ca27839e48f6fa608518967337a2ec34b017421413494666d773adf1c507",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "88ac2059e48d47bb3ab590cc0eed1e7ba3e71bd64733fca50306be15fd521ffe",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "ff5efe3de74e6b02f0252aef359027deba97a6a3eac93ecaef15a077416af5ce",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "7f77010489db7591a2ad95a96ffde9a3b15e9dbfceb3f69f5865250fed1de73c",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "6acacf540a582b859967d550c8fa1f9c8f213c5e6632bdbbf87e76647bdef162",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "f80c2649f175b273100625191f2b91b84e84693982c5f588d4a2224d7d4295dc",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 11,
+      "objective_sha256": "0cbb329ae1b8e1102b086dfa397559d5a0b883e06b0d16e22531bde397a8dcef",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 12,
+      "objective_sha256": "2f7b9e5af53a38c38535cc28b2532f00595caad224933d954022fefddbfc8f32",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 13,
+      "objective_sha256": "a215583925e0e5469ff1d9366716223fc23178ca3745c6a59b8c98babec08fc7",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 14,
+      "objective_sha256": "b0bbb9ff98f2f04e6ed6da67f63814c2acd59c7fe29b633db04d6d25e967752b",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 15,
+      "objective_sha256": "aae2123dcb1cf8113455dcec18a148092200ace24b4e4dbc03f4fe4e532b7fcf",
+      "guide_sections": [
+        "5. Maintaining and automating workloads — about 18%",
+        "Integrated scenarios",
+        "Hands-on evidence path"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+        "title": "Professional Data Engineer",
+        "url": "https://cloud.google.com/learn/certification/data-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-data-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-data-engineer-official-status.json",
+        "previous_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+        "current_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+        "previous_status_sha256": null,
+        "current_status_sha256": "50ccd813bba439b2b05cd37c6834841b1d8f855584b90d3a6fb696859e369931",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 40-50 multiple choice and multiple",
+            "Exam delivery method:",
+            "Validity period: 2 years",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry experience",
+            "Validity period: 1 year",
+            "Length: 1 hour",
+            "Registration fee: $100 (plus tax where applicable)",
+            "Exam format: 20 multiple choice and multiple select questions"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 24,
+    "reachable": 23,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "google-pde-certification",
+      "url": "https://cloud.google.com/learn/certification/data-engineer",
+      "checked_at": "2026-09-29T07:44:11.309510+00:00",
+      "health": {
+        "id": "google-pde-certification",
+        "url": "https://cloud.google.com/learn/certification/data-engineer",
+        "checked_at": "2026-09-29T07:44:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/learn/certification/data-engineer",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Data Engineer Certification | Learn | Google Cloud",
+        "canonical_url": "https://cloud.google.com/learn/certification/data-engineer",
+        "duration_signals": [
+          "1 hour",
+          "2 hours"
+        ],
+        "signal_fingerprint": "8c01d4240c4e066c736d55151bf87eab20760a6bdb6b42ff827a3bd358684daf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/learn/certification/data-engineer",
+      "sha256": "38c4441756212ebab341241d15f2f721ba69330dfd6ace56bde1e092626d4a90",
+      "text_characters": 5301
+    },
+    {
+      "id": "google-pde-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T07:48:23.265594+00:00",
+      "health": {
+        "id": "google-pde-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T07:48:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+      "sha256": "4332edc16a03eb1f9258926e77f38eef6ef15097822e5f56153fa04dec5d064b",
+      "bytes": 200303,
+      "pdf_pages": 5,
+      "text_characters": 8409
+    },
+    {
+      "id": "google-pde-skills-path",
+      "url": "https://www.skills.google/paths/16",
+      "checked_at": "2026-09-29T07:44:11.310524+00:00",
+      "health": {
+        "id": "google-pde-skills-path",
+        "url": "https://www.skills.google/paths/16",
+        "checked_at": "2026-09-29T07:44:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skills.google/paths/16",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Data Engineer Certification | Google Skills",
+        "canonical_url": "https://www.skills.google/paths/16",
+        "duration_signals": [],
+        "signal_fingerprint": "74ac6e25f0ecebd59ea14372955657545bd348beb427ee704afe0ddb04d91c43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skills.google/paths/16",
+      "sha256": "e0b141010bb3076418998863582c2f05bfb374b1b90240b1b10eec81df00fb19",
+      "text_characters": 1188
+    },
+    {
+      "id": "google-pde-sample-questions",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform",
+      "checked_at": "2026-09-29T07:44:12.048465+00:00",
+      "health": {
+        "id": "google-pde-sample-questions",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform",
+        "checked_at": "2026-09-29T07:44:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Professional Data Engineer Sample Questions",
+        "canonical_url": "https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform",
+        "duration_signals": [],
+        "signal_fingerprint": "313ff4b887091513d08488f25a37668a656acd693e80d01545f4e3d57872e88f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.google.com/forms/d/e/1FAIpQLSfkWEzBCP0wQ09ZuFm7G2_4qtkYbfmk_0getojdnPdCYmq37Q/viewform",
+      "sha256": "c9ae50e8910c4230dc778aa9493dbedeb8bb834e4bcbaff456a5f5f87c4f1a70",
+      "text_characters": 656
+    },
+    {
+      "id": "google-pde-coursera",
+      "url": "https://www.coursera.org/professional-certificates/gcp-data-engineering",
+      "checked_at": "2026-09-29T07:44:12.760513+00:00",
+      "health": {
+        "id": "google-pde-coursera",
+        "url": "https://www.coursera.org/professional-certificates/gcp-data-engineering",
+        "checked_at": "2026-09-29T07:44:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.coursera.org/professional-certificates/gcp-data-engineering",
+        "content_type": "text/html",
+        "page_title": "Preparing for Google Cloud Certification: Cloud Data Engr",
+        "canonical_url": "https://www.coursera.org/professional-certificates/gcp-data-engineering",
+        "duration_signals": [
+          "10 hours",
+          "11 hours",
+          "2 hours",
+          "5 hours",
+          "7 hours",
+          "8 hours",
+          "P1M"
+        ],
+        "signal_fingerprint": "243198851a956fe577f472cd38990f57266ce3be5679f14ba26a291ef494a62d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.coursera.org/professional-certificates/gcp-data-engineering",
+      "sha256": "c564a72a1132df712739d2fcad820fd1ba2e5094856d7a11fc8c8d64f2426fb6",
+      "text_characters": 12382
+    },
+    {
+      "id": "google-pde-oreilly-official",
+      "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119618454/",
+      "checked_at": "2026-09-29T07:44:29.401437+00:00",
+      "health": {
+        "id": "google-pde-oreilly-official",
+        "url": "https://www.oreilly.com/library/view/official-google-cloud/9781119618454/",
+        "checked_at": "2026-09-29T07:44:29+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/official-google-cloud/9781119618454/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "google-pde-whizlabs",
+      "url": "https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/",
+      "checked_at": "2026-09-29T07:44:44.744694+00:00",
+      "health": {
+        "id": "google-pde-whizlabs",
+        "url": "https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/",
+        "checked_at": "2026-09-29T07:44:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Google Cloud Certified Professional Data Engineer Course",
+        "canonical_url": "https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/",
+        "duration_signals": [],
+        "signal_fingerprint": "82f4f7ebd6a7203a76f43dedca1da3f3567caa33417c9426de736e20bb0e9217",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/google-cloud-certified-professional-data-engineer/",
+      "sha256": "5091db978dbda6f79b46b21be9e0099623ff673e2d23730064200ebd236b7662",
+      "text_characters": 56
+    },
+    {
+      "id": "google-pde-data-docs",
+      "url": "https://cloud.google.com/docs/data",
+      "checked_at": "2026-09-29T07:44:47.378746+00:00",
+      "health": {
+        "id": "google-pde-data-docs",
+        "url": "https://cloud.google.com/docs/data",
+        "checked_at": "2026-09-29T07:44:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/docs/data",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Data analytics | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/docs/data",
+        "duration_signals": [],
+        "signal_fingerprint": "451e72c76ada43ecdf7fe2a19a3a7a9f409b759d65ed3eb0380ee73417864939",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/docs/data",
+      "sha256": "6c4e34ba81a430bf9588b11b2b389f6604c6a917bc0be03084afa1e3b6cc4b2d",
+      "text_characters": 8659
+    },
+    {
+      "id": "gcp-dataflow-exactly-once",
+      "url": "https://docs.cloud.google.com/dataflow/docs/concepts/exactly-once",
+      "checked_at": "2026-09-29T07:49:50.689586+00:00",
+      "health": {
+        "id": "gcp-dataflow-exactly-once",
+        "url": "https://docs.cloud.google.com/dataflow/docs/concepts/exactly-once",
+        "checked_at": "2026-09-29T07:49:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/dataflow/docs/concepts/exactly-once",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exactly-once in Dataflow | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/dataflow/docs/concepts/exactly-once",
+        "duration_signals": [],
+        "signal_fingerprint": "bd324e79c5585de6ec0f3badce4af359eb724bfccd2d36595919d13e5199ce24",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/dataflow/docs/concepts/exactly-once",
+      "sha256": "3a61a1416b539e8c9215d7f689b9de686c2b0d0fc5714aca17191444bea448aa",
+      "text_characters": 12751
+    },
+    {
+      "id": "gcp-dataflow-streaming",
+      "url": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines",
+      "checked_at": "2026-09-29T07:49:50.691317+00:00",
+      "health": {
+        "id": "gcp-dataflow-streaming",
+        "url": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines",
+        "checked_at": "2026-09-29T07:49:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Streaming pipelines | Cloud Dataflow | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines",
+        "duration_signals": [],
+        "signal_fingerprint": "16d86d226e18ccc194b37de7fbf2ef0cee0dc1b1c6c7be8fac9dd5fcfb0645d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines",
+      "sha256": "b79b42b8cb0657e8be756238dc13ff5ee1acc2056d46b2f77a8f78eb4dfeab7c",
+      "text_characters": 6469
+    },
+    {
+      "id": "gcp-bq-write-api",
+      "url": "https://docs.cloud.google.com/bigquery/docs/write-api",
+      "checked_at": "2026-09-29T07:49:50.692360+00:00",
+      "health": {
+        "id": "gcp-bq-write-api",
+        "url": "https://docs.cloud.google.com/bigquery/docs/write-api",
+        "checked_at": "2026-09-29T07:49:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigquery/docs/write-api-grpc",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction to the Storage Write API (gRPC) | BigQuery | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigquery/docs/write-api-grpc",
+        "duration_signals": [
+          "10 MINUTE",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "64b2ff7be2272d924436fab2ec0482ce5b1639ecc4ae0aae5b8edc5f6001018d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigquery/docs/write-api-grpc",
+      "sha256": "91a7588304167bc43e9519ba80ca871caaea4266dd11e40c46e8517db16fc046",
+      "text_characters": 22128
+    },
+    {
+      "id": "gcp-bq-cdc",
+      "url": "https://docs.cloud.google.com/bigquery/docs/change-data-capture",
+      "checked_at": "2026-09-29T07:49:51.886025+00:00",
+      "health": {
+        "id": "gcp-bq-cdc",
+        "url": "https://docs.cloud.google.com/bigquery/docs/change-data-capture",
+        "checked_at": "2026-09-29T07:49:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigquery/docs/change-data-capture",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Stream table updates with change data capture ingestion | BigQuery | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigquery/docs/change-data-capture",
+        "duration_signals": [
+          "10 MINUTE",
+          "10 minutes",
+          "15 MINUTE",
+          "15 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "b8d1e8efb5dc50a23b3bd77aaf83e274b487c50b9258ccaf266ec40e76bce4e0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigquery/docs/change-data-capture",
+      "sha256": "97bbee2bcbd2dfd49d5925ceecd702daef86d5154e2a1d4994f01f6481736237",
+      "text_characters": 23977
+    },
+    {
+      "id": "gcp-datastream-events",
+      "url": "https://docs.cloud.google.com/datastream/docs/events-and-streams",
+      "checked_at": "2026-09-29T07:49:52.360289+00:00",
+      "health": {
+        "id": "gcp-datastream-events",
+        "url": "https://docs.cloud.google.com/datastream/docs/events-and-streams",
+        "checked_at": "2026-09-29T07:49:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/datastream/docs/events-and-streams",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Events and streams | Datastream | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/datastream/docs/events-and-streams",
+        "duration_signals": [],
+        "signal_fingerprint": "6a62578889ee1aa11dc941bc73b5511f97c8ab61284c3b52a80e7f79b2978bb6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/datastream/docs/events-and-streams",
+      "sha256": "3fddc9d412699a78010f435d3ee5aa8e52604923f9781c9264c0c0a57f9c7baa",
+      "text_characters": 21019
+    },
+    {
+      "id": "gcp-bq-primary-foreign-keys",
+      "url": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+      "checked_at": "2026-09-29T07:49:52.877982+00:00",
+      "health": {
+        "id": "gcp-bq-primary-foreign-keys",
+        "url": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+        "checked_at": "2026-09-29T07:49:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Use primary and foreign keys | BigQuery | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+        "duration_signals": [],
+        "signal_fingerprint": "09bd40a183cb741d0e466188946b9a4a92121cea446dd0ac8d50aff0fe08e5b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+      "sha256": "d7e345b85ef333c5ac5400a19a1ed82c3b8fcf432ec78700c167e2fd92ee0e28",
+      "text_characters": 7159
+    },
+    {
+      "id": "gcp-dataform-assertions",
+      "url": "https://docs.cloud.google.com/dataform/docs/assertions",
+      "checked_at": "2026-09-29T07:49:53.406513+00:00",
+      "health": {
+        "id": "gcp-dataform-assertions",
+        "url": "https://docs.cloud.google.com/dataform/docs/assertions",
+        "checked_at": "2026-09-29T07:49:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/dataform/docs/test-data#assertions",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Test data quality | Dataform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/dataform/docs/test-data",
+        "duration_signals": [],
+        "signal_fingerprint": "7c745b5965975b00b5a54c43752789e1d6535338a9e125acb3c18a2df67bf410",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/dataform/docs/test-data#assertions",
+      "sha256": "f47f41d3cc803f7bcc190f07a25299d31aa1e4c338b76aeba885f7da8b396b87",
+      "text_characters": 16601
+    },
+    {
+      "id": "gcp-bq-disaster-recovery",
+      "url": "https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery",
+      "checked_at": "2026-09-29T07:49:54.689609+00:00",
+      "health": {
+        "id": "gcp-bq-disaster-recovery",
+        "url": "https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery",
+        "checked_at": "2026-09-29T07:49:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Managed disaster recovery | BigQuery | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "13a6035dddc38d1c39ce5b26ee6416a7ccdb86c7f9136913790e4185abd23b65",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery",
+      "sha256": "8d09341ff3fa4856dda2b75177dd2f7d0b0421bef04ba2516a369a109e8198b2",
+      "text_characters": 25190
+    },
+    {
+      "id": "gcp-bq-time-travel",
+      "url": "https://docs.cloud.google.com/bigquery/docs/time-travel",
+      "checked_at": "2026-09-29T07:49:55.047155+00:00",
+      "health": {
+        "id": "gcp-bq-time-travel",
+        "url": "https://docs.cloud.google.com/bigquery/docs/time-travel",
+        "checked_at": "2026-09-29T07:49:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigquery/docs/time-travel",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Data retention with time travel and fail-safe | BigQuery | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigquery/docs/time-travel",
+        "duration_signals": [],
+        "signal_fingerprint": "7019b748472e2961aadb081d2691a896d27dc1b4168b9d7f4174b75d407bbc51",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigquery/docs/time-travel",
+      "sha256": "5aac5574957be4c8f3bae5f48374faee6d2bd81f1f2d57e000772b4f4764b841",
+      "text_characters": 12113
+    },
+    {
+      "id": "gcp-bigtable-schema",
+      "url": "https://docs.cloud.google.com/bigtable/docs/schema-design",
+      "checked_at": "2026-09-29T07:49:56.768283+00:00",
+      "health": {
+        "id": "gcp-bigtable-schema",
+        "url": "https://docs.cloud.google.com/bigtable/docs/schema-design",
+        "checked_at": "2026-09-29T07:49:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/bigtable/docs/schema-design",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Schema design best practices | Bigtable | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/bigtable/docs/schema-design",
+        "duration_signals": [],
+        "signal_fingerprint": "22c7e568d916f272531a0a1bb6656ecaeafe2452d668a8a3947763cc62f0941a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/bigtable/docs/schema-design",
+      "sha256": "9d4f3975a02951712e2d195db52b00561905710d4bdc2f5afb7a4606b8ccdb36",
+      "text_characters": 25721
+    },
+    {
+      "id": "gcp-knowledge-catalog",
+      "url": "https://docs.cloud.google.com/dataplex/docs/introduction",
+      "checked_at": "2026-09-29T07:49:56.787073+00:00",
+      "health": {
+        "id": "gcp-knowledge-catalog",
+        "url": "https://docs.cloud.google.com/dataplex/docs/introduction",
+        "checked_at": "2026-09-29T07:49:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/knowledge-catalog/docs/introduction",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Knowledge Catalog overview | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/knowledge-catalog/docs/introduction",
+        "duration_signals": [],
+        "signal_fingerprint": "6916a641ae02865e34dee891923f15b7d7ebf842102e8da51e27d9669f1fba48",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/knowledge-catalog/docs/introduction",
+      "sha256": "ff7faf408910e08c7d53a255dde1d0f154c0ebfb511588aa4d930ffdc3ce3162",
+      "text_characters": 22111
+    },
+    {
+      "id": "gcp-knowledge-catalog-2026",
+      "url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog",
+      "checked_at": "2026-09-29T07:49:57.043693+00:00",
+      "health": {
+        "id": "gcp-knowledge-catalog-2026",
+        "url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog",
+        "checked_at": "2026-09-29T07:49:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introducing the Google Cloud Knowledge Catalog | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog",
+        "duration_signals": [
+          "PT5M"
+        ],
+        "signal_fingerprint": "76320bb36d66a2086cc2e212571f8a9eb1b20404e3f9498af71b50a38fc67696",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog",
+      "sha256": "7f08a099ae3eaf04a25232452fad4235de2fc8b8f8aa9019a2724091572bc52d",
+      "text_characters": 9308
+    },
+    {
+      "id": "airflow-best-practices",
+      "url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+      "checked_at": "2026-09-29T07:49:57.670670+00:00",
+      "health": {
+        "id": "airflow-best-practices",
+        "url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+        "checked_at": "2026-09-29T07:49:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+        "content_type": "text/html",
+        "page_title": "Best Practices — Airflow 3.3.2 Documentation",
+        "canonical_url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+        "duration_signals": [],
+        "signal_fingerprint": "714cbd8facd9e3a434a05008f2592f12c2cd5a12ec4d6da23cade5364fd0b785",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+      "sha256": "c270050cb27609fc5928af6466f858a8fd15f07960fac82f3fc83fb8737902d0",
+      "text_characters": 51256
+    },
+    {
+      "id": "sqlite-upsert",
+      "url": "https://www.sqlite.org/lang_upsert.html",
+      "checked_at": "2026-09-29T07:49:57.928073+00:00",
+      "health": {
+        "id": "sqlite-upsert",
+        "url": "https://www.sqlite.org/lang_upsert.html",
+        "checked_at": "2026-09-29T07:49:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.sqlite.org/lang_upsert.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "UPSERT",
+        "canonical_url": "https://www.sqlite.org/lang_upsert.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e99ae84557c28685a45a727702009dce38de1fba6a775cbadf9c8d8975d0a3a4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.sqlite.org/lang_upsert.html",
+      "sha256": "32b85ae78ce6d6aa8cf759ecc32a8b3a80f0d3600be89c2fef1952fed38a9307",
+      "text_characters": 6563
+    },
+    {
+      "id": "google-pde-pluralsight",
+      "url": "https://www.pluralsight.com/paths/google-cloud-professional-data-engineer-by-pluralsight",
+      "checked_at": "2026-09-29T07:49:58.211007+00:00",
+      "health": {
+        "id": "google-pde-pluralsight",
+        "url": "https://www.pluralsight.com/paths/google-cloud-professional-data-engineer-by-pluralsight",
+        "checked_at": "2026-09-29T07:49:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/google-cloud-professional-data-engineer-by-pluralsight",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Google Cloud Professional Data Engineer by Pluralsight",
+        "canonical_url": "https://www.pluralsight.com/paths/google-cloud-professional-data-engineer-by-pluralsight",
+        "duration_signals": [
+          "14 Hours"
+        ],
+        "signal_fingerprint": "4cfdd929adceceaa16ec1a111a32ea8720a1c687ca12ecfc8f9a5db033e9ae59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/google-cloud-professional-data-engineer-by-pluralsight",
+      "sha256": "afdc7129cb614c05f9566a50c40a9307955c033dc7ea10450e6b6cc9e5747494",
+      "text_characters": 3499
+    },
+    {
+      "id": "gcp-dataform-dependencies",
+      "url": "https://docs.cloud.google.com/dataform/docs/dependencies",
+      "checked_at": "2026-09-29T07:51:57.856452+00:00",
+      "health": {
+        "id": "gcp-dataform-dependencies",
+        "url": "https://docs.cloud.google.com/dataform/docs/dependencies",
+        "checked_at": "2026-09-29T07:51:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.cloud.google.com/dataform/docs/dependencies",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Set dependencies | Dataform | Google Cloud Documentation",
+        "canonical_url": "https://docs.cloud.google.com/dataform/docs/dependencies",
+        "duration_signals": [],
+        "signal_fingerprint": "93fa5a00f03a6ada22df7409671003d128d803fbbecf4bbfe997ca89cb15345d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.cloud.google.com/dataform/docs/dependencies",
+      "sha256": "7d71ee8a5cd895b12fe8fd28dd163930b2ffac7e1c3d343478655e705f09020b",
+      "text_characters": 17914
+    }
+  ],
+  "added_source_ids": [
+    "gcp-dataflow-exactly-once",
+    "gcp-dataflow-streaming",
+    "gcp-bq-write-api",
+    "gcp-bq-cdc",
+    "gcp-datastream-events",
+    "gcp-bq-primary-foreign-keys",
+    "gcp-dataform-assertions",
+    "gcp-bq-disaster-recovery",
+    "gcp-bq-time-travel",
+    "gcp-bigtable-schema",
+    "gcp-knowledge-catalog",
+    "gcp-knowledge-catalog-2026",
+    "airflow-best-practices",
+    "sqlite-upsert",
+    "google-pde-pluralsight",
+    "gcp-dataform-dependencies"
+  ],
+  "findings": [
+    {
+      "id": "googleprofessionaldataengineer-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "A missing lifecycle record is not an objective change",
+      "url": "https://cloud.google.com/learn/certification/data-engineer",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The objective digest is unchanged while no prior lifecycle digest exists; canonical page has three distinct certification/renewal routes.",
+      "recommendation": "Initialize the reviewed lifecycle baseline and preserve before/accepted/post observations; distinguish standard,renewalexam anddesignatedSkills routes.",
+      "disposition": "applied",
+      "source_id": "google-pde-certification",
+      "resolution": "Initialize the reviewed lifecycle baseline and preserve before/accepted/post observations; distinguish standard,renewalexam anddesignatedSkills routes."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A committed-once result does not guarantee a single external action or complete window",
+      "url": "https://docs.cloud.google.com/dataflow/docs/concepts/exactly-once",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Transforms can run repeatedly/concurrently; external effects and late records have separate contracts.",
+      "recommendation": "Add source/engine/sink/business boundaries and require a real sink contract; explain pane and drop accounting.",
+      "disposition": "applied",
+      "source_id": "gcp-dataflow-exactly-once",
+      "resolution": "Add source/engine/sink/business boundaries and require a real sink contract; explain pane and drop accounting."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Duplicate suppression and source order solve different replay failures",
+      "url": "https://docs.cloud.google.com/datastream/docs/events-and-streams",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Delivery is at least once and unordered;source-specific metadata and BigQuery internal sequence support correct merging.",
+      "recommendation": "Teach entitykey,eventID,epoch/sourceorder,tombstone and backfill reconciliation; execute an explicitly limited SQLite exercise.",
+      "disposition": "applied",
+      "source_id": "gcp-datastream-events",
+      "resolution": "Teach entitykey,eventID,epoch/sourceorder,tombstone and backfill reconciliation; execute an explicitly limited SQLite exercise."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Default streams and application-created offset/commit contracts differ",
+      "url": "https://docs.cloud.google.com/bigquery/docs/write-api",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default stream is at least once;offsets and pending atomic commits are separate features.",
+      "recommendation": "Explain stream-scoped write semantics and finalization versus commit without claiming business-event deduplication.",
+      "disposition": "applied",
+      "source_id": "gcp-bq-write-api",
+      "resolution": "Explain stream-scoped write semantics and finalization versus commit without claiming business-event deduplication."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "CDC order and freshness require explicit configuration and capacity",
+      "url": "https://docs.cloud.google.com/bigquery/docs/change-data-capture",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Custom sequences compare hexadecimal sections numerically,equalvaluesuseingestiontime;maxstalenesscanrequirequerytimerunmerge.",
+      "recommendation": "Teach consistent ordering,upstreamconflicts,applywatermark/backlogandBACKGROUNDversusQUERY;marklocalintegercontractasdifferent.",
+      "disposition": "applied",
+      "source_id": "gcp-bq-cdc",
+      "resolution": "Teach consistent ordering,upstreamconflicts,applywatermark/backlogandBACKGROUNDversusQUERY;marklocalintegercontractasdifferent."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "BigQuery declared keys do not enforce data correctness",
+      "url": "https://docs.cloud.google.com/bigquery/docs/primary-foreign-keys",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Constraints are unenforced and can inform query optimization;violatedconstraintsriskwrongresults.",
+      "recommendation": "Require non-null/uniqueness/referential checks and grain-aware joins; demonstrate150to250centfanoutandrepairinSQLite.",
+      "disposition": "applied",
+      "source_id": "gcp-bq-primary-foreign-keys",
+      "resolution": "Require non-null/uniqueness/referential checks and grain-aware joins; demonstrate150to250centfanoutandrepairinSQLite."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Depending on a table alone does not gate on its assertions",
+      "url": "https://docs.cloud.google.com/dataform/docs/dependencies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Downstreamactionsrunwithoutassertiondependenciesevenwhenproducerassertionsfail.",
+      "recommendation": "Teach explicit direct assertion dependencies and per-action override,withnegativefixture/compiledgraphlab.",
+      "disposition": "applied",
+      "source_id": "gcp-dataform-dependencies",
+      "resolution": "Teach explicit direct assertion dependencies and per-action override,withnegativefixture/compiledgraphlab."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Task retries need a stable input interval",
+      "url": "https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Latestdataandwallclockbusinesscomputationscanchangeonretry;localworkerfilesarenotsharedcontract.",
+      "recommendation": "Bind inputs and outputs to data interval/version,use sharedstorage references,andvalidatebusinesskey/versiontransaction.",
+      "disposition": "applied",
+      "source_id": "airflow-best-practices",
+      "resolution": "Bind inputs and outputs to data interval/version,use sharedstorage references,andvalidatebusinesskey/versiontransaction."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current naming and metadata context should not silently replace exam scope",
+      "url": "https://docs.cloud.google.com/dataplex/docs/introduction",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CurrentcatalogisKnowledgeCatalogwithretainedDataplextechnicalnames;linkedexamstillnamesDataplex.",
+      "recommendation": "Preserveexamterms,addcurrentnamemapping,andseparatemetadatadiscoveryfromdataauthorizationandanswercorrectness.",
+      "disposition": "applied",
+      "source_id": "gcp-knowledge-catalog",
+      "resolution": "Preserveexamterms,addcurrentnamemapping,andseparatemetadatadiscoveryfromdataauthorizationandanswercorrectness."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A key must support both access pattern and traffic distribution",
+      "url": "https://docs.cloud.google.com/bigtable/docs/schema-design",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Lexicalroworder,prefix/rangereads,timestampprefixhotspotsandrowatomicityconstrainchoices.",
+      "recommendation": "Add entity/time/globalquerytradeoffs,numericencodingandexplicitreadfanoutcostforsharding.",
+      "disposition": "applied",
+      "source_id": "gcp-bigtable-schema",
+      "resolution": "Add entity/time/globalquerytradeoffs,numericencodingandexplicitreadfanoutcostforsharding."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Historical data access is not an unlimited restore or ordinary fail-safe query",
+      "url": "https://docs.cloud.google.com/bigquery/docs/time-travel",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Configurable2–7daywindow,delete-timewindow,priorRLSpermissionandadditional7daysupport-onlyfail-safehaveseparateboundaries.",
+      "recommendation": "Addretention/permission/recoveryplanningandmetadatarestorelimits;noactualrestoreclaimed.",
+      "disposition": "applied",
+      "source_id": "gcp-bq-time-travel",
+      "resolution": "Addretention/permission/recoveryplanningandmetadatarestorelimits;noactualrestoreclaimed."
+    },
+    {
+      "id": "googleprofessionaldataengineer-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Regional failover includes capacity,ACLs and schedules",
+      "url": "https://docs.cloud.google.com/bigquery/docs/managed-disaster-recovery",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "HardfailovercanloseunreplicateddataandACLs;softneedsbothregions;baselinevsautoscaleandscheduledqueryrelocationdiffer.",
+      "recommendation": "Requirepairedreplica/reservation/backfill,acl/schedule/clientvalidationandbusinessreconciliation;cloudlabproposed.",
+      "disposition": "applied",
+      "source_id": "gcp-bq-disaster-recovery",
+      "resolution": "Requirepairedreplica/reservation/backfill,acl/schedule/clientvalidationandbusinessreconciliation;cloudlabproposed."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "gcp-knowledge-catalog-2026",
+      "authors": [
+        "Chai Pydimukkala",
+        "Sam McVeety"
+      ],
+      "published_on": "2026-04-22",
+      "disposition": "accepted-with-limits",
+      "value": "Dated Knowledge Catalog naming and aggregation/enrichment/search context.",
+      "limits": "Full article read; marketingprecisionandallpreviewstatusclaimsnotadoptedascurrentguarantees; no exam effective date inferred."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 40,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "4b35e34fba595637ae8a06f468a2bc576a25c75480de7fa586c4ff98ea919dbc",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "sqlite_version": "3.50.4",
+      "execution_boundary": "Exact public Python:24 real in-memory SQLite CDC/state/ledger/rollback checks,6 real point-in-time SQL checks,4 real join-grain SQL checks and6 restricted window-policy model checks. No Beam runner,BigQuery,Datastream,Dataform,Composer,cloudIAM,replica,model,notification or network executed. No concurrency,durable crash recovery or source-epoch transition tested.",
+      "cloud_cli_probe": "Reuse same-session ACE gcloud-not-found-on-PATH observation; no new probe,installation or authentication."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Only40checks in the exact public Python program executed. Eight cloud labs remain proposed; no Beam/Dataflow,BigQuery,Datastream,Dataform,Composer,cloudIAM,replica,model,network or notification tested.",
+    "SQLite exercises use in-memory databases and local enforced keys; they do not establish BigQuery enforcement,distributed delivery,durable crash recovery,concurrent writers,real CDC metadata or source-epoch transitions.",
+    "Synthetic CDC contract uses one epoch and integer per-key ordering,retainedtombstones and rejects same-version conflicts. It deliberately differs from BigQuery custom hexadecimal sequence and ingestion-time tie behavior.",
+    "Fixed-window exercise is an explicit integer-second policy model,not Apache Beam triggers,watermarks,state,paneaccumulation or lateness-boundary validation.",
+    "Prior same-session ACE gcloud-not-found-on-PATH observation reused; no installation,authentication,newruntime,credentials or external notifications attempted.",
+    "Actual five-page standard PDF fully read; no printed revision date invented. Separate renewal-specific PDF and official sample question contents were not reviewed.",
+    "Product pages read selectively as detailed in source notes; no wholesale assertion of all current features/editions/regions/quotas. KnowledgeCatalogblogmarketingclaimsandpreviewlistarenotindependentaccuracyorcurrentavailabilityproof.",
+    "GoogleSkillsactivitydurationsunexposed,Whizlabstitleshell,OReilly403. Paid courses/books/providerlabs/proprietaryassessments/recalleditems not accessed. Publiccatalogmetadata cannot prove lesson accuracy or full domain depth."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Exact public Python:24 real in-memory SQLite CDC/state/ledger/rollback checks,6 real point-in-time SQL checks,4 real join-grain SQL checks and6 restricted window-policy model checks. No Beam runner,BigQuery,Datastream,Dataform,Composer,cloudIAM,replica,model,notification or network executed. No concurrency,durable crash recovery or source-epoch transition tested.",
+    "passed": 40,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "4b35e34fba595637ae8a06f468a2bc576a25c75480de7fa586c4ff98ea919dbc",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "sqlite_version": "3.50.4",
+    "cloud_cli_probe": "Reuse same-session ACE gcloud-not-found-on-PATH observation; no new probe,installation or authentication.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "google-pde-exam-guide",
+      "url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+      "checked_at": "2026-09-29T07:48:23.265594+00:00",
+      "health": {
+        "id": "google-pde-exam-guide",
+        "url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+        "checked_at": "2026-09-29T07:48:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+      "sha256": "4332edc16a03eb1f9258926e77f38eef6ef15097822e5f56153fa04dec5d064b",
+      "bytes": 200303,
+      "pdf_pages": 5,
+      "text_characters": 8409
+    }
+  ],
+  "accepted_lifecycle_initialization": {
+    "changed": [
+      "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+        "title": "Professional Data Engineer",
+        "url": "https://cloud.google.com/learn/certification/data-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-data-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-data-engineer-official-status.json",
+        "previous_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+        "current_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+        "previous_status_sha256": null,
+        "current_status_sha256": "50ccd813bba439b2b05cd37c6834841b1d8f855584b90d3a6fb696859e369931",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 40-50 multiple choice and multiple",
+            "Exam delivery method:",
+            "Validity period: 2 years",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry experience",
+            "Validity period: 1 year",
+            "Length: 1 hour",
+            "Registration fee: $100 (plus tax where applicable)",
+            "Exam format: 20 multiple choice and multiple select questions"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_initialization_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+        "title": "Professional Data Engineer",
+        "url": "https://cloud.google.com/learn/certification/data-engineer",
+        "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\google-professional-data-engineer-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\google-professional-data-engineer-official-status.json",
+        "previous_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+        "current_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+        "previous_status_sha256": "50ccd813bba439b2b05cd37c6834841b1d8f855584b90d3a6fb696859e369931",
+        "current_status_sha256": "50ccd813bba439b2b05cd37c6834841b1d8f855584b90d3a6fb696859e369931",
+        "official_status": {
+          "skills_versions": [
+            "Length: 2 hours",
+            "Registration fee: $200 (plus tax where applicable)",
+            "Languages: English, Japanese",
+            "Exam format: 40-50 multiple choice and multiple",
+            "Exam delivery method:",
+            "Validity period: 2 years",
+            "Prerequisites: None",
+            "Recommended experience: 3+ years of industry experience",
+            "Validity period: 1 year",
+            "Length: 1 hour",
+            "Registration fee: $100 (plus tax where applicable)",
+            "Exam format: 20 multiple choice and multiple select questions"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  }
+}

@@ -1446,6 +1446,8 @@ The review maps every current objective through requirement → option/tradeoff 
 
 ## GOOGLE-PROFESSIONAL-DATA-ENGINEER coverage record
 
+The September 29 [deep review](research/2026-09-29-google-professional-data-engineer-deep-review.md) maps 67 detailed objectives. Actual five-page blueprint fully read:67 main considerations under19numbered objectives,including four transformation sub-bullets within their parent. Objective hash unchanged; missing lifecycle snapshot explicitly initialized and post-check unchanged. Added40executed local checks,48answered checks,eight proposed cloud labs and current public catalog comparisons. Live-cloud execution and independent human review remain pending. Current guide citations: 24 registered, 23 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted domains—Design systems (22%), Ingest/process (25%), Store (20%), Prepare/use for analysis (15%), and Maintain/automate (18%)
