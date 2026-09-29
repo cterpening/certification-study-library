@@ -1,0 +1,1630 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "100-150",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "3c319cc14b766ad8f89f9578e74ea368383426879108fc21ad9346d856b96978",
+  "guide_after_sha256": "094f777bd54419b4b4e302d4279cbf5cfe5944f025b1b4b6b17db0326086acaa",
+  "prior_records": {
+    "exam": {
+      "code": "100-150",
+      "level": "beginner",
+      "vendor_id": "cisco",
+      "title": "Cisco Certified Support Technician Networking",
+      "status": "active",
+      "study_guide_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+      "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite. Build packet-delivery reasoning across models, performance, applications/protocols, IPv4/IPv6 addressing and subnet formats, endpoint/media selection, switching/routing/services, safe Cisco and operating-system inspection, evidence-led troubleshooting/ticketing, and foundational network/wireless security using Packet Tracer or equipment you are authorized to operate."
+    },
+    "review": {
+      "id": "100-150-2026-09-02-source-validation",
+      "exam_code": "100-150",
+      "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/100-150-official-objectives.txt",
+      "blueprint_snapshot_sha256": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+      "objective_coverage": [
+        {
+          "objective_group": "Standards and concepts",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1, 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Addressing and subnet formats",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Endpoints and media types",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 1–2",
+            "Labs 3–5 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Infrastructure",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 1 and 4–8"
+          ]
+        },
+        {
+          "objective_group": "Diagnosing problems",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 3–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 5 and 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All six public topic groups and every first-party exam-aligned course objective are mapped through packet delivery, IPv4/IPv6, endpoints/media, switching/routing/services, evidence-led diagnosis/ticketing and foundational security. Three scenarios, eight authorized labs and 36 checks are included. No stable public domain weights were found, so none are invented. Eight links are reachable and two O'Reilly pages are automation-blocked; none are missing or broken."
+    },
+    "sources": [
+      {
+        "id": "cisco-100-150-exam",
+        "title": "100-150 CCST Networking exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "Canonical current exam identity, high-level scope, languages, 50-minute duration, USD 125 price and official preparation route; monitored by the Cisco adapter."
+      },
+      {
+        "id": "cisco-100-150-topics",
+        "title": "CCST Networking detailed exam topics",
+        "url": "https://learningnetwork.cisco.com/s/ccst-networking-exam-topics",
+        "publisher": "Cisco Learning Network",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "Canonical detailed topic interface naming Standards/concepts, Addressing/subnets, Endpoints/media, Infrastructure, Diagnosing problems and Security. JavaScript rendering may limit automated text extraction."
+      },
+      {
+        "id": "cisco-100-150-training-page",
+        "title": "Cisco Certified Support Technician Networking training",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "First-party exam-aligned course objectives and 13-part outline used to validate technical coverage."
+      },
+      {
+        "id": "cisco-100-150-training-pdf",
+        "title": "CCST Networking training overview",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "Four-page Cisco Public overview dated July 2024 with exam alignment, objectives, course outline and 50-minute exam description."
+      },
+      {
+        "id": "cisco-ccst-faq",
+        "title": "Cisco Certified Support Technician FAQ",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150",
+          "100-160"
+        ],
+        "notes": "First-party audience, free training, approximately 70-hour networking and 120-hour cybersecurity paths, and lifetime certification/badge policy source."
+      },
+      {
+        "id": "cisco-network-technician-path",
+        "title": "Network Technician Career Path",
+        "url": "https://www.netacad.com/career-paths/network-technician?courseLang=en-US",
+        "publisher": "Cisco Networking Academy",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "Primary free self-paced path; Cisco states about 70 hours. JavaScript/account requirements apply."
+      },
+      {
+        "id": "cisco-netacad-catalog",
+        "title": "Cisco Networking Academy",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "publisher": "Cisco",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150",
+          "100-160",
+          "200-301"
+        ],
+        "notes": "First-party course and career-path catalog, including networking, cybersecurity and Packet Tracer routes from entry-level through CCNA preparation."
+      },
+      {
+        "id": "cisco-100-150-oreilly-official",
+        "title": "Cisco Certified Support Technician CCST Networking 100-150 Official Cert Guide",
+        "url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138213459/",
+        "publisher": "O'Reilly / Cisco Press / Russ White",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "2023 Cisco-approved 648-page guide; O'Reilly estimates 17h44m reading and describes Pearson practice, video mentoring and an update program. Verify against live topics."
+      },
+      {
+        "id": "cisco-100-150-oreilly-sybex",
+        "title": "CCST Cisco Certified Support Technician Study Guide: Networking Exam",
+        "url": "https://www.oreilly.com/library/view/ccst-cisco-certified/9781394205806/",
+        "publisher": "O'Reilly / Sybex / Todd Lammle and Donald Robb",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "2023 464-page alternative; O'Reilly estimates 12h25m reading and lists a companion practice bank. Verify against live topics."
+      },
+      {
+        "id": "cisco-100-150-udemy-hummel",
+        "title": "CCST Networking Certification Prep Course",
+        "url": "https://www.udemy.com/course/cisco-ccst-100-150-certification-lab-training-2024/",
+        "publisher": "Udemy / Shaun Hummel",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "100-150"
+        ],
+        "notes": "5h14m course last updated May 2026 with Packet Tracer and CLI labs; catalog details and quality can change."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "aff4c35eb54cd15489e6e6dacf097d48752dbf4d1e7e1c83980b2415f0eb23b1",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "e4f9c44c4f7fbc993807e343718a6fff4b8ce6724cd41766c978cfb571cbb72e",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "b47caad334e4960d84a8f9b7be1de72075b4cff9b981417e696ef1b002c21b6f",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "d276a1eafa1abb6189fc24d2b27bcaaf4d69293dfe8b139295064824651e30bf",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "fa52c8ad3dad217368e5775391f4707ef3fbb045bcecdcb735be60f3b6a46ba3",
+      "guide_sections": [
+        "Section 1",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "83f2b1b6954280f3d885cfd8e5586e7ef233cc4fbb6e9de9091b110c24abb582",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "60c03a81c61a6fce5a6c2b59c7a11739334f44f1604f07118faa65c0c6825e1d",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "da6f43ec0a13a51a3f9d71ec77e5ee3f2b8b26b0eaa4a1de6c2d3ed44d70364b",
+      "guide_sections": [
+        "Section 2",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "80dee8ea3ee0b29fc492ce2cd1e5ce08c5595a79a75fb8430bac542a2b963541",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3cbe87d4156c6c3d388937974f7468eb19ad9594c326d34963670acb75fa661a",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "30df830b01cf99e77cb0dca00849b4b1f3a722a96e5a2f13ccf9b59e99835952",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "bc7983a59b46017ff89b973b635fd55f67ee4bfa3af8baf736e2bbf975561f50",
+      "guide_sections": [
+        "Section 3",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "6f2a62808b11025da2c03092cf170cfd7cd64d215a048d509f836688253f5a38",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "3981a9247d78e07c1e8230a1130a4b177465f6732d4c4d1dfc2a14f9e16be98c",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "c718c53b73f92c410d6b4de51937c12a765f6dc732c8b331bdf4f72ba492a801",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "0bd16c6620e09381a05e92267923762c064f16a6dd9e4b7b5d9cf80b4228572b",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "8c08b9c4804fd8660143d870cdea64d69436e233075155ba829df8ff888f5c3c",
+      "guide_sections": [
+        "Section 4",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "2a9efd33bb025be3218a8e80f43bd27ed7705c00609e8c475d195db79eea5e39",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "b0a8dacc0f83b42ed39a7d788b002ae802fe2c02a8d1a4f2231f9cc2639dfa13",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "98418c6a0fd68bd27bd2d330afcd38a90666f484021d250a73d1df6b8fd29624",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "911bbb6f886f863ebcfe887e1a10fa0679661f5b4d562afbf18be8c868eb5e92",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "e0cc951d2f2784493c3aebde90b438f9872d3f65bf74427cd382d302de16fe75",
+      "guide_sections": [
+        "Section 5",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "f49a82e25f673c7ea5dd85ad5ca6c3aae0472f0fc5f433efbec2e69316200788",
+      "guide_sections": [
+        "Section 6",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "6ef75557e25109d68e867bb695f68ecf37a24ce01c1247ce6c0e31228d1122ad",
+      "guide_sections": [
+        "Section 6",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "dde65b78ba03df6766ccf5cbaebea089d4d8d82d1102da7d3a63bd31da0e1369",
+      "guide_sections": [
+        "Section 6",
+        "Hands-on evidence labs",
+        "Executed local packet and subnet workbook",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "100-150"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "100-150",
+        "title": "Cisco Certified Support Technician Networking",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+        "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+        "snapshot_path": "data\\objective-snapshots\\100-150-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\100-150-official-status.json",
+        "previous_sha256": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+        "current_sha256": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+        "previous_status_sha256": null,
+        "current_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "official_status": {
+          "skills_versions": [
+            "Languages: English, Arabic, Chinese, Spanish, French, Japanese, Portuguese",
+            "Duration: 50 minutes",
+            "Price: $US125"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 26,
+    "reachable": 23,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "cisco-100-150-exam",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+      "checked_at": "2026-09-29T08:55:38.448310+00:00",
+      "health": {
+        "id": "cisco-100-150-exam",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+        "checked_at": "2026-09-29T08:55:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Certified Support Technician Networking",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+        "duration_signals": [
+          "50 minutes"
+        ],
+        "signal_fingerprint": "41864ddc19028cb35a41f99417d2ec1f78c3a24b3643738a26e8a9db2e64a4ab",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+      "sha256": "48535baaf94ceb4903ff6938bdeb4a6391dd9d30c84d767c592cc015d3889004",
+      "text_characters": 2534
+    },
+    {
+      "id": "cisco-100-150-topics",
+      "url": "https://learningnetwork.cisco.com/s/ccst-networking-exam-topics",
+      "checked_at": "2026-09-29T08:55:38.448962+00:00",
+      "health": {
+        "id": "cisco-100-150-topics",
+        "url": "https://learningnetwork.cisco.com/s/ccst-networking-exam-topics",
+        "checked_at": "2026-09-29T08:55:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningnetwork.cisco.com/s/ccst-networking-exam-topics",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Cisco Learning Network",
+        "canonical_url": "https://learningnetwork.cisco.com/s/ccst-networking-exam-topics",
+        "duration_signals": [],
+        "signal_fingerprint": "5853a8783f5716ad4089fd1987fba3da2f0bde775cf9dde3e5c741114aedaefb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningnetwork.cisco.com/s/ccst-networking-exam-topics",
+      "sha256": "92adbc93c9783f3173fb70850540d39e9550c69d6ba6090b71ddab7383c4f32d",
+      "text_characters": 68
+    },
+    {
+      "id": "cisco-100-150-training-page",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html",
+      "checked_at": "2026-09-29T08:55:38.449336+00:00",
+      "health": {
+        "id": "cisco-100-150-training-page",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html",
+        "checked_at": "2026-09-29T08:55:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Certified Support Technician (CCST) Networking",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8d9ffbb243e55494d90c5446852819f47ca9f44deca88b97884766525beb47cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html",
+      "sha256": "0b00914829126b75a60d3726f5b9a3f9fca6ffa1311fac9084bcfb04744deb75",
+      "text_characters": 4561
+    },
+    {
+      "id": "cisco-100-150-training-pdf",
+      "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+      "checked_at": "2026-09-29T08:57:52.815529+00:00",
+      "health": {
+        "id": "cisco-100-150-training-pdf",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+        "checked_at": "2026-09-29T08:57:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+      "sha256": "9c8deb206820c145215b783c1c86f1eea345403fa80e48ce7b02aa5897d4c283",
+      "bytes": 156755,
+      "pdf_pages": 4,
+      "text_characters": 4931
+    },
+    {
+      "id": "cisco-ccst-faq",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+      "checked_at": "2026-09-29T08:55:39.053079+00:00",
+      "health": {
+        "id": "cisco-ccst-faq",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "checked_at": "2026-09-29T08:55:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CCST FAQ",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+        "duration_signals": [
+          "50 minutes",
+          "approximately 120 hours",
+          "approximately 70 hours"
+        ],
+        "signal_fingerprint": "914931b5170fae78e9b06400320036f07f1cb6e21c09026fc8903ccf432fc442",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html",
+      "sha256": "5c07873ca1d52620794d7f8126922be69e291641470ee6c42eedd1036ad56420",
+      "text_characters": 13948
+    },
+    {
+      "id": "cisco-network-technician-path",
+      "url": "https://www.netacad.com/career-paths/network-technician?courseLang=en-US",
+      "checked_at": "2026-09-29T08:55:39.294008+00:00",
+      "health": {
+        "id": "cisco-network-technician-path",
+        "url": "https://www.netacad.com/career-paths/network-technician?courseLang=en-US",
+        "checked_at": "2026-09-29T08:55:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.netacad.com/career-paths/network-technician?courseLang=en-US",
+        "content_type": "text/html",
+        "page_title": "Network Technician Career Path",
+        "canonical_url": "https://www.netacad.com/career-paths/network-technician?courseLang=en-US",
+        "duration_signals": [],
+        "signal_fingerprint": "d3cd6cf685a639aa2546f3ea217a292c976ad6f2e3847b3823272b91021fca5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.netacad.com/career-paths/network-technician?courseLang=en-US",
+      "sha256": "acaba5fea4340058060ce3907ec9814fa8e000c4381aafc211033a93ea39fd69",
+      "text_characters": 30
+    },
+    {
+      "id": "cisco-netacad-catalog",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+      "checked_at": "2026-09-29T08:55:39.501467+00:00",
+      "health": {
+        "id": "cisco-netacad-catalog",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "checked_at": "2026-09-29T08:55:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Cisco Networking Academy",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c6be3bf4fdb3ae942b7c1ad62efb24023fb474639af6cbd90c332fe6af0e08ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+      "sha256": "9df1d23f74c0e7be248384423481ab93bd59e18585ff05ffc1f6a19241e3327c",
+      "text_characters": 4150
+    },
+    {
+      "id": "cisco-100-150-oreilly-official",
+      "url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138213459/",
+      "checked_at": "2026-09-29T08:55:39.551421+00:00",
+      "health": {
+        "id": "cisco-100-150-oreilly-official",
+        "url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138213459/",
+        "checked_at": "2026-09-29T08:55:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/cisco-certified-support/9780138213459/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "cisco-100-150-oreilly-sybex",
+      "url": "https://www.oreilly.com/library/view/ccst-cisco-certified/9781394205806/",
+      "checked_at": "2026-09-29T08:55:39.712489+00:00",
+      "health": {
+        "id": "cisco-100-150-oreilly-sybex",
+        "url": "https://www.oreilly.com/library/view/ccst-cisco-certified/9781394205806/",
+        "checked_at": "2026-09-29T08:55:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/ccst-cisco-certified/9781394205806/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "cisco-100-150-udemy-hummel",
+      "url": "https://www.udemy.com/course/cisco-ccst-100-150-certification-lab-training-2024/",
+      "checked_at": "2026-09-29T08:55:39.764404+00:00",
+      "health": {
+        "id": "cisco-100-150-udemy-hummel",
+        "url": "https://www.udemy.com/course/cisco-ccst-100-150-certification-lab-training-2024/",
+        "checked_at": "2026-09-29T08:55:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/cisco-ccst-100-150-certification-lab-training-2024/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "cisco-exam-policies",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+      "checked_at": "2026-09-29T09:02:12.896584+00:00",
+      "health": {
+        "id": "cisco-exam-policies",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+        "checked_at": "2026-09-29T09:02:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Exam, Testing, and Certification Policies",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+        "duration_signals": [
+          "10 minutes",
+          "48 hours"
+        ],
+        "signal_fingerprint": "0f36e6ecb04f5a6e96597cc47d50e98f4cdf067090ff4dc51896defdf69f5323",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+      "sha256": "591083e5d9d69df5ba6e76e4500a658231449484c6907d0978e80f6b85fc84f2",
+      "text_characters": 38086
+    },
+    {
+      "id": "cisco-recertification",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "checked_at": "2026-09-29T09:02:12.897062+00:00",
+      "health": {
+        "id": "cisco-recertification",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "checked_at": "2026-09-29T09:02:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Recertification Policy",
+        "canonical_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+        "duration_signals": [
+          "101",
+          "48 hours"
+        ],
+        "signal_fingerprint": "9fb89f31fd657cdbb10c6e5e66c233c2d4ba480a35bca373edae6ad05c7f8808",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "sha256": "0c85e2c8a84b22d0ec103b50407e68f74da719bba8ecfd4293302b944e8b54db",
+      "text_characters": 7250
+    },
+    {
+      "id": "cisco-ccst-networking-book",
+      "url": "https://www.ciscopress.com/store/ccst-networking-official-cert-guide-9780138213428",
+      "checked_at": "2026-09-29T09:03:12.732884+00:00",
+      "health": {
+        "id": "cisco-ccst-networking-book",
+        "url": "https://www.ciscopress.com/store/ccst-networking-official-cert-guide-9780138213428",
+        "checked_at": "2026-09-29T09:03:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.ciscopress.com/store/ccst-networking-official-cert-guide-9780138213428",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Cisco Certified Support Technician CCST Networking 100-150 Official Cert Guide | Cisco Press",
+        "canonical_url": "https://www.ciscopress.com/store/cisco-certified-support-technician-ccst-networking-9780138213428",
+        "duration_signals": [
+          "24 hours",
+          "5 hours"
+        ],
+        "signal_fingerprint": "578bf368407d0c01ae3e7bf500779ac3ac30b9993c939cd06a3f7f79bbef4aea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.ciscopress.com/store/ccst-networking-official-cert-guide-9780138213428",
+      "sha256": "e47962dabe563c5303fff6c8e3a3b0ade344562332d7174ba63bc227bf5a498a",
+      "text_characters": 25799
+    },
+    {
+      "id": "cisco-ccst-networking-lab-book",
+      "url": "https://www.ciscopress.com/store/networking-essentials-lab-manual-v3-cisco-certified-9780138293727",
+      "checked_at": "2026-09-29T09:03:12.733493+00:00",
+      "health": {
+        "id": "cisco-ccst-networking-lab-book",
+        "url": "https://www.ciscopress.com/store/networking-essentials-lab-manual-v3-cisco-certified-9780138293727",
+        "checked_at": "2026-09-29T09:03:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.ciscopress.com/store/networking-essentials-lab-manual-v3-cisco-certified-9780138293727",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Networking Essentials Lab Manual v3: Cisco Certified Support Technician (CCST) Networking 100-150, 2nd Edition | Cisco Press",
+        "canonical_url": "https://www.ciscopress.com/store/networking-essentials-lab-manual-v3-cisco-certified-9780138293727",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "54177cba5bbc83e4d1bf61467073940706520406889c14543d30292864a20405",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.ciscopress.com/store/networking-essentials-lab-manual-v3-cisco-certified-9780138293727",
+      "sha256": "9ee1d348d69aa2035ad37f38e7a79f89e3930cbc8e764670258fbee5e5e35285",
+      "text_characters": 8533
+    },
+    {
+      "id": "measureup-ccst-networking",
+      "url": "https://www.measureup.com/ccst-networking-practice-test.html",
+      "checked_at": "2026-09-29T09:02:13.329685+00:00",
+      "health": {
+        "id": "measureup-ccst-networking",
+        "url": "https://www.measureup.com/ccst-networking-practice-test.html",
+        "checked_at": "2026-09-29T09:02:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/ccst-networking-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Practice Test CCST: Cisco Certified Support Technician Networking",
+        "canonical_url": "https://www.measureup.com/ccst-networking-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ee011412ebf0353ce9942948e6528b3fe834523d7563711d79502cb06cf6cfaa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/ccst-networking-practice-test.html",
+      "sha256": "bdc844cc0e945bfd37ec305008c9b20183e997ac92dcd599dc95d6deb2dca36b",
+      "text_characters": 14911
+    },
+    {
+      "id": "rfc-791",
+      "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+      "checked_at": "2026-09-29T09:02:13.794339+00:00",
+      "health": {
+        "id": "rfc-791",
+        "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+        "checked_at": "2026-09-29T09:02:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc791.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc791.html",
+        "duration_signals": [
+          "4.25 minutes",
+          "approximately 4.25 minutes"
+        ],
+        "signal_fingerprint": "bdb820be1ccf52e7f94540bc53093c8a3d4b68e42014b074a11eca7d57162542",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc791.html",
+      "sha256": "d28d4f09ee4cec85b76a4ccceb701b01626b5d619bebc216902284f01af01fb6",
+      "text_characters": 71091
+    },
+    {
+      "id": "rfc-826",
+      "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+      "checked_at": "2026-09-29T09:02:13.794592+00:00",
+      "health": {
+        "id": "rfc-826",
+        "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+        "checked_at": "2026-09-29T09:02:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc826.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc826.html",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "f7c7a781caf956e48dd8a461fb14e68301998a2644787669b5f84a6b57362785",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc826.html",
+      "sha256": "4999cd69a7cb96da3220fa47232572b838a9715bae36be7ff026c07c31e9ddd9",
+      "text_characters": 20956
+    },
+    {
+      "id": "rfc-1035",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "checked_at": "2026-09-29T09:02:14.121403+00:00",
+      "health": {
+        "id": "rfc-1035",
+        "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+        "checked_at": "2026-09-29T09:02:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+        "duration_signals": [],
+        "signal_fingerprint": "cd8bdd0c34ab715cd764cf1c2732d5526806a2a68cbbabb1516fcf2b9d2f8e76",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "sha256": "2d604f2c272b41983f98cecf5f9ccc101f2eda690e255c2e95121462f3373cf9",
+      "text_characters": 98701
+    },
+    {
+      "id": "rfc-9114",
+      "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+      "checked_at": "2026-09-29T09:02:14.237520+00:00",
+      "health": {
+        "id": "rfc-9114",
+        "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "checked_at": "2026-09-29T09:02:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "content_type": "text/html",
+        "page_title": "RFC 9114: HTTP/3",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e2c076a6f49c1cd0a08f4fb9e09a2359780c34fff7322058f3b93442a8cf1d3c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+      "sha256": "9295268c32dacf5298a199016f95d75a7c649f83450eb38905c12de6cd12cd66",
+      "text_characters": 133796
+    },
+    {
+      "id": "wireshark-display-filters",
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html",
+      "checked_at": "2026-09-29T09:03:13.389233+00:00",
+      "health": {
+        "id": "wireshark-display-filters",
+        "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html",
+        "checked_at": "2026-09-29T09:03:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "6.4. Building Display Filter Expressions",
+        "canonical_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5cefba1dedd1e36e2366456829ffa47f7fb12478e0ca94569f193b958645e27e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html",
+      "sha256": "5f00f9a447b55f96cbed5fd598f755a8c9a6dc0cb9f91120ae3f3ff267ff4691",
+      "text_characters": 23414
+    },
+    {
+      "id": "wireshark-capture-filters",
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html",
+      "checked_at": "2026-09-29T09:03:13.753378+00:00",
+      "health": {
+        "id": "wireshark-capture-filters",
+        "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html",
+        "checked_at": "2026-09-29T09:03:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "4.10. Filtering while capturing",
+        "canonical_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html",
+        "duration_signals": [],
+        "signal_fingerprint": "31f9e61b4dded45c932ab32d9de3d7f94323b19da2d9ffeb87d862de86e44611",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html",
+      "sha256": "9c02a51c2ad3a058594068999bee90f7042d32a63fcda0045b10f9d1cb80b264",
+      "text_characters": 5152
+    },
+    {
+      "id": "wireshark-checksums",
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html",
+      "checked_at": "2026-09-29T09:03:14.166745+00:00",
+      "health": {
+        "id": "wireshark-checksums",
+        "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html",
+        "checked_at": "2026-09-29T09:03:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "7.10. Checksums",
+        "canonical_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f0a59e1ff8f5eefe60a70c2adf4b77783e22018c810352bf1bbb0b76168f813f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html",
+      "sha256": "1ebc7f424894cdf526260f0478413964016047cc78d7b98e380921adc044b260",
+      "text_characters": 6150
+    },
+    {
+      "id": "cisco-ccst-networking-objectives-pdf",
+      "url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "checked_at": "2026-09-29T09:02:43.958003+00:00",
+      "health": {
+        "id": "cisco-ccst-networking-objectives-pdf",
+        "url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "checked_at": "2026-09-29T09:02:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "sha256": "1dcfd21afeb46718177bca92bd2fcc6baffd4ad22ac4eb0ad09b45bac9cf20ee",
+      "bytes": 77093,
+      "pdf_pages": 3,
+      "text_characters": 5098
+    },
+    {
+      "id": "rfc4861",
+      "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+      "checked_at": "2026-09-29T09:03:12.734177+00:00",
+      "health": {
+        "id": "rfc4861",
+        "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+        "checked_at": "2026-09-29T09:03:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+        "duration_signals": [
+          "1 hour",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "e7e6881c2a3943c3ffa72ef2acac78e499903967d3fed8d44e6648c2195352b7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+      "sha256": "026e88bc18ebf4fa9f9e9625adc9fb483a97473dc6e567804bae2fb602d85cb2",
+      "text_characters": 192026
+    },
+    {
+      "id": "rfc3021",
+      "url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+      "checked_at": "2026-09-29T09:03:13.176779+00:00",
+      "health": {
+        "id": "rfc3021",
+        "url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+        "checked_at": "2026-09-29T09:03:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f0e7fb8da231094c5649dbb11948f7bfcd46230065cf554ba096a85fde1c13a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+      "sha256": "6f737ced83d0eea917362499d232130bccbefd0ebca560488d7e2aca952ea743",
+      "text_characters": 17187
+    },
+    {
+      "id": "rfc-768",
+      "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+      "checked_at": "2026-09-29T09:04:13.529883+00:00",
+      "health": {
+        "id": "rfc-768",
+        "url": "https://www.rfc-editor.org/rfc/rfc768.html",
+        "checked_at": "2026-09-29T09:04:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc768.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc768.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0cea242b3527c29b6e162c5416ef9548f175d361536b1fb217e9cd7a640bac7a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc768.html",
+      "sha256": "6e7add725657d1d5b785b5acf7de93cdb253f387b5c797c331f0b7fe1a86a7e8",
+      "text_characters": 4349
+    }
+  ],
+  "added_source_ids": [
+    "cisco-ccst-networking-objectives-pdf",
+    "cisco-exam-policies",
+    "cisco-recertification",
+    "cisco-ccst-networking-book",
+    "cisco-ccst-networking-lab-book",
+    "measureup-ccst-networking",
+    "rfc-791",
+    "rfc-826",
+    "rfc-1035",
+    "rfc-9114",
+    "wireshark-display-filters",
+    "wireshark-capture-filters",
+    "wireshark-checksums",
+    "rfc-768"
+  ],
+  "findings": [
+    {
+      "id": "100150-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Lifetime CCST is conditional on award date",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dedicatedpolicy states awards on or afterJuly15,2025 validfiveyears;earlierawardsnonexpiring.",
+      "recommendation": "Replaceunqualifiedlifetimeclaim andretainexactinclusiveboundary.",
+      "disposition": "applied",
+      "source_id": "cisco-exam-policies",
+      "resolution": "Replaceunqualifiedlifetimeclaim andretainexactinclusiveboundary."
+    },
+    {
+      "id": "100150-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "General Continuing Education guidance excludes CCST",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "EntrysectionlistsqualifyingexamsandexplicitlyexcludesCE.",
+      "recommendation": "CiteCCST-specificrenewal,activeperiod andowncertificationrecord.",
+      "disposition": "applied",
+      "source_id": "cisco-recertification",
+      "resolution": "CiteCCST-specificrenewal,activeperiod andowncertificationrecord."
+    },
+    {
+      "id": "100150-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Training overview is not the detailed exam blueprint",
+      "url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ActualthreepagePDFhas25numberedobjectives/supportingbullets;targetcandidate150hinstructionandpractice;noweights.",
+      "recommendation": "Mapall25plusdetails,distinguish70hpath/150htargetandfillCLI/media/accessgaps.",
+      "disposition": "applied",
+      "source_id": "cisco-ccst-networking-objectives-pdf",
+      "resolution": "Mapall25plusdetails,distinguish70hpath/150htargetandfillCLI/media/accessgaps."
+    },
+    {
+      "id": "100150-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "TCP443 is not every HTTPS transport",
+      "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "HTTP3usesQUICoverUDP;blockedUDPcanfailorfallback;alternativeUDPportsallowed.",
+      "recommendation": "Teachactualtransport/portandseparateapplication/certificatevalidationfromfirewallallow.",
+      "disposition": "applied",
+      "source_id": "rfc-9114",
+      "resolution": "Teachactualtransport/portandseparateapplication/certificatevalidationfromfirewallallow."
+    },
+    {
+      "id": "100150-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Subtracting two addresses is not universal",
+      "url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Supportedpoint-to-point/31usesbothaddressesashosts.",
+      "recommendation": "BoundordinaryLANformula;executed/31,/32andmaskasymmetryexamples.",
+      "disposition": "applied",
+      "source_id": "rfc3021",
+      "resolution": "BoundordinaryLANformula;executed/31,/32andmaskasymmetryexamples."
+    },
+    {
+      "id": "100150-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "An assigned IPv6 address does not prove a default router",
+      "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RouterAdvertisementsconveyrouter/prefixinformation;neighborresolutionandaddressconfigurationareseparate.",
+      "recommendation": "AddRA/route/neighborchecksandavoidlinklocalpresenceasasuccessproof.",
+      "disposition": "applied",
+      "source_id": "rfc4861",
+      "resolution": "AddRA/route/neighborchecksandavoidlinklocalpresenceasasuccessproof."
+    },
+    {
+      "id": "100150-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Capture exclusion cannot be undone by display filtering",
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Captureuseslibpcapfilteringbeforecollection.",
+      "recommendation": "Teachdistinctsyntax/capturepoint/evidenceandexplicitreopensavedfilelab.",
+      "disposition": "applied",
+      "source_id": "wireshark-capture-filters",
+      "resolution": "Teachdistinctsyntax/capturepoint/evidenceandexplicitreopensavedfilelab."
+    },
+    {
+      "id": "100150-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A Boolean field can exist when its value is false",
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "tcp.flags.synpresenceisnotSYNbitset.",
+      "recommendation": "Useexplicitvaluecomparisonandverifyexportsratherthanassumesanitization.",
+      "disposition": "applied",
+      "source_id": "wireshark-display-filters",
+      "resolution": "Useexplicitvaluecomparisonandverifyexportsratherthanassumesanitization."
+    },
+    {
+      "id": "100150-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A local outgoing bad checksum can precede hardware completion",
+      "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Offloadingcancompletechecksumsaftercapture;partialchecksumsareversion-aware.",
+      "recommendation": "Comparecapturepoint/receiver/settingsevidencebeforedeclaringcorruption;nooffloadsettingschanged.",
+      "disposition": "applied",
+      "source_id": "wireshark-checksums",
+      "resolution": "Comparecapturepoint/receiver/settingsevidencebeforedeclaringcorruption;nooffloadsettingschanged."
+    },
+    {
+      "id": "100150-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "IPv4 header integrity does not cover payload",
+      "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "HeaderchecksumcoversexactheaderandchangeswithTTL.",
+      "recommendation": "ExecuteheaderandpayloadcorruptioncontrastsandTTLdrop/newframechecks,withboundedparserlimits.",
+      "disposition": "applied",
+      "source_id": "rfc-791",
+      "resolution": "ExecuteheaderandpayloadcorruptioncontrastsandTTLdrop/newframechecks,withboundedparserlimits."
+    },
+    {
+      "id": "100150-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Remote IP and local next-hop MAC serve different scopes",
+      "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Addressresolutionusesrouting-selectedlocalnext-hopprotocoladdress.",
+      "recommendation": "EncodeARPforgatewayandEthernetdestinationwhilekeepingremoteIPacrosssyntheticroute.",
+      "disposition": "applied",
+      "source_id": "rfc-826",
+      "resolution": "EncodeARPforgatewayandEthernetdestinationwhilekeepingremoteIPacrosssyntheticroute."
+    },
+    {
+      "id": "100150-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A DNS negative response differs from no observed response",
+      "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "100-150"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "HeaderQR/RCODEdistinguishquery/responseandNameError.",
+      "recommendation": "Executeoriginalnegativeheaderfixtureandexplicitno-observationcasewithoutclaimingliveresolver/DNSSECvalidation.",
+      "disposition": "applied",
+      "source_id": "rfc-1035",
+      "resolution": "Executeoriginalnegativeheaderfixtureandexplicitno-observationcasewithoutclaimingliveresolver/DNSSECvalidation."
+    }
+  ],
+  "blog_intake": [],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 40,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "150300794bb3e9a069d365d2c5808c869dbfb1ea371912b165b3e204f3e203f6",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"subnet\": \"10.20.30.128/27\", \"ordinary_hosts\": 30, \"arp_target\": \"192.0.2.1\", \"remote_destination\": \"203.0.113.53\", \"ttl_before\": 64, \"ttl_after\": 63, \"dns_negative\": \"NXDOMAIN\", \"frame_bytes\": 75}\n40 local checks passed",
+      "results": {
+        "subnet": "10.20.30.128/27",
+        "ordinary_hosts": 30,
+        "arp_target": "192.0.2.1",
+        "remote_destination": "203.0.113.53",
+        "ttl_before": 64,
+        "ttl_after": 63,
+        "dns_negative": "NXDOMAIN",
+        "frame_bytes": 75
+      },
+      "execution_boundary": "Original standard-library in-memory Ethernet/ARP/IPv4/UDP/DNS binary construction/parsing/checksums, TTL forwarding/drop, subnet/31/32/LPM/asymmetricmask andcorruption/truncation/negative-responsefixtures. No sockets/capture/pcap/filedata/network/device/OSconfig/Wireshark/PacketTracer/filterexecution.",
+      "tool_probe": "PowerShell Get-Command tshark,wireshark,PacketTracer returned no commands on PATH; not proof applications absent elsewhere. No installation attempted."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Eight Packet Tracer/device/OS/Wireshark labs remain proposed;no livecapture,pcapreopening,filtercompilation,CiscoCLI,wireless/routing/deviceconfiguration or multihostnetwork executed. Independenthumanreviewpending.",
+    "Forty checks include structural assertions and original byte/IPv4subnetfixtures. Parser onlysupportsuntaggedEthernet/unfragmentedoptionfreeIPv4UDP/fixedDNSheader;not generalrouter/parser/resolver/productionrobustness/performanceevidence.",
+    "No sockets,filesdatawrites,realtraffic,ICMPresponses,actualoffloading,DNSSEC/cachevalidation or authenticatedremoteendpoints. IPv4UDPzero-checksumhandlingnotextendedtoIPv6. No observedresponseisfixtureabsence,not actualtimeout.",
+    "No tshark,wireshark or PacketTracer command found on PATH;thisdoesnotproveabsenceelsewhere. No softwareinstalled,authentication,services,notifications or systemsettingschanged.",
+    "Actualobjective3pagePDFandtraining4pagePDFfullyread;RFCs/productpagesselectiveasper-sourcenotes. ExamtopicsandNetAcadpathshellsarenotcompletecontentverification;actualPDFresolveddetailedscopegap.",
+    "Publiccatalogonly;twoOReilly+Udemy403,oldtimingsunverified. MeasureUppracticeallocationnotexamweights;paidcontent/quality/passguaranteesunverified. Book/lablistings2023datesarenot2026contentvalidation. No relevantdatedblogwasadopted;dedicatedcurrentpoliciesprovide lifecycle evidence."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Original standard-library in-memory Ethernet/ARP/IPv4/UDP/DNS binary construction/parsing/checksums, TTL forwarding/drop, subnet/31/32/LPM/asymmetricmask andcorruption/truncation/negative-responsefixtures. No sockets/capture/pcap/filedata/network/device/OSconfig/Wireshark/PacketTracer/filterexecution.",
+    "passed": 40,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "150300794bb3e9a069d365d2c5808c869dbfb1ea371912b165b3e204f3e203f6",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"subnet\": \"10.20.30.128/27\", \"ordinary_hosts\": 30, \"arp_target\": \"192.0.2.1\", \"remote_destination\": \"203.0.113.53\", \"ttl_before\": 64, \"ttl_after\": 63, \"dns_negative\": \"NXDOMAIN\", \"frame_bytes\": 75}\n40 local checks passed",
+    "results": {
+      "subnet": "10.20.30.128/27",
+      "ordinary_hosts": 30,
+      "arp_target": "192.0.2.1",
+      "remote_destination": "203.0.113.53",
+      "ttl_before": 64,
+      "ttl_after": 63,
+      "dns_negative": "NXDOMAIN",
+      "frame_bytes": 75
+    },
+    "tool_probe": "PowerShell Get-Command tshark,wireshark,PacketTracer returned no commands on PATH; not proof applications absent elsewhere. No installation attempted.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "cisco-100-150-training-pdf",
+      "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+      "checked_at": "2026-09-29T08:57:52.815529+00:00",
+      "health": {
+        "id": "cisco-100-150-training-pdf",
+        "url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+        "checked_at": "2026-09-29T08:57:52+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf",
+      "sha256": "9c8deb206820c145215b783c1c86f1eea345403fa80e48ce7b02aa5897d4c283",
+      "bytes": 156755,
+      "pdf_pages": 4,
+      "text_characters": 4931
+    },
+    {
+      "id": "cisco-ccst-networking-objectives-pdf",
+      "url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "checked_at": "2026-09-29T09:02:43.958003+00:00",
+      "health": {
+        "id": "cisco-ccst-networking-objectives-pdf",
+        "url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "checked_at": "2026-09-29T09:02:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+      "sha256": "1dcfd21afeb46718177bca92bd2fcc6baffd4ad22ac4eb0ad09b45bac9cf20ee",
+      "bytes": 77093,
+      "pdf_pages": 3,
+      "text_characters": 5098
+    }
+  ],
+  "accepted_objective_and_lifecycle_observation": {
+    "changed": [
+      "100-150"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "100-150",
+        "title": "Cisco Certified Support Technician Networking",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+        "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+        "snapshot_path": "data\\objective-snapshots\\100-150-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\100-150-official-status.json",
+        "previous_sha256": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+        "current_sha256": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+        "previous_status_sha256": null,
+        "current_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "official_status": {
+          "skills_versions": [
+            "Languages: English, Arabic, Chinese, Spanish, French, Japanese, Portuguese",
+            "Duration: 50 minutes",
+            "Price: $US125"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_acceptance_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "100-150",
+        "title": "Cisco Certified Support Technician Networking",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+        "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+        "snapshot_path": "data\\objective-snapshots\\100-150-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\100-150-official-status.json",
+        "previous_sha256": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+        "current_sha256": "06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+        "previous_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "current_status_sha256": "84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693b",
+        "official_status": {
+          "skills_versions": [
+            "Languages: English, Arabic, Chinese, Spanish, French, Japanese, Portuguese",
+            "Duration: 50 minutes",
+            "Price: $US125"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "numbered_objective_counts_by_domain": [
+    5,
+    3,
+    4,
+    5,
+    5,
+    3
+  ],
+  "objective_mapping_basis": "Actual three-page exam objective PDF,25numberedobjectives each including its supportingbullets;separate trainingoverview4pages is corroboration. No domain weights or PDF revision date invented."
+}

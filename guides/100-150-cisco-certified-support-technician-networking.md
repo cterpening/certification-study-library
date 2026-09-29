@@ -6,16 +6,16 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-29
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-29
 ---
 
 # Cisco Certified Support Technician Networking (100-150) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#100-150-coverage-record). Cisco's [exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html) and [exam-topics page](https://learningnetwork.cisco.com/s/ccst-networking-exam-topics) are authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked September 29, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#100-150-coverage-record). Cisco's [exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html) and [exam-topics page](https://learningnetwork.cisco.com/s/ccst-networking-exam-topics) are authoritative.
 
-**Current baseline:** Active 100-150 CCST Networking exam; six public topic groups and Cisco's current exam-aligned training objectives, checked September 2, 2026<br>
+**Current baseline:** **CURRENT BLUEPRINT:** Active 100-150 CCST Networking; 25 numbered objectives and their supporting bullets across six domains, read from the actual three-page objective PDF on September 29, 2026<br>
 **Scheduled change:** None announced on the checked official pages<br>
 **Official source:** [100-150 exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html) · [exam topics](https://learningnetwork.cisco.com/s/ccst-networking-exam-topics) · [training overview](https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf)
 
@@ -23,13 +23,17 @@ upcoming_change_checked: 2026-09-02
 
 Treat networking as a packet-delivery story: application need → name and address → local medium → switch → default gateway/router → remote path → destination service → return path. At each step, identify the device, protocol, addressing information, observable evidence, likely failure, and safest next diagnostic action. Memorizing labels without being able to trace a packet is not enough.
 
-Cisco currently lists a 50-minute exam costing USD 125 and offered in English, Arabic, Chinese, Spanish, French, Japanese, and Portuguese. The [CCST FAQ](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html) describes CCST as an entry-level, lifetime certification and the free self-paced Network Technician Career Path as about 70 hours. Recheck price, delivery, language, and badge policy before booking.
+Cisco currently lists a 50-minute exam costing USD 125 and offered in English, Arabic, Chinese, Spanish, French, Japanese, and Portuguese. **VERIFY CURRENT:** The [exam policies](https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html) state that CCST certifications earned **on or after July 15, 2025 are valid for five years**; earlier awards do not expire. The [CCST recertification section](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html) lists qualifying current exams, including any current CCST exam, and excludes Continuing Education credits. Complete renewal requirements before expiry. Some older answers in the [CCST FAQ](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician/faq.html) still say lifetime without a date; use its dated renewal answer together with the dedicated policy. Recheck logistics and your own certification record before booking.
+
+The FAQ estimates about 70 hours for the free self-paced Network Technician Career Path. Separately, the objective PDF describes the target candidate as having at least 150 hours of instruction and hands-on experience. These describe different things; finishing the path is not proof of readiness, and the candidate description is not an independently verified registration prerequisite. Cisco's training overview states that its course has no prerequisite.
+
+The canonical exam-page objective digest is unchanged. The detailed PDF was retrieved and reviewed separately because the exam-topics web interface returned a loading shell. A previously missing lifecycle-monitor baseline was explicitly initialized and then rechecked unchanged; that initialization is not a newly announced exam change.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context. It is supporting knowledge, not a claim that the item appears verbatim in the published objectives.
 
 ## Objective map
 
-Cisco's public exam-topics interface names six groups but does not expose stable weights in the checked server-rendered page. This guide does not invent them. Allocate time from diagnostic evidence: start evenly, then spend more on areas where you cannot produce the listed proof.
+The [actual objective-domain PDF](https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf) contains 25 numbered objectives: **5 / 3 / 4 / 5 / 5 / 3** across the six groups below. All supporting bullets were read and mapped. It prints no domain weights or dated revision identifier; none are invented here. The separate four-page training overview is corroborating course material, not a substitute exam blueprint. Allocate practice time from demonstrated gaps, then repeat the full map before booking.
 
 | Topic group | Proof that you understand it |
 |---|---|
@@ -61,19 +65,19 @@ Encapsulation adds information as data moves down the stack: application data be
 ### Performance terms
 
 - **Bandwidth** is a path's theoretical or provisioned capacity.
-- **Throughput** is useful data transferred per unit of time.
-- **Goodput** excludes protocol overhead and retransmitted data.
+- **Throughput** is the measured transfer rate at a specified layer and measurement point; state what bytes and interval were counted.
+- **Goodput** counts useful application payload delivered per unit time, excluding protocol overhead and duplicate retransmissions.
 - **Latency** is delay; round-trip time includes travel out and back.
 - **Jitter** is variation in delay and matters to voice/video.
 - **Packet loss** forces recovery or reduces real-time quality.
 
-A 1-Gbps access link does not guarantee 1-Gbps application throughput. A slower upstream link, contention, wireless interference, server limits, TCP behavior, encryption, loss, or latency can constrain the end-to-end result. Always measure at the appropriate point and time.
+A 1-Gbps access link does not guarantee 1-Gbps application throughput. A slower upstream link, contention, wireless interference, server limits, TCP behavior, encryption, loss, or latency can constrain the end-to-end result. Always measure at the appropriate point and time. An Internet speed test includes the chosen remote server and intervening path; an authorized Iperf test between controlled endpoints can isolate a narrower path. Record endpoints, direction, transport, duration and load before comparing results; a throughput result is not a universal circuit guarantee.
 
 ### Network types, layouts, and delivery models
 
 LAN and WLAN serve a local area; PAN connects a person's nearby devices; CAN commonly spans a campus; MAN spans a metropolitan area; WAN joins geographically separated sites. A physical topology describes cables/radios and devices; a logical topology describes traffic relationships. Star layouts centralize access, while mesh adds alternate paths at greater cost and complexity.
 
-On-premises hosting gives an organization direct responsibility for facilities and equipment. Cloud services shift defined responsibilities to a provider but do not remove customer responsibility for identities, data, configuration, endpoints, and service use. Hybrid designs join both. The correct choice follows latency, connectivity, control, scale, security, recovery, and cost requirements.
+On-premises hosting gives an organization direct responsibility for facilities and equipment. Cloud services shift defined responsibilities to a provider but do not remove customer responsibility for identities, data, configuration, endpoints, and service use. Hybrid designs join both. The correct choice follows latency, connectivity, control, scale, security, recovery, and cost requirements. Public cloud serves customers on provider infrastructure; private cloud is dedicated to one organization; hybrid joins environments. IaaS exposes infrastructure you configure, PaaS manages more of the application platform, and SaaS supplies an application. A remote worker still depends on local Wi-Fi, an ISP, identity and an approved access path to either cloud or on-premises services.
 
 ### Applications, transports, and ports
 
@@ -85,12 +89,14 @@ Know the purpose and usual transport/port for foundational services:
 |---|---:|---|
 | DNS | UDP/TCP 53 | Translate names and addresses; inspect query, answer, and chosen server |
 | DHCPv4 | UDP 67/68 | Lease address, mask, gateway, and DNS information |
-| HTTP / HTTPS | TCP 80 / 443 | Web traffic; HTTPS protects the session with TLS |
+| HTTP / HTTPS | Commonly TCP 80 / 443; HTTP/3 uses QUIC over UDP, commonly 443 | Identify the actual transport; HTTPS protects the connection, not the truth of its content |
 | SSH / Telnet | TCP 22 / 23 | Secure versus clear-text remote terminal access |
-| FTP / SFTP / TFTP | TCP 20/21 / TCP 22 / UDP 69 | Different file-transfer designs and security properties |
+| FTP / SFTP / TFTP | FTP control TCP 21; active-mode data commonly TCP 20; SFTP TCP 22; TFTP initial request UDP 69 | FTP passive data uses a negotiated server port; SFTP uses SSH and is distinct from FTPS; TFTP transfers use selected UDP transfer IDs |
 | SMTP / POP3 / IMAP | TCP 25 / 110 / 143 | Mail transfer and mailbox access; secure variants may use other ports |
 | NTP | UDP 123 | Time synchronization, essential to trustworthy logs |
 | SNMP | UDP 161/162 | Polling/management and traps/informs |
+
+**Related item:** [HTTP/3](https://www.rfc-editor.org/rfc/rfc9114.html) uses QUIC over UDP; blocking UDP can cause connection failure or fallback to a TCP HTTP version. Servers can advertise a different UDP port. Do not infer application success from TCP 443 alone. ICMP carries IP control/error information and echo messages; it has no TCP/UDP port.
 
 Port numbers identify application endpoints, not physical switch ports. A socket is commonly described by protocol plus IP address plus transport port.
 
@@ -102,13 +108,13 @@ Port numbers identify application endpoints, not physical switch ports. A socket
 
 An IPv4 address is 32 bits shown as four decimal octets. A prefix length such as `/24` says how many leading bits identify the network. A subnet mask is another representation: `/24` equals `255.255.255.0`; `/25` equals `255.255.255.128`; `/26` equals `255.255.255.192`; `/27` equals `255.255.255.224`; `/28` equals `255.255.255.240`.
 
-For an ordinary subnet, the network address has all host bits zero and the broadcast address has all host bits one. To decide whether a destination is local, apply the mask to both addresses. If the resulting network IDs match, use local Layer 2 delivery; otherwise send toward the default gateway.
+For an ordinary subnet, the network address has all host bits zero and the broadcast address has all host bits one. To decide whether a destination is local, apply the mask to both addresses. If the resulting network IDs match, use local Layer 2 delivery; otherwise use the selected route, often the default gateway. More specific configured routes can override that default.
 
-Private IPv4 ranges are `10.0.0.0/8`, `172.16.0.0/12`, and `192.168.0.0/16`. They are not publicly routed on the Internet; NAT/PAT commonly translates between inside private addressing and public connectivity. `127.0.0.0/8` is loopback. A Windows self-assigned `169.254.x.x` address is strong evidence that normal DHCP configuration may have failed, but confirm intended design before changing anything.
+Private IPv4 ranges are `10.0.0.0/8`, `172.16.0.0/12`, and `192.168.0.0/16`. They are not publicly routed on the Internet; NAT/PAT commonly translates between inside private addressing and public connectivity. `127.0.0.0/8` is loopback. An IPv4 link-local address in `169.254.0.0/16` can indicate fallback when normal DHCP configuration was unavailable. It does not establish the root cause, prove that a DHCP server is down, or imply that all other interfaces are disconnected. Check the address method, intended design, lease state and VLAN before changing anything.
 
 Example: `192.168.10.70/26` uses blocks of 64. It belongs to network `192.168.10.64`; the broadcast is `.127`, and the ordinary usable range is `.65`–`.126`. A host `192.168.10.120/26` is local; `192.168.10.130/26` is in the next subnet and requires routing.
 
-**Related item:** Class A/B/C language still appears in foundational material, but modern routing and allocation use classless prefixes. Prefer CIDR reasoning over assuming a mask from the first octet.
+**Related item:** Class A/B/C language still appears in foundational material, but modern routing and allocation use classless prefixes. Prefer CIDR reasoning over assuming a mask from the first octet. For ordinary IPv4 LAN subnets, usable addresses are usually `2^(32-prefix)-2`; supported [point-to-point /31 links](https://www.rfc-editor.org/rfc/rfc3021.html) use both addresses, and `/32` identifies one address. Do not subtract two indiscriminately. If host A uses `/24` but B uses `/25`, A can see B as local while B needs a route back; evaluate each endpoint's actual mask.
 
 ### IPv6 recognition
 
@@ -126,7 +132,7 @@ The prefix identifies the network portion. The default gateway is still a routin
 
 ### Address assignment and supporting resolution
 
-Static configuration is deliberate and persistent; DHCP provides leases dynamically. A usable host configuration normally needs address, prefix/mask, default gateway for remote networks, and DNS resolver information. ARP maps a local IPv4 next-hop address to a MAC address. IPv6 Neighbor Discovery performs related discovery and reachability work using ICMPv6.
+Static configuration is deliberate and persistent; DHCP provides leases dynamically. A usable host configuration normally needs address, prefix/mask, default gateway for remote networks, and DNS resolver information. ARP maps a local IPv4 next-hop address to a MAC address. [IPv6 Neighbor Discovery](https://www.rfc-editor.org/rfc/rfc4861.html) performs related discovery and reachability work using ICMPv6. Router Advertisements establish default-router and on-link-prefix information; address assignment via DHCPv6 is a separate concern. A working link-local address or assigned global address alone does not prove a default route exists. Check route and neighbor evidence instead of broadly blocking ICMPv6.
 
 When a user says “the Internet is down,” separate:
 
@@ -150,7 +156,9 @@ Twisted-pair copper Ethernet commonly uses an eight-position modular connector o
 
 Wi-Fi uses radio and a shared medium. Signal strength alone is not quality: interference, channel use, client density, band, distance, obstacles, authentication, and backhaul capacity all matter. Cellular access depends on carrier radio coverage and service. Wired access usually offers stable dedicated link characteristics but limits mobility.
 
-Patch panels organize permanent cabling; patch cables join panels, switches, and endpoints. A console connection is for device management, not user data forwarding. Ethernet switch ports, router interfaces, SFP/SFP+ transceiver cages, USB, serial/console, and power connectors serve different purposes. Read the diagram and labels before inserting a cable.
+Patch panels organize permanent cabling; patch cables join panels, switches, and endpoints. A console connection is for device management, not user data forwarding. Ethernet switch ports, router interfaces, SFP/SFP+ transceiver cages, USB, serial/console, and power connectors serve different purposes. Read the diagram and labels before inserting a cable. Distinguish smaller RJ-11 telephone connectors, coaxial connections and fiber connectors such as LC/SC from copper Ethernet. PoE supplies supported devices through Ethernet cabling, but connector fit does not establish compatible power, available budget or negotiated link speed. Trace the intended rack, patch-panel and switch-port labels before moving a connection.
+
+**VERIFY CURRENT:** The blueprint includes Wi-Fi in 2.4, 5 and 6 GHz bands and licensed cellular service. Actual band/channel availability depends on regional rules and both client and access-point support. Choose compatible SSID, authentication method and WPA mode; signal strength does not prove successful authentication or usable IP configuration.
 
 ### Endpoint evidence
 
@@ -174,7 +182,7 @@ A **hub** repeats signals and shares a collision domain. A **Layer 2 switch** le
 
 ### Switching and routing basics
 
-When a switch receives a frame, it learns the source MAC on the incoming port. If the destination is known, it forwards toward that port; an unknown unicast or broadcast is flooded within the relevant broadcast domain, not across a router by default. VLANs create separate logical Layer 2 domains on shared switching hardware.
+When a switch receives a frame, it learns the source MAC on the incoming port. If the destination is known, it forwards toward that port; an unknown unicast or broadcast is flooded within the relevant broadcast domain, not across a router by default. VLANs create separate logical Layer 2 domains on shared switching hardware. MAC filtering permits or denies selected link addresses; those addresses can be changed or impersonated, so a MAC allowlist does not establish a person's identity. A VLAN usually pairs with an IP subnet in a design, but VLAN membership and IP configuration are separate facts to verify.
 
 A host sends remote traffic to its default gateway's local MAC address while retaining the remote destination IP. The router removes the incoming frame, consults its routing table, decrements the IPv4 TTL or IPv6 hop limit, and builds a new frame for the next link. Each hop changes link-layer addressing; end-to-end IP addressing normally remains unless translation occurs.
 
@@ -182,7 +190,7 @@ A host sends remote traffic to its default gateway's local MAC address while ret
 
 ### Safe Cisco device inspection
 
-Console provides local out-of-band-style access; SSH provides encrypted remote CLI access; Telnet is clear text and should not be selected when SSH is available. Web interfaces, controllers, APIs, and network-management platforms are other access/data methods. Use authorized credentials and start with observation.
+Console provides local out-of-band-style access; SSH provides encrypted remote CLI access; Telnet is clear text and should not be selected when SSH is available. Web interfaces, controllers, APIs, and network-management platforms are other access/data methods. Use authorized credentials and start with observation. RDP supplies a remote desktop; SSH supplies an encrypted terminal or other SSH service; a VPN protects an access path and does not automatically authorize every resource. A terminal emulator can use a local console connection. A management system or cloud-managed platform such as Meraki centralizes selected inventory and telemetry; verify device identity and observation time. Scripts collect repeatable evidence but retain the permissions and failure risks of their account.
 
 Common read-only Cisco IOS-style commands include:
 
@@ -191,7 +199,11 @@ Common read-only Cisco IOS-style commands include:
 - `show mac address-table` for learned MAC locations;
 - `show arp` for IPv4 neighbor mappings;
 - `show ip route` for known IPv4 routes;
-- `show running-config` only when authorized, because output can expose sensitive configuration.
+- `show cdp neighbors` for directly discovered Cisco neighbors, with visibility depending on CDP and platform configuration;
+- `show version`, `show inventory` and supported `show switch` output for software, hardware identity and stack membership;
+- `show running-config` (`show run`) only when authorized, because output can expose sensitive configuration.
+
+**VERIFY CURRENT:** Commands and output vary by device family, image, role and privilege. Use command help (`?`) and completion in the chosen lab image; a missing command or denied privilege is not proof that a device feature is broken. The objective PDF names these command families; no live Cisco CLI execution is claimed here.
 
 Interpret evidence together. “Administratively down” differs from a physical down state. Increasing CRC/input errors suggests a different path than a valid link with no route. A learned MAC on the wrong port may indicate topology/documentation or cabling issues.
 
@@ -219,11 +231,21 @@ Do not reboot or replace components before collecting volatile evidence unless s
 - `ipconfig`, `ip`, `ifconfig`, and route tools reveal local configuration.
 - `nslookup`/`dig` tests DNS independently of the application.
 - `netstat`/`ss` shows listeners and connections.
-- Wireshark captures frames for authorized interfaces. Apply a narrow capture/display filter, reproduce once, record time, and protect credentials/content.
+- Wireshark captures frames visible at the selected interface and observation point. Use the distinct capture/display filters described below, reproduce once, record time, and protect credentials/content.
 
 A three-way TCP handshake is SYN → SYN/ACK → ACK. Repeated SYNs without SYN/ACK point toward path, policy, service, or return-path trouble; a reset is different evidence. DNS query with no response differs from a valid “name does not exist” response.
 
-Tickets should record asset/user, time zone, impact/scope, symptoms, expected versus actual state, topology/context, sanitized outputs, tests, changes/approvals, result, next owner, and closure validation. A concise timeline is more useful than “network fixed.”
+Tickets should record asset/user, time zone, impact/scope, symptoms, expected versus actual state, topology/context, sanitized outputs, tests, changes/approvals, result, next owner, and closure validation. A concise timeline is more useful than “network fixed.” Prioritize by business impact, affected users and urgency; preserve an escalation owner and next update time.
+
+### Capture evidence without confusing filters
+
+A [capture filter](https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html) decides what is collected, using libpcap syntax. In an authorized lab with client `192.0.2.10`, `host 192.0.2.10 and port 53` selects conventional DNS TCP/UDP traffic for that address. It excludes unrelated traffic, ARP and encrypted DNS on other ports; a missing packet may be outside the filter or observation point.
+
+A [display filter](https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html), such as `ip.addr == 192.0.2.10 and dns`, changes the visible subset of an existing capture. Clearing it can reveal collected packets, but cannot recover packets excluded at capture time. For SYN-bearing packets, use `tcp.flags.syn == 1`; the field's mere presence is not a test that its bit is set. Verify the selected export subset instead of assuming a display filter sanitizes the saved file.
+
+Stop the capture, save the required `.pcap` format when supported by the chosen link type, reopen it and check timestamps, packet count and a known exchange. Retain the original and a separately sanitized sharing copy. Wireshark's default file format and menu labels can vary; verify the file type rather than renaming an extension.
+
+[Checksum offloading](https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html) can make locally captured outgoing packets appear to have incomplete or invalid checksums before the NIC finishes them. Compare capture location, protocol preferences and receiving-side evidence before declaring corruption or changing offload settings. A checksum detects some accidental damage; it does not authenticate a sender. The local byte exercise below creates complete synthetic checksums and does not reproduce offloading.
 
 ---
 
@@ -231,9 +253,9 @@ Tickets should record asset/user, time zone, impact/scope, symptoms, expected ve
 
 Confidentiality limits disclosure, integrity protects correctness, and availability keeps authorized services usable. Authentication establishes identity; authorization controls allowed action; accounting/auditing records activity. Least privilege, unique identities, multifactor authentication, secure defaults, updates, backups, segmentation, and logging reduce risk in different ways.
 
-Firewalls filter by properties such as addresses, protocols, ports, direction, zone, application, and connection state. “Allow HTTPS” means permitting TCP 443 under a policy; it does not validate the site's legitimacy or content. Default-deny boundaries require explicit justified access.
+Firewalls filter by properties such as addresses, protocols, ports, direction, zone, application, and connection state. A rule permitting TCP 443 allows that protocol/port under its other conditions; it does not cover every HTTPS transport or validate the site's legitimacy and content. Check source, destination, direction, protocol, port and return-state behavior, then test both intended and denied access. Default-deny boundaries require explicit justified access.
 
-Prefer WPA3 where supported or WPA2 with AES when compatibility requires it; avoid deprecated WEP and weak shared secrets. Change vendor-default administrator credentials, use a long unique passphrase, update firmware, separate guest/untrusted devices, disable unnecessary remote administration and insecure convenience features, and document recovery access. Enterprise wireless may use individual identities and centralized AAA instead of one shared key.
+Prefer WPA3 where supported or WPA2 with AES when compatibility requires it; avoid deprecated WEP and weak shared secrets. Change vendor-default administrator credentials, use a long unique passphrase, update firmware, separate guest/untrusted devices, disable unnecessary remote administration and insecure convenience features, and document recovery access. Enterprise wireless may use individual identities and centralized AAA instead of one shared key. Explain Personal versus Enterprise by credential ownership and authentication infrastructure, not by signal strength. Encryption protects data under its key and endpoint assumptions. Certificate validation checks the expected identity and trust chain; do not train users to bypass warnings. An identity store such as Active Directory holds identity information and supports access processes; authentication still differs from authorization.
 
 Social engineering, phishing, malware, password attacks, unpatched vulnerabilities, misconfiguration, rogue access, eavesdropping, and denial of service can affect a network. A support technician should preserve evidence, follow incident procedures, and escalate—not investigate beyond authorization or upload captures/configurations to unapproved services.
 
@@ -257,77 +279,422 @@ Confirm its address, mask, gateway, VLAN, DHCP reservation/static plan, and loca
 
 ## Hands-on evidence labs
 
-Use only equipment, simulations, accounts, and traffic you own or are authorized to inspect.
+**PRACTICAL DEPTH:** These eight Packet Tracer/device/OS/Wireshark labs are proposed, not executed in this review. Use an isolated topology and authorized traffic. Keep a before/after worksheet, expected failure, observations and restoration evidence for each lab. Do not change a working household or business network to manufacture faults.
 
-1. **Packet journey:** In Packet Tracer or a home lab, draw an endpoint-switch-router-server path. Label source/destination MAC and IP at each routed link and explain every change.
-2. **Subnet proof:** Create `/24` through `/28` examples. For ten random addresses, calculate mask, network, broadcast, usable range, and local/remote decision; verify with a calculator only afterward.
-3. **Dual-stack inventory:** Record sanitized IPv4/IPv6 addresses, prefixes, gateways, DNS servers, and interface state on Windows or Linux. Explain every field without changing it.
-4. **Service ladder:** Test gateway IP, remote IP, DNS name, and HTTPS. Save timestamped results showing how each test narrows the failure domain.
-5. **Packet capture:** Capture your own DNS lookup and HTTPS TCP handshake. Identify Ethernet, IP, UDP/TCP, DNS, SYN/SYN-ACK/ACK, and encrypted application payload boundaries.
-6. **Switch evidence:** In Packet Tracer or authorized IOS equipment, generate traffic and correlate interface state, counters, MAC table, ARP table, and route output with the diagram.
-7. **Wi-Fi hardening review:** On a router you control, inventory firmware, administrator access, security mode, passphrase policy, guest isolation, remote management, and backup/recovery. Plan before changing and preserve rollback.
-8. **Trouble ticket:** Introduce one safe fault in a disposable topology. Have another learner diagnose it using the eight-step method, then grade the evidence, communication, rollback, validation, and documentation—not just the fix.
+1. **Packet journey.** Build client–switch–router–server networks in a simulator. Predict both directions before sending traffic. Record IP and MAC addresses before/after the router, TTL/hop limit and the ARP/ND next hop. Remove only a disposable return route: show why an outbound packet alone does not prove success. Restore the route and retain the diagram plus comparison.
+2. **Subnet proof.** Calculate mask, network, broadcast and host range for `/24` through `/28`; include `10.20.30.141/27`. Verify ten cases using a calculator or the local workbook. Introduce `/24` versus `/25` masks in a disposable pair and predict the asymmetric local/remote decisions. Treat `/31` point-to-point and `/32` host routes separately. Restore both masks and explain each discrepancy.
+3. **Dual-stack inventory.** Collect sanitized address, prefix, route, DNS and interface state on an available Windows/Linux/macOS endpoint; separately inspect Android/iOS Wi-Fi settings where available. Label unavailable platforms as untested. Compare an authorized isolated static configuration with DHCP, including DNS and gateway; capture before/after and restore the original method. Explain why IPv6 link-local presence alone does not prove routed access.
+4. **Service ladder.** In the disposable network, compare local IP, gateway, remote IP, explicit DNS query and the actual application. Break only the lab resolver setting and record DNS failure alongside working IP access; restore it. Separately block ICMP in the lab while allowing the application to show why failed ping alone is inconclusive. Restore the rule and keep timestamps and return-path evidence.
+5. **Capture and reopen.** Capture a lab DNS query and a deliberately selected TCP HTTPS connection. Record interface, capture filter and time, then identify nested Ethernet/IP/UDP or TCP fields. Separately observe HTTP/3 if supported and label it UDP/QUIC; absence is not a failed TCP handshake. Compare a DNS negative response with no response. Stop, save, reopen and verify `.pcap` evidence; show what clearing a display filter reveals. Keep credentials and real user traffic out of the exercise.
+6. **Switch evidence.** Use an available simulated IOS image or authorized equipment. Save interface state/counters, MAC/ARP tables, route, neighbor, software and inventory evidence. Explain command availability and privilege errors. Move one lab endpoint to the wrong VLAN, compare evidence, then restore it. Do not reset counters before preserving the baseline; no missing CDP neighbor alone proves a failed cable.
+7. **Wi-Fi security and recovery.** On a disposable AP/router, inventory firmware, administrator access, Personal/Enterprise mode, guest isolation, remote management and recovery access. Test one authorized compatible client and one wrong-credential attempt; verify intended guest restrictions separately from Internet access. Preserve a configuration backup and recovery method before changes, then restore the agreed baseline. A MAC filter is not a replacement for secure authentication.
+8. **Trouble ticket.** Have a learner introduce one documented fault in an isolated topology: mask, VLAN, gateway, DNS or a service rule. Another learner records impact/priority, expected state, evidence, hypothesis, safe test, result and escalation threshold. Compare with the hidden fault, restore it and obtain closure verification. Grade the explanation and retained evidence as well as the fix.
+
+### Executed local packet and subnet workbook
+
+Save this original Python program and run it with Python 3. It needs only the standard library. The exact public code was executed during this review and passed **40 checks**, including subnet boundaries, longest-prefix selection, an asymmetric mask pair, byte-encoded ARP, routed frame addresses, TTL and checksums, truncated/corrupted data, and DNS negative response versus no observation. Output includes subnet `10.20.30.128/27`, 30 ordinary hosts, ARP target `192.0.2.1`, remote IP `203.0.113.53`, TTL `64 → 63`, and a 75-byte synthetic frame without Ethernet FCS.
+
+The [IPv4 header specification](https://www.rfc-editor.org/rfc/rfc791.html), [ARP format](https://www.rfc-editor.org/rfc/rfc826.html), [UDP checksum definition](https://www.rfc-editor.org/rfc/rfc768.html) and [DNS header fields](https://www.rfc-editor.org/rfc/rfc1035.html) provide the field semantics. This code is a small teaching implementation: untagged Ethernet, IPv4 without options or fragmentation, UDP and a fixed DNS question. It is not a general packet parser, DNS resolver, router or capture tool. The negative DNS fixture has no SOA or validated denial and is not a DNSSEC/cache implementation. `None` means no response was observed by the fixture, not proof of a live timeout.
+
+No sockets, network traffic, interface capture, device configuration, service changes or file writes occur. The program builds and inspects bytes in memory; it does not create a `.pcap`, execute Wireshark filters, authenticate endpoints, measure performance, test wireless, or generate ICMP for expired TTL. IPv4 permits an omitted UDP checksum, which the parser reports as absent; do not extend that rule to ordinary IPv6 UDP. All 40 checks include structural as well as behavioral assertions and do not establish production robustness.
+
+```python
+"""Synthetic bytes only: no sockets, captures, device commands, or file writes."""
+import ipaddress as ip
+import json
+import struct
+
+checks = 0
+
+
+def check(condition):
+    global checks
+    assert condition
+    checks += 1
+
+
+def rejects(function, *args):
+    try:
+        function(*args)
+    except ValueError:
+        check(True)
+    else:
+        raise AssertionError('Expected rejection')
+
+
+def checksum(data):
+    padded = data + (b'\x00' if len(data) % 2 else b'')
+    total = sum(struct.unpack('!' + 'H' * (len(padded) // 2), padded))
+    while total >> 16:
+        total = (total & 0xffff) + (total >> 16)
+    return (~total) & 0xffff
+
+
+def ipv4(payload, source, destination, ttl=64):
+    header = struct.pack('!BBHHHBBH4s4s', 0x45, 0, 20 + len(payload),
+                         7, 0x4000, ttl, 17, 0, source, destination)
+    return header[:10] + struct.pack('!H', checksum(header)) + header[12:] + payload
+
+
+def parse_ipv4(packet):
+    # Deliberately limited to this unfragmented, option-free UDP exercise.
+    if len(packet) < 20 or packet[0] != 0x45:
+        raise ValueError('Unsupported or truncated IPv4 header')
+    length, = struct.unpack('!H', packet[2:4])
+    flags, = struct.unpack('!H', packet[6:8])
+    if flags & 0xbfff or packet[9] != 17:
+        raise ValueError('Unsupported flags, fragmentation, or protocol')
+    if length < 28 or length > len(packet) or checksum(packet[:20]):
+        raise ValueError('Length or IPv4 header checksum failed')
+    return dict(ttl=packet[8], source=packet[12:16], destination=packet[16:20],
+                udp=packet[20:length], packet=packet[:length])
+
+
+def udp(payload, source, destination):
+    length = 8 + len(payload)
+    header = struct.pack('!HHHH', 53000, 53, length, 0)
+    pseudo = source + destination + struct.pack('!BBH', 0, 17, length)
+    value = checksum(pseudo + header + payload) or 0xffff
+    return header[:6] + struct.pack('!H', value) + payload
+
+
+def parse_udp(fields):
+    data = fields['udp']
+    if len(data) < 8:
+        raise ValueError('Short UDP header')
+    source_port, destination_port, length, value = struct.unpack('!HHHH', data[:8])
+    pseudo = fields['source'] + fields['destination'] + struct.pack('!BBH', 0, 17, length)
+    if length != len(data) or length < 8 or (value and checksum(pseudo + data)):
+        raise ValueError('UDP length or checksum failed')
+    return source_port, destination_port, data[8:], bool(value)
+
+
+def ethernet(payload, source_mac, destination_mac, kind=0x0800):
+    frame = destination_mac + source_mac + struct.pack('!H', kind) + payload
+    return frame.ljust(60, b'\x00')  # Minimum frame bytes excluding Ethernet FCS.
+
+
+def forward(frame, router_mac, next_mac):
+    if len(frame) < 14 or frame[12:14] != b'\x08\x00':
+        raise ValueError('Expected untagged Ethernet IPv4')
+    fields = parse_ipv4(frame[14:])
+    if fields['ttl'] <= 1:
+        return None  # Teaching boundary: no actual ICMP reply is generated.
+    packet = ipv4(fields['udp'], fields['source'], fields['destination'], fields['ttl'] - 1)
+    return ethernet(packet, router_mac, next_mac)
+
+
+def next_hop(destination, routes):
+    target = ip.ip_address(destination)
+    matches = [(ip.ip_network(prefix), hop) for prefix, hop in routes
+               if target in ip.ip_network(prefix)]
+    return max(matches, key=lambda item: item[0].prefixlen)[1] if matches else None
+
+
+def dns_result(message):
+    if message is None:
+        return 'no response observed'
+    if len(message) < 12:
+        raise ValueError('Short DNS header')
+    flags, = struct.unpack('!H', message[2:4])
+    if not flags & 0x8000:
+        return 'query'
+    return {0: 'NOERROR', 2: 'SERVFAIL', 3: 'NXDOMAIN', 5: 'REFUSED'}.get(flags & 15, 'other')
+
+
+net = ip.ip_interface('10.20.30.141/27').network
+check(str(net.network_address) == '10.20.30.128')
+check(str(net.broadcast_address) == '10.20.30.159')
+check(str(net.netmask) == '255.255.255.224')
+check((str(next(net.hosts())), str(list(net.hosts())[-1]), len(list(net.hosts())))
+      == ('10.20.30.129', '10.20.30.158', 30))
+check(ip.ip_address('10.20.30.150') in net)
+check(ip.ip_address('10.20.30.160') not in net)
+check(len(list(ip.ip_network('192.0.2.0/31').hosts())) == 2)
+check(len(list(ip.ip_network('192.0.2.4/32').hosts())) == 1)
+a, b = ip.ip_interface('10.1.1.10/24'), ip.ip_interface('10.1.1.150/25')
+check(b.ip in a.network and a.ip not in b.network)
+routes = [('0.0.0.0/0', 'default'), ('203.0.113.0/24', 'specific'),
+          ('203.0.113.53/32', 'host-route')]
+check(next_hop('203.0.113.53', routes) == 'host-route')
+check(next_hop('203.0.113.54', routes) == 'specific')
+check(next_hop('198.51.100.7', routes) == 'default')
+check(next_hop('198.51.100.7', routes[1:]) is None)
+
+source, destination = ip.ip_address('192.0.2.10').packed, ip.ip_address('203.0.113.53').packed
+gateway = ip.ip_address('192.0.2.1').packed
+client_mac = bytes.fromhex('020000000010')
+gateway_mac = bytes.fromhex('020000000001')
+router_mac = bytes.fromhex('020000000002')
+next_mac = bytes.fromhex('020000000003')
+arp = struct.pack('!HHBBH6s4s6s4s', 1, 0x0800, 6, 4, 1,
+                  client_mac, source, bytes(6), gateway)
+arp_frame = ethernet(arp, client_mac, bytes.fromhex('ffffffffffff'), 0x0806)
+check(len(arp_frame) == 60 and arp_frame[:6] == bytes.fromhex('ffffffffffff'))
+check(arp_frame[12:14] == b'\x08\x06')
+arp_fields = struct.unpack('!HHBBH6s4s6s4s', arp_frame[14:42])
+check(arp_fields[:5] == (1, 0x0800, 6, 4, 1))
+check(arp_fields[-1] == gateway and arp_fields[-1] != destination)
+check(arp_fields[5:7] == (client_mac, source))
+
+question = b'\x07missing\x07example\x00' + struct.pack('!HH', 1, 1)
+query = struct.pack('!6H', 1234, 0x0100, 1, 0, 0, 0) + question
+datagram = udp(query, source, destination)
+packet = ipv4(datagram, source, destination)
+frame = ethernet(packet, client_mac, gateway_mac)
+fields = parse_ipv4(frame[14:])
+check(frame[:6] == gateway_mac and fields['destination'] == destination)
+check(checksum(packet[:20]) == 0)
+ports = parse_udp(fields)
+check(ports[:2] == (53000, 53))
+check(ports[2] == query and ports[3])
+check(dns_result(query) == 'query')
+outgoing = forward(frame, router_mac, next_mac)
+after = parse_ipv4(outgoing[14:])
+check(outgoing[:12] == next_mac + router_mac)
+check(after['source'] == source and after['destination'] == destination)
+check(after['ttl'] == 63 and fields['ttl'] == 64)
+check(checksum(outgoing[14:34]) == 0 and outgoing[24:26] != frame[24:26])
+check(after['udp'] == fields['udp'] and parse_udp(after) == ports)
+check(forward(ethernet(ipv4(datagram, source, destination, 1), client_mac, gateway_mac),
+              router_mac, next_mac) is None)
+rejects(parse_ipv4, packet[:19])
+rejects(parse_ipv4, packet[:-1])
+corrupt_header = bytearray(packet)
+corrupt_header[8] ^= 1
+rejects(parse_ipv4, bytes(corrupt_header))
+corrupt_payload = packet[:-1] + bytes([packet[-1] ^ 1])
+check(checksum(corrupt_payload[:20]) == 0)  # IPv4 header checksum excludes payload.
+rejects(parse_udp, parse_ipv4(corrupt_payload))
+without_checksum = datagram[:6] + b'\x00\x00' + datagram[8:]
+check(parse_udp(parse_ipv4(ipv4(without_checksum, source, destination)))[3] is False)
+negative = struct.pack('!6H', 1234, 0x8583, 1, 0, 0, 0) + question
+check(dns_result(negative) == 'NXDOMAIN')
+check(dns_result(None) == 'no response observed')
+rejects(dns_result, negative[:11])
+check(ip.ip_address('fe80::1').is_link_local)
+check(ip.ip_address('ff02::1').is_multicast)
+print(json.dumps(dict(subnet=str(net), ordinary_hosts=30, arp_target=str(ip.ip_address(gateway)),
+                      remote_destination=str(ip.ip_address(destination)), ttl_before=64, ttl_after=63,
+                      dns_negative=dns_result(negative), frame_bytes=len(frame))))
+print(f'{checks} local checks passed')
+```
 
 ## Readiness checks
 
-Answer in your own words and produce evidence where requested.
+These are 48 original study prompts with answer guidance, not recalled exam items. Explain the mechanism before checking the answer; complete the proposed evidence tasks separately.
 
-1. How does bandwidth differ from throughput, goodput, latency, jitter, and loss?
-2. Trace encapsulation from an HTTPS application to transmitted bits.
-3. What does a switch learn from the source MAC, and how does it handle an unknown destination?
-4. When does a host use its default gateway?
-5. Compare LAN, WLAN, PAN, CAN, MAN, and WAN using one real example each.
-6. Compare on-premises, cloud, and hybrid responsibility without saying cloud removes customer responsibility.
-7. When would an application favor TCP, and when might it favor UDP?
-8. Match DNS, DHCP, HTTP(S), SSH, Telnet, NTP, SNMP, and file-transfer protocols to purpose and common port.
-9. Convert `/25`, `/26`, `/27`, and `/28` to masks.
-10. For `10.20.30.141/27`, determine network, broadcast, and ordinary usable range.
-11. List all RFC 1918 ranges and explain why private does not mean secure.
-12. What evidence does a `169.254.x.x` address provide, and what does it not prove?
-13. Expand and classify `fe80::21a:2bff:fe3c:4d5e`.
-14. Why can an IPv6 host have link-local and global addresses simultaneously?
-15. Distinguish ARP, Neighbor Discovery, DHCP, DNS, and NAT.
-16. Select copper, multimode fiber, single-mode fiber, or Wi-Fi for four justified scenarios.
-17. Why are connector shape, transceiver type, wavelength, polarity, and cleanliness separate checks?
-18. What can an interface LED suggest, and why must you consult model documentation?
-19. Gather address, route, DNS, and active-connection evidence on your operating system.
-20. Explain a hub, switch, router, access point, firewall, modem/ONT, and multifunction home gateway.
-21. What happens to MAC and IP addressing as a packet crosses a router?
-22. Why are VLAN and IP subnet related but not identical concepts?
-23. Interpret `up/up`, physical down, and administratively down as different starting points.
-24. Which Cisco `show` outputs would you collect for a suspected local link issue, and why?
-25. Compare console, SSH, Telnet, web, API, and controller access from function and security perspectives.
-26. Apply the eight-step troubleshooting method to “the network is slow.”
-27. How do you distinguish a DNS failure from IP-path failure?
-28. What do repeated SYNs, a reset, and a completed handshake each suggest?
-29. Why might traceroute stop even when the final application works?
-30. Design a narrow authorized Wireshark capture that minimizes sensitive data.
-31. Write a useful ticket timeline for an intermittent wireless incident.
-32. Distinguish authentication, authorization, accounting, confidentiality, integrity, and availability.
-33. Why does permitting TCP 443 not make all resulting traffic trustworthy?
-34. Build a defensible home Wi-Fi baseline with recovery and rollback.
-35. When should an entry-level technician escalate rather than continue testing?
-36. Given an unfamiliar scenario, can you state expected state, evidence, hypothesis, safe test, result, and next action?
+1. **How does bandwidth differ from throughput, goodput, latency, jitter, and loss?**
 
-### Check key
+   **Answer:** Bandwidth is capacity; throughput is measured transfer at a stated layer; goodput is useful delivered application payload. Latency is delay, jitter its variation, and loss the missing fraction. Report endpoints, interval and units.
 
-Strong answers explain mechanism and limits. Calculations show binary/prefix reasoning, not only a calculator result. Diagnostics compare expected with actual state and preserve timestamps. Security answers name authorization, evidence handling, least privilege, rollback, and escalation. If an answer jumps directly from symptom to fix, redo it using the packet-delivery story.
+2. **Trace encapsulation from an HTTPS application to transmitted bits.**
+
+   **Answer:** Application data is carried in transport, IP and link framing, then signals. Traditional HTTPS uses TLS over TCP; HTTP/3 uses secured QUIC over UDP. Identify the actual transport before looking for a TCP handshake.
+
+3. **What does a switch learn from the source MAC, and how does it handle an unknown destination?**
+
+   **Answer:** It learns the source MAC on the ingress port in that VLAN. Unknown unicast is flooded to eligible ports in that VLAN except the ingress; this is not routing across VLANs.
+
+4. **When does a host use its default gateway?**
+
+   **Answer:** It selects a route for the destination. An on-link destination uses local neighbor resolution; a remote destination commonly uses the default gateway unless a more specific route applies.
+
+5. **Compare LAN, WLAN, PAN, CAN, MAN, and WAN using one real example each.**
+
+   **Answer:** LAN: an office floor; WLAN: its wireless LAN; PAN: nearby personal devices; CAN: a campus; MAN: a metropolitan service; WAN: linked distant sites. Geography and access medium are different dimensions.
+
+6. **Compare on-premises, cloud, and hybrid responsibility without saying cloud removes customer responsibility.**
+
+   **Answer:** On-premises retains facilities/equipment duties; IaaS/PaaS/SaaS shift different layers to the provider. Customers retain relevant identity, data and configuration duties. Hybrid connectivity adds dependencies rather than removing responsibility.
+
+7. **When would an application favor TCP, and when might it favor UDP?**
+
+   **Answer:** TCP suits ordered byte delivery and recovery; UDP suits applications choosing their own timing/recovery. QUIC is an example of higher-layer reliability over UDP; neither choice guarantees application success.
+
+8. **Match DNS, DHCP, HTTP(S), SSH, Telnet, NTP, SNMP, and file-transfer protocols to purpose and common port.**
+
+   **Answer:** DNS53 UDP/TCP, DHCPv4 UDP67/68, HTTP TCP80, common HTTPS TCP443 or QUIC UDP443, SSH22/Telnet23 TCP, NTP123 UDP, SNMP161/162 UDP. FTP uses control21 and mode-dependent data; SFTP uses SSH22; TFTP starts at UDP69. ICMP has no transport port.
+
+9. **Convert `/25`, `/26`, `/27`, and `/28` to masks.**
+
+   **Answer:** They are 255.255.255.128, 255.255.255.192, 255.255.255.224 and 255.255.255.240 respectively; show the contiguous leading one bits.
+
+10. **For `10.20.30.141/27`, determine network, broadcast, and ordinary usable range.**
+
+   **Answer:** The /27 block size is32. Network10.20.30.128, broadcast10.20.30.159, ordinary hosts10.20.30.129–158, count30.
+
+11. **List all RFC 1918 ranges and explain why private does not mean secure.**
+
+   **Answer:** 10/8, 172.16/12 and 192.168/16 are private. Routing scope is not authentication, encryption or a firewall policy; private traffic can still be exposed or malicious.
+
+12. **What evidence does a `169.254.x.x` address provide, and what does it not prove?**
+
+   **Answer:** It can show IPv4 link-local fallback. Inspect the configured method, lease, VLAN and interface; it does not identify the fault or prove every interface lacks service.
+
+13. **Expand and classify `fe80::21a:2bff:fe3c:4d5e`.**
+
+   **Answer:** fe80:0000:0000:0000:021a:2bff:fe3c:4d5e is link-local. It serves the local link and requires interface context when ambiguous.
+
+14. **Why can an IPv6 host have link-local and global addresses simultaneously?**
+
+   **Answer:** Addresses serve different scopes and lifetimes. Link-local supports local discovery; a global address can support routed traffic when routes and policy permit. Neither alone proves end-to-end access.
+
+15. **Distinguish ARP, Neighbor Discovery, DHCP, DNS, and NAT.**
+
+   **Answer:** ARP resolves an IPv4 local next hop to link addressing; IPv6 ND includes neighbor/router discovery; DHCP supplies configuration; DNS supplies naming records; NAT translates addressing and sometimes ports.
+
+16. **Select copper, multimode fiber, single-mode fiber, or Wi-Fi for four justified scenarios.**
+
+   **Answer:** For example, supported short desk runs use copper, compatible short optical runs may use multimode, longer optical paths may use single-mode, and mobile clients use Wi-Fi. Verify distance, interface/optics, power, environment and supported performance.
+
+17. **Why are connector shape, transceiver type, wavelength, polarity, and cleanliness separate checks?**
+
+   **Answer:** Mechanical fit does not prove optical/electrical compatibility. A matched connector with the wrong optics, crossed polarity or dirty fiber can still fail.
+
+18. **What can an interface LED suggest, and why must you consult model documentation?**
+
+   **Answer:** A light can indicate link/activity/speed/power/fault states depending on model and mode. Compare the model legend with interface output and peer evidence before assigning a cause.
+
+19. **Gather address, route, DNS, and active-connection evidence on your operating system.**
+
+   **Answer:** Use the platform table to collect actual sanitized outputs with timestamps; identify address method, prefix, default route, resolver and socket state. A written sample answer cannot substitute for this lab evidence.
+
+20. **Explain a hub, switch, router, access point, firewall, modem/ONT, and multifunction home gateway.**
+
+   **Answer:** A hub repeats; a switch forwards within Layer2; a router routes between networks; an AP bridges wireless; a firewall enforces policy; modem/ONT terminates provider signaling; a home gateway combines several roles.
+
+21. **What happens to MAC and IP addressing as a packet crosses a router?**
+
+   **Answer:** The routed link receives a new frame with new link addresses. IP source/destination normally persist without NAT, TTL/hop limit decreases, and IPv4 header checksum changes. Verify the return path too.
+
+22. **Why are VLAN and IP subnet related but not identical concepts?**
+
+   **Answer:** VLAN is a Layer2 forwarding boundary; subnet is an IP prefix boundary. A design often pairs them, but the host mask cannot repair a wrong switch VLAN.
+
+23. **Interpret `up/up`, physical down, and administratively down as different starting points.**
+
+   **Answer:** On relevant IOS-style output, up/up indicates interface/protocol operational state; physical down prompts link/peer/cabling checks; administratively down indicates disabled configuration. None alone proves application health.
+
+24. **Which Cisco `show` outputs would you collect for a suspected local link issue, and why?**
+
+   **Answer:** Collect interface status/details and counter changes with time, plus MAC location and the diagram. Add brief address state, ARP, route, CDP and inventory when they narrow the hypothesis; preserve sensitive configuration appropriately.
+
+25. **Compare console, SSH, Telnet, web, API, and controller access from function and security perspectives.**
+
+   **Answer:** Console is local management; SSH encrypts remote access; Telnet does not; web/API/controller access depends on authentication and transport controls. RDP is a remote desktop and a VPN is a protected path, not a blanket permission grant.
+
+26. **Apply the eight-step troubleshooting method to “the network is slow.”**
+
+   **Answer:** Define who/what/when, prioritize impact, preserve baseline, compare wired/wireless and local/remote behavior, form a narrow hypothesis, run a safe test, restore/validate and document or escalate. Do not prescribe a reboot from the symptom alone.
+
+27. **How do you distinguish a DNS failure from IP-path failure?**
+
+   **Answer:** Query the intended resolver and compare IP access to the required application. NXDOMAIN is a response, while no observed response can reflect path/filter/capture loss; neither justifies changing DNS blindly.
+
+28. **What do repeated SYNs, a reset, and a completed handshake each suggest?**
+
+   **Answer:** Repeated SYNs lack a visible successful response; a reset actively rejects or terminates; a completed handshake proves that TCP exchange at that moment. None alone proves application, authentication or payload success.
+
+29. **Why might traceroute stop even when the final application works?**
+
+   **Answer:** Intermediate devices may filter or rate-limit diagnostic replies; paths may differ by direction or protocol. Test the actual application and avoid treating the last responding hop as the proven fault.
+
+30. **Design a narrow authorized Wireshark capture that minimizes sensitive data.**
+
+   **Answer:** Choose an authorized interface, narrow capture filter, short interval and synthetic action; stop and verify saved contents. Display filtering only changes what is shown, and encrypted DNS/QUIC can require different protocol expectations.
+
+31. **Write a useful ticket timeline for an intermittent wireless incident.**
+
+   **Answer:** Record time zone, room/client count, SSID/band, symptoms and business impact, measurements, wired comparison, changes, outcomes, owner and next update. Remove personal data while preserving the diagnostic timeline.
+
+32. **Distinguish authentication, authorization, accounting, confidentiality, integrity, and availability.**
+
+   **Answer:** Authentication establishes identity; authorization grants actions; accounting records them. Confidentiality limits disclosure, integrity guards against unauthorized alteration, and availability supports timely authorized use.
+
+33. **Why does permitting TCP 443 not make all resulting traffic trustworthy?**
+
+   **Answer:** The rule permits a transport/port under policy conditions. Malicious content can use allowed encrypted connections, and HTTP/3 may use UDP. Certificate validation and endpoint/application controls solve additional problems.
+
+34. **Build a defensible home Wi-Fi baseline with recovery and rollback.**
+
+   **Answer:** Choose compatible WPA3 or WPA2-AES, unique admin credentials and passphrase, current supported firmware, necessary administration only, guest separation and tested recovery. Keep a backup and a restoration path before changing the lab router.
+
+35. **When should an entry-level technician escalate rather than continue testing?**
+
+   **Answer:** Escalate when privilege, ownership, safety, incident handling or scope exceeds the role, or evidence requires another team. Supply observations, attempted tests and impact rather than guessing at a disruptive fix.
+
+36. **Given an unfamiliar scenario, can you state expected state, evidence, hypothesis, safe test, result, and next action?**
+
+   **Answer:** State the expected packet path and measurable outcome, cite observations, choose one falsifiable hypothesis and bounded test, interpret its result, then restore, document and assign the next action. Mark untested assumptions explicitly.
+
+37. **Does every IPv4 subnet lose two usable addresses?**
+
+   **Answer:** No. Ordinary LAN arithmetic has exceptions: supported /31 point-to-point links use two hosts; /32 denotes a single address.
+
+38. **How can mismatched masks break only one direction?**
+
+   **Answer:** Each host classifies destinations using its own prefix. A /24 host may ARP locally for a peer that, with /25, tries to route the response.
+
+39. **For remote IPv4 traffic, which IP does a host ARP for?**
+
+   **Answer:** The selected on-link next hop, commonly its gateway, rather than the remote destination. The original remote IP remains in the IP packet absent translation.
+
+40. **What wins between a default route and a matching /32?**
+
+   **Answer:** The /32 is more specific. Route preference and metric distinguish eligible alternatives after the prefix-selection question; a valid forward route alone does not establish return connectivity.
+
+41. **Why can damaged payload pass the IPv4 header checksum?**
+
+   **Answer:** That checksum covers the header only. The exercise leaves the header intact while altering payload and demonstrates UDP checksum rejection.
+
+42. **Does a zero UDP checksum have the same meaning for IPv4 and IPv6?**
+
+   **Answer:** For IPv4 it can indicate an omitted checksum; ordinary IPv6 UDP requires one. The local parser is IPv4-only and reports checksum absence rather than integrity proof.
+
+43. **What does clearing a display filter recover?**
+
+   **Answer:** It reveals previously collected hidden packets. It cannot recover packets excluded by a capture filter, lost before capture, or outside the observation point.
+
+44. **Is tcp.flags.syn equivalent to tcp.flags.syn == 1?**
+
+   **Answer:** No. The field can be present when the bit is zero; compare its value to identify SYN-bearing packets.
+
+45. **Why can a local outgoing capture show a bad checksum?**
+
+   **Answer:** The NIC may complete an offloaded checksum after the capture point. Compare receiving-side evidence and settings before asserting wire corruption.
+
+46. **What establishes an IPv6 default router?**
+
+   **Answer:** Router Advertisements normally supply discovery information. Address assignment, neighbor reachability and default routing are separate checks.
+
+47. **Can a MAC allowlist replace wireless identity verification?**
+
+   **Answer:** No. A device can change or impersonate its MAC. Use the required wireless authentication, encryption and access policies.
+
+48. **Does every CCST certification last a lifetime?**
+
+   **Answer:** No. Awards before July15,2025 remain non-expiring; awards on or after that date are valid five years under the checked policy. CCST renewal does not use Continuing Education credits.
 
 ---
 
 ## Places to learn
 
-This is not a complete list, and it is not meant to be consumed in full. Pick the explanation, lab environment, book, or assessment that works for you; keep Cisco's live topics as the scope authority. Durations are page values where published and otherwise transparent reading/practice estimates, not promises.
+This is **not a complete list**. Choose resources for your current gaps; the official objectives remain the scope authority. Public listings were compared on September 29, 2026. All ranges marked “editorial” are planning budgets, not provider durations or completion guarantees. No paid lessons, book interiors, provider labs or proprietary practice questions were accessed.
 
-| Resource | Access | Estimated time | Best use and freshness boundary |
-|---|---|---:|---|
-| [Cisco exam page and exam topics](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html) | Public | 30–60 min | Establish current identity, logistics, and scope before and after study |
-| [Cisco Network Technician Career Path](https://www.netacad.com/career-paths/network-technician?courseLang=en-US) | Free account | About 70 h | Primary first-party path; four-course breakdown is 22 h + 22 h + 14 h + 12 h |
-| [Cisco course objectives and outline](https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html) | Public | 20–40 min | Build a checklist against Cisco's exam-aligned training outcomes |
-| [Cisco Packet Tracer introduction](https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html) | Free account | About 2 h plus labs | Learn the simulator, then repeat this guide's labs; availability/account terms vary |
-| [Cisco Press Official Cert Guide on O'Reilly](https://www.oreilly.com/library/view/cisco-certified-support/9780138213459/) | Paid | About 17 h 44 min reading estimate plus practice | Detailed 2023 approved guide, Pearson Test Prep and video mentoring; check its update program against live topics |
-| [Sybex CCST Networking Study Guide on O'Reilly](https://www.oreilly.com/library/view/ccst-cisco-certified/9781394205806/) | Paid | About 12 h 25 min reading estimate plus practice | Alternative structured explanation and test-bank access; verify current objectives |
-| [CCST Networking Certification Prep Course](https://www.udemy.com/course/cisco-ccst-100-150-certification-lab-training-2024/) | Paid | 5 h 14 min video plus 4–8 h labs/review | Current 2026 lecture/lab option; catalog details and quality can change |
-| This guide's eight labs and 36 checks | Public | 12–20 h | Convert recognition into explainable, reproducible evidence |
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Cisco exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html) and [full objective PDF](https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf) | Public; primary scope and logistics | 30–60 min editorial review; no published domain weights |
+| [Network Technician Career Path](https://www.netacad.com/career-paths/network-technician?courseLang=en-US) | Free self-paced account; first-party preparation | About70 h per Cisco FAQ; current path page exposed only a shell, so the earlier 22+22+14+12 breakdown was not reverified |
+| [NetAcad public catalog / Packet Tracer introduction](https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html) | Public catalog; learning/download may require account | Networking Basics22 h and Getting Started With Cisco Packet Tracer2 h listed; add your own practice |
+| [Cisco course outline](https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html) and [training PDF](https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf) | Public;25 training objectives/13 outline parts; PDF copyright2024 | 20–40 min editorial mapping; course outline is distinct from exam objectives |
+| [Russ White's Official Cert Guide, Cisco Press](https://www.ciscopress.com/store/ccst-networking-official-cert-guide-9780138213428) | Paid; public listing Dec2,2023,608 pages, first edition; original-blueprint coverage/update program | No total study duration verified; listing advertises more than5 h mentoring, not the total book workload |
+| [Networking Essentials Lab Manual v3](https://www.ciscopress.com/store/networking-essentials-lab-manual-v3-cisco-certified-9780138293727) | Paid; Cisco Networking Academy, Oct21,2023, second edition224 pages;45 labs advertised | No completion duration published in reviewed metadata; verify required topology/tools before buying |
+| [MeasureUp CCST Networking practice test](https://www.measureup.com/ccst-networking-practice-test.html) | Paid; public catalog150 questions, June2023 release, practice/certification modes | 3–6 h editorial diagnostic/review budget; vendor question distribution is not official exam weighting |
+| [Official Cert Guide on O'Reilly](https://www.oreilly.com/library/view/cisco-certified-support/9780138213459/) and [Sybex alternative](https://www.oreilly.com/library/view/ccst-cisco-certified/9781394205806/) | Paid; both current automated fetches403 | Earlier17 h44 /12 h25 reading estimates could not be reverified; confirm editions and access directly |
+| [Udemy CCST Networking lab course](https://www.udemy.com/course/cisco-ccst-100-150-certification-lab-training-2024/) | Paid; current automated fetch403 | Earlier5 h14 and2026 update claims could not be reverified; check current outline, demonstrations and reviews |
+| This guide's original workbook, eight proposed labs and48 answered checks | Public; workbook executed40 checks; live/simulator labs pending | 12–20 h editorial practice budget, adjusted to evidence gaps |
 
-Practice questions are useful only when they explain reasoning and reveal gaps. Avoid recalled/live exam items, “actual questions,” answer-only banks, and guarantees. Cisco U./NetAcad assessments and the companion Pearson/Sybex practice included with legitimately purchased books are preferable starting points; compare every disputed explanation with first-party training or product documentation.
+The MeasureUp listing's150-item bank allocates30/18/24/30/30/18 questions across domains; this is the provider's practice distribution, **not a Cisco blueprint weighting**. Its pass guarantees and readiness claims were not independently validated. The Cisco Press and lab-manual listings provide publication and scope metadata, not evidence that their paid contents or every current objective were reviewed here. Verify current editions, access and fit before purchase.
+
+Use legitimate practice to explain errors and produce lab evidence. Avoid recalled/live exam items, answer-only banks and guaranteed-pass claims. Reconcile disputed explanations with the official objectives and current first-party documentation.

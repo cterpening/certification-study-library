@@ -2651,6 +2651,29 @@ This is **not a complete list**. Map selected resources to the current PDF and f
 
 No exam-specific Pluralsight, O’Reilly, Coursera or MeasureUp listing was verified in this review’s targeted discovery. This is a research limit, not proof of absence. Use current public outlines to judge relevance, and keep provider estimates separate from your own lab budget.
 
+### 100-150 — Cisco Certified Support Technician Networking
+
+Resource details from the [100-150 guide](../guides/100-150-cisco-certified-support-technician-networking.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**. Choose resources for your current gaps; the official objectives remain the scope authority. Public listings were compared on September 29, 2026. All ranges marked “editorial” are planning budgets, not provider durations or completion guarantees. No paid lessons, book interiors, provider labs or proprietary practice questions were accessed.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Cisco exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html) and [full objective PDF](https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf) | Public; primary scope and logistics | 30–60 min editorial review; no published domain weights |
+| [Network Technician Career Path](https://www.netacad.com/career-paths/network-technician?courseLang=en-US) | Free self-paced account; first-party preparation | About70 h per Cisco FAQ; current path page exposed only a shell, so the earlier 22+22+14+12 breakdown was not reverified |
+| [NetAcad public catalog / Packet Tracer introduction](https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html) | Public catalog; learning/download may require account | Networking Basics22 h and Getting Started With Cisco Packet Tracer2 h listed; add your own practice |
+| [Cisco course outline](https://www.cisco.com/site/us/en/learn/training-certifications/training/courses/ccst-networking.html) and [training PDF](https://www.cisco.com/c/dam/en_us/training-events/training/courses/ccst-networking.pdf) | Public;25 training objectives/13 outline parts; PDF copyright2024 | 20–40 min editorial mapping; course outline is distinct from exam objectives |
+| [Russ White's Official Cert Guide, Cisco Press](https://www.ciscopress.com/store/ccst-networking-official-cert-guide-9780138213428) | Paid; public listing Dec2,2023,608 pages, first edition; original-blueprint coverage/update program | No total study duration verified; listing advertises more than5 h mentoring, not the total book workload |
+| [Networking Essentials Lab Manual v3](https://www.ciscopress.com/store/networking-essentials-lab-manual-v3-cisco-certified-9780138293727) | Paid; Cisco Networking Academy, Oct21,2023, second edition224 pages;45 labs advertised | No completion duration published in reviewed metadata; verify required topology/tools before buying |
+| [MeasureUp CCST Networking practice test](https://www.measureup.com/ccst-networking-practice-test.html) | Paid; public catalog150 questions, June2023 release, practice/certification modes | 3–6 h editorial diagnostic/review budget; vendor question distribution is not official exam weighting |
+| [Official Cert Guide on O'Reilly](https://www.oreilly.com/library/view/cisco-certified-support/9780138213459/) and [Sybex alternative](https://www.oreilly.com/library/view/ccst-cisco-certified/9781394205806/) | Paid; both current automated fetches403 | Earlier17 h44 /12 h25 reading estimates could not be reverified; confirm editions and access directly |
+| [Udemy CCST Networking lab course](https://www.udemy.com/course/cisco-ccst-100-150-certification-lab-training-2024/) | Paid; current automated fetch403 | Earlier5 h14 and2026 update claims could not be reverified; check current outline, demonstrations and reviews |
+| This guide's original workbook, eight proposed labs and48 answered checks | Public; workbook executed40 checks; live/simulator labs pending | 12–20 h editorial practice budget, adjusted to evidence gaps |
+
+The MeasureUp listing's150-item bank allocates30/18/24/30/30/18 questions across domains; this is the provider's practice distribution, **not a Cisco blueprint weighting**. Its pass guarantees and readiness claims were not independently validated. The Cisco Press and lab-manual listings provide publication and scope metadata, not evidence that their paid contents or every current objective were reviewed here. Verify current editions, access and fit before purchase.
+
+Use legitimate practice to explain errors and produce lab evidence. Avoid recalled/live exam items, answer-only banks and guaranteed-pass claims. Reconcile disputed explanations with the official objectives and current first-party documentation.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

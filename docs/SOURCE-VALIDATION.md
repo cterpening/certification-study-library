@@ -1498,6 +1498,8 @@ The review maps the complete beta guide and tool list through goal/responsibilit
 
 ## 100-150 coverage record
 
+The September 29 [deep review](research/2026-09-29-100-150-deep-review.md) maps 25 detailed objectives. Actual three-page primary objective PDF fully read:25numberedobjectives plus supportingbullets mapped across6domains. Corrected dated CCSTfiveyear/lifetime renewal distinction, added40executedbinarypacket/subnetchecks,48answeredchecks and8proposedhands-onlabs. Objective unchanged;missinglifecyclebaseline explicitlyinitialized andpostcheckunchanged. Live/simulator/device labs and independenthumanreview remainpending. Current guide citations: 26 registered, 23 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: active CCST Networking exam, six public topic groups and the complete first-party exam-aligned course objective list; Cisco's checked public interface does not expose stable domain weights, so the guide does not invent them

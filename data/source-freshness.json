@@ -4,6 +4,289 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-100150-deep-review",
+      "title": "100-150 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "100-150"
+      ],
+      "results": [
+        {
+          "exam_code": "100-150",
+          "vendor_id": "cisco",
+          "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+          "baseline_sha256": "f7167e63f97bc5880554d602aad6f38d3db93463bacce1675ad65a73c91eaa75",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fullactual3pageobjectivePDF read:25numbered5/3/4/5/5/3 allsupportingbullets;no weights/dateinvented. Canonical50min125USD7languages;objective06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194unchanged. Missinglife84e1a2f0130c85d7ef86641d9ecb774c70b90c1391fbfddbed3ec2b2b628693bexplicitlyinitializedpostunchanged. SeparatepolicyfiveyearawardsONORAFTERJuly15,2025/previousexpirynever;noCE. Training4pagePDFdistinct."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "TargetedRFC IPv4/ARP/UDP/DNS/HTTP3/IPv6ND/31plusWiresharkcapture/display/checksumdocs reviewed withper-sourcelimits.40actualbinary/subnetchecks;additionalCLI/media/cloud/identitygapsfromPDFaddressedwithoutliveexecutionclaim."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Currentdedicatedexam/recertificationpolicies reviewed for effectiveJuly15,2025 change. FAQundatedlifetimeanswersconflictwithdatedanswersandpolicy;guidecorrected. No future100-150examchangeannouncedoncheckedcanonicalpages;not globalproofeverychannel unchanged. No unrelatedblogadopted."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "FAQ70h vsPDFtarget150hdistinguished;pathshell,NetAcad22h/2h. CiscoPress2023book608pages/5h+video andlabmanual224pages/45labs. MeasureUp150June2023/allocationnotexamweights. OReilly2+Udemy403estimatesunverified. Publicmetadataonly,notpaidefficacy."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Resolvedlifetimepolicy/FAQ,trainingvsblueprint,throughputgoodput/measurement,HTTPSUDP,FTPmodes,/31,asymmetricmasks/returnpath,IPv6RA,vendorCLI/privileges/MACfilterlimits,capturevsdisplay/synflag/offload.48individualanswers8proposedlabs;Placeslearnlastwithdurationsourceboundaries."
+            }
+          },
+          "findings": [
+            {
+              "id": "100150-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Lifetime CCST is conditional on award date",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/policies.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Dedicatedpolicy states awards on or afterJuly15,2025 validfiveyears;earlierawardsnonexpiring.",
+              "recommendation": "Replaceunqualifiedlifetimeclaim andretainexactinclusiveboundary.",
+              "disposition": "applied",
+              "source_id": "cisco-exam-policies",
+              "resolution": "Replaceunqualifiedlifetimeclaim andretainexactinclusiveboundary."
+            },
+            {
+              "id": "100150-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "General Continuing Education guidance excludes CCST",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/recertification/index.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "EntrysectionlistsqualifyingexamsandexplicitlyexcludesCE.",
+              "recommendation": "CiteCCST-specificrenewal,activeperiod andowncertificationrecord.",
+              "disposition": "applied",
+              "source_id": "cisco-recertification",
+              "resolution": "CiteCCST-specificrenewal,activeperiod andowncertificationrecord."
+            },
+            {
+              "id": "100150-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Training overview is not the detailed exam blueprint",
+              "url": "https://learningcontent.cisco.com/documents/CCST+Networking+Objective+Domain_Cisco_Final_wCiscoLogo.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ActualthreepagePDFhas25numberedobjectives/supportingbullets;targetcandidate150hinstructionandpractice;noweights.",
+              "recommendation": "Mapall25plusdetails,distinguish70hpath/150htargetandfillCLI/media/accessgaps.",
+              "disposition": "applied",
+              "source_id": "cisco-ccst-networking-objectives-pdf",
+              "resolution": "Mapall25plusdetails,distinguish70hpath/150htargetandfillCLI/media/accessgaps."
+            },
+            {
+              "id": "100150-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "TCP443 is not every HTTPS transport",
+              "url": "https://www.rfc-editor.org/rfc/rfc9114.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "HTTP3usesQUICoverUDP;blockedUDPcanfailorfallback;alternativeUDPportsallowed.",
+              "recommendation": "Teachactualtransport/portandseparateapplication/certificatevalidationfromfirewallallow.",
+              "disposition": "applied",
+              "source_id": "rfc-9114",
+              "resolution": "Teachactualtransport/portandseparateapplication/certificatevalidationfromfirewallallow."
+            },
+            {
+              "id": "100150-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Subtracting two addresses is not universal",
+              "url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Supportedpoint-to-point/31usesbothaddressesashosts.",
+              "recommendation": "BoundordinaryLANformula;executed/31,/32andmaskasymmetryexamples.",
+              "disposition": "applied",
+              "source_id": "rfc3021",
+              "resolution": "BoundordinaryLANformula;executed/31,/32andmaskasymmetryexamples."
+            },
+            {
+              "id": "100150-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "An assigned IPv6 address does not prove a default router",
+              "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "RouterAdvertisementsconveyrouter/prefixinformation;neighborresolutionandaddressconfigurationareseparate.",
+              "recommendation": "AddRA/route/neighborchecksandavoidlinklocalpresenceasasuccessproof.",
+              "disposition": "applied",
+              "source_id": "rfc4861",
+              "resolution": "AddRA/route/neighborchecksandavoidlinklocalpresenceasasuccessproof."
+            },
+            {
+              "id": "100150-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Capture exclusion cannot be undone by display filtering",
+              "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChCapCaptureFilterSection.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Captureuseslibpcapfilteringbeforecollection.",
+              "recommendation": "Teachdistinctsyntax/capturepoint/evidenceandexplicitreopensavedfilelab.",
+              "disposition": "applied",
+              "source_id": "wireshark-capture-filters",
+              "resolution": "Teachdistinctsyntax/capturepoint/evidenceandexplicitreopensavedfilelab."
+            },
+            {
+              "id": "100150-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A Boolean field can exist when its value is false",
+              "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChWorkBuildDisplayFilterSection.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "tcp.flags.synpresenceisnotSYNbitset.",
+              "recommendation": "Useexplicitvaluecomparisonandverifyexportsratherthanassumesanitization.",
+              "disposition": "applied",
+              "source_id": "wireshark-display-filters",
+              "resolution": "Useexplicitvaluecomparisonandverifyexportsratherthanassumesanitization."
+            },
+            {
+              "id": "100150-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A local outgoing bad checksum can precede hardware completion",
+              "url": "https://www.wireshark.org/docs/wsug_html_chunked/ChAdvChecksums.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Offloadingcancompletechecksumsaftercapture;partialchecksumsareversion-aware.",
+              "recommendation": "Comparecapturepoint/receiver/settingsevidencebeforedeclaringcorruption;nooffloadsettingschanged.",
+              "disposition": "applied",
+              "source_id": "wireshark-checksums",
+              "resolution": "Comparecapturepoint/receiver/settingsevidencebeforedeclaringcorruption;nooffloadsettingschanged."
+            },
+            {
+              "id": "100150-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "IPv4 header integrity does not cover payload",
+              "url": "https://www.rfc-editor.org/rfc/rfc791.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "HeaderchecksumcoversexactheaderandchangeswithTTL.",
+              "recommendation": "ExecuteheaderandpayloadcorruptioncontrastsandTTLdrop/newframechecks,withboundedparserlimits.",
+              "disposition": "applied",
+              "source_id": "rfc-791",
+              "resolution": "ExecuteheaderandpayloadcorruptioncontrastsandTTLdrop/newframechecks,withboundedparserlimits."
+            },
+            {
+              "id": "100150-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Remote IP and local next-hop MAC serve different scopes",
+              "url": "https://www.rfc-editor.org/rfc/rfc826.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Addressresolutionusesrouting-selectedlocalnext-hopprotocoladdress.",
+              "recommendation": "EncodeARPforgatewayandEthernetdestinationwhilekeepingremoteIPacrosssyntheticroute.",
+              "disposition": "applied",
+              "source_id": "rfc-826",
+              "resolution": "EncodeARPforgatewayandEthernetdestinationwhilekeepingremoteIPacrosssyntheticroute."
+            },
+            {
+              "id": "100150-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A DNS negative response differs from no observed response",
+              "url": "https://www.rfc-editor.org/rfc/rfc1035.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "HeaderQR/RCODEdistinguishquery/responseandNameError.",
+              "recommendation": "Executeoriginalnegativeheaderfixtureandexplicitno-observationcasewithoutclaimingliveresolver/DNSSECvalidation.",
+              "disposition": "applied",
+              "source_id": "rfc-1035",
+              "resolution": "Executeoriginalnegativeheaderfixtureandexplicitno-observationcasewithoutclaimingliveresolver/DNSSECvalidation."
+            }
+          ],
+          "notes": "Actual three-page primary objective PDF fully read:25numberedobjectives plus supportingbullets mapped across6domains. Corrected dated CCSTfiveyear/lifetime renewal distinction, added40executedbinarypacket/subnetchecks,48answeredchecks and8proposedhands-onlabs. Objective unchanged;missinglifecyclebaseline explicitlyinitialized andpostcheckunchanged. Live/simulator/device labs and independenthumanreview remainpending. Same-context AI review; human review pending. See docs/research/2026-09-29-100-150-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 12,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-googleprofessionalagenticarchitect-deep-review",
       "title": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT complete guide and learning-content review",
       "rubric_version": 1,
