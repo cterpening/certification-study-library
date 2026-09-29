@@ -3,6 +3,160 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "nvidia-ncp-aio-study-guide",
+      "title": "NVIDIA NCP-AIO certification study guide",
+      "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Actual7pagePDF alltext read andPDFpages2/3/7 visually inspected. Body19numberedtopics with28/20/32/20 vsweb31topics31/23/23/23;contentsvisibleextra Cognition Planning andMemory10% hasno bodysection andmakes110%. FleetCommand/cloudVMI andscoring/reportdetails conflict/extendcanonical. FEB26footer nottreatedaseffective date. Alllinkedreadinginteriors notread. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-bcm11-admin-manual",
+      "title": "NVIDIA Base Command Manager 11 administrator manual",
+      "url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Actual1094pagePDF downloaded,September23 2026PDFmetadata. SelectedTOC andprinted28–31concepts,294closedstate/updateintro,302–303imageupdate/considerations/newnodeintro read. CategoryBooleanOR,rolepriorities,closednotdrained,dryrun/excludes/provisionerfreshness. Not complete manual,installation orversion-support audit; no cmsh execution. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-bcm11-release-notes",
+      "title": "NVIDIA Base Command Manager 11 release notes",
+      "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Complete brief release-navigation index read. Actual11.34.0 page separately registered; no inference from index alone. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-run-ai-self-hosted",
+      "title": "NVIDIA Run:ai self-hosted documentation",
+      "url": "https://docs.nvidia.com/run-ai/self-hosted/index.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Complete main index cards read. Installation,resource,policy andscheduler routes identified; not full installation orAPI documentation. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "slurm-job-exit-codes",
+      "title": "Slurm job and step exit codes",
+      "url": "https://slurm.schedmd.com/job_exit_code.html",
+      "publisher": "SchedMD",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Complete main job/step/signal/accounting/derived result andannotation examples read. Batchscriptzero canmaskfailedstep; derivedresult mutable. No accounting database,realjobs orsjobexitmod changes. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "slurm-gres",
+      "title": "Slurm generic resource scheduling",
+      "url": "https://slurm.schedmd.com/gres.html",
+      "publisher": "SchedMD",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: SelectedOverview/Configuration/RunningJobs andAutoDetect throughmismatch omission;Accounting section andMIGManagement plusinitialSharding distinction read. Not allbinding/MPS/shardingexamples. Version26.05;NVMLversusnvidia discovery,MIG no dynamicpartitioning/no gpumem/gpuutil andtypedstepconsistency. No GPU stress orSlurm commands. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "kubernetes-deployments",
+      "title": "Kubernetes Deployments",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "publisher": "Kubernetes contributors",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Selected selector/strategy/Recreate/RollingUpdate,rounding,progressdeadline,minReadySeconds,terminatingpods andrevisionhistory sections read. Not full49kpage. Localrender andoriginalbudget only; no admission,controller,scheduler,API orrollout execution. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "kubernetes-schedule-gpus",
+      "title": "Kubernetes scheduling GPUs",
+      "url": "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/",
+      "publisher": "Kubernetes contributors",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Complete main device-plugin,request/limit andheterogeneousGPU/NFDsections read. No vendorplugininstallation,node labels orPod creation. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "kubernetes-resource-quotas",
+      "title": "Kubernetes resource quotas",
+      "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Selected intro/admission/namespace constraints,compute andextendedGPUquota sections read throughrequests.nvidia.com/gpu example;remainingDRA/storage/scopes notfullyread. Resourcequotaisnotphysicalreservation;noadmission execution. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-bcm11-34-release",
+      "title": "NVIDIA Base Command Manager 11.34.0 release notes",
+      "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: SelectedSeptember11 2026release General,CMDaemon,NodeInstaller,ClusterTools,COD andcm-kubernetes-setupthroughgatewayfailure handling read. Not remainingrelease sections. Slurmprolog/DCGMlink,imageclone,K8sdrain/runtimeownership changesusedasacceptance examples;no upgrades. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "nvidia-run-ai-scheduler-concepts",
+      "title": "NVIDIA Run:ai self-hosted scheduling concepts",
+      "url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+      "publisher": "NVIDIA",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 NCP-AIO deep review: Main self-hostedv2.26concepts read throughquota/rank/fairshare/preemption/gang/placement andDRA,nextsteps. UI/API terminology/versionboundaries explicit;not complete platform oractualscheduler. NoRun:aiAPI,accounts orpaidaccess. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "nvidia-aiio-storage-scaling",
       "title": "NVIDIA tips on scaling storage for AI training and inferencing",
       "url": "https://developer.nvidia.com/blog/tips-on-scaling-storage-for-ai-training-and-inferencing/",
@@ -138,10 +292,11 @@
       "access_model": "public",
       "supported_exams": [
         "NCA-GENL",
-        "NCA-AIIO"
+        "NCA-AIIO",
+        "NCP-AIO"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 NCA-GENL deep review: Complete FAQ process,booking/cancellation/security/results/retake/renewal/accommodation/integrity blocks read; portfolio context also inspected. Pass/fail no score;14days/max5in12months;2yrretake;remote no breaks. No booking/contact/browser installation or individual eligibility assessment. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution. September 29 NCA-AIIO deep review: Complete FAQ from process through integrity/appeal boundaries read from fresh capture, including booking/cancel/remote/results/retake/renewal/accommodations. Pass/fail without score;14daywait/max5in12months;2yrretake. No exam booking, secure-browser installation or individual eligibility decision. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+      "notes": "September 29 NCA-GENL deep review: Complete FAQ process,booking/cancellation/security/results/retake/renewal/accommodation/integrity blocks read; portfolio context also inspected. Pass/fail no score;14days/max5in12months;2yrretake;remote no breaks. No booking/contact/browser installation or individual eligibility assessment. See docs/research/2026-09-29-nca-genl-deep-review.md No live infrastructure execution. September 29 NCA-AIIO deep review: Complete FAQ from process through integrity/appeal boundaries read from fresh capture, including booking/cancel/remote/results/retake/renewal/accommodations. Pass/fail without score;14daywait/max5in12months;2yrretake. No exam booking, secure-browser installation or individual eligibility decision. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution. September 29 NCP-AIO deep review: Complete FAQ read in same-sessionNCA-AIIOreview,freshcapture here. Pass/failwithoutscore,14dayretake/max5attempts12months,2yrrenewal/remoteprocedures. PDFperformance-report/sectionweight details unconfirmed bycanonical;no booking/contact. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nvidia-open-deep-learning",
@@ -7147,10 +7302,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "EX280"
+        "EX280",
+        "NCP-AIO"
       ],
-      "last_checked": "2026-09-28",
-      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution."
+      "last_checked": "2026-09-29",
+      "notes": "September 28 EX280 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ex280-deep-review.md No live infrastructure execution. September 29 NCP-AIO deep review: Introduction/overview,initialgenerator description,composing example andbases/overlays introduction/example start read. Not full21kguide. Actual localkubectl1.35.9/Kustomize5.7.1 render oforiginalfixedlocalJSON resources; no apply,remote bases,plugins orAPI calls. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
       "id": "kubernetes-network-policies",
@@ -48776,7 +48932,7 @@
         "NCA-AIIO",
         "NCP-AIO"
       ],
-      "notes": "Official seven-hour mapped self-paced course; enrollment access and price can vary. It is a prerequisite refresher, not sufficient alone for NCP-AIO hands-on readiness. September 29 NCA-AIIO deep review: Public course endpoint HTTP200 with unpopulated course template and Academy navigation. The seven-hour claim is verified on canonical exam and DGX path, not this course body. No paid lessons, checkout, account or enrollment. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+      "notes": "Official seven-hour mapped self-paced course; enrollment access and price can vary. It is a prerequisite refresher, not sufficient alone for NCP-AIO hands-on readiness. September 29 NCA-AIIO deep review: Public course endpoint HTTP200 with unpopulated course template and Academy navigation. The seven-hour claim is verified on canonical exam and DGX path, not this course body. No paid lessons, checkout, account or enrollment. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution. September 29 NCP-AIO deep review: Fresh HTTP200 course shell without populated course fields. Same-session NCA-AIIO review read template/navigation; canonical and DGX path verify7h separately. No course interior/account/checkout. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nvidia-dgx-learning-path",
@@ -48788,9 +48944,10 @@
       "access_model": "public",
       "last_checked": "2026-09-29",
       "supported_exams": [
-        "NCA-AIIO"
+        "NCA-AIIO",
+        "NCP-AIO"
       ],
-      "notes": "First-party mixed-access catalog across seven-hour fundamentals, DGX administration, Base Command Manager and professional progression; NVIDIA says paths, courses and links can change. September 29 NCA-AIIO deep review: Complete main course-card grid and path-change note read. Fundamentals listed USD50/7h; AIIO exam card USD135 conflicts with canonical USD125. Selected other routes considered for progression only; no purchase or lesson access. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+      "notes": "First-party mixed-access catalog across seven-hour fundamentals, DGX administration, Base Command Manager and professional progression; NVIDIA says paths, courses and links can change. September 29 NCA-AIIO deep review: Complete main course-card grid and path-change note read. Fundamentals listed USD50/7h; AIIO exam card USD135 conflicts with canonical USD125. Selected other routes considered for progression only; no purchase or lesson access. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution. September 29 NCP-AIO deep review: Complete main card grid read in same-sessionNCA-AIIOreview,freshcapture selectedprofessional course/examcards rechecked here. Course3000USD24h,exam400USD1.5h vscanonical500USD2h. Publicmetadataonly; no checkout orlessonaccess. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nvidia-dgx-documentation",
@@ -48819,7 +48976,7 @@
         "NCA-AIIO",
         "NCP-AIO"
       ],
-      "notes": "Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax, privilege and support are version-sensitive. September 29 NCA-AIIO deep review: Complete short documentation landing page read. Learn/reference/exporter/diagnostics routes inspected; no GPU tools or services executed. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+      "notes": "Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax, privilege and support are version-sensitive. September 29 NCA-AIIO deep review: Complete short documentation landing page read. Learn/reference/exporter/diagnostics routes inspected; no GPU tools or services executed. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution. September 29 NCP-AIO deep review: Complete brief landing page read in same-session NCA-AIIO review and freshly fetched here. Navigation only; no diagnostics orGPU/service execution. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
       "id": "nvidia-gpu-operator-documentation",
@@ -48864,28 +49021,116 @@
       "notes": "Popular June 2026 approximately seven-hour course with broad blueprint/tool coverage; verify version-specific claims against NVIDIA and add hands-on evidence. September 29 NCA-AIIO deep review: HTTP403. Earlier June2026/about7h and popularity/quality claims unverified and removed from current recommendation prose. No paid questions or lessons. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-ncp-aio-certification","title":"NVIDIA-Certified Professional: AI Operations","url":"https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/","publisher":"NVIDIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Canonical 31/23/23/23 blueprint and 30-question plus three-integrated-lab, 120-minute, USD 500, two-year professional credential contract."
+      "id": "nvidia-ncp-aio-certification",
+      "title": "NVIDIA-Certified Professional: AI Operations",
+      "url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Canonical 31/23/23/23 blueprint and 30-question plus three-integrated-lab, 120-minute, USD 500, two-year professional credential contract. September 29 NCP-AIO deep review: Complete main delivery/prerequisite/training and31objective bullets read. Canonical31/23/23/23,30questions plus3hands-on exercises in120minutes,USD500,English,pass/fail,2years. Both objective/lifecycle snapshots unchanged. Linked PDF conflicts and is not merged into canonical scope. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-ai-operations-professional-training","title":"AI Operations — Professional Training Outline","url":"https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf","publisher":"NVIDIA Academy","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Public outline for the recommended paid hands-on workshop. It states four five-hour remote sessions; a separate learning-path card showed 24 hours and USD 3,000, so verify the scheduled offering."
+      "id": "nvidia-ai-operations-professional-training",
+      "title": "AI Operations — Professional Training Outline",
+      "url": "https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf",
+      "publisher": "NVIDIA Academy",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Public outline for the recommended paid hands-on workshop. It states four five-hour remote sessions; a separate learning-path card showed 24 hours and USD 3,000, so verify the scheduled offering. September 29 NCP-AIO deep review: Old PDF URL now redirects to generic NVIDIA Academy HTML. Complete main generic landing content read. Earlier4x5h outline not reverified; no paid workshop or actual lab. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-base-command-manager-documentation","title":"NVIDIA Base Command Manager Documentation","url":"https://docs.nvidia.com/base-command-manager/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Versioned BCM 10/11 administration, installation, user, containerization, cloudbursting and release documentation; use the exact exam-lab/product version when provided."
+      "id": "nvidia-base-command-manager-documentation",
+      "title": "NVIDIA Base Command Manager Documentation",
+      "url": "https://docs.nvidia.com/base-command-manager/",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Versioned BCM 10/11 administration, installation, user, containerization, cloudbursting and release documentation; use the exact exam-lab/product version when provided. September 29 NCP-AIO deep review: Complete main portal includingv11/v10manuals,MissionControl,release andtraining/support paths read. Not all linked manuals; select exact deployed version. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"slurm-documentation","title":"Slurm Documentation","url":"https://slurm.schedmd.com/documentation.html","publisher":"SchedMD","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Canonical Slurm administrator, user, configuration and command references; semantics depend on release and site configuration/plugins."
+      "id": "slurm-documentation",
+      "title": "Slurm Documentation",
+      "url": "https://slurm.schedmd.com/documentation.html",
+      "publisher": "SchedMD",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Canonical Slurm administrator, user, configuration and command references; semantics depend on release and site configuration/plugins. September 29 NCP-AIO deep review: Complete main index read; explicitly26.05. Detailed GRES andexit pages separately registered; no Slurm installation,CLI service query orjob submission. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"kubernetes-resource-management","title":"Kubernetes Resource Management","url":"https://kubernetes.io/docs/concepts/resource-management/","publisher":"Kubernetes","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Canonical resource, device-plugin, workload and scheduling foundation; combine with the supported GPU Operator/Kubernetes matrix for the lab."
+      "id": "kubernetes-resource-management",
+      "title": "Kubernetes Resource Management",
+      "url": "https://kubernetes.io/docs/concepts/resource-management/",
+      "publisher": "Kubernetes",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Canonical resource, device-plugin, workload and scheduling foundation; combine with the supported GPU Operator/Kubernetes matrix for the lab. September 29 NCP-AIO deep review: Complete776character resource-management landing main read,June28 2026reorganization note. Index isnot detailed resource-limit coverage; GPU,Deployment,quota andKustomize pages separately registered. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-run-ai-documentation","title":"NVIDIA Run:ai Documentation","url":"https://docs.nvidia.com/run-ai/index.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Current hub for install/monitor, organizations/resources, workloads and APIs; distinguish always-current SaaS from versioned self-hosted deployments."
+      "id": "nvidia-run-ai-documentation",
+      "title": "NVIDIA Run:ai Documentation",
+      "url": "https://docs.nvidia.com/run-ai/index.html",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Current hub for install/monitor, organizations/resources, workloads and APIs; distinguish always-current SaaS from versioned self-hosted deployments. September 29 NCP-AIO deep review: Complete763character SaaS/self-hosted split read. Not product operation; self-hosted detail registered separately. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-container-toolkit-troubleshooting","title":"NVIDIA Container Toolkit Troubleshooting","url":"https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Current Docker/runtime/CDI troubleshooting and evidence collection; exact fixes and restart impact are version and platform sensitive."
+      "id": "nvidia-container-toolkit-troubleshooting",
+      "title": "NVIDIA Container Toolkit Troubleshooting",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Current Docker/runtime/CDI troubleshooting and evidence collection; exact fixes and restart impact are version and platform sensitive. September 29 NCP-AIO deep review: Complete main troubleshooting sections read throughadditional-device-GID examples. Debug/core,repository signatures,SELinux,legacy hook/cgroup device loss,CDI andcosmetic group-name warnings. No package deletion,driver/runtime/security-policy change orreproduction. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"nvidia-triton-inference-server-documentation","title":"NVIDIA Triton Inference Server Documentation","url":"https://docs.nvidia.com/deeplearning/triton-inference-server/index.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Current pinned-container, model repository, readiness, client, performance and debugging hub; monthly releases require exact version control."
+      "id": "nvidia-triton-inference-server-documentation",
+      "title": "NVIDIA Triton Inference Server Documentation",
+      "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/index.html",
+      "publisher": "NVIDIA",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "NCP-AIO"
+      ],
+      "notes": "Current pinned-container, model repository, readiness, client, performance and debugging hub; monthly releases require exact version control. September 29 NCP-AIO deep review: Complete main portal descriptions read. LastupdatedAug28 2026but embeddedrelease prose refers24.02/2.43.0 andearlier; latest/archive links distinguished. No actual model repository,readiness endpoint,container orbenchmark. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
       "id":"salesforce-platform-admin-certification","title":"Salesforce Certified Platform Administrator","url":"https://trailhead.salesforce.com/credentials/platformadministrator","publisher":"Salesforce","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Current credential identity and official preparation entry point."

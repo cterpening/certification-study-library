@@ -9191,23 +9191,62 @@
       "notes": "Mapped all 22 unchanged objectives and the six-page study guide. Added 34 executed local telemetry and capacity checks, 40 answered prompts and eight proposed activities. Updated GPU sharing, field units and release-specific operations guidance. One commercial catalog is blocked and two course endpoints do not expose course details; checkout and hardware work remain pending. See docs/research/2026-09-29-nca-aiio-deep-review.md"
     },
     {
-      "id":"ncp-aio-2026-09-02-source-validation",
-      "exam_code":"NCP-AIO",
-      "guide_path":"guides/NCP-AIO-nvidia-ai-operations-professional.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-02",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/ncp-aio-official-objectives.txt",
-      "blueprint_snapshot_sha256":"5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
-      "objective_coverage":[
-        {"objective_group":"Installation and Deployment (31%)","guide_sections":["Section 1","Scenario 1","Labs 1–2 and 8"]},
-        {"objective_group":"Administration (23%)","guide_sections":["Section 2","All scenarios","Labs 3–6 and 8"]},
-        {"objective_group":"Workload Management (23%)","guide_sections":["Section 3","Scenarios 2–3","Labs 3–5 and 8"]},
-        {"objective_group":"Troubleshooting and Optimization (23%)","guide_sections":["Section 4","All scenarios","Labs 7–8"]}
+      "id": "ncp-aio-2026-09-29-source-validation",
+      "exam_code": "NCP-AIO",
+      "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
+      "objective_coverage": [
+        {
+          "objective_group": "Installation and Deployment (31%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Administration (23%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 3–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Workload Management (23%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting and Optimization (23%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":10,"reachable":10,"access_blocked":0,"missing_or_error":0},
-      "notes":"Every public objective is mapped to an operator loop and observable performance evidence across BCM/Mission Control/DOCA installation, users/network/categories/images, Slurm/Kubernetes/Run:ai/MIG administration, NGC training and inference, multi-team allocation, and Docker/Fabric Manager/BCM/Magnum IO/storage troubleshooting. Three scenarios, eight authorized performance labs and 48 checks are included. All ten URLs are reachable. The mixed 30-question plus three-integrated-lab, 120-minute contract and two-to-three-year experience guidance are explicit. No recalled/live item, dump, unsafe production target or copied course content is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 24,
+        "reachable": 24,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 31 unchanged canonical objectives, added 25 executed local rendering and accounting checks, and answered 48 readiness prompts. Updated BCM, Slurm, Run:ai and Kubernetes operational distinctions. The linked exam PDF conflicts with canonical scope and scoring guidance; two course endpoints and conflicting learning-path exam metadata also remain unresolved. Eight infrastructure activities and human review are pending. See docs/research/2026-09-29-ncp-aio-deep-review.md"
     },
     {
       "id":"salesforce-platform-administrator-2026-09-02-source-validation",

@@ -1,0 +1,1698 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "NCP-AIO",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "0125818a0d4c848dbe80d0e84406076202aa15df8a66803e4225eb3137d8c3ef",
+  "guide_after_sha256": "7cc1d9eafc45acd5709054000a5d970123e20dd2591aba9a8c5d24c5662703ae",
+  "prior_records": {
+    "exam": {
+      "code": "NCP-AIO",
+      "level": "expert",
+      "vendor_id": "nvidia",
+      "title": "NVIDIA-Certified Professional: AI Operations",
+      "status": "active",
+      "study_guide_url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+      "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "NVIDIA recommends two to three years operating data-center infrastructure with NVIDIA hardware and requires hands-on Linux CLI fluency on live lab clusters using Base Command Manager, Slurm and Kubernetes. Practice safe provisioning/change, users/network/images, Run:ai and MIG administration, NGC training/inference deployment, resource allocation, and evidence-led Docker/fabric/BCM/Magnum IO/storage troubleshooting."
+    },
+    "review": {
+      "id": "ncp-aio-2026-09-02-source-validation",
+      "exam_code": "NCP-AIO",
+      "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
+      "objective_coverage": [
+        {
+          "objective_group": "Installation and Deployment (31%)",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Administration (23%)",
+          "guide_sections": [
+            "Section 2",
+            "All scenarios",
+            "Labs 3–6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Workload Management (23%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenarios 2–3",
+            "Labs 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Troubleshooting and Optimization (23%)",
+          "guide_sections": [
+            "Section 4",
+            "All scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 10,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "Every public objective is mapped to an operator loop and observable performance evidence across BCM/Mission Control/DOCA installation, users/network/categories/images, Slurm/Kubernetes/Run:ai/MIG administration, NGC training and inference, multi-team allocation, and Docker/Fabric Manager/BCM/Magnum IO/storage troubleshooting. Three scenarios, eight authorized performance labs and 48 checks are included. All ten URLs are reachable. The mixed 30-question plus three-integrated-lab, 120-minute contract and two-to-three-year experience guidance are explicit. No recalled/live item, dump, unsafe production target or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "nvidia-aiio-fundamentals",
+        "title": "AI Infrastructure and Operations Fundamentals",
+        "url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+        "publisher": "NVIDIA Academy",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "NCA-AIIO",
+          "NCP-AIO"
+        ],
+        "notes": "Official seven-hour mapped self-paced course; enrollment access and price can vary. It is a prerequisite refresher, not sufficient alone for NCP-AIO hands-on readiness. September 29 NCA-AIIO deep review: Public course endpoint HTTP200 with unpopulated course template and Academy navigation. The seven-hour claim is verified on canonical exam and DGX path, not this course body. No paid lessons, checkout, account or enrollment. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "nvidia-dcgm-documentation",
+        "title": "NVIDIA DCGM Documentation",
+        "url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "NCA-AIIO",
+          "NCP-AIO"
+        ],
+        "notes": "Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax, privilege and support are version-sensitive. September 29 NCA-AIIO deep review: Complete short documentation landing page read. Learn/reference/exporter/diagnostics routes inspected; no GPU tools or services executed. See docs/research/2026-09-29-nca-aiio-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "nvidia-ncp-aio-certification",
+        "title": "NVIDIA-Certified Professional: AI Operations",
+        "url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Canonical 31/23/23/23 blueprint and 30-question plus three-integrated-lab, 120-minute, USD 500, two-year professional credential contract."
+      },
+      {
+        "id": "nvidia-ai-operations-professional-training",
+        "title": "AI Operations — Professional Training Outline",
+        "url": "https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf",
+        "publisher": "NVIDIA Academy",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Public outline for the recommended paid hands-on workshop. It states four five-hour remote sessions; a separate learning-path card showed 24 hours and USD 3,000, so verify the scheduled offering."
+      },
+      {
+        "id": "nvidia-base-command-manager-documentation",
+        "title": "NVIDIA Base Command Manager Documentation",
+        "url": "https://docs.nvidia.com/base-command-manager/",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Versioned BCM 10/11 administration, installation, user, containerization, cloudbursting and release documentation; use the exact exam-lab/product version when provided."
+      },
+      {
+        "id": "slurm-documentation",
+        "title": "Slurm Documentation",
+        "url": "https://slurm.schedmd.com/documentation.html",
+        "publisher": "SchedMD",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Canonical Slurm administrator, user, configuration and command references; semantics depend on release and site configuration/plugins."
+      },
+      {
+        "id": "kubernetes-resource-management",
+        "title": "Kubernetes Resource Management",
+        "url": "https://kubernetes.io/docs/concepts/resource-management/",
+        "publisher": "Kubernetes",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Canonical resource, device-plugin, workload and scheduling foundation; combine with the supported GPU Operator/Kubernetes matrix for the lab."
+      },
+      {
+        "id": "nvidia-run-ai-documentation",
+        "title": "NVIDIA Run:ai Documentation",
+        "url": "https://docs.nvidia.com/run-ai/index.html",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Current hub for install/monitor, organizations/resources, workloads and APIs; distinguish always-current SaaS from versioned self-hosted deployments."
+      },
+      {
+        "id": "nvidia-container-toolkit-troubleshooting",
+        "title": "NVIDIA Container Toolkit Troubleshooting",
+        "url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Current Docker/runtime/CDI troubleshooting and evidence collection; exact fixes and restart impact are version and platform sensitive."
+      },
+      {
+        "id": "nvidia-triton-inference-server-documentation",
+        "title": "NVIDIA Triton Inference Server Documentation",
+        "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/index.html",
+        "publisher": "NVIDIA",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "NCP-AIO"
+        ],
+        "notes": "Current pinned-container, model repository, readiness, client, performance and debugging hub; monthly releases require exact version control."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "de65008d6f11a012834b3cd4b8bd4f4d0fb8d0a9e2f26fc8d745efea4c5f179a",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "6df1c319b85b2645714c483c47183cf57f8cd6415e7de20d0e74ec6026fc7c33",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "cd11731201a4a2238f1828a6c7914e6afb079a027e1ab51f669c13743685555a",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "4ac94fcbca887b10de8877b3e350ed01ad716f2588e0a946d04a43e7f939c7ba",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "f67f3ecca566a821337547d5338e5561b91405cf596e7f9489e01ccef7522832",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "071391802ea572b2939fecdc25a6b1a73354ec84b3c0b5d220d154172ce17e5b",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "bd59aef731d1a9d885347d2826564ef321291719fd6def9fde3f5ebc521719b1",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "f6c92eda30064982fe53064ee29a1e287750f208915b747e509d0e14918fad8c",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "e8897c924025e95198282fc1b227d0f22f92f143477e69a6b936df34b23be4a3",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "16a25f7147e1356013b510bca9eb06d6c23cf488e16400c61ab327e90d045c83",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "9a37508316b1dfbc6d117d687175f45dcb0438d377a3fa14110bba072817bfa5",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 12,
+      "objective_sha256": "bfeb51e19f5872b3adf57298ac6411abcaa9e1dcebed0be824857deeabb28bab",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 13,
+      "objective_sha256": "9ffc1e712ecfdbc0197726d515b6f8da433d4358dd1c816ded00d02353572bf0",
+      "guide_sections": [
+        "1. Installation and Deployment — 31%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "9c2625bb35140074535150a57d8ae9327b7cbab6e36d0c4d514bfa6fee2be37d",
+      "guide_sections": [
+        "2. Administration — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "8a8efa64d3322b188b18373b0e757e03425b29b5851cf4380a6a8d13ea046b31",
+      "guide_sections": [
+        "2. Administration — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "cd6dabdc4a759f3aaca2a979da3c20100e38788513b22621454ee3084196f652",
+      "guide_sections": [
+        "2. Administration — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "35ce34ad251d53463362464ae247e9953b674eb6e96324cc79eae03fb2195b4f",
+      "guide_sections": [
+        "2. Administration — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "4766ea728c74566e53e912ada65e2b92ff51e4b1cb5bd4a42a67fc640adb04ce",
+      "guide_sections": [
+        "2. Administration — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e104b71171068d182aeb6e88c3ee67ee4bb8499776292e6f760c27267cac6947",
+      "guide_sections": [
+        "3. Workload Management — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "041e41e9d5ef1f48cbba2d59e1e6c92a68f303206627dd79be142dc1d31894bd",
+      "guide_sections": [
+        "3. Workload Management — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "95d20aae7ddc3d48e5f19836031791b98521faeb88f845af753a4f90d68c25d0",
+      "guide_sections": [
+        "3. Workload Management — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "4d9ea565369a5f50af59ec4a329e1cbf3aa60278ffcf304b2920e512d65bdd8f",
+      "guide_sections": [
+        "3. Workload Management — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "c63f2ecfa3ad082ebb4ad94868dba05ce3704be6a9399aa4f57e3803957f6dda",
+      "guide_sections": [
+        "3. Workload Management — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "e4e3bcafd66a725e9199a898a6bf01b6e6a97a7788042712e253bc55cd8a8b47",
+      "guide_sections": [
+        "3. Workload Management — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "5be57f1efb885f16436f6fc1f47338e24c1ebbbb3e95393869a999b64ac3dd6d",
+      "guide_sections": [
+        "3. Workload Management — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "2820b0454f36b676f95cf9b5c79d77870352fde60eff252037a9842744480064",
+      "guide_sections": [
+        "4. Troubleshooting and Optimization — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "448734fcefed55a7a42f792b0ad49554a8c4d3be0adbc558c1e353994b3f8ab8",
+      "guide_sections": [
+        "4. Troubleshooting and Optimization — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "5750c6439e7f6b68ea5811c3ce04d8b3394204204c00508e7d9fdcc5592d7f4f",
+      "guide_sections": [
+        "4. Troubleshooting and Optimization — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "8e2d2d859a2cc1d16e571e84b66b8643179e7aa315639e916dc0c2a773dc993a",
+      "guide_sections": [
+        "4. Troubleshooting and Optimization — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "5f35e292366b89f952ac5f61c5c7b9f6aedb21c6c93f92db085024616b11bf1a",
+      "guide_sections": [
+        "4. Troubleshooting and Optimization — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "53cbe09fae470bc78e43b9d2a8e10f7765f2891acb91421f13c608815a488ae8",
+      "guide_sections": [
+        "4. Troubleshooting and Optimization — 23%",
+        "Hands-on performance labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "NCP-AIO",
+        "title": "NVIDIA-Certified Professional: AI Operations",
+        "url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+        "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+        "snapshot_path": "data\\objective-snapshots\\ncp-aio-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ncp-aio-official-status.json",
+        "previous_sha256": "5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
+        "current_sha256": "5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
+        "previous_status_sha256": "13af9035bf35661236094ee50c3ae163a4eb1afa5ce1a1876e3d6a01f3e9a7ee",
+        "current_status_sha256": "13af9035bf35661236094ee50c3ae163a4eb1afa5ce1a1876e3d6a01f3e9a7ee",
+        "official_status": {
+          "skills_versions": [
+            "NCP-AIO",
+            "Duration: 120 minutes",
+            "Price: $500",
+            "Certification level: Professional",
+            "Subject: AI Operations",
+            "Number of questions: 30",
+            "Hands-on lab: Yes",
+            "Scoring: Pass/Fail",
+            "Prerequisites: Two to three years of operational experience working in a data center with NVIDIA hardware solutions. The candidate should be able to monitor and manage all the parts of a data center infrastructure in support of AI workloads.",
+            "Language: English",
+            "Validity: This certification is valid for two years from issuance. Recertification may be achieved by retaking the exam."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 24,
+    "reachable": 24,
+    "access_blocked": 0,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "nvidia-aiio-fundamentals",
+      "url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+      "checked_at": "2026-09-29T13:53:13.116949+00:00",
+      "health": {
+        "id": "nvidia-aiio-fundamentals",
+        "url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+        "checked_at": "2026-09-29T13:53:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Course DetailNVIDIA HomeMenuMenuCloseCloseCloseCaret down iconCaret down iconCaret up iconCaret right iconCaret right iconCaret right iconCaret left iconCaret left iconCaret left iconShopping CartSearch iconArtificial Intelligence Computing Leadership from NVIDIAArtificial Intelligence Computing Leadership from NVIDIANVIDIANVIDIA",
+        "canonical_url": "https://www.nvidia.com/en-us/training/academy/course-detail/",
+        "duration_signals": [],
+        "signal_fingerprint": "4e4fc25da87328f1fc2992fbf577fa85db82ea7a801b93f4a314218608611a93",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841",
+      "sha256": "e6591be47d17238eb52dfbb31cb71d294c1dcaf21b3a87a4dac5524a649cc6d9",
+      "text_characters": 20723
+    },
+    {
+      "id": "nvidia-dcgm-documentation",
+      "url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+      "checked_at": "2026-09-29T13:53:13.117851+00:00",
+      "health": {
+        "id": "nvidia-dcgm-documentation",
+        "url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+        "checked_at": "2026-09-29T13:53:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+        "content_type": "text/html",
+        "page_title": "NVIDIA DCGM Documentation — NVIDIA DCGM Documentation",
+        "canonical_url": "https://docs.nvidia.com/datacenter/dcgm/contents.html",
+        "duration_signals": [],
+        "signal_fingerprint": "10e65d25ffff52a442a25feb5ffe88e3cf3e461668cea99dffd72c5a38641db1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/dcgm/latest/contents.html",
+      "sha256": "c7096ee6d956ba4ef1eab9e757e08e24dc766bbd933ea15f2379c2e9f250f6f1",
+      "text_characters": 1566
+    },
+    {
+      "id": "nvidia-ncp-aio-certification",
+      "url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+      "checked_at": "2026-09-29T13:53:13.118410+00:00",
+      "health": {
+        "id": "nvidia-ncp-aio-certification",
+        "url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+        "checked_at": "2026-09-29T13:53:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA AI Operations (AIO) Certification for Professionals",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "fe2cc27177d7288a7295d82aefa27737bc9fb3f62a75b1bbe726d8df61d5a789",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/",
+      "sha256": "8a55bec93bf1010beea3678670e859215779ef4caa681df565fb156ed7b291d1",
+      "text_characters": 26324
+    },
+    {
+      "id": "nvidia-ai-operations-professional-training",
+      "url": "https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf",
+      "checked_at": "2026-09-29T13:53:13.628706+00:00",
+      "health": {
+        "id": "nvidia-ai-operations-professional-training",
+        "url": "https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf",
+        "checked_at": "2026-09-29T13:53:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/training/academy/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA AI Infrastructure Training for professionals",
+        "canonical_url": "https://www.nvidia.com/en-us/training/academy/",
+        "duration_signals": [],
+        "signal_fingerprint": "abe95bd03a99122c048235fcc4d03fd13eebde3da36c896edc6526bde67f90bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/training/academy/",
+      "sha256": "bff2f6f1c836f2cdde5fb122031678f581d1654d46cd5d7f225bc581ceaed09d",
+      "text_characters": 24413
+    },
+    {
+      "id": "nvidia-base-command-manager-documentation",
+      "url": "https://docs.nvidia.com/base-command-manager/",
+      "checked_at": "2026-09-29T13:53:14.174719+00:00",
+      "health": {
+        "id": "nvidia-base-command-manager-documentation",
+        "url": "https://docs.nvidia.com/base-command-manager/",
+        "checked_at": "2026-09-29T13:53:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/base-command-manager/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "NVIDIA Base Command Manager",
+        "canonical_url": "https://docs.nvidia.com/base-command-manager/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "34c777784772b2764b2595db750eb96df62ba890a577eb1cb2571f5fffc4f19d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/base-command-manager/",
+      "sha256": "a7f9274e2605e27661fcf9d41c57548bf6826d001d5edcc1f2591cc8a9e022e6",
+      "text_characters": 7658
+    },
+    {
+      "id": "slurm-documentation",
+      "url": "https://slurm.schedmd.com/documentation.html",
+      "checked_at": "2026-09-29T13:53:14.424559+00:00",
+      "health": {
+        "id": "slurm-documentation",
+        "url": "https://slurm.schedmd.com/documentation.html",
+        "checked_at": "2026-09-29T13:53:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://slurm.schedmd.com/documentation.html",
+        "content_type": "text/html",
+        "page_title": "Slurm Workload Manager - Documentation",
+        "canonical_url": "https://slurm.schedmd.com/documentation.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4d03087be402c3d8c8eee1fcbd0f9980a1e9ccb7f9f9de6fa72ee036549d5ec2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://slurm.schedmd.com/documentation.html",
+      "sha256": "9cb052f8ca136daaed3e4db18089a74a8f54ca14bab68cd153364b62a5ee4f29",
+      "text_characters": 2979
+    },
+    {
+      "id": "kubernetes-resource-management",
+      "url": "https://kubernetes.io/docs/concepts/resource-management/",
+      "checked_at": "2026-09-29T13:53:14.492943+00:00",
+      "health": {
+        "id": "kubernetes-resource-management",
+        "url": "https://kubernetes.io/docs/concepts/resource-management/",
+        "checked_at": "2026-09-29T13:53:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/concepts/resource-management/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Resource Management",
+        "canonical_url": "https://kubernetes.io/docs/concepts/resource-management/",
+        "duration_signals": [],
+        "signal_fingerprint": "4385e11109d0668863ea359cb78bacc019f78797607e7f9fe310a727cfaded19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/concepts/resource-management/",
+      "sha256": "182fb1a2327f00166a4579ed1fc02ef72607ed031c2ffd4fe537c0fc8e0dbacd",
+      "text_characters": 776
+    },
+    {
+      "id": "nvidia-run-ai-documentation",
+      "url": "https://docs.nvidia.com/run-ai/index.html",
+      "checked_at": "2026-09-29T13:53:14.526180+00:00",
+      "health": {
+        "id": "nvidia-run-ai-documentation",
+        "url": "https://docs.nvidia.com/run-ai/index.html",
+        "checked_at": "2026-09-29T13:53:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/run-ai/index.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "NVIDIA Run:ai",
+        "canonical_url": "https://docs.nvidia.com/run-ai/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c08a1a45ae717519cc661b88b03fd5e7667db6d5cb8d18f9571766e79e76472d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/run-ai/index.html",
+      "sha256": "7af509170af81a0cde0c1512816efe3a0ccbf8d13caede7098a6f33384ed6b6d",
+      "text_characters": 763
+    },
+    {
+      "id": "nvidia-container-toolkit-troubleshooting",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+      "checked_at": "2026-09-29T13:53:14.843045+00:00",
+      "health": {
+        "id": "nvidia-container-toolkit-troubleshooting",
+        "url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+        "checked_at": "2026-09-29T13:53:14+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+        "content_type": "text/html",
+        "page_title": "Troubleshooting — NVIDIA Container Toolkit",
+        "canonical_url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+        "duration_signals": [],
+        "signal_fingerprint": "faf5fe698e5c06a3667f1d39a0a4f0912643975c73a887dbe5d86fe6d33c5dca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+      "sha256": "0e0b06e7bfb11b8e1944ca26678ef60d2a49ee9431ab153e4dd994abc5aa2197",
+      "text_characters": 10687
+    },
+    {
+      "id": "nvidia-triton-inference-server-documentation",
+      "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/index.html",
+      "checked_at": "2026-09-29T13:53:15.130751+00:00",
+      "health": {
+        "id": "nvidia-triton-inference-server-documentation",
+        "url": "https://docs.nvidia.com/deeplearning/triton-inference-server/index.html",
+        "checked_at": "2026-09-29T13:53:15+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/index.html",
+        "content_type": "text/html",
+        "page_title": "NVIDIA Deep Learning Triton Inference Server Documentation",
+        "canonical_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4d0f36bd79ff99a66f18da48fb22657b4f849fc2e15fb2839beb608c2eb51881",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/deeplearning/triton-inference-server/index.html",
+      "sha256": "5ee4df325fb9804c2f9861e9d2865f138fc291b11f5372cd8c19f9eee4d6f6b4",
+      "text_characters": 2936
+    },
+    {
+      "id": "nvidia-bcm11-release-notes",
+      "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes",
+      "checked_at": "2026-09-29T13:54:42.856700+00:00",
+      "health": {
+        "id": "nvidia-bcm11-release-notes",
+        "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes",
+        "checked_at": "2026-09-29T13:54:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/",
+        "content_type": "text/html",
+        "page_title": "NVIDIA Base Command™ Manager 11 — Base Command Manager 11 Release Notes",
+        "canonical_url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/",
+        "duration_signals": [],
+        "signal_fingerprint": "fb93ded6e579c03d8aa91b04c31a50d6c56bf0336e4073deeaf8923e596a61cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/",
+      "sha256": "4d7833f1c9e3d7086e8b9896bc0b861f04dfd1cfb97053c62633c801dd41b26c",
+      "text_characters": 468
+    },
+    {
+      "id": "nvidia-run-ai-self-hosted",
+      "url": "https://docs.nvidia.com/run-ai/self-hosted/index.html",
+      "checked_at": "2026-09-29T13:54:42.857368+00:00",
+      "health": {
+        "id": "nvidia-run-ai-self-hosted",
+        "url": "https://docs.nvidia.com/run-ai/self-hosted/index.html",
+        "checked_at": "2026-09-29T13:54:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/run-ai/self-hosted/index.html",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "NVIDIA Run:ai Self-hosted",
+        "canonical_url": "https://docs.nvidia.com/run-ai/self-hosted/index.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f80aab699d3582f1034d339f3fc499c3cbcfedde73295a1b964fe59ebc942991",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/run-ai/self-hosted/index.html",
+      "sha256": "645ed43d8669b1469ad0929b8c2c4308d7ea77d764ac9a67e788b8a24e89f41c",
+      "text_characters": 2773
+    },
+    {
+      "id": "slurm-job-exit-codes",
+      "url": "https://slurm.schedmd.com/job_exit_code.html",
+      "checked_at": "2026-09-29T13:54:42.857779+00:00",
+      "health": {
+        "id": "slurm-job-exit-codes",
+        "url": "https://slurm.schedmd.com/job_exit_code.html",
+        "checked_at": "2026-09-29T13:54:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://slurm.schedmd.com/job_exit_code.html",
+        "content_type": "text/html",
+        "page_title": "Slurm Workload Manager - Job Exit Codes",
+        "canonical_url": "https://slurm.schedmd.com/job_exit_code.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c59988bd76b5cf5e7acffa56c9c6cc60c06b0365e621260da869607d143f9e3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://slurm.schedmd.com/job_exit_code.html",
+      "sha256": "b48309fbfa9e6497d7bd10ed548244a4fedd4f873088eb8f7feb54e0f1c2fc14",
+      "text_characters": 4712
+    },
+    {
+      "id": "slurm-gres",
+      "url": "https://slurm.schedmd.com/gres.html",
+      "checked_at": "2026-09-29T13:54:43.331662+00:00",
+      "health": {
+        "id": "slurm-gres",
+        "url": "https://slurm.schedmd.com/gres.html",
+        "checked_at": "2026-09-29T13:54:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://slurm.schedmd.com/gres.html",
+        "content_type": "text/html",
+        "page_title": "Slurm Workload Manager - Generic Resource (GRES) Scheduling",
+        "canonical_url": "https://slurm.schedmd.com/gres.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1032c0129ab7d6d4de4eeabb4345edfcb76ca9e1013b54f0bbeb2bc6b157cbf6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://slurm.schedmd.com/gres.html",
+      "sha256": "b54efd1e6021b97acb112f6bdfc2e9038a4cb765d83057d973ed73d33fb1b8db",
+      "text_characters": 32273
+    },
+    {
+      "id": "kubernetes-deployments",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "checked_at": "2026-09-29T13:54:43.385671+00:00",
+      "health": {
+        "id": "kubernetes-deployments",
+        "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "checked_at": "2026-09-29T13:54:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Deployments",
+        "canonical_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "943a005c3c45e552ae167ee7046b5234353621154a4585109d4f8b59d9b39eb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "sha256": "2943920ea2b6199926cbefe05831369c96a91d8e51693c03fc9ecedb2b6b054e",
+      "text_characters": 49936
+    },
+    {
+      "id": "kubernetes-schedule-gpus",
+      "url": "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/",
+      "checked_at": "2026-09-29T13:54:43.428339+00:00",
+      "health": {
+        "id": "kubernetes-schedule-gpus",
+        "url": "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/",
+        "checked_at": "2026-09-29T13:54:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Schedule GPUs",
+        "canonical_url": "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/",
+        "duration_signals": [],
+        "signal_fingerprint": "574c7fa6764db4a9ec25fa097566348880a523a909c4ff1ad4d8fb15fc7e991a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/",
+      "sha256": "6047ee6dabb8169cea287434e5b7efc562447e61a93a3b139d3028b3df98b3a6",
+      "text_characters": 4991
+    },
+    {
+      "id": "kubernetes-kustomize",
+      "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "checked_at": "2026-09-29T13:54:43.982244+00:00",
+      "health": {
+        "id": "kubernetes-kustomize",
+        "url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+        "checked_at": "2026-09-29T13:54:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Declarative Management of Kubernetes Objects Using Kustomize",
+        "canonical_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+        "duration_signals": [],
+        "signal_fingerprint": "29d6c78e664029f68478cf123affd3ba4d459408e2e3e09305689c82cbefb189",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/",
+      "sha256": "3ab54a01d053ae327ba77507708dafb052019b24f6894e25d1863665acd78650",
+      "text_characters": 21252
+    },
+    {
+      "id": "nvidia-dgx-learning-path",
+      "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+      "checked_at": "2026-09-29T13:54:44.053894+00:00",
+      "health": {
+        "id": "nvidia-dgx-learning-path",
+        "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+        "checked_at": "2026-09-29T13:54:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA DGX Platform and Data Center Learning Path",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+        "duration_signals": [
+          "1 hour",
+          "1.5 hour",
+          "12 hours",
+          "24 hours",
+          "28 hours",
+          "3 hours",
+          "7 hours",
+          "8 hours",
+          "9.5 hours"
+        ],
+        "signal_fingerprint": "dccad63fcb3387ba858e6004df8af2243a8b598f7921689f4cf5c0ac5a5b9937",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+      "sha256": "39945ca4373f3668cc039d80727db3c6ed5aa2ee4aa13351ae4efa928af51dc8",
+      "text_characters": 23967
+    },
+    {
+      "id": "nvidia-certification-policies",
+      "url": "https://www.nvidia.com/en-us/learn/certification/",
+      "checked_at": "2026-09-29T13:54:44.099252+00:00",
+      "health": {
+        "id": "nvidia-certification-policies",
+        "url": "https://www.nvidia.com/en-us/learn/certification/",
+        "checked_at": "2026-09-29T13:54:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nvidia.com/en-us/learn/certification/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "NVIDIA Certification Programs",
+        "canonical_url": "https://www.nvidia.com/en-us/learn/certification/",
+        "duration_signals": [
+          "1 hour",
+          "2 hours",
+          "24 hours"
+        ],
+        "signal_fingerprint": "859325e6934ef37b85afa376b123a54da08180e8d43d452988a11699993433ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.nvidia.com/en-us/learn/certification/",
+      "sha256": "6fd19c1cae8a994b8ab203d839b522c964306d72b7413bfa4962ddb412fd3ccc",
+      "text_characters": 38167
+    },
+    {
+      "id": "nvidia-ncp-aio-study-guide",
+      "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
+      "checked_at": "2026-09-29T13:54:59.638261+00:00",
+      "health": {
+        "id": "nvidia-ncp-aio-study-guide",
+        "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
+        "checked_at": "2026-09-29T13:54:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
+      "sha256": "4f0123fe44de82fa626df6a70df03ccfef5aa80d9d735d19628aa996347c35b9",
+      "bytes": 470213,
+      "pdf_pages": 7,
+      "text_characters": 10533
+    },
+    {
+      "id": "nvidia-bcm11-admin-manual",
+      "url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+      "checked_at": "2026-09-29T13:55:13.181435+00:00",
+      "health": {
+        "id": "nvidia-bcm11-admin-manual",
+        "url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+        "checked_at": "2026-09-29T13:54:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+      "sha256": "0491b1cbe84c1b8d425c1483a365add36347b547b23c1391ad9c8457ca6e40c1",
+      "bytes": 11610053,
+      "pdf_pages": 1094,
+      "text_characters": 2375182
+    },
+    {
+      "id": "nvidia-bcm11-34-release",
+      "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+      "checked_at": "2026-09-29T13:56:11.378597+00:00",
+      "health": {
+        "id": "nvidia-bcm11-34-release",
+        "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+        "checked_at": "2026-09-29T13:56:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+        "content_type": "text/html",
+        "page_title": "Release notes for NVIDIA Base Command™ Manager (BCM) 11.34.0 — Base Command Manager 11 Release Notes",
+        "canonical_url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "a5bf3c896000a7c01eb6e5fa2a712e2e88f893d13e7506279479b3904f8f0fe3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+      "sha256": "f9f29985ac69b8ba9ec2062f674a22e9a3bde71f72d769acf79612847e70b8a4",
+      "text_characters": 11942
+    },
+    {
+      "id": "nvidia-run-ai-scheduler-concepts",
+      "url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+      "checked_at": "2026-09-29T13:56:11.379456+00:00",
+      "health": {
+        "id": "nvidia-run-ai-scheduler-concepts",
+        "url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+        "checked_at": "2026-09-29T13:56:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The NVIDIA Run:ai Scheduler: Concepts and Principles | Self-hosted | Run:ai Documentation",
+        "canonical_url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+        "duration_signals": [],
+        "signal_fingerprint": "a04ec810a63ee3737d5a8291445a365d0134926824f82702d7ba7c69eb0c21e2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+      "sha256": "eeb27f943909479d35aabbd7f1564bf84ce1f09ba2cedcea05719c5778431ba6",
+      "text_characters": 20285
+    },
+    {
+      "id": "kubernetes-resource-quotas",
+      "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+      "checked_at": "2026-09-29T13:57:08.366101+00:00",
+      "health": {
+        "id": "kubernetes-resource-quotas",
+        "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+        "checked_at": "2026-09-29T13:57:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Resource Quotas",
+        "canonical_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+        "duration_signals": [],
+        "signal_fingerprint": "67597bd11b5d3e0f545ce2f4b6094e2894322aad7e4857c38743b35ae92c83c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+      "sha256": "dd126980dfdd40f22f8f46c7627cf4dfaa8149aa103ba4b264b775463d732e53",
+      "text_characters": 26608
+    }
+  ],
+  "added_source_ids": [
+    "nvidia-ncp-aio-study-guide",
+    "nvidia-bcm11-admin-manual",
+    "nvidia-bcm11-release-notes",
+    "nvidia-run-ai-self-hosted",
+    "slurm-job-exit-codes",
+    "slurm-gres",
+    "kubernetes-deployments",
+    "kubernetes-schedule-gpus",
+    "kubernetes-resource-quotas",
+    "nvidia-bcm11-34-release",
+    "nvidia-run-ai-scheduler-concepts"
+  ],
+  "findings": [
+    {
+      "id": "ncpaio-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Linked official study guide conflicts with the canonical scope and score guidance",
+      "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PDFbody19topics28/20/32/20;visiblecontentsadditional10%withoutbodysection=110%. Canonical31topics31/23/23/23; PDFsectionweights/reportdetails notconfirmed there.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ncpaio-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Earlier workshop outline is no longer a PDF at its URL",
+      "url": "https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "ActualHTTPredirect to generalAcademyHTML,notfourfivehoursessionoutline.",
+      "recommendation": "Disclose unverified old20h;retaincurrent24honlyaslearning-pathlisting.",
+      "disposition": "applied",
+      "source_id": "nvidia-ai-operations-professional-training",
+      "resolution": "Disclose unverified old20h;retaincurrent24honlyaslearning-pathlisting."
+    },
+    {
+      "id": "ncpaio-deep-3",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Professional exam card remains inconsistent with canonical delivery",
+      "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Learningpath400USD/1.5h vs canonical500USD/2h and3integratedlabs.",
+      "recommendation": "Use canonical exam details andpreserve dated conflict;checkoutunvisited.",
+      "disposition": "applied",
+      "source_id": "nvidia-dgx-learning-path",
+      "resolution": "Use canonical exam details andpreserve dated conflict;checkoutunvisited."
+    },
+    {
+      "id": "ncpaio-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Configuration inheritance differs by setting type",
+      "url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Non-Boolean overrides,BooleanOR,rolepriority andcategory/group distinctions inselectedmanual.",
+      "recommendation": "Explain effectiveconfig andownership before overrides.",
+      "disposition": "applied",
+      "source_id": "nvidia-bcm11-admin-manual",
+      "resolution": "Explain effectiveconfig andownership before overrides."
+    },
+    {
+      "id": "ncpaio-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Closing a node is not equivalent to draining its jobs",
+      "url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Manualclosedstate permits independentlymanagedschedulerjobs; imageupdatedefaultsdryrun andservicesmayretainoldstate.",
+      "recommendation": "Add separate schedulerdrain andworkloadacceptance evidence.",
+      "disposition": "applied",
+      "source_id": "nvidia-bcm11-admin-manual",
+      "resolution": "Add separate schedulerdrain andworkloadacceptance evidence."
+    },
+    {
+      "id": "ncpaio-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Discovery and accounting depend on the configured GPU path",
+      "url": "https://slurm.schedmd.com/gres.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AutoDetect=nvidia lacksMIG/NVLink;Slurmexpects prepartitionedMIG anddocuments noMIGgpumem/gpuutil.",
+      "recommendation": "Keep missingtelemetry distinctfromzero andverifydiscovery/resourcecount.",
+      "disposition": "applied",
+      "source_id": "slurm-gres",
+      "resolution": "Keep missingtelemetry distinctfromzero andverifydiscovery/resourcecount."
+    },
+    {
+      "id": "ncpaio-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Batch success does not prove workload success",
+      "url": "https://slurm.schedmd.com/job_exit_code.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Scriptreturn0canmaskstepfailure;signals colon-delimited;derivedresultmodifiable.",
+      "recommendation": "OriginalCSVfixture distinguishesbatch,derived,signal andseparateapplication evidence.",
+      "disposition": "applied",
+      "source_id": "slurm-job-exit-codes",
+      "resolution": "OriginalCSVfixture distinguishesbatch,derived,signal andseparateapplication evidence."
+    },
+    {
+      "id": "ncpaio-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A rollout needs transitional capacity",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Surge/unavailability percentagesround differently;progressdeadline reports failurewithoutautomaticrollback.",
+      "recommendation": "Render original2replicaGPUfixture andcalculatebudgetwithstatedlimitations.",
+      "disposition": "applied",
+      "source_id": "kubernetes-deployments",
+      "resolution": "Render original2replicaGPUfixture andcalculatebudgetwithstatedlimitations."
+    },
+    {
+      "id": "ncpaio-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Quota admission and physical scheduling are separate boundaries",
+      "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DeploymentobjectcanexistwhilechildPodquotaadmissionfails.",
+      "recommendation": "Testquota-onlyversusphysical-onlychanges;neitheralonecreatesbothbudgets.",
+      "disposition": "applied",
+      "source_id": "kubernetes-resource-quotas",
+      "resolution": "Testquota-onlyversusphysical-onlychanges;neitheralonecreatesbothbudgets."
+    },
+    {
+      "id": "ncpaio-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Project quota cannot bypass department or physical constraints",
+      "url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Self-hostedv2.26hierarchy,preemptibleoverquota,rank/priority andfragmentation distinctions.",
+      "recommendation": "Teachpolicybeforeplacement;do not translatequotasacrossplatformsbyname.",
+      "disposition": "applied",
+      "source_id": "nvidia-run-ai-scheduler-concepts",
+      "resolution": "Teachpolicybeforeplacement;do not translatequotasacrossplatformsbyname."
+    },
+    {
+      "id": "ncpaio-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cosmetic warnings and injection failures need different responses",
+      "url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Missinggroupnamecanbecosmetic;legacyhook/cgroupupdatelosesGPUaccess;SELinuxdisablechangesisolation.",
+      "recommendation": "Preserveexactmode/errorandscope;no blanketsecuritybypass.",
+      "disposition": "applied",
+      "source_id": "nvidia-container-toolkit-troubleshooting",
+      "resolution": "Preserveexactmode/errorandscope;no blanketsecuritybypass."
+    },
+    {
+      "id": "ncpaio-deep-12",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Image and runtime changes require cross-layer acceptance",
+      "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "NCP-AIO"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "11.34.0fixesimageupdateprolog/DCGMlinkdeletion,drainreporting andruntimeownership.",
+      "recommendation": "Addcanaryverificationforschedulerhooks,monitoring andrepresentativeworkloads.",
+      "disposition": "applied",
+      "source_id": "nvidia-bcm11-34-release",
+      "resolution": "Addcanaryverificationforschedulerhooks,monitoring andrepresentativeworkloads."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "nvidia-bcm11-34-release",
+      "published_on": "2026-09-11",
+      "review": "Official datedreleasechannel;selectedoperationalchanges,notallrelease sections. No additional blog adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 25,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "e201c588bd3408d52b2784b0c68c274cb2ee20ddef1902a28a0b2569730c1d97",
+      "python_version": "3.13.14",
+      "execution_stdout": "{\"checks\": [\"two rendered objects\", \"namespace transform\", \"selector preserved\", \"placeholder digest preserved\", \"deterministic rendering\", \"steady state fits\", \"surge needs another GPU\", \"quota exhausted\", \"physical capacity exhausted\", \"two available required\", \"quota alone does not add hardware\", \"hardware alone does not raise quota\", \"both allow full surge budget\", \"alternative permits reduced availability\", \"surge rounds up\", \"unavailable rounds down\", \"limits supply request default\", \"mismatched request rejected\", \"temporary directory removed\", \"CSV parsed\", \"zero exit still needs output\", \"output verified separately\", \"step failure survives script zero\", \"signal failure retained\", \"missing accounting unknown\"], \"client_version\": \"v1.35.9\", \"initial_rollout_budget\": {\"full_surge_fits\": false, \"minimum_available\": 2, \"physical_free\": 0, \"quota_room\": 0, \"steady_gpu\": 2, \"surge_gpu\": 1}, \"kustomize_version\": \"v5.7.1\", \"passed\": 25, \"pyyaml_version\": \"6.0.3\", \"temporary_cleanup\": true}\n25 local rendering and accounting checks passed",
+      "results": {
+        "checks": [
+          "two rendered objects",
+          "namespace transform",
+          "selector preserved",
+          "placeholder digest preserved",
+          "deterministic rendering",
+          "steady state fits",
+          "surge needs another GPU",
+          "quota exhausted",
+          "physical capacity exhausted",
+          "two available required",
+          "quota alone does not add hardware",
+          "hardware alone does not raise quota",
+          "both allow full surge budget",
+          "alternative permits reduced availability",
+          "surge rounds up",
+          "unavailable rounds down",
+          "limits supply request default",
+          "mismatched request rejected",
+          "temporary directory removed",
+          "CSV parsed",
+          "zero exit still needs output",
+          "output verified separately",
+          "step failure survives script zero",
+          "signal failure retained",
+          "missing accounting unknown"
+        ],
+        "client_version": "v1.35.9",
+        "initial_rollout_budget": {
+          "full_surge_fits": false,
+          "minimum_available": 2,
+          "physical_free": 0,
+          "quota_room": 0,
+          "steady_gpu": 2,
+          "surge_gpu": 1
+        },
+        "kustomize_version": "v5.7.1",
+        "passed": 25,
+        "pyyaml_version": "6.0.3",
+        "temporary_cleanup": true
+      },
+      "execution_boundary": "Existingkubectlclientversion andlocalKustomizerender; PyYAMLparsing;originalrolloutbudget andsyntheticCSVexit interpretation. Verifiedworkspace-containedtemporary cleanup andempty kubeconfig. No APIcalls,remote bases,plugins,imagepulls,installations,GPU,Slurm,BCM,Run:ai,cloud orservices.",
+      "model_limits": "Renderedplaceholderimagesnotdeployable; no serveradmission/scheduler/controller validation. Singleordinarycontainer,wholeGPU,alreadyallocatedsteadyreplicas,providedeligiblefreecapacity. No topology,othernamespaceusage,terminationdelays,actualartifactverification orcompleteaccounting/inputparser."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Vendor clarification pending: linked exam PDF disagrees with canonical weights/objectives and includes a fifth contents entry yielding110%. Its section scoring/report details are not confirmed by canonical page and differ from program FAQ wording. Canonical scope retained; no vendor contacted.",
+    "Old workshop outline URL now returns generic training HTML; Fundamentals course body blank. Learning-path professionalexam400USD1.5h conflicts withcanonical500USD2h; checkout,course interiors andold20h schedule unverified.",
+    "Independent human review andall eight infrastructure activities pending. No GPU,Slurm,BCM,Run:ai,Kubernetes API,container,imagepull,cloud orservice operation.",
+    "25 actual local checks use existing kubectl1.35.9/Kustomize5.7.1/PyYAML6.0.3,emptykubeconfig andworkspace-containedtemporaryfileswithverifiedcleanup. Rendering/budgetmath isnotadmission,scheduling,rollout,realaccounting orproductionperformance proof.",
+    "Syntheticfixtures assumecomplete records,oneordinarycontainer,wholeGPU,knowninitialallocation andprovidedfreecapacity. No fullinputparser,topology,otherusage,terminationdelays,liveartifactverification orauthentication tested.",
+    "Canonicalmain and7pageexamPDFfullyread;BCM1094pagePDF andlargeproductreferencesselectedsectionsonly asrecorded. No complete hardware/versionmatrix audit oralllinkedreading/courseinteriors.",
+    "Five reservedGitHubguides anddisablednotificationpilot untouched. No messages,installation,reboot,authentication,permission orservice changes."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "25localchecks withactualexistingkubectl1.35.9/Kustomize5.7.1 rendering,PyYAML6.0.3 andsyntheticbudget/CSVaccounting. Emptykubeconfig,localfixedresources,no APIorremoteplugins,verifiedworkspace-containedtemporarycleanup. No actual admission,scheduling,rollout,Slurm/BCM/Run:ai/GPU/cloud/service execution.",
+    "passed": 25,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "e201c588bd3408d52b2784b0c68c274cb2ee20ddef1902a28a0b2569730c1d97",
+    "python_version": "3.13.14",
+    "execution_stdout": "{\"checks\": [\"two rendered objects\", \"namespace transform\", \"selector preserved\", \"placeholder digest preserved\", \"deterministic rendering\", \"steady state fits\", \"surge needs another GPU\", \"quota exhausted\", \"physical capacity exhausted\", \"two available required\", \"quota alone does not add hardware\", \"hardware alone does not raise quota\", \"both allow full surge budget\", \"alternative permits reduced availability\", \"surge rounds up\", \"unavailable rounds down\", \"limits supply request default\", \"mismatched request rejected\", \"temporary directory removed\", \"CSV parsed\", \"zero exit still needs output\", \"output verified separately\", \"step failure survives script zero\", \"signal failure retained\", \"missing accounting unknown\"], \"client_version\": \"v1.35.9\", \"initial_rollout_budget\": {\"full_surge_fits\": false, \"minimum_available\": 2, \"physical_free\": 0, \"quota_room\": 0, \"steady_gpu\": 2, \"surge_gpu\": 1}, \"kustomize_version\": \"v5.7.1\", \"passed\": 25, \"pyyaml_version\": \"6.0.3\", \"temporary_cleanup\": true}\n25 local rendering and accounting checks passed",
+    "results": {
+      "checks": [
+        "two rendered objects",
+        "namespace transform",
+        "selector preserved",
+        "placeholder digest preserved",
+        "deterministic rendering",
+        "steady state fits",
+        "surge needs another GPU",
+        "quota exhausted",
+        "physical capacity exhausted",
+        "two available required",
+        "quota alone does not add hardware",
+        "hardware alone does not raise quota",
+        "both allow full surge budget",
+        "alternative permits reduced availability",
+        "surge rounds up",
+        "unavailable rounds down",
+        "limits supply request default",
+        "mismatched request rejected",
+        "temporary directory removed",
+        "CSV parsed",
+        "zero exit still needs output",
+        "output verified separately",
+        "step failure survives script zero",
+        "signal failure retained",
+        "missing accounting unknown"
+      ],
+      "client_version": "v1.35.9",
+      "initial_rollout_budget": {
+        "full_surge_fits": false,
+        "minimum_available": 2,
+        "physical_free": 0,
+        "quota_room": 0,
+        "steady_gpu": 2,
+        "surge_gpu": 1
+      },
+      "kustomize_version": "v5.7.1",
+      "passed": 25,
+      "pyyaml_version": "6.0.3",
+      "temporary_cleanup": true
+    },
+    "model_limits": "Renderedplaceholderimagesnotdeployable; no serveradmission/scheduler/controller validation. Singleordinarycontainer,wholeGPU,alreadyallocatedsteadyreplicas,providedeligiblefreecapacity. No topology,othernamespaceusage,terminationdelays,actualartifactverification orcompleteaccounting/inputparser.",
+    "learning_catalog_consistency": "passed"
+  },
+  "public_objective_groups": [
+    {
+      "title": "Installation and Deployment",
+      "weight": "31%",
+      "objectives": [
+        "Describe the Mission Control toolkit",
+        "Use BCM’s Base View interface to monitor cluster performance, resource utilization, and node health in real time.",
+        "Manage job scheduling and resource allocation using BCM’s workload manager (e.g., SLURM or Kubernetes)",
+        "Apply patches, update firmware, and synchronize software images across cluster nodes using BCM",
+        "Administer user accounts, roles, and permissions to ensure secure access to the cluster using BCM",
+        "Configure and monitor network settings for cluster nodes, DPUs, and switches using BCM",
+        "Diagnose and resolve cluster issues, such as job failures, node outages, or resource bottlenecks, using BCM.",
+        "Use BCM to organize and configure compute nodes into categories based on hardware or workload requirements.",
+        "Using BCM, maintain documentation and generate reports on cluster usage, performance, and issues.",
+        "Install and initialize Kubernetes on NVIDIA hosts using BCM",
+        "Deploy DOCA Services on DPU Arm",
+        "Install Run:ai",
+        "Install Slurm"
+      ]
+    },
+    {
+      "title": "Administration",
+      "weight": "23%",
+      "objectives": [
+        "Administer Slurm cluster.",
+        "Describe data center architecture for AI Workloads",
+        "Administer Run:ai",
+        "Administer Kubernetes",
+        "Configure MIG"
+      ]
+    },
+    {
+      "title": "Workload Management",
+      "weight": "23%",
+      "objectives": [
+        "Deploy inference workloads with Kubernetes",
+        "Deploy inference workloads with Run:ai",
+        "Deploy training workloads with Slurm",
+        "Deploy training workloads with Run:ai",
+        "Use system management tools to troubleshoot issues",
+        "Allocate resources between teams with Run:ai, Slurm and Kubernetes",
+        "Deploy containers from NGC"
+      ]
+    },
+    {
+      "title": "Troubleshooting and Optimization",
+      "weight": "23%",
+      "objectives": [
+        "Troubleshoot Docker",
+        "Troubleshoot the fabric manager service for NVLink and NVSwitch systems",
+        "Troubleshoot Base Command Manager",
+        "Troubleshoot Magnum IO components",
+        "Troubleshoot storage performance",
+        "Troubleshoot the deployment of a container from NGC"
+      ]
+    }
+  ],
+  "source_reading_boundaries": {
+    "nvidia-aiio-fundamentals": "Fresh HTTP200 course shell without populated course fields. Same-session NCA-AIIO review read template/navigation; canonical and DGX path verify7h separately. No course interior/account/checkout.",
+    "nvidia-dcgm-documentation": "Complete brief landing page read in same-session NCA-AIIO review and freshly fetched here. Navigation only; no diagnostics orGPU/service execution.",
+    "nvidia-ncp-aio-certification": "Complete main delivery/prerequisite/training and31objective bullets read. Canonical31/23/23/23,30questions plus3hands-on exercises in120minutes,USD500,English,pass/fail,2years. Both objective/lifecycle snapshots unchanged. Linked PDF conflicts and is not merged into canonical scope.",
+    "nvidia-ai-operations-professional-training": "Old PDF URL now redirects to generic NVIDIA Academy HTML. Complete main generic landing content read. Earlier4x5h outline not reverified; no paid workshop or actual lab.",
+    "nvidia-base-command-manager-documentation": "Complete main portal includingv11/v10manuals,MissionControl,release andtraining/support paths read. Not all linked manuals; select exact deployed version.",
+    "slurm-documentation": "Complete main index read; explicitly26.05. Detailed GRES andexit pages separately registered; no Slurm installation,CLI service query orjob submission.",
+    "kubernetes-resource-management": "Complete776character resource-management landing main read,June28 2026reorganization note. Index isnot detailed resource-limit coverage; GPU,Deployment,quota andKustomize pages separately registered.",
+    "nvidia-run-ai-documentation": "Complete763character SaaS/self-hosted split read. Not product operation; self-hosted detail registered separately.",
+    "nvidia-container-toolkit-troubleshooting": "Complete main troubleshooting sections read throughadditional-device-GID examples. Debug/core,repository signatures,SELinux,legacy hook/cgroup device loss,CDI andcosmetic group-name warnings. No package deletion,driver/runtime/security-policy change orreproduction.",
+    "nvidia-triton-inference-server-documentation": "Complete main portal descriptions read. LastupdatedAug28 2026but embeddedrelease prose refers24.02/2.43.0 andearlier; latest/archive links distinguished. No actual model repository,readiness endpoint,container orbenchmark.",
+    "nvidia-ncp-aio-study-guide": "Actual7pagePDF alltext read andPDFpages2/3/7 visually inspected. Body19numberedtopics with28/20/32/20 vsweb31topics31/23/23/23;contentsvisibleextra Cognition Planning andMemory10% hasno bodysection andmakes110%. FleetCommand/cloudVMI andscoring/reportdetails conflict/extendcanonical. FEB26footer nottreatedaseffective date. Alllinkedreadinginteriors notread.",
+    "nvidia-bcm11-admin-manual": "Actual1094pagePDF downloaded,September23 2026PDFmetadata. SelectedTOC andprinted28–31concepts,294closedstate/updateintro,302–303imageupdate/considerations/newnodeintro read. CategoryBooleanOR,rolepriorities,closednotdrained,dryrun/excludes/provisionerfreshness. Not complete manual,installation orversion-support audit; no cmsh execution.",
+    "nvidia-bcm11-release-notes": "Complete brief release-navigation index read. Actual11.34.0 page separately registered; no inference from index alone.",
+    "nvidia-run-ai-self-hosted": "Complete main index cards read. Installation,resource,policy andscheduler routes identified; not full installation orAPI documentation.",
+    "slurm-job-exit-codes": "Complete main job/step/signal/accounting/derived result andannotation examples read. Batchscriptzero canmaskfailedstep; derivedresult mutable. No accounting database,realjobs orsjobexitmod changes.",
+    "slurm-gres": "SelectedOverview/Configuration/RunningJobs andAutoDetect throughmismatch omission;Accounting section andMIGManagement plusinitialSharding distinction read. Not allbinding/MPS/shardingexamples. Version26.05;NVMLversusnvidia discovery,MIG no dynamicpartitioning/no gpumem/gpuutil andtypedstepconsistency. No GPU stress orSlurm commands.",
+    "kubernetes-deployments": "Selected selector/strategy/Recreate/RollingUpdate,rounding,progressdeadline,minReadySeconds,terminatingpods andrevisionhistory sections read. Not full49kpage. Localrender andoriginalbudget only; no admission,controller,scheduler,API orrollout execution.",
+    "kubernetes-schedule-gpus": "Complete main device-plugin,request/limit andheterogeneousGPU/NFDsections read. No vendorplugininstallation,node labels orPod creation.",
+    "kubernetes-kustomize": "Introduction/overview,initialgenerator description,composing example andbases/overlays introduction/example start read. Not full21kguide. Actual localkubectl1.35.9/Kustomize5.7.1 render oforiginalfixedlocalJSON resources; no apply,remote bases,plugins orAPI calls.",
+    "nvidia-dgx-learning-path": "Complete main card grid read in same-sessionNCA-AIIOreview,freshcapture selectedprofessional course/examcards rechecked here. Course3000USD24h,exam400USD1.5h vscanonical500USD2h. Publicmetadataonly; no checkout orlessonaccess.",
+    "nvidia-certification-policies": "Complete FAQ read in same-sessionNCA-AIIOreview,freshcapture here. Pass/failwithoutscore,14dayretake/max5attempts12months,2yrrenewal/remoteprocedures. PDFperformance-report/sectionweight details unconfirmed bycanonical;no booking/contact.",
+    "nvidia-bcm11-34-release": "SelectedSeptember11 2026release General,CMDaemon,NodeInstaller,ClusterTools,COD andcm-kubernetes-setupthroughgatewayfailure handling read. Not remainingrelease sections. Slurmprolog/DCGMlink,imageclone,K8sdrain/runtimeownership changesusedasacceptance examples;no upgrades.",
+    "nvidia-run-ai-scheduler-concepts": "Main self-hostedv2.26concepts read throughquota/rank/fairshare/preemption/gang/placement andDRA,nextsteps. UI/API terminology/versionboundaries explicit;not complete platform oractualscheduler. NoRun:aiAPI,accounts orpaidaccess.",
+    "kubernetes-resource-quotas": "Selected intro/admission/namespace constraints,compute andextendedGPUquota sections read throughrequests.nvidia.com/gpu example;remainingDRA/storage/scopes notfullyread. Resourcequotaisnotphysicalreservation;noadmission execution."
+  },
+  "pdf_scope_conflict": {
+    "canonical_objective_counts": [
+      13,
+      5,
+      7,
+      6
+    ],
+    "canonical_weights": [
+      31,
+      23,
+      23,
+      23
+    ],
+    "pdf_body_counts": [
+      5,
+      3,
+      6,
+      5
+    ],
+    "pdf_body_weights": [
+      28,
+      20,
+      32,
+      20
+    ],
+    "pdf_contents_extra_weight": 10,
+    "pdf_contents_total": 110,
+    "pdf_extra_contents_entry": "Cognition, Planning, and Memory",
+    "pdf_pages": 7,
+    "rendered_pages_visually_inspected": [
+      2,
+      3,
+      7
+    ],
+    "pdf_footer": "FEB26; not treated as a transition date",
+    "resolution": "Canonical page retained. Vendor clarification pending; no contact made. No snapshot rewrite.",
+    "scoring_boundary": "PDF says sections50/50 andtopic/section performance report;canonical page doesnotconfirm these details andgeneralFAQ says pass/failwithoutscore. Do not infer a passing percentage or exact report format."
+  },
+  "catalog_findings": [
+    {
+      "source_id": "nvidia-ai-operations-professional-training",
+      "observation": "FormerPDFoutline URL redirects to genericAcademyHTML.",
+      "resolution": "Earlier20h/four5hsessions unverified;paidinteriornotaccessed."
+    },
+    {
+      "source_id": "nvidia-dgx-learning-path",
+      "observation": "Professionalcourse3000USD24h;examcard400USD1.5h.",
+      "resolution": "Coursepubliclisting only;examcanonical500USD2h authoritative anddiscrepancy retained."
+    },
+    {
+      "source_id": "nvidia-aiio-fundamentals",
+      "observation": "Publiccoursepage hasblankmetadata.",
+      "resolution": "7h verifiedseparatelyoncanonical/path listings;no lessonclaim."
+    }
+  ]
+}

@@ -1680,6 +1680,8 @@ The review maps all public objectives through workload requirement → CPU/GPU/m
 
 ## NCP-AIO coverage record
 
+The September 29 [deep review](research/2026-09-29-ncp-aio-deep-review.md) maps 31 detailed objectives. Mapped all 31 unchanged canonical objectives, added 25 executed local rendering and accounting checks, and answered 48 readiness prompts. Updated BCM, Slurm, Run:ai and Kubernetes operational distinctions. The linked exam PDF conflicts with canonical scope and scoring guidance; two course endpoints and conflicting learning-path exam metadata also remain unresolved. Eight infrastructure activities and human review are pending. Current guide citations: 24 registered, 24 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Installation and Deployment (31%), Administration (23%), Workload Management (23%), and Troubleshooting and Optimization (23%)

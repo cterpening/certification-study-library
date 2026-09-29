@@ -4,6 +4,287 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-ncpaio-deep-review",
+      "title": "NCP-AIO complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NCP-AIO"
+      ],
+      "results": [
+        {
+          "exam_code": "NCP-AIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+          "baseline_sha256": "1f79fffc22c7fa83a5ebd63ae0f6f7c7955823594075abd5f2c83deecee27e13",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Canonical31topics31/23/23/23 andbothmonitoredhashesunchanged. Current30questions/3labs/120min/500USD. PDFconflict separatelyblocked;no silentbaselinerewrite."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "SelectedBCM1094pmanual,SlurmGRES/exit,K8sGPU/Deployment/quota,Kustomize andRun:ai2.26concepts.25actuallocalchecks,notclusterexecution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "SelectedBCM11.34.0release September11 2026 reviewedforimage/scheduler/monitoring/runtimeacceptance implications; no upgrade executed."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "24HTTPsuccesses distinguishblankcourse/genericredirectfromverifiedinterior.24h3000USDcoursecardandold400USD1.5hexamcardconflict withcanonicalexam;no purchase."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Linked7pageexamPDFbody19topics28/20/32/20 plusstray10%contents entry;canonical31topics31/23/23/23. PDF50/50andperformancereportunconfirmed bycanonical;vendor clarification needed,not contacted."
+            }
+          },
+          "findings": [
+            {
+              "id": "ncpaio-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Linked official study guide conflicts with the canonical scope and score guidance",
+              "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PDFbody19topics28/20/32/20;visiblecontentsadditional10%withoutbodysection=110%. Canonical31topics31/23/23/23; PDFsectionweights/reportdetails notconfirmed there.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ncpaio-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Earlier workshop outline is no longer a PDF at its URL",
+              "url": "https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "ActualHTTPredirect to generalAcademyHTML,notfourfivehoursessionoutline.",
+              "recommendation": "Disclose unverified old20h;retaincurrent24honlyaslearning-pathlisting.",
+              "disposition": "applied",
+              "source_id": "nvidia-ai-operations-professional-training",
+              "resolution": "Disclose unverified old20h;retaincurrent24honlyaslearning-pathlisting."
+            },
+            {
+              "id": "ncpaio-deep-3",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Professional exam card remains inconsistent with canonical delivery",
+              "url": "https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Learningpath400USD/1.5h vs canonical500USD/2h and3integratedlabs.",
+              "recommendation": "Use canonical exam details andpreserve dated conflict;checkoutunvisited.",
+              "disposition": "applied",
+              "source_id": "nvidia-dgx-learning-path",
+              "resolution": "Use canonical exam details andpreserve dated conflict;checkoutunvisited."
+            },
+            {
+              "id": "ncpaio-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Configuration inheritance differs by setting type",
+              "url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Non-Boolean overrides,BooleanOR,rolepriority andcategory/group distinctions inselectedmanual.",
+              "recommendation": "Explain effectiveconfig andownership before overrides.",
+              "disposition": "applied",
+              "source_id": "nvidia-bcm11-admin-manual",
+              "resolution": "Explain effectiveconfig andownership before overrides."
+            },
+            {
+              "id": "ncpaio-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Closing a node is not equivalent to draining its jobs",
+              "url": "https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Manualclosedstate permits independentlymanagedschedulerjobs; imageupdatedefaultsdryrun andservicesmayretainoldstate.",
+              "recommendation": "Add separate schedulerdrain andworkloadacceptance evidence.",
+              "disposition": "applied",
+              "source_id": "nvidia-bcm11-admin-manual",
+              "resolution": "Add separate schedulerdrain andworkloadacceptance evidence."
+            },
+            {
+              "id": "ncpaio-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Discovery and accounting depend on the configured GPU path",
+              "url": "https://slurm.schedmd.com/gres.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AutoDetect=nvidia lacksMIG/NVLink;Slurmexpects prepartitionedMIG anddocuments noMIGgpumem/gpuutil.",
+              "recommendation": "Keep missingtelemetry distinctfromzero andverifydiscovery/resourcecount.",
+              "disposition": "applied",
+              "source_id": "slurm-gres",
+              "resolution": "Keep missingtelemetry distinctfromzero andverifydiscovery/resourcecount."
+            },
+            {
+              "id": "ncpaio-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Batch success does not prove workload success",
+              "url": "https://slurm.schedmd.com/job_exit_code.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Scriptreturn0canmaskstepfailure;signals colon-delimited;derivedresultmodifiable.",
+              "recommendation": "OriginalCSVfixture distinguishesbatch,derived,signal andseparateapplication evidence.",
+              "disposition": "applied",
+              "source_id": "slurm-job-exit-codes",
+              "resolution": "OriginalCSVfixture distinguishesbatch,derived,signal andseparateapplication evidence."
+            },
+            {
+              "id": "ncpaio-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A rollout needs transitional capacity",
+              "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Surge/unavailability percentagesround differently;progressdeadline reports failurewithoutautomaticrollback.",
+              "recommendation": "Render original2replicaGPUfixture andcalculatebudgetwithstatedlimitations.",
+              "disposition": "applied",
+              "source_id": "kubernetes-deployments",
+              "resolution": "Render original2replicaGPUfixture andcalculatebudgetwithstatedlimitations."
+            },
+            {
+              "id": "ncpaio-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Quota admission and physical scheduling are separate boundaries",
+              "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DeploymentobjectcanexistwhilechildPodquotaadmissionfails.",
+              "recommendation": "Testquota-onlyversusphysical-onlychanges;neitheralonecreatesbothbudgets.",
+              "disposition": "applied",
+              "source_id": "kubernetes-resource-quotas",
+              "resolution": "Testquota-onlyversusphysical-onlychanges;neitheralonecreatesbothbudgets."
+            },
+            {
+              "id": "ncpaio-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Project quota cannot bypass department or physical constraints",
+              "url": "https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Self-hostedv2.26hierarchy,preemptibleoverquota,rank/priority andfragmentation distinctions.",
+              "recommendation": "Teachpolicybeforeplacement;do not translatequotasacrossplatformsbyname.",
+              "disposition": "applied",
+              "source_id": "nvidia-run-ai-scheduler-concepts",
+              "resolution": "Teachpolicybeforeplacement;do not translatequotasacrossplatformsbyname."
+            },
+            {
+              "id": "ncpaio-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cosmetic warnings and injection failures need different responses",
+              "url": "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Missinggroupnamecanbecosmetic;legacyhook/cgroupupdatelosesGPUaccess;SELinuxdisablechangesisolation.",
+              "recommendation": "Preserveexactmode/errorandscope;no blanketsecuritybypass.",
+              "disposition": "applied",
+              "source_id": "nvidia-container-toolkit-troubleshooting",
+              "resolution": "Preserveexactmode/errorandscope;no blanketsecuritybypass."
+            },
+            {
+              "id": "ncpaio-deep-12",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Image and runtime changes require cross-layer acceptance",
+              "url": "https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "NCP-AIO"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "11.34.0fixesimageupdateprolog/DCGMlinkdeletion,drainreporting andruntimeownership.",
+              "recommendation": "Addcanaryverificationforschedulerhooks,monitoring andrepresentativeworkloads.",
+              "disposition": "applied",
+              "source_id": "nvidia-bcm11-34-release",
+              "resolution": "Addcanaryverificationforschedulerhooks,monitoring andrepresentativeworkloads."
+            }
+          ],
+          "notes": "Mapped all 31 unchanged canonical objectives, added 25 executed local rendering and accounting checks, and answered 48 readiness prompts. Updated BCM, Slurm, Run:ai and Kubernetes operational distinctions. The linked exam PDF conflicts with canonical scope and scoring guidance; two course endpoints and conflicting learning-path exam metadata also remain unresolved. Eight infrastructure activities and human review are pending. Same-context AI review; human review pending. See docs/research/2026-09-29-ncp-aio-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-ncaaiio-deep-review",
       "title": "NCA-AIIO complete guide and learning-content review",
       "rubric_version": 1,

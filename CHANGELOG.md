@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [NCP-AIO deep review](docs/research/2026-09-29-ncp-aio-deep-review.md): Mapped 31 canonical topics, recorded a conflicting official PDF and added 25 local rendering/accounting checks with 48 answered prompts.
+
 - September 29, 2026: [NCA-AIIO deep review](docs/research/2026-09-29-nca-aiio-deep-review.md): Mapped 22 unchanged objectives, added 34 executed telemetry/capacity checks and answered all 40 readiness prompts.
 
 - September 29, 2026: [NCA-GENL deep review](docs/research/2026-09-29-nca-genl-deep-review.md): Mapped 33 current topics, repaired the page monitor and added 23 executed NumPy checks with 40 answered prompts.

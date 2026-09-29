@@ -2972,6 +2972,41 @@ This is not a complete list. Start with the official scope and choose resources 
 
 Avoid recalled exam items, dumps and guaranteed-pass banks. These readiness prompts and scenarios are original teaching material. No paid questions, private lessons, accounts or infrastructure services were accessed for this review.
 
+### NCP-AIO — NVIDIA-Certified Professional: AI Operations
+
+Resource details from the [NCP-AIO guide](../guides/NCP-AIO-nvidia-ai-operations-professional.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Select public references for the specific platform and weak areas in your practice. Metadata was checked September 29, 2026; paid interiors, lab access and checkout were not tested. Times are author estimates except explicitly listed vendor runtimes.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [NCP-AIO certification and blueprint](https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/) | Public canonical scope; 30 questions plus three labs in 120m, USD 500 | 2–4h mapping |
+| [Linked exam study guide](https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf) | Public 7-page PDF; conflicts with canonical weights/scope and has an extraneous contents entry | 1–2h comparison; do not use as replacement blueprint |
+| [Certification policies](https://www.nvidia.com/en-us/learn/certification/) | Public; pass/fail, retake, renewal and remote procedures | 30–45m |
+| [Earlier professional workshop outline URL](https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf) | Now redirects to generic Academy HTML; earlier four 5h sessions not reverified | Current outline runtime unverified |
+| [DGX learning path](https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/) | Public mixed-access index; professional course card lists USD 3000/24h. Exam card lists USD 400/1.5h versus canonical USD 500/2h | Listed 24h workshop; additional practice varies |
+| [AI Infrastructure and Operations Fundamentals](https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841) | Paid/account course shell; 7h remains listed on canonical/path pages, not verified lesson access | Listed 7h; associate refresher only |
+| [BCM documentation portal](https://docs.nvidia.com/base-command-manager/) | Public; select major version and manual | 1–2h selection |
+| [BCM 11 administrator manual](https://docs.nvidia.com/base-command-manager/manuals/11/admin-manual.pdf) | Public 1094-page PDF; selected concepts and running-node update sections reviewed | 12–24h selected reading plus proposed lab |
+| [BCM 11 release index](https://docs.nvidia.com/base-command-manager/bcm-11-release-notes) | Public version navigation | 30m |
+| [BCM 11.34.0 changes](https://docs.nvidia.com/base-command-manager/bcm-11-release-notes/bcm11-34-0.html) | Public September 11, 2026 release; selected operations changes reviewed | 1–2h relevant-version review |
+| [Slurm documentation](https://slurm.schedmd.com/documentation.html) | Public; current index 26.05, choose installed version | 8–16h selected reading |
+| [Slurm GRES](https://slurm.schedmd.com/gres.html) | Public; discovery, allocation, accounting and pre-partitioned MIG | 2–4h selected sections |
+| [Slurm exit codes](https://slurm.schedmd.com/job_exit_code.html) | Public; script/step/signal/derived evidence | 1–2h plus workbook |
+| [Kubernetes resource-management index](https://kubernetes.io/docs/concepts/resource-management/) | Public navigation; new DRA routes do not replace all legacy resource guidance | 30–60m |
+| [GPU scheduling](https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/) | Public device-plugin resource semantics | 1–2h |
+| [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) | Public; rollout allowances, progress and termination behavior | 2–3h selected sections |
+| [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/) | Public; namespace admission and extended-resource limits | 1–2h selected sections |
+| [Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) | Public; local composition/patching distinct from cluster apply | 1–2h plus workbook |
+| [Run:ai documentation](https://docs.nvidia.com/run-ai/index.html) | Public split between SaaS and self-hosted routes | 30m |
+| [Self-hosted Run:ai](https://docs.nvidia.com/run-ai/self-hosted/index.html) | Public index; align with deployed version | 1–2h selection |
+| [Run:ai scheduling concepts](https://run-ai-docs.nvidia.com/self-hosted/platform-management/runai-scheduler/scheduling/concepts-and-principles) | Public; hierarchical quota, rank, preemption and placement | 2–4h |
+| [DCGM documentation](https://docs.nvidia.com/datacenter/dcgm/latest/contents.html) | Public entry point; match fields and diagnostics to supported environment | 4–8h selected reading |
+| [Container Toolkit troubleshooting](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html) | Public; injection mode, cgroups, permissions and security tradeoffs | 2–4h |
+| [Triton documentation portal](https://docs.nvidia.com/deeplearning/triton-inference-server/index.html) | Public latest/archive links; portal also contains old release prose, so verify the selected artifact/version | 4–8h selected reading |
+
+Original tasks should require evidence, correction, verification and recovery. Memorized answers do not establish Linux or cluster fluency. Avoid recalled exam items, dumps and guaranteed-pass material.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
