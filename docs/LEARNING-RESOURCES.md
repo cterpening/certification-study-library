@@ -3146,17 +3146,24 @@ Public metadata was checked September 28, 2026. Pluralsight lists 12 hours; Link
 
 ### CompTIA Network+ (N10-009)
 
-- Official baseline: [CompTIA Network+ V9](https://www.comptia.org/en-us/certifications/network/) (**3–6 hours mapping the five domains and delivery**); treat 2027 as an estimate, not an exact retirement date
-- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**45–90 combined hours estimated**); select the exact N10-009 product/bundle
-- Current modular path: [Pluralsight N10-009](https://www.pluralsight.com/paths/comptia-network-n10-009) (**14 listed hours plus 25–50 lab/review hours**), 12 courses with labs and a practice exam
-- Detailed video route: [LinkedIn Learning / Total Seminars N10-009](https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep) (**18 hours 51 minutes plus 25–50 lab/review hours**)
-- Structured book: [O'Reilly/Pearson N10-009 Cert Guide](https://www.oreilly.com/library/view/comptia-network-n10-009/9780135367919/) (**18 hours 44 minutes listed plus 20–40 lab/review hours**)
-- Alternate deep book: [O'Reilly/Sybex Network+ Study Guide](https://www.oreilly.com/library/view/comptia-network-study/9781394235605/) (**27 hours 27 minutes listed plus 20–40 lab/review hours**)
-- Marketplace route: [Udemy / Jason Dion N10-009](https://www.udemy.com/course/comptia-network-009/) (**allow 30–60 hours with labs/review; verify current runtime**, updated August 2026)
-- Explanation-led assessment: [MeasureUp N10-009](https://www.measureup.com/comptia-network-n10-009-practice-test.html) (**about 8–15 hours across attempts and remediation**), about 150 questions advertised
-- Free current course: [Professor Messer N10-009](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) (**12 hours 55 minutes plus 25–50 hands-on hours**), 87 videos
+Resource details from the [N10-009 guide](../guides/N10-009-comptia-network-plus.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose one coherent N10-009 route, create an authorized switching/routing/services/wireless/troubleshooting lab, and use one ethical explanation-led assessment. No exact current Whizlabs N10-009 route was independently verified; reject recalled-question products and map older N10-008 material to V9 line by line.
+This is not a complete list and is not meant to be consumed in full. Choose one coherent N10-009 course or book, build an authorized lab, and use one explanation-led practice source to target weak domains.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| CompTIA [CertMaster Perform](https://www.comptia.org/en-us/resources/certmaster-training/perform/), [Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/) and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) | Paid official options; select exact N10-009 product/bundle | Provider estimates: Perform 30–60h; Learn 25–40h; Labs 15–25h; Practice 10–20h; avoid double-counting overlap |
+| [Pluralsight Network+ path](https://www.pluralsight.com/paths/comptia-network-n10-009) | Subscription; 12 courses and practice exam; generic path text also mentions labs, without a verified lab count | 14 listed hours plus 25–50 lab/review hours |
+| [LinkedIn Learning / Total Seminars N10-009](https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep) | Subscription; released April 25, 2025; public course outline available | 18 hours 51 minutes plus 25–50 lab/review hours |
+| [O'Reilly/Pearson N10-009 Cert Guide](https://www.oreilly.com/library/view/comptia-network-n10-009/9780135367919/) | Subscription book; earlier listing reported 804 pages | Earlier 18h44 listing not reverified; allow 20–40 additional lab/review hours |
+| [O'Reilly/Sybex Network+ Study Guide](https://www.oreilly.com/library/view/comptia-network-study/9781394235605/) | Subscription book; earlier listing reported 1,024 pages and an online bank | Earlier 27h27 listing not reverified; allow 20–40 additional lab/review hours |
+| [Udemy / Jason Dion N10-009](https://www.udemy.com/course/comptia-network-009/) | Paid marketplace course with practice exam | Verify current runtime; allow 30–60 hours with labs/review |
+| [MeasureUp N10-009 practice test](https://www.measureup.com/comptia-network-n10-009-practice-test.html) | Paid explanation-led practice; product-specific listing says 219 questions, released June 2024 | About 8–15 hours across attempts and remediation |
+| [Professor Messer free N10-009 course](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) | Free 87-video course; optional paid notes/practice | 12 hours 55 minutes plus 25–50 hands-on hours |
+
+No exact current Whizlabs N10-009 route was independently verified. Reject “actual questions” and dumps. Provider duration, price, bundle, bank, update and access details are volatile.
+
+Public metadata was checked September 29, 2026. Pluralsight lists 12 courses/14 hours; LinkedIn 18h51; Messer 87 videos/12h55. MeasureUp’s product-specific 219-question count differs from generic FAQ wording about 150 questions; use the product-specific figure while checking current checkout details. Both O’Reilly pages and Udemy blocked automated rechecking. Paid interiors, book runtimes and complete lesson coverage were not verified. Extra practice times are planning estimates.
 
 ### CompTIA Security+ (SY0-701)
 

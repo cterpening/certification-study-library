@@ -1,0 +1,2802 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "N10-009",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/N10-009-comptia-network-plus.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "b34b85ffd869dcf4fe7fa740c607eba5b9372d419627445dd9bcaa5daf374142",
+  "guide_after_sha256": "3bc5c5670c5e470c835be425f4815c57b819ed28575ece614d9b6c34b41a14ce",
+  "prior_records": {
+    "exam": {
+      "code": "N10-009",
+      "level": "intermediate",
+      "vendor_id": "comptia",
+      "title": "CompTIA Network+ (V9)",
+      "status": "active",
+      "study_guide_url": "https://www.comptia.org/en-us/certifications/network/",
+      "guide_path": "guides/N10-009-comptia-network-plus.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "CompTIA recommends A+ knowledge plus 9–12 months of junior network administration or support experience. Practice end-to-end packet walks, IPv4 subnetting, media/transceiver selection, VLAN/STP/routing/NAT, wireless surveys, documentation/monitoring/recovery/services, segmentation/hardening, and evidence-led troubleshooting in an authorized lab."
+    },
+    "review": {
+      "id": "n10-009-2026-09-01-source-validation",
+      "exam_code": "N10-009",
+      "guide_path": "guides/N10-009-comptia-network-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/n10-009-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3",
+      "objective_coverage": [
+        {
+          "objective_group": "Networking concepts (23%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2, 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network implementation (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network operations (19%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network security (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Network troubleshooting (24%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V9 domains are mapped to an end-to-end packet-walk and evidence model, three scenarios, eight authorized labs and 42 original checks. The estimated-2027 statement is explicitly not an exact retirement date. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objective PDF, PBQ, course lab or recalled item is used."
+    },
+    "sources": [
+      {
+        "id": "comptia-certmaster-learn",
+        "title": "CompTIA CertMaster Learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official self-paced learning platform; exact certification availability, bundle, price, duration and access vary."
+      },
+      {
+        "id": "comptia-certmaster-labs",
+        "title": "CompTIA CertMaster Labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official browser-based practical environment; verify exam inclusion and current bundle details."
+      },
+      {
+        "id": "comptia-certmaster-practice",
+        "title": "CompTIA CertMaster Practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "publisher": "CompTIA",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "FC0-U71",
+          "220-1201",
+          "220-1202",
+          "N10-009",
+          "SY0-701",
+          "XK0-006",
+          "CV0-004"
+        ],
+        "notes": "Official adaptive assessment and remediation platform; not a source of actual exam items."
+      },
+      {
+        "id": "comptia-n10-009-blueprint",
+        "title": "CompTIA Network+ V9",
+        "url": "https://www.comptia.org/en-us/certifications/network/",
+        "publisher": "CompTIA",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "Canonical five-domain weighted outline and delivery/lifecycle page. Lists N10-009, June 20, 2024 launch, maximum 90 questions, 90 minutes, 720/900 score, five languages, and estimated-2027 retirement without an exact date."
+      },
+      {
+        "id": "comptia-n10-009-pluralsight",
+        "title": "CompTIA Network+ N10-009 path",
+        "url": "https://www.pluralsight.com/paths/comptia-network-n10-009",
+        "publisher": "Pluralsight",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "Twelve courses, 14 hours, labs and a practice exam listed; current five-domain route."
+      },
+      {
+        "id": "comptia-n10-009-linkedin",
+        "title": "CompTIA Network+ N10-009 Cert Prep",
+        "url": "https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep",
+        "publisher": "LinkedIn Learning / Total Seminars",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "Eighteen hours 51 minutes, released April 2025, with detailed current-domain modules and practice items."
+      },
+      {
+        "id": "comptia-n10-009-oreilly-cert-guide",
+        "title": "CompTIA Network+ N10-009 Cert Guide, 2nd Edition",
+        "url": "https://www.oreilly.com/library/view/comptia-network-n10-009/9780135367919/",
+        "publisher": "O'Reilly / Pearson / Anthony Sequeira",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "December 2024, 804 pages and 18 hours 44 minutes listed, with review questions, memory tables, study planner and update chapter."
+      },
+      {
+        "id": "comptia-n10-009-oreilly-sybex",
+        "title": "CompTIA Network+ Study Guide, 6th Edition",
+        "url": "https://www.oreilly.com/library/view/comptia-network-study/9781394235605/",
+        "publisher": "O'Reilly / Sybex / Todd Lammle / Jon Buhagiar",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "May 2024, 1,024 pages and 27 hours 27 minutes listed, with exercises and online learning/test-bank material."
+      },
+      {
+        "id": "comptia-n10-009-udemy-dion",
+        "title": "CompTIA Network+ N10-009 Full Course and Practice Exam",
+        "url": "https://www.udemy.com/course/comptia-network-009/",
+        "publisher": "Udemy / Jason Dion",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "Current marketplace course and practice exam shown updated August 2026; public result did not expose a stable total runtime during review."
+      },
+      {
+        "id": "comptia-n10-009-measureup",
+        "title": "CompTIA Network+ N10-009 practice test",
+        "url": "https://www.measureup.com/comptia-network-n10-009-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "About 150 questions advertised with practice and certification modes plus explanation references; use for remediation, not item memorization."
+      },
+      {
+        "id": "comptia-n10-009-professor-messer",
+        "title": "Professor Messer Network+ N10-009 training course",
+        "url": "https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/",
+        "publisher": "Professor Messer",
+        "authority_class": 4,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "N10-009"
+        ],
+        "notes": "Free 87-video current course with 12 hours 55 minutes listed; optional commercial notes/practice are separate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "01cd55855ee58bf1e8c24f5d8f10da060487fbf79cf5859c1e2fb16a76c97eec",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "5c71923ba97fe5a801df2a7975a5b7738fc617b50775d050caef1db416fdd269",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "79130e9a11a1b28598cfc5e29aefda40cd0f244e1671726bd1366c7d62c3cffb",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "bfba1439f0cac86eb8346be02fee1ef8cc1f5c95da447d586ffa01ceb479f886",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "50887560a1588fb7cc2fe1c2cab2a1aa9fe1f5d1d1e9b5085173747d2c0f6ee8",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "b7076d3b65393194d227dce787020bc8fac9ff1b92e4e678b6995e941448cbdc",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "9d84ddfe6483f97dd994635db6a6d0cdd743aa6601ffba62f25cb59306c66ab4",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "917559126dd963ece80ebc9bc8ec9235312dfaad3cbe16b167bc2f948de5a247",
+      "guide_sections": [
+        "1. Networking concepts — 23%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "1c0adcc63ec58bd14fbd2849296eec6796b48e55f7ccb93bb17c0c7bec455b2c",
+      "guide_sections": [
+        "2. Network implementation — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "bad87a7b8a11dcf94996ccf8a4e4bc0627b5c2041ffb912445a1757944640c02",
+      "guide_sections": [
+        "2. Network implementation — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3733d5d6eafb7f12cbf108fbfc198c0570e7821f1f450b482db14c7194a5e5a0",
+      "guide_sections": [
+        "2. Network implementation — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "6789df3e223d531379ba7126c7d2e819d0d78529cab45f92ce5eb985ef163ea7",
+      "guide_sections": [
+        "2. Network implementation — 20%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "e2db8a1aa1cb534c26fc51579de0b3f3e8b256b794611f396d46aaeee9aa8730",
+      "guide_sections": [
+        "3. Network operations — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "5a1a15a3f2bc271c0dc11b2684b724734f33e7f9df9e08e22f816fe1db07c7db",
+      "guide_sections": [
+        "3. Network operations — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "566050d1928458188bb52b2badd7e916d4fb111326b41cf8871a1de3461a0fc0",
+      "guide_sections": [
+        "3. Network operations — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "47fd7b827585b78f9d4231dd4cacf6c52381b6aa4ffced34c89b237283ba175b",
+      "guide_sections": [
+        "3. Network operations — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "7dd80bc4e53f93cf25dd7a6073d9811475f5ccc2f5c4644b53cf63e79e4af907",
+      "guide_sections": [
+        "3. Network operations — 19%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "9cf7ef957f303cd2b5c81f475b80d1018818b0acb6f5cfa0095d436140e3fbf1",
+      "guide_sections": [
+        "4. Network security — 14%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "eb57a2d3dc72719a624b152697a3278ca2391c01bdcf2d507ccc21c116aeefe7",
+      "guide_sections": [
+        "4. Network security — 14%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "3909438751df696028d2d1b90c8cec3188c9e58466eea572f68ff3b7b5d11669",
+      "guide_sections": [
+        "4. Network security — 14%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "f096335dc4bf93df1927a7d62df72ed875470409e14b61fe8508b0aea38242df",
+      "guide_sections": [
+        "5. Network troubleshooting — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "74a613855d16680e45a395a7417027bff31516d99d34a7b3ddf722e5c49d4cf1",
+      "guide_sections": [
+        "5. Network troubleshooting — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "47bceadeaacbd22705bd1734d9a8aa8deb172d0c97e876387d19602aa0b3cab5",
+      "guide_sections": [
+        "5. Network troubleshooting — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "7aa185591e21fc8e19e712e2e0bdef2caeca22284b7432ac29f47747846eb519",
+      "guide_sections": [
+        "5. Network troubleshooting — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "3b61b3f413dac6a4d4f86a70a3ae47547c5df395ed7c1bd37454db343d747944",
+      "guide_sections": [
+        "5. Network troubleshooting — 24%",
+        "Answers and reasoning",
+        "Hands-on labs"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "N10-009"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "N10-009",
+        "title": "CompTIA Network+ (V9)",
+        "url": "https://www.comptia.org/en-us/certifications/network/",
+        "guide_path": "guides/N10-009-comptia-network-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\n10-009-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\n10-009-official-status.json",
+        "previous_sha256": "c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3",
+        "current_sha256": "4adac368c0ccb2f7118d1b3118032de4825bb122f3b678fba28615aa28a72820",
+        "previous_status_sha256": "7c20b2c302775e3649c6a12fef3333f1c7a9c8925abe71df910a0a27c93c5850",
+        "current_status_sha256": "164e638a851697ec93658f1a0f80394a85e85e836e8a22ca171f41285f1d4702",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V9",
+            "Exam series code: N10-009",
+            "Launch date: June 20, 2024",
+            "Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions",
+            "Retirement: usually three years after launch (estimated 2027)",
+            "Duration: 90 minutes",
+            "Passing score: 720 (on a scale of 100-900)",
+            "Languages: English, German, Japanese, Portuguese, and Spanish"
+          ],
+          "upcoming_announcements": [
+            "Retirement: usually three years after launch (estimated 2027)"
+          ]
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 33,
+    "reachable": 30,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "comptia-certmaster-learn",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "checked_at": "2026-09-29T04:01:08.073351+00:00",
+      "health": {
+        "id": "comptia-certmaster-learn",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "checked_at": "2026-09-29T04:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Learn",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+        "duration_signals": [],
+        "signal_fingerprint": "65786e0e6431fcfe2e58ba358241f9cdb456812d6ade43fbd74876ee340cfef2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/learn/",
+      "sha256": "9bee308577f1977bd0f56dca8d4bae5b76f9c414dd50ad6eefa6ce5961e80e06",
+      "text_characters": 1692
+    },
+    {
+      "id": "comptia-certmaster-labs",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "checked_at": "2026-09-29T04:01:08.073929+00:00",
+      "health": {
+        "id": "comptia-certmaster-labs",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "checked_at": "2026-09-29T04:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA CertMaster Labs | CompTIA UK",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+        "duration_signals": [],
+        "signal_fingerprint": "4b7552b7bda3589184d03b2dfcb4182095d6fc6dfc7d5cfddea7650446126f7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/labs/",
+      "sha256": "37496f082d45d2dc2e76ce2d12a62de9f2e4b77bcf222b42cceb0c52f93d10e6",
+      "text_characters": 1552
+    },
+    {
+      "id": "comptia-certmaster-practice",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "checked_at": "2026-09-29T04:01:08.074301+00:00",
+      "health": {
+        "id": "comptia-certmaster-practice",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "checked_at": "2026-09-29T04:01:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Practice",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+        "duration_signals": [],
+        "signal_fingerprint": "87ff57590e3cf2e101143725a522c14d9cbd91afd9e8d02bb27f86e7af1751c4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/practice/",
+      "sha256": "8d8ab7b20b45cc2623ce1437a79c68745eeb183d210d537fd32ce9839f994bf9",
+      "text_characters": 3505
+    },
+    {
+      "id": "comptia-n10-009-blueprint",
+      "url": "https://www.comptia.org/en-us/certifications/network/",
+      "checked_at": "2026-09-29T04:01:10.044354+00:00",
+      "health": {
+        "id": "comptia-n10-009-blueprint",
+        "url": "https://www.comptia.org/en-us/certifications/network/",
+        "checked_at": "2026-09-29T04:01:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/certifications/network/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Network+ (Plus) Certification | CompTIA",
+        "canonical_url": "https://www.comptia.org/en-us/certifications/network/",
+        "duration_signals": [
+          "20 hours",
+          "25 hours",
+          "40 hours",
+          "60 hours",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "16c552e3c77d73dcc192ea7b1ed81c46628503d5988138f4743daf521e00b248",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/certifications/network/",
+      "sha256": "dd923caf4a831633c9a6309455a46d0edc478ce8d8eaf4912f1e6dd94480271c",
+      "text_characters": 8854
+    },
+    {
+      "id": "comptia-n10-009-pluralsight",
+      "url": "https://www.pluralsight.com/paths/comptia-network-n10-009",
+      "checked_at": "2026-09-29T04:01:10.252230+00:00",
+      "health": {
+        "id": "comptia-n10-009-pluralsight",
+        "url": "https://www.pluralsight.com/paths/comptia-network-n10-009",
+        "checked_at": "2026-09-29T04:01:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/comptia-network-n10-009",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "CompTIA Network+ (N10-009)",
+        "canonical_url": "https://www.pluralsight.com/paths/comptia-network-n10-009",
+        "duration_signals": [
+          "14 Hours"
+        ],
+        "signal_fingerprint": "854b52ab4ca6f501c3e004e9dfd9688e5beef62246f05ff4eb0f4820eca5fb9e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/comptia-network-n10-009",
+      "sha256": "c776a4642a6e2f3d74140cc12c49e066ae50acbd13e108b601ecd1357040252e",
+      "text_characters": 5987
+    },
+    {
+      "id": "comptia-n10-009-linkedin",
+      "url": "https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep",
+      "checked_at": "2026-09-29T04:01:10.490262+00:00",
+      "health": {
+        "id": "comptia-n10-009-linkedin",
+        "url": "https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep",
+        "checked_at": "2026-09-29T04:01:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CompTIA Network+ (N10-009) Cert Prep Online Class | LinkedIn Learning, formerly Lynda.com",
+        "canonical_url": "https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep",
+        "duration_signals": [
+          "15 minutes",
+          "PT10M22S",
+          "PT10M24S",
+          "PT10M25S",
+          "PT10M2S",
+          "PT10M37S",
+          "PT10M3S",
+          "PT10M51S",
+          "PT10M6S",
+          "PT10M7S",
+          "PT11M13S",
+          "PT11M25S",
+          "PT11M48S",
+          "PT12M23S",
+          "PT12M24S",
+          "PT12M25S",
+          "PT12M27S",
+          "PT12M28S",
+          "PT12M30S",
+          "PT12M31S",
+          "PT12M37S",
+          "PT12M39S",
+          "PT12M59S",
+          "PT13M",
+          "PT13M33S",
+          "PT13M34S",
+          "PT13M46S",
+          "PT14M31S",
+          "PT14M33S",
+          "PT14M39S"
+        ],
+        "signal_fingerprint": "c4af119b1c4cee2dc7dac6901c0614e8daef344d1658436085c6ee8a7e548f14",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep",
+      "sha256": "63c876ba58b4d9881f1956eaf0885805dbec75b2f314f4468be5cdb53714874b",
+      "text_characters": 8611
+    },
+    {
+      "id": "comptia-n10-009-oreilly-cert-guide",
+      "url": "https://www.oreilly.com/library/view/comptia-network-n10-009/9780135367919/",
+      "checked_at": "2026-09-29T04:01:11.996609+00:00",
+      "health": {
+        "id": "comptia-n10-009-oreilly-cert-guide",
+        "url": "https://www.oreilly.com/library/view/comptia-network-n10-009/9780135367919/",
+        "checked_at": "2026-09-29T04:01:11+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/comptia-network-n10-009/9780135367919/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-n10-009-oreilly-sybex",
+      "url": "https://www.oreilly.com/library/view/comptia-network-study/9781394235605/",
+      "checked_at": "2026-09-29T04:01:12.182667+00:00",
+      "health": {
+        "id": "comptia-n10-009-oreilly-sybex",
+        "url": "https://www.oreilly.com/library/view/comptia-network-study/9781394235605/",
+        "checked_at": "2026-09-29T04:01:12+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/comptia-network-study/9781394235605/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-n10-009-udemy-dion",
+      "url": "https://www.udemy.com/course/comptia-network-009/",
+      "checked_at": "2026-09-29T04:01:12.295636+00:00",
+      "health": {
+        "id": "comptia-n10-009-udemy-dion",
+        "url": "https://www.udemy.com/course/comptia-network-009/",
+        "checked_at": "2026-09-29T04:01:12+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/comptia-network-009/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "comptia-n10-009-measureup",
+      "url": "https://www.measureup.com/comptia-network-n10-009-practice-test.html",
+      "checked_at": "2026-09-29T04:01:12.342009+00:00",
+      "health": {
+        "id": "comptia-n10-009-measureup",
+        "url": "https://www.measureup.com/comptia-network-n10-009-practice-test.html",
+        "checked_at": "2026-09-29T04:01:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/comptia-network-n10-009-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "CompTIA Network+ Practice Test N10-009",
+        "canonical_url": "https://www.measureup.com/comptia-network-n10-009-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "4eb077b6b96dbf73c7dc210b5ee30b04ffa981d213467c3d2a99917b21eacdf8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/comptia-network-n10-009-practice-test.html",
+      "sha256": "a2bd3cc5cb7cbe6da5ad8795f8591cc57a987f7486ad45b5dd0ddba3387e597d",
+      "text_characters": 14834
+    },
+    {
+      "id": "comptia-n10-009-professor-messer",
+      "url": "https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/",
+      "checked_at": "2026-09-29T04:01:12.499159+00:00",
+      "health": {
+        "id": "comptia-n10-009-professor-messer",
+        "url": "https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/",
+        "checked_at": "2026-09-29T04:01:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Professor Messer’s CompTIA N10-009 Network+ Training Course",
+        "canonical_url": "https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/",
+        "duration_signals": [
+          "12 hours",
+          "55 minutes"
+        ],
+        "signal_fingerprint": "dc539e0ccfa32578e6686a0980f49e25b406482767415e5c169837db87ba2b29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/",
+      "sha256": "0a551dfb6729195719c865adda2cca1c8295d16ea4c5fc60e43f7cef6fe99149",
+      "text_characters": 19455
+    },
+    {
+      "id": "comptia-partner-resources",
+      "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "checked_at": "2026-09-29T04:04:55.104427+00:00",
+      "health": {
+        "id": "comptia-partner-resources",
+        "url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "checked_at": "2026-09-29T04:04:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Partner Resources",
+        "canonical_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+        "duration_signals": [],
+        "signal_fingerprint": "be631fe463c6d0a7c5e51dfcf4ec7e4813a2eeae48c6ca7bc993534faf97d57e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "sha256": "14576ecf6117f8f05f0462c05865386b5da334d76d89e1da2474161210a21a35",
+      "text_characters": 4747
+    },
+    {
+      "id": "comptia-certmaster-perform",
+      "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "checked_at": "2026-09-29T04:04:55.104996+00:00",
+      "health": {
+        "id": "comptia-certmaster-perform",
+        "url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "checked_at": "2026-09-29T04:04:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "CertMaster Perform",
+        "canonical_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+        "duration_signals": [],
+        "signal_fingerprint": "9f733cd9323fb2d342292e1f99473168f956344ae0963b65ab179e22ee2a16a8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.comptia.org/en-us/resources/certmaster-training/perform/",
+      "sha256": "2f735ec2c8262941eaf049c2c35d34023cc1a6f0aacd7c301c41547a7fc72e7d",
+      "text_characters": 2011
+    },
+    {
+      "id": "cisco-route-selection",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8651-21.html",
+      "checked_at": "2026-09-29T04:04:55.105388+00:00",
+      "health": {
+        "id": "cisco-route-selection",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8651-21.html",
+        "checked_at": "2026-09-29T04:04:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8651-21.html",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Configure Route Selection for Routers",
+        "canonical_url": "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8651-21.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7af080ffc31ca253e0ada15f2701847336dc49a2f1858c8c790df535c358362c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8651-21.html",
+      "sha256": "0f7e8dda912e5c2798dc9103d931951bdce41f160b187a60352c227ae2998246",
+      "text_characters": 15881
+    },
+    {
+      "id": "rfc8314",
+      "url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+      "checked_at": "2026-09-29T04:04:56.287924+00:00",
+      "health": {
+        "id": "rfc8314",
+        "url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+        "checked_at": "2026-09-29T04:04:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a331680c51793138d7ca58188a42fe687ca8f92b09c4c7795ae85f3bbd525ba4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+      "sha256": "eb03b79c959c3144671bbff3e67b1531d5701cc4276ffa48471de2e7fa379610",
+      "text_characters": 56262
+    },
+    {
+      "id": "rfc8200",
+      "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+      "checked_at": "2026-09-29T04:04:57.136346+00:00",
+      "health": {
+        "id": "rfc8200",
+        "url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+        "checked_at": "2026-09-29T04:04:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6ff6bfac5734c5cd038c192dfeb166841372495788b688af6a97655c52d03cd7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8200.html",
+      "sha256": "b3f67520ee874ed55557b8ac3da6406411e1061f5f79503534483ba363e7f8c6",
+      "text_characters": 74437
+    },
+    {
+      "id": "rfc8201",
+      "url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+      "checked_at": "2026-09-29T04:04:57.236081+00:00",
+      "health": {
+        "id": "rfc8201",
+        "url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+        "checked_at": "2026-09-29T04:04:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+        "duration_signals": [
+          "10 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "dfb9520cd5592d64f2ed3572f8661bf2173bc9a4dc9523672b7b5f8f0a2090f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+      "sha256": "f62a2fca94cd9862d8e3f3fbaadaead30849197a45a6561fed087e0b74148083",
+      "text_characters": 37104
+    },
+    {
+      "id": "rfc7858",
+      "url": "https://www.rfc-editor.org/rfc/rfc7858.html",
+      "checked_at": "2026-09-29T04:04:57.298675+00:00",
+      "health": {
+        "id": "rfc7858",
+        "url": "https://www.rfc-editor.org/rfc/rfc7858.html",
+        "checked_at": "2026-09-29T04:04:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc7858.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc7858.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8ff96b5f5776208e6c8a64b2ac776823a3d5143d90df4f2620083f821a9b718f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc7858.html",
+      "sha256": "896c7f1bc0049e41fda9bb6bd59bf2bf7596f64f1d7551f33d0046d37c8a8138",
+      "text_characters": 36412
+    },
+    {
+      "id": "rfc8484",
+      "url": "https://www.rfc-editor.org/rfc/rfc8484.html",
+      "checked_at": "2026-09-29T04:04:57.603170+00:00",
+      "health": {
+        "id": "rfc8484",
+        "url": "https://www.rfc-editor.org/rfc/rfc8484.html",
+        "checked_at": "2026-09-29T04:04:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc8484.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc8484.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b8d516b260b431a573f43d0bfd892a31f3aca5c16330b4a6b00853a021e96787",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8484.html",
+      "sha256": "e8412761adfae016e804d899ff20377bbea32bfa989b5fc371059da73138eba0",
+      "text_characters": 41858
+    },
+    {
+      "id": "rfc4033",
+      "url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+      "checked_at": "2026-09-29T04:04:57.650356+00:00",
+      "health": {
+        "id": "rfc4033",
+        "url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+        "checked_at": "2026-09-29T04:04:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0531b65d588fbcd1b2424a1e31e11f15f715f77d66490db75b41f153ac18997b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+      "sha256": "2e63aad16e3cf4077995a6b63d8780bc87c5dce2418827ba328340c4a67677b0",
+      "text_characters": 47428
+    },
+    {
+      "id": "rfc2131",
+      "url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "checked_at": "2026-09-29T04:04:57.694485+00:00",
+      "health": {
+        "id": "rfc2131",
+        "url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+        "checked_at": "2026-09-29T04:04:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+        "duration_signals": [],
+        "signal_fingerprint": "837ff7740e7294c0eca81f7782ad21d0d164b9883fcc8327636538ec8aa4e33b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "sha256": "2738855a6714a3297b432c8562c8511b66c6030ef82f909df2d15159acbb9873",
+      "text_characters": 94396
+    },
+    {
+      "id": "rfc3021",
+      "url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+      "checked_at": "2026-09-29T04:04:58.006590+00:00",
+      "health": {
+        "id": "rfc3021",
+        "url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+        "checked_at": "2026-09-29T04:04:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f0e7fb8da231094c5649dbb11948f7bfcd46230065cf554ba096a85fde1c13a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3021.html",
+      "sha256": "6f737ced83d0eea917362499d232130bccbefd0ebca560488d7e2aca952ea743",
+      "text_characters": 17187
+    },
+    {
+      "id": "rfc7348",
+      "url": "https://www.rfc-editor.org/rfc/rfc7348.html",
+      "checked_at": "2026-09-29T04:04:58.132421+00:00",
+      "health": {
+        "id": "rfc7348",
+        "url": "https://www.rfc-editor.org/rfc/rfc7348.html",
+        "checked_at": "2026-09-29T04:04:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc7348.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc7348.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c923b9140214ff393f4e75f405c3590dc598950527d068c5667cb3abddab0207",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc7348.html",
+      "sha256": "13bc3da8faa3d96265e53d51a95ff9916838d2f7766d450a6b99402ac8110a67",
+      "text_characters": 39859
+    },
+    {
+      "id": "rfc8915",
+      "url": "https://www.rfc-editor.org/rfc/rfc8915.html",
+      "checked_at": "2026-09-29T04:04:58.200266+00:00",
+      "health": {
+        "id": "rfc8915",
+        "url": "https://www.rfc-editor.org/rfc/rfc8915.html",
+        "checked_at": "2026-09-29T04:04:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc8915.html",
+        "content_type": "text/html",
+        "page_title": "RFC 8915: Network Time Security for the Network Time Protocol",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc8915.html",
+        "duration_signals": [],
+        "signal_fingerprint": "ccbbbe70db397ab7382fc4e6e001108cd8545411f1da2cea3f05154207a3daa2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc8915.html",
+      "sha256": "f43af0dfd1d5f444ee58c61606d76bd79df3edfe5dae7090237df4023e740814",
+      "text_characters": 72559
+    },
+    {
+      "id": "python313-ipaddress",
+      "url": "https://docs.python.org/3.13/library/ipaddress.html",
+      "checked_at": "2026-09-29T04:04:58.375094+00:00",
+      "health": {
+        "id": "python313-ipaddress",
+        "url": "https://docs.python.org/3.13/library/ipaddress.html",
+        "checked_at": "2026-09-29T04:04:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.python.org/3.13/library/ipaddress.html",
+        "content_type": "text/html",
+        "page_title": "ipaddress — IPv4/IPv6 manipulation library",
+        "canonical_url": "https://docs.python.org/3/library/ipaddress.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1f37f82f5bc4d3807449e1f9c26a4c3312a0999f7a0f777fe868a04901719751",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.python.org/3.13/library/ipaddress.html",
+      "sha256": "354e5e379466ae2ac5234211358d51469fdde9d9f00beb0c872b5652ac451369",
+      "text_characters": 33353
+    },
+    {
+      "id": "dnslib-package",
+      "url": "https://pypi.org/project/dnslib/",
+      "checked_at": "2026-09-29T04:04:58.489950+00:00",
+      "health": {
+        "id": "dnslib-package",
+        "url": "https://pypi.org/project/dnslib/",
+        "checked_at": "2026-09-29T04:04:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pypi.org/project/dnslib/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Client Challenge",
+        "canonical_url": "https://pypi.org/project/dnslib/",
+        "duration_signals": [],
+        "signal_fingerprint": "117b354cbf1c64ccd5cc6800f0882d47193d1053567587290c2b5f955cca3c90",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pypi.org/project/dnslib/",
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "text_characters": 226,
+      "content_review_note": "Local HTTP fetch returned226-character shell. Separate web retrieval read upstream package/release material; installed upstream server.py API was inspected. No shell content treated as article proof."
+    },
+    {
+      "id": "dnspython-package",
+      "url": "https://pypi.org/project/dnspython/",
+      "checked_at": "2026-09-29T04:04:58.826028+00:00",
+      "health": {
+        "id": "dnspython-package",
+        "url": "https://pypi.org/project/dnspython/",
+        "checked_at": "2026-09-29T04:04:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://pypi.org/project/dnspython/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "dnspython",
+        "canonical_url": "https://pypi.org/project/dnspython/",
+        "duration_signals": [],
+        "signal_fingerprint": "b0d338489292dd9f51a6789ac5555b6f18d6574657810e8a43d16b0c3ddfab6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://pypi.org/project/dnspython/",
+      "sha256": "e612fb44244f5cc8cf44ab730bee84b4d5d5005924da4911bc30d7def1319686",
+      "text_characters": 8883
+    },
+    {
+      "id": "dnspython-query",
+      "url": "https://dnspython.readthedocs.io/en/stable/query.html",
+      "checked_at": "2026-09-29T04:04:58.994656+00:00",
+      "health": {
+        "id": "dnspython-query",
+        "url": "https://dnspython.readthedocs.io/en/stable/query.html",
+        "checked_at": "2026-09-29T04:04:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://dnspython.readthedocs.io/en/stable/query.html",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "DNS Query Support — dnspython 2.8.0 documentation",
+        "canonical_url": "https://dnspython.readthedocs.io/en/stable/query.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e81b47e489aec8af2d7e43c9b7cba303709259c0781124a9b5bf62b3c92740db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://dnspython.readthedocs.io/en/stable/query.html",
+      "sha256": "a9063018afd121df1e0cc36de28c03e4682b248e2a8b94709dd5ae15ac5a5086",
+      "text_characters": 18419
+    },
+    {
+      "id": "cloudflare-dns-encryption-blog",
+      "url": "https://blog.cloudflare.com/dns-encryption-explained/",
+      "checked_at": "2026-09-29T04:04:59.116392+00:00",
+      "health": {
+        "id": "cloudflare-dns-encryption-blog",
+        "url": "https://blog.cloudflare.com/dns-encryption-explained/",
+        "checked_at": "2026-09-29T04:04:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blog.cloudflare.com/dns-encryption-explained/",
+        "content_type": "text/html",
+        "page_title": "DNS Encryption Explained",
+        "canonical_url": "https://blog.cloudflare.com/dns-encryption-explained/",
+        "duration_signals": [
+          "16 minute"
+        ],
+        "signal_fingerprint": "c2c1f39be3f433e83556c21ca12b3228d20d90b3bcca38c117b55e8e66fc50bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blog.cloudflare.com/dns-encryption-explained/",
+      "sha256": "193b38f578ae58b04ce63bd944e5c120e853c60dabdc499c3c1ad577e203cc04",
+      "text_characters": 30755
+    },
+    {
+      "id": "comptia-n10-009-objectives-pdf",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+      "checked_at": "2026-09-29T04:05:01.799719+00:00",
+      "health": {
+        "id": "comptia-n10-009-objectives-pdf",
+        "url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+        "checked_at": "2026-09-29T04:05:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+      "sha256": "cb0ca59be880c5ad9ee6905373f39443d040177968d5e36c93922c8622608c52",
+      "bytes": 250464,
+      "pdf_pages": 19,
+      "text_characters": 29144
+    },
+    {
+      "id": "rfc3414",
+      "url": "https://www.rfc-editor.org/rfc/rfc3414.html",
+      "checked_at": "2026-09-29T04:08:42.927057+00:00",
+      "health": {
+        "id": "rfc3414",
+        "url": "https://www.rfc-editor.org/rfc/rfc3414.html",
+        "checked_at": "2026-09-29T04:08:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc3414.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc3414.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6e5671629bf4afc95af8a90c1dc8d4f90efcf148ef62237335b4c030f9fac61a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc3414.html",
+      "sha256": "3bde94a50cb17c8510c1ebe8a879709b48857656c650c8ae42a0a0365ddaf77f",
+      "text_characters": 159952
+    },
+    {
+      "id": "rfc4861",
+      "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+      "checked_at": "2026-09-29T04:08:42.927610+00:00",
+      "health": {
+        "id": "rfc4861",
+        "url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+        "checked_at": "2026-09-29T04:08:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+        "duration_signals": [
+          "1 hour",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "e7e6881c2a3943c3ffa72ef2acac78e499903967d3fed8d44e6648c2195352b7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc4861.html",
+      "sha256": "026e88bc18ebf4fa9f9e9625adc9fb483a97473dc6e567804bae2fb602d85cb2",
+      "text_characters": 192026
+    },
+    {
+      "id": "iana-service-ports-csv",
+      "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+      "checked_at": "2026-09-29T04:09:25.607109+00:00",
+      "health": {
+        "id": "iana-service-ports-csv",
+        "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+        "checked_at": "2026-09-29T04:09:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+        "content_type": "text/csv; charset=UTF-8; header=present",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "sha256": "5bae669f482517e57e3a7de40cf458b46029a669da8c76a2fd5b861f673281e6",
+      "bytes": 1157561,
+      "selected_rows": 66,
+      "representation_note": "CSV assignments reviewed; assignments do not establish observed protocol or typical use of every registered transport."
+    }
+  ],
+  "added_source_ids": [
+    "comptia-n10-009-objectives-pdf",
+    "cisco-route-selection",
+    "rfc8314",
+    "rfc8200",
+    "rfc8201",
+    "rfc7858",
+    "rfc8484",
+    "rfc4033",
+    "rfc2131",
+    "rfc3021",
+    "rfc7348",
+    "rfc8915",
+    "dnslib-package",
+    "dnspython-package",
+    "dnspython-query",
+    "cloudflare-dns-encryption-blog",
+    "rfc3414",
+    "rfc4861"
+  ],
+  "findings": [
+    {
+      "id": "n10009-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Monitor detected a duration metadata addition",
+      "url": "https://www.comptia.org/en-us/certifications/network/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "N10-009"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The normalized diff adds only Duration: 90 minutes; objective text, weights and announced lifecycle are unchanged.",
+      "recommendation": "Explicitly accept the reviewed metadata and archive byte-identical prior snapshot; preserve historical review hashes/dates/conclusions.",
+      "disposition": "applied",
+      "source_id": "comptia-n10-009-blueprint",
+      "resolution": "Explicitly accept the reviewed metadata and archive byte-identical prior snapshot; preserve historical review hashes/dates/conclusions."
+    },
+    {
+      "id": "n10009-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Full outline confirms modern-network scope beyond the summary",
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "N10-009"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Objective 1.8 includes SD-WAN, VXLAN, SASE/SSE, zero trust, IaC and IPv6 transitions; objective 5.1 explicitly includes methodology.",
+      "recommendation": "Map all 25 numbered objectives and teach these topics directly with original scenarios and references.",
+      "disposition": "applied",
+      "source_id": "comptia-n10-009-objectives-pdf",
+      "resolution": "Map all 25 numbered objectives and teach these topics directly with original scenarios and references."
+    },
+    {
+      "id": "n10009-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Route installation and forwarding were compressed into an ambiguous sequence",
+      "url": "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8651-21.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "N10-009"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Candidate installation uses route-source preference and protocol path selection; forwarding uses the longest matching installed prefix.",
+      "recommendation": "Rewrite the distinction and execute a model for specific/default/host routes, missing routes and equal-prefix ambiguity.",
+      "disposition": "applied",
+      "source_id": "cisco-route-selection",
+      "resolution": "Rewrite the distinction and execute a model for specific/default/host routes, missing routes and equal-prefix ambiguity."
+    },
+    {
+      "id": "n10009-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Exhaustion was overgeneralized to existing renewals",
+      "url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "N10-009"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Lease renewal requests extension of an existing address and is distinct from new allocation.",
+      "recommendation": "Explain new-client versus existing-lease behavior, timers/rebinding/expiry, and qualified link-local evidence.",
+      "disposition": "applied",
+      "source_id": "rfc2131",
+      "resolution": "Explain new-client versus existing-lease behavior, timers/rebinding/expiry, and qualified link-local evidence."
+    },
+    {
+      "id": "n10009-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "PDF port label needed an operational security distinction",
+      "url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "N10-009"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "PDF lists SMTPS 587; RFC 8314 distinguishes STARTTLS submission 587 and implicit TLS submission 465.",
+      "recommendation": "Keep the exam-listed port while teaching negotiation/identity checks and avoid claiming a port proves encryption.",
+      "disposition": "applied",
+      "source_id": "rfc8314",
+      "resolution": "Keep the exam-listed port while teaching negotiation/identity checks and avoid claiming a port proves encryption."
+    },
+    {
+      "id": "n10009-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "DNS response and transport security needed separate evidence",
+      "url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "N10-009"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DNSSEC authenticates DNS data and denial but does not provide confidentiality; encrypted transport has a different scope.",
+      "recommendation": "Add record/response/privacy tables and a real isolated DNS exercise; do not claim DNSSEC/TLS/cache execution.",
+      "disposition": "applied",
+      "source_id": "rfc4033",
+      "resolution": "Add record/response/privacy tables and a real isolated DNS exercise; do not claim DNSSEC/TLS/cache execution."
+    },
+    {
+      "id": "n10009-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Small successful probes do not establish a working path MTU",
+      "url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "N10-009"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "IPv6 PMTU depends on Packet Too Big feedback; blocked feedback can cause larger transfers to stall.",
+      "recommendation": "Add qualified VXLAN overhead calculations and distinguish IPv6 source fragmentation from router behavior; no path reconfiguration executed.",
+      "disposition": "applied",
+      "source_id": "rfc8201",
+      "resolution": "Add qualified VXLAN overhead calculations and distinguish IPv6 source fragmentation from router behavior; no path reconfiguration executed."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "cloudflare-dns-encryption-blog",
+      "author": "Peter Wu",
+      "published_on": "2019-10-29",
+      "disposition": "accepted-with-limits",
+      "value": "Resolver trust, encrypted transport scope and split-DNS/monitoring tradeoffs.",
+      "limits": "Historical browser/systemd/cloudflared commands, defaults, deployment shares and draft-protocol status are not current guidance. No product or resolver configuration executed."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "service_labs_executed": 0,
+    "isolated_local_protocol_exercises": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 72,
+      "failed": 0,
+      "checks": [
+        "four expected largest-first allocations",
+        "nonoverlapping LANs",
+        "conventional host capacities",
+        "all LANs remain in parent",
+        "LAN boundary 1",
+        "LAN boundary 2",
+        "LAN boundary 3",
+        "LAN boundary 6",
+        "LAN boundary 7",
+        "LAN boundary 14",
+        "LAN boundary 15",
+        "pool exhaustion",
+        "noninteger count",
+        "zero count",
+        "IPv6 not silently treated as IPv4",
+        "point to point31 exposes both addresses",
+        "host32 has one address",
+        "link networks do not overlap LANs",
+        "summary includes intentionally unallocated space",
+        "forward 10.40.0.130",
+        "forward 10.40.0.150",
+        "forward 10.40.0.65",
+        "forward 10.40.1.2",
+        "forward 198.51.100.2",
+        "no route explicit",
+        "mixed family ignored",
+        "equal-prefix ambiguity",
+        "classic overhead illustration",
+        "PoE headroom scenario",
+        "rate lower bound",
+        "udp router.lab.test. A code/answers",
+        "udp router.lab.test. A authoritative/recursion",
+        "udp router.lab.test. A synthetic content/TTL",
+        "udp router.lab.test. AAAA code/answers",
+        "udp router.lab.test. AAAA authoritative/recursion",
+        "udp router.lab.test. AAAA synthetic content/TTL",
+        "udp alias.lab.test. A code/answers",
+        "udp alias.lab.test. A authoritative/recursion",
+        "udp alias target",
+        "udp router.lab.test. TXT code/answers",
+        "udp router.lab.test. TXT authoritative/recursion",
+        "udp negative SOA",
+        "udp missing.lab.test. A code/answers",
+        "udp missing.lab.test. A authoritative/recursion",
+        "udp negative SOA",
+        "udp outside.test. A code/answers",
+        "udp outside.test. A authoritative/recursion",
+        "udp ROUTER.LAB.TEST. A code/answers",
+        "udp ROUTER.LAB.TEST. A authoritative/recursion",
+        "udp ROUTER.LAB.TEST. A synthetic content/TTL",
+        "tcp router.lab.test. A code/answers",
+        "tcp router.lab.test. A authoritative/recursion",
+        "tcp router.lab.test. A synthetic content/TTL",
+        "tcp router.lab.test. AAAA code/answers",
+        "tcp router.lab.test. AAAA authoritative/recursion",
+        "tcp router.lab.test. AAAA synthetic content/TTL",
+        "tcp alias.lab.test. A code/answers",
+        "tcp alias.lab.test. A authoritative/recursion",
+        "tcp alias target",
+        "tcp router.lab.test. TXT code/answers",
+        "tcp router.lab.test. TXT authoritative/recursion",
+        "tcp negative SOA",
+        "tcp missing.lab.test. A code/answers",
+        "tcp missing.lab.test. A authoritative/recursion",
+        "tcp negative SOA",
+        "tcp outside.test. A code/answers",
+        "tcp outside.test. A authoritative/recursion",
+        "tcp ROUTER.LAB.TEST. A code/answers",
+        "tcp ROUTER.LAB.TEST. A authoritative/recursion",
+        "tcp ROUTER.LAB.TEST. A synthetic content/TTL",
+        "TCP listener stopped",
+        "UDP listener released"
+      ],
+      "dns_wire_exchanges": 14,
+      "python": "3.13.14",
+      "packages": {
+        "dnslib": "0.9.26",
+        "dnspython": "2.8.0"
+      },
+      "sources": {
+        "network_plan.py": "4aca316437d0754113fab78e859273fad6ce214930fb239586cefbe2d5821237",
+        "dns_loopback.py": "687ee17f56c8398f9518dc98e1a11d2603107aa088089fe0cefd91b6e06d49d5"
+      },
+      "listeners": "127.0.0.1 only; two OS-selected transport ports, no recursion/upstream. Stopped and sockets released.",
+      "limits": [
+        "Subnet/route/MTU/PoE/rate checks are planning calculations, not device behavior.",
+        "DNS test zone demonstrates selected A/AAAA/CNAME/NODATA/NXDOMAIN/REFUSED behavior over real loopback UDP and TCP.",
+        "No system DNS, hosts file, firewall, interfaces, routing, DHCP, TLS, DNSSEC, caching, upstream resolver, packet capture, Wi-Fi, switch or remote service changed/tested."
+      ],
+      "public_examples_executed": 2,
+      "additional_public_example_dns_exchanges": 10,
+      "total_dns_wire_exchanges": 24
+    }
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "72 harness checks and two public examples ran locally; 24 total DNS exchanges bound only to 127.0.0.1, with no upstream queries. Listeners stopped and sockets released.",
+    "Subnet, forwarding, MTU, PoE and transfer-rate cases are calculations/models, not configured device behavior.",
+    "No DHCP service, routing protocol, physical switch/router, Wi-Fi, capture, scan, NAT/firewall, system DNS/hosts change, remote service, TLS, DNSSEC, cache or full failover lab executed.",
+    "The tiny DNS zone supports only selected demonstration behavior and is not a production authoritative/recursive implementation.",
+    "All eight complete network labs remain proposed.",
+    "Two OReilly pages and Udemy blocked automated rechecking; paid interiors and current book runtimes/page counts were not reverified.",
+    "Retirement remains an estimate of 2027, not an exact date."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "learning_catalog_consistency": "passed",
+    "passed": 72,
+    "failed": 0,
+    "checks": [
+      "four expected largest-first allocations",
+      "nonoverlapping LANs",
+      "conventional host capacities",
+      "all LANs remain in parent",
+      "LAN boundary 1",
+      "LAN boundary 2",
+      "LAN boundary 3",
+      "LAN boundary 6",
+      "LAN boundary 7",
+      "LAN boundary 14",
+      "LAN boundary 15",
+      "pool exhaustion",
+      "noninteger count",
+      "zero count",
+      "IPv6 not silently treated as IPv4",
+      "point to point31 exposes both addresses",
+      "host32 has one address",
+      "link networks do not overlap LANs",
+      "summary includes intentionally unallocated space",
+      "forward 10.40.0.130",
+      "forward 10.40.0.150",
+      "forward 10.40.0.65",
+      "forward 10.40.1.2",
+      "forward 198.51.100.2",
+      "no route explicit",
+      "mixed family ignored",
+      "equal-prefix ambiguity",
+      "classic overhead illustration",
+      "PoE headroom scenario",
+      "rate lower bound",
+      "udp router.lab.test. A code/answers",
+      "udp router.lab.test. A authoritative/recursion",
+      "udp router.lab.test. A synthetic content/TTL",
+      "udp router.lab.test. AAAA code/answers",
+      "udp router.lab.test. AAAA authoritative/recursion",
+      "udp router.lab.test. AAAA synthetic content/TTL",
+      "udp alias.lab.test. A code/answers",
+      "udp alias.lab.test. A authoritative/recursion",
+      "udp alias target",
+      "udp router.lab.test. TXT code/answers",
+      "udp router.lab.test. TXT authoritative/recursion",
+      "udp negative SOA",
+      "udp missing.lab.test. A code/answers",
+      "udp missing.lab.test. A authoritative/recursion",
+      "udp negative SOA",
+      "udp outside.test. A code/answers",
+      "udp outside.test. A authoritative/recursion",
+      "udp ROUTER.LAB.TEST. A code/answers",
+      "udp ROUTER.LAB.TEST. A authoritative/recursion",
+      "udp ROUTER.LAB.TEST. A synthetic content/TTL",
+      "tcp router.lab.test. A code/answers",
+      "tcp router.lab.test. A authoritative/recursion",
+      "tcp router.lab.test. A synthetic content/TTL",
+      "tcp router.lab.test. AAAA code/answers",
+      "tcp router.lab.test. AAAA authoritative/recursion",
+      "tcp router.lab.test. AAAA synthetic content/TTL",
+      "tcp alias.lab.test. A code/answers",
+      "tcp alias.lab.test. A authoritative/recursion",
+      "tcp alias target",
+      "tcp router.lab.test. TXT code/answers",
+      "tcp router.lab.test. TXT authoritative/recursion",
+      "tcp negative SOA",
+      "tcp missing.lab.test. A code/answers",
+      "tcp missing.lab.test. A authoritative/recursion",
+      "tcp negative SOA",
+      "tcp outside.test. A code/answers",
+      "tcp outside.test. A authoritative/recursion",
+      "tcp ROUTER.LAB.TEST. A code/answers",
+      "tcp ROUTER.LAB.TEST. A authoritative/recursion",
+      "tcp ROUTER.LAB.TEST. A synthetic content/TTL",
+      "TCP listener stopped",
+      "UDP listener released"
+    ],
+    "dns_wire_exchanges": 14,
+    "python": "3.13.14",
+    "packages": {
+      "dnslib": "0.9.26",
+      "dnspython": "2.8.0"
+    },
+    "sources": {
+      "network_plan.py": "4aca316437d0754113fab78e859273fad6ce214930fb239586cefbe2d5821237",
+      "dns_loopback.py": "687ee17f56c8398f9518dc98e1a11d2603107aa088089fe0cefd91b6e06d49d5"
+    },
+    "listeners": "127.0.0.1 only; two OS-selected transport ports, no recursion/upstream. Stopped and sockets released.",
+    "limits": [
+      "Subnet/route/MTU/PoE/rate checks are planning calculations, not device behavior.",
+      "DNS test zone demonstrates selected A/AAAA/CNAME/NODATA/NXDOMAIN/REFUSED behavior over real loopback UDP and TCP.",
+      "No system DNS, hosts file, firewall, interfaces, routing, DHCP, TLS, DNSSEC, caching, upstream resolver, packet capture, Wi-Fi, switch or remote service changed/tested."
+    ],
+    "public_examples_executed": 2,
+    "additional_public_example_dns_exchanges": 10,
+    "total_dns_wire_exchanges": 24
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/n10-009-2026-09-01-official-objectives.txt",
+    "sha256": "c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3",
+    "historical_audit_paths_updated": 1,
+    "note": "Byte-identical earlier snapshot; historical hashes/dates/conclusions retained."
+  },
+  "prior_status": {
+    "skills_versions": [
+      "Exam version: V9",
+      "Exam series code: N10-009",
+      "Launch date: June 20, 2024",
+      "Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions",
+      "Retirement: usually three years after launch (estimated 2027)",
+      "Passing score: 720 (on a scale of 100-900)",
+      "Languages: English, German, Japanese, Portuguese, and Spanish"
+    ],
+    "upcoming_announcements": [
+      "Retirement: usually three years after launch (estimated 2027)"
+    ]
+  },
+  "objective_baseline_acceptance": {
+    "changed": [
+      "N10-009"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "N10-009",
+        "title": "CompTIA Network+ (V9)",
+        "url": "https://www.comptia.org/en-us/certifications/network/",
+        "guide_path": "guides/N10-009-comptia-network-plus.md",
+        "snapshot_path": "data\\objective-snapshots\\n10-009-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\n10-009-official-status.json",
+        "previous_sha256": "c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3",
+        "current_sha256": "4adac368c0ccb2f7118d1b3118032de4825bb122f3b678fba28615aa28a72820",
+        "previous_status_sha256": "7c20b2c302775e3649c6a12fef3333f1c7a9c8925abe71df910a0a27c93c5850",
+        "current_status_sha256": "164e638a851697ec93658f1a0f80394a85e85e836e8a22ca171f41285f1d4702",
+        "official_status": {
+          "skills_versions": [
+            "Exam version: V9",
+            "Exam series code: N10-009",
+            "Launch date: June 20, 2024",
+            "Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions",
+            "Retirement: usually three years after launch (estimated 2027)",
+            "Duration: 90 minutes",
+            "Passing score: 720 (on a scale of 100-900)",
+            "Languages: English, German, Japanese, Portuguese, and Spanish"
+          ],
+          "upcoming_announcements": [
+            "Retirement: usually three years after launch (estimated 2027)"
+          ]
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "objective_diff": "--- \n\n+++ \n\n@@ -3,6 +3,7 @@\n\n Launch date: June 20, 2024\n Number of questions: maximum of 90, a mix of multiple-choice and performance-based questions\n Retirement: usually three years after launch (estimated 2027)\n+Duration: 90 minutes\n Passing score: 720 (on a scale of 100-900)\n Languages: English, German, Japanese, Portuguese, and Spanish\n Network+ (V9) exam objectives summary",
+  "version_specific_pdf_review": {
+    "receipt": {
+      "url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+      "discovery_page": "https://www.comptia.org/en-us/partner-portal/partner-resources/",
+      "collection_url": "https://lecbyo.collections.cmp.optimizely.com/api/library-collection/b9074fb6207711f08b1d2e4ad712ca04",
+      "asset": {
+        "guid": "35a7403ab73211ef9dcda6f347fbf652",
+        "title": "CompTIA Network+ N10-009 Exam Objectives (6.0).pdf",
+        "type": "raw_file",
+        "mimeType": "application/pdf",
+        "thumbnailUrl": "https://images4.cmp.optimizely.com/Zz0xY2M1MmQyNGQ5YzkxMWYwYjQwZGU2NTBjZWUzMWMwYg==",
+        "previewUrl": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+        "mediaUrl": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+        "transcodedUrl": "",
+        "description": "",
+        "lastModified": "2025-12-15T15:17:05",
+        "lastModifiedRelative": "9 months ago",
+        "createdAt": "2024-12-10T20:06:15",
+        "custom_labels": {},
+        "fields": []
+      },
+      "sha256": "cb0ca59be880c5ad9ee6905373f39443d040177968d5e36c93922c8622608c52",
+      "bytes": 250464,
+      "pages": 19,
+      "status": 200
+    },
+    "numbered_objectives": 25,
+    "objective_group_counts": [
+      8,
+      4,
+      5,
+      3,
+      5
+    ],
+    "main_page_summary_rows": 34,
+    "layout_check": "Page 11 confirms 3.3 DR, 3.4 services, 3.5 management.",
+    "mapping": "Original paraphrases with published objective IDs; all numbered bullets read."
+  },
+  "selected_iana_assignments": [
+    {
+      "Service Name": "ftp-data",
+      "Port Number": "20",
+      "Transport Protocol": "tcp",
+      "Description": "File Transfer [Default Data]",
+      "Assignee": "[Jon_Postel]",
+      "Contact": "[Jon_Postel]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ftp-data",
+      "Port Number": "20",
+      "Transport Protocol": "udp",
+      "Description": "File Transfer [Default Data]",
+      "Assignee": "[Jon_Postel]",
+      "Contact": "[Jon_Postel]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ftp-data",
+      "Port Number": "20",
+      "Transport Protocol": "sctp",
+      "Description": "FTP",
+      "Assignee": "[Randall_Stewart]",
+      "Contact": "[Randall_Stewart]",
+      "Registration Date": "",
+      "Modification Date": "2022-02-07",
+      "Reference": "[RFC 9260]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ftp",
+      "Port Number": "21",
+      "Transport Protocol": "tcp",
+      "Description": "File Transfer Protocol [Control]",
+      "Assignee": "[Jon_Postel]",
+      "Contact": "[Jon_Postel]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 959]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path>"
+    },
+    {
+      "Service Name": "ftp",
+      "Port Number": "21",
+      "Transport Protocol": "udp",
+      "Description": "File Transfer Protocol [Control]",
+      "Assignee": "[Jon_Postel]",
+      "Contact": "[Jon_Postel]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 959]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path>"
+    },
+    {
+      "Service Name": "ftp",
+      "Port Number": "21",
+      "Transport Protocol": "sctp",
+      "Description": "FTP",
+      "Assignee": "[Randall_Stewart]",
+      "Contact": "[Randall_Stewart]",
+      "Registration Date": "",
+      "Modification Date": "2022-02-07",
+      "Reference": "[RFC 9260]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path>"
+    },
+    {
+      "Service Name": "ssh",
+      "Port Number": "22",
+      "Transport Protocol": "tcp",
+      "Description": "The Secure Shell (SSH) Protocol",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 4251]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+    },
+    {
+      "Service Name": "ssh",
+      "Port Number": "22",
+      "Transport Protocol": "udp",
+      "Description": "The Secure Shell (SSH) Protocol",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 4251]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+    },
+    {
+      "Service Name": "ssh",
+      "Port Number": "22",
+      "Transport Protocol": "sctp",
+      "Description": "SSH",
+      "Assignee": "[Randall_Stewart]",
+      "Contact": "[Randall_Stewart]",
+      "Registration Date": "",
+      "Modification Date": "2022-02-07",
+      "Reference": "[RFC 9260]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+    },
+    {
+      "Service Name": "telnet",
+      "Port Number": "23",
+      "Transport Protocol": "tcp",
+      "Description": "Telnet",
+      "Assignee": "[Jon_Postel]",
+      "Contact": "[Jon_Postel]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 854]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+    },
+    {
+      "Service Name": "telnet",
+      "Port Number": "23",
+      "Transport Protocol": "udp",
+      "Description": "Telnet",
+      "Assignee": "[Jon_Postel]",
+      "Contact": "[Jon_Postel]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 854]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password>"
+    },
+    {
+      "Service Name": "smtp",
+      "Port Number": "25",
+      "Transport Protocol": "tcp",
+      "Description": "Simple Mail Transfer",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2017-06-05",
+      "Reference": "[RFC-ietf-emailcore-rfc5321bis-43]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "smtp",
+      "Port Number": "25",
+      "Transport Protocol": "udp",
+      "Description": "Simple Mail Transfer",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2017-06-05",
+      "Reference": "[RFC-ietf-emailcore-rfc5321bis-43]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "domain",
+      "Port Number": "53",
+      "Transport Protocol": "tcp",
+      "Description": "Domain Name Server",
+      "Assignee": "[Paul_Mockapetris]",
+      "Contact": "[Paul_Mockapetris]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "domain",
+      "Port Number": "53",
+      "Transport Protocol": "udp",
+      "Description": "Domain Name Server",
+      "Assignee": "[Paul_Mockapetris]",
+      "Contact": "[Paul_Mockapetris]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "bootps",
+      "Port Number": "67",
+      "Transport Protocol": "tcp",
+      "Description": "Bootstrap Protocol Server",
+      "Assignee": "[Bill_Croft]",
+      "Contact": "[Bill_Croft]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 951]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: None"
+    },
+    {
+      "Service Name": "bootps",
+      "Port Number": "67",
+      "Transport Protocol": "udp",
+      "Description": "Bootstrap Protocol Server",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "bootpc",
+      "Port Number": "68",
+      "Transport Protocol": "tcp",
+      "Description": "Bootstrap Protocol Client",
+      "Assignee": "[Bill_Croft]",
+      "Contact": "[Bill_Croft]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "bootpc",
+      "Port Number": "68",
+      "Transport Protocol": "udp",
+      "Description": "Bootstrap Protocol Client",
+      "Assignee": "[Bill_Croft]",
+      "Contact": "[Bill_Croft]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "tftp",
+      "Port Number": "69",
+      "Transport Protocol": "tcp",
+      "Description": "Trivial File Transfer",
+      "Assignee": "[David_Clark]",
+      "Contact": "[David_Clark]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "tftp",
+      "Port Number": "69",
+      "Transport Protocol": "udp",
+      "Description": "Trivial File Transfer",
+      "Assignee": "[David_Clark]",
+      "Contact": "[David_Clark]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "http",
+      "Port Number": "80",
+      "Transport Protocol": "tcp",
+      "Description": "World Wide Web HTTP",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2021-10-01",
+      "Reference": "[RFC 9110]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path to document>"
+    },
+    {
+      "Service Name": "http",
+      "Port Number": "80",
+      "Transport Protocol": "udp",
+      "Description": "World Wide Web HTTP",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2021-10-01",
+      "Reference": "[RFC 9110]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path to document>"
+    },
+    {
+      "Service Name": "www",
+      "Port Number": "80",
+      "Transport Protocol": "tcp",
+      "Description": "World Wide Web HTTP",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2021-10-01",
+      "Reference": "[RFC 9110]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes."
+    },
+    {
+      "Service Name": "www",
+      "Port Number": "80",
+      "Transport Protocol": "udp",
+      "Description": "World Wide Web HTTP",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2021-10-01",
+      "Reference": "[RFC 9110]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes."
+    },
+    {
+      "Service Name": "www-http",
+      "Port Number": "80",
+      "Transport Protocol": "tcp",
+      "Description": "World Wide Web HTTP",
+      "Assignee": "[Tim_Berners_Lee]",
+      "Contact": "[Tim_Berners_Lee]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes.\n      u=<username> p=<password> path=<path to document>\n        (see txtrecords.html#http)\n        Known Subtypes: _printer\n        NOTE: The meaning of this service type, though called just \"http\", actually\n        denotes something more precise than just \"any data transported using HTTP\".\n        The DNS-SD service type \"http\" should only be used to advertise content that:\n        * is served over HTTP,\n        * can be displayed by \"typical\" web browser client software, and\n        * is intented primarily to be viewed by a human user.\n        Of course, the definition of \"typical web browser\" is subjective, and may\n        change over time, but for practical purposes the DNS-SD service type \"http\"\n        can be understood as meaning \"human-readable HTML content served over HTTP\".\n        In some cases other widely-supported content types may also be appropriate,\n        such as plain text over HTTP, or JPEG image over HTTP.\n        Content types not intented primarily for viewing by a human user, or not\n        widely-supported in web browsing clients, should not be advertised as\n        DNS-SD service type \"http\", even if they do happen to be transported over HTTP.\n        Such types should be advertised as their own logical service type with their\n        own DNS-SD service type, for example, XUL (XML User Interface Language)\n        transported over HTTP is advertised explicitly as DNS-SD service type \"xul-http\"."
+    },
+    {
+      "Service Name": "www-http",
+      "Port Number": "80",
+      "Transport Protocol": "udp",
+      "Description": "World Wide Web HTTP",
+      "Assignee": "[Tim_Berners_Lee]",
+      "Contact": "[Tim_Berners_Lee]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "This is a duplicate of the \"http\" service and should not be used for discovery purposes.\n      u=<username> p=<password> path=<path to document>\n      (see txtrecords.html#http)\n      Known Subtypes: _printer\n      NOTE: The meaning of this service type, though called just \"http\", actually\n      denotes something more precise than just \"any data transported using HTTP\".\n      The DNS-SD service type \"http\" should only be used to advertise content that:\n      * is served over HTTP,\n      * can be displayed by \"typical\" web browser client software, and\n      * is intented primarily to be viewed by a human user.\n      Of course, the definition of \"typical web browser\" is subjective, and may\n      change over time, but for practical purposes the DNS-SD service type \"http\"\n      can be understood as meaning \"human-readable HTML content served over HTTP\".\n      In some cases other widely-supported content types may also be appropriate,\n      such as plain text over HTTP, or JPEG image over HTTP.\n      Content types not intented primarily for viewing by a human user, or not\n      widely-supported in web browsing clients, should not be advertised as\n      DNS-SD service type \"http\", even if they do happen to be transported over HTTP.\n      Such types should be advertised as their own logical service type with their\n      own DNS-SD service type, for example, XUL (XML User Interface Language)\n      transported over HTTP is advertised explicitly as DNS-SD service type \"xul-http\"."
+    },
+    {
+      "Service Name": "http",
+      "Port Number": "80",
+      "Transport Protocol": "sctp",
+      "Description": "HTTP",
+      "Assignee": "[Randall_Stewart]",
+      "Contact": "[Randall_Stewart]",
+      "Registration Date": "",
+      "Modification Date": "2022-02-07",
+      "Reference": "[RFC 9260]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": "Defined TXT keys: u=<username> p=<password> path=<path to document>"
+    },
+    {
+      "Service Name": "ntp",
+      "Port Number": "123",
+      "Transport Protocol": "tcp",
+      "Description": "Network Time Protocol",
+      "Assignee": "[Dave_Mills]",
+      "Contact": "[Dave_Mills]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 5905]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ntp",
+      "Port Number": "123",
+      "Transport Protocol": "udp",
+      "Description": "Network Time Protocol",
+      "Assignee": "[Dave_Mills]",
+      "Contact": "[Dave_Mills]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 5905]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "snmp",
+      "Port Number": "161",
+      "Transport Protocol": "tcp",
+      "Description": "SNMP",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "snmp",
+      "Port Number": "161",
+      "Transport Protocol": "udp",
+      "Description": "SNMP",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "snmptrap",
+      "Port Number": "162",
+      "Transport Protocol": "tcp",
+      "Description": "SNMPTRAP",
+      "Assignee": "[Marshall_Rose]",
+      "Contact": "[Marshall_Rose]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "snmptrap",
+      "Port Number": "162",
+      "Transport Protocol": "udp",
+      "Description": "SNMPTRAP",
+      "Assignee": "[Marshall_Rose]",
+      "Contact": "[Marshall_Rose]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ldap",
+      "Port Number": "389",
+      "Transport Protocol": "tcp",
+      "Description": "Lightweight Directory Access Protocol",
+      "Assignee": "[Tim_Howes]",
+      "Contact": "[Tim_Howes]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ldap",
+      "Port Number": "389",
+      "Transport Protocol": "udp",
+      "Description": "Lightweight Directory Access Protocol",
+      "Assignee": "[Tim_Howes]",
+      "Contact": "[Tim_Howes]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "https",
+      "Port Number": "443",
+      "Transport Protocol": "tcp",
+      "Description": "http protocol over TLS/SSL",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2021-10-01",
+      "Reference": "[RFC 9110]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "https",
+      "Port Number": "443",
+      "Transport Protocol": "udp",
+      "Description": "http protocol over TLS/SSL",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "",
+      "Modification Date": "2021-10-01",
+      "Reference": "[RFC 9110]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "https",
+      "Port Number": "443",
+      "Transport Protocol": "sctp",
+      "Description": "HTTPS",
+      "Assignee": "[Randall_Stewart]",
+      "Contact": "[Randall_Stewart]",
+      "Registration Date": "",
+      "Modification Date": "2022-02-07",
+      "Reference": "[RFC 9260]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "microsoft-ds",
+      "Port Number": "445",
+      "Transport Protocol": "tcp",
+      "Description": "Microsoft-DS",
+      "Assignee": "[Pradeep_Bahl]",
+      "Contact": "[Pradeep_Bahl]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "microsoft-ds",
+      "Port Number": "445",
+      "Transport Protocol": "udp",
+      "Description": "Microsoft-DS",
+      "Assignee": "[Pradeep_Bahl]",
+      "Contact": "[Pradeep_Bahl]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "urd",
+      "Port Number": "465",
+      "Transport Protocol": "tcp",
+      "Description": "URL Rendezvous Directory for SSM",
+      "Assignee": "[Toerless_Eckert]",
+      "Contact": "[Toerless_Eckert]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "submissions",
+      "Port Number": "465",
+      "Transport Protocol": "tcp",
+      "Description": "Message Submission over TLS protocol",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "2017-12-12",
+      "Modification Date": "",
+      "Reference": "[RFC 8314]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "igmpv3lite",
+      "Port Number": "465",
+      "Transport Protocol": "udp",
+      "Description": "IGMP over UDP for SSM",
+      "Assignee": "[Toerless_Eckert]",
+      "Contact": "[Toerless_Eckert]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "shell",
+      "Port Number": "514",
+      "Transport Protocol": "tcp",
+      "Description": "cmd like exec, but automatic authentication is performed as for login server",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "syslog",
+      "Port Number": "514",
+      "Transport Protocol": "udp",
+      "Description": "",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "2020-06-01",
+      "Reference": "[RFC 5426]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "submission",
+      "Port Number": "587",
+      "Transport Protocol": "tcp",
+      "Description": "Message Submission",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "2011-11-17",
+      "Reference": "[RFC 6409]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "submission",
+      "Port Number": "587",
+      "Transport Protocol": "udp",
+      "Description": "Message Submission",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "2011-11-17",
+      "Reference": "[RFC 6409]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ldaps",
+      "Port Number": "636",
+      "Transport Protocol": "tcp",
+      "Description": "ldap protocol over TLS/SSL (was sldap)",
+      "Assignee": "[Pat_Richard]",
+      "Contact": "[Pat_Richard]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ldaps",
+      "Port Number": "636",
+      "Transport Protocol": "udp",
+      "Description": "ldap protocol over TLS/SSL (was sldap)",
+      "Assignee": "[Pat_Richard]",
+      "Contact": "[Pat_Richard]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "domain-s",
+      "Port Number": "853",
+      "Transport Protocol": "tcp",
+      "Description": "DNS query-response protocol run over TLS",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "2015-10-08",
+      "Modification Date": "2022-04-11",
+      "Reference": "[RFC 7858]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "domain-s",
+      "Port Number": "853",
+      "Transport Protocol": "udp",
+      "Description": "DNS query-response protocol run over DTLS or QUIC",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "2015-10-08",
+      "Modification Date": "2022-04-01",
+      "Reference": "[RFC 7858][RFC 8094][RFC 9250]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ms-sql-s",
+      "Port Number": "1433",
+      "Transport Protocol": "tcp",
+      "Description": "Microsoft-SQL-Server",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ms-sql-s",
+      "Port Number": "1433",
+      "Transport Protocol": "udp",
+      "Description": "Microsoft-SQL-Server",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ms-wbt-server",
+      "Port Number": "3389",
+      "Transport Protocol": "tcp",
+      "Description": "MS WBT Server",
+      "Assignee": "[Jordan_Marchese]",
+      "Contact": "[Jordan_Marchese]",
+      "Registration Date": "",
+      "Modification Date": "2022-11-03",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ms-wbt-server",
+      "Port Number": "3389",
+      "Transport Protocol": "udp",
+      "Description": "MS WBT Server",
+      "Assignee": "[Jordan_Marchese]",
+      "Contact": "[Jordan_Marchese]",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "ntske",
+      "Port Number": "4460",
+      "Transport Protocol": "tcp",
+      "Description": "Network Time Security Key Establishment",
+      "Assignee": "[IESG]",
+      "Contact": "[IETF_Chair]",
+      "Registration Date": "2020-04-07",
+      "Modification Date": "",
+      "Reference": "[RFC 8915]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "",
+      "Port Number": "4460",
+      "Transport Protocol": "udp",
+      "Description": "Reserved",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "vxlan",
+      "Port Number": "4789",
+      "Transport Protocol": "udp",
+      "Description": "Virtual eXtensible Local Area Network (VXLAN)",
+      "Assignee": "[Lawrence_Kreeger]",
+      "Contact": "[Lawrence_Kreeger]",
+      "Registration Date": "2013-04-19",
+      "Modification Date": "2014-06-17",
+      "Reference": "[RFC 7348]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "",
+      "Port Number": "4789",
+      "Transport Protocol": "tcp",
+      "Description": "Reserved",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "sip",
+      "Port Number": "5060",
+      "Transport Protocol": "tcp",
+      "Description": "SIP",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "2014-04-09",
+      "Reference": "[RFC 3263]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "sip",
+      "Port Number": "5060",
+      "Transport Protocol": "udp",
+      "Description": "SIP",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "2014-04-09",
+      "Reference": "[RFC 3263]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "sip",
+      "Port Number": "5060",
+      "Transport Protocol": "sctp",
+      "Description": "SIP",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 4168]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "sips",
+      "Port Number": "5061",
+      "Transport Protocol": "tcp",
+      "Description": "SIP-TLS",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "2014-04-09",
+      "Reference": "[RFC 3263]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "sips",
+      "Port Number": "5061",
+      "Transport Protocol": "udp",
+      "Description": "SIP-TLS",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "2014-04-09",
+      "Reference": "[RFC 3263]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    },
+    {
+      "Service Name": "sips",
+      "Port Number": "5061",
+      "Transport Protocol": "sctp",
+      "Description": "SIP-TLS",
+      "Assignee": "",
+      "Contact": "",
+      "Registration Date": "",
+      "Modification Date": "",
+      "Reference": "[RFC 4168]",
+      "Service Code": "",
+      "Unauthorized Use Reported": "",
+      "Assignment Notes": ""
+    }
+  ]
+}

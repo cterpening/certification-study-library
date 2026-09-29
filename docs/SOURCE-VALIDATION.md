@@ -1277,6 +1277,8 @@ The review maps all four public V15 domains to a controlled support lifecycle: u
 
 ## N10-009 coverage record
 
+The September 29 [deep review](research/2026-09-29-n10-009-deep-review.md) maps 25 detailed objectives. Mapped all 25 numbered PDF objectives against 34 main-page summary rows. Filled modern-network and protocol details, corrected routing/lease/MTU distinctions, added original planning and DNS examples with 72 checks and 24 actual loopback exchanges, strengthened 44 answers and eight proposed labs, and explicitly accepted a duration-only monitor metadata change with historical evidence retained. Current guide citations: 33 registered, 30 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted V9 domains—Networking concepts (23%), Network implementation (20%), Network operations (19%), Network security (14%), and Network troubleshooting (24%)

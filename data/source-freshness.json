@@ -4,6 +4,199 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-n10009-deep-review",
+      "title": "N10-009 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "N10-009"
+      ],
+      "results": [
+        {
+          "exam_code": "N10-009",
+          "vendor_id": "comptia",
+          "guide_path": "guides/N10-009-comptia-network-plus.md",
+          "baseline_sha256": "6f29036c63f3669c85b537e95280f56fa28a0c22b5ff4fc9df031a655121a1a9",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "V9 and N10-009 scope/weights unchanged. Full public document 6.0 has 25 objectives; page 11 layout confirms 3.3 DR / 3.4 services / 3.5 management. Monitor diff adds only Duration: 90 minutes, already taught. Accepted after comparison; prior snapshot bytes and historical review/audit evidence retained. Retirement remains estimated 2027 without exact date."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read complete numbered PDF bullets, targeted RFC and Cisco route-selection sections, IANA 66 assignment rows, Python ipaddress and DNS library APIs. Distinguish route installation/forwarding, DNS data authenticity/transport encryption, SMTP submission modes, DHCP renewal/allocation and IPv6 PMTU."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Canonical page remains V9 launched June 20, 2024; PDF 6.0 is a document identifier. Current public learning metadata checked. dnslib 0.9.26 and dnspython 2.8.0 pinned in isolated environment; Python 3.13.14. Historical DNS blog deployment defaults/commands not adopted as current."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Pluralsight 12 courses/14h, LinkedIn 18h51/April 25, 2025, Messer 87 videos/12h55, MeasureUp 219 product-specific questions/June 2024 compared with generic 150 FAQ. Three paid OReilly/Udemy pages blocked; inherited book page/runtime claims qualified. CompTIA provider estimates added with overlap caution. Places to learn final."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "PDF explicitly includes 1.8 SD-WAN/VXLAN/SASE/SSE/IaC/IPv6 transitions and 5.1 methodology. Explain PDF 587 SMTPS label with RFC 8314 STARTTLS 587 / implicit TLS 465 distinction. Correct low-distance-default and exhausted-pool-renewal overgeneralizations; separate NODATA/NXDOMAIN/REFUSED and timeout."
+            }
+          },
+          "findings": [
+            {
+              "id": "n10009-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Monitor detected a duration metadata addition",
+              "url": "https://www.comptia.org/en-us/certifications/network/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The normalized diff adds only Duration: 90 minutes; objective text, weights and announced lifecycle are unchanged.",
+              "recommendation": "Explicitly accept the reviewed metadata and archive byte-identical prior snapshot; preserve historical review hashes/dates/conclusions.",
+              "disposition": "applied",
+              "source_id": "comptia-n10-009-blueprint",
+              "resolution": "Explicitly accept the reviewed metadata and archive byte-identical prior snapshot; preserve historical review hashes/dates/conclusions."
+            },
+            {
+              "id": "n10009-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Full outline confirms modern-network scope beyond the summary",
+              "url": "https://lecbyo.files.cmp.optimizely.com/download/35a7403ab73211ef9dcda6f347fbf652?checkExpiry=false",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective 1.8 includes SD-WAN, VXLAN, SASE/SSE, zero trust, IaC and IPv6 transitions; objective 5.1 explicitly includes methodology.",
+              "recommendation": "Map all 25 numbered objectives and teach these topics directly with original scenarios and references.",
+              "disposition": "applied",
+              "source_id": "comptia-n10-009-objectives-pdf",
+              "resolution": "Map all 25 numbered objectives and teach these topics directly with original scenarios and references."
+            },
+            {
+              "id": "n10009-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Route installation and forwarding were compressed into an ambiguous sequence",
+              "url": "https://www.cisco.com/c/en/us/support/docs/ip/enhanced-interior-gateway-routing-protocol-eigrp/8651-21.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Candidate installation uses route-source preference and protocol path selection; forwarding uses the longest matching installed prefix.",
+              "recommendation": "Rewrite the distinction and execute a model for specific/default/host routes, missing routes and equal-prefix ambiguity.",
+              "disposition": "applied",
+              "source_id": "cisco-route-selection",
+              "resolution": "Rewrite the distinction and execute a model for specific/default/host routes, missing routes and equal-prefix ambiguity."
+            },
+            {
+              "id": "n10009-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Exhaustion was overgeneralized to existing renewals",
+              "url": "https://www.rfc-editor.org/rfc/rfc2131.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Lease renewal requests extension of an existing address and is distinct from new allocation.",
+              "recommendation": "Explain new-client versus existing-lease behavior, timers/rebinding/expiry, and qualified link-local evidence.",
+              "disposition": "applied",
+              "source_id": "rfc2131",
+              "resolution": "Explain new-client versus existing-lease behavior, timers/rebinding/expiry, and qualified link-local evidence."
+            },
+            {
+              "id": "n10009-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "PDF port label needed an operational security distinction",
+              "url": "https://www.rfc-editor.org/rfc/rfc8314.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "PDF lists SMTPS 587; RFC 8314 distinguishes STARTTLS submission 587 and implicit TLS submission 465.",
+              "recommendation": "Keep the exam-listed port while teaching negotiation/identity checks and avoid claiming a port proves encryption.",
+              "disposition": "applied",
+              "source_id": "rfc8314",
+              "resolution": "Keep the exam-listed port while teaching negotiation/identity checks and avoid claiming a port proves encryption."
+            },
+            {
+              "id": "n10009-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "DNS response and transport security needed separate evidence",
+              "url": "https://www.rfc-editor.org/rfc/rfc4033.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DNSSEC authenticates DNS data and denial but does not provide confidentiality; encrypted transport has a different scope.",
+              "recommendation": "Add record/response/privacy tables and a real isolated DNS exercise; do not claim DNSSEC/TLS/cache execution.",
+              "disposition": "applied",
+              "source_id": "rfc4033",
+              "resolution": "Add record/response/privacy tables and a real isolated DNS exercise; do not claim DNSSEC/TLS/cache execution."
+            },
+            {
+              "id": "n10009-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Small successful probes do not establish a working path MTU",
+              "url": "https://www.rfc-editor.org/rfc/rfc8201.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "N10-009"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IPv6 PMTU depends on Packet Too Big feedback; blocked feedback can cause larger transfers to stall.",
+              "recommendation": "Add qualified VXLAN overhead calculations and distinguish IPv6 source fragmentation from router behavior; no path reconfiguration executed.",
+              "disposition": "applied",
+              "source_id": "rfc8201",
+              "resolution": "Add qualified VXLAN overhead calculations and distinguish IPv6 source fragmentation from router behavior; no path reconfiguration executed."
+            }
+          ],
+          "notes": "Mapped all 25 numbered PDF objectives against 34 main-page summary rows. Filled modern-network and protocol details, corrected routing/lease/MTU distinctions, added original planning and DNS examples with 72 checks and 24 actual loopback exchanges, strengthened 44 answers and eight proposed labs, and explicitly accepted a duration-only monitor metadata change with historical evidence retained. Same-context AI review; human review pending. See docs/research/2026-09-29-n10-009-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-2201202-deep-review",
       "title": "220-1202 complete guide and learning-content review",
       "rubric_version": 1,

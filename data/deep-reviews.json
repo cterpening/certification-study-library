@@ -5,6 +5,28 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "N10-009",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "3bc5c5670c5e470c835be425f4815c57b819ed28575ece614d9b6c34b41a14ce",
+      "objective_count": 25,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-29-n10-009-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-n10-009-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "72 harness checks and two public examples ran locally; 24 total DNS exchanges bound only to 127.0.0.1, with no upstream queries. Listeners stopped and sockets released.",
+        "Subnet, forwarding, MTU, PoE and transfer-rate cases are calculations/models, not configured device behavior.",
+        "No DHCP service, routing protocol, physical switch/router, Wi-Fi, capture, scan, NAT/firewall, system DNS/hosts change, remote service, TLS, DNSSEC, cache or full failover lab executed.",
+        "The tiny DNS zone supports only selected demonstration behavior and is not a production authoritative/recursive implementation.",
+        "All eight complete network labs remain proposed.",
+        "Two OReilly pages and Udemy blocked automated rechecking; paid interiors and current book runtimes/page counts were not reverified.",
+        "Retirement remains an estimate of 2027, not an exact date."
+      ]
+    },
+    {
       "exam_code": "220-1202",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "7d392d316f7caa90392de746fc5fa86cd21f6e81c6cdf08fe6e66884fd24a9b7",

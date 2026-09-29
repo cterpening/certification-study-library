@@ -3,6 +3,72 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "n10-009-2026-09-01-source-validation",
+      "exam_code": "N10-009",
+      "guide_path": "guides/N10-009-comptia-network-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/n10-009-2026-09-01-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3",
+      "objective_coverage": [
+        {
+          "objective_group": "Networking concepts (23%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2, 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network implementation (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network operations (19%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network security (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Network troubleshooting (24%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V9 domains are mapped to an end-to-end packet-walk and evidence model, three scenarios, eight authorized labs and 42 original checks. The estimated-2027 statement is explicitly not an exact retirement date. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objective PDF, PBQ, course lab or recalled item is used."
+    },
+    {
       "id": "fc0-u71-2026-09-01-source-validation",
       "exam_code": "FC0-U71",
       "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
@@ -6247,24 +6313,70 @@
       "notes": "Mapped all 36 numbered objectives in the public version 4.0 PDF, expanded Windows/security/recovery teaching, added cloud productivity and AI support cases, strengthened 42 answered checks and eight proposed labs, and passed 18 native PowerShell/Robocopy checks on synthetic files. See docs/research/2026-09-28-220-1202-deep-review.md"
     },
     {
-      "id":"n10-009-2026-09-01-source-validation",
-      "exam_code":"N10-009",
-      "guide_path":"guides/N10-009-comptia-network-plus.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-01",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/n10-009-official-objectives.txt",
-      "blueprint_snapshot_sha256":"c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3",
-      "objective_coverage":[
-        {"objective_group":"Networking concepts (23%)","guide_sections":["Section 1","All integrated scenarios","Labs 1–2, 4–5 and 8"]},
-        {"objective_group":"Network implementation (20%)","guide_sections":["Section 2","Integrated scenarios 1 and 3","Labs 3–5 and 8"]},
-        {"objective_group":"Network operations (19%)","guide_sections":["Section 3","Integrated scenarios 1–2","Labs 4, 6 and 8"]},
-        {"objective_group":"Network security (14%)","guide_sections":["Section 4","Integrated scenario 3","Labs 6–8"]},
-        {"objective_group":"Network troubleshooting (24%)","guide_sections":["Section 5","All integrated scenarios","All labs"]}
+      "id": "n10-009-2026-09-29-source-validation",
+      "exam_code": "N10-009",
+      "guide_path": "guides/N10-009-comptia-network-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-29",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/n10-009-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4adac368c0ccb2f7118d1b3118032de4825bb122f3b678fba28615aa28a72820",
+      "objective_coverage": [
+        {
+          "objective_group": "Networking concepts (23%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2, 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network implementation (20%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1 and 3",
+            "Labs 3–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network operations (19%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 4, 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Network security (14%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenario 3",
+            "Labs 6–8"
+          ]
+        },
+        {
+          "objective_group": "Network troubleshooting (24%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "All labs"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":9,"reachable":7,"access_blocked":2,"missing_or_error":0},
-      "notes":"All five weighted V9 domains are mapped to an end-to-end packet-walk and evidence model, three scenarios, eight authorized labs and 42 original checks. The estimated-2027 statement is explicitly not an exact retirement date. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objective PDF, PBQ, course lab or recalled item is used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 33,
+        "reachable": 30,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Mapped all 25 numbered PDF objectives against 34 main-page summary rows. Filled modern-network and protocol details, corrected routing/lease/MTU distinctions, added original planning and DNS examples with 72 checks and 24 actual loopback exchanges, strengthened 44 answers and eight proposed labs, and explicitly accepted a duration-only monitor metadata change with historical evidence retained. See docs/research/2026-09-29-n10-009-deep-review.md"
     },
     {
       "id": "sy0-701-2026-09-06-source-validation",

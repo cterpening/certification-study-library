@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [N10-009 deep review](docs/research/2026-09-29-n10-009-deep-review.md): 25 numbered objectives mapped; routing/DNS/MTU and modern-network teaching strengthened, 72 local checks and 24 loopback DNS exchanges passed; duration-only baseline change archived and accepted.
+
 - September 28, 2026: [220-1202 deep review](docs/research/2026-09-28-220-1202-deep-review.md): 36 numbered objectives mapped; cloud productivity, AI and recovery guidance expanded, 42 answered checks strengthened and 18 native copy/restore checks passed.
 
 - September 28, 2026: [220-1201 deep review](docs/research/2026-09-28-220-1201-deep-review.md): 27 numbered objectives mapped; methodology scope clarified, networking/hardware examples expanded, 34 local checks passed and course-catalog discrepancies disclosed.
