@@ -5,6 +5,28 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "DEA-C02",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "fd9071b06490504899429d0a9e791afd08adc74c7f95bdb67bbd3ae635c44bba",
+      "objective_count": 5,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-dea-c02-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-dea-c02-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Only five public abilities mapped;detailed official guide remains request-form restricted. Actual5page training PDF supports learning,not detailed objectives/weights/exam duration.",
+        "Eight account labs and three scenarios remain proposed;independent human review pending. No Snowflake account,SDK/connector installation,channel,task,replication or paidlabexecution.",
+        "40 actual local checks execute in-memorySQLite transactions,not Snowflake streaming/MERGE/stream/task semantics. One connection and controlled fixtures;no crashdurability/concurrency/external-sideeffect guarantee.",
+        "Contiguous integer offsets and trustedonepartition/entity rule are fictional;Snowflake tokens opaque. Receipts/tombstones neverexpire locally;SQLite enforcedkeys differ fromstandardSnowflake. Process termination losesallstate.",
+        "Elasticdurableack notqueryvisibility;Namedrequires sourcecommitcoordination. CurrentSDK/feature dates distinguished,not installedversionproof;accountfeatureavailabilitynotinspected.",
+        "Technicaldocuments selectivelyread as recorded;Named/Elastic and threeprimaryannouncements mainpages fullyread. Actualfive-page trainingPDFfullyread. Noall-feature/entirereplication58krefaudit.",
+        "TwoOReillybookURLsHTTP403oldmetadataunverified. PublicManningNovember2024/368pagesverified;no fullbook. Pluralrolepathnotexplicitexammap;bootcampnoverifiedupcomingsession. Noforms,trialcreation,enrollment orpracticequestions.",
+        "ReservedfiveGitHubguides anddisablednotificationpilot untouched;no externalmessages,logging/alerts,auth,servicechanges or newpermissions."
+      ]
+    },
+    {
       "exam_code": "COF-C03",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "2828ded0b96a9039943d9fa201876c90e2434b9ed84c4ec1589979b1894b620e",

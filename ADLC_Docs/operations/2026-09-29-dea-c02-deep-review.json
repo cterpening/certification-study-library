@@ -1,0 +1,1551 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "DEA-C02",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "b2196de058766409bc49b61cc1f3689f63a25d900a6ce324861f1396bab5e183",
+  "guide_after_sha256": "fd9071b06490504899429d0a9e791afd08adc74c7f95bdb67bbd3ae635c44bba",
+  "prior_records": {
+    "exam": {
+      "code": "DEA-C02",
+      "level": "expert",
+      "vendor_id": "snowflake",
+      "title": "SnowPro Advanced: Data Engineer",
+      "status": "active",
+      "study_guide_url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+      "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite is published. Snowflake recommends two or more years of hands-on data-engineering experience in production. Be ready to source governed lake/API/on-premises data, build deterministic batch and near-real-time transformations, replicate/share across clouds, isolate and scale compute, and operate quality/freshness/performance/cost/recovery evidence."
+    },
+    "review": {
+      "id": "dea-c02-2026-09-02-source-validation",
+      "exam_code": "DEA-C02",
+      "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+      "objective_coverage": [
+        {
+          "objective_group": "Source data from Data Lakes, APIs, and on-premises",
+          "guide_sections": [
+            "Section 1",
+            "Scenario 1",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Transform, replicate, and share data across cloud platforms",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 3 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Design end-to-end near real-time streams",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 2",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Design scalable compute solutions for Data Engineer workloads",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2–3",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Evaluate performance metrics",
+          "guide_sections": [
+            "Section 5",
+            "All scenarios",
+            "Labs 5–6 and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 10,
+        "reachable": 8,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five live public abilities are mapped through production contracts, state/checkpoints, reconciliation, idempotency/replay, backpressure, SLOs and observable performance/cost/recovery evidence. Candidates are told to reconcile the form-delivered detailed guide; inaccessible weights are not invented. Three scenarios, eight labs and 40 checks are included. Eight URLs are reachable and two O'Reilly books are automation-blocked; none are broken. No recalled item, dump or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "snowflake-snowpro-policies",
+        "title": "SnowPro Program Policies",
+        "url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "publisher": "Snowflake",
+        "authority_class": 1,
+        "source_type": "program-policy",
+        "access_model": "public",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "COF-C03",
+          "DEA-C02",
+          "GES-C02"
+        ],
+        "notes": "First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase. September 29 COF-C03 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "snowflake-practice-exams",
+        "title": "SnowPro Practice Exams",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "publisher": "Snowflake",
+        "authority_class": 1,
+        "source_type": "official-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-29",
+        "supported_exams": [
+          "COF-C03",
+          "DEA-C02",
+          "GES-C02"
+        ],
+        "notes": "Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy. September 29 COF-C03 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "snowflake-dea-c02-certification",
+        "title": "SnowPro Advanced: Data Engineer (DEA-C02)",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+        "publisher": "Snowflake",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "Canonical active exam identity, five public abilities, two-year production-experience recommendation and detailed-guide request; monitored by the Snowflake adapter."
+      },
+      {
+        "id": "snowflake-data-engineer-training",
+        "title": "Snowflake Data Engineer Training",
+        "url": "https://learn.snowflake.com/en/courses/ILT-DE",
+        "publisher": "Snowflake University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "First-party three-day, 24-hour role-specific course with lectures, demonstrations and labs; confirm current DEA-C02 alignment and regional schedule."
+      },
+      {
+        "id": "snowflake-hands-on-essentials",
+        "title": "Hands-On Essentials Track",
+        "url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+        "publisher": "Snowflake University",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "free-account",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "Free graded workshops for warehousing, collaboration, applications, data lake, data engineering and data science; 20–40 hour selective estimate."
+      },
+      {
+        "id": "snowflake-data-pipelines-docs",
+        "title": "Introduction to data pipelines",
+        "url": "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+        "publisher": "Snowflake Documentation",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "Current first-party pipeline entry point for continuous loading and transformation choices."
+      },
+      {
+        "id": "pluralsight-snowflake-data-engineers",
+        "title": "Snowflake for Data Engineers",
+        "url": "https://www.pluralsight.com/paths/snowflake-for-data-engineers",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "Seven-course, approximately eight-hour production path across architecture, validation, tuning, ELT, orchestration, governance and cost; not explicitly exam-specific."
+      },
+      {
+        "id": "oreilly-dea-c02-bootcamp",
+        "title": "SnowPro Advanced Data Engineer Certification (DEA-C02) Bootcamp",
+        "url": "https://www.oreilly.com/live-events/-/0642572194970/",
+        "publisher": "O'Reilly / Dr. Yasir Khan",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "Two-day exam-specific live hands-on course; estimated eight hours plus follow-up, with exact schedule/revision to verify at booking."
+      },
+      {
+        "id": "oreilly-snowflake-data-engineering",
+        "title": "Snowflake Data Engineering",
+        "url": "https://www.oreilly.com/library/view/snowflake-data-engineering/9781633436855/",
+        "publisher": "O'Reilly / Manning / Maja Ferle",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "December 2024, 368-page, 11h05m practical book spanning APIs, ingestion, streams/tasks, Snowpark, governance and CI/CD; close newer-service gaps."
+      },
+      {
+        "id": "oreilly-advanced-snowflake",
+        "title": "Advanced Snowflake",
+        "url": "https://www.oreilly.com/library/view/advanced-snowflake/9781098170202/",
+        "publisher": "O'Reilly / Muhammad Fasih Ullah",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "DEA-C02"
+        ],
+        "notes": "October 2025, 210-page, 4h55m advanced feature supplement including Gen2/adaptive compute and Openflow; broader than DEA-C02."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "85821cfcdc72fc654034416da81cfb3f79c0384f7d3dfe4ee9cb223bf1be6d35",
+      "guide_sections": [
+        "1. Source data from data lakes, APIs and on-premises systems",
+        "Executed local CDC workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "a45d81d5896ef70b735caa025897bf79f34cf6575560df20db0f975c2e65712a",
+      "guide_sections": [
+        "2. Transform, replicate and share data across cloud platforms",
+        "Executed local CDC workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "5167d3926ef6c5348d059e38b1d119b263d9f547277a1d93b6bb2abceb1814f9",
+      "guide_sections": [
+        "3. Design end-to-end near-real-time streams",
+        "Executed local CDC workbook",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "c10b885f6cf217181747d18ad6d48e4bbf308ba332cbc1099ffcfaba598f8a18",
+      "guide_sections": [
+        "4. Design scalable compute for data-engineering workloads",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "2690e239c33d6d5fd21dd27f8fb9121f0fa857594ea0d17492335c7b9e0f73ce",
+      "guide_sections": [
+        "5. Evaluate performance metrics and operate the pipeline",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DEA-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DEA-C02",
+        "title": "SnowPro Advanced: Data Engineer",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+        "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\dea-c02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dea-c02-official-status.json",
+        "previous_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "current_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "previous_status_sha256": null,
+        "current_status_sha256": "0cead048921028baabe0bed9538dd2f365bf40a90b4a515a3fa5c0d38bcb53ca",
+        "official_status": {
+          "skills_versions": [
+            "DEA-C02",
+            "2 or more years of hands-on experience as a Data Engineer in a production environment."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 30,
+    "reachable": 28,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "snowflake-snowpro-policies",
+      "url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+      "checked_at": "2026-09-29T11:10:02.265040+00:00",
+      "health": {
+        "id": "snowflake-snowpro-policies",
+        "url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "checked_at": "2026-09-29T11:10:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+        "duration_signals": [
+          "24 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "e902f7e85a078f29ddc6cdbf06af2bbd36c33fb0c12319e1fa97a19a51071a2a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/pages/snowpro-policies/",
+      "sha256": "8d4daa6e3b5ec2ee28714516138ea4d0350d53e77036c7a1f7203005a9d2982c",
+      "text_characters": 7675
+    },
+    {
+      "id": "snowflake-practice-exams",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+      "checked_at": "2026-09-29T11:10:02.265889+00:00",
+      "health": {
+        "id": "snowflake-practice-exams",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "checked_at": "2026-09-29T11:10:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+        "duration_signals": [
+          "24 hours",
+          "48 hours"
+        ],
+        "signal_fingerprint": "154f3d5f8869b6290f329d5c1334e96539eab374aa5db765da80329112dc86cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/certifications/snowpro-practice-exams/",
+      "sha256": "a31f4397a8eae75a4867158133a117a416b2a3cfe50f46d70b946b7d9c15fcb6",
+      "text_characters": 3102
+    },
+    {
+      "id": "snowflake-dea-c02-certification",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+      "checked_at": "2026-09-29T11:10:02.273330+00:00",
+      "health": {
+        "id": "snowflake-dea-c02-certification",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+        "checked_at": "2026-09-29T11:10:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+        "duration_signals": [],
+        "signal_fingerprint": "63f8c88a62b5687aa719804998b7a130c794094aa1e449544c33bda5035b3b8f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+      "sha256": "6f8db00892742ef131342b1731afc4fadf33ebc5cb3f10eaa183157b98e8267c",
+      "text_characters": 2299
+    },
+    {
+      "id": "snowflake-data-engineer-training",
+      "url": "https://learn.snowflake.com/en/courses/ILT-DE",
+      "checked_at": "2026-09-29T11:10:02.886936+00:00",
+      "health": {
+        "id": "snowflake-data-engineer-training",
+        "url": "https://learn.snowflake.com/en/courses/ILT-DE",
+        "checked_at": "2026-09-29T11:10:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/courses/ILT-DE/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/courses/ILT-DE/",
+        "duration_signals": [],
+        "signal_fingerprint": "a78a15d3144f2da9b77b00454ad54884d062a4ae264ec5be92196c7891cf42be",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/courses/ILT-DE/",
+      "sha256": "35fccf959e3f22b66d14d8cc21897be217bf25ce1cd352931974d14ecf2aedda",
+      "text_characters": 2101
+    },
+    {
+      "id": "snowflake-hands-on-essentials",
+      "url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+      "checked_at": "2026-09-29T11:10:02.950807+00:00",
+      "health": {
+        "id": "snowflake-hands-on-essentials",
+        "url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+        "checked_at": "2026-09-29T11:10:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+        "duration_signals": [],
+        "signal_fingerprint": "0ab2a68407083eac34f5534faf7e8091fc03e1a8d5723b1b8957c4e42546500d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+      "sha256": "26d8ff36fa0bf60ad9fa9cfa411a21150f40defc6bf65bc3718b3e051ee9e2ef",
+      "text_characters": 1551
+    },
+    {
+      "id": "snowflake-data-pipelines-docs",
+      "url": "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+      "checked_at": "2026-09-29T11:10:02.983878+00:00",
+      "health": {
+        "id": "snowflake-data-pipelines-docs",
+        "url": "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+        "checked_at": "2026-09-29T11:10:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction to streams and tasks | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+        "duration_signals": [],
+        "signal_fingerprint": "7fb767c61622b60a4b943b73100f5644870b4c06f31f7cc7c8ad0d212eb978e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+      "sha256": "a1a1dd2a6de7930d35f5cbdb1631e155b1b6bbc11a734de93adde588015de8d9",
+      "text_characters": 2713
+    },
+    {
+      "id": "pluralsight-snowflake-data-engineers",
+      "url": "https://www.pluralsight.com/paths/snowflake-for-data-engineers",
+      "checked_at": "2026-09-29T11:10:03.284627+00:00",
+      "health": {
+        "id": "pluralsight-snowflake-data-engineers",
+        "url": "https://www.pluralsight.com/paths/snowflake-for-data-engineers",
+        "checked_at": "2026-09-29T11:10:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/snowflake-for-data-engineers",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Snowflake for Data Engineers",
+        "canonical_url": "https://www.pluralsight.com/paths/snowflake-for-data-engineers",
+        "duration_signals": [
+          "10 minutes",
+          "8 Hours"
+        ],
+        "signal_fingerprint": "f8942172279eb1706273fc25feaf2a8a8db01858bc2ded750ba49043b4450e1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/snowflake-for-data-engineers",
+      "sha256": "ca8aea0a407610f7d7c9e4a2733f34b7e1450cfbbbbcaf0fc5e7ca483adbeddd",
+      "text_characters": 5256
+    },
+    {
+      "id": "oreilly-dea-c02-bootcamp",
+      "url": "https://www.oreilly.com/live-events/-/0642572194970/",
+      "checked_at": "2026-09-29T11:10:03.394323+00:00",
+      "health": {
+        "id": "oreilly-dea-c02-bootcamp",
+        "url": "https://www.oreilly.com/live-events/-/0642572194970/",
+        "checked_at": "2026-09-29T11:10:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/snowpro-advanced-data-engineer-certification-dea-c02-bootcamp/0642572194970/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SnowPro Advanced Data Engineer Certification (DEA-C02) Bootcamp",
+        "canonical_url": "https://www.oreilly.com/live-events/snowpro-advanced-data-engineer-certification-dea-c02-bootcamp/0642572194970/",
+        "duration_signals": [
+          "15 minutes",
+          "30 minutes",
+          "45 minutes",
+          "50 minutes",
+          "55 minutes",
+          "60 minutes",
+          "PT8H"
+        ],
+        "signal_fingerprint": "bde6350e1666b9b13a8bd91329948a249c7b610d8bc783a292223e8a912c5c26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/snowpro-advanced-data-engineer-certification-dea-c02-bootcamp/0642572194970/",
+      "sha256": "ed5e6e870cf5b4c915d1bdc6bdb4847878678f2aa44a3c2077372677006a59b9",
+      "text_characters": 5551
+    },
+    {
+      "id": "oreilly-snowflake-data-engineering",
+      "url": "https://www.oreilly.com/library/view/snowflake-data-engineering/9781633436855/",
+      "checked_at": "2026-09-29T11:10:03.569444+00:00",
+      "health": {
+        "id": "oreilly-snowflake-data-engineering",
+        "url": "https://www.oreilly.com/library/view/snowflake-data-engineering/9781633436855/",
+        "checked_at": "2026-09-29T11:10:03+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/snowflake-data-engineering/9781633436855/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "oreilly-advanced-snowflake",
+      "url": "https://www.oreilly.com/library/view/advanced-snowflake/9781098170202/",
+      "checked_at": "2026-09-29T11:10:03.662029+00:00",
+      "health": {
+        "id": "oreilly-advanced-snowflake",
+        "url": "https://www.oreilly.com/library/view/advanced-snowflake/9781098170202/",
+        "checked_at": "2026-09-29T11:10:03+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/advanced-snowflake/9781098170202/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "snowflake-streams-intro",
+      "url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+      "checked_at": "2026-09-29T11:10:03.709812+00:00",
+      "health": {
+        "id": "snowflake-streams-intro",
+        "url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+        "checked_at": "2026-09-29T11:10:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Introduction to streams | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+        "duration_signals": [],
+        "signal_fingerprint": "6c4c2bcdf13b922b8da67a020dcd89b8e9fa788be0c60d696166abf838edc6e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+      "sha256": "94a24d8189742b4cce199b70826da236f73690531c565d9e5ab2172d78132176",
+      "text_characters": 30681
+    },
+    {
+      "id": "snowflake-dynamic-target-lag",
+      "url": "https://docs.snowflake.com/en/user-guide/dynamic-tables-target-lag",
+      "checked_at": "2026-09-29T11:10:03.751245+00:00",
+      "health": {
+        "id": "snowflake-dynamic-target-lag",
+        "url": "https://docs.snowflake.com/en/user-guide/dynamic-tables-target-lag",
+        "checked_at": "2026-09-29T11:10:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/dynamic-tables/target-lag",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Set the target lag for a dynamic table | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/dynamic-tables/target-lag",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "1a18371c374b152f6785e50df85f289b86e23af37b5e147ed9ef632ab3126a2c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/dynamic-tables/target-lag",
+      "sha256": "7d824c1555f82b2dbcc89c715282198e9a901eb6f171e0339ef09d7227b38de4",
+      "text_characters": 8861
+    },
+    {
+      "id": "snowflake-warehouse-load",
+      "url": "https://docs.snowflake.com/en/user-guide/warehouses-load-monitoring",
+      "checked_at": "2026-09-29T11:10:04.053535+00:00",
+      "health": {
+        "id": "snowflake-warehouse-load",
+        "url": "https://docs.snowflake.com/en/user-guide/warehouses-load-monitoring",
+        "checked_at": "2026-09-29T11:10:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/warehouses-load-monitoring",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Monitoring warehouse load | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/warehouses-load-monitoring",
+        "duration_signals": [
+          "1 hour",
+          "1 minute"
+        ],
+        "signal_fingerprint": "c6d3d38e31a14148989af347134346180ee7022267c53b3dc5de24dff72024a8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/warehouses-load-monitoring",
+      "sha256": "f8440283c19bf07da1e5d625f2da303b074c3ae80d37cef30a52a8782d4b4529",
+      "text_characters": 6688
+    },
+    {
+      "id": "snowflake-merge-duplicates",
+      "url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+      "checked_at": "2026-09-29T11:10:04.447456+00:00",
+      "health": {
+        "id": "snowflake-merge-duplicates",
+        "url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+        "checked_at": "2026-09-29T11:10:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MERGE | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+        "duration_signals": [],
+        "signal_fingerprint": "28e800e1bb410be66f241bed0e437bb49cdc60e4f0571d24d4d25810441fabb3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+      "sha256": "011f921a81b522bae3cdd6c6ff58576094269009aa516b704b7e9bc5217a6caf",
+      "text_characters": 22028
+    },
+    {
+      "id": "snowflake-load-metadata",
+      "url": "https://docs.snowflake.com/en/user-guide/data-load-considerations-load",
+      "checked_at": "2026-09-29T11:10:04.698008+00:00",
+      "health": {
+        "id": "snowflake-load-metadata",
+        "url": "https://docs.snowflake.com/en/user-guide/data-load-considerations-load",
+        "checked_at": "2026-09-29T11:10:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/data-load-considerations-load",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Loading data | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/data-load-considerations-load",
+        "duration_signals": [],
+        "signal_fingerprint": "3b4b1497738a24db112ee735b3f883298c755bc5eb8c53521b51bad40973f029",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/data-load-considerations-load",
+      "sha256": "2cceaa8a188e73b5f8c13527cb234e78afd9be19ff9c8cd4e2df67a7267506da",
+      "text_characters": 12358
+    },
+    {
+      "id": "snowflake-constraints",
+      "url": "https://docs.snowflake.com/en/sql-reference/constraints-overview",
+      "checked_at": "2026-09-29T11:10:04.864733+00:00",
+      "health": {
+        "id": "snowflake-constraints",
+        "url": "https://docs.snowflake.com/en/sql-reference/constraints-overview",
+        "checked_at": "2026-09-29T11:10:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/sql-reference/constraints-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview of constraints | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/sql-reference/constraints-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "cfb29b2421ce6c4b89ee1981eb2b9dfb458d7392f980ab9eed23a59d5aed02e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/sql-reference/constraints-overview",
+      "sha256": "b23b28f9661d40f79efd0e4cb8697bec087b9c19053bff04483abd902b22e5b2",
+      "text_characters": 10599
+    },
+    {
+      "id": "snowflake-resource-monitors",
+      "url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+      "checked_at": "2026-09-29T11:10:04.865330+00:00",
+      "health": {
+        "id": "snowflake-resource-monitors",
+        "url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+        "checked_at": "2026-09-29T11:10:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Working with resource monitors | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+        "duration_signals": [],
+        "signal_fingerprint": "276631761db7756f01832823a4e574d121ec3b2501352b4f726acf127f4894ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+      "sha256": "10f3dbd570cef9129bf772f53033b931f438f86ae73cd45552cab1273664a61b",
+      "text_characters": 35460
+    },
+    {
+      "id": "snowflake-access-control",
+      "url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+      "checked_at": "2026-09-29T11:10:05.109372+00:00",
+      "health": {
+        "id": "snowflake-access-control",
+        "url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+        "checked_at": "2026-09-29T11:10:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Overview of Access Control | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "e480f5b8abe7e2b5c7a4c026f274ed9a98514d6050d4d7cb2f1aa4f6cd17acc9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/security-access-control-overview",
+      "sha256": "836382bf6cffa10e0613462df71d91dc4af1e3a1e942b8b6c7123439d3875388",
+      "text_characters": 22553
+    },
+    {
+      "id": "snowflake-data-sharing",
+      "url": "https://docs.snowflake.com/en/user-guide/data-sharing-intro",
+      "checked_at": "2026-09-29T11:10:05.228965+00:00",
+      "health": {
+        "id": "snowflake-data-sharing",
+        "url": "https://docs.snowflake.com/en/user-guide/data-sharing-intro",
+        "checked_at": "2026-09-29T11:10:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/data-sharing-intro",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "About Secure Data Sharing | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/data-sharing-intro",
+        "duration_signals": [],
+        "signal_fingerprint": "bb785102fc8bb0608782cd75153de0513c7f5b2e6f6390391f4ff75671033c58",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/data-sharing-intro",
+      "sha256": "672667a9bdadbb71d7f834adb06de02a5fc4ab10111c34d9c655eba72ab2ac13",
+      "text_characters": 11898
+    },
+    {
+      "id": "snowflake-de-training-datasheet",
+      "url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+      "checked_at": "2026-09-29T11:10:27.001996+00:00",
+      "health": {
+        "id": "snowflake-de-training-datasheet",
+        "url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+        "checked_at": "2026-09-29T11:10:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+      "sha256": "48b83be8e16669ada2a1177a4203703f661f484d1f42484b2edc52ea9ad76061",
+      "bytes": 692426,
+      "pdf_pages": 5,
+      "text_characters": 3671
+    },
+    {
+      "id": "snowflake-streaming-named-channels",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-channels",
+      "checked_at": "2026-09-29T11:10:05.486589+00:00",
+      "health": {
+        "id": "snowflake-streaming-named-channels",
+        "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-channels",
+        "checked_at": "2026-09-29T11:10:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-channels",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Named Channels and exactly-once delivery | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-channels",
+        "duration_signals": [],
+        "signal_fingerprint": "55a10c28a0ebb59b5a6d0bd377374a6569127b695e8b66ab4fa5dc18dc984091",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-channels",
+      "sha256": "033a0f404301df3b9aafc063cd7dbd10b3f8aa4464a8868b41ee3cadb3939558",
+      "text_characters": 8589
+    },
+    {
+      "id": "snowflake-streaming-overview",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview",
+      "checked_at": "2026-09-29T11:10:05.715772+00:00",
+      "health": {
+        "id": "snowflake-streaming-overview",
+        "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview",
+        "checked_at": "2026-09-29T11:10:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Snowpipe Streaming key concepts | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "534da6898498aced30282c7ea2d8b79c1765ccb8b35976fbce84199808640f1f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview",
+      "sha256": "d4bc7416f4e1b214c1335ca560d29379265bf40d0dbc53f7387ffeace455fb2e",
+      "text_characters": 3917
+    },
+    {
+      "id": "snowflake-task-graphs",
+      "url": "https://docs.snowflake.com/en/user-guide/tasks-graphs",
+      "checked_at": "2026-09-29T11:10:05.801515+00:00",
+      "health": {
+        "id": "snowflake-task-graphs",
+        "url": "https://docs.snowflake.com/en/user-guide/tasks-graphs",
+        "checked_at": "2026-09-29T11:10:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/tasks-graphs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Create a sequence of tasks with a task graph | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/tasks-graphs",
+        "duration_signals": [
+          "1 MINUTE"
+        ],
+        "signal_fingerprint": "e6f7bdb1f65d192a8b463cf89dde418934e88cbbc98ba95559e4178ee918536b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/tasks-graphs",
+      "sha256": "e71f413e949553480f6d874b2c16fd80511d810a9535e6126e8774fd20c9994a",
+      "text_characters": 29766
+    },
+    {
+      "id": "snowflake-replication-considerations",
+      "url": "https://docs.snowflake.com/en/user-guide/account-replication-considerations",
+      "checked_at": "2026-09-29T11:10:06.141856+00:00",
+      "health": {
+        "id": "snowflake-replication-considerations",
+        "url": "https://docs.snowflake.com/en/user-guide/account-replication-considerations",
+        "checked_at": "2026-09-29T11:10:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/account-replication-considerations",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Replication considerations | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/account-replication-considerations",
+        "duration_signals": [
+          "10 MINUTE",
+          "10 minutes"
+        ],
+        "signal_fingerprint": "06bf08e28ba667212bedff2e3626903b191157ece266f2f7a83d649e19cdf5aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/account-replication-considerations",
+      "sha256": "6ebb22dc8ed3b91a268f8ffd4c4f2ec2f18aff07a82d8d5aa983cef92d8bb913",
+      "text_characters": 58582
+    },
+    {
+      "id": "snowflake-elastic-channels-ga",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga",
+      "checked_at": "2026-09-29T11:10:06.535588+00:00",
+      "health": {
+        "id": "snowflake-elastic-channels-ga",
+        "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga",
+        "checked_at": "2026-09-29T11:10:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Sep 15, 2026: Elastic Channels for Snowpipe Streaming (*General availability*) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga",
+        "duration_signals": [],
+        "signal_fingerprint": "ebc072bbf268e59d56bbefd9025986ad5b18094106e4aec57327617bdbc77441",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga",
+      "sha256": "2835aaf22ea849b995bf771b7184f0c7c73bab6af7ceb3361d255d971280f446",
+      "text_characters": 7550
+    },
+    {
+      "id": "snowflake-streaming-sdk-2026",
+      "url": "https://docs.snowflake.com/en/release-notes/clients-drivers/snowpipe-streaming-sdk-2026",
+      "checked_at": "2026-09-29T11:10:07.019076+00:00",
+      "health": {
+        "id": "snowflake-streaming-sdk-2026",
+        "url": "https://docs.snowflake.com/en/release-notes/clients-drivers/snowpipe-streaming-sdk-2026",
+        "checked_at": "2026-09-29T11:10:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/clients-drivers/snowpipe-streaming-sdk-2026",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Snowpipe Streaming SDK release notes for 2026 | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/clients-drivers/snowpipe-streaming-sdk-2026",
+        "duration_signals": [],
+        "signal_fingerprint": "cafa1220bdc03fc84580b4474afe0a8d58521144224d133dec5ac3a4987a9185",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/clients-drivers/snowpipe-streaming-sdk-2026",
+      "sha256": "70e58f5a17f0f02cc3894e2459cafc24f17cfa75d5dfde7988e1fb4b74a18768",
+      "text_characters": 9859
+    },
+    {
+      "id": "snowflake-streaming-iceberg-ga",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga",
+      "checked_at": "2026-09-29T11:10:07.104055+00:00",
+      "health": {
+        "id": "snowflake-streaming-iceberg-ga",
+        "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga",
+        "checked_at": "2026-09-29T11:10:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Sep 24, 2026: Snowpipe Streaming: Partitioned Apache Iceberg™ tables (*General availability*) | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga",
+        "duration_signals": [],
+        "signal_fingerprint": "1935711c417d84880934e46bb99a0681cab2f30816b2359014dfe4e6f5e4f1d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga",
+      "sha256": "20c1376f0bd847e1dc7b9ff9f143fca3a224efd7ee9723840479b5be76ce4148",
+      "text_characters": 7147
+    },
+    {
+      "id": "snowflake-streaming-monitoring-sep2026",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-monitoring",
+      "checked_at": "2026-09-29T11:10:07.401478+00:00",
+      "health": {
+        "id": "snowflake-streaming-monitoring-sep2026",
+        "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-monitoring",
+        "checked_at": "2026-09-29T11:10:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-monitoring",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Sep 24, 2026: Snowpipe Streaming: Event table monitoring | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-monitoring",
+        "duration_signals": [],
+        "signal_fingerprint": "e4e1958fa351bed4627b988848563cc225c687fcd36ccd17996b19f8b1fcc3fd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-monitoring",
+      "sha256": "0231de77700b4e9d302a964eb72d37a15ee52947d755f1019dfe170d91bfab9c",
+      "text_characters": 7265
+    },
+    {
+      "id": "manning-snowflake-data-engineering",
+      "url": "https://www.manning.com/books/snowflake-data-engineering",
+      "checked_at": "2026-09-29T11:10:07.759413+00:00",
+      "health": {
+        "id": "manning-snowflake-data-engineering",
+        "url": "https://www.manning.com/books/snowflake-data-engineering",
+        "checked_at": "2026-09-29T11:10:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.manning.com/books/snowflake-data-engineering",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Snowflake Data Engineering - Maja Ferle",
+        "canonical_url": "https://www.manning.com/books/snowflake-data-engineering",
+        "duration_signals": [],
+        "signal_fingerprint": "a9322a29c4ea8de5ae16b1a949a368849f4677f16c79ce11f62cff50ec8516d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.manning.com/books/snowflake-data-engineering",
+      "sha256": "e019e061dcd2ab762628f415cd86f248016a824f9030323f1c34a6ea3ef077bd",
+      "text_characters": 16621
+    },
+    {
+      "id": "snowflake-elastic-channels",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-elastic-channels-overview",
+      "checked_at": "2026-09-29T11:10:59.351780+00:00",
+      "health": {
+        "id": "snowflake-elastic-channels",
+        "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-elastic-channels-overview",
+        "checked_at": "2026-09-29T11:10:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-elastic-channels-overview",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Elastic Channels overview | Snowflake Documentation",
+        "canonical_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-elastic-channels-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "8a872f071e57dbc00a1ec58ea64c01f390c83d0642856f53b19b3261fda9dd83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-elastic-channels-overview",
+      "sha256": "9ef24d47bce0b961079930b476ef54d33c260fb29446bc6982c3f7fd1a8342c0",
+      "text_characters": 9221
+    }
+  ],
+  "added_source_ids": [
+    "snowflake-de-training-datasheet",
+    "snowflake-streaming-named-channels",
+    "snowflake-streaming-overview",
+    "snowflake-task-graphs",
+    "snowflake-replication-considerations",
+    "snowflake-elastic-channels-ga",
+    "snowflake-streaming-sdk-2026",
+    "snowflake-streaming-iceberg-ga",
+    "snowflake-streaming-monitoring-sep2026",
+    "manning-snowflake-data-engineering",
+    "snowflake-elastic-channels"
+  ],
+  "findings": [
+    {
+      "id": "deac02-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Unchanged public abilities still need an explicit lifecycle baseline",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Five public abilities unchanged;status snapshot missing;detailedguide form not submitted.",
+      "recommendation": "Preserve objective bytes,initialize lifecycle after review and retain public scope boundary.",
+      "disposition": "applied",
+      "source_id": "snowflake-dea-c02-certification",
+      "resolution": "Preserve objective bytes,initialize lifecycle after review and retain public scope boundary."
+    },
+    {
+      "id": "deac02-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Role-training topics are not detailed exam weights",
+      "url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Actual5page25L03rolecourse has practical prerequisites and broad pipeline outline.",
+      "recommendation": "Use as supporting study route,not recovered detailed blueprint or exam runtime.",
+      "disposition": "applied",
+      "source_id": "snowflake-de-training-datasheet",
+      "resolution": "Use as supporting study route,not recovered detailed blueprint or exam runtime."
+    },
+    {
+      "id": "deac02-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current streaming has distinct channel contracts",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September15ElasticGA requires documentedSDK1.8.0API and introduces server-managed multiproducer ingestion.",
+      "recommendation": "Add current channel comparison with explicit version verification.",
+      "disposition": "applied",
+      "source_id": "snowflake-elastic-channels-ga",
+      "resolution": "Add current channel comparison with explicit version verification."
+    },
+    {
+      "id": "deac02-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Durable acknowledgement precedes row processing and queryability",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-elastic-channels-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Elasticack follows durable buffering;atleastonce retry can duplicate;appendtokens correlate rather than deduplicate.",
+      "recommendation": "Separate retained input,ack,errors,visible rows and business reconciliation.",
+      "disposition": "applied",
+      "source_id": "snowflake-elastic-channels",
+      "resolution": "Separate retained input,ack,errors,visible rows and business reconciliation."
+    },
+    {
+      "id": "deac02-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Source offsets require client recovery coordination",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-channels",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Opaque tokens track commits but do not prevent producer resends;ordering is channel-local and inactive offsets expire.",
+      "recommendation": "Require replayable input,stablechannelidentity and applicationinterpreted restart;do notclaim universal automatic exactlyonce.",
+      "disposition": "applied",
+      "source_id": "snowflake-streaming-named-channels",
+      "resolution": "Require replayable input,stablechannelidentity and applicationinterpreted restart;do notclaim universal automatic exactlyonce."
+    },
+    {
+      "id": "deac02-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "New partitioned streaming support has ownership and architecture exclusions",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September24GA includes Snowflake-managedIcebergv2/v3,Named/Elastic;excludesClassic/externalcatalogmanagement.",
+      "recommendation": "State exact target boundary and verify actual account/client.",
+      "disposition": "applied",
+      "source_id": "snowflake-streaming-iceberg-ga",
+      "resolution": "State exact target boundary and verify actual account/client."
+    },
+    {
+      "id": "deac02-deep-7",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "A default event table does not prove telemetry collection",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-monitoring",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September24release requires schemaLOG_EVENT_LEVELINFO or inheritance plusreadaccess.",
+      "recommendation": "Teach collection/access/visibility checks without configuring logging or alerts.",
+      "disposition": "applied",
+      "source_id": "snowflake-streaming-monitoring-sep2026",
+      "resolution": "Teach collection/access/visibility checks without configuring logging or alerts."
+    },
+    {
+      "id": "deac02-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Task graph recovery is not one atomic transaction",
+      "url": "https://docs.snowflake.com/en/user-guide/tasks-graphs",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Root suspension leaves runninggraph;calledprocedure canchange;skippedroot nofinalizer;overlapandretry distinct.",
+      "recommendation": "Teach graph/dependencyversioning and sideeffect-aware retries;add concrete proposed failurelab.",
+      "disposition": "applied",
+      "source_id": "snowflake-task-graphs",
+      "resolution": "Teach graph/dependencyversioning and sideeffect-aware retries;add concrete proposed failurelab."
+    },
+    {
+      "id": "deac02-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Independently replicated checkpoints can duplicate or lose work",
+      "url": "https://docs.snowflake.com/en/user-guide/account-replication-considerations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Stream/source/destination alignment and upstreamretention required;externalstage files/trust separate;promotedoffset canlag.",
+      "recommendation": "Coordinate recovery state and retain replayable source beyond refresh interval withmargin.",
+      "disposition": "applied",
+      "source_id": "snowflake-replication-considerations",
+      "resolution": "Coordinate recovery state and retain replayable source beyond refresh interval withmargin."
+    },
+    {
+      "id": "deac02-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "MERGE error settings do not establish a complete business version policy",
+      "url": "https://docs.snowflake.com/en/sql-reference/sql/merge",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Ambiguousmatched errors differ from duplicate unmatched inserts.",
+      "recommendation": "Validate sourcegrain,versions,tombstones andties;localCDCworkbook demonstrates explicit businesscontract.",
+      "disposition": "applied",
+      "source_id": "snowflake-merge-duplicates",
+      "resolution": "Validate sourcegrain,versions,tombstones andties;localCDCworkbook demonstrates explicit businesscontract."
+    },
+    {
+      "id": "deac02-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Filtering consumption does not preserve omitted changes",
+      "url": "https://docs.snowflake.com/en/user-guide/streams-intro",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Committed DML consumes available changes;plainSELECT/rollback do notadvanceoffset.",
+      "recommendation": "Require independent consumer offsets and failure/replay evidence.",
+      "disposition": "applied",
+      "source_id": "snowflake-streams-intro",
+      "resolution": "Require independent consumer offsets and failure/replay evidence."
+    },
+    {
+      "id": "deac02-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Target lag is best-effort freshness rather than a timer",
+      "url": "https://docs.snowflake.com/en/user-guide/dynamic-tables-target-lag",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DEA-C02"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Root-relative goal,min60s,DOWNSTREAM needs an actual refreshconsumer.",
+      "recommendation": "Add terminal scheduling decision and actual-lag monitoring.",
+      "disposition": "applied",
+      "source_id": "snowflake-dynamic-target-lag",
+      "resolution": "Add terminal scheduling decision and actual-lag monitoring."
+    }
+  ],
+  "blog_intake": [],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 40,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "3a3b44a8e6c00c3b1ea1878ca0626b2f9e7f9767ac318cd0cd12b6ef201be808",
+      "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+      "execution_stdout": "{\"active_cents\": 250, \"checkpoints\": {\"p0\": 9, \"p1\": 1}, \"quarantined\": 2, \"receipts\": 10}\n40 local checks passed",
+      "results": {
+        "active_cents": 250,
+        "checkpoints": {
+          "p0": 9,
+          "p1": 1
+        },
+        "quarantined": 2,
+        "receipts": 10
+      },
+      "execution_boundary": "Actual standard-library SQLite in-memory transactions on controlled synthetic CDC events. No Snowflake SQL,SDK,connector,channel,taskgraph,replication,network,credentials or cloud account.",
+      "model_limits": "Single connection;contiguous positive integer source offsets and one trusted partition per entity are fictional contract. Receipts/tombstones do not expire;no process durability/concurrency/external effects guarantee. SQLite keys enforced unlike standardSnowflake;validator implements only small fixture contract."
+    }
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Only five public abilities mapped;detailed official guide remains request-form restricted. Actual5page training PDF supports learning,not detailed objectives/weights/exam duration.",
+    "Eight account labs and three scenarios remain proposed;independent human review pending. No Snowflake account,SDK/connector installation,channel,task,replication or paidlabexecution.",
+    "40 actual local checks execute in-memorySQLite transactions,not Snowflake streaming/MERGE/stream/task semantics. One connection and controlled fixtures;no crashdurability/concurrency/external-sideeffect guarantee.",
+    "Contiguous integer offsets and trustedonepartition/entity rule are fictional;Snowflake tokens opaque. Receipts/tombstones neverexpire locally;SQLite enforcedkeys differ fromstandardSnowflake. Process termination losesallstate.",
+    "Elasticdurableack notqueryvisibility;Namedrequires sourcecommitcoordination. CurrentSDK/feature dates distinguished,not installedversionproof;accountfeatureavailabilitynotinspected.",
+    "Technicaldocuments selectivelyread as recorded;Named/Elastic and threeprimaryannouncements mainpages fullyread. Actualfive-page trainingPDFfullyread. Noall-feature/entirereplication58krefaudit.",
+    "TwoOReillybookURLsHTTP403oldmetadataunverified. PublicManningNovember2024/368pagesverified;no fullbook. Pluralrolepathnotexplicitexammap;bootcampnoverifiedupcomingsession. Noforms,trialcreation,enrollment orpracticequestions.",
+    "ReservedfiveGitHubguides anddisablednotificationpilot untouched;no externalmessages,logging/alerts,auth,servicechanges or newpermissions."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 176,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Repository/site gates plus40 real local SQLite CDC transaction checks;no Snowflake or infrastructure lab executed.",
+    "passed": 40,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "3a3b44a8e6c00c3b1ea1878ca0626b2f9e7f9767ac318cd0cd12b6ef201be808",
+    "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "execution_stdout": "{\"active_cents\": 250, \"checkpoints\": {\"p0\": 9, \"p1\": 1}, \"quarantined\": 2, \"receipts\": 10}\n40 local checks passed",
+    "results": {
+      "active_cents": 250,
+      "checkpoints": {
+        "p0": 9,
+        "p1": 1
+      },
+      "quarantined": 2,
+      "receipts": 10
+    },
+    "model_limits": "Single connection;contiguous positive integer source offsets and one trusted partition per entity are fictional contract. Receipts/tombstones do not expire;no process durability/concurrency/external effects guarantee. SQLite keys enforced unlike standardSnowflake;validator implements only small fixture contract.",
+    "learning_catalog_consistency": "passed"
+  },
+  "actual_pdf_receipts": [
+    {
+      "id": "snowflake-de-training-datasheet",
+      "url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+      "checked_at": "2026-09-29T11:10:27.001996+00:00",
+      "health": {
+        "id": "snowflake-de-training-datasheet",
+        "url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+        "checked_at": "2026-09-29T11:10:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+        "content_type": "application/pdf",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+      "sha256": "48b83be8e16669ada2a1177a4203703f661f484d1f42484b2edc52ea9ad76061",
+      "bytes": 692426,
+      "pdf_pages": 5,
+      "text_characters": 3671
+    }
+  ],
+  "public_ability_groups": [
+    {
+      "title": "Source data from Data Lakes, APIs, and on-premises",
+      "objectives": [
+        "Source data from Data Lakes, APIs, and on-premises"
+      ]
+    },
+    {
+      "title": "Transform, replicate, and share data across cloud platforms",
+      "objectives": [
+        "Transform, replicate, and share data across cloud platforms"
+      ]
+    },
+    {
+      "title": "Design end-to-end near real-time streams",
+      "objectives": [
+        "Design end-to-end near real-time streams"
+      ]
+    },
+    {
+      "title": "Design scalable compute solutions for Data Engineer workloads",
+      "objectives": [
+        "Design scalable compute solutions for Data Engineer workloads"
+      ]
+    },
+    {
+      "title": "Evaluate performance metrics",
+      "objectives": [
+        "Evaluate performance metrics"
+      ]
+    }
+  ],
+  "lifecycle_initialization_receipt": {
+    "changed": [
+      "DEA-C02"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DEA-C02",
+        "title": "SnowPro Advanced: Data Engineer",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+        "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\dea-c02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dea-c02-official-status.json",
+        "previous_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "current_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "previous_status_sha256": null,
+        "current_status_sha256": "0cead048921028baabe0bed9538dd2f365bf40a90b4a515a3fa5c0d38bcb53ca",
+        "official_status": {
+          "skills_versions": [
+            "DEA-C02",
+            "2 or more years of hands-on experience as a Data Engineer in a production environment."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "status_written": true,
+        "written": true
+      }
+    ]
+  },
+  "post_initialization_monitor": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DEA-C02",
+        "title": "SnowPro Advanced: Data Engineer",
+        "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+        "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+        "snapshot_path": "data\\objective-snapshots\\dea-c02-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dea-c02-official-status.json",
+        "previous_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "current_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+        "previous_status_sha256": "0cead048921028baabe0bed9538dd2f365bf40a90b4a515a3fa5c0d38bcb53ca",
+        "current_status_sha256": "0cead048921028baabe0bed9538dd2f365bf40a90b4a515a3fa5c0d38bcb53ca",
+        "official_status": {
+          "skills_versions": [
+            "DEA-C02",
+            "2 or more years of hands-on experience as a Data Engineer in a production environment."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "objective_scope_boundary": "Five unchanged public abilities. Actual5page25L03role-training outline supports learning but is not the detailed exam blueprint. No form submitted or weights/duration inferred.",
+  "preserved_objective_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+  "release_intake": [
+    {
+      "source_id": "snowflake-elastic-channels-ga",
+      "observation": "Full mainSeptember15GA notice read;documentedSDK1.8.0minimum,not installedstate."
+    },
+    {
+      "source_id": "snowflake-streaming-sdk-2026",
+      "observation": "August27version1.8.0entry read;featureannouncementdate separatelySeptember15."
+    },
+    {
+      "source_id": "snowflake-streaming-iceberg-ga",
+      "observation": "Full mainSeptember24GA notice read;Snowflake-managedIcebergv2/v3,Named/Elastic,notClassic/external."
+    },
+    {
+      "source_id": "snowflake-streaming-monitoring-sep2026",
+      "observation": "Full mainSeptember24notice read;collectionsetting/inheritance/readpermission;no actuallogging oralertchange."
+    }
+  ],
+  "catalog_metadata_observations": {
+    "official_training_pdf_pages": 5,
+    "official_training_pdf_code": "25L03",
+    "official_training_days": 3,
+    "official_live_hours": 24,
+    "hands_on_essentials_workshops": 6,
+    "pluralsight_course_minutes": [
+      75,
+      64,
+      56,
+      94,
+      68,
+      75,
+      63
+    ],
+    "pluralsight_total_minutes": 495,
+    "pluralsight_header_hours": 8,
+    "bootcamp_timed_topic_minutes": [
+      [
+        30,
+        60,
+        45,
+        55,
+        50
+      ],
+      [
+        45,
+        45,
+        45,
+        45,
+        45,
+        15
+      ]
+    ],
+    "bootcamp_total_minutes": 480,
+    "bootcamp_boundary": "Estimatedtimings,untimedbreaks/Q&Aexcluded;no upcomingbookingdateverified",
+    "manning_author": "Maja Ferle",
+    "manning_published": "November2024",
+    "manning_pages": 368,
+    "manning_isbn": "9781633436855",
+    "oreilly_data_engineering": "HTTP403;oldplatformDecember2024/11h05munverified",
+    "oreilly_advanced": "HTTP403;oldOctober2025/4h55munverified"
+  },
+  "catalog_findings": [
+    {
+      "source_id": "manning-snowflake-data-engineering",
+      "observation": "PublisherNovember2024/368pages,whileoldOReillyplatformdateunverified.",
+      "resolution": "Citepublisherdate separately anddo notassert oldplatformmetadata ascurrent."
+    },
+    {
+      "source_id": "pluralsight-snowflake-data-engineers",
+      "observation": "Seven published2025cards total495m;header8h,rolepathinproduction.",
+      "resolution": "Show actualsum andavoidcompleteexam-map/qualityclaim."
+    },
+    {
+      "source_id": "oreilly-dea-c02-bootcamp",
+      "observation": "Eleven timedtopics480m,noverifiedupcomingsession;unrelatedDatabricksfooter.",
+      "resolution": "Use publicDEA-C02title/agenda,qualifyduration/bookingandignore unrelatedfooteridentity."
+    }
+  ]
+}

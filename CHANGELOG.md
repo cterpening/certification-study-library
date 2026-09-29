@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [DEA-C02 deep review](docs/research/2026-09-29-dea-c02-deep-review.md): Updated streaming, task and replication contracts; refreshed catalog evidence and added 40 executed CDC checks with 48 answers.
+
 - September 29, 2026: [COF-C03 deep review](docs/research/2026-09-29-cof-c03-deep-review.md): Updated authentication, pipeline and performance reasoning; verified training metadata and added 24 executed local checks with 48 answers.
 
 - September 29, 2026: [SOL-C01 deep review](docs/research/2026-09-29-sol-c01-deep-review.md): Preserved retired scope, verified the replacement course, updated notebook/constraint/load/role/Cortex guidance and added 45 executed local checks with 42 answers.

@@ -3,6 +3,160 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "snowflake-de-training-datasheet",
+      "title": "Data Engineer training datasheet",
+      "url": "https://www.snowflake.com/wp-content/uploads/2022/03/standard_de_datasheet.pdf",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Actual5pagePDF25L03/copyright2025 fully read with binary/page receipt. Three-day roletraining,required engineering background,Foundations-equivalent knowledge,recommendedMFAEssentials and ingestion/transformation/orchestration/performance/observability outline. Not detailedDEA-C02 blueprint or weights;legacy notebook/function wording not universalcurrentruntimeproof. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-streaming-named-channels",
+      "title": "Named Channels and source offset recovery",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-channels",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Entire main current Named Channels page read:within-channel ordering,client-interpreted committed opaque offset,replayable input,30day inactivity removal,REST continuation vs sourceoffset. No SDK/client call;token itself does not deduplicate business data. Generic reopen caveat qualified by actual SDK version rather than assumed universal timing. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-streaming-overview",
+      "title": "Snowpipe Streaming high-performance overview",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Entire fetched main content read;URL now presents Key Concepts/navigation entry point for channels,pipe,table/schema,Iceberg,access,monitoring. Not treated as a complete architecture/tutorial page;followed actual Elastic link. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-task-graphs",
+      "title": "Task graphs retries and overlap",
+      "url": "https://docs.snowflake.com/en/user-guide/tasks-graphs",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Main graph/owner/finalizer/start,complete modify/suspend/retry/overlap/versioning sections read. Same owner/database/schema,skippedroot nofinalizer,root suspension permits currentgraph tofinish,procedure change may escape task version snapshot,NO/CHILD/ALL overlap are between runs. Not full example catalog or task replication procedures;no taskexecution. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-replication-considerations",
+      "title": "Replication object and stream considerations",
+      "url": "https://docs.snowflake.com/en/user-guide/account-replication-considerations",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Selected dangling stream references,read-only secondary objects,complete Streaming/retention/stage/pipe and stream duplication/staleness/history sections read. Initial task group-refresh-state subsection only;not entire58k reference. Source/table/offset refresh coordination,external files/trust/notifications and postpromotion source replay boundaries. No failover or replication configuration. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-elastic-channels-ga",
+      "title": "September15 Elastic Channels general availability",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-15-snowpipe-streaming-elastic-channels-ga",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Entire main September15,2026 GA announcement read:implicit server-scaled channel,atleastonce durableappend acknowledgements,Java/Python/Node SDK methods and1.8.0minimum for documentedGAAPI. Distinct from August27SDKrelease date;no installedversion claim. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-streaming-sdk-2026",
+      "title": "Snowpipe Streaming SDK2026 releases",
+      "url": "https://docs.snowflake.com/en/release-notes/clients-drivers/snowpipe-streaming-sdk-2026",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Version1.8.0August27entry read plus selected1.7TLS,1.6Nodeappend,1.5and1.4reopen/auth details. Only GAAPI minimum/version-date distinction adopted. Not claim every release/linked SDK reference audited or currentclient upgraded. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-streaming-iceberg-ga",
+      "title": "September24 partitioned Iceberg streaming GA",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-partitioned-iceberg-ga",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Entire main September24,2026 announcement read. Partitioned/nonpartitioned Snowflake-managed Icebergv2/v3,Named/Elastic,currentpartition spec;Classic andexternallymanagedexcluded. No target/client/account inspected. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-streaming-monitoring-sep2026",
+      "title": "September24 streaming event-table monitoring",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-24-snowpipe-streaming-monitoring",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Entire main September24,2026 event-table monitoring announcement read. Row/serverprocessing/error/channel evidence,defaulttable,LOG_EVENT_LEVELINFOschema or inheritedsetting andreadaccess required. No logging change,alert or query executed;not full linked metriccatalog. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "manning-snowflake-data-engineering",
+      "title": "Snowflake Data Engineering publisher catalog",
+      "url": "https://www.manning.com/books/snowflake-data-engineering",
+      "publisher": "Manning",
+      "authority_class": 4,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Publisher title/author/date/ISBN/pagecount and about-book/reader/inside sections read:MajaFerle,November2024,368pages,SQL/cloudaudience,ingestion/transforms/orchestration/Snowpark/CI. Generic site your-own-product UI not proof of account access. No fullbook,paidchapters or publisher reading-duration claim;search-only public chapter summaries not adopted as current technical authority. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "snowflake-elastic-channels",
+      "title": "Elastic Channels delivery and acknowledgements",
+      "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-elastic-channels-overview",
+      "publisher": "Snowflake",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 DEA-C02 deep review: Entire main current overview read:implicit channel,multiproducer,unorderedatleastonce,durableappendack before rowprocessing/queryability,volatileSDKbuffer,appendtoken callbackcorrelation notserverpersisted/dedup,RESTrequestId/retryCountcorrelation notdedup. NoactualSDK,RESTcall,callbacks or durabilitytest. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "snowflake-persisted-results",
       "title": "Persisted query results and reuse conditions",
       "url": "https://docs.snowflake.com/en/user-guide/querying-persisted-results",
@@ -25,10 +179,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 COF-C03 deep review: Offset storage and full transaction/consumption/repeatable-read sections through transaction-start explanation read. Selected staleness search evidence only;not whole stream-type/catalog page. Filtered committed consumption advances all changes;SELECT/rollback do not. No stream created. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 COF-C03 deep review: Offset storage and full transaction/consumption/repeatable-read sections through transaction-start explanation read. Selected staleness search evidence only;not whole stream-type/catalog page. Filtered committed consumption advances all changes;SELECT/rollback do not. No stream created. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Offset storage and full transaction/consumption/repeatable-read sections through transaction-start explanation read. Selected staleness search evidence only;not whole stream-type/catalog page. Filtered committed consumption advances all changes;SELECT/rollback do not. No stream created. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-dynamic-target-lag",
@@ -39,10 +194,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 COF-C03 deep review: Main target-lag,best-effort,min60s,root-relative timing,DOWNSTREAM/soft-dependency and two-table example sections read. Also manual-refresh/end sections. Intro controls interpretation;did not repeat table shorthand suggesting exact ten-minute scheduling. No dynamic table execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 COF-C03 deep review: Main target-lag,best-effort,min60s,root-relative timing,DOWNSTREAM/soft-dependency and two-table example sections read. Also manual-refresh/end sections. Intro controls interpretation;did not repeat table shorthand suggesting exact ten-minute scheduling. No dynamic table execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Main target-lag,best-effort,min60s,root-relative timing,DOWNSTREAM/soft-dependency and two-table example sections read. Also manual-refresh/end sections. Intro controls interpretation;did not repeat table shorthand suggesting exact ten-minute scheduling. No dynamic table execution. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-query-insights",
@@ -67,10 +223,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 COF-C03 deep review: Main chart definition/status categories,load arithmetic,slow-query/peak/excessive-credit guidance read. Time-weighted concurrency,not CPU. Synthetic interval worksheet only;not actual account usage. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 COF-C03 deep review: Main chart definition/status categories,load arithmetic,slow-query/peak/excessive-credit guidance read. Time-weighted concurrency,not CPU. Synthetic interval worksheet only;not actual account usage. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Main chart definition/status categories,load arithmetic,slow-query/peak/excessive-credit guidance read. Time-weighted concurrency,not CPU. Synthetic interval worksheet only;not actual account usage. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-window-frames",
@@ -95,10 +252,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 COF-C03 deep review: Syntax,usage and complete duplicate-match UPDATE/DELETE/INSERT behavior sections read. Default nondeterministic error and duplicate unmatched insertion distinguished. Not entire example catalog;no Snowflake MERGE execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 COF-C03 deep review: Syntax,usage and complete duplicate-match UPDATE/DELETE/INSERT behavior sections read. Default nondeterministic error and duplicate unmatched insertion distinguished. Not entire example catalog;no Snowflake MERGE execution. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Syntax,usage and complete duplicate-match UPDATE/DELETE/INSERT behavior sections read. Default nondeterministic error and duplicate unmatched insertion distinguished. Not entire example catalog;no Snowflake MERGE execution. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-python-connector-examples",
@@ -152,10 +310,11 @@
       "access_model": "public",
       "supported_exams": [
         "SOL-C01",
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Loadselection/concurrency andcompleteolderfiles/loadmetadata/workarounds/examples sections read,plusnull/CSVparagraphs.64dayretention/unknownskip/FORCE/LOAD_UNCERTAIN_FILES distinguished. No indefiniteeventdeduplication guarantee; noSnowflakeCOPYrun. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected bulk-load selection and complete older-file/load-metadata sections read in same-session Snowflake work.64day metadata, uncertain old files/default skip, FORCE versus LOAD_UNCERTAIN_FILES. No COPY execution or permanent business-dedup guarantee. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Loadselection/concurrency andcompleteolderfiles/loadmetadata/workarounds/examples sections read,plusnull/CSVparagraphs.64dayretention/unknownskip/FORCE/LOAD_UNCERTAIN_FILES distinguished. No indefiniteeventdeduplication guarantee; noSnowflakeCOPYrun. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected bulk-load selection and complete older-file/load-metadata sections read in same-session Snowflake work.64day metadata, uncertain old files/default skip, FORCE versus LOAD_UNCERTAIN_FILES. No COPY execution or permanent business-dedup guarantee. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Selected bulk-load selection and complete older-file/load-metadata sections read in same-session Snowflake work.64day metadata, uncertain old files/default skip, FORCE versus LOAD_UNCERTAIN_FILES. No COPY execution or permanent business-dedup guarantee. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-copy-into",
@@ -209,10 +368,11 @@
       "access_model": "public",
       "supported_exams": [
         "SOL-C01",
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Selectedsupportedtypes andcomplete enforcementmatrix/tableconstraintnotes read. CurrentstandardNOTNULL/CHECK versusunenforcedPK/FK/UNIQUE;hybridrequiredPK. Not allsyntax/examples orallconstraintssemantics. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Current supported-type and enforcement matrix sections read in same-session work:standard NOTNULL/CHECK enforced, primary/unique/foreign unenforced;hybrid required primary key. Not all syntax/constraint semantics. SQLite exercise enforcement explicitly separate. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Selectedsupportedtypes andcomplete enforcementmatrix/tableconstraintnotes read. CurrentstandardNOTNULL/CHECK versusunenforcedPK/FK/UNIQUE;hybridrequiredPK. Not allsyntax/examples orallconstraintssemantics. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Current supported-type and enforcement matrix sections read in same-session work:standard NOTNULL/CHECK enforced, primary/unique/foreign unenforced;hybrid required primary key. Not all syntax/constraint semantics. SQLite exercise enforcement explicitly separate. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Current supported-type and enforcement matrix sections read in same-session work:standard NOTNULL/CHECK enforced, primary/unique/foreign unenforced;hybrid required primary key. Not all syntax/constraint semantics. SQLite exercise enforcement explicitly separate. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-check-ga",
@@ -253,10 +413,11 @@
       "access_model": "public",
       "supported_exams": [
         "SOL-C01",
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 SOL-C01 deep review: Introductorycoverage andselectedcloudservices/precisequotacaveats read. Warehousemonitor doesnotcoverAI/serverless;canovershootwhile stopping. No monitor/budgetconfiguration or notification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 29 SOL-C01 deep review: Introductorycoverage andselectedcloudservices/precisequotacaveats read. Warehousemonitor doesnotcoverAI/serverless;canovershootwhile stopping. No monitor/budgetconfiguration or notification. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Introductory coverage and quota/suspension caveats read in same-session work. Warehouse coverage excludes serverless/AI and stopping can overshoot;no account monitor or notification changed. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-warehouse-considerations",
@@ -46691,9 +46852,10 @@
       "last_checked": "2026-09-29",
       "supported_exams": [
         "SOL-C01",
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
-      "notes": "Current first-party DAC/RBAC/UBAC, securable-object, privilege, ownership and role-hierarchy reference. September 29 SOL-C01 deep review: Selected DAC/RBAC/UBAC,roles/inheritance/ownership,managedaccess,existing/futuregrants andcompleteprimary/secondaryauthorization section read. Database roles notactivated directly;CREATEprimaryonly. Did not adopt unrelated erroneous-looking warehouse/schema example orreviewallnewaccessrequest UI. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected roles/inheritance/ownership,managed access/future grants and full primary/secondary authorization sections read in same-session work. CREATE uses primary role;database roles not activated directly. No account/grant inspection or all linked syntax review. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "Current first-party DAC/RBAC/UBAC, securable-object, privilege, ownership and role-hierarchy reference. September 29 SOL-C01 deep review: Selected DAC/RBAC/UBAC,roles/inheritance/ownership,managedaccess,existing/futuregrants andcompleteprimary/secondaryauthorization section read. Database roles notactivated directly;CREATEprimaryonly. Did not adopt unrelated erroneous-looking warehouse/schema example orreviewallnewaccessrequest UI. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Selected roles/inheritance/ownership,managed access/future grants and full primary/secondary authorization sections read in same-session work. CREATE uses primary role;database roles not activated directly. No account/grant inspection or all linked syntax review. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Selected roles/inheritance/ownership,managed access/future grants and full primary/secondary authorization sections read in same-session work. CREATE uses primary role;database roles not activated directly. No account/grant inspection or all linked syntax review. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-data-loading",
@@ -46721,9 +46883,10 @@
       "last_checked": "2026-09-29",
       "supported_exams": [
         "SOL-C01",
-        "COF-C03"
+        "COF-C03",
+        "DEA-C02"
       ],
-      "notes": "Current first-party provider/consumer secure sharing model and boundaries. September 29 SOL-C01 deep review: MainAbout/How/Whatshare/options/provider/consumer/readeraccountsections read. Directshareinregion,read-onlyimports,no consumerstoragecopy,consumercompute andprovider-ownedreader boundary. Not full linkedcross-cloudfulfillment/price documentation. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Main sharing mechanisms,provider/consumer and reader-account sections read in same-session work. Same-region direct-share/read-only/no consumer copy;cross-region separate. No full linked fulfillment/pricing review or actual share. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "Current first-party provider/consumer secure sharing model and boundaries. September 29 SOL-C01 deep review: MainAbout/How/Whatshare/options/provider/consumer/readeraccountsections read. Directshareinregion,read-onlyimports,no consumerstoragecopy,consumercompute andprovider-ownedreader boundary. Not full linkedcross-cloudfulfillment/price documentation. See docs/research/2026-09-29-sol-c01-deep-review.md No live infrastructure execution. September 29 COF-C03 deep review: Main sharing mechanisms,provider/consumer and reader-account sections read in same-session work. Same-region direct-share/read-only/no consumer copy;cross-region separate. No full linked fulfillment/pricing review or actual share. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Main sharing mechanisms,provider/consumer and reader-account sections read in same-session work. Same-region direct-share/read-only/no consumer copy;cross-region separate. No full linked fulfillment/pricing review or actual share. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-cortex-ai-sql",
@@ -46782,7 +46945,7 @@
         "DEA-C02",
         "GES-C02"
       ],
-      "notes": "First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase. September 29 COF-C03 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "First-party validity, continuing education, scheduling, scoring, accommodations, retake and beta policies; volatile and must be rechecked before purchase. September 29 COF-C03 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Main policies including renewal/expiry, retakes, scheduling/accommodation and scaled-scoring sections read. Two years; qualifying renewal before expiry; full retake within six months; seven-day failure wait; four retakes in twelve months; scaled750/1000 not75 percent. No booking or eligibility determination. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-practice-exams",
@@ -46798,7 +46961,7 @@
         "DEA-C02",
         "GES-C02"
       ],
-      "notes": "Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy. September 29 COF-C03 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
+      "notes": "Official Core, Data Engineer and Gen AI practice availability plus same-specification/domain-weighting statement; purchase provides a single 24-hour-access attempt under checked policy. September 29 COF-C03 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution. September 29 DEA-C02 deep review: Entire public main page read.24h purchase-to-completion, one attempt, missed-window fee and48h re-registration boundary. USD175 FAQ concerns the real Core exam. No practice question/assessment content accessed; practice language list not used as real-exam availability proof. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id": "snowflake-core-prep-course",
@@ -46885,28 +47048,116 @@
       "notes": "Seven-plus-hour course updated August 2026 with hands-on content and mock exam; verify claims against current documentation and do not memorize bank items. September 29 COF-C03 deep review: Current fetch HTTP403. Earlier7h+/August2026 catalog details unverified; no paid content/question bank accessed. See docs/research/2026-09-29-cof-c03-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-dea-c02-certification","title":"SnowPro Advanced: Data Engineer (DEA-C02)","url":"https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/","publisher":"Snowflake","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"Canonical active exam identity, five public abilities, two-year production-experience recommendation and detailed-guide request; monitored by the Snowflake adapter."
+      "id": "snowflake-dea-c02-certification",
+      "title": "SnowPro Advanced: Data Engineer (DEA-C02)",
+      "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+      "publisher": "Snowflake",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "Canonical active exam identity, five public abilities, two-year production-experience recommendation and detailed-guide request; monitored by the Snowflake adapter. September 29 DEA-C02 deep review: Entire public main page read:five abilities,DEA-C02,two-plus years production experience,USD375. Embedded mktoForm_45775 inspected;no direct detailed PDF and no form submitted. Public primary-domain searches did not recover current detailed guide. Objective unchanged;missing lifecycle explicitly initialized and postcheck unchanged. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-data-engineer-training","title":"Snowflake Data Engineer Training","url":"https://learn.snowflake.com/en/courses/ILT-DE","publisher":"Snowflake University","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"First-party three-day, 24-hour role-specific course with lectures, demonstrations and labs; confirm current DEA-C02 alignment and regional schedule."
+      "id": "snowflake-data-engineer-training",
+      "title": "Snowflake Data Engineer Training",
+      "url": "https://learn.snowflake.com/en/courses/ILT-DE",
+      "publisher": "Snowflake University",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "First-party three-day, 24-hour role-specific course with lectures, demonstrations and labs; confirm current DEA-C02 alignment and regional schedule. September 29 DEA-C02 deep review: Entire public ILT-DE main listing read:three-day paid role course,24h estimated effort,laptop/browser requirements,actual datasheet link. No regional booking availability,enrollment or live class inspected. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-hands-on-essentials","title":"Hands-On Essentials Track","url":"https://learn.snowflake.com/en/pages/hands-on-essentials-track/","publisher":"Snowflake University","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"Free graded workshops for warehousing, collaboration, applications, data lake, data engineering and data science; 20–40 hour selective estimate."
+      "id": "snowflake-hands-on-essentials",
+      "title": "Hands-On Essentials Track",
+      "url": "https://learn.snowflake.com/en/pages/hands-on-essentials-track/",
+      "publisher": "Snowflake University",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "Free graded workshops for warehousing, collaboration, applications, data lake, data engineering and data science; 20–40 hour selective estimate. September 29 DEA-C02 deep review: Entire public track read:six workshop entries including Data Science;courses free and many badges free,not a blanket all-badges-free claim. No aggregate provider duration or DORA/assessment completion. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"snowflake-data-pipelines-docs","title":"Introduction to data pipelines","url":"https://docs.snowflake.com/en/user-guide/data-pipelines-intro","publisher":"Snowflake Documentation","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"Current first-party pipeline entry point for continuous loading and transformation choices."
+      "id": "snowflake-data-pipelines-docs",
+      "title": "Introduction to data pipelines",
+      "url": "https://docs.snowflake.com/en/user-guide/data-pipelines-intro",
+      "publisher": "Snowflake Documentation",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "Current first-party pipeline entry point for continuous loading and transformation choices. September 29 DEA-C02 deep review: Entire main introduction read:streams expose CDC between transactional points,tasks schedule/trigger and graphs,links to other continuous ingestion/transformation paths. Detailed support sources supply failure semantics;no live pipeline. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-snowflake-data-engineers","title":"Snowflake for Data Engineers","url":"https://www.pluralsight.com/paths/snowflake-for-data-engineers","publisher":"Pluralsight","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"Seven-course, approximately eight-hour production path across architecture, validation, tuning, ELT, orchestration, governance and cost; not explicitly exam-specific."
+      "id": "pluralsight-snowflake-data-engineers",
+      "title": "Snowflake for Data Engineers",
+      "url": "https://www.pluralsight.com/paths/snowflake-for-data-engineers",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "Seven-course, approximately eight-hour production path across architecture, validation, tuning, ELT, orchestration, governance and cost; not explicitly exam-specific. September 29 DEA-C02 deep review: Public overview,all7cards,prerequisites and instructor sections read. Cards495m versus8hheader,July-September2025,path still labeled in production,role training not explicitDEA-C02 map. No paid lessons,SkillIQ or quality/completeness evaluation. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-dea-c02-bootcamp","title":"SnowPro Advanced Data Engineer Certification (DEA-C02) Bootcamp","url":"https://www.oreilly.com/live-events/-/0642572194970/","publisher":"O'Reilly / Dr. Yasir Khan","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"Two-day exam-specific live hands-on course; estimated eight hours plus follow-up, with exact schedule/revision to verify at booking."
+      "id": "oreilly-dea-c02-bootcamp",
+      "title": "SnowPro Advanced Data Engineer Certification (DEA-C02) Bootcamp",
+      "url": "https://www.oreilly.com/live-events/-/0642572194970/",
+      "publisher": "O'Reilly / Dr. Yasir Khan",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "Two-day exam-specific live hands-on course; estimated eight hours plus follow-up, with exact schedule/revision to verify at booking. September 29 DEA-C02 deep review: Entire public main description,prerequisites,all11timed agenda topics and instructor section read. Yasir Khan,two sessions,240+240=480m excluding untimed breaks/Q&A,noverifiedupcomingdate. Unrelated Databricks footer not used as course identity. No trial,enrollment,recording or exam questions. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-snowflake-data-engineering","title":"Snowflake Data Engineering","url":"https://www.oreilly.com/library/view/snowflake-data-engineering/9781633436855/","publisher":"O'Reilly / Manning / Maja Ferle","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"December 2024, 368-page, 11h05m practical book spanning APIs, ingestion, streams/tasks, Snowpark, governance and CI/CD; close newer-service gaps."
+      "id": "oreilly-snowflake-data-engineering",
+      "title": "Snowflake Data Engineering",
+      "url": "https://www.oreilly.com/library/view/snowflake-data-engineering/9781633436855/",
+      "publisher": "O'Reilly / Manning / Maja Ferle",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "December 2024, 368-page, 11h05m practical book spanning APIs, ingestion, streams/tasks, Snowpark, governance and CI/CD; close newer-service gaps. September 29 DEA-C02 deep review: CurrentHTTP403;old11h05m/December2024platformmetadata unverified. Separately fetched Manning publisher confirms November2024/368pages. No wholebook/paidchapters accessed. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-advanced-snowflake","title":"Advanced Snowflake","url":"https://www.oreilly.com/library/view/advanced-snowflake/9781098170202/","publisher":"O'Reilly / Muhammad Fasih Ullah","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["DEA-C02"],"notes":"October 2025, 210-page, 4h55m advanced feature supplement including Gen2/adaptive compute and Openflow; broader than DEA-C02."
+      "id": "oreilly-advanced-snowflake",
+      "title": "Advanced Snowflake",
+      "url": "https://www.oreilly.com/library/view/advanced-snowflake/9781098170202/",
+      "publisher": "O'Reilly / Muhammad Fasih Ullah",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "DEA-C02"
+      ],
+      "notes": "October 2025, 210-page, 4h55m advanced feature supplement including Gen2/adaptive compute and Openflow; broader than DEA-C02. September 29 DEA-C02 deep review: CurrentHTTP403;old4h55m/October2025metadata and claimed Gen2/Openflow featurecoverage unverified. Removed unsupported current-quality endorsement;no book/interior review. See docs/research/2026-09-29-dea-c02-deep-review.md No live infrastructure execution."
     },
     {
       "id":"snowflake-ges-c02-certification","title":"SnowPro Specialty: Gen AI (GES-C02)","url":"https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/","publisher":"Snowflake","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GES-C02"],"notes":"Canonical active exam identity, four public abilities, one-year enterprise-experience recommendation and detailed-guide request; monitored by the Snowflake adapter."

@@ -1576,6 +1576,8 @@ The review maps every ability through requirement and context → feature or arc
 
 ## DEA-C02 coverage record
 
+The September 29 [deep review](research/2026-09-29-dea-c02-deep-review.md) maps five public abilities; the detailed guide remains behind a request form. Mapped five unchanged public abilities and fully read actual five-page role-training datasheet without substituting it for a detailed exam blueprint. Updated Named/Elastic channel semantics,September15/24 releases,acknowledgement versus queryability,task overlap/versioning/retries and coordinated replication/replay. Added40 executed localCDC transaction checks,48 answers,eight proposed labs and current public catalog comparison. No live Snowflake execution;human review pending. Current guide citations: 30 registered, 28 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: active SnowPro Advanced: Data Engineer with five public abilities—source lake/API/on-premises data; transform/replicate/share across clouds; near-real-time streams; scalable data-engineering compute; and performance metrics—and a two-year production-experience recommendation
