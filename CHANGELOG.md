@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [WDA-41-01 deep review](docs/research/2026-09-29-wda-41-01-deep-review.md): Mapped 40 objectives and expanded 40 answers. Fifteen exact public blocks, 14 original assets, 42 CSS and 90 browser checks, five Nu-clean pages, two CSS3 passes and actual browser Sass/Bootstrap evidence. Ten wider labs proposed; duration/access and human limits retained.
+
 - September 29, 2026: [WDE-40-01 deep review](docs/research/2026-09-29-wde-40-01-deep-review.md): Mapped 40 objectives and improved 40 answers. Seven exact public blocks, 54 core and 128 browser checks, three Nu-validated HTML pages and eleven reproducible assets. Delivery, access and human-review limits remain explicit; eight broader activities proposed.
 
 - September 29, 2026: [JSA-41-01 deep review](docs/research/2026-09-29-jsa-41-01-deep-review.md): Mapped 40 objectives and improved 40 answers. Seven exact public blocks verified: 143 core and 84 scenario checks in Node/Chrome plus 36 browser API/UI checks. Descriptor, sparse-array, validation and promise contracts corrected; channel/access limits and eight proposed broader activities remain explicit.

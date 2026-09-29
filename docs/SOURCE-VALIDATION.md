@@ -2103,6 +2103,8 @@ SHA-256:
 
 ## WDA-41-01 coverage record
 
+The September 29 [deep review](research/2026-09-29-wda-41-01-deep-review.md) maps 40 detailed objectives. Mapped all 40 objectives and expanded all 40 answers. Fifteen exact public blocks and fourteen original assets verified: 42 CSS workbook checks, 90 Chrome harness checks, five zero-message Nu pages and two CSS3 validator passes. Actual Sass module compilation/source maps, Bootstrap rendering and bounded raw performance entries recorded. Ten broader labs remain proposed; official/access and human-review limits remain. Current guide citations: 46 registered, 36 reachable, 2 access-blocked, 8 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: HTML Fundamentals (25%); CSS Fundamentals (22.5%); Integrating HTML and CSS (25%); Responsive Web Design and Layout Techniques (12.5%); Accessibility, Usability, and Best Practices (15%)

@@ -3596,6 +3596,28 @@ The official course page lists free Core and USD49 Pro, but its text-rendered co
 
 No exact current MeasureUp or Whizlabs WDE-40-01 product was verified. Confirm the exact WDE-40-01 practice product and its terms if practice questions are useful, and reject sources that do not identify the active version or question provenance.
 
+### WDA-41-01 — WDA Certified Associate Web Developer
+
+Resource details from the [WDA-41-01 guide](../guides/WDA-41-01-certified-associate-web-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+Public course/index comparison is not course completion. The official CSS landing lists 40 hours, nine modules and 45+ lessons; the HTML landing lists 25 hours and six modules. The public Pluralsight listing reports 31 hours, ten courses and seven labs, but subscriber interiors were not reviewed. Tutorial directories were read as indexes, not every linked lesson. Except for explicitly listed provider totals, hours below are author planning budgets. This is not a complete list, and it is not meant to be consumed in full. Pick one primary path, add focused documentation where useful, and spend at least as much time building, inspecting, measuring, and testing as watching. Commercial resources are supplementary; reconcile them with the current official syllabus.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official WDA-41-01 syllabus](https://jsinstitute.org/wda-exam-syllabus) | Free canonical objectives and weights | 2–3 hours to map and recheck |
+| [Official WDA certification page](https://jsinstitute.org/wda-certification) | Free version, format, price, delivery, and policy links; duration needs confirmation | 30–60 minutes before purchase |
+| [OpenEDG Web Dev 102: CSS](https://jsinstitute.org/css-essentials) | Public landing lists free Core / USD49 Pro and nine modules; prose places 45+ labs/diploma in Pro; repeated text-only tier lists remain ambiguous | 40 hours listed |
+| [OpenEDG Web Dev 101: HTML](https://jsinstitute.org/html-essentials) | Free core / paid Pro; prerequisite foundation rather than WDA substitute | 25 hours listed if HTML needs rebuilding |
+| [Cisco Networking Academy CSS Essentials](https://www.netacad.com/courses/css-essentials) | Partner link returned a 14-character application shell; access, account terms and lesson contents unverified | Author budget: about 40 hours; verify live listing |
+| [MDN Learn CSS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics) and [CSS layout](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout) | Free current standards-oriented lessons | 20–30 hours with projects |
+| [web.dev Learn CSS](https://web.dev/learn/css/) and [Responsive Design](https://web.dev/learn/design/) | Free modern modules and exercises | 15–25 hours for WDA-relevant portions |
+| [W3C WAI Tutorials](https://www.w3.org/WAI/tutorials/) | Free authoritative accessibility patterns | 6–10 hours plus manual testing |
+| [Pluralsight HTML and CSS path](https://www.pluralsight.com/paths/html-and-css) | Subscription; 10 courses and 7 labs, including 2026 guided labs | 31 hours listed; select layout, APIs, debugging, and optimization as needed |
+| [O'Reilly Learning Web Design, 6th Edition](https://www.oreilly.com/library/view/learning-web-design/9781098137670/) | Subscription/buy; HTTP403 prevented fresh listing/interior verification; old page-count, date and runtime claims removed | Author budget: 18–25 hours for selected CSS/layout/responsive/quality topics; verify actual contents |
+| [Udemy Learn HTML and CSS in 7 Days](https://www.udemy.com/course/learn-html-and-css-in-7-days-web-developer-bootcamp/) | Paid marketplace course; HTTP403 prevented current listing and lesson verification | Author budget: 8–12 hours project/test work; supplement frameworks, preprocessors, SEO, and analytics |
+
+No exact current MeasureUp or Whizlabs WDA-41-01 product was verified. Use the official practice product if questions help diagnose weak blocks, and reject sources that cannot identify the active version or question provenance.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
