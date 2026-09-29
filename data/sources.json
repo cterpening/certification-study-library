@@ -3,6 +3,188 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "salesforce-admin-exam-guide-help",
+      "title": "Platform Administrator exam guide",
+      "url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct English route returned only 61-character loading/CSS-error shell. Browser English route initially also shell; English body read through Korean-locale route. Do not equate HTTP 200 with content verification. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-admin-exam-guide-ko",
+      "title": "Platform Administrator English article through Korean locale",
+      "url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP also shell. Browser-rendered English main article fully read: details, all 28 detailed bullets in eight sections, training and maintenance. Six-plus months recommended, no prerequisite; 60 plus up to 5 unscored,105min,68% English/65% Japanese,USD200/100 plus tax. Summer25 label unresolved alongside refreshed scope. Locale wrapper is Korean, article body English; not a newly fetched English booking contract. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-admin-academy-exam",
+      "title": "Platform Administrator Academy exam listing",
+      "url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Current credential-linked Academy URL returned HTTP 200 with zero extracted text; browser also empty. Booking, release contract and regional price not verified. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-admin-trailmix-current",
+      "title": "Credential-linked Administrator Trailmix",
+      "url": "https://trailhead.salesforce.com/users/00550000006yDdKAAU/trailmixes/prepare-for-your-salesforce-administrator-credential",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Actual numeric-user link followed from credential page; HTTP 200, zero extracted text. No duration or complete content coverage claim. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-flow-api68-context",
+      "title": "Winter 27 Flow API version 68 permissions",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main versioned release section read in full. Applies only API68.0+ screen/autolaunched flows with new enforcing-user option. Ordinary user context can inherit system caller permissions. No release rollout or org runtime verified. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-permission-muting",
+      "title": "Muting permission set groups",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Intro and muting considerations, initial example setup rationale, dependencies and installed-package discussion read. Some step-by-step activity middle not reviewed. Muting affects one group and dependent permissions; other grants persist. No activity run or challenge answers copied. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-object-security",
+      "title": "Control access to objects",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Selected Manage Object Permissions and initial recruiting-persona examples/table read. Not full18k-character unit or profile/group click-through steps; no activity or assessment executed. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-flow-rollback",
+      "title": "Roll back changes after a Flow error",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Selected Problem with Fault Paths, Roll Back Records and screen-boundary explanation, plus Custom Error introduction and first setup steps read. Not later knowledge check/assessment or all activity steps. No package installation or Flow execution. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-agent-user-access",
+      "title": "Configure Service agent access",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Direct HTTP shell; browser main article read including full three-column authentication table and verified-customer scoping section. Supported credential-verified Experience Cloud/Enhanced Chat authenticated path distinguished from identified contact. No linked video or live agent/channel. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-upsert-external-id",
+      "title": "sObject rows by external ID",
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Complete main resource overview read. Create/update matching and operation routes; no specific duplicate-ID error code adopted and no API request sent. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "salesforce-upsert-collections",
+      "title": "Upsert records using sObject collections",
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+      "publisher": "Salesforce",
+      "authority_class": 2,
+      "source_type": "official-documentation",
+      "access_model": "public",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Complete main documentation read, including default allOrNone false,200 records,ordered result semantics and HTTP200 with item errors. Example body panels were not exposed. No REST response or transaction execution claimed. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "focus-on-force-admin-study",
+      "title": "Platform Administrator study guide listing",
+      "url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-study-guide/",
+      "publisher": "Focus on Force",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: HTTP521 and browser retrieval failure at exact catalog-linked public product endpoint. No price, duration, contents, subscription or quality verified. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "focus-on-force-admin-practice",
+      "title": "Platform Administrator practice exams listing",
+      "url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-practice-exams/",
+      "publisher": "Focus on Force",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: HTTP521 and browser retrieval failure at exact catalog-linked public product endpoint. No practice questions read, purchased or evaluated. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "nvidia-ncp-aio-study-guide",
       "title": "NVIDIA NCP-AIO certification study guide",
       "url": "https://dam-cdn.nvd.orangelogic.com/AssetLink/ub08c12vdc5l53ksln5d4dlpt3346464.pdf",
@@ -49133,31 +49315,133 @@
       "notes": "Current pinned-container, model repository, readiness, client, performance and debugging hub; monthly releases require exact version control. September 29 NCP-AIO deep review: Complete main portal descriptions read. LastupdatedAug28 2026but embeddedrelease prose refers24.02/2.43.0 andearlier; latest/archive links distinguished. No actual model repository,readiness endpoint,container orbenchmark. See docs/research/2026-09-29-ncp-aio-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-admin-certification","title":"Salesforce Certified Platform Administrator","url":"https://trailhead.salesforce.com/credentials/platformadministrator","publisher":"Salesforce","authority_class":1,"source_type":"official-certification-page","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Current credential identity and official preparation entry point."
+      "id": "salesforce-platform-admin-certification",
+      "title": "Salesforce Certified Platform Administrator",
+      "url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-certification-page",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "Current credential identity and official preparation entry point. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Complete main credential landing text read; followed current Academy and numeric-user Trailmix links. No booking or authentication. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-admin-prep-unit","title":"Get Started with Administrator Certification Prep","url":"https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep","publisher":"Salesforce","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Monitored current eight-domain weights, exam-integrity rules, and annual maintenance statement."
+      "id": "salesforce-platform-admin-prep-unit",
+      "title": "Get Started with Administrator Certification Prep",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "Monitored current eight-domain weights, exam-integrity rules, and annual maintenance statement. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Complete introductory main unit read: eight weights, three prep modules, integrity and annual maintenance. No assessment answers or superbadge solutions used. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-admin-prep-trail","title":"Study for the Administrator Certification Exam","url":"https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep","publisher":"Salesforce","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Free 1 hour 20 minute current exam-prep trail with interactive study tools."
+      "id": "salesforce-platform-admin-prep-trail",
+      "title": "Study for the Administrator Certification Exam",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "Free 1 hour 20 minute current exam-prep trail with interactive study tools. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Complete public three-module listing read: 15+35+30 minutes. No lesson or practice-question quality claim. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-platform-admin-trailmix","title":"Prepare for Your Salesforce Platform Administrator Certification","url":"https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential","publisher":"Salesforce","authority_class":1,"source_type":"official-learning-path","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Broad free domain-weighted Trailhead plan; credential page lists approximately 59 hours 55 minutes."
+      "id": "salesforce-platform-admin-trailmix",
+      "title": "Prepare for Your Salesforce Platform Administrator Certification",
+      "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-learning-path",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "Broad free domain-weighted Trailhead plan; credential page lists approximately 59 hours 55 minutes. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: HTTP success but zero extracted main characters. Earlier roughly 60-hour metadata not reverified; current credential-linked alias also blank. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"salesforce-admin-blueprint-update-2026","title":"What the Salesforce Certified Platform Administrator Exam Update Means for Admins","url":"https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins","publisher":"Salesforce","authority_class":1,"source_type":"official-guidance","access_model":"public","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"First-party explanation of the December 15, 2025 weight refresh and new 8% Agentforce domain."
+      "id": "salesforce-admin-blueprint-update-2026",
+      "title": "What the Salesforce Certified Platform Administrator Exam Update Means for Admins",
+      "url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+      "publisher": "Salesforce",
+      "authority_class": 1,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "First-party explanation of the December 15, 2025 weight refresh and new 8% Agentforce domain. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Complete January 22, 2026 main article read, distinguishing December 15, 2025 effective blueprint from publication date and foundational Agentforce from Specialist scope. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"pluralsight-salesforce-certified-administrator-path","title":"Salesforce Certified Administrator","url":"https://www.pluralsight.com/paths/salesforce-certified-administrator-update","publisher":"Pluralsight","authority_class":3,"source_type":"commercial-learning-path","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Thirteen-hour, eight-course path with practice exam; candidates must verify current Agentforce coverage."
+      "id": "pluralsight-salesforce-certified-administrator-path",
+      "title": "Salesforce Certified Administrator",
+      "url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "Thirteen-hour, eight-course path with practice exam; candidates must verify current Agentforce coverage. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Complete public main path and eight course cards read. Header 13 hours, card sum 794 minutes; intro September 30, 2022 and seven cards May 11, 2026. No distinct Agentforce title; interiors, practice assessment and trial not accessed. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"oreilly-salesforce-platform-administrator-study-guide","title":"Salesforce Certified Platform Administrator Study Guide","url":"https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/","publisher":"O'Reilly Media","authority_class":3,"source_type":"commercial-book","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Mike Wheeler's October 2025, 524-page/13 hour 26 minute listed study guide with quizzes and a practice test; supplement the current Agentforce domain."
+      "id": "oreilly-salesforce-platform-administrator-study-guide",
+      "title": "Salesforce Certified Platform Administrator Study Guide",
+      "url": "https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/",
+      "publisher": "O'Reilly Media",
+      "authority_class": 3,
+      "source_type": "commercial-book",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "Mike Wheeler's October 2025, 524-page/13 hour 26 minute listed study guide with quizzes and a practice test; supplement the current Agentforce domain. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: HTTP 403. Earlier edition, duration, quizzes and practice content not reverified. No book interior or subscription access. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"udemy-salesforce-platform-administrator-wheeler","title":"Complete Salesforce Certified Platform Administrator Course","url":"https://www.udemy.com/course/salesforce-administrator/","publisher":"Udemy","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR"],"notes":"Mike Wheeler and team's 39 hour 52 minute course, listed as updated August 2026 with Agentforce coverage."
+      "id": "udemy-salesforce-platform-administrator-wheeler",
+      "title": "Complete Salesforce Certified Platform Administrator Course",
+      "url": "https://www.udemy.com/course/salesforce-administrator/",
+      "publisher": "Udemy",
+      "authority_class": 3,
+      "source_type": "commercial-course",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "notes": "Mike Wheeler and team's 39 hour 52 minute course, listed as updated August 2026 with Agentforce coverage. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: HTTP 403. Earlier 39h52, August 2026 update and Agentforce practice claims not reverified; no course interior accessed. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"focus-on-force-salesforce-certification","title":"Focus on Force Salesforce Certification Resources","url":"https://focusonforce.com/","publisher":"K2 University / Focus on Force","authority_class":3,"source_type":"commercial-study-and-practice","access_model":"paid","last_checked":"2026-09-02","supported_exams":["SALESFORCE-PLATFORM-ADMINISTRATOR","SALESFORCE-PLATFORM-APP-BUILDER","SALESFORCE-PLATFORM-DEVELOPER","SALESFORCE-AGENTFORCE-SPECIALIST"],"notes":"Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it."
+      "id": "focus-on-force-salesforce-certification",
+      "title": "Focus on Force Salesforce Certification Resources",
+      "url": "https://focusonforce.com/",
+      "publisher": "K2 University / Focus on Force",
+      "authority_class": 3,
+      "source_type": "commercial-study-and-practice",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-PLATFORM-DEVELOPER",
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it. September 29 SALESFORCE-PLATFORM-ADMINISTRATOR deep review: Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md No live infrastructure execution."
     },
     {
       "id":"salesforce-platform-app-builder-guide","title":"Salesforce Certified Platform App Builder Exam Guide","url":"https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1","publisher":"Salesforce","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-07","supported_exams":["SALESFORCE-PLATFORM-APP-BUILDER"],"notes":"Canonical corrected Summer '26 five-domain blueprint and 73% exam contract launched August 21, 2026. Article 005389157 was an incorrect route and is retained only in historical freshness evidence."

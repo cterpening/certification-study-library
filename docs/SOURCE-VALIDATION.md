@@ -1693,6 +1693,8 @@ The review maps every objective to confirm scope/impact/authorization/desired st
 
 ## SALESFORCE-PLATFORM-ADMINISTRATOR coverage record
 
+The September 29 [deep review](research/2026-09-29-salesforce-platform-administrator-deep-review.md) maps 8 monitored domain statements. Mapped all eight unchanged monitored domain statements, reviewed the Help article supplement, answered 40 original prompts and executed 30 local CSV/SQLite/access checks. Corrected Flow rollback, permission muting, API68 context and verified-customer scoping distinctions. Help release labeling, unreadable booking/training routes, four commercial endpoints and independent human/live-org review remain limited or unresolved. Current guide citations: 20 registered, 18 reachable, 2 access-blocked, 0 missing/error. Reachability describes HTTP results; readable content and fallback limits are recorded separately. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: current eight-domain Trailhead baseline—Configuration and Setup (15%), Object Manager and Lightning App Builder (15%), Sales and Marketing Applications (10%), Service and Support Applications (10%), Productivity and Collaboration (10%), Data and Analytics Management (17%), Automation (15%), and Agentforce (8%)

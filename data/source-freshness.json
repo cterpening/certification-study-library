@@ -4,6 +4,197 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-salesforceplatformadministrator-deep-review",
+      "title": "SALESFORCE-PLATFORM-ADMINISTRATOR complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "results": [
+        {
+          "exam_code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+          "baseline_sha256": "d01b264ef19c725916bbf60e2da97bc19318e287b7cc357bf1033bc747ebd040",
+          "scanned_on": "2026-09-29",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Eight weighted domain statements and annual-maintenance hashes unchanged. Complete Help article obtained through browser locale fallback, with28 supplementary bullets; no snapshot rewrite."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Selected first-party access/muting/rollback teaching, complete upsert resource documentation and main Service-agent access article.30 original local checks; no Salesforce org execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Full short API68 Flow versioned-change section reviewed. Flow API version/option/identity distinguished from exam refresh and org rollout."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Public prep/card metadata compared, unverified old durations removed as current claims; commercial failures and Focus prerequisite discrepancy retained separately."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Summer25 Help label persists alongside December2025 scope. Actual Academy booking details unreadable; vendor clarification/booking verification pending. No external contact."
+            }
+          },
+          "findings": [
+            {
+              "id": "salesforceplatformadministrator-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Help release label remains inconsistent with the scope refresh",
+              "url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "English body through locale fallback includes Agentforce8% and Summer25 version label; Academy booking details unreadable.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "salesforceplatformadministrator-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Announcement publication is later than blueprint effective date",
+              "url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "January22,2026 article dates the eight-domain update to December15,2025.",
+              "recommendation": "Keep publication and effective dates separate; Administrator Agentforce remains foundational.",
+              "disposition": "applied",
+              "source_id": "salesforce-admin-blueprint-update-2026",
+              "resolution": "Keep publication and effective dates separate; Administrator Agentforce remains foundational."
+            },
+            {
+              "id": "salesforceplatformadministrator-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A group mute is not a global deny",
+              "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Profile,direct permission set and other groups can still grant a muted permission; dependencies also matter.",
+              "recommendation": "Teach complete grant tracing and original bounded permission arithmetic.",
+              "disposition": "applied",
+              "source_id": "salesforce-permission-muting",
+              "resolution": "Teach complete grant tracing and original bounded permission arithmetic."
+            },
+            {
+              "id": "salesforceplatformadministrator-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A fault path can preserve partial work",
+              "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Handled faults do not automatically roll back earlier record changes; screen and record-triggered flows have distinct rollback elements.",
+              "recommendation": "Teach current-transaction boundaries and separate notification from recovery.",
+              "disposition": "applied",
+              "source_id": "salesforce-flow-rollback",
+              "resolution": "Teach current-transaction boundaries and separate notification from recovery."
+            },
+            {
+              "id": "salesforceplatformadministrator-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Enforcing user permissions is a versioned run option",
+              "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "API68+ new option prevents caller elevation for eligible flow types,without changing running-user identity.",
+              "recommendation": "Mark version and org availability for verification; distinguish the actual user from a verified customer.",
+              "disposition": "applied",
+              "source_id": "salesforce-flow-api68-context",
+              "resolution": "Mark version and org availability for verification; distinguish the actual user from a verified customer."
+            },
+            {
+              "id": "salesforceplatformadministrator-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Verified contact identity does not automatically scope agent access",
+              "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Identified contact conversations can still run as agent user; context variables alone do not control record access.",
+              "recommendation": "Require trusted customer scoping as well as record permissions; distinguish supported authenticated-site route.",
+              "disposition": "applied",
+              "source_id": "salesforce-agent-user-access",
+              "resolution": "Require trusted customer scoping as well as record permissions; distinguish supported authenticated-site route."
+            },
+            {
+              "id": "salesforceplatformadministrator-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Transport success can contain individual data failures",
+              "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Collections HTTP200 may contain errors; allOrNone defaults false and ordered per-item results require inspection.",
+              "recommendation": "Add original CSV/SQLite reconciliation and rollback receipt,explicitly not an API emulator.",
+              "disposition": "applied",
+              "source_id": "salesforce-upsert-collections",
+              "resolution": "Add original CSV/SQLite reconciliation and rollback receipt,explicitly not an API emulator."
+            }
+          ],
+          "notes": "Mapped all eight unchanged monitored domain statements, reviewed the Help article supplement, answered 40 original prompts and executed 30 local CSV/SQLite/access checks. Corrected Flow rollback, permission muting, API68 context and verified-customer scoping distinctions. Help release labeling, unreadable booking/training routes, four commercial endpoints and independent human/live-org review remain limited or unresolved. Same-context AI review; human review pending. See docs/research/2026-09-29-salesforce-platform-administrator-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-29-ncpaio-deep-review",
       "title": "NCP-AIO complete guide and learning-content review",
       "rubric_version": 1,

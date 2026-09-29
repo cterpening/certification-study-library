@@ -3007,6 +3007,28 @@ This is not a complete list. Select public references for the specific platform 
 
 Original tasks should require evidence, correction, verification and recovery. Memorized answers do not establish Linux or cluster fluency. Avoid recalled exam items, dumps and guaranteed-pass material.
 
+### SALESFORCE-PLATFORM-ADMINISTRATOR — Salesforce Certified Platform Administrator
+
+Resource details from the [SALESFORCE-PLATFORM-ADMINISTRATOR guide](../guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is not a complete list. Choose material that fills a demonstrated gap, then practice in an authorized org. Public listing metadata does not establish lesson quality or complete current blueprint coverage. Estimates explicitly marked “planning” are ours.
+
+| Resource | Access | Estimated time |
+|---|---|---|
+| [Certification page](https://trailhead.salesforce.com/credentials/platformadministrator) and [prep unit](https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep) — identity, eight weights and policy links | Public | Prep unit lists 5 min; 15–30 min planning for baseline checks |
+| [Official cert-prep trail](https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep) — three modules; supplement Agentforce and practical gaps | Free Trailhead; account for completion | Listed 1 hr 20 min, not full skill acquisition |
+| [Credential-linked Administrator Trailmix](https://trailhead.salesforce.com/users/00550000006yDdKAAU/trailmixes/prepare-for-your-salesforce-administrator-credential) — current link; both this and the [earlier alias](https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential) returned empty extracted bodies | Free Trailhead; contents not verified here | Earlier ~60 hr figure not reverified |
+| [Salesforce Admins update](https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins) — January 22, 2026 article explaining the December refresh | Public | 10–20 min planning |
+| [Object access](https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects), [muting](https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups) and [Flow rollback](https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error) — selected technical lessons; follow prerequisites for activities | Public lessons; account/org for completion | Listed 25 + 15 + 30 min; additional practice time |
+| [Pluralsight Administrator path](https://www.pluralsight.com/paths/salesforce-certified-administrator-update) — eight public course cards and a practice-exam listing; no separate Agentforce-titled course shown | Core Tech subscription; trial advertised, not used | Header 13 hr; cards total 13 hr 14 min |
+| [Platform Administrator Study Guide, Mike Wheeler](https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/) — catalog endpoint returned HTTP 403; edition/interior claims unverified | O’Reilly subscription/book | Earlier 13 hr 26 min listing not reverified |
+| [Mike Wheeler Administrator course](https://www.udemy.com/course/salesforce-administrator/) — HTTP 403; update date and Agentforce coverage unverified | Purchase/subscription, verify terms | Earlier 39 hr 52 min not reverified |
+| [Focus on Force catalog](https://focusonforce.com/) — Administrator study/practice links present, but both linked product endpoints failed retrieval | Commercial; current terms and interior not verified | No verified duration; 12–25 hr planning only for selected study |
+
+Pluralsight's introduction card is dated September 30, 2022; its seven domain cards are dated May 11, 2026. Those dates and titles do not establish treatment of the current Agentforce domain or API 68 behavior. Focus on Force's catalog presents an associate-certification requirement for Administrator, whereas the official Help article says **no prerequisite**; use the official rule. No paid lessons, quizzes or practice-question quality were evaluated, and no purchases or trial registrations were made.
+
+Avoid recalled live questions, leaked content and copied assessment or superbadge answers. Use original practice to diagnose concepts, and validate claims against the official source.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

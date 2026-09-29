@@ -1,0 +1,1296 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "exam_code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "d7eb863bff37a08eac08b1899046a759519bb5290e39d81105dca4090a9a4941",
+  "guide_after_sha256": "ec85fc25c3d8371306142a09b0ef4ca4459c2010d22794df5db1697a070abb74",
+  "prior_records": {
+    "exam": {
+      "code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+      "level": "beginner",
+      "vendor_id": "salesforce",
+      "title": "Salesforce Certified Platform Administrator",
+      "status": "active",
+      "study_guide_url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+      "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+      "blueprint_last_checked": "2026-09-02",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-02",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite is published; Salesforce recommends at least six months of platform administration. Practice company/user/security configuration, data modeling and Lightning pages, sales/service/collaboration, controlled data and analytics, bulk-safe automation, and foundational Agentforce administration in an authorized disposable org."
+    },
+    "review": {
+      "id": "salesforce-platform-administrator-2026-09-02-source-validation",
+      "exam_code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+      "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-administrator-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+      "objective_coverage": [
+        {
+          "objective_group": "Configuration and Setup (15%)",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1 and 8"
+          ]
+        },
+        {
+          "objective_group": "Object Manager and Lightning App Builder (15%)",
+          "guide_sections": [
+            "Section 2",
+            "Scenarios 1 and 3",
+            "Labs 2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Sales and Marketing Applications (10%)",
+          "guide_sections": [
+            "Section 3",
+            "Scenario 1",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Service and Support Applications (10%)",
+          "guide_sections": [
+            "Section 4",
+            "Scenarios 2 and 3",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Productivity and Collaboration (10%)",
+          "guide_sections": [
+            "Section 5",
+            "Scenarios 1 and 2",
+            "Labs 2 and 4"
+          ]
+        },
+        {
+          "objective_group": "Data and Analytics Management (17%)",
+          "guide_sections": [
+            "Section 6",
+            "All scenarios",
+            "Labs 5 and 6"
+          ]
+        },
+        {
+          "objective_group": "Automation (15%)",
+          "guide_sections": [
+            "Section 7",
+            "All scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Agentforce (8%)",
+          "guide_sections": [
+            "Section 8",
+            "Scenario 3",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All eight current weighted domains are mapped through configuration, least privilege, data model/UI, sales/service/collaboration, data and analytics, bulk-safe automation, and bounded Agentforce operations. Three integrated scenarios, eight authorized labs and 40 original checks are included. The December 2025 refresh and stale Summer '25 Help label are explicit. No recalled/live item, dump, shared superbadge solution or copied course content is used."
+    },
+    "sources": [
+      {
+        "id": "salesforce-platform-admin-certification",
+        "title": "Salesforce Certified Platform Administrator",
+        "url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-certification-page",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "Current credential identity and official preparation entry point."
+      },
+      {
+        "id": "salesforce-platform-admin-prep-unit",
+        "title": "Get Started with Administrator Certification Prep",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "Monitored current eight-domain weights, exam-integrity rules, and annual maintenance statement."
+      },
+      {
+        "id": "salesforce-platform-admin-prep-trail",
+        "title": "Study for the Administrator Certification Exam",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "Free 1 hour 20 minute current exam-prep trail with interactive study tools."
+      },
+      {
+        "id": "salesforce-platform-admin-trailmix",
+        "title": "Prepare for Your Salesforce Platform Administrator Certification",
+        "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-learning-path",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "Broad free domain-weighted Trailhead plan; credential page lists approximately 59 hours 55 minutes."
+      },
+      {
+        "id": "salesforce-admin-blueprint-update-2026",
+        "title": "What the Salesforce Certified Platform Administrator Exam Update Means for Admins",
+        "url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+        "publisher": "Salesforce",
+        "authority_class": 1,
+        "source_type": "official-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "First-party explanation of the December 15, 2025 weight refresh and new 8% Agentforce domain."
+      },
+      {
+        "id": "pluralsight-salesforce-certified-administrator-path",
+        "title": "Salesforce Certified Administrator",
+        "url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "commercial-learning-path",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "Thirteen-hour, eight-course path with practice exam; candidates must verify current Agentforce coverage."
+      },
+      {
+        "id": "oreilly-salesforce-platform-administrator-study-guide",
+        "title": "Salesforce Certified Platform Administrator Study Guide",
+        "url": "https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "commercial-book",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "Mike Wheeler's October 2025, 524-page/13 hour 26 minute listed study guide with quizzes and a practice test; supplement the current Agentforce domain."
+      },
+      {
+        "id": "udemy-salesforce-platform-administrator-wheeler",
+        "title": "Complete Salesforce Certified Platform Administrator Course",
+        "url": "https://www.udemy.com/course/salesforce-administrator/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "commercial-course",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR"
+        ],
+        "notes": "Mike Wheeler and team's 39 hour 52 minute course, listed as updated August 2026 with Agentforce coverage."
+      },
+      {
+        "id": "focus-on-force-salesforce-certification",
+        "title": "Focus on Force Salesforce Certification Resources",
+        "url": "https://focusonforce.com/",
+        "publisher": "K2 University / Focus on Force",
+        "authority_class": 3,
+        "source_type": "commercial-study-and-practice",
+        "access_model": "paid",
+        "last_checked": "2026-09-02",
+        "supported_exams": [
+          "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "SALESFORCE-PLATFORM-APP-BUILDER",
+          "SALESFORCE-PLATFORM-DEVELOPER",
+          "SALESFORCE-AGENTFORCE-SPECIALIST"
+        ],
+        "notes": "Commercial study guides and explained original practice exams; verify the displayed blueprint and release before purchase. Agentforce marketing indexed on September 2 still described an older five-domain/18-objective revision, so verify a six-domain Spring '26 update before relying on it."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "344916d3ab658970c5761e8a56c2e46a5bf92bf4b1ae4ae46be909a2f2078cf9",
+      "guide_sections": [
+        "1. Configuration and Setup — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "f5cbf15e5853a70f1cd94336e69f485fd4e8c4ae013bf70c4f9ccbf361fd6db4",
+      "guide_sections": [
+        "2. Object Manager and Lightning App Builder — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "213dfe6b6f8bd8c249f3d7807e635939bda7fc6c20f10ab29509362ee0d19c5b",
+      "guide_sections": [
+        "3. Sales and Marketing Applications — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "21c2bf8f391fd9f017dad54c820b81ba6eac7a5f9d325d69fedc2d1e3a93bbfe",
+      "guide_sections": [
+        "4. Service and Support Applications — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "098f3bc44cf70958dfbccc1e74333bb454f0feb0993a294fa1f10252a7097f55",
+      "guide_sections": [
+        "5. Productivity and Collaboration — 10%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "94bcd3b995615cbc953de549d45b75821369f2af19777a8e78062450e839bec0",
+      "guide_sections": [
+        "6. Data and Analytics Management — 17%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "e32a898c78b8b645c2bdba10400514894883565707fe0a8b3f617e4930a81052",
+      "guide_sections": [
+        "7. Automation — 15%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "1eaaab4525923c047312148dc30fc02349f009d07e4eda272a92720c8dbe1923",
+      "guide_sections": [
+        "8. Agentforce — 8%",
+        "Hands-on evidence labs",
+        "Readiness checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "title": "Salesforce Certified Platform Administrator",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+        "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\salesforce-platform-administrator-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\salesforce-platform-administrator-official-status.json",
+        "previous_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+        "current_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+        "previous_status_sha256": "e50e41ee5c99d5f6ebf5baa313f8f98ec6ed4501fc11b091d8db38b040600468",
+        "current_status_sha256": "e50e41ee5c99d5f6ebf5baa313f8f98ec6ed4501fc11b091d8db38b040600468",
+        "official_status": {
+          "skills_versions": [
+            "To maintain your Salesforce certifications, all certified professionals must successfully complete release maintenance modules specific to their certifications once per year. You may view specific maintenance requirements here. If you don’t complete your maintenance modules by the completion deadline, your certifications will expire."
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 20,
+    "reachable": 18,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "salesforce-platform-admin-certification",
+      "url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+      "checked_at": "2026-09-29T14:09:31.304994+00:00",
+      "health": {
+        "id": "salesforce-platform-admin-certification",
+        "url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+        "checked_at": "2026-09-29T14:09:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Certification",
+        "canonical_url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+        "duration_signals": [],
+        "signal_fingerprint": "af82294318e0ba9a50503563ba00d531b314623e10bc31ea07f83e09c2a02c7b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/credentials/platformadministrator",
+      "sha256": "4626aedfdef929d691dcfe557eca1e3710f29e53d243dbfb104d95bed6c75aed",
+      "text_characters": 1944
+    },
+    {
+      "id": "salesforce-platform-admin-prep-unit",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+      "checked_at": "2026-09-29T14:09:31.305817+00:00",
+      "health": {
+        "id": "salesforce-platform-admin-prep-unit",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+        "checked_at": "2026-09-29T14:09:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Salesforce Administrator Certification Prep",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+        "duration_signals": [
+          "About 5 mins",
+          "PT5M"
+        ],
+        "signal_fingerprint": "7252c86a6fa7e121aa4982ec3c44d9b535323b0676fd1986d597eecfeff1ed6d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/administrator-certification-prep-setup-and-objects/get-started-with-administrator-certification-prep",
+      "sha256": "8baefe5bdce6794d5e37728725ac8a68c832375c137792032ad9cf8af4c32308",
+      "text_characters": 4973
+    },
+    {
+      "id": "salesforce-platform-admin-prep-trail",
+      "url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
+      "checked_at": "2026-09-29T14:09:31.306389+00:00",
+      "health": {
+        "id": "salesforce-platform-admin-prep-trail",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
+        "checked_at": "2026-09-29T14:09:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Study for the Administrator Certification Exam | Salesforce Trailhead",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
+        "duration_signals": [
+          "1 hr 20 mins",
+          "15 mins",
+          "30 mins",
+          "35 mins"
+        ],
+        "signal_fingerprint": "7ff31b601f60319aa5bc4577cb742972d575e65a8ff61bbff6e713b3e51dd550",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/trails/administrator-certification-prep",
+      "sha256": "b9c9a8c19044f4967a52bbd297a3ce54f2ad4277220c0ed876c491133d29b93a",
+      "text_characters": 1335
+    },
+    {
+      "id": "salesforce-platform-admin-trailmix",
+      "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+      "checked_at": "2026-09-29T14:09:32.305568+00:00",
+      "health": {
+        "id": "salesforce-platform-admin-trailmix",
+        "url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+        "checked_at": "2026-09-29T14:09:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prepare for your Salesforce Platform Administrator Certification Trailmix | Salesforce Trailhead",
+        "canonical_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+        "duration_signals": [],
+        "signal_fingerprint": "8ad677a63834bb012759540efb3daa488484f92d34324815e20bdfa41d19189e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+      "sha256": "279441f2592af722789de35b07c07d3be4e7c309b2f4ae102bf8fec55c07a35f",
+      "text_characters": 0
+    },
+    {
+      "id": "salesforce-admin-blueprint-update-2026",
+      "url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+      "checked_at": "2026-09-29T14:09:32.460176+00:00",
+      "health": {
+        "id": "salesforce-admin-blueprint-update-2026",
+        "url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+        "checked_at": "2026-09-29T14:09:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What the Salesforce Certified Platform Administrator Exam Update Means for Admins - Salesforce Admins",
+        "canonical_url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+        "duration_signals": [
+          "5 Minutes"
+        ],
+        "signal_fingerprint": "2791bbc02a0c8b683449ac8c6ce5153aa9daf5bf95c817e5ed533113e9c54587",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+      "sha256": "de3fe20353b716305f8b6cdb549878ad87f23ea3a1cbe0681c6701a2b83e2bc0",
+      "text_characters": 7433
+    },
+    {
+      "id": "pluralsight-salesforce-certified-administrator-path",
+      "url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
+      "checked_at": "2026-09-29T14:09:32.644978+00:00",
+      "health": {
+        "id": "pluralsight-salesforce-certified-administrator-path",
+        "url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
+        "checked_at": "2026-09-29T14:09:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Salesforce Certified Administrator",
+        "canonical_url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
+        "duration_signals": [
+          "13 Hours"
+        ],
+        "signal_fingerprint": "df31675e666bf157661d456caa1e830c18ae4056eac344c6d555790c773da42d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/salesforce-certified-administrator-update",
+      "sha256": "23b8268f8e76a439350b38d51ae2830f49e9351bb9f3bb77ccf17979ca2b42ea",
+      "text_characters": 3708
+    },
+    {
+      "id": "oreilly-salesforce-platform-administrator-study-guide",
+      "url": "https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/",
+      "checked_at": "2026-09-29T14:09:33.346884+00:00",
+      "health": {
+        "id": "oreilly-salesforce-platform-administrator-study-guide",
+        "url": "https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/",
+        "checked_at": "2026-09-29T14:09:33+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/salesforce-certified-platform/9781098165734/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "udemy-salesforce-platform-administrator-wheeler",
+      "url": "https://www.udemy.com/course/salesforce-administrator/",
+      "checked_at": "2026-09-29T14:09:33.389625+00:00",
+      "health": {
+        "id": "udemy-salesforce-platform-administrator-wheeler",
+        "url": "https://www.udemy.com/course/salesforce-administrator/",
+        "checked_at": "2026-09-29T14:09:33+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/salesforce-administrator/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "focus-on-force-salesforce-certification",
+      "url": "https://focusonforce.com/",
+      "checked_at": "2026-09-29T14:09:33.473965+00:00",
+      "health": {
+        "id": "focus-on-force-salesforce-certification",
+        "url": "https://focusonforce.com/",
+        "checked_at": "2026-09-29T14:09:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://k2u.ai/salesforce/certifications/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Salesforce certifications: study guides and practice exams",
+        "canonical_url": "https://k2u.ai/salesforce/certifications/",
+        "duration_signals": [],
+        "signal_fingerprint": "1978713e6b8e73e52f88e9fcd2b917cd105ab77c9a12455318e2be4e8c1d567c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://k2u.ai/salesforce/certifications/",
+      "sha256": "8c2c4c15fcc7e60370ea9c714b7112c93927f2937f21adea1f32ccac1a5a437a",
+      "text_characters": 9070
+    },
+    {
+      "id": "salesforce-admin-exam-guide-help",
+      "url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
+      "checked_at": "2026-09-29T14:15:07.091881+00:00",
+      "health": {
+        "id": "salesforce-admin-exam-guide-help",
+        "url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
+        "checked_at": "2026-09-29T14:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
+        "duration_signals": [],
+        "signal_fingerprint": "176a71922de1b9f79303ccff66b793861ff49c3ce6e330b590031d896f29d3dc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298966&type=1&language=en_US",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-admin-exam-guide-ko",
+      "url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+      "checked_at": "2026-09-29T14:15:07.092768+00:00",
+      "health": {
+        "id": "salesforce-admin-exam-guide-ko",
+        "url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+        "checked_at": "2026-09-29T14:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+        "duration_signals": [],
+        "signal_fingerprint": "4385a0fb194a0b1847120aa85099c676586f0b724bcdb47713927e219b6b1cc4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+      "sha256": "61dec16d9e455566c60be4689e00b7e901defc793011180a871fa08d4172a0c6",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-admin-academy-exam",
+      "url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
+      "checked_at": "2026-09-29T14:15:07.093192+00:00",
+      "health": {
+        "id": "salesforce-admin-academy-exam",
+        "url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
+        "checked_at": "2026-09-29T14:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
+        "duration_signals": [],
+        "signal_fingerprint": "6742d884ad845ebd84dd5247358f696b3d0d414cfd0de231b958c6b7c4bcd862",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
+      "sha256": "54419f93e5b3e976cc7ab2eb0cc02389f2b23fcb1fb80ce3cfaea36115ab487c",
+      "text_characters": 0
+    },
+    {
+      "id": "salesforce-admin-trailmix-current",
+      "url": "https://trailhead.salesforce.com/users/00550000006yDdKAAU/trailmixes/prepare-for-your-salesforce-administrator-credential",
+      "checked_at": "2026-09-29T14:15:08.485109+00:00",
+      "health": {
+        "id": "salesforce-admin-trailmix-current",
+        "url": "https://trailhead.salesforce.com/users/00550000006yDdKAAU/trailmixes/prepare-for-your-salesforce-administrator-credential",
+        "checked_at": "2026-09-29T14:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Prepare for your Salesforce Platform Administrator Certification Trailmix | Salesforce Trailhead",
+        "canonical_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+        "duration_signals": [],
+        "signal_fingerprint": "8ad677a63834bb012759540efb3daa488484f92d34324815e20bdfa41d19189e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/users/strailhead/trailmixes/prepare-for-your-salesforce-administrator-credential",
+      "sha256": "106421900686e9e301d7a50b24e3130e1719f26660c9a1bbd2f12373ff547a63",
+      "text_characters": 0
+    },
+    {
+      "id": "salesforce-flow-api68-context",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:15:08.629413+00:00",
+      "health": {
+        "id": "salesforce-flow-api68-context",
+        "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "0c4db59c13baab16e625075df835741e8633af7b772158470065bc8374068dbe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-permission-muting",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+      "checked_at": "2026-09-29T14:15:09.405754+00:00",
+      "health": {
+        "id": "salesforce-permission-muting",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+        "checked_at": "2026-09-29T14:15:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Mute Permissions in Salesforce Permission Set Groups",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+        "duration_signals": [
+          "48 hours",
+          "About 15 mins",
+          "PT15M"
+        ],
+        "signal_fingerprint": "49381bcd8725e8973d77d0a151b374e66a96ef7d10c7ddc642e500aa323ea5e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+      "sha256": "b6873384d9deec9bcbaca38713a43812bff42aa0cc8bc232d96445d0d3921714",
+      "text_characters": 9672
+    },
+    {
+      "id": "salesforce-object-security",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
+      "checked_at": "2026-09-29T14:15:09.459647+00:00",
+      "health": {
+        "id": "salesforce-object-security",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
+        "checked_at": "2026-09-29T14:15:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Manage Salesforce Object Access",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
+        "duration_signals": [
+          "48 hours",
+          "About 25 mins",
+          "PT25M"
+        ],
+        "signal_fingerprint": "706399ca7c5e6fc1e82ac3a2317b976897c320f4e6178e18411f1085663617e1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/data_security/data_security_objects",
+      "sha256": "7f948fec31fc03c206bf3ffc257f8ca3824a9b03cc583574b090709018757f52",
+      "text_characters": 18329
+    },
+    {
+      "id": "salesforce-flow-rollback",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+      "checked_at": "2026-09-29T14:15:10.326424+00:00",
+      "health": {
+        "id": "salesforce-flow-rollback",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+        "checked_at": "2026-09-29T14:15:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Optimize Salesforce Flows with Rollback & Custom Errors",
+        "canonical_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+        "duration_signals": [
+          "48 hours",
+          "About 30 mins",
+          "PT30M"
+        ],
+        "signal_fingerprint": "2549c1ce7bb0b7cafbd12342b655c1ef7b9815756bdd84466d46c2070ee9590b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+      "sha256": "c4dfebeaa7e6babfffe5b5fcefd1de787f179c507c3a29e819620a600bf4a632",
+      "text_characters": 9361
+    },
+    {
+      "id": "salesforce-agent-user-access",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "checked_at": "2026-09-29T14:15:10.358402+00:00",
+      "health": {
+        "id": "salesforce-agent-user-access",
+        "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "checked_at": "2026-09-29T14:15:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Salesforce Help",
+        "canonical_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+        "duration_signals": [],
+        "signal_fingerprint": "db62fb68092f3f05c3960dd10660ee588a797e6ce4a586de3233eeb9652d680b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "sha256": "9d1d1d8d8cb58b5f1214d6b271992e9b4d52ccaba5c0292fb8d23b24a3335377",
+      "text_characters": 61
+    },
+    {
+      "id": "salesforce-upsert-external-id",
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
+      "checked_at": "2026-09-29T14:15:11.101206+00:00",
+      "health": {
+        "id": "salesforce-upsert-external-id",
+        "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
+        "checked_at": "2026-09-29T14:15:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
+        "content_type": "text/html",
+        "page_title": "sObject Rows by External ID | Reference | REST API Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
+        "duration_signals": [],
+        "signal_fingerprint": "da740c2074d06a767716e99f6188c563d1c4c50d6c8483da2e0a78f686e0910a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-sobject-upsert.html",
+      "sha256": "ce7029282d2f70c6c428a3aac88fe7ed8f405edaab1b1f30dc2eac21b31981ef",
+      "text_characters": 1161
+    },
+    {
+      "id": "salesforce-upsert-collections",
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+      "checked_at": "2026-09-29T14:15:11.217336+00:00",
+      "health": {
+        "id": "salesforce-upsert-collections",
+        "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+        "checked_at": "2026-09-29T14:15:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+        "content_type": "text/html",
+        "page_title": "Upsert Records Using sObject Collections | Reference | REST API Developer Guide | Salesforce Developers",
+        "canonical_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+        "duration_signals": [],
+        "signal_fingerprint": "daba5e5e34fc7210b6eccbd63d4d17d1e2d47ffc4d632af5b3f8103260a81898",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+      "sha256": "3409dc4d3e0405675c9c635f0dbae27120e3d0d1f1aba7f18f7a306d6cf0a4e6",
+      "text_characters": 2344
+    },
+    {
+      "id": "focus-on-force-admin-study",
+      "url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-study-guide/",
+      "checked_at": "2026-09-29T14:15:11.393470+00:00",
+      "health": {
+        "id": "focus-on-force-admin-study",
+        "url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-study-guide/",
+        "checked_at": "2026-09-29T14:15:11+00:00",
+        "status": "error",
+        "http_status": 521,
+        "final_url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-study-guide/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<none>"
+      }
+    },
+    {
+      "id": "focus-on-force-admin-practice",
+      "url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-practice-exams/",
+      "checked_at": "2026-09-29T14:15:11.610756+00:00",
+      "health": {
+        "id": "focus-on-force-admin-practice",
+        "url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-practice-exams/",
+        "checked_at": "2026-09-29T14:15:11+00:00",
+        "status": "error",
+        "http_status": 521,
+        "final_url": "https://focusonforce.com/salesforce/training/platform-administrator-certification-practice-exams/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "<none>"
+      }
+    }
+  ],
+  "added_source_ids": [
+    "salesforce-admin-exam-guide-help",
+    "salesforce-admin-exam-guide-ko",
+    "salesforce-admin-academy-exam",
+    "salesforce-admin-trailmix-current",
+    "salesforce-flow-api68-context",
+    "salesforce-permission-muting",
+    "salesforce-object-security",
+    "salesforce-flow-rollback",
+    "salesforce-agent-user-access",
+    "salesforce-upsert-external-id",
+    "salesforce-upsert-collections",
+    "focus-on-force-admin-study",
+    "focus-on-force-admin-practice"
+  ],
+  "findings": [
+    {
+      "id": "salesforceplatformadministrator-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Help release label remains inconsistent with the scope refresh",
+      "url": "https://help.salesforce.com/s/articleView?id=005298966&language=ko&type=1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "English body through locale fallback includes Agentforce8% and Summer25 version label; Academy booking details unreadable.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "salesforceplatformadministrator-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Announcement publication is later than blueprint effective date",
+      "url": "https://admin.salesforce.com/blog/2026/what-the-salesforce-certified-platform-administrator-exam-update-means-for-admins",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "January22,2026 article dates the eight-domain update to December15,2025.",
+      "recommendation": "Keep publication and effective dates separate; Administrator Agentforce remains foundational.",
+      "disposition": "applied",
+      "source_id": "salesforce-admin-blueprint-update-2026",
+      "resolution": "Keep publication and effective dates separate; Administrator Agentforce remains foundational."
+    },
+    {
+      "id": "salesforceplatformadministrator-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A group mute is not a global deny",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/permission-set-groups/mute-permissions-in-permission-set-groups",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Profile,direct permission set and other groups can still grant a muted permission; dependencies also matter.",
+      "recommendation": "Teach complete grant tracing and original bounded permission arithmetic.",
+      "disposition": "applied",
+      "source_id": "salesforce-permission-muting",
+      "resolution": "Teach complete grant tracing and original bounded permission arithmetic."
+    },
+    {
+      "id": "salesforceplatformadministrator-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A fault path can preserve partial work",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/flow-implementation-2/roll-back-changes-after-an-error",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Handled faults do not automatically roll back earlier record changes; screen and record-triggered flows have distinct rollback elements.",
+      "recommendation": "Teach current-transaction boundaries and separate notification from recovery.",
+      "disposition": "applied",
+      "source_id": "salesforce-flow-rollback",
+      "resolution": "Teach current-transaction boundaries and separate notification from recovery."
+    },
+    {
+      "id": "salesforceplatformadministrator-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Enforcing user permissions is a versioned run option",
+      "url": "https://help.salesforce.com/s/articleView?id=platform.automate_flow_versioned_updates_68.htm&language=en_US&type=5",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "API68+ new option prevents caller elevation for eligible flow types,without changing running-user identity.",
+      "recommendation": "Mark version and org availability for verification; distinguish the actual user from a verified customer.",
+      "disposition": "applied",
+      "source_id": "salesforce-flow-api68-context",
+      "resolution": "Mark version and org availability for verification; distinguish the actual user from a verified customer."
+    },
+    {
+      "id": "salesforceplatformadministrator-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Verified contact identity does not automatically scope agent access",
+      "url": "https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Identified contact conversations can still run as agent user; context variables alone do not control record access.",
+      "recommendation": "Require trusted customer scoping as well as record permissions; distinguish supported authenticated-site route.",
+      "disposition": "applied",
+      "source_id": "salesforce-agent-user-access",
+      "resolution": "Require trusted customer scoping as well as record permissions; distinguish supported authenticated-site route."
+    },
+    {
+      "id": "salesforceplatformadministrator-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Transport success can contain individual data failures",
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/resources-composite-sobjects-collections-upsert.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SALESFORCE-PLATFORM-ADMINISTRATOR"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Collections HTTP200 may contain errors; allOrNone defaults false and ordered per-item results require inspection.",
+      "recommendation": "Add original CSV/SQLite reconciliation and rollback receipt,explicitly not an API emulator.",
+      "disposition": "applied",
+      "source_id": "salesforce-upsert-collections",
+      "resolution": "Add original CSV/SQLite reconciliation and rollback receipt,explicitly not an API emulator."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "salesforce-admin-blueprint-update-2026",
+      "published_on": "2026-01-22",
+      "effective_on": "2025-12-15",
+      "review": "Complete first-party main article read; foundational Agentforce update, no newly announced later blueprint."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "live_labs_executed": 0,
+    "local_worksheets_executed": 1,
+    "reasoning_cases": 3,
+    "local_validation": {
+      "passed": 30,
+      "python_blocks_executed": 1,
+      "public_example_sha256": "2d4bcc8862fbc82d5336cec7e2306bf98279da46126ffcf1c3dfdd8650399efd",
+      "python_version": "3.13.14",
+      "sqlite_version": "3.50.4",
+      "results": {
+        "checks": [
+          "three source rows reconciled",
+          "independent successes and reject retained",
+          "accepted values present",
+          "business total uses accepted rows",
+          "same values replay without extra rows",
+          "replay create becomes update",
+          "atomic failure restores original data",
+          "rolled-back rows not counted as saved",
+          "transaction closed after rollback",
+          "corrected atomic batch commits",
+          "corrected total is nine",
+          "repeated source key rejected",
+          "earlier update rolled back with repeated key",
+          "blank key decimal and extra column rejected",
+          "invalid inputs preserve data",
+          "header rejected before transaction",
+          "CSV quoting handled",
+          "quoted name preserved",
+          "SQL-looking name stays data",
+          "table remains usable",
+          "group mute removes its own edit grant",
+          "direct grant survives group mute",
+          "profile grant survives group mute",
+          "other group grant survives group mute",
+          "muting did not edit the underlying set",
+          "missing verified identity yields no private rows",
+          "broad agent access still scoped to verified customer",
+          "second customer sees only own row",
+          "customer identity does not grant missing record access",
+          "chat-supplied contact is not a verified session"
+        ],
+        "corrected_atomic_seats": 9,
+        "partial_seats": 8,
+        "passed": 30
+      },
+      "execution_stdout": "{\"checks\": [\"three source rows reconciled\", \"independent successes and reject retained\", \"accepted values present\", \"business total uses accepted rows\", \"same values replay without extra rows\", \"replay create becomes update\", \"atomic failure restores original data\", \"rolled-back rows not counted as saved\", \"transaction closed after rollback\", \"corrected atomic batch commits\", \"corrected total is nine\", \"repeated source key rejected\", \"earlier update rolled back with repeated key\", \"blank key decimal and extra column rejected\", \"invalid inputs preserve data\", \"header rejected before transaction\", \"CSV quoting handled\", \"quoted name preserved\", \"SQL-looking name stays data\", \"table remains usable\", \"group mute removes its own edit grant\", \"direct grant survives group mute\", \"profile grant survives group mute\", \"other group grant survives group mute\", \"muting did not edit the underlying set\", \"missing verified identity yields no private rows\", \"broad agent access still scoped to verified customer\", \"second customer sees only own row\", \"customer identity does not grant missing record access\", \"chat-supplied contact is not a verified session\"], \"corrected_atomic_seats\": 9, \"partial_seats\": 8, \"passed\": 30}",
+      "execution_boundary": "Standard-library CSV and in-memory SQLite with original fixed fixtures; permission-set arithmetic and trusted identity mapping. No Salesforce org, REST API, Data Loader, Flow, agent, login, installation or network operation.",
+      "model_limits": "Local unique-key and repeated-input policies, independent rows, fixed case-sensitive identities, explicit savepoints and transaction rollback. Not a Salesforce emulator or production authentication; no permission dependency engine, platform validation/trigger side effects, concurrency, crash recovery or scale tested."
+    }
+  },
+  "answered_checks": 40,
+  "limitations": [
+    "Help exam release label remains Summer25 with refreshed eight-domain scope; Academy booking metadata unreadable. Actual current appointment contract not verified, vendor clarification pending and no contact sent.",
+    "Udemy and OReilly HTTP403; both Focus on Force linked product pages HTTP521. Paid interiors, assessment quality, old duration/update claims and commercial terms not verified.",
+    "Direct Help pages returned loading shells; browser-rendered main articles used for release and agent context, and English exam body through Korean-locale route. Both Trailmix aliases and Academy exam route returned no readable body.",
+    "Independent human review and eight proposed Salesforce org activities remain pending. No org, account, REST API, Data Loader, Flow runtime, Agentforce preview, purchase or trial executed.",
+    "Thirty actual local checks use Python standard-library CSV/SQLite and fixed synthetic permission/identity fixtures. Not platform permissions, authentication, concurrency, crash recovery, production scaling or side-effect idempotency proof.",
+    "Canonical snapshot contains eight domain statements, not the supplementary28 detailed Help bullets. Snapshot and annual-maintenance bytes unchanged; complete related product documentation was not audited.",
+    "Five reserved GitHub guides and disabled notification pilot untouched. No installation, reboot, service, authentication or permission change, or message to others."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 179,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Standard-library CSV and in-memory SQLite with original fixed fixtures; permission-set arithmetic and trusted identity mapping. No Salesforce org, REST API, Data Loader, Flow, agent, login, installation or network operation.",
+    "passed": 30,
+    "python_blocks_executed": 1,
+    "public_example_sha256": "2d4bcc8862fbc82d5336cec7e2306bf98279da46126ffcf1c3dfdd8650399efd",
+    "python_version": "3.13.14",
+    "sqlite_version": "3.50.4",
+    "results": {
+      "checks": [
+        "three source rows reconciled",
+        "independent successes and reject retained",
+        "accepted values present",
+        "business total uses accepted rows",
+        "same values replay without extra rows",
+        "replay create becomes update",
+        "atomic failure restores original data",
+        "rolled-back rows not counted as saved",
+        "transaction closed after rollback",
+        "corrected atomic batch commits",
+        "corrected total is nine",
+        "repeated source key rejected",
+        "earlier update rolled back with repeated key",
+        "blank key decimal and extra column rejected",
+        "invalid inputs preserve data",
+        "header rejected before transaction",
+        "CSV quoting handled",
+        "quoted name preserved",
+        "SQL-looking name stays data",
+        "table remains usable",
+        "group mute removes its own edit grant",
+        "direct grant survives group mute",
+        "profile grant survives group mute",
+        "other group grant survives group mute",
+        "muting did not edit the underlying set",
+        "missing verified identity yields no private rows",
+        "broad agent access still scoped to verified customer",
+        "second customer sees only own row",
+        "customer identity does not grant missing record access",
+        "chat-supplied contact is not a verified session"
+      ],
+      "corrected_atomic_seats": 9,
+      "partial_seats": 8,
+      "passed": 30
+    },
+    "execution_stdout": "{\"checks\": [\"three source rows reconciled\", \"independent successes and reject retained\", \"accepted values present\", \"business total uses accepted rows\", \"same values replay without extra rows\", \"replay create becomes update\", \"atomic failure restores original data\", \"rolled-back rows not counted as saved\", \"transaction closed after rollback\", \"corrected atomic batch commits\", \"corrected total is nine\", \"repeated source key rejected\", \"earlier update rolled back with repeated key\", \"blank key decimal and extra column rejected\", \"invalid inputs preserve data\", \"header rejected before transaction\", \"CSV quoting handled\", \"quoted name preserved\", \"SQL-looking name stays data\", \"table remains usable\", \"group mute removes its own edit grant\", \"direct grant survives group mute\", \"profile grant survives group mute\", \"other group grant survives group mute\", \"muting did not edit the underlying set\", \"missing verified identity yields no private rows\", \"broad agent access still scoped to verified customer\", \"second customer sees only own row\", \"customer identity does not grant missing record access\", \"chat-supplied contact is not a verified session\"], \"corrected_atomic_seats\": 9, \"partial_seats\": 8, \"passed\": 30}",
+    "model_limits": "Local unique-key and repeated-input policies, independent rows, fixed case-sensitive identities, explicit savepoints and transaction rollback. Not a Salesforce emulator or production authentication; no permission dependency engine, platform validation/trigger side effects, concurrency, crash recovery or scale tested.",
+    "learning_catalog_consistency": "passed"
+  },
+  "public_objective_groups": [
+    {
+      "title": "Configuration and setup",
+      "weight": "15%",
+      "objectives": [
+        "Configuration and setup 15%"
+      ]
+    },
+    {
+      "title": "Object Manager and Lightning App Builder",
+      "weight": "15%",
+      "objectives": [
+        "Object Manager and Lightning App Builder 15%"
+      ]
+    },
+    {
+      "title": "Sales and marketing applications",
+      "weight": "10%",
+      "objectives": [
+        "Sales and marketing applications 10%"
+      ]
+    },
+    {
+      "title": "Service and support applications",
+      "weight": "10%",
+      "objectives": [
+        "Service and support applications 10%"
+      ]
+    },
+    {
+      "title": "Productivity and collaboration",
+      "weight": "10%",
+      "objectives": [
+        "Productivity and collaboration 10%"
+      ]
+    },
+    {
+      "title": "Data and analytics management",
+      "weight": "17%",
+      "objectives": [
+        "Data and analytics management 17%"
+      ]
+    },
+    {
+      "title": "Automation",
+      "weight": "15%",
+      "objectives": [
+        "Automation 15%"
+      ]
+    },
+    {
+      "title": "Agentforce",
+      "weight": "8%",
+      "objectives": [
+        "Agentforce 8%"
+      ]
+    }
+  ],
+  "mapping_boundary": "Eight canonical weighted domain statements; browser Help supplement has28 bullets in section counts6/3/3/2/4/5/3/2. These are not silently substituted into the monitored snapshot.",
+  "source_reading_boundaries": {
+    "salesforce-platform-admin-prep-unit": "Complete introductory main unit read: eight weights, three prep modules, integrity and annual maintenance. No assessment answers or superbadge solutions used.",
+    "salesforce-platform-admin-certification": "Complete main credential landing text read; followed current Academy and numeric-user Trailmix links. No booking or authentication.",
+    "salesforce-platform-admin-prep-trail": "Complete public three-module listing read: 15+35+30 minutes. No lesson or practice-question quality claim.",
+    "salesforce-admin-blueprint-update-2026": "Complete January 22, 2026 main article read, distinguishing December 15, 2025 effective blueprint from publication date and foundational Agentforce from Specialist scope.",
+    "pluralsight-salesforce-certified-administrator-path": "Complete public main path and eight course cards read. Header 13 hours, card sum 794 minutes; intro September 30, 2022 and seven cards May 11, 2026. No distinct Agentforce title; interiors, practice assessment and trial not accessed.",
+    "udemy-salesforce-platform-administrator-wheeler": "HTTP 403. Earlier 39h52, August 2026 update and Agentforce practice claims not reverified; no course interior accessed.",
+    "oreilly-salesforce-platform-administrator-study-guide": "HTTP 403. Earlier edition, duration, quizzes and practice content not reverified. No book interior or subscription access.",
+    "salesforce-platform-admin-trailmix": "HTTP success but zero extracted main characters. Earlier roughly 60-hour metadata not reverified; current credential-linked alias also blank.",
+    "focus-on-force-salesforce-certification": "Public certification catalog read, including Administrator product links and associate prerequisite wording. This conflicts with official no-prerequisite rule. No assertion about practice originality or quality.",
+    "salesforce-admin-exam-guide-help": "Direct English route returned only 61-character loading/CSS-error shell. Browser English route initially also shell; English body read through Korean-locale route. Do not equate HTTP 200 with content verification.",
+    "salesforce-admin-exam-guide-ko": "Direct HTTP also shell. Browser-rendered English main article fully read: details, all 28 detailed bullets in eight sections, training and maintenance. Six-plus months recommended, no prerequisite; 60 plus up to 5 unscored,105min,68% English/65% Japanese,USD200/100 plus tax. Summer25 label unresolved alongside refreshed scope. Locale wrapper is Korean, article body English; not a newly fetched English booking contract.",
+    "salesforce-admin-academy-exam": "Current credential-linked Academy URL returned HTTP 200 with zero extracted text; browser also empty. Booking, release contract and regional price not verified.",
+    "salesforce-admin-trailmix-current": "Actual numeric-user link followed from credential page; HTTP 200, zero extracted text. No duration or complete content coverage claim.",
+    "salesforce-flow-api68-context": "Direct HTTP shell; browser main versioned release section read in full. Applies only API68.0+ screen/autolaunched flows with new enforcing-user option. Ordinary user context can inherit system caller permissions. No release rollout or org runtime verified.",
+    "salesforce-permission-muting": "Intro and muting considerations, initial example setup rationale, dependencies and installed-package discussion read. Some step-by-step activity middle not reviewed. Muting affects one group and dependent permissions; other grants persist. No activity run or challenge answers copied.",
+    "salesforce-object-security": "Selected Manage Object Permissions and initial recruiting-persona examples/table read. Not full18k-character unit or profile/group click-through steps; no activity or assessment executed.",
+    "salesforce-flow-rollback": "Selected Problem with Fault Paths, Roll Back Records and screen-boundary explanation, plus Custom Error introduction and first setup steps read. Not later knowledge check/assessment or all activity steps. No package installation or Flow execution.",
+    "salesforce-agent-user-access": "Direct HTTP shell; browser main article read including full three-column authentication table and verified-customer scoping section. Supported credential-verified Experience Cloud/Enhanced Chat authenticated path distinguished from identified contact. No linked video or live agent/channel.",
+    "salesforce-upsert-external-id": "Complete main resource overview read. Create/update matching and operation routes; no specific duplicate-ID error code adopted and no API request sent.",
+    "salesforce-upsert-collections": "Complete main documentation read, including default allOrNone false,200 records,ordered result semantics and HTTP200 with item errors. Example body panels were not exposed. No REST response or transaction execution claimed.",
+    "focus-on-force-admin-study": "HTTP521 and browser retrieval failure at exact catalog-linked public product endpoint. No price, duration, contents, subscription or quality verified.",
+    "focus-on-force-admin-practice": "HTTP521 and browser retrieval failure at exact catalog-linked public product endpoint. No practice questions read, purchased or evaluated."
+  },
+  "browser_fallbacks": [
+    {
+      "source_id": "salesforce-admin-exam-guide-ko",
+      "direct_result": "61-character loading/CSS-error shell",
+      "browser_result": "English main article through Korean locale,all28 bullets,exam details andmaintenance read",
+      "unresolved": "Summer25 release label alongside refreshed scope; Academy booking body unavailable"
+    },
+    {
+      "source_id": "salesforce-flow-api68-context",
+      "direct_result": "61-character loading/CSS-error shell",
+      "browser_result": "Complete short main API68 versioned-change section read",
+      "unresolved": "No org-specific release availability or actual Flow runtime verified"
+    },
+    {
+      "source_id": "salesforce-agent-user-access",
+      "direct_result": "61-character loading/CSS-error shell",
+      "browser_result": "Main article including allthree authentication-table columns andverified-customer scoping read",
+      "unresolved": "No channel,agent,verification orruntime tested"
+    }
+  ],
+  "catalog_findings": [
+    {
+      "source_id": "pluralsight-salesforce-certified-administrator-path",
+      "course_minutes": [
+        26,
+        109,
+        134,
+        68,
+        158,
+        116,
+        94,
+        89
+      ],
+      "total_minutes": 794,
+      "header_hours": 13,
+      "dates": "Introduction2022-09-30;seven domain cards2026-05-11",
+      "limit": "No distinct Agentforce-titled card; not proof of interior omission or complete coverage"
+    },
+    {
+      "source_id": "focus-on-force-salesforce-certification",
+      "observation": "Administrator catalog says Requires:AssociateCertifications;officialHelp says None",
+      "resolution": "Official rule retained;no commercial prerequisite treatedasexameligibility"
+    },
+    {
+      "source_id": "focus-on-force-admin-study",
+      "http_status": 521,
+      "interior_reviewed": false
+    },
+    {
+      "source_id": "focus-on-force-admin-practice",
+      "http_status": 521,
+      "interior_reviewed": false
+    }
+  ]
+}
