@@ -5,6 +5,27 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+      "reviewed_on": "2026-09-29",
+      "guide_sha256": "a952b5063beb2ee579ca73f08292e6bf7d13bd2a301cd53dafabb346be6c820a",
+      "objective_count": 94,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-29-google-associate-cloud-engineer-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Same-context AI review; independent human review pending.",
+        "Eight Google Cloud labs remain proposed. Only32checks in the exact public Python worksheet executed; no cloud account/project, billing, IAM, compute, GKE, PubSub, storage, Workstations or managed database used.",
+        "gcloud was not found on PATH. No CLI installation, authentication, infrastructure deployment, credential discovery or runtime restart attempted.",
+        "CIDR checks cover supplied arithmetic/overlap inventory only, not all Google range rules, peering, quotas or actual routes. Capacity examples are invented and do not predict Cloud Run instance overlap.",
+        "SQLite in-memory transaction checks prove local duplicate/payload/rollback behavior only. No process crash, disk durability, concurrency, outbox dispatcher, external recipient or end-to-end delivery tested.",
+        "Google Skills durations were not fully exposed; Whizlabs page rendered only a title; OReilly403 blocked metadata. Search-index Whizlabs counts are not verified fullcatalog. No paid lessons, provider labs, assessment questions or recalled exam content read.",
+        "Official PDF lacks visible revision date; current branding and preview documentation do not establish a new exam effective date. Lifecycle baseline initialization is not evidence of a newly changed exam."
+      ]
+    },
+    {
       "exam_code": "GOOGLE-GENERATIVE-AI-LEADER",
       "reviewed_on": "2026-09-29",
       "guide_sha256": "e2e44698adb48d2fa2f7625ac1a8d7edc8a3817b8ff34b590eeb21435ae31b26",

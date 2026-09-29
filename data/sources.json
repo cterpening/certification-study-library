@@ -3,6 +3,258 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "gcp-adc-order",
+      "title": "How Application Default Credentials works",
+      "url": "https://docs.cloud.google.com/docs/authentication/application-default-credentials",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Full short ADC search-order document read; CLI and ADC distinction, configuration types and metadata path. No credentials inspected. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-sa-auth-roles",
+      "title": "Roles for service account authentication",
+      "url": "https://docs.cloud.google.com/iam/docs/service-account-permissions",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read role definitions and attachment prerequisites; token/actAs/target-access distinctions. No role granted or token minted. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-run-max-instances",
+      "title": "Set maximum instances for Cloud Run services",
+      "url": "https://docs.cloud.google.com/run/docs/configuring/max-instances",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read overview, service/revision effects, tagged revision boundary and traffic allocation passages. No settings or scaling tests. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-run-autoscaling",
+      "title": "Cloud Run instance autoscaling",
+      "url": "https://docs.cloud.google.com/run/docs/about-instance-autoscaling",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read scaling guarantees, transient excess, traffic split/deployment overlap, pending429 and idle connection passages. Avoid treating revision-focused wording as universal service-level configuration. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-gke-federation",
+      "title": "Workload Identity Federation for GKE",
+      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read credential flow, direct workload principals versus optional impersonation, node image-pull note and cross-cluster identity sameness. No identity configuration tested. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-gke-images",
+      "title": "Troubleshoot image pulls in GKE",
+      "url": "https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/image-pulls",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read image-pull mechanism, registry options, node/secret permission identity and search-supported node status/scope diagnosis; extensive troubleshooting commands not fully reviewed or executed. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-log-routing",
+      "title": "Log routing and storage overview",
+      "url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read overview, independent sinks, misconfiguration/buffering, nonretroactive routing, intercepting/nonintercepting hierarchy and Required exception. No logs routed. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-storage-ubla",
+      "title": "Uniform bucket-level access",
+      "url": "https://docs.cloud.google.com/storage/docs/uniform-bucket-level-access",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read overview, ACL/IAM union, enabled behavior, federation requirement,90day irreversibility and reversal/migration constraints. No bucket changed. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-subnet-ranges",
+      "title": "VPC subnet IP address ranges",
+      "url": "https://docs.cloud.google.com/vpc/docs/subnets",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read primary/secondary expansion, prefix envelope, overlap, unusable primary addresses and virtual gateway limitations. Full global-region/range tables not exhaustively validated. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-firewall-evaluation",
+      "title": "Firewall policy and rule evaluation",
+      "url": "https://docs.cloud.google.com/firewall/docs/firewall-policies-rule-eval-order",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read overview/order and hierarchical action flow; web primary source also supplied classic equal-priority deny and implied actions. No firewall emulator or cloud packet test. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-mig-autohealing",
+      "title": "Repair VMs in a MIG",
+      "url": "https://docs.cloud.google.com/compute/docs/instance-groups/autohealing-instances-in-migs",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read setup distinction, conservative health checks, probe/firewall and initial-delay passages; long API examples not comprehensively reviewed or run. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-pubsub-exactly-once",
+      "title": "Pub/Sub exactly-once delivery",
+      "url": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read acknowledgment/delivery semantics, pull/regional scope and publish-side duplicate limitation. No subscription created or message delivered. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-bigquery-cost-control",
+      "title": "Estimate and control BigQuery costs",
+      "url": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read dry-run/RLS estimate, nonclustered LIMIT and maximumbytes/clustered-upperbound sections; language examples not executed. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-snapshot-best-practices",
+      "title": "Compute Engine snapshot best practices",
+      "url": "https://docs.cloud.google.com/compute/docs/disks/snapshot-best-practices",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read security warning, crash/application consistency, disk/OS support and operation/resource status; no snapshot or restoration. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-container-registry-deprecation",
+      "title": "Container Registry deprecation",
+      "url": "https://docs.cloud.google.com/artifact-registry/docs/transition/transition-from-gcr",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read opening deprecation, Google-owned images, Artifact Registry gcr.io and repository-management comparison. No migration executed. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "google-ace-pluralsight",
+      "title": "Google Associate Cloud Engineer Pluralsight path",
+      "url": "https://www.pluralsight.com/paths/google-associate-cloud-engineer-pluralsight",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "commercial-learning-path",
+      "access_model": "paid",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Public path, seven course titles/durations/dates, four lab titles/durations/dates and prerequisites read.459+135=594minutes. No paid lessons, labs or practice exam read. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-standalone-org",
+      "title": "Set up standalone organizations",
+      "url": "https://docs.cloud.google.com/resource-manager/docs/standalone-organization-overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read opening, creation eligibility and Owner/Administrator responsibilities; later invitation and organization API examples not comprehensively verified. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "gcp-workstations-overview",
+      "title": "Cloud Workstations overview",
+      "url": "https://docs.cloud.google.com/workstations/docs/overview",
+      "publisher": "Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "last_checked": "2026-09-29",
+      "notes": "September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Full overview read: resource hierarchy, ephemeral runtime, optional persistent home and next-start updates; no workstation started. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "google-soft-prompt-tuning",
       "title": "Guiding frozen language models with learned soft prompts",
       "url": "https://research.google/blog/guiding-frozen-language-models-with-learned-soft-prompts/",
@@ -278,10 +530,11 @@
       "access_model": "public",
       "supported_exams": [
         "GOOGLE-CLOUD-DIGITAL-LEADER",
-        "GOOGLE-GENERATIVE-AI-LEADER"
+        "GOOGLE-GENERATIVE-AI-LEADER",
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Full April 22 blog read with authors/date. Adopt only app/platform separation and Vertex AI evolution; avoid treating marketing promises as measured controls. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full article already read in preceding CDL review; same-session fetch healthy. Reuse app/platform naming context only, not marketing guarantees. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Full April 22 blog read with authors/date. Adopt only app/platform separation and Vertex AI evolution; avoid treating marketing promises as measured controls. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-GENERATIVE-AI-LEADER deep review: Full article already read in preceding CDL review; same-session fetch healthy. Reuse app/platform naming context only, not marketing guarantees. See docs/research/2026-09-29-google-generative-ai-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Full April22,2026 Brian Delahunty/Michael Gerstenhaber article read in same session and reread here; reuse naming context only, not marketing security guarantees. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-agent-platform-overview",
@@ -436,10 +689,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "GOOGLE-CLOUD-DIGITAL-LEADER"
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
       ],
       "last_checked": "2026-09-29",
-      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read preview status, operation, eligible services, scope, estimated gross costs, limitations and manual restore; permissions/setup context inspected, no control configured. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution."
+      "notes": "September 29 GOOGLE-CLOUD-DIGITAL-LEADER deep review: Read preview status, operation, eligible services, scope, estimated gross costs, limitations and manual restore; permissions/setup context inspected, no control configured. See docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md No live infrastructure execution. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Read preview, gross estimated trigger, singleproject/service/monthly eligibility, in-flight/fixed charges, delay and manual lifting; no budget or notification. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id": "gcp-quota-overview",
@@ -43007,16 +43261,49 @@
       "id":"google-ace-certification","title":"Associate Cloud Engineer certification","url":"https://cloud.google.com/learn/certification/cloud-engineer","publisher":"Google Cloud","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"Canonical live capability, delivery, renewal, preparation and branding-update page; monitored by the Google Cloud certification adapter."
     },
     {
-      "id":"google-ace-exam-guide","title":"Associate Cloud Engineer certification exam guide","url":"https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"Detailed five-page official four-domain 20/30/30/20 objective baseline using current 2026 product names; the PDF exposes no visible revision date."
+      "id": "google-ace-exam-guide",
+      "title": "Associate Cloud Engineer certification exam guide",
+      "url": "https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "notes": "Detailed five-page official four-domain 20/30/30/20 objective baseline using current 2026 product names; the PDF exposes no visible revision date. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Actual five-page PDF fully read with layout extraction;94considerations16/24/43/11 mapped; actualbytes/hash/page receipt retained. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-ace-skills-path","title":"Associate Cloud Engineer Certification learning path","url":"https://www.skills.google/paths/11","publisher":"Google Cloud","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"Seventeen first-party activities list about 73h15m total; use modularly according to gaps. Account required and labs may require credits or entitlement."
+      "id": "google-ace-skills-path",
+      "title": "Associate Cloud Engineer Certification learning path",
+      "url": "https://www.skills.google/paths/11",
+      "publisher": "Google Cloud",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "notes": "September 29: public path confirms17 activities and relative update age20hours. Per-activity durations not exposed; earlier73h15m total not reverified. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: September 29: public path confirms17 activities and relative update age20hours. Per-activity durations not exposed; earlier73h15m total not reverified. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-ace-sample-questions","title":"Associate Cloud Engineer official sample questions","url":"https://docs.google.com/forms/d/e/1FAIpQLSfexWKtXT2OSFJ-obA4iT3GmzgiOCGvjrT9OfxilWC1yPtmfQ/viewform","publisher":"Google Cloud","authority_class":1,"source_type":"independent-assessment","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"Official untimed repeatable sample questions; not predictive of exam breadth, difficulty or result."
     },
     {
-      "id":"google-ace-coursera","title":"Preparing for Your Associate Cloud Engineer Journey","url":"https://www.coursera.org/professional-certificates/cloud-engineering-gcp","publisher":"Coursera / Google Cloud","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"Six-course first-party program with about 42 listed content hours; page also estimates three months at ten hours per week. Subscription and audit terms vary."
+      "id": "google-ace-coursera",
+      "title": "Preparing for Your Associate Cloud Engineer Journey",
+      "url": "https://www.coursera.org/professional-certificates/cloud-engineering-gcp",
+      "publisher": "Coursera / Google Cloud",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "notes": "September 29: six public cards total42hours; landing4weeks at10hours/week and FAQ1.5months at5hours/week differ. First card is Gemini Notebook study preparation; GKE outcome still says Container Registry. No paid lessons accessed. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: September 29: six public cards total42hours; landing4weeks at10hours/week and FAQ1.5months at5hours/week differ. First card is Gemini Notebook study preparation; GKE outcome still says Container Registry. No paid lessons accessed. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-ace-architecture-center","title":"Google Cloud Architecture Center","url":"https://cloud.google.com/architecture","publisher":"Google Cloud","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"First-party architecture, reliability, migration, deployment and operational patterns for closing design-to-operation gaps."
@@ -43025,10 +43312,32 @@
       "id":"google-ace-youtube","title":"Google Cloud Tech","url":"https://www.youtube.com/@googlecloudtech","publisher":"Google Cloud","authority_class":2,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"First-party product demonstrations and updates; choose targeted current playlists rather than expecting a fixed exam course."
     },
     {
-      "id":"google-ace-oreilly-sullivan","title":"Google Cloud Certified Associate Cloud Engineer Study Guide, Second Edition","url":"https://www.oreilly.com/library/view/google-cloud-certified/9781119871446/","publisher":"O'Reilly / Sybex / Dan Sullivan","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"2023, 352-page structured reference; requires the guide's explicit current four-domain, product-name and added-service gap check."
+      "id": "google-ace-oreilly-sullivan",
+      "title": "Google Cloud Certified Associate Cloud Engineer Study Guide, Second Edition",
+      "url": "https://www.oreilly.com/library/view/google-cloud-certified/9781119871446/",
+      "publisher": "O'Reilly / Sybex / Dan Sullivan",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "notes": "Historical record:2023 and352pages; September29 HTTP403 prevented metadata verification. No paid book text read. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: Historical record:2023 and352pages; September29 HTTP403 prevented metadata verification. No paid book text read. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
     },
     {
-      "id":"google-ace-whizlabs","title":"Google Cloud Certified Associate Cloud Engineer course and practice","url":"https://www.whizlabs.com/google-cloud-certified-associate-cloud-engineer/","publisher":"Whizlabs","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["GOOGLE-ASSOCIATE-CLOUD-ENGINEER"],"notes":"Current page advertises 9+ video hours, 350+ questions and 40+ labs, with limited free practice. Verify explanations and current four-domain alignment against Google sources."
+      "id": "google-ace-whizlabs",
+      "title": "Google Cloud Certified Associate Cloud Engineer course and practice",
+      "url": "https://www.whizlabs.com/google-cloud-certified-associate-cloud-engineer/",
+      "publisher": "Whizlabs",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-29",
+      "supported_exams": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "notes": "September29 direct/public-browser fetch exposes only page title. Search index displays different counts from earlier350+questions claim; full current catalog not verified and no practice question content read. September 29 GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review: September29 direct/public-browser fetch exposes only page title. Search index displays different counts from earlier350+questions claim; full current catalog not verified and no practice question content read. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md No live infrastructure execution."
     },
     {
       "id":"google-pca-certification","title":"Professional Cloud Architect certification","url":"https://cloud.google.com/learn/certification/cloud-architect","publisher":"Google Cloud","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"],"notes":"Canonical live capability, delivery, renewal, preparation and branding-update page; monitored by the Google Cloud certification adapter."

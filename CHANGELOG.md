@@ -1,5 +1,7 @@
 # Changelog
 
+- September 29, 2026: [GOOGLE-ASSOCIATE-CLOUD-ENGINEER deep review](docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md): 94 mapped considerations,32 executed local operations checks,50 answers,eight proposed cloud labs,explicit lifecycle-baseline initialization and current resource comparison.
+
 - September 29, 2026: [GOOGLE-GENERATIVE-AI-LEADER deep review](docs/research/2026-09-29-google-generative-ai-leader-deep-review.md): 61 published considerations, 27 executed local checks, stronger data/identity/tool boundaries, 48 answers, eight proposed labs and current learning-resource evidence.
 
 - September 29, 2026: [GOOGLE-CLOUD-DIGITAL-LEADER deep review](docs/research/2026-09-29-google-cloud-digital-leader-deep-review.md): 69 detailed considerations, 26 executed local checks, app/platform and billing-control corrections, 44 answers, eight proposed decision labs and refreshed public learning evidence.

@@ -4,6 +4,325 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-29-googleassociatecloudengineer-deep-review",
+      "title": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-29",
+      "completed_on": "2026-09-29",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md",
+          "baseline_sha256": "2c38e79e3601f3f24716969b04ee5ef70d40425056f7935e8bfd60c0e86ec195",
+          "scanned_on": "2026-09-29",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Actual5pagePDF fully read in layout mode;94considerations16/24/43/11 under12objectives. Objective hash unchanged1c26e61d687b69b9e2b0b00e59d537b271eae0647d525dd9d40284ea28c11d74. Missing lifecycle baseline initialized after reading canonical page; status762fdb9ac414466bbef6cb44914ac1ca178e5974bc12f7e76984c891b85a3154; explicit before/accepted/post receipts retained. Standard2h125USD50–60questions4languages3year/no prerequisite/6+months experience; renewal1h75USD20questionsEnglishJapanese3year versus eligible designatedSkills1year. No PDF revision date or new exam-change date invented."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted ADC/SA roles, GKE workload principal versus image-pull identity, Run service/revision/transient scaling, PubSub delivery limits, log routing, bucket ACL migration, subnet expansion, firewall-layer evaluation, MIG health checks, snapshot consistency, BigQuery estimates, standalone organization and Workstations lifecycle passages read. Exact public local worksheet32checks passed; no cloud runtime executed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Full April22,2026 Brian Delahunty/Michael Gerstenhaber app/platform announcement read for naming context. Container Registry deprecation opening/comparison read: historical write shutdown is distinct from valid Artifact Registry gcr.io endpoints. Spend-cap preview current scope/delay read. No marketing guarantee adopted or new exam effective date inferred."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Google Skills17activities; relative20hour update is not duration. Google-authored Coursera six cards2/6/8/11/7/8 total42h, landing4weeks10h/week versus FAQ1.5months5h/week; outdated Container Registry outcome identified. New Pluralsight7courses7h39+fourlabs2h15=9h54 vsrounded10h;2025core/May2026demo/April–June2026labs, old split-domain titles. Whizlabs title-only in direct and web-open views; indexed metadata differs from oldcount and is not treated as verified fullcatalog. OReilly403; sampleform/Youtubechannel shells, no paid or recalled questions."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Replaced blanketbudget/CloudRun maximum assumptions, missing standaloneorg/Workstations detail, ADC/impersonation conflation, mandatoryGSA mapping implication, Podimagepull ambiguity, firewall flattenedpriority shortcut, sinkbackfill assumption, weak snapshot/BigQuery/ACL boundaries, catalognotlocated statement and old course estimates. Added32localchecks50answers8acceptance/negativecase cloudlabs; Places to learn remains final."
+            }
+          },
+          "findings": [
+            {
+              "id": "googleassociatecloudengineer-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Lifecycle observation lacked an accepted baseline",
+              "url": "https://cloud.google.com/learn/certification/cloud-engineer",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective digest unchanged while prior lifecycle snapshot was absent; live page provides separate standard, renewal-exam and designated-learning routes.",
+              "recommendation": "Initialize only the reviewed missing lifecycle snapshot, retain all three observations and explain separate validity/eligibility routes.",
+              "disposition": "applied",
+              "source_id": "google-ace-certification",
+              "resolution": "Initialize only the reviewed missing lifecycle snapshot, retain all three observations and explain separate validity/eligibility routes."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Standalone organizations require explicit eligibility and ownership teaching",
+              "url": "https://docs.cloud.google.com/resource-manager/docs/standalone-organization-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current route is for new Free Trial customers; Organization Owner is outside IAM and distinct from Organization Administrator.",
+              "recommendation": "Add eligibility, remaining active Google owner, service-account exclusion and delegated-creation boundaries.",
+              "disposition": "applied",
+              "source_id": "gcp-standalone-org",
+              "resolution": "Add eligibility, remaining active Google owner, service-account exclusion and delegated-creation boundaries."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Budget types have different enforcement boundaries",
+              "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Alerts-only budgets differ from preview single-project/single-service monthly spend caps; estimated trigger can lag and ongoing charges remain.",
+              "recommendation": "Replace blanket budget claim with explicit budget type, eligibility, delay and manual-lift behavior.",
+              "disposition": "applied",
+              "source_id": "gcp-spend-cap-budgets",
+              "resolution": "Replace blanket budget claim with explicit budget type, eligibility, delay and manual-lift behavior."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Maximum instances is not a strict dependency budget",
+              "url": "https://docs.cloud.google.com/run/docs/configuring/max-instances",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Service-level versus revision-level settings and temporary excess behavior are documented.",
+              "recommendation": "Teach pool limits, headroom, overlap and observability; local180/228 connection examples are fictional scenarios rather than platform predictions.",
+              "disposition": "applied",
+              "source_id": "gcp-run-max-instances",
+              "resolution": "Teach pool limits, headroom, overlap and observability; local180/228 connection examples are fictional scenarios rather than platform predictions."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Workload access and image pulls use different identity paths",
+              "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "GKE federation supports direct workload principals or optional service-account impersonation; node identity still pulls images. Shared pools can identify matching namespaces/accounts as the same principal.",
+              "recommendation": "Explain identity provenance and separate troubleshooting/negative cases.",
+              "disposition": "applied",
+              "source_id": "gcp-gke-federation",
+              "resolution": "Explain identity provenance and separate troubleshooting/negative cases."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Service-account attachment is not token creation or target access",
+              "url": "https://docs.cloud.google.com/iam/docs/service-account-permissions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Service Account User supports actAs; Token Creator supports short-lived token impersonation; target permissions are distinct.",
+              "recommendation": "Add role/permission table and ADC provenance checks instead of granting broad access to hide wrong credentials.",
+              "disposition": "applied",
+              "source_id": "gcp-sa-auth-roles",
+              "resolution": "Add role/permission table and ADC provenance checks instead of granting broad access to hide wrong credentials."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Priority is evaluated within policy order",
+              "url": "https://docs.cloud.google.com/firewall/docs/firewall-policies-rule-eval-order",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Hierarchical/system policies precede configurable classic versus network ordering; terminating actions stop evaluation and goto_next delegates.",
+              "recommendation": "Replace a flattened priority interpretation with layer/order/target/direction evaluation.",
+              "disposition": "applied",
+              "source_id": "gcp-firewall-evaluation",
+              "resolution": "Replace a flattened priority interpretation with layer/order/target/direction evaluation."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New sinks do not backfill historical entries",
+              "url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sinks independently evaluate new entries; intercepting aggregated sinks change child routing with a Required exception.",
+              "recommendation": "Teach storage versus routing, missing history and explicit copy/permission verification.",
+              "disposition": "applied",
+              "source_id": "gcp-log-routing",
+              "resolution": "Teach storage versus routing, missing history and explicit copy/permission verification."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "ACL migration can remove access and becomes irreversible",
+              "url": "https://docs.cloud.google.com/storage/docs/uniform-bucket-level-access",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Uniform access disables ACL authorization and cannot be reversed after90consecutive days; federation access requires it.",
+              "recommendation": "Teach least-privilege migration, reversal constraints and separate retention behavior.",
+              "disposition": "applied",
+              "source_id": "gcp-storage-ubla",
+              "resolution": "Teach least-privilege migration, reversal constraints and separate retention behavior."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Delivery guarantees do not establish once-only business effects",
+              "url": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Supported pull/regional/message-ID guarantees do not cover push execution or publish-side duplicates.",
+              "recommendation": "Add transaction/dedup/outbox reasoning and execute a local rollback/retry exercise with explicit distributed-runtime limits.",
+              "disposition": "applied",
+              "source_id": "gcp-pubsub-exactly-once",
+              "resolution": "Add transaction/dedup/outbox reasoning and execute a local rollback/retry exercise with explicit distributed-runtime limits."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Snapshot completion is not application recovery proof",
+              "url": "https://docs.cloud.google.com/compute/docs/disks/snapshot-best-practices",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pending writes, disk/OS consistency support and operation-versus-resource states differ.",
+              "recommendation": "Require restore evidence and distinguish Persistent Disk guest coordination from Hyperdisk manual coordination.",
+              "disposition": "applied",
+              "source_id": "gcp-snapshot-best-practices",
+              "resolution": "Require restore evidence and distinguish Persistent Disk guest coordination from Hyperdisk manual coordination."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Small results and zero estimates do not prove low query cost",
+              "url": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "LIMIT on non-clustered data does not reduce scans, clustered estimates may be high and row-level security can return zero estimates.",
+              "recommendation": "Explain on-demand bytes controls and a negative query-budget case.",
+              "disposition": "applied",
+              "source_id": "gcp-bigquery-cost-control",
+              "resolution": "Explain on-demand bytes controls and a negative query-budget case."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-13",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Old course registry wording needs current deployment mapping",
+              "url": "https://docs.cloud.google.com/artifact-registry/docs/transition/transition-from-gcr",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Container Registry write shutdown does not invalidate gcr.io endpoints backed by Artifact Registry.",
+              "recommendation": "Preserve catalog evidence and direct new labs to Artifact Registry without claiming every gcr.io image is broken.",
+              "disposition": "applied",
+              "source_id": "gcp-container-registry-deprecation",
+              "resolution": "Preserve catalog evidence and direct new labs to Artifact Registry without claiming every gcr.io image is broken."
+            },
+            {
+              "id": "googleassociatecloudengineer-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Developer environments need explicit persistence and update boundaries",
+              "url": "https://docs.cloud.google.com/workstations/docs/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Workstations clusters/configurations/instances differ; ephemeral runtime disappears on stop and config updates apply on restart.",
+              "recommendation": "Add operations teaching and a proposed restart/persistent-home verification case.",
+              "disposition": "applied",
+              "source_id": "gcp-workstations-overview",
+              "resolution": "Add operations teaching and a proposed restart/persistent-home verification case."
+            }
+          ],
+          "notes": "Mapped94 considerations under12 numbered objectives in the actual five-page PDF;20/30/30/20weights unchanged. Initialized a previously absent lifecycle baseline only after reviewing standard/renewal details; post-check unchanged. Added32 executed local CIDR/capacity/SQLite checks,50 answered checks,eight proposed cloud labs and current catalog evidence. Cloud runtime and independent human verification remain outstanding. Same-context AI review; human review pending. See docs/research/2026-09-29-google-associate-cloud-engineer-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 14,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-29-googlegenerativeaileader-deep-review",
       "title": "GOOGLE-GENERATIVE-AI-LEADER complete guide and learning-content review",
       "rubric_version": 1,

@@ -1420,6 +1420,8 @@ The review maps the complete public guide through business outcome → permitted
 
 ## GOOGLE-ASSOCIATE-CLOUD-ENGINEER coverage record
 
+The September 29 [deep review](research/2026-09-29-google-associate-cloud-engineer-deep-review.md) maps 94 detailed objectives. Mapped94 considerations under12 numbered objectives in the actual five-page PDF;20/30/30/20weights unchanged. Initialized a previously absent lifecycle baseline only after reviewing standard/renewal details; post-check unchanged. Added32 executed local CIDR/capacity/SQLite checks,50 answered checks,eight proposed cloud labs and current catalog evidence. Cloud runtime and independent human verification remain outstanding. Current guide citations: 29 registered, 28 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: current four-domain guide—Setting up an environment (20%), Planning and implementing (30%), Ensuring successful operation (30%), and Configuring access and security (20%)

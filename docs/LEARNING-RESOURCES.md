@@ -2524,6 +2524,37 @@ No exact current MeasureUp product was found during this review. The Google-auth
 
 For focused technical gaps, use the linked documentation on data handling, access controls, model lifecycle and tool validation. Allow 2–3 additional hours for selected reading and the original worksheet; this is a planning estimate. Google's official sample resource and independently authored exercises can help locate learning gaps. Reject “actual questions,” copied exam material, or guaranteed replicas; use explanation-led assessment to locate a concept or decision gap.
 
+### GOOGLE-ASSOCIATE-CLOUD-ENGINEER — Associate Cloud Engineer
+
+Resource details from the [GOOGLE-ASSOCIATE-CLOUD-ENGINEER guide](../guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is intentionally **not a complete list**, and it is not a prescription to consume everything. Pick one coherent teaching route, use first-party documentation to close its version gaps, spend substantial time hands-on, and use assessments only to locate weak objectives. Public metadata was checked September 29, 2026. Distinguish card totals from overall schedule estimates; add lab, note, review and troubleshooting time. Paid course interiors and provider labs were not accessed.
+
+| Resource | Access | Estimated time | Best use / currency note |
+|---|---|---:|---|
+| [Official exam guide](https://services.google.com/fh/files/misc/associate_cloud_engineer_exam_guide_english.pdf) | Public | 45–90 min first pass; revisit weekly | The scope and current-name authority; turn every bullet into a task and decision |
+| [Google Skills ACE path](https://www.skills.google/paths/11) | Account; many activities no cost, labs may require credits/entitlement | 17 activities; current per-activity durations were not exposed | Public page showed a relative update of 20 hours, which is an update age, not course duration. The earlier 73h15m total was not reverified; select activities by objective |
+| [Google official sample questions](https://docs.google.com/forms/d/e/1FAIpQLSfexWKtXT2OSFJ-obA4iT3GmzgiOCGvjrT9OfxilWC1yPtmfQ/viewform) | Public | 30–60 min plus review | Learn official wording and expose gaps; Google says samples do not predict exam result |
+| [Google Cloud Engineer professional certificate](https://www.coursera.org/professional-certificates/cloud-engineering-gcp) | Subscription; audit terms vary | Six course cards total 42h; landing estimate 4 weeks at 10h/week; FAQ says 1.5 months at 5h/week | Public first course now teaches Gemini Notebook study preparation. GKE course outcome still names Container Registry: apply current Artifact Registry guidance. Reconcile the inconsistent schedule estimates |
+| [Google Cloud Certified Associate Cloud Engineer Study Guide, 2nd ed.](https://www.oreilly.com/library/view/google-cloud-certified/9781119871446/) | Paid O’Reilly access | Planning allowance 10–15h reading plus labs; current metadata blocked | Prior record says 2023/352 pages, not reverified. Use the current-product and added-service gap checklist; no paid text reviewed |
+| [Whizlabs ACE course and practice](https://www.whizlabs.com/google-cloud-certified-associate-cloud-engineer/) | Paid; limited free test | Current full page did not render in this review; verify duration before purchase | Search-index metadata differed from the old 350+ question claim; do not treat either as a newly verified catalog. Public outline and paid lessons were not fully inspected |
+| [Google Cloud Tech](https://www.youtube.com/@googlecloudtech) | Public | Pick focused playlists/videos; typically 2–8h total | First-party demonstrations and product updates; use for services you cannot yet explain or operate |
+| [Google Cloud Architecture Center](https://cloud.google.com/architecture) | Public | 4–12h targeted reading | Production patterns, decisions and operational tradeoffs rather than exam-only memorization |
+
+The [Pluralsight ACE path](https://www.pluralsight.com/paths/google-associate-cloud-engineer-pluralsight) is now verified: seven course cards total **7h39m**, plus four labs totaling **2h15m**, or **9h54m** versus its rounded ten-hour header. Most core course dates are July–September 2025; a gcloud/IAM demonstration is May 2026 and labs span April–June 2026. Titles still separate planning and deployment, so map them to the current combined domain and fill new-service gaps. This is a public-catalog comparison, not proof that every paid lesson is current. No verified MeasureUp ACE item is added.
+
+#### Current-version gap checklist
+
+Before relying on any course or book, confirm that you can map older coverage to the current PDF and independently study:
+
+- the four-domain 20/30/30/20 structure rather than the older five-domain outline;
+- Cloud Run functions in place of Cloud Functions branding;
+- Agent Runtime and Workbench on Gemini Enterprise Agent Platform, including the former Vertex AI names;
+- Gemini Cloud Assist, Gemini CLI, Google Antigravity, and Application Design Center as AI-assisted tools whose output needs validation;
+- Cloud NGFW policies, secure Tags, service-account targeting, Cloud Hub, Personalized Service Health, and Managed Service for Prometheus;
+- AlloyDB, Database Center, Managed Service for Apache Kafka, NetApp Volumes, Managed Lustre, Hyperdisk, GPU/TPU operations, and current GKE Autopilot behavior;
+- Workforce and Workload Identity Federation, short-lived credentials, service-account impersonation, and Workload Identity Federation for GKE.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
